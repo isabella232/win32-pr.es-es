@@ -5,26 +5,16 @@ ms.assetid: 3CD4BDAD-8AE3-4DE0-B3F8-9C9F9E83BBE9
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 08/27/2019
-ms.openlocfilehash: 749fed319f9ffe840f2b06512e337efa28081e24
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 01039550f07de57fb7b2f1e815bced02e549c741
+ms.sourcegitcommit: 60120d10c957815d79af566c72e5f4bcfaca4025
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104549142"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104837493"
 ---
 # <a name="resource-binding-in-hlsl"></a>Enlace de recursos en HLSL
 
 En este tema se describen algunas características específicas del uso del [modelo de sombreador](/windows/desktop/direct3dhlsl/shader-model-5-1) del lenguaje HLSL (High Level Shader Language) 5,1 con Direct3D 12. Todo el hardware de Direct3D 12 admite el modelo de sombreador 5,1, por lo que la compatibilidad con este modelo no depende de cuál sea el nivel de características de hardware.
-
--   [Tipos de recursos y matrices](#resource-types-and-arrays)
--   [Matrices de descriptores y matrices de texturas](#descriptor-arrays-and-texture-arrays)
--   [Alias de recursos](#resource-aliasing)
--   [Divergencia y derivados](#divergence-and-derivatives)
--   [UAVs en sombreadores de píxeles](#uavs-in-pixel-shaders)
--   [Búferes de constantes](#constant-buffers)
--   [Cambios de código de bytes en SM 5.1](#bytecode-changes-in-sm51)
--   [Declaraciones de ejemplo de HLSL](#example-hlsl-declarations)
--   [Temas relacionados](#related-topics)
 
 ## <a name="resource-types-and-arrays"></a>Tipos de recursos y matrices
 
@@ -103,6 +93,7 @@ En el hardware, el uso de este calificador genera código adicional para aplicar
 Las matrices de texturas están disponibles desde DirectX 10. Las matrices de textura requieren un descriptor; sin embargo, todos los segmentos de la matriz deben compartir el mismo formato, el ancho, el alto y el número de MIP. Además, la matriz debe ocupar un intervalo contiguo en el espacio de direcciones virtuales. En el código siguiente se muestra un ejemplo del acceso a una matriz de textura desde un sombreador.
 
 ``` syntax
+Texture2DArray<float4> myTex2DArray : register(t0); // t0
 float3 myCoord(1.0f,1.4f,2.2f); // 2.2f is array index (rounded to int)
 color = myTex2DArray.Sample(mySampler, myCoord);
 ```
@@ -112,17 +103,17 @@ En una matriz de textura, el índice se puede variar libremente, sin necesidad d
 La matriz de descriptor equivalente sería:
 
 ``` syntax
-Texture2D<float4> myTex2DArray[] : register(t0); // t0+
+Texture2D<float4> myArrayOfTex2D[] : register(t0); // t0+
 float2 myCoord(1.0f, 1.4f);
-color = myTex2D[2].Sample(mySampler,myCoord); // 2 is index
+color = myArrayOfTex2D[2].Sample(mySampler,myCoord); // 2 is index
 ```
 
-Tenga en cuenta que el uso poco práctico de un valor Float para el índice de matriz se reemplaza por `myTex2D[2]` . Además, las matrices de descriptor ofrecen más flexibilidad con las dimensiones. El tipo, `Texture2D` es este ejemplo, no puede variar, pero el formato, el ancho, el alto y el número de MIP pueden variar con cada descriptor.
+Tenga en cuenta que el uso poco práctico de un valor Float para el índice de matriz se reemplaza por `myArrayOfTex2D[2]` . Además, las matrices de descriptor ofrecen más flexibilidad con las dimensiones. El tipo, `Texture2D` es este ejemplo, no puede variar, pero el formato, el ancho, el alto y el número de MIP pueden variar con cada descriptor.
 
 Es legítimo tener una matriz de descriptores de matrices de texturas:
 
 ``` syntax
-Texture2DArray<float4> myTex2DArrayOfArrays[2] : register(t0);
+Texture2DArray<float4> myArrayOfTex2DArrays[2] : register(t0);
 ```
 
 No es legítimo declarar una matriz de estructuras, por ejemplo, no se admite cada estructura que contiene descriptores.
@@ -148,7 +139,7 @@ Para lograr el diseño de memoria **abcabcabc....** , use una tabla de descripto
 
 ## <a name="resource-aliasing"></a>Alias de recursos
 
-Los intervalos de recursos especificados en los sombreadores HLSL son intervalos lógicos. Se enlazan a intervalos de montón concretos en tiempo de ejecución a través del mecanismo de firma raíz. Normalmente, un intervalo lógico se asigna a un intervalo de montón que no se superpone con otros intervalos de montón. Sin embargo, el mecanismo de firma raíz permite el alias (superponer) los intervalos de montones de tipos compatibles. Por ejemplo, `tex2` los `tex3` intervalos del ejemplo anterior pueden estar asignados al mismo intervalo de montones (o superpuestos), lo que tiene el efecto de aplicar alias a las texturas en el programa HLSL. Si se desea usar este tipo de alias, el sombreador se debe compilar con la \_ \_ opción de alias D3D10 de los recursos del sombreador \_ \_ para la [herramienta de compilador de efectos](/windows/desktop/direct3dtools/fxc) (FXC). *\_ \_* La opción hace que el compilador genere código correcto mediante la prevención de ciertas optimizaciones de carga y almacenamiento bajo la suposición de que los recursos pueden tener alias.
+Los intervalos de recursos especificados en los sombreadores HLSL son intervalos lógicos. Se enlazan a intervalos de montón concretos en tiempo de ejecución a través del mecanismo de firma raíz. Normalmente, un intervalo lógico se asigna a un intervalo de montón que no se superpone con otros intervalos de montón. Sin embargo, el mecanismo de firma raíz permite el alias (superponer) los intervalos de montones de tipos compatibles. Por ejemplo, `tex2` los `tex3` intervalos del ejemplo anterior pueden estar asignados al mismo intervalo de montones (o superpuestos), lo que tiene el efecto de aplicar alias a las texturas en el programa HLSL. Si se desea usar este tipo de alias, el sombreador se debe compilar con la \_ \_ opción de alias D3D10 de los recursos del sombreador \_ \_ para la [herramienta de compilador de efectos](/windows/win32/direct3dtools/fxc) (FXC). *\_ \_* La opción hace que el compilador genere código correcto mediante la prevención de ciertas optimizaciones de carga y almacenamiento bajo la suposición de que los recursos pueden tener alias.
 
 ## <a name="divergence-and-derivatives"></a>Divergencia y derivados
 
@@ -324,35 +315,12 @@ ConstantBuffer<Stuff> myStuff[][3][8]  : register(b2, space3)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-<dl> <dt>
-
-[Indexado dinámico mediante HLSL 5.1](dynamic-indexing-using-hlsl-5-1.md)
-</dt> <dt>
-
-[Efecto: herramienta de compilador](/windows/desktop/direct3dtools/fxc)
-</dt> <dt>
-
-[Características del modelo de sombreador de HLSL 5,1 para Direct3D 12](/windows/desktop/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
-</dt> <dt>
-
-[Vistas ordenadas de rasterizador](rasterizer-order-views.md)
-</dt> <dt>
-
-[Enlace de recursos](resource-binding.md)
-</dt> <dt>
-
-[Firmas raíz](root-signatures.md)
-</dt> <dt>
-
-[Modelo de sombreador 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
-</dt> <dt>
-
-[Valor de referencia de estarcido del sombreador especificado](shader-specified-stencil-reference-value.md)
-</dt> <dt>
-
-[Especificación de firmas de raíz en HLSL](specifying-root-signatures-in-hlsl.md)
-</dt> </dl>
-
- 
-
- 
+* [Indexado dinámico mediante HLSL 5.1](dynamic-indexing-using-hlsl-5-1.md)
+* [Efecto: herramienta de compilador](/windows/win32/direct3dtools/fxc)
+* [Características del modelo de sombreador de HLSL 5,1 para Direct3D 12](/windows/win32/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
+* [Vistas ordenadas de rasterizador](rasterizer-order-views.md)
+* [Enlace de recursos](resource-binding.md)
+* [Firmas raíz](root-signatures.md)
+* [Modelo de sombreador 5,1](/windows/win32/direct3dhlsl/shader-model-5-1)
+* [Valor de referencia de estarcido del sombreador especificado](shader-specified-stencil-reference-value.md)
+* [Especificación de firmas de raíz en HLSL](specifying-root-signatures-in-hlsl.md)
