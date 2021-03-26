@@ -1,0 +1,118 @@
+---
+title: Función InterlockedAnd (referencia de HLSL)
+description: Realiza un y atómico garantizado.
+ms.assetid: 7dc5185a-ea37-493d-975d-dbb803c886d3
+keywords:
+- InterlockedAnd de función HLSL
+topic_type:
+- apiref
+api_name:
+- InterlockedAnd
+api_type:
+- NA
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: 487a7daaffe25e4e8bb22aec5805ded2a8091161
+ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "104997024"
+---
+# <a name="interlockedand-function-hlsl-reference"></a><span data-ttu-id="728b1-104">Función InterlockedAnd (referencia de HLSL)</span><span class="sxs-lookup"><span data-stu-id="728b1-104">InterlockedAnd function (HLSL reference)</span></span>
+
+<span data-ttu-id="728b1-105">Realiza un y atómico garantizado.</span><span class="sxs-lookup"><span data-stu-id="728b1-105">Performs a guaranteed atomic and.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="728b1-106">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="728b1-106">Syntax</span></span>
+
+``` syntax
+void InterlockedAnd(
+  in  R dest,
+  in  T value,
+  out T original_value
+);
+```
+
+## <a name="parameters"></a><span data-ttu-id="728b1-107">Parámetros</span><span class="sxs-lookup"><span data-stu-id="728b1-107">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="728b1-108">*dest* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="728b1-108">*dest* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="728b1-109">Tipo: **R**</span><span class="sxs-lookup"><span data-stu-id="728b1-109">Type: **R**</span></span>
+
+<span data-ttu-id="728b1-110">Dirección de destino.</span><span class="sxs-lookup"><span data-stu-id="728b1-110">The destination address.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="728b1-111">*valor* \[ de de\]</span><span class="sxs-lookup"><span data-stu-id="728b1-111">*value* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="728b1-112">Tipo: **T**</span><span class="sxs-lookup"><span data-stu-id="728b1-112">Type: **T**</span></span>
+
+<span data-ttu-id="728b1-113">Valor de entrada.</span><span class="sxs-lookup"><span data-stu-id="728b1-113">The input value.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="728b1-114">*\_ valor original* \[ fuera\]</span><span class="sxs-lookup"><span data-stu-id="728b1-114">*original\_value* \[out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="728b1-115">Tipo: **T**</span><span class="sxs-lookup"><span data-stu-id="728b1-115">Type: **T**</span></span>
+
+<span data-ttu-id="728b1-116">Opcional.</span><span class="sxs-lookup"><span data-stu-id="728b1-116">Optional.</span></span> <span data-ttu-id="728b1-117">Valor de entrada original.</span><span class="sxs-lookup"><span data-stu-id="728b1-117">The original input value.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="728b1-118">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="728b1-118">Return value</span></span>
+
+<span data-ttu-id="728b1-119">Esta función no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="728b1-119">This function does not return a value.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="728b1-120">Observaciones</span><span class="sxs-lookup"><span data-stu-id="728b1-120">Remarks</span></span>
+
+<span data-ttu-id="728b1-121">Esta operación solo se puede realizar en recursos con tipo int o uint y variables de memoria compartida.</span><span class="sxs-lookup"><span data-stu-id="728b1-121">This operation can only be performed on int or uint typed resources and shared memory variables.</span></span> <span data-ttu-id="728b1-122">Hay dos usos posibles para esta función.</span><span class="sxs-lookup"><span data-stu-id="728b1-122">There are two possible uses for this function.</span></span> <span data-ttu-id="728b1-123">El primero es cuando R es un tipo de variable de memoria compartida.</span><span class="sxs-lookup"><span data-stu-id="728b1-123">The first is when R is a shared memory variable type.</span></span> <span data-ttu-id="728b1-124">En este caso, la función realiza un carácter atómico y de valor en el registro de memoria compartida al que hace referencia dest.</span><span class="sxs-lookup"><span data-stu-id="728b1-124">In this case, the function performs an atomic and of value to the shared memory register referenced by dest.</span></span> <span data-ttu-id="728b1-125">El segundo escenario es cuando R es un tipo de variable de recurso.</span><span class="sxs-lookup"><span data-stu-id="728b1-125">The second scenario is when R is a resource variable type.</span></span> <span data-ttu-id="728b1-126">En este escenario, la función realiza un carácter atómico y de valor en la ubicación del recurso a la que hace referencia dest.</span><span class="sxs-lookup"><span data-stu-id="728b1-126">In this scenario, the function performs an atomic and of value to the resource location referenced by dest.</span></span> <span data-ttu-id="728b1-127">La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest.</span><span class="sxs-lookup"><span data-stu-id="728b1-127">The overloaded function has an additional output variable which will be set to the original value of dest.</span></span> <span data-ttu-id="728b1-128">Esta operación sobrecargada solo está disponible cuando R es legible y grabable.</span><span class="sxs-lookup"><span data-stu-id="728b1-128">This overloaded operation is only available when R is readable and writable.</span></span>
+
+### <a name="minimum-shader-model"></a><span data-ttu-id="728b1-129">Modelo de sombreador mínimo</span><span class="sxs-lookup"><span data-stu-id="728b1-129">Minimum Shader Model</span></span>
+
+<span data-ttu-id="728b1-130">Esta función se admite en los siguientes modelos de sombreador.</span><span class="sxs-lookup"><span data-stu-id="728b1-130">This function is supported in the following shader models.</span></span>
+
+
+
+| <span data-ttu-id="728b1-131">Modelo de sombreador</span><span class="sxs-lookup"><span data-stu-id="728b1-131">Shader Model</span></span>                                                                | <span data-ttu-id="728b1-132">Compatible</span><span class="sxs-lookup"><span data-stu-id="728b1-132">Supported</span></span> |
+|-----------------------------------------------------------------------------|-----------|
+| <span data-ttu-id="728b1-133">Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="728b1-133">[Shader Model 5](d3d11-graphics-reference-sm5.md) and higher shader models</span></span> | <span data-ttu-id="728b1-134">sí</span><span class="sxs-lookup"><span data-stu-id="728b1-134">yes</span></span>       |
+
+
+
+ 
+
+<span data-ttu-id="728b1-135">Esta función se admite en los siguientes tipos de sombreadores:</span><span class="sxs-lookup"><span data-stu-id="728b1-135">This function is supported in the following types of shaders:</span></span>
+
+
+
+| <span data-ttu-id="728b1-136">Vértice</span><span class="sxs-lookup"><span data-stu-id="728b1-136">Vertex</span></span> | <span data-ttu-id="728b1-137">Casco</span><span class="sxs-lookup"><span data-stu-id="728b1-137">Hull</span></span> | <span data-ttu-id="728b1-138">Dominio</span><span class="sxs-lookup"><span data-stu-id="728b1-138">Domain</span></span> | <span data-ttu-id="728b1-139">Geometría</span><span class="sxs-lookup"><span data-stu-id="728b1-139">Geometry</span></span> | <span data-ttu-id="728b1-140">Píxel</span><span class="sxs-lookup"><span data-stu-id="728b1-140">Pixel</span></span> | <span data-ttu-id="728b1-141">Compute</span><span class="sxs-lookup"><span data-stu-id="728b1-141">Compute</span></span> |
+|--------|------|--------|----------|-------|---------|
+| <span data-ttu-id="728b1-142">x</span><span class="sxs-lookup"><span data-stu-id="728b1-142">x</span></span>      |  <span data-ttu-id="728b1-143">x</span><span class="sxs-lookup"><span data-stu-id="728b1-143">x</span></span>   |  <span data-ttu-id="728b1-144">x</span><span class="sxs-lookup"><span data-stu-id="728b1-144">x</span></span>     |  <span data-ttu-id="728b1-145">x</span><span class="sxs-lookup"><span data-stu-id="728b1-145">x</span></span>       | <span data-ttu-id="728b1-146">x</span><span class="sxs-lookup"><span data-stu-id="728b1-146">x</span></span>     | <span data-ttu-id="728b1-147">x</span><span class="sxs-lookup"><span data-stu-id="728b1-147">x</span></span>       |
+
+
+
+ 
+
+## <a name="see-also"></a><span data-ttu-id="728b1-148">Vea también</span><span class="sxs-lookup"><span data-stu-id="728b1-148">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="728b1-149">Funciones intrínsecas</span><span class="sxs-lookup"><span data-stu-id="728b1-149">Intrinsic Functions</span></span>](dx-graphics-hlsl-intrinsic-functions.md)
+</dt> <dt>
+
+[<span data-ttu-id="728b1-150">Modelo de sombreador 5</span><span class="sxs-lookup"><span data-stu-id="728b1-150">Shader Model 5</span></span>](d3d11-graphics-reference-sm5.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
