@@ -1,0 +1,95 @@
+### YamlMime:Landing
+title: Crear aplicaciones de escritorio de Windows con la API Win32
+summary: Aprenda a compilar aplicaciones de escritorio para equipos Windows con C++ y la API Win32.
+metadata:
+  author: mcleanbyron
+  description: Aprenda a compilar aplicaciones de escritorio para equipos Windows con C++ y la API Win32.
+  manager: jken
+  ms.author: mcleans
+  ms.date: 09/15/2019
+  ms.topic: landing-page
+  ms.openlocfilehash: 99090d109a717c1008a11e6a9c9e6cf7a31f2b7c
+  ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 08/19/2020
+  ms.locfileid: "104077590"
+landingContent:
+- title: Introducción
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Configurar el equipo
+      url: /windows/desktop/desktop-programming
+  - linkListType: tutorial
+    links:
+    - text: Crear su primera aplicación con Win32 y C++
+      url: ./learnwin32/learn-to-program-for-windows.md
+  - linkListType: download
+    links:
+    - text: Herramientas de desarrollo
+      url: https://developer.microsoft.com/windows/downloads
+    - text: Ejemplos de código de Windows
+      url: https://developer.microsoft.com/windows/samples
+- title: Desarrollar
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Características y tecnologías de Windows
+      url: desktop-app-technologies.md
+    - text: Modernización de aplicaciones para Windows 10
+      url: /windows/apps/desktop/modernize
+  - linkListType: reference
+    links:
+    - text: Referencia de la API de Win32 por característica
+      url: ./apiindex/windows-api-list.md
+    - text: Referencia de la API Win32 por encabezado
+      url: /windows/win32/api/
+- title: Recursos y comunidad
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Máquinas virtuales Windows
+      url: https://developer.microsoft.com/windows/downloads/virtual-machines
+  - linkListType: overview
+    links:
+    - text: Programa de aplicaciones de escritorio de Windows
+      url: /windows/desktop/appxpkg/windows-desktop-application-program
+    - text: Mantente compatible con Windows 10
+      url: https://developer.microsoft.com/windows/desktop/app-compatibility
+    - text: Soporte técnico para desarrolladores de Windows
+      url: https://developer.microsoft.com/windows/support
+    - text: '@WindowsDocs en Twitter'
+      url: https://developer.microsoft.com/games
+    - text: OneDevMinute en YouTube
+      url: https://aka.ms/OneDevMinute
+- title: Documentos relacionados
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Elección de la plataforma de escritorio
+      url: /windows/apps/desktop/choose-your-platform
+    - text: C++/WinRT
+      url: /windows/uwp/cpp-and-winrt-apis/
+    - text: Empaquetado MSIX e implementación
+      url: /windows/msix/desktop/desktop-to-uwp-root
+    - text: UWP
+      url: /windows/uwp/
+    - text: .NET
+      url: //docs.microsoft.com/dotnet/
+    - text: Archivo de documentos para Windows 8.x y versiones anteriores
+      url: /previous-versions/windows/
+- title: Tecnologías relacionadas
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Inteligencia artificial de Windows
+      url: /windows/ai/
+    - text: Windows IoT
+      url: /windows/iot-core/
+    - text: Windows Mixed Reality
+      url: /windows/mixed-reality/
+    - text: Contenedores de Windows
+      url: /virtualization/#pivot=main&panel=containers
+    - text: Juegos
+      url: https://developer.microsoft.com/games
