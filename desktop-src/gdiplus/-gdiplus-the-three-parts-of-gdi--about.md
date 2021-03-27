@@ -1,0 +1,41 @@
+---
+description: 'Los servicios de Windows GDI+ se dividen en las siguientes tres amplias categorías:'
+ms.assetid: d5bef8e4-7a4c-4ac4-938a-7034ad3d743f
+title: Las tres partes de GDI+
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: bc2021260e9fe3b3d927131c2ba1856aeed0ed07
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104997457"
+---
+# <a name="the-three-parts-of-gdi"></a><span data-ttu-id="107dd-103">Las tres partes de GDI+</span><span class="sxs-lookup"><span data-stu-id="107dd-103">The Three Parts of GDI+</span></span>
+
+<span data-ttu-id="107dd-104">Los servicios de Windows GDI+ se dividen en las siguientes tres amplias categorías:</span><span class="sxs-lookup"><span data-stu-id="107dd-104">The services of Windows GDI+ fall into the following three broad categories:</span></span>
+
+-   [<span data-ttu-id="107dd-105">gráficos vectoriales 2D</span><span class="sxs-lookup"><span data-stu-id="107dd-105">2-D vector graphics</span></span>](#2-d-vector-graphics)
+-   [<span data-ttu-id="107dd-106">Creación de imágenes</span><span class="sxs-lookup"><span data-stu-id="107dd-106">Imaging</span></span>](#imaging)
+-   [<span data-ttu-id="107dd-107">Tipografía</span><span class="sxs-lookup"><span data-stu-id="107dd-107">Typography</span></span>](#typography)
+
+## <a name="2-d-vector-graphics"></a><span data-ttu-id="107dd-108">gráficos vectoriales 2D</span><span class="sxs-lookup"><span data-stu-id="107dd-108">2-D vector graphics</span></span>
+
+<span data-ttu-id="107dd-109">Los gráficos vectoriales implican el dibujo de primitivas (como líneas, curvas y figuras) que se especifican mediante conjuntos de puntos en un sistema de coordenadas.</span><span class="sxs-lookup"><span data-stu-id="107dd-109">Vector graphics involves drawing primitives (such as lines, curves, and figures) that are specified by sets of points on a coordinate system.</span></span> <span data-ttu-id="107dd-110">Por ejemplo, una línea recta puede especificarse mediante sus dos puntos de conexión y un rectángulo puede especificarse mediante un punto que proporcione la ubicación de la esquina superior izquierda y un par de números que den su ancho y alto.</span><span class="sxs-lookup"><span data-stu-id="107dd-110">For example, a straight line can be specified by its two endpoints, and a rectangle can be specified by a point giving the location of its upper-left corner and a pair of numbers giving its width and height.</span></span> <span data-ttu-id="107dd-111">Una ruta de acceso simple puede especificarse mediante una matriz de puntos que se va a conectar mediante líneas rectas.</span><span class="sxs-lookup"><span data-stu-id="107dd-111">A simple path can be specified by an array of points to be connected by straight lines.</span></span> <span data-ttu-id="107dd-112">Una curva spline de Bézier es una curva sofisticada especificada por cuatro puntos de control.</span><span class="sxs-lookup"><span data-stu-id="107dd-112">A Bézier spline is a sophisticated curve specified by four control points.</span></span>
+
+<span data-ttu-id="107dd-113">GDI+ proporciona clases que almacenan información sobre los propios tipos primitivos, las clases que almacenan información sobre cómo se van a dibujar los primitivos y las clases que realmente realizan el dibujo.</span><span class="sxs-lookup"><span data-stu-id="107dd-113">GDI+ provides classes that store information about the primitives themselves, classes that store information about how the primitives are to be drawn, and classes that actually do the drawing.</span></span> <span data-ttu-id="107dd-114">Por ejemplo, la clase **Rect** almacena la ubicación y el tamaño de un rectángulo. la clase **Pen** almacena información sobre el color de línea, el ancho de línea y el estilo de línea; y la clase **Graphics** tiene métodos para dibujar líneas, rectángulos, trazados y otras figuras.</span><span class="sxs-lookup"><span data-stu-id="107dd-114">For example, the **Rect** class stores the location and size of a rectangle; the **Pen** class stores information about line color, line width, and line style; and the **Graphics** class has methods for drawing lines, rectangles, paths, and other figures.</span></span> <span data-ttu-id="107dd-115">También hay varias clases **Brush** que almacenan información sobre cómo se van a rellenar las figuras y trazados cerrados con colores o patrones.</span><span class="sxs-lookup"><span data-stu-id="107dd-115">There are also several **Brush** classes that store information about how closed figures and paths are to be filled with colors or patterns.</span></span>
+
+## <a name="imaging"></a><span data-ttu-id="107dd-116">Creación de imágenes</span><span class="sxs-lookup"><span data-stu-id="107dd-116">Imaging</span></span>
+
+<span data-ttu-id="107dd-117">Ciertos tipos de imágenes son difíciles o imposibles de mostrar con las técnicas de gráficos vectoriales.</span><span class="sxs-lookup"><span data-stu-id="107dd-117">Certain kinds of pictures are difficult or impossible to display with the techniques of vector graphics.</span></span> <span data-ttu-id="107dd-118">Por ejemplo, las imágenes de los botones de la barra de herramientas y las imágenes que aparecen como iconos serían difíciles de especificar como colecciones de líneas y curvas.</span><span class="sxs-lookup"><span data-stu-id="107dd-118">For example, the pictures on toolbar buttons and the pictures that appear as icons would be difficult to specify as collections of lines and curves.</span></span> <span data-ttu-id="107dd-119">Una fotografía digital de alta resolución de un estadio de béisbol abarrotado sería aún más difícil de crear con técnicas vectoriales.</span><span class="sxs-lookup"><span data-stu-id="107dd-119">A high-resolution digital photograph of a crowded baseball stadium would be even more difficult to create with vector techniques.</span></span> <span data-ttu-id="107dd-120">Las imágenes de este tipo se almacenan como mapas de bits, matrices de números que representan los colores de los puntos individuales de la pantalla.</span><span class="sxs-lookup"><span data-stu-id="107dd-120">Images of this type are stored as bitmaps, arrays of numbers that represent the colors of individual dots on the screen.</span></span> <span data-ttu-id="107dd-121">Las estructuras de datos que almacenan información sobre los mapas de bits suelen ser más complejas que las necesarias para los gráficos vectoriales, por lo que hay varias clases en GDI+ dedicadas a este propósito.</span><span class="sxs-lookup"><span data-stu-id="107dd-121">Data structures that store information about bitmaps tend to be more complex than those required for vector graphics, so there are several classes in GDI+ devoted to this purpose.</span></span> <span data-ttu-id="107dd-122">Un ejemplo de este tipo de clase es **CachedBitmap**, que se usa para almacenar un mapa de bits en la memoria para obtener un acceso rápido y mostrarlo.</span><span class="sxs-lookup"><span data-stu-id="107dd-122">An example of such a class is **CachedBitmap**, which is used to store a bitmap in memory for fast access and display.</span></span>
+
+## <a name="typography"></a><span data-ttu-id="107dd-123">Tipografía</span><span class="sxs-lookup"><span data-stu-id="107dd-123">Typography</span></span>
+
+<span data-ttu-id="107dd-124">La tipografía está relacionada con la presentación de texto en una variedad de fuentes, tamaños y estilos.</span><span class="sxs-lookup"><span data-stu-id="107dd-124">Typography is concerned with the display of text in a variety of fonts, sizes, and styles.</span></span> <span data-ttu-id="107dd-125">GDI+ proporciona una cantidad impresionante de compatibilidad para esta tarea compleja.</span><span class="sxs-lookup"><span data-stu-id="107dd-125">GDI+ provides an impressive amount of support for this complex task.</span></span> <span data-ttu-id="107dd-126">Una de las nuevas características de GDI+ es el suavizado de contorno de subpíxeles, que proporciona un aspecto más suave al texto representado en una pantalla LCD.</span><span class="sxs-lookup"><span data-stu-id="107dd-126">One of the new features in GDI+ is subpixel antialiasing, which gives text rendered on an LCD screen a smoother appearance.</span></span>
+
+ 
+
+ 
+
+
+
