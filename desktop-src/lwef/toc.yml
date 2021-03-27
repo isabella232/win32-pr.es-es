@@ -1,0 +1,1562 @@
+- name: Características heredadas del entorno de Windows
+  href: legacy-windows-environment.md
+  items:
+    - name: Características heredadas de Shell
+      href: legacy-shell-features.md
+      items:
+        - name: Creación de reconciliadores de maletín
+          href: briefcase-reconcilers.md
+        - name: Crear un controlador de limpieza de disco
+          href: disk-cleanup.md
+        - name: Controlar los protectores de pantalla
+          href: screen-saver-library.md
+        - name: Implementación de una vista de carpetas
+          href: nse-folderview.md
+        - name: Personalización de la vista Web de una carpeta
+          href: web-view.md
+        - name: Accesos directos a Internet de la aplicación
+          href: internet-shortcuts.md
+        - name: Usar el objeto de Active Desktop
+          href: active-desktop-interface.md
+        - name: Crear controladores de columnas
+          href: column-handlers.md
+        - name: Crear controladores de búsqueda
+          href: search-handlers.md
+        - name: Reemplazar la aplicación Visor de imágenes y fax de Windows con el verbo vista previa
+          href: replacing-picture-fax-viewer.md
+        - name: Asistentes fotográficos
+          href: photo-wizards-bumper.md
+          items:
+            - name: Asistente para impresión en línea
+              href: online-printing-wizard.md
+            - name: Asistente para impresión fotográfica
+              href: photo-printing-wizard.md
+        - name: Asistentes para publicación
+          href: publishing-wizards.md
+          items:
+            - name: Introducción
+              href: pubwiz-intro.md
+            - name: Diseño de Client-Side
+              href: pubwiz-client.md
+            - name: Diseño de Server-Side
+              href: pubwiz-server.md
+            - name: Registrar un servicio
+              href: pubwiz-reg.md
+            - name: Usar el manifiesto de transferencia
+              href: pubwiz-manifest.md
+        - name: Referencia de Shell heredada
+          href: legacy-shell-reference.md
+          items:
+            - name: IActiveDesktop
+              href: /windows/desktop/api/shlobj_core/nn-shlobj_core-iactivedesktop
+              items:
+                - name: AddDesktopItem
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-adddesktopitem
+                - name: AddDesktopItemWithUI
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-adddesktopitemwithui
+                - name: AddUrl
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-addurl
+                - name: ApplyChanges (
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-applychanges
+                - name: GenerateDesktopItemHtml
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-generatedesktopitemhtml
+                - name: GetDesktopItem
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getdesktopitem
+                - name: GetDesktopItemByID
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getdesktopitembyid
+                - name: GetDesktopItemBySource
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getdesktopitembysource
+                - name: GetDesktopItemCount
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getdesktopitemcount
+                - name: GetDesktopItemOptions
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getdesktopitemoptions
+                - name: GetPattern
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getpattern
+                - name: GetWallpaper
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getwallpaper
+                - name: GetWallpaperOptions
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-getwallpaperoptions
+                - name: ModifyDesktopItem
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-modifydesktopitem
+                - name: RemoveDesktopItem
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-removedesktopitem
+                - name: SetDesktopItemOptions
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-setdesktopitemoptions
+                - name: SetPattern
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-setpattern
+                - name: SetWallpaper
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-setwallpaper
+                - name: SetWallpaperOptions
+                  href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iactivedesktop-setwallpaperoptions
+            - name: IActiveDesktopP
+              href: /windows/desktop/api/shlobj/nn-shlobj-iactivedesktopp
+              items:
+                - name: SetSafeMode
+                  href: /windows/desktop/api/shlobj/nf-shlobj-iactivedesktopp-setsafemode
+            - name: IADesktopP2
+              href: /windows/desktop/api/shlobj/nn-shlobj-iadesktopp2
+              items:
+                - name: UpdateAllDesktopSubscriptions
+                  href: /windows/desktop/api/shlobj/nf-shlobj-iadesktopp2-updatealldesktopsubscriptions
+            - name: IEmptyVolumeCache
+              href: /windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache
+              items:
+                - name: Desactivación
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-deactivate
+                - name: GetSpaceUsed
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused
+                - name: Inicialización
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize
+                - name: Purgar
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge
+                - name: ShowProperties (
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-showproperties
+            - name: IEmptyVolumeCache2
+              href: /windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2
+              items:
+                - name: InitializeEx
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex
+            - name: IEmptyVolumeCacheCallBack
+              href: /windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecachecallback
+              items:
+                - name: PurgeProgress
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-purgeprogress
+                - name: ScanProgress
+                  href: /windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress
+            - name: IReconcilableObject
+              href: /windows/desktop/api/reconcil/nn-reconcil-ireconcilableobject
+              items:
+                - name: GetProgressFeedbackMaxEstimate
+                  href: /windows/desktop/api/reconcil/nf-reconcil-ireconcilableobject-getprogressfeedbackmaxestimate
+                - name: Reconcile
+                  href: /windows/desktop/api/reconcil/nf-reconcil-ireconcilableobject-reconcile
+            - name: IReconcileInitiator
+              href: ireconcileinitiator.md
+              items:
+                - name: SetAbortCallback
+                  href: /previous-versions//bb761345(v=vs.85)
+                - name: SetProgressFeedback
+                  href: /previous-versions//bb761347(v=vs.85)
+            - name: WebViewFolderContents
+              href: webviewfoldercontents.md
+              items:
+                - name: Métodos WebViewFolderContents
+                  href: webviewfoldercontents-methods-bumper.md
+                  items:
+                    - name: PopupItemMenu
+                      href: webviewfoldercontents-popupitemmenu.md
+                    - name: SelectedItems
+                      href: webviewfoldercontents-selecteditems.md
+                    - name: SelectItem
+                      href: webviewfoldercontents-selectitem.md
+                - name: Propiedades de WebViewFolderContents
+                  href: webviewfoldercontents-properties-bumper.md
+                  items:
+                    - name: Application
+                      href: webviewfoldercontents-application.md
+                    - name: FocusedItem
+                      href: webviewfoldercontents-focuseditem.md
+                    - name: Carpeta
+                      href: webviewfoldercontents-folder.md
+                    - name: Parent
+                      href: webviewfoldercontents-parent.md
+                    - name: Script
+                      href: webviewfoldercontents-script.md
+                    - name: ViewOptions
+                      href: webviewfoldercontents-viewoptions.md
+                - name: Eventos WebViewFolderContents
+                  href: webviewfoldercontents-events-bumper.md
+                  items:
+                    - name: SelectionChanged
+                      href: webviewfoldercontents-selectionchanged.md
+    - name: Agente de Microsoft
+      href: microsoft-agent.md
+      items:
+        - name: Introducción a Microsoft Agent
+          href: introduction-to-microsoft-agent.md
+        - name: Cambios del agente de Microsoft en Windows Vista
+          href: microsoft-agent-changes-in-windows-vista.md
+        - name: La interfaz de usuario del agente de Microsoft
+          href: the-microsoft-agent-user-interface.md
+          items:
+            - name: La ventana de caracteres
+              href: the-character-window.md
+            - name: El icono de la barra de tareas carácter
+              href: the-character-taskbar-icon.md
+            - name: Ventana comandos de voz
+              href: the-voice-commands-window.md
+            - name: El globo de palabras
+              href: the-word-balloon.md
+            - name: La ventana de la sugerencia de escucha
+              href: the-listening-tip-window.md
+            - name: La ventana Opciones de carácter avanzadas
+              href: the-advanced-character-options-window.md
+              items:
+                - name: La página de salida
+                  href: the-output-page.md
+                - name: La página de entrada de voz
+                  href: the-speech-input-page.md
+                - name: La página Copyright
+                  href: the-copyright-page.md
+            - name: La ventana Propiedades de carácter predeterminado
+              href: the-default-character-properties-window.md
+        - name: Programar Microsoft Agent
+          href: programming-microsoft-agent.md
+          items:
+            - name: Directrices para diseñar la interacción de caracteres
+              href: guidelines-for-designing-character-interaction.md
+              items:
+                - name: Instrucciones generales de interacción de caracteres
+                  href: general-character-interaction-guidelines.md
+                  items:
+                    - name: No es exclusivo
+                      href: be-non-exclusive.md
+                    - name: Proporcionar los comentarios adecuados
+                      href: provide-appropriate-feedback.md
+                    - name: Usar variación natural
+                      href: use-natural-variation.md
+                - name: Interacción social
+                  href: social-interaction.md
+                  items:
+                    - name: Crear personalidad
+                      href: create-personality.md
+                    - name: Observar el etiqueta apropiado
+                      href: observe-appropriate-etiquette.md
+                    - name: Usar elogiar
+                      href: use-praise.md
+                    - name: Crear un reproductor de equipo
+                      href: create-a-team-player.md
+                    - name: Considerar los efectos de sexo
+                      href: consider-gender-effects.md
+                - name: Reconocimiento de voz
+                  href: speech-recognition.md
+                  items:
+                    - name: 'Escuche, no reconozca simplemente'
+                      href: listen--dont-just-recognize.md
+                    - name: Clarificar y limitar las opciones
+                      href: clarify-and-limit-choices.md
+                    - name: Proporcionar una recuperación de errores
+                      href: provide-good-error-recovery.md
+                - name: Salida de voz
+                  href: speech-output.md
+                  items:
+                    - name: Sea eficaz y natural
+                      href: be-efficient-and-natural.md
+                    - name: Usar la voz activa
+                      href: use-the-active-voice.md
+                    - name: Usar el control de tiempo y el énfasis adecuados
+                      href: use-appropriate-timing-and-emphasis.md
+            - name: Introducción a la interfaz de programación de Microsoft Agent
+              href: microsoft-agent-programming-interface-overview.md
+              items:
+                - name: Servicios de animación
+                  href: animation-services.md
+                  items:
+                    - name: Cargar un carácter
+                      href: loading-a-character.md
+                    - name: Cargar el carácter predeterminado
+                      href: loading-the-default-character.md
+                    - name: Animar un carácter
+                      href: animating-a-character.md
+                - name: Servicios de entrada
+                  href: input-services.md
+                  items:
+                    - name: Cliente de Input-Active
+                      href: input-active-client.md
+                    - name: Compatibilidad con menús emergentes
+                      href: pop-up-menu-support.md
+                    - name: Compatibilidad con entrada de voz
+                      href: speech-input-support.md
+                    - name: Selección del motor de voz
+                      href: speech-engine-selection.md
+                    - name: Eventos de entrada de voz
+                      href: speech-input-events.md
+                - name: Ventana comandos de voz
+                  href: voice-commands-window.md
+                  items:
+                    - name: La sugerencia de escucha
+                      href: the-listening-tip.md
+                    - name: La ventana Opciones de carácter avanzadas
+                      href: the-advanced-character-options-window-.md
+                - name: Servicios de salida
+                  href: output-services.md
+                  items:
+                    - name: Compatibilidad con voz sintetizada
+                      href: synthesized-speech-support.md
+                    - name: Compatibilidad con la salida de audio
+                      href: audio-output-support.md
+                    - name: Compatibilidad con globos de palabras
+                      href: word-balloon-support.md
+                    - name: Efectos sonoros de animación
+                      href: animation-sound-effects.md
+            - name: Programar el control de Microsoft Agent
+              href: programming-the-microsoft-agent-control.md
+              items:
+                - name: Convenciones del documento
+                  href: document-conventions.md
+                - name: Obtener acceso al control en páginas web
+                  href: accessing-the-control-in-web-pages.md
+                  items:
+                    - name: Usar VBScript
+                      href: using-vbscript.md
+                    - name: Usar JavaScript y JScript
+                      href: using-javascript-and-jscript.md
+                - name: Acceso a servicios de voz
+                  href: accessing-speech-services-.md
+                - name: Acceder al control desde Visual Basic y otros lenguajes de programación
+                  href: accessing-the-control-from-visual-basic-and-other-programming-languages.md
+                  items:
+                    - name: Crear una instancia del control
+                      href: creating-an-instance-of-the-control.md
+                    - name: 'Obtener acceso a los métodos, propiedades y eventos del control'
+                      href: accessing-the-controls-methods--properties--and-events.md
+                    - name: Actualizar desde la versión anterior
+                      href: updating-from-previous-version.md
+                - name: Acceso directo a los servicios de Microsoft Agent
+                  href: accessing-microsoft-agent-services-directly.md
+                  items:
+                    - name: El modelo de objetos del agente
+                      href: the-agent-object-model.md
+                - name: Referencia
+                  href: reference-.md
+                  items:
+                    - name: El objeto de solicitud
+                      href: the-request-object.md
+                    - name: Control de agente
+                      href: the-agent-control.md
+                      items:
+                        - name: Métodos de control de agente
+                          href: agent-control-methods.md
+                          items:
+                            - name: Método ShowDefaultCharacterProperties
+                              href: showdefaultcharacterproperties-method.md
+                        - name: Propiedades de control de agente
+                          href: agent-control-properties.md
+                          items:
+                            - name: Propiedad connected
+                              href: connected-property.md
+                            - name: Propiedad Name
+                              href: name-property-a.md
+                            - name: Propiedad RaiseRequestErrors
+                              href: raiserequesterrors-property.md
+                        - name: Eventos de control de agente
+                          href: agent-control-events.md
+                          items:
+                            - name: Evento ActivateInput
+                              href: activateinput-event.md
+                            - name: Evento ActiveClientChange
+                              href: activeclientchange-event.md
+                            - name: Evento AgentPropertyChange
+                              href: agentpropertychange-event.md
+                            - name: Evento BalloonHide
+                              href: balloonhide-event.md
+                            - name: Evento BalloonShow
+                              href: balloonshow-event.md
+                            - name: Bookmark (evento)
+                              href: bookmark-event.md
+                            - name: Evento de clic
+                              href: click-event.md
+                            - name: Evento de comando
+                              href: command-event.md
+                            - name: Evento DblClick
+                              href: dblclick-event.md
+                            - name: Evento DeactivateInput
+                              href: deactivateinput-event.md
+                            - name: Evento DefaultCharacterChange
+                              href: defaultcharacterchange-event.md
+                            - name: Evento DragComplete
+                              href: dragcomplete-event.md
+                            - name: Evento DragStart
+                              href: dragstart-event.md
+                            - name: Evento HelpComplete
+                              href: helpcomplete-event.md
+                            - name: Ocultar evento
+                              href: hide-event.md
+                            - name: Evento IdleComplete
+                              href: idlecomplete-event.md
+                            - name: Evento IdleStart
+                              href: idlestart-event.md
+                            - name: Evento ListenComplete
+                              href: listencomplete-event.md
+                            - name: Evento ListenStart
+                              href: listenstart-event.md
+                            - name: Evento de movimiento
+                              href: move-event.md
+                            - name: Evento RequestComplete
+                              href: requestcomplete-event.md
+                            - name: Evento RequestStart
+                              href: requeststart-event.md
+                            - name: Mostrar evento
+                              href: show-event.md
+                            - name: Evento de tamaño
+                              href: size-event.md
+                    - name: El objeto Characters
+                      href: the-characters-object.md
+                      items:
+                        - name: Métodos del objeto Characters
+                          href: characters-object-methods.md
+                          items:
+                            - name: Character (método)
+                              href: character-method.md
+                            - name: Load (Método)
+                              href: load-method.md
+                            - name: método Unload
+                              href: unload-method.md
+                        - name: Métodos de objetos de carácter
+                          href: character-object-methods.md
+                          items:
+                            - name: Método Activate
+                              href: activate-method.md
+                            - name: Método GestureAt
+                              href: gestureat-method.md
+                            - name: Get (Método)
+                              href: get-method.md
+                            - name: Hide (método)
+                              href: hide-method.md
+                            - name: Método Interrupt
+                              href: interrupt-method.md
+                            - name: Listen (método)
+                              href: listen-method.md
+                            - name: MoveTo (método)
+                              href: moveto-method.md
+                            - name: Play (método)
+                              href: play-method.md
+                            - name: Show (método)
+                              href: show-method.md
+                            - name: Método ShowPopupMenu
+                              href: showpopupmenu-method.md
+                            - name: Método Speak
+                              href: speak-method.md
+                            - name: Stop (Método)
+                              href: stop-method.md
+                            - name: StopAll (método)
+                              href: stopall-method.md
+                            - name: Método de reflexión
+                              href: think-method.md
+                            - name: Wait (Método)
+                              href: wait-method.md
+                        - name: Propiedades del objeto de carácter
+                          href: character-object-properties.md
+                          items:
+                            - name: Active (propiedad)
+                              href: active-property.md
+                            - name: Propiedad AutoPopupMenu
+                              href: autopopupmenu-property.md
+                            - name: Description (propiedad)
+                              href: description-property.md
+                            - name: Propiedad ExtraData
+                              href: extradata-property.md
+                            - name: Propiedad GUID
+                              href: guid-property.md
+                            - name: Propiedad HasOtherClients
+                              href: hasotherclients-property.md
+                            - name: Height (propiedad)
+                              href: height-property.md
+                            - name: Propiedad HelpContextID
+                              href: helpcontextid-property-ch.md
+                            - name: HelpFile (propiedad)
+                              href: helpfile-property.md
+                            - name: Propiedad HelpModeOn
+                              href: helpmodeon-property.md
+                            - name: Idleon (propiedad)
+                              href: idleon-property.md
+                            - name: LanguageID (propiedad)
+                              href: languageid-property.md
+                            - name: Left (propiedad)
+                              href: left-property.md
+                            - name: Propiedad MoveCause
+                              href: movecause-property.md
+                            - name: Propiedad Name
+                              href: name-property.md
+                            - name: Propiedad Altooriginal
+                              href: originalheight-property.md
+                            - name: Propiedad Anchooriginal
+                              href: originalwidth-property.md
+                            - name: Propiedad de paso
+                              href: pitch-property.md
+                            - name: Propiedad SoundEffectsOn
+                              href: soundeffectson-property.md
+                            - name: Propiedad Speed
+                              href: speed-property.md
+                            - name: Propiedad SRModeID
+                              href: srmodeid-property.md
+                            - name: Propiedad SRStatus
+                              href: srstatus-property.md
+                            - name: Propiedad Top
+                              href: top-property.md
+                            - name: Propiedad TTSModeID
+                              href: ttsmodeid-property.md
+                            - name: Propiedad Version
+                              href: version-property.md
+                            - name: Propiedad VisibilityCause
+                              href: visibilitycause-property.md
+                            - name: Propiedad visible
+                              href: visible-property-cob.md
+                            - name: Width (propiedad)
+                              href: width-property-co.md
+                    - name: Objeto de colección Commands
+                      href: the-commands-collection-object.md
+                      items:
+                        - name: Commands (métodos del objeto)
+                          href: commands-object-methods.md
+                          items:
+                            - name: Agregar método
+                              href: add-method.md
+                            - name: Método de comando
+                              href: command-method.md
+                            - name: Insert (método)
+                              href: insert-method.md
+                            - name: Remove (método)
+                              href: remove-method.md
+                            - name: RemoveAll (método)
+                              href: removeall-method.md
+                        - name: Propiedades del objeto Commands
+                          href: commands-object-properties.md
+                          items:
+                            - name: Propiedad Caption
+                              href: caption-property-cmds.md
+                            - name: Propiedad Count
+                              href: count-property.md
+                            - name: Propiedad DefaultCommand
+                              href: defaultcommand-property.md
+                            - name: FontName (propiedad)
+                              href: fontname-property.md
+                            - name: Propiedad fontSize
+                              href: fontsize-property.md
+                            - name: Propiedad GlobalVoiceCommandsEnabled
+                              href: globalvoicecommandsenabled-property.md
+                            - name: Propiedad HelpContextID
+                              href: helpcontextid-property.md
+                            - name: Propiedad visible
+                              href: visible-property-cso.md
+                            - name: Propiedad Voice
+                              href: voice-property.md
+                            - name: Propiedad VoiceCaption
+                              href: voicecaption-property.md
+                    - name: El objeto Command
+                      href: the-command-object.md
+                      items:
+                        - name: Propiedades del objeto de comando
+                          href: command-object-properties.md
+                          items:
+                            - name: Propiedad Caption
+                              href: caption-property.md
+                            - name: Propiedad Confidence
+                              href: confidence-property.md
+                            - name: Propiedad ConfidenceText
+                              href: confidencetext-property.md
+                            - name: Propiedad Enabled
+                              href: enabled-property-co.md
+                            - name: Propiedad HelpContextID
+                              href: helpcontextid-property-com.md
+                            - name: Propiedad visible
+                              href: visible-property-cop.md
+                            - name: Propiedad Voice
+                              href: voice-property-c.md
+                            - name: Propiedad VoiceCaption
+                              href: voicecaption-property-c.md
+                    - name: El objeto Balloon
+                      href: the-balloon-object.md
+                      items:
+                        - name: BackColor (propiedad)
+                          href: backcolor-property.md
+                        - name: BorderColor (propiedad)
+                          href: bordercolor-property.md
+                        - name: Propiedad CharsPerLine
+                          href: charsperline-property.md
+                        - name: Propiedad Enabled
+                          href: enabled-property.md
+                        - name: Propiedad FontBold
+                          href: fontbold-property.md
+                        - name: Propiedad FontCharSet
+                          href: fontcharset-property.md
+                        - name: Propiedad FontItalic
+                          href: fontitalic-property.md
+                        - name: FontName (propiedad)
+                          href: fontname-property-bal.md
+                        - name: Propiedad fontSize
+                          href: fontsize-property-bal.md
+                        - name: Propiedad FontStrikeThru
+                          href: fontstrikethru-property.md
+                        - name: FontUnderline (propiedad)
+                          href: fontunderline-property.md
+                        - name: Propiedad ForeColor
+                          href: forecolor-property.md
+                        - name: Propiedad NumberOfLines
+                          href: numberoflines-property.md
+                        - name: Propiedad de estilo
+                          href: style-property.md
+                        - name: Propiedad visible
+                          href: visible-property-bal.md
+                    - name: La colección AnimationNames
+                      href: the-animationnames-collection.md
+                    - name: El objeto AudioOutput
+                      href: the-audiooutput-object.md
+                      items:
+                        - name: Propiedad Enabled
+                          href: enabled-property-ao.md
+                        - name: Propiedad SoundEffects
+                          href: soundeffects-property.md
+                        - name: Propiedad status
+                          href: status-property.md
+                    - name: El objeto SpeechInput
+                      href: the-speechinput-object.md
+                      items:
+                        - name: Propiedades de SpeechInput
+                          href: speechinput-properties.md
+                          items:
+                            - name: Propiedad Enabled
+                              href: enabled-property-sio.md
+                            - name: Propiedad HotKey
+                              href: hotkey-property.md
+                            - name: Propiedad ListeningTip
+                              href: listeningtip-property.md
+                    - name: El objeto CommandsWindow
+                      href: the-commandswindow-object.md
+                      items:
+                        - name: Propiedades de CommandsWindow
+                          href: commandswindow-properties.md
+                          items:
+                            - name: Height (propiedad)
+                              href: height-property-cwo.md
+                            - name: Left (propiedad)
+                              href: left-property-cwo.md
+                            - name: Propiedad Top
+                              href: top-property-cwo.md
+                            - name: Propiedad visible
+                              href: visible-property-cwo.md
+                            - name: Width (propiedad)
+                              href: width-property.md
+                    - name: El objeto hoja
+                      href: the-propertysheet-object.md
+                      items:
+                        - name: Height (propiedad)
+                          href: height-property-pso.md
+                        - name: Left (propiedad)
+                          href: left-property-pso.md
+                        - name: Propiedad de página
+                          href: page-property.md
+                        - name: Propiedad Top
+                          href: top-property-pso.md
+                        - name: Propiedad visible
+                          href: visible-property.md
+                        - name: Width (propiedad)
+                          href: width-property-pso.md
+            - name: Programación de la interfaz del servidor de Microsoft Agent
+              href: programming-the-microsoft-agent-server-interface.md
+              items:
+                - name: Agregar la funcionalidad de Microsoft Agent a la aplicación
+                  href: adding-microsoft-agent-functionality-to-your-application.md
+                - name: Cargar datos de animación y caracteres
+                  href: loading-character-and-animation-data.md
+                - name: Creación de un receptor de notificaciones
+                  href: creating-a-notification-sink.md
+                - name: Acceso a servicios mediante Java
+                  href: accessing-services-using-java.md
+                - name: Acceso a servicios de voz
+                  href: accessing-speech-services.md
+                - name: Referencia
+                  href: reference.md
+                  items:
+                    - name: IAgent
+                      href: iagent.md
+                      items:
+                        - name: 'IAgent::GetCharacter'
+                          href: iagent--getcharacter.md
+                        - name: 'IAgent:: Load'
+                          href: iagent--load.md
+                        - name: 'IAgent:: Register'
+                          href: iagent--register.md
+                        - name: 'IAgent:: Unload'
+                          href: iagent--unload.md
+                        - name: 'IAgent:: unregister'
+                          href: iagent--unregister.md
+                    - name: IAgentAudioOutputProperties
+                      href: iagentaudiooutputproperties.md
+                      items:
+                        - name: 'IAgentAudioOutputProperties::GetEnabled'
+                          href: iagentaudiooutputproperties--getenabled.md
+                        - name: 'IAgentAudioOutputProperties::GetUsingSoundEffects'
+                          href: iagentaudiooutputproperties--getusingsoundeffects.md
+                    - name: IAgentAudioOutputPropertiesEx
+                      href: iagentaudiooutputpropertiesex.md
+                      items:
+                        - name: 'IAgentAudioOutputPropertiesEx:: GetStatus'
+                          href: iagentaudiooutputpropertiesex--getstatus.md
+                    - name: IAgentBalloon
+                      href: iagentballoon.md
+                      items:
+                        - name: 'IAgentBalloon::GetBackColor'
+                          href: iagentballoon--getbackcolor.md
+                        - name: 'IAgentBalloon::GetBorderColor'
+                          href: iagentballoon--getbordercolor.md
+                        - name: 'IAgentBalloon::GetEnabled'
+                          href: iagentballoon--getenabled.md
+                        - name: 'IAgentBalloon::GetFontBold'
+                          href: iagentballoon--getfontbold.md
+                        - name: 'IAgentBalloon::GetFontCharSet'
+                          href: iagentballoon--getfontcharset.md
+                        - name: 'IAgentBalloon::GetFontItalic'
+                          href: iagentballoon--getfontitalic.md
+                        - name: 'IAgentBalloon::GetFontName'
+                          href: iagentballoon--getfontname.md
+                        - name: 'IAgentBalloon::GetFontSize'
+                          href: iagentballoon--getfontsize.md
+                        - name: 'IAgentBalloon::GetFontStrikethru'
+                          href: iagentballoon--getfontstrikethru.md
+                        - name: 'IAgentBalloon::GetFontUnderline'
+                          href: iagentballoon--getfontunderline.md
+                        - name: 'IAgentBalloon::GetForeColor'
+                          href: iagentballoon--getforecolor.md
+                        - name: 'IAgentBalloon::GetNumCharsPerLine'
+                          href: iagentballoon--getnumcharsperline.md
+                        - name: 'IAgentBalloon::GetNumLines'
+                          href: iagentballoon--getnumlines.md
+                        - name: 'IAgentBalloon:: GetVisible'
+                          href: iagentballoon--getvisible.md
+                        - name: 'IAgentBalloon::SetFontCharSet'
+                          href: iagentballoon--setfontcharset.md
+                        - name: 'IAgentBalloon::SetFontName'
+                          href: iagentballoon--setfontname.md
+                        - name: 'IAgentBalloon::SetFontSize'
+                          href: iagentballoon--setfontsize.md
+                        - name: 'IAgentBalloon:: SetVisible'
+                          href: iagentballoon--setvisible.md
+                    - name: IAgentBalloonEx
+                      href: iagentballoonex.md
+                      items:
+                        - name: 'IAgentBalloonEx:: GetStyle'
+                          href: iagentballoonex--getstyle.md
+                        - name: 'IAgentBalloonEx::SetNumCharsPerLine'
+                          href: iagentballoonex--setnumcharsperline.md
+                        - name: 'IAgentBalloonEx::SetNumLines'
+                          href: iagentballoonex--setnumlines.md
+                        - name: 'IAgentBalloonEx:: SetStyle'
+                          href: iagentballoonex--setstyle.md
+                    - name: IAgentCharacter
+                      href: iagentcharacter.md
+                      items:
+                        - name: 'IAgentCharacter:: Activate'
+                          href: iagentcharacter--activate.md
+                        - name: 'IAgentCharacter::GestureAt'
+                          href: iagentcharacter--gestureat.md
+                        - name: 'IAgentCharacter:: GetDescription'
+                          href: iagentcharacter--getdescription.md
+                        - name: 'IAgentCharacter::GetExtraData'
+                          href: iagentcharacter--getextradata.md
+                        - name: 'IAgentCharacter::GetIdleOn'
+                          href: iagentcharacter--getidleon.md
+                        - name: 'IAgentCharacter::GetMoveCause'
+                          href: iagentcharacter--getmovecause.md
+                        - name: 'IAgentCharacter:: GetName'
+                          href: iagentcharacter--getname.md
+                        - name: 'IAgentCharacter:: GetPosition'
+                          href: iagentcharacter--getposition.md
+                        - name: 'IAgentCharacter:: obtiene'
+                          href: iagentcharacter--getsize.md
+                        - name: 'IAgentCharacter::GetSoundEffectsOn'
+                          href: iagentcharacter--getsoundeffectson.md
+                        - name: 'IAgentCharacter::GetTTSPitch'
+                          href: iagentcharacter--getttspitch.md
+                        - name: 'IAgentCharacter::GetTTSSpeed'
+                          href: iagentcharacter--getttsspeed.md
+                        - name: 'IAgentCharacter::GetVisibilityCause'
+                          href: iagentcharacter--getvisibilitycause.md
+                        - name: 'IAgentCharacter:: GetVisible'
+                          href: iagentcharacter--getvisible.md
+                        - name: 'IAgentCharacter::HasOtherClients'
+                          href: iagentcharacter--hasotherclients.md
+                        - name: 'IAgentCharacter:: Hide'
+                          href: iagentcharacter--hide.md
+                        - name: 'IAgentCharacter:: Interrupt'
+                          href: iagentcharacter--interrupt.md
+                        - name: 'IAgentCharacter:: moveTo'
+                          href: iagentcharacter--moveto.md
+                        - name: 'IAgentCharacter::P establecer'
+                          href: iagentcharacter--play.md
+                        - name: 'IAgentCharacter::P redondear'
+                          href: iagentcharacter--prepare.md
+                        - name: 'IAgentCharacter:: SetDescription'
+                          href: iagentcharacter--setdescription.md
+                        - name: 'IAgentCharacter::SetIdleOn'
+                          href: iagentcharacter--setidleon.md
+                        - name: 'IAgentCharacter:: SetName'
+                          href: iagentcharacter--setname.md
+                        - name: 'IAgentCharacter:: SetPosition'
+                          href: iagentcharacter--setposition.md
+                        - name: 'IAgentCharacter:: setSize'
+                          href: iagentcharacter--setsize.md
+                        - name: 'IAgentCharacter::SetSoundEffectsOn'
+                          href: iagentcharacter--setsoundeffectson.md
+                        - name: 'IAgentCharacter:: show'
+                          href: iagentcharacter--show.md
+                        - name: 'IAgentCharacter:: Speak'
+                          href: iagentcharacter--speak.md
+                        - name: 'IAgentCharacter:: Stop'
+                          href: iagentcharacter--stop.md
+                        - name: 'IAgentCharacter:: StopAll'
+                          href: iagentcharacter--stopall.md
+                        - name: 'IAgentCharacter:: wait'
+                          href: iagentcharacter--wait.md
+                    - name: IAgentCharacterEx
+                      href: iagentcharacterex.md
+                      items:
+                        - name: 'IAgentCharacterEx::GetActive'
+                          href: iagentcharacterex--getactive.md
+                        - name: 'IAgentCharacterEx::GetAnimationNames'
+                          href: iagentcharacterex--getanimationnames.md
+                        - name: 'IAgentCharacterEx::GetAutoPopupMenu'
+                          href: iagentcharacterex--getautopopupmenu.md
+                        - name: 'IAgentCharacterEx:: GetGUID'
+                          href: iagentcharacterex--getguid.md
+                        - name: 'IAgentCharacterEx::GetHelpContextID'
+                          href: iagentcharacterex--gethelpcontextid.md
+                        - name: 'IAgentCharacterEx::GetHelpFileName'
+                          href: iagentcharacterex--gethelpfilename.md
+                        - name: 'IAgentCharacterEx::GetHelpModeOn'
+                          href: iagentcharacterex--gethelpmodeon.md
+                        - name: 'IAgentCharacterEx::GetLanguageID'
+                          href: iagentcharacterex--getlanguageid.md
+                        - name: 'IAgentCharacterEx::GetOriginalSize'
+                          href: iagentcharacterex--getoriginalsize.md
+                        - name: 'IAgentCharacterEx::GetSRModeID'
+                          href: iagentcharacterex--getsrmodeid.md
+                        - name: 'IAgentCharacterEx::GetSRStatus'
+                          href: iagentcharacterex--getsrstatus.md
+                        - name: 'IAgentCharacterEx::GetTTSModeID'
+                          href: iagentcharacterex--getttsmodeid.md
+                        - name: 'IAgentCharacterEx:: GetVersion'
+                          href: iagentcharacterex--getversion.md
+                        - name: 'IAgentCharacterEx:: Listen'
+                          href: iagentcharacterex--listen.md
+                        - name: 'IAgentCharacterEx::SetAutoPopupMenu'
+                          href: iagentcharacterex--setautopopupmenu.md
+                        - name: 'IAgentCharacterEx::SetHelpContextID'
+                          href: iagentcharacterex--sethelpcontextid.md
+                        - name: 'IAgentCharacterEx::SetHelpFileName'
+                          href: iagentcharacterex--sethelpfilename.md
+                        - name: 'IAgentCharacterEx::SetHelpModeOn'
+                          href: iagentcharacterex--sethelpmodeon.md
+                        - name: 'IAgentCharacterEx::SetLanguageID'
+                          href: iagentcharacterex--setlanguageid.md
+                        - name: 'IAgentCharacterEx::SetSRModeID'
+                          href: iagentcharacterex--setsrmodeid.md
+                        - name: 'IAgentCharacterEx::SetTTSModeID'
+                          href: iagentcharacterex--setttsmodeid.md
+                        - name: 'IAgentCharacterEx::ShowPopupMenu'
+                          href: iagentcharacterex--showpopupmenu.md
+                        - name: 'IAgentCharacterEx:: cree'
+                          href: iagentcharacterex--think.md
+                    - name: IAgentCommand
+                      href: iagentcommand.md
+                      items:
+                        - name: 'IAgentCommand::GetCaption'
+                          href: iagentcommand--getcaption.md
+                        - name: 'IAgentCommand::GetConfidenceText'
+                          href: iagentcommand--getconfidencetext.md
+                        - name: 'IAgentCommand::GetConfidenceThreshold'
+                          href: iagentcommand--getconfidencethreshold.md
+                        - name: 'IAgentCommand::GetEnabled'
+                          href: iagentcommand--getenabled.md
+                        - name: 'IAgentCommand:: GetID'
+                          href: iagentcommand--getid.md
+                        - name: 'IAgentCommand:: GetVisible'
+                          href: iagentcommand--getvisible.md
+                        - name: 'IAgentCommand::GetVoice'
+                          href: iagentcommand--getvoice.md
+                        - name: 'IAgentCommand::SetCaption'
+                          href: iagentcommand--setcaption.md
+                        - name: 'IAgentCommand::SetConfidenceThreshold'
+                          href: iagentcommand--setconfidencethreshold.md
+                        - name: 'IAgentCommand::SetConfidenceText'
+                          href: iagentcommand--setconfidencetext.md
+                        - name: 'IAgentCommand:: SetEnabled'
+                          href: iagentcommand--setenabled.md
+                        - name: 'IAgentCommand:: SetVisible'
+                          href: iagentcommand--setvisible.md
+                        - name: 'IAgentCommand::SetVoice'
+                          href: iagentcommand--setvoice.md
+                    - name: IAgentCommandEx
+                      href: iagentcommandex.md
+                      items:
+                        - name: 'IAgentCommandEx::GetHelpContextID'
+                          href: iagentcommandex--gethelpcontextid.md
+                        - name: 'IAgentCommandEx::GetVoiceCaption'
+                          href: iagentcommandex--getvoicecaption.md
+                        - name: 'IAgentCommandEx::SetHelpContextID'
+                          href: iagentcommandex--sethelpcontextid.md
+                        - name: 'IAgentCommandEx::SetVoiceCaption'
+                          href: iagentcommandex--setvoicecaption.md
+                    - name: IAgentCommands
+                      href: iagentcommands.md
+                      items:
+                        - name: 'IAgentCommands:: Add'
+                          href: iagentcommands--add.md
+                        - name: 'IAgentCommands::GetCaption'
+                          href: iagentcommands--getcaption.md
+                        - name: 'IAgentCommands::GetCommand'
+                          href: iagentcommands--getcommand.md
+                        - name: 'IAgentCommands:: GetCount'
+                          href: iagentcommands--getcount.md
+                        - name: 'IAgentCommands:: GetVisible'
+                          href: iagentcommands--getvisible.md
+                        - name: 'IAgentCommands::GetVoice'
+                          href: iagentcommands--getvoice.md
+                        - name: 'IAgentCommands:: Insert'
+                          href: iagentcommands--insert.md
+                        - name: 'IAgentCommands:: Remove'
+                          href: iagentcommands--remove.md
+                        - name: 'IAgentCommands:: RemoveAll'
+                          href: iagentcommands--removeall.md
+                        - name: 'IAgentCommands::SetCaption'
+                          href: iagentcommands--setcaption.md
+                        - name: 'IAgentCommands:: SetVisible'
+                          href: iagentcommands--setvisible.md
+                        - name: 'IAgentCommands::SetVoice'
+                          href: iagentcommands--setvoice.md
+                    - name: IAgentCommandsEx
+                      href: iagentcommandsex.md
+                      items:
+                        - name: 'IAgentCommandsEx:: AddEx'
+                          href: iagentcommandsex--addex.md
+                        - name: 'IAgentCommandsEx::GetDefaultID'
+                          href: iagentcommandsex--getdefaultid.md
+                        - name: 'IAgentCommandsEx::GetFontName'
+                          href: iagentcommandsex--getfontname.md
+                        - name: 'IAgentCommandsEx::GetFontSize'
+                          href: iagentcommandsex--getfontsize.md
+                        - name: 'IAgentCommandsEx::GetGlobalVoiceCommandsEnabled'
+                          href: iagentcommandsex--getglobalvoicecommandsenabled.md
+                        - name: 'IAgentCommandsEx::GetHelpContextID'
+                          href: iagentcommandsex--gethelpcontextid.md
+                        - name: 'IAgentCommandsEx::GetVoiceCaption'
+                          href: iagentcommandsex--getvoicecaption.md
+                        - name: 'IAgentCommandsEx::InsertEx'
+                          href: iagentcommandsex--insertex.md
+                        - name: 'IAgentCommandsEx::SetDefaultID'
+                          href: iagentcommandsex--setdefaultid.md
+                        - name: 'IAgentCommandsEx::SetFontName'
+                          href: iagentcommandsex--setfontname.md
+                        - name: 'IAgentCommandsEx::SetFontSize'
+                          href: iagentcommandsex--setfontsize.md
+                        - name: 'IAgentCommandsEx::SetGlobalVoiceCommandsEnabled'
+                          href: iagentcommandsex--setglobalvoicecommandsenabled.md
+                        - name: 'IAgentCommandsEx::SetHelpContextID'
+                          href: iagentcommandsex--sethelpcontextid.md
+                        - name: 'IAgentCommandsEx::SetVoiceCaption'
+                          href: iagentcommandsex--setvoicecaption.md
+                    - name: IAgentCommandWindow
+                      href: iagentcommandwindow.md
+                      items:
+                        - name: 'IAgentCommandWindow:: GetPosition'
+                          href: iagentcommandwindow--getposition.md
+                        - name: 'IAgentCommandWindow:: obtiene'
+                          href: iagentcommandwindow--getsize.md
+                        - name: 'IAgentCommandWindow:: GetVisible'
+                          href: iagentcommandwindow--getvisible.md
+                        - name: 'IAgentCommandWindow:: SetVisible'
+                          href: iagentcommandwindow--setvisible.md
+                    - name: IAgentEx
+                      href: iagentex.md
+                      items:
+                        - name: 'IAgentEx::ShowDefaultCharacterProperties'
+                          href: iagentex--showdefaultcharacterproperties.md
+                        - name: 'IAgentEx:: GetVersion'
+                          href: iagentex--getversion.md
+                    - name: IAgentNotifySink
+                      href: events.md
+                      items:
+                        - name: 'IAgentNotifySink::ActivateInputState'
+                          href: iagentnotifysink--activateinputstate.md
+                        - name: 'IAgentNotifySink::BalloonVisibleState'
+                          href: iagentnotifysink---balloonvisiblestate.md
+                        - name: 'IAgentNotifySink:: Bookmark'
+                          href: iagentnotifysink--bookmark.md
+                        - name: 'IAgentNotifySink:: click'
+                          href: iagentnotifysink--click.md
+                        - name: 'IAgentNotifySink:: Command'
+                          href: iagentnotifysink--command.md
+                        - name: 'IAgentNotifySink::D blClick'
+                          href: iagentnotifysink--dblclick.md
+                        - name: 'IAgentNotifySink::D ragComplete'
+                          href: iagentnotifysink--dragcomplete.md
+                        - name: 'IAgentNotifySink::D ragStart'
+                          href: iagentnotifysink--dragstart.md
+                        - name: 'IAgentNotifySink:: idle'
+                          href: iagentnotifysink--idle.md
+                        - name: 'IAgentNotifySink:: Move'
+                          href: iagentnotifysink--move.md
+                        - name: 'IAgentNotifySink::RequestComplete'
+                          href: iagentnotifysink--requestcomplete.md
+                        - name: 'IAgentNotifySink::RequestStart'
+                          href: iagentnotifysink--requeststart.md
+                        - name: 'IAgentNotifySink:: Size'
+                          href: iagentnotifysink---size.md
+                        - name: 'IAgentNotifySink::VisibleState'
+                          href: iagentnotifysink--visiblestate.md
+                    - name: IAgentNotifySinkEx
+                      href: iagentnotifysinkex.md
+                      items:
+                        - name: 'IAgentNotifySinkEx::ActiveClientChange'
+                          href: iagentnotifysinkex--activeclientchange.md
+                        - name: 'IAgentNotifySinkEx::AgentPropertyChange'
+                          href: iagentnotifysinkex--agentpropertychange.md
+                        - name: 'IAgentNotifySinkEx::D efaultCharacterChange'
+                          href: iagentnotifysinkex--defaultcharacterchange.md
+                        - name: 'IAgentNotifySinkEx::HelpComplete'
+                          href: iagentnotifysinkex--helpcomplete.md
+                        - name: 'IAgentNotifySinkEx::ListeningState'
+                          href: iagentnotifysinkex--listeningstate.md
+                    - name: IAgentPropertySheet
+                      href: iagentpropertysheet.md
+                      items:
+                        - name: 'IAgentPropertySheet::GetPage'
+                          href: iagentpropertysheet--getpage.md
+                        - name: 'IAgentPropertySheet:: GetPosition'
+                          href: iagentpropertysheet--getposition.md
+                        - name: 'IAgentPropertySheet:: obtiene'
+                          href: iagentpropertysheet--getsize.md
+                        - name: 'IAgentPropertySheet:: GetVisible'
+                          href: iagentpropertysheet--getvisible.md
+                        - name: 'IAgentPropertySheet:: SetPage'
+                          href: iagentpropertysheet--setpage.md
+                        - name: 'IAgentPropertySheet:: SetVisible'
+                          href: iagentpropertysheet--setvisible.md
+                    - name: IAgentSpeechInputProperties
+                      href: iagentspeechinputproperties.md
+                      items:
+                        - name: 'IAgentSpeechInputProperties::GetEnabled'
+                          href: iagentspeechinputproperties--getenabled.md
+                        - name: 'IAgentSpeechInputProperties::GetHotKey'
+                          href: iagentspeechinputproperties--gethotkey.md
+                        - name: 'IAgentSpeechInputProperties::GetListeningTip'
+                          href: iagentspeechinputproperties--getlisteningtip.md
+                    - name: IAgentUserInput
+                      href: iagentuserinput.md
+                      items:
+                        - name: 'IAgentUserInput::GetAllItemData'
+                          href: iagentuserinput--getallitemdata.md
+                        - name: 'IAgentUserInput:: GetCount'
+                          href: iagentuserinput--getcount.md
+                        - name: 'IAgentUserInput::GetItemConfidence'
+                          href: iagentuserinput--getitemconfidence.md
+                        - name: 'IAgentUserInput::GetItemID'
+                          href: iagentuserinput--getitemid.md
+                        - name: 'IAgentUserInput::GetItemText'
+                          href: iagentuserinput--getitemtext.md
+            - name: Preguntas más frecuentes sobre programación y scripting
+              href: programming-scripting-faq.md
+            - name: Códigos de error del agente de Microsoft
+              href: microsoft-agent-error-codes.md
+        - name: Uso de motores de voz con Microsoft Agent
+          href: using-speech-engines-with-microsoft-agent.md
+          items:
+            - name: Obtener acceso a un motor de voz en el código
+              href: accessing-a-speech-engine-in-your-code.md
+            - name: Etiquetas de salida de voz del agente de Microsoft
+              href: microsoft-agent-speech-output-tags.md
+              items:
+                - name: Etiqueta Chr
+                  href: chr-tag.md
+                - name: Etiqueta CTX
+                  href: ctx-tag.md
+                - name: Etiqueta EMP
+                  href: emp-tag.md
+                - name: Etiqueta lst
+                  href: lst-tag.md
+                - name: Etiqueta de mapa
+                  href: map-tag.md
+                - name: Etiqueta MRK
+                  href: mrk-tag.md
+                - name: Etiqueta Pau
+                  href: pau-tag.md
+                - name: Etiqueta Pit
+                  href: pit-tag.md
+                - name: RST (etiqueta)
+                  href: rst-tag.md
+                - name: Etiqueta SPD
+                  href: spd-tag.md
+                - name: Etiqueta Vol
+                  href: vol-tag.md
+            - name: Normalización del texto de los motores de conversión de texto a voz
+              href: text-to-speech-engines-text-normalization.md
+            - name: Requisitos de compatibilidad del motor de voz
+              href: speech-engine-support-requirements.md
+              items:
+                - name: Requisitos para los motores de texto a voz
+                  href: requirements-for-text-to-speech-engines.md
+                  items:
+                    - name: ITTSCentralW
+                      href: ittscentralw.md
+                    - name: ITTSNotifySinkW
+                      href: ittsnotifysinkw.md
+                    - name: ITTSBufNotifySinkW
+                      href: ittsbufnotifysinkw.md
+                    - name: ITTSAttributesW
+                      href: ittsattributesw.md
+                - name: Requisitos para los motores de reconocimiento de voz
+                  href: requirements-for-speech-recognition-engines.md
+                - name: Requisitos para admitir la herramienta de edición de sonido lingüístico de Microsoft
+                  href: requirements-for-supporting-the-microsoft-linguistic-information-sound-editing-tool.md
+                  items:
+                    - name: ISRResGraphEx y IAttributes
+                      href: isrresgraphex-and-iattributes.md
+            - name: Otros motores de voz compatibles con Microsoft Agent
+              href: other-speech-engines-compatible-with-microsoft-agent.md
+        - name: Crear caracteres para Microsoft Agent
+          href: creating-characters-for-microsoft-agent.md
+          items:
+            - name: Diseñar caracteres para Microsoft Agent
+              href: designing-characters-for-microsoft-agent.md
+              items:
+                - name: Characters
+                  href: characters.md
+                - name: Animaciones
+                  href: animations.md
+                - name: Estados de agente
+                  href: agent-states.md
+                - name: Principios de animación
+                  href: animation-principles.md
+            - name: Usar el editor de caracteres del agente de Microsoft
+              href: using-the-microsoft-agent-character-editor.md
+              items:
+                - name: Inicio del editor de caracteres del agente
+                  href: starting-the-agent-character-editor.md
+                - name: Definir un nuevo carácter
+                  href: defining-a-new-character.md
+                - name: Creación de animaciones
+                  href: creating-animations.md
+                - name: Referencia de comandos
+                  href: command-reference-.md
+                - name: Botones de la barra de herramientas
+                  href: toolbar-buttons-.md
+            - name: Diseñar caracteres para Microsoft Office
+              href: designing-characters-for-microsoft-office.md
+              items:
+                - name: Diseño de animación
+                  href: animation-design.md
+                - name: Conjunto de animaciones de Office
+                  href: the-office-animation-set.md
+                - name: Instalación del carácter
+                  href: installing-your-character.md
+        - name: Uso de la herramienta de edición de sonido lingüístico de Microsoft
+          href: using-the-microsoft-linguistic-information-sound-editing-tool.md
+          items:
+            - name: Instalar el editor de sonido
+              href: installing-the-sound-editor.md
+            - name: Iniciar el editor de sonidos
+              href: starting-the-sound-editor.md
+            - name: Crear un nuevo archivo de sonido
+              href: creating-a-new-sound-file.md
+            - name: Cargar un archivo de sonido existente
+              href: loading-an-existing-sound-file.md
+            - name: Generar información lingüística
+              href: generating-linguistic-information.md
+            - name: Guardar un archivo de sonido
+              href: saving-a-sound-file.md
+            - name: Usar el editor con un motor de voz diferente
+              href: using-the-editor-with-a-different-speech-engine.md
+            - name: Referencia de comandos
+              href: command-reference.md
+            - name: Botones de la barra de herramientas
+              href: toolbar-buttons.md
+        - name: Solución de problemas de Microsoft Agent
+          href: troubleshooting-microsoft-agent.md
+          items:
+            - name: Problemas de instalación y carga de páginas
+              href: installation-and-page-loading-problems.md
+            - name: Problemas de salida
+              href: output-problems.md
+            - name: Problemas de entrada de voz
+              href: speech-input-problems.md
+        - name: Anima las listas de los caracteres disponibles de Microsoft
+          href: animation-lists-for-the-characters-available-from-microsoft.md
+          items:
+            - name: Animaciones del agente de Microsoft para el carácter de genio
+              href: microsoft-agent-animations-for-genie-character.md
+            - name: Animaciones del agente de Microsoft para el carácter Merlin
+              href: microsoft-agent-animations-for-merlin-character.md
+            - name: Animaciones del agente de Microsoft para el carácter Robby
+              href: microsoft-agent-animations-for-robby-character.md
+            - name: Animaciones del agente de Microsoft para el carácter Peedy
+              href: microsoft-agent-animations-for-peedy-character.md
+        - name: Bibliografía
+          href: bibliography.md
+    - name: Windows Desktop Search 2. x
+      href: '-search-2x-wds-overview.md'
+      items:
+        - name: Consultar el índice (WDS 2. x)
+          href: '-search-2x-querying-entry-page.md'
+          items:
+            - name: Llamar a WDS desde páginas web
+              href: '-search-2x-wds-browserhelpobject.md'
+            - name: Llamar a WDS mediante programación
+              href: '-search-2x-wds-callingwdsprogrammatically.md'
+            - name: Llamar a WDS desde la línea de comandos
+              href: '-search-2x-wds-fromcommandline.md'
+        - name: Extender el índice
+          href: '-search-2x-wds-extendingtheindex.md'
+          items:
+            - name: Desarrollo de complementos de IFilter
+              href: '-search-2x-wds-ifilteraddins.md'
+            - name: Desarrollar complementos de controlador de protocolo
+              href: '-search-2x-wds-phaddins.md'
+              items:
+                - name: Implementar un controlador de protocolo para WDS
+                  href: '-search-2x-wds-phimplementing.md'
+                - name: Agregar iconos y menús contextuales con extensiones de Shell
+                  href: '-search-2x-wds-ph-ui-extensions.md'
+                - name: Notificar el índice de cambios
+                  href: '-search-2x-wds-notifyingofchanges.md'
+                - name: Código de ejemplo de la interfaz de usuario del controlador de protocolo personalizado
+                  href: '-search-2x-wds-ph-ui-samplecode.md'
+                - name: Instalar y registrar controladores de protocolo
+                  href: '-search-2x-wds-ph-install-registration.md'
+        - name: Schema
+          href: '-search-2x-wds-schematable.md'
+        - name: Sintaxis de consulta avanzada
+          href: '-search-2x-wds-aqsreference.md'
+        - name: Tipos percibidos
+          href: '-search-2x-wds-perceivedtype.md'
+        - name: Protocolo de servicios de indexación de contenido
+          href: '-search-2x-wds-content-indexing-services-protocol.md'
+        - name: Interfaces de control ActiveX de WDS 2. x
+          href: '-search-activex-control-reference-entry-page.md'
+          items:
+            - name: IPropertyFilter
+              href: '-search-2x-ipropertyfilter.md'
+              items:
+                - name: IndexColumn
+                  href: '-search-2x-ipropertyfilter-indexcolumn.md'
+                - name: LogicOperator
+                  href: '-search-2x-ipropertyfilter-logicoperator.md'
+                - name: NestingDepth
+                  href: '-search-2x-ipropertyfilter-nestingdepth.md'
+                - name: Texto
+                  href: '-search-2x-ipropertyfilter-text.md'
+                - name: UID
+                  href: '-search-2x-ipropertyfilter-uid.md'
+            - name: IPropertyFilterCollection
+              href: '-search-2x-ipropertyfiltercollection.md'
+              items:
+                - name: AddItem
+                  href: '-search-2x-ipropertyfiltercollection-additem.md'
+                - name: clear
+                  href: '-search-2x-ipropertyfiltercollection-clear.md'
+                - name: Count
+                  href: '-search-2x-ipropertyfiltercollection-count.md'
+                - name: GetITem
+                  href: '-search-2x-ipropertyfiltercollection-getitem.md'
+                - name: RemoveItem
+                  href: '-search-2x-ipropertyfiltercollection-removeitem.md'
+            - name: IResultProperty
+              href: '-search-2x-iresultproperty.md'
+              items:
+                - name: DataType
+                  href: '-search-2x-iresultproperty-datatype.md'
+                - name: DisplayName
+                  href: '-search-2x-iresultproperty-displayname.md'
+                - name: DisplayState
+                  href: '-search-2x-iresultproperty-displaystate.md'
+                - name: Goback
+                  href: '-search-2x-iresultproperty-goback.md'
+                - name: GoForward
+                  href: '-search-2x-iresultproperty-goforward.md'
+                - name: Diversas
+                  href: '-search-2x-iresultproperty-hint.md'
+                - name: IndexColumn
+                  href: '-search-2x-iresultproperty-indexcolumn.md'
+                - name: UID
+                  href: '-search-2x-iresultproperty-uid.md'
+            - name: IResultsViewer
+              href: '-search-2x-iresultsviewer.md'
+              items:
+                - name: Contenido
+                  href: '-search-2x-iresultsviewer-contents.md'
+                - name: DisplayName
+                  href: '-search-2x-iresultsviewer-displayname.md'
+                - name: EnumSelectedItems
+                  href: '-search-2x-iresultsviewer-enumselecteditems.md'
+                - name: FilterType
+                  href: '-search-2x-iresultsviewer-filtertype.md'
+                - name: Goback
+                  href: '-search-2x-iresultsviewer-goback.md'
+                - name: GoForward
+                  href: '-search-2x-iresultsviewer-goforward.md'
+                - name: HeaderStyle
+                  href: '-search-2x-iresultsviewer-headerstyle.md'
+                - name: IsUpdateNeeded
+                  href: '-search-2x-iresultsviewer-isupdateneeded.md'
+                - name: ItemStore
+                  href: '-search-2x-iresultsviewer-itemstore.md'
+                - name: PreviewStyle
+                  href: '-search-2x-iresultsviewer-previewstyle.md'
+                - name: PropertyFilters
+                  href: '-search-2x-iresultsviewer-propertyfilters.md'
+                - name: QueryText
+                  href: '-search-2x-iresultsviewer-querytext.md'
+                - name: Actualizar
+                  href: '-search-2x-iresultsviewer-refresh.md'
+                - name: ResultsStyle
+                  href: '-search-2x-iresultsviewer-resultsstyle.md'
+                - name: SortOrderProperty
+                  href: '-search-2x-iresultsviewer-sortorderproperty.md'
+                - name: SortProperty
+                  href: '-search-2x-iresultsviewer-sortproperty.md'
+                - name: Stop
+                  href: '-search-2x-iresultsviewer-stop.md'
+                - name: Actualizar
+                  href: '-search-2x-iresultsviewer-update.md'
+            - name: IResultType
+              href: '-search-2x-iresulttype.md'
+              items:
+                - name: DisplayName
+                  href: '-search-2x-iresulttype-displayname.md'
+                - name: GetProperty
+                  href: '-search-2x-iresulttype-getproperty.md'
+                - name: PreceivedType
+                  href: '-search-2x-iresulttype-preceivedtype.md'
+                - name: PropertyCount
+                  href: '-search-2x-iresulttype-propertycount.md'
+                - name: UID
+                  href: '-search-2x-iresulttype-uid.md'
+            - name: IResultVerb
+              href: '-search-2x-iresultverb.md'
+              items:
+                - name: DisplayName
+                  href: '-search-2x-iresultverb-displayname.md'
+                - name: DoIt
+                  href: '-search-2x-iresultverb-doit.md'
+                - name: habilitado
+                  href: '-search-2x-iresultverb-enabled.md'
+                - name: HelpText
+                  href: '-search-2x-iresultverb-helptext.md'
+                - name: Icono
+                  href: '-search-2x-iresultverb-icon.md'
+                - name: Nombre
+                  href: '-search-2x-iresultverb-name.md'
+            - name: ISearchResult
+              href: '-search-2x-isearchresult.md'
+              items:
+                - name: Disponibilidad
+                  href: '-search-2x-isearchresult-availability.md'
+                - name: Doverb
+                  href: '-search-2x-isearchresult-doverb.md'
+                - name: GetIcon
+                  href: '-search-2x-isearchresult-geticon.md'
+                - name: GetThumbnail
+                  href: '-search-2x-isearchresult-getthumbnail.md'
+                - name: GetValue
+                  href: '-search-2x-isearchresult-getvalue.md'
+                - name: GetVerb
+                  href: '-search-2x-isearchresult-getverb.md'
+                - name: IconCount
+                  href: '-search-2x-isearchresult-iconcount.md'
+                - name: Índice
+                  href: '-search-2x-isearchresult-index.md'
+                - name: LoadState
+                  href: '-search-2x-isearchresult-loadstate.md'
+                - name: Controlador de vista previa
+                  href: '-search-2x-isearchresult-previewer.md'
+                - name: PutValue
+                  href: '-search-2x-isearchresult-putvalue.md'
+                - name: ThumbnailState
+                  href: '-search-2x-isearchresult-thumbnailstate.md'
+                - name: Tipo
+                  href: '-search-2x-isearchresult-type.md'
+                - name: VerbCount
+                  href: '-search-2x-isearchresult-verbcount.md'
+        - name: Referencia de WDS 2. x
+          href: '-search-2x-reference-entry-page.md'
+          items:
+            - name: Constantes y enumeraciones de WDS 2.x
+              href: '-search-2x-constants-and-enumerations-entry-page.md'
+              items:
+                - name: ChangeAdviseCodes
+                  href: /previous-versions//aa965736(v=vs.85)
+                - name: ColumnSortOrder
+                  href: /windows/win32/api/mmcobj/ne-mmcobj-_columnsortorder
+                - name: HeaderDisplayStyle
+                  href: '-search-2x-headerdisplaystyleenum.md'
+                - name: PreviewDisplayStyle
+                  href: '-search-2x-previewdisplaystyleenum.md'
+                - name: ResultsDisplayStyle
+                  href: '-search-2x-resultsdisplaystyle.md'
+                - name: ViewContents
+                  href: '-search-2x-viewcontents.md'
+            - name: Interfaces de WDS 2. x
+              href: '-search-2x-interfaces-entry-page.md'
+              items:
+                - name: IGatherNotify (desusado)
+                  href: /previous-versions//aa965731(v=vs.85)
+                  items:
+                    - name: Parámetro addscope (desusado)
+                      href: '-search-2x-igathernotify-addscope.md'
+                    - name: Init (obsoleto)
+                      href: '-search-2x-igathernotify-init.md'
+                    - name: OnDataMove (desusado)
+                      href: '-search-2x-igathernotify-ondatamove.md'
+                    - name: OnDataChange (desusado)
+                      href: '-search-2x-igathernotify-ondatachange.md'
+                    - name: RemoveScope (desusado)
+                      href: /previous-versions//ff431697(v=vs.85)
+                - name: ISearchDesktop
+                  href: /previous-versions//aa965729(v=vs.85)
+                  items:
+                    - name: ExecuteQuery
+                      href: /previous-versions//aa965727(v=vs.85)
+                    - name: ExecuteSQLQuery
+                      href: '-search-2x-isearchdesktop-executesqlquery.md'
+    - name: Windows Defender
+      href: windows-defender-bumper.md
+      items:
+        - name: Referencia
+          href: defender-ref-entry.md
+          items:
+            - name: Enumeraciones de Windows Defender
+              href: windows-defender-enumerations.md
+              items:
+                - name: MPCALLBACK_TYPE
+                  href: mpcallback-type.md
+                - name: MPCOMPONENT_ID
+                  href: mpcomponent-id.md
+                - name: MPDETECTION_ORIGIN
+                  href: mpdetection-origin.md
+                - name: MPDETECTION_STATE
+                  href: mpdetection-state.md
+                - name: MPEXECUTION_STATUS
+                  href: mpexecution-status.md
+                - name: MP_FASTPATH_TYPE
+                  href: mp-fastpath-type.md
+                - name: MP_HASH_TYPE
+                  href: mp-hash-type.md
+                - name: MPNOTIFY
+                  href: mpnotify.md
+                - name: MP_PERSISTENCE_LIMIT_TYPE
+                  href: mp-persistence-limit-type.md
+                - name: MP_REMOVAL_REASON
+                  href: mp-removal-reason.md
+                - name: MPRESOLVED_REASON
+                  href: mpresolved-reason.md
+                - name: MPSCAN_TYPE
+                  href: mpscan-type.md
+                - name: MP_SIGNATURE_TYPE
+                  href: mp-signature-type.md
+                - name: MPSOURCE
+                  href: mpsource.md
+                - name: MPSTATUS_FLAG
+                  href: mpstatus-flag.md
+                - name: MPTHREAT_ACTION
+                  href: mpthreat-action.md
+                - name: MPTHREAT_CATEGORY
+                  href: mpthreat-category.md
+                - name: MPTHREAT_DETECTION
+                  href: mpthreat-detection.md
+                - name: MPTHREAT_SEVERITY
+                  href: mpthreat-severity.md
+                - name: MPTHREAT_STATUS
+                  href: mpthreat-status.md
+                - name: MPTHREAT_TYPE
+                  href: mpthreat-type.md
+            - name: Funciones de Windows Defender
+              href: windows-defender-functions.md
+              items:
+                - name: MpErrorMessageFormat
+                  href: mperrormessageformat.md
+                - name: MpFreeMemory
+                  href: mpfreememory.md
+                - name: MpHandleClose
+                  href: mphandleclose.md
+                - name: MpManagerOpen
+                  href: mpmanageropen.md
+                - name: MpManagerStatusQuery
+                  href: mpmanagerstatusquery.md
+                - name: MpManagerStatusQueryEx
+                  href: mpmanagerstatusqueryex.md
+                - name: MpManagerVersionQuery
+                  href: mpmanagerversionquery.md
+                - name: MpScanControl
+                  href: mpscancontrol.md
+                - name: MpScanStart
+                  href: mpscanstart.md
+                - name: MpThreatEnumerate
+                  href: mpthreatenumerate.md
+                - name: MpThreatOpen
+                  href: mpthreatopen.md
+                - name: MpThreatQuery
+                  href: mpthreatquery.md
+                - name: MpUpdateControl
+                  href: mpupdatecontrol.md
+                - name: MpUpdateStart
+                  href: mpupdatestart.md
+                - name: WDEnable
+                  href: /windows/desktop/api/Windowsdefender/nf-windowsdefender-wdenable
+                - name: WDStatus
+                  href: /windows/desktop/api/Windowsdefender/nf-windowsdefender-wdstatus
+            - name: Estructuras de Windows Defender
+              href: windows-defender-structures.md
+              items:
+                - name: MPCALLBACK_DATA
+                  href: mpcallback-data.md
+                - name: MPCLEAN_DATA
+                  href: mpclean-data.md
+                - name: MPCLEAN_PRECHECK_DATA
+                  href: mpclean-precheck-data.md
+                - name: MPCOMPONENT_STATUS
+                  href: mpcomponent-status.md
+                - name: MPCOMPONENT_VERSION
+                  href: mpcomponent-version.md
+                - name: MPCONFIGURATION_DATA
+                  href: mpconfiguration-data.md
+                - name: MPENDOFLIFE_DATA
+                  href: mpendoflife-data.md
+                - name: MPEXPIRATION_DATA
+                  href: mpexpiration-data.md
+                - name: MPFASTPATH_DATA
+                  href: mpfastpath-data.md
+                - name: MPHEALTH_DATA
+                  href: mphealth-data.md
+                - name: MPMALWARETOAST_DATA
+                  href: mpmalwaretoast-data.md
+                - name: MPNIS_PRIVATE_DATA
+                  href: mpnis-private-data.md
+                - name: MPRESERVED_DATA
+                  href: mpreserved-data.md
+                - name: MPRESOURCE_INFO
+                  href: mpresource-info.md
+                - name: MPRESOURCE_STATS
+                  href: mpresource-stats.md
+                - name: MPSAMPLE_DATA
+                  href: mpsample-data.md
+                - name: MPSCAN_DATA
+                  href: mpscan-data.md
+                - name: MPSCAN_RESOURCES
+                  href: mpscan-resources.md
+                - name: MPSCAN_RESULT
+                  href: mpscan-result.md
+                - name: MPSIGUPDATE_DATA
+                  href: mpsigupdate-data.md
+                - name: MPSTATUS_DATA
+                  href: mpstatus-data.md
+                - name: MPSTATUS_DATAEX_UNUSED
+                  href: mpstatus-dataex-unused.md
+                - name: MPSTATUS_INFO
+                  href: mpstatus-info.md
+                - name: MPTHREAT_DATA
+                  href: mpthreat-data.md
+                - name: MPTHREAT_INFO
+                  href: mpthreat-info.md
+                - name: MPTHREAT_INFOEX_BEHAVIOR
+                  href: mpthreat-infoex-behavior.md
+                - name: MPTHREAT_INFOEX_NIS
+                  href: mpthreat-infoex-nis.md
+                - name: MPTHREAT_INFOEX_UNUSED
+                  href: mpthreat-infoex-unused.md
+                - name: MPTHREAT_LOCALIZED_INFO
+                  href: mpthreat-localized-info.md
+                - name: MPTHREAT_STATS
+                  href: mpthreat-stats.md
+                - name: MPTHREAT_STATS_DATA
+                  href: mpthreat-stats-data.md
+                - name: MPVERSION_INFO
+                  href: mpversion-info.md
