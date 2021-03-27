@@ -1,0 +1,59 @@
+---
+title: Cómo usar Direct3D 11
+description: En esta sección se muestra cómo usar la API de Microsoft Direct3D 11 para realizar varias tareas comunes.
+ms.assetid: 9BDEDB68-3484-4683-85AF-B583971382C8
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 45bc4dad63c5fc12f2077481172061fc317135a7
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "103792436"
+---
+# <a name="how-to-use-direct3d-11"></a>Cómo usar Direct3D 11
+
+En esta sección se muestra cómo usar la API de Microsoft Direct3D 11 para realizar varias tareas comunes.
+
+
+
+| Tema                                                                                                                         | Descripción                                                                                                                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Cómo: crear un dispositivo de referencia](overviews-direct3d-11-devices-create-ref.md)<br/>                                  | En este tema se muestra cómo crear un dispositivo de referencia que implementa una implementación de software muy precisa del tiempo de ejecución.<br/>                                                                                                                                                    |
+| [Cómo: crear un dispositivo WARP](overviews-direct3d-11-devices-create-warp.md)<br/>                                      | En este tema se muestra cómo crear un dispositivo de ALABEo que implementa un rasterizador de software de alta velocidad.<br/>                                                                                                                                                                                  |
+| [Cómo: crear una cadena de intercambio](overviews-direct3d-11-devices-create-swap-chain.md)<br/>                                 | En este tema se muestra cómo crear una cadena de intercambio que encapsule dos o más búferes que se usan para la representación y presentación. <br/>                                                                                                                                                      |
+| [Cómo: enumerar adaptadores](overviews-direct3d-11-devices-enum.md)<br/>                                               | En este tema se muestra cómo usar la infraestructura de gráficos de Microsoft DirectX (DXGI) para enumerar los adaptadores de gráficos disponibles en un equipo.<br/>                                                                                                                                        |
+| [Cómo: obtener modos de presentación de adaptador](overviews-direct3d-11-devices-get-adapter-info.md)<br/>                            | En este tema se muestra cómo usar DXGI para obtener los modos de presentación válidos asociados a un adaptador.<br/>                                                                                                                                                                                     |
+| [Cómo: crear un dispositivo y un contexto inmediato](overviews-direct3d-11-devices-initialize.md)<br/>                      | En este tema se muestra cómo inicializar un [dispositivo](overviews-direct3d-11-devices-intro.md).<br/>                                                                                                                                                                                        |
+| [Cómo: obtener el nivel de características del dispositivo](overviews-direct3d-11-devices-downlevel-get.md)<br/>                            | En este tema se muestra cómo obtener el [nivel de características](overviews-direct3d-11-devices-downlevel-intro.md) más alto compatible con un [dispositivo](overviews-direct3d-11-devices-intro.md).<br/>                                                                                                   |
+| [Cómo: crear un búfer de vértices](overviews-direct3d-11-resources-buffers-vertex-how-to.md)<br/>                        | En este tema se muestra cómo inicializar un [búfer de vértices](overviews-direct3d-11-resources-buffers-intro.md)estático, es decir, un búfer de vértice que no cambia.<br/>                                                                                                                  |
+| [Cómo: crear un búfer de índice](overviews-direct3d-11-resources-buffers-index-how-to.md)<br/>                         | En este tema se muestra cómo inicializar un [búfer de índice](overviews-direct3d-11-resources-buffers-intro.md) como preparación para la representación.<br/>                                                                                                                                           |
+| [Cómo: crear un búfer de constantes](overviews-direct3d-11-resources-buffers-constant-how-to.md)<br/>                    | En este tema se muestra cómo inicializar un [búfer de constantes](overviews-direct3d-11-resources-buffers-intro.md) como preparación para la representación.<br/>                                                                                                                                         |
+| [Cómo: crear una textura](overviews-direct3d-11-resources-textures-create.md)<br/>                                    | En este tema se muestra cómo crear una textura.<br/>                                                                                                                                                                                                                                       |
+| [Cómo: inicializar una textura mediante programación](overviews-direct3d-11-resources-textures-how-to-fill-manually.md)<br/> | En este tema se muestran varios ejemplos en los que se muestra cómo inicializar texturas que se crean con distintos tipos de usos.<br/>                                                                                                                                                             |
+| [Cómo: inicializar una textura desde un archivo](overviews-direct3d-11-resources-textures-how-to.md)<br/>                    | En este tema se muestra cómo usar el componente de creación de imágenes de Windows (WIC) para crear la textura y la vista por separado.<br/>                                                                                                                                                                      |
+| [Cómo: usar recursos dinámicos](how-to--use-dynamic-resources.md)<br/>                                                 | Los recursos dinámicos se crean y se usan cuando la aplicación necesita cambiar los datos de esos recursos. Puede crear texturas y búferes para el uso dinámico.<br/>                                                                                                                              |
+| [Cómo: crear un sombreador de cálculo](direct3d-11-advanced-stages-compute-create.md)<br/>                                  | En este tema se muestra cómo crear un sombreador de cálculo.<br/>                                                                                                                                                                                                                                |
+| [Cómo: diseñar un sombreador de casco](direct3d-11-advanced-stages-hull-shader-design.md)<br/>                                 | En este tema se muestra cómo diseñar un sombreador de casco.<br/>                                                                                                                                                                                                                                  |
+| [Cómo: crear un sombreador de casco](direct3d-11-advanced-stages-hull-shader-create.md)<br/>                                 | En este tema se muestra cómo crear un sombreador de casco.<br/>                                                                                                                                                                                                                                   |
+| [Cómo: inicializar la fase del teselador](direct3d-11-advanced-stages-tessellator-initialize.md)<br/>                 | En este tema se muestra cómo inicializar la fase del teselador.<br/>                                                                                                                                                                                                                       |
+| [Cómo: diseñar un sombreador de dominios](direct3d-11-advanced-stages-domain-shader-design.md)<br/>                             | En este tema se muestra cómo diseñar un sombreador de dominios.<br/>                                                                                                                                                                                                                                |
+| [Cómo: crear un sombreador de dominios](direct3d-11-advanced-stages-domain-shader-create.md)<br/>                             | En este tema se muestra cómo crear un sombreador de dominios.<br/>                                                                                                                                                                                                                                 |
+| [Cómo: compilar un sombreador](how-to--compile-a-shader.md)<br/>                                                           | En este tema se muestra cómo usar la función [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) en tiempo de ejecución para compilar código de sombreador.<br/>                                                                                                                                          |
+| [Cómo: grabar una lista de comandos](overviews-direct3d-11-render-multi-thread-command-list-record.md)<br/>                 | En este tema se muestra cómo crear y grabar una [lista de comandos](overviews-direct3d-11-render-multi-thread-command-list.md).<br/>                                                                                                                                                         |
+| [Cómo: reproducir una lista de comandos](overviews-direct3d-11-render-multi-thread-command-list-play.md)<br/>                | En este tema se muestra cómo reproducir una [lista de comandos](overviews-direct3d-11-render-multi-thread-command-list.md).<br/>                                                                                                                                                                 |
+| [Cómo: comprobar la compatibilidad de controladores](overviews-direct3d-11-render-multi-thread-support.md)<br/>                          | En este tema se muestra cómo determinar si las características de multithreading (incluida la [creación de recursos](overviews-direct3d-11-render-multi-thread-intro.md) y [las listas de comandos](overviews-direct3d-11-render-multi-thread-command-list.md)) se admiten para la aceleración de hardware.<br/> |
+
+
+
+ 
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Gráficos de Direct3D 11](atoc-dx-graphics-direct3d-11.md)
+</dt> </dl>
+
+ 
+
