@@ -1,0 +1,29 @@
+- name: Introducción desarrollar interfaces de usuario para aplicaciones Windows
+  href: getting-started-developing-user-interfaces-portal.md
+  items:
+    - name: Información general sobre el proceso de desarrollo de la interfaz de usuario
+      href: the-process.md
+    - name: Diseñar una interfaz de usuario
+      href: designing-a-user-interface.md
+      items:
+        - name: Facilidad de uso en el diseño de software
+          href: usability-in-software-design.md
+        - name: Principios de la interfaz de usuario
+          href: '-user-interface-principles.md'
+        - name: Instrucciones de la interfaz de usuario siguientes
+          href: following-guidelines.md
+        - name: Interfaz de usuario induce
+          href: inductive-user-interface.md
+    - name: Implementar una interfaz de usuario
+      href: implementing-a-user-interface.md
+      items:
+        - name: Prototipo de una interfaz de usuario
+          href: prototyping-a-user-interface.md
+        - name: Tecnologías de interfaz de usuario
+          href: user-interface-technologies-for-windows-applications.md
+    - name: Probar una interfaz de usuario
+      href: testing-a-user-interface.md
+    - name: 'Consideraciones de seguridad: interfaz de usuario de Windows'
+      href: sec-ui.md
+    - name: Otros recursos
+      href: other-resources.md

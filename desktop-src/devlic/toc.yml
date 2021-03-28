@@ -1,0 +1,14 @@
+- name: Licencias de desarrollador
+  href: developer-licensing-portal.md
+  items:
+    - name: API de licencia de desarrollador
+      href: developer-license-apis.md
+      items:
+        - name: CheckDeveloperLicense
+          href: /windows/desktop/api/wsdevlicensing/nf-wsdevlicensing-checkdeveloperlicense
+        - name: AcquireDeveloperLicense
+          href: /windows/desktop/api/wsdevlicensing/nf-wsdevlicensing-acquiredeveloperlicense
+        - name: RemoveDeveloperLicense
+          href: /windows/desktop/api/wsdevlicensing/nf-wsdevlicensing-removedeveloperlicense
+    - name: Declaración de privacidad de licencia de desarrollador
+      href: developer-license-privacy-statement.md
