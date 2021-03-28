@@ -1,0 +1,20 @@
+- name: Configuración de comentarios de entrada
+  href: input-feedback-configuration-portal.md
+  items:
+    - name: Referencia de configuración de comentarios de entrada
+      href: input-feedback-configuration-reference.md
+      items:
+        - name: Constantes
+          href: constants.md
+        - name: Enumeraciones
+          href: enumerations.md
+          items:
+            - name: FEEDBACK_TYPE
+              href: /windows/win32/api/winuser/ne-winuser-feedback_type
+        - name: Functions
+          href: functions.md
+          items:
+            - name: GetWindowFeedbackSetting
+              href: /windows/win32/api/Winuser/nf-winuser-getwindowfeedbacksetting
+            - name: SetWindowFeedbackSetting
+              href: /windows/win32/api/Winuser/nf-winuser-setwindowfeedbacksetting
