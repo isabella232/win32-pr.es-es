@@ -1,0 +1,74 @@
+- name: Restaurar sistema
+  href: system-restore-portal.md
+  items:
+    - name: Acerca de restaurar sistema
+      href: about-system-restore.md
+      items:
+        - name: Supervisando el sistema
+          href: monitoring-the-system.md
+        - name: Restaurar el sistema
+          href: restoring-the-system.md
+        - name: Puntos de restauración
+          href: restore-points.md
+        - name: API de restauración del sistema
+          href: system-restore-api.md
+          items:
+            - name: Llamando a SRSetRestorePoint
+              href: calling-srsetrestorepoint.md
+            - name: Texto de descripción de punto de restauración
+              href: restore-point-description-text.md
+            - name: Llamadas anidadas a SRSetRestorePoint
+              href: nested-calls-to-srsetrestorepoint.md
+            - name: Configuración de restaurar sistema
+              href: configuring-system-restore.md
+    - name: Uso de Restaurar sistema
+      href: using-system-restore.md
+    - name: Referencia de restaurar sistema
+      href: system-restore-reference.md
+      items:
+        - name: Funciones de restauración del sistema
+          href: system-restore-functions.md
+          items:
+            - name: SRRemoveRestorePoint
+              href: /windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srremoverestorepoint
+            - name: SRSetRestorePoint
+              href: /windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa
+        - name: Estructuras de restauración del sistema
+          href: system-restore-structures.md
+          items:
+            - name: RESTOREPOINTINFO
+              href: /windows/win32/api/srrestoreptapi/ns-srrestoreptapi-restorepointinfoa
+            - name: STATEMGRSTATUS
+              href: /windows/win32/api/srrestoreptapi/ns-srrestoreptapi-statemgrstatus
+        - name: Clases WMI de restaurar sistema
+          href: system-restore-wmi-classes.md
+          items:
+            - name: SystemRestore
+              href: systemrestore.md
+              items:
+                - name: Método CreateRestorePoint
+                  href: createrestorepoint-systemrestore.md
+                - name: Disable (método)
+                  href: disable-systemrestore.md
+                - name: Enable (método)
+                  href: enable-systemrestore.md
+                - name: Método GetLastRestoreStatus
+                  href: getlastrestorestatus-systemrestore.md
+                - name: Método de restauración
+                  href: restore-systemrestore.md
+            - name: SystemRestoreConfig
+              href: systemrestoreconfig.md
+        - name: Extensiones de nombre de archivo supervisado
+          href: monitored-file-extensions.md
+    - name: Referencia de restauración del sistema heredada
+      href: legacy-system-restore-reference.md
+      items:
+        - name: Estructuras de restauración del sistema heredadas
+          href: legacy-system-restore-structures.md
+          items:
+            - name: CHANGE_LOG_ENTRY
+              href: change-log-entry.md
+            - name: CHANGE_LOG_HEADER
+              href: change-log-header.md
+            - name: RECORD_HEADER
+              href: record-header.md

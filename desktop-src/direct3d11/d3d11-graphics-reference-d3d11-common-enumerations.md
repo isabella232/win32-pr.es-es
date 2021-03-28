@@ -1,0 +1,59 @@
+---
+title: Enumeraciones de versión comunes
+description: Esta sección contiene información sobre las enumeraciones de versión comunes.
+ms.assetid: 002154d5-74a6-48fb-b55f-8687e4505fc7
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4f77a952413584ccdd582626b8c7c000fa6f8996
+ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "103797386"
+---
+# <a name="common-version-enumerations"></a>Enumeraciones de versión comunes
+
+Esta sección contiene información sobre las enumeraciones de versión comunes.
+
+
+## <a name="in-this-section"></a>En esta sección
+
+
+
+| Tema                                                                                      | Descripción                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**\_Tipo CBUFFER \_ D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_cbuffer_type)<br/>                                  | Valores que identifican el uso previsto de datos de búfer de constantes. <br/>                                                                                                                                                                                                                                                                 |
+| [**\_Tipo de controlador D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_driver_type)<br/>                                    | Opciones de tipo de controlador.<br/>                                                                                                                                                                                                                                                                                                            |
+| [**\_Nivel de característica D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level)<br/>                                | Describe el conjunto de características de destino de un dispositivo Direct3D. <br/>                                                                                                                                                                                                                                                                   |
+| [**\_Tipo de inclusión D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_include_type)<br/>                                  | Valores que indican la ubicación de un archivo de inclusión de sombreador \# . <br/>                                                                                                                                                                                                                                                                  |
+| [**\_Modo de interpolación D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_interpolation_mode)<br/>                      | Especifica el modo de interpolación, que afecta al modo en que se calculan los valores durante la rasterización.<br/>                                                                                                                                                                                                                                     |
+| [**\_Precisión mínima de D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_min_precision)<br/>                                | Valores que indican la precisión mínima de interpolación deseada.<br/>                                                                                                                                                                                                                                                               |
+| [**\_Nombre D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_name)<br/>                                                   | Valores que identifican los parámetros del sombreador que usan la semántica del valor del sistema.<br/>                                                                                                                                                                                                                                                         |
+| [**\_Primitivo D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_primitive)<br/>                                         | Valores que indican cómo la canalización interpreta los primitivos de entrada del sombreador de casco o la geometría.<br/>                                                                                                                                                                                                                                      |
+| [**\_Topología primitiva \_ D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_primitive_topology)<br/>                      | Valores que indican cómo la canalización interpreta los datos de vértices que están enlazados a la [fase de ensamblador de entrada](d3d10-graphics-programming-guide-input-assembler-stage.md). Estos [valores de topología primitiva](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-primitive-topologies) determinan cómo se representan los datos de vértices en la pantalla.<br/> |
+| [**\_Tipo de \_ componente de registro D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_register_component_type)<br/>           | Valores que identifican los tipos de datos que se pueden almacenar en un registro.<br/>                                                                                                                                                                                                                                                           |
+| [**\_Tipo de \_ valor devuelto del recurso D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_resource_return_type)<br/>                 | Valores que identifican el tipo de valor devuelto de un recurso.<br/>                                                                                                                                                                                                                                                                             |
+| [**\_Marcas CBUFFER del sombreador D3D \_ \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_shader_cbuffer_flags)<br/>                 | Valores que identifican el uso indended de un búfer de datos de constante.<br/>                                                                                                                                                                                                                                                                |
+| [**\_Marcas de entrada del sombreador D3D \_ \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_shader_input_flags)<br/>                     | Valores que identifican las opciones de entrada del sombreador.<br/>                                                                                                                                                                                                                                                                                      |
+| [**\_Tipo de entrada del sombreador D3D \_ \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_shader_input_type)<br/>                       | Valores que identifican los tipos de recursos que se pueden enlazar a un sombreador y que se reflejan como parte de la descripción de recursos para el sombreador.<br/>                                                                                                                                                                                    |
+| [**\_Clase de variable de sombreador D3D \_ \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_shader_variable_class)<br/>               | Valores que identifican la clase de una variable de sombreador.<br/>                                                                                                                                                                                                                                                                            |
+| [**\_Marcas de variables del sombreador D3D \_ \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_shader_variable_flags)<br/>               | Valores que identifican información sobre una variable de sombreador.<br/>                                                                                                                                                                                                                                                                       |
+| [**\_Tipo de variable de sombreador D3D \_ \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_shader_variable_type)<br/>                 | Valores que identifican diversos tipos de datos, texturas y búfer que se pueden asignar a una variable de sombreador.<br/>                                                                                                                                                                                                                         |
+| [**\_Dimensión de SRV de D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_srv_dimension)<br/>                                | Valores que identifican el tipo de recurso que se va a ver como un recurso de sombreador.<br/>                                                                                                                                                                                                                                                    |
+| [**\_Dominio D3D del teselador \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_tessellator_domain)<br/>                      | Valores que identifican las opciones de dominio para los datos de del teselador.<br/>                                                                                                                                                                                                                                                                       |
+| [**\_Primitiva de \_ salida de del teselador D3D \_**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_tessellator_output_primitive)<br/> | Valores que identifican los tipos primitivos de salida.<br/>                                                                                                                                                                                                                                                                                    |
+| [**Creación \_ de \_ particiones D3D del teselador**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_tessellator_partitioning)<br/>          | Valores que identifican las opciones de particionamiento.<br/>                                                                                                                                                                                                                                                                                      |
+
+
+
+ 
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Referencia de la versión común](d3d11-graphics-reference-d3d11-common.md)
+</dt> </dl>
+
+ 
+
