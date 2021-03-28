@@ -1,0 +1,78 @@
+---
+title: Método ID3DX11Effect IsOptimized (D3dx11effect. h)
+description: Pruebe un efecto para ver si los metadatos de reflexión se han quitado de la memoria.
+ms.assetid: fb0a876b-7419-45b7-97fe-8352dd97d8c5
+keywords:
+- Método IsOptimized Direct3D 11
+- Método IsOptimized Direct3D 11, interfaz ID3DX11Effect
+- Interfaz ID3DX11Effect Direct3D 11, método IsOptimized
+topic_type:
+- apiref
+api_name:
+- ID3DX11Effect.IsOptimized
+api_location:
+- N/A
+- N/A.dll
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 18be8901a58715e3bd8aaaa49ae40be07e7e9dc8
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "104362707"
+---
+# <a name="id3dx11effectisoptimized-method"></a>ID3DX11Effect:: IsOptimized (método)
+
+Pruebe un efecto para ver si los metadatos de reflexión se han quitado de la memoria.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+BOOL IsOptimized();
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+Este método no tiene parámetros.
+
+## <a name="return-value"></a>Valor devuelto
+
+Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+
+**True** si el efecto está optimizado; en caso contrario, **false**.
+
+## <a name="remarks"></a>Observaciones
+
+Un efecto usa el espacio de memoria de dos maneras diferentes: almacenar la información requerida por el motor en tiempo de ejecución para ejecutar un efecto y almacenar los metadatos necesarios para reflejar información de nuevo en una aplicación mediante la API. Puede minimizar la cantidad de memoria requerida por un efecto llamando a [**ID3DX11Effect:: Optimize**](id3dx11effect-optimize.md) , que quita los metadatos de reflexión de la memoria. Por supuesto, los métodos de API para leer variables dejarán de funcionar una vez que se hayan quitado los datos de reflexión.
+
+> [!Note]  
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+
+ 
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[ID3DX11Effect](id3dx11effect.md)
+</dt> </dl>
+
+ 
+

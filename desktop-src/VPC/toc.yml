@@ -1,0 +1,895 @@
+- name: Windows Virtual PC
+  href: virtual-pc-portal.md
+  items:
+    - name: Referencia de Windows Virtual PC
+      href: virtual-pc-reference.md
+      items:
+        - name: Constantes de Windows Virtual PC
+          href: windows-virtual-pc-constants.md
+          items:
+            - name: Códigos HRESULT específicos de Windows Virtual PC
+              href: hresult-codes-specific-to-windows-virtual-pc.md
+        - name: Enumeraciones de Windows Virtual PC
+          href: virtual-pc-enumerations.md
+          items:
+            - name: VMDisplayVideoMode
+              href: vmdisplayvideomode.md
+            - name: VMDriveBusType
+              href: vmdrivebustype.md
+            - name: VMDriveType
+              href: vmdrivetype.md
+            - name: VMDVDDriveAttachmentType
+              href: vmdvddriveattachmenttype.md
+            - name: VMDVDDriveEvent
+              href: vmdvddriveevent.md
+            - name: VMEndpointType
+              href: vmendpointtype.md
+            - name: VMFloppyDiskImageType
+              href: vmfloppydiskimagetype.md
+            - name: VMFloppyDriveAttachmentType
+              href: vmfloppydriveattachmenttype.md
+            - name: vmFloppyDriveEvent
+              href: vmfloppydriveevent.md
+            - name: VMHardDiskType
+              href: vmharddisktype.md
+            - name: VMLogoffType
+              href: vmlogofftype.md
+            - name: VMMouseButton
+              href: vmmousebutton.md
+            - name: VMSerialPortType
+              href: vmserialporttype.md
+            - name: VMShutdownAction
+              href: vmshutdownaction.md
+            - name: VMStartupOption
+              href: vmstartupoption.md
+            - name: VMTaskResult
+              href: vmtaskresult.md
+            - name: VMUndoAction
+              href: vmundoaction.md
+            - name: VMUSBDeviceClassEnum
+              href: vmusbdeviceclassenum.md
+            - name: VMVirtualMachineEvents
+              href: vmvirtualmachineevents.md
+            - name: VMVirtualPCEvent
+              href: vmvirtualpcevent.md
+            - name: VMVMState
+              href: vmvmstate.md
+        - name: Interfaces de Windows Virtual PC
+          href: virtual-pc-interfaces.md
+          items:
+            - name: IVMAccountant
+              href: ivmaccountant.md
+              items:
+                - name: Propiedades de IVMAccountant
+                  href: ivmaccountant-properties.md
+                  items:
+                    - name: Propiedad gráfico
+                      href: ivmaccountant-cpuutilization.md
+                    - name: Propiedad CPUUtilizationHistory
+                      href: ivmaccountant-cpuutilizationhistory.md
+                    - name: Propiedad DiskBytesRead
+                      href: ivmaccountant-diskbytesread.md
+                    - name: Propiedad DiskBytesWritten
+                      href: ivmaccountant-diskbyteswritten.md
+                    - name: Propiedad NetworkBytesReceived
+                      href: ivmaccountant-networkbytesreceived.md
+                    - name: Propiedad NetworkBytesSent
+                      href: ivmaccountant-networkbytessent.md
+                    - name: Propiedad de tiempo de actividad
+                      href: ivmaccountant-uptime.md
+            - name: IVMDisplay
+              href: ivmdisplay.md
+              items:
+                - name: Métodos IVMDisplay
+                  href: ivmdisplay-methods.md
+                  items:
+                    - name: Método _GenerateThumbnail
+                      href: ivmdisplay--generatethumbnail.md
+                    - name: Método SetDimensions
+                      href: ivmdisplay-setdimensions.md
+                - name: Propiedades de IVMDisplay
+                  href: ivmdisplay-properties.md
+                  items:
+                    - name: Propiedad CanResize
+                      href: ivmdisplay-canresize.md
+                    - name: Height (propiedad)
+                      href: ivmdisplay-height.md
+                    - name: Propiedad thumbnail
+                      href: ivmdisplay-thumbnail.md
+                    - name: VideoMode (propiedad)
+                      href: ivmdisplay-videomode.md
+                    - name: Width (propiedad)
+                      href: ivmdisplay-width.md
+            - name: IVMDVDDrive
+              href: ivmdvddrive.md
+              items:
+                - name: Métodos IVMDVDDrive
+                  href: ivmdvddrive-methods.md
+                  items:
+                    - name: Método AttachHostDrive
+                      href: ivmdvddrive-attachhostdrive.md
+                    - name: Método AttachImage
+                      href: ivmdvddrive-attachimage.md
+                    - name: Método ReleaseHostDrive
+                      href: ivmdvddrive-releasehostdrive.md
+                    - name: Método ReleaseImage
+                      href: ivmdvddrive-releaseimage.md
+                    - name: Método SetBusLocation
+                      href: ivmdvddrive-setbuslocation.md
+                - name: Propiedades de IVMDVDDrive
+                  href: ivmdvddrive-properties.md
+                  items:
+                    - name: Propiedad Attachment
+                      href: ivmdvddrive-attachment.md
+                    - name: Propiedad BusNumber
+                      href: ivmdvddrive-busnumber.md
+                    - name: Propiedad DeviceNumber
+                      href: ivmdvddrive-devicenumber.md
+                    - name: Propiedad HostDriveLetter
+                      href: ivmdvddrive-hostdriveletter.md
+                    - name: ImageFile (propiedad)
+                      href: ivmdvddrive-imagefile.md
+            - name: IVMDVDDriveCollection
+              href: ivmdvddrivecollection.md
+              items:
+                - name: Propiedades de IVMDVDDriveCollection
+                  href: ivmdvddrivecollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmdvddrivecollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmdvddrivecollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmdvddrivecollection-item.md
+            - name: IVMDVDDriveEvents
+              href: ivmdvddriveevents.md
+              items:
+                - name: Métodos IVMDVDDriveEvents
+                  href: ivmdvddriveevents-methods.md
+                  items:
+                    - name: Método OnMediaEject
+                      href: ivmdvddriveevents-onmediaeject.md
+                    - name: Método OnMediaInsert
+                      href: ivmdvddriveevents-onmediainsert.md
+            - name: IVMFloppyDrive
+              href: ivmfloppydrive.md
+              items:
+                - name: Métodos IVMFloppyDrive
+                  href: ivmfloppydrive-methods.md
+                  items:
+                    - name: Método AttachHostDrive
+                      href: ivmfloppydrive-attachhostdrive.md
+                    - name: Método AttachImage
+                      href: ivmfloppydrive-attachimage.md
+                    - name: Método ReleaseHostDrive
+                      href: ivmfloppydrive-releasehostdrive.md
+                    - name: Método ReleaseImage
+                      href: ivmfloppydrive-releaseimage.md
+                - name: Propiedades de IVMFloppyDrive
+                  href: ivmfloppydrive-properties.md
+                  items:
+                    - name: Propiedad Attachment
+                      href: ivmfloppydrive-attachment.md
+                    - name: Propiedad DriveNumber
+                      href: ivmfloppydrive-drivenumber.md
+                    - name: Propiedad HostDriveLetter
+                      href: ivmfloppydrive-hostdriveletter.md
+                    - name: ImageFile (propiedad)
+                      href: ivmfloppydrive-imagefile.md
+            - name: IVMFloppyDriveCollection
+              href: ivmfloppydrivecollection.md
+              items:
+                - name: Propiedades de IVMFloppyDriveCollection
+                  href: ivmfloppydrivecollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmfloppydrivecollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmfloppydrivecollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmfloppydrivecollection-item.md
+            - name: IVMFloppyDriveEvents
+              href: ivmfloppydriveevents.md
+              items:
+                - name: Métodos IVMFloppyDriveEvents
+                  href: ivmfloppydriveevents-methods.md
+                  items:
+                    - name: Método OnMediaEject
+                      href: ivmfloppydriveevents-onmediaeject.md
+                    - name: Método OnMediaInsert
+                      href: ivmfloppydriveevents-onmediainsert.md
+            - name: IVMGuestOS
+              href: ivmguestos.md
+              items:
+                - name: Métodos IVMGuestOS
+                  href: ivmguestos-methods.md
+                  items:
+                    - name: Método GetOsVersionInfo
+                      href: ivmguestos-getosversioninfo.md
+                    - name: GetParameter (método)
+                      href: ivmguestos-getparameter.md
+                    - name: Método InstallIntegrationComponents
+                      href: ivmguestos-installintegrationcomponents.md
+                    - name: Método IsUserLoggedOn
+                      href: ivmguestos-isuserloggedon.md
+                    - name: Logoff (método)
+                      href: ivmguestos-logoff.md
+                    - name: Restart (método)
+                      href: ivmguestos-restart.md
+                    - name: Método SetParameter
+                      href: ivmguestos-setparameter.md
+                    - name: Método Shutdown
+                      href: ivmguestos-shutdown.md
+                - name: Propiedades de IVMGuestOS
+                  href: ivmguestos-properties.md
+                  items:
+                    - name: Propiedad CanShutdown
+                      href: ivmguestos-canshutdown.md
+                    - name: ComputerName (propiedad)
+                      href: ivmguestos-computername.md
+                    - name: Propiedad CSDVersion
+                      href: ivmguestos-csdversion.md
+                    - name: Propiedad HeartbeatPercentage
+                      href: ivmguestos-heartbeatpercentage.md
+                    - name: Propiedad IntegrationComponentsVersion
+                      href: ivmguestos-integrationcomponentsversion.md
+                    - name: Propiedad IsHeartbeating
+                      href: ivmguestos-isheartbeating.md
+                    - name: Propiedad IsHostTimeSyncEnabled
+                      href: ivmguestos-ishosttimesyncenabled.md
+                    - name: Propiedad MultipleUserSessionsAllowed
+                      href: ivmguestos-multipleusersessionsallowed.md
+                    - name: Propiedad OSBuildNumber
+                      href: ivmguestos-osbuildnumber.md
+                    - name: Propiedad OSMajorVersion
+                      href: ivmguestos-osmajorversion.md
+                    - name: Propiedad OSMinorVersion
+                      href: ivmguestos-osminorversion.md
+                    - name: Propiedad OSName
+                      href: ivmguestos-osname.md
+                    - name: Propiedad OSPlatformId
+                      href: ivmguestos-osplatformid.md
+                    - name: Propiedad OSVersion
+                      href: ivmguestos-osversion.md
+                    - name: Propiedad ProductType
+                      href: ivmguestos-producttype.md
+                    - name: Propiedad ScreenLocked
+                      href: ivmguestos-screenlocked.md
+                    - name: Propiedad ServicePackMajor
+                      href: ivmguestos-servicepackmajor.md
+                    - name: Propiedad ServicePackMinor
+                      href: ivmguestos-servicepackminor.md
+                    - name: Propiedad SuiteMask
+                      href: ivmguestos-suitemask.md
+                    - name: Propiedad TerminalServerPort
+                      href: ivmguestos-terminalserverport.md
+                    - name: Propiedad TerminalServicesInitialized
+                      href: ivmguestos-terminalservicesinitialized.md
+            - name: IVMHardDisk
+              href: ivmharddisk.md
+              items:
+                - name: Métodos IVMHardDisk
+                  href: ivmharddisk-methods.md
+                  items:
+                    - name: Método compacto
+                      href: ivmharddisk-compact.md
+                    - name: Convert (método)
+                      href: ivmharddisk-convert.md
+                    - name: Método Merge
+                      href: ivmharddisk-merge.md
+                    - name: Mergeto (método)
+                      href: ivmharddisk-mergeto.md
+                - name: Propiedades de IVMHardDisk
+                  href: ivmharddisk-properties.md
+                  items:
+                    - name: Propiedad de archivo
+                      href: ivmharddisk-file.md
+                    - name: Propiedad HostFreeDiskSpace
+                      href: ivmharddisk-hostfreediskspace.md
+                    - name: Parent Property
+                      href: ivmharddisk-parent.md
+                    - name: Propiedad SizeInGuest
+                      href: ivmharddisk-sizeinguest.md
+                    - name: Propiedad SizeOnHost
+                      href: ivmharddisk-sizeonhost.md
+                    - name: Type (propiedad)
+                      href: ivmharddisk-type.md
+            - name: IVMHardDiskConnection
+              href: ivmharddiskconnection.md
+              items:
+                - name: Métodos IVMHardDiskConnection
+                  href: ivmharddiskconnection-methods.md
+                  items:
+                    - name: Método SetBusLocation
+                      href: ivmharddiskconnection-setbuslocation.md
+                - name: Propiedades de IVMHardDiskConnection
+                  href: ivmharddiskconnection-properties.md
+                  items:
+                    - name: Propiedad BusNumber
+                      href: ivmharddiskconnection-busnumber.md
+                    - name: Propiedad DeviceNumber
+                      href: ivmharddiskconnection-devicenumber.md
+                    - name: Propiedad disco duro
+                      href: ivmharddiskconnection-harddisk.md
+                    - name: Propiedad UndoHardDisk
+                      href: ivmharddiskconnection-undoharddisk.md
+            - name: IVMHardDiskConnectionCollection
+              href: ivmharddiskconnectioncollection.md
+              items:
+                - name: Propiedades de IVMHardDiskConnectionCollection
+                  href: ivmharddiskconnectioncollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmharddiskconnectioncollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmharddiskconnectioncollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmharddiskconnectioncollection-item.md
+            - name: IVMHostInfo
+              href: ivmhostinfo.md
+              items:
+                - name: Propiedades de IVMHostInfo
+                  href: ivmhostinfo-properties.md
+                  items:
+                    - name: Propiedad DVDDrives
+                      href: ivmhostinfo-dvddrives.md
+                    - name: Propiedad FloppyDrives
+                      href: ivmhostinfo-floppydrives.md
+                    - name: Propiedad LogicalProcessorCount
+                      href: ivmhostinfo-logicalprocessorcount.md
+                    - name: Propiedad Memory
+                      href: ivmhostinfo-memory.md
+                    - name: Propiedad MemoryAvail
+                      href: ivmhostinfo-memoryavail.md
+                    - name: Propiedad MemoryAvailString
+                      href: ivmhostinfo-memoryavailstring.md
+                    - name: Propiedad MemoryTotalString
+                      href: ivmhostinfo-memorytotalstring.md
+                    - name: MMX (propiedad)
+                      href: ivmhostinfo-mmx.md
+                    - name: Propiedad adaptadores
+                      href: ivmhostinfo-networkadapters.md
+                    - name: Propiedad NetworkAddresses
+                      href: ivmhostinfo-networkaddresses.md
+                    - name: Propiedad OperatingSystem
+                      href: ivmhostinfo-operatingsystem.md
+                    - name: Propiedad OSMajorVersion
+                      href: ivmhostinfo-osmajorversion.md
+                    - name: Propiedad OSMinorVersion
+                      href: ivmhostinfo-osminorversion.md
+                    - name: Propiedad OSServicePackString
+                      href: ivmhostinfo-osservicepackstring.md
+                    - name: Propiedad OSVersionString
+                      href: ivmhostinfo-osversionstring.md
+                    - name: Propiedad ParallelPort
+                      href: ivmhostinfo-parallelport.md
+                    - name: Propiedad PhysicalProcessorCount
+                      href: ivmhostinfo-physicalprocessorcount.md
+                    - name: Propiedad ProcessorFeaturesString
+                      href: ivmhostinfo-processorfeaturesstring.md
+                    - name: Propiedad ProcessorManufacturerString
+                      href: ivmhostinfo-processormanufacturerstring.md
+                    - name: Propiedad Velocidaddeprocesador
+                      href: ivmhostinfo-processorspeed.md
+                    - name: Propiedad ProcessorSpeedString
+                      href: ivmhostinfo-processorspeedstring.md
+                    - name: Propiedad ProcessorVersionString
+                      href: ivmhostinfo-processorversionstring.md
+                    - name: Propiedad SerialPorts
+                      href: ivmhostinfo-serialports.md
+                    - name: SSE (propiedad)
+                      href: ivmhostinfo-sse.md
+                    - name: Propiedad SSE2
+                      href: ivmhostinfo-sse2.md
+                    - name: Propiedad ThreeDNow
+                      href: ivmhostinfo-threednow.md
+                    - name: Propiedad UTCTime
+                      href: ivmhostinfo-utctime.md
+            - name: IVMKeyboard
+              href: ivmkeyboard.md
+              items:
+                - name: Métodos IVMKeyboard
+                  href: ivmkeyboard-methods.md
+                  items:
+                    - name: IsPressed (método)
+                      href: ivmkeyboard-ispressed.md
+                    - name: Método PressAndReleaseKey
+                      href: ivmkeyboard-pressandreleasekey.md
+                    - name: Método PressKey
+                      href: ivmkeyboard-presskey.md
+                    - name: Método ReleaseKey
+                      href: ivmkeyboard-releasekey.md
+                    - name: Método TypeAsciiText
+                      href: ivmkeyboard-typeasciitext.md
+                    - name: Método TypeKeySequence
+                      href: ivmkeyboard-typekeysequence.md
+                - name: Propiedades de IVMKeyboard
+                  href: ivmkeyboard-properties.md
+                  items:
+                    - name: Propiedad HasExclusiveAccess
+                      href: ivmkeyboard-hasexclusiveaccess.md
+            - name: IVMMouse
+              href: ivmmouse.md
+              items:
+                - name: Métodos IVMMouse
+                  href: ivmmouse-methods.md
+                  items:
+                    - name: Click (método)
+                      href: ivmmouse-click.md
+                    - name: Método GetButton
+                      href: ivmmouse-getbutton.md
+                    - name: Método SetButton
+                      href: ivmmouse-setbutton.md
+                - name: Propiedades de IVMMouse
+                  href: ivmmouse-properties.md
+                  items:
+                    - name: Propiedad HorizontalPosition
+                      href: ivmmouse-horizontalposition.md
+                    - name: Propiedad ScrollWheelPosition
+                      href: ivmmouse-scrollwheelposition.md
+                    - name: Propiedad UsingAbsoluteCoordinates
+                      href: ivmmouse-usingabsolutecoordinates.md
+                    - name: Propiedad VerticalPosition
+                      href: ivmmouse-verticalposition.md
+            - name: IVMNetworkAdapter
+              href: ivmnetworkadapter.md
+              items:
+                - name: Métodos IVMNetworkAdapter
+                  href: ivmnetworkadapter-methods.md
+                  items:
+                    - name: Método _ID
+                      href: ivmnetworkadapter--id.md
+                    - name: Método AttachToVirtualNetwork
+                      href: ivmnetworkadapter-attachtovirtualnetwork.md
+                    - name: Método DetachFromVirtualNetwork
+                      href: ivmnetworkadapter-detachfromvirtualnetwork.md
+                - name: Propiedades de IVMNetworkAdapter
+                  href: ivmnetworkadapter-properties.md
+                  items:
+                    - name: Propiedad denominaba ethernetaddress
+                      href: ivmnetworkadapter-ethernetaddress.md
+                    - name: Propiedad IsEthernetAddressDynamic
+                      href: ivmnetworkadapter-isethernetaddressdynamic.md
+                    - name: Propiedad VirtualMachine
+                      href: ivmnetworkadapter-virtualmachine.md
+                    - name: Propiedad VirtualNetwork
+                      href: ivmnetworkadapter-virtualnetwork.md
+            - name: IVMNetworkAdapterCollection
+              href: ivmnetworkadaptercollection.md
+              items:
+                - name: Propiedades de IVMNetworkAdapterCollection
+                  href: ivmnetworkadaptercollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmnetworkadaptercollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmnetworkadaptercollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmnetworkadaptercollection-item.md
+            - name: IVMParallelPort
+              href: ivmparallelport.md
+              items:
+                - name: Métodos IVMParallelPort
+                  href: ivmparallelport-methods.md
+                  items:
+                    - name: Método _ID
+                      href: ivmparallelport--id.md
+                - name: Propiedades de IVMParallelPort
+                  href: ivmparallelport-properties.md
+                  items:
+                    - name: Propiedad Name
+                      href: ivmparallelport-name.md
+            - name: IVMParallelPortCollection
+              href: ivmparallelportcollection.md
+              items:
+                - name: Propiedades de IVMParallelPortCollection
+                  href: ivmparallelportcollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmparallelportcollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmparallelportcollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmparallelportcollection-item.md
+            - name: IVMSerialPort
+              href: ivmserialport.md
+              items:
+                - name: Métodos IVMSerialPort
+                  href: ivmserialport-methods.md
+                  items:
+                    - name: Método _ID
+                      href: ivmserialport--id.md
+                    - name: Configure (método)
+                      href: ivmserialport-configure.md
+                - name: Propiedades de IVMSerialPort
+                  href: ivmserialport-properties.md
+                  items:
+                    - name: Propiedad ConnectImmediately
+                      href: ivmserialport-connectimmediately.md
+                    - name: Propiedad Name
+                      href: ivmserialport-name.md
+                    - name: Type (propiedad)
+                      href: ivmserialport-type.md
+            - name: IVMSerialPortCollection
+              href: ivmserialportcollection.md
+              items:
+                - name: Propiedades de IVMSerialPortCollection
+                  href: ivmserialportcollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmserialportcollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmserialportcollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmserialportcollection-item.md
+            - name: IVMTask
+              href: ivmtask.md
+              items:
+                - name: Métodos IVMTask
+                  href: ivmtask-methods.md
+                  items:
+                    - name: CANCEL (método)
+                      href: ivmtask-cancel.md
+                    - name: Método WaitForCompletion
+                      href: ivmtask-waitforcompletion.md
+                - name: Propiedades de IVMTask
+                  href: ivmtask-properties.md
+                  items:
+                    - name: Description (propiedad)
+                      href: ivmtask-description.md
+                    - name: Propiedad error
+                      href: ivmtask-error.md
+                    - name: Propiedad ErrorDescription
+                      href: ivmtask-errordescription.md
+                    - name: ID (Propiedad)
+                      href: ivmtask-id.md
+                    - name: Propiedad IsCancelable
+                      href: ivmtask-iscancelable.md
+                    - name: Propiedad IsComplete
+                      href: ivmtask-iscomplete.md
+                    - name: Propiedad PercentCompleted
+                      href: ivmtask-percentcompleted.md
+                    - name: Propiedad result
+                      href: ivmtask-result.md
+            - name: IVMTaskCollection
+              href: ivmtaskcollection.md
+              items:
+                - name: Propiedades de IVMTaskCollection
+                  href: ivmtaskcollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmtaskcollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmtaskcollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmtaskcollection-item.md
+            - name: IVMUSBDevice
+              href: ivmusbdevice.md
+              items:
+                - name: Propiedades de IVMUSBDevice
+                  href: ivmusbdevice-properties.md
+                  items:
+                    - name: Propiedad AttachedToVM
+                      href: ivmusbdevice-attachedtovm.md
+                    - name: Propiedad DeviceClass
+                      href: ivmusbdevice-deviceclass.md
+                    - name: Propiedad DeviceString
+                      href: ivmusbdevice-devicestring.md
+                    - name: Propiedad HubID
+                      href: ivmusbdevice-hubid.md
+                    - name: Propiedad ManufacturerString
+                      href: ivmusbdevice-manufacturerstring.md
+                    - name: Propiedad Port
+                      href: ivmusbdevice-port.md
+            - name: IVMUSBDeviceCollection
+              href: ivmusbdevicecollection.md
+              items:
+                - name: Propiedades de IVMUSBDeviceCollection
+                  href: ivmusbdevicecollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmusbdevicecollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmusbdevicecollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmusbdevicecollection-item.md
+            - name: IVMVirtualMachine
+              href: ivmvirtualmachine.md
+              items:
+                - name: Métodos IVMVirtualMachine
+                  href: ivmvirtualmachine-methods.md
+                  items:
+                    - name: Método AddDVDROMDrive
+                      href: ivmvirtualmachine-adddvdromdrive.md
+                    - name: Método AddHardDiskConnection
+                      href: ivmvirtualmachine-addharddiskconnection.md
+                    - name: Método AddNetworkAdapter
+                      href: ivmvirtualmachine-addnetworkadapter.md
+                    - name: Método AttachUSBDevice
+                      href: ivmvirtualmachine-attachusbdevice.md
+                    - name: Método DetachUSBDevice
+                      href: ivmvirtualmachine-detachusbdevice.md
+                    - name: Método DiscardSavedState
+                      href: ivmvirtualmachine-discardsavedstate.md
+                    - name: Método DiscardUndoDisks
+                      href: ivmvirtualmachine-discardundodisks.md
+                    - name: Método GetActivationValue
+                      href: ivmvirtualmachine-getactivationvalue.md
+                    - name: Método GetConfigurationValue
+                      href: ivmvirtualmachine-getconfigurationvalue.md
+                    - name: Método MergeUndoDisks
+                      href: ivmvirtualmachine-mergeundodisks.md
+                    - name: PAUSE (método)
+                      href: ivmvirtualmachine-pause.md
+                    - name: Método RemoveActivationValue
+                      href: ivmvirtualmachine-removeactivationvalue.md
+                    - name: Método RemoveConfigurationValue
+                      href: ivmvirtualmachine-removeconfigurationvalue.md
+                    - name: Método RemoveDVDROMDrive
+                      href: ivmvirtualmachine-removedvdromdrive.md
+                    - name: Método RemoveHardDiskConnection
+                      href: ivmvirtualmachine-removeharddiskconnection.md
+                    - name: Método RemoveNetworkAdapter
+                      href: ivmvirtualmachine-removenetworkadapter.md
+                    - name: Reset (Método)
+                      href: ivmvirtualmachine-reset.md
+                    - name: Resume (método)
+                      href: ivmvirtualmachine-resume.md
+                    - name: Save (método)
+                      href: ivmvirtualmachine-save.md
+                    - name: Método SetActivationValue
+                      href: ivmvirtualmachine-setactivationvalue.md
+                    - name: Método SetConfigurationValue
+                      href: ivmvirtualmachine-setconfigurationvalue.md
+                    - name: Método StartCommunicationChannel
+                      href: ivmvirtualmachine-startcommunicationchannel.md
+                    - name: Startup (método)
+                      href: ivmvirtualmachine-startup.md
+                    - name: Método Startup2
+                      href: ivmvirtualmachine-startup2.md
+                    - name: Método de apagado
+                      href: ivmvirtualmachine-turnoff.md
+                - name: Propiedades de IVMVirtualMachine
+                  href: ivmvirtualmachine-properties.md
+                  items:
+                    - name: Propiedad contable
+                      href: ivmvirtualmachine-accountant.md
+                    - name: Propiedad AttachedDriveTypes
+                      href: ivmvirtualmachine-attacheddrivetypes.md
+                    - name: Propiedad BaseBoardSerialNumber
+                      href: ivmvirtualmachine-baseboardserialnumber.md
+                    - name: Propiedad BIOSGUID
+                      href: ivmvirtualmachine-biosguid.md
+                    - name: Propiedad BIOSSerialNumber
+                      href: ivmvirtualmachine-biosserialnumber.md
+                    - name: Propiedad ChassisAssetTag
+                      href: ivmvirtualmachine-chassisassettag.md
+                    - name: Propiedad ChassisSerialNumber
+                      href: ivmvirtualmachine-chassisserialnumber.md
+                    - name: Propiedad ConfigID
+                      href: ivmvirtualmachine-configid.md
+                    - name: Propiedad para mostrar
+                      href: ivmvirtualmachine-display.md
+                    - name: Propiedad DVDROMDrives
+                      href: ivmvirtualmachine-dvdromdrives.md
+                    - name: Propiedad de archivo
+                      href: ivmvirtualmachine-file.md
+                    - name: Propiedad FloppyDrives
+                      href: ivmvirtualmachine-floppydrives.md
+                    - name: Propiedad Guests
+                      href: ivmvirtualmachine-guestos.md
+                    - name: Propiedad HardDiskConnections
+                      href: ivmvirtualmachine-harddiskconnections.md
+                    - name: Propiedad Has3DNow
+                      href: ivmvirtualmachine-has3dnow.md
+                    - name: Propiedad HasMMX
+                      href: ivmvirtualmachine-hasmmx.md
+                    - name: Propiedad HasSSE
+                      href: ivmvirtualmachine-hassse.md
+                    - name: Propiedad HasSSE2
+                      href: ivmvirtualmachine-hassse2.md
+                    - name: Propiedad Keyboard
+                      href: ivmvirtualmachine-keyboard.md
+                    - name: Propiedad Memory
+                      href: ivmvirtualmachine-memory.md
+                    - name: Propiedad mouse
+                      href: ivmvirtualmachine-mouse.md
+                    - name: Propiedad Name
+                      href: ivmvirtualmachine-name.md
+                    - name: Propiedad adaptadores
+                      href: ivmvirtualmachine-networkadapters.md
+                    - name: Propiedad notas
+                      href: ivmvirtualmachine-notes.md
+                    - name: Propiedad ParallelPorts
+                      href: ivmvirtualmachine-parallelports.md
+                    - name: Propiedad Velocidaddeprocesador
+                      href: ivmvirtualmachine-processorspeed.md
+                    - name: Propiedad RdpPipeName
+                      href: ivmvirtualmachine-rdppipename.md
+                    - name: Propiedad SavedStateFilePath
+                      href: ivmvirtualmachine-savedstatefilepath.md
+                    - name: Propiedad SerialPorts
+                      href: ivmvirtualmachine-serialports.md
+                    - name: Propiedad ShutdownActionOnQuit
+                      href: ivmvirtualmachine-shutdownactiononquit.md
+                    - name: Propiedad State
+                      href: ivmvirtualmachine-state.md
+                    - name: Propiedad que se va a deshacer
+                      href: ivmvirtualmachine-undoable.md
+                    - name: UndoAction (propiedad)
+                      href: ivmvirtualmachine-undoaction.md
+            - name: IVMVirtualMachineCollection
+              href: ivmvirtualmachinecollection.md
+              items:
+                - name: Propiedades de IVMVirtualMachineCollection
+                  href: ivmvirtualmachinecollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmvirtualmachinecollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmvirtualmachinecollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmvirtualmachinecollection-item.md
+            - name: IVMVirtualMachineEvents
+              href: ivmvirtualmachineevents.md
+              items:
+                - name: Métodos IVMVirtualMachineEvents
+                  href: ivmvirtualmachineevents-methods.md
+                  items:
+                    - name: Método OnAdditionsAvailable
+                      href: ivmvirtualmachineevents-onadditionsavailable.md
+                    - name: Método OnAdditionsUninstalled
+                      href: ivmvirtualmachineevents-onadditionsuninstalled.md
+                    - name: Método OnConfigurationChanged
+                      href: ivmvirtualmachineevents-onconfigurationchanged.md
+                    - name: Método OnDiskOutOfSpace
+                      href: ivmvirtualmachineevents-ondiskoutofspace.md
+                    - name: Método OnEnhancedVideoModeChanged
+                      href: ivmvirtualmachineevents-onenhancedvideomodechanged.md
+                    - name: Método OnGuestLogoff
+                      href: ivmvirtualmachineevents-onguestlogoff.md
+                    - name: Método OnGuestShutdown
+                      href: ivmvirtualmachineevents-onguestshutdown.md
+                    - name: Método OnHeartbeatStopped
+                      href: ivmvirtualmachineevents-onheartbeatstopped.md
+                    - name: Método OnRequestShutdown
+                      href: ivmvirtualmachineevents-onrequestshutdown.md
+                    - name: Onreset (método)
+                      href: ivmvirtualmachineevents-onreset.md
+                    - name: Método OnStateChange
+                      href: ivmvirtualmachineevents-onstatechange.md
+                    - name: Método OnTripleFault
+                      href: ivmvirtualmachineevents-ontriplefault.md
+            - name: IVMVirtualNetwork
+              href: ivmvirtualnetwork.md
+              items:
+                - name: Métodos IVMVirtualNetwork
+                  href: ivmvirtualnetwork-methods.md
+                  items:
+                    - name: Método _ID
+                      href: ivmvirtualnetwork--id.md
+                - name: Propiedades de IVMVirtualNetwork
+                  href: ivmvirtualnetwork-properties.md
+                  items:
+                    - name: Propiedad HostAdapter
+                      href: ivmvirtualnetwork-hostadapter.md
+                    - name: MediaType (propiedad)
+                      href: /previous-versions/windows/desktop/legacy/dd796707(v=vs.85)
+                    - name: Propiedad Name
+                      href: ivmvirtualnetwork-name.md
+                    - name: Propiedad adaptadores
+                      href: ivmvirtualnetwork-networkadapters.md
+            - name: IVMVirtualNetworkCollection
+              href: ivmvirtualnetworkcollection.md
+              items:
+                - name: Propiedades de IVMVirtualNetworkCollection
+                  href: ivmvirtualnetworkcollection-properties.md
+                  items:
+                    - name: Propiedad _NewEnum
+                      href: ivmvirtualnetworkcollection--newenum.md
+                    - name: Propiedad Count
+                      href: ivmvirtualnetworkcollection-count.md
+                    - name: Item (Propiedad)
+                      href: ivmvirtualnetworkcollection-item.md
+            - name: IVMVirtualPC
+              href: ivmvirtualpc.md
+              items:
+                - name: Métodos IVMVirtualPC
+                  href: ivmvirtualpc-methods.md
+                  items:
+                    - name: Método CreateDifferencingVirtualHardDisk
+                      href: ivmvirtualpc-createdifferencingvirtualharddisk.md
+                    - name: Método CreateDynamicVirtualHardDisk
+                      href: ivmvirtualpc-createdynamicvirtualharddisk.md
+                    - name: Método CreateFixedVirtualHardDisk
+                      href: ivmvirtualpc-createfixedvirtualharddisk.md
+                    - name: Método CreateFloppyDiskImage
+                      href: ivmvirtualpc-createfloppydiskimage.md
+                    - name: Método CreateVirtualMachine
+                      href: ivmvirtualpc-createvirtualmachine.md
+                    - name: Método DeleteVirtualMachine
+                      href: ivmvirtualpc-deletevirtualmachine.md
+                    - name: Método FindVirtualMachine
+                      href: ivmvirtualpc-findvirtualmachine.md
+                    - name: Método FindVirtualNetwork
+                      href: ivmvirtualpc-findvirtualnetwork.md
+                    - name: Método GetConfigurationValue
+                      href: ivmvirtualpc-getconfigurationvalue.md
+                    - name: Método GetDVDFiles
+                      href: ivmvirtualpc-getdvdfiles.md
+                    - name: Método GetFloppyDiskFiles
+                      href: ivmvirtualpc-getfloppydiskfiles.md
+                    - name: Método GetFloppyDiskImageType
+                      href: ivmvirtualpc-getfloppydiskimagetype.md
+                    - name: Método GetHardDisk
+                      href: ivmvirtualpc-getharddisk.md
+                    - name: Método GetHardDiskFiles
+                      href: ivmvirtualpc-getharddiskfiles.md
+                    - name: Método GetVirtualMachineFiles
+                      href: ivmvirtualpc-getvirtualmachinefiles.md
+                    - name: Método RegisterVirtualMachine
+                      href: ivmvirtualpc-registervirtualmachine.md
+                    - name: Método RemoveConfigurationValue
+                      href: ivmvirtualpc-removeconfigurationvalue.md
+                    - name: Método SetConfigurationValue
+                      href: ivmvirtualpc-setconfigurationvalue.md
+                    - name: Método UnregisterVirtualMachine
+                      href: ivmvirtualpc-unregistervirtualmachine.md
+                - name: Propiedades de IVMVirtualPC
+                  href: ivmvirtualpc-properties.md
+                  items:
+                    - name: Propiedad DefaultVMConfigurationPath
+                      href: ivmvirtualpc-defaultvmconfigurationpath.md
+                    - name: Propiedad HostInfo
+                      href: ivmvirtualpc-hostinfo.md
+                    - name: Propiedad MaximumFloppyDrivesPerVM
+                      href: ivmvirtualpc-maximumfloppydrivespervm.md
+                    - name: Propiedad MaximumMemoryPerVM
+                      href: ivmvirtualpc-maximummemorypervm.md
+                    - name: Propiedad MaximumNetworkAdaptersPerVM
+                      href: ivmvirtualpc-maximumnetworkadapterspervm.md
+                    - name: Propiedad MaximumNumberOfIDEBuses
+                      href: ivmvirtualpc-maximumnumberofidebuses.md
+                    - name: Propiedad MaximumParallelPortsPerVM
+                      href: ivmvirtualpc-maximumparallelportspervm.md
+                    - name: Propiedad MaximumSerialPortsPerVM
+                      href: ivmvirtualpc-maximumserialportspervm.md
+                    - name: Propiedad MinimumMemoryPerVM
+                      href: ivmvirtualpc-minimummemorypervm.md
+                    - name: Propiedad Name
+                      href: ivmvirtualpc-name.md
+                    - name: Propiedad SearchPaths
+                      href: ivmvirtualpc-searchpaths.md
+                    - name: Propiedad SuggestedMaximumMemoryPerVM
+                      href: ivmvirtualpc-suggestedmaximummemorypervm.md
+                    - name: Tasks (propiedad)
+                      href: ivmvirtualpc-tasks.md
+                    - name: Propiedad UnconnectedNetworkAdapters
+                      href: ivmvirtualpc-unconnectednetworkadapters.md
+                    - name: Propiedad de tiempo de actividad
+                      href: ivmvirtualpc-uptime.md
+                    - name: Propiedad USBDeviceCollection
+                      href: ivmvirtualpc-usbdevicecollection.md
+                    - name: Propiedad Version
+                      href: ivmvirtualpc-version.md
+                    - name: Propiedad VirtualMachines
+                      href: ivmvirtualpc-virtualmachines.md
+                    - name: Propiedad VirtualNetworks
+                      href: ivmvirtualpc-virtualnetworks.md
+            - name: IVMVirtualPCEvents
+              href: ivmvirtualpcevents.md
+              items:
+                - name: Métodos IVMVirtualPCEvents
+                  href: ivmvirtualpcevents-methods.md
+                  items:
+                    - name: Método OnEventLogged
+                      href: ivmvirtualpcevents-oneventlogged.md
+                    - name: Método OnVMStateChange
+                      href: ivmvirtualpcevents-onvmstatechange.md
+        - name: Estructuras de Windows Virtual PC
+          href: windows-virtual-pc-structures.md
+          items:
+            - name: GUESTOSVERSIONINFOEX
+              href: guestosversioninfoex.md
+        - name: Secuencias de claves
+          href: key-sequences.md
