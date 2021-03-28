@@ -1,0 +1,7 @@
+- name: Actualización de la plataforma para Windows Vista
+  href: platform-update-for-windows-vista-portal.md
+  items:
+    - name: Acerca de la actualización de la plataforma para Windows Vista
+      href: platform-update-for-windows-vista-overview.md
+    - name: Desarrollo de aplicaciones para versiones anteriores de Windows
+      href: developing-applications-for-previous-versions-of-windows.md
