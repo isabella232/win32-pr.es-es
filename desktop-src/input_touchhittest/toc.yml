@@ -1,0 +1,31 @@
+- name: Prueba de posicionamiento táctil
+  href: touch-hit-testing-portal.md
+  items:
+    - name: Referencia de la prueba de posicionamiento táctil
+      href: touchhittest-reference.md
+      items:
+        - name: Constantes
+          href: constants.md
+          items:
+            - name: Comportamientos de la prueba de posicionamiento táctil
+              href: hit-testing-behaviors.md
+            - name: Puntuaciones de la prueba de posicionamiento táctil
+              href: hit-testing-scores.md
+        - name: Functions
+          href: functions.md
+          items:
+            - name: EvaluateProximityToPolygon
+              href: /windows/win32/api/winuser/nf-winuser-evaluateproximitytopolygon
+            - name: EvaluateProximityToRect
+              href: /windows/win32/api/winuser/nf-winuser-evaluateproximitytorect
+            - name: PackTouchHitTestingProximityEvaluation
+              href: /windows/win32/api/winuser/nf-winuser-packtouchhittestingproximityevaluation
+            - name: RegisterTouchHitTestingWindow
+              href: /windows/win32/api/winuser/nf-winuser-registertouchhittestingwindow
+        - name: Estructuras
+          href: structures.md
+          items:
+            - name: TOUCH_HIT_TESTING_INPUT
+              href: /windows/win32/api/winuser/ns-winuser-touch_hit_testing_input
+            - name: TOUCH_HIT_TESTING_PROXIMITY_EVALUATION
+              href: /windows/win32/api/winuser/ns-winuser-touch_hit_testing_proximity_evaluation
