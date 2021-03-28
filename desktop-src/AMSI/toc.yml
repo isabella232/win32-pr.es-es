@@ -1,0 +1,60 @@
+- name: Interfaz de examen antimalware (AMSI)
+  href: antimalware-scan-interface-portal.md
+  items:
+    - name: Cómo ayuda AMSI
+      href: how-amsi-helps.md
+    - name: 'Audiencia del desarrollador, ejemplos'
+      href: dev-audience.md
+    - name: Referencia de AMSI
+      href: antimalware-scan-interface-reference.md
+      items:
+        - name: Enumeraciones de AMSI
+          href: antimalware-scan-interface-enumerations.md
+          items:
+            - name: AMSI_ATTRIBUTE
+              href: /windows/desktop/api/amsi/ne-amsi-amsi_attribute
+            - name: AMSI_RESULT
+              href: /windows/desktop/api/amsi/ne-amsi-amsi_result
+        - name: Funciones de AMSI
+          href: antimalware-scan-interface-functions.md
+          items:
+            - name: AmsiCloseSession
+              href: /windows/desktop/api/amsi/nf-amsi-amsiclosesession
+            - name: AmsiInitialize
+              href: /windows/desktop/api/amsi/nf-amsi-amsiinitialize
+            - name: AmsiOpenSession
+              href: /windows/desktop/api/amsi/nf-amsi-amsiopensession
+            - name: AmsiResultIsMalware
+              href: /windows/desktop/api/amsi/nf-amsi-amsiresultismalware
+            - name: AmsiScanBuffer
+              href: /windows/desktop/api/amsi/nf-amsi-amsiscanbuffer
+            - name: AmsiScanString
+              href: /windows/desktop/api/amsi/nf-amsi-amsiscanstring
+            - name: AmsiUninitialize
+              href: /windows/desktop/api/amsi/nf-amsi-amsiuninitialize
+        - name: Interfaces AMSI
+          href: antimalware-scan-interface-interfaces.md
+          items:
+            - name: IAmsiStream
+              href: /windows/desktop/api/amsi/nn-amsi-iamsistream
+              items:
+                - name: GetAttribute (método)
+                  href: /windows/desktop/api/amsi/nf-amsi-iamsistream-getattribute
+                - name: Método Read
+                  href: /windows/desktop/api/amsi/nf-amsi-iamsistream-read
+            - name: IAntimalware
+              href: /windows/desktop/api/amsi/nn-amsi-iantimalware
+              items:
+                - name: Método CloseSession
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalware-closesession
+                - name: Método de examen
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalware-scan
+            - name: IAntimalwareProvider
+              href: /windows/desktop/api/amsi/nn-amsi-iantimalwareprovider
+              items:
+                - name: Método CloseSession
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider-closesession
+                - name: DisplayName (método)
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider-displayname
+                - name: Método de examen
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider-scan
