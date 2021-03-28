@@ -1,0 +1,32 @@
+- name: Prácticas recomendadas para las API de seguridad
+  href: best-practices-for-the-security-apis.md
+  items:
+    - name: Ejecutar con privilegios especiales
+      href: running-with-special-privileges.md
+      items:
+        - name: Ejecutar con privilegios de administrador
+          href: running-with-administrator-privileges.md
+        - name: Solicitar credenciales al usuario
+          href: asking-the-user-for-credentials.md
+        - name: Cambiar los privilegios de un token
+          href: changing-privileges-in-a-token.md
+        - name: Asignación de privilegios a una cuenta
+          href: assigning-privileges-to-an-account.md
+    - name: Evitar saturaciones del búfer
+      href: avoiding-buffer-overruns.md
+    - name: Protección de flujo de control
+      href: control-flow-guard.md
+      items:
+        - name: Metadatos de PE
+          href: pe-metadata.md
+    - name: Crear una DACL
+      href: creating-a-dacl.md
+    - name: Administrar contraseñas
+      href: handling-passwords.md
+      items:
+        - name: Evaluación de amenazas de contraseñas
+          href: password-threat-assessment.md
+        - name: Técnicas de mitigación de amenazas
+          href: threat-mitigation-techniques.md
+    - name: Cómo optimizar la búsqueda de MSDN Library
+      href: how-to-optimize-your-msdn-library-search.md
