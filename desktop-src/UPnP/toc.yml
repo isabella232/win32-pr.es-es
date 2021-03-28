@@ -1,0 +1,388 @@
+- name: API de UPnP
+  href: universal-plug-and-play-start-page.md
+  items:
+    - name: Novedades de las API de UPnP
+      href: what-s-new-in-upnp.md
+    - name: Información general sobre la arquitectura de UPnP
+      href: overview-of-universal-plug-and-play.md
+    - name: Valores de configuración
+      href: configuration-settings.md
+    - name: API de punto de control
+      href: control-point-api.md
+      items:
+        - name: Acerca de la API de punto de control
+          href: about-the-control-point-api-with-upnp-technology.md
+          items:
+            - name: Aspectos básicos de los puntos de control
+              href: control-point-basics.md
+              items:
+                - name: ¿Qué es el modelo de objetos de punto de control?
+                  href: what-is-the-control-point-object-model.md
+                - name: ¿Cuáles son las acciones básicas de la API de punto de control?
+                  href: what-are-the-basic-actions-of-the-control-point-api.md
+            - name: Búsqueda de dispositivos
+              href: finding-devices.md
+              items:
+                - name: Crear el buscador de dispositivos
+                  href: creating-the-device-finder.md
+                - name: Búsqueda asincrónica
+                  href: asynchronous-searching.md
+                - name: Búsqueda sincrónica
+                  href: synchronous-searching.md
+                - name: Colecciones de dispositivos devueltas por búsquedas sincrónicas
+                  href: device-collections-returned-by-synchronous-searches.md
+            - name: Describir dispositivos
+              href: describing-devices.md
+            - name: Control de dispositivos
+              href: controlling-devices.md
+              items:
+                - name: Obtener objetos de servicio
+                  href: obtaining-service-objects.md
+                - name: Registrar una devolución de llamada
+                  href: registering-a-callback.md
+                - name: Consultar variables de estado
+                  href: querying-state-variables.md
+                - name: Invocar acciones
+                  href: invoking-actions.md
+        - name: Uso de la API de punto de control
+          href: using-the-control-point-api-with-upnp-technology.md
+          items:
+            - name: Consideraciones de seguridad de punto de control
+              href: upnp-control-point-security-considerations.md
+            - name: Consideraciones sobre la programación de puntos de control
+              href: upnp-control-point-programming-considerations.md
+            - name: Buscar de forma asincrónica en C++
+              href: searching-asynchronously-in-c-.md
+            - name: Registrar una devolución de llamada en Visual Basic
+              href: registering-a-callback-in-visual-basic.md
+            - name: Crear una página web de presentación
+              href: creating-a-presentation-web-page.md
+            - name: Códigos de error de dispositivo
+              href: device-error-codes.md
+            - name: Usar el código de ejemplo del punto de control genérico
+              href: using-the-generic-control-point-sample-code.md
+              items:
+                - name: Controlar un dispositivo
+                  href: controlling-a-device.md
+                - name: Detección de dispositivos
+                  href: discovering-devices.md
+                - name: Aplicación de punto de control de usuario genérico
+                  href: generic-user-control-point-application.md
+        - name: Referencia de API de punto de control
+          href: control-point-api-with-upnp-technology-reference.md
+          items:
+            - name: IUPnPAddressFamilyControl
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpaddressfamilycontrol
+              items:
+                - name: Método GetAddressFamily
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpaddressfamilycontrol-getaddressfamily
+                - name: Método SetAddressFamily
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpaddressfamilycontrol-setaddressfamily
+            - name: IUPnPAsyncResult
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpasyncresult
+              items:
+                - name: Método AsyncOperationComplete
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpasyncresult-asyncoperationcomplete
+            - name: IUPnPDescriptionDocument
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdescriptiondocument
+              items:
+                - name: Abort (Método)
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdescriptiondocument-abort
+                - name: Método DeviceByUDN
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdescriptiondocument-devicebyudn
+                - name: Load (Método)
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdescriptiondocument-load
+                - name: LoadAsync (método)
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdescriptiondocument-loadasync
+                - name: Método LoadResult
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdescriptiondocument-get_loadresult
+                - name: ReadyState (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdescriptiondocument-get_readystate
+                - name: Método RootDevice
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdescriptiondocument-rootdevice
+            - name: IUPnPDescriptionDocumentCallback
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdescriptiondocumentcallback
+              items:
+                - name: Método LoadComplete
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdescriptiondocumentcallback-loadcomplete
+            - name: IUPnPDevice
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevice
+              items:
+                - name: Children (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_children
+                - name: Description (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_description
+                - name: FriendlyName (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_friendlyname
+                - name: Método HasChildren
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_haschildren
+                - name: IconURL (método)
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevice-iconurl
+                - name: Método IsRootDevice
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_isrootdevice
+                - name: Método ManufacturerName
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_manufacturername
+                - name: ManufacturerURL (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_manufacturerurl
+                - name: ModelName (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_modelname
+                - name: Método ModelNumber
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_modelnumber
+                - name: Método ModelURL
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_modelurl
+                - name: Método ParentDevice
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_parentdevice
+                - name: Método PresentationURL
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_presentationurl
+                - name: Método RootDevice
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_rootdevice
+                - name: SerialNumber (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_serialnumber
+                - name: Método de servicios
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_services
+                - name: Type (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_type
+                - name: Método UniqueDeviceName
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_uniquedevicename
+                - name: UPC (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevice-get_upc
+            - name: IUPnPDeviceDocumentAccess
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevicedocumentaccess
+              items:
+                - name: Método GetDocumentURL
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicedocumentaccess-getdocumenturl
+            - name: IUPnPDeviceDocumentAccessEx
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevicedocumentaccessex
+              items:
+                - name: Método GetDocument
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicedocumentaccessex-getdocument
+            - name: IUPnPDeviceFinder
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder
+              items:
+                - name: Método CancelAsyncFind
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-cancelasyncfind
+                - name: Método CreateAsyncFind
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-createasyncfind
+                - name: Método FindByType
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype
+                - name: Método FindByUDN
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbyudn
+                - name: Método StartAsyncFind
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-startasyncfind
+            - name: IUPnPDeviceFinderAddCallbackWithInterface
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinderaddcallbackwithinterface
+              items:
+                - name: Método DeviceAddedWithInterface
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinderaddcallbackwithinterface-deviceaddedwithinterface
+            - name: IUPnPDeviceFinderCallback
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevicefindercallback
+              items:
+                - name: Método DeviceAdded
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefindercallback-deviceadded
+                - name: Método DeviceRemoved
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefindercallback-deviceremoved
+                - name: Método SearchComplete
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpdevicefindercallback-searchcomplete
+            - name: IUPnPDevices
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpdevices
+              items:
+                - name: Método _NewEnum
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevices-get__newenum
+                - name: Count (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevices-get_count
+                - name: Item (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpdevices-get_item
+            - name: IUPnPHttpHeaderControl
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnphttpheadercontrol
+              items:
+                - name: Método AddRequestHeaders
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnphttpheadercontrol-addrequestheaders
+            - name: IUPnPService
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpservice
+              items:
+                - name: Método AddCallback
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback
+                - name: ID (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpservice-get_id
+                - name: Método InvokeAction
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservice-invokeaction
+                - name: Método LastTransportStatus
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpservice-get_lasttransportstatus
+                - name: Método QueryStateVariable
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservice-querystatevariable
+                - name: Método ServiceTypeIdentifier
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpservice-get_servicetypeidentifier
+            - name: IUPnPServiceAsync
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpserviceasync
+              items:
+                - name: Método BeginInvokeAction
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-begininvokeaction
+                - name: Método EndInvokeAction
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-endinvokeaction
+                - name: Método BeginQueryStateVariable
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-beginquerystatevariable
+                - name: Método EndQueryStateVariable
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-endquerystatevariable
+                - name: Método BeginSubscribeToEvents
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-beginsubscribetoevents
+                - name: Método EndSubscribeToEvents
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-endsubscribetoevents
+                - name: Método BeginSCPDDownload
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-beginscpddownload
+                - name: Método EndSCPDDownload
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-endscpddownload
+                - name: Método CancelAsyncOperation
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceasync-cancelasyncoperation
+            - name: IUPnPServiceCallback
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpservicecallback
+              items:
+                - name: Método ServiceInstanceDied
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservicecallback-serviceinstancedied
+                - name: Método StateVariableChanged
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservicecallback-statevariablechanged
+            - name: IUPnPServiceDocumentAccess
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpservicedocumentaccess
+              items:
+                - name: Método GetDocumentURL
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservicedocumentaccess-getdocumenturl
+                - name: Método GetDocument
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpservicedocumentaccess-getdocument
+            - name: IUPnPServiceEnumProperty
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpserviceenumproperty
+              items:
+                - name: Método SetServiceEnumProperty
+                  href: /windows/desktop/api/Upnp/nf-upnp-iupnpserviceenumproperty-setserviceenumproperty
+            - name: IUPnPServices
+              href: /windows/desktop/api/Upnp/nn-upnp-iupnpservices
+              items:
+                - name: Método _NewEnum
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpservices-get__newenum
+                - name: Count (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpservices-get_count
+                - name: Item (método)
+                  href: /windows/desktop/api/upnp/nf-upnp-iupnpservices-get_item
+    - name: API de host de dispositivo
+      href: device-host-api.md
+      items:
+        - name: Acerca de la API del host del dispositivo
+          href: about-the-device-host-api-with-upnp-technology.md
+          items:
+            - name: Implementación de un dispositivo hospedado
+              href: implementing-a-hosted-device.md
+              items:
+                - name: Creación de una descripción del dispositivo
+                  href: creating-a-device-description.md
+                - name: Implementar el comportamiento del dispositivo
+                  href: implementing-device-behavior.md
+            - name: Registro de un dispositivo hospedado con el host del dispositivo
+              href: registering-a-hosted-device-with-the-device-host.md
+            - name: Proveedores de dispositivos
+              href: device-providers.md
+            - name: Eventos
+              href: eventing.md
+            - name: Presentación
+              href: presentation.md
+        - name: Uso de la API del host del dispositivo
+          href: using-the-device-host-api-with-upnp-technology.md
+          items:
+            - name: Consideraciones de seguridad del host de dispositivo
+              href: device-host-security-considerations.md
+            - name: Consideraciones sobre la programación de host de dispositivo
+              href: device-host-programming-considerations.md
+            - name: Control de errores de objetos de servicio
+              href: service-object-error-handling.md
+            - name: Asignar tipos de datos de descripción de servicio a tipos de datos IDL
+              href: mapping-service-description-data-types-to-idl-data-types.md
+            - name: Cómo registrar un dispositivo con el host del dispositivo
+              href: how-to-register-a-device-with-the-device-host.md
+            - name: Anulación del registro de un dispositivo
+              href: unregistering-a-device.md
+            - name: Implementación de un proveedor de dispositivos
+              href: implementing-a-device-provider.md
+            - name: Usar el código de ejemplo de dispositivo de atenuación
+              href: using-the-dimmer-device-sample-code.md
+        - name: Referencia de API de host de dispositivo
+          href: device-host-api-with-upnp-technology-reference.md
+          items:
+            - name: IUPnPDeviceControl
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpdevicecontrol
+              items:
+                - name: Método GetServiceObject
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpdevicecontrol-getserviceobject
+                - name: Método Initialize
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpdevicecontrol-initialize
+            - name: IUPnPDeviceProvider
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpdeviceprovider
+              items:
+                - name: Start (Método)
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpdeviceprovider-start
+                - name: Stop (Método)
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpdeviceprovider-stop
+            - name: IUPnPEventSink
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpeventsink
+              items:
+                - name: Método OnStateChanged
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpeventsink-onstatechanged
+                - name: Método OnStateChangedSafe
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpeventsink-onstatechangedsafe
+            - name: IUPnPEventSource
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpeventsource
+              items:
+                - name: Método Advise
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpeventsource-advise
+                - name: Unaconsejat (método)
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpeventsource-unadvise
+            - name: IUPnPRegistrar
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpregistrar
+              items:
+                - name: Método GetUniqueDeviceName
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-getuniquedevicename
+                - name: Método RegisterDevice
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerdevice
+                - name: Método RegisterDeviceProvider
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerdeviceprovider
+                - name: Método RegisterRunningDevice
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice
+                - name: Método UnregisterDevice
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-unregisterdevice
+                - name: Método UnregisterDeviceProvider
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-unregisterdeviceprovider
+            - name: IUPnPRemoteEndpointInfo
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpremoteendpointinfo
+              items:
+                - name: Método GetDwordValue
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpremoteendpointinfo-getdwordvalue
+                - name: Método GetGuidValue
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpremoteendpointinfo-getguidvalue
+                - name: GetStringValue (método)
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpremoteendpointinfo-getstringvalue
+            - name: IUPnPReregistrar
+              href: /windows/desktop/api/Upnphost/nn-upnphost-iupnpreregistrar
+              items:
+                - name: Método ReregisterDevice
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpreregistrar-reregisterdevice
+                - name: Método ReregisterRunningDevice
+                  href: /windows/desktop/api/Upnphost/nf-upnphost-iupnpreregistrar-reregisterrunningdevice
+    - name: Glosario
+      href: glossary-gly.md
+      items:
+        - name: Un
+          href: a-gly.md
+        - name: C
+          href: c-gly.md
+        - name: D
+          href: d-gly.md
+        - name: E
+          href: e-gly.md
+        - name: H
+          href: h-gly.md
+        - name: 'N'
+          href: n-gly.md
+        - name: P
+          href: p-gly.md
+        - name: R
+          href: r-gly.md
+        - name: S
+          href: s-gly.md
+        - name: U
+          href: u-gly.md
