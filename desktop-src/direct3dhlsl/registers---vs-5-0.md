@@ -1,0 +1,62 @@
+---
+title: 'Registros: vs_5_0'
+description: Los siguientes registros de entrada y salida se implementan en la versión 5 0 del sombreador de vértices \_ .
+ms.assetid: 475753C7-C055-4DB7-9DC3-6C734413A92B
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6eb1dc211f5f3dd8819577c796849dcb86012cc0
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104983727"
+---
+# <a name="registers---vs_5_0"></a><span data-ttu-id="ea551-103">Registros-vs \_ 5 \_ 0</span><span class="sxs-lookup"><span data-stu-id="ea551-103">Registers - vs\_5\_0</span></span>
+
+<span data-ttu-id="ea551-104">Los siguientes registros de entrada y salida se implementan en la versión 5 0 del sombreador de vértices \_ .</span><span class="sxs-lookup"><span data-stu-id="ea551-104">The following input and output registers are implemented in the vertex shader version 5\_0.</span></span>
+
+## <a name="input-registers"></a><span data-ttu-id="ea551-105">Registros de entrada</span><span class="sxs-lookup"><span data-stu-id="ea551-105">Input Registers</span></span>
+
+
+
+| <span data-ttu-id="ea551-106">Tipo de registro</span><span class="sxs-lookup"><span data-stu-id="ea551-106">Register Type</span></span>                                      | <span data-ttu-id="ea551-107">Count</span><span class="sxs-lookup"><span data-stu-id="ea551-107">Count</span></span>              | <span data-ttu-id="ea551-108">L/E</span><span class="sxs-lookup"><span data-stu-id="ea551-108">R/W</span></span> | <span data-ttu-id="ea551-109">Dimensión</span><span class="sxs-lookup"><span data-stu-id="ea551-109">Dimension</span></span> | <span data-ttu-id="ea551-110">Indexable por r\#</span><span class="sxs-lookup"><span data-stu-id="ea551-110">Indexable by r\#</span></span> | <span data-ttu-id="ea551-111">Valores predeterminados</span><span class="sxs-lookup"><span data-stu-id="ea551-111">Defaults</span></span> | <span data-ttu-id="ea551-112">Requiere DCL</span><span class="sxs-lookup"><span data-stu-id="ea551-112">Requires DCL</span></span> |
+|----------------------------------------------------|--------------------|-----|-----------|------------------|----------|--------------|
+| <span data-ttu-id="ea551-113">32-bit Temp (r \# )</span><span class="sxs-lookup"><span data-stu-id="ea551-113">32-bit Temp (r\#)</span></span>                                  | <span data-ttu-id="ea551-114">4096 (r \# + x \# \[ n \] )</span><span class="sxs-lookup"><span data-stu-id="ea551-114">4096(r\#+x\#\[n\])</span></span> | <span data-ttu-id="ea551-115">L/E</span><span class="sxs-lookup"><span data-stu-id="ea551-115">R/W</span></span> | <span data-ttu-id="ea551-116">4</span><span class="sxs-lookup"><span data-stu-id="ea551-116">4</span></span>         | <span data-ttu-id="ea551-117">No</span><span class="sxs-lookup"><span data-stu-id="ea551-117">No</span></span>               | <span data-ttu-id="ea551-118">None</span><span class="sxs-lookup"><span data-stu-id="ea551-118">None</span></span>     | <span data-ttu-id="ea551-119">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-119">Yes</span></span>          |
+| <span data-ttu-id="ea551-120">Matriz temporal Indizable de 32 bits (x \# \[ n \] )</span><span class="sxs-lookup"><span data-stu-id="ea551-120">32-bit indexable Temp Array (x\#\[n\])</span></span>             | <span data-ttu-id="ea551-121">4096 (r \# + x \# \[ n \] )</span><span class="sxs-lookup"><span data-stu-id="ea551-121">4096(r\#+x\#\[n\])</span></span> | <span data-ttu-id="ea551-122">L/E</span><span class="sxs-lookup"><span data-stu-id="ea551-122">R/W</span></span> | <span data-ttu-id="ea551-123">4</span><span class="sxs-lookup"><span data-stu-id="ea551-123">4</span></span>         | <span data-ttu-id="ea551-124">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-124">Yes</span></span>              | <span data-ttu-id="ea551-125">None</span><span class="sxs-lookup"><span data-stu-id="ea551-125">None</span></span>     | <span data-ttu-id="ea551-126">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-126">Yes</span></span>          |
+| <span data-ttu-id="ea551-127">entrada de bit 32 (v \# )</span><span class="sxs-lookup"><span data-stu-id="ea551-127">32-bit input (v\#)</span></span>                                 | <span data-ttu-id="ea551-128">32</span><span class="sxs-lookup"><span data-stu-id="ea551-128">32</span></span>                 | <span data-ttu-id="ea551-129">R</span><span class="sxs-lookup"><span data-stu-id="ea551-129">R</span></span>   | <span data-ttu-id="ea551-130">4</span><span class="sxs-lookup"><span data-stu-id="ea551-130">4</span></span>         | <span data-ttu-id="ea551-131">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-131">Yes</span></span>              | <span data-ttu-id="ea551-132">None</span><span class="sxs-lookup"><span data-stu-id="ea551-132">None</span></span>     | <span data-ttu-id="ea551-133">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-133">Yes</span></span>          |
+| <span data-ttu-id="ea551-134">Elemento de un recurso de entrada (t \# )</span><span class="sxs-lookup"><span data-stu-id="ea551-134">Element in an input resource (t\#)</span></span>                 | <span data-ttu-id="ea551-135">128</span><span class="sxs-lookup"><span data-stu-id="ea551-135">128</span></span>                | <span data-ttu-id="ea551-136">R</span><span class="sxs-lookup"><span data-stu-id="ea551-136">R</span></span>   | <span data-ttu-id="ea551-137">1</span><span class="sxs-lookup"><span data-stu-id="ea551-137">1</span></span>         | <span data-ttu-id="ea551-138">No</span><span class="sxs-lookup"><span data-stu-id="ea551-138">No</span></span>               | <span data-ttu-id="ea551-139">None</span><span class="sxs-lookup"><span data-stu-id="ea551-139">None</span></span>     | <span data-ttu-id="ea551-140">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-140">Yes</span></span>          |
+| <span data-ttu-id="ea551-141">Muestras (s \# )</span><span class="sxs-lookup"><span data-stu-id="ea551-141">Sampler (s\#)</span></span>                                      | <span data-ttu-id="ea551-142">16</span><span class="sxs-lookup"><span data-stu-id="ea551-142">16</span></span>                 | <span data-ttu-id="ea551-143">R</span><span class="sxs-lookup"><span data-stu-id="ea551-143">R</span></span>   | <span data-ttu-id="ea551-144">1</span><span class="sxs-lookup"><span data-stu-id="ea551-144">1</span></span>         | <span data-ttu-id="ea551-145">No</span><span class="sxs-lookup"><span data-stu-id="ea551-145">No</span></span>               | <span data-ttu-id="ea551-146">None</span><span class="sxs-lookup"><span data-stu-id="ea551-146">None</span></span>     | <span data-ttu-id="ea551-147">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-147">Yes</span></span>          |
+| <span data-ttu-id="ea551-148">Referencia de ConstantBuffer ( \# \[ Índice CB \] )</span><span class="sxs-lookup"><span data-stu-id="ea551-148">ConstantBuffer reference (cb\#\[index\])</span></span>           | <span data-ttu-id="ea551-149">15</span><span class="sxs-lookup"><span data-stu-id="ea551-149">15</span></span>                 | <span data-ttu-id="ea551-150">R</span><span class="sxs-lookup"><span data-stu-id="ea551-150">R</span></span>   | <span data-ttu-id="ea551-151">4</span><span class="sxs-lookup"><span data-stu-id="ea551-151">4</span></span>         | <span data-ttu-id="ea551-152">Sí (contenido)</span><span class="sxs-lookup"><span data-stu-id="ea551-152">Yes(contents)</span></span>    | <span data-ttu-id="ea551-153">Ninguno</span><span class="sxs-lookup"><span data-stu-id="ea551-153">None</span></span>     | <span data-ttu-id="ea551-154">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-154">Yes</span></span>          |
+| <span data-ttu-id="ea551-155">referencia de ConstantBuffer de iImmediate (índice de ICB \[ \] )</span><span class="sxs-lookup"><span data-stu-id="ea551-155">iImmediate ConstantBuffer reference (icb\[index\])</span></span> | <span data-ttu-id="ea551-156">1</span><span class="sxs-lookup"><span data-stu-id="ea551-156">1</span></span>                  | <span data-ttu-id="ea551-157">R</span><span class="sxs-lookup"><span data-stu-id="ea551-157">R</span></span>   | <span data-ttu-id="ea551-158">4</span><span class="sxs-lookup"><span data-stu-id="ea551-158">4</span></span>         | <span data-ttu-id="ea551-159">Sí (contenido)</span><span class="sxs-lookup"><span data-stu-id="ea551-159">Yes(contents)</span></span>    | <span data-ttu-id="ea551-160">Ninguno</span><span class="sxs-lookup"><span data-stu-id="ea551-160">None</span></span>     | <span data-ttu-id="ea551-161">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-161">Yes</span></span>          |
+
+
+
+ 
+
+## <a name="output-registers"></a><span data-ttu-id="ea551-162">Registros de salida</span><span class="sxs-lookup"><span data-stu-id="ea551-162">Output Registers</span></span>
+
+
+
+| <span data-ttu-id="ea551-163">Tipo de registro</span><span class="sxs-lookup"><span data-stu-id="ea551-163">Register Type</span></span>                                                      | <span data-ttu-id="ea551-164">Count</span><span class="sxs-lookup"><span data-stu-id="ea551-164">Count</span></span> | <span data-ttu-id="ea551-165">L/E</span><span class="sxs-lookup"><span data-stu-id="ea551-165">R/W</span></span> | <span data-ttu-id="ea551-166">Dimensión</span><span class="sxs-lookup"><span data-stu-id="ea551-166">Dimension</span></span> | <span data-ttu-id="ea551-167">Indexable por r\#</span><span class="sxs-lookup"><span data-stu-id="ea551-167">Indexable by r\#</span></span> | <span data-ttu-id="ea551-168">Valores predeterminados</span><span class="sxs-lookup"><span data-stu-id="ea551-168">Defaults</span></span> | <span data-ttu-id="ea551-169">Requiere DCL</span><span class="sxs-lookup"><span data-stu-id="ea551-169">Requires DCL</span></span> |
+|--------------------------------------------------------------------|-------|-----|-----------|------------------|----------|--------------|
+| <span data-ttu-id="ea551-170">NULL (descartar resultado, útil para operaciones con varios resultados)</span><span class="sxs-lookup"><span data-stu-id="ea551-170">NULL (discard result, useful for operations with multiple results)</span></span> | <span data-ttu-id="ea551-171">N/D</span><span class="sxs-lookup"><span data-stu-id="ea551-171">N/A</span></span>   | <span data-ttu-id="ea551-172">W</span><span class="sxs-lookup"><span data-stu-id="ea551-172">W</span></span>   | <span data-ttu-id="ea551-173">N/D</span><span class="sxs-lookup"><span data-stu-id="ea551-173">N/A</span></span>       | <span data-ttu-id="ea551-174">N/D</span><span class="sxs-lookup"><span data-stu-id="ea551-174">N/A</span></span>              | <span data-ttu-id="ea551-175">N/D</span><span class="sxs-lookup"><span data-stu-id="ea551-175">N/A</span></span>      | <span data-ttu-id="ea551-176">No</span><span class="sxs-lookup"><span data-stu-id="ea551-176">No</span></span>           |
+| <span data-ttu-id="ea551-177">Elemento de datos de vértice de salida de 32 bits (o \# )</span><span class="sxs-lookup"><span data-stu-id="ea551-177">32-bit output Vertex Data Element (o\#)</span></span>                            | <span data-ttu-id="ea551-178">32</span><span class="sxs-lookup"><span data-stu-id="ea551-178">32</span></span>    | <span data-ttu-id="ea551-179">W</span><span class="sxs-lookup"><span data-stu-id="ea551-179">W</span></span>   | <span data-ttu-id="ea551-180">4</span><span class="sxs-lookup"><span data-stu-id="ea551-180">4</span></span>         | <span data-ttu-id="ea551-181">N/D</span><span class="sxs-lookup"><span data-stu-id="ea551-181">N/A</span></span>              | <span data-ttu-id="ea551-182">N/D</span><span class="sxs-lookup"><span data-stu-id="ea551-182">N/A</span></span>      | <span data-ttu-id="ea551-183">Sí</span><span class="sxs-lookup"><span data-stu-id="ea551-183">Yes</span></span>          |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="ea551-184">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="ea551-184">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="ea551-185">Modelo de sombreador 5</span><span class="sxs-lookup"><span data-stu-id="ea551-185">Shader Model 5</span></span>](d3d11-graphics-reference-sm5.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
