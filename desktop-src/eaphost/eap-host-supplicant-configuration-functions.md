@@ -1,0 +1,43 @@
+---
+title: Funciones de configuración del suplicante de EAPHost
+description: Obtenga información sobre las funciones de configuración del suplicante de EAPHost, como EapHostPeerConfigBlob2Xml y EapHostPeerGetMethods.
+ms.assetid: 92a1df11-10f9-4e55-a7ec-db026aaf5c24
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3ab4580127d4c477f99e949ca1e88fe999ea2636
+ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "104078355"
+---
+# <a name="eaphost-supplicant-configuration-functions"></a>Funciones de configuración del suplicante de EAPHost
+
+Las funciones de configuración de la API suplicante EAP son las siguientes.
+
+
+
+| Función                                                                                                           | Descripción                                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**EapHostPeerConfigBlob2Xml**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerconfigblob2xml)                                                 | Convierte el BLOB de configuración en XML.                                                                                                                                                                                                                                              |
+| [**EapHostPeerConfigXml2Blob**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerconfigxml2blob)                                                 | Convierte XML en el BLOB de configuración.                                                                                                                                                                                                                                            |
+| [**EapHostPeerCredentialsXml2Blob**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeercredentialsxml2blob)                                       | Genera el BLOB de credenciales.                                                                                                                                                                                                                                                      |
+| [**EapHostPeerFreeErrorMemory**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerfreeerrormemory)                                               | Libera la memoria asignada a una estructura de [**\_ error de EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error) .                                                                                                                                                                                                              |
+| [**EapHostPeerFreeMemory**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerfreememory)                                                         | Libera la memoria devuelta por las API de configuración. Esta función no se debe usar para liberar memoria de errores. Para liberar memoria de error, use la función [**EapHostPeerFreeEapError**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerfreeeaperror) o [**EapHostPeerFreeErrrorMemory**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerfreeerrormemory) . |
+| [**EapHostPeerGetMethodProperties**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeergetmethodproperties)                                           | Recupera las propiedades de un método EAP a partir de los datos de usuario y la conexión.                                                                                                                                                                                                            |
+| [**EapHostPeerGetMethods**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeergetmethods)                                                         | Enumera todos los métodos EAP instalados y disponibles para su uso, incluidos los métodos EAP heredados.                                                                                                                                                                                            |
+| [**EapHostPeerInvokeConfigUI**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeconfigui)                                                     | Inicia la interfaz de usuario de configuración del método EAP especificado.                                                                                                                                                                                                                 |
+| [**EapHostPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeidentityui)                                                 | Inicia la interfaz de usuario de identidad.                                                                                                                                                                                                                                                  |
+| [**EapHostPeerInvokeInteractiveUI**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeinteractiveui)                                       | Proporciona la interactividad de credenciales al usuario, como una tarjeta inteligente y un PIN, por ejemplo.                                                                                                                                                                                            |
+| [**EapHostPeerQueryCredentialInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerquerycredentialinputfields)                             | Permite al usuario determinar qué tipo de credenciales requieren los métodos para realizar la autenticación. También obtiene los campos que se van a mostrar en la interfaz de usuario.                                                                                                       |
+| [**EapHostPeerQueryInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryinteractiveuiinputfields)                       | Obtiene los campos de entrada para que los componentes de interfaz de usuario interactivos se produzcan en el suplicante.                                                                                                                                                                                       |
+| [**EapHostPeerQueryUIBlobFromInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerqueryuiblobfrominteractiveuiinputfields)       | Convierte la información de usuario en un BLOB de usuario que pueden usar las funciones en tiempo de ejecución de EAPHost.                                                                                                                                                                                          |
+| [**EapHostPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuserblobfromcredentialinputfields) | Obtiene el BLOB de credencial que se podría usar para iniciar la autenticación una vez que se han recibido entradas de usuario desde la interfaz de usuario de desde el inicio de sesión único.                                                                                                                                 |
+
+
+
+ 
+
+ 
+
+ 
