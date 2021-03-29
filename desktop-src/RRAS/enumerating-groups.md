@@ -1,0 +1,41 @@
+---
+title: Enumerar grupos (RRAS)
+description: En la tabla siguiente se resume una serie de pasos en una interacción entre un protocolo de enrutamiento y el administrador del grupo de multidifusión.
+ms.assetid: 30a81946-fa60-4424-9a16-a9b4dfe1961e
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6d3860c6876ed6ea5caef4941efcdd949eb9890d
+ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "104487182"
+---
+# <a name="enumerating-groups"></a><span data-ttu-id="2c52f-103">Enumerar grupos</span><span class="sxs-lookup"><span data-stu-id="2c52f-103">Enumerating Groups</span></span>
+
+<span data-ttu-id="2c52f-104">En la tabla siguiente se resume una serie de pasos en una interacción entre un protocolo de enrutamiento y el administrador del grupo de multidifusión.</span><span class="sxs-lookup"><span data-stu-id="2c52f-104">The following table summarizes a series of steps in an interaction between a routing protocol and the multicast group manager.</span></span> <span data-ttu-id="2c52f-105">En la primera columna se describen las acciones que realiza el protocolo de enrutamiento y las respuestas del Protocolo de enrutamiento al administrador del grupo de multidifusión.</span><span class="sxs-lookup"><span data-stu-id="2c52f-105">The first column describes the actions that the routing protocol performs and the routing protocol's responses to the multicast group manager.</span></span> <span data-ttu-id="2c52f-106">En la segunda columna se describen las respuestas del administrador del grupo de multidifusión al Protocolo de enrutamiento.</span><span class="sxs-lookup"><span data-stu-id="2c52f-106">The second column describes the multicast group manager's responses to the routing protocol.</span></span> <span data-ttu-id="2c52f-107">La tercera columna presenta cualquier información adicional.</span><span class="sxs-lookup"><span data-stu-id="2c52f-107">The third column presents any additional information.</span></span>
+
+<span data-ttu-id="2c52f-108">Cada fila de la tabla representa un paso.</span><span class="sxs-lookup"><span data-stu-id="2c52f-108">Each row of the table represents one step.</span></span>
+
+
+
+| <span data-ttu-id="2c52f-109">Acción del Protocolo de enrutamiento</span><span class="sxs-lookup"><span data-stu-id="2c52f-109">Routing protocol action</span></span>                                                                                                                                                    | <span data-ttu-id="2c52f-110">Acción del administrador del grupo de multidifusión</span><span class="sxs-lookup"><span data-stu-id="2c52f-110">Multicast group manager action</span></span>                                                                                                                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="2c52f-111">Obtener un identificador para una enumeración mediante la función [**MgmGroupEnumerationStart**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationstart) .</span><span class="sxs-lookup"><span data-stu-id="2c52f-111">Obtain a handle to an enumeration using the [**MgmGroupEnumerationStart**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationstart) function.</span></span>                                                         | <span data-ttu-id="2c52f-112">Devuelve un identificador.</span><span class="sxs-lookup"><span data-stu-id="2c52f-112">Return a handle.</span></span>                                                                                                                                                                                                                                                                                             |
+| <span data-ttu-id="2c52f-113">Obtener uno o varios grupos mediante la función [**MgmGroupEnumerationGetNext**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationgetnext) .</span><span class="sxs-lookup"><span data-stu-id="2c52f-113">Obtain one or more groups using the [**MgmGroupEnumerationGetNext**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationgetnext) function.</span></span>                                                             | <span data-ttu-id="2c52f-114">Devuelva tantos grupos como quepan en el búfer proporcionado por el cliente.</span><span class="sxs-lookup"><span data-stu-id="2c52f-114">Return as many groups as fit in the buffer supplied by the client.</span></span> <span data-ttu-id="2c52f-115">Si no se puede devolver ningún grupo en el búfer proporcionado, \_ se devuelve \_ un error de búfer insuficiente y el tamaño del búfer necesario para devolver un grupo.</span><span class="sxs-lookup"><span data-stu-id="2c52f-115">If no groups can be returned in the supplied buffer, return ERROR\_INSUFFICIENT\_BUFFER and the size of the buffer that is needed to return one group.</span></span><br/> <span data-ttu-id="2c52f-116">Devuelve el ERROR \_ no hay \_ más \_ elementos cuando no hay más grupos.</span><span class="sxs-lookup"><span data-stu-id="2c52f-116">Return ERROR\_NO\_MORE\_ITEMS when there are no more groups.</span></span><br/> |
+| <span data-ttu-id="2c52f-117">Si \_ \_ se recibe un error de búfer insuficiente, vuelva a llamar a la función [**MgmGroupEnumerationGetNext**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationgetnext) con un búfer con el tamaño indicado.</span><span class="sxs-lookup"><span data-stu-id="2c52f-117">If ERROR\_INSUFFICIENT\_BUFFER is received, call the [**MgmGroupEnumerationGetNext**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationgetnext) function again using a buffer of the size indicated.</span></span> |                                                                                                                                                                                                                                                                                                              |
+| <span data-ttu-id="2c52f-118">Continúe llamando a la función [**MgmGroupEnumerationGetNext**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationgetnext) hasta \_ que \_ no \_ se reciba ningún elemento más.</span><span class="sxs-lookup"><span data-stu-id="2c52f-118">Continue calling the [**MgmGroupEnumerationGetNext**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationgetnext) function until ERROR\_NO\_MORE\_ITEMS is received.</span></span>                                   |                                                                                                                                                                                                                                                                                                              |
+| <span data-ttu-id="2c52f-119">Finalice el proceso de enumeración mediante la función [**MgmGroupEnumerationEnd**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationend) .</span><span class="sxs-lookup"><span data-stu-id="2c52f-119">End the enumeration process using the [**MgmGroupEnumerationEnd**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationend) function.</span></span>                                                                   | <span data-ttu-id="2c52f-120">Destruya el identificador.</span><span class="sxs-lookup"><span data-stu-id="2c52f-120">Destroy the handle.</span></span>                                                                                                                                                                                                                                                                                          |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+

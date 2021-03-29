@@ -1,0 +1,35 @@
+---
+title: Establecer derechos de acceso en todo el objeto
+description: Ciertos permisos solo se pueden establecer para un objeto completo, como eliminar y mostrar el contenido. Los permisos específicos de la operación, como el permiso de lectura, también se pueden establecer para el objeto completo, de modo que se apliquen a un objeto completo.
+ms.assetid: 786357f4-146e-4638-8bd6-82bc1a6640a1
+ms.tgt_platform: multiple
+keywords:
+- Establecer derechos de acceso en todo el objeto AD
+- objetos AD, establecer derechos de acceso en
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e9a965b646de1ee3eba40757386fd243839cb35b
+ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "104487394"
+---
+# <a name="setting-access-rights-on-the-entire-object"></a><span data-ttu-id="68fb2-106">Establecer derechos de acceso en todo el objeto</span><span class="sxs-lookup"><span data-stu-id="68fb2-106">Setting Access Rights on the Entire Object</span></span>
+
+<span data-ttu-id="68fb2-107">Ciertos permisos solo se pueden establecer para un objeto completo, como eliminar y mostrar el contenido.</span><span class="sxs-lookup"><span data-stu-id="68fb2-107">Certain permissions can be set only for an entire object, such as Delete and List Contents.</span></span> <span data-ttu-id="68fb2-108">Los permisos específicos de la operación, como el permiso de lectura, también se pueden establecer para el objeto completo, de modo que se apliquen a un objeto completo.</span><span class="sxs-lookup"><span data-stu-id="68fb2-108">Operation-specific permissions, such as the Read permission, can also be set for entire object so that they apply to an entire object.</span></span>
+
+<span data-ttu-id="68fb2-109">El siguiente procedimiento se puede usar para establecer permisos para un objeto completo.</span><span class="sxs-lookup"><span data-stu-id="68fb2-109">The following procedure can be used to set permissions for an entire object.</span></span>
+
+<span data-ttu-id="68fb2-110">**Para establecer permisos para un objeto completo**</span><span class="sxs-lookup"><span data-stu-id="68fb2-110">**To set permissions for an entire object**</span></span>
+
+1.  <span data-ttu-id="68fb2-111">Establezca [**IADsAccessControlEntry. AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en **ADS \_ AceType \_ acceso \_ permitido** o **anuncios \_ AceType \_ acceso \_ denegado**.</span><span class="sxs-lookup"><span data-stu-id="68fb2-111">Set [**IADsAccessControlEntry.AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) to **ADS\_ACETYPE\_ACCESS\_ALLOWED** or **ADS\_ACETYPE\_ACCESS\_DENIED**.</span></span>
+2.  <span data-ttu-id="68fb2-112">Establezca [**IADsAccessControlEntry. ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) y **IADsAccessControlEntry. InheritedObjectType** en **null**.</span><span class="sxs-lookup"><span data-stu-id="68fb2-112">Set [**IADsAccessControlEntry.ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) and **IADsAccessControlEntry.InheritedObjectType** to **NULL**.</span></span>
+
+<span data-ttu-id="68fb2-113">Para obtener más información sobre cómo crear una ACE, consulte [configuración de derechos de acceso en un objeto](setting-access-rights-on-an-object.md).</span><span class="sxs-lookup"><span data-stu-id="68fb2-113">For more information about how to create an ACE, see [Setting Access Rights on an Object](setting-access-rights-on-an-object.md).</span></span>
+
+<span data-ttu-id="68fb2-114">Para obtener más información y un ejemplo de código que se puede usar para establecer una ACE, vea el [código de ejemplo para establecer una ACE en un objeto de directorio](example-code-for-setting-an-ace-on-a-directory-object.md).</span><span class="sxs-lookup"><span data-stu-id="68fb2-114">For more information and a code example that can be used to set an ACE, see [Example Code for Setting an ACE on a Directory Object](example-code-for-setting-an-ace-on-a-directory-object.md).</span></span>
+
+ 
+
+ 

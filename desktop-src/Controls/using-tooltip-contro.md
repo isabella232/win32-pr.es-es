@@ -1,0 +1,43 @@
+---
+title: Usar controles ToolTip
+description: Esta sección contiene ejemplos que muestran cómo crear diferentes tipos de información sobre herramientas.
+ms.assetid: 4486b406-a069-4250-b7ab-671d895b79f9
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 86fd4a0cef452be3f9700f8466959043ac8d30b7
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103775559"
+---
+# <a name="using-tooltip-controls"></a><span data-ttu-id="8d8ed-103">Usar controles ToolTip</span><span class="sxs-lookup"><span data-stu-id="8d8ed-103">Using Tooltip Controls</span></span>
+
+<span data-ttu-id="8d8ed-104">Esta sección contiene ejemplos que muestran cómo crear diferentes tipos de información sobre herramientas.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-104">This section contains examples that demonstrate how to create different types of tooltips.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="8d8ed-105">En esta sección</span><span class="sxs-lookup"><span data-stu-id="8d8ed-105">In this section</span></span>
+
+
+
+| <span data-ttu-id="8d8ed-106">Tema</span><span class="sxs-lookup"><span data-stu-id="8d8ed-106">Topic</span></span>                                                                                                    | <span data-ttu-id="8d8ed-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="8d8ed-107">Description</span></span>                                                                                                                                                                                                                                                                      |
+|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="8d8ed-108">Cómo crear una información sobre herramientas para un control</span><span class="sxs-lookup"><span data-stu-id="8d8ed-108">How to Create a Tooltip for a Control</span></span>](create-a-tooltip-for-a-control.md)<br/>                   | <span data-ttu-id="8d8ed-109">En la función de ejemplo siguiente se crea una información sobre herramientas y se asocia al control cuyo identificador de recurso se pasa.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-109">The following example function creates a tooltip and associates it with the control whose resource ID is passed in.</span></span> <br/>                                                                                                                                                  |
+| [<span data-ttu-id="8d8ed-110">Cómo crear una información sobre herramientas para un área rectangular</span><span class="sxs-lookup"><span data-stu-id="8d8ed-110">How to Create a Tooltip for a Rectangular Area</span></span>](create-a-tooltip-for-a-rectangular-area.md)<br/> | <span data-ttu-id="8d8ed-111">En el ejemplo siguiente se muestra cómo crear un control ToolTip estándar para todo el área cliente de una ventana.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-111">The following example demonstrates how to create a standard tooltip control for a window's entire client area.</span></span> <br/>                                                                                                                                                       |
+| [<span data-ttu-id="8d8ed-112">Cómo implementar la información sobre herramientas de seguimiento</span><span class="sxs-lookup"><span data-stu-id="8d8ed-112">How to Implement Tracking Tooltips</span></span>](implement-tracking-tooltips.md)<br/>                         | <span data-ttu-id="8d8ed-113">La información sobre herramientas de seguimiento permanece visible hasta que la aplicación la cierra explícitamente, y puede cambiar la posición de la pantalla de forma dinámica.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-113">Tracking tooltips remain visible until they are explicitly closed by the application, and can change position on the screen dynamically.</span></span> <span data-ttu-id="8d8ed-114">Son compatibles con la [versión 4,70](common-control-versions.md) y versiones posteriores de los controles comunes.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-114">They are supported by [version 4.70](common-control-versions.md) and later of the common controls.</span></span> <br/>                         |
+| [<span data-ttu-id="8d8ed-115">Cómo implementar la información sobre herramientas de varias líneas</span><span class="sxs-lookup"><span data-stu-id="8d8ed-115">How to Implement Multiline Tooltips</span></span>](implement-multiline-tooltips.md)<br/>                       | <span data-ttu-id="8d8ed-116">La información sobre herramientas multilínea permite que el texto se muestre en más de una línea.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-116">Multiline tooltips allow text to be displayed on more than one line.</span></span> <br/>                                                                                                                                                                                                 |
+| [<span data-ttu-id="8d8ed-117">Cómo implementar la información sobre herramientas de globo</span><span class="sxs-lookup"><span data-stu-id="8d8ed-117">How to Implement Balloon Tooltips</span></span>](implement-balloon-tooltips.md)<br/>                           | <span data-ttu-id="8d8ed-118">La información sobre herramientas de globo es similar a la información sobre herramientas estándar, pero se muestra en un "globo" de estilo animado con una tallo que apunta a la herramienta.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-118">Balloon tooltips are similar to standard tooltips, but are displayed in a cartoon-style "balloon" with a stem pointing to the tool.</span></span> <span data-ttu-id="8d8ed-119">La información sobre herramientas de globo puede ser de una o varias líneas.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-119">Balloon tooltips can be either single-line or multiline.</span></span> <span data-ttu-id="8d8ed-120">Se crean y se administran de forma muy similar a la información sobre herramientas estándar.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-120">They are created and handled in much the same way as standard tooltips.</span></span> <br/> |
+| [<span data-ttu-id="8d8ed-121">Cómo implementar la información sobre herramientas para los iconos de la barra de estado</span><span class="sxs-lookup"><span data-stu-id="8d8ed-121">How to Implement Tooltips for Status Bar Icons</span></span>](implement-tooltips-for-status-bar-icons.md)<br/> | <span data-ttu-id="8d8ed-122">Una manera no intrusiva de mostrar un mensaje explicativo para un icono de la barra de estado es implementar una información sobre herramientas.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-122">A nonintrusive way to display an explanatory message for a status bar icon is to implement a tooltip.</span></span> <span data-ttu-id="8d8ed-123">La información sobre herramientas desaparece al hacer clic en él, pero también puede especificar un valor de tiempo de espera.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-123">The tooltip disappears when clicked, but you can also specify a time-out value.</span></span> <br/>                                                                                |
+| [<span data-ttu-id="8d8ed-124">Cómo implementar In-Place información sobre herramientas</span><span class="sxs-lookup"><span data-stu-id="8d8ed-124">How to Implement In-Place Tooltips</span></span>](implement-in-place-tooltips.md)<br/>                         | <span data-ttu-id="8d8ed-125">La información sobre herramientas en contexto se usa para mostrar las cadenas de texto de los objetos que se han recortado.</span><span class="sxs-lookup"><span data-stu-id="8d8ed-125">In-place tooltips are used to display text strings for objects that have been clipped.</span></span> <span data-ttu-id="8d8ed-126">Para ver una ilustración, consulte [acerca de los controles de información sobre herramientas](tooltip-controls.md).</span><span class="sxs-lookup"><span data-stu-id="8d8ed-126">For an illustration, see [About Tooltip Controls](tooltip-controls.md).</span></span> <br/>                                                                                                      |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
