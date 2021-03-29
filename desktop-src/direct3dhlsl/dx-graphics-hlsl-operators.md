@@ -1,0 +1,550 @@
+---
+title: Operadores
+description: Las expresiones son secuencias de variables y literales puntuados por operadores.
+ms.assetid: c31aa0b8-1284-48aa-b000-d72433f0f5cc
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: 69fc29f366fa781483edb5fd4653674b387fd156
+ms.sourcegitcommit: 37fb32f6150b6ca1db6c52d68a553ec2c8c0879a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "104487334"
+---
+# <a name="operators"></a>Operadores
+
+Las expresiones son secuencias de [variables](dx-graphics-hlsl-variable-syntax.md) y literales puntuados por [operadores](dx-graphics-hlsl-statement-blocks.md). Los operadores determinan cómo se combinan las variables y los literales, se comparan, se seleccionan, etc. Los operadores incluyen:
+
+
+
+|                                                                                 |                                                                    |
+|---------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| Nombre de operador                                                                   | Operadores                                                          |
+| [Operadores de suma y multiplicación](#additive-and-multiplicative-operators) | +, -, \*, /, %                                                     |
+| [Array (operador)](#array-operator)                                               | \[i\]                                                              |
+| [Operadores de asignación](#assignment-operators)                                   | =, +=, -=, \*=, /=, %=                                             |
+| [Conversiones binarias](#binary-casts)                                                   | Reglas de c para Float e int, reglas de C o intrínsecos de HLSL para bool     |
+| [Operadores bit a bit](#bitwise-operators)                                         | ~,  <<,  >>, &, \| , ^,  <<=,  >>=, &=, \| =, ^ = |
+| [Operadores matemáticos booleanos](#boolean-math-operators)                               | & &, \| \| ,?:                                                      |
+| [Operador de conversión](#cast-operator)                                                 | automáticamente                                                             |
+| [Coma (operador)](#comma-operator)                                               | ,                                                                  |
+| [Operadores de comparación](#comparison-operators)                                   | <, >, = =,! =, <=, >=                                   |
+| [Operadores de prefijo o postfijo](#prefix-or-postfix-operators)                     | ++, --                                                             |
+| [Operador de estructura](#structure-operator)                                       | .                                                                  |
+| [Operadores unarios](#unary-operators)                                             | !, -, +                                                            |
+
+
+
+ 
+
+Muchos de los operadores son por componente, lo que significa que la operación se realiza de forma independiente para cada componente de cada variable. Por ejemplo, una única variable de componente tiene una operación realizada. Por otro lado, una variable de cuatro componentes tiene cuatro operaciones realizadas, una para cada componente.
+
+Todos los operadores que realizan alguna acción en el valor, como + y \* , funcionan por componente.
+
+Los operadores de comparación requieren que un único componente funcione, a menos que se use la función [**All**](dx-graphics-hlsl-all.md) o [**any**](dx-graphics-hlsl-any.md) intrínseca con una variable de varios componentes. Se produce un error en la siguiente operación porque la instrucción If requiere un solo booleano, pero recibe un bool4:
+
+
+```
+if (A4 < B4)
+```
+
+
+
+Las siguientes operaciones se realizan correctamente:
+
+
+```
+if ( any(A4 < B4) )
+if ( all(A4 < B4) )
+```
+
+
+
+Los operadores de conversión binaria [**Interfloat**](dx-graphics-hlsl-asfloat.md), [**asint**](dx-graphics-hlsl-asint.md)y así sucesivamente en el trabajo por componente, excepto en un [**valor Double**](asdouble.md) cuyas reglas especiales están documentadas.
+
+Los operadores de selección como el punto, la coma y los corchetes de matriz no funcionan por componente.
+
+Los operadores de conversión cambian el número de componentes. Las siguientes operaciones de conversión muestran su equivalencia:
+
+
+```
+(float) i4 ->   float(i4.x)
+(float4)i ->   float4(i, i, i, i)
+```
+
+
+
+## <a name="additive-and-multiplicative-operators"></a>Operadores de suma y multiplicación
+
+Los operadores de suma y multiplicación son: +,-, \* ,/,%
+
+
+```
+int i1 = 1;
+int i2 = 2;
+int i3 = i1 + i2;  // i3 = 3
+i3 = i1 * i2;        // i3 = 1 * 2 = 2
+```
+
+
+
+
+```
+i3 = i1/i2;       // i3 = 1/3 = 0.333. Truncated to 0 because i3 is an integer.
+i3 = i2/i1;       // i3 = 2/1 = 2
+```
+
+
+
+
+```
+float f1 = 1.0;
+float f2 = 2.0f;
+float f3 = f1 - f2; // f3 = 1.0 - 2.0 = -1.0
+f3 = f1 * f2;         // f3 = 1.0 * 2.0 = 2.0
+```
+
+
+
+
+```
+f3 = f1/f2;        // f3 = 1.0/2.0 = 0.5
+f3 = f2/f1;        // f3 = 2.0/1.0 = 2.0
+```
+
+
+
+El operador de módulo devuelve el resto de una división. Esto produce resultados diferentes cuando se usan enteros y números de punto flotante. Los restos de enteros que son fracciones se truncarán.
+
+
+```
+int i1 = 1;
+int i2 = 2;
+i3 = i1 % i2;      // i3 = remainder of 1/2, which is 1
+i3 = i2 % i1;      // i3 = remainder of 2/1, which is 0
+i3 = 5 % 2;        // i3 = remainder of 5/2, which is 1
+i3 = 9 % 2;        // i3 = remainder of 9/2, which is 1
+```
+
+
+
+El operador de módulo trunca un resto fraccionario cuando se usan enteros.
+
+
+```
+f3 = f1 % f2;      // f3 = remainder of 1.0/2.0, which is 0.5
+f3 = f2 % f1;      // f3 = remainder of 2.0/1.0, which is 0.0
+```
+
+
+
+El operador% solo se define en los casos en los que ambos lados son positivos o ambos lados son negativos. A diferencia de C, también funciona en tipos de datos de punto flotante, así como enteros.
+
+## <a name="array-operator"></a>Array (operador)
+
+El operador de selección de miembro \[ de matriz "i \] " selecciona uno o más componentes de una matriz. Es un conjunto de corchetes que contienen un índice basado en cero.
+
+
+```
+int arrayOfInts[4] = { 0,1,2,3 };
+arrayOfInts[0] = 2;
+arrayOfInts[1] = arrayOfInts[0];
+```
+
+
+
+El operador de matriz también se puede utilizar para tener acceso a un vector.
+
+
+```
+float4 4D_Vector = { 0.0f, 1.0f, 2.0f, 3.0f  };         
+float 1DFloat = 4D_Vector[1];          // 1.0f
+```
+
+
+
+Al agregar un índice adicional, el operador de matriz también puede tener acceso a una matriz.
+
+
+```
+float4x4 mat4x4 = {{0,0,0,0}, {1,1,1,1}, {2,2,2,2}, {3,3,3,3} };
+mat4x4[0][1] = 1.1f;
+float 1DFloat = mat4x4[0][1];      // 0.0f
+```
+
+
+
+El primer índice es el índice de fila basado en cero. El segundo índice es el índice de columna basado en cero.
+
+## <a name="assignment-operators"></a>Operadores de asignación
+
+Los operadores de asignación son: =, + =,-=, \* =,/=
+
+A las variables se les pueden asignar valores literales:
+
+
+```
+int i = 1;            
+float f2 = 3.1f; 
+bool b = false;
+string str = "string";
+```
+
+
+
+También se puede asignar el resultado de una operación matemática a las variables:
+
+
+```
+int i1 = 1;
+i1 += 2;           // i1 = 1 + 2 = 3
+```
+
+
+
+Se puede usar una variable en cualquier lado del signo igual:
+
+
+```
+float f3 = 0.5f;
+f3 *= f3;          // f3 = 0.5 * 0.5 = 0.25
+```
+
+
+
+La división de las variables de punto flotante es la esperada porque el resto decimal no es un problema.
+
+
+```
+float f1 = 1.0;
+f1 /= 3.0f;        // f1 = 1.0/3.0 = 0.333
+```
+
+
+
+Tenga cuidado si usa enteros que se pueden dividir, especialmente cuando el truncamiento afecta al resultado. Este ejemplo es idéntico al ejemplo anterior, excepto para el tipo de datos. El truncamiento produce un resultado muy diferente.
+
+
+```
+int i1 = 1;
+i1 /= 3;           // i1 = 1/3 = 0.333, which gets truncated to 0
+```
+
+
+
+## <a name="binary-casts"></a>Conversiones binarias
+
+La operación de conversión entre int y Float convertirá el valor numérico en las representaciones adecuadas después de las reglas de C para truncar un tipo int. La conversión de un valor de Float a int y de nuevo a un valor Float producirá una conversión de pérdida basada en la precisión del destino.
+
+Las conversiones binarias también se pueden realizar mediante [**funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md), que reinterpretan la representación de bits de un número en el tipo de datos de destino.
+
+
+```
+asfloat() // Cast to float
+asint()   // Cast to int 
+asuint()  // Cast to uint
+```
+
+
+
+## <a name="bitwise-operators"></a>Operadores bit a bit
+
+HLSL admite los siguientes operadores bit a bit, que tienen la misma prioridad que C con respecto a otros operadores. En la tabla siguiente se describen los operadores.
+
+> [!Note]  
+> Los operadores bit a bit requieren el [modelo de sombreador 4 \_ 0](dx-graphics-hlsl-sm4.md) con Direct3D 10 y un hardware superior.
+
+ 
+
+
+
+|           |                   |
+|-----------|-------------------|
+| Operador  | Función          |
+| ~         | Not lógico       |
+| <<  | Desplazamiento a la izquierda        |
+| >>  | Desplazamiento a la derecha       |
+| &         | Logical And       |
+| \|        | Or lógico.        |
+| ^         | XOR lógico       |
+| <<= | Igual a la izquierda  |
+| >>= | Desplazamiento a la derecha |
+| &=        | Y igual         |
+| \|=       | O igual          |
+| ^=        | XOR igual         |
+
+
+
+ 
+
+Los operadores bit a bit se definen para funcionar solo en los tipos de datos int y uint. Si se intenta usar operadores bit a bit en tipos de datos float o struct, se producirá un error.
+
+## <a name="boolean-math-operators"></a>Operadores matemáticos booleanos
+
+Los operadores matemáticos booleanos son:  &&, \| \| ,?:
+
+
+```
+bool b1 = true;
+bool b2 = false;
+bool b3 = b1 && b2 // b3 = true AND false = false
+b3 = b1 || b2                // b3 = true OR false = true
+```
+
+
+
+A diferencia de la evaluación de cortocircuito de &&, \| \| y?: en C, las expresiones de HLSL nunca cortocircuitan una evaluación porque son operaciones vectoriales. Siempre se evalúan todos los lados de la expresión.
+
+Los operadores booleanos funcionan por componente. Esto significa que si se comparan dos vectores, el resultado es un vector que contiene el resultado booleano de la comparación de cada componente.
+
+En el caso de las expresiones que usan operadores booleanos, el tamaño y el tipo de componente de cada variable se promueven a la misma antes de que se produzca la operación. El tipo promocionado determina la resolución en la que tiene lugar la operación, así como el tipo de resultado de la expresión. Por ejemplo, una expresión INT3 + float se promocionaría a float3 + float3 para su evaluación, y su resultado sería de tipo float3.
+
+## <a name="cast-operator"></a>Operador de conversión
+
+Una expresión precedida por un nombre de tipo entre paréntesis es una conversión de tipo explícita. Una conversión de tipos convierte la expresión original al tipo de datos de la conversión. En general, los tipos de datos simples se pueden convertir en tipos de datos más complejos (con una conversión de promoción), pero solo algunos tipos de datos complejos se pueden convertir en tipos de datos simples (con una conversión de degradación).
+
+Solo la conversión de tipo del lado derecho es legal. Por ejemplo, las expresiones como `(int)myFloat = myInt;` no son válidas. En su lugar, use `myFloat = (float)myInt;`.
+
+El compilador también realiza una conversión de tipos implícita. Por ejemplo, las dos expresiones siguientes son equivalentes:
+
+
+```
+int2 b = int2(1,2) + 2;
+int2 b = int2(1,2) + int2(2,2);
+```
+
+
+
+## <a name="comma-operator"></a>Coma (operador)
+
+El operador de coma (,) separa una o más expresiones que se van a evaluar en orden. El valor de la última expresión de la secuencia se usa como el valor de la secuencia.
+
+Este es un caso que merece la pena llamar a. Si el tipo de constructor se deja accidentalmente fuera del lado derecho del signo igual, el lado derecho contiene ahora cuatro expresiones, separadas por tres comas.
+
+
+```
+// Instead of using a constructor
+float4 x = float4(0,0,0,1); 
+
+// The type on the right side is accidentally left off
+float4 x = (0,0,0,1); 
+```
+
+
+
+El operador de comas evalúa una expresión de izquierda a derecha. Esto reduce el lado derecho a:
+
+
+```
+float4 x = 1; 
+```
+
+
+
+En este caso, HLSL usa la promoción escalar, por lo que el resultado es como si se hubiera escrito como se indica a continuación:
+
+
+```
+float4 x = float4(1,1,1,1);
+```
+
+
+
+En esta instancia, salir del tipo FLOAT4 del lado derecho es probablemente un error que el compilador no puede detectar porque es una instrucción válida.
+
+## <a name="comparison-operators"></a>Operadores de comparación
+
+Los operadores de comparación son: <, >, = =,! =, <=, >=.
+
+Compara los valores que son mayores que (o menor que) con cualquier valor escalar:
+
+
+```
+if( dot(lightDirection, normalVector) > 0 )
+   // Do something; the face is lit
+```
+
+
+
+
+```
+if( dot(lightDirection, normalVector) < 0 )
+   // Do nothing; the face is backwards
+```
+
+
+
+O bien, compare los valores iguales a (o no igual a) con cualquier valor escalar:
+
+
+```
+if(color.a == 0)
+   // Skip processing because the face is invisible
+
+if(color.a != 0)
+   // Blend two colors together using the alpha value
+```
+
+
+
+O combinan y comparan valores que son mayores o iguales que (o menor o igual que) cualquier valor escalar:
+
+
+```
+if( position.z >= oldPosition.z )
+   // Skip the new face because it is behind the existing face
+```
+
+
+
+
+```
+if( currentValue <= someInitialCondition )
+   // Reset the current value to its initial condition
+```
+
+
+
+Cada una de estas comparaciones se puede realizar con cualquier tipo de datos escalar.
+
+Para usar operadores de comparación con tipos vectoriales y de matriz, utilice la función [**All**](dx-graphics-hlsl-all.md) o [**cualquier**](dx-graphics-hlsl-any.md) función intrínseca.
+
+Se produce un error en esta operación porque la instrucción If requiere un solo booleano, pero recibe un bool4:
+
+
+```
+if (A4 < B4)
+```
+
+
+
+Estas operaciones se realizan correctamente:
+
+
+```
+if ( any(A4 < B4) )
+if ( all(A4 < B4) )
+```
+
+
+
+## <a name="prefix-or-postfix-operators"></a>Operadores de prefijo o postfijo
+
+Los operadores prefix y postfijo son: + +,--. Los operadores de prefijo cambian el contenido de la variable antes de que se evalúe la expresión. Los operadores de postfijo cambian el contenido de la variable una vez que se evalúa la expresión.
+
+En este caso, un bucle usa el contenido de i para realizar un seguimiento del recuento de bucles.
+
+
+```
+float4 arrayOfFloats[4] = { 1.0f, 2.0f, 3.0f, 4.4f };
+
+for (int i = 0; i<4; )
+{
+    arrayOfFloats[i++] *= 2; 
+}
+```
+
+
+
+Dado que se usa el operador de incremento de postfijo (+ +), arrayOfFloats \[ i \] se multiplica por 2 antes de incrementar. Esto podría reorganizarse ligeramente para usar el operador de incremento de prefijo. Este es más difícil de leer, aunque ambos ejemplos son equivalentes.
+
+
+```
+float4 arrayOfFloats[4] = { 1.0f, 2.0f, 3.0f, 4.4f };
+
+for (int i = 0; i<4; )
+{
+    arrayOfFloats[++i - 1] *= 2; 
+}
+```
+
+
+
+Dado que se usa el operador de prefijo (+ +), arrayOfFloats \[ i + 1-1 \] se multiplica por 2 después de incrementar.
+
+El operador de decremento de prefijo y postfijo de decremento (--) se aplican en la misma secuencia que el operador de incremento. La diferencia es que decremento resta 1 en lugar de agregar 1.
+
+## <a name="structure-operator"></a>Operador de estructura
+
+El operador de selección de miembros de estructura (.) es un punto. Dada esta estructura:
+
+
+```
+struct position
+{
+float4 x;
+float4 y;
+float4 z;
+};
+```
+
+
+
+Se puede leer de la siguiente manera:
+
+
+```
+struct position pos = { 1,2,3 };
+
+float 1D_Float = pos.x
+1D_Float = pos.y
+```
+
+
+
+Cada miembro se puede leer o escribir con el operador de estructura:
+
+
+```
+struct position pos = { 1,2,3 };
+pos.x = 2.0f;
+pos.z = 1.0f;       // z = 1.0f
+pos.z = pos.x      // z = 2.0f
+```
+
+
+
+## <a name="unary-operators"></a>Operadores unarios
+
+Los operadores unarios son:!,-, +
+
+Los operadores unarios operan en un solo operando.
+
+
+```
+bool b = false;
+bool b2 = !b;      // b2 = true
+int i = 2;
+int i2 = -i;       // i2 = -2
+int j = +i2;       // j = +2
+```
+
+
+
+## <a name="operator-precedence"></a>Prioridad de los operadores
+
+Cuando una expresión contiene más de un operador, la precedencia del operador determina el orden de evaluación. La prioridad de operador para HLSL sigue la misma prioridad que C.
+
+## <a name="remarks"></a>Observaciones
+
+Las llaves ( {,} ) inician y finalizan un bloque de instrucciones. Cuando un bloque de instrucciones utiliza una única instrucción, las llaves son opcionales.
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Instrucciones (DirectX HLSL)](dx-graphics-hlsl-statements.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
