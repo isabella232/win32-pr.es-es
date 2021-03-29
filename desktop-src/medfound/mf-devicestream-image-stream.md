@@ -1,0 +1,57 @@
+---
+description: Especifica si una secuencia de un origen de captura de vídeo es una secuencia de imagen fija.
+ms.assetid: 52251A45-3603-41C7-A869-7F6319BD337F
+title: MF_DEVICESTREAM_IMAGE_STREAM atributo (Mfidl. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 382ce587574d6ec46509a460dfb964e23dd416d7
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103810484"
+---
+# <a name="mf_devicestream_image_stream-attribute"></a>\_Atributo de \_ secuencia de imagen MF DEVICESTREAM \_
+
+Especifica si una secuencia de un origen de captura de vídeo es una secuencia de imagen fija.
+
+## <a name="data-type"></a>Tipo de datos
+
+**Bool** almacenado como **UINT32**
+
+## <a name="remarks"></a>Observaciones
+
+Algunas cámaras de vídeo exponen una secuencia de imágenes fijas que produce imágenes de alta resolución. El flujo de imágenes puede generar imágenes sin comprimir o imágenes JPEG. Si la cámara tiene un flujo de imagen, el origen de medios del dispositivo de captura establece este atributo en **true** en el flujo de imagen.
+
+Para obtener este atributo, haga lo siguiente:
+
+1.  Consulte el origen de los medios para la interfaz [**IMFMediaSourceEx**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex) .
+2.  Llame a [**IMFMediaSourceEx:: GetStreamAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes) para obtener un puntero [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) para la secuencia.
+3.  Llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) para obtener el atributo.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
