@@ -1,0 +1,84 @@
+---
+description: Usar componentes no transaccionales en una transacción
+ms.assetid: b83b4bab-1851-48dc-b35a-6467a6dff741
+title: Usar componentes no transaccionales en una transacción
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a75cd8ebc756971a56413e371cf23de2144e5816
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103807892"
+---
+# <a name="using-non-transactional-components-in-a-transaction"></a>Usar componentes no transaccionales en una transacción
+
+A menudo resulta útil colocar componentes no transaccionales en una transacción para aprovechar las ventajas de las [propiedades ACID](acid-properties.md) de las transacciones. Por ejemplo, si tiene componentes heredados no transaccionales que utiliza para actualizar las contraseñas de una red, puede colocar dichos componentes en una transacción para asegurarse de que las actualizaciones de contraseña son coherentes en toda la red.
+
+El *objeto de contexto de transacción* es un objeto genérico que permite a los clientes no transaccionales combinar el trabajo de varios objetos com en una única transacción, sin necesidad de desarrollar un componente nuevo específicamente para ese propósito. A diferencia de una transacción automática, el objeto de contexto de transacción requiere que su cliente confirme o anule explícitamente la transacción.
+
+De forma predeterminada, el valor de atributo de transacción del objeto de contexto de transacción se establece en requerido. COM+ anula la transacción si el cliente libera el objeto de contexto de transacción sin emitir explícitamente una llamada commit o Abort.
+
+En el siguiente ejemplo de Visual Basic se muestra cómo un cliente no transaccional puede crear el trabajo realizado por más de un objeto en una única transacción:
+
+
+```VB
+Dim objTxCtx As TransactionContext
+Dim objCat As MyDLL.Ccat  ' Ccat is a user-defined component.
+Dim objDog As MyDLL.Cdog  ' Cdog is a user-defined component.
+
+' Get TransactionContext object.
+Set objTxCtx = _
+  CreateObject ("TxCtx.TransactionContext")
+
+' Create instances of Cat and Dog.
+Set objCat = _ 
+  objTxCtx.CreateInstance ("MyDLL.Ccat")
+Set objDog = _ 
+  objTxCtx.CreateInstance ("MyDLL.Cdog")
+
+' Both objects do work.
+objDog.Bark
+objCat.Hiss
+
+' Commit the transaction.
+objTxCtx.Commit
+
+```
+
+
+
+## <a name="limitations-of-the-transaction-context-object"></a>Limitaciones del objeto de contexto de transacción
+
+A continuación se indican algunas limitaciones importantes del objeto de contexto de transacción:
+
+-   Cuando se usa un objeto de contexto de transacción, la lógica de aplicación que combina el trabajo de varios objetos en una única transacción está ligada a una implementación de cliente no transaccional específica y se pierden algunas ventajas del uso de componentes COM. Entre las ventajas perdidas se incluyen las siguientes:
+    -   Capacidad de reutilizar la lógica de la aplicación como parte de una transacción incluso más grande
+    -   Imposición de seguridad declarativa
+    -   Flexibilidad para ejecutar la lógica de forma remota desde el cliente
+-   El objeto de contexto de transacción se ejecuta en proceso con el cliente no transaccional, lo que significa que COM+ debe estar disponible en el equipo cliente no transaccional. Esto podría no ser un problema, por ejemplo, cuando se utiliza el objeto de contexto de transacción de una página de Active Server páginas (ASP) que se ejecuta en el mismo servidor que COM+.
+-   No se obtiene un contexto para el cliente no transaccional cuando se crea un objeto de contexto de transacción. El trabajo transaccional solo se puede realizar indirectamente, a través de objetos COM creados mediante el objeto de contexto de transacción. En concreto, el cliente no transaccional no puede utilizar dispensadores de recursos COM+ (como ODBC) y tener el trabajo incluido en la transacción. Por ejemplo, los desarrolladores pueden estar familiarizados con la sintaxis siguiente para realizar el trabajo transaccional en sistemas de bases de datos relacionales:
+
+    ``` syntax
+    BEGIN TRANSACTION
+      DoWork
+    COMMIT TRANSACTION
+    ```
+
+    El uso del objeto de contexto de transacción de una manera similar no produce el resultado deseado:
+
+    ``` syntax
+    Set objTxCtx = CreateObject ("TxCtx.TransactionContext")
+      DoWork
+      objTxCtx.Commit
+    Set objTxCtx = Nothing
+    ```
+
+    La llamada a mi trabajo en este ejemplo no se da de alta en una transacción. En su lugar, debe crear un componente COM que llame a trabajo, crear una instancia de objeto de ese componente mediante el objeto de contexto de transacción y, a continuación, llamar a ese objeto desde el cliente no transaccional para que el trabajo forme parte de la transacción controlada por el cliente.
+
+ 
+
+ 
+
+
+

@@ -1,0 +1,109 @@
+---
+description: Libera el identificador de un proveedor de servicios criptográficos (CSP) y, opcionalmente, elimina el contenedor temporal creado por la función GetCryptProvFromCert.
+ms.assetid: 4462eef2-7056-4e48-aa96-c46f29b701d6
+title: FreeCryptProvFromCert función)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- FreeCryptProvFromCert
+api_type:
+- DllExport
+api_location:
+- Mssign32.dll
+ms.openlocfilehash: 8201de475a4224aea58267405ccde244e56d59f7
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103912041"
+---
+# <a name="freecryptprovfromcert-function"></a>FreeCryptProvFromCert función)
+
+> [!IMPORTANT]
+> Esta API está en desuso. Microsoft puede quitar esta API en futuras versiones.
+
+ 
+
+La función **FreeCryptProvFromCert** libera el identificador de un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) y, opcionalmente, elimina el contenedor temporal creado por la función [**GetCryptProvFromCert**](getcryptprovfromcert.md) .
+
+> [!Note]  
+> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
+
+ 
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+void WINAPI FreeCryptProvFromCert(
+  _In_     BOOL       fAcquired,
+  _In_     HCRYPTPROV hProv,
+  _In_opt_ LPWSTR     pwszCapiProvider,
+  _In_     DWORD      dwProviderType,
+  _In_opt_ LPWSTR     pwszTmpContainer
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*fAcquired* \[ de\]
+</dt> <dd>
+
+Valor que especifica si el identificador del proveedor se adquirió del [*certificado*](../secgloss/c-gly.md).
+
+</dd> <dt>
+
+*hProv* \[ de\]
+</dt> <dd>
+
+Puntero a una estructura [**HCRYPTPROV**](hcryptprov.md) para el CSP.
+
+</dd> <dt>
+
+*pwszCapiProvider* \[ en, opcional\]
+</dt> <dd>
+
+Puntero a una cadena terminada en null para el nombre del proveedor.
+
+</dd> <dt>
+
+*dwProviderType* \[ de\]
+</dt> <dd>
+
+Especifica el tipo de CSP. Puede ser cero o uno de los [tipos de proveedor de servicios criptográficos](cryptographic-provider-types.md). Si este miembro es cero, el contenedor de claves es uno de los proveedores de almacenamiento de claves CNG.
+
+</dd> <dt>
+
+*pwszTmpContainer* \[ en, opcional\]
+</dt> <dd>
+
+Un puntero a una cadena terminada en null para el nombre del contenedor de claves temporal.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Esta función no devuelve ningún valor.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Archivo DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
+
+
+
+ 
+
+ 

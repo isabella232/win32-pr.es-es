@@ -1,0 +1,91 @@
+---
+description: Describe cómo escribir el contenido de un OM XPS en un programa en un archivo de documento XPS.
+ms.assetid: 8bee8059-b901-4a99-a7e4-60dad831c239
+title: Escribir un OM XPS en un documento XPS
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 811f773394ee9dbbcf77dc75d1429322bb733631
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104277674"
+---
+# <a name="write-an-xps-om-to-an-xps-document"></a>Escribir un OM XPS en un documento XPS
+
+Describe cómo escribir el contenido de un OM XPS en un programa en un archivo de documento XPS.
+
+Si un programa tiene un OM XPS que contiene un documento completo, el programa puede escribir el OM XPS en un archivo como un documento XPS, llamando al método [**WriteToFile**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-writetofile) de la interfaz [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) .
+
+Antes de usar estos ejemplos de código en un programa, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+
+## <a name="writing-a-complete-xps-om-to-an-xps-document"></a>Escribir un OM XPS completo en un documento XPS
+
+Después de establecer el contenido de un OM XPS, puede guardar el OM XPS en un archivo como un documento XPS, llamando al método [**WriteToFile**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-writetofile) de la interfaz [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) .
+
+
+```C++
+    HRESULT hr = S_OK;
+
+    hr = xpsPackage->WriteToFile(
+        fileName,
+        NULL,                    // LPSECURITY_ATTRIBUTES
+        FILE_ATTRIBUTE_NORMAL,
+        FALSE                    // Optimize Markup Size
+        );
+
+```
+
+
+
+> [!Note]  
+> Al escribir un OM XPS en un archivo o una secuencia, no se crea automáticamente una miniatura para el documento XPS. Para crear una miniatura del documento XPS, use la interfaz [**IXpsOMThumbnailGenerator**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomthumbnailgenerator) .
+
+ 
+
+## <a name="incrementally-writing-an-xps-document"></a>Escritura incremental de un documento XPS
+
+La interfaz [**IXpsOMPackageWriter**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter) se puede utilizar para escribir los elementos de un documento XPS de forma incremental. por ejemplo, cuando los elementos del documento se crean o procesan en secuencia.
+
+> [!Note]  
+> Al escribir un OM XPS en un archivo o una secuencia, no se crea automáticamente una miniatura para el documento XPS. Para crear una miniatura del documento XPS, use la interfaz [**IXpsOMThumbnailGenerator**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomthumbnailgenerator) .
+
+ 
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+**Pasos siguientes**
+</dt> <dt>
+
+[Imprimir un OM XPS](print-an-xps-om.md)
+</dt> <dt>
+
+**Se usa en esta sección**
+</dt> <dt>
+
+[**IOpcPartUri**](/previous-versions/windows/desktop/api/msopc/nn-msopc-iopcparturi)
+</dt> <dt>
+
+[**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage)
+</dt> <dt>
+
+[**IXpsOMThumbnailGenerator**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomthumbnailgenerator)
+</dt> <dt>
+
+**Para obtener más información**
+</dt> <dt>
+
+[Inicializar un OM XPS](xps-object-model-initialization.md)
+</dt> <dt>
+
+[Referencia de la API de documentos XPS](xps-programming-reference.md)
+</dt> <dt>
+
+[XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)
+</dt> </dl>
+
+ 
+
+ 
