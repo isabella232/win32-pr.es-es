@@ -1,0 +1,172 @@
+---
+title: Cuadros de búsqueda
+description: Con un cuadro de búsqueda, los usuarios pueden localizar rápidamente objetos o texto específicos dentro de un conjunto grande de datos mediante el filtrado o el resaltado de las coincidencias.
+ms.assetid: e2d77b36-e001-403c-9b66-2d136c394a24
+ms.topic: article
+ms.date: 10/20/2020
+ms.openlocfilehash: e9d1fca8fdb96b17098cee79fd5b62ecd7ab7531
+ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "104003292"
+---
+# <a name="search-boxes"></a><span data-ttu-id="4a725-103">Cuadros de búsqueda</span><span class="sxs-lookup"><span data-stu-id="4a725-103">Search Boxes</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="4a725-104">Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows.</span><span class="sxs-lookup"><span data-stu-id="4a725-104">This design guide was created for Windows 7 and has not been updated for newer versions of Windows.</span></span> <span data-ttu-id="4a725-105">Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).</span><span class="sxs-lookup"><span data-stu-id="4a725-105">Much of the guidance still applies in principle, but the presentation and examples do not reflect our [current design guidance](/windows/uwp/design/).</span></span>
+
+<span data-ttu-id="4a725-106">Con un cuadro de búsqueda, los usuarios pueden localizar rápidamente objetos o texto específicos dentro de un conjunto grande de datos mediante el filtrado o el resaltado de las coincidencias.</span><span class="sxs-lookup"><span data-stu-id="4a725-106">With a Search box, users can quickly locate specific objects or text within a large set of data by filtering or highlighting matches.</span></span> <span data-ttu-id="4a725-107">No hay ningún control de búsqueda estándar, pero debe procurar que las características de búsqueda de su programa sean coherentes con las de Windows.</span><span class="sxs-lookup"><span data-stu-id="4a725-107">There is no standard search control, but you should strive to make your program's search features consistent with those of Windows.</span></span>
+
+<span data-ttu-id="4a725-108">Hay dos tipos de búsquedas:</span><span class="sxs-lookup"><span data-stu-id="4a725-108">There are two types of searches:</span></span>
+
+-   <span data-ttu-id="4a725-109">**Búsqueda instantánea**, donde los resultados se muestran inmediatamente a medida que el usuario escribe.</span><span class="sxs-lookup"><span data-stu-id="4a725-109">**Instant search**, where the results are displayed immediately as the user types.</span></span> <span data-ttu-id="4a725-110">No es necesario hacer clic en ningún botón, por lo que el símbolo de búsqueda de lupa se muestra como un gráfico, no como un botón.</span><span class="sxs-lookup"><span data-stu-id="4a725-110">No button needs to be clicked, so the magnifying glass search symbol is shown as a graphic, not a button.</span></span>
+
+    ![Captura de pantalla que muestra un cuadro de búsqueda instantánea con una llamada "prompt" que señala al cuadro de búsqueda y una llamada de "buscar símbolo" que apunta al gráfico de lupa.](images/ctrl-search-boxes-image1.png)
+
+    <span data-ttu-id="4a725-112">Un cuadro de búsqueda típico con búsqueda instantánea.</span><span class="sxs-lookup"><span data-stu-id="4a725-112">A typical Search box using Instant search.</span></span> <span data-ttu-id="4a725-113">La búsqueda se ejecuta automáticamente en cada pulsación de tecla.</span><span class="sxs-lookup"><span data-stu-id="4a725-113">Search is automatically executed on every keystroke.</span></span>
+
+-   <span data-ttu-id="4a725-114">**Búsqueda normal**, donde se realiza una búsqueda cuando el usuario hace clic en el botón Buscar.</span><span class="sxs-lookup"><span data-stu-id="4a725-114">**Regular search**, where a search is performed when the user clicks the search button.</span></span> <span data-ttu-id="4a725-115">El símbolo de búsqueda de lupa se muestra en un botón.</span><span class="sxs-lookup"><span data-stu-id="4a725-115">The magnifying glass search symbol is shown on a button.</span></span>
+
+    ![<span data-ttu-id="4a725-116">captura de pantalla de un cuadro de búsqueda normal</span><span class="sxs-lookup"><span data-stu-id="4a725-116">screen shot of a regular search box</span></span> ](images/ctrl-search-boxes-image2.png)
+
+    <span data-ttu-id="4a725-117">Un cuadro de búsqueda típico mediante la búsqueda normal.</span><span class="sxs-lookup"><span data-stu-id="4a725-117">A typical Search box using regular search.</span></span> <span data-ttu-id="4a725-118">Los usuarios hacen clic en un botón para realizar la búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-118">Users click a button to perform the search.</span></span>
+
+    <span data-ttu-id="4a725-119">Puede proporcionar uno o ambos tipos de opciones de búsqueda para los usuarios.</span><span class="sxs-lookup"><span data-stu-id="4a725-119">You can provide either or both kinds of search options for your users.</span></span>
+
+## <a name="is-this-the-right-control"></a><span data-ttu-id="4a725-120">¿Es este el control adecuado?</span><span class="sxs-lookup"><span data-stu-id="4a725-120">Is this the right control?</span></span>
+
+<span data-ttu-id="4a725-121">Para decidirte, intenta responder a estas preguntas:</span><span class="sxs-lookup"><span data-stu-id="4a725-121">To decide, consider these questions:</span></span>
+
+-   <span data-ttu-id="4a725-122">**¿Son difíciles de encontrar los objetos específicos?**</span><span class="sxs-lookup"><span data-stu-id="4a725-122">**Are specific objects difficult to find?**</span></span> <span data-ttu-id="4a725-123">Esto puede suceder cuando:</span><span class="sxs-lookup"><span data-stu-id="4a725-123">This can happen when:</span></span>
+    -   <span data-ttu-id="4a725-124">Hay muchos objetos.</span><span class="sxs-lookup"><span data-stu-id="4a725-124">There are many objects.</span></span>
+    -   <span data-ttu-id="4a725-125">Los objetos no se encuentran en una sola ubicación.</span><span class="sxs-lookup"><span data-stu-id="4a725-125">The objects aren't located in a single location.</span></span> <span data-ttu-id="4a725-126">La búsqueda es especialmente útil para buscar objetos en árboles.</span><span class="sxs-lookup"><span data-stu-id="4a725-126">Search is especially useful for finding objects in trees.</span></span>
+    -   <span data-ttu-id="4a725-127">Los datos de búsqueda son difíciles de encontrar (por ejemplo, metadatos).</span><span class="sxs-lookup"><span data-stu-id="4a725-127">The search data is difficult to find (for example, metadata).</span></span>
+-   <span data-ttu-id="4a725-128">**¿Los usuarios necesitan encontrar texto específico dentro de los documentos?**</span><span class="sxs-lookup"><span data-stu-id="4a725-128">**Do users need to find specific text within documents?**</span></span>
+-   <span data-ttu-id="4a725-129">**¿La característica devuelve los resultados de búsqueda relevantes en un plazo de cinco segundos?**</span><span class="sxs-lookup"><span data-stu-id="4a725-129">**Does your feature return relevant search results within five seconds?**</span></span> <span data-ttu-id="4a725-130">Si no es así, puede proporcionar una característica de búsqueda, pero usar un diseño alternativo que proporcione comentarios visibles para adaptarse a las búsquedas de larga duración, como un cuadro de diálogo de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-130">If not, you can provide a search feature, but use an alternative design that gives visible feedback to accommodate long-running searches, such as a search dialog box.</span></span>
+
+## <a name="design-concepts"></a><span data-ttu-id="4a725-131">Conceptos de diseño</span><span class="sxs-lookup"><span data-stu-id="4a725-131">Design concepts</span></span>
+
+<span data-ttu-id="4a725-132">La búsqueda es un primer paso fundamental en muchos escenarios: los usuarios deben buscar objetos para poder usarlos.</span><span class="sxs-lookup"><span data-stu-id="4a725-132">Searching is a crucial first step in many scenarios: Users must find objects before they can use them.</span></span> <span data-ttu-id="4a725-133">Los usuarios están guardando más objetos en discos duros cada vez más grandes, pero la exploración de objetos no se escala bien.</span><span class="sxs-lookup"><span data-stu-id="4a725-133">Users are saving more and more objects on increasingly larger hard disks, but browsing for objects doesn't scale well.</span></span> <span data-ttu-id="4a725-134">La búsqueda debe ser una parte sencilla, coherente y confiable de la experiencia del usuario.</span><span class="sxs-lookup"><span data-stu-id="4a725-134">Search must be a simple, consistent, reliable part of the user experience.</span></span>
+
+<span data-ttu-id="4a725-135">Cuadros de búsqueda en Windows:</span><span class="sxs-lookup"><span data-stu-id="4a725-135">Search boxes in Windows:</span></span>
+
+-   <span data-ttu-id="4a725-136">Forman parte de todas las ventanas del explorador, por lo que son fáciles de encontrar y reconocer.</span><span class="sxs-lookup"><span data-stu-id="4a725-136">Are part of all Explorer windows, so they are easy to find and recognize.</span></span>
+-   <span data-ttu-id="4a725-137">Tienen una apariencia y un comportamiento coherentes.</span><span class="sxs-lookup"><span data-stu-id="4a725-137">Have consistent appearance and behavior.</span></span>
+-   <span data-ttu-id="4a725-138">Son eficientes y rápidos, lo que da lugar a resultados instantáneos en el modo de búsqueda instantánea.</span><span class="sxs-lookup"><span data-stu-id="4a725-138">Are efficient and fast, giving instant results in Instant search mode.</span></span>
+
+<span data-ttu-id="4a725-139">Un cuadro de búsqueda se usa en Windows en estos lugares:</span><span class="sxs-lookup"><span data-stu-id="4a725-139">A Search box is used in Windows in these places:</span></span>
+
+-   <span data-ttu-id="4a725-140">Exploradores</span><span class="sxs-lookup"><span data-stu-id="4a725-140">Explorers</span></span>
+-   <span data-ttu-id="4a725-141">Experiencias (Microsoft Windows Media Player, Galería fotográfica de Windows, Windows Internet Explorer)</span><span class="sxs-lookup"><span data-stu-id="4a725-141">Experiences (Microsoft Windows Media Player, Windows Photo Gallery, Windows Internet Explorer)</span></span>
+-   <span data-ttu-id="4a725-142">Menú Inicio (para buscar programas y archivos recientes)</span><span class="sxs-lookup"><span data-stu-id="4a725-142">Start menu (to find programs and recent files)</span></span>
+-   <span data-ttu-id="4a725-143">Página principal del panel de control (para buscar elementos y tareas del panel de control)</span><span class="sxs-lookup"><span data-stu-id="4a725-143">Control Panel home page (to find control panel items and tasks)</span></span>
+-   <span data-ttu-id="4a725-144">Ayuda (para buscar temas de ayuda relevantes)</span><span class="sxs-lookup"><span data-stu-id="4a725-144">Help (to find relevant Help topics)</span></span>
+
+### <a name="look-and-feel"></a><span data-ttu-id="4a725-145">Apariencia y funcionamiento</span><span class="sxs-lookup"><span data-stu-id="4a725-145">Look and feel</span></span>
+
+<span data-ttu-id="4a725-146">La sensación de buscar en Windows se ha mejorado significativamente mediante la compatibilidad con la búsqueda instantánea.</span><span class="sxs-lookup"><span data-stu-id="4a725-146">The feel of Search in Windows is significantly enhanced by supporting Instant search.</span></span> <span data-ttu-id="4a725-147">Tener resultados instantáneos hace que Windows sea más eficaz y directo.</span><span class="sxs-lookup"><span data-stu-id="4a725-147">Having instant results makes Windows feel more powerful and direct.</span></span>
+
+<span data-ttu-id="4a725-148">En el explorador de Windows y las ventanas de aplicación, la búsqueda se encuentra en la esquina superior derecha si se trata de un punto de entrada adicional.</span><span class="sxs-lookup"><span data-stu-id="4a725-148">In Windows Explorer and application windows, Search is located in the upper-right corner if it is a supplemental entry point.</span></span> <span data-ttu-id="4a725-149">En este caso, los usuarios buscan un mecanismo de búsqueda cuando no encuentran lo que buscan en la ventana.</span><span class="sxs-lookup"><span data-stu-id="4a725-149">In this case, users look for a search mechanism when they don't find what they are looking for in the window.</span></span> <span data-ttu-id="4a725-150">Sin embargo, si la búsqueda es el punto de entrada principal, se centra en la parte superior de la ventana.</span><span class="sxs-lookup"><span data-stu-id="4a725-150">However, if Search is the primary entry point, it is centered at the top of the window.</span></span>
+
+<span data-ttu-id="4a725-151">El botón buscar está conectado visualmente a un cuadro de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-151">The Search button is visually connected to a Search box.</span></span> <span data-ttu-id="4a725-152">Para minimizar el espacio, se usa un [símbolo del sistema](ctrl-text-boxes.md) opcional dentro de un cuadro de búsqueda en lugar de una etiqueta.</span><span class="sxs-lookup"><span data-stu-id="4a725-152">To minimize space, an optional [prompt](ctrl-text-boxes.md) is used inside a Search box instead of a label.</span></span> <span data-ttu-id="4a725-153">El mensaje puede ser una instrucción (por ejemplo, escribir para buscar) o indicar el ámbito de la búsqueda (por ejemplo, buscar imágenes).</span><span class="sxs-lookup"><span data-stu-id="4a725-153">The prompt may be an instruction (for example, Type to search) or indicate the scope of the search (for example, Search for pictures).</span></span>
+
+![<span data-ttu-id="4a725-154">captura de pantalla de un cuadro de búsqueda instantánea</span><span class="sxs-lookup"><span data-stu-id="4a725-154">screen shot of an instant search box</span></span> ](images/ctrl-search-boxes-image3.png)
+
+<span data-ttu-id="4a725-155">Sin etiquetas y botones independientes, la búsqueda instantánea en Windows tiene una apariencia ligera.</span><span class="sxs-lookup"><span data-stu-id="4a725-155">Without labels and separate buttons, Instant search in Windows has a lightweight look.</span></span>
+
+<span data-ttu-id="4a725-156">Si realiza una búsqueda correcta, se crea una página virtual de los resultados de la búsqueda y se agrega a la pila de retroceso y a la barra de direcciones.</span><span class="sxs-lookup"><span data-stu-id="4a725-156">Performing a successful search creates a virtual page of the search results and adds it to the Back stack and Address bar.</span></span> <span data-ttu-id="4a725-157">Los usuarios tienen varias formas de restaurar la página original y borrar un cuadro de búsqueda, como hacer clic en atrás, hacer clic en la página original en la barra de direcciones, presionar ESC o borrar el cuadro de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-157">Users have several ways to restore the original page and clear a Search box, including clicking Back, clicking the original page in the Address bar, pressing Esc, or clearing the Search box.</span></span>
+
+<span data-ttu-id="4a725-158">Los usuarios también pueden borrar simplemente el cuadro de búsqueda sin restaurar una página anterior de resultados.</span><span class="sxs-lookup"><span data-stu-id="4a725-158">Users can also simply clear the Search box without restoring a previous page of results.</span></span> <span data-ttu-id="4a725-159">En el modo de búsqueda instantánea, aparece un botón Borrar cuando el usuario comienza a escribir. una "x" reemplaza el símbolo de búsqueda de lupa.</span><span class="sxs-lookup"><span data-stu-id="4a725-159">In Instant search mode, a clear button appears after the user starts typing; an "x" replaces the magnifying glass search symbol.</span></span> <span data-ttu-id="4a725-160">Al mantener el mouse, la "x" obtiene un aspecto del botón y se puede hacer clic en él.</span><span class="sxs-lookup"><span data-stu-id="4a725-160">On hover, the "x" gets a button look and can be clicked.</span></span>
+
+![<span data-ttu-id="4a725-161">captura de pantalla de un cuadro de búsqueda con un icono ' x '</span><span class="sxs-lookup"><span data-stu-id="4a725-161">screen shot of a search box with an 'x' icon</span></span> ](images/ctrl-search-boxes-image4.png)
+
+<span data-ttu-id="4a725-162">El usuario puede borrar el cuadro de búsqueda si hace clic en "x" en el extremo derecho del control.</span><span class="sxs-lookup"><span data-stu-id="4a725-162">The user can clear the Search box by clicking "x" at the right end of the control.</span></span>
+
+<span data-ttu-id="4a725-163">En el modo de búsqueda normal, el botón Borrar es opcional.</span><span class="sxs-lookup"><span data-stu-id="4a725-163">In regular search mode, the clear button is optional.</span></span> <span data-ttu-id="4a725-164">Los usuarios pueden resultarle útil, por ejemplo, si una búsqueda tarda mucho tiempo en completarse.</span><span class="sxs-lookup"><span data-stu-id="4a725-164">Users may find it useful, for example, if a search is taking a long time to complete.</span></span> <span data-ttu-id="4a725-165">Los usuarios pueden hacer clic en la "x" para detener la búsqueda en curso.</span><span class="sxs-lookup"><span data-stu-id="4a725-165">Users can click the "x" to stop the search in progress.</span></span> <span data-ttu-id="4a725-166">Si ya se ha completado una búsqueda, los usuarios pueden hacer clic en la "x" para borrar el cuadro de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-166">If a search has already completed, users can click the "x" to clear the Search box.</span></span>
+
+## <a name="guidelines"></a><span data-ttu-id="4a725-167">Directrices</span><span class="sxs-lookup"><span data-stu-id="4a725-167">Guidelines</span></span>
+
+### <a name="location"></a><span data-ttu-id="4a725-168">Location</span><span class="sxs-lookup"><span data-stu-id="4a725-168">Location</span></span>
+
+-   <span data-ttu-id="4a725-169">En las ventanas de la aplicación, busque búsqueda en la esquina superior derecha.</span><span class="sxs-lookup"><span data-stu-id="4a725-169">For application windows, locate Search in the upper-right corner.</span></span>
+-   <span data-ttu-id="4a725-170">En ventanas emergentes, busque buscar siempre que sea más sensato y práctico.</span><span class="sxs-lookup"><span data-stu-id="4a725-170">For popup windows, locate Search wherever is most sensible and convenient.</span></span>
+-   <span data-ttu-id="4a725-171">**Excepción:** Si la búsqueda suele ser la primera cosa que realizan los usuarios en una ventana (el punto de entrada principal), se centra en la parte superior de la ventana.</span><span class="sxs-lookup"><span data-stu-id="4a725-171">**Exception:** If Search is usually the first thing users do in a window (the primary entry point), center it at the top of the window.</span></span>
+
+### <a name="look"></a><span data-ttu-id="4a725-172">Vere</span><span class="sxs-lookup"><span data-stu-id="4a725-172">Look</span></span>
+
+-   <span data-ttu-id="4a725-173">Use los gráficos del botón de búsqueda estándar.</span><span class="sxs-lookup"><span data-stu-id="4a725-173">Use the standard search button graphics.</span></span> <span data-ttu-id="4a725-174">Hay tres versiones:</span><span class="sxs-lookup"><span data-stu-id="4a725-174">There are three versions:</span></span>
+    -   <span data-ttu-id="4a725-175">**Solo símbolo de búsqueda de lupa (no hay ningún botón al mantener el mouse).**</span><span class="sxs-lookup"><span data-stu-id="4a725-175">**Magnifying glass search symbol only (no button on hover).**</span></span> <span data-ttu-id="4a725-176">Se usa para la búsqueda instantánea.</span><span class="sxs-lookup"><span data-stu-id="4a725-176">Use for Instant search.</span></span>
+    -   <span data-ttu-id="4a725-177">**Símbolo de búsqueda de lupa con el botón.**</span><span class="sxs-lookup"><span data-stu-id="4a725-177">**Magnifying glass search symbol with button.**</span></span> <span data-ttu-id="4a725-178">Use cuando sea necesario hacer clic en el botón para iniciar la búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-178">Use when button needs to be clicked to start the search.</span></span>
+    -   <span data-ttu-id="4a725-179">**Símbolo de búsqueda de lupa con el botón y la flecha desplegable.**</span><span class="sxs-lookup"><span data-stu-id="4a725-179">**Magnifying glass search symbol with button and drop-down arrow.**</span></span> <span data-ttu-id="4a725-180">Agregue una flecha desplegable cuando los usuarios puedan cambiar el ámbito o cuando haya otras opciones de configuración disponibles.</span><span class="sxs-lookup"><span data-stu-id="4a725-180">Add a drop-down arrow when users can change the scope or when other settings are available.</span></span>
+        -   <span data-ttu-id="4a725-181">En el caso de la búsqueda instantánea, use solo una flecha desplegable y muestre un botón al mantener el mouse.</span><span class="sxs-lookup"><span data-stu-id="4a725-181">For Instant search, use a drop-down arrow only, and show a button on hover.</span></span>
+        -   <span data-ttu-id="4a725-182">En el caso de la búsqueda normal, muestre la flecha desplegable de un botón.</span><span class="sxs-lookup"><span data-stu-id="4a725-182">For regular search, show the drop-down arrow on a button.</span></span>
+
+![<span data-ttu-id="4a725-183">figura de cuadros de búsqueda instantánea en diferentes Estados</span><span class="sxs-lookup"><span data-stu-id="4a725-183">figure of instant search boxes in different states</span></span> ](images/ctrl-search-boxes-image5.png)
+
+<span data-ttu-id="4a725-184">Especificaciones visuales para la búsqueda instantánea.</span><span class="sxs-lookup"><span data-stu-id="4a725-184">Visual specifications for Instant search.</span></span>
+
+![<span data-ttu-id="4a725-185">figura de cuadros de búsqueda normales en diferentes Estados</span><span class="sxs-lookup"><span data-stu-id="4a725-185">figure of regular search boxes in different states</span></span> ](images/ctrl-search-boxes-image6.png)
+
+<span data-ttu-id="4a725-186">Especificaciones visuales para la búsqueda normal.</span><span class="sxs-lookup"><span data-stu-id="4a725-186">Visual specifications for regular search.</span></span>
+
+-   <span data-ttu-id="4a725-187">No use una etiqueta; en su lugar, use un símbolo del sistema opcional.</span><span class="sxs-lookup"><span data-stu-id="4a725-187">Don't use a label; use an optional prompt instead.</span></span> <span data-ttu-id="4a725-188">Si los usuarios tienden a suponer que la búsqueda es una búsqueda de archivos genérica, utilice el símbolo del sistema para dar el ámbito.</span><span class="sxs-lookup"><span data-stu-id="4a725-188">If users tend to assume that the search is a generic file search, use the prompt to give the scope.</span></span> <span data-ttu-id="4a725-189">De lo contrario, utilice el tipo para buscar o una frase similar y concisa.</span><span class="sxs-lookup"><span data-stu-id="4a725-189">Otherwise, use Type to search or a similar, concise phrase.</span></span>
+
+    ![<span data-ttu-id="4a725-190">captura de pantalla del símbolo "escribir en la búsqueda"</span><span class="sxs-lookup"><span data-stu-id="4a725-190">screen shot of 'type to search' prompt</span></span> ](images/ctrl-search-boxes-image7.png)
+
+    ![<span data-ttu-id="4a725-191">captura de pantalla del símbolo del sistema "Buscar todos los gadgets"</span><span class="sxs-lookup"><span data-stu-id="4a725-191">screen shot of 'search all gadgets' prompt</span></span> ](images/ctrl-search-boxes-image8.png)
+
+    <span data-ttu-id="4a725-192">En estos ejemplos, los mensajes de texto breves ayudan a los usuarios a trabajar con la búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-192">In these examples, brief textual prompts help users work with Search.</span></span>
+
+### <a name="interaction"></a><span data-ttu-id="4a725-193">Interacción</span><span class="sxs-lookup"><span data-stu-id="4a725-193">Interaction</span></span>
+
+-   <span data-ttu-id="4a725-194">**En el foco de entrada, seleccione automáticamente cualquier texto escrito anteriormente.**</span><span class="sxs-lookup"><span data-stu-id="4a725-194">**On input focus, automatically select any previously entered text.**</span></span> <span data-ttu-id="4a725-195">Esto permite a los usuarios escribir una nueva búsqueda escribiendo o para modificar la búsqueda anterior colocando el símbolo de intercalación usando las teclas de dirección.</span><span class="sxs-lookup"><span data-stu-id="4a725-195">Doing so allows users to enter a new search by typing, or to modify the previous search by positioning the caret using the arrow keys.</span></span>
+
+    ![<span data-ttu-id="4a725-196">captura de pantalla del cuadro de búsqueda con texto resaltado</span><span class="sxs-lookup"><span data-stu-id="4a725-196">screen shot of search box with highlighted text</span></span> ](images/ctrl-search-boxes-image9.png)
+
+    <span data-ttu-id="4a725-197">En este ejemplo, el texto escrito anteriormente se selecciona en el foco de entrada.</span><span class="sxs-lookup"><span data-stu-id="4a725-197">In this example, previously entered text is selected on input focus.</span></span>
+
+-   <span data-ttu-id="4a725-198">**Asigne el método abreviado de teclado para el cuadro de búsqueda a Ctrl + E.**</span><span class="sxs-lookup"><span data-stu-id="4a725-198">**Assign the keyboard shortcut for the Search box to be Ctrl+E.**</span></span>
+
+### <a name="functionality"></a><span data-ttu-id="4a725-199">Funcionalidad</span><span class="sxs-lookup"><span data-stu-id="4a725-199">Functionality</span></span>
+
+-   <span data-ttu-id="4a725-200">**Permita la búsqueda instantánea siempre que sea posible.**</span><span class="sxs-lookup"><span data-stu-id="4a725-200">**Support Instant search whenever possible.**</span></span> <span data-ttu-id="4a725-201">Proporcione búsquedas normales e instantáneas si hay escenarios en los que la búsqueda regular merece el tiempo de espera adicional.</span><span class="sxs-lookup"><span data-stu-id="4a725-201">Provide both regular and Instant searches if there are scenarios where regular searching is worth the extra wait time.</span></span>
+-   <span data-ttu-id="4a725-202">Las búsquedas normales deben devolver resultados relevantes en un plazo de cinco segundos y la búsqueda instantánea debe devolver los resultados en dos segundos.</span><span class="sxs-lookup"><span data-stu-id="4a725-202">Regular searches must return relevant results within five seconds and Instant search must return results within two seconds.</span></span> <span data-ttu-id="4a725-203">Después de este punto, es posible que la búsqueda continúe rellenando los resultados menos relevantes a lo largo del tiempo, siempre y cuando el programa responda y los usuarios puedan realizar otras tareas.</span><span class="sxs-lookup"><span data-stu-id="4a725-203">After this point, Search may continue to fill in less relevant results over time as long as the program is responsive and users can perform other tasks.</span></span> <span data-ttu-id="4a725-204">Es posible que tenga que indexar los datos de búsqueda para garantizar esta capacidad de respuesta.</span><span class="sxs-lookup"><span data-stu-id="4a725-204">You may have to index your search data to ensure this responsiveness.</span></span>
+-   <span data-ttu-id="4a725-205">Si proporciona los modos de búsqueda normal e instantánea, los resultados de la búsqueda instantánea deben ser un subconjunto de los resultados de búsqueda normales.</span><span class="sxs-lookup"><span data-stu-id="4a725-205">If you provide both regular and Instant search modes, the Instant search results must be a subset of the regular search results.</span></span>
+-   <span data-ttu-id="4a725-206">Todas las búsquedas están basadas en el prefijo (no hay ninguna subcadena ni búsqueda de sufijos).</span><span class="sxs-lookup"><span data-stu-id="4a725-206">All searching is prefix-based (no substring or suffix searching).</span></span> <span data-ttu-id="4a725-207">El uso de caracteres comodín finales es opcional y no afecta a los resultados.</span><span class="sxs-lookup"><span data-stu-id="4a725-207">The use of trailing wildcard characters is optional and doesn't affect the results.</span></span> <span data-ttu-id="4a725-208">Si se especifican varias palabras, use o busque.</span><span class="sxs-lookup"><span data-stu-id="4a725-208">If multiple words are entered, use OR searching.</span></span>
+-   <span data-ttu-id="4a725-209">Una búsqueda correcta agrega una página virtual con los resultados de la búsqueda a la pila de retroceso y a la barra de direcciones.</span><span class="sxs-lookup"><span data-stu-id="4a725-209">A successful search adds a virtual page with the search results to the Back stack and Address bar.</span></span> <span data-ttu-id="4a725-210">Varias búsquedas dan como resultado una sola página virtual, por lo que si hace clic en atrás siempre se devuelve la página original.</span><span class="sxs-lookup"><span data-stu-id="4a725-210">Multiple searches result in a single virtual page, so clicking Back always returns the original page.</span></span>
+-   <span data-ttu-id="4a725-211">Si es necesario para la escala, clasifique los resultados de la búsqueda por relevancia.</span><span class="sxs-lookup"><span data-stu-id="4a725-211">If necessary for scale, rank the search results by relevance.</span></span>
+-   <span data-ttu-id="4a725-212">Una búsqueda en blanco devuelve la página original.</span><span class="sxs-lookup"><span data-stu-id="4a725-212">A blank search returns the original page.</span></span>
+
+## <a name="recommended-sizing-and-spacing"></a><span data-ttu-id="4a725-213">Ajuste de tamaño y espaciado recomendados</span><span class="sxs-lookup"><span data-stu-id="4a725-213">Recommended sizing and spacing</span></span>
+
+![<span data-ttu-id="4a725-214">figura del tamaño y espaciado del cuadro de búsqueda instantánea</span><span class="sxs-lookup"><span data-stu-id="4a725-214">figure of instant search box sizing and spacing</span></span> ](images/ctrl-search-boxes-image10.png)
+
+<span data-ttu-id="4a725-215">Ajuste de tamaño y espaciado recomendados para la búsqueda instantánea.</span><span class="sxs-lookup"><span data-stu-id="4a725-215">Recommended sizing and spacing for Instant search.</span></span>
+
+![<span data-ttu-id="4a725-216">figura del tamaño y espaciado del cuadro de búsqueda normal</span><span class="sxs-lookup"><span data-stu-id="4a725-216">figure of regular search box sizing and spacing</span></span> ](images/ctrl-search-boxes-image11.png)
+
+<span data-ttu-id="4a725-217">Ajuste de tamaño y espaciado recomendados para la búsqueda normal.</span><span class="sxs-lookup"><span data-stu-id="4a725-217">Recommended sizing and spacing for regular search.</span></span>
+
+## <a name="text"></a><span data-ttu-id="4a725-218">Texto</span><span class="sxs-lookup"><span data-stu-id="4a725-218">Text</span></span>
+
+-   <span data-ttu-id="4a725-219">Para la redacción del mensaje en el cuadro de búsqueda, conviértalo en una instrucción (por ejemplo, escriba para buscar) o indique el ámbito de la búsqueda (por ejemplo, busque imágenes).</span><span class="sxs-lookup"><span data-stu-id="4a725-219">For the wording of the prompt in the Search box, either make it an instruction (for example, Type to search) or indicate the scope of the search (for example, Search for pictures).</span></span>
+-   <span data-ttu-id="4a725-220">El texto del mensaje debe ser breve.</span><span class="sxs-lookup"><span data-stu-id="4a725-220">Prompt text should be brief.</span></span> <span data-ttu-id="4a725-221">Basta con una sola palabra o frase corta.</span><span class="sxs-lookup"><span data-stu-id="4a725-221">A single word or short phrase should suffice.</span></span>
+-   <span data-ttu-id="4a725-222">Use mayúsculas de estilo de frase.</span><span class="sxs-lookup"><span data-stu-id="4a725-222">Use sentence-style capitalization.</span></span>
+-   <span data-ttu-id="4a725-223">No use signos de puntuación o puntos suspensivos de finalización.</span><span class="sxs-lookup"><span data-stu-id="4a725-223">Don't use ending punctuation or ellipsis.</span></span>
+
+## <a name="documentation"></a><span data-ttu-id="4a725-224">Documentación</span><span class="sxs-lookup"><span data-stu-id="4a725-224">Documentation</span></span>
+
+-   <span data-ttu-id="4a725-225">Haga referencia a este control como el cuadro de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="4a725-225">Refer to this control as the Search box.</span></span> <span data-ttu-id="4a725-226">Poner en mayúscula la letra inicial de la primera palabra; No ponga en mayúscula la primera letra de Box.</span><span class="sxs-lookup"><span data-stu-id="4a725-226">Capitalize the initial letter of the first word; don't capitalize the initial letter of box.</span></span>
+-   <span data-ttu-id="4a725-227">Consulte los dos tipos de búsqueda como búsqueda instantánea y búsqueda normal.</span><span class="sxs-lookup"><span data-stu-id="4a725-227">Refer to the two types of search as Instant search and regular search.</span></span> <span data-ttu-id="4a725-228">Poner en mayúscula la primera letra de búsqueda instantánea; No ponga en mayúscula la letra inicial de la búsqueda normal.</span><span class="sxs-lookup"><span data-stu-id="4a725-228">Capitalize the initial letter of Instant search; don't capitalize the initial letter of regular search.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="4a725-229">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4a725-229">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="4a725-230">Glosario</span><span class="sxs-lookup"><span data-stu-id="4a725-230">Glossary</span></span>](glossary.md)
+</dt> </dl>
+
+ 
+
+ 
