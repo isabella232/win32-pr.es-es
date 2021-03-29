@@ -1,0 +1,41 @@
+---
+title: Acerca del administrador de reinicio
+description: La principal razón por la que la instalación de software y las actualizaciones requieren un reinicio del sistema es que algunos de los archivos que se están actualizando se están usando actualmente en una aplicación o servicio en ejecución.
+ms.assetid: 9a1166d7-a0e1-4948-9077-278c84afccac
+keywords:
+- Admin. de reinicio del administrador, acerca de
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: ec1cfd300d554e311ab43cc0a9413514b6b60081
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "103793330"
+---
+# <a name="about-restart-manager"></a><span data-ttu-id="0a606-104">Acerca del administrador de reinicio</span><span class="sxs-lookup"><span data-stu-id="0a606-104">About Restart Manager</span></span>
+
+<span data-ttu-id="0a606-105">La principal razón por la que la instalación de software y las actualizaciones requieren un reinicio del sistema es que algunos de los archivos que se están actualizando se están usando actualmente en una aplicación o servicio en ejecución.</span><span class="sxs-lookup"><span data-stu-id="0a606-105">The primary reason software installation and updates require a system restart is that some of the files that are being updated are currently being used by a running application or service.</span></span> <span data-ttu-id="0a606-106">El administrador de reinicio permite que todos los servicios y aplicaciones críticas se cierren y se reinicien.</span><span class="sxs-lookup"><span data-stu-id="0a606-106">Restart Manager enables all but the critical applications and services to be shut down and restarted .</span></span> <span data-ttu-id="0a606-107">Esto libera los archivos que se están usando y permite que se completen las operaciones de instalación.</span><span class="sxs-lookup"><span data-stu-id="0a606-107">This frees the files that are in use and allows installation operations to complete.</span></span> <span data-ttu-id="0a606-108">También puede eliminar o reducir el número de reinicios del sistema necesarios para completar una instalación o una actualización.</span><span class="sxs-lookup"><span data-stu-id="0a606-108">It can also eliminate or reduce the number of system restarts that are required to complete an installation or update.</span></span>
+
+<span data-ttu-id="0a606-109">El administrador de reinicio detiene las aplicaciones en el orden siguiente y, una vez actualizadas las aplicaciones, reinicia las aplicaciones que se han registrado para el reinicio en orden inverso.</span><span class="sxs-lookup"><span data-stu-id="0a606-109">The Restart Manager stops applications in the following order, and after the applications have been updated, restarts applications that have been registered for restart in the reverse order.</span></span>
+
+1.  <span data-ttu-id="0a606-110">Aplicaciones GUI</span><span class="sxs-lookup"><span data-stu-id="0a606-110">GUI applications</span></span>
+2.  <span data-ttu-id="0a606-111">Aplicaciones de consola</span><span class="sxs-lookup"><span data-stu-id="0a606-111">Console applications</span></span>
+3.  <span data-ttu-id="0a606-112">Servicios de Windows</span><span class="sxs-lookup"><span data-stu-id="0a606-112">Windows services</span></span>
+4.  <span data-ttu-id="0a606-113">Explorador de Windows</span><span class="sxs-lookup"><span data-stu-id="0a606-113">Windows explorer</span></span>
+
+<span data-ttu-id="0a606-114">El administrador de reinicio cierra la aplicación o los servicios solo si el autor de la llamada tiene permiso para hacerlo.</span><span class="sxs-lookup"><span data-stu-id="0a606-114">Restart Manager shuts down application or services only if the caller has permission to do so.</span></span> <span data-ttu-id="0a606-115">Tenga en cuenta que no se admite el apagado entre sesiones.</span><span class="sxs-lookup"><span data-stu-id="0a606-115">Note that shutdown across sessions is not supported.</span></span>
+
+<span data-ttu-id="0a606-116">Las aplicaciones que utilizan la [Windows Installer](/windows/desktop/Msi/windows-installer-portal) versión 4,0 para la instalación y el mantenimiento usan automáticamente el administrador de reinicio para reducir los reinicios del sistema.</span><span class="sxs-lookup"><span data-stu-id="0a606-116">Applications that use the [Windows Installer](/windows/desktop/Msi/windows-installer-portal) version 4.0 for installation and servicing automatically use the Restart Manager to reduce system restarts.</span></span> <span data-ttu-id="0a606-117">Los instaladores personalizados también pueden diseñarse para que llamen a la API del administrador de reinicio para apagar y reiniciar las aplicaciones y los servicios.</span><span class="sxs-lookup"><span data-stu-id="0a606-117">Custom installers can also be designed to call the Restart Manager API to shut down and restart applications and services.</span></span> <span data-ttu-id="0a606-118">En los casos en los que no se puede evitar el reinicio del sistema, los instaladores pueden usar la API del administrador de reinicio para programar los reinicios de forma que se minimice la interrupción del flujo de trabajo del usuario.</span><span class="sxs-lookup"><span data-stu-id="0a606-118">In cases where a system restart is unavoidable, installers can use the Restart Manager API to schedule restarts in such a way that it minimizes the disruption of the user's work flow.</span></span>
+
+<span data-ttu-id="0a606-119">Para obtener información acerca del uso de la API del administrador de reinicio durante la instalación y las actualizaciones, consulte [uso del administrador de reinicio](using-restart-manager.md).</span><span class="sxs-lookup"><span data-stu-id="0a606-119">For information about using the Restart Manager API during installation and updates, see [Using Restart Manager](using-restart-manager.md).</span></span>
+
+<span data-ttu-id="0a606-120">El administrador de reinicio no puede detener y reiniciar los servicios críticos del sistema sin necesidad de reiniciar el sistema.</span><span class="sxs-lookup"><span data-stu-id="0a606-120">Critical system services cannot be stopped and restarted by the Restart Manager without a system restart.</span></span> <span data-ttu-id="0a606-121">Para obtener más información acerca de la identificación de los servicios críticos del sistema, consulte [servicios críticos del sistema](critical-system-services.md).</span><span class="sxs-lookup"><span data-stu-id="0a606-121">For more information about identifying critical system services, see [Critical System Services](critical-system-services.md).</span></span>
+
+<span data-ttu-id="0a606-122">Las aplicaciones y los servicios deben estar preparados para que los cierre el administrador de reinicio y guarden los datos de usuario y la información de estado que se necesitan para un reinicio limpio.</span><span class="sxs-lookup"><span data-stu-id="0a606-122">Your applications and services should be prepared to be shut down by the Restart Manager and save user data and state information that are needed for a clean restart.</span></span> <span data-ttu-id="0a606-123">Para obtener más información sobre cómo preparar las aplicaciones y los servicios para que funcionen con el administrador de reinicio, consulte [directrices para aplicaciones y servicios](guidelines-for-applications-and-services.md).</span><span class="sxs-lookup"><span data-stu-id="0a606-123">For more information about how to prepare your applications and services to work with the Restart Manager, see [Guidelines for Applications and Services](guidelines-for-applications-and-services.md).</span></span>
+
+<span data-ttu-id="0a606-124">Para obtener información de referencia sobre las enumeraciones, estructuras y funciones de la API del administrador de reinicio, consulte la sección [Referencia del administrador de reinicio](restart-manager-reference.md)</span><span class="sxs-lookup"><span data-stu-id="0a606-124">For reference information about the enumerations, structures, and functions of the Restart Manager API, see the [Restart Manager Reference](restart-manager-reference.md) section</span></span>
+
+ 
+
+ 

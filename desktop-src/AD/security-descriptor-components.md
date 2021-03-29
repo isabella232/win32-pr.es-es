@@ -1,0 +1,33 @@
+---
+title: Componentes del descriptor de seguridad
+description: Tras usar el método IADs. Get para recuperar un puntero de interfaz IADsSecurityDescriptor, puede utilizar las propiedades IADsSecurityDescriptor para leer o escribir los componentes del descriptor de seguridad de un objeto de directorio.
+ms.assetid: 35d3d16b-d7fc-4967-ba5c-5a77e058a9ae
+ms.tgt_platform: multiple
+keywords:
+- Componentes del descriptor de seguridad AD
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: ef87b0e23f60fdbb4d0b03b421012d5918ed3c83
+ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "103789466"
+---
+# <a name="security-descriptor-components"></a><span data-ttu-id="a804a-104">Componentes del descriptor de seguridad</span><span class="sxs-lookup"><span data-stu-id="a804a-104">Security Descriptor Components</span></span>
+
+<span data-ttu-id="a804a-105">Tras usar el método [**IADs. Get**](/windows/desktop/api/iads/nf-iads-iads-get) para recuperar un puntero de interfaz [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) , puede utilizar las propiedades **IADsSecurityDescriptor** para leer o escribir los componentes del descriptor de seguridad de un objeto de directorio.</span><span class="sxs-lookup"><span data-stu-id="a804a-105">Having used the [**IADs.Get**](/windows/desktop/api/iads/nf-iads-iads-get) method to retrieve an [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) interface pointer, you can use the **IADsSecurityDescriptor** properties to read or write the components of a directory object's security descriptor.</span></span> <span data-ttu-id="a804a-106">Por ejemplo, para obtener o establecer la DACL del objeto, use la propiedad [**DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) .</span><span class="sxs-lookup"><span data-stu-id="a804a-106">For example, to get or set the object's DACL, use the [**DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) property.</span></span>
+
+<span data-ttu-id="a804a-107">Un descriptor de seguridad puede almacenar los datos siguientes:</span><span class="sxs-lookup"><span data-stu-id="a804a-107">A security descriptor can store the following data:</span></span>
+
+-   <span data-ttu-id="a804a-108">Un identificador de seguridad (SID) que identifica al propietario del objeto: el propietario de un objeto tiene el derecho implícito para modificar los datos de la DACL y del propietario en el descriptor de seguridad del objeto.</span><span class="sxs-lookup"><span data-stu-id="a804a-108">A security identifier (SID) that identifies the owner of the object: The owner of an object has the implicit right to modify the DACL and owner data in the object's security descriptor.</span></span>
+-   <span data-ttu-id="a804a-109">Una lista de control de acceso discrecional (DACL) que identifica a los usuarios y grupos que pueden realizar varias operaciones en el objeto: una DACL contiene una lista de entradas de control de acceso (ACE).</span><span class="sxs-lookup"><span data-stu-id="a804a-109">A discretionary access-control list (DACL) that identifies the users and groups who can perform various operations on the object: A DACL contains a list of access-control entries (ACEs).</span></span> <span data-ttu-id="a804a-110">Cada ACE permite o deniega un conjunto de derechos de acceso especificado para una cuenta de usuario, una cuenta de grupo o cualquier otro administrador de confianza especificados.</span><span class="sxs-lookup"><span data-stu-id="a804a-110">Each ACE allows or denies a specified set of access rights to a specified user account, group account, or other trustee.</span></span> <span data-ttu-id="a804a-111">Para obtener más información, vea [recuperar la DACL de un objeto](retrieving-an-objectampaposs-dacl.md).</span><span class="sxs-lookup"><span data-stu-id="a804a-111">For more information, see [Retrieving an Object's DACL](retrieving-an-objectampaposs-dacl.md).</span></span>
+-   <span data-ttu-id="a804a-112">Una lista de control de acceso de sistema (SACL) que controla el modo en que las auditorías del sistema intentan obtener acceso al objeto: cada ACE de una SACL especifica los tipos de intentos de acceso que generan una entrada de registro de auditoría para una cuenta de usuario, una cuenta de grupo u otro administrador de confianza especificados.</span><span class="sxs-lookup"><span data-stu-id="a804a-112">A system access-control list (SACL) that controls how the system audits attempts to access the object: Each ACE in a SACL specifies the types of access attempts that generate an audit log entry for a specified user account, group account, or other trustee.</span></span> <span data-ttu-id="a804a-113">Para obtener más información, vea [recuperar la SACL de un objeto](retrieving-an-objectampaposs-sacl.md).</span><span class="sxs-lookup"><span data-stu-id="a804a-113">For more information, see [Retrieving an Object's SACL](retrieving-an-objectampaposs-sacl.md).</span></span>
+-   <span data-ttu-id="a804a-114">Un conjunto de marcas de control de **\_ descriptor \_ de seguridad** que califican el significado de un descriptor de seguridad o sus componentes: por ejemplo, la marca de **\_ DACL \_ protegida** del descriptor de seguridad evita que se hereden las ACE de su objeto primario.</span><span class="sxs-lookup"><span data-stu-id="a804a-114">A set of **SECURITY\_DESCRIPTOR\_CONTROL** control flags that qualify the meaning of a security descriptor or its components: For example, the **SE\_DACL\_PROTECTED** flag protects the security descriptor's DACL from inheriting ACEs from its parent object.</span></span>
+-   <span data-ttu-id="a804a-115">Un identificador de seguridad (SID) que identifica el grupo primario del objeto: Active Directory Domain Services no usar este componente.</span><span class="sxs-lookup"><span data-stu-id="a804a-115">A security identifier (SID) that identifies the primary group of the object: Active Directory Domain Services do not use this component.</span></span>
+
+<span data-ttu-id="a804a-116">Para obtener más información y un ejemplo de código que se puede usar para leer y mostrar los datos en un descriptor de seguridad de objeto y DACL, vea [leer el descriptor de seguridad de un objeto](reading-an-objectampaposs-security-descriptor.md).</span><span class="sxs-lookup"><span data-stu-id="a804a-116">For more information and a code example that can be used to read and display the data in an object security descriptor and DACL, see [Reading an Object's Security Descriptor](reading-an-objectampaposs-security-descriptor.md).</span></span>
+
+ 
+
+ 
