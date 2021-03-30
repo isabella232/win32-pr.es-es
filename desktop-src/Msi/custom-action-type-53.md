@@ -1,0 +1,84 @@
+---
+description: Los desarrolladores de paquetes de Windows Installer pueden optar por usar un tipo de acción personalizada 53 cuando las acciones estándar no son suficientes para ejecutar la instalación.
+ms.assetid: d024c73e-c2dc-4187-a8ae-ed96dc7c107e
+title: Tipo de acción personalizada 53
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 65a016d3b3f5a282567b909215d6ab7b32759417
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104002280"
+---
+# <a name="custom-action-type-53"></a>Tipo de acción personalizada 53
+
+Esta acción personalizada se escribe en JScript, como ECMA 262. Windows Installer no admite JScript 1,0. Para obtener más información, vea [scripts](scripts.md).
+
+## <a name="source"></a>Source
+
+El campo de origen de la [tabla CustomAction](customaction-table.md) contiene un nombre de propiedad o una clave a la [tabla de propiedades](property-table.md) de una propiedad que contiene el texto del script.
+
+## <a name="type-value"></a>Valor de tipo
+
+Incluya el siguiente valor en la columna Type de la [tabla CustomAction](customaction-table.md) para especificar el tipo numérico básico de una acción personalizada de 32 bits.
+
+
+
+| Constantes                                                            | Hexadecimal | Decimal |
+|----------------------------------------------------------------------|-------------|---------|
+| **msidbCustomActionTypeJScript**  +  **msidbCustomActionTypeProperty** | 0x035       | 53      |
+
+
+
+ 
+
+Windows Installer puede usar las acciones personalizadas de 64 bits en sistemas operativos de 64 bits. Una acción personalizada de 64 bits basada en scripts debe incluir el bit **msidbCustomActionType64BitScript** en su tipo numérico. Para obtener información, consulte [acciones personalizadas de 64 bits](64-bit-custom-actions.md). Incluya el siguiente valor en la columna Type de la [tabla CustomAction](customaction-table.md) para especificar el tipo numérico básico de una acción personalizada de 64 bits.
+
+
+
+| Constantes                                                                                                   | Hexadecimal | Decimal |
+|-------------------------------------------------------------------------------------------------------------|-------------|---------|
+| **msidbCustomActionTypeJScript**  +  **msidbCustomActionTypeProperty**  +  **msidbCustomActionType64BitScript** | 0x0001035   | 4149    |
+
+
+
+ 
+
+## <a name="target"></a>Destino
+
+El campo de destino de la [tabla CustomAction](customaction-table.md) contiene una función de script opcional. El procesamiento primero envía el script para el análisis y, a continuación, llama a la función de script opcional.
+
+## <a name="return-processing-options"></a>Opciones de procesamiento de valores devueltos
+
+Incluya bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de procesamiento de valores devueltos. Para obtener una descripción de las opciones y los valores, vea [Opciones de procesamiento de devolución de acción personalizada](custom-action-return-processing-options.md).
+
+## <a name="execution-scheduling-options"></a>Opciones de programación de ejecución
+
+Incluya los bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de programación de la ejecución. Estas opciones controlan la ejecución múltiple de acciones personalizadas. Para obtener una descripción de las opciones, vea opciones de programación de la [ejecución de acciones personalizadas](custom-action-execution-scheduling-options.md).
+
+## <a name="in-script-execution-options"></a>Opciones de ejecución de In-Script
+
+Incluya bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar una opción de ejecución en el script. Estas opciones copian el código de acción en el script de ejecución, reversión o confirmación. Para obtener una descripción de las opciones, vea [Custom Action In-Script Execution Options](custom-action-in-script-execution-options.md).
+
+## <a name="return-values"></a>Valores devueltos
+
+Las funciones opcionales escritas en el script deben devolver uno de los valores descritos en [valores devueltos de las acciones personalizadas de JScript y VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
+
+## <a name="remarks"></a>Observaciones
+
+Una acción personalizada que se escribe en JScript requiere el objeto de [**sesión**](session-object.md) de instalación. Dado que es posible que el objeto de **sesión** no exista durante la reversión de la instalación, una acción personalizada diferida escrita en el script usa uno de los métodos descritos en [obtener información de contexto para las acciones personalizadas de ejecución aplazada](obtaining-context-information-for-deferred-execution-custom-actions.md).
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[\_Acciones personalizadas](custom-actions.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
