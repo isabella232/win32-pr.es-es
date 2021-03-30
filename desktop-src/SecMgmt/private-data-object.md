@@ -1,0 +1,39 @@
+---
+description: En cada sistema hay disponible un número limitado de objetos de datos privados con el fin de almacenar información de manera protegida y cifrada.
+ms.assetid: 927473d7-b5bc-4b6f-b303-8a0f8680731d
+title: Private Data, objeto
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: ccacd1334c9859495acf89075b77a0f10af4cb64
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104154076"
+---
+# <a name="private-data-object"></a><span data-ttu-id="fcf67-103">Private Data, objeto</span><span class="sxs-lookup"><span data-stu-id="fcf67-103">Private Data Object</span></span>
+
+<span data-ttu-id="fcf67-104">En cada sistema hay disponible un número limitado de objetos de datos privados con el fin de almacenar información de manera protegida y cifrada.</span><span class="sxs-lookup"><span data-stu-id="fcf67-104">A limited number of private data objects are available on each system for the purpose of storing information in a protected, encrypted, fashion.</span></span>
+
+<span data-ttu-id="fcf67-105">Los objetos de datos privados se proporcionan principalmente para admitir el almacenamiento de contraseñas de cuentas de servidor.</span><span class="sxs-lookup"><span data-stu-id="fcf67-105">Private data objects are provided primarily to support storage of server account passwords.</span></span> <span data-ttu-id="fcf67-106">Esto es útil para los servidores que se ejecutan en una cuenta específica.</span><span class="sxs-lookup"><span data-stu-id="fcf67-106">This is useful for servers that run in a specific account.</span></span> <span data-ttu-id="fcf67-107">La contraseña de la cuenta de servidor son datos privados que se deben proteger, pero que son necesarios para iniciar sesión en el servidor.</span><span class="sxs-lookup"><span data-stu-id="fcf67-107">The password of the server account is private data that should be secured but is needed to log the server on.</span></span>
+
+<span data-ttu-id="fcf67-108">Los objetos de datos privados pueden ser de uso general o pueden ser de uno de los tres tipos especializados: local, global y equipo.</span><span class="sxs-lookup"><span data-stu-id="fcf67-108">Private data objects may be general purpose, or they may be one of three specialized types: local, global, and machine.</span></span>
+
+<span data-ttu-id="fcf67-109">Los objetos de datos privados locales solo se pueden leer localmente desde el equipo que almacena el objeto.</span><span class="sxs-lookup"><span data-stu-id="fcf67-109">Local private data objects can only be read locally from the computer storing the object.</span></span> <span data-ttu-id="fcf67-110">Al intentar leerlos de forma remota, se produce un \_ error de acceso \_ denegado de estado.</span><span class="sxs-lookup"><span data-stu-id="fcf67-110">Attempting to read them remotely results in a STATUS\_ACCESS\_DENIED error.</span></span> <span data-ttu-id="fcf67-111">Los objetos de datos privados locales tienen nombres de clave que comienzan con el prefijo "L $".</span><span class="sxs-lookup"><span data-stu-id="fcf67-111">Local private data objects have key names that begin with the prefix "L$".</span></span> <span data-ttu-id="fcf67-112">Además de los objetos privados locales que cree, el sistema operativo define los siguientes objetos privados locales: $machine. ACC, SAC, SAI y SANSC.</span><span class="sxs-lookup"><span data-stu-id="fcf67-112">In addition to the local private objects you create, the operating system defines the following local private objects: $machine.acc, SAC, SAI, and SANSC.</span></span>
+
+<span data-ttu-id="fcf67-113">Los objetos de datos privados globales son globales en el sentido de que, si se crean en un controlador de dominio, se replicarán automáticamente en todos los controladores de dominio de ese dominio.</span><span class="sxs-lookup"><span data-stu-id="fcf67-113">Global private data objects are global in the sense that if they are created on a domain controller, they will be automatically replicated to all domain controllers in that domain.</span></span> <span data-ttu-id="fcf67-114">En otras palabras, cada controlador de dominio de ese dominio tendrá acceso a los valores que contiene el objeto de datos privado global.</span><span class="sxs-lookup"><span data-stu-id="fcf67-114">In other words, each domain controller in that domain will have access to the values the global private data object contains.</span></span> <span data-ttu-id="fcf67-115">En cambio, los objetos de datos privados globales creados en un sistema que no es un controlador de dominio, así como los objetos de datos privados no globales, no se replican.</span><span class="sxs-lookup"><span data-stu-id="fcf67-115">In contrast, global private data objects created on a system that is not a domain controller, as well as nonglobal private data objects, are not replicated.</span></span> <span data-ttu-id="fcf67-116">Los objetos de datos privados globales tienen nombres de clave que empiezan por "G $".</span><span class="sxs-lookup"><span data-stu-id="fcf67-116">Global private data objects have key names beginning with "G$".</span></span>
+
+<span data-ttu-id="fcf67-117">Solo el sistema operativo puede tener acceso a los objetos de datos privados de la máquina.</span><span class="sxs-lookup"><span data-stu-id="fcf67-117">Machine private data objects can be accessed only by the operating system.</span></span> <span data-ttu-id="fcf67-118">Estos objetos tienen nombres de clave que comienzan por "M $".</span><span class="sxs-lookup"><span data-stu-id="fcf67-118">These objects have key names that begin with "M$".</span></span>
+
+<span data-ttu-id="fcf67-119">**Nota:**  Puede establecer, pero no puede recuperar los objetos de datos privados de la máquina.</span><span class="sxs-lookup"><span data-stu-id="fcf67-119">**Note**  You can set, but you cannot retrieve, machine private data objects.</span></span>
+
+<span data-ttu-id="fcf67-120">Además de estos prefijos, los valores siguientes también indican objetos locales o de equipo.</span><span class="sxs-lookup"><span data-stu-id="fcf67-120">In addition to these prefixes, the following values also indicate local or machine objects.</span></span> <span data-ttu-id="fcf67-121">Estos valores se admiten por razones de compatibilidad con versiones anteriores y no se deben usar al crear nuevos objetos locales o de equipo.</span><span class="sxs-lookup"><span data-stu-id="fcf67-121">These values are supported for backward compatibility and should not be used when you create new local or machine objects.</span></span> <span data-ttu-id="fcf67-122">El nombre de clave de los objetos de datos privados locales también puede comenzar con "RasDialParms" o "RasCredentials".</span><span class="sxs-lookup"><span data-stu-id="fcf67-122">The key name of local private data objects may also start with "RasDialParms" or "RasCredentials".</span></span> <span data-ttu-id="fcf67-123">El nombre de clave de los objetos de equipo también puede empezar por "NL $" o " \_ SC \_ ".</span><span class="sxs-lookup"><span data-stu-id="fcf67-123">The key name for machine objects may also start with, "NL$" or "\_sc\_".</span></span>
+
+<span data-ttu-id="fcf67-124">Los objetos de datos privados que no son uno de los tipos especializados anteriores utilizan nombres de clave que no se inician con un prefijo.</span><span class="sxs-lookup"><span data-stu-id="fcf67-124">Private data objects that are not one of the preceding specialized types use key names that do not start with a prefix.</span></span> <span data-ttu-id="fcf67-125">Estos objetos no se replican y las aplicaciones pueden leerlos de forma local o remota.</span><span class="sxs-lookup"><span data-stu-id="fcf67-125">These objects are not replicated and can be read either locally or remotely by applications.</span></span>
+
+ 
+
+ 
+
+
+
