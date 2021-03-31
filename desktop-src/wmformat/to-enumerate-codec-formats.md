@@ -1,0 +1,57 @@
+---
+title: Para enumerar formatos de códecs
+description: Para enumerar formatos de códecs
+ms.assetid: 4441b3f8-3edd-441f-8df8-6281937903e0
+keywords:
+- secuencias, enumerar formatos de códecs
+- códecs, enumeraciones
+- secuencias, formatos de códecs
+- códecs, formatos
+- códecs, interfaz IWMCodecInfo
+- IWMCodecInfo, formatos de códecs
+- códecs, interfaz IWMCodecInfo3
+- IWMCodecInfo3, formatos de códecs
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 93ea062723ec1480a82b45fd025fb7a8c37020d5
+ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "104077438"
+---
+# <a name="to-enumerate-codec-formats"></a><span data-ttu-id="4d92c-111">Para enumerar formatos de códecs</span><span class="sxs-lookup"><span data-stu-id="4d92c-111">To Enumerate Codec Formats</span></span>
+
+<span data-ttu-id="4d92c-112">Un formato de códec es un objeto de configuración de secuencia que se rellena con datos de un códec.</span><span class="sxs-lookup"><span data-stu-id="4d92c-112">A codec format is a stream configuration object populated with data from a codec.</span></span> <span data-ttu-id="4d92c-113">Cada formato de códec contiene una configuración de medios compatible con el códec.</span><span class="sxs-lookup"><span data-stu-id="4d92c-113">Each codec format contains a media configuration supported by the codec.</span></span> <span data-ttu-id="4d92c-114">La mayoría de los códecs de audio admiten un número finito de formatos, cada uno de los cuales se enumera mediante el códec y se puede tener acceso a ellos mediante los métodos de [**IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo).</span><span class="sxs-lookup"><span data-stu-id="4d92c-114">Most audio codecs support a finite number of formats, each of which is enumerated by the codec and can be accessed using the methods of [**IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo).</span></span> <span data-ttu-id="4d92c-115">Los códecs de vídeo, por otro lado, solo proporcionan un formato.</span><span class="sxs-lookup"><span data-stu-id="4d92c-115">Video codecs, on the other hand, provide only a single format.</span></span> <span data-ttu-id="4d92c-116">Esto se debe a que las secuencias de vídeo tienen variables, como el tamaño de fotogramas, que son más flexibles que la configuración de una secuencia de audio.</span><span class="sxs-lookup"><span data-stu-id="4d92c-116">This is because video streams have variables, like frame size, that are more flexible than the settings of an audio stream.</span></span> <span data-ttu-id="4d92c-117">Con un flujo de vídeo, debe rellenar algunos de los valores de configuración de la secuencia. las configuraciones de secuencias de audio solo deben editarse para asignar un nombre, un nombre de conexión y un número de secuencia.</span><span class="sxs-lookup"><span data-stu-id="4d92c-117">With a video stream, you must fill in some of the stream configuration values; audio stream configurations should only be edited to assign a name, connection name, and stream number.</span></span> <span data-ttu-id="4d92c-118">Para obtener más información, vea [configuración común para todos los flujos](configuration-common-to-all-streams.md).</span><span class="sxs-lookup"><span data-stu-id="4d92c-118">For more information, see [Configuration Common to All Streams](configuration-common-to-all-streams.md).</span></span>
+
+<span data-ttu-id="4d92c-119">Los formatos de códec enumerados dependen de la configuración actual de la enumeración del códec, que se establece mediante [**IWMCodecInfo3:: SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting).</span><span class="sxs-lookup"><span data-stu-id="4d92c-119">The codec formats enumerated depend upon the current codec enumeration settings, which are set using [**IWMCodecInfo3::SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting).</span></span> <span data-ttu-id="4d92c-120">Actualmente, solo se admiten dos propiedades de códec: g \_ wszNumPasses, que especifica el número de pasos de codificación que realizará el códec y g \_ wszVBREnabled, que especifica si el códec usará codificación de velocidad de bits variable.</span><span class="sxs-lookup"><span data-stu-id="4d92c-120">Currently, only two codec properties are supported: g\_wszNumPasses, which specifies the number of encoding passes that the codec will perform, and g\_wszVBREnabled, which specifies whether the codec will use variable bit rate encoding.</span></span> <span data-ttu-id="4d92c-121">El número máximo de pasos de codificación admitidos por cualquiera de los códecs es dos, por lo que hay cuatro configuraciones distintas para las que puede recuperar códecs, como se muestra en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="4d92c-121">The maximum number of encoding passes supported by any of the codecs is two, so there are four distinct configurations for which you can retrieve codecs, as shown in the following table.</span></span>
+
+
+
+|                  | <span data-ttu-id="4d92c-122">Secuencia de velocidad de bits constante (CBR)</span><span class="sxs-lookup"><span data-stu-id="4d92c-122">Constant bit rate (CBR) stream</span></span> | <span data-ttu-id="4d92c-123">secuencia CBR de 2 pasadas</span><span class="sxs-lookup"><span data-stu-id="4d92c-123">2-pass CBR stream</span></span> | <span data-ttu-id="4d92c-124">Secuencia de velocidad de bits variable (VBR) basada en la calidad</span><span class="sxs-lookup"><span data-stu-id="4d92c-124">Quality-based variable bit rate (VBR) stream</span></span> | <span data-ttu-id="4d92c-125">Secuencia VBR basada en la velocidad de bits (restringida o sin restricciones)</span><span class="sxs-lookup"><span data-stu-id="4d92c-125">Bit-rate-based VBR stream (constrained or unconstrained)</span></span> |
+|------------------|--------------------------------|-------------------|----------------------------------------------|----------------------------------------------------------|
+| <span data-ttu-id="4d92c-126">g \_ wszVBREnabled</span><span class="sxs-lookup"><span data-stu-id="4d92c-126">g\_wszVBREnabled</span></span> | <span data-ttu-id="4d92c-127">false</span><span class="sxs-lookup"><span data-stu-id="4d92c-127">FALSE</span></span>                          | <span data-ttu-id="4d92c-128">false</span><span class="sxs-lookup"><span data-stu-id="4d92c-128">FALSE</span></span>             | <span data-ttu-id="4d92c-129">VERDADERO</span><span class="sxs-lookup"><span data-stu-id="4d92c-129">TRUE</span></span>                                         | <span data-ttu-id="4d92c-130">TRUE</span><span class="sxs-lookup"><span data-stu-id="4d92c-130">TRUE</span></span>                                                     |
+| <span data-ttu-id="4d92c-131">g \_ wszNumPasses</span><span class="sxs-lookup"><span data-stu-id="4d92c-131">g\_wszNumPasses</span></span>  | <span data-ttu-id="4d92c-132">1</span><span class="sxs-lookup"><span data-stu-id="4d92c-132">1</span></span>                              | <span data-ttu-id="4d92c-133">2</span><span class="sxs-lookup"><span data-stu-id="4d92c-133">2</span></span>                 | <span data-ttu-id="4d92c-134">1</span><span class="sxs-lookup"><span data-stu-id="4d92c-134">1</span></span>                                            | <span data-ttu-id="4d92c-135">2</span><span class="sxs-lookup"><span data-stu-id="4d92c-135">2</span></span>                                                        |
+
+
+
+ 
+
+<span data-ttu-id="4d92c-136">Para enumerar los formatos admitidos para un códec, use [**IWMCodecInfo:: GetCodecFormatCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo-getcodecformatcount) para buscar el número de códecs admitidos.</span><span class="sxs-lookup"><span data-stu-id="4d92c-136">To enumerate the formats supported for a codec, use [**IWMCodecInfo::GetCodecFormatCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo-getcodecformatcount) to find the number of supported codecs.</span></span> <span data-ttu-id="4d92c-137">A continuación, llame a [**IWMCodecInfo:: GetCodecFormat**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo-getcodecformat) para cada formato.</span><span class="sxs-lookup"><span data-stu-id="4d92c-137">Then call [**IWMCodecInfo::GetCodecFormat**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo-getcodecformat) for each format.</span></span> <span data-ttu-id="4d92c-138">Los índices de formato van desde cero hasta uno menos que el número total de formatos admitidos.</span><span class="sxs-lookup"><span data-stu-id="4d92c-138">The format indexes range from zero, to one less than the total number of supported formats.</span></span> <span data-ttu-id="4d92c-139">Puede recuperar una descripción del formato llamando a [**IWMCodecInfo2:: GetCodecFormatDesc**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo2-getcodecformatdesc).</span><span class="sxs-lookup"><span data-stu-id="4d92c-139">You can retrieve a description of the format by calling [**IWMCodecInfo2::GetCodecFormatDesc**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo2-getcodecformatdesc).</span></span> <span data-ttu-id="4d92c-140">Cuando se usa **GetCodecFormatDesc**, no es necesario usar **GetCodecFormat**, porque ambos métodos recuperan el objeto de configuración de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="4d92c-140">When using **GetCodecFormatDesc**, you do not need to use **GetCodecFormat**, because the stream configuration object is retrieved by both methods.</span></span> <span data-ttu-id="4d92c-141">Los formatos de códec de vídeo no incluyen una descripción.</span><span class="sxs-lookup"><span data-stu-id="4d92c-141">Video codec formats do not include a description.</span></span> <span data-ttu-id="4d92c-142">Cada códec de vídeo solo tiene un formato que se utiliza para todos los flujos de ese tipo.</span><span class="sxs-lookup"><span data-stu-id="4d92c-142">Each video codec has only one format that is used for all streams of that type.</span></span>
+
+<span data-ttu-id="4d92c-143">Cuando se recupera un formato de códec, se obtiene la interfaz [**IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig) de un objeto de configuración de secuencia que contiene la configuración de formato.</span><span class="sxs-lookup"><span data-stu-id="4d92c-143">When you retrieve a codec format, you get the [**IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig) interface of a stream configuration object containing the format settings.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="4d92c-144">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4d92c-144">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="4d92c-145">**Obtención de información de configuración de la secuencia de códecs**</span><span class="sxs-lookup"><span data-stu-id="4d92c-145">**Getting Stream Configuration Information from Codecs**</span></span>](getting-stream-configuration-information-from-codecs.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
