@@ -1,0 +1,35 @@
+---
+description: Funciones que se van a usar para obtener y establecer información de archivo.
+ms.assetid: 3b5fb709-c699-4651-8072-97210c8cf763
+title: Obtener y establecer información de archivos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6c6eb6abf2554e1945e0782c667245ea0eaa99be
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103913530"
+---
+# <a name="obtaining-and-setting-file-information"></a><span data-ttu-id="44234-103">Obtener y establecer información de archivos</span><span class="sxs-lookup"><span data-stu-id="44234-103">Obtaining and Setting File Information</span></span>
+
+<span data-ttu-id="44234-104">En los temas siguientes se describe cómo obtener y establecer información de archivo.</span><span class="sxs-lookup"><span data-stu-id="44234-104">The following topics describe how to get and set file information.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="44234-105">En esta sección</span><span class="sxs-lookup"><span data-stu-id="44234-105">In this section</span></span>
+
+
+
+| <span data-ttu-id="44234-106">Tema</span><span class="sxs-lookup"><span data-stu-id="44234-106">Topic</span></span>                                                                                                             | <span data-ttu-id="44234-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="44234-107">Description</span></span>                                                                                                                                                                                                                                                                                   |
+|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="44234-108">Recuperando información de tipo de archivo</span><span class="sxs-lookup"><span data-stu-id="44234-108">Retrieving File Type Information</span></span>](retrieving-file-type-information.md)<br/>                               | <span data-ttu-id="44234-109">La función [**GetFileType**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletype) recupera el tipo de un archivo: disco, carácter (como una consola), canalización o desconocido.</span><span class="sxs-lookup"><span data-stu-id="44234-109">The [**GetFileType**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletype) function retrieves the type of a file: disk, character (such as a console), pipe, or unknown.</span></span><br/>                                                                                                                                               |
+| [<span data-ttu-id="44234-110">Determinar el tamaño de un archivo</span><span class="sxs-lookup"><span data-stu-id="44234-110">Determining the Size of a File</span></span>](determining-the-size-of-a-file.md)<br/>                                   | <span data-ttu-id="44234-111">La función [**GetFileSize**](/windows/desktop/api/FileAPI/nf-fileapi-getfilesize) recupera el tamaño de un archivo.</span><span class="sxs-lookup"><span data-stu-id="44234-111">The [**GetFileSize**](/windows/desktop/api/FileAPI/nf-fileapi-getfilesize) function retrieves the size of a file.</span></span><br/>                                                                                                                                                                                                      |
+| [<span data-ttu-id="44234-112">Buscar uno o varios archivos</span><span class="sxs-lookup"><span data-stu-id="44234-112">Searching for One or More Files</span></span>](searching-for-one-or-more-files.md)<br/>                                 | <span data-ttu-id="44234-113">Una aplicación puede buscar en el directorio actual todos los nombres de archivo que coinciden con un patrón determinado mediante las funciones [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea), [**FindFirstFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfileexa), [**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea)y [**FindClose**](/windows/desktop/api/FileAPI/nf-fileapi-findclose) .</span><span class="sxs-lookup"><span data-stu-id="44234-113">An application can search the current directory for all file names that match a given pattern by using the [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea), [**FindFirstFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfileexa), [**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea), and [**FindClose**](/windows/desktop/api/FileAPI/nf-fileapi-findclose) functions.</span></span><br/> |
+| [<span data-ttu-id="44234-114">Establecer y obtener la marca de tiempo de un archivo</span><span class="sxs-lookup"><span data-stu-id="44234-114">Setting and Getting the Timestamp of a File</span></span>](setting-and-getting-the-timestamp-of-a-file.md)<br/>         | <span data-ttu-id="44234-115">Las aplicaciones pueden recuperar y establecer la fecha y la hora en que se crea un archivo, se modifica por última vez o se obtiene acceso por última vez mediante las funciones [**GetFileTime**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) y [**SetFileTime**](/windows/desktop/api/fileapi/nf-fileapi-setfiletime) .</span><span class="sxs-lookup"><span data-stu-id="44234-115">Applications can retrieve and set the date and time a file is created, last modified, or last accessed by using the [**GetFileTime**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) and [**SetFileTime**](/windows/desktop/api/fileapi/nf-fileapi-setfiletime) functions.</span></span><br/>                                                                         |
+| [<span data-ttu-id="44234-116">Determinar la página de códigos del juego de caracteres actual</span><span class="sxs-lookup"><span data-stu-id="44234-116">Determining the Current Character Set Code Page</span></span>](determining-the-current-character-set-code-page.md)<br/> | <span data-ttu-id="44234-117">La función [**AreFileApisANSI**](/windows/desktop/api/fileapi/nf-fileapi-arefileapisansi) determina si las funciones de e/s de archivo usan la página de códigos del juego de caracteres ANSI o OEM.</span><span class="sxs-lookup"><span data-stu-id="44234-117">The [**AreFileApisANSI**](/windows/desktop/api/fileapi/nf-fileapi-arefileapisansi) function determines whether the file I/O functions are using the ANSI or OEM character set code page.</span></span><br/>                                                                                                                               |
+
+
+
+ 
+
+ 
+
