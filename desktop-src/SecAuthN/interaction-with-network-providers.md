@@ -1,0 +1,39 @@
+---
+description: Explica las interacciones entre Winlogon y los proveedores de red.
+ms.assetid: 09d0b5ce-e2ac-40d7-bc35-272c5f831788
+title: Interacción con proveedores de red
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 022d3eeadb7a9f4d8137e1d9b1ef7ff2430910cc
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103912474"
+---
+# <a name="interaction-with-network-providers"></a><span data-ttu-id="30c0b-103">Interacción con proveedores de red</span><span class="sxs-lookup"><span data-stu-id="30c0b-103">Interaction with Network Providers</span></span>
+
+<span data-ttu-id="30c0b-104">Puede configurar un sistema para que admita cero o más proveedores de red.</span><span class="sxs-lookup"><span data-stu-id="30c0b-104">You can configure a system to support zero or more network providers.</span></span> <span data-ttu-id="30c0b-105">Cada uno de estos proveedores de red puede especificar que requiere un procesamiento de autenticación interactiva especial.</span><span class="sxs-lookup"><span data-stu-id="30c0b-105">Each of these network providers can specify that it requires special interactive authentication processing.</span></span> <span data-ttu-id="30c0b-106">Esta funcionalidad permite que las redes instaladas recopilen información de identificación y autenticación específica de cada red, pero les permite recopilarla durante el inicio de sesión normal y en el paraguas seguro del [*contexto*](../secgloss/c-gly.md) y el escritorio de [*Winlogon*](../secgloss/w-gly.md) .</span><span class="sxs-lookup"><span data-stu-id="30c0b-106">This capability allows installed networks to collect identification and authentication information specific to each network, yet allows them to collect it during normal logon and under the secure umbrella of [*Winlogon's*](../secgloss/w-gly.md) [*context*](../secgloss/c-gly.md) and desktop.</span></span>
+
+<span data-ttu-id="30c0b-107">Winlogon llama a los proveedores de red en varios casos.</span><span class="sxs-lookup"><span data-stu-id="30c0b-107">Winlogon calls network providers under a number of circumstances.</span></span> <span data-ttu-id="30c0b-108">Después de un inicio de sesión correcto, Winlogon llama a los proveedores de red para que puedan recopilar [*las credenciales*](../secgloss/c-gly.md) y autenticar al usuario para su red.</span><span class="sxs-lookup"><span data-stu-id="30c0b-108">Following a successful logon, Winlogon calls network providers so they can collect [*credentials*](../secgloss/c-gly.md) and authenticate the user for their network.</span></span> <span data-ttu-id="30c0b-109">Winlogon también llama a los proveedores de red cuando los usuarios cambian sus contraseñas.</span><span class="sxs-lookup"><span data-stu-id="30c0b-109">Winlogon also calls network providers when users change their passwords.</span></span> <span data-ttu-id="30c0b-110">Esto permite a cada usuario mantener una única contraseña para su uso en todas las redes.</span><span class="sxs-lookup"><span data-stu-id="30c0b-110">This lets each user maintain a single password for use on all networks.</span></span>
+
+<span data-ttu-id="30c0b-111">La estructura de [**\_ información de \_ notificación \_ de WLX MPR**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_mpr_notify_info) se usa para proporcionar información de identificación y autenticación en las funciones de Gina relevantes.</span><span class="sxs-lookup"><span data-stu-id="30c0b-111">The [**WLX\_MPR\_NOTIFY\_INFO**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_mpr_notify_info) structure is used to provide identification and authentication information in the relevant GINA functions.</span></span> <span data-ttu-id="30c0b-112">Esta estructura incluye los siguientes miembros.</span><span class="sxs-lookup"><span data-stu-id="30c0b-112">This structure includes the following members.</span></span>
+
+
+
+| <span data-ttu-id="30c0b-113">Miembro</span><span class="sxs-lookup"><span data-stu-id="30c0b-113">Member</span></span>             | <span data-ttu-id="30c0b-114">Descripción</span><span class="sxs-lookup"><span data-stu-id="30c0b-114">Description</span></span>                                                                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="30c0b-115">**pszUserName**</span><span class="sxs-lookup"><span data-stu-id="30c0b-115">**pszUserName**</span></span>    | <span data-ttu-id="30c0b-116">Nombre de cuenta del usuario que ha iniciado sesión.</span><span class="sxs-lookup"><span data-stu-id="30c0b-116">The account name of the logged-on user.</span></span>                                                                                                                                                      |
+| <span data-ttu-id="30c0b-117">**pszDomain**</span><span class="sxs-lookup"><span data-stu-id="30c0b-117">**pszDomain**</span></span>      | <span data-ttu-id="30c0b-118">El nombre de dominio del usuario que ha iniciado sesión.</span><span class="sxs-lookup"><span data-stu-id="30c0b-118">The domain name of the logged-on user.</span></span> <span data-ttu-id="30c0b-119">No todos los modelos de autenticación tienen un concepto de dominio (o su equivalente), por lo que este miembro puede ser **null**.</span><span class="sxs-lookup"><span data-stu-id="30c0b-119">Not all authentication models have a domain concept (or its equivalent), so this member can be **NULL**.</span></span>                                              |
+| <span data-ttu-id="30c0b-120">**pszPassword**</span><span class="sxs-lookup"><span data-stu-id="30c0b-120">**pszPassword**</span></span>    | <span data-ttu-id="30c0b-121">Cuando el usuario dio una contraseña de texto no cifrado durante la autenticación, al proporcionarla aquí se permite a otros proveedores de red usar la misma contraseña (para lograr un inicio de sesión único) sin preguntar al usuario.</span><span class="sxs-lookup"><span data-stu-id="30c0b-121">When the user gave a plaintext password during authentication, providing it here lets other network providers use the same password (to achieve single logon) without prompting the user.</span></span>    |
+| <span data-ttu-id="30c0b-122">**pszOldPassword**</span><span class="sxs-lookup"><span data-stu-id="30c0b-122">**pszOldPassword**</span></span> | <span data-ttu-id="30c0b-123">Después de un cambio de contraseña, que proporciona la contraseña original aquí y la nueva contraseña en el miembro **pszPassword** , permite a los proveedores de red actualizar sus contraseñas sin preguntar al usuario.</span><span class="sxs-lookup"><span data-stu-id="30c0b-123">After a password change, providing the original password here and the new password in the **pszPassword** member, lets network providers upgrade their passwords without prompting the user.</span></span> |
+
+
+
+ 
+
+<span data-ttu-id="30c0b-124">[*Gina*](../secgloss/g-gly.md) no tiene que proporcionar esta información a los proveedores de red.</span><span class="sxs-lookup"><span data-stu-id="30c0b-124">A [*GINA*](../secgloss/g-gly.md) does not have to provide this information to network providers.</span></span> <span data-ttu-id="30c0b-125">Si se pasa un puntero **nulo** en lugar de un puntero de estructura válido, los proveedores de red pedirán al usuario información.</span><span class="sxs-lookup"><span data-stu-id="30c0b-125">If a **NULL** pointer is passed instead of a valid structure pointer, the network providers will prompt the user for information.</span></span>
+
+ 
+
+ 
