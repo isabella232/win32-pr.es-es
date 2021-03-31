@@ -1,0 +1,66 @@
+---
+title: Referencia de elementos de metarchivo de Windows Media
+description: Referencia de elementos de metarchivo de Windows Media
+ms.assetid: 6f85e488-53f6-4fb0-ba48-55c3d7e59f1c
+keywords:
+- Metaarchivos de Windows Media, referencia
+- metaarchivos, referencia
+- referencia de los metaarchivos de Windows Media
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: 20e024c97e9bf8d0f8877eb3f68002702cc1a76f
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104418855"
+---
+# <a name="windows-media-metafile-elements-reference"></a><span data-ttu-id="2b782-106">Referencia de elementos de metarchivo de Windows Media</span><span class="sxs-lookup"><span data-stu-id="2b782-106">Windows Media Metafile Elements Reference</span></span>
+
+<span data-ttu-id="2b782-107">Esta sección contiene documentación de referencia para todos los elementos de metarchivo de Windows Media para las aplicaciones del lado cliente.</span><span class="sxs-lookup"><span data-stu-id="2b782-107">This section contains reference documentation for all Windows Media metafile elements for client-side applications.</span></span> <span data-ttu-id="2b782-108">Las entradas de referencia incluyen definiciones de los elementos, sus atributos y valores, y condiciones especiales relacionadas con cada elemento.</span><span class="sxs-lookup"><span data-stu-id="2b782-108">Reference entries include definitions of the elements, their attributes and values, and special conditions related to each element.</span></span>
+
+<span data-ttu-id="2b782-109">Los siguientes elementos de metarchivo son compatibles con las aplicaciones del lado cliente.</span><span class="sxs-lookup"><span data-stu-id="2b782-109">The following metafile elements are supported for client-side applications.</span></span>
+
+
+
+| <span data-ttu-id="2b782-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="2b782-110">Element</span></span>                                           | <span data-ttu-id="2b782-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b782-111">Description</span></span>                                                                                                            |
+|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="2b782-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b782-112">ABSTRACT</span></span>](abstract-element.md)                  | <span data-ttu-id="2b782-113">Contiene texto que describe el elemento **ASX**, **banner** o **entry** asociado.</span><span class="sxs-lookup"><span data-stu-id="2b782-113">Contains text that describes the associated **ASX**, **BANNER**, or **ENTRY** element.</span></span>                                 |
+| [<span data-ttu-id="2b782-114">ASX</span><span class="sxs-lookup"><span data-stu-id="2b782-114">ASX</span></span>](asx-element.md)                            | <span data-ttu-id="2b782-115">Define un archivo como un metarchivo de Windows Media.</span><span class="sxs-lookup"><span data-stu-id="2b782-115">Defines a file as a Windows Media metafile.</span></span>                                                                            |
+| [<span data-ttu-id="2b782-116">FRENTE</span><span class="sxs-lookup"><span data-stu-id="2b782-116">AUTHOR</span></span>](author-element.md)                      | <span data-ttu-id="2b782-117">Contiene el nombre del autor de un clip multimedia o un metarchivo de Windows Media.</span><span class="sxs-lookup"><span data-stu-id="2b782-117">Contains the name of the author of a media clip or a Windows Media metafile.</span></span>                                           |
+| [<span data-ttu-id="2b782-118">CINTA</span><span class="sxs-lookup"><span data-stu-id="2b782-118">BANNER</span></span>](banner-element.md)                      | <span data-ttu-id="2b782-119">Especifica una dirección URL para un gráfico que aparece en el panel de información de Media Player de Windows.</span><span class="sxs-lookup"><span data-stu-id="2b782-119">Specifies a URL for a graphic that appears in the display panel of Windows Media Player.</span></span>                               |
+| [<span data-ttu-id="2b782-120">BÁSICA</span><span class="sxs-lookup"><span data-stu-id="2b782-120">BASE</span></span>](base-element.md)                          | <span data-ttu-id="2b782-121">Especifica una cadena que se anexa al principio de las direcciones URL enviadas a Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="2b782-121">Specifies a string that is appended to the front of URLs sent to Windows Media Player.</span></span>                                 |
+| [<span data-ttu-id="2b782-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2b782-122">Comments</span></span>](comments.md)                          | <span data-ttu-id="2b782-123">Especifica la sintaxis XML para los comentarios (</span><span class="sxs-lookup"><span data-stu-id="2b782-123">Specifies the XML syntax for comments (</span></span> <!--...--> <span data-ttu-id="2b782-124">).</span><span class="sxs-lookup"><span data-stu-id="2b782-124">).</span></span>                                                            |
+| [<span data-ttu-id="2b782-125">SSOFTWARE</span><span class="sxs-lookup"><span data-stu-id="2b782-125">COPYRIGHT</span></span>](copyright-element.md)                | <span data-ttu-id="2b782-126">Contiene la información de copyright de un elemento **ASX** o **entry** .</span><span class="sxs-lookup"><span data-stu-id="2b782-126">Contains the copyright information for an **ASX** or **ENTRY** element.</span></span>                                                |
+| [<span data-ttu-id="2b782-127">DURATION</span><span class="sxs-lookup"><span data-stu-id="2b782-127">DURATION</span></span>](duration-element.md)                  | <span data-ttu-id="2b782-128">Especifica la cantidad de tiempo que Windows Media Player representa una secuencia.</span><span class="sxs-lookup"><span data-stu-id="2b782-128">Specifies the length of time Windows Media Player renders a stream.</span></span>                                                    |
+| [<span data-ttu-id="2b782-129">ENDMARKER</span><span class="sxs-lookup"><span data-stu-id="2b782-129">ENDMARKER</span></span>](endmarker-element.md)                | <span data-ttu-id="2b782-130">Especifica un marcador en el que Windows Media Player detiene la representación de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="2b782-130">Specifies a marker at which Windows Media Player stops rendering the stream.</span></span>                                           |
+| [<span data-ttu-id="2b782-131">MOVIMIENTOS</span><span class="sxs-lookup"><span data-stu-id="2b782-131">ENTRY</span></span>](entry-element.md)                        | <span data-ttu-id="2b782-132">Especifica la ruta de acceso de un clip multimedia.</span><span class="sxs-lookup"><span data-stu-id="2b782-132">Specifies the path for a media clip.</span></span>                                                                                   |
+| [<span data-ttu-id="2b782-133">ENTRYREF</span><span class="sxs-lookup"><span data-stu-id="2b782-133">ENTRYREF</span></span>](entryref-element.md)                  | <span data-ttu-id="2b782-134">Vínculos a los elementos de **entrada** de un metarchivo de Windows Media externo que tiene una extensión. ASX,. Wax,. wvx o. WMX.</span><span class="sxs-lookup"><span data-stu-id="2b782-134">Links to the **ENTRY** elements in an external Windows Media metafile that has an .asx, .wax, .wvx, or .wmx extension.</span></span> |
+| [<span data-ttu-id="2b782-135">CESO</span><span class="sxs-lookup"><span data-stu-id="2b782-135">EVENT</span></span>](event-element.md)                        | <span data-ttu-id="2b782-136">Define un comportamiento o una acción realizados por Windows Media Player cuando recibe un comando de script con la etiqueta de un evento.</span><span class="sxs-lookup"><span data-stu-id="2b782-136">Defines a behavior or action taken by Windows Media Player when it receives a script command labeled as an event.</span></span>      |
+| [<span data-ttu-id="2b782-137">LOGURL</span><span class="sxs-lookup"><span data-stu-id="2b782-137">LOGURL</span></span>](logurl-element.md)                      | <span data-ttu-id="2b782-138">Indica a Windows Media Player que envíe los datos de registro a la dirección URL especificada.</span><span class="sxs-lookup"><span data-stu-id="2b782-138">Instructs Windows Media Player to submit any log data to the specified URL.</span></span>                                            |
+| [<span data-ttu-id="2b782-139">MOREINFO</span><span class="sxs-lookup"><span data-stu-id="2b782-139">MOREINFO</span></span>](moreinfo-element.md)                  | <span data-ttu-id="2b782-140">Especifica una dirección URL para un sitio web, una dirección de correo electrónico o un comando de script asociado a un programa, un clip o un banner.</span><span class="sxs-lookup"><span data-stu-id="2b782-140">Specifies a URL for a website, email address, or script command associated with a show, clip, or banner.</span></span>               |
+| [<span data-ttu-id="2b782-141">PARAM</span><span class="sxs-lookup"><span data-stu-id="2b782-141">PARAM</span></span>](param-element.md)                        | <span data-ttu-id="2b782-142">Especifica el valor de un parámetro personalizado asociado a una lista de reproducción o un elemento de una lista de reproducción.</span><span class="sxs-lookup"><span data-stu-id="2b782-142">Specifies the value of a custom parameter associated with a playlist or an element of a playlist.</span></span>                      |
+| [<span data-ttu-id="2b782-143">PREVIEWDURATION</span><span class="sxs-lookup"><span data-stu-id="2b782-143">PREVIEWDURATION</span></span>](previewduration-element.md)    | <span data-ttu-id="2b782-144">Especifica la cantidad de tiempo que se reproduce un clip en el modo de vista previa.</span><span class="sxs-lookup"><span data-stu-id="2b782-144">Specifies the length of time a clip is played in preview mode.</span></span>                                                         |
+| [<span data-ttu-id="2b782-145">CLI</span><span class="sxs-lookup"><span data-stu-id="2b782-145">REF</span></span>](ref-element.md)                            | <span data-ttu-id="2b782-146">Especifica una dirección URL para un fragmento de contenido multimedia digital.</span><span class="sxs-lookup"><span data-stu-id="2b782-146">Specifies a URL for a piece of digital media content.</span></span>                                                                  |
+| [<span data-ttu-id="2b782-147">PUEDEN</span><span class="sxs-lookup"><span data-stu-id="2b782-147">REPEAT</span></span>](repeat-element.md)                      | <span data-ttu-id="2b782-148">Especifica el número de veces que Windows Media Player repetirá uno o varios elementos de **entrada** o **ENTRYREF** .</span><span class="sxs-lookup"><span data-stu-id="2b782-148">Specifies the number of times Windows Media Player repeats one or more **ENTRY** or **ENTRYREF** elements.</span></span>             |
+| [<span data-ttu-id="2b782-149">MÁSCARA (desusado)</span><span class="sxs-lookup"><span data-stu-id="2b782-149">SKIN (deprecated)</span></span>](skin-element--deprecated.md) | <span data-ttu-id="2b782-150">Especifica una dirección URL a una máscara incrustada.</span><span class="sxs-lookup"><span data-stu-id="2b782-150">Specifies a URL to an embedded skin.</span></span>                                                                                   |
+| [<span data-ttu-id="2b782-151">STARTMARKER</span><span class="sxs-lookup"><span data-stu-id="2b782-151">STARTMARKER</span></span>](startmarker-element.md)            | <span data-ttu-id="2b782-152">Especifica un marcador en el que Windows Media Player inicia la representación de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="2b782-152">Specifies a marker at which Windows Media Player starts rendering the stream.</span></span>                                          |
+| [<span data-ttu-id="2b782-153">STARTTIME</span><span class="sxs-lookup"><span data-stu-id="2b782-153">STARTTIME</span></span>](starttime-element.md)                | <span data-ttu-id="2b782-154">Especifica la hora a la que Windows Media Player comenzará a representar la secuencia.</span><span class="sxs-lookup"><span data-stu-id="2b782-154">Specifies a time at which Windows Media Player will start rendering the stream.</span></span>                                        |
+| [<span data-ttu-id="2b782-155">Titulo</span><span class="sxs-lookup"><span data-stu-id="2b782-155">TITLE</span></span>](title-element--metafile.md)              | <span data-ttu-id="2b782-156">Contiene el título de un elemento **ASX** o **entry** .</span><span class="sxs-lookup"><span data-stu-id="2b782-156">Contains the title of an **ASX** or **ENTRY** element.</span></span>                                                                 |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+

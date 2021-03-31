@@ -1,0 +1,73 @@
+---
+title: Identificadores de producto de Microsoft Corporation
+description: Identificadores de producto de Microsoft Corporation
+ms.assetid: ef5403ea-1aaf-4791-865a-49d9feb44a4f
+keywords:
+- Windows multimedia, identificadores de producto
+- multimedia, identificadores de producto
+- identificadores de producto
+- identificadores de producto multimedia
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e3bfd9c777281a07ebd25b6b0df3f0f4336ea638
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104418660"
+---
+# <a name="microsoft-corporation-product-identifiers"></a><span data-ttu-id="de76b-107">Identificadores de producto de Microsoft Corporation</span><span class="sxs-lookup"><span data-stu-id="de76b-107">Microsoft Corporation Product Identifiers</span></span>
+
+
+
+| <span data-ttu-id="de76b-108">Nombre de producto</span><span class="sxs-lookup"><span data-stu-id="de76b-108">Product name</span></span>                             | <span data-ttu-id="de76b-109">Identificador</span><span class="sxs-lookup"><span data-stu-id="de76b-109">Identifier</span></span>                          |
+|------------------------------------------|-------------------------------------|
+| <span data-ttu-id="de76b-110">Sintetizador compatible con Adlib</span><span class="sxs-lookup"><span data-stu-id="de76b-110">Adlib-compatible synthesizer</span></span>             | <span data-ttu-id="de76b-111">MM \_ Adlib</span><span class="sxs-lookup"><span data-stu-id="de76b-111">MM\_ADLIB</span></span>                           |
+| <span data-ttu-id="de76b-112">Códec G. 711</span><span class="sxs-lookup"><span data-stu-id="de76b-112">G.711 codec</span></span>                              | <span data-ttu-id="de76b-113">MM \_ msft \_ ACM \_ G711</span><span class="sxs-lookup"><span data-stu-id="de76b-113">MM\_MSFT\_ACM\_G711</span></span>                 |
+| <span data-ttu-id="de76b-114">Códec GSM 610</span><span class="sxs-lookup"><span data-stu-id="de76b-114">GSM 610 codec</span></span>                            | <span data-ttu-id="de76b-115">MM \_ msft \_ ACM \_ GSM610</span><span class="sxs-lookup"><span data-stu-id="de76b-115">MM\_MSFT\_ACM\_GSM610</span></span>               |
+| <span data-ttu-id="de76b-116">Codec ADPCM IMA</span><span class="sxs-lookup"><span data-stu-id="de76b-116">IMA ADPCM codec</span></span>                          | <span data-ttu-id="de76b-117">MM \_ msft \_ ACM \_ IMAADPCM</span><span class="sxs-lookup"><span data-stu-id="de76b-117">MM\_MSFT\_ACM\_IMAADPCM</span></span>             |
+| <span data-ttu-id="de76b-118">Adaptador de joystick</span><span class="sxs-lookup"><span data-stu-id="de76b-118">Joystick adapter</span></span>                         | <span data-ttu-id="de76b-119">\_joystick de PC mm \_</span><span class="sxs-lookup"><span data-stu-id="de76b-119">MM\_PC\_JOYSTICK</span></span>                    |
+| <span data-ttu-id="de76b-120">Asignador MIDI</span><span class="sxs-lookup"><span data-stu-id="de76b-120">MIDI mapper</span></span>                              | <span data-ttu-id="de76b-121">\_asignador MIDI de mm \_</span><span class="sxs-lookup"><span data-stu-id="de76b-121">MM\_MIDI\_MAPPER</span></span>                    |
+| <span data-ttu-id="de76b-122">Puerto de entrada MIDI compatible con MPU 401</span><span class="sxs-lookup"><span data-stu-id="de76b-122">MPU 401-compatible MIDI input port</span></span>       | <span data-ttu-id="de76b-123">MM \_ MPU401 \_ MIDI</span><span class="sxs-lookup"><span data-stu-id="de76b-123">MM\_MPU401\_MIDIIN</span></span>                  |
+| <span data-ttu-id="de76b-124">Puerto de salida MIDI compatible con MPU 401</span><span class="sxs-lookup"><span data-stu-id="de76b-124">MPU 401-compatible MIDI output port</span></span>      | <span data-ttu-id="de76b-125">MM \_ MPU401 \_ MIDIOUT</span><span class="sxs-lookup"><span data-stu-id="de76b-125">MM\_MPU401\_MIDIOUT</span></span>                 |
+| <span data-ttu-id="de76b-126">Códec MS ADPCM</span><span class="sxs-lookup"><span data-stu-id="de76b-126">MS ADPCM codec</span></span>                           | <span data-ttu-id="de76b-127">MM \_ msft \_ ACM \_ MSADPCM</span><span class="sxs-lookup"><span data-stu-id="de76b-127">MM\_MSFT\_ACM\_MSADPCM</span></span>              |
+| <span data-ttu-id="de76b-128">Sintetizador FM estéreo de la tarjeta de audio de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-128">MS audio board stereo FM synthesizer</span></span>     | <span data-ttu-id="de76b-129">MM \_ msft \_ WSS \_ FMSYNTH \_ estéreo</span><span class="sxs-lookup"><span data-stu-id="de76b-129">MM\_MSFT\_WSS\_FMSYNTH\_STEREO</span></span>      |
+| <span data-ttu-id="de76b-130">Puerto auxiliar de la placa de audio de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-130">MS audio board aux port</span></span>                  | <span data-ttu-id="de76b-131">AUX de MM \_ msft \_ WSS \_</span><span class="sxs-lookup"><span data-stu-id="de76b-131">MM\_MSFT\_WSS\_AUX</span></span>                  |
+| <span data-ttu-id="de76b-132">Controlador de mezclador de panel de audio de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-132">MS audio board mixer driver</span></span>              | <span data-ttu-id="de76b-133">mesa de mezclas de MM \_ msft \_ WSS \_</span><span class="sxs-lookup"><span data-stu-id="de76b-133">MM\_MSFT\_WSS\_MIXER</span></span>                |
+| <span data-ttu-id="de76b-134">Entrada de onda de la placa de audio de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-134">MS audio board waveform input</span></span>            | <span data-ttu-id="de76b-135">\_onda de \_ WSS \_ msft de mm</span><span class="sxs-lookup"><span data-stu-id="de76b-135">MM\_MSFT\_WSS\_WAVEIN</span></span>               |
+| <span data-ttu-id="de76b-136">Salida de la mesa de onda de MS audio</span><span class="sxs-lookup"><span data-stu-id="de76b-136">MS audio board waveform output</span></span>           | <span data-ttu-id="de76b-137">MM \_ msft \_ WSS \_ WAVEOUT</span><span class="sxs-lookup"><span data-stu-id="de76b-137">MM\_MSFT\_WSS\_WAVEOUT</span></span>              |
+| <span data-ttu-id="de76b-138">Administrador de compresión de audio de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-138">MS audio compression manager</span></span>             | <span data-ttu-id="de76b-139">MM \_ msft \_ MSACM</span><span class="sxs-lookup"><span data-stu-id="de76b-139">MM\_MSFT\_MSACM</span></span>                     |
+| <span data-ttu-id="de76b-140">Filtro MS</span><span class="sxs-lookup"><span data-stu-id="de76b-140">MS filter</span></span>                                | <span data-ttu-id="de76b-141">MM \_ msft \_ ACM \_ MSFILTER</span><span class="sxs-lookup"><span data-stu-id="de76b-141">MM\_MSFT\_ACM\_MSFILTER</span></span>             |
+| <span data-ttu-id="de76b-142">Puerto AUX de audio de MS OEM</span><span class="sxs-lookup"><span data-stu-id="de76b-142">MS OEM audio aux port</span></span>                    | <span data-ttu-id="de76b-143">AUX cm de MM para \_ \_ OEM de WSS \_ \_</span><span class="sxs-lookup"><span data-stu-id="de76b-143">MM\_MSFT\_WSS\_OEM\_AUX</span></span>             |
+| <span data-ttu-id="de76b-144">Controlador del mezclador de la placa de audio OEM de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-144">MS OEM audio board mixer driver</span></span>          | <span data-ttu-id="de76b-145">\_mezclador de \_ \_ OEM \_ de cm de msft</span><span class="sxs-lookup"><span data-stu-id="de76b-145">MM\_MSFT\_WSS\_OEM\_MIXER</span></span>           |
+| <span data-ttu-id="de76b-146">Sintetizador FM estéreo de la placa de audio de Microsoft OEM</span><span class="sxs-lookup"><span data-stu-id="de76b-146">MS OEM audio board stereo FM synthesizer</span></span> | <span data-ttu-id="de76b-147">MM \_ msft \_ WSS \_ OEM \_ FMSYNTH \_ estéreo</span><span class="sxs-lookup"><span data-stu-id="de76b-147">MM\_MSFT\_WSS\_OEM\_FMSYNTH\_STEREO</span></span> |
+| <span data-ttu-id="de76b-148">Entrada de onda de la placa de audio OEM de MS</span><span class="sxs-lookup"><span data-stu-id="de76b-148">MS OEM audio board waveform input</span></span>        | <span data-ttu-id="de76b-149">MM \_ msft \_ WSS \_ OEM \_ waveen</span><span class="sxs-lookup"><span data-stu-id="de76b-149">MM\_MSFT\_WSS\_OEM\_WAVEIN</span></span>          |
+| <span data-ttu-id="de76b-150">Salida de interonda de panel de audio de MS OEM</span><span class="sxs-lookup"><span data-stu-id="de76b-150">MS OEM audio board waveform output</span></span>       | <span data-ttu-id="de76b-151">MM \_ msft \_ WSS \_ OEM \_ WAVEOUT</span><span class="sxs-lookup"><span data-stu-id="de76b-151">MM\_MSFT\_WSS\_OEM\_WAVEOUT</span></span>         |
+| <span data-ttu-id="de76b-152">AUX driver (CD) de MS vainilla</span><span class="sxs-lookup"><span data-stu-id="de76b-152">MS vanilla driver aux (CD)</span></span>               | <span data-ttu-id="de76b-153">\_CD de \_ \_ AUX genérico \_ de mm msft</span><span class="sxs-lookup"><span data-stu-id="de76b-153">MM\_MSFT\_GENERIC\_AUX\_CD</span></span>          |
+| <span data-ttu-id="de76b-154">Controlador de MS vainilla AUX (línea en)</span><span class="sxs-lookup"><span data-stu-id="de76b-154">MS vanilla driver aux (line in)</span></span>          | <span data-ttu-id="de76b-155">\_línea de \_ \_ AUX genérica \_ de mm msft</span><span class="sxs-lookup"><span data-stu-id="de76b-155">MM\_MSFT\_GENERIC\_AUX\_LINE</span></span>        |
+| <span data-ttu-id="de76b-156">AUX driver de MS (MIC)</span><span class="sxs-lookup"><span data-stu-id="de76b-156">MS vanilla driver aux (mic)</span></span>              | <span data-ttu-id="de76b-157">\_ \_ \_ MIC AUX genérico de mm msft \_</span><span class="sxs-lookup"><span data-stu-id="de76b-157">MM\_MSFT\_GENERIC\_AUX\_MIC</span></span>         |
+| <span data-ttu-id="de76b-158">Salida externa de MIDI de controlador de MS vainilla</span><span class="sxs-lookup"><span data-stu-id="de76b-158">MS vanilla driver MIDI external out</span></span>      | <span data-ttu-id="de76b-159">\_ \_ MIDIOUT genérico de mm msft \_</span><span class="sxs-lookup"><span data-stu-id="de76b-159">MM\_MSFT\_GENERIC\_MIDIOUT</span></span>          |
+| <span data-ttu-id="de76b-160">Controlador de MS vainilla MIDI en</span><span class="sxs-lookup"><span data-stu-id="de76b-160">MS vanilla driver MIDI in</span></span>                | <span data-ttu-id="de76b-161">\_MIDI msft \_ Generic de mm \_</span><span class="sxs-lookup"><span data-stu-id="de76b-161">MM\_MSFT\_GENERIC\_MIDIIN</span></span>           |
+| <span data-ttu-id="de76b-162">Sintetizador MIDI de controlador de MS vainilla</span><span class="sxs-lookup"><span data-stu-id="de76b-162">MS vanilla driver MIDI synthesizer</span></span>       | <span data-ttu-id="de76b-163">\_ \_ MIDISYNTH genérico de mm msft \_</span><span class="sxs-lookup"><span data-stu-id="de76b-163">MM\_MSFT\_GENERIC\_MIDISYNTH</span></span>        |
+| <span data-ttu-id="de76b-164">Entrada de onda de controlador de MS vainilla</span><span class="sxs-lookup"><span data-stu-id="de76b-164">MS vanilla driver waveform input</span></span>         | <span data-ttu-id="de76b-165">\_ \_ onda genérica de mm msft \_</span><span class="sxs-lookup"><span data-stu-id="de76b-165">MM\_MSFT\_GENERIC\_WAVEIN</span></span>           |
+| <span data-ttu-id="de76b-166">Salida de wavefrom de controlador de MS vainilla</span><span class="sxs-lookup"><span data-stu-id="de76b-166">MS vanilla driver wavefrom output</span></span>        | <span data-ttu-id="de76b-167">\_ \_ WAVEOUT genérico de mm msft \_</span><span class="sxs-lookup"><span data-stu-id="de76b-167">MM\_MSFT\_GENERIC\_WAVEOUT</span></span>          |
+| <span data-ttu-id="de76b-168">Salida de onda de altavoz de PC</span><span class="sxs-lookup"><span data-stu-id="de76b-168">PC speaker waveform output</span></span>               | <span data-ttu-id="de76b-169">MM \_ PCSPEAKER \_ WAVEOUT</span><span class="sxs-lookup"><span data-stu-id="de76b-169">MM\_PCSPEAKER\_WAVEOUT</span></span>              |
+| <span data-ttu-id="de76b-170">Convertidor PCM</span><span class="sxs-lookup"><span data-stu-id="de76b-170">PCM converter</span></span>                            | <span data-ttu-id="de76b-171">\_ \_ PCM ACM de mm msft \_</span><span class="sxs-lookup"><span data-stu-id="de76b-171">MM\_MSFT\_ACM\_PCM</span></span>                  |
+| <span data-ttu-id="de76b-172">Sintetizador interno de Sound Blaster</span><span class="sxs-lookup"><span data-stu-id="de76b-172">Sound Blaster internal synthesizer</span></span>       | <span data-ttu-id="de76b-173">\_ \_ sintetizador mm SNDBLST</span><span class="sxs-lookup"><span data-stu-id="de76b-173">MM\_SNDBLST\_SYNTH</span></span>                  |
+| <span data-ttu-id="de76b-174">Puerto de entrada MIDI de Sound Blaster</span><span class="sxs-lookup"><span data-stu-id="de76b-174">Sound Blaster MIDI input port</span></span>            | <span data-ttu-id="de76b-175">\_MIDI SNDBLST \_ mm</span><span class="sxs-lookup"><span data-stu-id="de76b-175">MM\_SNDBLST\_MIDIIN</span></span>                 |
+| <span data-ttu-id="de76b-176">Puerto de salida MIDI de Sound Blaster</span><span class="sxs-lookup"><span data-stu-id="de76b-176">Sound Blaster MIDI output port</span></span>           | <span data-ttu-id="de76b-177">MM \_ SNDBLST \_ MIDIOUT</span><span class="sxs-lookup"><span data-stu-id="de76b-177">MM\_SNDBLST\_MIDIOUT</span></span>                |
+| <span data-ttu-id="de76b-178">Entrada de onda de Sound Blaster</span><span class="sxs-lookup"><span data-stu-id="de76b-178">Sound Blaster waveform input</span></span>             | <span data-ttu-id="de76b-179">\_Wave SNDBLST \_ mm</span><span class="sxs-lookup"><span data-stu-id="de76b-179">MM\_SNDBLST\_WAVEIN</span></span>                 |
+| <span data-ttu-id="de76b-180">Salida de onda de Sound Blaster</span><span class="sxs-lookup"><span data-stu-id="de76b-180">Sound Blaster waveform output</span></span>            | <span data-ttu-id="de76b-181">MM \_ SNDBLST \_ WAVEOUT</span><span class="sxs-lookup"><span data-stu-id="de76b-181">MM\_SNDBLST\_WAVEOUT</span></span>                |
+| <span data-ttu-id="de76b-182">Asignador de onda</span><span class="sxs-lookup"><span data-stu-id="de76b-182">Wave mapper</span></span>                              | <span data-ttu-id="de76b-183">\_asignador de onda mm \_</span><span class="sxs-lookup"><span data-stu-id="de76b-183">MM\_WAVE\_MAPPER</span></span>                    |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
