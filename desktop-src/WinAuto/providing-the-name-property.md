@@ -1,0 +1,29 @@
+---
+title: Proporcionar la propiedad Name
+description: Los desarrolladores de servidores deben tener cuidado al crear controles predefinidos y comunes para asegurarse de que Microsoft Active Accessibility puede exponer la propiedad de nombre del control.
+ms.assetid: 2b4ec5ae-bda1-41e6-9387-6ee3cb6c3163
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 11d7a4c30c6bc228785a886d9a41717f8cdb8dda
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "103995351"
+---
+# <a name="providing-the-name-property"></a><span data-ttu-id="8b31f-103">Proporcionar la propiedad Name</span><span class="sxs-lookup"><span data-stu-id="8b31f-103">Providing the Name Property</span></span>
+
+<span data-ttu-id="8b31f-104">Los desarrolladores de servidores deben tener cuidado al crear controles predefinidos y comunes para asegurarse de que Microsoft Active Accessibility puede exponer la [propiedad de nombre](name-property.md) del control.</span><span class="sxs-lookup"><span data-stu-id="8b31f-104">Server developers must take care when creating predefined and common controls to ensure that Microsoft Active Accessibility can expose the [Name property](name-property.md) for the control.</span></span> <span data-ttu-id="8b31f-105">Dependiendo del tipo de control, el texto de la propiedad Name proviene de uno de los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="8b31f-105">Depending on the type of control, the text for the Name property comes from one of the following:</span></span>
+
+-   <span data-ttu-id="8b31f-106">Texto (o título) de la ventana del control</span><span class="sxs-lookup"><span data-stu-id="8b31f-106">The control's window text (or caption)</span></span>
+-   <span data-ttu-id="8b31f-107">Texto estático que etiqueta el control</span><span class="sxs-lookup"><span data-stu-id="8b31f-107">Static text that labels the control</span></span>
+
+<span data-ttu-id="8b31f-108">Para encontrar el texto de la ventana del control, Microsoft Active Accessibility envía el mensaje [**\_ GETTEXT de WM**](/windows/desktop/winmsg/wm-gettext) al control.</span><span class="sxs-lookup"><span data-stu-id="8b31f-108">To find the control's window text, Microsoft Active Accessibility sends the [**WM\_GETTEXT**](/windows/desktop/winmsg/wm-gettext) message to the control.</span></span> <span data-ttu-id="8b31f-109">Este texto corresponde al parámetro text de la instrucción de definición de recursos del control.</span><span class="sxs-lookup"><span data-stu-id="8b31f-109">This text corresponds to the text parameter in the control's resource definition statement.</span></span> <span data-ttu-id="8b31f-110">En algunos controles, como los botones, este es el mismo texto que se muestra con el control.</span><span class="sxs-lookup"><span data-stu-id="8b31f-110">For some controls, such as buttons, this is the same text that is displayed with the control.</span></span> <span data-ttu-id="8b31f-111">En el caso de otros controles, como las barras de herramientas, este texto no se muestra.</span><span class="sxs-lookup"><span data-stu-id="8b31f-111">For other controls, such as toolbars, this text is not displayed.</span></span> <span data-ttu-id="8b31f-112">Por lo tanto, los desarrolladores de servidores deben proporcionar texto significativo en la instrucción de definición de recursos del control para ayudar a los usuarios de las utilidades de cliente a identificar el control.</span><span class="sxs-lookup"><span data-stu-id="8b31f-112">Therefore, server developers must provide meaningful text in the control's resource definition statement to help users of client utilities identify the control.</span></span>
+
+<span data-ttu-id="8b31f-113">Para encontrar la etiqueta del control, Microsoft Active Accessibility busca un control de texto estático llamando a [**GetWindow**](/windows/desktop/api/winuser/nf-winuser-getwindow) con la \_ marca HWNDPREV de GW.</span><span class="sxs-lookup"><span data-stu-id="8b31f-113">To find the control's label, Microsoft Active Accessibility searches for a static text control by calling [**GetWindow**](/windows/desktop/api/winuser/nf-winuser-getwindow) with the GW\_HWNDPREV flag.</span></span> <span data-ttu-id="8b31f-114">La búsqueda se detiene si se encuentra un control de texto estático o si se encuentra un control con los estilos de ventana WS \_ Group \| WS \_ .</span><span class="sxs-lookup"><span data-stu-id="8b31f-114">The search is halted if a static text control is found, or if a control is encountered that has the window styles WS\_GROUP \| WS\_TABSTOP.</span></span> <span data-ttu-id="8b31f-115">Este orden de búsqueda corresponde al orden de tabulación inversa de un cuadro de diálogo.</span><span class="sxs-lookup"><span data-stu-id="8b31f-115">This search order corresponds to the reverse tab order on a dialog box.</span></span> <span data-ttu-id="8b31f-116">Los desarrolladores de servidores deben observar el orden de tabulación al crear controles para que un control de texto estático preceda inmediatamente al control que etiqueta.</span><span class="sxs-lookup"><span data-stu-id="8b31f-116">Server developers must observe the tab order when creating controls so that a static text control immediately precedes the control that it labels.</span></span>
+
+<span data-ttu-id="8b31f-117">Para obtener más información sobre las técnicas que Microsoft Active Accessibility usa para exponer la [propiedad Name](name-property.md), vea referencia de elementos de la [interfaz de usuario](user-interface-element-reference.md).</span><span class="sxs-lookup"><span data-stu-id="8b31f-117">For more information about the techniques that Microsoft Active Accessibility uses to expose the [Name property](name-property.md), see [User Interface Element Reference](user-interface-element-reference.md).</span></span>
+
+ 
+
+ 

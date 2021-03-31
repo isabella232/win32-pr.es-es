@@ -1,0 +1,47 @@
+---
+description: Tipos usados en las interfaces del dispensador de recursos COM+
+ms.assetid: f4b3a828-3d66-455c-9b0c-30086f3ffe23
+title: Tipos usados en las interfaces del dispensador de recursos COM+
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 81c4d0f62ec7c61a9bc0f189c1ee02d1868a3242
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103807633"
+---
+# <a name="types-used-in-com-resource-dispenser-interfaces"></a><span data-ttu-id="27eeb-103">Tipos usados en las interfaces del dispensador de recursos COM+</span><span class="sxs-lookup"><span data-stu-id="27eeb-103">Types Used in COM+ Resource Dispenser Interfaces</span></span>
+
+<span data-ttu-id="27eeb-104">Los tipos siguientes se usan en las interfaces dispensadoras de recursos.</span><span class="sxs-lookup"><span data-stu-id="27eeb-104">The following types are used in the resource dispenser interfaces.</span></span>
+
+
+
+| <span data-ttu-id="27eeb-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="27eeb-105">Type</span></span>           | <span data-ttu-id="27eeb-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="27eeb-106">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="27eeb-107">**RESTYPID**</span><span class="sxs-lookup"><span data-stu-id="27eeb-107">**RESTYPID**</span></span>   | <span data-ttu-id="27eeb-108">**DWORD** que identifica un tipo de recurso, no un recurso determinado.</span><span class="sxs-lookup"><span data-stu-id="27eeb-108">A **DWORD** that identifies a type of resource, not a particular resource.</span></span> <span data-ttu-id="27eeb-109">Un **RESTYPID** suele ser un puntero a una estructura en la memoria del dispensador que describe el tipo de recurso.</span><span class="sxs-lookup"><span data-stu-id="27eeb-109">A **RESTYPID** is usually a pointer to a structure in the dispenser's memory that describes the resource type.</span></span> <span data-ttu-id="27eeb-110">El administrador dispensador no entiende (y no necesita comprender) esta estructura dentro de la memoria del dispensador de recursos.</span><span class="sxs-lookup"><span data-stu-id="27eeb-110">The dispenser manager does not understand (and does not need to understand) this structure within the resource dispenser's memory.</span></span> <span data-ttu-id="27eeb-111">El gestor dispensador solo usa **RESTYPID** para hacer referencia a un tipo de recurso dentro de un dispensador de recursos.</span><span class="sxs-lookup"><span data-stu-id="27eeb-111">The dispenser manager uses **RESTYPID** only to refer to a resource type within a resource dispenser.</span></span>                                                                                                                                   |
+| <span data-ttu-id="27eeb-112">**RESID**</span><span class="sxs-lookup"><span data-stu-id="27eeb-112">**RESID**</span></span>      | <span data-ttu-id="27eeb-113">**DWORD** que identifica un recurso determinado, en lugar de un tipo de recurso.</span><span class="sxs-lookup"><span data-stu-id="27eeb-113">A **DWORD** that identifies a particular resource, as opposed to a type of resource.</span></span> <span data-ttu-id="27eeb-114">Un **Resid** suele ser (**void \* *_ _) que apunta a una estructura en la memoria del dispensador de recursos que representa el recurso. No es necesario que el administrador dispensador entienda esta estructura dentro de la memoria del dispensador de recursos. El gestor dispensador utiliza _* Resid** para hacer referencia a un recurso determinado dentro de un dispensador de recursos.</span><span class="sxs-lookup"><span data-stu-id="27eeb-114">A **RESID** is usually a (**void \**_) that points to a structure in the resource dispenser's memory that represents the resource. The dispenser manager does not need to understand this structure within the resource dispenser's memory. The dispenser manager uses _\* RESID*\* to refer to a particular resource within a resource dispenser.</span></span>                                                                                                                                 |
+| <span data-ttu-id="27eeb-115">**SRESID**</span><span class="sxs-lookup"><span data-stu-id="27eeb-115">**SRESID**</span></span>     | <span data-ttu-id="27eeb-116">Una versión de cadena Unicode de **Resid**, que se usa en los métodos [**IHolder:: TrackResourceS**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-trackresources) y [**IHolder:: UntrackResourceS**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-untrackresources) .</span><span class="sxs-lookup"><span data-stu-id="27eeb-116">A Unicode string version of **RESID**, used in the [**IHolder::TrackResourceS**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-trackresources) and [**IHolder::UntrackResourceS**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-untrackresources) methods.</span></span> <span data-ttu-id="27eeb-117">Las cadenas a veces son útiles cuando solo es necesario registrar una pequeña cantidad de información sobre un recurso y toda la descripción del recurso puede estar contenida en el **SRESID**.</span><span class="sxs-lookup"><span data-stu-id="27eeb-117">Strings are sometimes useful when only a small amount of information needs to be recorded about a resource and the entire description of the resource can be contained in the **SRESID**.</span></span> <span data-ttu-id="27eeb-118">En concreto, el uso de **SRESID** a veces puede eliminar la necesidad de una asignación en el dispensador de recursos cuando el recurso representa una relación entre dos (o más) cosas.</span><span class="sxs-lookup"><span data-stu-id="27eeb-118">In particular, using the **SRESID** can sometimes eliminate the need for a map in the resource dispenser when the resource represents a relationship between two (or more) things.</span></span> |
+| <span data-ttu-id="27eeb-119">**TRANSID**</span><span class="sxs-lookup"><span data-stu-id="27eeb-119">**TRANSID**</span></span>    | <span data-ttu-id="27eeb-120">Identifica una transacción.</span><span class="sxs-lookup"><span data-stu-id="27eeb-120">Identifies a transaction.</span></span> <span data-ttu-id="27eeb-121">Este tipo se puede convertir a la interfaz **ITransaction** .</span><span class="sxs-lookup"><span data-stu-id="27eeb-121">This type may be cast to the **ITransaction** interface.</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| <span data-ttu-id="27eeb-122">**TIMEINSECS**</span><span class="sxs-lookup"><span data-stu-id="27eeb-122">**TIMEINSECS**</span></span> | <span data-ttu-id="27eeb-123">Indica cuánto tiempo puede estar inactivo un recurso antes de que se destruya.</span><span class="sxs-lookup"><span data-stu-id="27eeb-123">Indicates how long a resource can be inactive before it is destroyed.</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="27eeb-124">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="27eeb-124">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="27eeb-125">Conceptos del dispensador de recursos COM+</span><span class="sxs-lookup"><span data-stu-id="27eeb-125">COM+ Resource Dispenser Concepts</span></span>](com--resource-dispenser-concepts.md)
+</dt> <dt>
+
+[<span data-ttu-id="27eeb-126">Interfaces dispensadoras de recursos COM+</span><span class="sxs-lookup"><span data-stu-id="27eeb-126">COM+ Resource Dispenser Interfaces</span></span>](com--resource-dispenser-interfaces.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
