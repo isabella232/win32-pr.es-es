@@ -1,0 +1,57 @@
+---
+description: Los objetos GDI solo admiten un identificador por objeto. Los identificadores de los objetos GDI son privados para un proceso. Es decir, solo el proceso que creó el objeto GDI puede utilizar el identificador de objeto.
+ms.assetid: 699de25c-083d-4be3-a997-67418b7173e1
+title: Objetos de GDI
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c0d57d4a1cfa99c392783dec23a090e7ccf09eb0
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104083496"
+---
+# <a name="gdi-objects"></a>Objetos de GDI
+
+Los objetos GDI solo admiten un identificador por objeto. Los identificadores de los objetos GDI son privados para un proceso. Es decir, solo el proceso que creó el objeto GDI puede utilizar el identificador de objeto.
+
+Hay un límite teórico de identificadores de GDI de 65.536 por sesión. Sin embargo, el número máximo de identificadores de GDI que se pueden abrir por sesión suele ser menor, ya que se ve afectado por la memoria disponible.
+
+**Windows 2000:** Hay un límite de identificadores de GDI de 16.384 por sesión.
+
+También hay un límite predeterminado por proceso de identificadores GDI. Para cambiar este límite, establezca el siguiente valor del registro:
+
+**HKEY \_ SOFTWARE de \_ equipo local** \\  \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Windows** \\ **GDIProcessHandleQuota**
+
+Este valor se puede establecer en un número entre 256 y 65.536.
+
+**Windows 2000:** Este valor se puede establecer en un número entre 256 y 16.384.
+
+## <a name="managing-gdi-objects"></a>Administrar objetos GDI
+
+En la tabla siguiente se enumeran los objetos GDI, junto con las funciones Creator y Destroy de cada objeto. Las funciones de creador crean el objeto y un identificador de objeto, o simplemente devuelven el identificador de objeto existente. Las funciones de destrucción quitan el objeto de la memoria, lo que invalida el identificador de objeto.
+
+
+
+| Objeto GDI           | Creator (función)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Función de destrucción                                           |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| Bitmap               | [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap), [**CreateBitmapIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createbitmapindirect), [**CreateCompatibleBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createcompatiblebitmap), [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap), [**CreateDIBSection**](/windows/desktop/api/wingdi/nf-wingdi-createdibsection), [**CreateDiscardableBitmap**](/windows/desktop/api/wingdi/nf-wingdi-creatediscardablebitmap)                                                                                                                                                                                 | [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)                         |
+| Pincel                | [**CreateBrushIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect), [**CreateDIBPatternBrush**](/windows/desktop/api/wingdi/nf-wingdi-createdibpatternbrush), [**CreateDIBPatternBrushPt**](/windows/desktop/api/wingdi/nf-wingdi-createdibpatternbrushpt), [**CreateHatchBrush**](/windows/desktop/api/wingdi/nf-wingdi-createhatchbrush), [**CreatePatternBrush**](/windows/desktop/api/wingdi/nf-wingdi-createpatternbrush), [**CreateSolidBrush**](/windows/desktop/api/wingdi/nf-wingdi-createsolidbrush)                                                                                                                                                                     | [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)                         |
+| DC                   | [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca)                                                                                                                                                                                                                                                                                                                                                                                                                                                             | [**DeleteDC**](/windows/desktop/api/wingdi/nf-wingdi-deletedc), [ **ReleaseDC**](/windows/desktop/api/winuser/nf-winuser-releasedc) |
+| Metarchivo mejorado    | [**CreateEnhMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-createenhmetafilea)                                                                                                                                                                                                                                                                                                                                                                                                                                           | [**DeleteEnhMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-deleteenhmetafile)               |
+| DC de metarchivo mejorado | [**CreateEnhMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-createenhmetafilea)                                                                                                                                                                                                                                                                                                                                                                                                                                           | [**CloseEnhMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-closeenhmetafile)                 |
+| Fuente                 | [**CreateFont**](/windows/desktop/api/wingdi/nf-wingdi-createfonta), [ **CreateFontIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createfontindirecta)                                                                                                                                                                                                                                                                                                                                                                                                       | [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)                         |
+| DC de memoria            | [**CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc)                                                                                                                                                                                                                                                                                                                                                                                                                                         | [**DeleteDC**](/windows/desktop/api/wingdi/nf-wingdi-deletedc)                                 |
+| Metarchivo de              | [**CreateMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-createmetafilea)                                                                                                                                                                                                                                                                                                                                                                                                                                                 | [**DeleteMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile)                     |
+| Metarchivo de DC          | [**CreateMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-createmetafilea)                                                                                                                                                                                                                                                                                                                                                                                                                                                 | [**CloseMetaFile**](/windows/desktop/api/wingdi/nf-wingdi-closemetafile)                       |
+| Paleta              | [**CreatePalette**](/windows/desktop/api/wingdi/nf-wingdi-createpalette)                                                                                                                                                                                                                                                                                                                                                                                                                                                   | [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)                         |
+| Lápiz y lápiz extendido | [**CreatePen**](/windows/desktop/api/wingdi/nf-wingdi-createpen), [**CreatePenIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createpenindirect), [**ExtCreatePen**](/windows/desktop/api/wingdi/nf-wingdi-extcreatepen)                                                                                                                                                                                                                                                                                                                                                                     | [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)                         |
+| Region               | [**CombineRgn**](/windows/desktop/api/wingdi/nf-wingdi-combinergn), [**CreateEllipticRgn**](/windows/desktop/api/wingdi/nf-wingdi-createellipticrgn), [**CreateEllipticRgnIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createellipticrgnindirect), [**CreatePolygonRgn**](/windows/desktop/api/wingdi/nf-wingdi-createpolygonrgn), [**CreatePolyPolygonRgn**](/windows/desktop/api/wingdi/nf-wingdi-createpolypolygonrgn), [**CreateRectRgn**](/windows/desktop/api/wingdi/nf-wingdi-createrectrgn), [**CreateRectRgnIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createrectrgnindirect), [**CreateRoundRectRgn**](/windows/desktop/api/wingdi/nf-wingdi-createroundrectrgn), [**ExtCreateRegion**](/windows/desktop/api/wingdi/nf-wingdi-extcreateregion), [**PathToRegion**](/windows/desktop/api/wingdi/nf-wingdi-pathtoregion) | [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)                         |
+
+
+
+ 
+
+ 
+
+ 

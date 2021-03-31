@@ -1,0 +1,114 @@
+---
+title: Propiedades y patrones de control de la automatización de la interfaz de usuario
+description: Al utilizar la automatización de la interfaz de usuario de Microsoft, los clientes suelen necesitar recuperar varias propiedades para varios elementos de automatización.
+ms.assetid: 948b3bb9-75a9-4197-9680-e6fe7bb86feb
+keywords:
+- almacenamiento en caché, propiedades de UI Automation
+- almacenar en caché, propiedades
+- almacenamiento en caché, patrones de control de UI Automation
+- almacenamiento en caché, patrones de control
+- Automatización de la interfaz de usuario, propiedades de almacenamiento en caché
+- Automatización de la interfaz de usuario, almacenamiento en caché de propiedades
+- clientes, propiedades de UI Automation de almacenamiento en caché
+- clientes, patrones de control de UI Automation de almacenamiento en caché
+- UI Automation, patrones de control de almacenamiento en caché
+- UI Automation, almacenamiento en caché de patrones de control
+- patrones de control, almacenamiento en caché
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 69f75a7dc9491565fdfdc0ecc73808c2fb6a9d82
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104418516"
+---
+# <a name="caching-ui-automation-properties-and-control-patterns"></a>Propiedades y patrones de control de la automatización de la interfaz de usuario
+
+Al utilizar la automatización de la interfaz de usuario de Microsoft, los clientes suelen necesitar recuperar varias propiedades para varios elementos de automatización. Un cliente podría recuperar propiedades individuales de un elemento a la vez mediante los métodos de recuperación de la propiedad, como [**IUIAutomationElement:: CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CurrentAccessKey**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentaccesskey). Sin embargo, este método es lento e ineficiente porque requiere una llamada entre procesos para cada propiedad que se va a recuperar. Para mejorar el rendimiento, los clientes pueden usar la funcionalidad de almacenamiento en caché (también denominada captura masiva) de la automatización de la interfaz de usuario. Caching permite que un cliente recupere todas las propiedades deseadas para todos los elementos deseados con una única llamada al método. A continuación, el cliente puede recuperar las propiedades individuales de la memoria caché según sea necesario y puede obtener una nueva instantánea de la memoria caché periódicamente, generalmente en respuesta a eventos que indican cambios en la interfaz de usuario.
+
+La aplicación puede solicitar el almacenamiento en caché cuando recupera un elemento de automatización de la interfaz de usuario mediante un método, como [**IUIAutomation:: ElementFromPointBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompointbuildcache), [**IUIAutomationTreeWalker:: GetFirstChildElementBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-getfirstchildelementbuildcache)o [**IUIAutomationElement:: FindFirstBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirstbuildcache).
+
+El almacenamiento en caché también se produce cuando se especifica una solicitud de caché durante la suscripción a eventos. El elemento de automatización de la interfaz de usuario que se pasa al controlador de eventos como origen de un evento contiene las propiedades y los patrones de control almacenados en caché especificados por la solicitud de caché. Los cambios realizados en la solicitud de caché después de suscribirse al evento no tienen ningún efecto.
+
+En este tema se incluyen las siguientes secciones.
+
+-   [Solicitudes de caché](#cache-requests)
+    -   [Especificar patrones de propiedades y controles para almacenar en caché](#specifying-property-and-control-patterns-to-cache)
+    -   [Especificar el ámbito y el filtrado de una solicitud de almacenamiento en caché](#specifying-the-scoping-and-filtering-of-a-caching-request)
+    -   [Solidez de las referencias de elemento](#strength-of-element-references)
+-   [Recuperación de elementos primarios y secundarios almacenados en caché](#retrieving-cached-children-and-parents)
+-   [Recuperación de una nueva instantánea de la memoria caché](#retrieving-a-new-snapshot-of-the-cache)
+-   [Ejemplos](#examples)
+-   [Temas relacionados](#related-topics)
+
+## <a name="cache-requests"></a>Solicitudes de caché
+
+El almacenamiento en caché implica determinar las propiedades que se van a recuperar y los elementos de los que se van a recuperar y, a continuación, utilizar esta información para crear una solicitud de caché. Siempre que el cliente obtiene una interfaz [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) para el elemento de interfaz de usuario, la automatización de la interfaz de usuario almacena en memoria caché la información que se especifica en la solicitud de caché.
+
+Para crear una solicitud de caché, empiece usando el método [**IUIAutomation:: CreateCacheRequest**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createcacherequest) para recuperar un puntero de interfaz [**IUIAutomationCacheRequest**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationcacherequest) . A continuación, configure la solicitud de caché mediante los métodos de **IUIAutomationCacheRequest**.
+
+### <a name="specifying-property-and-control-patterns-to-cache"></a>Especificar patrones de propiedades y controles para almacenar en caché
+
+Puede especificar las propiedades que se van a almacenar en caché mediante una llamada a [**IUIAutomationCacheRequest:: AddProperty**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addproperty). Puede especificar los patrones de control que se van a almacenar en caché mediante una llamada a [**IUIAutomationCacheRequest:: AddPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addpattern). Cuando un patrón de control se almacena en caché, sus propiedades no se almacenan en caché automáticamente; debe especificar las propiedades que desea almacenar en caché mediante **AddProperty**.
+
+Puede recuperar una propiedad de patrón de control (por ejemplo, la propiedad Value del patrón de control [Value](uiauto-implementingvalue.md) ), sin tener que recuperar el patrón de control completo en la memoria caché. Debe recuperar el patrón de control solo si necesita usar un método de patrón de control.
+
+### <a name="specifying-the-scoping-and-filtering-of-a-caching-request"></a>Especificar el ámbito y el filtrado de una solicitud de almacenamiento en caché
+
+Puede especificar los elementos cuyas propiedades y patrones de control desea almacenar en caché estableciendo la propiedad [**IUIAutomationCacheRequest:: TreeScope**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treescope) antes de usar la solicitud. El ámbito es relativo a los elementos recuperados por el método al que se pasa la solicitud de caché. Por ejemplo, si establece solo [**\_ elementos secundarios de TreeScope**](/windows/desktop/api/UIAutomationClient/ne-uiautomationclient-treescope)y, a continuación, recupera un elemento de automatización de la interfaz de usuario, las propiedades y los patrones de control de los elementos secundarios de ese elemento se almacenan en caché, pero las propiedades y los patrones de control del propio elemento no se almacenan en caché. Para asegurarse de que el almacenamiento en caché se realiza para el propio elemento recuperado, debe incluir el **\_ elemento TreeScope** en la propiedad **IUIAutomationCacheRequest:: TreeScope** . No es posible establecer el ámbito en los **\_ antecesores** **\_ primarios** de TreeScope o en TreeScope. Sin embargo, es posible almacenar en caché un elemento primario cuando se almacena un elemento secundario en caché; consulte la sección Recuperación de elementos primarios y secundarios almacenados en caché de este tema.
+
+La extensión del almacenamiento en caché también se ve afectada por la propiedad [**IUIAutomationCacheRequest:: TreeFilter**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treefilter) . De forma predeterminada, el almacenamiento en caché se realiza solo para los elementos que aparecen en la vista de control del árbol de automatización de la interfaz de usuario. Sin embargo, puede cambiar esta propiedad para aplicar el almacenamiento en caché a todos los elementos o solo a los que aparecen en la vista de contenido.
+
+### <a name="strength-of-element-references"></a>Solidez de las referencias de elemento
+
+Cuando se recupera un elemento de automatización, de forma predeterminada se tiene acceso a todas las propiedades y patrones de control de ese elemento, incluidas las propiedades y los patrones de control que no se almacenaron en caché. Sin embargo, puede especificar que la referencia al elemento solo haga referencia a los datos almacenados en caché; para ello, establezca la propiedad [**IUIAutomationCacheRequest:: AutomationElementMode**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_automationelementmode) en **AutomationElementMode \_ None**. En este caso, no tiene acceso a las propiedades y los patrones de control no almacenados en la caché de los elementos recuperados. Esto significa que no se puede tener acceso a las propiedades actuales como [**IUIAutomationElement:: CurrentIsEnabled**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentisenabled) ni recuperar un patrón de control mediante [**IUIAutomationElement:: GetCurrentPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpattern). En los patrones de control almacenados en caché, no se puede llamar a métodos que realizan acciones en el control, como [**IUIAutomationInvokePattern:: Invoke**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationinvokepattern-invoke).
+
+Un ejemplo de una aplicación que podría no necesitar referencias completas a objetos es un lector de pantalla, que podría capturar previamente las propiedades de nombre y tipo de control de los elementos de una ventana sin necesidad de los propios objetos de elemento de automatización.
+
+## <a name="retrieving-cached-children-and-parents"></a>Recuperación de elementos primarios y secundarios almacenados en caché
+
+Al recuperar un elemento de automatización y solicitar el almacenamiento en caché para los elementos secundarios de ese elemento a través de la propiedad [**IUIAutomationCacheRequest:: TreeScope**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treescope) de la solicitud, es posible obtener los elementos secundarios llamando a [**IUIAutomationElement:: GetCachedChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedchildren) en el elemento que recuperó.
+
+Si [**el \_ elemento TreeScope**](/windows/desktop/api/UIAutomationClient/ne-uiautomationclient-treescope) se incluyó en el ámbito de la solicitud de caché, el elemento raíz de la solicitud se puede recuperar llamando a [**IUIAutomationElement:: GetCachedParent**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedparent) en cualquiera de los elementos secundarios.
+
+> [!Note]  
+> No se pueden almacenar en caché los elementos primarios o antecesores del elemento raíz de la solicitud.
+
+ 
+
+## <a name="retrieving-a-new-snapshot-of-the-cache"></a>Recuperación de una nueva instantánea de la memoria caché
+
+La memoria caché solo es válida siempre y cuando no cambie nada en la interfaz de usuario. La aplicación es responsable de recuperar una nueva instantánea de la memoria caché, normalmente, en respuesta a los eventos.
+
+Si se suscribe a un evento con una solicitud de caché, se obtiene una nueva instantánea de [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) de la memoria caché como origen del evento cada vez que se llama al controlador de eventos. También puede recuperar una nueva instantánea de la información almacenada en caché para un elemento mediante una llamada a [**IUIAutomationElement:: BuildUpdatedCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-buildupdatedcache). Puede pasar el [**IUIAutomationCacheRequest**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationcacherequest) original para obtener una nueva instantánea de toda la información que se almacenó previamente en la memoria caché.
+
+La recuperación de una nueva instantánea de la memoria caché no modifica las propiedades de las referencias de [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) existentes.
+
+## <a name="examples"></a>Ejemplos
+
+Para ver ejemplos de código que muestran cómo usar las capacidades de almacenamiento en caché de la automatización de la interfaz de usuario, consulte [Cómo usar el almacenamiento en caché](uiauto-howto-use-caching.md).
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+**Vista**
+</dt> <dt>
+
+[Información general acerca de los patrones de control de UI Automation](uiauto-controlpatternsoverview.md)
+</dt> <dt>
+
+[Obtener elementos de UI Automation](uiauto-obtainingelements.md)
+</dt> <dt>
+
+[Información general acerca de las propiedades de UI Automation](uiauto-propertiesoverview.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
