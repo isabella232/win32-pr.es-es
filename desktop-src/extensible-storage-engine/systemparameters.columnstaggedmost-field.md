@@ -31,14 +31,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104277087"
 ---
-# <a name="systemparameterscolumnstaggedmost-field"></a>SystemParameters. ColumnsTaggedMost, campo
+# <a name="systemparameterscolumnstaggedmost-field"></a><span data-ttu-id="bbd76-103">SystemParameters. ColumnsTaggedMost, campo</span><span class="sxs-lookup"><span data-stu-id="bbd76-103">SystemParameters.ColumnsTaggedMost field</span></span>
 
-Número máximo de columnas etiquetadas permitidas en una tabla.
+<span data-ttu-id="bbd76-104">Número máximo de columnas etiquetadas permitidas en una tabla.</span><span class="sxs-lookup"><span data-stu-id="bbd76-104">Maximum number of tagged columns allowed in a table.</span></span>
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+<span data-ttu-id="bbd76-105">**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bbd76-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="bbd76-106">**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bbd76-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a><span data-ttu-id="bbd76-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="bbd76-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = SystemParameters.ColumnsTaggedMost
 public const int ColumnsTaggedMost
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a><span data-ttu-id="bbd76-108">Consulte también</span><span class="sxs-lookup"><span data-stu-id="bbd76-108">See also</span></span>
 
-#### <a name="reference"></a>Referencia
+#### <a name="reference"></a><span data-ttu-id="bbd76-109">Referencia</span><span class="sxs-lookup"><span data-stu-id="bbd76-109">Reference</span></span>
 
-[SystemParameters (clase)](./systemparameters-class.md)
+[<span data-ttu-id="bbd76-110">SystemParameters (clase)</span><span class="sxs-lookup"><span data-stu-id="bbd76-110">SystemParameters class</span></span>](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[<span data-ttu-id="bbd76-111">Miembros de SystemParameters</span><span class="sxs-lookup"><span data-stu-id="bbd76-111">SystemParameters members</span></span>](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="bbd76-112">Espacio de nombres Microsoft. ISAM. esent. Interop</span><span class="sxs-lookup"><span data-stu-id="bbd76-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
