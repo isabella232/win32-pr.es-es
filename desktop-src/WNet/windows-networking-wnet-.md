@@ -1,0 +1,31 @@
+---
+title: Redes de Windows (WNet)
+description: Las funciones de red de Windows (WNet) le permiten implementar capacidades de red en la aplicación sin que se realicen provisiones para un proveedor de red determinado o una implementación de red física.
+ms.assetid: 7668ac55-7104-4ddb-88eb-920cfe4e36fd
+keywords:
+- Windows Networking WNet
+- WNet WNet
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e4d436ec5c5daec52d73a3a6f7942bcc76ef4251
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103903867"
+---
+# <a name="windows-networking-wnet"></a>Redes de Windows (WNet)
+
+Las funciones de red de Windows (WNet) le permiten implementar capacidades de red en la aplicación sin que se realicen provisiones para un proveedor de red determinado o una implementación de red física. Esto se debe a que las funciones de WNet son independientes de la red.
+
+-   [Acerca de las redes de Windows](about-windows-networking.md)
+-   [Uso de redes de Windows](using-windows-networking.md)
+-   [Referencia de redes de Windows](windows-networking-reference.md)
+
+ 
+
+ 
+
+
+
+
