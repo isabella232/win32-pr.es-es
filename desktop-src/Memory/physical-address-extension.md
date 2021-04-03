@@ -1,0 +1,79 @@
+---
+description: La extensión de dirección física (PAE) es una característica del procesador que permite a los procesadores x86 tener acceso a más de 4 GB de memoria física en versiones compatibles de Windows.
+ms.assetid: 1aec2414-cc93-4a86-955d-2433360c9125
+title: Extensión de dirección física
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 5cd313c1025eaaf4859436aebef90288c6d3fe49
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104083473"
+---
+# <a name="physical-address-extension"></a><span data-ttu-id="aea5a-103">Extensión de dirección física</span><span class="sxs-lookup"><span data-stu-id="aea5a-103">Physical Address Extension</span></span>
+
+<span data-ttu-id="aea5a-104">La extensión de dirección física (PAE) es una característica del procesador que permite a los procesadores x86 tener acceso a más de 4 GB de memoria física en versiones compatibles de Windows.</span><span class="sxs-lookup"><span data-stu-id="aea5a-104">Physical Address Extension (PAE) is a processor feature that enables x86 processors to access more than 4 GB of physical memory on capable versions of Windows.</span></span> <span data-ttu-id="aea5a-105">Ciertas versiones de 32 bits de Windows Server que se ejecutan en sistemas basados en x86 pueden usar PAE para tener acceso a hasta 64 GB o 128 GB de memoria física, en función del tamaño de la dirección física del procesador.</span><span class="sxs-lookup"><span data-stu-id="aea5a-105">Certain 32-bit versions of Windows Server running on x86-based systems can use PAE to access up to 64 GB or 128 GB of physical memory, depending on the physical address size of the processor.</span></span> <span data-ttu-id="aea5a-106">Para obtener más información, consulte [límites de memoria para las versiones de Windows](memory-limits-for-windows-releases.md).</span><span class="sxs-lookup"><span data-stu-id="aea5a-106">For details, see [Memory Limits for Windows Releases](memory-limits-for-windows-releases.md).</span></span>
+
+<span data-ttu-id="aea5a-107">Las arquitecturas de procesador Intel Itanium y x64 pueden tener acceso de forma nativa a más de 4 GB de memoria física y, por tanto, no proporcionan el equivalente de PAE.</span><span class="sxs-lookup"><span data-stu-id="aea5a-107">The Intel Itanium and x64 processor architectures can access more than 4 GB of physical memory natively and therefore do not provide the equivalent of PAE.</span></span> <span data-ttu-id="aea5a-108">PAE solo se usa en las versiones de 32 de Windows que se ejecutan en sistemas basados en x86.</span><span class="sxs-lookup"><span data-stu-id="aea5a-108">PAE is used only by 32-bit versions of Windows running on x86-based systems.</span></span>
+
+<span data-ttu-id="aea5a-109">Con PAE, el sistema operativo pasa de la traducción de direcciones lineales de dos niveles a la traducción de direcciones de tres niveles.</span><span class="sxs-lookup"><span data-stu-id="aea5a-109">With PAE, the operating system moves from two-level linear address translation to three-level address translation.</span></span> <span data-ttu-id="aea5a-110">En lugar de dividir una dirección lineal en tres campos independientes para la indexación en tablas de memoria, se divide en cuatro campos independientes: un campo de bits de 2 bits, campos de bits de 2 9 bits y un campo de bits de 12 bits que corresponde al tamaño de página implementado por la arquitectura de Intel (4 KB).</span><span class="sxs-lookup"><span data-stu-id="aea5a-110">Instead of a linear address being split into three separate fields for indexing into memory tables, it is split into four separate fields: a 2-bit bitfield, two 9-bit bitfields, and a 12-bit bitfield that corresponds to the page size implemented by Intel architecture (4 KB).</span></span> <span data-ttu-id="aea5a-111">El tamaño de las entradas de la tabla de páginas (PTE) y las entradas del directorio de páginas (PDEs) en modo PAE se incrementa de 32 a 64 bits.</span><span class="sxs-lookup"><span data-stu-id="aea5a-111">The size of page table entries (PTEs) and page directory entries (PDEs) in PAE mode is increased from 32 to 64 bits.</span></span> <span data-ttu-id="aea5a-112">Los bits adicionales permiten que un sistema operativo PTE o PDE haga referencia a la memoria física por encima de 4 GB.</span><span class="sxs-lookup"><span data-stu-id="aea5a-112">The additional bits allow an operating system PTE or PDE to reference physical memory above 4 GB.</span></span>
+
+<span data-ttu-id="aea5a-113">En Windows de 32 bits que se ejecuta en sistemas basados en x64, PAE también habilita varias características avanzadas del sistema y el procesador, como la [prevención de ejecución de datos](data-execution-prevention.md) (DEP) habilitada para hardware, el acceso a [memoria no uniforme (Numa)](../procthread/numa-support.md)y la capacidad de agregar memoria a un sistema mientras se ejecuta (agregar memoria en caliente).</span><span class="sxs-lookup"><span data-stu-id="aea5a-113">In 32-bit Windows running on x64-based systems, PAE also enables several advanced system and processor features, including hardware-enabled [Data Execution Prevention](data-execution-prevention.md) (DEP), [non-uniform memory access (NUMA)](../procthread/numa-support.md), and the ability to add memory to a system while it is running (hot-add memory).</span></span>
+
+<span data-ttu-id="aea5a-114">PAE no cambia la cantidad de espacio de direcciones virtuales disponible para un proceso.</span><span class="sxs-lookup"><span data-stu-id="aea5a-114">PAE does not change the amount of virtual address space available to a process.</span></span> <span data-ttu-id="aea5a-115">Cada proceso que se ejecuta en Windows de 32 bits sigue estando limitado a un espacio de direcciones virtuales de 4 GB.</span><span class="sxs-lookup"><span data-stu-id="aea5a-115">Each process running in 32-bit Windows is still limited to a 4 GB virtual address space.</span></span>
+
+## <a name="system-support-for-pae"></a><span data-ttu-id="aea5a-116">Compatibilidad del sistema con PAE</span><span class="sxs-lookup"><span data-stu-id="aea5a-116">System Support for PAE</span></span>
+
+<span data-ttu-id="aea5a-117">PAE solo se admite en las siguientes versiones de 32 bits de Windows que se ejecutan en sistemas basados en x86:</span><span class="sxs-lookup"><span data-stu-id="aea5a-117">PAE is supported only on the following 32-bit versions of Windows running on x86-based systems:</span></span>
+
+-   <span data-ttu-id="aea5a-118">Windows 7 (solo 32 bits)</span><span class="sxs-lookup"><span data-stu-id="aea5a-118">Windows 7 (32 bit only)</span></span>
+-   <span data-ttu-id="aea5a-119">Windows Server 2008 (solo 32 bits)</span><span class="sxs-lookup"><span data-stu-id="aea5a-119">Windows Server 2008 (32-bit only)</span></span>
+-   <span data-ttu-id="aea5a-120">Windows Vista (solo 32 bits)</span><span class="sxs-lookup"><span data-stu-id="aea5a-120">Windows Vista (32-bit only)</span></span>
+-   <span data-ttu-id="aea5a-121">Windows Server 2003 (solo 32 bits)</span><span class="sxs-lookup"><span data-stu-id="aea5a-121">Windows Server 2003 (32-bit only)</span></span>
+-   <span data-ttu-id="aea5a-122">Windows XP (solo 32 bits)</span><span class="sxs-lookup"><span data-stu-id="aea5a-122">Windows XP (32-bit only)</span></span>
+
+## <a name="enabling-pae"></a><span data-ttu-id="aea5a-123">Habilitar PAE</span><span class="sxs-lookup"><span data-stu-id="aea5a-123">Enabling PAE</span></span>
+
+<span data-ttu-id="aea5a-124">Windows habilita automáticamente PAE Si DEP está habilitado en un equipo que admita DEP habilitada para el hardware o si el equipo está configurado para dispositivos de memoria de adición en caliente en intervalos de memoria superiores a 4 GB.</span><span class="sxs-lookup"><span data-stu-id="aea5a-124">Windows automatically enables PAE if DEP is enabled on a computer that supports hardware-enabled DEP, or if the computer is configured for hot-add memory devices in memory ranges beyond 4 GB.</span></span> <span data-ttu-id="aea5a-125">Si el equipo no es compatible con DEP habilitado para hardware o no está configurado para dispositivos de memoria de adición en caliente en intervalos de memoria superiores a 4 GB, PAE debe estar habilitado explícitamente.</span><span class="sxs-lookup"><span data-stu-id="aea5a-125">If the computer does not support hardware-enabled DEP or is not configured for hot-add memory devices in memory ranges beyond 4 GB, PAE must be explicitly enabled.</span></span>
+
+<span data-ttu-id="aea5a-126">Para habilitar de forma explícita PAE, use el siguiente comando de [**bcdedit/Set**](/windows-hardware/drivers/devtest/bcdedit--set) para establecer la opción de entrada de arranque **PAE** :</span><span class="sxs-lookup"><span data-stu-id="aea5a-126">To explicitly enable PAE, use the following [**BCDEdit /set**](/windows-hardware/drivers/devtest/bcdedit--set) command to set the **pae** boot entry option:</span></span>
+
+ <span data-ttu-id="aea5a-127">**bcdedit/set \[ {ID} \] PAE ForceEnable**</span><span class="sxs-lookup"><span data-stu-id="aea5a-127">**bcdedit /set \[{ID}\] pae ForceEnable**</span></span>  
+
+
+<span data-ttu-id="aea5a-128">Si DEP está habilitado, PAE no se puede deshabilitar.</span><span class="sxs-lookup"><span data-stu-id="aea5a-128">IF DEP is enabled, PAE cannot be disabled.</span></span> <span data-ttu-id="aea5a-129">Use los siguientes comandos de [**bcdedit/Set**](/windows-hardware/drivers/devtest/bcdedit--set) para deshabilitar DEP y PAE:</span><span class="sxs-lookup"><span data-stu-id="aea5a-129">Use the following [**BCDEdit /set**](/windows-hardware/drivers/devtest/bcdedit--set) commands to disable both DEP and PAE:</span></span>
+
+ <span data-ttu-id="aea5a-130">**bcdedit/set \[ {ID} \] NX AlwaysOff**</span><span class="sxs-lookup"><span data-stu-id="aea5a-130">**bcdedit /set \[{ID}\] nx AlwaysOff**</span></span>  
+<span data-ttu-id="aea5a-131">**bcdedit/set \[ {ID} \] PAE ForceDisable**</span><span class="sxs-lookup"><span data-stu-id="aea5a-131">**bcdedit /set \[{ID}\] pae ForceDisable**</span></span>  
+
+
+<span data-ttu-id="aea5a-132">**Windows Server 2003 y Windows XP:** Para habilitar PAE, use el modificador **/PAE** en el archivo de [boot.ini](/windows-hardware/drivers/devtest/overview-of-the-boot-ini-file) .</span><span class="sxs-lookup"><span data-stu-id="aea5a-132">**Windows Server 2003 and Windows XP:** To enable PAE, use the **/PAE** switch in the [boot.ini](/windows-hardware/drivers/devtest/overview-of-the-boot-ini-file) file.</span></span> <span data-ttu-id="aea5a-133">Para deshabilitar PAE, use el conmutador **/NOPAE** .</span><span class="sxs-lookup"><span data-stu-id="aea5a-133">To disable PAE, use the **/NOPAE** switch.</span></span> <span data-ttu-id="aea5a-134">Para deshabilitar DEP, use el modificador **/Execute** .</span><span class="sxs-lookup"><span data-stu-id="aea5a-134">To disable DEP, use the **/EXECUTE** switch.</span></span>
+
+## <a name="comparing-pae-and-other-large-memory-support"></a><span data-ttu-id="aea5a-135">Comparar PAE y otra compatibilidad con memoria grande</span><span class="sxs-lookup"><span data-stu-id="aea5a-135">Comparing PAE and other Large Memory Support</span></span>
+
+<span data-ttu-id="aea5a-136">PAE, [la optimización de 4 gigabytes](4-gigabyte-tuning.md) (4GT) y [las extensiones de ventana de dirección](address-windowing-extensions.md) (AWE) sirven para distintos propósitos y se pueden usar de forma independiente entre sí:</span><span class="sxs-lookup"><span data-stu-id="aea5a-136">PAE, [4-gigabyte tuning](4-gigabyte-tuning.md) (4GT), and [Address Windowing Extensions](address-windowing-extensions.md) (AWE) serve different purposes and can be used independently of each other:</span></span>
+
+-   <span data-ttu-id="aea5a-137">PAE permite que el sistema operativo tenga acceso y use más de 4 GB de memoria física.</span><span class="sxs-lookup"><span data-stu-id="aea5a-137">PAE allows the operating system to access and use more than 4 GB of physical memory.</span></span>
+-   <span data-ttu-id="aea5a-138">4GT aumenta la parte del espacio de direcciones virtuales que está disponible para un proceso de 2 GB a hasta 3 GB.</span><span class="sxs-lookup"><span data-stu-id="aea5a-138">4GT increases the portion of the virtual address space that is available to a process from 2 GB to up to 3 GB.</span></span>
+-   <span data-ttu-id="aea5a-139">AWE es un conjunto de API que permite a un proceso asignar memoria física no paginada y, después, asignar de forma dinámica partes de esta memoria en el espacio de direcciones virtuales del proceso.</span><span class="sxs-lookup"><span data-stu-id="aea5a-139">AWE is a set of APIs that allows a process to allocate nonpaged physical memory and then dynamically map portions of this memory into the virtual address space of the process.</span></span>
+
+<span data-ttu-id="aea5a-140">Cuando no se utilizan 4GT ni AWE, la cantidad de memoria física que puede usar un único proceso de 32 bits está limitada por el tamaño de su espacio de direcciones (2 GB).</span><span class="sxs-lookup"><span data-stu-id="aea5a-140">When neither 4GT nor AWE are being used, the amount of physical memory that a single 32-bit process can use is limited by the size of its address space (2 GB).</span></span> <span data-ttu-id="aea5a-141">En este caso, un sistema habilitado para PAE puede seguir usando más de 4 GB de RAM para ejecutar varios procesos al mismo tiempo o almacenar en caché los datos de archivos en la memoria.</span><span class="sxs-lookup"><span data-stu-id="aea5a-141">In this case, a PAE-enabled system can still make use of more than 4 GB of RAM to run multiple processes at the same time or to cache file data in memory.</span></span>
+
+<span data-ttu-id="aea5a-142">4GT se puede usar con o sin PAE.</span><span class="sxs-lookup"><span data-stu-id="aea5a-142">4GT can be used with or without PAE.</span></span> <span data-ttu-id="aea5a-143">Sin embargo, algunas versiones de Windows limitan la cantidad máxima de memoria física que se puede admitir cuando se usa 4GT.</span><span class="sxs-lookup"><span data-stu-id="aea5a-143">However, some versions of Windows limit the maximum amount of physical memory that can be supported when 4GT is used.</span></span> <span data-ttu-id="aea5a-144">En estos sistemas, el arranque con 4GT habilitado hace que el sistema operativo ignore cualquier memoria que supere el límite.</span><span class="sxs-lookup"><span data-stu-id="aea5a-144">On such systems, booting with 4GT enabled causes the operating system to ignore any memory in excess of the limit.</span></span>
+
+<span data-ttu-id="aea5a-145">AWE no requiere PAE o 4GT, pero se suele usar junto con PAE para asignar más de 4 GB de memoria física desde un único proceso de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="aea5a-145">AWE does not require PAE or 4GT but is often used together with PAE to allocate more than 4 GB of physical memory from a single 32-bit process.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="aea5a-146">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="aea5a-146">Related topics</span></span>
+
+
+
+[<span data-ttu-id="aea5a-147">**IsProcessorFeaturePresent**</span><span class="sxs-lookup"><span data-stu-id="aea5a-147">**IsProcessorFeaturePresent**</span></span>](/windows/win32/api/processthreadsapi/nf-processthreadsapi-isprocessorfeaturepresent)
+</dt> <dt>
+
+<span data-ttu-id="aea5a-148">[Referencia técnica de PAE x86](/previous-versions/windows/it-pro/windows-server-2003/cc728455(v=ws.10))</span><span class="sxs-lookup"><span data-stu-id="aea5a-148">[PAE X86 Technical Reference](/previous-versions/windows/it-pro/windows-server-2003/cc728455(v=ws.10))</span></span>
+</dt> </dl>
+
+ 
+
+ 
