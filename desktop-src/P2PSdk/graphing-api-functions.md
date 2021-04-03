@@ -1,0 +1,148 @@
+---
+description: 'La API de gráficos del mismo nivel usa las siguientes funciones:'
+ms.assetid: cd05d4da-ca65-471b-bb97-82885f22e6f9
+title: Funciones de la API de gráficos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e343f3f5ff1e53180cced98cbebbd66af1d28e64
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103909785"
+---
+# <a name="graphing-api-functions"></a>Funciones de la API de gráficos
+
+La API de gráficos del mismo nivel usa las siguientes funciones:
+
+## <a name="initialization-and-cleanup-functions"></a>Funciones de inicialización y limpieza
+
+
+
+| Función                                       | Descripción                                                                                                        |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphShutdown**](/windows/desktop/api/P2P/nf-p2p-peergraphshutdown) | Limpia todos los recursos asignados por la llamada a [**PeerGraphStartup**](/windows/desktop/api/P2P/nf-p2p-peergraphstartup).                     |
+| [**PeerGraphStartup**](/windows/desktop/api/P2P/nf-p2p-peergraphstartup)   | Indica a la infraestructura de gráficos del mismo nivel qué versión de los protocolos del mismo nivel requiere la aplicación que realiza la llamada. |
+
+
+
+ 
+
+## <a name="graph-creation-and-access-functions"></a>Creación de gráficos y funciones de acceso
+
+
+
+| Función                                   | Descripción                                                                                                                                                                                                           |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphClose**](/windows/desktop/api/P2P/nf-p2p-peergraphclose)   | Invalida el identificador del grafo del mismo nivel devuelto por una llamada a [**PeerGraphCreate**](/windows/desktop/api/P2P/nf-p2p-peergraphcreate) o [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen), y cierra todas las conexiones de red para el gráfico del mismo nivel especificado. |
+| [**PeerGraphCreate**](/windows/desktop/api/P2P/nf-p2p-peergraphcreate) | Crea un nuevo grafo del mismo nivel.                                                                                                                                                                                             |
+| [**PeerGraphDelete**](/windows/desktop/api/P2P/nf-p2p-peergraphdelete) | Elimina los datos asociados a un gráfico del mismo nivel especificado.                                                                                                                                                              |
+| [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten) | Indica que un grafo del mismo nivel debe empezar a escuchar las conexiones entrantes.                                                                                                                                          |
+| [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen)     | Abre un grafo del mismo nivel creado previamente por el nodo local o un nodo remoto.                                                                                                                              |
+
+
+
+ 
+
+## <a name="graph-and-node-information-functions"></a>Funciones de información de gráficos y nodos
+
+
+
+| Función                                                         | Descripción                                                                                                                                                        |
+|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphEnumNodes**](/windows/desktop/api/P2P/nf-p2p-peergraphenumnodes)                 | Crea y devuelve un identificador de enumeración que se usa para enumerar los nodos de un gráfico del mismo nivel.                                                                             |
+| [**PeerGraphGetNodeInfo**](/windows/desktop/api/P2P/nf-p2p-peergraphgetnodeinfo)             | Recupera información sobre un nodo específico.                                                                                                                       |
+| [**PeerGraphGetProperties**](/windows/desktop/api/P2P/nf-p2p-peergraphgetproperties)         | Recupera las propiedades del gráfico del mismo nivel actual.                                                                                                                       |
+| [**PeerGraphGetStatus**](/windows/desktop/api/P2P/nf-p2p-peergraphgetstatus)                 | Devuelve el estado actual del gráfico del mismo nivel.                                                                                                                      |
+| [**PeerGraphSetNodeAttributes**](/windows/desktop/api/P2P/nf-p2p-peergraphsetnodeattributes) | Establece los atributos de la estructura de [**\_ \_ información de nodo del mismo nivel**](/windows/desktop/api/P2P/ns-p2p-peer_node_info) para el nodo local.                                                                |
+| [**PeerGraphSetPresence**](/windows/desktop/api/P2P/nf-p2p-peergraphsetpresence)             | Activa o desactiva explícitamente la publicación de registros de presencia para un nodo específico. Esta función puede invalidar la configuración de presencia en las propiedades del grafo del mismo nivel. |
+| [**PeerGraphSetProperties**](/windows/desktop/api/P2P/nf-p2p-peergraphsetproperties)         | Establece las propiedades del gráfico del mismo nivel.                                                                                                                                    |
+
+
+
+ 
+
+## <a name="record-management-functions"></a>Funciones de administración de registros
+
+
+
+| Función                                                                     | Descripción                                                                                                                         |
+|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphAddRecord**](/windows/desktop/api/P2P/nf-p2p-peergraphaddrecord)                             | Agrega un nuevo registro a un gráfico del mismo nivel. Un registro agregado con esta función se envía a cada nodo de un grafo del mismo nivel.                          |
+| [**PeerGraphDeleteRecord**](/windows/desktop/api/P2P/nf-p2p-peergraphdeleterecord)                       | Marca un registro como eliminado dentro de un gráfico del mismo nivel.                                                                                      |
+| [**PeerGraphEnumRecords**](/windows/desktop/api/P2P/nf-p2p-peergraphenumrecords)                         | Crea y devuelve un identificador de enumeración que se usa para enumerar los registros de un tipo específico de registro, usuario o ambos.                    |
+| [**PeerGraphGetRecord**](/windows/desktop/api/P2P/nf-p2p-peergraphgetrecord)                             | Recupera un registro específico basado en el identificador de registro especificado.                                                                       |
+| [**PeerGraphSearchRecords**](/windows/desktop/api/P2P/nf-p2p-peergraphsearchrecords)                     | Busca registros específicos en el gráfico del mismo nivel.                                                                                       |
+| [**PeerGraphUpdateRecord**](/windows/desktop/api/P2P/nf-p2p-peergraphupdaterecord)                       | Actualiza un registro en el gráfico del mismo nivel y, a continuación, inunda el registro a cada nodo del gráfico del mismo nivel.                                       |
+| [**PeerGraphValidateDeferredRecords**](/windows/desktop/api/P2P/nf-p2p-peergraphvalidatedeferredrecords) | Indica a la infraestructura de gráficos del mismo nivel que es el momento de volver a enviar los registros diferidos para que el módulo de seguridad se valide. |
+
+
+
+ 
+
+## <a name="export-and-import-functions"></a>Funciones de exportación e importación
+
+
+
+| Función                                                   | Descripción                                                                          |
+|------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [**PeerGraphExportDatabase**](/windows/desktop/api/P2P/nf-p2p-peergraphexportdatabase) | Exporta una base de datos de grafos del mismo nivel en un archivo que se puede pasar a otro equipo. |
+| [**PeerGraphImportDatabase**](/windows/desktop/api/P2P/nf-p2p-peergraphimportdatabase) | Importa un archivo que contiene la información de una base de datos de grafos del mismo nivel.             |
+
+
+
+ 
+
+## <a name="utility-and-support-functions"></a>Funciones de utilidad y soporte técnico
+
+
+
+| Función                                                                     | Descripción                                                                                                                       |
+|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peergraphendenumeration)                   | Libera un identificador de enumeración y libera los recursos asociados a una enumeración.                                           |
+| [**PeerGraphFreeData**](/windows/desktop/api/P2P/nf-p2p-peergraphfreedata)                               | Libera los recursos que devuelven varias de las funciones de la API de gráficos del mismo nivel.                                                           |
+| [**PeerGraphGetItemCount**](/windows/desktop/api/P2P/nf-p2p-peergraphgetitemcount)                       | Recupera el número de elementos de una enumeración.                                                                                  |
+| [**PeerGraphGetNextItem**](/windows/desktop/api/P2P/nf-p2p-peergraphgetnextitem)                         | Obtiene el elemento o los elementos siguientes en una enumeración creada mediante una llamada a funciones específicas, que devuelven una enumeración del mismo nivel.        |
+| [**PeerGraphPeerTimeToUniversalTime**](/windows/desktop/api/P2P/nf-p2p-peergraphpeertimetouniversaltime) | Convierte el valor de tiempo de referencia mantenido por el gráfico del mismo nivel en un valor de hora adaptado adecuado para su presentación en el equipo del mismo nivel. |
+| [**PeerGraphUniversalTimeToPeerTime**](/windows/desktop/api/P2P/nf-p2p-peergraphuniversaltimetopeertime) | Convierte un valor de hora universal del equipo del mismo nivel a un valor de hora de gráfico del mismo nivel común.                                       |
+
+
+
+ 
+
+## <a name="connection-functions"></a>Funciones de conexión
+
+
+
+| Función                                                                 | Descripción                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphCloseDirectConnection**](/windows/desktop/api/P2P/nf-p2p-peergraphclosedirectconnection) | Cierra una conexión directa especificada.                                                                                                                                                                                                          |
+| [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect)                             | Intenta establecer una conexión con un nodo especificado en un gráfico del mismo nivel. Esta función inicia una operación asincrónica.                                                                                                                             |
+| [**PeerGraphEnumConnections**](/windows/desktop/api/P2P/nf-p2p-peergraphenumconnections)             | Crea y devuelve un identificador de enumeración que se usa para enumerar las conexiones de un nodo local.                                                                                                                                                   |
+| [**PeerGraphOpenDirectConnection**](/windows/desktop/api/P2P/nf-p2p-peergraphopendirectconnection)   | Permite que una aplicación establezca una conexión directa con un nodo en un grafo del mismo nivel. La conexión solo se puede realizar si el nodo al que se está conectando la aplicación se ha suscrito al evento de **\_ \_ \_ \_ conexión directa del evento del grafo del mismo nivel** . |
+| [**PeerGraphSendData**](/windows/desktop/api/P2P/nf-p2p-peergraphsenddata)                           | Envía datos a un nodo vecino o a un nodo conectado directamente.                                                                                                                                                                                    |
+
+
+
+ 
+
+## <a name="events-infrastructure-functions"></a>Funciones de la infraestructura de eventos
+
+
+
+| Función                                                     | Descripción                                                                                                  |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| [**PeerGraphGetEventData**](/windows/desktop/api/P2P/nf-p2p-peergraphgeteventdata)       | Recupera eventos del mismo nivel.                                                                                       |
+| [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)     | Registra la solicitud de un elemento del mismo nivel para recibir notificaciones de los cambios asociados a un tipo de evento y un grafo del mismo nivel.            |
+| [**PeerGraphUnregisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphunregisterevent) | Solicita que la aplicación deje de recibir notificaciones de los cambios asociados a un tipo de registro y un grafo del mismo nivel. |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
