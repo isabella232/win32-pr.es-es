@@ -1,0 +1,33 @@
+---
+description: Un componente calificado es un método de direccionamiento indirecto de un solo nivel, similar a un puntero.
+ms.assetid: b483fa7d-d31d-4855-89e5-f733541cd92d
+title: Componentes completos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: bd2197aade7f3efd5d73e666c190c4447cac9fe1
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103909465"
+---
+# <a name="qualified-components"></a><span data-ttu-id="96765-103">Componentes completos</span><span class="sxs-lookup"><span data-stu-id="96765-103">Qualified Components</span></span>
+
+<span data-ttu-id="96765-104">Un componente calificado es un método de direccionamiento indirecto de un solo nivel, similar a un puntero.</span><span class="sxs-lookup"><span data-stu-id="96765-104">A qualified component is a method of single-level indirection, similar to a pointer.</span></span> <span data-ttu-id="96765-105">Los componentes calificados se utilizan principalmente para agrupar componentes con funcionalidad paralela en categorías.</span><span class="sxs-lookup"><span data-stu-id="96765-105">Qualified components are primarily used to group components with parallel functionality into categories.</span></span> <span data-ttu-id="96765-106">Por ejemplo, si tiene 30 componentes enumerados en la [tabla de componentes](component-table.md) que son la misma plantilla de fax de Microsoft Word localizada en 30 idiomas, puede agruparlos en una categoría de componentes calificados mediante la [tabla PublishComponent](publishcomponent-table.md).</span><span class="sxs-lookup"><span data-stu-id="96765-106">For example, if you have 30 components listed in the [Component table](component-table.md) that are the same Microsoft Word fax template localized into 30 languages, you can group these together into a category of qualified components by using the [PublishComponent table](publishcomponent-table.md).</span></span>
+
+<span data-ttu-id="96765-107">Los componentes calificados se escriben en la tabla de componentes de la misma manera que los componentes normales.</span><span class="sxs-lookup"><span data-stu-id="96765-107">Qualified components are entered in the Component table in the same way as ordinary components.</span></span> <span data-ttu-id="96765-108">Cada componente debe tener un GUID de identificador de componente único y un identificador de componente especificado en la tabla de componentes.</span><span class="sxs-lookup"><span data-stu-id="96765-108">Every component must have a unique component ID GUID and component identifier specified in the Component table.</span></span> <span data-ttu-id="96765-109">Además, los componentes completos están asociados a un GUID de categoría y un calificador de cadena de texto en la tabla PublishComponent.</span><span class="sxs-lookup"><span data-stu-id="96765-109">In addition, qualified components are associated with a category GUID and a text-string qualifier in the PublishComponent table.</span></span> <span data-ttu-id="96765-110">El GUID de categoría y el calificador hacen referencia a los componentes calificados, que solo apuntan al componente ordinario de la tabla de componentes.</span><span class="sxs-lookup"><span data-stu-id="96765-110">Qualified components are referenced by the category GUID and the qualifier, which just points to the ordinary component in the Component table.</span></span>
+
+<span data-ttu-id="96765-111">Por ejemplo, un GUID de identificador de componente calificado puede apuntar a diferentes versiones de idioma de un archivo DLL de recursos.</span><span class="sxs-lookup"><span data-stu-id="96765-111">For example, a qualified component ID GUID can point to different language versions of a resource DLL.</span></span> <span data-ttu-id="96765-112">En este caso, el grupo de archivos dll de recursos localizados consta de la categoría y las cadenas de los identificadores de configuración regional (LCID) numéricos se utilizan normalmente como calificadores.</span><span class="sxs-lookup"><span data-stu-id="96765-112">In this case, the group of localized resource DLLs comprises the category and the numeric locale identifiers (LCID) strings are commonly used as the qualifiers.</span></span> <span data-ttu-id="96765-113">Un desarrollador podría crear un paquete de instalación que use estos componentes calificados para hacer lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="96765-113">A developer could author an installation package that uses these qualified components to do the following:</span></span>
+
+-   <span data-ttu-id="96765-114">Busque la ruta de acceso a una versión de idioma determinada de la DLL de recursos mediante [**MsiProvideQualifiedComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponenta) o [**MsiProvideQualifiedComponentEx**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponentexa) e instale el recurso.</span><span class="sxs-lookup"><span data-stu-id="96765-114">Find the path to a particular language version of the resource DLL using [**MsiProvideQualifiedComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponenta) or [**MsiProvideQualifiedComponentEx**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponentexa) and install the resource.</span></span>
+-   <span data-ttu-id="96765-115">Determine todas las versiones de idioma de la DLL de recursos que están presentes llamando a [**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa).</span><span class="sxs-lookup"><span data-stu-id="96765-115">Determine all of the language versions of the resource DLL that are present by calling [**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa).</span></span>
+-   <span data-ttu-id="96765-116">Prepare la aplicación para admitir otros idiomas.</span><span class="sxs-lookup"><span data-stu-id="96765-116">Prepare the application to support additional languages.</span></span> <span data-ttu-id="96765-117">Un paquete de idioma futuro para la aplicación puede utilizar el componente calificado para agregar más versiones de idioma del archivo DLL de recursos.</span><span class="sxs-lookup"><span data-stu-id="96765-117">A future language pack for the application can use the qualified component to add more language versions of the resource DLL.</span></span>
+
+<span data-ttu-id="96765-118">Para obtener más información, consulte [uso de componentes calificados](using-qualified-components.md).</span><span class="sxs-lookup"><span data-stu-id="96765-118">For more information, see [Using Qualified Components](using-qualified-components.md).</span></span>
+
+ 
+
+ 
+
+
+
