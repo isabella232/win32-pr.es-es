@@ -1,0 +1,40 @@
+---
+description: Se ha proporcionado un grupo de funciones de alto nivel para simplificar y acortar la cantidad de código necesario para realizar las tareas habituales de manipulación de mensajes.
+ms.assetid: 7c1a4d6e-9b9d-43c8-b094-3c98b9a68490
+title: Mensajes simplificados
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 1dbacaac4dd8ef32b7bab1ff4e57ad04aa1263c2
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104154517"
+---
+# <a name="simplified-messages"></a><span data-ttu-id="6eb25-103">Mensajes simplificados</span><span class="sxs-lookup"><span data-stu-id="6eb25-103">Simplified Messages</span></span>
+
+<span data-ttu-id="6eb25-104">Se ha proporcionado un grupo de funciones de alto nivel para simplificar y acortar la cantidad de código necesario para realizar las tareas habituales de manipulación de mensajes.</span><span class="sxs-lookup"><span data-stu-id="6eb25-104">A group of high-level functions has been provided to simplify and shorten the amount of code necessary to accomplish the usual message manipulation tasks.</span></span> <span data-ttu-id="6eb25-105">Estas funciones se denominan "funciones de mensaje simplificadas".</span><span class="sxs-lookup"><span data-stu-id="6eb25-105">These functions are called "simplified message functions."</span></span> <span data-ttu-id="6eb25-106">Los nombres de todas las funciones de mensaje simplificadas contienen la palabra "mensaje".</span><span class="sxs-lookup"><span data-stu-id="6eb25-106">The names of all simplified message functions contain the word "Message."</span></span>
+
+<span data-ttu-id="6eb25-107">[*Las funciones de mensaje simplificado*](../secgloss/s-gly.md) se encuentran en un nivel más alto que las funciones criptográficas base o las funciones de mensaje de bajo nivel.</span><span class="sxs-lookup"><span data-stu-id="6eb25-107">[*Simplified message functions*](../secgloss/s-gly.md) are at a higher level than the base cryptographic functions or the low-level message functions.</span></span> <span data-ttu-id="6eb25-108">Encapsulan varias de las funciones criptográficas de nivel de datos y de cifrado básicas en una sola función que realiza una tarea específica de una forma específica, como el cifrado de un \# mensaje PKCS 7 o la firma de un mensaje.</span><span class="sxs-lookup"><span data-stu-id="6eb25-108">They wrap several of the base cryptographic, low-level message, and certificate functions into a single function that performs a specific task in a specific manner, such as encrypting a PKCS \#7 message or signing a message.</span></span> <span data-ttu-id="6eb25-109">Las funciones de mensaje simplificado proporcionan una forma rápida de empezar a usar CryptoAPI reduciendo el número de llamadas a funciones necesarias para realizar una tarea.</span><span class="sxs-lookup"><span data-stu-id="6eb25-109">Simplified message functions provide a quick way to get started using CryptoAPI by reducing the number of function calls needed to accomplish a task.</span></span>
+
+<span data-ttu-id="6eb25-110">En la tabla siguiente se enumeran las secciones que contienen descripciones de procedimientos detallados o ejemplos de programas de C del uso de las funciones de mensaje simplificadas.</span><span class="sxs-lookup"><span data-stu-id="6eb25-110">The following table list sections that contain detailed procedure descriptions or C program examples of using the simplified message functions.</span></span>
+
+
+
+| <span data-ttu-id="6eb25-111">Sección</span><span class="sxs-lookup"><span data-stu-id="6eb25-111">Section</span></span>                                                                                                                                         | <span data-ttu-id="6eb25-112">Contenido</span><span class="sxs-lookup"><span data-stu-id="6eb25-112">Contents</span></span>                                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="6eb25-113">Funciones de mensaje simplificadas</span><span class="sxs-lookup"><span data-stu-id="6eb25-113">Simplified Message Functions</span></span>](cryptography-functions.md)                                                         | <span data-ttu-id="6eb25-114">Muestra las funciones de mensaje simplificadas.</span><span class="sxs-lookup"><span data-stu-id="6eb25-114">Lists the simplified message functions.</span></span>                                                     |
+| [<span data-ttu-id="6eb25-115">Crear un mensaje firmado</span><span class="sxs-lookup"><span data-stu-id="6eb25-115">Creating a Signed Message</span></span>](creating-a-signed-message.md)                                                                                      | <span data-ttu-id="6eb25-116">Detalla el proceso de creación de un mensaje firmado.</span><span class="sxs-lookup"><span data-stu-id="6eb25-116">Details the process of creating a signed message.</span></span>                                           |
+| [<span data-ttu-id="6eb25-117">Procedimiento para firmar datos</span><span class="sxs-lookup"><span data-stu-id="6eb25-117">Procedure for Signing Data</span></span>](procedure-for-signing-data.md)                                                                                    | <span data-ttu-id="6eb25-118">Proporciona un procedimiento para usar las funciones de mensaje simplificadas para crear un mensaje firmado.</span><span class="sxs-lookup"><span data-stu-id="6eb25-118">Provides a procedure for using the simplified message functions to create a signed message.</span></span> |
+| [<span data-ttu-id="6eb25-119">Comprobación de un mensaje firmado</span><span class="sxs-lookup"><span data-stu-id="6eb25-119">Verifying A Signed Message</span></span>](verifying-a-signed-message.md)                                                                                    | <span data-ttu-id="6eb25-120">Detalla un proceso para comprobar la firma de un mensaje firmado.</span><span class="sxs-lookup"><span data-stu-id="6eb25-120">Details a process for verifying the signature on a signed message.</span></span>                          |
+| [<span data-ttu-id="6eb25-121">Cifrado de un mensaje</span><span class="sxs-lookup"><span data-stu-id="6eb25-121">Encrypting a Message</span></span>](../secauthn/encrypting-a-message.md)                                                                                           | <span data-ttu-id="6eb25-122">Detalla las tareas necesarias para cifrar y descifrar un mensaje.</span><span class="sxs-lookup"><span data-stu-id="6eb25-122">Details the tasks needed to encrypt and decrypt a message.</span></span>                                  |
+| [<span data-ttu-id="6eb25-123">Descifrado de un mensaje</span><span class="sxs-lookup"><span data-stu-id="6eb25-123">Decrypting a Message</span></span>](../secauthn/decrypting-a-message.md)                                                                                           | <span data-ttu-id="6eb25-124">Detalla las tareas necesarias para descifrar un mensaje.</span><span class="sxs-lookup"><span data-stu-id="6eb25-124">Details the tasks needed to decrypt a message.</span></span>                                              |
+| [<span data-ttu-id="6eb25-125">Programa C de ejemplo: uso de CryptEncryptMessage y CryptDecryptMessage</span><span class="sxs-lookup"><span data-stu-id="6eb25-125">Example C Program: Using CryptEncryptMessage and CryptDecryptMessage</span></span>](example-c-program-using-cryptencryptmessage-and-cryptdecryptmessage.md) | <span data-ttu-id="6eb25-126">Proporciona un procedimiento y código de ejemplo para cifrar y descifrar un mensaje.</span><span class="sxs-lookup"><span data-stu-id="6eb25-126">Provides a procedure and sample code for encrypting and decrypting a message.</span></span>               |
+
+
+
+ 
+
+ 
+
+ 
