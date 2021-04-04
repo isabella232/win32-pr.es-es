@@ -1,0 +1,150 @@
+---
+title: Referencia de AVIFile
+description: Referencia de AVIFile
+ms.assetid: 73532d83-89c2-4911-8558-ce110e9f0f95
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 0291d0ac5864a9b370e79a98fa061770d05bca03
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104076275"
+---
+# <a name="avifile-reference"></a>Referencia de AVIFile
+
+En esta sección se describen las funciones, estructuras y macros para aplicaciones que usan los servicios de AVIFile. Estos elementos se agrupan de la siguiente manera:
+
+## <a name="avifile-library-operations"></a>Operaciones de biblioteca AVIFile
+
+-   [**AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit)
+-   [**AVIFileExit**](/windows/desktop/api/Vfw/nf-vfw-avifileexit)
+
+## <a name="opening-and-closing-avi-files"></a>Abrir y cerrar archivos AVI
+
+-   [**AVIFileOpen**](/windows/desktop/api/Vfw/nf-vfw-avifileopen)
+-   [**AVIFileAddRef**](/windows/desktop/api/Vfw/nf-vfw-avifileaddref)
+-   [**AVIFileRelease**](/windows/desktop/api/Vfw/nf-vfw-avifilerelease)
+-   [**GetOpenFileNamePreview**](/windows/desktop/api/Vfw/nf-vfw-getopenfilenamepreviewa)
+
+## <a name="reading-from-a-file"></a>Leer de un archivo
+
+-   [**AVIFileInfo**](/windows/desktop/api/Vfw/nf-vfw-avifileinfo)
+-   [**AVIFILEINFO**](/windows/desktop/api/Vfw/ns-vfw-avifileinfoa)
+-   [**AVIFileReadData**](/windows/desktop/api/Vfw/nf-vfw-avifilereaddata)
+
+## <a name="writing-to-a-file"></a>Escribir en un archivo
+
+-   [**AVIFileWriteData**](/windows/desktop/api/Vfw/nf-vfw-avifilewritedata)
+
+## <a name="using-the-clipboard"></a>Usar el portapapeles
+
+-   [**AVIPutFileOnClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviputfileonclipboard)
+-   [**AVIGetFromClipboard**](/windows/desktop/api/Vfw/nf-vfw-avigetfromclipboard)
+-   [**AVIClearClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviclearclipboard)
+
+## <a name="opening-and-closing-streams"></a>Abrir y cerrar secuencias
+
+-   [**AVIFileGetStream**](/windows/desktop/api/Vfw/nf-vfw-avifilegetstream)
+-   [**AVIStreamOpenFromFile**](/windows/desktop/api/Vfw/nf-vfw-avistreamopenfromfilea)
+-   [**AVIStreamAddRef**](/windows/desktop/api/Vfw/nf-vfw-avistreamaddref)
+-   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
+
+## <a name="reading-stream-information"></a>Leyendo información de la secuencia
+
+-   [**AVISTREAMINFO**](/windows/desktop/api/Vfw/ns-vfw-avistreaminfoa)
+-   [**AVIStreamReadData**](/windows/desktop/api/Vfw/nf-vfw-avistreamreaddata)
+-   [**AVIStreamDataSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
+-   [**AVIStreamReadFormat**](/windows/desktop/api/Vfw/nf-vfw-avistreamreadformat)
+-   [**AVIStreamFormatSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamformatsize)
+-   [**AVIStreamRead**](/windows/desktop/api/Vfw/nf-vfw-avistreamread)
+-   [**AVIStreamSampleSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamsamplesize)
+-   [**AVIStreamBeginStreaming**](/windows/desktop/api/Vfw/nf-vfw-avistreambeginstreaming)
+-   [**AVIStreamEndStreaming**](/windows/desktop/api/Vfw/nf-vfw-avistreamendstreaming)
+
+## <a name="decompressing-video-data-in-a-stream"></a>Descomprimir los datos de vídeo en una secuencia
+
+-   [**AVIStreamGetFrameOpen**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframeopen)
+-   [**AVIStreamGetFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframe)
+-   [**AVIStreamGetFrameClose**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframeclose)
+
+## <a name="creating-a-file-from-existing-streams"></a>Crear un archivo a partir de secuencias existentes
+
+-   [**AVISave**](/windows/desktop/api/Vfw/nf-vfw-avisavea)
+-   [**AVISaveV**](/windows/desktop/api/Vfw/nf-vfw-avisaveva)
+-   [**AVISaveOptions**](/windows/desktop/api/Vfw/nf-vfw-avisaveoptions)
+-   [**GetSaveFileNamePreview**](/windows/desktop/api/Vfw/nf-vfw-getsavefilenamepreviewa)
+-   [**AVIMakeFileFromStreams**](/windows/desktop/api/Vfw/nf-vfw-avimakefilefromstreams)
+
+## <a name="writing-individual-streams"></a>Escribir flujos individuales
+
+-   [**AVIFileCreateStream**](/windows/desktop/api/Vfw/nf-vfw-avifilecreatestream)
+-   [**AVIStreamSetFormat**](/windows/desktop/api/Vfw/nf-vfw-avistreamsetformat)
+-   [**AVIStreamWrite**](/windows/desktop/api/Vfw/nf-vfw-avistreamwrite)
+-   [**AVIFileWriteData**](/windows/desktop/api/Vfw/nf-vfw-avifilewritedata)
+-   [**AVIStreamWriteData**](/windows/desktop/api/Vfw/nf-vfw-avistreamwritedata)
+-   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
+
+## <a name="finding-the-starting-position-in-a-stream"></a>Buscar la posición inicial en una secuencia
+
+-   [**AVIStreamStart**](/windows/desktop/api/Vfw/nf-vfw-avistreamstart)
+-   [**AVIStreamStartTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamstarttime)
+-   [**AVIStreamLength**](/windows/desktop/api/Vfw/nf-vfw-avistreamlength)
+-   [**AVIStreamLengthTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamlengthtime)
+-   [**AVIStreamFindSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamfindsample)
+-   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
+-   [**AVIStreamEndTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamendtime)
+
+## <a name="finding-sample-and-key-frames"></a>Buscar fotogramas de ejemplo y clave
+
+-   [**AVIStreamFindSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamfindsample)
+-   [**AVIStreamIsKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamiskeyframe)
+-   [**AVIStreamNearestKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframe)
+-   [**AVIStreamNearestKeyFrameTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframetime)
+-   [**AVIStreamNearestSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestsample)
+-   [**AVIStreamNearestSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestsampletime)
+-   [**AVIStreamNextKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextkeyframe)
+-   [**AVIStreamNextKeyFrameTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextkeyframetime)
+-   [**AVIStreamNextSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextsample)
+-   [**AVIStreamNextSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextsampletime)
+-   [**AVIStreamPrevKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamprevkeyframe)
+-   [**AVIStreamPrevKeyFrameTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamprevkeyframetime)
+-   [**AVIStreamPrevSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamprevsample)
+-   [**AVIStreamPrevSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamprevsampletime)
+-   [**AVIStreamSampleToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletosample)
+
+## <a name="switching-between-samples-and-time"></a>Cambiar entre muestras y hora
+
+-   [**AVIStreamSampleToTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime)
+-   [**AVIStreamTimeToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamtimetosample)
+
+## <a name="creating-temporary-streams"></a>Crear secuencias temporales
+
+-   [**AVIStreamCreate**](/windows/desktop/api/Vfw/nf-vfw-avistreamcreate)
+-   [**AVIMakeCompressedStream**](/windows/desktop/api/Vfw/nf-vfw-avimakecompressedstream)
+-   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
+
+## <a name="editing-avi-streams"></a>Editar secuencias AVI
+
+-   [**CreateEditableStream**](/windows/desktop/api/Vfw/nf-vfw-createeditablestream)
+-   [**EditStreamCut**](/windows/desktop/api/Vfw/nf-vfw-editstreamcut)
+-   [**EditStreamCopy**](/windows/desktop/api/Vfw/nf-vfw-editstreamcopy)
+-   [**EditStreamPaste**](/windows/desktop/api/Vfw/nf-vfw-editstreampaste)
+-   [**EditStreamClone**](/windows/desktop/api/Vfw/nf-vfw-editstreamclone)
+-   [**EditStreamSetInfo**](/windows/desktop/api/Vfw/nf-vfw-editstreamsetinfoa)
+-   [**EditStreamSetName**](/windows/desktop/api/Vfw/nf-vfw-editstreamsetnamea)
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Funciones y macros de AVIFile](avifile-functions-and-macros.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
