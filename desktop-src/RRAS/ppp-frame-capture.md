@@ -1,0 +1,40 @@
+---
+title: Escritura de un controlador para capturar tramas PPP
+description: En este documento se explica cómo desarrollar un controlador que pueda capturar tramas PPP en Windows vista antes de que se compriman o cifren en la ruta de acceso de envío o después de que se descomprimen o descifran en la ruta de acceso de recepción.
+ms.assetid: 1b3fe1b8-2b11-4aed-98e1-464b8c0821ec
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d592596674cd64af5122303afefcfc81026dad27
+ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "104077367"
+---
+# <a name="writing-a-driver-to-capture-ppp-frames"></a><span data-ttu-id="de44f-103">Escritura de un controlador para capturar tramas PPP</span><span class="sxs-lookup"><span data-stu-id="de44f-103">Writing a Driver to Capture PPP Frames</span></span>
+
+<span data-ttu-id="de44f-104">Cuando los fotogramas de Protocolo punto a punto (PPP) se envían a través de un túnel del Protocolo de túnel punto a punto (PPTP) con cifrado activado, o a través de un túnel del Protocolo de túnel de capa 2 (L2TP) que usa IPSec para el cifrado, la utilidad de captura de tramas PPP típica solo puede capturar tramas PPP que tengan un campo de identidad de protocolo cifra</span><span class="sxs-lookup"><span data-stu-id="de44f-104">When Point-to-Point Protocol (PPP) frames are sent through a Point-to-Point Tunneling Protocol (PPTP) tunnel with encryption turned on, or through a Layer 2 Tunneling Protocol (L2TP) tunnel that uses IPSec for encryption, the typical PPP frame capture utility can only capture PPP frames that have an encrypted protocol identity field.</span></span> <span data-ttu-id="de44f-105">En este documento se explica cómo desarrollar un controlador que pueda capturar tramas PPP en Windows vista antes de que se compriman o cifren en la ruta de acceso de envío o después de que se descomprimen o descifran en la ruta de acceso de recepción.</span><span class="sxs-lookup"><span data-stu-id="de44f-105">This document explains how to develop a driver that can capture PPP frames in Windows Vista before they are compressed/encrypted in the send path or after they are decompressed/decrypted in the receive path.</span></span>
+
+1.  <span data-ttu-id="de44f-106">Escribir un controlador de protocolo NDIS.</span><span class="sxs-lookup"><span data-stu-id="de44f-106">Write an NDIS protocol driver.</span></span> <span data-ttu-id="de44f-107">Para obtener más información, consulte [controladores de protocolo ndis 6,0](https://msdn.microsoft.com/library/ms795570.aspx) o controladores de [Protocolo ndis (NDIS 5,1)](https://msdn.microsoft.com/library/ms801145.aspx).</span><span class="sxs-lookup"><span data-stu-id="de44f-107">For details, see [NDIS 6.0 Protocol Drivers](https://msdn.microsoft.com/library/ms795570.aspx) or [NDIS Protocol Drivers (NDIS 5.1)](https://msdn.microsoft.com/library/ms801145.aspx).</span></span>
+2.  <span data-ttu-id="de44f-108">Instale el controlador con una identidad de hardware de "MS \_ Netmon".</span><span class="sxs-lookup"><span data-stu-id="de44f-108">Install the driver with a hardware identity of "ms\_netmon".</span></span> <span data-ttu-id="de44f-109">Para obtener instrucciones detalladas sobre cómo instalar el controlador con una identidad de hardware específica, consulte la [sección modelos de INF](https://msdn.microsoft.com/library/ms794357.aspx).</span><span class="sxs-lookup"><span data-stu-id="de44f-109">For detailed instructions on how to install the driver with a specific hardware identity, see [INF Models Section](https://msdn.microsoft.com/library/ms794357.aspx).</span></span>
+    > [!Note]  
+    > <span data-ttu-id="de44f-110">Cada máquina de Windows Vista permite la instalación de una sola entidad de controlador que tiene la \_ identidad de hardware "MS Netmon".</span><span class="sxs-lookup"><span data-stu-id="de44f-110">Each Windows Vista machine permits the installation of only one driver entity that has the "ms\_netmon" hardware identity.</span></span> <span data-ttu-id="de44f-111">Para instalar otro controlador con esta identidad, se debe desinstalar el primer controlador.</span><span class="sxs-lookup"><span data-stu-id="de44f-111">To install another driver with this identity, the first driver must be uninstalled.</span></span> <span data-ttu-id="de44f-112">Un controlador que se instala sin usar la identidad de \_ hardware "MS Netmon" no puede realizar el enlace necesario para capturar tramas ppp.</span><span class="sxs-lookup"><span data-stu-id="de44f-112">A driver that is installed without using the "ms\_netmon" hardware identity cannot perform the binding needed to capture PPP frames.</span></span>
+
+     
+
+3.  <span data-ttu-id="de44f-113">El controlador de protocolo debe especificar "ndiswanbh" como la interfaz de enlace para capturar tramas PPP.</span><span class="sxs-lookup"><span data-stu-id="de44f-113">The protocol driver should specify "ndiswanbh" as the binding interface for capturing PPP frames.</span></span> <span data-ttu-id="de44f-114">Para obtener instrucciones detalladas, consulte [especificar interfaces de enlace](https://msdn.microsoft.com/library/aa937923.aspx).</span><span class="sxs-lookup"><span data-stu-id="de44f-114">For detailed instructions, see [Specifying Binding Interfaces](https://msdn.microsoft.com/library/aa937923.aspx).</span></span>
+4.  <span data-ttu-id="de44f-115">La implementación de [ProtocolBindAdapter](https://msdn.microsoft.com/library/ms797311.aspx) en el controlador debe admitir "NdisMediumWan" como parte de la matriz mediana, de modo que pueda abrir el perímetro del minipuerto ndiswanbh mediante la función [NdisOpenAdapter](https://msdn.microsoft.com/library/ms804862.aspx) .</span><span class="sxs-lookup"><span data-stu-id="de44f-115">The [ProtocolBindAdapter](https://msdn.microsoft.com/library/ms797311.aspx) implementation in the driver should support "NdisMediumWan" as a part of the medium array, so that it can open the ndiswanbh miniport edge using the [NdisOpenAdapter](https://msdn.microsoft.com/library/ms804862.aspx) function.</span></span>
+5.  <span data-ttu-id="de44f-116">Si se llama a la función [ProtocolOpenAdapterComplete](https://msdn.microsoft.com/library/ms797287.aspx) con el estado NDIS \_ \_ Success Success, el controlador de protocolo debe establecer el OID del [ \_ \_ \_ \_ filtro de paquetes actual de OID gen](https://msdn.microsoft.com/library/bb314089.aspx) con el tipo de paquete de paquetes [NDIS \_ \_ \_ promiscuo](https://msdn.microsoft.com/library/bb314089.aspx) y el [tipo de \_ paquete NDIS \_ \_ \_ local](https://msdn.microsoft.com/library/bb314089.aspx) a través de este enlace.</span><span class="sxs-lookup"><span data-stu-id="de44f-116">If the [ProtocolOpenAdapterComplete](https://msdn.microsoft.com/library/ms797287.aspx) function is called with status NDIS\_STATUS\_SUCCESS, the protocol driver should set the [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://msdn.microsoft.com/library/bb314089.aspx) OID with the flags [NDIS\_PACKET\_TYPE\_PROMISCUOUS](https://msdn.microsoft.com/library/bb314089.aspx) and [NDIS\_PACKET\_TYPE\_ALL\_LOCAL](https://msdn.microsoft.com/library/bb314089.aspx) over this binding.</span></span> <span data-ttu-id="de44f-117">Una vez hecho esto, el controlador de protocolo recibirá los fotogramas PPP descifrados de la capa de tramas PPP en su función [ProtocolReceive](https://msdn.microsoft.com/library/ms797274.aspx) .</span><span class="sxs-lookup"><span data-stu-id="de44f-117">Once this is done, the protocol driver will receive the decrypted PPP frames from the PPP framing layer in its [ProtocolReceive](https://msdn.microsoft.com/library/ms797274.aspx) function.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="de44f-118">Esta información solo se aplica a los controladores de un equipo con Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="de44f-118">This information only applies to drivers on a Windows Vista machine.</span></span>
+
+ 
+
+ 
+
+ 
+
+
+
+
