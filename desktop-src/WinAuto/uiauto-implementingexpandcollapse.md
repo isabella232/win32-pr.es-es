@@ -1,0 +1,91 @@
+---
+title: Patrón de control ExpandCollapse
+description: Describe las directrices y convenciones para implementar IExpandCollapseProvider, incluida información sobre propiedades, métodos y eventos.
+ms.assetid: 0ffc26c3-8696-44f9-b463-902a69e06d21
+keywords:
+- Automatización de la interfaz de usuario, implementar el patrón de control ExpandCollapse
+- Automatización de la interfaz de usuario, patrón de control ExpandCollapse
+- Automatización de la interfaz de usuario, IExpandCollapseProvider
+- IExpandCollapseProvider
+- implementación de patrones de control ExpandCollapse de UI Automation
+- Patrones de control de ExpandCollapse
+- patrones de control, IExpandCollapseProvider
+- patrones de control, implementar la automatización de la interfaz de usuario ExpandCollapse
+- patrones de control, ExpandCollapse
+- interfaces, IExpandCollapseProvider
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 45bd28ddcc201dcff0a4811a1eb8e04670f93091
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104075486"
+---
+# <a name="expandcollapse-control-pattern"></a><span data-ttu-id="401ed-113">Patrón de control ExpandCollapse</span><span class="sxs-lookup"><span data-stu-id="401ed-113">ExpandCollapse Control Pattern</span></span>
+
+<span data-ttu-id="401ed-114">Describe las directrices y convenciones para implementar [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider), incluida información sobre propiedades, métodos y eventos.</span><span class="sxs-lookup"><span data-stu-id="401ed-114">Describes guidelines and conventions for implementing [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider), including information about properties, methods, and events.</span></span> <span data-ttu-id="401ed-115">El patrón de control **ExpandCollapse** se usa para admitir controles que se expanden visualmente para mostrar más contenido y se contraen para ocultar el contenido.</span><span class="sxs-lookup"><span data-stu-id="401ed-115">The **ExpandCollapse** control pattern is used to support controls that visually expand to display more content and collapse to hide content.</span></span>
+
+<span data-ttu-id="401ed-116">Para obtener ejemplos de controles que implementan este patrón de control, vea [tipos de control y sus patrones de control admitidos](uiauto-controlpatternmapping.md).</span><span class="sxs-lookup"><span data-stu-id="401ed-116">For examples of controls that implement this control pattern, see [Control Types and Their Supported Control Patterns](uiauto-controlpatternmapping.md).</span></span>
+
+<span data-ttu-id="401ed-117">En este tema se incluyen las siguientes secciones.</span><span class="sxs-lookup"><span data-stu-id="401ed-117">This topic contains the following sections.</span></span>
+
+-   [<span data-ttu-id="401ed-118">Directrices y convenciones de implementación</span><span class="sxs-lookup"><span data-stu-id="401ed-118">Implementation Guidelines and Conventions</span></span>](#implementation-guidelines-and-conventions)
+-   [<span data-ttu-id="401ed-119">Miembros requeridos para **IExpandCollapseProvider**</span><span class="sxs-lookup"><span data-stu-id="401ed-119">Required Members for **IExpandCollapseProvider**</span></span>](#required-members-for-iexpandcollapseprovider)
+-   [<span data-ttu-id="401ed-120">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="401ed-120">Related topics</span></span>](#related-topics)
+
+## <a name="implementation-guidelines-and-conventions"></a><span data-ttu-id="401ed-121">Directrices y convenciones de implementación</span><span class="sxs-lookup"><span data-stu-id="401ed-121">Implementation Guidelines and Conventions</span></span>
+
+<span data-ttu-id="401ed-122">Al implementar el patrón de control **ExpandCollapse** , tenga en cuenta las siguientes directrices y convenciones:</span><span class="sxs-lookup"><span data-stu-id="401ed-122">When implementing the **ExpandCollapse** control pattern, note the following guidelines and conventions:</span></span>
+
+-   <span data-ttu-id="401ed-123">Los controles agregados, creados con objetos secundarios que proporcionan la interfaz de usuario con la funcionalidad de expandir o contraer, deben admitir el patrón de control **ExpandCollapse** , mientras que sus elementos secundarios no lo admiten.</span><span class="sxs-lookup"><span data-stu-id="401ed-123">Aggregate controls, built with child objects that provide the UI with expand/collapse functionality, must support the **ExpandCollapse** control pattern whereas their child elements do not.</span></span> <span data-ttu-id="401ed-124">Por ejemplo, un control de cuadro combinado se crea con una combinación de controles de cuadro de lista, botón y edición, pero solo es el cuadro combinado primario que debe admitir el patrón de control **ExpandCollapse** .</span><span class="sxs-lookup"><span data-stu-id="401ed-124">For example, a combo box control is built with a combination of list box, button, and edit controls, but it is only the parent combo box that must support the **ExpandCollapse** control pattern.</span></span>
+    > [!Note]  
+    > <span data-ttu-id="401ed-125">Una excepción es el control de menú, que es un agregado de objetos de elemento de menú individuales.</span><span class="sxs-lookup"><span data-stu-id="401ed-125">An exception is the menu control, which is an aggregate of individual menu item objects.</span></span> <span data-ttu-id="401ed-126">Los objetos de elemento de menú pueden admitir el patrón de control **ExpandCollapse** , pero el control de menú primario no puede.</span><span class="sxs-lookup"><span data-stu-id="401ed-126">The menu item objects can support the **ExpandCollapse** control pattern, but the parent menu control cannot.</span></span> <span data-ttu-id="401ed-127">Se aplica una excepción similar a los controles de árbol y elemento de árbol.</span><span class="sxs-lookup"><span data-stu-id="401ed-127">A similar exception applies to the tree and tree item controls.</span></span>
+
+     
+
+-   <span data-ttu-id="401ed-128">Cuando [**IExpandCollapseProvider:: ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) de un control se establece en **ExpandCollapseState \_ LeafNode**, cualquier funcionalidad **ExpandCollapse** está actualmente inactiva para el control y la única información que se puede obtener mediante este patrón de control es el **ExpandCollapseState**.</span><span class="sxs-lookup"><span data-stu-id="401ed-128">When the [**IExpandCollapseProvider::ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) of a control is set to **ExpandCollapseState\_LeafNode**, any **ExpandCollapse** functionality is currently inactive for the control and the only information that can be obtained using this control pattern is the **ExpandCollapseState**.</span></span> <span data-ttu-id="401ed-129">Si posteriormente se agregan objetos secundarios, se activa la funcionalidad **ExpandCollapseState** Changes y **ExpandCollapse** .</span><span class="sxs-lookup"><span data-stu-id="401ed-129">If any child objects are subsequently added, the **ExpandCollapseState** changes and **ExpandCollapse** functionality is activated.</span></span>
+-   <span data-ttu-id="401ed-130">[**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) solo hace referencia a la visibilidad de los objetos secundarios inmediatos; no hace referencia a la visibilidad de todos los objetos descendientes.</span><span class="sxs-lookup"><span data-stu-id="401ed-130">[**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) refers to the visibility of immediate child objects only; it does not refer to the visibility of all descendant objects.</span></span>
+-   <span data-ttu-id="401ed-131">La funcionalidad [**IExpandCollapseProvider:: Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) y [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) es específica del control.</span><span class="sxs-lookup"><span data-stu-id="401ed-131">[**IExpandCollapseProvider::Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) and [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) functionality is control-specific.</span></span> <span data-ttu-id="401ed-132">A continuación se muestran ejemplos de este comportamiento.</span><span class="sxs-lookup"><span data-stu-id="401ed-132">The following are examples of this behavior.</span></span>
+    -   <span data-ttu-id="401ed-133">El menú personal de Office puede ser un elemento de menú de tres Estados ("expandido", "contraído" y "PartiallyExpanded") donde el control especifica el estado que se debe adoptar cuando se llama a [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) o [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) .</span><span class="sxs-lookup"><span data-stu-id="401ed-133">The Office Personal Menu can be a three-state menu item ("Expanded", "Collapsed" and "PartiallyExpanded") where the control specifies the state to adopt when [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) or [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) is called.</span></span>
+    -   <span data-ttu-id="401ed-134">La llamada a [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) en un elemento de árbol puede mostrar todos los descendientes o solo los secundarios inmediatos.</span><span class="sxs-lookup"><span data-stu-id="401ed-134">Calling [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) on a tree item may display all descendants or only immediate children.</span></span>
+    -   <span data-ttu-id="401ed-135">Si llamar a [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) o [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) en un control mantiene el estado de sus descendientes, se debe enviar un evento de cambio de visibilidad, no un evento de cambio de estado.</span><span class="sxs-lookup"><span data-stu-id="401ed-135">If calling [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) or [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) on a control maintains the state of its descendants, a visibility change event should be sent, not a state change event.</span></span> <span data-ttu-id="401ed-136">Si el control primario no mantiene el estado de sus descendientes cuando se contraen, el control puede destruir todos los descendientes que ya no están visibles y generar un evento destruido; o bien, puede cambiar el [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) de cada descendiente y generar un evento de cambio de visibilidad.</span><span class="sxs-lookup"><span data-stu-id="401ed-136">If the parent control does not maintain the state of its descendants when collapsed, the control may destroy all the descendants that are no longer visible and raise a destroyed event; or it may change the [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) for each descendant and raise a visibility change event.</span></span>
+-   <span data-ttu-id="401ed-137">Para garantizar la navegación, es deseable que un objeto esté en el árbol de automatización de la interfaz de usuario de Microsoft (con el estado de visibilidad adecuado), independientemente de sus [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate)primarios.</span><span class="sxs-lookup"><span data-stu-id="401ed-137">To guarantee navigation, it is desirable for an object to be in the Microsoft UI Automation tree (with appropriate visibility state) regardless of its parents [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate).</span></span> <span data-ttu-id="401ed-138">Si los descendientes se generan a petición, solo pueden aparecer en el árbol de automatización de la interfaz de usuario después de mostrarse por primera vez o solo mientras estén visibles.</span><span class="sxs-lookup"><span data-stu-id="401ed-138">If descendants are generated on demand, they may only appear in the UI Automation tree after being displayed for the first time or only while they are visible.</span></span>
+
+## <a name="required-members-for-iexpandcollapseprovider"></a><span data-ttu-id="401ed-139">Miembros requeridos para **IExpandCollapseProvider**</span><span class="sxs-lookup"><span data-stu-id="401ed-139">Required Members for **IExpandCollapseProvider**</span></span>
+
+<span data-ttu-id="401ed-140">Se requieren las siguientes propiedades, métodos y eventos para implementar la interfaz [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) .</span><span class="sxs-lookup"><span data-stu-id="401ed-140">The following properties, methods, and events are required for implementing the [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) interface.</span></span>
+
+
+
+| <span data-ttu-id="401ed-141">Miembros requeridos</span><span class="sxs-lookup"><span data-stu-id="401ed-141">Required members</span></span>                                                                                    | <span data-ttu-id="401ed-142">Tipo de miembro</span><span class="sxs-lookup"><span data-stu-id="401ed-142">Member type</span></span> | <span data-ttu-id="401ed-143">Notas</span><span class="sxs-lookup"><span data-stu-id="401ed-143">Notes</span></span>                                                                  |
+|-----------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------|
+| [<span data-ttu-id="401ed-144">**ExpandCollapseState**</span><span class="sxs-lookup"><span data-stu-id="401ed-144">**ExpandCollapseState**</span></span>](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate)                   | <span data-ttu-id="401ed-145">Propiedad</span><span class="sxs-lookup"><span data-stu-id="401ed-145">Property</span></span>    | <span data-ttu-id="401ed-146">None</span><span class="sxs-lookup"><span data-stu-id="401ed-146">None</span></span>                                                                   |
+| [<span data-ttu-id="401ed-147">**Expanda**</span><span class="sxs-lookup"><span data-stu-id="401ed-147">**Expand**</span></span>](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand)                                             | <span data-ttu-id="401ed-148">Método</span><span class="sxs-lookup"><span data-stu-id="401ed-148">Method</span></span>      | <span data-ttu-id="401ed-149">None</span><span class="sxs-lookup"><span data-stu-id="401ed-149">None</span></span>                                                                   |
+| [<span data-ttu-id="401ed-150">**Contraer**</span><span class="sxs-lookup"><span data-stu-id="401ed-150">**Collapse**</span></span>](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse)                                         | <span data-ttu-id="401ed-151">Método</span><span class="sxs-lookup"><span data-stu-id="401ed-151">Method</span></span>      | <span data-ttu-id="401ed-152">None</span><span class="sxs-lookup"><span data-stu-id="401ed-152">None</span></span>                                                                   |
+| [<span data-ttu-id="401ed-153">**IUIAutomationPropertyChangedEventHandler**</span><span class="sxs-lookup"><span data-stu-id="401ed-153">**IUIAutomationPropertyChangedEventHandler**</span></span>](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertychangedeventhandler) | <span data-ttu-id="401ed-154">Evento</span><span class="sxs-lookup"><span data-stu-id="401ed-154">Event</span></span>       | <span data-ttu-id="401ed-155">Este control no tiene ningún evento asociado; Use este controlador de eventos genéricos.</span><span class="sxs-lookup"><span data-stu-id="401ed-155">This control has no associated events; use this generic event handler.</span></span> |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="401ed-156">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="401ed-156">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="401ed-157">Tipos de control y sus patrones de control admitidos</span><span class="sxs-lookup"><span data-stu-id="401ed-157">Control Types and Their Supported Control Patterns</span></span>](uiauto-controlpatternmapping.md)
+</dt> <dt>
+
+[<span data-ttu-id="401ed-158">Información general acerca de los patrones de control de UI Automation</span><span class="sxs-lookup"><span data-stu-id="401ed-158">UI Automation Control Patterns Overview</span></span>](uiauto-controlpatternsoverview.md)
+</dt> <dt>
+
+[<span data-ttu-id="401ed-159">Información general sobre el árbol de la UI Automation</span><span class="sxs-lookup"><span data-stu-id="401ed-159">UI Automation Tree Overview</span></span>](uiauto-treeoverview.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
