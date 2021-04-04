@@ -1,0 +1,40 @@
+---
+title: Establecer permisos en un grupo de propiedades
+description: Los permisos se pueden aplicar a un grupo de propiedades.
+ms.assetid: cb9f6c04-be94-45b4-ba84-2a79b7625fdd
+ms.tgt_platform: multiple
+keywords:
+- Establecer permisos en un grupo de propiedades AD
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b3f2993a537b76b64c7e8e6323c850494b3ce306
+ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "103789459"
+---
+# <a name="setting-permissions-on-a-group-of-properties"></a><span data-ttu-id="156b5-104">Establecer permisos en un grupo de propiedades</span><span class="sxs-lookup"><span data-stu-id="156b5-104">Setting Permissions on a Group of Properties</span></span>
+
+<span data-ttu-id="156b5-105">Los permisos se pueden aplicar a un grupo de propiedades.</span><span class="sxs-lookup"><span data-stu-id="156b5-105">Permissions can be applied to a group of properties.</span></span> <span data-ttu-id="156b5-106">Un conjunto de propiedades se identifica mediante el GUID en el atributo [**rightsGUID**](/windows/desktop/ADSchema/a-rightsguid) de un objeto [**controlAccessRight**](/windows/desktop/ADSchema/c-controlaccessright) .</span><span class="sxs-lookup"><span data-stu-id="156b5-106">A property set is identified by the GUID in the [**rightsGUID**](/windows/desktop/ADSchema/a-rightsguid) attribute of a [**controlAccessRight**](/windows/desktop/ADSchema/c-controlaccessright) object.</span></span> <span data-ttu-id="156b5-107">Este GUID se establece en el atributo [**attributeSecurityGUID**](/windows/desktop/ADSchema/a-attributesecurityguid) del objeto [**attributeSchema**](/windows/desktop/ADSchema/c-attributeschema) de cada atributo del grupo.</span><span class="sxs-lookup"><span data-stu-id="156b5-107">This GUID is set in the [**attributeSecurityGUID**](/windows/desktop/ADSchema/a-attributesecurityguid) attribute of the [**attributeSchema**](/windows/desktop/ADSchema/c-attributeschema) object of each attribute in the group.</span></span>
+
+<span data-ttu-id="156b5-108">En el procedimiento siguiente se muestra cómo establecer permisos que se aplican a un grupo de propiedades de objeto.</span><span class="sxs-lookup"><span data-stu-id="156b5-108">The following procedure shows how to set permissions that apply to a group of object properties.</span></span>
+
+<span data-ttu-id="156b5-109">**Para establecer permisos que se aplican a un grupo de propiedades de objeto**</span><span class="sxs-lookup"><span data-stu-id="156b5-109">**To set permissions that apply to a group of object properties**</span></span>
+
+1.  <span data-ttu-id="156b5-110">Establezca la propiedad [**IADsAccessControlEntry. AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en **ADS \_ right \_ DS \_ Read \_ prop**, **ADS \_ right \_ DS \_ Write \_ prop** o ambos valores combinados.</span><span class="sxs-lookup"><span data-stu-id="156b5-110">Set the [**IADsAccessControlEntry.AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) property to **ADS\_RIGHT\_DS\_READ\_PROP**, **ADS\_RIGHT\_DS\_WRITE\_PROP** or both values combined.</span></span>
+2.  <span data-ttu-id="156b5-111">Establezca la propiedad [**IADsAccessControlEntry. AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en **ADS AceType \_ el \_ \_ \_ objeto permitido acceso** o **en \_ ADS \_ AceType \_ acceso denegado \_**.</span><span class="sxs-lookup"><span data-stu-id="156b5-111">Set the [**IADsAccessControlEntry.AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) property to either **ADS\_ACETYPE\_ACCESS\_ALLOWED\_OBJECT** or **ADS\_ACETYPE\_ACCESS\_DENIED\_OBJECT**.</span></span>
+3.  <span data-ttu-id="156b5-112">Establezca la propiedad [**IADsAccessControlEntry. ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en el GUID del conjunto de propiedades.</span><span class="sxs-lookup"><span data-stu-id="156b5-112">Set the [**IADsAccessControlEntry.ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) property to the GUID of the property set.</span></span> <span data-ttu-id="156b5-113">Esta es la propiedad [**rightsGUID**](/windows/desktop/ADSchema/a-rightsguid) del objeto [**controlAccessRight**](/windows/desktop/ADSchema/c-controlaccessright) que identifica el conjunto de propiedades.</span><span class="sxs-lookup"><span data-stu-id="156b5-113">This is the [**rightsGUID**](/windows/desktop/ADSchema/a-rightsguid) property of the [**controlAccessRight**](/windows/desktop/ADSchema/c-controlaccessright) object that identifies the property set.</span></span> <span data-ttu-id="156b5-114">Este GUID también se establece como [**attributeSecurityGUID**](/windows/desktop/ADSchema/a-attributesecurityguid) en el objeto attributeSchema de cada propiedad del grupo.</span><span class="sxs-lookup"><span data-stu-id="156b5-114">This GUID is also set as the [**attributeSecurityGUID**](/windows/desktop/ADSchema/a-attributesecurityguid) in the attributeSchema object of each property in the group.</span></span>
+4.  <span data-ttu-id="156b5-115">Establezca la propiedad [**IADsAccessControlEntry. Flags**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en el **tipo de \_ objeto marca de ADS \_ \_ \_ presente**.</span><span class="sxs-lookup"><span data-stu-id="156b5-115">Set the [**IADsAccessControlEntry.Flags**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) property to **ADS\_FLAG\_OBJECT\_TYPE\_PRESENT**.</span></span>
+
+<span data-ttu-id="156b5-116">Tenga en cuenta que no debe establecer la marca de **\_ \_ \_ \_ acceso de control DS right de ad** en la propiedad [**IADsAccessControlEntry. AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) .</span><span class="sxs-lookup"><span data-stu-id="156b5-116">Be aware that you should not set the **ADS\_RIGHT\_DS\_CONTROL\_ACCESS** flag in the [**IADsAccessControlEntry.AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) property.</span></span> <span data-ttu-id="156b5-117">Esta marca solo se usa para especificar un derecho de acceso de control.</span><span class="sxs-lookup"><span data-stu-id="156b5-117">This flag is only used to specify a control access right.</span></span>
+
+<span data-ttu-id="156b5-118">Para obtener más información y un ejemplo de código que se puede usar para establecer derechos de acceso para un conjunto de propiedades, consulte el [código de ejemplo para establecer permisos en un grupo de propiedades](example-code-for-setting-permissions-on-a-group-of-properties.md).</span><span class="sxs-lookup"><span data-stu-id="156b5-118">For more information and a code example that can be used to set access rights for a property set, see [Example Code for Setting Permissions on a Group of Properties](example-code-for-setting-permissions-on-a-group-of-properties.md).</span></span>
+
+<span data-ttu-id="156b5-119">Para obtener más información sobre la creación de una ACE, consulte [configuración de derechos de acceso en un objeto](setting-access-rights-on-an-object.md).</span><span class="sxs-lookup"><span data-stu-id="156b5-119">For more information about creating an ACE, see [Setting Access Rights on an Object](setting-access-rights-on-an-object.md).</span></span>
+
+<span data-ttu-id="156b5-120">Para obtener más información y un ejemplo de código que se puede usar para establecer una ACE para un conjunto de propiedades, consulte el [código de ejemplo para establecer una ACE en un objeto de directorio](example-code-for-setting-an-ace-on-a-directory-object.md).</span><span class="sxs-lookup"><span data-stu-id="156b5-120">For more information and a code example that can be used to set an ACE for a property set, see [Example Code for Setting an ACE on a Directory Object](example-code-for-setting-an-ace-on-a-directory-object.md).</span></span>
+
+ 
+
+ 
