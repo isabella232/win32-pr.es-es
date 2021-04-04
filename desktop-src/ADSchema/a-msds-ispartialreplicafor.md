@@ -1,0 +1,119 @@
+---
+title: MS-DS-IS-Partial-Replica-para atributo
+description: Vínculo hacia atrás para hasPartialReplicaNCs. Identifica los controladores de DC que contienen esa partición como réplica parcial.
+ms.assetid: b194b28b-0a25-4ded-b90c-50865c88ee6a
+ms.tgt_platform: multiple
+keywords:
+- MS-DS-IS-Partial-Replica-para el esquema de AD de atributos
+- Esquema de AD de atributo msDS-IsPartialReplicaFor
+topic_type:
+- apiref
+api_name:
+- ms-DS-Is-Partial-Replica-For
+api_type:
+- Schema
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: e1c6e239ef25f1603d78a11beb65ee6ab0b64a85
+ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "103906041"
+---
+# <a name="ms-ds-is-partial-replica-for-attribute"></a>MS-DS-IS-Partial-Replica-para atributo
+
+Vínculo hacia atrás para [**hasPartialReplicaNCs**](a-haspartialreplicancs.md). Identifica los controladores de DC que contienen esa partición como réplica parcial.
+
+
+
+| Entrada | Value |
+|-------------------|-----------------------------------------|
+| CN                | MS-DS-IS-Partial-Replica-para            |
+| Nombre para mostrar de LDAP | msDS-IsPartialReplicaFor                |
+| Tamaño              | \-                                      |
+| Actualizar privilegio  | \-                                      |
+| Frecuencia de actualización  | \-                                      |
+| Attribute-Id      | 1.2.840.113556.1.4.1934                 |
+| System-ID-GUID    | 37c94ff6-c6d4-498f-b2f9-c6f7f8647809    |
+| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+
+
+
+## <a name="implementations"></a>Implementaciones
+
+-   [**Windows Server 2008**](#windows-server-2008)
+-   [**Windows Server 2008 R2**](#windows-server-2008-r2)
+-   [**Windows Server 2012**](#windows-server-2012)
+
+## <a name="windows-server-2008"></a>Windows Server 2008
+
+
+
+| Entrada | Value |
+|------------------------|---------------------------------|
+| Identificador de vínculo                | 75                              |
+| MAPI-Id                | \-                              |
+| System-Only            | True                            |
+| Tiene un único valor       | False                           |
+| Está indexado             | False                           |
+| En el catálogo global      | False                           |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| Range-Lower            | \-                              |
+| Range-Upper            | \-                              |
+| Search-Flags           | 0x00000000                      |
+| System-Flags           | 0x00000011                      |
+| Clases usadas en        | [**Arriba**](c-top.md)<br/> |
+
+
+
+## <a name="windows-server-2008-r2"></a>Windows Server 2008 R2
+
+
+
+| Entrada | Value |
+|------------------------|---------------------------------|
+| Identificador de vínculo                | 75                              |
+| MAPI-Id                | \-                              |
+| System-Only            | True                            |
+| Tiene un único valor       | False                           |
+| Está indexado             | False                           |
+| En el catálogo global      | False                           |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| Range-Lower            | \-                              |
+| Range-Upper            | \-                              |
+| Search-Flags           | 0x00000000                      |
+| System-Flags           | 0x00000011                      |
+| Clases usadas en        | [**Arriba**](c-top.md)<br/> |
+
+
+
+## <a name="windows-server-2012"></a>Windows Server 2012
+
+
+
+| Entrada | Value |
+|------------------------|---------------------------------|
+| Identificador de vínculo                | 75                              |
+| MAPI-Id                | \-                              |
+| System-Only            | True                            |
+| Tiene un único valor       | False                           |
+| Está indexado             | False                           |
+| En el catálogo global      | False                           |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| Range-Lower            | \-                              |
+| Range-Upper            | \-                              |
+| Search-Flags           | 0x00000000                      |
+| System-Flags           | 0x00000011                      |
+| Clases usadas en        | [**Arriba**](c-top.md)<br/> |
+
+
+
+ 
+
+ 
+
+
+
+
+
