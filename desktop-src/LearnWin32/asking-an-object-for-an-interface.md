@@ -1,0 +1,72 @@
+---
+title: Solicitar un objeto para una interfaz
+description: Solicitar un objeto para una interfaz
+ms.assetid: 04296372-4897-426e-9be3-e6862a530ac6
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f3fa740f0ef770e069ee03b644bbfcb9b2c5e0eb
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104077761"
+---
+# <a name="asking-an-object-for-an-interface"></a><span data-ttu-id="af04e-103">Solicitar un objeto para una interfaz</span><span class="sxs-lookup"><span data-stu-id="af04e-103">Asking an Object for an Interface</span></span>
+
+<span data-ttu-id="af04e-104">Vimos anteriormente que un objeto puede implementar más de una interfaz.</span><span class="sxs-lookup"><span data-stu-id="af04e-104">We saw earlier that an object can implement more than one interface.</span></span> <span data-ttu-id="af04e-105">El objeto de cuadro de diálogo de elementos comunes es un ejemplo del mundo real.</span><span class="sxs-lookup"><span data-stu-id="af04e-105">The Common Item Dialog object is a real-world example of this.</span></span> <span data-ttu-id="af04e-106">Para admitir los usos más habituales, el objeto implementa la interfaz [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) .</span><span class="sxs-lookup"><span data-stu-id="af04e-106">To support the most typical uses, the object implements the [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) interface.</span></span> <span data-ttu-id="af04e-107">Esta interfaz define métodos básicos para mostrar el cuadro de diálogo y obtener información sobre el archivo seleccionado.</span><span class="sxs-lookup"><span data-stu-id="af04e-107">This interface defines basic methods for displaying the dialog box and getting information about the selected file.</span></span> <span data-ttu-id="af04e-108">Sin embargo, para un uso más avanzado, el objeto también implementa una interfaz denominada [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).</span><span class="sxs-lookup"><span data-stu-id="af04e-108">For more advanced use, however, the object also implements an interface named [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).</span></span> <span data-ttu-id="af04e-109">Un programa puede utilizar esta interfaz para personalizar la apariencia y el comportamiento del cuadro de diálogo, agregando nuevos controles de IU.</span><span class="sxs-lookup"><span data-stu-id="af04e-109">A program can use this interface to customize the appearance and behavior of the dialog box, by adding new UI controls.</span></span>
+
+<span data-ttu-id="af04e-110">Recuerde que todas las interfaces COM deben heredar directa o indirectamente de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) .</span><span class="sxs-lookup"><span data-stu-id="af04e-110">Recall that every COM interface must inherit, directly or indirectly, from the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface.</span></span> <span data-ttu-id="af04e-111">En el diagrama siguiente se muestra la herencia del objeto de cuadro de diálogo de elementos comunes.</span><span class="sxs-lookup"><span data-stu-id="af04e-111">The following diagram shows the inheritance of the Common Item Dialog object.</span></span>
+
+![diagrama que muestra las interfaces expuestas por el objeto de cuadro de diálogo de elementos comunes](images/com06.png)
+
+<span data-ttu-id="af04e-113">Como puede ver en el diagrama, el antecesor directo de [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) es la interfaz [**IFileDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialog) , que a su vez hereda [**IModalWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-imodalwindow).</span><span class="sxs-lookup"><span data-stu-id="af04e-113">As you can see from the diagram, the direct ancestor of [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) is the [**IFileDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialog) interface, which in turn inherits [**IModalWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-imodalwindow).</span></span> <span data-ttu-id="af04e-114">Al subir la cadena de herencia de **IFileOpenDialog** a **IModalWindow**, las interfaces definen la funcionalidad de ventana generalizada cada vez más.</span><span class="sxs-lookup"><span data-stu-id="af04e-114">As you go up the inheritance chain from **IFileOpenDialog** to **IModalWindow**, the interfaces define increasingly generalized window functionality.</span></span> <span data-ttu-id="af04e-115">Por último, la interfaz **IModalWindow** hereda [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown).</span><span class="sxs-lookup"><span data-stu-id="af04e-115">Finally, the **IModalWindow** interface inherits [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown).</span></span> <span data-ttu-id="af04e-116">El objeto de cuadro de diálogo Common Item también implementa [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize), que existe en una cadena de herencia independiente.</span><span class="sxs-lookup"><span data-stu-id="af04e-116">The Common Item Dialog object also implements [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize), which exists in a separate inheritance chain.</span></span>
+
+<span data-ttu-id="af04e-117">Ahora Supongamos que tiene un puntero a la interfaz [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) .</span><span class="sxs-lookup"><span data-stu-id="af04e-117">Now suppose that you have a pointer to the [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) interface.</span></span> <span data-ttu-id="af04e-118">¿Cómo obtendría un puntero a la interfaz [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) ?</span><span class="sxs-lookup"><span data-stu-id="af04e-118">How would you get a pointer to the [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) interface?</span></span>
+
+![diagrama que muestra dos punteros de interfaz a interfaces en el mismo objeto](images/com07.png)
+
+<span data-ttu-id="af04e-120">Simplemente no funcionará la conversión del puntero [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) a un puntero [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) .</span><span class="sxs-lookup"><span data-stu-id="af04e-120">Simply casting the [**IFileOpenDialog**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) pointer to an [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) pointer will not work.</span></span> <span data-ttu-id="af04e-121">No hay ninguna manera confiable de "conversión cruzada" a través de una jerarquía de herencia, sin alguna forma de información de tipo en tiempo de ejecución (RTTI), que es una característica que depende de gran parte del lenguaje.</span><span class="sxs-lookup"><span data-stu-id="af04e-121">There is no reliable way to "cross cast" across an inheritance hierarchy, without some form of run-time type information (RTTI), which is a highly language-dependent feature.</span></span>
+
+<span data-ttu-id="af04e-122">El enfoque de COM consiste en *pedir* al objeto que le proporcione un puntero [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) , usando la primera interfaz como conducto en el objeto.</span><span class="sxs-lookup"><span data-stu-id="af04e-122">The COM approach is to *ask* the object to give you an [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) pointer, using the first interface as a conduit into the object.</span></span> <span data-ttu-id="af04e-123">Esto se hace llamando al método [**IUnknown:: QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) desde el primer puntero de interfaz.</span><span class="sxs-lookup"><span data-stu-id="af04e-123">This is done by calling the [**IUnknown::QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) method from the first interface pointer.</span></span> <span data-ttu-id="af04e-124">Puede pensar en **QueryInterface** como una versión independiente del lenguaje de la palabra clave de **\_ conversión dinámica** en C++.</span><span class="sxs-lookup"><span data-stu-id="af04e-124">You can think of **QueryInterface** as a language-independent version of the **dynamic\_cast** keyword in C++.</span></span>
+
+<span data-ttu-id="af04e-125">El método [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) tiene la firma siguiente:</span><span class="sxs-lookup"><span data-stu-id="af04e-125">The [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) method has the following signature:</span></span>
+
+``` syntax
+HRESULT QueryInterface(REFIID riid, void **ppvObject);
+```
+
+<span data-ttu-id="af04e-126">En función de lo que ya conoce en [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance), es posible que pueda adivinar cómo funciona [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) .</span><span class="sxs-lookup"><span data-stu-id="af04e-126">Based on what you already know about [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance), you might be able to guess how [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) works.</span></span>
+
+-   <span data-ttu-id="af04e-127">El parámetro *riid* es el GUID que identifica la interfaz que se solicita.</span><span class="sxs-lookup"><span data-stu-id="af04e-127">The *riid* parameter is the GUID that identifies the interface you are asking for.</span></span> <span data-ttu-id="af04e-128">El tipo de datos **REFIID** es un **typedef** para `const GUID&` .</span><span class="sxs-lookup"><span data-stu-id="af04e-128">The data type **REFIID** is a **typedef** for `const GUID&`.</span></span> <span data-ttu-id="af04e-129">Observe que el identificador de clase (CLSID) no es necesario, porque el objeto ya se ha creado.</span><span class="sxs-lookup"><span data-stu-id="af04e-129">Notice that the class identifier (CLSID) is not required, because the object has already been created.</span></span> <span data-ttu-id="af04e-130">Solo es necesario el identificador de interfaz.</span><span class="sxs-lookup"><span data-stu-id="af04e-130">Only the interface identifier is necessary.</span></span>
+-   <span data-ttu-id="af04e-131">El parámetro *ppvObject* recibe un puntero a la interfaz.</span><span class="sxs-lookup"><span data-stu-id="af04e-131">The *ppvObject* parameter receives a pointer to the interface.</span></span> <span data-ttu-id="af04e-132">El tipo de datos de este parámetro **es \* \* void**, por la misma razón que [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) usa este tipo de datos: [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) se puede usar para consultar cualquier interfaz com, por lo que el parámetro no puede tener un tipo seguro.</span><span class="sxs-lookup"><span data-stu-id="af04e-132">The data type of this parameter is **void\*\***, for the same reason that [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) uses this data type: [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) can be used to query for any COM interface, so the parameter cannot be strongly typed.</span></span>
+
+<span data-ttu-id="af04e-133">Aquí se muestra cómo llamaría a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) :</span><span class="sxs-lookup"><span data-stu-id="af04e-133">Here is how you would call [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) to get an [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) pointer:</span></span>
+
+
+```C++
+hr = pFileOpen->QueryInterface(IID_IFileDialogCustomize, 
+    reinterpret_cast<void**>(&pCustom));
+if (SUCCEEDED(hr))
+{
+    // Use the interface. (Not shown.)
+    // ...
+
+    pCustom->Release();
+}
+else
+{
+    // Handle the error.
+}
+```
+
+
+
+<span data-ttu-id="af04e-134">Como siempre, compruebe el valor devuelto **HRESULT** en caso de que se produzca un error en el método.</span><span class="sxs-lookup"><span data-stu-id="af04e-134">As always, check the **HRESULT** return value, in case the method fails.</span></span> <span data-ttu-id="af04e-135">Si el método se ejecuta correctamente, debe llamar a [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) cuando haya terminado de usar el puntero, tal como se describe en [Administración de la duración de un objeto](managing-the-lifetime-of-an-object.md).</span><span class="sxs-lookup"><span data-stu-id="af04e-135">If the method succeeds, you must call [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) when you are done using the pointer, as described in [Managing the Lifetime of an Object](managing-the-lifetime-of-an-object.md).</span></span>
+
+## <a name="next"></a><span data-ttu-id="af04e-136">Siguientes</span><span class="sxs-lookup"><span data-stu-id="af04e-136">Next</span></span>
+
+[<span data-ttu-id="af04e-137">Asignación de memoria en COM</span><span class="sxs-lookup"><span data-stu-id="af04e-137">Memory Allocation in COM</span></span>](memory-allocation-in-com.md)
+
+ 
+
+ 
