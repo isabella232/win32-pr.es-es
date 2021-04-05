@@ -1,0 +1,232 @@
+---
+title: Elemento ControlGroup
+description: Representa un grupo de controles en una plantilla de diseño SizeDefinition.
+ms.assetid: 688f3fa5-f305-4554-b16a-590983cf23b9
+keywords:
+- ControlGroup cinta de opciones de Windows
+topic_type:
+- apiref
+api_name:
+- ControlGroup
+api_type:
+- Schema
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: dd6df69f788efe01b9eb2c7ffe0aaddd98bd7198
+ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "104420177"
+---
+# <a name="controlgroup-element"></a>Elemento ControlGroup
+
+Representa un grupo de controles en una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+
+## <a name="usage"></a>Uso
+
+``` syntax
+<ControlGroup
+  SequenceNumber = "xs:positiveInteger">
+  child elements
+</ControlGroup>
+```
+
+## <a name="attributes"></a>Atributos
+
+
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Atributo</th>
+<th>Tipo</th>
+<th>Obligatorio</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SequenceNumber</strong><br/></td>
+<td>xs:positiveInteger<br/></td>
+<td>No<br/></td>
+<td>Solo es válido cuando <a href="windowsribbon-element-group.md"><strong>Group</strong></a> es el elemento primario.<br/> Cada <em>SequenceNumber</em> debe ser único dentro de un elemento <a href="windowsribbon-element-group.md"><strong>Group</strong></a> . Los valores de <em>SequenceNumber</em> deben aumentar para cada elemento <strong>Group</strong> , pero no es necesario que sean secuenciales. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (XS: positiveInteger)<br/> </dt> <dd> Cualquier valor entero positivo comprendido entre 1000 y 59999, ambos incluidos.<br/> </dd> </dl></td>
+</tr>
+</tbody>
+</table>
+
+
+
+## <a name="child-elements"></a>Elementos secundarios
+
+
+
+| Elemento                                                                                 | Descripción                                        |
+|-----------------------------------------------------------------------------------------|----------------------------------------------------|
+| [**Botón**](windowsribbon-element-button.md)<br/>                               | Puede producirse una o varias veces<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
+| [**ComboBox**](windowsribbon-element-combobox.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
+| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
+| [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>               | Puede producirse una o varias veces<br/> <br/> |
+| [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/>     | Puede producirse una o varias veces<br/> <br/> |
+| [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>             | Puede producirse una o varias veces<br/> <br/> |
+| [**FontControl**](windowsribbon-element-fontcontrol.md)<br/>                     | Puede aparecer como máximo una vez<br/> <br/>      |
+| [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)<br/>             | Puede producirse una o varias veces<br/> <br/> |
+| [**Spinner**](windowsribbon-element-spinner.md)<br/>                             | Puede producirse una o varias veces<br/> <br/> |
+| [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                     | Puede producirse una o varias veces<br/> <br/> |
+| [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/>       | Puede producirse una o varias veces<br/> <br/> |
+| [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/>                   | Puede producirse una o varias veces<br/> <br/> |
+
+
+
+## <a name="parent-elements"></a>Elementos primarios
+
+
+
+| Elemento                                                                             |
+|-------------------------------------------------------------------------------------|
+| **ControlGroup**<br/>                                                         |
+| [**Group (Grupo)**](windowsribbon-element-group.md)<br/>                             |
+| [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> |
+| [**Row**](windowsribbon-element-row.md)<br/>                                 |
+
+
+
+## <a name="remarks"></a>Observaciones
+
+Opcional.
+
+Puede producirse una o varias veces para cada [**Grupo**](windowsribbon-element-group.md) o elemento **ControlGroup** .
+
+Si no se proporciona ningún número de secuencia, los elementos se representan en el orden especificado en el marcado de la cinta de opciones.
+
+Si [**Group**](windowsribbon-element-group.md) o **ControlGroup** es el elemento primario, **ControlGroup** está restringido a los siguientes elementos secundarios posibles: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**InRibbonGallery**](windowsribbon-element-inribbongallery.md), [**Spinner**](windowsribbon-element-spinner.md), [**splitButton**](windowsribbon-element-splitbutton.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md) .
+
+De lo contrario, cuando [**Row**](windowsribbon-element-row.md) o [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) es el elemento primario, el [**Grupo**](windowsribbon-element-group.md) está restringido al siguiente elemento secundario posible: [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md).
+
+## <a name="examples"></a>Ejemplos
+
+En el ejemplo de código siguiente se muestra el marcado básico de una plantilla personalizada de diseño de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de cuatro botones con varios elementos de [**Grupo**](windowsribbon-element-group.md) .
+
+
+```XML
+<Group CommandName="cmdButtonGroup2">
+  <SizeDefinition>
+    <ControlNameMap>
+      <ControlNameDefinition Name="button1"/>
+      <ControlNameDefinition Name="button2"/>
+      <ControlNameDefinition Name="button3"/>
+      <ControlNameDefinition Name="button4"/>
+    </ControlNameMap>
+    <GroupSizeDefinition Size="Large">
+      <ControlGroup>
+        <ControlSizeDefinition ControlName="button1"
+                               ImageSize="Large"
+                               IsLabelVisible="true" />
+        <ControlSizeDefinition ControlName="button2"
+                               ImageSize="Large"
+                               IsLabelVisible="true" />
+      </ControlGroup>
+      <ColumnBreak ShowSeparator="true"/>
+      <ControlGroup>
+        <ControlSizeDefinition ControlName="button3"
+                               ImageSize="Large"
+                              IsLabelVisible="true" />
+        <ControlSizeDefinition ControlName="button4"
+                              ImageSize="Large"
+                              IsLabelVisible="true" />
+      </ControlGroup>
+    </GroupSizeDefinition>
+    <GroupSizeDefinition Size="Medium">
+      <Row>
+        <ControlSizeDefinition ControlName="button1"
+                               ImageSize="Small"
+                               IsLabelVisible="true" />
+        <ControlSizeDefinition ControlName="button3"
+                               ImageSize="Small"
+                               IsLabelVisible="true" />
+      </Row>
+      <Row>
+        <ControlSizeDefinition ControlName="button2"
+                               ImageSize="Small"
+                               IsLabelVisible="true" />
+        <ControlSizeDefinition ControlName="button4"
+                               ImageSize="Small"
+                               IsLabelVisible="true" />
+      </Row>
+    </GroupSizeDefinition>
+    <GroupSizeDefinition Size="Small">
+      <Row>
+        <ControlSizeDefinition ControlName="button1"
+                               ImageSize="Small"
+                               IsLabelVisible="true" />
+        <ControlSizeDefinition ControlName="button3"
+                               ImageSize="Small"
+                               IsLabelVisible="false" />
+      </Row>
+      <Row>
+        <ControlSizeDefinition ControlName="button2"
+                               ImageSize="Small"
+                               IsLabelVisible="true" />
+        <ControlSizeDefinition ControlName="button4"
+                               ImageSize="Small"
+                               IsLabelVisible="false" />
+      </Row>
+    </GroupSizeDefinition>
+  </SizeDefinition>
+  <Button CommandName="cmdButtonG21"></Button>
+  <Button CommandName="cmdButtonG22"></Button>
+  <Button CommandName="cmdButtonG23"></Button>
+  <Button CommandName="cmdButtonG24"></Button>
+</Group>
+<Group CommandName="cmdCheckBoxGroup">
+  <CheckBox CommandName="cmdCheckBox"></CheckBox>
+</Group>
+<Group CommandName="cmdToggleButtonGroup"
+       SizeDefinition="OneButton">
+  <ToggleButton CommandName="cmdToggleButton"></ToggleButton>
+</Group>
+<Group CommandName="cmdButtonGroup"
+       SizeDefinition="ThreeButtons">
+  <Button CommandName="cmdButton1"></Button>
+  <Button CommandName="cmdButton2"></Button>
+  <Button CommandName="cmdButton3"></Button>
+</Group>
+```
+
+
+
+## <a name="element-information"></a>Información de elemento
+
+
+
+|                                     |           |
+|-------------------------------------|-----------|
+| Sistema mínimo compatible<br/> | Windows 7 |
+| Puede estar vacío                        | No        |
+
+
+
+## <a name="see-also"></a>Consulte también
+
+<dl> <dt>
+
+[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
