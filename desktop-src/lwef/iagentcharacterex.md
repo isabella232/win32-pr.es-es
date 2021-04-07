@@ -1,0 +1,60 @@
+---
+title: IAgentCharacterEx
+description: IAgentCharacterEx
+ms.assetid: 8defc836-cc54-40c7-8afc-ec90f941861b
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f92a9f9c39804d6b5d3ac777457fff5b7f03823c
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103903640"
+---
+# <a name="iagentcharacterex"></a><span data-ttu-id="864ad-103">IAgentCharacterEx</span><span class="sxs-lookup"><span data-stu-id="864ad-103">IAgentCharacterEx</span></span>
+
+<span data-ttu-id="864ad-104">\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]</span><span class="sxs-lookup"><span data-stu-id="864ad-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+
+<span data-ttu-id="864ad-105">**IAgentCharacterEx** deriva de la interfaz [**IAgentCharacter**](iagentcharacter.md) .</span><span class="sxs-lookup"><span data-stu-id="864ad-105">**IAgentCharacterEx** derives from the [**IAgentCharacter**](iagentcharacter.md) interface.</span></span> <span data-ttu-id="864ad-106">Incluye todos los métodos **IAgentCharacter** y proporciona acceso a funciones adicionales.</span><span class="sxs-lookup"><span data-stu-id="864ad-106">It includes all the **IAgentCharacter** methods as well as provides access to additional functions.</span></span>
+
+<span data-ttu-id="864ad-107">**Métodos en orden de Vtable**</span><span class="sxs-lookup"><span data-stu-id="864ad-107">**Methods in Vtable Order**</span></span>
+
+
+
+| <span data-ttu-id="864ad-108">Métodos IAgentCharacterEx</span><span class="sxs-lookup"><span data-stu-id="864ad-108">IAgentCharacterEx Methods</span></span>                                         | <span data-ttu-id="864ad-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="864ad-109">Description</span></span>                                                                    |
+|-------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| [<span data-ttu-id="864ad-110">**ShowPopupMenu**</span><span class="sxs-lookup"><span data-stu-id="864ad-110">**ShowPopupMenu**</span></span>](iagentcharacterex--showpopupmenu.md)         | <span data-ttu-id="864ad-111">Muestra el menú emergente del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-111">Displays the pop-up menu for the character.</span></span>                                    |
+| [<span data-ttu-id="864ad-112">**SetAutoPopupMenu**</span><span class="sxs-lookup"><span data-stu-id="864ad-112">**SetAutoPopupMenu**</span></span>](iagentcharacterex--setautopopupmenu.md)   | <span data-ttu-id="864ad-113">Establece si el servidor muestra automáticamente el menú emergente del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-113">Sets whether the server automatically displays the character's pop-up menu.</span></span>    |
+| [<span data-ttu-id="864ad-114">**GetAutoPopupMenu**</span><span class="sxs-lookup"><span data-stu-id="864ad-114">**GetAutoPopupMenu**</span></span>](iagentcharacterex--getautopopupmenu.md)   | <span data-ttu-id="864ad-115">Devuelve si el servidor muestra automáticamente el menú emergente del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-115">Returns whether the server automatically displays the character's pop-up menu.</span></span> |
+| [<span data-ttu-id="864ad-116">**GetHelpFileName**</span><span class="sxs-lookup"><span data-stu-id="864ad-116">**GetHelpFileName**</span></span>](iagentcharacterex--gethelpfilename.md)     | <span data-ttu-id="864ad-117">Devuelve el nombre de archivo de ayuda para el carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-117">Returns the Help filename for the character.</span></span>                                   |
+| [<span data-ttu-id="864ad-118">**SetHelpFileName**</span><span class="sxs-lookup"><span data-stu-id="864ad-118">**SetHelpFileName**</span></span>](iagentcharacterex--sethelpfilename.md)     | <span data-ttu-id="864ad-119">Establece el nombre de archivo de ayuda para el carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-119">Sets the Help filename for the character.</span></span>                                      |
+| [<span data-ttu-id="864ad-120">**SetHelpModeOn**</span><span class="sxs-lookup"><span data-stu-id="864ad-120">**SetHelpModeOn**</span></span>](iagentcharacterex--sethelpmodeon.md)         | <span data-ttu-id="864ad-121">Establece el modo de ayuda en.</span><span class="sxs-lookup"><span data-stu-id="864ad-121">Sets Help mode on.</span></span>                                                             |
+| [<span data-ttu-id="864ad-122">**GetHelpModeOn**</span><span class="sxs-lookup"><span data-stu-id="864ad-122">**GetHelpModeOn**</span></span>](iagentcharacterex--gethelpmodeon.md)         | <span data-ttu-id="864ad-123">Devuelve si el modo de ayuda está activado.</span><span class="sxs-lookup"><span data-stu-id="864ad-123">Returns whether Help mode is on.</span></span>                                               |
+| [<span data-ttu-id="864ad-124">**SetHelpContextID**</span><span class="sxs-lookup"><span data-stu-id="864ad-124">**SetHelpContextID**</span></span>](iagentcharacterex--sethelpcontextid.md)   | <span data-ttu-id="864ad-125">Establece HelpContextID para el carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-125">Sets the HelpContextID for the character.</span></span>                                      |
+| [<span data-ttu-id="864ad-126">**GetHelpContextID**</span><span class="sxs-lookup"><span data-stu-id="864ad-126">**GetHelpContextID**</span></span>](iagentcharacterex--gethelpcontextid.md)   | <span data-ttu-id="864ad-127">Devuelve el HelpContextID del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-127">Returns the HelpContextID for the character.</span></span>                                   |
+| [<span data-ttu-id="864ad-128">**GetActive**</span><span class="sxs-lookup"><span data-stu-id="864ad-128">**GetActive**</span></span>](iagentcharacterex--getactive.md)                 | <span data-ttu-id="864ad-129">Devuelve el estado activo del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-129">Returns the active state for the character.</span></span>                                    |
+| [<span data-ttu-id="864ad-130">**Escuchar**</span><span class="sxs-lookup"><span data-stu-id="864ad-130">**Listen**</span></span>](iagentcharacterex--listen.md)                       | <span data-ttu-id="864ad-131">Establece el estado de escucha para el carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-131">Sets the listening state for the character.</span></span>                                    |
+| [<span data-ttu-id="864ad-132">**SetLanguageID**</span><span class="sxs-lookup"><span data-stu-id="864ad-132">**SetLanguageID**</span></span>](iagentcharacterex--setlanguageid.md)         | <span data-ttu-id="864ad-133">Establece el identificador de idioma del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-133">Sets the language ID for the character.</span></span>                                        |
+| [<span data-ttu-id="864ad-134">**getLanguageID**</span><span class="sxs-lookup"><span data-stu-id="864ad-134">**getLanguageID**</span></span>](iagentcharacterex--getlanguageid.md)         | <span data-ttu-id="864ad-135">Devuelve el identificador de idioma del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-135">Returns the language ID for the character.</span></span>                                     |
+| [<span data-ttu-id="864ad-136">**getTTSModeID**</span><span class="sxs-lookup"><span data-stu-id="864ad-136">**getTTSModeID**</span></span>](iagentcharacterex--getttsmodeid.md)           | <span data-ttu-id="864ad-137">Devuelve el identificador del modo TTS establecido para el carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-137">Returns the TTS mode ID set for the character.</span></span>                                 |
+| [<span data-ttu-id="864ad-138">**SetTTSModeID**</span><span class="sxs-lookup"><span data-stu-id="864ad-138">**SetTTSModeID**</span></span>](iagentcharacterex--setttsmodeid.md)           | <span data-ttu-id="864ad-139">Establece el identificador del modo TTS para el carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-139">Sets the TTS mode ID for the character.</span></span>                                        |
+| [<span data-ttu-id="864ad-140">**getSRModeID**</span><span class="sxs-lookup"><span data-stu-id="864ad-140">**getSRModeID**</span></span>](iagentcharacterex--getsrmodeid.md)             | <span data-ttu-id="864ad-141">Devuelve el identificador de modo del motor de reconocimiento de voz actual.</span><span class="sxs-lookup"><span data-stu-id="864ad-141">Returns the current speech recognition engine's mode ID.</span></span>                       |
+| [<span data-ttu-id="864ad-142">**setSRModeID**</span><span class="sxs-lookup"><span data-stu-id="864ad-142">**setSRModeID**</span></span>](iagentcharacterex--setsrmodeid.md)             | <span data-ttu-id="864ad-143">Establece el motor de reconocimiento de voz.</span><span class="sxs-lookup"><span data-stu-id="864ad-143">Sets the speech recognition engine.</span></span>                                            |
+| [<span data-ttu-id="864ad-144">**GetGUID**</span><span class="sxs-lookup"><span data-stu-id="864ad-144">**GetGUID**</span></span>](iagentcharacterex--getguid.md)                     | <span data-ttu-id="864ad-145">Devuelve el identificador del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-145">Returns the character's identifier.</span></span>                                            |
+| [<span data-ttu-id="864ad-146">**GetOriginalSize**</span><span class="sxs-lookup"><span data-stu-id="864ad-146">**GetOriginalSize**</span></span>](iagentcharacterex--getoriginalsize.md)     | <span data-ttu-id="864ad-147">Devuelve el tamaño original del marco de caracteres.</span><span class="sxs-lookup"><span data-stu-id="864ad-147">Returns the original size of the character frame.</span></span>                              |
+| [<span data-ttu-id="864ad-148">**Opina**</span><span class="sxs-lookup"><span data-stu-id="864ad-148">**Think**</span></span>](iagentcharacterex--think.md)                         | <span data-ttu-id="864ad-149">Muestra el texto especificado en el globo "pensamiento" del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-149">Displays the specified text in the character's "thought" balloon.</span></span>              |
+| [<span data-ttu-id="864ad-150">**GetVersion**</span><span class="sxs-lookup"><span data-stu-id="864ad-150">**GetVersion**</span></span>](iagentcharacterex--getversion.md)               | <span data-ttu-id="864ad-151">Devuelve la versión del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-151">Returns the version of the character.</span></span>                                          |
+| [<span data-ttu-id="864ad-152">**GetAnimationNames**</span><span class="sxs-lookup"><span data-stu-id="864ad-152">**GetAnimationNames**</span></span>](iagentcharacterex--getanimationnames.md) | <span data-ttu-id="864ad-153">Devuelve los nombres de las animaciones del carácter.</span><span class="sxs-lookup"><span data-stu-id="864ad-153">Returns the names of the animations for the character.</span></span>                         |
+| [<span data-ttu-id="864ad-154">**getSRStatus**</span><span class="sxs-lookup"><span data-stu-id="864ad-154">**getSRStatus**</span></span>](iagentcharacterex--getsrstatus.md)             | <span data-ttu-id="864ad-155">Devuelve las condiciones necesarias para admitir la entrada de voz.</span><span class="sxs-lookup"><span data-stu-id="864ad-155">Returns the conditions necessary to support speech input.</span></span>                      |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
