@@ -1,0 +1,262 @@
+---
+description: Flujos de Exclusive-Mode
+ms.assetid: 196cc6fe-91bf-46fa-acc9-38a7a4005875
+title: Flujos de Exclusive-Mode
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7722dd3463346e976f30a77949f56026a2425624
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104000600"
+---
+# <a name="exclusive-mode-streams"></a>Flujos de Exclusive-Mode
+
+Como se explicó anteriormente, si una aplicación abre un flujo en modo exclusivo, la aplicación tiene el uso exclusivo del dispositivo de extremo de audio que reproduce o registra la secuencia. En cambio, varias aplicaciones pueden compartir un dispositivo de punto de conexión de audio abriendo secuencias en modo compartido en el dispositivo.
+
+El acceso en modo exclusivo a un dispositivo de audio puede bloquear sonidos cruciales del sistema, impedir la interoperabilidad con otras aplicaciones y, de lo contrario, degradar la experiencia del usuario. Para mitigar estos problemas, una aplicación con una secuencia de modo exclusivo renuncia normalmente al control del dispositivo de audio cuando la aplicación no es el proceso en primer plano o no está en streaming activamente.
+
+La latencia de flujo es el retraso inherente a la ruta de acceso de datos que conecta el búfer de punto de conexión de una aplicación con un dispositivo de punto de conexión de audio. En el caso de una secuencia de representación, la latencia es el retraso máximo desde el momento en que una aplicación escribe un ejemplo en un búfer de extremo hasta el momento en que se oye el ejemplo a través de los altavoces. En el caso de una secuencia de captura, la latencia es el retraso máximo desde el momento en que un sonido entra en el micrófono hasta el momento en que una aplicación puede leer el ejemplo de ese sonido desde el búfer del extremo.
+
+Las aplicaciones que usan secuencias en modo exclusivo suelen hacerlo porque requieren latencias bajas en las rutas de acceso de datos entre los dispositivos de punto de conexión de audio y los subprocesos de la aplicación que tienen acceso a los búferes del extremo. Normalmente, estos subprocesos se ejecutan con una prioridad relativamente alta y se programan para ejecutarse a intervalos periódicos cercanos o iguales que el intervalo periódico que separa los pasos de procesamiento sucesivos por el hardware de audio. Durante cada paso, el hardware de audio procesa los nuevos datos en los búferes del extremo.
+
+Para lograr las latencias de flujo más pequeñas, una aplicación puede requerir tanto hardware de audio especial como un sistema de equipo que está ligeramente cargado. La conducción del hardware de audio más allá de los límites de tiempo o la carga del sistema con tareas de alta prioridad que compiten podría producir un problema en una secuencia de audio de baja latencia. Por ejemplo, para un flujo de representación, se puede producir un problema si la aplicación no puede escribir en un búfer de extremo antes de que el hardware de audio Lea el búfer, o si el hardware no puede leer el búfer antes de que se programe la reproducción del búfer. Normalmente, una aplicación que está diseñada para ejecutarse en una amplia variedad de hardware de audio y en una amplia gama de sistemas debe relajar los requisitos de control de tiempo suficientes para evitar problemas en todos los entornos de destino.
+
+Windows Vista tiene varias características para admitir aplicaciones que requieren secuencias de audio de baja latencia. Como se describe en [componentes de audio de modo de usuario](user-mode-audio-components.md), las aplicaciones que realizan operaciones críticas en el tiempo pueden llamar a las funciones del servicio Programador de clases multimedia (MMCSS) para aumentar la prioridad del subproceso sin denegar los recursos de CPU a las aplicaciones de menor prioridad. Además, el método [**IAudioClient:: Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) admite una marca AUDCLNT \_ STREAMFLAGS \_ EVENTCALLBACK que permite que el subproceso de servicio de búfer de una aplicación Programe su ejecución para que se produzca cuando un nuevo búfer esté disponible en el dispositivo de audio. Mediante el uso de estas características, un subproceso de aplicación puede reducir la incertidumbre sobre cuándo se ejecutará, lo que reduce el riesgo de problemas en una secuencia de audio de latencia baja.
+
+Es probable que los controladores de los adaptadores de audio anteriores usen la interfaz de controlador de dispositivo (DDI) de WaveCyclic o WavePci, mientras que los controladores para los adaptadores de audio más recientes tienen más probabilidades de admitir la DDI WaveRT. En el caso de las aplicaciones en modo exclusivo, los controladores de WaveRT pueden proporcionar un mejor rendimiento que los controladores WaveCyclic o WavePci, pero los controladores WaveRT requieren capacidades de hardware adicionales. Estas funcionalidades incluyen la capacidad de compartir búferes de hardware directamente con las aplicaciones. Con el uso compartido directo, no se requiere la intervención del sistema para transferir datos entre una aplicación en modo exclusivo y el hardware de audio. Por el contrario, los controladores WaveCyclic y WavePci son adecuados para los adaptadores de audio menos compatibles y más antiguos. Estos adaptadores dependen del software del sistema para transportar bloques de datos (adjuntados a paquetes de solicitud de e/s de sistema o IRP) entre búferes de aplicación y búferes de hardware. Además, los dispositivos de audio USB dependen del software del sistema para transportar datos entre búferes de aplicación y búferes de hardware. Para mejorar el rendimiento de las aplicaciones en modo exclusivo que se conectan a los dispositivos de audio que se basan en el sistema para el transporte de datos, WASAPI aumenta automáticamente la prioridad de los subprocesos del sistema que transfieren datos entre las aplicaciones y el hardware. WASAPI usa MMCSS para aumentar la prioridad del subproceso. En Windows Vista, si un subproceso del sistema administra el transporte de datos para una secuencia de reproducción de audio de modo exclusivo con un formato PCM y un período de dispositivo inferior a 10 milisegundos, WASAPI asigna el nombre de tarea de MMCSS "audio de Pro" al subproceso. Si el período del dispositivo de la secuencia es mayor o igual que 10 milisegundos, WASAPI asigna el nombre de la tarea MMCSS "audio" al subproceso. Para obtener más información acerca de WaveCyclic, WavePci y WaveRT DDIs, consulte la documentación de DDK de Windows. Para obtener información sobre cómo seleccionar un período de dispositivo adecuado, consulte [**IAudioClient:: GetDevicePeriod**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getdeviceperiod).
+
+Como se describe [en controles de volumen de sesión](session-volume-controls.md), [WASAPI](wasapi.md) proporciona las interfaces [**ISimpleAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-isimpleaudiovolume), [**IChannelAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-ichannelaudiovolume)y [**IAudioStreamVolume**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiostreamvolume) para controlar los niveles de volumen de las secuencias de audio en modo compartido. Sin embargo, los controles de estas interfaces no tienen ningún efecto en los flujos de modo exclusivo. En su lugar, las aplicaciones que administran secuencias en modo exclusivo usan normalmente la interfaz [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) en la [API EndpointVolume](endpointvolume-api.md) para controlar los niveles de volumen de esas secuencias. Para obtener información sobre esta interfaz, consulte [controles de volumen de extremo](endpoint-volume-controls.md).
+
+Para cada dispositivo de reproducción y dispositivo de captura en el sistema, el usuario puede controlar si el dispositivo se puede usar en modo exclusivo. Si el usuario deshabilita el uso de modo exclusivo del dispositivo, el dispositivo se puede usar para reproducir o grabar únicamente flujos en modo compartido.
+
+Si el usuario habilita el uso de modo exclusivo del dispositivo, el usuario también puede controlar si una solicitud de la aplicación para usar el dispositivo en modo exclusivo tendrá preferencia sobre el uso del dispositivo por parte de las aplicaciones que puedan estar reproduciendo o grabando flujos en modo compartido a través del dispositivo. Si se habilita el adelantado, una solicitud de una aplicación para tomar el control exclusivo del dispositivo se realiza correctamente si el dispositivo no está actualmente en uso, o si el dispositivo se usa en modo compartido, pero se produce un error en la solicitud si otra aplicación ya tiene el control exclusivo del dispositivo. Si el adelantamiento está deshabilitado, una solicitud de una aplicación para tomar el control exclusivo del dispositivo se realiza correctamente si el dispositivo no está actualmente en uso, pero se produce un error en la solicitud si el dispositivo ya se está usando en modo compartido o en modo exclusivo.
+
+En Windows Vista, la configuración predeterminada para un dispositivo de punto de conexión de audio es la siguiente:
+
+-   El dispositivo se puede usar para reproducir o grabar flujos de modo exclusivo.
+-   Una solicitud para usar un dispositivo para reproducir o grabar un flujo en modo exclusivo tiene preferencia sobre cualquier flujo en modo compartido que se esté reproduciendo o grabando a través del dispositivo.
+
+**Para cambiar la configuración de modo exclusivo de un dispositivo de reproducción o grabación**
+
+1.  Haga clic con el botón derecho en el icono de altavoz en el área de notificación, que se encuentra en el lado derecho de la barra de tareas, y seleccione **dispositivos de reproducción** o **dispositivos de grabación**. (Como alternativa, ejecute el panel de control multimedia de Windows, Mmsys.cpl, desde una ventana del símbolo del sistema. Para obtener más información, vea la sección Comentarios en las [constantes de estado de dispositivo \_ \_ XXX](device-state-xxx-constants.md)).
+2.  Después de que aparezca la ventana de **sonido** , seleccione **reproducción** o **grabación**. A continuación, seleccione una entrada en la lista de nombres de dispositivo y haga clic en **propiedades**.
+3.  Después de que aparezca la ventana **propiedades** , haga clic en **avanzadas**.
+4.  Para permitir que las aplicaciones usen el dispositivo en modo exclusivo, active la casilla **permitir que las aplicaciones tomen el control exclusivo de este dispositivo**. Para deshabilitar el uso de modo exclusivo del dispositivo, desactive la casilla.
+5.  Si está habilitado el uso de modo exclusivo del dispositivo, puede especificar si se realizará correctamente una solicitud de control exclusivo del dispositivo si el dispositivo está reproduciendo o grabando flujos en modo compartido. Para dar prioridad a las aplicaciones en modo exclusivo sobre las aplicaciones en modo compartido, active la casilla **asignar prioridad a las aplicaciones en modo exclusivo**. Para denegar la prioridad de las aplicaciones en modo exclusivo sobre las aplicaciones en modo compartido, desactive la casilla.
+
+En el ejemplo de código siguiente se muestra cómo reproducir una secuencia de audio de baja latencia en un dispositivo de representación de audio configurado para su uso en modo exclusivo:
+
+
+```C++
+//-----------------------------------------------------------
+// Play an exclusive-mode stream on the default audio
+// rendering device. The PlayExclusiveStream function uses
+// event-driven buffering and MMCSS to play the stream at
+// the minimum latency supported by the device.
+//-----------------------------------------------------------
+
+// REFERENCE_TIME time units per second and per millisecond
+#define REFTIMES_PER_SEC  10000000
+#define REFTIMES_PER_MILLISEC  10000
+
+#define EXIT_ON_ERROR(hres)  \
+              if (FAILED(hres)) { goto Exit; }
+#define SAFE_RELEASE(punk)  \
+              if ((punk) != NULL)  \
+                { (punk)->Release(); (punk) = NULL; }
+
+const CLSID CLSID_MMDeviceEnumerator = __uuidof(MMDeviceEnumerator);
+const IID IID_IMMDeviceEnumerator = __uuidof(IMMDeviceEnumerator);
+const IID IID_IAudioClient = __uuidof(IAudioClient);
+const IID IID_IAudioRenderClient = __uuidof(IAudioRenderClient);
+
+HRESULT PlayExclusiveStream(MyAudioSource *pMySource)
+{
+    HRESULT hr;
+    REFERENCE_TIME hnsRequestedDuration = 0;
+    IMMDeviceEnumerator *pEnumerator = NULL;
+    IMMDevice *pDevice = NULL;
+    IAudioClient *pAudioClient = NULL;
+    IAudioRenderClient *pRenderClient = NULL;
+    WAVEFORMATEX *pwfx = NULL;
+    HANDLE hEvent = NULL;
+    HANDLE hTask = NULL;
+    UINT32 bufferFrameCount;
+    BYTE *pData;
+    DWORD flags = 0;
+
+    hr = CoCreateInstance(
+           CLSID_MMDeviceEnumerator, NULL,
+           CLSCTX_ALL, IID_IMMDeviceEnumerator,
+           (void**)&pEnumerator);
+    EXIT_ON_ERROR(hr)
+
+    hr = pEnumerator->GetDefaultAudioEndpoint(
+                        eRender, eConsole, &pDevice);
+    EXIT_ON_ERROR(hr)
+
+    hr = pDevice->Activate(
+                    IID_IAudioClient, CLSCTX_ALL,
+                    NULL, (void**)&pAudioClient);
+    EXIT_ON_ERROR(hr)
+
+    // Call a helper function to negotiate with the audio
+    // device for an exclusive-mode stream format.
+    hr = GetStreamFormat(pAudioClient, &pwfx);
+    EXIT_ON_ERROR(hr)
+
+    // Initialize the stream to play at the minimum latency.
+    hr = pAudioClient->GetDevicePeriod(NULL, &hnsRequestedDuration);
+    EXIT_ON_ERROR(hr)
+
+    hr = pAudioClient->Initialize(
+                         AUDCLNT_SHAREMODE_EXCLUSIVE,
+                         AUDCLNT_STREAMFLAGS_EVENTCALLBACK,
+                         hnsRequestedDuration,
+                         hnsRequestedDuration,
+                         pwfx,
+                         NULL);
+    EXIT_ON_ERROR(hr)
+
+    // Tell the audio source which format to use.
+    hr = pMySource->SetFormat(pwfx);
+    EXIT_ON_ERROR(hr)
+
+    // Create an event handle and register it for
+    // buffer-event notifications.
+    hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
+    if (hEvent == NULL)
+    {
+        hr = E_FAIL;
+        goto Exit;
+    }
+
+    hr = pAudioClient->SetEventHandle(hEvent);
+    EXIT_ON_ERROR(hr);
+
+    // Get the actual size of the two allocated buffers.
+    hr = pAudioClient->GetBufferSize(&bufferFrameCount);
+    EXIT_ON_ERROR(hr)
+
+    hr = pAudioClient->GetService(
+                         IID_IAudioRenderClient,
+                         (void**)&pRenderClient);
+    EXIT_ON_ERROR(hr)
+
+    // To reduce latency, load the first buffer with data
+    // from the audio source before starting the stream.
+    hr = pRenderClient->GetBuffer(bufferFrameCount, &pData);
+    EXIT_ON_ERROR(hr)
+
+    hr = pMySource->LoadData(bufferFrameCount, pData, &flags);
+    EXIT_ON_ERROR(hr)
+
+    hr = pRenderClient->ReleaseBuffer(bufferFrameCount, flags);
+    EXIT_ON_ERROR(hr)
+
+    // Ask MMCSS to temporarily boost the thread priority
+    // to reduce glitches while the low-latency stream plays.
+    DWORD taskIndex = 0;
+    hTask = AvSetMmThreadCharacteristics(TEXT("Pro Audio"), &taskIndex);
+    if (hTask == NULL)
+    {
+        hr = E_FAIL;
+        EXIT_ON_ERROR(hr)
+    }
+
+    hr = pAudioClient->Start();  // Start playing.
+    EXIT_ON_ERROR(hr)
+
+    // Each loop fills one of the two buffers.
+    while (flags != AUDCLNT_BUFFERFLAGS_SILENT)
+    {
+        // Wait for next buffer event to be signaled.
+        DWORD retval = WaitForSingleObject(hEvent, 2000);
+        if (retval != WAIT_OBJECT_0)
+        {
+            // Event handle timed out after a 2-second wait.
+            pAudioClient->Stop();
+            hr = ERROR_TIMEOUT;
+            goto Exit;
+        }
+
+        // Grab the next empty buffer from the audio device.
+        hr = pRenderClient->GetBuffer(bufferFrameCount, &pData);
+        EXIT_ON_ERROR(hr)
+
+        // Load the buffer with data from the audio source.
+        hr = pMySource->LoadData(bufferFrameCount, pData, &flags);
+        EXIT_ON_ERROR(hr)
+
+        hr = pRenderClient->ReleaseBuffer(bufferFrameCount, flags);
+        EXIT_ON_ERROR(hr)
+    }
+
+    // Wait for the last buffer to play before stopping.
+    Sleep((DWORD)(hnsRequestedDuration/REFTIMES_PER_MILLISEC));
+
+    hr = pAudioClient->Stop();  // Stop playing.
+    EXIT_ON_ERROR(hr)
+
+Exit:
+    if (hEvent != NULL)
+    {
+        CloseHandle(hEvent);
+    }
+    if (hTask != NULL)
+    {
+        AvRevertMmThreadCharacteristics(hTask);
+    }
+    CoTaskMemFree(pwfx);
+    SAFE_RELEASE(pEnumerator)
+    SAFE_RELEASE(pDevice)
+    SAFE_RELEASE(pAudioClient)
+    SAFE_RELEASE(pRenderClient)
+
+    return hr;
+}
+```
+
+
+
+En el ejemplo de código anterior, la función PlayExclusiveStream se ejecuta en el subproceso de la aplicación que presta servicio a los búferes del extremo mientras se reproduce una secuencia de representación. La función toma un único parámetro, pMySource, que es un puntero a un objeto que pertenece a una clase definida por el cliente, MyAudioSource. Esta clase tiene dos funciones miembro, LoadData y SetFormat, a las que se llama en el ejemplo de código. MyAudioSource se describe en [la representación de una secuencia](rendering-a-stream.md).
+
+La función PlayExclusiveStream llama a una función auxiliar, GetStreamFormat, que negocia con el dispositivo de representación predeterminado para determinar si el dispositivo admite un formato de flujo de modo exclusivo que sea adecuado para su uso por parte de la aplicación. El código de la función GetStreamFormat no aparece en el ejemplo de código; Esto se debe a que los detalles de su implementación dependen por completo de los requisitos de la aplicación. Sin embargo, el funcionamiento de la función GetStreamFormat se puede describir simplemente: llama al método [**IAudioClient:: IsFormatSupported**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-isformatsupported) una o varias veces para determinar si el dispositivo admite un formato adecuado. Los requisitos de la aplicación determinan qué formatos GetStreamFormat presenta al método **IsFormatSupported** y el orden en que los presenta. Para obtener más información sobre **IsFormatSupported**, consulte [formatos de dispositivo](device-formats.md).
+
+Después de la llamada a GetStreamFormat, la función PlayExclusiveStream llama al método [**IAudioClient:: GetDevicePeriod**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getdeviceperiod) para obtener el período de dispositivo mínimo admitido por el hardware de audio. A continuación, la función llama al método [**IAudioClient:: Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) para solicitar una duración del búfer igual al período mínimo. Si la llamada se realiza correctamente, el método **Initialize** asigna dos búferes de punto de conexión, cada uno de los cuales tiene una duración igual al período mínimo. Más adelante, cuando se inicie la ejecución de la secuencia de audio, la aplicación y el hardware de audio compartirán los dos búferes en "ping-pong", es decir, mientras la aplicación escribe en un búfer, el hardware lee desde el otro búfer.
+
+Antes de iniciar la secuencia, la función PlayExclusiveStream hace lo siguiente:
+
+-   Crea y registra el controlador de eventos a través del cual recibirá notificaciones cuando los búferes estén listos para rellenarse.
+-   Rellena el primer búfer con datos del origen de audio para reducir el retraso desde el momento en que la secuencia comienza a ejecutarse hasta que se oye el sonido inicial.
+-   Llama a la función **AvSetMmThreadCharacteristics** para solicitar que MMCSS aumente la prioridad del subproceso en el que se ejecuta PlayExclusiveStream. (Cuando la secuencia deja de ejecutarse, la llamada a la función **AvRevertMmThreadCharacteristics** restaura la prioridad de subproceso original).
+
+Para obtener más información sobre **AvSetMmThreadCharacteristics** y **AvRevertMmThreadCharacteristics**, consulte la documentación de Windows SDK.
+
+Mientras se ejecuta la secuencia, cada iteración del bucle **While** en el ejemplo de código anterior rellena un búfer de extremo. Entre iteraciones, la llamada a la función **WaitForSingleObject** espera a que se señale el controlador de eventos. Cuando se señala el identificador, el cuerpo del bucle hace lo siguiente:
+
+1.  Llama al método [**IAudioRenderClient:: getBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-getbuffer) para obtener el siguiente búfer.
+2.  Rellena el búfer.
+3.  Llama al método [**IAudioRenderClient:: ReleaseBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-releasebuffer) para liberar el búfer.
+
+Para obtener más información acerca de **WaitForSingleObject**, consulte la documentación de Windows SDK.
+
+Si el adaptador de audio está controlado por un controlador WaveRT, la señalización del controlador de eventos está ligada a las notificaciones de transferencia DMA del hardware de audio. Para un dispositivo de audio USB, o para un dispositivo de audio controlado por un controlador WaveCyclic o WavePci, la señalización del identificador de evento está asociada a las finalizaciones de las IRP que transfieren datos del búfer de aplicación al búfer de hardware.
+
+El ejemplo de código anterior envía el hardware de audio y el sistema al equipo a sus límites de rendimiento. En primer lugar, para reducir la latencia de flujo, la aplicación programa el subproceso de mantenimiento del búfer para que use el período de dispositivo mínimo admitido por el hardware de audio. En segundo lugar, para asegurarse de que el subproceso se ejecuta de forma confiable dentro de cada período de dispositivo, la llamada de función **AvSetMmThreadCharacteristics** establece el parámetro TASKNAME en "Audio Pro", que es, en Windows Vista, el nombre de tarea predeterminado con la prioridad más alta. Considere si los requisitos de tiempo de la aplicación pueden ser relajados sin poner en peligro su utilidad. Por ejemplo, la aplicación podría programar su subproceso de mantenimiento de búfer para que use un período que sea mayor que el mínimo. Un período más largo podría permitir de forma segura el uso de una prioridad de subproceso inferior.
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Administración de flujos](stream-management.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
