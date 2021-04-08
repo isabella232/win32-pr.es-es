@@ -1,0 +1,116 @@
+---
+description: No se admite la función RKeyPFXInstall.
+ms.assetid: 061e3d9d-fc92-4204-92f3-f3425afdbe27
+title: Función RKeyPFXInstall (Rkeysvcc. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- RKeyPFXInstall
+api_type:
+- HeaderDef
+api_location:
+- Rkeysvcc.h
+ms.openlocfilehash: 4908b7224a02f5a28b876b1ff67cbcec7d23df5f
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104001159"
+---
+# <a name="rkeypfxinstall-function"></a>RKeyPFXInstall función)
+
+No se admite la función **RKeyPFXInstall** .
+
+**Windows Server 2003:** La función **RKeyPFXInstall** instala un certificado en un equipo remoto. Tenga en cuenta que este comportamiento ha cambiado con Windows Server 2003 con Service Pack 1 (SP1).
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+ULONG RKeyPFXInstall(
+  _In_ KEYSVCC_HANDLE         hKeySvcCli,
+  _In_ PKEYSVC_BLOB           pPFX,
+  _In_ PKEYSVC_UNICODE_STRING pPassword,
+  _In_ ULONG                  ulFlags
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*hKeySvcCli* \[ de\]
+</dt> <dd>
+
+Identificador [**de \_ controlador de KEYSVCC**](keysvcc-handle.md) abierto previamente por [**RKeyOpenKeyService**](rkeyopenkeyservice.md). El identificador representa el equipo remoto que recibirá el certificado. Este valor no puede ser **null**.
+
+</dd> <dt>
+
+*pPFX* \[ de\]
+</dt> <dd>
+
+Puntero a una estructura [**de \_ blobs de KEYSVC**](keysvc-blob.md) que representa el certificado que se va a instalar. El BLOB está en formato [*PKCS \# 12*](../secgloss/p-gly.md) .
+
+</dd> <dt>
+
+*pPassword* \[ de\]
+</dt> <dd>
+
+Puntero a una estructura [**de \_ \_ cadena Unicode KEYSVC**](keysvc-unicode-string.md) que representa la contraseña del BLOB. Cuando haya terminado de usar la contraseña, borre la contraseña de la memoria mediante una llamada a la función [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) . Para obtener más información sobre cómo proteger las contraseñas, consulte [Administrar contraseñas](../secbp/handling-passwords.md).
+
+</dd> <dt>
+
+*ulFlags* \[ de\]
+</dt> <dd>
+
+Marcas que especifican las opciones de instalación del certificado. Este parámetro puede ser un cero o una combinación de los valores siguientes.
+
+
+
+| Value                                                                                                                                                                                                                                     | Significado                                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**Cifrado \_ Exportable**</dt><dt></dt> </dl>              | Las claves importadas se marcan como exportables.<br/>                                           |
+| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**Cifrado \_ \_conjunto de claves de equipo**</dt><dt></dt> </dl> | Las claves privadas se almacenan en el equipo remoto y no en el usuario actual.<br/> |
+
+
+
+ 
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Si la función se realiza correctamente, el valor devuelto es S \_ OK.
+
+Si se produce un error en la función, el valor devuelto es un **ULong** que indica el error.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|---------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[**RKeyCloseKeyService**](rkeyclosekeyservice.md)
+</dt> <dt>
+
+[**RKeyOpenKeyService**](rkeyopenkeyservice.md)
+</dt> </dl>
+
+ 
+
+ 
