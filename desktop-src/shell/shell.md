@@ -24,7 +24,7 @@ ms.locfileid: "103912362"
 
 Representa los objetos del shell. Se proporcionan métodos para controlar el Shell y ejecutar comandos dentro del shell. También hay métodos para obtener otros objetos relacionados con el shell.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El objeto de **Shell** tiene estos tipos de miembros:
 
@@ -132,7 +132,7 @@ A partir de Windows Vista, la mayoría de las aplicaciones del panel de control 
 <td style="text-align: left;">Crea y devuelve un objeto de <a href="folder.md"><strong>carpeta</strong></a> para la carpeta especificada.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="shell-open.md"><strong>Ábra</strong></a></td>
+<td style="text-align: left;"><a href="shell-open.md"><strong>Abrir</strong></a></td>
 <td style="text-align: left;">Abre la carpeta especificada.<br/></td>
 </tr>
 <tr class="odd">
