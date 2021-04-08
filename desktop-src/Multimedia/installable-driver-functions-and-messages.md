@@ -1,0 +1,41 @@
+---
+title: Mensajes y funciones de controlador instalables
+description: Mensajes y funciones de controlador instalables
+ms.assetid: f487705a-ae8e-4ea8-bfd5-9b0f6087ddbb
+keywords:
+- Controladores instalables, funciones
+- Controladores instalables, mensajes
+- Controladores instalables, función OpenDriver
+- OpenDriver función)
+- Controladores instalables, mensajes personalizados
+- mensajes de controlador
+- mensajes de controlador personalizados
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c66e6ebaac73bf8eb779119750cb390481152c3f
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "103995215"
+---
+# <a name="installable-driver-functions-and-messages"></a><span data-ttu-id="21826-110">Mensajes y funciones de controlador instalables</span><span class="sxs-lookup"><span data-stu-id="21826-110">Installable Driver Functions and Messages</span></span>
+
+<span data-ttu-id="21826-111">Puede abrir un controlador instalable desde una aplicación mediante la función [**OpenDriver**](/windows/win32/api/mmiscapi/nf-mmiscapi-opendriver) .</span><span class="sxs-lookup"><span data-stu-id="21826-111">You can open an installable driver from an application by using the [**OpenDriver**](/windows/win32/api/mmiscapi/nf-mmiscapi-opendriver) function.</span></span> <span data-ttu-id="21826-112">Esta función crea una instancia del controlador, carga el controlador en memoria si no existe ninguna otra instancia y devuelve el identificador de la nueva instancia.</span><span class="sxs-lookup"><span data-stu-id="21826-112">This function creates an instance of the driver, loading the driver into memory if no other instance exists, and returns the handle of the new instance.</span></span> <span data-ttu-id="21826-113">Al abrir un controlador instalable, debe proporcionar la ruta de acceso completa del controlador o los nombres de la clave del registro y el valor asociado al controlador.</span><span class="sxs-lookup"><span data-stu-id="21826-113">When opening an installable driver, you must supply either the full path of the driver or the names of the registry key and value associated with the driver.</span></span>
+
+<span data-ttu-id="21826-114">Una vez abierto un controlador, puede dirigirlo para llevar a cabo tareas mediante la función [**SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) para enviar mensajes de controlador al controlador.</span><span class="sxs-lookup"><span data-stu-id="21826-114">Once a driver is open, you can direct it to carry out tasks by using the [**SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) function to send driver messages to the driver.</span></span> <span data-ttu-id="21826-115">Por ejemplo, puede dirigir el controlador para que muestre su cuadro de diálogo de configuración mediante el envío del mensaje [**DRV \_ Configure**](drv-configure.md) .</span><span class="sxs-lookup"><span data-stu-id="21826-115">For example, you can direct the driver to display its configuration dialog box by sending the [**DRV\_CONFIGURE**](drv-configure.md) message.</span></span> <span data-ttu-id="21826-116">Antes de enviar este mensaje, debe determinar si el controlador tiene un cuadro de diálogo de configuración mediante el envío del mensaje [**DRV \_ QUERYCONFIGURE**](drv-queryconfigure.md) y la comprobación de un valor devuelto distinto de cero.</span><span class="sxs-lookup"><span data-stu-id="21826-116">Before sending this message, you must determine whether the driver has a configuration dialog box by sending the [**DRV\_QUERYCONFIGURE**](drv-queryconfigure.md) message and checking for a nonzero return value.</span></span> <span data-ttu-id="21826-117">Muchos controladores proporcionan un conjunto de mensajes personalizados que puede enviar para dirigir las operaciones del controlador.</span><span class="sxs-lookup"><span data-stu-id="21826-117">Many drivers provide a set of custom messages that you can send to direct the operations of the driver.</span></span>
+
+<span data-ttu-id="21826-118">Si necesita acceso especial a un controlador instalable, como el acceso a sus recursos, puede recuperar el identificador de módulo del controlador mediante la función [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) .</span><span class="sxs-lookup"><span data-stu-id="21826-118">If you need special access to an installable driver, such as access to its resources, you can retrieve the module handle of the driver by using the [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) function.</span></span>
+
+<span data-ttu-id="21826-119">Cuando ya no necesite el controlador instalable, puede cerrarlo mediante la función [**CloseDriver**](/windows/win32/api/mmiscapi/nf-mmiscapi-closedriver) .</span><span class="sxs-lookup"><span data-stu-id="21826-119">When you no longer need the installable driver, you can close it by using the [**CloseDriver**](/windows/win32/api/mmiscapi/nf-mmiscapi-closedriver) function.</span></span>
+
+<span data-ttu-id="21826-120">Puede utilizar las funciones y los mensajes del controlador instalable para abrir y administrar cualquier controlador instalable.</span><span class="sxs-lookup"><span data-stu-id="21826-120">You can use the installable driver functions and messages to open and manage any installable driver.</span></span> <span data-ttu-id="21826-121">Sin embargo, el curso de acción recomendado para abrir y administrar dispositivos multimedia es usar primero servicios estándar (como [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen), [**waveOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutmessage)y [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose) para dispositivos de salida de forma de onda), si existen.</span><span class="sxs-lookup"><span data-stu-id="21826-121">However, the recommended course of action for opening and managing multimedia devices is to first use standard services (such as [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen), [**waveOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutmessage), and [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose) for waveform output devices), if they exist.</span></span> <span data-ttu-id="21826-122">Si los servicios estándar no existen para un controlador multimedia, abra y administre el controlador mediante las funciones y los mensajes del controlador instalable.</span><span class="sxs-lookup"><span data-stu-id="21826-122">If standard services do not exist for a multimedia driver, then open and manage the driver using the installable driver functions and messages.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="21826-123">Las funciones [**SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) y [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) son las funciones preferidas que se usan para enviar mensajes a un controlador y para obtener un identificador para una instancia de módulo.</span><span class="sxs-lookup"><span data-stu-id="21826-123">The [**SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) and [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) functions are the preferred functions to use to send messages to a driver and to obtain a handle to a module instance.</span></span> <span data-ttu-id="21826-124">La función [**DrvGetModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-drvgetmodulehandle) anterior, sin embargo, se ha incluido para mantener la compatibilidad con las versiones anteriores del sistema operativo Windows.</span><span class="sxs-lookup"><span data-stu-id="21826-124">The older [**DrvGetModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-drvgetmodulehandle) function, however, has been included to maintain compatibility with previous versions of the Windows operating system.</span></span>
+
+ 
+
+ 
+
+ 
