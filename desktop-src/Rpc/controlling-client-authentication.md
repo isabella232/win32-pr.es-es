@@ -1,0 +1,26 @@
+---
+title: Controlar la autenticación del cliente
+description: El mejor método para autenticar un cliente es la instalación de una función de devolución de llamada de seguridad mediante la función RpcServerRegisterIf2 o RpcServerRegisterIfEx. acepta una función de devolución de llamada de seguridad como argumento.
+ms.assetid: 3e858a71-9190-44a3-bc63-08cfbd02d443
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3508e99b351cd57fb67a3727710b60562ffe25dc
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103903404"
+---
+# <a name="controlling-client-authentication"></a><span data-ttu-id="16459-103">Controlar la autenticación del cliente</span><span class="sxs-lookup"><span data-stu-id="16459-103">Controlling Client Authentication</span></span>
+
+<span data-ttu-id="16459-104">El mejor método para autenticar un cliente es la instalación de una función de devolución de llamada de seguridad mediante la función [**RpcServerRegisterIf2**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterif2) o [**RpcServerRegisterIfEx**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterifex) . acepta una función de devolución de llamada de seguridad como argumento.</span><span class="sxs-lookup"><span data-stu-id="16459-104">The best method for authenticating a client is installing a security callback function using the [**RpcServerRegisterIf2**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterif2) or [**RpcServerRegisterIfEx**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterifex) function; either accepts a security callback function as an argument.</span></span> <span data-ttu-id="16459-105">Cuando se llame a la función de devolución de llamada de seguridad, realice las comprobaciones necesarias.</span><span class="sxs-lookup"><span data-stu-id="16459-105">When the security callback function is called, make the necessary checks.</span></span> <span data-ttu-id="16459-106">Se pueden comprobar los atributos de la conexión, la identidad del autor de la llamada o ambos.</span><span class="sxs-lookup"><span data-stu-id="16459-106">The attributes on the connection, identity of the caller, or both, can be checked.</span></span> <span data-ttu-id="16459-107">Para comprobar los atributos de una conexión, llame a la función [**RpcServerInqCallAttributes**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcserverinqcallattributesa) o [**RpcBindingInqAuthClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient) .</span><span class="sxs-lookup"><span data-stu-id="16459-107">To check the attributes of a connection, call the [**RpcServerInqCallAttributes**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcserverinqcallattributesa) or [**RpcBindingInqAuthClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient) function.</span></span> <span data-ttu-id="16459-108">Esto permite el filtrado de los clientes que no se autentican, los clientes que usan un proveedor de seguridad específico o los clientes que no usan una protección suficientemente segura (como la privacidad).</span><span class="sxs-lookup"><span data-stu-id="16459-108">This enables the filtering of clients that are not authenticated, clients that use a specific security provider, or clients that do not use strong enough protection (like privacy).</span></span>
+
+<span data-ttu-id="16459-109">Para permitir el acceso a un subconjunto de los usuarios autenticados, use [**RpcGetAuthorizationContextForClient**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcgetauthorizationcontextforclient).</span><span class="sxs-lookup"><span data-stu-id="16459-109">To allow access to a subset of the authenticated users, use [**RpcGetAuthorizationContextForClient**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcgetauthorizationcontextforclient).</span></span> <span data-ttu-id="16459-110">Esta función devuelve un contexto de cliente de authz que se puede usar para realizar comprobaciones de acceso muy sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="16459-110">This function returns an Authz client context that can be used to make very sophisticated access checks.</span></span> <span data-ttu-id="16459-111">Por ejemplo, este método se puede usar para permitir el acceso solo a los Vicepresidentes de una organización durante el horario comercial normal y al CEO durante cualquier hora mediante Active Directory Services para asignar un nombre de usuario a su título.</span><span class="sxs-lookup"><span data-stu-id="16459-111">For example, this method could be used to allow access only to the vice presidents in an organization during normal business hours, and to the CEO during any hour using Active Directory services to map a user name to their title.</span></span> <span data-ttu-id="16459-112">Se puede suplantar al usuario y se obtiene su nombre.</span><span class="sxs-lookup"><span data-stu-id="16459-112">The user can be impersonated, and their name obtained.</span></span> <span data-ttu-id="16459-113">Una vez que se conoce su identidad, se pueden realizar las comprobaciones deseadas.</span><span class="sxs-lookup"><span data-stu-id="16459-113">Once their identity is known, any desired checks can be made.</span></span>
+
+ 
+
+ 
+
+
+
+
