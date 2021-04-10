@@ -1,0 +1,51 @@
+---
+description: Guía de programación
+ms.assetid: 825c7cd7-dc66-47b6-a1b6-d10101daebb3
+title: Guía de programación de audio básica
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3cb99369058983ebac7205053efdf967bbb8c36d
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104275070"
+---
+# <a name="core-audio-programming-guide"></a><span data-ttu-id="b4d5d-103">Guía de programación de audio básica</span><span class="sxs-lookup"><span data-stu-id="b4d5d-103">Core Audio Programming Guide</span></span>
+
+<span data-ttu-id="b4d5d-104">En esta sección de la guía se explican los conceptos y las características de las API de audio principales de Windows Vista y se describe cómo usarlas en la programación de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-104">This guide section explains the concepts and features of the core audio APIs of Windows Vista, and describes how to use them in application programming.</span></span>
+
+<span data-ttu-id="b4d5d-105">Esta sección contiene los temas siguientes.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-105">This section contains the following topics.</span></span>
+
+
+
+| <span data-ttu-id="b4d5d-106">Tema</span><span class="sxs-lookup"><span data-stu-id="b4d5d-106">Topic</span></span>                                                                                                                      | <span data-ttu-id="b4d5d-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="b4d5d-107">Description</span></span>                                                                                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="b4d5d-108">Componentes de audio de modo de usuario</span><span class="sxs-lookup"><span data-stu-id="b4d5d-108">User-Mode Audio Components</span></span>](user-mode-audio-components.md)                                                               | <span data-ttu-id="b4d5d-109">A través de las interfaces de bajo nivel de las API de audio principales, un cliente puede tener acceso a los componentes del sistema que administran y mezclan secuencias de audio.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-109">Through the low-level interfaces in the core audio APIs, a client can access the system components that manage and mix audio streams.</span></span>                                                                        |
+| [<span data-ttu-id="b4d5d-110">Audio de modo de usuario protegido (PUMA)</span><span class="sxs-lookup"><span data-stu-id="b4d5d-110">Protected User Mode Audio (PUMA)</span></span>](protected-user-mode-audio--puma-.md)                                                   | <span data-ttu-id="b4d5d-111">Describe las actualizaciones del audio en modo de usuario protegido (PUMA), el motor de audio de modo de usuario en el entorno protegido (PE), que proporciona un entorno más seguro para el procesamiento y la representación de audio.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-111">Describes the updates to Protected User Mode Audio (PUMA), the user-mode audio engine in the Protected Environment (PE), which provides a safer environment for audio processing and rendering.</span></span>              |
+| [<span data-ttu-id="b4d5d-112">Dispositivos de punto de conexión de audio</span><span class="sxs-lookup"><span data-stu-id="b4d5d-112">Audio Endpoint Devices</span></span>](audio-endpoint-devices.md)                                                                       | <span data-ttu-id="b4d5d-113">Un dispositivo de punto de conexión de audio es una abstracción de software que permite interacciones sencillas con los dispositivos de audio, como los micrófonos y los altavoces.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-113">An audio endpoint device is a software abstraction that enables user-friendly interactions with audio devices such as microphones and speakers.</span></span>                                                              |
+| [<span data-ttu-id="b4d5d-114">Sesiones de audio</span><span class="sxs-lookup"><span data-stu-id="b4d5d-114">Audio Sessions</span></span>](audio-sessions.md)                                                                                       | <span data-ttu-id="b4d5d-115">Una sesión de audio es una abstracción de software que permite a un cliente administrar una colección de secuencias de audio relacionadas como una sola unidad.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-115">An audio session is a software abstraction that enables a client to manage a collection of related audio streams as a single unit.</span></span>                                                                           |
+| [<span data-ttu-id="b4d5d-116">Controles de volumen</span><span class="sxs-lookup"><span data-stu-id="b4d5d-116">Volume Controls</span></span>](volume-controls.md)                                                                                     | <span data-ttu-id="b4d5d-117">El sistema integra su configuración de volumen basada en directivas con la configuración de volumen del usuario de una manera lógica y coherente.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-117">The system integrates its policy-based volume settings with the user's volume settings in a logical and consistent way.</span></span>                                                                                      |
+| [<span data-ttu-id="b4d5d-118">Administración de flujos</span><span class="sxs-lookup"><span data-stu-id="b4d5d-118">Stream Management</span></span>](stream-management.md)                                                                                 | <span data-ttu-id="b4d5d-119">La API de sesión de audio de Windows (WASAPI) proporciona un cliente con un conjunto completo de métodos para crear y administrar secuencias de audio.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-119">The Windows Audio Session API (WASAPI) provides a client with a complete set of methods for creating and managing audio streams.</span></span>                                                                             |
+| [<span data-ttu-id="b4d5d-120">Topologías de dispositivos</span><span class="sxs-lookup"><span data-stu-id="b4d5d-120">Device Topologies</span></span>](device-topologies.md)                                                                                 | <span data-ttu-id="b4d5d-121">La API de DeviceTopology permite a un cliente detectar los controles de audio que se encuentran a lo largo de las distintas rutas de acceso de datos en el hardware de audio.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-121">The DeviceTopology API enables a client to discover the audio controls that lie along the various data paths in the audio hardware.</span></span>                                                                          |
+| [<span data-ttu-id="b4d5d-122">Uso de la interfaz IKsControl para tener acceso a las propiedades de audio</span><span class="sxs-lookup"><span data-stu-id="b4d5d-122">Using the IKsControl Interface to Access Audio Properties</span></span>](using-the-ikscontrol-interface-to-access-audio-properties.md) | <span data-ttu-id="b4d5d-123">Es posible que una aplicación de audio especializada tenga que usar la interfaz IKsControl para tener acceso a las propiedades de un adaptador de audio.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-123">A specialized audio application might need to use the IKsControl interface to access the properties of an audio adapter.</span></span>                                                                                     |
+| [<span data-ttu-id="b4d5d-124">Interoperabilidad con las API de audio heredadas</span><span class="sxs-lookup"><span data-stu-id="b4d5d-124">Interoperability with Legacy Audio APIs</span></span>](interoperability-with-legacy-audio-apis.md)                                     | <span data-ttu-id="b4d5d-125">Las características clave de las API de audio principales en Windows Vista se pueden incorporar en las aplicaciones existentes que usan DirectSound, DirectShow y las funciones **waveOutXxx** y **waveInXxx** de multimedia de Windows.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-125">Key features of the core audio APIs in Windows Vista can be incorporated into existing applications that use DirectSound, DirectShow, and the Windows multimedia **waveOutXxx** and **waveInXxx** functions.</span></span> |
+| [<span data-ttu-id="b4d5d-126">Sonido espacial</span><span class="sxs-lookup"><span data-stu-id="b4d5d-126">Spatial Sound</span></span>](spatial-sound.md)                                                                                         | <span data-ttu-id="b4d5d-127">Proporciona instrucciones sobre el uso de Windows Sonic, la solución de nivel de plataforma de Microsoft para la compatibilidad con el sonido espacial en Xbox y Windows, lo que permite envolver y elevación (por encima o por debajo del agente de escucha) las indicaciones de audio.</span><span class="sxs-lookup"><span data-stu-id="b4d5d-127">Provides guidance for using Windows Sonic, Microsoft’s platform-level solution for spatial sound support on Xbox and Windows, enabling both surround and elevation (above or below the listener) audio cues.</span></span> |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="b4d5d-128">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="b4d5d-128">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="b4d5d-129">API de audio principales</span><span class="sxs-lookup"><span data-stu-id="b4d5d-129">Core Audio APIs</span></span>](core-audio-apis-in-windows-vista.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
