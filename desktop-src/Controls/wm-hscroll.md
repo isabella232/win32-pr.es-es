@@ -1,0 +1,136 @@
+---
+title: Mensaje de WM_HSCROLL (Winuser. h)
+description: El mensaje de HSCROLL de WM \_ se envía a una ventana cuando se produce un evento de desplazamiento en la barra de desplazamiento horizontal estándar de la ventana.
+ms.assetid: 197e522f-defd-4356-8521-5b5dfda596da
+keywords:
+- WM_HSCROLL controles de mensajes de Windows
+topic_type:
+- apiref
+api_name:
+- WM_HSCROLL
+api_location:
+- Winuser.h
+api_type:
+- HeaderDef
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: f26eec697e91ee8862912c0f93bcd6e8c4e5c56e
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104150533"
+---
+# <a name="wm_hscroll-message"></a>Mensaje de HSCROLL de WM \_
+
+El mensaje de **\_ HSCROLL de WM** se envía a una ventana cuando se produce un evento de desplazamiento en la barra de desplazamiento horizontal estándar de la ventana. Este mensaje también se envía al propietario de un control de barra de desplazamiento horizontal cuando se produce un evento de desplazamiento en el control.
+
+Una ventana recibe este mensaje a través de su función [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+
+
+```C++
+WM_HSCROLL
+
+    WPARAM wParam
+    LPARAM lParam; 
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*wParam* 
+</dt> <dd>
+
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica la posición actual del cuadro de desplazamiento si [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es SB \_ THUMBPOSITION o SB \_ THUMBTRACK; de lo contrario, esta palabra no se utiliza.
+
+[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica un valor de la barra de desplazamiento que indica la solicitud de desplazamiento del usuario. Esta palabra puede tener uno de los valores siguientes.
+
+
+
+| Value                                                                                                                                                                  | Significado                                                                                                                                                                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span id="SB_ENDSCROLL"></span><span id="sb_endscroll"></span><dl> <dt>**SB \_ ENDSCROLL**</dt> </dl>             | Finaliza el desplazamiento.<br/>                                                                                                                                                                                                   |
+| <span id="SB_LEFT"></span><span id="sb_left"></span><dl> <dt>**SB a la \_ izquierda**</dt> </dl>                            | Se desplaza a la parte superior izquierda.<br/>                                                                                                                                                                                     |
+| <span id="SB_RIGHT"></span><span id="sb_right"></span><dl> <dt>**SB a la \_ derecha**</dt> </dl>                         | Se desplaza a la parte inferior derecha.<br/>                                                                                                                                                                                    |
+| <span id="SB_LINELEFT"></span><span id="sb_lineleft"></span><dl> <dt>**SB \_ LINELEFT**</dt> </dl>                | Se desplaza una unidad hacia la izquierda.<br/>                                                                                                                                                                                      |
+| <span id="SB_LINERIGHT"></span><span id="sb_lineright"></span><dl> <dt>**SB \_ LINERIGHT**</dt> </dl>             | Se desplaza hacia la derecha una unidad.<br/>                                                                                                                                                                                     |
+| <span id="SB_PAGELEFT"></span><span id="sb_pageleft"></span><dl> <dt>**SB \_ PAGELEFT**</dt> </dl>                | Se desplaza hacia la izquierda el ancho de la ventana.<br/>                                                                                                                                                                       |
+| <span id="SB_PAGERIGHT"></span><span id="sb_pageright"></span><dl> <dt>**SB \_ anclada**</dt> </dl>             | Se desplaza a la derecha el ancho de la ventana.<br/>                                                                                                                                                                      |
+| <span id="SB_THUMBPOSITION"></span><span id="sb_thumbposition"></span><dl> <dt>**SB \_ THUMBPOSITION**</dt> </dl> | El usuario ha arrastrado el cuadro de desplazamiento (Thumb) y ha soltado el botón del mouse. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) indica la posición del cuadro de desplazamiento al final de la operación de arrastre.<br/>                          |
+| <span id="SB_THUMBTRACK"></span><span id="sb_thumbtrack"></span><dl> <dt>**SB \_ THUMBTRACK**</dt> </dl>          | El usuario está arrastrando el cuadro de desplazamiento. Este mensaje se envía repetidamente hasta que el usuario suelta el botón del mouse. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) indica la posición a la que se ha arrastrado el cuadro de desplazamiento.<br/> |
+
+
+
+ 
+
+</dd> <dt>
+
+*lParam* 
+</dt> <dd>
+
+Si el mensaje se envía mediante un control de barra de desplazamiento, este parámetro es el identificador del control de barra de desplazamiento. Si el mensaje se envía mediante una barra de desplazamiento estándar, este parámetro es **null**.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Si una aplicación procesa este mensaje, debe devolver cero.
+
+## <a name="remarks"></a>Observaciones
+
+El \_ código de solicitud THUMBTRACK de SB lo suelen usar las aplicaciones que proporcionan comentarios cuando el usuario arrastra el cuadro de desplazamiento.
+
+Si una aplicación desplaza el contenido de la ventana, también debe restablecer la posición del cuadro de desplazamiento mediante la función [**SetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-setscrollpos) .
+
+Tenga en cuenta que el mensaje de **\_ HSCROLL de WM** solo incluye 16 bits de datos de posición del cuadro de desplazamiento. Por lo tanto, las aplicaciones que se basan únicamente en **WM \_ HSCROLL** (y [**WM \_ VSCROLL**](wm-vscroll.md)) para los datos de posición de desplazamiento tienen un valor de posición máximo práctico de 65.535.
+
+Sin embargo, dado que las funciones [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo), [**SetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-setscrollpos), [**SetScrollRange**](/windows/desktop/api/Winuser/nf-winuser-setscrollrange), [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo), [**GetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos)y [**GetScrollRange**](/windows/desktop/api/Winuser/nf-winuser-getscrollrange) admiten datos de posición de la barra de desplazamiento de 32 bits, existe una manera de eludir la barrera de 16 bits de los mensajes de **WM \_ HSCROLL** y [**WM \_ VSCROLL**](wm-vscroll.md) . Consulte **GetScrollInfo** para obtener una descripción de la técnica.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
+| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+**Referencia**
+</dt> <dt>
+
+[**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)
+</dt> <dt>
+
+[**GetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos)
+</dt> <dt>
+
+[**GetScrollRange**](/windows/desktop/api/Winuser/nf-winuser-getscrollrange)
+</dt> <dt>
+
+[**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
+</dt> <dt>
+
+[**SetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-setscrollpos)
+</dt> <dt>
+
+[**SetScrollRange**](/windows/desktop/api/Winuser/nf-winuser-setscrollrange)
+</dt> <dt>
+
+[**WM \_ HSCROLL (TrackBar)**](wm-hscroll--trackbar-.md)
+</dt> <dt>
+
+[**VSCROLL de WM \_**](wm-vscroll.md)
+</dt> </dl>
+
+ 
+
