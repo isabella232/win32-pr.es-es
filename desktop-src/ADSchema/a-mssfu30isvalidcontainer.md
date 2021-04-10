@@ -1,0 +1,141 @@
+---
+title: msSFU-30-is-atributo de contenedor válido
+description: Contiene datos internos utilizados por el servidor para NIS, que almacena si la raíz de búsqueda actual es válida.
+ms.assetid: 70ff1155-f8ab-48c2-900d-86664b30c59c
+ms.tgt_platform: multiple
+keywords:
+- msSFU-30-is-Valid atributo de contenedor esquema de AD
+- msSFU30IsValidContainer esquema de AD de atributos
+topic_type:
+- apiref
+api_name:
+- msSFU-30-Is-Valid-Container
+api_type:
+- Schema
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 22155223beca6167f3f380be6ea71ac0f3e5ef31
+ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "103905983"
+---
+# <a name="mssfu-30-is-valid-container-attribute"></a>msSFU-30-is-atributo de contenedor válido
+
+Contiene datos internos utilizados por el servidor para NIS, que almacena si la raíz de búsqueda actual es válida.
+
+
+
+| Entrada | Value |
+|-------------------|--------------------------------------|
+| CN                | msSFU-30-is-Valid-Container          |
+| Nombre para mostrar de LDAP | msSFU30IsValidContainer              |
+| Tamaño              | \-                                   |
+| Actualizar privilegio  | \-                                   |
+| Frecuencia de actualización  | \-                                   |
+| Attribute-Id      | 1.2.840.113556.1.6.18.1.350          |
+| System-ID-GUID    | 0dea42f5-278d-4157-b4a7-49b59664915b |
+| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+
+
+
+## <a name="implementations"></a>Implementaciones
+
+-   [**Windows Server 2003 R2**](#windows-server-2003-r2)
+-   [**Windows Server 2008**](#windows-server-2008)
+-   [**Windows Server 2008 R2**](#windows-server-2008-r2)
+-   [**Windows Server 2012**](#windows-server-2012)
+
+## <a name="windows-server-2003-r2"></a>Windows Server 2003 R2
+
+
+
+| Entrada | Value |
+|------------------------|----------------------------------------------------------------|
+| Identificador de vínculo                | \-                                                             |
+| MAPI-Id                | \-                                                             |
+| System-Only            | False                                                          |
+| Tiene un único valor       | True                                                           |
+| Está indexado             | True                                                           |
+| En el catálogo global      | False                                                          |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| Range-Lower            | \-                                                             |
+| Range-Upper            | \-                                                             |
+| Search-Flags           | 0x00000001                                                     |
+| System-Flags           | 0x00000000                                                     |
+| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+
+
+
+## <a name="windows-server-2008"></a>Windows Server 2008
+
+
+
+| Entrada | Value |
+|------------------------|----------------------------------------------------------------|
+| Identificador de vínculo                | \-                                                             |
+| MAPI-Id                | \-                                                             |
+| System-Only            | False                                                          |
+| Tiene un único valor       | True                                                           |
+| Está indexado             | True                                                           |
+| En el catálogo global      | False                                                          |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| Range-Lower            | \-                                                             |
+| Range-Upper            | \-                                                             |
+| Search-Flags           | 0x00000001                                                     |
+| System-Flags           | 0x00000000                                                     |
+| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+
+
+
+## <a name="windows-server-2008-r2"></a>Windows Server 2008 R2
+
+
+
+| Entrada | Value |
+|------------------------|----------------------------------------------------------------|
+| Identificador de vínculo                | \-                                                             |
+| MAPI-Id                | \-                                                             |
+| System-Only            | False                                                          |
+| Tiene un único valor       | True                                                           |
+| Está indexado             | True                                                           |
+| En el catálogo global      | False                                                          |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| Range-Lower            | \-                                                             |
+| Range-Upper            | \-                                                             |
+| Search-Flags           | 0x00000001                                                     |
+| System-Flags           | 0x00000000                                                     |
+| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+
+
+
+## <a name="windows-server-2012"></a>Windows Server 2012
+
+
+
+| Entrada | Value |
+|------------------------|----------------------------------------------------------------|
+| Identificador de vínculo                | \-                                                             |
+| MAPI-Id                | \-                                                             |
+| System-Only            | False                                                          |
+| Tiene un único valor       | True                                                           |
+| Está indexado             | True                                                           |
+| En el catálogo global      | False                                                          |
+| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| Range-Lower            | \-                                                             |
+| Range-Upper            | \-                                                             |
+| Search-Flags           | 0x00000001                                                     |
+| System-Flags           | 0x00000000                                                     |
+| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+
+
+
+ 
+
+ 
+
+
+
+
+
