@@ -1,0 +1,76 @@
+---
+title: Administrar bloques de datos MIDI
+description: Administrar bloques de datos MIDI
+ms.assetid: f29fbc08-ef67-489c-aedf-5a2bc65233f7
+keywords:
+- Interfaz digital de instrumentos musicales (MIDI), administrar bloques de datos
+- MIDI (interfaz digital de instrumentos musicales), administrar bloques de datos
+- Servicios MIDI, administrar bloques de datos
+- administrar bloques de datos MIDI
+- Interfaz digital de instrumentos musicales (MIDI), procesar mensajes de controlador
+- MIDI (interfaz digital de instrumentos musicales), procesar mensajes de controlador
+- Servicios MIDI, procesamiento de mensajes de controlador
+- procesar mensajes de controlador
+- Interfaz digital de instrumentos musicales (MIDI), bloques de datos
+- MIDI (interfaz digital de instrumentos musicales), bloques de datos
+- Servicios MIDI, bloques de datos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: af348d6c53d2944bf22c026674704baa1fe74e07
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "103995148"
+---
+# <a name="managing-midi-data-blocks"></a><span data-ttu-id="19a35-114">Administrar bloques de datos MIDI</span><span class="sxs-lookup"><span data-stu-id="19a35-114">Managing MIDI Data Blocks</span></span>
+
+<span data-ttu-id="19a35-115">Las aplicaciones que usan bloques de datos para pasar mensajes exclusivos del sistema (mediante las funciones [**midiOutLongMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutlongmsg) y [**midiInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-midiinaddbuffer) ) y los búferes de secuencia (mediante la función [**midiStreamOut**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout) ) deben proporcionar continuamente el controlador de dispositivo con bloqueos de datos hasta que se complete la reproducción o grabación.</span><span class="sxs-lookup"><span data-stu-id="19a35-115">Applications that use data blocks for passing system-exclusive messages (using the [**midiOutLongMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutlongmsg) and [**midiInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-midiinaddbuffer) functions) and stream buffers (using the [**midiStreamOut**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout) function) must continually supply the device driver with data blocks until playback or recording is complete.</span></span>
+
+<span data-ttu-id="19a35-116">Incluso si se usa un solo bloque de datos, una aplicación debe ser capaz de determinar si un controlador de dispositivo ha terminado con el bloque de datos para que pueda liberar la memoria asociada al bloque de datos y la estructura de encabezado.</span><span class="sxs-lookup"><span data-stu-id="19a35-116">Even if a single data block is used, an application must be able to determine when a device driver is finished with the data block so it can free the memory associated with the data block and header structure.</span></span> <span data-ttu-id="19a35-117">Se pueden usar tres métodos para determinar cuándo un controlador de dispositivo ha terminado con un bloque de datos:</span><span class="sxs-lookup"><span data-stu-id="19a35-117">Three methods can be used to determine when a device driver is finished with a data block:</span></span>
+
+-   <span data-ttu-id="19a35-118">Especifique una función de devolución de llamada para recibir un mensaje enviado por el controlador cuando termine con un bloque de datos.</span><span class="sxs-lookup"><span data-stu-id="19a35-118">Specify a callback function to receive a message sent by the driver when it is finished with a data block.</span></span> <span data-ttu-id="19a35-119">Para obtener datos de entrada MIDI con marca de tiempo, debe usar una función de devolución de llamada.</span><span class="sxs-lookup"><span data-stu-id="19a35-119">To get time-stamped MIDI input data, you must use a callback function.</span></span>
+-   <span data-ttu-id="19a35-120">Usar una devolución de llamada de evento (solo para salida).</span><span class="sxs-lookup"><span data-stu-id="19a35-120">Use an event callback (for output only).</span></span>
+-   <span data-ttu-id="19a35-121">Use una devolución de llamada de ventana o de subproceso para recibir un mensaje enviado por el controlador cuando haya terminado con un bloque de datos.</span><span class="sxs-lookup"><span data-stu-id="19a35-121">Use a window or thread callback to receive a message sent by the driver when it is finished with a data block.</span></span>
+
+<span data-ttu-id="19a35-122">Si una aplicación no obtiene un bloque de datos para el controlador de dispositivo cuando sea necesario, puede producirse un hueco audible en la reproducción o una pérdida de la información grabada entrante.</span><span class="sxs-lookup"><span data-stu-id="19a35-122">If an application does not get a data block to the device driver when it is needed, an audible gap in playback or a loss of incoming recorded information can occur.</span></span> <span data-ttu-id="19a35-123">Como mínimo, una aplicación debe usar un esquema de almacenamiento en búfer doble para mantener al menos un bloque de datos antes del controlador de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19a35-123">At a minimum, an application should use a double-buffering scheme to stay at least one data block ahead of the device driver.</span></span>
+
+## <a name="using-a-callback-function-to-process-driver-messages"></a><span data-ttu-id="19a35-124">Usar una función de devolución de llamada para procesar mensajes de controlador</span><span class="sxs-lookup"><span data-stu-id="19a35-124">Using a Callback Function to Process Driver Messages</span></span>
+
+<span data-ttu-id="19a35-125">Puede escribir su propia función de devolución de llamada para procesar los mensajes enviados por el controlador de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19a35-125">You can write your own callback function to process messages sent by the device driver.</span></span> <span data-ttu-id="19a35-126">Para usar una función de devolución de llamada, especifique la marca de función de devolución de llamada \_ en el parámetro *dwFlags* y la dirección de la función de devolución de llamada en el parámetro *DwCallback* de la función [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) o [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen) .</span><span class="sxs-lookup"><span data-stu-id="19a35-126">To use a callback function, specify the CALLBACK\_FUNCTION flag in the *dwFlags* parameter and the address of the callback function in the *dwCallback* parameter of the [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) or [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen) function.</span></span>
+
+<span data-ttu-id="19a35-127">Los mensajes enviados a una función de devolución de llamada son similares a los mensajes enviados a una ventana, salvo que tienen dos parámetros palabra en lugar de un parámetro entero sin signo y un parámetro palabra.</span><span class="sxs-lookup"><span data-stu-id="19a35-127">Messages sent to a callback function are similar to messages sent to a window, except they have two doubleword parameters instead of an unsigned integer parameter and a doubleword parameter.</span></span> <span data-ttu-id="19a35-128">Para obtener más información acerca de estos mensajes, consulte [envío de mensajes de System-Exclusive](sending-system-exclusive-messages.md) y administración de la grabación de [MIDI](managing-midi-recording.md).</span><span class="sxs-lookup"><span data-stu-id="19a35-128">For more information about these messages, see [Sending System-Exclusive Messages](sending-system-exclusive-messages.md) and [Managing MIDI Recording](managing-midi-recording.md).</span></span>
+
+<span data-ttu-id="19a35-129">Use una de las técnicas siguientes para pasar datos de instancia de una aplicación a una función de devolución de llamada:</span><span class="sxs-lookup"><span data-stu-id="19a35-129">Use one of the following techniques to pass instance data from an application to a callback function:</span></span>
+
+-   <span data-ttu-id="19a35-130">Use el parámetro *dwCallbackInstance* de la función que abre el controlador de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19a35-130">Use the *dwCallbackInstance* parameter of the function that opens the device driver.</span></span>
+-   <span data-ttu-id="19a35-131">Use el miembro **dwUser** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica un bloque de datos que se envía a un controlador de dispositivo MIDI.</span><span class="sxs-lookup"><span data-stu-id="19a35-131">Use the **dwUser** member of the [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) structure that identifies a data block being sent to a MIDI device driver.</span></span>
+
+<span data-ttu-id="19a35-132">Si necesita más de 32 bits de datos de instancia, pase una dirección de una estructura que contenga la información adicional.</span><span class="sxs-lookup"><span data-stu-id="19a35-132">If you need more than 32 bits of instance data, pass an address of a structure containing the additional information.</span></span>
+
+## <a name="using-an-event-callback-to-process-driver-messages"></a><span data-ttu-id="19a35-133">Usar una devolución de llamada de evento para procesar mensajes de controlador</span><span class="sxs-lookup"><span data-stu-id="19a35-133">Using an Event Callback to Process Driver Messages</span></span>
+
+<span data-ttu-id="19a35-134">Para utilizar una devolución de llamada de evento, utilice la función [CreateEvent](/windows/win32/api/synchapi/nf-synchapi-createeventa) para recuperar el identificador de un evento y especificar el \_ evento de devolución de llamada en la llamada a la función [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen) .</span><span class="sxs-lookup"><span data-stu-id="19a35-134">To use an event callback, use the [CreateEvent](/windows/win32/api/synchapi/nf-synchapi-createeventa) function to retrieve the handle of an event and specify CALLBACK\_EVENT in the call to the [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen) function.</span></span>
+
+<span data-ttu-id="19a35-135">Una devolución de llamada de evento se establece por cualquier cosa que pueda provocar una devolución de llamada de función.</span><span class="sxs-lookup"><span data-stu-id="19a35-135">An event callback is set by anything that might cause a function callback.</span></span> <span data-ttu-id="19a35-136">A diferencia de las funciones de devolución de llamada y las devoluciones de llamada de ventana o de subproceso, las devoluciones de llamada de eventos no reciben notificaciones de cierre, listo o abierto específicas.</span><span class="sxs-lookup"><span data-stu-id="19a35-136">Unlike callback functions and window or thread callbacks, event callbacks do not receive specific close, done, or open notifications.</span></span> <span data-ttu-id="19a35-137">Por lo tanto, es posible que una aplicación tenga que comprobar el estado del proceso que espera después de que se produzca el evento.</span><span class="sxs-lookup"><span data-stu-id="19a35-137">Therefore, an application may have to check the status of the process it is waiting for after the event occurs.</span></span>
+
+<span data-ttu-id="19a35-138">Para obtener más información sobre las devoluciones de llamada de eventos, vea [usar una devolución de llamada de evento para administrar la reproducción almacenada en búfer](using-an-callback-to-manage-buffered-playback.md).</span><span class="sxs-lookup"><span data-stu-id="19a35-138">For more information about event callbacks, see [Using an Event Callback to Manage Buffered Playback](using-an-callback-to-manage-buffered-playback.md).</span></span>
+
+## <a name="using-a-window-or-thread-callback-to-process-driver-messages"></a><span data-ttu-id="19a35-139">Usar una devolución de llamada de ventana o de subproceso para procesar mensajes de controlador</span><span class="sxs-lookup"><span data-stu-id="19a35-139">Using a Window or Thread Callback to Process Driver Messages</span></span>
+
+<span data-ttu-id="19a35-140">Para utilizar una devolución de llamada de ventana, especifique la marca de la ventana de devolución de llamada \_ en el parámetro *dwFlags* y un identificador de ventana en la palabra de orden inferior del parámetro *DwCallback* de la función [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) o [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen) .</span><span class="sxs-lookup"><span data-stu-id="19a35-140">To use a window callback, specify the CALLBACK\_WINDOW flag in the *dwFlags* parameter and a window handle in the low-order word of the *dwCallback* parameter of the [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) or [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen) function.</span></span> <span data-ttu-id="19a35-141">Los mensajes de controlador se enviarán a la función de procedimiento de ventana para la ventana identificada por el identificador de *dwCallback*.</span><span class="sxs-lookup"><span data-stu-id="19a35-141">Driver messages will be sent to the window procedure function for the window identified by the handle in *dwCallback*.</span></span>
+
+<span data-ttu-id="19a35-142">Del mismo modo, para usar una devolución de llamada de subproceso, especifique la marca de subproceso \_ de devolución de llamada y un identificador de subproceso en la llamada a **MidiInOpen** o **midiOutOpen**.</span><span class="sxs-lookup"><span data-stu-id="19a35-142">Similarly, to use a thread callback, specify the CALLBACK\_THREAD flag and a thread identifier in the call to **midiInOpen** or **midiOutOpen**.</span></span> <span data-ttu-id="19a35-143">En este caso, los mensajes se publicarán en el subproceso especificado en lugar de en una ventana.</span><span class="sxs-lookup"><span data-stu-id="19a35-143">In this case, messages will be posted to the specified thread instead of to a window.</span></span>
+
+<span data-ttu-id="19a35-144">Los mensajes enviados a una devolución de llamada de ventana o subproceso son específicos del dispositivo MIDI que se usa.</span><span class="sxs-lookup"><span data-stu-id="19a35-144">Messages sent to a window or thread callback are specific to the MIDI device used.</span></span> <span data-ttu-id="19a35-145">Para obtener más información acerca de estos mensajes, consulte [envío de mensajes de System-Exclusive](sending-system-exclusive-messages.md) y administración de la grabación de [MIDI](managing-midi-recording.md).</span><span class="sxs-lookup"><span data-stu-id="19a35-145">For more information about these messages, see [Sending System-Exclusive Messages](sending-system-exclusive-messages.md) and [Managing MIDI Recording](managing-midi-recording.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="19a35-146">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="19a35-146">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="19a35-147">Servicios MIDI</span><span class="sxs-lookup"><span data-stu-id="19a35-147">MIDI Services</span></span>](midi-services.md)
+</dt> </dl>
+
+ 
+
+ 
