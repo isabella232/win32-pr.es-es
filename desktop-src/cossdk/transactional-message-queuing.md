@@ -1,0 +1,29 @@
+---
+description: Una transacción es una serie de modificaciones de un almacén de datos (como una base de datos o un sistema de archivos) garantizada que se ejecute correctamente o que no se ejecute en absoluto.
+ms.assetid: 1567d9d3-7839-42f0-9507-7bbf61d8eaf2
+title: Message Queue Server transaccional
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c4730b20f4014cdf7c76462d3f2cae272695d907
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104080165"
+---
+# <a name="transactional-message-queuing"></a><span data-ttu-id="ffa5d-103">Message Queue Server transaccional</span><span class="sxs-lookup"><span data-stu-id="ffa5d-103">Transactional Message Queuing</span></span>
+
+<span data-ttu-id="ffa5d-104">Una *transacción* es una serie de modificaciones de un almacén de datos (como una base de datos o un sistema de archivos) garantizada que se ejecute correctamente o que no se ejecute en absoluto.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-104">A *transaction* is a series of modifications of a data store (such as a database or a file system) guaranteed either to be all successfully executed or not to be executed at all.</span></span> <span data-ttu-id="ffa5d-105">Para implementar una transacción, se mantiene un registro del estado del almacén de datos antes de que comience la transacción y, si se produce un error en una de las modificaciones, la transacción devuelve un error y el estado inicial se restaura (o se revierte).</span><span class="sxs-lookup"><span data-stu-id="ffa5d-105">To implement a transaction, a record is kept of the state of the data store before the transaction begins and, if one of the modifications fails, the transaction returns failure and the initial state is restored (or rolled back).</span></span> <span data-ttu-id="ffa5d-106">Las transacciones se utilizan para mantener la integridad de los datos y, por consiguiente, desempeñan un papel importante en la programación del software empresarial.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-106">Transactions are used to maintain data integrity and consequently play an important role in business software programming.</span></span>
+
+<span data-ttu-id="ffa5d-107">A menudo, las aplicaciones se pueden desarrollar con una transacción o flujo de trabajo empresarial que se divide en varias transacciones o actividades más pequeñas.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-107">Often, applications can be developed using a business transaction or workflow that is split into several smaller transactions or activities.</span></span> <span data-ttu-id="ffa5d-108">Estas actividades se separan en el tiempo y después se conectan mediante colas de mensajes confiables.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-108">These activities are separated in time and then connected using reliable message queues.</span></span>
+
+1.  <span data-ttu-id="ffa5d-109">La primera transacción implica la base de datos de entrada de pedidos.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-109">The first transaction involves the order entry database.</span></span> <span data-ttu-id="ffa5d-110">[Message Queue Server](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) mueve el mensaje de una cola a otra, exactamente una vez, con capacidades de transacción.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-110">[Message Queuing](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) moves the message from one queue to another queue, exactly one time, using transaction capabilities.</span></span> <span data-ttu-id="ffa5d-111">Si la base de datos está actualizada, hay un mensaje en la cola.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-111">If the database is updated, there is a message on the queue.</span></span> <span data-ttu-id="ffa5d-112">Si el mensaje no llega a la cola, se anula y se revierte la base de datos.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-112">If the message doesn't reach the queue, it is aborted and the database is rolled back.</span></span>
+2.  <span data-ttu-id="ffa5d-113">En algún momento posterior, Message Queue Server detecta que el servidor está disponible.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-113">Sometime later, Message Queuing discovers that the server is available.</span></span> <span data-ttu-id="ffa5d-114">No hay ningún sondeo de la aplicación para la existencia del servidor.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-114">There is no application polling for the existence of the server.</span></span> <span data-ttu-id="ffa5d-115">Esta es la segunda transacción.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-115">This is the second transaction.</span></span>
+3.  <span data-ttu-id="ffa5d-116">La tercera transacción implica una consulta de base de datos de envío y la actualización de la base de datos de envío.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-116">The third transaction involves a shipping database query and the update of the shipping database.</span></span> <span data-ttu-id="ffa5d-117">Si se produce un error en el servidor en el medio de esta transacción, la modificación se revierte y el mensaje se devuelve a la cola de entrada.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-117">If the server fails in the middle of this transaction, the modification is rolled back and the message is returned to the input queue.</span></span> <span data-ttu-id="ffa5d-118">Esto garantiza que la integridad de los datos y las bases de datos se mantiene durante las transacciones.</span><span class="sxs-lookup"><span data-stu-id="ffa5d-118">This ensures that the integrity of the data and databases is maintained during the transactions.</span></span>
+
+ 
+
+ 
+
+
+

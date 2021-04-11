@@ -1,0 +1,22 @@
+---
+description: Consideraciones sobre los subprocesos
+ms.assetid: 4d27f0b3-3e30-4e88-b2b2-d57218da4ffa
+title: Consideraciones sobre los subprocesos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 8acde9a06802a867cb6a93e7c52be8066ad483c3
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104080286"
+---
+# <a name="threading-considerations"></a><span data-ttu-id="bc9a8-103">Consideraciones sobre los subprocesos</span><span class="sxs-lookup"><span data-stu-id="bc9a8-103">Threading Considerations</span></span>
+
+<span data-ttu-id="bc9a8-104">La grabadora de componentes en cola de COM+ es capaz de ejecutarse en el contenedor multiproceso (MTA) del proceso o en un contenedor uniproceso (STA).</span><span class="sxs-lookup"><span data-stu-id="bc9a8-104">The COM+ queued components recorder is capable of running in the process's multithreaded apartment (MTA) or in a single-threaded apartment (STA).</span></span> <span data-ttu-id="bc9a8-105">Cuando la grabadora se ejecuta en el STA, COM+ requiere que cada apartamento que contenga los objetos deba tener una cola de [Message Queue Server](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) para controlar las llamadas desde otros procesos y apartamentos dentro del mismo proceso.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-105">When the recorder is run in the STA, COM+ requires that each apartment containing objects must have a [Message Queuing](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) queue to handle calls from other processes and apartments within the same process.</span></span> <span data-ttu-id="bc9a8-106">Esto significa que la función de trabajo del subproceso debe tener un bucle de mensajes.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-106">This means that the thread's work function must have a message loop.</span></span> <span data-ttu-id="bc9a8-107">Cuando se crea una instancia de un componente en cola, el puntero de interfaz devuelto es siempre un puntero de interfaz de proxy en lugar de un puntero de interfaz directo.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-107">When a queued component is instantiated, the interface pointer returned is always a proxy interface pointer rather than a direct interface pointer.</span></span> <span data-ttu-id="bc9a8-108">El puntero es realmente una referencia a una instancia de la grabadora.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-108">The pointer is actually a reference to an instance of the recorder.</span></span> <span data-ttu-id="bc9a8-109">Si esta referencia de la interfaz de la grabadora se pasa a otro subproceso, el subproceso original todavía debe ejecutar el bucle de mensajes de Windows para que el subproceso receptor pueda quitar las referencias de la interfaz.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-109">If this recorder interface reference is passed to another thread, the original thread must still be running the Windows message loop so that the receiving thread can unmarshal the interface.</span></span> <span data-ttu-id="bc9a8-110">Si no es así, el subproceso receptor se bloquea en una llamada a [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface).</span><span class="sxs-lookup"><span data-stu-id="bc9a8-110">If this is not the case, the receiving thread hangs in a call to [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface).</span></span>
+
+<span data-ttu-id="bc9a8-111">Si usa primitivas para sincronizar los subprocesos, considere la posibilidad de usar [**MsgWaitForMultipleObjects**](/windows/desktop/api/winuser/nf-winuser-msgwaitformultipleobjects) en lugar de otras funciones de sincronización.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-111">If you are using primitives to synchronize the threads, consider using [**MsgWaitForMultipleObjects**](/windows/desktop/api/winuser/nf-winuser-msgwaitformultipleobjects) instead of other synchronization functions.</span></span> <span data-ttu-id="bc9a8-112">Comprueba si hay mensajes en la cola, así como el estado del objeto de sincronización.</span><span class="sxs-lookup"><span data-stu-id="bc9a8-112">This checks for messages in the queue as well as the state of the synchronization object.</span></span>
+
+ 
+
+ 
