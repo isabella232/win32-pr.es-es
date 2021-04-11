@@ -1,0 +1,34 @@
+---
+title: Vínculos de SIS y puntos de análisis
+description: SIS es un controlador de filtro NTFS que reemplaza los archivos duplicados por vínculos de copia en escritura (denominados vínculos de SIS) que apuntan a un solo archivo de copia de seguridad, lo que reduce el disco y la sobrecarga de almacenamiento en caché de esos archivos.
+ms.assetid: 1600a9ff-413c-4059-b04c-c862f6cf8f32
+keywords:
+- Copia de seguridad de puntos de análisis
+- Copia de seguridad de almacenamiento de instancia única (SIS), vínculos de SIS
+- Copia de seguridad de almacenamiento de instancia única (SIS), puntos de análisis
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d4987e7c64a83e7d0b02ed91899a182616be7943
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104149504"
+---
+# <a name="sis-links-and-reparse-points"></a><span data-ttu-id="09418-106">Vínculos de SIS y puntos de análisis</span><span class="sxs-lookup"><span data-stu-id="09418-106">SIS Links and Reparse Points</span></span>
+
+<span data-ttu-id="09418-107">SIS es un controlador de filtro NTFS que reemplaza los archivos duplicados por vínculos de copia en escritura (denominados vínculos de SIS) que apuntan a un solo archivo de copia de seguridad, lo que reduce el disco y la sobrecarga de almacenamiento en caché de esos archivos.</span><span class="sxs-lookup"><span data-stu-id="09418-107">SIS is an NTFS filter driver that replaces duplicate files with copy-on-write links (referred to as SIS links) that point to a single backing file, reducing the disk and cache overhead of those files.</span></span> <span data-ttu-id="09418-108">Este archivo de copia de seguridad se encuentra en un [almacén común](the-sis-common-store-and-common-store-files.md).</span><span class="sxs-lookup"><span data-stu-id="09418-108">This backing file is contained in a [common store](the-sis-common-store-and-common-store-files.md).</span></span> <span data-ttu-id="09418-109">La implementación de la arquitectura de SIS hace uso de [puntos de reanálisis](/windows/desktop/FileIO/reparse-points) que contienen información sobre los vínculos de SIS.</span><span class="sxs-lookup"><span data-stu-id="09418-109">The implementation of the SIS architecture makes use of [reparse points](/windows/desktop/FileIO/reparse-points) that contain information about the SIS links.</span></span>
+
+<span data-ttu-id="09418-110">Los vínculos de SIS se implementan como archivos dispersos, normalmente con la mayoría de los intervalos del archivo sin asignar y un punto de reanálisis.</span><span class="sxs-lookup"><span data-stu-id="09418-110">SIS links are implemented as sparse files, usually with most ranges of the file unallocated, and a reparse point.</span></span> <span data-ttu-id="09418-111">La estructura y el contenido de un punto de análisis es opaco para las aplicaciones de copia de seguridad y restauración; sin embargo, las aplicaciones envían y recuperan los datos de estos puntos de análisis a y desde las funciones de la API de SIS que procesan la información que contiene.</span><span class="sxs-lookup"><span data-stu-id="09418-111">The structure and contents of a reparse point is opaque to your backup and restore applications; however, your applications send and retrieve the data within these reparse points to and from SIS API functions that process the information in them.</span></span> <span data-ttu-id="09418-112">La información de un punto de análisis hace referencia a un único archivo de copia de seguridad que contiene los datos de archivos reales.</span><span class="sxs-lookup"><span data-stu-id="09418-112">The information in a reparse point refers to a single backing file that contains the actual file data.</span></span> <span data-ttu-id="09418-113">Este archivo de copia de seguridad se denomina [archivo de almacenamiento común](the-sis-common-store-and-common-store-files.md)y existe en el almacén común.</span><span class="sxs-lookup"><span data-stu-id="09418-113">This backing file is called a [common-store file](the-sis-common-store-and-common-store-files.md), and it exists in the common store.</span></span>
+
+<span data-ttu-id="09418-114">Al restaurar un vínculo de SIS, la aplicación de restauración debe realizar los siguientes pasos:</span><span class="sxs-lookup"><span data-stu-id="09418-114">When restoring a SIS link, your restore application should perform the following steps:</span></span>
+
+1.  <span data-ttu-id="09418-115">Determine el archivo o los archivos de almacenamiento común a los que apunta el vínculo de SIS.</span><span class="sxs-lookup"><span data-stu-id="09418-115">Determine the common-store file or files to which the SIS link points.</span></span>
+2.  <span data-ttu-id="09418-116">Si el archivo o los archivos no existen en el almacén común, restaure el archivo o los archivos junto con el vínculo SIS.</span><span class="sxs-lookup"><span data-stu-id="09418-116">If the file or files do not exist in the common store, restore the file or files along with the SIS link.</span></span>
+3.  <span data-ttu-id="09418-117">Si el vínculo SIS apunta a un archivo o archivos de almacenamiento común que existen en el disco, restaure solo el vínculo SIS.</span><span class="sxs-lookup"><span data-stu-id="09418-117">If the SIS link points to a common-store file or files that exist on the disk, then restore only the SIS link.</span></span> <span data-ttu-id="09418-118">Recuerde que los datos de los archivos de almacenamiento común nunca cambian, por lo que si un archivo de almacenamiento común determinado todavía está en el disco en el momento de la restauración, tiene el mismo contenido que cuando se hizo una copia de seguridad y no es necesario sobrescribirlo.</span><span class="sxs-lookup"><span data-stu-id="09418-118">Recall that the data in common-store files never changes, so if a given common-store file is still on the disk at restore time, it has the same contents as when it was backed up and there is no need to overwrite it.</span></span>
+
+<span data-ttu-id="09418-119">La única sobrecarga adicional necesaria para las copias de seguridad asistidas por SIS es que la aplicación de copia de seguridad debe realizar copias de seguridad del vínculo SIS y de los datos asociados con los archivos de copia de seguridad.</span><span class="sxs-lookup"><span data-stu-id="09418-119">The only additional overhead required for SIS-assisted backups is that your backup application must back up the SIS link and the data associated with the backing files.</span></span> <span data-ttu-id="09418-120">Todas las operaciones de copia de seguridad y restauración de SIS son locales para un volumen específico.</span><span class="sxs-lookup"><span data-stu-id="09418-120">All SIS backup and restore operations are local to a specific volume.</span></span>
+
+ 
+
+ 
