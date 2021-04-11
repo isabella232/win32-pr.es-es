@@ -1,0 +1,81 @@
+---
+description: 'Los datos de la suscripción residen en el catálogo COM+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación con la interfaz ICOMAdminCatalog:: InstallComponent.'
+ms.assetid: 190e88f3-1d87-4c27-9451-0a633cbae829
+title: Suscripciones
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9973eb76fc22354f1a2fc8e381c90cf5be1efee3
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104274944"
+---
+# <a name="subscriptions"></a><span data-ttu-id="9b681-104">Suscripciones</span><span class="sxs-lookup"><span data-stu-id="9b681-104">Subscriptions</span></span>
+
+<span data-ttu-id="9b681-105">Los datos de la suscripción residen en el catálogo COM+ de la suscripción.</span><span class="sxs-lookup"><span data-stu-id="9b681-105">Subscription data resides in the subscription COM+ catalog.</span></span> <span data-ttu-id="9b681-106">Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación con la interfaz [**ICOMAdminCatalog:: InstallComponent**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent) .</span><span class="sxs-lookup"><span data-stu-id="9b681-106">A subscription can be created either by using the Component Services administrative tool or programmatically by using the [**ICOMAdminCatalog::InstallComponent**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent) interface.</span></span>
+
+<span data-ttu-id="9b681-107">La colección [**SubscriptionsForComponent**](subscriptionsforcomponent.md) se usa para agregar, eliminar o cambiar la información relativa a las suscripciones.</span><span class="sxs-lookup"><span data-stu-id="9b681-107">The [**SubscriptionsForComponent**](subscriptionsforcomponent.md) collection is used to add, delete, or change information pertaining to subscriptions.</span></span> <span data-ttu-id="9b681-108">La colección **SubscriptionsForComponent** es una colección secundaria de un componente.</span><span class="sxs-lookup"><span data-stu-id="9b681-108">The **SubscriptionsForComponent** collection is a child collection to a component.</span></span> <span data-ttu-id="9b681-109">Para agregar una suscripción, obtenga la colección **SubscriptionsForComponent** del componente y use el método [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) para agregar una entrada a la colección.</span><span class="sxs-lookup"><span data-stu-id="9b681-109">To add a subscription, get the component's **SubscriptionsForComponent** collection and use the [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) method to add an entry to the collection.</span></span> <span data-ttu-id="9b681-110">Para configurar las distintas propiedades del objeto de suscripción, utilice la propiedad [**Value**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_value) .</span><span class="sxs-lookup"><span data-stu-id="9b681-110">To set up the various properties of the subscription object, use the [**Value**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_value) property.</span></span> <span data-ttu-id="9b681-111">Para guardar los cambios, use [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) en el objeto de colección **SubscriptionsForComponent** .</span><span class="sxs-lookup"><span data-stu-id="9b681-111">To save the changes, use [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) on the **SubscriptionsForComponent** collection object.</span></span>
+
+<span data-ttu-id="9b681-112">También puede usar la herramienta de administración de servicios de componentes para modificar algunas de las propiedades de la suscripción, pero no todas.</span><span class="sxs-lookup"><span data-stu-id="9b681-112">You can also use the Component Services administration tool to modify some, but not all, of the subscription properties.</span></span> <span data-ttu-id="9b681-113">Las suscripciones especifican la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="9b681-113">Subscriptions specify the following information:</span></span>
+
+-   <span data-ttu-id="9b681-114">Identidad y ubicación del suscriptor</span><span class="sxs-lookup"><span data-stu-id="9b681-114">Identity and location of the subscriber</span></span>
+-   <span data-ttu-id="9b681-115">Método de entrega</span><span class="sxs-lookup"><span data-stu-id="9b681-115">Delivery method</span></span>
+-   <span data-ttu-id="9b681-116">Métodos de evento que se van a proporcionar</span><span class="sxs-lookup"><span data-stu-id="9b681-116">Event methods to deliver</span></span>
+-   <span data-ttu-id="9b681-117">Objeto de clase de eventos y propiedad PublisherID de un componente de clase de evento del que el suscriptor desea recibir eventos</span><span class="sxs-lookup"><span data-stu-id="9b681-117">Event class object and PublisherID property of an event class component from which the subscriber wants to receive events</span></span>
+
+<span data-ttu-id="9b681-118">Las suscripciones existen de forma independiente de los objetos de la clase de eventos.</span><span class="sxs-lookup"><span data-stu-id="9b681-118">Subscriptions exist independently from event class objects.</span></span> <span data-ttu-id="9b681-119">Puede deshabilitar una suscripción estableciendo la propiedad Enabled en false.</span><span class="sxs-lookup"><span data-stu-id="9b681-119">You can disable a subscription by setting the Enabled property to False.</span></span> <span data-ttu-id="9b681-120">Los eventos COM+ no llaman a una suscripción deshabilitada.</span><span class="sxs-lookup"><span data-stu-id="9b681-120">A disabled subscription is not called by COM+ Events.</span></span>
+
+<span data-ttu-id="9b681-121">Los tres tipos de suscripciones son los siguientes:</span><span class="sxs-lookup"><span data-stu-id="9b681-121">The three types of subscriptions are as follows:</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="9b681-122"><span id="Persistent"></span><span id="persistent"></span><span id="PERSISTENT"></span>Permanentes</span><span class="sxs-lookup"><span data-stu-id="9b681-122"><span id="Persistent"></span><span id="persistent"></span><span id="PERSISTENT"></span>Persistent</span></span>
+</dt> <dd>
+
+<span data-ttu-id="9b681-123">Las suscripciones persistentes residen en el catálogo de COM+ y son independientes de la duración del suscriptor.</span><span class="sxs-lookup"><span data-stu-id="9b681-123">Persistent subscriptions reside in the COM+ catalog and are independent from the subscriber's lifetime.</span></span> <span data-ttu-id="9b681-124">Las suscripciones persistentes sobreviven a un reinicio del sistema.</span><span class="sxs-lookup"><span data-stu-id="9b681-124">Persistent subscriptions survive a system restart.</span></span> <span data-ttu-id="9b681-125">Por lo general, una suscripción persistente se crea cuando se instala una aplicación en el equipo de un suscriptor y se quita cuando se quita la aplicación.</span><span class="sxs-lookup"><span data-stu-id="9b681-125">Generally, a persistent subscription is created when an application is installed on a subscriber's computer and removed when the application is removed.</span></span> <span data-ttu-id="9b681-126">Una vez creada una suscripción persistente, los eventos COM+ activan el suscriptor cada vez que se le debe entregar un evento.</span><span class="sxs-lookup"><span data-stu-id="9b681-126">After a persistent subscription is created, COM+ Events activates the subscriber each time an event should be delivered to it.</span></span>
+
+<span data-ttu-id="9b681-127">Cuando un publicador crea una instancia de y realiza una llamada en un objeto de [clase de evento](the-com--event-class-object.md) , el objeto busca todas las suscripciones persistentes en el catálogo de com+ y crea una nueva instancia de cada objeto.</span><span class="sxs-lookup"><span data-stu-id="9b681-127">When a publisher instantiates and makes a call on an [event class](the-com--event-class-object.md) object, the object looks for all the persistent subscriptions in the COM+ catalog and creates a new instance of each object.</span></span> <span data-ttu-id="9b681-128">El proceso de creación puede ser directo o a través de un moniker para los componentes en cola.</span><span class="sxs-lookup"><span data-stu-id="9b681-128">The creation process can be either direct or through a moniker for queued components.</span></span> <span data-ttu-id="9b681-129">Especifique el objeto de suscriptor mediante la propiedad [**SubscriberMoniker**](subscriptionsforcomponent.md) de la suscripción.</span><span class="sxs-lookup"><span data-stu-id="9b681-129">Specify the subscriber object by the [**SubscriberMoniker**](subscriptionsforcomponent.md) property of the subscription.</span></span> <span data-ttu-id="9b681-130">Los objetos de suscriptor creados por una suscripción persistente siempre se liberan después de cada llamada de evento.</span><span class="sxs-lookup"><span data-stu-id="9b681-130">Subscriber objects created by a persistent subscription are always released after each event call.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="9b681-131"><span id="Transient"></span><span id="transient"></span><span id="TRANSIENT"></span>Temporal</span><span class="sxs-lookup"><span data-stu-id="9b681-131"><span id="Transient"></span><span id="transient"></span><span id="TRANSIENT"></span>Transient</span></span>
+</dt> <dd>
+
+<span data-ttu-id="9b681-132">En el caso de las suscripciones transitorias, puede utilizar la colección [**TransientSubscriptions**](transientsubscriptions.md) , cuyo objeto primario es el objeto de catálogo raíz.</span><span class="sxs-lookup"><span data-stu-id="9b681-132">For transient subscriptions, you can use the [**TransientSubscriptions**](transientsubscriptions.md) collection, whose parent object is the root catalog object.</span></span> <span data-ttu-id="9b681-133">Las suscripciones transitorias solicitan un evento para un objeto de suscriptor específico que ya existe.</span><span class="sxs-lookup"><span data-stu-id="9b681-133">Transient subscriptions request an event for a specific subscriber object that already exists.</span></span> <span data-ttu-id="9b681-134">Las suscripciones transitorias se almacenan en el catálogo de COM+, pero la suscripción se elimina si se detiene el sistema operativo o el sistema de eventos.</span><span class="sxs-lookup"><span data-stu-id="9b681-134">Transient subscriptions are stored in the COM+ catalog, but the subscription is deleted if the event system or operating system is stopped.</span></span> <span data-ttu-id="9b681-135">A diferencia de las suscripciones persistentes, las suscripciones transitorias se asocian a un objeto determinado y solo se almacenan en el sistema de eventos.</span><span class="sxs-lookup"><span data-stu-id="9b681-135">Unlike persistent subscriptions, transient subscriptions are tied to a particular object and are stored only in the event system.</span></span> <span data-ttu-id="9b681-136">Las suscripciones transitorias pueden ser más eficaces que las suscripciones persistentes, pero debe administrar los ciclos de vida de los objetos.</span><span class="sxs-lookup"><span data-stu-id="9b681-136">Transient subscriptions can be more efficient than persistent subscriptions, but you must manage their object life cycles.</span></span> <span data-ttu-id="9b681-137">Para obtener información sobre cómo registrar una suscripción transitoria, consulte [registrar una suscripción transitoria](registering-a-transient-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="9b681-137">For information about registering a transient subscription, see [Registering a Transient Subscription](registering-a-transient-subscription.md).</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="9b681-138"><span id="Per_user"></span><span id="per_user"></span><span id="PER_USER"></span>Por usuario</span><span class="sxs-lookup"><span data-stu-id="9b681-138"><span id="Per_user"></span><span id="per_user"></span><span id="PER_USER"></span>Per user</span></span>
+</dt> <dd>
+
+<span data-ttu-id="9b681-139">Las suscripciones por usuario solo pueden enviar eventos cuando el suscriptor inicia sesión en el equipo del sistema de eventos.</span><span class="sxs-lookup"><span data-stu-id="9b681-139">Per User subscriptions can deliver events only when the subscriber is logged on to the event system's computer.</span></span> <span data-ttu-id="9b681-140">Cuando el suscriptor inicia sesión, el sistema de eventos habilita todas las suscripciones en las que la marca *peruser* está establecida en **true** y *username* está establecido en el nombre del usuario que ha iniciado sesión.</span><span class="sxs-lookup"><span data-stu-id="9b681-140">When the subscriber logs on, the event system enables all subscriptions on which the *PerUser* flag is set to **TRUE** and *UserName* is set to the name of the user who is logged on.</span></span> <span data-ttu-id="9b681-141">Cuando el suscriptor cierra la sesión, se deshabilitan las suscripciones.</span><span class="sxs-lookup"><span data-stu-id="9b681-141">When the subscriber logs off, the subscriptions are disabled.</span></span>
+
+<span data-ttu-id="9b681-142">Las suscripciones por usuario solo son efectivas cuando el publicador y el suscriptor se encuentran en el mismo equipo.</span><span class="sxs-lookup"><span data-stu-id="9b681-142">Per User subscriptions are effective only when the publisher and subscriber are on the same computer.</span></span> <span data-ttu-id="9b681-143">Logon y Logoff solo se detectan en el equipo del publicador, no en el equipo en el que reside el objeto de suscriptor.</span><span class="sxs-lookup"><span data-stu-id="9b681-143">Logon and logoff are detected only at the publisher's computer—not the computer on which the subscriber object resides.</span></span>
+
+</dd> </dl>
+
+<span data-ttu-id="9b681-144">El sistema de eventos utiliza metaeventos para notificar a los suscriptores interesados cada vez que se crean, modifican o quitan suscripciones o objetos de clase de eventos.</span><span class="sxs-lookup"><span data-stu-id="9b681-144">The event system uses meta-events to notify interested subscribers whenever event class objects or subscriptions are created, modified, or removed.</span></span> <span data-ttu-id="9b681-145">Para recibir los metaeventos del sistema de eventos, las aplicaciones deben crear una suscripción que resida en el equipo del sistema de eventos y que especifique el identificador de la interfaz de activación (IID \_ IEventObjectChange).</span><span class="sxs-lookup"><span data-stu-id="9b681-145">To receive meta-events from the event system, applications must create a subscription that resides on the event system's computer and that specifies the firing interface ID (IID\_IEventObjectChange).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="9b681-146">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="9b681-146">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="9b681-147">Filtrado de eventos en COM+</span><span class="sxs-lookup"><span data-stu-id="9b681-147">Filtering Events in COM+</span></span>](filtering-events-in-com-.md)
+</dt> <dt>
+
+[<span data-ttu-id="9b681-148">Publicar y entregar eventos en COM+</span><span class="sxs-lookup"><span data-stu-id="9b681-148">Publishing and Delivering Events in COM+</span></span>](publishing-and-delivering-events-in-com-.md)
+</dt> <dt>
+
+[<span data-ttu-id="9b681-149">Objeto de la clase de eventos COM+</span><span class="sxs-lookup"><span data-stu-id="9b681-149">The COM+ Event Class Object</span></span>](the-com--event-class-object.md)
+</dt> <dt>
+
+[<span data-ttu-id="9b681-150">Usar eventos COM+ con componentes en cola de COM+</span><span class="sxs-lookup"><span data-stu-id="9b681-150">Using COM+ Events with COM+ Queued Components</span></span>](using-com--events-with-com--queued-components.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+

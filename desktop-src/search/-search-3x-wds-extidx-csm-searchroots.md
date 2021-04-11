@@ -1,0 +1,166 @@
+---
+description: El administrador de ámbito de rastreo (CSM) permite agregar y quitar raíces de búsqueda de los almacenes de datos en el ámbito de rastreo de Windows Search.
+ms.assetid: 0f1ff41f-7c4c-4516-bb55-bf09a8f2f3bc
+title: Administración de raíces de búsqueda
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: cbdd63e5e71cd18d3028c6d08019890f90c0228a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104275273"
+---
+# <a name="managing-search-roots"></a><span data-ttu-id="60b70-103">Administración de raíces de búsqueda</span><span class="sxs-lookup"><span data-stu-id="60b70-103">Managing Search Roots</span></span>
+
+<span data-ttu-id="60b70-104">El administrador de ámbito de rastreo (CSM) permite agregar y quitar raíces de búsqueda de los almacenes de datos en el ámbito de rastreo de Windows Search.</span><span class="sxs-lookup"><span data-stu-id="60b70-104">The Crawl Scope Manager (CSM) enables you to add and remove search roots for your data stores to and from the Windows Search crawl scope.</span></span>
+
+<span data-ttu-id="60b70-105">En esta sección se incluyen los siguientes temas:</span><span class="sxs-lookup"><span data-stu-id="60b70-105">This topic includes the following subjects:</span></span>
+
+-   [<span data-ttu-id="60b70-106">Acerca de las raíces de búsqueda</span><span class="sxs-lookup"><span data-stu-id="60b70-106">About Search Roots</span></span>](#about-search-roots)
+-   [<span data-ttu-id="60b70-107">Antes de comenzar</span><span class="sxs-lookup"><span data-stu-id="60b70-107">Before You Begin</span></span>](#before-you-begin)
+-   [<span data-ttu-id="60b70-108">Windows 7: nueva API del administrador de ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-108">Windows 7: New Crawl Scope Manager API</span></span>](#windows-7-new-crawl-scope-manager-api)
+-   [<span data-ttu-id="60b70-109">Agregar raíces al ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-109">Adding Roots to the Crawl Scope</span></span>](#adding-roots-to-the-crawl-scope)
+-   [<span data-ttu-id="60b70-110">Quitar raíces del ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-110">Removing Roots from the Crawl Scope</span></span>](#removing-roots-from-the-crawl-scope)
+-   [<span data-ttu-id="60b70-111">Enumerar raíces en el ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-111">Enumerating Roots in the Crawl Scope</span></span>](#enumerating-roots-in-the-crawl-scope)
+-   [<span data-ttu-id="60b70-112">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="60b70-112">Related topics</span></span>](#related-topics)
+
+ 
+
+## <a name="about-search-roots"></a><span data-ttu-id="60b70-113">Acerca de las raíces de búsqueda</span><span class="sxs-lookup"><span data-stu-id="60b70-113">About Search Roots</span></span>
+
+<span data-ttu-id="60b70-114">Una raíz de búsqueda define la base de un espacio de nombres de Shell donde se pueden incluir o excluir ámbitos específicos, y suele ser el contenedor de nivel superior de un protocolo que se puede enumerar.</span><span class="sxs-lookup"><span data-stu-id="60b70-114">A search root defines the base of a Shell namespace where specific scopes could be included or excluded, and is usually the highest level container in a protocol that can be enumerated.</span></span> <span data-ttu-id="60b70-115">No especifica qué partes de este almacén deben o no deben indexarse; simplemente indica que existe un almacén de contenido y está asociado a un controlador de protocolo registrado.</span><span class="sxs-lookup"><span data-stu-id="60b70-115">It does not specify which parts of this store should or should not be indexed; it merely signals that a content store exists and is associated with a registered protocol handler.</span></span> <span data-ttu-id="60b70-116">La sintaxis para identificar una dirección URL raíz de búsqueda incluye el protocolo, el identificador de seguridad del usuario o el almacén, la ruta de acceso y, opcionalmente, un elemento específico (como un archivo).</span><span class="sxs-lookup"><span data-stu-id="60b70-116">The syntax for identifying a search root URL includes the protocol, the store or user's security identifier, the path, and optionally a specific item (like a file).</span></span> <span data-ttu-id="60b70-117">En los siguientes ejemplos se muestran dos formas de la sintaxis de una raíz de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="60b70-117">The following examples show two forms of the syntax for a search root.</span></span>
+
+
+```
+<protocol>://<store or SID>\<path>\[item]
+or
+<protocol>://<store or SID>/<path>/[item]
+```
+
+
+
+<span data-ttu-id="60b70-118">El <protocol> segmento debe ir seguido de dos (2) barras diagonales ('/') a menos que sea el archivo: Protocolo, que requiere tres barras diagonales (File:///).</span><span class="sxs-lookup"><span data-stu-id="60b70-118">The <protocol> segment must be followed by two (2) forward slashes ('/') unless it is the file: protocol, which requires three slashes (file:///).</span></span> <span data-ttu-id="60b70-119">El <site or SID> segmento representa un almacén de contenido o un identificador de seguridad de usuario si la raíz de búsqueda está pensada para ser específica del usuario.</span><span class="sxs-lookup"><span data-stu-id="60b70-119">The <site or SID> segment represents either a content store or a user security identifier if the search root is meant to be specific to the user.</span></span> <span data-ttu-id="60b70-120">El <path> segmento es un conjunto de contenedores, como directorios o carpetas, y puede incluir el carácter comodín " \* ".</span><span class="sxs-lookup"><span data-stu-id="60b70-120">The <path> segment is a set of containers, like directories or folders, and can include the wildcard character '\*'.</span></span> <span data-ttu-id="60b70-121">A la clase</span><span class="sxs-lookup"><span data-stu-id="60b70-121">The</span></span> <item> <span data-ttu-id="60b70-122">Segment es opcional y también puede incluir el carácter comodín ' \* '.</span><span class="sxs-lookup"><span data-stu-id="60b70-122">segment is optional and can also include the wildcard character '\*'.</span></span> <span data-ttu-id="60b70-123">Si no incluye un elemento, asegúrese de terminar el segmento de ruta de acceso con una barra diagonal o el indexador supondrá que el último subcontenedor es un elemento.</span><span class="sxs-lookup"><span data-stu-id="60b70-123">If you do not include an item, be sure to finish your path segment with a slash or the indexer will assume that the last subcontainer is an item.</span></span>
+
+<span data-ttu-id="60b70-124">Por ejemplo, supongamos que ha implementado un controlador de protocolo (myPH) para controlar los archivos de tipo \* . myext para una aplicación personalizada.</span><span class="sxs-lookup"><span data-stu-id="60b70-124">For example, suppose you have implemented a protocol handler (myPH) to handle files of type \*.myext for a custom application.</span></span> <span data-ttu-id="60b70-125">Todos estos archivos se ubicarán en la carpeta WorkteamA \\ ProjectFiles en un equipo local.</span><span class="sxs-lookup"><span data-stu-id="60b70-125">All of these files will be located in the folder WorkteamA\\ProjectFiles on a local computer.</span></span> <span data-ttu-id="60b70-126">La raíz de búsqueda de puede tener el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="60b70-126">The search root for that might look like this:</span></span>
+
+-   <span data-ttu-id="60b70-127">myPH:///C: \\ WorkteamA \\ ProjectFiles</span><span class="sxs-lookup"><span data-stu-id="60b70-127">myPH:///C:\\WorkteamA\\ProjectFiles</span></span>\\
+
+<span data-ttu-id="60b70-128">Supongamos que está planeando incluir todos los archivos. myext, pero nada más de ese contenedor en el índice.</span><span class="sxs-lookup"><span data-stu-id="60b70-128">Suppose you are planning to include all .myext files but nothing else from that container in the index.</span></span> <span data-ttu-id="60b70-129">La raíz de búsqueda de puede tener el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="60b70-129">The search root for that might look like this:</span></span>
+
+-   <span data-ttu-id="60b70-130">myPH:///C: \\ WorkteamA \\ ProjectFiles \\ \* . myext.</span><span class="sxs-lookup"><span data-stu-id="60b70-130">myPH:///C:\\WorkteamA\\ProjectFiles\\\*.myext.</span></span>
+
+<span data-ttu-id="60b70-131">Los patrones de caracteres comodín definen las direcciones URL mediante el carácter comodín ' \* ' y se consideran un patrón en lugar de una dirección URL, pero la terminología se suele usar indistintamente.</span><span class="sxs-lookup"><span data-stu-id="60b70-131">Wildcard patterns define URLs by using the wildcard character '\*' and are considered a pattern rather than a URL, but the terminology is often used interchangeably.</span></span> <span data-ttu-id="60b70-132">Por ejemplo, File:///C: \\ Projecta \\ \* \\ Data \\ coincidiría con las siguientes direcciones URL:</span><span class="sxs-lookup"><span data-stu-id="60b70-132">For example, file:///C:\\ProjectA\\\*\\data\\ would match the following URLs:</span></span>
+
+-   <span data-ttu-id="60b70-133">C: \\ datos de Projecta \\ **version1** </span><span class="sxs-lookup"><span data-stu-id="60b70-133">C:\\ProjectA\\**version1**\\data</span></span>\\\\
+-   <span data-ttu-id="60b70-134">C: \\ datos de la \\ **version2** de proyecto </span><span class="sxs-lookup"><span data-stu-id="60b70-134">C:\\ProjectA\\**version2**\\data</span></span>\\\\
+
+<span data-ttu-id="60b70-135">Pero ese patrón no coincidiría con esta dirección URL:</span><span class="sxs-lookup"><span data-stu-id="60b70-135">But that pattern would not match this URL:</span></span>
+
+-   <span data-ttu-id="60b70-136">C: \\ \\ **datos \\ temporales de version1** </span><span class="sxs-lookup"><span data-stu-id="60b70-136">C:\\ProjectA\\**version1\\temp**\\data</span></span>\\\\
+
+<span data-ttu-id="60b70-137">Debe crear nuevas raíces de búsqueda para los contenedores que no estén ya en el ámbito de rastreo del indexador.</span><span class="sxs-lookup"><span data-stu-id="60b70-137">You should create new search roots for containers that are not already in the crawl scope of the indexer.</span></span> <span data-ttu-id="60b70-138">Si la ruta de acceso C: \\ ParentScope ya está incluida en el ámbito de rastreo, no es necesario agregar una nueva raíz de búsqueda para C: \\ ParentScope \\ ChildScope a menos que sepa que el ámbito secundario se excluyó previamente.</span><span class="sxs-lookup"><span data-stu-id="60b70-138">If path C:\\ParentScope is already included in the crawl scope, you do not need to add a new search root for C:\\ParentScope\\ChildScope unless you know that the child scope was previously excluded.</span></span>
+
+<span data-ttu-id="60b70-139">La interfaz de usuario para establecer las opciones de Windows Search muestra las raíces de búsqueda a los usuarios para que puedan refinar las reglas de ámbito para sus búsquedas.</span><span class="sxs-lookup"><span data-stu-id="60b70-139">The user interface for setting Windows Search options displays search roots to users so they can refine the scope rules for their searches.</span></span> <span data-ttu-id="60b70-140">Como parte del proceso de instalación del controlador de protocolo personalizado, el contenedor o la aplicación, puede definir un ámbito de rastreo predeterminado, con reglas de inclusión y exclusión.</span><span class="sxs-lookup"><span data-stu-id="60b70-140">As part of the installation process for your custom protocol handler, container, and/or application, you might define a default crawl scope, with inclusion and exclusion rules.</span></span> <span data-ttu-id="60b70-141">Estas reglas se presentan a los usuarios finales como ubicaciones.</span><span class="sxs-lookup"><span data-stu-id="60b70-141">These rules are presented to end users as locations.</span></span> <span data-ttu-id="60b70-142">Los usuarios pueden navegar dentro de los subdirectorios de la raíz de búsqueda predefinida y seleccionar las que deseen incluir en las búsquedas o borrar las que deseen excluir.</span><span class="sxs-lookup"><span data-stu-id="60b70-142">Users can navigate within the subdirectories of your predefined search root and select the ones they want to include in searches or clear the ones they want to exclude.</span></span>
+
+ 
+
+## <a name="before-you-begin"></a><span data-ttu-id="60b70-143">Antes de empezar</span><span class="sxs-lookup"><span data-stu-id="60b70-143">Before You Begin</span></span>
+
+<span data-ttu-id="60b70-144">Para poder usar cualquiera de las interfaces del administrador de ámbito de rastreo (CSM), debe realizar los siguientes pasos de requisitos previos:</span><span class="sxs-lookup"><span data-stu-id="60b70-144">Before you can use any of the Crawl Scope Manager (CSM) interfaces, you must perform the following prerequisite steps:</span></span>
+
+1.  <span data-ttu-id="60b70-145">Cree el objeto **CrawlSearchManager** y obtenga su interfaz [**ISearchManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchmanager) .</span><span class="sxs-lookup"><span data-stu-id="60b70-145">Create the **CrawlSearchManager** object and obtain its [**ISearchManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchmanager) interface.</span></span>
+2.  <span data-ttu-id="60b70-146">Llame a [**ISearchManager:: GetCatalog**](/windows/desktop/api/Searchapi/nf-searchapi-isearchmanager-getcatalog) para "SystemIndex" para obtener una instancia de una interfaz [**ISearchCatalogManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) .</span><span class="sxs-lookup"><span data-stu-id="60b70-146">Call [**ISearchManager::GetCatalog**](/windows/desktop/api/Searchapi/nf-searchapi-isearchmanager-getcatalog) for "SystemIndex" to obtain an instance of an [**ISearchCatalogManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) interface.</span></span>
+3.  <span data-ttu-id="60b70-147">Llame a [**ISearchCatalogManager:: GetCrawlScopeManager**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcatalogmanager-getcrawlscopemanager) para obtener una instancia de la interfaz [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) .</span><span class="sxs-lookup"><span data-stu-id="60b70-147">Call [**ISearchCatalogManager::GetCrawlScopeManager**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcatalogmanager-getcrawlscopemanager) to obtain an instance of [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) interface.</span></span>
+
+<span data-ttu-id="60b70-148">Después de realizar cambios en el administrador de ámbito de rastreo (CSM), debe llamar a [**ISearchCrawlScopeManager:: SAVEALL**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-saveall).</span><span class="sxs-lookup"><span data-stu-id="60b70-148">After making any changes to the Crawl Scope Manager (CSM), you must call [**ISearchCrawlScopeManager::SaveAll**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-saveall).</span></span> <span data-ttu-id="60b70-149">Este método no toma ningún parámetro y devuelve si es \_ correcto.</span><span class="sxs-lookup"><span data-stu-id="60b70-149">This method takes no parameters and returns S\_OK on success.</span></span>
+
+ 
+
+## <a name="windows-7-new-crawl-scope-manager-api"></a><span data-ttu-id="60b70-150">Windows 7: nueva API del administrador de ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-150">Windows 7: New Crawl Scope Manager API</span></span>
+
+<span data-ttu-id="60b70-151">En **Windows 7 y versiones posteriores**, [**ISearchCrawlScopeManager2**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager2) extiende la funcionalidad de la interfaz [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) .</span><span class="sxs-lookup"><span data-stu-id="60b70-151">In **Windows 7 and later**, [**ISearchCrawlScopeManager2**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager2) extends the functionality of the [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) interface.</span></span> <span data-ttu-id="60b70-152">El método [**ISearchCrawlScopeManager2:: GetVersion**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager2-getversion) obtiene la versión del administrador de ámbito de rastreo (CSM), que informa a los clientes si el estado de CSM ha cambiado.</span><span class="sxs-lookup"><span data-stu-id="60b70-152">The [**ISearchCrawlScopeManager2::GetVersion**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager2-getversion) method gets the Crawl Scope Manager (CSM) version, which informs clients if the state of the CSM has changed.</span></span> <span data-ttu-id="60b70-153">**ISearchCrawlScopeManager2:: GetVersion** no produce una llamada entre procesos.</span><span class="sxs-lookup"><span data-stu-id="60b70-153">**ISearchCrawlScopeManager2::GetVersion** does not result in a cross-process call.</span></span> <span data-ttu-id="60b70-154">Si la función se ejecuta correctamente, el puntero que se devuelve sigue siendo válido hasta que el cliente llama a **UnmapViewOfFile** en el puntero y **CloseHandle** en el identificador devuelto.</span><span class="sxs-lookup"><span data-stu-id="60b70-154">If the function succeeds, then the pointer that is returned remains valid until the client calls **UnmapViewOfFile** on the pointer and **CloseHandle** on the returned handle.</span></span>
+
+ 
+
+## <a name="adding-roots-to-the-crawl-scope"></a><span data-ttu-id="60b70-155">Agregar raíces al ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-155">Adding Roots to the Crawl Scope</span></span>
+
+<span data-ttu-id="60b70-156">[**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) indica al motor de búsqueda acerca de los contenedores que se van a rastrear o ver, y los elementos de esos contenedores que se van a incluir o excluir.</span><span class="sxs-lookup"><span data-stu-id="60b70-156">The [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) tells the search engine about containers to crawl and/or watch, and items under those containers to include or exclude.</span></span> <span data-ttu-id="60b70-157">Para agregar una nueva raíz de búsqueda, cree una instancia de un objeto [**ISearchRoot**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot) , establezca los atributos raíz y, después, llame a [**ISearchCrawlScopeManager:: AddRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-addroot) y pásele un puntero al objeto **ISearchRoot** .</span><span class="sxs-lookup"><span data-stu-id="60b70-157">To add a new search root, instantiate an [**ISearchRoot**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot) object, set the root attributes, and then call [**ISearchCrawlScopeManager::AddRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-addroot) and pass it a pointer to your **ISearchRoot** object.</span></span> <span data-ttu-id="60b70-158">La dirección URL raíz de búsqueda tiene el mismo formato que la raíz de búsqueda que se ha descrito anteriormente.</span><span class="sxs-lookup"><span data-stu-id="60b70-158">The search root URL takes the same form as the search root described earlier.</span></span>
+
+<span data-ttu-id="60b70-159">En la tabla siguiente se describen los métodos Put correspondientes para [**ISearchRoot**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot); los otros métodos put de la interfaz no se usan actualmente en Windows Search.</span><span class="sxs-lookup"><span data-stu-id="60b70-159">The following table describes the relevant put methods for [**ISearchRoot**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot); the interface's other put methods are not used currently by Windows Search.</span></span> <span data-ttu-id="60b70-160">Se recomienda incluir los identificadores de seguridad (SID) de los usuarios en todas las raíces para mejorar la seguridad.</span><span class="sxs-lookup"><span data-stu-id="60b70-160">We recommend including the users' security identifiers (SIDs) in all roots for better security.</span></span> <span data-ttu-id="60b70-161">Las raíces por usuario son más seguras a medida que las consultas se ejecutan en un proceso por usuario, lo que garantiza que un usuario no pueda ver los elementos indizados desde la bandeja de entrada de otro usuario, por ejemplo.</span><span class="sxs-lookup"><span data-stu-id="60b70-161">Per-user roots are more secure as queries are run in a per-user process, ensuring that one user cannot see items indexed from another user's inbox, for example.</span></span>
+
+
+
+| <span data-ttu-id="60b70-162">Método</span><span class="sxs-lookup"><span data-stu-id="60b70-162">Method</span></span>                     | <span data-ttu-id="60b70-163">Descripción</span><span class="sxs-lookup"><span data-stu-id="60b70-163">Description</span></span>                                                                                                                                                                                         |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="60b70-164">Put \_ ProvidesNotifications</span><span class="sxs-lookup"><span data-stu-id="60b70-164">put\_ProvidesNotifications</span></span> | <span data-ttu-id="60b70-165">Establézcalo en **true** si un controlador de protocolo u otra aplicación notificará al motor de búsqueda los cambios en las direcciones URL en la raíz de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="60b70-165">Set to **TRUE** if a protocol handler or other application will notify the search engine about changes to the URLs under the search root.</span></span> <span data-ttu-id="60b70-166">La notificación indica que las direcciones URL deben reindizarse.</span><span class="sxs-lookup"><span data-stu-id="60b70-166">The notification indicates that the URLs need reindexing.</span></span> |
+| <span data-ttu-id="60b70-167">Put \_ RootURL</span><span class="sxs-lookup"><span data-stu-id="60b70-167">put\_RootURL</span></span>               | <span data-ttu-id="60b70-168">Establece la dirección URL raíz de la búsqueda actual.</span><span class="sxs-lookup"><span data-stu-id="60b70-168">Sets the root URL of the current search.</span></span> <span data-ttu-id="60b70-169">La dirección URL toma el formulario raíz de búsqueda descrito anteriormente.</span><span class="sxs-lookup"><span data-stu-id="60b70-169">The URL takes the search root form described earlier.</span></span>                                                                                                      |
+
+
+
+ 
+
+ 
+
+<span data-ttu-id="60b70-170">De forma predeterminada, el indexador no rastrea un ámbito cuando se agrega una raíz de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="60b70-170">By default, the indexer does not crawl a scope when you add a search root.</span></span> <span data-ttu-id="60b70-171">También debe agregar una regla de inclusión para la raíz.</span><span class="sxs-lookup"><span data-stu-id="60b70-171">You must also add an include rule for the root.</span></span> <span data-ttu-id="60b70-172">Si desea agregar una raíz específica del usuario para una aplicación, esa aplicación debe agregar las raíces adecuadas para los nuevos usuarios cuando se inicie la aplicación.</span><span class="sxs-lookup"><span data-stu-id="60b70-172">If you want to add a user-specific root for an application, that application should add the appropriate roots for new users when the application starts.</span></span>
+
+<span data-ttu-id="60b70-173">Para agregar las raíces adecuadas para los nuevos usuarios:</span><span class="sxs-lookup"><span data-stu-id="60b70-173">To add the appropriate roots for new users:</span></span>
+
+1.  <span data-ttu-id="60b70-174">Obtiene el SID del usuario.</span><span class="sxs-lookup"><span data-stu-id="60b70-174">Get the user's SID.</span></span>
+2.  <span data-ttu-id="60b70-175">Enumerar todas las raíces para comprobar si existe una para este SID.</span><span class="sxs-lookup"><span data-stu-id="60b70-175">Enumerate all roots to check whether one exists for this SID.</span></span>
+3.  <span data-ttu-id="60b70-176">Agregue una nueva raíz, utilizando el SID, si es necesario.</span><span class="sxs-lookup"><span data-stu-id="60b70-176">Add a new root, using the SID, if necessary.</span></span>
+
+ 
+
+## <a name="removing-roots-from-the-crawl-scope"></a><span data-ttu-id="60b70-177">Quitar raíces del ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-177">Removing Roots from the Crawl Scope</span></span>
+
+<span data-ttu-id="60b70-178">Puede usar [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) para quitar una raíz del ámbito de rastreo cuando ya no desee que esta dirección URL se indexe.</span><span class="sxs-lookup"><span data-stu-id="60b70-178">You can use [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) to remove a root from the crawl scope when you no longer want that URL indexed.</span></span> <span data-ttu-id="60b70-179">Al quitar una raíz también se eliminan todas las reglas de ámbito de esa dirección URL.</span><span class="sxs-lookup"><span data-stu-id="60b70-179">Removing a root also deletes all scope rules for that URL.</span></span> <span data-ttu-id="60b70-180">Por ejemplo, supongamos que desea desinstalar un almacén de contenido o su controlador de protocolo de un sistema.</span><span class="sxs-lookup"><span data-stu-id="60b70-180">For example, suppose you want to uninstall a content store and/or its protocol handler from a system.</span></span> <span data-ttu-id="60b70-181">Puede desinstalar la aplicación, quitar todos los datos y, a continuación, quitar la raíz de búsqueda del ámbito de rastreo, y el administrador del ámbito de rastreo quitará la raíz y todas las reglas de ámbito asociadas a la raíz.</span><span class="sxs-lookup"><span data-stu-id="60b70-181">You can uninstall the application, remove all data, and then remove the search root from the crawl scope, and the Crawl Scope Manager will remove the root and all scope rules associated with the root.</span></span>
+
+<span data-ttu-id="60b70-182">Para quitar una raíz de búsqueda existente, llame a [**ISearchCrawlScopeManager:: RemoveRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-removeroot) con la raíz de búsqueda que desea quitar.</span><span class="sxs-lookup"><span data-stu-id="60b70-182">To remove an existing search root, call [**ISearchCrawlScopeManager::RemoveRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-removeroot) with the search root you want to remove.</span></span> <span data-ttu-id="60b70-183">La dirección URL raíz de búsqueda tiene el mismo formato que la raíz de búsqueda que se ha descrito anteriormente.</span><span class="sxs-lookup"><span data-stu-id="60b70-183">The search root URL takes the same form as the search root described earlier.</span></span> <span data-ttu-id="60b70-184">Este método devuelve S \_ false si no se encuentra la raíz y un código de error si se produjo un error al quitar una raíz encontrada.</span><span class="sxs-lookup"><span data-stu-id="60b70-184">This method returns S\_FALSE if the root is not found and an error code if there was an error removing a root that was found.</span></span>
+
+<span data-ttu-id="60b70-185">Al quitar una raíz de búsqueda, también se quita la dirección URL de la interfaz de usuario para las opciones de búsqueda de Windows, por lo que es posible que los usuarios no puedan volver a agregar el contenedor o la ubicación mediante la interfaz de usuario.</span><span class="sxs-lookup"><span data-stu-id="60b70-185">Removing a search root also removes the URL from the user interface for Windows Search options, so users may not be able to re-add that container or location using the user interface.</span></span> <span data-ttu-id="60b70-186">También es posible quitar todas las invalidaciones definidas por el usuario de una raíz de búsqueda y volver a las reglas de ámbito y raíz de búsqueda originales.</span><span class="sxs-lookup"><span data-stu-id="60b70-186">It is also possible to remove all user-set overrides of a search root and revert to the original search root and scope rules.</span></span> <span data-ttu-id="60b70-187">Para obtener más información, consulte [Administración de reglas de ámbito](-search-3x-wds-extidx-csm-scoperules.md).</span><span class="sxs-lookup"><span data-stu-id="60b70-187">For more information, see [Managing Scope Rules](-search-3x-wds-extidx-csm-scoperules.md).</span></span>
+
+> [!Note]  
+> <span data-ttu-id="60b70-188">En Windows Vista, si los usuarios se quitan a través de perfiles de usuario en el panel de control, CSM quita todas las reglas y raíces con su SID y quita los elementos indexados del catálogo.</span><span class="sxs-lookup"><span data-stu-id="60b70-188">On Windows Vista, if users are removed through User Profiles in Control Panel, CSM removes all rules and roots with their SID and removes their indexed items from the catalog.</span></span> <span data-ttu-id="60b70-189">En Windows XP, debe quitar manualmente las raíces y reglas de los usuarios.</span><span class="sxs-lookup"><span data-stu-id="60b70-189">On Windows XP, you need to remove the users' roots and rules manually.</span></span>
+
+ 
+
+ 
+
+## <a name="enumerating-roots-in-the-crawl-scope"></a><span data-ttu-id="60b70-190">Enumerar raíces en el ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-190">Enumerating Roots in the Crawl Scope</span></span>
+
+<span data-ttu-id="60b70-191">CSM enumera las raíces de búsqueda mediante una interfaz de enumerador de estilo COM estándar, [**IEnumSearchRoots**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchroots).</span><span class="sxs-lookup"><span data-stu-id="60b70-191">The CSM enumerates search roots using a standard COM-style enumerator interface, [**IEnumSearchRoots**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchroots).</span></span> <span data-ttu-id="60b70-192">Puede usar esta interfaz para enumerar las raíces de búsqueda de una serie de propósitos.</span><span class="sxs-lookup"><span data-stu-id="60b70-192">You can use this interface to enumerate search roots for a number of purposes.</span></span> <span data-ttu-id="60b70-193">Por ejemplo, puede que desee mostrar el ámbito de rastreo completo en una interfaz de usuario o detectar si una raíz determinada o el elemento secundario de una raíz ya está en el ámbito de rastreo.</span><span class="sxs-lookup"><span data-stu-id="60b70-193">For example, you might want to display the entire crawl scope in a user interface, or discover whether a particular root or the child of a root is already in the crawl scope.</span></span>
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="60b70-194">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="60b70-194">Related topics</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="60b70-195">**Referencia**</span><span class="sxs-lookup"><span data-stu-id="60b70-195">**Reference**</span></span>
+</dt> <dt>
+
+[<span data-ttu-id="60b70-196">**ISearchCrawlScopeManager**</span><span class="sxs-lookup"><span data-stu-id="60b70-196">**ISearchCrawlScopeManager**</span></span>](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager)
+</dt> <dt>
+
+[<span data-ttu-id="60b70-197">**ISearchRoot**</span><span class="sxs-lookup"><span data-stu-id="60b70-197">**ISearchRoot**</span></span>](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot)
+</dt> <dt>
+
+[<span data-ttu-id="60b70-198">**IEnumSearchRoots**</span><span class="sxs-lookup"><span data-stu-id="60b70-198">**IEnumSearchRoots**</span></span>](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchroots)
+</dt> <dt>
+
+<span data-ttu-id="60b70-199">**Vista**</span><span class="sxs-lookup"><span data-stu-id="60b70-199">**Conceptual**</span></span>
+</dt> <dt>
+
+[<span data-ttu-id="60b70-200">Usar el administrador de ámbito de rastreo</span><span class="sxs-lookup"><span data-stu-id="60b70-200">Using the Crawl Scope Manager</span></span>](-search-3x-wds-extidx-csm.md)
+</dt> <dt>
+
+[<span data-ttu-id="60b70-201">Administrar reglas de ámbito</span><span class="sxs-lookup"><span data-stu-id="60b70-201">Managing Scope Rules</span></span>](-search-3x-wds-extidx-csm-scoperules.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
