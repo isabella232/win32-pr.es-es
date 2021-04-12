@@ -19,11 +19,11 @@ ms.locfileid: "104360678"
 ---
 # <a name="shell-glossary"></a>Glosario de Shell
 
-## <a name="a"></a>Un
+## <a name="a"></a>A
 
 <dl> <dt>
 
-**Asociación**
+**correlación**
 </dt> <dd>
 
 Asignación de una extensión de nombre de archivo (por ejemplo,. mp3) o un protocolo (por ejemplo, http) a un identificador de programación (ProgID). Esta asignación se almacena en el registro como una configuración por usuario con una reserva por equipo. Las aplicaciones que participan en el sistema programas predeterminados establecen la asignación de Asociación de la extensión de nombre de archivo o protocolo para que apunten a las claves de ProgID que poseen.
