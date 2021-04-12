@@ -1,0 +1,38 @@
+---
+title: Evitar el cierre de sesión o la suspensión durante una grabación
+description: Si las precauciones adecuadas no se realizan dentro de una aplicación, es posible que un usuario cierre la sesión durante una operación de grabación. Esto conduce a la interrupción del proceso de grabación, lo que puede provocar la pérdida de datos y posiblemente que el disco no se pueda usar.
+ms.assetid: 5223c9f6-30f6-43ce-b46c-267da0a53d4b
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 5922fbe6dbc27303cee82e7ed745cbaaf2744781
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104487599"
+---
+# <a name="preventing-logoff-or-suspend-during-a-burn"></a><span data-ttu-id="b4ce1-104">Evitar el cierre de sesión o la suspensión durante una grabación</span><span class="sxs-lookup"><span data-stu-id="b4ce1-104">Preventing Logoff or Suspend During a Burn</span></span>
+
+<span data-ttu-id="b4ce1-105">Si las precauciones adecuadas no se realizan dentro de una aplicación, es posible que un usuario cierre la sesión durante una operación de grabación.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-105">If proper precautions are not made within an application, it is possible for a user to log off during a burn operation.</span></span> <span data-ttu-id="b4ce1-106">Esto conduce a la interrupción del proceso de grabación, lo que puede provocar la pérdida de datos y posiblemente que el disco no se pueda usar.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-106">This leads to the interruption of the burn process, which can result in lost data and possibly render the disc unusable.</span></span>
+
+<span data-ttu-id="b4ce1-107">Para evitar este problema, la aplicación debe procesar el mensaje de [**\_ QUERYENDSESSION de WM**](/windows/desktop/Shutdown/wm-queryendsession) que se entrega antes de cerrar la sesión.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-107">To avoid this problem, the application should process the [**WM\_QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) message which is delivered prior to log off.</span></span> <span data-ttu-id="b4ce1-108">Si la aplicación recibe este mensaje mientras realiza una operación de grabación, devuelva **false** para cancelar el procedimiento de cierre de sesión.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-108">If the application receives this message while performing a burn operation, return **FALSE** to cancel the logoff procedure.</span></span> <span data-ttu-id="b4ce1-109">Si la aplicación permite al usuario decidir si desea continuar con el cierre de sesión, se debe proporcionar una advertencia que indica que el usuario perderá los datos.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-109">If the application allows the user to decide whether to continue logging off, a warning should be provided indicating that user will lose data.</span></span>
+
+<span data-ttu-id="b4ce1-110">Las transiciones de energía durante el proceso de grabación también pueden crear posibles problemas en el éxito de una actividad de grabación.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-110">Power transitions during the burn process can also create potential problems in the success of a burn activity.</span></span> <span data-ttu-id="b4ce1-111">Para evitar estas complicaciones durante el proceso de grabación, es necesario que una aplicación tenga en cuenta Cuándo están a punto de realizarse las transiciones de energía.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-111">Preventing these complications during the burn process requires an application to be aware of when power transitions are about to take place.</span></span> <span data-ttu-id="b4ce1-112">Esto se logra mediante la habilitación de la aplicación para procesar el mensaje de [**\_ POWERBROADCAST de WM**](/windows/desktop/Power/wm-powerbroadcast) .</span><span class="sxs-lookup"><span data-stu-id="b4ce1-112">This is accomplished by by enabling the application to process the [**WM\_POWERBROADCAST**](/windows/desktop/Power/wm-powerbroadcast) message.</span></span> <span data-ttu-id="b4ce1-113">Las aplicaciones desarrolladas para Windows XP o Windows Server 2003 pueden devolver la **consulta de difusión \_ \_ Deny** en respuesta a [**PBT \_ APMQUERYSUSPEND**](/windows/desktop/Power/pbt-apmquerysuspend), lo que impide la suspensión durante el proceso de grabación.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-113">Applications developed for Windows XP or Windows Server 2003 can return **BROADCAST\_QUERY\_DENY** in response to [**PBT\_APMQUERYSUSPEND**](/windows/desktop/Power/pbt-apmquerysuspend), preventing Suspend during the burn process.</span></span>
+
+<span data-ttu-id="b4ce1-114">Debido a los cambios en el modelo de administración de energía de Windows Vista y Windows Server 2008, el evento [**PBT \_ APMQUERYSUSPEND**](/windows/desktop/Power/pbt-apmquerysuspend) ya no se entrega a las aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-114">Due to changes in the Power Management Model for Windows Vista and Windows Server 2008, the [**PBT\_APMQUERYSUSPEND**](/windows/desktop/Power/pbt-apmquerysuspend) event is no longer delivered to applications.</span></span> <span data-ttu-id="b4ce1-115">En su lugar, se entrega el evento [**PBT \_ APMSUSPEND**](/windows/desktop/Power/pbt-apmsuspend) , que proporciona dos segundos para que una aplicación se prepare para la transición.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-115">Instead the [**PBT\_APMSUSPEND**](/windows/desktop/Power/pbt-apmsuspend) event is delivered, providing two seconds for an application to prepare for the transition.</span></span>
+
+<span data-ttu-id="b4ce1-116">Como resultado de estos cambios, se recomienda que las aplicaciones llamen a la función [**SetThreadExecutionState**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate) para evitar un tiempo de espera de inactividad del sistema que, normalmente, hace que la transición se suspenda.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-116">As a result of these changes, it is recommended that applications call the [**SetThreadExecutionState**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate) function to prevent a system idle time-out which ordinarily results in the transition to Suspend.</span></span> <span data-ttu-id="b4ce1-117">Es importante recordar que llamar a esta función con el conjunto de marcadores adecuado solo impedirá que el sistema esté inactivo, no una suspensión en curso.</span><span class="sxs-lookup"><span data-stu-id="b4ce1-117">It is important to remember that calling this function with the appropriate flags set will only prevent system idle, not an in-progress Suspend.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="b4ce1-118">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="b4ce1-118">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="b4ce1-119">Usar IMAPi</span><span class="sxs-lookup"><span data-stu-id="b4ce1-119">Using IMAPI</span></span>](using-imapi.md)
+</dt> <dt>
+
+[<span data-ttu-id="b4ce1-120">**SetThreadExecutionState**</span><span class="sxs-lookup"><span data-stu-id="b4ce1-120">**SetThreadExecutionState**</span></span>](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate)
+</dt> </dl>
+
+ 
+
+ 
