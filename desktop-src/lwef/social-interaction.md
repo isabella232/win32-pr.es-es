@@ -1,0 +1,34 @@
+---
+title: Interacción social
+description: Interacción social
+ms.assetid: 4e8096e8-7bd1-4225-b12c-832f312ef833
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 86125d0365ea503f596d1714560edae7eaa9775a
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104357015"
+---
+# <a name="social-interaction"></a><span data-ttu-id="73d25-103">Interacción social</span><span class="sxs-lookup"><span data-stu-id="73d25-103">Social Interaction</span></span>
+
+<span data-ttu-id="73d25-104">\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]</span><span class="sxs-lookup"><span data-stu-id="73d25-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+
+<span data-ttu-id="73d25-105">La comunicación humana es fundamentalmente social.</span><span class="sxs-lookup"><span data-stu-id="73d25-105">Human communication is fundamentally social.</span></span> <span data-ttu-id="73d25-106">Desde el momento en que nació, comenzamos a reaccionar a las indicaciones sociales en nuestro entorno y a conocer las reglas adecuadas para una interacción eficaz, que incluyen comportamientos verbales como Intonation o clasificación de palabras, y también comportamientos no verbales, como posturas, gestos y expresiones faciales.</span><span class="sxs-lookup"><span data-stu-id="73d25-106">From the time we are born, we begin reacting to the social cues in our environment and learning the appropriate rules for effective interaction, which include verbal behaviors such as intonation or word ordering, and also non-verbal behaviors such as posture, gestures, and facial expressions.</span></span> <span data-ttu-id="73d25-107">Estos comportamientos transmiten actitudes, identidades y emociones que colorean la comunicación.</span><span class="sxs-lookup"><span data-stu-id="73d25-107">These behaviors convey attitudes, identities, and emotions that color our communication.</span></span> <span data-ttu-id="73d25-108">A menudo, se crean convenciones de sustitución para los canales de comunicación que no proporcionan de forma natural el ancho de banda para las señales no verbales, como el correo electrónico o las sesiones de chat en línea.</span><span class="sxs-lookup"><span data-stu-id="73d25-108">We often create substitute conventions for communication channels that don't naturally provide bandwidth for non-verbal cues, such as email or online chat sessions.</span></span>
+
+<span data-ttu-id="73d25-109">Desafortunadamente, la mayoría del diseño de la interfaz de software se ha centrado principalmente en los aspectos cognitivos de la comunicación, con lo que se inmiran la mayoría de los aspectos sociales.</span><span class="sxs-lookup"><span data-stu-id="73d25-109">Unfortunately, the majority of software interface design has focused primarily on the cognitive aspects of communication, overlooking most social aspects.</span></span> <span data-ttu-id="73d25-110">Sin embargo, la investigación reciente ha demostrado que los seres humanos interactúan de forma natural ante los estímulos sociales presentados en un contexto interactivo.</span><span class="sxs-lookup"><span data-stu-id="73d25-110">However, recent research has demonstrated that human beings naturally react to social stimuli presented in an interactive context.</span></span> <span data-ttu-id="73d25-111">Además, las reacciones suelen seguir las mismas convenciones que usan los usuarios entre sí.</span><span class="sxs-lookup"><span data-stu-id="73d25-111">Further, the reactions often follow the same conventions that people use with each other.</span></span> <span data-ttu-id="73d25-112">Incluso las indicaciones más pequeñas, como los colores presentados o la elección de palabras en los mensajes, pueden activar esta respuesta automática.</span><span class="sxs-lookup"><span data-stu-id="73d25-112">Even the smallest cues, such as colors presented or word choice in messages, can trigger this automatic response.</span></span> <span data-ttu-id="73d25-113">La presentación de un carácter animado con los ojos y la altura de la boca aumenta las expectativas sociales y la seguridad de las respuestas al carácter.</span><span class="sxs-lookup"><span data-stu-id="73d25-113">The presentation of an animated character with eyes and a mouth heightens the social expectations of and strength of responses to the character.</span></span> <span data-ttu-id="73d25-114">No asuma nunca que los usuarios esperan que el comportamiento de un carácter sea menos socialmente adecuado porque saben que es artificial.</span><span class="sxs-lookup"><span data-stu-id="73d25-114">Never assume that users expect a character's behavior to be less socially appropriate because they know it is artificial.</span></span> <span data-ttu-id="73d25-115">Sabiendo esto, es importante tener en cuenta los aspectos sociales de la interacción al diseñar la interacción de los caracteres.</span><span class="sxs-lookup"><span data-stu-id="73d25-115">Knowing this, it is important to consider the social aspects of interaction when designing character interaction.</span></span> <span data-ttu-id="73d25-116">*La ecuación multimedia: cómo los usuarios tratan los equipos, los televisores y los nuevos medios como personas y lugares reales* por Byron Reeves y Clifford NAS (Nueva York: Cambridge University Press) es una excelente referencia sobre la investigación actual en esta área.</span><span class="sxs-lookup"><span data-stu-id="73d25-116">*The Media Equation: How People Treat Computers, Televisions, and New Media as Real People and Places* by Byron Reeves and Clifford Nass (New York: Cambridge University Press) is an excellent reference on current research in this area.</span></span>
+
+-   [<span data-ttu-id="73d25-117">Crear personalidad</span><span class="sxs-lookup"><span data-stu-id="73d25-117">Create Personality</span></span>](create-personality.md)
+-   [<span data-ttu-id="73d25-118">Observar el etiqueta apropiado</span><span class="sxs-lookup"><span data-stu-id="73d25-118">Observe Appropriate Etiquette</span></span>](observe-appropriate-etiquette.md)
+-   [<span data-ttu-id="73d25-119">Usar elogiar</span><span class="sxs-lookup"><span data-stu-id="73d25-119">Use Praise</span></span>](use-praise.md)
+-   [<span data-ttu-id="73d25-120">Crear un reproductor de equipo</span><span class="sxs-lookup"><span data-stu-id="73d25-120">Create a Team Player</span></span>](create-a-team-player.md)
+-   [<span data-ttu-id="73d25-121">Considerar los efectos de sexo</span><span class="sxs-lookup"><span data-stu-id="73d25-121">Consider Gender Effects</span></span>](consider-gender-effects.md)
+
+ 
+
+ 
+
+
+
+
