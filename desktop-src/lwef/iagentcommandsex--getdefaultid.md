@@ -1,0 +1,48 @@
+---
+title: IAgentCommandsEx GetDefaultID
+description: IAgentCommandsEx GetDefaultID
+ms.assetid: 14079ae0-ad2c-4f38-9371-9914f8402e49
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3e4380eca62a65758979a94fb23511348b11acdf
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104420713"
+---
+# <a name="iagentcommandsexgetdefaultid"></a><span data-ttu-id="1c5d2-103">IAgentCommandsEx::GetDefaultID</span><span class="sxs-lookup"><span data-stu-id="1c5d2-103">IAgentCommandsEx::GetDefaultID</span></span>
+
+<span data-ttu-id="1c5d2-104">\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]</span><span class="sxs-lookup"><span data-stu-id="1c5d2-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+
+``` syntax
+HRESULT GetDefaultID(
+   long * pdwID  // address of default command's ID
+);
+```
+
+<span data-ttu-id="1c5d2-105">Recupera el identificador del comando predeterminado en una colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .</span><span class="sxs-lookup"><span data-stu-id="1c5d2-105">Retrieves the ID of the default command in a [**Commands**](/windows/desktop/lwef/the-commands-collection-object) collection.</span></span>
+
+-   <span data-ttu-id="1c5d2-106">Devuelve S \_ OK para indicar que la operación se realizó correctamente.</span><span class="sxs-lookup"><span data-stu-id="1c5d2-106">Returns S\_OK to indicate the operation was successful.</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="1c5d2-107"><span id="pdwID"></span><span id="pdwid"></span><span id="PDWID"></span>*pdwID*</span><span class="sxs-lookup"><span data-stu-id="1c5d2-107"><span id="pdwID"></span><span id="pdwid"></span><span id="PDWID"></span>*pdwID*</span></span>
+</dt> <dd>
+
+<span data-ttu-id="1c5d2-108">Dirección de una variable que recibe el identificador del conjunto de [**comandos**](/windows/desktop/lwef/the-command-object) como valor predeterminado.</span><span class="sxs-lookup"><span data-stu-id="1c5d2-108">Address of a variable that receives the ID of the [**Command**](/windows/desktop/lwef/the-command-object) set as the default.</span></span>
+
+</dd> </dl>
+
+<span data-ttu-id="1c5d2-109">Esta propiedad devuelve el objeto de [**comando**](/windows/desktop/lwef/the-command-object) predeterminado actual en la colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .</span><span class="sxs-lookup"><span data-stu-id="1c5d2-109">This property returns the current default [**Command**](/windows/desktop/lwef/the-command-object) object in your [**Commands**](/windows/desktop/lwef/the-commands-collection-object) collection.</span></span> <span data-ttu-id="1c5d2-110">El comando predeterminado está en negrita en el menú emergente del carácter.</span><span class="sxs-lookup"><span data-stu-id="1c5d2-110">The default command is bold in the character's pop-up menu.</span></span> <span data-ttu-id="1c5d2-111">Sin embargo, el establecimiento del comando predeterminado no cambia el control de los comandos ni los eventos de doble clic.</span><span class="sxs-lookup"><span data-stu-id="1c5d2-111">However, setting the default command does not change command handling or double-click events.</span></span>
+
+<span data-ttu-id="1c5d2-112">Esta propiedad solo se aplica al uso de la aplicación cliente del carácter; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="1c5d2-112">This property applies only to your client application's use of the character; the setting does not affect other clients of the character or other characters of your client application.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="1c5d2-113">Consulte también</span><span class="sxs-lookup"><span data-stu-id="1c5d2-113">See Also</span></span>
+
+[<span data-ttu-id="1c5d2-114">**IAgentCommandsEx::SetDefaultID**</span><span class="sxs-lookup"><span data-stu-id="1c5d2-114">**IAgentCommandsEx::SetDefaultID**</span></span>](iagentcommandsex--setdefaultid.md)
+
+
+ 
+
+ 
