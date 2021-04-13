@@ -1,0 +1,332 @@
+---
+title: Cómo aplicar transformaciones 2D
+description: En este tema se muestra cómo aplicar transformaciones 2D a un visual mediante Microsoft DirectComposition.
+ms.assetid: DED74416-C85A-4220-89BD-3F9BEF786B7D
+keywords:
+- Cómo aplicar transformaciones bidimensionales de DirectComposition
+- Transformaciones bidimensionales de DirectComposition
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b52d2e0ce9fbb56547c42ea4ea18d57d173a7e40
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104421208"
+---
+# <a name="how-to-apply-2d-transforms"></a>Cómo aplicar transformaciones 2D
+
+> [!NOTE]
+> En el caso de las aplicaciones de Windows 10, se recomienda usar las API de Windows. UI. Composition en lugar de DirectComposition. Para obtener más información, consulte [modernice su aplicación de escritorio con el nivel de objetos visuales](/windows/uwp/composition/visual-layer-in-desktop-apps).
+
+En este tema se muestra cómo aplicar transformaciones 2D a un visual mediante Microsoft DirectComposition. En el ejemplo de este tema se aplica un grupo de transformaciones que:
+
+1.  Rote el visual en 180 grados.
+2.  Escale verticalmente el visual hasta tres veces su tamaño original.
+3.  Traduzca (mueva) el visual 150 píxeles a la derecha de su posición original.
+
+Las capturas de pantalla siguientes muestran el visual antes y después de aplicar las transformaciones 2D.
+
+![resultado de aplicar un grupo de transformaciones 2D a un visual](images/apply2dtransform.png)
+
+## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+
+### <a name="technologies"></a>Tecnologías
+
+-   [DirectComposition](directcomposition-portal.md)
+-   [Gráficos de Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
+-   [Infraestructura de gráficos de DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
+
+### <a name="prerequisites"></a>Requisitos previos
+
+-   C/C++
+-   Microsoft Win32
+-   Modelo de objetos componentes (COM)
+
+## <a name="instructions"></a>Instrucciones
+
+### <a name="step-1-initialize-directcomposition-objects"></a>Paso 1: inicializar objetos DirectComposition
+
+1.  Cree el objeto de dispositivo y el objeto de destino de composición.
+2.  Cree un visual, establezca su contenido y agréguelo al árbol visual.
+
+Para obtener más información, vea [cómo inicializar DirectComposition](initialize-directcomposition.md).
+
+### <a name="step-2-create-the-transform-group-array"></a>Paso 2: crear la matriz de grupos de transformación
+
+
+```C++
+IDCompositionTransform *pTransforms[3];
+```
+
+
+
+### <a name="step-3-create-the-transform-objects-set-their-properties-and-add-them-to-the-transform-group-array"></a>Paso 3: crear los objetos de transformación, establecer sus propiedades y agregarlas a la matriz de grupos de transformación
+
+1.  Use los métodos [**IDCompositionDevice:: CreateRotateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrotatetransform), [**:: CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform)y [**:: CreateTranslateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtranslatetransform) para crear los objetos de transformación.
+2.  Use las funciones miembro de las interfaces [**IDCompositionRotateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionrotatetransform), [**IDCompositionScaleTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionscaletransform)y [**IDCompositionTranslateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositiontranslatetransform) para establecer las propiedades de las transformaciones.
+3.  Copie los punteros de la interfaz de transformación en la matriz de grupos de transformaciones.
+
+
+```C++
+IDCompositionRotateTransform *pRotateTransform = nullptr;
+IDCompositionScaleTransform *pScaleTransform = nullptr;
+IDCompositionTranslateTransform *pTranslateTransform = nullptr;
+IDCompositionTransform *pTransformGroup = nullptr;
+
+// Create the rotate transform.
+hr = pDevice->CreateRotateTransform(&pRotateTransform);
+
+if (SUCCEEDED(hr))
+{
+    // Set the center of rotation to the center point of the visual.
+    hr = pRotateTransform->SetCenterX(BITMAP_WIDTH/2.0f);
+    
+    if (SUCCEEDED(hr)) {
+        hr = pRotateTransform->SetCenterY(BITMAP_HEIGHT/2.0f);
+    }
+
+    // Set the rotate angle to 180 degrees.
+    if (SUCCEEDED(hr)) {
+        hr = pRotateTransform->SetAngle(180.0f);
+    }
+
+    // Add the rotate transform to the transform group array.
+    pTransforms[0] = pRotateTransform;
+
+    // Create the scale transform.
+    if (SUCCEEDED(hr)) {
+        hr = pDevice->CreateScaleTransform(&pScaleTransform);
+    }
+}
+
+if (SUCCEEDED(hr))
+{
+    // Set the scaling origin to the upper-right corner of the visual.
+    hr = pScaleTransform->SetCenterX(0.0f);
+    if (SUCCEEDED(hr)) {
+        hr = pScaleTransform->SetCenterY(0.0f);
+    }
+
+    // Set the scaling factor to three for both the width and height. 
+    if (SUCCEEDED(hr)) {
+        hr = pScaleTransform->SetScaleX(3.0f);
+    }
+    if (SUCCEEDED(hr)) {
+        hr = pScaleTransform->SetScaleY(3.0f);
+    }
+
+    // Add the scale transform to the transform group array.
+    pTransforms[1] = pScaleTransform;
+
+    // Create the translate transform.
+    if (SUCCEEDED(hr)) {
+        hr = pDevice->CreateTranslateTransform(&pTranslateTransform);
+    }
+}
+
+if (SUCCEEDED(hr))
+{
+    // Move the visual 150 pixels to the right.
+    hr = pTranslateTransform->SetOffsetX(150.0f);
+    if (SUCCEEDED(hr)) {
+        hr = pTranslateTransform->SetOffsetY(0.0f);
+    }
+
+    // Add the translate transform to the transform group array.
+    pTransforms[2] = pTranslateTransform;
+}
+```
+
+
+
+### <a name="step-4-create-the-transform-group-object"></a>Paso 4: crear el objeto de grupo de transformación
+
+Llame al método [**IDCompositionDevice:: CreateTransformGroup**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtransformgroup) para crear el objeto de grupo de transformación.
+
+
+```C++
+if (SUCCEEDED(hr))
+{
+    // Create the transform group.
+    hr = pDevice->CreateTransformGroup(pTransforms, 3, &pTransformGroup);
+}
+```
+
+
+
+### <a name="step-5-apply-the-transform-group-object-to-the-visual"></a>Paso 5: aplicar el objeto de grupo de transformación al objeto visual
+
+Use el método [**IDCompositionVisual:: SetTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(constd2d_matrix_3x2_f_)) para asociar la propiedad transform del objeto visual con el objeto de grupo de transformación.
+
+
+```C++
+if (SUCCEEDED(hr))
+{
+    // Apply the transform group to the visual.
+    hr = pVisual->SetTransform(pTransformGroup);
+}
+```
+
+
+
+### <a name="step-6-commit-the-composition"></a>Paso 6: confirmar la composición
+
+Llame al método [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar las actualizaciones del visual para DirectComposition para su procesamiento. El resultado de aplicar el grupo de transformaciones 2D aparece en la ventana de destino.
+
+
+```C++
+if (SUCCEEDED(hr))
+{
+    // Commit the composition.
+    hr = pDevice->Commit();
+}
+```
+
+
+
+### <a name="step-7-free-the-directcomposition-objects"></a>Paso 7: liberación de los objetos DirectComposition
+
+Asegúrese de liberar el grupo de objetos de transformación 2D cuando ya no los necesite. En el ejemplo siguiente se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar los objetos de transformación.
+
+
+```C++
+// Release the transform objects.
+for (int i = 0; i < 3; i++)
+{
+    SafeRelease(&pTransforms[i]);
+}
+```
+
+
+
+Recuerde también que debe liberar el objeto de dispositivo, el objeto de destino de composición y los objetos visuales antes de salir de la aplicación.
+
+## <a name="complete-example"></a>Ejemplo completo
+
+
+```C++
+#define BITMAP_WIDTH  80.0
+#define BITMAP_HEIGHT 80.0
+
+HRESULT DemoApp::ApplyTransformGroup(IDCompositionDevice *pDevice, 
+                                     IDCompositionVisual *pVisual)
+{
+    HRESULT hr = S_OK;
+
+    if (pDevice == nullptr || pVisual == nullptr)
+        return E_INVALIDARG; 
+    
+    IDCompositionTransform *pTransforms[3];
+
+    IDCompositionRotateTransform *pRotateTransform = nullptr;
+    IDCompositionScaleTransform *pScaleTransform = nullptr;
+    IDCompositionTranslateTransform *pTranslateTransform = nullptr;
+    IDCompositionTransform *pTransformGroup = nullptr;
+
+    // Create the rotate transform.
+    hr = pDevice->CreateRotateTransform(&pRotateTransform);
+
+    if (SUCCEEDED(hr))
+    {
+        // Set the center of rotation to the center point of the visual.
+        hr = pRotateTransform->SetCenterX(BITMAP_WIDTH/2.0f);
+        
+        if (SUCCEEDED(hr)) {
+            hr = pRotateTransform->SetCenterY(BITMAP_HEIGHT/2.0f);
+        }
+
+        // Set the rotate angle to 180 degrees.
+        if (SUCCEEDED(hr)) {
+            hr = pRotateTransform->SetAngle(180.0f);
+        }
+
+        // Add the rotate transform to the transform group array.
+        pTransforms[0] = pRotateTransform;
+
+        // Create the scale transform.
+        if (SUCCEEDED(hr)) {
+            hr = pDevice->CreateScaleTransform(&pScaleTransform);
+        }
+    }
+
+    if (SUCCEEDED(hr))
+    {
+        // Set the scaling origin to the upper-right corner of the visual.
+        hr = pScaleTransform->SetCenterX(0.0f);
+        if (SUCCEEDED(hr)) {
+            hr = pScaleTransform->SetCenterY(0.0f);
+        }
+
+        // Set the scaling factor to three for both the width and height. 
+        if (SUCCEEDED(hr)) {
+            hr = pScaleTransform->SetScaleX(3.0f);
+        }
+        if (SUCCEEDED(hr)) {
+            hr = pScaleTransform->SetScaleY(3.0f);
+        }
+
+        // Add the scale transform to the transform group array.
+        pTransforms[1] = pScaleTransform;
+
+        // Create the translate transform.
+        if (SUCCEEDED(hr)) {
+            hr = pDevice->CreateTranslateTransform(&pTranslateTransform);
+        }
+    }
+
+    if (SUCCEEDED(hr))
+    {
+        // Move the visual 150 pixels to the right.
+        hr = pTranslateTransform->SetOffsetX(150.0f);
+        if (SUCCEEDED(hr)) {
+            hr = pTranslateTransform->SetOffsetY(0.0f);
+        }
+
+        // Add the translate transform to the transform group array.
+        pTransforms[2] = pTranslateTransform;
+    }
+
+    if (SUCCEEDED(hr))
+    {
+        // Create the transform group.
+        hr = pDevice->CreateTransformGroup(pTransforms, 3, &pTransformGroup);
+    }
+
+    if (SUCCEEDED(hr))
+    {
+        // Apply the transform group to the visual.
+        hr = pVisual->SetTransform(pTransformGroup);
+    }
+
+    if (SUCCEEDED(hr))
+    {
+        // Commit the composition.
+        hr = pDevice->Commit();
+    }
+
+    // Release the transform objects.
+    for (int i = 0; i < 3; i++)
+    {
+        SafeRelease(&pTransforms[i]);
+    }
+
+    // Release the transform group pointer.
+    SafeRelease(&pTransformGroup);
+
+    return hr;
+}
+```
+
+
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Transformaciones](transforms.md)
+</dt> </dl>
+
+ 
+
+ 
