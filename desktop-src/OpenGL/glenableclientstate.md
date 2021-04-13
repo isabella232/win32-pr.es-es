@@ -1,0 +1,162 @@
+---
+title: función glEnableClientState (GL. h)
+description: Las funciones glEnableClientState y glDisableClientState habilitan y deshabilitan las matrices, respectivamente. | función glEnableClientState (GL. h)
+ms.assetid: 02520f81-0b0d-4774-b1e2-713cf226347f
+keywords:
+- glEnableClientState (función) OpenGL
+topic_type:
+- apiref
+api_name:
+- glEnableClientState
+api_location:
+- Opengl32.dll
+api_type:
+- DllExport
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: e333a51d4c1fe0a5ff11c717790e03aa6d054a09
+ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "104362263"
+---
+# <a name="glenableclientstate-function"></a>glEnableClientState función)
+
+Las funciones **glEnableClientState** y [**glDisableClientState**](gldisableclientstate.md) habilitan y deshabilitan las matrices, respectivamente.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+void WINAPI glEnableClientState(
+   GLenum array
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*array* 
+</dt> <dd>
+
+Constante simbólica de la matriz que desea habilitar o deshabilitar. Este parámetro puede suponer uno de los valores siguientes.
+
+
+
+| Value                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                             |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span id="GL_COLOR_ARRAY"></span><span id="gl_color_array"></span><dl> <dt>**\_matriz de colores de GL \_**</dt> </dl>                          | Si está habilitada, use matrices de color con llamadas a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md).<br/> Vea también [**glColorPointer**](glcolorpointer.md).<br/>                    |
+| <span id="GL_EDGE_FLAG_ARRAY"></span><span id="gl_edge_flag_array"></span><dl> <dt>**\_matriz de \_ marcas de borde de GL \_**</dt> </dl>             | Si está habilitada, use matrices de marca perimetral con llamadas a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md).<br/> Vea también [**glEdgeFlagPointer**](gledgeflagpointer.md).<br/>          |
+| <span id="GL_INDEX_ARRAY"></span><span id="gl_index_array"></span><dl> <dt>**\_matriz de índice de GL \_**</dt> </dl>                          | Si está habilitada, use matrices de índice con llamadas a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md).<br/> Vea también [**glIndexPointer**](glindexpointer.md).<br/>                    |
+| <span id="GL_NORMAL_ARRAY"></span><span id="gl_normal_array"></span><dl> <dt>**\_matriz normal de contabilidad general \_**</dt> </dl>                       | Si está habilitada, use matrices normales con llamadas a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md).<br/> Vea también [**glNormalPointer**](glnormalpointer.md).<br/>                 |
+| <span id="GL_TEXTURE_COORD_ARRAY"></span><span id="gl_texture_coord_array"></span><dl> <dt>**\_matriz de \_ coordenadas de textura de GL \_**</dt> </dl> | Si está habilitada, use matrices de coordenadas de textura con llamadas a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md).<br/> Vea también [**glTexCoordPointer**](gltexcoordpointer.md).<br/> |
+| <span id="GL_VERTEX_ARRAY"></span><span id="gl_vertex_array"></span><dl> <dt>**\_matriz de vértices de GL \_**</dt> </dl>                       | Si está habilitada, use matrices de vértices con llamadas a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md).<br/> Vea también [**glVertexPointer**](glvertexpointer.md).<br/>                 |
+
+
+
+ 
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Esta función no devuelve ningún valor.
+
+## <a name="error-codes"></a>Códigos de error
+
+La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+
+
+
+| Nombre                                                                                             | Significado                                       |
+|--------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl> | la *matriz* no era un valor aceptado.<br/> |
+
+
+
+## <a name="remarks"></a>Observaciones
+
+Las funciones **glEnableClientState** y **glDisableClientState** habilitan y deshabilitan varias matrices individuales. Use [**glIsEnabled**](glisenabled.md) o [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) para determinar el valor actual de cualquier funcionalidad.
+
+La llamada a **glEnableClientState** y **glDisableClientState** entre llamadas a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md) puede producir un error. Si no se genera ningún error, el comportamiento es indefinido.
+
+> [!Note]  
+> Las funciones **glEnableClientState** y **glDisableClientState** solo están disponibles en la versión 1,1 o posterior de OpenGL.
+
+ 
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
+| Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
+| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[**glArrayElement**](glarrayelement.md)
+</dt> <dt>
+
+[**glBegin**](glbegin.md)
+</dt> <dt>
+
+[**glColorPointer**](glcolorpointer.md)
+</dt> <dt>
+
+[**glDisableClientState**](gldisableclientstate.md)
+</dt> <dt>
+
+[**glDrawArrays**](gldrawarrays.md)
+</dt> <dt>
+
+[**glDrawElements**](gldrawelements.md)
+</dt> <dt>
+
+[**glEdgeFlagPointer**](gledgeflagpointer.md)
+</dt> <dt>
+
+[**glEnable**](glenable.md)
+</dt> <dt>
+
+[**glEnd**](glend.md)
+</dt> <dt>
+
+[**glGetPointerv**](glgetpointerv.md)
+</dt> <dt>
+
+[**glIndexPointer**](glindexpointer.md)
+</dt> <dt>
+
+[**glInterleavedArrays**](glinterleavedarrays.md)
+</dt> <dt>
+
+[**glNormalPointer**](glnormalpointer.md)
+</dt> <dt>
+
+[**glTexCoordPointer**](gltexcoordpointer.md)
+</dt> <dt>
+
+[**glVertexPointer**](glvertexpointer.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
