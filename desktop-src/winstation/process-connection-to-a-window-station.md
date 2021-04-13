@@ -1,0 +1,40 @@
+---
+title: Proceso de conexión a una estación de ventana
+description: Un proceso establece automáticamente una conexión a una estación de ventana y un escritorio cuando llama por primera vez a una función USER32 o GDI32 (distinta de la estación de ventana y las funciones de escritorio).
+ms.assetid: 280f69e7-5c99-41a7-94e3-da13deaac9f5
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7a87e97b19ac1210b04447652268c5f53b7e2a6d
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104421134"
+---
+# <a name="process-connection-to-a-window-station"></a><span data-ttu-id="5de83-103">Proceso de conexión a una estación de ventana</span><span class="sxs-lookup"><span data-stu-id="5de83-103">Process Connection to a Window Station</span></span>
+
+<span data-ttu-id="5de83-104">Un proceso establece automáticamente una conexión a una estación de ventana y un escritorio cuando llama por primera vez a una función USER32 o GDI32 (distinta de la estación de ventana y las funciones de escritorio).</span><span class="sxs-lookup"><span data-stu-id="5de83-104">A process automatically establishes a connection to a window station and desktop when it first calls a USER32 or GDI32 function (other than the window station and desktop functions).</span></span> <span data-ttu-id="5de83-105">El sistema determina la estación de ventana a la que se conecta un proceso según las siguientes reglas:</span><span class="sxs-lookup"><span data-stu-id="5de83-105">The system determines the window station to which a process connects according to the following rules:</span></span>
+
+1.  <span data-ttu-id="5de83-106">Si el proceso ha llamado a la función [**SetProcessWindowStation**](/windows/win32/api/winuser/nf-winuser-setprocesswindowstation) , se conecta a la estación de ventana especificada en esa llamada.</span><span class="sxs-lookup"><span data-stu-id="5de83-106">If the process has called the [**SetProcessWindowStation**](/windows/win32/api/winuser/nf-winuser-setprocesswindowstation) function, it connects to the window station specified in that call.</span></span>
+2.  <span data-ttu-id="5de83-107">Si el proceso no llama a [**SetProcessWindowStation**](/windows/win32/api/winuser/nf-winuser-setprocesswindowstation), se conecta a la estación de ventana heredada del proceso primario.</span><span class="sxs-lookup"><span data-stu-id="5de83-107">If the process did not call [**SetProcessWindowStation**](/windows/win32/api/winuser/nf-winuser-setprocesswindowstation), it connects to the window station inherited from the parent process.</span></span>
+3.  <span data-ttu-id="5de83-108">Si el proceso no llama a [**SetProcessWindowStation**](/windows/win32/api/winuser/nf-winuser-setprocesswindowstation) y no heredó una estación de ventana, el sistema intenta abrir el acceso máximo \_ permitido y se conecta a una estación de ventana de la manera siguiente:</span><span class="sxs-lookup"><span data-stu-id="5de83-108">If the process did not call [**SetProcessWindowStation**](/windows/win32/api/winuser/nf-winuser-setprocesswindowstation) and did not inherit a window station, the system attempts to open for MAXIMUM\_ALLOWED access and connect to a window station as follows:</span></span>
+    -   <span data-ttu-id="5de83-109">Si se especificó un nombre de estación de ventana en el miembro **lpDesktop** de la estructura [**STARTUPINFO**](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa) que se usó cuando se creó el proceso, el proceso se conecta a la estación de ventana especificada.</span><span class="sxs-lookup"><span data-stu-id="5de83-109">If a window station name was specified in the **lpDesktop** member of the [**STARTUPINFO**](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa) structure that was used when the process was created, the process connects to the specified window station.</span></span>
+    -   <span data-ttu-id="5de83-110">De lo contrario, si el proceso se está ejecutando en la sesión de inicio de sesión del usuario interactivo, el proceso se conecta a la estación de ventana interactiva.</span><span class="sxs-lookup"><span data-stu-id="5de83-110">Otherwise, if the process is running in the logon session of the interactive user, the process connects to the interactive window station.</span></span>
+    -   <span data-ttu-id="5de83-111">Si el proceso se está ejecutando en una sesión de inicio de sesión no interactiva, el nombre de la estación de ventana se forma basándose en el identificador de la sesión de inicio de sesión y se realiza un intento de abrir esa estación de ventana.</span><span class="sxs-lookup"><span data-stu-id="5de83-111">If the process is running in a noninteractive logon session, the window station name is formed based on the logon session identifier and an attempt is made to open that window station.</span></span> <span data-ttu-id="5de83-112">Si se produce un error en la operación de apertura porque esta estación de ventana no existe, el sistema intenta crear la estación de ventana y un escritorio predeterminado.</span><span class="sxs-lookup"><span data-stu-id="5de83-112">If the open operation fails because this window station does not exist, the system tries to create the window station and a default desktop.</span></span>
+
+<span data-ttu-id="5de83-113">No se puede cerrar la estación de ventana asignada durante este proceso de conexión mediante una llamada a la función [**CloseWindowStation**](/windows/win32/api/winuser/nf-winuser-closewindowstation) .</span><span class="sxs-lookup"><span data-stu-id="5de83-113">The window station assigned during this connection process cannot be closed by calling the [**CloseWindowStation**](/windows/win32/api/winuser/nf-winuser-closewindowstation) function.</span></span>
+
+<span data-ttu-id="5de83-114">Cuando un proceso se conecta a una estación de ventana, el sistema busca identificadores heredados en la tabla de identificadores del proceso.</span><span class="sxs-lookup"><span data-stu-id="5de83-114">When a process is connecting to a window station, the system searches the process's handle table for inherited handles.</span></span> <span data-ttu-id="5de83-115">El sistema utiliza el primer identificador de la estación de ventana que encuentra.</span><span class="sxs-lookup"><span data-stu-id="5de83-115">The system uses the first window station handle it finds.</span></span> <span data-ttu-id="5de83-116">Si desea que un proceso secundario se conecte a una estación de ventana heredada determinada, debe asegurarse de que solo el identificador deseado esté marcado como heredable.</span><span class="sxs-lookup"><span data-stu-id="5de83-116">If you want a child process to connect to a particular inherited window station, you must ensure that only the desired handle is marked inheritable.</span></span> <span data-ttu-id="5de83-117">Si un proceso secundario hereda varios identificadores de estación de ventana, los resultados de la conexión de la estación de ventana son indefinidos.</span><span class="sxs-lookup"><span data-stu-id="5de83-117">If a child process inherits multiple window station handles, the results of the window station connection are undefined.</span></span>
+
+<span data-ttu-id="5de83-118">Los identificadores de una estación de ventana que el sistema abre mientras se conecta un proceso a una estación de ventana no se pueden heredar.</span><span class="sxs-lookup"><span data-stu-id="5de83-118">Handles to a window station that the system opens while connecting a process to a window station are not inheritable.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="5de83-119">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="5de83-119">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="5de83-120">Conexión de subprocesos a un escritorio</span><span class="sxs-lookup"><span data-stu-id="5de83-120">Thread Connection to a Desktop</span></span>](thread-connection-to-a-desktop.md)
+</dt> </dl>
+
+ 
+
+ 
