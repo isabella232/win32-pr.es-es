@@ -1,0 +1,40 @@
+---
+title: Tipo de datos IVgAdjustments de VML
+description: Tipo de datos IVgAdjustments de VML
+ms.assetid: d605632b-3ee2-44fd-8122-f38b1f91e965
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a29f85f93218db098ca247fa66b1f493e9c622a5
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104487879"
+---
+# <a name="vml-ivgadjustments-data-type"></a><span data-ttu-id="ad0df-103">Tipo de datos IVgAdjustments de VML</span><span class="sxs-lookup"><span data-stu-id="ad0df-103">VML IVgAdjustments Data Type</span></span>
+
+<span data-ttu-id="ad0df-104">En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="ad0df-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="ad0df-105">Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.</span><span class="sxs-lookup"><span data-stu-id="ad0df-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="ad0df-106">A partir del 2011 de diciembre, este tema se ha archivado.</span><span class="sxs-lookup"><span data-stu-id="ad0df-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="ad0df-107">Como resultado, ya no se mantiene de forma activa.</span><span class="sxs-lookup"><span data-stu-id="ad0df-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="ad0df-108">Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="ad0df-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="ad0df-109">Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="ad0df-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+
+ 
+
+<span data-ttu-id="ad0df-110">Colección de ajustes de una forma que se puede usar en las fórmulas.</span><span class="sxs-lookup"><span data-stu-id="ad0df-110">Collection of adjustments to a shape that can be used in formulas.</span></span> <span data-ttu-id="ad0df-111">Los ajustes se pueden usar como marcadores de posición temporales o, por cualquier motivo, se usarían variables.</span><span class="sxs-lookup"><span data-stu-id="ad0df-111">Adjustments can be used as temporary placeholders or for any reason you would use variables.</span></span> <span data-ttu-id="ad0df-112">Solo hay 8 ajustes en la colección.</span><span class="sxs-lookup"><span data-stu-id="ad0df-112">There are only 8 adjustments in the collection.</span></span>
+
+
+
+| <span data-ttu-id="ad0df-113">Atributos</span><span class="sxs-lookup"><span data-stu-id="ad0df-113">Attributes</span></span> | <span data-ttu-id="ad0df-114">Descripción</span><span class="sxs-lookup"><span data-stu-id="ad0df-114">Description</span></span>                                                                                                                                                                                                                                                                                                                            |
+|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ad0df-115">Length</span><span class="sxs-lookup"><span data-stu-id="ad0df-115">Length</span></span>     | <span data-ttu-id="ad0df-116">**Entero**.</span><span class="sxs-lookup"><span data-stu-id="ad0df-116">**Integer**.</span></span> <span data-ttu-id="ad0df-117">Número de ajustes.</span><span class="sxs-lookup"><span data-stu-id="ad0df-117">Number of adjustments.</span></span> <span data-ttu-id="ad0df-118">No puede ser mayor que 8.</span><span class="sxs-lookup"><span data-stu-id="ad0df-118">Can be no greater than 8.</span></span>                                                                                                                                                                                                                                                                          |
+| <span data-ttu-id="ad0df-119">Elemento</span><span class="sxs-lookup"><span data-stu-id="ad0df-119">Item</span></span>       | <span data-ttu-id="ad0df-120">**Largo**.</span><span class="sxs-lookup"><span data-stu-id="ad0df-120">**Long**.</span></span> <span data-ttu-id="ad0df-121">Matriz de ajustes indizada de 0 a 7.</span><span class="sxs-lookup"><span data-stu-id="ad0df-121">Array of adjustments indexed from 0 to 7.</span></span> <span data-ttu-id="ad0df-122">Tenga en cuenta que los ajustes pueden especificarse de SPARC. es decir, es posible que no siempre se rellenen los valores de matriz intermedios.</span><span class="sxs-lookup"><span data-stu-id="ad0df-122">Note that adjustments may be sparcely specified; that is, intermediate array values may not always be filled.</span></span> <span data-ttu-id="ad0df-123">Por ejemplo, los elementos 1, 3 y 5 podrían tener valores para una longitud de 3, con el elemento (0), el elemento (2) y el elemento (4) especificado.</span><span class="sxs-lookup"><span data-stu-id="ad0df-123">For example, item 1, 3, and 5 could have values for a length of 3, with item(0), item(2), and item(4) specified.</span></span> <span data-ttu-id="ad0df-124">Para ver si existe un elemento, utilice el atributo EXISTS.</span><span class="sxs-lookup"><span data-stu-id="ad0df-124">To see if an item exists, use the Exists attribute.</span></span> |
+| <span data-ttu-id="ad0df-125">Exists</span><span class="sxs-lookup"><span data-stu-id="ad0df-125">Exists</span></span>     | <span data-ttu-id="ad0df-126">**IVgTriState**.</span><span class="sxs-lookup"><span data-stu-id="ad0df-126">**IVgTriState**.</span></span> <span data-ttu-id="ad0df-127">Determina si existe un ajuste especificado.</span><span class="sxs-lookup"><span data-stu-id="ad0df-127">Determines whether a specified adjustment exists.</span></span> <span data-ttu-id="ad0df-128">Tenga en cuenta que se debe usar un índice; es decir, exists (Item) se debe usar para recuperar la existencia de un elemento.</span><span class="sxs-lookup"><span data-stu-id="ad0df-128">Note that an index must be used; that is, exists(item) must be used to retrieve the existence of an item.</span></span>                                                                                                                                                           |
+| <span data-ttu-id="ad0df-129">Value</span><span class="sxs-lookup"><span data-stu-id="ad0df-129">Value</span></span>      | <span data-ttu-id="ad0df-130">**Cadena**.</span><span class="sxs-lookup"><span data-stu-id="ad0df-130">**String**.</span></span> <span data-ttu-id="ad0df-131">Representación de texto de valores numéricos, con comas entre cada número.</span><span class="sxs-lookup"><span data-stu-id="ad0df-131">Text representation of numeric values, with commas between each number.</span></span>                                                                                                                                                                                                                                                    |
+
+
+
+ 
+
+ 
+
+ 

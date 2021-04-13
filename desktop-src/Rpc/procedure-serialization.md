@@ -1,0 +1,31 @@
+---
+title: Serialización de procedimientos
+description: Cuando se usa la serialización de procedimientos, un procedimiento se etiqueta con el atributo \ encode \ o \ decode \. En lugar de generar el código auxiliar remoto habitual, el compilador genera un código auxiliar de serialización para la rutina.
+ms.assetid: 98367b00-696b-44c4-a747-92ecac34ba1e
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 77696761a9aa5fe1471e9ebf24a57303b15d0ff3
+ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "104424144"
+---
+# <a name="procedure-serialization"></a><span data-ttu-id="c02a6-104">Serialización de procedimientos</span><span class="sxs-lookup"><span data-stu-id="c02a6-104">Procedure Serialization</span></span>
+
+<span data-ttu-id="c02a6-105">Cuando se utiliza la serialización de procedimientos, un procedimiento se etiqueta con el atributo de \[ [**codificación**](/windows/desktop/Midl/encode) \] o \[ [**descodificación**](/windows/desktop/Midl/decode) \] .</span><span class="sxs-lookup"><span data-stu-id="c02a6-105">When you use procedure serialization, a procedure is labeled with the \[[**encode**](/windows/desktop/Midl/encode)\] or \[[**decode**](/windows/desktop/Midl/decode)\] attribute.</span></span> <span data-ttu-id="c02a6-106">En lugar de generar el código auxiliar remoto habitual, el compilador genera un código auxiliar de serialización para la rutina.</span><span class="sxs-lookup"><span data-stu-id="c02a6-106">Instead of generating the usual remote stub, the compiler generates a serialization stub for the routine.</span></span>
+
+<span data-ttu-id="c02a6-107">Del mismo modo que un procedimiento remoto debe usar un identificador de enlace para realizar una llamada remota, un procedimiento de serialización debe utilizar un identificador de serialización para usar los servicios de serialización.</span><span class="sxs-lookup"><span data-stu-id="c02a6-107">Just as a remote procedure must use a binding handle to make a remote call, a serialization procedure must use a serialization handle to use serialization services.</span></span> <span data-ttu-id="c02a6-108">Si no se especifica un identificador de serialización, se utiliza un identificador implícito predeterminado para dirigir la llamada.</span><span class="sxs-lookup"><span data-stu-id="c02a6-108">If a serialization handle is not specified, a default implicit handle is used to direct the call.</span></span> <span data-ttu-id="c02a6-109">Por otro lado, si se especifica el identificador de serialización, ya sea como un [**argumento \_ de identificador**](/windows/desktop/Midl/handle-t) explícito de la rutina o mediante el \[ atributo de [**\_ identificador explícito**](/windows/desktop/Midl/explicit-handle) \] , debe pasar un identificador válido como argumento de la llamada.</span><span class="sxs-lookup"><span data-stu-id="c02a6-109">On the other hand, if the serialization handle is specified, either as an explicit [**handle\_t**](/windows/desktop/Midl/handle-t) argument of the routine or by using the \[[**explicit\_handle**](/windows/desktop/Midl/explicit-handle)\] attribute, you must pass a valid handle as an argument of the call.</span></span> <span data-ttu-id="c02a6-110">Para obtener información adicional sobre cómo crear un identificador de serialización válido, vea [identificadores de serialización](serialization-handles.md), [ejemplos de codificación de búfer fija](fixed-buffer-serialization.md)y [ejemplos de codificación incremental](examples-of-incremental-encoding.md).</span><span class="sxs-lookup"><span data-stu-id="c02a6-110">For additional information on how to create a valid serialization handle, see [Serialization Handles](serialization-handles.md), [Examples of Fixed Buffer Encoding](fixed-buffer-serialization.md), and [Examples of Incremental Encoding](examples-of-incremental-encoding.md).</span></span>
+
+> [!Note]
+> <span data-ttu-id="c02a6-111">Microsoft RPC permite mezclar procedimientos remotos y de serialización en una interfaz.</span><span class="sxs-lookup"><span data-stu-id="c02a6-111">Microsoft RPC allows remote and serialization procedures to be mixed in one interface.</span></span> <span data-ttu-id="c02a6-112">Sin embargo, tenga cuidado al hacerlo.</span><span class="sxs-lookup"><span data-stu-id="c02a6-112">However, use caution when doing so.</span></span>
+> 
+> <span data-ttu-id="c02a6-113">En el caso de los procedimientos remotos con identificadores de enlace implícitos, el compilador MIDL genera una variable de identificador global del identificador de tipo [**\_ t**](/windows/desktop/Midl/handle-t).</span><span class="sxs-lookup"><span data-stu-id="c02a6-113">For remote procedures with implicit binding handles, the MIDL compiler generates a global handle variable of type [**handle\_t**](/windows/desktop/Midl/handle-t).</span></span> <span data-ttu-id="c02a6-114">Los procedimientos y tipos con identificadores de serialización implícitos usan esta misma variable de identificador global.</span><span class="sxs-lookup"><span data-stu-id="c02a6-114">Procedures and types with implicit serialization handles use this same global handle variable.</span></span>
+> 
+> <span data-ttu-id="c02a6-115">En el caso de los identificadores implícitos, el identificador implícito global debe establecerse en un identificador de enlace válido antes de una llamada remota.</span><span class="sxs-lookup"><span data-stu-id="c02a6-115">For implicit handles, the global implicit handle must be set to a valid binding handle before a remote call.</span></span> <span data-ttu-id="c02a6-116">El identificador implícito debe establecerse en un identificador de serialización válido antes de una llamada de serialización.</span><span class="sxs-lookup"><span data-stu-id="c02a6-116">The implicit handle must be set to a valid serialization handle before a serialization call.</span></span> <span data-ttu-id="c02a6-117">Por lo tanto, un procedimiento no puede ser remoto ni serializado.</span><span class="sxs-lookup"><span data-stu-id="c02a6-117">Therefore, a procedure cannot be both remote and serialized.</span></span> <span data-ttu-id="c02a6-118">Debe ser uno u otro.</span><span class="sxs-lookup"><span data-stu-id="c02a6-118">It must be one or the other.</span></span>
+
+ 
+
+ 
+
+ 
