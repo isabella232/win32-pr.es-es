@@ -1,0 +1,40 @@
+---
+description: Constantes de SNATIVE de configuración regional \_ \*
+ms.assetid: 560978d7-a33c-4e62-9abd-cbd3ec38f3b5
+title: Constantes de LOCALE_SNATIVE *
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4eaa6942b6ed114e6cbabdb48ae55ba8f8d7bb43
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104279503"
+---
+# <a name="locale_snative-constants"></a><span data-ttu-id="b0617-103">Constantes de SNATIVE de configuración regional \_ \*</span><span class="sxs-lookup"><span data-stu-id="b0617-103">LOCALE\_SNATIVE\* Constants</span></span>
+
+<span data-ttu-id="b0617-104">En este tema se definen las constantes de SNATIVE de configuración regional \_ \* utilizadas por NLS para representar nombres de lenguajes nativos.</span><span class="sxs-lookup"><span data-stu-id="b0617-104">This topic defines the LOCALE\_SNATIVE\* constants used by NLS to represent native language names.</span></span>
+
+
+
+| <span data-ttu-id="b0617-105">Value</span><span class="sxs-lookup"><span data-stu-id="b0617-105">Value</span></span>                       | <span data-ttu-id="b0617-106">Significado</span><span class="sxs-lookup"><span data-stu-id="b0617-106">Meaning</span></span>                                                                                                                                                                                                                                                            |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="b0617-107">configuración regional \_ SNATIVECOUNTRYNAME</span><span class="sxs-lookup"><span data-stu-id="b0617-107">LOCALE\_SNATIVECOUNTRYNAME</span></span>  | <span data-ttu-id="b0617-108">**Windows 7 y versiones posteriores:** Nombre nativo del país o región, por ejemplo, España para España.</span><span class="sxs-lookup"><span data-stu-id="b0617-108">**Windows 7 and later:** Native name of the country/region, for example, España for Spain.</span></span> <span data-ttu-id="b0617-109">El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación.</span><span class="sxs-lookup"><span data-stu-id="b0617-109">The maximum number of characters allowed for this string is 80, including a terminating null character.</span></span>                                                                 |
+| <span data-ttu-id="b0617-110">configuración regional \_ SNATIVECTRYNAME</span><span class="sxs-lookup"><span data-stu-id="b0617-110">LOCALE\_SNATIVECTRYNAME</span></span>     | <span data-ttu-id="b0617-111">En desuso para Windows 7 y versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="b0617-111">Deprecated for Windows 7 and later.</span></span> <span data-ttu-id="b0617-112">Nombre nativo del país o región.</span><span class="sxs-lookup"><span data-stu-id="b0617-112">Native name of the country/region.</span></span> <span data-ttu-id="b0617-113">Consulte Configuración regional \_ SNATIVECOUNTRYNAME.</span><span class="sxs-lookup"><span data-stu-id="b0617-113">See LOCALE\_SNATIVECOUNTRYNAME.</span></span>                                                                                                                                                             |
+| <span data-ttu-id="b0617-114">configuración regional \_ SNATIVECURRNAME</span><span class="sxs-lookup"><span data-stu-id="b0617-114">LOCALE\_SNATIVECURRNAME</span></span>     | <span data-ttu-id="b0617-115">**Windows Me/98, windows 2000:** Nombre nativo de la moneda asociada a la configuración regional, en el idioma nativo de la configuración regional.</span><span class="sxs-lookup"><span data-stu-id="b0617-115">**Windows Me/98, Windows 2000:** The native name of the currency associated with the locale, in the native language of the locale.</span></span> <span data-ttu-id="b0617-116">No hay ningún límite en el número de caracteres permitidos para esta cadena.</span><span class="sxs-lookup"><span data-stu-id="b0617-116">There is no limit on the number of characters allowed for this string.</span></span>                                                          |
+| <span data-ttu-id="b0617-117">configuración regional \_ SNATIVEDIGITS</span><span class="sxs-lookup"><span data-stu-id="b0617-117">LOCALE\_SNATIVEDIGITS</span></span>       | <span data-ttu-id="b0617-118">Equivalentes nativos de ASCII 0 a 9.</span><span class="sxs-lookup"><span data-stu-id="b0617-118">Native equivalents of ASCII 0 through 9.</span></span> <span data-ttu-id="b0617-119">El número máximo de caracteres permitido para esta cadena es once, incluido un carácter nulo de terminación.</span><span class="sxs-lookup"><span data-stu-id="b0617-119">The maximum number of characters allowed for this string is eleven, including a terminating null character.</span></span> <span data-ttu-id="b0617-120">Por ejemplo, el árabe usa "012345 6789".</span><span class="sxs-lookup"><span data-stu-id="b0617-120">For example, Arabic uses "٠١٢٣٤٥ ٦٧٨٩".</span></span> <span data-ttu-id="b0617-121">Vea también [configuración regional \_ IDIGITSUBSTITUTION](locale-idigitsubstitution.md).</span><span class="sxs-lookup"><span data-stu-id="b0617-121">See also [LOCALE\_IDIGITSUBSTITUTION](locale-idigitsubstitution.md).</span></span> |
+| <span data-ttu-id="b0617-122">configuración regional \_ SNATIVEDISPLAYNAME</span><span class="sxs-lookup"><span data-stu-id="b0617-122">LOCALE\_SNATIVEDISPLAYNAME</span></span>  | <span data-ttu-id="b0617-123">**Windows 7 y versiones posteriores:** Nombre para mostrar de la configuración regional en su idioma nativo, por ejemplo, Deutsch (Deutschland) para la configuración regional alemán (Alemania).</span><span class="sxs-lookup"><span data-stu-id="b0617-123">**Windows 7 and later:** Display name of the locale in its native language, for example, Deutsch (Deutschland) for the locale German (Germany).</span></span> <br/>                                                                                                        |
+| <span data-ttu-id="b0617-124">configuración regional \_ SNATIVELANGNAME</span><span class="sxs-lookup"><span data-stu-id="b0617-124">LOCALE\_SNATIVELANGNAME</span></span>     | <span data-ttu-id="b0617-125">En desuso para Windows 7 y versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="b0617-125">Deprecated for Windows 7 and later.</span></span> <span data-ttu-id="b0617-126">Nombre nativo del idioma.</span><span class="sxs-lookup"><span data-stu-id="b0617-126">Native name of the language.</span></span> <span data-ttu-id="b0617-127">Consulte Configuración regional \_ SNATIVELANGUAGENAME.</span><span class="sxs-lookup"><span data-stu-id="b0617-127">See LOCALE\_SNATIVELANGUAGENAME.</span></span>                                                                                                                                                                  |
+| <span data-ttu-id="b0617-128">configuración regional \_ SNATIVELANGUAGENAME</span><span class="sxs-lookup"><span data-stu-id="b0617-128">LOCALE\_SNATIVELANGUAGENAME</span></span> | <span data-ttu-id="b0617-129">**Windows 7 y versiones posteriores:** Nombre nativo del idioma, por ejemplo, հայերեն para armenio (Armenia).</span><span class="sxs-lookup"><span data-stu-id="b0617-129">**Windows 7 and later:** Native name of the language, for example, Հայերեն for Armenian (Armenia).</span></span> <span data-ttu-id="b0617-130">El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación.</span><span class="sxs-lookup"><span data-stu-id="b0617-130">The maximum number of characters allowed for this string is 80, including a terminating null character.</span></span>                                                         |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
