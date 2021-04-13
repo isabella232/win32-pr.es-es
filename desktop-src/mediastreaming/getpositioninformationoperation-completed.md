@@ -1,0 +1,59 @@
+---
+title: Propiedad GetPositionInformationOperation. Completed
+description: Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetPositionInformationAsync.
+ms.assetid: 144065AE-6C23-4E9D-B9D0-6849E7FB74C4
+keywords:
+- Propiedad completada API de streaming de multimedia
+- Propiedad completada API de streaming multimedia, interfaz GetPositionInformationOperation
+- Interfaz GetPositionInformationOperation API de streaming de multimedia, propiedad Completed
+topic_type:
+- apiref
+api_name:
+- GetPositionInformationOperation.Completed
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: 90b4ed4a6402b8c7bfc1ee559bd0b43765a64cec
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104420681"
+---
+# <a name="getpositioninformationoperationcompleted-property"></a><span data-ttu-id="405a6-106">Propiedad GetPositionInformationOperation. Completed</span><span class="sxs-lookup"><span data-stu-id="405a6-106">GetPositionInformationOperation.Completed property</span></span>
+
+<span data-ttu-id="405a6-107">Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) .</span><span class="sxs-lookup"><span data-stu-id="405a6-107">Gets or sets an event handler that is invoked when the asynchronous operation started by [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) is completed.</span></span>
+
+<span data-ttu-id="405a6-108">Esta propiedad es de lectura y escritura.</span><span class="sxs-lookup"><span data-stu-id="405a6-108">This property is read/write.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="405a6-109">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="405a6-109">Syntax</span></span>
+
+
+```C++
+HRESULT put_Completed(
+  [in]  GetPositionInformationCompletedHandler *value
+);
+
+HRESULT get_Completed(
+  [out] GetPositionInformationCompletedHandler **value
+);
+```
+
+
+
+## <a name="property-value"></a><span data-ttu-id="405a6-110">Valor de propiedad</span><span class="sxs-lookup"><span data-stu-id="405a6-110">Property value</span></span>
+
+<span data-ttu-id="405a6-111">Controlador de eventos.</span><span class="sxs-lookup"><span data-stu-id="405a6-111">The event handler.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="405a6-112">Vea también</span><span class="sxs-lookup"><span data-stu-id="405a6-112">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="405a6-113">**GetPositionInformationOperation**</span><span class="sxs-lookup"><span data-stu-id="405a6-113">**GetPositionInformationOperation**</span></span>](getpositioninformationoperation.md)
+</dt> </dl>
+
+ 
+
+ 
