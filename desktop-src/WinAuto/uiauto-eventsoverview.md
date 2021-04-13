@@ -1,0 +1,67 @@
+---
+title: Información general sobre eventos de UI Automation
+description: La notificación de eventos de automatización de la interfaz de usuario de Microsoft es una característica clave para las tecnologías de asistencia, como los lectores de pantalla y los ampliadores de pantalla.
+ms.assetid: 0ded64ba-188e-427e-897f-4381237ace75
+keywords:
+- Automatización de la interfaz de usuario, información general sobre eventos
+- Automatización de la interfaz de usuario, categorías de eventos
+- Automatización de la interfaz de usuario, notificaciones de eventos
+- notificaciones de eventos
+- eventos, categorías
+- eventos, notificaciones de eventos
+- Eventos de cambio de propiedad
+- Eventos de acción de elemento
+- Eventos de cambio de estructura
+- Eventos de cambio de escritorio global
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e9ddd61ed72ae0e92a13f6b59b493427fd7be421
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104359020"
+---
+# <a name="ui-automation-events-overview"></a><span data-ttu-id="a343c-113">Información general sobre eventos de UI Automation</span><span class="sxs-lookup"><span data-stu-id="a343c-113">UI Automation Events Overview</span></span>
+
+<span data-ttu-id="a343c-114">La notificación de eventos de automatización de la interfaz de usuario de Microsoft es una característica clave para las tecnologías de asistencia, como los lectores de pantalla y los ampliadores de pantalla.</span><span class="sxs-lookup"><span data-stu-id="a343c-114">Microsoft UI Automation event notification is a key feature for assistive technologies, such as screen readers and screen magnifiers.</span></span> <span data-ttu-id="a343c-115">Estos clientes de automatización de la interfaz de usuario realizan el seguimiento de los eventos generados por los proveedores de UI Automation cuando sucede algo en la interfaz de usuario y usan la información para notificar a los usuarios finales.</span><span class="sxs-lookup"><span data-stu-id="a343c-115">These UI Automation clients track events that are raised by UI Automation providers when something happens in the UI and use the information to notify end users.</span></span>
+
+<span data-ttu-id="a343c-116">La eficacias se mejora gracias a que las aplicaciones proveedoras son capaces de generar los eventos de manera selectiva (en función de si hay clientes suscritos a esos eventos) o de no generarlos en absoluto (si no hay clientes a la escucha de eventos).</span><span class="sxs-lookup"><span data-stu-id="a343c-116">Efficiency is improved by allowing provider applications to raise events selectively, depending on whether any clients are subscribed to those events, or not at all, if no clients are listening for any events.</span></span>
+
+<span data-ttu-id="a343c-117">Los eventos de Automatización de la interfaz de usuario pueden clasificarse de la siguiente manera.</span><span class="sxs-lookup"><span data-stu-id="a343c-117">UI Automation events fall into the following categories.</span></span>
+
+
+
+| <span data-ttu-id="a343c-118">Categoría de eventos</span><span class="sxs-lookup"><span data-stu-id="a343c-118">Event Category</span></span>        | <span data-ttu-id="a343c-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="a343c-119">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="a343c-120">Cambio de propiedad</span><span class="sxs-lookup"><span data-stu-id="a343c-120">Property change</span></span>       | <span data-ttu-id="a343c-121">Se genera cuando cambia una propiedad en el patrón de control o elemento de automatización de la interfaz de usuario.</span><span class="sxs-lookup"><span data-stu-id="a343c-121">Raised when a property on UI Automation element or control pattern changes.</span></span> <span data-ttu-id="a343c-122">Por ejemplo, si un cliente necesita supervisar un control de casilla de la aplicación, se puede registrar para escuchar un evento de cambio de propiedad en la propiedad [**IUIAutomationTogglePattern:: CurrentToggleState**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtogglepattern-get_currenttogglestate) .</span><span class="sxs-lookup"><span data-stu-id="a343c-122">For example, if a client needs to monitor an application check box control, it can register to listen for a property change event on the [**IUIAutomationTogglePattern::CurrentToggleState**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtogglepattern-get_currenttogglestate) property.</span></span> <span data-ttu-id="a343c-123">Cuando el control de casilla se activa o desactiva, el proveedor genera el evento y el cliente puede actuar según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="a343c-123">When the check box control is checked or unchecked, the provider raises the event and the client can act as necessary.</span></span> |
+| <span data-ttu-id="a343c-124">Acción de elemento</span><span class="sxs-lookup"><span data-stu-id="a343c-124">Element action</span></span>        | <span data-ttu-id="a343c-125">Se genera cuando se produce un cambio en la interfaz de usuario de la actividad de usuario final o de programación, por ejemplo, cuando se hace clic en un botón o se invoca a través de [**IUIAutomationInvokePattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationinvokepattern).</span><span class="sxs-lookup"><span data-stu-id="a343c-125">Raised when a change in the UI results from end user or programmatic activity, for example, when a button is clicked or invoked through [**IUIAutomationInvokePattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationinvokepattern).</span></span>                                                                                                                                                                                                                                                     |
+| <span data-ttu-id="a343c-126">Cambio de estructura</span><span class="sxs-lookup"><span data-stu-id="a343c-126">Structure change</span></span>      | <span data-ttu-id="a343c-127">Se genera cuando cambia la estructura del árbol de automatización de la interfaz de usuario.</span><span class="sxs-lookup"><span data-stu-id="a343c-127">Raised when the structure of the UI Automation tree changes.</span></span> <span data-ttu-id="a343c-128">La estructura cambia cuando se hacen visibles, ocultan o quitan elementos nuevos de la interfaz de usuario en el escritorio.</span><span class="sxs-lookup"><span data-stu-id="a343c-128">The structure changes when new UI items become visible, hidden, or removed on the desktop.</span></span>                                                                                                                                                                                                                                                                                                              |
+| <span data-ttu-id="a343c-129">Cambio de escritorio global</span><span class="sxs-lookup"><span data-stu-id="a343c-129">Global desktop change</span></span> | <span data-ttu-id="a343c-130">Se genera cuando se producen acciones de interés global para el cliente, por ejemplo, cuando el foco cambia de un elemento a otro o cuando se cierra una ventana.</span><span class="sxs-lookup"><span data-stu-id="a343c-130">Raised when actions of global interest to the client occur, such as when the focus shifts from one element to another, or when a window closes.</span></span>                                                                                                                                                                                                                                                                                                                      |
+| <span data-ttu-id="a343c-131">notificación</span><span class="sxs-lookup"><span data-stu-id="a343c-131">Notification</span></span>          | <span data-ttu-id="a343c-132">Se genera cuando una aplicación llama a la función [**UiaRaiseNotificationEvent**](https://www.bing.com/search?q=**UiaRaiseNotificationEvent**) .</span><span class="sxs-lookup"><span data-stu-id="a343c-132">Raised when an app calls the [**UiaRaiseNotificationEvent**](https://www.bing.com/search?q=**UiaRaiseNotificationEvent**) function.</span></span> <span data-ttu-id="a343c-133">[**NotificationKind**](/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationkind) indica el tipo de notificación.</span><span class="sxs-lookup"><span data-stu-id="a343c-133">[**NotificationKind**](/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationkind) indicates the type of the notification.</span></span>                                                                                                                                                                                                                                                 |
+
+
+
+ 
+
+<span data-ttu-id="a343c-134">Algunos eventos no implican necesariamente un cambio en el estado de la UI.</span><span class="sxs-lookup"><span data-stu-id="a343c-134">Some events do not necessarily mean that the state of the UI has changed.</span></span> <span data-ttu-id="a343c-135">Por ejemplo, si el usuario realiza una pestaña en un campo de entrada de texto y, a continuación, hace clic en un botón para actualizar el campo, se genera un evento de [**\_ \_ TextChangedEventId de texto UIA**](uiauto-event-ids.md) , aunque el usuario no haya cambiado realmente el texto.</span><span class="sxs-lookup"><span data-stu-id="a343c-135">For example, if the user tabs to a text entry field, and then clicks a button to update the field, a [**UIA\_Text\_TextChangedEventId**](uiauto-event-ids.md) event is raised, even if the user did not actually change the text.</span></span> <span data-ttu-id="a343c-136">Al procesar un evento, puede ser necesario que la aplicación cliente compruebe si realmente se ha producido un cambio antes de realizar cualquier acción.</span><span class="sxs-lookup"><span data-stu-id="a343c-136">When processing an event, it may be necessary for a client application to check whether anything has actually changed before taking action.</span></span>
+
+<span data-ttu-id="a343c-137">Los siguientes eventos se pueden generar incluso si no cambia el estado de la UI.</span><span class="sxs-lookup"><span data-stu-id="a343c-137">The following events may be raised even when the state of the UI has not changed.</span></span>
+
+-   <span data-ttu-id="a343c-138">[**UIA \_ AutomationPropertyChangedEventId**](uiauto-event-ids.md) (dependiendo de la propiedad que ha cambiado)</span><span class="sxs-lookup"><span data-stu-id="a343c-138">[**UIA\_AutomationPropertyChangedEventId**](uiauto-event-ids.md) (depending on the property that has changed)</span></span>
+-   [<span data-ttu-id="a343c-139">**UIA \_ SelectionItem \_ ElementSelectedEventId**</span><span class="sxs-lookup"><span data-stu-id="a343c-139">**UIA\_SelectionItem\_ElementSelectedEventId**</span></span>](uiauto-event-ids.md)
+-   [<span data-ttu-id="a343c-140">**\_InvalidatedEventId de selección de UIA \_**</span><span class="sxs-lookup"><span data-stu-id="a343c-140">**UIA\_Selection\_InvalidatedEventId**</span></span>](uiauto-event-ids.md)
+-   [<span data-ttu-id="a343c-141">**\_TextChangedEventId de texto de UIA \_**</span><span class="sxs-lookup"><span data-stu-id="a343c-141">**UIA\_Text\_TextChangedEventId**</span></span>](uiauto-event-ids.md)
+
+<span data-ttu-id="a343c-142">Para obtener una descripción de todos los eventos de automatización de la interfaz de usuario, vea [identificadores de eventos](uiauto-event-ids.md).</span><span class="sxs-lookup"><span data-stu-id="a343c-142">For a description of all UI Automation events, see [Event Identifiers](uiauto-event-ids.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="a343c-143">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="a343c-143">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="a343c-144">Suscribirse a eventos de UI Automation</span><span class="sxs-lookup"><span data-stu-id="a343c-144">Subscribing to UI Automation Events</span></span>](uiauto-eventsforclients.md)
+</dt> </dl>
+
+ 
+
+ 
