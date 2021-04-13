@@ -1,0 +1,125 @@
+---
+title: MDM_Policy_Result01_Printers02 (clase)
+description: La \_ clase Result01 de la Directiva MDM \_ \_ Printers02 representa las directivas de impresora.
+ms.assetid: f64fbb03-c62c-4f8e-97ad-e08e068a31d1
+keywords:
+- MDM_Policy_Result01_Printers02 (clase)
+- MDM_Policy_Result01_Printers02 clase, descrita
+topic_type:
+- apiref
+api_name:
+- MDM_Policy_Result01_Printers02
+- MDM_Policy_Result01_Printers02.InstanceID
+- MDM_Policy_Result01_Printers02.ParentID
+api_location:
+- DMWmiBridgeProv.dll
+api_type:
+- DllExport
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 042820825441928aa04d499a06df3a05ced3889d
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104422047"
+---
+# <a name="mdm_policy_result01_printers02-class"></a>\_ \_ Clase Printers02 de Result01 de directivas MDM \_
+
+\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+
+La \_ clase Result01 de la Directiva MDM \_ \_ Printers02 representa las directivas de impresora.
+
+La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
+
+## <a name="syntax"></a>Sintaxis
+
+``` syntax
+[InPartition("local-system"), dynamic, provider("DMWmiBridgeProv")]
+class MDM_Policy_Result01_Printers02
+{
+  string InstanceID;
+  string ParentID;
+  string PointAndPrintRestrictions;
+  string PublishPrinters;
+};
+```
+
+## <a name="members"></a>Miembros
+
+La clase Result01 de la **\_ Directiva MDM \_ \_ Printers02** tiene estos tipos de miembros:
+
+-   [Propiedades](#properties)
+
+### <a name="properties"></a>Propiedades
+
+La **clase \_ \_ Result01 de \_ Printers02 de directivas MDM** tiene estas propiedades.
+
+<dl> <dt>
+
+**InstanceID**
+</dt> <dd> <dl> <dt>
+
+Tipo de datos: **cadena**
+</dt> <dt>
+
+Tipo de acceso: solo lectura
+</dt> <dt>
+
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+</dt> </dl>
+
+</dd> <dt>
+
+**ParentID**
+</dt> <dd> <dl> <dt>
+
+Tipo de datos: **cadena**
+</dt> <dt>
+
+Tipo de acceso: solo lectura
+</dt> <dt>
+
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+</dt> </dl>
+
+</dd> <dt>
+
+[PointAndPrintRestrictions](/windows/client-management/mdm/policy-csp-printers#printers-pointandprintrestrictions)
+</dt> <dd> <dl> <dt>
+
+Tipo de datos: **cadena**
+</dt> <dt>
+
+Tipo de acceso: lectura/escritura
+</dt> </dl>
+
+</dd> <dt>
+
+[PublishPrinters](/windows/client-management/mdm/policy-csp-printers#printers-publishprinters)
+</dt> <dd> <dl> <dt>
+
+Tipo de datos: **cadena**
+</dt> <dt>
+
+Tipo de acceso: lectura/escritura
+</dt> </dl>
+
+</dd> </dl>
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|------------------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
+| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
+
+
+
+ 
+
