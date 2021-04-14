@@ -1,0 +1,92 @@
+---
+description: Especifica el esquema de codificación.
+ms.assetid: a26951d6-67fb-43fb-849f-331416e9d7c2
+title: Propiedad AVEncCodecType (Codecapi. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 8643c0624b7d82381e2008f2adbd6804e9af9881
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104359998"
+---
+# <a name="avenccodectype-property"></a>Propiedad AVEncCodecType
+
+Especifica el esquema de codificación.
+
+Esta propiedad es de lectura y escritura.
+
+## <a name="data-type"></a>Tipo de datos
+
+**BSTR** (**VT \_ BSTR**)
+
+## <a name="property-guid"></a>GUID de propiedad
+
+**CODECAPI \_ AVEncCodecType**
+
+## <a name="property-value"></a>Valor de propiedad
+
+El valor de esta propiedad es un **BSTR** que contiene la representación de cadena de un GUID. Se definen los siguientes GUID.
+
+
+
+| GUID                                      | Descripción                                        |
+|-------------------------------------------|----------------------------------------------------|
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalConsumer | Audio Dolby Digital Consumer                       |
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalPlus     | Audio Dolby Digital Plus                           |
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalPro      | Audio Dolby Digital Pro                            |
+| CODECAPI \_ GUID \_ AVEncDTS                  | Audio DTS                                          |
+| CODECAPI \_ GUID \_ AVEncDTSHD                | DTS-audio de HD                                       |
+| CODECAPI \_ GUID \_ AVEncDV                   | Vídeo DV                                           |
+| CODECAPI \_ GUID \_ AVEncH264Video            | Vídeo H. 264                                        |
+| CODECAPI \_ GUID \_ AVEncMLP                  | Audio del paquete sin pérdida de Meridian (MLP)              |
+| CODECAPI \_ GUID \_ AVEncMPEG1Audio           | Audio MPEG-1                                       |
+| CODECAPI \_ GUID \_ AVEncMPEG1Video           | Vídeo MPEG-1                                       |
+| CODECAPI \_ GUID \_ AVEncMPEG2Audio           | Audio MPEG-2                                       |
+| CODECAPI \_ GUID \_ AVEncMPEG2Video           | Vídeo MPEG-2                                       |
+| CODECAPI \_ GUID \_ AVEncPCM                  | Audio PCM                                          |
+| CODECAPI \_ GUID \_ AVEncSDDS                 | Audio SONY Dynamic Digital Sound (SSD)            |
+| CODECAPI \_ GUID \_ AVEncWMALossless          | Audio sin pérdida de Windows Media Audio 9               |
+| CODECAPI \_ GUID \_ AVEncWMAPro               | Audio de Windows Media Audio 9 Professional (WMA Pro) |
+| CODECAPI \_ GUID \_ AVEncWMAVoice             | Audio de voz de Windows Media Audio 9                  |
+| CODECAPI \_ GUID \_ AVEncWMV                  | Windows Media Video                                |
+| CODECAPI \_ GUID \_ AVEndMPEG4Video           | Vídeo MPEG-4                                       |
+
+
+
+ 
+
+## <a name="remarks"></a>Observaciones
+
+Las aplicaciones pueden establecer esta propiedad para especificar el esquema de codificación que se va a utilizar. Los códecs también pueden devolver esta propiedad como una capacidad.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|---------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
+| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[Propiedades de la API de códec](codec-api-properties.md)
+</dt> <dt>
+
+[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
