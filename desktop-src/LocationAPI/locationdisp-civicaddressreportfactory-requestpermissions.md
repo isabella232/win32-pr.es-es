@@ -1,0 +1,79 @@
+---
+description: Abre un cuadro de diálogo de sistema para solicitar permiso de usuario para dispositivos habilitados para la ubicación.
+ms.assetid: b213591a-2830-4979-b532-e71cdef1b994
+title: LocationDisp. CivicAddressReportFactory. RequestPermissions, método
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- LocationDisp.CivicAddressReportFactory.RequestPermissions
+api_type:
+- COM
+api_location: ''
+ms.openlocfilehash: 6d027687302c544974d13b1ba50194e8d6003a94
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104361554"
+---
+# <a name="locationdispcivicaddressreportfactoryrequestpermissions-method"></a>LocationDisp. CivicAddressReportFactory. RequestPermissions, método
+
+\[El modelo de objetos de API de ubicación está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, para acceder a la ubicación desde un sitio web, use la [API de geolocalización del W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acceder a la ubicación desde una aplicación de escritorio, use la API [**Windows. Devices. geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+
+Abre un cuadro de diálogo de sistema para solicitar permiso de usuario para dispositivos habilitados para la ubicación.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```JScript
+LocationDisp.CivicAddressReportFactory.RequestPermissions(
+  hWnd
+)
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*hWnd* 
+</dt> <dd>
+
+Este parámetro no se utiliza y debe establecerse en cero.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Este método no devuelve ningún valor.
+
+## <a name="remarks"></a>Observaciones
+
+La llamada es sincrónica y el autor de la llamada espera a que se cierre el cuadro de diálogo.
+
+> [!Note]  
+> Si una aplicación que se ejecuta en modo protegido, como un objeto auxiliar de explorador (BHO) de Internet Explorer, llama a **RequestPermissions** y el usuario elige la opción **no habilitar este sensor de ubicación** en el cuadro de diálogo, el proveedor de ubicación no se habilitará, pero Windows volverá a mostrar el cuadro de diálogo si el mismo usuario llama a **RequestPermissions** de nuevo. Las aplicaciones que se ejecutan en modo protegido pueden optar por no llamar a [**RequestPermissions**](/windows/win32/api/locationapi/nf-locationapi-ilocation-requestpermissions) en el inicio para que el usuario no vea un cuadro de diálogo posiblemente no deseado cada vez que se inicie la aplicación.
+
+ 
+
+## <a name="examples"></a>Ejemplos
+
+Para obtener un ejemplo de cómo usar este método, consulte [escucha de eventos de informe de direcciones cívica](/uwp/api/Windows.Devices.Geolocation).
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|--------------------------------------------|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/> |
+| Servidor mínimo compatible<br/> | No se admite ninguno<br/>                  |
+
+
+
+ 
+
