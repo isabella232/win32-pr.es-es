@@ -1,0 +1,69 @@
+---
+description: La función RegOpenUserClassesRoot proporciona una vista combinada para los procesos, como los servicios, que se ocupan de los clientes que no son el usuario interactivo.
+ms.assetid: 3815d487-2d58-4ba8-85d2-cae6a642a791
+title: Vista combinada de HKEY_CLASSES_ROOT
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b8597db976922db9ca348488b0092c41ba7c7489
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105668445"
+---
+# <a name="merged-view-of-hkey_classes_root"></a><span data-ttu-id="e100e-103">Vista combinada de la \_ raíz de las clases HKEY \_</span><span class="sxs-lookup"><span data-stu-id="e100e-103">Merged View of HKEY\_CLASSES\_ROOT</span></span>
+
+<span data-ttu-id="e100e-104">La función [**RegOpenUserClassesRoot**](/windows/desktop/api/Winreg/nf-winreg-regopenuserclassesroot) proporciona una vista combinada para los procesos, como los servicios, que se ocupan de los clientes que no son el usuario interactivo.</span><span class="sxs-lookup"><span data-stu-id="e100e-104">The [**RegOpenUserClassesRoot**](/windows/desktop/api/Winreg/nf-winreg-regopenuserclassesroot) function provides a merged view for processes, such as services, that are dealing with clients other than the interactive user.</span></span> <span data-ttu-id="e100e-105">En este caso, la **clave \_ \_ raíz de las clases HKEY** proporciona una vista del registro que combina la información de **\_ \_ \\ \\ las clases de software del equipo local HKEY** con la información de **\_ \_ \\ \\ las clases de software de usuario actuales de HKEY**.</span><span class="sxs-lookup"><span data-stu-id="e100e-105">In this case, the **HKEY\_CLASSES\_ROOT** key provides a view of the registry that merges the information from **HKEY\_LOCAL\_MACHINE\\Software\\Classes** with the information from **HKEY\_CURRENT\_USER\\Software\\Classes**.</span></span>
+
+<span data-ttu-id="e100e-106">El sistema utiliza las siguientes reglas para combinar información de los dos orígenes:</span><span class="sxs-lookup"><span data-stu-id="e100e-106">The system uses the following rules to merge information from the two sources:</span></span>
+
+-   <span data-ttu-id="e100e-107">La vista combinada incluye todas las subclaves de la clave **HKEY \_ Current \_ User \\ \\ classes** .</span><span class="sxs-lookup"><span data-stu-id="e100e-107">The merged view includes all subkeys of the **HKEY\_CURRENT\_USER\\Software\\Classes** key.</span></span>
+-   <span data-ttu-id="e100e-108">La vista combinada incluye todas las subclaves inmediatas de la clave **HKEY \_ local \_ Machine \\ software \\ classes** que no duplican las subclaves de **\_ \_ \\ \\ las clases de software de usuario actuales de HKEY**.</span><span class="sxs-lookup"><span data-stu-id="e100e-108">The merged view includes all immediate subkeys of the **HKEY\_LOCAL\_MACHINE\\Software\\Classes** key that do not duplicate the subkeys of **HKEY\_CURRENT\_USER\\Software\\Classes**.</span></span>
+-   <span data-ttu-id="e100e-109">Al final de este tema encontrará una lista de las subclaves que se encuentran en las clases **HKEY \_ local \_ Machine \\ software \\ classes** y **HKEY \_ Current \_ User \\ \\ classes**.</span><span class="sxs-lookup"><span data-stu-id="e100e-109">At the end of this topic is a list of subkeys that are found in both **HKEY\_LOCAL\_MACHINE\\Software\\Classes** and **HKEY\_CURRENT\_USER\\Software\\Classes**.</span></span> <span data-ttu-id="e100e-110">Las subclaves inmediatas de estas claves del árbol de **\_ \_ máquina local HKEY** solo se incluyen en la vista combinada si no son duplicados de subclaves inmediatas del árbol de **\_ \_ usuarios actual de HKEY** .</span><span class="sxs-lookup"><span data-stu-id="e100e-110">The immediate subkeys of these keys from the **HKEY\_LOCAL\_MACHINE** tree are included in the merged view only if they are not duplicates of immediate subkeys from the **HKEY\_CURRENT\_USER** tree.</span></span> <span data-ttu-id="e100e-111">La vista combinada no incluye el contenido de **la \_ \_ máquina local HKEY** de las subclaves duplicadas.</span><span class="sxs-lookup"><span data-stu-id="e100e-111">The merged view does not include the **HKEY\_LOCAL\_MACHINE** contents of duplicate subkeys.</span></span>
+
+<span data-ttu-id="e100e-112">Si una aplicación se ejecuta con derechos de administrador y el control de cuentas de usuario está deshabilitado, el tiempo de ejecución de COM omite la configuración de COM por usuario y solo tiene acceso a la configuración COM por equipo.</span><span class="sxs-lookup"><span data-stu-id="e100e-112">If an application is run with administrator rights and User Account Control is disabled, the COM runtime ignores per-user COM configuration and accesses only per-machine COM configuration.</span></span> <span data-ttu-id="e100e-113">Las aplicaciones que requieren derechos de administrador deben registrar objetos COM dependientes durante la instalación en el almacén de configuración COM por equipo (**\_ clases de \_ \\ software \\ de máquina local HKEY**).</span><span class="sxs-lookup"><span data-stu-id="e100e-113">Applications that require administrator rights should register dependent COM objects during installation to the per-machine COM configuration store (**HKEY\_LOCAL\_MACHINE\\Software\\Classes**).</span></span> <span data-ttu-id="e100e-114">Para obtener más información, vea [AC: UAC: COM Per-User configuración](/previous-versions/bb756926(v=msdn.10)).</span><span class="sxs-lookup"><span data-stu-id="e100e-114">For more information, see [AC: UAC: COM Per-User Configuration](/previous-versions/bb756926(v=msdn.10)).</span></span>
+
+<span data-ttu-id="e100e-115">**Windows Server 2003 y Windows XP/2000:** Las aplicaciones pueden registrar objetos COM dependientes en el almacén de configuración COM por equipo o por usuario **( \_ \_ clases de \\ software \\ de máquina local HKEY** o **\_ \_ \\ \\ clases de software de usuario actual HKEY**).</span><span class="sxs-lookup"><span data-stu-id="e100e-115">**Windows Server 2003 and Windows XP/2000:** Applications can register dependent COM objects to either the per-machine or per-user COM configuration store (**HKEY\_LOCAL\_MACHINE\\Software\\Classes** or **HKEY\_CURRENT\_USER\\Software\\Classes**).</span></span>
+
+<span data-ttu-id="e100e-116">En el ejemplo siguiente se muestra un conjunto de subclaves de la **\_ \_ máquina local HKEY** y las claves de **\_ \_ usuario actuales HKEY** y la vista combinada resultante de **\_ las clases HKEY \_ root**.</span><span class="sxs-lookup"><span data-stu-id="e100e-116">The following example shows a set of subkeys under the **HKEY\_LOCAL\_MACHINE** and **HKEY\_CURRENT\_USER** keys and the resulting merged view of **HKEY\_CLASSES\_ROOT**.</span></span>
+
+<span data-ttu-id="e100e-117">**HKEY \_ \_Clases de \\ software \\ de máquina local**    **CLSID**       *2*       *4*          **InProcServer32**          **LocalServer32**       *7*</span><span class="sxs-lookup"><span data-stu-id="e100e-117">**HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Classes**    **CLSID**       *2*       *4*          **inprocserver32**          **localserver32**       *7*</span></span>
+
+<span data-ttu-id="e100e-118">**HKEY \_ \_Clases de \\ software \\ de usuario actual**    **CLSID**       *1*       *4*          **LocalServer**       *6*       *10*          **LocalServer**</span><span class="sxs-lookup"><span data-stu-id="e100e-118">**HKEY\_CURRENT\_USER\\Software\\Classes**    **CLSID**       *1*       *4*          **localserver**       *6*       *10*          **localserver**</span></span>
+
+<span data-ttu-id="e100e-119">**HKEY \_ El CLSID \_ raíz de clases\*\*\*1**2**4\*\*\*InProcServer32\*\*\*\*LocalServer** de **LocalServer32\*\*\*6**7**10\*\*\*LocalServer**                                                                                      </span><span class="sxs-lookup"><span data-stu-id="e100e-119">**HKEY\_CLASSES\_ROOT**    **CLSID**       *1*       *2*       *4*          **inprocserver32**          **localserver**          **localserver32**       *6*       *7*       *10*          **localserver**</span></span>
+
+<span data-ttu-id="e100e-120">Las siguientes subclaves se encuentran en las clases **HKEY \_ local \_ Machine \\ software \\ classes** y **HKEY \_ Current \_ User \\ software \\ classes**.</span><span class="sxs-lookup"><span data-stu-id="e100e-120">The following subkeys are found in both **HKEY\_LOCAL\_MACHINE\\Software\\Classes** and **HKEY\_CURRENT\_USER\\Software\\Classes**.</span></span> <span data-ttu-id="e100e-121">En el árbol de **\_ \_ máquina local HKEY** , las subclaves inmediatas de estas claves se incluyen en la vista combinada solo si no son duplicados de las subclaves inmediatas del árbol de **\_ \_ usuarios actual de HKEY** .</span><span class="sxs-lookup"><span data-stu-id="e100e-121">From the **HKEY\_LOCAL\_MACHINE** tree, the immediate subkeys of these keys are included in the merged view only if they are not duplicates of immediate subkeys from the **HKEY\_CURRENT\_USER** tree.</span></span> <span data-ttu-id="e100e-122">La vista combinada no incluye el contenido de **la \_ \_ máquina local HKEY** de las subclaves duplicadas.</span><span class="sxs-lookup"><span data-stu-id="e100e-122">The merged view does not include the **HKEY\_LOCAL\_MACHINE** contents of duplicate subkeys.</span></span>
+
+<span data-ttu-id="e100e-123">**\**_ _*\*\\ shellex**</span><span class="sxs-lookup"><span data-stu-id="e100e-123">**\**_ _*\*\\shellex**</span></span>  
+<span data-ttu-id="e100e-124">**\*\\shellex \\ ContextMenuHandlers**</span><span class="sxs-lookup"><span data-stu-id="e100e-124">**\*\\shellex\\ContextMenuHandlers**</span></span>  
+<span data-ttu-id="e100e-125">**\*\\shellex \\ PropertySheetHandlers**</span><span class="sxs-lookup"><span data-stu-id="e100e-125">**\*\\shellex\\PropertySheetHandlers**</span></span>  
+<span data-ttu-id="e100e-126">**AppID**</span><span class="sxs-lookup"><span data-stu-id="e100e-126">**AppID**</span></span>  
+<span data-ttu-id="e100e-127">**ClsID**</span><span class="sxs-lookup"><span data-stu-id="e100e-127">**ClsID**</span></span>  
+<span data-ttu-id="e100e-128">**Categorías del componente**</span><span class="sxs-lookup"><span data-stu-id="e100e-128">**Component Categories**</span></span>  
+<span data-ttu-id="e100e-129">**Unidad**</span><span class="sxs-lookup"><span data-stu-id="e100e-129">**Drive**</span></span>  
+<span data-ttu-id="e100e-130">**Shellex de unidad \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-130">**Drive\\shellex**</span></span>  
+<span data-ttu-id="e100e-131">**Unidad \\ shellex \\ ContextMenuHandlers**</span><span class="sxs-lookup"><span data-stu-id="e100e-131">**Drive\\shellex\\ContextMenuHandlers**</span></span>  
+<span data-ttu-id="e100e-132">**Unidad \\ shellex \\ PropertySheetHandlers**</span><span class="sxs-lookup"><span data-stu-id="e100e-132">**Drive\\shellex\\PropertySheetHandlers**</span></span>  
+<span data-ttu-id="e100e-133">**FileType**</span><span class="sxs-lookup"><span data-stu-id="e100e-133">**FileType**</span></span>  
+<span data-ttu-id="e100e-134">**Carpeta**</span><span class="sxs-lookup"><span data-stu-id="e100e-134">**Folder**</span></span>  
+<span data-ttu-id="e100e-135">**Carpeta \\ shellex**</span><span class="sxs-lookup"><span data-stu-id="e100e-135">**Folder\\shellex**</span></span>  
+<span data-ttu-id="e100e-136">**Carpeta \\ shellex \\ ColumnHandler**</span><span class="sxs-lookup"><span data-stu-id="e100e-136">**Folder\\shellex\\ColumnHandler**</span></span>  
+<span data-ttu-id="e100e-137">**Carpeta \\ shellex \\ ContextMenuHandlers**</span><span class="sxs-lookup"><span data-stu-id="e100e-137">**Folder\\shellex\\ContextMenuHandlers**</span></span>  
+<span data-ttu-id="e100e-138">**Carpeta \\ shellex \\ ExtShellFolderViews**</span><span class="sxs-lookup"><span data-stu-id="e100e-138">**Folder\\shellex\\ExtShellFolderViews**</span></span>  
+<span data-ttu-id="e100e-139">**Carpeta \\ shellex \\ PropertySheetHandlers**</span><span class="sxs-lookup"><span data-stu-id="e100e-139">**Folder\\shellex\\PropertySheetHandlers**</span></span>  
+<span data-ttu-id="e100e-140">**Componentes del instalador \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-140">**Installer\\Components**</span></span>  
+<span data-ttu-id="e100e-141">**Características del instalador \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-141">**Installer\\Features**</span></span>  
+<span data-ttu-id="e100e-142">**Productos de instalador \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-142">**Installer\\Products**</span></span>  
+<span data-ttu-id="e100e-143">**Interfaz**</span><span class="sxs-lookup"><span data-stu-id="e100e-143">**Interface**</span></span>  
+<span data-ttu-id="e100e-144">**Mine**</span><span class="sxs-lookup"><span data-stu-id="e100e-144">**Mime**</span></span>  
+<span data-ttu-id="e100e-145">**\\Base de datos MIME**</span><span class="sxs-lookup"><span data-stu-id="e100e-145">**Mime\\Database**</span></span>  
+<span data-ttu-id="e100e-146">**\\Juego de caracteres de base de datos MIME \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-146">**Mime\\Database\\Charset**</span></span>  
+<span data-ttu-id="e100e-147">**\\Página de códigos de base de datos MIME \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-147">**Mime\\Database\\Codepage**</span></span>  
+<span data-ttu-id="e100e-148">**\\Tipo de contenido de base de datos MIME \\**</span><span class="sxs-lookup"><span data-stu-id="e100e-148">**Mime\\Database\\Content Type**</span></span>  
+<span data-ttu-id="e100e-149">**Typelib**</span><span class="sxs-lookup"><span data-stu-id="e100e-149">**Typelib**</span></span>  
+
+
+ 
+
+ 
