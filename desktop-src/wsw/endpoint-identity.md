@@ -1,0 +1,56 @@
+---
+title: Identidad de extremo
+description: Los tipos definidos en esta sección se usan para definir la identidad de seguridad de una dirección de extremo.
+ms.assetid: 39639b9a-32e2-44d2-9bda-a2ad23850de8
+keywords:
+- Servicios Web de identidad de extremo para Windows
+- WWSAPI
+- WWS
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 0a7a3f7b95d5fc1b926d8bafb49b06f96c7d68fe
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104418395"
+---
+# <a name="endpoint-identity"></a>Identidad de extremo
+
+Los tipos definidos en esta sección se usan para definir la identidad de seguridad de una dirección de extremo.
+
+Los elementos de la API siguientes forman parte de la sangría del punto de conexión:
+
+
+
+| Enumeración                                                       | Descripción                                                                                                                   |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [**\_tipo de \_ identidad de extremo WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_endpoint_identity_type) | El tipo de la identidad del punto de conexión, que se usa como selector para los subtipos de [**\_ \_ identidad del punto de conexión de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_identity). |
+
+
+
+ 
+
+
+
+| Estructura                                                               | Descripción                                                                                  |
+|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| [**\_identidad del \_ punto de conexión de certificado WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_endpoint_identity)       | El tipo de la identidad del punto de conexión del certificado.                                                 |
+| [**\_identidad del \_ punto de conexión DNS de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_dns_endpoint_identity)         | Tipo para especificar una identidad de extremo representada por un nombre DNS.                      |
+| [**\_identidad del extremo de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_identity)                  | El tipo base para todas las identidades de extremo.                                                   |
+| [**\_identidad del \_ punto de conexión RSA de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_rsa_endpoint_identity)         | Tipo de identidad de extremo RSA.                                                              |
+| [**identidad del extremo de WS \_ SPN \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_spn_endpoint_identity)         | Tipo para especificar una identidad de extremo representada por un SPN (nombre de entidad de seguridad de servicio). |
+| [**\_identidad de \_ extremo \_ desconocido de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_unknown_endpoint_identity) | El tipo para una identidad de extremo desconocida.                                                   |
+| [**\_identidad del \_ extremo de UPN de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_upn_endpoint_identity)         | Tipo para especificar una identidad de extremo representada por un UPN (nombre principal de usuario).     |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
