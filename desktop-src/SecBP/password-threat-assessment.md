@@ -1,0 +1,42 @@
+---
+description: Antes de implementar el código que protege las contraseñas, es mejor analizar su entorno concreto para conocer las maneras en las que un atacante podría intentar penetrar las defensas de software.
+ms.assetid: 4ebf7185-0179-4754-80da-63b0002c883f
+title: Evaluación de amenazas de contraseñas
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d48a79d44bda9714083c5dd1085e9d09497e7341
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105669831"
+---
+# <a name="password-threat-assessment"></a><span data-ttu-id="13fe6-103">Evaluación de amenazas de contraseñas</span><span class="sxs-lookup"><span data-stu-id="13fe6-103">Password Threat Assessment</span></span>
+
+<span data-ttu-id="13fe6-104">Antes de implementar el código que protege las contraseñas, es mejor analizar su entorno concreto para conocer las maneras en las que un atacante podría intentar penetrar las defensas de software.</span><span class="sxs-lookup"><span data-stu-id="13fe6-104">Before implementing code that protects passwords, it is best to analyze your particular environment for ways that an attacker might try to penetrate software defenses.</span></span>
+
+<span data-ttu-id="13fe6-105">Empiece por analizar la arquitectura de red o del sistema.</span><span class="sxs-lookup"><span data-stu-id="13fe6-105">Start by analyzing your network or system architecture.</span></span> <span data-ttu-id="13fe6-106">Estos son algunos ejemplos:</span><span class="sxs-lookup"><span data-stu-id="13fe6-106">Here are some examples:</span></span>
+
+-   <span data-ttu-id="13fe6-107">El número de contraseñas que se deben proteger.</span><span class="sxs-lookup"><span data-stu-id="13fe6-107">The number of passwords that must be protected.</span></span> <span data-ttu-id="13fe6-108">¿Es necesaria una contraseña para iniciar sesión en el equipo local?</span><span class="sxs-lookup"><span data-stu-id="13fe6-108">Is a password required to log on to the local computer?</span></span> <span data-ttu-id="13fe6-109">¿Se usa la misma contraseña para iniciar sesión en la red?</span><span class="sxs-lookup"><span data-stu-id="13fe6-109">Is the same password used to log on to the network?</span></span> <span data-ttu-id="13fe6-110">¿Se propagan las contraseñas a más de un servidor de la red?</span><span class="sxs-lookup"><span data-stu-id="13fe6-110">Are passwords propagated to more than one server on the network?</span></span> <span data-ttu-id="13fe6-111">¿Cuántas contraseñas se deben acomodar?</span><span class="sxs-lookup"><span data-stu-id="13fe6-111">How many passwords must be accommodated?</span></span>
+-   <span data-ttu-id="13fe6-112">El tipo de red (si existe) que se va a usar.</span><span class="sxs-lookup"><span data-stu-id="13fe6-112">The kind of network (if any) that will be used.</span></span> <span data-ttu-id="13fe6-113">¿Se implementa la red mediante un sistema de directorio corporativo (como LDAP) y se usa su arquitectura de contraseña?</span><span class="sxs-lookup"><span data-stu-id="13fe6-113">Is the network implemented using a corporate directory system (such as LDAP), and is its password architecture used?</span></span> <span data-ttu-id="13fe6-114">¿Los objetos almacenan contraseñas sin cifrar?</span><span class="sxs-lookup"><span data-stu-id="13fe6-114">Are any objects storing unencrypted passwords?</span></span>
+-   <span data-ttu-id="13fe6-115">Red abierta frente a cerrada.</span><span class="sxs-lookup"><span data-stu-id="13fe6-115">Open versus closed network.</span></span> <span data-ttu-id="13fe6-116">¿La red es independiente o está abierta al exterior?</span><span class="sxs-lookup"><span data-stu-id="13fe6-116">Is the network self-contained or is it open to the outside?</span></span> <span data-ttu-id="13fe6-117">Si es así, ¿está protegido por un firewall?</span><span class="sxs-lookup"><span data-stu-id="13fe6-117">If so, is it protected by a firewall?</span></span>
+-   <span data-ttu-id="13fe6-118">Acceso remoto.</span><span class="sxs-lookup"><span data-stu-id="13fe6-118">Remote access.</span></span> <span data-ttu-id="13fe6-119">¿Los usuarios deberán tener acceso a la red desde una ubicación remota?</span><span class="sxs-lookup"><span data-stu-id="13fe6-119">Will users need to access the network from a remote location?</span></span>
+
+<span data-ttu-id="13fe6-120">Después de haber analizado el sistema o la arquitectura de red, puede empezar a analizar cómo un atacante podría intentar atacarlo.</span><span class="sxs-lookup"><span data-stu-id="13fe6-120">After you have analyzed your system or network architecture, then you can start to analyze how an attacker might try to attack it.</span></span> <span data-ttu-id="13fe6-121">Estas son algunas posibilidades:</span><span class="sxs-lookup"><span data-stu-id="13fe6-121">Here are some possibilities:</span></span>
+
+-   <span data-ttu-id="13fe6-122">Leer una contraseña no cifrada del registro de un equipo.</span><span class="sxs-lookup"><span data-stu-id="13fe6-122">Read an unencrypted password from a computer's registry.</span></span>
+-   <span data-ttu-id="13fe6-123">Lea una contraseña no cifrada que esté codificada de forma rígida en el software.</span><span class="sxs-lookup"><span data-stu-id="13fe6-123">Read an unencrypted password that is hard-coded in the software.</span></span>
+-   <span data-ttu-id="13fe6-124">Lea una contraseña no cifrada de la página de códigos de intercambio de un equipo.</span><span class="sxs-lookup"><span data-stu-id="13fe6-124">Read an unencrypted password from a computer's swapped-out code page.</span></span>
+-   <span data-ttu-id="13fe6-125">Leer una contraseña del registro de eventos de un programa.</span><span class="sxs-lookup"><span data-stu-id="13fe6-125">Read a password from a program's event log.</span></span>
+-   <span data-ttu-id="13fe6-126">Lea una contraseña de un esquema de servicio de directorio extendido de Microsoft Active Directory que tenga objetos que contengan una contraseña de texto sin formato.</span><span class="sxs-lookup"><span data-stu-id="13fe6-126">Read a password from an extended Microsoft Active Directory directory service schema that has objects that contain a plaintext password.</span></span>
+-   <span data-ttu-id="13fe6-127">Ejecutar un depurador en un programa que requiera una contraseña.</span><span class="sxs-lookup"><span data-stu-id="13fe6-127">Run a debugger on a program that requires a password.</span></span>
+-   <span data-ttu-id="13fe6-128">Adivinar una contraseña.</span><span class="sxs-lookup"><span data-stu-id="13fe6-128">Guess a password.</span></span> <span data-ttu-id="13fe6-129">Puede usarse cualquiera de las diversas técnicas.</span><span class="sxs-lookup"><span data-stu-id="13fe6-129">Any of several techniques might be used.</span></span> <span data-ttu-id="13fe6-130">Por ejemplo, el atacante podría conocer información personal sobre un usuario e intentar adivinar una contraseña de esa información (por ejemplo, el nombre de un cónyuge o socio o hijo).</span><span class="sxs-lookup"><span data-stu-id="13fe6-130">For example, the attacker might know some personal information about a user and try to guess a password from that information (for example, the name of a spouse/partner or child).</span></span> <span data-ttu-id="13fe6-131">O bien, se puede probar un método de fuerza bruta, donde se intentan todas las combinaciones de letras, números y signos de puntuación (solo es factible donde se usan contraseñas cortas).</span><span class="sxs-lookup"><span data-stu-id="13fe6-131">Or, a brute-force method might be tried, where all combinations of letters, numbers, and punctuation are tried (only feasible where short passwords are used).</span></span>
+
+<span data-ttu-id="13fe6-132">Comparar las posibles metodologías de ataque con la arquitectura de red o del sistema probablemente revelará riesgos de seguridad.</span><span class="sxs-lookup"><span data-stu-id="13fe6-132">Comparing the possible attack methodologies with system or network architecture will likely reveal security risks.</span></span> <span data-ttu-id="13fe6-133">En ese momento, se puede establecer un factor de riesgo para cada riesgo y los factores de riesgo se pueden usar para evaluar las correcciones.</span><span class="sxs-lookup"><span data-stu-id="13fe6-133">At that point, a risk factor can be established for each risk, and the risk factors can be used to triage fixes.</span></span>
+
+ 
+
+ 
+
+
+
