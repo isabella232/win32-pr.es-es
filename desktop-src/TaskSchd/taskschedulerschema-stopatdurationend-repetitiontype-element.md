@@ -1,0 +1,58 @@
+---
+title: Elemento StopAtDurationEnd (repetitionType)
+description: Especifica que las instancias en ejecución de la tarea se detienen al final de la duración del patrón de repetición.
+ms.assetid: 4e34b5b2-ac93-4951-9de4-3e89614517d1
+keywords:
+- Programador de tareas del elemento StopAtDurationEnd
+topic_type:
+- apiref
+api_name:
+- StopAtDurationEnd
+api_type:
+- Schema
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: a95f15f3a62d05b9bc28dc9f50b924979e2b748c
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "105676993"
+---
+# <a name="stopatdurationend-repetitiontype-element"></a>Elemento StopAtDurationEnd (repetitionType)
+
+Especifica que una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición. Esto solo es aplicable si se han establecido las repeticiones.
+
+``` syntax
+<xs:element name="StopAtDurationEnd"
+ type="boolean"
+ />
+```
+
+El elemento **StopAtDurationEnd** se define mediante el tipo complejo de [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) .
+
+## <a name="parent-element"></a>Elemento primario
+
+| Elemento | Derivado de | Descripción |
+|-|-|-|
+| [**Repetición**](taskschedulerschema-repetition-triggerbasetype-element.md) | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.<br/> |
+
+## <a name="remarks"></a>Observaciones
+
+Para el desarrollo de scripting, este valor se especifica mediante la propiedad [**RepetitionPattern. StopAtDurationEnd**](repetitionpattern-stopatdurationend.md) .
+
+En el desarrollo de C++, este valor se especifica mediante la propiedad [**IRepetitionPattern:: StopAtDurationEnd**](/windows/win32/api/taskschd/nf-taskschd-irepetitionpattern-get_stopatdurationend) .
+
+## <a name="requirements"></a>Requisitos
+
+| Requisito | Value |
+|-|-|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/> |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+
+## <a name="see-also"></a>Vea también
+
+[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+
+[Programador de tareas](task-scheduler-start-page.md)
