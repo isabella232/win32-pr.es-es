@@ -1,0 +1,49 @@
+---
+description: 'Normalmente, las aplicaciones de gráficos 3D usan dos tipos de sistemas de coordenadas cartesianos: zurdo y zurdo.'
+ms.assetid: 268c3024-85a5-4fd5-b575-e126dd4be97c
+title: Sistemas de coordenadas (Direct3D 9)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: bcb9fa389b2bf11bec9ee4f8053bbeb4c822f422
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105696098"
+---
+# <a name="coordinate-systems-direct3d-9"></a><span data-ttu-id="dfc3f-103">Sistemas de coordenadas (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="dfc3f-103">Coordinate Systems (Direct3D 9)</span></span>
+
+<span data-ttu-id="dfc3f-104">Normalmente, las aplicaciones de gráficos 3D usan dos tipos de sistemas de coordenadas cartesianos: zurdo y zurdo.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-104">Typically 3D graphics applications use two types of Cartesian coordinate systems: left-handed and right-handed.</span></span> <span data-ttu-id="dfc3f-105">En ambos sistemas de coordenadas, el eje x positivo apunta a la derecha y el eje y positivo apunta hacia arriba.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-105">In both coordinate systems, the positive x-axis points to the right, and the positive y-axis points up.</span></span> <span data-ttu-id="dfc3f-106">Puede recordar en qué dirección apunta el eje z positivo apuntando los dedos de la mano izquierda o derecha en la dirección x positiva y dirigiendolos en la dirección y positiva.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-106">You can remember which direction the positive z-axis points by pointing the fingers of either your left or right hand in the positive x-direction and curling them into the positive y-direction.</span></span> <span data-ttu-id="dfc3f-107">La dirección en la que se encuentra el punto de control, ya sea hacia delante o fuera, es la dirección en la que apunta el eje z positivo para ese sistema de coordenadas.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-107">The direction your thumb points, either toward or away from you, is the direction that the positive z-axis points for that coordinate system.</span></span> <span data-ttu-id="dfc3f-108">En la ilustración siguiente se muestran estos dos sistemas de coordenadas.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-108">The following illustration shows these two coordinate systems.</span></span>
+
+![Ilustración de los sistemas de coordenadas cartesiano de la izquierda y la mano derecha](images/leftrght.png)
+
+<span data-ttu-id="dfc3f-110">Direct3D usa un sistema de coordenadas de la mano izquierda.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-110">Direct3D uses a left-handed coordinate system.</span></span> <span data-ttu-id="dfc3f-111">Si va a migrar una aplicación que se basa en un sistema de coordenadas de la mano derecha, debe realizar dos cambios en los datos pasados a Direct3D.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-111">If you are porting an application that is based on a right-handed coordinate system, you must make two changes to the data passed to Direct3D.</span></span>
+
+-   <span data-ttu-id="dfc3f-112">Gire el orden de los vértices del triángulo para que el sistema los Recorra hacia la derecha desde la parte delantera.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-112">Flip the order of triangle vertices so that the system traverses them clockwise from the front.</span></span> <span data-ttu-id="dfc3f-113">En otras palabras, si los vértices son V0, V1, V2, páselo a Direct3D como V0, V2, v1.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-113">In other words, if the vertices are v0, v1, v2, pass them to Direct3D as v0, v2, v1.</span></span>
+-   <span data-ttu-id="dfc3f-114">Use la matriz de vista para escalar el espacio universal en-1 en la dirección z.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-114">Use the view matrix to scale world space by -1 in the z-direction.</span></span> <span data-ttu-id="dfc3f-115">Para ello, voltee el signo del \_ miembro 31, \_ 32, \_ 33 y \_ 34 de la estructura [**D3DMATRIX**](d3dmatrix.md) que usa para la matriz de la vista.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-115">To do this, flip the sign of the \_31, \_32, \_33, and \_34 member of the [**D3DMATRIX**](d3dmatrix.md) structure that you use for your view matrix.</span></span>
+
+<span data-ttu-id="dfc3f-116">Para obtener las cantidades que se van a usar en un mundo con una mano, use las funciones [**D3DXMatrixPerspectiveRH**](d3dxmatrixperspectiverh.md) y [**D3DXMatrixOrthoRH**](d3dxmatrixorthorh.md) para definir la transformación de proyección.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-116">To obtain what amounts to a right-handed world, use the [**D3DXMatrixPerspectiveRH**](d3dxmatrixperspectiverh.md) and [**D3DXMatrixOrthoRH**](d3dxmatrixorthorh.md) functions to define the projection transform.</span></span> <span data-ttu-id="dfc3f-117">Sin embargo, tenga cuidado de usar la función [**D3DXMatrixLookAtRH**](d3dxmatrixlookatrh.md) correspondiente, invierta el orden de selección de caras inversas y diseñe los mapas de cubos según corresponda.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-117">However, be careful to use the corresponding [**D3DXMatrixLookAtRH**](d3dxmatrixlookatrh.md) function, reverse the backface-culling order, and lay out the cube maps accordingly.</span></span>
+
+<span data-ttu-id="dfc3f-118">Aunque las coordenadas de la izquierda y la mano derecha son los sistemas más comunes, hay varios sistemas de coordenadas que se usan en el software 3D.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-118">Although left-handed and right-handed coordinates are the most common systems, there is a variety of other coordinate systems used in 3D software.</span></span> <span data-ttu-id="dfc3f-119">Por ejemplo, no es inusual que las aplicaciones de modelado 3D utilicen un sistema de coordenadas en el que el eje y apunte hacia el espectador o fuera de él, y el eje z apunta hacia arriba.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-119">For example, it is not unusual for 3D modeling applications to use a coordinate system in which the y-axis points toward or away from the viewer, and the z-axis points up.</span></span>
+
+<span data-ttu-id="dfc3f-120">Formalmente, la orientación de un conjunto de vectores de base (es decir, un sistema de coordenadas) puede encontrarse en el cálculo del determinante de la matriz definida por el conjunto determinado de vectores de base.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-120">Formally, the orientation of a set of basis vectors (i.e. a coordinate system) can be found by the computing the determinant of the matrix defined by the particular set of basis vectors.</span></span> <span data-ttu-id="dfc3f-121">Si el determinante es positivo, se dice que la base está "positiva" (o diestro).</span><span class="sxs-lookup"><span data-stu-id="dfc3f-121">If the determinant is positive, the basis is said to be "positively" oriented (or right-handed).</span></span> <span data-ttu-id="dfc3f-122">Si el determinante es negativo, se dice que la base está orientada negativamente (o diestro).</span><span class="sxs-lookup"><span data-stu-id="dfc3f-122">If the determinant is negative, the basis is said to be "negatively" oriented (or left-handed).</span></span> <span data-ttu-id="dfc3f-123">Para obtener una explicación de lo que es un determinante, consulte cualquier recurso de álgebra lineal.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-123">For an explanation of what a determinant is, see any linear algebra resource.</span></span>
+
+<span data-ttu-id="dfc3f-124">De manera informativa, puede usar la "regla de mano derecha/izquierda" para determinar si un conjunto determinado de vectores de base forma un sistema de coordenadas de la mano derecha o izquierda.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-124">Informally, you can use the "right/left hand rule" to determine if a given set of basis vectors form either a right or left handed coordinate system.</span></span>
+
+<span data-ttu-id="dfc3f-125">Las operaciones esenciales realizadas en los objetos definidos en un sistema de coordenadas 3D son la conversión, la rotación y el escalado.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-125">The essential operations performed on objects defined in a 3D coordinate system are translation, rotation, and scaling.</span></span> <span data-ttu-id="dfc3f-126">Puede combinar estas transformaciones básicas para crear una matriz de transformación.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-126">You can combine these basic transformations to create a transform matrix.</span></span> <span data-ttu-id="dfc3f-127">Para obtener más información, vea [transformaciones (Direct3D 9)](transforms.md).</span><span class="sxs-lookup"><span data-stu-id="dfc3f-127">For details, see [Transforms (Direct3D 9)](transforms.md).</span></span>
+
+<span data-ttu-id="dfc3f-128">Cuando se combinan estas operaciones, los resultados no son conmutables; el orden en el que se multiplican las matrices es importante.</span><span class="sxs-lookup"><span data-stu-id="dfc3f-128">When you combine these operations, the results are not commutative; the order in which you multiply matrices is important.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="dfc3f-129">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="dfc3f-129">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="dfc3f-130">Sistemas de coordenadas y geometría</span><span class="sxs-lookup"><span data-stu-id="dfc3f-130">Coordinate Systems and Geometry</span></span>](coordinate-systems-and-geometry.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
