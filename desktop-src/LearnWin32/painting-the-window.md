@@ -1,0 +1,79 @@
+---
+title: Pintar la ventana
+description: Ha creado la ventana. Ahora desea mostrar algo dentro de ella. En la terminología de Windows, esto se denomina pintar la ventana. Para mezclar metáforas, una ventana es un lienzo en blanco que espera a que se rellene.
+ms.assetid: db97a4c9-7592-42d1-a5de-9c468169eefc
+ms.topic: article
+ms.date: 08/16/2019
+ms.openlocfilehash: f0f9d5c2759ea1735e370eb258743364980daee8
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104558165"
+---
+# <a name="painting-the-window"></a><span data-ttu-id="bc870-106">Pintar la ventana</span><span class="sxs-lookup"><span data-stu-id="bc870-106">Painting the Window</span></span>
+
+<span data-ttu-id="bc870-107">Ha creado la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-107">You've created your window.</span></span> <span data-ttu-id="bc870-108">Ahora desea mostrar algo dentro de ella.</span><span class="sxs-lookup"><span data-stu-id="bc870-108">Now you want to show something inside it.</span></span> <span data-ttu-id="bc870-109">En la terminología de Windows, esto se denomina pintar la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-109">In Windows terminology, this is called painting the window.</span></span> <span data-ttu-id="bc870-110">Para mezclar metáforas, una ventana es un lienzo en blanco que espera a que se rellene.</span><span class="sxs-lookup"><span data-stu-id="bc870-110">To mix metaphors, a window is a blank canvas, waiting for you to fill it.</span></span>
+
+<span data-ttu-id="bc870-111">A veces, el programa iniciará el dibujo para actualizar la apariencia de la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-111">Sometimes your program will initiate painting to update the appearance of the window.</span></span> <span data-ttu-id="bc870-112">En otras ocasiones, el sistema operativo le notificará que debe volver a dibujar una parte de la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-112">At other times, the operating system will notify you that you must repaint a portion of the window.</span></span> <span data-ttu-id="bc870-113">Cuando esto ocurre, el sistema operativo envía a la ventana un mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) .</span><span class="sxs-lookup"><span data-stu-id="bc870-113">When this occurs, the operating system sends the window a [**WM\_PAINT**](/windows/desktop/gdi/wm-paint) message.</span></span> <span data-ttu-id="bc870-114">La parte de la ventana que se debe pintar se denomina *región de actualización*.</span><span class="sxs-lookup"><span data-stu-id="bc870-114">The portion of the window that must be painted is called the *update region*.</span></span>
+
+<span data-ttu-id="bc870-115">La primera vez que se muestra una ventana, se debe pintar todo el área cliente de la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-115">The first time a window is shown, the entire client area of the window must be painted.</span></span> <span data-ttu-id="bc870-116">Por lo tanto, siempre recibirá al menos un mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) al mostrar una ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-116">Therefore, you will always receive at least one [**WM\_PAINT**](/windows/desktop/gdi/wm-paint) message when you show a window.</span></span>
+
+![Ilustración en la que se muestra la región de actualización de una ventana](images/painting01.png)
+
+<span data-ttu-id="bc870-118">Solo es responsable de pintar el área de cliente.</span><span class="sxs-lookup"><span data-stu-id="bc870-118">You are only responsible for painting the client area.</span></span> <span data-ttu-id="bc870-119">El sistema operativo pinta automáticamente el marco circundante, incluida la barra de título.</span><span class="sxs-lookup"><span data-stu-id="bc870-119">The surrounding frame, including the title bar, is automatically painted by the operating system.</span></span> <span data-ttu-id="bc870-120">Una vez que haya terminado de pintar el área de cliente, desactive la región de actualización, que indica al sistema operativo que no necesita enviar otro mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) hasta que algo cambie.</span><span class="sxs-lookup"><span data-stu-id="bc870-120">After you finish painting the client area, you clear the update region, which tells the operating system that it does not need to send another [**WM\_PAINT**](/windows/desktop/gdi/wm-paint) message until something changes.</span></span>
+
+<span data-ttu-id="bc870-121">Ahora Supongamos que el usuario mueve otra ventana para ocultar una parte de la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-121">Now suppose the user moves another window so that it obscures a portion of your window.</span></span> <span data-ttu-id="bc870-122">Cuando la parte oscurecida vuelve a estar visible, esa parte se agrega a la región de actualización y la ventana recibe otro mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) .</span><span class="sxs-lookup"><span data-stu-id="bc870-122">When the obscured portion becomes visible again, that portion is added to the update region, and your window receives another [**WM\_PAINT**](/windows/desktop/gdi/wm-paint) message.</span></span>
+
+![Ilustración que muestra cómo cambia la región de actualización cuando dos ventanas se superponen](images/painting02.png)
+
+<span data-ttu-id="bc870-124">La región de actualización también cambia si el usuario estira la ventana.</span><span class="sxs-lookup"><span data-stu-id="bc870-124">The update region also changes if the user stretches the window.</span></span> <span data-ttu-id="bc870-125">En el diagrama siguiente, el usuario estira la ventana a la derecha.</span><span class="sxs-lookup"><span data-stu-id="bc870-125">In the following diagram, the user stretches the window to the right.</span></span> <span data-ttu-id="bc870-126">El área recién expuesta en el lado derecho de la ventana se agrega a la región de actualización:</span><span class="sxs-lookup"><span data-stu-id="bc870-126">The newly exposed area on the right side of the window is added to the update region:</span></span>
+
+![Ilustración que muestra cómo cambia la región de actualización cuando se cambia el tamaño de una ventana](images/painting03.png)
+
+<span data-ttu-id="bc870-128">En el primer programa de ejemplo, la rutina de pintado es muy sencilla.</span><span class="sxs-lookup"><span data-stu-id="bc870-128">In our first example program, the painting routine is very simple.</span></span> <span data-ttu-id="bc870-129">Simplemente rellena todo el área cliente con un color sólido.</span><span class="sxs-lookup"><span data-stu-id="bc870-129">It just fills the entire client area with a solid color.</span></span> <span data-ttu-id="bc870-130">Aun así, este ejemplo es suficiente para mostrar algunos de los conceptos importantes.</span><span class="sxs-lookup"><span data-stu-id="bc870-130">Still, this example is enough to demonstrate some of the important concepts.</span></span>
+
+```C++
+switch (uMsg)
+{
+    case WM_PAINT:
+    {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(hwnd, &ps);
+
+        // All painting occurs here, between BeginPaint and EndPaint.
+
+        FillRect(hdc, &ps.rcPaint, (HBRUSH) (COLOR_WINDOW+1));
+
+        EndPaint(hwnd, &ps);
+    }
+    return 0;
+}
+```
+
+<span data-ttu-id="bc870-131">Inicie la operación de dibujo llamando a la función [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) .</span><span class="sxs-lookup"><span data-stu-id="bc870-131">Start the painting operation by calling the [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) function.</span></span> <span data-ttu-id="bc870-132">Esta función rellena la estructura [**paintstruct (**](/windows/win32/api/winuser/ns-winuser-paintstruct) con información sobre la solicitud Repaint.</span><span class="sxs-lookup"><span data-stu-id="bc870-132">This function fills in the [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct) structure with information on the repaint request.</span></span> <span data-ttu-id="bc870-133">La región de actualización actual se proporciona en el miembro **rcPaint** de **paintstruct (**.</span><span class="sxs-lookup"><span data-stu-id="bc870-133">The current update region is given in the **rcPaint** member of **PAINTSTRUCT**.</span></span> <span data-ttu-id="bc870-134">Esta región de actualización se define en relación con el área de cliente:</span><span class="sxs-lookup"><span data-stu-id="bc870-134">This update region is defined relative to the client area:</span></span>
+
+![Ilustración que muestra el origen del área cliente](images/painting04.png)
+
+<span data-ttu-id="bc870-136">En el código de dibujo, tiene dos opciones básicas:</span><span class="sxs-lookup"><span data-stu-id="bc870-136">In your painting code, you have two basic options:</span></span>
+
+- <span data-ttu-id="bc870-137">Pinte todo el área cliente, independientemente del tamaño de la región de actualización.</span><span class="sxs-lookup"><span data-stu-id="bc870-137">Paint the entire client area, regardless of the size of the update region.</span></span> <span data-ttu-id="bc870-138">Se recorta todo lo que queda fuera de la región de actualización.</span><span class="sxs-lookup"><span data-stu-id="bc870-138">Anything that falls outside of the update region is clipped.</span></span> <span data-ttu-id="bc870-139">Es decir, el sistema operativo lo omite.</span><span class="sxs-lookup"><span data-stu-id="bc870-139">That is, the operating system ignores it.</span></span>
+- <span data-ttu-id="bc870-140">Optimice dibujando solo la parte de la ventana dentro de la región de actualización.</span><span class="sxs-lookup"><span data-stu-id="bc870-140">Optimize by painting just the portion of the window inside the update region.</span></span>
+
+<span data-ttu-id="bc870-141">Si siempre pinta el área de cliente completa, el código será más sencillo.</span><span class="sxs-lookup"><span data-stu-id="bc870-141">If you always paint the entire client area, the code will be simpler.</span></span> <span data-ttu-id="bc870-142">Sin embargo, si tiene una lógica de dibujo complicada, puede ser más eficaz omitir las áreas fuera de la región de actualización.</span><span class="sxs-lookup"><span data-stu-id="bc870-142">If you have complicated painting logic, however, it can be more efficient to skip the areas outside of the update region.</span></span>
+
+<span data-ttu-id="bc870-143">La siguiente línea de código rellena la región de actualización con un solo color, utilizando el color de fondo de la ventana definida por el sistema (**\_ ventana de color**).</span><span class="sxs-lookup"><span data-stu-id="bc870-143">The following line of code fills the update region with a single color, using the system-defined window background color (**COLOR\_WINDOW**).</span></span> <span data-ttu-id="bc870-144">El color real indicado por **la \_ ventana de color** depende de la combinación de colores actual del usuario.</span><span class="sxs-lookup"><span data-stu-id="bc870-144">The actual color indicated by **COLOR\_WINDOW** depends on the user's current color scheme.</span></span>
+
+```C++
+FillRect(hdc, &ps.rcPaint, (HBRUSH) (COLOR_WINDOW+1));
+```
+
+<span data-ttu-id="bc870-145">Los detalles de [**FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) no son importantes para este ejemplo, pero el segundo parámetro proporciona las coordenadas del rectángulo que se va a rellenar.</span><span class="sxs-lookup"><span data-stu-id="bc870-145">The details of [**FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) are not important for this example, but the second parameter gives the coordinates of the rectangle to fill.</span></span> <span data-ttu-id="bc870-146">En este caso, pasamos toda la región de actualización (el miembro **rcPaint** de [**paintstruct (**](/windows/win32/api/winuser/ns-winuser-paintstruct)).</span><span class="sxs-lookup"><span data-stu-id="bc870-146">In this case, we pass in the entire update region (the **rcPaint** member of [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct)).</span></span> <span data-ttu-id="bc870-147">En el primer mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) , es necesario pintar todo el área cliente, por lo que **rcPaint** contendrá todo el área cliente.</span><span class="sxs-lookup"><span data-stu-id="bc870-147">On the first [**WM\_PAINT**](/windows/desktop/gdi/wm-paint) message, the entire client area needs to be painted, so **rcPaint** will contain the entire client area.</span></span> <span data-ttu-id="bc870-148">En los mensajes de **\_ pintura de WM** posteriores, **rcPaint** podría contener un rectángulo más pequeño.</span><span class="sxs-lookup"><span data-stu-id="bc870-148">On subsequent **WM\_PAINT** messages, **rcPaint** might contain a smaller rectangle.</span></span>
+
+<span data-ttu-id="bc870-149">La función [**FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) forma parte de la interfaz de dispositivo gráfico (GDI), que ha alimentado los gráficos de Windows durante mucho tiempo.</span><span class="sxs-lookup"><span data-stu-id="bc870-149">The [**FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) function is part of the Graphics Device Interface (GDI), which has powered Windows graphics for a very long time.</span></span> <span data-ttu-id="bc870-150">En Windows 7, Microsoft presentó un nuevo motor de gráficos, denominado Direct2D, que admite operaciones de gráficos de alto rendimiento, como la aceleración de hardware.</span><span class="sxs-lookup"><span data-stu-id="bc870-150">In Windows 7, Microsoft introduced a new graphics engine, named Direct2D, which supports high-performance graphics operations, such as hardware acceleration.</span></span> <span data-ttu-id="bc870-151">Direct2D también está disponible para Windows Vista a través de la [actualización de la plataforma para Windows Vista](../win7ip/platform-update-for-windows-vista-overview.md) y windows Server 2008 a través de la actualización de la plataforma para windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="bc870-151">Direct2D is also available for Windows Vista through the [Platform Update for Windows Vista](../win7ip/platform-update-for-windows-vista-overview.md) and for Windows Server 2008 through the Platform Update for Windows Server 2008.</span></span> <span data-ttu-id="bc870-152">(La GDI sigue siendo totalmente compatible).</span><span class="sxs-lookup"><span data-stu-id="bc870-152">(GDI is still fully supported.)</span></span>
+
+<span data-ttu-id="bc870-153">Cuando haya terminado de pintar, llame a la función [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) .</span><span class="sxs-lookup"><span data-stu-id="bc870-153">After you are done painting, call the [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) function.</span></span> <span data-ttu-id="bc870-154">Esta función borra la región de actualización, que indica a Windows que la ventana ha finalizado su dibujo.</span><span class="sxs-lookup"><span data-stu-id="bc870-154">This function clears the update region, which signals to Windows that the window has completed painting itself.</span></span>
+
+## <a name="next"></a><span data-ttu-id="bc870-155">Siguientes</span><span class="sxs-lookup"><span data-stu-id="bc870-155">Next</span></span>
+
+[<span data-ttu-id="bc870-156">Cerrar la ventana</span><span class="sxs-lookup"><span data-stu-id="bc870-156">Closing the Window</span></span>](closing-the-window.md)

@@ -1,0 +1,115 @@
+---
+title: Cuadros de grupo
+description: Un cuadro de grupo es un marco rectangular con etiqueta que rodea un conjunto de controles relacionados. Un cuadro de grupo es una forma de mostrar las relaciones visualmente; Además de proporcionar una clave de acceso para un grupo de controles, no proporciona ninguna funcionalidad.
+ms.assetid: 5b5ffb36-3ed1-44cd-af87-5cddf46c56a6
+ms.topic: article
+ms.date: 10/20/2020
+ms.openlocfilehash: 67f930383f2d4412d30027971c6cab2bd3edcccd
+ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "104557699"
+---
+# <a name="group-boxes"></a><span data-ttu-id="9496a-104">Cuadros de grupo</span><span class="sxs-lookup"><span data-stu-id="9496a-104">Group Boxes</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="9496a-105">Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows.</span><span class="sxs-lookup"><span data-stu-id="9496a-105">This design guide was created for Windows 7 and has not been updated for newer versions of Windows.</span></span> <span data-ttu-id="9496a-106">Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).</span><span class="sxs-lookup"><span data-stu-id="9496a-106">Much of the guidance still applies in principle, but the presentation and examples do not reflect our [current design guidance](/windows/uwp/design/).</span></span>
+
+<span data-ttu-id="9496a-107">Un cuadro de grupo es un marco rectangular con etiqueta que rodea un conjunto de controles relacionados.</span><span class="sxs-lookup"><span data-stu-id="9496a-107">A group box is a labeled rectangular frame that surrounds a set of related controls.</span></span> <span data-ttu-id="9496a-108">Un cuadro de grupo es una forma de mostrar las relaciones visualmente; Además de proporcionar una clave de acceso para un grupo de controles, no proporciona ninguna funcionalidad.</span><span class="sxs-lookup"><span data-stu-id="9496a-108">A group box is a way to show relationships visually; aside from possibly providing an access key for a group of controls, it provides no functionality.</span></span>
+
+![<span data-ttu-id="9496a-109">captura de pantalla del cuadro de grupo que contiene casillas</span><span class="sxs-lookup"><span data-stu-id="9496a-109">screen shot of group box containing check boxes</span></span> ](images/ctrl-group-boxes-image1.png)
+
+<span data-ttu-id="9496a-110">Cuadro de grupo típico.</span><span class="sxs-lookup"><span data-stu-id="9496a-110">A typical group box.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="9496a-111">Las instrucciones relacionadas con el [diseño](vis-layout.md) se presentan en un artículo independiente.</span><span class="sxs-lookup"><span data-stu-id="9496a-111">Guidelines related to [layout](vis-layout.md) are presented in a separate article.</span></span>
+
+ 
+
+## <a name="is-this-the-right-control"></a><span data-ttu-id="9496a-112">¿Es este el control adecuado?</span><span class="sxs-lookup"><span data-stu-id="9496a-112">Is this the right control?</span></span>
+
+<span data-ttu-id="9496a-113">Aunque los cuadros de grupo son un medio visual seguro de indicar relaciones, si se sobreutilizan, se agrega confusión visual y se reduce en gran medida el espacio disponible en una superficie.</span><span class="sxs-lookup"><span data-stu-id="9496a-113">While group boxes are a strong visual means of indicating relationships, overusing them adds visual clutter and greatly reduces the space available on a surface.</span></span> <span data-ttu-id="9496a-114">Son visualmente pesadas y deben usarse con moderación, solo cuando no hay una solución mejor.</span><span class="sxs-lookup"><span data-stu-id="9496a-114">They are visually heavy and should be used sparingly—only when there isn't a better solution.</span></span>
+
+<span data-ttu-id="9496a-115">Una tendencia de diseño en Windows es un aspecto más sencillo y más limpio eliminando las líneas innecesarias.</span><span class="sxs-lookup"><span data-stu-id="9496a-115">A design trend in Windows is a simpler, cleaner appearance by eliminating unnecessary lines.</span></span>
+
+<span data-ttu-id="9496a-116">Para decidir si es necesario un cuadro de grupo, tenga en cuenta estas preguntas:</span><span class="sxs-lookup"><span data-stu-id="9496a-116">To decide whether a group box is necessary, consider these questions:</span></span>
+
+-   <span data-ttu-id="9496a-117">**¿Hay más de un control en el grupo?**</span><span class="sxs-lookup"><span data-stu-id="9496a-117">**Is there more than one control in the group?**</span></span> <span data-ttu-id="9496a-118">En caso contrario, utilice una etiqueta de texto sin formato.</span><span class="sxs-lookup"><span data-stu-id="9496a-118">If not, use a plain text label instead.</span></span> <span data-ttu-id="9496a-119">Una excepción poco frecuente es utilizar un cuadro de grupo con un solo control para mantener la coherencia con otros cuadros de grupo en la misma superficie.</span><span class="sxs-lookup"><span data-stu-id="9496a-119">A rare exception is to use a group box with a single control to maintain consistency with other group boxes on the same surface.</span></span>
+
+<span data-ttu-id="9496a-120">**Incorrecto:** ![ captura de pantalla del cuadro de grupo que contiene un cuadro de texto ](images/ctrl-group-boxes-image2.png)</span><span class="sxs-lookup"><span data-stu-id="9496a-120">**Incorrect:** ![screen shot of group box containing one text box ](images/ctrl-group-boxes-image2.png)</span></span>
+
+<span data-ttu-id="9496a-121">En este ejemplo, el cuadro de grupo tiene solo un control.</span><span class="sxs-lookup"><span data-stu-id="9496a-121">In this example, the group box has only a single control.</span></span>
+
+-   <span data-ttu-id="9496a-122">**¿Están relacionados los controles? ¿Muestra la relación agregar claridad?**</span><span class="sxs-lookup"><span data-stu-id="9496a-122">**Are the controls related? Does showing the relationship add clarity?**</span></span> <span data-ttu-id="9496a-123">En caso contrario, presente los controles por separado fuera de un cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-123">If not, present the controls separately outside of a group box.</span></span>
+-   <span data-ttu-id="9496a-124">**¿Todos los controles están dentro del grupo?**</span><span class="sxs-lookup"><span data-stu-id="9496a-124">**Are all the controls inside the group?**</span></span> <span data-ttu-id="9496a-125">Si es así, indique la relación en la superficie más grande, como la página o el cuadro de diálogo primario.</span><span class="sxs-lookup"><span data-stu-id="9496a-125">If so, indicate the relationship on the larger surface, such as the parent dialog box or page.</span></span>
+
+<span data-ttu-id="9496a-126">**Incorrecto:** ![ captura de pantalla del cuadro de grupo que contiene todos los controles ](images/ctrl-group-boxes-image3.png)</span><span class="sxs-lookup"><span data-stu-id="9496a-126">**Incorrect:** ![screen shot of group box containing all controls ](images/ctrl-group-boxes-image3.png)</span></span>
+
+<span data-ttu-id="9496a-127">En este ejemplo, todos los controles (aparte de los botones de confirmación) del cuadro de diálogo se encuentran dentro del cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-127">In this example, all the controls (aside from the commit buttons) in the dialog box are within the group box.</span></span>
+
+-   <span data-ttu-id="9496a-128">**¿Puede comunicarse de forma eficaz las relaciones usando solo el diseño?**</span><span class="sxs-lookup"><span data-stu-id="9496a-128">**Can you effectively communicate the relationships using layout alone?**</span></span> <span data-ttu-id="9496a-129">Si es así, utilice el [diseño](vis-layout.md) en su lugar.</span><span class="sxs-lookup"><span data-stu-id="9496a-129">If so, use [layout](vis-layout.md) instead.</span></span> <span data-ttu-id="9496a-130">Puede colocar controles relacionados junto a otros y colocar el espaciado adicional entre los controles no relacionados.</span><span class="sxs-lookup"><span data-stu-id="9496a-130">You can place related controls next to each other and put extra spacing between unrelated controls.</span></span> <span data-ttu-id="9496a-131">También puede usar los encabezados y la sangría para mostrar las relaciones jerárquicas.</span><span class="sxs-lookup"><span data-stu-id="9496a-131">You can also use headings and indenting to show hierarchical relationships.</span></span>
+
+![<span data-ttu-id="9496a-132">figura de cuatro iconos que muestran cuatro grupos de tareas</span><span class="sxs-lookup"><span data-stu-id="9496a-132">figure of four icons showing four groups of tasks</span></span> ](images/ctrl-group-boxes-image4.png)
+
+<span data-ttu-id="9496a-133">En este ejemplo, el diseño solo se usa para mostrar las relaciones de control.</span><span class="sxs-lookup"><span data-stu-id="9496a-133">In this example, layout alone is used to show control relationships.</span></span>
+
+-   <span data-ttu-id="9496a-134">**¿Puede comunicar eficazmente las relaciones mediante un separador?**</span><span class="sxs-lookup"><span data-stu-id="9496a-134">**Can you effectively communicate the relationships using a separator?**</span></span> <span data-ttu-id="9496a-135">En ese caso, utilice un separador en su lugar.</span><span class="sxs-lookup"><span data-stu-id="9496a-135">If so, use a separator instead.</span></span> <span data-ttu-id="9496a-136">Un separador es una línea horizontal que unifica los controles que hay debajo de él.</span><span class="sxs-lookup"><span data-stu-id="9496a-136">A separator is a horizontal line that unifies the controls below it.</span></span> <span data-ttu-id="9496a-137">Los separadores proporcionan un aspecto más sencillo y más limpio.</span><span class="sxs-lookup"><span data-stu-id="9496a-137">Separators provide a simpler, cleaner look.</span></span> <span data-ttu-id="9496a-138">Sin embargo, a diferencia de los cuadros de grupo, funcionan mejor cuando abarcan el ancho completo de la superficie.</span><span class="sxs-lookup"><span data-stu-id="9496a-138">However, unlike group boxes, they work best when they span the full width of the surface.</span></span>
+    -   <span data-ttu-id="9496a-139">**Desarrolladores:** Puede implementar un separador con un rectángulo grabado con un alto de uno.</span><span class="sxs-lookup"><span data-stu-id="9496a-139">**Developers:** You can implement a separator with an etched rectangle with a height of one.</span></span>
+
+![Captura de pantalla que muestra los controles de correo electrónico que se separan mediante separadores de rectángulo grabados.](images/ctrl-group-boxes-image5.png)
+
+<span data-ttu-id="9496a-141">En este ejemplo, se utilizan separadores etiquetados para mostrar las relaciones de control.</span><span class="sxs-lookup"><span data-stu-id="9496a-141">In this example, labeled separators are used to show control relationships.</span></span>
+
+![<span data-ttu-id="9496a-142">captura de pantalla de controles que se separan mediante separadores</span><span class="sxs-lookup"><span data-stu-id="9496a-142">screen shot of controls set apart by separators</span></span> ](images/ctrl-group-boxes-image6.png)
+
+<span data-ttu-id="9496a-143">En este ejemplo, se utilizan separadores sin etiquetar para mostrar las relaciones de control.</span><span class="sxs-lookup"><span data-stu-id="9496a-143">In this example, unlabeled separators are used to show control relationships.</span></span>
+
+-   <span data-ttu-id="9496a-144">**¿Puede comunicarse de forma eficaz las relaciones sin texto?**</span><span class="sxs-lookup"><span data-stu-id="9496a-144">**Can you effectively communicate the relationships without text?**</span></span> <span data-ttu-id="9496a-145">Si es así, considere la posibilidad de usar elementos gráficos como el [fondo](vis-graphic.md) o los agregadores.</span><span class="sxs-lookup"><span data-stu-id="9496a-145">If so, consider using graphic elements such as [backgrounds](vis-graphic.md) or aggregators.</span></span>
+
+## <a name="guidelines"></a><span data-ttu-id="9496a-146">Directrices</span><span class="sxs-lookup"><span data-stu-id="9496a-146">Guidelines</span></span>
+
+-   <span data-ttu-id="9496a-147">**No anide cuadros de grupo.**</span><span class="sxs-lookup"><span data-stu-id="9496a-147">**Don't nest group boxes.**</span></span> <span data-ttu-id="9496a-148">Use el diseño para mostrar las relaciones dentro de un cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-148">Use layout to show relationships within a group box.</span></span>
+
+<span data-ttu-id="9496a-149">**Incorrecto:** ![ captura de pantalla de un cuadro de grupo dentro de un cuadro de grupo ](images/ctrl-group-boxes-image7.png)</span><span class="sxs-lookup"><span data-stu-id="9496a-149">**Incorrect:** ![screen shot of a group box within a group box ](images/ctrl-group-boxes-image7.png)</span></span>
+
+<span data-ttu-id="9496a-150">En este ejemplo, los cuadros de grupo anidados producen un desorden visual innecesario.</span><span class="sxs-lookup"><span data-stu-id="9496a-150">In this example, the nested group boxes result in unnecessary visual clutter.</span></span>
+
+<span data-ttu-id="9496a-151">**Correcto:** ![ captura de pantalla de los mismos controles dentro de un cuadro de grupo ](images/ctrl-group-boxes-image8.png)</span><span class="sxs-lookup"><span data-stu-id="9496a-151">**Correct:** ![screen shot of same controls within one group box ](images/ctrl-group-boxes-image8.png)</span></span>
+
+<span data-ttu-id="9496a-152">En este ejemplo, se muestra la misma relación de control utilizando el diseño en su lugar.</span><span class="sxs-lookup"><span data-stu-id="9496a-152">In this example, the same control relationship is shown using layout instead.</span></span>
+
+-   <span data-ttu-id="9496a-153">No coloque controles en etiquetas de cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-153">Don't put controls in group box labels.</span></span>
+    -   <span data-ttu-id="9496a-154">**Excepción:** Puede utilizar una casilla de verificación como etiqueta de cuadro de grupo si todos los controles del cuadro están habilitados y deshabilitados por la casilla.</span><span class="sxs-lookup"><span data-stu-id="9496a-154">**Exception:** You can use a check box as a group box label if all of the controls inside the box are enabled and disabled by the check box.</span></span>
+
+<span data-ttu-id="9496a-155">**Incorrecto:** ![ captura de pantalla de la lista desplegable de una etiqueta de cuadro de grupo ](images/ctrl-group-boxes-image9.png)</span><span class="sxs-lookup"><span data-stu-id="9496a-155">**Incorrect:** ![screen shot of drop-down list on a group-box label ](images/ctrl-group-boxes-image9.png)</span></span>
+
+<span data-ttu-id="9496a-156">En este ejemplo, una lista desplegable se coloca incorrectamente en un cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-156">In this example, a drop-down list is incorrectly placed on a group box.</span></span> <span data-ttu-id="9496a-157">En su lugar, en este ejemplo se deben usar [pestañas](https://msdn.microsoft.com/library/windows/desktop/aa511493.aspx) .</span><span class="sxs-lookup"><span data-stu-id="9496a-157">This example should use [tabs](https://msdn.microsoft.com/library/windows/desktop/aa511493.aspx) instead.</span></span>
+
+-   <span data-ttu-id="9496a-158">**No deshabilite los cuadros de grupo.**</span><span class="sxs-lookup"><span data-stu-id="9496a-158">**Don't disable group boxes.**</span></span> <span data-ttu-id="9496a-159">Para indicar que actualmente no se aplica un grupo de controles, deshabilite todos los controles del cuadro de grupo, pero no el propio cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-159">To indicate that a group of controls doesn't currently apply, disable all the controls within the group box, but not the group box itself.</span></span> <span data-ttu-id="9496a-160">Este enfoque es más accesible y puede ser compatible de forma coherente con todos los marcos de interfaz de usuario.</span><span class="sxs-lookup"><span data-stu-id="9496a-160">This approach is more accessible and can be supported consistently by all UI frameworks.</span></span>
+
+## <a name="labels"></a><span data-ttu-id="9496a-161">Etiquetas</span><span class="sxs-lookup"><span data-stu-id="9496a-161">Labels</span></span>
+
+-   <span data-ttu-id="9496a-162">Etiquete todos los cuadros de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-162">Label all group boxes.</span></span>
+-   <span data-ttu-id="9496a-163">No asigne una clave de acceso a la etiqueta.</span><span class="sxs-lookup"><span data-stu-id="9496a-163">Don't assign an access key to the label.</span></span> <span data-ttu-id="9496a-164">Esto no es necesario y hace que las demás claves de acceso sean más difíciles de asignar.</span><span class="sxs-lookup"><span data-stu-id="9496a-164">Doing so is unnecessary and makes the other access keys harder to assign.</span></span> <span data-ttu-id="9496a-165">En su lugar, asigne las teclas de acceso a los controles del cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-165">Instead, assign access keys to the controls within the group box.</span></span>
+    -   <span data-ttu-id="9496a-166">**Excepción:** Si una superficie tiene muchos controles, puede que no haya suficientes claves de acceso disponibles.</span><span class="sxs-lookup"><span data-stu-id="9496a-166">**Exception:** If a surface has many controls, there may not be enough access keys available.</span></span> <span data-ttu-id="9496a-167">Si es así, reduzca el número de claves de acceso asignándoles los cuadros de grupo en lugar de los controles de los cuadros de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-167">If so, reduce the number of access keys by assigning them to group boxes instead of the controls within the group boxes.</span></span>
+-   <span data-ttu-id="9496a-168">Usar [mayúsculas y minúsculas en el estilo de oraciones](glossary.md).</span><span class="sxs-lookup"><span data-stu-id="9496a-168">Use [sentence-style capitalization](glossary.md).</span></span>
+-   <span data-ttu-id="9496a-169">Escriba la etiqueta con un sustantivo o un nombre, no como una frase, y no use signos de puntuación de cierre, incluidos los dos puntos.</span><span class="sxs-lookup"><span data-stu-id="9496a-169">Write the label using a noun or a noun phrase, not as a sentence, and use no ending punctuation, including colons.</span></span>
+-   <span data-ttu-id="9496a-170">Use frases paralelas para las etiquetas de cuadro de grupo dentro de la misma superficie.</span><span class="sxs-lookup"><span data-stu-id="9496a-170">Use parallel phrasing for group box labels within the same surface.</span></span>
+-   <span data-ttu-id="9496a-171">Mantenga las etiquetas del cuadro de grupo concisos.</span><span class="sxs-lookup"><span data-stu-id="9496a-171">Keep group box labels concise.</span></span> <span data-ttu-id="9496a-172">No use texto informativo como etiqueta.</span><span class="sxs-lookup"><span data-stu-id="9496a-172">Don't use instructional text as the label.</span></span> <span data-ttu-id="9496a-173">Sin embargo, puede tener texto de instrucciones en el cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-173">You can have instructional text within the group box, however.</span></span>
+-   <span data-ttu-id="9496a-174">No repita la etiqueta del cuadro de grupo en las etiquetas de control del cuadro.</span><span class="sxs-lookup"><span data-stu-id="9496a-174">Don't repeat the group box label in control labels within the box.</span></span> <span data-ttu-id="9496a-175">Por ejemplo, si el cuadro de grupo tiene la etiqueta alineación, etiquete los botones de opción izquierda, derecha, etc., no alinear a la izquierda ni alinear a la derecha.</span><span class="sxs-lookup"><span data-stu-id="9496a-175">For example, if the group box is labeled Alignment, label the option buttons Left, Right, and so on, not Left alignment or Right alignment.</span></span>
+-   <span data-ttu-id="9496a-176">No haga referencia a los cuadros de grupo en el texto de la interfaz de usuario.</span><span class="sxs-lookup"><span data-stu-id="9496a-176">Don't refer to group boxes in user interface text.</span></span>
+
+## <a name="documentation"></a><span data-ttu-id="9496a-177">Documentación</span><span class="sxs-lookup"><span data-stu-id="9496a-177">Documentation</span></span>
+
+<span data-ttu-id="9496a-178">Al hacer referencia a los cuadros de Grupo:</span><span class="sxs-lookup"><span data-stu-id="9496a-178">When referring to group boxes:</span></span>
+
+-   <span data-ttu-id="9496a-179">Haga referencia a los cuadros de grupo solo en el programador y en otra documentación técnica.</span><span class="sxs-lookup"><span data-stu-id="9496a-179">Refer to group boxes only in programmer and other technical documentation.</span></span> <span data-ttu-id="9496a-180">En cuadro de grupo, use dos palabras en minúsculas.</span><span class="sxs-lookup"><span data-stu-id="9496a-180">For group box, use two lowercase words.</span></span>
+-   <span data-ttu-id="9496a-181">En cualquier otro lugar, no es necesario incluir el nombre del cuadro de grupo en un procedimiento a menos que un cuadro de diálogo contenga más de una opción con el mismo nombre.</span><span class="sxs-lookup"><span data-stu-id="9496a-181">Everywhere else, it is unnecessary to include the name of the group box in a procedure unless a dialog box contains more than one option with the same name.</span></span> <span data-ttu-id="9496a-182">En tales casos, use en con el nombre del cuadro de grupo.</span><span class="sxs-lookup"><span data-stu-id="9496a-182">In such cases, use under with the group box name.</span></span>
+-   <span data-ttu-id="9496a-183">Siempre que sea posible, dé formato a la etiqueta usando texto en negrita.</span><span class="sxs-lookup"><span data-stu-id="9496a-183">When possible, format the label using bold text.</span></span> <span data-ttu-id="9496a-184">De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.</span><span class="sxs-lookup"><span data-stu-id="9496a-184">Otherwise, put the label in quotation marks only if required to prevent confusion.</span></span>
+
+<span data-ttu-id="9496a-185">Ejemplo: en **efectos**, seleccione **oculto**.</span><span class="sxs-lookup"><span data-stu-id="9496a-185">Example: Under **Effects**, select **Hidden**.</span></span>
+
+ 
+
+ 
