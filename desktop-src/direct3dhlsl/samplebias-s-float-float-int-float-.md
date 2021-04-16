@@ -1,6 +1,6 @@
 ---
-title: 'SampleBias:: SampleBias (S, Float, Float, int, float) (función)'
-description: Muestrea un Texture2D, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en.
+title: 'Función SampleBias:: SampleBias (S, Float, Float, int, float) para Texture2D'
+description: 'La función SampleBias:: SampleBias (S, Float, Float, int, float) muestrea un Texture2D, después de aplicar el valor de Bias al nivel de mipmap.'
 ms.assetid: 4E4A1188-DE45-4A43-B54D-4CA2E66707E3
 keywords:
 - SampleBias de función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d91ce53da6dbf2c1e39f23967d1c1dc36085e764
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a34e6f2eb8211c0e4983d2d6a67f650d34c5dacf
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104078670"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187694"
 ---
-# <a name="samplebiassamplebiassfloatfloatintfloat-function"></a>SampleBias:: SampleBias (S, Float, Float, int, float) (función)
+# <a name="samplebiassamplebiassfloatfloatintfloat-function-for-texture2d"></a>Función SampleBias:: SampleBias (S, Float, Float, int, float) para Texture2D
 
 Muestrea un [**Texture2D**](sm5-object-texture2d.md), después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en.
 
@@ -120,7 +120,7 @@ Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-
 
 Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

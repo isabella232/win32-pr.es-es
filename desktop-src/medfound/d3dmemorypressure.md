@@ -1,7 +1,7 @@
 ---
-description: Contiene datos de informes de presión de memoria.
+description: Esta estructura contiene datos para los informes de presión de memoria.
 ms.assetid: 42cf0922-53cc-48b9-8359-b88583ef5f1c
-title: Estructura D3DMEMORYPRESSURE (D3d9types. h)
+title: Estructura D3DMEMORYPRESSURE (D3d9types. h) para Microsoft Media Foundation
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 6d92cad29bda795a9589dbe0c94863bd743505bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7400c4822b61a84ab288f0424cfa84e825e69dc9
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153645"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106188030"
 ---
-# <a name="d3dmemorypressure-structure-d3d9typesh"></a>Estructura D3DMEMORYPRESSURE (D3d9types. h)
+# <a name="d3dmemorypressure-structure-d3d9typesh-for-microsoft-media-foundation"></a>Estructura D3DMEMORYPRESSURE (D3d9types. h) para Microsoft Media Foundation
 
 Contiene datos de informes de presión de memoria.
 
@@ -37,7 +37,7 @@ typedef struct _D3DMEMORYPRESSURE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -68,13 +68,13 @@ La eficiencia general de las asignaciones de memoria que se colocaron en memoria
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h (incluye d3d9. h)</dt> </dl> |
+| Cliente mínimo compatible | Solo aplicaciones de escritorio de Windows 7 \[\]                                                              |
+| Servidor mínimo compatible | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]                                                 |
+| Encabezado                  | D3d9types. h (incluye d3d9. h) |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

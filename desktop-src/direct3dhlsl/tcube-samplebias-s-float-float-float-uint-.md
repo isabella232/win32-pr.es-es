@@ -1,6 +1,6 @@
 ---
-title: 'SampleBias:: SampleBias (S, Float, Float, Float, uint) (función)'
-description: 'Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Devuelve el estado de la operación. | SampleBias:: SampleBias (S, Float, Float, Float, uint) (función)'
+title: 'Función SampleBias:: SampleBias (S, Float, Float, Float, uint) para TextureCube'
+description: 'La función SampleBias:: SampleBias (S, Float, Float, Float, uint) para TextureCube muestrea una textura después de aplicar el valor de Bias al nivel de mipmap.'
 ms.assetid: A2F10B9B-5DF2-4389-83A9-F6A29781BF0A
 keywords:
 - SampleBias de función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2f3a994d7b0f0c2d55ae3203db9f3205932c1a25
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 116749acdc23bb8ac2fd057139bf8ef7c8f5ddcc
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280099"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187686"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloatuint-function"></a>SampleBias:: SampleBias (S, Float, Float, Float, uint) (función)
+# <a name="samplebiassamplebiassfloatfloatfloatuint-function-for-texturecube"></a>Función SampleBias:: SampleBias (S, Float, Float, Float, uint) para TextureCube
 
 Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Devuelve el estado de la operación.
 
@@ -107,7 +107,7 @@ Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-
 
 Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
