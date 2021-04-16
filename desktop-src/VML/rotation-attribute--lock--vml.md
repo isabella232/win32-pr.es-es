@@ -1,0 +1,41 @@
+---
+title: Rotation (atributo, Lock) (VML)
+description: Rotation (atributo, Lock) (VML)
+ms.assetid: eed5388e-9e05-473c-9213-af63473deaaa
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6d8514881c90c1489e09c85af16a26cc0cf538a6
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104533465"
+---
+# <a name="rotation-attribute-lockvml"></a><span data-ttu-id="5fa07-103">Rotation (atributo, Lock) (VML)</span><span class="sxs-lookup"><span data-stu-id="5fa07-103">Rotation Attribute (Lock)(VML)</span></span>
+
+<span data-ttu-id="5fa07-104">En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="5fa07-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="5fa07-105">Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.</span><span class="sxs-lookup"><span data-stu-id="5fa07-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="5fa07-106">A partir del 2011 de diciembre, este tema se ha archivado.</span><span class="sxs-lookup"><span data-stu-id="5fa07-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="5fa07-107">Como resultado, ya no se mantiene de forma activa.</span><span class="sxs-lookup"><span data-stu-id="5fa07-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="5fa07-108">Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="5fa07-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="5fa07-109">Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="5fa07-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+
+ 
+
+<span data-ttu-id="5fa07-110">Determina si se permitirá la rotación de formas en un editor.</span><span class="sxs-lookup"><span data-stu-id="5fa07-110">Determines whether rotation of shapes will be allowed in an editor.</span></span> <span data-ttu-id="5fa07-111">Lectura/escritura</span><span class="sxs-lookup"><span data-stu-id="5fa07-111">Read/write.</span></span> <span data-ttu-id="5fa07-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="5fa07-112">**VgTriState**.</span></span>
+
+<span data-ttu-id="5fa07-113">**Se aplica a**</span><span class="sxs-lookup"><span data-stu-id="5fa07-113">**Applies To**</span></span>
+
+[<span data-ttu-id="5fa07-114">Bloqueos</span><span class="sxs-lookup"><span data-stu-id="5fa07-114">Locks</span></span>](msdn-online-vml-locks-element.md)
+
+<span data-ttu-id="5fa07-115">**Sintaxis de etiquetas**</span><span class="sxs-lookup"><span data-stu-id="5fa07-115">**Tag Syntax**</span></span>
+
+<span data-ttu-id="5fa07-116"><o: *elemento* Rotation = " *expresión* " ></span><span class="sxs-lookup"><span data-stu-id="5fa07-116"><o: *element* rotation=" *expression* "></span></span>
+
+<span data-ttu-id="5fa07-117">**Comentarios:**</span><span class="sxs-lookup"><span data-stu-id="5fa07-117">**Remarks**</span></span>
+
+<span data-ttu-id="5fa07-118">Si **es true**, no se permitirá el giro de las formas en un editor.</span><span class="sxs-lookup"><span data-stu-id="5fa07-118">If **True**, rotation of shapes will not be allowed in an editor.</span></span> <span data-ttu-id="5fa07-119">El valor predeterminado es **False**.</span><span class="sxs-lookup"><span data-stu-id="5fa07-119">The default value is **False**.</span></span>
+
+<span data-ttu-id="5fa07-120">*Microsoft Office atributo Extensions*</span><span class="sxs-lookup"><span data-stu-id="5fa07-120">*Microsoft Office Extensions Attribute*</span></span>
+
+ 
+
+ 
