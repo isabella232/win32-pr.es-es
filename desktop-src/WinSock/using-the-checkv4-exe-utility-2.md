@@ -1,0 +1,73 @@
+---
+description: Usar la utilidad de Checkv4.exe para modificar la aplicación IPv4 para que admita IPv6.
+ms.assetid: 36b72e4f-133d-4d96-a3c9-86a852d3a479
+title: Usar la utilidad Checkv4.exe
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 2fc9eca96b2138f9950b157a4b7690dc382f273e
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104557350"
+---
+# <a name="using-the-checkv4exe-utility"></a><span data-ttu-id="235f4-103">Usar la utilidad Checkv4.exe</span><span class="sxs-lookup"><span data-stu-id="235f4-103">Using the Checkv4.exe utility</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="235f4-104">La utilidad *Checkv4.exe* no se incluye en el kit de desarrollo de software (SDK) de Windows para Windows 8 ni en versiones posteriores de la Windows SDK.</span><span class="sxs-lookup"><span data-stu-id="235f4-104">The *Checkv4.exe* utility doesn't ship in the Windows Software Development Kit (SDK) for Windows 8, nor in later versions of the Windows SDK.</span></span>
+
+<span data-ttu-id="235f4-105">La utilidad *Checkv4.exe* está diseñada para proporcionarle un asociado de portabilidad de código; una utilidad que recorre el código base con usted, identifica posibles problemas o resalta código que podría beneficiarse de estructuras o funciones compatibles con IPv6 y realiza recomendaciones.</span><span class="sxs-lookup"><span data-stu-id="235f4-105">The *Checkv4.exe* utility is designed to provide you with a code porting partner; a utility that steps through your code base with you, identifies potential problems or highlights code that could benefit from IPv6-capable functions or structures, and makes recommendations.</span></span> <span data-ttu-id="235f4-106">Con la utilidad Checkv4.exe, la tarea de modificar una aplicación IPv4 existente para admitir IPv6 es mucho más fácil.</span><span class="sxs-lookup"><span data-stu-id="235f4-106">With the Checkv4.exe utility, the task of modifying an existing IPv4 application to support IPv6 becomes much easier.</span></span>
+
+<span data-ttu-id="235f4-107">La utilidad de *Checkv4.exe* se instala como parte del kit de desarrollo de software (SDK) de Microsoft Windows publicado para Windows Vista y SDK posteriores (hasta, pero sin incluir, el kit de desarrollo de software (SDK) de Windows para Windows 8).</span><span class="sxs-lookup"><span data-stu-id="235f4-107">The *Checkv4.exe* utility is installed as part of the Microsoft Windows Software Development Kit (SDK) released for Windows Vista and later SDKs (up to, but not including, the Windows Software Development Kit (SDK) for Windows 8).</span></span>
+
+<span data-ttu-id="235f4-108">Una versión anterior de la utilidad *Checkv4.exe* con características más limitadas también estaba disponible como parte de la versión anterior de Microsoft IPv6 Technology Preview para Windows 2000.</span><span class="sxs-lookup"><span data-stu-id="235f4-108">An earlier version of the *Checkv4.exe* utility with more limited features was also made available as part of the earlier Microsoft IPv6 Technology Preview for Windows 2000.</span></span>
+
+<span data-ttu-id="235f4-109">En las secciones siguientes se describe cómo usar la utilidad *Checkv4.exe* y, a continuación, se explica el enfoque recomendado para modificar una aplicación IPv4 existente para que admita IPv6.</span><span class="sxs-lookup"><span data-stu-id="235f4-109">The following sections describe how to use the *Checkv4.exe* utility, then explain the recommended approach for modifying an existing IPv4 application to support IPv6.</span></span>
+
+## <a name="recommendations-for-running-checkv4exe"></a><span data-ttu-id="235f4-110">Recomendaciones para ejecutar Checkv4.exe</span><span class="sxs-lookup"><span data-stu-id="235f4-110">Recommendations for Running Checkv4.exe</span></span>
+
+-   <span data-ttu-id="235f4-111">La utilidad *Checkv4.exe* es sencilla.</span><span class="sxs-lookup"><span data-stu-id="235f4-111">The *Checkv4.exe* utility is straightforward.</span></span> <span data-ttu-id="235f4-112">Simplemente ejecute *Checkv4.exe* en la línea de comandos con el nombre del archivo que desea comprobar como parámetro.</span><span class="sxs-lookup"><span data-stu-id="235f4-112">Simply execute *Checkv4.exe* at the command line with the name of the file you want to check as the parameter.</span></span> <span data-ttu-id="235f4-113">*Checkv4.exe* analiza el archivo y proporciona comentarios sobre dónde se encuentran los problemas de portabilidad IPv6 en ese archivo.</span><span class="sxs-lookup"><span data-stu-id="235f4-113">*Checkv4.exe* parses the file and provides feedback as to where IPv6 porting issues exist in that file.</span></span> <span data-ttu-id="235f4-114">Colocar el *Checkv4.exe* en la ruta de acceso del equipo hace que la ejecución de la utilidad de *Checkv4.exe* desde cualquier lugar de la estructura de directorios del código fuente sea mucho más fácil.</span><span class="sxs-lookup"><span data-stu-id="235f4-114">Placing the *Checkv4.exe* into your computer's path makes running the *Checkv4.exe* utility from anywhere in your source code directory structure much easier.</span></span> <span data-ttu-id="235f4-115">Por ejemplo, la colocación de *Checkv4.exe* en% WINDIR% le permite iniciar *Checkv4.exe* desde cualquier directorio del equipo sin incluir su ruta de acceso.</span><span class="sxs-lookup"><span data-stu-id="235f4-115">For example, placing *Checkv4.exe* into %windir% enables you to launch *Checkv4.exe* from any directory on your computer without including its path.</span></span>
+
+-   <span data-ttu-id="235f4-116">Emita el siguiente comando en el símbolo del sistema para analizar el archivo Simplec. c:</span><span class="sxs-lookup"><span data-stu-id="235f4-116">Issue the following command at the command prompt to parse the file Simplec.c:</span></span>
+
+    <span data-ttu-id="235f4-117">**Checkv4 simplec. c**</span><span class="sxs-lookup"><span data-stu-id="235f4-117">**Checkv4 simplec.c**</span></span>
+
+    <span data-ttu-id="235f4-118">Tenga en cuenta que algunas de las recomendaciones realizadas por la utilidad *Checkv4.exe* requieren estructuras disponibles solo en las versiones recientes del archivo de encabezado *Ws2tcpip. h* , como la estructura **\_ IN6 de SOCKADDR** .</span><span class="sxs-lookup"><span data-stu-id="235f4-118">Note that some of the recommendations made by the *Checkv4.exe* utility require structures available only in recent versions of the *Ws2tcpip.h* header file, such as the **SOCKADDR\_IN6** structure.</span></span> <span data-ttu-id="235f4-119">Estos archivos de encabezado se incluyen en la Windows SDK publicada para Windows Vista y versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="235f4-119">These header files are included in the Windows SDK released for Windows Vista and later.</span></span> <span data-ttu-id="235f4-120">Estos archivos de encabezado también se incluyen en el kit de desarrollo de software (SDK) de plataforma anterior publicado para Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="235f4-120">These header files are also included in the earlier Platform Software Development Kit (SDK) released for Windows Server 2003.</span></span> <span data-ttu-id="235f4-121">Estos archivos de encabezado también se incluyen como parte de una suscripción a MSDN o mediante descarga.</span><span class="sxs-lookup"><span data-stu-id="235f4-121">These header files are also included as part of an MSDN subscription or by download.</span></span>
+
+    <span data-ttu-id="235f4-122">En la captura de pantalla siguiente se muestran los resultados del uso de la utilidad *Checkv4.exe* en el archivo Simplec. c incluido en el Apéndice A:</span><span class="sxs-lookup"><span data-stu-id="235f4-122">The following screen shot displays the results of using the *Checkv4.exe* utility on the Simplec.c file included in Appendix A:</span></span>
+
+    ![checkv4.exe informa de las incompatibilidades de IPv6 en el archivo simplec. c](images/portingguide002.jpg)
+
+    <span data-ttu-id="235f4-124">En la captura de pantalla siguiente se muestran los resultados del uso de la utilidad *Checkv4.exe* en el archivo simple. c, que también se incluye en el Apéndice A:</span><span class="sxs-lookup"><span data-stu-id="235f4-124">The following screen shot displays the results of using the *Checkv4.exe* utility on the Simples.c file, which is also included in Appendix A:</span></span>
+
+    ![checkv4.exe informa de las incompatibilidades de IPv6 en el archivo simple. c](images/portingguide003.jpg)
+
+## <a name="the-application-modification-process-where-to-start"></a><span data-ttu-id="235f4-126">Proceso de modificación de la aplicación: Dónde iniciar</span><span class="sxs-lookup"><span data-stu-id="235f4-126">The Application Modification Process: Where to Start</span></span>
+
+<span data-ttu-id="235f4-127">Existe un procedimiento recomendado asociado a la adición de funcionalidad IPv6 a las aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="235f4-127">There is a recommended procedure associated with adding IPv6 capability to applications.</span></span> <span data-ttu-id="235f4-128">Esta secuencia es beneficiosa, ya que permite a los desarrolladores asegurarse de que se realizan todos los pasos necesarios para modificar una aplicación IPv4 existente para admitir IPv6.</span><span class="sxs-lookup"><span data-stu-id="235f4-128">Following this sequence is beneficial, because it enables developers to ensure that all steps necessary to modify an existing IPv4 application to support IPv6 are taken.</span></span> <span data-ttu-id="235f4-129">Ciertas aplicaciones pueden requerir una atención más exhaustiva a una de estas secuencias; por ejemplo, un servicio de sistema probablemente tendrá menos problemas de interfaz de usuario que un programa de transferencia de archivos gráfico (FTP).</span><span class="sxs-lookup"><span data-stu-id="235f4-129">Certain applications may require more extensive attention to one of these sequences; for example, a system service would likely have less user interface issues than a graphical file transfer program (FTP).</span></span>
+
+<span data-ttu-id="235f4-130">**Para modificar las aplicaciones IPv4 para que admitan IPv6**</span><span class="sxs-lookup"><span data-stu-id="235f4-130">**To modify IPv4 applications to support IPv6**</span></span>
+
+1.  <span data-ttu-id="235f4-131">Corrija las estructuras y declaraciones para habilitar la compatibilidad con IPv6 e IPv4.</span><span class="sxs-lookup"><span data-stu-id="235f4-131">Fix structures and declarations to enable IPv6 and IPv4 compatibility.</span></span>
+2.  <span data-ttu-id="235f4-132">Modifique las llamadas de función para aprovechar las funciones habilitadas para IPv6, como las funciones [**función getaddrinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) y [**getnameinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getnameinfo) .</span><span class="sxs-lookup"><span data-stu-id="235f4-132">Modify function calls to take advantage of IPv6-enabled functions, such as the [**getaddrinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) and [**getnameinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getnameinfo) functions.</span></span>
+3.  <span data-ttu-id="235f4-133">Revise el código fuente para el uso de direcciones IPv4 codificadas de forma rígida, como la dirección de bucle invertido o el uso de otras cadenas literales.</span><span class="sxs-lookup"><span data-stu-id="235f4-133">Review source code for the use of hard-coded IPv4 addresses such as the loopback address, or the use of other literal strings.</span></span>
+4.  <span data-ttu-id="235f4-134">Realice una revisión completa de la interfaz de usuario, incluidos los cuadros de diálogo informativos.</span><span class="sxs-lookup"><span data-stu-id="235f4-134">Perform a thorough review of the user interface, including informational dialog boxes.</span></span> <span data-ttu-id="235f4-135">Piense si es adecuado para las aplicaciones habilitadas para IPv6 especificar o proporcionar información basada en direcciones IP.</span><span class="sxs-lookup"><span data-stu-id="235f4-135">Give thought to whether it is appropriate for IPv6-enabled applications to specify or provide IP-address based information.</span></span>
+5.  <span data-ttu-id="235f4-136">Determine si la aplicación se basa en protocolos subyacentes, como RPC, y realice los cambios de programación adecuados para controlar las direcciones IPv6.</span><span class="sxs-lookup"><span data-stu-id="235f4-136">Determine whether your application relies on underlying protocols, such as RPC, and make appropriate programmatic changes to handle IPv6 addresses.</span></span>
+6.  <span data-ttu-id="235f4-137">Use la marca de tiempo de compilación IPV6STRICT al compilar aplicaciones en Windows XP y versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="235f4-137">Use the compile-time flag IPV6STRICT when compiling applications on Windows XP and later.</span></span> <span data-ttu-id="235f4-138">Esta marca produce un error en la compilación de código incompatible, como se indica a continuación:</span><span class="sxs-lookup"><span data-stu-id="235f4-138">This flag results in incompatible code failing to compile, as follows:</span></span>
+
+    <span data-ttu-id="235f4-139">Las aplicaciones de Windows Sockets 1. x con código incompatible no se compilan y devuelven el mensaje de error "se requiere WINSOCK2".</span><span class="sxs-lookup"><span data-stu-id="235f4-139">Windows Sockets 1.x applications with incompatible code fail to compile and return the error message "WINSOCK2 Required."</span></span>
+
+    <span data-ttu-id="235f4-140">Las aplicaciones de Windows Sockets 2. x con código incompatible producen un error en tiempo de compilación para cada instancia de código incompatible.</span><span class="sxs-lookup"><span data-stu-id="235f4-140">Windows Sockets 2.x applications with incompatible code cause a compile time error for each instance of incompatible code.</span></span> <span data-ttu-id="235f4-141">Se genera un mensaje de error con el siguiente formato:</span><span class="sxs-lookup"><span data-stu-id="235f4-141">An error message is generated in the following format:</span></span>
+
+    `[file name] ([line number]) : [error message] '[symbol]_IPV6INCOMPATIBLE'`
+
+    <span data-ttu-id="235f4-142">Por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="235f4-142">For example:</span></span>
+
+    `sample.c(8) : error C2065: 'gethostbyaddr_IPV6INCOMPATIBLE' : undeclared identifier`
+
+ 
+
+ 
+
+
+
