@@ -1,0 +1,51 @@
+---
+description: La API CNG proporciona un conjunto de funciones que realizan operaciones criptográficas básicas, como la creación de hashes o el cifrado y descifrado de datos. Para obtener más información sobre estas funciones, vea funciones primitivas criptográficas de CNG.
+ms.assetid: 925848ae-9f4f-444a-81ff-14a1997434b2
+title: Primitivos criptográficos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: bd0f390b36bc500bf80b5b2ef0065651cf99f5e5
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104539846"
+---
+# <a name="cryptographic-primitives"></a><span data-ttu-id="722de-104">Primitivos criptográficos</span><span class="sxs-lookup"><span data-stu-id="722de-104">Cryptographic Primitives</span></span>
+
+<span data-ttu-id="722de-105">La API CNG proporciona un conjunto de funciones que realizan operaciones criptográficas básicas, como la creación de hashes o el cifrado y descifrado de datos.</span><span class="sxs-lookup"><span data-stu-id="722de-105">The CNG API provides a set of functions that perform basic cryptographic operations such as creating hashes or encrypting and decrypting data.</span></span> <span data-ttu-id="722de-106">Para obtener más información sobre estas funciones, vea [funciones primitivas criptográficas de CNG](cng-cryptographic-primitive-functions.md).</span><span class="sxs-lookup"><span data-stu-id="722de-106">For more information about these functions, see [CNG Cryptographic Primitive Functions](cng-cryptographic-primitive-functions.md).</span></span>
+
+<span data-ttu-id="722de-107">CNG implementa numerosos algoritmos criptográficos.</span><span class="sxs-lookup"><span data-stu-id="722de-107">CNG implements numerous cryptographic algorithms.</span></span> <span data-ttu-id="722de-108">Cada algoritmo o clase de algoritmos expone su propia API primitiva.</span><span class="sxs-lookup"><span data-stu-id="722de-108">Each algorithm or class of algorithms exposes its own primitive API.</span></span> <span data-ttu-id="722de-109">Se pueden instalar varias implementaciones de un algoritmo determinado al mismo tiempo; sin embargo, solo una implementación será el valor predeterminado en un momento dado.</span><span class="sxs-lookup"><span data-stu-id="722de-109">Multiple implementations of a given algorithm can be installed at the same time; however, only one implementation will be the default at any given time.</span></span>
+
+<span data-ttu-id="722de-110">Cada clase de algoritmo en CNG se representa mediante un enrutador primitivo.</span><span class="sxs-lookup"><span data-stu-id="722de-110">Each algorithm class in CNG is represented by a primitive router.</span></span> <span data-ttu-id="722de-111">Las aplicaciones que usan las funciones primitivas de CNG se vincularán al archivo binario del enrutador Bcrypt.dll en modo de usuario o Ksecdd.sys en modo kernel antes de llamar a las funciones.</span><span class="sxs-lookup"><span data-stu-id="722de-111">Applications using the CNG primitive functions will link to the router binary file Bcrypt.dll in user mode, or Ksecdd.sys in kernel mode before calling the functions.</span></span> <span data-ttu-id="722de-112">Varias rutinas de enrutador administran todos los primitivos de algoritmo.</span><span class="sxs-lookup"><span data-stu-id="722de-112">Various router routines manage all of the algorithm primitives.</span></span> <span data-ttu-id="722de-113">Estos enrutadores realizan el seguimiento de cada implementación de algoritmo instalada en el sistema y enrutan cada llamada de función al módulo de proveedor primitivo adecuado.</span><span class="sxs-lookup"><span data-stu-id="722de-113">These routers track each algorithm implementation installed on the system and route each function call to the appropriate primitive provider module.</span></span>
+
+<span data-ttu-id="722de-114">CNG proporciona primitivas para las clases de algoritmos siguientes.</span><span class="sxs-lookup"><span data-stu-id="722de-114">CNG provides primitives for the following classes of algorithms.</span></span>
+
+
+
+| <span data-ttu-id="722de-115">Clase Algorithm</span><span class="sxs-lookup"><span data-stu-id="722de-115">Algorithm class</span></span>                                                                                                                                                  | <span data-ttu-id="722de-116">Descripción</span><span class="sxs-lookup"><span data-stu-id="722de-116">Description</span></span>                                                                                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="722de-117"><span id="Random_number_generator"></span><span id="random_number_generator"></span><span id="RANDOM_NUMBER_GENERATOR"></span>Generador de números aleatorios</span><span class="sxs-lookup"><span data-stu-id="722de-117"><span id="Random_number_generator"></span><span id="random_number_generator"></span><span id="RANDOM_NUMBER_GENERATOR"></span>Random number generator</span></span><br/> | <span data-ttu-id="722de-118">Generación de números aleatorios (RNG) conectable.</span><span class="sxs-lookup"><span data-stu-id="722de-118">Pluggable random number generation (RNG).</span></span><br/>                                                         |
+| <span data-ttu-id="722de-119"><span id="Hashing"></span><span id="hashing"></span><span id="HASHING"></span>Hash</span><span class="sxs-lookup"><span data-stu-id="722de-119"><span id="Hashing"></span><span id="hashing"></span><span id="HASHING"></span>Hashing</span></span><br/>                                                                 | <span data-ttu-id="722de-120">Algoritmos que se usan para el hash, como SHA1 y SHA2.</span><span class="sxs-lookup"><span data-stu-id="722de-120">Algorithms used for hashing, such as SHA1 and SHA2.</span></span><br/>                                               |
+| <span data-ttu-id="722de-121"><span id="Symmetric_encryption"></span><span id="symmetric_encryption"></span><span id="SYMMETRIC_ENCRYPTION"></span>Cifrado simétrico</span><span class="sxs-lookup"><span data-stu-id="722de-121"><span id="Symmetric_encryption"></span><span id="symmetric_encryption"></span><span id="SYMMETRIC_ENCRYPTION"></span>Symmetric encryption</span></span><br/>             | <span data-ttu-id="722de-122">Algoritmos usados para el cifrado simétrico, como AES, 3DES y RC4.</span><span class="sxs-lookup"><span data-stu-id="722de-122">Algorithms used for symmetric encryption, such as AES, 3DES, and RC4.</span></span><br/>                             |
+| <span data-ttu-id="722de-123"><span id="Asymmetric_encryption"></span><span id="asymmetric_encryption"></span><span id="ASYMMETRIC_ENCRYPTION"></span>Cifrado asimétrico</span><span class="sxs-lookup"><span data-stu-id="722de-123"><span id="Asymmetric_encryption"></span><span id="asymmetric_encryption"></span><span id="ASYMMETRIC_ENCRYPTION"></span>Asymmetric encryption</span></span><br/>         | <span data-ttu-id="722de-124">Algoritmos asimétricos (clave pública) que admiten el cifrado, como RSA.</span><span class="sxs-lookup"><span data-stu-id="722de-124">Asymmetric (public key) algorithms that support encryption, such as RSA.</span></span><br/>                          |
+| <span data-ttu-id="722de-125"><span id="Signature"></span><span id="signature"></span><span id="SIGNATURE"></span>Signatura</span><span class="sxs-lookup"><span data-stu-id="722de-125"><span id="Signature"></span><span id="signature"></span><span id="SIGNATURE"></span>Signature</span></span><br/>                                                         | <span data-ttu-id="722de-126">Algoritmos de firma como DSA y ECDSA.</span><span class="sxs-lookup"><span data-stu-id="722de-126">Signature algorithms such as DSA and ECDSA.</span></span> <span data-ttu-id="722de-127">Esta clase también se puede usar con RSA.</span><span class="sxs-lookup"><span data-stu-id="722de-127">This class can also be used with RSA.</span></span><br/>                 |
+| <span data-ttu-id="722de-128"><span id="Secret_agreement"></span><span id="secret_agreement"></span><span id="SECRET_AGREEMENT"></span>Acuerdo secreto</span><span class="sxs-lookup"><span data-stu-id="722de-128"><span id="Secret_agreement"></span><span id="secret_agreement"></span><span id="SECRET_AGREEMENT"></span>Secret agreement</span></span><br/>                             | <span data-ttu-id="722de-129">Algoritmos de acuerdo secreto como Diffie-Hellman (DH) y Diffie-Hellman de curva elíptica (ECDH).</span><span class="sxs-lookup"><span data-stu-id="722de-129">Secret agreement algorithms such as Diffie-Hellman (DH) and elliptic curve Diffie-Hellman (ECDH).</span></span><br/> |
+
+
+
+ 
+
+<span data-ttu-id="722de-130">En la ilustración siguiente se muestra el diseño y la función de las primitivas criptográficas de CNG.</span><span class="sxs-lookup"><span data-stu-id="722de-130">The following illustration shows the design and function of the CNG cryptographic primitives.</span></span>
+
+![diseño y función de primitivas criptográficas CNG](images/ssdk-cng1c.png)
+
+<span data-ttu-id="722de-132">El archivo de encabezado bcrypt. h define la constante del **\_ \_ proveedor primitivo de MS** como "proveedor primitivo de Microsoft".</span><span class="sxs-lookup"><span data-stu-id="722de-132">The header file Bcrypt.h defines the **MS\_PRIMITIVE\_PROVIDER** constant as "Microsoft Primitive Provider".</span></span> <span data-ttu-id="722de-133">Para usar el proveedor primitivo de Microsoft, pase este valor a [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider).</span><span class="sxs-lookup"><span data-stu-id="722de-133">To use the Microsoft Primitive Provider, pass this value to [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider).</span></span>
+
+ 
+
+ 
+
+
+
+
