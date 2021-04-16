@@ -1,0 +1,102 @@
+---
+description: Bloquee el búfer de índice.
+ms.assetid: b68aff75-9ba6-4088-b35f-f56d700d1aff
+title: 'ID3DXPatchMesh:: LockIndexBuffer (método) (D3DX9Mesh. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ID3DXPatchMesh.LockIndexBuffer
+api_type:
+- COM
+api_location:
+- d3dx9.lib
+- d3dx9.dll
+ms.openlocfilehash: 81dc410262ff21ea972d4c501ac3b5d26a361642
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "104548134"
+---
+# <a name="id3dxpatchmeshlockindexbuffer-method"></a>ID3DXPatchMesh:: LockIndexBuffer (método)
+
+Bloquee el búfer de índice.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+HRESULT LockIndexBuffer(
+  [in]          DWORD  flags,
+  [out, retval] LPVOID *ppData
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*marcas* \[ de de\]
+</dt> <dd>
+
+Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
+
+Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se va a realizar. Para este método, las marcas válidas son:
+
+-   \_Descartar D3DLOCK
+-   \_No se \_ pudo \_ Actualizar D3DLOCK
+-   D3DLOCK \_ NOSYSLOCK
+-   D3DLOCK \_ ReadOnly
+
+Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
+
+</dd> <dt>
+
+*ppData* \[ out, retval\]
+</dt> <dd>
+
+Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
+
+\*Puntero void a un búfer de memoria que contiene los datos de índice devueltos.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
+
+Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+
+## <a name="remarks"></a>Observaciones
+
+Normalmente, el búfer de índice está bloqueado, se escribe en él y, a continuación, se desbloquea para leerlo. Los búferes de índice de la malla de revisión son búferes de 16 bits.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|--------------------|----------------------------------------------------------------------------------------|
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[ID3DXPatchMesh](id3dxpatchmesh.md)
+</dt> <dt>
+
+[**D3DXCreatePatchMesh**](d3dxcreatepatchmesh.md)
+</dt> </dl>
+
+ 
+
+ 
