@@ -1,0 +1,45 @@
+---
+title: Reutilizar configuraciones de secuencia
+description: Reutilizar configuraciones de secuencia
+ms.assetid: e2263c3a-56cd-4505-acd7-510dc7bac166
+keywords:
+- secuencias, reutilización de configuraciones
+- perfiles, reutilización de configuraciones de secuencias
+- reutilizar configuraciones de secuencia
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9af10fd026904ccef33aba28d28e0e6a4975d3fd
+ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "105685674"
+---
+# <a name="reusing-stream-configurations"></a><span data-ttu-id="ef3f3-106">Reutilizar configuraciones de secuencia</span><span class="sxs-lookup"><span data-stu-id="ef3f3-106">Reusing Stream Configurations</span></span>
+
+<span data-ttu-id="ef3f3-107">A menudo, hay ocasiones en las que desea volver a usar un objeto de configuración de secuencia de un perfil existente.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-107">There are often times when you want to reuse a stream configuration object from an existing profile.</span></span> <span data-ttu-id="ef3f3-108">Es posible que tenga perfiles antiguos que necesiten actualización o que necesite un flujo idéntico a uno en un perfil del sistema.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-108">You may have old profiles that need updating or you may need a stream identical to one in a system profile.</span></span> <span data-ttu-id="ef3f3-109">Es más fácil reutilizar las configuraciones de streaming que para crear otras nuevas y, a menudo, puede cambiar algunas opciones de configuración para satisfacer sus necesidades en lugar de crear una nueva.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-109">It is easier to reuse stream configurations than to create new ones, and you can often change a few settings in a configuration to meet your needs rather than creating an entirely new one.</span></span>
+
+<span data-ttu-id="ef3f3-110">Tenga en cuenta que existen limitaciones en cuanto a cómo puede cambiar las configuraciones de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-110">Be aware that there are limitations to how you can change stream configurations.</span></span> <span data-ttu-id="ef3f3-111">Si cambia la configuración de forma incorrecta, es posible que el perfil no acepte el objeto de configuración de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-111">If you change settings in the wrong way, your profile may not accept the stream configuration object.</span></span> <span data-ttu-id="ef3f3-112">El perfil acepta frecuentemente configuraciones de flujo incorrectas, pero hace que el objeto de escritor rechace el perfil.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-112">Incorrect stream configurations are frequently accepted by the profile but cause the writer object to reject the profile.</span></span> <span data-ttu-id="ef3f3-113">Tenga en cuenta las siguientes limitaciones y problemas al usar y modificar las configuraciones de flujo existentes.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-113">Be aware of the following limitations and issues when using and modifying existing stream configurations.</span></span>
+
+-   <span data-ttu-id="ef3f3-114">No modifique nunca el contenido de un archivo. prx para cambiar la configuración de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-114">Never alter the contents of a .prx file to change stream settings.</span></span> <span data-ttu-id="ef3f3-115">Cuando los perfiles se guardan en cadenas XML y se escriben en un archivo. prx, se pueden leer con cualquier editor de texto.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-115">When profiles are saved to XML strings and written to a .prx file they can be read with any text editor.</span></span> <span data-ttu-id="ef3f3-116">Examinar un perfil guardado puede ayudarle a comprender cómo funcionan los perfiles.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-116">Looking at a saved profile can help you understand how profiles work.</span></span> <span data-ttu-id="ef3f3-117">Sin embargo, nunca debe modificar un archivo. prx de ningún modo.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-117">However, you should never alter a .prx file in any way.</span></span> <span data-ttu-id="ef3f3-118">Incluso los cambios aparentemente triviales pueden invalidar el perfil.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-118">Even seemingly trivial changes can invalidate the profile.</span></span>
+-   <span data-ttu-id="ef3f3-119">Varias versiones del códec Windows Media Audio usan las mismas configuraciones de flujo.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-119">Several versions of the Windows Media Audio codec use the same stream configurations.</span></span> <span data-ttu-id="ef3f3-120">Si tiene un objeto de configuración de secuencia que está configurado como subtipo WMMEDIASUBTYPE \_ WMAudioV2, WMMEDIASUBTYPE \_ WMAUDIOV7 o WMMEDIASUBTYPE \_ WMAudioV8, el flujo resultante se comprimirá con el códec de Windows Media Audio más reciente.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-120">If you have a stream configuration object that is configured as subtype WMMEDIASUBTYPE\_WMAudioV2, WMMEDIASUBTYPE\_WMAudioV7, or WMMEDIASUBTYPE\_WMAudioV8, the resulting stream will be compressed with the latest Windows Media Audio codec.</span></span> <span data-ttu-id="ef3f3-121">Sin embargo, debe evaluar sus necesidades antes de usar un códec de audio existente.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-121">However, you should evaluate your needs before using an existing audio codec.</span></span> <span data-ttu-id="ef3f3-122">Muchos tipos de archivos se pueden mejorar mediante la actualización a la versión más reciente del códec Windows Media Audio Professional o el códec Windows Media Audio Lossless.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-122">Many types of files can be improved by upgrading to the latest version of the Windows Media Audio Professional codec, or the Windows Media Audio Lossless codec.</span></span>
+-   <span data-ttu-id="ef3f3-123">No cambie nunca el subtipo de una secuencia para actualizar a un códec nuevo.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-123">Never change the subtype of a stream to upgrade to a new codec.</span></span> <span data-ttu-id="ef3f3-124">Cuando se usan los métodos de [**IWMCodecInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) para obtener una configuración de flujo, el códec adjunta algunos datos que identifican el formato del flujo de bits.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-124">When you use the methods of [**IWMCodecInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) to obtain a stream configuration, the codec attaches some data to it that identifies the bit stream format.</span></span> <span data-ttu-id="ef3f3-125">Si cambia el subtipo de un objeto de configuración de una secuencia existente, el subtipo no coincidirá con los datos del códec.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-125">If you change the subtype of an existing stream configuration object, the subtype will not match the codec data.</span></span> <span data-ttu-id="ef3f3-126">El objeto de escritor no aceptará un perfil con una configuración de este tipo de flujo.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-126">A profile with such a stream configuration will not be accepted by the writer object.</span></span>
+-   <span data-ttu-id="ef3f3-127">No modifique la configuración de las configuraciones de secuencias de audio comprimidas.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-127">Do not alter the settings of compressed audio stream configurations.</span></span> <span data-ttu-id="ef3f3-128">Si los valores de una secuencia de audio no se ajustan a sus necesidades, obtenga una nueva configuración de flujo del códec con los métodos de **IWMCodecInfo3**.</span><span class="sxs-lookup"><span data-stu-id="ef3f3-128">If the settings of an audio stream do not suit your needs, obtain a new stream configuration from the codec using the methods of **IWMCodecInfo3**.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="ef3f3-129">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="ef3f3-129">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="ef3f3-130">**Configuración de secuencias**</span><span class="sxs-lookup"><span data-stu-id="ef3f3-130">**Configuring Streams**</span></span>](configuring-streams.md)
+</dt> <dt>
+
+[<span data-ttu-id="ef3f3-131">**Obtención de información de configuración de la secuencia de códecs**</span><span class="sxs-lookup"><span data-stu-id="ef3f3-131">**Getting Stream Configuration Information from Codecs**</span></span>](getting-stream-configuration-information-from-codecs.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
