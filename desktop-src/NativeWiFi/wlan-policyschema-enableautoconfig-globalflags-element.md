@@ -1,7 +1,7 @@
 ---
 description: Especifica si los equipos usan el servicio de configuración automática (AutoConfig) integrado para administrar las conexiones inalámbricas.
 ms.assetid: c255e0a0-65ae-44a8-95cb-1a000394109d
-title: Elemento enableAutoConfig (Indicadores_globales) (LAN_policy)
+title: Elemento enableAutoConfig (Indicadores_globales) (LAN_policy) para WLAN
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c03e4c2afa9e8e98c07e1bc0cdec4099d3260aab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5105b8e634aa5affa8648b763a82bbd60cbaec17
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541038"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106188042"
 ---
-# <a name="enableautoconfig-globalflags-element-lan_policy"></a>Elemento enableAutoConfig (Indicadores_globales) (LAN_policy)
+# <a name="enableautoconfig-globalflags-element-lan_policy-for-wlan"></a>Elemento enableAutoConfig (Indicadores_globales) (LAN_policy) para WLAN 
 
 El elemento **enableAutoConfig** (indicadores_globales) especifica si los equipos usan el servicio de configuración automática (AutoConfig) integrado para administrar las conexiones inalámbricas. Cuando **enableAutoConfig** tiene un valor de false, los equipos no deben usar AutoConfig para administrar las conexiones inalámbricas y el servicio de configuración automática solo responde a las solicitudes para habilitar el servicio. Cuando **enableAutoConfig** tiene un valor de true, los equipos pueden usar el servicio de configuración automática.
 
@@ -44,7 +44,7 @@ El elemento **enableAutoConfig** se define mediante el elemento [**indicadores_g
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
