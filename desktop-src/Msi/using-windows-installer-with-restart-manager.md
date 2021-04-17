@@ -1,0 +1,33 @@
+---
+description: Las aplicaciones que usan Windows Installer 4,0 para la instalación y el mantenimiento en Windows Vista usan automáticamente el administrador de reinicio para reducir los reinicios del sistema.
+ms.assetid: 821739ff-f7a7-4192-ad34-254aa7d74d13
+title: Usar Windows Installer con el administrador de reinicio
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4160b2241c75ec7305accd1ab4d1295a54fa9f65
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105677460"
+---
+# <a name="using-windows-installer-with-restart-manager"></a>Usar Windows Installer con el administrador de reinicio
+
+Las aplicaciones que usan Windows Installer 4,0 para la instalación y el mantenimiento en Windows Vista usan automáticamente el [Administrador de reinicio](../rstmgr/restart-manager-portal.md) para reducir los reinicios del sistema. El comportamiento predeterminado en Windows Vista es cerrar las aplicaciones en lugar de apagar y reiniciar el sistema operativo siempre que sea posible. En los casos en los que no se puede evitar el reinicio del sistema, los instaladores pueden usar la API del [Administrador de reinicio](../rstmgr/restart-manager-portal.md) para programar los reinicios de forma que se minimice la interrupción del flujo de trabajo del usuario.
+
+Windows Installer los desarrolladores pueden realizar las siguientes acciones para preparar el paquete para que funcione con el [Administrador de reinicio](../rstmgr/restart-manager-portal.md).
+
+-   Agregue el cuadro de diálogo [MsiRMFilesInUse](msirmfilesinuse-dialog.md) al paquete. Si el cuadro de diálogo MsiRMFilesInUse está presente en el paquete, el usuario de Windows Vista que ejecuta una instalación en el [nivel de interfaz de usuario](user-interface-levels.md) completo de la interfaz de usuario tiene la opción de cerrar y reiniciar las aplicaciones automáticamente. Un paquete de instalación puede contener información para el cuadro de diálogo MsiRMFilesInUse y el cuadro de diálogo [FilesInUse](filesinuse-dialog.md) . El cuadro de diálogo MsiRMFilesInUse solo se muestra si el paquete se instala con al menos Windows Installer 4,0 en Windows Vista y, de lo contrario, se omite. Los paquetes existentes que no tienen el cuadro de diálogo MsiRMFilesInUse continúan funcionando mediante el cuadro de diálogo FilesInUse. Una transformación de personalización se puede utilizar para agregar un cuadro de diálogo MsiRMFilesInUse a los paquetes existentes.
+
+    Los usuarios finales suelen ejecutar instalaciones en el nivel de [interfaz de usuario](user-interface-levels.md)de interfaz de usuario completa. La interfaz de usuario básica o las instalaciones de nivel de interfaz de usuario reducidas proporcionan al usuario la opción de usar el [Administrador de reinicio](../rstmgr/restart-manager-portal.md) para reducir los reinicios del sistema incluso si el cuadro de diálogo [MsiRMFilesInUse](msirmfilesinuse-dialog.md) no está presente. Las instalaciones de nivel de interfaz de usuario silenciosa siempre cierran aplicaciones y servicios y, en Windows Vista, siempre usan el administrador de reinicio.
+
+-   Registre aplicaciones para un reinicio mediante la función [**RegisterApplicationRestart**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) . El administrador de reinicio solo puede reiniciar las aplicaciones que se han registrado para reiniciarse. El administrador de reinicio reinicia las aplicaciones registradas después de la instalación. Si la instalación requiere un reinicio del sistema, el administrador de reinicio reinicia la aplicación registrada después del reinicio del sistema.
+-   Especifique INSTALLLOGMODE \_ RMFILESINUSE al habilitar un controlador de interfaz de usuario externo con las funciones [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) y [**MsiSetExternalUIRecord**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) . Windows Installer enviará un \_ mensaje RMFILESINUSE de INSTALLMESSAGE para los controladores externos de la interfaz de usuario que admitan el [Administrador de reinicio](../rstmgr/restart-manager-portal.md). Si no hay ninguna interfaz de usuario registrada o interna que controle el \_ mensaje INSTALLMESSAGE RMFILESINUSE, el instalador envía un \_ mensaje FILESINUSE de INSTALLMESSAGE para los controladores de la interfaz de usuario que admiten el cuadro de diálogo [FILESINUSE](filesinuse-dialog.md) . Para obtener más información, consulte [uso del administrador de reinicio con una interfaz de usuario externa](using-restart-manager-with-an-external-ui-.md).
+-   Las acciones personalizadas pueden agregar recursos que pertenecen a una sesión del [Administrador de reinicio](../rstmgr/restart-manager-portal.md) . La acción personalizada se debe secuenciar antes de la acción [InstallValidate](installvalidate-action.md) . Las acciones personalizadas pueden usar la propiedad [**MsiRestartManagerSessionKey**](msirestartmanagersessionkey.md) para obtener la clave de sesión y deben llamar a las funciones [**RmJoinSession**](/windows/win32/api/restartmanager/nf-restartmanager-rmjoinsession) y [**RmEndSession**](/windows/win32/api/restartmanager/nf-restartmanager-rmendsession) de la API del administrador de reinicio. Las acciones personalizadas no pueden quitar recursos que pertenecen a una sesión del administrador de reinicio. Las acciones personalizadas no deben intentar apagar o reiniciar las aplicaciones mediante las funciones [**RmShutdown**](/windows/win32/api/restartmanager/nf-restartmanager-rmshutdown), [**RmGetList**](/windows/win32/api/restartmanager/nf-restartmanager-rmgetlist) y [**RmRestart**](/windows/win32/api/restartmanager/nf-restartmanager-rmrestart) .
+-   Los autores de paquetes pueden basar una condición en la [tabla LaunchCondition](launchcondition-table.md) de la propiedad [**MsiSystemRebootPending**](msisystemrebootpending.md) para evitar la instalación de su paquete cuando está pendiente un reinicio del sistema.
+-   Los autores y administradores de paquetes pueden controlar la interacción del Windows Installer y reiniciar el administrador mediante las propiedades [**MSIRESTARTMANAGERCONTROL**](msirestartmanagercontrol.md), [**MSIDISABLERMRESTART**](msidisablermrestart.md), [**MSIRMSHUTDOWN**](msirmshutdown.md) y [DisableAutomaticApplicationShutdown](disableautomaticapplicationshutdown.md) .
+-   Las aplicaciones y los servicios deben seguir las instrucciones descritas en la sección [uso del administrador de reinicio](../rstmgr/using-restart-manager.md) de la documentación del [Administrador de reinicio](../rstmgr/restart-manager-portal.md) .
+
+ 
+
+ 

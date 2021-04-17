@@ -1,0 +1,87 @@
+---
+description: La tabla ModuleDependency mantiene una lista de otros módulos de combinación que son necesarios para que este módulo de combinación funcione correctamente.
+ms.assetid: 36418331-bec7-40c9-8fdf-fe4b958a1443
+title: Tabla ModuleDependency
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 8bb0c550f8c5ae480a07ca10401d1d3b67c496ba
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105678033"
+---
+# <a name="moduledependency-table"></a>Tabla ModuleDependency
+
+La tabla ModuleDependency mantiene una lista de otros módulos de combinación que son necesarios para que este módulo de combinación funcione correctamente. Esta tabla habilita una herramienta de combinación o comprobación para asegurarse de que los módulos de combinación necesarios se incluyen en realidad en la base de datos del instalador del usuario. La herramienta comprueba mediante una referencia cruzada a esta tabla con la tabla ModuleSignature en la base de datos del instalador.
+
+La tabla ModuleDependency tiene las columnas siguientes.
+
+
+
+| Columna           | Tipo                         | Clave | Nullable |
+|------------------|------------------------------|-----|----------|
+| ModuleID         | [Identificador](identifier.md) | Y   | N        |
+| ModuleLanguage   | [Entero](integer.md)       | Y   | N        |
+| RequiredID       | [Identificador](identifier.md) | Y   | N        |
+| RequiredLanguage | [Entero](integer.md)       | Y   | N        |
+| RequiredVersion  | [Versión](version.md)       |     | Y        |
+
+
+
+ 
+
+## <a name="columns"></a>Columnas
+
+<dl> <dt>
+
+<span id="ModuleID"></span><span id="moduleid"></span><span id="MODULEID"></span>ModuleID
+</dt> <dd>
+
+Identificador del módulo de combinación. Se trata de una clave externa en la [tabla ModuleSignature](modulesignature-table.md).
+
+</dd> <dt>
+
+<span id="ModuleLanguage"></span><span id="modulelanguage"></span><span id="MODULELANGUAGE"></span>ModuleLanguage
+</dt> <dd>
+
+IDENTIFICADOR de idioma decimal del módulo de combinación en ModuleID. Se trata de una clave externa en la [tabla ModuleSignature](modulesignature-table.md).
+
+</dd> <dt>
+
+<span id="RequiredID"></span><span id="requiredid"></span><span id="REQUIREDID"></span>RequiredID
+</dt> <dd>
+
+Identificador del módulo de combinación requerido por el módulo de combinación en ModuleID.
+
+</dd> <dt>
+
+<span id="RequiredLanguage"></span><span id="requiredlanguage"></span><span id="REQUIREDLANGUAGE"></span>RequiredLanguage
+</dt> <dd>
+
+IDENTIFICADOR de idioma numérico del módulo de combinación de RequiredID. La columna RequiredLanguage puede especificar el identificador de idioma de un solo idioma, por ejemplo, 1033 para Inglés de EE. UU., o especificar el identificador de idioma de un grupo de idiomas, como 9 para cualquier inglés. Si el campo contiene un identificador de idioma de grupo, cualquier módulo de combinación que tenga un código de idioma en ese grupo cumple la dependencia. Si RequiredLanguage se establece en 0, cualquier módulo de combinación que llene los demás requisitos satisface la dependencia.
+
+</dd> <dt>
+
+<span id="RequiredVersion"></span><span id="requiredversion"></span><span id="REQUIREDVERSION"></span>RequiredVersion
+</dt> <dd>
+
+Versión del módulo de combinación de RequiredID. Si este campo es null, cualquier versión rellena la dependencia.
+
+</dd> </dl>
+
+## <a name="validation"></a>Validación
+
+<dl>
+
+[ICE03](ice03.md)  
+[ICE06](ice06.md)  
+[ICE25](ice25.md)  
+</dl>
+
+ 
+
+ 
+
+
+
