@@ -1,0 +1,43 @@
+---
+title: Obtener un puntero de interfaz de objeto accesible
+description: Las aplicaciones cliente de Microsoft Active Accessibility recuperan punteros de interfaz a objetos accesibles mediante una de las siguientes funciones.
+ms.assetid: b82467f0-0d46-482a-8f6d-ad64f236601e
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 45d4006bf073075f2aa47a9911565213050e3d11
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "105695710"
+---
+# <a name="getting-an-accessible-object-interface-pointer"></a><span data-ttu-id="10f37-103">Obtener un puntero de interfaz de objeto accesible</span><span class="sxs-lookup"><span data-stu-id="10f37-103">Getting an Accessible Object Interface Pointer</span></span>
+
+<span data-ttu-id="10f37-104">Las aplicaciones cliente de Microsoft Active Accessibility recuperan punteros de interfaz a objetos accesibles mediante una de las siguientes funciones.</span><span class="sxs-lookup"><span data-stu-id="10f37-104">Microsoft Active Accessibility client applications retrieve interface pointers to accessible objects by using one of the following functions.</span></span>
+
+<span data-ttu-id="10f37-105">**AccessibleObjectFromEvent**</span><span class="sxs-lookup"><span data-stu-id="10f37-105">**AccessibleObjectFromEvent**</span></span>
+
+<span data-ttu-id="10f37-106">Muchos clientes buscan información sobre objetos accesibles específicos que generan eventos.</span><span class="sxs-lookup"><span data-stu-id="10f37-106">Many clients look up information about specific accessible objects that generate events.</span></span> <span data-ttu-id="10f37-107">Dado que la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) es la "puerta de enlace" a los objetos accesibles, los clientes deben tener una manera fácil de asociar [WinEvents](winevents-overview.md) a la interfaz **IAccessible** del objeto que genera los eventos.</span><span class="sxs-lookup"><span data-stu-id="10f37-107">Because the [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interface is the "gateway" to accessible objects, clients must have an easy way to associate [WinEvents](winevents-overview.md) with the **IAccessible** interface of the object generating the events.</span></span> <span data-ttu-id="10f37-108">Microsoft Active Accessibility proporciona la función [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) específicamente para este fin.</span><span class="sxs-lookup"><span data-stu-id="10f37-108">Microsoft Active Accessibility provides the [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) function specifically for this purpose.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="10f37-109">Los clientes con [funciones de enlace en contexto](in-context-hook-functions.md) deben llamar a la función [IsWindow](/windows/win32/api/winuser/nf-winuser-iswindow) antes de llamar a [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent).</span><span class="sxs-lookup"><span data-stu-id="10f37-109">Clients with [in-context hook functions](in-context-hook-functions.md) must call the [IsWindow](/windows/win32/api/winuser/nf-winuser-iswindow) function before calling [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent).</span></span>
+
+ 
+
+<span data-ttu-id="10f37-110">La función [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) acepta gran parte de la misma información que recibe la [*función de enlace*](/windows/desktop/api/Winuser/nc-winuser-wineventproc) de un cliente.</span><span class="sxs-lookup"><span data-stu-id="10f37-110">The [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) function accepts much of the same information that a client's [*hook function*](/windows/desktop/api/Winuser/nc-winuser-wineventproc) receives.</span></span> <span data-ttu-id="10f37-111">Cuando una función de enlace de cliente recibe una notificación de eventos, pasa los parámetros adecuados de los eventos a **AccessibleObjectFromEvent**.</span><span class="sxs-lookup"><span data-stu-id="10f37-111">When a client hook function receives an event notification, it passes the appropriate parameters from events to **AccessibleObjectFromEvent**.</span></span>
+
+<span data-ttu-id="10f37-112">La función recupera la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) del elemento de la interfaz de usuario que generó el evento o la interfaz del objeto primario del elemento.</span><span class="sxs-lookup"><span data-stu-id="10f37-112">The function retrieves either the [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interface of the user interface element that generated the event or the interface of the element's parent object.</span></span> <span data-ttu-id="10f37-113">Si se devuelve el puntero de interfaz del objeto primario, el cliente llama a las propiedades y los métodos del elemento primario para obtener información sobre el elemento secundario que generó el evento.</span><span class="sxs-lookup"><span data-stu-id="10f37-113">If the parent object's interface pointer is returned, the client calls the parent's properties and methods to obtain information about the child element that generated the event.</span></span>
+
+<span data-ttu-id="10f37-114">**AccessibleObjectFromPoint**</span><span class="sxs-lookup"><span data-stu-id="10f37-114">**AccessibleObjectFromPoint**</span></span>
+
+<span data-ttu-id="10f37-115">Para recuperar la dirección de la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de un objeto en un punto especificado de la pantalla, los clientes utilizan la función [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint) .</span><span class="sxs-lookup"><span data-stu-id="10f37-115">To retrieve the address of an object's [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interface at a specified point on the screen, clients use the [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint) function.</span></span>
+
+<span data-ttu-id="10f37-116">**AccessibleObjectFromWindow**</span><span class="sxs-lookup"><span data-stu-id="10f37-116">**AccessibleObjectFromWindow**</span></span>
+
+<span data-ttu-id="10f37-117">Para recuperar la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de un objeto desde un identificador de ventana, los clientes utilizan la función [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow) .</span><span class="sxs-lookup"><span data-stu-id="10f37-117">To retrieve an object's [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interface from a window handle, clients use the [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow) function.</span></span>
+
+<span data-ttu-id="10f37-118">Es posible que los servidores devuelvan punteros de interfaz distintos para el mismo elemento de la interfaz de usuario cada vez que se llame a la función [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent), [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)o [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow) .</span><span class="sxs-lookup"><span data-stu-id="10f37-118">It is possible that servers return distinct interface pointers for the same user interface element each time the [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent), [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint), or [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow) function is called.</span></span> <span data-ttu-id="10f37-119">Para determinar si dos punteros hacen referencia al mismo elemento de la interfaz de usuario, los desarrolladores de cliente deben comparar las propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) del objeto, no los punteros.</span><span class="sxs-lookup"><span data-stu-id="10f37-119">To determine if two pointers refer to the same user interface element, client developers must compare [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) properties of the object, not pointers.</span></span>
+
+ 
+
+ 
