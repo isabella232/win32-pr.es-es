@@ -28,12 +28,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8def1e7ff8e3011d5ca6c2df303818bea36eca65
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b0be949b106c1fa88b37e0c7764dbddb0546ded7
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152859"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187918"
 ---
 # <a name="win32_processstartup-class"></a>\_Clase Win32 ProcessStartup
 
@@ -64,7 +64,7 @@ class Win32_ProcessStartup : Win32_MethodParameterClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ProcessStartup de Win32** tiene estos tipos de miembros:
 
@@ -236,7 +236,7 @@ La configuración predeterminada es que el sistema operativo cree errores de ali
 
 </dt> <dd>
 
-Valor predeterminado
+Default
 
 </dd> <dt>
 
@@ -456,141 +456,7 @@ Tipo de acceso: lectura/escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| wShowWindow")
 </dt> </dl>
 
-Cómo se muestra la ventana al usuario.
-
-<dt>
-
-<span id="SW_HIDE"></span><span id="sw_hide"></span>
-
-<span id="SW_HIDE"></span><span id="sw_hide"></span>**SW \_ OCULTAR** (0)
-
-
-</dt> <dd>
-
-Oculta la ventana y activa otra ventana.
-
-</dd> <dt>
-
-<span id="SW_NORMAL"></span><span id="sw_normal"></span>
-
-<span id="SW_NORMAL"></span><span id="sw_normal"></span>**SW \_ NORMAL** (1)
-
-
-</dt> <dd>
-
-Activa y muestra una ventana. Si la ventana está minimizada o maximizada, el sistema la restaura en el tamaño y la posición originales. Una aplicación especifica esta marca cuando se muestra la ventana por primera vez.
-
-</dd> <dt>
-
-<span id="SW_SHOWMINIMIZED"></span><span id="sw_showminimized"></span>
-
-<span id="SW_SHOWMINIMIZED"></span><span id="sw_showminimized"></span>**SW \_ SHOWMINIMIZED** (2)
-
-
-</dt> <dd>
-
-Activa la ventana y la muestra como una ventana minimizada.
-
-</dd> <dt>
-
-<span id="SW_SHOWMAXIMIZED"></span><span id="sw_showmaximized"></span>
-
-<span id="SW_SHOWMAXIMIZED"></span><span id="sw_showmaximized"></span>**SW \_ SHOWMAXIMIZED** (3)
-
-
-</dt> <dd>
-
-Activa la ventana y la muestra como una ventana maximizada.
-
-</dd> <dt>
-
-<span id="SW_SHOWNOACTIVATE"></span><span id="sw_shownoactivate"></span>
-
-<span id="SW_SHOWNOACTIVATE"></span><span id="sw_shownoactivate"></span>**SW \_ SHOWNOACTIVATE** (4)
-
-
-</dt> <dd>
-
-Muestra una ventana en su tamaño y posición más recientes. Este valor es similar a **SW \_ normal**, salvo que la ventana no está activada.
-
-</dd> <dt>
-
-<span id="SW_SHOW"></span><span id="sw_show"></span>
-
-<span id="SW_SHOW"></span><span id="sw_show"></span>**SW \_ Mostrar** (5)
-
-
-</dt> <dd>
-
-Activa la ventana y la muestra en el tamaño y la posición actuales.
-
-</dd> <dt>
-
-<span id="SW_MINIMIZE"></span><span id="sw_minimize"></span>
-
-<span id="SW_MINIMIZE"></span><span id="sw_minimize"></span>**SW \_ MINIMIZAR** (6)
-
-
-</dt> <dd>
-
-Minimiza la ventana especificada y activa la ventana de nivel superior siguiente en el orden Z.
-
-</dd> <dt>
-
-<span id="SW_SHOWMINNOACTIVE"></span><span id="sw_showminnoactive"></span>
-
-<span id="SW_SHOWMINNOACTIVE"></span><span id="sw_showminnoactive"></span>**SW \_ SHOWMINNOACTIVE** (7)
-
-
-</dt> <dd>
-
-Muestra la ventana como una ventana minimizada. Este valor es similar a **SW \_ SHOWMINIMZED**, con la excepción de que la ventana no está activada.
-
-</dd> <dt>
-
-<span id="SW_SHOWNA"></span><span id="sw_showna"></span>
-
-<span id="SW_SHOWNA"></span><span id="sw_showna"></span>**SW \_ MOSTRADO** (8)
-
-
-</dt> <dd>
-
-Muestra la ventana en el tamaño y la posición actuales. Este valor es similar a **SW \_ Show**, salvo que la ventana no está activada.
-
-</dd> <dt>
-
-<span id="SW_RESTORE"></span><span id="sw_restore"></span>
-
-<span id="SW_RESTORE"></span><span id="sw_restore"></span>**SW \_ RESTOre** (9)
-
-
-</dt> <dd>
-
-Activa y muestra la ventana. Si la ventana está minimizada o maximizada, el sistema la restaura en el tamaño y la posición originales. Una aplicación especifica esta marca al restaurar una ventana minimizada.
-
-</dd> <dt>
-
-<span id="SW_SHOWDEFAULT"></span><span id="sw_showdefault"></span>
-
-<span id="SW_SHOWDEFAULT"></span><span id="sw_showdefault"></span>**SW \_ SHOWDEFAULT** (10)
-
-
-</dt> <dd>
-
-Establece el estado de la presentación basándose en el valor **SW \_ \** _ que se especifica en la estructura [_ *STARTUPINFO* *](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) pasada a la función [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) por el programa que inicia la aplicación.
-
-</dd> <dt>
-
-<span id="SW_FORCEMINIMIZE"></span><span id="sw_forceminimize"></span>
-
-<span id="SW_FORCEMINIMIZE"></span><span id="sw_forceminimize"></span>**SW \_ FORCEMINIMIZE** (11)
-
-
-</dt> <dd>
-
-Minimiza una ventana, incluso cuando el subproceso que posee la ventana deja de responder. Use esta marca solo al minimizar Windows desde un subproceso diferente.
-
-</dd> </dl>
+Cómo se muestra la ventana al usuario. Puede ser cualquiera de los valores que se pueden especificar en el parámetro *nCmdShow* para la función [ShowWindow](/windows/desktop/api/winuser/nf-winuser-showwindow) .
 
 </dd> <dt>
 
@@ -851,7 +717,7 @@ End If
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-title: Constantes
+title: Constantes de pruebas de posicionamiento táctiles
 description: En los temas de esta sección se proporcionan las especificaciones de referencia para las constantes de prueba de posicionamiento táctil.
 ms.assetid: 43136C6C-89B8-4D37-9D7E-22518069B173
 keywords:
@@ -9,14 +9,14 @@ keywords:
 - Función táctil
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: f08f48c78277d3fbf237c32b54bc24a7a154aca5
-ms.sourcegitcommit: 9e389b8e39616dcef8f7ff4bc53d945179401478
+ms.openlocfilehash: 6e997a6d4673af24d78e9ffabf4bb2fc26e3132c
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "104077245"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187742"
 ---
-# <a name="constants"></a>Constantes
+# <a name="touch-hit-testing-constants"></a>Constantes de pruebas de posicionamiento táctiles
 
 En los temas de esta sección se proporcionan las especificaciones de referencia de las constantes usadas por las API de [prueba de posicionamiento táctil](touchhittest-reference.md) .
 
@@ -24,8 +24,8 @@ En los temas de esta sección se proporcionan las especificaciones de referencia
 
 | Tema | Descripción |
 | --- | --- |
-| [**Comportamientos de la prueba de posicionamiento táctil**](hit-testing-behaviors.md)<br/> | Las aplicaciones o marcos de interfaz de usuario usan las constantes siguientes para identificar cómo se procesan los mensajes para las pruebas de posicionamiento táctil mediante Windows que se registran a través de la función [**RegisterTouchHitTestingWindow**](/windows/win32/api/winuser/nf-winuser-registertouchhittestingwindow) .<br/> |
-| [**Puntuaciones de la prueba de posicionamiento táctil**](hit-testing-scores.md)<br/>       | Las constantes siguientes identifican las puntuaciones de pruebas de posicionamiento posibles para un objeto, con respecto a otros objetos que forman una intersección con el área de contacto táctil.<br/> |
+| [**Comportamientos de la prueba de posicionamiento táctil**](hit-testing-behaviors.md) | Las aplicaciones o marcos de interfaz de usuario usan las constantes siguientes para identificar cómo se procesan los mensajes para las pruebas de posicionamiento táctil mediante Windows que se registran a través de la función [**RegisterTouchHitTestingWindow**](/windows/win32/api/winuser/nf-winuser-registertouchhittestingwindow) . |
+| [**Puntuaciones de la prueba de posicionamiento táctil**](hit-testing-scores.md)       | Las constantes siguientes identifican las puntuaciones de pruebas de posicionamiento posibles para un objeto, con respecto a otros objetos que forman una intersección con el área de contacto táctil. |
 
 ## <a name="related-topics"></a>Temas relacionados
 
