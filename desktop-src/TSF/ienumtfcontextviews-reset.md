@@ -1,6 +1,6 @@
 ---
-title: Método IEnumTfContextViews
-description: Método IEnumTfContextViews | Método IEnumTfContextViews
+title: Método IEnumTfContextViews (API IEnumTfContextViews. Reset)
+description: Método IEnumTfContextViews | IEnumTfContextViews. Reset API
 ms.assetid: cd1684cd-83d4-4161-8dcf-6edc6c37332b
 keywords:
 - Marco de trabajo de servicios de texto de método
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3ee3ac14e5f1a60aceff06fa039a52bd5e3a6379
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 797314a7ebab764f4fc5c447499828659bc179b6
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689762"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187990"
 ---
-# <a name="ienumtfcontextviews-method"></a>Método IEnumTfContextViews
+# <a name="ienumtfcontextviews-method-ienumtfcontextviewsreset-api"></a>Método IEnumTfContextViews (API IEnumTfContextViews. Reset)
 
 ## <a name="syntax"></a>Sintaxis
 

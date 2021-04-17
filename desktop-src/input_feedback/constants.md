@@ -1,5 +1,5 @@
 ---
-title: Constantes
+title: Constantes de configuración de comentarios de entrada
 description: En esta sección se proporcionan las especificaciones de referencia de las constantes de configuración de comentarios de entrada.
 ms.assetid: 1B0EA599-6618-4DF2-B8C7-91A534BD85C0
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: abe19bfda614446f473246578567ec0996dc6c5a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 99c2271363ff9f4b421f20a3ac6376661d0c50cb
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150829"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187930"
 ---
-# <a name="constants"></a>Constantes
+# <a name="input-feedback-configuration-constants"></a>Constantes de configuración de comentarios de entrada
 
 En esta sección se proporcionan las especificaciones de referencia de las constantes de [configuración de comentarios de entrada](input-feedback-configuration-portal.md) .
 
@@ -50,7 +50,7 @@ Especifica que debe comprobarse la cadena de ventana primaria.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b71990e230290403bca2a5af11eeca11b093402f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47f47a937123ce252189aac57e922b10c2a015fc
+ms.sourcegitcommit: 8737f32d64e5f01c1d38aab92736e4088d6c446e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104533273"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098480"
 ---
 # <a name="texld---ps_2_0-and-up"></a>texld-PS \_ 2 \_ 0 y arriba
 
 Muestra una textura en una muestra determinada, usando las coordenadas de textura proporcionadas. Esta instrucción es diferente de la instrucción [texld-PS \_ 1 \_ 4](texld---ps-1-4.md) utilizada en el sombreador de píxeles versión 1 \_ 4.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -29,7 +29,7 @@ Muestra una textura en una muestra determinada, usando las coordenadas de textur
 
 
 
- 
+ 
 
 Donde:
 
@@ -54,7 +54,7 @@ Una instrucción de textura dependiente de segundo orden se define como una inst
 
 ### <a name="ps_3_0"></a>PS \_ 3 \_ 0
 
-SRC1 debe ser una [muestra (Direct3D 9 ASM-PS)](dx9-graphics-reference-asm-ps-registers-sampler.md) , sin \# modificador. Swizzle se permite en src0 o SRC1. Swizzle se aplica a la textura coordintates antes de la búsqueda de textura.
+SRC1 debe ser una [muestra (Direct3D 9 ASM-PS)](dx9-graphics-reference-asm-ps-registers-sampler.md) , sin \# modificador. Swizzle se permite en src0 o SRC1. Swizzle se aplica a las coordenadas de textura antes de la búsqueda de textura.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -68,7 +68,7 @@ Esta instrucción es compatible con las siguientes versiones:
 
 
 
- 
+ 
 
 El número de coordenadas necesarias para que src0 realice el ejemplo de textura depende de cómo se declaró SRC1, además del componente. w. Los tipos de muestra se declaran con [DCL \_ samplerType (SM2, SM3-PS ASM)](dcl-samplertype---ps.md). Si SRC1 se declara como una muestra 2D, src0 debe contener coordenadas. XY; Si SRC1 se declara como una muestra de cubo o una muestra de volumen, src0 debe contener coordenadas. XYZ. Se permite el muestreo de una textura con menos dimensiones que las presentes en la coordenada de textura, ya que los componentes de coordenadas de textura adicionales se omiten.
 
@@ -86,7 +86,7 @@ Si la textura de origen contiene menos de cuatro componentes, los valores predet
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -95,6 +95,6 @@ Si la textura de origen contiene menos de cuatro componentes, los valores predet
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

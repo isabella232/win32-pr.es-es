@@ -1,6 +1,6 @@
 ---
-title: Tipos de medios
-description: Tipos de medios
+title: Tipos de medios para el SDK de Windows Media Format
+description: Obtenga información acerca de los tipos de medios que puede usar el SDK de Windows Media Format. Los tipos de medios son valores GUID asignados a constantes en el SDK.
 ms.assetid: 00dcbb20-09ed-44c5-992c-20f3d17ad47c
 keywords:
 - Windows Media Format SDK, tipos de medios
@@ -9,14 +9,14 @@ keywords:
 - tipos de medios, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35005498e8b0625f404e9a54a51cddc65fbfd7bc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1d6d15255ab311c67562a6c9dde83650240b0803
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104148853"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187814"
 ---
-# <a name="media-types"></a>Tipos de medios
+# <a name="media-types-for-windows-media-format-sdk"></a>Tipos de medios para el SDK de Windows Media Format
 
 Los tipos de medios identifican los distintos tipos de medios que puede usar el SDK de Windows Media Format. Todos los tipos de medios son valores GUID que se han asignado a constantes en el SDK. Los valores de GUID representados por las constantes que se enumeran en esta sección se enumeran en la sección [identificadores de tipo de medio](media-type-identifiers.md) de esta referencia.
 
@@ -35,7 +35,7 @@ En la tabla siguiente se enumeran los tipos de medios principales. Estas constan
 
 
 
- 
+ 
 
 Además de los tipos de medios principales admitidos explícitamente, puede crear sus propios tipos de datos arbitrarios. En el caso de los tipos de datos arbitrarios personalizados, debe asegurarse de que el GUID que usa no coincide con un tipo principal existente.
 
@@ -51,7 +51,7 @@ A menudo, un flujo multimedia tendrá un subtipo además de su tipo principal. E
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,9 +63,9 @@ A menudo, un flujo multimedia tendrá un subtipo además de su tipo principal. E
 [**Referencia de programación**](programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Método IEnumTfContextViews
-description: Método IEnumTfContextViews | Método IEnumTfContextViews
+title: Método IEnumTfContextViews (API IEnumTfContextViews. Next)
+description: Método IEnumTfContextViews | API IEnumTfContextViews. Next
 ms.assetid: 87a49487-b882-4904-b1a7-d658d1b11482
 keywords:
 - Marco de trabajo de servicios de texto de método
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 82185f676496e928c330730126f7a905bd4885cc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 330f813f3e5f67be83ff3e21f7441d9d5af7392c
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362116"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187994"
 ---
-# <a name="ienumtfcontextviews-method"></a>Método IEnumTfContextViews
+# <a name="ienumtfcontextviews-method-ienumtfcontextviewsnext-api"></a>Método IEnumTfContextViews (API IEnumTfContextViews. Next)
 
 ## <a name="syntax"></a>Sintaxis
 
