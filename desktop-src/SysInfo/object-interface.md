@@ -1,0 +1,38 @@
+---
+description: 'Windows proporciona funciones que realizan las siguientes tareas:'
+ms.assetid: 437419c7-d6c5-4cae-b5d0-d552c75d4448
+title: Interfaz de objeto
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9adc85eafdcfe4bb573d3e156b20f9b74dbf0652
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104497687"
+---
+# <a name="object-interface"></a><span data-ttu-id="4065d-103">Interfaz de objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-103">Object Interface</span></span>
+
+<span data-ttu-id="4065d-104">Windows proporciona funciones que realizan las siguientes tareas:</span><span class="sxs-lookup"><span data-stu-id="4065d-104">Windows provides functions that perform the following tasks:</span></span>
+
+-   <span data-ttu-id="4065d-105">Creación de un objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-105">Create an object</span></span>
+-   <span data-ttu-id="4065d-106">Obtener un identificador de objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-106">Get an object handle</span></span>
+-   <span data-ttu-id="4065d-107">Obtener información sobre el objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-107">Get information about the object</span></span>
+-   <span data-ttu-id="4065d-108">Establecer información sobre el objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-108">Set information about the object</span></span>
+-   <span data-ttu-id="4065d-109">Cerrar el identificador de objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-109">Close the object handle</span></span>
+-   <span data-ttu-id="4065d-110">Destruir el objeto</span><span class="sxs-lookup"><span data-stu-id="4065d-110">Destroy the object</span></span>
+
+<span data-ttu-id="4065d-111">Algunas de estas tareas no son necesarias para cada objeto.</span><span class="sxs-lookup"><span data-stu-id="4065d-111">Some of these tasks are not necessary for each object.</span></span> <span data-ttu-id="4065d-112">Algunas de estas tareas se combinan para determinados objetos.</span><span class="sxs-lookup"><span data-stu-id="4065d-112">Some of these tasks are combined for certain objects.</span></span> <span data-ttu-id="4065d-113">Por ejemplo, una aplicación puede crear un objeto de evento.</span><span class="sxs-lookup"><span data-stu-id="4065d-113">For example, an application can create an event object.</span></span> <span data-ttu-id="4065d-114">Otras aplicaciones pueden abrir el evento para obtener un identificador único de este objeto de evento.</span><span class="sxs-lookup"><span data-stu-id="4065d-114">Other applications can open the event to obtain a unique handle to this event object.</span></span> <span data-ttu-id="4065d-115">A medida que cada aplicación termina de usar el evento, cierra su identificador al objeto.</span><span class="sxs-lookup"><span data-stu-id="4065d-115">As each application finishes using the event, it closes its handle to the object.</span></span> <span data-ttu-id="4065d-116">Cuando no quedan identificadores abiertos en el objeto de evento, el sistema destruye el objeto de evento.</span><span class="sxs-lookup"><span data-stu-id="4065d-116">When there are no remaining open handles to the event object, the system destroys the event object.</span></span> <span data-ttu-id="4065d-117">En cambio, una aplicación puede obtener un identificador de un objeto de ventana existente.</span><span class="sxs-lookup"><span data-stu-id="4065d-117">In contrast, an application can obtain a handle to an existing window object.</span></span> <span data-ttu-id="4065d-118">Cuando el objeto de ventana ya no se necesita, la aplicación debe destruir el objeto, lo que invalida el identificador de la ventana.</span><span class="sxs-lookup"><span data-stu-id="4065d-118">When the window object is no longer needed, the application must destroy the object, which invalidates the window handle.</span></span>
+
+<span data-ttu-id="4065d-119">En ocasiones, un objeto permanece en memoria una vez cerrados todos los identificadores de objeto.</span><span class="sxs-lookup"><span data-stu-id="4065d-119">Occasionally, an object remains in memory after all object handles have been closed.</span></span> <span data-ttu-id="4065d-120">Por ejemplo, un subproceso podría crear un objeto de evento y esperar en el controlador de eventos.</span><span class="sxs-lookup"><span data-stu-id="4065d-120">For example, a thread could create an event object and wait on the event handle.</span></span> <span data-ttu-id="4065d-121">Mientras el subproceso está esperando, otro subproceso podría cerrar el mismo identificador de objeto de evento.</span><span class="sxs-lookup"><span data-stu-id="4065d-121">While the thread is waiting, another thread could close the same event object handle.</span></span> <span data-ttu-id="4065d-122">El objeto de evento permanece en memoria, sin identificadores de objeto de evento, hasta que el objeto de evento se establece en el estado señalado y se completa la operación de espera.</span><span class="sxs-lookup"><span data-stu-id="4065d-122">The event object remains in memory, without any event object handles, until the event object is set to the signaled state and the wait operation is completed.</span></span> <span data-ttu-id="4065d-123">En este momento, el sistema quita el objeto de la memoria.</span><span class="sxs-lookup"><span data-stu-id="4065d-123">At this time, the system removes the object from memory.</span></span>
+
+<span data-ttu-id="4065d-124">Los identificadores y los objetos consumen memoria.</span><span class="sxs-lookup"><span data-stu-id="4065d-124">Handles and objects consume memory.</span></span> <span data-ttu-id="4065d-125">Por lo tanto, para mantener el rendimiento del sistema, debe cerrar los identificadores y eliminar objetos en cuanto ya no se necesiten.</span><span class="sxs-lookup"><span data-stu-id="4065d-125">Therefore, to preserve system performance, you should close handles and delete objects as soon as they are no longer needed.</span></span> <span data-ttu-id="4065d-126">Si no lo hace, la aplicación puede perjudicar el rendimiento del sistema, debido al uso excesivo del archivo de paginación.</span><span class="sxs-lookup"><span data-stu-id="4065d-126">If you do not do this, your application can hurt system performance, due to excessive use of the paging file.</span></span>
+
+<span data-ttu-id="4065d-127">Cuando finaliza un proceso, el sistema cierra automáticamente los identificadores y elimina los objetos creados por el proceso.</span><span class="sxs-lookup"><span data-stu-id="4065d-127">When a process terminates, the system automatically closes handles and deletes objects created by the process.</span></span> <span data-ttu-id="4065d-128">Sin embargo, cuando un subproceso finaliza, el sistema normalmente no cierra los identificadores ni los objetos de eliminación.</span><span class="sxs-lookup"><span data-stu-id="4065d-128">However, when a thread terminates, the system usually does not close handles or delete objects.</span></span> <span data-ttu-id="4065d-129">Las únicas excepciones son los objetos de la ventana, el enlace, la posición de la ventana y el intercambio dinámico de datos (DDE). Estos objetos se destruyen cuando finaliza el subproceso de creación.</span><span class="sxs-lookup"><span data-stu-id="4065d-129">The only exceptions are window, hook, window position, and dynamic data exchange (DDE) conversation objects; these objects are destroyed when the creating thread terminates.</span></span>
+
+ 
+
+ 
+
+
+
