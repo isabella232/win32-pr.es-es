@@ -1,7 +1,7 @@
 ---
-description: El operador = asigna una nueva hora de referencia.
+description: El operador = asigna una nueva hora de referencia. Este método usa el parámetro *ll* .
 ms.assetid: 556c2e8a-4726-42ab-949d-9a028ebb1b95
-title: Método CRefTime. Operator = (Reftime. h)
+title: CRefTime. Operator = Method (Reftime. h)-ll (parámetro)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8d93a57211c3bc7d787e68f70f36be868ff64449
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d09cb957e06d8b075cff3d831a7f68fbbdf662a8
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681059"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187842"
 ---
-# <a name="creftimeoperator-method-reftimeh"></a>Método CRefTime. Operator = (Reftime. h)
+# <a name="creftimeoperator-method-reftimeh---ll-parameter"></a>CRefTime. Operator = Method (Reftime. h)-ll (parámetro)
 
 El operador = asigna una nueva hora de referencia.
 
@@ -59,8 +59,8 @@ Devuelve una referencia al objeto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Reftime. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado  | Reftime. h (incluir streams. h)                                                                                   |
+| Biblioteca | Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
 
 
 
