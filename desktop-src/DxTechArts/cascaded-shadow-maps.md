@@ -4,12 +4,12 @@ description: Los mapas de sombras en cascada (CSMs) son la mejor manera de comba
 ms.assetid: d3570d0a-74e0-5b9c-6586-c933f630c4ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce6297e46f53bafbbe6abbba1629904f90f78d5e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ae70433f97f33c3cc28af8e282b14ea1f513cf4d
+ms.sourcegitcommit: 54db9e6a00a5c8f68e7c1a16b8c6d4943374498c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995439"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106165525"
 ---
 # <a name="cascaded-shadow-maps"></a>Mapas de instantáneas en cascada
 
@@ -81,7 +81,7 @@ La figura 4 muestra algunas cámaras diferentes y sus respectivas particiones. C
 
 **Figura 4. Distintas configuraciones requieren diferentes divisiones de frustum**
 
-![distintas configuraciones requieren diferentes divisiones de frustum](images/different-configurations-require different-frustum-splits.png)
+![distintas configuraciones requieren diferentes divisiones de frustum](images/different-configurations-require-different-frustum-splits.png)
 
 Salido Cuando Geometry tiene un intervalo dinámico alto en Z, se necesitan muchos en cascada. Centro Cuando la geometría tiene un intervalo dinámico bajo en Z, hay pocas ventajas de varios Frustums. Correcta Solo se necesitan tres particiones cuando el intervalo dinámico es medio.
 
@@ -472,6 +472,6 @@ Lauritzen, Andrew y McCool, Michael. [Mapas de sombras de varianza por capas](ht
 
 Engel, Woflgang F. sección 4. Mapas de instantáneas en cascada. ShaderX5, técnicas de representación avanzadas, Wolfgang F. Engel, Ed. Charles River media, Boston, Massachusetts. 2006. PP. 197:206.
 
- 
+ 
 
- 
+ 
