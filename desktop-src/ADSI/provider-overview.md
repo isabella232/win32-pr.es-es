@@ -7,14 +7,14 @@ keywords:
 - Información general del proveedor ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6364cec153ed481816914ce47b5bad257e715871
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: 33d865bc138a676975781f72da1afa5391e87f26
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105661422"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187826"
 ---
-# <a name="provider-overview"></a>Información general del proveedor
+# <a name="provider-overview-for-adsi"></a>Información general del proveedor para ADSI
 
 Además de los [requisitos mínimos del proveedor](provider-minimum-requirements.md), otros datos de uso incluyen:
 
