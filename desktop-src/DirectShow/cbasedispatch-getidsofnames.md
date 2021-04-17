@@ -1,0 +1,130 @@
+---
+description: El método GetIDsOfNames asigna un conjunto de nombres a un conjunto correspondiente de DispId.
+ms.assetid: 0c0a2726-e89a-4eaf-aab0-e7e9e82e3c34
+title: Método CBaseDispatch. GetIDsOfNames (Ctlutil. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CBaseDispatch.GetIDsOfNames
+api_type:
+- COM
+api_location:
+- Strmbase.lib
+- Strmbase.dll
+- Strmbasd.lib
+- Strmbasd.dll
+ms.openlocfilehash: cf11e4aa298f924b69c299c2f411dde88e28e5b6
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105660193"
+---
+# <a name="cbasedispatchgetidsofnames-method"></a>CBaseDispatch. GetIDsOfNames (método)
+
+El `GetIDsOfNames` método asigna un conjunto de nombres a un conjunto correspondiente de DispId.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+HRESULT GetIDsOfNames(
+   REFIID  riid,
+   OLECHAR **rgszNames,
+   UINT    cNames,
+   LCID    lcid,
+   DISPID  *rgdispid
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*riid* 
+</dt> <dd>
+
+Referencia a un identificador de interfaz (IID) que especifica la interfaz.
+
+</dd> <dt>
+
+*rgszNames* 
+</dt> <dd>
+
+Dirección de una matriz de cadenas de caracteres anchos que contienen los nombres que se van a asignar.
+
+</dd> <dt>
+
+*CNAME* 
+</dt> <dd>
+
+Tamaño de la matriz proporcionado por el parámetro *rgszNames* .
+
+</dd> <dt>
+
+*lcid* 
+</dt> <dd>
+
+Contexto de configuración regional en el que se van a interpretar los nombres. Puede ser **null**.
+
+</dd> <dt>
+
+*rgdispid* 
+</dt> <dd>
+
+Puntero a una matriz que recibe los DispId. Cada elemento de recibe un identificador que corresponde a uno de los nombres pasados en el parámetro *rgszNames* .
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+
+
+
+| Código devuelto                                                                                         | Descripción                                         |
+|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| <dl> <dt>**S \_ correcto**</dt> </dl>                | Correcto.<br/>                                 |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Memoria insuficiente.<br/>                     |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNNAME**</dt> </dl> | No se conocían uno o varios de los nombres.<br/> |
+
+
+
+ 
+
+## <a name="remarks"></a>Observaciones
+
+Este método se comporta como el método **IDispatch:: GetIDsOfNames** , pero el parámetro *riid* especifica la interfaz en la que se van a recuperar los DispId. (En la versión **IDispatch** , el parámetro *riid* está reservado).
+
+Si el método devuelve DISP \_ E \_ UNKNOWNNAME, los DISPID devueltos contienen DISPID \_ Unknown para cada entrada que corresponde a un nombre desconocido.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[**Clase CBaseDispatch**](cbasedispatch.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
