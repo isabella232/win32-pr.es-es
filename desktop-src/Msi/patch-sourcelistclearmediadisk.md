@@ -1,0 +1,84 @@
+---
+description: El método SourceListClearMediaDisk del objeto patch quita un disco especificado del conjunto de discos registrados para una revisión. Acepta el dipatine como parámetro. Este método llama a MsiSourceListClearMediaDisk.
+ms.assetid: fc52ecb9-2c79-497b-b551-0d3c4f584e86
+title: Patch. SourceListClearMediaDisk (método)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Patch.SourceListClearMediaDisk
+api_type:
+- COM
+api_location:
+- Msi.dll
+ms.openlocfilehash: 722b4573d89214312e77e4fde78e1905aefa885f
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105653437"
+---
+# <a name="patchsourcelistclearmediadisk-method"></a><span data-ttu-id="5e8cf-105">Patch. SourceListClearMediaDisk (método)</span><span class="sxs-lookup"><span data-stu-id="5e8cf-105">Patch.SourceListClearMediaDisk method</span></span>
+
+<span data-ttu-id="5e8cf-106">El método **SourceListClearMediaDisk** del objeto [**patch**](patch-object.md) quita un disco especificado del conjunto de discos registrados para una revisión.</span><span class="sxs-lookup"><span data-stu-id="5e8cf-106">The **SourceListClearMediaDisk** method of the [**Patch**](patch-object.md) object removes a specified disk from the set of registered disks for a patch.</span></span> <span data-ttu-id="5e8cf-107">Acepta el *dipatine* como parámetro.</span><span class="sxs-lookup"><span data-stu-id="5e8cf-107">Accepts *Diskid* as a parameter.</span></span> <span data-ttu-id="5e8cf-108">Este método llama a [**MsiSourceListClearMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska).</span><span class="sxs-lookup"><span data-stu-id="5e8cf-108">This method calls [**MsiSourceListClearMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska).</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="5e8cf-109">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="5e8cf-109">Syntax</span></span>
+
+
+```JScript
+Patch.SourceListClearMediaDisk(
+  Diskid
+)
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="5e8cf-110">Parámetros</span><span class="sxs-lookup"><span data-stu-id="5e8cf-110">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="5e8cf-111">*Detectaron*</span><span class="sxs-lookup"><span data-stu-id="5e8cf-111">*Diskid*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="5e8cf-112">Este parámetro proporciona el identificador del disco que se va a quitar.</span><span class="sxs-lookup"><span data-stu-id="5e8cf-112">This parameter provides the ID of the disk to remove.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="5e8cf-113">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="5e8cf-113">Return value</span></span>
+
+<span data-ttu-id="5e8cf-114">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="5e8cf-114">This method does not return a value.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="5e8cf-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="5e8cf-115">Requirements</span></span>
+
+
+
+| <span data-ttu-id="5e8cf-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="5e8cf-116">Requirement</span></span> | <span data-ttu-id="5e8cf-117">Value</span><span class="sxs-lookup"><span data-stu-id="5e8cf-117">Value</span></span> |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="5e8cf-118">Versión</span><span class="sxs-lookup"><span data-stu-id="5e8cf-118">Version</span></span><br/> | <span data-ttu-id="5e8cf-119">Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7.</span><span class="sxs-lookup"><span data-stu-id="5e8cf-119">Windows Installer 5.0 on Windows Server 2012, Windows 8, Windows Server 2008 R2 or Windows 7.</span></span> <span data-ttu-id="5e8cf-120">Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="5e8cf-120">Windows Installer 4.0 or Windows Installer 4.5 on Windows Server 2008 or Windows Vista.</span></span> <span data-ttu-id="5e8cf-121">Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000</span><span class="sxs-lookup"><span data-stu-id="5e8cf-121">Windows Installer 3.0 or later on Windows Server 2003, Windows XP, and Windows 2000</span></span><br/> |
+| <span data-ttu-id="5e8cf-122">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="5e8cf-122">DLL</span></span><br/>     | <dl> <span data-ttu-id="5e8cf-123"><dt>Msi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="5e8cf-123"><dt>Msi.dll</dt></span></span> </dl>                                                                                                                                                                                                   |
+| <span data-ttu-id="5e8cf-124">IID</span><span class="sxs-lookup"><span data-stu-id="5e8cf-124">IID</span></span><br/>     | <span data-ttu-id="5e8cf-125">IID \_ IPatch se define como 000C10A1-0000-0000-C000-000000000046</span><span class="sxs-lookup"><span data-stu-id="5e8cf-125">IID\_IPatch is defined as 000C10A1-0000-0000-C000-000000000046</span></span><br/>                                                                                                                                                                                                            |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="5e8cf-126">Vea también</span><span class="sxs-lookup"><span data-stu-id="5e8cf-126">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="5e8cf-127">**Distribución**</span><span class="sxs-lookup"><span data-stu-id="5e8cf-127">**Patch**</span></span>](patch-object.md)
+</dt> <dt>
+
+[<span data-ttu-id="5e8cf-128">**MsiSourceListClearMediaDisk**</span><span class="sxs-lookup"><span data-stu-id="5e8cf-128">**MsiSourceListClearMediaDisk**</span></span>](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska)
+</dt> <dt>
+
+[<span data-ttu-id="5e8cf-129">No se admite en Windows Installer 2,0 y versiones anteriores</span><span class="sxs-lookup"><span data-stu-id="5e8cf-129">Not Supported in Windows Installer 2.0 and earlier</span></span>](not-supported-in-windows-installer-version-2-0.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

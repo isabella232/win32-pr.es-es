@@ -1,0 +1,78 @@
+---
+title: Cómo usar la información de saltos de línea y de palabra
+description: Un control Rich Edit llama a una función denominada procedimiento de separación de palabras para buscar saltos entre palabras y para determinar dónde se pueden dividir las líneas.
+ms.assetid: DDCE9814-0D39-494C-953A-FB6A98100EEA
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: feb90064e455bfeb8ee126e6107d75ef29b3a4f3
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "105656423"
+---
+# <a name="how-to-use-word-and-line-break-information"></a><span data-ttu-id="465d7-103">Cómo usar la información de saltos de línea y de palabra</span><span class="sxs-lookup"><span data-stu-id="465d7-103">How to Use Word and Line Break Information</span></span>
+
+<span data-ttu-id="465d7-104">Un control Rich Edit llama a una función denominada procedimiento de separación de palabras para buscar saltos entre palabras y para determinar dónde se pueden dividir las líneas.</span><span class="sxs-lookup"><span data-stu-id="465d7-104">A rich edit control calls a function called a word-break procedure to find breaks between words and to determine where it can break lines.</span></span> <span data-ttu-id="465d7-105">El control utiliza esta información al realizar operaciones de ajuste de texto y al procesar las combinaciones de teclas CTRL + flecha izquierda y CTRL + flecha derecha.</span><span class="sxs-lookup"><span data-stu-id="465d7-105">The control uses this information when performing word-wrap operations and when processing CTRL+LEFT ARROW key and CTRL+RIGHT ARROW key combinations.</span></span> <span data-ttu-id="465d7-106">Una aplicación puede enviar mensajes a un control Rich Edit para reemplazar el procedimiento predeterminado de separación de palabras, para recuperar información de separación de palabras y para determinar en qué línea cae un carácter determinado.</span><span class="sxs-lookup"><span data-stu-id="465d7-106">An application can send messages to a rich edit control to replace the default word-break procedure, to retrieve word-break information, and to determine what line a given character falls on.</span></span>
+
+## <a name="what-you-need-to-know"></a><span data-ttu-id="465d7-107">Aspectos que debe saber</span><span class="sxs-lookup"><span data-stu-id="465d7-107">What you need to know</span></span>
+
+### <a name="technologies"></a><span data-ttu-id="465d7-108">Tecnologías</span><span class="sxs-lookup"><span data-stu-id="465d7-108">Technologies</span></span>
+
+-   [<span data-ttu-id="465d7-109">Controles de Windows</span><span class="sxs-lookup"><span data-stu-id="465d7-109">Windows Controls</span></span>](window-controls.md)
+
+### <a name="prerequisites"></a><span data-ttu-id="465d7-110">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="465d7-110">Prerequisites</span></span>
+
+-   <span data-ttu-id="465d7-111">C/C++</span><span class="sxs-lookup"><span data-stu-id="465d7-111">C/C++</span></span>
+-   <span data-ttu-id="465d7-112">Programación de la interfaz de usuario de Windows</span><span class="sxs-lookup"><span data-stu-id="465d7-112">Windows User Interface Programming</span></span>
+
+## <a name="instructions"></a><span data-ttu-id="465d7-113">Instrucciones</span><span class="sxs-lookup"><span data-stu-id="465d7-113">Instructions</span></span>
+
+### <a name="use-word-and-line-break-information"></a><span data-ttu-id="465d7-114">Usar información de saltos de línea y de palabra</span><span class="sxs-lookup"><span data-stu-id="465d7-114">Use Word and Line Break Information</span></span>
+
+<span data-ttu-id="465d7-115">Los procedimientos de separación de palabras para controles Rich Edit son similares a los de los controles de edición, pero tienen funcionalidades adicionales: los procedimientos de separación de palabras para ambos tipos de controles pueden determinar si un carácter es un delimitador y buscar el salto de palabra más cercano antes o después de la posición especificada.</span><span class="sxs-lookup"><span data-stu-id="465d7-115">Word-break procedures for rich edit controls are similar to those for edit controls, but they have additional capabilities: word-break procedures for both kinds of controls can determine whether a character is a delimiter and can find the nearest word break before or after the specified position.</span></span> <span data-ttu-id="465d7-116">Un delimitador es un carácter que marca el final de una palabra, como un espacio.</span><span class="sxs-lookup"><span data-stu-id="465d7-116">A delimiter is a character that marks the end of a word, such as a space.</span></span> <span data-ttu-id="465d7-117">Normalmente, en un control de edición, se produce un salto de palabra solo después de los delimitadores.</span><span class="sxs-lookup"><span data-stu-id="465d7-117">Usually, in an edit control, a word break occurs only after delimiters.</span></span> <span data-ttu-id="465d7-118">Sin embargo, las diferentes reglas se aplican a la mayoría de los idiomas asiáticos.</span><span class="sxs-lookup"><span data-stu-id="465d7-118">However, different rules apply to most Asian languages.</span></span>
+
+<span data-ttu-id="465d7-119">Los procedimientos de separación de palabras para controles Rich Edit también agrupan caracteres en clases de caracteres, cada una identificada por un valor en el intervalo de 0x00 a 0x0F.</span><span class="sxs-lookup"><span data-stu-id="465d7-119">Word-break procedures for rich edit controls also group characters into character classes, each identified by a value in the range 0x00 through 0x0F.</span></span> <span data-ttu-id="465d7-120">Los saltos se producen después de los delimitadores o entre los caracteres de clases diferentes.</span><span class="sxs-lookup"><span data-stu-id="465d7-120">Breaks occur either after delimiters or between characters of different classes.</span></span> <span data-ttu-id="465d7-121">Por lo tanto, un procedimiento de separación de palabras con diferentes clases para caracteres alfanuméricos y de puntuación encontraría dos saltos de palabra en la cadena "Win.doc" (antes y después del punto).</span><span class="sxs-lookup"><span data-stu-id="465d7-121">Thus, a word-break procedure with different classes for alphanumeric and punctuation characters would find two word breaks in the string "Win.doc" (before and after the period).</span></span>
+
+<span data-ttu-id="465d7-122">La clase de un carácter puede combinarse con cero o más marcas de separación de palabras para formar un valor de 8 bits.</span><span class="sxs-lookup"><span data-stu-id="465d7-122">A character's class can be combined with zero or more word-break flags to form an 8-bit value.</span></span> <span data-ttu-id="465d7-123">Cuando se realizan operaciones de ajuste automático de línea, un control Rich Edit usa marcas de separación de palabras para determinar dónde se pueden dividir las líneas.</span><span class="sxs-lookup"><span data-stu-id="465d7-123">When performing word-wrap operations, a rich edit control uses word-break flags to determine where it can break lines.</span></span> <span data-ttu-id="465d7-124">Rich Edit usa las siguientes marcas de salto de palabra.</span><span class="sxs-lookup"><span data-stu-id="465d7-124">Rich Edit uses the following word-break flags.</span></span>
+
+
+
+| <span data-ttu-id="465d7-125">Marca</span><span class="sxs-lookup"><span data-stu-id="465d7-125">Flag</span></span>            | <span data-ttu-id="465d7-126">Descripción</span><span class="sxs-lookup"><span data-stu-id="465d7-126">Description</span></span>                                                                                                                       |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="465d7-127">WBF ( \_ BREAKAFTER)</span><span class="sxs-lookup"><span data-stu-id="465d7-127">WBF\_BREAKAFTER</span></span> | <span data-ttu-id="465d7-128">Las líneas pueden romperse después del carácter.</span><span class="sxs-lookup"><span data-stu-id="465d7-128">Lines may be broken after the character.</span></span>                                                                                          |
+| <span data-ttu-id="465d7-129">WBF \_ BreakLine</span><span class="sxs-lookup"><span data-stu-id="465d7-129">WBF\_BREAKLINE</span></span>  | <span data-ttu-id="465d7-130">El carácter es un delimitador.</span><span class="sxs-lookup"><span data-stu-id="465d7-130">The character is a delimiter.</span></span> <span data-ttu-id="465d7-131">Los delimitadores marcan los extremos de las palabras.</span><span class="sxs-lookup"><span data-stu-id="465d7-131">Delimiters mark the ends of words.</span></span> <span data-ttu-id="465d7-132">Las líneas pueden romperse después de los delimitadores.</span><span class="sxs-lookup"><span data-stu-id="465d7-132">Lines may be broken after delimiters.</span></span>                            |
+| <span data-ttu-id="465d7-133">WBF \_ ISWHITE</span><span class="sxs-lookup"><span data-stu-id="465d7-133">WBF\_ISWHITE</span></span>    | <span data-ttu-id="465d7-134">El carácter es un carácter de espacio en blanco.</span><span class="sxs-lookup"><span data-stu-id="465d7-134">The character is a white-space character.</span></span> <span data-ttu-id="465d7-135">Los caracteres de espacio en blanco finales no se incluyen en la longitud de una línea al ajustar.</span><span class="sxs-lookup"><span data-stu-id="465d7-135">Trailing white-space characters are not included in the length of a line when wrapping.</span></span> |
+
+
+
+ 
+
+<span data-ttu-id="465d7-136">El \_ valor de BREAKAFTER WBF se usa para permitir el ajuste después de un carácter que no marca el final de una palabra, como un guión.</span><span class="sxs-lookup"><span data-stu-id="465d7-136">The WBF\_BREAKAFTER value is used to allow wrapping after a character that does not mark the end of a word, such as a hyphen.</span></span>
+
+<span data-ttu-id="465d7-137">Puede reemplazar el procedimiento predeterminado de separación de palabras para un control Rich Edit por su propio procedimiento mediante el mensaje [**\_ SETWORDBREAKPROC em**](em-setwordbreakproc.md) .</span><span class="sxs-lookup"><span data-stu-id="465d7-137">You can replace the default word-break procedure for a rich edit control with your own procedure by using the [**EM\_SETWORDBREAKPROC**](em-setwordbreakproc.md) message.</span></span> <span data-ttu-id="465d7-138">Para obtener más información sobre los procedimientos de separación de palabras, vea la descripción de la función [*EditWordBreakProc*](/windows/win32/api/winuser/nc-winuser-editwordbreakproca) .</span><span class="sxs-lookup"><span data-stu-id="465d7-138">For more information about word-break procedures, see the description of the [*EditWordBreakProc*](/windows/win32/api/winuser/nc-winuser-editwordbreakproca) function.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="465d7-139">Este reemplazo no se recomienda para Microsoft Rich Edit 2,0 y versiones posteriores, debido a la complejidad de la separación de palabras multilingües.</span><span class="sxs-lookup"><span data-stu-id="465d7-139">This replacement is not recommended for Microsoft Rich Edit 2.0 and later, due to the complexity of multilingual word breaking.</span></span>
+
+ 
+
+<span data-ttu-id="465d7-140">En el caso de Microsoft Rich Edit 1,0, puede usar el mensaje [**em \_ SETWORDBREAKPROCEX**](em-setwordbreakprocex.md) para reemplazar el procedimiento extendido de separación de palabras predeterminado por una función [*EditWordBreakProcEx*](/windows/desktop/api/Richedit/nc-richedit-editwordbreakprocex) .</span><span class="sxs-lookup"><span data-stu-id="465d7-140">For Microsoft Rich Edit 1.0, you can use the [**EM\_SETWORDBREAKPROCEX**](em-setwordbreakprocex.md) message to replace the default extended word-break procedure with an [*EditWordBreakProcEx*](/windows/desktop/api/Richedit/nc-richedit-editwordbreakprocex) function.</span></span> <span data-ttu-id="465d7-141">Esta función proporciona información adicional sobre el texto, como el juego de caracteres.</span><span class="sxs-lookup"><span data-stu-id="465d7-141">This function provides additional information about the text, such as the character set.</span></span> <span data-ttu-id="465d7-142">Puede usar el mensaje [**\_ GETWORDBREAKPROCEX em**](em-getwordbreakprocex.md) para recuperar la dirección del procedimiento extendido de separación de palabras actual.</span><span class="sxs-lookup"><span data-stu-id="465d7-142">You can use the [**EM\_GETWORDBREAKPROCEX**](em-getwordbreakprocex.md) message to retrieve the address of the current extended word-break procedure.</span></span> <span data-ttu-id="465d7-143">Tenga en cuenta que Microsoft Rich Edit 2,0 y versiones posteriores no admiten *EditWordBreakProcEx*, **em \_ GETWORDBREAKPROCEX** y **em \_ SETWORDBREAKPROCEX**.</span><span class="sxs-lookup"><span data-stu-id="465d7-143">Note that Microsoft Rich Edit 2.0 and later do not support *EditWordBreakProcEx*, **EM\_GETWORDBREAKPROCEX**, and **EM\_SETWORDBREAKPROCEX**.</span></span>
+
+<span data-ttu-id="465d7-144">Puede usar el mensaje [**\_ FINDWORDBREAK em**](em-findwordbreak.md) para buscar saltos de palabra o para determinar la clase de un carácter y las marcas de separación de palabras.</span><span class="sxs-lookup"><span data-stu-id="465d7-144">You can use the [**EM\_FINDWORDBREAK**](em-findwordbreak.md) message to find word breaks or to determine a character's class and word-break flags.</span></span> <span data-ttu-id="465d7-145">A su vez, el control llama a su procedimiento de separación de palabras para obtener la información solicitada.</span><span class="sxs-lookup"><span data-stu-id="465d7-145">In turn, the control calls its word-break procedure to get the requested information.</span></span>
+
+<span data-ttu-id="465d7-146">Para determinar en qué línea cae un carácter determinado, puede usar el mensaje [**\_ EXLINEFROMCHAR em**](em-exlinefromchar.md) .</span><span class="sxs-lookup"><span data-stu-id="465d7-146">To determine which line a given character falls on, you can use the [**EM\_EXLINEFROMCHAR**](em-exlinefromchar.md) message.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="465d7-147">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="465d7-147">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="465d7-148">Usar controles Rich Edit</span><span class="sxs-lookup"><span data-stu-id="465d7-148">Using Rich Edit Controls</span></span>](using-rich-edit-controls.md)
+</dt> <dt>
+
+<span data-ttu-id="465d7-149">[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)</span><span class="sxs-lookup"><span data-stu-id="465d7-149">[Windows common controls demo (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)</span></span>
+</dt> </dl>
+
+ 
+
+ 
