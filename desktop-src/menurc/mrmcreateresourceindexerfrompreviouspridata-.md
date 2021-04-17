@@ -1,0 +1,136 @@
+---
+title: Función MrmCreateResourceIndexerFromPreviousPriData (MrmResourceIndexer. h)
+description: Crea un indizador de recursos a partir de los datos de PRI creados por una llamada anterior a MrmCreateResourceFileInMemory. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
+ms.assetid: 945ED98C-8D73-404F-ACE3-7DD314FB405A
+keywords:
+- Menús de la función MrmCreateResourceIndexerFromPreviousPriData y otros recursos
+topic_type:
+- apiref
+api_name:
+- MrmCreateResourceIndexerFromPreviousPriData
+api_location:
+- Mrmsupport.dll
+api_type:
+- DllExport
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 152ded28e6158fb80d8157c751026091afb51f65
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104359800"
+---
+# <a name="mrmcreateresourceindexerfrompreviouspridata-function"></a>MrmCreateResourceIndexerFromPreviousPriData función)
+
+\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+
+Crea un indizador de recursos a partir de los datos de PRI creados por una llamada anterior a [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+HRESULT HRESULT MrmCreateResourceIndexerFromPreviousPriData (
+  _In_     PCWSTR                   projectRoot,
+  _In_     MrmPlatformVersion       platformVersion,
+  _In_opt_ PCWSTR                   defaultQualifiers,
+  _In_     BYTE                     *priData,
+  _In_     ULONG                    priSize,
+  _Inout_  MrmResourceIndexerHandle *indexer
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*projectRoot* \[ de\]
+</dt> <dd>
+
+Tipo: **PCWSTR**
+
+La raíz del proyecto de la aplicación para UWP para la que va a generar archivos PRI. En otras palabras, la ruta de acceso a los archivos de recursos de esa aplicación. Especifique esto para que pueda especificar las rutas de acceso relativas a esa raíz en las posteriores llamadas API al mismo indexador de recursos.
+
+</dd> <dt>
+
+*platformVersion* \[ de\]
+</dt> <dd>
+
+Tipo: **[ **MrmPlatformVersion**](mrmplatformversion.md)**
+
+Versión de la plataforma de destino para el indizador de recursos.
+
+</dd> <dt>
+
+*defaultQualifiers* \[ en, opcional\]
+</dt> <dd>
+
+Tipo: **PCWSTR**
+
+Una lista de calificadores de recursos predeterminados. Por ejemplo, L "Language-en-US \_ Scale-100 \_ Contrast-Standard"
+
+</dd> <dt>
+
+*priData* \[ de\]
+</dt> <dd>
+
+Tipo: **byte \** _
+
+Un puntero a los datos de PRI creados por una llamada anterior a [_ *MrmCreateResourceFileInMemory* *](mrmcreateresourcefileinmemory.md). No libere *priData* hasta que termine de usar el indizador de recursos creado por esta función.
+
+</dd> <dt>
+
+*Inprise* \[ de\]
+</dt> <dd>
+
+Tipo: **ULong**
+
+Tamaño de los datos a los que apunta *priData*.
+
+</dd> <dt>
+
+*indexador* \[ in, out\]
+</dt> <dd>
+
+Tipo: **[**MrmResourceIndexerHandle**](mrmresourceindexerhandle.md) \** _
+
+Un puntero a un identificador de indizador de recursos.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Tipo: _ *HRESULT**
+
+Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+
+## <a name="remarks"></a>Observaciones
+
+No libere *priData* hasta que termine de usar el indizador de recursos creado por esta función.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|-------------------------------------|-------------------------------------------------------------------------------------------------|
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
+| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems)
+</dt> </dl>
+
+ 
+
