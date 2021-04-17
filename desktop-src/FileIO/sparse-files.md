@@ -1,0 +1,46 @@
+---
+description: La compresión de archivos que contienen principalmente ceros hace un uso eficaz del espacio en disco.
+ms.assetid: 7326041d-f11e-4b80-ac4e-07173e418ce7
+title: Archivos dispersos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 21c282ca89c9dc9e44800a2a7fc969c3f883006b
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105666625"
+---
+# <a name="sparse-files"></a><span data-ttu-id="b29b4-103">Archivos dispersos</span><span class="sxs-lookup"><span data-stu-id="b29b4-103">Sparse Files</span></span>
+
+<span data-ttu-id="b29b4-104">Se dice que un archivo en el que muchos de los datos son ceros contiene un *conjunto de datos dispersos*.</span><span class="sxs-lookup"><span data-stu-id="b29b4-104">A file in which much of the data is zeros is said to contain a *sparse data set*.</span></span> <span data-ttu-id="b29b4-105">Los archivos como estos suelen ser muy grandes, por ejemplo, un archivo que contiene datos de imagen que se van a procesar o una matriz en una base de datos de alta velocidad.</span><span class="sxs-lookup"><span data-stu-id="b29b4-105">Files like these are typically very large for example, a file that contains image data to be processed or a matrix within a high-speed database.</span></span> <span data-ttu-id="b29b4-106">El problema con los archivos que contienen conjuntos de datos dispersos es que la mayoría del archivo no contiene datos útiles y, debido a ello, son un uso ineficaz del espacio en disco.</span><span class="sxs-lookup"><span data-stu-id="b29b4-106">The problem with files that contain sparse data sets is that the majority of the file does not contain useful data and, because of this, they are an inefficient use of disk space.</span></span>
+
+<span data-ttu-id="b29b4-107">La compresión de archivos en el sistema de archivos NTFS es una solución parcial del problema.</span><span class="sxs-lookup"><span data-stu-id="b29b4-107">The file compression in the NTFS file system is a partial solution to the problem.</span></span> <span data-ttu-id="b29b4-108">Todos los datos del archivo que no se escriben explícitamente se establecen explícitamente en cero.</span><span class="sxs-lookup"><span data-stu-id="b29b4-108">All data in the file that is not explicitly written is explicitly set to zero.</span></span> <span data-ttu-id="b29b4-109">La compresión de archivos compacta estos intervalos de ceros.</span><span class="sxs-lookup"><span data-stu-id="b29b4-109">File compression compacts these ranges of zeros.</span></span> <span data-ttu-id="b29b4-110">Sin embargo, un inconveniente de la compresión de archivos es que el tiempo de acceso puede aumentar debido a la compresión y descompresión de datos.</span><span class="sxs-lookup"><span data-stu-id="b29b4-110">However, a drawback of file compression is that access time may increase due to data compression and decompression.</span></span>
+
+<span data-ttu-id="b29b4-111">La compatibilidad con archivos dispersos se incluye en el sistema de archivos NTFS como otra manera de aumentar la eficacia del uso del espacio en disco.</span><span class="sxs-lookup"><span data-stu-id="b29b4-111">Support for sparse files is introduced in the NTFS file system as another way to make disk space usage more efficient.</span></span> <span data-ttu-id="b29b4-112">Cuando está habilitada la funcionalidad de archivos dispersos, el sistema no asigna espacio en la unidad de disco duro a un archivo, excepto en las regiones donde contiene datos distintos de cero.</span><span class="sxs-lookup"><span data-stu-id="b29b4-112">When sparse file functionality is enabled, the system does not allocate hard disk drive space to a file except in regions where it contains nonzero data.</span></span> <span data-ttu-id="b29b4-113">Cuando se intenta realizar una operación de escritura en la que una gran cantidad de datos en el búfer es ceros, los ceros no se escriben en el archivo.</span><span class="sxs-lookup"><span data-stu-id="b29b4-113">When a write operation is attempted where a large amount of the data in the buffer is zeros, the zeros are not written to the file.</span></span> <span data-ttu-id="b29b4-114">En su lugar, el sistema de archivos crea una lista interna que contiene las ubicaciones de los ceros en el archivo y esta lista se consulta durante todas las operaciones de lectura.</span><span class="sxs-lookup"><span data-stu-id="b29b4-114">Instead, the file system creates an internal list containing the locations of the zeros in the file, and this list is consulted during all read operations.</span></span> <span data-ttu-id="b29b4-115">Cuando se realiza una operación de lectura en áreas del archivo donde se encuentran ceros, el sistema de archivos devuelve el número adecuado de ceros en el búfer asignado para la operación de lectura.</span><span class="sxs-lookup"><span data-stu-id="b29b4-115">When a read operation is performed in areas of the file where zeros were located, the file system returns the appropriate number of zeros in the buffer allocated for the read operation.</span></span> <span data-ttu-id="b29b4-116">De esta manera, el mantenimiento del archivo disperso es transparente para todos los procesos que tienen acceso a él y es más eficaz que la compresión para este escenario concreto.</span><span class="sxs-lookup"><span data-stu-id="b29b4-116">In this way, maintenance of the sparse file is transparent to all processes that access it, and is more efficient than compression for this particular scenario.</span></span>
+
+<span data-ttu-id="b29b4-117">El valor de datos predeterminado de un archivo disperso es cero; sin embargo, se puede establecer en otros valores.</span><span class="sxs-lookup"><span data-stu-id="b29b4-117">The default data value of a sparse file is zero; however, it can be set to other values.</span></span>
+
+<span data-ttu-id="b29b4-118">Para obtener más información acerca de los archivos dispersos, vea los temas siguientes.</span><span class="sxs-lookup"><span data-stu-id="b29b4-118">For more information about sparse files, see the following topics.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="b29b4-119">En esta sección</span><span class="sxs-lookup"><span data-stu-id="b29b4-119">In this section</span></span>
+
+
+
+| <span data-ttu-id="b29b4-120">Tema</span><span class="sxs-lookup"><span data-stu-id="b29b4-120">Topic</span></span>                                                                                     | <span data-ttu-id="b29b4-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="b29b4-121">Description</span></span>                                                                                                                                                                                   |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="b29b4-122">Operaciones de archivos dispersos</span><span class="sxs-lookup"><span data-stu-id="b29b4-122">Sparse File Operations</span></span>](sparse-file-operations.md)<br/>                           | <span data-ttu-id="b29b4-123">Determine si un sistema de archivos admite archivos dispersos mediante una llamada a la función GetVolumeInformation.</span><span class="sxs-lookup"><span data-stu-id="b29b4-123">Determine whether a file system supports sparse files by calling the GetVolumeInformation function.</span></span><br/>                                                                                |
+| [<span data-ttu-id="b29b4-124">Obtención del tamaño de un archivo disperso</span><span class="sxs-lookup"><span data-stu-id="b29b4-124">Obtaining the Size of a Sparse File</span></span>](obtaining-the-size-of-a-sparse-file.md)<br/> | <span data-ttu-id="b29b4-125">Obtiene el tamaño asignado o el tamaño total de un archivo mediante la función [**GetCompressedFileSize**](/windows/desktop/api/fileapi/nf-fileapi-getcompressedfilesizea) o [**GetFileSize**](/windows/desktop/api/FileAPI/nf-fileapi-getfilesize) .</span><span class="sxs-lookup"><span data-stu-id="b29b4-125">Get the allocated size or the total size for a file by using either the [**GetCompressedFileSize**](/windows/desktop/api/fileapi/nf-fileapi-getcompressedfilesizea) or the [**GetFileSize**](/windows/desktop/api/FileAPI/nf-fileapi-getfilesize) function.</span></span><br/> |
+| [<span data-ttu-id="b29b4-126">Archivos dispersos y cuotas de disco</span><span class="sxs-lookup"><span data-stu-id="b29b4-126">Sparse Files and Disk Quotas</span></span>](sparse-files-and-disk-quota.md)<br/>                | <span data-ttu-id="b29b4-127">Un archivo disperso afecta a las cuotas de usuario por el tamaño nominal del archivo, no por la cantidad de espacio en disco real asignada.</span><span class="sxs-lookup"><span data-stu-id="b29b4-127">A sparse file affects user quotas by the nominal size of the file, not the actual allocated amount of disk space.</span></span><br/>                                                                  |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
