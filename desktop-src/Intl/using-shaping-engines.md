@@ -1,0 +1,36 @@
+---
+description: Uniscribe utiliza varios motores de forma que contienen el conocimiento de diseño para scripts determinados.
+ms.assetid: 3cdd18f3-51d3-4d1c-be31-f5709074cbe7
+title: Usar motores de modelado
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a106e993aba515af38edd2b809ef60454a186cde
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105653087"
+---
+# <a name="using-shaping-engines"></a><span data-ttu-id="dc2e0-103">Usar motores de modelado</span><span class="sxs-lookup"><span data-stu-id="dc2e0-103">Using Shaping Engines</span></span>
+
+<span data-ttu-id="dc2e0-104">Uniscribe utiliza varios motores de forma que contienen el conocimiento de diseño para scripts determinados.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-104">Uniscribe uses multiple shaping engines that contain the layout knowledge for particular scripts.</span></span> <span data-ttu-id="dc2e0-105">También aprovecha el motor de forma de diseño OpenType para administrar características de script específicas de la fuente, como la generación de glifos, la medición de extensiones y la compatibilidad con separación de palabras.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-105">It also takes advantage of the OpenType layout shaping engine for handling font-specific script features, such as glyph generation, extent measurement, and word-breaking support.</span></span> <span data-ttu-id="dc2e0-106">Uniscribe administra la reordenación de caracteres bidireccionales mediante el algoritmo bidireccional Unicode, y entiende los formatos de fuente de diseño no OpenType para el modelado árabe, hebreo y tailandés.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-106">Uniscribe manages bidirectional character reordering using the Unicode bidirectional algorithm, and understands non-OpenType layout font formats for Arabic, Hebrew, and Thai shaping.</span></span>
+
+<span data-ttu-id="dc2e0-107">Dado que los intervalos de puntos de código exactos asignados a cada motor de forma pueden variar, los números de script no se publican, con la excepción del SCRIPT sin \_ definir.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-107">Since the exact code point ranges assigned to each shaping engine might vary, script numbers are not published, with the exception of SCRIPT\_UNDEFINED.</span></span> <span data-ttu-id="dc2e0-108">Sin embargo, la aplicación puede probar los atributos de los scripts mediante una llamada a la función [**ScriptGetProperties**](/windows/desktop/api/Usp10/nf-usp10-scriptgetproperties) , que tiene acceso a la tabla de propiedades de script global.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-108">However, your application can test the attributes of scripts by calling the [**ScriptGetProperties**](/windows/desktop/api/Usp10/nf-usp10-scriptgetproperties) function, which accesses the global script properties table.</span></span> <span data-ttu-id="dc2e0-109">La aplicación puede utilizar las propiedades del script global para ayudar a combinar sus propias reglas de diseño con las divisiones del motor de forma necesarias.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-109">The application can use the global script properties to help combine its own layout rules with the required shaping engine divisions.</span></span>
+
+<span data-ttu-id="dc2e0-110">La aplicación tiene acceso a un motor de modelado con una llamada a la función [**ScriptShape**](/windows/desktop/api/Usp10/nf-usp10-scriptshape) .</span><span class="sxs-lookup"><span data-stu-id="dc2e0-110">The application accesses a shaping engine with a call to the [**ScriptShape**](/windows/desktop/api/Usp10/nf-usp10-scriptshape) function.</span></span> <span data-ttu-id="dc2e0-111">Todos los motores complejos de modelado de scripts, los motores de modelado de dígitos y los motores de forma ASCII validan la fuente indicada en el identificador de contexto del dispositivo antes de la forma.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-111">All the complex script shaping engines, the digit shaping engines, and the ASCII shaping engines validate the font indicated in the device context handle before shaping.</span></span> <span data-ttu-id="dc2e0-112">Se debe dar forma a los scripts complejos mediante el script devuelto por la función [**ScriptItemize**](/windows/desktop/api/Usp10/nf-usp10-scriptitemize) para que sean legibles.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-112">Complex scripts must be shaped using the script returned by the [**ScriptItemize**](/windows/desktop/api/Usp10/nf-usp10-scriptitemize) function in order to be legible.</span></span> <span data-ttu-id="dc2e0-113">Otras ejecuciones siguen siendo legibles si se forma con SCRIPT sin \_ definir especificado en el miembro **eScript** de la estructura de [**\_ análisis de script**](/windows/win32/api/usp10/ns-usp10-script_analysis) , aunque podrían perder calidad tipográfica.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-113">Other runs remain legible if shaped with SCRIPT\_UNDEFINED specified in the **eScript** member of the [**SCRIPT\_ANALYSIS**](/windows/win32/api/usp10/ns-usp10-script_analysis) structure, although they might lose typographic quality.</span></span>
+
+<span data-ttu-id="dc2e0-114">[**ScriptShape**](/windows/desktop/api/Usp10/nf-usp10-scriptshape) devuelve 0 si se realiza correctamente o \_ \_ el script \_ de USP E no está \_ en \_ la fuente si la fuente proporcionada por la aplicación no contiene suficientes glifos o tablas de formas.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-114">[**ScriptShape**](/windows/desktop/api/Usp10/nf-usp10-scriptshape) returns 0 if successful, or USP\_E\_SCRIPT\_NOT\_IN\_FONT if the font supplied by the application does not contain sufficient glyphs or shaping tables.</span></span> <span data-ttu-id="dc2e0-115">Si la aplicación especifica un SCRIPT sin \_ definir y algunos caracteres no son compatibles con la fuente, la función sigue siendo correcta.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-115">If the application specifies SCRIPT\_UNDEFINED and some characters are not supported by the font, the function still succeeds.</span></span> <span data-ttu-id="dc2e0-116">En este caso, la aplicación debe examinar el búfer de salida del glifo para detectar la presencia de glifos que faltan.</span><span class="sxs-lookup"><span data-stu-id="dc2e0-116">In this case, the application should scan the glyph output buffer for the presence of missing glyphs.</span></span> <span data-ttu-id="dc2e0-117">Para conocer las estrategias para tratar los glifos que faltan, vea [usar la reserva de fuentes](using-font-fallback.md).</span><span class="sxs-lookup"><span data-stu-id="dc2e0-117">For strategies to deal with missing glyphs, see [Using Font Fallback](using-font-fallback.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="dc2e0-118">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="dc2e0-118">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="dc2e0-119">Usar Uniscribe</span><span class="sxs-lookup"><span data-stu-id="dc2e0-119">Using Uniscribe</span></span>](using-uniscribe.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+

@@ -1,0 +1,64 @@
+---
+description: Puede agregar información de localización a una base de datos de instalación importando y exportando archivos de archivo de texto ASCII mediante MsiDatabaseExport y MsiDatabaseImport.
+ms.assetid: dc52313b-38e7-43cc-abfd-86966c836fce
+title: Control de páginas de códigos de tablas importadas y exportadas
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3b090bead1fa35b451ed12e0e0da0143b98b8918
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105666686"
+---
+# <a name="code-page-handling-of-imported-and-exported-tables"></a><span data-ttu-id="9dc33-103">Control de páginas de códigos de tablas importadas y exportadas</span><span class="sxs-lookup"><span data-stu-id="9dc33-103">Code Page Handling of Imported and Exported Tables</span></span>
+
+<span data-ttu-id="9dc33-104">Puede agregar información de localización a una base de datos de instalación importando y exportando archivos de archivo de texto ASCII mediante [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) y [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta).</span><span class="sxs-lookup"><span data-stu-id="9dc33-104">You can add localization information to an installation database by importing and exporting ASCII text archive files using [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) and [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta).</span></span> <span data-ttu-id="9dc33-105">Dado que el grupo de cadenas de base de datos utiliza una página de códigos ANSI, los archivos de base de datos y de [archivo de texto](text-archive-files.md) exportado tienen páginas de códigos.</span><span class="sxs-lookup"><span data-stu-id="9dc33-105">Because the database string pool uses an ANSI code page, both the database and exported [Text Archive Files](text-archive-files.md) have code pages.</span></span>
+
+<span data-ttu-id="9dc33-106">Cuando se exporta un [archivo de almacenamiento de texto](text-archive-files.md) desde una base de datos, la página de códigos del archivo de almacenamiento es la misma que la base de datos primaria.</span><span class="sxs-lookup"><span data-stu-id="9dc33-106">When a [Text Archive File](text-archive-files.md) is exported from a database, the code page of the archive file is the same as the parent database.</span></span> <span data-ttu-id="9dc33-107">Para obtener una lista de páginas de códigos numéricas, consulte [localizar las tablas de error y ActionText](localizing-the-error-and-actiontext-tables.md).</span><span class="sxs-lookup"><span data-stu-id="9dc33-107">For a list of numeric code pages, see [Localizing the Error and ActionText Tables](localizing-the-error-and-actiontext-tables.md).</span></span>
+
+> [!Note]  
+> <span data-ttu-id="9dc33-108">Exportar una tabla a un archivo de almacenamiento de texto traduce los caracteres de control para evitar conflictos con delimitadores de archivos.</span><span class="sxs-lookup"><span data-stu-id="9dc33-108">Exporting a table to a text archive file translates the control characters to avoid conflicts with file delimiters.</span></span>
+
+ 
+
+## <a name="ascii-text-archive-files"></a><span data-ttu-id="9dc33-109">Archivos de archivo de texto ASCII</span><span class="sxs-lookup"><span data-stu-id="9dc33-109">ASCII Text Archive Files</span></span>
+
+<span data-ttu-id="9dc33-110">Los [archivos de almacenamiento de texto](text-archive-files.md) ASCII exportados por [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) se explican en el siguiente formato:</span><span class="sxs-lookup"><span data-stu-id="9dc33-110">The ASCII [Text Archive Files](text-archive-files.md) exported by [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) are explained in the following format:</span></span>
+
+-   <span data-ttu-id="9dc33-111">Los nombres de las columnas de la tabla se escriben en la primera línea.</span><span class="sxs-lookup"><span data-stu-id="9dc33-111">The names of the table columns are written on the first line.</span></span>
+-   <span data-ttu-id="9dc33-112">Los formatos de columna se escriben en la segunda línea.</span><span class="sxs-lookup"><span data-stu-id="9dc33-112">The column formats are written on the second line.</span></span>
+-   <span data-ttu-id="9dc33-113">Si la tabla solo contiene datos ASCII, la tercera línea del archivo de texto es el nombre de la tabla seguido de una lista de las claves principales.</span><span class="sxs-lookup"><span data-stu-id="9dc33-113">If the table contains only ASCII data, the third line of the text file is the table name followed by a list of the primary keys.</span></span>
+-   <span data-ttu-id="9dc33-114">Si la tabla contiene datos que no son ASCII y la base de datos se marca con una página de códigos numérica, el número de la página de códigos aparece al principio de la tercera línea.</span><span class="sxs-lookup"><span data-stu-id="9dc33-114">If the table contains non-ASCII data and the database is stamped with a numeric code page, the code page number appears at the beginning of the third line.</span></span>
+-   <span data-ttu-id="9dc33-115">Si la base de datos contiene datos que no son ASCII, pero la base de datos no está marcada con la página de códigos numérica, el número de página de códigos del sistema actual se escribe al principio de la tercera línea.</span><span class="sxs-lookup"><span data-stu-id="9dc33-115">If the database contains non-ASCII data, but the database is not stamped with the numeric code page, the current system code page number is written at the beginning of the third line.</span></span>
+-   <span data-ttu-id="9dc33-116">Las líneas restantes del archivo de texto son los datos de la página de códigos especificada.</span><span class="sxs-lookup"><span data-stu-id="9dc33-116">The remaining lines of the text file are the data in the specified code page.</span></span>
+-   <span data-ttu-id="9dc33-117">Si una tabla contiene secuencias, [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) exporta cada secuencia de la tabla a un archivo independiente.</span><span class="sxs-lookup"><span data-stu-id="9dc33-117">If a table contains streams, [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) exports each stream in the table to a separate file.</span></span>
+
+### <a name="neutral-and-non-neutral-code-pages"></a><span data-ttu-id="9dc33-118">Páginas de códigos neutras y no neutras</span><span class="sxs-lookup"><span data-stu-id="9dc33-118">Neutral and Non-Neutral Code Pages</span></span>
+
+<span data-ttu-id="9dc33-119">Puede facilitar la localización iniciando con una base de datos que tenga una página de códigos neutra:</span><span class="sxs-lookup"><span data-stu-id="9dc33-119">You can facilitate localization by starting with a database that has a neutral code page:</span></span>
+
+-   <span data-ttu-id="9dc33-120">Una base de datos vacía tiene una página de códigos neutra.</span><span class="sxs-lookup"><span data-stu-id="9dc33-120">A blank database has a neutral code page.</span></span>
+-   <span data-ttu-id="9dc33-121">Una base de datos que no contiene caracteres extendidos que requieren que una página de códigos se represente en ASCII tiene una página de códigos neutra.</span><span class="sxs-lookup"><span data-stu-id="9dc33-121">A database that does not contain extended characters that require a code page to be represented in ASCII has a neutral code page.</span></span>
+
+<span data-ttu-id="9dc33-122">Para obtener más información, vea [crear una base de datos con una página de códigos neutra](creating-a-database-with-a-neutral-code-page.md).</span><span class="sxs-lookup"><span data-stu-id="9dc33-122">For more information, see [Creating a Database with a Neutral Code Page](creating-a-database-with-a-neutral-code-page.md).</span></span>
+
+<span data-ttu-id="9dc33-123">Las páginas de códigos neutras y no neutras tienen las siguientes características:</span><span class="sxs-lookup"><span data-stu-id="9dc33-123">Neutral and non-neutral code pages have the following characteristics:</span></span>
+
+-   <span data-ttu-id="9dc33-124">Si se importa un [archivo de texto](text-archive-files.md) con una página de códigos no neutra en una base de datos que tiene una página de códigos distinta de neutra, el instalador devuelve un error cuando se llama a [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) .</span><span class="sxs-lookup"><span data-stu-id="9dc33-124">If a [Text Archive File](text-archive-files.md) with a non-neutral code page is imported into a database that has a different non-neutral code page, the Installer returns an error when [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) is called.</span></span>
+-   <span data-ttu-id="9dc33-125">Un [archivo de texto](text-archive-files.md) que tiene una página de códigos neutra se puede importar en una base de datos que tiene cualquier página de códigos.</span><span class="sxs-lookup"><span data-stu-id="9dc33-125">A [Text Archive File](text-archive-files.md) that has a neutral code page can be imported into a database that has any code page.</span></span>
+-   <span data-ttu-id="9dc33-126">Un [archivo de almacenamiento de texto](text-archive-files.md) que tiene cualquier página de códigos se puede importar en una base de datos que tenga una página de códigos neutra.</span><span class="sxs-lookup"><span data-stu-id="9dc33-126">A [Text Archive File](text-archive-files.md) that has any code page can be imported into a database that has a neutral code page.</span></span>
+-   <span data-ttu-id="9dc33-127">Al importar un [archivo de texto](text-archive-files.md) en una base de datos con una página de códigos neutra, la página de códigos de la base de datos se establece en la página de códigos del archivo de almacenamiento.</span><span class="sxs-lookup"><span data-stu-id="9dc33-127">Importing a [Text Archive File](text-archive-files.md) into a database with a neutral code page sets the code page of the database to the archive file code page.</span></span> <span data-ttu-id="9dc33-128">Todos los archivos de almacenamiento importados posteriormente en la base de datos deben tener la misma página de códigos que el primer archivo.</span><span class="sxs-lookup"><span data-stu-id="9dc33-128">All archive files subsequently imported into the database must have the same code page as the first file.</span></span>
+
+<span data-ttu-id="9dc33-129">Para obtener más información, vea [determinar una página de códigos](determining-an-installation-database-s-code-page.md) [de la base de datos de instalación y establecer la página de códigos de una base de datos](setting-the-code-page-of-a-database.md).</span><span class="sxs-lookup"><span data-stu-id="9dc33-129">For more information, see [Determining an Installation Database Code Page](determining-an-installation-database-s-code-page.md) and [Setting the Code Page of a Database](setting-the-code-page-of-a-database.md).</span></span>
+
+<span data-ttu-id="9dc33-130">Los [archivos de almacenamiento de texto](text-archive-files.md) exportados por [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) se pueden usar con sistemas de control de versiones.</span><span class="sxs-lookup"><span data-stu-id="9dc33-130">The [Text Archive Files](text-archive-files.md) that are exported by [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) can be used with version control systems.</span></span> <span data-ttu-id="9dc33-131">Utilice las [funciones de base](database-functions.md) de datos o un editor de tablas de base de datos para editar la base de datos.</span><span class="sxs-lookup"><span data-stu-id="9dc33-131">Use the [Database Functions](database-functions.md) or a database table editor to edit the database.</span></span>
+
+<span data-ttu-id="9dc33-132">Puede agregar información de localización a una base de datos de instalación mediante el editor de tablas de base de datos o la API de Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="9dc33-132">You can add localization information to an installation database by using a database table editor or the Windows Installer API.</span></span> <span data-ttu-id="9dc33-133">Para obtener más información, vea [control de páginas de códigos de cadenas de parámetros](code-page-handling-of-parameter-strings.md).</span><span class="sxs-lookup"><span data-stu-id="9dc33-133">For more information, see [Code Page Handling of Parameter Strings](code-page-handling-of-parameter-strings.md).</span></span>
+
+ 
+
+ 
+
+
+
