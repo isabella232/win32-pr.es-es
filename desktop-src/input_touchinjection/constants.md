@@ -1,5 +1,5 @@
 ---
-title: Constantes
+title: Constantes de inyección táctil
 description: En esta sección se proporcionan las especificaciones de referencia para las constantes de inyección táctil.
 ms.assetid: 52941DF1-88AF-452B-BF3E-838ADBDBC9B2
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: a12b50e4e8286312199ebc88597c7f9d885e2917
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76a763a7153bbb9aa67254ffeb5e994a55426e43
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492190"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187738"
 ---
-# <a name="constants"></a>Constantes
+# <a name="touch-injection-constants"></a>Constantes de inyección táctil
 
 En esta sección se proporcionan las especificaciones de referencia para las constantes de [inyección táctil](touch-injection-portal.md) .
 
@@ -37,10 +37,10 @@ En esta sección se proporcionan las especificaciones de referencia para las con
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h |
+| Cliente mínimo compatible | Solo aplicaciones de escritorio de Windows 8 \[\]                                           |
+| Servidor mínimo compatible | Solo aplicaciones de escritorio de Windows Server 2012 \[\]                                 |
+| Encabezado                   | Winuser. h |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Referencia de inyección táctil](touch-injection-reference.md)
