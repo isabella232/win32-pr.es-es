@@ -1,6 +1,6 @@
 ---
-title: Método IEnumTfContextViews
-description: Método IEnumTfContextViews | Método IEnumTfContextViews
+title: Método IEnumTfContextViews (API IEnumTfContextViews. SKIP)
+description: Método IEnumTfContextViews | IEnumTfContextViews. SKIP API
 ms.assetid: 6cdfa1da-db6c-4a6c-8218-11070d9b60c4
 keywords:
 - Marco de trabajo de servicios de texto de método
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42b17dad959b57b66117d03cf75699beeb7c83d4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 484430887ce5e6326f5f5fb31e652182db5f0feb
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280026"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187989"
 ---
-# <a name="ienumtfcontextviews-method"></a><span data-ttu-id="93602-106">Método IEnumTfContextViews</span><span class="sxs-lookup"><span data-stu-id="93602-106">IEnumTfContextViews method</span></span>
+# <a name="ienumtfcontextviews-method-ienumtfcontextviewsskip-api"></a><span data-ttu-id="7348f-106">Método IEnumTfContextViews (API IEnumTfContextViews. SKIP)</span><span class="sxs-lookup"><span data-stu-id="7348f-106">IEnumTfContextViews method (IEnumTfContextViews.Skip API)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="93602-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="93602-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7348f-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="7348f-107">Syntax</span></span>
 
 
 ```C++
@@ -33,13 +33,13 @@ void ();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="93602-108">Parámetros</span><span class="sxs-lookup"><span data-stu-id="93602-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7348f-108">Parámetros</span><span class="sxs-lookup"><span data-stu-id="7348f-108">Parameters</span></span>
 
-<span data-ttu-id="93602-109">Este método no tiene parámetros.</span><span class="sxs-lookup"><span data-stu-id="93602-109">This method has no parameters.</span></span>
+<span data-ttu-id="7348f-109">Este método no tiene parámetros.</span><span class="sxs-lookup"><span data-stu-id="7348f-109">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="93602-110">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="93602-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7348f-110">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="7348f-110">Return value</span></span>
 
-<span data-ttu-id="93602-111">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="93602-111">This method does not return a value.</span></span>
+<span data-ttu-id="7348f-111">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="7348f-111">This method does not return a value.</span></span>
 
  
 
