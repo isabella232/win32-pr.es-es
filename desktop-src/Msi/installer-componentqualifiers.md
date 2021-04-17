@@ -1,0 +1,71 @@
+---
+description: La propiedad ComponentQualifiers es una propiedad de solo lectura que devuelve un objeto StringList que enumera el conjunto de calificadores registrados para el componente especificado.
+ms.assetid: 49b16c9a-ce84-42ff-af1d-f4ecf7dbe23a
+title: Propiedad Installer. ComponentQualifiers
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Installer.ComponentQualifiers
+api_type:
+- COM
+api_location:
+- Msi.dll
+ms.openlocfilehash: 0e6f58850974eaa2021578f0d56015ea0ef6d9e1
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105653692"
+---
+# <a name="installercomponentqualifiers-property"></a>Propiedad Installer. ComponentQualifiers
+
+La propiedad **ComponentQualifiers** es una propiedad de solo lectura que devuelve un objeto [**StringList**](stringlist-object.md) que enumera el conjunto de calificadores registrados para el componente especificado.
+
+Esta propiedad es de solo lectura.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```JScript
+propVal = Installer.ComponentQualifiers
+```
+
+
+
+## <a name="property-value"></a>Valor de propiedad
+
+GUID de cadena que representa la categoría de [componente](publishcomponent-table.md).
+
+## <a name="remarks"></a>Observaciones
+
+Para enumerar los calificadores, la aplicación recorre en iteración el objeto [**StringList**](stringlist-object.md) con una construcción for each. Dado que los calificadores no están ordenados, cualquier calificador nuevo tiene un índice arbitrario, lo que significa que la función puede devolver calificadores en cualquier orden.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
+| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
