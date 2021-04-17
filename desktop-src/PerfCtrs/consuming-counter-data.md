@@ -1,0 +1,24 @@
+---
+description: 'Puede consumir datos de rendimiento mediante una de las interfaces siguientes: la interfaz de la aplicación auxiliar de datos de rendimiento (PDH), que proporciona acceso de alto nivel a los datos de los proveedores de contadores de rendimiento de la versión 1 y la versión 2. La interfaz del registro, que proporciona acceso de bajo nivel a los datos de los proveedores de contadores de rendimiento. La interfaz de la biblioteca de rendimiento, que proporciona acceso directo a los datos de los proveedores de contadores de rendimiento de la versión 2. La interfaz PDH es más fácil de usar que la interfaz del registro y se recomienda para la mayoría de las tareas de recopilación de datos de rendimiento. La interfaz PDH es esencialmente una abstracción de nivel superior de la funcionalidad que proporciona la interfaz del registro. Use la interfaz de la biblioteca de rendimiento solo si no puede usar las funciones de nivel de abstracción de PDH.'
+ms.assetid: a42f6cdd-47e9-4f43-aeaf-37a5abb0fa36
+title: Consumir datos de contador
+ms.topic: article
+ms.date: 08/17/2020
+ms.openlocfilehash: c8c50b29d8f898f544b021f7fe3f3fd0d4a2094e
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105667342"
+---
+# <a name="consuming-counter-data"></a><span data-ttu-id="8e11d-105">Consumir datos de contador</span><span class="sxs-lookup"><span data-stu-id="8e11d-105">Consuming Counter Data</span></span>
+
+<span data-ttu-id="8e11d-106">Los programas que deseen leer y usar los datos del contador de rendimiento de Windows pueden utilizar una de varias interfaces según sea necesario para el escenario.</span><span class="sxs-lookup"><span data-stu-id="8e11d-106">Programs that want to read and make use of Windows Performance Counter data can use one of several interfaces as appropriate for the scenario.</span></span>
+
+- <span data-ttu-id="8e11d-107">Los scripts pueden usar las [clases de contador de rendimiento de WMI](/windows/desktop/WmiSdk/monitoring-performance-data) o la herramienta [TypePerf](/windows-server/administration/windows-commands/typeperf) .</span><span class="sxs-lookup"><span data-stu-id="8e11d-107">Scripts can use the [WMI Performance Counter Classes](/windows/desktop/WmiSdk/monitoring-performance-data) or the [TypePerf](/windows-server/administration/windows-commands/typeperf) tool.</span></span>
+- <span data-ttu-id="8e11d-108">Los programas .NET pueden usar la [clase PerformanceCounter](/dotnet/api/system.diagnostics.performancecounter).</span><span class="sxs-lookup"><span data-stu-id="8e11d-108">.NET programs can use the [PerformanceCounter Class](/dotnet/api/system.diagnostics.performancecounter).</span></span>
+- <span data-ttu-id="8e11d-109">La [biblioteca del ayudante de datos de rendimiento (PDH)](using-the-pdh-functions-to-consume-counter-data.md) proporciona acceso de alto nivel a los datos de los proveedores de contadores de rendimiento V1 y V2 a través de una API Win32 (C/C++).</span><span class="sxs-lookup"><span data-stu-id="8e11d-109">The [Performance Data Helper (PDH) library](using-the-pdh-functions-to-consume-counter-data.md) provides high-level access to data from both V1 and V2 performance counter providers via a Win32 (C/C++) API.</span></span>
+- <span data-ttu-id="8e11d-110">La [interfaz del registro](using-the-registry-functions-to-consume-counter-data.md) proporciona acceso a los datos de los proveedores de contadores de rendimiento V1 y V2 a través de la `HKEY_PERFORMANCE_DATA` clave del registro especial.</span><span class="sxs-lookup"><span data-stu-id="8e11d-110">The [registry interface](using-the-registry-functions-to-consume-counter-data.md) provides access to data from both V1 and V2 performance counter providers via the special `HKEY_PERFORMANCE_DATA` registry key.</span></span>
+- <span data-ttu-id="8e11d-111">Las [funciones de consumidor de Perflib V2](using-the-perflib-functions-to-consume-counter-data.md) proporcionan acceso de bajo nivel a los datos de los proveedores de contadores de rendimiento V2 a través de una API Win32 (C/C++).</span><span class="sxs-lookup"><span data-stu-id="8e11d-111">The [PerfLib V2 Consumer functions](using-the-perflib-functions-to-consume-counter-data.md) provide low-level access to data from V2 performance counter providers via a Win32 (C/C++) API.</span></span>
+
+<span data-ttu-id="8e11d-112">La interfaz PDH se recomienda para la mayoría de las tareas de recopilación de datos de rendimiento de C/C++ porque es más fácil de usar que las interfaces Registry y PerfLib.</span><span class="sxs-lookup"><span data-stu-id="8e11d-112">The PDH interface is recommended for most C/C++ performance data collection tasks because it is easier to use than the registry and PerfLib interfaces.</span></span>
