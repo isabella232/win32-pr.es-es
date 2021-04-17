@@ -1,0 +1,276 @@
+- name: Aplicaciones aisladas y ensamblados en paralelo
+  href: isolated-applications-and-side-by-side-assemblies-portal.md
+  items:
+    - name: Acerca de las aplicaciones aisladas y los ensamblados en paralelo
+      href: about-isolated-applications-and-side-by-side-assemblies.md
+      items:
+        - name: Aplicaciones aisladas
+          href: isolated-applications.md
+        - name: Acerca de los ensamblados en paralelo
+          href: about-side-by-side-assemblies-.md
+        - name: Manifiestos
+          href: manifests.md
+        - name: Acerca de los ensamblados compartidos
+          href: about-shared-assemblies-.md
+        - name: Acerca de los ensamblados privados
+          href: about-private-assemblies-.md
+        - name: Secuencia de búsqueda de ensamblado
+          href: assembly-searching-sequence.md
+        - name: Uso compartido de ensamblados en paralelo
+          href: side-by-side-assembly-sharing.md
+        - name: Configuración
+          href: configuration.md
+          items:
+            - name: Configuración predeterminada
+              href: default-configuration.md
+            - name: Configuración del publicador
+              href: publisher-configuration.md
+            - name: Configuración por aplicación
+              href: per-application-configuration.md
+            - name: Configuración por aplicación en Windows XP
+              href: per-application-configuration-on-windows-xp.md
+        - name: Contextos de activación
+          href: activation-contexts.md
+        - name: Versiones de ensamblado
+          href: assembly-versions.md
+        - name: Redirección de DLL/COM en Windows
+          href: dll-com-redirection-on-windows.md
+    - name: Usar aplicaciones aisladas y ensamblados en paralelo
+      href: using-isolated-applications-and-side-by-side-assemblies.md
+      items:
+        - name: Usar ensamblados en paralelo
+          href: using-side-by-side-assemblies.md
+        - name: Instalar ensamblados en paralelo
+          href: installing-side-by-side-assemblies.md
+          items:
+            - name: Instalar ensamblados en paralelo como ensamblados privados
+              href: installing-side-by-side-assemblies-as-private-assemblies.md
+            - name: Instalar ensamblados en paralelo como ensamblados compartidos
+              href: installing-side-by-side-assemblies-as-shared-assemblies.md
+              items:
+                - name: Crear archivos y catálogos firmados
+                  href: creating-signed-files-and-catalogs.md
+                - name: Ejemplo de firma de ensamblado
+                  href: assembly-signing-example.md
+        - name: 'Habilitar un ensamblado en una aplicación que hospeda un archivo DLL, una extensión o un panel de control'
+          href: enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel.md
+        - name: Habilitar un ensamblado en una aplicación sin extensiones
+          href: enabling-an-assembly-in-an-application-without-extensions.md
+        - name: 'Habilitar controles comunes actualizados, estilos visuales y temas'
+          href: enabling-updated-common-controls-visual-styles-and-themes.md
+        - name: Uso de la API de contexto de activación
+          href: using-the-activation-context-api.md
+          items:
+            - name: Recuento de referencias contextos de activación
+              href: reference-counting-activation-contexts.md
+            - name: Buscar ensamblados
+              href: searching-for-assemblies.md
+            - name: Buscar archivos de ensamblado
+              href: searching-for-assembly-files.md
+            - name: Crear clases de Windows en paralelo
+              href: creating-side-by-side-windows-classes.md
+            - name: Crear Registration-Free objetos COM
+              href: creating-registration-free-com-objects.md
+            - name: 'Usar subprocesos, procedimientos asincrónicos y mensajes de ventana'
+              href: using-threads--asynchronous-procedures--and-window-messages.md
+            - name: Especificar un contexto de activación predeterminado
+              href: specifying-a-default-activation-context.md
+            - name: Actualización de componentes de la aplicación
+              href: updating-application-components.md
+            - name: Llamar a ensamblados
+              href: calling-into-assemblies.md
+            - name: Llamar fuera de un ensamblado
+              href: calling-outside-an-assembly.md
+            - name: Usar devoluciones de llamada de componentes hospedados
+              href: using-callbacks-from-hosted-components.md
+            - name: Aislar componentes
+              href: isolating-components.md
+        - name: Uso de ensamblados con una interfaz de usuario multilingüe
+          href: using-assemblies-with-a-multilanguage-user-interface.md
+        - name: Usar ensamblados en paralelo como un recurso
+          href: using-side-by-side-assemblies-as-a-resource.md
+        - name: Corregir una aplicación existente mediante un ensamblado privado
+          href: fixing-an-existing-application-using-a-private-assembly.md
+    - name: Instrucciones para crear ensamblados en paralelo
+      href: guidelines-for-creating-side-by-side-assemblies.md
+      items:
+        - name: ¿Debe proporcionar un componente compartido como ensamblado simultáneo?
+          href: should-you-provide-a-shared-component-as-a-side-by-side-assembly.md
+        - name: Crear un archivo DLL para un ensamblado en paralelo
+          href: authoring-a-dll-for-a-side-by-side-assembly.md
+        - name: Crear almacenamiento de estado para ensamblados en paralelo
+          href: authoring-state-storage-for-side-by-side-assemblies.md
+    - name: Referencia de ensamblados en paralelo
+      href: side-by-side-assemblies-reference.md
+      items:
+        - name: API de ensamblados en paralelo
+          href: side-by-side-assembly-api.md
+          items:
+            - name: Enumeraciones de ensamblados en paralelo
+              href: enumerations.md
+              items:
+                - name: ASM_CMP_FLAGS
+                  href: /windows/win32/api/Winsxs/ne-winsxs-asm_cmp_flags
+                - name: ASM_DISPLAY_FLAGS
+                  href: /windows/win32/api/Winsxs/ne-winsxs-asm_display_flags
+                - name: ASM_NAME
+                  href: /windows/win32/api/Winsxs/ne-winsxs-asm_name
+                - name: CREATE_ASM_NAME_OBJ_FLAGS
+                  href: /windows/win32/api/Winsxs/ne-winsxs-create_asm_name_obj_flags
+            - name: Funciones de ensamblado en paralelo
+              href: side-by-side-assembly-functions.md
+              items:
+                - name: Createassemblycache (
+                  href: /windows/desktop/api/Winsxs/nf-winsxs-createassemblycache
+                - name: Createassemblynameobject (
+                  href: /windows/desktop/api/Winsxs/nf-winsxs-createassemblynameobject
+            - name: Interfaces de ensamblado en paralelo
+              href: side-by-side-assembly-interfaces.md
+              items:
+                - name: IAssemblyCache
+                  href: /windows/desktop/api/winsxs/nn-winsxs-iassemblycache
+                  items:
+                    - name: Método CreateAssemblyCacheItem
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycache-createassemblycacheitem
+                    - name: Método InstallAssembly
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycache-installassembly
+                    - name: Método QueryAssemblyInfo
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycache-queryassemblyinfo
+                    - name: Método UninstallAssembly
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycache-uninstallassembly
+                - name: IAssemblyCacheItem
+                  href: /windows/desktop/api/winsxs/nn-winsxs-iassemblycacheitem
+                  items:
+                    - name: Método Commit
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycacheitem-commit
+                    - name: Método CreateStream
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycacheitem-createstream
+                - name: IAssemblyName
+                  href: /windows/desktop/api/winsxs/nn-winsxs-iassemblyname
+                  items:
+                    - name: Clone (Método)
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-clone
+                    - name: Método Finalize
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-finalize
+                    - name: GetDisplayName (Método)
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-getdisplayname
+                    - name: GetName (Método)
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-getname
+                    - name: Método GetProperty
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-getproperty
+                    - name: Método IsEqual
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-isequal
+                    - name: Método SetProperty
+                      href: /windows/desktop/api/winsxs/nf-winsxs-iassemblyname-setproperty
+            - name: Estructuras de ensamblado en paralelo
+              href: structures.md
+              items:
+                - name: ASSEMBLY_INFO
+                  href: /windows/win32/api/Winsxs/ns-winsxs-assembly_info
+                - name: FUSION_INSTALL_REFERENCE
+                  href: /windows/win32/api/winsxs/ns-winsxs-fusion_install_reference
+        - name: Referencia de archivos de manifiesto
+          href: manifest-files-reference.md
+          items:
+            - name: Manifiestos de ensamblado
+              href: assembly-manifests.md
+            - name: Manifiestos de aplicación
+              href: application-manifests.md
+            - name: Archivos de configuración de la aplicación
+              href: application-configuration-files.md
+            - name: Archivos de configuración del publicador
+              href: publisher-configuration-files.md
+            - name: Esquema del archivo de manifiesto
+              href: manifest-file-schema.md
+            - name: Esquema del archivo de configuración de la aplicación
+              href: application-configuration-file-schema.md
+            - name: Esquema del archivo de configuración del publicador
+              href: publisher-configuration-file-schema.md
+        - name: Referencia de contexto de activación
+          href: activation-context-reference.md
+          items:
+            - name: ActivateActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-activateactctx
+            - name: AddRefActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-addrefactctx
+            - name: CreateActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-createactctxa
+            - name: DeactivateActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-deactivateactctx
+            - name: FindActCtxSectionGuid
+              href: /windows/desktop/api/Winbase/nf-winbase-findactctxsectionguid
+            - name: FindActCtxSectionString
+              href: /windows/desktop/api/Winbase/nf-winbase-findactctxsectionstringa
+            - name: GetCurrentActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-getcurrentactctx
+            - name: IsolationAwareCleanup
+              href: /previous-versions/windows/desktop/legacy/aa375204(v=vs.85)
+            - name: QueryActCtxW
+              href: /windows/desktop/api/Winbase/nf-winbase-queryactctxw
+            - name: QueryActCtxSettingsW
+              href: /windows/desktop/api/Winbase/nf-winbase-queryactctxsettingsw
+            - name: ReleaseActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-releaseactctx
+            - name: ZombifyActCtx
+              href: /windows/desktop/api/Winbase/nf-winbase-zombifyactctx
+            - name: ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION
+              href: /windows/win32/api/Winnt/ns-winnt-activation_context_assembly_detailed_information
+            - name: ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION
+              href: /windows/win32/api/Winnt/ns-winnt-activation_context_compatibility_information
+            - name: ACTIVATION_CONTEXT_DETAILED_INFORMATION
+              href: /windows/win32/api/Winnt/ns-winnt-activation_context_detailed_information
+            - name: ACTIVATION_CONTEXT_QUERY_INDEX
+              href: /windows/win32/api/Winnt/ns-winnt-activation_context_query_index
+            - name: ACTCTX
+              href: /windows/win32/api/Winbase/ns-winbase-actctxa
+            - name: ACTCTX_SECTION_KEYED_DATA
+              href: /windows/win32/api/Winbase/ns-winbase-actctx_section_keyed_data
+            - name: ASSEMBLY_FILE_DETAILED_INFORMATION
+              href: /windows/win32/api/Winnt/ns-winnt-assembly_file_detailed_information
+            - name: ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION
+              href: /windows/win32/api/Winnt/ns-winnt-activation_context_run_level_information
+            - name: COMPATIBILITY_CONTEXT_ELEMENT
+              href: /windows/win32/api/Winnt/ns-winnt-compatibility_context_element
+            - name: ACTCTX_COMPATIBILITY_ELEMENT_TYPE
+              href: /windows/desktop/api/Winnt/ne-winnt-actctx_compatibility_element_type
+            - name: ACTCTX_REQUESTED_RUN_LEVEL
+              href: /windows/desktop/api/Winnt/ne-winnt-actctx_requested_run_level
+        - name: Ensamblados en paralelo de Microsoft admitidos
+          href: supported-microsoft-side-by-side-assemblies.md
+        - name: Herramientas de desarrollo de ensamblados en paralelo
+          href: side-by-side-assembly-development-tools.md
+          items:
+            - name: Manifestchk.vbs
+              href: manifestchk-vbs.md
+            - name: Mt.exe
+              href: mt-exe.md
+            - name: Pktextract.exe
+              href: pktextract-exe.md
+        - name: Objeto Microsoft. Windows. ActCtx
+          href: microsoft-windows-actctx-object.md
+          items:
+            - name: Propiedad manifest
+              href: manifest.md
+            - name: CreateObject (método)
+              href: createobject.md
+            - name: GetObject (Método)
+              href: getobject.md
+    - name: Glosario
+      href: glossary-sbscs.md
+      items:
+        - name: Un
+          href: a-sbscs-gly.md
+        - name: D
+          href: d-sbscs-gly.md
+        - name: G
+          href: g-sbscs-gly.md
+        - name: I
+          href: i-sbscs-gly.md
+        - name: M
+          href: m-sbscs-gly.md
+        - name: P
+          href: p-sbscs-gly.md
+        - name: R
+          href: r-sbscs-gly.md
+        - name: S
+          href: s-sbscs-gly.md
