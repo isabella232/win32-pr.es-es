@@ -1,0 +1,171 @@
+---
+title: Propiedad downloadProgress de IWMPNetwork
+description: La propiedad downloadProgress obtiene el porcentaje de descarga completada.
+ms.assetid: 40568c81-5bb5-45d9-b654-31072608663d
+keywords:
+- propiedades de downloadProgress Media Player de Windows
+- propiedad downloadProgress de Windows Media Player, interfaz IWMPNetwork
+- Interfaz IWMPNetwork Windows Media Player, propiedad downloadProgress
+topic_type:
+- apiref
+api_name:
+- IWMPNetwork.downloadProgress
+api_location:
+- Interop.WMPLib.dll
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 4b10b767845ac951e1364e15c7f6f1d729882e0d
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105698572"
+---
+# <a name="iwmpnetworkdownloadprogress-property"></a>IWMPNetwork::d propiedad ownloadProgress
+
+La propiedad **downloadProgress** obtiene el porcentaje de descarga completada.
+
+## <a name="syntax"></a>Sintaxis
+
+
+```CSharp
+public System.Int32 downloadProgress {get; set;}
+```
+
+
+```VB
+
+Public ReadOnly Property downloadProgress As System.Int32
+```
+
+
+
+
+
+## <a name="property-value"></a>Valor de propiedad
+
+**System. Int32** que es el progreso de la descarga expresado como un porcentaje.
+
+## <a name="remarks"></a>Observaciones
+
+Cuando el control de Media Player de Windows se conecta a un archivo multimedia digital que se puede reproducir y descargar al mismo tiempo, la propiedad **downloadProgress** obtiene el porcentaje del archivo total que se ha descargado. Esta característica solo se admite actualmente para archivos multimedia digitales descargados de servidores Web. Se puede descargar y reproducir simultáneamente un archivo con cualquiera de los siguientes formatos:
+
+-   Formato ASF
+-   Audio de Windows Media (WMA)
+-   Vídeo de Windows Media (WMV)
+-   MP3
+-   MPEG
+-   WAV
+
+Además, algunos archivos AVI se pueden descargar y reproducir simultáneamente.
+
+Use **AxWindowsMediaPlayer. \_ WMPOCXEvents \_ BufferingEvent** para determinar cuándo se inicia o se detiene el almacenamiento en búfer.
+
+## <a name="examples"></a>Ejemplos
+
+En el ejemplo de código siguiente se usa **downloadProgress** para mostrar el porcentaje de descarga completada. La información se muestra en una etiqueta, en respuesta al evento de **almacenamiento en búfer** . En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+
+
+```CSharp
+// Add a delegate for the Buffering event.
+player.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(player_Buffering);
+
+// Create an event handler for the Buffering event.
+private void player_Buffering(object sender, AxWMPLib._WMPOCXEvents_BufferingEvent e)
+{
+    // Determine whether buffering has started or stopped.
+    if (e.start == true)
+    {
+        // Set the timer interval at one second (1000 miliseconds).
+        timer.Interval = 1000;
+        
+        // Start the timer.
+        timer.Start();
+    }
+    else
+    {
+        // Buffering is complete. Stop the timer.
+        timer.Stop();
+    }
+}
+
+// Update the download progress in a timer event handler.
+private void UpdateDownloadProgress(object sender, EventArgs e)
+{
+    downloadProgressLabel.Text = ("Download progress: " + player.network.downloadProgress + " percent complete");
+}
+```
+
+
+```VB
+
+' Create an event handler for the Buffering event.
+Public Sub player_Buffering(ByVal sender As Object, ByVal e As AxWMPLib._WMPOCXEvents_BufferingEvent) Handles player.Buffering
+
+    &#39; Test whether packets may be arriving.
+    Select Case e.newState
+
+    &#39; If WMPPlayState is Stopped, Paused, ScanForward, ScanReverse, Waiting, MediaEnded
+    &#39; or Transitioning then stop the timer. 
+        Case 1
+        Case 2
+        Case 4
+        Case 5
+        Case 7
+        Case 8
+        Case 9
+            timer.Stop()
+
+        &#39; If WMPPlayState is Playing or Buffering then set the timer interval and start the timer.
+        Case Else
+            timer.Interval = 1000
+            timer.Start()
+
+    End Select
+
+End Sub
+
+&#39; Update the download progress in a timer event handler.
+Public Sub UpdateDownloadProgress(ByVal sender As Object, ByVal e As System.EventArgs) Handles timer.Tick
+
+    downloadProgressLabel.Text = (&quot;Download progress: &quot; + player.network.downloadProgress + &quot; percent complete&quot;)
+
+End Sub
+```
+
+
+
+
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|----------------------|------------------------------------------------------------------------------------------------------------------------|
+| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
+| Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[**Evento AxWindowsMediaPlayer. buffering (VB y C#)**](axwmplib-axwindowsmediaplayer-buffering.md)
+</dt> <dt>
+
+[**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
