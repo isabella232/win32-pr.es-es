@@ -1,0 +1,51 @@
+---
+title: Interfaces auxiliares para D3D12
+description: Estas interfaces auxiliares ayudan especialmente en el control de Subrecursos y se declaran en d3dx12. h.
+ms.assetid: 03310CC9-E84D-4BC2-8B06-D3445807E357
+keywords:
+- Interfaces auxiliares
+- d3dx12. h
+ms.localizationpriority: low
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d0231486afdd14f7f67e43192932ac156ad43e4a
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "105720082"
+---
+# <a name="helper-interfaces-for-d3d12"></a><span data-ttu-id="8268b-105">Interfaces auxiliares para D3D12</span><span class="sxs-lookup"><span data-stu-id="8268b-105">Helper Interfaces for D3D12</span></span>
+
+<span data-ttu-id="8268b-106">Estas interfaces auxiliares ayudan especialmente en el control de Subrecursos y se declaran en **d3dx12. h**.</span><span class="sxs-lookup"><span data-stu-id="8268b-106">These helper interfaces help particularly in handling subresources, and are declared in **d3dx12.h**.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="8268b-107">En esta sección</span><span class="sxs-lookup"><span data-stu-id="8268b-107">In this section</span></span>
+
+
+
+| <span data-ttu-id="8268b-108">Tema</span><span class="sxs-lookup"><span data-stu-id="8268b-108">Topic</span></span>                                                                               | <span data-ttu-id="8268b-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="8268b-109">Description</span></span>                                                                                                                                                                    |
+|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="8268b-110">**ID3DX12PipelineParserCallbacks**</span><span class="sxs-lookup"><span data-stu-id="8268b-110">**ID3DX12PipelineParserCallbacks**</span></span>](id3dx12pipelineparsercallbacks.md)<br/> | <span data-ttu-id="8268b-111">Una interfaz que representa una colección de devoluciones de llamada de analizador y error utilizadas por la función auxiliar [**D3DX12parsePipelineStream**](d3dx12parsepipelinestream.md) .</span><span class="sxs-lookup"><span data-stu-id="8268b-111">An interface that represents a collection of parser and error callbacks used by the [**D3DX12parsePipelineStream**](d3dx12parsepipelinestream.md) helper function.</span></span><br/> |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="8268b-112">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="8268b-112">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="8268b-113">Referencia de Direct3D 12</span><span class="sxs-lookup"><span data-stu-id="8268b-113">Direct3D 12 Reference</span></span>](direct3d-12-reference.md)
+</dt> <dt>
+
+[<span data-ttu-id="8268b-114">Estructuras y funciones auxiliares de D3D12</span><span class="sxs-lookup"><span data-stu-id="8268b-114">Helper Structures and Functions for D3D12</span></span>](helper-structures-and-functions-for-d3d12.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
