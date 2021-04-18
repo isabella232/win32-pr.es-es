@@ -1,37 +1,37 @@
 ---
-title: 'SampleBias:: SampleBias (S, Float, Float, Float, uint) (función)'
-description: 'Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Devuelve el estado de la operación. | SampleBias:: SampleBias (S, Float, Float, Float, uint) (función)'
-ms.assetid: 376F11E6-4FFF-4685-9285-9D6143C77F2D
+title: 'Texture2DArray:: sample (S, Float, int, Float, uint) (función)'
+description: 'Muestrea una textura con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en y devuelve el estado de la operación. | Texture2DArray:: sample (S, Float, int, Float, uint) (función)'
+ms.assetid: 0F9DBC0D-F35D-4A7A-B8F5-1EFBF7E14615
 keywords:
-- SampleBias de función HLSL
+- HLSL de la función de ejemplo
 topic_type:
 - apiref
 api_name:
-- SampleBias
+- Sample
 api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b91491b6ff43862a8dbbdb55120f5af8f80bec85
+ms.openlocfilehash: e2027377a1659aa46fcf10e39f39b21e2243c943
 ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986398"
+ms.locfileid: "104986258"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloatuint-function"></a>SampleBias:: SampleBias (S, Float, Float, Float, uint) (función)
+# <a name="texture2darraysamplesfloatintfloatuint-function"></a>Texture2DArray:: sample (S, Float, int, Float, uint) (función)
 
-Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Devuelve el estado de la operación.
+Muestrea una textura con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en y devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
 
 ``` syntax
-DXGI_FORMAT SampleBias(
+DXGI_FORMAT Sample(
   in  SamplerState S,
   in  float        Location,
-  in  float        Bias,
+  in  int          Offset,
   in  float        Clamp,
   out uint         Status
 );
@@ -46,16 +46,12 @@ DXGI_FORMAT SampleBias(
 *S* \[ en\]
 </dt> <dd>
 
-Tipo: **SamplerState**
-
 Un [Estado de muestra](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.
 
 </dd> <dt>
 
 *Ubicación* \[ de de\]
 </dt> <dd>
-
-Tipo: **float**
 
 Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura.
 
@@ -74,19 +70,28 @@ Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de t
 
 </dd> <dt>
 
-*Bias* \[ de\]
+*Desplazamiento* \[ de\]
 </dt> <dd>
 
-Tipo: **float**
+Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. el desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un entero miplevel; de lo contrario, puede obtener resultados que no se traduzcan bien al hardware. El tipo de argumento depende del tipo de objeto de textura. Para obtener más información, vea [aplicar desplazamientos enteros](dx-graphics-hlsl-to-sample.md).
 
-El valor de diferencia, que es un número de punto flotante entre 0,0 y 1,0, ambos inclusive, se aplica a un nivel de MIP antes del muestreo.
+
+
+| Tipo de Texture-Object           | Tipo de parámetro |
+|-------------------------------|----------------|
+| Texture1D, Texture1DArray     | int            |
+| Texture2D, Texture2DArray     | int2           |
+| Texture3D                     | int3           |
+| TextureCube, TextureCubeArray | no admitido  |
+
+
+
+ 
 
 </dd> <dt>
 
 *Abrazadera* \[ de\]
 </dt> <dd>
-
-Tipo: **float**
 
 Un valor opcional en el que se van a fijar los valores LOD de ejemplo. Por ejemplo, si se pasa 2.0 f para el valor Clamp, se asegura de que ningún ejemplo individual tenga acceso a un nivel de MIP inferior a 2.0 f.
 
@@ -95,15 +100,11 @@ Un valor opcional en el que se van a fijar los valores LOD de ejemplo. Por ejemp
 *Estado* \[ de enuncia\]
 </dt> <dd>
 
-Tipo: **uint**
-
 Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
-
-Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
 Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
@@ -111,10 +112,7 @@ Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ for
 
 <dl> <dt>
 
-[Métodos SampleBias](texturecubearray-samplebias.md)
-</dt> <dt>
-
-[**TextureCubeArray**](texturecubearray.md)
+[Métodos de ejemplo](texture2darray-sample.md)
 </dt> </dl>
 
  
