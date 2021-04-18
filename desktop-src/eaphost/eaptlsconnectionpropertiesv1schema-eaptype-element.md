@@ -1,6 +1,6 @@
 ---
-title: Elemento EapType
-description: Es un tipo derivado del elemento EapType del esquema BaseEapConnectionProperties. | Elemento EapType
+title: Elemento EapType (eaptlsconnectionpropertiesv1schema)
+description: Este elemento es un tipo derivado del elemento EapType del esquema BaseEapConnectionProperties. Para eaptlsconnectionpropertiesv1schema.
 ms.assetid: cf92d500-f815-48e2-a7d5-1364cb13a1f0
 keywords:
 - Elemento EapType EAPHost
@@ -14,14 +14,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0d1fdb4026c72b99bf2434a9fd6937743a9edb40
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b74341d9b1fdd9121f1d67e2a941d931be049e0f
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003571"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106188006"
 ---
-# <a name="eaptype-element"></a>Elemento EapType
+# <a name="eaptype-element-eaptlsconnectionpropertiesv1schema"></a>Elemento EapType (eaptlsconnectionpropertiesv1schema)
 
 El elemento **EapType** es un tipo derivado del elemento [**EapType**](baseeapconnectionpropertiesv1schema-eaptype-element.md) del esquema [BaseEapConnectionProperties](baseeapconnectionpropertiesv1schema-schema.md) .
 
@@ -97,7 +97,7 @@ Este elemento **EapType** derivado contiene los siguientes elementos: [**Credent
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

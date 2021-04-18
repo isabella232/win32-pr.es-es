@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 77ad0b96cc2887e65af8a7ffc1ab71953dee478b
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: e73e8bd013836767e2a943616407aea9f563fea2
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105681316"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187834"
 ---
-# <a name="nametype-simple-type-lan_policy"></a>Tipo simple de nameType (LAN_policy)
+# <a name="nametype-simple-type-lan_policy-for-profileschema"></a>nameType tipo simple (LAN_policy) para profileschema
 
 El tipo simple nameType puede contener el nombre o una descripción de un perfil de LAN inalámbrica. Este valor de cadena debe tener entre 1 y 255 caracteres de longitud.
 
