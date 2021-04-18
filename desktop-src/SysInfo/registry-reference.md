@@ -1,0 +1,28 @@
+---
+description: Los elementos siguientes se utilizan con el registro.
+ms.assetid: 5f9651bf-0f47-48b8-ad57-6dcab9702725
+title: Referencia del registro
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 53077ace03475cba49985a776b9fa0708423fe88
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105667589"
+---
+# <a name="registry-reference"></a><span data-ttu-id="81af4-103">Referencia del registro</span><span class="sxs-lookup"><span data-stu-id="81af4-103">Registry Reference</span></span>
+
+<span data-ttu-id="81af4-104">Los elementos siguientes se utilizan con el registro.</span><span class="sxs-lookup"><span data-stu-id="81af4-104">The following elements are used with the registry.</span></span>
+
+-   [<span data-ttu-id="81af4-105">Funciones del registro</span><span class="sxs-lookup"><span data-stu-id="81af4-105">Registry Functions</span></span>](registry-functions.md)
+-   [<span data-ttu-id="81af4-106">Estructuras del registro</span><span class="sxs-lookup"><span data-stu-id="81af4-106">Registry Structures</span></span>](registry-structures.md)
+-   [<span data-ttu-id="81af4-107">Límites de tamaño de elementos del registro</span><span class="sxs-lookup"><span data-stu-id="81af4-107">Registry Element Size Limits</span></span>](registry-element-size-limits.md)
+-   [<span data-ttu-id="81af4-108">Tipos de valor del registro</span><span class="sxs-lookup"><span data-stu-id="81af4-108">Registry Value Types</span></span>](registry-value-types.md)
+
+ 
+
+ 
+
+
+
