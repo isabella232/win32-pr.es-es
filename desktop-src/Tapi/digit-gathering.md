@@ -1,0 +1,32 @@
+---
+description: Además de la habilitación de la supervisión de dígitos y la notificación de dígitos de uno en uno, una aplicación también puede solicitar que se recopilen varios dígitos en un búfer.
+ms.assetid: db83c48a-5178-40ed-90a9-e7c8e1886fe0
+title: Recopilación de dígitos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d5eab4185882b86a5a8e5dcb1444f39c9db2b3ba
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105677614"
+---
+# <a name="digit-gathering"></a><span data-ttu-id="e847b-103">Recopilación de dígitos</span><span class="sxs-lookup"><span data-stu-id="e847b-103">Digit Gathering</span></span>
+
+<span data-ttu-id="e847b-104">Además de la habilitación de la supervisión de dígitos y la notificación de dígitos de uno en uno, una aplicación también puede solicitar que se recopilen varios dígitos en un búfer.</span><span class="sxs-lookup"><span data-stu-id="e847b-104">Besides enabling digit monitoring and being notified of digits one at a time, an application can also request that multiple digits be collected in a buffer.</span></span> <span data-ttu-id="e847b-105">Solo cuando el búfer está lleno o cuando se cumple alguna otra condición de finalización, se notifica a la aplicación.</span><span class="sxs-lookup"><span data-stu-id="e847b-105">Only when the buffer is full or when some other termination condition is met is the application notified.</span></span> <span data-ttu-id="e847b-106">La recopilación de dígitos es útil para funciones como la colección de números de tarjetas de crédito.</span><span class="sxs-lookup"><span data-stu-id="e847b-106">Digit gathering is useful for functions such as credit card number collection.</span></span> <span data-ttu-id="e847b-107">Se realiza cuando una aplicación llama a [**lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits), especificando un búfer que se va a rellenar con dígitos.</span><span class="sxs-lookup"><span data-stu-id="e847b-107">It is performed when an application calls [**lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits), specifying a buffer to fill with digits.</span></span> <span data-ttu-id="e847b-108">La recopilación de dígitos finaliza cuando se cumple una de las siguientes condiciones:</span><span class="sxs-lookup"><span data-stu-id="e847b-108">Digit gathering terminates when one of the following conditions is true:</span></span>
+
+-   <span data-ttu-id="e847b-109">Se ha recopilado el número solicitado de dígitos.</span><span class="sxs-lookup"><span data-stu-id="e847b-109">The requested number of digits has been collected.</span></span>
+-   <span data-ttu-id="e847b-110">Se detecta uno de varios dígitos de finalización.</span><span class="sxs-lookup"><span data-stu-id="e847b-110">One of multiple termination digits is detected.</span></span> <span data-ttu-id="e847b-111">Los dígitos de terminación se especifican en [**lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits)y el dígito de terminación también se coloca en el búfer.</span><span class="sxs-lookup"><span data-stu-id="e847b-111">The termination digits are specified to [**lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits), and the termination digit is placed in the buffer as well.</span></span>
+-   <span data-ttu-id="e847b-112">Uno de los dos tiempos de espera expira.</span><span class="sxs-lookup"><span data-stu-id="e847b-112">One of two timeouts expires.</span></span> <span data-ttu-id="e847b-113">Los tiempos de espera son un tiempo de espera de primer dígito, que especifica la duración máxima antes de que se recopile el primer dígito y un tiempo de espera entre dígitos que especifica la duración máxima entre los dígitos sucesivos.</span><span class="sxs-lookup"><span data-stu-id="e847b-113">The timeouts are a first digit timeout, specifying the maximum duration before the first digit must be collected, and an inter-digit timeout, specifying the maximum duration between successive digits.</span></span>
+-   <span data-ttu-id="e847b-114">[**LineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits) vuelve a cancelar explícitamente la recopilación de dígitos con otro conjunto de parámetros para iniciar una nueva solicitud de recopilación o mediante un parámetro de búfer de dígito **nulo** para cancelar.</span><span class="sxs-lookup"><span data-stu-id="e847b-114">Digit gathering is canceled explicitly by [**lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits) again with either another set of parameters to start a new gathering request or by using a **NULL** digit buffer parameter to cancel.</span></span>
+
+<span data-ttu-id="e847b-115">Cuando la recopilación de dígitos finaliza por cualquier motivo, se envía un mensaje de [**línea \_ GATHERDIGITS**](line-gatherdigits.md) a la aplicación que solicitó la recopilación del dígito.</span><span class="sxs-lookup"><span data-stu-id="e847b-115">When digit gathering terminates for any reason, a [**LINE\_GATHERDIGITS**](line-gatherdigits.md) message is sent to the application that requested the digit gathering.</span></span> <span data-ttu-id="e847b-116">Solo una solicitud de recopilación de un solo dígito puede estar pendiente en una llamada en un momento dado en todas las aplicaciones que son propietarios de la llamada.</span><span class="sxs-lookup"><span data-stu-id="e847b-116">Only a single digit gathering request can be outstanding on a call at any given time across all applications that are owners of the call.</span></span>
+
+<span data-ttu-id="e847b-117">La recopilación de dígitos y la supervisión de dígitos se pueden habilitar en la misma llamada al mismo tiempo.</span><span class="sxs-lookup"><span data-stu-id="e847b-117">Digit gathering and digit monitoring can be enabled on the same call at the same time.</span></span> <span data-ttu-id="e847b-118">En ese caso, la aplicación recibirá un mensaje de [**línea \_ MONITORDIGITS**](line-monitordigits.md) para cada dígito detectado y un mensaje de línea \_ GATHERDIGITS independiente cuando se devuelva el búfer.</span><span class="sxs-lookup"><span data-stu-id="e847b-118">In that case, the application will receive a [**LINE\_MONITORDIGITS**](line-monitordigits.md) message for each detected digit and a separate LINE\_GATHERDIGITS message when the buffer is sent back.</span></span>
+
+ 
+
+ 
+
+
+
