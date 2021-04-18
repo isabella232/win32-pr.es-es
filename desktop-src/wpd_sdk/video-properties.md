@@ -1,0 +1,73 @@
+---
+description: Los dispositivos portátiles de Windows admiten las siguientes propiedades de vídeo.
+ms.assetid: e6df5b2d-ceb8-4de0-b60b-9102c77143fe
+title: Propiedades de vídeo (PortableDevice. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Video
+api_type:
+- HeaderDef
+api_location:
+- PortableDevice.h
+ms.openlocfilehash: 1f44f32ab19c5ad10cc9c8dd5bdb8816ccc944f6
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105718708"
+---
+# <a name="video-properties"></a><span data-ttu-id="ec250-103">Propiedades de vídeo</span><span class="sxs-lookup"><span data-stu-id="ec250-103">Video Properties</span></span>
+
+<span data-ttu-id="ec250-104">Los dispositivos portátiles de Windows admiten las siguientes propiedades de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-104">Windows Portable Devices supports the following video properties.</span></span>
+
+
+
+| <span data-ttu-id="ec250-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="ec250-105">Property</span></span>                                         | <span data-ttu-id="ec250-106">VarType</span><span class="sxs-lookup"><span data-stu-id="ec250-106">VarType</span></span>        | <span data-ttu-id="ec250-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="ec250-107">Description</span></span>                                                                                                                                                                                                                                             |
+|--------------------------------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ec250-108">**\_autor de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-108">**WPD\_VIDEO\_AUTHOR**</span></span>                           | <span data-ttu-id="ec250-109">**VT \_ LPWStr**</span><span class="sxs-lookup"><span data-stu-id="ec250-109">**VT\_LPWSTR**</span></span> | <span data-ttu-id="ec250-110">Autor del archivo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-110">The author of the video file.</span></span>                                                                                                                                                                                                                           |
+| <span data-ttu-id="ec250-111">**velocidad de bits de \_ vídeo WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-111">**WPD\_VIDEO\_BITRATE**</span></span>                          | <span data-ttu-id="ec250-112">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-112">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-113">La velocidad de bits del archivo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-113">The bit rate of the video file.</span></span>                                                                                                                                                                                                                         |
+| <span data-ttu-id="ec250-114">**\_tamaño del \_ búfer de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-114">**WPD\_VIDEO\_BUFFER\_SIZE**</span></span>                     | <span data-ttu-id="ec250-115">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-115">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-116">Valor que especifica el tamaño de búfer de vídeo necesario para representar este archivo.</span><span class="sxs-lookup"><span data-stu-id="ec250-116">A value that specifies the required video buffer size to render this file.</span></span>                                                                                                                                                                              |
+| <span data-ttu-id="ec250-117">**\_créditos de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-117">**WPD\_VIDEO\_CREDITS**</span></span>                          | <span data-ttu-id="ec250-118">**VT \_ LPWStr**</span><span class="sxs-lookup"><span data-stu-id="ec250-118">**VT\_LPWSTR**</span></span> | <span data-ttu-id="ec250-119">Los créditos que enumeran la conversión y el tripulante para el vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-119">The credits listing the cast and crew for the video.</span></span>                                                                                                                                                                                                    |
+| <span data-ttu-id="ec250-120">**\_ \_ código FourCC de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-120">**WPD\_VIDEO\_FOURCC\_CODE**</span></span>                     | <span data-ttu-id="ec250-121">**VT \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="ec250-121">**VT\_DWORD**</span></span>  | <span data-ttu-id="ec250-122">Código de FourCC registrado que indica el códec que se usó para el archivo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-122">The registered FourCC code that indicates the codec that was used for the video file.</span></span> <span data-ttu-id="ec250-123">Para obtener una lista de formatos FourCC, vea el artículo [registro de códigos FourCC y formatos de onda](https://msdn2.microsoft.com/library/ms867195.aspx) en el sitio web de MSDN.</span><span class="sxs-lookup"><span data-stu-id="ec250-123">For a listing of FourCC formats, see the article [Registered FOURCC Codes and WAVE Formats](https://msdn2.microsoft.com/library/ms867195.aspx) on the MSDN Web site.</span></span> |
+| <span data-ttu-id="ec250-124">**fotogramas de vídeo de WPD \_ \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-124">**WPD\_VIDEO\_FRAMERATE**</span></span>                        | <span data-ttu-id="ec250-125">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-125">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-126">La velocidad de fotogramas del archivo de vídeo, en fotogramas/segundo x 1.000.</span><span class="sxs-lookup"><span data-stu-id="ec250-126">The frame rate of the video file, in frames/second x 1,000.</span></span> <span data-ttu-id="ec250-127">Por ejemplo, una velocidad de fotogramas de 29,97 se representa como 29970.</span><span class="sxs-lookup"><span data-stu-id="ec250-127">For example, a frame rate of 29.97 is represented as 29970.</span></span>                                                                                                                                 |
+| <span data-ttu-id="ec250-128">**\_género de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-128">**WPD\_VIDEO\_GENRE**</span></span>                            | <span data-ttu-id="ec250-129">**VT \_ LPWStr**</span><span class="sxs-lookup"><span data-stu-id="ec250-129">**VT\_LPWSTR**</span></span> | <span data-ttu-id="ec250-130">Género de este archivo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-130">The genre of this video file.</span></span> <span data-ttu-id="ec250-131">No hay ninguna definición de género estándar.</span><span class="sxs-lookup"><span data-stu-id="ec250-131">There are no standard genre definitions.</span></span>                                                                                                                                                                                  |
+| <span data-ttu-id="ec250-132">**\_distancia de \_ \_ fotogramas de clave de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-132">**WPD\_VIDEO\_KEY\_FRAME\_DISTANCE**</span></span>             | <span data-ttu-id="ec250-133">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-133">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-134">Intervalo entre fotogramas clave, en milisegundos.</span><span class="sxs-lookup"><span data-stu-id="ec250-134">The interval between key frames, in milliseconds.</span></span>                                                                                                                                                                                                       |
+| <span data-ttu-id="ec250-135">**\_configuración de \_ calidad de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-135">**WPD\_VIDEO\_QUALITY\_SETTING**</span></span>                 | <span data-ttu-id="ec250-136">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-136">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-137">La configuración de calidad para el archivo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-137">The quality setting for the video file.</span></span> <span data-ttu-id="ec250-138">Esto depende del códec.</span><span class="sxs-lookup"><span data-stu-id="ec250-138">This is codec-dependent.</span></span>                                                                                                                                                                                        |
+| <span data-ttu-id="ec250-139">**\_número de \_ canal de RECORDEDTV de vídeo de WPD \_ \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-139">**WPD\_VIDEO\_RECORDEDTV\_CHANNEL\_NUMBER**</span></span>      | <span data-ttu-id="ec250-140">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-140">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-141">El número de canal de televisión desde el que se grabó el vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-141">The television channel number the video was recorded from.</span></span>                                                                                                                                                                                              |
+| <span data-ttu-id="ec250-142">**\_Descripción del \_ \_ programa RECORDEDTV de vídeo \_ de WPD**</span><span class="sxs-lookup"><span data-stu-id="ec250-142">**WPD\_VIDEO\_RECORDEDTV\_PROGRAM\_DESCRIPTION**</span></span> | <span data-ttu-id="ec250-143">**VT \_ LPWStr**</span><span class="sxs-lookup"><span data-stu-id="ec250-143">**VT\_LPWSTR**</span></span> | <span data-ttu-id="ec250-144">Descripción del programa de televisión grabado.</span><span class="sxs-lookup"><span data-stu-id="ec250-144">A description of the recorded television program.</span></span>                                                                                                                                                                                                       |
+| <span data-ttu-id="ec250-145">**RECORDEDTV de vídeo de WPD \_ \_ \_ repite**</span><span class="sxs-lookup"><span data-stu-id="ec250-145">**WPD\_VIDEO\_RECORDEDTV\_REPEAT**</span></span>               | <span data-ttu-id="ec250-146">**VT \_ bool**</span><span class="sxs-lookup"><span data-stu-id="ec250-146">**VT\_BOOL**</span></span>   | <span data-ttu-id="ec250-147">Valor booleano que especifica si el programa de televisión era una repetición que se muestra.</span><span class="sxs-lookup"><span data-stu-id="ec250-147">A Boolean value that specifies whether the television program was a repeat showing.</span></span>                                                                                                                                                                     |
+| <span data-ttu-id="ec250-148">**\_nombre de \_ la \_ estación \_ RECORDEDTV de vídeo de WPD**</span><span class="sxs-lookup"><span data-stu-id="ec250-148">**WPD\_VIDEO\_RECORDEDTV\_STATION\_NAME**</span></span>        | <span data-ttu-id="ec250-149">**VT \_ LPWStr**</span><span class="sxs-lookup"><span data-stu-id="ec250-149">**VT\_LPWSTR**</span></span> | <span data-ttu-id="ec250-150">La estación de televisión desde la que se grabó el vídeo.</span><span class="sxs-lookup"><span data-stu-id="ec250-150">The television station that the video was recorded from.</span></span>                                                                                                                                                                                                |
+| <span data-ttu-id="ec250-151">**\_tipo de \_ examen de vídeo de WPD \_**</span><span class="sxs-lookup"><span data-stu-id="ec250-151">**WPD\_VIDEO\_SCAN\_TYPE**</span></span>                       | <span data-ttu-id="ec250-152">**VT \_ UI4**</span><span class="sxs-lookup"><span data-stu-id="ec250-152">**VT\_UI4**</span></span>    | <span data-ttu-id="ec250-153">Un enumerador de tipos de análisis de vídeo de WPD que especifica el entrelazado del archivo de vídeo. [**\_ \_ \_**](wpd-video-scan-types.md)</span><span class="sxs-lookup"><span data-stu-id="ec250-153">A [**WPD\_VIDEO\_SCAN\_TYPES**](wpd-video-scan-types.md) enumerator that specifies the interlacing of the video file.</span></span>                                                                                                                                  |
+
+
+
+ 
+
+## <a name="requirements"></a><span data-ttu-id="ec250-154">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ec250-154">Requirements</span></span>
+
+
+
+| <span data-ttu-id="ec250-155">Requisito</span><span class="sxs-lookup"><span data-stu-id="ec250-155">Requirement</span></span> | <span data-ttu-id="ec250-156">Value</span><span class="sxs-lookup"><span data-stu-id="ec250-156">Value</span></span> |
+|-------------------|---------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ec250-157">Encabezado</span><span class="sxs-lookup"><span data-stu-id="ec250-157">Header</span></span><br/> | <dl> <span data-ttu-id="ec250-158"><dt>PortableDevice. h</dt></span><span class="sxs-lookup"><span data-stu-id="ec250-158"><dt>PortableDevice.h</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="ec250-159">Vea también</span><span class="sxs-lookup"><span data-stu-id="ec250-159">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="ec250-160">**Propiedades y atributos de WPD**</span><span class="sxs-lookup"><span data-stu-id="ec250-160">**WPD Properties and Attributes**</span></span>](properties-and-attributes.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
