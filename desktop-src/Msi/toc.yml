@@ -98,7 +98,7 @@
                   href: allowlockdownmedia.md
                 - name: AllowLockdownPatch
                   href: allowlockdownpatch.md
-                - name: Depuración
+                - name: Depurar
                   href: debug.md
                 - name: DisableAutomaticApplicationShutdown
                   href: disableautomaticapplicationshutdown.md
@@ -1193,7 +1193,7 @@
                   href: computername.md
                 - name: CostingComplete
                   href: costingcomplete.md
-                - name: Fecha
+                - name: Date
                   href: date.md
                 - name: DefaultUIFont
                   href: defaultuifont.md
@@ -1473,7 +1473,7 @@
                   href: terminalserver.md
                 - name: TextHeight
                   href: textheight.md
-                - name: Hora
+                - name: Time
                   href: time.md
                 - name: TRANSFORMA
                   href: transforms.md
@@ -1517,7 +1517,7 @@
                   href: windowsvolume.md
             - name: Valores de propiedad del sistema operativo
               href: operating-system-property-values.md
-            - name: Desinstalar la clave del registro
+            - name: Propiedades de la clave del registro Uninstall
               href: uninstall-registry-key.md
         - name: Flujo de información de Resumen
           href: summary-information-stream.md
@@ -3411,7 +3411,7 @@
                           href: filename.md
                         - name: WildCardFilename
                           href: wildcardfilename.md
-                        - name: Ruta
+                        - name: Ruta de acceso
                           href: path.md
                         - name: Rutas de acceso
                           href: paths.md
@@ -3433,7 +3433,7 @@
                           href: guid.md
                         - name: Versión
                           href: version.md
-                        - name: Lenguaje
+                        - name: Idioma
                           href: language.md
                         - name: Binary
                           href: binary.md
@@ -3740,7 +3740,7 @@
         - name: Glosario
           href: glossary.md
           items:
-            - name: Un
+            - name: A
               href: a-gly.md
             - name: B
               href: b-gly.md
