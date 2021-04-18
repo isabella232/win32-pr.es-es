@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 77ad0b96cc2887e65af8a7ffc1ab71953dee478b
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: e73e8bd013836767e2a943616407aea9f563fea2
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105681316"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187834"
 ---
-# <a name="nametype-simple-type-lan_policy"></a><span data-ttu-id="49ec4-103">Tipo simple de nameType (LAN_policy)</span><span class="sxs-lookup"><span data-stu-id="49ec4-103">nameType Simple Type (LAN_policy)</span></span>
+# <a name="nametype-simple-type-lan_policy-for-profileschema"></a><span data-ttu-id="a48c2-103">nameType tipo simple (LAN_policy) para profileschema</span><span class="sxs-lookup"><span data-stu-id="a48c2-103">nameType Simple Type (LAN_policy) for profileschema</span></span>
 
-<span data-ttu-id="49ec4-104">El tipo simple nameType puede contener el nombre o una descripción de un perfil de LAN inalámbrica.</span><span class="sxs-lookup"><span data-stu-id="49ec4-104">The nameType simple type can contain either the name or a description of a wireless LAN profile.</span></span> <span data-ttu-id="49ec4-105">Este valor de cadena debe tener entre 1 y 255 caracteres de longitud.</span><span class="sxs-lookup"><span data-stu-id="49ec4-105">This string value must be between 1 and 255 characters long.</span></span>
+<span data-ttu-id="a48c2-104">El tipo simple nameType puede contener el nombre o una descripción de un perfil de LAN inalámbrica.</span><span class="sxs-lookup"><span data-stu-id="a48c2-104">The nameType simple type can contain either the name or a description of a wireless LAN profile.</span></span> <span data-ttu-id="a48c2-105">Este valor de cadena debe tener entre 1 y 255 caracteres de longitud.</span><span class="sxs-lookup"><span data-stu-id="a48c2-105">This string value must be between 1 and 255 characters long.</span></span>
 
 ``` syntax
 <xs:simpleType name="nameType">
@@ -38,15 +38,15 @@ ms.locfileid: "105681316"
 </xs:simpleType>
 ```
 
-## <a name="requirements"></a><span data-ttu-id="49ec4-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="49ec4-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a48c2-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a48c2-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="49ec4-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="49ec4-107">Requirement</span></span> | <span data-ttu-id="49ec4-108">Value</span><span class="sxs-lookup"><span data-stu-id="49ec4-108">Value</span></span> |
+| <span data-ttu-id="a48c2-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="a48c2-107">Requirement</span></span> | <span data-ttu-id="a48c2-108">Value</span><span class="sxs-lookup"><span data-stu-id="a48c2-108">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------|
-| <span data-ttu-id="49ec4-109">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="49ec4-109">Minimum supported client</span></span><br/> | <span data-ttu-id="49ec4-110">Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]</span><span class="sxs-lookup"><span data-stu-id="49ec4-110">Windows Vista, Windows XP with SP3 \[desktop apps only\]</span></span><br/> |
-| <span data-ttu-id="49ec4-111">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="49ec4-111">Minimum supported server</span></span><br/> | <span data-ttu-id="49ec4-112">Solo aplicaciones de escritorio de Windows Server 2008 \[\]</span><span class="sxs-lookup"><span data-stu-id="49ec4-112">Windows Server 2008 \[desktop apps only\]</span></span><br/>                |
-| <span data-ttu-id="49ec4-113">Redistribuible</span><span class="sxs-lookup"><span data-stu-id="49ec4-113">Redistributable</span></span><br/>          | <span data-ttu-id="49ec4-114">API de LAN inalámbrica para Windows XP con SP2</span><span class="sxs-lookup"><span data-stu-id="49ec4-114">Wireless LAN API for Windows XP with SP2</span></span><br/>                 |
+| <span data-ttu-id="a48c2-109">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="a48c2-109">Minimum supported client</span></span><br/> | <span data-ttu-id="a48c2-110">Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]</span><span class="sxs-lookup"><span data-stu-id="a48c2-110">Windows Vista, Windows XP with SP3 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="a48c2-111">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="a48c2-111">Minimum supported server</span></span><br/> | <span data-ttu-id="a48c2-112">Solo aplicaciones de escritorio de Windows Server 2008 \[\]</span><span class="sxs-lookup"><span data-stu-id="a48c2-112">Windows Server 2008 \[desktop apps only\]</span></span><br/>                |
+| <span data-ttu-id="a48c2-113">Redistribuible</span><span class="sxs-lookup"><span data-stu-id="a48c2-113">Redistributable</span></span><br/>          | <span data-ttu-id="a48c2-114">API de LAN inalámbrica para Windows XP con SP2</span><span class="sxs-lookup"><span data-stu-id="a48c2-114">Wireless LAN API for Windows XP with SP2</span></span><br/>                 |
 
 
 
