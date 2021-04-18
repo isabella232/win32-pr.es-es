@@ -1,0 +1,41 @@
+---
+title: Funciones de programación
+description: Las funciones de servicio de programación de administración de red envían y administran trabajos que se ejecutan en un equipo especificado en un momento determinado (o veces) en el futuro.
+ms.assetid: 1ddc9b95-fdbc-4e39-9b55-2a5bc570b95d
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3421ae46de8e8152356f64d3855b4fe95c228878
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "105676469"
+---
+# <a name="schedule-functions"></a><span data-ttu-id="df006-103">Funciones de programación</span><span class="sxs-lookup"><span data-stu-id="df006-103">Schedule Functions</span></span>
+
+<span data-ttu-id="df006-104">Las funciones de servicio de programación de administración de red envían y administran trabajos que se ejecutan en un equipo especificado en un momento determinado (o veces) en el futuro.</span><span class="sxs-lookup"><span data-stu-id="df006-104">The network management schedule service functions submit and manage jobs that execute on a specified computer at a particular time (or times) in the future.</span></span> <span data-ttu-id="df006-105">Los trabajos pueden incluir comandos y programas.</span><span class="sxs-lookup"><span data-stu-id="df006-105">Jobs can include commands and programs.</span></span> <span data-ttu-id="df006-106">Las funciones administran los trabajos en equipos remotos y locales, siempre que el servicio de programación se esté ejecutando en el equipo.</span><span class="sxs-lookup"><span data-stu-id="df006-106">The functions manage jobs at remote and local computers, provided the schedule service is running on the computer.</span></span>
+
+<span data-ttu-id="df006-107">A continuación se enumeran las funciones de servicio de programación.</span><span class="sxs-lookup"><span data-stu-id="df006-107">The schedule service functions are listed following.</span></span>
+
+
+
+| <span data-ttu-id="df006-108">Función</span><span class="sxs-lookup"><span data-stu-id="df006-108">Function</span></span>                                                                     | <span data-ttu-id="df006-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="df006-109">Description</span></span>                                                      |
+|------------------------------------------------------------------------------|------------------------------------------------------------------|
+| [<span data-ttu-id="df006-110">**NetScheduleJobAdd**</span><span class="sxs-lookup"><span data-stu-id="df006-110">**NetScheduleJobAdd**</span></span>](/windows/desktop/api/Lmat/nf-lmat-netschedulejobadd)                               | <span data-ttu-id="df006-111">Envía un trabajo para que se ejecute en una fecha y hora futuras especificadas.</span><span class="sxs-lookup"><span data-stu-id="df006-111">Submits a job to run at a specified future date and time.</span></span>        |
+| [<span data-ttu-id="df006-112">**NetScheduleJobDel**</span><span class="sxs-lookup"><span data-stu-id="df006-112">**NetScheduleJobDel**</span></span>](/windows/desktop/api/Lmat/nf-lmat-netschedulejobdel)                               | <span data-ttu-id="df006-113">Cancela un intervalo de trabajos en cola para ejecutarse en un equipo.</span><span class="sxs-lookup"><span data-stu-id="df006-113">Cancels a range of jobs queued to run on a computer.</span></span>             |
+| [<span data-ttu-id="df006-114">**NetScheduleJobEnum**</span><span class="sxs-lookup"><span data-stu-id="df006-114">**NetScheduleJobEnum**</span></span>](/windows/desktop/api/Lmat/nf-lmat-netschedulejobenum)                             | <span data-ttu-id="df006-115">Enumera los trabajos en cola en un equipo especificado.</span><span class="sxs-lookup"><span data-stu-id="df006-115">Lists the jobs queued on a specified computer.</span></span>                   |
+| [<span data-ttu-id="df006-116">**NetScheduleJobGetInfo**</span><span class="sxs-lookup"><span data-stu-id="df006-116">**NetScheduleJobGetInfo**</span></span>](/windows/desktop/api/Lmat/nf-lmat-netschedulejobgetinfo)                       | <span data-ttu-id="df006-117">Devuelve información acerca de un trabajo determinado en cola en un equipo.</span><span class="sxs-lookup"><span data-stu-id="df006-117">Returns information about a particular job queued on a computer.</span></span> |
+| [<span data-ttu-id="df006-118">**GetNetScheduleAccountInformation**</span><span class="sxs-lookup"><span data-stu-id="df006-118">**GetNetScheduleAccountInformation**</span></span>](/windows/desktop/api/AtAcct/nf-atacct-getnetscheduleaccountinformation) | <span data-ttu-id="df006-119">Recupera el nombre de la cuenta de servicio de AT.</span><span class="sxs-lookup"><span data-stu-id="df006-119">Retrieves the AT Service account name.</span></span>                           |
+| [<span data-ttu-id="df006-120">**SetNetScheduleAccountInformation**</span><span class="sxs-lookup"><span data-stu-id="df006-120">**SetNetScheduleAccountInformation**</span></span>](/windows/desktop/api/AtAcct/nf-atacct-setnetscheduleaccountinformation) | <span data-ttu-id="df006-121">Establece el nombre y la contraseña de la cuenta de servicio en.</span><span class="sxs-lookup"><span data-stu-id="df006-121">Sets the AT Service account name and password.</span></span>                   |
+
+
+
+ 
+
+<span data-ttu-id="df006-122">Para que las funciones de programación de administración de redes se realicen correctamente, el autor de la llamada debe tener privilegios de administrador en el equipo en el que se ejecuta el servicio de programación.</span><span class="sxs-lookup"><span data-stu-id="df006-122">For the network management schedule functions to succeed, a caller must have administrator's privilege at the computer where the schedule service is running.</span></span> <span data-ttu-id="df006-123">Las funciones de servicio de programación también se conocen como funciones "Job" y "AT Command".</span><span class="sxs-lookup"><span data-stu-id="df006-123">The schedule service functions are also known as "Job" and "AT command" functions.</span></span> <span data-ttu-id="df006-124">Para obtener más información sobre cómo llamar a funciones que requieran privilegios de administrador, vea [ejecutar con privilegios especiales](/windows/desktop/SecBP/running-with-special-privileges).</span><span class="sxs-lookup"><span data-stu-id="df006-124">For more information about calling functions that require administrator privileges, see [Running with Special Privileges](/windows/desktop/SecBP/running-with-special-privileges).</span></span>
+
+<span data-ttu-id="df006-125">La función [**NetScheduleJobAdd**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobadd) utiliza la estructura [**at \_ info**](/windows/desktop/api/Lmat/ns-lmat-at_info) para especificar información al enviar un trabajo y la función [**NetScheduleJobGetInfo**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobgetinfo) para recuperar información sobre un trabajo que se ha enviado.</span><span class="sxs-lookup"><span data-stu-id="df006-125">The [**AT\_INFO**](/windows/desktop/api/Lmat/ns-lmat-at_info) structure is used by the [**NetScheduleJobAdd**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobadd) function to specify information when submitting a job, and by the [**NetScheduleJobGetInfo**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobgetinfo) function to retrieve information about a job that has been submitted.</span></span> <span data-ttu-id="df006-126">[**NetScheduleJobEnum**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobenum) utiliza la estructura [**at \_ enum**](/windows/desktop/api/Lmat/ns-lmat-at_enum) para enumerar y devolver información sobre toda una cola de trabajos enviados.</span><span class="sxs-lookup"><span data-stu-id="df006-126">The [**AT\_ENUM**](/windows/desktop/api/Lmat/ns-lmat-at_enum) structure is used by [**NetScheduleJobEnum**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobenum) to enumerate and return information about an entire queue of submitted jobs.</span></span>
+
+ 
+
+ 
