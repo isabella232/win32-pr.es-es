@@ -1,0 +1,106 @@
+---
+description: 'El método GetTime recupera los tiempos de flujo en los que este ejemplo debe comenzar y finalizar. Este método implementa el método IMediaSample:: GetTime.'
+ms.assetid: ddb0df1c-707d-405d-9e73-0d5a59f487b6
+title: Método CMediaSample. GetTime (Amfilter. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CMediaSample.GetTime
+api_type:
+- COM
+api_location:
+- Strmbase.lib
+- Strmbase.dll
+- Strmbasd.lib
+- Strmbasd.dll
+ms.openlocfilehash: 8ff2035ede3e49feb2bc14a7aa31cfc18f2e7d23
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105670475"
+---
+# <a name="cmediasamplegettime-method"></a>CMediaSample. GetTime (método)
+
+El `GetTime` método recupera los tiempos de flujo en los que este ejemplo debe comenzar y finalizar. Este método implementa el método [**IMediaSample:: getTime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-gettime) .
+
+## <a name="syntax"></a>Sintaxis
+
+
+```C++
+HRESULT GetTime(
+   REFERENCE_TIME *pTimeStart,
+   REFERENCE_TIME *pTimeEnd
+);
+```
+
+
+
+## <a name="parameters"></a>Parámetros
+
+<dl> <dt>
+
+*pTimeStart* 
+</dt> <dd>
+
+Puntero a una variable que recibe el tiempo de secuencia inicial, en unidades de 100-nanosegundos.
+
+</dd> <dt>
+
+*pTimeEnd* 
+</dt> <dd>
+
+Puntero a una variable que recibe la hora de finalización del flujo, en unidades de 100-nanosegundos. Si el ejemplo no tiene ninguna hora de detención, el valor se establece en la hora de inicio más una.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valor devuelto
+
+Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+
+
+
+| Código devuelto                                                                                                   | Descripción                                                 |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| <dl> <dt>**S \_ correcto**</dt> </dl>                          | Correcto.<br/>                                         |
+| <dl> <dt>**VFW \_ S \_ sin \_ hora de detención \_**</dt> </dl>         | El ejemplo tiene una hora de inicio válida, pero no una hora de detención.<br/> |
+| <dl> <dt>**\_hora de ejemplo VFW E \_ \_ \_ no \_ establecida**</dt> </dl> | El ejemplo no tiene marcas de tiempo válidas.<br/>          |
+
+
+
+ 
+
+## <a name="remarks"></a>Observaciones
+
+Las variables de miembro Start y [**CMediaSample:: m \_ End**](cmediasample-m-end.md) de [**CMediaSample:: m \_**](cmediasample-m-start.md) especifican las marcas de tiempo. La variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) especifica si las marcas de tiempo son válidas.
+
+Para obtener información acerca de las marcas de tiempo, consulte [hora y relojes en DirectShow](time-and-clocks-in-directshow.md).
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Value |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vea también
+
+<dl> <dt>
+
+[**Clase CMediaSample**](cmediasample.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

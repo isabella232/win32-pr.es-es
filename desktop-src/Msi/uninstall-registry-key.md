@@ -1,17 +1,18 @@
 ---
 description: Una lista de las propiedades de Windows Installer que proporcionan valores escritos en la clave del registro Uninstall.
 ms.assetid: f831cc62-4b19-4285-8bb1-6080567ac985
-title: Desinstalar la clave del registro
+title: Windows Installer propiedades de la clave del registro Uninstall
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bc3f970c760ad671965923d14fc961a113cfe18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.custom: contperf-fy21q3
+ms.openlocfilehash: 90174cabed7a1d9ff0ca21b532c459a1026787a6
+ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360124"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105994503"
 ---
-# <a name="uninstall-registry-key"></a>Desinstalar la clave del registro
+# <a name="windows-installer-properties-for-the-uninstall-registry-key"></a>Windows Installer propiedades de la clave del registro Uninstall
 
 Las siguientes propiedades del instalador proporcionan los valores escritos en la clave del registro:
 
