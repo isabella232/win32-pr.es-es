@@ -1,0 +1,36 @@
+---
+title: Cargar el carácter predeterminado
+description: Cargar el carácter predeterminado
+ms.assetid: 4e91aef5-8402-401d-b09f-83be25011027
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 387715b5078c4ec875c9abce47039898e4998cf7
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "105704643"
+---
+# <a name="loading-the-default-character"></a><span data-ttu-id="a45ff-103">Cargar el carácter predeterminado</span><span class="sxs-lookup"><span data-stu-id="a45ff-103">Loading the Default Character</span></span>
+
+<span data-ttu-id="a45ff-104">\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]</span><span class="sxs-lookup"><span data-stu-id="a45ff-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+
+<span data-ttu-id="a45ff-105">En lugar de cargar solo un carácter específico directamente especificando su nombre de archivo, puede cargar el *carácter predeterminado*.</span><span class="sxs-lookup"><span data-stu-id="a45ff-105">Instead of loading only a specific character directly by specifying its filename, you can load the *default character*.</span></span> <span data-ttu-id="a45ff-106">El carácter predeterminado es un servicio diseñado para proporcionar un asistente de Windows central y compartido que el usuario elige.</span><span class="sxs-lookup"><span data-stu-id="a45ff-106">The default character is a service intended to provide a shared, central Windows assistant that the user chooses.</span></span> <span data-ttu-id="a45ff-107">Microsoft Agent incluye una hoja de propiedades como parte del servicio de caracteres predeterminado, conocido como el ventana Propiedades de caracteres, que permite al usuario cambiar su selección del carácter predeterminado.</span><span class="sxs-lookup"><span data-stu-id="a45ff-107">Microsoft Agent includes a property sheet as part of the default character service, known as the Character Properties window, which enables the user to change their selection of the default character.</span></span>
+
+<span data-ttu-id="a45ff-108">La selección del carácter predeterminado está limitada a un carácter que admite el conjunto de animaciones estándar, lo que garantiza un nivel básico de coherencia entre los caracteres.</span><span class="sxs-lookup"><span data-stu-id="a45ff-108">Selection of the default character is limited to a character that supports the standard animation set, ensuring a basic level of consistency across characters.</span></span> <span data-ttu-id="a45ff-109">Esto no evita que un carácter tenga animaciones adicionales.</span><span class="sxs-lookup"><span data-stu-id="a45ff-109">This does not exclude a character from having additional animations.</span></span>
+
+<span data-ttu-id="a45ff-110">Sin embargo, dado que el carácter predeterminado está pensado para uso general y puede ser compartido por otras aplicaciones al mismo tiempo, Evite cargar el carácter predeterminado cuando desee un carácter exclusivamente para la aplicación.</span><span class="sxs-lookup"><span data-stu-id="a45ff-110">However, because the default character is intended for general-purpose use and may be shared by other applications at the same time, avoid loading the default character when you want a character exclusively for your application.</span></span>
+
+<span data-ttu-id="a45ff-111">Para cargar el carácter predeterminado, llame al método [**Load**](load-method.md) sin especificar un nombre de archivo o una ruta de acceso.</span><span class="sxs-lookup"><span data-stu-id="a45ff-111">To load the default character, call the [**Load**](load-method.md) method without specifying a filename or path.</span></span> <span data-ttu-id="a45ff-112">El agente de Microsoft carga automáticamente el juego de caracteres actual como carácter predeterminado.</span><span class="sxs-lookup"><span data-stu-id="a45ff-112">Microsoft Agent automatically loads the current character set as the default character.</span></span> <span data-ttu-id="a45ff-113">Si el usuario aún no ha seleccionado un carácter predeterminado, el agente seleccionará el primer carácter que admita el conjunto de animaciones estándar.</span><span class="sxs-lookup"><span data-stu-id="a45ff-113">If the user has not yet selected a default character, Agent will select the first character that supports the standard animation set.</span></span> <span data-ttu-id="a45ff-114">Si no hay ninguno disponible, se producirá un error en el método y se notificará la causa.</span><span class="sxs-lookup"><span data-stu-id="a45ff-114">If none is available, the method will fail and report back the cause.</span></span>
+
+<span data-ttu-id="a45ff-115">Aunque una aplicación cliente puede consultar la identidad del carácter, solo un usuario puede cambiar su configuración.</span><span class="sxs-lookup"><span data-stu-id="a45ff-115">Although a client application can inquire as to the identity of the character, only a user can change its settings.</span></span> <span data-ttu-id="a45ff-116">Puede usar [**ShowDefaultCharacterProperties**](showdefaultcharacterproperties-method.md) para mostrar el carácter ventana Propiedades.</span><span class="sxs-lookup"><span data-stu-id="a45ff-116">You can use the [**ShowDefaultCharacterProperties**](showdefaultcharacterproperties-method.md) to display the Character Properties window.</span></span>
+
+<span data-ttu-id="a45ff-117">El servidor notificará a los clientes que han cargado el carácter predeterminado cuando un usuario cambia la selección de caracteres y pasan el GUID del carácter nuevo.</span><span class="sxs-lookup"><span data-stu-id="a45ff-117">The server will notify clients that have loaded the default character when a user changes a character selection, and pass the GUID of the new character.</span></span> <span data-ttu-id="a45ff-118">El servidor descarga automáticamente el carácter anterior y recarga el carácter nuevo.</span><span class="sxs-lookup"><span data-stu-id="a45ff-118">The server automatically unloads the former character and reloads the new character.</span></span> <span data-ttu-id="a45ff-119">Las colas de los clientes que han cargado el carácter predeterminado se detienen y se vacían.</span><span class="sxs-lookup"><span data-stu-id="a45ff-119">The queues of any clients that have loaded the default character are halted and flushed.</span></span> <span data-ttu-id="a45ff-120">Sin embargo, las colas de clientes que han cargado explícitamente el carácter utilizando el nombre de archivo del carácter no se ven afectadas.</span><span class="sxs-lookup"><span data-stu-id="a45ff-120">However, the queues of clients that have loaded the character explicitly using the character's filename are not affected.</span></span> <span data-ttu-id="a45ff-121">Si es necesario, el servidor también controla automáticamente el restablecimiento del motor de texto a voz (TTS) para el nuevo carácter.</span><span class="sxs-lookup"><span data-stu-id="a45ff-121">If necessary, the server also handles automatically resetting the text-to-speech (TTS) engine for the new character.</span></span>
+
+ 
+
+ 
+
+
+
+
