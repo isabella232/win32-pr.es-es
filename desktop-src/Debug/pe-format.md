@@ -3,14 +3,14 @@ description: Esta especificación describe la estructura de los archivos ejecuta
 ms.assetid: 3dbfbf7f-6662-45a4-99f1-e0e24c370dee
 title: Formato PE
 ms.topic: article
-ms.date: 08/11/2020
+ms.date: 03/31/2021
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 257185019f329e0d4431ca61d1d88e2c0347f133
-ms.sourcegitcommit: f374b50b37160b683da16b59ac9340282a8f50a5
+ms.openlocfilehash: 3cc6fd777bca831ca4424baaa81c5525a24556ec
+ms.sourcegitcommit: 3b9424e1dcd951b2a73e47de3c7f4d734de4263b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "103997615"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106103866"
 ---
 # <a name="pe-format"></a>Formato PE
 
@@ -110,7 +110,7 @@ Después del código auxiliar de MS-DOS, en el desplazamiento de archivo especif
 
 Al principio de un archivo objeto, o inmediatamente después de la firma de un archivo de imagen, es un encabezado de archivo COFF estándar con el siguiente formato. Tenga en cuenta que el cargador de Windows limita el número de secciones a 96.
 
-| Offset         | Tamaño          | Campo                            | Descripción                                                                                                                                                                                                                                                          |
+| Offset         | Size          | Campo                            | Descripción                                                                                                                                                                                                                                                          |
 |----------------|---------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 2 <br/> | Máquina <br/>              | Número que identifica el tipo de equipo de destino. Para obtener más información, consulte [tipos de máquina](#machine-types). <br/>                                                                                                                                        |
 | 2 <br/>  | 2 <br/> | NumberOfSections <br/>     | Número de secciones. Esto indica el tamaño de la tabla de la secciones, que sigue inmediatamente a los encabezados. <br/>                                                                                                                                             |
@@ -124,7 +124,7 @@ Al principio de un archivo objeto, o inmediatamente después de la firma de un a
 
 El campo equipo tiene uno de los siguientes valores, que especifican el tipo de CPU. Un archivo de imagen solo se puede ejecutar en el equipo especificado o en un sistema que Emule el equipo especificado.
 
-| Constante                                    | Value              | Descripción                                                                             |
+| Constante                                    | Valor              | Descripción                                                                             |
 |---------------------------------------------|--------------------|-----------------------------------------------------------------------------------------|
 | máquina de archivo de imagen \_ \_ \_ desconocida <br/>   | 0x0 <br/>    | Se supone que el contenido de este campo es aplicable a cualquier tipo de máquina <br/> |
 | Máquina de archivos de imagen \_ \_ \_ AM33 <br/>      | 0x1d3 <br/>  | Matsushita AM33 <br/>                                                             |
@@ -204,7 +204,7 @@ El propio encabezado opcional tiene tres partes principales.
 
 Los ocho primeros campos del encabezado opcional son campos estándar que se definen para cada implementación de COFF. Estos campos contienen información general que es útil para cargar y ejecutar un archivo ejecutable. No se modifican en el formato PE32 +.
 
-| Offset         | Tamaño          | Campo                               | Descripción                                                                                                                                                                                                                                                                                                                                   |
+| Offset         | Size          | Campo                               | Descripción                                                                                                                                                                                                                                                                                                                                   |
 |----------------|---------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 2 <br/> | Instrucción mágica <br/>                   | Entero sin signo que identifica el estado del archivo de imagen. El número más común es 0x10B, que lo identifica como un archivo ejecutable normal. 0x107 lo identifica como una imagen de ROM y 0x20B lo identifica como un ejecutable de PE32 +. <br/>                                                                                            |
 | 2 <br/>  | 1 <br/> | MajorLinkerVersion <br/>      | El número de versión principal del enlazador. <br/>                                                                                                                                                                                                                                                                                                  |
@@ -217,7 +217,7 @@ Los ocho primeros campos del encabezado opcional son campos estándar que se def
 
 PE32 contiene este campo adicional, que está ausente en PE32 +, después de BaseOfCode.
 
-| Offset         | Tamaño          | Campo                  | Descripción                                                                                                                |
+| Offset         | Size          | Campo                  | Descripción                                                                                                                |
 |----------------|---------------|------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | 24 <br/> | 4 <br/> | BaseOfData <br/> | Dirección relativa a la base de la imagen de la sección de inicio de datos cuando se carga en la memoria. <br/> |
 
@@ -253,7 +253,7 @@ Los 21 campos siguientes son una extensión del formato de encabezado opcional C
 
 Los siguientes valores definidos para el campo Subsystem del encabezado opcional determinan qué subsistema de Windows (si existe) se requiere para ejecutar la imagen.
 
-| Constante                                                  | Value          | Descripción                                                      |
+| Constante                                                  | Valor          | Descripción                                                      |
 |-----------------------------------------------------------|----------------|------------------------------------------------------------------|
 | subsistema de imagen \_ \_ desconocido <br/>                     | 0 <br/>  | Un subsistema desconocido <br/>                                 |
 | subsistema de imagen \_ \_ nativo <br/>                      | 1 <br/>  | Controladores de dispositivos y procesos nativos de Windows <br/>          |
@@ -274,7 +274,7 @@ Los siguientes valores definidos para el campo Subsystem del encabezado opcional
 
 Los siguientes valores se definen para el campo DllCharacteristics del encabezado opcional.
 
-| Constante                                                             | Value              | Descripción                                                                                             |
+| Constante                                                             | Valor              | Descripción                                                                                             |
 |----------------------------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------|
 |                                                                      | 0x0001 <br/> | Reserved, debe ser cero. <br/>                                                                     |
 |                                                                      | 0x0002 <br/> | Reserved, debe ser cero. <br/>                                                                     |
@@ -309,7 +309,7 @@ Tenga en cuenta que el número de directorios no es fijo. Antes de buscar un dir
 
 Además, no suponga que las RVA de esta tabla apuntan al principio de una sección o que las secciones que contienen tablas específicas tienen nombres específicos.
 
-| Desplazamiento (PE/PE32 +)   | Tamaño          | Campo                               | Descripción                                                                                                                                                                          |
+| Desplazamiento (PE/PE32 +)   | Size          | Campo                               | Descripción                                                                                                                                                                          |
 |---------------------|---------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 96/112 <br/>  | 8 <br/> | Exportar tabla <br/>            | La dirección y el tamaño de la tabla de exportación. Para obtener más información [, vea la sección. EDATA (solo imagen)](#the-edata-section-image-only). <br/>                                                |
 | 104/120 <br/> | 8 <br/> | Importar tabla <br/>            | La dirección y el tamaño de la tabla de importación. Para obtener más información, vea [la sección. idata](#the-idata-section).<br/>                                                                    |
@@ -345,7 +345,7 @@ Cada encabezado de sección (entrada de tabla de sección) tiene el formato sigu
 
 
 
-| Offset         | Tamaño          | Campo                            | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Offset         | Size          | Campo                            | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------------|---------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 8 <br/> | Nombre <br/>                 | Cadena con codificación UTF-8 de 8 bytes rellenada en NULL. Si la cadena tiene una longitud exacta de 8 caracteres, no habrá terminación nula. En el caso de nombres más largos, este campo contiene una barra diagonal (/) seguida de una representación ASCII de un número decimal que es un desplazamiento en la tabla de cadenas. Las imágenes ejecutables no utilizan una tabla de cadenas y no admiten nombres de sección de más de 8 caracteres. Los nombres largos de los archivos objeto se truncan si se emiten para un archivo ejecutable. <br/>                                         |
 | 8 <br/>  | 4 <br/> | VirtualSize <br/>          | Tamaño total de la sección cuando se carga en la memoria. Si este valor es mayor que SizeOfRawData, la sección se rellenará con ceros. Este campo solo es válido para las imágenes ejecutables y debe establecerse en cero para los archivos objeto. <br/>                                                                                                                                                                                                                                                                                           |
@@ -486,7 +486,7 @@ Para cada sección de un archivo objeto, una matriz de registros de longitud fij
 
 
 
-| Offset        | Tamaño          | Campo                        | Descripción                                                                                                                                                                                                                                                                                                                                                     |
+| Offset        | Size          | Campo                        | Descripción                                                                                                                                                                                                                                                                                                                                                     |
 |---------------|---------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/> | VirtualAddress <br/>   | Dirección del elemento al que se aplica la reubicación. Este es el desplazamiento desde el principio de la sección, más el valor del campo RVA/offset de la sección. Vea [tabla de sección (encabezados de sección)](#section-table-section-headers). Por ejemplo, si el primer byte de la sección tiene una dirección de 0x10, el tercer byte tiene una dirección de 0X12. <br/> |
 | 4 <br/> | 4 <br/> | SymbolTableIndex <br/> | Índice de base cero de la tabla de símbolos. Este símbolo proporciona la dirección que se va a utilizar para la reubicación. Si el símbolo especificado tiene la clase de almacenamiento de sección, la dirección del símbolo es la dirección con la primera sección del mismo nombre. <br/>                                                                                                 |
@@ -508,7 +508,7 @@ Los siguientes indicadores de tipo de reubicación se definen para procesadores 
 
 
 
-| Constante                                | Value              | Descripción                                                                                                                                                   |
+| Constante                                | Valor              | Descripción                                                                                                                                                   |
 |-----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ AMD64 \_ Absolute <br/> | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                        |
 | IMAGE \_ REL \_ AMD64 \_ ADDR64 <br/>   | 0x0001 <br/> | El de 64 bit VA del destino de reubicación. <br/>                                                                                                           |
@@ -538,7 +538,7 @@ Los siguientes indicadores de tipo de reubicación se definen para los procesado
 
 
 
-| Constante                                | Value              | Descripción                                                                                                                                                                                                                                                            |
+| Constante                                | Valor              | Descripción                                                                                                                                                                                                                                                            |
 |-----------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ ARM \_ Absolute <br/>   | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                                                                                                                                 |
 | IMAGE \_ REL \_ ARM \_ ADDR32 <br/>     | 0x0001 <br/> | El de 32 bit VA del destino. <br/>                                                                                                                                                                                                                               |
@@ -566,7 +566,7 @@ Los siguientes indicadores de tipo de reubicación se definen para los procesado
 
 
 
-| Constante                                       | Value              | Descripción                                                                                                                                                   |
+| Constante                                       | Valor              | Descripción                                                                                                                                                   |
 |------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ ARM64 \_ Absolute <br/>        | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                        |
 | IMAGE \_ REL \_ ARM64 \_ ADDR32 <br/>          | 0x0001 <br/> | El de 32 bit VA del destino. <br/>                                                                                                                      |
@@ -593,7 +593,7 @@ Los siguientes indicadores de tipo de reubicación se definen para los procesado
 
 
 
-| Constante                                      | Value              | Descripción                                                                                                                                                                                                                |
+| Constante                                      | Valor              | Descripción                                                                                                                                                                                                                |
 |-----------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ SH3 \_ Absolute <br/>         | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                                                                                     |
 | IMAGE \_ REL \_ SH3 \_ DIRECT16 <br/>         | 0x0001 <br/> | Referencia a la ubicación de 16 bits que contiene el VA del símbolo de destino. <br/>                                                                                                                                  |
@@ -632,7 +632,7 @@ Los siguientes indicadores de tipo de reubicación se definen para los procesado
 
 
 
-| Constante                              | Value              | Descripción                                                                                                                                                                                                                                                                                                                                                                         |
+| Constante                              | Valor              | Descripción                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ PPC \_ absoluta <br/> | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                                                                                                                                                                                                                                              |
 | IMAGE \_ REL \_ PPC \_ ADDR64 <br/>   | 0x0001 <br/> | El de 64 bit VA del destino. <br/>                                                                                                                                                                                                                                                                                                                                            |
@@ -663,14 +663,14 @@ Los siguientes indicadores de tipo de reubicación se definen para procesadores 
 
 
 
-| Constante                               | Value              | Descripción                                                                                                                                                   |
+| Constante                               | Valor              | Descripción                                                                                                                                                   |
 |----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ i386 \_ Absolute <br/> | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                        |
-| IMAGE \_ REL \_ i386 \_ DIR16 <br/>    | 0x0001 <br/> | No se admite. <br/>                                                                                                                                    |
-| IMAGE \_ REL \_ i386 \_ REL16 <br/>    | 0x0002 <br/> | No se admite. <br/>                                                                                                                                    |
+| IMAGE \_ REL \_ i386 \_ DIR16 <br/>    | 0x0001 <br/> | No compatible. <br/>                                                                                                                                    |
+| IMAGE \_ REL \_ i386 \_ REL16 <br/>    | 0x0002 <br/> | No compatible. <br/>                                                                                                                                    |
 | IMAGE \_ REL \_ i386 \_ DIR32 <br/>    | 0x0006 <br/> | El destino es de 32 bits. <br/>                                                                                                                           |
 | IMAGE \_ REL \_ i386 \_ DIR32NB <br/>  | 0x0007 <br/> | RVA de 32 bits del destino. <br/>                                                                                                                          |
-| IMAGE \_ REL \_ i386 \_ SEG12 <br/>    | 0x0009 <br/> | No se admite. <br/>                                                                                                                                    |
+| IMAGE \_ REL \_ i386 \_ SEG12 <br/>    | 0x0009 <br/> | No compatible. <br/>                                                                                                                                    |
 | Sección de la imagen \_ REL \_ i386 \_ <br/>  | 0x000A <br/> | Índice de la sección de 16 bits de la sección que contiene el destino. Se utiliza para admitir la información de depuración. <br/>                                  |
 | IMAGE \_ REL \_ i386 \_ SECREL <br/>   | 0x000B <br/> | Desplazamiento de 32 bits del destino desde el principio de su sección. Se usa para admitir la información de depuración y el almacenamiento local de subprocesos estáticos. <br/> |
 | IMAGEN \_ REL \_ token de i386 \_ <br/>    | 0x000C <br/> | El token CLR. <br/>                                                                                                                                    |
@@ -687,7 +687,7 @@ Los siguientes indicadores de tipo de reubicación se definen para la familia de
 
 
 
-| Constante                                 | Value              | Descripción                                                                                                                                                                                                                                                                                                                                     |
+| Constante                                 | Valor              | Descripción                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ ia64 \_ Absolute <br/>   | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                                                                                                                                                                                                          |
 | IMAGE \_ REL \_ ia64 \_ IMM14 <br/>      | 0x0001 <br/> | La reubicación de instrucciones puede ir seguida de una reubicación ADDEND cuyo valor se agrega a la dirección de destino antes de que se inserte en la ranura especificada en el paquete IMM14. El destino de la reubicación debe ser absoluto o debe corregirse la imagen. <br/>                                                                                 |
@@ -729,7 +729,7 @@ Los siguientes indicadores de tipo de reubicación se definen para los procesado
 
 
 
-| Constante                                | Value              | Descripción                                                                                                                                                                                                                                                                                                                                                                         |
+| Constante                                | Valor              | Descripción                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ MIPS \_ Absolute <br/>  | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                                                                                                                                                                                                                                              |
 | IMAGE \_ REL \_ MIPS \_ REFHALF <br/>   | 0x0001 <br/> | Los 16 bits superiores del tiempo de 32 de destino VA. <br/>                                                                                                                                                                                                                                                                                                                             |
@@ -757,7 +757,7 @@ Los siguientes indicadores de tipo de reubicación se definen para los procesado
 
 
 
-| Constante                               | Value              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Constante                               | Valor              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                   |
 |----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ M32R \_ Absolute <br/> | 0x0000 <br/> | Se omite la reubicación. <br/>                                                                                                                                                                                                                                                                                                                                                                        |
 | IMAGE \_ REL \_ M32R \_ ADDR32 <br/>   | 0x0001 <br/> | El destino es de 32 bits. <br/>                                                                                                                                                                                                                                                                                                                                                                           |
@@ -789,7 +789,7 @@ Los números de línea COFF se componen de una matriz de registros de longitud f
 
 
 
-| Offset        | Tamaño          | Campo                  | Descripción                                                                                                                                                 |
+| Offset        | Size          | Campo                  | Descripción                                                                                                                                                 |
 |---------------|---------------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/> | Tipo ( \* ) <br/>  | Se trata de una Unión de dos campos: SymbolTableIndex y VirtualAddress. El uso de SymbolTableIndex o RVA depende del valor de LineNumber. <br/> |
 | 4 <br/> | 2 <br/> | LineNumber <br/> | Si es distinto de cero, este campo especifica un número de línea basado en uno. Cuando el valor es cero, el campo de tipo se interpreta como un índice de tabla de símbolos para una función. <br/>    |
@@ -802,7 +802,7 @@ El campo de tipo es una Unión de campos de 2 4 bytes: SymbolTableIndex y Virtua
 
 
 
-| Offset        | Tamaño          | Campo                        | Descripción                                                                                                                                                                             |
+| Offset        | Size          | Campo                        | Descripción                                                                                                                                                                             |
 |---------------|---------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/> | SymbolTableIndex <br/> | Se usa cuando LineNumber es cero: índice de entrada de tabla de símbolos para una función. Este formato se usa para indicar la función a la que hace referencia un grupo de registros de números de línea. <br/>      |
 | 0 <br/> | 4 <br/> | VirtualAddress <br/>   | Se usa cuando LineNumber es distinto de cero: la RVA del código ejecutable que corresponde a la línea de código fuente indicada. En un archivo objeto, contiene el de la sección. <br/> |
@@ -840,10 +840,10 @@ La tabla de símbolos es una matriz de registros, cada 18 bytes de longitud. Cad
 
 
 
-| Offset         | Tamaño          | Campo                          | Descripción                                                                                                                                                                                                                                 |
+| Offset         | Size          | Campo                          | Descripción                                                                                                                                                                                                                                 |
 |----------------|---------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 8 <br/> | Nombre ( \* ) <br/>          | Nombre del símbolo, representado por una Unión de tres estructuras. Se utiliza una matriz de 8 bytes si el nombre no tiene más de 8 bytes de longitud. Para obtener más información, vea [representación del nombre de símbolo](https://www.bing.com/search?q=Symbol+Name+Representation). <br/> |
-| 8 <br/>  | 4 <br/> | Value <br/>              | Valor asociado al símbolo. La interpretación de este campo depende de SectionNumber y StorageClass. Un significado típico es la dirección reubicable. <br/>                                                         |
+| 8 <br/>  | 4 <br/> | Valor <br/>              | Valor asociado al símbolo. La interpretación de este campo depende de SectionNumber y StorageClass. Un significado típico es la dirección reubicable. <br/>                                                         |
 | 12 <br/> | 2 <br/> | SectionNumber <br/>      | Entero con signo que identifica la sección, utilizando un índice basado en uno en la tabla de la sección. Algunos valores tienen un significado especial, tal como se define en la sección 5.4.2, "valores numéricos de sección". <br/>                                         |
 | 14 <br/> | 2 <br/> | Tipo <br/>               | Número que representa el tipo. Las herramientas de Microsoft establecen este campo en 0x20 (función) o 0X0 (no en una función). Para obtener más información, consulte [representación de tipos](#type-representation). <br/>                                                |
 | 16 <br/> | 1 <br/> | StorageClass <br/>       | Valor enumerado que representa la clase de almacenamiento. Para obtener más información, vea [Storage (clase](#storage-class)). <br/>                                                                                                                   |
@@ -865,7 +865,7 @@ Por Convención, los nombres se tratan como cadenas con codificación UTF-8 term
 
 
 
-| Offset        | Tamaño          | Campo                 | Descripción                                                                                                          |
+| Offset        | Size          | Campo                 | Descripción                                                                                                          |
 |---------------|---------------|-----------------------|----------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 8 <br/> | nombreCorto <br/> | Matriz de 8 bytes. Esta matriz se rellena con valores NULL a la derecha si el nombre tiene menos de 8 bytes de longitud. <br/> |
 | 0 <br/> | 4 <br/> | Ceros <br/>    | Un campo que se establece en todos los ceros si el nombre tiene más de 8 bytes. <br/>                                     |
@@ -881,7 +881,7 @@ Normalmente, el campo de valor de sección de una entrada de tabla de símbolos 
 
 
 
-| Constante                          | Value          | Descripción                                                                                                                                                                                                                            |
+| Constante                          | Valor          | Descripción                                                                                                                                                                                                                            |
 |-----------------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGEN \_ SYM \_ sin definir <br/> | 0 <br/>  | Todavía no se ha asignado una sección al registro de símbolos. Un valor de cero indica que se define una referencia a un símbolo externo en otra parte. Un valor distinto de cero es un símbolo común con un tamaño especificado por el valor. <br/> |
 | IMAGE \_ SYM \_ Absolute <br/>  | -1 <br/> | El símbolo tiene un valor absoluto (no reubicable) y no es una dirección. <br/>                                                                                                                                                  |
@@ -909,7 +909,7 @@ Los siguientes valores se definen para el tipo base, aunque las herramientas de 
 
 
 
-| Constante                             | Value          | Descripción                                                                            |
+| Constante                             | Valor          | Descripción                                                                            |
 |--------------------------------------|----------------|----------------------------------------------------------------------------------------|
 | IMAGE \_ SYM \_ tipo \_ null <br/>   | 0 <br/>  | No hay información de tipo o tipo base desconocido. Herramientas de Microsoft use esta opción <br/> |
 | IMAGE \_ SYM \_ tipo \_ void <br/>   | 1 <br/>  | No hay ningún tipo válido; se utiliza con punteros y funciones void <br/>                       |
@@ -938,7 +938,7 @@ Es muy importante especificar el atributo de función correctamente. Esta inform
 
 
 
-| Constante                                | Value         | Descripción                                                          |
+| Constante                                | Valor         | Descripción                                                          |
 |-----------------------------------------|---------------|----------------------------------------------------------------------|
 | IMAGE \_ SYM \_ DTYPE \_ null <br/>     | 0 <br/> | Sin tipo derivado; el símbolo es una variable escalar simple. <br/> |
 | \_ \_ cursor DTYPE de \_ imagen <br/>  | 1 <br/> | El símbolo es un puntero al tipo base. <br/>                    |
@@ -957,7 +957,7 @@ Aunque el formato COFF tradicional utiliza muchos valores de clase de almacenami
 
 
 
-| Constante                                          | Value                 | Descripción/interpretación del campo de valor                                                                                                                                                                                                                                                                                              |
+| Constante                                          | Valor                 | Descripción/interpretación del campo de valor                                                                                                                                                                                                                                                                                              |
 |---------------------------------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_ \_ \_ End \_ of function de la clase Image SYM \_ <br/>  | -1 (0xFF) <br/> | Símbolo especial que representa el final de la función, con fines de depuración. <br/>                                                                                                                                                                                                                                                  |
 | IMAGE \_ SYM ( \_ clase) \_ null <br/>               | 0 <br/>         | No hay ninguna clase de almacenamiento asignada. <br/>                                                                                                                                                                                                                                                                                                     |
@@ -1003,7 +1003,7 @@ Un registro de tabla de símbolos marca el principio de la definición de una fu
 
 
 
-| Offset         | Tamaño          | Campo                             | Descripción                                                                                                                                                                                                                   |
+| Offset         | Size          | Campo                             | Descripción                                                                                                                                                                                                                   |
 |----------------|---------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | TagIndex <br/>              | Índice de la tabla de símbolos del registro de símbolos correspondiente. BF (begin Function). <br/>                                                                                                                                   |
 | 4 <br/>  | 4 <br/> | TotalSize <br/>             | Tamaño del código ejecutable de la propia función. Si la función está en su propia sección, el SizeOfRawData del encabezado de la sección es mayor o igual que este campo, en función de las consideraciones de alineación. <br/> |
@@ -1029,7 +1029,7 @@ Los registros de símbolos. BF y. EF (pero no los registros. LF) van seguidos de
 
 
 
-| Offset         | Tamaño          | Campo                                         | Descripción                                                                                                                                                                   |
+| Offset         | Size          | Campo                                         | Descripción                                                                                                                                                                   |
 |----------------|---------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | No utilizado <br/>                            |                                                                                                                                                                               |
 | 4 <br/>  | 2 <br/> | LineNumber <br/>                        | El número de línea ordinal real (1, 2, 3, etc.) en el archivo de código fuente, que corresponde al registro. BF o. EF. <br/>                                               |
@@ -1051,7 +1051,7 @@ Los externos débiles se representan mediante un registro de tabla de símbolos 
 
 
 
-| Offset        | Tamaño           | Campo                       | Descripción                                                                                                                                                                                                                                                                                                                                                |
+| Offset        | Size           | Campo                       | Descripción                                                                                                                                                                                                                                                                                                                                                |
 |---------------|----------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/>  | TagIndex <br/>        | El índice de la tabla de símbolos de sym2, el símbolo que se va a vincular si no se encuentra sym1. <br/>                                                                                                                                                                                                                                                                  |
 | 4 <br/> | 4 <br/>  | Características <br/> | Un valor de IMAGE \_ Weak \_ extern \_ Search \_ nolibrary indica que no se debe realizar ninguna búsqueda de biblioteca para sym1. <br/> Un valor de la \_ biblioteca de búsqueda externa débil de la imagen \_ \_ \_ indica que debe realizarse una búsqueda de biblioteca de sym1. <br/> Un valor de \_ alias de \_ búsqueda débil extern de imagen \_ \_ indica que sym1 es un alias para sym2. <br/> |
@@ -1069,7 +1069,7 @@ Este formato sigue un registro de tabla de símbolos con el archivo de clase de 
 
 
 
-| Offset        | Tamaño           | Campo                 | Descripción                                                                                                                         |
+| Offset        | Size           | Campo                 | Descripción                                                                                                                         |
 |---------------|----------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 18 <br/> | Nombre de archivo <br/> | Cadena ANSI que proporciona el nombre del archivo de código fuente. Esto se rellena con valores NULL si es menor que la longitud máxima. <br/> |
 
@@ -1083,7 +1083,7 @@ Este formato sigue un registro de tabla de símbolos que define una sección. Di
 
 
 
-| Offset         | Tamaño          | Campo                           | Descripción                                                                                                                                                                                                             |
+| Offset         | Size          | Campo                           | Descripción                                                                                                                                                                                                             |
 |----------------|---------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Length <br/>              | Tamaño de los datos de la sección; lo mismo que SizeOfRawData en el encabezado de la sección. <br/>                                                                                                                                  |
 | 4 <br/>  | 2 <br/> | NumberOfRelocations <br/> | El número de entradas de reubicación para la sección. <br/>                                                                                                                                                           |
@@ -1107,7 +1107,7 @@ A continuación se muestran los valores del campo de selección.
 
 
 
-| Constante                                        | Value         | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Constante                                        | Valor         | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGEN \_ COMDAT \_ seleccionar \_ noduplicaciones <br/> | 1 <br/> | Si este símbolo ya está definido, el vinculador emite un error de "multiplicación de símbolo definido". <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | IMAGEN \_ COMDAT \_ Seleccione \_ cualquiera <br/>          | 2 <br/> | Se puede vincular cualquier sección que defina el mismo símbolo COMDAT; el resto se quitan. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -1126,7 +1126,7 @@ Este símbolo auxiliar suele seguir el \_ token CLR de la clase Image SYM \_ \_ 
 
 
 
-| Offset        | Tamaño           | Campo                        | Descripción                                                                                |
+| Offset        | Size           | Campo                        | Descripción                                                                                |
 |---------------|----------------|------------------------------|--------------------------------------------------------------------------------------------|
 | 0 <br/> | 1 <br/>  | bAuxType <br/>         | Debe ser \_ un símbolo auxiliar de imagen \_ \_ tipo \_ \_ DEF (1). <br/>                              |
 | 1 <br/> | 1 <br/>  | bReserved <br/>        | Reserved, debe ser cero. <br/>                                                        |
@@ -1151,7 +1151,7 @@ Los certificados de atributo se pueden asociar a una imagen agregando una tabla 
 
 
 
-| Offset       | Tamaño                         | Campo                       | Descripción                                                                                                |
+| Offset       | Size                         | Campo                       | Descripción                                                                                                |
 |--------------|------------------------------|-----------------------------|------------------------------------------------------------------------------------------------------------|
 | 0<br/> | 4<br/>                 | dwLength<br/>         | Especifica la longitud de la entrada del certificado de atributo. <br/>                                       |
 | 4<br/> | 2<br/>                 | wRevision<br/>        | Contiene el número de versión del certificado. Para obtener más información, vea el siguiente texto.<br/>                   |
@@ -1189,7 +1189,7 @@ Las opciones del \_ miembro **wRevision** del certificado Win incluyen (pero no 
 
 
 
-| Value             | Nombre                                 | Notas                                                                                                                                                 |
+| Valor             | Nombre                                 | Notas                                                                                                                                                 |
 |-------------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x0100<br/> | WIN \_ CERT \_ revisión \_ 1 \_ 0<br/> | Versión 1, versión heredada de la \_ estructura de certificados Win. Solo se admite con fines de comprobación de firmas Authenticode heredadas.<br/> |
 | 0x0200<br/> | WIN \_ CERT \_ revisión \_ 2 \_ 0<br/> | La versión 2 es la versión actual de la \_ estructura de certificados Win. <br/>                                                                       |
@@ -1202,7 +1202,7 @@ Las opciones del \_ miembro **wCertificateType** del certificado Win incluyen (p
 
 
 
-| Value             | Nombre                                           | Notas                                                                                   |
+| Valor             | Nombre                                           | Notas                                                                                   |
 |-------------------|------------------------------------------------|-----------------------------------------------------------------------------------------|
 | 0x0001<br/> | \_Tipo de certificado Win \_ \_ X509 <br/>              | bCertificate contiene un certificado X. 509 <br/> No compatible<br/>         |
 | 0x0002<br/> | tipo de certificado WIN con \_ \_ \_ \_ datos firmados PKCS \_<br/> | bCertificate contiene una \# estructura PKCS 7 SignedData<br/>                         |
@@ -1249,7 +1249,7 @@ La tabla de directorio de carga retrasada es el homólogo de la tabla de importa
 
 
 
-| Offset         | Tamaño          | Campo                                  | Descripción                                                                                                                                                                                                                                                                                                                  |
+| Offset         | Size          | Campo                                  | Descripción                                                                                                                                                                                                                                                                                                                  |
 |----------------|---------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Atributos <br/>                 | Debe ser cero. <br/>                                                                                                                                                                                                                                                                                                    |
 | 4 <br/>  | 4 <br/> | Nombre <br/>                       | RVA del nombre del archivo DLL que se va a cargar. El nombre reside en la sección de datos de solo lectura de la imagen. <br/>                                                                                                                                                                                                        |
@@ -1395,7 +1395,7 @@ Una entrada de directorio de depuración tiene el siguiente formato:
 
 
 
-| Offset         | Tamaño          | Campo                        | Descripción                                                                                                                                            |
+| Offset         | Size          | Campo                        | Descripción                                                                                                                                            |
 |----------------|---------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Características <br/>  | Reserved, debe ser cero. <br/>                                                                                                                    |
 | 4 <br/>  | 4 <br/> | TimeDateStamp <br/>    | Fecha y hora en que se crearon los datos de depuración. <br/>                                                                                         |
@@ -1416,7 +1416,7 @@ Los siguientes valores se definen para el campo de tipo de la entrada de directo
 
 
 
-| Constante                                        | Value          | Descripción                                                                                                                                                                                                      |
+| Constante                                        | Valor          | Descripción                                                                                                                                                                                                      |
 |-------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_tipo de depuración de imagen \_ \_ desconocido <br/>         | 0 <br/>  | Valor desconocido que todas las herramientas omiten. <br/>                                                                                                                                                       |
 | \_tipo de depuración de imagen \_ \_ COFF <br/>            | 1 <br/>  | La información de depuración de COFF (números de línea, tabla de símbolos y tabla de cadenas). Los campos de los encabezados de archivo también señalan a este tipo de información de depuración. <br/>                                          |
@@ -1469,7 +1469,7 @@ Si el campo de tipo se establece en IMAGE \_ Debug \_ Type \_ ex \_ DLLCHARACTER
 
 Los siguientes valores se definen para los bits de características de la DLL extendida.
 
-| Constante | Value | Descripción |
+| Constante | Valor | Descripción |
 |-|-|-|
 | compatibilidad con la imagen \_ DLLCHARACTERISTICS \_ ex \_ CET \_ | 0x0001 | La imagen es compatible con CET. |
 
@@ -1539,7 +1539,7 @@ La información de símbolos de exportación comienza con la tabla exportar dire
 
 
 
-| Offset         | Tamaño          | Campo                                | Descripción                                                                                                                                                               |
+| Offset         | Size          | Campo                                | Descripción                                                                                                                                                               |
 |----------------|---------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Exportar marcas <br/>             | Reserved, debe ser 0. <br/>                                                                                                                                          |
 | 4 <br/>  | 4 <br/> | Marca de fecha y hora <br/>          | Fecha y hora en que se crearon los datos de exportación. <br/>                                                                                                           |
@@ -1565,7 +1565,7 @@ Cada entrada de la tabla de direcciones de exportación es un campo que usa uno 
 
 
 
-| Offset        | Tamaño          | Campo                     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Offset        | Size          | Campo                     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |---------------|---------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/> | Exportar RVA <br/>    | La dirección del símbolo exportado cuando se carga en la memoria, en relación con la base de la imagen. Por ejemplo, la dirección de una función exportada. <br/>                                                                                                                                                                                                                                                                                                       |
 | 0 <br/> | 4 <br/> | RVA del reenviador <br/> | Puntero a una cadena ASCII terminada en null en la sección Export. Esta cadena debe estar dentro del intervalo especificado por la entrada exportar directorio de datos de tabla. Consulte [directorios opcionales de datos de encabezado (solo imagen)](#optional-header-data-directories-image-only). Esta cadena proporciona el nombre del archivo DLL y el nombre de la exportación (por ejemplo, "MYDLL. expfunc") o el nombre de la DLL y el número ordinal de la exportación (por ejemplo, "MYDLL. \# 27 "). <br/> |
@@ -1648,7 +1648,7 @@ Cada entrada de directorio de importación tiene el siguiente formato:
 
 
 
-| Offset         | Tamaño          | Campo                                                 | Descripción                                                                                                                                                                                 |
+| Offset         | Size          | Campo                                                 | Descripción                                                                                                                                                                                 |
 |----------------|---------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Importar tabla de búsqueda RVA (características) <br/> | RVA de la tabla de búsqueda de importación. Esta tabla contiene un nombre o un ordinal para cada importación. (El nombre "Characteristics" se usa en Winnt. h, pero ya no describe este campo). <br/> |
 | 4 <br/>  | 4 <br/> | Marca de fecha y hora <br/>                           | Marca que se establece en cero hasta que se enlaza la imagen. Después de enlazar la imagen, este campo se establece en la marca de tiempo y datos del archivo DLL. <br/>                                          |
@@ -1666,7 +1666,7 @@ Una tabla de búsqueda de importación es una matriz de números de 32 bits para
 
 
 
-| Bits (s)            | Tamaño           | Campo de bit                       | Descripción                                                                                                                                                               |
+| Bits (s)            | Size           | Campo de bit                       | Descripción                                                                                                                                                               |
 |-------------------|----------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 31/63 <br/> | 1 <br/>  | Marca de ordinal/nombre <br/>   | Si se establece este bit, importe por ordinal. De lo contrario, importe por nombre. El bit se enmascara como 0x80000000 para PE32, 0x8000000000000000 para PE32 +. <br/>                         |
 | 15-0 <br/>  | 16 <br/> | Número ordinal <br/>      | Número ordinal de 16 bits. Este campo solo se usa si el campo de bits de la marca de ordinal/nombre es 1 (importación por ordinal). Los bits 30-15 o 62-15 deben ser 0. <br/>                  |
@@ -1682,7 +1682,7 @@ Una tabla sugerencia/nombre es suficiente para toda la sección de importación.
 
 
 
-| Offset         | Tamaño                 | Campo            | Descripción                                                                                                                                                                                       |
+| Offset         | Size                 | Campo            | Descripción                                                                                                                                                                                       |
 |----------------|----------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 2 <br/>        | Diversas <br/> | Índice de la tabla de puntero de nombre de exportación. Primero se intenta una coincidencia con este valor. Si se produce un error, se realiza una búsqueda binaria en la tabla de punteros de nombre de exportación del archivo DLL. <br/>            |
 | 2 <br/>  | variable <br/> | Nombre <br/> | Cadena ASCII que contiene el nombre que se va a importar. Esta es la cadena que debe coincidir con el nombre público del archivo DLL. Esta cadena distingue entre mayúsculas y minúsculas y termina con un byte nulo. <br/> |
@@ -1704,7 +1704,7 @@ En el caso de las imágenes de MIPS de 32 bits, las entradas de la tabla de func
 
 
 
-| Offset         | Tamaño          | Campo                          | Descripción                                                                    |
+| Offset         | Size          | Campo                          | Descripción                                                                    |
 |----------------|---------------|--------------------------------|--------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Dirección inicial <br/>      | El VA de la función correspondiente. <br/>                              |
 | 4 <br/>  | 4 <br/> | Dirección final <br/>        | El VA del final de la función. <br/>                                 |
@@ -1720,7 +1720,7 @@ En el caso de las plataformas ARM, PowerPC, SH3 y SH4 Windows CE, las entradas d
 
 
 
-| Offset        | Tamaño                | Campo                       | Descripción                                                                                                               |
+| Offset        | Size                | Campo                       | Descripción                                                                                                               |
 |---------------|---------------------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/>       | Dirección inicial <br/>   | El VA de la función correspondiente. <br/>                                                                         |
 | 4 <br/> | 8 bits <br/>  | Longitud del prólogo <br/>   | Número de instrucciones del prólogo de la función. <br/>                                                          |
@@ -1736,7 +1736,7 @@ En las plataformas x64 e Itanium, las entradas de la tabla de funciones tienen e
 
 
 
-| Offset        | Tamaño          | Campo                          | Descripción                                        |
+| Offset        | Size          | Campo                          | Descripción                                        |
 |---------------|---------------|--------------------------------|----------------------------------------------------|
 | 0 <br/> | 4 <br/> | Dirección inicial <br/>      | RVA de la función correspondiente. <br/> |
 | 4 <br/> | 4 <br/> | Dirección final <br/>        | RVA del final de la función. <br/>    |
@@ -1758,7 +1758,7 @@ Cada bloque de reubicación base se inicia con la siguiente estructura:
 
 
 
-| Offset        | Tamaño          | Campo                  | Descripción                                                                                                                                              |
+| Offset        | Size          | Campo                  | Descripción                                                                                                                                              |
 |---------------|---------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/> | RVA de página <br/>   | La base de la imagen más la RVA de la página se agrega a cada desplazamiento para crear el VA donde se debe aplicar la reubicación base. <br/>                         |
 | 4 <br/> | 4 <br/> | Tamaño de bloque <br/> | El número total de bytes en el bloque de reubicación base, incluidos los campos de tamaño RVA y de tamaño de bloque, y los campos de tipo o desplazamiento siguientes. <br/> |
@@ -1771,7 +1771,7 @@ A continuación, el campo tamaño de bloque va seguido de cualquier número de e
 
 
 
-| Offset        | Tamaño                | Campo              | Descripción                                                                                                                                                                                                            |
+| Offset        | Size                | Campo              | Descripción                                                                                                                                                                                                            |
 |---------------|---------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 bits <br/>  | Tipo <br/>   | Se almacena en los 4 bits superiores de la palabra, un valor que indica el tipo de reubicación base que se va a aplicar. Para obtener más información, vea [tipos de reubicación base](#base-relocation-types).<br/>                         |
 | 0 <br/> | 12 bits <br/> | Offset <br/> | Se almacena en los 12 bits restantes de la palabra, un desplazamiento de la dirección de inicio que se especificó en el campo RVA de página para el bloque. Este desplazamiento especifica dónde se va a aplicar la reubicación base. <br/> |
@@ -1786,7 +1786,7 @@ Para aplicar una reubicación base, la diferencia se calcula entre la dirección
 
 
 
-| Constante                                       | Value          | Descripción                                                                                                                                                                                                                                                                                                                       |
+| Constante                                       | Valor          | Descripción                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGE \_ REL \_ basado en \_ absoluto <br/>        | 0 <br/>  | Se omite la reubicación base. Este tipo se puede usar para rellenar un bloque. <br/>                                                                                                                                                                                                                                                 |
 | IMAGEN \_ REL \_ basada en \_ alta <br/>            | 1 <br/>  | La reubicación base agrega los 16 bits superiores de la diferencia al campo de 16 bits en el desplazamiento. El campo de 16 bits representa el valor alto de una palabra de 32 bits. <br/>                                                                                                                                                               |
@@ -1884,7 +1884,7 @@ El parámetro Reserved debe establecerse en cero. El parámetro Reason puede tom
 
 
 
-| Configuración                          | Value         | Descripción                                                                                          |
+| Configuración                          | Valor         | Descripción                                                                                          |
 |----------------------------------|---------------|------------------------------------------------------------------------------------------------------|
 | \_adjuntar proceso dll \_ <br/> | 1 <br/> | Se ha iniciado un nuevo proceso, incluido el primer subproceso. <br/>                                   |
 | \_Asociación de subprocesos dll \_ <br/>  | 2 <br/> | Se ha creado un nuevo subproceso. Esta notificación se envía para todo excepto el primer subproceso. <br/>      |
@@ -1911,7 +1911,7 @@ La estructura de configuración de carga tiene el siguiente diseño para los arc
 
 
 
-| Offset              | Tamaño            | Campo                                      | Descripción                                                                                                                                                                                                                                                                                 |
+| Offset              | Size            | Campo                                      | Descripción                                                                                                                                                                                                                                                                                 |
 |---------------------|-----------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>       | 4 <br/>   | Características <br/>                | Marcas que indican los atributos del archivo, actualmente sin usar. <br/>                                                                                                                                                                                                                   |
 | 4 <br/>       | 4 <br/>   | TimeDateStamp <br/>                  | Valor de marca de fecha y hora. El valor se representa en el número de segundos transcurridos desde la medianoche (00:00:00) del 1 de enero de 1970, hora universal coordinada, según el reloj del sistema. La marca de tiempo se puede imprimir mediante la función de tiempo de tiempo de ejecución de C (CRT). <br/> |
@@ -2028,7 +2028,7 @@ Cada tabla del directorio de recursos tiene el formato siguiente. Esta estructur
 
 
 
-| Offset         | Tamaño          | Campo                              | Descripción                                                                                                                                                                     |
+| Offset         | Size          | Campo                              | Descripción                                                                                                                                                                     |
 |----------------|---------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Características <br/>        | Marcas de recursos. Este campo está reservado para un uso futuro. Actualmente está establecido en cero. <br/>                                                                                 |
 | 4 <br/>  | 4 <br/> | Marca de fecha y hora <br/>        | La hora a la que el compilador de recursos creó los datos de recursos. <br/>                                                                                               |
@@ -2047,7 +2047,7 @@ Las entradas de directorio componen las filas de una tabla. Cada entrada de dire
 
 
 
-| Offset        | Tamaño          | Campo                           | Descripción                                                                                                          |
+| Offset        | Size          | Campo                           | Descripción                                                                                                          |
 |---------------|---------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | 0 <br/> | 4 <br/> | Desplazamiento de nombre <br/>         | Desplazamiento de una cadena que proporciona el tipo, el nombre o la entrada del identificador de idioma, dependiendo del nivel de tabla. <br/>     |
 | 0 <br/> | 4 <br/> | Identificador entero <br/>          | Entero de 32 bits que identifica el tipo, el nombre o la entrada del identificador de idioma. <br/>                                   |
@@ -2064,7 +2064,7 @@ El área cadena de directorio de recursos consta de cadenas Unicode, que están 
 
 
 
-| Offset        | Tamaño                 | Campo                      | Descripción                                                            |
+| Offset        | Size                 | Campo                      | Descripción                                                            |
 |---------------|----------------------|----------------------------|------------------------------------------------------------------------|
 | 0 <br/> | 2 <br/>        | Length <br/>         | Tamaño de la cadena, sin incluir el propio campo de longitud. <br/> |
 | 2 <br/> | variable <br/> | Cadena Unicode <br/> | Datos de cadena Unicode de longitud variable, con alineación de palabras. <br/>     |
@@ -2079,10 +2079,10 @@ Cada entrada de datos de recursos describe una unidad real de datos sin procesar
 
 
 
-| Offset         | Tamaño          | Campo                            | Descripción                                                                                                                                           |
+| Offset         | Size          | Campo                            | Descripción                                                                                                                                           |
 |----------------|---------------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | RVA de datos <br/>             | Dirección de una unidad de datos de recursos en el área de datos de recursos. <br/>                                                                         |
-| 4 <br/>  | 4 <br/> | Tamaño <br/>                 | Tamaño, en bytes, de los datos de recursos a los que apunta el campo RVA de datos. <br/>                                                        |
+| 4 <br/>  | 4 <br/> | Size <br/>                 | Tamaño, en bytes, de los datos de recursos a los que apunta el campo RVA de datos. <br/>                                                        |
 | 8 <br/>  | 4 <br/> | codepage <br/>             | La página de códigos que se usa para descodificar los valores de punto de código dentro de los datos de recursos. Normalmente, la página de códigos sería la página de códigos Unicode. <br/> |
 | 12 <br/> | 4 <br/> | Reserved, debe ser 0. <br/> |                                                                                                                                                       |
 
@@ -2114,7 +2114,7 @@ Los primeros 8 bytes de un archivo se componen de la firma del archivo. El resto
 
 -   Los miembros primero y segundo son "miembros del enlazador". Cada uno de estos miembros tiene su propio formato, tal y como se describe en la sección [tipo de nombre de importación](#import-name-type). Normalmente, un vinculador coloca información en estos miembros de archivo. Los miembros del enlazador contienen el directorio del archivo.
 
--   El tercer miembro es el miembro "longnames". Este miembro se compone de una serie de cadenas ASCII terminadas en null en las que cada cadena es el nombre de otro miembro de archivo.
+-   El tercer miembro es el miembro "longnames". Este miembro opcional se compone de una serie de cadenas ASCII terminadas en null en las que cada cadena es el nombre de otro miembro de archivo.
 
 -   El resto del archivo se compone de miembros estándar (archivo objeto). Cada uno de estos miembros incluye el contenido de un archivo objeto en su totalidad.
 
@@ -2162,14 +2162,14 @@ Cada encabezado de miembro comienza en la primera dirección uniforme después d
 
 
 
-| Offset         | Tamaño           | Campo                     | Descripción                                                                                                                                                                                                 |
+| Offset         | Size           | Campo                     | Descripción                                                                                                                                                                                                 |
 |----------------|----------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 16 <br/> | Nombre <br/>          | Nombre del miembro de archivo, con una barra diagonal (/) anexada para terminar el nombre. Si el primer carácter es una barra diagonal, el nombre tiene una interpretación especial, como se describe en la tabla siguiente. <br/> |
-| 16 <br/> | 12 <br/> | Fecha <br/>          | Fecha y hora en que se creó el miembro de archivo: es la representación decimal ASCII del número de segundos transcurridos desde 1/1/1970 UCT. <br/>                                                    |
+| 16 <br/> | 12 <br/> | Date <br/>          | Fecha y hora en que se creó el miembro de archivo: es la representación decimal ASCII del número de segundos transcurridos desde 1/1/1970 UCT. <br/>                                                    |
 | 28 <br/> | 6 <br/>  | Id. de usuario <br/>       | Representación decimal ASCII del identificador de usuario. Este campo no contiene un valor significativo en las plataformas de Windows porque las herramientas de Microsoft emiten todos los espacios en blanco. <br/>                                    |
 | 34 <br/> | 6 <br/>  | Identificador de grupo <br/>      | Representación decimal ASCII del identificador de grupo. Este campo no contiene un valor significativo en las plataformas de Windows porque las herramientas de Microsoft emiten todos los espacios en blanco. <br/>                                   |
 | 40 <br/> | 8 <br/>  | Mode <br/>          | Representación octal ASCII del modo de archivo del miembro. Este es el \_ valor del modo St de la función en tiempo de ejecución de C \_ wstat. <br/>                                                                       |
-| 48 <br/> | 10 <br/> | Tamaño <br/>          | Representación decimal ASCII del tamaño total del miembro de archivo, sin incluir el tamaño del encabezado. <br/>                                                                                  |
+| 48 <br/> | 10 <br/> | Size <br/>          | Representación decimal ASCII del tamaño total del miembro de archivo, sin incluir el tamaño del encabezado. <br/>                                                                                  |
 | 58 <br/> | 2 <br/>  | Fin del encabezado <br/> | Los dos bytes de la cadena de C "̃ \\ n" (0X60 0x0a). <br/>                                                                                                                                               |
 
 
@@ -2184,7 +2184,7 @@ El campo nombre tiene uno de los formatos que se muestran en la tabla siguiente.
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name <br/>      | Nombre del miembro de archivo. <br/>                                                                                                                                                                                                                                                          |
 | / <br/>          | El miembro de archivo es uno de los dos miembros del enlazador. Ambos miembros del enlazador tienen este nombre. <br/>                                                                                                                                                                                          |
-| // <br/>         | El miembro Archive es el miembro longnames, que consta de una serie de cadenas ASCII terminadas en NULL. El miembro longnames es el tercer miembro de archivo y siempre debe estar presente incluso si el contenido está vacío. <br/>                                                                     |
+| // <br/>         | El miembro Archive es el miembro longnames, que consta de una serie de cadenas ASCII terminadas en NULL. El miembro longnames es el tercer miembro de archivo y es opcional. <br/>                                                                     |
 | /n <br/>         | El nombre del miembro de archivo se encuentra en el desplazamiento n en el miembro longnames. El número n es la representación decimal del desplazamiento. Por ejemplo: "/26" indica que el nombre del miembro de archivo se encuentra 26 bytes más allá del principio del contenido del miembro longnames. <br/> |
 
 
@@ -2199,7 +2199,7 @@ El primer miembro del vinculador tiene el formato siguiente. Esta información a
 
 
 
-| Offset         | Tamaño               | Campo                         | Descripción                                                                                                                                                                                                                                                                                                                                                        |
+| Offset         | Size               | Campo                         | Descripción                                                                                                                                                                                                                                                                                                                                                        |
 |----------------|--------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/>      | Número de símbolos <br/> | Unsigned Long que contiene el número de símbolos indexados. Este número se almacena en formato Big-Endian. Cada miembro del archivo de objeto define normalmente uno o más símbolos externos. <br/>                                                                                                                                                                         |
 | 4 <br/>  | 4 \* n <br/> | Desplazamientos <br/>           | Matriz de desplazamientos de archivo para archivar los encabezados de miembro, donde n es igual al número de campos de símbolos. Cada número de la matriz es una longitud sin signo que se almacena en formato Big-Endian. Para cada símbolo que se nombra en la tabla de cadenas, el elemento correspondiente de la matriz de desplazamientos proporciona la ubicación del miembro de archivo que contiene el símbolo. <br/> |
@@ -2219,7 +2219,7 @@ El segundo miembro tiene el formato siguiente. Esta información aparece despué
 
 
 
-| Offset         | Tamaño               | Campo                         | Descripción                                                                                                                                                                                                                                                                                                                                                                                              |
+| Offset         | Size               | Campo                         | Descripción                                                                                                                                                                                                                                                                                                                                                                                              |
 |----------------|--------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/>      | Número de miembros <br/> | Un valor de tipo Long sin signo que contiene el número de miembros de archivo. <br/>                                                                                                                                                                                                                                                                                                                                |
 | 4 <br/>  | 4 \* m <br/> | Desplazamientos <br/>           | Matriz de desplazamientos de archivo para archivar los encabezados de miembro, organizados en orden ascendente. Cada desplazamiento es una longitud sin signo. El número m es igual al valor del campo número de miembros. <br/>                                                                                                                                                                                                        |
@@ -2273,7 +2273,7 @@ El encabezado Import contiene los siguientes campos y desplazamientos:
 
 
 
-| Offset         | Tamaño                | Campo                       | Descripción                                                                                                                  |
+| Offset         | Size                | Campo                       | Descripción                                                                                                                  |
 |----------------|---------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 2 <br/>       | Sig1 <br/>            | Debe ser la \_ máquina del archivo de imagen \_ \_ desconocida. Para obtener más información, consulte [tipos de máquina](#machine-types). <br/>                |
 | 2 <br/>  | 2 <br/>       | Sig2 <br/>            | Debe ser 0xFFFF. <br/>                                                                                                  |
@@ -2296,7 +2296,7 @@ Esta estructura va seguida de dos cadenas terminadas en null que describen el no
 
 Los siguientes valores se definen para el campo Type en el encabezado Import:
 
-| Constante                  | Value         | Descripción                                      |
+| Constante                  | Valor         | Descripción                                      |
 |---------------------------|---------------|--------------------------------------------------|
 | IMPORTAR \_ código <br/>  | 0 <br/> | Código ejecutable. <br/>                     |
 | IMPORTAR \_ datos <br/>  | 1 <br/> | Datos <br/>                                |
@@ -2308,7 +2308,7 @@ Estos valores se usan para determinar qué contribuciones de la sección debe ge
 
 El nombre del símbolo de importación terminado en NULL sigue inmediatamente a su encabezado de importación asociado. Los siguientes valores se definen para el campo tipo de nombre en el encabezado de importación. Indican cómo se va a usar el nombre para generar los símbolos correctos que representan la importación:
 
-| Constante | Value | Descripción |
+| Constante | Valor | Descripción |
 | - | - | - |
 | ORDINAL de importación \_ | 0 | La importación es por ordinal. Esto indica que el valor del campo ordinal/Hint del encabezado Import es el ordinal de la importación. Si no se especifica esta constante, el campo ordinal/Hint siempre debe interpretarse como la sugerencia de la importación. |
 | nombre de la importación \_ | 1 | El nombre de la importación es idéntico al nombre del símbolo público. |
