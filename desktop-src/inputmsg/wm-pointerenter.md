@@ -1,0 +1,140 @@
+---
+title: Mensaje WM_POINTERENTER
+description: Se envía a una ventana cuando un nuevo puntero entra en el intervalo de detección sobre la ventana (se mantiene el mouse) o cuando un puntero existente se mueve dentro de los límites de la ventana.
+ms.assetid: 3bdc37da-227c-4be1-bf0b-99704b8a0222
+keywords:
+- Mensajes y notificaciones de entrada de mensajes de WM_POINTERENTER
+topic_type:
+- apiref
+api_name:
+- WM_POINTERENTER
+api_location:
+- Winuser.h
+api_type:
+- HeaderDef
+ms.topic: article
+ms.date: 02/03/2020
+ms.openlocfilehash: 4d0f6304408514390bb40f2d0e78a766f9e2d118
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "105720232"
+---
+# <a name="wm_pointerenter-message"></a><span data-ttu-id="3d9c6-104">Mensaje WM_POINTERENTER</span><span class="sxs-lookup"><span data-stu-id="3d9c6-104">WM_POINTERENTER message</span></span>
+
+<span data-ttu-id="3d9c6-105">Se envía a una ventana cuando un nuevo puntero entra en el intervalo de detección sobre la ventana (se mantiene el mouse) o cuando un puntero existente se mueve dentro de los límites de la ventana.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-105">Sent to a window when a new pointer enters detection range over the window (hover) or when an existing pointer moves within the boundaries of the window.</span></span>
+
+<span data-ttu-id="3d9c6-106">Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="3d9c6-106">A window receives this message through its [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) function.</span></span>
+
+> <span data-ttu-id="3d9c6-107">\[! Aún\]</span><span class="sxs-lookup"><span data-stu-id="3d9c6-107">\[!Important\]</span></span>  
+> <span data-ttu-id="3d9c6-108">Las aplicaciones de escritorio deben tener en cuenta los ppp.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-108">Desktop apps should be DPI aware.</span></span> <span data-ttu-id="3d9c6-109">Si la aplicación no tiene en cuenta los PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas podrían aparecer inexactas debido a la virtualización de PPP.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-109">If your app is not DPI aware, screen coordinates contained in pointer messages and related structures might appear inaccurate due to DPI virtualization.</span></span> <span data-ttu-id="3d9c6-110">La virtualización de PPP proporciona compatibilidad con el escalado automático a las aplicaciones que no reconocen los PPP y está activo de forma predeterminada (los usuarios pueden desactivarla).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-110">DPI virtualization provides automatic scaling support to applications that are not DPI aware and is active by default (users can turn it off).</span></span> <span data-ttu-id="3d9c6-111">Para obtener más información, vea [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-111">For more information, see [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).</span></span>
+
+ 
+
+
+```C++
+#define WM_POINTERENTER                 0x0249
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="3d9c6-112">Parámetros</span><span class="sxs-lookup"><span data-stu-id="3d9c6-112">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="3d9c6-113">*wParam*</span><span class="sxs-lookup"><span data-stu-id="3d9c6-113">*wParam*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="3d9c6-114">Contiene el identificador de puntero y la información adicional.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-114">Contains the pointer identifier and additonal information.</span></span> <span data-ttu-id="3d9c6-115">Use las siguientes macros para recuperar información específica en el parámetro wParam.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-115">Use the following macros to retrieve specific information in the wParam parameter.</span></span>
+
+-   <span data-ttu-id="3d9c6-116">[**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): el identificador de puntero.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-116">[**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): the pointer identifier.</span></span>
+-   <span data-ttu-id="3d9c6-117">[**IS_POINTER_NEW_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indica si este mensaje es el primer mensaje generado por un nuevo puntero que entra en el intervalo de detección (mantener el mouse).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-117">[**IS_POINTER_NEW_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indicates whether this message is the first message generated by a new pointer entering detection range (hover).</span></span>
+-   <span data-ttu-id="3d9c6-118">[**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indica si este mensaje fue generado por un puntero que no ha dejado el intervalo de detección.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-118">[**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indicates whether this message was generated by a pointer that has not left detection range.</span></span> <span data-ttu-id="3d9c6-119">Esta marca siempre se establece para los mensajes de **WM_POINTERENTER** .</span><span class="sxs-lookup"><span data-stu-id="3d9c6-119">This flag is always set for **WM_POINTERENTER** messages.</span></span>
+-   <span data-ttu-id="3d9c6-120">[**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si este mensaje fue generado por un puntero que está en contacto con.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-120">[**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): a flag that indicates whether this message was generated by a pointer that is in contact.</span></span> <span data-ttu-id="3d9c6-121">Esta marca no se establece para un puntero en el intervalo de detección (se mantiene el mouse).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-121">This flag is not set for a pointer in detection range (hover).</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="3d9c6-122">*lParam*</span><span class="sxs-lookup"><span data-stu-id="3d9c6-122">*lParam*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="3d9c6-123">Contiene la ubicación del punto del puntero.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-123">Contains the point location of the pointer.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="3d9c6-124">Dado que el puntero puede establecer contacto con el dispositivo a través de un área no trivial, esta ubicación de punto puede ser una simplificación de un área de puntero más compleja.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-124">Because the pointer may make contact with the device over a non-trivial area, this point location may be a simplification of a more complex pointer area.</span></span> <span data-ttu-id="3d9c6-125">Siempre que sea posible, una aplicación debe usar la información de área de puntero completa en lugar de la ubicación del punto.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-125">Whenever possible, an application should use the complete pointer area information instead of the point location.</span></span>
+
+ 
+
+<span data-ttu-id="3d9c6-126">Utilice las siguientes macros para recuperar las coordenadas físicas de la pantalla del punto.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-126">Use the following macros to retrieve the physical screen coordinates of the point.</span></span>
+
+-   <span data-ttu-id="3d9c6-127">[**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): la coordenada X (punto horizontal).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-127">[**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): the x (horizontal point) coordinate.</span></span>
+-   <span data-ttu-id="3d9c6-128">[**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): la coordenada Y (punto vertical).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-128">[**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): the y (vertical point) coordinate.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="3d9c6-129">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="3d9c6-129">Return value</span></span>
+
+<span data-ttu-id="3d9c6-130">Si una aplicación procesa este mensaje, debe devolver cero.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-130">If an application processes this message, it should return zero.</span></span>
+
+<span data-ttu-id="3d9c6-131">Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-131">If the application does not process this message, it should call [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="3d9c6-132">Observaciones</span><span class="sxs-lookup"><span data-stu-id="3d9c6-132">Remarks</span></span>
+
+<span data-ttu-id="3d9c6-133">La notificación de **WM_POINTERENTER** se puede usar en una ventana para proporcionar comentarios al usuario mientras el puntero se encuentra sobre su superficie o, de lo contrario, reaccionar a la presencia de un puntero sobre su superficie.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-133">The **WM_POINTERENTER** notification can be used by a window to provide feedback to the user while the pointer is over its surface or to otherwise react to the presence of a pointer over its surface.</span></span>
+
+<span data-ttu-id="3d9c6-134">Esta notificación solo se envía a la ventana que recibe la entrada para el puntero.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-134">This notification is only sent to the window that is receiving input for the pointer.</span></span> <span data-ttu-id="3d9c6-135">En la tabla siguiente se enumeran algunas de las situaciones en las que se envía esta notificación.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-135">The following table lists some of the situations in which this notification is sent.</span></span>
+
+
+
+| <span data-ttu-id="3d9c6-136">Acción</span><span class="sxs-lookup"><span data-stu-id="3d9c6-136">Action</span></span>                                                   | <span data-ttu-id="3d9c6-137">Marcas establecidas</span><span class="sxs-lookup"><span data-stu-id="3d9c6-137">Flags Set</span></span>                                                                                                                                         | <span data-ttu-id="3d9c6-138">Notificaciones enviadas a</span><span class="sxs-lookup"><span data-stu-id="3d9c6-138">Notifications Sent To</span></span>                                 |
+|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| <span data-ttu-id="3d9c6-139">Un nuevo puntero entra en el intervalo de detección (se mantiene el mouse).</span><span class="sxs-lookup"><span data-stu-id="3d9c6-139">A new pointer enters detection range (hover).</span></span>            | [<span data-ttu-id="3d9c6-140">**IS_POINTER_NEW_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-140">**IS_POINTER_NEW_WPARAM**</span></span>](/previous-versions/windows/desktop/api)<br/> [<span data-ttu-id="3d9c6-141">**IS_POINTER_INRANGE_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-141">**IS_POINTER_INRANGE_WPARAM**</span></span>](/previous-versions/windows/desktop/api)<br/> | <span data-ttu-id="3d9c6-142">Ventana en la que el puntero entra en el intervalo de detección.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-142">Window over which the pointer enters detection range.</span></span> |
+| <span data-ttu-id="3d9c6-143">Un puntero de desplazamiento cruza dentro de los límites de la ventana.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-143">A hovering pointer crosses within the window boundaries.</span></span> | [<span data-ttu-id="3d9c6-144">**IS_POINTER_INRANGE_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-144">**IS_POINTER_INRANGE_WPARAM**</span></span>](/previous-versions/windows/desktop/api)<br/>                                                                      | <span data-ttu-id="3d9c6-145">Ventana en la que se ha cruzado el puntero.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-145">Window within which the pointer has crossed.</span></span>          |
+
+
+
+ 
+
+> <span data-ttu-id="3d9c6-146">\[! Aún\]</span><span class="sxs-lookup"><span data-stu-id="3d9c6-146">\[!Important\]</span></span>  
+> <span data-ttu-id="3d9c6-147">Cuando una ventana pierde la captura de un puntero y recibe la notificación [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md) , normalmente no recibirá ninguna notificación adicional.</span><span class="sxs-lookup"><span data-stu-id="3d9c6-147">When a window loses capture of a pointer and it receives the [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md) notification, it typically will not receive any further notifications.</span></span> <span data-ttu-id="3d9c6-148">Por esta razón, es importante que no realice suposiciones basadas en WM_POINTERUP de WM_POINTERDOWN emparejadas uniformemente [](wm-pointerdown.md) / [](wm-pointerup.md) o **WM_POINTERENTER** / notificaciones [**WM_POINTERLEAVE**](wm-pointerleave.md) .</span><span class="sxs-lookup"><span data-stu-id="3d9c6-148">For this reason, it is important that you not make any assumptions based on evenly paired [**WM_POINTERDOWN**](wm-pointerdown.md)/[**WM_POINTERUP**](wm-pointerup.md) or **WM_POINTERENTER**/[**WM_POINTERLEAVE**](wm-pointerleave.md) notifications.</span></span>
+
+ 
+
+<span data-ttu-id="3d9c6-149">Cuando las entradas proceden del mouse, como resultado de la integración del mouse y del mensaje de puntero, no se envía **WM_POINTERENTER** .</span><span class="sxs-lookup"><span data-stu-id="3d9c6-149">When inputs come from the mouse, as a result of mouse and pointer message integration, **WM_POINTERENTER** is not sent.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="3d9c6-150">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3d9c6-150">Requirements</span></span>
+
+
+
+| <span data-ttu-id="3d9c6-151">Requisito</span><span class="sxs-lookup"><span data-stu-id="3d9c6-151">Requirement</span></span> | <span data-ttu-id="3d9c6-152">Value</span><span class="sxs-lookup"><span data-stu-id="3d9c6-152">Value</span></span> |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="3d9c6-153">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="3d9c6-153">Minimum supported client</span></span><br/> | <span data-ttu-id="3d9c6-154">Solo aplicaciones de escritorio de Windows 8 \[\]</span><span class="sxs-lookup"><span data-stu-id="3d9c6-154">Windows 8 \[desktop apps only\]</span></span><br/>                                                               |
+| <span data-ttu-id="3d9c6-155">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="3d9c6-155">Minimum supported server</span></span><br/> | <span data-ttu-id="3d9c6-156">Solo aplicaciones de escritorio de Windows Server 2012 \[\]</span><span class="sxs-lookup"><span data-stu-id="3d9c6-156">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                                     |
+| <span data-ttu-id="3d9c6-157">Encabezado</span><span class="sxs-lookup"><span data-stu-id="3d9c6-157">Header</span></span><br/>                   | <dl> <span data-ttu-id="3d9c6-158"><dt>Winuser. h (incluir Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="3d9c6-158"><dt>Winuser.h (include Windows.h)</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="3d9c6-159">Vea también</span><span class="sxs-lookup"><span data-stu-id="3d9c6-159">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="3d9c6-160">Mensajes</span><span class="sxs-lookup"><span data-stu-id="3d9c6-160">Messages</span></span>](messages.md)
+</dt> <dt>
+
+<span data-ttu-id="3d9c6-161">**Referencia**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-161">**Reference**</span></span>
+</dt> <dt>
+
+[<span data-ttu-id="3d9c6-162">**GET_POINTERID_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-162">**GET_POINTERID_WPARAM**</span></span>](/previous-versions/windows/desktop/api)
+</dt> <dt>
+
+[<span data-ttu-id="3d9c6-163">**IS_POINTER_NEW_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-163">**IS_POINTER_NEW_WPARAM**</span></span>](/previous-versions/windows/desktop/api)
+</dt> <dt>
+
+[<span data-ttu-id="3d9c6-164">**IS_POINTER_INRANGE_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-164">**IS_POINTER_INRANGE_WPARAM**</span></span>](/previous-versions/windows/desktop/api)
+</dt> <dt>
+
+[<span data-ttu-id="3d9c6-165">**IS_POINTER_INCONTACT_WPARAM**</span><span class="sxs-lookup"><span data-stu-id="3d9c6-165">**IS_POINTER_INCONTACT_WPARAM**</span></span>](/previous-versions/windows/desktop/api)
+</dt> </dl>
+
+ 
+

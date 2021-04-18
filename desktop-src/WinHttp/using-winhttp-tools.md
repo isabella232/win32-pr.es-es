@@ -1,0 +1,26 @@
+---
+description: Para los comandos que puede usar en Windows Vista y versiones posteriores para configurar el proxy y la traza para Windows HTTP, vea comandos Netsh para el protocolo de transferencia de hipertexto de Windows (WINHTTP).
+ms.assetid: 81f6b25e-ea14-4dbd-a715-926db7cf90e7
+title: Uso de las herramientas de WinHTTP
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e2e402962dc34cbf654fa8db49f96b86e7406a4f
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105715166"
+---
+# <a name="using-winhttp-tools"></a><span data-ttu-id="117e7-103">Uso de las herramientas de WinHTTP</span><span class="sxs-lookup"><span data-stu-id="117e7-103">Using WinHTTP Tools</span></span>
+
+<span data-ttu-id="117e7-104">Para los comandos que puede usar en Windows Vista y versiones posteriores para configurar el proxy y la traza para Windows HTTP, vea [comandos Netsh para el protocolo de transferencia de hipertexto de Windows (WinHTTP)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731131(v=ws.10)).</span><span class="sxs-lookup"><span data-stu-id="117e7-104">For the commands you can use in Windows Vista and later to configure proxy and tracing settings for Windows HTTP , see [Netsh Commands for Windows Hypertext Transfer Protocol (WINHTTP)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731131(v=ws.10)).</span></span>
+
+<span data-ttu-id="117e7-105">**Windows Server 2003 y versiones anteriores:** Hay varias herramientas disponibles para ayudarle a escribir y depurar las aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="117e7-105">**Windows Server 2003 and Earlier:** There are several tools that are available to help you write and debug your applications.</span></span> <span data-ttu-id="117e7-106">Se explican en los temas siguientes:</span><span class="sxs-lookup"><span data-stu-id="117e7-106">They are explained in the following topics:</span></span>
+
+-   <span data-ttu-id="117e7-107">[WinHttpCfg.exe, una herramienta de configuración de certificados](winhttpcertcfg-exe--a-certificate-configuration-tool.md) permite a los administradores instalar y configurar certificados de cliente en cualquier [*almacén de certificados*](glossary.md) al que pueda tener acceso la cuenta del administrador de aplicaciones web (IWAM) de servidor de Internet.</span><span class="sxs-lookup"><span data-stu-id="117e7-107">[WinHttpCfg.exe, a Certificate Configuration Tool](winhttpcertcfg-exe--a-certificate-configuration-tool.md) enables administrators to install and configure client certificates in any [*certificate store*](glossary.md) that can be accessed by the Internet Server Web Application Manager (IWAM) account.</span></span> <span data-ttu-id="117e7-108">La herramienta también elimina la necesidad de hacer nada especial en cuentas como la cuenta IWAM para obtener acceso a los certificados cuando se utiliza Active Server páginas (ASP).</span><span class="sxs-lookup"><span data-stu-id="117e7-108">The tool also eliminates the need to do anything special to accounts such as the IWAM account to gain access to certificates when using Active Server Pages (ASP).</span></span>
+-   <span data-ttu-id="117e7-109">[Netsh.exe o ProxyCfg.exe Proxy herramientas de configuración](proxycfg-exe--a-proxy-configuration-tool.md) se pueden usar para configurar servidores proxy con los servicios http de Microsoft Windows (WinHTTP).</span><span class="sxs-lookup"><span data-stu-id="117e7-109">[Netsh.exe or ProxyCfg.exe Proxy Configuration Tools](proxycfg-exe--a-proxy-configuration-tool.md) can be used to configure proxy servers with Microsoft Windows HTTP Services (WinHTTP).</span></span>
+-   <span data-ttu-id="117e7-110">[WinHttpTraceCfg, una herramienta de configuración de seguimiento](winhttptracecfg-exe--a-trace-configuration-tool.md) proporciona la capacidad de supervisar las funciones WinHTTP y el tráfico de red correspondiente.</span><span class="sxs-lookup"><span data-stu-id="117e7-110">[WinHttpTraceCfg, a Trace Configuration Tool](winhttptracecfg-exe--a-trace-configuration-tool.md) provides the ability to monitor WinHTTP functions and the corresponding network traffic.</span></span> <span data-ttu-id="117e7-111">La depuración de aplicaciones que usan protocolos de conexión cifrados, como Capa de sockets seguros (SSL), impide el examen de paquetes en la capa de transporte de red y requiere la capacidad de interceptar el tráfico entre el cliente y el servidor una vez descifrado.</span><span class="sxs-lookup"><span data-stu-id="117e7-111">Debugging applications which utilize encrypted wire protocols, such as Secure Sockets Layer (SSL), preclude sniffing packets at the network transport layer and require the ability to intercept traffic between the client and server after it has been decrypted.</span></span> <span data-ttu-id="117e7-112">El servicio de seguimiento de WinHTTP tiene una serie de funciones para interceptar el flujo de tráfico entre el cliente y el servidor.</span><span class="sxs-lookup"><span data-stu-id="117e7-112">The WinHTTP trace facility has a range of capabilities for intercepting the traffic stream between the client and server.</span></span>
+
+ 
+
+ 
