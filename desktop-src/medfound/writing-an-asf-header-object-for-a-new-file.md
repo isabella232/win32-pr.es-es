@@ -1,0 +1,59 @@
+---
+description: Escribir un objeto de encabezado ASF para un nuevo archivo
+ms.assetid: f2a76471-3d93-427b-a316-d0967cd20e77
+title: Escribir un objeto de encabezado ASF para un nuevo archivo
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6dfcaf0d7c7c4ca469e75fb4c1bd47a4f8b1d32f
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105707012"
+---
+# <a name="writing-an-asf-header-object-for-a-new-file"></a>Escribir un objeto de encabezado ASF para un nuevo archivo
+
+El objeto ContentInfo de ASF almacena la información del objeto de encabezado ASF para un archivo. Cuando se crea o modifica un archivo ASF, debe generarse el objeto de encabezado. Para ello, la aplicación debe proporcionar el perfil de codificación del contenido al objeto ContentInfo para que conozca las características del archivo multimedia que se va a crear.
+
+Para escribir un nuevo archivo, puede usar el objeto ContentInfo para:
+
+-   Recopile información de encabezado del objeto de perfil del archivo que se va a crear.
+-   Rellene los distintos objetos de encabezado de la biblioteca ASF que mantiene internamente Media Foundation,
+-   Inicialice el [multiplexor ASF](asf-multiplexer.md) para la generación de paquetes de datos ASF y
+-   Construya el objeto de encabezado de nivel superior en formato binario que se puede escribir en un archivo.
+
+Para obtener información acerca de los perfiles, consulte [ASF Profile](asf-profile.md).
+
+Esta sección contiene los siguientes temas:
+
+
+
+| Tema                                                                                                              | Descripción                                                                                                                                                                            |
+|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Inicializar el objeto ContentInfo de un nuevo archivo ASF](initializing-the-contentinfo-object-of-a-new-asf-file.md) | Describe el método [**IMFASFContentInfo:: SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile) que inicializa el objeto ContentInfo con la información de encabezado almacenada en un objeto de perfil. |
+| [Establecer propiedades en el objeto ContentInfo](setting-properties-in-the-contentinfo-object.md)                   | Información sobre las distintas propiedades de configuración que se deben establecer en el objeto ContentInfo.                                                                                         |
+| [Generar un nuevo objeto de encabezado ASF](generating-a-new-asf-header-object.md)                                       | Cómo generar un búfer multimedia, que contiene el objeto de encabezado ASF real del nuevo archivo, del objeto ContentInfo.                                                              |
+
+
+
+ 
+
+## <a name="related-topics"></a>Temas relacionados
+
+<dl> <dt>
+
+[Objeto ContentInfo de ASF](asf-contentinfo-object.md)
+</dt> <dt>
+
+[Objeto de encabezado ASF](asf-file-structure.md)
+</dt> <dt>
+
+Estructura de archivos ASF
+</dt> </dl>
+
+ 
+
+ 
+
+
+
