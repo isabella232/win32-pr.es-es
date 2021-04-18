@@ -13,12 +13,13 @@ api_type:
 - DllExport
 api_location:
 - plotui.dll
-ms.openlocfilehash: ca6a238b73700219a3c79bd8d2369bf155633f7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+- winspool.drv
+ms.openlocfilehash: e7e2c8586c06b2cb64a0e499bd05a6b6016de0a6
+ms.sourcegitcommit: c77ed4d933c9f30af0ca0e095a75ad2bdd4d8bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716250"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106011185"
 ---
 # <a name="printerproperties-function"></a>PrinterProperties función)
 
@@ -77,11 +78,11 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
 | Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Plotui.dll</dt> </dl>                     |
+| Archivo DLL<br/>                      | <dl> <dt>winspool. drv</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
