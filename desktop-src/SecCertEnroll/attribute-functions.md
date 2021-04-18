@@ -1,0 +1,126 @@
+---
+description: Los atributos se pueden agregar a una solicitud de certificado para proporcionar a una entidad de certificación (CA) información adicional que puede utilizar al crear y emitir un certificado.
+ms.assetid: 3eba5a2f-eeac-4e38-8705-b12bc183b7eb
+title: Funciones de atributo
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6413da0d43c142373e6f3cabe3d8e31636b82ef2
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104276679"
+---
+# <a name="attribute-functions"></a><span data-ttu-id="12dda-103">Funciones de atributo</span><span class="sxs-lookup"><span data-stu-id="12dda-103">Attribute Functions</span></span>
+
+<span data-ttu-id="12dda-104">Los atributos se pueden agregar a una solicitud de certificado para proporcionar a una [*entidad de certificación*](/windows/desktop/SecGloss/c-gly) (CA) información adicional que puede utilizar al crear y emitir un certificado.</span><span class="sxs-lookup"><span data-stu-id="12dda-104">Attributes can be added to a certificate request to provide a [*certification authority*](/windows/desktop/SecGloss/c-gly) (CA) with additional information that it can use when creating and issuing a certificate.</span></span>
+
+<span data-ttu-id="12dda-105">CertEnroll.dll implementa las interfaces siguientes para definir atributos y colecciones de atributos:</span><span class="sxs-lookup"><span data-stu-id="12dda-105">CertEnroll.dll implements the following interfaces to define attributes and attribute collections:</span></span>
+
+-   [<span data-ttu-id="12dda-106">**ICryptAttribute**</span><span class="sxs-lookup"><span data-stu-id="12dda-106">**ICryptAttribute**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute)
+-   [<span data-ttu-id="12dda-107">**ICryptAttributes**</span><span class="sxs-lookup"><span data-stu-id="12dda-107">**ICryptAttributes**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes)
+-   [<span data-ttu-id="12dda-108">**IX509Attribute**</span><span class="sxs-lookup"><span data-stu-id="12dda-108">**IX509Attribute**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute)
+-   [<span data-ttu-id="12dda-109">**IX509Attributes**</span><span class="sxs-lookup"><span data-stu-id="12dda-109">**IX509Attributes**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes)
+-   [<span data-ttu-id="12dda-110">**IX509AttributeClientId**</span><span class="sxs-lookup"><span data-stu-id="12dda-110">**IX509AttributeClientId**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid)
+-   [<span data-ttu-id="12dda-111">**IX509AttributeExtensions**</span><span class="sxs-lookup"><span data-stu-id="12dda-111">**IX509AttributeExtensions**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions)
+-   [<span data-ttu-id="12dda-112">**IX509AttributeArchiveKey**</span><span class="sxs-lookup"><span data-stu-id="12dda-112">**IX509AttributeArchiveKey**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekey)
+-   [<span data-ttu-id="12dda-113">**IX509AttributeArchiveKeyHash**</span><span class="sxs-lookup"><span data-stu-id="12dda-113">**IX509AttributeArchiveKeyHash**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekeyhash)
+-   [<span data-ttu-id="12dda-114">**IX509AttributeCspProvider**</span><span class="sxs-lookup"><span data-stu-id="12dda-114">**IX509AttributeCspProvider**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributecspprovider)
+-   [<span data-ttu-id="12dda-115">**IX509AttributeOSVersion**</span><span class="sxs-lookup"><span data-stu-id="12dda-115">**IX509AttributeOSVersion**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion)
+-   [<span data-ttu-id="12dda-116">**IX509AttributeRenewalCertificate**</span><span class="sxs-lookup"><span data-stu-id="12dda-116">**IX509AttributeRenewalCertificate**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate)
+
+<span data-ttu-id="12dda-117">En las secciones siguientes se identifican las funciones exportadas por Xenroll.dll para asociar atributos criptográficos con solicitudes de certificado y se describe cómo usar CertEnroll.dll para reemplazar la función o para indicar que no existe ninguna asignación entre las dos bibliotecas:</span><span class="sxs-lookup"><span data-stu-id="12dda-117">The following sections identify functions exported by Xenroll.dll to associate cryptographic attributes with certificate requests and discuss how to use CertEnroll.dll to replace the function or indicate that no mapping between the two libraries exists:</span></span>
+
+-   [<span data-ttu-id="12dda-118">addAttributeToRequestWStr</span><span class="sxs-lookup"><span data-stu-id="12dda-118">addAttributeToRequestWStr</span></span>](#addattributetorequestwstr)
+-   [<span data-ttu-id="12dda-119">AddAuthenticatedAttributesToPKCS7Request</span><span class="sxs-lookup"><span data-stu-id="12dda-119">AddAuthenticatedAttributesToPKCS7Request</span></span>](#addauthenticatedattributestopkcs7request)
+-   [<span data-ttu-id="12dda-120">addNameValuePairToRequestWStr</span><span class="sxs-lookup"><span data-stu-id="12dda-120">addNameValuePairToRequestWStr</span></span>](#addnamevaluepairtorequestwstr)
+-   [<span data-ttu-id="12dda-121">AddNameValuePairToSignatureWStr</span><span class="sxs-lookup"><span data-stu-id="12dda-121">AddNameValuePairToSignatureWStr</span></span>](#addnamevaluepairtosignaturewstr)
+-   [<span data-ttu-id="12dda-122">ClientId</span><span class="sxs-lookup"><span data-stu-id="12dda-122">ClientId</span></span>](#clientid)
+-   [<span data-ttu-id="12dda-123">RenewalCertificate</span><span class="sxs-lookup"><span data-stu-id="12dda-123">RenewalCertificate</span></span>](#renewalcertificate)
+-   [<span data-ttu-id="12dda-124">resetAttributes</span><span class="sxs-lookup"><span data-stu-id="12dda-124">resetAttributes</span></span>](#resetattributes)
+-   [<span data-ttu-id="12dda-125">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="12dda-125">Related topics</span></span>](#related-topics)
+
+## <a name="addattributetorequestwstr"></a><span data-ttu-id="12dda-126">addAttributeToRequestWStr</span><span class="sxs-lookup"><span data-stu-id="12dda-126">addAttributeToRequestWStr</span></span>
+
+<span data-ttu-id="12dda-127">La función [**addAttributeToRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-addattributetorequestwstr) de Xenroll.dll agrega un atributo a una solicitud de certificado.</span><span class="sxs-lookup"><span data-stu-id="12dda-127">The [**addAttributeToRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-addattributetorequestwstr) function in Xenroll.dll adds an attribute to a certificate request.</span></span>
+
+<span data-ttu-id="12dda-128">En general, para agregar un atributo a una solicitud usando los objetos implementados en CertEnroll.dll, puede realizar las siguientes acciones:</span><span class="sxs-lookup"><span data-stu-id="12dda-128">In general, to add an attribute to a request by using the objects implemented in CertEnroll.dll, you can perform the following actions:</span></span>
+
+1.  <span data-ttu-id="12dda-129">Cree un objeto de colección [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) .</span><span class="sxs-lookup"><span data-stu-id="12dda-129">Create an [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) collection object.</span></span>
+2.  <span data-ttu-id="12dda-130">Cree un objeto [**IX509Attribute**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute) y llame al método [**Initialize**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attribute-initialize) para crear un atributo a partir de un identificador de objeto y un valor de atributo, o use cualquiera de las interfaces enumeradas anteriormente para definir uno de los atributos más comunes.</span><span class="sxs-lookup"><span data-stu-id="12dda-130">Create an [**IX509Attribute**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute) object and call the [**Initialize**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attribute-initialize) method to create an attribute from an object identifier and attribute value or use any of the interfaces listed earlier to define one of the more common attributes.</span></span>
+3.  <span data-ttu-id="12dda-131">Agregue cada nuevo atributo creado en el paso anterior a la colección [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) mediante el método [**Add**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-add) .</span><span class="sxs-lookup"><span data-stu-id="12dda-131">Add each new attribute created in the preceding step to the [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) collection by using the [**Add**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-add) method.</span></span>
+4.  <span data-ttu-id="12dda-132">Cree un objeto [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) e Inicialícelo llamando al método [**InitializeFromValues**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattribute-initializefromvalues) y especificando la colección [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) en la entrada.</span><span class="sxs-lookup"><span data-stu-id="12dda-132">Create an [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) object and initialize it by calling the [**InitializeFromValues**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattribute-initializefromvalues) method and specifying the [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) collection on input.</span></span>
+5.  <span data-ttu-id="12dda-133">Recupere un objeto de colección [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) llamando a la propiedad [**CryptAttributes**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_cryptattributes) en un objeto de solicitud [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) o [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) existente.</span><span class="sxs-lookup"><span data-stu-id="12dda-133">Retrieve an [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) collection object by calling the [**CryptAttributes**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_cryptattributes) property on an existing [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) or [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) request object.</span></span>
+6.  <span data-ttu-id="12dda-134">Agregue el objeto [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) a la colección [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) .</span><span class="sxs-lookup"><span data-stu-id="12dda-134">Add the [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) object to the [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) collection.</span></span>
+
+## <a name="addauthenticatedattributestopkcs7request"></a><span data-ttu-id="12dda-135">AddAuthenticatedAttributesToPKCS7Request</span><span class="sxs-lookup"><span data-stu-id="12dda-135">AddAuthenticatedAttributesToPKCS7Request</span></span>
+
+<span data-ttu-id="12dda-136">Los atributos autenticados son pares nombre-valor que están firmados por y se agregan a una firma.</span><span class="sxs-lookup"><span data-stu-id="12dda-136">Authenticated attributes are name-value pairs that are signed by and added to a signature.</span></span> <span data-ttu-id="12dda-137">La función [**AddAuthenticatedAttributesToPKCS7Request**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-addauthenticatedattributestopkcs7request) de Xenroll.dll agrega una matriz de atributos autenticados a una solicitud [*PKCS \# 7*](/windows/desktop/SecGloss/p-gly) .</span><span class="sxs-lookup"><span data-stu-id="12dda-137">The [**AddAuthenticatedAttributesToPKCS7Request**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-addauthenticatedattributestopkcs7request) function in Xenroll.dll adds an array of authenticated attributes to a [*PKCS \#7*](/windows/desktop/SecGloss/p-gly) request.</span></span>
+
+<span data-ttu-id="12dda-138">Como se explicó anteriormente para la función [**addAttributeToRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-addattributetorequestwstr) , puede utilizar CertEnroll.dll para definir y agregar fácilmente una colección de atributos a una solicitud de certificado.</span><span class="sxs-lookup"><span data-stu-id="12dda-138">As discussed above for the [**addAttributeToRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-addattributetorequestwstr) function, you can use CertEnroll.dll to easily define and add a collection of attributes to a certificate request.</span></span> <span data-ttu-id="12dda-139">Sin embargo, no puede elegir si el atributo está autenticado.</span><span class="sxs-lookup"><span data-stu-id="12dda-139">You cannot, however, choose whether the attribute is authenticated.</span></span> <span data-ttu-id="12dda-140">El proceso de inscripción toma esta decisión automáticamente.</span><span class="sxs-lookup"><span data-stu-id="12dda-140">The enrollment process automatically makes this decision.</span></span>
+
+## <a name="addnamevaluepairtorequestwstr"></a><span data-ttu-id="12dda-141">addNameValuePairToRequestWStr</span><span class="sxs-lookup"><span data-stu-id="12dda-141">addNameValuePairToRequestWStr</span></span>
+
+<span data-ttu-id="12dda-142">La función [**addNameValuePairToRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-addnamevaluepairtorequestwstr) de Xenroll.dll agrega un par nombre-valor no autenticado a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="12dda-142">The [**addNameValuePairToRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-addnamevaluepairtorequestwstr) function in Xenroll.dll adds an unauthenticated name-value pair to a request.</span></span>
+
+<span data-ttu-id="12dda-143">Puede usar la interfaz [**IX509NameValuePair**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair) en CertEnroll.dll para definir un par nombre-valor, y puede Agregar una colección de pares nombre-valor a un objeto de solicitud CMC realizando las siguientes acciones:</span><span class="sxs-lookup"><span data-stu-id="12dda-143">You can use the [**IX509NameValuePair**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair) interface in CertEnroll.dll to define a name-value pair, and you can add a collection of name-value pairs to a CMC request object by performing the following actions:</span></span>
+
+1.  <span data-ttu-id="12dda-144">Cree e inicialice un objeto [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) .</span><span class="sxs-lookup"><span data-stu-id="12dda-144">Create and initialize an [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) object.</span></span> <span data-ttu-id="12dda-145">El proceso de inicialización crea una colección [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) vacía.</span><span class="sxs-lookup"><span data-stu-id="12dda-145">The initialization process creates an empty [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) collection.</span></span>
+2.  <span data-ttu-id="12dda-146">Llame a la propiedad [**NameValuePairs**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_namevaluepairs) en un objeto de solicitud CMC existente para recuperar la colección.</span><span class="sxs-lookup"><span data-stu-id="12dda-146">Call the [**NameValuePairs**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_namevaluepairs) property on an existing CMC request object to retrieve the collection.</span></span>
+3.  <span data-ttu-id="12dda-147">Cree e inicialice un objeto [**IX509NameValuePair**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair) .</span><span class="sxs-lookup"><span data-stu-id="12dda-147">Create and initialize an [**IX509NameValuePair**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair) object.</span></span>
+4.  <span data-ttu-id="12dda-148">Agregue cada nuevo par nombre-valor a la colección [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) llamando al método [**Add**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-add) .</span><span class="sxs-lookup"><span data-stu-id="12dda-148">Add each new name-value pair to the [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) collection by calling the [**Add**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-add) method.</span></span>
+
+<span data-ttu-id="12dda-149">El proceso de inscripción coloca la colección de pares nombre-valor en la estructura **TaggedAttribute** de la solicitud CMC.</span><span class="sxs-lookup"><span data-stu-id="12dda-149">The enrollment process places the collection of name-value pairs in the **TaggedAttribute** structure of the CMC request.</span></span>
+
+## <a name="addnamevaluepairtosignaturewstr"></a><span data-ttu-id="12dda-150">AddNameValuePairToSignatureWStr</span><span class="sxs-lookup"><span data-stu-id="12dda-150">AddNameValuePairToSignatureWStr</span></span>
+
+<span data-ttu-id="12dda-151">La función [**AddNameValuePairToSignatureWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-addnamevaluepairtosignaturewstr) de Xenroll.dll agrega un par nombre-valor autenticado a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="12dda-151">The [**AddNameValuePairToSignatureWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-addnamevaluepairtosignaturewstr) function in Xenroll.dll adds an authenticated name-value pair to a request.</span></span> <span data-ttu-id="12dda-152">Normalmente se usa para especificar el nombre del solicitante en una solicitud de inscripción en nombre de (EOBO).</span><span class="sxs-lookup"><span data-stu-id="12dda-152">This is typically used to specify the requester name in an enroll-on-behalf-of (EOBO) request.</span></span>
+
+<span data-ttu-id="12dda-153">En CertEnroll.dll, use la propiedad [**RequesterName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-get_requestername) para especificar el nombre en una solicitud EOBO.</span><span class="sxs-lookup"><span data-stu-id="12dda-153">In CertEnroll.dll, use the [**RequesterName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-get_requestername) property to specify the name in an EOBO request.</span></span>
+
+## <a name="clientid"></a><span data-ttu-id="12dda-154">ClientId</span><span class="sxs-lookup"><span data-stu-id="12dda-154">ClientId</span></span>
+
+<span data-ttu-id="12dda-155">La función [**ClientID**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-get_clientid) de Xenroll.dll especifica o recupera un atributo **ClientID** .</span><span class="sxs-lookup"><span data-stu-id="12dda-155">The [**ClientId**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-get_clientid) function in Xenroll.dll specifies or retrieves a **ClientId** attribute.</span></span>
+
+<span data-ttu-id="12dda-156">Use la propiedad [**ClientID**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_clientid) en CertEnroll.dll para agregar este atributo a una solicitud CMC o PKCS \# 10.</span><span class="sxs-lookup"><span data-stu-id="12dda-156">Use the [**ClientId**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_clientid) property in CertEnroll.dll to add this attribute to a CMC or PKCS \#10 request.</span></span>
+
+## <a name="renewalcertificate"></a><span data-ttu-id="12dda-157">RenewalCertificate</span><span class="sxs-lookup"><span data-stu-id="12dda-157">RenewalCertificate</span></span>
+
+<span data-ttu-id="12dda-158">La función [**RenewalCertificate**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-get_renewalcertificate) de Xenroll.dll especifica o recupera un atributo **RenewalCertificate** .</span><span class="sxs-lookup"><span data-stu-id="12dda-158">The [**RenewalCertificate**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-get_renewalcertificate) function in Xenroll.dll specifies or retrieves a **RenewalCertificate** attribute.</span></span>
+
+<span data-ttu-id="12dda-159">En CertEnroll.dll, cuando se llama a [**InitializeFromCertificate**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefromcertificate) en un \# objeto PKCS 7 o PKCS), se crea automáticamente.</span><span class="sxs-lookup"><span data-stu-id="12dda-159">In CertEnroll.dll, when you call [**InitializeFromCertificate**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefromcertificate) on a PKCS \#7 or PKCS ) object is automatically created.</span></span>
+
+## <a name="resetattributes"></a><span data-ttu-id="12dda-160">resetAttributes</span><span class="sxs-lookup"><span data-stu-id="12dda-160">resetAttributes</span></span>
+
+<span data-ttu-id="12dda-161">La función [**resetAttributes**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-resetattributes) de Xenroll.dll quita la colección de atributos de una solicitud.</span><span class="sxs-lookup"><span data-stu-id="12dda-161">The [**resetAttributes**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-resetattributes) function in Xenroll.dll removes the attribute collection from a request.</span></span>
+
+<span data-ttu-id="12dda-162">Para quitar un atributo de una solicitud por índice mediante CertEnroll.dll, llame al método [**Remove**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-remove) en la colección [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) .</span><span class="sxs-lookup"><span data-stu-id="12dda-162">To remove an attribute from a request by index using CertEnroll.dll, call the [**Remove**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-remove) method on the [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) collection.</span></span> <span data-ttu-id="12dda-163">Para quitar todos los atributos de una solicitud, llame al método [**Clear**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-clear) .</span><span class="sxs-lookup"><span data-stu-id="12dda-163">To remove all attributes from a request, call the [**Clear**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-clear) method.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="12dda-164">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="12dda-164">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="12dda-165">Asignación Xenroll.dll a CertEnroll.dll</span><span class="sxs-lookup"><span data-stu-id="12dda-165">Mapping Xenroll.dll to CertEnroll.dll</span></span>](mapping-xenroll-dll-to-certenroll-dll.md)
+</dt> <dt>
+
+[<span data-ttu-id="12dda-166">**ICryptAttribute**</span><span class="sxs-lookup"><span data-stu-id="12dda-166">**ICryptAttribute**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute)
+</dt> <dt>
+
+[<span data-ttu-id="12dda-167">**ICryptAttributes**</span><span class="sxs-lookup"><span data-stu-id="12dda-167">**ICryptAttributes**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes)
+</dt> <dt>
+
+[<span data-ttu-id="12dda-168">**IX509Attribute**</span><span class="sxs-lookup"><span data-stu-id="12dda-168">**IX509Attribute**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute)
+</dt> <dt>
+
+[<span data-ttu-id="12dda-169">**IX509Attributes**</span><span class="sxs-lookup"><span data-stu-id="12dda-169">**IX509Attributes**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes)
+</dt> <dt>
+
+[<span data-ttu-id="12dda-170">**IX509NameValuePair**</span><span class="sxs-lookup"><span data-stu-id="12dda-170">**IX509NameValuePair**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair)
+</dt> <dt>
+
+[<span data-ttu-id="12dda-171">**IX509NameValuePairs**</span><span class="sxs-lookup"><span data-stu-id="12dda-171">**IX509NameValuePairs**</span></span>](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs)
+</dt> </dl>
+
+ 
+
+ 
