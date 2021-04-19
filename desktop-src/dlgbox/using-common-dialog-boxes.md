@@ -1,40 +1,40 @@
 ---
 title: Usar cuadros de diálogo comunes
-description: En esta sección se describen las tareas que invocan cuadros de diálogo comunes.
+description: En esta sección se tratan las tareas que invocan cuadros de diálogo comunes.
 ms.assetid: ba038bc1-fb5c-4576-be80-7eae7339ba05
 keywords:
-- Biblioteca de cuadros de diálogo comunes, tareas
-- cuadros de diálogo comunes, usar
+- Biblioteca común de cuadros de diálogo, tareas
+- cuadros de diálogo comunes, mediante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a973fee7c8f7cd88abad3097edfc0349cc9118c1
-ms.sourcegitcommit: 56f8e4d5119e5018363fa2dc3472cdff203c6913
+ms.openlocfilehash: 773382a34b048e812a3fb093da0492b0c628fb14
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "105695810"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590662"
 ---
 # <a name="using-common-dialog-boxes"></a>Usar cuadros de diálogo comunes
 
-En esta sección se describen las tareas que invocan cuadros de diálogo comunes:
+En esta sección se tratan las tareas que invocan cuadros de diálogo comunes:
 
 -   [Elegir un color](#choosing-a-color)
 -   [Elección de una fuente](#choosing-a-font)
 -   [Abrir un archivo](#opening-a-file)
 -   [Mostrar el cuadro de diálogo Imprimir](#displaying-the-print-dialog-box)
--   [Usar la hoja de propiedades imprimir](#using-the-print-property-sheet)
+-   [Usar la hoja de propiedades Imprimir](#using-the-print-property-sheet)
 -   [Configuración de la página impresa](#setting-up-the-printed-page)
 -   [Buscar texto](#finding-text)
 
 ## <a name="choosing-a-color"></a>Elegir un color
 
-En este tema se describe el código de ejemplo que muestra un cuadro de diálogo de **color** para que un usuario pueda seleccionar un color. En primer lugar, el código de ejemplo Inicializa una estructura [**las choosecolor.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) y, a continuación, llama a la función [**las choosecolor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) para mostrar el cuadro de diálogo. Si la función devuelve **true**, lo que indica que el usuario seleccionó un color, el código de ejemplo utiliza el color seleccionado para crear un nuevo pincel sólido.
+En este tema se describe el código de ejemplo que muestra un **cuadro de** diálogo Color para que un usuario pueda seleccionar un color. El código de ejemplo inicializa primero una [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) y, a continuación, llama a [**la función ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) para mostrar el cuadro de diálogo. Si la función devuelve **TRUE**, lo que indica que el usuario ha seleccionado un color, el código de ejemplo usa el color seleccionado para crear un nuevo pincel sólido.
 
-En este ejemplo se usa la estructura [**las choosecolor.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para inicializar el cuadro de diálogo de la siguiente manera:
+En este ejemplo se usa [**la estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para inicializar el cuadro de diálogo de la siguiente manera:
 
--   Inicializa el miembro **lpCustColors** con un puntero a una matriz estática de valores. Los colores de la matriz son inicialmente negros, pero la matriz estática conserva los colores personalizados creados por el usuario para las llamadas posteriores a [**las choosecolor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) .
--   Establece la **marca \_ RGBINIT de CC** e inicializa el miembro **rgbResult** para especificar el color que se selecciona inicialmente al abrir el cuadro de diálogo. Si no se especifica, la selección inicial es negra. En el ejemplo se utiliza la variable estática *rgbCurrent* para conservar el valor seleccionado entre las llamadas a [**las choosecolor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)).
--   Establece la **marca \_ FULLOPEN de CC** , de modo que siempre se muestra la extensión de colores personalizados del cuadro de diálogo.
+-   Inicializa el miembro **lpCustColors** con un puntero a una matriz estática de valores. Los colores de la matriz son inicialmente de color negro, pero la matriz estática conserva los colores personalizados creados por el usuario para las llamadas [**a ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) posteriores.
+-   Establece la **marca CC \_ RGBINIT** e inicializa el miembro **rgbResult** para especificar el color que se seleccionó inicialmente cuando se abre el cuadro de diálogo. Si no se especifica, la selección inicial es negra. En el ejemplo se usa la variable estática *rgbCurrent* para conservar el valor seleccionado entre las llamadas [**a ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))
+-   Establece la **marca CC \_ FULLOPEN** para que siempre se muestre la extensión de colores personalizados del cuadro de diálogo.
 
 
 ```
@@ -61,13 +61,13 @@ if (ChooseColor(&cc)==TRUE)
 
 
 
-## <a name="choosing-a-font"></a>Elección de una fuente
+## <a name="choosing-a-font"></a>Elegir una fuente
 
-En este tema se describe el código de ejemplo que muestra un cuadro de diálogo de **fuente** para que un usuario pueda elegir los atributos de una fuente. En primer lugar, el código de ejemplo Inicializa una estructura [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) y, a continuación, llama a la función [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) para mostrar el cuadro de diálogo.
+En este tema se describe el código de ejemplo que muestra un **cuadro de** diálogo Fuente para que un usuario pueda elegir los atributos de una fuente. El código de ejemplo inicializa primero una [**estructura CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) y, a continuación, llama a la [**función ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) para mostrar el cuadro de diálogo.
 
-En este ejemplo se establece la marca **CF \_ SCREENFONTS** para especificar que el cuadro de diálogo solo debe mostrar fuentes de pantalla. Establece la marca **de \_ efectos de CF** para mostrar los controles que permiten al usuario seleccionar las opciones de tachado, subrayado y color.
+En este ejemplo se establece **la marca CF \_ SCREENFONTS** para especificar que el cuadro de diálogo solo debe mostrar fuentes de pantalla. Establece la marca **CF \_ EFFECTS para** mostrar los controles que permiten al usuario seleccionar opciones de tachado, subrayado y color.
 
-Si [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) devuelve **true**, lo que indica que el usuario hizo clic en el botón **Aceptar** , la estructura [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) contiene información que describe los atributos de fuente y fuente seleccionados por el usuario, incluidos los miembros de la estructura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) a la que apunta el miembro **lpLogFont** . El miembro **rgbColors** contiene el color de texto seleccionado. En el código de ejemplo se utiliza esta información para establecer la fuente y el color del texto del contexto de dispositivo asociado a la ventana propietaria.
+Si [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) devuelve **TRUE**, lo que  indica que el usuario hizo clic en el botón Aceptar, la estructura [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) contiene información que describe los atributos de fuente y fuente seleccionados por el usuario, incluidos los miembros de la estructura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) a los que apunta el **miembro lpLogFont.** El **miembro rgbColors** contiene el color de texto seleccionado. El código de ejemplo usa esta información para establecer la fuente y el color del texto para el contexto del dispositivo asociado a la ventana del propietario.
 
 
 ```
@@ -105,19 +105,19 @@ if (ChooseFont(&cf)==TRUE)
 ## <a name="opening-a-file"></a>Abrir un archivo
 
 > [!Note]  
-> A partir de Windows Vista, el cuadro de diálogo de archivo común se ha sustituido por el cuadro de diálogo de elemento común cuando se usa para abrir un archivo. Se recomienda usar la API de cuadro de diálogo Common item en lugar de la API Common File Dialog. Para obtener más información, vea [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)).
+> A partir de Windows Vista, el cuadro de diálogo Archivo común se ha reemplazado por el cuadro de diálogo Elemento común cuando se usa para abrir un archivo. Se recomienda usar Common Item Dialog API en lugar de Common File Dialog API. Para obtener más información, vea [Common Item Dialog](/windows/win32/shell/common-file-dialog).
 
  
 
-En este tema se describe el código de ejemplo que muestra un cuadro de diálogo **abierto** para que un usuario pueda especificar la unidad, el directorio y el nombre de un archivo que se va a abrir. En primer lugar, el código de ejemplo Inicializa una estructura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) y, a continuación, llama a la función [**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) para mostrar el cuadro de diálogo.
+En este tema se describe  el código de ejemplo que muestra un cuadro de diálogo Abrir para que un usuario pueda especificar la unidad, el directorio y el nombre de un archivo que se va a abrir. El código de ejemplo inicializa primero una [**estructura OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) y, a continuación, llama a la [**función GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) para mostrar el cuadro de diálogo.
 
-En este ejemplo, el miembro **lpstrFilter** es un puntero a un búfer que especifica dos filtros de nombre de archivo que el usuario puede seleccionar para limitar los nombres de archivo que se muestran. El búfer contiene una matriz de cadenas terminada en un doble nulo, en la que cada par de cadenas especifica un filtro. El miembro **nFilterIndex** especifica que el primer patrón se usa cuando se crea el cuadro de diálogo.
+En este ejemplo, el miembro **lpstrFilter** es un puntero a un búfer que especifica dos filtros de nombre de archivo que el usuario puede seleccionar para limitar los nombres de archivo que se muestran. El búfer contiene una matriz terminada en doble null de cadenas en la que cada par de cadenas especifica un filtro. El **miembro nFilterIndex** especifica que se usa el primer patrón cuando se crea el cuadro de diálogo.
 
-En este ejemplo se establecen las marcas **OFN \_ PATHMUSTEXIST** y **OFN \_ FILEMUSTEXIST** en el miembro **Flags** . Estas marcas hacen que el cuadro de diálogo Compruebe, antes de que se devuelva, que la ruta de acceso y el nombre de archivo especificados por el usuario existen realmente.
+En este ejemplo se establecen **las marcas \_ OFN PATHMUSTEXIST** **y OFN \_ FILEMUSTEXIST** en el **miembro Flags.** Estas marcas hacen que el cuadro de diálogo compruebe, antes de devolver, que la ruta de acceso y el nombre de archivo especificados por el usuario existen realmente.
 
-La función [**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) devuelve **true** si el usuario hace clic en el botón **Aceptar** y existe la ruta de acceso y el nombre de archivo especificados. En este caso, el búfer señalado por el miembro **lpstrFile** contiene la ruta de acceso y el nombre de archivo. En el código de ejemplo se utiliza esta información en una llamada a la función para abrir el archivo.
+La [**función GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) devuelve **TRUE si** el usuario hace clic en el botón **Aceptar** y existe la ruta de acceso y el nombre de archivo especificados. En este caso, el búfer al que apunta el **miembro lpstrFile** contiene la ruta de acceso y el nombre de archivo. El código de ejemplo usa esta información en una llamada a la función para abrir el archivo.
 
-Aunque este ejemplo no establece la marca **del \_ Explorador de OFN** , sigue mostrando el cuadro de diálogo **abrir** de estilo de explorador predeterminado. Sin embargo, si desea proporcionar un procedimiento de enlace o una plantilla personalizada y desea la interfaz de usuario del explorador, debe establecer la marca **OFN \_ Explorer** .
+Aunque en este ejemplo no se establece la **marca OFN \_ EXPLORER,** todavía se muestra el cuadro de diálogo Abrir de estilo **explorador** predeterminado. Sin embargo, si desea proporcionar un procedimiento de enlace o una plantilla personalizada y desea la interfaz de usuario del Explorador, debe establecer la **marca OFN \_ EXPLORER.**
 
 > [!Note]  
 > En el lenguaje de programación C, una cadena entre comillas termina en NULL.
@@ -163,11 +163,11 @@ if (GetOpenFileName(&ofn)==TRUE)
 
 ## <a name="displaying-the-print-dialog-box"></a>Mostrar el cuadro de diálogo Imprimir
 
-En este tema se describe el código de ejemplo que muestra un cuadro de diálogo **Imprimir** para que un usuario pueda seleccionar las opciones de impresión de un documento. En primer lugar, el código de ejemplo Inicializa una estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) y, a continuación, llama a la función [**PRINTDLG**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) para mostrar el cuadro de diálogo.
+En este tema se describe el código de ejemplo que muestra un **cuadro de** diálogo Imprimir para que un usuario pueda seleccionar opciones para imprimir un documento. El código de ejemplo inicializa primero una [**estructura PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) y, a continuación, llama a [**la función PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) para mostrar el cuadro de diálogo.
 
-En este ejemplo se establece la marca **PD \_ RETURNDC** en el miembro **Flags** de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) . Esto hace que [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) devuelva un identificador de contexto de dispositivo a la impresora seleccionada en el miembro **HDC** . Puede utilizar el identificador para representar la salida en la impresora.
+En este ejemplo se establece **la marca \_ PD RETURNDC** en **el miembro Flags** de la [**estructura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) Esto hace [**que PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) devuelva un identificador de contexto de dispositivo a la impresora seleccionada en el **miembro hDC.** Puede usar el identificador para representar la salida en la impresora.
 
-En la entrada, el código de ejemplo establece los miembros **hDevMode** y **hDevNames** en **null**. Si la función devuelve **true**, estos miembros devuelven los identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario e información sobre la impresora. Puede usar esta información para preparar la salida que se va a enviar a la impresora seleccionada.
+En la entrada, el código de ejemplo establece los **miembros hDevMode** y **hDevNames** en **NULL.** Si la función devuelve **TRUE**, estos miembros devuelven identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario y la información sobre la impresora. Puede usar esta información para preparar la salida que se enviará a la impresora seleccionada.
 
 
 ```
@@ -200,13 +200,13 @@ if (PrintDlg(&pd)==TRUE)
 
 ## <a name="using-the-print-property-sheet"></a>Usar la hoja de propiedades imprimir
 
-En este tema se describe el código de ejemplo que muestra una hoja de propiedades de **impresión** para que un usuario pueda seleccionar las opciones de impresión de un documento. En primer lugar, el código de ejemplo Inicializa una estructura [**PRINTDLGEX**](/windows/win32/api/commdlg/ns-commdlg-printdlgexa) y, a continuación, llama a la función [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) para mostrar la hoja de propiedades.
+En este tema se describe el código de ejemplo que muestra una **hoja** de propiedades Imprimir para que un usuario pueda seleccionar opciones para imprimir un documento. El código de ejemplo inicializa primero una [**estructura PRINTDLGEX**](/windows/win32/api/commdlg/ns-commdlg-printdlgexa) y, a continuación, llama a [**la función PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) para mostrar la hoja de propiedades.
 
-El código de ejemplo establece la marca **PD \_ RETURNDC** en el miembro **Flags** de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) . Esto hace que la función [**PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) devuelva un identificador de contexto de dispositivo a la impresora seleccionada en el miembro **HDC** .
+El código de ejemplo establece la **marca \_ PD RETURNDC** en el **miembro Flags** de la [**estructura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) Esto hace que [**la función PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) devuelva un identificador de contexto de dispositivo a la impresora seleccionada en el **miembro hDC.**
 
-En la entrada, el código de ejemplo establece los miembros **hDevMode** y **hDevNames** en **null**. Si la función devuelve los valores **\_ correctos**, estos miembros devuelven los identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario e información sobre la impresora. Puede usar esta información para preparar la salida que se va a enviar a la impresora seleccionada.
+En la entrada, el código de ejemplo establece los **miembros hDevMode** y **hDevNames** en **NULL.** Si la función devuelve **S \_ OK**, estos miembros devuelven identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario y la información sobre la impresora. Puede usar esta información para preparar la salida que se enviará a la impresora seleccionada.
 
-Una vez completada la operación de impresión, el código de ejemplo libera los búferes [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea), [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames)y [**PRINTPAGERANGE**](/windows/win32/api/commdlg/ns-commdlg-printpagerange) y llama a la función [**DeleteDC**](/windows/desktop/api/wingdi/nf-wingdi-deletedc) para eliminar el contexto del dispositivo.
+Una vez completada la operación de impresión, el código de ejemplo libera los búferes [**DEVMODE,**](/windows/win32/api/wingdi/ns-wingdi-devmodea) [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames)e [**PRINTPAGERANGE**](/windows/win32/api/commdlg/ns-commdlg-printpagerange) y llama a la [**función DeleteDC**](/windows/desktop/api/wingdi/nf-wingdi-deletedc) para eliminar el contexto del dispositivo.
 
 
 ```
@@ -273,13 +273,13 @@ HRESULT DisplayPrintPropertySheet(HWND hWnd)
 
 ## <a name="setting-up-the-printed-page"></a>Configuración de la página impresa
 
-En este tema se describe el código de ejemplo que muestra un cuadro de diálogo **Configurar página** para que un usuario pueda seleccionar los atributos de la página impresa, como el tipo de papel, el origen del papel, la orientación de la página y los márgenes de página. En primer lugar, el código de ejemplo Inicializa una estructura [**PAGESETUPDLG**](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlga) y, a continuación, llama a la función [**PAGESETUPDLG**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) para mostrar el cuadro de diálogo.
+En este tema se describe  el código de ejemplo que muestra un cuadro de diálogo Configuración de página para que un usuario pueda seleccionar los atributos de la página impresa, como el tipo de papel, el origen del papel, la orientación de la página y los márgenes de página. El código de ejemplo inicializa primero una [**estructura PAGESETUPDLG**](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlga) y, a continuación, llama a la [**función PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) para mostrar el cuadro de diálogo.
 
-En este ejemplo se establece la marca de **\_ márgenes PSD** en el miembro **Flags** y se usa el miembro **rtMargin** para especificar los valores de margen iniciales. Establece la marca **de \_ INTHOUSANDTHSOFINCHES PSD** para asegurarse de que el cuadro de diálogo expresa las dimensiones de los márgenes en milésimas de pulgada.
+En este ejemplo se establece la marca **\_ PSD MARGINS** en el **miembro Flags** y se usa el **miembro rtMargin** para especificar los valores de margen iniciales. Establece la **marca PSD \_ INTHOUSANDTHSOFINCHES** para asegurarse de que el cuadro de diálogo expresa las dimensiones de margen en milésimas de pulgada.
 
-En la entrada, el código de ejemplo establece los miembros **hDevMode** y **hDevNames** en **null**. Si la función devuelve **true**, la función utiliza estos miembros para devolver los identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario e información sobre la impresora. Puede usar esta información para preparar la salida que se va a enviar a la impresora seleccionada.
+En la entrada, el código de ejemplo establece los **miembros hDevMode** y **hDevNames** en **NULL.** Si la función devuelve **TRUE**, la función usa estos miembros para devolver identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario y la información sobre la impresora. Puede usar esta información para preparar la salida que se va a enviar a la impresora seleccionada.
 
-En el ejemplo siguiente también se habilita un procedimiento de enlace [**PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) para personalizar el dibujo del contenido de la página de ejemplo.
+En el ejemplo siguiente también se habilita [**un procedimiento de enlace PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) para personalizar el dibujo del contenido de la página de ejemplo.
 
 
 ```
@@ -308,7 +308,7 @@ if (PageSetupDlg(&psd)==TRUE)
 
 
 
-En el ejemplo siguiente se muestra un procedimiento de enlace [**PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) de ejemplo que dibuja el rectángulo de margen en el área de la página de ejemplo:
+En el ejemplo siguiente se muestra un procedimiento de enlace [**PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) de ejemplo que dibuja el rectángulo de margen en el área de página de ejemplo:
 
 
 ```
@@ -350,17 +350,17 @@ BOOL CALLBACK PaintHook(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 ## <a name="finding-text"></a>Buscar texto
 
-En este tema se describe el código de ejemplo que muestra y administra un cuadro de diálogo **Buscar** para que el usuario pueda especificar los parámetros de una operación de búsqueda. El cuadro de diálogo envía mensajes al procedimiento de ventana para que pueda realizar la operación de búsqueda.
+En este tema se describe el  código de ejemplo que muestra y administra un cuadro de diálogo Buscar para que el usuario pueda especificar los parámetros de una operación de búsqueda. El cuadro de diálogo envía mensajes al procedimiento de ventana para que pueda realizar la operación de búsqueda.
 
-El código para mostrar y administrar un cuadro de diálogo **reemplazar** es similar, salvo que usa la función [**ReplaceText**](/windows/desktop/api/Commdlg/nf-commdlg-replacetexta) para mostrar el cuadro de diálogo. El cuadro de diálogo **reemplazar** también envía mensajes en respuesta a los clics del usuario en los botones **reemplazar** y **reemplazar todo** .
+El código para mostrar y administrar **un** cuadro de diálogo Reemplazar es similar, salvo que usa la [**función ReplaceText**](/windows/desktop/api/Commdlg/nf-commdlg-replacetexta) para mostrar el cuadro de diálogo. El **cuadro de** diálogo Reemplazar también envía mensajes en respuesta a los clics del usuario en los botones **Reemplazar** **y** Reemplazar todo.
 
-Para usar el cuadro de diálogo **Buscar** o **reemplazar** , debe realizar tres tareas independientes:
+Para usar el **cuadro de** **diálogo** Buscar o reemplazar, debe realizar tres tareas independientes:
 
-1.  Obtiene un identificador de mensaje para el mensaje registrado de [**FINDMSGSTRING**](findmsgstring.md) .
+1.  Obtenga un identificador de mensaje para el [**mensaje registrado findmsgstring.**](findmsgstring.md)
 2.  Mostrar el cuadro de diálogo.
-3.  Procesa los mensajes [**FINDMSGSTRING**](findmsgstring.md) cuando el cuadro de diálogo está abierto.
+3.  [**Procese mensajes FINDMSGSTRING**](findmsgstring.md) cuando el cuadro de diálogo esté abierto.
 
-Al inicializar la aplicación, llame a la función [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener un identificador de mensaje para el mensaje registrado [**FINDMSGSTRING**](findmsgstring.md) .
+Al inicializar la aplicación, llame a [**la función RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener un identificador de mensaje para el [**mensaje registrado de FINDMSGSTRING.**](findmsgstring.md)
 
 
 ```
@@ -371,7 +371,7 @@ uFindReplaceMsg = RegisterWindowMessage(FINDMSGSTRING);
 
 
 
-Para mostrar un cuadro de diálogo **Buscar** , primero inicialice una estructura [**FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) y, a continuación, llame a la función [**FindText**](/windows/desktop/api/Commdlg/nf-commdlg-findtexta) . Tenga en cuenta que la estructura **FINDREPLACE** y el búfer de la cadena de búsqueda deben ser una variable global o estática para que no salgan del ámbito antes de que se cierre el cuadro de diálogo. Debe establecer el miembro **hwndOwner** para especificar la ventana que recibe los mensajes registrados. Después de crear el cuadro de diálogo, puede moverlo o manipularlo mediante el identificador devuelto.
+Para mostrar un **cuadro de** diálogo Buscar, inicialice primero una [**estructura FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) y, a continuación, llame a la [**función FindText.**](/windows/desktop/api/Commdlg/nf-commdlg-findtexta) Tenga en cuenta que la estructura **FINDREPLACE** y el búfer de la cadena de búsqueda deben ser una variable global o estática para que no salga del ámbito antes de que se cierre el cuadro de diálogo. Debe establecer el miembro **hwndOwner para** especificar la ventana que recibe los mensajes registrados. Después de crear el cuadro de diálogo, puede moverlo o manipularlo mediante el identificador devuelto.
 
 
 ```
@@ -393,9 +393,9 @@ hdlg = FindText(&fr);
 
 
 
-Cuando el cuadro de diálogo está abierto, el bucle de mensajes principal debe incluir una llamada a la función [**IsDialogMessage**](/windows/desktop/api/Winuser/nf-winuser-isdialogmessagea) . Pase un identificador al cuadro de diálogo como parámetro en la llamada a **IsDialogMessage** . Esto garantiza que el cuadro de diálogo procesa correctamente los mensajes del teclado.
+Cuando el cuadro de diálogo está abierto, el bucle de mensajes principal debe incluir una llamada a la [**función IsDialogMessage.**](/windows/desktop/api/Winuser/nf-winuser-isdialogmessagea) Pase un identificador al cuadro de diálogo como parámetro en la **llamada a IsDialogMessage.** Esto garantiza que el cuadro de diálogo procese correctamente los mensajes de teclado.
 
-Para supervisar los mensajes enviados desde el cuadro de diálogo, el procedimiento de ventana debe comprobar el mensaje registrado [**FINDMSGSTRING**](findmsgstring.md) y procesar los valores pasados en la estructura [**FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) , como en el ejemplo siguiente.
+Para supervisar los mensajes enviados desde el cuadro de diálogo, el procedimiento de ventana debe comprobar el mensaje registrado de [**FINDMSGSTRING**](findmsgstring.md) y procesar los valores pasados en la estructura [**FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) como en el ejemplo siguiente.
 
 
 ```
