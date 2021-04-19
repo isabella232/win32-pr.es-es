@@ -4,12 +4,12 @@ description: El escenario de la directiva IPsec del modo de transporte requiere 
 ms.assetid: 303f7cdc-fb7a-4e5c-8291-cadcb45035cb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfb927aff1b3f0e3c7fd13a192f0fcb18fc3ec45
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8335854c80850e44b860530bbebab05aa3f14273
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420626"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314938"
 ---
 # <a name="transport-mode"></a>modo de transporte
 
@@ -33,6 +33,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
      
 
 2.  Para cada uno de los contextos agregados en el paso 1, agregue un filtro con las siguientes propiedades. 
+
     | Propiedad Filter        | Value                                            |
     |------------------------|--------------------------------------------------|
     | Condiciones de filtrado   | Vacía. Todo el tráfico coincidirá con el filtro.        |
@@ -52,6 +53,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
      
 
 2.  Para cada uno de los contextos agregados en el paso 1, agregue un filtro con las siguientes propiedades. 
+
     | Propiedad Filter        | Value                                            |
     |------------------------|--------------------------------------------------|
     | Condiciones de filtrado   | Vacía. Todo el tráfico coincidirá con el filtro.        |
@@ -62,6 +64,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 **En el nivel de FWPM de \_ \_ transporte de entrada \_ \_ V {4 \| 6} configuración de reglas de filtrado por paquete de entrada**  
 
 1.  Agregue un filtro con las siguientes propiedades. 
+
     | Propiedad Filter                                                   | Value                                                         |
     |-------------------------------------------------------------------|---------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type) |
@@ -70,6 +73,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 
         
 2.  Excluya el tráfico ICMP de IPsec agregando un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                  | Value                                                                     |
     |------------------------------------------------------------------|---------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                               |
@@ -82,6 +86,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 **En el nivel de FWPM de \_ \_ transporte de salida \_ \_ V {4 \| 6} configuración de reglas de filtrado por paquetes salientes**  
 
 1.  Agregue un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                   | Value                                              |
     |-------------------------------------------------------------------|----------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                        |
@@ -90,6 +95,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 
         
 2.  Excluya el tráfico ICMP de IPsec agregando un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                   | Value                                                                  |
     |-------------------------------------------------------------------|------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                            |

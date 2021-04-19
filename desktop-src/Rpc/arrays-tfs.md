@@ -1,15 +1,15 @@
 ---
-title: Matrices (RPC)
+title: Matrices (RPC) (TFS)
 description: Entre las categorías de matriz de llamada a procedimiento remoto (RPC) se incluyen el tamaño fijo, el cumplimiento, la estructura variable, la variable y la complejidad.
 ms.assetid: 7144ec87-90f2-463a-80e4-28cb4771325f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b2c06d8fd5c80294e130424fbf91093145100b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d6d564a2dfd838006be1667343b14a57bdaf4b07
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103995869"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388817"
 ---
 # <a name="arrays-rpc"></a>Matrices (RPC)
 
