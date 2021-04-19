@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CDN_FOLDERCHANGE (commdlg. h)
-description: Enviado por un cuadro de diálogo abrir o guardar como del explorador cuando se abre una nueva carpeta.
+title: CDN_FOLDERCHANGE de notificación (Commdlg.h)
+description: Enviado por un cuadro de diálogo Abrir o Guardar como de estilo explorador cuando se abre una nueva carpeta.
 ms.assetid: 864ab80d-cd99-4dd6-8aff-49beed246e53
 keywords:
-- CDN_FOLDERCHANGE cuadros de diálogo código de notificación
+- CDN_FOLDERCHANGE de diálogo del código de notificación
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c93bd37afa44e7fc5ca81d928974f56bf80d1b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b39075bddbd191f60a9f9bcbad745e213fe9a978
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150374"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590872"
 ---
-# <a name="cdn_folderchange-notification-code"></a>\_Código de notificación FOLDERCHANGE de CDN
+# <a name="cdn_folderchange-notification-code"></a>Código de notificación FOLDERCHANGE de CDN \_
 
-\[A partir de Windows Vista, los cuadros de diálogo **abrir** y **Guardar como** común se han sustituido por el [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Se recomienda usar la API de cuadros de diálogo de elementos comunes en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo comunes.\]
+\[A partir de Windows Vista, **los** cuadros **de** diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo de elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Enviado por un cuadro de diálogo **abrir** o **Guardar como** del explorador cuando se abre una nueva carpeta.
+Enviado por un cuadro de **diálogo** Abrir o Guardar **como** de estilo explorador cuando se abre una nueva carpeta.
 
-El procedimiento de enlace de [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje de [**\_ notificación de WM**](../controls/wm-notify.md) .
+El [*procedimiento de enlace OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**imnotify**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . La estructura **imnotify** contiene una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cuyo miembro de **código** indica el mensaje de notificación FOLDERCHANGE de la **red CDN \_** .
+Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **estructura OFNOTIFY contiene** una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cuyo miembro de código indica el mensaje de notificación **\_ FOLDERCHANGE de la red CDN.** 
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Se omite el valor devuelto.
 
 ## <a name="remarks"></a>Observaciones
 
-El sistema envía esta notificación solo si el cuadro de diálogo se creó con el valor del **\_ Explorador OFN** .
+El sistema envía esta notificación solo si el cuadro de diálogo se creó con el **valor OFN \_ EXPLORER.**
 
-Para obtener la ruta de acceso de la carpeta recién abierta, el procedimiento de enlace puede enviar el mensaje de la [**\_ GETFOLDERPATH de CDM**](cdm-getfolderpath.md) al cuadro de diálogo.
+Para obtener la ruta de acceso de la carpeta recién abierta, el procedimiento de enlace puede enviar el mensaje [**\_ GETFOLDERPATH**](cdm-getfolderpath.md) de CDM al cuadro de diálogo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,11 +73,11 @@ Para obtener la ruta de acceso de la carpeta recién abierta, el procedimiento d
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -96,13 +96,13 @@ Para obtener la ruta de acceso de la carpeta recién abierta, el procedimiento d
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
 </dt> <dt>
 
-[**No NOTIFICAr**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
+[**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  
