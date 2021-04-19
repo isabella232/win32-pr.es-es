@@ -4,12 +4,12 @@ description: El escenario de directiva IPsec de cifrado garantizado requiere cif
 ms.assetid: 68758f0c-f134-4b7a-820a-313e2a82f280
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7120e9cb794b6010e16dd5f61accb07ca0ab9cb8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: dbffa3d78a9e178850f3afaa4d6b7fa9831be875
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420665"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314648"
 ---
 # <a name="guaranteed-encryption"></a>Cifrado garantizado
 
@@ -35,6 +35,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
      
 
 2.  Para cada uno de los contextos agregados en el paso 1, agregue un filtro con las siguientes propiedades.
+
     | Propiedad Filter        | Value                                            |
     |------------------------|--------------------------------------------------|
     | Condiciones de filtrado   | Vacía. Todo el tráfico coincidirá con el filtro.        |
@@ -54,6 +55,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
      
 
 2.  Para cada uno de los contextos agregados en el paso 1, agregue un filtro con las siguientes propiedades.
+
     | Propiedad Filter        | Value                                            |
     |------------------------|--------------------------------------------------|
     | Condiciones de filtrado   | Vacía. Todo el tráfico coincidirá con el filtro.        |
@@ -64,6 +66,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 **En el nivel de FWPM de \_ \_ transporte de entrada \_ \_ V {4 \| 6} configuración de reglas de filtrado por paquete de entrada**  
 
 1.  Agregue un filtro con las siguientes propiedades. 
+
     | Propiedad Filter                                               | Value                                                                                              |
     |---------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
     | Condición de FWPM estado de \_ \_ filtrado de \_ tipo de dirección IP local \_ \_ | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
@@ -73,6 +76,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 
         
 2.  Excluya el tráfico ICMP de IPsec agregando un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                   | Value                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                                |
@@ -85,6 +89,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 **En el nivel de FWPM de \_ \_ transporte de salida \_ \_ V {4 \| 6} configuración de reglas de filtrado por paquetes salientes**  
 
 1.  Agregue un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                   | Value                                                                                     |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                                               |
@@ -94,6 +99,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 
         
 2.  Excluya el tráfico ICMP de IPsec agregando un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                   | Value                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                                |
@@ -106,6 +112,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 **En la capa de FWPM, la \_ \_ \_ \_ recepción de autenticación Ale \_ acepta \_ V {4 \| 6} configuración de reglas de filtrado por conexión de entrada**  
 
 1.  Agregue un filtro con las siguientes propiedades. Este filtro solo permitirá intentos de conexión entrantes si están protegidos por IPsec. 
+
     | Propiedad Filter                                                   | Value                                                        |
     |-------------------------------------------------------------------|--------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                  |
@@ -114,6 +121,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 
         
 2.  Excluya el tráfico ICMP de IPsec agregando un filtro con las siguientes propiedades.
+
     | Propiedad Filter                                                   | Value                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                                |
@@ -123,6 +131,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 
         
 3.  Agregue un filtro con las siguientes propiedades. Este filtro solo permitirá conexiones entrantes al puerto TCP 5555 si están cifrados.
+
     | Propiedad Filter                                                   | Value                                                                                                 |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                                                           |
@@ -137,6 +146,7 @@ Para implementar este ejemplo mediante programación, utilice la siguiente confi
 **En la capa de FWPM, \_ \_ \_ conexión Ale \_ \_ V {4 \| 6} configuración de reglas de filtrado por conexión salientes**
 
 -   Agregue un filtro con las siguientes propiedades. Este filtro solo permitirá las conexiones salientes desde el puerto TCP 5555 si están cifradas.
+
     | Propiedad Filter                                                   | Value                                                                                                 |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
     | **FWPM \_ Condición de filtrado de \_ \_ \_ \_ tipo de dirección local IP de condición** | NlatUnicast                                                                                           |
