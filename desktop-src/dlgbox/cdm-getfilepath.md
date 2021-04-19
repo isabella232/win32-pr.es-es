@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CDM_GETFILEPATH (commdlg. h)
-description: Recupera la ruta de acceso y el nombre de archivo del archivo seleccionado en un cuadro de diálogo abrir o guardar como de estilo del explorador.
+title: CDM_GETFILEPATH mensaje (Commdlg.h)
+description: Recupera la ruta de acceso y el nombre de archivo del archivo seleccionado en un cuadro de diálogo Abrir o Guardar como de estilo explorador.
 ms.assetid: fad8c5e2-9838-45a8-8c51-4326c989d939
 keywords:
-- CDM_GETFILEPATH cuadros de diálogo de mensaje
+- CDM_GETFILEPATH diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b7cc278d1d5a2305b3d2a311ce9c82886f9b7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cdb7739cd2ab66362e18cc70f9937e75f80a82d9
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996868"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590922"
 ---
-# <a name="cdm_getfilepath-message"></a>\_Mensaje GETFILEPATH CDM
+# <a name="cdm_getfilepath-message"></a>Mensaje \_ GETFILEPATH de CDM
 
-\[A partir de Windows Vista, los cuadros de diálogo **abrir** y **Guardar como** común se han sustituido por el [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Se recomienda usar la API de cuadros de diálogo de elementos comunes en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo comunes.\]
+\[A partir de Windows Vista, **los** cuadros **de** diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo de elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Recupera la ruta de acceso y el nombre de archivo del archivo seleccionado en un cuadro de diálogo **abrir** o **Guardar como** de estilo del explorador. El cuadro de diálogo se debe haber creado con la marca **OFN \_ Explorer** ; de lo contrario, se produce un error en el mensaje.
+Recupera la ruta de acceso y el nombre  de archivo del archivo seleccionado en un cuadro de diálogo Abrir o Guardar **como** de estilo explorador. El cuadro de diálogo se debe haber creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -43,7 +43,7 @@ Recupera la ruta de acceso y el nombre de archivo del archivo seleccionado en un
 *wParam* 
 </dt> <dd>
 
-Tamaño, en caracteres, del búfer *lParam* . En la versión ANSI, es el número de bytes; para la versión Unicode, es el número de caracteres.
+Tamaño, en caracteres, del búfer *lParam.* Para la versión ANSI, este es el número de bytes; para la versión Unicode, este es el número de caracteres.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntero al búfer que recibe el nombre de archivo y la ruta de acceso.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se realiza correctamente, el valor devuelto es el tamaño, en caracteres, del nombre de archivo y la cadena de ruta de acceso, incluido el carácter nulo de terminación. Es el número de bytes o caracteres copiados en el búfer o el tamaño de búfer necesario si el búfer es demasiado pequeño.
+Si el mensaje se realiza correctamente, el valor devuelto es el tamaño, en caracteres, del nombre de archivo y la cadena de ruta de acceso, incluido el carácter NULL final. Este es el número de bytes o caracteres copiados en el búfer o el tamaño de búfer necesario si el búfer es demasiado pequeño.
 
 Si se produce un error, el valor devuelto es menor que cero.
 
@@ -76,11 +76,11 @@ int CommDlg_OpenSave_GetFilePath(hwnd, lparam, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -96,10 +96,10 @@ int CommDlg_OpenSave_GetFilePath(hwnd, lparam, wparam);
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CDM_GETFOLDERIDLIST (commdlg. h)
-description: Recupera la dirección de la lista de identificadores de elemento correspondiente a la carpeta que tiene abierto un cuadro de diálogo de estilo de explorador abrir o guardar como.
+title: CDM_GETFOLDERIDLIST mensaje (Commdlg.h)
+description: Recupera la dirección de la lista de identificadores de elemento correspondiente a la carpeta que un cuadro de diálogo Abrir o Guardar como del estilo explorador tiene abierto actualmente.
 ms.assetid: 9d2d2c35-ff1d-43de-ab0b-c96e0f1e9e24
 keywords:
-- CDM_GETFOLDERIDLIST cuadros de diálogo de mensaje
+- CDM_GETFOLDERIDLIST cuadro de diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4ac82a628d6fcace6863abb30e5703af02a948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24d16b53c90c3efc874b8aeabd1b97938a1b21ec
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803554"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590912"
 ---
-# <a name="cdm_getfolderidlist-message"></a>\_Mensaje GETFOLDERIDLIST CDM
+# <a name="cdm_getfolderidlist-message"></a>Mensaje \_ GETFOLDERIDLIST de CDM
 
-\[A partir de Windows Vista, los cuadros de diálogo **abrir** y **Guardar como** común se han sustituido por el [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Se recomienda usar la API de cuadros de diálogo de elementos comunes en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo comunes.\]
+\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
-Recupera la dirección de la lista de identificadores de elemento correspondiente a la carpeta que tiene abierto un cuadro de diálogo de estilo de explorador **abrir** o **Guardar como** . El cuadro de diálogo se debe haber creado con la marca **OFN \_ Explorer** ; de lo contrario, se produce un error en el mensaje.
+Recupera la dirección de la lista de identificadores de  elemento correspondiente a la carpeta que un cuadro de diálogo Abrir o Guardar **como** del estilo explorador tiene abierto actualmente. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -43,7 +43,7 @@ Recupera la dirección de la lista de identificadores de elemento correspondient
 *wParam* 
 </dt> <dd>
 
-Tamaño, en bytes, del búfer *lParam* .
+Tamaño, en bytes, del búfer *lParam.*
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntero al búfer que recibe la lista de identificadores de elemento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se realiza correctamente, el valor devuelto es el tamaño, en bytes, de la lista de identificadores de elemento. Es el número de bytes copiados en el búfer o el tamaño de búfer necesario si el búfer es demasiado pequeño.
+Si el mensaje se realiza correctamente, el valor devuelto es el tamaño, en bytes, de la lista de identificadores de elemento. Este es el número de bytes copiados en el búfer o el tamaño de búfer necesario si el búfer es demasiado pequeño.
 
 Si se produce un error, el valor devuelto es menor que cero.
 
@@ -76,11 +76,11 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -96,10 +96,10 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  
