@@ -4,12 +4,12 @@ description: El sombreado de velocidad variable &mdash; o el sombreado de píxel
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 04/08/2019
-ms.openlocfilehash: be2367ceb72d2e693d86b6f279b627f3bffa9e1c
-ms.sourcegitcommit: 628fda3e63fd1d513ce9a5f55be8bbc4af4b2a4b
+ms.openlocfilehash: 2f207cddee978915788291fc0ffe55160e6a93c6
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104549191"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380769"
 ---
 # <a name="variable-rate-shading-vrs"></a>Sombreado de velocidad variable (VRS)
 
@@ -34,14 +34,14 @@ Una API de sombreado grueso permite a la aplicación especificar el número de p
 
 Esta es una tabla que describe qué nivel de MSAA es compatible con el tamaño de píxel grueso. Algunos no se admiten en ninguna plataforma; mientras que otros se habilitan condicionalmente en función de una capacidad (*AdditionalShadingRatesSupported*), indicada por "Cap".
 
-![coarsePixelSizeSupport](images/CoarsePixelSizeSupport.PNG "Tamaños de píxeles gruesos")
+![La tabla muestra el tamaño de píxel grueso para los niveles M S A.](images/CoarsePixelSizeSupport.PNG "Tamaños de píxeles gruesos")
 
 En el caso de los niveles de características que se describen en la sección siguiente, no hay una combinación de tamaño de píxeles grueso y de número de muestras, donde el hardware necesita realizar un seguimiento de más de 16 muestras por invocación del sombreador de píxeles. Estas combinaciones están sombreadas en semitono en la tabla anterior.
 
 ## <a name="feature-tiers"></a>Niveles de características
 Hay dos niveles para la implementación de VRS y dos funcionalidades que puede consultar. Cada nivel se describe con mayor detalle después de la tabla.
 
-![niveles](images/Tiers.PNG "Niveles de VRS")
+![En la tabla se muestran las características disponibles en los niveles 1 y 2.](images/Tiers.PNG "Niveles de VRS")
 
 ### <a name="tier-1"></a>Nivel 1
 - La tasa de sombreado solo se puede especificar para cada dibujo; no es más granular que eso.
@@ -131,7 +131,7 @@ La manera esperada en la que se rellenan los datos de imagen de espacio de panta
 
 Al crear la imagen de espacio de pantalla, se permiten estas marcas.
 
-- NONE
+- Ninguno
 - ALLOW_UNORDERED_ACCESS
 - DENY_SHADER_RESOURCE
 
@@ -175,7 +175,7 @@ Si se establece VS o GS `SV_ShadingRate` , pero VRS no está habilitado, la conf
 ### <a name="combining-shading-rate-factors"></a>Combinación de factores de velocidad de sombreado
 Los distintos orígenes de la tasa de sombreado se aplican en secuencia mediante este diagrama.
 
-![combinadores](images/Combiners.PNG "Separadores de sombreado")
+![En el diagrama se muestra un estado de canalización, con la etiqueta A, con la provocación de la tasa de sombreado de vértices, etiquetada como B, aplicada en un combinador y, a continuación, la tasa de sombreado basada en imágenes, etiquetada B, aplicada a un combinador.](images/Combiners.PNG "Separadores de sombreado")
 
 Cada par de A y B se combina mediante un combinador.
 
@@ -352,7 +352,7 @@ Para valores de cinco bits.
 |        00101 |0,3125    |5 / 16      |
 |        00110 |0,375     |6 / 16      |
 |        00111 |0,4375    |7 / 16      |
-|        01000 |0.5       |8 / 16      |
+|        01000 |0,5       |8 / 16      |
 |        01001 |0,5625    |9 / 16      |
 |        01010 |0,625     |10 / 16     |
 |        01011 |0,6875    |11 / 16     |
@@ -405,7 +405,7 @@ Para valores de seis bits.
 |       000101 |0,3125    |5 / 16      |
 |       000110 |0,375     |6 / 16      |
 |       000111 |0,4375    |7 / 16      |
-|       001000 |0.5       |8 / 16      |
+|       001000 |0,5       |8 / 16      |
 |       001001 |0,5625    |9 / 16      |
 |       001010 |0,625     |10 / 16     |
 |       001011 |0,6875    |11 / 16     |
@@ -447,7 +447,7 @@ Dada la compatibilidad de sombreado de píxeles generales con MSAA, el número d
 ### <a name="number-of-coverage-bits-needed"></a>Número de bits de cobertura necesarios
 En la tabla siguiente se indica el número de bits de cobertura necesarios para cada combinación de tamaño de píxel grueso y nivel de MSAA.
 
-![NumberOfCoverageBits](images/NumberOfCoverageBits.PNG "Bits de cobertura")
+![En la tabla se muestra el tamaño de píxeles grueso, el número de píxeles finos y M S A niveles.](images/NumberOfCoverageBits.PNG "Bits de cobertura")
 
 Como se indica en la tabla, no es posible usar los píxeles gruesos para escribir más de 16 muestras a la vez mediante la característica de sombreado de velocidad variable expuesta a través de Direct3D 12. Esta restricción se debe a las restricciones de Direct3D 12 con respecto a los niveles de MSAA permitidos con el tamaño de píxel grueso (consulte la tabla de la sección [con el sombreado de velocidad variable (VRS)](#with-variable-rate-shading-vrs) de este tema).
 
@@ -456,17 +456,17 @@ Los bits de la máscara de cobertura se adhieren a un orden bien definido. La m�
 
 En la tabla siguiente se muestra el formato de la máscara de cobertura para las combinaciones admitidas de tamaño de píxeles grueso y nivel de MSAA.
 
-![Coverage1x](images/Coverage1x.PNG "Cobertura en 1x")
+![La tabla muestra el tamaño de los píxeles gruesos, el diagrama de píxeles grueso y 1 x M S A un bit de cobertura.](images/Coverage1x.PNG "Cobertura en 1x")
 
 En la tabla siguiente se describen 2x píxeles de MSAA, donde cada píxel tiene dos muestras de índices 0 y 1.
 
 La posición de las etiquetas de las muestras en los píxeles es para fines ilustrativos y no transmite necesariamente las ubicaciones espaciales {X, Y} de los ejemplos en ese píxel; especialmente dado que las posiciones de ejemplo se pueden cambiar mediante programación. A los ejemplos se hace referencia mediante su índice de base 0.
 
-![Coverage2x](images/Coverage2x.PNG "Cobertura a 2x")
+![La tabla muestra el tamaño de los píxeles gruesos, el diagrama de píxeles grueso y 2 x M S A un bit de cobertura.](images/Coverage2x.PNG "Cobertura a 2x")
 
 En la tabla siguiente se muestran 4x píxeles de MSAA, donde cada píxel tiene cuatro muestras de índices 0, 1, 2 y 3.
 
-![Coverage4x](images/Coverage4x.PNG "Cobertura a 4x")
+![La tabla muestra el tamaño de los píxeles gruesos, el diagrama de píxeles grueso y 4 x M S A un bit de cobertura.](images/Coverage4x.PNG "Cobertura a 4x")
 
 ## <a name="discard"></a>Discard (Descartar)
 Cuando la semántica de HLSL `discard` se usa con sombreado de píxeles grueso, se descartan los píxeles gruesos.

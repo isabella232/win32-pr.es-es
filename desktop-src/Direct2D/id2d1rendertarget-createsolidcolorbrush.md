@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1RenderTarget CreateSolidColorBrush (D2d1. h)
-description: Crea un nuevo ID2D1SolidColorBrush que se puede usar para pintar áreas con un color sólido.
+title: Métodos ID2D1RenderTarget CreateSolidColorBrush (D2d1.h)
+description: Crea un nuevo OBJETO ID2D1SolidColorBrush que se puede usar para pintar áreas con un color sólido.
 ms.assetid: 3dbfe26f-cf36-47b0-925e-4934e0d7c390
 keywords:
-- Métodos de CreateSolidColorBrush Direct2D
+- Métodos CreateSolidColorBrush de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: db0cf0913bc347cb36ac44cbd1befd7edb418a90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f49876a5eb9d7700aeb347e5168ca3e8c1e239e0
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690161"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380629"
 ---
-# <a name="id2d1rendertargetcreatesolidcolorbrush-methods"></a>ID2D1RenderTarget:: CreateSolidColorBrush (métodos)
+# <a name="id2d1rendertargetcreatesolidcolorbrush-methods"></a>Métodos ID2D1RenderTarget::CreateSolidColorBrush
 
-Crea un nuevo [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que se puede usar para pintar áreas con un color sólido.
+Crea un nuevo [**OBJETO ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que se puede usar para pintar áreas con un color sólido.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,15 +29,15 @@ Crea un nuevo [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1re
 
 | Método                                                                                                                                                                                                           | Descripción                                                                                                                             |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateSolidColorBrush (D2D1 \_ \_ de COLOR F&, ID2D1SolidColorBrush \* \* )**](id2d1rendertarget-createsolidcolorbrush-ref-color-f-ptr-ptr-https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx)                                                      | Crea un nuevo [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que tiene el color especificado y una opacidad base de 1,0 f. <br/> |
-| [**CreateSolidColorBrush (D2D1 \_ color \_ F&, D2D1 \_ Brush \_ Properties&, ID2D1SolidColorBrush \* \* )**](id2d1rendertarget-createsolidcolorbrush-ref-color-f-ref-d2d1-brush-properties-ptr-ptr-https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx)   | Crea un nuevo [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que tiene el color y la opacidad especificados. <br/>                |
-| [**CreateSolidColorBrush (D2D1 \_ color \_ F \* , D2D1 \_ Brush \_ Properties \* , ID2D1SolidColorBrush \* \* )**](id2d1rendertarget-createsolidcolorbrush-ptr-color-f-ptr-d2d1-brush-properties-ptr-ptr-https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx) | Crea un nuevo [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que tiene el color y la opacidad especificados. <br/>                |
+| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ F&,ID2D1SolidColorBrush \* \* )**](https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx)                                                      | Crea un [**nuevo ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que tiene el color especificado y una opacidad base de 1,0f. <br/> |
+| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ F&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1SolidColorBrush \* \* )**](https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx)   | Crea un [**nuevo objeto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que tiene el color y la opacidad especificados. <br/>                |
+| [**CreateSolidColorBrush(D2D1 \_ COLOR F , \_ \* D2D1 \_ BRUSH PROPERTIES \_ \* ,ID2D1SolidColorBrush \* \* )**](https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx) | Crea un [**nuevo objeto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) que tiene el color y la opacidad especificados. <br/>                |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo, vea [Cómo crear un pincel de color sólido](how-to-create-a-solid-color-brush.md).
+Para obtener un ejemplo, [vea How to Create a Solid Color Brush](how-to-create-a-solid-color-brush.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,13 +45,13 @@ Para obtener un ejemplo, vea [Cómo crear un pincel de color sólido](how-to-cre
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ Para obtener un ejemplo, vea [Cómo crear un pincel de color sólido](how-to-cre
 [Información general sobre los pinceles](direct2d-brushes-overview.md)
 </dt> <dt>
 
-[Inicio rápido de Direct2D](getting-started-with-direct2d.md)
+[Guía de inicio rápido de Direct2D](getting-started-with-direct2d.md)
 </dt> </dl>
 
 �
