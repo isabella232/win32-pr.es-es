@@ -4,12 +4,12 @@ description: Un sombreador de cálculo es una fase de sombreador programable que
 ms.assetid: 02c1f98e-fdd6-49b0-b8b2-efbd472ab599
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67c890e63b468a993e0d08f678d2276d6ce2adad
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 485e83ab965f14342d235a07810f210e18aadc53
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103797217"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222873"
 ---
 # <a name="compute-shader-overview"></a>Información general del sombreador de cálculo
 
@@ -30,7 +30,7 @@ Si usa la API de Direct3D 11 y controladores actualizados, el hardware de Direct
 -   Solo se puede enlazar una vista de acceso sin ordenar al sombreador (el número de registros de D3D11 \_ CS \_ 4 \_ X \_ UAV \_ \_ es 1).
 -   Solo [RWStructuredBuffer](/windows/desktop/direct3dhlsl/sm5-object-rwstructuredbuffer)s y [RWByteAddressBuffer](/windows/desktop/direct3dhlsl/sm5-object-rwbyteaddressbuffer)s están disponibles como vistas de acceso desordenado.
 -   Un subproceso solo puede tener acceso a su propia región en la memoria de groupshared para escritura, aunque puede leer desde cualquier ubicación.
--   [SV \_](/previous-versions/windows/desktop/legacy/ff471569(v=vs.85)) Se debe usar GroupIndex o [SV \_ DispatchThreadID](/windows/desktop/direct3dhlsl/sv-dispatchthreadid) al tener acceso a la memoria **groupshared** para escritura.
+-   [SV \_](/previous-versions/windows/desktop/legacy/ff471569(v=vs.85)) Se debe usar GroupIndex o [SV \_ GroupThreadID](/windows/desktop/direct3dhlsl/sv-groupthreadid) al tener acceso a la memoria **groupshared** para escritura.
 -   La memoria de **Groupshared** está limitada a 16 KB por grupo.
 -   Un solo subproceso se limita a una región de 256 bytes de memoria **groupshared** para escritura.
 -   No hay instrucciones atómicas disponibles.

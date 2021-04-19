@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 06bf059aa110ae3795ea95bc74471b9e7c3f42b8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 2b570bee337f1cb61a03701236d31b5256010a1d
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103994841"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222793"
 ---
 # <a name="inline-format-conversion-reference"></a>Referencia de conversión de formato en línea
 
@@ -22,6 +22,8 @@ Esta sección contiene las siguientes secciones
 
 -   [Funciones](format-conversion-functions.md)
 -   [Estructuras](format-conversion-structures.md)
+
+> El encabezado D3DX_DXGIFormatConvert. INL se incluye en el SDK de DirectX heredado y se basa en la compatibilidad con XNAMath para C++. También se incluye en el paquete NuGet [Microsoft. DXSDK. D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) . La versión más reciente usa DirectXMath para la compatibilidad con C++ y todas las funciones se definen en el espacio de nombres de **DirectX** c++.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -33,10 +35,6 @@ Esta sección contiene las siguientes secciones
 [Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
-
-
-
-
+ 
