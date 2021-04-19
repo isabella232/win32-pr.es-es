@@ -4,19 +4,19 @@ ms.assetid: 1D2847A7-15E9-42E0-90EB-7F43E76D3E44
 title: Actualización de compatibilidad de disco de emulación de 512 bytes (512e)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94fbdce2937e2d121d892d8566755dfcb7f20f01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74b654473fa8be5fbea997bd063df2c1f898a7d1
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083425"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315008"
 ---
 # <a name="512-byte-emulation-512e-disk-compatibility-update"></a>Actualización de compatibilidad de disco de emulación de 512 bytes (512e)
 
 ## <a name="platform"></a>Plataforma
 
- **Clientes** : Windows Vista Windows \| 7 Windows \| 7 SP1  
-**Servidores** : windows Server 2008 \| Windows Server 2008 r2 \| Windows Server 2008 R2 SP1  
+ **Clientes** : Windows Vista, Windows 7, Windows 7 SP1  
+**Servidores** : windows Server 2008, windows Server 2008 R2 y windows Server 2008 R2 SP1  
 
 ## <a name="feature-impact"></a>Impacto en las características
 
