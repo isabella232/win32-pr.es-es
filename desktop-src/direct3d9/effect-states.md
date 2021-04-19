@@ -4,12 +4,12 @@ ms.assetid: b62a6ccc-a1ea-455c-9659-544d4bcaf6a2
 title: Estados de efectos (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 674e72d818cd280bfe75a2cb02733576bc68319e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1e208c0c7c14564a9967562ff2fd04a400cb7901
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104080004"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314768"
 ---
 # <a name="effect-states-direct3d-9"></a>Estados de efectos (Direct3D 9)
 
@@ -148,7 +148,7 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 <tr class="even">
 <td>AlphaBlendEnable</td>
 <td>bool</td>
-<td>Verdadero o Falso. Los mismos valores que D3DRS_ALPHABLENDENABLE en <a href="/windows/desktop/direct3d9/d3drenderstatetype"><strong>D3DRENDERSTATETYPE</strong></a>.</td>
+<td>True o False. Los mismos valores que D3DRS_ALPHABLENDENABLE en <a href="/windows/desktop/direct3d9/d3drenderstatetype"><strong>D3DRENDERSTATETYPE</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>AlphaFunc</td>
@@ -163,7 +163,7 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 <tr class="odd">
 <td>AlphaTestEnable</td>
 <td>dword</td>
-<td>Verdadero o Falso. Vea D3DRS_ALPHATESTENABLE.</td>
+<td>True o False. Vea D3DRS_ALPHATESTENABLE.</td>
 </tr>
 <tr class="even">
 <td>BlendOp</td>
@@ -188,7 +188,7 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 <tr class="even">
 <td>DitherEnable</td>
 <td>bool</td>
-<td>Verdadero o Falso. Los mismos valores que D3DRS_DITHERENABLE.</td>
+<td>True o False. Los mismos valores que D3DRS_DITHERENABLE.</td>
 </tr>
 <tr class="odd">
 <td>FillMode</td>
@@ -198,7 +198,7 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 <tr class="even">
 <td>LastPixel</td>
 <td>dword</td>
-<td>Verdadero o Falso. Vea D3DRS_LASTPIXEL.</td>
+<td>True o False. Vea D3DRS_LASTPIXEL.</td>
 </tr>
 <tr class="odd">
 <td>ShadeMode</td>
@@ -216,51 +216,56 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 <td>Los mismos valores que <a href="/windows/desktop/direct3d9/d3dblend"><strong>D3DBLEND</strong></a> sin el prefijo D3DBLEND_.</td>
 </tr>
 <tr class="even">
-<td>StencilEnable</td>
+<td>SRGBWriteEnable</td>
 <td>bool</td>
-<td>Verdadero o Falso. Los mismos valores que D3DRS_STENCILENABLE.</td>
+<td>True o False. Los mismos valores que D3DRS_SRGBWRITEENABLE.</td>
 </tr>
 <tr class="odd">
+<td>StencilEnable</td>
+<td>bool</td>
+<td>True o False. Los mismos valores que D3DRS_STENCILENABLE.</td>
+</tr>
+<tr class="even">
 <td>StencilFail</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="d3dstencilcaps.md">D3DSTENCILCAPS</a> sin el prefijo D3DSTENCILCAP_. Vea D3DRS_STENCILFAIL.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>StencilFunc</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="/windows/desktop/direct3d9/d3dcmpfunc"><strong>D3DCMPFUNC</strong></a> sin el prefijo D3DCMP_. Vea D3DRS_STENCILFUNC.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>StencilMask</td>
 <td>dword</td>
 <td>Los mismos valores que D3DRS_STENCILMASK.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>StencilPass</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="d3dstencilcaps.md">D3DSTENCILCAPS</a> sin el prefijo D3DSTENCILCAP_. Vea D3DRS_STENCILPASS.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>StencilRef</td>
 <td>int</td>
 <td>Los mismos valores que D3DRS_STENCILREF.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>StencilWriteMask</td>
 <td>dword</td>
 <td>Los mismos valores que D3DRS_STENCILWRITEMASK.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>StencilZFail</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="d3dstencilcaps.md">D3DSTENCILCAPS</a> sin el prefijo D3DSTENCILCAP_. Vea D3DRS_STENCILZFAIL.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>TextureFactor</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="d3dcolor.md"><strong>D3DCOLOR</strong></a>. Los mismos valores que D3DRS_TEXTUREFACTOR.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Wrap0 - Wrap15</td>
 <td>dword</td>
 <td>Los valores son los mismos que los utilizados por D3DRS_WRAP0. Los valores válidos son:
@@ -274,20 +279,20 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 <li>W (que corresponde a D3DWRAP_W)</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>ZEnable</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="/windows/desktop/direct3d9/d3dzbuffertype"><strong>D3DZBUFFERTYPE</strong></a> sin el prefijo D3DZB_.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>ZFunc</td>
 <td>dword</td>
 <td>Los mismos valores que <a href="/windows/desktop/direct3d9/d3dcmpfunc"><strong>D3DCMPFUNC</strong></a> sin el prefijo D3DCMP_. Vea D3DRS_ZFUNC.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>ZWriteEnable</td>
 <td>bool</td>
-<td>Verdadero o Falso. Vea D3DRS_ZWRITEENABLE.</td>
+<td>True o False. Vea D3DRS_ZWRITEENABLE.</td>
 </tr>
 </tbody>
 </table>
@@ -319,25 +324,25 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 | Estado de representación             | Tipo   | Valores                                                                                                                                        |
 | Ambiente                  | float4 | Los mismos valores que D3DRS \_ ambiente.                                                                                                                |
 | AmbientMaterialSource    | dword  | Los mismos valores que [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) sin el \_ prefijo D3DMCS. Vea D3DRS \_ AMBIENTMATERIALSOURCE.  |
-| Recorte                 | bool   | Verdadero o Falso. Los mismos valores que el \_ recorte D3DRS.                                                                                                |
+| Recorte                 | bool   | True o False. Los mismos valores que el \_ recorte D3DRS.                                                                                                |
 | ClipPlaneEnable          | dword  | Combinación bit a bit de las macros D3DCLIPPLANE0-D3DCLIPPLANE5. Vea [**D3DCLIPPLANEn**](d3dclipplanen.md) y D3DRS \_ CLIPPLANEENABLE.           |
-| ColorVertex              | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ COLORVERTEX.                                                                                             |
+| ColorVertex              | bool   | True o False. Los mismos valores que D3DRS \_ COLORVERTEX.                                                                                             |
 | CullMode                 | dword  | Los mismos valores que [**D3DCULL**](./d3dcull.md) sin el \_ prefijo D3DCULL.                                                                 |
 | DiffuseMaterialSource    | dword  | Los mismos valores que [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) sin el \_ prefijo D3DMCS. Vea D3DRS \_ DIFFUSEMATERIALSOURCE.  |
 | EmissiveMaterialSource   | dword  | Los mismos valores que [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) sin el \_ prefijo D3DMCS. Vea D3DRS \_ EMISSIVEMATERIALSOURCE. |
 | FogColor                 | dword  | Los mismos valores que [**D3DCOLOR**](d3dcolor.md). Vea D3DRS \_ FOGCOLOR.                                                                             |
 | FogDensity               | FLOAT  | Los mismos valores que D3DRS \_ FOGDENSITY.                                                                                                             |
-| FogEnable                | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ FOGENABLE.                                                                                               |
+| FogEnable                | bool   | True o False. Los mismos valores que D3DRS \_ FOGENABLE.                                                                                               |
 | FogEnd                   | FLOAT  | Los mismos valores que D3DRS \_ FOGEND.                                                                                                                 |
 | FogStart                 | FLOAT  | Los mismos valores que D3DRS \_ FOGSTART.                                                                                                               |
 | FogTableMode             | dword  | Los mismos valores que [**D3DFOGMODE**](./d3dfogmode.md). Consulte D3DRS \_ FOGTABLEMODE en [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md).     |
 | FogVertexMode            | dword  | Los mismos valores que [**D3DFOGMODE**](./d3dfogmode.md) sin el \_ prefijo D3DFOG.                                                            |
-| IndexedVertexBlendEnable | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ INDEXEDVERTEXBLENDENABLE.                                                                                |
-| Iluminación                 | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ Lighting.                                                                                                |
-| LocalViewer              | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ LOCALVIEWER.                                                                                             |
+| IndexedVertexBlendEnable | bool   | True o False. Los mismos valores que D3DRS \_ INDEXEDVERTEXBLENDENABLE.                                                                                |
+| Iluminación                 | bool   | True o False. Los mismos valores que D3DRS \_ Lighting.                                                                                                |
+| LocalViewer              | bool   | True o False. Los mismos valores que D3DRS \_ LOCALVIEWER.                                                                                             |
 | MultiSampleAntialias     | bool   | Los mismos valores que D3DRS \_ MULTISAMPLEANTIALIAS.                                                                                                   |
 | MultiSampleMask          | dword  | Los mismos valores que D3DRS \_ MULTISAMPLEMASK.                                                                                                        |
-| NormalizeNormals         | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ NORMALIZENORMALS.                                                                                        |
+| NormalizeNormals         | bool   | True o False. Los mismos valores que D3DRS \_ NORMALIZENORMALS.                                                                                        |
 | PatchSegments            | FLOAT  | Los mismos valores que nSegments en [**SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode).                                                         |
 | PointScale \_ A            | FLOAT  | Los mismos valores que D3DRS \_ POINTSCALE \_ A.                                                                                                          |
 | PointScale \_ B            | FLOAT  | Los mismos valores que D3DRS \_ POINTSCALE \_ B.                                                                                                          |
@@ -346,9 +351,9 @@ Los Estados de representación del archivo de efectos tienen nombres similares a
 | PointSize                | FLOAT  | Los mismos valores que D3DRS \_ .                                                                                                              |
 | Puntuación \_ mínima           | FLOAT  | Los mismos valores que D3DRS se \_ puntuación \_ min.                                                                                                         |
 | Puntuación \_ máxima           | FLOAT  | Los mismos valores que D3DRSan \_ \_ Max sin el \_ prefijo D3DRS.                                                                              |
-| PointSpriteEnable        | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ POINTSPRITEENABLE.                                                                                       |
-| RangeFogEnable           | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ RANGEFOGENABLE.                                                                                          |
-| SpecularEnable           | bool   | Verdadero o Falso. Los mismos valores que D3DRS \_ SPECULARENABLE.                                                                                          |
+| PointSpriteEnable        | bool   | True o False. Los mismos valores que D3DRS \_ POINTSPRITEENABLE.                                                                                       |
+| RangeFogEnable           | bool   | True o False. Los mismos valores que D3DRS \_ RANGEFOGENABLE.                                                                                          |
+| SpecularEnable           | bool   | True o False. Los mismos valores que D3DRS \_ SPECULARENABLE.                                                                                          |
 | SpecularMaterialSource   | dword  | Los mismos valores que [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) sin el \_ prefijo D3DMCS. Vea D3DRS \_ SPECULARMATERIALSOURCE. |
 | TweenFactor              | FLOAT  | Los mismos valores que D3DRS \_ TWEENFACTOR.                                                                                                            |
 | VertexBlend              | dword  | Los mismos valores que [**D3DVERTEXBLENDFLAGS**](./d3dvertexblendflags.md) sin el \_ prefijo D3DVBF. Vea D3DRS \_ VERTEXBLEND.                  |
@@ -404,7 +409,7 @@ Los Estados de la fase de muestra se utilizan para muestrear las texturas. El es
 | MinFilter \[ 16\]     | dword                        | Los mismos valores que D3DSAMP \_ MINFILTER sin el \_ prefijo D3DSAMP.                                                                   |
 | MipFilter \[ 16\]     | dword                        | Los mismos valores que D3DSAMP \_ MIPFILTER sin el \_ prefijo D3DSAMP.                                                                   |
 | MipMapLodBias \[ 16\] | FLOAT                        | Los mismos valores que D3DSAMP \_ MIPMAPLODBIAS sin el \_ prefijo D3DSAMP.                                                               |
-| SRGBTexture         | FLOAT                        | El mismo valor que D3DSAMP \_ SRGBTEXTURE sin el \_ prefijo D3DSAMP.                                                                  |
+| SRGBTexture         | bool                         | El mismo valor que D3DSAMP \_ SRGBTEXTURE sin el \_ prefijo D3DSAMP.                                                                   |
 
 
 
