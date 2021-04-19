@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 302d820428fafb1561bd38850c4f75240ce9094f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d532f3a2a2332874f7b7c22f17992c22984e3f86
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362675"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222843"
 ---
 # <a name="xmint4-structure"></a>Estructura XMINT4
 
@@ -83,6 +83,12 @@ componente w del vector.
 
 
 
+## <a name="remarks"></a>Observaciones
+
+Esta estructura se define en el ``D3DX\_DXGIFormatConvert.inl`` encabezado del SDK de DirectX (2010 de junio) para su uso desde C++. La versión más reciente de este encabezado en el paquete NuGet [Microsoft. DXSDK. D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) ya no lo define y se basa en [DirectX:: XMINT4](https://docs.microsoft.com/en-us/windows/win32/api/directxmath/ns-directxmath-xmint4) en DirectXMath en su lugar.
+
+
+
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
@@ -92,12 +98,3 @@ componente w del vector.
 
 [Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
-
- 
-
- 
-
-
-
-
-
