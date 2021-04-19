@@ -1,5 +1,5 @@
 ---
-title: Conceptos
+title: Conceptos (DRM)
 description: Conceptos del cliente DRM de Windows Media
 ms.assetid: e1d306db-5c56-45a7-b0e2-c20555858ad4
 keywords:
@@ -18,12 +18,12 @@ keywords:
 - API extendidas de cliente, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d473faeaf2926d31226d22953f35448740c79fa1
-ms.sourcegitcommit: 6f7576b297d54c0b8f9c79e02c912b83041aa4fb
+ms.openlocfilehash: f605395c5db172c94bf8b5bfada3bdc0aa33c433
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "104420059"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389132"
 ---
 # <a name="concepts"></a>Conceptos
 
@@ -42,9 +42,9 @@ Los conceptos básicos siguientes son importantes para comprender las API extend
 [**Acerca de las API extendidas del cliente DRM de Windows Media**](about-the-windows-media-drm-client-extended-apis.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
