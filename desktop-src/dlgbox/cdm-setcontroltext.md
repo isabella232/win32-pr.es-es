@@ -1,6 +1,6 @@
 ---
-title: Mensaje de CDM_SETCONTROLTEXT (commdlg. h)
-description: Establece el texto para el control especificado en un cuadro de diálogo abrir o guardar como de estilo del explorador.
+title: CDM_SETCONTROLTEXT mensaje (Commdlg.h)
+description: Establece el texto del control especificado en un cuadro de diálogo Abrir o Guardar como de estilo explorador.
 ms.assetid: ff0e50b7-a14d-40d1-8576-f93a612f3aa3
 keywords:
 - CDM_SETCONTROLTEXT cuadros de diálogo de mensaje
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87490ba20b5785da4fb9660d97b1b9232d047671
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74d75bb3d3ac486bbb43545df80c67383a7655b8
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421885"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590892"
 ---
-# <a name="cdm_setcontroltext-message"></a>\_Mensaje SETCONTROLTEXT CDM
+# <a name="cdm_setcontroltext-message"></a>Mensaje \_ SETCONTROLTEXT de CDM
 
-\[A partir de Windows Vista, los cuadros de diálogo **abrir** y **Guardar como** común se han sustituido por el [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Se recomienda usar la API de cuadros de diálogo de elementos comunes en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo comunes.\]
+\[A partir de Windows Vista, **los** cuadros **de** diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo de elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Establece el texto para el control especificado en un cuadro de diálogo **abrir** o **Guardar como** de estilo del explorador. El cuadro de diálogo se debe haber creado con la marca **OFN \_ Explorer** ; de lo contrario, se produce un error en el mensaje.
+Establece el texto del control especificado en  un cuadro de diálogo Abrir o **Guardar como** de estilo explorador. El cuadro de diálogo se debe haber creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -43,20 +43,20 @@ Establece el texto para el control especificado en un cuadro de diálogo **abrir
 *wParam* 
 </dt> <dd>
 
-Identificador del control en cuyo texto se va a establecer.
+Identificador del control en el que se va a establecer el texto.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Nuevo texto del control.
+Nuevo texto para el control.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -74,11 +74,11 @@ void CommDlg_OpenSave_SetControlText(hwnd, wparam, lparam)
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -94,10 +94,10 @@ void CommDlg_OpenSave_SetControlText(hwnd, wparam, lparam)
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  
