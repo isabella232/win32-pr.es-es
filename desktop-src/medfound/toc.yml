@@ -582,7 +582,7 @@
                 - name: IDirect3DAuthenticatedChannel9
                   href: /windows/desktop/api/d3d9/nn-d3d9-idirect3dauthenticatedchannel9
                   items:
-                    - name: Configuración
+                    - name: Configurar
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure
                     - name: GetCertificate
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-getcertificate
@@ -1896,7 +1896,7 @@
                     - name: IOPMVideoOutput
                       href: /windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput
                       items:
-                        - name: Configuración
+                        - name: Configurar
                           href: /windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure
                         - name: COPPCompatibleGetInformation
                           href: /windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-coppcompatiblegetinformation
@@ -3013,6 +3013,8 @@
                   href: mf-readwrite-mmcss-priority.md
                 - name: MF_READWRITE_MMCSS_PRIORITY_AUDIO
                   href: mf-readwrite-mmcss-priority-audio.md
+                - name: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES
+                  href: mf-sa-d3d11-allocate-displayable-resources.md
                 - name: MF_SA_BUFFERS_PER_SAMPLE
                   href: mf-sa-buffers-per-sample.md
                 - name: MF_SA_D3D_AWARE
@@ -5621,7 +5623,7 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-getcurrentlength
                 - name: GetMaxLength
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-getmaxlength
-                - name: Bloquear
+                - name: Lock
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock
                 - name: SetCurrentLength
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-setcurrentlength
@@ -5680,7 +5682,7 @@
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-ispaused
                 - name: IsSeeking
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-isseeking
-                - name: Carga
+                - name: Cargar
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-load
                 - name: OnVideoStreamTick
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-onvideostreamtick
@@ -7379,7 +7381,7 @@
             - name: IMFTopoLoader
               href: /windows/desktop/api/mfidl/nn-mfidl-imftopoloader
               items:
-                - name: Carga
+                - name: Cargar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load
             - name: IMFTopology
               href: /windows/desktop/api/mfidl/nn-mfidl-imftopology
