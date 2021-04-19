@@ -1,35 +1,35 @@
 ---
-description: En el ejemplo siguiente, una empresa hipotética de desarrollo de software denominada Litware, Inc.
+description: En el ejemplo siguiente, una empresa hipotética de desarrollo de software llamada Litware, Inc.
 ms.assetid: e4392907-a84f-40ea-aa88-2ad0510bca3c
-title: Ejemplo de Asociación de archivos
+title: Ejemplo de asociación de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f4104c9bc241fed4bc698bd150b03d32a70e054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23b92922bb907c4dd90b3e2bdc3d16c8e8b52e6a
+ms.sourcegitcommit: b0d03febac36ff77cba034615b94ea103311398d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153621"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107715793"
 ---
-# <a name="file-association-example"></a>Ejemplo de Asociación de archivos
+# <a name="file-association-example"></a>Ejemplo de asociación de archivos
 
-En el ejemplo siguiente, una empresa hipotética de desarrollo de software denominada Litware, Inc. crea un nuevo reproductor de audio llamado LitwarePlayer. Litware quiere diseñar una asociación de archivos entre LitwarePlayer y su tipo de archivo principal, que usa un formato de audio recién desarrollado que permite almacenar un CD de audio completo en menos de 10 kilobytes de memoria sin pérdida de calidad.
+En el ejemplo siguiente, una compañía hipotética de desarrollo de software llamada Litware, Inc. crea un nuevo reproductor de audio llamado LitwarePlayer. Litware quiere diseñar una asociación de archivos entre LitwarePlayer y su tipo de archivo principal, que usa un formato de audio recién desarrollado que permite almacenar un CD de audio completo en menos de 10 kilobytes de memoria sin pérdida de calidad.
 
 > [!IMPORTANT]
-> Este tema no se aplica a Windows 10. La forma en que las asociaciones de archivos predeterminadas funcionan en Windows 10. Para obtener más información, consulte la sección **cambios en la forma en que Windows 10 trata las aplicaciones predeterminadas** en [esta publicación](https://blogs.windows.com/bloggingwindows/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
+> Este tema no se aplica a Windows 10. La forma en que funcionan las asociaciones de archivos predeterminadas ha cambiado Windows 10. Para obtener más información, vea la sección Sobre los cambios en Windows 10 **controla las aplicaciones predeterminadas** en [esta entrada](https://blogs.windows.com/windows-insider/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
 
  
 
-## <a name="designing-a-new-file-association"></a>Diseñar una nueva asociación de archivo
+## <a name="designing-a-new-file-association"></a>Diseñar una nueva asociación de archivos
 
-La empresa debe realizar los siguientes pasos.
+La empresa debe realizar los pasos siguientes.
 
-1.  **Decida si el nuevo tipo de archivo se debe tratar como público o privado.** Este nuevo tipo de archivo es un tipo de medio. Dado que los usuarios intercambian archivos multimedia entre varias plataformas y puede haber otras aplicaciones que necesiten leer el formato LitwarePlayer, un tipo de archivo [público](fa-file-types.md) es el más apropiado.
-2.  **Determine si este tipo de archivo ya está definido.** Compruebe la base de datos MIME de la autoridad de números asignados de Internet (IANA) y otras bases de datos de tipo de archivo público en Internet para determinar que no se ha definido ningún tipo de archivo comparable. Dado que se trata de un nuevo formato de archivo, debe definir un nuevo tipo de archivo.
-3.  **Defina una extensión de nombre de archivo para el nuevo tipo de archivo.** Los desarrolladores eligen `.opa-ltw-audio` , que incorpora su abreviatura de proveedor y una sugerencia sobre lo que contiene el archivo. La investigación determina que nadie más usa la extensión. A continuación de las recomendaciones actuales, no se define ninguna extensión corta.
-4.  **Defina un tipo MIME para el tipo de archivo y regístrelo con la IANA.** Litware define el nuevo tipo MIME como *audio/LitwarePlayer. 1* y prepara una aplicación de tipo MIME, siguiendo las instrucciones establecidas en los números de solicitud de comentarios (RFC) 2045, 2046, 2047 y 2048. A continuación, envían la aplicación a la IANA, que agrega el nuevo tipo de archivo a la base de datos de tipos MIME registrados.
-5.  **Determine si existe un identificador de programa (ProgID) para el tipo de archivo.** Dado que se trata de un nuevo tipo de archivo, no existe ningún [ProgID](fa-progids.md) para él. Litware establece sobre el diseño de un nuevo ProgID para LitwarePlayer. Deciden el nombre descriptivo "LitwarePlayer audio Player" (que se almacena como un recurso en el archivo LitwarePlayer.exe) y diseñan un icono predeterminado que se usará para los archivos asociados a LitwarePlayer (también almacenados en LitwarePlayer.exe). Dado que LitwarePlayer es una nueva aplicación, se trata de un ProgID de versión 1.
-6.  **Registre el identificador de programa.** Cuando se instala LitwarePlayer, el programa de instalación crea la siguiente entrada [ProgID](fa-progids.md) en el registro.
+1.  **Decida si el nuevo tipo de archivo debe tratarse como público o privado.** Este nuevo tipo de archivo es un tipo de medio. Dado que los usuarios intercambian archivos multimedia entre varias plataformas y puede [](fa-file-types.md) haber otras aplicaciones que necesiten leer el formato LitwarePlayer, un tipo de archivo público es el más adecuado.
+2.  **Determine si este tipo de archivo ya está definido.** Compruebe la base de datos MIME de Internet Assigned Numbers Authority (IANA) y otras bases de datos de tipo de archivo público en Internet para determinar que no se ha definido ningún tipo de archivo comparable. Dado que se trata de un nuevo formato de archivo, debe definir un nuevo tipo de archivo.
+3.  **Defina una extensión de nombre de archivo para el nuevo tipo de archivo.** Los desarrolladores eligen `.opa-ltw-audio` , que incorpora su abreviatura de proveedor y una sugerencia sobre lo que contiene el archivo. La investigación determina que nadie más usa la extensión. Siguiendo las recomendaciones actuales, no se define ninguna extensión corta.
+4.  **Defina un tipo MIME para el tipo de archivo y regístrelo con IANA.** Litware define el nuevo tipo MIME como *audio/LitwarePlayer.1* y prepara una aplicación de tipo MIME, siguiendo las directrices establecidas en los números de solicitud de comentarios (RFC) 2045, 2046, 2047 y 2048. A continuación, envían la aplicación a IANA, que agrega el nuevo tipo de archivo a la base de datos de tipos MIME registrados.
+5.  **Determine si existe un ProgID para el tipo de archivo.** Dado que se trata de un nuevo tipo de archivo, no [existe ningún ProgID](fa-progids.md) para él. Litware establece sobre el diseño de un nuevo ProgID para LitwarePlayer. Deciden el nombre descriptivo "LitwarePlayer Audio Player" (que se almacena como un recurso en el archivo LitwarePlayer.exe) y diseñan un icono predeterminado para usarlo para los archivos asociados a LitwarePlayer (también almacenados en LitwarePlayer.exe). Dado que LitwarePlayer es una nueva aplicación, se trata de un ProgID de la versión 1.
+6.  **Registre el ProgID.** Cuando se instala LitwarePlayer, el programa de instalación crea la siguiente [entrada ProgID](fa-progids.md) en el Registro.
 
     ```
     HKEY_CLASSES_ROOT
@@ -46,9 +46,9 @@ La empresa debe realizar los siguientes pasos.
                    (Default) = "%ProgramFiles%\LitwarePlayer\LitwarePlayer.exe" "%1"
     ```
 
-    En la clave de comando, se pasa %1 como ruta de acceso al archivo que se va a reproducir.
+    En la clave de comando, %1 se pasa como ruta de acceso al archivo que se va a reproducir.
 
-7.  **Registra la extensión de nombre de archivo para el tipo de archivo.** Cuando se instala LitwarePlayer, el programa de instalación crea las siguientes entradas en el registro para su extensión de tipo de archivo personalizado.
+7.  **Registre la extensión de nombre de archivo para el tipo de archivo.** Cuando se instala LitwarePlayer, el programa de instalación crea las siguientes entradas en el Registro para su extensión de tipo de archivo personalizado.
 
     ```
     HKEY_CLASSES_ROOT
@@ -59,7 +59,7 @@ La empresa debe realizar los siguientes pasos.
     ```
 
 > [!Note]  
-> Siempre que se crea o se cambia una asociación de archivo, notifique al sistema que se ha realizado un cambio llamando a [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify), especificando el \_ evento ASSOCCHANGED de SHCNE. Si no se hace esto, es posible que el shell no reconozca los cambios realizados hasta que se reinicie el sistema.
+> Siempre que se cree o cambie una asociación de archivos, notifique al sistema que se ha realizado un cambio mediante una llamada a [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify), especificando el evento \_ ASSOCCHANGED de SHCNE. Si esto no se hace, es posible que el Shell no reconozca los cambios realizados hasta que se reinicie el sistema.
 
  
 
@@ -67,13 +67,13 @@ La empresa debe realizar los siguientes pasos.
 
 -   [Introducción a las asociaciones de archivos](fa-intro.md)
 -   [Cómo registrar un explorador de Internet o un cliente de correo electrónico con el menú Inicio de Windows](start-menu-reg.md)
--   [Registrar una aplicación en un esquema de URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85))
+-   [Registro de una aplicación en un esquema URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85))
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Prácticas recomendadas para asociaciones de archivos](fa-best-practices.md)
+[Procedimientos recomendados para asociaciones de archivos](fa-best-practices.md)
 </dt> <dt>
 
 [Directrices para administrar aplicaciones predeterminadas en Windows Vista y versiones posteriores](vista-managing-defaults.md)
@@ -82,7 +82,7 @@ La empresa debe realizar los siguientes pasos.
 [Programas predeterminados](default-programs.md)
 </dt> <dt>
 
-[Establecer los valores predeterminados de acceso a programas y del equipo (SPAD)](cpl-setprogramaccess.md)
+[Establecer el acceso al programa y los valores predeterminados del equipo (SPAD)](cpl-setprogramaccess.md)
 </dt> </dl>
 
  
