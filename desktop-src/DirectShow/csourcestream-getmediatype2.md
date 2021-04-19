@@ -1,7 +1,7 @@
 ---
 description: El método GetMediaType recupera un tipo de medio preferido.
 ms.assetid: 85605885-adb5-4f13-91af-48bf74684eca
-title: CSourceStream. GetMediaType (método) (Source. h)
+title: 'CSourceStream. GetMediaType (método) (Source. h): parámetro pMediaType'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c62d79faab8d48d748f4a2c787dd1cbc8f6d2ed7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8306da8451d4af7da8ce4f4c7d4d3f6fd367e1ec
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690597"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389188"
 ---
 # <a name="csourcestreamgetmediatype-method-sourceh"></a>CSourceStream. GetMediaType (método) (Source. h)
 
@@ -66,7 +66,7 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Hay dos versiones de este método. Una versión invalida el método [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md) y toma un valor de índice como parámetro. La otra versión está diseñada para recuperar un tipo de medio único, por lo que carece del parámetro de índice.
 
