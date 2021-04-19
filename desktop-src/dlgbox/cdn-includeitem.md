@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CDN_INCLUDEITEM (commdlg. h)
-description: Enviado por un cuadro de diálogo abrir o guardar como para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de Shell.
+title: CDN_INCLUDEITEM de notificación (Commdlg.h)
+description: Enviado por un cuadro de diálogo Abrir o Guardar como para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de shell.
 ms.assetid: 0972a78d-e058-4bac-85bd-fbd4c3885552
 keywords:
-- CDN_INCLUDEITEM cuadros de diálogo código de notificación
+- CDN_INCLUDEITEM de diálogo del código de notificación
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67cbe830c644657425eb087dd64884da17a9a0c2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a91c61e4a7c2786e67ed28e2c62e5963762659c
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803284"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590782"
 ---
-# <a name="cdn_includeitem-notification-code"></a>\_Código de notificación INCLUDEITEM de CDN
+# <a name="cdn_includeitem-notification-code"></a>Código de notificación INCLUDEITEM de CDN \_
 
-\[A partir de Windows Vista, los cuadros de diálogo **abrir** y **Guardar como** común se han sustituido por el [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Se recomienda usar la API de cuadros de diálogo de elementos comunes en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo comunes.\]
+\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
-Enviado por un cuadro de diálogo **abrir** o **Guardar como** para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de Shell. Cuando el usuario abre una carpeta, el cuadro de diálogo envía una notificación **\_ INCLUDEITEM de CDN** para cada elemento de la carpeta. El cuadro de diálogo envía esta notificación solo si se estableció la marca **OFN \_ ENABLEINCLUDENOTIFY** cuando se creó el cuadro de diálogo.
+Enviado por **un cuadro de** diálogo Abrir o Guardar como para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de shell.  Cuando el usuario abre una carpeta, el cuadro de diálogo envía una notificación **\_ INCLUDEITEM** de CDN para cada elemento de la carpeta. El cuadro de diálogo envía esta notificación solo si se estableció la marca **OFN \_ ENABLEINCLUDENOTIFY** cuando se creó el cuadro de diálogo.
 
-El procedimiento de enlace de [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje de [**\_ notificación de WM**](../controls/wm-notify.md) .
+El [*procedimiento de enlace OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,23 +51,23 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) .
+Puntero a una [**estructura OFNOTIFYEX.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa)
 
-La estructura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) contiene una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) cuyo miembro de **código** indica el mensaje de notificación INCLUDEITEM de la **red CDN \_** .
+La [**estructura OFNOTIFYEX contiene**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el mensaje de **notificación \_ INCLUDEITEM de CDN.**
 
-El miembro **PSF** de la estructura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) es un puntero a una interfaz para la carpeta cuyos elementos se están enumerando. El miembro **PIDL** es un puntero a una lista de identificadores de elemento que identifica el elemento relativo a la carpeta.
+El **miembro psf** de la [**estructura OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) es un puntero a una interfaz para la carpeta cuyos elementos se enumeran. El **miembro pidl** es un puntero a una lista de identificadores de elemento que identifica el elemento relativo a la carpeta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el procedimiento de enlace [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) devuelve cero, el cuadro de diálogo excluye el elemento de la lista de elementos.
+Si el [*procedimiento de enlace OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) devuelve cero, el cuadro de diálogo excluye el elemento de la lista de elementos.
 
 Para incluir el elemento, devuelva un valor distinto de cero del procedimiento de enlace.
 
 ## <a name="remarks"></a>Observaciones
 
-En el cuadro de diálogo siempre se incluyen los elementos que tienen los atributos **SFGAO \_ FILESYSTEM** y **SFGAO \_ FILESYSANCESTOR** , independientemente del valor devuelto por **CDN \_ INCLUDEITEM**.
+El cuadro de diálogo siempre incluye elementos que tienen los atributos **SFGAO \_ FILESYSTEM** y **SFGAO \_ FILESYSANCESTOR,** independientemente del valor devuelto por **\_ CDN INCLUDEITEM**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,11 +77,11 @@ En el cuadro de diálogo siempre se incluyen los elementos que tienen los atribu
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -100,10 +100,10 @@ En el cuadro de diálogo siempre se incluyen los elementos que tienen los atribu
 [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  
