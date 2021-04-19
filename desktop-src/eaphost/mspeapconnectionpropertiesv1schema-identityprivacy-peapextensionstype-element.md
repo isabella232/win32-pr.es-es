@@ -1,5 +1,5 @@
 ---
-title: Elemento IdentityPrivacy (PeapExtensionsType)
+title: Elemento IdentityPrivacy (PeapExtensionsType) (V1)
 description: Indica si se envía la verdadera identidad de un usuario o una identidad anónima. | Elemento IdentityPrivacy (PeapExtensionsType)
 ms.assetid: 1ae5b6e8-b1f8-45a7-ad22-fdb57cc756a2
 keywords:
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed566e9be0b9e194d24106f1c82d9a9d6d1a199d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 748cf3ae8d5a4da4f8885332a72326bced45b398
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105678719"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389082"
 ---
 # <a name="identityprivacy-peapextensionstype-element"></a>Elemento IdentityPrivacy (PeapExtensionsType)
 
@@ -34,7 +34,7 @@ El elemento **IdentityPrivacy (PeapExtensionsType)** indica si se envía la verd
 
 El elemento se define mediante el elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El elemento **IdentityPrivacy** es opcional.
 
@@ -42,7 +42,7 @@ El elemento **IdentityPrivacy** es opcional.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
