@@ -4,12 +4,12 @@ description: Un error de implementación de la aplicación puede deberse a un er
 ms.assetid: CE868296-87F6-4BD5-8AC5-914E429EDEBC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e0afe77ebfd478be5c652604ea575fc90b5d3ef
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 0b6f50dc5ff428e74f4928fc20775b13de7c3be9
+ms.sourcegitcommit: 784b5954a1646e2406cd4ee27a9e4f50e28ee9b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104420525"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106374836"
 ---
 # <a name="how-to-troubleshoot-app-package-signature-errors"></a>Cómo solucionar errores de firma de paquete de aplicaciones
 
@@ -57,7 +57,7 @@ Si no se ha producido el error 465, consulte [solución de problemas generales d
 
 
 
- 
+ 
 
 ### <a name="step-2-determine-the-certificate-chain-used-to-sign-the-app-package"></a>Paso 2: determinar la cadena de certificados usada para firmar el paquete de la aplicación
 
@@ -100,7 +100,7 @@ Si no especifica el número de serie del certificado, [certutil](/previous-versi
 
 Es posible que no se pueda instalar el paquete debido a errores de encadenamiento de certificados, incluso si el certificado de firma no es autofirmado y el certificado raíz está en el almacén raíz del equipo local. En este caso, puede haber un problema con la confianza para las entidades de certificación intermedias. Para obtener más información sobre este problema, consulte [trabajar con certificados](/previous-versions/dotnet/netframework-3.0/ms731899(v=vs.85)).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si ha determinado que el paquete no se pudo implementar porque el certificado de firma no es de confianza, no instale el paquete a menos que sepa dónde se originó y que confía en él.
 
@@ -150,7 +150,7 @@ Al agregar un certificado a los [almacenes de certificados del equipo local](/wi
 **Ejemplos**
 </dt> <dt>
 
-[Crear paquete de aplicación ejemplo]https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
+[Ejemplo de creación de paquete de aplicación](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
 </dt> <dt>
 
 **Conceptos**
@@ -162,6 +162,6 @@ Al agregar un certificado a los [almacenes de certificados del equipo local](/wi
 [Tareas certutil para administrar certificados](/previous-versions/orphan-topics/ws.10/cc772898(v=ws.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 
