@@ -1,42 +1,42 @@
 ---
-description: Si el host y el cliente genéricos se pueden ver entre sí en la red, pero el host y el cliente reales no pueden, es probable que el problema esté en los mensajes enviados entre los puntos de conexión a través de la red.
+description: Si el host genérico y el cliente pueden verse entre sí en la red pero el host y el cliente reales no pueden, es probable que el problema esté en los mensajes enviados entre los puntos de conexión a través de la red.
 ms.assetid: 1b0943fb-076e-4feb-9a4f-36a06bdd19ae
-title: Usar el cliente de depuración WSD para comprobar el tráfico de multidifusión
+title: Uso del cliente de depuración de WSD para comprobar el tráfico de multidifusión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55f03e06baefc40bad843a5193b2cec604383251
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a814ac97512ef4b0691c22d3238d151372023a7
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716125"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380669"
 ---
-# <a name="using-wsd-debug-client-to-verify-multicast-traffic"></a>Usar el cliente de depuración WSD para comprobar el tráfico de multidifusión
+# <a name="using-wsd-debug-client-to-verify-multicast-traffic"></a>Uso del cliente de depuración de WSD para comprobar el tráfico de multidifusión
 
-Si el host y el cliente genéricos se pueden ver entre sí en la red, pero el host y el cliente reales no pueden, es probable que el problema esté en los mensajes enviados entre los puntos de conexión a través de la red. Para obtener más información sobre el host y el cliente genéricos, vea [usar un host y un cliente genéricos para WS-Discovery de UDP](using-a-generic-host-and-client-for-udp-ws-discovery.md). Dado que los seguimientos de red completos pueden ser difíciles de recopilar, filtrar y leer, la herramienta cliente de depuración WSD se puede usar para imprimir los lados de la multidifusión de los mensajes de WS-Discovery.
+Si el host genérico y el cliente pueden verse entre sí en la red pero el host y el cliente reales no pueden, es probable que el problema esté en los mensajes enviados entre los puntos de conexión a través de la red. Para obtener más información sobre el host y el cliente genéricos, vea [Using a Generic Host and Client for UDP WS-Discovery](using-a-generic-host-and-client-for-udp-ws-discovery.md). Dado que los seguimientos de red completos pueden ser difíciles de recopilar, filtrar y leer, se puede usar la herramienta cliente de depuración de WSD para imprimir los lados de multidifusión de WS-Discovery mensajes.
 
-El cliente de depuración de WSD en modo de multidifusión solo puede inspeccionar la mitad de los mensajes, ya que el cliente no puede imprimir mensajes de unidifusión. Si el tráfico de unidifusión es de interés, vaya directamente a [inspeccionar los seguimientos de red para el WS-Discovery de UDP](inspecting-network-traces-for-udp-ws-discovery.md).
+El cliente de depuración de WSD en modo de multidifusión solo puede inspeccionar la mitad de los mensajes, ya que el cliente no puede imprimir mensajes de unidifusión. Si el tráfico de unidifusión es de interés, vaya directamente a [Inspecting Network Traces for UDP WS-Discovery (Inspección de seguimientos de red para UDP WS-Discovery).](inspecting-network-traces-for-udp-ws-discovery.md)
 
-Este procedimiento muestra un método que mostrará todo el tráfico de multidifusión de la red. Para mostrar solo el tráfico de multidifusión hacia y desde el dispositivo, consulte la sección filtrado de los [resultados del cliente de depuración WSD](#filtering-wsd-debug-client-results) más adelante.
+Este procedimiento muestra un método que mostrará todo el tráfico de multidifusión en la red. Para mostrar solo el tráfico de multidifusión hacia y desde el dispositivo, consulte la sección Filtrado de los resultados del cliente de depuración de [WSD](#filtering-wsd-debug-client-results) a continuación.
 
-**Para usar el cliente de depuración WSD para comprobar el tráfico de multidifusión**
+**Para usar el cliente de depuración de WSD para comprobar el tráfico de multidifusión**
 
-1.  Configure el host y el cliente para que se ejecuten en la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
-2.  Abra un símbolo del sistema y ejecute el comando siguiente: **WSDDebug \_client.exe/Mode multidifusión**
-3.  Reproduzca el error iniciando el host y el cliente, o presionando F5 en el explorador de red.
+1.  Configure el host y el cliente para que se ejecuten a través de la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
+2.  Abra un símbolo del sistema y ejecute el siguiente comando: **WSDDebug \_client.exe multidifusión /mode**
+3.  Reproduzca el error iniciando el host y el cliente o presionando F5 en el Explorador de red.
 4.  Compruebe que los mensajes se están multidifusión.
 
-Si los mensajes necesarios se muestran en la salida del cliente de depuración de WSD, el error de la aplicación puede estar en el contenido del mensaje de multidifusión o en la existencia o el contenido de los mensajes de respuesta de unidifusión correspondientes. Siga las instrucciones que se indican en [inspeccionar seguimientos de red para UDP WS-Discovery para](inspecting-network-traces-for-udp-ws-discovery.md)continuar con la solución de problemas.
+Si los mensajes necesarios se muestran en la salida del cliente de depuración de WSD, el error de la aplicación puede estar en el contenido del mensaje de multidifusión o en la existencia o el contenido de los mensajes de respuesta de unidifusión correspondientes. Para continuar con la solución de problemas, siga las instrucciones de [Inspección de seguimientos de red para UDP WS-Discovery.](inspecting-network-traces-for-udp-ws-discovery.md)
 
-Si los mensajes necesarios se muestran en la salida del cliente de depuración de WSD, es probable que se haya identificado el origen del problema de la aplicación. Es probable que el tráfico de multidifusión no se transmita a la red. Este error puede producirse cuando la aplicación no enumera correctamente los adaptadores de multidifusión. Las aplicaciones deben enviar explícitamente tráfico de multidifusión a través de todas las interfaces de red. de lo contrario, es posible que no se generen paquetes para la interfaz de bucle invertido ni para otras interfaces. Para comprobar que los paquetes no aparecen en la red, siga las instrucciones de inspección de los [seguimientos de red para WS-Discovery de UDP](inspecting-network-traces-for-udp-ws-discovery.md) y busque la evidencia de mensajes de multidifusión que faltan.
+Si los mensajes necesarios se muestran en la salida del cliente de depuración de WSD, es probable que se haya identificado el origen del problema de la aplicación. Es probable que el tráfico de multidifusión no se transmita en la red. Este error puede producirse cuando la aplicación no enumera correctamente los adaptadores de multidifusión. Las aplicaciones deben enviar explícitamente tráfico de multidifusión a través de todas las interfaces de red; De lo contrario, es posible que no se generen paquetes para la interfaz de bucleback ni para otras interfaces. Para comprobar que los paquetes no aparecen en la red, siga las instrucciones de Inspección de seguimientos de red para la detección de [WS](inspecting-network-traces-for-udp-ws-discovery.md) udp y busque evidencias de mensajes de multidifusión que faltan.
 
-## <a name="verifying-that-messages-are-being-multicast"></a>Comprobando que los mensajes se están multidifusión
+## <a name="verifying-that-messages-are-being-multicast"></a>Comprobación de que los mensajes se están multidifusión
 
-Compruebe siempre que los mensajes de [sondeo](probe-message.md) sean de multidifusión. Opcionalmente, compruebe que los mensajes [Hello](hello-message.md) y [Resolve](resolve-message.md) se están multidifusión. Tenga en cuenta que no todas las aplicaciones usan mensajes de resolución. Para obtener más información acerca de los patrones de mensaje que usan los clientes y los hosts, consulte [patrones de mensajes de intercambio de metadatos y detección](discovery-and-metadata-exchange-message-patterns.md) y [Introducción con WSDAPI Troubleshooting](getting-started-with-wsdapi-troubleshooting.md).
+Compruebe siempre que los [mensajes de](probe-message.md) sondeo se están multidifusión. Opcionalmente, compruebe que los [mensajes Hello](hello-message.md) y [Resolve](resolve-message.md) se están multidifusión. Tenga en cuenta que no todas las aplicaciones usan Resolver mensajes. Para obtener más información sobre los patrones de mensaje usados por clientes y hosts, vea Patrones de mensajes de intercambio de [metadatos](discovery-and-metadata-exchange-message-patterns.md) y detección Tareas iniciales solución de problemas de [WSDAPI.](getting-started-with-wsdapi-troubleshooting.md)
 
-Los mensajes se deben desencadenar para enviarlos como se describe en el paso 3 anterior. El cliente de depuración de WSD muestra el mensaje SOAP sin formato como salida. Dado que todos los mensajes impresos por el cliente de depuración de WSD en modo de multidifusión se reciben a través de un socket de multidifusión, no se muestra la dirección de destino del mensaje.
+Los mensajes se deben desencadenar para que se envíen como se describe en el paso 3 anterior. El cliente de depuración de WSD muestra el mensaje SOAP sin formato como salida. Dado que todos los mensajes impresos por el cliente de depuración de WSD en modo de multidifusión se reciben a través de un socket de multidifusión, no se muestra la dirección de destino del mensaje.
 
-El siguiente ejemplo de salida de cliente de depuración WSD muestra un mensaje de sondeo. El elemento <WSA: Action> identifica el mensaje como un mensaje de sondeo. Inspeccione el campo <WSA: Action> para comprobar que el mensaje recibido era un mensaje de sondeo.
+La siguiente salida del cliente de depuración WSD de ejemplo muestra un mensaje de sondeo. El \<wsa:Action> elemento identifica el mensaje como un mensaje de sondeo. Inspeccione el \<wsa:Action> campo para comprobar que el mensaje recibido era un mensaje de sondeo.
 
 ``` syntax
 UDP message at 05/08/07 10:06:55 from soap.udp://[127.0.0.1:49334]
@@ -51,7 +51,7 @@ ap:Header><soap:Body><wsd:Probe><wsd:Types>wsdp:Device</wsd:Types></wsd:Probe></
 soap:Body></soap:Envelope>
 ```
 
-El siguiente ejemplo de salida de cliente de depuración WSD muestra un mensaje de saludo. El elemento <WSA: Action> identifica el mensaje como un mensaje de saludo.
+La siguiente salida del cliente de depuración de WSD de ejemplo muestra un mensaje Hello. El \<wsa:Action> elemento identifica el mensaje como un mensaje Hello.
 
 ``` syntax
 UDP message at 05/08/07 10:10:49 from soap.udp://[[::1]:49343]
@@ -69,49 +69,49 @@ wsa:EndpointReference><wsa:Address>urn:uuid:02a76d74-82d0-43e6-ab09-16f54ab81ac6
 adataVersion>1</wsd:MetadataVersion></wsd:Hello></soap:Body></soap:Envelope>
 ```
 
-## <a name="filtering-wsd-debug-client-results"></a>Filtrar resultados del cliente de depuración WSD
+## <a name="filtering-wsd-debug-client-results"></a>Filtrado de los resultados del cliente de depuración de WSD
 
-El filtrado de los resultados del cliente de depuración WSD puede ayudar a identificar el tráfico de incidentes relacionado con el dispositivo. El filtrado solo es necesario en redes ruidosos.
+Filtrar los resultados del cliente de depuración de WSD puede ayudar a identificar el tráfico de incidentes que afecta al dispositivo. El filtrado solo es necesario en redes ruidosas.
 
-Hay dos formas de filtrar los resultados. Las direcciones IP que se van a filtrar se pueden identificar explícitamente al iniciar el cliente de depuración de WSD. Como alternativa, se pueden especificar las direcciones IP una vez iniciado el cliente. En esta sección se describen ambos métodos.
+Hay dos maneras de filtrar los resultados. Las direcciones IP que se filtrarán se pueden identificar explícitamente al iniciar el cliente de depuración de WSD. Como alternativa, las direcciones IP se pueden especificar una vez iniciado el cliente. En esta sección se describen ambos métodos.
 
-**Para especificar las direcciones IP que se van a filtrar al iniciar el cliente de depuración WSD**
+**Para especificar las direcciones IP que se filtrarán al iniciar el cliente de depuración de WSD**
 
-1.  Configure el host y el cliente para que se ejecuten en la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
-2.  Recopilar las direcciones IP del dispositivo. Si el dispositivo tiene varias direcciones (por ejemplo, tiene direcciones IPv4 e IPv6), se deben recopilar todas las direcciones.
-3.  Abra un símbolo del sistema y ejecute el comando siguiente: **WSDDebug \_client.exe/Mode multicast/IP Add***<device IP>*
+1.  Configure el host y el cliente para que se ejecuten a través de la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
+2.  Recopile las direcciones IP del dispositivo. Si el dispositivo tiene varias direcciones (por ejemplo, tiene direcciones IPv4 e IPv6), se deben recopilar todas las direcciones.
+3.  Abra un símbolo del sistema y ejecute el siguiente comando: **WSDDebug \_client.exe /mode multicast /ip add***<device IP>*
 
 *<device IP>* es una dirección IP. En la lista siguiente se muestran algunos formatos de ejemplo para esta dirección IP.
 
 -   192.168.0.1
--   :: 1
+-   ::1
 -   mydevice.contoso.com
 
 El cliente de depuración de WSD resuelve automáticamente los nombres de host proporcionados en el símbolo del sistema.
 
 **Para filtrar los resultados después de iniciar el cliente de depuración de WSD**
 
-1.  Configure el host y el cliente para que se ejecuten en la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
-2.  Recopilar las direcciones IP del dispositivo. Si el dispositivo tiene varias direcciones (por ejemplo, tiene direcciones IPv4 e IPv6), se deben recopilar todas las direcciones.
-3.  Abra un símbolo del sistema y ejecute el comando siguiente: **WSDDebug \_client.exe/Mode multidifusión**
-4.  En el símbolo del sistema del cliente de depuración WSD, ejecute el siguiente comando: **IP Add***<device IP>*
+1.  Configure el host y el cliente para que se ejecuten a través de la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
+2.  Recopile las direcciones IP del dispositivo. Si el dispositivo tiene varias direcciones (por ejemplo, tiene direcciones IPv4 e IPv6), se deben recopilar todas las direcciones.
+3.  Abra un símbolo del sistema y ejecute el siguiente comando: **WSDDebug \_client.exe multidifusión /mode**
+4.  En el símbolo del sistema del cliente de depuración de WSD, ejecute el siguiente comando: **ip add***<device IP>*
 5.  Repita el paso 4 hasta que se hayan agregado todas las direcciones IP del dispositivo.
 
-En el procedimiento siguiente se da por supuesto que se ha iniciado el cliente de depuración WSD y que se está filtrando por dirección IP.
+En el procedimiento siguiente se da por supuesto que se ha iniciado el cliente de depuración de WSD y se está filtrando por dirección IP.
 
-**Para comprobar que se están filtrando las direcciones IP correctas**
+**Para comprobar que se filtran las direcciones IP correctas**
 
--   En el símbolo del sistema del cliente de depuración WSD, ejecute el siguiente comando: **IP Print**
+-   En el símbolo del sistema del cliente de depuración de WSD, ejecute el siguiente comando: **ip print.**
 
     Aparece la lista de direcciones IP que se filtran.
 
-En el procedimiento siguiente se da por supuesto que se ha iniciado el cliente de depuración WSD y que se está filtrando por dirección IP.
+En el procedimiento siguiente se da por supuesto que se ha iniciado el cliente de depuración de WSD y se está filtrando por dirección IP.
 
 **Para deshabilitar el filtrado**
 
--   En el símbolo del sistema del cliente de depuración WSD, ejecute el siguiente comando: **IP Clear**
+-   En el símbolo del sistema del cliente de depuración de WSD, ejecute el siguiente comando: **ip clear**
 
-    Ahora se mostrará todo el tráfico de multidifusión en la salida de depuración.
+    Todo el tráfico de multidifusión se mostrará ahora en la salida de depuración.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -120,7 +120,7 @@ En el procedimiento siguiente se da por supuesto que se ha iniciado el cliente d
 [Procedimientos de diagnóstico de WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introducción con la solución de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Tareas iniciales solución de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> </dl>
 
  
