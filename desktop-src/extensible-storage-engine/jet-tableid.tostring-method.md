@@ -1,6 +1,6 @@
 ---
 description: 'Más información acerca de: JET_TABLEID. Lista de sobrecargas del método ToString'
-title: JET_TABLEID. ToString (método)
+title: JET_TABLEID. Lista de sobrecargas del método ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_TABLEID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tableid.tostring(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: e0a9d78804f317b4fc4573ccd78345650f802371
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d57f4d1b7b0377518f55a50e08606c02f68339d6
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550375"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389216"
 ---
 # <a name="jet_tableidtostring-method-overload-list"></a>JET_TABLEID. Lista de sobrecargas del método ToString
 
