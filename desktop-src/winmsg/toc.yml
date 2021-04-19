@@ -1,4 +1,4 @@
-- name: Ventanas y mensajes
+- name: Windows y mensajes
   href: windowing.md
   items:
     - name: Windows
@@ -136,7 +136,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid
                 - name: InternalGetWindowText
                   href: /windows/desktop/api/winuser/nf-winuser-internalgetwindowtext
-                - name: Ischild (
+                - name: IsChild
                   href: /windows/desktop/api/winuser/nf-winuser-ischild
                 - name: IsGUIThread
                   href: /windows/desktop/api/winuser/nf-winuser-isguithread
@@ -174,7 +174,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setforegroundwindow
                 - name: SetLayeredWindowAttributes
                   href: /windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes
-                - name: SetParent (
+                - name: SetParent
                   href: /windows/desktop/api/winuser/nf-winuser-setparent
                 - name: SetProcessDefaultLayout
                   href: /windows/desktop/api/winuser/nf-winuser-setprocessdefaultlayout
@@ -198,7 +198,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-showwindow
                 - name: ShowWindowAsync
                   href: /windows/desktop/api/winuser/nf-winuser-showwindowasync
-                - name: SoundSentry
+                - name: Soundsentry
                   href: /windows/desktop/api/winuser/nf-winuser-soundsentry
                 - name: SwitchToThisWindow
                   href: /windows/desktop/api/winuser/nf-winuser-switchtothiswindow
@@ -214,6 +214,8 @@
                   href: /windows/desktop/api/winuser/nf-winuser-windowfrompoint
                 - name: WinMain
                   href: /windows/desktop/api/winbase/nf-winbase-winmain
+                - name: WNDPROC
+                  href: /windows/win32/api/winuser/nc-winuser-wndproc
             - name: Macros de ventana
               href: window-macros.md
               items:
@@ -327,7 +329,7 @@
                   href: wm-windowposchanged.md
                 - name: WM_WINDOWPOSCHANGING
                   href: wm-windowposchanging.md
-            - name: Estructuras de ventanas
+            - name: Estructuras de ventana
               href: window-structures.md
               items:
                 - name: ALTTABINFO
@@ -340,7 +342,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-createstructa
                 - name: GUITHREADINFO
                   href: /windows/win32/api/winuser/ns-winuser-guithreadinfo
-                - name: MINMAXINFO (
+                - name: MINMAXINFO
                   href: /windows/win32/api/winuser/ns-winuser-minmaxinfo
                 - name: NCCALCSIZE_PARAMS
                   href: /windows/win32/api/winuser/ns-winuser-nccalcsize_params
@@ -354,24 +356,24 @@
                   href: /windows/win32/api/winuser/ns-winuser-updatelayeredwindowinfo
                 - name: WINDOWINFO
                   href: /windows/win32/api/winuser/ns-winuser-windowinfo
-                - name: WINDOWPLACEMENT (
+                - name: WINDOWPLACEMENT
                   href: /windows/win32/api/winuser/ns-winuser-windowplacement
-                - name: WINDOWPOS (
+                - name: WINDOWPOS
                   href: /windows/win32/api/winuser/ns-winuser-windowpos
     - name: Clases de ventanas
       href: window-classes.md
       items:
-        - name: Información general sobre la clase Window
+        - name: Información general de la clase Window
           href: window-class-overviews.md
           items:
             - name: Acerca de las clases de ventana
               href: about-window-classes.md
             - name: Usar clases de ventana
               href: using-window-classes.md
-        - name: Referencia de clase de ventana
+        - name: Referencia de clase Window
           href: window-class-reference.md
           items:
-            - name: Funciones de clase de ventana
+            - name: Funciones de clase Window
               href: window-class-functions.md
               items:
                 - name: GetClassInfo
@@ -406,7 +408,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowlongptra
                 - name: UnregisterClass
                   href: /windows/desktop/api/winuser/nf-winuser-unregisterclassa
-            - name: Estructuras de clase de ventana
+            - name: Estructuras de clase window
               href: window-class-structures.md
               items:
                 - name: WNDCLASS
@@ -418,14 +420,14 @@
     - name: Procedimientos de ventana
       href: window-procedures.md
       items:
-        - name: Información general del procedimiento de ventana
+        - name: Información general sobre procedimientos de ventana
           href: window-procedure-overviews.md
           items:
             - name: Acerca de los procedimientos de ventana
               href: about-window-procedures.md
             - name: Usar procedimientos de ventana
               href: using-window-procedures.md
-        - name: Referencia de procedimiento de ventana
+        - name: Referencia de procedimientos de ventana
           href: window-procedure-reference.md
           items:
             - name: Funciones de procedimiento de ventana
@@ -440,14 +442,14 @@
     - name: Mensajes y colas de mensajes
       href: messages-and-message-queues.md
       items:
-        - name: Información general sobre mensajes y colas de mensajes
+        - name: Información general sobre la cola de mensajes y mensajes
           href: message-and-message-queue-overviews.md
           items:
             - name: Acerca de los mensajes y las colas de mensajes
               href: about-messages-and-message-queues.md
             - name: Uso de mensajes y colas de mensajes
               href: using-messages-and-message-queues.md
-        - name: Referencia de mensaje
+        - name: Referencia de mensajes
           href: message-and-message-queue-reference.md
           items:
             - name: Funciones de mensajes
@@ -508,7 +510,7 @@
               items:
                 - name: BSMINFO
                   href: /windows/desktop/api/winuser/ns-winuser-bsminfo
-                - name: MENSAJE
+                - name: Msg
                   href: /windows/win32/api/winuser/ns-winuser-msg
             - name: Constantes de mensaje
               href: message-and-message-queue-notifications.md
@@ -527,7 +529,7 @@
           items:
             - name: Acerca de los temporizadores
               href: about-timers.md
-            - name: Usar temporizadores
+            - name: Uso de temporizadores
               href: using-timers.md
         - name: Referencia del temporizador
           href: timer-reference.md
@@ -543,7 +545,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-settimer
                 - name: TimerProc
                   href: /windows/desktop/api/winuser/nc-winuser-timerproc
-            - name: Notificaciones del temporizador
+            - name: Notificaciones de temporizador
               href: timer-notifications.md
               items:
                 - name: WM_TIMER
@@ -554,14 +556,14 @@
         - name: Información general sobre propiedades de ventana
           href: window-property-overviews.md
           items:
-            - name: Acerca de las propiedades de la ventana
+            - name: Acerca de las propiedades de ventana
               href: about-window-properties.md
-            - name: Usar las propiedades de la ventana
+            - name: Usar propiedades de ventana
               href: using-window-properties.md
-        - name: Referencia de la propiedad Window
+        - name: Referencia de propiedades de ventana
           href: window-property-reference.md
           items:
-            - name: Funciones de la propiedad Window
+            - name: Funciones de propiedad de ventana
               href: window-property-functions.md
               items:
                 - name: EnumProps
@@ -591,7 +593,7 @@
                   href: contact-visualization.md
                 - name: Visualización de gestos
                   href: gesture-visualization.md
-                - name: Visualización del lápiz
+                - name: Visualización de lápiz
                   href: pen-visualization.md
             - name: GetSystemMetrics
               href: /windows/desktop/api/winuser/nf-winuser-getsystemmetrics
@@ -600,7 +602,7 @@
               items:
                 - name: ANIMATIONINFO
                   href: /windows/win32/api/winuser/ns-winuser-animationinfo
-                - name: AUDIODESCRIPTION
+                - name: Audiodescripción
                   href: /windows/win32/api/winuser/ns-winuser-audiodescription
                 - name: MINIMIZEDMETRICS
                   href: /windows/win32/api/winuser/ns-winuser-minimizedmetrics
@@ -615,7 +617,7 @@
       items:
         - name: Información general sobre enlaces
           href: about-hooks.md
-        - name: Usar enlaces
+        - name: Uso de enlaces
           href: using-hooks.md
         - name: Referencia de enlace
           href: hook-reference.md
@@ -683,7 +685,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-debughookinfo
                 - name: EVENTMSG
                   href: /windows/win32/api/winuser/ns-winuser-eventmsg
-                - name: KBDLLHOOKSTRUCT
+                - name: KBDLDLOKSTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-kbdllhookstruct
                 - name: MOUSEHOOKSTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-mousehookstruct
@@ -699,7 +701,7 @@
           items:
             - name: Acerca de la interfaz de varios documentos
               href: about-the-multiple-document-interface.md
-            - name: Usar la interfaz de varios documentos
+            - name: Uso de la interfaz de varios documentos
               href: using-the-multiple-document-interface.md
         - name: Referencia de MDI
           href: multiple-document-interface-reference.md
