@@ -1,6 +1,6 @@
 ---
 description: 'Más información acerca de: JET_SESID. Lista de sobrecargas del método ToString'
-title: JET_SESID. ToString (método)
+title: JET_SESID. Lista de sobrecargas del método ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_SESID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_sesid.tostring(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 7c06c208e5bd890653658acc00ca39ea2d7e254d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e43628975c509f2ff7fa430080005a11f2ddc633
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154013"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388544"
 ---
 # <a name="jet_sesidtostring-method-overload-list"></a>JET_SESID. Lista de sobrecargas del método ToString
 
