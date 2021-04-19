@@ -4,12 +4,12 @@ ms.assetid: ba489fd7-2304-426e-83a0-d174bb394065
 title: location (elemento)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a82f4f95e9d66dce2d2f17aba5b86ce1ad4581d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 547160b30299b1143ae2255925f520712fcc63ce
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812644"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380679"
 ---
 # <a name="location-element"></a>location (elemento)
 
@@ -35,7 +35,7 @@ No hay elementos secundarios.
 
 | Elemento                                     | Descripción                                                                                                                             |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**importHint**](importhint.md)<br/> | Especifica la ubicación de descarga de una directiva <WSDL: Import> que no especifica explícitamente una ubicación.<br/> <br/> |
+| [**importHint**](importhint.md)<br/> | Especifica la ubicación de descarga de una \<wsdl:import> directiva que no especifica explícitamente una ubicación.<br/> <br/> |
 
 
 

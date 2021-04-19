@@ -1,19 +1,19 @@
 ---
-description: Especifica un archivo WSDL que se va a procesar para la información del contrato.
+description: Especifica un archivo WSDL que se procesará para obtener información del contrato.
 ms.assetid: d8f630cd-0541-431b-86a8-792846a85ea0
-title: elemento WSDL
+title: elemento wsdl
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb54f946f32fb4962b8384dea7c6cf4b3c0ebe3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbcb96e063a289e16d5e459b59cb8808a763618a
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276957"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380739"
 ---
-# <a name="wsdl-element"></a>elemento WSDL
+# <a name="wsdl-element"></a>elemento wsdl
 
-Especifica un archivo WSDL que se va a procesar para la información del contrato.
+Especifica un archivo WSDL que se procesará para obtener información del contrato.
 
 ## <a name="usage"></a>Uso
 
@@ -33,9 +33,9 @@ No hay atributos.
 
 | Elemento                                           | Descripción                                                                                                                                       |
 |---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**excludeImport**](excludeimport.md)<br/> | Evita la generación de instrucciones Import para destinos especificados con nombre en un elemento <WSDL: Import> en un archivo WSDL. <br/> <br/> |
-| [**importHint**](importhint.md)<br/>       | Especifica la ubicación de descarga de una directiva <WSDL: Import> que no especifica explícitamente una ubicación.<br/> <br/>           |
-| [**camino**](path.md)<br/>                   | Archivo y ruta de acceso del archivo de entrada WSDL.<br/> <br/>                                                                                      |
+| [**excludeImport**](excludeimport.md)<br/> | Impide la generación de instrucciones de importación para destinos especificados denominados en \<wsdl:import> un elemento de un archivo WSDL. <br/> <br/> |
+| [**importHint**](importhint.md)<br/>       | Especifica la ubicación de descarga de una directiva que no especifica \<wsdl:import> explícitamente una ubicación.<br/> <br/>           |
+| [**path**](path.md)<br/>                   | Archivo y ruta de acceso del archivo de entrada WSDL.<br/> <br/>                                                                                      |
 
 
 
@@ -55,7 +55,7 @@ No hay atributos.
 
 | Elemento                                     | Descripción                                                                          |
 |---------------------------------------------|--------------------------------------------------------------------------------------|
-| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código de WSDAPI.<br/> <br/> |
+| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código WSDAPI.<br/> <br/> |
 
 
 

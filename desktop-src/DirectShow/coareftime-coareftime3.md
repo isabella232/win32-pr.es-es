@@ -1,7 +1,7 @@
 ---
 description: Obtenga información sobre el método del constructor COARefTime. COARefTime (Ctlutil. h). Este método usa el parámetro ' t '.
 ms.assetid: 1f3b5c63-edaa-42c1-8892-d6681c81ae4d
-title: 'Constructor COARefTime. COARefTime (Ctlutil. h): parámetro'
+title: COARefTime. COARefTime (Ctlutil. h)-t (parámetro)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8dbc173b85f86fdd8acaece56fdc5558ae813037
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 397c37e594024fe4b5e6bcb41e9cf7382d3e62a8
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105670281"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389125"
 ---
 # <a name="coareftimecoareftime-constructor-ctlutilh---t-parameter"></a>COARefTime. COARefTime (Ctlutil. h)-t (parámetro)
 
