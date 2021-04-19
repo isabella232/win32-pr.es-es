@@ -1,7 +1,7 @@
 ---
 description: Método de constructor.
 ms.assetid: 35198320-d028-42d4-823f-4f8346d8f977
-title: Constructor CMediaType. CMediaType (mtype. h)
+title: 'Constructor CMediaType. CMediaType (mtype. h): parámetros cmtype y PHR'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 776d59550d09396cc248937be611f2b4ec3699df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a40929bb6f53df7ce721e20eefba3019eb71cb0e
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689938"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389069"
 ---
 # <a name="cmediatypecmediatype-constructor-mtypeh"></a>Constructor CMediaType. CMediaType (mtype. h)
 
@@ -57,7 +57,7 @@ Puntero a una variable que recibe un valor HRESULT. Este parámetro puede ser un
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El constructor llama al método [**CMediaType:: InitMediaType**](cmediatype-initmediatype.md) para inicializar el tipo de archivo multimedia.
 

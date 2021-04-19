@@ -1,5 +1,5 @@
 ---
-title: Requisitos de certificación de escritorio
+title: Requisitos de certificación de escritorio (V3)
 description: Documento versión 3.3 documento fecha 18 de marzo de 2014This documento contiene los requisitos técnicos y las calificaciones de elegibilidad que una aplicación de escritorio debe cumplir para poder participar en el programa de certificación de aplicaciones de escritorio Windows 8.1.
 ms.assetid: BD4765EA-C8A1-4A9F-9C50-479A3612DB85
 ms.topic: article
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 71a9470605abf266efed516e473a31a497c74b10
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a6674b2f1d0d5acc30c12d4bd68a2d0a21724de
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359310"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388894"
 ---
 # <a name="certification-requirements-for-windows-desktop-apps-v33"></a>Requisitos de certificación para aplicaciones de escritorio de Windows v 3.3
 
@@ -203,12 +203,12 @@ Gracias de nuevo por unirse a nuestro compromiso de ofrecer fantásticas experie
 
 |              |         |                                        |                                                                              |
 |--------------|---------|----------------------------------------|------------------------------------------------------------------------------|
-| Fecha         | Versión | Descripción de la revisión                   | Vínculo a documento                                                             |
-| 20 de diciembre de 2011 | 1,0     | Borrador inicial del documento para la vista previa. |                                                                              |
-| 26 de enero de 2012 | 1,1     | Actualice a la sección \# 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md) |
+| Date         | Versión | Descripción de la revisión                   | Vínculo a documento                                                             |
+| 20 de diciembre de 2011 | 1.0     | Borrador inicial del documento para la vista previa. |                                                                              |
+| 26 de enero de 2012 | 1.1     | Actualice a la sección \# 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md) |
 | 31 de mayo de 2012 | 1.2     | Resultados de la prueba de Resumen agregados             | [1.2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md) |
 | 29 de junio de 2012 | 3.0     | Documento final de Windows 8               | [3.0](archive--certification-requirements-for-windows-desktop-apps-v3-0.md) |
-| 18 de junio de 2013 | 3.1     | Windows 8.1 documento                   | [3.1](archive--certification-requirements-for-windows-desktop-apps-v3-1.md) |
+| 18 de junio de 2013 | 3.1     | Windows 8.1 documento                   | [3,1](archive--certification-requirements-for-windows-desktop-apps-v3-1.md) |
 | 20 de febrero de 2014 | 3.2     | Actualización interna                        |                                                                              |
 | 18 de marzo de 2014 | 3.3     | Windows 8.1 Update 1                   | 3.3                                                                          |
 
