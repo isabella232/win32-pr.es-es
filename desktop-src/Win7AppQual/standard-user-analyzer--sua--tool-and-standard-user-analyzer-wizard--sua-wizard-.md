@@ -4,19 +4,19 @@ ms.assetid: 229ee531-32b9-4e11-b64c-3ce5b5ab6530
 title: Herramienta Analizador de usuario estándar (SUA) y Asistente para Analizador de usuario estándar (Asistente para SUA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc0e729c37ff1650f0dab7f3dd1c05ffb4b5f370
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 99a897c603f185db775c059e4b3dd4a040cba9ad
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104083528"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314588"
 ---
 # <a name="standard-user-analyzer-sua-tool-and-standard-user-analyzer-wizard-sua-wizard"></a>Herramienta Analizador de usuario estándar (SUA) y Asistente para Analizador de usuario estándar (Asistente para SUA)
 
 ## <a name="affected-platforms"></a>Plataformas afectadas
 
-**Clientes:** Windows XP Windows \| vista Windows \| 7  
-**Servidores:** Windows Server 2003 \| Windows server 2008 \| windows Server 2008 R2  
+**Clientes:** Windows XP, Windows Vista y Windows 7  
+**Servidores:** Windows Server 2003, Windows Server 2008, Windows Server 2008 R2  
 
 ## <a name="description"></a>Descripción
 
