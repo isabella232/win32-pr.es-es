@@ -4,21 +4,21 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_AdminRoamControl
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: AdminRoamControl
+title: AdminRoamControl (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbaece25829412f04f6f82226b8edd274f4aaef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a92ba97fd2657b28d1c845598825aae648124d36
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154209"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388873"
 ---
-# <a name="span-idwwan_profile_v4element_1_adminroamcontrolspanmodemdmconfigprofileadminroamcontrol-v4"></a><span data-ttu-id="8241e-103"><span id="WWAN_profile_v4.element_1_AdminRoamControl"></span>ModemDMConfigProfile \/ AdminRoamControl (v4)</span><span class="sxs-lookup"><span data-stu-id="8241e-103"><span id="WWAN_profile_v4.element_1_AdminRoamControl"></span>ModemDMConfigProfile\/AdminRoamControl (v4)</span></span>
+# <a name="span-idwwan_profile_v4element_1_adminroamcontrolspanmodemdmconfigprofileadminroamcontrol-v4"></a><span data-ttu-id="28790-103"><span id="WWAN_profile_v4.element_1_AdminRoamControl"></span>ModemDMConfigProfile \/ AdminRoamControl (v4)</span><span class="sxs-lookup"><span data-stu-id="28790-103"><span id="WWAN_profile_v4.element_1_AdminRoamControl"></span>ModemDMConfigProfile\/AdminRoamControl (v4)</span></span>
 
-<span data-ttu-id="8241e-104">Especifica si el perfil está controlado por itinerancia administrativa.</span><span class="sxs-lookup"><span data-stu-id="8241e-104">Specifies whether the profile is administratively roam controlled.</span></span> <span data-ttu-id="8241e-105">Este elemento es nuevo para V4.</span><span class="sxs-lookup"><span data-stu-id="8241e-105">This element is new for v4.</span></span> <span data-ttu-id="8241e-106">El valor de este elemento es un valor de [**roamControlType**](simpletype-roamcontroltype.md) .</span><span class="sxs-lookup"><span data-stu-id="8241e-106">The value of this element is a [**roamControlType**](simpletype-roamcontroltype.md) value.</span></span> <span data-ttu-id="8241e-107">Este es un elemento opcional; Si no se especifica ningún valor, **AllRoamAllowed** es el valor predeterminado.</span><span class="sxs-lookup"><span data-stu-id="8241e-107">This is an optional element; if no value is specified, then **AllRoamAllowed** is the default.</span></span>
+<span data-ttu-id="28790-104">Especifica si el perfil está controlado por itinerancia administrativa.</span><span class="sxs-lookup"><span data-stu-id="28790-104">Specifies whether the profile is administratively roam controlled.</span></span> <span data-ttu-id="28790-105">Este elemento es nuevo para V4.</span><span class="sxs-lookup"><span data-stu-id="28790-105">This element is new for v4.</span></span> <span data-ttu-id="28790-106">El valor de este elemento es un valor de [**roamControlType**](simpletype-roamcontroltype.md) .</span><span class="sxs-lookup"><span data-stu-id="28790-106">The value of this element is a [**roamControlType**](simpletype-roamcontroltype.md) value.</span></span> <span data-ttu-id="28790-107">Este es un elemento opcional; Si no se especifica ningún valor, **AllRoamAllowed** es el valor predeterminado.</span><span class="sxs-lookup"><span data-stu-id="28790-107">This is an optional element; if no value is specified, then **AllRoamAllowed** is the default.</span></span>
 
-## <a name="element-hierarchy"></a><span data-ttu-id="8241e-108">Jerarquía de elemento</span><span class="sxs-lookup"><span data-stu-id="8241e-108">Element hierarchy</span></span>
+## <a name="element-hierarchy"></a><span data-ttu-id="28790-108">Jerarquía de elemento</span><span class="sxs-lookup"><span data-stu-id="28790-108">Element hierarchy</span></span>
 
 [\<MBNProfileExt\>](element-mbnprofileext.md)  
 &nbsp;&nbsp;**\<AdminRoamControl\>**
@@ -26,7 +26,7 @@ ms.locfileid: "104154209"
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<AdminRoamControl\>**
 
-## <a name="syntax"></a><span data-ttu-id="8241e-109">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="8241e-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="28790-109">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="28790-109">Syntax</span></span>
 
 ``` syntax
 <AdminRoamControl>
@@ -36,17 +36,17 @@ ms.locfileid: "104154209"
 </AdminRoamControl>
 ```
 
-## <a name="span-idattributes_and_elementsspanspan-idattributes_and_elementsspanspan-idattributes_and_elementsspanattributes-and-elements"></a><span data-ttu-id="8241e-110"><span id="Attributes_and_Elements"></span><span id="attributes_and_elements"></span><span id="ATTRIBUTES_AND_ELEMENTS"></span>Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="8241e-110"><span id="Attributes_and_Elements"></span><span id="attributes_and_elements"></span><span id="ATTRIBUTES_AND_ELEMENTS"></span>Attributes and Elements</span></span>
+## <a name="span-idattributes_and_elementsspanspan-idattributes_and_elementsspanspan-idattributes_and_elementsspanattributes-and-elements"></a><span data-ttu-id="28790-110"><span id="Attributes_and_Elements"></span><span id="attributes_and_elements"></span><span id="ATTRIBUTES_AND_ELEMENTS"></span>Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="28790-110"><span id="Attributes_and_Elements"></span><span id="attributes_and_elements"></span><span id="ATTRIBUTES_AND_ELEMENTS"></span>Attributes and Elements</span></span>
 
-### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span data-ttu-id="8241e-111"><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos</span><span class="sxs-lookup"><span data-stu-id="8241e-111"><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes</span></span>
+### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span data-ttu-id="28790-111"><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos</span><span class="sxs-lookup"><span data-stu-id="28790-111"><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes</span></span>
 
-<span data-ttu-id="8241e-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="8241e-112">None.</span></span>
+<span data-ttu-id="28790-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="28790-112">None.</span></span>
 
-### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span data-ttu-id="8241e-113"><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="8241e-113"><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child Elements</span></span>
+### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span data-ttu-id="28790-113"><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="28790-113"><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child Elements</span></span>
 
-<span data-ttu-id="8241e-114">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="8241e-114">None.</span></span>
+<span data-ttu-id="28790-114">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="28790-114">None.</span></span>
 
-### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span data-ttu-id="8241e-115"><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios</span><span class="sxs-lookup"><span data-stu-id="8241e-115"><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent Elements</span></span>
+### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span data-ttu-id="28790-115"><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios</span><span class="sxs-lookup"><span data-stu-id="28790-115"><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent Elements</span></span>
 
 <table>
 <colgroup>
@@ -55,26 +55,26 @@ ms.locfileid: "104154209"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8241e-116">Elemento primario</span><span class="sxs-lookup"><span data-stu-id="8241e-116">Parent Element</span></span></th>
-<th><span data-ttu-id="8241e-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="8241e-117">Description</span></span></th>
+<th><span data-ttu-id="28790-116">Elemento primario</span><span class="sxs-lookup"><span data-stu-id="28790-116">Parent Element</span></span></th>
+<th><span data-ttu-id="28790-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="28790-117">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="8241e-118"><a href="element-mbnprofileext.md">MBNProfileExt</a></span><span class="sxs-lookup"><span data-stu-id="8241e-118"><a href="element-mbnprofileext.md">MBNProfileExt</a></span></span></td>
-<td><p><span data-ttu-id="8241e-119">El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior.</span><span class="sxs-lookup"><span data-stu-id="8241e-119">The <strong>MBNProfileExt</strong> element is an extension of the earlier MBNProfile element.</span></span> <span data-ttu-id="8241e-120">Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</span><span class="sxs-lookup"><span data-stu-id="8241e-120">It identifies a Mobile Broadband profile with a richer set of options than the MBNProfile element.</span></span></p>
-<p><span data-ttu-id="8241e-121">Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento.</span><span class="sxs-lookup"><span data-stu-id="8241e-121">There can be more than one MbnProfileExt element in a profile, describing profile settings for a particular set of operating conditions.</span></span> <span data-ttu-id="8241e-122">Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</span><span class="sxs-lookup"><span data-stu-id="8241e-122">Use the <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> child element of <strong>MBNProfileExt</strong> to specify which operating conditions make a particular profile the active profile.</span></span></p></td>
+<td><span data-ttu-id="28790-118"><a href="element-mbnprofileext.md">MBNProfileExt</a></span><span class="sxs-lookup"><span data-stu-id="28790-118"><a href="element-mbnprofileext.md">MBNProfileExt</a></span></span></td>
+<td><p><span data-ttu-id="28790-119">El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior.</span><span class="sxs-lookup"><span data-stu-id="28790-119">The <strong>MBNProfileExt</strong> element is an extension of the earlier MBNProfile element.</span></span> <span data-ttu-id="28790-120">Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</span><span class="sxs-lookup"><span data-stu-id="28790-120">It identifies a Mobile Broadband profile with a richer set of options than the MBNProfile element.</span></span></p>
+<p><span data-ttu-id="28790-121">Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento.</span><span class="sxs-lookup"><span data-stu-id="28790-121">There can be more than one MbnProfileExt element in a profile, describing profile settings for a particular set of operating conditions.</span></span> <span data-ttu-id="28790-122">Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</span><span class="sxs-lookup"><span data-stu-id="28790-122">Use the <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> child element of <strong>MBNProfileExt</strong> to specify which operating conditions make a particular profile the active profile.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="8241e-123"><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></span><span class="sxs-lookup"><span data-stu-id="8241e-123"><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></span></span></td>
-<td><p><span data-ttu-id="8241e-124">Perfil de configuración de DM de módem.</span><span class="sxs-lookup"><span data-stu-id="8241e-124">Modem DM configuration profile.</span></span></p></td>
+<td><span data-ttu-id="28790-123"><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></span><span class="sxs-lookup"><span data-stu-id="28790-123"><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></span></span></td>
+<td><p><span data-ttu-id="28790-124">Perfil de configuración de DM de módem.</span><span class="sxs-lookup"><span data-stu-id="28790-124">Modem DM configuration profile.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-## <a name="requirements"></a><span data-ttu-id="8241e-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8241e-125">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="28790-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="28790-125">Requirements</span></span>
 
 <table>
 <colgroup>
@@ -83,7 +83,7 @@ ms.locfileid: "104154209"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8241e-126">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="8241e-126">Namespace</span></span></p></td>
+<td><p><span data-ttu-id="28790-126">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="28790-126">Namespace</span></span></p></td>
 <td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
 </tr>
 </tbody>
