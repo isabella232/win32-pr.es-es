@@ -4,19 +4,19 @@ description: Actualización de compatibilidad de disco Advanced Format (4K)
 ms.assetid: 2C9EB0CF-D27B-457A-8FE6-24824BCC084C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0321570e5ed1cc09ef213e97bf4681b8ea0caec0
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: fbad505575c4479bd750f09ccd83bc4da4c39667
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "103904880"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314978"
 ---
 # <a name="advanced-format-4k-disk-compatibility-update"></a>Actualización de compatibilidad de disco Advanced Format (4K)
 
 ## <a name="platforms"></a>Plataformas
 
-**Clientes**   de   Windows XP Windows Vista Windows 7 Windows 7 \| \| \| SP1 \| Windows 8  
-**Servidores**   de   Windows Server 2003 \| Windows server 2008 \| windows Server 2008 R2 \| Windows Server 2008 R2 SP1 \| Windows Server 2012 \| Windows server 2012 R2 \| Windows Server 2016  
+**Clientes**   de   Windows XP, Windows Vista, Windows 7, Windows 7 SP1, Windows 8  
+**Servidores**   de   Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2 y Windows Server 2016  
 
 
 ## <a name="description"></a>Descripción

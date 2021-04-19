@@ -5,12 +5,12 @@ ms.assetid: 45281b42-5cb2-42f9-9c7c-f3e3174b0f9d
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e6d0303ee933b81f0c8553b6b0adae64db7f48d
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 7e1099028bc85dc6492eade0315b7308b4c6aaa9
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103904417"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314618"
 ---
 # <a name="joining-heterogeneous-data"></a>Combinar datos heterogéneos
 
@@ -69,7 +69,7 @@ Con, SQL Server 7,0, ADSI y el proveedor de OLE DB, es posible combinar datos de
 
     En el ejemplo anterior, la consulta LDAP tiene cuatro partes:
 
-    -   " <LDAP://DC=Fabrikam,DC=COM> " es el nombre distintivo del servidor de directorio en el que se va a buscar.
+    -   " \<LDAP://DC=Fabrikam,DC=COM> " es el nombre distintivo del servidor de directorio en el que se va a buscar.
     -   "(& (objectCategory = person) (objectClass = User))" es el filtro de búsqueda LDAP (consulte [Sintaxis de filtro de búsqueda](search-filter-syntax.md)).
     -   "Name, ADsPath" son los nombres (con el formato de nombre para mostrar LDAP) de los atributos que se van a recuperar.
     -   "subárbol" indica el [ámbito](scope-of-query.md) de la búsqueda.
@@ -81,9 +81,9 @@ Con, SQL Server 7,0, ADSI y el proveedor de OLE DB, es posible combinar datos de
 [Crear y ejecutar una vista](creating-and-executing-a-view.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
