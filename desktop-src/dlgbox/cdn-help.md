@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CDN_HELP (commdlg. h)
-description: Enviado por un cuadro de diálogo abrir o guardar como del explorador cuando el usuario hace clic en el botón ayuda.
+title: CDN_HELP de notificación (Commdlg.h)
+description: Enviado por un cuadro de diálogo Abrir o Guardar como de estilo explorador cuando el usuario hace clic en el botón Ayuda.
 ms.assetid: 18ee86b2-3446-4de4-a47a-2e44e677f4f7
 keywords:
-- CDN_HELP cuadros de diálogo código de notificación
+- CDN_HELP de diálogo del código de notificación
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c73b690b1ac522a985ae121413804c4385e0f2cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5c03fae474f6622e1ccec0c5b52b0dfb473ba438
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150831"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590852"
 ---
-# <a name="cdn_help-notification-code"></a>Código de notificación de ayuda de CDN \_
+# <a name="cdn_help-notification-code"></a>Código de notificación HELP de CDN \_
 
-\[A partir de Windows Vista, los cuadros de diálogo **abrir** y **Guardar como** común se han sustituido por el [cuadro de diálogo de elementos comunes](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Se recomienda usar la API de cuadros de diálogo de elementos comunes en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo comunes.\]
+\[A partir de Windows Vista, **los** cuadros **de** diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo de elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Enviado por un cuadro de diálogo **abrir** o **Guardar como** del explorador cuando el usuario hace clic en el botón **ayuda** .
+Enviado por un cuadro de **diálogo** Abrir o Guardar **como** de estilo explorador cuando el usuario hace clic en el **botón** Ayuda.
 
-El procedimiento de enlace de [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje de [**\_ notificación de WM**](../controls/wm-notify.md) .
+El [*procedimiento de enlace OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**imnotify**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . La estructura **imnotify** contiene una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cuyo miembro de **código** indica el mensaje de notificación de la **\_ ayuda de CDN** .
+Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **estructura OFNOTIFY contiene** una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el mensaje de **notificación HELP \_ de cdn.**
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Se omite el valor devuelto.
 
 ## <a name="remarks"></a>Observaciones
 
-El sistema envía esta notificación solo si el cuadro de diálogo se creó con el valor del **\_ Explorador OFN** .
+El sistema envía esta notificación solo si el cuadro de diálogo se creó con el **valor OFN \_ EXPLORER.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,11 +71,11 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -91,16 +91,16 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
 </dt> <dt>
 
-[**No NOTIFICAr**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
+[**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  
