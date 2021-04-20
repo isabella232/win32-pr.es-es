@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de timeTriggerType
+title: tipo complejo timeTriggerType
 description: Define el tipo base para el elemento TimeTrigger.
 ms.assetid: 3aabfb7a-3e11-4b67-8345-cc5088f11efc
 keywords:
-- tipo complejo de timeTriggerType Programador de tareas
+- Tipo complejo timeTriggerType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8ca21464df967ff473a767e814b9ce6969a56c00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f44f0959a9f67e4bfee0b0ef5dd7f095ffbadce
+ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676622"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107734140"
 ---
-# <a name="timetriggertype-complex-type"></a>Tipo complejo de timeTriggerType
+# <a name="timetriggertype-complex-type"></a>tipo complejo timeTriggerType
 
-Define el tipo base para el elemento [**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md) .
+Define el tipo base para el [**elemento TimeTrigger.**](taskschedulerschema-timetrigger-triggergroup-element.md)
 
 ``` syntax
 <xs:complexType name="timeTriggerType">
@@ -45,32 +45,32 @@ Define el tipo base para el elemento [**TimeTrigger**](taskschedulerschema-timet
 
 
 
-| Elemento                                                                        | Tipo     | Descripción                                                                                                                                                                                                                                 |
+| Elemento                                                                        | Tipo     | Description                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**RandomDelay**](taskschedulerschema-randomdelay-timetriggertype-element.md) | duration | Especifica el tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. El formato de esta cadena es P <days> DT <hours> H <minutes> M <seconds> S (por ejemplo, P2DT5S es un retraso de 2 días y 5 segundos). <br/> |
+| [**RandomDelay**](taskschedulerschema-randomdelay-timetriggertype-element.md) | duration | Especifica el tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. El formato de esta cadena es `P<days>DT<hours>H<minutes>M<seconds>S` (por ejemplo, P2DT5S es un retraso de 2 días y 5 segundos). <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que este elemento no agrega ningún elemento secundario a los definidos por el tipo complejo [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) .
+Tenga en cuenta que este elemento no agrega ningún elemento secundario a los definidos por el tipo complejo [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)
