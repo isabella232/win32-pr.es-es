@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ACTIVATION_CELU_OPERATOR_DESC
 title: DML_ACTIVATION_CELU_OPERATOR_DESC
-description: Realiza la función de activación de la unidad lineal exponencial (CELU) continuamente diferenciable en todos los elementos de *InputTensor*, colocando el resultado en el elemento correspondiente de *OutputTensor*.
+description: Realiza la función de activación de unidad lineal exponencial (CELU) que se diferencia continuamente en cada elemento de *InputTensor,* colocando el resultado en el elemento correspondiente de *OutputTensor*.
 helpviewer_keywords:
 - DML_ACTIVATION_CELU_OPERATOR_DESC
 - DML_ACTIVATION_CELU_OPERATOR_DESC structure
@@ -45,32 +45,32 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ACTIVATION_CELU_OPERATOR_DESC
-ms.openlocfilehash: d474bd44c8a830117bb62927f4bda954a753b612
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b6497e995601d7e9e01696f39920672674be07c4
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721216"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803728"
 ---
-# <a name="dml_activation_celu_operator_desc-structure-directmlh"></a><span data-ttu-id="035ba-103">DML_ACTIVATION_CELU_OPERATOR_DESC estructura (directml. h)</span><span class="sxs-lookup"><span data-stu-id="035ba-103">DML_ACTIVATION_CELU_OPERATOR_DESC structure (directml.h)</span></span>
+# <a name="dml_activation_celu_operator_desc-structure-directmlh"></a><span data-ttu-id="8f755-103">DML_ACTIVATION_CELU_OPERATOR_DESC estructura (directml.h)</span><span class="sxs-lookup"><span data-stu-id="8f755-103">DML_ACTIVATION_CELU_OPERATOR_DESC structure (directml.h)</span></span>
 
-<span data-ttu-id="035ba-104">Realiza la función de activación de la unidad lineal exponencial (CELU) continuamente diferenciable en todos los elementos de *InputTensor*, colocando el resultado en el elemento correspondiente de *OutputTensor*.</span><span class="sxs-lookup"><span data-stu-id="035ba-104">Performs the continuously differentiable exponential linear unit (CELU) activation function on every element in *InputTensor*, placing the result into the corresponding element of *OutputTensor*.</span></span>
+<span data-ttu-id="8f755-104">Realiza la función de activación de unidad lineal exponencial (CELU) que se diferencia continuamente en cada elemento de *InputTensor,* colocando el resultado en el elemento correspondiente de *OutputTensor*.</span><span class="sxs-lookup"><span data-stu-id="8f755-104">Performs the continuously differentiable exponential linear unit (CELU) activation function on every element in *InputTensor*, placing the result into the corresponding element of *OutputTensor*.</span></span>
 
 ```
 f(x) = max(0, x) + min(0, Alpha * (exp(x / Alpha) - 1));
 ```
 
-<span data-ttu-id="035ba-105">Donde:</span><span class="sxs-lookup"><span data-stu-id="035ba-105">Where:</span></span>
-* <span data-ttu-id="035ba-106">exp (x) es la función de exponenciación natural</span><span class="sxs-lookup"><span data-stu-id="035ba-106">exp(x) is the natural exponentiation function</span></span>
-* <span data-ttu-id="035ba-107">Max (a, b) devuelve el mayor de los dos valores a, b</span><span class="sxs-lookup"><span data-stu-id="035ba-107">max(a,b) returns the larger of the two values a,b</span></span>
-* <span data-ttu-id="035ba-108">min (a, b) devuelve el menor de los dos valores a, b</span><span class="sxs-lookup"><span data-stu-id="035ba-108">min(a,b) returns the smaller of the two values a,b</span></span>
+<span data-ttu-id="8f755-105">Donde:</span><span class="sxs-lookup"><span data-stu-id="8f755-105">Where:</span></span>
+* <span data-ttu-id="8f755-106">exp(x) es la función de exponenciación natural</span><span class="sxs-lookup"><span data-stu-id="8f755-106">exp(x) is the natural exponentiation function</span></span>
+* <span data-ttu-id="8f755-107">max(a,b) devuelve el mayor de los dos valores a,b</span><span class="sxs-lookup"><span data-stu-id="8f755-107">max(a,b) returns the larger of the two values a,b</span></span>
+* <span data-ttu-id="8f755-108">min(a,b) devuelve el menor de los dos valores a,b</span><span class="sxs-lookup"><span data-stu-id="8f755-108">min(a,b) returns the smaller of the two values a,b</span></span>
 
-<span data-ttu-id="035ba-109">Este operador es compatible con la ejecución en contexto, lo que significa que el tensores de salida está permitido para el alias *InputTensor* durante el enlace.</span><span class="sxs-lookup"><span data-stu-id="035ba-109">This operator supports in-place execution, meaning that the output tensor is permitted to alias *InputTensor* during binding.</span></span>
+<span data-ttu-id="8f755-109">Este operador admite la ejecución en contexto, lo que significa que el tensor de salida puede usar el alias *InputTensor durante* el enlace.</span><span class="sxs-lookup"><span data-stu-id="8f755-109">This operator supports in-place execution, meaning that the output tensor is permitted to alias *InputTensor* during binding.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="035ba-110">Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span><span class="sxs-lookup"><span data-stu-id="035ba-110">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span></span> <span data-ttu-id="035ba-111">Consulte también el [historial de versiones de DirectML](../dml-version-history.md).</span><span class="sxs-lookup"><span data-stu-id="035ba-111">Also see [DirectML version history](../dml-version-history.md).</span></span>
+> <span data-ttu-id="8f755-110">Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores).</span><span class="sxs-lookup"><span data-stu-id="8f755-110">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.4 and later.</span></span> <span data-ttu-id="8f755-111">Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)</span><span class="sxs-lookup"><span data-stu-id="8f755-111">Also see [DirectML version history](../dml-version-history.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="035ba-112">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="035ba-112">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8f755-112">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="8f755-112">Syntax</span></span>
 ```cpp
 struct DML_ACTIVATION_CELU_OPERATOR_DESC
 {
@@ -80,39 +80,39 @@ struct DML_ACTIVATION_CELU_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="035ba-113">Miembros</span><span class="sxs-lookup"><span data-stu-id="035ba-113">Members</span></span>
+## <a name="members"></a><span data-ttu-id="8f755-113">Miembros</span><span class="sxs-lookup"><span data-stu-id="8f755-113">Members</span></span>
 
 `InputTensor`
 
-<span data-ttu-id="035ba-114">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="035ba-114">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
+<span data-ttu-id="8f755-114">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="8f755-114">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
 
-<span data-ttu-id="035ba-115">Tensores de entrada del que se va a leer.</span><span class="sxs-lookup"><span data-stu-id="035ba-115">The input tensor to read from.</span></span>
+<span data-ttu-id="8f755-115">Tensor de entrada del que se leerá.</span><span class="sxs-lookup"><span data-stu-id="8f755-115">The input tensor to read from.</span></span>
 
 `OutputTensor`
 
-<span data-ttu-id="035ba-116">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="035ba-116">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
+<span data-ttu-id="8f755-116">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="8f755-116">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
 
-<span data-ttu-id="035ba-117">Tensores de salida en el que se van a escribir los resultados.</span><span class="sxs-lookup"><span data-stu-id="035ba-117">The output tensor to write the results to.</span></span>
+<span data-ttu-id="8f755-117">Tensor de salida en el que se escriben los resultados.</span><span class="sxs-lookup"><span data-stu-id="8f755-117">The output tensor to write the results to.</span></span>
 
 `Alpha`
 
-<span data-ttu-id="035ba-118">Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b></span><span class="sxs-lookup"><span data-stu-id="035ba-118">Type: <b><a href="/windows/desktop/WinProg/windows-data-types">FLOAT</a></b></span></span>
+<span data-ttu-id="8f755-118">Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">FLOAT</a></b></span><span class="sxs-lookup"><span data-stu-id="8f755-118">Type: <b><a href="/windows/win32/winprog/windows-data-types">FLOAT</a></b></span></span>
 
-<span data-ttu-id="035ba-119">Coeficiente alfa.</span><span class="sxs-lookup"><span data-stu-id="035ba-119">The alpha coefficient.</span></span> <span data-ttu-id="035ba-120">Un valor predeterminado típico para este valor es 1,0.</span><span class="sxs-lookup"><span data-stu-id="035ba-120">A typical default for this value is 1.0.</span></span>
+<span data-ttu-id="8f755-119">Coeficiente alfa.</span><span class="sxs-lookup"><span data-stu-id="8f755-119">The alpha coefficient.</span></span> <span data-ttu-id="8f755-120">Un valor predeterminado típico para este valor es 1.0.</span><span class="sxs-lookup"><span data-stu-id="8f755-120">A typical default for this value is 1.0.</span></span>
 
-## <a name="availability"></a><span data-ttu-id="035ba-121">Disponibilidad</span><span class="sxs-lookup"><span data-stu-id="035ba-121">Availability</span></span>
-<span data-ttu-id="035ba-122">Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .</span><span class="sxs-lookup"><span data-stu-id="035ba-122">This operator was introduced in `DML_FEATURE_LEVEL_3_0`.</span></span>
+## <a name="availability"></a><span data-ttu-id="8f755-121">Disponibilidad</span><span class="sxs-lookup"><span data-stu-id="8f755-121">Availability</span></span>
+<span data-ttu-id="8f755-122">Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .</span><span class="sxs-lookup"><span data-stu-id="8f755-122">This operator was introduced in `DML_FEATURE_LEVEL_3_0`.</span></span>
 
-## <a name="tensor-constraints"></a><span data-ttu-id="035ba-123">Restricciones de tensores</span><span class="sxs-lookup"><span data-stu-id="035ba-123">Tensor constraints</span></span>
-<span data-ttu-id="035ba-124">*InputTensor* y *OutputTensor* deben tener el mismo *tipo de DataType*, *DimensionCount* y *tamaños*.</span><span class="sxs-lookup"><span data-stu-id="035ba-124">*InputTensor* and *OutputTensor* must have the same *DataType*, *DimensionCount*, and *Sizes*.</span></span>
+## <a name="tensor-constraints"></a><span data-ttu-id="8f755-123">Restricciones de tensor</span><span class="sxs-lookup"><span data-stu-id="8f755-123">Tensor constraints</span></span>
+<span data-ttu-id="8f755-124">*InputTensor* y *OutputTensor* deben tener los mismos *valores de DataType,* *DimensionCount* y *Sizes.*</span><span class="sxs-lookup"><span data-stu-id="8f755-124">*InputTensor* and *OutputTensor* must have the same *DataType*, *DimensionCount*, and *Sizes*.</span></span>
 
-## <a name="tensor-support"></a><span data-ttu-id="035ba-125">Compatibilidad con tensores</span><span class="sxs-lookup"><span data-stu-id="035ba-125">Tensor support</span></span>
-| <span data-ttu-id="035ba-126">Tensores</span><span class="sxs-lookup"><span data-stu-id="035ba-126">Tensor</span></span> | <span data-ttu-id="035ba-127">Clase</span><span class="sxs-lookup"><span data-stu-id="035ba-127">Kind</span></span> | <span data-ttu-id="035ba-128">Recuentos de dimensiones compatibles</span><span class="sxs-lookup"><span data-stu-id="035ba-128">Supported Dimension Counts</span></span> | <span data-ttu-id="035ba-129">Tipos de datos admitidos</span><span class="sxs-lookup"><span data-stu-id="035ba-129">Supported Data Types</span></span> |
+## <a name="tensor-support"></a><span data-ttu-id="8f755-125">Compatibilidad con Tensor</span><span class="sxs-lookup"><span data-stu-id="8f755-125">Tensor support</span></span>
+| <span data-ttu-id="8f755-126">Tensor</span><span class="sxs-lookup"><span data-stu-id="8f755-126">Tensor</span></span> | <span data-ttu-id="8f755-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="8f755-127">Kind</span></span> | <span data-ttu-id="8f755-128">Recuentos de dimensiones admitidos</span><span class="sxs-lookup"><span data-stu-id="8f755-128">Supported Dimension Counts</span></span> | <span data-ttu-id="8f755-129">Tipos de datos admitidos</span><span class="sxs-lookup"><span data-stu-id="8f755-129">Supported Data Types</span></span> |
 | ------ | ---- | -------------------------- | -------------------- |
-| <span data-ttu-id="035ba-130">InputTensor</span><span class="sxs-lookup"><span data-stu-id="035ba-130">InputTensor</span></span> | <span data-ttu-id="035ba-131">Entrada</span><span class="sxs-lookup"><span data-stu-id="035ba-131">Input</span></span> | <span data-ttu-id="035ba-132">de 1 a 8</span><span class="sxs-lookup"><span data-stu-id="035ba-132">1 to 8</span></span> | <span data-ttu-id="035ba-133">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="035ba-133">FLOAT32, FLOAT16</span></span> |
-| <span data-ttu-id="035ba-134">OutputTensor</span><span class="sxs-lookup"><span data-stu-id="035ba-134">OutputTensor</span></span> | <span data-ttu-id="035ba-135">Output</span><span class="sxs-lookup"><span data-stu-id="035ba-135">Output</span></span> | <span data-ttu-id="035ba-136">de 1 a 8</span><span class="sxs-lookup"><span data-stu-id="035ba-136">1 to 8</span></span> | <span data-ttu-id="035ba-137">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="035ba-137">FLOAT32, FLOAT16</span></span> |
+| <span data-ttu-id="8f755-130">InputTensor</span><span class="sxs-lookup"><span data-stu-id="8f755-130">InputTensor</span></span> | <span data-ttu-id="8f755-131">Entrada</span><span class="sxs-lookup"><span data-stu-id="8f755-131">Input</span></span> | <span data-ttu-id="8f755-132">De 1 a 8</span><span class="sxs-lookup"><span data-stu-id="8f755-132">1 to 8</span></span> | <span data-ttu-id="8f755-133">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="8f755-133">FLOAT32, FLOAT16</span></span> |
+| <span data-ttu-id="8f755-134">OutputTensor</span><span class="sxs-lookup"><span data-stu-id="8f755-134">OutputTensor</span></span> | <span data-ttu-id="8f755-135">Resultados</span><span class="sxs-lookup"><span data-stu-id="8f755-135">Output</span></span> | <span data-ttu-id="8f755-136">De 1 a 8</span><span class="sxs-lookup"><span data-stu-id="8f755-136">1 to 8</span></span> | <span data-ttu-id="8f755-137">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="8f755-137">FLOAT32, FLOAT16</span></span> |
 
-## <a name="requirements"></a><span data-ttu-id="035ba-138">Requisitos</span><span class="sxs-lookup"><span data-stu-id="035ba-138">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="8f755-138">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8f755-138">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="035ba-139">**Header**</span><span class="sxs-lookup"><span data-stu-id="035ba-139">**Header**</span></span> | <span data-ttu-id="035ba-140">directml. h</span><span class="sxs-lookup"><span data-stu-id="035ba-140">directml.h</span></span> |
+| <span data-ttu-id="8f755-139">**Header**</span><span class="sxs-lookup"><span data-stu-id="8f755-139">**Header**</span></span> | <span data-ttu-id="8f755-140">directml.h</span><span class="sxs-lookup"><span data-stu-id="8f755-140">directml.h</span></span> |
