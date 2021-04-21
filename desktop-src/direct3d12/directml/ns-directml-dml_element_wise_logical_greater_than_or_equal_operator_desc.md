@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC
 title: DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC
-description: Realiza una operación lógica *mayor o igual que* en cada par de elementos correspondientes de los diez de entrada, colocando el resultado (1 para true, 0 para false) en el elemento correspondiente de *OutputTensor*.
+description: Realiza un  valor lógico mayor o igual que en cada par de elementos correspondientes de los tensores de entrada, colocando el resultado (1 para true, 0 para false) en el elemento correspondiente de *OutputTensor*.
 helpviewer_keywords:
 - DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC
 - DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC structure
@@ -45,23 +45,23 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC
-ms.openlocfilehash: bfe3c3abbabf0bd4f5dfa4d8393f3ed7d74a210f
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 4c20580a67117e6a605dfb0bf6611aca5cfd9e56
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721212"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803093"
 ---
-# <a name="dml_element_wise_logical_greater_than_or_equal_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_element_wise_logical_greater_than_or_equal_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC estructura (directml.h)
 
-Realiza una operación lógica *mayor o igual que* en cada par de elementos correspondientes de los diez de entrada, colocando el resultado (1 para true, 0 para false) en el elemento correspondiente de *OutputTensor*.
+Realiza un  valor lógico mayor o igual que en cada par de elementos correspondientes de los tensores de entrada, colocando el resultado (1 para true, 0 para false) en el elemento correspondiente de *OutputTensor*.
 
 ```
 f(a, b) = (a >= b)
 ```
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -80,35 +80,35 @@ struct DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores que contiene las entradas del lado izquierdo.
+Tensor que contiene las entradas del lado izquierdo.
 
 `BTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores que contiene las entradas del lado derecho.
+Tensor que contiene las entradas del lado derecho.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida en el que se van a escribir los resultados.
+Tensor de salida en el que se escriben los resultados.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *ATensor* y *BTensor* deben tener el mismo *tipo de texto*.
-* *ATensor*, *BTensor* y *OutputTensor* deben tener los mismos *tamaños* de *DimensionCount* y.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+* *ATensor* y *BTensor* deben tener el mismo *DataType.*
+* *ATensor,* *BTensor* y *OutputTensor* deben tener los mismos *dimensioncount* y *sizes.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| ATensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| BTensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputTensor | Output | de 1 a 8 | UINT32, UINT8 |
+| ATensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| BTensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputTensor | Resultados | De 1 a 8 | UINT32, UINT8 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

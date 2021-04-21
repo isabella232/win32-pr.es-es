@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC
 title: DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC
-description: Realiza una circunvolución del *FilterTensor* con *InputTensor*. Este operador realiza la circunvolución hacia delante en los datos cuantificados. Este operador es matemáticamente equivalente a descuantificar las entradas, Convolving y, a continuación, cuantificando la salida.
+description: Realiza una convolución del *filterTensor* con *InputTensor*. Este operador realiza la convolución hacia delante en datos cuantificados. Este operador es matemáticamente equivalente a descuantizar las entradas, implicar y, a continuación, cuantificar la salida.
 helpviewer_keywords:
 - DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC
 - DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC structure
@@ -44,32 +44,32 @@ api_location:
 - DirectML.h
 api_name:
 - DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC
-ms.openlocfilehash: 01193b19744f413690a3cb5ecccbb8fa60626cb0
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 4dd50d80dfe4ae60e3fe7e67124ef00bfbc7bf2b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721269"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803883"
 ---
-# <a name="dml_quantized_linear_convolution_operator_desc-structure-directmlh"></a>DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC estructura (directml. h)
-Realiza una circunvolución del *FilterTensor* con *InputTensor*. Este operador realiza la circunvolución hacia delante en los datos cuantificados. Este operador es matemáticamente equivalente a descuantificar las entradas, Convolving y, a continuación, cuantificando la salida. 
+# <a name="dml_quantized_linear_convolution_operator_desc-structure-directmlh"></a>DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC estructura (directml.h)
+Realiza una convolución del *filterTensor* con *InputTensor*. Este operador realiza la convolución hacia delante en datos cuantificados. Este operador es matemáticamente equivalente a descuantizar las entradas, implicar y, a continuación, cuantificar la salida. 
 
-Las funciones de cuantificación lineal utilizadas por este operador son las funciones de cuantificación lineal
+Las funciones lineales de cuantificación usadas por este operador son las funciones de cuantificación lineal
 
-### <a name="dequantize-function"></a>Descuantificar función
+### <a name="dequantize-function"></a>Desquantize (Función)
 
 ```
 f(Input, Scale, ZeroPoint) = (Input - ZeroPoint) * Scale
 ```
 
-### <a name="quantize-function"></a>Función cuantificate
+### <a name="quantize-function"></a>Cuantificación de la función
 
 ```
 f(Input, Scale, ZeroPoint) = clamp(round(Input / Scale) + ZeroPoint, Min, Max)
 ```
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -101,123 +101,123 @@ struct DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de entrada. Las dimensiones esperadas de *InputTensor* son `{ InputBatchCount, InputChannelCount, InputHeight, InputWidth }` .
+Tensor que contiene los datos de entrada. Las dimensiones esperadas de *InputTensor* son `{ InputBatchCount, InputChannelCount, InputHeight, InputWidth }` .
 
 
 `InputScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de la escala de entrada. Las dimensiones esperadas de `InputScaleTensor` son `{ 1, 1, 1, 1 }` . Este valor de escala se usa para descuantificar los valores de entrada.
+Tensor que contiene los datos de escala de entrada. Las dimensiones esperadas de son `InputScaleTensor` `{ 1, 1, 1, 1 }` . Este valor de escala se usa para descuantizar los valores de entrada.
 
 
 `InputZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores opcional que contiene los datos de punto cero de entrada. Las dimensiones esperadas de *InputZeroPointTensor* son `{ 1, 1, 1, 1 }` . Este valor de punto cero se usa para descuantificar los valores de entrada.
+Tensor opcional que contiene los datos de punto cero de entrada. Las dimensiones esperadas de *InputZeroPointTensor* son `{ 1, 1, 1, 1 }` . Este valor de punto cero se usa para descuantizar los valores de entrada.
 
 
 `FilterTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos del filtro. Las dimensiones esperadas de *FilterTensor* son `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
+Tensor que contiene los datos de filtro. Las dimensiones esperadas del *filterTensor* son `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
 
 
 `FilterScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de la escala del filtro. Las dimensiones esperadas de `FilterScaleTensor` son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores o `{ 1, OutputChannelCount, 1, 1 }` si se requiere la cuantificación por canal. Este valor de escala se usa para descuantificar los valores de filtro.
+Tensor que contiene los datos de escala de filtro. Las dimensiones esperadas de son si se requiere una cuantificación por tensor o si se requiere `FilterScaleTensor` `{ 1, 1, 1, 1 }` una `{ 1, OutputChannelCount, 1, 1 }` cuantificación por canal. Este valor de escala se usa para descuantizar los valores de filtro.
 
 
 `FilterZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores opcional que contiene los datos del punto cero del filtro. Las dimensiones esperadas de *FilterZeroPointTensor* son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores, o `{ 1, OutputChannelCount, 1, 1 }` si se requiere la cuantificación por canal. Este valor de punto cero se usa para descuantificar los valores de filtro.
+Tensor opcional que contiene los datos de punto cero del filtro. Las dimensiones esperadas de *FilterZeroPointTensor* son si se requiere una cuantificación por tensor o si se requiere una cuantificación por `{ 1, 1, 1, 1 }` `{ 1, OutputChannelCount, 1, 1 }` canal. Este valor de punto cero se usa para descuantizar los valores de filtro.
 
 
 `BiasTensor`
 
 Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de sesgo. Bias tensores es un tensores que contiene datos que se difunden a través de la tensores de salida al final de la circunvolución que se agrega al resultado. Las dimensiones esperadas de BiasTensor son `{ 1, OutputChannelCount, 1, 1 }` para 4D.
+Tensor que contiene los datos de sesgo. El tensor de sesgo es un tensor que contiene datos que se difunden a través del tensor de salida al final de la convolución que se agrega al resultado. Las dimensiones esperadas de BiasTensor son `{ 1, OutputChannelCount, 1, 1 }` para 4D.
 
 
 `OutputScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de la escala de salida. Las dimensiones esperadas de OutputScaleTensor son `{ 1, 1, 1, 1 }` . Este valor de escala de entrada se utiliza para cuantificar los valores de salida de circunvolución.
+Tensor que contiene los datos de escala de salida. Las dimensiones esperadas de OutputScaleTensor son `{ 1, 1, 1, 1 }` . Este valor de escala de entrada se usa para cuantificar los valores de salida de convolución.
 
 
 `OutputZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores opcional que contiene los datos del punto cero del filtro. Las dimensiones esperadas de OutputZeroPointTensor son `{ 1, 1, 1, 1 }` . Este valor de punto cero de entrada se utiliza para cuantificar la circunvolución de los valores de salida.
+Tensor opcional que contiene los datos de punto cero de filtro. Las dimensiones esperadas de OutputZeroPointTensor son `{ 1, 1, 1, 1 }` . Este valor de punto cero de entrada se usa para cuantificar la convolución de los valores de salida.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores en el que se van a escribir los resultados. Las dimensiones esperadas de OutputTensor son `{ OutputBatchCount, OutputChannelCount, OutputHeight, OutputWidth }` .
+Tensor en el que escribir los resultados. Las dimensiones esperadas de OutputTensor son `{ OutputBatchCount, OutputChannelCount, OutputHeight, OutputWidth }` .
 
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de dimensiones espaciales para la operación de circunvolución. Las dimensiones espaciales son las dimensiones inferiores del filtro de circunvolución tensores *FilterTensor*. Este valor también determina el tamaño de las matrices de los *progresos*, *Dilations*, *StartPadding* y *EndPadding* . Solo se admite un valor de 2.
+Número de dimensiones espaciales para la operación de convolución. Las dimensiones espaciales son las dimensiones inferiores del tensor *FilterTensor* del filtro de convolución. Este valor también determina el tamaño de las matrices *Strides,* *Sustions,* *StartPadding* y *EndPadding.* Solo se admite un valor de 2.
 
 
 `Strides`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Los progresos de la operación de circunvolución. Estos avances se aplican al filtro de circunvolución. Son independientes de los progresos de tensores incluidos en [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
+Los avances de la operación de convolución. Estos pasos se aplican al filtro de convolución. Son independientes de los avances de tensor incluidos [en DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
 
 
 `Dilations`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Dilations de la operación de circunvolución. Dilations son los progresos aplicados a los elementos del kernel de filtro. Esto tiene el efecto de simular un kernel de filtro mayor al rellenar los elementos de kernel del filtro interno con ceros.
+Las sustituciones de la operación de convolución. Las reparaciones son avances que se aplican a los elementos del kernel de filtro. Esto tiene el efecto de simular un kernel de filtro mayor mediante el relleno de los elementos internos del kernel de filtro con ceros.
 
 
 `StartPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Valores de relleno que se van a aplicar al principio de cada dimensión espacial del filtro y tensores de entrada de la operación de circunvolución.
+Valores de relleno que se aplicarán al principio de cada dimensión espacial del filtro y del tensor de entrada de la operación de convolución.
 
 
 `EndPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Valores de relleno que se van a aplicar al final de cada dimensión espacial del filtro y tensores de entrada de la operación de circunvolución.
+Valores de relleno que se aplicarán al final de cada dimensión espacial del filtro y del tensor de entrada de la operación de convolución.
 
 
 `GroupCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Número de grupos en los que se va a dividir la operación de circunvolución. *GroupCount* se puede usar para lograr una circunvolución de nivel de profundidad estableciendo el valor de *GroupCount* igual al número de canales de entrada. Esto divide la circunvolución en una circunvolución independiente por canal de entrada. 
+Número de grupos en los que se va a dividir la operación de convolución. *GroupCount* se puede usar para lograr la convolución por profundidad estableciendo *GroupCount* en el número de canales de entrada. Esto divide la convolución en una convolución independiente por canal de entrada. 
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *FilterTensor* y *FilterZeroPointTensor* deben tener el mismo *tipo de texto*.
-* *InputTensor* y *InputZeroPointTensor* deben tener el mismo *tipo de texto*.
-* *OutputTensor* y `OutputZeroPointTensor` deben tener el mismo *tipo de texto*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+* *FilterTensor* y *FilterZeroPointTensor* deben tener el mismo *DataType.*
+* *InputTensor* y *InputZeroPointTensor* deben tener el mismo *DataType.*
+* *OutputTensor* y `OutputZeroPointTensor` deben tener el mismo *DataType.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 4 | INT8, UINT8 |
 | InputScaleTensor | Entrada | 4 | FLOAT32 |
@@ -228,11 +228,11 @@ Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
 | BiasTensor | Entrada opcional | 4 | INT32 |
 | OutputScaleTensor | Entrada | 4 | FLOAT32 |
 | OutputZeroPointTensor | Entrada opcional | 4 | INT8, UINT8 |
-| OutputTensor | Output | 4 | INT8, UINT8 |
+| OutputTensor | Resultados | 4 | INT8, UINT8 |
 
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

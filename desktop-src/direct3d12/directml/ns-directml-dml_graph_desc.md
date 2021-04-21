@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_GRAPH_DESC
 title: DML_GRAPH_DESC
-description: Describe un gráfico de operadores de DirectML utilizados para compilar un operador combinado y optimizado.
+description: Describe un gráfico de operadores directML usados para compilar un operador optimizado combinado.
 helpviewer_keywords:
 - DML_GRAPH_DESC
 - DML_GRAPH_DESC structure
@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_GRAPH_DESC
-ms.openlocfilehash: e72209d19bb26524576783becbbfbf94566d8370
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: a42996fc9fd7825e13232b245ab764c6439f9489
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721282"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802878"
 ---
-# <a name="dml_graph_desc-structure-directmlh"></a>DML_GRAPH_DESC estructura (directml. h)
+# <a name="dml_graph_desc-structure-directmlh"></a>DML_GRAPH_DESC estructura (directml.h)
 
-Describe un gráfico de operadores de DirectML utilizados para compilar un operador combinado y optimizado. Vea [IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).
+Describe un gráfico de operadores directML usados para compilar un operador optimizado combinado. Vea [IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -81,93 +81,93 @@ struct DML_GRAPH_DESC {
 
 `InputCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de entradas del gráfico global. Cada entrada de gráfico puede estar conectada a un número variable de nodos internos, por lo que puede ser diferente de *InputEdgeCount*.
+Número de entradas del gráfico general. Cada entrada de grafo puede estar conectada a un número variable de nodos internos, por lo que puede ser diferente de *InputEdgeCount.*
 
 
 `OutputCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de salidas del gráfico global. Cada salida del gráfico puede estar conectada a un número variable de nodos internos, por lo que puede ser diferente de *OutputEdgeCount*.
+Número de salidas del gráfico general. Cada salida de grafo puede estar conectada a un número variable de nodos internos, por lo que puede ser diferente de *OutputEdgeCount.*
 
 
 `NodeCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
 Número de nodos internos del gráfico.
 
 
 `Nodes`
 
-Tipo: \_ tamaño de campo \_ \_ (NodeCount) **const [DML_GRAPH_NODE_DESC](./ns-directml-dml_graph_node_desc.md) \***
+Tipo: \_ Tamaño de campo \_ \_ (NodeCount) **const [DML_GRAPH_NODE_DESC](./ns-directml-dml_graph_node_desc.md) \***
 
-Los nodos internos del gráfico.
+Nodos internos del gráfico.
 
 
 `InputEdgeCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de conexiones entre las entradas del gráfico y las entradas de los nodos internos del gráfico.
+Número de conexiones entre las entradas del grafo y las entradas de los nodos internos del gráfico.
 
 
 `InputEdges`
 
-Tipo: \_ tamaño de campo \_ \_ (InputEdgeCount) **const [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) \***
+Tipo: \_ Tamaño de campo \_ \_ (InputEdgeCount) **const [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) \***
 
-Matriz de conexiones entre las entradas del gráfico y las entradas de los nodos internos del gráfico. El campo de *tipo* dentro de cada elemento debe establecerse en [DML_GRAPH_EDGE_TYPE_INPUT](./ne-directml-dml_graph_edge_type.md).
+Matriz de conexiones entre las entradas del grafo y las entradas de los nodos internos del gráfico. El *campo Type* de cada elemento debe establecerse en [DML_GRAPH_EDGE_TYPE_INPUT](./ne-directml-dml_graph_edge_type.md).
 
 
 `OutputEdgeCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de conexiones entre las salidas del gráfico y las salidas de los nodos internos del gráfico.
+Número de conexiones entre las salidas del grafo y las salidas de los nodos internos del gráfico.
 
 
 `OutputEdges`
 
-Tipo: \_ tamaño de campo \_ \_ (OutputEdgeCount) **const [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) \***
+Tipo: \_ Tamaño de campo \_ \_ (OutputEdgeCount) **const [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) \***
 
-Matriz de conexiones entre las salidas del gráfico y las salidas de los nodos internos del gráfico. El campo de *tipo* dentro de cada elemento debe establecerse en [DML_GRAPH_EDGE_TYPE_OUTPUT](./ne-directml-dml_graph_edge_type.md).
+Matriz de conexiones entre las salidas del grafo y las salidas de los nodos internos del gráfico. El *campo Type* dentro de cada elemento debe establecerse en [DML_GRAPH_EDGE_TYPE_OUTPUT](./ne-directml-dml_graph_edge_type.md).
 
 
 `IntermediateEdgeCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de conexiones internas entre los nodos del gráfico.
+Número de conexiones internas entre los nodos del gráfico.
 
 
 `IntermediateEdges`
 
-Tipo: \_ tamaño de campo \_ \_ (IntermediateEdgeCount) **const [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) \***
+Tipo: \_ Tamaño de campo \_ \_ (IntermediateEdgeCount) **const [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) \***
 
-Matriz de conexiones entre las entradas y las salidas de los nodos internos del gráfico. El campo de tipo dentro de cada elemento se debe establecer en [DML_GRAPH_EDGE_TYPE_INTERMEDIATE](./ne-directml-dml_graph_edge_type.md)
+Matriz de conexiones entre las entradas y salidas de los nodos internos del gráfico. El campo Type dentro de cada elemento debe establecerse [en DML_GRAPH_EDGE_TYPE_INTERMEDIATE](./ne-directml-dml_graph_edge_type.md)
 
 
 ## <a name="remarks"></a>Observaciones
-El gráfico descrito por esta estructura debe ser un gráfico acíclicos dirigido. Debe definir una conexión para la entrada y la salida de cada nodo proporcionado, excepto las entradas y salidas que son opcionales para el operador asociado.
+El gráfico descrito por esta estructura debe ser un gráfico acíclico dirigido. Debe definir una conexión para la entrada y salida de cada nodo proporcionado, excepto para las entradas y salidas que son opcionales para el operador asociado.
 
-Los nodos pueden usar operadores que se crearon con la marca [DML_TENSOR_FLAG_OWNED_BY_DML](/windows/win32/api/directml/ne-directml-dml_tensor_flags) para ciertas entradas. Cualquier entrada de operador que use esta marca debe estar conectada a entradas de grafos. Todas las entradas de operador conectadas a la misma entrada de gráfico deben usar u omitir esta marca de forma equivalente.
+Los nodos pueden usar operadores creados mediante la [marca DML_TENSOR_FLAG_OWNED_BY_DML](/windows/win32/api/directml/ne-directml-dml_tensor_flags) para determinadas entradas. Cualquier entrada de operador que use esta marca debe estar conectada a entradas de grafo. Todas las entradas de operador conectadas a la misma entrada de grafo deben usar u omitir esta marca de forma equivalente.
 
-Es válido conectar los operadores cuyas entradas y salidas conectadas usan recuentos de dimensiones, tamaños y tipos de datos diferentes. Esto implica que cada operador interpreta de forma diferente el BLOB de datos tensores. Sin embargo, el campo *TotalTensorSizeInBytes* de entradas y salidas de tensores conectadas debe ser idéntico. Los operadores solo deben leer las regiones de los que han escrito los operadores anteriores. No se garantiza que las regiones de relleno de la salida de una operación (que resulten del uso de los progresos) se lean como cero por operadores de nivel inferior.
+Es legal conectar operadores cuyas entradas y salidas conectadas usan diferentes recuentos de dimensiones, tamaños y tipos de datos. Esto implica que cada operador interpreta de forma diferente el blob de datos tensor. Sin embargo, el campo *TotalTensorSizeInBytes* de entradas y salidas del tensor conectado debe ser idéntico. Los operadores solo deben leer regiones de tensores escritas por operadores anteriores. No se garantiza que los operadores de flujo inferior lean como cero las regiones de relleno de la salida de una operación (resultante del uso de strides).
 
 ## <a name="availability"></a>Disponibilidad
 
-Esta API se presentó en la versión DirectML `1.1.0` .
+Esta API se introdujo en la versión de `1.1.0` DirectML.
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
-* [IDMLDevice1:: CompileGraph (método)](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
+* [Método IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
 * [DML_GRAPH_NODE_DESC struct](./ns-directml-dml_graph_node_desc.md)
 * [DML_GRAPH_EDGE_DESC struct](./ns-directml-dml_graph_edge_desc.md)

@@ -1,7 +1,7 @@
 ---
 UID: NE:directml.DML_RANDOM_GENERATOR_TYPE
 title: DML_RANDOM_GENERATOR_TYPE
-description: Define constantes que especifican los tipos de generador de números aleatorios aleatorios.
+description: Define constantes que especifican tipos de generador de números aleatorios.
 helpviewer_keywords:
 - DML_RANDOM_GENERATOR_TYPE
 - DML_RANDOM_GENERATOR_TYPE structure
@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RANDOM_GENERATOR_TYPE
-ms.openlocfilehash: bcb79fe7737e8b9ddb461c8da8a901960a4b23f8
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: c08b5cdc07280a2851636a555415ecce515fa79b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721309"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803757"
 ---
-# <a name="dml_random_generator_type-enumeration-directmlh"></a>Enumeración DML_RANDOM_GENERATOR_TYPE (directml. h)
+# <a name="dml_random_generator_type-enumeration-directmlh"></a>DML_RANDOM_GENERATOR_TYPE enumeración (directml.h)
 
-Define constantes que especifican los tipos de generador de números aleatorios aleatorios.
+Define constantes que especifican tipos de generador de números aleatorios.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -71,10 +71,10 @@ enum DML_RANDOM_GENERATOR_TYPE
 
 | Nombre | Descripción |
 | ---- |:---- |
-| DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10 | Especifica un generador de números pseudoaleatorios según el [algoritmo Philox 4x32-10](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf). |
+| DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10 | Especifica un generador para números pseudo aleatorios según el algoritmo [de Filaox 4x32-10](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf). |
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

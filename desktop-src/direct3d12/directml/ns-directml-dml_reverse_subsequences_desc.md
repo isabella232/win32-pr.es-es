@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC
 title: DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC
-description: Invierte los elementos de una o más *subsecuencias* de un tensores. El conjunto de subsecuencias que se va a invertir se elige en función del eje y las longitudes de secuencia proporcionadas.
+description: Invierte los elementos de una o varias *subsecuencias* de un tensor. El conjunto de subsecuencias que se va a invertir se elige en función de las longitudes de eje y secuencia proporcionadas.
 helpviewer_keywords:
 - DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC
 - DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC structure
@@ -44,18 +44,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC
-ms.openlocfilehash: 5baf16c5acd1ce5c5f44e68420e93aabaa276ea7
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3deddea3d60db1a8689ceabfac92ff17393b7606
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721298"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804000"
 ---
-# <a name="dml_reverse_subsequences_operator_desc-structure-directmlh"></a>DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC estructura (directml. h)
-Invierte los elementos de una o más *subsecuencias* de un tensores. El conjunto de subsecuencias que se va a invertir se elige en función del eje y las longitudes de secuencia proporcionadas.
+# <a name="dml_reverse_subsequences_operator_desc-structure-directmlh"></a>DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC estructura (directml.h)
+Invierte los elementos de una o varias *subsecuencias* de un tensor. El conjunto de subsecuencias que se va a invertir se elige en función de las longitudes de eje y secuencia proporcionadas.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -75,32 +75,32 @@ struct DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de entrada que contiene los elementos que se van a invertir.
+Tensor de entrada que contiene los elementos que se invertirán.
 
 
 `SequenceLengthsTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores que contiene un valor para cada subsecuencia que se va a invertir, que denota la longitud en elementos de esa subsecuencia. Solo se invierten los elementos de la longitud de la subsecuencia; los elementos restantes a lo largo del eje se copian en la salida sin cambios.
+Un tensor que contiene un valor para cada subsecuencia que se va a invertir, que indica la longitud de los elementos de esa subsecuencia. Solo se invierten los elementos dentro de la longitud de la subsecuencia; Los elementos restantes a lo largo de ese eje se copian en la salida sin cambios.
 
-Este tensores debe tener un número de dimensiones y tamaños igual a *InputTensor*, *excepto* la dimensión especificada por el parámetro de *eje* . El tamaño de la dimensión del *eje* debe ser 1. Por ejemplo, si *InputTensor* tiene tamaños de `{2,3,4,5}` y *AXIS* es 1, los tamaños de *SequenceLengthsTensor* deben ser `{2,1,4,5}` .
+Este tensor debe tener un recuento de dimensiones  y tamaños iguales a *InputTensor,* excepto para la dimensión especificada por el *parámetro Axis.* El tamaño de la *dimensión Eje* debe ser 1. Por ejemplo, si *InputTensor* tiene tamaños de y Eje es 1, los tamaños de `{2,3,4,5}` *SequenceLengthsTensor* deben ser  `{2,1,4,5}` .
 
-Si la longitud de una subsecuencia supera el número máximo de elementos a lo largo de ese eje, este operador se comporta como si el valor estuviera fijado al máximo.
+Si la longitud de una subsecuencia supera el número máximo de elementos a lo largo de ese eje, este operador se comporta como si el valor se fijara al máximo.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida en el que se van a escribir los resultados. Este tensores debe tener los mismos tamaños y tipo de datos que *InputTensor*.
+Tensor de salida en el que se escriben los resultados. Este tensor debe tener los mismos tamaños y tipo de datos que *InputTensor.*
 
 
 `Axis`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Índice de la dimensión en la que se van a invertir los elementos. Este valor debe ser menor que el valor de DimensionCount de *InputTensor*.
+Índice de la dimensión sobre la que se invertirán los elementos. Este valor debe ser menor que dimensionCount de *InputTensor.*
 
 ## <a name="examples"></a>Ejemplos
 
@@ -145,30 +145,30 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
 ```
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *InputTensor*, *OutputTensor* y *SequenceLengthsTensor* deben tener el mismo *DimensionCount*.
-* *InputTensor* y *OutputTensor* deben tener el mismo *tipo de texto*.
+## <a name="tensor-constraints"></a>Restricciones de Tensor
+* *InputTensor*, *OutputTensor* y *SequenceLengthsTensor* deben tener el mismo *dimensioncount*.
+* *InputTensor* y *OutputTensor* deben tener el mismo *tipo de datos*.
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Entrada | de 4 a 5 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| SequenceLengthsTensor | Entrada | de 4 a 5 | UINT32 |
-| OutputTensor | Output | de 4 a 5 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| InputTensor | Entrada | De 4 a 5 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| SequenceLengthsTensor | Entrada | De 4 a 5 | UINT32 |
+| OutputTensor | Resultados | De 4 a 5 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 | SequenceLengthsTensor | Entrada | 4 | UINT32 |
-| OutputTensor | Output | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputTensor | Resultados | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

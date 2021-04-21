@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
 title: DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
-description: Calcula el recuento de población bit a bit (el número de bits establecido en 1) para cada elemento de la tensores de entrada y escribe el resultado en el tensores de salida.
+description: Calcula el recuento de población bit a bit (el número de bits establecido en 1) para cada elemento del tensor de entrada y escribe el resultado en el tensor de salida.
 helpviewer_keywords:
 - DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
 - DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC structure
@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
-ms.openlocfilehash: 4b292b1b6e12f4643e928022f59603fd75e080fb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3c8dddc3159ebcd857c7423b76856fbeba465d2e
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721256"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803227"
 ---
-# <a name="dml_element_wise_bit_count_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_element_wise_bit_count_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC estructura (directml.h)
 
-Calcula el recuento de población bit a bit (el número de bits establecido en 1) para cada elemento de la tensores de entrada y escribe el resultado en el tensores de salida.
+Calcula el recuento de población bit a bit (el número de bits establecido en 1) para cada elemento del tensor de entrada y escribe el resultado en el tensor de salida.
 
-Los tensores de entrada y salida deben tener los mismos tamaños de *DimensionCount* y *tamaño*, aunque pueden diferir en el *tipo* de datos.
+El tensor de entrada y salida debe tener los mismos *dimensioncount* y *sizes,* aunque pueden diferir *en DataType.*
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,13 +77,13 @@ struct DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de entrada del que se va a leer.
+Tensor de entrada del que se leerá.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida en el que se van a escribir los resultados.
+Tensor de salida en el que se escriben los resultados.
 
 ## <a name="example"></a>Ejemplo
 
@@ -98,18 +98,18 @@ OutputTensor: (Sizes:{2,2}, DataType:UINT32)
 ```
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-*InputTensor* y *OutputTensor* deben tener los mismos *DimensionCount* y *tamaños*.
+## <a name="tensor-constraints"></a>Restricciones de Tensor
+*InputTensor* y *OutputTensor* deben tener los mismos *dimensioncount* y *sizes.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Entrada | de 1 a 8 | UINT32, UINT16, UINT8 |
-| OutputTensor | Output | de 1 a 8 | UINT32, UINT8 |
+| InputTensor | Entrada | De 1 a 8 | UINT32, UINT16, UINT8 |
+| OutputTensor | Resultados | De 1 a 8 | UINT32, UINT8 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

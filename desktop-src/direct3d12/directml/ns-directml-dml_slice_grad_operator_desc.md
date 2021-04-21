@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_SLICE_GRAD_OPERATOR_DESC
 title: DML_SLICE_GRAD_OPERATOR_DESC
-description: Calcula los degradados de propagación de la misma para el segmento (vea [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc)).
+description: Calcula los degradados de apropagamiento hacia atrás para Slice [(vea DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc)).
 helpviewer_keywords:
 - DML_SLICE_GRAD_OPERATOR_DESC
 - DML_SLICE_GRAD_OPERATOR_DESC structure
@@ -45,20 +45,20 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SLICE_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 63ea67454965d976247c3cdd50aa183f6a676138
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: a22efe9b0b74f5fdc7b498b97784086f40f243b9
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721249"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803973"
 ---
-# <a name="dml_slice_grad_operator_desc-structure-directmlh"></a>DML_SLICE_GRAD_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_slice_grad_operator_desc-structure-directmlh"></a>DML_SLICE_GRAD_OPERATOR_DESC estructura (directml.h)
 
-Calcula los degradados de propagación de la misma para el segmento (vea [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc)).
+Calcula los degradados de apropagamiento hacia atrás para Slice [(vea DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc)).
 
-Recuerde que [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc) extrae una subregión de una tensores de entrada. Dado un *InputGradientTensor* con los mismos tamaños que la *salida* de una **DML_SLICE1_OPERATOR_DESC** equivalente, este operador genera una *OutputGradientTensor* con los mismos tamaños que la *entrada* de **DML_SLICE1_OPERATOR_DESC**. Los elementos segmentados se propagan a la salida y todos los demás elementos se establecen en 0.
+Recuerde que [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc) extrae una subregión de un tensor de entrada. Dado un *inputGradientTensor* con los  mismos tamaños que la salida de un **DML_SLICE1_OPERATOR_DESC** equivalente, este operador genera  un *outputGradientTensor* con los mismos tamaños que la **entrada de DML_SLICE1_OPERATOR_DESC**. Los elementos segmentados se propagan a la salida y todos los demás elementos se establecen en 0.
 
-Como ejemplo, considere un **DML_SLICE1_OPERATOR_DESC** que extrae los siguientes elementos de un tensores:
+Por ejemplo, considere **una** DML_SLICE1_OPERATOR_DESC que extrae los siguientes elementos de un tensor:
 
 ```
 InputTensor            OutputTensor
@@ -68,7 +68,7 @@ InputTensor            OutputTensor
  [m, n, o, p]]
 ```
 
-Si se proporciona el mismo / *tamaño* / de InputWindowOffsets,*al* igual que en el ejemplo anterior, este operador llevaría a cabo la transformación siguiente.
+Si se proporcionan los mismos strides de tamaños *InputWindowOffsets* que en el ejemplo anterior, este operador realizaría /  /  la transformación siguiente.
 
 ```
 InputGradientTensor       OutputGradientTensor
@@ -79,7 +79,7 @@ InputGradientTensor       OutputGradientTensor
 ```
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -101,53 +101,53 @@ struct DML_SLICE_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de degradado entrante. Normalmente se obtiene a partir de la salida de la propagación de una capa anterior. Normalmente, este tensores tendría el mismo tamaño que la *salida* de la [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc) correspondiente en el paso de avance.
+Tensor de degradado entrante. Normalmente, esto se obtiene a partir de la salida de la repropagación de una capa anterior. Normalmente, este tensor tendría los  mismos tamaños que la salida de la DML_SLICE1_OPERATOR_DESC [en](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc) el paso hacia delante.
 
 `OutputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene los degradados retropagados. Normalmente, este tensores tendría el mismo tamaño que la *entrada* de la [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc) correspondiente en el paso de avance.
+Tensor de salida que contiene los degradados de propiedad pendiente. Normalmente, este tensor tendría los  mismos tamaños que la entrada del elemento [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc) en el paso hacia delante.
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de elementos de las matrices *InputWindowOffsets*, *InputWindowSizes* y *InputWindowStrides* . Este valor debe ser igual al *DimensionCount* proporcionado en *InputGradientTensor* y *OutputGradientTensor*.
+Número de elementos de las *matrices InputWindowOffsets,* *InputWindowSizes* y *InputWindowStrides.* Este valor debe ser igual *al dimensioncount* proporcionado en *InputGradientTensor* y *OutputGradientTensor*.
 
 `InputWindowOffsets`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *InputWindowOffsets* en [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc).
+Vea *InputWindowOffsets* en [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc).
 
 `InputWindowSizes`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *InputWindowSizes* en [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc).
+Vea *InputWindowSizes* en [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc).
 
 `InputWindowStrides`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *InputWindowStrides* en [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc).
+Vea *InputWindowStrides* en [DML_SLICE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_slice1_operator_desc).
 
-Tenga en cuenta que, a diferencia de **DML_SLICE1_OPERATOR_DESC**, este operador requiere progresas distintos de cero. Esto se debe a que, con un intervalo de cero, es ambiguo en qué elemento de entrada se debe asignar a cada elemento de salida y, por tanto, no se puede realizar la propagación. Como **DML_SLICE1_OPERATOR_DESC**, los progresos negativos voltean la dirección de la ventana de entrada a lo largo de ese eje.
+Tenga en cuenta **que, DML_SLICE1_OPERATOR_DESC**, este operador requiere avances distintos de cero. Esto se debe a que, con un paso cero, es ambiguo en cuanto a qué elemento de entrada se debe asignar a cada elemento de salida y, por tanto, no se puede realizar la repropagación. Al **DML_SLICE1_OPERATOR_DESC**, los avances negativos invierten la dirección de la ventana de entrada a lo largo de ese eje.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-*InputGradientTensor* y *OutputGradientTensor* deben tener el mismo *DataType* y *DimensionCount*.
+## <a name="tensor-constraints"></a>Restricciones de Tensor
+*InputGradientTensor* y *OutputGradientTensor* deben tener los mismos *DataType* y *DimensionCount.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputGradientTensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputGradientTensor | Output | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| InputGradientTensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputGradientTensor | Resultados | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

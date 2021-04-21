@@ -1,39 +1,39 @@
 ---
 title: DirectMLX
-description: DirectMLX es una biblioteca auxiliar de solo encabezado de C++ para DirectML, diseñada para que sea más fácil crear operadores individuales en los gráficos.
+description: DirectMLX es una biblioteca auxiliar de solo encabezado de C++ para DirectML, diseñada para facilitar la creación de operadores individuales en gráficos.
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 8388edd51b6ad3ca30fe1c65947167cee7dac5e6
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 2ddd6d9063002b76449224ebafdb6dd021b27fa0
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104549199"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803371"
 ---
 # <a name="directmlx"></a>DirectMLX
 
-DirectMLX es una biblioteca auxiliar de solo encabezado de C++ para DirectML, diseñada para que sea más fácil crear operadores individuales en los gráficos.
+DirectMLX es una biblioteca auxiliar de solo encabezado de C++ para DirectML, diseñada para facilitar la creación de operadores individuales en gráficos.
 
-DirectMLX proporciona contenedores útiles para todos los tipos de operador DirectML (DML), así como las sobrecargas de operador intuitivas, lo que simplifica la creación de instancias de operadores DML y su encadenamiento en gráficos complejos.
+DirectMLX proporciona contenedores cómodos para todos los tipos de operadores de DirectML (DML), así como sobrecargas de operador intuitivas, lo que facilita la creación de instancias de operadores DML y los encadena en gráficos complejos.
 
 ## <a name="where-to-find-directmlxh"></a>Dónde encontrar `DirectMLX.h`
 
-`DirectMLX.h` se distribuye como software de código abierto bajo la licencia MIT. Puede encontrar la versión más reciente en [DirectML GitHub](https://github.com/microsoft/DirectML/tree/master/Libraries).
+`DirectMLX.h` se distribuye como software de código abierto bajo la licencia MIT. La versión más reciente se puede encontrar en [GitHub de DirectML.](https://github.com/microsoft/DirectML/tree/master/Libraries)
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
+## <a name="tensor-constraints"></a>Restricciones de Tensor
 
-DirectMLX requiere la versión de DirectML 1.4.0 o posterior (consulte el [historial de versiones de DirectML](dml-version-history.md#version-table)). No se admiten las versiones anteriores de DirectML.
+DirectMLX requiere directML versión 1.4.0 o posterior (consulte historial [de versiones de DirectML).](dml-version-history.md#version-table) No se admiten versiones anteriores de DirectML.
 
-DirectMLX. h requiere un compilador compatible con C + 11, incluido (pero sin limitarse a):
+DirectMLX.h requiere un compilador compatible con C++11, incluido (entre otros):
 
 * Visual Studio 2017
 * Visual Studio 2019
 * Clang 10
 
-Tenga en cuenta que un compilador de C++ 17 (o posterior) es una opción recomendada. Es posible compilar para C++ 11, pero requiere el uso de bibliotecas de terceros (como [GSL](https://github.com/microsoft/GSL) y [abseil](https://github.com/abseil/abseil-cpp)) para reemplazar la funcionalidad de la biblioteca estándar que falta.
+Tenga en cuenta que un compilador de C++17 (o posterior) es la opción que se recomienda. La compilación para C++11 es posible, pero requiere el uso de bibliotecas de terceros (como [GSL](https://github.com/microsoft/GSL) y [Abseil)](https://github.com/abseil/abseil-cpp)para reemplazar la funcionalidad de biblioteca estándar que falta.
 
-Si tiene una configuración que no se puede compilar `DirectMLX.h` , registre [un problema en el GitHub](https://github.com/microsoft/DirectML/issues).
+Si tiene una configuración que no se puede `DirectMLX.h` compilar, envíe [un problema a nuestro github.](https://github.com/microsoft/DirectML/issues)
 
 ## <a name="basic-usage"></a>Uso básico
 
@@ -45,10 +45,10 @@ IDMLDevice* device;
 
 /* ... */
 
-dml::Scope scope(device);
+dml::Graph graph(device);
 
 // Input tensor of type FLOAT32 and sizes { 1, 2, 3, 4 }
-auto x = dml::InputTensor(scope, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, {1, 2, 3, 4}));
+auto x = dml::InputTensor(graph, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, {1, 2, 3, 4}));
 
 // Create an operator to compute the square root of x
 auto y = dml::Sqrt(x);
@@ -56,12 +56,12 @@ auto y = dml::Sqrt(x);
 // Compile a DirectML operator from the graph. When executed, this compiled operator will compute
 // the square root of its input.
 DML_EXECUTION_FLAGS flags = DML_EXECUTION_FLAG_NONE;
-ComPtr<IDMLCompiledOperator> op = scope.Compile(flags, { y });
+ComPtr<IDMLCompiledOperator> op = graph.Compile(flags, { y });
 
 // Now initialize and dispatch the DML operator as usual
 ```
 
-Este es otro ejemplo, que crea un grafo de DirectML capaz de calcular la [fórmula cuadrática](https://en.wikipedia.org/wiki/Quadratic_formula).
+Este es otro ejemplo, que crea un gráfico de DirectML capaz de calcular la [fórmula cuadrática](https://en.wikipedia.org/wiki/Quadratic_formula).
 
 ```cpp
 #include <DirectML.h>
@@ -88,49 +88,49 @@ std::pair<dml::Expression, dml::Expression>
 
 /* ... */
 
-dml::Scope scope(device);
+dml::Graph graph(device);
 
 dml::TensorDimensions inputSizes = {1, 2, 3, 4};
-auto a = dml::InputTensor(scope, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
-auto b = dml::InputTensor(scope, 1, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
-auto c = dml::InputTensor(scope, 2, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
+auto a = dml::InputTensor(graph, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
+auto b = dml::InputTensor(graph, 1, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
+auto c = dml::InputTensor(graph, 2, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
 
 auto [x1, x2] = QuadraticFormula(a, b, c);
 
 // When executed with input tensors a, b, and c, this compiled operator computes the two outputs
 // of the quadratic formula, and returns them as two output tensors x1 and x2
 DML_EXECUTION_FLAGS flags = DML_EXECUTION_FLAG_NONE;
-ComPtr<IDMLCompiledOperator> op = scope.Compile(flags, { x1, x2 });
+ComPtr<IDMLCompiledOperator> op = graph.Compile(flags, { x1, x2 });
 
 // Now initialize and dispatch the DML operator as usual
 ```
 
 ## <a name="more-examples"></a>Más ejemplos
 
-Puede encontrar ejemplos completos mediante DirectMLX en el [repositorio de github de DirectML](https://github.com/microsoft/DirectML/tree/master/Samples).
+Puede encontrar ejemplos completos con DirectMLX en el [repositorio de GitHub de DirectML.](https://github.com/microsoft/DirectML/tree/master/Samples)
 
-## <a name="compile-time-options"></a>Opciones de Compile-Time
+## <a name="compile-time-options"></a>Opciones en tiempo de compilación
 
-DirectMLX admite la #define del tiempo de compilación para personalizar varias partes del encabezado.
+DirectMLX admite los #define tiempo de compilación para personalizar varias partes del encabezado.
 
 |Opción|Descripción|
 |-|-|
-|**DMLX_NO_EXCEPTIONS**|Si #define, hace que los errores provoquen una llamada a en `std::abort` lugar de producir una excepción. Se define de forma predeterminada si las excepciones no están disponibles (por ejemplo, si se han deshabilitado las excepciones en las opciones del compilador).|
-|**DMLX_USE_WIL**|Si #define, las excepciones se inician mediante los tipos de excepción de la [biblioteca de implementación de Windows](https://github.com/microsoft/wil) . En caso contrario, se usan los tipos de excepción estándar (como `std::runtime_error` ). Esta opción no tiene ningún efecto si se define **DMLX_NO_EXCEPTIONS** .|
-|**DMLX_USE_ABSEIL**|Si #define, utiliza [abseil](https://github.com/abseil/abseil-cpp) como reemplazos para los tipos de biblioteca estándar no disponibles en c++ 11. Estos tipos incluyen `absl::optional` (en lugar de `std::optional` ), `absl::Span` (en lugar de `std::span` ) y `absl::InlinedVector` .|
-|**DMLX_USE_GSL**|Controla si se va a utilizar [GSL](https://github.com/microsoft/GSL) como reemplazo de `std::span` . Si #define, los usos de `std::span` se reemplazan por `gsl::span` en los compiladores sin `std::span` implementaciones nativas. En caso contrario, se proporciona una implementación desplegable en línea. Tenga en cuenta que esta opción solo se usa al compilar en un compilador de C + + 20 sin compatibilidad con `std::span` , y cuando no se está usando ninguna otra sustitución de la biblioteca estándar de destino (por ejemplo, abseil).|
+|**DMLX_NO_EXCEPTIONS**|Si #define, hace que los errores den como resultado una llamada a en `std::abort` lugar de producir una excepción. Esto se define de forma predeterminada si las excepciones no están disponibles (por ejemplo, si las excepciones se han deshabilitado en las opciones del compilador).|
+|**DMLX_USE_WIL**|Si #define, las excepciones se inician mediante tipos de excepción [de la biblioteca de implementación de Windows.](https://github.com/microsoft/wil) De lo contrario, se usan tipos de excepción estándar (como `std::runtime_error` ) en su lugar. Esta opción no tiene ningún efecto **si DMLX_NO_EXCEPTIONS** está definido.|
+|**DMLX_USE_ABSEIL**|Si #define, usa [Abseil](https://github.com/abseil/abseil-cpp) como reemplazos de colocación para los tipos de biblioteca estándar no disponibles en C++11. Estos tipos incluyen `absl::optional` (en lugar de `std::optional` ), `absl::Span` (en lugar de `std::span` ) y `absl::InlinedVector` .|
+|**DMLX_USE_GSL**|Controla si se debe [usar GSL](https://github.com/microsoft/GSL) como reemplazo de `std::span` . Si #define, los usos de `std::span` se reemplazan por `gsl::span` en compiladores sin `std::span` implementaciones nativas. De lo contrario, se proporciona una implementación de lista desplegable insertda en su lugar. Tenga en cuenta que esta opción solo se usa cuando se compila en un compilador anterior a C++20 sin compatibilidad con y cuando no se usa ningún otro reemplazo de biblioteca estándar de colocación `std::span` (como Abseil).|
 
-## <a name="controlling-tensor-layout"></a>Controlar el diseño de tensores
+## <a name="controlling-tensor-layout"></a>Controlar el diseño del tensor
 
-Para la mayoría de los operadores, DirectMLX calcula las propiedades de los agentes de salida del operador en su nombre. Por ejemplo, al realizar una `dml::Reduce` operación entre ejes `{ 0, 2, 3 }` con una tensores de entrada de tamaños `{ 3, 4, 5, 6 }` , DirectMLX calculará automáticamente las propiedades de la tensores de salida, incluida la forma correcta de `{ 1, 4, 1, 1 }` .
+Para la mayoría de los operadores, DirectMLX calcula las propiedades de los tensores de salida del operador en su nombre. Por ejemplo, al realizar un en ejes con un tensor de entrada de tamaños , DirectMLX calculará automáticamente las propiedades del `dml::Reduce` tensor de salida, incluida la `{ 0, 2, 3 }` `{ 3, 4, 5, 6 }` forma correcta de `{ 1, 4, 1, 1 }` .
 
-Sin embargo, las otras propiedades de un tensores de salida incluyen los *progresos*, *TotalTensorSizeInBytes* y *GuaranteedBaseOffsetAlignment*. De forma predeterminada, DirectMLX establece estas propiedades de modo que la tensores no tiene un gran volumen, ninguna alineación de desplazamiento base garantizada y un tamaño total de tensores en bytes calculado por [DMLCalcBufferTensorSize](./dml-helper-functions.md#dmlcalcbuffertensorsize).
+Sin embargo, las demás propiedades de un tensor de salida incluyen *Strides*, *TotalTensorSizeInBytes* y *GuaranteedBaseOffsetAlignment.* De forma predeterminada, DirectMLX establece estas propiedades de forma que el tensor no tenga ninguna estructura de striding, ninguna alineación de desplazamiento base garantizada y un tamaño de tensor total en bytes calculado por [DMLCalcBufferTensorSize](./dml-helper-functions.md#dmlcalcbuffertensorsize).
 
-DirectMLX admite la posibilidad de personalizar estas propiedades de tensores de salida, con objetos conocidos como *directivas de tensores*. Un **TensorPolicy** es una devolución de llamada personalizable que se invoca mediante DirectMLX y devuelve las propiedades de salida tensores dado un tipo de datos calculado, marcas y tamaños de tensores.
+DirectMLX admite la capacidad de personalizar estas propiedades de tensor de salida, mediante objetos conocidos como *directivas de tensor.* **TensorPolicy** es una devolución de llamada personalizable invocada por DirectMLX y devuelve propiedades de tensor de salida según el tipo de datos, las marcas y los tamaños calculados de un tensor.
 
-Las directivas de tensores se pueden establecer en el objeto **DML:: Scope** y se usarán para todos los operadores subsiguientes en ese gráfico. Las directivas de tensores también se pueden establecer directamente al construir un **TensorDesc**.
+Las directivas de Tensor se pueden establecer en el **objeto dml::Graph** y se usarán para todos los operadores posteriores de ese gráfico. Las directivas de Tensor también se pueden establecer directamente al construir **un objeto TensorDesc.**
 
-Por lo tanto, el diseño de los agregadores generados por DirectMLX se puede controlar mediante la configuración de un **TensorPolicy** que establezca los progresos adecuados en sus decenasdores.
+Por lo tanto, el diseño de tensores generado por DirectMLX se puede controlar estableciendo **una propiedad TensorPolicy** que establece los avances adecuados en sus tensores.
 
 ### <a name="example-1"></a>Ejemplo 1
 
@@ -151,27 +151,27 @@ dml::TensorProperties MyCustomPolicy(
     return props;
 };
 
-// Set the policy on the dml::Scope
-dml::Scope scope(/* ... */);
-scope.SetTensorPolicy(dml::TensorPolicy(&MyCustomPolicy));
+// Set the policy on the dml::Graph
+dml::Graph graph(/* ... */);
+graph.SetTensorPolicy(dml::TensorPolicy(&MyCustomPolicy));
 ```
 
 ### <a name="example-2"></a>Ejemplo 2
 
-DirectMLX también proporciona algunas directivas de tensores alternativas integradas. La directiva **InterleavedChannel** , por ejemplo, se proporciona como una comodidad, y se puede usar para producir decenas de más, con el fin de que se escriban en orden NHWC.
+DirectMLX también proporciona algunas directivas alternativas de tensor integradas. La **directiva InterleavedChannel,** por ejemplo, se proporciona por comodidad y se puede usar para generar tensores con avances, de modo que se escriban en orden NHWC.
 
 ```cpp
-// Set the InterleavedChannel policy on the dml::Scope
-dml::Scope scope(/* ... */);
-scope.SetTensorPolicy(dml::TensorPolicy::InterleavedChannel());
+// Set the InterleavedChannel policy on the dml::Graph
+dml::Graph graph(/* ... */);
+graph.SetTensorPolicy(dml::TensorPolicy::InterleavedChannel());
 
 // When executed, the tensor `result` will be in NHWC layout (rather than the default NCHW)
 auto result = dml::Convolution(/* ... */);
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 * [DirectML GitHub](https://github.com/microsoft/DirectML/tree/master/Libraries)
-* [Ejemplo de DirectMLX yolov4](https://github.com/microsoft/DirectML/tree/master/Samples/yolov4)
-* [Uso de los progresos para expresar el relleno y el diseño de memoria](./dml-strides.md)
-* [Estructura de DML_GRAPH_DESC](./directml/ns-directml-dml_graph_desc.md)
+* [Ejemplo yolov4 de DirectMLX](https://github.com/microsoft/DirectML/tree/master/Samples/yolov4)
+* [Uso de strides para expresar el relleno y el diseño de memoria](./dml-strides.md)
+* [DML_GRAPH_DESC estructura](./directml/ns-directml-dml_graph_desc.md)

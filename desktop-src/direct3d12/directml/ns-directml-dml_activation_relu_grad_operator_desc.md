@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
 title: DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
-description: Calcula los degradados de propagación de una unidad lineal rectificada (ReLU).
+description: Calcula los degradados de repropagación para una unidad lineal (ReLU) rectificada.
 helpviewer_keywords:
 - DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
 - DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC structure
@@ -45,16 +45,16 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 567a1de50c1c91de83a9fda2978f83af8daf1a6e
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: dea89f0e3366a07ee98f47703f07e2f5a9d4009d
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721239"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803679"
 ---
-# <a name="dml_activation_relu_grad_operator_desc-structure-directmlh"></a>DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_activation_relu_grad_operator_desc-structure-directmlh"></a>DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC estructura (directml.h)
 
-Calcula los degradados de propagación de una unidad lineal rectificada (ReLU). Este operador realiza el siguiente cálculo de elemento.
+Calcula los degradados de repropagación para una unidad lineal (ReLU) rectificada. Este operador realiza el siguiente cálculo por elemento.
 
 ```
 X = InputTensor
@@ -63,10 +63,10 @@ dY = InputGradientTensor
 OutputGradientTensor = (X > 0 ? dY : 0)
 ```
 
-El operador de paso adelante correspondiente es [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc).
+El operador forward-pass correspondiente es [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc).
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -84,37 +84,37 @@ struct DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-La entrada (característica) tensores. Normalmente, se trata de la misma entrada que se proporcionó durante el paso adelante (vea [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc)).
+Tensor de entrada (característica). Esta suele ser la misma entrada que se proporcionó durante el paso hacia delante [(vea DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc)).
 
 `InputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de degradado entrante. Normalmente se obtiene a partir de la salida de la propagación de una capa anterior. Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputTensor*.
+Tensor de degradado entrante. Esto se obtiene normalmente a partir de la salida de la repropagación de una capa anterior. Los *tamaños* y *datatype* de este tensor deben coincidir exactamente con los de *InputTensor*.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene los degradados retropagados. Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputTensor*.
+Tensor de salida que contiene los degradados de propiedad pendiente. Los *tamaños* y *datatype* de este tensor deben coincidir exactamente con los de *InputTensor*.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-*InputGradientTensor*, *InputTensor* y *OutputGradientTensor* deben tener el mismo *tipo de DataType*, *DimensionCount* y *tamaños*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+*InputGradientTensor,* *InputTensor* y *OutputGradientTensor* deben tener los mismos *tamaños datatype,* *dimensioncount* *y*.
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16 |
-| InputGradientTensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16 |
-| OutputGradientTensor | Output | de 1 a 8 | FLOAT32, FLOAT16 |
+| InputTensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16 |
+| InputGradientTensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16 |
+| OutputGradientTensor | Resultados | De 1 a 8 | FLOAT32, FLOAT16 |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc)
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_MAX_POOLING2_OPERATOR_DESC
 title: DML_MAX_POOLING2_OPERATOR_DESC
-description: Calcula el valor máximo en los elementos de la ventana deslizante sobre la tensores de entrada y, opcionalmente, devuelve los índices de los valores máximos seleccionados.
+description: Calcula el valor máximo en los elementos de la ventana deslizante sobre el tensor de entrada y, opcionalmente, devuelve los índices de los valores máximos seleccionados.
 ms.topic: reference
 tech.root: directml
 ms.date: 11/03/2020
@@ -37,18 +37,18 @@ api_name:
 f1_keywords:
 - DML_MAX_POOLING2_OPERATOR_DESC
 - directml/DML_MAX_POOLING2_OPERATOR_DESC
-ms.openlocfilehash: 7d2dc9d28e8afcaa5cc6277e26f1f663f3f6688f
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 06e4d7eb01abab9c412238e353a73607df02b219
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721302"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803668"
 ---
-# <a name="dml_max_pooling2_operator_desc-structure-directmlh"></a>DML_MAX_POOLING2_OPERATOR_DESC estructura (directml. h)
-Calcula el valor máximo en los elementos de la ventana deslizante sobre la tensores de entrada y, opcionalmente, devuelve los índices de los valores máximos seleccionados.
+# <a name="dml_max_pooling2_operator_desc-structure-directmlh"></a>DML_MAX_POOLING2_OPERATOR_DESC estructura (directml.h)
+Calcula el valor máximo en los elementos de la ventana deslizante sobre el tensor de entrada y, opcionalmente, devuelve los índices de los valores máximos seleccionados.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -73,14 +73,14 @@ struct DML_MAX_POOLING2_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Una tensores de entrada de *tamaños* `{ BatchCount, ChannelCount, Height, Width }` si *InputTensor. DimensionCount* es 4 y `{ BatchCount, ChannelCount, Depth, Height, Weight } ` si *InputTensor. DimensionCount* es 5.
+Tensor de entrada de *Tamaños* `{ BatchCount, ChannelCount, Height, Width }` si *InputTensor.DimensionCount* es 4 y `{ BatchCount, ChannelCount, Depth, Height, Weight } ` si *InputTensor.DimensionCount* es 5.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida en el que se van a escribir los resultados. Los tamaños de los tensores de salida se pueden calcular como se indica a continuación.
+Tensor de salida en el que se escriben los resultados. Los tamaños del tensor de salida se pueden calcular como se muestra a continuación.
 
 ```cpp
 OutputTensor->Sizes[0] = InputTensor->Sizes[0];
@@ -97,80 +97,80 @@ for (UINT i = 0; i < DimensionCount; ++i) {
 
 Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores de salida opcional de los índices a la *InputTensor* de entrada tensores de los valores máximos generados y almacenados en *OutputTensor*. Estos valores de índice son de base cero y tratan la entrada tensores como una matriz unidimensional contigua. Cuando varios elementos de la ventana deslizante tienen el mismo valor, se omiten los valores iguales posteriores y el índice apunta al primer valor encontrado. Tanto *OutputTensor* como *OutputIndicesTensor* tienen los mismos tamaños de tensores.
+Tensor de salida opcional de índices para el tensor *inputTensor* de los valores máximos generados y almacenados en *OutputTensor*. Estos valores de índice se basan en cero y tratan el tensor de entrada como una matriz unidimensional contigua. Cuando varios elementos dentro de la ventana deslizante tienen el mismo valor, se omiten los valores iguales posteriores y el índice apunta al primer valor encontrado. Tanto *OutputTensor* como *OutputIndicesTensor* tienen los mismos tamaños de tensor.
 
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de dimensiones espaciales de la tensores de entrada *InputTensor*, que también se corresponde con el número de dimensiones de *la ventana* deslizante. Este valor también determina el tamaño de las matrices de los *progresos*, *StartPadding* y *EndPadding* . Debe establecerse en 2 cuando el valor de *InputTensor* es 4D y 3 cuando es un tensores de 5D.
+Número de dimensiones espaciales del tensor *inputTensor*, que también corresponde al número de dimensiones de la ventana deslizante *WindowSize.* Este valor también determina el tamaño de las matrices *Strides,* *StartPadding* y *EndPadding.* Debe establecerse en 2 cuando *InputTensor* es 4D y 3 cuando es un tensor 5D.
 
 
 `Strides`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-El progresa para las dimensiones de la ventana deslizante de tamaños `{ Height, Width }` cuando *DimensionCount* se establece en 2, o `{ Depth, Height, Width }` cuando se establece en 3.
+Los avances de las dimensiones de ventana deslizante de tamaños cuando DimensionCount está establecido en 2 o cuando `{ Height, Width }` se establece en  `{ Depth, Height, Width }` 3.
 
 
 `WindowSize`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Las dimensiones de la ventana deslizante en `{ Height, Width }` cuando *DimensionCount* se establece en 2, o `{ Depth, Height, Width }` cuando se establece en 3.
+Dimensiones de la ventana deslizante en `{ Height, Width }` cuando *DimensionCount* se establece en 2 o `{ Depth, Height, Width }` cuando se establece en 3.
 
 
 `StartPadding`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-El número de elementos de relleno que se van a aplicar al principio de cada dimensión espacial del *InputTensor* de entrada tensores. Los valores están en `{ Height, Width }` cuando *DimensionCount* se establece en 2, o `{ Depth, Height, Width }` cuando se establece en 3.
+Número de elementos de relleno que se aplicarán al principio de cada dimensión espacial del tensor *inputTensor.* Los valores están en `{ Height, Width }` cuando *DimensionCount* se establece en 2 o `{ Depth, Height, Width }` cuando se establece en 3.
 
 
 `EndPadding`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-El número de elementos de relleno que se van a aplicar al final de cada dimensión espacial de la *InputTensor* de entrada tensores. Los valores están en `{ Height, Width }` cuando *DimensionCount* se establece en 2, o `{ Depth, Height, Width }` cuando se establece en 3.
+Número de elementos de relleno que se aplicarán al final de cada dimensión espacial del tensor *inputTensor.* Los valores están en `{ Height, Width }` cuando *DimensionCount* se establece en 2 o `{ Depth, Height, Width }` cuando se establece en 3.
 
 
 `Dilations`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Los valores de cada dimensión espacial del *InputTensor* de entrada tensores por el que se selecciona un elemento dentro de la ventana deslizante para todos los elementos de ese valor. Los valores están en `{ Height, Width }` cuando *DimensionCount* se establece en 2, o `{ Depth, Height, Width }` cuando se establece en 3.
+Valores de cada dimensión espacial del *tensor inputTensor* por el que se selecciona un elemento dentro de la ventana deslizante para cada elemento de ese valor. Los valores están en `{ Height, Width }` cuando *DimensionCount* se establece en 2 o `{ Depth, Height, Width }` cuando se establece en 3.
 
 
 ## <a name="remarks"></a>Observaciones
-**DML_MAX_POOLING2_OPERATOR_DESC** sustituye a la versión anterior [DML_MAX_POOLING_OPERATOR1_DESC](/windows/win32/api/directml/ns-directml-dml_max_pooling1_operator_desc) por una matriz de constantes *Dilations* adicional. Las dos versiones son equivalentes cuando *Dilations* se establece en `{ 1,1 }` para la entrada 4D `{ 1,1,1 }` o para las características de entrada 5D.
+**DML_MAX_POOLING2_OPERATOR_DESC** reemplaza a la versión anterior [DML_MAX_POOLING_OPERATOR1_DESC](/windows/win32/api/directml/ns-directml-dml_max_pooling1_operator_desc) con una matriz constante *adicional Denciones*. Las dos versiones son equivalentes cuando *Se establece en para* la entrada 4D o para las características de entrada `{ 1,1 }` `{ 1,1,1 }` 5D.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *InputTensor*, *OutputIndicesTensor* y *OutputTensor* deben tener el mismo *DimensionCount*.
-* *InputTensor* y *OutputTensor* deben tener el mismo *tipo de texto*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+* *InputTensor,* *OutputIndicesTensor y* *OutputTensor* deben tener el mismo *DimensionCount.*
+* *InputTensor* y *OutputTensor* deben tener el mismo *DataType.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Entrada | de 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
-| OutputTensor | Output | de 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
-| OutputIndicesTensor | Salida opcional | de 4 a 5 | UINT32 |
+| InputTensor | Entrada | De 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
+| OutputTensor | Resultados | De 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
+| OutputIndicesTensor | Salida opcional | De 4 a 5 | UINT32 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Entrada | de 4 a 5 | FLOAT32, FLOAT16 |
-| OutputTensor | Output | de 4 a 5 | FLOAT32, FLOAT16 |
-| OutputIndicesTensor | Salida opcional | de 4 a 5 | UINT32 |
+| InputTensor | Entrada | De 4 a 5 | FLOAT32, FLOAT16 |
+| OutputTensor | Resultados | De 4 a 5 | FLOAT32, FLOAT16 |
+| OutputIndicesTensor | Salida opcional | De 4 a 5 | UINT32 |
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Windows 10, versión 2004 (10,0; Compilación 19041) |
-| **Servidor mínimo compatible** | Windows Server, versión 2004 (10,0; Compilación 19041) |
-| **Header** | directml. h |
+| **Cliente mínimo compatible** | Windows 10, versión 2004 (10.0; Compilación 19041) |
+| **Servidor mínimo compatible** | Windows Server, versión 2004 (10.0; Compilación 19041) |
+| **Header** | directml.h |

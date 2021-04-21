@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC
 title: DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC
-description: Calcula el operador de C Modul para cada par de elementos correspondientes de los diez de entrada, colocando el resultado en el elemento correspondiente de *OutputTensor*.
+description: Calcula el operador de módulo C para cada par de elementos correspondientes de los tensores de entrada, colocando el resultado en el elemento correspondiente de *OutputTensor*.
 helpviewer_keywords:
 - DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC
 - DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC structure
@@ -44,16 +44,16 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC
-ms.openlocfilehash: f7cbfbf8613fb4309c6d336ccd807565d0dae53c
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 461a7882e17d86b25cf27e0a28c05673f8899cea
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721209"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803058"
 ---
-# <a name="dml_element_wise_modulus_truncate_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_element_wise_modulus_truncate_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC estructura (directml.h)
 
-Calcula el operador de C Modul para cada par de elementos correspondientes de los diez de entrada, colocando el resultado en el elemento correspondiente de *OutputTensor*.
+Calcula el operador de módulo C para cada par de elementos correspondientes de los tensores de entrada, colocando el resultado en el elemento correspondiente de *OutputTensor*.
 
 Dado que el cociente se redondea hacia 0, el resultado tendrá el mismo signo que el dividendo.
 
@@ -61,10 +61,10 @@ Dado que el cociente se redondea hacia 0, el resultado tendrá el mismo signo qu
 f(a, b) = a - (b * trunc(a / b))
 ```
 
-Este operador admite la ejecución en contexto, lo que significa que se permite que *OutputTensor* alias a uno de los decenas de entrada durante el enlace.
+Este operador admite la ejecución en contexto, lo que significa que *OutputTensor* puede crear un alias de uno de los tensores de entrada durante el enlace.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -83,46 +83,46 @@ struct DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores que contiene las entradas del lado izquierdo.
+Tensor que contiene las entradas del lado izquierdo.
 
 
 `BTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores que contiene las entradas del lado derecho.
+Tensor que contiene las entradas del lado derecho.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida en el que se van a escribir los resultados.
+Tensor de salida en el que se escriben los resultados.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-*ATensor*, *BTensor* y *OutputTensor* deben tener el mismo *tipo de DataType*, *DimensionCount* y *tamaños*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+*ATensor,* *BTensor* y *OutputTensor* deben tener los mismos *tamaños DataType,* *DimensionCount* y *.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| ATensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| BTensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputTensor | Output | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| ATensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| BTensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputTensor | Resultados | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
 | ATensor | Entrada | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 | BTensor | Entrada | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputTensor | Output | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputTensor | Resultados | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

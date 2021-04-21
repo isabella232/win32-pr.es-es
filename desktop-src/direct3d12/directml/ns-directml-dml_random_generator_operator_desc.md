@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_RANDOM_GENERATOR_OPERATOR_DESC
 title: DML_RANDOM_GENERATOR_OPERATOR_DESC
-description: Rellena un tensores de salida con bits distribuidos de forma determinista, pseudoaleatorios y con un formato uniforme. Opcionalmente, este operador también puede generar un estado de generador interno actualizado, que se puede usar durante las ejecuciones posteriores del operador.
+description: Rellena un tensor de salida con bits generados de forma determinista, pseudo aleatorios y distribuidos uniformemente. Opcionalmente, este operador también puede generar un estado de generador interno actualizado, que se puede usar durante las ejecuciones posteriores del operador.
 helpviewer_keywords:
 - DML_RANDOM_GENERATOR_OPERATOR_DESC
 - DML_RANDOM_GENERATOR_OPERATOR_DESC structure
@@ -45,23 +45,23 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RANDOM_GENERATOR_OPERATOR_DESC
-ms.openlocfilehash: 19e01ec8dc47e65ace996deef5954c35e21bf5bb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 6807c3a1ac91716739075f51196a75ae76ca479b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721202"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804070"
 ---
-# <a name="dml_random_generator_operator_desc-structure-directmlh"></a>DML_RANDOM_GENERATOR_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_random_generator_operator_desc-structure-directmlh"></a>DML_RANDOM_GENERATOR_OPERATOR_DESC estructura (directml.h)
 
-Rellena un tensores de salida con bits distribuidos de forma determinista, pseudoaleatorios y con un formato uniforme. Opcionalmente, este operador también puede generar un estado de generador interno actualizado, que se puede usar durante las ejecuciones posteriores del operador.
+Rellena un tensor de salida con bits generados de forma determinista, pseudo aleatorios y distribuidos uniformemente. Opcionalmente, este operador también puede generar un estado de generador interno actualizado, que se puede usar durante las ejecuciones posteriores del operador.
 
-Este operador es determinista y se comporta como si fuera una función pura &mdash; , su ejecución no produce efectos secundarios y no utiliza ningún estado global. La salida pseudoaleatorios generada por este operador depende únicamente de los valores proporcionados en *InputStateTensor*.
+Este operador es determinista y se comporta como si fuera una función pura, es decir, su ejecución no produce efectos secundarios y &mdash; no usa ningún estado global. La salida pseudolealea producida por este operador depende únicamente de los valores proporcionados en *InputStateTensor*.
 
-Los generadores implementados por este operador no son seguros criptográficamente; por lo tanto, este operador no debe usarse para el cifrado, la generación de claves ni otras aplicaciones que requieren la generación de números aleatorios criptográficamente segura.
+Los generadores implementados por este operador no son criptográficamente seguros; Por lo tanto, este operador no debe usarse para el cifrado, la generación de claves u otras aplicaciones que requieran la generación de números aleatorios criptográficamente segura.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,9 +81,9 @@ struct DML_RANDOM_GENERATOR_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de entrada que contiene el estado interno del generador. El tamaño y el formato de este tensores de entrada depende de la [DML_RANDOM_GENERATOR_TYPE](./ne-directml-dml_random_generator_type.md).
+Tensor de entrada que contiene el estado interno del generador. El tamaño y el formato de este tensor de entrada dependen del [DML_RANDOM_GENERATOR_TYPE](./ne-directml-dml_random_generator_type.md).
 
-Por **DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, este tensores debe ser de tipo **UINT32** y tener tamaños `{1,1,1,6}` . Los primeros valores de 4 32 bits contienen un contador de 128 bits que aumenta de una vez. Los últimos valores de 2 32 bits contienen el valor de clave de 64 bits para el generador.
+Para **DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, este tensor debe ser de tipo **UINT32** y tener tamaños `{1,1,1,6}` . Los cuatro primeros valores de 32 bits contienen un contador de 128 bits que aumenta de forma monótona. Los dos últimos valores de 32 bits contienen el valor de clave de 64 bits para el generador.
 
 ```
     Element        0       1       2       3       4       5
@@ -91,47 +91,47 @@ Por **DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, este tensores debe ser de tipo
                 <--------128-bit counter------> <-64-bit key-->
 ```
 
-Al inicializar el estado de entrada del generador por primera vez, normalmente el contador de 128 bits (los primeros valores UINT32 de 4 32 bits) se debe inicializar en 0. La clave se puede elegir arbitrariamente; los distintos valores de clave generarán diferentes secuencias de números. Normalmente, el valor de la clave se genera mediante un valor de *inicialización* proporcionado por el usuario.
+Al inicializar el estado de entrada del generador por primera vez, normalmente el contador de 128 bits (los cuatro primeros valores UINT32 de 32 bits) debe inicializarse en 0. La clave se puede elegir arbitrariamente; los distintos valores de clave producirán secuencias de números diferentes. El valor de la clave normalmente se genera mediante un *valor de ed. proporcionado por el usuario.*
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene los valores pseudoaleatorios resultantes. Este tensores puede tener cualquier tamaño.
+Tensor de salida que contiene los valores pseudo aleatorios resultantes. Este tensor puede ser de cualquier tamaño.
 
 `OutputStateTensor`
 
 Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores de salida opcional que contiene el estado de generador interno actualizado. Si se proporciona, este operador usa *InputStateTensor* para calcular un estado de generador actualizado adecuado y escribe el resultado en el *OutputStateTensor*. Normalmente, los autores de la llamada guardan este resultado y lo suministran como estado de entrada en una ejecución subsiguiente de este operador.
+Tensor de salida opcional que contiene el estado del generador interno actualizado. Si se proporciona, este operador usa *InputStateTensor* para calcular un estado de generador actualizado adecuado y escribe el resultado en *OutputStateTensor*. Normalmente, los llamadores guardarían este resultado y lo proporcionarían como estado de entrada en una ejecución posterior de este operador.
 
 `Type`
 
 Tipo: **[DML_RANDOM_GENERATOR_TYPE](./ne-directml-dml_random_generator_type.md)**
 
-Uno de los valores de la enumeración [DML_RANDOM_GENERATOR_TYPE](./ne-directml-dml_random_generator_type.md) , que indica el tipo de generador que se va a usar. Actualmente, el único valor válido es **DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, que genera números pseudoaleatorios según el [algoritmo PHILOX 4X32-10](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf).
+Uno de los valores de la [DML_RANDOM_GENERATOR_TYPE](./ne-directml-dml_random_generator_type.md) enumeración, que indica el tipo de generador que se usará. Actualmente, el único valor válido **es DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, que genera números pseudo aleatorios según el algoritmo [de Rsaox 4x32-10](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf).
 
 ## <a name="remarks"></a>Observaciones
-En cada ejecución de este operador, se debe incrementar el contador de 128 bits. Si se proporciona *OutputStateTensor* , este operador incrementa el contador con el valor correcto en su nombre y escribe el resultado en el *OutputStateTensor*. La cantidad que se debe incrementar depende del número de elementos de salida de 32 bits generados y del tipo del generador.
+En cada ejecución de este operador, se debe incrementar el contador de 128 bits. Si se *proporciona OutputStateTensor,* THEN este operador incrementa el contador con el valor correcto en su nombre y escribe el resultado en *OutputStateTensor*. La cantidad en la que se debe incrementar depende del número de elementos de salida de 32 bits generados y del tipo del generador.
 
-Por **DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, el contador de 128 bits debe incrementarse `ceil(outputSize / 4)` en cada ejecución, donde `outputSize` es el número de elementos de *OutputTensor*.
+Por **DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10**, el contador de 128 bits se debe incrementar en en cada ejecución, donde es el número de elementos `ceil(outputSize / 4)` de `outputSize` *OutputTensor*.
 
-Considere un ejemplo en el que el valor del contador de 128 bits es actualmente `0x48656c6c'6f46726f'6d536561'74746c65` y el tamaño de OutputTensor es `{3,3,20,7219}` . Después de ejecutar este operador una vez, el contador debería incrementarse en 324.855 (el número de elementos de salida generado dividido por 4, redondeado hacia arriba), lo que da como resultado un valor de contador de `0x48656c6c'6f46726f'6d536561'746f776e` . Este valor actualizado se debe proporcionar como entrada para la siguiente ejecución de este operador.
+Considere un ejemplo en el que el valor del contador de 128 bits es actualmente y el tamaño de `0x48656c6c'6f46726f'6d536561'74746c65` OutputTensor es `{3,3,20,7219}` . Después de ejecutar este operador una vez, el contador debe incrementarse en 324 855 (el número de elementos de salida generado divididos por 4, redondeados hacia arriba) lo que da como resultado un valor de contador de `0x48656c6c'6f46726f'6d536561'746f776e` . A continuación, este valor actualizado se debe proporcionar como entrada para la siguiente ejecución de este operador.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-`InputStateTensor` y `OutputStateTensor` deben tener el mismo *tamaño*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+`InputStateTensor`y `OutputStateTensor` deben tener los mismos *tamaños.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Dimensions | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Dimensions | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputStateTensor | Entrada | {1, 1, 1, 6} | 4 | UINT32 |
-| OutputTensor | Output | {D0, D1, D2, D3} | 4 | UINT32 |
-| OutputStateTensor | Salida opcional | {1, 1, 1, 6} | 4 | UINT32 |
+| InputStateTensor | Entrada | { 1, 1, 1, 6 } | 4 | UINT32 |
+| OutputTensor | Resultados | { D0, D1, D2, D3 } | 4 | UINT32 |
+| OutputStateTensor | Salida opcional | { 1, 1, 1, 6 } | 4 | UINT32 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

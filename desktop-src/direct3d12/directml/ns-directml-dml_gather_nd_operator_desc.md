@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_GATHER_ND_OPERATOR_DESC
 title: DML_GATHER_ND_OPERATOR_DESC
-description: Recopila elementos de la tensores de entrada, mediante los índices tensores para reasignar los índices a subbloqueos completos de la entrada. | DML_GATHER_ND_OPERATOR_DESC
+description: Recopila elementos del tensor de entrada, usando el tensor de índices para reasignar índices a todos los subbloqueos de la entrada. | DML_GATHER_ND_OPERATOR_DESC
 helpviewer_keywords:
 - DML_GATHER_ND_OPERATOR_DESC
 - DML_GATHER_ND_OPERATOR_DESC structure
@@ -44,23 +44,23 @@ api_location:
 - DirectML.h
 api_name:
 - DML_GATHER_ND_OPERATOR_DESC
-ms.openlocfilehash: 6a48fd19621bed100a13412dbb1992974d125323
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8e74078eaf55f209fba92ba97737d22047a5e67c
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105721417"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802895"
 ---
-# <a name="dml_gather_nd_operator_desc-structure-directmlh"></a>DML_GATHER_ND_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_gather_nd_operator_desc-structure-directmlh"></a>DML_GATHER_ND_OPERATOR_DESC estructura (directml.h)
 
-Recopila elementos de la tensores de entrada, mediante los índices tensores para reasignar los índices a subbloqueos completos de la entrada. Este operador realiza el siguiente pseudocódigo, donde "..." representa una serie de coordenadas, con el comportamiento exacto que depende del número de dimensiones de entrada e índices.
+Recopila elementos del tensor de entrada, usando el tensor de índices para reasignar índices a todos los subbloqueos de la entrada. Este operador realiza el pseudocódigo siguiente, donde "..." representa una serie de coordenadas, con el comportamiento exacto dependiente del recuento de dimensiones de entrada e índices.
 
 ```
 output[...] = input[indices[...]]
 ```
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -81,23 +81,23 @@ struct DML_GATHER_ND_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores del que se va a leer.
+Tensor del que se leerá.
 
 
 `IndicesTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los índices. El *DimensionCount* de este tensores debe coincidir con *InputTensor. DimensionCount*. La última dimensión de *IndicesTensor* es en realidad el número de coordenadas por tupla de índice y no puede superar *InputTensor. DimensionCount*. Por ejemplo, un índice tensores de *tamaños* `{1,4,5,2}` con *IndicesDimensionCount* = 3 significa una matriz 4x5 de tuplas de 2 coordenadas que indexan en *InputTensor*.
+Tensor que contiene los índices. DimensionCount *de* este tensor debe coincidir *con InputTensor.DimensionCount.* La última dimensión de *IndicesTensor* es realmente el número de coordenadas por tupla de índice y no puede superar *InputTensor.DimensionCount*. Por ejemplo, un tensor de índices de *tamaños* con ÍndicesDimensionCount = 3 significa una matriz 4x5 de tuplas de dos coordenadas que se indexan en `{1,4,5,2}`  *InputTensor*.
 
-A partir de `DML_FEATURE_LEVEL_3_0` , este operador admite valores de índice negativos cuando se usa un tipo entero con signo con este tensores. Los índices negativos se interpretan como en relación con el final de la dimensión respectiva. Por ejemplo, un índice de-1 hace referencia al último elemento a lo largo de esa dimensión.
+A partir `DML_FEATURE_LEVEL_3_0` de , este operador admite valores de índice negativos cuando se usa un tipo entero con signo con este tensor. Los índices negativos se interpretan como relativos al final de la dimensión correspondiente. Por ejemplo, un índice de -1 hace referencia al último elemento a lo largo de esa dimensión.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores en el que se van a escribir los resultados. *DimensionCount* y *DataType* de este tensores deben coincidir con *InputTensor. DimensionCount*. El *OutputTensor esperado. los tamaños* son la concatenación de los segmentos de *IndicesTensor. Sizes* iniciales y *InputTensor. Sizes* final del segmento que se va a producir:
+Tensor en el que se escriben los resultados. DimensionCount *y* *DataType de* este tensor deben coincidir *con InputTensor.DimensionCount.* Los *outputTensor.Sizes esperados* son la concatenación de los segmentos iniciales *IndicesTensor.Sizes* y el segmento final *InputTensor.Sizes* para producir:
 
 ```
 indexTupleSize = IndicesTensor.Sizes[IndicesTensor.DimensionCount - 1]
@@ -108,7 +108,7 @@ OutputTensor.Sizes = {
 }
 ```
 
-Las dimensiones de salida están alineadas a la derecha, con un valor inicial de 1 delante, si es necesario, para satisfacer hasta *OutputTensor. DimensionCount*.
+Las dimensiones de salida están alineadas a la derecha, con 1 valor inicial anteponer si es necesario para satisfacer hasta *OutputTensor.DimensionCount*.
 
 Aquí tiene un ejemplo.
 
@@ -127,20 +127,20 @@ OutputTensor.Sizes = {1, 1,2,6,7}
 
 `InputDimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de dimensiones de entrada reales dentro de *InputTensor* después de omitir las principales que no son relevantes, que van `[1, *InputTensor.DimensionCount*]` . Por ejemplo, dado *InputTensor. Sizes*  =  `{1,1,4,6}` y `InputDimensionCount` = 3, los índices significativos reales son `{1,4,6}` .
+Número de dimensiones de entrada reales dentro de *InputTensor* después de omitir las iniciales irrelevantes, que abarcan `[1, *InputTensor.DimensionCount*]` . Por ejemplo, *dados InputTensor.Sizes*  =  `{1,1,4,6}` y = `InputDimensionCount` 3, los índices significativos reales son `{1,4,6}` .
 
 
 `IndicesDimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de dimensiones de índice reales dentro de *IndicesTensor* después de omitir las principales que no sean importantes, que abarcan [1, *IndicesTensor. DimensionCount*]. Por ejemplo, dado *IndicesTensor. Sizes*  =  `{1,1,4,6}` y *IndicesDimensionCount* = 3, los índices significativos reales son `{1,4,6}` .
+Número de dimensiones de índice reales dentro de *IndicesTensor* después de omitir las iniciales irrelevantes, que van [1, *IndicesTensor.DimensionCount*]. Por ejemplo, *dados IndicesTensor.Sizes* e  =  `{1,1,4,6}` *IndicesDimensionCount* = 3, los índices significativos reales son `{1,4,6}` .
 
 ## <a name="examples"></a>Ejemplos
 
-### <a name="example-1-1d-remapping"></a>Ejemplo 1. reasignación 1D
+### <a name="example-1-1d-remapping"></a>Ejemplo 1. Remapping 1D
 
 ```
 InputDimensionCount: 2
@@ -157,7 +157,7 @@ OutputTensor: (Sizes:{2,2}, DataType:FLOAT32)
     [[2,3],[0,1]]
 ```
 
-### <a name="example-2-2d-remapping"></a>Ejemplo 2. reasignación 2D
+### <a name="example-2-2d-remapping"></a>Ejemplo 2. Remapping 2D
 
 ```
 InputDimensionCount: 3
@@ -176,32 +176,32 @@ OutputTensor: (Sizes:{1,1, 2,2}, DataType:FLOAT32)
 
 
 ## <a name="remarks"></a>Observaciones
-Se presentó una versión más reciente de este operador, `DML_OPERATOR_GATHER_ND1` , en `DML_FEATURE_LEVEL_3_0` .
+Se introdujo una versión más reciente de este operador, `DML_OPERATOR_GATHER_ND1` , en `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *IndicesTensor*, *InputTensor* y *OutputTensor* deben tener el mismo *DimensionCount*.
-* *InputTensor* y *OutputTensor* deben tener el mismo *tipo de texto*.
+## <a name="tensor-constraints"></a>Restricciones de Tensor
+* *Los índicesTensor*, *InputTensor* y *OutputTensor* deben tener el mismo *dimensioncount.*
+* *InputTensor* y *OutputTensor* deben tener el mismo *tipo de datos*.
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Entrada | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| IndicesTensor | Entrada | de 1 a 8 | INT64, INT32, UINT64, UINT32 |
-| OutputTensor | Output | de 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| InputTensor | Entrada | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| ÍndicesTensor | Entrada | De 1 a 8 | INT64, INT32, UINT64, UINT32 |
+| OutputTensor | Resultados | De 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y versiones posteriores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 y posteriores
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| IndicesTensor | Entrada | 4 | UINT32 |
-| OutputTensor | Output | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| ÍndicesTensor | Entrada | 4 | UINT32 |
+| OutputTensor | Resultados | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

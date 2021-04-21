@@ -1,7 +1,7 @@
 ---
 UID: NE:directml.DML_GRAPH_EDGE_TYPE
 title: DML_GRAPH_EDGE_TYPE
-description: Define constantes que especifican un tipo de borde del gráfico. Consulte [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) para el uso de esta enumeración.
+description: Define constantes que especifican un tipo de borde de grafo. Consulte [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) para el uso de esta enumeración.
 helpviewer_keywords:
 - DML_GRAPH_EDGE_TYPE
 - DML_GRAPH_EDGE_TYPE structure
@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_GRAPH_EDGE_TYPE
-ms.openlocfilehash: 19b11686f3741c386ca03e84af5a41af1ce5cb52
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: d65649fcd2115cc7cdcc1b01da20ef44b0436e6f
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721311"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803798"
 ---
-# <a name="dml_graph_edge_type-enumeration-directmlh"></a>Enumeración DML_GRAPH_EDGE_TYPE (directml. h)
+# <a name="dml_graph_edge_type-enumeration-directmlh"></a>DML_GRAPH_EDGE_TYPE enumeración (directml.h)
 
-Define constantes que especifican un tipo de borde del gráfico. Consulte [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) para el uso de esta enumeración.
+Define constantes que especifican un tipo de borde de grafo. Consulte [DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md) para el uso de esta enumeración.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -73,22 +73,22 @@ typedef enum DML_GRAPH_EDGE_TYPE {
 
 | Nombre | Descripción |
 | ---- |:---- |
-| DML_GRAPH_EDGE_TYPE_INVALID | Especifica un tipo de borde de gráfico desconocido y nunca es válido. Si se usa este valor, se producirá un error. |
-| DML_GRAPH_EDGE_TYPE_INPUT | Especifica que la estructura de [DML_INPUT_GRAPH_EDGE_DESC](./ns-directml-dml_input_graph_edge_desc.md) describe el borde del gráfico. |
-| DML_GRAPH_EDGE_TYPE_OUTPUT | Especifica que la estructura de [DML_OUTPUT_GRAPH_EDGE_DESC](./ns-directml-dml_output_graph_edge_desc.md) describe el borde del gráfico. |
-| DML_GRAPH_EDGE_TYPE_INTERMEDIATE | Especifica que la estructura de [DML_INTERMEDIATE_GRAPH_EDGE_DESC](./ns-directml-dml_intermediate_graph_edge_desc.md) describe el borde del gráfico.<br><br># # Disponibilidad<br><br>Esta API se presentó en la versión DirectML `1.1.0` . |
+| DML_GRAPH_EDGE_TYPE_INVALID | Especifica un tipo de borde de grafo desconocido y nunca es válido. El uso de este valor produce un error. |
+| DML_GRAPH_EDGE_TYPE_INPUT | Especifica que el borde del gráfico se describe mediante la [DML_INPUT_GRAPH_EDGE_DESC](./ns-directml-dml_input_graph_edge_desc.md) gráfico. |
+| DML_GRAPH_EDGE_TYPE_OUTPUT | Especifica que el borde del gráfico se describe mediante la [estructura DML_OUTPUT_GRAPH_EDGE_DESC](./ns-directml-dml_output_graph_edge_desc.md) gráfico. |
+| DML_GRAPH_EDGE_TYPE_INTERMEDIATE | Especifica que el borde del gráfico se describe mediante la [estructura DML_INTERMEDIATE_GRAPH_EDGE_DESC](./ns-directml-dml_intermediate_graph_edge_desc.md) gráfico.<br><br>Disponibilidad de ##<br><br>Esta API se introdujo en la versión de `1.1.0` DirectML. |
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
-* [IDMLDevice1:: CompileGraph (método)](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
-* [Estructura de DML_GRAPH_DESC](./ns-directml-dml_graph_desc.md)     
-* [Estructura de DML_GRAPH_EDGE_DESC](./ns-directml-dml_graph_edge_desc.md)
-* [Estructura de DML_INPUT_GRAPH_EDGE_DESC](./ns-directml-dml_input_graph_edge_desc.md)
-* [Estructura de DML_OUTPUT_GRAPH_EDGE_DESC](./ns-directml-dml_output_graph_edge_desc.md)
-* [Estructura de DML_INTERMEDIATE_GRAPH_EDGE_DESC](./ns-directml-dml_intermediate_graph_edge_desc.md)
+* [Método IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
+* [DML_GRAPH_DESC estructura](./ns-directml-dml_graph_desc.md)     
+* [DML_GRAPH_EDGE_DESC estructura](./ns-directml-dml_graph_edge_desc.md)
+* [DML_INPUT_GRAPH_EDGE_DESC estructura](./ns-directml-dml_input_graph_edge_desc.md)
+* [DML_OUTPUT_GRAPH_EDGE_DESC estructura](./ns-directml-dml_output_graph_edge_desc.md)
+* [DML_INTERMEDIATE_GRAPH_EDGE_DESC estructura](./ns-directml-dml_intermediate_graph_edge_desc.md)

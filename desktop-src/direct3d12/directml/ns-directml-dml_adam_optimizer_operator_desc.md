@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ADAM_OPTIMIZER_OPERATOR_DESC
 title: DML_ADAM_OPTIMIZER_OPERATOR_DESC
-description: Calcula pesos actualizados (parámetros) mediante los degradados proporcionados, según el algoritmo de la estimación de Adam (**ADA** ptive **M** oment). Este operador es un optimizador y se utiliza normalmente en el paso de actualización de peso de un bucle de entrenamiento para realizar el descenso de gradiente.
+description: Calcula los pesos actualizados (parámetros) mediante los degradados proporcionados, basándose en el algoritmo Adam (estimación de M **oment** ptive de **ADA).** Este operador es un optimizador y normalmente se usa en el paso de actualización de peso de un bucle de entrenamiento para realizar el descenso de gradiente.
 helpviewer_keywords:
 - DML_ADAM_OPTIMIZER_OPERATOR_DESC
 - DML_ADAM_OPTIMIZER_OPERATOR_DESC structure
@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ADAM_OPTIMIZER_OPERATOR_DESC
-ms.openlocfilehash: a4acd26f5174bf6c6ae53f5edfdc28cc6c9b1a3d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 9943f70bd3d62faf57f4eca83f9f09ce0119881a
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721213"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803524"
 ---
-# <a name="dml_adam_optimizer_operator_desc-structure-directmlh"></a>DML_ADAM_OPTIMIZER_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_adam_optimizer_operator_desc-structure-directmlh"></a>DML_ADAM_OPTIMIZER_OPERATOR_DESC estructura (directml.h)
 
-Calcula pesos actualizados (parámetros) mediante los degradados proporcionados, según el algoritmo de la estimación de Adam (**ADA** ptive **M** oment). Este operador es un optimizador y se utiliza normalmente en el paso de actualización de peso de un bucle de entrenamiento para realizar el descenso de gradiente.
+Calcula los pesos actualizados (parámetros) mediante los degradados proporcionados, basándose en el algoritmo Adam (estimación de M **oment** ptive de **ADA).** Este operador es un optimizador y normalmente se usa en el paso de actualización de peso de un bucle de entrenamiento para realizar el descenso de gradiente.
 
-Este operador realiza el siguiente cálculo:
+Este operador realiza el cálculo siguiente:
 
 ```
 X = InputParametersTensor
@@ -79,10 +79,10 @@ OutputFirstMomentTensor = M
 OutputSecondMomentTensor = V
 ```
 
-Además de calcular los parámetros de peso actualizados (devueltos en *OutputParametersTensor*), este operador también devuelve las estimaciones de primer y segundo momento actualizadas en *OutputFirstMomentTensor* y *OutputSecondMomentTensor*, respectivamente. Normalmente, debe almacenar estas estimaciones en el primer y el segundo momento y proporcionarlas como entradas durante el paso de entrenamiento subsiguiente.
+Además de calcular los parámetros de peso actualizados (devueltos en *OutputParametersTensor),* este operador también devuelve las estimaciones actualizadas del primer y segundo momento en *OutputFirstMomentTensor* y *OutputSecondMomentTensor,* respectivamente. Normalmente, debe almacenar estas estimaciones de primer y segundo momento y proporcionarlas como entradas durante el paso de entrenamiento posterior.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -109,123 +109,123 @@ struct DML_ADAM_OPTIMIZER_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los parámetros (pesos) a los que se va a aplicar este optimizador. Este operador usa las estimaciones de degradado, primer y segundo momento, el paso de entrenamiento actual, así como los hiperparámetros *LearningRate*, *beta1* y *beta2*, para realizar descensos de degradado en los valores de peso proporcionados en este tensores.
+Tensor que contiene los parámetros (pesos) a los que se va a aplicar este optimizador. Este operador usa las estimaciones de gradiente, primer y segundo momento, el paso de entrenamiento actual, así como los hiperparámetros *LearningRate,* *Beta1* y *Beta2,* para realizar el descenso de gradiente en los valores de peso proporcionados en este tensor.
 
 `InputFirstMomentTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene la estimación del primer momento del degradado para cada valor de peso. Estos valores se obtienen normalmente como resultado de una ejecución anterior de este operador, a través de *OutputFirstMomentTensor*.
+Tensor que contiene la estimación del primer momento del degradado para cada valor de peso. Normalmente, estos valores se obtienen como resultado de una ejecución anterior de este operador, a través de *OutputFirstMomentTensor*.
 
-Al aplicar este optimizador a un conjunto de pesos por primera vez (por ejemplo, durante el paso de entrenamiento inicial), los valores de este tensores normalmente se deben inicializar en cero. Las ejecuciones posteriores deben usar los valores devueltos en *OutputFirstMomentTensor*.
+Al aplicar este optimizador a un conjunto de pesos por primera vez (por ejemplo, durante el paso de entrenamiento inicial), los valores de este tensor normalmente se deben inicializar en cero. Las ejecuciones posteriores deben usar los valores devueltos *en OutputFirstMomentTensor*.
 
-Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputParametersTensor*.
+Los *tamaños* y *datatype* de este tensor deben coincidir exactamente con los de *InputParametersTensor*.
 
 `InputSecondMomentTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene la estimación del segundo momento del degradado para cada valor de peso. Estos valores se obtienen normalmente como resultado de una ejecución anterior de este operador, a través de *OutputSecondMomentTensor*.
+Tensor que contiene la estimación del segundo momento del degradado para cada valor de peso. Normalmente, estos valores se obtienen como resultado de una ejecución anterior de este operador, a través de *OutputSecondMomentTensor*.
 
-Al aplicar este optimizador a un conjunto de pesos por primera vez (por ejemplo, durante el paso de entrenamiento inicial), los valores de este tensores normalmente se deben inicializar en cero. Las ejecuciones posteriores deben usar los valores devueltos en *OutputSecondMomentTensor*.
+Al aplicar este optimizador a un conjunto de pesos por primera vez (por ejemplo, durante el paso de entrenamiento inicial), los valores de este tensor normalmente se deben inicializar en cero. Las ejecuciones posteriores deben usar los valores devueltos *en OutputSecondMomentTensor*.
 
-Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputParametersTensor*.
+Los *tamaños* y *datatype* de este tensor deben coincidir exactamente con los de *InputParametersTensor*.
 
 `GradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Degradados que se van a aplicar a los parámetros de entrada (pesos) del descenso de gradiente. Normalmente, los degradados se obtienen en una fase de propagación de una inestación durante el entrenamiento.
+Degradados que se aplicarán a los parámetros de entrada (pesos) para el descenso de gradiente. Los degradados normalmente se obtienen en un paso de apropagación posterior durante el entrenamiento.
 
-Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputParametersTensor*.
+Los *tamaños* y *datatype* de este tensor deben coincidir exactamente con los de *InputParametersTensor*.
 
 `TrainingStepTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores escalar que contiene un valor entero único que representa el número de pasos de entrenamiento actual. Este valor, junto con *beta1* y *beta2* , se usa para calcular la caída exponencial del primer y el segundo.
+Tensor escalar que contiene un valor entero único que representa el recuento de pasos de entrenamiento actual. Este valor junto con *Beta1* y *Beta2* se usa para calcular la decadencia exponencial de los tensores de estimación de primer y segundo momento.
 
 Normalmente, el valor del paso de entrenamiento comienza en 0 al principio del entrenamiento y se incrementa en 1 en cada paso de entrenamiento sucesivo. Este operador no actualiza el valor del paso de entrenamiento; debe hacerlo manualmente, por ejemplo, mediante [DML_OPERATOR_ELEMENT_WISE_ADD](/windows/win32/api/directml/ns-directml-dml_element_wise_add_operator_desc).
 
-Este tensores debe ser un escalar (es decir, todos los *tamaños* son iguales a 1) y tener el tipo de datos [**DML_TENSOR_DATA_TYPE_UINT32**](/windows/win32/api/directml/ne-directml-dml_tensor_data_type).
+Este tensor debe ser escalar (es decir, todos *los tamaños* iguales a 1) y tener el tipo de [**datos DML_TENSOR_DATA_TYPE_UINT32**](/windows/win32/api/directml/ne-directml-dml_tensor_data_type).
 
 `OutputParametersTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene los valores del parámetro actualizado (peso) tras aplicar el descenso del degradado.
+Tensor de salida que contiene los valores actualizados del parámetro (peso) después de aplicar el descenso de gradiente.
 
-Durante el enlace, se permite a este tensores alias de un tensores de entrada válido, que se puede usar para realizar una actualización en contexto de este tensores. Vea la sección [comentarios](#remarks) para obtener más detalles.
+Durante el enlace, este tensor puede crear un alias para un tensor de entrada apto, que se puede usar para realizar una actualización local de este tensor. Consulte la [sección Comentarios para](#remarks) obtener más detalles.
 
-Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputParametersTensor*.
+Los *tamaños* y *el tipo de datos* de este tensor deben coincidir exactamente con los de *InputParametersTensor.*
 
 `OutputFirstMomentTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene estimaciones del primer momento actualizadas. Debe almacenar los valores de este tensores y proporcionarlos en *InputFirstMomentTensor* durante el siguiente paso de entrenamiento.
+Tensor de salida que contiene estimaciones actualizadas del primer momento. Debe almacenar los valores de este tensor y proporcionarlos en *InputFirstMomentTensor* durante el paso de entrenamiento posterior.
 
-Durante el enlace, se permite a este tensores alias de un tensores de entrada válido, que se puede usar para realizar una actualización en contexto de este tensores. Vea la sección [comentarios](#remarks) para obtener más detalles.
+Durante el enlace, este tensor puede crear un alias para un tensor de entrada apto, que se puede usar para realizar una actualización local de este tensor. Consulte la [sección Comentarios para](#remarks) obtener más detalles.
 
-Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputParametersTensor*.
+Los *tamaños* y *el tipo de datos* de este tensor deben coincidir exactamente con los de *InputParametersTensor.*
 
 `OutputSecondMomentTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene estimaciones del segundo momento actualizadas. Debe almacenar los valores de este tensores y proporcionarlos en *InputSecondMomentTensor* durante el siguiente paso de entrenamiento.
+Tensor de salida que contiene estimaciones actualizadas del segundo momento. Debe almacenar los valores de este tensor y proporcionarlos en *InputSecondMomentTensor* durante el paso de entrenamiento posterior.
 
-Durante el enlace, se permite a este tensores alias de un tensores de entrada válido, que se puede usar para realizar una actualización en contexto de este tensores. Vea la sección [comentarios](#remarks) para obtener más detalles.
+Durante el enlace, este tensor puede crear un alias para un tensor de entrada apto, que se puede usar para realizar una actualización local de este tensor. Consulte la [sección Comentarios para](#remarks) obtener más detalles.
 
-Los *tamaños* y el tipo de los *tipos* de tensores deben coincidir exactamente con los de *InputParametersTensor*.
+Los *tamaños* y *el tipo de datos* de este tensor deben coincidir exactamente con los de *InputParametersTensor.*
 
 `LearningRate`
 
 Tipo: **float**
 
-La velocidad de aprendizaje, que también se conoce comúnmente como el *tamaño del paso*. La velocidad de aprendizaje es un hiperparámetro que determina la magnitud de la actualización del peso a lo largo del vector de degradado en cada paso del entrenamiento.
+La velocidad de aprendizaje, también conocida comúnmente como el tamaño *del paso*. La velocidad de aprendizaje es un hiperparámetro que determina la magnitud de la actualización de peso a lo largo del vector de degradado en cada paso de entrenamiento.
 
 `Beta1`
 
 Tipo: **float**
 
-Hiperparámetro que representa la tasa exponencial de caída de la estimación del primer momento del degradado. Este valor debe estar comprendido entre 0,0 y 1,0. Un valor de 0.9 f es típico.
+Hiperparámetro que representa la tasa de decadencia exponencial de la estimación del primer momento del degradado. Este valor debe estar entre 0,0 y 1,0. Un valor de 0,9f es típico.
 
 `Beta2`
 
 Tipo: **float**
 
-Hiperparámetro que representa la tasa exponencial de caída de la estimación del segundo momento del degradado. Este valor debe estar comprendido entre 0,0 y 1,0. Un valor de 0,999 f es típico.
+Hiperparámetro que representa la tasa de decadencia exponencial de la estimación del segundo momento del degradado. Este valor debe estar entre 0,0 y 1,0. Un valor de 0,999f es típico.
 
 `Epsilon`
 
 Tipo: **float**
 
-Valor pequeño que se usa para ayudar a la estabilidad numérica evitando la división por cero. En el caso de las entradas de punto flotante de 32 bits, los valores típicos incluyen 1E-8 o `FLT_EPSILON` .
+Valor pequeño que se usa para ayudar a la estabilidad numérica evitando la división por cero. Para las entradas de punto flotante de 32 bits, los valores típicos incluyen 1e-8 o `FLT_EPSILON` .
 
 ## <a name="remarks"></a>Observaciones
-Este operador admite la ejecución en contexto, lo que significa que cada tensores de salida tiene permiso para dar alias a un tensores de entrada válido durante el enlace. Por ejemplo, es posible enlazar el mismo recurso para *InputParametersTensor* y *OutputParametersTensor* con el fin de lograr de forma eficaz una actualización en contexto de los parámetros de entrada. Todos los datos de la entrada de este operador, con la excepción de *TrainingStepTensor*, son válidos para incluirse en el alias de esta manera.
+Este operador admite la ejecución en contexto, lo que significa que cada tensor de salida puede crear un alias para un tensor de entrada apto durante el enlace. Por ejemplo, es posible enlazar el mismo recurso para *InputParametersTensor* y *OutputParametersTensor* con el fin de lograr de forma eficaz una actualización local de los parámetros de entrada. Todos los tensores de entrada de este operador, a excepción de *TrainingStepTensor,* pueden tener alias de esta manera.
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *GradientTensor*, *InputFirstMomentTensor*, *InputParametersTensor*, *InputSecondMomentTensor*, *OutputFirstMomentTensor*, *OutputParametersTensor*, *OutputSecondMomentTensor* y *TrainingStepTensor* deben tener el mismo *tipo de texto*.
-* *GradientTensor*, *InputFirstMomentTensor*, *InputParametersTensor*, *InputSecondMomentTensor*, *OutputFirstMomentTensor*, *OutputParametersTensor* y *OutputSecondMomentTensor* deben tener el mismo *tamaño*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+* *GradientTensor*, *InputFirstMomentTensor*, *InputParametersTensor*, *InputSecondMomentTensor*, *OutputFirstMomentTensor*, *OutputParametersTensor*, *OutputSecondMomentTensor y* *TrainingStepTensor* deben tener el mismo *DataType.*
+* *GradientTensor*, *InputFirstMomentTensor*, *InputParametersTensor*, *InputSecondMomentTensor*, *OutputFirstMomentTensor*, *OutputParametersTensor* y *OutputSecondMomentTensor* deben tener los mismos *tamaños.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Dimensions | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Dimensions | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputParametersTensor | Entrada | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
-| InputFirstMomentTensor | Entrada | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
-| InputSecondMomentTensor | Entrada | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
-| GradientTensor | Entrada | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
-| TrainingStepTensor | Entrada | {1, 1, 1, 1} | 4 | FLOAT32, FLOAT16 |
-| OutputParametersTensor | Output | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
-| OutputFirstMomentTensor | Output | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
-| OutputSecondMomentTensor | Output | {D0, D1, D2, D3} | 4 | FLOAT32, FLOAT16 |
+| InputParametersTensor | Entrada | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
+| InputFirstMomentTensor | Entrada | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
+| InputSecondMomentTensor | Entrada | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
+| GradientTensor | Entrada | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
+| TrainingStepTensor | Entrada | { 1, 1, 1, 1 } | 4 | FLOAT32, FLOAT16 |
+| OutputParametersTensor | Resultados | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
+| OutputFirstMomentTensor | Resultados | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
+| OutputSecondMomentTensor | Resultados | { D0, D1, D2, D3 } | 4 | FLOAT32, FLOAT16 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

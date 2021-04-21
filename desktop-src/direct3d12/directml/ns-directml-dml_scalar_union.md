@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SCALAR_UNION
-ms.openlocfilehash: 0abef8cd5a694fa82e0e54e334834773f1f75e20
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: d53ec7025d3da5a07a648849e366d436755ad3f1
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721250"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803962"
 ---
-# <a name="dml_scalar_union-union-directmlh"></a>DML_SCALAR_UNION Union (directml. h)
+# <a name="dml_scalar_union-union-directmlh"></a>DML_SCALAR_UNION unión (directml.h)
 Unión de tipos escalares.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -81,7 +81,7 @@ union DML_SCALAR_UNION {
 
 `Bytes`
 
-Una matriz de 8 bytes.
+Matriz de 8 bytes.
 
 
 `Int8`
@@ -126,7 +126,7 @@ Entero de 64 bits sin signo.
 
 `Float32`
 
-Número de punto flotante de precisión simple.
+Número de punto flotante de precisión sencilla.
 
 
 `Float64`
@@ -138,4 +138,4 @@ Número de punto flotante de precisión doble.
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

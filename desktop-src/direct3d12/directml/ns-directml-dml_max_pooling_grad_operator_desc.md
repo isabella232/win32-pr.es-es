@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_MAX_POOLING_GRAD_OPERATOR_DESC
 title: DML_MAX_POOLING_GRAD_OPERATOR_DESC
-description: Calcula los degradados de propagación de la memoria para la agrupación máxima (vea [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
+description: Calcula los degradados de apropagamiento hacia atrás para la agrupación máxima [(vea DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
 helpviewer_keywords:
 - DML_MAX_POOLING_GRAD_OPERATOR_DESC
 - DML_MAX_POOLING_GRAD_OPERATOR_DESC structure
@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_MAX_POOLING_GRAD_OPERATOR_DESC
-ms.openlocfilehash: b7314cb6b9456d9ac9f99e90100085e86f88ffd9
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3b0b10fa8ee17c9d06e779c3c990f134bc4ae669
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105721363"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803433"
 ---
-# <a name="dml_max_pooling_grad_operator_desc-structure-directmlh"></a>DML_MAX_POOLING_GRAD_OPERATOR_DESC estructura (directml. h)
+# <a name="dml_max_pooling_grad_operator_desc-structure-directmlh"></a>DML_MAX_POOLING_GRAD_OPERATOR_DESC estructura (directml.h)
 
-Calcula los degradados de propagación de la memoria para la agrupación máxima (vea [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
+Calcula los degradados de apropagamiento hacia atrás para la agrupación máxima [(vea DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
 
-Considere una **DML_MAX_POOLING2_OPERATOR_DESC** 2x2 sin relleno ni dilations y un paso de 1, que realiza lo siguiente.
+Tenga en cuenta  un DML_MAX_POOLING2_OPERATOR_DESC 2x2 sin relleno ni reparaciones y un paso de 1, que realiza lo siguiente.
 
 ```
 InputTensor             OutputTensor    IndicesTensor
@@ -65,7 +65,7 @@ InputTensor             OutputTensor    IndicesTensor
  [5, 6, 7]]
 ```
 
-El elemento más grande de cada ventana de 2x2 en el tensores de entrada genera un elemento de la salida. A continuación se muestra un ejemplo de la salida de **DML_MAX_POOLING_GRAD_OPERATOR_DESC**, dados parámetros similares.
+El elemento más grande de cada ventana 2x2 del tensor de entrada genera un elemento de la salida. A continuación se muestra un ejemplo de la salida **de DML_MAX_POOLING_GRAD_OPERATOR_DESC**, dados parámetros similares.
 
 ```
 InputTensor   InputGradientTensor            OutputGradientTensor
@@ -74,12 +74,12 @@ InputTensor   InputGradientTensor            OutputGradientTensor
  [5, 6, 7]]                                   [0, 4, 5]]
 ```
 
-En efecto, este operador usa *InputTensor* para determinar el índice del elemento más grande de cada ventana y distribuye los valores de *InputGradientTensor* a *OutputGradientTensor* basándose en estos índices. Donde se superponen los índices, se suman los valores. Los elementos de salida sin referencia tienen ceros.
+De hecho, este operador usa *InputTensor* para determinar el índice del elemento más grande de cada ventana y distribuye los valores de *InputGradientTensor* en *OutputGradientTensor* en función de estos índices. Cuando los índices se superponen, se suman los valores. Los elementos de salida sin referencia tienen ceros.
 
-En el caso de una operación de vinculación (donde más de un elemento de una ventana tiene el mismo valor máximo), se elige el elemento con el índice de elemento lógico más bajo.
+En el caso de una vinculación (donde más de un elemento de una ventana tiene el mismo valor máximo), se elige el elemento con el índice de elemento lógico más bajo.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -104,71 +104,71 @@ struct DML_MAX_POOLING_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-La característica de entrada tensores. Suele ser el mismo tensores que se proporcionó como *InputTensor* para [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) en el paso de avance.
+Tensor de la característica de entrada. Este suele ser el mismo tensor que se proporcionó como *InputTensor* [para DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) en el paso hacia delante.
 
 `InputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de degradado entrante. Normalmente se obtiene a partir de la salida de la propagación de una capa anterior. Normalmente, este tensores tendría el mismo tamaño que la *salida* de la [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) correspondiente en el paso de avance.
+Tensor de degradado entrante. Normalmente, esto se obtiene a partir de la salida de la repropagación de una capa anterior. Normalmente, este tensor tendría los  mismos tamaños que la salida de la DML_MAX_POOLING2_OPERATOR_DESC [correspondiente](./ns-directml-dml_max_pooling2_operator_desc.md) en el paso hacia delante.
 
 `OutputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores de salida que contiene los degradados retropagados. Normalmente, este tensores tendría el mismo tamaño que la *entrada* del [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) correspondiente en el paso de avance.
+Tensor de salida que contiene los degradados de propiedad pendiente. Normalmente, este tensor tendría los  mismos tamaños que la entrada de la DML_MAX_POOLING2_OPERATOR_DESC [en](./ns-directml-dml_max_pooling2_operator_desc.md) el paso hacia delante.
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-El número de elementos de las matrices de los *progresos*, *Windows*, *StartPadding*, *EndPadding* y *Dilations* . Este valor debe ser igual al número de dimensiones espaciales (InputTensor DimensionCount-2). Dado que este operador solo admite decenas de 4D, el único valor válido para este parámetro es 2.
+Número de elementos de las matrices *Strides,* *WindowSize,* *StartPadding,* *EndPadding* y *Finalizaciones.* Este valor debe ser igual al recuento de dimensiones espaciales (DimensionCount - 2 de InputTensor). Como este operador solo admite tensores 4D, el único valor válido para este parámetro es 2.
 
 `Strides`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Vea los *avances* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vea *Strides* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `WindowSize`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *Windows* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vea *WindowSize* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `StartPadding`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *StartPadding* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vea *StartPadding* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `EndPadding`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *EndPadding* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vea *EndPadding* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `Dilations`
 
-Tipo: \_ tamaño de campo \_ \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Consulte *Dilations* en [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vea *Sustions* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_3_0` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *InputTensor* y *OutputGradientTensor* deben tener el mismo *tamaño*.
-* *InputGradientTensor*, *InputTensor* y *OutputGradientTensor* deben tener el mismo *tipo de texto*.
+## <a name="tensor-constraints"></a>Restricciones de Tensor
+* *InputTensor* y *OutputGradientTensor* deben tener los mismos *tamaños.*
+* *InputGradientTensor,* *InputTensor y* *OutputGradientTensor* deben tener el mismo *datatype*.
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Dimensions | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Dimensions | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
 | InputTensor | Entrada | { BatchCount, ChannelCount, InputHeight, InputWidth } | 4 | FLOAT32, FLOAT16 |
 | InputGradientTensor | Entrada | { BatchCount, ChannelCount, OutputHeight, OutputWidth } | 4 | FLOAT32, FLOAT16 |
-| OutputGradientTensor | Output | { BatchCount, ChannelCount, InputHeight, InputWidth } | 4 | FLOAT32, FLOAT16 |
+| OutputGradientTensor | Resultados | { BatchCount, ChannelCount, InputHeight, InputWidth } | 4 | FLOAT32, FLOAT16 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

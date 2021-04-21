@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_OPERATOR_GRAPH_NODE_DESC
 title: DML_OPERATOR_GRAPH_NODE_DESC
-description: 'Describe un nodo dentro de un gráfico de operadores DirectML definidos por [DML_GRAPH_DESC](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc) y que se pasa a [IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).'
+description: Describe un nodo dentro de un gráfico [](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc) de operadores de DirectML definidos por DML_GRAPH_DESC y pasados a [IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).
 helpviewer_keywords:
 - DML_OPERATOR_GRAPH_NODE_DESC
 - DML_OPERATOR_GRAPH_NODE_DESC structure
@@ -44,20 +44,20 @@ api_location:
 - DirectML.h
 api_name:
 - DML_OPERATOR_GRAPH_NODE_DESC
-ms.openlocfilehash: 6081f81044ff2ce384f7906af9c6e80f6b06f774
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 997f441de76a60229b76f2f7d67b7acf1a26ed5f
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721271"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803563"
 ---
-# <a name="dml_operator_graph_node_desc-structure-directmlh"></a>DML_OPERATOR_GRAPH_NODE_DESC estructura (directml. h)
-Describe un nodo dentro de un gráfico de operadores DirectML definidos por [DML_GRAPH_DESC](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc) y que se pasa a [IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).
+# <a name="dml_operator_graph_node_desc-structure-directmlh"></a>DML_OPERATOR_GRAPH_NODE_DESC estructura (directml.h)
+Describe un nodo dentro de un gráfico [](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc) de operadores de DirectML definidos por DML_GRAPH_DESC y pasados a [IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).
 
-El comportamiento de este nodo lo define un operador DirectML.
+El comportamiento de este nodo se define mediante un operador directML.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -75,28 +75,28 @@ struct DML_OPERATOR_GRAPH_NODE_DESC {
 
 Tipo: <b> [IDMLOperator](/windows/win32/api/directml/nn-directml-idmloperator)*</b>
 
-Operador DirectML que define el comportamiento del nodo.
+Operador directML que define el comportamiento del nodo.
 
 
 `Name`
 
-Tipo: \_ campo \_ z \_ \_ Maybenull \_ **const char \***
+Tipo: \_ Campo \_ z \_ \_ Maybenull \_ **const char \***
 
-Un nombre opcional para la conexión del grafo. Si se proporciona, se podría usar dentro de ciertos mensajes de error emitidos por la capa de depuración DirectML.
+Un nombre opcional para la conexión de grafo. Si se proporciona, esto podría usarse dentro de determinados mensajes de error emitidos por la capa de depuración de DirectML.
 
 ## <a name="availability"></a>Disponibilidad
 
-Esta API se presentó en la versión DirectML `1.1.0` .
+Esta API se introdujo en la versión de `1.1.0` DirectML.
 
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
-* [IDMLDevice1:: CompileGraph (método)](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
-* [Estructura de DML_GRAPH_DESC](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc)
-* [Estructura de DML_GRAPH_NODE_DESC](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_node_desc)
+* [Método IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
+* [DML_GRAPH_DESC estructura](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc)
+* [DML_GRAPH_NODE_DESC estructura](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_node_desc)

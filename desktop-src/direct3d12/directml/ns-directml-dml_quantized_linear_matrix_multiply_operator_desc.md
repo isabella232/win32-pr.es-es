@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC
 title: DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC
-description: Realiza una función de multiplicación de matrices en datos cuantificados. Este operador es matemáticamente equivalente a descuantificar las entradas y, a continuación, realizar la multiplicación de la matriz y cuantificar la salida.
+description: Realiza una función de multiplicación de matriz en datos cuantificados. Este operador es matemáticamente equivalente a descuantizar las entradas, después realizar la multiplicación de la matriz y, a continuación, cuantificar la salida.
 helpviewer_keywords:
 - DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC
 - DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC structure
@@ -44,34 +44,34 @@ api_location:
 - DirectML.h
 api_name:
 - DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC
-ms.openlocfilehash: d0b20a37bca6ddf6083b116b53290a6b6b2084f4
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 0daeab63559a2d842582087d8874e802645f7809
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105721301"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803573"
 ---
-# <a name="dml_quantized_linear_matrix_multiply_operator_desc-structure-directmlh"></a>DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC estructura (directml. h)
-Realiza una función de multiplicación de matrices en datos cuantificados. Este operador es matemáticamente equivalente a descuantificar las entradas y, a continuación, realizar la multiplicación de la matriz y cuantificar la salida.
+# <a name="dml_quantized_linear_matrix_multiply_operator_desc-structure-directmlh"></a>DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC estructura (directml.h)
+Realiza una función de multiplicación de matriz en datos cuantificados. Este operador es matemáticamente equivalente a descuantizar las entradas, después realizar la multiplicación de matrices y, a continuación, cuantificar la salida.
 
-Este operador requiere que la matriz multiplique los idiomas de entrada a 4D, cuyo formato es `{ BatchCount, ChannelCount, Height, Width }` . El operador de multiplicación de la matriz realizará el BatchCount * ChannelCount número de multiplicaciones de matriz independiente. 
+Este operador requiere que la matriz multiplique los tensores de entrada sea 4D, cuyo formato es `{ BatchCount, ChannelCount, Height, Width }` . El operador de multiplicación de matriz realizará batchcount * channelcount número de multiplicaciones de matrices independientes. 
 
-Por ejemplo, si *ATensor* tiene  los tamaños `{ BatchCount, ChannelCount, M, K }` , y *BTensor* tiene *tamaños* `{ BatchCount, ChannelCount, K, N }` , y *OutputTensor* tiene *tamaños* `{ BatchCount, ChannelCount, M, N }` , el operador de multiplicación de la matriz realizará la multiplicación de las dimensiones de la matriz independiente BatchCount * ChannelCount {m, K} x {k, n} = {m, n}. 
+Por ejemplo, si *ATensor* tiene tamaños de y  BTensor tiene tamaños de y OutputTensor tiene tamaños de , el operador de multiplicación de matriz realizará multiplicaciones de matrices independientes de BatchCount * ChannelCount de dimensiones `{ BatchCount, ChannelCount, M, K }`   `{ BatchCount, ChannelCount, K, N }`   `{ BatchCount, ChannelCount, M, N }` {M,K} x {K,N} = {M,N}. 
 
-### <a name="dequantize-function"></a>Descuantificar función
+### <a name="dequantize-function"></a>Función Dequantize
 
 ```
 f(Input, Scale, ZeroPoint) = (Input - ZeroPoint) * Scale
 ```
 
-### <a name="quantize-function"></a>Función cuantificate
+### <a name="quantize-function"></a>Función Quantize
 
 ```
 f(Input, Scale, ZeroPoint) = clamp(round(Input / Scale) + ZeroPoint, Min, Max)
 ```
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible de DirectML independiente (consulte [Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte también el [historial de versiones de DirectML](../dml-version-history.md).
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -96,74 +96,74 @@ struct DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos. Las dimensiones de este tensores deben ser `{ BatchCount, ChannelCount, M, K }` .
+Tensor que contiene los datos A. Las dimensiones de este tensor deben ser `{ BatchCount, ChannelCount, M, K }` .
 
 
 `AScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de la escala ATensor. Las dimensiones esperadas de `AScaleTensor` son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores o `{ 1, 1, M, 1 }` si se requiere la cuantificación por fila. Estos valores de escala se usan para descuantificar los valores de un.
+Tensor que contiene los datos de escala de ATensor. Las dimensiones esperadas de son si se requiere una cuantificación por tensor o si se requiere `AScaleTensor` `{ 1, 1, 1, 1 }` una `{ 1, 1, M, 1 }` cuantificación por fila. Estos valores de escala se usan para descuantizar los valores A.
 
 
 `AZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores opcional que contiene los datos de cero puntos de *ATensor* . Las dimensiones esperadas de AZeroPointTensor son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores, o `{ 1, 1, M, 1 }` si se requiere la cuantificación por fila. Estos valores de punto cero se usan para descuantificar los valores de ATensor.
+Tensor opcional que contiene los datos de punto cero de *ATensor.* Las dimensiones esperadas de AZeroPointTensor son si se requiere una cuantificación por tensor o si se requiere una `{ 1, 1, 1, 1 }` `{ 1, 1, M, 1 }` cuantificación por fila. Estos valores de punto cero se usan para descuantizar los valores de ATensor.
 
 
 `BTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de B. Las dimensiones de este tensores deben ser `{ BatchCount, ChannelCount, K, N }` .
+Tensor que contiene los datos B. Las dimensiones de este tensor deben ser `{ BatchCount, ChannelCount, K, N }` .
 
 
 `BScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de la escala *BTensor* . Las dimensiones esperadas de `BScaleTensor` son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores, o `{ 1, 1, 1, N }` si se requiere la cuantificación por columna. Estos valores de escala se usan para descuantificar los valores de *BTensor* .
+Tensor que contiene los datos de escala de *BTensor.* Las dimensiones esperadas de son si se requiere una cuantificación por tensor o si se requiere `BScaleTensor` `{ 1, 1, 1, 1 }` una `{ 1, 1, 1, N }` cuantificación por columna. Estos valores de escala se usan para descuantizar los *valores de BTensor.*
 
 
 `BZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores opcional que contiene los datos de cero puntos de *BTensor* . Las dimensiones esperadas de `BZeroPointTensor` son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores, o `{ 1, 1, 1, N }` si se requiere la cuantificación por columna. Estos valores de punto cero se usan para descuantificar los valores de *BTensor* .
+Tensor opcional que contiene los datos de punto cero de *BTensor.* Las dimensiones esperadas de son si se requiere una cuantificación por tensor o si se requiere `BZeroPointTensor` `{ 1, 1, 1, 1 }` una `{ 1, 1, 1, N }` cuantificación por columna. Estos valores de punto cero se usan para descuantizar los *valores de BTensor.*
 
 
 `OutputScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores que contiene los datos de la escala del filtro. Las dimensiones esperadas de `OutputScaleTensor` son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores o `{ 1, 1, M, 1 }` si se requiere la cuantificación por fila. Este valor de escala se usa para descuantificar los valores de filtro.
+Tensor que contiene los datos de escala de filtro. Las dimensiones esperadas de son si se requiere una cuantificación por tensor o si se requiere `OutputScaleTensor` `{ 1, 1, 1, 1 }` una `{ 1, 1, M, 1 }` cuantificación por fila. Este valor de escala se usa para descuantizar los valores de filtro.
 
 
 `OutputZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensores opcional que contiene los datos del punto cero del filtro. Las dimensiones esperadas de `OutputZeroPointTensor` son `{ 1, 1, 1, 1 }` si se requiere la cuantificación por tensores o `{ 1, 1, M, 1 }` si se requiere la cuantificación por fila. Este valor de punto cero se usa para descuantificar los valores de filtro.
+Tensor opcional que contiene los datos de punto cero de filtro. Las dimensiones esperadas de son si se requiere una cuantificación por `OutputZeroPointTensor` `{ 1, 1, 1, 1 }` tensor o si se requiere una `{ 1, 1, M, 1 }` cuantificación por fila. Este valor de punto cero se usa para descuantizar los valores de filtro.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensores en el que se van a escribir los resultados. Las dimensiones de este tensores son `{ BatchCount, ChannelCount, M, N }` .
+Tensor en el que se escriben los resultados. Las dimensiones de este tensor son `{ BatchCount, ChannelCount, M, N }` .
 
 ## <a name="availability"></a>Disponibilidad
-Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
+Este operador se introdujo en `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensores
-* *ATensor* y `AZeroPointTensor` deben tener el mismo *tipo de texto*.
-* *BTensor* y `BZeroPointTensor` deben tener el mismo *tipo de texto*.
-* *OutputTensor* y `OutputZeroPointTensor` deben tener el mismo *tipo de texto*.
+## <a name="tensor-constraints"></a>Restricciones de tensor
+* *ATensor* y `AZeroPointTensor` deben tener el mismo *DataType.*
+* *BTensor* y `BZeroPointTensor` deben tener el mismo *DataType.*
+* *OutputTensor* y `OutputZeroPointTensor` deben tener el mismo *DataType.*
 
-## <a name="tensor-support"></a>Compatibilidad con tensores
-| Tensores | Clase | Recuentos de dimensiones compatibles | Tipos de datos admitidos |
+## <a name="tensor-support"></a>Compatibilidad con Tensor
+| Tensor | Tipo | Recuentos de dimensiones admitidos | Tipos de datos admitidos |
 | ------ | ---- | -------------------------- | -------------------- |
 | ATensor | Entrada | 4 | INT8, UINT8 |
 | AScaleTensor | Entrada | 4 | FLOAT32 |
@@ -173,11 +173,11 @@ Este operador se presentó en `DML_FEATURE_LEVEL_2_1` .
 | BZeroPointTensor | Entrada opcional | 4 | INT8, UINT8 |
 | OutputScaleTensor | Entrada | 4 | FLOAT32 |
 | OutputZeroPointTensor | Entrada opcional | 4 | INT8, UINT8 |
-| OutputTensor | Output | 4 | INT8, UINT8 |
+| OutputTensor | Resultados | 4 | INT8, UINT8 |
 
 
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | directml. h |
+| **Header** | directml.h |

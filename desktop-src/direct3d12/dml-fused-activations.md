@@ -1,33 +1,33 @@
 ---
-title: Usar operadores combinados para mejorar el rendimiento
-description: Algunos operadores DirectML admiten un concepto conocido como *fusión*. La fusión de operadores es una manera de mejorar el rendimiento mediante la combinación de un operador (normalmente, una función de activación) en un operador diferente para que se ejecuten juntos sin necesidad de un viaje de ida y vuelta a la memoria.
+title: Uso de operadores combinados para mejorar el rendimiento
+description: Algunos operadores de DirectML admiten un concepto conocido como *fusión.* La fusión de operadores es una manera de mejorar el rendimiento mediante la combinación de un operador (normalmente, una función de activación) en un operador diferente para que se ejecuten juntos sin necesidad de un recorrido de ida y vuelta a la memoria.
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: b692727d52e252bb3752573e692bcf5beda794e2
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: bba4a9d0ef5c69976a5a344432bf82d31b00c0c7
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104549200"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803985"
 ---
-# <a name="using-fused-operators-to-improve-performance"></a>Usar operadores combinados para mejorar el rendimiento
+# <a name="using-fused-operators-to-improve-performance"></a>Uso de operadores combinados para mejorar el rendimiento
 
-Algunos operadores DirectML admiten un concepto conocido como *fusión*. La fusión de operadores es una manera de mejorar el rendimiento mediante la combinación de un operador (normalmente, una función de activación) en un operador diferente para que se ejecuten juntos sin necesidad de un viaje de ida y vuelta a la memoria.
+Algunos operadores de DirectML admiten un concepto conocido como *fusión.* La fusión de operadores es una manera de mejorar el rendimiento mediante la combinación de un operador (normalmente, una función de activación) en un operador diferente para que se ejecuten juntos sin necesidad de un recorrido de ida y vuelta a la memoria.
 
-## <a name="when-to-fuse-activations"></a>Cuándo se deben confundir las activaciones
+## <a name="when-to-fuse-activations"></a>Cuándo fusionar las activaciones
 
-Las activaciones con fusibles son una optimización del rendimiento. Un escenario muy común en muchos modelos de aprendizaje automático (ML) es aplicar una no linealidad (una función de activación) a la salida de cada capa del modelo.
+Las activaciones fusionadas son una optimización del rendimiento. Un escenario muy común en muchos modelos de aprendizaje automático (ML) es aplicar una no linealidad (una función de activación) a la salida de cada capa del modelo.
 
-Normalmente, esto requiere un viaje de ida y vuelta a la memoria de gráficos. Por ejemplo, si una circunvolución va seguida de una activación Relu sin fusibles, la GPU debe esperar a que los resultados de la circunvolución se escriban en la memoria de la GPU para poder comenzar a calcular la capa de activación de Relu. Dado que la carga de trabajo de proceso de la mayoría de las funciones de activación tiende a ser pequeña, este viaje de ida y vuelta a la memoria de gráficos puede ser un cuello de botella de rendimiento importante.
+Normalmente, esto requiere un recorrido de ida y vuelta a la memoria de gráficos. Por ejemplo, si una convolución va seguida de una activación relu no fusionada, la GPU debe esperar a que los resultados de Convolution se escriban en la memoria de GPU antes de poder empezar a calcular la capa de activación relu. Como la carga de trabajo de proceso de la mayoría de las funciones de activación tiende a ser pequeña, este recorrido de ida y vuelta a la memoria de gráficos puede ser un cuello de botella de rendimiento importante.
 
-La fusión de operadores permite realizar la función de activación (Relu en el ejemplo anterior) como parte del operador anterior (convolución, por ejemplo). Esto permite que la GPU calcule la función de activación sin esperar a que los resultados del operador anterior se escriban en la memoria &mdash; y mejore el rendimiento.
+La fusión de operadores permite que la función de activación (Relu en el ejemplo anterior) se realice como parte del operador anterior (por ejemplo, Convolution). Esto permite que la GPU calcule la función de activación sin esperar a que los resultados del operador anterior se escriban en la memoria y &mdash; esto mejora el rendimiento.
 
-Dado que las activaciones con fusible producen el mismo resultado, pero son más rápidas en muchos casos, se recomienda que elimine las capas de activación al separarlas en el operador anterior siempre que sea posible.
+Dado que las activaciones fusionadas producen el mismo resultado, pero son más rápidas en muchos casos, se recomienda eliminar las capas de activación al fusionarlas en su operador anterior siempre que sea posible.
 
-## <a name="how-to-fuse-activations"></a>Cómo confundir las activaciones
+## <a name="how-to-fuse-activations"></a>Cómo fusionar activaciones
 
-Los operadores que admiten activaciones con fusible tienen un parámetro opcional adicional en su struct de operador, `const DML_OPERATOR_DESC* FusedActivation` . La circunvolución, por ejemplo, admite la activación con fusible y tiene un *FusedActivation* correspondiente en la descripción del operador (vea [DML_CONVOLUTION_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_convolution_operator_desc)).
+Los operadores que admiten activaciones fusionadas tienen un parámetro opcional adicional en su estructura de operador, `const DML_OPERATOR_DESC* FusedActivation` . Por ejemplo, Convolution admite la activación fusionada y tiene una *FusedActivation* correspondiente en su descripción del operador [(vea DML_CONVOLUTION_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_convolution_operator_desc)).
 
 ```cpp
 struct DML_CONVOLUTION_OPERATOR_DESC
@@ -49,10 +49,10 @@ struct DML_CONVOLUTION_OPERATOR_DESC
 };
 ```
 
-Para confundir una activación, construya un [DML_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_operator_desc) que describa el tipo de activación que se va a fusionar. Por ejemplo, para confundir una función Relu, el tipo de operador correcto sería [DML_OPERATOR_ACTIVATION_RELU](/windows/win32/api/directml/ne-directml-dml_operator_type).
+Para fusionar una activación, cree [un DML_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_operator_desc) que describa el tipo de activación que se va a fusionar. Por ejemplo, para fusionar una función Relu, el tipo de operador correcto [sería DML_OPERATOR_ACTIVATION_RELU](/windows/win32/api/directml/ne-directml-dml_operator_type).
 
 > [!NOTE]
-> Al construir la descripción del operador para la función de activación, debe establecer los parámetros *InputTensor* y *OutputTensor* para la función de activación en **null**.
+> Al construir la descripción del operador para la función de activación, debe establecer los parámetros *InputTensor* y *OutputTensor* para la función de activación en **NULL.**
 
 ## <a name="example"></a>Ejemplo
 
@@ -69,9 +69,9 @@ DML_CONVOLUTION_OPERATOR_DESC convDesc;
 convDesc.FusedActivation = &activationDesc;
 ```
 
-Para obtener un ejemplo completo, el [ejemplo DirectMLSuperResolution](https://github.com/microsoft/DirectML/tree/master/Samples) emplea activaciones con fusibles para mejorar el rendimiento.
+Para obtener un ejemplo completo, el [ejemplo DirectMLSuperResolution](https://github.com/microsoft/DirectML/tree/master/Samples) usa activaciones fusionadas para mejorar el rendimiento.
 
-## <a name="operators-that-support-fused-activation"></a>Operadores que admiten la activación con fusible
+## <a name="operators-that-support-fused-activation"></a>Operadores que admiten la activación fusionada
 
 * [DML_OPERATOR_CONVOLUTION](/windows/win32/api/directml/ne-directml-dml_operator_type)
 * **DML_OPERATOR_GEMM**
@@ -98,9 +98,9 @@ Para obtener un ejemplo completo, el [ejemplo DirectMLSuperResolution](https://g
 * **DML_OPERATOR_ACTIVATION_SHRINK**
 * **DML_OPERATOR_ACTIVATION_CELU**
 
-Los operadores que no estén en esta lista no se admiten para la activación con fusibles.
+No se admiten los operadores que no están en esta lista para la activación fusionada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
-[Ejemplo de DirectMLSuperResolution](https://github.com/microsoft/DirectML/tree/master/Samples)    
-[DML_CONVOLUTION_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_convolution_operator_desc)
+* [Ejemplo de DirectMLSuperResolution](https://github.com/microsoft/DirectML/tree/master/Samples)    
+* [DML_CONVOLUTION_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_convolution_operator_desc)
