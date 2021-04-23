@@ -1,25 +1,25 @@
 ---
-description: Interfaces de dispositivos externos para camascopios DV
+description: Interfaces de dispositivos externos para videocambaciones DV
 ms.assetid: 001321c5-70c7-4baa-ba5a-1e424ca0d647
-title: Interfaces de dispositivos externos para camascopios DV
+title: Interfaces de dispositivos externos para videocambaciones DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e52b6d0fe00ff91ff87e9c810bbe7ecc319e9bfd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e5e7106ec6e9b744da0d1f71958aeb895ec8df1a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906898"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909803"
 ---
-# <a name="external-device-interfaces-for-dv-camcorders"></a>Interfaces de dispositivos externos para camascopios DV
+# <a name="external-device-interfaces-for-dv-camcorders"></a>Interfaces de dispositivos externos para videocambaciones DV
 
-El filtro de [captura de vídeo WDM](wdm-video-capture-filter.md) expone tres interfaces para controlar una videocámara.
+El [filtro captura de vídeo de WDM](wdm-video-capture-filter.md) expone tres interfaces para controlar una cámara de vídeo.
 
 
 
-|                                                |                                                 |
+| Etiqueta | Value |
 |------------------------------------------------|-------------------------------------------------|
-| [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice)           | La interfaz base para el control de dispositivo externo. |
+| [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice)           | Interfaz base para el control de dispositivo externo. |
 | [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)     | Controla las funciones de VCR.                     |
 | [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader) | Lee el código de tiempo del dispositivo.                 |
 
@@ -28,7 +28,7 @@ El filtro de [captura de vídeo WDM](wdm-video-capture-filter.md) expone tres in
  
 
 > [!Note]  
-> Para usar estas interfaces con el controlador de videocámara MSDV, incluya el archivo de encabezado XPrtDefs. h en el proyecto.
+> Para usar estas interfaces con el controlador de la cámara de vídeo MSDV, incluya el archivo de encabezado XPrtDefs.h en el proyecto.
 
  
 
@@ -67,7 +67,7 @@ MyDevCap.bHasTimecode = (SUCCEEDED(hr));
 
 <dl> <dt>
 
-[Control de una videocámara DV](controlling-a-dv-camcorder.md)
+[Control de una cámara dv](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

@@ -1,20 +1,20 @@
 ---
-description: El elemento compuesto define una composición, un objeto contenedor para las pistas y otras composiciones anidadas.
+description: El elemento compuesto define una composición, un objeto contenedor para pistas y otras composiciones anidadas.
 ms.assetid: 7551da3a-1da6-426a-ba9d-f715df53718f
-title: Elemento compuesto
+title: elemento composite
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a1c81bf445769c049287bdfa7d23f4ab82bb0f8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b5eff3e0c16040f837e4c8a792ebac3124d723d1
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677077"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908843"
 ---
-# <a name="composite-element"></a>Elemento compuesto
+# <a name="composite-element"></a>elemento composite
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -22,24 +22,24 @@ El `composite` elemento define una composición, un objeto contenedor para pista
 
 ## <a name="attributes"></a>Atributos
 
-[**Lock**](lock-attribute.md), [**MUTE**](mute-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
 
 ## <a name="parentchild-information"></a>Información de elementos primarios y secundarios
 
 
 
-|          |                                                                                                                         |
+| Etiqueta | Value |
 |----------|-------------------------------------------------------------------------------------------------------------------------|
-| Parent   | `composite`, [ **Grupo**](group-element.md)                                                                             |
-| Children | `composite`, [**efecto**](effect-element.md), [**seguimiento**](track-element.md), [**transición**](transition-element.md) |
+| Parent   | `composite`, [ **group**](group-element.md)                                                                             |
+| Children | `composite`, [**effect**](effect-element.md), [**track**](track-element.md), [**transition**](transition-element.md) |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dentro de un `composite` elemento, la prioridad de las capas anidadas viene determinada implícitamente por el orden en que aparecen dentro del elemento. La primera capa tiene prioridad 0 y las capas siguientes tienen valores de prioridad crecientes.
+Dentro de un elemento, la prioridad de las capas anidadas viene determinada implícitamente por `composite` el orden en que aparecen dentro del elemento. La primera capa tiene prioridad 0 y las capas posteriores tienen valores de prioridad crecientes.
 
 ## <a name="examples"></a>Ejemplos
 

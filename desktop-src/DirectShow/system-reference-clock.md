@@ -4,23 +4,23 @@ ms.assetid: 0247dcb9-64ee-4562-944a-44bcfae80f2d
 title: Reloj de referencia del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67fab63c4ba8bfd6a7db9c476179d6e649869fb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c8de8b208e32b6ea4772f3183c38a816ea43bb6
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678187"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909493"
 ---
 # <a name="system-reference-clock"></a>Reloj de referencia del sistema
 
-El objeto de reloj de referencia del sistema implementa un reloj de referencia que devuelve la hora del sistema. Si ninguno de los filtros del gráfico proporciona un reloj de referencia, el administrador de gráficos de filtro utiliza este componente para sincronizar el gráfico. Cree este objeto llamando a **CoCreateInstance**.
+El objeto Reloj de referencia del sistema implementa un reloj de referencia que devuelve la hora del sistema. Si ninguno de los filtros del gráfico proporciona un reloj de referencia, el administrador de gráficos de filtros usa este componente para sincronizar el gráfico. Cree este objeto mediante una llamada **a CoCreateInstance**.
 
 
 
-|                  |                                                                                                                                                          |
+| Etiqueta | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identificador de clase | CLSID \_ SystemClock                                                                                                                                       |
-| Interfaces       | [**IAMClockAdjust**](/windows/desktop/api/Strmif/nn-strmif-iamclockadjust), [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock), [**IReferenceClockTimerControl**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclocktimercontrol) |
+| Interfaces       | [**IAMClockAdjust,**](/windows/desktop/api/Strmif/nn-strmif-iamclockadjust) [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock), [**IReferenceClockTimerControl**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclocktimercontrol) |
 
 
 
@@ -30,7 +30,7 @@ El objeto de reloj de referencia del sistema implementa un reloj de referencia q
 
 <dl> <dt>
 
-[Objetos de DirectShow](directshow-objects.md)
+[Objetos DirectShow](directshow-objects.md)
 </dt> <dt>
 
 [Relojes de referencia](reference-clocks.md)

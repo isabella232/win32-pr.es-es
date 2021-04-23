@@ -1,25 +1,25 @@
 ---
-description: Cuando el filtro del navegador de DVD entra en el modo de karaoke, informa al descodificador de audio a través de la \_ propiedad AM \_ DVDKARAOKE \_ enable.
+description: Cuando el filtro navegador de DVD entra en modo de vídeo, informa al descodificador de audio a través de la propiedad \_ \_ DVDKARAOKE ENABLE de AM \_ PROPERTY.
 ms.assetid: 78b2998b-d8b3-424d-85bc-872e64eb4a4f
-title: Conjunto de propiedades de Karaoke de DVD (dvdmedia. h)
+title: Conjunto de propiedades DVD Dvd Dvd Dvdmedia.h
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 396e9fe53ad35dac0c3c0f54a8e04a6fbe698fc1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2918513de06a657436ed99e67f672fe74a113b78
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679176"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909073"
 ---
-# <a name="dvd-karaoke-property-set"></a>Conjunto de propiedades de Karaoke de DVD
+# <a name="dvd-karaoke-property-set"></a>Conjunto de propiedades DVD Dvd Dvd
 
-Cuando el filtro del [navegador de DVD](dvd-navigator-filter.md) entra en el modo de karaoke, informa al descodificador de audio a través de la **\_ propiedad AM \_ DVDKARAOKE \_ enable** . A continuación, el descodificador debe silenciar los canales de audio del 2 al 5 hasta que reciba desde el navegador de DVD una propiedad de **\_ \_ \_ datos DVDKARAOKE de la propiedad AM** con un puntero a una estructura de datos [**AM \_ DvdKaraokeData**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-am_dvdkaraokedata) que indique cómo se van a mezclar los canales auxiliares.
+Cuando el [filtro navegador de DVD](dvd-navigator-filter.md) entra en modo de vídeo, informa al descodificador de audio a través de la propiedad **\_ \_ DVDKARAOKE \_ ENABLE de AM PROPERTY.** A continuación, el descodificador debe silenciar los canales de audio del 2 al 5 hasta que reciba desde el navegador de DVD una propiedad DE AM **\_ PROPERTY \_ DVDKARAOKE \_ DATA** con un puntero a una estructura de datos [**\_ DVDKaraokeData**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-am_dvdkaraokedata) de AM que indica cómo se van a mezclar los canales auxiliares.
 
 
 
-|                   |                             |
+| Etiqueta | Value |
 |-------------------|-----------------------------|
-| GUID del conjunto de propiedades | \_DvdKaraoke KSPROPSETID \_ AM |
+| GUID del conjunto de propiedades | DVDKaraoke de AM \_ KSPROPSETID \_ |
 
 
 
@@ -29,8 +29,8 @@ Cuando el filtro del [navegador de DVD](dvd-navigator-filter.md) entra en el mod
 
 | Id. de propiedad                      | Descripción                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_propiedad AM \_ DVDKARAOKE \_ enable | Valor BOOLEANO. El navegador de DVD envía al descodificador una \_ propiedad AM \_ DVDKARAOKE \_ enable con un valor de **true** para habilitar Karaoke downmixing o **false** para deshabilitarlo.                                                                                                                                    |
-| \_ \_ datos DVDKARAOKE de la propiedad AM \_   | El navegador de DVD envía al descodificador una \_ \_ propiedad de \_ datos DVDKARAOKE de la propiedad AM con un puntero a una estructura [**AM \_ DvdKaraokeData**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-am_dvdkaraokedata) para cambiar la configuración de downmix; es decir, para activar o desactivar determinados canales de karaoke y dirigirlos al canal de salida derecho o izquierdo. |
+| HABILITACIÓN \_ \_ DE DVDKARAOKE DE LA PROPIEDAD \_ AM | Valor booleano. El navegador de DVD envía al descodificador una PROPIEDAD DE AM DVDKARAOKE ENABLE con un valor de TRUE para habilitar la remezclación de alias o \_ \_ FALSE para \_ deshabilitarla.                                                                                                                                      |
+| DATOS \_ \_ DVDKARAOKE DE LA PROPIEDAD \_ AM   | El navegador de DVD envía al descodificador una propiedad DVDKARAOKE DATA de AM PROPERTY con un puntero a una estructura \_ \_ \_ [**\_ DvdKaraokeData**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-am_dvdkaraokedata) de AM para cambiar la configuración de la mezcla inferior; es decir, para activar o desactivar determinados canales y dirigirlos al canal de salida derecho o izquierdo. |
 
 
 
@@ -42,11 +42,11 @@ Cuando el filtro del [navegador de DVD](dvd-navigator-filter.md) entra en el mod
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

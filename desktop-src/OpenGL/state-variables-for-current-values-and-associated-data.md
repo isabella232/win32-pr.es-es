@@ -1,9 +1,9 @@
 ---
 title: Variables de estado para los valores actuales y los datos asociados
-description: Variables de estado para los valores actuales y los datos asociados
+description: Variables de estado para valores actuales y datos asociados
 ms.assetid: 8e47b119-a065-43c5-b7f5-76deaf975ad8
 keywords:
-- Variables de estado para los valores actuales y datos asociados de OpenGL
+- Variables de estado para valores actuales y openGL de datos asociados
 topic_type:
 - apiref
 api_name:
@@ -12,163 +12,163 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aeab660299aa278017e12556a941353d624147d7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 149139bc11698469ce0667c2ecf77bc7ab239adb
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419444"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908473"
 ---
-# <a name="state-variables-for-current-values-and-associated-data"></a>Variables de estado para los valores actuales y los datos asociados
+# <a name="state-variables-for-current-values-and-associated-data"></a>Variables de estado para valores actuales y datos asociados
 
-<dl> <dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>\_color actual de GL \_</dt> <dd> 
+<dl> <dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>COLOR \_ ACTUAL DE \_ GL</dt> <dd> 
 
-|                  |                                                                                                                      |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------|
 | Descripción:     | Color actual                                                                                                        |
 | Grupo de atributos: | actuales                                                                                                              |
 | Valor inicial:   | 1, 1, 1, 1                                                                                                           |
-| Obtener comando:     | [**glGetIntegerv**](glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>\_índice actual de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>GL \_ CURRENT \_ INDEX</dt> <dd> 
 
-|                  |                                                                                                                                                                |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción:     | Índice de color actual                                                                                                                                            |
 | Grupo de atributos: | actuales                                                                                                                                                        |
 | Valor inicial:   | 1                                                                                                                                                              |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>\_coordenadas de \_ textura \_ actual de GL</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>\_ \_ COORDS DE TEXTURA \_ ACTUALES DE GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Coordenadas de textura actuales                                                    |
 | Grupo de atributos: | actuales                                                                        |
 | Valor inicial:   | 0, 0, 0, 1                                                                     |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>libro de contabilidad \_ \_ normal actual</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>GL \_ CURRENT \_ NORMAL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Normal actual                                                                 |
 | Grupo de atributos: | actuales                                                                        |
 | Valor inicial:   | 0, 0, 1                                                                        |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>\_posición de \_ rasterización actual de GL</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>POSICIÓN \_ DE TRAMA ACTUAL DE \_ GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Posición de la trama actual                                                        |
+| Descripción:     | Posición de trama actual                                                        |
 | Grupo de atributos: | actuales                                                                        |
 | Valor inicial:   | 0, 0, 0, 1                                                                     |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>\_distancia de \_ rasterizado actual de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>DISTANCIA \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Distancia de la trama actual                                                        |
+| Descripción:     | Distancia de trama actual                                                        |
 | Grupo de atributos: | actuales                                                                        |
 | Valor inicial:   | 0                                                                              |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_RASTER_COLOR"></span><span id="gl_current_raster_color"></span>\_color de \_ rasterizado actual de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_COLOR"></span><span id="gl_current_raster_color"></span>COLOR \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> <dd> 
 
-|                  |                                                                                                                                                                |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción:     | Color asociado a la posición de la trama                                                                                                                          |
+| Descripción:     | Color asociado a la posición de trama                                                                                                                          |
 | Grupo de atributos: | actuales                                                                                                                                                        |
 | Valor inicial:   | 1, 1, 1, 1                                                                                                                                                     |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_RASTER_INDEX"></span><span id="gl_current_raster_index"></span>\_Índice de \_ rasterizado actual de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_INDEX"></span><span id="gl_current_raster_index"></span>ÍNDICE \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> <dd> 
 
-|                  |                                                                                                                                                                |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción:     | Índice de color asociado a la posición de la trama                                                                                                                    |
+| Descripción:     | Índice de color asociado a la posición de trama                                                                                                                    |
 | Grupo de atributos: | actuales                                                                                                                                                        |
 | Valor inicial:   | 1                                                                                                                                                              |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_RASTER_TEXTURE_COORDS"></span><span id="gl_current_raster_texture_coords"></span>\_coordenadas de \_ textura de rasterizado actual de \_ GL \_</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_TEXTURE_COORDS"></span><span id="gl_current_raster_texture_coords"></span>\_ \_ \_ COORDS ACTUALES DE TEXTURA DE \_ TRAMA DE GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Coordenadas de textura asociadas a la posición de la trama                            |
+| Descripción:     | Coordenadas de textura asociadas a la posición de trama                            |
 | Grupo de atributos: | actuales                                                                        |
 | Valor inicial:   | 0, 0, 0, 1                                                                     |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>\_posición de \_ rasterizado actual de GL \_ \_ válida</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>POSICIÓN DE TRAMA ACTUAL DE GL \_ \_ \_ \_ VÁLIDA</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Bit válido de posición de la trama                                                        |
+| Descripción:     | Bit válido de posición de trama                                                        |
 | Grupo de atributos: | actuales                                                                          |
-| Valor inicial:   | GL \_ true                                                                         |
-| Obtener comando:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ TRUE                                                                         |
+| Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>\_marca de borde de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>MARCA \_ DE BORDE DE \_ GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Marca perimetral                                                                        |
 | Grupo de atributos: | actuales                                                                          |
-| Valor inicial:   | GL \_ true                                                                         |
-| Obtener comando:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ TRUE                                                                         |
+| Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

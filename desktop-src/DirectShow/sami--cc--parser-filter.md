@@ -4,43 +4,43 @@ ms.assetid: 9b09dd86-3c22-4565-82a0-106d5ca2e42d
 title: Filtro de analizador SAMI (CC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e0449bccd41a09fca952b5d84552ef919055526
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b77f0aa2d913b7f0295a078c8174ae483bb1cb62
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537683"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909683"
 ---
 # <a name="sami-cc-parser-filter"></a>Filtro de analizador SAMI (CC)
 
-Analiza los datos de subtítulos de los archivos de intercambio de medios accesibles (SAMI) sincronizados.
+Analiza los datos de subtítulos de archivos de intercambio multimedia accesible sincronizado (SAMI).
 
-SAMI es un formato de texto similar a HTML y se usa para codificar títulos basados en tiempo. Este filtro convierte los datos SAMI en una secuencia de texto. Cada ejemplo de la secuencia contiene una entrada de título, junto con información de formato. Las marcas de tiempo de los ejemplos se generan a partir de la información de hora en el archivo SAMI.
+SAMI es un formato de texto similar a HTML y se usa para codificar títulos basados en tiempo. Este filtro convierte los datos SAMI en una secuencia de texto. Cada ejemplo de la secuencia contiene una entrada de título, junto con información de formato. Las marcas de tiempo de los ejemplos se generan a partir de la información de hora del archivo SAMI.
 
-Este filtro está diseñado para usarse con el filtro de [representador del comando de script interno](internal-script-command-renderer-filter.md) . El representador del comando de script interno recibe los ejemplos de texto y los envía a la aplicación, en forma de notificaciones de eventos. Para obtener más información, vea la sección Comentarios.
+Este filtro está diseñado para usarse con el filtro [Representador](internal-script-command-renderer-filter.md) de comandos de script interno. El representador de comandos de script interno recibe los ejemplos de texto y los envía a la aplicación, en forma de notificaciones de eventos. Para obtener más información, vea la sección Comentarios.
 
 
 
-|                                          |                                                                                                          |
+| Etiqueta | Value |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IAMStreamSelect**](/windows/desktop/api/Strmif/nn-strmif-iamstreamselect), [ **IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                           |
-| Tipos de medios de anclaje de entrada                    | \_Secuencia MEDIATYPE                                                                                        |
-| Interfaces de PIN de entrada                     | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [ **IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                         |
-| Tipos de medios de anclaje de salida                   | \_Texto MEDIATYPE, MEDIASUBTYPE \_ null                                                                      |
-| Interfaces de clavija de salida                    | [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
-| Identificador CLSID                             | {33FACFE0-A9BE-11D0-A520-00A0D10129C0}                                                                   |
+| Tipos de medios de pin de entrada                    | Secuencia \_ MEDIATYPE                                                                                        |
+| Interfaces de pin de entrada                     | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [ **IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                         |
+| Tipos de medios de pin de salida                   | TEXTO \_ MEDIATYPE, MEDIASUBTYPE \_ NULL                                                                      |
+| Interfaces de pin de salida                    | [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
+| Filtrar CLSID                             | {33FACFE0-A9BE-11D0-A520-00A0D10129C0}                                                                   |
 | CLSID de la página de propiedades                      | Ninguna página de propiedades                                                                                         |
 | Executable                               | quartz.dll                                                                                               |
-| [Fundament](merit.md)                       | MÉRITO \_ improbable                                                                                          |
+| [Mérito](merit.md)                       | NO ES \_ PROBABLE QUE SE PRODUZCAN                                                                                          |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                            |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A continuación se facilita un archivo SAMI simple:
+A continuación se muestra un archivo SAMI simple:
 
 
 ```C++
@@ -72,11 +72,11 @@ A continuación se facilita un archivo SAMI simple:
 
 
 
-La etiqueta de **estilo** define dos configuraciones de idioma: Inglés (. ENCC) y francés (. FRCC). También define dos estilos, \# normal y \# GREENTEXT. Cada etiqueta **Sync** define la hora de inicio de un título, en milisegundos. Las etiquetas **P** contienen el texto del título, mientras que el atributo de **clase** especifica la configuración de idioma a la que se aplica el título.
+La **etiqueta STYLE** define dos configuraciones de idioma, inglés (. ENCC) y francés (. FRCC). También define dos estilos, \# NORMAL y \# GREENTEXT. Cada **etiqueta SYNC** define la hora de inicio de un título, en milisegundos. Las **etiquetas P** contienen el texto del título, mientras que el atributo **CLASS** especifica la configuración de idioma a la que se aplica el título.
 
-Para cada lenguaje y estilo, el filtro crea una secuencia lógica. En cualquier momento, se habilitan exactamente una secuencia de idioma y una secuencia de estilo. Cuando el filtro genera un ejemplo, selecciona el título para el idioma actual y aplica el estilo actual. De forma predeterminada, se habilita el primer idioma y estilo declarados en el archivo. Una aplicación puede usar el método [**IAMStreamSelect:: enable**](/windows/desktop/api/Strmif/nf-strmif-iamstreamselect-enable) para habilitar una secuencia diferente.
+Para cada idioma y estilo, el filtro crea una secuencia lógica. En cualquier momento, se habilitan exactamente una secuencia de idioma y una secuencia de estilo. Cuando el filtro genera un ejemplo, selecciona el título del idioma actual y aplica el estilo actual. De forma predeterminada, el primer idioma y estilo declarados en el archivo están habilitados. Una aplicación puede usar el [**método IAMStreamSelect::Enable**](/windows/desktop/api/Strmif/nf-strmif-iamstreamselect-enable) para habilitar una secuencia diferente.
 
-Con la configuración predeterminada, el primer título del archivo de ejemplo genera el siguiente resultado:
+Con la configuración predeterminada, el primer título del archivo de ejemplo genera la siguiente salida:
 
 
 ```C++
@@ -85,11 +85,11 @@ Con la configuración predeterminada, el primer título del archivo de ejemplo g
 
 
 
-Si la salida va al representador del comando de script interno, ese filtro envía una notificación de evento de evento [**\_ \_ OLE de EC**](ec-ole-event.md) . El segundo parámetro de evento es un BSTR con el texto de título. La aplicación puede recuperar el evento y mostrar el título.
+Si la salida va al representador de comandos de script interno, ese filtro envía una notificación [**de eventos OLE EVENT \_ \_ de EC.**](ec-ole-event.md) El segundo parámetro de evento es un BSTR con el texto del título. La aplicación puede recuperar el evento y mostrar el título.
 
-En el ejemplo siguiente se muestra cómo representar un archivo SAMI, recuperar la información de la secuencia, habilitar secuencias y mostrar el texto de la leyenda. En el ejemplo se da por supuesto que el archivo SAMI anterior se guarda como C: \\ Sami \_ Test \_ file. Sami.
+En el ejemplo siguiente se muestra cómo representar un archivo SAMI, recuperar información de secuencias, habilitar secuencias y mostrar texto de título. En el ejemplo se supone que el archivo SAMI anterior se guarda como C: \\ Sami \_ test \_ file.sami.
 
-Por motivos de brevedad, en este ejemplo se usan índices de secuencias codificados de forma rígida al llamar al método **IAMStreamSelect:: enable** . También realiza una comprobación de errores mínima.
+Por brevedad, en este ejemplo se usaron índices de flujo codificados de forma fuerte cuando llama al **método IAMStreamSelect::Enable.** También realiza una comprobación de errores mínima.
 
 
 ```C++
@@ -171,7 +171,7 @@ void __cdecl main()
 
 
 
-Este filtro usa la interfaz [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) para extraer ejemplos del filtro de origen. Por lo tanto, no admite la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) en su PIN de entrada.
+Este filtro usa la [**interfaz IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) para extraer ejemplos del filtro de origen. Por lo tanto, no admite la [**interfaz IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) en su pin de entrada.
 
 ## <a name="related-topics"></a>Temas relacionados
 

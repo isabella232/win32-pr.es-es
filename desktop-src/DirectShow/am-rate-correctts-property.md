@@ -1,37 +1,37 @@
 ---
-description: El navegador de DVD usa esta propiedad para informar al descodificador de que el navegador está configurando las marcas de tiempo correctas en los ejemplos que entrega al descodificador.
+description: El navegador de DVD usa esta propiedad para informar al descodificador de que el navegador está estableciendo las marcas de tiempo correctas en los ejemplos que entrega al descodificador.
 ms.assetid: f04e8291-734f-483e-b756-5362beb68d9c
-title: Propiedad AM_RATE_CorrectTS (dvdmedia. h)
+title: AM_RATE_CorrectTS propiedad (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa410b079d3de63de364662c7d5465c82814d24a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15c65b613f892708dc210af2ca2a05efb74785fb
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690632"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910303"
 ---
-# <a name="am_rate_correctts-property"></a>Propiedad de la frecuencia de la \_ tasa AM \_
+# <a name="am_rate_correctts-property"></a>Propiedad AM \_ RATE \_ CorrectTS
 
-El navegador de DVD usa esta propiedad para informar al descodificador de que el navegador está configurando las marcas de tiempo correctas en los ejemplos que entrega al descodificador.
+El navegador de DVD usa esta propiedad para informar al descodificador de que el navegador está estableciendo las marcas de tiempo correctas en los ejemplos que entrega al descodificador.
 
 
 
-|                   |                               |
+| Etiqueta | Value |
 |-------------------|-------------------------------|
-| GUID del conjunto de propiedades | \_TSRateChange KSPROPSETID \_ AM |
-| Id. de propiedad       | Frecuencia de las \_ \_ correcciones de AM           |
+| GUID del conjunto de propiedades | AM \_ KSPROPSETID \_ TSRateChange |
+| Id. de propiedad       | AM \_ RATE \_ CorrectTS           |
 | Tipo de datos         | **LONG**                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las versiones anteriores del navegador de DVD no establecieron las marcas de tiempo correctas cuando la velocidad de reproducción era distinta de 1,0. Muchos descodificadores solucionan este problema pasando por alto las marcas de tiempo durante el rebobinado o avance rápido, y calculando los tiempos de presentación correctos.
+Las versiones anteriores del navegador de DVD no establecen las marcas de tiempo correctas cuando la velocidad de reproducción era distinta de la 1.0. Muchos descodificadores funcionan para solucionar este problema omitiendo las marcas de tiempo durante el rebobinado o el avance rápido, y calculando los tiempos de presentación correctos.
 
-Estos problemas se han corregido en la versión actual del navegador de DVD. Para la compatibilidad con versiones anteriores con los descodificadores existentes, el navegador de DVD indica que las marcas de tiempo son correctas al establecer la \_ propiedad AM Rates \_ correct en el descodificador con el valor **true**. Cuando se establece esta propiedad, el descodificador debe utilizar las marcas de tiempo reales, en lugar de estimar los tiempos de presentación.
+Estos problemas se han corregido en la versión actual del navegador de DVD. Para la compatibilidad con versiones anteriores con los descodificadores existentes, el navegador de DVD indica que las marcas de tiempo son correctas estableciendo la propiedad AM RATE CorrectTS en el descodificador con el \_ \_ valor **TRUE**. Cuando se establece esta propiedad, el descodificador debe usar las marcas de tiempo reales, en lugar de calcular los tiempos de presentación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,11 +39,11 @@ Estos problemas se han corregido en la versión actual del navegador de DVD. Par
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,25 +1,25 @@
 ---
-description: Conjunto de propiedades de ejecución de fotogramas
+description: Conjunto de propiedades paso a paso de fotogramas
 ms.assetid: 01abe1fe-fc2f-44cb-9546-45a8d682a179
-title: Conjunto de propiedades de ejecución de fotogramas
+title: Conjunto de propiedades paso a paso de fotogramas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f503a38a2f548e0df0a6e88b3ae7afaebdd8cd3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e0ccd79feda0e5e2e537390fe5598822fb3787f6
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806128"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908453"
 ---
-# <a name="frame-stepping-property-set"></a>Conjunto de propiedades de ejecución de fotogramas
+# <a name="frame-stepping-property-set"></a>Conjunto de propiedades paso a paso de fotogramas
 
-Los descodificadores que implementan búsquedas con precisión de fotogramas en Microsoft DirectShow deben implementar el \_ conjunto de propiedades AM KSPROPSETID \_ FrameStep, que se usa junto con la interfaz [**IVideoFrameStep**](/windows/desktop/api/Strmif/nn-strmif-ivideoframestep) .
+Los descodificadores que implementan búsquedas precisas de fotogramas en Microsoft DirectShow deben implementar el conjunto de propiedades FrameStep de AM KSPROPSETID, que se usa junto con la \_ \_ interfaz [**IVideoFrameStep.**](/windows/desktop/api/Strmif/nn-strmif-ivideoframestep)
 
 
 
-|                   |                            |
+| Etiqueta | Value |
 |-------------------|----------------------------|
-| GUID del conjunto de propiedades | \_FrameStep KSPROPSETID \_ AM |
+| GUID del conjunto de propiedades | AM \_ KSPROPSETID \_ FrameStep |
 
 
 
@@ -29,10 +29,10 @@ Los descodificadores que implementan búsquedas con precisión de fotogramas en 
 
 | Id. de propiedad                              | Descripción                                                                                                                                                                     |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| FRAMESTEP de la \_ propiedad AM \_ \_ paso            | Indica al descodificador que comience una operación de paso y pasa una [**estructura \_ \_ FRAMESTEP de la propiedad AM**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-am_framestep_step) que especifica el número de pasos.            |
-| \_propiedad AM \_ FRAMESTEP \_ cancelar          | Indica al descodificador que cancele la operación de paso actual. No hay datos de instancia asociados a esta propiedad.                                                                  |
-| \_propiedad AM \_ FRAMESTEP \_ CANSTEP         | El descodificador devuelve S \_ OK en esta instrucción para indicar que puede realizar la ejecución paso a paso de fotogramas; de \_ lo contrario, es false. No se pasan datos de instancia cuando se establece esta propiedad.         |
-| \_propiedad AM \_ FRAMESTEP \_ CANSTEPMULTIPLE | El descodificador devuelve S \_ OK en esta instrucción para indicar que puede recorrer varios fotogramas a la vez; de \_ lo contrario, es false. No se pasan datos de instancia cuando se establece esta propiedad. |
+| PASO \_ \_ FRAMESTEP DE LA \_ PROPIEDAD AM            | Indica al descodificador que inicie una operación de paso y pasa una estructura [**\_ \_ FRAMESTEP de AM PROPERTY**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-am_framestep_step) que especifica el número de pasos.            |
+| AM \_ PROPERTY \_ FRAMESTEP \_ CANCEL          | Indica al descodificador que cancele la operación de paso actual. No hay datos de instancia asociados a esta propiedad.                                                                  |
+| AM \_ PROPERTY \_ FRAMESTEP \_ CANSTEP         | El descodificador devuelve S OK en esta instrucción para indicar que puede realizar la ejecución paso a paso del marco; en caso \_ contrario, S \_ FALSE. Cuando se establece esta propiedad, no se pasan datos de instancia.         |
+| AM \_ PROPERTY \_ FRAMESTEP \_ CANSTEPMULTIPLE | El descodificador devuelve S OK en esta instrucción para indicar que puede ir varios fotogramas a la vez; en caso \_ contrario, S \_ FALSE. Cuando se establece esta propiedad, no se pasan datos de instancia. |
 
 
 

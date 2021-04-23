@@ -1,99 +1,99 @@
 ---
-description: Tipos de medios de divisor MPEG-2
+description: Tipos de medios divisores MPEG-2
 ms.assetid: d0ff2011-4ee3-4f5e-8bd0-af9f4c6346e8
-title: Tipos de medios de divisor MPEG-2
+title: Tipos de medios divisores MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb10310bd126346c8e1558801200682792836d92
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: e878acaea8bc87bee2bf5c46a6f7e66c7aa0a485
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689638"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909433"
 ---
-# <a name="mpeg-2-splitter-media-types"></a>Tipos de medios de divisor MPEG-2
+# <a name="mpeg-2-splitter-media-types"></a>Tipos de medios divisores MPEG-2
 
-El filtro [de divisores MPEG-2](mpeg-2-splitter.md) admite actualmente audio y vídeo. Dolby AC-3 se admite como subflujo, tal y como se define en DVD. El filtro también admite audio MPEG-2. Los tipos de medios dependen de si el separador MPEG-2 está entregando paquetes PES o cargas de PES.
+El [filtro divisor MPEG-2](mpeg-2-splitter.md) admite actualmente audio y vídeo. Dolby AC-3 se admite como una subtransmisión, tal y como se define en DVD. El filtro también admite audio MPEG-2. Los tipos de medios dependen de si el divisor MPEG-2 está entregando paquetes PES o cargas PES.
 
 ### <a name="video"></a>Vídeo
 
-Para vídeo MPEG-2, los tipos de medios son los siguientes.
+En el caso del vídeo MPEG-2, los tipos de medios son los siguientes.
 
 
 
-|                  |                                          |                                |
+| Etiqueta | Value |
 |------------------|------------------------------------------|--------------------------------|
 |                  | Salida de PES                               | Salida de carga                 |
-| Tipo principal       | **\_PES MPEG2 \_ PE**                | **Vídeo de MEDIATYPE \_**           |
-| Subtype          | **\_Vídeo MPEG2 de MEDIASUBTYPE \_**           | **\_Vídeo MPEG2 de MEDIASUBTYPE \_** |
-| Tipo de formato      | **FORMATO \_ MPEG2Video**                   | **FORMATO \_ MPEG2Video**         |
+| Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**                | **Vídeo \_ DE MEDIATYPE**           |
+| Subtype          | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_**           | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_** |
+| Tipo de formato      | **FORMAT \_ MPEG2Video**                   | **FORMAT \_ MPEG2Video**         |
 | Estructura de formato | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) | **MPEG2VIDEOINFO**             |
 
 
 
  
 
-### <a name="ac-3-audio"></a>Audio AC-3
+### <a name="ac-3-audio"></a>AC-3 Audio
 
-En el caso de audio AC-3, los tipos de medios son los siguientes.
+Para el audio AC-3, los tipos de medios son los siguientes.
 
 
 
-|                  |                                      |                              |
+| Etiqueta | Value |
 |------------------|--------------------------------------|------------------------------|
 |                  | Salida de PES                           | Salida de carga               |
-| Tipo principal       | \_PES MPEG2 \_ PE                | **Audio de MEDIATYPE \_**         |
-| Subtype          | MEDIASUBTYPE \_ Dolby \_ AC3             | **MEDIASUBTYPE \_ Dolby \_ AC3** |
-| Tipo de formato      | DAR formato a \_ WaveFormatEx                 | **DAR formato a \_ WaveFormatEx**     |
-| Estructura de formato | [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) | **WAVEFORMATEX**             |
+| Tipo principal       | MEDIATYPE \_ MPEG2 \_ PES                | **MEDIATYPE \_ Audio**         |
+| Subtype          | MEDIASUBTYPE \_ DOLBY \_ AC3             | **MEDIASUBTYPE \_ DOLBY \_ AC3** |
+| Tipo de formato      | FORMAT \_ WaveFormatEx                 | **FORMAT \_ WaveFormatEx**     |
+| Estructura de formato | [**FORMA DE ONDAATEX**](/previous-versions/dd757713(v=vs.85)) | **FORMA DE ONDAATEX**             |
 
 
 
  
 
-El miembro **wFormatTag** de la estructura **WAVEFORMATEX** para AC-3 es actualmente el **formato de onda \_ \_ desconocido**, pero esto podría cambiar.
+El miembro **wFormatTag** de la estructura **DEFORMATEX** para AC-3 es actualmente **WAVE FORMAT \_ \_ UNKNOWN,** pero esto podría cambiar.
 
-### <a name="mpeg-2-audio"></a>Audio MPEG-2
+### <a name="mpeg-2-audio"></a>MPEG-2 Audio
 
-En el caso de audio MPEG-2, los tipos de medios son los siguientes.
+En el caso del audio MPEG-2, los tipos de medios son los siguientes.
 
 
 
-|                  |                               |                                |
+| Etiqueta | Value |
 |------------------|-------------------------------|--------------------------------|
 |                  | Salida de PES                    | Salida de carga                 |
-| Tipo principal       | **\_PES MPEG2 \_ PE**     | **Audio de MEDIATYPE \_**           |
-| Subtype          | **\_Audio MPEG2 de MEDIASUBTYE \_** | **\_Audio MPEG2 de MEDIASUBTYPE \_** |
-| Tipo de formato      | **DAR formato a \_ WaveFormatEx**      | **DAR formato a \_ WaveFormatEx**       |
-| Estructura de formato | **WAVEFORMATEX**              | **WAVEFORMATEX**               |
+| Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**     | **MEDIATYPE \_ Audio**           |
+| Subtype          | **AUDIO MPEG2 DE MEDIASUBTYE \_ \_** | **MEDIASUBTYPE \_ MPEG2 \_ AUDIO** |
+| Tipo de formato      | **FORMAT \_ WaveFormatEx**      | **FORMAT \_ WaveFormatEx**       |
+| Estructura de formato | **FORMA DE ONDAATEX**              | **FORMA DE ONDAATEX**               |
 
 
 
  
 
-El miembro **wFormatTag** de la estructura **WAVEFORMATEX** para audio MPEG-2 es actualmente el **formato de onda \_ \_ desconocido**, pero esto podría cambiar.
+El miembro **wFormatTag** de la estructura **WAVEATEX** para MPEG-2 Audio es actualmente **WAVE FORMAT \_ \_ UNKNOWN,** pero esto podría cambiar.
 
-El separador MPEG-2 supone que las secuencias d0 a DF se usan para el flujo de extensión multicanal, ya que son para audio MPEG-2 de DVD. Por lo tanto, cada vez que se selecciona Stream C *x* , el divisor reenvía también los paquetes para Stream D *x* .
+El divisor MPEG-2 supone que las secuencias D0 a DF se usan para la secuencia de extensión multicanal, como para el audio MPEG-2 de DVD. Por lo tanto, cada vez que se selecciona la secuencia C *x,* el divisor reenvía también los paquetes para la secuencia D *x.*
 
-### <a name="lpcm-audio"></a>Audio LPCM
+### <a name="lpcm-audio"></a>LPCM Audio
 
-En el caso de audio LPCM, los tipos de medios son los siguientes.
+En el caso del audio LPCM, los tipos de medios son los siguientes.
 
 
 
-|                  |                                    |                                    |
+| Etiqueta | Value |
 |------------------|------------------------------------|------------------------------------|
 |                  | Salida de PES                         | Salida de carga                     |
-| Tipo principal       | **\_PES MPEG2 \_ PE**          | **Audio de MEDIATYPE \_**               |
-| Subtype          | **MEDIASUBTYPE \_ DVD \_ LPCM \_ audio** | **MEDIASUBTYPE \_ DVD \_ LPCM \_ audio** |
-| Tipo de formato      | **DAR formato a \_ WaveFormatEx**           | **DAR formato a \_ WaveFormatEx**           |
-| Estructura de formato | **WAVEFORMATEX**                   | **WAVEFORMATEX**                   |
+| Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**          | **MEDIATYPE \_ Audio**               |
+| Subtype          | **AUDIO \_ LPCM DE DVD DE MEDIASUBTYPE \_ \_** | **AUDIO \_ LPCM DE DVD DE MEDIASUBTYPE \_ \_** |
+| Tipo de formato      | **FORMAT \_ WaveFormatEx**           | **FORMAT \_ WaveFormatEx**           |
+| Estructura de formato | **FORMA DE ONDAATEX**                   | **FORMA DE ONDAATEX**                   |
 
 
 
  
 
-Actualmente, el miembro **wFormatTag** de la estructura **WAVEFORMATEX** para audio LPCM es el **formato de onda \_ \_ desconocido**, pero esto podría cambiar.
+El miembro **wFormatTag** de la estructura **WAVEATEX** para el audio LPCM es actualmente **WAVE FORMAT \_ \_ UNKNOWN,** pero esto podría cambiar.
 
 ## <a name="related-topics"></a>Temas relacionados
 

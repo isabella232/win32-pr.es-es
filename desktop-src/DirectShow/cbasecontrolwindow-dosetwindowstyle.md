@@ -1,7 +1,7 @@
 ---
-description: El método DoSetWindowStyle cambia el estilo de ventana típico o extendido.
+description: El método DoSetWindowStyle cambia los estilos de ventana típicos o extendidos.
 ms.assetid: 4a9a97fb-b527-44ce-af8c-e5ea832ed4c4
-title: Método CBaseControlWindow. DoSetWindowStyle (Ctlutil. h)
+title: Método CBaseControlWindow.DoSetWindowStyle (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d57d023dff803caf5da7e61dea266670ec8bde5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db88c5818d31d65f361ae1a805bd50c285d4a5c2
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660258"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909813"
 ---
-# <a name="cbasecontrolwindowdosetwindowstyle-method"></a>CBaseControlWindow. DoSetWindowStyle, método
+# <a name="cbasecontrolwindowdosetwindowstyle-method"></a>CBaseControlWindow.DoSetWindowStyle (método)
 
-El `DoSetWindowStyle` método cambia el estilo de ventana típico o extendido.
+El `DoSetWindowStyle` método cambia los estilos de ventana típicos o extendidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,14 +53,14 @@ Estilos de ventana adecuados.
 *WindowLong* 
 </dt> <dd>
 
-Valor que especifica los estilos que se van a establecer. Debe ser una de las siguientes:
+Valor que especifica los estilos que se establecerán. Debe ser una de las siguientes:
 
 
 
-|              |                                      |
+| Etiqueta | Value |
 |--------------|--------------------------------------|
-| \_estilo GWL   | Recupere los estilos de ventana.          |
-| GWL \_ EXstyle | Recupere los estilos extendidos de ventana. |
+| ESTILO \_ GWL   | Recupere los estilos de ventana.          |
+| GWL \_ EXSTYLE | Recupere los estilos de ventana extendidos. |
 
 
 
@@ -70,11 +70,11 @@ Valor que especifica los estilos que se van a establecer. Debe ser una de las si
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro llama a la función **SetWindowLong** de Win32 para establecer el estilo de ventana y, a continuación, vuelve a mostrar la ventana en la posición actual. Esta función miembro se llama mediante las funciones miembro [**CBaseControlWindow::p UT \_ estiloVentana**](cbasecontrolwindow-put-windowstyle.md) y [**CBaseControlWindow::p UT \_ WindowStyleEx**](cbasecontrolwindow-put-windowstyleex.md) .
+Esta función miembro llama a la función **SetWindowLong** de Win32 para establecer el estilo de ventana y, a continuación, vuelve a mostrar la ventana en la posición actual. Las funciones miembro [**CBaseControlWindow::p ut \_ WindowStyle**](cbasecontrolwindow-put-windowstyle.md) y [**CBaseControlWindow::p ut \_ WindowStyleEx**](cbasecontrolwindow-put-windowstyleex.md) llaman a esta función miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,16 +82,16 @@ Esta función miembro llama a la función **SetWindowLong** de Win32 para establ
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

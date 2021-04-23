@@ -1,31 +1,31 @@
 ---
 description: Devuelve la velocidad máxima a la que un descodificador puede procesar los datos. El valor de esta propiedad es la velocidad de reproducción máxima del descodificador x 10000. Por ejemplo, si la velocidad máxima de avance es 2,0, el valor de esta propiedad es 20000.
 ms.assetid: 66e6885b-7ad7-4912-85e4-ea36855bfde6
-title: Propiedad AM_RATE_MaxFullDataRate (dvdmedia. h)
+title: AM_RATE_MaxFullDataRate (Propiedad, Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 692d3a9acf3ab175d01cea63e970c8fcdad4b0cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c4e3b1ba4d15268ffb8a32c0e808393b85efe55b
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660956"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910293"
 ---
-# <a name="am_rate_maxfulldatarate-property"></a>\_Propiedad MaxFullDataRate de tasa AM \_
+# <a name="am_rate_maxfulldatarate-property"></a>Propiedad \_ \_ MaxFullDataRate de AM RATE
 
 Devuelve la velocidad máxima a la que un descodificador puede procesar los datos. El valor de esta propiedad es la velocidad de reproducción máxima del descodificador x 10000. Por ejemplo, si la velocidad máxima de avance es 2,0, el valor de esta propiedad es 20000.
 
-El tipo de datos de esta propiedad es **AM \_ MaxFullDataRate**, que es un `typedef` para **Long**.
+El tipo de datos de esta propiedad **es AM \_ MaxFullDataRate,** que es para `typedef` **LONG.**
 
 Esta propiedad es de solo lectura.
 
 
 
-|                   |                                    |
+| Etiqueta | Value |
 |-------------------|------------------------------------|
-| GUID del conjunto de propiedades | \_TSRateChange KSPROPSETID \_ AM      |
-| Id. de propiedad       | Tasa de AM \_ \_ MaxFullDataRate          |
-| Tipo de datos         | **AM \_ MaxFullDataRate** (**Long**) |
+| GUID del conjunto de propiedades | AM \_ KSPROPSETID \_ TSRateChange      |
+| Id. de propiedad       | AM \_ RATE \_ MaxFullDataRate          |
+| Tipo de datos         | **AM \_ MaxFullDataRate** (**LONG**) |
 
 
 
@@ -37,15 +37,15 @@ Esta propiedad es de solo lectura.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Conjunto de propiedades de cambio de velocidad**](rate-change-property-set.md)
+[**Conjunto de propiedades de cambio de frecuencia**](rate-change-property-set.md)
 </dt> </dl>
 
  

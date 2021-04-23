@@ -1,27 +1,27 @@
 ---
-description: Conjunto de propiedades de transporte de dispositivo externo
+description: Conjunto de propiedades de transporte de dispositivos externos
 ms.assetid: 9c80cf59-054f-49b6-9456-ed5e091cbfaf
-title: Conjunto de propiedades de transporte de dispositivo externo
+title: Conjunto de propiedades de transporte de dispositivos externos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e77942157b7cf5f75b883e6953f3a115d1fa9f6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 85e38217af21ea1839d7c9207a4922bcff00d63a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152696"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909223"
 ---
-# <a name="external-device-transport-property-set"></a>Conjunto de propiedades de transporte de dispositivo externo
+# <a name="external-device-transport-property-set"></a>Conjunto de propiedades de transporte de dispositivos externos
 
-Este conjunto de propiedades controla el transporte de datos hacia y desde un dispositivo externo. En la mayoría de los casos, las aplicaciones no deben utilizar directamente esta propiedad establecida. En su lugar, use la interfaz [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport) .
+Este conjunto de propiedades controla el transporte de datos hacia y desde un dispositivo externo. En la mayoría de los casos, las aplicaciones no deben usar directamente este conjunto de propiedades. Use la [**interfaz IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport) en su lugar.
 
-En la tabla siguiente se enumeran las propiedades que son relevantes para las aplicaciones de modo de usuario. Para obtener una descripción completa de este conjunto de propiedades, consulte el DDK del kit de desarrollo de controladores de Microsoft Windows.
+En la tabla siguiente se enumeran las propiedades que son relevantes para las aplicaciones en modo de usuario. Para obtener una descripción completa de este conjunto de propiedades, consulte el DDK del Kit de desarrollo de controladores de Microsoft Windows.
 
 
 
-|                   |                           |
+| Etiqueta | Value |
 |-------------------|---------------------------|
-| GUID del conjunto de propiedades | \_transporte ext \_ PROPSETID |
+| GUID del conjunto de propiedades | TRANSPORTE EXT DE PROPSETID \_ \_ |
 
 
 
@@ -31,8 +31,8 @@ En la tabla siguiente se enumeran las propiedades que son relevantes para las ap
 
 | Id. de propiedad                                                                           | Descripción                                  |
 |---------------------------------------------------------------------------------------|----------------------------------------------|
-| [**búsqueda de KSPROPERTY \_ EXTXPORT \_ ATN \_**](ksproperty-extxport-atn-search.md)           | Busca un número de pista absoluta (ATN). |
-| [**KSPROPERTY \_ \_ búsqueda de código de tiempo EXTXPORT \_**](ksproperty-extxport-timecode-search.md) | Busca un código de hora.                    |
+| [**KSPROPERTY \_ EXTXPORT \_ ATN \_ SEARCH**](ksproperty-extxport-atn-search.md)           | Busca un número de seguimiento absoluto (ATN). |
+| [**BÚSQUEDA DE CÓDIGO \_ DE TIEMPO DE EXTXPORT \_ DE KSPROPERTY \_**](ksproperty-extxport-timecode-search.md) | Busca un código de hora.                    |
 
 
 

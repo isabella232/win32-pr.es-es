@@ -1,7 +1,7 @@
 ---
-description: La \_ \_ estructura de intervalo de transporte de MPEG2 describe el formato de los paquetes de secuencias de transporte MPEG-2 (TS).
+description: La estructura MPEG2 TRANSPORT STRIDE describe el formato de los paquetes de flujo de transporte \_ \_ MPEG-2 (TS).
 ms.assetid: 269d5fba-2dea-4786-93d6-e52b56c8bb53
-title: MPEG2_TRANSPORT_STRIDE estructura (Bdatypes. h)
+title: MPEG2_TRANSPORT_STRIDE estructura (Bdatypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,32 +13,32 @@ api_type:
 - HeaderDef
 api_location:
 - bdatypes.h
-ms.openlocfilehash: 4a0cdc21bdd8c320728da0c0af8c0af023de68eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5153f6f79c2807634149222a126a7256a65ffe8a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690073"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908493"
 ---
-# <a name="mpeg2_transport_stride-structure"></a>Estructura de intervalo de \_ transporte de MPEG2 \_
+# <a name="mpeg2_transport_stride-structure"></a>Estructura MPEG2 \_ TRANSPORT \_ STRIDE
 
-La `MPEG2_TRANSPORT_STRIDE` estructura describe el formato de los paquetes de secuencias de transporte MPEG-2 (TS). Esta estructura permite transportes de flujos en los que los paquetes de transporte de 188 bytes no son contiguos. En esta documentación, se hace referencia a estos paquetes como *paquetes STRIDE*.
+La estructura describe el formato de los paquetes de flujo de transporte `MPEG2_TRANSPORT_STRIDE` MPEG-2 (TS). Esta estructura permite los flujos de transporte en los que los paquetes de transporte de 188 bytes no son contiguos. Para esta documentación, estos paquetes se conocen como *paquetes de paso* a paso.
 
-Los paquetes STRIDE se identifican con el siguiente tipo de medio:
+Los paquetes stride se identifican mediante el siguiente tipo de medio:
 
 
 
-|             |                                        |
+| Etiqueta | Value |
 |-------------|----------------------------------------|
-| Tipo principal  | \_Secuencia MEDIATYPE                      |
-| Subtype     | \_Intervalo de \_ transporte de MPEG2 de MEDIASUBTYPE \_ |
-| Tipo de formato | FORMATO \_ ninguno                           |
+| Tipo principal  | Secuencia \_ MEDIATYPE                      |
+| Subtype     | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE |
+| Tipo de formato | FORMAT \_ None                           |
 
 
 
  
 
-El bloque de formato (**pbFormat**) es opcional. Si se incluye el bloque de formato, debe comenzar con una estructura de **\_ \_ intervalo de transporte de MPEG2** . Esta estructura define el diseño del paquete de transporte en el paquete STRIDE. Si el bloque de formato es **null**, se supone que los paquetes usan un conjunto de valores predeterminados. Vea la sección Comentarios para obtener más información.
+El bloque de formato (**pbFormat**) es opcional. Si se incluye el bloque de formato, debe comenzar con una **estructura MPEG2 \_ TRANSPORT \_ STRIDE.** Esta estructura define el diseño del paquete de transporte dentro del paquete stride. Si el bloque de formato **es NULL,** se supone que los paquetes usan un conjunto de valores predeterminados; consulte la sección Comentarios para obtener más información.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,43 +60,43 @@ typedef struct _MPEG2_TRANSPORT_STRIDE {
 **dwOffset**
 </dt> <dd>
 
-Especifica el desplazamiento, en bytes, desde el principio del paquete hasta el primer byte del paquete de transporte incrustado. El valor debe estar comprendido entre cero y `(dwStride - dwPacketLength)` , ambos inclusive.
+Especifica el desplazamiento, en bytes, desde el principio del paquete hasta el primer byte del paquete de transporte incrustado. El valor debe oscilar entre cero y `(dwStride - dwPacketLength)` , ambos incluidos.
 
 </dd> <dt>
 
 **dwPacketLength**
 </dt> <dd>
 
-Especifica la longitud del paquete de transporte incrustado, en bytes. En el caso de los paquetes de transporte MPEG-2 estándar, el valor debe ser 188 bytes.
+Especifica la longitud del paquete de transporte incrustado, en bytes. Para los paquetes de transporte MPEG-2 estándar, el valor debe ser de 188 bytes.
 
 </dd> <dt>
 
 **dwStride**
 </dt> <dd>
 
-Especifica la longitud de todo el paquete STRIDE, en bytes. El valor debe ser al menos `(dwOffset + dwPacketLength)` .
+Especifica la longitud del paquete stride completo, en bytes. El valor debe ser al menos `(dwOffset + dwPacketLength)` .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el siguiente diagrama se ilustran las relaciones entre los miembros de la estructura.
+En el diagrama siguiente se muestran las relaciones entre los miembros de la estructura.
 
-![paquete de paso MPEG-2](images/mpeg2-stride-packet.png)
+![paquete de paso mpeg-2](images/mpeg2-stride-packet.png)
 
-Los búferes de entrada que contienen paquetes de intervalo multiplexado tienen algunas restricciones:
+Los búferes de entrada que contienen paquetes de paso multiplexado tienen algunas restricciones:
 
--   Los paquetes STRIDE deben empaquetarse de forma contigua en el búfer.
--   Ningún byte puede preceder al primer paquete STRIDE o seguir el último paquete STRIDE.
--   Un número entero de paquetes STRIDE debe caber en el búfer; es decir, la longitud del búfer% dwStride es igual a cero.
+-   Los paquetes stride deben empaquetarse de forma contigua dentro del búfer.
+-   Ningún bytes puede preceder al primer paquete de paso o seguir el último paquete de paso.
+-   Un número entero de paquetes de paso debe caber en el búfer; es decir, la longitud del búfer % dwStride es igual a cero.
 
-No hay ninguna restricción en el número de paquetes STRIDE por búfer.
+No hay ninguna restricción en el número de paquetes de paso por búfer.
 
-Si el tipo de medio no contiene un bloque de formato (**pbFormat** es **null**), se usan los siguientes valores predeterminados:
+Si el tipo de medio no contiene un bloque de formato **(pbFormat** es **NULL),** se usan los siguientes valores predeterminados:
 
--   **dwOffset**: 0
--   **dwPacketLength**: 188
--   **dwStride**: 188
+-   **dwOffset:** 0
+-   **dwPacketLength:** 188
+-   **dwStride:** 188
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,11 +104,11 @@ Si el tipo de medio no contiene un bloque de formato (**pbFormat** es **null**),
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Bdatypes. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Bdatypes.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

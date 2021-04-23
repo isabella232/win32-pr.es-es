@@ -1,25 +1,25 @@
 ---
-description: Compilar filtros de DirectShow
+description: Creación de filtros de DirectShow
 ms.assetid: fb907263-e7f3-42d6-80f9-a9f16fc21033
-title: Compilar filtros de DirectShow
+title: Creación de filtros de DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5553c4358f97809214ebbdea23c129aa7c214e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7090eed702b1abe8ee863d5fa3ac9c1fd413690e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806452"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908623"
 ---
-# <a name="building-directshow-filters"></a>Compilar filtros de DirectShow
+# <a name="building-directshow-filters"></a>Creación de filtros de DirectShow
 
-Se recomiendan las clases base de DirectShow para implementar filtros de DirectShow. Para compilar con las clases base, realice los pasos siguientes, además de los pasos que se indican en [configuración del entorno de compilación](setting-up-the-build-environment.md):
+Las clases base de DirectShow se recomiendan para implementar filtros de DirectShow. Para compilar con las clases base, realice los pasos siguientes, además de los pasos enumerados en [Configuración del entorno de compilación](setting-up-the-build-environment.md):
 
--   Compile la biblioteca de clases base, que se encuentra en el directorio Samples \\ multimedia \\ DirectShow \\ BaseClasses, en el directorio raíz del SDK. Hay dos versiones de la biblioteca: una versión comercial (Strmbase. lib) y una versión de depuración (Strmbasd. lib).
--   Incluya el archivo de encabezado streams. h.
--   Utilice la \_ \_ Convención de llamada Stdcall.
--   Use la biblioteca en tiempo de ejecución de C multiproceso (depuración o comercial, según corresponda).
--   Incluya un archivo de definición (. def) que exporte las funciones DLL. El siguiente es un ejemplo de un archivo de definición. Se supone que el archivo de salida se denomina MyFilter.dll.
+-   Compile la biblioteca de clases base, ubicada en el directorio Samples \\ Multimedia \\ DirectShow \\ BaseClasses, en el directorio raíz del SDK. Hay dos versiones de la biblioteca: una versión comercial (Strmbase.lib) y una versión de depuración (Strmbasd.lib).
+-   Incluya el archivo de encabezado Streams.h.
+-   Use la \_ \_ convención de llamada stdcall.
+-   Use la biblioteca en tiempo de ejecución de C multiproceso (depuración o venta al por menor, según corresponda).
+-   Incluya un archivo de definición (.def) que exporte las funciones DLL. A continuación se muestra un ejemplo de un archivo de definición. Se supone que el archivo de salida se denomina MyFilter.dll.
     ```C++
     LIBRARY MYFILTER.DLL
     EXPORTS 
@@ -32,19 +32,19 @@ Se recomiendan las clases base de DirectShow para implementar filtros de DirectS
 
     
 
--   Vincule a los siguientes archivos lib.
+-   Vínculo a los siguientes archivos lib.
 
-    |              |                                      |
+| Etiqueta | Value |
     |--------------|--------------------------------------|
-    | Depurar compilación  | Strmbasd. lib, msvcrtd. lib, winmm. lib |
-    | Compilación comercial | Strmbase. lib, msvcrt. lib, winmm. lib  |
+    | Compilación de depuración  | Strmbasd.lib, Msvcrtd.lib, Winmm.lib |
+    | Compilación de venta al por menor | Strmbase.lib, Msvcrt.lib, Winmm.lib  |
 
     
 
      
 
--   Elija la opción "omitir bibliotecas predeterminadas" en la configuración del vinculador.
--   Declare el punto de entrada de DLL en el código fuente, como se indica a continuación:
+-   Elija la opción "Omitir bibliotecas predeterminadas" en la configuración del vinculador.
+-   Declare el punto de entrada de DLL en el código fuente, como se muestra a continuación:
     ```C++
     extern "C" BOOL WINAPI DllEntryPoint(HINSTANCE, ULONG, LPVOID);
     BOOL APIENTRY DllMain(HANDLE hModule, DWORD dwReason, LPVOID lpReserved)
@@ -57,11 +57,11 @@ Se recomiendan las clases base de DirectShow para implementar filtros de DirectS
 
 Versiones anteriores
 
-En el caso de las versiones de la biblioteca de clases base anteriores a DirectShow 9,0, también debe hacer lo siguiente:
+Para las versiones de la biblioteca de clases base anteriores a DirectShow 9.0, también debe hacer lo siguiente:
 
 -   Para las compilaciones de depuración, defina la marca de preprocesador DEBUG.
 
-Este paso no es necesario para la versión de la biblioteca de clases base que está disponible en DirectShow 9,0 y versiones posteriores.
+Este paso no es necesario para la versión de la biblioteca de clases base que está disponible en DirectShow 9.0 y versiones posteriores.
 
 ## <a name="related-topics"></a>Temas relacionados
 

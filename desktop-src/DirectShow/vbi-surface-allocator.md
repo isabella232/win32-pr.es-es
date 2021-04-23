@@ -4,30 +4,30 @@ ms.assetid: 51c73a25-1112-4fb4-a45f-967c6a1b5c55
 title: Asignador de superficie de VBI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4edd698ed37c7b180bee27d0a99e95096080d8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5849b23b8f21a7b49e477060386628ba4c19b2e5
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815259"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909013"
 ---
 # <a name="vbi-surface-allocator"></a>Asignador de superficie de VBI
 
-El asignador de superficie de VBI controla la asignación de búferes VBI en gráficos de televisión analógica con escenarios de captura de puerto de vídeo de hardware. Con dispositivos como el descodificador de Bt829, el búfer de fotogramas puede contener varios búferes de captura de VBI a los que se tiene acceso a través de un mecanismo propio basado en hardware conocido como un puerto de vídeo. El filtro de asignador de superficie de VBI conecta el nivel inferior del filtro de captura y no tiene ningún PIN de salida. El filtro funciona en estrecha colaboración con el [mezclador de superposición](overlay-mixer-filter.md) (a través de DirectDraw) para realizar operaciones coordinadas en el puerto de vídeo de hardware, usando la misma memoria de búfer de fotogramas SVGA limitada.
+El asignador de superficie de VBI controla la asignación de búferes de VBI en gráficos de televisión análogos con escenarios de captura de puertos de vídeo de hardware. Con dispositivos como el descodificador Bt829, el búfer de fotogramas puede contener varios búferes de captura de VBI a los que se accede a través de un mecanismo propietario basado en hardware conocido genéricamente como puerto de vídeo. El filtro Asignador de superficie de VBI se conecta de bajada desde el filtro de captura y no tiene ningún pin de salida. El filtro funciona estrechamente con el mezclador de superposición [(a](overlay-mixer-filter.md) través de DirectDraw) para realizar operaciones coordinadas en el puerto de vídeo de hardware, utilizando la misma memoria de búfer de fotograma SVGA limitada.
 
 
 
-|                                          |                                                                                     |
+| Etiqueta | Value |
 |------------------------------------------|-------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                                                  |
-| Tipos de medios de anclaje de entrada                    | \_Vídeo de MEDIATYPE, MEDIASUBTYPE \_ VPVBI                                               |
-| Interfaces de PIN de entrada                     | [**IKsPropertySet**](ikspropertyset.md)                                            |
-| Tipos de medios de anclaje de salida                   | MEDIATYPE \_ null, MEDIASUBTYPE \_ null. (Nunca se conecta a la clavija de salida). |
-| Interfaces de clavija de salida                    | No es aplicable.                                                                     |
-| Identificador CLSID                             | CLSID \_ VBISurfaces                                                                  |
-| CLSID de la página de propiedades                      | Ninguna página de propiedades.                                                                   |
+| Tipos de medios de pin de entrada                    | VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ VPVBI                                               |
+| Interfaces de pin de entrada                     | [**IKsPropertySet**](ikspropertyset.md)                                            |
+| Tipos de medios de pin de salida                   | MEDIATYPE \_ NULL, MEDIASUBTYPE \_ NULL. (Nunca se ha conectado nada al pin de salida). |
+| Interfaces de pin de salida                    | No es aplicable.                                                                     |
+| Filtrar CLSID                             | CLSID \_ VBISurfaces                                                                  |
+| CLSID de la página de propiedades                      | No hay ninguna página de propiedades.                                                                   |
 | Executable                               | vbisurf.ax                                                                          |
-| [Fundament](merit.md)                       | MÉRITO \_ normal                                                                       |
+| [Mérito](merit.md)                       | PROCEDIMIENTO \_ NORMAL                                                                       |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                       |
 
 

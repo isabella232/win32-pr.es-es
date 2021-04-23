@@ -12,202 +12,202 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a1667c530ea1db8c9e463be0edad5de98e8b107
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6210f93c23dc52f19f3e01ea01ebe8fc9d631c8c
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103784036"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909843"
 ---
 # <a name="rasterization-state-variables"></a>Variables de estado de rasterización
 
-<dl> <dt><span id="GL_POINT_SIZE"></span><span id="gl_point_size"></span>tamaño de los puntos de contabilidad \_ \_</dt> <dd> 
+<dl> <dt><span id="GL_POINT_SIZE"></span><span id="gl_point_size"></span>TAMAÑO \_ DE PUNTO DE \_ GL</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
 | Descripción:     | Tamaño del punto                         |
 | Grupo de atributos: | point                              |
-| Valor inicial:   | 1,0                                |
-| Obtener comando:     | [**glGetFloatv**](glgetfloatv.md) |
+| Valor inicial:   | 1.0                                |
+| Comando Get:     | [**glGetFloatv**](glgetfloatv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POINT_SMOOTH"></span><span id="gl_point_smooth"></span>\_suavidad de punto de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SMOOTH"></span><span id="gl_point_smooth"></span>GL \_ POINT \_ SMOOTH</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Alias de punto activado                  |
-| Grupo de atributos: | señalar/habilitar                       |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | Alias de punto en                  |
+| Grupo de atributos: | point/enable                       |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LINE_WIDTH"></span><span id="gl_line_width"></span>\_ancho de línea de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_WIDTH"></span><span id="gl_line_width"></span>ANCHO \_ DE LÍNEA DE \_ GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Ancho de línea                                                                     |
 | Grupo de atributos: | line                                                                           |
-| Valor inicial:   | 1,0                                                                            |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | 1.0                                                                            |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LINE_SMOOTH"></span><span id="gl_line_smooth"></span>\_suavizado de línea de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_SMOOTH"></span><span id="gl_line_smooth"></span>GL \_ LINE \_ SMOOTH</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Suavizado de línea en               |
-| Grupo de atributos: | línea/habilitar                        |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | Suavizado de contorno de línea en               |
+| Grupo de atributos: | line/enable                        |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>\_ \_ patrón punteado de línea de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>PATRÓN \_ DE \_ STIPPLE DE LÍNEA \_ GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Línea punteada                                                                     |
+| Descripción:     | Tipple de línea                                                                     |
 | Grupo de atributos: | line                                                                             |
 | Valor inicial:   | 1                                                                              |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LINE_STIPPLE_REPEAT"></span><span id="gl_line_stipple_repeat"></span>\_ \_ repetición punteada de línea de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE_REPEAT"></span><span id="gl_line_stipple_repeat"></span>GL \_ LINE \_ STIPPLE \_ REPEAT</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Repetición punteada de línea                                                              |
+| Descripción:     | Repetición de latippla de línea                                                              |
 | Grupo de atributos: | line                                                                             |
 | Valor inicial:   | 1                                                                                |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LINE_STIPPLE"></span><span id="gl_line_stipple"></span>línea de contabilidad \_ \_ punteada</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE"></span><span id="gl_line_stipple"></span>GL \_ LINE \_ STIPPLE</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Habilitar línea punteada                |
-| Grupo de atributos: | línea/habilitar                        |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | Habilitación de la información sobre la línea                |
+| Grupo de atributos: | line/enable                        |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CULL_FACE"></span><span id="gl_cull_face"></span>\_cara de selección de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_CULL_FACE"></span><span id="gl_cull_face"></span>GL \_ CULL \_ FACE</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Selección de polígonos habilitada            |
-| Grupo de atributos: | Polígono/habilitar                     |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | Selección de polígono habilitada            |
+| Grupo de atributos: | polygon/enable                     |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CULL_FACE_MODE"></span><span id="gl_cull_face_mode"></span>\_modo de \_ cara de selección de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_CULL_FACE_MODE"></span><span id="gl_cull_face_mode"></span>GL \_ CULL \_ FACE \_ MODE</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Desactivación de polígonos hacia delante o hacia atrás                                           |
+| Descripción:     | Polígonos orientados hacia delante y hacia atrás de Cull                                           |
 | Grupo de atributos: | polygon                                                                          |
-| Valor inicial:   | libro \_ de contabilidad                                                                         |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ BACK                                                                         |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FRONT_FACE"></span><span id="gl_front_face"></span>\_cara frontal de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_FRONT_FACE"></span><span id="gl_front_face"></span>GL \_ FRONT \_ FACE</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Indicador de la cara frontal CW/CCW                                              |
+| Descripción:     | Indicador cw/CCW de la cara frontal del polígono                                              |
 | Grupo de atributos: | polygon                                                                          |
-| Valor inicial:   | CCW de contabilidad \_                                                                          |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ CCW                                                                          |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POLYGON_SMOOTH"></span><span id="gl_polygon_smooth"></span>retorno de polígono de GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_POLYGON_SMOOTH"></span><span id="gl_polygon_smooth"></span>GL \_ POLYGON \_ SMOOTH</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Suavizado de contorno de polígono activado            |
-| Grupo de atributos: | Polígono/habilitar                     |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | Suavizado de contorno de polígono en            |
+| Grupo de atributos: | polygon/enable                     |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POLYGON_MODE"></span><span id="gl_polygon_mode"></span>\_modo de polígono de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_POLYGON_MODE"></span><span id="gl_polygon_mode"></span>MODO \_ DE POLÍGONO DE \_ GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Modo de rasterización de Polígono (anverso y trasero)                                      |
+| Descripción:     | Modo de rasterización de polígono (delante y atrás)                                      |
 | Grupo de atributos: | polygon                                                                          |
-| Valor inicial:   | relleno de contabilidad \_                                                                         |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ FILL                                                                         |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POLYGON_STIPPLE"></span><span id="gl_polygon_stipple"></span>punteado de cont. \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_POLYGON_STIPPLE"></span><span id="gl_polygon_stipple"></span>GL \_ POLYGON \_ STIPPLE</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Habilitar polígono punteado             |
-| Grupo de atributos: | Polígono/habilitar                     |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | Habilitación de latippla de polígono             |
+| Grupo de atributos: | polygon/enable                     |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
 
 
-|                  |                                                    |
+| Propiedad | Value |
 |------------------|----------------------------------------------------|
-| Descripción:     | Patrón punteado de polígono                            |
-| Grupo de atributos: | Polígono-punteado                                    |
+| Descripción:     | Patrón detippla de polígono                            |
+| Grupo de atributos: | polygon-stipple                                    |
 | Valor inicial:   | 1                                                |
-| Obtener comando:     | [**glGetPolygonStipple**](glgetpolygonstipple.md) |
+| Comando Get:     | [**glGetPolygonStipple**](glgetpolygonstipple.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

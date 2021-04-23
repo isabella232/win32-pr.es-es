@@ -1,45 +1,45 @@
 ---
-description: El elemento Group define un grupo, el objeto de nivel superior en una escala de tiempo.
+description: El elemento group define un grupo, el objeto de nivel superior en una escala de tiempo.
 ms.assetid: db2f1fdd-bcb1-4401-91f4-5e167e4da215
-title: Elemento Group (DirectShow)
+title: elemento group (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0b8146586d93a53093a68bb1abc08e85c52f14
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 31502cef89c8383e935f409d76b9e31ca53a2da1
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997992"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909253"
 ---
-# <a name="group-element"></a>Elemento Group
+# <a name="group-element"></a>group (Elemento)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El elemento **Group** define un grupo, el objeto de nivel superior en una escala de tiempo.
+El **elemento group** define un grupo, el objeto de nivel superior en una escala de tiempo.
 
 ## <a name="attributes"></a>Atributos
 
-[**bitdepth**](bitdepth-attribute.md), [**almacenamiento en búfer**](buffering-attribute.md), [**velocidad de fotogramas**](framerate-attribute.md), [**alto**](height-attribute.md), [**bloqueo**](lock-attribute.md), [**silencio**](mute-attribute.md), [**nombre**](name-attribute.md), [**previewmode**](previewmode-attribute.md), [**Samplingrate**](samplingrate-attribute.md), [**tipo**](type-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**nombre de usuario**](username-attribute.md), [**ancho**](width-attribute.md)
+[**bitdepth,**](bitdepth-attribute.md) [**buffering**](buffering-attribute.md), [**framerate**](framerate-attribute.md), [**height**](height-attribute.md), [**lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**name**](name-attribute.md), [**previewmode**](previewmode-attribute.md), [**samplingrate**](samplingrate-attribute.md), [**type**](type-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md), [**width**](width-attribute.md)
 
 ## <a name="parentchild-information"></a>Información de elementos primarios y secundarios
 
 
 
-|          |                                                                                                          |
+| Etiqueta | Value |
 |----------|----------------------------------------------------------------------------------------------------------|
-| Parent   | [**marco**](timeline-element.md)                                                                     |
-| Children | [**compuesto**](composite-element.md), [**efecto**](effect-element.md), [**seguimiento**](track-element.md) |
+| Parent   | [**línea de tiempo**](timeline-element.md)                                                                     |
+| Children | [**compuesto**](composite-element.md), [**efecto**](effect-element.md), [**pista**](track-element.md) |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dentro de un `group` elemento, la prioridad de las capas anidadas viene determinada implícitamente por el orden en que aparecen dentro del elemento. La primera capa tiene prioridad 0 y las capas siguientes tienen valores de prioridad crecientes.
+Dentro de `group` un elemento, la prioridad de las capas anidadas se determina implícitamente por el orden en que aparecen dentro del elemento. La primera capa tiene prioridad 0 y las capas posteriores tienen valores de prioridad crecientes.
 
 ## <a name="examples"></a>Ejemplos
 

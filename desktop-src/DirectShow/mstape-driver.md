@@ -4,50 +4,50 @@ ms.assetid: aa59f322-09b1-4b0a-be6f-d865c20f76e5
 title: Controlador MSTape
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14f37e22c26866fca9519219d358e9733fb56151
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 951084f8827f925bba43028c0792736883d5ff0f
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906335"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909403"
 ---
 # <a name="mstape-driver"></a>Controlador MSTape
 
-Este tema se aplica a Windows XP o posterior.
+Este tema se aplica a Windows XP o versiones posteriores.
 
-El controlador MSTape admite dispositivos de vídeo D-VHS y MPEG camcorder. Se expone a las aplicaciones como el filtro de [captura de vídeo WDM](wdm-video-capture-filter.md) . Su funcionalidad es similar a la de [MSDV](msdv-driver.md), el controlador de videocámara DV:
+El controlador MSTape admite dispositivos D-VHS y MPEG. Se expone a las aplicaciones como filtro [de captura de vídeo de WDM.](wdm-video-capture-filter.md) Su funcionalidad es similar a la de [MSDV,](msdv-driver.md)el controlador de cámara dv:
 
--   Aparece en las categorías de filtro "orígenes de captura de vídeo" (CLSID \_ VideoInputDeviceCategory) y "dispositivos de representación de transmisión por secuencias WDM" ( \_ KSCATEGORY \_ representar).
--   Una aplicación puede crear una instancia del filtro mediante la interfaz [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) .
--   Tiene un PIN de salida para la captura y el transporte desde el dispositivo y un PIN de entrada para el transporte al dispositivo. Solo se puede conectar un PIN a la vez.
+-   Aparece en las categorías de filtro "Orígenes de captura de vídeo" (CLSID VideoInputDeviceCategory) y "Dispositivos de representación de streaming de \_ WDM" (AM \_ KSCATEGORY \_ RENDER).
+-   Una aplicación puede crear una instancia del filtro mediante la [**interfaz ICreateDevEnum.**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum)
+-   Tiene un pin de salida para la captura y el transporte desde el dispositivo, y un pin de entrada para el transporte al dispositivo. Solo se puede conectar un pin a la vez.
 
 **Tipos de medios**
 
-El PIN de entrada admite un tipo de medio.
+La patilla de entrada admite un tipo de medio.
 
 
 
-|              |                                                            |
+| Etiqueta | Value |
 |--------------|------------------------------------------------------------|
-| Tipo principal   | \_Secuencia MEDIATYPE                                          |
-| Subtype      | \_Intervalo de \_ transporte de MPEG2 de MEDIASUBTYPE \_                     |
+| Tipo principal   | Secuencia \_ MEDIATYPE                                          |
+| Subtype      | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE                     |
 | Tamaño de muestra  | 192 x 256                                                  |
-| Bloque de formato | [**\_Intervalo de transporte de MPEG2 \_**](mpeg2-transport-stride.md) |
+| Bloque de formato | [**MPEG2 \_ TRANSPORT \_ STRIDE**](mpeg2-transport-stride.md) |
 
 
 
  
 
-El PIN de salida admite dos tipos de medios.
+El pin de salida admite dos tipos de medios.
 
 
 
-|              |                                        |
+| Etiqueta | Value |
 |--------------|----------------------------------------|
-| Tipo principal   | \_Secuencia MEDIATYPE                      |
-| Subtype      | \_Intervalo de \_ transporte de MPEG2 de MEDIASUBTYPE \_ |
+| Tipo principal   | Secuencia \_ MEDIATYPE                      |
+| Subtype      | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE |
 | Tamaño de muestra  | 192 x 256                              |
-| Bloque de formato | \_Intervalo de transporte de MPEG2 \_               |
+| Bloque de formato | MPEG2 \_ TRANSPORT \_ STRIDE               |
 
 
 
@@ -55,10 +55,10 @@ El PIN de salida admite dos tipos de medios.
 
 
 
-|              |                                        |
+| Etiqueta | Value |
 |--------------|----------------------------------------|
-| Tipo principal   | \_Secuencia MEDIATYPE                      |
-| Subtype      | \_Intervalo de \_ transporte de MPEG2 de MEDIASUBTYPE \_ |
+| Tipo principal   | Secuencia \_ MEDIATYPE                      |
+| Subtype      | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE |
 | Tamaño de muestra  | 188 x 256                              |
 | Bloque de formato | **NULL**                               |
 
@@ -68,31 +68,31 @@ El PIN de salida admite dos tipos de medios.
 
 **Información del dispositivo**
 
-El controlador Lee dinámicamente la información del ROM de configuración del dispositivo. La aplicación puede recuperar esta información enlazando el moniker del dispositivo a un contenedor de propiedades y llamando al método **IPropertyBag:: Read** .
+El controlador lee dinámicamente información de la ROM de configuración del dispositivo. La aplicación puede recuperar esta información enlazando el moniker de dispositivo a un bolsa de propiedades y llamando al **método IPropertyBag::Read.**
 
 
 
 | Propiedad            | Descripción                                                                                                                                                                         | Tipo de datos           |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| UniqueID \_ bajo       | IDENTIFICADOR único del dispositivo ( **DWORD** inferior).                                                                                                                                            | **Long** (VT \_ I4)   |
-| UniqueID \_ alto      | IDENTIFICADOR único del dispositivo ( **DWORD** alto)                                                                                                                                            | **long**            |
-| VendorID            | IDENTIFICADOR del proveedor.                                                                                                                                                                          | **long**            |
+| UniqueID \_ Low       | Identificador único del dispositivo **(DWORD bajo).**                                                                                                                                            | **long** (VT \_ I4)   |
+| UniqueID \_ High      | Identificador único del dispositivo **(DWORD alto)**                                                                                                                                            | **long**            |
+| VendorID            | Id. de proveedor.                                                                                                                                                                          | **long**            |
 | ModelID             | Identificador del modelo.                                                                                                                                                                           | **long**            |
 | VendorText          | Nombre del proveedor.                                                                                                                                                                        | **BSTR** (VT \_ BSTR) |
-| ModelText           | Nombre del modelo de dispositivo.                                                                                                                                                                  | **UTILICEN**            |
-| UnitModelText       | Nombre del modelo de unidad; puede ser igual que ModelText.                                                                                                                                      | **UTILICEN**            |
-| DeviceOPcr0Payload  | carga de oPCR (control de conector de salida). Ejemplo: 146 quadlets.                                                                                                                          | **long**            |
-| DeviceOPcr0DataRate | velocidad de datos oPCR. Ejemplos: 0 (S100), 1 (S200) o 2 (S400).                                                                                                                          | **long**            |
-| DeviceClassGUID     | GUID que identifica el controlador de dispositivo. En el caso de MSTape, este valor es `{8C0F6AF2-0EDB-44C1-8AEB-59040BD830ED}` . Este GUID se define como MSTapeDeviceGUID en el archivo de encabezado Xprtdefs. h. | **UTILICEN**            |
-| Descripción         | Descripción del dispositivo, tomada del archivo INF. Esta cadena normalmente contiene el nombre de marca del dispositivo.                                                                    | **UTILICEN**            |
+| ModelText           | Nombre del modelo de dispositivo.                                                                                                                                                                  | **Bstr**            |
+| UnitModelText       | Nombre del modelo de unidad; puede ser igual que ModelText.                                                                                                                                      | **Bstr**            |
+| DeviceOPcr0Payload  | Carga útil de oPCR (Output Plug Control). Ejemplo: 146 cuádlets.                                                                                                                          | **long**            |
+| DeviceOPcr0DataRate | Velocidad de datos de oPCR. Ejemplos: 0 (S100), 1 (S200) o 2 (S400).                                                                                                                          | **long**            |
+| DeviceClassGUID     | GUID que identifica el controlador del dispositivo. Para MSTape, este valor es `{8C0F6AF2-0EDB-44C1-8AEB-59040BD830ED}` . Este GUID se define como MSTapeDeviceGUID en el archivo de encabezado Xprtdefs.h. | **Bstr**            |
+| Descripción         | Descripción del dispositivo, tomada del archivo INF. Esta cadena normalmente contiene el nombre de marca del dispositivo.                                                                    | **Bstr**            |
 
 
 
  
 
-El identificador de dispositivo es un entero de 64 bits. El **valor DWORD** inferior se almacena en la \_ propiedad UniqueID Low y el **valor DWORD** superior se almacena en la \_ propiedad UniqueID High.
+El identificador de dispositivo es un entero de 64 bits. El **DWORD bajo se** almacena en la propiedad UniqueID Low y el DWORD alto se almacena \_ en la propiedad UniqueID  \_ High.
 
-Para obtener más información acerca de los monikers de dispositivo, consulte [usar el enumerador de dispositivos del sistema](using-the-system-device-enumerator.md).
+Para obtener más información sobre los monikers de dispositivo, [vea Usar el enumerador de dispositivos del sistema](using-the-system-device-enumerator.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -101,7 +101,7 @@ Para obtener más información acerca de los monikers de dispositivo, consulte [
 [Filtros de DirectShow](directshow-filters.md)
 </dt> <dt>
 
-[Control de una videocámara DV](controlling-a-dv-camcorder.md)
+[Control de una cámara dv](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

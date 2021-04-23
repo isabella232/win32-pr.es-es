@@ -1,9 +1,9 @@
 ---
-title: Variables de estado de Implementation-Dependent
-description: Variables de estado de Implementation-Dependent
+title: Implementation-Dependent variables de estado
+description: Implementation-Dependent variables de estado
 ms.assetid: 6778b50c-a6ac-4106-9dd6-3a123c257687
 keywords:
-- Variables de estado de Implementation-Dependent OpenGL
+- Implementation-Dependent State Variables OpenGL
 topic_type:
 - apiref
 api_name:
@@ -12,306 +12,306 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afb42c13765678218efcaf58f2b02a01d2f0e160
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 645702c9ea91f21d0e3bce5233b8014fd8f86859
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076764"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909883"
 ---
-# <a name="implementation-dependent-state-variables"></a>Variables de estado de Implementation-Dependent
+# <a name="implementation-dependent-state-variables"></a>Implementation-Dependent variables de estado
 
-<dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>\_luces máximas de GL \_</dt> <dd> 
+<dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>GL \_ MAX \_ LIGHTS</dt> <dd> 
 
-|                  |                                        |
+| Propiedad | Value |
 |------------------|----------------------------------------|
 | Descripción:     | Número máximo de luces               |
 | Grupo de atributos: |                                        |
 | Valor inicial:   | 8                                      |
-| Obtener comando:     | [**glGetIntegerv**](glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_CLIP_PLANES"></span><span id="gl_max_clip_planes"></span>\_planos de \_ recortes Max de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_CLIP_PLANES"></span><span id="gl_max_clip_planes"></span>GL \_ MAX \_ CLIP \_ PLANES</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Número máximo de planos de recorte de usuarios                                           |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 6                                                                                |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_MODELVIEW_STACK_DEPTH"></span><span id="gl_max_modelview_stack_depth"></span>\_profundidad máxima de la \_ \_ pila MODELVIEW \_ de GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_MODELVIEW_STACK_DEPTH"></span><span id="gl_max_modelview_stack_depth"></span>PROFUNDIDAD DE PILA DE GL \_ MAX \_ MODELVIEW \_ \_</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Profundidad máxima de la pila MODELVIEW                                             |
+| Descripción:     | Profundidad máxima de la pila modelview-matrix                                             |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 32                                                                               |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_PROJECTION_STACK_DEPTH"></span><span id="gl_max_projection_stack_depth"></span>\_profundidad máxima de la \_ pila de proyección de \_ GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_PROJECTION_STACK_DEPTH"></span><span id="gl_max_projection_stack_depth"></span>PROFUNDIDAD \_ DE PILA DE \_ \_ PROYECCIÓN MÁXIMA \_ DE GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Profundidad máxima de la pila de la matriz de proyección                                            |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 2                                                                                |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_TEXTURE_STACK_DEPTH"></span><span id="gl_max_texture_stack_depth"></span>\_profundidad máxima de la \_ pila de textura de \_ GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_TEXTURE_STACK_DEPTH"></span><span id="gl_max_texture_stack_depth"></span>PROFUNDIDAD \_ DE LA PILA DE TEXTURA MÁXIMA \_ \_ \_ DE GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Profundidad máxima de la pila de la matriz de textura                                            |
+| Descripción:     | Profundidad máxima de la pila de matriz de textura                                            |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 2                                                                                |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SUBPIXEL_BITS"></span><span id="gl_subpixel_bits"></span>\_bits de SUBpíxeles de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_SUBPIXEL_BITS"></span><span id="gl_subpixel_bits"></span>BITS \_ DE SUBPIXEL DE GL \_</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Número de bits de precisión de subpíxeles en *x*   e *y*                              |
+| Descripción:     | Número de bits de precisión de subpixel en *x* e *y*                              |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 4                                                                                |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_TEXTURE_SIZE"></span><span id="gl_max_texture_size"></span>\_tamaño máximo de \_ textura \_ de GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_TEXTURE_SIZE"></span><span id="gl_max_texture_size"></span>GL \_ MAX \_ TEXTURE \_ SIZE</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Alto o ancho máximo de una imagen de textura (sin bordes)                     |
+| Descripción:     | Alto máximo o ancho de una imagen de textura (sin bordes)                     |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 64                                                                               |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>\_tabla de \_ mapa de píxeles Max \_ de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>TABLA \_ DE MAPA DE \_ \_ PÍXELES MÁXIMO \_ DE GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Tamaño máximo de una tabla de traducción de **glPixelMap**                               |
+| Descripción:     | Tamaño máximo de una **tabla de traducción glPixelMap**                               |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 32                                                                               |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_NAME_STACK_DEPTH"></span><span id="gl_max_name_stack_depth"></span>\_profundidad máxima de la \_ pila de nombres de \_ GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_NAME_STACK_DEPTH"></span><span id="gl_max_name_stack_depth"></span>GL \_ MAX \_ NAME \_ STACK \_ DEPTH</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Selección máxima: profundidad de la pila de nombres                                               |
+| Descripción:     | Profundidad de pila de nombre de selección máxima                                               |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 64                                                                               |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_anidamiento de \_ lista \_ Max de GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_ANIDAMIENTO DE \_ LISTAS \_ MÁXIMAS DE GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Anidamiento de llamadas de lista de visualización máxima                                                |
+| Descripción:     | Anidamiento máximo de llamadas de lista de visualización                                                |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 64                                                                               |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_EVAL_ORDER"></span><span id="gl_max_eval_order"></span>\_orden de \_ evaluación \_ Max de GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_EVAL_ORDER"></span><span id="gl_max_eval_order"></span>GL \_ MAX \_ EVAL \_ ORDER</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Orden Polinómico de evaluador máximo                                               |
+| Descripción:     | Orden polinómico máximo del evaluador                                               |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 8                                                                                |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_VIEWPORT_DIMS"></span><span id="gl_max_viewport_dims"></span>la \_ ventanilla Max de GL está \_ \_ atenuada</dt> <dd> 
+</dd> <dt><span id="GL_MAX_VIEWPORT_DIMS"></span><span id="gl_max_viewport_dims"></span>GL \_ MAX \_ VIEWPORT \_ DIMS</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Dimensiones máximas de la ventanilla                                                      |
+| Descripción:     | Dimensiones máximas de ventanilla                                                      |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAX_ATTRIB_STACK_DEPTH"></span><span id="gl_max_attrib_stack_depth"></span>\_profundidad máxima de la \_ \_ pila atrib \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_ATTRIB_STACK_DEPTH"></span><span id="gl_max_attrib_stack_depth"></span>PROFUNDIDAD DE PILA DE GL \_ MAX \_ ATTRIB \_ \_</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Profundidad máxima de la pila de atributos                                             |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 16                                                                               |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>\_búferes auxiliares de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>BÚFERES \_ \_ AUXILIARES GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Número de búferes auxiliares                                                      |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 0                                                                                |
-| Obtener comando:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_RGBA_MODE"></span><span id="gl_rgba_mode"></span>\_modo RGBA de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_RGBA_MODE"></span><span id="gl_rgba_mode"></span>MODO \_ RGBA \_ GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | True si los búferes de color almacenan RGBA                                                 |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
-| Obtener comando:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>\_modo de índice de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODO \_ DE ÍNDICE \_ GL</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | True si los búferes de color almacenan índices                                              |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
-| Obtener comando:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_DOUBLEBUFFER"></span><span id="gl_doublebuffer"></span>GL \_ DOUBLEBUFFER</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | True si existen búferes Front y back                                             |
+| Descripción:     | True si existen búferes front-and-back                                             |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
-| Obtener comando:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_STEREO"></span><span id="gl_stereo"></span>estéreo de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_STEREO"></span><span id="gl_stereo"></span>GL \_ STEREO</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | True si existen los búferes izquierdo y derecho                                           |
+| Descripción:     | True si existen búferes izquierdos y derecho                                           |
 | Grupo de atributos: |                                                                                |
 | Valor inicial:   |                                                                                |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>\_intervalo de \_ tamaño de punto de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>INTERVALO DE \_ TAMAÑO DE PUNTO DE \_ \_ GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Intervalo (de baja a alta) de tamaños de punto con suavizado                                 |
+| Descripción:     | Intervalo (de bajo a alto) de tamaños de punto suavizado de contorno                                 |
 | Grupo de atributos: |                                                                                |
-| Valor inicial:   | 1,1                                                                           |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | 1, 1                                                                           |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>\_granularidad de \_ tamaño de punto de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>GRANULARIDAD \_ DE TAMAÑO DE PUNTO DE \_ \_ GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Granularidad de tamaño de punto de suavizado                                             |
-| Grupo de atributos: |                                                                                |
-| Valor inicial:   |                                                                                |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
-
-
-
- 
-
-</dd> <dt><span id="GL_LINE_WIDTH_RANGE"></span><span id="gl_line_width_range"></span>\_rango de \_ ancho de línea de contabilidad \_</dt> <dd> 
-
-|                  |                                                                                |
-|------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Intervalo (de baja a alta) de ancho de línea con suavizado de contorno                                 |
-| Grupo de atributos: |                                                                                |
-| Valor inicial:   | 1,1                                                                           |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
-
-
-
- 
-
-</dd> <dt><span id="GL_LINE_WIDTH_GRANULARITY"></span><span id="gl_line_width_granularity"></span>\_granularidad de \_ ancho de línea de contabilidad \_</dt> <dd> 
-
-|                  |                                                                                |
-|------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Granularidad de ancho de línea antialias                                             |
+| Descripción:     | Granularidad del tamaño de punto suavizado                                             |
 | Grupo de atributos: |                                                                                |
 | Valor inicial:   |                                                                                |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
+
+</dd> <dt><span id="GL_LINE_WIDTH_RANGE"></span><span id="gl_line_width_range"></span>INTERVALO DE \_ ANCHO DE LÍNEA DE \_ \_ GL</dt> <dd> 
+
+| Propiedad | Value |
+|------------------|--------------------------------------------------------------------------------|
+| Descripción:     | Intervalo (bajo a alto) de anchos de línea suavizados                                 |
+| Grupo de atributos: |                                                                                |
+| Valor inicial:   | 1, 1                                                                           |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+
+
+
+ 
+
+</dd> <dt><span id="GL_LINE_WIDTH_GRANULARITY"></span><span id="gl_line_width_granularity"></span>GRANULARIDAD \_ DE ANCHO DE LÍNEA DE \_ \_ GL</dt> <dd> 
+
+| Propiedad | Value |
+|------------------|--------------------------------------------------------------------------------|
+| Descripción:     | Granularidad del ancho de línea suavizado                                             |
+| Grupo de atributos: |                                                                                |
+| Valor inicial:   |                                                                                |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+
+
+
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

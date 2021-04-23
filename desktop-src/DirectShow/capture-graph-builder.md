@@ -1,23 +1,23 @@
 ---
-description: Generador de gráficos de captura
+description: Capture Graph Builder
 ms.assetid: df59afcf-6e11-463f-80ac-8b1fcc496d5b
-title: Generador de gráficos de captura
+title: Capture Graph Builder
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b268a3a455981027f714b89ba8791e6c3df5164b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1c94ef389ab7183ba44e3296e70cf3459c67ef1e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422821"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910203"
 ---
-# <a name="capture-graph-builder"></a>Generador de gráficos de captura
+# <a name="capture-graph-builder"></a>Capture Graph Builder
 
-El generador de gráficos de captura es un objeto auxiliar para crear gráficos de captura de vídeo y audio. Las aplicaciones de captura y edición pueden utilizar este componente para construir gráficos de filtro. Cree este objeto llamando a **CoCreateInstance**.
+Capture Graph Builder es un objeto auxiliar para crear gráficos de captura de audio y vídeo. Las aplicaciones de captura y edición pueden usar este componente para construir gráficos de filtro. Cree este objeto mediante una llamada **a CoCreateInstance**.
 
 
 
-|                  |                                                        |
+| Etiqueta | Value |
 |------------------|--------------------------------------------------------|
 | Identificador de clase | CLSID \_ CaptureGraphBuilder2                            |
 | Interfaces       | [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) |
@@ -33,7 +33,7 @@ El generador de gráficos de captura es un objeto auxiliar para crear gráficos 
 [Captura de audio](audio-capture.md)
 </dt> <dt>
 
-[Objetos de DirectShow](directshow-objects.md)
+[Objetos DirectShow](directshow-objects.md)
 </dt> <dt>
 
 [Captura de vídeo](video-capture.md)

@@ -1,68 +1,68 @@
 ---
-description: Filtro de divisor de AVI
+description: Filtro divisor avi
 ms.assetid: df3c7d11-7ecc-499a-af36-b74437e21999
-title: Filtro de divisor de AVI
+title: Filtro de divisor AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e61b9a60c4c42aafa875c166ae08ccdf337793c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 24335511e9b7b866c85792c2036a4d4b6d089f2a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152602"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909663"
 ---
-# <a name="avi-splitter-filter"></a>Filtro de divisor de AVI
+# <a name="avi-splitter-filter"></a>Filtro de divisor AVI
 
-El filtro de divisor de AVI se usa para la reproducción de archivos AVI. Acepta los datos en formato AVI y los divide en sus flujos constituyentes para su procesamiento y/o representación.
+El filtro divisor de AVI se usa para la reproducción de archivos AVI. Acepta datos en formato AVI y los divide en sus flujos constituyentes para su posterior procesamiento o representación.
 
 
 
-|                                          |                                                                                                                                                                     |
+| Etiqueta | Value |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interfaces de filtro                        | [**IAMMediaContent**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IPersistMediaPropertyBag**](/windows/desktop/api/Strmif/nn-strmif-ipersistmediapropertybag)                        |
-| Tipos de medios de anclaje de entrada                    | \_Secuencia MEDIATYPE, MEDIASUBTYPE \_ AVI                                                                                                                                |
-| Interfaces de PIN de entrada                     | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [ **IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                    |
-| Tipos de medios de anclaje de salida                   | Normalmente **, \_ vídeo** o **\_ audio de mediatype**. El tipo exacto depende del contenido del archivo, si el archivo está comprimido y qué códec se ha usado. |
-| Interfaces de clavija de salida                    | [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), IPropertyBag, [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)    |
-| Identificador CLSID                             | CLSID \_ AviSplitter                                                                                                                                                  |
-| CLSID de la página de propiedades                      | Ninguna página de propiedades.                                                                                                                                                   |
+| Interfaces de filtro                        | [**IAMMediaContent,**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent) [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IPersistMediaPropertyBag**](/windows/desktop/api/Strmif/nn-strmif-ipersistmediapropertybag)                        |
+| Tipos de medios de pin de entrada                    | MEDIATYPE \_ Stream, MEDIASUBTYPE \_ Avi                                                                                                                                |
+| Interfaces de pin de entrada                     | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [ **IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                    |
+| Tipos de medios de pin de salida                   | Normalmente, **vídeo MEDIATYPE \_** o **\_ audio MEDIATYPE**. El tipo exacto depende del contenido del archivo, de si el archivo está comprimido y del códec que se usó. |
+| Interfaces de pin de salida                    | [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin)IPropertyBag, [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)    |
+| Filtrar CLSID                             | CLSID \_ AviSplitter                                                                                                                                                  |
+| CLSID de la página de propiedades                      | No hay ninguna página de propiedades.                                                                                                                                                   |
 | Executable                               | quartz.dll                                                                                                                                                          |
-| [Fundament](merit.md)                       | MÉRITO \_ normal                                                                                                                                                       |
+| [Mérito](merit.md)                       | PROCEDIMIENTO \_ NORMAL                                                                                                                                                       |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este filtro se conecta normalmente al filtro de [origen de archivo asincrónico](file-source--async--filter.md) en su PIN de entrada. Puede conectarse a cualquier filtro cuyo PIN de salida admita [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) y ofrezca el tipo de medio correcto al pin de entrada del filtro de divisor de AVI.
+Este filtro normalmente está conectado al filtro [Async File Source](file-source--async--filter.md) (Origen de archivo asincrónico) en su pin de entrada. Puede conectarse a cualquier filtro cuyo pin de salida admita [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) y ofrece el tipo de medio correcto al pin de entrada del filtro del divisor AVI.
 
-Los pin de salida del divisor de AVI admiten el método IPropertyBag:: Read para leer propiedades de flujos individuales. Actualmente, se define la propiedad siguiente.
+Los pines de salida del divisor AVI admiten el método IPropertyBag::Read para leer propiedades de secuencias individuales. Actualmente, se define la siguiente propiedad.
 
 
 
 | Propiedad | Descripción                                                                                                                                    |
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| name     | Devuelve el nombre de la secuencia, tomada del `'strn'` fragmento en el archivo AVI. Si este fragmento está ausente, el método Read devuelve E \_ INVALIDARG. |
+| name     | Devuelve el nombre de la secuencia, tomado del `'strn'` fragmento del archivo AVI. Si este fragmento no está presente, el método Read devuelve E \_ INVALIDARG. |
 
 
 
  
 
-El método IPropertyBag:: Write devuelve E \_ Fail. El filtro de [AVI MUX](avi-mux-filter.md) admite IPropertyBag:: Write para guardar las propiedades de la secuencia en un archivo AVI.
+El método IPropertyBag::Write devuelve E \_ FAIL. El [filtro AVI Mux](avi-mux-filter.md) admite IPropertyBag::Write para guardar las propiedades de flujo en un archivo AVI.
 
-El divisor de AVI no permite que los filtros de nivel inferior utilicen su propio asignador.
+El divisor AVI no permite que los filtros de nivel inferior usen su propio asignador.
 
-La duración de intercalación en el archivo determina la cantidad de memoria que el divisor de AVI asignará para procesarla. Un archivo intercalado en fragmentos de un segundo requerirá mucha más memoria para procesarse que un archivo cuya duración de intercalación está establecida en uno o dos fotogramas. En los equipos modernos, este no suele ser un problema, a menos que se ejecuten varias instancias del divisor de AVI simultáneamente.
+La duración de intercalación en el archivo determina la cantidad de memoria que asignará el divisor AVI para procesarlo. Un archivo intercalado en fragmentos de un segundo requerirá mucho más memoria para procesar que un archivo cuya duración de intercalación se establece en uno o dos fotogramas. En equipos modernos, esto no suele ser un problema a menos que ejecute varias instancias del divisor AVI simultáneamente.
 
-### <a name="seeking"></a>Invoca
+### <a name="seeking"></a>Buscando
 
-Si el archivo contiene una secuencia de vídeo, el divisor de AVI admite búsquedas por número de fotogramas. Para habilitar la búsqueda basada en fotogramas, llame a [**IMediaSeeking:: SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el [Administrador de gráficos de filtro](filter-graph-manager.md) con el **\_ \_ marco de formato de hora** de valor.
+Si el archivo contiene una secuencia de vídeo, el divisor AVI admite la búsqueda por número de fotograma. Para habilitar la búsqueda basada en fotogramas, llame a [**IMediaSeeking::SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el Administrador de [gráficos](filter-graph-manager.md) de filtros con el valor **TIME FORMAT \_ \_ FRAME**.
 
-Si el archivo contiene una secuencia de audio, el divisor de AVI admite búsquedas por número de muestra. Para habilitar la búsqueda basada en el ejemplo, llame a [**SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el administrador de gráficos de filtro con el **ejemplo de \_ formato \_ de hora** de valor.
+Si el archivo contiene una secuencia de audio, el divisor AVI admite la búsqueda por número de ejemplo. Para habilitar la búsqueda basada en muestras, llame [**a SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el Administrador de gráficos de filtros con el valor **TIME FORMAT \_ \_ SAMPLE**.
 
-En ambos casos, el PIN de salida de esa secuencia debe estar conectado a un filtro de representador.
+En ambos casos, la patilla de salida de esa secuencia debe estar conectada a un filtro de representador.
 
 ## <a name="related-topics"></a>Temas relacionados
 

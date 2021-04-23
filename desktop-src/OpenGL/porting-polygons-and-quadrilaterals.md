@@ -1,52 +1,52 @@
 ---
-title: Trasladar polígonos y Quadrilaterals
-description: Tenga en cuenta los siguientes puntos al trasladar polígonos y quadrilaterals
+title: Porte de polígonos y cuadráteros
+description: Tenga en cuenta los siguientes puntos al porte de polígonos y cuadráteros.
 ms.assetid: 2b752437-caf9-4336-a906-d06b2aa8bb04
 keywords:
-- Migración de la contabilidad de IRIS, quadrilaterals
-- portabilidad de IRIS GL, quadrilaterals
-- migración a OpenGL desde IRIS GL, quadrilaterals
-- Exportación de OpenGL desde IRIS GL, quadrilaterals
-- funciones de dibujo, quadrilaterals
-- quadrilaterals
-- Migración de la contabilidad de IRIS, polígonos
-- portabilidad de IRIS GL, polígonos
-- trasladar a OpenGL desde IRIS GL, polígonos
-- Exportación de OpenGL desde IRIS GL, polígonos
-- dibujar funciones, polígonos
-- polígonos, portabilidad de IRIS GL
+- Porte de IRIS GL, cuadriláteros
+- porting from IRIS GL,quadriteros
+- porte a OpenGL desde IRIS GL, cuadriteros
+- Porte de OpenGL desde IRIS GL, cuadriteros
+- funciones de dibujo, cuadriláteros
+- Cuadriláteros
+- Porte de IRIS GL, polígonos
+- porting from IRIS GL,polygons
+- porte a OpenGL desde IRIS GL, polygons
+- Porte de OpenGL desde IRIS GL,polygons
+- funciones de dibujo, polígonos
+- polygons,porting from IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c95d654b101c5eeb86cfcc4ea342e8196b8749e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7900b44051cab9590be11198c8b01af0b7c10244
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778037"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908463"
 ---
-# <a name="porting-polygons-and-quadrilaterals"></a>Trasladar polígonos y Quadrilaterals
+# <a name="porting-polygons-and-quadrilaterals"></a>Porte de polígonos y cuadráteros
 
-Tenga en cuenta los siguientes puntos al trasladar polígonos y quadrilaterals:
+Tenga en cuenta los siguientes puntos al porte de polígonos y cuadráteros:
 
--   No hay ningún equivalente directo para **cóncava**(**true**). En su lugar, puede usar las rutinas de teselación en GLU, que se describen en [polígonos de teselar](tessellating-polygons.md).
--   Los modos de polígono se establecen de manera diferente.
--   Estas funciones de dibujo de polígonos no tienen equivalentes directos en OpenGL **: la familia** de rutinas. familia **POLF** de rutinas; **PMV**, **PDR** y **PCLOS**; **rpmv** y **rpdr**; **SPLF**; y **spclos**.
+-   No hay ningún equivalente directo para **cóncavo****(TRUE).** En su lugar, puede usar las rutinas de teselación en GLU, descritas en [Tessellating Polygons ( Polígonos de teselación).](tessellating-polygons.md)
+-   Los modos de polígono se establecen de forma diferente.
+-   Estas funciones de dibujo de polígono no tienen equivalentes directos en OpenGL: la **familia poly** de rutinas; la **familia de rutinas polf;** **pmv**, **pdr** y **pclos**; **rpmv** y **rpdr**; **splf**; y **spclos**.
 
-Si el código de la contabilidad de IRIS usa estas funciones, tendrá que volver a escribir el código mediante [**glBegin**](glbegin.md)(GL \_ Polygon).
+Si el código GL de IRIS usa estas funciones, tendrá que volver a escribir el código mediante [**glBegin**](glbegin.md) \_ (GL POLYGON).
 
-En la tabla siguiente se enumeran las funciones de dibujo de polígono GL de IRIS y sus funciones de OpenGL equivalentes.
+En la tabla siguiente se enumeran las funciones de dibujo de polígonos IRIS GL y sus funciones OpenGL equivalentes.
 
 
 
-| Función de GL de IRIS         | Función OpenGL                                                    | Significado                                                 |
+| Función IRIS GL         | Función OpenGL                                                    | Significado                                                 |
 |--------------------------|--------------------------------------------------------------------|---------------------------------------------------------|
-| **bgnpolygonendpolygon** | [**glBegin**](glbegin.md) (GL \_ polígono)[**glEnd**](glend.md)   | Los vértices definen el límite de un polígono convexo simple.    |
-|                          | **glBegin**(GL \_ cuádruples)**glEnd**<br/>                       | Interpreta cuadruplican de los vértices como quadrilaterals.    |
-| **bgnqstripendqstrip**   | [**glBegin**](glbegin.md) (GL \_ de \_ banda cuádruple)**glEnd**<br/> | Interpreta los vértices como franjas vinculadas de quadrilaterals. |
+| **bgnpolygonendpolygon** | [**glBegin**](glbegin.md) ( GL \_ POLYGON )[**glEnd**](glend.md)   | Los vértices definen el límite de un polígono convexa simple.    |
+|                          | **glBegin**(GL \_ QUADS )**glEnd**<br/>                       | Interpreta los vértices de los vértices como cuadrículos.    |
+| **bgnqstripendqstrip**   | [**glBegin**](glbegin.md) ( GL \_ QUAD STRIP ) \_ **glEnd**<br/> | Interpreta los vértices como franjas vinculadas de cuadrículos. |
 |                          | [glEdgeFlag](gledgeflag-functions.md)                             |                                                         |
-| **Polimoda**             | [**glPolygonMode**](glpolygonmode.md)                             | Establece el modo de dibujo de polígono.                              |
+| **polymode**             | [**glPolygonMode**](glpolygonmode.md)                             | Establece el modo de dibujo de polígono.                              |
 | **rectrectf**<br/> | [glRect](glrect-functions.md)                                     | Dibuja un rectángulo.                                      |
-| **sboxsboxf**<br/> |                                                                    | Dibuja un rectángulo alineado en la pantalla.                       |
+| **sboxsboxf**<br/> |                                                                    | Dibuja un rectángulo alineado con la pantalla.                       |
 
 
 
@@ -54,71 +54,71 @@ En la tabla siguiente se enumeran las funciones de dibujo de polígono GL de IRI
 
 ??
 
-## <a name="porting-polygon-modes"></a>Trasladar modos de polígono
+## <a name="porting-polygon-modes"></a>Porte de modos de polígono
 
-La función [**glPolygonMode**](glpolygonmode.md) de OpenGL le permite especificar a qué lado de un polígono (hacia atrás o hacia delante) se aplica el modo. La sintaxis es:
+La función OpenGL [**glPolygonMode**](glpolygonmode.md) permite especificar a qué lado de un polígono (atrás o delante) se aplica el modo. La sintaxis es:
 
 ``` syntax
 void glPolygonMode( GLenum face, GLenum mode ); 
  
 ```
 
-donde la superficie es una de las siguientes:
+donde face es uno de los siguientes:
 
 
 
-|                      |                                                            |
+|Valor de GLenum                      |  Significado                                                          |
 |----------------------|------------------------------------------------------------|
-| frontal de GL \_            | modo que se aplica a los polígonos frontales                |
-| libro \_ de contabilidad             | el modo que se aplica a los polígonos de orientación                 |
-| \_anverso \_ y \_ atrás de GL | modo que se aplica a los polígonos frontal y hacia delante |
+| GL \_ FRONT            | modo que se aplica a los polígonos orientados al frente                |
+| GL \_ BACK             | modo que se aplica a los polígonos orientados hacia atrás                 |
+| GL \_ FRONT \_ AND \_ BACK | modo que se aplica a los polígonos orientados hacia delante y hacia atrás |
 
 
 
  
 
-El \_ modo frontal \_ y \_ trasero de contabilidad es equivalente a la función de **multimodo** de la contabilidad de iris. En la tabla siguiente se enumeran los modos de polígono de la contabilidad de IRIS y sus modos de OpenGL equivalentes.
+El modo FRONT AND BACK de GL \_ es equivalente a la función \_ \_ **polymode** DE IRIS GL. En la tabla siguiente se enumeran los modos de polígono IRIS GL y sus modos OpenGL equivalentes.
 
 
 
-| Modo de GL de IRIS | Modo OpenGL | Significado                                       |
+| Modo GL de IRIS | Modo OpenGL | Significado                                       |
 |--------------|-------------|-----------------------------------------------|
-| \_punto PYM   | punto de contabilidad \_   | Dibuja vértices como puntos.                     |
-| \_línea PYM    | línea de contabilidad \_    | Dibuja los bordes del límite como segmentos de línea.        |
-| relleno de PYM \_    | relleno de contabilidad \_    | Dibuja el interior del polígono relleno.                |
-| PYM \_ hueco  |             | Rellena solo los píxeles interiores en los límites. |
+| PYM \_ POINT   | GL \_ POINT   | Dibuja los vértices como puntos.                     |
+| LÍNEA \_ PYM    | LÍNEA \_ GL    | Dibuja los bordes de los límites como segmentos de línea.        |
+| PYM \_ FILL    | GL \_ FILL    | Dibuja relleno interior de polígono.                |
+| PYM \_ HOLLOW  |             | Rellena solo los píxeles interiores en los límites. |
 
 
 
  
 
-## <a name="porting-polygon-stipples"></a>Trasladar punteas de polígono
+## <a name="porting-polygon-stipples"></a>Porting Polygon PolygonPples
 
-Al migrar los elementos punteados de la contabilidad de IRIS, tenga en cuenta los puntos siguientes:
+Al portear polígonos IRIS GL, tenga en cuenta los siguientes puntos:
 
--   OpenGL no usa tablas para los punteados de polígonos; solo se mantiene un patrón punteado. Puede usar listas de visualización para almacenar diferentes patrones de punteado.
--   El tamaño del mapa de bits punteado de OpenGL es siempre un patrón de bits de 32x32.
--   La codificación en forma de punteado se ve afectada por [**glPixelStore**](glpixelstore-functions.md).
+-   OpenGL no usa tablas para polígonos de polígonos. solo se mantiene un patrón detippla. Puede usar listas para mostrar para almacenar diferentes patrones de información sobre la información.
+-   El tamaño del mapa de bits de latippla de polígono OpenGL siempre es un patrón de 32 x 32 bits.
+-   La codificación de stipple se ve afectada [**por glPixelStore.**](glpixelstore-functions.md)
 
-Para obtener más información sobre cómo trasladar a los polígonos, vea [portar las operaciones de píxeles](porting-pixel-operations.md).
+Para obtener más información sobre cómo portear polígonos, vea [Porting Pixel Operations](porting-pixel-operations.md).
 
-En la tabla siguiente se enumeran las funciones de los elementos punteados de IRIS GL y sus funciones de OpenGL equivalentes.
+En la tabla siguiente se enumeran las funciones detippla de polígono de IRIS GL y sus funciones OpenGL equivalentes.
 
 
 
-| Función de GL de IRIS | Función OpenGL                                    | Significado                                               |
+| Función IRIS GL | Función OpenGL                                    | Significado                                               |
 |------------------|----------------------------------------------------|-------------------------------------------------------|
-| **defpattern**   | [**glPolygonStipple**](glpolygonstipple.md)       | Establece el patrón punteado.                             |
-| **setpattern**   |                                                    | OpenGL solo mantiene un patrón punteado de polígono.        |
-| **GetPattern**   | [**glGetPolygonStipple**](glgetpolygonstipple.md) | Devuelve el mapa de bits punteado (que se usa para devolver un índice). |
+| **defpattern**   | [**glPolygonStipple**](glpolygonstipple.md)       | Establece el patrón detippla.                             |
+| **setpattern**   |                                                    | OpenGL mantiene solo un patrón detippla de polígono.        |
+| **getpattern**   | [**glGetPolygonStipple**](glgetpolygonstipple.md) | Devuelve el mapa de bits de stipple (que se usa para devolver un índice). |
 
 
 
  
 
-En OpenGL, puede habilitar y deshabilitar el punteado de polígono pasando GL \_ Polygon \_ punteada como un parámetro para [**glEnable**](glenable.md) y [**glDisable**](gldisable.md).
+En OpenGL, puede habilitar y deshabilitar el contrabando de polígonos pasando GL POLYGON STIPPLE como parámetro para \_ \_ [**glEnable**](glenable.md) y [**glDisable**](gldisable.md).
 
-El siguiente ejemplo de código OpenGL muestra el punteado de polígono:
+En el siguiente ejemplo de código OpenGL se muestra el contrabando de polígonos:
 
 
 ```C++
@@ -182,17 +182,17 @@ void display(void)
 
 
 
-## <a name="porting-tessellated-polygons"></a>Trasladar polígonos teselados
+## <a name="porting-tessellated-polygons"></a>Porte de polígonos teselados
 
-En IRIS GL, use **cóncava**(**true**) y, a continuación, **bgnpolygon** para dibujar polígonos cóncavos. OpenGL GLU incluye funciones que se pueden usar para dibujar polígonos cóncavos.
+En IRIS GL, se usa **cóncavo****(TRUE)** y, a continuación, **bgnpolygon** para dibujar polígonos cóncavos. OpenGL GLU incluye funciones que puede usar para dibujar polígonos cóncavos.
 
 **Para dibujar un polígono cóncavo con OpenGL**
 
 1.  Cree un objeto de teselación.
-2.  Defina devoluciones de llamada que se usarán para procesar los triángulos generados por del teselador.
+2.  Defina las devoluciones de llamada que se usarán para procesar los triángulos generados por el teselador.
 3.  Especifique el polígono cóncavo que se va a teselar.
 
-En la tabla siguiente se enumeran las funciones de OpenGL para dibujar polígonos teselados.
+En la tabla siguiente se enumeran las funciones OpenGL para dibujar polígonos teselados.
 
 
 
@@ -201,10 +201,10 @@ En la tabla siguiente se enumeran las funciones de OpenGL para dibujar polígono
 | [**gluNewTess**](glunewtess.md)           | Crea un nuevo objeto de teselación.                                 |
 | [**gluDeleteTess**](gludeletetess.md)     | Elimina un objeto de teselación.                                     |
 | [*gluTessCallback*](glutess.md)           |                                                                    |
-| [**gluBeginPolygon**](glubeginpolygon.md) | Comienza la especificación de polígono.                                  |
+| [**gluBeginPolygon**](glubeginpolygon.md) | Comienza la especificación del polígono.                                  |
 | [**gluTessVertex**](glutessvertex.md)     | Especifica un vértice de polígono en un contorno.                           |
 | [**gluNextContour**](glunextcontour.md)   | Indica que la siguiente serie de vértices describe un nuevo contorno. |
-| [**gluEndPolygon**](gluendpolygon.md)     | Finaliza la especificación de polígono.                                    |
+| [**gluEndPolygon**](gluendpolygon.md)     | Finaliza la especificación del polígono.                                    |
 
 
 

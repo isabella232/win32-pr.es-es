@@ -1,7 +1,7 @@
 ---
 description: El método DoGetWindowStyle recupera los estilos de ventana normales o extendidos actuales.
 ms.assetid: 1a854896-4bcb-49d0-92e4-40d1923712f9
-title: Método CBaseControlWindow. DoGetWindowStyle (Ctlutil. h)
+title: Método CBaseControlWindow.DoGetWindowStyle (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2667e4cbeef2d40bdc5bff8381ee3f07b3d0942f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d970ee52203c5c8dfe8a897c5612604becc2b2e1
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670849"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909823"
 ---
-# <a name="cbasecontrolwindowdogetwindowstyle-method"></a>CBaseControlWindow. DoGetWindowStyle, método
+# <a name="cbasecontrolwindowdogetwindowstyle-method"></a>CBaseControlWindow.DoGetWindowStyle (método)
 
 El `DoGetWindowStyle` método recupera los estilos de ventana normales o extendidos actuales.
 
@@ -53,14 +53,14 @@ Puntero a una variable que recibe la información de estilo.
 *WindowLong* 
 </dt> <dd>
 
-Valor que especifica los estilos que se van a recuperar. Debe ser una de las siguientes:
+Valor que especifica los estilos que se recuperarán. Debe ser una de las siguientes:
 
 
 
-|              |                                      |
+| Etiqueta | Value |
 |--------------|--------------------------------------|
-| \_estilo GWL   | Recupere los estilos de ventana.          |
-| GWL \_ EXstyle | Recupere los estilos extendidos de ventana. |
+| ESTILO \_ GWL   | Recupere los estilos de ventana.          |
+| GWL \_ EXSTYLE | Recupere los estilos de ventana extendidos. |
 
 
 
@@ -70,11 +70,11 @@ Valor que especifica los estilos que se van a recuperar. Debe ser una de las sig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro llama a la función **GetWindowLong** de Win32 para recuperar el estilo de ventana. Lo llaman las funciones miembro [**CBaseControlWindow:: get \_ WindowStyle**](cbasecontrolwindow-get-windowstyle.md) y [**CBaseControlWindow:: get \_ WindowStyleEx**](cbasecontrolwindow-get-windowstyleex.md) .
+Esta función miembro llama a la función **GetWindowLong** de Win32 para recuperar el estilo de ventana. Lo llaman las funciones [**miembro CBaseControlWindow::get \_ WindowStyle**](cbasecontrolwindow-get-windowstyle.md) y [**CBaseControlWindow::get \_ WindowStyleEx.**](cbasecontrolwindow-get-windowstyleex.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,16 +82,16 @@ Esta función miembro llama a la función **GetWindowLong** de Win32 para recupe
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

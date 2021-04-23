@@ -14,11 +14,11 @@
           href: nse-folderview.md
         - name: Personalizar la vista web de una carpeta
           href: web-view.md
-        - name: Accesos directos a Internet de la aplicación
+        - name: Accesos directos a Internet de aplicaciones
           href: internet-shortcuts.md
-        - name: Uso del objeto Active Desktop
+        - name: Usar el objeto Active Desktop
           href: active-desktop-interface.md
-        - name: Crear controladores de columnas
+        - name: Crear controladores de columna
           href: column-handlers.md
         - name: Crear controladores de búsqueda
           href: search-handlers.md
@@ -222,7 +222,7 @@
                       href: create-personality.md
                     - name: Observar la etiqueta adecuada
                       href: observe-appropriate-etiquette.md
-                    - name: Uso de La indescomo
+                    - name: Uso de la indescomo
                       href: use-praise.md
                     - name: Creación de un team player
                       href: create-a-team-player.md
@@ -339,7 +339,7 @@
                               href: name-property-a.md
                             - name: Propiedad RaiseRequestErrors
                               href: raiserequesterrors-property.md
-                        - name: Eventos de control de agente
+                        - name: Eventos de control del agente
                           href: agent-control-events.md
                           items:
                             - name: Evento ActivateInput
@@ -417,7 +417,7 @@
                               href: interrupt-method.md
                             - name: Listen (método)
                               href: listen-method.md
-                            - name: MoveTo (método)
+                            - name: Método MoveTo
                               href: moveto-method.md
                             - name: Play (método)
                               href: play-method.md
@@ -435,7 +435,7 @@
                               href: think-method.md
                             - name: Wait (Método)
                               href: wait-method.md
-                        - name: Propiedades del objeto character
+                        - name: Propiedades del objeto Character
                           href: character-object-properties.md
                           items:
                             - name: Propiedad activa
@@ -527,7 +527,7 @@
                               href: globalvoicecommandsenabled-property.md
                             - name: Propiedad HelpContextID
                               href: helpcontextid-property.md
-                            - name: Propiedad visible
+                            - name: Propiedad Visible
                               href: visible-property-cso.md
                             - name: Propiedad Voice
                               href: voice-property.md
@@ -623,11 +623,11 @@
                               href: left-property-cwo.md
                             - name: Propiedad Top
                               href: top-property-cwo.md
-                            - name: Propiedad visible
+                            - name: Propiedad Visible
                               href: visible-property-cwo.md
                             - name: Propiedad Width
                               href: width-property.md
-                    - name: Objeto PropertySheet
+                    - name: El objeto PropertySheet
                       href: the-propertysheet-object.md
                       items:
                         - name: Propiedad Height
@@ -1139,7 +1139,7 @@
                   href: the-office-animation-set.md
                 - name: Instalación del carácter
                   href: installing-your-character.md
-        - name: Uso de la herramienta de edición de sonido de información lingüística de Microsoft
+        - name: Uso de la herramienta de edición de sonidos de información lingüística de Microsoft
           href: using-the-microsoft-linguistic-information-sound-editing-tool.md
           items:
             - name: Instalación del Editor de sonido
@@ -1148,7 +1148,7 @@
               href: starting-the-sound-editor.md
             - name: Crear un nuevo archivo de sonido
               href: creating-a-new-sound-file.md
-            - name: Carga de un archivo de sonido existente
+            - name: Cargar un archivo de sonido existente
               href: loading-an-existing-sound-file.md
             - name: Generación de información lingüística
               href: generating-linguistic-information.md
@@ -1327,7 +1327,7 @@
                   href: '-search-2x-iresultverb-displayname.md'
                 - name: Doit
                   href: '-search-2x-iresultverb-doit.md'
-                - name: Habilitado
+                - name: habilitado
                   href: '-search-2x-iresultverb-enabled.md'
                 - name: HelpText
                   href: '-search-2x-iresultverb-helptext.md'
@@ -1579,7 +1579,7 @@
               href: endpointdlp-dlpnotifyclosedocumentfile.md
             - name: DlpNotifyEnterDropTarget
               href: endpointdlp-dlpnotifyenterdroptarget.md
-            - name: DlpInitializeEnforcementMode
+            - name: DlpGetEnforcementApiVersion
               href: endpointdlp-dlpgetenforcementapiversion.md
             - name: DlpInitializeEnforcementMode
               href: endpointdlp-dlpinitializeenforcementmode.md

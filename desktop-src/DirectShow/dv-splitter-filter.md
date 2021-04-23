@@ -4,47 +4,47 @@ ms.assetid: 099d1cc7-f0c5-4c50-a1d5-f2defde7e104
 title: Filtro de divisor DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e59ada4f18a107f8e1b07571f3907aed5ddf50f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 74ca8e856f1a49ff22ee05f7dc0ae341fad6aa91
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536568"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908413"
 ---
 # <a name="dv-splitter-filter"></a>Filtro de divisor DV
 
-Este filtro divide una secuencia de vídeo digital (DV) intercalada en sus secuencias de audio y vídeo de componentes.
+Este filtro divide una secuencia de vídeo digital intercalado (DV) en sus secuencias de audio y vídeo componentes.
 
 
 
-|                                          |                                                                                                                                                    |
+| Etiqueta | Value |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [ **IDVSplitter**](/windows/desktop/api/Strmif/nn-strmif-idvsplitter)                                                                             |
-| Tipos de medios de anclaje de entrada                    | MEDIATYPE \_ intercalado, MEDIASUBTYPE \_ DVSD, format \_ DvInfo                                                                                         |
-| Interfaces de PIN de entrada                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                             |
-| Tipos de medios de anclaje de salida                   | **Vídeo**: \_ vídeo de MEDIATYPE, formato \_ DvInfo<br/> **Audio**: MEDIATYPE \_ audio, MEDIASUBTYPE \_ PCM, formato \_ WaveFormatEx<br/>             |
-| Interfaces de clavija de salida                    | [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
-| Identificador CLSID                             | CLSID \_ DVSplitter                                                                                                                                  |
-| CLSID de la página de propiedades                      | Ninguna página de propiedades.                                                                                                                                  |
+| Tipos de medios de pin de entrada                    | MEDIATYPE \_ intercalado, MEDIASUBTYPE \_ dvsd, FORMAT \_ DvInfo                                                                                         |
+| Interfaces de pin de entrada                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                             |
+| Tipos de medios de pin de salida                   | **Vídeo:** VÍDEO \_ MEDIATYPE, FORMAT \_ DvInfo<br/> **Audio:** MEDIATYPE \_ Audio, MEDIASUBTYPE \_ PCM, FORMAT \_ WaveFormatEx<br/>             |
+| Interfaces de pin de salida                    | [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
+| Filtrar CLSID                             | CLSID \_ DVSplitter                                                                                                                                  |
+| CLSID de la página de propiedades                      | No hay ninguna página de propiedades.                                                                                                                                  |
 | Executable                               | qdv.dll                                                                                                                                            |
-| [Fundament](merit.md)                       | MÉRITO \_ normal                                                                                                                                      |
+| [Mérito](merit.md)                       | PROCEDIMIENTO \_ NORMAL                                                                                                                                      |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los fotogramas DV contienen audio y vídeo en el mismo fotograma. El filtro de divisor DV extrae los datos de audio y los entrega como uno o dos flujos de audio de los pin de salida de audio. El fotograma DV original se entrega desde el PIN de salida de vídeo, como un fotograma de vídeo. El tipo de medio en el fotograma de vídeo se cambia de MEDIATYPE \_ intercalado a un vídeo de mediatype \_ , pero de lo contrario no se modifican los datos. El tipo de medio se cambia para indicar que los datos de audio del fotograma deben omitirse. El divisor DV no establece una hora de medio en sus ejemplos de salida; Si está escribiendo un filtro de nivel inferior que requiera las horas del medio, puede derivar las horas del recuento de fotogramas.
+Los fotogramas DV contienen audio y vídeo en el mismo fotograma. El filtro dv splitter extrae los datos de audio y los entrega como una o dos secuencias de audio, desde las clavijas de salida de audio. El fotograma DV original se entrega desde el pin de salida del vídeo, como un fotograma de vídeo. El tipo de medio en el fotograma de vídeo se cambia de MEDIATYPE intercalado a MEDIATYPE Video, pero de lo contrario los datos \_ \_ no se modifican. El tipo de medio se cambia para indicar que se deben omitir los datos de audio en el marco. El divisor DV no establece un tiempo de medios en sus ejemplos de salida; Si está escribiendo un filtro de bajada que requiere los tiempos multimedia, puede derivar las horas del recuento de fotogramas.
 
-Solo un PIN de salida a la vez expone las interfaces [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) y [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) .
+Solo un pin de salida a la vez expone las interfaces [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) [**e IMediaSeeking.**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)
 
-El filtro de divisor DV puede aceptar cambios de formato dinámico en la secuencia de audio. Sin embargo, si el filtro de [AVI-MUX](avi-mux-filter.md) está en el nivel inferior, rechazará el cambio de formato. Si esto ocurre, el divisor DV deja de generar una secuencia de audio. Esta limitación solo afecta a la captura de archivos de tipo 2. En el caso de los archivos de tipo 1, la secuencia intercalada no se divide en primer lugar. En el caso de la versión preliminar, no hay ningún filtro de AVI en el nivel inferior.
+El filtro dv splitter puede aceptar cambios de formato dinámico en la secuencia de audio. Sin embargo, si el [filtro avi Mux](avi-mux-filter.md) es descendente, rechazará el cambio de formato. Si esto ocurre, el divisor DV deja de generar una secuencia de audio. Esta limitación solo afecta a la captura de archivos de tipo 2. En el caso de los archivos de tipo 1, la secuencia intercalada no se divide en primer lugar. Para la versión preliminar, no hay ningún filtro avi Mux de bajada.
 
-Si el origen DV es una cámara activa, normalmente no hay ningún motivo por el que el formato de audio cambie. Sin embargo, el formato puede cambiar si se transmite desde una cinta VTR que contiene varios orígenes heterogéneos.
+Si el origen dv es una cámara en directo, normalmente no hay ninguna razón para que cambie el formato de audio. Sin embargo, el formato puede cambiar si transmite desde una cinta VTR que contiene varios orígenes heterogéneos.
 
-Cada fotograma DV contiene metadatos, además de los datos de audio y vídeo. Estos metadatos pueden cambiar de Frame a frame. Las aplicaciones pueden analizar los metadatos examinando los ejemplos de entrada o de salida de vídeo. Sin embargo, DirectShow no proporciona ninguna compatibilidad directa con el análisis de metadatos de DV. Consulte IEC 61834-4 para obtener más información.
+Cada fotograma DV contiene metadatos, además de los datos de audio y vídeo. Estos metadatos pueden cambiar de marco a marco. Las aplicaciones pueden analizar los metadatos examinando los ejemplos de entrada o los ejemplos de salida de vídeo. Sin embargo, DirectShow no proporciona ninguna compatibilidad directa para analizar los metadatos dv. Consulte IEC 61834-4 para obtener más información.
 
 ## <a name="related-topics"></a>Temas relacionados
 

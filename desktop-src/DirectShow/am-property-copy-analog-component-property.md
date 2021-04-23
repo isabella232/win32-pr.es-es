@@ -1,37 +1,37 @@
 ---
-description: Consulta si la salida de vídeo es una definición estándar, vídeo de componente analógico.
+description: Consulta si la salida del vídeo es vídeo de componentes análogos de definición estándar.
 ms.assetid: bd4fc5bc-c45d-4228-9759-6300fdfff6a0
-title: Propiedad AM_PROPERTY_COPY_ANALOG_COMPONENT (dvdmedia. h)
+title: AM_PROPERTY_COPY_ANALOG_COMPONENT propiedad (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f3998156bf372c39018aa73ba30a661117519c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6448bfbcc07be6ca37189c15c7c605887e6d22b3
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660958"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910313"
 ---
-# <a name="am_property_copy_analog_component-property"></a>Propiedad \_ AM \_ copiar \_ \_ propiedad de componente analógico
+# <a name="am_property_copy_analog_component-property"></a>Propiedad COPY \_ \_ ANALOG COMPONENT \_ \_ de AM PROPERTY
 
-Consulta si la salida de vídeo es una definición estándar, vídeo de componente analógico.
+Consulta si la salida del vídeo es vídeo de componentes análogos de definición estándar.
 
 
 
-|                   |                                       |
+| Etiqueta | Value |
 |-------------------|---------------------------------------|
-| GUID del conjunto de propiedades | \_CopyProt KSPROPSETID \_ AM             |
-| Id. de propiedad       | \_propiedad AM \_ copiar \_ \_ componente analógico |
+| GUID del conjunto de propiedades | CopyProt de \_ AM KSPROPSETID \_             |
+| Id. de propiedad       | COMPONENTE ANÁLOGO \_ DE COPIA DE PROPIEDAD \_ \_ \_ AM |
 | Tipo de datos         | **ULONG**                             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad es de solo lectura.
 
-El valor de la propiedad es **true** si la salida de vídeo es un vídeo de componente analógico con una resolución que no es mayor que 480p para NTSC o 540P para PAL. De lo contrario, el valor es **false**.
+El valor de la propiedad es **TRUE** si la salida de vídeo es vídeo de componente análogo con una resolución no superior a 480p para PX o 540p para PAL. De lo contrario, el valor es **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,11 +39,11 @@ El valor de la propiedad es **true** si la salida de vídeo es un vídeo de comp
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
