@@ -1,9 +1,9 @@
 ---
 title: Variables de estado para los valores actuales y los datos asociados
-description: Variables de estado para los valores actuales y los datos asociados
+description: Variables de estado para valores actuales y datos asociados
 ms.assetid: 8e47b119-a065-43c5-b7f5-76deaf975ad8
 keywords:
-- Variables de estado para los valores actuales y datos asociados de OpenGL
+- Variables de estado para valores actuales y openGL de datos asociados
 topic_type:
 - apiref
 api_name:
@@ -12,163 +12,163 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aeab660299aa278017e12556a941353d624147d7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 149139bc11698469ce0667c2ecf77bc7ab239adb
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419444"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908473"
 ---
-# <a name="state-variables-for-current-values-and-associated-data"></a><span data-ttu-id="3ea3a-104">Variables de estado para los valores actuales y los datos asociados</span><span class="sxs-lookup"><span data-stu-id="3ea3a-104">State Variables for Current Values and Associated Data</span></span>
+# <a name="state-variables-for-current-values-and-associated-data"></a><span data-ttu-id="708e4-104">Variables de estado para valores actuales y datos asociados</span><span class="sxs-lookup"><span data-stu-id="708e4-104">State Variables for Current Values and Associated Data</span></span>
 
-<dl> <span data-ttu-id="3ea3a-105"><dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>\_color actual de GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-105"><dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>GL\_CURRENT\_COLOR</dt> </span></span><dd> 
+<dl> <span data-ttu-id="708e4-105"><dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>COLOR \_ ACTUAL DE \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-105"><dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>GL\_CURRENT\_COLOR</dt> </span></span><dd> 
 
-|                  |                                                                                                                      |
+| <span data-ttu-id="708e4-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-106">Property</span></span> | <span data-ttu-id="708e4-107">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-107">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-106">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-106">Description:</span></span>     | <span data-ttu-id="3ea3a-107">Color actual</span><span class="sxs-lookup"><span data-stu-id="3ea3a-107">Current color</span></span>                                                                                                        |
-| <span data-ttu-id="3ea3a-108">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-108">Attribute group:</span></span> | <span data-ttu-id="3ea3a-109">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-109">current</span></span>                                                                                                              |
-| <span data-ttu-id="3ea3a-110">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-110">Initial value:</span></span>   | <span data-ttu-id="3ea3a-111">1, 1, 1, 1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-111">1, 1, 1, 1</span></span>                                                                                                           |
-| <span data-ttu-id="3ea3a-112">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-112">Get command:</span></span>     | <span data-ttu-id="3ea3a-113">[**glGetIntegerv**](glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="3ea3a-113">[**glGetIntegerv**](glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
+| <span data-ttu-id="708e4-108">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-108">Description:</span></span>     | <span data-ttu-id="708e4-109">Color actual</span><span class="sxs-lookup"><span data-stu-id="708e4-109">Current color</span></span>                                                                                                        |
+| <span data-ttu-id="708e4-110">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-110">Attribute group:</span></span> | <span data-ttu-id="708e4-111">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-111">current</span></span>                                                                                                              |
+| <span data-ttu-id="708e4-112">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-112">Initial value:</span></span>   | <span data-ttu-id="708e4-113">1, 1, 1, 1</span><span class="sxs-lookup"><span data-stu-id="708e4-113">1, 1, 1, 1</span></span>                                                                                                           |
+| <span data-ttu-id="708e4-114">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-114">Get command:</span></span>     | <span data-ttu-id="708e4-115">[**glGetIntegerv**](glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="708e4-115">[**glGetIntegerv**](glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-114"></dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>\_índice actual de contabilidad \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-114"></dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>GL\_CURRENT\_INDEX</dt> </span></span><dd> 
+<span data-ttu-id="708e4-116"></dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>GL \_ CURRENT \_ INDEX</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-116"></dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>GL\_CURRENT\_INDEX</dt> </span></span><dd> 
 
-|                  |                                                                                                                                                                |
+| <span data-ttu-id="708e4-117">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-117">Property</span></span> | <span data-ttu-id="708e4-118">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-118">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-115">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-115">Description:</span></span>     | <span data-ttu-id="3ea3a-116">Índice de color actual</span><span class="sxs-lookup"><span data-stu-id="3ea3a-116">Current color index</span></span>                                                                                                                                            |
-| <span data-ttu-id="3ea3a-117">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-117">Attribute group:</span></span> | <span data-ttu-id="3ea3a-118">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-118">current</span></span>                                                                                                                                                        |
-| <span data-ttu-id="3ea3a-119">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-119">Initial value:</span></span>   | <span data-ttu-id="3ea3a-120">1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-120">1</span></span>                                                                                                                                                              |
-| <span data-ttu-id="3ea3a-121">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-121">Get command:</span></span>     | <span data-ttu-id="3ea3a-122">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="3ea3a-122">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
+| <span data-ttu-id="708e4-119">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-119">Description:</span></span>     | <span data-ttu-id="708e4-120">Índice de color actual</span><span class="sxs-lookup"><span data-stu-id="708e4-120">Current color index</span></span>                                                                                                                                            |
+| <span data-ttu-id="708e4-121">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-121">Attribute group:</span></span> | <span data-ttu-id="708e4-122">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-122">current</span></span>                                                                                                                                                        |
+| <span data-ttu-id="708e4-123">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-123">Initial value:</span></span>   | <span data-ttu-id="708e4-124">1</span><span class="sxs-lookup"><span data-stu-id="708e4-124">1</span></span>                                                                                                                                                              |
+| <span data-ttu-id="708e4-125">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-125">Get command:</span></span>     | <span data-ttu-id="708e4-126">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="708e4-126">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-123"></dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>\_coordenadas de \_ textura \_ actual de GL</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-123"></dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>GL\_CURRENT\_TEXTURE\_COORDS</dt> </span></span><dd> 
+<span data-ttu-id="708e4-127"></dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>\_ \_ COORDS DE TEXTURA \_ ACTUALES DE GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-127"></dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>GL\_CURRENT\_TEXTURE\_COORDS</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="708e4-128">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-128">Property</span></span> | <span data-ttu-id="708e4-129">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-129">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-124">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-124">Description:</span></span>     | <span data-ttu-id="3ea3a-125">Coordenadas de textura actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-125">Current texture coordinates</span></span>                                                    |
-| <span data-ttu-id="3ea3a-126">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-126">Attribute group:</span></span> | <span data-ttu-id="3ea3a-127">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-127">current</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-128">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-128">Initial value:</span></span>   | <span data-ttu-id="3ea3a-129">0, 0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-129">0, 0, 0, 1</span></span>                                                                     |
-| <span data-ttu-id="3ea3a-130">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-130">Get command:</span></span>     | [<span data-ttu-id="3ea3a-131">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-131">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-130">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-130">Description:</span></span>     | <span data-ttu-id="708e4-131">Coordenadas de textura actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-131">Current texture coordinates</span></span>                                                    |
+| <span data-ttu-id="708e4-132">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-132">Attribute group:</span></span> | <span data-ttu-id="708e4-133">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-133">current</span></span>                                                                        |
+| <span data-ttu-id="708e4-134">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-134">Initial value:</span></span>   | <span data-ttu-id="708e4-135">0, 0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="708e4-135">0, 0, 0, 1</span></span>                                                                     |
+| <span data-ttu-id="708e4-136">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-136">Get command:</span></span>     | [<span data-ttu-id="708e4-137">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="708e4-137">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-132"></dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>libro de contabilidad \_ \_ normal actual</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-132"></dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>GL\_CURRENT\_NORMAL</dt> </span></span><dd> 
+<span data-ttu-id="708e4-138"></dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>GL \_ CURRENT \_ NORMAL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-138"></dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>GL\_CURRENT\_NORMAL</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="708e4-139">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-139">Property</span></span> | <span data-ttu-id="708e4-140">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-140">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-133">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-133">Description:</span></span>     | <span data-ttu-id="3ea3a-134">Normal actual</span><span class="sxs-lookup"><span data-stu-id="3ea3a-134">Current normal</span></span>                                                                 |
-| <span data-ttu-id="3ea3a-135">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-135">Attribute group:</span></span> | <span data-ttu-id="3ea3a-136">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-136">current</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-137">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-137">Initial value:</span></span>   | <span data-ttu-id="3ea3a-138">0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-138">0, 0, 1</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-139">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-139">Get command:</span></span>     | [<span data-ttu-id="3ea3a-140">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-140">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-141">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-141">Description:</span></span>     | <span data-ttu-id="708e4-142">Normal actual</span><span class="sxs-lookup"><span data-stu-id="708e4-142">Current normal</span></span>                                                                 |
+| <span data-ttu-id="708e4-143">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-143">Attribute group:</span></span> | <span data-ttu-id="708e4-144">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-144">current</span></span>                                                                        |
+| <span data-ttu-id="708e4-145">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-145">Initial value:</span></span>   | <span data-ttu-id="708e4-146">0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="708e4-146">0, 0, 1</span></span>                                                                        |
+| <span data-ttu-id="708e4-147">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-147">Get command:</span></span>     | [<span data-ttu-id="708e4-148">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="708e4-148">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-141"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>\_posición de \_ rasterización actual de GL</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-141"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>GL\_CURRENT\_RASTER POSITION</dt> </span></span><dd> 
+<span data-ttu-id="708e4-149"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>POSICIÓN \_ DE TRAMA ACTUAL DE \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-149"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>GL\_CURRENT\_RASTER POSITION</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="708e4-150">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-150">Property</span></span> | <span data-ttu-id="708e4-151">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-151">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-142">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-142">Description:</span></span>     | <span data-ttu-id="3ea3a-143">Posición de la trama actual</span><span class="sxs-lookup"><span data-stu-id="3ea3a-143">Current raster position</span></span>                                                        |
-| <span data-ttu-id="3ea3a-144">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-144">Attribute group:</span></span> | <span data-ttu-id="3ea3a-145">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-145">current</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-146">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-146">Initial value:</span></span>   | <span data-ttu-id="3ea3a-147">0, 0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-147">0, 0, 0, 1</span></span>                                                                     |
-| <span data-ttu-id="3ea3a-148">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-148">Get command:</span></span>     | [<span data-ttu-id="3ea3a-149">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-149">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-152">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-152">Description:</span></span>     | <span data-ttu-id="708e4-153">Posición de trama actual</span><span class="sxs-lookup"><span data-stu-id="708e4-153">Current raster position</span></span>                                                        |
+| <span data-ttu-id="708e4-154">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-154">Attribute group:</span></span> | <span data-ttu-id="708e4-155">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-155">current</span></span>                                                                        |
+| <span data-ttu-id="708e4-156">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-156">Initial value:</span></span>   | <span data-ttu-id="708e4-157">0, 0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="708e4-157">0, 0, 0, 1</span></span>                                                                     |
+| <span data-ttu-id="708e4-158">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-158">Get command:</span></span>     | [<span data-ttu-id="708e4-159">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="708e4-159">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-150"></dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>\_distancia de \_ rasterizado actual de GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-150"></dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>GL\_CURRENT\_RASTER\_DISTANCE</dt> </span></span><dd> 
+<span data-ttu-id="708e4-160"></dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>DISTANCIA \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-160"></dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>GL\_CURRENT\_RASTER\_DISTANCE</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="708e4-161">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-161">Property</span></span> | <span data-ttu-id="708e4-162">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-162">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-151">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-151">Description:</span></span>     | <span data-ttu-id="3ea3a-152">Distancia de la trama actual</span><span class="sxs-lookup"><span data-stu-id="3ea3a-152">Current raster distance</span></span>                                                        |
-| <span data-ttu-id="3ea3a-153">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-153">Attribute group:</span></span> | <span data-ttu-id="3ea3a-154">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-154">current</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-155">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-155">Initial value:</span></span>   | <span data-ttu-id="3ea3a-156">0</span><span class="sxs-lookup"><span data-stu-id="3ea3a-156">0</span></span>                                                                              |
-| <span data-ttu-id="3ea3a-157">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-157">Get command:</span></span>     | [<span data-ttu-id="3ea3a-158">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-158">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-163">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-163">Description:</span></span>     | <span data-ttu-id="708e4-164">Distancia de trama actual</span><span class="sxs-lookup"><span data-stu-id="708e4-164">Current raster distance</span></span>                                                        |
+| <span data-ttu-id="708e4-165">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-165">Attribute group:</span></span> | <span data-ttu-id="708e4-166">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-166">current</span></span>                                                                        |
+| <span data-ttu-id="708e4-167">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-167">Initial value:</span></span>   | <span data-ttu-id="708e4-168">0</span><span class="sxs-lookup"><span data-stu-id="708e4-168">0</span></span>                                                                              |
+| <span data-ttu-id="708e4-169">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-169">Get command:</span></span>     | [<span data-ttu-id="708e4-170">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="708e4-170">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-159"></dd> <dt><span id="GL_CURRENT_RASTER_COLOR"></span><span id="gl_current_raster_color"></span>\_color de \_ rasterizado actual de GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-159"></dd> <dt><span id="GL_CURRENT_RASTER_COLOR"></span><span id="gl_current_raster_color"></span>GL\_CURRENT\_RASTER\_COLOR</dt> </span></span><dd> 
+<span data-ttu-id="708e4-171"></dd> <dt><span id="GL_CURRENT_RASTER_COLOR"></span><span id="gl_current_raster_color"></span>COLOR \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-171"></dd> <dt><span id="GL_CURRENT_RASTER_COLOR"></span><span id="gl_current_raster_color"></span>GL\_CURRENT\_RASTER\_COLOR</dt> </span></span><dd> 
 
-|                  |                                                                                                                                                                |
+| <span data-ttu-id="708e4-172">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-172">Property</span></span> | <span data-ttu-id="708e4-173">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-173">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-160">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-160">Description:</span></span>     | <span data-ttu-id="3ea3a-161">Color asociado a la posición de la trama</span><span class="sxs-lookup"><span data-stu-id="3ea3a-161">Color associated with raster position</span></span>                                                                                                                          |
-| <span data-ttu-id="3ea3a-162">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-162">Attribute group:</span></span> | <span data-ttu-id="3ea3a-163">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-163">current</span></span>                                                                                                                                                        |
-| <span data-ttu-id="3ea3a-164">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-164">Initial value:</span></span>   | <span data-ttu-id="3ea3a-165">1, 1, 1, 1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-165">1, 1, 1, 1</span></span>                                                                                                                                                     |
-| <span data-ttu-id="3ea3a-166">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-166">Get command:</span></span>     | <span data-ttu-id="3ea3a-167">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="3ea3a-167">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
+| <span data-ttu-id="708e4-174">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-174">Description:</span></span>     | <span data-ttu-id="708e4-175">Color asociado a la posición de trama</span><span class="sxs-lookup"><span data-stu-id="708e4-175">Color associated with raster position</span></span>                                                                                                                          |
+| <span data-ttu-id="708e4-176">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-176">Attribute group:</span></span> | <span data-ttu-id="708e4-177">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-177">current</span></span>                                                                                                                                                        |
+| <span data-ttu-id="708e4-178">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-178">Initial value:</span></span>   | <span data-ttu-id="708e4-179">1, 1, 1, 1</span><span class="sxs-lookup"><span data-stu-id="708e4-179">1, 1, 1, 1</span></span>                                                                                                                                                     |
+| <span data-ttu-id="708e4-180">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-180">Get command:</span></span>     | <span data-ttu-id="708e4-181">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="708e4-181">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-168"></dd> <dt><span id="GL_CURRENT_RASTER_INDEX"></span><span id="gl_current_raster_index"></span>\_Índice de \_ rasterizado actual de GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-168"></dd> <dt><span id="GL_CURRENT_RASTER_INDEX"></span><span id="gl_current_raster_index"></span>GL\_CURRENT\_RASTER\_INDEX</dt> </span></span><dd> 
+<span data-ttu-id="708e4-182"></dd> <dt><span id="GL_CURRENT_RASTER_INDEX"></span><span id="gl_current_raster_index"></span>ÍNDICE \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-182"></dd> <dt><span id="GL_CURRENT_RASTER_INDEX"></span><span id="gl_current_raster_index"></span>GL\_CURRENT\_RASTER\_INDEX</dt> </span></span><dd> 
 
-|                  |                                                                                                                                                                |
+| <span data-ttu-id="708e4-183">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-183">Property</span></span> | <span data-ttu-id="708e4-184">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-184">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-169">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-169">Description:</span></span>     | <span data-ttu-id="3ea3a-170">Índice de color asociado a la posición de la trama</span><span class="sxs-lookup"><span data-stu-id="3ea3a-170">Color index associated with raster position</span></span>                                                                                                                    |
-| <span data-ttu-id="3ea3a-171">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-171">Attribute group:</span></span> | <span data-ttu-id="3ea3a-172">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-172">current</span></span>                                                                                                                                                        |
-| <span data-ttu-id="3ea3a-173">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-173">Initial value:</span></span>   | <span data-ttu-id="3ea3a-174">1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-174">1</span></span>                                                                                                                                                              |
-| <span data-ttu-id="3ea3a-175">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-175">Get command:</span></span>     | <span data-ttu-id="3ea3a-176">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="3ea3a-176">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
+| <span data-ttu-id="708e4-185">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-185">Description:</span></span>     | <span data-ttu-id="708e4-186">Índice de color asociado a la posición de trama</span><span class="sxs-lookup"><span data-stu-id="708e4-186">Color index associated with raster position</span></span>                                                                                                                    |
+| <span data-ttu-id="708e4-187">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-187">Attribute group:</span></span> | <span data-ttu-id="708e4-188">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-188">current</span></span>                                                                                                                                                        |
+| <span data-ttu-id="708e4-189">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-189">Initial value:</span></span>   | <span data-ttu-id="708e4-190">1</span><span class="sxs-lookup"><span data-stu-id="708e4-190">1</span></span>                                                                                                                                                              |
+| <span data-ttu-id="708e4-191">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-191">Get command:</span></span>     | <span data-ttu-id="708e4-192">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span><span class="sxs-lookup"><span data-stu-id="708e4-192">[**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)[**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)</span></span> |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-177"></dd> <dt><span id="GL_CURRENT_RASTER_TEXTURE_COORDS"></span><span id="gl_current_raster_texture_coords"></span>\_coordenadas de \_ textura de rasterizado actual de \_ GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-177"></dd> <dt><span id="GL_CURRENT_RASTER_TEXTURE_COORDS"></span><span id="gl_current_raster_texture_coords"></span>GL\_CURRENT\_RASTER\_TEXTURE\_COORDS</dt> </span></span><dd> 
+<span data-ttu-id="708e4-193"></dd> <dt><span id="GL_CURRENT_RASTER_TEXTURE_COORDS"></span><span id="gl_current_raster_texture_coords"></span>\_ \_ \_ COORDS ACTUALES DE TEXTURA DE \_ TRAMA DE GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-193"></dd> <dt><span id="GL_CURRENT_RASTER_TEXTURE_COORDS"></span><span id="gl_current_raster_texture_coords"></span>GL\_CURRENT\_RASTER\_TEXTURE\_COORDS</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="708e4-194">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-194">Property</span></span> | <span data-ttu-id="708e4-195">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-195">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-178">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-178">Description:</span></span>     | <span data-ttu-id="3ea3a-179">Coordenadas de textura asociadas a la posición de la trama</span><span class="sxs-lookup"><span data-stu-id="3ea3a-179">Texture coordinates associated with raster position</span></span>                            |
-| <span data-ttu-id="3ea3a-180">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-180">Attribute group:</span></span> | <span data-ttu-id="3ea3a-181">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-181">current</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-182">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-182">Initial value:</span></span>   | <span data-ttu-id="3ea3a-183">0, 0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="3ea3a-183">0, 0, 0, 1</span></span>                                                                     |
-| <span data-ttu-id="3ea3a-184">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-184">Get command:</span></span>     | [<span data-ttu-id="3ea3a-185">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-185">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-196">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-196">Description:</span></span>     | <span data-ttu-id="708e4-197">Coordenadas de textura asociadas a la posición de trama</span><span class="sxs-lookup"><span data-stu-id="708e4-197">Texture coordinates associated with raster position</span></span>                            |
+| <span data-ttu-id="708e4-198">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-198">Attribute group:</span></span> | <span data-ttu-id="708e4-199">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-199">current</span></span>                                                                        |
+| <span data-ttu-id="708e4-200">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-200">Initial value:</span></span>   | <span data-ttu-id="708e4-201">0, 0, 0, 1</span><span class="sxs-lookup"><span data-stu-id="708e4-201">0, 0, 0, 1</span></span>                                                                     |
+| <span data-ttu-id="708e4-202">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-202">Get command:</span></span>     | [<span data-ttu-id="708e4-203">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="708e4-203">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-186"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>\_posición de \_ rasterizado actual de GL \_ \_ válida</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-186"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>GL\_CURRENT\_RASTER\_POSITION\_VALID</dt> </span></span><dd> 
+<span data-ttu-id="708e4-204"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>POSICIÓN DE TRAMA ACTUAL DE GL \_ \_ \_ \_ VÁLIDA</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-204"></dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>GL\_CURRENT\_RASTER\_POSITION\_VALID</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="708e4-205">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-205">Property</span></span> | <span data-ttu-id="708e4-206">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-206">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-187">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-187">Description:</span></span>     | <span data-ttu-id="3ea3a-188">Bit válido de posición de la trama</span><span class="sxs-lookup"><span data-stu-id="3ea3a-188">Raster position valid bit</span></span>                                                        |
-| <span data-ttu-id="3ea3a-189">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-189">Attribute group:</span></span> | <span data-ttu-id="3ea3a-190">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-190">current</span></span>                                                                          |
-| <span data-ttu-id="3ea3a-191">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-191">Initial value:</span></span>   | <span data-ttu-id="3ea3a-192">GL \_ true</span><span class="sxs-lookup"><span data-stu-id="3ea3a-192">GL\_TRUE</span></span>                                                                         |
-| <span data-ttu-id="3ea3a-193">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-193">Get command:</span></span>     | [<span data-ttu-id="3ea3a-194">**glGetBooleanv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-194">**glGetBooleanv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-207">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-207">Description:</span></span>     | <span data-ttu-id="708e4-208">Bit válido de posición de trama</span><span class="sxs-lookup"><span data-stu-id="708e4-208">Raster position valid bit</span></span>                                                        |
+| <span data-ttu-id="708e4-209">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-209">Attribute group:</span></span> | <span data-ttu-id="708e4-210">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-210">current</span></span>                                                                          |
+| <span data-ttu-id="708e4-211">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-211">Initial value:</span></span>   | <span data-ttu-id="708e4-212">GL \_ TRUE</span><span class="sxs-lookup"><span data-stu-id="708e4-212">GL\_TRUE</span></span>                                                                         |
+| <span data-ttu-id="708e4-213">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-213">Get command:</span></span>     | [<span data-ttu-id="708e4-214">**glGetBooleanv**</span><span class="sxs-lookup"><span data-stu-id="708e4-214">**glGetBooleanv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="3ea3a-195"></dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>\_marca de borde de contabilidad \_</dt> </span><span class="sxs-lookup"><span data-stu-id="3ea3a-195"></dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>GL\_EDGE\_FLAG</dt> </span></span><dd> 
+<span data-ttu-id="708e4-215"></dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>MARCA \_ DE BORDE DE \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="708e4-215"></dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>GL\_EDGE\_FLAG</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="708e4-216">Propiedad</span><span class="sxs-lookup"><span data-stu-id="708e4-216">Property</span></span> | <span data-ttu-id="708e4-217">Value</span><span class="sxs-lookup"><span data-stu-id="708e4-217">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="3ea3a-196">Descripción:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-196">Description:</span></span>     | <span data-ttu-id="3ea3a-197">Marca perimetral</span><span class="sxs-lookup"><span data-stu-id="3ea3a-197">Edge flag</span></span>                                                                        |
-| <span data-ttu-id="3ea3a-198">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-198">Attribute group:</span></span> | <span data-ttu-id="3ea3a-199">actuales</span><span class="sxs-lookup"><span data-stu-id="3ea3a-199">current</span></span>                                                                          |
-| <span data-ttu-id="3ea3a-200">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-200">Initial value:</span></span>   | <span data-ttu-id="3ea3a-201">GL \_ true</span><span class="sxs-lookup"><span data-stu-id="3ea3a-201">GL\_TRUE</span></span>                                                                         |
-| <span data-ttu-id="3ea3a-202">Obtener comando:</span><span class="sxs-lookup"><span data-stu-id="3ea3a-202">Get command:</span></span>     | [<span data-ttu-id="3ea3a-203">**glGetBooleanv**</span><span class="sxs-lookup"><span data-stu-id="3ea3a-203">**glGetBooleanv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="708e4-218">Descripción:</span><span class="sxs-lookup"><span data-stu-id="708e4-218">Description:</span></span>     | <span data-ttu-id="708e4-219">Marca perimetral</span><span class="sxs-lookup"><span data-stu-id="708e4-219">Edge flag</span></span>                                                                        |
+| <span data-ttu-id="708e4-220">Grupo de atributos:</span><span class="sxs-lookup"><span data-stu-id="708e4-220">Attribute group:</span></span> | <span data-ttu-id="708e4-221">actuales</span><span class="sxs-lookup"><span data-stu-id="708e4-221">current</span></span>                                                                          |
+| <span data-ttu-id="708e4-222">Valor inicial:</span><span class="sxs-lookup"><span data-stu-id="708e4-222">Initial value:</span></span>   | <span data-ttu-id="708e4-223">GL \_ TRUE</span><span class="sxs-lookup"><span data-stu-id="708e4-223">GL\_TRUE</span></span>                                                                         |
+| <span data-ttu-id="708e4-224">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="708e4-224">Get command:</span></span>     | [<span data-ttu-id="708e4-225">**glGetBooleanv**</span><span class="sxs-lookup"><span data-stu-id="708e4-225">**glGetBooleanv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
