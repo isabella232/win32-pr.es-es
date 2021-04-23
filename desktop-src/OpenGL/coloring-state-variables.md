@@ -1,9 +1,9 @@
 ---
-title: Colorear variables de estado
-description: Colorear variables de estado
+title: Colores de variables de estado
+description: Coloring State Variables
 ms.assetid: 783a798a-f45c-4262-99b8-badd15f52cd5
 keywords:
-- Variables de estado de color OpenGL
+- Coloring State Variables OpenGL
 topic_type:
 - apiref
 api_name:
@@ -12,124 +12,124 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d02a151b676e6f8fdd4ad98270ca4924e596bb9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: fb41866aa194461fd4edf72fdba8f4dad5de8766
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105676327"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909293"
 ---
-# <a name="coloring-state-variables"></a>Colorear variables de estado
+# <a name="coloring-state-variables"></a>Coloring State Variables
 
-<dl> <dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>\_color de niebla de GL \_</dt> <dd> 
+<dl> <dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>GL \_ FOG \_ COLOR</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Color de niebla                                                                      |
+| Descripción:     | Color de color rojo                                                                      |
 | Grupo de atributos: | luz                                                                            |
-| Valor inicial:   | 0, 0, 0, 0                                                                        |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | 0,0,0,0                                                                        |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>\_Índice de niebla de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>GL \_ FOG \_ INDEX</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Índice de niebla                                                                      |
+| Descripción:     | Índice de indexación de indexación                                                                      |
 | Grupo de atributos: | luz                                                                            |
 | Valor inicial:   | 0                                                                              |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>\_densidad de niebla de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>DENSIDAD \_ GL \_ DE GL</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Densidad de niebla exponencial                                                        |
+| Descripción:     | Densidad exponencial de densidad de densidad                                                        |
 | Grupo de atributos: | luz                                                                            |
-| Valor inicial:   | 1,0                                                                            |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | 1.0                                                                            |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>\_Inicio de niebla de GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL \_ FOG \_ START</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Inicio de niebla lineal                                                               |
+| Descripción:     | Inicio lineal de la curva                                                               |
 | Grupo de atributos: | luz                                                                            |
 | Valor inicial:   | 0,0                                                                            |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>finalización de la niebla de GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ FOG \_ END</dt> <dd> 
 
-|                  |                                                                                |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Finalización de la niebla lineal                                                                 |
+| Descripción:     | Extremo lineal de la curva                                                                 |
 | Grupo de atributos: | luz                                                                            |
-| Valor inicial:   | 1,0                                                                            |
-| Obtener comando:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | 1.0                                                                            |
+| Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>\_modo de niebla de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODO \_ GL \_</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Modo de niebla                                                                         |
+| Descripción:     | Modo de fusión                                                                         |
 | Grupo de atributos: | luz                                                                              |
-| Valor inicial:   | contabilidad \_ General                                                                          |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ EXP                                                                          |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>niebla de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>GL \_ FOG</dt> <dd> 
 
-|                  |                                    |
+| Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | True si la niebla está habilitada                |
-| Grupo de atributos: | niebla/habilitar                         |
-| Valor inicial:   | CONTABILIDAD \_ falsa                          |
-| Obtener comando:     | [**glIsEnabled**](glisenabled.md) |
+| Descripción:     | True si está habilitado                |
+| Grupo de atributos: | y habilitar                         |
+| Valor inicial:   | GL \_ FALSE                          |
+| Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>\_modelo de sombreado de contabilidad \_</dt> <dd> 
+</dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>MODELO \_ GL SHADE \_</dt> <dd> 
 
-|                  |                                                                                  |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | configuración de **glShadeModel**                                                         |
+| Descripción:     | **Configuración de glShadeModel**                                                         |
 | Grupo de atributos: | iluminación                                                                         |
-| Valor inicial:   | GL \_ suave                                                                       |
-| Obtener comando:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| Valor inicial:   | GL \_ SMOOTH                                                                       |
+| Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
