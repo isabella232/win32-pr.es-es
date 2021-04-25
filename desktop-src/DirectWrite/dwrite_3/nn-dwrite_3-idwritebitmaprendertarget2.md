@@ -39,19 +39,19 @@ api_location:
 - dwrite.dll
 api_name:
 - IDWriteBitmapRenderTarget2
-ms.openlocfilehash: e12bceefd7ffb89a427edc04b4910b6346dfb066
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: 482aff4e2b9fbf03a89a15a7e38cc07d7542362b
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881824"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955038"
 ---
 # <a name="idwritebitmaprendertarget2-interface-dwrite_3h"></a>Interfaz IDWriteBitmapRenderTarget2 (dwrite_3.h)
 
 Encapsula un mapa de bits independiente del dispositivo de 32 bits y el contexto del dispositivo, que se puede usar para representar glifos.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte de la implementación de DWriteCore de [DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea Introducción a [DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Esta API está disponible como parte de la implementación de DWriteCore de [DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea [Introducción a DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="inheritance"></a>Herencia
 
