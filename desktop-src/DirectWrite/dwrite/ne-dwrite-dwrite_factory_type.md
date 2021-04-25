@@ -39,19 +39,19 @@ api_location:
 - dwrite.h
 api_name:
 - DWRITE_FACTORY_TYPE
-ms.openlocfilehash: 87b0d1c2edcb836afd06d732f242b62441b9bd01
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: 85f74d72dc8799a7a3c78603ec0dd5f9c118fdb1
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881814"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955008"
 ---
 # <a name="dwrite_factory_type-enumeration-dwriteh"></a>DWRITE_FACTORY_TYPE enumeración (dwrite.h)
 
 Especifica el tipo de objeto de generador DirectWrite.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte de la implementación de DWriteCore de [DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea Introducción a [DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Esta API está disponible como parte de la implementación de DWriteCore de [DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea [Introducción a DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -72,9 +72,9 @@ typedef enum DWRITE_FACTORY_TYPE {
 
 ## <a name="examples"></a>Ejemplos
 
-Consulte el [tema de información general de DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) y la aplicación de ejemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Consulte el [tema de información general de DWriteCore](/windows/win32/directwrite/dwritecore-overview) y la aplicación de ejemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un objeto de generador directWrite contiene información sobre su estado interno, como el registro del cargador de fuentes y los datos de fuente almacenados en caché. En la mayoría de los casos, debe usar el objeto de generador compartido, ya que permite que varios componentes que usan DirectWrite compartan información de estado interna de DirectWrite, lo que reduce el uso de memoria. Sin embargo, hay casos en los que es conveniente reducir el impacto de un componente en el resto del proceso, como un complemento de un origen que no es de confianza, mediante el espacio aislado y el aislamiento del resto de los componentes del proceso. En tales casos, debe usar un generador aislado para el componente de espacio aislado.
 

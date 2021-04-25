@@ -39,19 +39,19 @@ api_location:
 - dwrite_core.h
 api_name:
 - DWriteCoreCreateFactory
-ms.openlocfilehash: 6606ad884fd65195e9922d348cc4fe565b95f2ee
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: 43e43e00385e10f0da0ba459cdc16e84562b72ec
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107882146"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955028"
 ---
 # <a name="dwritecorecreatefactory-function-dwrite_coreh"></a>Función DWriteCoreCreateFactory (dwrite_core.h)
 
 Crea un objeto de generador que se usa para la creación posterior de objetos DWriteCore individuales.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte de la implementación de DWriteCore [de DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea [Introducción a DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Esta API está disponible como parte de la implementación de DWriteCore de [DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea [Introducción a DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -74,13 +74,13 @@ Valor que especifica si el objeto de generador se compartirá, aislará o restri
 
 Tipo: <b>REFIID</b>
 
-Valor GUID que identifica la interfaz del generador de DirectWrite, como __uuidof(<a href="/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a>).
+Valor GUID que identifica la interfaz de generador de DirectWrite, como __uuidof(<a href="/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a>).
 
 `factory`
 
 Tipo: <b>IUnknown**</b>
 
-Dirección de un puntero al objeto de generador directWrite recién creado.
+Dirección de un puntero al objeto de generador de DirectWrite recién creado.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -90,11 +90,11 @@ Si este método se realiza correctamente, devuelve <b xmlns:loc="http://microsof
 
 ## <a name="examples"></a>Ejemplos
 
-Consulte el tema [de información general de DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) y la aplicación de ejemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Consulte el [tema de información general de DWriteCore](/windows/win32/directwrite/dwritecore-overview) y la aplicación de ejemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto es funcionalmente igual que la función [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) exportada por la versión del sistema de DirectWrite. La función DWriteCore tiene un nombre diferente para evitar ambigüedades.
+Esto es funcionalmente igual que la [función DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) exportada por la versión del sistema de DirectWrite. La función DWriteCore tiene un nombre diferente para evitar ambigüedades.
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
