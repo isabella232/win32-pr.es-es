@@ -1,17 +1,17 @@
 ---
 description: Especifica el tipo de desasignador que va a usar una función de código auxiliar.
 ms.assetid: 58228dfd-1d4b-41e5-b423-a54525021c22
-title: elemento desasignador
+title: deallocator, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3604f0efb366c3f88e2e0828c02344ee75606079
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 692ed2e57b3e649c0ee7af171f205c949496f9b4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276240"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994942"
 ---
-# <a name="deallocator-element"></a>elemento desasignador
+# <a name="deallocator-element"></a>elemento deallocator
 
 Especifica el tipo de desasignador que va a usar una función de código auxiliar.
 
@@ -35,18 +35,18 @@ No hay elementos secundarios.
 
 | Elemento                                               | Descripción                                                                                   |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementaciones para las funciones de código auxiliar para las operaciones de tipo de puerto.<br/> <br/> |
+| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementaciones para funciones de código auxiliar para operaciones de tipo de puerto.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo desasignador debe estar incluido en un par de <deallocator></deallocator> etiquetas. Las siguientes cadenas son valores de desasignador válidos:
+El tipo de desasignador debe incluirse en un par de <deallocator></deallocator> etiquetas. Las cadenas siguientes son valores de desasignador válidos:
 
 -   ninguno
 -   WSDFreeLinkedMemory
 -   CoTaskMemFree
--   free
+-   libre
 -   delete
 -   deleteArray
 -   Release
@@ -55,7 +55,7 @@ El tipo desasignador debe estar incluido en un par de <deallocator></deallocator
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

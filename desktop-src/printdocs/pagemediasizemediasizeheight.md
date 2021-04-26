@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 209b3024-60cf-47e0-8738-cd7795e38c2a
 title: PageMediaSizeMediaSizeHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db500f5a64254a0e0d152cb019d7f11f25471ce3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 305f67179343fa4acb2fa784113d63d5d2333b0b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105698000"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993712"
 ---
 # <a name="pagemediasizemediasizeheight"></a>PageMediaSizeMediaSizeHeight
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica la dirección MediaSizeHeight de la dimensión para la opción MediaSize personalizada.
+Especifica la dirección de MediaSizeHeight de dimensión para la opción MediaSize personalizada.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,11 +24,11 @@ Especifica la dirección MediaSizeHeight de la dimensión para la opción MediaS
 
 
 
-| Nombre                       |                                                           |
+| Nombre | Value |
 |----------------------------|-----------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                   |
 | Prefijo de ámbito <br/> | Página<br/>                                           |
-| Notas <br/>          | Vinculado a elemento PageMediaSize, opción personalizada<br/> |
+| Notas <br/>          | Vinculado al elemento PageMediaSize, opción Personalizada<br/> |
 
 
 
@@ -65,7 +65,7 @@ La estructura XML de este elemento es:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -77,9 +77,9 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | Múltiple<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | microns<br/>         |
+| UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

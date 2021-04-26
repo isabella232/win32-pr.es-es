@@ -4,12 +4,12 @@ ms.assetid: 9505ee5f-fdb9-41b8-9537-0c5d29f90168
 title: elemento proxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a27e217cfa3d0a9efd204a1b18c7b2f0ca16f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e9f03834ca59ede41f2f3c3dff00d7dacdd54db
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911962"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995762"
 ---
 # <a name="proxyfunctionimplementations-element"></a>elemento proxyFunctionImplementations
 
@@ -34,10 +34,10 @@ No hay atributos.
 | Elemento                                     | Descripción                                                                                                             |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | [**async**](async.md)<br/>           | Especifica si las operaciones asincrónicas se incluyen en las funciones de proxy generadas.<br/> <br/>         |
-| [**ceso**](events.md)<br/>         | Especifica si los eventos relacionados se incluyen en las funciones generadas.<br/> <br/>                        |
+| [**Eventos**](events.md)<br/>         | Especifica si los eventos relacionados se incluyen en las funciones generadas.<br/> <br/>                        |
 | [**faultInfo**](faultinfo.md)<br/>   | Especifica si los parámetros usados para pasar información de error se incluyen en las funciones generadas.<br/> <br/> |
-| [**sesión**](operation.md)<br/>   | Especifica una operación para la que se va a generar código.<br/> <br/>                                        |
-| [**portType**](porttype.md)<br/>     | Especifica el tipo de puerto para el que se generará el código.<br/> <br/>                                       |
+| [**Operación**](operation.md)<br/>   | Especifica una operación para la que se va a generar código.<br/> <br/>                                        |
+| [**portType**](porttype.md)<br/>     | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/>                                       |
 | [**proxyClass**](proxyclass.md)<br/> | Especifica el nombre de la clase de proxy del lado cliente.<br/> <br/>                                               |
 
 
@@ -61,7 +61,7 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 
@@ -69,7 +69,7 @@ No hay atributos.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

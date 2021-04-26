@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: f6fa0421-a125-4ead-a540-d2f7327a26b6
 title: PageScalingOffsetHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a475f7fa68cd961d9d7a7f42e40fc9ea80a72a4e
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1a91178f1506196ab505a90de8bf3a3163fa8a3c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104424139"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993743"
 ---
 # <a name="pagescalingoffsetheight"></a>PageScalingOffsetHeight
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el desplazamiento de escala en la dirección de ImageableSizeHeight para el escalado personalizado.
+Especifica el desplazamiento de escala en la dirección ImageableSizeHeight para el escalado personalizado.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,11 +24,11 @@ Especifica el desplazamiento de escala en la dirección de ImageableSizeHeight p
 
 
 
-| Nombre                       |                                                         |
+| Nombre | Value |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefijo de ámbito <br/> | Página<br/>                                         |
-| Notas <br/>          | Vinculado a elemento PageScaling, opción personalizada<br/> |
+| Notas <br/>          | Vinculado al elemento PageScaling, opción Personalizada<br/> |
 
 
 
@@ -65,7 +65,7 @@ La estructura XML de este elemento es:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -77,9 +77,9 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | Múltiple<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | microns<br/>         |
+| UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

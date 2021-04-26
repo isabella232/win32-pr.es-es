@@ -4,16 +4,16 @@ ms.assetid: f51da261-ca56-40e5-a6e0-47544d15d6e5
 title: elemento thisModelMetadataDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dda691d8fdea6b0773672b20a13eb4267e7100b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7951d6ce0385c976714b57511b4c0e18458f133d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696361"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995312"
 ---
 # <a name="thismodelmetadatadefinition-element"></a>elemento thisModelMetadataDefinition
 
-Genera una constante de C para los metadatos del fabricante especificados en el elemento [**thisModelMetadata**](thismodelmetadata.md) . Esta definición se usa en un archivo de código fuente.
+Genera una constante de C para los metadatos del fabricante especificados en el [**elemento thisModelMetadata.**](thismodelmetadata.md) Esta definición se usa en un archivo de código fuente.
 
 ## <a name="usage"></a>Uso
 
@@ -35,7 +35,7 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

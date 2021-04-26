@@ -1,18 +1,18 @@
 ---
-description: Una lista de nombres completos de XSD.
+description: Lista de nombres xsd calificados.
 title: Elemento Types
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5384c1b246278fd8011e5730c296ca9422a2208f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c29a94f7ad4816f7b737261bf52b064a5dd68f9
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715463"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994123"
 ---
 # <a name="types-element"></a>Elemento Types
 
-Una lista de nombres completos de XSD.
+Lista de nombres xsd calificados.
 
 ## <a name="usage"></a>Uso
 
@@ -34,8 +34,8 @@ No hay elementos secundarios.
 
 | Elemento                             | Descripción                                                            |
 |-------------------------------------|------------------------------------------------------------------------|
-| [**organizar**](host.md)<br/>     | Identifica el host del servicio.<br/> <br/>                    |
-| [**ubicada**](hosted.md)<br/> | Identifica un servicio definido por un host de servicio.<br/> <br/> |
+| [**Host**](host.md)<br/>     | Identifica el host de servicio.<br/> <br/>                    |
+| [**Alojados**](hosted.md)<br/> | Identifica un servicio definido por un host de servicio.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

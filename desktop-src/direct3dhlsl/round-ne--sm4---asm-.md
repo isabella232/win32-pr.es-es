@@ -1,23 +1,23 @@
 ---
-title: round_ne (SM4-ASM)
-description: Redondeo de punto flotante a Float entero. | round_ne (SM4-ASM)
+title: round_ne (sm4 - asm)
+description: Punto flotante redondeado a flotante entero. | round_ne (sm4 - asm)
 ms.assetid: 2D1A0786-F7DB-4D69-9F56-82ECD1EE7ABA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1c6f5e332453318dc0ad1a7806c3506343ff3b6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7f0efb2ff10b75e50ec05847dd25aa8448c760c7
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986486"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993932"
 ---
-# <a name="round_ne-sm4---asm"></a>Round \_ ne (SM4-ASM)
+# <a name="round_ne-sm4---asm"></a>round \_ ne (sm4 - asm)
 
-Redondeo de punto flotante a Float entero.
+Punto flotante redondeado a flotante entero.
 
 
 
-| Round \_ ne \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle\] |
+| round \_ ne \[ \_ sat \] dest \[ .mask , \] \[ - \] src0 \[ \_ abs \] \[ .swzzle\] |
 |------------------------------------------------------------------|
 
 
@@ -28,16 +28,16 @@ Redondeo de punto flotante a Float entero.
 
 | Elemento                                                            | Descripción                                                    |
 |-----------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección de los resultados de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los componentes de la operación.<br/>             |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección de los resultados de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los componentes de la operación.<br/>             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza un redondeo de punto flotante de modo de componente de los valores de *src0*, escribiendo valores de punto flotante enteros en el *destino*. **Round \_ ne** redondea hacia la más cercana.
+Esta instrucción realiza una ronda de punto flotante por componente de los valores de *src0,* escribiendo valores de punto flotante enteros *en dest*. **round \_ ne** se redondea hacia la par más cercana.
 
 En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números.
 
@@ -45,10 +45,9 @@ F significa número finito-real.
 
 
 
-|          |          |        |             |        |        |             |        |          |         |
+| **src**  | **-inf** | **-F** | **-denorm** | **-0** | **+0** | **+denorm** | **+F** | **+inf** | **NaN** |
 |----------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
-| **src**  | **-INF** | **-F** | **-denormalización** | **-0** | **+0** | **+ denormalización** | **+ F** | **+ INF** | **NaN** |
-| **dest** | -inf     | -F     | -0          | -0     | +0     | +0          | +F     | +inf     | NaN     |
+| **Dest** | -inf     | -F     | -0          | -0     | +0     | +0          | +F     | +inf     | NaN     |
 
 
 
@@ -66,7 +65,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -74,9 +73,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
@@ -89,7 +88,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

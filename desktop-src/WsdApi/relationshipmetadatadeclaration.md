@@ -1,19 +1,19 @@
 ---
-description: Genera una declaración adelantada para los metadatos de hospedaje especificados en el elemento hostMetadata.
+description: Genera una declaración de reenvío para los metadatos de hospedaje especificados en el elemento hostMetadata.
 ms.assetid: 595adb84-e1a7-4636-b61f-eb0a4b3057b9
 title: elemento relationshipMetadataDeclaration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a12d893cc79b609e43d5d40bf2df3d6ca888c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d6963cf69ef5d6622d5eacfc98bbb24c734cc39
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279092"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995102"
 ---
 # <a name="relationshipmetadatadeclaration-element"></a>elemento relationshipMetadataDeclaration
 
-Genera una declaración adelantada para los metadatos de hospedaje especificados en el elemento [**hostMetadata**](hostmetadata.md) . Esta declaración se usa en un archivo de encabezado.
+Genera una declaración de reenvío para los metadatos de hospedaje especificados en el [**elemento hostMetadata.**](hostmetadata.md) Esta declaración se usa en un archivo de encabezado.
 
 ## <a name="usage"></a>Uso
 
@@ -35,19 +35,19 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación hace referencia a los metadatos de hospedaje cuando inicializa el host. Este elemento se usa para generar archivos de inclusión incluidos en el código fuente de la aplicación.
+La aplicación hace referencia a los metadatos de hospedaje cuando inicializa el host. Este elemento se usa para generar archivos de incluyeción que se incluyen en el código fuente de la aplicación.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

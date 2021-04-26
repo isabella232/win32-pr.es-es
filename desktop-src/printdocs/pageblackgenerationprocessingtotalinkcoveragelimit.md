@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 7ccd02c2-7cec-4d9d-83c1-512f25f4045c
 title: PageBlackGenerationProcessingTotalInkCoverageLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07566926c2115855ea7321af90e7d1caebcd0a82
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 29918bfe48d1547a3c61b8d79425b36368f6d249
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105670109"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993882"
 ---
 # <a name="pageblackgenerationprocessingtotalinkcoveragelimit"></a>PageBlackGenerationProcessingTotalInkCoverageLimit
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica la suma máxima permitida de las cuatro coberturas de tinta en cualquier parte de una imagen.
+Especifica la suma máxima permitida de la cobertura de lápiz de cuatro en cualquier lugar de una imagen.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Especifica la suma máxima permitida de las cuatro coberturas de tinta en cualqu
 
 
 
-| Nombre                       |                                                            |
+| Nombre | Value |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                            |
@@ -64,7 +64,7 @@ La estructura XML de este elemento es:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -77,7 +77,7 @@ En la tabla siguiente se describen las características de las variables definid
 | MaxValue<br/>     | integer<br/> | 400<br/>             |
 | MinValue<br/>     | integer<br/> | 200<br/>             |
 | Múltiple<br/>     | integer<br/> | 1<br/>               |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 
 

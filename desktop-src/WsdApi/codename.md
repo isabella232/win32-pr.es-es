@@ -1,19 +1,19 @@
 ---
-description: Define el nombre que se va a utilizar para identificar el espacio de nombres en el código generado.
+description: Define el nombre que se va a usar para identificar el espacio de nombres en el código generado.
 ms.assetid: 4e476be2-fa73-4b3e-b0cc-799c8d16b5de
-title: Nombre del elemento
+title: elemento codeName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44c10b937f503c2d3994543db8852b5d7ee923b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9be7292135e79477d0a66d2a0667ebd51bd7567c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706923"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994952"
 ---
-# <a name="codename-element"></a>Nombre del elemento
+# <a name="codename-element"></a>elemento codeName
 
-Define el nombre que se va a utilizar para identificar el espacio de nombres en el código generado.
+Define el nombre que se va a usar para identificar el espacio de nombres en el código generado.
 
 ## <a name="usage"></a>Uso
 
@@ -35,21 +35,21 @@ No hay elementos secundarios.
 
 | Elemento                                                         | Descripción                                                              |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------|
-| [**System.IO**](namespace.md)<br/>                       | Espacio de nombres que se va a utilizar para la generación de código.<br/> <br/>       |
-| [**portTypeDeclarations**](porttypedeclarations.md)<br/> | Genera declaraciones de constantes de C para los tipos de puerto.<br/> <br/> |
+| [**Nombres**](namespace.md)<br/>                       | Espacio de nombres que se va a usar para la generación de código.<br/> <br/>       |
+| [**portTypeDeclarations**](porttypedeclarations.md)<br/> | Genera declaraciones constantes de C para tipos de puerto.<br/> <br/> |
 | [**portTypeDefinitions**](porttypedefinitions.md)<br/>   | Genera constantes de C para los tipos de puerto.<br/> <br/>             |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento invalida el nombre de código predeterminado usado para el código generado. De forma predeterminada, el código generado crea un nombre de código a partir del URI o nombre completo.
+Este elemento invalida el nombre de código predeterminado utilizado para el código generado. De forma predeterminada, el código generado crea un nombre de código a partir del URI o nombre completo.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

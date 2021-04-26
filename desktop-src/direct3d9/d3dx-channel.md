@@ -4,27 +4,26 @@ ms.assetid: b592b42a-0af1-49df-b159-4b84e4e12c95
 title: D3DX_CHANNEL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19efe9490501fe8116059dc6ea865d8b8931d18a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e870f01fd21fdb63f62278a3a5cac3b4da077e1e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538794"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995692"
 ---
-# <a name="d3dx_channel"></a>Canal de D3DX \_
+# <a name="d3dx_channel"></a>CANAL \_ D3DX
 
 Las marcas siguientes se usan para especificar en qué canales de una textura se va a operar.
 
 
 
-|                          |                                                                               |
+| \#Definir                 | Descripción                                                                   |
 |--------------------------|-------------------------------------------------------------------------------|
-| \#define                 | Descripción                                                                   |
-| \_Color rojo del canal D3DX \_       | Indica que se debe usar el canal rojo.                                     |
-| \_Azul del canal de D3DX \_      | Indica que se debe usar el canal azul.                                    |
-| \_Color verde del canal de D3DX \_     | Indica que se debe usar el canal verde.                                   |
-| \_Alfa del canal de D3DX \_     | Indica que se debe usar el canal alfa.                                   |
-| \_Luminancia del canal de D3DX \_ | Indica el luminances de los canales rojo, verde y azul que se deben usar. |
+| D3DX \_ CHANNEL \_ RED       | Indica que se debe usar el canal rojo.                                     |
+| D3DX \_ CHANNEL \_ BLUE      | Indica que se debe usar el canal azul.                                    |
+| D3DX \_ CHANNEL \_ GREEN     | Indica que se debe usar el canal verde.                                   |
+| CANAL D3DX \_ \_ ALPHA     | Indica que se debe usar el canal alfa.                                   |
+| LUMINOSIDAD DEL CANAL D3DX \_ \_ | Indica que se deben usar las luminosidads de los canales rojo, verde y azul. |
 
 
 
@@ -36,7 +35,7 @@ Las marcas siguientes se usan para especificar en qué canales de una textura se
 
 |                          |            |
 |--------------------------|------------|
-| Encabezado                   | d3dx9tex. h |
+| Encabezado                   | d3dx9tex.h |
 | Sistema operativo mínimo | Windows 98 |
 
 
@@ -47,7 +46,7 @@ Las marcas siguientes se usan para especificar en qué canales de una textura se
 
 <dl> <dt>
 
-[Constantes de D3DX](dx9-graphics-reference-d3dx-constants.md)
+[Constantes D3DX](dx9-graphics-reference-d3dx-constants.md)
 </dt> </dl>
 
  

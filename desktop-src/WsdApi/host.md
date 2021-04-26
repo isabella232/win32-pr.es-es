@@ -4,16 +4,16 @@ ms.assetid: 95066c04-5bdc-4c97-98b8-1da9928d9395
 title: elemento host
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec073a89cf1911ab363d757d36cd264c85c8a5c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9f051f6665715ecaa519a060e18a3cbf4912210
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908662"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993802"
 ---
 # <a name="host-element"></a>elemento host
 
-Define los elementos [**ServiceID**](serviceid.md) y [**Types**](types.md) para el host de servicio.
+Define los [**elementos ServiceID**](serviceid.md) y [**Types**](types.md) para el host de servicio.
 
 ## <a name="usage"></a>Uso
 
@@ -34,7 +34,7 @@ No hay atributos.
 | Elemento                                   | Descripción                                                                 |
 |-------------------------------------------|-----------------------------------------------------------------------------|
 | [**ServiceID**](serviceid.md)<br/> | Define el identificador de servicio para el host de servicio.<br/> <br/> |
-| [**Tipos**](types.md)<br/>         | Define una lista de nombres completos de XSD.<br/> <br/>               |
+| [**Tipos**](types.md)<br/>         | Define una lista de nombres completos XSD.<br/> <br/>               |
 
 
 
@@ -53,7 +53,7 @@ No hay atributos.
 
 | Elemento                                         | Descripción                                                                   |
 |-------------------------------------------------|-------------------------------------------------------------------------------|
-| [**hostMetadata**](hostmetadata.md)<br/> | Los metadatos de hospedaje para el dispositivo que se va a implementar.<br/> <br/> |
+| [**hostMetadata**](hostmetadata.md)<br/> | Metadatos de hospedaje para el dispositivo que se va a implementar.<br/> <br/> |
 
 
 
@@ -61,7 +61,7 @@ No hay atributos.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

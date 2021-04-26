@@ -1,17 +1,17 @@
 ---
 description: Especifica si las operaciones asincrónicas se incluyen en las funciones de proxy generadas.
 ms.assetid: 7b57d5c6-589b-4e03-bfcf-1faa671ebd77
-title: Async (elemento)
+title: async, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea04eaa66fbdadfc784650c1a451cebf171f6372
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6cbc68d0a5dea30f4b4d179a54539ac3f9516a4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083249"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994962"
 ---
-# <a name="async-element"></a>Async (elemento)
+# <a name="async-element"></a>async, elemento
 
 Especifica si las operaciones asincrónicas se incluyen en las funciones de proxy generadas.
 
@@ -41,17 +41,17 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores posibles son 1 (operaciones asincrónicas incluidas) y 0 (valor predeterminado, se excluyen las operaciones asincrónicas).
+Los valores posibles son 1 (operaciones asincrónicas incluidas) y 0 (valor predeterminado, operaciones asincrónicas excluidas).
 
-Un proxy puede tener tanto versiones asincrónicas como sincrónicas de las mismas operaciones.
+Un proxy puede tener versiones asincrónicas y sincrónicas de las mismas operaciones.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

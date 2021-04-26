@@ -4,12 +4,12 @@ ms.assetid: 2b4a4016-cc5d-4912-8e08-ce3a11ab0a06
 title: elemento hostBuilderImplementation
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c9cfabb9ab4193162044420fc3980f0bbeeb55a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97d333287acd199f4fe2aa8967a1b8d6458ff3ae
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715806"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994922"
 ---
 # <a name="hostbuilderimplementation-element"></a>elemento hostBuilderImplementation
 
@@ -33,7 +33,7 @@ No hay atributos.
 
 | Elemento                                           | Descripción                                                      |
 |---------------------------------------------------|------------------------------------------------------------------|
-| [**hostedService**](hostedservice.md)<br/> | El servicio que se va a incluir para el host. <br/> <br/> |
+| [**hostedService**](hostedservice.md)<br/> | Servicio que se va a incluir para el host. <br/> <br/> |
 
 
 
@@ -49,7 +49,7 @@ hostedService+
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
@@ -57,7 +57,7 @@ hostedService+
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

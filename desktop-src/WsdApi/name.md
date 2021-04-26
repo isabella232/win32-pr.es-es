@@ -1,19 +1,19 @@
 ---
-description: Especifica un nombre completo en el espacio de nombres.
+description: Especifica un nombre completo en el espacio de nombres .
 ms.assetid: cba708cc-1a4a-4e46-9376-065d3c879c38
-title: Name (elemento)
+title: elemento name
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc89f45b85c66c69ac1f380825db61c1e4ff93c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e6997f75ce554e6a91fb594b8b31afa22696dda
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706922"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994272"
 ---
-# <a name="name-element"></a>Name (elemento)
+# <a name="name-element"></a>elemento name
 
-Especifica un nombre completo en el espacio de nombres.
+Especifica un nombre completo en el espacio de nombres .
 
 ## <a name="usage"></a>Uso
 
@@ -35,7 +35,7 @@ No hay elementos secundarios.
 
 | Elemento                                   | Descripción                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
-| [**System.IO**](namespace.md)<br/> | Espacio de nombres que se va a utilizar para la generación de código.<br/> <br/> |
+| [**Nombres**](namespace.md)<br/> | Espacio de nombres que se usará para la generación de código.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

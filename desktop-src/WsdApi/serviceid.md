@@ -1,19 +1,19 @@
 ---
-description: URI que representa el identificador del servicio.
+description: URI que representa el identificador de servicio.
 ms.assetid: ef676f02-56a7-4b3a-9ca3-e7fa3c494ec7
 title: Elemento ServiceID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 305e97250b0b33d276dced4b5d454aec9298387c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4c8b02fa8ecfa936aa658a1f18242e4f14eb0dd
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707256"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995112"
 ---
 # <a name="serviceid-element"></a>Elemento ServiceID
 
-URI que representa el identificador del servicio.
+URI que representa el identificador de servicio.
 
 ## <a name="usage"></a>Uso
 
@@ -35,8 +35,8 @@ No hay elementos secundarios.
 
 | Elemento                             | Descripción                                                                                                                                                                                                                                                                                                                          |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**organizar**](host.md)<br/>     | Define los elementos **ServiceID** y [**Types**](types.md) para el host de servicio. Si no se proporciona explícitamente, WSDAPI no proporcionará datos predeterminados en respuesta a las solicitudes de metadatos.<br/> <br/>                                                                                                                     |
-| [**ubicada**](hosted.md)<br/> | Define los elementos **ServiceID** y [**Types**](types.md) para los servicios proporcionados por este host de servicio. Cada servicio proporcionado por este host de servicio debe tener su propia información de elemento [**hospedado**](hosted.md) para asegurarse de que el servicio se publique correctamente en las respuestas a las solicitudes de metadatos.<br/> <br/> |
+| [**Host**](host.md)<br/>     | Define los **elementos ServiceID** y [**Types**](types.md) para el host de servicio. Si no se proporciona explícitamente, WSDAPI no suministrará ningún dato predeterminado en respuesta a las solicitudes de metadatos.<br/> <br/>                                                                                                                     |
+| [**Alojados**](hosted.md)<br/> | Define los **elementos ServiceID** y [**Types**](types.md) para los servicios proporcionados por este host de servicio. Cada servicio proporcionado por este host [](hosted.md) de servicio debe tener su propia información de elemento hospedado para asegurarse de que el servicio se publica correctamente en respuestas a solicitudes de metadatos.<br/> <br/> |
 
 
 
@@ -44,7 +44,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

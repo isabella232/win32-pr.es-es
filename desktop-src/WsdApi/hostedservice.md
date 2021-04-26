@@ -1,19 +1,19 @@
 ---
-description: Define un servicio que se va a hospedar en una función de host Builder.
+description: Define un servicio que se va a hospedar en una función del generador de host.
 ms.assetid: 87ff447a-ced0-4079-b46d-239f0db37250
-title: hostedService (elemento)
+title: elemento hostedService
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfcf2f4c67cadf90279221fd5bdfd518e285e844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e96c9f6e010989f4844d93299bb34f1ab8893236
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908661"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994792"
 ---
-# <a name="hostedservice-element"></a>hostedService (elemento)
+# <a name="hostedservice-element"></a>elemento hostedService
 
-Define un servicio que se va a hospedar en una función de host Builder.
+Define un servicio que se va a hospedar en una función del generador de host.
 
 ## <a name="usage"></a>Uso
 
@@ -33,10 +33,10 @@ No hay atributos.
 
 | Elemento                                     | Descripción                                                                                                                                                               |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Nombre**](codename.md)<br/>     | Especifica el nombre que se va a usar para el tipo de puerto en el código generado. De forma predeterminada, el nombre del código se genera a partir del nombre completo del tipo de puerto.<br/> <br/> |
+| [**Codename**](codename.md)<br/>     | Especifica el nombre que se usará para el tipo de puerto en el código generado. De forma predeterminada, el nombre del código se genera a partir del nombre completo del tipo de puerto.<br/> <br/> |
 | [**portType**](porttype.md)<br/>     | Tipo de puerto para el que se va a generar el código.<br/> <br/>                                                                                                       |
 | [**proxyClass**](proxyclass.md)<br/> | Nombre de clase que se generará a partir de la función de generador.<br/> <br/>                                                                                                      |
-| [**ServiceID**](serviceid.md)<br/>   | URI que representa el identificador del servicio.<br/> <br/>                                                                                                      |
+| [**ServiceID**](serviceid.md)<br/>   | URI que representa el identificador de servicio.<br/> <br/>                                                                                                      |
 
 
 
@@ -56,7 +56,7 @@ codeName(
 
 | Elemento                         | Descripción                                                                  |
 |---------------------------------|------------------------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Especificación del archivo de salida para el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Especificación del archivo de salida para el generador de código.<br/> <br/> |
 
 
 
@@ -64,7 +64,7 @@ codeName(
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

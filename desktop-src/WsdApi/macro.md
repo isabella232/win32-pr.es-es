@@ -1,19 +1,19 @@
 ---
-description: Define el texto o el CDATA que va a reutilizar el elemento include.
+description: Define el texto o CDATA que el elemento include va a reutilizar.
 ms.assetid: bf5cc1e2-b08e-45b6-8e07-5c69865b695b
-title: elemento macro
+title: macro, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8759d4afb61883b8bf41472f276882643cfa552
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f794566b0fd789c463d404289644976c8301a2e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277116"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994332"
 ---
-# <a name="macro-element"></a>elemento macro
+# <a name="macro-element"></a>macro, elemento
 
-Define el texto o el CDATA que va a reutilizar el elemento [**include**](include.md) .
+Define el texto o CDATA que va a reutilizar el [**elemento include.**](include.md)
 
 ## <a name="usage"></a>Uso
 
@@ -28,7 +28,7 @@ Define el texto o el CDATA que va a reutilizar el elemento [**include**](include
 
 | Atributo           | Tipo                         | Obligatorio       | Descripción                                   |
 |---------------------|------------------------------|----------------|-----------------------------------------------|
-| **name**<br/> | cadena de caracteres \_<br/> | Sí<br/> | Nombre de la macro.<br/> <br/> |
+| **name**<br/> | cadena \_ de caracteres<br/> | Sí<br/> | Nombre de la macro.<br/> <br/> |
 
 
 
@@ -42,15 +42,15 @@ No hay elementos secundarios.
 
 | Elemento                                     | Descripción                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------------------|
-| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código de WSDAPI.<br/> <br/> |
+| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código WSDAPI.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WsdCodeGen define una macro denominada **DoNotModify**. Cuando se incluye esta macro, el código generado contiene un bloque de comentarios de alta visibilidad que indica a los desarrolladores que no modifiquen el código generado.
+WsdCodeGen define una macro denominada **DoNotModify.** Cuando se incluye esta macro, el código generado contiene un bloque de comentarios de alta visibilidad que indica a los desarrolladores que no modifiquen el código generado.
 
-El siguiente XML muestra cómo incluir la macro **DoNotModify** . Este XML se puede Agregar a un archivo de configuración XML para WsdCodeGen.
+En el xml siguiente se muestra cómo incluir la macro **DoNotModify.** Este XML se puede agregar a un archivo de configuración XML para WsdCodeGen.
 
 ``` syntax
 <include macro="DoNotModify">
@@ -60,7 +60,7 @@ El siguiente XML muestra cómo incluir la macro **DoNotModify** . Este XML se pu
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

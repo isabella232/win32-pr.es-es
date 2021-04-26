@@ -1,19 +1,19 @@
 ---
-description: Especifica el tipo desasignador que va a usar una función de código auxiliar de operaciones.
+description: Especifica el desasignador de tipos que va a usar una función de código auxiliar de operaciones.
 ms.assetid: 52e6235d-90e6-4559-b17c-14ca3be896ff
-title: elemento operationDeallocator
+title: operationDeallocator, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c214b5dbc3245f63797c55880fe052d5c3ced15
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe3ae0d9f1d37a478ceca0895806ade6a011747e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697219"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994292"
 ---
-# <a name="operationdeallocator-element"></a>elemento operationDeallocator
+# <a name="operationdeallocator-element"></a>operationDeallocator, elemento
 
-Especifica el tipo desasignador que va a usar la función de código auxiliar de una operación.
+Especifica el desasignador de tipos que va a usar la función de código auxiliar de una operación.
 
 ## <a name="usage"></a>Uso
 
@@ -29,8 +29,8 @@ Especifica el tipo desasignador que va a usar la función de código auxiliar de
 
 | Atributo                  | Tipo                         | Obligatorio       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----------------------------|------------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **desasignador**<br/> | cadena de caracteres \_<br/> | Sí<br/> | Desasignador que se va a usar para la operación.<br/> <br/> Las cadenas siguientes son valores válidos.<br/> <br/> <dl><span id="none"></span><span id="NONE"></span><dt>* * * * ninguno * *</dt> <span id="WSDFreeLinkedMemory"></span> <span id="wsdfreelinkedmemory"></span> <span id="WSDFREELINKEDMEMORY"></span> * * * * * * <dt>WSDFreeLinkedMemory * *</dt> <span id="CoTaskMemFree"></span> <span id="cotaskmemfree"></span> <span id="COTASKMEMFREE"></span> * * * <dt>* * * * CoTaskMemFree * *</dt> <span id="free"></span> <span id="FREE"></span> * * <dt>* * * * gratis * *</dt> <span id="delete"></span> <span id="DELETE"></span> * * <dt>* * * * eliminar * *</dt> <span id="deleteArray"></span> <span id="deletearray"></span> <span id="DELETEARRAY"></span> * * * * * * <dt>deleteArray * *</dt> <span id="Release"></span> <span id="release"></span> <span id="RELEASE"></span> * * * * * * * <dt>Versión * *</dt> * * </dl> |
-| **operation**<br/>   | cadena de caracteres \_<br/> | Sí<br/> | Nombre de la operación.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **desasignador**<br/> | cadena \_ de caracteres<br/> | Sí<br/> | Desasignador que se usará para la operación.<br/> <br/> Las cadenas siguientes son valores válidos.<br/> <br/> <dl><span id="none"></span><span id="NONE"></span><dt>**none**</dt> <span id="WSDFreeLinkedMemory"></span> <span id="wsdfreelinkedmemory"></span> <span id="WSDFREELINKEDMEMORY"></span> <dt>***WSDFreeLinkedMemory**</dt> <span id="CoTaskMemFree"></span> <span id="cotaskmemfree"></span> <span id="COTASKMEMFREE"></span> <dt>*:CoTaskMemFree**</dt> <span id="free"></span> <span id="FREE"></span> <dt>**free**</dt> <span id="delete"></span> <span id="DELETE"></span> <dt>*"delete*"</dt> <span id="deleteArray"></span> <span id="deletearray"></span> <span id="DELETEARRAY"></span> <dt>*"deleteArray*"</dt> <span id="Release"></span> <span id="release"></span> <span id="RELEASE"></span> <dt>**Release***</dt> </dl> |
+| **operation**<br/>   | cadena \_ de caracteres<br/> | Sí<br/> | Nombre de la operación.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 
 
@@ -52,7 +52,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

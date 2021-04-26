@@ -4,12 +4,12 @@ ms.assetid: 3c08e913-b47e-4ca7-b8bc-7b036e57db01
 title: elemento hostBuilderDeclaration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e16576050efc76264f42dff6a19549f69933185b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bf3ddd474b4000b053b49157f1fc4b2eb399d34
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706976"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994912"
 ---
 # <a name="hostbuilderdeclaration-element"></a>elemento hostBuilderDeclaration
 
@@ -33,7 +33,7 @@ No hay atributos.
 
 | Elemento                                   | Descripción                                                                                                                                                                                                                  |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**interfaz**](interface.md)<br/> | Nombre de la interfaz de servicio que se va a incluir para el host. El valor de este elemento debe coincidir con el valor del elemento secundario [**interface**](interface.md) de [**hostedService**](hostedservice.md). <br/> <br/> |
+| [**interfaz**](interface.md)<br/> | Nombre de la interfaz de servicio que se va a incluir para el host. El valor de este elemento debe coincidir con el valor del elemento secundario [**de**](interface.md) interfaz [**de hostedService**](hostedservice.md). <br/> <br/> |
 
 
 
@@ -49,7 +49,7 @@ interface+
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 
@@ -57,7 +57,7 @@ interface+
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

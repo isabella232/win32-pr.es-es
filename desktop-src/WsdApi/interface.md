@@ -1,19 +1,19 @@
 ---
-description: Nombre de la interfaz que se va a devolver mediante QueryInterface.
+description: Nombre de la interfaz que va a devolver QueryInterface.
 ms.assetid: 3db34c89-a97d-47a2-97dd-4bb80da09e82
-title: elemento de la interfaz
+title: elemento interface
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd9e4f676c5b1a1449442004b32360f8394f5700
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8a64b349a32751ab60e86669ea766c62686d9cc
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706145"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994722"
 ---
-# <a name="interface-element"></a>elemento de la interfaz
+# <a name="interface-element"></a>elemento interface
 
-Nombre de la interfaz que se va a devolver mediante QueryInterface.
+Nombre de la interfaz que va a devolver QueryInterface.
 
 ## <a name="usage"></a>Uso
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

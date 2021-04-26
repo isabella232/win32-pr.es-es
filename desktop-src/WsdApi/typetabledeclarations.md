@@ -1,19 +1,19 @@
 ---
-description: Genera declaraciones de constantes de C para las tablas de esquemas XML para los tipos conocidos.
+description: Genera declaraciones constantes de C para tablas de esquema XML para tipos conocidos.
 ms.assetid: e55a140c-3b2b-4f90-99e3-f62c892a8bae
 title: elemento typeTableDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: babb4078033a02dbd03aad671d6a4d728936d1d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c983d1850c84295ff4128b20a655faa65c36995f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001420"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995722"
 ---
 # <a name="typetabledeclarations-element"></a>elemento typeTableDeclarations
 
-Genera declaraciones de constantes de C para las tablas de esquemas XML para los tipos conocidos.
+Genera declaraciones constantes de C para tablas de esquema XML para tipos conocidos.
 
 ## <a name="usage"></a>Uso
 
@@ -35,19 +35,19 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Gran parte del código generado hace referencia a las tablas de esquemas XML. Este elemento se usa para generar archivos de inclusión.
+Gran parte del código generado hace referencia a las tablas de esquema XML. Este elemento se usa para generar archivos de incluir.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

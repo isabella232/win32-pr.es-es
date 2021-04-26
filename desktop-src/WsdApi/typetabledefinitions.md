@@ -1,19 +1,19 @@
 ---
-description: Genera constantes de C para las tablas de esquemas XML para los tipos conocidos.
+description: Genera constantes de C para tablas de esquema XML para tipos conocidos.
 ms.assetid: caba3776-fdc2-4a08-8e4c-d8e3b583d7ba
 title: elemento typeTableDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ccc8d150c0e983583d5b8055e57177aacdeb58c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed400e9c0d293599ad686354b6493fd7d04b866f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811395"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995302"
 ---
 # <a name="typetabledefinitions-element"></a>elemento typeTableDefinitions
 
-Genera constantes de C para las tablas de esquemas XML para los tipos conocidos.
+Genera constantes de C para tablas de esquema XML para tipos conocidos.
 
 ## <a name="usage"></a>Uso
 
@@ -35,19 +35,19 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento se utiliza generalmente en archivos de código fuente de C para proporcionar las tablas de esquemas XML declaradas por [**typeTableDeclarations**](typetabledeclarations.md).
+Este elemento se usa generalmente en los archivos de código fuente de C para proporcionar las tablas de esquema XML declaradas por [**typeTableDeclarations**](typetabledeclarations.md).
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

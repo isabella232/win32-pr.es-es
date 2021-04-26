@@ -1,19 +1,19 @@
 ---
-description: Genera declaraciones IDL para las funciones de proxy de suscripción y cancelación de suscripción para las operaciones de notificación de tipo de puerto.
+description: Genera declaraciones IDL para las funciones de proxy de suscripción o cancelación de suscripción para las operaciones de notificación de tipo de puerto.
 ms.assetid: 240ef2b3-ed72-45bb-b653-441c4e5540b5
 title: elemento subscriptionIdlFunctionDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e1eba60e327778efb1589436a09e62d043d2960
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f4d738dd06ccbf034702cbb7d6494a28a229d07
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912221"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995372"
 ---
 # <a name="subscriptionidlfunctiondeclarations-element"></a>elemento subscriptionIdlFunctionDeclarations
 
-Genera declaraciones IDL para las funciones de proxy de suscripción y cancelación de suscripción para las operaciones de notificación de tipo de puerto.
+Genera declaraciones IDL para las funciones de proxy de suscripción o cancelación de suscripción para las operaciones de notificación de tipo de puerto.
 
 ## <a name="usage"></a>Uso
 
@@ -40,9 +40,9 @@ Genera declaraciones IDL para las funciones de proxy de suscripción y cancelaci
 
 | Elemento                                                           | Descripción                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [**notificationInterface**](notificationinterface.md)<br/> | Especifica el nombre de la interfaz de notificación utilizada con las suscripciones de evento.<br/> <br/> |
-| [**sesión**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
-| [**portType**](porttype.md)<br/>                           | Especifica el tipo de puerto para el que se generará el código.<br/> <br/>                      |
+| [**notificationInterface**](notificationinterface.md)<br/> | Especifica el nombre de la interfaz de notificación que se usa con las suscripciones de eventos.<br/> <br/> |
+| [**Operación**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
+| [**portType**](porttype.md)<br/>                           | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/>                      |
 
 
 
@@ -62,7 +62,7 @@ Genera declaraciones IDL para las funciones de proxy de suscripción y cancelaci
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 
@@ -70,7 +70,7 @@ Genera declaraciones IDL para las funciones de proxy de suscripción y cancelaci
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

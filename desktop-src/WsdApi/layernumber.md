@@ -4,12 +4,12 @@ ms.assetid: ad67a6fb-4bb6-4550-a9e9-f5219f3868c6
 title: elemento layerNumber
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c22a20db7817e449b05c943c9016b6002f35b54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33c33ee4468ab81f030bfd8b49dfe104bbe76248
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277117"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995492"
 ---
 # <a name="layernumber-element"></a>elemento layerNumber
 
@@ -35,23 +35,23 @@ No hay elementos secundarios.
 
 | Elemento                                     | Descripción                                                                          |
 |---------------------------------------------|--------------------------------------------------------------------------------------|
-| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código de WSDAPI.<br/> <br/> |
+| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código WSDAPI.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los números de capa se utilizan en tablas en tiempo de ejecución para distinguir un nivel de código para otro. WSDAPI utiliza código generado que tiene un número de capa de 0.
+Los números de capa se usan en tablas en tiempo de ejecución para distinguir una capa de código para otra. El propio WSDAPI usa código generado que tiene un número de capa de 0.
 
-Normalmente, este valor será 1, lo que indica que el código generado está en capas en la parte superior de WSDAPI y no en otra capa. En algunos casos, se pueden usar números más altos. Por ejemplo, si una empresa produce código para una clase de dispositivo (capa numerada 1), es posible que un fabricante de hardware determinado desee agregar una capa 2 con número de capa adicional.
+Normalmente, este valor será 1, lo que indica que el código generado está en capas sobre WSDAPI y ninguna otra capa. En algunos casos, se pueden usar números más altos. Por ejemplo, si una empresa genera código para una clase de dispositivo (nivel numerado 1), es posible que un proveedor de hardware determinado quiera agregar una capa adicional numerada de capa 2.
 
-Los valores válidos, excepto en el caso del propio WSDAPI, son mayores que 0 y menores que 16.
+Los valores legales, excepto en el caso del propio WSDAPI, son mayores que 0 y menores que 16.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

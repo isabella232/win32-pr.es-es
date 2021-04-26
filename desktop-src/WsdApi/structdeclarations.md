@@ -1,19 +1,19 @@
 ---
-description: Genera declaraciones de estructura de C para los tipos conocidos.
+description: Genera declaraciones de estructura de C para tipos conocidos.
 ms.assetid: bfef9302-eea6-4957-b67d-d497f5db99a5
-title: elemento structDeclarations
+title: Elemento structDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f466713930516e37166ff86f7462bae74dedd6c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e80f5a30ffb5de0d30a4b66a1b3b9204fce43c4e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707255"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994672"
 ---
-# <a name="structdeclarations-element"></a>elemento structDeclarations
+# <a name="structdeclarations-element"></a>Elemento structDeclarations
 
-Genera declaraciones de estructura de C para los tipos conocidos.
+Genera declaraciones de estructura de C para tipos conocidos.
 
 ## <a name="usage"></a>Uso
 
@@ -35,19 +35,19 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La mayoría del código generado y el código de aplicación hacen referencia a las estructuras de los tipos conocidos. Este elemento se usa para generar archivos de inclusión.
+Gran parte del código generado y el código de aplicación hacen referencia a las estructuras para tipos conocidos. Este elemento se usa para generar archivos de incluir.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

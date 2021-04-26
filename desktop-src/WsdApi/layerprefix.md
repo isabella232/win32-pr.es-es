@@ -1,19 +1,19 @@
 ---
-description: Define el prefijo que se va a usar en el código generado para garantizar la unicidad de los símbolos generados.
+description: Define el prefijo que se usará en el código generado para garantizar la unidad de los símbolos generados.
 ms.assetid: 50cb443a-15ae-4f8f-b5f7-b8708810a6c3
 title: elemento layerPrefix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b712edee4b33c7158280b9d310624371fd58688
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98970013c72600affd7d4d9e7a71781f477cd87d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155985"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994702"
 ---
 # <a name="layerprefix-element"></a>elemento layerPrefix
 
-Define el prefijo que se va a usar en el código generado para garantizar la unicidad de los símbolos generados.
+Define el prefijo que se usará en el código generado para garantizar la unidad de los símbolos generados.
 
 ## <a name="usage"></a>Uso
 
@@ -35,13 +35,13 @@ No hay elementos secundarios.
 
 | Elemento                                     | Descripción                                                                          |
 |---------------------------------------------|--------------------------------------------------------------------------------------|
-| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código de WSDAPI.<br/> <br/> |
+| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento raíz de un archivo de script XML del generador de código WSDAPI.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada script del generador de código debe definir una cadena de prefijo única para los módulos creados. Por ejemplo, los scripts de fotogramas de imagen usan un prefijo "PFDEMO".
+Cada script generador de código debe definir una cadena de prefijo única para los módulos creados. Por ejemplo, los scripts de fotogramas de imagen usan un prefijo de "PFDEMO".
 
 WSDAPI usa el prefijo "WSD".
 
@@ -49,7 +49,7 @@ WSDAPI usa el prefijo "WSD".
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

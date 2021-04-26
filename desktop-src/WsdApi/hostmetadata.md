@@ -1,19 +1,19 @@
 ---
-description: Define los metadatos de hospedaje para el dispositivo que se va a implementar. Este elemento se usa solo para implementaciones de dispositivos (hosts).
+description: Define los metadatos de hospedaje para el dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).
 ms.assetid: ca7bc5ea-8ab2-4233-86d2-5b793021b8ee
-title: elemento hostMetadata
+title: hostMetadata, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: becd6bc3eab6b1aa1d95414c6348288e0d29dbd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9cf6fa139a2723ed90dfe281fc7b054016386fa
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659975"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994802"
 ---
-# <a name="hostmetadata-element"></a>elemento hostMetadata
+# <a name="hostmetadata-element"></a>hostMetadata, elemento
 
-Define los metadatos de hospedaje para el dispositivo que se va a implementar. Este elemento se usa solo para implementaciones de dispositivos (hosts).
+Define los metadatos de hospedaje para el dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).
 
 ## <a name="usage"></a>Uso
 
@@ -33,8 +33,8 @@ No hay atributos.
 
 | Elemento                             | Descripción                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**organizar**](host.md)<br/>     | Define los elementos ServiceID y [**Types**](types.md) para el host de servicio. Si no se proporciona explícitamente, WSDAPI no proporcionará datos predeterminados en respuesta a las solicitudes de metadatos.<br/> <br/>                                                                                                                                          |
-| [**ubicada**](hosted.md)<br/> | Define los elementos [**ServiceID**](serviceid.md) y [**Types**](types.md) para los servicios proporcionados por este host de servicio. Cada servicio proporcionado por este host de servicio debe tener su propia información de elemento [**hospedado**](hosted.md) para asegurarse de que el servicio se publique correctamente en las respuestas a las solicitudes de metadatos.<br/> <br/> |
+| [**Host**](host.md)<br/>     | Define los elementos ServiceID y [**Types**](types.md) para el host de servicio. Si no se proporciona explícitamente, WSDAPI no suministrará ningún dato predeterminado en respuesta a las solicitudes de metadatos.<br/> <br/>                                                                                                                                          |
+| [**Alojados**](hosted.md)<br/> | Define los [**elementos ServiceID**](serviceid.md) y [**Types**](types.md) para los servicios proporcionados por este host de servicio. Cada servicio proporcionado por este host [](hosted.md) de servicio debe tener su propia información de elemento hospedado para asegurarse de que el servicio se publica correctamente en respuestas a solicitudes de metadatos.<br/> <br/> |
 
 
 
@@ -57,17 +57,17 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los metadatos de hospedaje aparecen en este elemento en un formato similar al especificado en el perfil de dispositivo. **hostMetadata** es ligeramente diferente del formato descrito en el perfil de dispositivo, ya que la única propiedad de referencia que admite es el identificador de servicio.
+Los metadatos de hospedaje aparecen en este elemento con un formato similar al especificado en el perfil de dispositivo. **hostMetadata es** ligeramente diferente del formato descrito en el perfil de dispositivo en que la única propiedad de referencia que admite es el identificador de servicio.
 
-El elemento [**relationshipMetadataDefinition**](relationshipmetadatadefinition.md) se usa posteriormente para generar una constante de C que contiene esta información.
+El [**elemento relationshipMetadataDefinition**](relationshipmetadatadefinition.md) se usa posteriormente para generar una constante de C que contiene esta información.
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

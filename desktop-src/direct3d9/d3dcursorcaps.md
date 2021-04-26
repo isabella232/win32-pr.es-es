@@ -1,26 +1,25 @@
 ---
-description: Marcas de capacidad de cursor de controlador.
+description: Marcas de funcionalidad del cursor del controlador.
 ms.assetid: b763b994-6488-40c0-9c14-e00b19e818b0
 title: D3DCURSORCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0dd9c0c83212807fc8b449c0bb0ee7a1a8196ef
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4b5915c133b3f3c3df3b344a2a9b2a72626411d5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423332"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995742"
 ---
 # <a name="d3dcursorcaps"></a>D3DCURSORCAPS
 
-Marcas de capacidad de cursor de controlador.
+Marcas de funcionalidad del cursor del controlador.
 
 
 
-|                       |             |                                                                                                 |
+| \#Definir              | Value       | Descripción                                                                                     |
 |-----------------------|-------------|-------------------------------------------------------------------------------------------------|
-| \#define              | Value       | Descripción                                                                                     |
-| COLOR de D3DCURSORCAPS \_  | 0x00000001L | El controlador admite el cursor de color de hardware en los modos de resolución de al menos alto (alto >= 400). |
+| D3DCURSORCAPS \_ COLOR  | 0x00000001L | El controlador admite el cursor de color de hardware en al menos modos de alta resolución (altura >= 400). |
 | D3DCURSORCAPS \_ LOWRES | 0x00000002L | El controlador admite el cursor de color de hardware en modos de baja resolución (altura < 400).            |
 
 
@@ -33,7 +32,7 @@ Marcas de capacidad de cursor de controlador.
 
 |                          |            |
 |--------------------------|------------|
-| Encabezado                   | d3d9caps. h |
+| Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |
 
 

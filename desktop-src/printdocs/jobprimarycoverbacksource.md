@@ -1,19 +1,19 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: b5c8e79c-cdae-4c53-b594-915726423b4f
 title: JobPrimaryCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a8c15d5f5b8545b70f19bf181a00d05a8379212
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2145bae0843323928d8a7d016fc61f10c0e388ac
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104083598"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993982"
 ---
 # <a name="jobprimarycoverbacksource"></a>JobPrimaryCoverBackSource
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el origen de una hoja principal de cobertura trasera personalizada para el trabajo.
 
@@ -24,7 +24,7 @@ Especifica el origen de una hoja principal de cobertura trasera personalizada pa
 
 
 
-| Nombre                       |                                           |
+| Nombre | Value |
 |----------------------------|-------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                   |
 | Prefijo de ámbito <br/> | Trabajo<br/>                            |
@@ -61,7 +61,7 @@ La estructura XML de este elemento es:
 </psf:ParameterDef>      
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -73,7 +73,7 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxLength<br/>    | integer<br/> | no definido<br/>       |
 | MinLength<br/>    | integer<br/> | 1<br/>               |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | caracteres<br/>      |
 
 
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

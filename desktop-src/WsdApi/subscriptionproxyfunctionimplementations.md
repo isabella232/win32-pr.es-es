@@ -1,19 +1,19 @@
 ---
-description: Genera implementaciones para las funciones de proxy de suscripción y cancelación de suscripción para las operaciones de notificación de tipo de puerto.
+description: Genera implementaciones para las funciones de proxy de suscripción o cancelación de suscripción para las operaciones de notificación de tipo de puerto.
 ms.assetid: aa26a3f1-df1e-4caa-9ada-6f4a6627b6b8
 title: elemento subscriptionProxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb57fa21910f9b39440257bc72918519b35c6a57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9a3cba202c05d3f8b43b31c292dad8d601dc4e4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154237"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995322"
 ---
 # <a name="subscriptionproxyfunctionimplementations-element"></a>elemento subscriptionProxyFunctionImplementations
 
-Genera implementaciones para las funciones de proxy de suscripción y cancelación de suscripción para las operaciones de notificación de tipo de puerto.
+Genera implementaciones para las funciones de proxy de suscripción o cancelación de suscripción para las operaciones de notificación de tipo de puerto.
 
 ## <a name="usage"></a>Uso
 
@@ -40,9 +40,9 @@ Genera implementaciones para las funciones de proxy de suscripción y cancelaci�
 
 | Elemento                                                           | Descripción                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [**notificationInterface**](notificationinterface.md)<br/> | Especifica el nombre de la interfaz de notificación utilizada con las suscripciones de evento.<br/> <br/> |
-| [**sesión**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
-| [**portType**](porttype.md)<br/>                           | Especifica el tipo de puerto para el que se generará el código.<br/> <br/>                      |
+| [**notificationInterface**](notificationinterface.md)<br/> | Especifica el nombre de la interfaz de notificación que se usa con las suscripciones de eventos.<br/> <br/> |
+| [**Operación**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
+| [**portType**](porttype.md)<br/>                           | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/>                      |
 | [**proxyClass**](proxyclass.md)<br/>                       | Especifica el nombre de la clase de proxy del lado cliente.<br/> <br/>                              |
 
 
@@ -64,7 +64,7 @@ Genera implementaciones para las funciones de proxy de suscripción y cancelaci�
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
@@ -72,7 +72,7 @@ Genera implementaciones para las funciones de proxy de suscripción y cancelaci�
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

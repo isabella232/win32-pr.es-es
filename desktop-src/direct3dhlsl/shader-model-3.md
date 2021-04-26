@@ -1,6 +1,6 @@
 ---
-title: Shader Model 3 (referencia de HLSL)
-description: Los sombreadores de vértices y los sombreadores de píxeles se simplifican considerablemente de las versiones anteriores del sombreador.
+title: Modelo de sombreador 3 (referencia HLSL)
+description: Los sombreadores de vértices y los sombreadores de píxeles se simplifican considerablemente con las versiones anteriores del sombreador.
 ms.assetid: 01ac85cb-b309-4169-acc2-320a929b65cb
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,72 +9,72 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c3517266ace77b9235604770d9b42d10cd80e2d5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c277723628d5337e41e5fbf83baa9fda8af16adf
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420897"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993872"
 ---
-# <a name="shader-model-3-hlsl-reference"></a>Shader Model 3 (referencia de HLSL)
+# <a name="shader-model-3-hlsl-reference"></a>Modelo de sombreador 3 (referencia HLSL)
 
-Los sombreadores de vértices y los sombreadores de píxeles se simplifican considerablemente de las versiones anteriores del sombreador. Si está implementando sombreadores en hardware, no puede usar vs \_ 3 \_ 0 o PS \_ 3 \_ 0 con ninguna otra versión del sombreador, y no puede usar ninguno de los tipos de sombreador con la canalización de función fija. Estos cambios permiten simplificar los controladores y el tiempo de ejecución. La única excepción es que los sombreadores de solo software vs \_ 3 \_ 0 se pueden usar con cualquier versión de sombreador de píxeles. Además, si usa un sombreador de solo software vs \_ 3 \_ 0 con una versión de sombreador de píxeles anterior, el sombreador de vértices solo puede utilizar la semántica de salida que sea compatible con los códigos de formato de vértice flexible (FVF).
+Los sombreadores de vértices y los sombreadores de píxeles se simplifican considerablemente con las versiones anteriores del sombreador. Si va a implementar sombreadores en hardware, no puede usar vs \_ 3 0 o \_ ps \_ 3 0 con ninguna otra versión del sombreador y no puede usar ningún tipo de sombreador con la canalización de función \_ fija. Estos cambios hacen posible simplificar los controladores y el tiempo de ejecución. La única excepción es que los sombreadores de solo software frente a 3 0 se pueden \_ usar con cualquier versión del \_ sombreador de píxeles. Además, si usa un sombreador solo de software frente a 3 0 con una versión anterior del sombreador de píxeles, el sombreador de vértices solo puede usar semántica de salida que sea compatible con códigos de formato de vértice \_ \_ flexible (FVF).
 
-La semántica que se usa en las salidas del sombreador de vértices se debe usar en entradas del sombreador de píxeles. La semántica se usa para asignar las salidas del sombreador de vértices a las entradas del sombreador de píxeles, similar a la forma en que se asigna la declaración de vértices a los registros de entrada del sombreador de vértices y los modelos de sombreador anteriores. Consulte semántica de coincidencia en los sombreadores de vs 3,0 y PS 3,0.
+La semántica usada en las salidas del sombreador de vértices debe usarse en las entradas del sombreador de píxeles. La semántica se usa para asignar las salidas del sombreador de vértices a las entradas del sombreador de píxeles, de forma similar a la forma en que la declaración de vértice se asigna a los registros de entrada del sombreador de vértices y a los modelos de sombreador anteriores. Vea Match Semantics on vs 3.0 and ps 3.0 Shaders (Semántica de coincidencias en los sombreadores vs. 3.0 y ps 3.0).
 
-Se han agregado Estados de representación del modo de ajuste adicionales para cubrir la posibilidad de coordenadas de textura adicionales en este nuevo esquema. Los atributos con D3DDECLUSAGE \_ TEXCOORD y el índice de uso de 0 a 15 se interpolan en el modo de ajuste cuando se establece el [**\_ ajuste \* de D3DRS**](/windows/desktop/direct3d9/d3drenderstatetype) correspondiente.
+Se han agregado estados de representación de modo de encapsulado adicionales para cubrir la posibilidad de coordenadas de textura adicionales en este nuevo esquema. Los atributos con D3DDECLUSAGE TEXCOORD y el índice de uso de 0 a 15 se interpolan en modo de encapsulado cuando se establece el encapsulado \_ [**\_ \* D3DRS**](/windows/desktop/direct3d9/d3drenderstatetype) correspondiente.
 
--   [Características del modelo de sombreador de vértice 3](#vertex-shader-model-3-features)
--   [Características del modelo de sombreador de píxeles 3](#pixel-shader-model-3-features)
--   [Coincidencia de la semántica en \_ los \_ sombreadores de vs 3 0 y PS \_ 3 \_ 0](/windows)
--   [Cambios en el modo de niebla, profundidad y sombreado](#fog-depth-and-shading-mode-changes)
+-   [Características del sombreador de vértices modelo 3](#vertex-shader-model-3-features)
+-   [Características del modelo 3 del sombreador de píxeles](#pixel-shader-model-3-features)
+-   [Semántica de coincidencias en \_ sombreadores frente a 3 \_ 0 y ps \_ 3 \_ 0](/windows)
+-   [Cambios en el modo de sombreado, profundidad y profundidad](#fog-depth-and-shading-mode-changes)
 -   [Conversiones de punto flotante y entero](#floating-point-and-integer-conversions)
--   [Especificar una precisión completa o parcial](#specifying-full-or-partial-precision)
--   [Sombreadores de píxeles y vértices de software](#software-vertex-and-pixel-shaders)
+-   [Especificar precisión completa o parcial](#specifying-full-or-partial-precision)
+-   [Sombreadores de vértices y píxeles de software](#software-vertex-and-pixel-shaders)
 
-## <a name="vertex-shader-model-3-features"></a>Características del modelo de sombreador de vértice 3
+## <a name="vertex-shader-model-3-features"></a>Características del modelo 3 del sombreador de vértices
 
-Los tipos de registro de salida del sombreador de vértices se han contraído en doce registros (consulte [registros de salida](dx9-graphics-reference-asm-vs-registers-output.md)). Cada registro que se usa debe declararse mediante la instrucción [DCL](dcl-usage---ps.md) y una semántica (por ejemplo, DCL \_ color0 O0. xyzw).
+Los tipos de registro de salida del sombreador de vértices se han contraído en doce registros (vea [Registros de salida).](dx9-graphics-reference-asm-vs-registers-output.md) Cada registro que se usa debe declararse mediante la instrucción [dcl](dcl-usage---ps.md) y una semántica (por ejemplo, dcl \_ color0 o0.xyzw).
 
-El \_ modelo de sombreador de vértices 3 0 (vs \_ 3 \_ 0) amplía las características de vs \_ 2 \_ 0 con indexación de registros más eficaz, un conjunto de registros de salida simplificados, la capacidad de muestrear una textura en un sombreador de vértices y la capacidad de controlar la velocidad a la que se inicializan las entradas del sombreador.
+El modelo de sombreador de \_ vértices 3 0 (frente a 3 0) se expande en las características de frente a 2 0 con una indexación de registros más eficaz, un conjunto de registros de salida simplificados, la capacidad de muestrear una textura en un sombreador de vértices y la capacidad de controlar la velocidad a la que se inicializan las entradas del \_ \_ \_ \_ sombreador.
 
 ### <a name="index-any-register"></a>Indexar cualquier registro
 
-Todos los registros (registros de [entrada](dx9-graphics-reference-asm-vs-registers-input.md) y registro de [salida](dx9-graphics-reference-asm-vs-registers-output.md)) se pueden indexar mediante [el registro de contadores de bucle](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (solo los registros de constantes se pueden indizar en versiones anteriores).
+Todos los registros [(registros de](dx9-graphics-reference-asm-vs-registers-input.md) entrada y de [salida)](dx9-graphics-reference-asm-vs-registers-output.md)se pueden indexar mediante el registro de contadores de [bucles](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (solo los registros constantes se podían indexar en versiones anteriores).
 
-Debe declarar los registros de entrada y salida antes de indizarlos. Sin embargo, no puede indexar ningún registro de salida que se haya declarado con una posición o una semántica de tamaño de punto. De hecho, si se usa la indexación, la semántica de posición y psize debe declararse en los registros O0 y O1, respectivamente.
+Debe declarar los registros de entrada y salida antes de indexarlos. Sin embargo, no puede indexar ningún registro de salida que se haya declarado con una semántica de tamaño de punto o posición. De hecho, si se usa la indexación, la semántica de la posición y el tamaño psize deben declararse en los registros o0 y o1 respectivamente.
 
-Solo se permite indexar un intervalo continuo de registros; es decir, no se puede indexar entre los registros que no se han declarado. Aunque esta restricción puede ser inadecuada, permite que se lleve a cabo la optimización del hardware. Si se intenta indexar en registros no contiguos, se producirán resultados indefinidos. La validación del sombreador no aplica esta restricción.
+Solo puede indexar un intervalo continuo de registros; es decir, no se puede indexar entre registros que no se han declarado. Aunque esta restricción puede ser inconveniente, permite que se lleve a cabo la optimización del hardware. Si se intenta indexar entre registros no contiguos, se producirán resultados no definidos. La validación del sombreador no aplica esta restricción.
 
-### <a name="simplify-output-registers"></a>Simplificar registros de salida
+### <a name="simplify-output-registers"></a>Simplificación de los registros de salida
 
-Todos los distintos tipos de registros de salida se han contraído en doce registros de salida: 1 para la posición, 2 para el color, 8 para la textura y 1 para la niebla o el tamaño del punto. Estos registros interpolarán los datos que contengan para el sombreador de píxeles. Las declaraciones de registro de salida son obligatorias y las semánticas se asignan a cada registro.
+Todos los distintos tipos de registros de salida se han contraído en doce registros de salida: 1 para la posición, 2 para el color, 8 para la textura y 1 para el tamaño de punto o de color. Estos registros interpolarán los datos que contengan para el sombreador de píxeles. Las declaraciones de registro de salida son necesarias y la semántica se asigna a cada registro.
 
-Los registros se pueden dividir de la siguiente manera:
+Los registros se pueden desglosar de la siguiente manera:
 
--   Al menos un registro debe declararse como un registro de posición de cuatro componentes. Este es el único registro del sombreador de vértices necesario.
--   Los diez primeros registros utilizados por un sombreador pueden usar hasta cuatro componentes (xyzw) como máximo.
--   El último (o duodécimo) registro solo puede contener un valor escalar (por ejemplo, un tamaño de punto).
+-   Al menos un registro debe declararse como un registro de posición de cuatro componentes. Este es el único registro de sombreador de vértices necesario.
+-   Los diez primeros registros consumidos por un sombreador pueden usar hasta cuatro componentes (xyzw) como máximo.
+-   El último registro (o duodécimo) solo puede contener un escalar (como el tamaño de punto).
 
-Para obtener una lista de los registros, consulte [registros-vs \_ 3 \_ 0](dx9-graphics-reference-asm-vs-registers-vs-3-0.md).
+Para obtener una lista de los registros, vea [Registers - vs \_ 3 \_ 0](dx9-graphics-reference-asm-vs-registers-vs-3-0.md).
 
 ### <a name="texture-sample-in-a-vertex-shader"></a>Ejemplo de textura en un sombreador de vértices
 
-Vertex Shader 3 \_ 0 admite la búsqueda de texturas en el sombreador de vértices mediante [texldl-vs](texldl---vs.md).
+El sombreador de \_ vértices 3 0 admite la búsqueda de texturas en el sombreador de vértices [mediante texldl- frente a](texldl---vs.md).
 
-## <a name="pixel-shader-model-3-features"></a>Características del modelo de sombreador de píxeles 3
+## <a name="pixel-shader-model-3-features"></a>Características del modelo 3 del sombreador de píxeles
 
-Los registros de color y textura del sombreador de píxeles se han contraído en diez registros de entrada (consulte [tipos de registro de entrada](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)). El registro facial es un registro escalar de punto flotante. Solo el signo de este registro es válido. Si el signo es negativo, el primitivo es una parte posterior. Se puede usar dentro de un sombreador de píxeles para lograr la iluminación de dos caras, por ejemplo. El registro de posición hace referencia a los píxeles actuales (x, y).
+El color del sombreador de píxeles y los registros de textura se han contraído en diez registros de entrada (vea [Tipos de registro de entrada).](dx9-graphics-reference-asm-ps-registers-ps-3-0.md) Face Register es un registro escalar de punto flotante. Solo el signo de este registro es válido. Si el signo es negativo, la primitiva es una cara posterior. Esto se puede usar dentro de un sombreador de píxeles para lograr una iluminación de dos lados, por ejemplo. El registro de posición hace referencia a los píxeles actuales (x,y).
 
-Los registros de constantes del sombreador se pueden establecer mediante:
+Los registros constantes del sombreador se pueden establecer mediante:
 
 -   [**SetPixelShaderConstantB**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantb)
 -   [**SetPixelShaderConstantI**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstanti)
 -   [**SetPixelShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf)
 
-## <a name="match-semantics-on-vs_3_0-and-ps_3_0-shaders"></a>Coincidencia de la semántica en \_ los \_ sombreadores de vs 3 0 y PS \_ 3 \_ 0
+## <a name="match-semantics-on-vs_3_0-and-ps_3_0-shaders"></a>Semántica de coincidencias en \_ sombreadores frente a 3 \_ 0 y ps \_ 3 \_ 0
 
-Existen algunas restricciones en el uso semántico con vs \_ 3 \_ 0 y PS \_ 3 \_ 0. En general, debe tener cuidado al usar una semántica para una entrada de sombreador que coincida con una semántica usada en una salida de sombreador.
+Hay algunas restricciones en el uso semántico con frente \_ a 3 \_ 0 y ps \_ 3 \_ 0. En general, debe tener cuidado al usar una semántica para una entrada de sombreador que coincida con una semántica usada en una salida del sombreador.
 
 Por ejemplo, este sombreador de píxeles empaqueta varios nombres en un registro:
 
@@ -89,9 +89,9 @@ dcl_texcoord2_centroid v1.w
 
 
 
-Cada registro tiene una semántica diferente. Tenga en cuenta que también puede denominar v0. x y v0. YZ con una semántica diferente (varias) debido al uso de la máscara de escritura.
+Cada registro tiene una semántica diferente. Tenga en cuenta que también puede nombrar v0.x y v0.yz con una semántica diferente (varias) debido al uso de la máscara de escritura.
 
-Dado el sombreador de píxeles, el siguiente \_ sombreador de vs 3 \_ 0 no puede emparejarse con él:
+Dado el sombreador de píxeles, el siguiente sombreador frente \_ a 3 0 no se puede \_ emparejar con él:
 
 
 ```
@@ -104,9 +104,9 @@ dcl_texcoord1 o6.yzw
 
 
 
-Estos dos sombreadores entran en conflicto con el uso de la semántica de [**D3DDECLUSAGE \_ TEXCOORD0**](/windows/desktop/direct3d9/d3ddeclusage) y **D3DDECLUSAGE \_ TEXCOORD1** .
+Estos dos sombreadores están en conflicto con su uso de la semántica [**D3DDECLUSAGE \_ TEXCOORD0**](/windows/desktop/direct3d9/d3ddeclusage) y **D3DDECLUSAGE \_ TEXCOORD1.**
 
-Vuelva a escribir el sombreador de vértices como este para evitar la colisión semántica:
+Vuelva a escribir el sombreador de vértices de esta forma para evitar la colisión semántica:
 
 
 ```
@@ -119,7 +119,7 @@ dcl_texcoord3 o9
 
 
 
-Del mismo modo, no se puede usar un nombre semántico declarado en registros de entrada diferentes en el sombreador de píxeles (V0 y V1 en el sombreador de píxeles) en un registro de salida único en este sombreador de vértices. Por ejemplo, este sombreador de vértices no se puede emparejar con el sombreador de píxeles porque D3DDECLUSAGE \_ TEXCOORD1 se usa para los registros de entrada del sombreador de píxeles (V0, V1) y el registro de salida del sombreador de vértices O3.
+Del mismo modo, un nombre semántico declarado en distintos registros de entrada en el sombreador de píxeles (v0 y v1 en el sombreador de píxeles) no se puede usar en un único registro de salida en este sombreador de vértices. Por ejemplo, este sombreador de vértices no se puede emparejar con el sombreador de píxeles porque D3DDECLUSAGE TEXCOORD1 se usa para los registros de entrada del sombreador de píxeles (v0, v1) y el registro de salida del sombreador de \_ vértices o3.
 
 
 ```
@@ -134,7 +134,7 @@ dcl_texcoord3 o9 ...
 
 
 
-Por otro lado, este sombreador de vértices no se puede emparejar con el sombreador de píxeles porque la máscara de salida de un parámetro con una semántica determinada no proporciona los datos que el sombreador de píxeles solicita:
+Por otro lado, este sombreador de vértices no se puede emparejar con el sombreador de píxeles porque la máscara de salida de un parámetro con una semántica determinada no proporciona los datos solicitados por el sombreador de píxeles:
 
 
 ```
@@ -165,13 +165,13 @@ dcl_texcoord3 o9
 
 
 
-## <a name="fog-depth-and-shading-mode-changes"></a>Cambios en el modo de niebla, profundidad y sombreado
+## <a name="fog-depth-and-shading-mode-changes"></a>Cambios en el modo de sombreado, profundidad y profundidad
 
-Cuando \_ se establece D3DRS SHADEMODE para el sombreado plano durante la rasterización de recorte y triángulos, los atributos con \_ color D3DDECLUSAGE se interpolan como sombreados planos. Si los componentes de un registro se declaran con una semántica de color, pero otros componentes del mismo registro tienen una semántica diferente, la interpolación de sombreado plano (lineal y plana) no se definirá en los componentes de que se registran sin una semántica de color.
+Cuando D3DRS SHADEMODE se establece para sombreado plano durante el recorte y la rasterización de triángulos, los atributos con \_ color D3DDECLUSAGE se interpolan como \_ sombreado plano. Si algún componente de un registro se declara con una semántica de color pero a otros componentes del mismo registro se les da una semántica diferente, la interpolación de sombreado plano (lineal frente a plana) no se definirá en los componentes de ese registro sin una semántica de color.
 
-Si se desea la representación de niebla, \_ los \_ sombreadores de vs 3 0 y PS \_ 3 \_ 0 deben implementar la niebla. No se realizan cálculos de niebla fuera de los sombreadores. No hay ningún registro de niebla en vs \_ 3 \_ 0, y la niebla adicional D3DDECLUSAGE \_ (para el factor de mezcla de niebla calculada por vértice) y la profundidad de D3DDECLUSAGE \_ (para pasar un valor de profundidad al sombreador de píxeles para calcular el factor de mezcla de niebla) se han agregado.
+Si se desea la representación en forma de nube, frente a \_ 3 \_ 0 y ps \_ 3 \_ 0, los sombreadores deben implementar el sombreador. No se realizan cálculos de cálculo fuera de los sombreadores. No hay ningún registro de fusión en comparación con 3 0, y se han agregado semánticas adicionales D3DDECLUSAGE COMPUTE (para el factor de mezcla de mezcla de fusión calculado por vértice) y \_ \_ \_ D3DDECLUSAGE \_ DEPTH (para pasar un valor de profundidad al sombreador de píxeles para calcular el factor de mezcla de mezcla).
 
-El estado de fase de textura D3DTSS \_ TEXCOORDINDEX se omite cuando se usa el sombreador de píxeles 3,0.
+El estado de la fase de textura D3DTSS \_ TEXCOORDINDEX se omite cuando se usa el sombreador de píxeles 3.0.
 
 Se han agregado los siguientes valores para dar cabida a estos cambios:
 
@@ -196,74 +196,73 @@ D3DRS_WRAP15
 
 ## <a name="floating-point-and-integer-conversions"></a>Conversiones de punto flotante y entero
 
-Los cálculos matemáticos de punto flotante se producen en diferentes precisión y rangos (16 bits, 24 bits y 32 bits) en diferentes partes de la canalización. Un valor mayor que el intervalo dinámico de la canalización que entra en esa canalización (por ejemplo, un mapa de textura flotante de 32 bits se muestrea en una canalización Float de 24 bits en PS \_ 2 \_ 0) crea un resultado no definido. En el caso del comportamiento predecible, debe fijar este valor en el máximo del intervalo dinámico.
+Los cálculos matemáticos de punto flotante se produce en diferentes intervalos de precisión (16 bits, 24 y 32 bits) en diferentes partes de la canalización. Un valor mayor que el intervalo dinámico de la canalización que entra en esa canalización (por ejemplo, un mapa de textura float de 32 bits se muestrea en una canalización float de 24 bits en ps 2 0) crea un resultado \_ indefinido. \_ Para un comportamiento predecible, debe fijar este valor al máximo del intervalo dinámico.
 
 La conversión de un valor de punto flotante a un entero se produce en varios lugares, como:
 
--   Al encontrar una instrucción [mova-vs](mova---vs.md) .
+-   Al encontrar una [instrucción mova - vs.](mova---vs.md)
 -   Durante el direccionamiento de textura.
 -   Al escribir en un destino de representación de punto no flotante.
 
-## <a name="specifying-full-or-partial-precision"></a>Especificar una precisión completa o parcial
+## <a name="specifying-full-or-partial-precision"></a>Especificar precisión completa o parcial
 
-Tanto el PS \_ 3 \_ como el PS \_ 2 \_ x proporcionan compatibilidad con dos niveles de precisión:
+Ps \_ 3 \_ 0 y ps 2 x proporcionan compatibilidad \_ con dos niveles de \_ precisión:
 
 
 
-|          |          |                   |                      |
+| ps \_ 3 \_ 0 | ps \_ 2 \_ 0 | Precision         | Value                |
 |----------|----------|-------------------|----------------------|
-| PS \_ 3 \_ 0 | PS \_ 2 \_ 0 | Precisión         | Value                |
-| x        |          | Completo              | fp32 o superior       |
-| x        |          | Precisión parcial | FP16 = s10e5           |
-| x        | x        | Completo              | fp24 = s16e7 o superior |
-| x        | x        | Precisión parcial | FP16 = s10e5           |
+| x        |          | Full              | fp32 o superior       |
+| x        |          | Precisión parcial | fp16=s10e5           |
+| x        | x        | Full              | fp24=s16e7 o superior |
+| x        | x        | Precisión parcial | fp16=s10e5           |
 
 
 
- 
+ 
 
-PS \_ 3 \_ 0 admite más precisión que PS \_ 2 \_ 0. De forma predeterminada, todas las operaciones se producen en el nivel de precisión completa.
+ps \_ 3 \_ 0 admite más precisión que ps \_ 2 \_ 0. De forma predeterminada, todas las operaciones se producen en el nivel de precisión completa.
 
-La precisión parcial (vea [modificadores de registro del sombreador de píxeles](dx9-graphics-reference-asm-ps-registers-modifiers.md)) se solicita agregando el \_ modificador PP al código del sombreador (siempre que la implementación subyacente lo admita). Las implementaciones siempre son gratuitas para omitir el modificador y realizar las operaciones afectadas con precisión completa.
+La precisión parcial (vea Modificadores de registro [de sombreador](dx9-graphics-reference-asm-ps-registers-modifiers.md)de píxeles) se solicita agregando el modificador pp al código del \_ sombreador (siempre que la implementación subyacente lo admita). Las implementaciones siempre pueden omitir el modificador y realizar las operaciones afectadas con precisión completa.
 
-El \_ modificador PP puede producirse en dos contextos:
+El \_ modificador pp puede producirse en dos contextos:
 
--   En una declaración de coordenadas de textura para pasar coordenadas de textura de precisión parcial al sombreador de píxeles. Esto se podría usar cuando las coordenadas de textura retransmiten los datos de color al sombreador de píxeles, que puede ser más rápido con una precisión parcial que con precisión completa en algunas implementaciones.
--   En cualquier instrucción para solicitar el uso de precisión parcial, incluidas las instrucciones de carga de textura. Esto indica que la implementación puede ejecutar la instrucción con precisión parcial y almacenar un resultado de precisión parcial. En ausencia de un modificador explícito, la instrucción se debe realizar a plena precisión (independientemente de la precisión de los operandos de entrada).
+-   En una declaración de coordenadas de textura para pasar coordenadas de textura de precisión parcial al sombreador de píxeles. Esto se puede usar cuando la textura coordina los datos de color de retransmisión al sombreador de píxeles, que puede ser más rápido con precisión parcial que con precisión completa en algunas implementaciones.
+-   En cualquier instrucción para solicitar el uso de precisión parcial, incluidas las instrucciones de carga de textura. Esto indica que la implementación puede ejecutar la instrucción con precisión parcial y almacenar un resultado de precisión parcial. En ausencia de un modificador explícito, la instrucción debe realizarse con precisión completa (independientemente de la precisión de los operandos de entrada).
 
-Una aplicación podría elegir deliberadamente la precisión para el rendimiento. Hay varios tipos de datos de entrada de sombreador que son candidatos naturales para el procesamiento de precisión parcial:
+Una aplicación podría elegir deliberadamente cambiar la precisión por el rendimiento. Hay varios tipos de datos de entrada de sombreador que son candidatos naturales para el procesamiento de precisión parcial:
 
 -   Los iteradores de color están bien representados por valores de precisión parcial.
--   Los valores de las texturas de la mayoría de los formatos se pueden representar con precisión mediante valores de precisión parcial (los valores muestreados desde 32 bits, las texturas de formato de punto flotante son una excepción obvia).
--   Las constantes se pueden representar mediante una representación de precisión parcial, según corresponda al sombreador.
+-   Los valores de textura de la mayoría de los formatos se pueden representar con precisión mediante valores de precisión parcial (los valores muestreados de texturas de formato de punto flotante de 32 bits son una excepción obvia).
+-   Las constantes se pueden representar mediante una representación de precisión parcial según corresponda al sombreador.
 
-En todos estos casos, el desarrollador puede elegir especificar la precisión parcial para procesar los datos, sabiendo que no se pierde la precisión de los datos de entrada. En algunos casos, es posible que un sombreador requiera que los pasos internos de un cálculo se realicen con precisión completa, incluso cuando los valores de entrada y salida finales no tengan más de una precisión parcial.
+En todos estos casos, el desarrollador puede optar por especificar una precisión parcial para procesar los datos, sabiendo que no se pierde ninguna precisión de datos de entrada. En algunos casos, un sombreador puede requerir que los pasos internos de un cálculo se realicen con precisión completa, incluso cuando los valores de entrada y salida final no tengan una precisión mayor que parcial.
 
-## <a name="software-vertex-and-pixel-shaders"></a>Sombreadores de píxeles y vértices de software
+## <a name="software-vertex-and-pixel-shaders"></a>Sombreadores de vértices y píxeles de software
 
-Las implementaciones de software (tiempo de ejecución y referencia para los sombreadores de vértices y referencia para los sombreadores de píxeles) de los sombreadores de la versión 2 \_ 0 y versiones posteriores tienen una validación relajada. Esto resulta útil para la depuración y la generación de prototipos. La aplicación indica al tiempo de ejecución o ensamblador que necesita parte de la validación relajada mediante la \_ marca SW en el ensamblador (por ejemplo, vs \_ 2 \_ SW). Un sombreador de software no funcionará con el hardware.
+Las implementaciones de software (tiempo de ejecución y referencia para sombreadores de vértices y referencia para sombreadores de píxeles) de los sombreadores de la versión 2 0 y posteriores tienen cierta validación \_ relajada. Esto es útil para fines de depuración y creación de prototipos. La aplicación indica al runtime o ensamblador que necesita parte de la validación relajada mediante la marca sw en el \_ ensamblador (por ejemplo, frente a \_ 2 \_ sw). Un sombreador de software no funcionará con hardware.
 
-vs \_ 2 \_ SW es una flexibilización de los límites máximos de vs \_ 2 \_ x; de forma similar, PS \_ 2 \_ SW es una flexibilización de los límites máximos de PS \_ 2 \_ x. En concreto, se relajan las validaciones siguientes:
+vs 2 sw es una relajación a los límites máximos de frente a 2 x; de forma similar, ps 2 sw es una relajación hasta los \_ \_ límites máximos de ps \_ \_ \_ \_ \_ 2 \_ x. En concreto, las validaciones siguientes son relajadas:
 
 
 
 |                                            |                                      |                                                                                                                                   |
 |--------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Modelo de sombreador                               | Resource                             | Límite                                                                                                                             |
-| vs \_ 2 \_ SW, vs \_ 3 \_ SW, PS \_ 2 \_ SW, PS \_ 3 \_ SW | Recuentos de instrucciones                   | Sin límite                                                                                                                         |
-| vs \_ 2 \_ SW, vs \_ 3 \_ SW, PS \_ 2 \_ SW, PS \_ 3 \_ SW | Registros de constantes Float             | 8192                                                                                                                              |
-| vs \_ 2 \_ SW, vs \_ 3 \_ SW, PS \_ 2 \_ SW, PS \_ 3 \_ SW | Registros de constantes de tipo entero           | 2048                                                                                                                              |
-| vs \_ 2 \_ SW, vs \_ 3 \_ SW, PS \_ 2 \_ SW, PS \_ 3 \_ SW | Registros de constantes booleanas           | 2048                                                                                                                              |
-| PS \_ 2 \_ SW                                  | Dependiente: profundidad de lectura                 | Sin límite                                                                                                                         |
-| vs \_ 2 \_ SW                                  | instrucciones y etiquetas de control de flujo | Sin límite                                                                                                                         |
-| vs \_ 2 \_ SW, vs \_ 3 \_ SW, PS \_ 2 \_ SW, PS \_ 3 \_ SW | Inicio de bucle/pasos/recuentos               | El tamaño de paso de iteración y de inicio de la iteración para las instrucciones REP y Loop son enteros de 32 bits con signo. Count puede ser hasta MAX \_ int/64. |
-| vs \_ 2 \_ SW, vs \_ 3 \_ SW, PS \_ 2 \_ SW, PS \_ 3 \_ SW | Límites de Puerto                          | Los límites de puerto para todos los archivos de registro son relajados.                                                                                   |
-| vs \_ 3 \_ SW                                  | Número de interpoladores              | 16 registros de salida en vs \_ 3 \_ SW.                                                                                                 |
-| PS \_ 3 \_ SW                                  | Número de interpoladores              | 14 (16-2) registros de entrada para el \_ SW PS 3 \_ .                                                                                           |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Recuentos de instrucciones                   | Sin límite                                                                                                                         |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registros de constantes float             | 8192                                                                                                                              |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registros constantes enteros           | 2048                                                                                                                              |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registros de constantes booleanos           | 2048                                                                                                                              |
+| ps \_ 2 \_ sw                                  | Profundidad de lectura dependiente                 | Sin límite                                                                                                                         |
+| vs \_ 2 \_ sw                                  | etiquetas y instrucciones de control de flujo | Sin límite                                                                                                                         |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Bucle start/step/counts               | El tamaño del paso de inicio e iteración de iteración para las instrucciones de repetición y bucle son enteros de 32 bits con signo. El recuento puede ser de hasta MAX \_ INT/64. |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Límites de puerto                          | Los límites de puerto para todos los archivos de registro son relajadas.                                                                                   |
+| vs \_ 3 \_ sw                                  | Número de interpoladores              | 16 registros de salida en vs \_ 3 \_ sw.                                                                                                 |
+| ps \_ 3 \_ sw                                  | Número de interpoladores              | 14 (16-2) registros de entrada para ps \_ 3 \_ sw.                                                                                           |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -272,6 +271,6 @@ vs \_ 2 \_ SW es una flexibilización de los límites máximos de vs \_ 2 \_ x; 
 [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

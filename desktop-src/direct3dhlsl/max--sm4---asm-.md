@@ -1,23 +1,23 @@
 ---
-title: Max (SM4-ASM)
-description: Valor máximo de Float de componente.
+title: max (sm4 - asm)
+description: Máximo flotante por componente.
 ms.assetid: 005468AA-577E-441F-ACD5-37A691E62CDD
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f24618897eacf250f2b924f6dde3745a32a7172
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f64d88c581828f2563f6d5d8a6c57de6400f9bbf
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419894"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994732"
 ---
-# <a name="max-sm4---asm"></a>Max (SM4-ASM)
+# <a name="max-sm4---asm"></a>max (sm4 - asm)
 
-Valor máximo de Float de componente.
+Máximo flotante por componente.
 
 
 
-| Max \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle \] , \[ - \] SRC1 \[ \_ ABS \] \[ . swizzle \] , |
+| max \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] , \[ - \] src1 abs \[ \_ \] \[ .sw swle \] , |
 |---------------------------------------------------------------------------------------------|
 
 
@@ -28,32 +28,31 @@ Valor máximo de Float de componente.
 
 | Elemento                                                            | Descripción                                                                                               |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] el resultado de la operación. <br/> *dest*  =  *src0*  >=  *SRC1* ? *src0* : *SRC1*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los componentes que se van a comparar con *SRC1*.<br/>                                                    |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] los componentes que se van a comparar con *src0*.<br/>                                                    |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] El resultado de la operación. <br/> *dest*  =  *src0*  >=  *src1* ? *src0:* *src1*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los componentes que se comparan con *src1*.<br/>                                                    |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Los componentes que se comparan con *src0*.<br/>                                                    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
->= se usa en lugar de > para que, si es min (x, y) = x, entonces Max (x, y) = y.
+>= se usa en lugar > para que si min(x,y) = x, max(x,y) = y.
 
-NaN tiene un tratamiento especial. Si un operando de origen es NaN, se devuelve el otro operando de origen y la elección se realiza por componente. Si ambos son NaN, se devuelve cualquier representación NaN.
+NaN tiene un control especial. Si un operando de origen es NaN, se devuelve el otro operando de origen y la elección se realiza por componente. Si ambos son NaN, se devuelve cualquier representación de NaN.
 
-Las desnormaciones se vacían con el signo que se conserva antes de la comparación. Sin embargo, el resultado que se escribe en *dest* puede o no ser de desnormalización.
+Los desnormas se vacían con el signo conservado antes de la comparación. Sin embargo, el resultado escrito *en dest* puede o no vaciarse desnormado.
 
-En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produce desbordamiento o subdesbordamiento. F significa un número real finito.
+En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produzcan desbordamientos ni subdesbordes. F significa número real finito.
 
 
 
-|                    |          |              |          |         |
+| **src0 src1->** | **-inf** | **F**        | **+inf** | **NaN** |
 |--------------------|----------|--------------|----------|---------|
-| **src0 SRC1->** | **-INF** | **F**        | **+ INF** | **NaN** |
-| **-INF**           | -inf     | src1         | +inf     | -inf    |
-| **F**              | src0     | src0 o SRC1 | +inf     | src0    |
-| **+ INF**           | +inf     | +inf         | +inf     | +inf    |
+| **-inf**           | -inf     | src1         | +inf     | -inf    |
+| **F**              | src0     | src0 o src1 | +inf     | src0    |
+| **+inf**           | +inf     | +inf         | +inf     | +inf    |
 | **NaN**            | -inf     | src1         | +inf     | NaN     |
 
 
@@ -72,7 +71,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -81,7 +80,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
@@ -95,7 +94,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

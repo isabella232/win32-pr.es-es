@@ -4,35 +4,34 @@ ms.assetid: d2030002-bd44-443f-8235-978919ebbda6
 title: D3DUSAGE_QUERY
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4f5dda7f84dfa36e4f3b7ece1b359a4841bbbf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0eac450ed722da26fe4885d41707483adf401f89
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153126"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994112"
 ---
-# <a name="d3dusage_query"></a>\_Consulta D3DUSAGE
+# <a name="d3dusage_query"></a>CONSULTA D3DUSAGE \_
 
 Estas opciones identifican los tipos de recursos de consulta.
 
 
 
-|                                            |                                                                                                                                                                                                                                                                                                                                                     |
+| \#Definir                                   | Descripción                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \#define                                   | Descripción                                                                                                                                                                                                                                                                                                                                         |
-| \_Filtro de consulta D3DUSAGE \_                    | Consulte el formato de recursos para ver si admite tipos de filtro de textura distintos \_ del punto D3DTEXF (que siempre se admite).                                                                                                                                                                                                                         |
-| \_LEGACYBUMPMAP consulta \_ D3DUSAGE             | Consultar el recurso sobre un mapa de rugosidad heredado.                                                                                                                                                                                                                                                                                                         |
-| D3DUSAGE \_ consulta \_ POSTPIXELSHADER \_ blending | Consulte el recurso para comprobar la compatibilidad con la compatibilidad con la fusión de sombreador de píxeles post. Si [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) produce un error con D3DUSAGE \_ query \_ POSTPIXELSHADER \_ blending, no se admiten las operaciones de combinación de píxeles post. Entre ellas se incluyen la prueba alfa, la niebla de píxeles, la mezcla de destino de representación, la habilitación de escritura de color y la interpolación. |
-| \_SRGBREAD consulta \_ D3DUSAGE                  | Consulte el recurso para comprobar si una textura admite la corrección gamma durante una operación de lectura.                                                                                                                                                                                                                                                        |
-| \_SRGBWRITE consulta \_ D3DUSAGE                 | Consulte el recurso para comprobar si una textura admite la corrección gamma durante una operación de escritura.                                                                                                                                                                                                                                                       |
-| \_VERTEXTEXTURE consulta \_ D3DUSAGE             | Consulte el recurso para comprobar la compatibilidad con el muestreo de textura del sombreador de vértices.                                                                                                                                                                                                                                                                            |
-| \_WRAPANDMIP consulta \_ D3DUSAGE                | Consulte el recurso para comprobar la compatibilidad con el ajuste de textura y la asignación de MIP.                                                                                                                                                                                                                                                                          |
+| FILTRO DE CONSULTA D3DUSAGE \_ \_                    | Consulte el formato de recurso para ver si admite tipos de filtro de textura distintos de D3DTEXF \_ POINT (que siempre se admite).                                                                                                                                                                                                                         |
+| D3DUSAGE \_ QUERY \_ LEGACYBUMPMAP             | Consulte el recurso sobre un mapa de protuberancia heredado.                                                                                                                                                                                                                                                                                                         |
+| MEZCLA DE \_ POSTPIXELSHADER DE CONSULTAS D3DUSAGE \_ \_ | Consulte el recurso para comprobar la compatibilidad con la compatibilidad posterior con la combinación de sombreadores de píxeles. Si [**CheckDeviceFormat produce**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) un error con D3DUSAGE \_ QUERY \_ POSTPIXELSHADER BLENDING, no se admiten las operaciones de combinación de píxeles \_ posteriores. Entre ellas se incluyen la prueba alfa, píxeles de píxeles, combinación de destino de representación, habilitación de escritura de color y dithering. |
+| D3DUSAGE \_ QUERY \_ SRGBREAD                  | Consulte el recurso para comprobar si una textura admite la corrección gamma durante una operación de lectura.                                                                                                                                                                                                                                                        |
+| D3DUSAGE \_ QUERY \_ SRGBWRITE                 | Consulte el recurso para comprobar si una textura admite la corrección gamma durante una operación de escritura.                                                                                                                                                                                                                                                       |
+| VÉRTICE DE CONSULTA D3DUSAGETEXTURE \_ \_             | Consulte el recurso para comprobar la compatibilidad con el muestreo de textura del sombreador de vértices.                                                                                                                                                                                                                                                                            |
+| D3DUSAGE \_ QUERY \_ WRAPANDMIP                | Consulte el recurso para comprobar la compatibilidad con el ajuste de texturas y la asignación de mip.                                                                                                                                                                                                                                                                          |
 
 
 
  
 
-Use [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) para consultar la compatibilidad de hardware para estos usos y otros usos que se enumeran en [D3DUSAGE](d3dusage.md).
+Use [**CheckDeviceFormat para**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) consultar la compatibilidad de hardware para estos usos y otros usos enumerados en [D3DUSAGE](d3dusage.md).
 
 ## <a name="constant-information"></a>Información constante
 
@@ -40,7 +39,7 @@ Use [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdevi
 
 |                          |             |
 |--------------------------|-------------|
-| Encabezado                   | d3d9types. h |
+| Encabezado                   | d3d9types.h |
 | Sistema operativo mínimo | Windows 98  |
 
 

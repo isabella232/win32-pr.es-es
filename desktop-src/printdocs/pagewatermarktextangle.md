@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 916e409040f0c7163f1168d48581270f077aaa3a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 86c13d759232670c6957a91de12f9c35cf48aeb4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104279882"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995552"
 ---
 # <a name="pagewatermarktextangle"></a>PageWatermarkTextAngle
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el ángulo del texto de la marca de agua con respecto a la dirección PageImageableSizeWidth. El ángulo se mide en la dirección en sentido contrario a las agujas del reloj.
+Especifica el ángulo del texto de marca de agua con respecto a la dirección PageImageableSizeWidth. El ángulo se mide en la dirección en sentido contrario a las agujas del reloj.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Especifica el ángulo del texto de la marca de agua con respecto a la dirección
 
 
 
-| Nombre                       |                                            |
+| Nombre | Value |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Página<br/>                            |
@@ -65,7 +65,7 @@ La estructura XML de este elemento es la siguiente:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -78,7 +78,7 @@ En la tabla siguiente se describen las características de las variables definid
 | MaxValue<br/>     | integer<br/> | 359<br/>             |
 | MinValue<br/>     | integer<br/> | 0<br/>               |
 | Múltiple<br/>     | integer<br/> | 1<br/>               |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | grados<br/>         |
 
 
