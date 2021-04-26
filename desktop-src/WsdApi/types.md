@@ -1,52 +1,52 @@
 ---
-description: Una lista de nombres completos de XSD.
+description: Lista de nombres xsd calificados.
 title: Elemento Types
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5384c1b246278fd8011e5730c296ca9422a2208f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c29a94f7ad4816f7b737261bf52b064a5dd68f9
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715463"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994123"
 ---
-# <a name="types-element"></a><span data-ttu-id="ec60c-103">Elemento Types</span><span class="sxs-lookup"><span data-stu-id="ec60c-103">Types element</span></span>
+# <a name="types-element"></a><span data-ttu-id="40fb7-103">Elemento Types</span><span class="sxs-lookup"><span data-stu-id="40fb7-103">Types element</span></span>
 
-<span data-ttu-id="ec60c-104">Una lista de nombres completos de XSD.</span><span class="sxs-lookup"><span data-stu-id="ec60c-104">A list of XSD qualified names.</span></span>
+<span data-ttu-id="40fb7-104">Lista de nombres xsd calificados.</span><span class="sxs-lookup"><span data-stu-id="40fb7-104">A list of XSD qualified names.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="ec60c-105">Uso</span><span class="sxs-lookup"><span data-stu-id="ec60c-105">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="40fb7-105">Uso</span><span class="sxs-lookup"><span data-stu-id="40fb7-105">Usage</span></span>
 
 ``` syntax
 <Types/>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="ec60c-106">Atributos</span><span class="sxs-lookup"><span data-stu-id="ec60c-106">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="40fb7-106">Atributos</span><span class="sxs-lookup"><span data-stu-id="40fb7-106">Attributes</span></span>
 
-<span data-ttu-id="ec60c-107">No hay atributos.</span><span class="sxs-lookup"><span data-stu-id="ec60c-107">There are no attributes.</span></span>
+<span data-ttu-id="40fb7-107">No hay atributos.</span><span class="sxs-lookup"><span data-stu-id="40fb7-107">There are no attributes.</span></span>
 
-## <a name="child-elements"></a><span data-ttu-id="ec60c-108">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ec60c-108">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="40fb7-108">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="40fb7-108">Child elements</span></span>
 
-<span data-ttu-id="ec60c-109">No hay elementos secundarios.</span><span class="sxs-lookup"><span data-stu-id="ec60c-109">There are no child elements.</span></span>
+<span data-ttu-id="40fb7-109">No hay elementos secundarios.</span><span class="sxs-lookup"><span data-stu-id="40fb7-109">There are no child elements.</span></span>
 
-## <a name="parent-elements"></a><span data-ttu-id="ec60c-110">Elementos primarios</span><span class="sxs-lookup"><span data-stu-id="ec60c-110">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="40fb7-110">Elementos primarios</span><span class="sxs-lookup"><span data-stu-id="40fb7-110">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="ec60c-111">Elemento</span><span class="sxs-lookup"><span data-stu-id="ec60c-111">Element</span></span>                             | <span data-ttu-id="ec60c-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="ec60c-112">Description</span></span>                                                            |
+| <span data-ttu-id="40fb7-111">Elemento</span><span class="sxs-lookup"><span data-stu-id="40fb7-111">Element</span></span>                             | <span data-ttu-id="40fb7-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="40fb7-112">Description</span></span>                                                            |
 |-------------------------------------|------------------------------------------------------------------------|
-| [<span data-ttu-id="ec60c-113">**organizar**</span><span class="sxs-lookup"><span data-stu-id="ec60c-113">**host**</span></span>](host.md)<br/>     | <span data-ttu-id="ec60c-114">Identifica el host del servicio.</span><span class="sxs-lookup"><span data-stu-id="ec60c-114">Identifies the service host.</span></span><br/> <br/>                    |
-| [<span data-ttu-id="ec60c-115">**ubicada**</span><span class="sxs-lookup"><span data-stu-id="ec60c-115">**hosted**</span></span>](hosted.md)<br/> | <span data-ttu-id="ec60c-116">Identifica un servicio definido por un host de servicio.</span><span class="sxs-lookup"><span data-stu-id="ec60c-116">Identifies a service defined by a service host.</span></span><br/> <br/> |
+| [<span data-ttu-id="40fb7-113">**Host**</span><span class="sxs-lookup"><span data-stu-id="40fb7-113">**host**</span></span>](host.md)<br/>     | <span data-ttu-id="40fb7-114">Identifica el host de servicio.</span><span class="sxs-lookup"><span data-stu-id="40fb7-114">Identifies the service host.</span></span><br/> <br/>                    |
+| [<span data-ttu-id="40fb7-115">**Alojados**</span><span class="sxs-lookup"><span data-stu-id="40fb7-115">**hosted**</span></span>](hosted.md)<br/> | <span data-ttu-id="40fb7-116">Identifica un servicio definido por un host de servicio.</span><span class="sxs-lookup"><span data-stu-id="40fb7-116">Identifies a service defined by a service host.</span></span><br/> <br/> |
 
 
 
-## <a name="element-information"></a><span data-ttu-id="ec60c-117">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="ec60c-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="40fb7-117">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="40fb7-117">Element information</span></span>
 
 
 
-|                                     |               |
+| <span data-ttu-id="40fb7-118">Etiqueta</span><span class="sxs-lookup"><span data-stu-id="40fb7-118">Label</span></span> | <span data-ttu-id="40fb7-119">Value</span><span class="sxs-lookup"><span data-stu-id="40fb7-119">Value</span></span> |
 |-------------------------------------|---------------|
-| <span data-ttu-id="ec60c-118">Sistema mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="ec60c-118">Minimum supported system</span></span><br/> | <span data-ttu-id="ec60c-119">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="ec60c-119">Windows Vista</span></span> |
-| <span data-ttu-id="ec60c-120">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ec60c-120">Can be empty</span></span>                        | <span data-ttu-id="ec60c-121">Sí</span><span class="sxs-lookup"><span data-stu-id="ec60c-121">Yes</span></span>           |
+| <span data-ttu-id="40fb7-120">Sistema mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="40fb7-120">Minimum supported system</span></span><br/> | <span data-ttu-id="40fb7-121">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="40fb7-121">Windows Vista</span></span> |
+| <span data-ttu-id="40fb7-122">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="40fb7-122">Can be empty</span></span>                        | <span data-ttu-id="40fb7-123">Sí</span><span class="sxs-lookup"><span data-stu-id="40fb7-123">Yes</span></span>           |
 
 
 
