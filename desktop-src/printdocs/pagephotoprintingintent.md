@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: f9a00828-52df-449e-914b-4c6cd7c29f3a
 title: PagePhotoPrintingIntent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3985d6f21d0d7731d1c08d080d64a4948b58196d
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 01d56a0b46c73bb3afdcefe96dc2131c861d5419
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104547494"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997982"
 ---
 # <a name="pagephotoprintingintent"></a>PagePhotoPrintingIntent
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Indica una intención de alto nivel para el controlador con el fin de rellenar la configuración de impresión fotográfica. Esta configuración trata la calidad esperada de salida que un usuario puede especificar al imprimir fotografías.
+Indica una intención de alto nivel al controlador para la población de la configuración de impresión de fotos. Esta configuración trata con la calidad de salida esperada que un usuario puede especificar al imprimir fotos.
 
 -   [Información de elemento](#element-information)
 
@@ -27,7 +27,7 @@ Indica una intención de alto nivel para el controlador con el fin de rellenar l
 
 
 
-| Nombre                       |                    |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
@@ -62,16 +62,16 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido, tal y como se define en los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | El nombre de la opción<br/>                                            |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción<br/>                                            |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False<br/>                                                                                                                                                                | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PagePhotoPrintingIntent">
@@ -93,7 +93,7 @@ Las palabras clave del esquema de impresión público se definen en el https://s
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

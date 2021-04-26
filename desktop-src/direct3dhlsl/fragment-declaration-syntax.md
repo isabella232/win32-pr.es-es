@@ -1,6 +1,6 @@
 ---
-title: Sintaxis de declaración de fragmentos (Direct3D 9 HLSL)
-description: Cada función de Microsoft High Level Shader Language (HLSL) se puede convertir en un fragmento de sombreador con la adición de una declaración de fragmento.
+title: Sintaxis de declaración de fragmento (DIRECT3D 9 HLSL)
+description: Cada función del Lenguaje de sombreador de alto nivel (HLSL) de Microsoft se puede convertir en un fragmento de sombreador con la adición de una declaración de fragmento.
 ms.assetid: 34ceef8c-8fb9-4c73-86cc-014b7a2ee4d7
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 98e609820e67cc3ede6c3e280f63513850fed364
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9c9090caec35bfc5e46d7024bf6de44d865d4ad6
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077944"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998312"
 ---
-# <a name="fragment-declaration-syntax-direct3d-9-hlsl"></a>Sintaxis de declaración de fragmentos (Direct3D 9 HLSL)
+# <a name="fragment-declaration-syntax-direct3d-9-hlsl"></a>Sintaxis de declaración de fragmento (HLSL de Direct3D 9)
 
-Cada función de Microsoft High Level Shader Language (HLSL) se puede convertir en un fragmento de sombreador con la adición de una declaración de fragmento.
+Cada función del Lenguaje de sombreador de alto nivel (HLSL) de Microsoft se puede convertir en un fragmento de sombreador con la adición de una declaración de fragmento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,17 +35,17 @@ donde:
 
 |                   |                                                                                                                                                                                                                                                       |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fragmentKeyword   | Palabra clave required. Pixelfragment o vertexfragment.                                                                                                                                                                                             |
+| fragmentKeyword   | Palabra clave Required. Pixelfragment o vertexfragment.                                                                                                                                                                                             |
 | FragmentName      | Cadena de texto ASCII que especifica el nombre del fragmento compilado.                                                                                                                                                                                       |
-| compilar \_ fragmento | Palabra clave required.                                                                                                                                                                                                                                     |
-| shaderProfile     | Modelo de sombreador con el que se va a realizar la compilación. Cualquier perfil de sombreador de vértices válido (vea [**D3DXGetVertexShaderProfile**](/windows/desktop/direct3d9/d3dxgetvertexshaderprofile)) o el perfil del sombreador de píxeles (consulte [**D3DXGetPixelShaderProfile**](/windows/desktop/direct3d9/d3dxgetpixelshaderprofile)). |
-| Nombrefunción ()    | El nombre de la función de sombreador, seguido de paréntesis.                                                                                                                                                                                                    |
+| fragmento de \_ compilación | Palabra clave Required.                                                                                                                                                                                                                                     |
+| shaderProfile     | Modelo de sombreador con el que se compilará. Cualquier perfil válido del sombreador de vértices (vea [**D3DXGetVertexShaderProfile)**](/windows/desktop/direct3d9/d3dxgetvertexshaderprofile)o perfil de sombreador de píxeles (vea [**D3DXGetPixelShaderProfile).**](/windows/desktop/direct3d9/d3dxgetpixelshaderprofile) |
+| FunctionName()    | Nombre de la función de sombreador, seguido de paréntesis.                                                                                                                                                                                                    |
 
 
 
- 
+ 
 
-Los parámetros de fragmento compartidos se marcan agregando un \_ prefijo "r" a su semántica.
+Los parámetros de fragmento compartido se marcan mediante la adición de un prefijo \_ 'r' a su semántica.
 
 
 ```
@@ -65,12 +65,12 @@ vertexfragment AmbientDiffuseFragment = compile_fragment vs_1_1 AmbientDiffuse()
 
 
 
-En este ejemplo, la semántica de r \_ PosWorld y r \_ NormalWorld identifica que estos dos parámetros son parámetros compartidos entre otros fragmentos.
+En este ejemplo, la semántica de r PosWorld y r NormalWorld identifica que estos dos parámetros son parámetros \_ \_ compartidos entre otros fragmentos.
 
 > [!Note]  
-> Fragment linker era una tecnología de Microsoft Direct3D 9 en D3DX 9. Fragment linker era una herramienta (Flink.exe), una API de D3DX 9 y una mejora de HLSL. Fragment linker se quitó de la versión del SDK de DirectX 2009 de agosto. Fragment linker nunca se aplica a Microsoft Direct3D 10, Microsoft Direct3D 10,1 o Microsoft Direct3D 11.
+> El vinculador de fragmentos era una tecnología de Microsoft Direct3D 9 en D3DX 9. El vinculador de fragmentos era una herramienta (Flink.exe), una API D3DX 9 y una mejora de HLSL. El vinculador de fragmentos se ha eliminado a partir de la versión del SDK de DirectX de agosto de 2009. El vinculador de fragmentos nunca se aplicó a Microsoft Direct3D 10, Microsoft Direct3D 10.1 o Microsoft Direct3D 11.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -79,6 +79,6 @@ En este ejemplo, la semántica de r \_ PosWorld y r \_ NormalWorld identifica qu
 [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

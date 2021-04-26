@@ -1,6 +1,6 @@
 ---
 title: SV_GroupID
-description: Índices para los que se está ejecutando un sombreador de cálculo en el grupo de subprocesos.
+description: Índices en los que se ejecuta un sombreador de proceso para el grupo de subprocesos.
 ms.assetid: 1b90ca74-a2b6-4a5f-aa4a-1ec879360593
 keywords:
 - SV_GroupID HLSL
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a2588474a4c6f2cfc6d616cdb70940277389fd1f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf96e1db7dbb93c88ec741e309413dea3df2b01d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149347"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997002"
 ---
-# <a name="sv_groupid"></a>ID. de \_ la SV
+# <a name="sv_groupid"></a>SV \_ GroupID
 
-Índices para los que se está ejecutando un sombreador de cálculo en el grupo de subprocesos. Los índices están en todo el grupo y no en un subproceso individual. Los valores posibles varían en el intervalo pasado como parámetros a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch). Por ejemplo, llamar a dispatch (2, 1, 1) da como resultado valores posibles de 0, 0, 0 y 1, 0, 0.
+Índices en los que se ejecuta un sombreador de proceso para el grupo de subprocesos. Los índices son para todo el grupo y no para un subproceso individual. Los valores posibles varían en el intervalo pasado como parámetros a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch). Por ejemplo, llamar a Dispatch(2,1,1) da como resultado valores posibles de 0,0,0 y 1,0,0.
 
-Define el desplazamiento de grupo dentro de una llamada de [**envío**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) , por dimensión de la llamada de envío.
+Define el desplazamiento de grupo dentro de [**una llamada a Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) por dimensión de la llamada de distribución.
 
 ## <a name="type"></a>Tipo
 
@@ -37,28 +37,27 @@ Define el desplazamiento de grupo dentro de una llamada de [**envío**](/windows
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este valor del sistema es opcional.
 
-En la ilustración siguiente se muestra la relación entre los parámetros que se pasan a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), dispatch (5, 3, 2), los valores especificados en el atributo [numthreads](sm5-attributes-numthreads.md) , numthreads (10, 8, 3) y los valores que se pasarán al sombreador de cálculo para los valores del sistema relacionados con el subproceso ([VP \_ GroupIndex](sv-groupindex.md),[VP \_ DispatchThreadID](sv-dispatchthreadid.md),[VP \_ GroupThreadID](sv-groupthreadid.md), VP \_ GroupID).
+En la ilustración siguiente se muestra la relación entre los parámetros pasados a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), los valores especificados en el atributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) y los valores que se pasarán al sombreador de proceso para los valores del sistema relacionados con subprocesos [(SV \_ GroupIndex](sv-groupindex.md),[SV \_ DispatchThreadID](sv-dispatchthreadid.md),[SV \_ GroupThreadID](sv-groupthreadid.md), SV \_ GroupID).
 
-![Ilustración de la relación entre el envío, los grupos de subprocesos y los subprocesos](images/threadgroupids.png)
+![ilustración de la relación entre distribución, grupos de subprocesos y subprocesos](images/threadgroupids.png)
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,9 +66,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Semántica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

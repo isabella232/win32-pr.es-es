@@ -4,12 +4,12 @@ ms.assetid: d8f630cd-0541-431b-86a8-792846a85ea0
 title: elemento wsdl
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbcb96e063a289e16d5e459b59cb8808a763618a
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: 5ef4bc7b76ce22184e4c2f1ceaa2131ef163a26d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380739"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994712"
 ---
 # <a name="wsdl-element"></a>elemento wsdl
 
@@ -35,7 +35,7 @@ No hay atributos.
 |---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**excludeImport**](excludeimport.md)<br/> | Impide la generación de instrucciones de importación para destinos especificados denominados en \<wsdl:import> un elemento de un archivo WSDL. <br/> <br/> |
 | [**importHint**](importhint.md)<br/>       | Especifica la ubicación de descarga de una directiva que no especifica \<wsdl:import> explícitamente una ubicación.<br/> <br/>           |
-| [**path**](path.md)<br/>                   | Archivo y ruta de acceso del archivo de entrada WSDL.<br/> <br/>                                                                                      |
+| [**Camino**](path.md)<br/>                   | Archivo y ruta de acceso del archivo de entrada WSDL.<br/> <br/>                                                                                      |
 
 
 
@@ -59,7 +59,7 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se omitirán todos los elementos [**importHint**](importhint.md) o [**excludeImport**](excludeimport.md) que aparezcan después del elemento [**path**](path.md) en un archivo de configuración XML.
 
@@ -67,7 +67,7 @@ Se omitirán todos los elementos [**importHint**](importhint.md) o [**excludeImp
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

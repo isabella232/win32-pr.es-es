@@ -1,32 +1,31 @@
 ---
-description: Marcas de capacidad del controlador D3DDEVCAPS2.
+description: Marcas de funcionalidad del controlador D3DDEVCAPS2.
 ms.assetid: 3f3b9f86-dee3-4506-bd2e-1dcc8ba617ed
 title: D3DDEVCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e774076f5ad93abf5ab1ffc343f573497592728f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 11ef30540f19add130aaca6eb48655a5ac47b2b4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274938"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999472"
 ---
 # <a name="d3ddevcaps2"></a>D3DDEVCAPS2
 
-Marcas de capacidad del controlador D3DDEVCAPS2.
+Marcas de funcionalidad del controlador D3DDEVCAPS2.
 
 
 
-|                                                 |                                                                                                                                                                                                                           |
+| \#Definir                                        | Descripción                                                                                                                                                                                                               |
 |-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \#define                                        | Descripción                                                                                                                                                                                                               |
-| D3DDEVCAPS2 \_ ADAPTIVETESSRTPATCH                | El dispositivo admite teselación adaptable de RT-patchs                                                                                                                                                                       |
-| D3DDEVCAPS2 \_ ADAPTIVETESSNPATCH                 | El dispositivo admite teselación adaptable de N-patches.                                                                                                                                                                       |
-| D3DDEVCAPS2 \_ puede \_ STRETCHRECT \_ de \_ texturas   | El dispositivo admite [**StretchRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-stretchrect) con una textura como origen.                                                                                                                       |
-| D3DDEVCAPS2 \_ DMAPNPATCH                         | El dispositivo admite los mapas de desplazamiento para N-patches.                                                                                                                                                                          |
-| D3DDEVCAPS2 \_ PRESAMPLEDDMAPNPATCH               | El dispositivo admite los mapas de desplazamiento premuestreados para N-patches. Para obtener más información acerca de la asignación de desplazamiento, vea [asignación de desplazamiento (Direct3D 9)](displacement-mapping.md).                                           |
+| D3DDEVCAPS2 \_ ADAPTIVETESSRTPATCH                | El dispositivo admite la teselación adaptable de revisiones RT                                                                                                                                                                       |
+| D3DDEVCAPS2 \_ ADAPTIVETESSNPATCH                 | El dispositivo admite la teselación adaptable de N revisiones.                                                                                                                                                                       |
+| D3DDEVCAPS2 \_ PUEDE \_ EXTENDERSE DESDE \_ \_ TEXTURAS   | El dispositivo [**admite StretchRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-stretchrect) mediante una textura como origen.                                                                                                                       |
+| D3DDEVCAPS2 \_ DMAPNPATCH                         | El dispositivo admite mapas de desplazamiento para N revisiones.                                                                                                                                                                          |
+| D3DDEVCAPS2 \_ PRESAMPLEDDMAPNPATCH               | El dispositivo admite mapas de desplazamiento previamente muestreados para N revisiones. Para obtener más información sobre la asignación de desplazamiento, vea [Asignación de desplazamiento (Direct3D 9).](displacement-mapping.md)                                           |
 | D3DDEVCAPS2 \_ STREAMOFFSET                       | El dispositivo admite desplazamientos de flujo.                                                                                                                                                                                           |
-| D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET | Varios elementos VERTEX pueden compartir el mismo desplazamiento en un flujo si \_ el dispositivo establece D3DDEVCAPS2 VERTEXELEMENTSCANSHARESTREAMOFFSET y la declaración de vértices no tiene un elemento con D3DDECLUSAGE \_ POSITIONT0. |
+| D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET | Varios elementos de vértice pueden compartir el mismo desplazamiento en una secuencia si el dispositivo establece D3DDEVCAPS2 VERTEXELEMENTSCANSHARESTREAMOFFSET y la declaración de vértice no tiene un elemento con \_ D3DDECLUSAGE \_ POSITIONT0. |
 
 
 
@@ -38,7 +37,7 @@ Marcas de capacidad del controlador D3DDEVCAPS2.
 
 |                          |            |
 |--------------------------|------------|
-| Encabezado                   | d3d9caps. h |
+| Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |
 
 

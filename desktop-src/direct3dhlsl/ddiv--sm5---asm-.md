@@ -1,23 +1,23 @@
 ---
-title: DDIV (SM5-ASM)
-description: Calcula una división de doble precisión para componentes.
+title: ddiv (sm5 - asm)
+description: Calcula una división de precisión doble por componente.
 ms.assetid: 0A67FC35-7F2F-4258-83CE-1CA398E57952
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56f5c3aae9d416d24f41de8d8308c5a69be9d016
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 81fc039b222b28a5fb1217d23c78470aff1739f7
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104996876"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999162"
 ---
-# <a name="ddiv-sm5---asm"></a>DDIV (SM5-ASM)
+# <a name="ddiv-sm5---asm"></a>ddiv (sm5 - asm)
 
-Calcula una división de doble precisión para componentes.
+Calcula una división de precisión doble por componente.
 
 
 
-| DDIV \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle \] \[ - \] SRC1 \[ \_ ABS \] \[ . swizzle\] |
+| ddiv \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swdivle \] \[ - \] src1 \[ \_ abs \] \[ .swdivle\] |
 |--------------------------------------------------------------------------------------------|
 
 
@@ -28,39 +28,38 @@ Calcula una división de doble precisión para componentes.
 
 | Elemento                                                            | Descripción                                                                                   |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] el resultado de la operación. El valor del resultado debe ser preciso para 0,5 ULP. <br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el dividendo.<br/>                                                               |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] el divisor.<br/>                                                                |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] El resultado de la operación. El valor del resultado debe ser preciso a 0,5 ULP. <br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El dividendo.<br/>                                                               |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] el divisor.<br/>                                                                |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El compilador de HLSL emitirá la instrucción DDIV siempre que el operador de división se use con valores double. Será necesario que la precisión de esta instrucción sea 0,5 ULP.
+El compilador HLSL emitirá la instrucción DDIV cada vez que se utilice el operador de división con doubles. La precisión de esta instrucción será de 0,5 ULP.
 
-Los sombreadores que usan esta instrucción se marcarán con una marca de sombreador que hará que no se puedan enlazar a menos que se cumplan todas las condiciones siguientes.
+Los sombreadores que usan esta instrucción se marcarán con una marca de sombreador que hará que no se enlacen a menos que se cumplen todas las condiciones siguientes.
 
--   El sistema admite DirectX 11,1.
--   El sistema incluye un controlador WDDM 1,2.
--   El controlador informa de la compatibilidad con esta instrucción a través de **\_ las opciones de D3D11 de datos de características de D3D11 \_ \_ \_ . ExtendedDoublesShaderInstructions** establecido en **true**.
+-   El sistema admite DirectX 11.1.
+-   El sistema incluye un controlador WDDM 1.2.
+-   El controlador informa de la compatibilidad con esta instrucción a través de **D3D11 \_ FEATURE \_ DATA \_ D3D11 \_ OPTIONS. ExtendedDoublesShaderInstructions** establecido en **TRUE.**
 
-En la tabla siguiente se muestran los resultados btained al ejecutar la instrucción con varias clases de números, suponiendo que no se produce desbordamiento o subdesbordamiento.
+En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produzcan desbordamientos ni subdesbordes.
 
-En esta tabla F se indica un número finito-real.
+En esta tabla, F significa número finito-real.
 
 
 
-|                     |          |        |          |        |        |          |        |          |         |
+| **src0 src1 ->** | **-inf** | **-F** | **-1.0** | **-0** | **+0** | **+1.0** | **+F** | **+inf** | **NaN** |
 |---------------------|----------|--------|----------|--------|--------|----------|--------|----------|---------|
-| **src0 SRC1->** | **-INF** | **-F** | **-1,0** | **-0** | **+0** | **+ 1,0** | **+ F** | **+ INF** | **NaN** |
-| **-INF**            | NaN      | +inf   | +inf     | +inf   | -inf   | -inf     | -inf   | NaN      | NaN     |
+| **-inf**            | NaN      | +inf   | +inf     | +inf   | -inf   | -inf     | -inf   | NaN      | NaN     |
 | **-F**              | +0       | +F     | -src0    | +inf   | -inf   | src0     | -F     | -0       | NaN     |
 | **-0**              | +0       | +0     | +0       | NaN    | NaN    | -0       | -0     | -0       | NaN     |
 | **+0**              | -0       | -0     | -0       | NaN    | NaN    | +0       | +0     | +0       | NaN     |
-| **+ F**              | -0       | -F     | -src0    | -inf   | +inf   | src0     | +F     | +0       | NaN     |
-| **+ INF**            | NaN      | -inf   | -inf     | -inf   | +inf   | +inf     | +inf   | NaN      | NaN     |
+| **+F**              | -0       | -F     | -src0    | -inf   | +inf   | src0     | +F     | +0       | NaN     |
+| **+inf**            | NaN      | -inf   | -inf     | -inf   | +inf   | +inf     | +inf   | NaN      | NaN     |
 | **NaN**             | NaN      | NaN    | NaN      | NaN    | NaN    | NaN      | NaN    | NaN      | NaN     |
 
 
@@ -71,7 +70,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -79,17 +78,17 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
@@ -102,7 +101,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 857caf51-ccf6-415c-aab3-1fed50fa7b34
 title: PageMediaSizePSHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cb576ce7d623f4d036db1332b0339e6cef518d3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 96c6ddd593d95ae740a5e03d37e3d79c73e1638b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105717407"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993702"
 ---
 # <a name="pagemediasizepsheight"></a>PageMediaSizePSHeight
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el alto de la página, en paralelo a la dirección de la orientación de la fuente (referencia de la [especificación de formato del archivo de descripción de impresora PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
+Especifica el alto de la página, en paralelo a la dirección de orientación de la fuente (Especificación de formato de archivo de descripción de impresora [PostScript de referencia).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Especifica el alto de la página, en paralelo a la dirección de la orientación
 
 
 
-| Nombre                       |                                                             |
+| Nombre | Value |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
 | Prefijo de ámbito <br/> | Página<br/>                                             |
@@ -65,7 +65,7 @@ La estructura XML de este elemento es:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -77,9 +77,9 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | Múltiple<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | microns<br/>         |
+| UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 
 

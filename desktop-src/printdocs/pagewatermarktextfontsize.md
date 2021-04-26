@@ -1,19 +1,19 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 4c379898-d21f-4c6c-93c8-e5f386e032ba
 title: PageWatermarkTextFontSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 678630b7b7f6650a1317efef95c30effc71c6082
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 72cc8c7f3c9a692ffbe180c253d448d7c4e320d7
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104083606"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999150"
 ---
 # <a name="pagewatermarktextfontsize"></a>PageWatermarkTextFontSize
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Define los tamaños de fuente disponibles para el texto de marca de agua.
 
@@ -24,7 +24,7 @@ Define los tamaños de fuente disponibles para el texto de marca de agua.
 
 
 
-| Nombre                       |                                            |
+| Nombre | Value |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Página<br/>                            |
@@ -65,7 +65,7 @@ La estructura XML de este elemento es la siguiente:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -78,7 +78,7 @@ En la tabla siguiente se describen las características de las variables definid
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
 | Múltiple<br/>     | integer<br/> | no definido<br/>       |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | puntos<br/>          |
 
 

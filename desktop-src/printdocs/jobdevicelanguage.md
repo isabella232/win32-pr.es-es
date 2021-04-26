@@ -1,31 +1,31 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 3894d9fa-2bf7-447a-bac3-e72a0fdb7187
 title: JobDeviceLanguage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da5b128cd8a0bd06cc259d3da0daf834f3c2aebf
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 66b9f85b44ae9fdc6efb66ce5b72bb68c5187790
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104361994"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998302"
 ---
 # <a name="jobdevicelanguage"></a>JobDeviceLanguage
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe los idiomas de dispositivo admitidos para enviar datos de un controlador a un dispositivo físico. Esto se suele denominar "lenguaje de descripción de páginas". Esta palabra clave define qué lenguaje de descripción de página es compatible con el controlador y el dispositivo físico.
+Describe los idiomas del dispositivo admitidos para enviar datos desde el controlador al dispositivo físico. Esto se suele denominar "Idioma de descripción de página". Esta palabra clave define qué idioma de descripción de página es compatible con el controlador y el dispositivo físico.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [Contenido de lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre                       |                    |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |
@@ -70,19 +70,19 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                 | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |--------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>            | string<br/> | caracteres<br/> | Nombre completo válido, tal y como se define en los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>            | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/>   | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
-| \_LanguageLevelValue\_<br/>    | string<br/> | N/D<br/>        | Ninguno.<br/>                                                                                                                                                                      | Especifica el nivel de idioma (por ejemplo, PS de nivel 2).<br/>           |
+| \_LanguageLevelValue\_<br/>    | string<br/> | N/D<br/>        | Ninguno.<br/>                                                                                                                                                                      | Especifica el nivel de idioma (por ejemplo, nivel 2 de PS).<br/>           |
 | \_LanguageEncodingValue\_<br/> | string<br/> | N/D<br/>        | Ninguno.<br/>                                                                                                                                                                      | Especifica la codificación de idioma (por ejemplo, ISOLatin1).<br/>         |
-| \_LanguageVersionValue\_<br/>  | string<br/> | N/D<br/>        | Ninguno.<br/>                                                                                                                                                                      | Especifica la versión de lenguaje.<br/>                                   |
+| \_LanguageVersionValue\_<br/>  | string<br/> | N/D<br/>        | Ninguno.<br/>                                                                                                                                                                      | Especifica la versión de idioma.<br/>                                   |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobDeviceLanguage">

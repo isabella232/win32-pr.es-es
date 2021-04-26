@@ -1,35 +1,35 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: ad30df59-0051-4471-8c0e-3207bcc7bfbe
 title: JobErrorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef9d613bf3b3af980b5cb8e916eac115cd1a0cb
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: ca6724e72a9351efc1d3cc5912b9806fb8d65a85
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "103914286"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998152"
 ---
 # <a name="joberrorsheet"></a>JobErrorSheet
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la salida de la hoja de errores. Todo el trabajo tendrá una sola hoja de error. La hoja de error se debe mostrar en el PageMediaSize predeterminado y usar el valor predeterminado de PageMediaType. La hoja de error debe aislarse del resto del trabajo. Esto significa que las opciones de finalización o procesamiento (como JobDuplex, JobStaple o JobBinding) no deben incluir la hoja de error. La hoja de error debe aparecer como la última hoja del trabajo.
+Describe la salida de la hoja de errores. Todo el trabajo tendrá una sola hoja de errores. La hoja de errores debe generarse en el valor predeterminado PageMediaSize y usar el valor predeterminado PageMediaType. La hoja de errores debe aislarse del resto del trabajo. Esto significa que las opciones de finalización o procesamiento (como JobDuplex, JobStaple o JobBinding) no deben incluir la hoja de errores. La hoja de errores debe aparecer como la hoja final del trabajo.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [Contenido de lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Nombre | Value |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Notas <br/>          | Los consumidores compatibles con XPS deben exigir que una referencia de URI a un recurso como un perfil de imagen o de color en un documento de funcionalidades de impresión o en PrintTicket deban hacer referencia a un nombre de elemento (un URI relativo a la raíz del paquete) dentro del mismo paquete de documento XPS que contiene el PrintTicket resultante. Un consumidor XPS compatible no debe usar un URI que no sea compatible con la sintaxis del nombre de la parte. Esta configuración es específica de XPS. <br/> Los URI a los que se hace referencia en un documento de funcionalidades de impresión o en PrintTicket no se deben resolver como direcciones URL. Esto no es seguro ya que es posible que no se resuelvan según lo previsto y puede crear riesgos de seguridad perjudiciales para el controlador y el sistema operativo.<br/> |
+| Notas <br/>          | Los consumidores compatibles con XPS DEBEN exigir que una referencia de URI a un recurso como una imagen o un perfil de color en un documento de capacidades de impresión o PrintTicket DEBE hacer referencia a un nombre de elemento (un URI relativo a la raíz del paquete) dentro del mismo paquete de documento XPS que contiene el PrintTicket resultante. Un consumidor XPS compatible NO DEBE usar un URI que no sea compatible con la sintaxis de nombre de elemento. Esta configuración es específica de XPS. <br/> Los URI a los que se hace referencia en un documento de capacidades de impresión o PrintTicket NO SE DEBEN resolver como direcciones URL. Esto no es seguro, ya que es posible que no se resuelvan según lo previsto y puedan crear riesgos de seguridad perjudiciales para el controlador y el sistema operativo.<br/> |
 
 
 
@@ -75,18 +75,18 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                             | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |--------------------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_ErrorSheetWhenOptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido, tal y como se define en los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
-| \_ErrorSheetWhenIdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define los criterios de selección de la interfaz de usuario (IU).<br/>               |
-| \_OptionName\_<br/>                        | string<br/> | N/D<br/>        | Nombre completo válido, tal y como se define en https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/>          | Nombre de la opción.<br/>                                           |
+| \_ErrorSheetWhenOptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_ErrorSheetWhenIdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define los criterios de selección de la interfaz de usuario (UI).<br/>               |
+| \_OptionName\_<br/>                        | string<br/> | N/D<br/>        | Nombre completo válido tal y como se define en https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/>          | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/>               | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobErrorSheet">
@@ -120,7 +120,7 @@ Las palabras clave del esquema de impresión público se definen en el https://s
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

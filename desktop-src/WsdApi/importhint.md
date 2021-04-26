@@ -4,16 +4,16 @@ ms.assetid: 81d0a30b-8f15-4518-b833-de57e0dae978
 title: elemento importHint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29fcd65f9af02b8077ba828081ac9ed767d64e3
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: c874879ee0a608c100f32a0520a85efe76080cc2
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380659"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998762"
 ---
 # <a name="importhint-element"></a>elemento importHint
 
-Especifica la ubicación de descarga de una directiva que no especifica \<wsdl:import> explícitamente una ubicación.
+Especifica la ubicación de descarga de una \<wsdl:import> directiva que no especifica explícitamente una ubicación.
 
 ## <a name="usage"></a>Uso
 
@@ -33,7 +33,7 @@ No hay atributos.
 
 | Elemento                                   | Descripción                                                                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [**Ubicación**](location.md)<br/>   | Ubicación del archivo que se importará. La ubicación puede ser una ruta de acceso relativa, una ruta de acceso absoluta o una dirección URL HTTP.<br/> <br/> |
+| [**ubicación**](location.md)<br/>   | Ubicación del archivo que se importará. La ubicación puede ser una ruta de acceso relativa, una ruta de acceso absoluta o una dirección URL HTTP.<br/> <br/> |
 | [**Nombres**](namespace.md)<br/> | Espacio de nombres que se va a importar. Debe coincidir con el espacio de nombres especificado en el \<wsdl:import> elemento .<br/> <br/>     |
 
 
@@ -53,7 +53,7 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                                       |
 |---------------------------------|-----------------------------------------------------------------------------------|
-| [**Wsdl**](wsdl.md)<br/> | Especifica un archivo WSDL que se procesará para obtener información del contrato.<br/> <br/> |
+| [**Wsdl**](wsdl.md)<br/> | Especifica un archivo WSDL para procesar la información del contrato.<br/> <br/> |
 
 
 
@@ -61,7 +61,7 @@ No hay atributos.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

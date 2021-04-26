@@ -1,31 +1,31 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: dd24166c-d5e2-420e-8a8c-e1a25728ab2f
 title: JobDuplexAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c14e9c536d0ab24fafe308a8b11fa769842aab
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 6e5ae88213af15b53f71e406b4caf791b80f286f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105707632"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998222"
 ---
 # <a name="jobduplexalldocumentscontiguously"></a>JobDuplexAllDocumentsContiguously
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las características dúplex de la salida. La característica dúplex permite la impresión en ambos lados del medio. Todos los documentos del trabajo están Dúplexs juntos de forma contigua. JobDuplexAllDocumentsContiguously y DocumentDuplex se excluyen mutuamente. Es el controlador el que determina el control de restricciones entre estas palabras clave.
+Describe las características dúplex de la salida. La característica dúplex permite imprimir en ambos lados del medio. Todos los documentos del trabajo se dúplex juntos de forma contigua. JobDuplexAllDocumentsContiguously y DocumentDuplex son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [Contenido de lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre                       |                    |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |
@@ -63,17 +63,17 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                             | Resumen                                                                                                                                |
 |------------------------------------|-------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido, tal y como se define en https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                     |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                      | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                           |
-| \_DuplexModeValue\_<br/>     | string<br/> | N/D<br/>        | Automática, manual.<br/>                                                                                                                                                | Define el modo dúplex. El hardware automático realiza la operación dúplex automática. El software y el usuario realizan la función de dúplex manual.<br/> |
+| \_DuplexModeValue\_<br/>     | string<br/> | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                | Define el modo dúplex. El dúplex automático lo realiza el hardware. El dúplex manual lo realizan el software y el usuario.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobDuplexAllDocumentsContiguously">
@@ -101,7 +101,7 @@ Las palabras clave del esquema de impresión público se definen en el https://s
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

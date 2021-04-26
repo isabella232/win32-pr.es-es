@@ -1,19 +1,19 @@
 ---
-description: Especifica el nombre de la clase de servidor del host.
+description: Especifica el nombre de la clase de servidor del lado host.
 ms.assetid: b0d9a126-0f69-4d07-ae18-07aa49ee2666
 title: elemento serverClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b232f83bf223d31e88e78bb15f4e71f4524a38a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be84aad9c5b84d6cfb992a0e3ff51e19bc9d8f14
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002943"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998702"
 ---
 # <a name="serverclass-element"></a>elemento serverClass
 
-Especifica el nombre de la clase de servidor del host.
+Especifica el nombre de la clase de servidor del lado host.
 
 ## <a name="usage"></a>Uso
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

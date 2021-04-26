@@ -1,19 +1,19 @@
 ---
-description: Genera constantes de C para las tablas de esquemas XML para los tipos de mensaje.
+description: Genera constantes de C para tablas de esquema XML para tipos de mensaje.
 ms.assetid: 0b322acb-3326-42a2-a852-07251585b314
 title: elemento messageTypeDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3f86043cc28b527778c91772ad731d3a271921f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54f1b6563254a93122960b4a990fe0bd18ab1453
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276233"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998712"
 ---
 # <a name="messagetypedefinitions-element"></a>elemento messageTypeDefinitions
 
-Genera constantes de C para las tablas de esquemas XML para los tipos de mensaje.
+Genera constantes de C para tablas de esquema XML para tipos de mensaje.
 
 ## <a name="usage"></a>Uso
 
@@ -33,8 +33,8 @@ No hay atributos.
 
 | Elemento                                   | Descripción                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------|
-| [**sesión**](operation.md)<br/> | Especifica una operación para la que se va a generar código.<br/> <br/>  |
-| [**portType**](porttype.md)<br/>   | Especifica el tipo de puerto para el que se generará el código.<br/> <br/> |
+| [**Operación**](operation.md)<br/> | Especifica una operación para la que se va a generar código.<br/> <br/>  |
+| [**portType**](porttype.md)<br/>   | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/> |
 
 
 
@@ -53,19 +53,19 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento se utiliza generalmente en archivos de código fuente de C para proporcionar las tablas de esquema declaradas por [**messageTypeDeclarations**](messagetypedeclarations.md).
+Este elemento se usa generalmente en los archivos de código fuente de C para proporcionar las tablas de esquema declaradas por [**messageTypeDeclarations**](messagetypedeclarations.md).
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |
