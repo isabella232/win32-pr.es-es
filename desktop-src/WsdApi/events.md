@@ -1,17 +1,17 @@
 ---
 description: Especifica si los eventos relacionados se incluyen en las funciones generadas.
 ms.assetid: 23ca463c-b305-496b-a1e3-58dbb793f17e
-title: elemento Events
+title: elemento events
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2571cc8e9820ca38beb649b3c227fb1c01f61c50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6883f1bcca9b62c3d8b60ca86f47b0e688d513c2
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276239"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995941"
 ---
-# <a name="events-element"></a>elemento Events
+# <a name="events-element"></a>elemento events
 
 Especifica si los eventos relacionados se incluyen en las funciones generadas.
 
@@ -43,15 +43,15 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores posibles son 1 (eventos incluidos) y 0 (predeterminado, eventos excluidos).
+Los valores posibles son 1 (eventos incluidos) y 0 (valor predeterminado, eventos excluidos).
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

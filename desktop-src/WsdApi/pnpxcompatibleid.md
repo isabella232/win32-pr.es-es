@@ -1,17 +1,17 @@
 ---
 description: Especifica el identificador compatible con PnP-X del servicio. Los dispositivos pueden tener más de un identificador compatible.
 ms.assetid: 25f3d06e-460c-4338-b05d-a6d2c10c2a12
-title: Elemento PnPXCompatibleId
+title: PnPXCompatibleId, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36cd6365a0beda91c258689a2cb7806ca7e3e10d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4a02191e2186926e5f26e5609aec82ff87f851f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696902"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996642"
 ---
-# <a name="pnpxcompatibleid-element"></a>Elemento PnPXCompatibleId
+# <a name="pnpxcompatibleid-element"></a>PnPXCompatibleId, elemento
 
 Especifica el identificador compatible con PnP-X del servicio. Los dispositivos pueden tener más de un identificador compatible.
 
@@ -35,19 +35,19 @@ No hay elementos secundarios.
 
 | Elemento                             | Descripción                                                                            |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| [**ubicada**](hosted.md)<br/> | Define los elementos para los servicios definidos por el host de servicio. <br/> <br/> |
+| [**Alojados**](hosted.md)<br/> | Define elementos para los servicios definidos por el host de servicio. <br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para especificar más de un CompatibleID, separe los identificadores con un carácter de espacio, por ejemplo, "PnPX \_ SampleService de \_ hardware \_ 1 PnPX \_ SampleService de \_ hardware \_ 2 PnPX \_ SampleService1 de \_ hardware \_ 3".
+Para especificar más de un CompatibleID, separe los identificadores con un carácter de espacio, por ejemplo, "PnPX \_ SampleService \_ HWID \_ 1 PnPX \_ SampleService \_ HWID \_ 2 PnPX \_ SampleService1 \_ HWID \_ 3".
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

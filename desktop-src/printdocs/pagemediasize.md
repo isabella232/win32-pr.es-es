@@ -1,29 +1,29 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 6f99f54b-c401-42ea-8715-95a2aad73042
 title: PageMediaSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b549d7bd81579424125908fc71c9b81e839aff05
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: bdbaef403027190676b57455aa460198c2868424
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104561254"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995524"
 ---
 # <a name="pagemediasize"></a>PageMediaSize
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las dimensiones de medios físicos que se usan para la salida.
+Describe las dimensiones de medios físicos utilizadas para la salida.
 
-En el diagrama siguiente se ilustra el uso de la variable PageMediaSize (la opción ISOA4 se usa como ejemplo).
+En el diagrama siguiente se muestra el uso de la variable PageMediaSize (la opción ISOA4 se usa como ejemplo).
 
-![diagrama que muestra las dimensiones de la página](images/local-1594393517-pagemediasizepic.gif)
+![un diagrama que muestra las dimensiones de página](images/local-1594393517-pagemediasizepic.gif)
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [Contenido de lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -31,7 +31,7 @@ En el diagrama siguiente se ilustra el uso de la variable PageMediaSize (la opci
 
 |                            |                    |
 |----------------------------|--------------------|
-| Nombre                       |                    |
+| Nombre | Value |
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
 | Notas <br/>          | Ninguno<br/>    |
@@ -72,21 +72,21 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                | Tipo de datos          | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                                                                                                                   |
 |-------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>           | string<br/>  | caracteres<br/> | Nombre completo válido, tal y como se define en los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | Especifica el nombre del medio. La nomenclatura debe utilizar la Convención siguiente: " \_ OptionNameStandard \_ " " \_ OptionNameCommonName \_ " " \_ OptionNameDescriptor \_ ".<br/> |
+| \_OptionName\_<br/>           | string<br/>  | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Especifica el nombre del medio. La nomenclatura debe usar la convención siguiente: " \_ OptionNameStandard \_ "" \_ OptionNameCommonName \_ "" \_ OptionNameDescriptor \_ ".<br/> |
 | \_IdentityOptionValue\_<br/>  | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                                                              |
-| \_OptionNameStandard\_<br/>   | string<br/>  | caracteres<br/> | ' ISO ', ' JIS ', ' Japan ', ' NorthAmerica ', ' OtherMetric ', ' PRC ', none.<br/>                                                                                                         | Indica si el tamaño del medio está definido por un estándar determinado.<br/>                                                                                               |
-| \_OptionNameCommonName\_<br/> | string<br/>  | caracteres<br/> | Nombre completo válido, tal y como se define en los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | Nombre común para el tamaño del medio.<br/>                                                                                                                                |
-| \_OptionNameDescriptor\_<br/> | string<br/>  | caracteres<br/> | Big, Envelope, extra, Plus, postal, girado, hoja, ' none '.<br/>                                                                                                              | Big, Envelope, extra, Plus, postal, girado, hoja, ' none '.<br/>                                                                                                  |
-| \_MediaSizeWidth\_<br/>       | integer<br/> | microns<br/>    | Mayor que 0, menor que el tamaño máximo del medio de soporte para el dispositivo.<br/>                                                                                                           | Especifica el ancho del medio físico.<br/>                                                                                                                     |
-| \_MediaSizeHeight\_<br/>      | integer<br/> | microns<br/>    | Mayor que 0, menor que el tamaño máximo del medio de soporte para el dispositivo.<br/>                                                                                                           | Especifica el alto de los medios físicos.<br/>                                                                                                                    |
+| \_OptionNameStandard\_<br/>   | string<br/>  | caracteres<br/> | 'ISO', 'JIS', 'Japan', 'NorthAmerica', 'OtherMetric', 'PRC', none.<br/>                                                                                                         | Indica si un estándar determinado define el tamaño del medio.<br/>                                                                                               |
+| \_OptionNameCommonName\_<br/> | string<br/>  | caracteres<br/> | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre común del tamaño del medio.<br/>                                                                                                                                |
+| \_OptionNameDescriptor\_<br/> | string<br/>  | caracteres<br/> | Big, Envelope, Extra, Plus, Postcard, Rotated, Sheet, 'none'.<br/>                                                                                                              | Big, Envelope, Extra, Plus, Postcard, Rotated, Sheet, 'none'.<br/>                                                                                                  |
+| \_MediaSizeWidth\_<br/>       | integer<br/> | Micras<br/>    | Mayor que 0, menor que el tamaño máximo de soporte técnico para el dispositivo.<br/>                                                                                                           | Especifica el ancho de los medios físicos.<br/>                                                                                                                     |
+| \_MediaSizeHeight\_<br/>      | integer<br/> | Micras<br/>    | Mayor que 0, menor que el tamaño máximo de soporte técnico para el dispositivo.<br/>                                                                                                           | Especifica el alto del medio físico.<br/>                                                                                                                    |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaSize">
@@ -1470,5 +1470,5 @@ Las palabras clave del esquema de impresión público se definen en el `https://
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>

@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: ccc2ad1c-b0c2-4c45-bc95-7c15426c2534
 title: PageScalingScaleHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f3f91f6b188dadbd86a18152be5228b62d21ab4
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 92d718d80f6b3cc369ddcb5c088a1299d639634b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105707621"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997482"
 ---
 # <a name="pagescalingscaleheight"></a>PageScalingScaleHeight
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el factor de escala en la dirección de ImageableSizeHeight para el escalado personalizado.
+Especifica el factor de escalado en la dirección ImageableSizeHeight para el escalado personalizado.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,11 +24,11 @@ Especifica el factor de escala en la dirección de ImageableSizeHeight para el e
 
 
 
-| Nombre                       |                                                         |
+| Nombre | Value |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefijo de ámbito <br/> | Página<br/>                                         |
-| Notas <br/>          | Vinculado a elemento PageScaling, opción personalizada<br/> |
+| Notas <br/>          | Vinculado al elemento PageScaling, opción Personalizada<br/> |
 
 
 
@@ -65,7 +65,7 @@ La estructura XML de este elemento es:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -77,7 +77,7 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | Entero<br/> | no definido<br/>       |
 | MaxValue<br/>     | Entero<br/> | no definido<br/>       |
 | MinValue<br/>     | Entero<br/> | 1<br/>               |
-| Mandatory<br/>    | String<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | String<br/>  | psk:Conditional<br/> |
 | Múltiple<br/>     | Entero<br/> | 1<br/>               |
 | UnitType<br/>     | String<br/>  | percent<br/>         |
 

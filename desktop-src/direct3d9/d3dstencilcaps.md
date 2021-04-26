@@ -1,40 +1,39 @@
 ---
-description: Marcas de capacidad de estarcido de controlador.
+description: Marcas de funcionalidad de galería de símbolos del controlador.
 ms.assetid: 187c758c-5e7f-48ee-97cb-b1f30b709723
 title: D3DSTENCILCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2e76c42acfcf8b6515e84679ea2fb540178608
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6716748d77fe4c3620413f43ae4a4ae48076c09f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423239"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997382"
 ---
 # <a name="d3dstencilcaps"></a>D3DSTENCILCAPS
 
-Marcas de capacidad de estarcido de controlador.
+Marcas de funcionalidad de galería de símbolos del controlador.
 
 
 
-|                          |             |                                                                                                       |
+| \#Definir                 | Value       | Descripción                                                                                           |
 |--------------------------|-------------|-------------------------------------------------------------------------------------------------------|
-| \#define                 | Value       | Descripción                                                                                           |
-| D3DSTENCILCAPS \_ mantener     | 0x00000001L | No actualice la entrada en el búfer de estarcido. Este es el valor predeterminado.                             |
-| D3DSTENCILCAPS \_ cero     | 0x00000002L | Establezca la entrada de búfer de estarcido en 0.                                                                    |
-| D3DSTENCILCAPS \_ reemplazar  | 0x00000004L | Reemplace la entrada del búfer de estarcido por el valor de referencia.                                                |
-| D3DSTENCILCAPS \_ INCRSAT  | 0x00000008L | Incremente la entrada del búfer de la galería de símbolos y la fijación al valor máximo.                                    |
-| D3DSTENCILCAPS \_ DECRSAT  | 0x00000010L | Disminuya la entrada del búfer de la galería de símbolos, de la abrazadera a cero.                                                 |
-| \_Invertir D3DSTENCILCAPS   | 0x00000020L | Invierta los bits en la entrada de búfer de la galería de símbolos.                                                          |
-| D3DSTENCILCAPS \_ incr     | 0x00000040L | Incremente la entrada del búfer de la galería de símbolos, ajustándola a cero si el nuevo valor supera el valor máximo.      |
-| D3DSTENCILCAPS \_ decr (     | 0x00000080L | Disminuye la entrada del búfer de estarcido, ajustándola al valor máximo si el nuevo valor es menor que cero. |
-| D3DSTENCILCAPS \_ TWOSIDED | 0x00000100L | El dispositivo admite la galería de símbolos de dos caras.                                                                |
+| D3DSTENCILCAPS \_ KEEP     | 0x00000001L | No actualice la entrada en el búfer de galería de símbolos. Este es el valor predeterminado.                             |
+| D3DSTENCILCAPS \_ ZERO     | 0x00000002L | Establezca la entrada stencil-buffer en 0.                                                                    |
+| D3DSTENCILCAPS \_ REPLACE  | 0x00000004L | Reemplace la entrada stencil-buffer por el valor de referencia.                                                |
+| D3DSTENCILCAPS \_ INCRSAT  | 0x00000008L | Incremente la entrada stencil-buffer, fijando al valor máximo.                                    |
+| D3DSTENCILCAPS \_ DECRSAT  | 0x00000010L | Decremento de la entrada stencil-buffer, fijando a cero.                                                 |
+| D3DSTENCILCAPS \_ INVERT   | 0x00000020L | Invierta los bits de la entrada stencil-buffer.                                                          |
+| D3DSTENCILCAPS \_ INCR     | 0x00000040L | Incremente la entrada stencil-buffer y ajuste a cero si el nuevo valor supera el valor máximo.      |
+| D3DSTENCILCAPS \_ DECR     | 0x00000080L | Decremento de la entrada stencil-buffer, ajustando al valor máximo si el nuevo valor es menor que cero. |
+| D3DSTENCILCAPS \_ TWOSIDED | 0x00000100L | El dispositivo admite galería de símbolos de dos lados.                                                                |
 
 
 
  
 
-Las entradas de búfer de estarcido son valores enteros comprendidos entre 0 y 2 ⁿ-1, donde n es la profundidad de bits del búfer de estarcido.
+Las entradas de búfer de galería de símbolos son valores enteros comprendidos entre 0 y 2ⁿ - 1, donde n es la profundidad de bits del búfer de galería de símbolos.
 
 El miembro StencilCaps de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)usa estas constantes.
 
@@ -44,7 +43,7 @@ El miembro StencilCaps de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9ca
 
 |                          |            |
 |--------------------------|------------|
-| Encabezado                   | d3d9caps. h |
+| Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |
 
 

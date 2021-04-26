@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b326bcd55778ff0e99f03554616fb4e2c72ff849
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a4d7900c843ed0cb3815f1c9b72f0c52a31486db
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994772"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997682"
 ---
-# <a name="sv_gsinstanceid"></a>VP \_ GSInstanceID
+# <a name="sv_gsinstanceid"></a>SV \_ GSInstanceID
 
-Define la [instancia](sm5-attributes-instance.md) del sombreador de geometría.
+Define la [instancia del](sm5-attributes-instance.md) sombreador de geometría.
 
 ## <a name="type"></a>Tipo
 
@@ -35,9 +35,9 @@ Define la [instancia](sm5-attributes-instance.md) del sombreador de geometría.
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este valor del sistema es opcional.
 
@@ -45,14 +45,13 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
 |        |      |        | x        |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -64,9 +63,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

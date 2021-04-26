@@ -1,19 +1,19 @@
 ---
-description: Define el prefijo al que se debe asignar el espacio de nombres para que el código XML sea más legible.
+description: Define el prefijo al que se debe asignar el espacio de nombres para que el XML sea más legible.
 ms.assetid: 955f4785-5657-4a89-9728-bce99a0a4234
 title: elemento preferredPrefix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b71f124756f29aaf29ba30d254f9b03ab4495f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98fa0310872a43811ceb626ae0684fa45a2f6666
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706138"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996482"
 ---
 # <a name="preferredprefix-element"></a>elemento preferredPrefix
 
-Define el prefijo al que se debe asignar el espacio de nombres para que el código XML sea más legible.
+Define el prefijo al que se debe asignar el espacio de nombres para que el XML sea más legible.
 
 ## <a name="usage"></a>Uso
 
@@ -35,13 +35,13 @@ No hay elementos secundarios.
 
 | Elemento                                   | Descripción                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
-| [**System.IO**](namespace.md)<br/> | Espacio de nombres que se va a utilizar para la generación de código.<br/> <br/> |
+| [**Nombres**](namespace.md)<br/> | Espacio de nombres que se usará para la generación de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento invalida el prefijo de URI predeterminado usado para el código generado. Por ejemplo, un espacio de nombres relacionado con el contenido multimedia podría tener el prefijo preferido "AV" (para audio/visual).
+Este elemento invalida el prefijo URI predeterminado utilizado para el código generado. Por ejemplo, un espacio de nombres relacionado con medios podría tener el prefijo preferido "av" (para audio/objeto visual).
 
 De forma predeterminada, el código generado crea un prefijo preferido a partir del URI.
 
@@ -49,7 +49,7 @@ De forma predeterminada, el código generado crea un prefijo preferido a partir 
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

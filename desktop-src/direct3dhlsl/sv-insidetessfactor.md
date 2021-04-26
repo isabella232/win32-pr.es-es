@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4a05cabbb9410136d2bd82ee272ad92ff1b1f430
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 4d047f7961868de020ac50ffce22b6ce02d078a5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104983766"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996922"
 ---
-# <a name="sv_insidetessfactor"></a>VP \_ InsideTessFactor
+# <a name="sv_insidetessfactor"></a>SV \_ InsideTessFactor
 
 Define la cantidad de teselación dentro de una superficie de revisión.
 
@@ -31,34 +31,33 @@ Define la cantidad de teselación dentro de una superficie de revisión.
 |            |                |
 |------------|----------------|
 | Tipo       | Topología de entrada |
-| Float \[ 2\] | revisión cuádruple     |
-| FLOAT      | Tri patch      |
-| unused     | isolínea        |
+| float \[ 2\] | revisión quad     |
+| FLOAT      | tri patch      |
+| unused     | Isolínea        |
 
 
 
- 
+ 
 
-Los factores de teselación se deben declarar como una matriz; no se pueden empaquetar en un único vector.
+Los factores de teselación deben declararse como matriz; no se pueden empaquetar en un solo vector.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor debe definirse durante la función constante patch del sombreador de casco.
+Este valor debe definirse durante la función de constante de revisión del sombreador de casco.
 
-Valor de salida necesario para el sombreador de casco si se usan cuatro o tres revisiones. Este valor es una entrada necesaria para el sombreador de dominios con el fin de que el hardware coincida con las firmas a través de del teselador.
+Valor de salida necesario para el sombreador de casco si se usan revisiones quad o tri. Este valor es una entrada necesaria para el sombreador de dominio con el fin de que el hardware coincida con las firmas a través del teselador.
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
 |        | x    | x      |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,9 +69,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

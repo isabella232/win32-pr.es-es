@@ -4,12 +4,12 @@ ms.assetid: 347978e3-87f2-4a8b-969d-c196d1815881
 title: Elemento IUnknownDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e15911166af637416758650378bf37dd0cb37697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4b8682b7286c5c99253df1ee1ae0efd235d5b8f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156613"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996702"
 ---
 # <a name="iunknowndeclarations-element"></a>Elemento IUnknownDeclarations
 
@@ -35,7 +35,7 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

@@ -1,27 +1,27 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 4cd1b0f8-7f7e-40cc-8d19-d44187822cd1
 title: DocumentPageRanges
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 563ed1746743d3329e0cd31c84c32bb8b407c56c
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 84ded7c18fc781fd4374feb8958a98b845d95546
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104361960"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997182"
 ---
 # <a name="documentpageranges"></a>DocumentPageRanges
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe el intervalo de salida del documento en páginas. El valor del parámetro debe ajustarse a la siguiente estructura:
+Describe el intervalo de salida del documento en páginas. El valor del parámetro debe ajustarse a la estructura siguiente:
 
 -   PageRangeText: "*PageRange*" o "*PageRange*,*PageRange*"
 
 -   PageRange: "*PageNumber*" o "*PageNumber* - *PageNumber*"
 
--   PageNumber: 1 a N, donde N es el número de páginas del documento. Si *pagenumber* > n, *PageNumber* = n.
+-   PageNumber: de 1 a N, donde N es el número de páginas del documento. Si *PageNumber* > N, *PageNumber* = N.
 
 Se debe omitir el espacio en blanco de la cadena.
 
@@ -32,7 +32,7 @@ Se debe omitir el espacio en blanco de la cadena.
 
 
 
-| Nombre                       |                         |
+| Nombre | Value |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefijo de ámbito <br/> | Documento<br/>     |
@@ -70,7 +70,7 @@ La estructura XML de este elemento es:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -82,7 +82,7 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxLength<br/>    | integer<br/> | no definido<br/>       |
 | MinLength<br/>    | integer<br/> | 1<br/>               |
-| Mandatory<br/>    | string<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | caracteres<br/>      |
 
 
@@ -93,7 +93,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 3b01f05c-fe2e-4467-b2a7-5431a41200cd
 title: PageWatermarkTextText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef2310efaa91532493f7add14de8c2510e24e9b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: eb19f5965347e79732aa116e5be51f90e4ef6943
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105678655"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996082"
 ---
 # <a name="pagewatermarktexttext"></a>PageWatermarkTextText
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el texto de la marca de agua.
 
@@ -24,7 +24,7 @@ Especifica el texto de la marca de agua.
 
 
 
-| Nombre                       |                                            |
+| Nombre | Value |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Página<br/>                            |
@@ -61,7 +61,7 @@ La estructura XML de este elemento es la siguiente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -73,7 +73,7 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | Entero<br/> | no definido<br/>       |
 | MaxLength<br/>    | Entero<br/> | no definido<br/>       |
 | MinLength<br/>    | Entero<br/> | 1<br/>               |
-| Mandatory<br/>    | String<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | String<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | String<br/>  | caracteres<br/>      |
 
 

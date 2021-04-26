@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 903ad358-a060-4c8f-b72e-5ec2eb898248
 title: DocumentBindingGutter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cf00f146373502564d559d00f66dedd24abf5b9
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2372636ea22610e6a209cfad3f1fe6297be34833
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104279889"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997192"
 ---
 # <a name="documentbindinggutter"></a>DocumentBindingGutter
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el ancho del medianil de enlace.
+Especifica el ancho del medianía de enlace.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Especifica el ancho del medianil de enlace.
 
 
 
-| Nombre                       |                                              |
+| Nombre | Value |
 |----------------------------|----------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                      |
 | Prefijo de ámbito <br/> | Documento<br/>                          |
@@ -65,7 +65,7 @@ La estructura XML de este elemento es:
       
 ```
 
-## <a name="structure-properties"></a>Propiedades de la estructura
+## <a name="structure-properties"></a>Propiedades de estructura
 
 En la tabla siguiente se describen las características de las variables definidas en la estructura XML.
 
@@ -77,9 +77,9 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
-| Mandatory<br/>    | String<br/>  | PSK: condicional<br/> |
+| Mandatory<br/>    | String<br/>  | psk:Conditional<br/> |
 | Múltiple<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | microns<br/>         |
+| UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

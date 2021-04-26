@@ -1,19 +1,19 @@
 ---
-description: 'Evita la generación de instrucciones Import para los destinos especificados denominados en un elemento wsdl: Import en un archivo WSDL.'
+description: Impide la generación de instrucciones de importación para destinos especificados denominados en un elemento wsdl:import de un archivo WSDL.
 ms.assetid: 9a50ee38-fadf-4112-8430-cb5a07ae04ce
-title: elemento excludeImport
+title: excludeImport, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf511a24ad4007deb886900843991364fcf03a5a
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: e14d79576151fbb3dc266621c3fa34816cea55e5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380779"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995882"
 ---
-# <a name="excludeimport-element"></a>elemento excludeImport
+# <a name="excludeimport-element"></a>excludeImport, elemento
 
-Evita la generación de instrucciones Import para los destinos especificados denominados en un \<wsdl:import> elemento de un archivo WSDL. Se puede usar para evitar que WsdCodeGen importe destinos conocidos, como las especificaciones de WS-Addressing y WS-Eventing, aunque se haga referencia a estos destinos en el WSDL.
+Impide la generación de instrucciones de importación para destinos especificados denominados en \<wsdl:import> un elemento de un archivo WSDL. Esto se puede usar para evitar que WsdCodeGen importe destinos conocidos, como las especificaciones WS-Addressing y WS-Eventing, aunque se haga referencia a estos destinos en WSDL.
 
 El valor de este elemento debe establecerse en el espacio de nombres denominado en el \<wsdl:import> elemento que se va a excluir.
 
@@ -37,7 +37,7 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                                       |
 |---------------------------------|-----------------------------------------------------------------------------------|
-| [**mencionados**](wsdl.md)<br/> | Especifica un archivo WSDL que se va a procesar para la información del contrato.<br/> <br/> |
+| [**Wsdl**](wsdl.md)<br/> | Especifica un archivo WSDL que se procesará para obtener información del contrato.<br/> <br/> |
 
 
 
@@ -45,7 +45,7 @@ No hay elementos secundarios.
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

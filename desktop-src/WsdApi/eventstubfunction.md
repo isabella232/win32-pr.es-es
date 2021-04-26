@@ -1,19 +1,19 @@
 ---
-description: Especifica si las referencias de funciones de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para las operaciones de notificación.
+description: Especifica si las referencias de función de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para las operaciones de notificación.
 ms.assetid: 8a2fd7b2-e37b-465a-ba83-a68877a2e0c3
-title: elemento eventStubFunction
+title: Elemento eventStubFunction
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fe353f43d02eec68f29f3075cc445c1314c9762
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80777a53d37e7651559a09b8e8445d4314aaca63
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697305"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995892"
 ---
-# <a name="eventstubfunction-element"></a>elemento eventStubFunction
+# <a name="eventstubfunction-element"></a>Elemento eventStubFunction
 
-Especifica si las referencias de funciones de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para las operaciones de notificación.
+Especifica si las referencias de función de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para las operaciones de notificación.
 
 ## <a name="usage"></a>Uso
 
@@ -39,17 +39,17 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las referencias de funciones de código auxiliar se encuentran en escenarios de cliente para las operaciones de notificación (eventos).
+Las referencias de función de código auxiliar se encuentran en escenarios de cliente para operaciones de notificación (eventos).
 
-Los valores válidos para este elemento son 1 (se incluyen las referencias de funciones TRUE/stub) y 0 (FALSE/no se incluyen las referencias de funciones de código auxiliar).
+Los valores válidos para este elemento son 1 (referencias de función TRUE/stub incluidas) y 0 (se incluyen referencias de función FALSE/no stub).
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-|                                     |               |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

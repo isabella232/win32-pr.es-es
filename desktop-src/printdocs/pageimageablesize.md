@@ -1,29 +1,29 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 6b81814f-2d9e-4862-8633-6ba016c11dac
 title: PageImageableSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26dca243defc08b43a79e897bfa91913a954bf37
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: f1eef9012a7fda3eed6afd16add1d483c35c1111
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104560245"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996112"
 ---
 # <a name="pageimageablesize"></a>PageImageableSize
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe el lienzo con imagen para el diseño y la representación. Se inscribirá en función de PageMediaSize y PageOrientation.
+Describe el lienzo con imágenes para el diseño y la representación. Esto se notifica en función de PageMediaSize y PageOrientation.
 
-En los diagramas siguientes se muestra el uso de variables de PageImageableSize basado en PageOrientation.
+Los diagramas siguientes ilustran el uso de variables PageImageableSize basadas en PageOrientation.
 
-![diagrama que muestra las medidas de página](images/local-1641910626-image.png)
+![un diagrama que muestra las medidas de página](images/local-1641910626-image.png)
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [Contenido de lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -31,7 +31,7 @@ En los diagramas siguientes se muestra el uso de variables de PageImageableSize 
 
 |                            |                     |
 |----------------------------|---------------------|
-| Nombre                       |                     |
+| Nombre | Value |
 | Tipo de elemento<br/>    | Propiedad<br/> |
 | Prefijo de ámbito <br/> | Página<br/>     |
 | Notas <br/>          | Ninguno<br/>     |
@@ -78,20 +78,20 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                    | Tipo de datos          | Unidad               | Valores admitidos                       | Resumen                                                                                                                    |
 |-----------------------------------------|--------------------|--------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| \_ImageableSizeWidthValue\_<br/>  | integer<br/> | microns<br/> | Mayor que 0.<br/>             | Especifica la dimensión horizontal del tamaño del medio de aplicación en relación con el PageOrientation.<br/>               |
-| \_ImageableSizeHeightValue\_<br/> | integer<br/> | microns<br/> | Mayor que 0.<br/>             | Especifica la dimensión vertical del tamaño del medio de aplicación en relación con el PageOrientation.<br/>                 |
-| \_OriginWidthValue\_<br/>         | integer<br/> | microns<br/> | Mayor o igual que 0.<br/> | Especifica el origen horizontal del área de impresión en relación con el tamaño del medio de la aplicación.<br/>                   |
-| \_OriginHeightValue\_<br/>        | integer<br/> | microns<br/> | Mayor o igual que 0.<br/> | Especifica el origen vertical del área de impresión en relación con el tamaño del medio de la aplicación.<br/>                     |
-| \_ExtentWidthValue\_<br/>         | integer<br/> | microns<br/> | Mayor que 0.<br/>             | Especifica la distancia horizontal entre el origen y el límite de límite del tamaño del medio de la aplicación.<br/>      |
-| \_ExtentHeightValue\_<br/>        | integer<br/> | microns<br/> | Mayor que 0.<br/>             | Especifica la distancia vertical entre el origen y el límite de límite del tamaño del medio de la aplicación Canvas.<br/> |
+| \_ImageableSizeWidthValue\_<br/>  | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la dimensión horizontal del tamaño del medio de aplicación con respecto a PageOrientation.<br/>               |
+| \_ImageableSizeHeightValue\_<br/> | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la dimensión vertical del tamaño del medio de la aplicación con respecto a PageOrientation.<br/>                 |
+| \_OriginWidthValue\_<br/>         | integer<br/> | Micras<br/> | Mayor o igual que 0.<br/> | Especifica el origen horizontal del área en la que se pueden crear imágenes en relación con el tamaño del medio de la aplicación.<br/>                   |
+| \_OriginHeightValue\_<br/>        | integer<br/> | Micras<br/> | Mayor o igual que 0.<br/> | Especifica el origen vertical del área en la que se pueden crear imágenes en relación con el tamaño del medio de la aplicación.<br/>                     |
+| \_ExtentWidthValue\_<br/>         | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la distancia horizontal entre el origen y el límite del tamaño del medio de la aplicación.<br/>      |
+| \_ExtentHeightValue\_<br/>        | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la distancia vertical entre el origen y el límite del tamaño del medio de la aplicación de lienzo.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Property name="psk:PageImageableSize">
@@ -123,7 +123,7 @@ Las palabras clave del esquema de impresión público se definen en el https://s
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

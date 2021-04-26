@@ -1,19 +1,19 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 52f02fc1-56fb-404d-8939-df3a4b21570d
 title: PageOrientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7f004329c217d4aab6ddc3c1d166037e7c7b5a
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 01a94fb97ad1e64c7f55fd9520ed8a648a74f550
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104424171"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997542"
 ---
 # <a name="pageorientation"></a>PageOrientation
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la orientación de la hoja de medios físicos.
 
@@ -21,10 +21,10 @@ Describe la orientación de la hoja de medios físicos.
 
 | Opción                       | Definición                                                                                              |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
-| Horizontal <br/>        | El contenido se gira en la página 90?? grados CCW en relación con la orientación estándar (vertical).<br/>  |
+| Horizontal <br/>        | ¿El contenido se gira en la página 90?? grados CCW con respecto a la orientación estándar (vertical).<br/>  |
 | Vertical <br/>         | Orientación estándar.<br/>                                                                        |
-| ReverseLandscape <br/> | El contenido se gira en la página 270?? grados CCW en relación con la orientación estándar (vertical).<br/> |
-| ReversePortrait <br/>  | El contenido se gira en la página 180?? grados en relación con la orientación estándar (vertical).<br/>     |
+| ReverseLandscape <br/> | ¿El contenido se gira en la página 270?? grados CCW con respecto a la orientación estándar (vertical).<br/> |
+| ReversePortrait <br/>  | ¿El contenido se gira en la página 180?? grados relativos a la orientación estándar (vertical).<br/>     |
 
 
 
@@ -32,17 +32,17 @@ Describe la orientación de la hoja de medios físicos.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [Contenido de lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre                       |                                                                                                                                                                                                         |
+| Nombre | Value |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                      |
 | Prefijo de ámbito <br/> | Página<br/>                                                                                                                                                                                         |
-| Notas <br/>          | Si un dispositivo de impresora solo puede admitir una dirección horizontal y esta dirección se conoce como "horizontal inversa", la orientación de la página se considerará "horizontal".<br/> |
+| Notas <br/>          | Si un dispositivo de impresora solo puede admitir una dirección horizontal y esta dirección se conoce como "Horizontal inverso", la orientación de la página todavía se considerará como "Horizontal".<br/> |
 
 
 
@@ -74,16 +74,16 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido, tal y como se define en los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se presupone el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenido de lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords espacio de nombres. El contenido de lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageOrientation">
@@ -106,7 +106,7 @@ Las palabras clave del esquema de impresión público se definen en el https://s
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
