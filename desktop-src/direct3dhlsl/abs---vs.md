@@ -1,6 +1,6 @@
 ---
-title: ABS-vs
-description: Calcula el valor absoluto. | ABS-vs
+title: abs - vs
+description: Calcula el valor absoluto. | abs - vs
 ms.assetid: d3b4cf06-dc87-4c71-aa2d-5ade4cf98caa
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,48 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 07667954de97e2a1da3999237930fb33796d9030
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e4d73ee738f575d93c2316e4ec47dced7cb128d3
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279934"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994752"
 ---
-# <a name="abs---vs"></a><span data-ttu-id="af78a-104">ABS-vs</span><span class="sxs-lookup"><span data-stu-id="af78a-104">abs - vs</span></span>
+# <a name="abs---vs"></a><span data-ttu-id="5da8f-104">abs - vs</span><span class="sxs-lookup"><span data-stu-id="5da8f-104">abs - vs</span></span>
 
-<span data-ttu-id="af78a-105">Calcula el valor absoluto.</span><span class="sxs-lookup"><span data-stu-id="af78a-105">Computes absolute value.</span></span>
+<span data-ttu-id="5da8f-105">Calcula el valor absoluto.</span><span class="sxs-lookup"><span data-stu-id="5da8f-105">Computes absolute value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="af78a-106">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="af78a-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5da8f-106">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="5da8f-106">Syntax</span></span>
 
 
 
 |              |
 |--------------|
-| <span data-ttu-id="af78a-107">ABS DST, src</span><span class="sxs-lookup"><span data-stu-id="af78a-107">abs dst, src</span></span> |
+| <span data-ttu-id="5da8f-107">abs dst, src</span><span class="sxs-lookup"><span data-stu-id="5da8f-107">abs dst, src</span></span> |
 
 
 
  
 
-<span data-ttu-id="af78a-108">, donde</span><span class="sxs-lookup"><span data-stu-id="af78a-108">where</span></span>
+<span data-ttu-id="5da8f-108">where</span><span class="sxs-lookup"><span data-stu-id="5da8f-108">where</span></span>
 
--   <span data-ttu-id="af78a-109">DST es el registro de destino.</span><span class="sxs-lookup"><span data-stu-id="af78a-109">dst is the destination register.</span></span>
--   <span data-ttu-id="af78a-110">src es un registro de origen.</span><span class="sxs-lookup"><span data-stu-id="af78a-110">src is a source register.</span></span>
+-   <span data-ttu-id="5da8f-109">dst es el registro de destino.</span><span class="sxs-lookup"><span data-stu-id="5da8f-109">dst is the destination register.</span></span>
+-   <span data-ttu-id="5da8f-110">src es un registro de origen.</span><span class="sxs-lookup"><span data-stu-id="5da8f-110">src is a source register.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="af78a-111">Observaciones</span><span class="sxs-lookup"><span data-stu-id="af78a-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5da8f-111">Comentarios</span><span class="sxs-lookup"><span data-stu-id="5da8f-111">Remarks</span></span>
 
 
 
-|                        |      |      |      |       |      |       |
+| <span data-ttu-id="5da8f-112">Versiones del sombreador de vértices</span><span class="sxs-lookup"><span data-stu-id="5da8f-112">Vertex shader versions</span></span> | <span data-ttu-id="5da8f-113">1\_1</span><span class="sxs-lookup"><span data-stu-id="5da8f-113">1\_1</span></span> | <span data-ttu-id="5da8f-114">2 \_ 0</span><span class="sxs-lookup"><span data-stu-id="5da8f-114">2\_0</span></span> | <span data-ttu-id="5da8f-115">2 \_ x</span><span class="sxs-lookup"><span data-stu-id="5da8f-115">2\_x</span></span> | <span data-ttu-id="5da8f-116">2 \_ sw</span><span class="sxs-lookup"><span data-stu-id="5da8f-116">2\_sw</span></span> | <span data-ttu-id="5da8f-117">3 \_ 0</span><span class="sxs-lookup"><span data-stu-id="5da8f-117">3\_0</span></span> | <span data-ttu-id="5da8f-118">3 \_ sw</span><span class="sxs-lookup"><span data-stu-id="5da8f-118">3\_sw</span></span> |
 |------------------------|------|------|------|-------|------|-------|
-| <span data-ttu-id="af78a-112">Versiones del sombreador de vértices</span><span class="sxs-lookup"><span data-stu-id="af78a-112">Vertex shader versions</span></span> | <span data-ttu-id="af78a-113">1\_1</span><span class="sxs-lookup"><span data-stu-id="af78a-113">1\_1</span></span> | <span data-ttu-id="af78a-114">2 \_ 0</span><span class="sxs-lookup"><span data-stu-id="af78a-114">2\_0</span></span> | <span data-ttu-id="af78a-115">2 \_ x</span><span class="sxs-lookup"><span data-stu-id="af78a-115">2\_x</span></span> | <span data-ttu-id="af78a-116">2 \_ SW</span><span class="sxs-lookup"><span data-stu-id="af78a-116">2\_sw</span></span> | <span data-ttu-id="af78a-117">3 \_ 0</span><span class="sxs-lookup"><span data-stu-id="af78a-117">3\_0</span></span> | <span data-ttu-id="af78a-118">3 \_ SW</span><span class="sxs-lookup"><span data-stu-id="af78a-118">3\_sw</span></span> |
-| <span data-ttu-id="af78a-119">abs</span><span class="sxs-lookup"><span data-stu-id="af78a-119">abs</span></span>                    |      | <span data-ttu-id="af78a-120">x</span><span class="sxs-lookup"><span data-stu-id="af78a-120">x</span></span>    | <span data-ttu-id="af78a-121">x</span><span class="sxs-lookup"><span data-stu-id="af78a-121">x</span></span>    | <span data-ttu-id="af78a-122">x</span><span class="sxs-lookup"><span data-stu-id="af78a-122">x</span></span>     | <span data-ttu-id="af78a-123">x</span><span class="sxs-lookup"><span data-stu-id="af78a-123">x</span></span>    | <span data-ttu-id="af78a-124">x</span><span class="sxs-lookup"><span data-stu-id="af78a-124">x</span></span>     |
+| <span data-ttu-id="5da8f-119">abs</span><span class="sxs-lookup"><span data-stu-id="5da8f-119">abs</span></span>                    |      | <span data-ttu-id="5da8f-120">x</span><span class="sxs-lookup"><span data-stu-id="5da8f-120">x</span></span>    | <span data-ttu-id="5da8f-121">x</span><span class="sxs-lookup"><span data-stu-id="5da8f-121">x</span></span>    | <span data-ttu-id="5da8f-122">x</span><span class="sxs-lookup"><span data-stu-id="5da8f-122">x</span></span>     | <span data-ttu-id="5da8f-123">x</span><span class="sxs-lookup"><span data-stu-id="5da8f-123">x</span></span>    | <span data-ttu-id="5da8f-124">x</span><span class="sxs-lookup"><span data-stu-id="5da8f-124">x</span></span>     |
 
 
 
  
 
-<span data-ttu-id="af78a-125">Esta instrucción funciona como se muestra aquí.</span><span class="sxs-lookup"><span data-stu-id="af78a-125">This instruction works as shown here.</span></span>
+<span data-ttu-id="5da8f-125">Esta instrucción funciona como se muestra aquí.</span><span class="sxs-lookup"><span data-stu-id="5da8f-125">This instruction works as shown here.</span></span>
 
 
 ```
@@ -62,11 +61,11 @@ dest.w = abs(src.w)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="af78a-126">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="af78a-126">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5da8f-126">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="5da8f-126">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="af78a-127">Instrucciones del sombreador de vértices</span><span class="sxs-lookup"><span data-stu-id="af78a-127">Vertex Shader Instructions</span></span>](dx9-graphics-reference-asm-vs-instructions.md)
+[<span data-ttu-id="5da8f-127">Instrucciones del sombreador de vértices</span><span class="sxs-lookup"><span data-stu-id="5da8f-127">Vertex Shader Instructions</span></span>](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

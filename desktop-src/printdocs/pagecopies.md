@@ -1,42 +1,42 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: a15fe075-6696-4c70-b658-ae62d542bb4e
 title: PageCopies
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6feef0745e3f9a86b3697b7e0ab65111fc3dfcb
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 83b1fc822d27d104364c2414ca89cf1fdf30c7d3
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104279871"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997672"
 ---
-# <a name="pagecopies"></a><span data-ttu-id="fbf27-104">PageCopies</span><span class="sxs-lookup"><span data-stu-id="fbf27-104">PageCopies</span></span>
+# <a name="pagecopies"></a><span data-ttu-id="8252e-104">PageCopies</span><span class="sxs-lookup"><span data-stu-id="8252e-104">PageCopies</span></span>
 
-<span data-ttu-id="fbf27-105">Este tema no está actualizado.</span><span class="sxs-lookup"><span data-stu-id="fbf27-105">This topic is not current.</span></span> <span data-ttu-id="fbf27-106">Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="fbf27-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+<span data-ttu-id="8252e-105">Este tema no es actual.</span><span class="sxs-lookup"><span data-stu-id="8252e-105">This topic is not current.</span></span> <span data-ttu-id="8252e-106">Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="8252e-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
 
-<span data-ttu-id="fbf27-107">Especifica el número de copias de una página.</span><span class="sxs-lookup"><span data-stu-id="fbf27-107">Specifies the number of copies of a page.</span></span>
+<span data-ttu-id="8252e-107">Especifica el número de copias de una página.</span><span class="sxs-lookup"><span data-stu-id="8252e-107">Specifies the number of copies of a page.</span></span>
 
--   [<span data-ttu-id="fbf27-108">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="fbf27-108">Element Information</span></span>](#element-information)
--   [<span data-ttu-id="fbf27-109">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="fbf27-109">Structure Content</span></span>](#structure-content)
+-   [<span data-ttu-id="8252e-108">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="8252e-108">Element Information</span></span>](#element-information)
+-   [<span data-ttu-id="8252e-109">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="8252e-109">Structure Content</span></span>](#structure-content)
 
-## <a name="element-information"></a><span data-ttu-id="fbf27-110">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="fbf27-110">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8252e-110">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="8252e-110">Element Information</span></span>
 
 
 
-| <span data-ttu-id="fbf27-111">Nombre</span><span class="sxs-lookup"><span data-stu-id="fbf27-111">Name</span></span>                       |                         |
+| <span data-ttu-id="8252e-111">Nombre</span><span class="sxs-lookup"><span data-stu-id="8252e-111">Name</span></span> | <span data-ttu-id="8252e-112">Value</span><span class="sxs-lookup"><span data-stu-id="8252e-112">Value</span></span> |
 |----------------------------|-------------------------|
-| <span data-ttu-id="fbf27-112">Tipo de elemento</span><span class="sxs-lookup"><span data-stu-id="fbf27-112">Element Type</span></span> <br/>   | <span data-ttu-id="fbf27-113">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="fbf27-113">ParameterDef</span></span><br/> |
-| <span data-ttu-id="fbf27-114">Prefijo de ámbito</span><span class="sxs-lookup"><span data-stu-id="fbf27-114">Scoping Prefix</span></span> <br/> | <span data-ttu-id="fbf27-115">Página</span><span class="sxs-lookup"><span data-stu-id="fbf27-115">Page</span></span><br/>         |
-| <span data-ttu-id="fbf27-116">Notas</span><span class="sxs-lookup"><span data-stu-id="fbf27-116">Notes</span></span> <br/>          | <span data-ttu-id="fbf27-117">Ninguno</span><span class="sxs-lookup"><span data-stu-id="fbf27-117">None</span></span><br/>         |
+| <span data-ttu-id="8252e-113">Tipo de elemento</span><span class="sxs-lookup"><span data-stu-id="8252e-113">Element Type</span></span> <br/>   | <span data-ttu-id="8252e-114">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="8252e-114">ParameterDef</span></span><br/> |
+| <span data-ttu-id="8252e-115">Prefijo de ámbito</span><span class="sxs-lookup"><span data-stu-id="8252e-115">Scoping Prefix</span></span> <br/> | <span data-ttu-id="8252e-116">Página</span><span class="sxs-lookup"><span data-stu-id="8252e-116">Page</span></span><br/>         |
+| <span data-ttu-id="8252e-117">Notas</span><span class="sxs-lookup"><span data-stu-id="8252e-117">Notes</span></span> <br/>          | <span data-ttu-id="8252e-118">Ninguno</span><span class="sxs-lookup"><span data-stu-id="8252e-118">None</span></span><br/>         |
 
 
 
  
 
-## <a name="structure-content"></a><span data-ttu-id="fbf27-118">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="fbf27-118">Structure Content</span></span>
+## <a name="structure-content"></a><span data-ttu-id="8252e-119">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="8252e-119">Structure Content</span></span>
 
-<span data-ttu-id="fbf27-119">La estructura XML de este elemento es:</span><span class="sxs-lookup"><span data-stu-id="fbf27-119">The XML structure of this element is:</span></span>
+<span data-ttu-id="8252e-120">La estructura XML de este elemento es:</span><span class="sxs-lookup"><span data-stu-id="8252e-120">The XML structure of this element is:</span></span>
 
 ``` syntax
 <psf:ParameterDef name="psk:PageCopies">
@@ -65,31 +65,31 @@ ms.locfileid: "104279871"
       
 ```
 
-## <a name="structure-properties"></a><span data-ttu-id="fbf27-120">Propiedades de la estructura</span><span class="sxs-lookup"><span data-stu-id="fbf27-120">Structure Properties</span></span>
+## <a name="structure-properties"></a><span data-ttu-id="8252e-121">Propiedades de estructura</span><span class="sxs-lookup"><span data-stu-id="8252e-121">Structure Properties</span></span>
 
-<span data-ttu-id="fbf27-121">En la tabla siguiente se describen las características de las variables definidas en la estructura XML.</span><span class="sxs-lookup"><span data-stu-id="fbf27-121">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
+<span data-ttu-id="8252e-122">En la tabla siguiente se describen las características de las variables definidas en la estructura XML.</span><span class="sxs-lookup"><span data-stu-id="8252e-122">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
 
 
 
-| <span data-ttu-id="fbf27-122">Propiedad</span><span class="sxs-lookup"><span data-stu-id="fbf27-122">Property</span></span>                | <span data-ttu-id="fbf27-123">xsi:type</span><span class="sxs-lookup"><span data-stu-id="fbf27-123">xsi:type</span></span>           | <span data-ttu-id="fbf27-124">Value</span><span class="sxs-lookup"><span data-stu-id="fbf27-124">Value</span></span>                        |
+| <span data-ttu-id="8252e-123">Propiedad</span><span class="sxs-lookup"><span data-stu-id="8252e-123">Property</span></span>                | <span data-ttu-id="8252e-124">xsi:type</span><span class="sxs-lookup"><span data-stu-id="8252e-124">xsi:type</span></span>           | <span data-ttu-id="8252e-125">Value</span><span class="sxs-lookup"><span data-stu-id="8252e-125">Value</span></span>                        |
 |-------------------------|--------------------|------------------------------|
-| <span data-ttu-id="fbf27-125">DataType</span><span class="sxs-lookup"><span data-stu-id="fbf27-125">DataType</span></span><br/>     | <span data-ttu-id="fbf27-126">string</span><span class="sxs-lookup"><span data-stu-id="fbf27-126">string</span></span><br/>  | <span data-ttu-id="fbf27-127">xs:integer</span><span class="sxs-lookup"><span data-stu-id="fbf27-127">xs:integer</span></span><br/>        |
-| <span data-ttu-id="fbf27-128">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="fbf27-128">DefaultValue</span></span><br/> | <span data-ttu-id="fbf27-129">integer</span><span class="sxs-lookup"><span data-stu-id="fbf27-129">integer</span></span><br/> | <span data-ttu-id="fbf27-130">1</span><span class="sxs-lookup"><span data-stu-id="fbf27-130">1</span></span><br/>                 |
-| <span data-ttu-id="fbf27-131">MaxValue</span><span class="sxs-lookup"><span data-stu-id="fbf27-131">MaxValue</span></span><br/>     | <span data-ttu-id="fbf27-132">integer</span><span class="sxs-lookup"><span data-stu-id="fbf27-132">integer</span></span><br/> | <span data-ttu-id="fbf27-133">no definido</span><span class="sxs-lookup"><span data-stu-id="fbf27-133">undefined</span></span><br/>         |
-| <span data-ttu-id="fbf27-134">MinValue</span><span class="sxs-lookup"><span data-stu-id="fbf27-134">MinValue</span></span><br/>     | <span data-ttu-id="fbf27-135">integer</span><span class="sxs-lookup"><span data-stu-id="fbf27-135">integer</span></span><br/> | <span data-ttu-id="fbf27-136">1</span><span class="sxs-lookup"><span data-stu-id="fbf27-136">1</span></span><br/>                 |
-| <span data-ttu-id="fbf27-137">Mandatory</span><span class="sxs-lookup"><span data-stu-id="fbf27-137">Mandatory</span></span><br/>    | <span data-ttu-id="fbf27-138">string</span><span class="sxs-lookup"><span data-stu-id="fbf27-138">string</span></span><br/>  | <span data-ttu-id="fbf27-139">PSK: incondicional</span><span class="sxs-lookup"><span data-stu-id="fbf27-139">psk:Unconditional</span></span><br/> |
-| <span data-ttu-id="fbf27-140">Múltiple</span><span class="sxs-lookup"><span data-stu-id="fbf27-140">Multiple</span></span><br/>     | <span data-ttu-id="fbf27-141">integer</span><span class="sxs-lookup"><span data-stu-id="fbf27-141">integer</span></span><br/> | <span data-ttu-id="fbf27-142">1</span><span class="sxs-lookup"><span data-stu-id="fbf27-142">1</span></span><br/>                 |
-| <span data-ttu-id="fbf27-143">UnitType</span><span class="sxs-lookup"><span data-stu-id="fbf27-143">UnitType</span></span><br/>     | <span data-ttu-id="fbf27-144">string</span><span class="sxs-lookup"><span data-stu-id="fbf27-144">string</span></span><br/>  | <span data-ttu-id="fbf27-145">instantánea</span><span class="sxs-lookup"><span data-stu-id="fbf27-145">copies</span></span><br/>            |
+| <span data-ttu-id="8252e-126">DataType</span><span class="sxs-lookup"><span data-stu-id="8252e-126">DataType</span></span><br/>     | <span data-ttu-id="8252e-127">string</span><span class="sxs-lookup"><span data-stu-id="8252e-127">string</span></span><br/>  | <span data-ttu-id="8252e-128">xs:integer</span><span class="sxs-lookup"><span data-stu-id="8252e-128">xs:integer</span></span><br/>        |
+| <span data-ttu-id="8252e-129">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="8252e-129">DefaultValue</span></span><br/> | <span data-ttu-id="8252e-130">integer</span><span class="sxs-lookup"><span data-stu-id="8252e-130">integer</span></span><br/> | <span data-ttu-id="8252e-131">1</span><span class="sxs-lookup"><span data-stu-id="8252e-131">1</span></span><br/>                 |
+| <span data-ttu-id="8252e-132">MaxValue</span><span class="sxs-lookup"><span data-stu-id="8252e-132">MaxValue</span></span><br/>     | <span data-ttu-id="8252e-133">integer</span><span class="sxs-lookup"><span data-stu-id="8252e-133">integer</span></span><br/> | <span data-ttu-id="8252e-134">no definido</span><span class="sxs-lookup"><span data-stu-id="8252e-134">undefined</span></span><br/>         |
+| <span data-ttu-id="8252e-135">MinValue</span><span class="sxs-lookup"><span data-stu-id="8252e-135">MinValue</span></span><br/>     | <span data-ttu-id="8252e-136">integer</span><span class="sxs-lookup"><span data-stu-id="8252e-136">integer</span></span><br/> | <span data-ttu-id="8252e-137">1</span><span class="sxs-lookup"><span data-stu-id="8252e-137">1</span></span><br/>                 |
+| <span data-ttu-id="8252e-138">Mandatory</span><span class="sxs-lookup"><span data-stu-id="8252e-138">Mandatory</span></span><br/>    | <span data-ttu-id="8252e-139">string</span><span class="sxs-lookup"><span data-stu-id="8252e-139">string</span></span><br/>  | <span data-ttu-id="8252e-140">psk:Unconditional</span><span class="sxs-lookup"><span data-stu-id="8252e-140">psk:Unconditional</span></span><br/> |
+| <span data-ttu-id="8252e-141">Múltiple</span><span class="sxs-lookup"><span data-stu-id="8252e-141">Multiple</span></span><br/>     | <span data-ttu-id="8252e-142">integer</span><span class="sxs-lookup"><span data-stu-id="8252e-142">integer</span></span><br/> | <span data-ttu-id="8252e-143">1</span><span class="sxs-lookup"><span data-stu-id="8252e-143">1</span></span><br/>                 |
+| <span data-ttu-id="8252e-144">UnitType</span><span class="sxs-lookup"><span data-stu-id="8252e-144">UnitType</span></span><br/>     | <span data-ttu-id="8252e-145">string</span><span class="sxs-lookup"><span data-stu-id="8252e-145">string</span></span><br/>  | <span data-ttu-id="8252e-146">Copias</span><span class="sxs-lookup"><span data-stu-id="8252e-146">copies</span></span><br/>            |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="fbf27-146">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="fbf27-146">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8252e-147">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="8252e-147">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="fbf27-147">Especificación del esquema de impresión</span><span class="sxs-lookup"><span data-stu-id="fbf27-147">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[<span data-ttu-id="8252e-148">Especificación del esquema de impresión</span><span class="sxs-lookup"><span data-stu-id="8252e-148">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
