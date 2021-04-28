@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CSource.CSource: método constructor.'
 ms.assetid: 94a92c1e-9768-4293-8290-a2b1938cd196
-title: Constructor CSource. CSource (Source. h)
+title: Constructor CSource.CSource (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 992775659d5f9838ef63b15c5395998f1faf6200
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fab398f3f4e3fdd8c23ce1e1c08f5c130478dfb4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689998"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085363"
 ---
-# <a name="csourcecsource-constructor"></a>Constructor CSource. CSource
+# <a name="csourcecsource-constructor"></a>Constructor CSource.CSource
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,14 +51,14 @@ Puntero a una cadena que contiene el nombre del objeto. Para obtener más inform
 
 </dd> <dt>
 
-*lpunk* 
+*l steam* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificador de clase del filtro.
@@ -71,16 +71,16 @@ Identificador de clase del filtro.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CSource**](csource.md)
+[**CSource (clase)**](csource.md)
 </dt> </dl>
 
  

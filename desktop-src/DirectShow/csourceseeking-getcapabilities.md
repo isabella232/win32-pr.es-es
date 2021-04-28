@@ -1,7 +1,7 @@
 ---
-description: 'El método GetCapabilities recupera todas las funciones de búsqueda de la secuencia. Este método implementa el método IMediaSeeking:: GetCapabilities.'
+description: 'Método CSourceSeeking.GetCapabilities: el método GetCapabilities recupera todas las funcionalidades de búsqueda de la secuencia. Este método implementa el método IMediaSeeking::GetCapabilities.'
 ms.assetid: a2ff7ea2-09bd-49a7-8e1b-d6360939036e
-title: Método CSourceSeeking. GetCapabilities (Ctlutil. h)
+title: Método CSourceSeeking.GetCapabilities (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eda23944fd039576bb5de74fbb7c32e375415670
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1f354381c4c99cf880c75cbbc4b13355e386030
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660786"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098783"
 ---
-# <a name="csourceseekinggetcapabilities-method"></a>CSourceSeeking. GetCapabilities, método
+# <a name="csourceseekinggetcapabilities-method"></a>Método CSourceSeeking.GetCapabilities
 
-El `GetCapabilities` método recupera todas las funciones de búsqueda de la secuencia. Este método implementa el método [**IMediaSeeking:: GetCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities) .
+El `GetCapabilities` método recupera todas las funcionalidades de búsqueda de la secuencia. Este método implementa el [**método IMediaSeeking::GetCapabilities.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ HRESULT GetCapabilities(
 *pCapabilities* 
 </dt> <dd>
 
-Puntero a una variable que recibe una combinación bit a bit de los marcadores de búsqueda de [**\_ \_ \_ funciones de búsqueda**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities) .
+Puntero a una variable que recibe una combinación bit a bit de marcas [**AM \_ SEEKING SEEKING \_ \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | Correcto<br/>                |
-| <dl> <dt>**\_puntero E**</dt> </dl> | Valor de puntero **nulo**<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto<br/>                |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Valor de** puntero NULL<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las capacidades de búsqueda se especifican mediante la variable miembro [**CSourceSeeking:: m \_ dwSeekingCaps**](csourceseeking-m-dwseekingcaps.md) .
+La variable miembro [**CSourceSeeking::m \_ dwSeekingCaps**](csourceseeking-m-dwseekingcaps.md) especifica las funcionalidades de búsqueda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,16 +74,16 @@ Las capacidades de búsqueda se especifican mediante la variable miembro [**CSou
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

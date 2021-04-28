@@ -1,7 +1,7 @@
 ---
-description: El método PeekAllocator devuelve un puntero al asignador del PIN. El método no incrementa el recuento de referencias en la interfaz.
+description: 'Método CTransInPlaceInputPin.PeekAllocator: el método PeekAllocator devuelve un puntero al asignador del pin. El método no incrementa el recuento de referencias en la interfaz .'
 ms.assetid: 67f1b872-4ae2-4fbe-9240-801ef8ae1e5b
-title: Método CTransInPlaceInputPin. PeekAllocator (TRANSip. h)
+title: Método CTransInPlaceInputPin.PeekAllocator (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22358dd776a0536cfbae819ec7cace02dd1775a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7a5f7cb0fbe754890b1d7930bb54c6fca47afa5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679253"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084673"
 ---
-# <a name="ctransinplaceinputpinpeekallocator-method"></a>CTransInPlaceInputPin. PeekAllocator, método
+# <a name="ctransinplaceinputpinpeekallocator-method"></a>Método CTransInPlaceInputPin.PeekAllocator
 
-El `PeekAllocator` método devuelve un puntero al asignador del PIN. El método no incrementa el recuento de referencias en la interfaz.
+El `PeekAllocator` método devuelve un puntero al asignador del pin. El método no incrementa el recuento de referencias en la interfaz .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la variable miembro [**CBaseInputPin:: m \_ pAllocator**](cbaseinputpin-m-pallocator.md) .
+Devuelve la variable [**miembro CBaseInputPin::m \_ pAllocator.**](cbaseinputpin-m-pallocator.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ Devuelve la variable miembro [**CBaseInputPin:: m \_ pAllocator**](cbaseinputpin
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceInputPin**](ctransinplaceinputpin.md)
+[**CTransInPlaceInputPin (clase)**](ctransinplaceinputpin.md)
 </dt> </dl>
 
  

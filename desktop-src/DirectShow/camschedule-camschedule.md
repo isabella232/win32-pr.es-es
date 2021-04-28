@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CAMSchedule.CAMSchedule: método constructor.'
 ms.assetid: ff210374-f394-4267-a67a-1a60a2f9538d
-title: Constructor CAMSchedule. CAMSchedule (Dsschedule. h)
+title: Constructor CAMSchedule.CAMSchedule (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 86e9b434aabaff3b6de12b361e1315c71d03b949
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce52a296c375f4d6e96f5fa44817a0098da9ae9f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660806"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096433"
 ---
-# <a name="camschedulecamschedule-constructor"></a>Constructor CAMSchedule. CAMSchedule
+# <a name="camschedulecamschedule-constructor"></a>Constructor CAMSchedule.CAMSchedule
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ CAMSchedule(
 *hEvent* 
 </dt> <dd>
 
-Identificador de un evento de restablecimiento automático.
+Controlar un evento de restablecimiento automático.
 
 </dd> </dl>
 
@@ -55,16 +55,16 @@ Identificador de un evento de restablecimiento automático.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dsschedule. h (incluir streams. h)</dt> </dl>                                                                                |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dsschedule.h (incluir Streams.h)</dt> </dl>                                                                                |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CAMSchedule**](camschedule.md)
+[**CLASE CAMSchedule**](camschedule.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione específicamente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+description: 'Interfaz IFeedbackHubAppInfo: esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.'
 ms.assetid: 9A3D38AA-75AF-4719-AEDB-BDC31079F57B
-title: Interfaz IFeedbackHubAppInfo
+title: IFeedbackHubAppInfo (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,28 +12,28 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 33e7ac1d393d197a6e78112f150295927061f907
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4ebe6a1402a3d524b7f94b5febfdde7bbaf18dc0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103906912"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096733"
 ---
-# <a name="ifeedbackhubappinfo-interface"></a>Interfaz IFeedbackHubAppInfo
+# <a name="ifeedbackhubappinfo-interface"></a>IFeedbackHubAppInfo (interfaz)
 
-Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione específicamente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IFeedbackHubAppInfo** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) , pero no tiene miembros adicionales.
+La **interfaz IFeedbackHubAppInfo** hereda de la [**interfaz IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/> |
 
 
