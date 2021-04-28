@@ -1,6 +1,6 @@
 ---
-description: Muestra u oculta el escritorio.
-title: Método Shell. ToggleDesktop (Shldisp. h)
+description: 'Método Shell.ToggleDesktop: muestra u oculta el escritorio.'
+title: Método Shell.ToggleDesktop (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: BD07F7F2-A588-4189-95F4-3A8E2905E8F5
-ms.openlocfilehash: 888723aeba8bd54c6ada659022286e4825e4067d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0d6c1e03db960c6abc8abc28ba8e79755fce639
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814830"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083683"
 ---
-# <a name="shelltoggledesktop-method"></a>Shell. ToggleDesktop (método)
+# <a name="shelltoggledesktop-method"></a>Método Shell.ToggleDesktop
 
 Muestra u oculta el escritorio.
 
@@ -55,15 +55,15 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método tiene el mismo efecto que el botón **Mostrar escritorio** en la barra de tareas. Oculta todas las ventanas abiertas para mostrar el escritorio o oculta el escritorio mostrando todas las ventanas abiertas. El método **ToggleDesktop** no muestra una interfaz de usuario, simplemente invoca la acción de alternancia.
+Este método tiene el mismo efecto que el botón **Mostrar** escritorio de la barra de tareas. Oculta todas las ventanas abiertas para mostrar el escritorio o oculta el escritorio mostrando todas las ventanas abiertas. El **método ToggleDesktop** no muestra una interfaz de usuario, simplemente invoca la acción de alternancia.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso correcto de **ToggleDesktop** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso adecuado **de ToggleDesktop** para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -115,13 +115,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CCmdQueue.CCmdQueue: método constructor.'
 ms.assetid: 9961a8fe-db72-4be6-8f72-68b74f82e4d4
-title: Constructor CCmdQueue. CCmdQueue (Winutil. h)
+title: Constructor CCmdQueue.CCmdQueue (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9469aa4ff9311efa096a66ee637512a2a812b54e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f4dd94e7ef2ac3970fe652f4b7a3ad7117f047e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660181"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119833"
 ---
-# <a name="ccmdqueueccmdqueue-constructor"></a>Constructor CCmdQueue. CCmdQueue
+# <a name="ccmdqueueccmdqueue-constructor"></a>Constructor CCmdQueue.CCmdQueue
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ Este constructor no tiene parámetros.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

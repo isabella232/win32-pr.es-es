@@ -1,8 +1,8 @@
 ---
-description: El método SetPowerState establece el estado de energía deseado para un dispositivo lógico y el momento en que se debe colocar un dispositivo en ese estado.
+description: 'Método SetPowerState de la clase CIM_VoltageSensor: el método SetPowerState establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado.'
 ms.assetid: f6c7e731-6642-480d-8b88-d8a3fcbd6e33
 ms.tgt_platform: multiple
-title: Método SetPowerState de la clase CIM_VoltageSensor
+title: Método SetPowerState de la CIM_VoltageSensor clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b206a765f7f843b1296e2971fe73792603689b9e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 89a83bc7c4c7fbb70c5e089940d5ff689ebe6ba5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496613"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100033"
 ---
-# <a name="setpowerstate-method-of-the-cim_voltagesensor-class"></a>Método SetPowerState de la \_ clase CIM VoltageSensor
+# <a name="setpowerstate-method-of-the-cim_voltagesensor-class"></a>Método SetPowerState de la clase \_ Cim VoltageSensor
 
-El método **SetPowerState** establece el estado de energía deseado para un dispositivo lógico y el momento en que se debe colocar un dispositivo en ese estado. En una subclase, el conjunto de códigos de retorno posibles se debe especificar mediante un calificador [**ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) en el método. Las cadenas a las que se traduce el contenido **ValueMap** también se deben especificar en la subclase como calificador de matriz **Values** . Este método se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+El **método SetPowerState** establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. En una subclase, el conjunto de códigos de retorno posibles debe especificarse mediante un [**calificador ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) en el método . Las cadenas a las que se traduce el contenido de **ValueMap** también se deben especificar en la subclase como calificador de **matriz Values.** Este método se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,38 +46,38 @@ uint32 SetPowerState(
 
 <dl> <dt>
 
-*PowerState* \[ de\]
+*PowerState* \[ En\]
 </dt> <dd>
 
-Un valor [**ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) que especifica el estado de energía deseado para este dispositivo lógico.
+Valor [**valueMap**](/windows/desktop/WmiSdk/standard-qualifiers) que especifica el estado de energía deseado para este dispositivo lógico.
 
 <dt>
 
 1
 </dt> <dd>
 
-Potencia completa.
+Energía completa.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Ahorro de energía: modo de baja energía.
+Ahorro de energía en modo de bajo consumo.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-Ahorro de energía en espera.
+Espera de ahorro de energía.
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-Ahorro de energía: otros.
+Otro ahorro de energía.
 
 </dd> <dt>
 
@@ -91,49 +91,49 @@ Ciclo de energía.
 6
 </dt> <dd>
 
-Desconectar.
+Apagar.
 
 </dd> </dl> </dd> <dt>
 
-*Hora* \[ de de\]
+*Hora* \[ En\]
 </dt> <dd>
 
-Especifica cuándo se debe establecer el estado de energía, ya sea como un valor de fecha y hora normal o como un valor de intervalo (donde el intervalo comienza cuando se recibe la invocación del método). Cuando el parámetro *PowerState* es igual a 5 ("ciclo de energía"), el parámetro *Time* indica cuándo debe encenderse el dispositivo de nuevo. El apagado es inmediato.
+Especifica cuándo se debe establecer el estado de energía, ya sea como un valor de fecha y hora normal o como un valor de intervalo (donde el intervalo comienza cuando se recibe la invocación del método). Cuando el *parámetro PowerState* es igual a 5 ("Ciclo de energía"), el parámetro *Time* indica cuándo se debe volver a encender el dispositivo. El apagado es inmediato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si es correcto, 1 (uno) si no se admite la solicitud *PowerState* y *Time* especificada y otro valor si se produjo algún otro error.
+Devuelve 0 (cero) si se realiza correctamente, 1 (uno) si no se admite la solicitud *PowerState* y *Time* especificadas y otro valor si se produjo cualquier otro error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[\_VOLTAGESENSOR CIM](setpowerstate-method-in-class-cim-voltagesensor.md)
+[CIM \_ VoltageSensor](setpowerstate-method-in-class-cim-voltagesensor.md)
 </dt> <dt>
 
-[**\_VOLTAGESENSOR CIM**](cim-voltagesensor.md)
+[**CIM \_ VoltageSensor**](cim-voltagesensor.md)
 </dt> </dl>
 
  

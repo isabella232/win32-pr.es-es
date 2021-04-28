@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de e/s de archivo. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'FileIo_V1_Name clase : esta clase es la clase de tipo de evento para eventos de E/S de archivo. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: a4ee38df-af75-4aec-89ec-5a1c39302c82
-title: FileIo_V1_Name (clase)
+title: FileIo_V1_Name clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 617e0abeed095099996079211107d0720017514a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62069f8a462499dfbfd9cfa368b9f5985d4775e0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082943"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106553"
 ---
-# <a name="fileio_v1_name-class"></a>\_Clase de \_ nombre FileIo v1
+# <a name="fileio_v1_name-class"></a>FileIo \_ V1 \_ Name (clase)
 
-Esta clase es la clase de tipo de evento para los eventos de e/s de archivo.
+Esta clase es la clase de tipo de evento para eventos de E/S de archivo.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ class FileIo_V1_Name : FileIo
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ \_ nombre FileIo v1** tiene estos tipos de miembros:
+La **clase FileIo \_ V1 \_ Name** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ \_ nombre FileIo v1** tiene estas propiedades.
+La **clase FileIo \_ V1 \_ Name** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(2), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Ruta de acceso completa al archivo, sin incluir la letra de unidad.
@@ -69,35 +69,35 @@ Ruta de acceso completa al archivo, sin incluir la letra de unidad.
 FileObject
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Haga coincidir el valor de este puntero con el valor del puntero **FileObject** en un evento [**desmontaje \_ TypeGroup1**](diskio-typegroup1.md) para determinar el tipo de operación de e/s.
+Coincide con el valor de este puntero con el valor de puntero **FileObject** de un evento [**DiskIo \_ TypeGroup1**](diskio-typegroup1.md) para determinar el tipo de operación de E/S.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Windows Server 2003:** Para recuperar la letra de unidad de la ruta de acceso del nombre de archivo, use el valor de la propiedad **FileObject** para asignar al evento [ \_ TypeGroup1 de desmontaje](diskio-typegroup1.md) correspondiente. En el \_ evento desmontaje TypeGroup1, use los valores de las propiedades **Númerodedisco corresponde** y **byteoffset (** para asignar al evento [SystemConfig \_ LogDisk](systemconfig-logdisk.md) correspondiente (**byteoffset (** se asigna a **StartOffset**). La propiedad **DriveLetterString** contiene la letra de unidad.
+**Windows Server 2003:** Para recuperar la letra de unidad de la ruta de acceso del nombre de archivo, use el valor de la propiedad **FileObject** para asignar al evento [DiskIo \_ TypeGroup1](diskio-typegroup1.md) correspondiente. En el evento DiskIo TypeGroup1, use los valores de propiedad \_ **DiskNumber** y **ByteOffset** para asignar al evento [SystemConfig \_ LogDisk](systemconfig-logdisk.md) correspondiente (**ByteOffset** se asigna a **StartOffset**). La **propiedad DriveLetterString** contiene la letra de unidad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

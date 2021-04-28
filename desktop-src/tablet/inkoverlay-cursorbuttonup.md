@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando InkCollector detecta un botón de cursor que está activo.
+description: 'Evento InkOverlay.CursorButtonUp: se produce cuando InkCollector detecta un botón de cursor que está encendido.'
 ms.assetid: ce7205f7-727c-4acf-a727-4dbb3cc42441
-title: Evento InkOverlay. CursorButtonUp (Msinkaut. h)
+title: Evento InkOverlay.CursorButtonUp (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8315f2cf87589bb24e5fb3c6ac6fd7128df426e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f22590362c6eb9a987da94bf3adb4e99943c12cd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361334"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086853"
 ---
-# <a name="inkoverlaycursorbuttonup-event"></a>Evento InkOverlay. CursorButtonUp
+# <a name="inkoverlaycursorbuttonup-event"></a>Evento InkOverlay.CursorButtonUp
 
-Se produce cuando [**InkCollector**](inkcollector-class.md) detecta un botón de cursor que está activo.
+Se produce cuando [**InkCollector detecta**](inkcollector-class.md) un botón de cursor que está en marcha.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,17 +31,17 @@ void CursorButtonUp(
 
 <dl> <dt>
 
-*Cursor* \[ de de\]
+*Cursor* \[ En\]
 </dt> <dd>
 
-Objeto de [**interfaz IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el evento [**CursorButtonUp**](inkcollector-cursorbuttonup.md) .
+Objeto [**IInkCursor Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el [**evento CursorButtonUp.**](inkcollector-cursorbuttonup.md)
 
 </dd> <dt>
 
-*Botón* \[ de de\]
+*Botón* \[ En\]
 </dt> <dd>
 
-Botón que se liberó.
+Botón que se ha liberado.
 
 </dd> </dl>
 
@@ -49,28 +49,28 @@ Botón que se liberó.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un botón de una punta de lápiz está activo cuando el usuario completa un trazo y eleva el lápiz del digitalizador. Un botón de un barril está activo cuando el botón no está presionado.
+Un botón de una punta de lápiz está arriba cuando el usuario completa un trazo y eleva el lápiz del digitalizador. Un botón de un cilindro está en marcha cuando no se presiona el botón.
 
-Al soltar el botón secundario del mouse, en realidad recibe dos eventos [**CursorButtonUp**](inkcollector-cursorbuttonup.md) : uno para el botón derecho arriba y otro para el botón primario hacia arriba.
+Cuando suelte el botón derecho del mouse, recibirá dos eventos [**CursorButtonUp:**](inkcollector-cursorbuttonup.md) uno para el botón derecho hacia arriba y otro para el botón izquierdo hacia arriba.
 
-Este método de evento se define en las \_ \_ interfaces de \_ solo distribución (dispinterfaces) IInkCollectorEvents, IInkOverlayEvents y IINKPICTUREEVENTS con el identificador DISPID \_ ICECursorButtonUp.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE DISPID \_ ICECursorButtonUp.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -83,10 +83,10 @@ Este método de evento se define en las \_ \_ interfaces de \_ solo distribució
 [**Evento CursorDown**](inkcollector-cursordown.md)
 </dt> <dt>
 
-[**Interfaz IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
+[**IInkCursor (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> <dt>
 
-[**Interfaz IInkCursorButton**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton)
+[**IInkCursorButton (Interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton)
 </dt> </dl>
 
  

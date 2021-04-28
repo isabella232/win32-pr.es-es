@@ -1,17 +1,17 @@
 ---
-description: .
+description: Referencia de mensajes
 ms.assetid: e6e5326c-d143-44ad-a8fa-7d2cb3ef0058
-title: Referencia de mensaje
+title: Referencia de mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20396b1dc7c99cb62b34cc9ab3b4d140a557dab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8625a49405125bd274575fc49ea5aa764978bb16
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360721"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083483"
 ---
-# <a name="message-reference"></a>Referencia de mensaje
+# <a name="message-reference"></a>Referencia de mensajes
 
 ## <a name="in-this-section"></a>En esta sección
 

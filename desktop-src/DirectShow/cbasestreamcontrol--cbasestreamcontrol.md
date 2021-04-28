@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CBaseStreamControl.~CBaseStreamControl: método Destructor.'
 ms.assetid: 292b4e33-02e2-4325-9784-bd41893e1ff4
-title: CBaseStreamControl. ~ CBaseStreamControl (Strmctl. h)
+title: Destructor CBaseStreamControl.~CBaseStreamControl (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f52ed08f197e9649347ebdb7235be5c997bc5a26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab25629d546dbbee656e5420fe0d94ca38fa227c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660398"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119853"
 ---
-# <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a>CBaseStreamControl. ~ CBaseStreamControl (destructor)
+# <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a>Destructor CBaseStreamControl.~CBaseStreamControl
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ Método de destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseStreamControl**](cbasestreamcontrol.md)
+[**CBaseStreamControl (clase)**](cbasestreamcontrol.md)
 </dt> </dl>
 
  

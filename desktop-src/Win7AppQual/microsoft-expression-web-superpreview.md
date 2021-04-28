@@ -1,36 +1,36 @@
 ---
-description: .
+description: Microsoft Expression Web SuperPreview
 ms.assetid: A087CE3C-C14E-4483-850D-E140FEC589BF
 title: Microsoft Expression Web SuperPreview
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eb9d58d657e1ba9b10c98f1288f2261f152f7d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97fbab3d6b4addafbe03f1bfe680fb039d78afcf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910582"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088183"
 ---
 # <a name="microsoft-expression-web-superpreview"></a>Microsoft Expression Web SuperPreview
 
-Microsoft Expression Web SuperView para Internet Explorer es una herramienta de depuración visual independiente que ayuda a depurar los sitios web para la compatibilidad entre exploradores. La preview web garantiza que los sitios funcionan correctamente en Windows Internet Explorer 8 y mantiene la compatibilidad con versiones anteriores de Windows Internet Explorer.
+Microsoft Expression Web SuperPreview for Internet Explorer es una herramienta de depuración visual independiente que le ayuda a depurar los sitios web para la compatibilidad entre exploradores. Web SuperPreview garantiza que los sitios funcionan correctamente en Windows Internet Explorer 8 y mantiene la compatibilidad con versiones anteriores de Windows Internet Explorer.
 
-En la vista previa de Preview se muestra cómo se representan las páginas web en Microsoft Internet Explorer 6 y en Windows Internet Explorer 7 o Internet Explorer 8, en función de la versión que instale en el equipo. Puede ver las páginas en paralelo o como una superposición. Puede usar las reglas, las guías y las herramientas de zoom y panorámica para identificar de forma precisa las diferencias en el diseño. Incluso puede comparar la página con el modo en que los exploradores de destino representan la página.
+Web SuperPreview muestra cómo se representan las páginas web en Microsoft Internet Explorer 6 y Windows Internet Explorer 7 o Internet Explorer 8, en función de la versión que instale en el equipo. Puede ver las páginas en paralelo o como una superposición. Puede usar reglas, guías y herramientas de zoom y desplazamiento panorámico para identificar con precisión las diferencias en el diseño. Incluso puede comparar la página con la forma en que los exploradores de destino representan la página.
 
-Web SuperView también identifica la etiqueta, el tamaño, la posición, los estilos aplicados y la ubicación de un elemento en el árbol de Document Object Model (DOM) para que pueda corregir rápidamente el error.
+Web SuperPreview también identifica la etiqueta, el tamaño, la posición, los estilos aplicados y la ubicación de un elemento en el árbol de Document Object Model (DOM) para que pueda corregir rápidamente el error.
 
 > [!Note]  
-> Web SuperView es una aplicación gratuita que no tiene ninguna expiración y no ofrece soporte técnico de Microsoft.
+> Web SuperPreview es una aplicación gratuita que no tiene expiración ni soporte técnico de Microsoft.
 
  
 
-Con la herramienta web SuperView, puede:
+Con la herramienta Web SuperPreview, puede hacer lo siguiente:
 
--   Depure páginas en el equipo de desarrollo. Web SuperView funciona directamente con los exploradores de Microsoft Windows instalados e incluye el motor de representación de Internet Explorer 6. Puede usar este motor en paralelo junto con otras versiones de Internet Explorer o Mozilla Firefox.
--   Depure más rápidamente mediante la información de los árboles de elementos y DOM. Web SuperView también combina la representación de imágenes con los datos DOM, de modo que puede resaltar elementos DOM específicos dentro de la imagen y Mostrar diferencias entre los exploradores. La herramienta proporciona información sobre los elementos, como la posición, las dimensiones y el identificador, para ayudarle a encontrar el elemento que está causando el problema de compatibilidad.
--   Admita exploradores de Windows y Macintosh, incluidos Internet Explorer 6 y versiones posteriores, Firefox 3,6 y Macintosh Safari.
+-   Depurar páginas en el equipo de desarrollo. Web SuperPreview funciona directamente con los exploradores de Microsoft Windows instalados e incluye el Internet Explorer de representación de Internet Explorer 6. Puede usar este motor en paralelo junto con otras versiones de Internet Explorer o Mozilla Firefox.
+-   Depurar más rápidamente mediante información de árbol DOM y elemento. Web SuperPreview también combina la representación de imágenes con datos DOM, por lo que puede resaltar elementos DOM específicos dentro de la imagen y mostrar las diferencias entre los exploradores. La herramienta proporciona información de elementos como la posición, las dimensiones y el identificador para ayudarle a encontrar el elemento que está causando el problema de compatibilidad.
+-   Admite exploradores Windows y Macintosh, incluidos Internet Explorer 6 y versiones posteriores, Firefox 3.6 y Macintosh Safari.
 
-Para obtener más información sobre esta herramienta y otras herramientas para desarrolladores, vea los [foros](https://social.msdn.microsoft.com/forums/announce/threads)de [Introducción a Expression Studio 4 Web](https://www.microsoft.com/expression/products/StudioWebPro_Overview.aspx), [Expression Web demo](https://msdn.microsoft.com/expression/ff723803.aspx)y Expression.
+Para obtener más información sobre esta herramienta y otras herramientas para desarrolladores, vea Información general sobre la web de [Expression Studio 4,](https://www.microsoft.com/expression/products/StudioWebPro_Overview.aspx) [Demostración web](https://msdn.microsoft.com/expression/ff723803.aspx)de expresiones y [Foros de expresiones](https://social.msdn.microsoft.com/forums/announce/threads).
 
 ## <a name="related-topics"></a>Temas relacionados
 

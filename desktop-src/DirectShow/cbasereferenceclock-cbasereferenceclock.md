@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBaseReferenceClock.CBaseReferenceClock: método constructor.'
 ms.assetid: 0fbfdc68-e1df-449f-a7d1-739504db8a2f
-title: Constructor CBaseReferenceClock. CBaseReferenceClock (Refclock. h)
+title: Constructor CBaseReferenceClock.CBaseReferenceClock (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5ad593d488e367ad6e902b0c931ffbfc3f741a53
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9840bb9d733641ada7c45b0df1470a4150b8ec85
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671253"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119943"
 ---
-# <a name="cbasereferenceclockcbasereferenceclock-constructor"></a>Constructor CBaseReferenceClock. CBaseReferenceClock
+# <a name="cbasereferenceclockcbasereferenceclock-constructor"></a>Constructor CBaseReferenceClock.CBaseReferenceClock
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,24 +52,24 @@ Puntero a una cadena que contiene el nombre del objeto. Para obtener más inform
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz IUnknown del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz IUnknown del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . Si se produce un error, el método devuelve un código de error en este parámetro. No establezca este parámetro en **null**.
+Puntero a un **valor HRESULT.** Si se produce un error, el método devuelve un código de error en este parámetro. No establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
 *pSched* 
 </dt> <dd>
 
-Puntero a un objeto [**CAMSchedule**](camschedule.md) . Si **es null**, este método crea un nuevo objeto **CAMSchedule** .
+Puntero a un [**objeto CAMSchedule.**](camschedule.md) Si **es NULL,** este método crea un **nuevo objeto CAMSchedule.**
 
 </dd> </dl>
 
@@ -79,16 +79,16 @@ Puntero a un objeto [**CAMSchedule**](camschedule.md) . Si **es null**, este mé
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Refclock. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Refclock.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseReferenceClock**](cbasereferenceclock.md)
+[**CBaseReferenceClock (clase)**](cbasereferenceclock.md)
 </dt> </dl>
 
  

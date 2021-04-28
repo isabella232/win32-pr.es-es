@@ -1,7 +1,7 @@
 ---
-description: El método Stop detiene la captura actual.
+description: 'Método IRTC::Stop: el método Stop detiene la captura actual.'
 ms.assetid: 64a80ff1-5a48-4be8-835d-a3d304ebb324
-title: 'IRTC:: STOP (método) (Netmon. h)'
+title: Método IRTC::Stop (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: f25bf9d56a6f41acefad9a552dd2f591158bc74e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10bf0886032c93288435ade05fec46077d53753c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677646"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113523"
 ---
-# <a name="irtcstop-method"></a>IRTC:: STOP (método)
+# <a name="irtcstop-method"></a>IRTC::Stop (método)
 
-El método **Stop** detiene la captura actual.
+El **método Stop** detiene la captura actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,53 +40,53 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl> | NPP no está conectado a la red. Llame a [IRTC:: Connect](irtc-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ no se \_ captura**</dt> </dl> | NPP no está capturando datos. Llame a [IRTC:: Start](irtc-start.md) para iniciar la captura.<br/>                            |
-| <dl> <dt>**NMERR \_ no es en \_ tiempo real**</dt> </dl>  | NPP está conectado a la red, pero no con el método [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IRTC::Connect](irtc-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl> | El NPP no captura datos. Llame [a IRTC::Start](irtc-start.md) para iniciar la captura.<br/>                            |
+| <dl> <dt>**NMERR \_ NOT \_ REALTIME**</dt> </dl>  | El NPP está conectado a la red, pero no con el [método IRTC::Connect.](irtc-connect.md)<br/>                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando reinicie la captura después de llamar al método **IRTC:: Stop** , asegúrese de llamar a [IRTC:: configure](irtc-configure.md) cada vez que llame a [IRTC:: Start](irtc-start.md) para reiniciar la captura.
+Cuando reinicie la captura después de llamar al método **IRTC::Stop,** asegúrese de llamar a [IRTC::Configure](irtc-configure.md) cada vez que llame a [IRTC::Start](irtc-start.md) para reiniciar la captura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: Connect](irtc-connect.md)
+[IRTC::Connect](irtc-connect.md)
 </dt> <dt>
 
-[IRTC:: configure](irtc-configure.md)
+[IRTC::Configure](irtc-configure.md)
 </dt> <dt>
 
-[IRTC:: Start](irtc-start.md)
+[IRTC::Start](irtc-start.md)
 </dt> </dl>
 
  

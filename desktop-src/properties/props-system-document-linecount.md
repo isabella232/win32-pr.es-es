@@ -1,15 +1,15 @@
 ---
-description: .
+description: System.Document. LineCount
 ms.assetid: a520b9e5-1f58-499f-b93a-c072cf79623b
 title: System.Document. LineCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0523b1557746de056d503e4dcca39492ee4f3dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac6de3856720ce5c04d3f43175f62ffc0e7383b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706517"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087173"
 ---
 # <a name="systemdocumentlinecount"></a>System.Document. LineCount
 
@@ -29,9 +29,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -46,7 +46,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -58,7 +58,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -76,7 +76,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

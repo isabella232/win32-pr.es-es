@@ -1,17 +1,17 @@
 ---
-description: Esta propiedad está obsoleta y no se debe establecer.
+description: 'MFPKEY_FRAMECOUNT propiedad: esta propiedad está obsoleta y no debe establecerse.'
 ms.assetid: 7eb51dc6-5450-45b7-9663-5ddddd30ed72
-title: Propiedad MFPKEY_FRAMECOUNT (Wmcodecdsp. h)
+title: MFPKEY_FRAMECOUNT propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c736b5eb69cf527ed4b339169afab4643baf9879
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 479ed3092daba774d8edc464f606f92efd84b3a2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719021"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092923"
 ---
-# <a name="mfpkey_framecount-property"></a>\_Propiedad FRAMECOUNT de MFPKEY
+# <a name="mfpkey_framecount-property"></a>Propiedad MFPKEY \_ FRAMECOUNT
 
 Esta propiedad está obsoleta y no se debe establecer.
 
@@ -21,15 +21,15 @@ Esta propiedad está obsoleta y no se debe establecer.
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

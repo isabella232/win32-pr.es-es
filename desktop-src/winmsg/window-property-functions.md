@@ -1,17 +1,17 @@
 ---
-description: .
+description: Funciones de propiedad de ventana
 ms.assetid: 6a84a5e1-b73e-462c-90d9-b5eaa2286f97
-title: Funciones de la propiedad Window
+title: Funciones de propiedad de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba49711607dcd16d7a0b70c8ef46936239d07e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bfa923c41b78341759dc07aed0d8dd0c9178734
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817691"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100194"
 ---
-# <a name="window-property-functions"></a>Funciones de la propiedad Window
+# <a name="window-property-functions"></a>Funciones de propiedad de ventana
 
 -   [**EnumProps**](/windows/win32/api/winuser/nf-winuser-enumpropsa)
 -   [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa)

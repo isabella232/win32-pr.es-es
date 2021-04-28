@@ -1,7 +1,7 @@
 ---
-description: Obsoleto. Use AMovieDllRegisterServer2 en su lugar.
+description: 'Función AMovieDllUnregisterServer: obsoleta. Use AMovieDllRegisterServer2 en su lugar.'
 ms.assetid: 80f52109-6239-4e3d-a395-eb69f5278cd2
-title: Función AMovieDllUnregisterServer (Dllsetup. h)
+title: Función AMovieDllUnregisterServer (Dllsetup.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4cab526a69f14cdd4c4f48767ca34722f61002eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df7fb34246249298efc143b7ccc8e6332540867c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690799"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099933"
 ---
-# <a name="amoviedllunregisterserver-function"></a>AMovieDllUnregisterServer función)
+# <a name="amoviedllunregisterserver-function"></a>Función AMovieDllUnregisterServer
 
-Obsoleto. Use [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) en su lugar.
+Obsoleto. Use [**AMovieDllRegisterServer2 en**](amoviedllregisterserver2.md) su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dllsetup. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dllsetup.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

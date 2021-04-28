@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de error de página. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'PageFault_TransitionFault clase : esta clase es la clase de tipo de evento para los eventos de error de página. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: cc2b7a93-6974-4872-98f3-d6cb81861ae5
-title: PageFault_TransitionFault (clase)
+title: PageFault_TransitionFault clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4721e2d342750b12baa58bb69f72606511c14143
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8ee12cf201b9ee83d231bf1f5e499550aa3cd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911042"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106463"
 ---
-# <a name="pagefault_transitionfault-class"></a>Errores \_ TransitionFault (clase)
+# <a name="pagefault_transitionfault-class"></a>PageFault \_ TransitionFault (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de error de página.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,45 +40,45 @@ class PageFault_TransitionFault : PageFault_V2
 
 ## <a name="members"></a>Miembros
 
-La clase **errores \_ TransitionFault** tiene estos tipos de miembros:
+La **clase PageFault \_ TransitionFault** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **errores \_ TransitionFault** tiene estas propiedades.
+La **clase PageFault \_ TransitionFault** tiene estas propiedades.
 
 <dl> <dt>
 
 ProgramCounter
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Puntero a la instrucción actual que se está ejecutando.
+Puntero a la instrucción actual que se ejecuta.
 
 </dd> <dt>
 
 VirtualAddress
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Dirección virtual de la página que causó el error de página.
+Dirección virtual de la página que produjo el error de la página.
 
 </dd> </dl>
 
@@ -86,18 +86,18 @@ Dirección virtual de la página que causó el error de página.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Errores \_ V2**](pagefault-v2.md)
+[**PageFault \_ V2**](pagefault-v2.md)
 </dt> </dl>
 
  
