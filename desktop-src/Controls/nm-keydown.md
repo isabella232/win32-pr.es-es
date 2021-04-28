@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_KEYDOWN (commctrl. h)
-description: Se envía por un control cuando el control tiene el foco de teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_KEYDOWN de notificación (Commctrl.h)
+description: 'NM_KEYDOWN de notificación: enviado por un control cuando el control tiene el foco del teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.'
 ms.assetid: e3b38096-797d-4948-9595-a252cf33dcdd
 keywords:
-- NM_KEYDOWN controles de código de notificación de Windows
+- NM_KEYDOWN código de notificación controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 222a47733a60590e7d56ca0adba038164c430fab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce595378995e41fd8a0f481d7470c8cf791f6379
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904993"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112353"
 ---
-# <a name="nm_keydown-notification-code"></a>\_Código de notificación KEYDOWN de nm
+# <a name="nm_keydown-notification-code"></a>Código \_ de notificación NM KEYDOWN
 
-Se envía por un control cuando el control tiene el foco de teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Lo envía un control cuando el control tiene el foco del teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,17 +47,17 @@ Puntero a una estructura [**NMKEY**](/windows/win32/api/commctrl/ns-commctrl-nmk
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero para evitar que el control procese la clave o cero de lo contrario.
+Devuelve un valor distinto de cero para evitar que el control procese la clave, o bien cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

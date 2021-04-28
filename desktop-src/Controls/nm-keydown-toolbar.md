@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_KEYDOWN (barra de herramientas) (commctrl. h)
-description: Se envía por un control cuando el control tiene el foco de teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_KEYDOWN de notificación (barra de herramientas) (Commctrl.h)
+description: 'NM_KEYDOWN (barra de herramientas): se envía mediante un control cuando el control tiene el foco del teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.'
 ms.assetid: bdfcf9da-118b-4fe6-9a0a-6329eb9196ef
 keywords:
-- Código de notificación de NM_KEYDOWN (barra de herramientas) controles de Windows
+- NM_KEYDOWN de notificación (barra de herramientas) Controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7326946a8234122c81b2fd057dab0ad313d49a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d53818cf417e1efac686e94d3b4ef5919f819ed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078858"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112363"
 ---
-# <a name="nm_keydown-toolbar-notification-code"></a>NM \_ código de notificación de KEYDOWN (Toolbar)
+# <a name="nm_keydown-toolbar-notification-code"></a>Código de \_ notificación NM KEYDOWN (barra de herramientas)
 
-Se envía por un control cuando el control tiene el foco de teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Lo envía un control cuando el control tiene el foco del teclado y el usuario presiona una tecla. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,15 +41,15 @@ NM_KEYDOWN
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMKEY**](/windows/win32/api/commctrl/ns-commctrl-nmkey) que contiene información adicional sobre la clave que produjo el código de notificación.
+Puntero a una [**estructura NMKEY**](/windows/win32/api/commctrl/ns-commctrl-nmkey) que contiene información adicional sobre la clave que provocó el código de notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero para evitar que el control procese la clave o cero de lo contrario.
+Devuelve un valor distinto de cero para evitar que el control procese la clave o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Actualmente, solo el control de barra de herramientas envía este código de notificación.
 
@@ -57,11 +57,11 @@ Actualmente, solo el control de barra de herramientas envía este código de not
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

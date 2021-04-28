@@ -1,7 +1,7 @@
 ---
-description: El método GetPin recupera un PIN.
+description: 'Método CBaseRenderer.GetPin: el método GetPin recupera un pin.'
 ms.assetid: 665e1aaf-4491-4241-94c6-6ea356d7a665
-title: Método CBaseRenderer. GetPin (Renbase. h)
+title: Método CBaseRenderer.GetPin (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6b67b926e0af604e0a25ea7c09b417baf3647fde
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7c30767b7cba68931bc1ddde4905c9b7bc2bc29
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660284"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119893"
 ---
-# <a name="cbaserenderergetpin-method"></a>CBaseRenderer. GetPin, método
+# <a name="cbaserenderergetpin-method"></a>Método CBaseRenderer.GetPin
 
-El `GetPin` método recupera un PIN.
+El `GetPin` método recupera un pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ virtual CBasePin* GetPin(
 *n* 
 </dt> <dd>
 
-Número del PIN especificado. Debe ser cero.
+Número del pin especificado. Debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el puntero [**CBaseRenderer:: m \_ pInputPin**](cbaserenderer-m-pinputpin.md) .
+Devuelve el [**puntero CBaseRenderer::m \_ pInputPin.**](cbaserenderer-m-pinputpin.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método implementa el método [**CBaseFilter:: GetPin**](cbasefilter-getpin.md) , que es virtual puro en la clase **CBaseFilter** . El filtro admite exactamente un PIN (el PIN de entrada). La primera vez que se llama a este método, se crea el PIN como un nuevo objeto [**CRendererInputPin**](crendererinputpin.md) .
+Este método implementa el [**método CBaseFilter::GetPin,**](cbasefilter-getpin.md) que es virtual puro en la **clase CBaseFilter.** El filtro admite exactamente un pin (el pin de entrada). La primera vez que se llama a este método, crea el pin como un nuevo [**objeto CRendererInputPin.**](crendererinputpin.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,16 +63,16 @@ Este método implementa el método [**CBaseFilter:: GetPin**](cbasefilter-getpin
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

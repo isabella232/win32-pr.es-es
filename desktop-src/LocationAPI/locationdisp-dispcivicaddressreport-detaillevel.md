@@ -1,7 +1,7 @@
 ---
-description: Reservado.
+description: 'Propiedad LocationDisp.DispCivicAddressReport.DetailLevel: reservada.'
 ms.assetid: 3f206db7-fccf-4b95-bff7-856dc53caf5a
-title: Propiedad LocationDisp. DispCivicAddressReport. DetailLevel
+title: Propiedad LocationDisp.DispCivicAddressReport.DetailLevel
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 54cb58df259f63567f018a7b59d6b7547a291bca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d987b93fbf091c7849eda0dc1949f58a97c653b1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002567"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110903"
 ---
-# <a name="locationdispdispcivicaddressreportdetaillevel-property"></a>Propiedad LocationDisp. DispCivicAddressReport. DetailLevel
+# <a name="locationdispdispcivicaddressreportdetaillevel-property"></a>Propiedad LocationDisp.DispCivicAddressReport.DetailLevel
 
-\[El modelo de objetos de API de ubicación está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, para acceder a la ubicación desde un sitio web, use la [API de geolocalización del W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acceder a la ubicación desde una aplicación de escritorio, use la API [**Windows. Devices. geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[El modelo de objetos de la API de ubicación está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, para acceder a la ubicación desde un sitio web, use [la API de geolocalización de W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acceder a la ubicación desde una aplicación de escritorio, use la API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Reservado.
 
@@ -40,15 +40,15 @@ DetailLevel = LocationDisp.DispCivicAddressReport.DetailLevel
 
 Reservado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si un informe de dirección cívica contiene datos válidos para un campo determinado, basta con inspeccionar el contenido del campo. Si el campo contiene un valor, puede suponer que el campo contiene la información más precisa disponible.
+Para determinar si un informe de direcciones cívicos contiene datos válidos para un campo determinado, basta con inspeccionar el contenido del campo. Si el campo contiene un valor, puede suponer que el campo contiene la información más precisa disponible.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                  |

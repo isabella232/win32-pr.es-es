@@ -1,21 +1,21 @@
 ---
-description: El método siguiente obtiene el siguiente número de elementos especificado en la secuencia de enumeración.
+description: 'Método IEnumMedia::Next: el método Next obtiene el siguiente número especificado de elementos en la secuencia de enumeración.'
 ms.assetid: 39c6d082-415f-4375-8cad-6d4c734d277f
-title: 'IEnumMedia:: Next (método) (Sdpblb. h)'
+title: Método IEnumMedia::Next (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f04b92220d8fe93058533427ff8cc7bcc7ad7a02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 711e9c844c46aab6ca90988d4e456e926716b201
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681143"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113443"
 ---
-# <a name="ienummedianext-method"></a>IEnumMedia:: Next (método)
+# <a name="ienummedianext-method"></a>IEnumMedia::Next (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[ Los controles e interfaces de Conferencia de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **siguiente** obtiene el siguiente número de elementos especificado en la secuencia de enumeración.
+El **método Next** obtiene el siguiente número especificado de elementos en la secuencia de enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,24 +34,24 @@ HRESULT Next(
 
 <dl> <dt>
 
-*Celt* \[ de\]
+*celta* \[ En\]
 </dt> <dd>
 
 Número de elementos solicitados.
 
 </dd> <dt>
 
-*pval* \[ enuncia\]
+*pVal* \[ out\]
 </dt> <dd>
 
-Puntero a la interfaz [**ITMedia**](itmedia.md) .
+Puntero a la [**interfaz ITMedia.**](itmedia.md)
 
 </dd> <dt>
 
-*pceltFetched* \[ enuncia\]
+*pceltFetched* \[ out\]
 </dt> <dd>
 
-Puntero al número de elementos proporcionados realmente. Puede ser **null** si *Celt* es uno.
+Puntero al número de elementos proporcionados realmente. Puede ser **NULL** si *celta* es uno.
 
 </dd> </dl>
 
@@ -61,34 +61,34 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                     | Significado                                                       |
+| Valor                                                                                     | Significado                                                       |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El método devolvió un número de elementos de *Celt* .<br/>         |
-| <dl> <dt>**S \_ false**</dt> </dl>   | El número de elementos restantes era menor que *Celt*.<br/> |
-| <dl> <dt>**\_puntero E**</dt> </dl> | El parámetro *pval* no es un puntero válido.<br/>       |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El método *devolvió el número* de celtas de elementos.<br/>         |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | El número de elementos restantes era menor *que celta.*<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | El *parámetro pVal* no es un puntero válido.<br/>       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-TAPI llama al método **AddRef** en la interfaz [**ITMedia**](itmedia.md) devuelta por **IEnumMedia:: Next**. La aplicación debe llamar a **Release** en la interfaz **ITMedia** para liberar recursos asociados a ella.
+TAPI llama al **método AddRef** en la [**interfaz ITMedia**](itmedia.md) devuelta por **IEnumMedia::Next**. La aplicación debe llamar a **Release** en la **interfaz ITMedia** para liberar recursos asociados a ella.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

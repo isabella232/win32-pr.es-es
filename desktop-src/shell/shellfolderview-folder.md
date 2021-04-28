@@ -1,7 +1,7 @@
 ---
-description: Obtiene un objeto de carpeta que representa la vista.
+description: 'Propiedad ShellFolderView.Folder: obtiene un objeto Folder que representa la vista.'
 ms.assetid: 8f3e7827-f2a0-4ce9-b3e9-e6316ec58863
-title: Propiedad ShellFolderView. Folder (Shldisp. h)
+title: Propiedad ShellFolderView.Folder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 40590064048ba5410dc9341791aec443f16d68e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 370fddc1428c8f77edb77cdac2dc04123fc5211f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278501"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083423"
 ---
-# <a name="shellfolderviewfolder-property"></a>Propiedad ShellFolderView. Folder
+# <a name="shellfolderviewfolder-property"></a>Propiedad ShellFolderView.Folder
 
-Obtiene un objeto de [**carpeta**](folder.md) que representa la vista.
+Obtiene un [**objeto Folder**](folder.md) que representa la vista.
 
 Esta propiedad es de solo lectura.
 
@@ -37,15 +37,15 @@ Folder = ShellFolderView.Folder
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Objeto que recibe el objeto de [**carpeta**](folder.md) .
+Objeto que recibe el [**objeto Folder.**](folder.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se puede llamar a la **carpeta** en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
+**Solo** se puede llamar a la carpeta en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de esta propiedad para JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad para JScript insertado en HTML.
 
 
 ```JScript
@@ -97,13 +97,13 @@ En el ejemplo siguiente se muestra el uso correcto de esta propiedad para JScrip
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
