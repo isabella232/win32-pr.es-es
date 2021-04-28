@@ -1,7 +1,7 @@
 ---
-description: Carga la matriz especificada en la matriz actual.
+description: 'Método ID3DXMATRIXStack::LoadMatrix (D3dx9math.h): carga la matriz dada en la matriz actual.'
 ms.assetid: c4c5ac50-238f-4b41-8ea9-7e48ffd03fc5
-title: 'ID3DXMATRIXStack:: LoadMatrix (método) (D3dx9math. h)'
+title: Método ID3DXMATRIXStack::LoadMatrix (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 292b4e147dfa99023f0b4d560a4ed41e6b41b3fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f2ee7e5cae4d28b81b805faa4f113d0819f1eae9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547838"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093543"
 ---
-# <a name="id3dxmatrixstackloadmatrix-method-d3dx9mathh"></a>ID3DXMATRIXStack:: LoadMatrix (método) (D3dx9math. h)
+# <a name="id3dxmatrixstackloadmatrix-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::LoadMatrix (D3dx9math.h)
 
-Carga la matriz especificada en la matriz actual.
+Carga la matriz dada en la matriz actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT LoadMatrix(
 
 <dl> <dt>
 
-*pMat* \[ de\]
+*pMat* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) cargada en la matriz actual.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) cargada en la matriz actual.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) cargada en la matriz act
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Tenga en cuenta que este método no agrega un elemento a la pila; en su lugar, reemplaza la matriz actual por la matriz proporcionada.
 
@@ -65,12 +65,12 @@ Tenga en cuenta que este método no agrega un elemento a la pila; en su lugar, r
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

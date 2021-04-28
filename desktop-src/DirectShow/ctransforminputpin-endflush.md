@@ -1,7 +1,7 @@
 ---
-description: 'El método EndFlush finaliza una operación de vaciado. Este método implementa el método IPin:: EndFlush.'
+description: 'Método CTransformInputPin.EndFlush: el método EndFlush finaliza una operación de vaciado. Este método implementa el método IPin::EndFlush.'
 ms.assetid: ebc70df3-e99d-4292-990b-99b79ff06461
-title: Método CTransformInputPin. EndFlush (Transfrm. h)
+title: Método CTransformInputPin.EndFlush (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f0fe6afeaa0ca3d47b278987af494221e8f50340
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5e080b4531d05160bebd42a68145842c4783bea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660683"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095063"
 ---
-# <a name="ctransforminputpinendflush-method"></a>CTransformInputPin. EndFlush, método
+# <a name="ctransforminputpinendflush-method"></a>Método CTransformInputPin.EndFlush
 
-El `EndFlush` método finaliza una operación de vaciado. Este método implementa el método [**IPin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) .
+El `EndFlush` método finaliza una operación de vaciado. Este método implementa el [**método IPin::EndFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                           | Descripción                             |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                  | Correcto.<br/>                     |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | El PIN de salida no está conectado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>                     |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin de salida no está conectado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**CTransformFilter:: EndFlush**](ctransformfilter-endflush.md) del filtro para proporcionar la llamada de nivel inferior. A continuación, llama al método [**CBaseInputPin:: EndFlush**](cbaseinputpin-endflush.md) del PIN.
+Este método llama al método [**CTransformFilter::EndFlush**](ctransformfilter-endflush.md) del filtro para entregar la llamada de nivel inferior. A continuación, llama al método [**CBaseInputPin::EndFlush del**](cbaseinputpin-endflush.md) pin.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Este método llama al método [**CTransformFilter:: EndFlush**](ctransformfilter
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

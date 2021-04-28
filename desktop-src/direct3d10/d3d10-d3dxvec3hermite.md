@@ -1,7 +1,7 @@
 ---
-description: Realiza una interpolación de spline Hermite, usando los vectores 3D especificados.
+description: 'Función D3DXVec3Hermite (D3DX10Math.h): realiza una interpolación spline de Hermite con los vectores 3D especificados.'
 ms.assetid: d2212299-0478-48a6-b303-60c212528058
-title: Función D3DXVec3Hermite (D3DX10Math. h)
+title: Función D3DXVec3Hermite (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: b2650bbaf33e5d768ed892bbde31493c8ec0d9d2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cbed5ceaca1e4e404c47766fa41b8b095216b277
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707899"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108193"
 ---
-# <a name="d3dxvec3hermite-function-d3dx10mathh"></a>Función D3DXVec3Hermite (D3DX10Math. h)
+# <a name="d3dxvec3hermite-function-d3dx10mathh"></a>Función D3DXVec3Hermite (D3DX10Math.h)
 
-Realiza una interpolación de spline Hermite, usando los vectores 3D especificados.
+Realiza una interpolación spline de Hermite, utilizando los vectores 3D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,11 +49,11 @@ D3DXVECTOR3* D3DXVec3Hermite(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -62,7 +62,7 @@ Puntero a una estructura D3DXVECTOR3 de origen, un vector de posición.
 
 </dd> <dt>
 
-*PT1* \[ de\]
+*pT1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -71,7 +71,7 @@ Puntero a una estructura D3DXVECTOR3 de origen, un vector tangente.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -80,7 +80,7 @@ Puntero a una estructura D3DXVECTOR3 de origen, un vector de posición.
 
 </dd> <dt>
 
-*PT2* \[ de\]
+*pT2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -92,7 +92,7 @@ Puntero a una estructura D3DXVECTOR3 de origen, un vector tangente.
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Factor de ponderación. Vea la sección Comentarios.
 
@@ -102,23 +102,23 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a una estructura D3DXVECTOR3 que es el resultado de la interpolación de la spline de Hermite.
+Puntero a una estructura D3DXVECTOR3 que es el resultado de la interpolación spline de Hermite.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **D3DXVec3Hermite** se interpola desde (positiona, tangenta) hasta (PositionB, tangentB) mediante la interpolación de spline de Hermite.
+La **función D3DXVec3Hermite** interpola de (positionA, tangentA) a (positionB, tangentB) mediante la interpolación spline hermite.
 
-La interpolación spline es una generalización de la spline de fácil entrada y de fácil salida. La rampa es una función de Q (s) con las siguientes propiedades.
+La interpolación spline es una generalización de la spline de facilidad de entrada y salida. La rampa es una función de preguntas y respuestas con las siguientes propiedades.
 
-Q (s) = como ³ + BS ² + CS + D (y, por lo tanto, Q ' (s) = 3As ² + 2Bs + C)
+Q(s) = Aszos + Bs' + Cs + D (y, por lo tanto, Q's) = 3Asmiento + 2B + C)
 
-a) Q (0) = V1, so Q ' (0) = T1
+a) Q(0) = v1, por lo que Q'(0) = t1
 
-b) Q (1) = V2, so Q ' (1) = T2
+b) Q(1) = v2, por lo que Q'(1) = t2
 
-V1 es el contenido de pV1, V2 en el contenido de pV2, T1 es el contenido de pT1 y T2 es el contenido de pT2.
+v1 es el contenido de pV1, v2 en el contenido de pV2, t1 es el contenido de pT1 y t2 es el contenido de pT2.
 
-Estas propiedades se usan para resolver para A, B, C, D.
+Estas propiedades se usan para resolver A, B, C, D.
 
 
 ```
@@ -130,7 +130,7 @@ A + B = v2 - v1 - t1 (substituting for C and D)
 
 
 
-Conecte las soluciones para A, B, C y D para generar Q (s).
+Conecte las soluciones para A, B, C y D para generar preguntas y respuestas.
 
 
 ```
@@ -144,15 +144,15 @@ D = v1
 
 El resultado es:
 
-Q (s) = (2V1-2v2 + T2 + T1) s ³ + (3v2-3V1-2T1-T2) s ² + T1s + v1
+Q(s) = (2v1 - 2v2 + t2 + t1)s así + (3v2 - 3v1 - 2t1 - t2)sntes + t1 + v1
 
 Que se puede reorganizar como:
 
-Q (s) = (2S ³-3S ² + 1) V1 + (-2S ³ + 3S ²) v2 + (s ³-2s ² + s) T1 + (s ³-s ²) T2
+Q(s) = (2s' - 3s ' + 1)v1 + (-2s ' + 3s ' v2 + (s ' - 2s ' + s)t1 + (s ' - s ' )t2
 
-Las curvas spline de Hermite son útiles para controlar la animación, ya que la curva se ejecuta a través de todos los puntos de control. Además, dado que la posición y la tangente se especifican explícitamente en los extremos de cada segmento, es fácil crear una curva continua C2 siempre que se asegure de que la posición inicial y la tangente coinciden con los valores finales del último segmento.
+Las splines hermite son útiles para controlar la animación porque la curva se ejecuta a través de todos los puntos de control. Además, dado que la posición y la tangente se especifican explícitamente en los extremos de cada segmento, es fácil crear una curva continua C2 siempre que se asegúrese de que la posición inicial y la tangente coinciden con los valores finales del último segmento.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función **D3DXVec3Hermite** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXVec3Hermite** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -160,11 +160,11 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

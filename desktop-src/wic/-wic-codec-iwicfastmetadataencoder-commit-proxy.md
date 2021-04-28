@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método commit.
+description: 'IWICFastMetadataEncoder_Commit_Proxy función: función proxy para el método Commit.'
 ms.assetid: 5b3b90ad-9d67-4fbd-b01e-c7478df8dd45
-title: IWICFastMetadataEncoder_Commit_Proxy función)
+title: IWICFastMetadataEncoder_Commit_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 487fd99c68752b1547ba53c553025fc8ecfd5ccf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 848ed74ec9c9bb490065935bd94cae7a35d02db2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277628"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097193"
 ---
-# <a name="iwicfastmetadataencoder_commit_proxy-function"></a>IWICFastMetadataEncoder \_ función de proxy de confirmación \_
+# <a name="iwicfastmetadataencoder_commit_proxy-function"></a>Función IWICFastMetadataEncoder \_ Commit \_ Proxy
 
-Función de proxy para el método [**commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicfastmetadataencoder-commit) .
+Función de proxy para el [**método Commit.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicfastmetadataencoder-commit)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT IWICFastMetadataEncoder_Commit_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder) \** _
+Tipo: **[ **IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder)\***
 
-Puntero a este objeto [_ *IWICFastMetadataEncoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder) .
+Puntero a este [**objeto IWICFastMetadataEncoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a este objeto [_ *IWICFastMetadataEncoder* *](/windows/desktop/api/Winco
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -61,11 +61,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

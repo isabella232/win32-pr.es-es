@@ -1,7 +1,7 @@
 ---
-description: El método GetAd recupera un elemento de la colección mediante un índice basado en cero.
+description: 'Método IPortableDevicePropVariantCollection::GetAt: el método GetAt recupera un elemento de la colección mediante un índice de base cero.'
 ms.assetid: c7119ba6-e6fc-4cb6-a8ab-3bf7b6bfe850
-title: 'IPortableDevicePropVariantCollection:: GetAt (método) (PortableDeviceTypes. h)'
+title: IPortableDevicePropVariantCollection::GetAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 0833c69b537fa230320ef69707a6f4302a8ca1ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b901e8fcfa065813e4c0942632f80901800ef0a9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105721584"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106803"
 ---
-# <a name="iportabledevicepropvariantcollectiongetat-method"></a>IPortableDevicePropVariantCollection:: GetAt (método)
+# <a name="iportabledevicepropvariantcollectiongetat-method"></a>IPortableDevicePropVariantCollection::GetAt (método)
 
-El método **GetAd** recupera un elemento de la colección mediante un índice basado en cero.
+El **método GetAt** recupera un elemento de la colección mediante un índice de base cero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ HRESULT GetAt(
 
 <dl> <dt>
 
-*dwIndex* \[ de\]
+*dwIndex* \[ En\]
 </dt> <dd>
 
-**DWORD** que contiene el índice de base cero del elemento que se va a recuperar.
+**DWORD** que contiene el índice de base cero del elemento que se recuperará.
 
 </dd> <dt>
 
-*pValue* \[ enuncia\]
+*pValue* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura **PROPVARIANT** . El autor de la llamada es responsable de liberar esta memoria mediante una llamada a **PropVariantClear**.
+Puntero a una **estructura PROPVARIANT.** El autor de la llamada es responsable de liberar esta memoria mediante una **llamada a PropVariantClear**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un **valor HRESULT.** Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                  | Descripción                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | El método se ha llevado a cabo de forma correcta.<br/>                          |
-| <dl> <dt>**\_puntero E**</dt> </dl>    | Un argumento de puntero necesario era **null**.<br/>      |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | El método se ha llevado a cabo de forma correcta.<br/>                          |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | Un argumento de puntero necesario era **NULL.**<br/>      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El índice que se pasó estaba fuera del intervalo.<br/> |
 
 
@@ -73,7 +73,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método [, consulte recuperación de las categorías funcionales admitidas por un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md).
+Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las categorías funcionales admitidas por un dispositivo.](retrieving-the-functional-categories-supported-by-a-device.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,16 +81,16 @@ Para obtener un ejemplo de cómo usar este método [, consulte recuperación de 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [Recuperar un identificador de objeto de un identificador único persistente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
@@ -99,25 +99,25 @@ Para obtener un ejemplo de cómo usar este método [, consulte recuperación de 
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperando formatos de servicio admitidos](retrieving-supported-formats.md)
+[Recuperación de formatos de servicio admitidos](retrieving-supported-formats.md)
 </dt> <dt>
 
-[Recuperando métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperación de métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> <dt>
 
-[Recuperación de los tipos de contenido admitidos por un dispositivo](retrieving-the-content-types-supported-by-a-device.md)
+[Recuperar los tipos de contenido admitidos por un dispositivo](retrieving-the-content-types-supported-by-a-device.md)
 </dt> <dt>
 
-[Recuperación de las categorías funcionales admitidas por un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)
+[Recuperar las categorías funcionales admitidas por un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)
 </dt> <dt>
 
-[Recuperación de los identificadores de objetos funcionales de un dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
+[Recuperar los identificadores de objeto funcionales de un dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
 </dt> <dt>
 
-[Recuperación de las capacidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
+[Recuperar las funcionalidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
 </dt> <dt>
 
-[Establecer las propiedades de varios objetos](setting-properties-for-multiple-objects.md)
+[Establecer propiedades para varios objetos](setting-properties-for-multiple-objects.md)
 </dt> </dl>
 
  

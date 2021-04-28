@@ -1,7 +1,7 @@
 ---
-description: Especifica el tipo de optimización de malla que se va a realizar.
+description: 'Enumeración D3DXMESHOPT: especifica el tipo de optimización de malla que se va a realizar.'
 ms.assetid: 32ef227a-b299-47c4-96b8-c0ea7bf549e1
-title: Enumeración D3DXMESHOPT (D3dx9mesh. h)
+title: Enumeración D3DXMESHOPT (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: e7d4f9f4ae36cec74ea86fcb50a194ac66d0add7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db7c2a2411d1c846c7369fc1d925a8e5569df3b1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698239"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114353"
 ---
 # <a name="d3dxmeshopt-enumeration"></a>Enumeración D3DXMESHOPT
 
 Especifica el tipo de optimización de malla que se va a realizar.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -46,24 +46,24 @@ enum _D3DXMESHOPT {
 
 <dl> <dt>
 
-<span id="D3DXMESHOPT_COMPACT"></span><span id="d3dxmeshopt_compact"></span>**D3DXMESHOPT \_ Compact**
+<span id="D3DXMESHOPT_COMPACT"></span><span id="d3dxmeshopt_compact"></span>**D3DXMESHOPT \_ COMPACT**
 </dt> <dd>
 
-Reordena las caras para quitar los vértices y caras sin usar.
+Reordena las caras para quitar los vértices y las caras que no se usan.
 
 </dd> <dt>
 
 <span id="D3DXMESHOPT_ATTRSORT"></span><span id="d3dxmeshopt_attrsort"></span>**D3DXMESHOPT \_ ATTRSORT**
 </dt> <dd>
 
-Reordena las caras para optimizar menos cambios de estado de agrupación de atributos y ID3DXBaseMesh mejorado: el rendimiento de la [**:D rawsubset**](id3dxbasemesh--drawsubset.md) .
+Reordena las caras para optimizar para obtener menos cambios de estado de agrupación de atributos y un rendimiento [**mejorado de ID3DXBaseMesh::D rawSubset.**](id3dxbasemesh--drawsubset.md)
 
 </dd> <dt>
 
 <span id="D3DXMESHOPT_VERTEXCACHE"></span><span id="d3dxmeshopt_vertexcache"></span>**D3DXMESHOPT \_ VERTEXCACHE**
 </dt> <dd>
 
-Reordena las caras para aumentar la tasa de aciertos de caché de los vértices.
+Reordena las caras para aumentar la tasa de aciertos de caché de las cachés de vértices.
 
 </dd> <dt>
 
@@ -77,29 +77,29 @@ Reordena las caras para maximizar la longitud de los triángulos adyacentes.
 <span id="D3DXMESHOPT_IGNOREVERTS"></span><span id="d3dxmeshopt_ignoreverts"></span>**D3DXMESHOPT \_ IGNOREVERTS**
 </dt> <dd>
 
-Optimizar solo las caras; no optimice los vértices.
+Optimice solo las caras; no optimice los vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESHOPT_DONOTSPLIT"></span><span id="d3dxmeshopt_donotsplit"></span>**D3DXMESHOPT \_ DONOTSPLIT**
 </dt> <dd>
 
-Mientras se ordena el atributo, no divida los vértices que se comparten entre los grupos de atributos.
+Durante la ordenación de atributos, no divida los vértices que se comparten entre grupos de atributos.
 
 </dd> <dt>
 
 <span id="D3DXMESHOPT_DEVICEINDEPENDENT"></span><span id="d3dxmeshopt_deviceindependent"></span>**D3DXMESHOPT \_ DEVICEINDEPENDENT**
 </dt> <dd>
 
-Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en el hardware heredado.
+Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en hardware heredado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las \_ marcas de optimización D3DXMESHOPT STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE se excluyen mutuamente.
+Las marcas de optimización D3DXMESHOPT \_ STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE son mutuamente excluyentes.
 
-La marca D3DXMESHOPT SHAREVB se ha \_ quitado de esta enumeración. \_ \_ En su lugar, use D3DXMESH VB Share, en [**D3DXMESH**](./d3dxmesh.md).
+La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH \_ VB SHARE en su \_ lugar, en [**D3DXMESH**](./d3dxmesh.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,15 +107,15 @@ La marca D3DXMESHOPT SHAREVB se ha \_ quitado de esta enumeración. \_ \_ En su 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

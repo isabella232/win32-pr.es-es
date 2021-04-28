@@ -1,21 +1,21 @@
 ---
 title: TraceLogging
-description: .
+description: TraceLogging
 ms.assetid: c516424a-9eba-4b56-80de-8c713fd3461a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 975c2f70cc645cc04d6b1461e32bb3b899097d1c
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: b7bd83c608d2ac98fdccce760c851496af80c217
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103796384"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116723"
 ---
 # <a name="tracelogging"></a>TraceLogging
 
 ## <a name="purpose"></a>Propósito
 
-TraceLogging es el nuevo marco de seguimiento de eventos de Windows 10 para aplicaciones en modo de usuario y controladores de modo kernel. TraceLogging se basa en el seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código.
+TraceLogging es la nueva plataforma Windows 10 seguimiento de eventos para aplicaciones en modo de usuario y controladores en modo kernel. TraceLogging se basa en Seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -35,26 +35,26 @@ TraceLogging es el nuevo marco de seguimiento de eventos de Windows 10 para apli
 <tbody>
 <tr class="odd">
 <td><a href="trace-logging-about.md">Acerca de TraceLogging</a><br/></td>
-<td>TraceLogging es el nuevo seguimiento de eventos de Windows 10 para aplicaciones en modo de usuario y controladores de modo kernel. TraceLogging es un formato para el seguimiento de eventos autodescriptivo para Windows (ETW). TraceLogging se basa en el seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código.<br/></td>
+<td>TraceLogging es la nueva Windows 10 seguimiento de eventos para aplicaciones en modo de usuario y controladores en modo kernel. TraceLogging es un formato para la descripción Seguimiento de eventos para Windows (ETW). TraceLogging se basa en Seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="tracelogging-using-tracelogging.md">Usar TraceLogging</a><br/></td>
-<td>En los temas siguientes se proporciona una guía de inicio rápido de TraceLogging para código nativo y administrado, con ejemplos.<br/></td>
+<td><a href="tracelogging-using-tracelogging.md">Uso de TraceLogging</a><br/></td>
+<td>En los temas siguientes se proporciona un inicio rápido de TraceLogging para código nativo y administrado, con ejemplos.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="trace-logging-reference.md">Referencia de TraceLogging</a><br/></td>
-<td>En los temas siguientes se proporciona información sobre la API de TraceLogging nativa.<br/> TraceLogging se basa en el seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código. TraceLogging permite incluir datos estructurados con eventos, correlacionar eventos y no requiere un archivo XML de manifiesto de instrumentación independiente.<br/> <span class="underline">Para desarrolladores de WinRT</span><br/>
+<td><a href="trace-logging-reference.md">Referencia de registro de seguimiento</a><br/></td>
+<td>En los temas siguientes se proporciona información sobre tracelogging API nativa.<br/> TraceLogging se basa en Seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código. TraceLogging permite incluir datos estructurados con eventos, correlacionar eventos y no requiere un archivo XML de manifiesto de instrumentación independiente.<br/> <span class="underline">Para desarrolladores de WinRT</span><br/>
 <ul>
-<li><a href="/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel"><strong>LoggingChannel</strong></a> se ha ampliado en Windows 10 para que registre los eventos de seguimiento de eventos para Windows (ETW) autodescriptivos sin necesidad de un manifiesto.</li>
-<li><a href="/windows/win32/api/traceloggingactivity/nl-traceloggingactivity-traceloggingactivity"><strong>LoggingActivity</strong></a> se ha ampliado en Windows 10 para proporcionar métodos de inicio y detención de actividad que proporcionan control sobre el formato y el contenido de los eventos de inicio y detención. Además, las actividades se pueden anidar.</li>
+<li><a href="/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel"><strong>LoggingChannel</strong></a> se ha ampliado en Windows 10 para registrar eventos de Seguimiento de eventos para Windows autodescriptos (ETW) sin necesidad de un manifiesto.</li>
+<li><a href="/windows/win32/api/traceloggingactivity/nl-traceloggingactivity-traceloggingactivity"><strong>LoggingActivity se</strong></a> ha ampliado en Windows 10 para proporcionar métodos de inicio y de detección de actividad que proporcionan control sobre el formato y el contenido de los eventos Start y Stop. Además, las actividades se pueden anidar.</li>
 </ul>
 <span class="underline">Para desarrolladores de código administrado (Microsoft .NET Framework)</span><br/>
 <ul>
-<li>La clase <a href="/dotnet/api/system.diagnostics.tracing.eventsource">EventSource</a> incluida con versiones anteriores de la .NET Framework ya admite la escritura de eventos ETW sin necesidad de un manifiesto. Sin embargo, los desarrolladores debían usar EventSource como clase base y agregar atributos y métodos a la clase derivada que se han convertido en un manifiesto ETW automáticamente. Ahora, los desarrolladores no tienen que derivar de EventSource y, en su lugar, pueden usar EventSource directamente para registrar eventos autodescriptivos que no requieren un manifiesto.</li>
+<li>La <a href="/dotnet/api/system.diagnostics.tracing.eventsource">clase EventSource</a> que se suministraba con versiones anteriores del .NET Framework ya admite la escritura de eventos ETW sin necesidad de un manifiesto. Sin embargo, los desarrolladores tenían que usar EventSource como una clase base y agregar atributos y métodos a la clase derivada que se convertían en un manifiesto ETW automáticamente. Ahora, los desarrolladores no tienen que derivar de EventSource y, en su lugar, pueden usar EventSource directamente para registrar eventos autodescriptos que no requieren un manifiesto.</li>
 </ul>
 <span class="underline">Para desarrolladores de C/C++</span><br/>
 <ul>
-<li>TraceLoggingProvider. h es la API recomendada para desarrolladores de C/C++ en modo de usuario o kernel. Esta API no es muy adecuada para su uso en escenarios dinámicos (con scripts) como JavaScript. En los vínculos siguientes se describe la API de C/C++.</li>
+<li>TraceLoggingProvider.h es la API recomendada para desarrolladores de C/C++ en modo de usuario o kernel. Esta API no es adecuada para su uso en escenarios dinámicos (con script), como Javascript. Los vínculos siguientes describen la API de C/C++.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -66,5 +66,5 @@ TraceLogging es el nuevo marco de seguimiento de eventos de Windows 10 para apli
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-TraceLogging está diseñado para que lo usen los desarrolladores de aplicaciones en modo de usuario y los desarrolladores de controladores en modo kernel que deseen agregar seguimiento a su código.
+TraceLogging está diseñado para su uso por parte de desarrolladores de aplicaciones en modo de usuario y desarrolladores de controladores en modo kernel que desean agregar seguimiento a su código.
 

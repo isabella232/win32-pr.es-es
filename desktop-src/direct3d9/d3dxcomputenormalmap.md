@@ -1,7 +1,7 @@
 ---
-description: Convierte un mapa de alto en un mapa normal. Los componentes (x, y, z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.
+description: 'Función D3DXComputeNormalMap: convierte un mapa de altura en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.'
 ms.assetid: ed9053c0-b1df-4f74-bdee-627c0f60d942
-title: Función D3DXComputeNormalMap (D3dx9tex. h)
+title: Función D3DXComputeNormalMap (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6e22418f5a023dbe70fee8ea0fba8a449abbcc8d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 920ad763f478a2e6bcb9fbe98cc7e2a677ebe783
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718401"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105233"
 ---
-# <a name="d3dxcomputenormalmap-function"></a>D3DXComputeNormalMap función)
+# <a name="d3dxcomputenormalmap-function"></a>Función D3DXComputeNormalMap
 
-Convierte un mapa de alto en un mapa normal. Los componentes (x, y, z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.
+Convierte un mapa de alto en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,30 +45,30 @@ HRESULT D3DXComputeNormalMap(
 
 <dl> <dt>
 
-*pTexture* \[ enuncia\]
+*pTexture* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntero a una interfaz [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura de destino.
+Puntero a una [**interfaz IDirect3DTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura de destino.
 
 </dd> <dt>
 
-*pSrcTexture* \[ de\]
+*pSrcTexture* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntero a una interfaz [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura de mapa de alto de origen.
+Puntero a una [**interfaz IDirect3DTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura del mapa de alto de origen.
 
 </dd> <dt>
 
-*pSrcPalette* \[ de\]
+*pSrcPalette* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntero a un tipo [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que contiene la paleta de origen de 256 colores o **null**.
+Puntero a un [**tipo PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que contiene la paleta de origen de 256 colores o **NULL.**
 
 </dd> <dt>
 
@@ -77,25 +77,25 @@ Puntero a un tipo [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-palette
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Una o varias marcas de [ \_ NORMALMAP de D3DX](d3dx-normalmap.md) que controlan la generación de asignaciones normales.
+Una o varias [marcas D3DX \_ NORMALMAP](d3dx-normalmap.md) que controlan la generación de mapas normales.
 
 </dd> <dt>
 
-*Canal* \[ de de\]
+*Canal* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Una marca de [ \_ canal de D3DX](d3dx-channel.md) que especifica el origen de la información de alto.
+Una [marca D3DX \_ CHANNEL](d3dx-channel.md) que especifica el origen de la información de alto.
 
 </dd> <dt>
 
-*Amplitud* \[ de\]
+*Amplitude* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Multiplicador de valor constante que aumenta (o reduce) los valores del mapa normal. Los valores más altos normalmente hacen que los golpes sean más visibles, los valores más bajos normalmente hacen que los golpes sean menos visibles.
+Multiplicador de valor constante que aumenta (o disminuye) los valores del mapa normal. Los valores más altos suelen hacer que los aumentos sean más visibles, y los valores más bajos suelen hacer que los aumentos sean menos visibles.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Multiplicador de valor constante que aumenta (o reduce) los valores del mapa nor
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método calcula el normal mediante el uso de la diferencia central con el tamaño del kernel 3x3. El denominador de diferencia central usado es 2,0. Los canales RGB del destino contienen componentes sesgados (x, y, z) de la normal.
+Este método calcula lo normal mediante la diferencia central con un tamaño de kernel de 3x3. El denominador de diferenciación central utilizado es 2.0. Los canales RGB del destino contienen componentes sesgados (x,y,z) de lo normal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,12 +115,12 @@ Este método calcula el normal mediante el uso de la diferencia central con el t
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

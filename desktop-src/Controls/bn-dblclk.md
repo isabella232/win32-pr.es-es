@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de BN_DBLCLK (Winuser. h)
-description: Se envía cuando el usuario hace doble clic en un botón.
+title: BN_DBLCLK de notificación (Winuser.h)
+description: 'BN_DBLCLK de notificación: se envía cuando el usuario hace doble clic en un botón.'
 ms.assetid: 60cc033f-8b84-4aa5-b625-fdee9deb4757
 keywords:
-- BN_DBLCLK controles de código de notificación de Windows
+- BN_DBLCLK código de notificación Controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f04c6bf52e213056d85d3a6d038bedb83754a27e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdb403f37b8fee9ea36023a7cd2511bbaaa2af81
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079137"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096853"
 ---
-# <a name="bn_dblclk-notification-code"></a>Código de notificación de DBLCLK de BN \_
+# <a name="bn_dblclk-notification-code"></a>Código de notificación \_ DBLCLK de BN
 
-Se envía cuando el usuario hace doble clic en un botón. Este código de notificación se envía automáticamente para los botones [**BS \_ USERBUTTON**](button-styles.md), [**BS \_**](button-styles.md)y [**BS \_**](button-styles.md) . Otros tipos de botón envían BN \_ DBLCLK solo si tienen el estilo de [**\_ notificación de BS**](button-styles.md) .
+Se envía cuando el usuario hace doble clic en un botón. Este código de notificación se envía automáticamente para los [**botones \_ BS USERBUTTON,**](button-styles.md) [**BS \_ RADIOBUTTON**](button-styles.md)y [**BS \_ OWNERDRAW.**](button-styles.md) Otros tipos de botón envían \_ DBLCLK de BN solo si tienen el [**estilo \_ NOTIFY de BS.**](button-styles.md)
 
-La ventana primaria del botón recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+La ventana primaria del botón recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -44,7 +44,7 @@ BN_DBLCLK
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del botón. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del botón. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -55,39 +55,39 @@ Identificador del botón.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-BN \_ DBLCLK es el mismo que el código de notificación de [BN \_ ](bn-doubleclicked.md) .
+\_DBLCLK de BN es igual que el [código de notificación \_ DOUBLECLICKED de BN.](bn-doubleclicked.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[BN \_ clic](bn-clicked.md)
+[BN \_ EN EL QUE SE HIZO CLIC](bn-clicked.md)
 </dt> <dt>
 
-[BN \_](bn-doubleclicked.md)
+[BN \_ DOUBLECLICKED](bn-doubleclicked.md)
 </dt> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

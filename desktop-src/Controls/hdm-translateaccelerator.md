@@ -1,25 +1,25 @@
 ---
-title: Mensaje HDM_TRANSLATEACCELERATOR
-description: Sin implementar.
+title: HDM_TRANSLATEACCELERATOR mensaje
+description: 'HDM_TRANSLATEACCELERATOR mensaje: no implementado.'
 ms.assetid: 1e38a202-885c-4539-98d6-bc0e650198dc
 keywords:
-- HDM_TRANSLATEACCELERATOR controles de mensajes de Windows
+- HDM_TRANSLATEACCELERATOR mensaje Controles de Windows
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 763e0e0699a6390fd899ed4e3de59c1b9a44cc41
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 35e14512508e81541c70d6235e18bcae58898528
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076512"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096843"
 ---
-# <a name="hdm_translateaccelerator-message"></a>HDM \_ TRANSLATEACCELERATOR Message
+# <a name="hdm_translateaccelerator-message"></a>Mensaje \_ TRANSLATEACCELERATOR de HDM
 
-Este mensaje no está implementado.
+Este mensaje no se implementa.
 
- 
+ 
 
- 
+ 
 
 
 

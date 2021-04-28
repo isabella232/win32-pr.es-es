@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CTransformInputPin.CTransformInputPin: método constructor.'
 ms.assetid: 097dce19-b430-42d6-8914-68350c7eca40
-title: Constructor CTransformInputPin. CTransformInputPin (Transfrm. h)
+title: Constructor CTransformInputPin.CTransformInputPin (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39b99e3e2cf1437c1b35f68d9863a692746bd98d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e893b4e1c7d4f396644a468d3d71fa3046fb712
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660684"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095053"
 ---
-# <a name="ctransforminputpinctransforminputpin-constructor"></a>Constructor CTransformInputPin. CTransformInputPin
+# <a name="ctransforminputpinctransforminputpin-constructor"></a>Constructor CTransformInputPin.CTransformInputPin
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,27 +55,27 @@ Cadena que contiene el nombre de depuración del objeto. Para obtener más infor
 *pTransformFilter* 
 </dt> <dd>
 
-Puntero al filtro que creó este pin, que debe ser un objeto [**CTransformFilter**](ctransformfilter.md) .
+Puntero al filtro que creó este pin, que debe ser un [**objeto CTransformFilter.**](ctransformfilter.md)
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** que indica si el método se ha ejecutado correctamente o no. Inicialice el valor a S \_ OK antes de crear el objeto. Solo se cambia el valor si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto. El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
 *pName* 
 </dt> <dd>
 
-Cadena de caracteres anchos que contiene el nombre del PIN.
+Cadena de caracteres anchos que contiene el nombre del pin.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *pName* especifica el nombre del PIN, devuelto por el método [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) . Sin embargo, la cadena no se utiliza para el identificador del PIN. El identificador del PIN para esta clase siempre es "in". Para obtener más información, vea [**queryId**](ctransforminputpin-queryid.md).
+El *parámetro pName* especifica el nombre del pin, que devuelve el [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Sin embargo, la cadena no se usa para el identificador de pin. El identificador de pin de esta clase siempre es "In". Para obtener más información, vea [**QueryId**](ctransforminputpin-queryid.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ El parámetro *pName* especifica el nombre del PIN, devuelto por el método [**I
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

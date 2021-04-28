@@ -1,7 +1,7 @@
 ---
-description: Usa una función de lenguaje de sombreado de alto nivel (HLSL) compilada para rellenar cada textura de cada nivel de mipmap de una textura.
+description: 'Función D3DXFillTextureTX: usa una función compilada de lenguaje de sombreador de alto nivel (HLSL) para rellenar cada texel de cada nivel de mapa mip de una textura.'
 ms.assetid: 013660ce-865e-4acf-a1ea-670e70377ff5
-title: Función D3DXFillTextureTX (D3dx9tex. h)
+title: Función D3DXFillTextureTX (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3605011f7967edec68d13405b4cabbd9c90d4c59
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 419dc0e7b4266a2fe32557c52ed4323b51a25843
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083724"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107643"
 ---
-# <a name="d3dxfilltexturetx-function"></a>D3DXFillTextureTX función)
+# <a name="d3dxfilltexturetx-function"></a>Función D3DXFillTextureTX
 
-Usa una función de lenguaje de sombreado de alto nivel (HLSL) compilada para rellenar cada textura de cada nivel de mipmap de una textura.
+Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada texel de cada nivel de mapa mip de una textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ HRESULT D3DXFillTextureTX(
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntero a un objeto [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura que se va a rellenar.
+Puntero a un [**objeto IDirect3DTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura que se va a rellenar.
 
 </dd> <dt>
 
-*pTextureShader* \[ de\]
+*pTextureShader* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**
 
-Puntero a un objeto de sombreador de textura de [**ID3DXTextureShader**](id3dxtextureshader.md) .
+Puntero a un [**objeto de sombreador de textura ID3DXTextureShader.**](id3dxtextureshader.md)
 
 </dd> </dl>
 
@@ -63,17 +63,17 @@ Puntero a un objeto de sombreador de textura de [**ID3DXTextureShader**](id3dxte
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ NOTAVAILABLE, D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ NOTAVAILABLE, D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El destino de la textura debe ser una función HLSL que tenga la semántica siguiente:
+El destino de textura debe ser una función HLSL que tome la semántica siguiente:
 
--   Un parámetro de entrada debe utilizar una semántica de posición.
--   Un parámetro de entrada debe utilizar una semántica PSIZE.
--   La función debe devolver un parámetro que use la semántica de COLOR.
+-   Un parámetro de entrada debe usar una semántica POSITION.
+-   Un parámetro de entrada debe usar una semántica PSIZE.
+-   La función debe devolver un parámetro que use la semántica COLOR.
 
-El siguiente es un ejemplo de este tipo de función HLSL:
+A continuación se muestra un ejemplo de una función HLSL de este tipo:
 
 
 ```
@@ -101,7 +101,7 @@ float4 TextureGradientFill(
 
 
 
-Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, pero la semántica de entrada debe estar representada.
+Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, pero se debe representar ambas semánticas de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,12 +109,12 @@ Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

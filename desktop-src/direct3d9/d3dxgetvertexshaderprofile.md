@@ -1,7 +1,7 @@
 ---
-description: Devuelve el nombre del perfil de lenguaje de sombreado de alto nivel (HLSL) más alto compatible con un dispositivo determinado.
+description: 'Función D3DXGetVertexShaderProfile: devuelve el nombre del perfil de lenguaje de sombreador de alto nivel (HLSL) más alto admitido por un dispositivo determinado.'
 ms.assetid: a50e2a17-8170-4364-a562-7886593341b3
-title: Función D3DXGetVertexShaderProfile (D3DX9Shader. h)
+title: Función D3DXGetVertexShaderProfile (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 34f7ccaeba60bdd1d7c512cee3fb4da29289408a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 70d6cdf79fdd91e819d54702682515aa3e4810b4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717755"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114463"
 ---
-# <a name="d3dxgetvertexshaderprofile-function"></a>D3DXGetVertexShaderProfile función)
+# <a name="d3dxgetvertexshaderprofile-function"></a>Función D3DXGetVertexShaderProfile
 
-Devuelve el nombre del perfil de lenguaje de sombreado de alto nivel (HLSL) más alto compatible con un dispositivo determinado.
+Devuelve el nombre del perfil de lenguaje de sombreador de alto nivel (HLSL) más alto admitido por un dispositivo determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ LPCSTR D3DXGetVertexShaderProfile(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntero al dispositivo. Vea [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9).
+Puntero al dispositivo. Vea [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Puntero al dispositivo. Vea [**IDirect3DDevice9**](/windows/win32/api/d3d9helper
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre del perfil de HLSL.
+Nombre del perfil HLSL.
 
-Si el dispositivo no admite sombreadores de vértices, la función devuelve **null**.
+Si el dispositivo no admite sombreadores de vértices, la función devuelve **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un perfil de sombreador especifica la versión del sombreador de ensamblado que se va a usar y las capacidades disponibles para el compilador de HLSL al compilar un sombreador. En la tabla siguiente se enumeran los perfiles del sombreador de vértices que se admiten.
+Un perfil de sombreador especifica la versión del sombreador de ensamblados que se usará y las funcionalidades disponibles para el compilador HLSL al compilar un sombreador. En la tabla siguiente se enumeran los perfiles de sombreador de vértices que se admiten.
 
 
 
@@ -77,24 +77,24 @@ Un perfil de sombreador especifica la versión del sombreador de ensamblado que 
 <tbody>
 <tr class="odd">
 <td>vs_1_1</td>
-<td>Compilar para vs_1_1 versión.</td>
+<td>Compile para vs_1_1 versión.</td>
 </tr>
 <tr class="even">
 <td>vs_2_0</td>
-<td>Compilar para vs_2_0 versión.</td>
+<td>Compile para vs_2_0 versión.</td>
 </tr>
 <tr class="odd">
 <td>vs_2_a</td>
-<td>Igual que el perfil de vs_2_0, con las siguientes funcionalidades adicionales disponibles para que el compilador tenga como destino:
+<td>Igual que el perfil vs_2_0, con las siguientes funcionalidades adicionales disponibles para que el compilador lo deba tener como destino:
 <ul>
-<li>El número de registros temporales (r #) es mayor o igual a 13.</li>
+<li>El número de registros temporales (r#) es mayor o igual que 13.</li>
 <li>Instrucción de control de flujo dinámico.</li>
-<li>Predication.</li>
+<li>Predicación.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>vs_3_0</td>
-<td>Compilar para vs_3_0 versión.</td>
+<td>Compile para vs_3_0 versión.</td>
 </tr>
 </tbody>
 </table>
@@ -103,7 +103,7 @@ Un perfil de sombreador especifica la versión del sombreador de ensamblado que 
 
  
 
-Para obtener más información sobre las diferencias entre las versiones del sombreador, vea [diferencias del sombreador de vértices](../direct3dhlsl/dx9-graphics-reference-asm-vs-differences.md).
+Para obtener más información sobre las diferencias entre las versiones del sombreador, vea [Diferencias de sombreador de vértices.](../direct3dhlsl/dx9-graphics-reference-asm-vs-differences.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,16 +111,16 @@ Para obtener más información sobre las diferencias entre las versiones del som
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones del sombreador](dx9-graphics-reference-d3dx-functions-shader.md)
+[Funciones de sombreador](dx9-graphics-reference-d3dx-functions-shader.md)
 </dt> </dl>
 
  

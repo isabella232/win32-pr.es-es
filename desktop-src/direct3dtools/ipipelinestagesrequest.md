@@ -1,5 +1,5 @@
 ---
-description: No se utiliza. Anteriormente, una solicitud de datos de etapas de canalización.
+description: '<span id="vspixengine.ipipelinestagesrequest"></span>Interfaz IPipeLineStagesRequest: no se usa. Anteriormente, una solicitud de datos de fases de canalización.'
 MS-HAID: vspixengine.IPipeLineStagesRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4dfa67e0770b1c709ee80bffd01831859ad4c45a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bb87e8a4f2daee78146929df64dbee1f61774ed2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105705239"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114263"
 ---
 # <a name="span-idvspixengineipipelinestagesrequestspanipipelinestagesrequest-interface"></a><span id="vspixengine.ipipelinestagesrequest"></span>Interfaz IPipeLineStagesRequest
 
-No se utiliza. Anteriormente, una solicitud de datos de etapas de canalización.
+No se utiliza. Anteriormente, una solicitud de datos de fases de canalización.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IPipeLineStagesRequest** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IPipeLineStagesRequest** también tiene estos tipos de miembros:
+La **interfaz IPipeLineStagesRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesRequest** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
-La interfaz **IPipeLineStagesRequest** tiene estos métodos.
+La **interfaz IPipeLineStagesRequest** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestasync-eventid-dword-pipelinestagesid-arr-dword-dword-ipipelinestagescallback-ptr-bool-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Una solicitud asincrónica para obtener las imágenes de vista previa para la ventana etapas de canalización de gráficos.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestsupportedstagesasync-dword-eventid-ipipelinestagescallback-ptr-dword-dword"><strong>RequestSupportedStagesAsync</strong></a></td><td style="text-align: left;"><p>Una solicitud asincrónica para obtener una lista de las fases usadas para el marco y el evento especificados.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestasync-eventid-dword-pipelinestagesid-arr-dword-dword-ipipelinestagescallback-ptr-bool-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicitud asincrónica para obtener imágenes de vista previa de la ventana de fases de canalización de gráficos.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestsupportedstagesasync-dword-eventid-ipipelinestagescallback-ptr-dword-dword"><strong>RequestSupportedStagesAsync</strong></a></td><td style="text-align: left;"><p>Una solicitud asincrónica para obtener una lista de fases usadas para el marco y el evento especificados.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

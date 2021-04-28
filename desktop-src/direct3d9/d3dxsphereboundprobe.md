@@ -1,7 +1,7 @@
 ---
-description: Determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.
+description: 'Función D3DXSphereBoundProbe (D3DX9Mesh.h): determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.'
 ms.assetid: fa2e9ecf-7905-4a62-ba48-774bd522525a
-title: Función D3DXSphereBoundProbe (D3DX9Mesh. h)
+title: Función D3DXSphereBoundProbe (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bbab8a49165a87f73037ae25230d67b02222fc15
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e2d3ea263d7ad8bc50b936fd1010c352c0c01783
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678789"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093853"
 ---
-# <a name="d3dxsphereboundprobe-function-d3dx9meshh"></a>Función D3DXSphereBoundProbe (D3DX9Mesh. h)
+# <a name="d3dxsphereboundprobe-function-d3dx9meshh"></a>Función D3DXSphereBoundProbe (D3DX9Mesh.h)
 
 Determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.
 
@@ -43,51 +43,51 @@ BOOL D3DXSphereBoundProbe(
 
 <dl> <dt>
 
-*pCenter* \[ de\]
+*pCenter* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que especifica la coordenada central de la esfera.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando la coordenada central de la esfera.
 
 </dd> <dt>
 
-*RADIUS* \[ de\]
+*Radio* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Radio de la esfera.
 
 </dd> <dt>
 
-*pRayPosition* \[ de\]
+*pRayPosition* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que especifica la coordenada de origen del rayo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando la coordenada de origen del rayo.
 
 </dd> <dt>
 
-*pRayDirection* \[ de\]
+*pRayDirection* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que especifica la dirección del rayo. Este vector no debe ser (0, 0, 0), pero no es necesario normalizarlo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando la dirección del rayo. Este vector no debe ser (0,0,0), pero no es necesario normalizarlo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve **true** si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera. De lo contrario, devuelve **false**.
+Devuelve **TRUE** si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera. De lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera, no solo la superficie de la esfera.
+**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del cuadro de límite de la esfera, no solo con la superficie de la esfera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,12 +95,12 @@ Devuelve **true** si el rayo forma una intersección con el volumen del rectáng
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

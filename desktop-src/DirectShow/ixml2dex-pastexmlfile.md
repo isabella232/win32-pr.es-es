@@ -1,7 +1,7 @@
 ---
-description: Sin implementar.
+description: 'Método IXml2Dex::P asteXMLFile: no implementado.'
 ms.assetid: 25300ba5-3578-4eb3-99e2-d547dbb2b9ee
-title: IXml2Dex::P método asteXMLFile
+title: Método IXml2Dex::P asteXMLFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 1e6df8679dde95e7483fe74eb0d8b1b462d51730
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 415e71d87d8e8d9c7834df0a16fce754651d6a03
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494741"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088963"
 ---
-# <a name="ixml2dexpastexmlfile-method"></a>IXml2Dex::P método asteXMLFile
+# <a name="ixml2dexpastexmlfile-method"></a>Método IXml2Dex::P asteXMLFile
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -68,25 +68,25 @@ Reservado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la Microsoft Windows SDK [update para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IXml2Dex**](ixml2dex.md)
+[**IXml2Dex (interfaz)**](ixml2dex.md)
 </dt> </dl>
 
  

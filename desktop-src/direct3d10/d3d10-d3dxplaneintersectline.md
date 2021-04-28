@@ -1,7 +1,7 @@
 ---
-description: Busca la intersección entre un plano y una línea.
+description: 'Función D3DXPlaneIntersectLine (D3DX10Math.h): busca la intersección entre un plano y una línea.'
 ms.assetid: aea1c4e1-f8c0-46df-bb33-2b517396d69e
-title: Función D3DXPlaneIntersectLine (D3DX10Math. h)
+title: Función D3DXPlaneIntersectLine (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 00d25fcba9e5884cec10da96964ad0f5daa9ed14
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1d32bb312c97b793f492f7a29bebe11529b79cf9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721518"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108813"
 ---
-# <a name="d3dxplaneintersectline-function-d3dx10mathh"></a>Función D3DXPlaneIntersectLine (D3DX10Math. h)
+# <a name="d3dxplaneintersectline-function-d3dx10mathh"></a>Función D3DXPlaneIntersectLine (D3DX10Math.h)
 
 Busca la intersección entre un plano y una línea.
 
@@ -48,34 +48,34 @@ D3DXVECTOR3* D3DXPlaneIntersectLine(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a un [**D3DXVECTOR3**](d3d10-d3dxvector3.md), que identifica la intersección entre el plano y la línea especificados.
+Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md), que identifica la intersección entre el plano y la línea especificados.
 
 </dd> <dt>
 
-*PP* \[ de\]
+*pP* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
 
-Puntero al [**D3DXPLANE**](d3d10-d3dxplane.md)de origen.
+Puntero al [**D3DXPLANE de origen.**](d3d10-d3dxplane.md)
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura de D3DXVECTOR3 de origen, que define un punto de inicio de línea.
+Puntero a una estructura D3DXVECTOR3 de origen, definiendo un punto inicial de línea.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura D3DXVECTOR3 de origen que define un punto final de línea.
+Puntero a una estructura D3DXVECTOR3 de origen, definiendo un punto final de línea.
 
 </dd> </dl>
 
@@ -85,11 +85,11 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es la intersección entre el plano y la línea especificados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la línea es paralela al plano, se devuelve **null** .
+Si la línea es paralela al plano, **se devuelve NULL.**
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXPlaneIntersectLine se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXPlaneIntersectLine se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,12 +97,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

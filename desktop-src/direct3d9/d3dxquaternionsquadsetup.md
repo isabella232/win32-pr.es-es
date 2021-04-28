@@ -1,7 +1,7 @@
 ---
-description: Configura los puntos de control para la interpolación Quadrangle esférica.
+description: 'Función D3DXQuaternionSquadSetup (D3dx9math.h): configura puntos de control para la interpolación de cuadrángulo esférico.'
 ms.assetid: f800d457-8546-49a1-800e-e5c27af96710
-title: Función D3DXQuaternionSquadSetup (D3dx9math. h)
+title: Función D3DXQuaternionSquadSetup (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 04bae9dafbb9df90fdcccee830a1eecb64c1430f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1dcaa90380ec703b4b56458906ab8bd965d7568c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717710"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093953"
 ---
-# <a name="d3dxquaternionsquadsetup-function-d3dx9mathh"></a>Función D3DXQuaternionSquadSetup (D3dx9math. h)
+# <a name="d3dxquaternionsquadsetup-function-d3dx9mathh"></a>Función D3DXQuaternionSquadSetup (D3dx9math.h)
 
-Configura los puntos de control para la interpolación Quadrangle esférica.
+Configura puntos de control para la interpolación de cuadrángulo esférica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,25 +46,25 @@ void D3DXQuaternionSquadSetup(
 
 <dl> <dt>
 
-*pAOut* \[ enuncia\]
+*pAOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a sobre.
+Puntero a AOut.
 
 </dd> <dt>
 
-*pBOut* \[ enuncia\]
+*pBOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero que va a estar cerca.
+Puntero a BOut.
 
 </dd> <dt>
 
-*pCOut* \[ enuncia\]
+*pCOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
@@ -73,34 +73,34 @@ Puntero a COut.
 
 </dd> <dt>
 
-*pQ0* \[ de\]
+*pQ0* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntero al punto de control de entrada, q0.
+Puntero al punto de control de entrada, Q0.
 
 </dd> <dt>
 
-*pQ1* \[ de\]
+*pQ1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntero en el punto de control de entrada, Q1.
+Puntero al punto de control de entrada, Q1.
 
 </dd> <dt>
 
-*pQ2* \[ de\]
+*pQ2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntero en el punto de control de entrada, T2.
+Puntero al punto de control de entrada, Q2.
 
 </dd> <dt>
 
-*pQ3* \[ de\]
+*pQ3* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
@@ -113,9 +113,9 @@ Puntero al punto de control de entrada, Q3.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función toma cuatro puntos de control, que se proporcionan a las entradas pQ0, pQ1, pQ2 y pQ3. A continuación, la función modifica estos valores para buscar una curva que fluya a lo largo de la ruta más corta. Los valores de q0, T2 y Q3 se calculan como se muestra a continuación.
+Esta función toma cuatro puntos de control, que se proporcionan a las entradas pQ0, pQ1, pQ2 y pQ3. A continuación, la función modifica estos valores para buscar una curva que fluye a lo largo de la ruta de acceso más corta. Los valores de q0, q2 y q3 se calculan como se muestra a continuación.
 
 
 ```
@@ -126,24 +126,24 @@ q3 = |Q2 + Q3| < |Q2 - Q3| ? -Q3 : Q3
 
 
 
-Una vez calculados los nuevos valores Q, los valores de sobre, cerca de y COut se calculan de la siguiente manera:
+Una vez calculados los nuevos valores de Q, los valores de AOut, BOut y COut se calculan de la siguiente manera:
 
-Sobre = Q1 \* e<sup> \[ -0,25 \ \* (\ LN \[ exp (Q1) \* T2 \] \ + \ LN \[ exp (Q1) \* q0 \] \) \ \] </sup>
+AOut = q1 \* e<sup> \[ -0.25\ \* (\ Ln \[ Exp(q1) \* q2 \] \ +\ Ln \[ Exp(q1) \* q0 \ \] )\ \] </sup>
 
-Cerca de = T2 \* e<sup> \[ -0,25 \ \* (\ LN \[ exp (T2) \* Q3 \] \ + \ LN \[ exp (T2) \* Q1 \] \) \] \</sup>
+BOut = q2 \* e<sup> \[ -0.25\ \* (\ Ln \[ Exp(q2) \* q3 \] \ +\ Ln \[ Exp(q2) \* q1 \ \] )\ \] </sup>
 
-COut = T2
+COut = q2
 
 > [!Note]  
-> LN es el método de API [**D3DXQuaternionLn**](d3dxquaternionln.md) y exp es el método de API [**D3DXQuaternionExp**](d3dxquaternionexp.md).
+> Ln es el método de API [**D3DXQuaternionLn**](d3dxquaternionln.md) y Exp es el método de API [**D3DXQuaternionExp**](d3dxquaternionexp.md).
 
  
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para cualquier entrada de cuaternión que no esté ya normalizada.
+Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
 ### <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo usar un conjunto de claves de cuaternión (q0, Q1, T2, Q3) para calcular los puntos de Quadrangle internos (A, B, C). Esto garantiza que las tangentes sean continuas entre segmentos adyacentes.
+En el ejemplo siguiente se muestra cómo usar un conjunto de claves de cuaternión (Q0, Q1, Q2, Q3) para calcular los puntos de cuadrángulo internos (A, B, C). Esto garantiza que las tangentes son continuas en segmentos adyacentes.
 
 
 ```
@@ -153,7 +153,7 @@ Q0    Q1    Q2    Q3
 
 
 
-En el ejemplo de código siguiente se muestra cómo se puede interpolar entre Q1 y T2.
+En el ejemplo de código siguiente se muestra cómo puede interpolar entre Q1 y Q2.
 
 
 ```
@@ -173,10 +173,10 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 
 > [!Note]
 >
-> -   C es +/-T2 según el resultado de la función.
-> -   QT es el resultado de la función.
+> -   C es +/- Q2 en función del resultado de la función.
+> -   Qt es el resultado de la función.
 >
-> El resultado es un giro de 45 grados alrededor del eje z para Time = 0,5.
+> El resultado es una rotación de 45 grados alrededor del eje Z para el tiempo = 0,5.
 
  
 
@@ -186,12 +186,12 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

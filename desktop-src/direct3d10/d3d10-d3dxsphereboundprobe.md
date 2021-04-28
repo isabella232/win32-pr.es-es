@@ -1,7 +1,7 @@
 ---
-description: Determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.
+description: 'Función D3DXSphereBoundProbe (D3DX10math.h): determina si un rayo forma una intersección con el volumen del cuadro de límite de una esfera.'
 ms.assetid: 5984a1a6-d36c-4a05-8c74-0ece7443356c
-title: Función D3DXSphereBoundProbe (D3DX10math. h)
+title: Función D3DXSphereBoundProbe (D3DX10math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 09116e13582bbb75bc15ed04360ce02c4983f986
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fb5a329e39631dff626ff1c7945ad4b05f9dcd58
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821335"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108473"
 ---
-# <a name="d3dxsphereboundprobe-function-d3dx10mathh"></a>Función D3DXSphereBoundProbe (D3DX10math. h)
+# <a name="d3dxsphereboundprobe-function-d3dx10mathh"></a>Función D3DXSphereBoundProbe (D3DX10math.h)
 
-Determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.
+Determina si un rayo forma una intersección con el volumen del rectángulo delimitador de una esfera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,51 +43,51 @@ BOOL D3DXSphereBoundProbe(
 
 <dl> <dt>
 
-*pCenter* \[ de\]
+*pCenter* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que especifica la coordenada central de la esfera.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) especificando la coordenada central de la esfera.
 
 </dd> <dt>
 
-*RADIUS* \[ de\]
+*Radio* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Radio de la esfera.
 
 </dd> <dt>
 
-*pRayPosition* \[ de\]
+*pRayPosition* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que especifica la coordenada de origen del rayo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) especificando la coordenada de origen del rayo.
 
 </dd> <dt>
 
-*pRayDirection* \[ de\]
+*pRayDirection* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que especifica la dirección del rayo. Este vector no debe ser (0, 0, 0), pero no es necesario normalizarlo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) especificando la dirección del rayo. Este vector no debe ser (0,0,0), pero no es necesario normalizarlo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve **true** si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera. De lo contrario, devuelve **false**.
+Devuelve **TRUE** si el rayo forma una intersección con el volumen del cuadro de límite de la esfera. De lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera, no solo la superficie de la esfera.
+**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera, no solo con la superficie de la esfera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,12 +95,12 @@ Devuelve **true** si el rayo forma una intersección con el volumen del rectáng
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
