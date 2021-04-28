@@ -1,19 +1,19 @@
 ---
-description: Representa los trazos recopilados de la entrada de lápiz dentro de un espacio de tinta.
+description: 'Elemento InkClass: representa los trazos recopilados de la entrada de lápiz dentro de un espacio de entrada de lápiz.'
 ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
 title: Elemento InkClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ffd2e720483bf7153b59e5876cf2f3d0e2aad6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78faa7a0d331ba6e904154891d7f53d8a143115d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541302"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110343"
 ---
 # <a name="inkclass-element"></a>Elemento InkClass
 
-Representa los trazos recopilados de la entrada de lápiz dentro de un espacio de tinta.
+Representa los trazos de lápiz recopilados dentro de un espacio de entrada de lápiz.
 
 ## <a name="definition"></a>Definición
 
@@ -40,7 +40,7 @@ Ninguno.
 |              |                                            |
 |--------------|--------------------------------------------|
 | Tipo de elemento | **xs:string**                              |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink |
 | Nombre del esquema  | Lector de diario                             |
 
 

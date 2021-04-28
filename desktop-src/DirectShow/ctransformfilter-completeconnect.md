@@ -1,7 +1,7 @@
 ---
-description: El método CompleteConnect completa una conexión de PIN.
+description: 'Método CTransformFilter.CompleteConnect: el método CompleteConnect completa una conexión de pin.'
 ms.assetid: b687d2ee-4aee-4fae-bc2f-23ee037d0e6d
-title: Método CTransformFilter. CompleteConnect (Transfrm. h)
+title: Método CTransformFilter.CompleteConnect (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 630950cf9b05c08412394bf9270f2369b3f3b94b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2251ba45c7a39ec9bf205fdd6643e02392e40e5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660730"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095173"
 ---
-# <a name="ctransformfiltercompleteconnect-method"></a>CTransformFilter. CompleteConnect, método
+# <a name="ctransformfiltercompleteconnect-method"></a>Método CTransformFilter.CompleteConnect
 
-El `CompleteConnect` método completa una conexión de PIN.
+El `CompleteConnect` método completa una conexión de pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ virtual HRESULT CompleteConnect(
 *direction* 
 </dt> <dd>
 
-Miembro del tipo enumerado de [**\_ dirección del PIN**](/windows/win32/api/strmif/ne-strmif-pin_direction) , que especifica el PIN del filtro que realiza la conexión.
+Miembro del tipo [**enumerado \_ PIN DIRECTION,**](/windows/win32/api/strmif/ne-strmif-pin_direction) especificando qué pin en el filtro está realizando la conexión.
 
 </dd> <dt>
 
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro PIN en este intento de conexión.
+Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro pin en este intento de conexión.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los métodos [**CTransformInputPin:: CompleteConnect**](ctransforminputpin-completeconnect.md) y [**CTransformOutputPin:: CompleteConnect**](ctransformoutputpin-completeconnect.md) llaman a este método durante el proceso de conexión del PIN. Este método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
+Los [**métodos CTransformInputPin::CompleteConnect**](ctransforminputpin-completeconnect.md) y [**CTransformOutputPin::CompleteConnect**](ctransformoutputpin-completeconnect.md) llaman a este método durante el proceso de conexión de pin. Este método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,16 +71,16 @@ Los métodos [**CTransformInputPin:: CompleteConnect**](ctransforminputpin-compl
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

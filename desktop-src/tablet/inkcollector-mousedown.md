@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando el puntero del mouse se encuentra sobre el objeto InkCollector o InkOverlay y se presiona un botón del mouse.
+description: 'Evento InkCollector.MouseDown: se produce cuando el puntero del mouse está sobre el objeto InkCollector o InkOverlay y se presiona un botón del mouse.'
 ms.assetid: db9ec396-b2a7-4f4f-99f2-95aad46eea28
-title: InkCollector. MouseDown (evento) (Msinkaut. h)
+title: Evento InkCollector.MouseDown (Ms mouseut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 760801fb5c578ddbdd67b15a4201c21c4981b097
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d29c8d3ba19856a8d6bfa038837b592c0b5f2b36
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540387"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110183"
 ---
-# <a name="inkcollectormousedown-event"></a>InkCollector. MouseDown (evento)
+# <a name="inkcollectormousedown-event"></a>Evento InkCollector.MouseDown
 
-Se produce cuando el puntero del mouse se encuentra sobre el objeto [**InkCollector**](inkcollector-class.md) o [**InkOverlay**](inkoverlay-class.md) y se presiona un botón del mouse.
+Se produce cuando el puntero del mouse está sobre el objeto [**InkCollector**](inkcollector-class.md) o [**InkOverlay**](inkoverlay-class.md) y se presiona un botón del mouse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,28 +34,28 @@ void MouseDown(
 
 <dl> <dt>
 
-*Botón* \[ de de\]
+*Botón* \[ En\]
 </dt> <dd>
 
 Botón del mouse que se presionó.
 
 </dd> <dt>
 
-*Desplazamiento* \[ de\]
+*Mayús* \[ En\]
 </dt> <dd>
 
-Estado de la tecla Mayús.
+Estado de la tecla MAYÚS.
 
 </dd> <dt>
 
-*PX* \[ de\]
+*pX* \[ En\]
 </dt> <dd>
 
 Coordenada X, en píxeles, de un clic del mouse.
 
 </dd> <dt>
 
-*py* \[ de\]
+*pY* \[ En\]
 </dt> <dd>
 
 Coordenada Y, en píxeles, de un clic del mouse.
@@ -65,7 +65,7 @@ Coordenada Y, en píxeles, de un clic del mouse.
 *Cancelar* \[ in, out\]
 </dt> <dd>
 
-**Variante \_ TRUE** para cancelar el evento para el control primario; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** para cancelar el evento del control primario; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
@@ -73,49 +73,49 @@ Coordenada Y, en píxeles, de un clic del mouse.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para mejorar el rendimiento del lápiz en tiempo real, oculte o muestre el cursor del mouse en los controladores de eventos **MouseDown** y [**MouseUp**](inkcollector-mouseup.md) .
+Para mejorar el rendimiento de la entrada de lápiz en tiempo real, oculte o muestre el cursor del mouse en los controladores de eventos **MouseDown** y [**MouseUp.**](inkcollector-mouseup.md)
 
 > [!Note]  
-> Las propiedades *PX* y *py* se encuentran en píxeles, y no las unidades HIMETRIC asociadas al espacio de la tinta. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no tiene en cuenta el lápiz y este tipo de aplicación solo entiende píxeles.
+> Las propiedades *pX* y *pY* están en píxeles y no las unidades HIMETRIC asociadas al espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación sin conocimiento de lápiz y este tipo de aplicación solo entiende píxeles.
 
  
 
 > [!Note]  
-> Algunos controles dependen de una relación específica entre los eventos **MouseDown**, [**MouseMove**](inkcollector-mousemove.md)y [**MouseUp**](inkcollector-mouseup.md) . La cancelación de algunos de estos eventos puede tener resultados imprevistos.
+> Algunos controles se basan en una relación específica entre **los eventos MouseDown,** [**MouseMove**](inkcollector-mousemove.md)y [**MouseUp.**](inkcollector-mouseup.md) La cancelación de algunos de estos eventos puede tener resultados imprevistos.
 
  
 
-Este método de evento se define en las \_ \_ interfaces de \_ solo distribución (dispinterfaces) IInkCollectorEvents, IInkOverlayEvents y IINKPICTUREEVENTS con el identificador DISPID \_ IPEMouseDown.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador de \_ \_ DISPID IPEMouseDown.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**InkCollector (clase)**](inkcollector-class.md)
 </dt> <dt>
 
-[**Enumeración InkMouseButton**](/windows/desktop/api/msinkaut/ne-msinkaut-inkmousebutton)
+[**InkMouseButton (enumeración)**](/windows/desktop/api/msinkaut/ne-msinkaut-inkmousebutton)
 </dt> <dt>
 
-[**Enumeración InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
+[**InkShiftKeyModifierFlags (Enumeración)**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
 </dt> <dt>
 
-[**MouseUp (evento)**](inkcollector-mouseup.md)
+[**Evento MouseUp**](inkcollector-mouseup.md)
 </dt> </dl>
 
  

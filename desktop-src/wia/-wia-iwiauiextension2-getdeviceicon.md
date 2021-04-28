@@ -1,7 +1,7 @@
 ---
-description: Obtiene un icono de dispositivo personalizado.
+description: 'Método IWiaUIExtension2::GetDeviceIcon: obtiene un icono de dispositivo personalizado.'
 ms.assetid: ea768dd1-22fe-4a0f-8851-b152e28d65fb
-title: 'IWiaUIExtension2:: GetDeviceIcon (método) (Wiadevd. h)'
+title: Método IWiaUIExtension2::GetDeviceIcon (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: d071332a1947c4eb6398235d6941a6843a4fa54c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe1498a804de5adeeea459464e95640b3b81ef06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541950"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116623"
 ---
-# <a name="iwiauiextension2getdeviceicon-method"></a>IWiaUIExtension2:: GetDeviceIcon (método)
+# <a name="iwiauiextension2getdeviceicon-method"></a>IWiaUIExtension2::GetDeviceIcon (método)
 
 Obtiene un icono de dispositivo personalizado.
 
@@ -41,28 +41,28 @@ HRESULT GetDeviceIcon(
 
 <dl> <dt>
 
-*bstrDeviceId* \[ de\]
+*bstrDeviceId* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Especifica el identificador del dispositivo WIA para el que se va a obtener el icono.
+Especifica el identificador de dispositivo del dispositivo WIA para el que se va a obtener el icono.
 
 </dd> <dt>
 
-*phIcon* \[ enuncia\]
+*phIcon* \[ out\]
 </dt> <dd>
 
-Tipo: **HICON \** _
+Tipo: **HICON \***
 
 Apunta a una ubicación de memoria que recibirá un identificador para el icono del dispositivo.
 
 </dd> <dt>
 
-_nSize * \[ en\]
+*nSize* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
 Especifica el tamaño de icono deseado, en píxeles. Se supone que el icono es cuadrado y nSize especifica el ancho y el alto del icono solicitado.
 
@@ -72,15 +72,15 @@ Especifica el tamaño de icono deseado, en píxeles. Se supone que el icono es c
 
 Tipo: **HRESULT**
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error en el método, devuelve un código de error adecuado. En la tabla siguiente se muestran algunos de los códigos de estado devueltos posibles.
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error en el método, devuelve un código de error adecuado. En la tabla siguiente se muestran algunos de los códigos de estado de devolución posibles.
 
 
 
 | Código de error    | Descripción                                                                                                  |
 |---------------|--------------------------------------------------------------------------------------------------------------|
-| E \_ INVALIDARG | El parámetro bstrDeviceId o phIcon es **null**, o bstrDeviceId no apunta a una cadena de identificador de dispositivo WIA válida |
+| E \_ INVALIDARG | El parámetro bstrDeviceId o phIcon **es NULL** o bstrDeviceId no apunta a una cadena de identificador de dispositivo WIA válida |
 | E \_ FAIL       | No hay ningún recurso de icono disponible.                                                                               |
-| E \_ NOTIMPL    | No hay disponible ningún icono del tamaño solicitado.                                                                  |
+| E \_ NOTIMPL    | No hay ningún icono del tamaño solicitado disponible.                                                                  |
 
 
 
@@ -90,11 +90,11 @@ Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                          |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

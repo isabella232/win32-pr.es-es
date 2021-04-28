@@ -1,34 +1,34 @@
 ---
-title: Actualización de la plataforma para Windows Vista
-description: .
+title: Actualización de plataforma para Windows Vista
+description: Actualización de plataforma para Windows Vista
 ms.assetid: 661f88f9-e5ba-412d-8cb4-f3f186568b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdf4c9089033c8328916c12649de5675b9277ed4
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 6a97e083c8b7458b8a475631da30b8409cbd802c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "105704903"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109963"
 ---
-# <a name="platform-update-for-windows-vista"></a>Actualización de la plataforma para Windows Vista
+# <a name="platform-update-for-windows-vista"></a>Actualización de plataforma para Windows Vista
 
 ## <a name="purpose"></a>Propósito
 
-La actualización de la plataforma para Windows Vista y la actualización de la plataforma para Windows Server 2008 son actualizaciones del sistema operativo del usuario final que admiten el uso de las tecnologías de Windows 7 seleccionadas en versiones anteriores del sistema operativo Windows. Las actualizaciones incluyen un conjunto de bibliotecas en tiempo de ejecución que permiten a los desarrolladores de aplicaciones tener como destino las versiones actuales, Windows 7 y Windows Server 2008 R2, así como las versiones anteriores, Windows Vista y Windows Server 2008.
+La actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 son actualizaciones del sistema operativo del usuario final que admiten el uso de tecnologías de Windows 7 seleccionadas en versiones anteriores del sistema operativo Windows. Las actualizaciones incluyen un conjunto de bibliotecas en tiempo de ejecución que permiten a los desarrolladores de aplicaciones tener como destino las versiones actuales, Windows 7 y Windows Server 2008 R2, así como versiones anteriores, Windows Vista y Windows Server 2008.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-La API compatible con la actualización de la plataforma para Windows Vista y la actualización de la plataforma para Windows Server 2008 están diseñadas para desarrolladores de C/C++ con experiencia.
+La API compatible con la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 están diseñadas para su uso por desarrolladores experimentados de C/C++.
 
-Proficiencies recomendado:
+Ventajas recomendadas:
 
 -   Programación COM
 -   Programación de la API de Windows
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-En Windows Vista, los usuarios finales obtienen la actualización de la plataforma para Windows Vista desde Windows Update. En Windows Server 2008, los usuarios finales obtienen la actualización de la plataforma para Windows Server 2008 de Windows Update.
+Para Windows Vista, los usuarios finales obtienen la actualización de plataforma para Windows Vista de Windows Update. Para Windows Server 2008, los usuarios finales obtienen la actualización de plataforma para Windows Server 2008 de Windows Update.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -36,8 +36,8 @@ En Windows Vista, los usuarios finales obtienen la actualización de la platafor
 
 | Tema                                                                                                                               | Descripción                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Acerca de la actualización de la plataforma para Windows Vista](platform-update-for-windows-vista-overview.md)<br/>                                | Proporciona información general sobre la actualización de la plataforma para Windows Vista y la actualización de la plataforma para Windows Server 2008 y sus características.<br/>                                                                                                         |
-| [Desarrollo de aplicaciones para versiones anteriores de Windows](developing-applications-for-previous-versions-of-windows.md)<br/> | Explica qué hacer para desarrollar aplicaciones que se ejecutan en versiones anteriores de Windows y aprovechar las ventajas de la API que se admiten con la actualización de la plataforma para Windows Vista y la actualización de la plataforma para Windows Server 2008.<br/> |
+| [Acerca de la actualización de plataforma para Windows Vista](platform-update-for-windows-vista-overview.md)<br/>                                | Proporciona información general sobre la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 y sus características.<br/>                                                                                                         |
+| [Desarrollar aplicaciones para versiones anteriores de Windows](developing-applications-for-previous-versions-of-windows.md)<br/> | Explica qué hacer para desarrollar aplicaciones que se ejecutan en versiones anteriores de Windows y aprovechan las ventajas de la API que se admiten con la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008.<br/> |
 
 
 
@@ -45,7 +45,7 @@ En Windows Vista, los usuarios finales obtienen la actualización de la platafor
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-[Artículo de Knowledge Base acerca de la actualización de la plataforma para Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
+[Knowledge Base artículo sobre la actualización de plataforma para Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
 
  
 

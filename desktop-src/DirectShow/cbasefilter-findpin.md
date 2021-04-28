@@ -1,7 +1,7 @@
 ---
-description: 'El método FindPin recupera el pin con el identificador especificado. Este método implementa el método IBaseFilter:: FindPin.'
+description: 'Método CBaseFilter.FindPin: el método FindPin recupera el pin con el identificador especificado. Este método implementa el método IBaseFilter::FindPin.'
 ms.assetid: 152e4ff3-2809-4c57-b9c8-f51fc50b3703
-title: Método CBaseFilter. FindPin (Amfilter. h)
+title: Método CBaseFilter.FindPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98b49c547ec59a74185f7f719da660220de8480f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2bbef9b051a42597b2585a432f544eead4e2e0a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660962"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099823"
 ---
-# <a name="cbasefilterfindpin-method"></a>CBaseFilter. FindPin, método
+# <a name="cbasefilterfindpin-method"></a>Método CBaseFilter.FindPin
 
-El `FindPin` método recupera el pin con el identificador especificado. Este método implementa el método [**IBaseFilter:: FindPin**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin) .
+El `FindPin` método recupera el pin con el identificador especificado. Este método implementa el [**método IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,38 +46,38 @@ HRESULT FindPin(
 *Id* 
 </dt> <dd>
 
-Puntero a una constante de cadena Unicode terminada en null que identifica el PIN.
+Puntero a una cadena Unicode constante terminada en NULL que identifica el pin.
 
 </dd> <dt>
 
 *ppPin* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN.
+Dirección de una variable que recibe un puntero a la interfaz [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los siguientes valores **HRESULT** .
+Devuelve uno de los siguientes **valores HRESULT.**
 
 
 
 | Código devuelto                                                                                       | Descripción                               |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>              | Correcto.<br/>                       |
-| <dl> <dt>**\_puntero E**</dt> </dl>         | Argumento de puntero **nulo** .<br/>     |
-| <dl> <dt>**VFW \_ E \_ no \_ encontrado**</dt> </dl> | No se encontró ningún PIN coincidente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Correcto.<br/>                       |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>         | **Argumento de** puntero NULL.<br/>     |
+| <dl> <dt>**VFW \_ E \_ NO \_ ENCONTRADO**</dt> </dl> | No se encontró un pin correspondiente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**CBasePin:: Name**](cbasepin-name.md) para comparar el nombre de cada pin con la cadena especificada por el parámetro *ID* .
+Este método llama al [**método CBasePin::Name**](cbasepin-name.md) para comparar el nombre de cada pin con la cadena especificada por el *parámetro Id.*
 
-Si el método se ejecuta correctamente, la interfaz **IPin** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
+Si el método se realiza correctamente, la **interfaz IPin** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,16 +85,16 @@ Si el método se ejecuta correctamente, la interfaz **IPin** tiene un recuento d
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

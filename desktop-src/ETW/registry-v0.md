@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase primaria para los eventos del registro. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Registry_V0 clase : esta clase es la clase primaria para los eventos del Registro. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 879ac606-f451-4d5d-bf78-3e7fd3093189
-title: Registry_V0 (clase)
+title: Registry_V0 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7a58427dbb01519b9850461b21fb7dd75a1daf20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee3aa8d5e4f7b7cb557af5eeb4a02c9a10dafbbf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908102"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106183"
 ---
-# <a name="registry_v0-class"></a>\_Clase Registry v0
+# <a name="registry_v0-class"></a>Registry \_ V0 (clase)
 
-Esta clase es la clase primaria para los eventos del registro.
+Esta clase es la clase primaria para los eventos del Registro.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,33 +36,33 @@ class Registry_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **Registry \_ V0** no define ningún miembro.
+La **clase \_ Registry V0** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace de MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Registro**](registry.md)
 </dt> <dt>
 
-[**Registro \_ V0 \_ TypeGroup1**](registry-v0-typegroup1.md)
+[**\_TypeGroup1 del Registro V0 \_**](registry-v0-typegroup1.md)
 </dt> <dt>
 
-[**Registro \_ v1**](registry-v1.md)
+[**Registro \_ V1**](registry-v1.md)
 </dt> </dl>
 
  

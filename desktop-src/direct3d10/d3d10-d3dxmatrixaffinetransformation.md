@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de transformación afín 3D. Los argumentos NULL se tratan como transformaciones de identidad.
+description: 'Función D3DXMatrixAffineTransformation (D3DX10Math.h): crea una matriz de transformación afín 3D. Los argumentos NULL se tratan como transformaciones de identidad.'
 ms.assetid: 36044272-a8ce-47db-8f52-30dc680f8174
-title: Función D3DXMatrixAffineTransformation (D3DX10Math. h)
+title: Función D3DXMatrixAffineTransformation (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 27fee5a620d75c3930b1bc2f8a85415db1320a47
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 01c6b3c3ffe2de9b7c7003b78f1b07a0f35cc3a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698371"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113183"
 ---
-# <a name="d3dxmatrixaffinetransformation-function-d3dx10mathh"></a>Función D3DXMatrixAffineTransformation (D3DX10Math. h)
+# <a name="d3dxmatrixaffinetransformation-function-d3dx10mathh"></a>Función D3DXMatrixAffineTransformation (D3DX10Math.h)
 
-Crea una matriz de transformación afín 3D. Los argumentos **null** se tratan como transformaciones de identidad.
+Crea una matriz de transformación afín 3D. **Los** argumentos NULL se tratan como transformaciones de identidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixAffineTransformation(
 
 <dl> <dt>
 
-*pOut* \[ de\]
+*pOut* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero al [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
+Puntero a [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*Escalado* \[ de\]
+*Escalado* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de escala.
+Factor de escalado.
 
 </dd> <dt>
 
-*pRotationCenter* \[ de\]
+*pRotationCenter* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a un [**D3DXVECTOR3**](d3d10-d3dxvector3.md), un punto que identifica el centro de rotación. Si este argumento es **null**, se aplica una matriz identidad M <sub>RC</sub> a la fórmula en la sección Comentarios.
+Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md), un punto que identifica el centro de rotación. Si este argumento es **NULL,** se aplica una matriz M <sub>rc</sub> de identidad a la fórmula en Comentarios.
 
 </dd> <dt>
 
-*Prot.* \[ de\]
+*pRotation* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntero a un [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que especifica la rotación. Si este argumento es **null**, se aplica una matriz de identidad M <sub>r</sub> a la fórmula en la sección Comentarios.
+Puntero a [**un D3DXQUATERNION**](d3d10-d3dxquaternion.md) que especifica la rotación. Si este argumento es **NULL,** se aplica una matriz <sub>M r</sub> de identidad a la fórmula en Comentarios.
 
 </dd> <dt>
 
-*pTranslation* \[ de\]
+*pTranslation* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura D3DXVECTOR3 que representa la traslación. Si este argumento es **null**, se aplica una matriz Identity MT a la fórmula en la sección Comentarios.
+Puntero a una estructura D3DXVECTOR3 que representa la traducción. Si este argumento es **NULL,** se aplica una matriz mt de identidad a la fórmula en Comentarios.
 
 </dd> </dl>
 
@@ -95,27 +95,27 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX que es una matriz de transformación afín.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función calcula la matriz de transformación afín con la fórmula siguiente, con la concatenación de matriz evaluada en orden de izquierda a derecha:
+Esta función calcula la matriz de transformación afín con la siguiente fórmula, con la concatenación de matrices evaluada en orden de izquierda a derecha:
 
-M<sub>out</sub> = MS \* (M<sub>RC</sub>)-1 \* m<sub>r</sub> \* m<sub>RC</sub> \* MT
+M<sub>out</sub> = Ms \* (M<sub>rc</sub>)-1 \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
 
 donde:
 
 M<sub>out</sub> = matriz de salida (pOut)
 
-MS = matriz de escalado (escala)
+Ms = matriz de escalado (escalado)
 
-M<sub>RC</sub> = centro de la matriz de rotación (pRotationCenter)
+M<sub>rc</sub> = centro de la matriz de rotación (pRotationCenter)
 
-M<sub>r</sub> = matriz de rotación (Prot.)
+M<sub>r</sub> = matriz de rotación (pRotation)
 
-MT = matriz de traslación (pTranslation)
+Mt = matriz de traducción (pTranslation)
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixAffineTransformation se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixAffineTransformation se puede usar como parámetro para otra función.
 
-En el caso de las transformaciones afines de 2D, use D3DXMatrixAffineTransformation2D.
+Para las transformaciones de afín 2D, use D3DXMatrixAffineTransformation2D.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -123,12 +123,12 @@ En el caso de las transformaciones afines de 2D, use D3DXMatrixAffineTransformat
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

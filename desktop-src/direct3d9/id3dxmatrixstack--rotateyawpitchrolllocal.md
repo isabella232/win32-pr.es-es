@@ -1,7 +1,7 @@
 ---
-description: Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
+description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: c69f5ea7-5d14-4187-9405-1ceff8230185
-title: 'ID3DXMATRIXStack:: RotateYawPitchRollLocal (método) (D3dx9math. h)'
+title: Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cffacf4129a711dece35fd581f6cfc9bc12c2f99
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1d104676b6d346afd527552dbfba4bac23ed09cd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362465"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093453"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>ID3DXMATRIXStack:: RotateYawPitchRollLocal (método) (D3dx9math. h)
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h)
 
 Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
 
@@ -42,30 +42,30 @@ HRESULT RotateYawPitchRollLocal(
 
 <dl> <dt>
 
-*Guiñada* \[ de\]
+*Yaw* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Guiñada alrededor del eje y en radianes.
+La yaw alrededor del eje Y en radianes.
 
 </dd> <dt>
 
-*Paso* \[ de\]
+*Pitch* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El paso alrededor del eje x en radianes.
+Paso alrededor del eje X en radianes.
 
 </dd> <dt>
 
-Poner al *día* \[ de\]
+*Roll* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El rollo alrededor del eje z en radianes.
+La rotación alrededor del eje Z en radianes.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ El rollo alrededor del eje z en radianes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método agrega la rotación a la pila de la matriz con la matriz de rotación calculada similar a la siguiente:
+Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 
 
 ```
@@ -88,7 +88,7 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 
 
-Dado que la rotación se multiplica a la izquierda en la pila de la matriz, la rotación es relativa al espacio de coordenadas local del objeto.
+Dado que la rotación se multiplica a la izquierda en la pila de matriz, la rotación es relativa al espacio de coordenadas local del objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,12 +96,12 @@ Dado que la rotación se multiplica a la izquierda en la pila de la matriz, la r
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

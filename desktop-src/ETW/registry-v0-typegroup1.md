@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos del registro. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Registry_V0_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos del Registro. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 93031f3e-963f-46a6-9355-988eefd94836
-title: Registry_V0_TypeGroup1 (clase)
+title: Registry_V0_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9a72a0d6ddfe5e441b21dff4ba58fa3bb37457a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86f6d695afa2e05c87a076cf88ed8023e9416beb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984475"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106193"
 ---
-# <a name="registry_v0_typegroup1-class"></a>Clase del registro \_ V0 \_ TypeGroup1
+# <a name="registry_v0_typegroup1-class"></a>Clase \_ \_ TypeGroup1 del Registro V0
 
-Esta clase es la clase de tipo de evento para los eventos del registro.
+Esta clase es la clase de tipo de evento para los eventos del Registro.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,13 +44,13 @@ class Registry_V0_TypeGroup1 : Registry_V0
 
 ## <a name="members"></a>Miembros
 
-La clase **Registry \_ V0 \_ TypeGroup1** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup1 de Registry V0** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **Registry \_ V0 \_ TypeGroup1** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 de Registry V0** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,26 +63,26 @@ Tipo de datos: **sint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Tiempo transcurrido de la operación del registro.
+Tiempo transcurrido de la operación del Registro.
 
 </dd> <dt>
 
 KeyHandle
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador de la clave del registro.
+Identificador de la clave del Registro.
 
 </dd> <dt>
 
@@ -95,26 +95,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(4), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nombre de la clave del Registro.
 
 </dd> <dt>
 
-Estado
+Status
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Valor de NTSTATUS de la operación del registro.
+Valor NTSTATUS de la operación del Registro.
 
 </dd> </dl>
 
@@ -122,18 +122,18 @@ Valor de NTSTATUS de la operación del registro.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Registro \_ v0**](registry-v0.md)
+[**Registro \_ V0**](registry-v0.md)
 </dt> </dl>
 
  

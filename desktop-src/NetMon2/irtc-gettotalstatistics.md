@@ -1,7 +1,7 @@
 ---
-description: El método GetTotalStatistics recupera las estadísticas totales de la captura actual.
+description: 'Método IRTC::GetTotalStatistics: el método GetTotalStatistics recupera las estadísticas totales de la captura actual.'
 ms.assetid: e5098984-c69e-4cd5-9143-d85dfcbd7b92
-title: 'IRTC:: GetTotalStatistics (método) (Netmon. h)'
+title: Método IRTC::GetTotalStatistics (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 27128048b4326aae14ae6a2e2e6c0540b1105538
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ed659efe388f4eb9c9ac8afd6aa2c74fd0af7d3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677651"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110693"
 ---
-# <a name="irtcgettotalstatistics-method"></a>IRTC:: GetTotalStatistics (método)
+# <a name="irtcgettotalstatistics-method"></a>Método IRTC::GetTotalStatistics
 
-El método **GetTotalStatistics** recupera las [*Estadísticas totales*](t.md) de la [*captura*](c.md)actual.
+El **método GetTotalStatistics** recupera las [*estadísticas totales*](t.md) de la captura [*actual.*](c.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,74 +41,74 @@ HRESULT STDMETHODCALLTYPE GetTotalStatistics(
 
 <dl> <dt>
 
-*lpStats* \[ enuncia\]
+*lpStats* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura de [estadísticas](statistics.md) que proporciona las estadísticas totales de la captura. Es responsabilidad del llamador asignar y liberar la memoria que usa la estructura de **estadísticas** .
+Puntero a una [estructura STATISTICS](statistics.md) que proporciona las estadísticas totales de la captura. Es responsabilidad de los autores de llamadas asignar y liberar la memoria usada por la **estructura STATISTICS.**
 
 </dd> <dt>
 
-*fClearAfterReading* \[ de\]
+*fClearAfterReading* \[ En\]
 </dt> <dd>
 
-Marca usada para indicar a Monitor de red cómo controlar el almacenamiento interno de las estadísticas totales. Un valor **true** indica a monitor de red que borre el almacenamiento interno de las estadísticas totales una vez recuperada la información actual.
+Marca que se usa para Monitor de red cómo controlar el almacenamiento interno de las estadísticas totales. Una configuración **de TRUE** indica Monitor de red borrar el almacenamiento interno de las estadísticas totales después de recuperar la información actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl> | NPP no está conectado a la red. Llame a [IRTC:: Connect](irtc-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ no es en \_ tiempo real**</dt> </dl>  | NPP está conectado a la red, pero no con el método [IRTC:: Connect](irtc-connect.md) .<br/>                     |
-| <dl> <dt>**NMERR \_ no se \_ captura**</dt> </dl> | NPP no está capturando datos. Llame a [IRTC:: Start](irtc-start.md) para empezar a capturar datos.<br/>                         |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IRTC::Connect](irtc-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NOT \_ REALTIME**</dt> </dl>  | El NPP está conectado a la red, pero no con el [método IRTC::Connect.](irtc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl> | El NPP no captura datos. Llame [a IRTC::Start para](irtc-start.md) empezar a capturar datos.<br/>                         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve los datos solo mientras una captura está en curso, incluso mientras la captura está en pausa.
+Este método devuelve datos solo mientras hay una captura en curso, incluso mientras la captura está en pausa.
 
-Monitor de red también almacena [*estadísticas de conversación*](c.md). Para recuperar las estadísticas de conversación, llame al método [IRTC:: GetConversationStatistics](irtc-getconversationstatistics.md) .
+Monitor de red también almacena [*las estadísticas de conversación.*](c.md) Para recuperar las estadísticas de conversación, llame [al método IRTC::GetConversationStatistics.](irtc-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: Connect](irtc-connect.md)
+[IRTC::Connect](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::GetConversationStatistics](irtc-getconversationstatistics.md)
 </dt> <dt>
 
-[IRTC:: Start](irtc-start.md)
+[IRTC::Start](irtc-start.md)
 </dt> <dt>
 
-[¡](statistics.md)
+[Estadísticas](statistics.md)
 </dt> </dl>
 
  

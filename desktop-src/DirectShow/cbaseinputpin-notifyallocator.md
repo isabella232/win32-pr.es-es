@@ -1,7 +1,7 @@
 ---
-description: 'El método NotifyAllocator especifica un asignador para la conexión. Este método implementa el método IMemInputPin:: NotifyAllocator.'
+description: 'Método CBaseInputPin.NotifyAllocator: el método NotifyAllocator especifica un asignador para la conexión. Este método implementa el método IMemInputPin::NotifyAllocator.'
 ms.assetid: 16167bd5-2d33-4329-87ec-6a6c578e0060
-title: Método CBaseInputPin. NotifyAllocator (Amfilter. h)
+title: Método CBaseInputPin.NotifyAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ce5bc3cfe165b1adb6b5b970ca43d31c8ace98f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c63e448d0cf2d287a441a4983f6a2e06bd9b8151
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671328"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099722"
 ---
-# <a name="cbaseinputpinnotifyallocator-method"></a>CBaseInputPin. NotifyAllocator, método
+# <a name="cbaseinputpinnotifyallocator-method"></a>CBaseInputPin.NotifyAllocator (método)
 
-El `NotifyAllocator` método especifica un asignador para la conexión. Este método implementa el método [**IMemInputPin:: NotifyAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) .
+El `NotifyAllocator` método especifica un asignador para la conexión. Este método implementa el [**método IMemInputPin::NotifyAllocator.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ HRESULT NotifyAllocator(
 *pAllocator* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador.
+Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 </dd> <dt>
 
 *bReadOnly* 
 </dt> <dd>
 
-Marca que especifica si los ejemplos de este asignador son de solo lectura. Si **es true**, los ejemplos son de solo lectura.
+Marca que especifica si los ejemplos de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Durante la conexión del PIN, el PIN de salida elige un asignador y llama a este método para notificar al pin de entrada. El PIN de salida puede usar el asignador que el PIN de entrada propuso en el método [**IMemInputPin:: GetAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) , o puede proporcionar su propio asignador.
+Durante la conexión de anclado, el pin de salida elige un asignador y llama a este método para notificar al pin de entrada. El pin de salida puede usar el asignador que el pin de entrada propuesto en el método [**IMemInputPin::GetAllocator,**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) o puede proporcionar su propio asignador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,16 +71,16 @@ Durante la conexión del PIN, el PIN de salida elige un asignador y llama a este
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

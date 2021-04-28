@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de energía. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'SystemConfig_Power clase : esta clase es la clase de tipo de evento para los eventos de configuración de energía. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 7065b0b0-9a1d-4fce-a494-5762d5efb239
-title: SystemConfig_Power (clase)
+title: SystemConfig_Power clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d27586451f944ac9c94e9ec2d204035c21f37679
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7338faad8c313847ad7db7aaac5d4000abba5be
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984398"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106073"
 ---
-# <a name="systemconfig_power-class"></a>\_Clase Power de SystemConfig
+# <a name="systemconfig_power-class"></a>SystemConfig \_ Power (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de configuración de energía.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,26 +52,26 @@ class SystemConfig_Power : SystemConfig
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Power SystemConfig** tiene estos tipos de miembros:
+La **clase SystemConfig \_ Power** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Power SystemConfig** tiene estas propiedades.
+La **clase SystemConfig \_ Power** tiene estas propiedades.
 
 <dl> <dt>
 
 Pad1
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
 No se utiliza.
@@ -81,13 +81,13 @@ No se utiliza.
 Pad2
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7)
+Calificadores: WmiDataId(7)
 </dt> </dl>
 
 No se utiliza.
@@ -97,13 +97,13 @@ No se utiliza.
 Pad3
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8)
+Calificadores: WmiDataId(8)
 </dt> </dl>
 
 No se utiliza.
@@ -113,13 +113,13 @@ No se utiliza.
 s1
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S1.
@@ -129,13 +129,13 @@ True indica que el sistema admite el estado de suspensión S1.
 s2
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S2.
@@ -145,45 +145,45 @@ True indica que el sistema admite el estado de suspensión S2.
 s3
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S3.
 
 </dd> <dt>
 
-S4
+s4
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S4.
 
 </dd> <dt>
 
-S5
+s5
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S5.
@@ -194,14 +194,14 @@ True indica que el sistema admite el estado de suspensión S5.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

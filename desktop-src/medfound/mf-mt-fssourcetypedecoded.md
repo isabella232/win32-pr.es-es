@@ -1,28 +1,28 @@
 ---
-description: Especifica si un descodificador puede usar marcas de tiempo de descodificación (DTS) al establecer las marcas de tiempo.
+description: 'MF_MT_FSSourceTypeDecoded atributo : especifica si un descodificador puede usar marcas de tiempo de descodificación (DTS) al establecer marcas de tiempo.'
 title: MF_MT_FSSourceTypeDecoded
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6ad80b0b7b29677ed0bee2f86a2c12c56c08441
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3799c11e3b921427ff4a3b05aa3d7f47e297ba14
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720764"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093093"
 ---
-# <a name="mf_mt_fssourcetypedecoded-attribute"></a>\_Atributo MF MT \_ FSSourceTypeDecoded
+# <a name="mf_mt_fssourcetypedecoded-attribute"></a>Atributo \_ MF MT \_ FSSourceTypeDecoded
 
 Especifica que un tipo de medio se descodifica automáticamente.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
 
-## <a name="remarks"></a>Observaciones
-Un tipo de medio se marca como atributo para indicar que no existe en el origen físico y está sintetizado por la canalización. Un valor de 1 (TRUE) indica que el tipo de medio es sintetizado. Un valor de 0 (FALSE) o el valor que no está presente indica que no lo está.
+## <a name="remarks"></a>Comentarios
+Un tipo de medio se marca como un atributo para indicar que esto no existe en el origen físico y se sintetiza mediante la canalización. Un valor de 1 (TRUE) indica que el tipo de medio está sintetizado. Un valor de 0 (FALSE) o el valor que no está presente indica que no lo está.
 
-En la versión actual, este atributo se debe especificar utilizando el siguiente valor de GUID en lugar de la constante MD_MT_FSSourceTypeDecoded:
+En la versión actual, este atributo debe especificarse con el siguiente valor GUID en lugar de la MD_MT_FSSourceTypeDecoded constante:
 
 ```ea031a62-8bbb-43c5-b5c4-572d2d231c18```
 
@@ -31,18 +31,18 @@ En la versión actual, este atributo se debe especificar utilizando el siguiente
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                        |
+| Cliente mínimo compatible<br/> | Windows 8 aplicaciones \[ de escritorio \| para aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows Server 2012 \[ \| aplicaciones para UWP\]<br/>                        |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

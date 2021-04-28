@@ -1,7 +1,7 @@
 ---
-description: El método Disconnect desconecta el NPP de la red.
+description: 'Método IDelaydC::D isconnect: el método Disconnect desconecta el NPP de la red.'
 ms.assetid: 476bbce4-2e3c-448f-b85e-6adac424fb0d
-title: IDelaydC::D método Ulta (Netmon. h)
+title: Método IDelaydC::D isconnect (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d192aa80f543706eea4bc197bc3dc8d57dd64aee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 967bd9674cb28363804b8c8af12c541bcb8675ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153855"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110813"
 ---
-# <a name="idelaydcdisconnect-method"></a>IDelaydC::D método Ulta
+# <a name="idelaydcdisconnect-method"></a>IDelaydC::D isconnect (método)
 
-El método **Disconnect** desconecta el NPP de la red.
+El **método Disconnect** desconecta el NPP de la red.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,50 +40,50 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                       |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**captura de NMERR \_**</dt> </dl>      | NPP está capturando datos. No se puede desconectar el NPP de la red durante una captura.<br/>            |
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl> | NPP no está conectado a la red.<br/>                                                               |
-| <dl> <dt>**NMERR \_ no \_ retrasado**</dt> </dl>   | NPP está conectado a la red, pero no con el método [IDelaydC:: Connect](idelaydc-connect.md) .<br/> |
+| <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>      | El NPP captura datos. No se puede desconectar el NPP de la red durante una captura.<br/>            |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red.<br/>                                                               |
+| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>   | El NPP está conectado a la red, pero no con el [método IDelaydC::Connect.](idelaydc-connect.md)<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se puede llamar a este método cuando NPP está capturando datos. Debe llamar al método **IDelaydC:: Stop** antes de llamar a **Disconnect**.
+No se puede llamar a este método cuando el NPP captura datos. Debe llamar al método **IDelaydC::Stop** antes de llamar a **Disconnect**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: Connect](idelaydc-connect.md)
+[IDelaydC::Connect](idelaydc-connect.md)
 </dt> <dt>
 
-[IDelaydC:: Stop](idelaydc-stop.md)
+[IDelaydC::Stop](idelaydc-stop.md)
 </dt> </dl>
 
  

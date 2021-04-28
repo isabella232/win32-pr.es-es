@@ -1,7 +1,7 @@
 ---
-description: El método RemoveAt quita el elemento almacenado en la ubicación especificada por el índice especificado.
+description: 'Método IPortableDeviceKeyCollection::RemoveAt: el método RemoveAt quita el elemento almacenado en la ubicación especificada por el índice especificado.'
 ms.assetid: 70f220be-d70b-4a25-8e16-82ed42adf2c4
-title: 'IPortableDeviceKeyCollection:: RemoveAt (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceKeyCollection::RemoveAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f4e126ef5fcad74b7cee5f748322f15e75481e0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ec2b1137e7959a646c2943ab1aa7a5c3428d3c0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709152"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109952"
 ---
-# <a name="iportabledevicekeycollectionremoveat-method"></a>IPortableDeviceKeyCollection:: RemoveAt (método)
+# <a name="iportabledevicekeycollectionremoveat-method"></a>IPortableDeviceKeyCollection::RemoveAt (Método)
 
-El método **RemoveAt** quita el elemento almacenado en la ubicación especificada por el índice especificado.
+El **método RemoveAt** quita el elemento almacenado en la ubicación especificada por el índice especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ HRESULT RemoveAt(
 
 <dl> <dt>
 
-*dwIndex* \[ de\]
+*dwIndex* \[ En\]
 </dt> <dd>
 
 Especifica el índice del elemento que se va a quitar.
@@ -49,22 +49,22 @@ Especifica el índice del elemento que se va a quitar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un **valor HRESULT.** Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                  | Descripción                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | El método se ha llevado a cabo de forma correcta.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | El método se ha llevado a cabo de forma correcta.<br/>                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El índice especificado estaba fuera del intervalo.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe especificar un índice basado en cero.
+Debe especificar un índice de base cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,16 +72,16 @@ Debe especificar un índice basado en cero.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)
+[**IPortableDeviceKeyCollection (interfaz)**](iportabledevicekeycollection.md)
 </dt> </dl>
 
  

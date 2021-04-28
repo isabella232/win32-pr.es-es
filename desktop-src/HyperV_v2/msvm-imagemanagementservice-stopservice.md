@@ -1,7 +1,7 @@
 ---
-description: detiene el servicio.
+description: 'Método StopService de la Msvm_ImageManagementService : detiene el servicio.'
 ms.assetid: 96f49c9c-7f1c-497e-9630-5fd9b355b75d
-title: Método StopService de la clase Msvm_ImageManagementService
+title: Método StopService de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d61f95af2cc0efe371a91454c74adc96949e00e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9dde7af6f6d62395f27cbd3ec44daf45d7375f8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666608"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118934"
 ---
-# <a name="stopservice-method-of-the-msvm_imagemanagementservice-class"></a>Método StopService de la \_ clase MSVM ImageManagementService
+# <a name="stopservice-method-of-the-msvm_imagemanagementservice-class"></a>Método StopService de la clase \_ Msvm ImageManagementService
 
 detiene el servicio.
 
@@ -53,21 +53,21 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  
