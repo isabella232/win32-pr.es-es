@@ -1,7 +1,7 @@
 ---
-description: Establece un número de punto flotante.
+description: 'Método ID3DXTextureShader::SetFloat: establece un número de punto flotante.'
 ms.assetid: 69bb9b15-5d66-4b1a-9559-29bcb38a965f
-title: 'ID3DXTextureShader:: SetFloat (método) (D3DX9Shader. h)'
+title: Método ID3DXTextureShader::SetFloat (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 85923fe20731b4482f70c439cb9df75712ab09f5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6230b0736cb3bc623b0413f7b5a1cb9635f00e07
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649443"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107173"
 ---
-# <a name="id3dxtextureshadersetfloat-method"></a>ID3DXTextureShader:: SetFloat (método)
+# <a name="id3dxtextureshadersetfloat-method"></a>Método ID3DXTextureShader::SetFloat
 
 Establece un número de punto flotante.
 
@@ -41,19 +41,19 @@ HRESULT SetFloat(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la constante. Vea [D3DXHANDLE](d3dxfx.md).
+Identificador único de la constante. Vea [D3DXHANDLE.](d3dxfx.md)
 
 </dd> <dt>
 
-*f* \[ en\]
+*f* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Número de punto flotante.
 
@@ -63,7 +63,7 @@ Número de punto flotante.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

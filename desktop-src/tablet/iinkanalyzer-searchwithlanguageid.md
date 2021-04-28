@@ -1,7 +1,7 @@
 ---
-description: Proporciona una búsqueda aproximada de mayúsculas y minúsculas basada en frases para los trazos de escritura analizados y trazos de dibujo analizados que tienen tipos reconocidos.
+description: 'Método IInkAnalyzer::SearchWithLanguageId: proporciona una búsqueda aproximada basada en frases sin mayúsculas y minúsculas para trazos de escritura analizados y trazos de dibujo analizados que tienen tipos reconocidos.'
 ms.assetid: dfd481f9-38fd-433f-b1fc-697c735c13da
-title: 'IInkAnalyzer:: SearchWithLanguageId (método) (IACom. h)'
+title: Método IInkAnalyzer::SearchWithLanguageId (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 829878a6fd326abb8a685b644cfc222ba6921385
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 201469933da10b0d68a4d3a50e63c42f8d01d2dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809997"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083663"
 ---
-# <a name="iinkanalyzersearchwithlanguageid-method"></a>IInkAnalyzer:: SearchWithLanguageId (método)
+# <a name="iinkanalyzersearchwithlanguageid-method"></a>IInkAnalyzer::SearchWithLanguageId (método)
 
-Proporciona una búsqueda aproximada de mayúsculas y minúsculas basada en frases para los trazos de escritura analizados y trazos de dibujo analizados que tienen tipos reconocidos.
+Proporciona una búsqueda aproximada basada en frases sin mayúsculas de minúsculas para trazos de escritura analizados y trazos de dibujo analizados que tienen tipos reconocidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,28 +44,28 @@ HRESULT SearchWithLanguageId(
 
 <dl> <dt>
 
-*bstrPhraseToMatch* \[ de\]
+*bstrPhraseToMatch* \[ En\]
 </dt> <dd>
 
-La frase que se encontrará en las alternativas para los trazos analizados actualmente.
+Frase que se encontrará en las alternativas de los trazos analizados actualmente.
 
 </dd> <dt>
 
-*lSearchStringLanguageId* \[ de\]
+*lSearchStringLanguageId* \[ En\]
 </dt> <dd>
 
-LCID asociado a la cadena que se pasa. Se utiliza para convertir el caso internamente para admitir comparaciones que no distinguen mayúsculas de minúsculas.
+LCID asociado a la cadena que se pasa. Se usa para convertir el caso internamente para admitir comparaciones que no tienen en cuenta mayúsculas de minúsculas.
 
 </dd> <dt>
 
 *pulSearchResultCount* \[ in, out\]
 </dt> <dd>
 
-Número máximo de resultados que se devuelven de la búsqueda.
+Número máximo de resultados devueltos por la búsqueda.
 
 </dd> <dt>
 
-*ppulStrokeCountPerResult* \[ enuncia\]
+*ppulStrokeCountPerResult* \[ out\]
 </dt> <dd>
 
 Puntero a una matriz del número de trazos en cada resultado de búsqueda.
@@ -75,32 +75,32 @@ Puntero a una matriz del número de trazos en cada resultado de búsqueda.
 *pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Número de identificadores de trazo en *ppulStrokeIds*.
+Número de id. de trazo en *ppulStrokeIds.*
 
 </dd> <dt>
 
-*ppulStrokeIds* \[ enuncia\]
+*ppulStrokeIds* \[ out\]
 </dt> <dd>
 
-Puntero a una matriz de identificadores de trazo que representa un conjunto de conjuntos de trazos.
+Puntero a una matriz de los IDs de trazo que representan un conjunto de conjuntos de trazos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta búsqueda busca subcadenas con varias palabras y una sola palabra. Se busca en los resultados de reconocimiento alternativos y en los segmentaciones alternativos.
+Esta búsqueda busca subcadenas de varias palabras y palabras únicas. Se buscan resultados de reconocimiento alternativos y segmentaciones alternativas.
 
-Todas las cadenas de entrada se convertirán en un único uso de mayúsculas y minúsculas para la comparación mediante el LCID del subproceso actual para realizar esta conversión para respetar las convenciones culturales de casos.
+Todas las cadenas entrantes se convertirán en un solo uso de mayúsculas y minúsculas para la comparación mediante el LCID del subproceso actual para realizar esta conversión con el fin de respetar las convenciones de casos culturales.
 
-La cadena que se pasa se trata como una frase. Las palabras y los caracteres deben aparecer en el alterantes para los trazos en el orden especificado. La primera y la última palabra de la frase pueden coincidir como subcadenas (la primera palabra aparece al final de una alternativa y la última palabra aparece en el begginging de una), pero otras palabras (las que se encuentran dentro de la frase) deben aparecer como palabras completas.
+La cadena pasada se trata como una frase. Las palabras y los caracteres deben aparecer en los alteradores de los trazos en el orden especificado. La primera y la última palabra de la frase pueden coincidir como subcadenas (la primera palabra que aparece al final de una alternativa y la última palabra que aparece al mezquite de una), pero cualquier otra palabra (las que están dentro de la frase) debe aparecer como palabras enteras.
 
-Si la cadena que se pasa no tiene ningún espacio en blanco entre los caracteres, la subcadena se puede encontrar en cualquier parte dentro de una sola palabra en una alternativa.
+Si la cadena pasada no tiene ningún espacio en blanco entre caracteres, la subcadena se puede encontrar en cualquier lugar dentro de una sola palabra en una alternativa.
 
-Solo la presencia o ausencia de espacio en blanco entre los caracteres cambia los resultados de la búsqueda. Se omiten los espacios en blanco que no están rodeados por caracteres. Se omite el tipo de espacio en blanco (una tabulación o un espacio entre los caracteres darán el mismo resultado). La cantidad de espacio en blanco no importa: un espacio o dos espacios entre caracteres darán el mismo resultado.
+Solo la presencia o ausencia de espacios en blanco entre caracteres cambia los resultados de la búsqueda. Se omite el espacio en blanco que no está rodeado por caracteres. Se omite el tipo de espacio en blanco (una pestaña o un espacio entre caracteres dará el mismo resultado). La cantidad de espacios en blanco no importa: un espacio o dos espacios entre caracteres darán el mismo resultado.
 
 La búsqueda no genera eventos PopulateContextNode. Solo se buscarán los trazos que ya se han rellenado.
 
@@ -108,16 +108,16 @@ La búsqueda no genera eventos PopulateContextNode. Solo se buscarán los trazos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

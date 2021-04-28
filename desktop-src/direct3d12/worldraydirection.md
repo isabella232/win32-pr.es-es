@@ -1,5 +1,5 @@
 ---
-description: Dirección de espacio mundial del rayo actual.
+description: 'WorldRayDirection: dirección del espacio del mundo para el rayo actual.'
 ms.assetid: ''
 title: WorldRayDirection
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - WorldRayDirection
 api_type:
 - NA
-ms.openlocfilehash: 508e24d73c0336f7615c9eca3d1da35cfcce9514
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9d38ab75d0f0708f70624284483a0222eadf9591
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677235"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105293"
 ---
 # <a name="worldraydirection"></a>WorldRayDirection
 
-Dirección de espacio mundial del rayo actual.
+Dirección del espacio mundial para el rayo actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,9 +32,9 @@ float3 WorldRayDirection();
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador raytracing:
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)
@@ -45,7 +45,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador raytrac
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Music.Genre
 ms.assetid: c1adbc13-5069-4760-901c-d5ca47913695
-title: System. Music. Genre
+title: System.Music.Genre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4f54a7e90931c11e4deec52468dd5689be39765
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb29e6242dcdc97fe3b814a6fa571551f77e4765
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715942"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117413"
 ---
-# <a name="systemmusicgenre"></a>System. Music. Genre
+# <a name="systemmusicgenre"></a>System.Music.Genre
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -28,11 +28,11 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Tenga en cuenta que algunos formatos de archivo, como un archivo. mp3, solo admiten un único género. Otros, como los archivos. WMA, admiten varios géneros. Si especifica varios géneros para un formato de archivo de un solo género, solo se reconocerá el primer género de la lista.
+Tenga en cuenta que algunos formatos de archivo, como un archivo .mp3, solo admiten un único género. Otros, como los archivos .wma, admiten varios géneros. Si especifica varios géneros para un formato de archivo de un solo género, solo se reconocerá el primer género de la lista.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Tenga en cuenta que algunos formatos de archivo, como un archivo. mp3, solo admi
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Tenga en cuenta que algunos formatos de archivo, como un archivo. mp3, solo admi
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Tenga en cuenta que algunos formatos de archivo, como un archivo. mp3, solo admi
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Recupera una tabla de atributos para una malla o el número de entradas almacenadas en una tabla de atributos para una malla.
+description: 'Método ID3DX10Mesh::GetAttributeTable: recupera una tabla de atributos para una malla o el número de entradas almacenadas en una tabla de atributos para una malla.'
 ms.assetid: cee49eba-c113-49f5-a702-c366401f1f2d
-title: 'ID3DX10Mesh:: GetAttributeTable (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GetAttributeTable (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4ff00f3c5d036b3b463bc7c6622de75361b196e6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e7fc503af1a290b27fea81d0c2aba6b84393323b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707988"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084003"
 ---
-# <a name="id3dx10meshgetattributetable-method"></a>ID3DX10Mesh:: GetAttributeTable (método)
+# <a name="id3dx10meshgetattributetable-method"></a>Método ID3DX10Mesh::GetAttributeTable
 
 Recupera una tabla de atributos para una malla o el número de entradas almacenadas en una tabla de atributos para una malla.
 
@@ -41,19 +41,19 @@ HRESULT GetAttributeTable(
 
 <dl> <dt>
 
-*pAttribTable* \[ de\]
+*pAttribTable* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ intervalo del atributo D3DX10**](d3dx10-attribute-range.md)\***
+Tipo: **[ **D3DX10 \_ ATTRIBUTE \_ RANGE**](d3dx10-attribute-range.md)\***
 
-Puntero a una matriz de estructuras de intervalo de atributos de D3DX10 \_ \_ , que representa las entradas de la tabla de atributos de la malla. Especifique **null** para recuperar el valor de pAttribTableSize.
+Puntero a una matriz de estructuras D3DX10 ATTRIBUTE RANGE, que representan las entradas de la \_ tabla de atributos de la \_ malla. Especifique **NULL** para recuperar el valor de pAttribTableSize.
 
 </dd> <dt>
 
-*pAttribTableSize* \[ de\]
+*pAttribTableSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
 Puntero al número de entradas almacenadas en pAttribTable o un valor que se va a rellenar con el número de entradas almacenadas en la tabla de atributos de la malla.
 
@@ -63,11 +63,11 @@ Puntero al número de entradas almacenadas en pAttribTable o un valor que se va 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con distintas texturas, Estados de representación, materiales, etc. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla sin dibujar un identificador de atributo determinado al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado al dibujar el marco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,19 +75,19 @@ Una tabla de atributos se usa para identificar las áreas de la malla que deben 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

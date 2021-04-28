@@ -1,20 +1,20 @@
 ---
-description: .
+description: Consultar interfaces
 ms.assetid: 904e5325-4bcb-42cf-8e7f-eb9641c94633
 title: Consultar interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d785421403b63e231c3fcc6bafd15680c57ec41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfc41b9b17ac2da10e6ac36294845cf8c4bf8b0c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705487"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104613"
 ---
 # <a name="querying-interfaces"></a>Consultar interfaces
 
 
-Esta sección de referencia de búsqueda de Windows consta de las siguientes interfaces de consulta:
+Esta Windows Search de referencia consta de las siguientes interfaces de consulta:
 
 [**ICondition**](/windows/desktop/api/Structuredquerycondition/nn-structuredquerycondition-icondition)
 

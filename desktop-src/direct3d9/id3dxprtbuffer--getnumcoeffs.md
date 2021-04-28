@@ -1,7 +1,7 @@
 ---
-description: Recupera el número de escalares por canal de color usado en la memoria para almacenar ejemplos.
+description: 'Método ID3DXPRTBuffer::GetNumCoeffs: recupera el número de escalares por canal de color usado en memoria para almacenar muestras.'
 ms.assetid: dc12f1fd-f50f-4738-b6b3-da3426e12d21
-title: 'ID3DXPRTBuffer:: GetNumCoeffs (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::GetNumCoeffs (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6c7fd1608d404fd402d7e62962d66d23520c3f34
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ef15a75180efcc8fdeabb61e58cba2c40a61e934
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698314"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093273"
 ---
-# <a name="id3dxprtbuffergetnumcoeffs-method"></a>ID3DXPRTBuffer:: GetNumCoeffs (método)
+# <a name="id3dxprtbuffergetnumcoeffs-method"></a>Método ID3DXPRTBuffer::GetNumCoeffs
 
-Recupera el número de escalares por canal de color usado en la memoria para almacenar ejemplos.
+Recupera el número de escalares por canal de color usado en memoria para almacenar muestras.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Devuelve el número de escalares por canal de color usado en la memoria para almacenar ejemplos.
+Devuelve el número de escalares por canal de color usado en memoria para almacenar muestras.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Devuelve el número de escalares por canal de color usado en la memoria para alm
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase primaria para los eventos TCP/IP. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'TcpIp_V1 clase : esta clase es la clase primaria para los eventos TCP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: f43ef400-e4e5-4cf3-b7a9-437f9a88e6ca
-title: TcpIp_V1 (clase)
+title: TcpIp_V1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7bbebdbe80de38c2636d7010e057269901a55637
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3f10683708f190b9888ea0b1eadc116d32bdada
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984775"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105743"
 ---
-# <a name="tcpip_v1-class"></a>TcpIp \_ v1 (clase)
+# <a name="tcpip_v1-class"></a>TcpIp \_ V1 (clase)
 
 Esta clase es la clase primaria para los eventos TCP/IP.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,33 +36,33 @@ class TcpIp_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **TCPIP \_ v1** no define ningún miembro.
+La **clase TcpIp \_ V1** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace de MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**Luego**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> <dt>
 
-[**V0 de TcpIp \_**](tcpip-v0.md)
+[**TcpIp \_ V0**](tcpip-v0.md)
 </dt> <dt>
 
-[**TcpIp \_ v1 \_ TypeGroup1**](tcpip-v1-typegroup1.md)
+[**TcpIp \_ V1 \_ TypeGroup1**](tcpip-v1-typegroup1.md)
 </dt> </dl>
 
  

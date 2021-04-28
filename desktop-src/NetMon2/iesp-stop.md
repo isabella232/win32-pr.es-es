@@ -1,7 +1,7 @@
 ---
-description: El método Stop detiene la captura actual.
+description: 'Método IESP::Stop: el método Stop detiene la captura actual.'
 ms.assetid: d2d4e51a-c6a4-4aec-a805-929af621ffb3
-title: 'IESP:: STOP (método) (Netmon. h)'
+title: Método IESP::Stop (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 50dfb274e1355af93c473609f95607e6b3faf1fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac262d8da5ab218db7300ea38da59d5c738421c0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686556"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103773"
 ---
-# <a name="iespstop-method"></a>IESP:: STOP (método)
+# <a name="iespstop-method"></a>IESP::Stop (método)
 
-El método **Stop** detiene la captura actual.
+El **método Stop** detiene la captura actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ HRESULT STDMETHODCALLTYPE Stop(
 
 <dl> <dt>
 
-*lpStats* \[ enuncia\]
+*lpStats* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura de [estadísticas](statistics.md) que contiene estadísticas de red como el total de tramas y el total de bytes capturados.
+Puntero a una [estructura STATISTICS que](statistics.md) contiene estadísticas de red, como el total de fotogramas y el total de bytes capturados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
 Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
@@ -57,47 +57,47 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
 | Código devuelto                                                                                          | Descripción                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl> | NPP no está conectado a la red. Llame a [iesp:: Connect](iesp-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ no se \_ captura**</dt> </dl> | NPP no está capturando datos. Llame a [iesp:: Start](iesp-start.md) para iniciar la captura.<br/>                            |
-| <dl> <dt>**NMERR \_ no \_ ESP**</dt> </dl>       | NPP está conectado a la red, pero no con el método [iesp:: Connect](iesp-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IESP::Connect](iesp-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl> | El NPP no captura datos. Llame [a IESP::Start](iesp-start.md) para iniciar la captura.<br/>                            |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Connect.](iesp-connect.md)<br/>                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se llama al método **iesp:: Stop** , monitor de red detiene la captura de datos y cierra el [*archivo de captura.*](c.md) (El nombre del archivo de captura se devolvió cuando se llamó a [iesp:: Start](iesp-start.md) ). Ahora puede examinar el contenido del archivo de captura.
+Cuando se **llama al método IESP::Stop,** Monitor de red detiene la captura de datos y cierra el [*archivo de captura.*](c.md) (El nombre del archivo de captura se devolvió cuando se llamó a [IESP::Start).](iesp-start.md) Ahora puede ver el contenido del archivo de captura.
 
-Cuando detenga y reinicie la captura, asegúrese de llamar al método [iesp:: configure](iesp-configure.md) cada vez que llame a [iesp:: Start](iesp-start.md) para reiniciar la captura.
+Cuando detenga y reinicie la captura, asegúrese de llamar al método [IESP::Configure](iesp-configure.md) cada vez que llame a [IESP::Start](iesp-start.md) para reiniciar la captura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: Connect](iesp-connect.md)
+[IESP::Connect](iesp-connect.md)
 </dt> <dt>
 
-[IESP:: Start](iesp-start.md)
+[IESP::Start](iesp-start.md)
 </dt> <dt>
 
-[¡](statistics.md)
+[Estadísticas](statistics.md)
 </dt> </dl>
 
  

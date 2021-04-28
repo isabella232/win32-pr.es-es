@@ -1,7 +1,7 @@
 ---
-description: El método GetTypeInfo recupera la información de tipo para el objeto, que se puede usar para obtener la información de tipo de una interfaz.
+description: 'Método CBaseDispatch.GetTypeInfo: el método GetTypeInfo recupera la información de tipo del objeto , que se puede usar para obtener la información de tipo de una interfaz.'
 ms.assetid: aa06b97c-541b-44fc-bdef-97fd1f014e85
-title: Método CBaseDispatch. GetTypeInfo (Ctlutil. h)
+title: Método CBaseDispatch.GetTypeInfo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1f63d79327d2f2bf2a60f06e0290aa34891e78ff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9b1e21133b4fa561c743fefc6282c777b444e6f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660583"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120123"
 ---
-# <a name="cbasedispatchgettypeinfo-method"></a>CBaseDispatch. GetTypeInfo, método
+# <a name="cbasedispatchgettypeinfo-method"></a>Método CBaseDispatch.GetTypeInfo
 
-El `GetTypeInfo` método recupera la información de tipo para el objeto, que se puede usar para obtener la información de tipo de una interfaz.
+El método recupera la información de tipo del objeto , que luego se `GetTypeInfo` puede usar para obtener la información de tipo de una interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Referencia a un identificador de interfaz (IID) que especifica la interfaz.
 *itinfo* 
 </dt> <dd>
 
-Información de tipo que se va a devolver. Debe ser cero.
+Escriba la información que se devolverá. Debe ser cero.
 
 </dd> <dt>
 
@@ -69,29 +69,29 @@ Identificador de configuración regional.
 *pptinfo* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero **ITypeInfo** .
+Dirección de una variable que recibe un **puntero ITypeInfo.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                             | Descripción                                    |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                    | Correcto.<br/>                            |
-| <dl> <dt>**\_puntero E**</dt> </dl>               | Argumento de puntero **nulo** .<br/>          |
-| <dl> <dt>**Escriba \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | El parámetro *itinfo* no es cero.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Correcto.<br/>                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>               | **Argumento de** puntero NULL.<br/>          |
+| <dl> <dt>**TYPE \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | El *parámetro itinfo* no es cero.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se comporta como el método **IDispatch:: GetTypeInfo** . Sin embargo, incluye un parámetro adicional, *riid*, que especifica la interfaz cuya información de tipo se va a recuperar.
+Este método se comporta como el **método IDispatch::GetTypeInfo.** Sin embargo, incluye un parámetro adicional, *riid*, que especifica la interfaz para la que se va a recuperar información de tipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,16 +99,16 @@ Este método se comporta como el método **IDispatch:: GetTypeInfo** . Sin embar
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseDispatch**](cbasedispatch.md)
+[**CBaseDispatch (clase)**](cbasedispatch.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CBaseObject.~CBaseObject: método Destructor.'
 ms.assetid: 3714d030-f0bd-4826-a3c5-fc206bb88561
-title: Destructor CBaseObject. ~ CBaseObject (ComBase. h)
+title: Destructor CBaseObject.~CBaseObject (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 908f335105fa88f3ed547eed0e92ea50a6f85f26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 552dbcc764f335e639cb50e2e01411dee200068f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660286"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096243"
 ---
-# <a name="cbaseobjectcbaseobject-destructor"></a>CBaseObject. ~ CBaseObject (destructor)
+# <a name="cbaseobjectcbaseobject-destructor"></a>Destructor CBaseObject.~CBaseObject
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ Método de destructor.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método disminuye el recuento de objetos activos. (Vea [**CBaseObject:: ObjectsActive**](cbaseobject-objectsactive.md)).
+Este método disminuye el recuento de objetos activos. (Vea [**CBaseObject::ObjectsActive).**](cbaseobject-objectsactive.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,16 +46,16 @@ Este método disminuye el recuento de objetos activos. (Vea [**CBaseObject:: Obj
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseObject**](cbaseobject.md)
+[**CBaseObject (clase)**](cbaseobject.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número de TICs de fotogramas clave de animación que se producen por segundo.
+description: 'Método ID3DXKeyframedAnimationSet::GetSourceTicksPerSecond: obtiene el número de pasos de fotograma clave de animación que se producen por segundo.'
 ms.assetid: b3e8d399-f1a7-4bc6-a35c-373b686aa24a
-title: 'ID3DXKeyframedAnimationSet:: GetSourceTicksPerSecond (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::GetSourceTicksPerSecond (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3dba26b20f8e405c25a5cc5a659896ae8a49c683
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d28837ed2abbab5846c8a5609ab7ff59ac0d49c4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698386"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093703"
 ---
-# <a name="id3dxkeyframedanimationsetgetsourcetickspersecond-method"></a>ID3DXKeyframedAnimationSet:: GetSourceTicksPerSecond (método)
+# <a name="id3dxkeyframedanimationsetgetsourcetickspersecond-method"></a>Método ID3DXKeyframedAnimationSet::GetSourceTicksPerSecond
 
-Obtiene el número de TICs de fotogramas clave de animación que se producen por segundo.
+Obtiene el número de tics de fotograma clave de animación que se producen por segundo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Número de TICs de fotogramas clave de animación que se producen por segundo.
+Número de tics de fotograma clave de animación que se producen por segundo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Número de TICs de fotogramas clave de animación que se producen por segundo.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

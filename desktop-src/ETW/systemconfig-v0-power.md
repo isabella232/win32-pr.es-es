@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de energía. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'SystemConfig_V0_Power clase : esta clase es la clase de tipo de evento para los eventos de configuración de energía. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: b3391435-dac0-4c48-b788-eb4d4a7aa635
-title: SystemConfig_V0_Power (clase)
+title: SystemConfig_V0_Power clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2e42af68ad12857d65d776b7a73794d2d13b2b48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab268e719374906e149dc9c1b733487f986e8308
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984394"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105943"
 ---
-# <a name="systemconfig_v0_power-class"></a>\_ \_ Clase Power de SystemConfig v0
+# <a name="systemconfig_v0_power-class"></a>Clase Power SystemConfig \_ V0 \_
 
 Esta clase es la clase de tipo de evento para los eventos de configuración de energía.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,58 +52,58 @@ class SystemConfig_V0_Power : SystemConfig_V0
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Power de SystemConfig V0** tiene estos tipos de miembros:
+La **clase SystemConfig \_ V0 \_ Power** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Power de SystemConfig V0** tiene estas propiedades.
+La **clase SystemConfig \_ V0 \_ Power** tiene estas propiedades.
 
 <dl> <dt>
 
-Pad1
+Panel1
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
 Reservado.
 
 </dd> <dt>
 
-Pad2
+Panel2
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7)
+Calificadores: WmiDataId(7)
 </dt> </dl>
 
 Reservado.
 
 </dd> <dt>
 
-Pad3
+Panel3
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8)
+Calificadores: WmiDataId(8)
 </dt> </dl>
 
 Reservado.
@@ -119,7 +119,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S1.
@@ -135,7 +135,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S2.
@@ -151,14 +151,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S3.
 
 </dd> <dt>
 
-S4
+s4
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -167,14 +167,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S4.
 
 </dd> <dt>
 
-S5
+s5
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -183,7 +183,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
 True indica que el sistema admite el estado de suspensión S5.
@@ -194,18 +194,18 @@ True indica que el sistema admite el estado de suspensión S5.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemConfig \_ v0**](systemconfig-v0.md)
+[**SystemConfig \_ V0**](systemconfig-v0.md)
 </dt> </dl>
 
  

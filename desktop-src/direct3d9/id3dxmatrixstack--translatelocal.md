@@ -1,7 +1,7 @@
 ---
-description: Determina el producto de la matriz de traducción calculada determinada por los factores especificados (x, y y z) y la matriz actual.
+description: 'Método ID3DXMATRIXStack::TranslateLocal (D3dx9math.h): determina el producto de la matriz de traducción calculada determinada por los factores especificados (x, y y z) y la matriz actual.'
 ms.assetid: d4752a6c-2114-4016-a69f-dcc561d2c76b
-title: 'ID3DXMATRIXStack:: TranslateLocal (método) (D3dx9math. h)'
+title: Método ID3DXMATRIXStack::TranslateLocal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 784e623ae47dfece9b395d423437fb6ce661b223
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b9badd4b01d1245247766c750e2a2ea1f266d9e1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280400"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107373"
 ---
-# <a name="id3dxmatrixstacktranslatelocal-method-d3dx9mathh"></a>ID3DXMATRIXStack:: TranslateLocal (método) (D3dx9math. h)
+# <a name="id3dxmatrixstacktranslatelocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::TranslateLocal (D3dx9math.h)
 
 Determina el producto de la matriz de traducción calculada determinada por los factores especificados (x, y y z) y la matriz actual.
 
@@ -45,27 +45,27 @@ HRESULT TranslateLocal(
 *x* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de traslación en la dirección x.
+Factor de traducción en la dirección X.
 
 </dd> <dt>
 
 *y* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de traslación en la dirección y.
+Factor de traducción en la dirección y.
 
 </dd> <dt>
 
-*z* \[ en\]
+*z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de traslación en la dirección z.
+Factor de traducción en la dirección Z.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Factor de traslación en la dirección z.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método multiplica a la izquierda la matriz actual con la matriz de conversión calculada (la transformación es sobre el origen local del objeto).
+Este método multiplica a la izquierda la matriz actual con la matriz de traducción calculada (la transformación trata sobre el origen local del objeto).
 
 
 ```
@@ -95,19 +95,19 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DXMATRIXStack](id3dxmatrixstack.md)
 </dt> <dt>
 
-[**ID3DXMATRIXStack:: translate**](id3dxmatrixstack--translate.md)
+[**ID3DXMATRIXStack::Translate**](id3dxmatrixstack--translate.md)
 </dt> </dl>
 
  

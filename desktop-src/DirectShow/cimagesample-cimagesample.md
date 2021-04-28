@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CImageSample.CImageSample: método constructor.'
 ms.assetid: d7550c38-d728-41b2-80a6-20728abf6012
-title: Constructor CImageSample. CImageSample (Winutil. h)
+title: Constructor CImageSample.CImageSample (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 805be59cfc899b6461fa8c761eebb5821118640f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ecab52e347e03b698adccb79b77da879d26612b4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670490"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095613"
 ---
-# <a name="cimagesamplecimagesample-constructor"></a>Constructor CImageSample. CImageSample
+# <a name="cimagesamplecimagesample-constructor"></a>Constructor CImageSample.CImageSample
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ ignorado.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
 ignorado.
@@ -70,7 +70,7 @@ ignorado.
 *pBuffer* 
 </dt> <dd>
 
-Puntero a un búfer de memoria asignado por el autor de la llamada, de *longitud* de tamaño. El búfer debe contener un mapa de bits independiente del dispositivo GDI (DIB).
+Puntero a un búfer de memoria asignado por el autor de la llamada, de longitud *de tamaño*. El búfer debe contener un mapa de bits independiente del dispositivo GDI (DIB).
 
 </dd> <dt>
 
@@ -81,9 +81,9 @@ Longitud del búfer.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase [**CImageAllocator**](cimageallocator.md) crea un archivo DIB mediante un objeto de asignación de archivos respaldado por el archivo de paginación del sistema operativo. El identificador del objeto de asignación de archivos se almacena en el miembro **hMapping** de la estructura **m \_ DibData** .
+La [**clase CImageAllocator**](cimageallocator.md) crea una DIB mediante un objeto de asignación de archivos que está respaldo por el archivo de paginación del sistema operativo. El identificador del objeto de asignación de archivos se almacena en el **miembro hMapping** de la **estructura m \_ DibData.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,16 +91,16 @@ La clase [**CImageAllocator**](cimageallocator.md) crea un archivo DIB mediante 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImageSample**](cimagesample.md)
+[**CImageSample (clase)**](cimagesample.md)
 </dt> </dl>
 
  

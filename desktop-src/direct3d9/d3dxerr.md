@@ -1,7 +1,7 @@
 ---
-description: Los errores se representan con valores negativos y no se pueden combinar.
+description: 'Enumeración D3DXERR: los errores se representan mediante valores negativos y no se pueden combinar.'
 ms.assetid: 2318278e-e1e1-4cd8-a5ce-5c99f3bc47ba
-title: Enumeración D3DXERR (D3dx9. h)
+title: Enumeración D3DXERR (D3dx9.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9.h
-ms.openlocfilehash: 0d4ef0fddf70effd63a0fcdc42b46889a879c13a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1c1dd03500a493b30d7c1d3bfdfdf800b65a6d82
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280323"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094313"
 ---
 # <a name="d3dxerr-enumeration"></a>Enumeración D3DXERR
 
-Los errores se representan con valores negativos y no se pueden combinar. A continuación se muestra una lista de los valores que pueden ser devueltos por los métodos incluidos en la biblioteca de utilidades de D3DX. Vea las descripciones individuales de cada método para ver las listas de los valores que puede devolver. Estas listas no son necesariamente completas.
+Los errores se representan mediante valores negativos y no se pueden combinar. A continuación se muestra una lista de valores que pueden devolver los métodos incluidos con la biblioteca de utilidades D3DX. Consulte las descripciones de métodos individuales para obtener listas de los valores que cada uno puede devolver. Estas listas no son necesariamente completas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -65,21 +65,21 @@ La malla no es válida.
 <span id="D3DXERR_CANNOTATTRSORT"></span><span id="d3dxerr_cannotattrsort"></span>**D3DXERR \_ CANNOTATTRSORT**
 </dt> <dd>
 
-La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como técnica de optimización.
+La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como una técnica de optimización.
 
 </dd> <dt>
 
 <span id="D3DXERR_SKINNINGNOTSUPPORTED"></span><span id="d3dxerr_skinningnotsupported"></span>**D3DXERR \_ SKINNINGNOTSUPPORTED**
 </dt> <dd>
 
-No se admite la recubrimiento.
+No se admite el desnasado.
 
 </dd> <dt>
 
 <span id="D3DXERR_TOOMANYINFLUENCES"></span><span id="d3dxerr_toomanyinfluences"></span>**D3DXERR \_ TOOMANYINFLUENCES**
 </dt> <dd>
 
-Se han especificado demasiadas influencias.
+Demasiadas influencias especificadas.
 
 </dd> <dt>
 
@@ -111,9 +111,9 @@ No se puede eliminar el último elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El código de instalación \_ FACDD se utiliza para generar códigos de error, como en las siguientes macros.
+El código de instalación \_ FACDD se usa para generar códigos de error, como en las macros siguientes.
 
 
 ```
@@ -134,15 +134,15 @@ enum _D3DXERR {
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

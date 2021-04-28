@@ -1,7 +1,7 @@
 ---
-description: Calcula un cuadro de límite orientado al eje de coordenadas.
+description: 'Función D3DXComputeBoundingBox (D3DX10math.h): calcula un cuadro de límite orientado al eje de coordenadas.'
 ms.assetid: 1b8f328c-2fe1-462e-b464-c8dd9dc03e67
-title: Función D3DXComputeBoundingBox (D3DX10math. h)
+title: Función D3DXComputeBoundingBox (D3DX10math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9a93eb4a10f6c2b2fd7eda82afcc21158138a1e8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2a12e7e302fb36ffb8856e6402f110e01bb2afb2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708015"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103533"
 ---
-# <a name="d3dxcomputeboundingbox-function-d3dx10mathh"></a>Función D3DXComputeBoundingBox (D3DX10math. h)
+# <a name="d3dxcomputeboundingbox-function-d3dx10mathh"></a>Función D3DXComputeBoundingBox (D3DX10math.h)
 
-Calcula un cuadro de límite orientado al eje de coordenadas.
+Calcula un rectángulo de selección orientado al eje de coordenadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ HRESULT D3DXComputeBoundingBox(
 
 <dl> <dt>
 
-*pFirstPosition* \[ de\]
+*pFirstPosition* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -53,7 +53,7 @@ Puntero a la primera posición.
 
 </dd> <dt>
 
-*NumVertices* \[ de\]
+*NumVertices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -62,30 +62,30 @@ Número de vértices.
 
 </dd> <dt>
 
-*dwStride* \[ de\]
+*dwStride* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Recuento o número de bytes entre los vértices.
+Recuento o número de bytes entre vértices.
 
 </dd> <dt>
 
-*pMin* \[ enuncia\]
+*pMin* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que describe la esquina inferior izquierda devuelta del cuadro de límite.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) que describe la esquina inferior izquierda devuelta del cuadro de límite.
 
 </dd> <dt>
 
-*pMax* \[ enuncia\]
+*pMax* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que describe la esquina superior derecha devuelta del cuadro de límite.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) que describe la esquina superior derecha devuelta del cuadro de límite.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que describe 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,12 +101,12 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

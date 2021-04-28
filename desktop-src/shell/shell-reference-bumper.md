@@ -1,6 +1,6 @@
 ---
-description: .
-title: Referencia de Shell
+description: Referencia del shell
+title: Referencia del shell
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: f6b4af76-beea-43aa-8b0d-281a83c17273
@@ -9,27 +9,27 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 65264e74c423df480fa41744528533cb16d53042
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3b9ab1fa1b9e2568c4c731ce89599654eec3158
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985607"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104173"
 ---
-# <a name="shell-reference"></a>Referencia de Shell
+# <a name="shell-reference"></a>Referencia del shell
 
--   [Clases de Shell](classes.md)
--   [Interfaces de Shell](interfaces.md)
--   [Funciones de Shell](functions.md)
--   [Funciones de devolución de llamada de Shell](callbacks.md)
--   [Constantes, enumeraciones y marcas de Shell](consts-enums-flags.md)
+-   [Clases de shell](classes.md)
+-   [Shell Interfaces](interfaces.md)
+-   [Funciones de shell](functions.md)
+-   [Funciones de devolución de llamada de shell](callbacks.md)
+-   [Constantes de shell, enumeraciones y marcas](consts-enums-flags.md)
 -   [Funciones de la utilidad ligera de Shell](shlwapi.md)
--   [Macros de Shell](macros.md)
--   [Notificaciones y mensajes de Shell](messages.md)
--   [Objetos de Shell para scripting y Microsoft Visual Basic](objects.md)
--   [Objetos de Shell para C++](objects-cpp.md)
--   [Esquemas de Shell](schemas.md)
--   [Estructuras de Shell](structures.md)
+-   [Shell Macros](macros.md)
+-   [Mensajes y notificaciones del shell](messages.md)
+-   [Objetos de shell para scripting y Microsoft Visual Basic](objects.md)
+-   [Objetos de shell para C++](objects-cpp.md)
+-   [Esquemas de shell](schemas.md)
+-   [Estructuras de shell](structures.md)
 
  
 

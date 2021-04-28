@@ -1,7 +1,7 @@
 ---
-description: El método SetMediaType establece el tipo de medio para la conexión.
+description: 'Método CBasePin.SetMediaType: el método SetMediaType establece el tipo de medio para la conexión.'
 ms.assetid: db32b33b-df71-4f46-b53f-d7e647f5f559
-title: Método CBasePin. SetMediaType (Amfilter. h)
+title: Método CBasePin.SetMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 07ac736558cea12a16c695cf109c3d6283ce4a13
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b61b6179aa6364ebddd940b8853e22d628463e56
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660943"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095993"
 ---
-# <a name="cbasepinsetmediatype-method"></a>CBasePin. SetMediaType, método
+# <a name="cbasepinsetmediatype-method"></a>Método CBasePin.SetMediaType
 
 El `SetMediaType` método establece el tipo de medio para la conexión.
 
@@ -42,22 +42,22 @@ virtual HRESULT SetMediaType(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece el formato para una conexión de PIN. Antes de llamar a este método, el PIN llama al método [**CBasePin:: CheckMediaType**](cbasepin-checkmediatype.md) para determinar si el tipo de medio es aceptable. Por lo tanto, se supone que el parámetro *PMT* es un tipo de medio aceptable.
+Este método establece el formato para una conexión de pin. Antes de llamar a este método, el pin llama al método [**CBasePin::CheckMediaType**](cbasepin-checkmediatype.md) para determinar si el tipo de medio es aceptable. Por lo tanto, se supone que el parámetro *pmt* es un tipo de medio aceptable.
 
-En la clase base, este método establece la variable miembro [**CBasePin:: m \_ MT**](cbasepin-m-mt.md) y devuelve S \_ OK. Una clase derivada puede invalidar este método si requiere una notificación cuando se establece el tipo de medio.
+En la clase base, este método establece la variable miembro [**CBasePin::m \_ mt**](cbasepin-m-mt.md) y devuelve S \_ OK. Una clase derivada puede invalidar este método si requiere notificación cuando se establece el tipo de medio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ En la clase base, este método establece la variable miembro [**CBasePin:: m \_ 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

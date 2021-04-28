@@ -1,5 +1,5 @@
 ---
-description: Los atributos se pueden agregar a una solicitud de certificado para proporcionar a una entidad de certificación (CA) información adicional que puede utilizar al crear y emitir un certificado.
+description: 'Atributos (API de inscripción de certificados): se pueden agregar atributos a una solicitud de certificado para proporcionar una entidad de certificación (CA) con información adicional que puede usar al crear y emitir un certificado.'
 ms.assetid: 6116e61e-3ec5-4992-90ab-e3c7ced291b6
 title: Atributos (API de inscripción de certificados)
 ms.topic: reference
@@ -13,21 +13,21 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e7a00c30be8bacf5593d78e21fb420c8a899dc7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93414156c7fa6e46fe80995d8d01eadc28796ec2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811263"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118433"
 ---
 # <a name="attributes-certificate-enrollment-api"></a>Atributos (API de inscripción de certificados)
 
-Los atributos se pueden agregar a una solicitud de certificado para proporcionar a una entidad de certificación (CA) información adicional que puede utilizar al crear y emitir un certificado. Cada atributo es una estructura de [*notación de sintaxis abstracta*](/windows/desktop/SecGloss/a-gly) (ASN. 1) codificada en [*reglas de codificación distinguida*](/windows/desktop/SecGloss/d-gly) (der) que contiene un identificador de objeto (OID) y cero o más valores. Los atributos se definen mediante interfaces que se incluyen con la API de inscripción de certificados. En los temas siguientes se describen los atributos con más detalle:
+Los atributos se pueden agregar a una solicitud de certificado para proporcionar una entidad de certificación (CA) con información adicional que puede usar al crear y emitir un certificado. Cada atributo es una [*estructura*](/windows/desktop/SecGloss/d-gly) de notación [](/windows/desktop/SecGloss/a-gly) de sintaxis abstracta (ASN.1) codificada por reglas de codificación distinguida (DER) que contiene un identificador de objeto (OID) y cero o más valores. Los atributos se definen mediante interfaces incluidas con la API de inscripción de certificados. En los temas siguientes se tratan los atributos con más detalle:
 
 -   [Atributos compatibles](supported-attributes.md)
--   [Arquitectura de atributo](attribute-architecture.md)
--   [\#Atributos PKCS 7](pkcs--7-attributes.md)
--   [\#Atributos PKCS 10](pkcs--10-attributes.md)
+-   [Arquitectura de atributos](attribute-architecture.md)
+-   [Atributos PKCS \# 7](pkcs--7-attributes.md)
+-   [Atributos PKCS \# 10](pkcs--10-attributes.md)
 -   [Atributos de CMC](cmc-attributes.md)
 
  

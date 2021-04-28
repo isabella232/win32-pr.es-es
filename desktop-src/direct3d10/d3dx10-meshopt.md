@@ -1,7 +1,7 @@
 ---
-description: Especifica el tipo de optimización de malla que se va a realizar.
+description: 'D3DX10_MESHOPT enumeración: especifica el tipo de optimización de malla que se va a realizar.'
 ms.assetid: 20d1da8c-8c3d-4045-9a37-d534a8682716
-title: Enumeración D3DX10_MESHOPT (D3DX10Mesh. h)
+title: D3DX10_MESHOPT enumeración (D3DX10Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: c8ccb13da1549b7e2eeeb67ebf7899c2187be363
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7b3085cf9970f2c1f6fe3748cc4db8f4fb2b2a78
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362711"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105453"
 ---
-# <a name="d3dx10_meshopt-enumeration"></a>\_Enumeración de D3DX10 MESHOPT
+# <a name="d3dx10_meshopt-enumeration"></a>Enumeración D3DX10 \_ MESHOPT
 
 Especifica el tipo de optimización de malla que se va a realizar.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,60 +45,60 @@ typedef enum D3DX10_MESHOPT {
 
 <dl> <dt>
 
-<span id="D3DX10_MESHOPT_COMPACT"></span><span id="d3dx10_meshopt_compact"></span>**D3DX10 \_ MESHOPT \_ Compact**
+<span id="D3DX10_MESHOPT_COMPACT"></span><span id="d3dx10_meshopt_compact"></span>**D3DX10 \_ MESHOPT \_ COMPACT**
 </dt> <dd>
 
-Reordena las caras para quitar los vértices y caras sin usar.
+Reordena las caras para quitar los vértices y las caras que no se usan.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_ATTR_SORT"></span><span id="d3dx10_meshopt_attr_sort"></span>**D3DX10 \_ MESHOPT \_ ATTR \_ Sort**
+<span id="D3DX10_MESHOPT_ATTR_SORT"></span><span id="d3dx10_meshopt_attr_sort"></span>**D3DX10 \_ MESHOPT \_ ATTR \_ SORT**
 </dt> <dd>
 
-Reordena las caras para optimizar menos cambios de estado de agrupación de atributos y rendimiento de DrawSubset mejorado.
+Reordena las caras para optimizar para menos cambios de estado de agrupación de atributos y mejorar el rendimiento de DrawSubset.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_VERTEX_CACHE"></span><span id="d3dx10_meshopt_vertex_cache"></span>**D3DX10 \_ MESHOPT \_ Vertex \_ Cache**
+<span id="D3DX10_MESHOPT_VERTEX_CACHE"></span><span id="d3dx10_meshopt_vertex_cache"></span>**CACHÉ DE VÉRTICES \_ DE MESHOPT D3DX10 \_ \_**
 </dt> <dd>
 
-Reordena las caras para aumentar la tasa de aciertos de caché de los vértices.
+Reordena las caras para aumentar la tasa de aciertos de caché de las cachés de vértices.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_STRIP_REORDER"></span><span id="d3dx10_meshopt_strip_reorder"></span>**Reordenación de D3DX10 \_ MESHOPT \_ \_**
+<span id="D3DX10_MESHOPT_STRIP_REORDER"></span><span id="d3dx10_meshopt_strip_reorder"></span>**REORDENACIÓN DE \_ BANDAS DE MESHOPT D3DX10 \_ \_**
 </dt> <dd>
 
 Reordena las caras para maximizar la longitud de los triángulos adyacentes.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_IGNORE_VERTS"></span><span id="d3dx10_meshopt_ignore_verts"></span>**D3DX10 \_ MESHOPT \_ Ignore \_ VERTS**
+<span id="D3DX10_MESHOPT_IGNORE_VERTS"></span><span id="d3dx10_meshopt_ignore_verts"></span>**D3DX10 \_ MESHOPT \_ OMITIR \_ VERTS**
 </dt> <dd>
 
-Optimizar solo las caras; no optimice los vértices.
+Optimice solo las caras; no optimice los vértices.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_DO_NOT_SPLIT"></span><span id="d3dx10_meshopt_do_not_split"></span>**D3DX10 \_ MESHOPT \_ \_ no se \_ divide**
+<span id="D3DX10_MESHOPT_DO_NOT_SPLIT"></span><span id="d3dx10_meshopt_do_not_split"></span>**D3DX10 \_ MESHOPT \_ NO SE \_ \_ DIVIDE**
 </dt> <dd>
 
-Mientras se ordena el atributo, no divida los vértices que se comparten entre los grupos de atributos.
+Durante la ordenación de atributos, no divida los vértices que se comparten entre grupos de atributos.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_DEVICE_INDEPENDENT"></span><span id="d3dx10_meshopt_device_independent"></span>**\_Independiente del \_ dispositivo \_ MESHOPT de D3DX10**
+<span id="D3DX10_MESHOPT_DEVICE_INDEPENDENT"></span><span id="d3dx10_meshopt_device_independent"></span>**D3DX10 \_ MESHOPT \_ DEVICE \_ INDEPENDENT**
 </dt> <dd>
 
-Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en el hardware heredado.
+Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en hardware heredado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las \_ marcas de optimización D3DXMESHOPT STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE se excluyen mutuamente.
+Las marcas de optimización D3DXMESHOPT \_ STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE son mutuamente excluyentes.
 
-La marca D3DXMESHOPT SHAREVB se ha \_ quitado de esta enumeración. \_ \_ En su lugar, use D3DXMESH VB Share, en D3DXMESH.
+La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH \_ VB SHARE en su \_ lugar, en D3DXMESH.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,15 +106,15 @@ La marca D3DXMESHOPT SHAREVB se ha \_ quitado de esta enumeración. \_ \_ En su 
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](d3d10-graphics-reference-d3dx10-enums.md)
+[Enumeraciones D3DX](d3d10-graphics-reference-d3dx10-enums.md)
 </dt> </dl>
 
  

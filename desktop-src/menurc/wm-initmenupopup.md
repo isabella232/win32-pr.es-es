@@ -1,6 +1,6 @@
 ---
-title: Mensaje de WM_INITMENUPOPUP (Winuser. h)
-description: Se envía cuando un menú desplegable o un submenú está a punto de activarse. Esto permite que una aplicación modifique el menú antes de que se muestre, sin cambiar todo el menú.
+title: WM_INITMENUPOPUP mensaje (Winuser.h)
+description: 'WM_INITMENUPOPUP mensaje: se envía cuando un menú desplegable o submenú está a punto de activarse. Esto permite a una aplicación modificar el menú antes de que se muestre, sin cambiar todo el menú.'
 ms.assetid: 08ae1a78-5e68-488c-9b77-ee42044ca3ab
 keywords:
 - WM_INITMENUPOPUP menús de mensajes y otros recursos
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e02bf0f9b8e196c27990cc1bc839daed4c92f8c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d850547d57596dd36b36b941d1782c2aee1f5b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079088"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092523"
 ---
-# <a name="wm_initmenupopup-message"></a>Mensaje de INITMENUPOPUP de WM \_
+# <a name="wm_initmenupopup-message"></a>Mensaje \_ WM INITMENUPOPUP
 
-Se envía cuando un menú desplegable o un submenú está a punto de activarse. Esto permite que una aplicación modifique el menú antes de que se muestre, sin cambiar todo el menú.
+Se envía cuando un menú desplegable o submenú está a punto de activarse. Esto permite a una aplicación modificar el menú antes de que se muestre, sin cambiar todo el menú.
 
 
 ```C++
@@ -46,9 +46,9 @@ Identificador del menú desplegable o submenú.
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior especifica la posición relativa de base cero del elemento de menú que abre el menú desplegable o submenú.
+La palabra de orden bajo especifica la posición relativa de base cero del elemento de menú que abre el menú desplegable o submenú.
 
-La palabra de orden superior indica si el menú desplegable es el menú ventana. Si el menú es el menú ventana, este parámetro es **true**; de lo contrario, es **false**.
+La palabra de orden superior indica si el menú desplegable es el menú de la ventana. Si el menú es el menú de la ventana, este parámetro es **TRUE**; de lo contrario, es **FALSE.**
 
 </dd> </dl>
 
@@ -60,15 +60,15 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -81,10 +81,10 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**INITMENU de WM \_**](wm-initmenu.md)
+[**WM \_ INITMENU**](wm-initmenu.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Aceleradores de teclado](keyboard-accelerators.md)

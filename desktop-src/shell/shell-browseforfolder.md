@@ -1,6 +1,6 @@
 ---
-description: Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto de carpeta de la carpeta seleccionada.
-title: Método Shell. BrowseForFolder (Shldisp. h)
+description: 'Método Shell.BrowseForFolder: crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto Folder de la carpeta seleccionada.'
+title: Método Shell.BrowseForFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4cc44e5a-3578-448b-9b19-1b71e1ae2cb9
-ms.openlocfilehash: 7e14dffbfb9ab3e18bd4d8e11ffaf4768ad53131
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5ec05ab09c7592e976085c230a2b359091fb819
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082894"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104373"
 ---
-# <a name="shellbrowseforfolder-method"></a>Shell. BrowseForFolder (método)
+# <a name="shellbrowseforfolder-method"></a>Método Shell.BrowseForFolder
 
-Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto de [**carpeta**](folder.md) de la carpeta seleccionada.
+Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto Folder de [**la carpeta**](folder.md) seleccionada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,39 +55,39 @@ Shell.BrowseForFolder( _
 
 <dl> <dt>
 
-*HWnd* \[ de\]
+*Hwnd* \[ En\]
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
 Identificador de la ventana primaria del cuadro de diálogo. Este valor puede ser cero.
 
 </dd> <dt>
 
-*sTitle* \[ de\]
+*sTitle* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valor de **cadena** que representa el título que se muestra en el cuadro de diálogo **examinar** .
+Valor **string** que representa el título que se muestra dentro del **cuadro de** diálogo Examinar.
 
 </dd> <dt>
 
-*iOptions* \[ de\]
+*iOptions* \[ En\]
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
-Valor **entero** que contiene las opciones para el método. Puede ser cero o una combinación de los valores enumerados en el miembro **ulFlags** de la estructura [**BROWSEINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) .
+Valor **Entero** que contiene las opciones para el método . Puede ser cero o una combinación de los valores enumerados en el **miembro ulFlags** de la [**estructura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
 
 </dd> <dt>
 
 *vRootFolder* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Carpeta raíz que se va a utilizar en el cuadro de diálogo. El usuario no puede examinar más arriba en el árbol que esta carpeta. Si no se especifica este valor, la carpeta raíz usada en el cuadro de diálogo es el escritorio. Este valor puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En estos casos, se deben usar los valores numéricos en su lugar.
+Carpeta raíz que se usará en el cuadro de diálogo. El usuario no puede examinar más arriba en el árbol que esta carpeta. Si no se especifica este valor, la carpeta raíz que se usa en el cuadro de diálogo es el escritorio. Este valor puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 </dd> </dl>
 
@@ -95,21 +95,21 @@ Carpeta raíz que se va a utilizar en el cuadro de diálogo. El usuario no puede
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **carpeta \* \***
+Tipo: **\* \* FOLDER**
 
-Referencia de objeto al objeto de [**carpeta**](folder.md) de la carpeta seleccionada.
+Referencia de objeto al objeto Folder de [**la carpeta**](folder.md) seleccionada.
 
 ### <a name="vb"></a>VB
 
-Tipo: **carpeta \* \***
+Tipo: **\* \* FOLDER**
 
-Referencia de objeto al objeto de [**carpeta**](folder.md) de la carpeta seleccionada.
+Referencia de objeto al objeto Folder de [**la carpeta**](folder.md) seleccionada.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **BrowseForFolder** para mostrar una ventana de exploración titulada "example" con la raíz de la carpeta Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa BrowseForFolder para** mostrar una ventana de exploración titulada "Ejemplo" con raíz en la carpeta Windows. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -131,7 +131,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -181,13 +181,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

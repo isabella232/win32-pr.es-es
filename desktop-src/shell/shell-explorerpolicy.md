@@ -1,7 +1,7 @@
 ---
-description: Obtiene el valor de una directiva especificada de Windows Internet Explorer.
+description: 'Método Shell.ExplorerPolicy: obtiene el valor de una directiva de Internet Explorer Windows especificada.'
 ms.assetid: 47E17F6A-ED43-44cd-AF77-A6E49865E1B5
-title: Método Shell. ExplorerPolicy (Shldisp. h)
+title: Método Shell.ExplorerPolicy (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: fea5192990b8c19c8ddfe8ffad6efe21b98625c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 765e1dc46edbe5a27292c5d8ff940e29b269f8dc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986091"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083703"
 ---
-# <a name="shellexplorerpolicy-method"></a>Shell. ExplorerPolicy (método)
+# <a name="shellexplorerpolicy-method"></a>Método Shell.ExplorerPolicy
 
-Obtiene el valor de una directiva especificada de Windows Internet Explorer.
+Obtiene el valor de una directiva de windows Internet Explorer especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,12 +49,12 @@ Shell.ExplorerPolicy( _
 
 <dl> <dt>
 
-*bstrPolicyName* \[ de\]
+*bstrPolicyName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que especifica el nombre de la Directiva.
+Cadena **que** especifica el nombre de la directiva.
 
 </dd> </dl>
 
@@ -62,27 +62,27 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Valor asociado al nombre de la Directiva especificada.
+Valor asociado al nombre de directiva especificado.
 
 ### <a name="vb"></a>VB
 
-Tipo: _*variante \**_
+Tipo: **\* Variant**
 
-Valor asociado al nombre de la Directiva especificada.
+Valor asociado al nombre de directiva especificado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los administradores de red pueden controlar y administrar el entorno informático de sus usuarios mediante la configuración de directivas.
+Los administradores de red pueden controlar y administrar el entorno informático de sus usuarios estableciendo directivas.
 
-El nombre de valor especificado debe estar dentro de la subclave _ *HKEY \_ Current \_ User **\\** software **\\** Microsoft **\\** Windows **\\** CurrentVersion **\\** Policies **\\** Explorer**. Si el nombre del valor no existe, el método devuelve **null**.
+El nombre de valor especificado debe estar dentro de la subclave **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Si el nombre del valor no existe, el método devuelve **null**.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso correcto de **ExplorerPolicy** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso adecuado de **ExplorerPolicy** para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -100,7 +100,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -140,13 +140,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 

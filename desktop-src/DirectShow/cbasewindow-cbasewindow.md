@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBaseWindow.CBaseWindow: método constructor.'
 ms.assetid: 9f0b91c4-0364-4c73-b97f-86703ca3ef74
-title: Constructor CBaseWindow. CBaseWindow (Winutil. h)
+title: Constructor CBaseWindow.CBaseWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a1741f8596210afac676a7e81f57b46e18fbba9b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 05205750810294076bf005d0e5b73fda6b2143d5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660236"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095823"
 ---
-# <a name="cbasewindowcbasewindow-constructor"></a>Constructor CBaseWindow. CBaseWindow
+# <a name="cbasewindowcbasewindow-constructor"></a>Constructor CBaseWindow.CBaseWindow
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,15 +53,15 @@ Valor booleano que especifica si se debe recuperar el contexto del dispositivo.
 *bPostToDestroy* 
 </dt> <dd>
 
-Valor booleano que especifica la variable miembro [**CBaseWindow:: m \_ bDoPostToDestroy**](cbasewindow-m-bdoposttodestroy.md) .
+Valor booleano que especifica la variable [**miembro CBaseWindow::m \_ bDoPostToDestroy.**](cbasewindow-m-bdoposttodestroy.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de crear el objeto, llame al método [**CBaseWindow::P reparewindow**](cbasewindow-preparewindow.md) para crear la ventana. **PrepareWindow** es un método virtual. Llama a [**CBaseWindow:: InitialiseWindow**](cbasewindow-initialisewindow.md), también a un método virtual. Estos métodos se separan del constructor para que las clases derivadas puedan invalidarlos, si es necesario.
+Después de crear el objeto , llame al [**método CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) para crear la ventana. **PrepareWindow** es un método virtual. Llama a [**CBaseWindow::InitialiseWindow,**](cbasewindow-initialisewindow.md)también un método virtual. Estos métodos están separados del constructor para que las clases derivadas puedan invalidarlos, si es necesario.
 
-Si el valor del parámetro *bDoGetDC* es **true**, el `CBaseWindow` objeto recupera un identificador para el contexto de dispositivo (DC) de la ventana y lo almacena en la variable miembro [**CBaseWindow:: m \_ HDC**](cbasewindow-m-hdc.md) . El objeto también crea un controlador de dominio de memoria compatible, que almacena en la variable miembro [**CBaseWindow:: m \_ MemoryDC**](cbasewindow-m-memorydc.md) . Estas acciones se producen en el método **InitialiseWindow** .
+Si el valor del *parámetro bDoGetDC* es **TRUE,** el objeto recupera un identificador en el contexto de dispositivo (DC) de la ventana y lo almacena en la variable miembro `CBaseWindow` [**\_ hdc CBaseWindow::m.**](cbasewindow-m-hdc.md) El objeto también crea un controlador de dominio de memoria compatible, que almacena en la variable miembro [**CBaseWindow::m \_ MemoryDC.**](cbasewindow-m-memorydc.md) Estas acciones se producen en el **método InitialiseWindow.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,16 +69,16 @@ Si el valor del parámetro *bDoGetDC* es **true**, el `CBaseWindow` objeto recup
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

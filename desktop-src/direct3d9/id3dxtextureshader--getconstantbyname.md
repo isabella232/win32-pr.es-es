@@ -1,7 +1,7 @@
 ---
-description: Obtiene una constante buscando su nombre.
+description: 'Método ID3DXTextureShader::GetConstantByName: obtiene una constante buscando su nombre.'
 ms.assetid: 0c57f6ce-ea81-4b34-9251-c385bfe6ebe7
-title: 'ID3DXTextureShader:: GetConstantByName (método) (D3DX9Shader. h)'
+title: Método ID3DXTextureShader::GetConstantByName (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a285da2fa3179f91d34eda8d9ce1f622c86df15b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 825aca3f3227a340952092985f4730018fe316e5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708031"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117663"
 ---
-# <a name="id3dxtextureshadergetconstantbyname-method"></a>ID3DXTextureShader:: GetConstantByName (método)
+# <a name="id3dxtextureshadergetconstantbyname-method"></a>Método ID3DXTextureShader::GetConstantByName
 
-Obtiene una constante buscando su nombre.
+Obtiene una constante mediante la búsqueda de su nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetConstantByName(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-[Identificador](handles.md) de la estructura de datos primaria. Si la constante es un parámetro de nivel superior (no hay ninguna estructura de datos primaria), use **null**.
+Identificador [de](handles.md) la estructura de datos primaria. Si la constante es un parámetro de nivel superior (no hay ninguna estructura de datos primaria), use **NULL.**
 
 </dd> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -71,12 +71,12 @@ Devuelve un identificador único a la constante.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

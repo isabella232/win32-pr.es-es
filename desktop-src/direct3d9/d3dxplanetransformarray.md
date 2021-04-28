@@ -1,7 +1,7 @@
 ---
-description: Transforma una matriz de planos en una matriz. Los vectores que describen cada plano se deben normalizar.
+description: 'Función D3DXPlaneTransformArray (D3dx9math.h): transforma una matriz de planos por una matriz. Los vectores que describen cada plano deben normalizarse.'
 ms.assetid: e82e830b-efbb-4bdc-b370-7bfa4326a669
-title: Función D3DXPlaneTransformArray (D3dx9math. h)
+title: Función D3DXPlaneTransformArray (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a9a213b17aca9999ef0028fdceb4bb4321d47660
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bdbc845eda69d22f6e7097131f71b074a9b53985
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678767"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094133"
 ---
-# <a name="d3dxplanetransformarray-function-d3dx9mathh"></a>Función D3DXPlaneTransformArray (D3dx9math. h)
+# <a name="d3dxplanetransformarray-function-d3dx9mathh"></a>Función D3DXPlaneTransformArray (D3dx9math.h)
 
-Transforma una matriz de planos en una matriz. Los vectores que describen cada plano se deben normalizar.
+Transforma una matriz de planos por una matriz. Los vectores que describen cada plano deben normalizarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,52 +50,52 @@ D3DXPLANE* D3DXPlaneTransformArray(
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntero a la estructura [**D3DXPLANE**](d3dxplane.md) que contiene el plano transformado resultante. Vea el ejemplo.
+Puntero a la [**estructura D3DXPLANE**](d3dxplane.md) que contiene el plano transformado resultante. Vea Ejemplo.
 
 </dd> <dt>
 
-Retrasos  \[ enuncia\]
+*OutStride* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso de cada plano transformado.
+El paso de cada plano transformado.
 
 </dd> <dt>
 
-*PP* \[ de\]
+*pP* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntero a la estructura [**D3DXPLANE**](d3dxplane.md) de entrada, que contiene la matriz de los planos que se van a transformar. El vector (a, b, c) que describe el plano debe normalizarse antes de que se llame a esta función. Vea el ejemplo.
+Puntero a la estructura [**D3DXPLANE de**](d3dxplane.md) entrada, que contiene la matriz de planos que se va a transformar. El vector (a,b,c) que describe el plano debe normalizarse antes de llamar a esta función. Vea Ejemplo.
 
 </dd> <dt>
 
-*PStride* \[ de\]
+*PStride* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso de cada plano no transformado.
+El paso de cada plano no transformado.
 
 </dd> <dt>
 
-*p. m* \[ de\]
+*pM* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) de origen, que contiene la transposición inversa de los valores de transformación.
+Puntero a la estructura [**D3DXMATRIX de**](d3dxmatrix.md) origen, que contiene la transpuesta inversa de los valores de transformación.
 
 </dd> <dt>
 
-*n* \[ in\]
+*n* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de planos que se van a transformar.
+Número de planos que se transformarán.
 
 </dd> </dl>
 
@@ -103,9 +103,9 @@ Número de planos que se van a transformar.
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntero a una estructura [**D3DXPLANE**](d3dxplane.md) que representa el plano transformado. Este es el mismo valor que se devuelve en el parámetro *pOut* para que esta función se pueda usar como parámetro de otra función.
+Puntero a una [**estructura D3DXPLANE,**](d3dxplane.md) que representa el plano transformado. Este es el mismo valor devuelto en el *parámetro pOut* para que esta función se pueda usar como parámetro para otra función.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En este ejemplo se transforma un plano aplicando una escala no uniforme.
 
@@ -131,9 +131,9 @@ D3DXPlaneTransformArray( &planeNew, sizeof (D3DXPLANE), &plane,
 
 
 
-AX + por + cz + DW = 0 describe un plano. El primer plano se crea con (a, b, c, d) = (0, 1, 1, 0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a, b, c, d) = (0, 0.353 f, 0.235 f, 0), que muestra el nuevo plano que se va a describir mediante 0.353 y + 0.235 z = 0.
+Un plano se describe mediante ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
 
-El parámetro *PM* contiene la transposición inversa de la matriz de transformación. Este método requiere la TRANSPOSE inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
+El parámetro *pM contiene* la transpuesta inversa de la matriz de transformación. Este método requiere la transponer inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -141,12 +141,12 @@ El parámetro *PM* contiene la transposición inversa de la matriz de transforma
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

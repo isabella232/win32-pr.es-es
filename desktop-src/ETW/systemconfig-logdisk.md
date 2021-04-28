@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de disco lógico.
+description: 'SystemConfig_LogDisk clase : esta clase es la clase de tipo de evento para los eventos de configuración de disco lógico.'
 ms.assetid: a11a8245-8ace-4061-b6c7-938002d8b9fc
-title: SystemConfig_LogDisk (clase)
+title: SystemConfig_LogDisk clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,18 +28,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d3bff1cf526dfb7bf1ddd36fcb887e8a4b837be4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d7ca8dc3f632e88c250715292a27e18ff36e3af
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984454"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106113"
 ---
-# <a name="systemconfig_logdisk-class"></a>SystemConfig \_ LogDisk (clase)
+# <a name="systemconfig_logdisk-class"></a>Clase SystemConfig \_ LogDisk
 
 Esta clase es la clase de tipo de evento para los eventos de configuración de disco lógico.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,20 +68,20 @@ class SystemConfig_LogDisk : SystemConfig
 
 ## <a name="members"></a>Miembros
 
-La clase **SystemConfig \_ LogDisk** tiene estos tipos de miembros:
+La **clase SystemConfig \_ LogDisk** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SystemConfig \_ LogDisk** tiene estas propiedades.
+La **clase SystemConfig \_ LogDisk** tiene estas propiedades.
 
 <dl> <dt>
 
 **BytesPerSector**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -90,14 +90,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (10)
 </dt> </dl>
 
-Número de bytes de cada sector para la unidad de disco físico.
+Número de bytes en cada sector para la unidad de disco físico.
 
 </dd> <dt>
 
-**Númerodedisco corresponde**
+**DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -113,13 +113,13 @@ Número de índice del disco que contiene esta partición.
 **DriveLetterString**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (6), **Max** (4), **Format ("s")**
+Calificadores: **WmiDataId** (6), **Max** (4), **Format("s")**
 </dt> </dl>
 
 Letra de unidad del disco con el formato " <letter> :".
@@ -129,7 +129,7 @@ Letra de unidad del disco con el formato " <letter> :".
 **DriveType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -142,9 +142,9 @@ Tipo de unidad de disco. Los valores posibles son:
 
 
 
-| Value                                                                        | Significado                                         |
+| Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partición<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volumen<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partición extendida en varios discos<br/> |
 
@@ -154,7 +154,7 @@ Tipo de unidad de disco. Los valores posibles son:
 
 </dd> <dt>
 
-**Systems**
+**Filesystem**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **char16**
@@ -163,7 +163,7 @@ Tipo de datos: **char16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (14), **Max** (16), **Format ("s")**
+Calificadores: **WmiDataId** (14), **Max** (16), **Format("s")**
 </dt> </dl>
 
 Sistema de archivos en el disco lógico, por ejemplo, NTFS.
@@ -189,7 +189,7 @@ Número de clústeres libres en el volumen especificado.
 **Pad1**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -205,7 +205,7 @@ No se utiliza.
 **Pad2**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -221,7 +221,7 @@ No se utiliza.
 **Pad3**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -237,7 +237,7 @@ No se utiliza.
 **PartitionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -253,7 +253,7 @@ Número de índice de la partición.
 **PartitionSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -269,7 +269,7 @@ Tamaño total de la partición, en bytes.
 **SectorsPerCluster**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -285,7 +285,7 @@ Número de sectores del volumen.
 **Tamaño**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -301,7 +301,7 @@ Tamaño de la unidad de disco, en bytes.
 **StartOffset**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -333,7 +333,7 @@ Número de clústeres usados y libres en el volumen.
 **VolumeExt**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -350,14 +350,14 @@ Reservado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

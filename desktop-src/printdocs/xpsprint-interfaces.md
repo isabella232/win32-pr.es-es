@@ -1,19 +1,19 @@
 ---
-description: .
+description: Interfaces de LA API de impresión XPS
 ms.assetid: f575109e-e9c4-4db5-945c-7c96b6b5d613
-title: Interfaces de la API de impresión XPS
+title: Interfaces de LA API de impresión XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 828e999417354678d77ad1de8c29beb5956f7762
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47cd01c169c82a9e3210f281ec6c44fa206c40b5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812560"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105193"
 ---
-# <a name="xps-print-api-interfaces"></a>Interfaces de la API de impresión XPS
+# <a name="xps-print-api-interfaces"></a>Interfaces de LA API de impresión XPS
 
-\[Las interfaces descritas en esta sección están desusadas. En su lugar, las aplicaciones cliente deben usar la [API Print Document Package](./tailored-app-printing-api.md) .\]
+\[Las interfaces descritas en esta sección están en desuso. Las aplicaciones cliente deben usar [la API Print Document Package en](./tailored-app-printing-api.md) su lugar.\]
 
 \[IXpsPrintJob no se admite y puede modificarse o no estar disponible en el futuro. \]
 
@@ -26,7 +26,7 @@ ms.locfileid: "103812560"
 | Interfaz                                                   | Descripción                                                                               |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [**IXpsPrintJob**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjob)<br/>             | Proporciona acceso a un trabajo de impresión que está actualmente en curso.<br/>                  |
-| [**IXpsPrintJobStream**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjobstream)<br/> | Una interfaz de secuencia de solo escritura en la que una aplicación escribe datos del trabajo de impresión.<br/> |
+| [**IXpsPrintJobStream**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjobstream)<br/> | Interfaz de secuencia de solo escritura en la que una aplicación escribe datos del trabajo de impresión.<br/> |
 
 
 

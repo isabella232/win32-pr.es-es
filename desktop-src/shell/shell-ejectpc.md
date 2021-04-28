@@ -1,7 +1,7 @@
 ---
-description: Expulsa el equipo de la estación de acoplamiento. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar expulsar equipo si el equipo es compatible con este comando.
+description: 'Método Shell.DisposePC: expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en menú Inicio y seleccionar Expulsión de PC, si el equipo admite este comando.'
 ms.assetid: eaba3dce-8fea-453f-90c2-4a9b5cb05ecc
-title: Método Shell. EjectPC (Shldisp. h)
+title: Método Shell.DisposePC (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 355d75b2ffaca9c9f90e66fbc535333a84bfa45d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ec08aaa82d2f752fa06537434adede86b9d5a3a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985614"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104353"
 ---
-# <a name="shellejectpc-method"></a>Shell. EjectPC (método)
+# <a name="shellejectpc-method"></a>Método Shell.DisposePC
 
-Expulsa el equipo de la estación de acoplamiento. Esto es lo mismo que hacer clic en el menú **Inicio** y seleccionar **expulsar equipo** si el equipo es compatible con este comando.
+Expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el **menú** Inicio y seleccionar **Expulsar PC**, si el equipo admite este comando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,9 +57,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra **EjectPC** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra Desanudpc** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -113,13 +113,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

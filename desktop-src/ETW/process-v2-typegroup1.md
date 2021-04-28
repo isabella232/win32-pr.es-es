@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de proceso. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Process_V2_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos de proceso. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: ff5c1f64-2087-4238-81f9-6283f0f0e68a
-title: Process_V2_TypeGroup1 (clase)
+title: Process_V2_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 01da5a8254627d6378c9f99aa2ba36dc6714e6ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b587a07f33b066cfd7dbeebc44d7277b33c6bee8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985863"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106313"
 ---
-# <a name="process_v2_typegroup1-class"></a>\_ \_ Clase TypeGroup1 de proceso V2
+# <a name="process_v2_typegroup1-class"></a>Clase \_ \_ TypeGroup1 de Process V2
 
 Esta clase es la clase de tipo de evento para los eventos de proceso.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ La **clase \_ \_ TypeGroup1 de Process V2** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 de proceso V2** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 de Process V2** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -71,7 +71,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(8), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Línea de comandos completa del proceso.
@@ -87,7 +87,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
 Estado de salida del proceso detenido.
@@ -103,7 +103,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), StringTermination ("NullTerminated")
+Calificadores: WmiDataId(7), StringTermination("NullTerminated")
 </dt> </dl>
 
 Ruta de acceso al archivo ejecutable del proceso.
@@ -113,64 +113,64 @@ Ruta de acceso al archivo ejecutable del proceso.
 ParentId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), Format ("x")
+Calificadores: WmiDataId(3), Format("x")
 </dt> </dl>
 
-Identificador único del proceso que crea este proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso para la duración de ese proceso. Es posible que el proceso identificado por ParentProcessId termine, de modo que ParentProcessId no puede hacer referencia a un proceso en ejecución. También es posible que ParentProcessId haga referencia incorrectamente a un proceso que reutiliza un identificador de proceso.
+Identificador único del proceso que crea este proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso durante la vigencia de ese proceso. Es posible que finalice el proceso identificado por ParentProcessId, por lo que ParentProcessId puede no hacer referencia a un proceso en ejecución. También es posible que ParentProcessId se refiere incorrectamente a un proceso que reutiliza un identificador de proceso.
 
 </dd> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), Format ("x")
+Calificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
-Identificador de proceso global que puede usar para identificar un proceso. El valor es válido desde el momento en que se crea un proceso hasta que se termina.
+Identificador de proceso global que puede usar para identificar un proceso. El valor es válido desde el momento en que se crea un proceso hasta que finaliza.
 
 </dd> <dt>
 
 SessionId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
-Identificador único que genera un sistema operativo cuando crea una nueva sesión. Una sesión abarca un período de tiempo desde el inicio de sesión hasta que se cierra la sesión desde un sistema específico.
+Identificador único que genera un sistema operativo cuando crea una nueva sesión. Una sesión abarca un período de tiempo desde el inicio de sesión hasta la cierre de sesión de un sistema específico.
 
 </dd> <dt>
 
 UniqueProcessKey
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-La dirección del objeto de proceso en el kernel.
+Dirección del objeto de proceso en el kernel.
 
 </dd> <dt>
 
@@ -183,14 +183,14 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), extensión ("Sid")
+Calificadores: WmiDataId(6), Extension("Sid")
 </dt> </dl>
 
-Identificador de seguridad (SID) del contexto de usuario en el que se produce el evento.
+Identificador de seguridad (SID) para el contexto de usuario en el que se produce el evento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los tipos de eventos DCStart y DCEnd enumeran el proceso que se está ejecutando actualmente, incluidos los procesos inactivos y del sistema, en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.
 
@@ -198,14 +198,14 @@ Los tipos de eventos DCStart y DCEnd enumeran el proceso que se está ejecutando
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

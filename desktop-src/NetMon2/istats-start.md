@@ -1,7 +1,7 @@
 ---
-description: El método start inicia una captura.
+description: 'Método IStats::Start: el método Start inicia una captura.'
 ms.assetid: d4086e30-e5ed-4f29-90f0-d65125d9af6d
-title: 'IStas:: Start (método) (Netmon. h)'
+title: Método IStats::Start (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d58821ecc06e0a25d6a260bb2ba9393162dcdca8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64f02529ba10d98092eb30a1bcc350d5c72049fc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908183"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094553"
 ---
-# <a name="istatsstart-method"></a>IStas:: Start (método)
+# <a name="istatsstart-method"></a>IStats::Start (método)
 
-El método **Start** inicia una captura.
+El **método Start** inicia una captura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,29 +40,29 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                            | Descripción                                                                                                                                            |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**captura de NMERR en \_ \_ pausa**</dt> </dl>  | La captura se ha pausado y debe detenerse antes de que se pueda reiniciar. Llame al método [istas:: Stop](istats-stop.md) para detener la captura.<br/> |
-| <dl> <dt>**captura de NMERR \_**</dt> </dl>        | La captura ya se ha iniciado.<br/>                                                                                                            |
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl>   | NPP no está conectado a la red. Llame al método [istas:: Connect](istats-connect.md) para conectar el NPP a la red.<br/>           |
-| <dl> <dt>**NMERR \_ no \_ solo estadísticas \_**</dt> </dl> | NPP está conectado a la red, pero no con el método [istas:: Connect](istats-connect.md) .<br/>                                          |
+| <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl>  | La captura se ha detenido y debe detenerse antes de poder reiniciarse. Llame al [método IStats::Stop](istats-stop.md) para detener la captura.<br/> |
+| <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>        | La captura ya se ha iniciado.<br/>                                                                                                            |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame al [método IStats::Connect](istats-connect.md) para conectar el NPP a la red.<br/>           |
+| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Connect.](istats-connect.md)<br/>                                          |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al reiniciar la captura mediante los métodos IStas:: Start y [istas:: Stop](istats-stop.md) , debe llamar al método [istas:: configure](istats-configure.md) para volver a configurar la conexión cada vez que llame a los ISTA:: Start para reiniciar la captura de datos.
+Al reiniciar la captura mediante los métodos IStats::Start e [IStats::Stop,](istats-stop.md) debe llamar al método [IStats::Configure](istats-configure.md) para volver a configurar la conexión cada vez que llame a IStats::Start para reiniciar la captura de datos.
 
 > [!Note]  
-> También puede iniciar y detener la captura mediante los [istas::P ause](istats-pause.md) y [istas:: resume](istats-resume.md) (métodos). Cuando se usan estos métodos, los datos capturados se almacenan en el mismo archivo de captura.
+> También puede iniciar y detener la captura mediante los [métodos IStats::P ause](istats-pause.md) [e IStats::Resume.](istats-resume.md) Cuando se usan estos métodos, los datos capturados se almacenan en el mismo archivo de captura.
 
  
 
@@ -70,35 +70,35 @@ Al reiniciar la captura mediante los métodos IStas:: Start y [istas:: Stop](ist
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[IStas](istats.md)
+[IStats](istats.md)
 </dt> <dt>
 
-[ISta:: configurar](istats-configure.md)
+[IStats::Configure](istats-configure.md)
 </dt> <dt>
 
-[ISta:: Connect](istats-connect.md)
+[IStats::Connect](istats-connect.md)
 </dt> <dt>
 
-[IStas::P ause](istats-pause.md)
+[IStats::P ause](istats-pause.md)
 </dt> <dt>
 
-[IStas:: resume](istats-resume.md)
+[IStats::Resume](istats-resume.md)
 </dt> <dt>
 
-[IStas:: Stop](istats-stop.md)
+[IStats::Stop](istats-stop.md)
 </dt> </dl>
 
  

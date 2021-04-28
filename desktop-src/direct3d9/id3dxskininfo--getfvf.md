@@ -1,7 +1,7 @@
 ---
-description: Obtiene el valor de vértice de función fijo.
+description: 'Método ID3DXSkinInfo::GetFVF: obtiene el valor fijo del vértice de la función.'
 ms.assetid: 9b80c4b9-2e5b-4965-99b9-ad6c459ef413
-title: 'ID3DXSkinInfo:: GetFVF (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::GetFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6d48cd9cea6efd6cb43e6da6877a7aaf42909c71
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3415f86f778fbb6fb3592927277e399584bc49a9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362413"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107163"
 ---
-# <a name="id3dxskininfogetfvf-method"></a>ID3DXSkinInfo:: GetFVF (método)
+# <a name="id3dxskininfogetfvf-method"></a>Método ID3DXSkinInfo::GetFVF
 
-Obtiene el valor de vértice de función fijo.
+Obtiene el valor fijo del vértice de la función.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Devuelve los códigos de formato de vértice flexible (FVF).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método puede devolver 0 si el formato de vértice no se puede asignar directamente a un código FVF. Esto ocurrirá en una malla creada a partir de una declaración de vértices que no tiene el mismo orden y los mismos elementos que los códigos de FVF.
+Este método puede devolver 0 si el formato de vértice no se puede asignar directamente a un código FVF. Esto ocurrirá para una malla creada a partir de una declaración de vértice que no tenga el mismo orden y elementos admitidos por los códigos FVF.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,12 +54,12 @@ Este método puede devolver 0 si el formato de vértice no se puede asignar dire
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

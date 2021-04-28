@@ -1,7 +1,7 @@
 ---
-description: Agrega un archivo a la lista de elementos usados más recientemente (MRU).
+description: 'Método IShellDispatch3.AddToRecent: agrega un archivo a la lista usada más recientemente (MRU).'
 ms.assetid: aa5aef31-7f3f-4cc4-949d-1484de243ef3
-title: Método IShellDispatch3. AddToRecent (Shldisp. h)
+title: Método IShellDispatch3.AddToRecent (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3f52e6b90b7be078cc8177e9c3fe3093ba5c681e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d31d05e9eef889d9018e4806cf4c882dba3060e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810952"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116933"
 ---
-# <a name="ishelldispatch3addtorecent-method"></a>IShellDispatch3. AddToRecent, método
+# <a name="ishelldispatch3addtorecent-method"></a>Método IShellDispatch3.AddToRecent
 
-Agrega un archivo a la lista de elementos usados más recientemente (MRU).
+Agrega un archivo a la lista de mru usada más recientemente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,23 +51,23 @@ IShellDispatch3.AddToRecent( _
 
 <dl> <dt>
 
-*varFile* \[ de\]
+*varFile* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-**Cadena** que contiene la ruta de acceso del archivo que se va a agregar a la lista de documentos usados recientemente.
+Cadena **que** contiene la ruta de acceso del archivo que se agregará a la lista de documentos usados recientemente.
 
-**Windows Vista**: establezca este parámetro en **null** para borrar la carpeta documentos recientes.
+**Windows Vista:** establezca este parámetro en **NULL para** borrar la carpeta de documentos recientes.
 
 </dd> <dt>
 
-*bstrCategory* \[ en, opcional\]
+*bstrCategory* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el nombre de la categoría en la que se va a colocar el archivo.
+Cadena **que** contiene el nombre de la categoría en la que se va a colocar el archivo.
 
 </dd> </dl>
 
@@ -83,9 +83,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **AddToRecent** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso de **AddToRecent** para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -113,7 +113,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -178,13 +178,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 
