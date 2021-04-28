@@ -1,17 +1,17 @@
 ---
-description: .
+description: Funciones de mensaje (Windows y mensajes)
 ms.assetid: 753d1c5b-e824-4fc3-b731-ae9cb16c0e16
-title: Funciones de mensaje (ventanas y mensajes)
+title: Funciones de mensaje (Windows y mensajes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29e635f61b92af4080f4283ba08b02fda387d482
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d44ebb7227cf6a97c9daed6eee3db69042a7956
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706341"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100403"
 ---
-# <a name="message-functions-windows-and-messages"></a>Funciones de mensaje (ventanas y mensajes)
+# <a name="message-functions-windows-and-messages"></a>Funciones de mensaje (Windows y mensajes)
 
 -   [**BroadcastSystemMessage**](/windows/win32/api/winuser/nf-winuser-broadcastsystemmessage)
 -   [**BroadcastSystemMessageEx**](/windows/win32/api/winuser/nf-winuser-broadcastsystemmessageexa)

@@ -1,29 +1,29 @@
 ---
 title: Notificaciones de cuadro de diálogo
-description: .
+description: Notificaciones de cuadro de diálogo
 ms.assetid: df51dad0-8320-4e7a-a93e-1731463f888a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f9e5e8720cad08b31eec945f40177e3c34a42d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 94c10ad325551a8c00b2eb05ebbadc29337fedc7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419212"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113003"
 ---
 # <a name="dialog-box-notifications"></a>Notificaciones de cuadro de diálogo
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**CTLCOLORDLG de WM \_**](wm-ctlcolordlg.md)
--   [**ENTERIDLE de WM \_**](wm-enteridle.md)
--   [**GETDLGCODE de WM \_**](wm-getdlgcode.md)
--   [**INITDIALOG de WM \_**](wm-initdialog.md)
--   [**NEXTDLGCTL de WM \_**](wm-nextdlgctl.md)
+-   [**WM \_ CTLCOLORDLG**](wm-ctlcolordlg.md)
+-   [**WM \_ ENTERIDLE**](wm-enteridle.md)
+-   [**WM \_ GETDLGCODE**](wm-getdlgcode.md)
+-   [**WM \_ INITDIALOG**](wm-initdialog.md)
+-   [**WM \_ NEXTDLGCTL**](wm-nextdlgctl.md)
 
- 
+ 
 
- 
+ 
 
 
 

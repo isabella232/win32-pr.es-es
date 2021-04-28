@@ -1,6 +1,6 @@
 ---
-description: Muestra las ventanas abiertas en una pila 3D que se puede desplazar.
-title: 'Método Shell:: WindowSwitcher (Shldisp. h)'
+description: 'Método Shell::WindowSwitcher: muestra las ventanas abiertas en una pila 3D por la que puede pasar.'
+title: Método Shell::WindowSwitcher (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 89825430-C28E-4d38-A8F7-69A1408DDD73
-ms.openlocfilehash: 970e0b15ddeba2cd7e804ca998bdf201a442bc73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c21c7a287ef6b90e15d690314c3491cad711bce4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985959"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104053"
 ---
-# <a name="shellwindowswitcher-method"></a>Shell:: WindowSwitcher (método)
+# <a name="shellwindowswitcher-method"></a>Shell::WindowSwitcher (método)
 
-Muestra las ventanas abiertas en una pila 3D que se puede desplazar.
+Muestra las ventanas abiertas en una pila 3D por la que puede pasar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,12 +59,12 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

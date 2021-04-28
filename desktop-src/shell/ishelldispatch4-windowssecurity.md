@@ -1,6 +1,6 @@
 ---
-description: Muestra el cuadro de diálogo seguridad de Windows.
-title: Método IShellDispatch4. WindowsSecurity (Shldisp. h)
+description: 'Método IShellDispatch4.WindowsSecurity: muestra el Seguridad de Windows diálogo.'
+title: Método IShellDispatch4.WindowsSecurity (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 665c4644-7749-446e-8212-3ecc9901a035
-ms.openlocfilehash: 066321c0ea4e4d5ade35a6571c59128a5137cba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d7e8cfbd1e7a2a2392b78487c6a58b62de6df6a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984647"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116813"
 ---
-# <a name="ishelldispatch4windowssecurity-method"></a>IShellDispatch4. WindowsSecurity, método
+# <a name="ishelldispatch4windowssecurity-method"></a>Método IShellDispatch4.WindowsSecurity
 
-Muestra el cuadro de diálogo **seguridad de Windows** .
+Muestra el **cuadro Seguridad de Windows** de diálogo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,20 +55,20 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método muestra el cuadro de diálogo que se muestra después de presionar CTRL + ALT + SUPR o el uso de la opción seguridad en el menú **Inicio** .
+Este método muestra el cuadro de diálogo que se muestra después de presionar CTRL+ALT+SUPR o usar la opción de seguridad en el **menú** Inicio.
 
 > [!Note]  
-> Este método solo se puede usar cuando está conectado mediante una sesión de terminal a Microsoft Terminal Server.
+> Este método solo se puede usar cuando se conecta mediante una sesión de terminal a Microsoft Terminal Server.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **WindowsSecurity** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso de **WindowsSecurity** para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -84,7 +84,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -120,13 +120,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
 title: Módulo 1. Su primer programa de Windows
-description: .
+description: Módulo 1. Su primer programa de Windows
 ms.assetid: 73848144-bf02-4382-a476-7f5a35447727
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27749cddabaefb4fd83b836887fbb2dac017d238
-ms.sourcegitcommit: 35bb565804eaeed7ac5503595753f59d120076dd
+ms.openlocfilehash: 6515b012f968707379ebf24023c3d282c50d6fd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "104566209"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110953"
 ---
 # <a name="module-1-your-first-windows-program"></a>Módulo 1. Su primer programa de Windows
 
-En este módulo, se escribirá un programa de escritorio de Windows mínimo. Lo único que hace es crear y mostrar una ventana en blanco. Este primer programa contiene aproximadamente 50 líneas de código, sin contar los comentarios y las líneas en blanco. Será nuestro punto de partida; más adelante agregaremos gráficos, texto, entrada de usuario y otras características.
+En este módulo, escribiremos un programa de escritorio mínimo de Windows. Todo lo que hace es crear y mostrar una ventana en blanco. Este primer programa contiene unas 50 líneas de código, sin contar las líneas en blanco y los comentarios. Será nuestro punto de partida; más adelante agregaremos gráficos, texto, datos de entrada del usuario y otras características.
 
-Si busca más detalles sobre cómo crear una aplicación de escritorio tradicional de Windows en Visual Studio, consulte  [Tutorial: crear una aplicación de escritorio tradicional de Windows (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019).
+Si busca más detalles sobre cómo crear una aplicación de escritorio de Windows tradicional en Visual Studio, consulte Tutorial: Crear una aplicación de escritorio de [Windows tradicional (C++).](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019)
 
 ![captura de pantalla del programa de ejemplo](images/window01.png)
 
-Este es el código completo para el programa:
+Este es el código completo del programa:
 
 
 ```C++
@@ -110,15 +110,15 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 
 
-Puede descargar el proyecto completo de Visual Studio desde el [ejemplo de Windows Hola mundo](windows-hello-world-sample.md).
+Puede descargar el proyecto de Visual Studio completo desde [Windows Hello World Sample](windows-hello-world-sample.md).
 
-Puede ser útil proporcionar una breve descripción de lo que hace este código. En los temas posteriores se examinará el código en detalle.
+Puede ser útil proporcionar un breve esquema de lo que hace este código. Los temas posteriores examinarán el código en detalle.
 
-1.  **wWinMain** es el punto de entrada del programa. Cuando el programa se inicia, registra información sobre el comportamiento de la ventana de la aplicación. Uno de los elementos más importantes es la dirección de una función, denominada `WindowProc` en este ejemplo. Esta función define el comportamiento de la ventana (su apariencia, cómo interactúa con el usuario, etc.).
+1.  **wWinMain es** el punto de entrada del programa. Cuando se inicia el programa, registra información sobre el comportamiento de la ventana de la aplicación. Uno de los elementos más importantes es la dirección de una función, denominada `WindowProc` en este ejemplo. Esta función define el comportamiento de la ventana: su apariencia, cómo interactúa con el usuario, etc.
 2.  A continuación, el programa crea la ventana y recibe un identificador que identifica de forma única la ventana.
-3.  Si la ventana se crea correctamente, el programa entra en un bucle **While** . El programa permanece en este bucle hasta que el usuario cierra la ventana y sale de la aplicación.
+3.  Si la ventana se crea correctamente, el programa entra en un **bucle while.** El programa permanece en este bucle hasta que el usuario cierra la ventana y sale de la aplicación.
 
-Tenga en cuenta que el programa no llama explícitamente a la `WindowProc` función, aunque dijimos esto es donde se define la mayoría de la lógica de la aplicación. Windows se comunica con el programa pasándole una serie de *mensajes*. El código dentro del bucle **While** impulsa este proceso. Cada vez que el programa llama a la función [**DispatchMessage**](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) , provoca indirectamente que Windows invoque la función WindowProc, una vez para cada mensaje.
+Observe que el programa no llama explícitamente a la función, aunque se haya dicho que aquí es donde se define la mayor parte de `WindowProc` la lógica de la aplicación. Windows se comunica con el programa al pasarle una serie de *mensajes*. El código dentro del **bucle while** impulsa este proceso. Cada vez que el programa llama a [**la función DispatchMessage,**](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) hace que Windows invoque indirectamente la función WindowProc, una vez para cada mensaje.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -136,7 +136,7 @@ Tenga en cuenta que el programa no llama explícitamente a la `WindowProc` funci
 [Aprender a programar para Windows en C++](learn-to-program-for-windows.md)
 </dt> <dt>
 
-[Ejemplo de Hola mundo de Windows](windows-hello-world-sample.md)
+[Windows Hello World Sample](windows-hello-world-sample.md)
 </dt> </dl>
 
  

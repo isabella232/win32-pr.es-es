@@ -1,7 +1,7 @@
 ---
-description: Calcula una esfera de límite para la malla.
+description: 'Función D3DXComputeBoundingSphere (D3DX10math.h): calcula una esfera de límite para la malla.'
 ms.assetid: 54f486d2-45e9-4fc1-90a3-97488ed4d900
-title: Función D3DXComputeBoundingSphere (D3DX10math. h)
+title: Función D3DXComputeBoundingSphere (D3DX10math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0c8e59b4d39652d02ce19f4c1bf6b0617fee7772
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0041d775b21d1af37bc51d6ec2f432e616b2abd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280444"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113303"
 ---
-# <a name="d3dxcomputeboundingsphere-function-d3dx10mathh"></a>Función D3DXComputeBoundingSphere (D3DX10math. h)
+# <a name="d3dxcomputeboundingsphere-function-d3dx10mathh"></a>Función D3DXComputeBoundingSphere (D3DX10math.h)
 
 Calcula una esfera de límite para la malla.
 
@@ -44,7 +44,7 @@ HRESULT D3DXComputeBoundingSphere(
 
 <dl> <dt>
 
-*pFirstPosition* \[ de\]
+*pFirstPosition* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -53,7 +53,7 @@ Puntero a la primera posición.
 
 </dd> <dt>
 
-*NumVertices* \[ de\]
+*NumVertices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -62,28 +62,28 @@ Número de vértices.
 
 </dd> <dt>
 
-*dwStride* \[ de\]
+*dwStride* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de bytes entre los vectores de posición.
+Número de bytes entre vectores de posición.
 
 </dd> <dt>
 
-*pCenter* \[ de\]
+*pCenter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que define el centro de coordenadas de la esfera de límite devuelta.
+[**Estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) que define el centro de coordenadas de la esfera de límite devuelta.
 
 </dd> <dt>
 
-*pRadius* \[ de\]
+*pRadius* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Radio de la esfera de límite devuelta.
 
@@ -93,7 +93,7 @@ Radio de la esfera de límite devuelta.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,12 +101,12 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,10 +1,10 @@
 ---
-description: Interno.
+description: '<span id="vspixengine.objectstatetype"></span>Enumeración OBJECTSTATETYPE: interna.'
 MS-HAID: vspixengine.OBJECTSTATETYPE
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Enumeración OBJECTSTATETYPE
+title: ObjectSTATETYPE (enumeración)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 237BCBBC-71C5-4880-977E-27363A036843
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1a1d37411cd72671223022c91f5c784b9b523f46
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 03b232a9cba3cf5fe8f756b9804b03d03f9c5047
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152392"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113063"
 ---
-# <a name="span-idvspixengineobjectstatetypespanobjectstatetype-enumeration"></a><span id="vspixengine.objectstatetype"></span>Enumeración OBJECTSTATETYPE
+# <a name="span-idvspixengineobjectstatetypespanobjectstatetype-enumeration"></a><span id="vspixengine.objectstatetype"></span>ObjectSTATETYPE (enumeración)
 
 Interno
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -169,7 +169,7 @@ Interno
 <span id="ObjectState_CommandList_SetRootSignature"></span><span id="objectstate_commandlist_setrootsignature"></span><span id="OBJECTSTATE_COMMANDLIST_SETROOTSIGNATURE"></span>**ObjectState \_ CommandList \_ SetRootSignature**  
 Interno
 
-<span id="ObjectState_Device"></span><span id="objectstate_device"></span><span id="OBJECTSTATE_DEVICE"></span>**\_Dispositivo ObjectState**  
+<span id="ObjectState_Device"></span><span id="objectstate_device"></span><span id="OBJECTSTATE_DEVICE"></span>**Dispositivo \_ ObjectState**  
 Interno
 
 <span id="ObjectState_DeviceContext"></span><span id="objectstate_devicecontext"></span><span id="OBJECTSTATE_DEVICECONTEXT"></span>**ObjectState \_ DeviceContext**  
@@ -177,7 +177,7 @@ Interno
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 
