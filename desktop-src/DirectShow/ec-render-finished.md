@@ -1,17 +1,17 @@
 ---
-description: Este evento no se admite.
+description: 'EC_RENDER_FINISHED: este evento no se admite.'
 ms.assetid: a7d207c0-3d93-468a-b463-1eab68b286a2
-title: EC_RENDER_FINISHED (DShow. h)
+title: EC_RENDER_FINISHED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 167ed535a872b28f8632def4eb06f7c541377f82
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10b2b6b113b1aa60d5e354fe51beb95995f2337e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678911"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119643"
 ---
-# <a name="ec_render_finished"></a>representación de EC \_ \_ finalizada
+# <a name="ec_render_finished"></a>EC \_ RENDER \_ FINISHED
 
 Este evento no se admite.
 
@@ -21,11 +21,11 @@ Este evento no se admite.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

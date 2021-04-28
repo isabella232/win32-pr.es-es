@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CAMThread.CAMThread: método constructor.'
 ms.assetid: 0057adfe-e397-476b-90f9-7edbf7377b65
-title: Constructor CAMThread. CAMThread (Wxutil. h)
+title: Constructor CAMThread.CAMThread (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: abaac0c3b0330cd41db7ecd21f894733de10a1b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c4b9c5f80e131ce089b6a2da924e9cca41a84f6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661149"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096413"
 ---
-# <a name="camthreadcamthread-constructor"></a>Constructor CAMThread. CAMThread
+# <a name="camthreadcamthread-constructor"></a>Constructor CAMThread.CAMThread
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,18 +42,18 @@ CAMThread(
 
 <dl> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . Si se produce un error en el constructor, este parámetro recibe un código de error. Si esto ocurre, el objeto no tiene un estado válido.
+Puntero a un **valor HRESULT.** Si se produce un error en el constructor, este parámetro recibe un código de error. Si esto ocurre, el objeto no está en un estado válido.
 
-Para mantener la compatibilidad con versiones anteriores de strmbase. lib, este parámetro tiene como valor predeterminado **null**. Sin embargo, se prefiere pasar un valor distinto de **null** para que el autor de la llamada pueda comprobar el estado del objeto.
+Para la compatibilidad con versiones anteriores de strmbase.lib, el valor predeterminado de este parámetro es **NULL.** Sin embargo, se prefiere pasar un valor distinto de **NULL,** para que el autor de la llamada pueda comprobar el estado del objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método de constructor no crea el subproceso. Para crear el subproceso, llame al método [**CAMThread:: Create**](camthread-create.md) .
+El método constructor no crea el subproceso. Para crear el subproceso, llame al [**método CAMThread::Create.**](camthread-create.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,16 +61,16 @@ El método de constructor no crea el subproceso. Para crear el subproceso, llame
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBasePropertyPage.CBasePropertyPage: método constructor.'
 ms.assetid: 5d9863e7-fdd9-4df2-a603-34a240a2286c
-title: Constructor CBasePropertyPage. CBasePropertyPage (Cprop. h)
+title: Constructor CBasePropertyPage.CBasePropertyPage (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 915bc42cfb7f152cc061dab76caede6c998edf8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95821062b6b1199ea98a5329934d76e2197901d4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670429"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119953"
 ---
-# <a name="cbasepropertypagecbasepropertypage-constructor"></a>Constructor CBasePropertyPage. CBasePropertyPage
+# <a name="cbasepropertypagecbasepropertypage-constructor"></a>Constructor CBasePropertyPage.CBasePropertyPage
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,28 +48,28 @@ CBasePropertyPage(
 *pName* 
 </dt> <dd>
 
-Cadena que contiene el nombre del objeto, con fines de depuración. Para obtener más información, vea [**CBaseObject:: CBaseObject**](cbaseobject-cbaseobject.md).
+Cadena que contiene el nombre del objeto, con fines de depuración. Para obtener más información, [**vea CBaseObject::CBaseObject**](cbaseobject-cbaseobject.md).
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown** de agregación.
+Puntero a la interfaz **IUnknown de agregación.**
 
 </dd> <dt>
 
 *DialogId* 
 </dt> <dd>
 
-IDENTIFICADOR de recurso del cuadro de diálogo.
+Identificador de recurso para el cuadro de diálogo.
 
 </dd> <dt>
 
 *TitleId* 
 </dt> <dd>
 
-IDENTIFICADOR de recurso de la cadena que contiene el título del cuadro de diálogo.
+Identificador de recurso de la cadena que contiene el título del cuadro de diálogo.
 
 </dd> </dl>
 
@@ -89,16 +89,16 @@ CMyProp::CMyProp(IUnknown *pUnk) :
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Streams.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

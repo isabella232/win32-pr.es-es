@@ -1,15 +1,15 @@
 ---
-description: Se produce cuando se reconoce un gesto del sistema.
+description: 'InkPicture.Sysevento temGesture: se produce cuando se reconoce un gesto del sistema.'
 ms.assetid: 36e2ac5a-dc91-47c2-a8e5-e555437c0a5d
-title: InkPicture.Sysevento temGesture (Msinkaut. h)
+title: InkPicture.Sysevento temGesture (Ms ashut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 918198e4d18a854bb4238ce9d878dc70ab1f2f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cde11b73b6b0d3861a79538a7f9ee19487b6384
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717071"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113693"
 ---
 # <a name="inkpicturesystemgesture-event"></a>InkPicture.Sysevento temGesture
 
@@ -36,14 +36,14 @@ void SystemGesture(
 
 <dl> <dt>
 
-*Cursor* \[ de de\]
+*Cursor* \[ En\]
 </dt> <dd>
 
-El objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el evento **SystemGesture** .
+Objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el **evento SystemGesture.**
 
 </dd> <dt>
 
-*ID.* \[ en\]
+*Id.* \[ en\]
 </dt> <dd>
 
 Valor del gesto del sistema.
@@ -64,24 +64,24 @@ Coordenada y de la ubicación del gesto.
 
 </dd> <dt>
 
-*Modificador* \[ de\]
+*Modificador* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*Carácter* \[ de\]
+*Carácter* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*CursorMode* \[ de\]
+*CursorMode* \[ En\]
 </dt> <dd>
 
-Valor que indica si el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) está en modo normal o en modo de borrador. 1 es para el modo normal y 2 para el modo de borrador.
+Valor que indica si el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) está en modo normal o en modo borrador. 1 es para el modo normal y 2 para el modo borrador.
 
 </dd> </dl>
 
@@ -89,42 +89,42 @@ Valor que indica si el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los gestos del sistema proporcionan información sobre el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que se usa para crear el gesto. También proporcionan accesos directos a combinaciones de eventos del mouse y son maneras de detectar eventos del mouse con menos impacto en el rendimiento.
+Los gestos del sistema dan información sobre [**el objeto IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que se usa para crear el gesto. También proporcionan accesos directos a combinaciones de eventos del mouse y son formas de detectar eventos del mouse con menos impacto en el rendimiento.
 
-Por ejemplo, en lugar de buscar un par de eventos de evento [**MouseUp del \[ control \] InkPicture**](inkpicture-mouseup.md)Event InkPicture / [**\[ \] control**](inkpicture-mousedown.md) de eventos sin que se produzcan otros eventos del mouse en Between, puede buscar los gestos del sistema TAP o RightTap.
+Por ejemplo, en lugar de buscar un par de eventos MouseDown [**Event \[ \]**](inkpicture-mouseup.md) / [**InkPicture Control MouseDown Event \[ InkPicture sin \]**](inkpicture-mousedown.md) que se produzcan otros eventos del mouse entre ellos, puede buscar los gestos del sistema Tap o RightTap.
 
-Otro ejemplo, en lugar de realizar escuchas de eventos [**MouseDown \[ \]**](inkpicture-mousedown.md)del control InkPicture del evento / [**MouseMove \[ \]**](inkpicture-mousemove.md) en el control InkPicture y obtener numerosos mensajes del **\[ \] control InkPicture del evento MouseMove** , puede ver los gestos del sistema de arrastrar o RightDrag siempre y cuando no esté interesado en las coordenadas (x, y) de cada posición del mouse. Esto le permite recibir un solo mensaje en lugar de numerosos mensajes del **\[ \] control InkPicture del evento MouseMove** .
+Como otro ejemplo, en lugar de escuchar los eventos [**\[ MousePicture \] Control MouseMove**](inkpicture-mousedown.md)Event InkPicture Control / [**\[ \]**](inkpicture-mousemove.md) y obtener numerosos mensajes **mousemove Event \[ InkPicture Control, \]** puede ver los gestos del sistema Drag o RightDrag siempre que no esté interesado en las coordenadas (x, y) de cada posición del mouse. Esto le permite recibir solo un mensaje en lugar de varios mensajes **mousemove event \[ inkpicture control. \]**
 
-Para obtener una lista de gestos específicos del sistema, vea el tipo de enumeración [**InkSystemGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) . Para obtener más información acerca de los gestos del sistema, consulte [uso de gestos](using-gestures.md) y [entradas de comandos en Tablet PC](/previous-versions//dd314533(v=vs.85)).
+Para obtener una lista de gestos específicos del sistema, vea el tipo de enumeración [**InkSystemGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) Para obtener más información sobre los gestos del sistema, vea [Using Gestures](using-gestures.md) and [Command Input on the Tablet PC](/previous-versions//dd314533(v=vs.85)).
 
-Este método de evento se define en las interfaces de solo distribución (dispinterfaces) **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** y **\_ IInkPictureEvents** con el identificador DISPID \_ ICESystemGesture.
+Este método de evento se define en las interfaces de solo envío (dispinterfaces) de **\_ IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ ICESystemGesture.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [InkPicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**Enumeración InkSystemGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture)
+[**InkSystemGesture (enumeración)**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture)
 </dt> <dt>
 
-[Usar gestos](using-gestures.md)
+[Uso de gestos](using-gestures.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método GetColorContexts.
+description: 'IWICBitmapFrameDecode_GetColorContexts_Proxy función: función proxy para el método GetColorContexts.'
 ms.assetid: 1925a64e-558d-4931-a3c3-b35d2b92a292
-title: IWICBitmapFrameDecode_GetColorContexts_Proxy función)
+title: IWICBitmapFrameDecode_GetColorContexts_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 8e22166e98e4ef276a6bf1d72dfc860cf8fb511e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99fb6caa9b9e654be0adc1235cad0e79a7fa1ef3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275352"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100583"
 ---
-# <a name="iwicbitmapframedecode_getcolorcontexts_proxy-function"></a>Función de proxy de \_ GetColorContexts de IWICBitmapFrameDecode \_
+# <a name="iwicbitmapframedecode_getcolorcontexts_proxy-function"></a>IWICBitmapFrameDecode \_ GetColorContexts \_ Proxy function
 
-Función de proxy para el método [**GetColorContexts**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getcolorcontexts) .
+Función de proxy para [**el método GetColorContexts.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getcolorcontexts)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,23 +43,23 @@ HRESULT IWICBitmapFrameDecode_GetColorContexts_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) \** _
+Tipo: **[ **IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)\***
 
-Puntero a este objeto [_ *IWICBitmapFrameDecode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) .
+Puntero a este [**objeto IWICBitmapFrameDecode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
 
 </dd> <dt>
 
-*enta* \[ de\]
+*cCount* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-El número de contextos de color que se van a recuperar.
+Número de contextos de color que se recuperarán.
 
-Este valor debe ser el tamaño de, o menor que, disponible para *ppIColorContexts*.
+Este valor debe ser el tamaño de o menor que el tamaño disponible para *ppIColorContexts.*
 
 </dd> <dt>
 
@@ -68,14 +68,14 @@ Este valor debe ser el tamaño de, o menor que, disponible para *ppIColorContext
 
 Tipo: **[ **IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)\*\***
 
-Puntero que recibe un puntero a los objetos [**IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext) .
+Puntero que recibe un puntero a los [**objetos IWICColorContext.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)
 
 </dd> <dt>
 
-*pcActualCount* \[ enuncia\]
+*pcActualCount* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntero que recibe el número de contextos de color contenidos en el marco de imagen.
 
@@ -83,9 +83,9 @@ Puntero que recibe el número de contextos de color contenidos en el marco de im
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -93,11 +93,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

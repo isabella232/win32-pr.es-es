@@ -1,7 +1,7 @@
 ---
-description: Recuento de referencias.
+description: 'CUnknown::m_cRef miembro: recuento de referencias.'
 ms.assetid: be619a85-ca73-4cee-9df7-20e7be21853b
-title: 'Miembro CUnknown:: m_cRef (ComBase. h)'
+title: CUnknown::m_cRef miembro (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94ff5d88ca48feeb46a8b0411a55d6261aefcf6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3f6be7d09149f651bce8d1042b7f3e3a5dc9307
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661058"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084583"
 ---
-# <a name="cunknownm_cref-member"></a>Miembro cRef CUnknown:: m \_
+# <a name="cunknownm_cref-member"></a>Miembro CUnknown::m \_ cRef
 
 Recuento de referencias.
 
@@ -36,9 +36,9 @@ LONG m_cRef;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta variable miembro si invalida el método [**NonDelegatingAddRef**](cunknown-nondelegatingaddref.md) o [**NonDelegatingRelease**](cunknown-nondelegatingrelease.md) .
+Use esta variable miembro si invalida el [**método NonDelegatingAddRef**](cunknown-nondelegatingaddref.md) [**o NonDelegatingRelease.**](cunknown-nondelegatingrelease.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Use esta variable miembro si invalida el método [**NonDelegatingAddRef**](cunkn
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CTransInPlaceOutputPin.CTransInPlaceOutputPin: método constructor.'
 ms.assetid: fe7b2d62-0e6a-4253-b469-6cede5dc9bb1
-title: Constructor CTransInPlaceOutputPin. CTransInPlaceOutputPin (TRANSip. h)
+title: Constructor CTransInPlaceOutputPin.CTransInPlaceOutputPin (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c2c9ca668d3780ece082f9cab55db8406af7ad3b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6b63ee3aa52bc0363bcab90275be4148659b3bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679247"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094713"
 ---
-# <a name="ctransinplaceoutputpinctransinplaceoutputpin-constructor"></a>Constructor CTransInPlaceOutputPin. CTransInPlaceOutputPin
+# <a name="ctransinplaceoutputpinctransinplaceoutputpin-constructor"></a>Constructor CTransInPlaceOutputPin.CTransInPlaceOutputPin
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,27 +55,27 @@ Cadena que contiene el nombre de depuración del objeto. Para obtener más infor
 *pFilter* 
 </dt> <dd>
 
-Puntero al filtro que creó este pin, que debe ser un objeto [**CTransInPlaceFilter**](ctransinplacefilter.md) .
+Puntero al filtro que creó este pin, que debe ser [**un objeto CTransInPlaceFilter.**](ctransinplacefilter.md)
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** que indica si el método se ha ejecutado correctamente o no. Inicialice el valor a S \_ OK antes de crear el objeto. Solo se cambia el valor si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o el error del método. Inicialice el valor en S \_ OK antes de crear el objeto. El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
 *pName* 
 </dt> <dd>
 
-Cadena de caracteres anchos que contiene el nombre del PIN.
+Cadena de caracteres anchos que contiene el nombre del pin.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *pName* especifica el nombre del PIN, devuelto por el método [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) . Sin embargo, la cadena no se utiliza para el identificador del PIN. El identificador del PIN para esta clase siempre es "out". Para obtener más información, vea [**queryId**](ctransforminputpin-queryid.md).
+El *parámetro pName* especifica el nombre del pin, que devuelve el [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Sin embargo, la cadena no se usa para el identificador de pin. El identificador de pin de esta clase siempre es "Out". Para obtener más información, vea [**QueryId**](ctransforminputpin-queryid.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,16 +83,16 @@ El parámetro *pName* especifica el nombre del PIN, devuelto por el método [**I
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceOutputPin**](ctransinplaceoutputpin.md)
+[**CTransInPlaceOutputPin (clase)**](ctransinplaceoutputpin.md)
 </dt> </dl>
 
  

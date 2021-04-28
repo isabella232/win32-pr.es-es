@@ -1,17 +1,17 @@
 ---
-description: Especifica si el flujo de entrada está entrelazado.
+description: 'MFPKEY_RESIZE_INTERLACE propiedad : especifica si el flujo de entrada está entrelazado.'
 ms.assetid: 01ee0766-06ed-4255-9057-2fe033a772cd
-title: Propiedad MFPKEY_RESIZE_INTERLACE (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_INTERLACE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a27504bd6da92bc48fee04afc999568a514fdef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45d0efe93901a08322a05dbed2515f76b04a214b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666921"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092883"
 ---
-# <a name="mfpkey_resize_interlace-property"></a>MFPKEY \_ cambiar el tamaño de la \_ propiedad entrelazada
+# <a name="mfpkey_resize_interlace-property"></a>Propiedad MFPKEY \_ RESIZE \_ INTERLACE
 
 Especifica si el flujo de entrada está entrelazado.
 
@@ -21,46 +21,46 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Vídeo de tamaño DSP](videoresizer.md)
+-   [Video Resizer DSP](videoresizer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Utilice uno de los valores siguientes:
 
 
 
-| Value     | Descripción |
+| Valor     | Descripción |
 |-----------|-------------|
-| VT \_ falso | progresivo |
-| VT \_ true  | Interlaced  |
+| VT \_ FALSE | progresivo |
+| VT \_ TRUE  | Interlaced  |
 
 
 
  
 
-Si no se establece esta propiedad, el DSP usa el tipo de medio de entrada para determinar si el vídeo está entrelazado. Puede establecer esta propiedad para invalidar la configuración de tipo de medio.
+Si no se establece esta propiedad, el DSP usa el tipo de medio de entrada para determinar si el vídeo está entrelazado. Puede establecer esta propiedad para invalidar la configuración del tipo de medio.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

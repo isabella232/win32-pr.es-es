@@ -1,7 +1,7 @@
 ---
-description: El método SetMediaType establece el tipo de medio para la conexión.
+description: 'Método CTransformOutputPin.SetMediaType: el método SetMediaType establece el tipo de medio para la conexión.'
 ms.assetid: 1d6569c1-e27b-4e96-af5a-64a78b762afd
-title: Método CTransformOutputPin. SetMediaType (Transfrm. h)
+title: Método CTransformOutputPin.SetMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e45bd16f0c0e5ea9cd1e719518fab15180177fd1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5aa8dcfbf573f6ca5b047c9f84567a84985732c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661261"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084803"
 ---
-# <a name="ctransformoutputpinsetmediatype-method"></a>CTransformOutputPin. SetMediaType, método
+# <a name="ctransformoutputpinsetmediatype-method"></a>CTransformOutputPin.SetMediaType (método)
 
 El `SetMediaType` método establece el tipo de medio para la conexión.
 
@@ -42,22 +42,22 @@ HRESULT SetMediaType(
 
 <dl> <dt>
 
-*módulo* 
+*Mt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CBasePin:: SetMediaType**](cbasepin-setmediatype.md) . Llama al método [**CTransformFilter:: SetMediaType**](ctransformfilter-setmediatype.md) del filtro para informar al filtro.
+Este método invalida el [**método CBasePin::SetMediaType.**](cbasepin-setmediatype.md) Llama al método [**CTransformFilter::SetMediaType**](ctransformfilter-setmediatype.md) del filtro para informar al filtro.
 
-El código PIN debe comprobar que el tipo de medio es aceptable antes de llamar a este método.
+El pin debe comprobar que el tipo de medio es aceptable antes de llamar a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El código PIN debe comprobar que el tipo de medio es aceptable antes de llamar 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

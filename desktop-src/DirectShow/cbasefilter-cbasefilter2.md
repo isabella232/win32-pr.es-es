@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBaseFilter.CBaseFilter(const \* TCHAR, LNOWN, CCritSec \* , REFCLSID): método constructor.'
 ms.assetid: b6433ec9-6710-4c2f-968f-00e0d9f8c7a5
-title: Constructor CBaseFilter. CBaseFilter (const TCHAR *, LPUNKNOWN, CCritSec*, REFCLSID) (Amfilter. h)
+title: Constructor CBaseFilter.CBaseFilter(const *TCHAR, LNOWN, CCritSec*, REFCLSID) (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40ac48a1fd28b9b50a8f1fa9c698ea5db49d97b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b621bdb3f6a15ae950959a65eba8841bde399b81
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660205"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099833"
 ---
-# <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-constructor"></a>Constructor CBaseFilter. CBaseFilter (const TCHAR \* , LPUNKNOWN, CCritSec \* , REFCLSID)
+# <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-constructor"></a>Constructor CBaseFilter.CBaseFilter(const \* TCHAR, LNOWN, CCritSec \* , REFCLSID)
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,33 +52,33 @@ Puntero a una cadena que contiene el nombre del filtro, con fines de depuración
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntero a un bloqueo de [**CCritSec**](ccritsec.md) , que se usa para serializar los cambios de estado.
+Puntero a un [**bloqueo CCritSec,**](ccritsec.md) que se usa para serializar los cambios de estado.
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificador de clase (CLSID) del filtro.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el objeto de sección crítica, normalmente realizará una de las siguientes acciones:
+Para el objeto de sección crítica, normalmente haría una de las siguientes acciones:
 
--   Derive una clase que herede tanto **CBaseFilter** como **CCritSec**. En el caso de *Plock*, pase el `this` puntero.
--   Derive una clase que herede **CBaseFilter** y contenga una variable miembro de **CCritSec** . En el caso de *Plock*, pase la dirección de esa variable.
+-   Derive una clase que herede **tanto CBaseFilter** como **CCritSec.** Para *pLock*, pase el `this` puntero.
+-   Derive una clase que hereda **CBaseFilter** y contiene una variable **miembro CCritSec.** Para *pLock*, pase la dirección de esa variable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,16 +86,16 @@ En el objeto de sección crítica, normalmente realizará una de las siguientes 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

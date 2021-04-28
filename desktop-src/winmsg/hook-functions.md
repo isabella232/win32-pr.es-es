@@ -1,15 +1,15 @@
 ---
-description: .
+description: Funciones de enlace
 ms.assetid: a1ff74b4-c015-4a82-a1fe-f4af1eaee705
 title: Funciones de enlace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d6a189ec637df19b8e0eb95b41bf4a45c51ca67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9e6e8dd586a04a00bbf6c36311c8a335f4e36c4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706995"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100483"
 ---
 # <a name="hook-functions"></a>Funciones de enlace
 

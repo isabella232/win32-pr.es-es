@@ -1,7 +1,7 @@
 ---
-description: Interpola entre dos cuaterniones mediante la interpolación lineal esférica.
+description: 'Función D3DXQuaternionSlerp (D3dx9math.h): interpola entre dos cuaterniones, mediante interpolación lineal esférica.'
 ms.assetid: 94a989c8-fa6b-4852-9aa3-e55ad814ffd7
-title: Función D3DXQuaternionSlerp (D3dx9math. h)
+title: Función D3DXQuaternionSlerp (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f0f43e22ddc46007c6f589dfc5fd8b45aa885643
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fb9110da7fae4ebbf4609d361124dbbcdedfe59b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717711"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093943"
 ---
-# <a name="d3dxquaternionslerp-function-d3dx9mathh"></a>Función D3DXQuaternionSlerp (D3dx9math. h)
+# <a name="d3dxquaternionslerp-function-d3dx9mathh"></a>Función D3DXQuaternionSlerp (D3dx9math.h)
 
 Interpola entre dos cuaterniones mediante la interpolación lineal esférica.
 
@@ -48,32 +48,32 @@ D3DXQUATERNION* D3DXQuaternionSlerp(
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a la estructura [**D3DXQUATERNION**](d3dxquaternion.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXQUATERNION**](d3dxquaternion.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pQ1* \[ de\]
+*pQ1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntero a una estructura de [**D3DXQUATERNION**](d3dxquaternion.md) de origen.
+Puntero a una estructura [**D3DXQUATERNION de**](d3dxquaternion.md) origen.
 
 </dd> <dt>
 
-*pQ2* \[ de\]
+*pQ2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntero a una estructura de [**D3DXQUATERNION**](d3dxquaternion.md) de origen.
+Puntero a una estructura [**D3DXQUATERNION de**](d3dxquaternion.md) origen.
 
 </dd> <dt>
 
-*t* \[ en\]
+*t* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Parámetro que indica hasta qué punto se debe interpolar entre los cuaterniones.
 
@@ -83,13 +83,13 @@ Parámetro que indica hasta qué punto se debe interpolar entre los cuaterniones
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a una estructura [**D3DXQUATERNION**](d3dxquaternion.md) que es el resultado de la interpolación.
+Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) que es el resultado de la interpolación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXQuaternionSlerp** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXQuaternionSlerp** se puede usar como parámetro para otra función.
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para cualquier entrada de cuaternión que no esté ya normalizada.
+Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,12 +97,12 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para cualquier ent
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

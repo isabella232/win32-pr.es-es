@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de proyección ortográfica a la izquierda.
+description: 'Función D3DXMatrixOrthoLH (D3dx9math.h): crea una matriz de proyección ortográfica de mano izquierda.'
 ms.assetid: e42151bd-2302-491b-a211-7d5a4b8e437f
-title: Función D3DXMatrixOrthoLH (D3dx9math. h)
+title: Función D3DXMatrixOrthoLH (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4aaf4a1a770ba0200a6afe389d37e248b9f4c7de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5492a6caba87025d83562c0327ac0e1f5a76f269
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362684"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107503"
 ---
-# <a name="d3dxmatrixortholh-function-d3dx9mathh"></a>Función D3DXMatrixOrthoLH (D3dx9math. h)
+# <a name="d3dxmatrixortholh-function-d3dx9mathh"></a>Función D3DXMatrixOrthoLH (D3dx9math.h)
 
 Crea una matriz de proyección ortográfica a la izquierda.
 
@@ -49,43 +49,43 @@ D3DXMATRIX* D3DXMatrixOrthoLH(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero al [**D3DXMATRIX**](../direct3d10/d3d10-d3dxmatrix.md)resultante.
+Puntero al [**D3DXMATRIX resultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
-*w* \[ en\]
+*w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Ancho del volumen de vista.
 
 </dd> <dt>
 
-*h* \[ en\]
+*h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Alto del volumen de vista.
 
 </dd> <dt>
 
-*Zn* \[ de\]
+*zn* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z mínimo del volumen de vista, al que se hace referencia como z-near.
+Valor z mínimo del volumen de vista que se conoce como z-near.
 
 </dd> <dt>
 
-*ZF* \[ de\]
+*y* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z máximo del volumen de vista, al que se hace referencia como z-lejano.
+Valor z máximo del volumen de vista que se conoce como z-far.
 
 </dd> </dl>
 
@@ -93,15 +93,15 @@ Valor z máximo del volumen de vista, al que se hace referencia como z-lejano.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero al [**D3DXMATRIX**](../direct3d10/d3d10-d3dxmatrix.md)resultante.
+Puntero al [**D3DXMATRIX resultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los parámetros de la función **D3DXMatrixOrthoLH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de la vista.
+Todos los parámetros de la **función D3DXMatrixOrthoLH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXMatrixOrthoLH** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixOrthoLH** se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -119,12 +119,12 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Escala la matriz actual sobre el origen del objeto.
+description: 'Método ID3DXMATRIXStack::ScaleLocal (D3DX10.h): escale la matriz actual sobre el origen del objeto.'
 ms.assetid: 748fce3a-a33c-4975-bbf0-dd3167a036f1
-title: 'ID3DXMATRIXStack:: ScaleLocal (método) (D3DX10. h)'
+title: Método ID3DXMATRIXStack::ScaleLocal (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 868aae418ebedbc54cb8f15ba4fa4e11d47c7f50
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3961db0794703e3974dbd92d8eae8293173c2354
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914810"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107783"
 ---
-# <a name="id3dxmatrixstackscalelocal-method-d3dx10h"></a>ID3DXMATRIXStack:: ScaleLocal (método) (D3DX10. h)
+# <a name="id3dxmatrixstackscalelocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::ScaleLocal (D3DX10.h)
 
-Escala la matriz actual sobre el origen del objeto.
+Escale la matriz actual sobre el origen del objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,27 +45,27 @@ HRESULT ScaleLocal(
 *x* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escala en la dirección x.
+Componente de escalado en la dirección X.
 
 </dd> <dt>
 
 *y* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escala en la dirección y.
+Componente de escalado en la dirección Y.
 
 </dd> <dt>
 
-*z* \[ en\]
+*z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escala en la dirección z.
+Componente de escalado en dirección z.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Componente de escala en la dirección z.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método multiplica a la izquierda la matriz actual por la matriz de escala calculada. La transformación es sobre el origen local del objeto.
+Este método multiplica a la izquierda la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen local del objeto.
 
 
 ```
@@ -94,19 +94,19 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DXMatrixStack](d3d10-id3dxmatrixstack.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

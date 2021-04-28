@@ -1,7 +1,7 @@
 ---
-description: El método GetMediaType recupera un tipo de medio preferido para el PIN de salida.
+description: 'Método CTransInPlaceFilter.GetMediaType: el método GetMediaType recupera un tipo de medio preferido para el pin de salida.'
 ms.assetid: 1bc6c06d-f399-4b8a-81f2-7fffe4630236
-title: Método CTransInPlaceFilter. GetMediaType (TRANSip. h)
+title: Método CTransInPlaceFilter.GetMediaType (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d2347e0466a7df848e0f0b2bccec325eedfefc8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8678f9b18e40f529da282909015a7c75695770ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679290"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094813"
 ---
-# <a name="ctransinplacefiltergetmediatype-method"></a>CTransInPlaceFilter. GetMediaType, método
+# <a name="ctransinplacefiltergetmediatype-method"></a>Método CTransInPlaceFilter.GetMediaType
 
-El `GetMediaType` método recupera un tipo de medio preferido para el PIN de salida.
+El `GetMediaType` método recupera un tipo de medio preferido para el pin de salida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,17 +53,17 @@ Valor de índice de base cero.
 *pMediaType* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que recibe el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que recibe el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve E \_ inesperado.
+Devuelve E \_ UNEXPECTED.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CTransformFilter:: GetMediaType**](ctransformfilter-getmediatype.md) . En la clase **CTransInPlaceFilter** , cada pin llama al pin conectado opuesto para enumerar los tipos de medios preferidos. El PIN de entrada llama al pin de entrada del filtro de bajada y el PIN de salida llama al pin de salida del filtro de nivel superior. Por lo tanto, `GetMediaType` nunca se llama al método del filtro.
+Este método invalida el [**método CTransformFilter::GetMediaType.**](ctransformfilter-getmediatype.md) En la **clase CTransInPlaceFilter,** cada pin llama al pin conectado opuesto para enumerar los tipos de medios preferidos. El pin de entrada llama al pin de entrada del filtro de bajada y el pin de salida llama al pin de salida del filtro ascendente. Por lo tanto, nunca se llama `GetMediaType` al método del filtro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,16 +71,16 @@ Este método invalida el método [**CTransformFilter:: GetMediaType**](ctransfor
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceFilter**](ctransinplacefilter.md)
+[**CTransInPlaceFilter (clase)**](ctransinplacefilter.md)
 </dt> </dl>
 
  

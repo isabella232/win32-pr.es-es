@@ -1,28 +1,28 @@
 ---
-description: .
+description: Mensajes de ventana (Windows y mensajes)
 ms.assetid: 5e9bdfff-d91c-4e21-ae2d-7920103bdb5c
-title: Mensajes de ventana (ventanas y mensajes)
+title: Mensajes de ventana (Windows y mensajes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeee717696d491f95f0cbf89b1091e2e9cf58b11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1961faf339737f5cba979770e68620702e8082ef
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278832"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100223"
 ---
-# <a name="window-messages-windows-and-messages"></a>Mensajes de ventana (ventanas y mensajes)
+# <a name="window-messages-windows-and-messages"></a>Mensajes de ventana (Windows y mensajes)
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**MN \_ GETHMENU**](mn-gethmenu.md)
--   [**ERASEBKGND de WM \_**](wm-erasebkgnd.md)
--   [**GETFONT de WM \_**](wm-getfont.md)
--   [**GETTEXT de WM \_**](wm-gettext.md)
--   [**GETTEXTLENGTH de WM \_**](wm-gettextlength.md)
--   [**WM \_**](wm-setfont.md)
--   [**SETICON de WM \_**](wm-seticon.md)
--   [**SETTEXT de WM \_**](wm-settext.md)
+-   [**GETHMENU de MN \_**](mn-gethmenu.md)
+-   [**WM \_ ERASEBNDAND**](wm-erasebkgnd.md)
+-   [**WM \_ GETFONT**](wm-getfont.md)
+-   [**WM \_ GETTEXT**](wm-gettext.md)
+-   [**WM \_ GETTEXTLENGTH**](wm-gettextlength.md)
+-   [**WM \_ SETFONT**](wm-setfont.md)
+-   [**WM \_ SETICON**](wm-seticon.md)
+-   [**WM \_ SETTEXT**](wm-settext.md)
 
  
 
