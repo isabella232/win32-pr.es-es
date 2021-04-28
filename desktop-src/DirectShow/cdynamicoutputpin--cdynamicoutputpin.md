@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CDynamicOutputPin.~CDynamicOutputPin: método Destructor.'
 ms.assetid: 122c2506-a38a-4d24-a372-da210801df88
-title: CDynamicOutputPin. ~ CDynamicOutputPin (Amfilter. h)
+title: Destructor CDynamicOutputPin.~CDynamicOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c65c8e29270e386645be7afb7b9cd7c3ec3c721e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f1369b63f3ae5cacf74d32c89cda5602660d228
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661363"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095753"
 ---
-# <a name="cdynamicoutputpincdynamicoutputpin-destructor"></a><span data-ttu-id="eca20-103">CDynamicOutputPin. ~ CDynamicOutputPin (destructor)</span><span class="sxs-lookup"><span data-stu-id="eca20-103">CDynamicOutputPin.~CDynamicOutputPin destructor</span></span>
+# <a name="cdynamicoutputpincdynamicoutputpin-destructor"></a><span data-ttu-id="827c4-103">Destructor CDynamicOutputPin.~CDynamicOutputPin</span><span class="sxs-lookup"><span data-stu-id="827c4-103">CDynamicOutputPin.~CDynamicOutputPin destructor</span></span>
 
-<span data-ttu-id="eca20-104">Método de destructor.</span><span class="sxs-lookup"><span data-stu-id="eca20-104">Destructor method.</span></span>
+<span data-ttu-id="827c4-104">Método destructor.</span><span class="sxs-lookup"><span data-stu-id="827c4-104">Destructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="eca20-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="eca20-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="827c4-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="827c4-105">Syntax</span></span>
 
 
 ```C++
@@ -36,22 +36,22 @@ ms.locfileid: "105661363"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="eca20-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="eca20-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="827c4-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="827c4-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="eca20-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="eca20-107">Requirement</span></span> | <span data-ttu-id="eca20-108">Value</span><span class="sxs-lookup"><span data-stu-id="eca20-108">Value</span></span> |
+| <span data-ttu-id="827c4-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="827c4-107">Requirement</span></span> | <span data-ttu-id="827c4-108">Value</span><span class="sxs-lookup"><span data-stu-id="827c4-108">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="eca20-109">Encabezado</span><span class="sxs-lookup"><span data-stu-id="eca20-109">Header</span></span><br/>  | <dl> <span data-ttu-id="eca20-110"><dt>Amfilter. h (incluir streams. h)</dt></span><span class="sxs-lookup"><span data-stu-id="eca20-110"><dt>Amfilter.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
-| <span data-ttu-id="eca20-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="eca20-111">Library</span></span><br/> | <dl> <span data-ttu-id="eca20-112"><dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt></span><span class="sxs-lookup"><span data-stu-id="eca20-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="827c4-109">Encabezado</span><span class="sxs-lookup"><span data-stu-id="827c4-109">Header</span></span><br/>  | <dl> <span data-ttu-id="827c4-110"><dt>Amfilter.h (incluir Streams.h)</dt></span><span class="sxs-lookup"><span data-stu-id="827c4-110"><dt>Amfilter.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
+| <span data-ttu-id="827c4-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="827c4-111">Library</span></span><br/> | <dl> <span data-ttu-id="827c4-112"><dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt></span><span class="sxs-lookup"><span data-stu-id="827c4-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="eca20-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="eca20-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="827c4-113">Consulte también</span><span class="sxs-lookup"><span data-stu-id="827c4-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="eca20-114">**Clase CDynamicOutputPin**</span><span class="sxs-lookup"><span data-stu-id="eca20-114">**CDynamicOutputPin Class**</span></span>](cdynamicoutputpin.md)
+[<span data-ttu-id="827c4-114">**CDynamicOutputPin (clase)**</span><span class="sxs-lookup"><span data-stu-id="827c4-114">**CDynamicOutputPin Class**</span></span>](cdynamicoutputpin.md)
 </dt> </dl>
 
  
