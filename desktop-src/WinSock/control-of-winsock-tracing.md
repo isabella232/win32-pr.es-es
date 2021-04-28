@@ -1,119 +1,119 @@
 ---
-description: .
+description: Control del seguimiento de Winsock
 ms.assetid: b079bdfc-b192-451c-967d-dcefa94b7ec7
-title: Control de seguimiento de Winsock
+title: Control del seguimiento de Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 910b15ece4581525fddc25213c630e24d0e49110
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75f256c4e3927672bc13b14bfb72ca3b02c22bde
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705642"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110553"
 ---
-# <a name="control-of-winsock-tracing"></a>Control de seguimiento de Winsock
+# <a name="control-of-winsock-tracing"></a>Control del seguimiento de Winsock
 
 El seguimiento de Winsock se puede controlar mediante cualquiera de los métodos siguientes:
 
 -   Herramientas de línea de comandos
 
-    En Windows Vista y Windows Server 2008 se incluyen dos herramientas de línea de comandos que se usan para controlar el seguimiento y convertir el archivo de registro de seguimiento binario en texto legible.
+    Se incluyen dos herramientas de línea de comandos con Windows Vista y Windows Server 2008 que se usan para controlar el seguimiento y convertir el archivo de registro de seguimiento binario en texto legible.
 
-    La herramienta de **logman.exe** se utiliza para iniciar o detener el seguimiento de Winsock.
+    La **logman.exe** se usa para iniciar o detener el seguimiento de Winsock.
 
-    La herramienta de **tracerpt.exe** se utiliza para convertir el archivo de registro de seguimiento binario en un archivo de texto legible.
+    La **tracerpt.exe** se usa para convertir el archivo de registro de seguimiento binario en un archivo de texto legible.
 
 -   Visor de eventos
 
-    El Visor de eventos en Windows Vista y versiones posteriores también puede usarse para habilitar el seguimiento de Winsock. El Visor de eventos es accesible bajo Herramientas administrativas en el menú Inicio.
+    La Visor de eventos en Windows Vista y versiones posteriores también se puede usar para habilitar el seguimiento de Winsock. El Visor de eventos es accesible en Herramientas administrativas desde el menú Inicio.
 
-## <a name="using-logman-and-tracert"></a>Usar Logman y tracert
+## <a name="using-logman-and-tracert"></a>Uso de logman y tracert
 
-El seguimiento de eventos de red Winsock está deshabilitado de forma predeterminada en Windows Vista y versiones posteriores.
+El seguimiento de eventos de red de Winsock está deshabilitado de forma predeterminada en Windows Vista y versiones posteriores.
 
-El comando siguiente inicia el seguimiento de eventos de red Winsock en un equipo, establece el nombre de la sesión de seguimiento de eventos en mywinsocksession y envía la salida a un archivo de registro binario denominado winsocklogfile. ETL:
+El siguiente comando inicia el seguimiento de eventos de red winsock en un equipo, establece el nombre de la sesión de seguimiento de eventos en mywinsocksession y envía la salida a un archivo de registro binario denominado winsocklogfile.etl:
 
-**Logman Start-ETS mywinsocksession-o winsocklogfile. ETL-p Microsoft-Windows-Winsock-AFD**
+**logman start -ets mywinsocksession -o winsocklogfile.etl -p Microsoft-Windows-Winsock-AFD**
 
-Los archivos de registro se crean en el directorio actual con nombres de archivo con el formato winsocklogfile \_ 000001. ETL.
+Los archivos de registro se crean en el directorio actual con nombres de archivo con el formato winsocklogfile \_ 000001.etl
 
-El comando siguiente detiene el seguimiento de Winsock anterior en un equipo para la sesión denominada mywinsocksession:
+El siguiente comando detiene el seguimiento anterior de Winsock en un equipo para la sesión denominada mywinsocksession:
 
-**Logman STOP-ETS mywinsocksession**
+**logman stop -ets mywinsocksession**
 
-Un archivo de registro binario se escribirá en la ubicación especificada por el parámetro – o. Para traducir el archivo binario en un archivo de texto legible, se usa **tracerpt.exe** :
+Se escribirá un archivo de registro binario en la ubicación especificada por el parámetro –o. Para convertir el archivo binario en un archivo de texto legible, **tracerpt.exe** se usa:
 
-**tracerpt.exe <nombre del archivo. ETL> – o winsocktracelog.txt**
+**tracerpt.exe <nombre del archivo .etl> –o winsocktracelog.txt**
 
-Si se prefiere un archivo de salida que contenga XML en lugar de texto sin formato, se utiliza el comando siguiente:
+Si se prefiere un archivo de salida que contenga xml en lugar de texto sin formato, se usa el comando siguiente:
 
-**tracerpt.exe <nombre del archivo. ETL> – o winsocktracelog.xml: de XML**
+**tracerpt.exe <nombre del archivo .etl> –o winsocktracelog.xml –of xml**
 
-El seguimiento de cambios del catálogo Winsock está habilitado de forma predeterminada en Windows Vista y versiones posteriores.
+El seguimiento de cambios del catálogo de Winsock está habilitado de forma predeterminada en Windows Vista y versiones posteriores.
 
 > [!Note]  
-> Los proveedores de servicios superpuestos están desusados. A partir de Windows 8 y Windows Server 2012, use la [plataforma de filtrado de Windows](../fwp/windows-filtering-platform-start-page.md).
+> Los proveedores de servicios por capas están en desuso. A partir de Windows 8 y Windows Server 2012, use [la Plataforma de filtrado de Windows](../fwp/windows-filtering-platform-start-page.md).
 
  
 
-El comando siguiente inicia el seguimiento de cambios del catálogo Winsock para los proveedores de servicios por capas (LSP) en un equipo, establece el nombre de la sesión de seguimiento de eventos en mywinsockcatalogsession y envía la salida a un archivo de registro binario denominado winsockcataloglogfile. ETL:
+El siguiente comando inicia el seguimiento de cambios del catálogo de Winsock para proveedores de servicios en capas (LSP) en un equipo, establece el nombre de la sesión de seguimiento de eventos en mywinsockcatalogsession y envía la salida a un archivo de registro binario denominado winsockcataloglogfile.etl:
 
-**Logman Start-ETS mywinsockcatalogsession-o winsockcataloglogfile. ETL-p Microsoft-Windows-Winsock-WS2HELP**
+**logman start -ets mywinsockcatalogsession -o winsockcataloglogfile.etl -p Microsoft-Windows-Winsock-WS2HELP**
 
-Los archivos de registro se crean en el directorio actual con nombres de archivo con el formato winsockcataloglogfile \_ 000001. ETL.
+Los archivos de registro se crean en el directorio actual con nombres de archivo con el formato winsockcataloglogfile \_ 000001.etl
 
-El comando siguiente detiene el seguimiento de Winsock anterior en un equipo para la sesión denominada mi sesión:
+El siguiente comando detiene el seguimiento de Winsock anterior en un equipo para la sesión denominada mysession:
 
-**Logman STOP-ETS mywinsockcatalogsession**
+**logman stop -ets mywinsockcatalogsession**
 
-Un archivo de registro binario se escribirá en la ubicación especificada por el parámetro – o. Para traducir el archivo binario en un archivo de texto legible, se usa **tracerpt.exe** :
+Se escribirá un archivo de registro binario en la ubicación especificada por el parámetro –o. Para convertir el archivo binario en un archivo de texto **legible,tracerpt.exe** se usa:
 
-**tracerpt.exe <nombre del archivo. ETL> – o winsockcatalogtracelog.txt**
+**tracerpt.exe <nombre del archivo .etl> –o winsockcatalogtracelog.txt**
 
-Si se prefiere un archivo de salida que contenga XML en lugar de texto sin formato, se utiliza el comando siguiente:
+Si se prefiere un archivo de salida que contiene xml en lugar de texto sin formato, se usa el siguiente comando:
 
-**tracerpt.exe <nombre del archivo. ETL> – o winsockcatalogtracelog.xml: de XML**
+**tracerpt.exe <nombre del archivo .etl> –o winsockcatalogtracelog.xml –of xml**
 
-## <a name="using-event-viewer-to-start-winsock-network-event-tracing"></a>Uso de Visor de eventos para iniciar el seguimiento de eventos de red Winsock
+## <a name="using-event-viewer-to-start-winsock-network-event-tracing"></a>Uso Visor de eventos para iniciar el seguimiento de eventos de Winsock Network
 
-Al abrir Visor de eventos, el panel izquierdo contiene la lista de eventos. Abra **registros de aplicaciones y servicios** , vaya a **Microsoft \\ Windows \\ Winsock Network Event** como origen y seleccione **operativo**.
+Al abrir Visor de eventos, el panel izquierdo contiene la lista de eventos. Abra **Registros de aplicaciones y servicios,** vaya a Evento de red **\\ \\ Winsock** de Microsoft Windows como origen y seleccione **Operativo.**
 
-En el panel acción, seleccione **propiedades de registro** y active la casilla **Habilitar registro** . Una vez habilitado el registro, también puede cambiar el tamaño del archivo de registro si es necesario.
+En el panel Acción, seleccione **Propiedades del registro y** active la **casilla** Habilitar registro . Una vez habilitado el registro, también puede cambiar el tamaño del archivo de registro si es necesario.
 
-Ahora está habilitado el seguimiento de eventos de red Winsock y todo lo que necesita hacer es la acción actualizar para actualizar la lista de eventos que se han registrado. Para detener el registro, simplemente desactive el mismo botón de radio.
+El seguimiento de eventos de red de Winsock ahora está habilitado y todo lo que necesita hacer es hacer clic en la acción Actualizar para actualizar la lista de eventos que se han registrado. Para detener el registro, simplemente desactive el mismo botón de radio.
 
-Es posible que tenga que aumentar el tamaño del registro en función del número de eventos que desee ver. Un inconveniente de usar la Visor de eventos para el seguimiento de Winsock es que no carga todos los recursos de cadena, por lo que los mensajes que se muestran en el campo de Descripción (una vez que se selecciona un evento) a veces son difíciles de leer (un argumento al que se debe dar formato como Hex se mostrará en formato decimal, por ejemplo). Sin embargo, puede seleccionar la pestaña **detalles** en la descripción del evento, que muestra la entrada del registro XML sin formato, que suele tener argumentos más fáciles de entender.
+Es posible que deba aumentar el tamaño del registro en función del número de eventos que desee ver. Un inconveniente del uso de Visor de eventos para el seguimiento de Winsock es que no carga todos los recursos de cadena, por lo que los mensajes que se muestran en el campo Descripción (una vez seleccionado un evento) a veces son difíciles de leer (un argumento con formato hexadecimal se mostrará en decimal, por ejemplo). Sin embargo, puede seleccionar la **pestaña Detalles** en la descripción del evento, que muestra la entrada de registro XML sin formato que normalmente tiene argumentos más fáciles de entender.
 
-## <a name="using-event-viewer-to-start-winsock-catalog-change-tracing"></a>Usar Visor de eventos para iniciar el seguimiento de cambios de catálogo Winsock
+## <a name="using-event-viewer-to-start-winsock-catalog-change-tracing"></a>Uso Visor de eventos para iniciar el seguimiento de cambios del catálogo de Winsock
 
-Al abrir Visor de eventos, el panel izquierdo contiene la lista de eventos. Abra **registros de aplicaciones y servicios** , vaya a **Microsoft \\ Windows \\ Winsock Catalog Change** como origen y seleccione **operativo**.
+Al abrir el Visor de eventos, el panel izquierdo contiene la lista de eventos. Abra **Registros de aplicaciones y servicios,** vaya a Cambio del catálogo de **\\ \\ Winsock** de Microsoft Windows como origen y seleccione **Operativo.**
 
-En el panel acción, seleccione **propiedades de registro** y active la casilla **Habilitar registro** . Una vez habilitado el registro, también puede cambiar el tamaño del archivo de registro si es necesario.
+En el panel Acción, seleccione **Propiedades del registro y** active la casilla **Habilitar** registro . Una vez habilitado el registro, también puede cambiar el tamaño del archivo de registro si es necesario.
 
-Ahora está habilitado el seguimiento de cambios del catálogo Winsock y lo único que debe hacer es la acción actualizar para actualizar la lista de eventos que se han registrado. Para detener el registro, simplemente desactive el mismo botón de radio.
+El seguimiento de cambios del catálogo winsock ahora está habilitado y todo lo que necesita hacer es hacer clic en la acción Actualizar para actualizar la lista de eventos que se han registrado. Para detener el registro, simplemente desactive el mismo botón de radio.
 
-Es posible que tenga que aumentar el tamaño del registro en función del número de eventos que desee ver. Un inconveniente de usar la Visor de eventos para el seguimiento de Winsock es que no carga todos los recursos de cadena, por lo que los mensajes que se muestran en el campo de Descripción (una vez que se selecciona un evento) a veces son difíciles de leer (un argumento al que se debe dar formato como Hex se mostrará en formato decimal, por ejemplo). Sin embargo, puede seleccionar la pestaña **detalles** en la descripción del evento, que muestra la entrada del registro XML sin formato, que suele tener argumentos más fáciles de entender.
+Es posible que deba aumentar el tamaño del registro en función del número de eventos que desee ver. Un inconveniente del uso de Visor de eventos para el seguimiento de Winsock es que no carga todos los recursos de cadena, por lo que los mensajes que se muestran en el campo Descripción (una vez seleccionado un evento) a veces son difíciles de leer (un argumento con formato hexadecimal se mostrará en decimal, por ejemplo). Sin embargo, puede seleccionar la **pestaña Detalles** en la descripción del evento, que muestra la entrada de registro XML sin formato que normalmente tiene argumentos más fáciles de entender.
 
-## <a name="interpreting-winsock-tracing-logs"></a>Interpretar registros de seguimiento de Winsock
+## <a name="interpreting-winsock-tracing-logs"></a>Interpretación de registros de seguimiento de Winsock
 
 Todos los eventos de seguimiento de Winsock de un registro contienen dos tipos de información:
 
--   System
+-   Sistema
 -   EventData
 
-La información del sistema contiene el nivel de registro, la hora a la que se creó la entrada de registro, el identificador de evento que representa el tipo de evento, el identificador del proceso de ejecución, el identificador del subproceso de ejecución y otra información del sistema. Un nivel de registro 4 en seguimiento de Winsock representa el registro de eventos de información. Un nivel de registro 5 en el seguimiento de Winsock representa el registro detallado de eventos.
+La información del sistema contiene el nivel de registro, la hora en que se creó la entrada de registro, el identificador de evento que representa el tipo de evento, el identificador de proceso de ejecución, el identificador del subproceso de ejecución y otra información del sistema. Un nivel de registro de 4 en el seguimiento de Winsock representa el registro de eventos de información. Un nivel de registro de 5 en el seguimiento de Winsock representa el registro detallado de eventos.
 
-El identificador del proceso de ejecución y el ID. del subproceso en la información del sistema indica el proceso y el subproceso que se estaba ejecutando cuando se produjo el evento. En muchos casos, esto representa un kernel o subproceso de trabajo y proceso, no un subproceso en modo de usuario ni el proceso de la aplicación. Por lo tanto, este campo no suele ser muy útil.
+El identificador del proceso de ejecución y el identificador de subproceso de la información del sistema indican el proceso y el subproceso que se estaba ejecutando cuando se produjo el evento. En muchos casos, esto representará un kernel o subproceso de trabajo y un proceso, no un subproceso en modo de usuario ni el proceso de la aplicación. Por lo tanto, este campo normalmente no es muy útil.
 
-Cada tipo de evento de seguimiento de Winsock tiene un identificador de evento único en la sección del sistema de los datos registrados. Estos identificadores de eventos se pueden usar fácilmente para filtrar un archivo de registro para eventos específicos de seguimiento de Winsock.
+Cada tipo de evento de seguimiento de Winsock tiene un identificador de evento único en la sección del sistema de los datos registrados. Estos iDs de evento se pueden usar fácilmente para filtrar un archivo de registro para eventos de seguimiento de Winsock específicos.
 
-El EventData contiene información específica del tipo de evento.
+Eventdata contiene información específica del tipo de evento.
 
-El parámetro Process en la información de EventData es la dirección de la estructura EPROCESS del kernel para el proceso, no el PID real. Para hacer coincidir un evento con el PID de modo de usuario, tome el valor del proceso de la información de EventData desde cualquier entrada del registro y mire antes en el registro un evento de creación de sockets con el valor del proceso. Una vez que se encuentra una coincidencia, el último parámetro de los datos del evento de creación del socket es el identificador de proceso del modo de usuario que creó el socket.
+El parámetro Process de la información de eventdata es la dirección de la estructura EPROCESS del kernel para el proceso, no el PID real. Para hacer coincidir un evento con el PID en modo de usuario, tome el valor Process de la información de eventdata de cualquier entrada de registro y busque anteriormente en el registro un evento de creación de sockets con el valor Process. Una vez que se encuentra una coincidencia, el último parámetro de los datos del evento de creación del socket es el identificador de proceso en modo de usuario que creó el socket.
 
-Se devuelve un parámetro Address en la información de EventData en algunos eventos de seguimiento de Winsock. Un parámetro Address representa una dirección IP, pero se muestra en el archivo de texto creado por la herramienta **tracerpt.exe** o en visor de eventos como bytes sin formato o como un número. Las direcciones IPv6 se muestran en formato hexadecimal, por lo que son más fáciles de entender. Las direcciones IPv4 se muestran como un número decimal grande. Los desarrolladores deberán convertir manualmente los bytes sin formato de una dirección IPv4 en la notación de dirección decimal con punto de IPv4 más familiar para poder interpretar mejor el valor.
+Se devuelve un parámetro Address en la información de eventdata en algunos eventos de seguimiento de Winsock. Un parámetro Address representa una dirección IP, pero se muestra en el archivo de texto creado por la herramienta **tracerpt.exe** o en Visor de eventos como bytes sin formato o un número. Las direcciones IPv6 se muestran en formato hexadecimal, por lo que se entienden más fácilmente. Las direcciones IPv4 se muestran como un número decimal grande. Los desarrolladores tendrán que convertir manualmente los bytes sin procesar de una dirección IPv4 en la notación de direcciones de puntos decimales IPv4 más conocida para poder interpretar mejor el valor.
 
-Se devuelve un parámetro de error en el EventData en algunos eventos de seguimiento de Winsock. Un parámetro de error tiene el formato de un código de error NTSTATUS o HRESULT. Este parámetro de error se muestra en el archivo de texto creado por la herramienta **tracerpt.exe** o en visor de eventos como un número decimal. Los desarrolladores deberán convertir manualmente el número decimal en un número hexadecimal para poder interpretar mejor el código de error en algunos casos.
+Se devuelve un parámetro Error en eventdata en algunos eventos de seguimiento de Winsock. Un parámetro Error tiene la forma de un código de error NTSTATUS o HRESULT. Este parámetro de error se muestra en el archivo de texto creado por la **herramientatracerpt.exe** o en Visor de eventos como un número decimal. Los desarrolladores tendrán que convertir manualmente el número decimal en un número hexadecimal para interpretar mejor el código de error en algunos casos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -122,10 +122,10 @@ Se devuelve un parámetro de error en el EventData en algunos eventos de seguimi
 [Seguimiento de Winsock](winsock-tracing.md)
 </dt> <dt>
 
-[Detalles de seguimiento de cambios de catálogo Winsock](winsock-layered-service-provider-tracing-event-details.md)
+[Detalles del seguimiento de cambios del catálogo de Winsock](winsock-layered-service-provider-tracing-event-details.md)
 </dt> <dt>
 
-[Detalles de seguimiento de eventos de red Winsock](winsock-tracing-event-details.md)
+[Detalles del seguimiento de eventos de Winsock Network](winsock-tracing-event-details.md)
 </dt> <dt>
 
 [Niveles de seguimiento de Winsock](winsock-tracing-levels.md)

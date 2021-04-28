@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CRenderedInputPin.CRenderedInputPin: método constructor.'
 ms.assetid: bf335750-b776-47bc-978d-e84e8b5259f7
-title: Constructor CRenderedInputPin. CRenderedInputPin (Amextra. h)
+title: Constructor CRenderedInputPin.CRenderedInputPin (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ee1ec8944d56d2aa6f46e59ac5034969ca77ea19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4bd8e864531604fb36c2abe0bcd57ac5b3a9c869
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660750"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085403"
 ---
-# <a name="crenderedinputpincrenderedinputpin-constructor"></a>Constructor CRenderedInputPin. CRenderedInputPin
+# <a name="crenderedinputpincrenderedinputpin-constructor"></a>Constructor CRenderedInputPin.CRenderedInputPin
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ CRenderedInputPin(
 *pObjectName* 
 </dt> <dd>
 
-Cadena que contiene el nombre de depuración del objeto. Para obtener más información, consulte [**clase CBaseObject**](cbaseobject.md).
+Cadena que contiene el nombre de depuración del objeto. Para obtener más información, vea [**CBaseObject (clase).**](cbaseobject.md)
 
 </dd> <dt>
 
@@ -60,24 +60,24 @@ Puntero al filtro que creó este pin.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntero a un bloqueo de [**CCritSec**](ccritsec.md) , que se usa para serializar los cambios de estado. Puede ser la misma sección crítica que el bloqueo de filtro, [**CBaseFilter:: m \_ Plock**](cbasefilter-m-plock.md).
+Puntero a un [**bloqueo CCritSec,**](ccritsec.md) que se usa para serializar los cambios de estado. Puede ser la misma sección crítica que el bloqueo de filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** que indica si el método se ha ejecutado correctamente o no.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método.
 
 </dd> <dt>
 
 *pName* 
 </dt> <dd>
 
-Cadena de caracteres anchos que contiene el nombre del PIN (también se usa como identificador del PIN).
+Cadena de caracteres anchos que contiene el nombre del pin (también se usa como identificador del pin).
 
 </dd> </dl>
 
@@ -87,16 +87,16 @@ Cadena de caracteres anchos que contiene el nombre del PIN (también se usa como
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amextra. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amextra.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CRenderedInputPin**](crenderedinputpin.md)
+[**CRenderedInputPin (clase)**](crenderedinputpin.md)
 </dt> </dl>
 
  

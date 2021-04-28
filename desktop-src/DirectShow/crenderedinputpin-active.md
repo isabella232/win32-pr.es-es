@@ -1,7 +1,7 @@
 ---
-description: 'El método activo notifica al pin que el filtro está activo ahora. Este método invalida el método CBasePin:: active.'
+description: 'Método CRenderedInputPin.Active: el método Active notifica al pin que el filtro ahora está activo. Este método invalida el método CBasePin::Active.'
 ms.assetid: e98ca947-df2f-41a7-9785-b35bd1dde1e6
-title: Método CRenderedInputPin. Active (Amextra. h)
+title: Método CRenderedInputPin.Active (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ae56439f5e19aa5c039ac81bdd8a7aafe0f2174
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8c9b06f41454d2cb9a7ac35dd7e8f8b335632f9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671037"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098933"
 ---
-# <a name="crenderedinputpinactive-method"></a>CRenderedInputPin. Active (método)
+# <a name="crenderedinputpinactive-method"></a>Método CRenderedInputPin.Active
 
-El `Active` método notifica al pin que el filtro está activo ahora. Este método invalida el método [**CBasePin:: Active**](cbasepin-active.md) .
+El `Active` método notifica al pin que el filtro ahora está activo. Este método invalida el [**método CBasePin::Active.**](cbasepin-active.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve \_ si es correcto, o un código de error en caso contrario.
+Devuelve S \_ OK si se realiza correctamente o un código de error de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ Devuelve \_ si es correcto, o un código de error en caso contrario.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amextra. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amextra.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CRenderedInputPin**](crenderedinputpin.md)
+[**CRenderedInputPin (clase)**](crenderedinputpin.md)
 </dt> </dl>
 
  

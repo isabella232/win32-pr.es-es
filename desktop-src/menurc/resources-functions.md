@@ -1,15 +1,15 @@
 ---
 title: Funciones de recursos (menús y otros recursos)
-description: .
+description: Funciones de recursos (menús y otros recursos)
 ms.assetid: dfeaaf01-f947-453e-946e-65ad9ec40958
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cb29a106483a26dbf249a0046ca0ab53105d975
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: cd8e550bd42afcb98d2a1d7b1117c6c93d19529c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104078740"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117533"
 ---
 # <a name="resource-functions-menus-and-other-resources"></a>Funciones de recursos (menús y otros recursos)
 

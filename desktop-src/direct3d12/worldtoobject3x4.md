@@ -1,5 +1,5 @@
 ---
-description: Matriz que se va a transformar de espacio mundial en el espacio de objeto.
+description: 'WorldToObject3x4: matriz para la transformación del espacio del mundo al espacio de objetos.'
 ms.assetid: ''
 title: WorldToObject3x4
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - WorldToObject3x4
 api_type:
 - NA
-ms.openlocfilehash: 6274b1d4d18aff0464d933c20f7b8052f3389e5f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cc7bf7dc2f06102b9b23eafd45655f12816c8359
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677241"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105252"
 ---
 # <a name="worldtoobject3x4"></a>WorldToObject3x4
 
-Matriz que se va a transformar de espacio mundial en el espacio de objeto. El espacio de objeto hace referencia al espacio de la estructura de aceleración de nivel inferior actual.
+Matriz para la transformación del espacio del mundo al espacio de objetos. Espacio de objeto hace referencia al espacio de la estructura de aceleración de nivel inferior actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,11 +33,11 @@ void WorldToObject3x4();
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La matriz es una transposición de la matriz **WorldToObject4x3** .
+La matriz es una contracción **de la matriz WorldToObject4x3.**
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador raytracing:
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)
@@ -47,7 +47,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador raytrac
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

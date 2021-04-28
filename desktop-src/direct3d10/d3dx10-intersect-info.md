@@ -1,7 +1,7 @@
 ---
-description: Describe una intersección de triángulo.
+description: 'D3DX10_INTERSECT_INFO estructura: describe una intersección de triángulo de rayo.'
 ms.assetid: 21658b74-6f1d-4a16-a8b3-0c7bb6edf899
-title: D3DX10_INTERSECT_INFO estructura (D3DX10. h)
+title: D3DX10_INTERSECT_INFO estructura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 87490e734299cba57952bb43d1ee4ffad8e014c8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 203daa48e766edd545bf232c4f8d94c4f17b5b2a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821175"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105463"
 ---
-# <a name="d3dx10_intersect_info-structure"></a>D3DX10 \_ estructura de información de intersección \_
+# <a name="d3dx10_intersect_info-structure"></a>Estructura INFO de INTERSECT de D3DX10 \_ \_
 
-Describe una intersección de triángulo.
+Describe una intersección de triángulo de rayo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,50 +45,50 @@ typedef struct D3DX10_INTERSECT_INFO {
 **FaceIndex**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Índice del triángulo que ha alcanzado el rayo.
+Índice del triángulo que alcanzó el rayo.
 
 </dd> <dt>
 
 **U**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coordenada de Barycentric dentro del triángulo en el que se corta el rayo.
+Coordenada centrada en el triángulo en el que el rayo forma intersección.
 
 </dd> <dt>
 
 **V**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coordenada de Barycentric dentro del triángulo en el que se corta el rayo.
+Coordenada centrada en el triángulo en el que el rayo forma intersección.
 
 </dd> <dt>
 
-**Tribu**
+**Dist**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Distancia a lo largo del rayo en el que se produjo la intersección.
+Distancia a lo largo del rayo donde se produjo la intersección.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas de Barycentric, consulte Descripción de las [coordenadas del Barycentric de Wolfram](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas baricéntricas, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,15 +96,15 @@ Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

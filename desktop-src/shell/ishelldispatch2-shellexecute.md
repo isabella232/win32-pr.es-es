@@ -1,7 +1,7 @@
 ---
-description: Realiza una operación especificada en un archivo especificado.
+description: 'Método IShellDispatch2.ShellExecute: realiza una operación especificada en un archivo especificado.'
 ms.assetid: a55e804c-ed7c-4b22-b86f-8e5653976654
-title: Método IShellDispatch2. ShellExecute (Shldisp. h)
+title: Método IShellDispatch2.ShellExecute (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ed5a8a2732f8ca358a0582d1da23aa7ffa7a98df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c058275948d5d96805ae24a76389321d7c69b8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984671"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117023"
 ---
-# <a name="ishelldispatch2shellexecute-method"></a>IShellDispatch2. ShellExecute (método)
+# <a name="ishelldispatch2shellexecute-method"></a>Método IShellDispatch2.ShellExecute
 
 Realiza una operación especificada en un archivo especificado.
 
@@ -57,60 +57,60 @@ IShellDispatch2.ShellExecute( _
 
 <dl> <dt>
 
-*sFile* \[ de\]
+*sFile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el nombre del archivo en el que **ShellExecute** realizará la acción especificada por *vOperation*.
+Cadena **que** contiene el nombre del archivo en el que **ShellExecute** realizará la acción especificada por *vOperation*.
 
 </dd> <dt>
 
 *vArguments* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Cadena que contiene los valores de los parámetros de la operación.
+Cadena que contiene valores de parámetro para la operación.
 
 </dd> <dt>
 
 *vDirectory* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Ruta de acceso completa del directorio que contiene el archivo especificado por *sFile*. Si no se especifica este parámetro, se utiliza el directorio de trabajo actual.
+Ruta de acceso completa del directorio que contiene el archivo especificado por *sFile*. Si no se especifica este parámetro, se usa el directorio de trabajo actual.
 
 </dd> <dt>
 
 *vOperation* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-La operación que se va a realizar. Este valor se establece en una de las cadenas de verbo que admite el archivo. Para obtener una explicación de los verbos, vea la sección Comentarios. Si no se especifica este parámetro, se realiza la operación predeterminada.
+La operación que se va a realizar. Este valor se establece en una de las cadenas de verbo admitidas por el archivo . Para obtener una explicación de los verbos, consulte la sección Comentarios. Si no se especifica este parámetro, se realiza la operación predeterminada.
 
 </dd> <dt>
 
 *vShow* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Recomendación sobre cómo se debe mostrar inicialmente la ventana de la aplicación. La aplicación puede omitir esta recomendación. Este parámetro puede ser uno de los valores siguientes. Si no se especifica este parámetro, la aplicación usa su valor predeterminado.
+Una recomendación sobre cómo se debe mostrar inicialmente la ventana de la aplicación. La aplicación puede omitir esta recomendación. Este parámetro puede ser uno de los valores siguientes. Si no se especifica este parámetro, la aplicación usa su valor predeterminado.
 
 
 
-| Value                                                                                                                               | Significado                                                                                                                                                  |
+| Valor                                                                                                                               | Significado                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt></dt><dt>0</dt> </dl>  | Abra la aplicación con una ventana oculta.<br/>                                                                                                    |
-| <dl> <dt></dt> <dt>1</dt> </dl>  | Abra la aplicación con una ventana normal. Si la ventana está minimizada o maximizada, el sistema la restaura a su tamaño y posición originales.<br/> |
+| <dl> <dt></dt> <dt>1</dt> </dl>  | Abra la aplicación con una ventana normal. Si la ventana se minimiza o maximiza, el sistema la restaura a su tamaño y posición originales.<br/> |
 | <dl> <dt></dt> <dt>2</dt> </dl>  | Abra la aplicación con una ventana minimizada.<br/>                                                                                                 |
 | <dl> <dt></dt> <dt>3</dt> </dl>  | Abra la aplicación con una ventana maximizada.<br/>                                                                                                 |
 | <dl> <dt></dt><dt>4</dt> </dl>  | Abra la aplicación con su ventana en su tamaño y posición más recientes. La ventana activa permanece activa.<br/>                                  |
-| <dl> <dt></dt><dt>5</dt> </dl>  | Abra la aplicación con su ventana en su posición y tamaño actuales.<br/>                                                                        |
-| <dl> <dt></dt><dt>7</dt> </dl>  | Abra la aplicación con una ventana minimizada. La ventana activa permanece activa.<br/>                                                               |
+| <dl> <dt></dt><dt>5</dt> </dl>  | Abra la aplicación con su ventana en su tamaño y posición actuales.<br/>                                                                        |
+| <dl> <dt></dt> <dt>7</dt> </dl>  | Abra la aplicación con una ventana minimizada. La ventana activa permanece activa.<br/>                                                               |
 | <dl> <dt></dt><dt>10</dt> </dl> | Abra la aplicación con su ventana en el estado predeterminado especificado por la aplicación.<br/>                                                       |
 
 
@@ -119,19 +119,19 @@ Recomendación sobre cómo se debe mostrar inicialmente la ventana de la aplicac
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. ShellExecute**](./shell-shellexecute.md) .
+Este método se implementa y se accede a través del [**método Shell.ShellExecute.**](./shell-shellexecute.md)
 
-Este método es equivalente a iniciar uno de los comandos asociados al menú contextual de un archivo. Cada comando se representa mediante una cadena de verbo. El conjunto de verbos admitidos varía de un archivo a un archivo. El verbo que se admite con mayor frecuencia es "Open", que suele ser el verbo predeterminado. Es posible que se admitan otros verbos solo en determinados tipos de archivos. Para obtener más información sobre los verbos de Shell, vea [iniciar aplicaciones](launch.md) o [extender menús contextuales](context.md).
+Este método equivale a iniciar uno de los comandos asociados al menú contextual de un archivo. Cada comando se representa mediante una cadena de verbo. El conjunto de verbos admitidos varía de un archivo a otro. El verbo más comúnmente admitido es "open", que también suele ser el verbo predeterminado. Otros verbos solo pueden ser compatibles con determinados tipos de archivos. Para obtener más información sobre los verbos de Shell, vea [Iniciar aplicaciones](launch.md) o [Ampliar menús contextuales.](context.md)
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **ShellExecute** para abrir el Bloc de notas. Se muestra el uso de JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **ShellExecute para** abrir el Bloc de notas. El uso se muestra para JScript y VBScript.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -147,7 +147,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -170,13 +170,13 @@ VBScript
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

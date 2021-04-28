@@ -1,7 +1,7 @@
 ---
-description: Dibuja un subconjunto de una malla.
+description: 'Método ID3DX10Mesh::D rawSubset: dibuja un subconjunto de una malla.'
 ms.assetid: e785949e-fcda-4ef9-b50a-193cd954e97d
-title: ID3DX10Mesh::D método rawSubset (D3DX10. h)
+title: Método ID3DX10Mesh::D rawSubset (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 80beceebeead84a782cc7852ac0d2fe15ad61ff3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8441bfe4c5d965733a40816ff2def1015f3eb79c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678793"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084043"
 ---
-# <a name="id3dx10meshdrawsubset-method"></a>ID3DX10Mesh::D método rawSubset
+# <a name="id3dx10meshdrawsubset-method"></a>Método ID3DX10Mesh::D rawSubset
 
 Dibuja un subconjunto de una malla.
 
@@ -40,12 +40,12 @@ HRESULT DrawSubset(
 
 <dl> <dt>
 
-*AttribId* \[ de\]
+*AttribId* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Especifica el subconjunto de la malla que se va a dibujar. Este valor se usa para diferenciar caras en una malla como perteneciente a uno o varios grupos de atributos.
+Especifica qué subconjunto de la malla se va a dibujar. Este valor se usa para diferenciar las caras de una malla como pertenecientes a uno o varios grupos de atributos.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Especifica el subconjunto de la malla que se va a dibujar. Este valor se usa par
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con distintas texturas, Estados de representación, materiales, etc. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla sin dibujar un identificador de atributo determinado (AttribId) al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado (AttribId) al dibujar el marco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,19 +65,19 @@ Una tabla de atributos se usa para identificar las áreas de la malla que deben 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

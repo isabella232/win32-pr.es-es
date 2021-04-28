@@ -1,7 +1,7 @@
 ---
-description: Recupera información del sistema.
+description: 'Método IShellDispatch2.GetSystemInformation: recupera información del sistema.'
 ms.assetid: 57c066e3-080f-4ecc-b56e-877f0569e901
-title: Método IShellDispatch2. GetSystemInformation (Shldisp. h)
+title: Método IShellDispatch2.GetSystemInformation (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 624c7383d458f20a13f0e2249ec302181fc4a7ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a81ac091dc1905c1cbcd2c41575c907ce957e60c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908235"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117113"
 ---
-# <a name="ishelldispatch2getsysteminformation-method"></a>IShellDispatch2. GetSystemInformation, método
+# <a name="ishelldispatch2getsysteminformation-method"></a>Método IShellDispatch2.GetSystemInformation
 
 Recupera información del sistema.
 
@@ -49,12 +49,12 @@ IShellDispatch2.GetSystemInformation( _
 
 <dl> <dt>
 
-*sName* \[ de\]
+*sName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que especifica la información del sistema que se solicita.
+Cadena **que** especifica la información del sistema que se solicita.
 
 </dd> </dl>
 
@@ -62,21 +62,21 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Devuelve el valor de la información del sistema solicitada. El tipo de valor devuelto depende de la información del sistema que se solicite. Para obtener información detallada, consulte la sección Comentarios.
+Devuelve el valor de la información solicitada del sistema. El tipo de valor devuelto depende de la información del sistema que se solicite. Para obtener información detallada, consulte la sección Comentarios.
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Devuelve el valor de la información del sistema solicitada. El tipo de valor devuelto depende de la información del sistema que se solicite. Para obtener información detallada, consulte la sección Comentarios.
+Devuelve el valor de la información solicitada del sistema. El tipo de valor devuelto depende de la información del sistema que se solicite. Para obtener información detallada, consulte la sección Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. GetSystemInformation**](./shell-getsysteminformation.md) .
+Este método se implementa y se accede a través del [**método Shell.GetSystemInformation.**](./shell-getsysteminformation.md)
 
-Este método se puede utilizar para solicitar muchos valores de información del sistema. En la tabla siguiente se proporciona el valor de *sName* que se usa para solicitar la información y el tipo asociado del valor devuelto.
+Este método se puede usar para solicitar muchos valores de información del sistema. En la tabla siguiente se proporciona *el valor sName* que se usa para solicitar la información y el tipo asociado del valor devuelto.
 
 
 
@@ -90,7 +90,7 @@ DirectoryServiceAvailable
 
 **Boolean**
 
-Establézcalo en **true** si el servicio de directorio está disponible; en caso contrario, **false**.
+Establezca en **true** si el servicio de directorio está disponible; de lo contrario, **false**.
 
 DoubleClickTime
 
@@ -102,47 +102,47 @@ ProcessorLevel
 
 **Entero**
 
-**Windows Vista y versiones posteriores**. Nivel de procesador. Devuelve 3, 4 o 5 para los procesadores x386, x486 y Pentium, respectivamente.
+**Windows Vista y versiones posteriores.** Nivel de procesador. Devuelve 3, 4 o 5 para procesadores de nivel x386, x486 y Pentium, respectivamente.
 
-Velocidaddeprocesador
+ProcessorSpeed
 
 **Entero**
 
-La velocidad del procesador, en megahercios (MHz).
+Velocidad del procesador, en megahercios (MHz).
 
 ProcessorArchitecture
 
 **Entero**
 
-La arquitectura del procesador. Para obtener más información, consulte la descripción del miembro **wProcessorArchitecture** de la estructura de [**\_ información del sistema**](/windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info) .
+Arquitectura del procesador. Para obtener más información, vea la explicación del **miembro wProcessorArchitecture** de la [**estructura SYSTEM \_ INFO.**](/windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info)
 
 PhysicalMemoryInstalled
 
 **Entero**
 
-La cantidad de memoria física instalada, en bytes.
+Cantidad de memoria física instalada, en bytes.
 
-Lo siguiente solo es válido en Windows XP.
+Los siguientes son válidos solo en Windows XP.
 
-Archivos ISO \_ Professional
-
-**Boolean**
-
-Establézcalo en **true** si el sistema operativo es Windows XP Professional Edition; en caso contrario, **false**.
-
-Personal de archivos ISO \_
+IsOS \_ Professional
 
 **Boolean**
 
-Establézcalo en **true** si el sistema operativo es Windows XP Home Edition; en caso contrario, **false**.
+Establezca en **true** si el sistema operativo es Windows XP Professional Edition; de lo contrario, **false**.
+
+IsOS \_ Personal
+
+**Boolean**
+
+Establezca en **true** si el sistema operativo es Windows XP Home Edition; de lo contrario, **false**.
 
 Lo siguiente solo es válido en Windows XP y versiones posteriores.
 
-Archivos ISO \_ DomainMember
+DomainMember de IsOS \_
 
 **Boolean**
 
-Establézcalo en **true** si el equipo es miembro de un dominio; en caso contrario, **false**.
+Establezca en **true** si el equipo es miembro de un dominio; de lo contrario, **false**.
 
 
 
@@ -152,9 +152,9 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **GetSystemInformation** para JScript y VBScript.
+En los ejemplos siguientes se muestra el uso **de GetSystemInformation** para JScript y VBScript.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -172,7 +172,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -197,13 +197,13 @@ VBScript
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

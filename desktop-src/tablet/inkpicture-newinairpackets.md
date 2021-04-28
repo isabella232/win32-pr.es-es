@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando se detecta un paquete en el aire.
+description: 'Evento InkPicture.NewInAirPackets: se produce cuando se ve un paquete en el aire.'
 ms.assetid: 30bc423d-0642-4515-9e51-a8b8b36aecad
-title: Evento InkPicture. NewInAirPackets (Msinkaut. h)
+title: Evento InkPicture.NewInAirPackets (Ms inkut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0331eb4e855e2051cd8b2b6d7b312d7f32e76096
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0de8f2423817bada84f83b63de1517393740db4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716306"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086563"
 ---
-# <a name="inkpicturenewinairpackets-event"></a>Evento InkPicture. NewInAirPackets
+# <a name="inkpicturenewinairpackets-event"></a>Evento InkPicture.NewInAirPackets
 
-Se produce cuando se detecta un paquete en el aire.
+Se produce cuando se ve un paquete en el aire.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,26 +32,26 @@ void NewInAirPackets(
 
 <dl> <dt>
 
-*Cursor* \[ de de\]
+*Cursor* \[ En\]
 </dt> <dd>
 
-El objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el evento **NewInAirPackets** .
+Objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el **evento NewInAirPackets.**
 
 </dd> <dt>
 
-*PacketCount* \[ de\]
+*PacketCount* \[ En\]
 </dt> <dd>
 
-El número de paquetes en Air recibidos.
+Número de paquetes en el aire recibidos.
 
 </dd> <dt>
 
 *PacketData* \[ in, out\]
 </dt> <dd>
 
-Una matriz que contiene los datos seleccionados para el paquete.
+Matriz que contiene los datos seleccionados para el paquete.
 
-Para obtener más información sobre la estructura de variante, vea [usar la biblioteca com](using-the-com-library.md).
+Para obtener más información sobre la estructura VARIANT, vea [Usar la biblioteca COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -59,15 +59,15 @@ Para obtener más información sobre la estructura de variante, vea [usar la bib
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se crea un paquete en el aire cuando un usuario mueve un lápiz cerca de la tableta y el cursor está dentro de la ventana del objeto del recopilador de tinta o el usuario mueve un mouse dentro de la ventana asociada del objeto del recopilador de tinta. Los eventos **NewInAirPackets** se generan rápidamente y el controlador de eventos debe ser rápido o se ve afectado por el rendimiento.
+Se crea un paquete en el aire cuando un usuario mueve un lápiz cerca de la tableta y el cursor está dentro de la ventana del objeto del recopilador de entrada de lápiz o el usuario mueve un mouse dentro de la ventana asociada del objeto del recopilador de entrada de lápiz. **Los eventos NewInAirPackets** se generan rápidamente y el controlador de eventos debe ser rápido o el rendimiento se puede ver afectado.
 
-Este método de evento se define en las interfaces de solo distribución (dispinterfaces) **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** y **\_ IInkPictureEvents** con el identificador DISPID \_ ICENewInAirPackets.
+Este método de evento se define en las interfaces de solo envío (dispinterfaces) **\_ de IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador DE DISPID \_ ICENewInAirPackets.
 
-El evento **NewInAirPackets** se desencadena incluso cuando está en modo de selección o borrado, no solo cuando se inserta una entrada manuscrita. Esto requiere que supervise el modo de edición (que es responsable de establecer) y tenga en cuenta el modo antes de interpretar el evento. La ventaja de este requisito es mayor libertad para innovar en la plataforma a través de un mayor conocimiento de los eventos de plataforma.
+El **evento NewInAirPackets** se desencadena incluso en el modo de selección o borrado, no solo al insertar entrada manuscrita. Esto requiere que supervise el modo de edición (del que es responsable de la configuración) y tenga en cuenta el modo antes de interpretar el evento. La ventaja de este requisito es una mayor libertad para innovar en la plataforma a través de un mayor conocimiento de los eventos de la plataforma.
 
-Para establecer qué propiedades están contenidas en esta matriz, use la propiedad [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_desiredpacketdescription) del objeto de recopilador de tinta. La matriz que devuelve el parámetro *PacketData* contiene los datos de esas propiedades.
+Para establecer qué propiedades están contenidas en esta matriz, use la [**propiedad DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_desiredpacketdescription) del objeto del recopilador de entrada de lápiz. La matriz que devuelve *el parámetro PacketData* contiene los datos de esas propiedades.
 
 > [!Note]  
 > Aunque puede modificar los datos del paquete, estas modificaciones no se conservan ni se usan.
@@ -78,16 +78,16 @@ Para establecer qué propiedades están contenidas en esta matriz, use la propie
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -100,7 +100,7 @@ Para establecer qué propiedades están contenidas en esta matriz, use la propie
 [**Evento NewPackets**](inkpicture-newpackets.md)
 </dt> <dt>
 
-[**Interfaz IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
+[**IInkCursor (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> </dl>
 
  

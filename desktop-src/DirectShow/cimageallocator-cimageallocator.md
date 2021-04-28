@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CImageAllocator.CImageAllocator: método constructor.'
 ms.assetid: 8c215b16-98e5-42fb-a95b-b6df1ade180e
-title: Constructor CImageAllocator. CImageAllocator (Winutil. h)
+title: Constructor CImageAllocator.CImageAllocator (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5f6873e8cc073e0b716f94c980ecceba8f4512f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f17ae78b668f6cc35e454c5e4e83d38727077ef7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660821"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085763"
 ---
-# <a name="cimageallocatorcimageallocator-constructor"></a>Constructor CImageAllocator. CImageAllocator
+# <a name="cimageallocatorcimageallocator-constructor"></a>Constructor CImageAllocator.CImageAllocator
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,10 +58,10 @@ Puntero a una cadena que contiene el nombre de depuración del asignador. Para o
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . Establezca el valor en es \_ correcto antes de crear el objeto. Si se produce un error en el constructor, el valor se establece en un código de error.
+Puntero a un **valor HRESULT.** Establezca el valor en S \_ OK antes de crear el objeto. Si se produce un error en el constructor, el valor se establece en un código de error.
 
 </dd> </dl>
 
@@ -71,16 +71,16 @@ Puntero a un valor **HRESULT** . Establezca el valor en es \_ correcto antes de 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImageAllocator**](cimageallocator.md)
+[**CImageAllocator (clase)**](cimageallocator.md)
 </dt> </dl>
 
  

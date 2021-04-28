@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CMediaSample.~CMediaSample: método destructor.'
 ms.assetid: 915f1b64-9ed1-4c81-b03a-52c0df2e1d74
-title: CMediaSample. ~ CMediaSample (Amfilter. h)
+title: Destructor CMediaSample.~CMediaSample (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ae0fdd718f3562e3a101149320dd7b7a8c7a869d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a0f218ee2f9c78abc4e704eaf550fffa01df5b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671554"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099113"
 ---
-# <a name="cmediasamplecmediasample-destructor"></a>CMediaSample. ~ CMediaSample (destructor)
+# <a name="cmediasamplecmediasample-destructor"></a>Destructor CMediaSample.~CMediaSample
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ Método de destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

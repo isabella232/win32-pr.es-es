@@ -1,7 +1,7 @@
 ---
-description: Devuelve un valor que indica si se está ejecutando un servicio determinado.
+description: 'Método Shell.IsServiceRunning: devuelve un valor que indica si se está ejecutando un servicio determinado.'
 ms.assetid: FDC41C2D-7462-458f-BBE6-D97260C26B6C
-title: Método Shell. IsServiceRunning (Shldisp. h)
+title: Método Shell.IsServiceRunning (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c3a65be4955c6f49e8e6baa49cd9dedb82fc5cc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01af900bb7930ec7b6dde0b0700c83f211733dc3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909881"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083729"
 ---
-# <a name="shellisservicerunning-method"></a>Shell. IsServiceRunning (método)
+# <a name="shellisservicerunning-method"></a>Método Shell.IsServiceRunning
 
 Devuelve un valor que indica si se está ejecutando un servicio determinado.
 
@@ -49,12 +49,12 @@ Shell.IsServiceRunning( _
 
 <dl> <dt>
 
-*sServiceName* \[ de\]
+*sServiceName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el nombre del servicio.
+Cadena **que** contiene el nombre del servicio.
 
 </dd> </dl>
 
@@ -62,25 +62,25 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Devuelve _ *true** si se está ejecutando el servicio especificado por *sServiceName* ; en caso contrario, **false**.
+Devuelve **true** si se está ejecutando el servicio especificado *por sServiceName;* de lo contrario, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Devuelve _ *true** si se está ejecutando el servicio especificado por *sServiceName* ; en caso contrario, **false**.
+Devuelve **true** si se está ejecutando el servicio especificado *por sServiceName;* de lo contrario, **false**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **IsServiceRunning** para determinar si el servicio themes se está ejecutando para una aplicación. Se muestra el uso de JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **IsServiceRunning para** determinar si el servicio Themes se está ejecutando para una aplicación. El uso se muestra para JScript y VBScript.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -95,7 +95,7 @@ function fnIsServiceRunningJ()
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -117,13 +117,13 @@ end function
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

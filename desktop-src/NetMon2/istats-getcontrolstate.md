@@ -1,7 +1,7 @@
 ---
-description: El método GetControlState recupera el estado de la captura, que indica si la captura se está ejecutando o está en pausa.
+description: 'Método IStats::GetControlState: el método GetControlState recupera el estado de la captura, lo que indica si la captura se está ejecutando o en pausa.'
 ms.assetid: 0faf2300-d9ff-4fe0-9d50-18beafd1daea
-title: 'IStas:: GetControlState (método) (Netmon. h)'
+title: Método IStats::GetControlState (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: a83b5d20461b28b7022bfdc3ddbf3d5d92149c26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25532293335756a872ef5104d5eef66027fe2ae4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689562"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098473"
 ---
-# <a name="istatsgetcontrolstate-method"></a>IStas:: GetControlState (método)
+# <a name="istatsgetcontrolstate-method"></a>IStats::GetControlState (método)
 
-El método **GetControlState** recupera el estado de la [*captura*](c.md), que indica si la captura se está ejecutando o está en pausa.
+El **método GetControlState** recupera el estado de [*la*](c.md)captura , lo que indica si la captura se está ejecutando o en pausa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,14 +41,14 @@ HRESULT STDMETHODCALLTYPE GetControlState(
 
 <dl> <dt>
 
-*IsRunnning* \[ enuncia\]
+*IsRunnning* \[ out\]
 </dt> <dd>
 
 Indicador de que la captura actual se está ejecutando, incluido si la captura está en pausa.
 
 </dd> <dt>
 
-*IsPaused* \[ enuncia\]
+*IsPaused* \[ out\]
 </dt> <dd>
 
 Indicador de que la captura actual está en pausa.
@@ -57,55 +57,55 @@ Indicador de que la captura actual está en pausa.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                            | Descripción                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl>   | NPP no está conectado a la red. Llame a los [istas:: Connect](istats-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ no \_ solo estadísticas \_**</dt> </dl> | NPP está conectado a la red, pero no con el método [istas:: Connect](istats-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame [a IStats::Connect](istats-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Connect.](istats-connect.md)<br/>                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede llamar a este método cada vez que el NPP esté conectado a la red. Puede usar este método para averiguar si se está ejecutando una captura, si la captura está en pausa, o si se ha detenido la captura pero el NPP no está desconectado.
+Se puede llamar a este método cada vez que el NPP está conectado a la red. Puede usar este método para averiguar si se está ejecutando una captura, si la captura está en pausa o si la captura se ha detenido pero el NPP no está desconectado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[IStas](istats.md)
+[IStats](istats.md)
 </dt> <dt>
 
-[ISta:: Connect](istats-connect.md)
+[IStats::Connect](istats-connect.md)
 </dt> <dt>
 
-[IStas::P ause](istats-pause.md)
+[IStats::P ause](istats-pause.md)
 </dt> <dt>
 
-[IStatsC:: Start](istats-start.md)
+[IStatsC::Start](istats-start.md)
 </dt> <dt>
 
-[IStatsC:: Stop](istats-stop.md)
+[IStatsC::Stop](istats-stop.md)
 </dt> </dl>
 
  

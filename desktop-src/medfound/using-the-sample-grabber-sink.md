@@ -1,26 +1,26 @@
 ---
-description: .
+description: Uso del receptor de sample grabber
 ms.assetid: AC5970A2-6F12-448D-A444-40020C5C2607
-title: Uso del receptor del enganche de ejemplo
+title: Uso del receptor de sample grabber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e7f0d64dfeb1cf5fd977e312b34aec49cad254
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 043f64d8fdc3ac3084d2c59be8917acbbd32dde5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544774"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110512"
 ---
-# <a name="using-the-sample-grabber-sink"></a>Uso del receptor del enganche de ejemplo
+# <a name="using-the-sample-grabber-sink"></a>Uso del receptor de sample grabber
 
-El receptor del enganche de ejemplo es un receptor de medios que reenvía los datos que recibe a una interfaz de devolución de llamada de la aplicación.
+El receptor de sample grabber es un receptor multimedia que reenvía los datos que recibe a una interfaz de devolución de llamada de aplicación.
 
 > [!Note]  
-> El [lector de origen](source-reader.md) es una alternativa al receptor del enganche de ejemplo y tiene un modelo progamming más sencillo.
+> El [lector de](source-reader.md) origen es una alternativa al receptor de sample grabber y tiene un modelo de progamming más sencillo.
 
  
 
-## <a name="1-implement-the-callback-interface"></a>1. implementar la interfaz de devolución de llamada
+## <a name="1-implement-the-callback-interface"></a>1. Implementar la interfaz de devolución de llamada
 
 
 ```C++
@@ -57,7 +57,7 @@ public:
 
 
 
-## <a name="2-create-the-sample-grabber-sink"></a>2. crear el receptor del captador de ejemplo
+## <a name="2-create-the-sample-grabber-sink"></a>2. Creación del receptor de sample Grabber
 
 
 ```C++
@@ -75,7 +75,7 @@ public:
 
 
 
-## <a name="3-create-a-topology"></a>3. crear una topología
+## <a name="3-create-a-topology"></a>3. Crear una topología
 
 
 ```C++
@@ -138,7 +138,7 @@ done:
 
 
 
-## <a name="4-run-the-media-session"></a>4. ejecutar la sesión multimedia
+## <a name="4-run-the-media-session"></a>4. Ejecución de la sesión multimedia
 
 
 ```C++
@@ -586,7 +586,7 @@ STDMETHODIMP SampleGrabberCB::OnShutdown()
 
 <dl> <dt>
 
-[Sesión de medios](media-session.md)
+[Sesión multimedia](media-session.md)
 </dt> <dt>
 
 [**IMFSampleGrabberSinkCallback**](/windows/desktop/api/mfidl/nn-mfidl-imfsamplegrabbersinkcallback)
