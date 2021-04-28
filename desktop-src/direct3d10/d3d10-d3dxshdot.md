@@ -1,7 +1,7 @@
 ---
-description: Calcula el producto escalar de dos vectores armónicos (SH).
+description: 'Función D3DXSHDot (D3DX10.h): calcula el producto de puntos de dos vectores de armónica esférica (SH).'
 ms.assetid: 30f0e858-4c31-4b25-9979-754d996a7d48
-title: Función D3DXSHDot (D3DX10. h)
+title: Función D3DXSHDot (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 20f0896168dae0e2a779625c683777938c8e2df2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ea3e839ff7a5fc038cf40a6402db4a358da8b39
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708000"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108633"
 ---
-# <a name="d3dxshdot-function-d3dx10h"></a>Función D3DXSHDot (D3DX10. h)
+# <a name="d3dxshdot-function-d3dx10h"></a>Función D3DXSHDot (D3DX10.h)
 
-Calcula el producto escalar de dos vectores armónicos (SH).
+Calcula el producto de punto de dos vectores armónicos esféricos (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ FLOAT D3DXSHDot(
 
 <dl> <dt>
 
-*Pedido* \[ de de\]
+*Pedido* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de evaluación de armónicos esférico (SH). Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes de pedido ². El grado de evaluación es order-1.
+Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
-*PA* \[ de\]
+*pA* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
 Puntero al primer vector SH.
 
 </dd> <dt>
 
-*PB* \[ de\]
+*pB* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
 Puntero al segundo vector SH.
 
@@ -71,16 +71,16 @@ Puntero al segundo vector SH.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Coeficientes de salida SH.
+Coeficientes de salida sh.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada coeficiente de la función YLM se almacena en la ubicación de memoria l ² + m + l, donde:
+Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
 -   l es el grado de la función base.
--   m es el índice de la función base para el valor l especificado y los intervalos de-l a l, ambos incluidos.
+-   m es el índice de función base para el valor l especificado y va de -l a l, ambos incluidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,12 +88,12 @@ Cada coeficiente de la función YLM se almacena en la ubicación de memoria l ²
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

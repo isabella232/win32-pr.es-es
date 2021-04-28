@@ -1,7 +1,7 @@
 ---
-description: Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione específicamente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+description: 'Método IFeedbackHubAppInfo::GetInstalledLegacyApps: esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.'
 ms.assetid: 84135D6F-8232-4CE5-AD38-D18823F0E174
-title: 'IFeedbackHubAppInfo:: GetInstalledLegacyApps (método)'
+title: IFeedbackHubAppInfo::GetInstalledLegacyApps (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 112dd6c1acd74fdaa7e99e48b0e4c14486749438
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 167be3846322a1b3aacdf752374b9b0089220963
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104361985"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096703"
 ---
-# <a name="ifeedbackhubappinfogetinstalledlegacyapps-method"></a>IFeedbackHubAppInfo:: GetInstalledLegacyApps (método)
+# <a name="ifeedbackhubappinfogetinstalledlegacyapps-method"></a>IFeedbackHubAppInfo::GetInstalledLegacyApps (método)
 
-Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione específicamente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,10 +38,10 @@ virtual void GetInstalledLegacyApps(
 
 <dl> <dt>
 
-*resultado* \[ de out, opcional\]
+*resultado* \[ out, opcional\]
 </dt> <dd>
 
-Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione específicamente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.
 
 </dd> </dl>
 
@@ -53,14 +53,14 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

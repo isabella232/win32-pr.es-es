@@ -1,17 +1,17 @@
 ---
-description: Se anuló una operación debido a un error.
+description: 'EC_ERRORABORTEX: se anuló una operación debido a un error.'
 ms.assetid: de7b5222-3a29-40cc-af1a-2672bd68b7c9
-title: EC_ERRORABORTEX (DShow. h)
+title: EC_ERRORABORTEX (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8465825b93207059e5f2ea5f054deb7c3fd5619f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9b3bf1e1f24f9d5b07312f542c1ce4ea671f601d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680921"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094613"
 ---
-# <a name="ec_errorabortex"></a>ERRORABORTEX de EC \_
+# <a name="ec_errorabortex"></a>\_ERROR DE ECABORTEX
 
 Se anuló una operación debido a un error.
 
@@ -22,14 +22,14 @@ Se anuló una operación debido a un error.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-**(HRESULT)** Código de error de la operación en la que se produjo un error.
+**(HRESULT)** Código de error de la operación que ha generado un error.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-**(BSTR)** Cadena que contiene información adicional sobre el error.
+**(BSTR)** Cadena que contiene información de error adicional.
 
 </dd> </dl>
 
@@ -37,9 +37,9 @@ Se anuló una operación debido a un error.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro de [origen de Windows Media](windows-media-source-filter.md) heredado envía este evento. Los nuevos filtros no deben enviar este evento.
+El filtro origen [de Windows Media](windows-media-source-filter.md) heredado envía este evento. Los nuevos filtros no deben enviar este evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,11 +47,11 @@ El filtro de [origen de Windows Media](windows-media-source-filter.md) heredado 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

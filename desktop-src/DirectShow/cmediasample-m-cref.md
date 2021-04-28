@@ -1,7 +1,7 @@
 ---
-description: Recuento de referencias.
+description: 'CMediaSample::m_cRef miembro: recuento de referencias.'
 ms.assetid: 57b8498d-2aa4-414f-9e0a-3ddcb748fb38
-title: 'Miembro CMediaSample:: m_cRef (Amfilter. h)'
+title: CMediaSample::m_cRef miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5affe285a165d8736f7a2173b76d6309f3cb4725
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab1c34d6e62a3d66a2d7a412a03c94705615e3f3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670471"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095453"
 ---
-# <a name="cmediasamplem_cref-member"></a>Miembro cRef CMediaSample:: m \_
+# <a name="cmediasamplem_cref-member"></a>Miembro CMediaSample::m \_ cRef
 
 Recuento de referencias.
 
@@ -42,16 +42,16 @@ LONG m_cRef;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Tipo simple UInt32Type (registro de eventos de Windows)
-description: Define un tipo entero sin signo.
+description: 'Tipo simple UInt32Type (registro de eventos de Windows): define un tipo entero sin signo.'
 ms.assetid: 11e99c26-3be7-4fac-b3e1-97cb0428a886
 keywords:
-- UInt32Type de tipo simple de registro
+- Tipo simple EventLog de UInt32Type
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f2a24326197c72b08032f5144fea1a69fbe68089
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 631bb3e8424db8a5d781aaa43df6096730aaa4d6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996342"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090573"
 ---
 # <a name="uint32type-simple-type-windows-event-log"></a>Tipo simple UInt32Type (registro de eventos de Windows)
 
-Define un tipo entero sin signo. El valor se puede especificar como un entero de 4 bytes o como un valor hexadecimal en el intervalo comprendido entre 0 y 4.294.967.295.
+Define un tipo entero sin signo. El valor se puede especificar como un entero de 4 bytes o un valor hexadecimal en el intervalo comprendido entre 0 y 4.294.967.295.
 
 ``` syntax
 <xs:simpleType name="UInt32Type">
@@ -36,9 +36,9 @@ Define un tipo entero sin signo. El valor se puede especificar como un entero de
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 

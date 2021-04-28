@@ -1,12 +1,12 @@
 ---
 title: Método Create de la clase Win32_Service (Servicios de Escritorio remoto)
-description: Crea un nuevo servicio de sistema.
+description: 'Método Create de la Win32_Service (Servicios de Escritorio remoto): crea un nuevo servicio del sistema.'
 ms.assetid: 805754AA-B62A-4324-B289-503C42BEFA49
 ms.tgt_platform: multiple
 keywords:
 - Crear método Servicios de Escritorio remoto
-- Create Method Servicios de Escritorio remoto, Win32_Service (clase)
-- Win32_Service Servicios de Escritorio remoto de clase, Create (método)
+- Create method Servicios de Escritorio remoto , Win32_Service class
+- Win32_Service clase Servicios de Escritorio remoto , Create (método)
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be44d6c67e0d5bd6333f57c44cc44c25dc64e04a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9daf877f56bb7e9bfcc349e4efb38635a9286a48
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491602"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090693"
 ---
 # <a name="create-method-of-the-win32_service-class-remote-desktop-services"></a>Método Create de la clase Win32_Service (Servicios de Escritorio remoto)
 
-El método **crear** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo servicio de sistema.
+El **método create** wmi [class](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo servicio del sistema.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,34 +56,34 @@ uint32 Create(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-Nombre del servicio que se va a instalar en el método **Create** . La longitud de cadena máxima es de 256 caracteres. La base de datos del administrador de control de servicios conserva el uso de mayúsculas y minúsculas de los caracteres, pero las comparaciones de nombres de servicio no distinguen mayúsculas de minúsculas. Barras diagonales (/) y dobles barras diagonales (los \) caracteres de nombre de servicio no son válidos).
+Nombre del servicio que se instalará en **el método Create.** La longitud máxima de la cadena es de 256 caracteres. La base de datos del Administrador de control de servicios conserva las mayúsculas y minúsculas de los caracteres, pero las comparaciones de nombres de servicio siempre no tienen en cuenta las mayúsculas y minúsculas. Las barras diagonales (/) y las barras diagonales dobles \) (son caracteres de nombre de servicio no válidos).
 
 </dd> <dt>
 
-*DisplayName* \[ de\]
+*DisplayName* \[ En\]
 </dt> <dd>
 
-Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva en las mayúsculas y minúsculas en el administrador de control de servicios. Las comparaciones de *displayName* siempre distinguen mayúsculas de minúsculas.
+Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva en el Administrador de control de servicios. *Las comparaciones* de DisplayName siempre no tienen en cuenta mayúsculas de minúsculas.
 
-Constraints: acepta el mismo valor que el parámetro *Name* .
+Restricciones: acepta el mismo valor que el *parámetro Name.*
 
-Ejemplo: "Endisco".
+Ejemplo: "Atdisk".
 
 </dd> <dt>
 
-*Nombreruta* \[ de\]
+*PathName* \[ En\]
 </dt> <dd>
 
 Ruta de acceso completa al archivo ejecutable que implementa el servicio.
 
-Ejemplo: " \\ systemroot \\ System32 \\ drivers \\afd.sys".
+Ejemplo: " \\ SystemRoot \\ System32 \\ drivers \\afd.sys".
 
 </dd> <dt>
 
-*ServiceType* \[ de\]
+*ServiceType* \[ En\]
 </dt> <dd>
 
 Tipo de servicios proporcionados a los procesos que los llaman.
@@ -93,11 +93,11 @@ Tipo de servicios proporcionados a los procesos que los llaman.
 1 (0x1)
 </dt> <dd>
 
-Controlador de kernel
+Controlador kernel
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Controlador del sistema de archivos
@@ -114,7 +114,7 @@ Adapter (Adaptador)
 8 (0x8)
 </dt> <dd>
 
-Controlador del reconocedor
+Controlador de Recognizer
 
 </dd> <dt>
 
@@ -128,7 +128,7 @@ Proceso propio
 32 (0x20)
 </dt> <dd>
 
-Compartir proceso
+Proceso de recurso compartido
 
 </dd> <dt>
 
@@ -139,10 +139,10 @@ Proceso interactivo
 
 </dd> </dl> </dd> <dt>
 
-*ErrorControl* \[ de\]
+*ErrorControl* \[ En\]
 </dt> <dd>
 
-Gravedad del error si el método **Create** no se inicia. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
+Gravedad del error si el **método Create** no se puede iniciar. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
 
 <dt>
 
@@ -170,11 +170,11 @@ El sistema se reinicia con la última configuración válida conocida.
 3
 </dt> <dd>
 
-El sistema intenta iniciarse con una configuración válida.
+El sistema intenta empezar con una buena configuración.
 
 </dd> </dl> </dd> <dt>
 
-*StartMode* \[ de\]
+*StartMode* \[ En\]
 </dt> <dd>
 
 Modo de inicio del servicio base de Windows.
@@ -184,28 +184,28 @@ Modo de inicio del servicio base de Windows.
 Arranque
 </dt> <dd>
 
-Controlador de dispositivo Iniciado por el cargador del sistema operativo. Este valor solamente es válido para servicios de controladores.
+Controlador de dispositivo iniciado por el cargador del sistema operativo. Este valor solamente es válido para servicios de controladores.
 
 </dd> <dt>
 
-System
+Sistema
 </dt> <dd>
 
-Controlador de dispositivo Iniciado por el proceso de inicialización del sistema operativo. Este valor solamente es válido para servicios de controladores.
+Controlador de dispositivo iniciado por el proceso de inicialización del sistema operativo. Este valor solamente es válido para servicios de controladores.
 
 </dd> <dt>
 
 Automático
 </dt> <dd>
 
-Servicio que el administrador de control de servicios iniciará automáticamente durante el inicio del sistema.
+Servicio que el Administrador de control de servicios iniciará automáticamente durante el inicio del sistema.
 
 </dd> <dt>
 
 Manual
 </dt> <dd>
 
-Servicio que el administrador de control de servicios iniciará cuando un proceso llame al método [**StartService**](win32-terminalservice-startservice.md) .
+Servicio que va a iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](win32-terminalservice-startservice.md)
 
 </dd> <dt>
 
@@ -216,53 +216,53 @@ Servicio que ya no se puede iniciar.
 
 </dd> </dl> </dd> <dt>
 
-*DesktopInteract* \[ de\]
+*DesktopInteract* \[ En\]
 </dt> <dd>
 
-Si **es true**, el servicio puede crear o comunicarse con Windows en el escritorio.
+Si **es true,** el servicio puede crear o comunicarse con ventanas en el escritorio.
 
 </dd> <dt>
 
-*StartName* \[ de\]
+*StartName* \[ En\]
 </dt> <dd>
 
-Nombre de cuenta con la que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de cuenta puede tener el \\ formato nombrededominio nombredeusuario o nombre principal de usuario (UPN) ( Username@DomainName ). El proceso de servicio se registra con una de estas dos formas cuando se ejecuta. Si la cuenta pertenece al dominio integrado,. \\ Se puede especificar el nombre de usuario. Si se especifica **null** , el servicio inicia sesión como la cuenta LocalSystem. En el caso de los controladores de kernel o de nivel de sistema, *StartName* contiene el nombre de objeto del controlador (es decir, sistema de \\ archivos \\ RDR o \\ XNS del controlador \\ ) que usa el sistema de entrada y salida (e/s) para cargar el controlador de dispositivo. Si se especifica **null** , el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de e/s basado en el nombre del servicio. Ejemplo: DWDOM \\ admin.
+Nombre de cuenta con el que se ejecuta el servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato nombreDeUsuario de NombreDeServidor o Nombre principal de \\ usuario (UPN) ( Username@DomainName ). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio inicia sesión como la cuenta LocalSystem. Para un kernel o controladores de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio. Ejemplo: Administrador de \\ DWDOM.
 
 </dd> <dt>
 
-*StartPassword* \[ de\]
+*StartPassword* \[ En\]
 </dt> <dd>
 
-Contraseña para el nombre de cuenta especificado por el parámetro *StartName* . Especifique **null** si no va a cambiar la contraseña. Especifique una cadena vacía si el servicio no tiene contraseña.
+Contraseña en el nombre de cuenta especificado por el *parámetro StartName.* Especifique **NULL** si no va a cambiar la contraseña. Especifique una cadena vacía si el servicio no tiene contraseña.
 
 </dd> <dt>
 
-*LoadOrderGroup* \[ de\]
+*LoadOrderGroup* \[ En\]
 </dt> <dd>
 
-Nombre de grupo asociado al nuevo servicio. Los grupos de pedidos de carga se incluyen en el registro y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **null** o apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en el parámetro *LoadOrderGroupDependencies* . Los servicios de la lista de grupos de orden de carga se inician en primer lugar, seguidos de los servicios de los grupos que no están en la lista de grupos de orden de carga, seguidos de los servicios que no pertenecen a un grupo. El registro tiene una lista de grupos de orden de carga que se encuentran en:
+Nombre de grupo asociado al nuevo servicio. Los grupos de orden de carga se encuentran en el Registro y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro tiene una lista de grupos de ordenación de carga ubicados en:
 
-**HKEY \_ \_** \\  \\  \\ **Control** CurrentControlSet del sistema \\  de equipo local ServiceGroupOrder
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
-*LoadOrderGroupDependencies* \[ de\]
+*LoadOrderGroupDependencies* \[ En\]
 </dt> <dd>
 
-Matriz de grupos de orden de carga que deben iniciarse antes de este servicio. Cada elemento de la matriz está delimitado por **null** y la lista termina en dos valores **null** . En Visual Basic o script puede pasar un objeto vbArray. Si el puntero es **null** o apunta a una cadena vacía, el servicio no tiene dependencias. Los nombres de grupo deben ir precedidos del **\_ \_ identificador de grupo SC** (definido en el archivo Winsvc. h) para diferenciarlo de un nombre de servicio, ya que los servicios y los grupos de servicios comparten el mismo espacio de nombres. La dependencia de un grupo significa que este servicio se puede ejecutar si se está ejecutando al menos un miembro del grupo después de un intento de iniciar todos los miembros del grupo.
+Matriz de grupos de ordenación de carga que deben iniciarse antes de este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista finaliza con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no tiene dependencias. Los nombres de grupo deben ir precedidos por el carácter **SC \_ GROUP \_ IDENTIFIER** (definido en el archivo Winsvc.h) para diferenciarlo de un nombre de servicio, ya que los servicios y los grupos de servicios comparten el mismo espacio de nombres. La dependencia de un grupo significa que este servicio se puede ejecutar si al menos un miembro del grupo se está ejecutando después de un intento de iniciar todos los miembros del grupo.
 
 </dd> <dt>
 
-*ServiceDependencies* \[ de\]
+*ServiceDependencies* \[ En\]
 </dt> <dd>
 
-Matriz de que contiene los nombres de los servicios que deben iniciarse antes de que se inicie este servicio. Cada elemento de la matriz está delimitado por **null** y la lista termina en dos valores **null** . En Visual Basic o script puede pasar un objeto vbArray. Si el puntero es **null**, o si apunta a una cadena vacía, el servicio no tiene dependencias. La dependencia de un servicio significa que este servicio solo se puede ejecutar si se está ejecutando el servicio del que depende.
+Matriz que contiene los nombres de los servicios que deben iniciarse antes de que se inicie este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista termina con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no tiene dependencias. La dependencia de un servicio significa que este servicio solo se puede ejecutar si el servicio del que depende se está ejecutando.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener los **valores HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -304,7 +304,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado de la propiedad Service (**State** de la clase [**\_ BaseService de Win32**](/windows/desktop/CIMWin32Prov/win32-baseservice) ) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad **State** de la clase [**\_ BaseService de Win32)**](/windows/desktop/CIMWin32Prov/win32-baseservice) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -332,7 +332,7 @@ Error desconocido al iniciar el servicio.
 **9**
 </dt> <dd>
 
-No se encontró la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encontró la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
@@ -353,7 +353,7 @@ La base de datos para agregar un nuevo servicio está bloqueada.
 **12**
 </dt> <dd>
 
-Una dependencia de la que depende este servicio se ha quitado del sistema.
+Se ha quitado del sistema una dependencia en la que se basa este servicio.
 
 </dd> <dt>
 
@@ -395,14 +395,14 @@ El servicio no tiene ningún subproceso de ejecución.
 **18**
 </dt> <dd>
 
-El servicio tiene dependencias circulares al iniciarse.
+El servicio tiene dependencias circulares cuando se inicia.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Se está ejecutando un servicio con el mismo nombre.
+Un servicio se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
@@ -423,7 +423,7 @@ Se han pasado parámetros no válidos al servicio.
 **22**
 </dt> <dd>
 
-La cuenta con la que se ejecuta este servicio no es válida o carece de permisos para ejecutar el servicio.
+La cuenta con la que se ejecuta este servicio no es válida o carece de los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -441,44 +441,44 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, los servicios se instalan de una de estas dos maneras: como parte de la instalación del sistema operativo o mediante un programa de instalación proporcionado por el desarrollador del servicio. Sin embargo, es posible que algunos servicios, especialmente los creados internamente, no tengan un programa de instalación. En esos casos, puede utilizar el método **Create** para instalar los servicios mediante programación.
+Por lo general, los servicios se instalan de una de estas dos maneras: como parte de la instalación del sistema operativo o mediante un programa de instalación proporcionado por el desarrollador del servicio. Sin embargo, es posible que algunos servicios, especialmente los creados de forma local, no tengan un programa de instalación. En esos casos, puede usar el **método Create** para instalar servicios mediante programación.
 
-A pesar del nombre, el método Create no crea un servicio en realidad. simplemente instala un servicio existente. Para usar este comando, debe copiar el archivo ejecutable del servicio en un equipo y, a continuación, usar **crear** para instalar el servicio.
+A pesar del nombre, el método Create no crea realmente un servicio; simplemente instala un servicio existente. Para usar este comando, debe copiar el archivo ejecutable del servicio en un equipo y, a continuación, usar **Crear** para instalar el servicio.
 
-El método **Create** es similar al método [**Change**](win32-terminalservice-change.md) . En ambos casos, las propiedades del servicio se pasan como parámetros al método. Al igual que con los parámetros que se usan con el método **Change** , el orden en el que se pasan estos parámetros es muy importante.
+El **método Create** es similar al método [**Change.**](win32-terminalservice-change.md) En ambos casos, las propiedades del servicio se pasan como parámetros al método . Al igual que con los parámetros usados con **el método Change,** el orden en que se pasan estos parámetros es muy importante.
 
-El parámetro *LoadOrderGroup* representa una agrupación de los servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de orden de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para que funcionen correctamente.
+El *parámetro LoadOrderGroup* representa una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service)
+[**Servicio \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
 [Clases de sistema operativo](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**Win32 \_ TerminalService**](win32-terminalservice.md)
+[**TerminalService de Win32 \_**](win32-terminalservice.md)
 </dt> <dt>
 
-[Tareas WMI: servicios](/windows/desktop/WmiSdk/wmi-tasks--services)
+[Tareas wmi: servicios](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> </dl>
 
  

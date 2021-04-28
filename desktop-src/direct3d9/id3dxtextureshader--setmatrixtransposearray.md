@@ -1,7 +1,7 @@
 ---
-description: Establece una matriz de matrices transpuestas.
+description: 'Método ID3DXTextureShader::SetMatrixTransposeArray: establece una matriz de matrices transpuestas.'
 ms.assetid: 100288f2-44f0-4e75-bffb-78732c50a55c
-title: 'ID3DXTextureShader:: SetMatrixTransposeArray (método) (D3DX9Shader. h)'
+title: Método ID3DXTextureShader::SetMatrixTransposeArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c9efd0c81cef8a72880a9755ca40e4dd8b4950ce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 663f49f600c000ff37974c8ecd4da56ba59630d1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003794"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090213"
 ---
-# <a name="id3dxtextureshadersetmatrixtransposearray-method"></a>ID3DXTextureShader:: SetMatrixTransposeArray (método)
+# <a name="id3dxtextureshadersetmatrixtransposearray-method"></a>Método ID3DXTextureShader::SetMatrixTransposeArray
 
 Establece una matriz de matrices transpuestas.
 
@@ -42,7 +42,7 @@ HRESULT SetMatrixTransposeArray(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -51,19 +51,19 @@ Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE](d3dx
 
 </dd> <dt>
 
-*pMatrix* \[ de\]
+*pMatrix* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matriz de matrices transpuestas. Vea [**D3DXMATRIX**](d3dxmatrix.md).
+Matriz de matrices transpuestas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de matrices de la matriz.
 
@@ -73,11 +73,11 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
+Una matriz transpuesta contiene datos principales de columna; es decir, cada vector se encuentra en una columna.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,12 +85,12 @@ Una matriz transpuesta contiene datos principales de columna; es decir, cada vec
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

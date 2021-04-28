@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CImageDisplay.CImageDisplay: método constructor.'
 ms.assetid: 171a4f1e-a85d-4da8-9372-054aaa0e0a40
-title: Constructor CImageDisplay. CImageDisplay (Winutil. h)
+title: Constructor CImageDisplay.CImageDisplay (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b9a6f902d75d104dbdcb7e04cc71a5ce7565185e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 389ac06488762d95afa1894f7cfc27d2f9e2725e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681032"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085653"
 ---
-# <a name="cimagedisplaycimagedisplay-constructor"></a>Constructor CImageDisplay. CImageDisplay
+# <a name="cimagedisplaycimagedisplay-constructor"></a>Constructor CImageDisplay.CImageDisplay
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ CImageDisplay();
 
 Este constructor no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El constructor inicializa el tipo de formato mediante la configuración de pantalla para el dispositivo de pantalla principal.
+El constructor inicializa el tipo de formato mediante la configuración de presentación del dispositivo de pantalla principal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ El constructor inicializa el tipo de formato mediante la configuración de panta
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> <dt>
 
 [**CImageDisplay::RefreshDisplayType**](cimagedisplay-refreshdisplaytype.md)

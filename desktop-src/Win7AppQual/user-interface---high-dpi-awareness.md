@@ -1,70 +1,70 @@
 ---
-description: .
+description: 'Interfaz de usuario: reconocimiento de valores altos de PPP'
 ms.assetid: 5b753340-366c-44b3-87e9-19c580f1c5d5
 title: 'Interfaz de usuario: reconocimiento de valores altos de PPP'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e93aeed452f421e8e38df8d6d75f6bbe1f97cc6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 118b566d35f753a77f6cfd9706c2e69819f3fbaa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717300"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116073"
 ---
 # <a name="user-interface---high-dpi-awareness"></a>Interfaz de usuario: reconocimiento de valores altos de PPP
 
 ## <a name="affected-platforms"></a>Plataformas afectadas
 
- **Clientes** -Windows XP Windows \| vista Windows \| 7  
+ **Clientes:** Windows XP \| Windows Vista Windows \| 7  
 
 ## <a name="feature-impact"></a>Impacto en las características
 
-**Gravedad** : medio  
-**Frecuencia** : medio  
+**Gravedad:** media  
+**Frecuencia:** media  
 
 ## <a name="description"></a>Descripción
 
-El objetivo es animar a los usuarios finales a establecer sus visualizaciones en la resolución nativa y usar PPP en lugar de la resolución de pantalla para cambiar el tamaño del texto y las imágenes que se muestran. Windows 7 puede detectar automáticamente y configurar un valor de PPP predeterminado en las instalaciones limpias en los equipos configurados por los OEM mediante la configuración de PPP. Hay herramientas que puede usar para diseñar aplicaciones que tienen un reconocimiento de PPP elevado para garantizar los resultados más legibles.
+El objetivo es animar a los usuarios finales a establecer sus pantallas en resolución nativa y usar PPP en lugar de la resolución de pantalla para cambiar el tamaño del texto y las imágenes mostrados. Windows 7 puede detectar y configurar automáticamente un valor predeterminado de PPP en las máquinas configuradas por sus OEM mediante la configuración de PPP. Hay herramientas que puede usar para ayudar a diseñar aplicaciones que tienen en cuenta valores altos de PPP con el fin de garantizar los resultados más legibles.
 
-Hemos agregado dos nuevas características de PPP altas a Windows 7:
+Hemos agregado dos nuevas características de valores altos de PPP a Windows 7:
 
--   Configuración de PPP por usuario (antes por equipo)
--   Cambiar PPP sin reinicio (cierre de sesión o inicio de sesión sigue siendo necesario)
+-   Configuración de PPP por usuario (anteriormente por equipo)
+-   Cambio de PPP sin reiniciar (todavía se requiere cierre de sesión o inicio de sesión)
 
-## <a name="manifestation-of-impact"></a>Manifiesto de impacto
+## <a name="manifestation-of-impact"></a>Demostración del impacto
 
-Es probable que las aplicaciones que no controlan el uso de mayúsculas altas de PPP muestren artefactos visuales, como:
+Es probable que las aplicaciones que no controlan el caso de valores altos de PPP expondrán artefactos visuales, entre los que se incluyen:
 
 -   Recorte de la interfaz de usuario o texto por otros elementos de la interfaz de usuario
 -   Tamaños de fuente incoherentes
--   Ius de pantalla
+-   IOS fuera de la pantalla
 -   Desenfoque de texto o interfaz de usuario
--   Arrastre y colocación rotos u otras entradas
--   Representación parcial de las aplicaciones DX en pantalla completa
+-   Arrastrar y colocar rotos u otras entradas
+-   Representación de aplicaciones DX de pantalla completa parcialmente fuera de la pantalla
 
 ## <a name="solution"></a>Solución
 
-Para hacer que las aplicaciones sean compatibles con PPP:
+Para que las aplicaciones tenga en cuenta ppp:
 
 1.  Realice una prueba funcional de alto nivel, incluida la instalación y desinstalación en la siguiente configuración:
 
-    | Configuración                                              | Qué se debe tener presente                                                                                                                                                      |
+    | Parámetro                                              | Qué se debe tener presente                                                                                                                                                      |
     |------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | 1024x768 a 120 ppp (125% de escala)                    | Esta es una resolución eficaz de ~ 800x600, por lo que debe buscar la interfaz de usuario recortada de los problemas de pantalla o diseño. Busque también pixelado bitmaps & iconos.                         |
-    | 1600x1200 @144 PPP (escala del 150%)                    | Interfaz de usuario borrosa. Compruebe que todas las operaciones del mouse funcionan, especialmente arrastre & operaciones de colocar. Compruebe también que los modos de pantalla completa funcionan correctamente.                                     |
-    | 1600x1200 @ 144 ppp con la virtualización de PPP deshabilitada | A menudo, los botones y la interfaz de usuario no se escalarán en relación con el texto más grande & habrá un recorte significativo del texto. Busque problemas de diseño en los iconos generales & pixelado bitmats &. |
+    | 1024 x 768 a 120 PPP (escalado del 125 %)                    | Se trata de una resolución efectiva de ~800 x 600, así que busque la interfaz de usuario recortada de la pantalla o los problemas de diseño. Busque también mapas de bits con forma de & iconos.                         |
+    | 1600 x 1200 @144 PPP (escalado del 150 %)                    | Interfaz de usuario desenfoque. Compruebe que todas las operaciones del mouse funcionan, especialmente para arrastrar & operaciones de colocación. Compruebe también que los modos de pantalla completa funcionan correctamente.                                     |
+    | 1600x1200 @ 144 PPP con la virtualización de PPP deshabilitada | A menudo, los botones y la interfaz de usuario no se escalan en relación con el texto & habrá un recorte de texto significativo. Busque problemas de diseño en general & bits con forma de & iconos. |
 
     
 
      
 
-2.  Anote todos los problemas encontrados, incluidos la configuración de la ubicación, la resolución de pantalla y el PPP, y cómo se comporta la aplicación en las demás configuraciones de PPP/resolución para integridad
-3.  Comprobar cada problema con los problemas de codificación de PPP comunes
-4.  Evalúe el costo de que la aplicación sea totalmente compatible con el reconocimiento de PPP
-5.  Haga una lista de los activos de valores altos de PPP necesarios (por ejemplo, botones, iconos)
-6.  Trabajar y corregir la lista de problemas de PPP encontrados en el paso 1
-7.  Integre los nuevos recursos del paso 5
-8.  Declarar el reconocimiento de PPP de la aplicación
+2.  Anote todos los problemas encontrados, incluida la ubicación, la resolución de pantalla y la configuración de PPP, así como el comportamiento de la aplicación en las demás configuraciones de PPP/Resolución para que sea completa.
+3.  Comprobar cada problema con los problemas comunes de codificación de PPP
+4.  Evaluar el costo de hacer que la aplicación sea totalmente compatible con PPP
+5.  Crear una lista de los recursos de valores altos de PPP necesarios (por ejemplo, botones o iconos)
+6.  Solucionar y corregir la lista de problemas de PPP que se encuentran en el paso 1
+7.  Integración de los nuevos recursos del paso 5
+8.  Declaración de la aplicación compatible con PPP
 
 ## <a name="compatibility-performance-reliability-and-usability-testing"></a>Pruebas de compatibilidad, rendimiento, confiabilidad y facilidad de uso
 
@@ -72,8 +72,8 @@ Vuelva a ejecutar la evaluación de reconocimiento de PPP y compruebe que los pr
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 
--   [Desarrollo de aplicaciones de escritorio de alto nivel de PPP en Windows](../hidpi/high-dpi-desktop-application-development-on-windows.md)
--   **Póngase en contacto con para obtener preguntas técnicas:**<disup@microsoft.com>
+-   [Desarrollo de aplicaciones de escritorio con valores altos de PPP en Windows](../hidpi/high-dpi-desktop-application-development-on-windows.md)
+-   **Póngase en contacto con para preguntas técnicas:**<disup@microsoft.com>
 
  
 

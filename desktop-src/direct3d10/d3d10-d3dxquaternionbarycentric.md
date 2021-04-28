@@ -1,7 +1,7 @@
 ---
-description: Devuelve un cuaternión en coordenadas Barycentric.
+description: 'Función D3DXQuaternionBaryCentric (D3DX10Math.h): devuelve un cuaternión en coordenadas baricéntricas.'
 ms.assetid: 0a8d8d5a-f486-4457-86e9-27e76eaf1bc4
-title: Función D3DXQuaternionBaryCentric (D3DX10Math. h)
+title: Función D3DXQuaternionBaryCentric (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f7cdfcf5b8e7052fcbea72f12123a0ea44422853
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 00d8e41a0173b7b26083f38beb82417365ef7067
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678841"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108783"
 ---
-# <a name="d3dxquaternionbarycentric-function-d3dx10mathh"></a>Función D3DXQuaternionBaryCentric (D3DX10Math. h)
+# <a name="d3dxquaternionbarycentric-function-d3dx10mathh"></a>Función D3DXQuaternionBaryCentric (D3DX10Math.h)
 
-Devuelve un cuaternión en coordenadas Barycentric.
+Devuelve un cuaternión en coordenadas baricéntricas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,41 +50,41 @@ D3DXQUATERNION* D3DXQuaternionBaryCentric(
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero al [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de la operación.
+Puntero a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pQ1* \[ de\]
+*pQ1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntero a una estructura de D3DXQUATERNION de origen.
+Puntero a una estructura D3DXQUATERNION de origen.
 
 </dd> <dt>
 
-*pQ2* \[ de\]
+*pQ2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntero a una estructura de D3DXQUATERNION de origen.
+Puntero a una estructura D3DXQUATERNION de origen.
 
 </dd> <dt>
 
-*pQ3* \[ de\]
+*pQ3* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntero a una estructura de D3DXQUATERNION de origen.
+Puntero a una estructura D3DXQUATERNION de origen.
 
 </dd> <dt>
 
-*f* \[ en\]
+*f* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Factor de ponderación. Vea la sección Comentarios.
 
@@ -93,7 +93,7 @@ Factor de ponderación. Vea la sección Comentarios.
 *g* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Factor de ponderación. Vea la sección Comentarios.
 
@@ -103,11 +103,11 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero a una estructura D3DXQUATERNION en coordenadas Barycentric.
+Puntero a una estructura D3DXQUATERNION en coordenadas centradas en Barycentric.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para calcular las coordenadas Barycentric, la función D3DXQuaternionBaryCentric implementa la siguiente serie de operaciones de interpolación lineal esférica:
+Para calcular las coordenadas centradas en barras, la función D3DXQuaternionBaryCentric implementa la siguiente serie de operaciones de interpolación lineal esférica:
 
 
 ```
@@ -116,11 +116,11 @@ Slerp(Slerp(Q1, Q2, f+g), Slerp(Q1, Q3, f+g), g/(f+g))
 
 
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXQuaternionBaryCentric se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXQuaternionBaryCentric se puede usar como parámetro para otra función.
 
-Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para cualquier entrada de cuaternión que no esté ya normalizada.
+Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
-Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas de Barycentric, consulte Descripción de las [coordenadas del Barycentric de Wolfram](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -128,12 +128,12 @@ Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

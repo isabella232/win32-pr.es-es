@@ -1,7 +1,7 @@
 ---
-description: 'El método QueryId recupera un identificador para el código PIN. Este método implementa el método IPin:: QueryId.'
+description: 'Método CTransformInputPin.QueryId: el método QueryId recupera un identificador para el pin. Este método implementa el método IPin::QueryId.'
 ms.assetid: 91fde383-0288-4307-9ca8-e117b6111769
-title: Método CTransformInputPin. QueryId (Transfrm. h)
+title: Método CTransformInputPin.QueryId (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: daae425e82bbc89cfbc863baea1924e36e63f122
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8407e649814fcb12f699c2362f0f89137e941d19
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680530"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095013"
 ---
-# <a name="ctransforminputpinqueryid-method"></a>CTransformInputPin. QueryId (método)
+# <a name="ctransforminputpinqueryid-method"></a>Método CTransformInputPin.QueryId
 
-El `QueryId` método recupera un identificador para el código PIN. Este método implementa el método [**IPin:: queryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) .
+El `QueryId` método recupera un identificador para el pin. Este método implementa el [**método IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,29 +45,29 @@ HRESULT QueryId(
 *Id* 
 </dt> <dd>
 
-Recibe una cadena que contiene el identificador del PIN.
+Recibe una cadena que contiene el identificador de pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                   | Descripción                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Correcto<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>       |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Argumento de puntero **nulo**<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | **Argumento de** puntero NULL<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador del PIN se usa para la persistencia del gráfico. El identificador de PIN de esta clase está en. Esta clase invalida el comportamiento de la clase [**CBasePin**](cbasepin.md) . En la clase **CBasePin** , el identificador del PIN es el mismo que el nombre del PIN especificado en el constructor de clase. En la clase **CTransformInputPin** , el identificador del PIN y el nombre del PIN no son los mismos.
+El identificador de pin se usa para la persistencia del grafo. El identificador de pin de esta clase es In. Esta clase invalida el comportamiento de la [**clase CBasePin.**](cbasepin.md) En la **clase CBasePin,** el identificador de pin es el mismo que el nombre del pin, especificado en el constructor de clase. En la **clase CTransformInputPin,** el identificador de pin y el nombre del pin no son los mismos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ El identificador del PIN se usa para la persistencia del gráfico. El identifica
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
