@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de inicio y fin de subproceso. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Thread_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos de inicio y finalización de subprocesos. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: d9e3e33a-0e59-4753-a8d8-5320cbae9d95
-title: Thread_TypeGroup1 (clase)
+title: Thread_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,20 +26,20 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 75352efbe044f5fee837c496c394fe28e2dbbbfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9693bef4449cc076710a74dd9cef88ae608754b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155552"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105713"
 ---
-# <a name="thread_typegroup1-class"></a><span data-ttu-id="20e8d-104">Thread \_ TypeGroup1 (clase)</span><span class="sxs-lookup"><span data-stu-id="20e8d-104">Thread\_TypeGroup1 class</span></span>
+# <a name="thread_typegroup1-class"></a><span data-ttu-id="df9fc-104">Clase \_ TypeGroup1 de subproceso</span><span class="sxs-lookup"><span data-stu-id="df9fc-104">Thread\_TypeGroup1 class</span></span>
 
-<span data-ttu-id="20e8d-105">Esta clase es la clase de tipo de evento para los eventos de inicio y fin de subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-105">This class is the event type class for thread start and end events.</span></span>
+<span data-ttu-id="df9fc-105">Esta clase es la clase de tipo de evento para los eventos de inicio y finalización de subprocesos.</span><span class="sxs-lookup"><span data-stu-id="df9fc-105">This class is the event type class for thread start and end events.</span></span>
 
-<span data-ttu-id="20e8d-106">La siguiente sintaxis se simplifica desde el código MOF.</span><span class="sxs-lookup"><span data-stu-id="20e8d-106">The following syntax is simplified from MOF code.</span></span>
+<span data-ttu-id="df9fc-106">La sintaxis siguiente se simplifica a partir del código MOF.</span><span class="sxs-lookup"><span data-stu-id="df9fc-106">The following syntax is simplified from MOF code.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="20e8d-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="20e8d-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="df9fc-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="df9fc-107">Syntax</span></span>
 
 ``` syntax
 [EventType{1, 2, 3, 4}, EventTypeName{"Start", "End", "DCStart", "DCEnd"}]
@@ -62,262 +62,262 @@ class Thread_TypeGroup1 : Thread
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="20e8d-108">Miembros</span><span class="sxs-lookup"><span data-stu-id="20e8d-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="df9fc-108">Miembros</span><span class="sxs-lookup"><span data-stu-id="df9fc-108">Members</span></span>
 
-<span data-ttu-id="20e8d-109">La clase **Thread \_ TypeGroup1** tiene estos tipos de miembros:</span><span class="sxs-lookup"><span data-stu-id="20e8d-109">The **Thread\_TypeGroup1** class has these types of members:</span></span>
+<span data-ttu-id="df9fc-109">La **clase \_ Thread TypeGroup1** tiene estos tipos de miembros:</span><span class="sxs-lookup"><span data-stu-id="df9fc-109">The **Thread\_TypeGroup1** class has these types of members:</span></span>
 
--   [<span data-ttu-id="20e8d-110">Propiedades</span><span class="sxs-lookup"><span data-stu-id="20e8d-110">Properties</span></span>](#properties)
+-   [<span data-ttu-id="df9fc-110">Propiedades</span><span class="sxs-lookup"><span data-stu-id="df9fc-110">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="20e8d-111">Propiedades</span><span class="sxs-lookup"><span data-stu-id="20e8d-111">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="df9fc-111">Propiedades</span><span class="sxs-lookup"><span data-stu-id="df9fc-111">Properties</span></span>
 
-<span data-ttu-id="20e8d-112">La clase **Thread \_ TypeGroup1** tiene estas propiedades.</span><span class="sxs-lookup"><span data-stu-id="20e8d-112">The **Thread\_TypeGroup1** class has these properties.</span></span>
+<span data-ttu-id="df9fc-112">La **clase \_ Thread TypeGroup1** tiene estas propiedades.</span><span class="sxs-lookup"><span data-stu-id="df9fc-112">The **Thread\_TypeGroup1** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="20e8d-113">Afinidad</span><span class="sxs-lookup"><span data-stu-id="20e8d-113">Affinity</span></span>
+<span data-ttu-id="df9fc-113">Afinidad</span><span class="sxs-lookup"><span data-stu-id="df9fc-113">Affinity</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-114">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-114">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-114">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-114">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-115">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-115">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-115">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-115">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-116">Calificadores: WmiDataId (7), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-116">Qualifiers: WmiDataId(7), Pointer</span></span>
+<span data-ttu-id="df9fc-116">Calificadores: WmiDataId(7), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-116">Qualifiers: WmiDataId(7), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-117">Conjunto de procesadores en el que se permite la ejecución del subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-117">The set of processors on which the thread is allowed to run.</span></span>
+<span data-ttu-id="df9fc-117">Conjunto de procesadores en los que se puede ejecutar el subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-117">The set of processors on which the thread is allowed to run.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-118">BasePriority</span><span class="sxs-lookup"><span data-stu-id="20e8d-118">BasePriority</span></span>
+<span data-ttu-id="df9fc-118">BasePriority</span><span class="sxs-lookup"><span data-stu-id="df9fc-118">BasePriority</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-119">Tipo de datos: **Uint8**</span><span class="sxs-lookup"><span data-stu-id="20e8d-119">Data type: **uint8**</span></span>
+<span data-ttu-id="df9fc-119">Tipo de datos: **uint8**</span><span class="sxs-lookup"><span data-stu-id="df9fc-119">Data type: **uint8**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-120">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-120">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-120">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-120">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-121">Calificadores: WmiDataId (11)</span><span class="sxs-lookup"><span data-stu-id="20e8d-121">Qualifiers: WmiDataId(11)</span></span>
+<span data-ttu-id="df9fc-121">Calificadores: WmiDataId(11)</span><span class="sxs-lookup"><span data-stu-id="df9fc-121">Qualifiers: WmiDataId(11)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-122">La prioridad del programador del subproceso (vea la función [**SetThreadPriority**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) ).</span><span class="sxs-lookup"><span data-stu-id="20e8d-122">The scheduler priority of the thread (see the [**SetThreadPriority**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) function).</span></span>
+<span data-ttu-id="df9fc-122">Prioridad del programador del subproceso (vea la [**función SetThreadPriority).**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority)</span><span class="sxs-lookup"><span data-stu-id="df9fc-122">The scheduler priority of the thread (see the [**SetThreadPriority**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) function).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-123">IoPriority</span><span class="sxs-lookup"><span data-stu-id="20e8d-123">IoPriority</span></span>
+<span data-ttu-id="df9fc-123">IoPriority</span><span class="sxs-lookup"><span data-stu-id="df9fc-123">IoPriority</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-124">Tipo de datos: **Uint8**</span><span class="sxs-lookup"><span data-stu-id="20e8d-124">Data type: **uint8**</span></span>
+<span data-ttu-id="df9fc-124">Tipo de datos: **uint8**</span><span class="sxs-lookup"><span data-stu-id="df9fc-124">Data type: **uint8**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-125">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-125">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-125">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-125">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-126">Calificadores: WmiDataId (13)</span><span class="sxs-lookup"><span data-stu-id="20e8d-126">Qualifiers: WmiDataId(13)</span></span>
+<span data-ttu-id="df9fc-126">Calificadores: WmiDataId(13)</span><span class="sxs-lookup"><span data-stu-id="df9fc-126">Qualifiers: WmiDataId(13)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-127">Una sugerencia de prioridad de e/s para programar IOs generados por el subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-127">An IO priority hint for scheduling IOs generated by the thread.</span></span>
+<span data-ttu-id="df9fc-127">Sugerencia de prioridad de E/S para programar las E/S generadas por el subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-127">An IO priority hint for scheduling IOs generated by the thread.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-128">PagePriority</span><span class="sxs-lookup"><span data-stu-id="20e8d-128">PagePriority</span></span>
+<span data-ttu-id="df9fc-128">PagePriority</span><span class="sxs-lookup"><span data-stu-id="df9fc-128">PagePriority</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-129">Tipo de datos: **Uint8**</span><span class="sxs-lookup"><span data-stu-id="20e8d-129">Data type: **uint8**</span></span>
+<span data-ttu-id="df9fc-129">Tipo de datos: **uint8**</span><span class="sxs-lookup"><span data-stu-id="df9fc-129">Data type: **uint8**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-130">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-130">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-130">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-130">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-131">Calificadores: WmiDataId (12)</span><span class="sxs-lookup"><span data-stu-id="20e8d-131">Qualifiers: WmiDataId(12)</span></span>
+<span data-ttu-id="df9fc-131">Calificadores: WmiDataId(12)</span><span class="sxs-lookup"><span data-stu-id="df9fc-131">Qualifiers: WmiDataId(12)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-132">Una sugerencia de prioridad de página de memoria para las páginas de memoria a las que tiene acceso el subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-132">A memory page priority hint for memory pages accessed by the thread.</span></span>
+<span data-ttu-id="df9fc-132">Sugerencia de prioridad de página de memoria para las páginas de memoria a las que tiene acceso el subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-132">A memory page priority hint for memory pages accessed by the thread.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-133">ProcessId</span><span class="sxs-lookup"><span data-stu-id="20e8d-133">ProcessId</span></span>
+<span data-ttu-id="df9fc-133">ProcessId</span><span class="sxs-lookup"><span data-stu-id="df9fc-133">ProcessId</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-134">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-134">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-134">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-134">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-135">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-135">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-135">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-135">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-136">Calificadores: WmiDataId (1), Format ("x")</span><span class="sxs-lookup"><span data-stu-id="20e8d-136">Qualifiers: WmiDataId(1), Format("x")</span></span>
+<span data-ttu-id="df9fc-136">Calificadores: WmiDataId(1), Format("x")</span><span class="sxs-lookup"><span data-stu-id="df9fc-136">Qualifiers: WmiDataId(1), Format("x")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-137">Identificador de proceso del subproceso implicado en el evento.</span><span class="sxs-lookup"><span data-stu-id="20e8d-137">Process identifier of the thread involved in the event.</span></span>
+<span data-ttu-id="df9fc-137">Identificador de proceso del subproceso implicado en el evento.</span><span class="sxs-lookup"><span data-stu-id="df9fc-137">Process identifier of the thread involved in the event.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-138">StackBase</span><span class="sxs-lookup"><span data-stu-id="20e8d-138">StackBase</span></span>
+<span data-ttu-id="df9fc-138">StackBase</span><span class="sxs-lookup"><span data-stu-id="df9fc-138">StackBase</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-139">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-139">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-139">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-139">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-140">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-140">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-140">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-140">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-141">Calificadores: WmiDataId (3), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-141">Qualifiers: WmiDataId(3), Pointer</span></span>
+<span data-ttu-id="df9fc-141">Calificadores: WmiDataId(3), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-141">Qualifiers: WmiDataId(3), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-142">Dirección base de la pila del subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-142">Base address of the thread's stack.</span></span>
+<span data-ttu-id="df9fc-142">Dirección base de la pila del subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-142">Base address of the thread's stack.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-143">StackLimit</span><span class="sxs-lookup"><span data-stu-id="20e8d-143">StackLimit</span></span>
+<span data-ttu-id="df9fc-143">StackLimit</span><span class="sxs-lookup"><span data-stu-id="df9fc-143">StackLimit</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-144">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-144">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-144">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-144">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-145">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-145">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-145">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-145">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-146">Calificadores: WmiDataId (4), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-146">Qualifiers: WmiDataId(4), Pointer</span></span>
+<span data-ttu-id="df9fc-146">Calificadores: WmiDataId(4), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-146">Qualifiers: WmiDataId(4), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-147">Límite de la pila del subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-147">Limit of the thread's stack.</span></span>
+<span data-ttu-id="df9fc-147">Límite de la pila del subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-147">Limit of the thread's stack.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-148">SubProcessTag</span><span class="sxs-lookup"><span data-stu-id="20e8d-148">SubProcessTag</span></span>
+<span data-ttu-id="df9fc-148">SubProcessTag</span><span class="sxs-lookup"><span data-stu-id="df9fc-148">SubProcessTag</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-149">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-149">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-149">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-149">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-150">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-150">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-150">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-150">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-151">Calificadores: WmiDataId (10), formato ("x")</span><span class="sxs-lookup"><span data-stu-id="20e8d-151">Qualifiers: WmiDataId(10), Format("x")</span></span>
+<span data-ttu-id="df9fc-151">Calificadores: WmiDataId(10), Format("x")</span><span class="sxs-lookup"><span data-stu-id="df9fc-151">Qualifiers: WmiDataId(10), Format("x")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-152">Identifica el servicio si el subproceso es propiedad de un servicio; de lo contrario, es cero.</span><span class="sxs-lookup"><span data-stu-id="20e8d-152">Identifies the service if the thread is owned by a service; otherwise, zero.</span></span>
+<span data-ttu-id="df9fc-152">Identifica el servicio si el subproceso es propiedad de un servicio; de lo contrario, cero.</span><span class="sxs-lookup"><span data-stu-id="df9fc-152">Identifies the service if the thread is owned by a service; otherwise, zero.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-153">TebBase</span><span class="sxs-lookup"><span data-stu-id="20e8d-153">TebBase</span></span>
+<span data-ttu-id="df9fc-153">TebBase</span><span class="sxs-lookup"><span data-stu-id="df9fc-153">TebBase</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-154">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-154">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-154">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-154">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-155">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-155">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-155">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-155">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-156">Calificadores: WmiDataId (9), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-156">Qualifiers: WmiDataId(9), Pointer</span></span>
+<span data-ttu-id="df9fc-156">Calificadores: WmiDataId(9), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-156">Qualifiers: WmiDataId(9), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-157">Dirección base del bloque del entorno del subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-157">Thread environment block base address.</span></span>
+<span data-ttu-id="df9fc-157">Dirección base del bloque de entorno de subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-157">Thread environment block base address.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-158">ThreadFlags</span><span class="sxs-lookup"><span data-stu-id="20e8d-158">ThreadFlags</span></span>
+<span data-ttu-id="df9fc-158">ThreadFlags</span><span class="sxs-lookup"><span data-stu-id="df9fc-158">ThreadFlags</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-159">Tipo de datos: **Uint8**</span><span class="sxs-lookup"><span data-stu-id="20e8d-159">Data type: **uint8**</span></span>
+<span data-ttu-id="df9fc-159">Tipo de datos: **uint8**</span><span class="sxs-lookup"><span data-stu-id="df9fc-159">Data type: **uint8**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-160">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-160">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-160">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-160">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-161">Calificadores: WmiDataId (14)</span><span class="sxs-lookup"><span data-stu-id="20e8d-161">Qualifiers: WmiDataId(14)</span></span>
+<span data-ttu-id="df9fc-161">Calificadores: WmiDataId(14)</span><span class="sxs-lookup"><span data-stu-id="df9fc-161">Qualifiers: WmiDataId(14)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-162">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="20e8d-162">Not used.</span></span>
+<span data-ttu-id="df9fc-162">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="df9fc-162">Not used.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-163">TThreadId</span><span class="sxs-lookup"><span data-stu-id="20e8d-163">TThreadId</span></span>
+<span data-ttu-id="df9fc-163">TThreadId</span><span class="sxs-lookup"><span data-stu-id="df9fc-163">TThreadId</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-164">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-164">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-164">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-164">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-165">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-165">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-165">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-165">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-166">Calificadores: WmiDataId (2), Format ("x")</span><span class="sxs-lookup"><span data-stu-id="20e8d-166">Qualifiers: WmiDataId(2), Format("x")</span></span>
+<span data-ttu-id="df9fc-166">Calificadores: WmiDataId(2), Format("x")</span><span class="sxs-lookup"><span data-stu-id="df9fc-166">Qualifiers: WmiDataId(2), Format("x")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-167">Identificador de subproceso del subproceso implicado en el evento.</span><span class="sxs-lookup"><span data-stu-id="20e8d-167">Thread identifier of the thread involved in the event.</span></span>
+<span data-ttu-id="df9fc-167">Identificador de subproceso del subproceso implicado en el evento.</span><span class="sxs-lookup"><span data-stu-id="df9fc-167">Thread identifier of the thread involved in the event.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-168">UserStackBase</span><span class="sxs-lookup"><span data-stu-id="20e8d-168">UserStackBase</span></span>
+<span data-ttu-id="df9fc-168">UserStackBase</span><span class="sxs-lookup"><span data-stu-id="df9fc-168">UserStackBase</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-169">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-169">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-169">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-169">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-170">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-170">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-170">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-170">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-171">Calificadores: WmiDataId (5), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-171">Qualifiers: WmiDataId(5), Pointer</span></span>
+<span data-ttu-id="df9fc-171">Calificadores: WmiDataId(5), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-171">Qualifiers: WmiDataId(5), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-172">Dirección base de la pila de modo de usuario del subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-172">Base address of the thread's user-mode stack.</span></span>
+<span data-ttu-id="df9fc-172">Dirección base de la pila de modo de usuario del subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-172">Base address of the thread's user-mode stack.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-173">UserStackLimit</span><span class="sxs-lookup"><span data-stu-id="20e8d-173">UserStackLimit</span></span>
+<span data-ttu-id="df9fc-173">UserStackLimit</span><span class="sxs-lookup"><span data-stu-id="df9fc-173">UserStackLimit</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-174">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-174">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-174">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-174">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-175">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-175">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-175">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-175">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-176">Calificadores: WmiDataId (6), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-176">Qualifiers: WmiDataId(6), Pointer</span></span>
+<span data-ttu-id="df9fc-176">Calificadores: WmiDataId(6), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-176">Qualifiers: WmiDataId(6), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-177">Límite de la pila de modo de usuario del subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-177">Limit of the thread's user-mode stack.</span></span>
+<span data-ttu-id="df9fc-177">Límite de la pila de modo de usuario del subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-177">Limit of the thread's user-mode stack.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20e8d-178">Win32StartAddr</span><span class="sxs-lookup"><span data-stu-id="20e8d-178">Win32StartAddr</span></span>
+<span data-ttu-id="df9fc-178">Win32StartAddr</span><span class="sxs-lookup"><span data-stu-id="df9fc-178">Win32StartAddr</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="20e8d-179">Tipo de datos: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="20e8d-179">Data type: **uint32**</span></span>
+<span data-ttu-id="df9fc-179">Tipo de datos: **uint32**</span><span class="sxs-lookup"><span data-stu-id="df9fc-179">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-180">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="20e8d-180">Access type: Read-only</span></span>
+<span data-ttu-id="df9fc-180">Tipo de acceso: solo lectura</span><span class="sxs-lookup"><span data-stu-id="df9fc-180">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="20e8d-181">Calificadores: WmiDataId (8), puntero</span><span class="sxs-lookup"><span data-stu-id="20e8d-181">Qualifiers: WmiDataId(8), Pointer</span></span>
+<span data-ttu-id="df9fc-181">Calificadores: WmiDataId(8), Pointer</span><span class="sxs-lookup"><span data-stu-id="df9fc-181">Qualifiers: WmiDataId(8), Pointer</span></span>
 </dt> </dl>
 
-<span data-ttu-id="20e8d-182">Dirección de inicio de la función que va a ejecutar este subproceso.</span><span class="sxs-lookup"><span data-stu-id="20e8d-182">Starting address of the function to be executed by this thread.</span></span>
+<span data-ttu-id="df9fc-182">Dirección inicial de la función que va a ejecutar este subproceso.</span><span class="sxs-lookup"><span data-stu-id="df9fc-182">Starting address of the function to be executed by this thread.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="20e8d-183">Observaciones</span><span class="sxs-lookup"><span data-stu-id="20e8d-183">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="df9fc-183">Comentarios</span><span class="sxs-lookup"><span data-stu-id="df9fc-183">Remarks</span></span>
 
-<span data-ttu-id="20e8d-184">Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se están ejecutando actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="20e8d-184">The DCStart and DCEnd event types enumerate the threads that are currently running at the time the kernel session starts and ends, respectively.</span></span>
+<span data-ttu-id="df9fc-184">Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se ejecutan actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="df9fc-184">The DCStart and DCEnd event types enumerate the threads that are currently running at the time the kernel session starts and ends, respectively.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="20e8d-185">Requisitos</span><span class="sxs-lookup"><span data-stu-id="20e8d-185">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="df9fc-185">Requisitos</span><span class="sxs-lookup"><span data-stu-id="df9fc-185">Requirements</span></span>
 
 
 
-| <span data-ttu-id="20e8d-186">Requisito</span><span class="sxs-lookup"><span data-stu-id="20e8d-186">Requirement</span></span> | <span data-ttu-id="20e8d-187">Value</span><span class="sxs-lookup"><span data-stu-id="20e8d-187">Value</span></span> |
+| <span data-ttu-id="df9fc-186">Requisito</span><span class="sxs-lookup"><span data-stu-id="df9fc-186">Requirement</span></span> | <span data-ttu-id="df9fc-187">Valor</span><span class="sxs-lookup"><span data-stu-id="df9fc-187">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="20e8d-188">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="20e8d-188">Minimum supported client</span></span><br/> | <span data-ttu-id="20e8d-189">Solo aplicaciones de escritorio de Windows Vista \[\]</span><span class="sxs-lookup"><span data-stu-id="20e8d-189">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="20e8d-190">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="20e8d-190">Minimum supported server</span></span><br/> | <span data-ttu-id="20e8d-191">Solo aplicaciones de escritorio de Windows Server 2008 \[\]</span><span class="sxs-lookup"><span data-stu-id="20e8d-191">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="df9fc-188">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="df9fc-188">Minimum supported client</span></span><br/> | <span data-ttu-id="df9fc-189">Solo aplicaciones de escritorio de Windows \[ Vista\]</span><span class="sxs-lookup"><span data-stu-id="df9fc-189">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="df9fc-190">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="df9fc-190">Minimum supported server</span></span><br/> | <span data-ttu-id="df9fc-191">Solo aplicaciones de escritorio de Windows Server 2008 \[\]</span><span class="sxs-lookup"><span data-stu-id="df9fc-191">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="20e8d-192">Vea también</span><span class="sxs-lookup"><span data-stu-id="20e8d-192">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="df9fc-192">Consulte también</span><span class="sxs-lookup"><span data-stu-id="df9fc-192">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="20e8d-193">**Conversaciones**</span><span class="sxs-lookup"><span data-stu-id="20e8d-193">**Thread**</span></span>](thread.md)
+[<span data-ttu-id="df9fc-193">**Hilo**</span><span class="sxs-lookup"><span data-stu-id="df9fc-193">**Thread**</span></span>](thread.md)
 </dt> </dl>
 
  
