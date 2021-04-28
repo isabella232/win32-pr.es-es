@@ -1,7 +1,7 @@
 ---
-description: Usa una función de lenguaje de sombreado de alto nivel (HLSL) compilada para rellenar cada textura de cada nivel de mipmap de una textura.
+description: 'Función D3DXFillTextureTX: usa una función compilada de lenguaje de sombreador de alto nivel (HLSL) para rellenar cada texel de cada nivel de mapa mip de una textura.'
 ms.assetid: 013660ce-865e-4acf-a1ea-670e70377ff5
-title: Función D3DXFillTextureTX (D3dx9tex. h)
+title: Función D3DXFillTextureTX (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3605011f7967edec68d13405b4cabbd9c90d4c59
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 419dc0e7b4266a2fe32557c52ed4323b51a25843
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083724"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107643"
 ---
-# <a name="d3dxfilltexturetx-function"></a><span data-ttu-id="514b9-103">D3DXFillTextureTX función)</span><span class="sxs-lookup"><span data-stu-id="514b9-103">D3DXFillTextureTX function</span></span>
+# <a name="d3dxfilltexturetx-function"></a><span data-ttu-id="2ac31-103">Función D3DXFillTextureTX</span><span class="sxs-lookup"><span data-stu-id="2ac31-103">D3DXFillTextureTX function</span></span>
 
-<span data-ttu-id="514b9-104">Usa una función de lenguaje de sombreado de alto nivel (HLSL) compilada para rellenar cada textura de cada nivel de mipmap de una textura.</span><span class="sxs-lookup"><span data-stu-id="514b9-104">Uses a compiled high-level shader language (HLSL) function to fill each texel of each mipmap level of a texture.</span></span>
+<span data-ttu-id="2ac31-104">Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada texel de cada nivel de mapa mip de una textura.</span><span class="sxs-lookup"><span data-stu-id="2ac31-104">Uses a compiled high-level shader language (HLSL) function to fill each texel of each mipmap level of a texture.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="514b9-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="514b9-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2ac31-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="2ac31-105">Syntax</span></span>
 
 
 ```C++
@@ -37,43 +37,43 @@ HRESULT D3DXFillTextureTX(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="514b9-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="514b9-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2ac31-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="2ac31-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="514b9-107">*pTexture* \[ in, out\]</span><span class="sxs-lookup"><span data-stu-id="514b9-107">*pTexture* \[in, out\]</span></span>
+<span data-ttu-id="2ac31-107">*pTexture* \[ in, out\]</span><span class="sxs-lookup"><span data-stu-id="2ac31-107">*pTexture* \[in, out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="514b9-108">Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**</span><span class="sxs-lookup"><span data-stu-id="514b9-108">Type: **[**LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**</span></span>
+<span data-ttu-id="2ac31-108">Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**</span><span class="sxs-lookup"><span data-stu-id="2ac31-108">Type: **[**LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**</span></span>
 
-<span data-ttu-id="514b9-109">Puntero a un objeto [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura que se va a rellenar.</span><span class="sxs-lookup"><span data-stu-id="514b9-109">Pointer to an [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) object, representing the texture to be filled.</span></span>
+<span data-ttu-id="2ac31-109">Puntero a un [**objeto IDirect3DTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que representa la textura que se va a rellenar.</span><span class="sxs-lookup"><span data-stu-id="2ac31-109">Pointer to an [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) object, representing the texture to be filled.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="514b9-110">*pTextureShader* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="514b9-110">*pTextureShader* \[in\]</span></span>
+<span data-ttu-id="2ac31-110">*pTextureShader* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="2ac31-110">*pTextureShader* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="514b9-111">Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**</span><span class="sxs-lookup"><span data-stu-id="514b9-111">Type: **[**LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**</span></span>
+<span data-ttu-id="2ac31-111">Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**</span><span class="sxs-lookup"><span data-stu-id="2ac31-111">Type: **[**LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**</span></span>
 
-<span data-ttu-id="514b9-112">Puntero a un objeto de sombreador de textura de [**ID3DXTextureShader**](id3dxtextureshader.md) .</span><span class="sxs-lookup"><span data-stu-id="514b9-112">Pointer to a [**ID3DXTextureShader**](id3dxtextureshader.md) texture shader object.</span></span>
+<span data-ttu-id="2ac31-112">Puntero a un [**objeto de sombreador de textura ID3DXTextureShader.**](id3dxtextureshader.md)</span><span class="sxs-lookup"><span data-stu-id="2ac31-112">Pointer to a [**ID3DXTextureShader**](id3dxtextureshader.md) texture shader object.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="514b9-113">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="514b9-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2ac31-113">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="2ac31-113">Return value</span></span>
 
-<span data-ttu-id="514b9-114">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="514b9-114">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="2ac31-114">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="2ac31-114">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="514b9-115">Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="514b9-115">If the function succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="514b9-116">Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ NOTAVAILABLE, D3DERR \_ INVALIDCALL.</span><span class="sxs-lookup"><span data-stu-id="514b9-116">If the function fails, the return value can be one of the following: D3DERR\_NOTAVAILABLE, D3DERR\_INVALIDCALL.</span></span>
+<span data-ttu-id="2ac31-115">Si la función se realiza correctamente, el valor devuelto es D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="2ac31-115">If the function succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="2ac31-116">Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ NOTAVAILABLE, D3DERR \_ INVALIDCALL.</span><span class="sxs-lookup"><span data-stu-id="2ac31-116">If the function fails, the return value can be one of the following: D3DERR\_NOTAVAILABLE, D3DERR\_INVALIDCALL.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="514b9-117">Observaciones</span><span class="sxs-lookup"><span data-stu-id="514b9-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2ac31-117">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2ac31-117">Remarks</span></span>
 
-<span data-ttu-id="514b9-118">El destino de la textura debe ser una función HLSL que tenga la semántica siguiente:</span><span class="sxs-lookup"><span data-stu-id="514b9-118">The texture target must be an HLSL function that takes contains the following semantics:</span></span>
+<span data-ttu-id="2ac31-118">El destino de textura debe ser una función HLSL que tome la semántica siguiente:</span><span class="sxs-lookup"><span data-stu-id="2ac31-118">The texture target must be an HLSL function that takes contains the following semantics:</span></span>
 
--   <span data-ttu-id="514b9-119">Un parámetro de entrada debe utilizar una semántica de posición.</span><span class="sxs-lookup"><span data-stu-id="514b9-119">One input parameter must use a POSITION semantic.</span></span>
--   <span data-ttu-id="514b9-120">Un parámetro de entrada debe utilizar una semántica PSIZE.</span><span class="sxs-lookup"><span data-stu-id="514b9-120">One input parameter must use a PSIZE semantic.</span></span>
--   <span data-ttu-id="514b9-121">La función debe devolver un parámetro que use la semántica de COLOR.</span><span class="sxs-lookup"><span data-stu-id="514b9-121">The function must return a parameter that uses the COLOR semantic.</span></span>
+-   <span data-ttu-id="2ac31-119">Un parámetro de entrada debe usar una semántica POSITION.</span><span class="sxs-lookup"><span data-stu-id="2ac31-119">One input parameter must use a POSITION semantic.</span></span>
+-   <span data-ttu-id="2ac31-120">Un parámetro de entrada debe usar una semántica PSIZE.</span><span class="sxs-lookup"><span data-stu-id="2ac31-120">One input parameter must use a PSIZE semantic.</span></span>
+-   <span data-ttu-id="2ac31-121">La función debe devolver un parámetro que use la semántica COLOR.</span><span class="sxs-lookup"><span data-stu-id="2ac31-121">The function must return a parameter that uses the COLOR semantic.</span></span>
 
-<span data-ttu-id="514b9-122">El siguiente es un ejemplo de este tipo de función HLSL:</span><span class="sxs-lookup"><span data-stu-id="514b9-122">The following is an example of such an HLSL function:</span></span>
+<span data-ttu-id="2ac31-122">A continuación se muestra un ejemplo de una función HLSL de este tipo:</span><span class="sxs-lookup"><span data-stu-id="2ac31-122">The following is an example of such an HLSL function:</span></span>
 
 
 ```
@@ -101,30 +101,30 @@ float4 TextureGradientFill(
 
 
 
-<span data-ttu-id="514b9-123">Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, pero la semántica de entrada debe estar representada.</span><span class="sxs-lookup"><span data-stu-id="514b9-123">Note that the input parameters can be in any order, but both input semantics must be represented.</span></span>
+<span data-ttu-id="2ac31-123">Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, pero se debe representar ambas semánticas de entrada.</span><span class="sxs-lookup"><span data-stu-id="2ac31-123">Note that the input parameters can be in any order, but both input semantics must be represented.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="514b9-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="514b9-124">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2ac31-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2ac31-124">Requirements</span></span>
 
 
 
-| <span data-ttu-id="514b9-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="514b9-125">Requirement</span></span> | <span data-ttu-id="514b9-126">Value</span><span class="sxs-lookup"><span data-stu-id="514b9-126">Value</span></span> |
+| <span data-ttu-id="2ac31-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="2ac31-125">Requirement</span></span> | <span data-ttu-id="2ac31-126">Value</span><span class="sxs-lookup"><span data-stu-id="2ac31-126">Value</span></span> |
 |--------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="514b9-127">Encabezado</span><span class="sxs-lookup"><span data-stu-id="514b9-127">Header</span></span><br/>  | <dl> <span data-ttu-id="514b9-128"><dt>D3dx9tex. h</dt></span><span class="sxs-lookup"><span data-stu-id="514b9-128"><dt>D3dx9tex.h</dt></span></span> </dl> |
-| <span data-ttu-id="514b9-129">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="514b9-129">Library</span></span><br/> | <dl> <span data-ttu-id="514b9-130"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="514b9-130"><dt>D3dx9.lib</dt></span></span> </dl>  |
+| <span data-ttu-id="2ac31-127">Encabezado</span><span class="sxs-lookup"><span data-stu-id="2ac31-127">Header</span></span><br/>  | <dl> <span data-ttu-id="2ac31-128"><dt>D3dx9tex.h</dt></span><span class="sxs-lookup"><span data-stu-id="2ac31-128"><dt>D3dx9tex.h</dt></span></span> </dl> |
+| <span data-ttu-id="2ac31-129">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="2ac31-129">Library</span></span><br/> | <dl> <span data-ttu-id="2ac31-130"><dt>D3dx9.lib</dt></span><span class="sxs-lookup"><span data-stu-id="2ac31-130"><dt>D3dx9.lib</dt></span></span> </dl>  |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="514b9-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="514b9-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2ac31-131">Consulte también</span><span class="sxs-lookup"><span data-stu-id="2ac31-131">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="514b9-132">Funciones de textura en D3DX 9</span><span class="sxs-lookup"><span data-stu-id="514b9-132">Texture Functions in D3DX 9</span></span>](dx9-graphics-reference-d3dx-functions-texture.md)
+[<span data-ttu-id="2ac31-132">Funciones de textura en D3DX 9</span><span class="sxs-lookup"><span data-stu-id="2ac31-132">Texture Functions in D3DX 9</span></span>](dx9-graphics-reference-d3dx-functions-texture.md)
 </dt> <dt>
 
-[<span data-ttu-id="514b9-133">**D3DXFillCubeTextureTX**</span><span class="sxs-lookup"><span data-stu-id="514b9-133">**D3DXFillCubeTextureTX**</span></span>](d3dxfillcubetexturetx.md)
+[<span data-ttu-id="2ac31-133">**D3DXFillCubeTextureTX**</span><span class="sxs-lookup"><span data-stu-id="2ac31-133">**D3DXFillCubeTextureTX**</span></span>](d3dxfillcubetexturetx.md)
 </dt> <dt>
 
-[<span data-ttu-id="514b9-134">**D3DXFillVolumeTextureTX**</span><span class="sxs-lookup"><span data-stu-id="514b9-134">**D3DXFillVolumeTextureTX**</span></span>](d3dxfillvolumetexturetx.md)
+[<span data-ttu-id="2ac31-134">**D3DXFillVolumeTextureTX**</span><span class="sxs-lookup"><span data-stu-id="2ac31-134">**D3DXFillVolumeTextureTX**</span></span>](d3dxfillvolumetexturetx.md)
 </dt> </dl>
 
  
