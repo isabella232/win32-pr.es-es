@@ -1,33 +1,33 @@
 ---
 title: Servicio de acceso remoto y enrutamiento
-description: .
+description: Servicio de acceso remoto y enrutamiento
 ms.assetid: fa0a183a-0254-401e-8b78-441cb3f83e8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdaae9e54cd37bef1b45a3336eb389027ebf01ba
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 49d81e743f640e600588413f0c15c44e0410c5ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676249"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116473"
 ---
 # <a name="routing-and-remote-access-service"></a>Servicio de acceso remoto y enrutamiento
 
 ## <a name="purpose"></a>Propósito
 
-El servicio de acceso remoto (RAS) se puede usar para crear aplicaciones cliente. Estas aplicaciones muestran cuadros de diálogo comunes de RAS, administran conexiones de acceso remoto y dispositivos, y manipulan entradas de libreta de teléfonos.
+El servicio de acceso remoto (RAS) se puede usar para crear aplicaciones cliente. Estas aplicaciones muestran cuadros de diálogo comunes de RAS, administran dispositivos y conexiones de acceso remoto, y manipulan entradas de la libreta de teléfonos.
 
-Las API de enrutamiento permiten crear aplicaciones para administrar las capacidades de enrutamiento del sistema operativo.
+Las API de enrutamiento hacen posible crear aplicaciones para administrar las funcionalidades de enrutamiento del sistema operativo.
 
-Los desarrolladores pueden usar las API del Protocolo de enrutamiento para implementar protocolos de enrutamiento.
+Los desarrolladores pueden usar las API de protocolo de enrutamiento para implementar protocolos de enrutamiento.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Las API del servicio de enrutamiento y acceso remoto están diseñadas para que las usen los programadores de C/C++. Los programadores también deben estar familiarizados con los conceptos de red.
+Las API del servicio de enrutamiento y acceso remoto están diseñadas para su uso por los programadores de C/C++. Los programadores también deben estar familiarizados con los conceptos de red.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-Para obtener información más específica acerca de los sistemas operativos que admiten una función determinada, consulte las secciones de requisitos en la documentación de.
+Para obtener información más específica sobre qué sistemas operativos admiten una función determinada, consulte las secciones Requisitos de la documentación.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -36,11 +36,11 @@ Para obtener información más específica acerca de los sistemas operativos que
 | Tema                                                                                                             | Descripción                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [Arquitectura de servicios de enrutamiento y acceso remoto](routing-and-remote-access-services-architecture.md)<br/> | Información general de la arquitectura de servicios de enrutamiento y acceso remoto.<br/>                                           |
-| [Diseño del registro de enrutamiento y acceso remoto](routing-and-remote-access-registry-layout.md)<br/>             | Un ejemplo de diseño del registro para el servicio de enrutador<br/>                                                          |
+| [Diseño del Registro de enrutamiento y acceso remoto](routing-and-remote-access-registry-layout.md)<br/>             | Un diseño de registro de ejemplo para el servicio de enrutador<br/>                                                          |
 | [Códigos de error de enrutamiento y acceso remoto](routing-and-remote-access-error-codes.md)<br/>                     | Lista de todos los códigos de error de enrutamiento y acceso remoto.<br/>                                                         |
-| [Acceso remoto](remote-access-start-page.md)<br/>                                                          | Documentación para las API de administración RAS y RAS.<br/>                                                         |
-| [Enrutamiento](routing-start-page.md)<br/>                                                                      | Documentación de las API de administración de enrutador y base de datos de información de administración (MIB).<br/>                        |
-| [Protocolos de enrutamiento](routing-protocols-start-page.md)<br/>                                                  | Documentación para el administrador de grupos de multidifusión, la interfaz del Protocolo de enrutamiento y las API del administrador de tablas de enrutamiento.<br/> |
+| [Acceso remoto](remote-access-start-page.md)<br/>                                                          | Documentación de LAS API de administración de RAS y RAS.<br/>                                                         |
+| [Enrutamiento](routing-start-page.md)<br/>                                                                      | Documentación de las API de La base de información de administración y administración de enrutadores (MIB).<br/>                        |
+| [Protocolos de enrutamiento](routing-protocols-start-page.md)<br/>                                                  | Documentación de las API Administrador de grupos de multidifusión, Interfaz de protocolo de enrutamiento y Administrador de tablas de enrutamiento.<br/> |
 | [Glosario](glossary.md)<br/>                                                                               | Definiciones de los términos usados en la documentación del servicio de enrutamiento y acceso remoto.<br/>                         |
 
 

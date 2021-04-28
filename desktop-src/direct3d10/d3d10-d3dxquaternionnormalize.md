@@ -1,7 +1,7 @@
 ---
-description: Calcula un cuaternión de longitud de unidad.
+description: 'Función D3DXQuaternionNormalize (D3DX10Math.h): calcula un cuaternión de longitud de unidad.'
 ms.assetid: 6735a632-64d7-4bc1-b63e-d0cd27f5a29b
-title: Función D3DXQuaternionNormalize (D3DX10Math. h)
+title: Función D3DXQuaternionNormalize (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e121ef4892c65a0f04acaa89d44d4a5a9090740e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d031dfc63cb92d43a9cca27813c9425e2ff1acb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280430"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103143"
 ---
-# <a name="d3dxquaternionnormalize-function-d3dx10mathh"></a>Función D3DXQuaternionNormalize (D3DX10Math. h)
+# <a name="d3dxquaternionnormalize-function-d3dx10mathh"></a>Función D3DXQuaternionNormalize (D3DX10Math.h)
 
 Calcula un cuaternión de longitud de unidad.
 
@@ -46,16 +46,16 @@ D3DXQUATERNION* D3DXQuaternionNormalize(
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero al [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de la operación.
+Puntero a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pQ* \[ de\]
+*pQ* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntero a la estructura de D3DXQUATERNION de origen.
+Puntero a la estructura D3DXQUATERNION de origen.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
 Puntero a una estructura D3DXQUATERNION que es la normal del cuaternión.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXQuaternionNormalize se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXQuaternionNormalize se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

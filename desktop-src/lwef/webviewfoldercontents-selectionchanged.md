@@ -1,9 +1,9 @@
 ---
-title: Evento WebViewFolderContents. SelectionChanged (Shldisp. h)
-description: Se produce cuando cambia el estado de selección de cualquier elemento o elementos de la vista.
+title: Evento WebViewFolderContents.SelectionChanged (Shldisp.h)
+description: 'Evento WebViewFolderContents.SelectionChanged: se produce cuando el estado de selección de cualquier elemento o elemento de la vista ha cambiado.'
 ms.assetid: 46dfceec-aa81-4950-81e5-526a6e621271
 keywords:
-- Evento SelectionChanged características del entorno de Windows heredado
+- Características heredadas del entorno de Windows del evento SelectionChanged
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8421e9d06ff9fd24256da8a23cdd100b5749968
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea6176cb2a1703d48cd2ddec8069c65d7efc978f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535134"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102663"
 ---
-# <a name="webviewfoldercontentsselectionchanged-event"></a>Evento WebViewFolderContents. SelectionChanged
+# <a name="webviewfoldercontentsselectionchanged-event"></a>Evento WebViewFolderContents.SelectionChanged
 
-Se produce cuando cambia el estado de selección de cualquier elemento o elementos de la vista.
+Se produce cuando el estado de selección de cualquier elemento o elemento de la vista ha cambiado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Este controlador de eventos no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este evento para JScript Embedded en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este evento para JScript insertado en HTML.
 
 
 ```HTML
@@ -82,13 +82,13 @@ En el ejemplo siguiente se muestra el uso correcto de este evento para JScript E
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

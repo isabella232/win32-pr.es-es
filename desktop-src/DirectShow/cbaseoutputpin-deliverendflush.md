@@ -1,7 +1,7 @@
 ---
-description: El método DeliverEndFlush solicita que el PIN de entrada conectado finalice una operación de vaciado.
+description: 'Método CBaseOutputPin.DeliverEndFlush: el método DeliverEndFlush solicita el pin de entrada conectado para finalizar una operación de vaciado.'
 ms.assetid: 9f1fd76c-dba7-41c5-b098-9735e4f2571b
-title: Método CBaseOutputPin. DeliverEndFlush (Amfilter. h)
+title: Método CBaseOutputPin.DeliverEndFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cb9b92947f2452b8755109c4b83cb21afa119461
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f3fd5c1bc686ee5c0b4ff0cd1285a5114b93049
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671508"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096183"
 ---
-# <a name="cbaseoutputpindeliverendflush-method"></a>CBaseOutputPin. DeliverEndFlush, método
+# <a name="cbaseoutputpindeliverendflush-method"></a>Método CBaseOutputPin.DeliverEndFlush
 
-El `DeliverEndFlush` método solicita el PIN de entrada conectado para finalizar una operación de vaciado.
+El `DeliverEndFlush` método solicita el pin de entrada conectado para finalizar una operación de vaciado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que aparecen en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                           | Descripción                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                  | Correcto.<br/>              |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | El PIN no está conectado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>              |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin no está conectado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**IPin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) en el PIN de entrada.
+Este método llama al [**método IPin::EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) en el pin de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ Este método llama al método [**IPin:: EndFlush**](/windows/desktop/api/Strmif/
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseOutputPin**](cbaseoutputpin.md)
+[**CBaseOutputPin (clase)**](cbaseoutputpin.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Contiene el número de elementos de la colección.
+description: 'Propiedad FolderItems.Count: contiene el número de elementos de la colección.'
 ms.assetid: 383382d5-7e3f-4b27-bebf-6b79dbe677b8
-title: Propiedad FolderItems. Count (Shldisp. h)
+title: Propiedad FolderItems.Count (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 814a8248a54c5b58624a721f006bc8d4f974ba92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2bde6d938bde675c52c93f09916a70ba0e21f9a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984182"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089613"
 ---
-# <a name="folderitemscount-property"></a>FolderItems. Count (propiedad)
+# <a name="folderitemscount-property"></a>Propiedad FolderItems.Count
 
 Contiene el número de elementos de la colección.
 
@@ -37,13 +37,13 @@ iCount = FolderItems.Count
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **entero** que contiene un valor para la propiedad **Count** .
+Entero **que** contiene un valor para la **propiedad Count.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **Count** para recuperar el recuento de elementos de la carpeta Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Count** para recuperar el recuento de elementos de la carpeta de Windows. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -74,7 +74,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -145,13 +145,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

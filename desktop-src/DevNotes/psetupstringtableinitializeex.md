@@ -1,7 +1,7 @@
 ---
-description: Inicializa una tabla de cadenas.
+description: 'Función pSetupStringTableInitializeEx: inicializa una tabla de cadenas.'
 ms.assetid: 184df85a-6d59-42c5-8ec1-f0c046091645
-title: pSetupStringTableInitializeEx función)
+title: Función pSetupStringTableInitializeEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: d40f221656da4cada610e7254b392bb2bd627a14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78ee96e7e366fdff821e8202300ff28de0a14af3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670512"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096653"
 ---
-# <a name="psetupstringtableinitializeex-function"></a>pSetupStringTableInitializeEx función)
+# <a name="psetupstringtableinitializeex-function"></a>Función pSetupStringTableInitializeEx
 
-\[Esta función no está disponible en Windows Vista ni Windows Server 2008.\]
+\[Esta función no está disponible en Windows Vista o Windows Server 2008.\]
 
 Inicializa una tabla de cadenas.
 
@@ -42,29 +42,29 @@ PVOID pSetupStringTableInitializeEx(
 
 <dl> <dt>
 
-*ExtraDataSize* \[ de\]
+*ExtraDataSize* \[ En\]
 </dt> <dd>
 
-Tamaño del objeto de datos extra.
+Tamaño del objeto de datos adicional.
 
 </dd> <dt>
 
-*Reservado* \[ de\]
+*Reservado* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Setupapi.dll</dt> </dl> |
 

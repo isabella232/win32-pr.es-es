@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CImagePalette.CImagePalette: método constructor.'
 ms.assetid: 50fa573c-a244-4a1e-9fd9-2b33a3427c84
-title: Constructor CImagePalette. CImagePalette (Winutil. h)
+title: Constructor CImagePalette.CImagePalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 38b5766617e1d17fa3917048c2fb845b5194cc42
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5021b165a8fa47bedc7961657d7cdbfa07af301d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681007"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085683"
 ---
-# <a name="cimagepalettecimagepalette-constructor"></a>Constructor CImagePalette. CImagePalette
+# <a name="cimagepalettecimagepalette-constructor"></a>Constructor CImagePalette.CImagePalette
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,14 +54,14 @@ Puntero al filtro propietario.
 *pBaseWindow* 
 </dt> <dd>
 
-Puntero a un objeto **CBaseWindow** , que administra la ventana donde se realiza la paleta. Este parámetro puede ser **NULL**.
+Puntero a un **objeto CBaseWindow,** que administra la ventana donde se realiza la paleta. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
 *pDrawImage* 
 </dt> <dd>
 
-Puntero a un objeto **CDrawImage** que dibuja la imagen de vídeo. Este parámetro puede ser **NULL**.
+Puntero a un **objeto CDrawImage,** que dibuja la imagen de vídeo. Este parámetro puede ser **NULL**.
 
 </dd> </dl>
 
@@ -71,16 +71,16 @@ Puntero a un objeto **CDrawImage** que dibuja la imagen de vídeo. Este parámet
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImagePalette**](cimagepalette.md)
+[**CImagePalette (clase)**](cimagepalette.md)
 </dt> </dl>
 
  

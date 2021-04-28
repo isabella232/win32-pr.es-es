@@ -1,7 +1,7 @@
 ---
-description: El método StreamTime recupera la hora de la secuencia actual.
+description: 'Método CBaseMediaFilter.StreamTime: el método StreamTime recupera el tiempo de secuencia actual.'
 ms.assetid: 2e1ff6f1-9815-4ee6-97e8-a5ab5f472b27
-title: Método CBaseMediaFilter. StreamTime (Amfilter. h)
+title: Método CBaseMediaFilter.StreamTime (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27ccc9c721c97742c09d043af4cca5d287747597
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a90bb7d97825c14f11c75dd42d696fa302f8e3d4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660186"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096253"
 ---
-# <a name="cbasemediafilterstreamtime-method"></a>CBaseMediaFilter. StreamTime, método
+# <a name="cbasemediafilterstreamtime-method"></a>Método CBaseMediaFilter.StreamTime
 
-El `StreamTime` método recupera la hora de la secuencia actual.
+El `StreamTime` método recupera el tiempo de secuencia actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ virtual HRESULT StreamTime(
 
 <dl> <dt>
 
-*rtStream* \[ CLI\]
+*rtStream* \[ Ref\]
 </dt> <dd>
 
-Referencia a un objeto [**CRefTime**](creftime.md) que recibe la hora de la secuencia actual.
+Referencia a un [**objeto CRefTime**](creftime.md) que recibe el tiempo de secuencia actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que aparecen en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                      | Descripción                                 |
 |--------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>             | Correcto.<br/>                         |
-| <dl> <dt>**VFW \_ E \_ sin \_ reloj**</dt> </dl> | No hay ningún reloj de referencia disponible.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>             | Correcto.<br/>                         |
+| <dl> <dt>**VFW \_ E \_ NO \_ CLOCK**</dt> </dl> | No hay ningún reloj de referencia disponible.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hora de la secuencia se define como la hora de referencia actual (indicada por el reloj de referencia) menos la hora de inicio (especificada por [**CBaseMediaFilter:: m \_ tStart**](cbasemediafilter-m-tstart.md)). La marca de tiempo de un ejemplo multimedia especifica el tiempo de flujo en el que se debe representar. Si aún no se ha representado una muestra con una marca de tiempo menor que la hora actual de la secuencia, se retrasa.
+La hora de la secuencia se define como la hora de referencia actual (según lo indicado por el reloj de referencia) menos la hora de inicio (especificada por [**CBaseMediaFilter::m \_ tStart).**](cbasemediafilter-m-tstart.md) La marca de tiempo de un ejemplo multimedia especifica el tiempo de secuencia en el que se debe representar. Si aún no se ha representado un ejemplo con una marca de tiempo inferior a la hora de transmisión actual, es tarde.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,16 +74,16 @@ La hora de la secuencia se define como la hora de referencia actual (indicada po
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseMediaFilter**](cbasemediafilter.md)
+[**CBaseMediaFilter (clase)**](cbasemediafilter.md)
 </dt> </dl>
 
  

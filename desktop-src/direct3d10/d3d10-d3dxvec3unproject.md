@@ -1,7 +1,7 @@
 ---
-description: Proyecta un vector a partir del espacio de la pantalla en el espacio de objeto.
+description: 'Función D3DXVec3Unproject (D3DX10Math.h): proyecta un vector desde el espacio de pantalla al espacio de objetos.'
 ms.assetid: c96d732d-0594-42b4-bc54-458a313f153e
-title: Función D3DXVec3Unproject (D3DX10Math. h)
+title: Función D3DXVec3Unproject (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 21916392c689bcac794d44ec2c42c3e0b39abb0c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 08d38691d0e780e49293149bdb7a08b1ea0ef1fb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678823"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103033"
 ---
-# <a name="d3dxvec3unproject-function-d3dx10mathh"></a>Función D3DXVec3Unproject (D3DX10Math. h)
+# <a name="d3dxvec3unproject-function-d3dx10mathh"></a>Función D3DXVec3Unproject (D3DX10Math.h)
 
-Proyecta un vector a partir del espacio de la pantalla en el espacio de objeto.
+Proyecta un vector desde el espacio de pantalla al espacio de objetos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,52 +49,52 @@ D3DXVECTOR3* D3DXVec3Unproject(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PV* \[ de\]
+*pV* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a la estructura de D3DXVECTOR3 de origen.
+Puntero a la estructura D3DXVECTOR3 de origen.
 
 </dd> <dt>
 
-*pViewport* \[ de\]
+*pViewport* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3D10 \_ VIEWPORT**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport) \***
 
-Puntero a una [**\_ ventanilla D3D10**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport)que representa la ventanilla.
+Puntero a una [**ventanilla D3D10 \_**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport), que representa la ventanilla.
 
 </dd> <dt>
 
-*pProjection* \[ de\]
+*pProjection* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a una estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que representa la matriz de proyección.
+Puntero a una [**estructura D3DXMATRIX,**](d3d10-d3dxmatrix.md) que representa la matriz de proyección.
 
 </dd> <dt>
 
-*pView* \[ de\]
+*pView* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a una estructura D3DXMATRIX que representa la matriz de la vista.
+Puntero a una estructura D3DXMATRIX, que representa la matriz de vistas.
 
 </dd> <dt>
 
-*pWorld* \[ de\]
+*pWorld* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a una estructura D3DXMATRIX que representa la matriz universal.
+Puntero a una estructura D3DXMATRIX, que representa la matriz mundial.
 
 </dd> </dl>
 
@@ -102,11 +102,11 @@ Puntero a una estructura D3DXMATRIX que representa la matriz universal.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a una estructura D3DXVECTOR3 que es el vector proyectado desde el espacio de la pantalla hasta el espacio del objeto.
+Puntero a una estructura D3DXVECTOR3 que es el vector proyectado desde el espacio de pantalla al espacio de objetos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXVec3Unproject se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec3Unproject se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,11 +114,11 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

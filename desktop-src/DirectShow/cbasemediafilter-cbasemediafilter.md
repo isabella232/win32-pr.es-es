@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBaseMediaFilter.CBaseMediaFilter: método constructor.'
 ms.assetid: 91290f58-a77b-447f-aa2a-bbee067f5a98
-title: Constructor CBaseMediaFilter. CBaseMediaFilter (Amfilter. h)
+title: Constructor CBaseMediaFilter.CBaseMediaFilter (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8498e9da88804291fc5cdb900ff1dbda212e8b0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f123c7af29c6420de6004132180eba8dbf33fa72
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670585"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096332"
 ---
-# <a name="cbasemediafiltercbasemediafilter-constructor"></a>Constructor CBaseMediaFilter. CBaseMediaFilter
+# <a name="cbasemediafiltercbasemediafilter-constructor"></a>Constructor CBaseMediaFilter.CBaseMediaFilter
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,35 +52,35 @@ Puntero a una cadena que contiene el nombre del objeto.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntero a un bloqueo de [**CCritSec**](ccritsec.md) , que se usa para serializar los cambios de estado.
+Puntero a un [**bloqueo CCritSec,**](ccritsec.md) que se usa para serializar los cambios de estado.
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificador de clase del objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si otro objeto contiene o agrega el `CBaseMediaFilter` objeto, el bloqueo **CCritSec** podría ser externo al `CBaseMediaFilter` objeto. En ese caso, pase un puntero al bloqueo en *Plock*.
+Si otro objeto contiene o agrega el `CBaseMediaFilter` objeto, el **bloqueo CCritSec** podría ser externo al `CBaseMediaFilter` objeto . En ese caso, pase un puntero al bloqueo en *pLock*.
 
-De lo contrario, puede:
+De lo contrario, puede hacer lo siguiente:
 
--   Derive una clase que herede `CBaseMediaFilter` y **CCritSec**. En el caso de *Plock*, pase el puntero this.
--   Derive una clase que herede `CBaseMediaFilter` y contenga una variable miembro **CCritSec** . En el caso de *Plock*, pase la dirección de esa variable.
+-   Derive una clase que hereda y `CBaseMediaFilter` **CCritSec**. Para *pLock*, pase el puntero this.
+-   Derive una clase que hereda `CBaseMediaFilter` y contiene una variable miembro **CCritSec.** Para *pLock*, pase la dirección de esa variable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,16 +88,16 @@ De lo contrario, puede:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseMediaFilter**](cbasemediafilter.md)
+[**CBaseMediaFilter (clase)**](cbasemediafilter.md)
 </dt> </dl>
 
  

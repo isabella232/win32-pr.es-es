@@ -1,7 +1,7 @@
 ---
-description: Recupera el error.
+description: 'Método GetError de la Msvm_StorageJob : recupera el error.'
 ms.assetid: 785b83c4-06f4-46b5-81f7-35c6fce16c92
-title: Método GetError de la clase Msvm_StorageJob
+title: Método GetError de la Msvm_StorageJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a7d8ff9c2c01bb21343b4859e2db2dbed7ad643e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00434ef529b7f26755f52833ff6f37310c7dc210
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911014"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109603"
 ---
-# <a name="geterror-method-of-the-msvm_storagejob-class"></a>Método GetError de la \_ clase StorageJob de MSVM
+# <a name="geterror-method-of-the-msvm_storagejob-class"></a>Método GetError de la clase StorageJob de Msvm \_
 
 Recupera el error.
 
@@ -39,10 +39,10 @@ uint32 GetError(
 
 <dl> <dt>
 
-*Error* \[ de enuncia\]
+*Error* \[ out\]
 </dt> <dd>
 
-El error recuperado.
+Error recuperado.
 
 </dd> </dl>
 
@@ -64,16 +64,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -82,31 +82,31 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ StorageJob**](msvm-storagejob.md)
+[**Msvm \_ StorageJob**](msvm-storagejob.md)
 </dt> </dl>
 
  

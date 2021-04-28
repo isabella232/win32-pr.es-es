@@ -1,7 +1,7 @@
 ---
-description: 'El método SetTimeFormat establece el formato de hora. Este método implementa el método IMediaSeeking:: SetTimeFormat.'
+description: 'Método CPosPassThru.SetTimeFormat: el método SetTimeFormat establece el formato de hora. Este método implementa el método IMediaSeeking::SetTimeFormat.'
 ms.assetid: f6fc456d-51cf-4b2e-9248-afed9073d440
-title: Método CPosPassThru. SetTimeFormat (Ctlutil. h)
+title: Método CPosPassThru.SetTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b843e67a827e4bbd7471bb42df31033e314d9158
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81798ccbb51056353c62cd94f821b3567d78a484
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660643"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085473"
 ---
-# <a name="cpospassthrusettimeformat-method"></a>CPosPassThru. SetTimeFormat, método
+# <a name="cpospassthrusettimeformat-method"></a>Método CPosPassThru.SetTimeFormat
 
-El método SetTimeFormat establece el formato de hora. Este método implementa el método [**IMediaSeeking:: SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) .
+El método SetTimeFormat establece el formato de hora. Este método implementa el [**método IMediaSeeking::SetTimeFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Puntero a un GUID de formato de hora.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,16 +59,16 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> <dt>
 
 [**GUID de formato de hora**](time-format-guids.md)

@@ -1,11 +1,11 @@
 ---
-title: Método WebViewFolderContents. SelectItem (Shldisp. h)
-description: Establece el estado de selección de un elemento en la vista.
+title: Método WebViewFolderContents.SelectItem (Shldisp.h)
+description: 'Método WebViewFolderContents.SelectItem: establece el estado de selección de un elemento en la vista.'
 ms.assetid: c0e163ee-1951-476c-807a-781e26766d99
 keywords:
-- Método SelectItem características del entorno heredado de Windows
-- Método SelectItem características de entorno heredado de Windows, objeto WebViewFolderContents
-- Objeto WebViewFolderContents características de entorno de Windows heredado, método SelectItem
+- Características heredadas del entorno de Windows del método SelectItem
+- SelectItem method Legacy Windows Environment Features , WebViewFolderContents (Objeto WebViewFolderContents)
+- WebViewFolderContents object Legacy Windows Environment Features , SelectItem method (Características heredadas del entorno de Windows del objeto WebViewFolderContents), método SelectItem
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e491fb27db2d6e1e9b449be4aa2924684021539a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66e2d05c010199f05826df7ed4591e8c7c1723e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714538"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102614"
 ---
-# <a name="webviewfoldercontentsselectitem-method"></a>WebViewFolderContents. SelectItem, método
+# <a name="webviewfoldercontentsselectitem-method"></a>Método WebViewFolderContents.SelectItem
 
 Establece el estado de selección de un elemento en la vista.
 
@@ -43,21 +43,21 @@ WebViewFolderContents.SelectItem(
 
 <dl> <dt>
 
-*vItem* \[ de\]
+*vItem* \[ En\]
 </dt> <dd>
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-El objeto [_ *carpeta* *](../shell/folderitem.md) para el que se establecerá el estado de selección.
+Objeto [**FolderItem**](../shell/folderitem.md) para el que se establecerá el estado de selección.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
-Un conjunto de marcas que indican el nuevo estado de la selección. Puede ser uno o varios de los valores siguientes.
+Conjunto de marcas que indican el nuevo estado de selección. Puede ser uno o varios de los valores siguientes.
 
 <dt>
 
@@ -90,7 +90,7 @@ Seleccione el elemento.
 
 </dt> <dd>
 
-Poner el elemento en modo de edición.
+Coloque el elemento en modo de edición.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Poner el elemento en modo de edición.
 
 </dt> <dd>
 
-Anule la selección de todos los elementos excepto el especificado.
+Anule la selección de todos los elementos menos el especificado.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Asegúrese de que el elemento se muestra en la vista.
 
 </dt> <dd>
 
-Asigne al elemento el foco.
+Dé el foco al elemento.
 
 </dd> </dl> </dd> </dl>
 
@@ -133,7 +133,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método para JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML.
 
 
 ```HTML
@@ -171,13 +171,13 @@ En el ejemplo siguiente se muestra el uso correcto de este método para JScript 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

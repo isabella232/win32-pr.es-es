@@ -1,11 +1,11 @@
 ---
-title: Método WebViewFolderContents. PopupItemMenu (Shldisp. h)
-description: Crea un menú contextual para el elemento especificado y devuelve la cadena de comando seleccionada.
+title: Método WebViewFolderContents.PopupItemMenu (Shldisp.h)
+description: 'Método WebViewFolderContents.PopupItemMenu: crea un menú contextual para el elemento especificado y devuelve la cadena de comando seleccionada.'
 ms.assetid: 3c07500c-2fe9-4976-a1a8-b128e75f9325
 keywords:
-- Método PopupItemMenu características del entorno heredado de Windows
-- Método PopupItemMenu características de entorno heredado de Windows, objeto WebViewFolderContents
-- Objeto WebViewFolderContents características de entorno de Windows heredado, método PopupItemMenu
+- Características heredadas del entorno de Windows del método PopupItemMenu
+- Método PopupItemMenu Características heredadas del entorno de Windows , Objeto WebViewFolderContents
+- Objeto WebViewFolderContents Características heredadas del entorno de Windows, método PopupItemMenu
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41753814f103998185acc798a37447f22356d2aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c879e10097b334f0c2d4f98b1b76289d20ee4a93
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801244"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102643"
 ---
-# <a name="webviewfoldercontentspopupitemmenu-method"></a>WebViewFolderContents. PopupItemMenu, método
+# <a name="webviewfoldercontentspopupitemmenu-method"></a>Método WebViewFolderContents.PopupItemMenu
 
 Crea un menú contextual para el elemento especificado y devuelve la cadena de comando seleccionada.
 
@@ -44,42 +44,42 @@ retVal = WebViewFolderContents.PopupItemMenu(
 
 <dl> <dt>
 
-*vItem* \[ de\]
+*vItem* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Objeto [**carpeta**](../shell/folderitem.md) para el que se creará el menú contextual.
+Objeto [**FolderItem**](../shell/folderitem.md) para el que se creará el menú contextual.
 
 </dd> <dt>
 
-*VX* \[ en, opcional\]
+*vx* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Posición horizontal del menú, en coordenadas de la pantalla.
+Posición horizontal del menú, en coordenadas de pantalla.
 
 </dd> <dt>
 
-*VY* \[ en, opcional\]
+*vy* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Posición vertical del menú, en coordenadas de la pantalla.
+Posición vertical del menú, en coordenadas de pantalla.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[BSTR](/previous-versions/windows/desktop/automat/bstr) \** _
+Tipo: **[BSTR](/previous-versions/windows/desktop/automat/bstr)\***
 
-Cuando este método devuelve un valor, contiene la cadena de comando.
+Cuando este método vuelve, contiene la cadena de comando.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de _ *PopupItemMenu** para JScript Embedded en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de **PopupItemMenu** para JScript insertado en HTML.
 
 
 ```HTML
@@ -119,13 +119,13 @@ En el ejemplo siguiente se muestra el uso correcto de _ *PopupItemMenu** para JS
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

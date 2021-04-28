@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz con un guiñada, un tono y un rollo especificados.
+description: 'Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h): crea una matriz con una yaw, pitch y roll especificada.'
 ms.assetid: a3ef2b57-275f-484a-88fc-aaa5e470717c
-title: Función D3DXMatrixRotationYawPitchRoll (D3DX10Math. h)
+title: Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d65242f49ee94394337f43555c3e154141e3b642
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ae00865c45878159dbf86a6f829e9d1cf50337e3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003944"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108953"
 ---
-# <a name="d3dxmatrixrotationyawpitchroll-function-d3dx10mathh"></a>Función D3DXMatrixRotationYawPitchRoll (D3DX10Math. h)
+# <a name="d3dxmatrixrotationyawpitchroll-function-d3dx10mathh"></a>Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h)
 
-Crea una matriz con un guiñada, un tono y un rollo especificados.
+Crea una matriz con una yaw, pitch y roll especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,34 +48,34 @@ D3DXMATRIX* D3DXMatrixRotationYawPitchRoll(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*Guiñada* \[ de\]
+*Yaw* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Guiña alrededor del eje y, en radianes.
+Moverse alrededor del eje Y, en radianes.
 
 </dd> <dt>
 
-*Paso* \[ de\]
+*Pitch* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Paso alrededor del eje x, en radianes.
+Inclinar alrededor del eje X, en radianes.
 
 </dd> <dt>
 
-Poner al *día* \[ de\]
+*Roll* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desplazarse alrededor del eje z, en radianes.
+Revierte el eje Z, en radianes.
 
 </dd> </dl>
 
@@ -83,15 +83,15 @@ Desplazarse alrededor del eje z, en radianes.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX con el guiñada, el tono y el rollo especificados.
+Puntero a una estructura D3DXMATRIX con el yaw, pitch y roll especificados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixRotationYawPitchRoll se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixRotationYawPitchRoll se puede usar como parámetro para otra función.
 
-El orden de las transformaciones se revierte primero, después por el paso y después por el guiñada. En relación con el eje de coordenadas local del objeto, es equivalente a la rotación alrededor del eje z, seguido de la rotación alrededor del eje x, seguido de la rotación alrededor del eje y, tal y como se muestra en la siguiente ilustración.
+El orden de las transformaciones es roll first, then pitch, then yaw. En relación con el eje de coordenadas local del objeto, esto equivale a la rotación alrededor del eje Z, seguida de la rotación alrededor del eje X, seguida de la rotación alrededor del eje Y, como se muestra en la ilustración siguiente.
 
-![Ilustración del rollo, el tono y el guiñada como giros alrededor de los tres ejes](images/pitchyawroll.png)
+![ilustración de roll, pitch y yaw como giros alrededor de los tres ejes](images/pitchyawroll.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,12 +99,12 @@ El orden de las transformaciones se revierte primero, después por el paso y des
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
