@@ -1,7 +1,7 @@
 ---
-description: Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
+description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: da023816-5176-460d-ab6b-909b89cc46cd
-title: 'ID3DXMATRIXStack:: RotateYawPitchRollLocal (método) (D3DX10. h)'
+title: Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2a7b9e08adb7e66f78b3823c71e07fadfd561201
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 726a6d7092b95f53d17625f68884b92d347de3a6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821514"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107843"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a><span data-ttu-id="8fbc5-103">ID3DXMATRIXStack:: RotateYawPitchRollLocal (método) (D3DX10. h)</span><span class="sxs-lookup"><span data-stu-id="8fbc5-103">ID3DXMATRIXStack::RotateYawPitchRollLocal method (D3DX10.h)</span></span>
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a><span data-ttu-id="b1098-103">Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)</span><span class="sxs-lookup"><span data-stu-id="b1098-103">ID3DXMATRIXStack::RotateYawPitchRollLocal method (D3DX10.h)</span></span>
 
-<span data-ttu-id="8fbc5-104">Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.</span><span class="sxs-lookup"><span data-stu-id="8fbc5-104">Rotates (relative to the object's local coordinate space) around an arbitrary axis.</span></span>
+<span data-ttu-id="b1098-104">Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.</span><span class="sxs-lookup"><span data-stu-id="b1098-104">Rotates (relative to the object's local coordinate space) around an arbitrary axis.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8fbc5-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="8fbc5-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b1098-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="b1098-105">Syntax</span></span>
 
 
 ```C++
@@ -38,46 +38,46 @@ HRESULT RotateYawPitchRollLocal(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="8fbc5-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="8fbc5-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b1098-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="b1098-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8fbc5-107">*Guiñada* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="8fbc5-107">*Yaw* \[in\]</span></span>
+<span data-ttu-id="b1098-107">*Yaw* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="b1098-107">*Yaw* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fbc5-108">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="8fbc5-108">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="b1098-108">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="b1098-108">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="8fbc5-109">Guiñada alrededor del eje y en radianes.</span><span class="sxs-lookup"><span data-stu-id="8fbc5-109">The yaw around the y-axis in radians.</span></span>
+<span data-ttu-id="b1098-109">La yaw alrededor del eje Y en radianes.</span><span class="sxs-lookup"><span data-stu-id="b1098-109">The yaw around the y-axis in radians.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8fbc5-110">*Paso* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="8fbc5-110">*Pitch* \[in\]</span></span>
+<span data-ttu-id="b1098-110">*Pitch* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="b1098-110">*Pitch* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fbc5-111">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="8fbc5-111">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="b1098-111">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="b1098-111">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="8fbc5-112">El paso alrededor del eje x en radianes.</span><span class="sxs-lookup"><span data-stu-id="8fbc5-112">The pitch around the x-axis in radians.</span></span>
+<span data-ttu-id="b1098-112">El tono alrededor del eje X en radianes.</span><span class="sxs-lookup"><span data-stu-id="b1098-112">The pitch around the x-axis in radians.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8fbc5-113">Poner al *día* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="8fbc5-113">*Roll* \[in\]</span></span>
+<span data-ttu-id="b1098-113">*Roll* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="b1098-113">*Roll* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fbc5-114">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="8fbc5-114">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="b1098-114">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="b1098-114">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="8fbc5-115">El rollo alrededor del eje z en radianes.</span><span class="sxs-lookup"><span data-stu-id="8fbc5-115">The roll around the z-axis in radians.</span></span>
+<span data-ttu-id="b1098-115">La rotación alrededor del eje Z en radianes.</span><span class="sxs-lookup"><span data-stu-id="b1098-115">The roll around the z-axis in radians.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="8fbc5-116">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="8fbc5-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b1098-116">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="b1098-116">Return value</span></span>
 
-<span data-ttu-id="8fbc5-117">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="8fbc5-117">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="b1098-117">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="b1098-117">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="8fbc5-118">Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="8fbc5-118">If the method succeeds, the return value is D3D\_OK.</span></span>
+<span data-ttu-id="b1098-118">Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="b1098-118">If the method succeeds, the return value is D3D\_OK.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8fbc5-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="8fbc5-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b1098-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="b1098-119">Remarks</span></span>
 
-<span data-ttu-id="8fbc5-120">Este método agrega la rotación a la pila de la matriz con la matriz de rotación calculada similar a la siguiente:</span><span class="sxs-lookup"><span data-stu-id="8fbc5-120">This method adds the rotation to the matrix stack with the computed rotation matrix similar to the following:</span></span>
+<span data-ttu-id="b1098-120">Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:</span><span class="sxs-lookup"><span data-stu-id="b1098-120">This method adds the rotation to the matrix stack with the computed rotation matrix similar to the following:</span></span>
 
 
 ```
@@ -88,27 +88,27 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 
 
-<span data-ttu-id="8fbc5-121">Dado que la rotación se multiplica a la izquierda en la pila de la matriz, la rotación es relativa al espacio de coordenadas local del objeto.</span><span class="sxs-lookup"><span data-stu-id="8fbc5-121">Because the rotation is left-multiplied to the matrix stack, the rotation is relative to the object's local coordinate space.</span></span>
+<span data-ttu-id="b1098-121">Dado que la rotación se multiplica a la izquierda en la pila de matriz, la rotación es relativa al espacio de coordenadas local del objeto.</span><span class="sxs-lookup"><span data-stu-id="b1098-121">Because the rotation is left-multiplied to the matrix stack, the rotation is relative to the object's local coordinate space.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="8fbc5-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8fbc5-122">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="b1098-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b1098-122">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8fbc5-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="8fbc5-123">Requirement</span></span> | <span data-ttu-id="8fbc5-124">Value</span><span class="sxs-lookup"><span data-stu-id="8fbc5-124">Value</span></span> |
+| <span data-ttu-id="b1098-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="b1098-123">Requirement</span></span> | <span data-ttu-id="b1098-124">Value</span><span class="sxs-lookup"><span data-stu-id="b1098-124">Value</span></span> |
 |--------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="8fbc5-125">Encabezado</span><span class="sxs-lookup"><span data-stu-id="8fbc5-125">Header</span></span><br/>  | <dl> <span data-ttu-id="8fbc5-126"><dt>D3DX10. h</dt></span><span class="sxs-lookup"><span data-stu-id="8fbc5-126"><dt>D3DX10.h</dt></span></span> </dl>   |
-| <span data-ttu-id="8fbc5-127">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="8fbc5-127">Library</span></span><br/> | <dl> <span data-ttu-id="8fbc5-128"><dt>D3DX10. lib</dt></span><span class="sxs-lookup"><span data-stu-id="8fbc5-128"><dt>D3DX10.lib</dt></span></span> </dl> |
+| <span data-ttu-id="b1098-125">Encabezado</span><span class="sxs-lookup"><span data-stu-id="b1098-125">Header</span></span><br/>  | <dl> <span data-ttu-id="b1098-126"><dt>D3DX10.h</dt></span><span class="sxs-lookup"><span data-stu-id="b1098-126"><dt>D3DX10.h</dt></span></span> </dl>   |
+| <span data-ttu-id="b1098-127">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="b1098-127">Library</span></span><br/> | <dl> <span data-ttu-id="b1098-128"><dt>D3DX10.lib</dt></span><span class="sxs-lookup"><span data-stu-id="b1098-128"><dt>D3DX10.lib</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8fbc5-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="8fbc5-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1098-129">Consulte también</span><span class="sxs-lookup"><span data-stu-id="b1098-129">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8fbc5-130">ID3DXMatrixStack</span><span class="sxs-lookup"><span data-stu-id="8fbc5-130">ID3DXMatrixStack</span></span>](d3d10-id3dxmatrixstack.md)
+[<span data-ttu-id="b1098-130">ID3DXMatrixStack</span><span class="sxs-lookup"><span data-stu-id="b1098-130">ID3DXMatrixStack</span></span>](d3d10-id3dxmatrixstack.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fbc5-131">Interfaces de D3DX</span><span class="sxs-lookup"><span data-stu-id="8fbc5-131">D3DX Interfaces</span></span>](d3d10-graphics-reference-d3dx10-interfaces.md)
+[<span data-ttu-id="b1098-131">D3DX Interfaces</span><span class="sxs-lookup"><span data-stu-id="b1098-131">D3DX Interfaces</span></span>](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

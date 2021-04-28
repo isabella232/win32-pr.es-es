@@ -1,7 +1,7 @@
 ---
-description: Abre la carpeta especificada.
+description: 'Método IShellDispatch.Open: abre la carpeta especificada.'
 ms.assetid: 30FE669A-4AFD-4dfa-9F62-E62E744469C7
-title: Método IShellDispatch. Open (Shldisp. h)
+title: Método IShellDispatch.Open (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d794020313ad776c1d538dc2acb909d562d32f15
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b5301e030926b9bcfdc18949b6a04706c22bb71
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810964"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086633"
 ---
-# <a name="ishelldispatchopen-method"></a><span data-ttu-id="4673f-103">IShellDispatch. Open (método)</span><span class="sxs-lookup"><span data-stu-id="4673f-103">IShellDispatch.Open method</span></span>
+# <a name="ishelldispatchopen-method"></a><span data-ttu-id="45eb3-103">IShellDispatch.Open (método)</span><span class="sxs-lookup"><span data-stu-id="45eb3-103">IShellDispatch.Open method</span></span>
 
-<span data-ttu-id="4673f-104">Abre la carpeta especificada.</span><span class="sxs-lookup"><span data-stu-id="4673f-104">Opens the specified folder.</span></span>
+<span data-ttu-id="45eb3-104">Abre la carpeta especificada.</span><span class="sxs-lookup"><span data-stu-id="45eb3-104">Opens the specified folder.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4673f-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="4673f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="45eb3-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="45eb3-105">Syntax</span></span>
 
 
 ```JScript
@@ -45,40 +45,40 @@ IShellDispatch.Open( _
 
 
 
-## <a name="parameters"></a><span data-ttu-id="4673f-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="4673f-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="45eb3-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="45eb3-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4673f-107">*vDir* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="4673f-107">*vDir* \[in\]</span></span>
+<span data-ttu-id="45eb3-107">*vDir* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="45eb3-107">*vDir* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="4673f-108">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="4673f-108">Type: **Variant**</span></span>
+<span data-ttu-id="45eb3-108">Tipo: **Variant**</span><span class="sxs-lookup"><span data-stu-id="45eb3-108">Type: **Variant**</span></span>
 
-<span data-ttu-id="4673f-109">Cadena que especifica la ruta de acceso de la carpeta o uno de los valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) .</span><span class="sxs-lookup"><span data-stu-id="4673f-109">A string that specifies the path of the folder or one of the [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) values.</span></span> <span data-ttu-id="4673f-110">Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript.</span><span class="sxs-lookup"><span data-stu-id="4673f-110">Note that the constant names found in **ShellSpecialFolderConstants** are available in Visual Basic, but not in VBScript or JScript.</span></span> <span data-ttu-id="4673f-111">En estos casos, se deben usar los valores numéricos en su lugar.</span><span class="sxs-lookup"><span data-stu-id="4673f-111">In those cases, the numeric values must be used in their place.</span></span>
+<span data-ttu-id="45eb3-109">Cadena que especifica la ruta de acceso de la carpeta o uno de los [**valores de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants)</span><span class="sxs-lookup"><span data-stu-id="45eb3-109">A string that specifies the path of the folder or one of the [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) values.</span></span> <span data-ttu-id="45eb3-110">Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript.</span><span class="sxs-lookup"><span data-stu-id="45eb3-110">Note that the constant names found in **ShellSpecialFolderConstants** are available in Visual Basic, but not in VBScript or JScript.</span></span> <span data-ttu-id="45eb3-111">En esos casos, los valores numéricos deben usarse en su lugar.</span><span class="sxs-lookup"><span data-stu-id="45eb3-111">In those cases, the numeric values must be used in their place.</span></span>
 
-<span data-ttu-id="4673f-112">Si *vDir* está establecido en uno de los [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) y la carpeta Special no existe, esta función creará la carpeta.</span><span class="sxs-lookup"><span data-stu-id="4673f-112">If *vDir* is set to one of the [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) and the special folder does not exist, this function will create the folder.</span></span>
+<span data-ttu-id="45eb3-112">Si *vDir* se establece en uno de [**los shellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) y la carpeta especial no existe, esta función creará la carpeta.</span><span class="sxs-lookup"><span data-stu-id="45eb3-112">If *vDir* is set to one of the [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) and the special folder does not exist, this function will create the folder.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="4673f-113">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="4673f-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="45eb3-113">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="45eb3-113">Return value</span></span>
 
-### <a name="jscript"></a><span data-ttu-id="4673f-114">JScript</span><span class="sxs-lookup"><span data-stu-id="4673f-114">JScript</span></span>
+### <a name="jscript"></a><span data-ttu-id="45eb3-114">JScript</span><span class="sxs-lookup"><span data-stu-id="45eb3-114">JScript</span></span>
 
-<span data-ttu-id="4673f-115">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="4673f-115">This method does not return a value.</span></span>
+<span data-ttu-id="45eb3-115">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="45eb3-115">This method does not return a value.</span></span>
 
-### <a name="vb"></a><span data-ttu-id="4673f-116">VB</span><span class="sxs-lookup"><span data-stu-id="4673f-116">VB</span></span>
+### <a name="vb"></a><span data-ttu-id="45eb3-116">VB</span><span class="sxs-lookup"><span data-stu-id="45eb3-116">VB</span></span>
 
-<span data-ttu-id="4673f-117">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="4673f-117">This method does not return a value.</span></span>
+<span data-ttu-id="45eb3-117">Este método no devuelve ningún valor.</span><span class="sxs-lookup"><span data-stu-id="45eb3-117">This method does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4673f-118">Observaciones</span><span class="sxs-lookup"><span data-stu-id="4673f-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="45eb3-118">Comentarios</span><span class="sxs-lookup"><span data-stu-id="45eb3-118">Remarks</span></span>
 
-<span data-ttu-id="4673f-119">Este método se implementa y se obtiene acceso a él a través del método [**Shell. Open**](shell-open.md) .</span><span class="sxs-lookup"><span data-stu-id="4673f-119">This method is implemented and accessed through the [**Shell.Open**](shell-open.md) method.</span></span>
+<span data-ttu-id="45eb3-119">Este método se implementa y se accede a través del [**método Shell.Open.**](shell-open.md)</span><span class="sxs-lookup"><span data-stu-id="45eb3-119">This method is implemented and accessed through the [**Shell.Open**](shell-open.md) method.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4673f-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="4673f-120">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="45eb3-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="45eb3-120">Examples</span></span>
 
-<span data-ttu-id="4673f-121">En los siguientes ejemplos se muestra el uso de **Open** en JScript, VBScript y Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="4673f-121">The following examples show the use of **Open** in JScript, VBScript, and Visual Basic.</span></span>
+<span data-ttu-id="45eb3-121">En los ejemplos siguientes se muestra el uso de **Open** en JScript, VBScript y Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="45eb3-121">The following examples show the use of **Open** in JScript, VBScript, and Visual Basic.</span></span>
 
-<span data-ttu-id="4673f-122">JScript.net</span><span class="sxs-lookup"><span data-stu-id="4673f-122">JScript:</span></span>
+<span data-ttu-id="45eb3-122">Jscript:</span><span class="sxs-lookup"><span data-stu-id="45eb3-122">JScript:</span></span>
 
 
 ```JScript
@@ -95,7 +95,7 @@ IShellDispatch.Open( _
 
 
 
-<span data-ttu-id="4673f-123">VBScript</span><span class="sxs-lookup"><span data-stu-id="4673f-123">VBScript:</span></span>
+<span data-ttu-id="45eb3-123">Vbscript:</span><span class="sxs-lookup"><span data-stu-id="45eb3-123">VBScript:</span></span>
 
 
 ```VB
@@ -113,7 +113,7 @@ IShellDispatch.Open( _
 
 
 
-<span data-ttu-id="4673f-124">Visual Basic:</span><span class="sxs-lookup"><span data-stu-id="4673f-124">Visual Basic:</span></span>
+<span data-ttu-id="45eb3-124">Visual Basic:</span><span class="sxs-lookup"><span data-stu-id="45eb3-124">Visual Basic:</span></span>
 
 
 ```VB
@@ -129,28 +129,28 @@ End Sub
 
 
 
-## <a name="requirements"></a><span data-ttu-id="4673f-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4673f-125">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="45eb3-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="45eb3-125">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4673f-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="4673f-126">Requirement</span></span> | <span data-ttu-id="4673f-127">Value</span><span class="sxs-lookup"><span data-stu-id="4673f-127">Value</span></span> |
+| <span data-ttu-id="45eb3-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="45eb3-126">Requirement</span></span> | <span data-ttu-id="45eb3-127">Valor</span><span class="sxs-lookup"><span data-stu-id="45eb3-127">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4673f-128">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="4673f-128">Minimum supported client</span></span><br/> | <span data-ttu-id="4673f-129">Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="4673f-129">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
-| <span data-ttu-id="4673f-130">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="4673f-130">Minimum supported server</span></span><br/> | <span data-ttu-id="4673f-131">\[Solo aplicaciones de escritorio\] de Windows 2000 Server</span><span class="sxs-lookup"><span data-stu-id="4673f-131">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
-| <span data-ttu-id="4673f-132">Encabezado</span><span class="sxs-lookup"><span data-stu-id="4673f-132">Header</span></span><br/>                   | <dl> <span data-ttu-id="4673f-133"><dt>Shldisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="4673f-133"><dt>Shldisp.h</dt></span></span> </dl>                           |
-| <span data-ttu-id="4673f-134">IDL</span><span class="sxs-lookup"><span data-stu-id="4673f-134">IDL</span></span><br/>                      | <dl> <span data-ttu-id="4673f-135"><dt>Shldisp. idl</dt></span><span class="sxs-lookup"><span data-stu-id="4673f-135"><dt>Shldisp.idl</dt></span></span> </dl>                         |
-| <span data-ttu-id="4673f-136">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="4673f-136">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4673f-137"><dt>Shell32.dll (versión 4,71 o posterior)</dt></span><span class="sxs-lookup"><span data-stu-id="4673f-137"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
+| <span data-ttu-id="45eb3-128">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="45eb3-128">Minimum supported client</span></span><br/> | <span data-ttu-id="45eb3-129">Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]</span><span class="sxs-lookup"><span data-stu-id="45eb3-129">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
+| <span data-ttu-id="45eb3-130">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="45eb3-130">Minimum supported server</span></span><br/> | <span data-ttu-id="45eb3-131">\[Solo aplicaciones de escritorio\] de Windows 2000 Server</span><span class="sxs-lookup"><span data-stu-id="45eb3-131">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
+| <span data-ttu-id="45eb3-132">Encabezado</span><span class="sxs-lookup"><span data-stu-id="45eb3-132">Header</span></span><br/>                   | <dl> <span data-ttu-id="45eb3-133"><dt>Shldisp.h</dt></span><span class="sxs-lookup"><span data-stu-id="45eb3-133"><dt>Shldisp.h</dt></span></span> </dl>                           |
+| <span data-ttu-id="45eb3-134">Idl</span><span class="sxs-lookup"><span data-stu-id="45eb3-134">IDL</span></span><br/>                      | <dl> <span data-ttu-id="45eb3-135"><dt>Shldisp.idl</dt></span><span class="sxs-lookup"><span data-stu-id="45eb3-135"><dt>Shldisp.idl</dt></span></span> </dl>                         |
+| <span data-ttu-id="45eb3-136">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="45eb3-136">DLL</span></span><br/>                      | <dl> <span data-ttu-id="45eb3-137"><dt>Shell32.dll (versión 4.71 o posterior)</dt></span><span class="sxs-lookup"><span data-stu-id="45eb3-137"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4673f-138">Vea también</span><span class="sxs-lookup"><span data-stu-id="4673f-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="45eb3-138">Consulte también</span><span class="sxs-lookup"><span data-stu-id="45eb3-138">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4673f-139">**IShellDispatch**</span><span class="sxs-lookup"><span data-stu-id="4673f-139">**IShellDispatch**</span></span>](ishelldispatch.md)
+[<span data-ttu-id="45eb3-139">**IShellDispatch**</span><span class="sxs-lookup"><span data-stu-id="45eb3-139">**IShellDispatch**</span></span>](ishelldispatch.md)
 </dt> <dt>
 
-[<span data-ttu-id="4673f-140">**Explorar**</span><span class="sxs-lookup"><span data-stu-id="4673f-140">**Explore**</span></span>](shell-explore.md)
+[<span data-ttu-id="45eb3-140">**Explorar**</span><span class="sxs-lookup"><span data-stu-id="45eb3-140">**Explore**</span></span>](shell-explore.md)
 </dt> </dl>
 
  

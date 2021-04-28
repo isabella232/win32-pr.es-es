@@ -1,10 +1,10 @@
 ---
-description: No se utiliza.
+description: '<span id="vspixengine.isingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>Método ISingleEventRequest::RequestAsync: no se usa.'
 MS-HAID: vspixengine.ISingleEventRequest\_RequestAsync\_DWORD\_DWORD\_DWORD\_arr\_IFrameEventsCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'ISingleEventRequest:: RequestAsync (método)'
+title: ISingleEventRequest::RequestAsync (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: C85CAF18-6953-4C5D-9491-5F5A5F28C580
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6e6c78a7402082e4ca5222038bd3f5bd63c3cf7b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6365614d8a787ea4b252e04ae4e03c4e69ac2283
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537293"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107043"
 ---
-# <a name="span-idvspixengineisingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dwordspanisingleeventrequestrequestasync-method"></a><span data-ttu-id="109ca-103"><span id="vspixengine.isingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>ISingleEventRequest:: RequestAsync (método)</span><span class="sxs-lookup"><span data-stu-id="109ca-103"><span id="vspixengine.isingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>ISingleEventRequest::RequestAsync method</span></span>
+# <a name="span-idvspixengineisingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dwordspanisingleeventrequestrequestasync-method"></a><span data-ttu-id="345dd-103"><span id="vspixengine.isingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>ISingleEventRequest::RequestAsync (método)</span><span class="sxs-lookup"><span data-stu-id="345dd-103"><span id="vspixengine.isingleeventrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>ISingleEventRequest::RequestAsync method</span></span>
 
-<span data-ttu-id="109ca-104">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-104">Not used.</span></span>
+<span data-ttu-id="345dd-104">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-104">Not used.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="109ca-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="109ca-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="345dd-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="345dd-105">Syntax</span></span>
 
 
 ```C++
@@ -42,37 +42,37 @@ HRESULT RequestAsync(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="109ca-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="109ca-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="345dd-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="345dd-106">Parameters</span></span>
 
-<span data-ttu-id="109ca-107">*eventId* </span><span class="sxs-lookup"><span data-stu-id="109ca-107">*eventId* </span></span>  
-<span data-ttu-id="109ca-108">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-108">Not used.</span></span>
+<span data-ttu-id="345dd-107">*Eventid* </span><span class="sxs-lookup"><span data-stu-id="345dd-107">*eventId* </span></span>  
+<span data-ttu-id="345dd-108">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-108">Not used.</span></span>
 
-<span data-ttu-id="109ca-109">*numColumns* </span><span class="sxs-lookup"><span data-stu-id="109ca-109">*numColumns* </span></span>  
-<span data-ttu-id="109ca-110">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-110">Not used.</span></span>
+<span data-ttu-id="345dd-109">*numColumns* </span><span class="sxs-lookup"><span data-stu-id="345dd-109">*numColumns* </span></span>  
+<span data-ttu-id="345dd-110">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-110">Not used.</span></span>
 
-<span data-ttu-id="109ca-111">*\_columnas count1* </span><span class="sxs-lookup"><span data-stu-id="109ca-111">*count1\_columns* </span></span>  
-<span data-ttu-id="109ca-112">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-112">Not used.</span></span>
+<span data-ttu-id="345dd-111">*columnas \_ count1* </span><span class="sxs-lookup"><span data-stu-id="345dd-111">*count1\_columns* </span></span>  
+<span data-ttu-id="345dd-112">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-112">Not used.</span></span>
 
-<span data-ttu-id="109ca-113">*requestCallback* </span><span class="sxs-lookup"><span data-stu-id="109ca-113">*requestCallback* </span></span>  
-<span data-ttu-id="109ca-114">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-114">Not used.</span></span>
+<span data-ttu-id="345dd-113">*requestCallback* </span><span class="sxs-lookup"><span data-stu-id="345dd-113">*requestCallback* </span></span>  
+<span data-ttu-id="345dd-114">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-114">Not used.</span></span>
 
-<span data-ttu-id="109ca-115">*requestCookie* </span><span class="sxs-lookup"><span data-stu-id="109ca-115">*requestCookie* </span></span>  
-<span data-ttu-id="109ca-116">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-116">Not used.</span></span>
+<span data-ttu-id="345dd-115">*requestCookie* </span><span class="sxs-lookup"><span data-stu-id="345dd-115">*requestCookie* </span></span>  
+<span data-ttu-id="345dd-116">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-116">Not used.</span></span>
 
-<span data-ttu-id="109ca-117">*progressIntervalMsecs* </span><span class="sxs-lookup"><span data-stu-id="109ca-117">*progressIntervalMsecs* </span></span>  
-<span data-ttu-id="109ca-118">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="109ca-118">Not used.</span></span>
+<span data-ttu-id="345dd-117">*progressIntervalMsecs* </span><span class="sxs-lookup"><span data-stu-id="345dd-117">*progressIntervalMsecs* </span></span>  
+<span data-ttu-id="345dd-118">No se utiliza.</span><span class="sxs-lookup"><span data-stu-id="345dd-118">Not used.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="109ca-119">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="109ca-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="345dd-119">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="345dd-119">Return value</span></span>
 
-<span data-ttu-id="109ca-120">Si este método se ejecuta correctamente, devuelve **S \_ correcto**.</span><span class="sxs-lookup"><span data-stu-id="109ca-120">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="109ca-121">De lo contrario, devuelve un código de error **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="109ca-121">Otherwise, it returns an **HRESULT** error code.</span></span>
+<span data-ttu-id="345dd-120">Si este método se realiza correctamente, devuelve **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="345dd-120">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="345dd-121">De lo contrario, devuelve un código de error **HRESULT.**</span><span class="sxs-lookup"><span data-stu-id="345dd-121">Otherwise, it returns an **HRESULT** error code.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="109ca-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="109ca-122">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="345dd-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="345dd-122">Requirements</span></span>
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="109ca-123">Encabezado</span><span class="sxs-lookup"><span data-stu-id="109ca-123">Header</span></span></p></td><td><span data-ttu-id="109ca-124">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="109ca-124">Vspixengine.h</span></span></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="345dd-123">Encabezado</span><span class="sxs-lookup"><span data-stu-id="345dd-123">Header</span></span></p></td><td><span data-ttu-id="345dd-124">Vspixengine.h</span><span class="sxs-lookup"><span data-stu-id="345dd-124">Vspixengine.h</span></span></td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="109ca-125"><span id="see_also"></span>Vea también</span><span class="sxs-lookup"><span data-stu-id="109ca-125"><span id="see_also"></span>See also</span></span>
+## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="345dd-125"><span id="see_also"></span>Vea también</span><span class="sxs-lookup"><span data-stu-id="345dd-125"><span id="see_also"></span>See also</span></span>
 
-[<span data-ttu-id="109ca-126">**ISingleEventRequest**</span><span class="sxs-lookup"><span data-stu-id="109ca-126">**ISingleEventRequest**</span></span>](/windows/desktop/direct3dtools/isingleeventrequest)
+[<span data-ttu-id="345dd-126">**ISingleEventRequest**</span><span class="sxs-lookup"><span data-stu-id="345dd-126">**ISingleEventRequest**</span></span>](/windows/desktop/direct3dtools/isingleeventrequest)
 
  
 
