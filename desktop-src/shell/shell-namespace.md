@@ -1,7 +1,7 @@
 ---
-description: Crea y devuelve un objeto de carpeta para la carpeta especificada.
+description: 'Método Shell.NameSpace: crea y devuelve un objeto Folder para la carpeta especificada.'
 ms.assetid: c0d61bc6-6851-4b47-a62d-4c24d2958b98
-title: Método Shell. NameSpace (Shldisp. h)
+title: Método Shell.NameSpace (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 856a86efb4aca6ae7c1d4c8a3a81b5bc722a3963
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fab501912c55aaaf6cab832bf76763672e830d33
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276871"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083715"
 ---
-# <a name="shellnamespace-method"></a>Shell. NameSpace (método)
+# <a name="shellnamespace-method"></a>Shell.NameSpace (método)
 
-Crea y devuelve un objeto de [**carpeta**](folder.md) para la carpeta especificada.
+Crea y devuelve un [**objeto Folder**](folder.md) para la carpeta especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,12 +49,12 @@ Shell.NameSpace( _
 
 <dl> <dt>
 
-*vDir* \[ de\]
+*vDir* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Carpeta para la que se va a crear el objeto de [**carpeta**](folder.md) . Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En estos casos, se deben usar los valores numéricos en su lugar.
+Carpeta para la que se va a crear [**el objeto Folder.**](folder.md) Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 </dd> </dl>
 
@@ -62,21 +62,21 @@ Carpeta para la que se va a crear el objeto de [**carpeta**](folder.md) . Puede 
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **[ **carpeta**](folder.md)\*\***
+Tipo: **[ **Carpeta**](folder.md)\*\***
 
-Referencia de objeto al objeto de [**carpeta**](folder.md) de la carpeta especificada. Si la carpeta no se ha creado correctamente, este valor devuelve **null**.
+Referencia de objeto al [**objeto Folder**](folder.md) de la carpeta especificada. Si la carpeta no se ha creado correctamente, este valor devuelve **null.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **[ **carpeta**](folder.md)\*\***
+Tipo: **[ **Carpeta**](folder.md)\*\***
 
-Referencia de objeto al objeto de [**carpeta**](folder.md) de la carpeta especificada. Si la carpeta no se ha creado correctamente, este valor devuelve **null**.
+Referencia de objeto al [**objeto Folder**](folder.md) de la carpeta especificada. Si la carpeta no se ha creado correctamente, este valor devuelve **null.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el **espacio de nombres** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra NameSpace** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -98,7 +98,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,13 +148,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

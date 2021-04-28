@@ -1,7 +1,7 @@
 ---
-description: El método PAUSE pausa la captura actual.
+description: 'Método IESP::P ause: el método Pause pausa la captura actual.'
 ms.assetid: efbc8947-b9fe-4dbd-8097-375b5f99845e
-title: IESP::P método ause (Netmon. h)
+title: Método IESP::P ause (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 0558c5dfe36f26e3aad9f31101364d2e8e5c4967
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 486c7aedc7092e0dd0f9f68cc1ea2ccad08d9438
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540182"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084243"
 ---
-# <a name="iesppause-method"></a>IESP::P método ause
+# <a name="iesppause-method"></a>IESP::P ause (método)
 
-El método **PAUSE pausa** la captura actual.
+El **método Pause** pausa la captura actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,61 +49,61 @@ Obsoleto.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                           | Descripción                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**captura de NMERR en \_ \_ pausa**</dt> </dl> | La captura ya está en pausa.<br/>                                                                                     |
-| <dl> <dt>**NMERR \_ no se \_ captura**</dt> </dl>  | NPP no está capturando datos. Llame a [iesp:: Start](iesp-start.md) para iniciar la captura.<br/>                            |
-| <dl> <dt>**NMERR \_ no \_ conectado**</dt> </dl>  | NPP no está conectado a la red. Llame a [iesp:: Connect](iesp-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ no \_ ESP**</dt> </dl>        | NPP está conectado a la red, pero no con el método [iesp:: Connect](iesp-connect.md) .<br/>                     |
+| <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl> | La captura ya está en pausa.<br/>                                                                                     |
+| <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl>  | El NPP no captura datos. Llame [a IESP::Start](iesp-start.md) para iniciar la captura.<br/>                            |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>  | El NPP no está conectado a la red. Llame [a IESP::Connect](iesp-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>        | El NPP está conectado a la red, pero no con el [método IESP::Connect.](iesp-connect.md)<br/>                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Mientras la captura está en un estado de pausa, los datos nuevos no se agregan al [*archivo de captura*](c.md) actual hasta que se llama al método [iesp:: resume](iesp-resume.md) para reiniciar la captura. Cuando se usan **pausar** y **reanudar** para detener y reiniciar la captura, toda la información capturada se coloca en el mismo archivo de captura.
+Mientras la captura está en estado en pausa, no [](c.md) se agregan nuevos datos al archivo de captura actual hasta que se llama al [método IESP::Resume](iesp-resume.md) para reiniciar la captura. Cuando **se** usan **Pausar y reanudar** para detener y reiniciar la captura, toda la información capturada se coloca en el mismo archivo de captura.
 
-Cuando se usan los métodos **iesp::P ause** y **iesp:: resume** para controlar la captura, monitor de red continúa agregando [*estadísticas de conversación*](c.md) cada vez que se ejecuta la captura.
+Cuando se usan los métodos **IESP::P ause** e **IESP::Resume** para controlar la captura, Monitor de red continúa agregando [*estadísticas*](c.md) de conversación cada vez que se ejecuta la captura.
 
-Para reiniciar la captura, llame a [iesp:: resume](iesp-resume.md). Para detener la captura, llame a [iesp:: Stop](iesp-stop.md).
+Para reiniciar la captura, llame a [IESP::Resume](iesp-resume.md). Para detener la captura, llame a [IESP::Stop](iesp-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: Connect](iesp-connect.md)
+[IESP::Connect](iesp-connect.md)
 </dt> <dt>
 
-[IESP:: resume](iesp-resume.md)
+[IESP::Resume](iesp-resume.md)
 </dt> <dt>
 
-[IESP:: Start](iesp-start.md)
+[IESP::Start](iesp-start.md)
 </dt> <dt>
 
-[IESP:: Stop](iesp-stop.md)
+[IESP::Stop](iesp-stop.md)
 </dt> </dl>
 
  

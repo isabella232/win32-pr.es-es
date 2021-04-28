@@ -1,7 +1,7 @@
 ---
-description: El método DecideBufferSize establece los requisitos de búfer.
+description: 'Método CTransformOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos del búfer.'
 ms.assetid: cdf9e384-623e-46a6-b123-d881fe21fb09
-title: Método CTransformOutputPin. DecideBufferSize (Transfrm. h)
+title: Método CTransformOutputPin.DecideBufferSize (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dc17314887094b7f62a43f38dd406d0ac9039de3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1bc84eaf5e95a19436de5429ce018352cdaa286e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661005"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084843"
 ---
-# <a name="ctransformoutputpindecidebuffersize-method"></a>CTransformOutputPin. DecideBufferSize, método
+# <a name="ctransformoutputpindecidebuffersize-method"></a>Método CTransformOutputPin.DecideBufferSize
 
-El `DecideBufferSize` método establece los requisitos de búfer.
+El `DecideBufferSize` método establece los requisitos del búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ HRESULT DecideBufferSize(
 *pAlloc* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador.
+Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 </dd> <dt>
 
 *ppropInputRequest* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ propiedades de asignador**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer del PIN de entrada.
+Puntero a [**una estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer del pin de entrada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CBaseOutputPin::D ecidebuffersize**](cbaseoutputpin-decidebuffersize.md) . Llama al método CTransformFilter virtual puro del filtro [**::D ecidebuffersize**](ctransformfilter-decidebuffersize.md) , que debe implementar la clase derivada del filtro.
+Este método invalida el [**método CBaseOutputPin::D ecideBufferSize.**](cbaseoutputpin-decidebuffersize.md) Llama al método [**CTransformFilter::D ecideBufferSize**](ctransformfilter-decidebuffersize.md) virtual puro del filtro, que la clase derivada del filtro debe implementar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Este método invalida el método [**CBaseOutputPin::D ecidebuffersize**](cbaseou
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

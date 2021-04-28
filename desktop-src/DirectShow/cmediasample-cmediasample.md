@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CMediaSample.CMediaSample: método constructor.'
 ms.assetid: 3ee67cfd-a968-4b7c-9c7b-1c28ddb9c343
-title: Constructor CMediaSample. CMediaSample (Amfilter. h)
+title: Constructor CMediaSample.CMediaSample (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e4513af3b01d39f311fd1b8ecc1cea8f086d89c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fd2601b9f53e8f79d9231dd34054932bec4e671
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679297"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095443"
 ---
-# <a name="cmediasamplecmediasample-constructor"></a>Constructor CMediaSample. CMediaSample
+# <a name="cmediasamplecmediasample-constructor"></a>Constructor CMediaSample.CMediaSample
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Puntero al objeto [**CBaseAllocator**](cbaseallocator.md) que creó este ejemplo
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
 ignorado.
@@ -70,7 +70,7 @@ ignorado.
 *pBuffer* 
 </dt> <dd>
 
-Puntero a un búfer de memoria asignado por el autor de la llamada, de *longitud* de tamaño.
+Puntero a un búfer de memoria asignado por el autor de la llamada, de longitud *de tamaño*.
 
 </dd> <dt>
 
@@ -81,9 +81,9 @@ Longitud del búfer de memoria.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase base no modifica el valor **HRESULT** que se pasa en el parámetro *PHR* .
+La clase base no modifica el **valor HRESULT** pasado en el *parámetro phr.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,16 +91,16 @@ La clase base no modifica el valor **HRESULT** que se pasa en el parámetro *PHR
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: Establece el estado de selección de un elemento en la vista.
-title: Método ShellFolderView. SelectItem (Shldisp. h)
+description: 'Método ShellFolderView.SelectItem: establece el estado de selección de un elemento en la vista.'
+title: Método ShellFolderView.SelectItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 91c39d4c-56c3-4c2b-93e8-9f782ca0aa93
-ms.openlocfilehash: d44633983075cdf22581bce05cfb7c073f422084
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8cbff0da4da55d9621bfeb01f26c5ed62fe230a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278496"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116753"
 ---
-# <a name="shellfolderviewselectitem-method"></a>ShellFolderView. SelectItem, método
+# <a name="shellfolderviewselectitem-method"></a>Método ShellFolderView.SelectItem
 
 Establece el estado de selección de un elemento en la vista.
 
@@ -40,21 +40,21 @@ ShellFolderView.SelectItem(
 
 <dl> <dt>
 
-*vItem* \[ de\]
+*vItem* \[ En\]
 </dt> <dd>
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-El objeto [_ *carpeta* *](folderitem.md) para el que se establecerá el estado de selección.
+Objeto [**FolderItem**](folderitem.md) para el que se establecerá el estado de selección.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
-Un conjunto de marcas que indican el nuevo estado de la selección. Puede ser uno o varios de los valores siguientes.
+Conjunto de marcas que indican el nuevo estado de selección. Puede ser uno o varios de los valores siguientes.
 
 <dt>
 
@@ -87,7 +87,7 @@ Seleccione el elemento.
 
 </dt> <dd>
 
-Poner el elemento en modo de edición.
+Coloque el elemento en modo de edición.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Poner el elemento en modo de edición.
 
 </dt> <dd>
 
-Anule la selección de todos los elementos excepto el especificado.
+Anule la selección de todos los elementos menos el especificado.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Asegúrese de que el elemento se muestra en la vista.
 
 </dt> <dd>
 
-Asigne al elemento el foco.
+Dé el foco al elemento.
 
 </dd> </dl> </dd> </dl>
 
@@ -128,13 +128,13 @@ Asigne al elemento el foco.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo se puede llamar a [**FocusedItem**](shellfolderview-focuseditem.md) en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método en JScript incrustado en HTML.
 
 
 ```JScript
@@ -193,13 +193,13 @@ En el ejemplo siguiente se muestra el uso correcto de este método en JScript in
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

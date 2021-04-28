@@ -1,31 +1,31 @@
 ---
-title: Configurar los tiempos de espera específicos de la aplicación
-description: .
+title: Configuración de los tiempos de espera específicos de la aplicación
+description: Configuración de los tiempos de espera específicos de la aplicación
 ms.assetid: 24526320-4174-4fc7-b45a-c1ec605e1666
 keywords:
-- Configurar los tiempos de espera específicos de la aplicación HTTP
+- Configuración del HTTP de tiempos de espera específicos de la aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35827b797ad6c9f19b728064f6fe65b0d89b2a3b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aca1cbcdb0b0796820282673c41507f6bfcc0ebd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075661"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109743"
 ---
-# <a name="configuring-the-application-specific-timeouts"></a>Configurar los tiempos de espera específicos de la aplicación
+# <a name="configuring-the-application-specific-timeouts"></a>Configuración de los tiempos de espera específicos de la aplicación
 
-La configuración de toda la API del servidor HTTP se aplica a todas las sesiones del servidor y a los grupos de direcciones URL del equipo. La aplicación puede invalidar estas configuraciones estableciendo los valores de tiempo de espera específicos de la aplicación. Los tiempos de espera de la sesión del servidor invalidan los tiempos de espera de la API del servidor HTTP y se aplican a todos los grupos de direcciones URL creados en ellos. Al configurar la propiedad timeouts en un grupo de direcciones URL, se invalidan los tiempos de espera de la sesión del servidor para todas las direcciones URL del grupo.
+La configuración de toda la API del servidor HTTP se aplica a todas las sesiones de servidor y grupos de direcciones URL del equipo. La aplicación puede invalidar estas configuraciones estableciendo los valores de tiempo de espera específicos de la aplicación. Los tiempos de espera de la sesión del servidor invalidan los tiempos de espera de toda la API del servidor HTTP y se aplican a todos los grupos de direcciones URL creados en ellos. La configuración de la propiedad timeouts en un grupo de direcciones URL invalida los tiempos de espera de sesión del servidor para todas las direcciones URL del grupo.
 
-Si se especifica cero para cualquiera de los temporizadores de la estructura de [**información de límite de tiempo de espera de http \_ \_ \_**](/windows/desktop/api/Http/ns-http-http_timeout_limit_info) para un grupo de direcciones URL, la API del servidor http volverá a los tiempos de espera de la sesión del servidor, si existen, o la configuración predeterminada de la API del servidor http si los tiempos de espera de la sesión del servidor no existen. Por ejemplo, si la propiedad de tiempo de espera del servidor se encuentra en un grupo de direcciones URL y el temporizador de **EntityBody** es cero, se utiliza el tiempo de espera de la sesión del servidor. Si no se establece la propiedad timeouts en una sesión de servidor, se utiliza la configuración predeterminada de la API del servidor HTTP. Para deshabilitar un temporizador, establezca el valor en **MAXUSHORT**, excepto en el temporizador de **MinSendRate** que se establece en **MAXULONG**.
+Si se especifica cero para cualquiera de los temporizadores de la estructura [**HTTP \_ TIMEOUT LIMIT \_ \_ INFO**](/windows/desktop/api/Http/ns-http-http_timeout_limit_info) para un grupo de direcciones URL, la API del servidor HTTP se revierte a los tiempos de espera de sesión del servidor, si existen, o a la configuración predeterminada de la API del servidor HTTP si no existen tiempos de espera de sesión del servidor. Por ejemplo, cuando la propiedad de tiempo de espera del servidor está presente en un grupo de direcciones URL y el temporizador **de EntityBody** es cero, se usa el tiempo de espera de la sesión del servidor. Si la propiedad timeouts no se establece en una sesión de servidor, se usa la configuración predeterminada de la API del servidor HTTP. Para deshabilitar un temporizador, establezca el valor en **MAXUSHORT**, excepto para el temporizador **MinSendRate** que se establece en **MAXULONG**.
 
-La API del servidor HTTP solo puede configurar el **HeaderWait** específico de la aplicación y los temporizadores de **IdleConnection** solo se aplican después de que se haya recibido la primera solicitud. Antes de que se reciba la primera solicitud, se aplican los valores de tiempo de espera de la API del servidor HTTP. Una vez que la primera solicitud llega y está asociada a una cola de solicitudes, se pueden aplicar los temporizadores de **HeaderWait** y **IdleConnection** específicos de la aplicación. Los temporizadores específicos de la aplicación se aplican a todas las solicitudes posteriores que llegan a la cola de solicitudes para una conexión Keep-Alive.
+La API del servidor HTTP solo puede configurar **el HeaderWait** específico de la aplicación y los temporizadores **IdleConnection** solo son efectivos después de que se haya recibido la primera solicitud. Antes de recibir la primera solicitud, se aplican los valores de tiempo de espera de toda la API del servidor HTTP. Una vez que llega la primera solicitud y está asociada a una cola de solicitudes, se pueden aplicar los temporizadores **HeaderWait** e **IdleConnection** específicos de la aplicación. Los temporizadores específicos de la aplicación se aplican a todas las solicitudes posteriores que llegan a la cola de solicitudes para una conexión de conexión continua.
 
-Para obtener más información acerca de cómo configurar temporizadores, consulte los temas [configurar el grupo de direcciones URL](configuring-the-url-group.md) y [configurar la sesión de servidor](configuring-the-server-session.md) .
+Para obtener más información sobre cómo configurar temporizadores, vea los temas Configurar el grupo [de direcciones URL](configuring-the-url-group.md) y Configurar la sesión [del](configuring-the-server-session.md) servidor.
 
- 
+ 
 
- 
+ 
 
 
 

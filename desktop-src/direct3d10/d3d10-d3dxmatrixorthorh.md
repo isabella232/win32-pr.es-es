@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de proyección ortográfica de mano derecha.
+description: 'Función D3DXMatrixOrthoRH (D3DX10Math.h): crea una matriz de proyección ortográfica derecha.'
 ms.assetid: e6673ff4-06a2-4a16-b72e-5ca69ddf2438
-title: Función D3DXMatrixOrthoRH (D3DX10Math. h)
+title: Función D3DXMatrixOrthoRH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2a8883f2690fa5a5f0bfa1bb1570163b714974b3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f1ab6069890bdffdedbd3e36caed1a93984fc2c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721494"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109153"
 ---
-# <a name="d3dxmatrixorthorh-function-d3dx10mathh"></a>Función D3DXMatrixOrthoRH (D3DX10Math. h)
+# <a name="d3dxmatrixorthorh-function-d3dx10mathh"></a>Función D3DXMatrixOrthoRH (D3DX10Math.h)
 
-Crea una matriz de proyección ortográfica de mano derecha.
+Crea una matriz de proyección ortográfica con la mano derecha.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,41 +49,41 @@ D3DXMATRIX* D3DXMatrixOrthoRH(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+Puntero al [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
-*w* \[ en\]
+*w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Ancho del volumen de vista.
 
 </dd> <dt>
 
-*h* \[ en\]
+*h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Alto del volumen de vista.
 
 </dd> <dt>
 
-*Zn* \[ de\]
+*zn* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor z mínimo del volumen de vista.
 
 </dd> <dt>
 
-*ZF* \[ de\]
+*y* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor z máximo del volumen de vista.
 
@@ -93,13 +93,13 @@ Valor z máximo del volumen de vista.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+Puntero al [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los parámetros de la función D3DXMatrixOrthoRH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de la vista.
+Todos los parámetros de la función D3DXMatrixOrthoRH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixOrthoRH se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixOrthoRH se puede usar como parámetro para otra función.
 
 Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
@@ -119,12 +119,12 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

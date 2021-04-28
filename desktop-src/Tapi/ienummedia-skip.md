@@ -1,21 +1,21 @@
 ---
-description: El método SKIP omite el siguiente número de elementos especificado en la secuencia de enumeración.
+description: 'Método IEnumMedia::Skip: el método Skip omite el siguiente número especificado de elementos en la secuencia de enumeración.'
 ms.assetid: 825972c9-5303-4c5a-9475-dc67c185af91
-title: 'IEnumMedia:: Skip (método) (Sdpblb. h)'
+title: Método IEnumMedia::Skip (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd950fd61ad6f6b2030b03d0d269854f86e3a02d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d8c600a201d6800fcb04dba5f208fd5cb810078
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681142"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084193"
 ---
-# <a name="ienummediaskip-method"></a>IEnumMedia:: Skip (método)
+# <a name="ienummediaskip-method"></a>IEnumMedia::Skip (Método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[ Los controles e interfaces de conferencia de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SKIP** omite el siguiente número de elementos especificado en la secuencia de enumeración.
+El **método Skip** omite el siguiente número especificado de elementos en la secuencia de enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ HRESULT Skip(
 
 <dl> <dt>
 
-*Celt* \[ de\]
+*celta* \[ En\]
 </dt> <dd>
 
 Número de elementos que se van a omitir.
@@ -47,8 +47,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                             | Descripción                                           |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | El número de elementos omitidos era *Celt*.<br/>     |
-| <dl> <dt>**S \_ false**</dt> </dl> | El número de elementos omitidos no era *Celt*.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | El número de elementos omitido fue *celt*.<br/>     |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | El número de elementos omitido no era *de centígrados.*<br/> |
 
 
 
@@ -58,16 +58,16 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de búsqueda a la derecha.
+description: 'Función D3DXMatrixLookAtRH (D3DX10Math.h): crea una matriz de mirada derecha.'
 ms.assetid: 98c8932f-f179-42ed-a361-a89065b71876
-title: Función D3DXMatrixLookAtRH (D3DX10Math. h)
+title: Función D3DXMatrixLookAtRH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 28c2ad0cc7eb8a3ba98aacadc764bc277a1fdad0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0380207124e4a446b6303dbb377d116b8ae058ad
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083766"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103453"
 ---
-# <a name="d3dxmatrixlookatrh-function-d3dx10mathh"></a>Función D3DXMatrixLookAtRH (D3DX10Math. h)
+# <a name="d3dxmatrixlookatrh-function-d3dx10mathh"></a>Función D3DXMatrixLookAtRH (D3DX10Math.h)
 
-Crea una matriz de búsqueda a la derecha.
+Crea una matriz de mirada derecha.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,34 +48,34 @@ D3DXMATRIX* D3DXMatrixLookAtRH(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pEye* \[ de\]
+*pEye* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que define el punto de ojo. Este valor se usa en la traducción.
+Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que define el punto de los ojos. Este valor se usa en la traducción.
 
 </dd> <dt>
 
-*pAt* \[ de\]
+*pAt* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a la estructura D3DXVECTOR3 que define el destino de la apariencia de la cámara.
+Puntero a la estructura D3DXVECTOR3 que define el destino de mirada de la cámara.
 
 </dd> <dt>
 
-*pUp* \[ de\]
+*pUp* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a la estructura D3DXVECTOR3 que define el mundo actual, normalmente \[ 0, 1, 0 \] .
+Puntero a la estructura D3DXVECTOR3 que define el valor de up del mundo actual, normalmente \[ 0, 1, 0 \] .
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Puntero a la estructura D3DXVECTOR3 que define el mundo actual, normalmente \[ 0
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX que es una matriz de búsqueda a la derecha.
+Puntero a una estructura D3DXMATRIX que es una matriz de mirada derecha.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixLookAtRH se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixLookAtRH se puede usar como parámetro para otra función.
 
 Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
@@ -111,12 +111,12 @@ dot(xaxis, eye)  -dot(yaxis, eye)  -dot(zaxis, eye)  1
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: El método BeginFlush inicia una operación de vaciado.
+description: 'Método CBaseRenderer.BeginFlush: el método BeginFlush comienza una operación de vaciado.'
 ms.assetid: dc652394-c24e-4cea-ac28-30a1e6de205f
-title: Método CBaseRenderer. BeginFlush (Renbase. h)
+title: Método CBaseRenderer.BeginFlush (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e218e3b2d9c0cef8ce0fe052ad1b3c4b6f786858
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76dfd77a5170a83813871143781868cae55c45ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671082"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095943"
 ---
-# <a name="cbaserendererbeginflush-method"></a>CBaseRenderer. BeginFlush, método
+# <a name="cbaserendererbeginflush-method"></a>Método CBaseRenderer.BeginFlush
 
-El `BeginFlush` método inicia una operación de vaciado.
+El `BeginFlush` método comienza una operación de vaciado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El PIN de entrada del filtro llama a este método cuando recibe una llamada al método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) . El filtro libera el subproceso de streaming y libera cualquier ejemplo que estaba manteniendo para su representación.
+El pin de entrada del filtro llama a este método cuando recibe una llamada al [**método IPin::BeginFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) El filtro libera el subproceso de streaming y libera cualquier ejemplo que se retiene para la representación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ El PIN de entrada del filtro llama a este método cuando recibe una llamada al m
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

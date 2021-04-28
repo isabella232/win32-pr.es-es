@@ -1,7 +1,7 @@
 ---
-description: Construye un plano a partir de tres puntos.
+description: 'Función D3DXPlaneFromPoints (D3DX10Math.h): construye un plano a partir de tres puntos.'
 ms.assetid: 0e77af1b-cedf-482c-8398-10becb398a2c
-title: Función D3DXPlaneFromPoints (D3DX10Math. h)
+title: Función D3DXPlaneFromPoints (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: eed4426492f05b2bfe3c762915edb8fdc21dc789
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a3af01df7d1ce66029994226d040544b733a75df
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721519"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103323"
 ---
-# <a name="d3dxplanefrompoints-function-d3dx10mathh"></a>Función D3DXPlaneFromPoints (D3DX10Math. h)
+# <a name="d3dxplanefrompoints-function-d3dx10mathh"></a>Función D3DXPlaneFromPoints (D3DX10Math.h)
 
 Construye un plano a partir de tres puntos.
 
@@ -52,16 +52,16 @@ Puntero al [**D3DXPLANE**](d3d10-d3dxplane.md) que es el resultado de la operaci
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a un [**D3DXVECTOR3**](d3d10-d3dxvector3.md), que define uno de los puntos usados para construir el plano.
+Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md), que define uno de los puntos usados para construir el plano.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -70,7 +70,7 @@ Puntero a una estructura D3DXVECTOR3, que define uno de los puntos usados para c
 
 </dd> <dt>
 
-*pV3* \[ de\]
+*pV3* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -83,11 +83,11 @@ Puntero a una estructura D3DXVECTOR3, que define uno de los puntos usados para c
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
-Puntero a la estructura D3DXPLANE construida a partir de los puntos especificados.
+Puntero a la estructura D3DXPLANE construida a partir de los puntos dados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXPlaneFromPoints se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXPlaneFromPoints se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,12 +95,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

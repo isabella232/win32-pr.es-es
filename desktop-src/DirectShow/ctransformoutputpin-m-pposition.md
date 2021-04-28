@@ -1,7 +1,7 @@
 ---
-description: Objeto auxiliar para pasar comandos de búsqueda ascendentes.
+description: 'CTransformOutputPin::m_pPosition miembro: objeto auxiliar para pasar comandos seek ascendentes.'
 ms.assetid: 2ca9bae7-a133-4e09-8aa7-1c4601ec5db0
-title: 'Miembro CTransformOutputPin:: m_pPosition (Transfrm. h)'
+title: CTransformOutputPin::m_pPosition miembro (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dc98e439d7f6a2d6c6392ffb665b04e502047eb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9c5a1b5d5ced7a9f3985ceebdd2bdcb8e491d2e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661004"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084863"
 ---
-# <a name="ctransformoutputpinm_pposition-member"></a>Miembro pPosition CTransformOutputPin:: m \_
+# <a name="ctransformoutputpinm_pposition-member"></a>Miembro CTransformOutputPin::m \_ pPosition
 
-Objeto auxiliar para pasar comandos de búsqueda ascendentes.
+Objeto auxiliar para pasar comandos seek ascendentes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ IUnknown *m_pPosition;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el PIN se consulta por primera vez para la interfaz [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) o [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) , crea y agrega un objeto auxiliar [**CPosPassThru**](cpospassthru.md) .
+Cuando el pin se consulta por primera vez para la interfaz [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) o [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) crea y agrega un objeto auxiliar [**CPosPassThru.**](cpospassthru.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Cuando el PIN se consulta por primera vez para la interfaz [**IMediaPosition**](
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

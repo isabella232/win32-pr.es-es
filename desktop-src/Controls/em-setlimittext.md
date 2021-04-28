@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_SETLIMITTEXT (Winuser. h)
-description: Establece el límite de texto de un control de edición.
+title: EM_SETLIMITTEXT mensaje (Winuser.h)
+description: 'EM_SETLIMITTEXT mensaje: establece el límite de texto de un control de edición.'
 ms.assetid: e2be7814-435b-495f-982a-32247fbc0165
 keywords:
-- EM_SETLIMITTEXT controles de mensajes de Windows
+- EM_SETLIMITTEXT de mensajes controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c138e6d7fed75fa8da2e7a6b93308632c250e7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b66d4e03b5c1824ab501226482fcf51fb9121cba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802654"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109753"
 ---
-# <a name="em_setlimittext-message"></a>\_Mensaje SETLIMITTEXT em
+# <a name="em_setlimittext-message"></a>Mensaje \_ EM SETLIMITTEXT
 
-Establece el límite de texto de un control de edición. El límite de texto es la cantidad máxima de texto, en **TCHAR** s, que el usuario puede escribir en el control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Establece el límite de texto de un control de edición. El límite de texto es la cantidad máxima de texto, en **TCHAR,** que el usuario puede escribir en el control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
-En el caso de los controles de edición y Microsoft Rich Edit 1,0, se usan bytes. En el caso de Microsoft Rich Edit 2,0 y versiones posteriores, se usan caracteres.
+Para los controles de edición y Microsoft Rich Edit 1.0, se usan bytes. Para Microsoft Rich Edit 2.0 y versiones posteriores, se usan caracteres.
 
-El mensaje **em \_ SETLIMITTEXT** es idéntico al mensaje [**\_ LIMITTEXT em**](em-limittext.md) .
+El **mensaje EM \_ SETLIMITTEXT** es idéntico al mensaje [**EM \_ LIMITTEXT.**](em-limittext.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,11 +36,11 @@ El mensaje **em \_ SETLIMITTEXT** es idéntico al mensaje [**\_ LIMITTEXT em**](
 *wParam* 
 </dt> <dd>
 
-El número máximo de **TCHAR** s que el usuario puede escribir. Para texto ANSI, es el número de bytes; en el caso de texto Unicode, es el número de caracteres. Este número no incluye el carácter nulo de terminación.
+Número máximo de **TCHAR que** el usuario puede especificar. Para el texto ANSI, este es el número de bytes; Para el texto Unicode, este es el número de caracteres. Este número no incluye el carácter nulo de terminación.
 
-**Controles Rich Edit:** Si este parámetro es cero, la longitud del texto se establece en 64.000 caracteres.
+**Controles de edición enriquecciones:** Si este parámetro es cero, la longitud del texto se establece en 64 000 caracteres.
 
-Si este parámetro es cero, la longitud del texto se establece en 0x7FFFFFFE caracteres para los controles de edición de una sola línea o en 1 para los controles de edición multilínea.
+Si este parámetro es cero, la longitud del texto se establece en 0x7FFFFFFE para los controles de edición de una sola línea o 1 para los controles de edición multilínea.
 
 </dd> <dt>
 
@@ -53,35 +53,35 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **mensaje \_ SETLIMITTEXT em** limita solo el texto que el usuario puede escribir. No afecta a ningún texto que ya esté en el control de edición cuando se envía el mensaje, ni afecta a la longitud del texto copiado en el control de edición por el mensaje de [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext) . Si una aplicación utiliza el mensaje de **WM \_ SETTEXT** para colocar más texto en un control de edición que se especifica en el mensaje **\_ SETLIMITTEXT em** , el usuario puede editar todo el contenido del control de edición.
+El **mensaje EM \_ SETLIMITTEXT** limita solo el texto que el usuario puede escribir. No afecta a ningún texto que ya esté en el control de edición cuando se envía el mensaje, ni afecta a la longitud del texto copiado en el control de edición por el mensaje [**\_ SETTEXT de WM.**](/windows/desktop/winmsg/wm-settext) Si una aplicación usa el mensaje **\_ SETTEXT** de WM para colocar más texto en un control de edición que el especificado en el mensaje **EM \_ SETLIMITTEXT,** el usuario puede editar todo el contenido del control de edición.
 
-Antes de que se llame a **em \_ SETLIMITTEXT** , el límite predeterminado para la cantidad de texto que un usuario puede escribir en un control de edición es de 32.767 caracteres.
+Antes de llamar a **EM \_ SETLIMITTEXT,** el límite predeterminado para la cantidad de texto que un usuario puede escribir en un control de edición es de 32 767 caracteres.
 
-En el caso de los controles de edición de una sola línea, el límite del texto es 0x7FFFFFFE bytes o el valor del parámetro *wParam* , el que sea menor. En el caso de los controles de edición multilínea, este valor es 1 bytes o el valor del parámetro *wParam* , el que sea menor.
+Para los controles de edición de una sola línea, el límite de texto es 0x7FFFFFFE bytes o el valor del parámetro *wParam,* lo que sea menor. Para los controles de edición multilínea, este valor es de 1 bytes o el valor del *parámetro wParam,* lo que sea menor.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Use el mensaje [**em \_ EXLIMITTEXT**](em-exlimittext.md) para valores de longitud de texto mayor que 64.000. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Use el mensaje [**EM \_ EXLIMITTEXT para**](em-exlimittext.md) valores de longitud de texto mayores que 64 000. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_GETLIMITTEXT em**](em-getlimittext.md)
+[**EM \_ GETLIMITTEXT**](em-getlimittext.md)
 </dt> </dl>
 
  

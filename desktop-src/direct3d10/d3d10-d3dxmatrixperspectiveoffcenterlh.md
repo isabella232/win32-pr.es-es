@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de proyección de perspectiva personalizada y diestro.
+description: 'Función D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h): crea una matriz de proyección de perspectiva personalizada con la mano izquierda.'
 ms.assetid: 73616fcc-1799-4e65-92b9-2d8f500c326e
-title: Función D3DXMatrixPerspectiveOffCenterLH (D3DX10Math. h)
+title: Función D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2fb289c0dff148850b8174ccb04a3e3fbfa79d92
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1116e24b48c9090739511894d28031ca921ed6ed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721532"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109053"
 ---
-# <a name="d3dxmatrixperspectiveoffcenterlh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveOffCenterLH (D3DX10Math. h)
+# <a name="d3dxmatrixperspectiveoffcenterlh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h)
 
-Crea una matriz de proyección de perspectiva personalizada y diestro.
+Crea una matriz de proyección de perspectiva a la izquierda personalizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,23 +51,23 @@ D3DXMATRIX* D3DXMatrixPerspectiveOffCenterLH(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
 *l* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor x mínimo del volumen de vista.
+Valor X mínimo del volumen de vista.
 
 </dd> <dt>
 
-*r* \[ en\]
+*r* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor x máximo del volumen de vista.
 
@@ -76,34 +76,34 @@ Valor x máximo del volumen de vista.
 *b* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor y mínimo del volumen de vista.
+Valor Y mínimo del volumen de vista.
 
 </dd> <dt>
 
 *t* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor y máximo del volumen de vista.
+Valor Y máximo del volumen de vista.
 
 </dd> <dt>
 
-*Zn* \[ de\]
+*zn* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor z mínimo del volumen de vista.
 
 </dd> <dt>
 
-*ZF* \[ de\]
+*y* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor z máximo del volumen de vista.
 
@@ -113,13 +113,13 @@ Valor z máximo del volumen de vista.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX que es una matriz personalizada de proyección de perspectiva que se ha personalizado.
+Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva personalizada y con la mano izquierda.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los parámetros de la función D3DXMatrixPerspectiveOffCenterLH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de la vista.
+Todos los parámetros de la función D3DXMatrixPerspectiveOffCenterLH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveOffCenterLH se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveOffCenterLH se puede usar como parámetro para otra función.
 
 Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
@@ -139,12 +139,12 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

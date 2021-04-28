@@ -1,7 +1,7 @@
 ---
-description: Puntero a una función que crea una instancia del objeto.
+description: 'Puntero de función LPFNNewCOMObject: puntero a una función que crea una instancia del objeto .'
 ms.assetid: 8c9dab82-a080-4733-8c62-d090b28306e0
-title: Puntero a la función LPFNNewCOMObject (ComBase. h)
+title: Puntero de función LPFNNewCOMObject (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: 07c0f8ab961c872c9dc0f92d2fff519b94cd049e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3ea5bc172bc22f7aa9dce1f348bba552520565f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690653"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116533"
 ---
-# <a name="lpfnnewcomobject-function-pointer"></a>Puntero a la función LPFNNewCOMObject
+# <a name="lpfnnewcomobject-function-pointer"></a>Puntero de función LPFNNewCOMObject
 
-Puntero a una función que crea una instancia del objeto.
+Puntero a una función que crea una instancia del objeto .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,20 +43,20 @@ typedef CUnknown* ( CALLBACK *LPFNNewCOMObject)(
 *pUnkOuter* 
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown** del objeto que agrega el nuevo objeto, si existe. Este puntero puede ser **null**.
+Puntero a **la interfaz IUnknown** del objeto que agrega el nuevo objeto, si lo hay. Este puntero puede ser **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . Si se produce un error en el constructor, este parámetro recibe un código de error.
+Puntero a un **valor HRESULT.** Si se produce un error en el constructor, este parámetro recibe un código de error.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a una nueva instancia del objeto.
+Devuelve un puntero a una nueva instancia del objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,15 +64,15 @@ Devuelve un puntero a una nueva instancia del objeto.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Combase.h (incluir Streams.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CFactoryTemplate**](cfactorytemplate.md)
+[**CFactoryTemplate (clase)**](cfactorytemplate.md)
 </dt> </dl>
 
  

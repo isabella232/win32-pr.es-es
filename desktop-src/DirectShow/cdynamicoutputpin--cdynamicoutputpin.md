@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CDynamicOutputPin.~CDynamicOutputPin: método Destructor.'
 ms.assetid: 122c2506-a38a-4d24-a372-da210801df88
-title: CDynamicOutputPin. ~ CDynamicOutputPin (Amfilter. h)
+title: Destructor CDynamicOutputPin.~CDynamicOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c65c8e29270e386645be7afb7b9cd7c3ec3c721e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f1369b63f3ae5cacf74d32c89cda5602660d228
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661363"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095753"
 ---
-# <a name="cdynamicoutputpincdynamicoutputpin-destructor"></a>CDynamicOutputPin. ~ CDynamicOutputPin (destructor)
+# <a name="cdynamicoutputpincdynamicoutputpin-destructor"></a>Destructor CDynamicOutputPin.~CDynamicOutputPin
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ Método de destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

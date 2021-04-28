@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CMediaType.CMediaType (Mtype.h): método constructor.'
 ms.assetid: 35198320-d028-42d4-823f-4f8346d8f977
-title: 'Constructor CMediaType. CMediaType (mtype. h): parámetros cmtype y PHR'
+title: 'Constructor CMediaType.CMediaType (Mtype.h): parámetros cmtype y phr'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a40929bb6f53df7ce721e20eefba3019eb71cb0e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: dd91252920c74d45e4218be3c3d03249a116bfcf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389069"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095423"
 ---
-# <a name="cmediatypecmediatype-constructor-mtypeh"></a>Constructor CMediaType. CMediaType (mtype. h)
+# <a name="cmediatypecmediatype-constructor-mtypeh"></a>Constructor CMediaType.CMediaType (Mtype.h)
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,23 +43,23 @@ CMediaType(
 
 <dl> <dt>
 
-*cmtype* \[ CLI\]
+*cmtype* \[ Ref\]
 </dt> <dd>
 
-Referencia a un `CMediaType` objeto. El constructor copia el tipo de archivo multimedia en el nuevo objeto, incluido el bloque de formato, si existe.
+Referencia a un `CMediaType` objeto . El constructor copia el tipo de medio en el nuevo objeto, incluido el bloque de formato, si lo hubiera.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor HRESULT. Este parámetro puede ser un puntero **nulo** . De lo contrario, el autor de la llamada debe establecer el valor en es \_ correcto antes de llamar al constructor. Si se produce un error en el constructor, establece el valor en un código de error.
+Puntero a una variable que recibe un valor HRESULT. Este parámetro puede ser un **puntero NULL.** De lo contrario, el autor de la llamada debe establecer el valor en S \_ OK antes de llamar al constructor. Si se produce un error en el constructor, establece el valor en un código de error.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-El constructor llama al método [**CMediaType:: InitMediaType**](cmediatype-initmediatype.md) para inicializar el tipo de archivo multimedia.
+El constructor llama al [**método CMediaType::InitMediaType**](cmediatype-initmediatype.md) para inicializar el tipo de medio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,16 +67,16 @@ El constructor llama al método [**CMediaType:: InitMediaType**](cmediatype-init
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Streams.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

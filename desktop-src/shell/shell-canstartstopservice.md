@@ -1,7 +1,7 @@
 ---
-description: Determina si el usuario actual puede iniciar y detener el servicio con nombre.
+description: 'Método Shell.CanStartStopService: determina si el usuario actual puede iniciar y detener el servicio con nombre.'
 ms.assetid: 1428F529-61F6-4113-A553-2C0D617FD859
-title: Método Shell. CanStartStopService (Shldisp. h)
+title: Método Shell.CanStartStopService (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 1d92fa076141bdebc8a2f24059a65e842e5a3d6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29561519b95329093ef1f7bfc64023fd1ac4533d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002208"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083693"
 ---
-# <a name="shellcanstartstopservice-method"></a>Shell. CanStartStopService (método)
+# <a name="shellcanstartstopservice-method"></a>Método Shell.CanStartStopService
 
 Determina si el usuario actual puede iniciar y detener el servicio con nombre.
 
@@ -49,12 +49,12 @@ Shell.CanStartStopService( _
 
 <dl> <dt>
 
-*sServiceName* \[ de\]
+*sServiceName* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **Cadena**
 
-**Cadena** que contiene el nombre del servicio.
+Cadena **que** contiene el nombre del servicio.
 
 </dd> </dl>
 
@@ -62,25 +62,25 @@ Tipo: **String**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Devuelve _ *true** si el usuario puede iniciar y detener el servicio; en caso contrario, **false**.
+Devuelve **true** si el usuario puede iniciar y detener el servicio; de lo contrario, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Devuelve _ *true** si el usuario puede iniciar y detener el servicio; en caso contrario, **false**.
+Devuelve **true** si el usuario puede iniciar y detener el servicio; de lo contrario, **false**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **CanStartStopService** para JScript y VBScript.
+En los ejemplos siguientes se muestra el **uso de CanStartStopService** para JScript y VBScript.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -97,7 +97,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -121,13 +121,13 @@ VBScript
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

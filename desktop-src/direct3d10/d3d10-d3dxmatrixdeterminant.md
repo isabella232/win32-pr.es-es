@@ -1,7 +1,7 @@
 ---
-description: Devuelve el factor determinante de una matriz.
+description: 'Función D3DXMatrixDeterminant (D3DX10Math.h): devuelve el determinante de una matriz.'
 ms.assetid: b0155c91-1554-42ef-b219-c6cdd2a905b5
-title: Función D3DXMatrixDeterminant (D3DX10Math. h)
+title: Función D3DXMatrixDeterminant (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 11b1092427b12c33d8c34c9f1bbd5e09cf1ccf2d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 894db23a3079c1344c97cab00642cbbc0953450d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718443"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103463"
 ---
-# <a name="d3dxmatrixdeterminant-function-d3dx10mathh"></a>Función D3DXMatrixDeterminant (D3DX10Math. h)
+# <a name="d3dxmatrixdeterminant-function-d3dx10mathh"></a>Función D3DXMatrixDeterminant (D3DX10Math.h)
 
-Devuelve el factor determinante de una matriz.
+Devuelve el determinante de una matriz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ FLOAT D3DXMatrixDeterminant(
 
 <dl> <dt>
 
-*p. m* \[ de\]
+*pM* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a la estructura de D3DXMATRIX de origen.
+Puntero a la estructura D3DXMATRIX de origen.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Devuelve el factor determinante de la matriz.
+Devuelve el determinante de la matriz.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Devuelve el factor determinante de la matriz.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
