@@ -1,26 +1,26 @@
 ---
-title: Referencia de icono
-description: .
+title: Referencia de iconos
+description: Referencia de iconos
 ms.assetid: 63d97fc1-65ee-4402-99c7-c4567821221f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b30a1388e878d71daa837949a618c5f3ec38d850
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0dd068d32308562d771c959ed9234b2d6b25e1d2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357484"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112673"
 ---
-# <a name="icon-reference"></a><span data-ttu-id="eef5e-103">Referencia de icono</span><span class="sxs-lookup"><span data-stu-id="eef5e-103">Icon Reference</span></span>
+# <a name="icon-reference"></a><span data-ttu-id="44977-103">Referencia de iconos</span><span class="sxs-lookup"><span data-stu-id="44977-103">Icon Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="eef5e-104">En esta sección</span><span class="sxs-lookup"><span data-stu-id="eef5e-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="44977-104">En esta sección</span><span class="sxs-lookup"><span data-stu-id="44977-104">In This Section</span></span>
 
--   [<span data-ttu-id="eef5e-105">Funciones de icono</span><span class="sxs-lookup"><span data-stu-id="eef5e-105">Icon Functions</span></span>](icon-functions.md)
--   [<span data-ttu-id="eef5e-106">Estructuras de iconos</span><span class="sxs-lookup"><span data-stu-id="eef5e-106">Icon Structures</span></span>](icon-structures.md)
+-   [<span data-ttu-id="44977-105">Funciones de icono</span><span class="sxs-lookup"><span data-stu-id="44977-105">Icon Functions</span></span>](icon-functions.md)
+-   [<span data-ttu-id="44977-106">Estructuras de icono</span><span class="sxs-lookup"><span data-stu-id="44977-106">Icon Structures</span></span>](icon-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 
