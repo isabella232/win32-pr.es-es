@@ -1,7 +1,7 @@
 ---
-description: Solicita un restablecimiento.
+description: 'Método reset de la Msvm_TimeSyncComponent clase : solicita un restablecimiento.'
 ms.assetid: fb0ce09b-0d14-4de8-b2e5-4d86169b261b
-title: Método Reset de la clase Msvm_TimeSyncComponent
+title: Método Reset de la Msvm_TimeSyncComponent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f412891def38da4e1d0063fe6ec56d62c2a30d77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d93f548030c2248b30eab7a3585a3c270311aa42
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652497"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111163"
 ---
-# <a name="reset-method-of-the-msvm_timesynccomponent-class"></a><span data-ttu-id="b6c8e-103">Método Reset de la \_ clase MSVM TimeSyncComponent</span><span class="sxs-lookup"><span data-stu-id="b6c8e-103">Reset method of the Msvm\_TimeSyncComponent class</span></span>
+# <a name="reset-method-of-the-msvm_timesynccomponent-class"></a><span data-ttu-id="cee54-103">Método Reset de la clase \_ TimeSyncComponent de Msvm</span><span class="sxs-lookup"><span data-stu-id="cee54-103">Reset method of the Msvm\_TimeSyncComponent class</span></span>
 
-<span data-ttu-id="b6c8e-104">Solicita un restablecimiento.</span><span class="sxs-lookup"><span data-stu-id="b6c8e-104">Requests a reset.</span></span>
+<span data-ttu-id="cee54-104">Solicita un restablecimiento.</span><span class="sxs-lookup"><span data-stu-id="cee54-104">Requests a reset.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b6c8e-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="b6c8e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cee54-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="cee54-105">Syntax</span></span>
 
 
 ```mof
@@ -33,41 +33,41 @@ uint32 Reset();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="b6c8e-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="b6c8e-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cee54-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="cee54-106">Parameters</span></span>
 
-<span data-ttu-id="b6c8e-107">Este método no tiene parámetros.</span><span class="sxs-lookup"><span data-stu-id="b6c8e-107">This method has no parameters.</span></span>
+<span data-ttu-id="cee54-107">Este método no tiene parámetros.</span><span class="sxs-lookup"><span data-stu-id="cee54-107">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="b6c8e-108">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="b6c8e-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cee54-108">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="cee54-108">Return value</span></span>
 
-<span data-ttu-id="b6c8e-109">Este método devuelve uno de los siguientes valores:</span><span class="sxs-lookup"><span data-stu-id="b6c8e-109">This method returns one of the following values:</span></span>
+<span data-ttu-id="cee54-109">Este método devuelve uno de los siguientes valores:</span><span class="sxs-lookup"><span data-stu-id="cee54-109">This method returns one of the following values:</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="b6c8e-110">**Completado sin error** (0)</span><span class="sxs-lookup"><span data-stu-id="b6c8e-110">**Completed with No Error** (0)</span></span>
+<span data-ttu-id="cee54-110">**Completado sin error** (0)</span><span class="sxs-lookup"><span data-stu-id="cee54-110">**Completed with No Error** (0)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b6c8e-111">**No compatible** (1)</span><span class="sxs-lookup"><span data-stu-id="b6c8e-111">**Not supported** (1)</span></span>
+<span data-ttu-id="cee54-111">**No compatible** (1)</span><span class="sxs-lookup"><span data-stu-id="cee54-111">**Not supported** (1)</span></span>
 </dt> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="b6c8e-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b6c8e-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="cee54-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="cee54-112">Requirements</span></span>
 
 
 
-| <span data-ttu-id="b6c8e-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="b6c8e-113">Requirement</span></span> | <span data-ttu-id="b6c8e-114">Value</span><span class="sxs-lookup"><span data-stu-id="b6c8e-114">Value</span></span> |
+| <span data-ttu-id="cee54-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="cee54-113">Requirement</span></span> | <span data-ttu-id="cee54-114">Valor</span><span class="sxs-lookup"><span data-stu-id="cee54-114">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b6c8e-115">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="b6c8e-115">Minimum supported client</span></span><br/> | <span data-ttu-id="b6c8e-116">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="b6c8e-116">Windows 8.1</span></span><br/>                                                                                  |
-| <span data-ttu-id="b6c8e-117">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="b6c8e-117">Minimum supported server</span></span><br/> | <span data-ttu-id="b6c8e-118">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="b6c8e-118">Windows Server 2012 R2</span></span><br/>                                                                       |
-| <span data-ttu-id="b6c8e-119">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="b6c8e-119">Namespace</span></span><br/>                | <span data-ttu-id="b6c8e-120">\\Virtualización de raíz \\ V2</span><span class="sxs-lookup"><span data-stu-id="b6c8e-120">Root\\virtualization\\v2</span></span><br/>                                                                     |
-| <span data-ttu-id="b6c8e-121">MOF</span><span class="sxs-lookup"><span data-stu-id="b6c8e-121">MOF</span></span><br/>                      | <dl> <span data-ttu-id="b6c8e-122"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="b6c8e-122"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
-| <span data-ttu-id="b6c8e-123">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="b6c8e-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="b6c8e-124"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="b6c8e-124"><dt>Vmms.exe</dt></span></span> </dl>                     |
+| <span data-ttu-id="cee54-115">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="cee54-115">Minimum supported client</span></span><br/> | <span data-ttu-id="cee54-116">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="cee54-116">Windows 8.1</span></span><br/>                                                                                  |
+| <span data-ttu-id="cee54-117">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="cee54-117">Minimum supported server</span></span><br/> | <span data-ttu-id="cee54-118">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="cee54-118">Windows Server 2012 R2</span></span><br/>                                                                       |
+| <span data-ttu-id="cee54-119">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="cee54-119">Namespace</span></span><br/>                | <span data-ttu-id="cee54-120">Virtualización \\ raíz \\ v2</span><span class="sxs-lookup"><span data-stu-id="cee54-120">Root\\virtualization\\v2</span></span><br/>                                                                     |
+| <span data-ttu-id="cee54-121">MOF</span><span class="sxs-lookup"><span data-stu-id="cee54-121">MOF</span></span><br/>                      | <dl> <span data-ttu-id="cee54-122"><dt>WindowsVirtualization.V2.mof</dt></span><span class="sxs-lookup"><span data-stu-id="cee54-122"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
+| <span data-ttu-id="cee54-123">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="cee54-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="cee54-124"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="cee54-124"><dt>Vmms.exe</dt></span></span> </dl>                     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="b6c8e-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="b6c8e-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cee54-125">Consulte también</span><span class="sxs-lookup"><span data-stu-id="cee54-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b6c8e-126">**MSVM \_ TimeSyncComponent**</span><span class="sxs-lookup"><span data-stu-id="b6c8e-126">**Msvm\_TimeSyncComponent**</span></span>](msvm-timesynccomponent.md)
+[<span data-ttu-id="cee54-126">**Msvm \_ TimeSyncComponent**</span><span class="sxs-lookup"><span data-stu-id="cee54-126">**Msvm\_TimeSyncComponent**</span></span>](msvm-timesynccomponent.md)
 </dt> </dl>
 
  
