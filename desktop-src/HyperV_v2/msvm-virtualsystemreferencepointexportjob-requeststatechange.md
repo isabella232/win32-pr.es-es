@@ -1,7 +1,7 @@
 ---
-description: Solicita un cambio de estado.
+description: 'Método RequestStateChange de la clase Msvm_VirtualSystemReferencePointExportJob: solicita un cambio de estado.'
 ms.assetid: 53c24e17-2b59-4439-a6d1-e971c189d223
-title: Método RequestStateChange de la clase Msvm_VirtualSystemReferencePointExportJob
+title: Método RequestStateChange de la Msvm_VirtualSystemReferencePointExportJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5612371738915b5e38657eca0773a88e31e3b0d2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: bd12d7cd5b79e38260e671bf1408304390985dac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105670088"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109313"
 ---
-# <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Método RequestStateChange de la \_ clase VirtualSystemReferencePointExportJob de MSVM
+# <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Método RequestStateChange de la clase Msvm \_ VirtualSystemReferencePointExportJob
 
 Solicita un cambio de estado.
 
@@ -40,7 +40,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
 Cambia el estado de un trabajo. Los valores posibles son los siguientes:
@@ -54,7 +54,7 @@ Cambia el estado de un trabajo. Los valores posibles son los siguientes:
 
 </dt> <dd>
 
-Cambia el estado a "en ejecución".
+Cambia el estado a "En ejecución".
 
 </dd> <dt>
 
@@ -65,13 +65,13 @@ Cambia el estado a "en ejecución".
 
 </dt> <dd>
 
-Detiene el trabajo temporalmente. La intención es reiniciar posteriormente el trabajo con "Start". Es posible que se pueda entrar en el estado "servicio" mientras se suspende. (Es específico del trabajo).
+Detiene temporalmente el trabajo. La intención es reiniciar posteriormente el trabajo con "Start". Es posible especificar el estado "Servicio" mientras se suspende. (Esto es específico del trabajo).
 
 </dd> <dt>
 
 <span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>
 
-<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Finalizar** (4)
+<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Terminate** (4)
 
 
 </dt> <dd>
@@ -87,7 +87,7 @@ Detiene el trabajo correctamente, guarda los datos, conserva el estado y cierra 
 
 </dt> <dd>
 
-Finaliza el trabajo inmediatamente sin necesidad de guardar los datos ni de conservar el estado.
+Finaliza el trabajo inmediatamente sin necesidad de guardar datos o conservar el estado.
 
 </dd> <dt>
 
@@ -98,34 +98,34 @@ Finaliza el trabajo inmediatamente sin necesidad de guardar los datos ni de cons
 
 </dt> <dd>
 
-Coloca el trabajo en un estado de servicio específico del proveedor. Es posible que se pueda reiniciar el trabajo.
+Coloca el trabajo en un estado de servicio específico del proveedor. Es posible reiniciar el trabajo.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (7.. 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (7..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Proveedor reservado** (32768... 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Un período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se realice la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **null** y la implementación no admite este parámetro, se debe devolver un código de retorno de 4098 (**no se admite el uso del parámetro timeout**).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -169,21 +169,21 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemReferencePointExportJob**](msvm-virtualsystemreferencepointexportjob.md)
+[**Msvm \_ VirtualSystemReferencePointExportJob**](msvm-virtualsystemreferencepointexportjob.md)
 </dt> </dl>
 
  

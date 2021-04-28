@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m pFilter es un puntero al filtro propietario.
+description: 'CImagePalette::m_pFilter miembro: la variable miembro m \_ pFilter es un puntero al filtro propietario.'
 ms.assetid: f1a75a75-5f5c-420d-a7ab-5f0f03c6afb1
-title: 'Miembro CImagePalette:: m_pFilter (Winutil. h)'
+title: CImagePalette::m_pFilter miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 80609ec003580ac54ef7685edaa6ea6520a17f5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 883fa5bc1aeac57bfa861385cb2d10c563341d52
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679039"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099203"
 ---
-# <a name="cimagepalettem_pfilter-member"></a>Miembro pFilter CImagePalette:: m \_
+# <a name="cimagepalettem_pfilter-member"></a>Miembro CImagePalette::m \_ pFilter
 
 La `m_pFilter` variable miembro es un puntero al filtro propietario.
 
@@ -42,16 +42,16 @@ CBaseFilter *m_pFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImagePalette**](cimagepalette.md)
+[**CImagePalette (clase)**](cimagepalette.md)
 </dt> </dl>
 
  

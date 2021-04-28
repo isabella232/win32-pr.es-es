@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método SetResolution.
+description: 'IWICBitmapFrameEncode_SetResolution_Proxy función: función proxy para el método SetResolution.'
 ms.assetid: dc8df5bb-c38b-4be3-a4c6-60e7d5e1cd1b
-title: IWICBitmapFrameEncode_SetResolution_Proxy función)
+title: IWICBitmapFrameEncode_SetResolution_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 9801384e305f2449c6a31b80cb238fc92f7b63b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 632d6e797d499c4c5468505a4cee49e088ab025a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697266"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116613"
 ---
-# <a name="iwicbitmapframeencode_setresolution_proxy-function"></a>IWICBitmapFrameEncode \_ SetResolution, \_ función de proxy
+# <a name="iwicbitmapframeencode_setresolution_proxy-function"></a>IWICBitmapFrameEncode \_ SetResolution \_ Proxy function
 
-Función de proxy para el método [**SetResolution**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setresolution) .
+Función de proxy para [**el método SetResolution.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setresolution)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmapFrameEncode_SetResolution_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Puntero a este objeto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Puntero a este [**objeto IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 </dd> <dt>
 
-*dpiX* \[ de\]
+*pppX* \[ En\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
 Valor de resolución horizontal.
 
 </dd> <dt>
 
-*dpiY* \[ de\]
+*pppY* \[ En\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
 Valor de resolución vertical.
 
@@ -73,7 +73,7 @@ Valor de resolución vertical.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -81,11 +81,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

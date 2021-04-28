@@ -1,7 +1,7 @@
 ---
-description: El método DecideBufferSize establece los requisitos de búfer.
+description: 'Método CBaseOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos del búfer.'
 ms.assetid: 1f7a3424-18ba-4a10-b09f-947ee8585ffa
-title: Método CBaseOutputPin. DecideBufferSize (Amfilter. h)
+title: Método CBaseOutputPin.DecideBufferSize (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5dcb3328b56a7e203575a3abbaab64cda6a9b87f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a76f058e2f9c07a344453db87046704e26280a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661167"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099533"
 ---
-# <a name="cbaseoutputpindecidebuffersize-method"></a>CBaseOutputPin. DecideBufferSize, método
+# <a name="cbaseoutputpindecidebuffersize-method"></a>CBaseOutputPin.DecideBufferSize (método)
 
-El `DecideBufferSize` método establece los requisitos de búfer.
+El `DecideBufferSize` método establece los requisitos del búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ virtual HRESULT DecideBufferSize(
 *pAlloc* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador.
+Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 </dd> <dt>
 
 *ppropInputRequest* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ propiedades de asignador**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer del PIN de entrada. Si el PIN de entrada no tiene ningún requisito, el llamador debe cero los miembros de esta estructura antes de llamar al método.
+Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer del pin de entrada. Si el pin de entrada no tiene ningún requisito, el autor de la llamada debe cero los miembros de esta estructura antes de llamar al método .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto si es correcto o un valor **HRESULT** que indica la causa del error.
+Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Invalide este método en la clase derivada. Llame al método [**IMemAllocator:: SetProperties**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties) para especificar los requisitos de búfer. Normalmente, la clase derivada respetará los requisitos de búfer del PIN de entrada, pero no es necesario.
+Invalide este método en la clase derivada. Llame al [**método IMemAllocator::SetProperties**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties) para especificar los requisitos del búfer. Normalmente, la clase derivada respetará los requisitos de búfer del pin de entrada, pero no es necesario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,16 +71,16 @@ Invalide este método en la clase derivada. Llame al método [**IMemAllocator:: 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseOutputPin**](cbaseoutputpin.md)
+[**CBaseOutputPin (clase)**](cbaseoutputpin.md)
 </dt> </dl>
 
  

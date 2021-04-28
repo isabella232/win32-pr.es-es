@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Link.FeedItemLocalId
 ms.assetid: abfe0b70-1890-4b42-a0b3-83a14462510e
-title: System. Link. FeedItemLocalId
+title: System.Link.FeedItemLocalId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e3f47eab664b537368548b5c2c94cbdaa0ca9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e473497291fe80883b2cb718a9f4059c7181382
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716734"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092453"
 ---
-# <a name="systemlinkfeeditemlocalid"></a>System. Link. FeedItemLocalId
+# <a name="systemlinkfeeditemlocalid"></a>System.Link.FeedItemLocalId
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -28,9 +28,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -45,7 +45,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -57,7 +57,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

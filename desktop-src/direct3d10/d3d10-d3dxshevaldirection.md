@@ -1,7 +1,7 @@
 ---
-description: Evalúa las funciones de base de armónicos esféricos (SH) a partir de un vector de dirección de entrada.
+description: 'Función D3DXSHEvalDirection (D3DX10.h): evalúa las funciones básicas de armónica esférica (SH) a partir de un vector de dirección de entrada.'
 ms.assetid: c86973cc-c5b0-4358-b7eb-5c31f38b5b5a
-title: Función D3DXSHEvalDirection (D3DX10. h)
+title: Función D3DXSHEvalDirection (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 698873f3278b37970120b03c25918096762ead34
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c7fa1f94d65ca8096a0398d71ca2f562b643d47a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104552750"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108593"
 ---
-# <a name="d3dxshevaldirection-function-d3dx10h"></a>Función D3DXSHEvalDirection (D3DX10. h)
+# <a name="d3dxshevaldirection-function-d3dx10h"></a>Función D3DXSHEvalDirection (D3DX10.h)
 
-Evalúa las funciones de base de armónicos esféricos (SH) a partir de un vector de dirección de entrada.
+Evalúa las funciones básicas de armónica esférica (SH) a partir de un vector de dirección de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,53 +42,53 @@ FLOAT* D3DXSHEvalDirection(
 
 <dl> <dt>
 
-*pOut* \[ de\]
+*pOut* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida de armónicos esféricos (SH). La evaluación genera coeficientes de pedido ². Vea la sección Comentarios.
+Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*Pedido* \[ de de\]
+*Pedido* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes de pedido ². El grado de evaluación es order-1.
+Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
-*pDir* \[ de\]
+*pDir* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-(x, y, z): Vector de dirección en el que se van a evaluar las funciones de base de SH. Debe normalizarse. Vea la sección Comentarios.
+(x, y, z) vector de dirección en el que se evaluarán las funciones de base sh. Debe normalizarse. Vea la sección Comentarios.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes de salida SH. Vea la sección Comentarios.
+Puntero a coeficientes de salida sh. Vea la sección Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada coeficiente de la función YLM se almacena en la ubicación de memoria l ² + m + l, donde:
+Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
 -   l es el grado de la función base.
--   m es el índice de la función base para el valor l especificado y los intervalos de-l a l, ambos incluidos.
+-   m es el índice de función base para el valor l especificado y va de -l a l, ambos incluidos.
 
-En la esfera con radio de unidad, tal y como se muestra en la siguiente ilustración, la dirección se puede especificar simplemente con Theta, el ángulo del eje z en la dirección de la mano derecha y la PHI, el ángulo de z.
+En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección derecha y el ángulo de la z.
 
-![Ilustración de una esfera con radio de unidad](images/spherical-coordinates.png)
+![ilustración de una esfera con radio de unidad](images/spherical-coordinates.png)
 
-Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (Theta, PHI) en la esfera de unidad. El ángulo Zeta varía en el intervalo de 0 a 2 PI, mientras que la PHI varía de 0 a pi.
+Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que phi varía de 0 a pi.
 
-![ecuaciones de la relación entre las coordenadas cartesianas y esféricas](images/spherical-coordinates-equations.png)
+![ecuaciones de la relación entre coordenadas cartesianas y esféricas](images/spherical-coordinates-equations.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,12 +96,12 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

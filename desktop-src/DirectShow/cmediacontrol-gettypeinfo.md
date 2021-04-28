@@ -1,7 +1,7 @@
 ---
-description: Recupera un objeto de información de tipo, que puede recuperar la información de tipo de una interfaz.
+description: 'Método CMediaControl.GetTypeInfo: recupera un objeto type-information, que puede recuperar la información de tipo de una interfaz.'
 ms.assetid: 2014485f-d937-415d-a2fc-0c69269b5237
-title: Método CMediaControl. GetTypeInfo (Ctlutil. h)
+title: Método CMediaControl.GetTypeInfo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe393922206744c23b534bf8d701d6292736c65a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 857dbdeee9a2add9ab77cae0ff97d69699d2dd2e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680242"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099133"
 ---
-# <a name="cmediacontrolgettypeinfo-method"></a>CMediaControl. GetTypeInfo, método
+# <a name="cmediacontrolgettypeinfo-method"></a>Método CMediaControl.GetTypeInfo
 
 Recupera un objeto de información de tipo, que puede recuperar la información de tipo de una interfaz.
 
@@ -47,14 +47,14 @@ HRESULT GetTypeInfo(
 *itinfo* 
 </dt> <dd>
 
-Información de tipo que se va a devolver. Pase cero para recuperar la información de tipo de la implementación de **IDispatch** .
+Escriba la información que se devolverá. Pase cero para recuperar información de tipo para **la implementación de IDispatch.**
 
 </dd> <dt>
 
 *lcid* 
 </dt> <dd>
 
-IDENTIFICADOR de configuración regional de la información de tipo. En el caso de las clases que admiten nombres de miembro localizados, es posible que un objeto pueda devolver información de tipo diferente para distintos idiomas. En el caso de las clases que no admiten nombres de miembro localizados, este parámetro se puede omitir.
+Identificador de configuración regional para la información de tipo. Para las clases que admiten nombres de miembros localizados, un objeto podría devolver información de tipo diferente para distintos idiomas. Para las clases que no admiten nombres de miembros localizados, este parámetro se puede omitir.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Dirección de un puntero al objeto de información de tipo solicitado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un \_ puntero E si *pptinfo* no es válido. Devuelve el tipo \_ E \_ ELEMENTNOTFOUND si *itinfo* no es cero. Devuelve S \_ correcto si se realiza correctamente. De lo contrario, devuelve un **valor HRESULT** de una de las llamadas para recuperar el tipo.
+Devuelve un puntero E \_ si *pptinfo* no es válido. Devuelve TYPE \_ E \_ ELEMENTNOTFOUND si *itinfo* no es cero. Devuelve S \_ OK si se realiza correctamente. De lo contrario, **devuelve un HRESULT** de una de las llamadas para recuperar el tipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,16 +75,16 @@ Devuelve un \_ puntero E si *pptinfo* no es válido. Devuelve el tipo \_ E \_ EL
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaControl**](cmediacontrol.md)
+[**CMediaControl (clase)**](cmediacontrol.md)
 </dt> </dl>
 
  

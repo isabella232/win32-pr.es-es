@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de proyección de perspectiva a la derecha.
+description: 'Función D3DXMatrixPerspectiveRH (D3DX10Math.h): crea una matriz de proyección de perspectiva a la derecha.'
 ms.assetid: 324c8a21-24ef-4b3a-aac1-a753e26076d4
-title: Función D3DXMatrixPerspectiveRH (D3DX10Math. h)
+title: Función D3DXMatrixPerspectiveRH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: eb1c2b4b876fb2dda842912d2f18f845a3167406
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 03ffd99d016023612daa3de96ae29275d71074a0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721530"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109013"
 ---
-# <a name="d3dxmatrixperspectiverh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveRH (D3DX10Math. h)
+# <a name="d3dxmatrixperspectiverh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveRH (D3DX10Math.h)
 
 Crea una matriz de proyección de perspectiva a la derecha.
 
@@ -49,41 +49,41 @@ D3DXMATRIX* D3DXMatrixPerspectiveRH(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*w* \[ en\]
+*w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Ancho del volumen de vista en el plano de vista próximo.
+Ancho del volumen de vista en el plano de vista cercano.
 
 </dd> <dt>
 
-*h* \[ en\]
+*h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Alto del volumen de vista en el plano de vista próximo.
+Alto del volumen de vista en el plano de vista cercano.
 
 </dd> <dt>
 
-*Zn* \[ de\]
+*zn* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z del plano de vista próximo.
+Valor Z del plano de vista cercano.
 
 </dd> <dt>
 
-*ZF* \[ de\]
+*y* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor Z del plano de vista lejano.
 
@@ -93,15 +93,15 @@ Valor Z del plano de vista lejano.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX que es una matriz de proyección en perspectiva a la derecha.
+Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva a la derecha.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los parámetros de la función D3DXMatrixPerspectiveRH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de la vista.
+Todos los parámetros de la función D3DXMatrixPerspectiveRH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveRH se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixPerspectiveRH se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -119,12 +119,12 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

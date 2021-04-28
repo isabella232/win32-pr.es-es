@@ -1,7 +1,7 @@
 ---
-description: Establece una matriz de matrices nontransposed.
+description: 'Método ID3DXBaseEffect::SetMatrixArray: establece una matriz de matrices no transaccionadas.'
 ms.assetid: 008de62c-3a36-4499-8a0b-9075756395e9
-title: 'ID3DXBaseEffect:: SetMatrixArray (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::SetMatrixArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c48dcb3288930a9170c932f335a4b20c258acbb4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ae603708be4b34c9aa12722fe282df470c85d476
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362420"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107433"
 ---
-# <a name="id3dxbaseeffectsetmatrixarray-method"></a>ID3DXBaseEffect:: SetMatrixArray (método)
+# <a name="id3dxbaseeffectsetmatrixarray-method"></a>Método ID3DXBaseEffect::SetMatrixArray
 
-Establece una matriz de matrices nontransposed.
+Establece una matriz de matrices no transpuestas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT SetMatrixArray(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pMatrix* \[ de\]
+*pMatrix* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matriz de matrices de nontransposed. Vea [**D3DXMATRIX**](d3dxmatrix.md).
+Matriz de matrices no transpuestas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de matrices de la matriz.
 
@@ -73,13 +73,13 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una matriz nontransposed contiene datos principales de fila; es decir, cada vector está incluido en una fila.
+Una matriz no transaccional contiene datos principales de fila; es decir, cada vector está contenido en una fila.
 
-Si las matrices de destino son más pequeñas que las matrices de origen, se omitirán los componentes adicionales de las matrices de origen.
+Si las matrices de destino son menores que las matrices de origen, se omitirán los componentes adicionales de las matrices de origen.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,12 +87,12 @@ Si las matrices de destino son más pequeñas que las matrices de origen, se omi
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

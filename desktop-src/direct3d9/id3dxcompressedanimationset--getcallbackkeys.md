@@ -1,7 +1,7 @@
 ---
-description: Rellena una matriz con los datos de clave de devolución de llamada utilizados para la animación de fotogramas clave.
+description: 'Método ID3DXCompressedAnimationSet::GetCallbackKeys: rellena una matriz con datos de clave de devolución de llamada usados para la animación de fotogramas clave.'
 ms.assetid: 0dc30c1f-9ffb-42ec-8074-84293f16c344
-title: 'ID3DXCompressedAnimationSet:: GetCallbackKeys (método) (D3dx9anim. h)'
+title: Método ID3DXCompressedAnimationSet::GetCallbackKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fe56a3dbdd7d019deb5d7111fa592470bffd244d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d7c430358b5ba7f66c5a79b08ae01925141e659f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678802"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115333"
 ---
-# <a name="id3dxcompressedanimationsetgetcallbackkeys-method"></a>ID3DXCompressedAnimationSet:: GetCallbackKeys (método)
+# <a name="id3dxcompressedanimationsetgetcallbackkeys-method"></a>Método ID3DXCompressedAnimationSet::GetCallbackKeys
 
-Rellena una matriz con los datos de clave de devolución de llamada utilizados para la animación de fotogramas clave.
+Rellena una matriz con datos de clave de devolución de llamada usados para la animación de fotogramas clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetCallbackKeys(
 
 <dl> <dt>
 
-*pCallbackKeys* \[ enuncia\]
+*pCallbackKeys* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **\_ devolución de llamada LPD3DXKEY**](d3dxkey-callback.md)**
+Tipo: **[ **LPD3DXKEY \_ CALLBACK**](d3dxkey-callback.md)**
 
-Puntero a una matriz asignada por el usuario de estructuras de [**\_ devolución de llamada de D3DXKEY**](d3dxkey-callback.md) que el método va a rellenar con los datos de devolución de llamada.
+Puntero a una matriz asignada por el usuario de estructuras de devolución de llamada [**D3DXKEY \_**](d3dxkey-callback.md) que el método va a rellenar con datos de devolución de llamada.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a una matriz asignada por el usuario de estructuras de [**\_ devolución
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

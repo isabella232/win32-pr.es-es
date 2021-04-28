@@ -1,8 +1,8 @@
 ---
-description: El método DeleteEx elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método Delete y se hereda de CIM \_ LogicalFile.
+description: 'Método DeleteEx de la CIM_DeviceFile : el método DeleteEx elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método Delete y se hereda de CIM \_ LogicalFile.'
 ms.assetid: ef4d08cd-7287-47be-bcfc-edc248ac5c9b
 ms.tgt_platform: multiple
-title: Método DeleteEx de la clase CIM_DeviceFile
+title: Método DeleteEx de la CIM_DeviceFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c4e68e7118088b9da1f1a1e2990c0a253ac85714
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e21fb57558d7704bf98740de8634bc91289e0038
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807267"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089603"
 ---
-# <a name="deleteex-method-of-the-cim_devicefile-class"></a>Método DeleteEx de la \_ clase DeviceFile de CIM
+# <a name="deleteex-method-of-the-cim_devicefile-class"></a>Método DeleteEx de la clase \_ DeviceFile de CIM
 
-El método **DeleteEx** elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método [**Delete**](delete-method-in-class-cim-devicefile.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
+El **método DeleteEx** elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método Delete**](delete-method-in-class-cim-devicefile.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,23 +48,23 @@ uint32 DeleteEx(
 
 <dl> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Cadena que representa el nombre del archivo (o directorio) donde se produjo un error en el método. Este parámetro es NULL si el método se ejecuta correctamente.
+Cadena que representa el nombre del archivo (o directorio) en el que se ha fallado el método. Este parámetro es NULL si el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ de\]
+*StartFileName* \[ En\]
 </dt> <dd>
 
-Cadena que representa el archivo secundario (o directorio) que se va a utilizar como punto de partida para este método. Normalmente, el parámetro **StartFileName** es el parámetro **StopFileName** que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es null, la operación se realiza en el archivo o directorio especificado en la llamada [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Cadena que representa el archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el **parámetro StartFileName** es el **parámetro StopFileName** que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es NULL, la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se realiza correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -118,7 +118,7 @@ El objeto ya existe.
 
 11
 
-Sistema de archivos no NTFS.
+El sistema de archivos no es NTFS.
 
 </dd> <dt>
 
@@ -172,7 +172,7 @@ Archivo de inicio no válido.
 
 17
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -185,34 +185,34 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[\_DEVICEFILE CIM](deleteex-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](deleteex-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_DEVICEFILE CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Music.DiscNumber
 ms.assetid: dfe19c2c-b07e-4752-94c5-b770a14250e0
-title: System. Music. DiscNumber
+title: System.Music.DiscNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c33213c3ce1bcb8dbce39641c526359c8d52c42b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2ee7015746aec24f1b2aac66503f19b603232e4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667095"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114733"
 ---
-# <a name="systemmusicdiscnumber"></a>System. Music. DiscNumber
+# <a name="systemmusicdiscnumber"></a>System.Music.DiscNumber
 
 ## <a name="windows-10-version-1703-windows-10-version-1607"></a>Windows 10, versión 1703, Windows 10, versión 1607
 
@@ -28,9 +28,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -45,7 +45,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -57,7 +57,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

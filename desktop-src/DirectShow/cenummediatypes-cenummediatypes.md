@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CEnumMediaTypes.CEnumMediaTypes: método constructor.'
 ms.assetid: fae2e05c-3f7b-4511-9b9d-5a37ea03f851
-title: Constructor CEnumMediaTypes. CEnumMediaTypes (Amfilter. h)
+title: Constructor CEnumMediaTypes.CEnumMediaTypes (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e17357d90c57f1a7d489d07fa56206343f50788
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d243ed25cc48c5d30d467f97e2ec20e1f0f2b58
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660869"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095683"
 ---
-# <a name="cenummediatypescenummediatypes-constructor"></a>Constructor CEnumMediaTypes. CEnumMediaTypes
+# <a name="cenummediatypescenummediatypes-constructor"></a>Constructor CEnumMediaTypes.CEnumMediaTypes
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,13 +53,13 @@ Puntero al pin en el que se va a realizar la enumeración.
 *pEnumMediaTypes* 
 </dt> <dd>
 
-Puntero a la interfaz [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) de un enumerador que se va a clonar o **null**.
+Puntero a la [**interfaz IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) de un enumerador que se clona, o **NULL.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *pEnumMediaTypes* es **null**, este método inicializa el enumerador al principio de la secuencia de enumeración. De lo contrario, duplica el estado interno del enumerador especificado por *pEnumMediaTypes*.
+Si *pEnumMediaTypes* es **NULL,** este método inicializa el enumerador al principio de la secuencia de enumeración. De lo contrario, duplica el estado interno del enumerador especificado por *pEnumMediaTypes*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,16 +67,16 @@ Si *pEnumMediaTypes* es **null**, este método inicializa el enumerador al princ
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CEnumMediaTypes**](cenummediatypes.md)
+[**CEnumMediaTypes (clase)**](cenummediatypes.md)
 </dt> </dl>
 
  

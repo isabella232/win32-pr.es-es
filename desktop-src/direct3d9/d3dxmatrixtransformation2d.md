@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de transformación 2D que representa las transformaciones en el plano XY. Los argumentos NULL se tratan como transformaciones de identidad.
+description: 'Función D3DXMatrixTransformation2D (D3dx9math.h): crea una matriz de transformación 2D que representa las transformaciones en el plano xy. Los argumentos NULL se tratan como transformaciones de identidad.'
 ms.assetid: 671d3d67-b474-4fc1-9913-d21f05d66d9a
-title: Función D3DXMatrixTransformation2D (D3dx9math. h)
+title: Función D3DXMatrixTransformation2D (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ead4d403917b5328776b33563bc477c28983d6ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b92a5489569765ef059af9b1023b40fc681b5d0c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717753"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098123"
 ---
-# <a name="d3dxmatrixtransformation2d-function-d3dx9mathh"></a>Función D3DXMatrixTransformation2D (D3dx9math. h)
+# <a name="d3dxmatrixtransformation2d-function-d3dx9mathh"></a>Función D3DXMatrixTransformation2D (D3dx9math.h)
 
-Crea una matriz de transformación 2D que representa las transformaciones en el plano XY. Los argumentos **null** se tratan como transformaciones de identidad.
+Crea una matriz de transformación 2D que representa las transformaciones en el plano xy. **Los** argumentos NULL se tratan como transformaciones de identidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,61 +51,61 @@ D3DXMATRIX* D3DXMatrixTransformation2D(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que contiene el resultado de las transformaciones.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene el resultado de las transformaciones.
 
 </dd> <dt>
 
-*pScalingCenter* \[ de\]
+*pScalingCenter* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntero a una estructura [**D3DXVECTOR2**](d3dxvector2.md) , un punto que identifica el centro de escalado. Si este argumento es **null**, se aplica una matriz identidad M <sub>SC</sub> a la fórmula en la sección Comentarios.
+Puntero a una [**estructura D3DXVECTOR2,**](d3dxvector2.md) un punto que identifica el centro de escalado. Si este argumento es **NULL,** se aplica una matriz <sub>M sc</sub> de identidad a la fórmula en Comentarios.
 
 </dd> <dt>
 
-*pScalingRotation* \[ de\]
+*pScalingRotation* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de rotación de escala.
-
-</dd> <dt>
-
-*pScaling* \[ de\]
-</dt> <dd>
-
-Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
-
-Puntero a una estructura [**D3DXVECTOR2**](d3dxvector2.md) , un punto que identifica la escala. Si este argumento es **null**, se aplica una matriz de identidad MS a la fórmula en la sección Comentarios.
+El factor de rotación de escalado.
 
 </dd> <dt>
 
-*pRotationCenter* \[ de\]
+*pScaling* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntero a una estructura [**D3DXVECTOR2**](d3dxvector2.md) , un punto que identifica el centro de rotación. Si este argumento es **null**, se aplica una matriz identidad M <sub>RC</sub> a la fórmula en la sección Comentarios.
+Puntero a una [**estructura D3DXVECTOR2,**](d3dxvector2.md) un punto que identifica la escala. Si este argumento es **NULL,** se aplica una matriz Ms de identidad a la fórmula en Comentarios.
 
 </dd> <dt>
 
-*Giro* \[ de de\]
+*pRotationCenter* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
+
+Puntero a una [**estructura D3DXVECTOR2,**](d3dxvector2.md) un punto que identifica el centro de rotación. Si este argumento es **NULL,** se aplica una matriz M <sub>rc</sub> de identidad a la fórmula en Comentarios.
+
+</dd> <dt>
+
+*Rotación* \[ En\]
+</dt> <dd>
+
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Ángulo de rotación en radianes.
 
 </dd> <dt>
 
-*pTranslation* \[ de\]
+*pTranslation* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntero a una estructura [**D3DXVECTOR2**](d3dxvector2.md) , que identifica la traducción. Si este argumento es **null**, se aplica una matriz Identity MT a la fórmula en la sección Comentarios.
+Puntero a una [**estructura D3DXVECTOR2,**](d3dxvector2.md) que identifica la traducción. Si este argumento es **NULL,** se aplica una matriz mt de identidad a la fórmula en Comentarios.
 
 </dd> </dl>
 
@@ -113,31 +113,31 @@ Puntero a una estructura [**D3DXVECTOR2**](d3dxvector2.md) , que identifica la t
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una estructura [**D3DXMATRIX**](d3dxmatrix.md) que contiene la matriz de transformación.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene la matriz de transformación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función calcula la matriz de transformación con la fórmula siguiente, con la concatenación de matriz evaluada en orden de izquierda a derecha:
+Esta función calcula la matriz de transformación con la siguiente fórmula, con la concatenación de matrices evaluada en orden de izquierda a derecha:
 
-M<sub>out</sub> = (m<sub>SC</sub>) ⁻ ¹ \* (m<sub>Sr</sub>) ⁻ ¹ \* MS \* m<sub>Sr</sub> \* m<sub>SC</sub> \* (m<sub>RC</sub>) ⁻ ¹ \* m<sub>r</sub> \* M<sub>RC</sub> \* MT
+M<sub>out</sub> = (M<sub>sc</sub>)/¹ \* (M<sub>sr</sub>)/ntes \* \* Ms M<sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)/¹ \* M<sub>r</sub> M \* <sub>rc</sub> \* Mt
 
 donde:
 
 M <sub>out</sub> = matriz de salida (*pOut*)
 
-M <sub>SC</sub> = matriz de centro de escalado (*pScalingCenter*)
+M <sub>sc</sub> = matriz del centro de escalado (*pScalingCenter*)
 
-M <sub>Sr</sub> = matriz de rotación de escala (*pScalingRotation*)
+M <sub>sr</sub> = matriz de rotación de escalado (*pScalingRotation*)
 
-MS = matriz de escalado (*pScaling*)
+Ms = matriz de escalado (*escalado pScaling*)
 
-M <sub>RC</sub> = centro de la matriz de rotación (*pRotationCenter*)
+M <sub>rc</sub> = centro de la matriz de rotación (*pRotationCenter*)
 
-M <sub>r</sub> = matriz de rotación (*giro*)
+M <sub>r</sub> = matriz de rotación (*Rotación*)
 
-MT = matriz de traslación (*pTranslation*)
+Mt = matriz de traducción (*pTranslation*)
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función **D3DXMatrixTransformation2D** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXMatrixTransformation2D** se puede usar como parámetro para otra función.
 
 Para las transformaciones 3D, use [**D3DXMatrixTransformation**](d3dxmatrixtransformation.md).
 
@@ -147,12 +147,12 @@ Para las transformaciones 3D, use [**D3DXMatrixTransformation**](d3dxmatrixtrans
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

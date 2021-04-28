@@ -1,7 +1,7 @@
 ---
-description: La implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.
+description: 'Método IMpeg2PsiParser::GetRecordProgramNumber: la implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.'
 ms.assetid: 3800a0b1-a581-40ed-81ab-3d5f77f442df
-title: 'IMpeg2PsiParser:: GetRecordProgramNumber (método)'
+title: IMpeg2PsiParser::GetRecordProgramNumber (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2bedc5922ce90fa2fda612f30571f884e75841d6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0fd99178edaa23f2cdf32672a746f79c368b4265
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677068"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089143"
 ---
-# <a name="impeg2psiparsergetrecordprogramnumber-method"></a>IMpeg2PsiParser:: GetRecordProgramNumber (método)
+# <a name="impeg2psiparsergetrecordprogramnumber-method"></a>IMpeg2PsiParser::GetRecordProgramNumber (método)
 
 La implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.
 
@@ -41,42 +41,42 @@ HRESULT GetRecordProgramNumber(
 
 <dl> <dt>
 
-*dwIndex* \[ de\]
+*dwIndex* \[ En\]
 </dt> <dd>
 
-Especifica la entrada de PAT que define el programa, indizada desde cero.
+Especifica la entrada en el PAT que define el programa, indizado desde cero.
 
 </dd> <dt>
 
-*pwVal* \[ enuncia\]
+*pwVal* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el \_ campo de número de programa de la Pat.
+Puntero a una variable que recibe el campo \_ de número de programa del PAT.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un valor **HRESULT** . Entre los valores posibles se incluyen, entre otros, los valores que se muestran en la tabla siguiente.
+El método devuelve un **valor HRESULT.** Los valores posibles incluyen, entre otros, los valores que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                          | Descripción         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | Correcto.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Correcto.<br/> |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IMpeg2PsiParser**](impeg2psiparser.md)
+[**IMpeg2PsiParser (interfaz)**](impeg2psiparser.md)
 </dt> <dt>
 
-[Ejemplo de filtro de analizador de PSI](psi-parser-filter-sample.md)
+[Ejemplo de filtro del analizador de PSI](psi-parser-filter-sample.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: El método CheckMediaType determina si el PIN acepta un tipo de medio específico.
+description: 'Método CTransInPlaceInputPin.CheckMediaType: el método CheckMediaType determina si el pin acepta un tipo de medio específico.'
 ms.assetid: 2d5f784a-8970-487d-94ef-d96d04f8eb2e
-title: Método CTransInPlaceInputPin. CheckMediaType (TRANSip. h)
+title: Método CTransInPlaceInputPin.CheckMediaType (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22f271759bc0ade6b820aed2039bbc16a2cf4a31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5de3cec87d740db42824b0d7abf1ee4bfc6aeecb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660365"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094803"
 ---
-# <a name="ctransinplaceinputpincheckmediatype-method"></a>CTransInPlaceInputPin. CheckMediaType, método
+# <a name="ctransinplaceinputpincheckmediatype-method"></a>Método CTransInPlaceInputPin.CheckMediaType
 
-El `CheckMediaType` método determina si el PIN acepta un tipo de medio específico.
+El `CheckMediaType` método determina si el pin acepta un tipo de medio específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ HRESULT CheckMediaType(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que contiene el tipo de medio propuesto.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que contiene el tipo de medio propuesto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si el tipo de medio propuesto es aceptable. De lo contrario, devuelve S \_ false o un código de error.
+Devuelve S \_ OK si el tipo de medio propuesto es aceptable. De lo contrario, devuelve S \_ FALSE o un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CTransformInputPin:: CheckMediaType**](ctransforminputpin-checkmediatype.md) . Llama al método [**CTransformFilter:: CheckInputType**](ctransformfilter-checkinputtype.md) del filtro para comprobar el tipo de entrada. Si el PIN de salida está conectado, este método también llama al método [**IPin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) en el PIN de entrada de nivel inferior.
+Este método invalida el [**método CTransformInputPin::CheckMediaType.**](ctransforminputpin-checkmediatype.md) Llama al método [**CTransformFilter::CheckInputType**](ctransformfilter-checkinputtype.md) del filtro para comprobar el tipo de entrada. Si el pin de salida está conectado, este método también llama al método [**IPin::QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) en el pin de entrada de nivel inferior.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,16 +63,16 @@ Este método invalida el método [**CTransformInputPin:: CheckMediaType**](ctran
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceInputPin**](ctransinplaceinputpin.md)
+[**CTransInPlaceInputPin (clase)**](ctransinplaceinputpin.md)
 </dt> </dl>
 
  
