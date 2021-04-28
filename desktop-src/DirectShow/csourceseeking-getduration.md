@@ -1,7 +1,7 @@
 ---
-description: 'El método GetDuration recupera la duración de la secuencia. Este método implementa el método IMediaSeeking:: GetDuration.'
+description: 'Método CSourceSeeking.GetDuration: el método GetDuration recupera la duración de la secuencia. Este método implementa el método IMediaSeeking::GetDuration.'
 ms.assetid: 074eb2d0-a7a3-4bc1-82e8-2f42c6d43dac
-title: Método CSourceSeeking. GetDuration (Ctlutil. h)
+title: Método CSourceSeeking.GetDuration (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8368f655394089c1155d848bc53d2ba2375e3320
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d5b961ad62d65c1f728af71e82de1373ea20b1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660785"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098773"
 ---
-# <a name="csourceseekinggetduration-method"></a><span data-ttu-id="488e0-104">CSourceSeeking. GetDuration, método</span><span class="sxs-lookup"><span data-stu-id="488e0-104">CSourceSeeking.GetDuration method</span></span>
+# <a name="csourceseekinggetduration-method"></a><span data-ttu-id="fe9ee-104">Método CSourceSeeking.GetDuration</span><span class="sxs-lookup"><span data-stu-id="fe9ee-104">CSourceSeeking.GetDuration method</span></span>
 
-<span data-ttu-id="488e0-105">El `GetDuration` método recupera la duración de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="488e0-105">The `GetDuration` method retrieves the duration of the stream.</span></span> <span data-ttu-id="488e0-106">Este método implementa el método [**IMediaSeeking:: GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) .</span><span class="sxs-lookup"><span data-stu-id="488e0-106">This method implements the [**IMediaSeeking::GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) method.</span></span>
+<span data-ttu-id="fe9ee-105">El `GetDuration` método recupera la duración de la secuencia.</span><span class="sxs-lookup"><span data-stu-id="fe9ee-105">The `GetDuration` method retrieves the duration of the stream.</span></span> <span data-ttu-id="fe9ee-106">Este método implementa el [**método IMediaSeeking::GetDuration.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration)</span><span class="sxs-lookup"><span data-stu-id="fe9ee-106">This method implements the [**IMediaSeeking::GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="488e0-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="488e0-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fe9ee-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="fe9ee-107">Syntax</span></span>
 
 
 ```C++
@@ -38,52 +38,52 @@ HRESULT GetDuration(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="488e0-108">Parámetros</span><span class="sxs-lookup"><span data-stu-id="488e0-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="fe9ee-108">Parámetros</span><span class="sxs-lookup"><span data-stu-id="fe9ee-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="488e0-109">*pDuration*</span><span class="sxs-lookup"><span data-stu-id="488e0-109">*pDuration*</span></span> 
+<span data-ttu-id="fe9ee-109">*pDuration*</span><span class="sxs-lookup"><span data-stu-id="fe9ee-109">*pDuration*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="488e0-110">Puntero a una variable que recibe la duración, en unidades del formato de hora actual.</span><span class="sxs-lookup"><span data-stu-id="488e0-110">Pointer to a variable that receives the duration, in units of the current time format.</span></span>
+<span data-ttu-id="fe9ee-110">Puntero a una variable que recibe la duración, en unidades del formato de hora actual.</span><span class="sxs-lookup"><span data-stu-id="fe9ee-110">Pointer to a variable that receives the duration, in units of the current time format.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="488e0-111">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="488e0-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fe9ee-111">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="fe9ee-111">Return value</span></span>
 
-<span data-ttu-id="488e0-112">Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="488e0-112">Returns one of the **HRESULT** values listed in the following table.</span></span>
+<span data-ttu-id="fe9ee-112">Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="fe9ee-112">Returns one of the **HRESULT** values listed in the following table.</span></span>
 
 
 
-| <span data-ttu-id="488e0-113">Código devuelto</span><span class="sxs-lookup"><span data-stu-id="488e0-113">Return code</span></span>                                                                               | <span data-ttu-id="488e0-114">Descripción</span><span class="sxs-lookup"><span data-stu-id="488e0-114">Description</span></span>                       |
+| <span data-ttu-id="fe9ee-113">Código devuelto</span><span class="sxs-lookup"><span data-stu-id="fe9ee-113">Return code</span></span>                                                                               | <span data-ttu-id="fe9ee-114">Descripción</span><span class="sxs-lookup"><span data-stu-id="fe9ee-114">Description</span></span>                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <span data-ttu-id="488e0-115"><dt>**S \_ correcto**</dt></span><span class="sxs-lookup"><span data-stu-id="488e0-115"><dt>**S\_OK**</dt></span></span> </dl>      | <span data-ttu-id="488e0-116">Correcto</span><span class="sxs-lookup"><span data-stu-id="488e0-116">Success</span></span><br/>                |
-| <dl> <span data-ttu-id="488e0-117"><dt>**\_puntero E**</dt></span><span class="sxs-lookup"><span data-stu-id="488e0-117"><dt>**E\_POINTER**</dt></span></span> </dl> | <span data-ttu-id="488e0-118">Valor de puntero **nulo**</span><span class="sxs-lookup"><span data-stu-id="488e0-118">**NULL** pointer value</span></span><br/> |
+| <dl> <span data-ttu-id="fe9ee-115"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="fe9ee-115"><dt>**S\_OK**</dt></span></span> </dl>      | <span data-ttu-id="fe9ee-116">Correcto</span><span class="sxs-lookup"><span data-stu-id="fe9ee-116">Success</span></span><br/>                |
+| <dl> <span data-ttu-id="fe9ee-117"><dt>**PUNTERO \_ E**</dt></span><span class="sxs-lookup"><span data-stu-id="fe9ee-117"><dt>**E\_POINTER**</dt></span></span> </dl> | <span data-ttu-id="fe9ee-118">**Valor de** puntero NULL</span><span class="sxs-lookup"><span data-stu-id="fe9ee-118">**NULL** pointer value</span></span><br/> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="488e0-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="488e0-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fe9ee-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fe9ee-119">Remarks</span></span>
 
-<span data-ttu-id="488e0-120">La duración se especifica mediante la variable miembro [**CSourceSeeking:: m \_ rtDuration**](csourceseeking-m-rtduration.md) .</span><span class="sxs-lookup"><span data-stu-id="488e0-120">The duration is specified by the [**CSourceSeeking::m\_rtDuration**](csourceseeking-m-rtduration.md) member variable.</span></span>
+<span data-ttu-id="fe9ee-120">La variable miembro [**CSourceSeeking::m \_ rtDuration**](csourceseeking-m-rtduration.md) especifica la duración.</span><span class="sxs-lookup"><span data-stu-id="fe9ee-120">The duration is specified by the [**CSourceSeeking::m\_rtDuration**](csourceseeking-m-rtduration.md) member variable.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="488e0-121">Requisitos</span><span class="sxs-lookup"><span data-stu-id="488e0-121">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="fe9ee-121">Requisitos</span><span class="sxs-lookup"><span data-stu-id="fe9ee-121">Requirements</span></span>
 
 
 
-| <span data-ttu-id="488e0-122">Requisito</span><span class="sxs-lookup"><span data-stu-id="488e0-122">Requirement</span></span> | <span data-ttu-id="488e0-123">Value</span><span class="sxs-lookup"><span data-stu-id="488e0-123">Value</span></span> |
+| <span data-ttu-id="fe9ee-122">Requisito</span><span class="sxs-lookup"><span data-stu-id="fe9ee-122">Requirement</span></span> | <span data-ttu-id="fe9ee-123">Value</span><span class="sxs-lookup"><span data-stu-id="fe9ee-123">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="488e0-124">Encabezado</span><span class="sxs-lookup"><span data-stu-id="488e0-124">Header</span></span><br/>  | <dl> <span data-ttu-id="488e0-125"><dt>Ctlutil. h (incluir streams. h)</dt></span><span class="sxs-lookup"><span data-stu-id="488e0-125"><dt>Ctlutil.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
-| <span data-ttu-id="488e0-126">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="488e0-126">Library</span></span><br/> | <dl> <span data-ttu-id="488e0-127"><dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt></span><span class="sxs-lookup"><span data-stu-id="488e0-127"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="fe9ee-124">Encabezado</span><span class="sxs-lookup"><span data-stu-id="fe9ee-124">Header</span></span><br/>  | <dl> <span data-ttu-id="fe9ee-125"><dt>Ctlutil.h (incluir Streams.h)</dt></span><span class="sxs-lookup"><span data-stu-id="fe9ee-125"><dt>Ctlutil.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
+| <span data-ttu-id="fe9ee-126">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="fe9ee-126">Library</span></span><br/> | <dl> <span data-ttu-id="fe9ee-127"><dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt></span><span class="sxs-lookup"><span data-stu-id="fe9ee-127"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="488e0-128">Vea también</span><span class="sxs-lookup"><span data-stu-id="488e0-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fe9ee-128">Consulte también</span><span class="sxs-lookup"><span data-stu-id="fe9ee-128">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="488e0-129">**Clase CSourceSeeking**</span><span class="sxs-lookup"><span data-stu-id="488e0-129">**CSourceSeeking Class**</span></span>](csourceseeking.md)
+[<span data-ttu-id="fe9ee-129">**CSourceSeeking (clase)**</span><span class="sxs-lookup"><span data-stu-id="fe9ee-129">**CSourceSeeking Class**</span></span>](csourceseeking.md)
 </dt> </dl>
 
  
