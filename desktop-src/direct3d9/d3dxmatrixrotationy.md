@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz que gira alrededor del eje y.
+description: 'Función D3DXMatrixRotationY (D3dx9math.h): crea una matriz que gira alrededor del eje Y.'
 ms.assetid: 80449e5d-f9bb-48c0-a787-a5e5a9d1c9a3
-title: Función D3DXMatrixRotationY (D3dx9math. h)
+title: Función D3DXMatrixRotationY (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 81e233f3d643e99c829c7d567721e52b9b5d3e82
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 902325890b02416e796940388bca7a6548773be5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362681"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118133"
 ---
-# <a name="d3dxmatrixrotationy-function-d3dx9mathh"></a>Función D3DXMatrixRotationY (D3dx9math. h)
+# <a name="d3dxmatrixrotationy-function-d3dx9mathh"></a>Función D3DXMatrixRotationY (D3dx9math.h)
 
-Crea una matriz que gira alrededor del eje y.
+Crea una matriz que gira alrededor del eje Y.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ D3DXMATRIX* D3DXMatrixRotationY(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*Ángulo* \[ de\]
+*Ángulo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Ángulo de rotación en radianes. Los ángulos se miden en el sentido de las agujas del reloj al mirar el eje de giro hacia el origen.
+Ángulo de rotación en radianes. Los ángulos se miden en el sentido de las agujas del reloj al mirar a lo largo del eje de rotación hacia el origen.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una estructura [**D3DXMATRIX**](d3dxmatrix.md) girada alrededor del eje y.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) girada alrededor del eje Y.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXMatrixRotationY** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixRotationY** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

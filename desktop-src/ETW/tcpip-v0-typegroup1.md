@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos TCP/IP. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'TcpIp_V0_TypeGroup1 clase : esta clase es la clase de tipo de evento para eventos TCP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 007f0744-8b74-4c57-85bc-f6bdb20bffa7
-title: TcpIp_V0_TypeGroup1 (clase)
+title: TcpIp_V0_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c21025990fe3e21cd5322b651e543472fa8d48c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96df2214aff9b5be6f10a1f08f6e6ea2e015c6b5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360509"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105793"
 ---
-# <a name="tcpip_v0_typegroup1-class"></a>TcpIp \_ V0 \_ clase TypeGroup1
+# <a name="tcpip_v0_typegroup1-class"></a>Clase \_ TypeGroup1 de TcpIp V0 \_
 
-Esta clase es la clase de tipo de evento para los eventos TCP/IP.
+Esta clase es la clase de tipo de evento para eventos TCP/IP.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ class TcpIp_V0_TypeGroup1 : TcpIp_V0
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ TypeGroup1 V0 de TCPIP** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup1 de TcpIp V0** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 V0 de TCPIP** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 de TcpIp V0** tiene estas propiedades.
 
 <dl> <dt>
 
-daddr
+dr
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -67,7 +67,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), extensión ("DirIP")
+Calificadores: WmiDataId(1), Extension("IPAddr")
 </dt> </dl>
 
 Dirección IP de destino.
@@ -83,7 +83,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), extensión ("puerto")
+Calificadores: WmiDataId(3), Extension("Port")
 </dt> </dl>
 
 Número de puerto de destino.
@@ -93,13 +93,13 @@ Número de puerto de destino.
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
 Identificador del proceso asociado a la solicitud.
@@ -115,7 +115,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), extensión ("DirIP")
+Calificadores: WmiDataId(2), Extension("IPAddr")
 </dt> </dl>
 
 Dirección IP de origen.
@@ -125,20 +125,20 @@ Dirección IP de origen.
 tamaño
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
 Tamaño del paquete.
 
 </dd> <dt>
 
-deportivo
+Deporte
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -147,7 +147,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), extensión ("puerto")
+Calificadores: WmiDataId(4), Extension("Port")
 </dt> </dl>
 
 Número de puerto de origen.
@@ -158,18 +158,18 @@ Número de puerto de origen.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**V0 de TcpIp \_**](tcpip-v0.md)
+[**TcpIp \_ V0**](tcpip-v0.md)
 </dt> </dl>
 
  

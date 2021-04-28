@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de inicio y fin de subproceso. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Thread_V2_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos de inicio y finalización de subprocesos. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: c24b4bc9-2a05-444c-be41-b4dfd0511b93
-title: Thread_V2_TypeGroup1 (clase)
+title: Thread_V2_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,18 +22,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c89d573f4eda2580002bedfd0ad17eb9b50c1575
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24ac4655fc374c40eb530828229a319f9ee1375e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277388"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105663"
 ---
-# <a name="thread_v2_typegroup1-class"></a>\_ \_ Clase TypeGroup1 de Thread V2
+# <a name="thread_v2_typegroup1-class"></a>Clase \_ \_ TypeGroup1 de Thread V2
 
-Esta clase es la clase de tipo de evento para los eventos de inicio y fin de subproceso.
+Esta clase es la clase de tipo de evento para los eventos de inicio y finalización de subprocesos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,26 +56,26 @@ class Thread_V2_TypeGroup1 : Thread_V2
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ TypeGroup1 del subproceso V2** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup1 de Thread V2** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 del subproceso V2** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 de Thread V2** tiene estas propiedades.
 
 <dl> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Identificador de proceso del subproceso implicado en el evento.
@@ -85,13 +85,13 @@ Identificador de proceso del subproceso implicado en el evento.
 StackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), puntero
+Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
 Dirección base de la pila del subproceso.
@@ -101,29 +101,29 @@ Dirección base de la pila del subproceso.
 StackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
 Límite de la pila del subproceso.
 
 </dd> <dt>
 
-StartAddr
+Dirinicial
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), puntero
+Calificadores: WmiDataId(7), Pointer
 </dt> </dl>
 
 Dirección de memoria en la que se inicia el seguimiento.
@@ -133,45 +133,45 @@ Dirección de memoria en la que se inicia el seguimiento.
 SubProcessTag
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (10), formato ("x")
+Calificadores: WmiDataId(10), Format("x")
 </dt> </dl>
 
-Identifica el servicio si el subproceso es propiedad de un servicio; de lo contrario, es cero.
+Identifica el servicio si el subproceso es propiedad de un servicio; de lo contrario, cero.
 
 </dd> <dt>
 
 TebBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (9), puntero
+Calificadores: WmiDataId(9), Pointer
 </dt> </dl>
 
-Dirección base del bloque del entorno del subproceso.
+Dirección base del bloque de entorno de subprocesos.
 
 </dd> <dt>
 
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), Format ("x")
+Calificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
 Identificador de subproceso del subproceso implicado en el evento.
@@ -181,13 +181,13 @@ Identificador de subproceso del subproceso implicado en el evento.
 UserStackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), puntero
+Calificadores: WmiDataId(5), Pointer
 </dt> </dl>
 
 Dirección base de la pila de modo de usuario del subproceso.
@@ -197,13 +197,13 @@ Dirección base de la pila de modo de usuario del subproceso.
 UserStackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), puntero
+Calificadores: WmiDataId(6), Pointer
 </dt> </dl>
 
 Límite de la pila de modo de usuario del subproceso.
@@ -213,20 +213,20 @@ Límite de la pila de modo de usuario del subproceso.
 Win32StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8), puntero
+Calificadores: WmiDataId(8), Pointer
 </dt> </dl>
 
-Dirección de inicio de la función que va a ejecutar este subproceso.
+Dirección inicial de la función que va a ejecutar este subproceso.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se están ejecutando actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.
 
@@ -234,18 +234,18 @@ Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se están ejec
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Conversaciones**](thread.md)
+[**Hilo**](thread.md)
 </dt> <dt>
 
 [**Subproceso \_ V2**](thread-v2.md)

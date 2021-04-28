@@ -1,7 +1,7 @@
 ---
-description: El método CheckMediaType determina si el PIN acepta un tipo de medio específico.
+description: 'Método CBasePin.CheckMediaType: el método CheckMediaType determina si el pin acepta un tipo de medio específico.'
 ms.assetid: 6a138679-02b7-4ccc-8881-a0d496f84f93
-title: Método CBasePin. CheckMediaType (Amfilter. h)
+title: Método CBasePin.CheckMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e203851a44a5468567e75ee8c0cc955f8ad0278a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afe39f3a7aac155f3cc87fa6d58f402043861d1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661234"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099403"
 ---
-# <a name="cbasepincheckmediatype-method"></a>CBasePin. CheckMediaType, método
+# <a name="cbasepincheckmediatype-method"></a>Método CBasePin.CheckMediaType
 
-El `CheckMediaType` método determina si el PIN acepta un tipo de medio específico.
+El `CheckMediaType` método determina si el pin acepta un tipo de medio específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ virtual HRESULT CheckMediaType(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que contiene el tipo de medio propuesto.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que contiene el tipo de medio propuesto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si el tipo de medio propuesto es aceptable. De lo contrario, devuelve S \_ false o un código de error.
+Devuelve S \_ OK si el tipo de medio propuesto es aceptable. De lo contrario, devuelve S \_ FALSE o un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase derivada debe reemplazar este método virtual puro.
+La clase derivada debe invalidar este método virtual puro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,16 +63,16 @@ La clase derivada debe reemplazar este método virtual puro.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

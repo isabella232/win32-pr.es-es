@@ -1,7 +1,7 @@
 ---
-description: El método activo notifica al pin que el filtro está activo ahora.
+description: 'Método CDynamicOutputPin.Active: el método Active notifica al pin que el filtro ahora está activo.'
 ms.assetid: c2b8eb54-1bae-4f52-8324-dc70e3cac577
-title: Método CDynamicOutputPin. Active (Amfilter. h)
+title: Método CDynamicOutputPin.Active (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8f1765d0aa524c0dafd03a3fe4133af71e32fa70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d9544c0fd125146b10f008565fcfbe330d18de1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671761"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099333"
 ---
-# <a name="cdynamicoutputpinactive-method"></a>CDynamicOutputPin. Active (método)
+# <a name="cdynamicoutputpinactive-method"></a>Método CDynamicOutputPin.Active
 
-El `Active` método notifica al pin que el filtro está activo ahora.
+El `Active` método notifica al pin que el filtro ahora está activo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                            | Descripción                                                                                                     |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                                                                                             |
-| <dl> <dt>**E \_ FAIL**</dt> </dl> | Error. No se llamó a [**CDynamicOutputPin:: SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                                                                                             |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Error. [**No se llamó a CDynamicOutputPin::SetConfigInfo.**](cdynamicoutputpin-setconfiginfo.md)<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CBaseOutputPin:: Active**](cbaseoutputpin-active.md) . Restablece el evento [**CDynamicOutputPin:: m \_ hStopEvent**](cdynamicoutputpin-m-hstopevent.md) . Si el filtro propietario no ha llamado a **SetConfigInfo**, este método devuelve E \_ Fail.
+Este método invalida el [**método CBaseOutputPin::Active.**](cbaseoutputpin-active.md) Restablece el evento [**CDynamicOutputPin::m \_ hStopEvent.**](cdynamicoutputpin-m-hstopevent.md) Si el filtro propietario no ha llamado a **SetConfigInfo**, este método devuelve E \_ FAIL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ Este método invalida el método [**CBaseOutputPin:: Active**](cbaseoutputpin-ac
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBasePin.CBasePin: método constructor.'
 ms.assetid: e8cb5f1d-171f-4bf8-8ab6-6e547c4678d2
-title: Constructor CBasePin. CBasePin (Amfilter. h)
+title: Constructor CBasePin.CBasePin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dd4883d3d8e906e1da2f377344b735037c5e5cd3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f11dea6bd5bc3f766e5f93a04022dab5ba6e51a5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671636"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099433"
 ---
-# <a name="cbasepincbasepin-constructor"></a>Constructor CBasePin. CBasePin
+# <a name="cbasepincbasepin-constructor"></a>Constructor CBasePin.CBasePin
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ CBasePin(
 *pObjectName* 
 </dt> <dd>
 
-Cadena que contiene el nombre de depuración para el objeto. Para obtener más información, vea [**CBaseObject**](cbaseobject.md).
+Cadena que contiene el nombre de depuración del objeto. Para obtener más información, vea [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
@@ -61,39 +61,39 @@ Puntero al filtro que creó este pin.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntero a un bloqueo de [**CCritSec**](ccritsec.md) , que se usa para serializar los cambios de estado. Puede ser la misma sección crítica que el bloqueo de filtro, [**CBaseFilter:: m \_ Plock**](cbasefilter-m-plock.md).
+Puntero a un [**bloqueo CCritSec,**](ccritsec.md) que se usa para serializar los cambios de estado. Puede ser la misma sección crítica que el bloqueo de filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** que indica si el método se ha ejecutado correctamente o no. Inicialice el valor a S \_ OK antes de crear el objeto. Solo se cambia el valor si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto . El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
 *pName* 
 </dt> <dd>
 
-Cadena de caracteres anchos que contiene el nombre del PIN. Para obtener más información, vea [**CBasePin:: QueryPinInfo**](cbasepin-querypininfo.md).
+Cadena de caracteres anchos que contiene el nombre del pin. Para obtener más información, [**vea CBasePin::QueryPinInfo**](cbasepin-querypininfo.md).
 
 </dd> <dt>
 
 *dir* 
 </dt> <dd>
 
-Miembro de la enumeración de [**\_ dirección del PIN**](/windows/win32/api/strmif/ne-strmif-pin_direction) que especifica la dirección del PIN.
+Miembro de la [**enumeración \_ PIN DIRECTION**](/windows/win32/api/strmif/ne-strmif-pin_direction) que especifica la dirección del pin.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La sección crítica especificada por *Plock* serializa el estado del PIN, incluido el estado de la conexión, la elección del asignador, el tipo de medio y el estado de las operaciones de vaciado. No utilice esta sección crítica para serializar las operaciones de streaming. Para obtener más información, vea [flujo de datos en el gráfico de filtros](data-flow-in-the-filter-graph.md).
+La sección crítica especificada por *pLock* serializa el estado del pin, incluido su estado de conexión, la elección del asignador, el tipo de medio y el estado de las operaciones de vaciado. No use esta sección crítica para serializar las operaciones de streaming. Para obtener más información, [vea Data Flow en el gráfico de filtros](data-flow-in-the-filter-graph.md).
 
-Un filtro podría crear PIN en su método de constructor, por lo que en este punto el puntero *pFilter* podría no hacer referencia a un objeto válido. Almacene el puntero, pero no desreferenciarlo mientras esté dentro del constructor del PIN.
+Un filtro podría crear pines en su método de constructor, por lo que en este momento el *puntero pFilter* podría no hacer referencia a un objeto válido. Almacene el puntero, pero no lo desreferencia mientras esté dentro del constructor del pin.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,16 +101,16 @@ Un filtro podría crear PIN en su método de constructor, por lo que en este pun
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

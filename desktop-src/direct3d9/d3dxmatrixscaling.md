@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz que se escala a lo largo del eje x, el eje y y el eje z.
+description: 'Función D3DXMatrixScaling (D3dx9math.h): crea una matriz que se escala a lo largo del eje X, el eje Y y el eje Z.'
 ms.assetid: f51baa4e-0aec-4de8-b746-24cb52f318d6
-title: Función D3DXMatrixScaling (D3dx9math. h)
+title: Función D3DXMatrixScaling (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7cfc14fc1d514f68f2881d26c4729440d709af93
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97ccd4cc6207bb211259833d163793c3499b51a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717568"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118073"
 ---
-# <a name="d3dxmatrixscaling-function-d3dx9mathh"></a>Función D3DXMatrixScaling (D3dx9math. h)
+# <a name="d3dxmatrixscaling-function-d3dx9mathh"></a>Función D3DXMatrixScaling (D3dx9math.h)
 
-Crea una matriz que se escala a lo largo del eje x, el eje y y el eje z.
+Crea una matriz que se escala a lo largo del eje X, el eje Y y el eje Z.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,34 +48,34 @@ D3DXMATRIX* D3DXMatrixScaling(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*SX* \[ de\]
+*sx* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de escala que se aplica a lo largo del eje x.
+Factor de escalado que se aplica a lo largo del eje X.
 
 </dd> <dt>
 
-*SY* \[ de\]
+*sy* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de escala que se aplica a lo largo del eje y.
+Factor de escalado que se aplica a lo largo del eje Y.
 
 </dd> <dt>
 
-*SZ* \[ de\]
+*sz* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de escala que se aplica a lo largo del eje z.
+Factor de escalado que se aplica a lo largo del eje Z.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Factor de escala que se aplica a lo largo del eje z.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la transformación de escala [**D3DXMATRIX**](d3dxmatrix.md).
+Puntero a la transformación de escalado [**D3DXMATRIX**](d3dxmatrix.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXMatrixScaling** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixScaling** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,12 +95,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

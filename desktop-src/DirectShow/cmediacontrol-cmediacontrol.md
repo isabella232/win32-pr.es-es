@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CMediaControl.CMediaControl: método constructor.'
 ms.assetid: 00549dfe-5dd4-445e-bad3-eb6bcfea8f5f
-title: Constructor CMediaControl. CMediaControl (Ctlutil. h)
+title: Constructor CMediaControl.CMediaControl (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63b965ff2484d4db7f7de41d8d524bc74c31ac73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96775678a8d182a3dc88f25fc19b194367c57d92
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680243"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099213"
 ---
-# <a name="cmediacontrolcmediacontrol-constructor"></a>Constructor CMediaControl. CMediaControl
+# <a name="cmediacontrolcmediacontrol-constructor"></a>Constructor CMediaControl.CMediaControl
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,20 +46,20 @@ CMediaControl(
 *pName* 
 </dt> <dd>
 
-Puntero al nombre del objeto para la depuración.
+Puntero al nombre del objeto con fines de depuración.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
 Puntero al propietario de este objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Asigne el parámetro *pName* en la memoria estática. Este nombre aparece en el terminal de depuración al crear y eliminar el objeto.
+Asigne el *parámetro pName* en la memoria estática. Este nombre aparece en el terminal de depuración tras la creación y eliminación del objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,16 +67,16 @@ Asigne el parámetro *pName* en la memoria estática. Este nombre aparece en el 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaControl**](cmediacontrol.md)
+[**CMediaControl (clase)**](cmediacontrol.md)
 </dt> </dl>
 
  

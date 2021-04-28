@@ -1,6 +1,6 @@
 ---
-description: Solicita un puntero a un objeto especificado.
-title: Mensaje de SMC_GETSFOBJECT (shobjidl. h)
+description: 'SMC_GETSFOBJECT mensaje: solicita un puntero a un objeto especificado.'
+title: SMC_GETSFOBJECT mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: a8478f10-77ce-4e71-a5dc-89d8a90cf513
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c7fb57ea8e3f02ce4e773e187310530c14d65515
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 612b43c193cd1919db4a5cf9dba3a8fdba1c81c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277632"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086613"
 ---
-# <a name="smc_getsfobject-message"></a>Mensaje de GETSFOBJECT de SMC \_
+# <a name="smc_getsfobject-message"></a>Mensaje \_ DE SMC GETSFOBJECT
 
 Solicita un puntero a un objeto especificado.
 
@@ -38,14 +38,14 @@ SMC_GETSFOBJECT
 
 <dl> <dt>
 
-*suscripto* 
+*Iid* 
 </dt> <dd>
 
-IID asociado al objeto solicitado.
+El IID asociado al objeto solicitado.
 
 </dd> <dt>
 
-*FV* 
+*Pv* 
 </dt> <dd>
 
 Puntero void que recibe un puntero a la interfaz solicitada.
@@ -54,15 +54,15 @@ Puntero void que recibe un puntero a la interfaz solicitada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación. Es similar a [**SMC \_ GETOBJECT**](smc-getobject.md) pero se usa para los elementos de carpeta de Shell. Cree el objeto solicitado y asigne un puntero a la interfaz solicitada a *PV*.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación. Es similar a [**SMC \_ GETOBJECT, pero**](smc-getobject.md) se usa para los elementos de carpeta de Shell. Cree el objeto solicitado y asigne un puntero a la interfaz solicitada a *pv*.
 
-Se pueden solicitar las siguientes interfaces.
+Se pueden solicitar las interfaces siguientes.
 
--   [**IStream**](/windows/win32/api/objidl/nn-objidl-istream)
+-   [**Istream**](/windows/win32/api/objidl/nn-objidl-istream)
 -   [**IShellMenu**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenu)
 -   [**IShellMenuCallback**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenucallback)
 
@@ -70,12 +70,12 @@ Se pueden solicitar las siguientes interfaces.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

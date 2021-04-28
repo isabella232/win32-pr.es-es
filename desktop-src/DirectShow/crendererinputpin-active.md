@@ -1,7 +1,7 @@
 ---
-description: 'El método activo notifica al pin que el filtro está activo ahora. Este método invalida el método CBasePin:: active.'
+description: 'Método CRendererInputPin.Active: el método Active notifica al pin que el filtro ahora está activo. Este método invalida el método CBasePin::Active.'
 ms.assetid: 2e0c773a-1165-4da2-8acc-fe553663408d
-title: Método CRendererInputPin. Active (Renbase. h)
+title: Método CRendererInputPin.Active (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10df7a68fef8cde3d33a654554509ce26145f8e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bdca1b9342e6e79b2975da38efa00f03c5ea8107
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660692"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098903"
 ---
-# <a name="crendererinputpinactive-method"></a>CRendererInputPin. Active (método)
+# <a name="crendererinputpinactive-method"></a>Método CRendererInputPin.Active
 
-El `Active` método notifica al pin que el filtro está activo ahora. Este método invalida el método [**CBasePin:: Active**](cbasepin-active.md) .
+El `Active` método notifica al pin que el filtro ahora está activo. Este método invalida el [**método CBasePin::Active.**](cbasepin-active.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

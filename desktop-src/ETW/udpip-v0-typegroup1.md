@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para eventos UDP/IP. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'UdpIp_V0_TypeGroup1 clase : esta clase es la clase de tipo de evento para eventos UDP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 834a761a-089b-4b93-9a6a-a1edf752b582
-title: UdpIp_V0_TypeGroup1 (clase)
+title: UdpIp_V0_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2813476bc2c820d1872e787dc047fafccd3b7d52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78243a49e4504fd9e132407feebe98d9b48f7bdd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002573"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105503"
 ---
-# <a name="udpip_v0_typegroup1-class"></a>UdpIp \_ V0 \_ TypeGroup1 (clase)
+# <a name="udpip_v0_typegroup1-class"></a>Clase \_ TypeGroup1 de UdpIp V0 \_
 
 Esta clase es la clase de tipo de evento para eventos UDP/IP.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,33 +50,33 @@ class UdpIp_V0_TypeGroup1 : UdpIp_V0
 
 ## <a name="members"></a>Miembros
 
-La clase **UdpIp \_ V0 \_ TypeGroup1** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup1 UdpIp V0** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **UdpIp \_ V0 \_ TypeGroup1** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 UdpIp V0** tiene estas propiedades.
 
 <dl> <dt>
 
 context
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), puntero
 </dt> </dl>
 
-Identificador de proceso del objeto de dirección que ha realizado o recibido la solicitud.
+Identificador de proceso para el objeto de dirección que realizó o recibió la solicitud.
 
 </dd> <dt>
 
-daddr
+dr
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -85,7 +85,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), extensión ("DirIP")
+Calificadores: WmiDataId(5), Extension("IPAddr")
 </dt> </dl>
 
 Dirección IP de destino.
@@ -101,7 +101,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), extensión ("puerto")
+Calificadores: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Número de puerto de destino.
@@ -111,13 +111,13 @@ Número de puerto de destino.
 dsize
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7)
+Calificadores: WmiDataId(7)
 </dt> </dl>
 
 Tamaño del paquete de destino.
@@ -133,7 +133,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), extensión ("DirIP")
+Calificadores: WmiDataId(2), Extension("IPAddr")
 </dt> </dl>
 
 Dirección IP de origen.
@@ -143,20 +143,20 @@ Dirección IP de origen.
 tamaño
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
 Tamaño del paquete de origen.
 
 </dd> <dt>
 
-deportivo
+Deporte
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -165,7 +165,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), extensión ("puerto")
+Calificadores: WmiDataId(3), Extension("Port")
 </dt> </dl>
 
 Número de puerto de origen.
@@ -176,18 +176,18 @@ Número de puerto de origen.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/> |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**UdpIp \_ v0**](udpip-v0.md)
+[**UdpIp \_ V0**](udpip-v0.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase primaria para los eventos de configuración de hardware. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'SystemConfig_V0 clase : esta clase es la clase primaria para los eventos de configuración de hardware. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 9da1a7ec-89b5-462b-a336-544e4b7adf96
-title: SystemConfig_V0 (clase)
+title: SystemConfig_V0 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 92d77d1ad3effdd2bf22a7df8112187b27666238
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24f0c579f4fb9c947ea02ff677cd433da3103cfc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908869"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105913"
 ---
-# <a name="systemconfig_v0-class"></a>SystemConfig \_ V0 (clase)
+# <a name="systemconfig_v0-class"></a>Clase SystemConfig \_ V0
 
 Esta clase es la clase primaria para los eventos de configuración de hardware.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,40 +36,40 @@ class SystemConfig_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **SystemConfig \_ V0** no define ningún miembro.
+La **clase SystemConfig \_ V0** no define ningún miembro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para los eventos de configuración de hardware en Windows XP, vea la clase [**HWConfig**](hwconfig.md) .
+Para los eventos de configuración de hardware en Windows XP, consulte la [**clase HWConfig.**](hwconfig.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace de MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**SystemConfig**](systemconfig.md)
 </dt> <dt>
 
-[**CPU de SystemConfig \_ V0 \_**](systemconfig-v0-cpu.md)
+[**SystemConfig \_ V0 \_ CPU**](systemconfig-v0-cpu.md)
 </dt> <dt>
 
 [**SystemConfig \_ V0 \_ LogDisk**](systemconfig-v0-logdisk.md)
 </dt> <dt>
 
-[**NIC de SystemConfig \_ V0 \_**](systemconfig-v0-nic.md)
+[**SystemConfig \_ V0 \_ NIC**](systemconfig-v0-nic.md)
 </dt> <dt>
 
 [**SystemConfig \_ V0 \_ PhyDisk**](systemconfig-v0-phydisk.md)

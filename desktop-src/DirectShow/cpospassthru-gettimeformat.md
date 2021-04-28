@@ -1,7 +1,7 @@
 ---
-description: 'El método GetTimeFormat recupera el formato de hora actual. Este método implementa el método IMediaSeeking:: GetTimeFormat.'
+description: 'Método CPosPassThru.GetTimeFormat: el método GetTimeFormat recupera el formato de hora actual. Este método implementa el método IMediaSeeking::GetTimeFormat.'
 ms.assetid: 445c1873-da6f-42be-a4cf-0c475c5f0723
-title: Método CPosPassThru. GetTimeFormat (Ctlutil. h)
+title: Método CPosPassThru.GetTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f7db1b46cfe2ac06dc43b52009043ae32676f154
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 903d1c6163d4cad5c5b9ca22213b02542bb3da49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661298"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085593"
 ---
-# <a name="cpospassthrugettimeformat-method"></a>CPosPassThru. GetTimeFormat, método
+# <a name="cpospassthrugettimeformat-method"></a>Método CPosPassThru.GetTimeFormat
 
-El `GetTimeFormat` método recupera el formato de hora actual. Este método implementa el método [**IMediaSeeking:: GetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-gettimeformat) .
+El `GetTimeFormat` método recupera el formato de hora actual. Este método implementa el [**método IMediaSeeking::GetTimeFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-gettimeformat)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT GetTimeFormat(
 *pFormat* 
 </dt> <dd>
 
-Puntero a una variable que recibe un GUID con formato de hora.
+Puntero a una variable que recibe un GUID de formato de hora.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,16 +59,16 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> <dt>
 
 [**GUID de formato de hora**](time-format-guids.md)

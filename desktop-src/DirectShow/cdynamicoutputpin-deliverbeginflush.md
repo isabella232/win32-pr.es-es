@@ -1,7 +1,7 @@
 ---
-description: El método DeliverBeginFlush solicita la clavija de entrada conectada para iniciar una operación de vaciado.
+description: 'Método CDynamicOutputPin.DeliverBeginFlush: el método DeliverBeginFlush solicita el pin de entrada conectado para iniciar una operación de vaciado.'
 ms.assetid: eafc3835-7696-480b-abc8-154938e19b15
-title: Método CDynamicOutputPin. DeliverBeginFlush (Amfilter. h)
+title: Método CDynamicOutputPin.DeliverBeginFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 242394a327b63fcc901b08f572096bf2f42238b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4158a3d6191325e8b647e4551133952d623f795
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670871"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099323"
 ---
-# <a name="cdynamicoutputpindeliverbeginflush-method"></a>CDynamicOutputPin. DeliverBeginFlush, método
+# <a name="cdynamicoutputpindeliverbeginflush-method"></a>Método CDynamicOutputPin.DeliverBeginFlush
 
-El `DeliverBeginFlush` método solicita la clavija de entrada conectada para iniciar una operación de vaciado.
+El `DeliverBeginFlush` método solicita el pin de entrada conectado para iniciar una operación de vaciado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
+Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CBaseOutputPin::D eliverbeginflush**](cbaseoutputpin-deliverbeginflush.md) . Establece el evento [**CDynamicOutputPin:: m \_ hStopEvent**](cdynamicoutputpin-m-hstopevent.md) .
+Este método invalida el [**método CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md) Establece el evento [**CDynamicOutputPin::m \_ hStopEvent.**](cdynamicoutputpin-m-hstopevent.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ Este método invalida el método [**CBaseOutputPin::D eliverbeginflush**](cbaseo
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

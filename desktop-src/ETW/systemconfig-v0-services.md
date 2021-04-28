@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de servicio.
+description: 'SystemConfig_V0_Services clase : esta clase es la clase de tipo de evento para los eventos de configuración de servicio.'
 ms.assetid: 1e6c2061-f1a2-4253-a0c4-4b45b2feceda
-title: SystemConfig_V0_Services (clase)
+title: SystemConfig_V0_Services clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6c061c6a0c4cbb3e807bcb3418155b1194fcfa28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b69ca7cf4ee4e16a5fbcb6a5f10c659f713ab458
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361463"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105933"
 ---
-# <a name="systemconfig_v0_services-class"></a>Clase de servicios de SystemConfig \_ V0 \_
+# <a name="systemconfig_v0_services-class"></a>SystemConfig \_ V0 \_ Services (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de configuración de servicio.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,20 +44,20 @@ class SystemConfig_V0_Services : SystemConfig_V0
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ \_ servicios de SystemConfig V0** tiene estos tipos de miembros:
+La **clase SystemConfig \_ V0 \_ Services** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ \_ servicios de SystemConfig V0** tiene estas propiedades.
+La **clase SystemConfig \_ V0 \_ Services** tiene estas propiedades.
 
 <dl> <dt>
 
 **DisplayName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -66,14 +66,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (2), **Max** (256)
 </dt> </dl>
 
-Nombre para mostrar del servicio. El nombre se conserva en las mayúsculas y minúsculas en el administrador de control de servicios. Sin embargo, las comparaciones de nombres para mostrar siempre se realizan sin distinción entre mayúsculas y minúsculas.
+Nombre para mostrar del servicio. El nombre se conserva entre mayúsculas y minúsculas en Service Control Manager. Sin embargo, las comparaciones de nombres para mostrar siempre se realizan sin distinción entre mayúsculas y minúsculas.
 
 </dd> <dt>
 
 **ProcessId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -89,7 +89,7 @@ Identificador del proceso en el que se ejecuta el servicio.
 **ProcessName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -102,10 +102,10 @@ Nombre del proceso en el que se ejecuta el servicio.
 
 </dd> <dt>
 
-**ServiceName**
+**Servicename**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -122,18 +122,18 @@ Identificador único del servicio. El identificador proporciona una indicación 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemConfig \_ v0**](systemconfig-v0.md)
+[**SystemConfig \_ V0**](systemconfig-v0.md)
 </dt> </dl>
 
  

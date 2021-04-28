@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CSeekingPassThru.CSeekingPassThru: método constructor.'
 ms.assetid: e31253fc-b365-4414-9dee-906d4c41d16e
-title: Constructor CSeekingPassThru. CSeekingPassThru (Seekpt. h)
+title: Constructor CSeekingPassThru.CSeekingPassThru (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a93ed9706762b9a1672bfae85550ee4c2aceeead
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cab9d6329f5175c96a3bfc5962ca5a555fe62b5d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670403"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085383"
 ---
-# <a name="cseekingpassthrucseekingpassthru-constructor"></a>Constructor CSeekingPassThru. CSeekingPassThru
+# <a name="cseekingpassthrucseekingpassthru-constructor"></a>Constructor CSeekingPassThru.CSeekingPassThru
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ CSeekingPassThru(
 *pName* 
 </dt> <dd>
 
-Cadena que contiene el nombre del objeto. Vea [**CBaseObject**](cbaseobject.md) para obtener más información.
+Cadena que contiene el nombre del objeto. Vea [**CBaseObject para**](cbaseobject.md) obtener más información.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . ignorado.
+Puntero a un **valor HRESULT.** ignorado.
 
 </dd> </dl>
 
@@ -71,16 +71,16 @@ Puntero a un valor **HRESULT** . ignorado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Seekpt. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Seekpt.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CSeekingPassThru**](cseekingpassthru.md)
+[**CSeekingPassThru (clase)**](cseekingpassthru.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de error de TCP/IP. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'TcpIp_Fail clase : esta clase es la clase de tipo de evento para los eventos de error de TCP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 1fe20b8c-b8f1-4db0-af78-1ebfc40b2bbd
-title: TcpIp_Fail (clase)
+title: TcpIp_Fail clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a89d882509ea766e62c8b78e6c2a5fa769fbcca9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 897c42a1c2530d3e41d1f937d5d59356a2913e2b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984795"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105853"
 ---
-# <a name="tcpip_fail-class"></a>TcpIp \_ FAIL (clase)
+# <a name="tcpip_fail-class"></a>TcpIp \_ Fail (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de error de TCP/IP.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,53 +40,53 @@ class TcpIp_Fail : TcpIp
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ error de TCPIP** tiene estos tipos de miembros:
+La **clase TcpIp \_ Fail** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ error de TCPIP** tiene estas propiedades.
+La **clase TcpIp \_ Fail** tiene estas propiedades.
 
 <dl> <dt>
 
-**FailureCode**
+**Código de error**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Motivo del error. Puede ser uno de los siguientes códigos:
+Motivo del error. Puede ser uno de los códigos siguientes:
 
 <dl> <dt>
 
-<span id="ERROR_INSUFFICIENT_RESOURCES"></span><span id="error_insufficient_resources"></span>**Error \_ de \_Recursos INsuficientes** (1)
+<span id="ERROR_INSUFFICIENT_RESOURCES"></span><span id="error_insufficient_resources"></span>**ERROR \_ RECURSOS \_ INSUFICIENTES** (1)
 </dt> <dt>
 
-<span id="ERROR_TOO_MANY_ADDRESSES"></span><span id="error_too_many_addresses"></span>**Error \_ de DEMASIADAs \_ \_ direcciones** (2)
+<span id="ERROR_TOO_MANY_ADDRESSES"></span><span id="error_too_many_addresses"></span>**ERROR \_ DEMASIADAS \_ \_ DIRECCIONES** (2)
 </dt> <dt>
 
-<span id="ERROR_ADDRESS_EXISTS"></span><span id="error_address_exists"></span>**Error \_ de \_Existe la dirección** (3)
+<span id="ERROR_ADDRESS_EXISTS"></span><span id="error_address_exists"></span>**ERROR \_ ADDRESS \_ EXISTS** (3)
 </dt> <dt>
 
-<span id="ERROR_INVALID_ADDRESS"></span><span id="error_invalid_address"></span>**Error \_ de \_Dirección no válida** (4)
+<span id="ERROR_INVALID_ADDRESS"></span><span id="error_invalid_address"></span>**ERROR \_ DIRECCIÓN \_ NO VÁLIDA** (4)
 </dt> <dt>
 
-<span id="ERROR_OTHER"></span><span id="error_other"></span>**Error \_ de OTROS** (5)
+<span id="ERROR_OTHER"></span><span id="error_other"></span>**ERROR \_ OTHER** (5)
 </dt> <dt>
 
-<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**Error \_ de \_ \_ Existe la dirección TIMEWAIT** (6)
+<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**ERROR \_ TIMEWAIT \_ ADDRESS \_ EXIST** (6)
 </dt> </dl>
 
 </dd> <dt>
 
-**Protocolo**
+**Proto**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -96,10 +96,10 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 
 
-| Value                                                                                                                                                                                                  | Significado                                                            |
+| Valor                                                                                                                                                                                                  | Significado                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | Familia de direcciones del Protocolo de Internet versión 4 (IPv4).<br/>  |
-| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | Familia de direcciones del Protocolo de Internet versión 6 (IPv6).<br/> |
+| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | La familia de direcciones IPv4 (Protocolo de Internet versión 4).<br/>  |
+| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | La familia de direcciones IPv6 (Protocolo de Internet versión 6).<br/> |
 
 
 
@@ -111,18 +111,18 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Luego**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> </dl>
 
  

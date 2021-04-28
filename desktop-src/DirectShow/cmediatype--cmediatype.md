@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CMediaType.~CMediaType: método Destructor.'
 ms.assetid: 92375e95-adfb-414b-abbb-e827db2186ac
-title: CMediaType. ~ CMediaType (mtype. h)
+title: Destructor CMediaType.~CMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 26efde8fe7d3c3efd0f29c77945011cef5834829
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c7a00d4a91f4fe871565b25f165e81df0f533ac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670322"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099093"
 ---
-# <a name="cmediatypecmediatype-destructor"></a>CMediaType. ~ CMediaType (destructor)
+# <a name="cmediatypecmediatype-destructor"></a>Destructor CMediaType.~CMediaType
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ Método de destructor.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El destructor llama a la función [**FreeMediaType**](freemediatype.md) en sí misma.
+El destructor llama a [**la función FreeMediaType**](freemediatype.md) en sí mismo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,16 +46,16 @@ El destructor llama a la función [**FreeMediaType**](freemediatype.md) en sí m
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Streams.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

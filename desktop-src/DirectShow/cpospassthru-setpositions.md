@@ -1,7 +1,7 @@
 ---
-description: 'El método SetPositions establece la posición actual y la posición de detención. Este método implementa el método IMediaSeeking:: SetPositions.'
+description: 'Método CPosPassThru.SetPositions: el método SetPositions establece la posición actual y la posición de detenerse. Este método implementa el método IMediaSeeking::SetPositions.'
 ms.assetid: d4425221-e20f-4e51-8a33-a74fa21f9117
-title: Método CPosPassThru. SetPositions (Ctlutil. h)
+title: Método CPosPassThru.SetPositions (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 409b4a63f02e6751f987a53dad2836adecd27607
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f8c61f24ab51ffe7fa161830ef9a0c8bdd167256
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661292"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085483"
 ---
-# <a name="cpospassthrusetpositions-method"></a>CPosPassThru. SetPositions, método
+# <a name="cpospassthrusetpositions-method"></a>Método CPosPassThru.SetPositions
 
-El `SetPositions` método establece la posición actual y la posición de detención. Este método implementa el método [**IMediaSeeking:: SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions) .
+El `SetPositions` método establece la posición actual y la posición de detenerse. Este método implementa el [**método IMediaSeeking::SetPositions.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,27 +55,27 @@ Puntero a una variable que especifica la posición actual, en unidades del forma
 *dwCurrentFlags* 
 </dt> <dd>
 
-Combinación bit a bit de marcas. Vea [**IMediaSeeking:: SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions) para obtener más información.
+Combinación bit a bit de marcas. Consulte [**IMediaSeeking::SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions) para obtener más información.
 
 </dd> <dt>
 
 *pStop* 
 </dt> <dd>
 
-Puntero a una variable que especifica la hora de detención, en unidades del formato de hora actual.
+Puntero a una variable que especifica la hora de detenerse, en unidades del formato de hora actual.
 
 </dd> <dt>
 
 *dwStopFlags* 
 </dt> <dd>
 
-Combinación bit a bit de marcas. Vea [**IMediaSeeking:: SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions) para obtener más información.
+Combinación bit a bit de marcas. Consulte [**IMediaSeeking::SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions) para obtener más información.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,16 +83,16 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

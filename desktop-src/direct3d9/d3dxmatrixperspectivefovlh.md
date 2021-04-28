@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz de proyección de perspectiva a la izquierda basada en un campo visual.
+description: 'Función D3DXMatrixPerspectiveFovLH (D3dx9math.h): crea una matriz de proyección de perspectiva de la izquierda basada en un campo de vista.'
 ms.assetid: 90328798-f124-4b61-90a9-971946066b02
-title: Función D3DXMatrixPerspectiveFovLH (D3dx9math. h)
+title: Función D3DXMatrixPerspectiveFovLH (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 91b25a2e319236485c2c290b55acb94954a4791d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: eec478fec30567fbf301054ddfa60f1689bfee8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280441"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118353"
 ---
-# <a name="d3dxmatrixperspectivefovlh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveFovLH (D3dx9math. h)
+# <a name="d3dxmatrixperspectivefovlh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveFovLH (D3dx9math.h)
 
 Crea una matriz de proyección de perspectiva a la izquierda basada en un campo visual.
 
@@ -49,43 +49,43 @@ D3DXMATRIX* D3DXMatrixPerspectiveFovLH(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*fovy* \[ de\]
+*fovy* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Campo de vista en la dirección y, en radianes.
 
 </dd> <dt>
 
-*Aspecto* \[ de de\]
+*Aspecto* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Relación de aspecto, definida como el ancho del espacio de la vista dividido por el alto.
+Relación de aspecto, definida como ancho del espacio de vista dividido por alto.
 
 </dd> <dt>
 
-*Zn* \[ de\]
+*zn* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z del plano de vista próximo.
+Valor Z del plano de vista cercano.
 
 </dd> <dt>
 
-*ZF* \[ de\]
+*y* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z del plano de vista lejano.
+Valor Z del plano de vista lejana.
 
 </dd> </dl>
 
@@ -93,15 +93,15 @@ Valor Z del plano de vista lejano.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una estructura [**D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva izquierda.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva con la mano izquierda.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXMatrixPerspectiveFovLH** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la función **D3DXMatrixPerspectiveFovLH** se puede usar como parámetro para otra función.
 
-Para cambiar el eje de relación de aspecto, use la fórmula de cálculo: fovy = 2 * Math. atan (Math. tan (fovy * 0,5)/aspecto). Como alternativa, agregue las variables de relación de aspecto X e Y en la estructura para escalar el espacio de la vista vertical: fovy = 2 * Math. atan (Math. tan (fovy * 0,5)/Aspect), aspecto = aspectX * aspecto Y.
+Para cambiar el eje de relación de aspecto, use la fórmula de cálculo: fovy = 2 * math.atan(math.tan(fovy * 0.5) / aspect). Como alternativa, agregue variables de relación de aspecto X e Y en la estructura para escalar el espacio de vista vertical: fovy = 2 * math.atan(math.tan(fovy * 0.5) / aspectY), aspect = aspectX * aspect Y.
 
-Esta función calcula la matriz devuelta como se muestra a continuación:
+Esta función calcula la matriz devuelta como se muestra:
 
 
 ```
@@ -123,12 +123,12 @@ xScale = yScale / aspect ratio
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

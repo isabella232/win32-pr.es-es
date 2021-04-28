@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CSource.~CSource: método Destructor.'
 ms.assetid: 0792c355-5eb6-4747-b4c2-433ebefa1d08
-title: CSource. ~ CSource (Source. h)
+title: Destructor CSource.~CSource (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 898aec23f34ea9e8bcb9e539069d6a213e1b0e8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f6bfeda4e415c72bfcbac50f4e0d2904553bdcc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670402"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098883"
 ---
-# <a name="csourcecsource-destructor"></a>CSource. ~ CSource (destructor)
+# <a name="csourcecsource-destructor"></a>Destructor CSource.~CSource
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ Método de destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CSource**](csource.md)
+[**CSource (clase)**](csource.md)
 </dt> </dl>
 
  
