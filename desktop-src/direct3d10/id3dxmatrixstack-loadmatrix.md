@@ -1,7 +1,7 @@
 ---
-description: Carga la matriz especificada en la matriz actual.
+description: 'Método ID3DXMATRIXStack::LoadMatrix (D3DX10.h): carga la matriz dada en la matriz actual.'
 ms.assetid: b898f344-db90-48e0-b457-0eb8d7b31dca
-title: 'ID3DXMATRIXStack:: LoadMatrix (método) (D3DX10. h)'
+title: Método ID3DXMATRIXStack::LoadMatrix (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ce6b99abf4c9a82a8b9d1c7643a1098d19e18c15
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 20c80f578abd5e35c89f3ecccedd2ab7fd59e812
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362802"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107963"
 ---
-# <a name="id3dxmatrixstackloadmatrix-method-d3dx10h"></a>ID3DXMATRIXStack:: LoadMatrix (método) (D3DX10. h)
+# <a name="id3dxmatrixstackloadmatrix-method-d3dx10h"></a>Método ID3DXMATRIXStack::LoadMatrix (D3DX10.h)
 
-Carga la matriz especificada en la matriz actual.
+Carga la matriz dada en la matriz actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ HRESULT LoadMatrix(
 
 <dl> <dt>
 
-*p. m* \[ de\]
+*pM* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -53,9 +53,9 @@ Puntero a la estructura D3DXMATRIX cargada en la matriz actual.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Tenga en cuenta que este método no agrega un elemento a la pila; en su lugar, reemplaza la matriz actual por la matriz proporcionada.
 
@@ -65,19 +65,19 @@ Tenga en cuenta que este método no agrega un elemento a la pila; en su lugar, r
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DXMatrixStack](d3d10-id3dxmatrixstack.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

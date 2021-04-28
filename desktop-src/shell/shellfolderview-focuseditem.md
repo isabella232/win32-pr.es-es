@@ -1,7 +1,7 @@
 ---
-description: Obtiene un objeto carpeta que representa el elemento que tiene el foco de entrada.
+description: 'Propiedad ShellFolderView.FocusedItem: obtiene un objeto FolderItem que representa el elemento que tiene el foco de entrada.'
 ms.assetid: ca88801d-c8fa-4c1c-9294-f52eada40ff6
-title: Propiedad ShellFolderView. FocusedItem (Shldisp. h)
+title: Propiedad ShellFolderView.FocusedItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 26f0f24cddd3b9299ec70b41160579659c71b5bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f661f555f1492a3323fa3749a8dffd6f00f411d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278503"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104013"
 ---
-# <a name="shellfolderviewfocuseditem-property"></a>Propiedad ShellFolderView. FocusedItem
+# <a name="shellfolderviewfocuseditem-property"></a>Propiedad ShellFolderView.FocusedItem
 
-Obtiene un objeto [**carpeta**](folderitem.md) que representa el elemento que tiene el foco de entrada.
+Obtiene un [**objeto FolderItem**](folderitem.md) que representa el elemento que tiene el foco de entrada.
 
 Esta propiedad es de solo lectura.
 
@@ -37,15 +37,15 @@ objFocusedItem = ShellFolderView.FocusedItem
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el objeto de elemento con foco.
+Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el objeto de elemento centrado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo se puede llamar a **FocusedItem** en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método en JScript insertado en HTML.
 
 
 ```JScript
@@ -97,13 +97,13 @@ En el ejemplo siguiente se muestra el uso correcto de este método en JScript in
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

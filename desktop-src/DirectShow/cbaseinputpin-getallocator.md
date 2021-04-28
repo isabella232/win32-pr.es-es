@@ -1,7 +1,7 @@
 ---
-description: 'El método GetAllocator recupera el asignador de memoria propuesto por este pin. Este método implementa el método IMemInputPin:: GetAllocator.'
+description: 'Método CBaseInputPin.GetAllocator: el método GetAllocator recupera el asignador de memoria propuesto por este pin. Este método implementa el método IMemInputPin::GetAllocator.'
 ms.assetid: 07bc77f8-a877-4403-b424-20bda715a818
-title: Método CBaseInputPin. GetAllocator (Amfilter. h)
+title: Método CBaseInputPin.GetAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 098738fc63ba1834b1eefb4b2518e3309db35c43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72aaf6bb4c1ff8bf108086a8a42a618267c4bc06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660344"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099723"
 ---
-# <a name="cbaseinputpingetallocator-method"></a>CBaseInputPin. GetAllocator, método
+# <a name="cbaseinputpingetallocator-method"></a>CBaseInputPin.GetAllocator (método)
 
-El `GetAllocator` método recupera el asignador de memoria propuesto por este pin. Este método implementa el método [**IMemInputPin:: GetAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) .
+El `GetAllocator` método recupera el asignador de memoria propuesto por este pin. Este método implementa el [**método IMemInputPin::GetAllocator.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ HRESULT GetAllocator(
 *ppAllocator* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador.
+Dirección de una variable que recibe un puntero a la interfaz [**IMemAllocator del**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) asignador.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve \_ si es correcto, o un código de error de la función **CoCreateInstance** .
+Devuelve S \_ OK si se realiza correctamente o un código de error de la función **CoCreateInstance.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método crea un objeto [**CMemAllocator**](cmemallocator.md) . Invalide este método si el filtro usa un asignador de un PIN de nivel inferior o un asignador personalizado.
+Este método crea un [**objeto CMemAllocator.**](cmemallocator.md) Invalide este método si el filtro usa un asignador de un pin de nivel inferior o un asignador personalizado.
 
-Si el método se ejecuta correctamente, la interfaz **IMemAllocator** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
+Si el método se realiza correctamente, la **interfaz IMemAllocator** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ Si el método se ejecuta correctamente, la interfaz **IMemAllocator** tiene un r
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Solicita un cambio de estado.
+description: 'Método RequestStateChange de la Msvm_Memory: solicita un cambio de estado.'
 ms.assetid: 836ee3a1-e28e-4f84-8e1c-09f4a2ff0a25
-title: Método RequestStateChange de la clase Msvm_Memory
+title: Método RequestStateChange de la Msvm_Memory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 761a486f21f6c1cd8c61978038cc2d37bba8c288
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c168e3be7350b1422edd9ac87556aab886daf49c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361410"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118863"
 ---
-# <a name="requeststatechange-method-of-the-msvm_memory-class"></a>Método RequestStateChange de la \_ clase de memoria MSVM
+# <a name="requeststatechange-method-of-the-msvm_memory-class"></a>Método RequestStateChange de la clase Memory de Msvm \_
 
 Solicita un cambio de estado.
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la propiedad **RequestedState** de la instancia de si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los valores siguientes.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -71,7 +71,7 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (6)
+**Sin** conexión (6)
 
 
 </dt> <dd></dd> <dt>
@@ -85,14 +85,14 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Diferir** (8)
+**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -120,24 +120,24 @@ Modo **inactivo** (9)
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ ConcreteJob de CIM**](cim-concretejob.md) creado para realizar el seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Un período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se realice la transición al nuevo estado. El formato de intervalo debe usarse para especificar el TimeoutPeriod. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar timeoutPeriod. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
 
-Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá el código de retorno "uso del parámetro de tiempo de espera no admitido".
+Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (No se admite el parámetro de tiempo de espera).
 
 </dd> </dl>
 
@@ -157,21 +157,21 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Memoria de MSVM \_**](msvm-memory.md)
+[**Memoria de \_ Msvm**](msvm-memory.md)
 </dt> </dl>
 
  

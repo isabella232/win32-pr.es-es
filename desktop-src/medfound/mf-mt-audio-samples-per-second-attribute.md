@@ -1,17 +1,17 @@
 ---
-description: Número de muestras de audio por segundo en un tipo de medio de audio.
+description: 'MF_MT_AUDIO_SAMPLES_PER_SECOND atributo : número de muestras de audio por segundo en un tipo de medio de audio.'
 ms.assetid: f640016d-595e-4b20-8ce8-23a029c2b064
-title: MF_MT_AUDIO_SAMPLES_PER_SECOND atributo (mfapi. h)
+title: MF_MT_AUDIO_SAMPLES_PER_SECOND atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5080f6df87bafe8d4ee86e7b25332a12214ff3cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93a91b44ba4c55bf2512eefddfe3bc7a18d2eddd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908459"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093103"
 ---
-# <a name="mf_mt_audio_samples_per_second-attribute"></a>Ejemplos de audio de MF \_ MT \_ \_ \_ por \_ segundo
+# <a name="mf_mt_audio_samples_per_second-attribute"></a>Atributo MF \_ MT AUDIO SAMPLES PER \_ \_ \_ \_ SECOND
 
 Número de muestras de audio por segundo en un tipo de medio de audio.
 
@@ -19,35 +19,35 @@ Número de muestras de audio por segundo en un tipo de medio de audio.
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo corresponde al miembro **nSamplesPerSec** de la estructura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+Este atributo se corresponde con el **miembro nSamplesPerSec** de la [**estructura DESATEX.**](/previous-versions/dd757713(v=vs.85))
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
@@ -56,7 +56,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 [Atributos de tipo de medio](media-type-attributes.md)
 </dt> <dt>
 
-[**\_muestras de audio Float de MF MT \_ \_ \_ \_ por \_ segundo**](mf-mt-audio-float-samples-per-second-attribute.md)
+[**MUESTRAS \_ DE AUDIO FLOAT DE MF MT POR \_ \_ \_ \_ \_ SEGUNDO**](mf-mt-audio-float-samples-per-second-attribute.md)
 </dt> </dl>
 
  

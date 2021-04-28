@@ -1,7 +1,7 @@
 ---
-description: Muestra el cuadro de diálogo cerrar Windows. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar apagar.
+description: 'Método IShellDispatch.ShutdownWindows: muestra el cuadro de diálogo Apagar Windows. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Apagar.'
 ms.assetid: 3C4F6579-6398-4af4-8911-FE22555B0ABC
-title: Método IShellDispatch. ShutdownWindows (Shldisp. h)
+title: Método IShellDispatch.ShutdownWindows (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9c111e1b740857337953cdcdf81735a8c0568ba5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5146e17d17ba0f082ad2d80f91ae05c176cf44ed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997288"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100473"
 ---
-# <a name="ishelldispatchshutdownwindows-method"></a>IShellDispatch. ShutdownWindows, método
+# <a name="ishelldispatchshutdownwindows-method"></a>Método IShellDispatch.ShutdownWindows
 
-Muestra el cuadro de diálogo **cerrar Windows** . Esto es lo mismo que hacer clic en el menú **Inicio** y seleccionar **apagar**.
+Muestra el **cuadro de diálogo Apagar Windows.** Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,15 +55,15 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. ShutdownWindows**](shell-shutdownwindows.md) .
+Este método se implementa y se accede a través del [**método Shell.ShutdownWindows.**](shell-shutdownwindows.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso de **ShutdownWindows** en JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso **de ShutdownWindows** en JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -117,13 +117,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

@@ -1,28 +1,28 @@
 ---
 title: Códigos de error en COM
-description: .
+description: Códigos de error en COM
 ms.assetid: ed430863-f416-4611-81b4-0c31d819944a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f082afbabf367179b02c0fb3b0fc979dcda664a4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 733cbe0799a22b0f0c01ee9cb226ad7e0b8660da
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103790191"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103963"
 ---
 # <a name="error-codes-in-com"></a>Códigos de error en COM
 
-Para indicar si se ha realizado correctamente o no, las funciones y los métodos COM devuelven un valor de tipo **HRESULT**. Un **valor HRESULT** es un entero de 32 bits. El bit de orden superior de **HRESULT** indica que el resultado es correcto o incorrecto. Cero (0) indica que se ha realizado correctamente y 1 indica un error.
+Para indicar que se ha hecho correctamente o no, los métodos COM y las funciones devuelven un valor de tipo **HRESULT**. Un **valor HRESULT** es un entero de 32 bits. El bit de orden superior del **valor HRESULT** indica que se ha hecho correctamente o no. Cero (0) indica que se ha hecho correctamente y 1 indica error.
 
-Esto produce los siguientes intervalos numéricos:
+Esto genera los siguientes intervalos numéricos:
 
--   Códigos de éxito: 0X0 – 0x7FFFFFFF.
--   Códigos de error: 0x80000000 – 0xFFFFFFFF.
+-   Códigos de éxito: 0x0–0x7FFFFFFF.
+-   Códigos de error: 0x80000000–0xFFFFFFFF.
 
-Un número pequeño de métodos COM no devuelve un valor **HRESULT** . Por ejemplo, los métodos [**AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) y [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) devuelven valores Long sin signo. Pero todos los métodos COM que devuelven un código de error lo hace devolviendo un valor **HRESULT** .
+Un pequeño número de métodos COM no devuelve un **valor HRESULT.** Por ejemplo, los [**métodos AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) [**y Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) devuelven valores long sin signo. Pero todos los métodos COM que devuelven un código de error lo hace devolviendo un **valor HRESULT.**
 
-Para comprobar si un método COM se realiza correctamente, examine el bit de orden superior del **HRESULT** devuelto. Los encabezados de Windows SDK proporcionan dos macros que facilitan esta tarea: la macro [**Succeeded**](/windows/desktop/api/winerror/nf-winerror-succeeded) y la macro [**failed**](/windows/desktop/api/winerror/nf-winerror-failed) . La macro **Succeeded** devuelve **true** si un **valor HRESULT** es un código de operación correcta y **false** si es un código de error. En el ejemplo siguiente se comprueba si [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) se realiza correctamente.
+Para comprobar si un método COM se realiza correctamente, examine el bit de orden superior del **HRESULT devuelto.** Los Windows SDK proporcionan dos macros que facilitan esta tarea: la macro [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) y la [**macro FAILED.**](/windows/desktop/api/winerror/nf-winerror-failed) La **macro SUCCEEDED** devuelve **TRUE si** un **HRESULT** es un código correcto y **FALSE** si es un código de error. En el ejemplo siguiente se comprueba [**si CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) se realiza correctamente.
 
 
 ```C++
@@ -41,7 +41,7 @@ else
 
 
 
-A veces resulta más cómodo probar la condición inversa. La macro [**failed**](/windows/desktop/api/winerror/nf-winerror-failed) hace lo contrario de [**Succeeded**](/windows/desktop/api/winerror/nf-winerror-succeeded). Devuelve **true** para un código de error y **false** para un código de éxito.
+A veces resulta más conveniente probar la condición inversa. La [**macro FAILED**](/windows/desktop/api/winerror/nf-winerror-failed) hace lo contrario que [**SUCCEEDED.**](/windows/desktop/api/winerror/nf-winerror-succeeded) Devuelve **TRUE para** un código de error y **FALSE para** un código correcto.
 
 
 ```C++
@@ -60,12 +60,12 @@ else
 
 
 
-Más adelante en este módulo, veremos algunos consejos prácticos sobre cómo estructurar el código para controlar los errores de COM. (Vea [control de errores en com](error-handling-in-com.md)).
+Más adelante en este módulo, se verán algunos consejos prácticos sobre cómo estructurar el código para controlar los errores COM. (Consulte [Control de errores en COM).](error-handling-in-com.md)
 
 ## <a name="next"></a>Siguientes
 
 [Crear un objeto en COM](creating-an-object-in-com.md)
 
- 
+ 
 
- 
+ 

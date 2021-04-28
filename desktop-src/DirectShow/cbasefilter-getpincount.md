@@ -1,7 +1,7 @@
 ---
-description: El método GetPinCount recupera el número de clavijas.
+description: 'Método CBaseFilter.GetPinCount: el método GetPinCount recupera el número de pines.'
 ms.assetid: 6cbeb123-d899-4f13-8b40-5666adec610f
-title: Método CBaseFilter. GetPinCount (Amfilter. h)
+title: Método CBaseFilter.GetPinCount (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8da1cbc22a49b149bdccc36c3b854b44101b9bbc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0081b4cec45ed4cac5b4f0883032631983824cec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661089"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099793"
 ---
-# <a name="cbasefiltergetpincount-method"></a>CBaseFilter. GetPinCount, método
+# <a name="cbasefiltergetpincount-method"></a>Método CBaseFilter.GetPinCount
 
-El `GetPinCount` método recupera el número de clavijas.
+El `GetPinCount` método recupera el número de pines.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de clavijas.
+Devuelve el número de pines.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase derivada debe implementar este método virtual puro. Devuelve el número de clavijas que están disponibles actualmente en este filtro. Los filtros pueden crear o destruir PIN dinámicamente.
+La clase derivada debe implementar este método virtual puro. Devuelve el número de pines que están disponibles actualmente en este filtro. Los filtros pueden crear o destruir de forma dinámica los pines.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ La clase derivada debe implementar este método virtual puro. Devuelve el númer
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

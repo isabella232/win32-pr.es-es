@@ -1,7 +1,7 @@
 ---
-description: El método GetMediaTime recupera las marcas de tiempo en el ejemplo actual.
+description: 'Método CPosPassThru.GetMediaTime: el método GetMediaTime recupera las marcas de tiempo en el ejemplo actual.'
 ms.assetid: 36f3b6d3-b884-4168-94f3-f334a5056c7d
-title: Método CPosPassThru. GetMediaTime (Ctlutil. h)
+title: Método CPosPassThru.GetMediaTime (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b2748d986f121a38041155dcd43f13a647916486
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 328a0ae09c80a687863cfedb994f5a80cebebf14
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679136"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095263"
 ---
-# <a name="cpospassthrugetmediatime-method"></a>CPosPassThru. GetMediaTime, método
+# <a name="cpospassthrugetmediatime-method"></a>Método CPosPassThru.GetMediaTime
 
 El `GetMediaTime` método recupera las marcas de tiempo en el ejemplo actual.
 
@@ -59,11 +59,11 @@ Puntero a una variable que recibe la hora de finalización, en unidades del form
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve E \_ Fail.
+Devuelve E \_ FAIL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Invalide este método si el filtro almacena en caché las marcas de tiempo de los ejemplos que recibe.
+Invalide este método si el filtro almacena en caché las marcas de tiempo en los ejemplos que recibe.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,16 +71,16 @@ Invalide este método si el filtro almacena en caché las marcas de tiempo de lo
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

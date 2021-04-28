@@ -1,7 +1,7 @@
 ---
-description: El método CurrentMediaType recupera el tipo de medio para la conexión del PIN actual.
+description: 'Método CTransformOutputPin.CurrentMediaType: el método CurrentMediaType recupera el tipo de medio para la conexión de pin actual.'
 ms.assetid: 1c42664d-160a-4f76-9d7a-40414c5c1704
-title: Método CTransformOutputPin. CurrentMediaType (Transfrm. h)
+title: Método CTransformOutputPin.CurrentMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ee9ee15c3cda2baf8ab8d6e9cb0ec3c797e91a1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0cb40310afb1c22d00a5394c0a0667fc8d22eb03
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680747"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094913"
 ---
-# <a name="ctransformoutputpincurrentmediatype-method"></a>CTransformOutputPin. CurrentMediaType, método
+# <a name="ctransformoutputpincurrentmediatype-method"></a>Método CTransformOutputPin.CurrentMediaType
 
-El `CurrentMediaType` método recupera el tipo de medio para la conexión del PIN actual.
+El `CurrentMediaType` método recupera el tipo de medio para la conexión de pin actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una referencia a la variable miembro [**CBasePin:: m \_ MT**](cbasepin-m-mt.md) .
+Devuelve una referencia a la variable [**miembro CBasePin::m \_ mt.**](cbasepin-m-mt.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve una referencia a la variable miembro [**CBasePin:: m \_ MT**](cbasepin-
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

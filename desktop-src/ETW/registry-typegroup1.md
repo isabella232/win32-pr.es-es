@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos del registro. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Registry_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos del Registro. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 8d0e9d97-3837-46da-a217-13e943580352
-title: Registry_TypeGroup1 (clase)
+title: Registry_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bfbf0157141473be4cc2460659912dc662ef7c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d86412a950246bee4f9a692ab80e91b99d945c20
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984567"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106253"
 ---
-# <a name="registry_typegroup1-class"></a>\_Clase Registry TypeGroup1
+# <a name="registry_typegroup1-class"></a>Clase \_ Registry TypeGroup1
 
-Esta clase es la clase de tipo de evento para los eventos del registro.
+Esta clase es la clase de tipo de evento para los eventos del Registro.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,29 +46,29 @@ class Registry_TypeGroup1 : Registry
 
 ## <a name="members"></a>Miembros
 
-La clase **Registry \_ TypeGroup1** tiene estos tipos de miembros:
+La **clase \_ Registry TypeGroup1** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **Registry \_ TypeGroup1** tiene estas propiedades.
+La **clase \_ Registry TypeGroup1** tiene estas propiedades.
 
 <dl> <dt>
 
 Índice
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Índice de la subclave de la operación del registro (por ejemplo, EnumerateKey).
+Índice de subclave para la operación del Registro (por ejemplo, EnumerateKey).
 
 </dd> <dt>
 
@@ -81,26 +81,26 @@ Tipo de datos: **sint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
-Hora inicial de la operación del registro.
+Hora inicial de la operación del Registro.
 
 </dd> <dt>
 
 KeyHandle
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
-Identificador de la clave del registro.
+Identificador de la clave del Registro.
 
 </dd> <dt>
 
@@ -113,26 +113,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nombre de la clave del Registro.
 
 </dd> <dt>
 
-Estado
+Status
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Valor de NTSTATUS de la operación del registro.
+Valor NTSTATUS de la operación del Registro.
 
 </dd> </dl>
 
@@ -140,14 +140,14 @@ Valor de NTSTATUS de la operación del registro.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

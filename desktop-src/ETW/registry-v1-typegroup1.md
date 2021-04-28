@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos del registro. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Registry_V1_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos del Registro. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 59c455a0-af7e-4fd5-9af4-07ff72ee0545
-title: Registry_V1_TypeGroup1 (clase)
+title: Registry_V1_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2cd77ad0c12769c657b4e7c23c1fe1993a248481
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab0326f92d1b084f471f3dc1b57322f69aa645fd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908101"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106163"
 ---
-# <a name="registry_v1_typegroup1-class"></a>\_ \_ Clase TypeGroup1 del registro v1
+# <a name="registry_v1_typegroup1-class"></a>Clase \_ TypeGroup1 del Registro \_ V1
 
-Esta clase es la clase de tipo de evento para los eventos del registro.
+Esta clase es la clase de tipo de evento para los eventos del Registro.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,13 +46,13 @@ class Registry_V1_TypeGroup1 : Registry
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ TypeGroup1 del registro v1** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup1 del** Registro V1 tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 del registro v1** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 de Registry V1** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,42 +65,42 @@ Tipo de datos: **sint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Tiempo transcurrido de la operación del registro.
+Tiempo transcurrido de la operación del Registro.
 
 </dd> <dt>
 
 Índice
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
-Índice de la subclave de la operación del registro (por ejemplo, EnumerateKey).
+Índice de subclave para la operación del Registro (por ejemplo, EnumerateKey).
 
 </dd> <dt>
 
 KeyHandle
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador de la clave del registro.
+Identificador de la clave del Registro.
 
 </dd> <dt>
 
@@ -113,26 +113,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nombre de la clave del Registro.
 
 </dd> <dt>
 
-Estado
+Status
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Valor de NTSTATUS de la operación del registro.
+Valor NTSTATUS de la operación del Registro.
 
 </dd> </dl>
 
@@ -140,21 +140,21 @@ Valor de NTSTATUS de la operación del registro.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Registro**](registry.md)
 </dt> <dt>
 
-[**Registro \_ v1**](registry-v1.md)
+[**Registro \_ V1**](registry-v1.md)
 </dt> </dl>
 
  

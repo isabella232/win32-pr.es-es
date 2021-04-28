@@ -1,7 +1,7 @@
 ---
-description: Describe los valores de color.
+description: 'Estructura D3DXCOLOR (D3DX10Math.h): describe los valores de color.'
 ms.assetid: bb5e36c8-4f24-41b5-84e7-3034e497721d
-title: Estructura D3DXCOLOR (D3DX10Math. h)
+title: Estructura D3DXCOLOR (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 436a20fa8ed6f57062f268be2b71f7e350cb2854
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e919f86cebba1526908020881b73c01e02b7df3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649440"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103563"
 ---
-# <a name="d3dxcolor-structure-d3dx10mathh"></a>Estructura D3DXCOLOR (D3DX10Math. h)
+# <a name="d3dxcolor-structure-d3dx10mathh"></a>Estructura D3DXCOLOR (D3DX10Math.h)
 
 Describe los valores de color.
 
@@ -45,7 +45,7 @@ typedef struct D3DXCOLOR {
 **r**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ Componente rojo del color.
 **g**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Componente verde del color.
 **b**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -75,10 +75,10 @@ Componente azul del color.
 
 </dd> <dt>
 
-**un**
+**Un**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -92,15 +92,15 @@ Componente alfa del color.
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

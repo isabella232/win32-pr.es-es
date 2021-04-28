@@ -1,15 +1,15 @@
 ---
 title: Funciones strsafe
-description: .
+description: Funciones strsafe
 ms.assetid: 3590dd8d-3a88-4dde-a5fe-f10e12354919
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b31824788b68a7ec789c6d274b2a368eda1cfc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 292e6f83175848338a6804c9787efb4660da9f88
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105665811"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092653"
 ---
 # <a name="strsafe-functions"></a>Funciones strsafe
 
@@ -27,11 +27,11 @@ ms.locfileid: "105665811"
 -   [**StringCbGetsEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbgetsexa)
 -   [**StringCbLength**](/windows/desktop/api/Strsafe/nf-strsafe-stringcblengtha)
 -   [**StringCbPrintf \_ l**](/windows/desktop/api/StrSafe/nf-strsafe-stringcbprintf_la)
--   [**\_Lex StringCbPrintf**](/windows/desktop/api/StrSafe/nf-strsafe-stringcbprintf_lexa)
+-   [**StringCbPrintf \_ lEx**](/windows/desktop/api/StrSafe/nf-strsafe-stringcbprintf_lexa)
 -   [**StringCbPrintf**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbprintfa)
 -   [**StringCbPrintfEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbprintfexa)
 -   [**StringCbVPrintf \_ l**](/windows/desktop/api/StrSafe/nf-strsafe-stringcbvprintf_la)
--   [**\_Lex StringCbVPrintf**](/windows/desktop/api/StrSafe/nf-strsafe-stringcbvprintf_lexa)
+-   [**StringCbVPrintf \_ lEx**](/windows/desktop/api/StrSafe/nf-strsafe-stringcbvprintf_lexa)
 -   [**StringCbVPrintf**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbvprintfa)
 -   [**StringCbVPrintfEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbvprintfexa)
 -   [**StringCchCat**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchcata)
@@ -46,16 +46,16 @@ ms.locfileid: "105665811"
 -   [**StringCchGetsEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchgetsexa)
 -   [**StringCchLength**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchlengtha)
 -   [**StringCchPrintf \_ l**](/windows/desktop/api/StrSafe/nf-strsafe-stringcchprintf_la)
--   [**\_Lex StringCchPrintf**](/windows/desktop/api/StrSafe/nf-strsafe-stringcchprintf_lexa)
+-   [**StringCchPrintf \_ lEx**](/windows/desktop/api/StrSafe/nf-strsafe-stringcchprintf_lexa)
 -   [**StringCchPrintf**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchprintfa)
 -   [**StringCchPrintfEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchprintfexa)
 -   [**StringCchVPrintf \_ l**](/windows/desktop/api/StrSafe/nf-strsafe-stringcchvprintf_la)
--   [**\_Lex StringCchVPrintf**](/windows/desktop/api/StrSafe/nf-strsafe-stringcchvprintf_lexa)
+-   [**StringCchVPrintf \_ lEx**](/windows/desktop/api/StrSafe/nf-strsafe-stringcchvprintf_lexa)
 -   [**StringCchVPrintf**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchvprintfa)
 -   [**StringCchVPrintfEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchvprintfexa)
 -   [**UnalignedStringCbLength**](/previous-versions/windows/desktop/legacy/hh305643(v=vs.85))
 -   [**UnalignedStringCchLength**](/previous-versions/windows/desktop/legacy/hh305644(v=vs.85))
 
- 
+ 
 
- 
+ 

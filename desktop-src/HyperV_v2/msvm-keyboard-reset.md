@@ -1,7 +1,7 @@
 ---
-description: Restablece el teclado virtual.
+description: 'Método reset de la Msvm_Keyboard clase : restablece el teclado virtual.'
 ms.assetid: 6D4A9F02-53BD-47C2-9C09-F22C3630312F
-title: Método Reset de la clase Msvm_Keyboard
+title: Método reset de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4fe46657177789e49b49ec2c36f0e7a9dc95394f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14c3166ce57fab4693dec87d3d81a55f1f688aa9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669773"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111713"
 ---
-# <a name="reset-method-of-the-msvm_keyboard-class"></a>Método Reset de la \_ clase de teclado MSVM
+# <a name="reset-method-of-the-msvm_keyboard-class"></a>Método Reset de la clase Keyboard de Msvm \_
 
 Restablece el teclado virtual.
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor devuelto de uno indica un error porque no se admite el método.
+Un valor devuelto de cero indica que el resultado es correcto. Un valor devuelto de uno indica un error porque no se admite el método .
 
 <dl> <dt>
 
@@ -53,21 +53,21 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dev
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 8.1 solo \[ aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[ R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> </dl>
 
  

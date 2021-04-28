@@ -1,7 +1,7 @@
 ---
-description: Solicita un restablecimiento.
+description: 'Método reset de la Msvm_DVDDrive : solicita un restablecimiento.'
 ms.assetid: 5d178eee-36fa-4315-915a-778f559f08f0
-title: Método Reset de la clase Msvm_DVDDrive
+title: Método Reset de la Msvm_DVDDrive clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec90f48164c60cc37147a0521170291e3ac91491
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81123a7a7bb4a7b76129af57b1ea7216b543c5ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687846"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119143"
 ---
-# <a name="reset-method-of-the-msvm_dvddrive-class"></a>Método Reset de la \_ clase MSVM DVDDrive
+# <a name="reset-method-of-the-msvm_dvddrive-class"></a>Método Reset de la clase DVDDrive de Msvm \_
 
 Solicita un restablecimiento.
 
@@ -53,21 +53,21 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ DVDDrive**](msvm-dvddrive.md)
+[**Msvm \_ DVDDrive**](msvm-dvddrive.md)
 </dt> </dl>
 
  

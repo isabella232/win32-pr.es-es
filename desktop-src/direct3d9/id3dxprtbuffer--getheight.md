@@ -1,7 +1,7 @@
 ---
-description: Recupera el alto de la textura, en píxeles.
+description: 'Método ID3DXPRTBuffer::GetHeight: recupera el alto de la textura, en píxeles.'
 ms.assetid: 811d0c74-89fc-42b2-951c-8791d6677353
-title: 'ID3DXPRTBuffer:: GetHeight (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::GetHeight (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 071e7bdea0df3f2e9871efa13e1b3490a6e76ce7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5138d979f73b67609bbacac3c3aa10e8f9fe8c9a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707963"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093293"
 ---
-# <a name="id3dxprtbuffergetheight-method"></a>ID3DXPRTBuffer:: GetHeight (método)
+# <a name="id3dxprtbuffergetheight-method"></a>Método ID3DXPRTBuffer::GetHeight
 
 Recupera el alto de la textura, en píxeles.
 
@@ -40,7 +40,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Devuelve el alto de la textura, en píxeles.
 
@@ -50,19 +50,19 @@ Devuelve el alto de la textura, en píxeles.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DXPRTBuffer](id3dxprtbuffer.md)
 </dt> <dt>
 
-[**ID3DXPRTBuffer:: GetWidth**](id3dxprtbuffer--getwidth.md)
+[**ID3DXPRTBuffer::GetWidth**](id3dxprtbuffer--getwidth.md)
 </dt> </dl>
 
  

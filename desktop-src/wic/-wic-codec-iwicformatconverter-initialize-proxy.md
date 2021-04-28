@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método Initialize.
+description: 'IWICFormatConverter_Initialize_Proxy función: función proxy para el método Initialize.'
 ms.assetid: 26112d52-95e2-4c67-83fc-cf5e28712730
-title: IWICFormatConverter_Initialize_Proxy función)
+title: IWICFormatConverter_Initialize_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 6450c1a508507db73e44ef8b88b4f94970ac6004
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d70d852adc8f810438ce46dc30345e68fa27e0fd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278472"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097163"
 ---
-# <a name="iwicformatconverter_initialize_proxy-function"></a>IWICFormatConverter \_ inicializar \_ función de proxy
+# <a name="iwicformatconverter_initialize_proxy-function"></a>Función IWICFormatConverter \_ Initialize \_ Proxy
 
-Función de proxy para el método [**Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize) .
+Función de proxy para el [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,25 +46,25 @@ HRESULT IWICFormatConverter_Initialize_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) \** _
+Tipo: **[ **IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)\***
 
-Puntero a este objeto [_ *IWICFormatConverter* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) .
+Puntero a este [**objeto IWICFormatConverter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)
 
 </dd> <dt>
 
-*pISource* \[ de\]
+*pISource* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-Mapa de bits de entrada que se va a convertir.
+Mapa de bits de entrada que se convertirá
 
 </dd> <dt>
 
-_dstFormat * \[ en\]
+*dstFormat* \[ En\]
 </dt> <dd>
 
 Tipo: **REFWICPixelFormatGUID**
@@ -73,39 +73,39 @@ GUID del formato de píxel de destino.
 
 </dd> <dt>
 
-*interpolación* \[ de\]
+*dither* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapDitherType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapdithertype)**
 
-[**WICBitmapDitherType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapdithertype) que se usa para la conversión.
+[**WICBitmapDitherType usado**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapdithertype) para la conversión.
 
 </dd> <dt>
 
-*pIPalette* \[ de\]
+*pIPalette* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Paleta que se va a usar para la conversión.
+Paleta que se usará para la conversión.
 
 </dd> <dt>
 
-_alphaThresholdPercent * \[ en\]
+*alphaThresholdPercent* \[ En\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
-Umbral alfa que se va a usar para la conversión.
+Umbral alfa que se usará para la conversión.
 
 </dd> <dt>
 
-*paletteTranslate* \[ de\]
+*paletteTranslate* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapPaletteType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmappalettetype)**
 
-Tipo de traducción de la paleta que se va a usar para la conversión.
+Tipo de traducción de paleta que se usará para la conversión.
 
 </dd> </dl>
 
@@ -113,7 +113,7 @@ Tipo de traducción de la paleta que se va a usar para la conversión.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -121,11 +121,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 
