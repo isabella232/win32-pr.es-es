@@ -1,7 +1,7 @@
 ---
-description: No se admite.
+description: 'Método IAMTimelineObj::GetDirtyRange: no compatible.'
 ms.assetid: 7f97b1c4-0508-45a5-a6fd-5dae17f0fa60
-title: 'IAMTimelineObj:: GetDirtyRange (método) (QEDIT. h)'
+title: Método IAMTimelineObj::GetDirtyRange (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d4f82b34c70cafd49bf21d662cf8b397b8d6316d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 828bb5a88d3bcefcf10f0a6e4f07070a4b60322d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691060"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098573"
 ---
-# <a name="iamtimelineobjgetdirtyrange-method"></a>IAMTimelineObj:: GetDirtyRange (método)
+# <a name="iamtimelineobjgetdirtyrange-method"></a>IamTimelineObj::GetDirtyRange (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-No se admite.
+No compatible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT GetDirtyRange(
 
 <dl> <dt>
 
-*pStart* 
+*Pstart* 
 </dt> <dd>
 
 Reservado.
@@ -62,17 +62,17 @@ Reservado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la Microsoft Windows SDK [update para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,16 +82,16 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineObj**](iamtimelineobj.md)
+[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> </dl>
 
  

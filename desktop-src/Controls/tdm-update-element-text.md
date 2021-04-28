@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TDM_UPDATE_ELEMENT_TEXT (commctrl. h)
-description: Actualiza un elemento de texto en un cuadro de diálogo de tarea.
+title: TDM_UPDATE_ELEMENT_TEXT mensaje (Commctrl.h)
+description: 'TDM_UPDATE_ELEMENT_TEXT mensaje: actualiza un elemento de texto en un cuadro de diálogo de tarea.'
 ms.assetid: 2df446c8-db87-42b5-b5bd-40fadbf9d45b
 keywords:
-- TDM_UPDATE_ELEMENT_TEXT controles de mensajes de Windows
+- TDM_UPDATE_ELEMENT_TEXT de mensajes controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6dac6787c68d0cbe619bbf28fa1a6383606e99f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c155b426b92645c0b9cdbabe00c44ffa722b89f3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151141"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085813"
 ---
-# <a name="tdm_update_element_text-message"></a>\_Mensaje de \_ texto de elemento de actualización de TDM \_
+# <a name="tdm_update_element_text-message"></a>Mensaje DE \_ TEXTO DEL ELEMENTO UPDATE \_ \_ de TDM
 
 Actualiza un elemento de texto en un cuadro de diálogo de tarea.
 
@@ -29,19 +29,19 @@ Actualiza un elemento de texto en un cuadro de diálogo de tarea.
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Indica el elemento que se va a actualizar. (Para ver una ilustración de los elementos, vea acerca de los [cuadros de diálogo de tareas](task-dialogs-overview.md)). Este parámetro debe ser uno de los siguientes valores:
+Indica el elemento que se debe actualizar. (Para obtener una ilustración de los elementos, vea [Acerca de los cuadros de diálogo de tarea).](task-dialogs-overview.md) Este parámetro debe ser uno de los siguientes valores:
 
 
 
-| Value                                                                                                                                                                                           | Significado                          |
+| Valor                                                                                                                                                                                           | Significado                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**contenido de TDE \_**</dt> </dl>                                         | Contenido.<br/>              |
-| <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**TDE \_ información expandida \_**</dt> </dl> | Información expandida.<br/> |
-| <span id="TDE_FOOTER"></span><span id="tde_footer"></span><dl> <dt>**pie de página de TDE \_**</dt> </dl>                                            | Texto del pie de página.<br/>          |
-| <span id="TDE_MAIN_INSTRUCTION"></span><span id="tde_main_instruction"></span><dl> <dt>**\_instrucción principal de TDE \_**</dt> </dl>             | Instrucción principal.<br/>     |
+| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ de TDE**</dt> </dl>                                         | Contenido.<br/>              |
+| <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**INFORMACIÓN EXPANDIDA DE TDE \_ \_**</dt> </dl> | Información expandida.<br/> |
+| <span id="TDE_FOOTER"></span><span id="tde_footer"></span><dl> <dt>**PIE DE PÁGINA DE TDE \_**</dt> </dl>                                            | Texto del pie de página.<br/>          |
+| <span id="TDE_MAIN_INSTRUCTION"></span><span id="tde_main_instruction"></span><dl> <dt>**INSTRUCCIÓN PRINCIPAL DE TDE \_ \_**</dt> </dl>             | Instrucción principal.<br/>     |
 
 
 
@@ -49,7 +49,7 @@ Indica el elemento que se va a actualizar. (Para ver una ilustración de los ele
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
 Puntero a una cadena Unicode que contiene el nuevo texto.
@@ -60,31 +60,31 @@ Puntero a una cadena Unicode que contiene el nuevo texto.
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para evitar el recorte, el nuevo texto no debe ser mayor que el texto existente. Si se establece el texto en una cadena más corta, no se cambia el tamaño del cuadro de diálogo.
+Para evitar el recorte, el nuevo texto no debe ser mayor que el texto existente. Establecer el texto en una cadena más corta no hace que el cuadro de diálogo cambie de tamaño.
 
-Si el miembro **pszExpandedInformation** de la estructura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) utilizada para crear el cuadro de diálogo de tarea era **null** y se envía un mensaje de texto de **\_ \_ elemento \_ de actualización TDM** con \_ información ampliada de TDE, no se producirá \_ nada.
+Si el miembro **pszExpandedInformation** de la estructura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) usada para crear el cuadro de diálogo de tarea era **NULL** y envía un mensaje **\_ TDM UPDATE \_ ELEMENT \_ TEXT** con TDE \_ EXPANDED INFORMATION, no ocurrirá \_ nada.
 
-Lo anterior también se aplica al pie de página y al pie de página de TDE \_ .
+Lo anterior también se aplica al pie de página y al pie de página de \_ TDE.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_texto del \_ elemento de conjunto de TDM \_**](tdm-set-element-text.md)
+[**TEXTO DEL \_ ELEMENTO SET \_ DE TDM \_**](tdm-set-element-text.md)
 </dt> </dl>
 
  

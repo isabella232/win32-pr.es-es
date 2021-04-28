@@ -1,8 +1,8 @@
 ---
-description: El método de clase WMI TakeOwnerShip obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.
+description: 'Método TakeOwnerShip de la clase Win32_CodecFile : el método de clase WMI TakeOwnerShip obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
 ms.assetid: c8fa0706-1f7e-4e68-aea6-694ba24c16c3
 ms.tgt_platform: multiple
-title: Método TakeOwnerShip de la clase Win32_CodecFile
+title: Método TakeOwnerShip de la Win32_CodecFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1de05f444e99be9a1ebcb5d32fa0ba754cf34254
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e52e5dafe5f0453861ddcddadf9f7115d17ee404
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152831"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086043"
 ---
-# <a name="takeownership-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShip de la \_ clase CodecFile de Win32
+# <a name="takeownership-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShip de la clase CodecFile win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es realmente un directorio, **TakeOwnerShip** actúa de forma recursiva y toma la propiedad de todos los archivos y subdirectorios que contiene el directorio.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es realmente un directorio, **TakeOwnerShip** actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -141,24 +141,24 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

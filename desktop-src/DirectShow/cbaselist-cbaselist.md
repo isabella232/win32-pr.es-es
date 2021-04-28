@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CBaseList.CBaseList(TCHAR \* , INT): método constructor.'
 ms.assetid: 2d48cb66-45d2-4d2d-ba7e-ae759b6d2aa4
-title: Constructor CBaseList. CBaseList (TCHAR *, INT) (Wxlist. h)
+title: Constructor CBaseList.CBaseList(TCHAR*, INT) (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9c947c8ffa6b61f919d03470b386ffa82945f3b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf745e22ffccb342d945a024760f8c72fdb35ce9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670939"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099643"
 ---
-# <a name="cbaselistcbaselisttchar-int-constructor"></a>Constructor CBaseList. CBaseList (TCHAR \* , int)
+# <a name="cbaselistcbaselisttchar-int-constructor"></a>Constructor CBaseList.CBaseList(TCHAR, \* INT)
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,13 +53,13 @@ Puntero al nombre de la lista.
 *iItems* 
 </dt> <dd>
 
-Tamaño de la memoria caché de nodo.
+Tamaño de la caché del nodo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Por motivos de eficacia, la `CBaseList` clase mantiene una memoria caché de nodos de lista. Si conoce aproximadamente el número de elementos que contendrá la lista, use esta versión del constructor.
+Para mejorar la eficacia, `CBaseList` la clase mantiene una caché de nodos de lista. Si sabe aproximadamente cuántos elementos contendrán la lista, use esta versión del constructor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,16 +67,16 @@ Por motivos de eficacia, la `CBaseList` clase mantiene una memoria caché de nod
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

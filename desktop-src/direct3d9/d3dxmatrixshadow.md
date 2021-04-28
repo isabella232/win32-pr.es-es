@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz que alisa la geometría en un plano.
+description: 'Función D3DXMatrixShadow (D3dx9math.h): crea una matriz que aplana la geometría en un plano.'
 ms.assetid: 8f283ff9-c879-476c-8057-f4fe77a7a9e7
-title: Función D3DXMatrixShadow (D3dx9math. h)
+title: Función D3DXMatrixShadow (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e6bf1639adb7364536cce5c0dead9ef58ae10bea
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 111a1448f62cae3f782917de76d92e88aa5a3356
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689886"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118063"
 ---
-# <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Función D3DXMatrixShadow (D3dx9math. h)
+# <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Función D3DXMatrixShadow (D3dx9math.h)
 
-Crea una matriz que alisa la geometría en un plano.
+Crea una matriz que aplana la geometría en un plano.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,25 +47,25 @@ D3DXMATRIX* D3DXMatrixShadow(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pLight* \[ de\]
+*pLight* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntero a una estructura [**D3DXVECTOR4**](d3dxvector4.md) que describe la posición de la luz.
+Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que describe la posición de la luz.
 
 </dd> <dt>
 
-*pPlane* \[ de\]
+*pPlane* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntero a la estructura de [**D3DXPLANE**](d3dxplane.md) de origen.
+Puntero a la estructura [**D3DXPLANE de**](d3dxplane.md) origen.
 
 </dd> </dl>
 
@@ -73,15 +73,15 @@ Puntero a la estructura de [**D3DXPLANE**](d3dxplane.md) de origen.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una estructura [**D3DXMATRIX**](d3dxmatrix.md) que alisa la geometría en un plano.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que aplana la geometría en un plano.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **D3DXMatrixShadow** reduce la geometría en un plano, como si se convirtiendo una sombra de una luz.
+La **función D3DXMatrixShadow** aplana la geometría en un plano, como si la conversión de una sombra a partir de una luz.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXMatrixShadow** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixShadow** se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -97,7 +97,7 @@ P.d * L.x      P.d * L.y      P.d * L.z      P.d * L.w + d
 
 
 
-Si el componente w-Light es 0, el rayo desde el origen a la luz representa una luz direccional. Si es 1, la luz es una luz puntual.
+Si el componente w de la luz es 0, el rayo del origen a la luz representa una luz direccional. Si es 1, la luz es una luz de punto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,12 +105,12 @@ Si el componente w-Light es 0, el rayo desde el origen a la luz representa una l
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

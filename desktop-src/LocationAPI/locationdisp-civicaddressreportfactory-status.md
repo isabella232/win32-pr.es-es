@@ -1,7 +1,7 @@
 ---
-description: Estado actual del informe.
+description: 'Propiedad LocationDisp.CivicAddressReportFactory.Status: el estado del informe actual.'
 ms.assetid: 3aae0b61-cdaa-4131-b6e1-406813bb1848
-title: LocationDisp. CivicAddressReportFactory. status (propiedad)
+title: Propiedad LocationDisp.CivicAddressReportFactory.Status
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ff937b11fbb64e0ec1596f9b3b9d85b33528eb06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: acb5bcfa589139e2c69e75124253f9d9a7b53a87
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688644"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118503"
 ---
-# <a name="locationdispcivicaddressreportfactorystatus-property"></a>LocationDisp. CivicAddressReportFactory. status (propiedad)
+# <a name="locationdispcivicaddressreportfactorystatus-property"></a>Propiedad LocationDisp.CivicAddressReportFactory.Status
 
-\[El modelo de objetos de API de ubicación está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, para acceder a la ubicación desde un sitio web, use la [API de geolocalización del W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acceder a la ubicación desde una aplicación de escritorio, use la API [**Windows. Devices. geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[El modelo de objetos de la API de ubicación está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, para acceder a la ubicación desde un sitio web, use [la API de geolocalización de W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acceder a la ubicación desde una aplicación de escritorio, use la API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Estado actual del informe.
 
@@ -38,13 +38,13 @@ Status = LocationDisp.CivicAddressReportFactory.Status
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Esta propiedad es un **número** de solo lectura (unsigned Long).
+Esta propiedad es un número de solo **lectura** (unsigned long).
 
 
 
 | Status                                                                                               | Significado                          |
 |------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="0"></span><dl> <dt>**0,1**</dt> </dl> | No se admite el informe.<br/> |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Informe no admitido.<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Error.<br/>                |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Acceso denegado.<br/>        |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | Inicializando.<br/>         |
@@ -56,13 +56,13 @@ Esta propiedad es un **número** de solo lectura (unsigned Long).
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar esta propiedad, consulte [escucha de eventos de informe de direcciones cívica](/uwp/api/Windows.Devices.Geolocation).
+Para obtener un ejemplo de cómo usar esta propiedad, vea [Listening for Civic Address Report Events](/uwp/api/Windows.Devices.Geolocation).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                  |
