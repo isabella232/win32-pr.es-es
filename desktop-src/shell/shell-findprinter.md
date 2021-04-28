@@ -1,7 +1,7 @@
 ---
-description: Muestra el cuadro de diálogo Buscar impresora.
+description: 'Método Shell.FindPrinter: muestra el cuadro de diálogo Buscar impresora.'
 ms.assetid: 61C700CF-623B-4c99-A211-AC26A1E4AE85
-title: Método Shell. FindPrinter (Shldisp. h)
+title: Método Shell.FindPrinter (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 1286bb7247359ea91d29a53f8f0eaa13b55be5e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17d04b60de2b52ca3d2f17fbdccf7de93ac095b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985978"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104313"
 ---
-# <a name="shellfindprinter-method"></a>Shell. FindPrinter (método)
+# <a name="shellfindprinter-method"></a>Método Shell.FindPrinter
 
-Muestra el cuadro de diálogo **Buscar impresora** .
+Muestra el **cuadro de diálogo Buscar** impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,39 +58,39 @@ Shell.FindPrinter( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el nombre de la impresora.
+Cadena **que** contiene el nombre de la impresora.
 
 </dd> <dt>
 
-*sLocation* \[ en, opcional\]
+*sLocation* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene la ubicación de la impresora.
+Cadena **que** contiene la ubicación de la impresora.
 
 </dd> <dt>
 
-*sModel* \[ en, opcional\]
+*sModel* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el modelo de impresora.
+Cadena **que** contiene el modelo de impresora.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si asigna cadenas a uno o varios parámetros opcionales, se muestran como valores predeterminados en el control de edición asociado cuando se muestra el cuadro de diálogo **Buscar impresora** . El usuario puede aceptar o invalidar estos valores. Si no se asigna ningún valor a un parámetro, el cuadro de edición asociado está vacío y el usuario debe escribir un valor.
+Si asigna cadenas a uno o varios de los parámetros opcionales, se muestran  como valores predeterminados en el control de edición asociado cuando se muestra el cuadro de diálogo Buscar impresora. El usuario puede aceptar o invalidar estos valores. Si no se asigna ningún valor a un parámetro, el cuadro de edición asociado está vacío y el usuario debe escribir un valor.
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **FindPrinter** para mostrar el cuadro de diálogo **Buscar impresora** para una aplicación determinada. El uso se muestra para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso **de FindPrinter para** mostrar el **cuadro de diálogo** Buscar impresora para una aplicación determinada. El uso se muestra para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -106,7 +106,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -129,13 +129,13 @@ VBScript
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

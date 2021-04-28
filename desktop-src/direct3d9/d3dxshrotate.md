@@ -1,7 +1,7 @@
 ---
-description: Gira el vector armónico (SH) de la matriz especificada.
+description: 'Función D3DXSHRotate (D3dx9math.h): gira el vector de armónico esférico (SH) por la matriz dada.'
 ms.assetid: 9e319725-6cbb-441e-b996-ec2c6f66e5df
-title: Función D3DXSHRotate (D3dx9math. h)
+title: Función D3DXSHRotate (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 606ef1909237fd9c0277c5d7112284f6b7018e0e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f888186fb6d7563a5904d4e6e3f1eabe626afd1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649409"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093873"
 ---
-# <a name="d3dxshrotate-function-d3dx9mathh"></a>Función D3DXSHRotate (D3dx9math. h)
+# <a name="d3dxshrotate-function-d3dx9mathh"></a>Función D3DXSHRotate (D3dx9math.h)
 
-Gira el vector armónico (SH) de la matriz especificada.
+Gira el vector armónico esférico (SH) por la matriz dada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,54 +43,54 @@ FLOAT* D3DXSHRotate(
 
 <dl> <dt>
 
-*pOut* \[ enuncia\]
+*pOut* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida de armónicos esféricos (SH). La evaluación genera coeficientes de pedido ². Este puntero no debe ser un alias con el *pIn*. Vea la sección Comentarios.
+Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias *con pIn*. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*Pedido* \[ de de\]
+*Pedido* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes de pedido ². El grado de evaluación es order-1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
-*pMatrix* \[ de\]
+*pMatrix* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a la matriz de rotación. La submatriz de rotación debe ser ortogonal, con un determinante de unidad.
+Puntero a la matriz de rotación. La submatriz de rotación debe ser ortogonal, con una unidad determinante.
 
 </dd> <dt>
 
-*código pIn* \[ de\]
+*pIn* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Puntero a los coeficientes SH girados.
+Puntero a coeficientes SH girados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes de salida SH.
+Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada coeficiente de la función YLM se almacena en la ubicación de memoria l ² + m + l, donde:
+Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
 -   l es el grado de la función base.
--   m es el índice de la función base para el valor l especificado y los intervalos de-l a l, ambos incluidos.
+-   m es el índice de función base para el valor l especificado y va de -l a l, ambos incluidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,19 +98,19 @@ Cada coeficiente de la función YLM se almacena en la ubicación de memoria l ²
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia Radiance precalculada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

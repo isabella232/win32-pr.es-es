@@ -1,7 +1,7 @@
 ---
-description: Recupera el valor de restricción de un grupo del registro.
+description: 'Método IShellDispatch2.IsRestricted: recupera la configuración de restricción de un grupo del Registro.'
 ms.assetid: 04275c5f-c3ed-4962-882f-2cce0258a9f4
-title: Método IShellDispatch2. IsRestricted (Shldisp. h)
+title: Método IShellDispatch2.IsRestricted (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f666a9ed3407d12eb9cf2c28ae062a9886d7a2cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4f482407fadd16d7ecfe9deeafd91b032a9a24f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984694"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117103"
 ---
-# <a name="ishelldispatch2isrestricted-method"></a>IShellDispatch2. IsRestricted, método
+# <a name="ishelldispatch2isrestricted-method"></a>Método IShellDispatch2.IsRestricted
 
-Recupera el valor de restricción de un grupo del registro.
+Recupera la configuración de restricción de un grupo del Registro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,21 +51,21 @@ IShellDispatch2.IsRestricted( _
 
 <dl> <dt>
 
-*sGroup* \[ de\]
+*sGroup* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el nombre del grupo. Este valor es el nombre de una subclave del registro en la que se va a comprobar la restricción.
+Cadena **que** contiene el nombre del grupo. Este valor es el nombre de una subclave del Registro con la que se va a comprobar la restricción.
 
 </dd> <dt>
 
-*sRestriction* \[ de\]
+*sRestriction* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene la restricción cuyo valor se va a recuperar.
+Cadena **que** contiene la restricción cuyo valor se va a recuperar.
 
 </dd> </dl>
 
@@ -73,21 +73,21 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Type: **Integer \** _
+Tipo: **\* Entero**
 
 Valor de la restricción. Si no se encuentra la restricción especificada, el valor devuelto es 0.
 
 ### <a name="vb"></a>VB
 
-Tipo: _*Integer \**_
+Tipo: **\* Entero**
 
 Valor de la restricción. Si no se encuentra la restricción especificada, el valor devuelto es 0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él mediante el método [_ *Shell. IsRestricted* *](./shell-isrestricted.md) .
+Este método se implementa y se accede a través del [**método Shell.IsRestricted.**](./shell-isrestricted.md)
 
-**IsRestricted** busca primero un nombre de subclave que coincida con *sGroup* en la siguiente clave.
+**IsRestricted** busca primero un nombre de subclave que coincida *con sGroup* bajo la siguiente clave.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -98,15 +98,15 @@ HKEY_LOCAL_MACHINE
                Policies
 ```
 
-Las restricciones se declaran como valores de las subclaves de la Directiva individual. Si la restricción denominada en *sRestriction* se encuentra en la subclave denominada en *sGroup*, **IsRestricted** devuelve el valor actual de la restricción. Si no se encuentra la restricción en **HKEY \_ local \_ Machine**, se comprueba la misma subclave en **HKEY \_ Current \_ User**.
+Las restricciones se declaran como valores de las subclaves de directiva individuales. Si la restricción denominada en *sRestriction* se encuentra en la subclave denominada *en sGroup*, **IsRestricted** devuelve el valor actual de la restricción. Si la restricción no se encuentra en **HKEY \_ LOCAL \_ MACHINE**, la misma subclave se comprueba en **HKEY \_ CURRENT \_ USER**.
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **IsRestricted** para recuperar el valor de datos de la restricción **undockwithoutlogon** de la subclave **System** . Se muestra el uso de JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **IsRestricted** para recuperar el valor de datos de la restricción **undockwithoutlogon** de la subclave **System.** El uso se muestra para JScript y VBScript.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -124,7 +124,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -149,13 +149,13 @@ VBScript
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de disco lógico.
+description: 'SystemConfig_V0_LogDisk clase : esta clase es la clase de tipo de evento para los eventos de configuración de disco lógico.'
 ms.assetid: 3fa5f2e4-f6fa-4c10-9634-04908783cd28
-title: SystemConfig_V0_LogDisk (clase)
+title: SystemConfig_V0_LogDisk clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: dbc1ee189bae1fe71f42267f38bd40763764dea2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb0ad959d637a38a03b77bd8d7a812ff608ddc04
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985934"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105983"
 ---
-# <a name="systemconfig_v0_logdisk-class"></a>SystemConfig \_ V0 \_ LogDisk (clase)
+# <a name="systemconfig_v0_logdisk-class"></a>Clase LogDisk SystemConfig \_ V0 \_
 
 Esta clase es la clase de tipo de evento para los eventos de configuración de disco lógico.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,20 +64,20 @@ class SystemConfig_V0_LogDisk : SystemConfig_V0
 
 ## <a name="members"></a>Miembros
 
-La clase **SystemConfig \_ V0 \_ LogDisk** tiene estos tipos de miembros:
+La **clase \_ \_ LogDisk SystemConfig V0** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SystemConfig \_ V0 \_ LogDisk** tiene estas propiedades.
+La **clase \_ \_ LogDisk SystemConfig V0** tiene estas propiedades.
 
 <dl> <dt>
 
 **BytesPerSector**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -86,14 +86,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (10)
 </dt> </dl>
 
-Número de bytes de cada sector para la unidad de disco físico.
+Número de bytes en cada sector para la unidad de disco físico.
 
 </dd> <dt>
 
-**Númerodedisco corresponde**
+**DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -109,7 +109,7 @@ Número de índice del disco que contiene esta partición.
 **DriveLetterString**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -125,7 +125,7 @@ Letra de unidad del disco con el formato " <letter> :".
 **DriveType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -138,9 +138,9 @@ Tipo de unidad de disco. Los valores posibles son:
 
 
 
-| Value                                                                        | Significado                                         |
+| Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partición<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volumen<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partición extendida en varios discos<br/> |
 
@@ -150,7 +150,7 @@ Tipo de unidad de disco. Los valores posibles son:
 
 </dd> <dt>
 
-**Systems**
+**Filesystem**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **char16**
@@ -185,7 +185,7 @@ Número de clústeres libres en el volumen especificado.
 **Pad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -201,7 +201,7 @@ Reservado.
 **PartitionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -217,7 +217,7 @@ Número de índice de la partición.
 **PartitionSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -233,7 +233,7 @@ Tamaño total de la partición, en bytes.
 **SectorsPerCluster**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -249,7 +249,7 @@ Número de sectores del volumen.
 **Tamaño**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -265,7 +265,7 @@ Tamaño de la unidad de disco, en bytes.
 **StartOffset**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -297,7 +297,7 @@ Número de clústeres usados y libres en el volumen.
 **VolumeExt**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -314,18 +314,18 @@ Reservado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemConfig \_ v0**](systemconfig-v0.md)
+[**SystemConfig \_ V0**](systemconfig-v0.md)
 </dt> </dl>
 
  

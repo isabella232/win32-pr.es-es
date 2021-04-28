@@ -1,7 +1,7 @@
 ---
-description: El método GetMediaType recupera un tipo de medio preferido para el PIN de salida.
+description: 'Método CTransformFilter.GetMediaType: el método GetMediaType recupera un tipo de medio preferido para el pin de salida.'
 ms.assetid: 9a1b123b-aa8a-4bf0-a926-466ded24e506
-title: Método CTransformFilter. GetMediaType (Transfrm. h)
+title: Método CTransformFilter.GetMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba751e291a1ffa8e030be7e77cfd456956718baa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6415b8e3d8ae4e292b7e2592b123120927081ea8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661051"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095123"
 ---
-# <a name="ctransformfiltergetmediatype-method"></a>CTransformFilter. GetMediaType, método
+# <a name="ctransformfiltergetmediatype-method"></a>Método CTransformFilter.GetMediaType
 
-El `GetMediaType` método recupera un tipo de medio preferido para el PIN de salida.
+El `GetMediaType` método recupera un tipo de medio preferido para el pin de salida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,29 +53,29 @@ Valor de índice de base cero.
 *pMediaType* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que recibe el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que recibe el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                            | Descripción                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                   | Correcto.<br/>              |
-| <dl> <dt>**VFW \_ S \_ no hay \_ más \_ elementos**</dt> </dl> | Índice fuera del intervalo.<br/>   |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice inferior a cero.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Correcto.<br/>              |
+| <dl> <dt>**VFW \_ S \_ NO \_ MORE \_ ITEMS**</dt> </dl> | Índice fuera del intervalo.<br/>   |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que cero.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CTransformOutputPin:: GetMediaType**](ctransformoutputpin-getmediatype.md) del PIN de salida llama a este método. La clase derivada debe implementar este método. Para obtener más información, vea [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md).
+El método [**CTransformOutputPin::GetMediaType**](ctransformoutputpin-getmediatype.md) del pin de salida llama a este método. La clase derivada debe implementar este método. Para obtener más información, [**vea CBasePin::GetMediaType**](cbasepin-getmediatype.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,16 +83,16 @@ El método [**CTransformOutputPin:: GetMediaType**](ctransformoutputpin-getmedia
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

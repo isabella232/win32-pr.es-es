@@ -1,7 +1,7 @@
 ---
-description: Devuelve la versión normalizada de un vector 2D.
+description: 'Función D3DXVec2Normalize (D3DX10Math.h): devuelve la versión normalizada de un vector 2D.'
 ms.assetid: fac4f269-2778-4500-af9e-23a0112543b0
-title: Función D3DXVec2Normalize (D3DX10Math. h)
+title: Función D3DXVec2Normalize (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e2894a86c0aa0c2ef6b45a41664b2d0cca1427c1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aaa7bde759b9023b69204d6cb39259f0905b9928
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914785"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108393"
 ---
-# <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Función D3DXVec2Normalize (D3DX10Math. h)
+# <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Función D3DXVec2Normalize (D3DX10Math.h)
 
 Devuelve la versión normalizada de un vector 2D.
 
@@ -46,16 +46,16 @@ D3DXVECTOR2* D3DXVec2Normalize(
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
-Puntero al [**D3DXVECTOR2**](d3d10-d3dxvector2.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR2**](d3d10-d3dxvector2.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PV* \[ de\]
+*pV* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](../direct3d9/d3dxvector2.md) \***
 
-Puntero a la estructura de D3DXVECTOR2 de origen.
+Puntero a la estructura D3DXVECTOR2 de origen.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
 Puntero a una estructura D3DXVECTOR2 que es la versión normalizada del vector.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXVec2Normalize se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec2Normalize se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: Se envía cuando un menú desplegable o un submenú está a punto de activarse. Esto permite que una aplicación modifique el menú antes de que se muestre, sin cambiar todo el menú.
-title: Mensaje de DFM_WM_INITMENUPOPUP (ShlObj. h)
+description: 'DFM_WM_INITMENUPOPUP mensaje: se envía cuando un menú desplegable o submenú está a punto de activarse. Esto permite a una aplicación modificar el menú antes de que se muestre, sin cambiar todo el menú.'
+title: DFM_WM_INITMENUPOPUP mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 314e83f7-839d-4ca0-b5c1-842c5bf14923
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1c89731bdffc0e7d902e6c83b9a4f208134b7cfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9df2700403dcdc0ce00b6d90d9c3a87d373b0a34
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153913"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097003"
 ---
-# <a name="dfm_wm_initmenupopup-message"></a>DFM \_ WM \_ INITMENUPOPUP Message
+# <a name="dfm_wm_initmenupopup-message"></a>Mensaje \_ INITMENUPOPUP de DFM WM \_
 
-Se envía cuando un menú desplegable o un submenú está a punto de activarse. Esto permite que una aplicación modifique el menú antes de que se muestre, sin cambiar todo el menú.
+Se envía cuando un menú desplegable o submenú está a punto de activarse. Esto permite a una aplicación modificar el menú antes de que se muestre, sin cambiar todo el menú.
 
 
 ```C++
@@ -41,19 +41,19 @@ DFM_WM_INITMENUPOPUP
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
 Identificador del menú desplegable o submenú.
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-La palabra de orden inferior especifica la posición relativa de base cero del elemento de menú que abre el menú desplegable o submenú.
+La palabra de orden bajo especifica la posición relativa de base cero del elemento de menú que abre el menú desplegable o submenú.
 
-La palabra de orden superior indica si el menú desplegable es el menú ventana. Si el menú es el menú ventana, este parámetro es **true**; de lo contrario, es **false**.
+La palabra de orden superior indica si el menú desplegable es el menú de la ventana. Si el menú es el menú de la ventana, este parámetro es **TRUE**; de lo contrario, es **FALSE.**
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Crea un objeto Mesh mediante un declarador.
+description: 'Función D3DX10CreateMesh: crea un objeto de malla mediante un declarador.'
 ms.assetid: 50e09378-2935-4b18-8fc9-5e58eaadae44
-title: Función D3DX10CreateMesh (D3DX10Mesh. h)
+title: Función D3DX10CreateMesh (D3DX10Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2b00addb152fe18db448364fcc784c2044b10d23
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc744536336a4a102bafeaeae3ba87bbad58eb97
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689893"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113363"
 ---
-# <a name="d3dx10createmesh-function"></a>D3DX10CreateMesh función)
+# <a name="d3dx10createmesh-function"></a>Función D3DX10CreateMesh
 
-Crea un objeto Mesh mediante un declarador.
+Crea un objeto de malla mediante un declarador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,34 +47,34 @@ HRESULT D3DX10CreateMesh(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Puntero a una [**interfaz ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device), el objeto de dispositivo que se va a asociar a la malla.
+Puntero a una [**interfaz ID3D10Device ,**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)el objeto de dispositivo que se va a asociar a la malla.
 
 </dd> <dt>
 
-*pDeclaration* \[ de\]
+*pDeclaration* \[ En\]
 </dt> <dd>
 
-Tipo: **\* const [**D3D10 \_ \_ \_ DESC del elemento de entrada**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)**
+Tipo: **const [**D3D10 \_ INPUT ELEMENT \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) \***
 
-Matriz de [**elementos \_ \_ \_ DESC del elemento de entrada D3D10**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) , que describe el formato de vértice de la malla devuelta. Este parámetro debe asignarse directamente a un formato de vértice flexible (FVF).
+Matriz [**de elementos D3D10 \_ INPUT ELEMENT \_ \_ DESC,**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) que describen el formato de vértice de la malla devuelta. Este parámetro debe asignarse directamente a un formato de vértice flexible (FVF).
 
 </dd> <dt>
 
-*DeclCount* \[ de\]
+*DeclCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de elementos de pDeclaration.
 
 </dd> <dt>
 
-*pPositionSemantic* \[ de\]
+*pPositionSemantic* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -83,34 +83,34 @@ Semántica que identifica qué parte de la declaración de vértice contiene inf
 
 </dd> <dt>
 
-*VertexCount* \[ de\]
+*VertexCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de vértices de la malla. Este parámetro debe ser mayor que 0.
 
 </dd> <dt>
 
-*FaceCount* \[ de\]
+*FaceCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de caras de la malla. El intervalo válido para este número es mayor que 0 y uno menos que el valor DWORD máximo (normalmente 65534), ya que el último índice está reservado.
+Número de caras de la malla. El intervalo válido para este número es mayor que 0 y uno menor que el DWORD máximo (normalmente 65534), porque el último índice está reservado.
 
 </dd> <dt>
 
-*Opciones* \[ de de\]
+*Opciones* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Combinación de una o varias marcas de la [**\_ malla D3DX10**](d3dx10-mesh.md), especificando las opciones de la malla.
+Combinación de una o varias marcas de [**la malla D3DX10 \_ MESH,**](d3dx10-mesh.md)especificando opciones para la malla.
 
 </dd> <dt>
 
-*ppMesh* \[ enuncia\]
+*ppMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10Mesh**](id3dx10mesh.md)\*\***
@@ -123,7 +123,7 @@ Dirección de un puntero a una [**interfaz ID3DX10Mesh**](id3dx10mesh.md)que rep
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -131,19 +131,19 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Funciones de malla](d3d10-graphics-reference-d3dx10-functions-mesh.md)
 </dt> <dt>
 
-[Funciones de D3DX](d3d10-graphics-reference-d3dx10-functions.md)
+[Funciones D3DX](d3d10-graphics-reference-d3dx10-functions.md)
 </dt> </dl>
 
  

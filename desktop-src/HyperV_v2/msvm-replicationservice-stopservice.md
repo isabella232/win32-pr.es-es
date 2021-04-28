@@ -1,7 +1,7 @@
 ---
-description: detiene el servicio.
+description: 'Método StopService de la clase Msvm_ReplicationService : detiene el servicio.'
 ms.assetid: ff92e1ba-3093-4e78-8729-9f98a22a9f74
-title: Método StopService de la clase Msvm_ReplicationService
+title: Método StopService de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4181ec216782a06655b83fc34b0c4865b72284c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75f70c782ff887076a8ddc6a16a6d9cbdadba16e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687632"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111493"
 ---
-# <a name="stopservice-method-of-the-msvm_replicationservice-class"></a>Método StopService de la \_ clase MSVM ReplicationService
+# <a name="stopservice-method-of-the-msvm_replicationservice-class"></a>Método StopService de la clase ReplicationService de Msvm \_
 
 detiene el servicio.
 
@@ -53,21 +53,21 @@ El método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

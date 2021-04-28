@@ -1,7 +1,7 @@
 ---
-description: Escalar la matriz actual sobre el origen de la coordenada mundial.
+description: 'Método ID3DXMATRIXStack::Scale (D3dx9math.h): escale la matriz actual sobre el origen de coordenadas del mundo.'
 ms.assetid: 6c4ef625-736e-41a0-8a79-4d71e8685754
-title: 'ID3DXMATRIXStack:: Scale (método) (D3dx9math. h)'
+title: Método ID3DXMATRIXStack::Scale (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5ed926a55c0dba6f74e819cd89a7fa75f6d087c4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d877fccf5bfebfdc1f9cf3943c4334e5b8c7fff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157144"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093373"
 ---
-# <a name="id3dxmatrixstackscale-method-d3dx9mathh"></a>ID3DXMATRIXStack:: Scale (método) (D3dx9math. h)
+# <a name="id3dxmatrixstackscale-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::Scale (D3dx9math.h)
 
-Escalar la matriz actual sobre el origen de la coordenada mundial.
+Escale la matriz actual sobre el origen de coordenadas del mundo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,27 +45,27 @@ HRESULT Scale(
 *x* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escala en la dirección x.
+Componente de escalado en la dirección X.
 
 </dd> <dt>
 
 *y* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escala en la dirección y.
+Componente de escalado en la dirección y.
 
 </dd> <dt>
 
-*z* \[ en\]
+*z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escala en la dirección z.
+Componente de escalado en la dirección Z.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Componente de escala en la dirección z.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método multiplica a la derecha la matriz actual con la matriz de escala calculada. La transformación es sobre el origen mundial actual.
+Este método multiplica a la derecha la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen del mundo actual.
 
 
 ```
@@ -94,12 +94,12 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

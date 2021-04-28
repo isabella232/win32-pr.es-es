@@ -1,7 +1,7 @@
 ---
-description: Asocia el \_ VirtualSystemCollection MSVM a los objetos MSVM \_ ComputerSystem incluidos.
+description: 'Msvm_CollectedCollections clase : asocia Msvm \_ VirtualSystemCollection a los objetos ComputerSystem de Msvm \_ contenidos.'
 ms.assetid: bbf7713a-b331-4b40-bcb4-3545c26c6f3a
-title: Msvm_CollectedCollections (clase)
+title: Msvm_CollectedCollections clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 16ec6ad77c44e0a4e9001a0cb77d227573635ec6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83719d364fac22923d68206c8cfe7d37adad5edb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669944"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112133"
 ---
-# <a name="msvm_collectedcollections-class"></a>MSVM \_ CollectedCollections (clase)
+# <a name="msvm_collectedcollections-class"></a>Clase Msvm \_ CollectedCollections
 
-Asocia el [**\_ VirtualSystemCollection MSVM**](msvm-virtualsystemcollection.md) a los objetos [**MSVM \_ ComputerSystem**](msvm-computersystem.md) incluidos.
+Asocia [**Msvm \_ VirtualSystemCollection a**](msvm-virtualsystemcollection.md) los objetos [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) contenidos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,45 +41,45 @@ class Msvm_CollectedCollections : CIM_CollectedMSEs
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CollectedCollections** tiene estos tipos de miembros:
+La **clase \_ CollectedCollections de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CollectedCollections** tiene estas propiedades.
+La **clase \_ CollectedCollections de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **Colección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ ManagementCollection**
+Tipo de datos: **Msvm \_ ManagementCollection**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
 </dt> </dl>
 
-Objeto de agrupación o contenedor de [**MSVM \_ ManagementCollection**](msvm-managementcollection.md) que representa la colección.
+Una [**agrupación \_ Msvm ManagementCollection**](msvm-managementcollection.md) o un objeto "bag" que representa la colección.
 
 </dd> <dt>
 
 **Member**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ CollectionOfMSEs**
+Tipo de datos: **\_ Cim CollectionOfMSEs**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("miembro")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Member")
 </dt> </dl>
 
-[**\_ CollectionOfMSEs de CIM**](cim-collectionofmses.md) que contiene los miembros de la colección.
+Colección [**\_ CIMOfMSE**](cim-collectionofmses.md) que contiene los miembros de la colección.
 
 </dd> </dl>
 
@@ -87,21 +87,21 @@ Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_COLLECTEDMSES CIM**](cim-collectedmses.md)
+[**CIM \_ CollectedMSEs**](cim-collectedmses.md)
 </dt> </dl>
 
  

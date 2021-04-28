@@ -1,7 +1,7 @@
 ---
-description: Los errores se representan con valores negativos y no se pueden combinar.
+description: 'D3DX10_ERR enumeración: los errores se representan mediante valores negativos y no se pueden combinar.'
 ms.assetid: 4149ce6d-e87a-4003-b123-5555c6b3b086
-title: Enumeración D3DX10_ERR (D3DX10. h)
+title: D3DX10_ERR enumeración (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 098c15999f20a65614d642029b1d1f6e0b600db6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 520abae0409dd4214106363d7ffde0cfb5c81ff1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280274"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094363"
 ---
-# <a name="d3dx10_err-enumeration"></a>\_Enumeración de D3DX10 Err
+# <a name="d3dx10_err-enumeration"></a>Enumeración ERR D3DX10 \_
 
-Los errores se representan con valores negativos y no se pueden combinar. A continuación se muestra una lista de los valores que pueden ser devueltos por los métodos incluidos en la biblioteca de utilidades de D3DX. Vea las descripciones individuales de cada método para ver las listas de los valores que puede devolver. Estas listas no son necesariamente completas.
+Los errores se representan mediante valores negativos y no se pueden combinar. A continuación se muestra una lista de valores que pueden devolver los métodos incluidos con la biblioteca de utilidades D3DX. Consulte las descripciones de métodos individuales para obtener listas de los valores que cada uno puede devolver. Estas listas no son necesariamente completas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,72 +47,72 @@ typedef enum D3DX10_ERR {
 
 <dl> <dt>
 
-<span id="D3DX10_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx10_err_cannot_modify_index_buffer"></span>**D3DX10 \_ Err \_ no puede \_ modificar el \_ búfer de índice \_**
+<span id="D3DX10_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx10_err_cannot_modify_index_buffer"></span>**ERROR DE D3DX10 \_ NO SE PUEDE MODIFICAR EL BÚFER DE \_ \_ \_ \_ ÍNDICE**
 </dt> <dd>
 
 No se puede modificar el búfer de índice.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_INVALID_MESH"></span><span id="d3dx10_err_invalid_mesh"></span>**D3DX10 \_ Err \_ no válida \_ Mesh**
+<span id="D3DX10_ERR_INVALID_MESH"></span><span id="d3dx10_err_invalid_mesh"></span>**MALLA NO VÁLIDA DE ERROR D3DX10 \_ \_ \_**
 </dt> <dd>
 
 La malla no es válida.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**D3DX10 \_ Err \_ no se puede \_ ordenar el atributo \_**
+<span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**ERROR D3DX10 \_ NO SE PUEDE ORDENAR \_ \_ ATTR \_**
 </dt> <dd>
 
-La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como técnica de optimización.
+La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como una técnica de optimización.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx10_err_skinning_not_supported"></span>**\_No se \_ \_ \_ admiten los aspectos de D3DX10 Err**
+<span id="D3DX10_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx10_err_skinning_not_supported"></span>**D3DX10 \_ ERR \_ SKINNING \_ NOT \_ SUPPORTED**
 </dt> <dd>
 
-No se admite la recubrimiento.
+No se admite el desnasado.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_TOO_MANY_INFLUENCES"></span><span id="d3dx10_err_too_many_influences"></span>**D3DX10 \_ Err \_ demasiadas \_ \_ influencias**
+<span id="D3DX10_ERR_TOO_MANY_INFLUENCES"></span><span id="d3dx10_err_too_many_influences"></span>**D3DX10 \_ ERR \_ TOO \_ MANY \_ INFLUENCES**
 </dt> <dd>
 
-Se han especificado demasiadas influencias.
+Demasiadas influencias especificadas.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_INVALID_DATA"></span><span id="d3dx10_err_invalid_data"></span>**D3DX10 \_ Err \_ invalid \_ Data**
+<span id="D3DX10_ERR_INVALID_DATA"></span><span id="d3dx10_err_invalid_data"></span>**D3DX10 \_ ERR DATOS NO \_ \_ VÁLIDOS**
 </dt> <dd>
 
 Los datos no son válidos.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_LOADED_MESH_HAS_NO_DATA"></span><span id="d3dx10_err_loaded_mesh_has_no_data"></span>**D3DX10 el error de la \_ \_ \_ malla cargada \_ \_ no tiene \_ datos**
+<span id="D3DX10_ERR_LOADED_MESH_HAS_NO_DATA"></span><span id="d3dx10_err_loaded_mesh_has_no_data"></span>**D3DX10 \_ ERR LOADED MESH NO TIENE \_ \_ \_ \_ \_ DATOS**
 </dt> <dd>
 
 La malla no tiene datos.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_DUPLICATE_NAMED_FRAGMENT"></span><span id="d3dx10_err_duplicate_named_fragment"></span>**D3DX10 \_ Err \_ Duplicate \_ nombre \_ FRAGMENT**
+<span id="D3DX10_ERR_DUPLICATE_NAMED_FRAGMENT"></span><span id="d3dx10_err_duplicate_named_fragment"></span>**FRAGMENTO CON NOMBRE DUPLICADO DE ERROR D3DX10 \_ \_ \_ \_**
 </dt> <dd>
 
 Ya existe un fragmento con ese nombre.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_CANNOT_REMOVE_LAST_ITEM"></span><span id="d3dx10_err_cannot_remove_last_item"></span>**D3DX10 \_ Err \_ no puede \_ quitar el \_ último \_ elemento**
+<span id="D3DX10_ERR_CANNOT_REMOVE_LAST_ITEM"></span><span id="d3dx10_err_cannot_remove_last_item"></span>**D3DX10 \_ ERR NO PUEDE QUITAR EL ÚLTIMO \_ \_ \_ \_ ELEMENTO**
 </dt> <dd>
 
 No se puede eliminar el último elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El código de instalación \_ FACDD se utiliza para generar códigos de error, como en las siguientes macros.
+El código de instalación \_ FACDD se usa para generar códigos de error, como en las macros siguientes.
 
 
 ```
@@ -133,15 +133,15 @@ enum _D3DXERR {
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](d3d10-graphics-reference-d3dx10-enums.md)
+[Enumeraciones D3DX](d3d10-graphics-reference-d3dx10-enums.md)
 </dt> </dl>
 
  

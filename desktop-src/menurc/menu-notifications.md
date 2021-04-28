@@ -1,31 +1,31 @@
 ---
 title: Notificaciones de menú
-description: .
+description: Notificaciones de menú
 ms.assetid: 8ff5671e-a666-483c-9ac1-f8be6eb58ffa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d61f5303253fd3201fd9a4510ecf90fa76c10524
-ms.sourcegitcommit: e98f40bef170ae9ce30d91ba96b90600b0446a24
+ms.openlocfilehash: f593e3007dff82241dc9e917a6cfa140cc443679
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "104358787"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112533"
 ---
 # <a name="menu-notifications"></a>Notificaciones de menú
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**comando de WM \_**](wm-command.md)
--   [**CONTEXTMENU de WM \_**](wm-contextmenu.md)
--   [**ENTERMENULOOP de WM \_**](wm-entermenuloop.md)
--   [**EXITMENULOOP de WM \_**](wm-exitmenuloop.md)
--   [**GETTITLEBARINFOEX de WM \_**](wm-gettitlebarinfoex.md)
--   [**MENUCOMMAND de WM \_**](wm-menucommand.md)
--   [**MENUDRAG de WM \_**](wm-menudrag.md)
--   [**MENUGETOBJECT de WM \_**](wm-menugetobject.md)
--   [**MENURBUTTONUP de WM \_**](wm-menurbuttonup.md)
--   [**NEXTMENU de WM \_**](wm-nextmenu.md)
--   [**UNINITMENUPOPUP de WM \_**](wm-uninitmenupopup.md)
+-   [**COMANDO \_ WM**](wm-command.md)
+-   [**WM \_ CONTEXTMENU**](wm-contextmenu.md)
+-   [**WM \_ ENTERMENULOOP**](wm-entermenuloop.md)
+-   [**WM \_ EXITMENULOOP**](wm-exitmenuloop.md)
+-   [**WM \_ GETTITLEBARINFOEX**](wm-gettitlebarinfoex.md)
+-   [**WM \_ MENUCOMMAND**](wm-menucommand.md)
+-   [**WM \_ MENUDRAG**](wm-menudrag.md)
+-   [**WM \_ MENUGETOBJECT**](wm-menugetobject.md)
+-   [**WM \_ MENURBUTTONUP**](wm-menurbuttonup.md)
+-   [**WM \_ NEXTMENU**](wm-nextmenu.md)
+-   [**WM \_ UNINITMENUPOPUP**](wm-uninitmenupopup.md)
 
 
 ## <a name="example"></a>Ejemplo
@@ -58,9 +58,9 @@ BOOL AboutDlg (
     return bRet;
 }
 ```
-Ejemplo tomado de [ejemplos clásicos de Windows](https://github.com/microsoft/Windows-classic-samples) en github.
+Ejemplo tomado de [ejemplos clásicos de Windows](https://github.com/microsoft/Windows-classic-samples) en GitHub.
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TDM_SET_ELEMENT_TEXT (commctrl. h)
-description: Actualiza un elemento de texto en un cuadro de diálogo de tarea.
+title: TDM_SET_ELEMENT_TEXT mensaje (Commctrl.h)
+description: 'TDM_SET_ELEMENT_TEXT mensaje: actualiza un elemento de texto en un cuadro de diálogo de tarea.'
 ms.assetid: e3f15805-5d48-4549-9959-69ec01345e57
 keywords:
-- TDM_SET_ELEMENT_TEXT controles de mensajes de Windows
+- TDM_SET_ELEMENT_TEXT de mensajes controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2229dc269f14c9a3b0765675dcc97dc9776b72c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6d0c8830a6d8a1057ab283a9e096434a6184151
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079709"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104033"
 ---
-# <a name="tdm_set_element_text-message"></a>\_Mensaje de \_ texto del elemento de conjunto de TDM \_
+# <a name="tdm_set_element_text-message"></a>Mensaje DE \_ TEXTO DEL ELEMENTO SET \_ \_ de TDM
 
 Actualiza un elemento de texto en un cuadro de diálogo de tarea.
 
@@ -29,19 +29,19 @@ Actualiza un elemento de texto en un cuadro de diálogo de tarea.
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Indica el elemento que se va a actualizar. (Para ver una ilustración, consulte Acerca de los [cuadros de diálogo de tareas](task-dialogs-overview.md)). Este parámetro debe ser uno de los valores siguientes.
+Indica el elemento que se debe actualizar. (Para obtener una ilustración, vea [Acerca de los cuadros de diálogo de tareas).](task-dialogs-overview.md) Este parámetro debe ser uno de los siguientes valores.
 
 
 
-| Value                                                                                                                                                                                           | Significado                          |
+| Valor                                                                                                                                                                                           | Significado                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**contenido de TDE \_**</dt> </dl>                                         | Contenido.<br/>              |
-| <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**TDE \_ información expandida \_**</dt> </dl> | Información expandida.<br/> |
-| <span id="TDE_FOOTER"></span><span id="tde_footer"></span><dl> <dt>**pie de página de TDE \_**</dt> </dl>                                            | Texto del pie de página.<br/>          |
-| <span id="TDE_MAIN_INSTRUCTION"></span><span id="tde_main_instruction"></span><dl> <dt>**\_instrucción principal de TDE \_**</dt> </dl>             | Instrucción principal.<br/>     |
+| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ de TDE**</dt> </dl>                                         | Contenido.<br/>              |
+| <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**INFORMACIÓN EXPANDIDA DE TDE \_ \_**</dt> </dl> | Información expandida.<br/> |
+| <span id="TDE_FOOTER"></span><span id="tde_footer"></span><dl> <dt>**PIE DE PÁGINA DE TDE \_**</dt> </dl>                                            | Texto del pie de página.<br/>          |
+| <span id="TDE_MAIN_INSTRUCTION"></span><span id="tde_main_instruction"></span><dl> <dt>**INSTRUCCIÓN PRINCIPAL DE TDE \_ \_**</dt> </dl>             | Instrucción principal.<br/>     |
 
 
 
@@ -49,10 +49,10 @@ Indica el elemento que se va a actualizar. (Para ver una ilustración, consulte 
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-Nuevo texto que se va a usar.
+Nuevo texto que se usará.
 
 </dd> </dl>
 
@@ -60,13 +60,13 @@ Nuevo texto que se va a usar.
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tamaño o el diseño del cuadro de diálogo de la tarea puede cambiar para dar cabida al nuevo texto.
+El tamaño o el diseño del cuadro de diálogo de tarea pueden cambiar para dar cabida al nuevo texto.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo establecer el texto del pie de página en el cuadro de diálogo de tarea representado por *hWnd*.
+El código de ejemplo siguiente muestra cómo establecer el texto del pie de página en el cuadro de diálogo de tarea representado por *hwnd*.
 
 
 ```C++
@@ -79,19 +79,19 @@ SendMessage(hwnd, TDM_SET_ELEMENT_TEXT, (WPARAM)TDE_FOOTER, (LPARAM)L"New footer
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_texto del \_ elemento de actualización de TDM \_**](tdm-update-element-text.md)
+[**TEXTO DEL ELEMENTO UPDATE DE TDM \_ \_ \_**](tdm-update-element-text.md)
 </dt> </dl>
 
  

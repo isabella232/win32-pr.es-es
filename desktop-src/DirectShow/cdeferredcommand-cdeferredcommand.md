@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CDeferredCommand.CDeferredCommand: método constructor.'
 ms.assetid: 0b372fa2-78a9-4e38-813c-f18123716c6d
-title: Constructor CDeferredCommand. CDeferredCommand (Ctlutil. h)
+title: Constructor CDeferredCommand.CDeferredCommand (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4e92a2ffc5129ee38fc5061b28ea7ffef49da0f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a10d8bba48902ed2d6fd66da8483cea1ba9aacc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681197"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119793"
 ---
-# <a name="cdeferredcommandcdeferredcommand-constructor"></a>Constructor CDeferredCommand. CDeferredCommand
+# <a name="cdeferredcommandcdeferredcommand-constructor"></a>Constructor CDeferredCommand.CDeferredCommand
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,21 +54,21 @@ CDeferredCommand(
 
 <dl> <dt>
 
-*pQ* 
+*Pq* 
 </dt> <dd>
 
-Puntero a un objeto que expone la interfaz [**IQueueCommand**](/windows/desktop/api/Control/nn-control-iqueuecommand) .
+Puntero a un objeto que expone la [**interfaz IQueueCommand.**](/windows/desktop/api/Control/nn-control-iqueuecommand)
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown** externa para la agregación.
+Puntero a la interfaz **IUnknown externa** para la agregación.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
 Puntero a un valor **HRESULT** devuelto.
@@ -89,17 +89,17 @@ Hora a la que se ejecutará el comando.
 
 </dd> <dt>
 
-*suscripto* 
+*Iid* 
 </dt> <dd>
 
-Puntero al identificador único global (**GUID**) de la interfaz que contiene el método.
+Puntero al identificador único global **(GUID)** de la interfaz que contiene el método .
 
 </dd> <dt>
 
 *dispidMethod* 
 </dt> <dd>
 
-Método de la interfaz que se va a llamar.
+Método en la interfaz a la que se llamará.
 
 </dd> <dt>
 
@@ -127,21 +127,21 @@ Puntero a una lista de tipos de variante de argumento.
 *pvarResult* 
 </dt> <dd>
 
-Puntero a una lista de tipos Variant devuelta, si existe.
+Puntero a una lista de tipo variante devuelta, si la hay.
 
 </dd> <dt>
 
 *puArgErr* 
 </dt> <dd>
 
-Puntero al último argumento de la lista de parámetros *pDispParams* con un error.
+Puntero al último argumento de la lista *de parámetros pDispParams* con un error.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-Valor que indica si el tiempo de comando aplazado está en tiempo de secuencia (**true**) o en tiempo de presentación (**false**).
+Valor que indica si el tiempo de comando diferido está en tiempo de secuencia (**TRUE**) o tiempo de presentación (**FALSE**).
 
 </dd> </dl>
 
@@ -151,16 +151,16 @@ Valor que indica si el tiempo de comando aplazado está en tiempo de secuencia (
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDeferredCommand**](cdeferredcommand.md)
+[**CDeferredCommand (clase)**](cdeferredcommand.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Ajusta el valor de saturación de un color.
+description: 'Función D3DXColorAdjustSaturation (D3dx9math.h): ajusta el valor de saturación de un color.'
 ms.assetid: 1f66c3b4-2f02-4993-80c6-c484180c2459
-title: Función D3DXColorAdjustSaturation (D3dx9math. h)
+title: Función D3DXColorAdjustSaturation (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4d9a801a8355c1a9399f9864f9b1753bbecc17b2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 878cdd83a04f594da3133eda314486af96ac3d56
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678826"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115873"
 ---
-# <a name="d3dxcoloradjustsaturation-function-d3dx9mathh"></a>Función D3DXColorAdjustSaturation (D3dx9math. h)
+# <a name="d3dxcoloradjustsaturation-function-d3dx9mathh"></a>Función D3DXColorAdjustSaturation (D3dx9math.h)
 
 Ajusta el valor de saturación de un color.
 
@@ -47,25 +47,25 @@ D3DXCOLOR* D3DXColorAdjustSaturation(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
+Puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PC* \[ de de\]
+*pC* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
+Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 </dd> <dt>
 
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de saturación. Este parámetro se interpola linealmente entre el color convertido a escala de grises y el color original, pC. No hay ningún límite en el valor de s. Si s es 0, el color devuelto es el color de escala de grises. Si es 1, el color devuelto es el color original.
+Valor de saturación. Este parámetro interpola linealmente entre el color convertido en escala de grises y el color original, pC. No hay límites en el valor de s. Si s es 0, el color devuelto es el color de escala de grises. Si s es 1, el color devuelto es el color original.
 
 </dd> </dl>
 
@@ -73,15 +73,15 @@ Valor de saturación. Este parámetro se interpola linealmente entre el color co
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Esta función devuelve un puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el resultado del ajuste de saturación.
+Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado del ajuste de saturación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El canal alfa de entrada se copia, sin modificar, en el canal alfa de salida.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, esta función se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, esta función se puede usar como parámetro para otra función.
 
-Esta función interpola los componentes de color rojo, verde y azul de una estructura [**D3DXCOLOR**](d3dxcolor.md) entre un color no saturado y un color, tal y como se muestra en el ejemplo siguiente.
+Esta función interpola los componentes de color rojo, verde y azul de una estructura [**D3DXCOLOR**](d3dxcolor.md) entre un color no saturado y un color, como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -111,12 +111,12 @@ r = g = b = 0.2125*r + 0.7154*g + 0.0721*b
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

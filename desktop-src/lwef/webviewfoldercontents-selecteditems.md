@@ -1,11 +1,11 @@
 ---
 title: Método WebViewFolderContents.SelectedItems (Shldisp.h)
-description: Obtiene un objeto FolderItems que representa todos los elementos seleccionados en la vista.
+description: 'Método WebViewFolderContents.SelectedItems: obtiene un objeto FolderItems que representa todos los elementos seleccionados en la vista.'
 ms.assetid: 683acac4-f157-4a75-a3f8-c693887c1ea5
 keywords:
-- Método SelectedItems características del entorno heredado de Windows
-- Método SelectedItems herencia de características de entorno de Windows, objeto WebViewFolderContents
-- Objeto WebViewFolderContents características de entorno de Windows heredadas, método SelectedItems
+- Características heredadas del entorno de Windows del método SelectedItems
+- SelectedItems method Legacy Windows Environment Features , WebViewFolderContents (Objeto WebViewFolderContents)
+- WebViewFolderContents object Legacy Windows Environment Features , SelectedItems method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cee4b7f34cdcabec637671af79775fc1fa546790
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 25a242991f6f9472610dffa20593f9cab5d8c310
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079681"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102653"
 ---
-# <a name="webviewfoldercontentsselecteditems-method"></a>WebViewFolderContents. SelectedItems (método)
+# <a name="webviewfoldercontentsselecteditems-method"></a>Método WebViewFolderContents.SelectedItems
 
-Obtiene un objeto [**FolderItems**](../shell/folderitems.md) que representa todos los elementos seleccionados en la vista.
+Obtiene un [**objeto FolderItems**](../shell/folderitems.md) que representa todos los elementos seleccionados en la vista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Tipo: **[ **FolderItems**](../shell/folderitems.md)\*\***
 
-Una referencia de objeto al objeto [**FolderItems**](../shell/folderitems.md) .
+Referencia de objeto al [**objeto FolderItems.**](../shell/folderitems.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método para JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML.
 
 
 ```HTML
@@ -86,13 +86,13 @@ En el ejemplo siguiente se muestra el uso correcto de este método para JScript 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

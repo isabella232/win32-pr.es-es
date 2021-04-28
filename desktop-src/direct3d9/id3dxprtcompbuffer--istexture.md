@@ -1,7 +1,7 @@
 ---
-description: Indica si el búfer contiene una textura.
+description: 'Método ID3DXPRTCompBuffer::IsTexture: indica si el búfer contiene una textura.'
 ms.assetid: d86425ff-febe-4966-95aa-df4ce95397c0
-title: 'ID3DXPRTCompBuffer:: IsTexture (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTCompBuffer::IsTexture (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8a4e58b2b41aa154da7c1b02bf99cfcca25e00cd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e58512ee538c2dc74251d9db6c0b86e6f185ed31
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721545"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107223"
 ---
-# <a name="id3dxprtcompbufferistexture-method"></a>ID3DXPRTCompBuffer:: IsTexture (método)
+# <a name="id3dxprtcompbufferistexture-method"></a>Método ID3DXPRTCompBuffer::IsTexture
 
 Indica si el búfer contiene una textura.
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve **true** si el búfer contiene una textura; Devuelve **false** en caso contrario.
+Devuelve **TRUE** si el búfer contiene una textura; devuelve **FALSE en caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Devuelve **true** si el búfer contiene una textura; Devuelve **false** en caso 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

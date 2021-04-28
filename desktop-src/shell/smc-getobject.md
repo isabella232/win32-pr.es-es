@@ -1,6 +1,6 @@
 ---
-description: Solicita un puntero a un objeto especificado.
-title: Mensaje de SMC_GETOBJECT (shobjidl. h)
+description: 'SMC_GETOBJECT mensaje: solicita un puntero a un objeto especificado.'
+title: SMC_GETOBJECT mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 36e8f304-a92a-485f-8413-b9c416087ec9
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5d0c0592356bff13e60c122b3c88cad05733e4f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58741290d741cc18fd788282d0f302ef87bb15dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997789"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100443"
 ---
-# <a name="smc_getobject-message"></a>\_Mensaje GETOBJECT de SMC
+# <a name="smc_getobject-message"></a>Mensaje \_ GETOBJECT de SMC
 
 Solicita un puntero a un objeto especificado.
 
@@ -38,14 +38,14 @@ SMC_GETOBJECT
 
 <dl> <dt>
 
-*suscripto* 
+*Iid* 
 </dt> <dd>
 
-IID asociado al objeto solicitado.
+El IID asociado al objeto solicitado.
 
 </dd> <dt>
 
-*FV* 
+*Pv* 
 </dt> <dd>
 
 Puntero void que recibe un puntero a la interfaz solicitada.
@@ -54,13 +54,13 @@ Puntero void que recibe un puntero a la interfaz solicitada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación. Cree el objeto solicitado y asigne un puntero a la interfaz solicitada a *PV*.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación. Cree el objeto solicitado y asigne un puntero a la interfaz solicitada a *pv*.
 
-Se pueden solicitar las siguientes interfaces.
+Se pueden solicitar las interfaces siguientes.
 
 -   [**IShellMenu**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenu)
 -   [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu)
@@ -71,12 +71,12 @@ Se pueden solicitar las siguientes interfaces.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Puntero al filtro que creó este pin.
+description: 'CTransInPlaceOutputPin::m_pTIPFilter miembro: puntero al filtro que creó este pin.'
 ms.assetid: e7939bce-d832-45e6-94fd-2f5e07792eef
-title: 'Miembro CTransInPlaceOutputPin:: m_pTIPFilter (TRANSip. h)'
+title: CTransInPlaceOutputPin::m_pTIPFilter miembro (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 67a6c953ab42546be442ded5b06e7b87c87c22ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e07ecb43ce879634f7c149adebeb4b01416e65e3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679243"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094693"
 ---
-# <a name="ctransinplaceoutputpinm_ptipfilter-member"></a>Miembro pTIPFilter CTransInPlaceOutputPin:: m \_
+# <a name="ctransinplaceoutputpinm_ptipfilter-member"></a>Miembro CTransInPlaceOutputPin::m \_ pTIPFilter
 
 Puntero al filtro que creó este pin.
 
@@ -42,16 +42,16 @@ CTransInPlaceFilter * const m_pTIPFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceOutputPin**](ctransinplaceoutputpin.md)
+[**CTransInPlaceOutputPin (clase)**](ctransinplaceoutputpin.md)
 </dt> </dl>
 
  

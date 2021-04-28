@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CBaseRenderer.~CBaseRenderer: método Destructor.'
 ms.assetid: d7d78226-d433-4cb8-bfb2-2e86c1b7009e
-title: CBaseRenderer. ~ CBaseRenderer (destructor)
+title: Destructor CBaseRenderer.~CBaseRenderer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e503412f2cc3d533219772114bcf6c7bc6d217d7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dfcc1a88d8bb5fc1317eb60d43187671f8f27eba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805857"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095963"
 ---
-# <a name="cbaserenderercbaserenderer-destructor"></a>CBaseRenderer. ~ CBaseRenderer (destructor)
+# <a name="cbaserenderercbaserenderer-destructor"></a>Destructor CBaseRenderer.~CBaseRenderer
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ Método de destructor.
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

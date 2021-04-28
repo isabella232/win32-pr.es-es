@@ -1,7 +1,7 @@
 ---
-description: El método CompleteConnect completa una conexión a otro PIN.
+description: 'Método CBasePin.CompleteConnect: el método CompleteConnect completa una conexión a otro pin.'
 ms.assetid: 10cbf29c-2e1a-419c-b0c0-c99f9a285810
-title: Método CBasePin. CompleteConnect (Amfilter. h)
+title: Método CBasePin.CompleteConnect (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9068bf63d3168a8c6d9e1bca2ef709f63e80a3c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee207d7a17f12cc81036fbd4f82ec49a99f4a31
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671614"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096043"
 ---
-# <a name="cbasepincompleteconnect-method"></a>CBasePin. CompleteConnect, método
+# <a name="cbasepincompleteconnect-method"></a>Método CBasePin.CompleteConnect
 
-El `CompleteConnect` método completa una conexión a otro PIN.
+El `CompleteConnect` método completa una conexión a otro pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ virtual HRESULT CompleteConnect(
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro PIN.
+Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a este método en ambos PIN al final del proceso de conexión. El PIN de conexión lo llama desde dentro del método [**CBasePin:: Connect**](cbasepin-connect.md) y el PIN receptor lo llama desde dentro del método [**CBasePin:: ReceiveConnection**](cbasepin-receiveconnection.md) .
+Se llama a este método en ambos pines al final del proceso de conexión. El pin de conexión lo llama desde el método [**CBasePin::Connect**](cbasepin-connect.md) y el pin receptor lo llama desde el método [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
 
-En la clase base, este método simplemente devuelve S \_ correcto. Si una clase derivada tiene algún requisito para completar una conexión, debe invalidar este método. Por ejemplo, la clase [**CBaseOutputPin**](cbaseoutputpin.md) usa este método para decidir el asignador de memoria.
+En la clase base, este método simplemente devuelve S \_ OK. Si una clase derivada tiene algún requisito para completar una conexión, debe invalidar este método. Por ejemplo, la [**clase CBaseOutputPin**](cbaseoutputpin.md) usa este método para decidir el asignador de memoria.
 
-Si se produce un error en este método, también se produce un error en el intento de conexión general y el PIN se desconecta del PIN receptor.
+Si se produce un error en este método, también se produce un error en el intento de conexión general y el pin se desconecta del pin receptor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,16 +67,16 @@ Si se produce un error en este método, también se produce un error en el inten
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

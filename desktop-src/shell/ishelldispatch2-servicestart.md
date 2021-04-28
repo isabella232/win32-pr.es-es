@@ -1,7 +1,7 @@
 ---
-description: Inicia un servicio con nombre.
+description: 'Método IShellDispatch2.ServiceStart: inicia un servicio con nombre.'
 ms.assetid: 3af57cdc-f449-433d-a9e1-119038045e4c
-title: Método IShellDispatch2. ServiceStart (Shldisp. h)
+title: Método IShellDispatch2.ServiceStart (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 508b4f1c05625acdaed2b5a235ee697cceb544c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0f4fa218c4def993025ff18bffd0cc54def9818
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984674"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117053"
 ---
-# <a name="ishelldispatch2servicestart-method"></a>IShellDispatch2. ServiceStart, método
+# <a name="ishelldispatch2servicestart-method"></a>Método IShellDispatch2.ServiceStart
 
 Inicia un servicio con nombre.
 
@@ -51,21 +51,21 @@ IShellDispatch2.ServiceStart( _
 
 <dl> <dt>
 
-*sServiceName* \[ de\]
+*sServiceName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Cadena** que contiene el nombre del servicio.
+Cadena **que** contiene el nombre del servicio.
 
 </dd> <dt>
 
-*vPersistent* \[ de\]
+*vPersistent* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Establézcalo en **true** para que el servicio se inicie automáticamente por el administrador de control de servicios durante el inicio del sistema. Establézcalo en **false** para dejar la configuración del servicio sin cambios.
+Establezca en **true para** que el administrador de control de servicios inicie automáticamente el servicio durante el inicio del sistema. Establezca en **false** para dejar la configuración del servicio sin cambios.
 
 </dd> </dl>
 
@@ -73,29 +73,29 @@ Establézcalo en **true** para que el servicio se inicie automáticamente por el
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Devuelve _ *true** si es correcto; en caso contrario, **false**.
+Devuelve **true si** se realiza correctamente; de lo contrario, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Devuelve _ *true** si es correcto; en caso contrario, **false**.
+Devuelve **true si** se realiza correctamente; de lo contrario, **false**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. ServiceStart**](./shell-servicestart.md) .
+Este método se implementa y se accede a través del [**método Shell.ServiceStart.**](./shell-servicestart.md)
 
-El método devuelve **false** si el servicio ya se ha iniciado. Antes de llamar a este método, puede llamar a [**Shell. IsServiceRunning**](./shell-isservicerunning.md) para determinar el estado del servicio.
+El método devuelve **false** si el servicio ya se ha iniciado. Antes de llamar a este método, puede llamar a [**Shell.IsServiceRunning**](./shell-isservicerunning.md) para determinar el estado del servicio.
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **ServiceStart** para iniciar el servicio Messenger. Se muestra el uso de JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **ServiceStart** para iniciar el servicio Messenger. El uso se muestra para JScript y VBScript.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -112,7 +112,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -136,13 +136,13 @@ VBScript
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
