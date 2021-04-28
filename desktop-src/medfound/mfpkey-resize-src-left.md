@@ -1,49 +1,49 @@
 ---
-description: Especifica el borde izquierdo del rectángulo de origen, en píxeles.
+description: 'MFPKEY_RESIZE_SRC_LEFT propiedad: especifica el borde izquierdo del rectángulo de origen, en píxeles.'
 ms.assetid: e7432b80-f3fa-4c2f-89db-87cd130d7447
-title: Propiedad MFPKEY_RESIZE_SRC_LEFT (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_SRC_LEFT propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffdd5302918b5d49610ffc1e8de2952fd1a2dab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a743ee9a21e9ff5a227a363c0c8d15faf48d1fcd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276291"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092873"
 ---
-# <a name="mfpkey_resize_src_left-property"></a><span data-ttu-id="f5b6e-103">MFPKEY \_ cambiar el tamaño de la \_ \_ propiedad src Left</span><span class="sxs-lookup"><span data-stu-id="f5b6e-103">MFPKEY\_RESIZE\_SRC\_LEFT Property</span></span>
+# <a name="mfpkey_resize_src_left-property"></a><span data-ttu-id="11115-103">MFPKEY \_ RESIZE \_ SRC \_ LEFT Property</span><span class="sxs-lookup"><span data-stu-id="11115-103">MFPKEY\_RESIZE\_SRC\_LEFT Property</span></span>
 
-<span data-ttu-id="f5b6e-104">Especifica el borde izquierdo del rectángulo de origen, en píxeles.</span><span class="sxs-lookup"><span data-stu-id="f5b6e-104">Specifies the left edge of the source rectangle, in pixels.</span></span>
+<span data-ttu-id="11115-104">Especifica el borde izquierdo del rectángulo de origen, en píxeles.</span><span class="sxs-lookup"><span data-stu-id="11115-104">Specifies the left edge of the source rectangle, in pixels.</span></span>
 
-## <a name="constant-for-ipropertybag"></a><span data-ttu-id="f5b6e-105">Constante para IPropertyBag</span><span class="sxs-lookup"><span data-stu-id="f5b6e-105">Constant for IPropertyBag</span></span>
+## <a name="constant-for-ipropertybag"></a><span data-ttu-id="11115-105">Constante para IPropertyBag</span><span class="sxs-lookup"><span data-stu-id="11115-105">Constant for IPropertyBag</span></span>
 
-<span data-ttu-id="f5b6e-106">Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span><span class="sxs-lookup"><span data-stu-id="f5b6e-106">Available only by using [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span></span>
+<span data-ttu-id="11115-106">Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span><span class="sxs-lookup"><span data-stu-id="11115-106">Available only by using [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="f5b6e-107">Tipo de datos</span><span class="sxs-lookup"><span data-stu-id="f5b6e-107">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="11115-107">Tipo de datos</span><span class="sxs-lookup"><span data-stu-id="11115-107">Data Type</span></span>
 
-<span data-ttu-id="f5b6e-108">VT \_ I4</span><span class="sxs-lookup"><span data-stu-id="f5b6e-108">VT\_I4</span></span>
+<span data-ttu-id="11115-108">VT \_ I4</span><span class="sxs-lookup"><span data-stu-id="11115-108">VT\_I4</span></span>
 
-## <a name="applies-to"></a><span data-ttu-id="f5b6e-109">Se aplica a</span><span class="sxs-lookup"><span data-stu-id="f5b6e-109">Applies To</span></span>
+## <a name="applies-to"></a><span data-ttu-id="11115-109">Se aplica a</span><span class="sxs-lookup"><span data-stu-id="11115-109">Applies To</span></span>
 
--   [<span data-ttu-id="f5b6e-110">Vídeo de tamaño DSP</span><span class="sxs-lookup"><span data-stu-id="f5b6e-110">Video Resizer DSP</span></span>](videoresizer.md)
+-   [<span data-ttu-id="11115-110">DSP de cambio de tamaño de vídeo</span><span class="sxs-lookup"><span data-stu-id="11115-110">Video Resizer DSP</span></span>](videoresizer.md)
 
-## <a name="requirements"></a><span data-ttu-id="f5b6e-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f5b6e-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="11115-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="11115-111">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f5b6e-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="f5b6e-112">Requirement</span></span> | <span data-ttu-id="f5b6e-113">Value</span><span class="sxs-lookup"><span data-stu-id="f5b6e-113">Value</span></span> |
+| <span data-ttu-id="11115-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="11115-112">Requirement</span></span> | <span data-ttu-id="11115-113">Valor</span><span class="sxs-lookup"><span data-stu-id="11115-113">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="f5b6e-114">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="f5b6e-114">Minimum supported client</span></span><br/> | <span data-ttu-id="f5b6e-115">Solo aplicaciones de escritorio de Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="f5b6e-115">Windows XP \[desktop apps only\]</span></span><br/>                                             |
-| <span data-ttu-id="f5b6e-116">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="f5b6e-116">Minimum supported server</span></span><br/> | <span data-ttu-id="f5b6e-117">Solo aplicaciones de escritorio de Windows Server 2003 \[\]</span><span class="sxs-lookup"><span data-stu-id="f5b6e-117">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="f5b6e-118">Encabezado</span><span class="sxs-lookup"><span data-stu-id="f5b6e-118">Header</span></span><br/>                   | <dl> <span data-ttu-id="f5b6e-119"><dt>Wmcodecdsp. h</dt></span><span class="sxs-lookup"><span data-stu-id="f5b6e-119"><dt>Wmcodecdsp.h</dt></span></span> </dl> |
+| <span data-ttu-id="11115-114">Cliente mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="11115-114">Minimum supported client</span></span><br/> | <span data-ttu-id="11115-115">Solo aplicaciones de escritorio de Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="11115-115">Windows XP \[desktop apps only\]</span></span><br/>                                             |
+| <span data-ttu-id="11115-116">Servidor mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="11115-116">Minimum supported server</span></span><br/> | <span data-ttu-id="11115-117">Solo aplicaciones de escritorio de Windows Server 2003 \[\]</span><span class="sxs-lookup"><span data-stu-id="11115-117">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="11115-118">Encabezado</span><span class="sxs-lookup"><span data-stu-id="11115-118">Header</span></span><br/>                   | <dl> <span data-ttu-id="11115-119"><dt>Wmcodecdsp.h</dt></span><span class="sxs-lookup"><span data-stu-id="11115-119"><dt>Wmcodecdsp.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f5b6e-120">Vea también</span><span class="sxs-lookup"><span data-stu-id="f5b6e-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="11115-120">Consulte también</span><span class="sxs-lookup"><span data-stu-id="11115-120">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f5b6e-121">Propiedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="f5b6e-121">Media Foundation Properties</span></span>](media-foundation-properties.md)
+[<span data-ttu-id="11115-121">Media Foundation propiedades</span><span class="sxs-lookup"><span data-stu-id="11115-121">Media Foundation Properties</span></span>](media-foundation-properties.md)
 </dt> </dl>
 
  
