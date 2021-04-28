@@ -1,7 +1,7 @@
 ---
-description: El método GetTypeInfo recupera la información de tipo para el objeto, que se puede usar para obtener la información de tipo de una interfaz.
+description: 'Método CMediaPosition.GetTypeInfo: el método GetTypeInfo recupera la información de tipo del objeto , que luego se puede usar para obtener la información de tipo de una interfaz.'
 ms.assetid: 0a04c43d-8b4b-4780-b02f-04053c405c77
-title: Método CMediaPosition. GetTypeInfo (Ctlutil. h)
+title: Método CMediaPosition.GetTypeInfo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6fa776ca71daff67185bf9fd2c1727f9535f8ac4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7827a3599f05061b5760084bed46cd2554b45f9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671556"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099143"
 ---
-# <a name="cmediapositiongettypeinfo-method"></a>CMediaPosition. GetTypeInfo, método
+# <a name="cmediapositiongettypeinfo-method"></a>Método CMediaPosition.GetTypeInfo
 
-El `GetTypeInfo` método recupera la información de tipo para el objeto, que se puede usar para obtener la información de tipo de una interfaz.
+El método recupera la información de tipo del objeto , que luego se puede usar `GetTypeInfo` para obtener la información de tipo de una interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ HRESULT GetTypeInfo(
 *itinfo* 
 </dt> <dd>
 
-Información de tipo que se va a devolver. Debe ser cero.
+Escriba la información que se devolverá. Debe ser cero.
 
 </dd> <dt>
 
@@ -61,21 +61,21 @@ Identificador de configuración regional.
 *pptinfo* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero **ITypeInfo** .
+Dirección de una variable que recibe un **puntero ITypeInfo.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                             | Descripción                                    |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                    | Correcto.<br/>                            |
-| <dl> <dt>**\_puntero E**</dt> </dl>               | Argumento de puntero **nulo** .<br/>          |
-| <dl> <dt>**Escriba \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | El parámetro *itinfo* no es cero.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Correcto.<br/>                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>               | **Argumento de** puntero NULL.<br/>          |
+| <dl> <dt>**TYPE \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | El *parámetro itinfo* no es cero.<br/> |
 
 
 
@@ -87,16 +87,16 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CMediaPosition**](cmediaposition.md)
+[**CMediaPosition (clase)**](cmediaposition.md)
 </dt> </dl>
 
  

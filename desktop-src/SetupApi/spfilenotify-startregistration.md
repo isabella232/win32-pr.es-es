@@ -1,21 +1,21 @@
 ---
-description: Cuando se usa la Directiva RegisterDlls INF para registrar automáticamente los archivos dll, los autores de la llamada de SetupInstallFromInfSection pueden recibir notificaciones en cada archivo a medida que se registra o se anula su registro.
+description: 'SPFILENOTIFY_STARTREGISTRATION mensaje: al usar la directiva REGISTERDlls INF para registrar automáticamente archivos DLL, los llamadores de SetupInstallFromInfSection pueden recibir notificaciones en cada archivo a medida que se registra o se anula el registro.'
 ms.assetid: 0faf277c-7805-478f-9cec-0dd7b6acdb0e
-title: Mensaje de SPFILENOTIFY_STARTREGISTRATION (setupapi. h)
+title: SPFILENOTIFY_STARTREGISTRATION mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfe795af38c21c17bf4e81692985d4bfe50dc8f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47e71a884d079515436f296faf515a83a985311e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668171"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094503"
 ---
-# <a name="spfilenotify_startregistration-message"></a>SPFILENOTIFY \_ STARTREGISTRATION
+# <a name="spfilenotify_startregistration-message"></a>Mensaje DE SPFILENOTIFY \_ STARTREGISTRATION
 
-Cuando se usa la directiva **RegisterDlls** inf para registrar automáticamente los archivos dll, los autores de la llamada de [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) pueden recibir notificaciones en cada archivo a medida que se registra o se anula su registro. Para enviar una notificación de **SPFILENOTIFY \_ STARTREGISTRATION** a la rutina de devolución de llamada una vez antes de registrar un archivo, incluya \_ el bloque REGISTERCALLBACKAWARE más el marcador de giro \_ en el parámetro *Flags* de **SetupInstallFromInfSection**. Para enviar una notificación de anulación del registro, incluya \_ REGISTERCALLBACKAWARE más \_ de UNREGSVRs en el parámetro *Flags* .
+Al usar la **directiva REGISTERDlls** INF para registrar automáticamente archivos DLL, los llamadores de [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) pueden recibir notificaciones en cada archivo a medida que se registra o se anula el registro. Para enviar una notificación **SPFILENOTIFY \_ STARTREGISTRATION** a la rutina de devolución de llamada una vez antes de registrar un archivo, incluya SPINST \_ REGISTERCALLBACKAWARE más SPINST REGSVR en el parámetro \_ *Flags* de **SetupInstallFromInfSection**. Para enviar una notificación de anulación del registro, incluya SPINST \_ REGISTERCALLBACKAWARE más SPINST UNREGSVR en el \_ *parámetro Flags.*
 
-La rutina de devolución de llamada especificada por el parámetro *MsgHandler* de [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) debe ser el tipo de [devolución de \_ \_ llamada de archivo PSP](/windows/win32/api/setupapi/nc-setupapi-psp_file_callback_a). Establezca el parámetro de *contexto* en el mismo *contexto* especificado en **SetupInstallFromInfSection**. Establezca el parámetro de *notificación* en **SPFILENOTIFY \_ STARTREGISTRATION**.
+La rutina de devolución de llamada especificada por el parámetro *MsgHandler* de [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) debe ser del tipo [PSP FILE \_ \_ CALLBACK](/windows/win32/api/setupapi/nc-setupapi-psp_file_callback_a). Establezca el *parámetro Context* en el mismo *contexto* especificado en **SetupInstallFromInfSection**. Establezca el *parámetro Notification* **en SPFILENOTIFY \_ STARTREGISTRATION**.
 
 
 ```C++
@@ -31,17 +31,17 @@ SPFILENOTIFY_STARTREGISTRATION
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura de estado de control de registro de SP que contiene información sobre el archivo que se va a registrar o cuya registro se va a anular. [**\_ \_ \_**](/windows/desktop/api/Setupapi/ns-setupapi-sp_register_control_statusa) El miembro **cbsize** debe establecerse en el tamaño de la estructura. El miembro **filename** debe establecerse en la ruta de acceso completa del archivo que se va a registrar. **Win32Error** no se utiliza y debe establecerse en ningún \_ error. **FailureCode** no se utiliza y debe establecerse en SPREG \_ Success.
+Puntero a una [**estructura SP REGISTER CONTROL \_ \_ \_ STATUS**](/windows/desktop/api/Setupapi/ns-setupapi-sp_register_control_statusa) que contiene información sobre el archivo que se está registrando o anulando el registro. El **cbsize del** miembro debe establecerse en el tamaño de la estructura . El **miembro FileName** debe establecerse en la ruta de acceso completa del archivo que se va a registrar. **Win32Error** no se usa y debe establecerse en NO \_ ERROR. **FailureCode** no se usa y debe establecerse en SPREG \_ SUCCESS.
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Si el archivo se está registrando, *parám2* debe establecerse en un puntero a un valor distinto de cero. Si se va a anular el registro del archivo, *parám2* debe establecerse en un puntero a cero.
+Si el archivo se está registrando, *Param2* debe establecerse en un puntero a un valor distinto de cero. Si se anula el registro del archivo, *Param2* debe establecerse en un puntero a cero.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Después de recibir la notificación, la función de devolución de llamada pued
 
 | Código devuelto                                                                                  | Descripción                                                                                        |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_anulación de FILEOP**</dt> </dl> | No registre ni anule el registro del archivo y detenga el procesamiento de la sección INF.<br/>             |
-| <dl> <dt>**FILEOP \_ Doit**</dt> </dl>  | Registre o anule el registro del archivo y continúe procesando la sección INF.<br/>                |
-| <dl> <dt>**\_Omitir archivo**</dt> </dl>    | Omitir el registro o anular el registro del archivo, pero continuar procesando la sección INF<br/> |
+| <dl> <dt>**FILEOP \_ ABORT**</dt> </dl> | No registre ni desinscriba el archivo y detenga el procesamiento de la sección INF.<br/>             |
+| <dl> <dt>**FILEOP \_ DOIT**</dt> </dl>  | Registre o anula el registro del archivo y continúe procesando la sección INF.<br/>                |
+| <dl> <dt>**FILE \_ SKIP**</dt> </dl>    | Omitir el registro o la anulación del registro del archivo, pero continuar procesando la sección INF<br/> |
 
 
 
@@ -65,11 +65,11 @@ Después de recibir la notificación, la función de devolución de llamada pued
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

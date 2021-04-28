@@ -1,7 +1,7 @@
 ---
-description: El método BeginFlush inicia una operación de vaciado.
+description: 'Método COutputQueue.BeginFlush: el método BeginFlush comienza una operación de vaciado.'
 ms.assetid: d37b611e-742f-4bdf-bd72-a91cd1c473b3
-title: Método COutputQueue. BeginFlush (Outputq. h)
+title: Método COutputQueue.BeginFlush (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 462c3027e38bd94f061eb927c0d52576e29c997b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e7c6168daf766ec11e18e86673d9d25542b50462
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671216"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099033"
 ---
-# <a name="coutputqueuebeginflush-method"></a>COutputQueue. BeginFlush, método
+# <a name="coutputqueuebeginflush-method"></a>Método COutputQueue.BeginFlush
 
-El `BeginFlush` método inicia una operación de vaciado.
+El `BeginFlush` método comienza una operación de vaciado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece la variable miembro [**COutputQueue:: m \_ BFlushing**](coutputqueue-m-bflushing.md) en **true**. Si el objeto utiliza un subproceso, el subproceso llama al método [**COutputQueue:: FreeSamples**](coutputqueue-freesamples.md) para liberar cualquier ejemplo pendiente. De lo contrario, el objeto llama a **FreeSamples** durante el método [**COutputQueue:: EndFlush**](coutputqueue-endflush.md) . Este método también establece la variable miembro [**COutputQueue:: m \_ HR**](coutputqueue-m-hr.md) en S \_ false, lo que hace que el objeto descarte todos los ejemplos nuevos.
+Este método establece la variable [**miembro COutputQueue::m \_ bFlushing**](coutputqueue-m-bflushing.md) en **TRUE.** Si el objeto usa un subproceso, el subproceso llama al método [**COutputQueue::FreeSamples**](coutputqueue-freesamples.md) para liberar los ejemplos pendientes. De lo contrario, el objeto **llama a FreeSamples** durante [**el método COutputQueue::EndFlush.**](coutputqueue-endflush.md) Este método también establece la variable [**miembro COutputQueue::m \_ hr**](coutputqueue-m-hr.md) en S FALSE, lo que hace que el objeto descarte \_ todos los ejemplos nuevos.
 
-El objeto pasa la notificación de vaciado de nivel inferior llamando al método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en el PIN de entrada.
+El objeto pasa la notificación de vaciado de bajada llamando al [**método IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en el pin de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,16 +56,16 @@ El objeto pasa la notificación de vaciado de nivel inferior llamando al método
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

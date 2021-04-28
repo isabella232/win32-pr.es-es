@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CEnumMediaTypes.~CEnumMediaTypes: método Destructor.'
 ms.assetid: 7da81391-aaac-4cc7-9e64-856e1d13b61d
-title: CEnumMediaTypes. ~ CEnumMediaTypes (Amfilter. h)
+title: Destructor CEnumMediaTypes.~CEnumMediaTypes (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5e1725a338c88706e7f8a5f80cdcc5712f6f15d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de761e740f6cb75c635cfd463e3d7d4ba22b7612
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671164"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099243"
 ---
-# <a name="cenummediatypescenummediatypes-destructor"></a>CEnumMediaTypes. ~ CEnumMediaTypes (destructor)
+# <a name="cenummediatypescenummediatypes-destructor"></a>Destructor CEnumMediaTypes.~CEnumMediaTypes
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ virtual ~CEnumMediaTypes();
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CEnumMediaTypes**](cenummediatypes.md)
+[**CEnumMediaTypes (clase)**](cenummediatypes.md)
 </dt> </dl>
 
  

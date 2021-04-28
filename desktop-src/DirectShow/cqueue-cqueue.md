@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CQueue.CQueue (Wxutil.h): método constructor.'
 ms.assetid: 4dcbb088-638b-49a6-afaf-a973e13bd5fb
-title: Constructor CQueue. CQueue (Wxutil. h)
+title: Constructor CQueue.CQueue (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f013a1e009c533b8307b07fe6faf32ce70994948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2fe1d44f4d8d6867ddb6fa4763d794aa0a32c55
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679446"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098953"
 ---
-# <a name="cqueuecqueue-constructor-wxutilh"></a>Constructor CQueue. CQueue (Wxutil. h)
+# <a name="cqueuecqueue-constructor-wxutilh"></a>Constructor CQueue.CQueue (Wxutil.h)
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ CQueue(
 *n* 
 </dt> <dd>
 
-Tamaño de la cola que se va a crear.
+Tamaño de la cola que se creará.
 
 </dd> </dl>
 
@@ -55,16 +55,16 @@ Tamaño de la cola que se va a crear.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CQueue**](cqueue.md)
+[**CQueue (clase)**](cqueue.md)
 </dt> </dl>
 
  

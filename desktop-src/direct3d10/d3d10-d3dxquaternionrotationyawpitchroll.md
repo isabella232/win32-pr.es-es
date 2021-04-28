@@ -1,7 +1,7 @@
 ---
-description: Crea un cuaternión con el guiñada, el tono y el rollo dados.
+description: 'Función D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h): crea un cuaternión con el yaw, pitch y roll dados.'
 ms.assetid: c929d9d4-b9cb-4de6-86c1-26fec3617846
-title: Función D3DXQuaternionRotationYawPitchRoll (D3DX10Math. h)
+title: Función D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7d894be61f5f22322f83c4e4a6c6a724de4b9da4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cefcf9a927cee0d8f7c83ff42ae6ca4fc699bb09
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708003"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108753"
 ---
-# <a name="d3dxquaternionrotationyawpitchroll-function-d3dx10mathh"></a>Función D3DXQuaternionRotationYawPitchRoll (D3DX10Math. h)
+# <a name="d3dxquaternionrotationyawpitchroll-function-d3dx10mathh"></a>Función D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h)
 
-Crea un cuaternión con el guiñada, el tono y el rollo dados.
+Crea un cuaternión con el guión, el lanzamiento y el lanzamiento dados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,34 +48,34 @@ D3DXQUATERNION* D3DXQuaternionRotationYawPitchRoll(
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero al [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de la operación.
+Puntero a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*Guiñada* \[ de\]
+*Yaw* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Guiña alrededor del eje y, en radianes.
+Eje Y alrededor del eje Y, en radianes.
 
 </dd> <dt>
 
-*Paso* \[ de\]
+*Pitch* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Paso alrededor del eje x, en radianes.
+Inclinar alrededor del eje X, en radianes.
 
 </dd> <dt>
 
-Poner al *día* \[ de\]
+*Roll* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desplazarse alrededor del eje z, en radianes.
+Revierte el eje Z, en radianes.
 
 </dd> </dl>
 
@@ -83,13 +83,13 @@ Desplazarse alrededor del eje z, en radianes.
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero a una estructura D3DXQUATERNION con el guiñada, el tono y el rollo especificados.
+Puntero a una estructura D3DXQUATERNION con el guión, el paso y el lanzamiento especificados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXQuaternionRotationYawPitchRoll se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXQuaternionRotationYawPitchRoll se puede usar como parámetro para otra función.
 
-Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para cualquier entrada de cuaternión que no esté ya normalizada.
+Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,12 +97,12 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para cualqui
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Conjuga y vuelve a normalizar un cuaternión.
+description: 'Función D3DXQuaternionInverse (D3dx9math.h): conjuga y reenmasa un cuaternión.'
 ms.assetid: 25407a60-f7c0-4063-8d1d-2d6d03bdb217
-title: Función D3DXQuaternionInverse (D3dx9math. h)
+title: Función D3DXQuaternionInverse (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b2f830b7f8f797e4ed94eb22b4c2a05c3bd3e4cd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6ebb2520efa3c7c78d98fd8b90ec1ba9615e9927
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424484"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094073"
 ---
-# <a name="d3dxquaternioninverse-function-d3dx9mathh"></a>Función D3DXQuaternionInverse (D3dx9math. h)
+# <a name="d3dxquaternioninverse-function-d3dx9mathh"></a>Función D3DXQuaternionInverse (D3dx9math.h)
 
-Conjuga y vuelve a normalizar un cuaternión.
+Conjuga y reemita un cuaternión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ D3DXQUATERNION* D3DXQuaternionInverse(
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a la estructura [**D3DXQUATERNION**](d3dxquaternion.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXQUATERNION**](d3dxquaternion.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pQ* \[ de\]
+*pQ* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntero a la estructura de [**D3DXQUATERNION**](d3dxquaternion.md) de origen.
+Puntero a la estructura [**D3DXQUATERNION de**](d3dxquaternion.md) origen.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Puntero a la estructura de [**D3DXQUATERNION**](d3dxquaternion.md) de origen.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a una estructura [**D3DXQUATERNION**](d3dxquaternion.md) que es el cuaternión inverso del cuaternión.
+Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) que es el cuaternión inverso del cuaternión.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 ```
@@ -76,9 +76,9 @@ The natural logarithm of Q is, ln(Q) = (0, theta * v)
 
 
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXQuaternionInverse** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXQuaternionInverse** se puede usar como parámetro para otra función.
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para cualquier entrada de cuaternión que no esté ya normalizada.
+Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,12 +86,12 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para cualquier ent
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

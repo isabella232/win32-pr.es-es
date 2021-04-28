@@ -1,19 +1,19 @@
 ---
-description: Especifica si el audio de 2 canales se codifica como estéreo o dual mono.
+description: 'Propiedad AVEncAudioDualMono: especifica si el audio de 2 canales está codificado como estéreo o mono dual.'
 ms.assetid: 37f25590-69c2-43bd-a5d4-2262457cb39d
-title: Propiedad AVEncAudioDualMono (Codecapi. h)
+title: Propiedad AVEncAudioDualMono (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0a5b684638133a1449fc849348cdfd8627533fe
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b58cbd901079d8f4dede1efae140791ae99c7fed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666147"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096583"
 ---
 # <a name="avencaudiodualmono-property"></a>Propiedad AVEncAudioDualMono
 
-Especifica si el audio de 2 canales se codifica como estéreo o dual mono.
+Especifica si el audio de 2 canales está codificado como estéreo o mono dual.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,32 +27,32 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncAudioDualMono**](/windows/win32/api/codecapi/ne-codecapi-eavencaudiodualmono) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncAudioDualMono.**](/windows/win32/api/codecapi/ne-codecapi-eavencaudiodualmono)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad no se aplica a los codificadores de audio MPEG. Para MPEG Audio, use la propiedad [**AVEncMPACodingMode**](avencmpacodingmode-property.md) .
+Esta propiedad no se aplica a los codificadores de audio MPEG. Para el audio MPEG, use [**la propiedad AVEncMPACodingMode.**](avencmpacodingmode-property.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Aplicaciones de escritorio de Windows 2000 Professional \[ \| para aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows 2000 Server \[ \| para aplicaciones para UWP\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

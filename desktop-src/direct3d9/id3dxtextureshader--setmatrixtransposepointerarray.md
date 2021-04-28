@@ -1,7 +1,7 @@
 ---
-description: Establece una matriz de punteros a matrices transpuestas.
+description: 'Método ID3DXTextureShader::SetMatrixTransposePointerArray: establece una matriz de punteros en matrices transpuestas.'
 ms.assetid: 2b9f1efe-b2ea-416b-a370-202db57b1925
-title: 'ID3DXTextureShader:: SetMatrixTransposePointerArray (método) (D3DX9Shader. h)'
+title: Método ID3DXTextureShader::SetMatrixTransposePointerArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cd7c81dcb0fd9b9354c2536a91abaebfe8e4315b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 46e04c8c86bd0cdf7acea44872d00ad19f620ee6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670239"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090153"
 ---
-# <a name="id3dxtextureshadersetmatrixtransposepointerarray-method"></a>ID3DXTextureShader:: SetMatrixTransposePointerArray (método)
+# <a name="id3dxtextureshadersetmatrixtransposepointerarray-method"></a>Método ID3DXTextureShader::SetMatrixTransposePointerArray
 
-Establece una matriz de punteros a matrices transpuestas.
+Establece una matriz de punteros para matrices transpuestas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT SetMatrixTransposePointerArray(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE](d3dxfx.md).
+Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE.](d3dxfx.md)
 
 </dd> <dt>
 
-*ppMatrix* \[ de\]
+*ppMatrix* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \* \***
 
-Matriz de punteros a matrices transpuestas. Vea [**D3DXMATRIX**](d3dxmatrix.md).
+Matriz de punteros a matrices transpuestas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de matrices de la matriz.
 
@@ -73,9 +73,9 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
 
@@ -85,12 +85,12 @@ Una matriz transpuesta contiene datos principales de columna; es decir, cada vec
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

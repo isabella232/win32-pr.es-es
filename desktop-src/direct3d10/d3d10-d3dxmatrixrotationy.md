@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz que gira alrededor del eje y.
+description: 'Función D3DXMatrixRotationY (D3DX10Math.h): crea una matriz que gira alrededor del eje Y.'
 ms.assetid: b58def9b-29dc-4c7d-89a3-188ef9b9f94f
-title: Función D3DXMatrixRotationY (D3DX10Math. h)
+title: Función D3DXMatrixRotationY (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1ae6c0be4e9e53b62a0504997bfd4687fa3fcab5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 570179fadc9008c5f919acf657541e53ab399ac8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104548070"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108973"
 ---
-# <a name="d3dxmatrixrotationy-function-d3dx10mathh"></a>Función D3DXMatrixRotationY (D3DX10Math. h)
+# <a name="d3dxmatrixrotationy-function-d3dx10mathh"></a>Función D3DXMatrixRotationY (D3DX10Math.h)
 
-Crea una matriz que gira alrededor del eje y.
+Crea una matriz que gira alrededor del eje Y.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ D3DXMATRIX* D3DXMatrixRotationY(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*Ángulo* \[ de\]
+*Ángulo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Ángulo de rotación en radianes. Los ángulos se miden en el sentido de las agujas del reloj al mirar el eje de giro hacia el origen.
+Ángulo de rotación en radianes. Los ángulos se miden en el sentido de las agujas del reloj al mirar a lo largo del eje de rotación hacia el origen.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX girada alrededor del eje y.
+Puntero a una estructura D3DXMATRIX girada alrededor del eje Y.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXMatrixRotationY se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixRotationY se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

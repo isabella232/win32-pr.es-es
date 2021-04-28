@@ -1,7 +1,7 @@
 ---
-description: Crea otro enumerador que contiene el mismo estado de enumeración que el actual.
+description: 'Método IEnumPStoreItems::Clone: crea otro enumerador que contiene el mismo estado de enumeración que el actual.'
 ms.assetid: ab9eaf63-54e4-4322-9bb5-227982b15c73
-title: 'IEnumPStoreItems:: Clone (método) (pstore. h)'
+title: Método IEnumPStoreItems::Clone (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 919c0359f5c7f6d3ab547f53a105246c43e20fb5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 29b618881305296a560dc9102f7571c08236d1bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661156"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089333"
 ---
-# <a name="ienumpstoreitemsclone-method"></a>IEnumPStoreItems:: Clone (método)
+# <a name="ienumpstoreitemsclone-method"></a>IEnumPStoreItems::Clone (Método)
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[El almacenamiento protegido (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Crea otro enumerador que contiene el mismo estado de enumeración que el actual.
 
@@ -41,16 +41,16 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppenum* \[ enuncia\]
+*laum* \[ out\]
 </dt> <dd>
 
-Un puntero a un puntero [**IEnumPStoreItems**](ienumpstoreitems.md) .
+Puntero a un [**puntero IEnumPStoreItems.**](ienumpstoreitems.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor **HRESULT** .
+El valor devuelto es **un valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,12 +58,12 @@ El valor devuelto es un valor **HRESULT** .
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

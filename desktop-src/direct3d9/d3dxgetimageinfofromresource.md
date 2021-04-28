@@ -1,7 +1,7 @@
 ---
-description: Recupera información acerca de una imagen determinada en un recurso.
+description: 'Función D3DXGetImageInfoFromResource: recupera información sobre una imagen determinada en un recurso.'
 ms.assetid: 1f811b1e-f0bd-4f64-a4c9-caf899470940
-title: Función D3DXGetImageInfoFromResource (D3dx9tex. h)
+title: Función D3DXGetImageInfoFromResource (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6875719123fe0b4dca4405570703b2587492975b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ea324ef94ab765bad25f7d07eef07972ab94cff6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821079"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114453"
 ---
-# <a name="d3dxgetimageinfofromresource-function"></a>D3DXGetImageInfoFromResource función)
+# <a name="d3dxgetimageinfofromresource-function"></a>Función D3DXGetImageInfoFromResource
 
-Recupera información acerca de una imagen determinada en un recurso.
+Recupera información sobre una imagen determinada en un recurso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT D3DXGetImageInfoFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ de\]
+*hSrcModule* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Módulo en el que se carga el recurso. Establezca este parámetro en **null** para especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
+Módulo donde se carga el recurso. Establezca este parámetro en **NULL para** especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
 
 </dd> <dt>
 
-*pSrcFile* \[ de\]
+*pSrcFile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve como LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*pSrcInfo* \[ de\]
+*pSrcInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ info**](d3dximage-info.md)\***
+Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntero a una estructura de [**\_ información D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con la descripción de los datos del archivo de código fuente.
+Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con la descripción de los datos del archivo de origen.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntero a una estructura de [**\_ información D3DXIMAGE**](d3dximage-info.md) q
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve como D3DXGetImageInfoFromResourceW. De lo contrario, la llamada de función se resuelve como D3DXGetImageInfoFromResourceA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXGetImageInfoFromResourceW. De lo contrario, la llamada de función se resuelve en D3DXGetImageInfoFromResourceA porque se usan cadenas ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,12 +85,12 @@ La configuración del compilador también determina la versión de la función. 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

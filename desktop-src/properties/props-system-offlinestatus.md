@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.OfflineStatus
 ms.assetid: 0badb5dd-6342-4110-b7a9-0b291dfe8578
-title: System. OfflineStatus
+title: System.OfflineStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78cb96a100b863bf01faa17552f4770bcd770d5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11789e1bdf11787c363bcfb4e714494d2ab6647d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909242"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097313"
 ---
-# <a name="systemofflinestatus"></a>System. OfflineStatus
+# <a name="systemofflinestatus"></a>System.OfflineStatus
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -66,7 +66,7 @@ propertyDescription
             defineToken = OFFLINESTATUS_OFFLINE_SUSPENDED
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -165,9 +165,9 @@ propertyDescription
             defineName = OFFLINESTATUS_OFFLINE_SUSPENDED
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -182,7 +182,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -194,7 +194,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -212,7 +212,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Transforma una matriz (x, y, z, 1) por una matriz determinada.
+description: 'Función D3DXVec3TransformArray (D3DX10Math.h): transforma una matriz (x, y, z, 1) por una matriz determinada.'
 ms.assetid: f64c55df-ea93-4c93-be89-eee650e6ecf0
-title: Función D3DXVec3TransformArray (D3DX10Math. h)
+title: Función D3DXVec3TransformArray (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 9ae223d4e1b8c424230ba12719f25258dae18548
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bc38f0ef634763d9a5be85795a897b483431aede
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083772"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108123"
 ---
-# <a name="d3dxvec3transformarray-function-d3dx10mathh"></a>Función D3DXVec3TransformArray (D3DX10Math. h)
+# <a name="d3dxvec3transformarray-function-d3dx10mathh"></a>Función D3DXVec3TransformArray (D3DX10Math.h)
 
-Transforma una matriz (x, y, z, 1) por una matriz determinada.
+Transforma una matriz (x, y, z, 1) mediante una matriz determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,50 +49,50 @@ D3DXVECTOR4* D3DXVec3TransformArray(
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntero a la matriz [**D3DXVECTOR4**](d3d10-d3dxvector4.md) que es el resultado de la operación.
+Puntero a la [**matriz D3DXVECTOR4**](d3d10-d3dxvector4.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-Retrasos  \[ de\]
+*OutStride* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Intervalo entre vectores en el flujo de datos de salida.
+Paso entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
-*PV* \[ de\]
+*pV* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a la matriz de [**D3DXVECTOR3**](d3d10-d3dxvector3.md) de origen.
+Puntero a la matriz [**D3DXVECTOR3 de**](d3d10-d3dxvector3.md) origen.
 
 </dd> <dt>
 
-*VStride* \[ de\]
+*VStride* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Intervalo entre vectores en el flujo de datos de entrada.
+Paso entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
-*p. m* \[ de\]
+*pM* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a la estructura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origen.
+Puntero a la estructura [**D3DXMATRIX de**](d3d10-d3dxmatrix.md) origen.
 
 </dd> <dt>
 
-*n* \[ in\]
+*n* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de elementos de la matriz.
 
@@ -102,13 +102,13 @@ Número de elementos de la matriz.
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntero a una matriz transformada [**D3DXVECTOR4**](d3d10-d3dxvector4.md) .
+Puntero a una [**matriz transformada D3DXVECTOR4.**](d3d10-d3dxvector4.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función transforma la matriz pV (x, y, z, 1) de la matriz pM.
+Esta función transforma la matriz pV (x, y, z, 1) por el pM de matriz.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función D3DXVec3TransformArray se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXVec3TransformArray se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -116,11 +116,11 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

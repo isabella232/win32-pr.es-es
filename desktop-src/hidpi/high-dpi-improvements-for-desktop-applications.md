@@ -1,75 +1,75 @@
 ---
-title: Mixed-Mode de escala de PPP y las API que reconocen PPP
-description: .
+title: Mixed-Mode DE ESCALADO DE PPP y API con reconocimiento de PPP
+description: Mixed-Mode DE ESCALADO DE PPP y API con reconocimiento de PPP
 ms.assetid: 44AC0B29-3283-4801-90F5-3E78CCD87B9F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb9f8a8f72b199aaba195002134855155925b30d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2244ea79d489ae1e20260f72336c15bc64b97de0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995122"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090103"
 ---
-# <a name="mixed-mode-dpi-scaling-and-dpi-aware-apis"></a>Mixed-Mode de escala de PPP y las API que reconocen PPP
+# <a name="mixed-mode-dpi-scaling-and-dpi-aware-apis"></a>Mixed-Mode DE ESCALADO DE PPP y API con reconocimiento de PPP
 
-## <a name="sub-process-dpi-awareness-support"></a>Compatibilidad con reconocimiento de PPP de Sub-Process
+## <a name="sub-process-dpi-awareness-support"></a>Sub-Process reconocimiento de PPP
 
-[**SetThreadDpiAwarenessContext**](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext) habilita el uso de diferentes modos de escala de PPP dentro de un único proceso. Antes de la actualización de aniversario de Windows 10, se ha enlazado un reconocimiento de PPP de ventana con el modo de reconocimiento de PPP para todo el proceso (no es consciente de PPP, reconocimiento de PPP del sistema o reconocimiento de PPP Per-Monitor). Pero ahora, con **SetThreadDpiAwarenessContext**, las ventanas de nivel superior pueden tener un modo de reconocimiento de PPP diferente del modo de reconocimiento de PPP para todo el proceso. Esto también afecta a las ventanas secundarias, ya que siempre tendrán el mismo modo de reconocimiento de PPP que su ventana primaria.
+[**SetThreadDpiAwarenessContext permite**](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext) el uso de diferentes modos de escalado de PPP dentro de un único proceso. Antes de la Actualización de aniversario de Windows 10, el reconocimiento de PPP de una ventana se enlazaba al modo de reconocimiento de PPP en todo el proceso (PPP no consciente, compatible con PPP del sistema o Per-Monitor reconocimiento de PPP). Pero ahora, con **SetThreadDpiAwarenessContext,** las ventanas de nivel superior pueden tener un modo de reconocimiento de PPP diferente al del modo de reconocimiento de PPP en todo el proceso. Esto también afecta a las ventanas secundarias, ya que siempre tendrán el mismo modo de reconocimiento de PPP que su ventana primaria.
 
-El uso de **SetThreadDpiAwarenessContext** permite a los desarrolladores decidir dónde desean centrar sus esfuerzos de desarrollo al definir un comportamiento específico de PPP para las aplicaciones de escritorio. Por ejemplo, la ventana principal de nivel superior de una aplicación se puede escalar por monitor, mientras que las ventanas secundarias de nivel superior podrían escalarse a través del sistema operativo mediante el escalado de mapa de bits.
+El uso de **SetThreadDpiAwarenessContext** permite a los desarrolladores decidir dónde quieren centrar sus esfuerzos de desarrollo al definir el comportamiento específico de PPP para las aplicaciones de escritorio. Por ejemplo, la ventana de nivel superior principal de una aplicación se podría escalar por monitor, mientras que las ventanas secundarias de nivel superior se podrían escalar mediante el escalado de mapas de bits por parte del sistema operativo.
 
-## <a name="the-dpi-awareness-context"></a>El contexto de reconocimiento de PPP
+## <a name="the-dpi-awareness-context"></a>Contexto de reconocimiento de PPP
 
-Antes de la disponibilidad de **SetThreadDpiAwarenessContext** , el reconocimiento de PPP de un proceso se definió en el manifiesto del archivo binario de la aplicación o mediante una llamada a [**SetProcessDpiAwareness**](/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-setprocessdpiawareness) durante la inicialización del proceso. Con **SetThreadDpiAwarenessContext**, cada subproceso puede tener un contexto de reconocimiento de PPP individual que puede ser diferente del modo de reconocimiento de PPP en todo el proceso. El contexto de reconocimiento de PPP de un subproceso se representa con el tipo de reconocimiento de reconocimiento * * * * [PPP \_ \_ *](dpi-awareness-context.md) * * * y se comporta de las siguientes maneras:
+Antes de la disponibilidad de **SetThreadDpiAwarenessContext,** el reconocimiento de PPP de un proceso se definió en el manifiesto del binario de la aplicación o mediante una llamada a [**SetProcessDpiAwareness**](/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-setprocessdpiawareness) durante la inicialización del proceso. Con **SetThreadDpiAwarenessContext,** cada subproceso puede tener un contexto de reconocimiento de PPP individual que puede ser diferente del modo de reconocimiento de PPP en todo el proceso. El contexto de reconocimiento de PPP de un subproceso se representa con el tipo *:CONTEXTO DE RECONOCIMIENTO de [ \_ \_ PPP*'](dpi-awareness-context.md) y se comporta de las maneras siguientes:
 
--   Un subproceso puede tener su contexto de reconocimiento de PPP cambiado en cualquier momento.
--   Cualquier llamada API que se realice después de cambiar el contexto se ejecutará en el contexto de PPP correspondiente (y se puede virtualizar).
--   Cuando se crea una ventana, su reconocimiento de PPP se define como el reconocimiento de PPP del subproceso de llamada en ese momento.
--   Cuando se llama al procedimiento de ventana de una ventana, el subproceso se cambia automáticamente al contexto de reconocimiento de PPP que estaba en uso al crear la ventana.
+-   Un subproceso puede cambiar su contexto de reconocimiento de PPP en cualquier momento.
+-   Las llamadas API que se realizan después de cambiar el contexto se ejecutarán en el contexto de PPP correspondiente (y se pueden virtualizar).
+-   Cuando se crea una ventana, su reconocimiento de PPP se define como el reconocimiento de PPP del subproceso que realiza la llamada en ese momento.
+-   Cuando se llama al procedimiento de ventana para una ventana, el subproceso cambia automáticamente al contexto de reconocimiento de PPP que estaba en uso cuando se creó la ventana.
 
-Un escenario común para el uso de **SetThreadDpiAwarenessContext** es el siguiente: comenzar con un subproceso que se ejecuta con un contexto (por ejemplo, el **contexto de reconocimiento de PPP \_ \_ \_ por \_ monitor \_**) se cambia temporalmente a un contexto diferente (no se reconoce el contexto de reconocimiento de PPP), se crea una ventana y, a continuación, se vuelve a cambiar inmediatamente el contexto del subproceso a su estado anterior.**\_ \_ \_** La ventana creada tendrá un contexto de PPP de **contexto de reconocimiento de PPP \_ \_ \_ inconsciente**, mientras que el contexto del subproceso que realiza la llamada se restaurará a un **contexto de reconocimiento de PPP \_ \_ \_ por \_ monitor \_** , con una llamada subsiguiente a **SetThreadDpiAwarenessContext**. En este escenario, la ventana asociada con el subproceso que realiza la llamada se ejecutaría con un contexto por monitor (y, por lo tanto, no se ajustará al mapa de bits por el sistema operativo), mientras que la ventana recién creada no tenía reconocimiento de PPP (y, por lo tanto, se ajustaría automáticamente el mapa de bits en un conjunto de pantallas para 100 >el escalado
+Un escenario común para el uso de **SetThreadDpiAwarenessContext** es el siguiente: Comience con un subproceso que se ejecuta con un contexto (como CONTEXTO DE RECONOCIMIENTO DE PPP **PER MONITOR \_ \_ \_ \_ \_ AWARE)** cambie temporalmente a un contexto diferente (CONTEXTO DE RECONOCIMIENTO DE **PPP \_ \_ \_ UNAWARE),** cree una ventana y, a continuación, vuelva a cambiar inmediatamente el contexto del subproceso a su estado anterior. La ventana creada tendrá un contexto de PPP de CONTEXTO DE RECONOCIMIENTO DE **PPP \_ \_ \_ UNAWARE**, mientras que el contexto del subproceso que realiza la llamada se restaurará a CONTEXTO DE RECONOCIMIENTO DE **PPP PER MONITOR \_ \_ \_ \_ \_ AWARE** con una llamada posterior a **SetThreadDpiAwarenessContext**. En este escenario, la ventana asociada al subproceso que realiza la llamada se ejecutaría con un contexto por monitor (y, por lo tanto, el sistema operativo no ajustaría el mapa de bits), mientras que la ventana recién creada no sería compatible con PPP (y, por lo tanto, se ajustaría automáticamente el mapa de bits en un conjunto de pantalla >escalado al 100 %).
 
-La figura 1 muestra cómo se ejecuta el subproceso de proceso principal con el **contexto de reconocimiento de PPP \_ \_ \_ por \_ monitor**, cambia su contexto a un **contexto de reconocimiento de PPP no \_ \_ \_ compatible** y crea una nueva ventana. A continuación, la ventana recién creada se ejecuta con un contexto de reconocimiento de PPP de **contexto de reconocimiento de PPP sin tener en \_ \_ \_ cuenta** cuando se envía un mensaje a él o cuando se realizan llamadas a la API. Inmediatamente después de crear la nueva ventana, el subproceso principal se restaura a su contexto anterior de **contexto de reconocimiento de PPP \_ \_ \_ por \_ monitor**.
+En la figura 1 se muestra cómo se ejecuta el subproceso de proceso principal con EL CONTEXTO DE RECONOCIMIENTO DE **PPP \_ POR \_ \_ \_ MONITOR,** cambia su contexto a CONTEXTO DE RECONOCIMIENTO DE **PPP \_ \_ \_ UNAWARE** y crea una nueva ventana. A continuación, la ventana recién creada se ejecuta con un contexto de reconocimiento de PPP de CONTEXTO DE RECONOCIMIENTO DE **PPP \_ \_ \_ UNAWARE** cada vez que se le envía un mensaje o se realizan llamadas API desde él. Inmediatamente después de crear la nueva ventana, el subproceso principal se restaura a su contexto anterior de **CONTEXTO DE RECONOCIMIENTO DE PPP POR \_ \_ \_ \_ MONITOR.**
 
-![diagrama que muestra el reconocimiento de PPP por monitor en acción](images/dpi-awareness-context.png)
+![diagrama que muestra el reconocimiento de ppp por monitor en acción](images/dpi-awareness-context.png)
 
-## <a name="new-dpi-related-apis"></a>Nuevas API relacionadas con DPI
+## <a name="new-dpi-related-apis"></a>Nuevas API relacionadas con PPP
 
-Además de la compatibilidad con los distintos modos de reconocimiento de PPP dentro de un único proceso que **SetThreadDpiAwarenessContext** ofrece, se ha agregado la siguiente funcionalidad específica de PPP para las aplicaciones de escritorio:<dl> <dd>[EnableNonClientDpiScaling****](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling)<dl> <dt>
+Además de la compatibilidad con diferentes modos de reconocimiento de PPP dentro de un único proceso que **ofrece SetThreadDpiAwarenessContext,** se ha agregado la siguiente funcionalidad específica de PPP para las aplicaciones de escritorio:<dl> <dd>[EnableNonClientDpiScaling**](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling)<dl> <dt>
 
 
 
 > [!Note]  
-> El modo de reconocimiento de PPP **por monitor V2** habilita automáticamente esta funcionalidad y, por lo tanto, la llamada a **EnableNonClientDpiScaling** no es necesaria en las aplicaciones que la usan.
+> El modo de reconocimiento de PPP por monitor **V2** habilita automáticamente esta funcionalidad y, por tanto, no es necesario llamar a **EnableNonClientDpiScaling** en las aplicaciones que la usan.
 
  
 
-La llamada a **EnableNonClientDpiScaling** desde dentro de un controlador de Windows s **WM \_ NCCREATE** dará lugar a que el área no cliente de una ventana de nivel superior se ajuste automáticamente al valor de PPP. Si la ventana de nivel superior tiene en cuenta el reconocimiento de PPP por monitor (ya sea porque el propio proceso tiene reconocimiento de PPP por monitor o porque la ventana se ha creado en un subproceso con reconocimiento de PPP por monitor), la barra de título, las barras de desplazamiento, los menús y las barras de menús de estas ventanas tendrán una escala de PPP cada vez que cambie la ventana.
+Al llamar a **EnableNonClientDpiScaling** desde dentro del controlador **\_ WM NCCREATE** de una ventana, el área no cliente de una ventana de nivel superior se escalará automáticamente para PPP. Si la ventana de nivel superior es compatible con PPP por monitor (ya sea porque el propio proceso es compatible con PPP por monitor o porque la ventana se creó dentro de un subproceso compatible con PPP por monitor), la barra de subtítulos, las barras de desplazamiento, los menús y las barras de menú de estas ventanas escalarán ppp cada vez que cambie el PPP de la ventana.
 </dt> <dt>
 
-Tenga en cuenta que las áreas que no son de cliente de una ventana secundaria, como las barras de desplazamiento que no son de cliente de un control de edición secundario, no reducirán automáticamente la escala de PPP cuando se use esta API.
+Tenga en cuenta que las áreas no cliente de una ventana secundaria, como las barras de desplazamiento que no son de cliente de un control de edición secundario, no escalarán ppp automáticamente cuando se utilice esta API.
 </dt> <dt>
 
 > [!Note]  
-> Se debe llamar a **EnableNonClientDpiScaling** desde el controlador de **\_ NCCREATE de WM** .
+> **Se debe llamar a EnableNonClientDpiScaling** desde el **controlador \_ NCCREATE de WM.**
 
-</dt> </dl> </dd> <dd> <b> Las API de * ForDpi </b>
+</dt> </dl> </dd> <dd> <b> Las API *ForDpi </b>
 
--   Varias API usadas con frecuencia, como [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) , no tienen ningún contexto de HWND y, por lo tanto, no tienen ninguna manera de deducir el reconocimiento de PPP adecuado para sus valores devueltos. Llamar a estas API desde un subproceso que se está ejecutando en un modo o contexto de reconocimiento de PPP diferente puede devolver valores que no se ajustan al contexto del subproceso que realiza la llamada. [* * * * GetSystemMetricForDpi * *](/windows/desktop/api/Winuser/nf-winuser-getsystemmetricsfordpi)* *, [* * * * SystemParametersInfoForDpi * *](/windows/desktop/api/Winuser/nf-winuser-systemparametersinfofordpi)* *, y [* * * * AdjustWindowRectExForDpi *](/windows/desktop/api/Winuser/nf-winuser-adjustwindowrectexfordpi) * * * realizará la misma funcionalidad que sus homólogos sin reconocimiento de PPP, pero toma un DPI como argumento e infiere el reconocimiento de PPP del contexto del subproceso actual.
--   **GetSystemMetricForDpi** y **SystemParametersInfoForDpi** devolverán valores de métricas del sistema con escala de PPP y valores de parámetros del sistema de acuerdo con esta ecuación:
+-   Varias API usadas con frecuencia, como [**GetSystemMetrics,**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) no tienen ningún contexto de HWND y, por lo tanto, no tienen ninguna manera de inducir el reconocimiento de PPP adecuado para sus valores devueltos. Llamar a estas API desde un subproceso que se ejecuta en un contexto o modo de reconocimiento de PPP diferente puede devolver valores que no se escalan para el contexto del subproceso que realiza la llamada. [***GetSystemMetricForDpi*,***SystemParametersInfoForDpi**](/windows/desktop/api/Winuser/nf-winuser-getsystemmetricsfordpi)y [***AdjustWindowRectExForDpi**](/windows/desktop/api/Winuser/nf-winuser-adjustwindowrectexfordpi) realizarán la misma funcionalidad que sus homólogos sin reconocimiento de PPP, pero tomarán un VALOR DE PPP como argumento e deducirán el reconocimiento de ppp del contexto del subproceso actual. [](/windows/desktop/api/Winuser/nf-winuser-systemparametersinfofordpi)
+-   **GetSystemMetricForDpi** y **SystemParametersInfoForDpi** devolverán valores de métricas del sistema a escala de PPP y valores de parámetros del sistema de acuerdo con esta ecuación:
 
     |                                                                 |
     |-----------------------------------------------------------------|
-    | GetSystemMetrics (...) @ DPI = = GetSystemMetricsForDpi (..., DPI) |
+    | GetSystemMetrics(...) @ ppp == GetSystemMetricsForDpi(..., ppp) |
 
     
 
      
 
-    Por lo tanto, al llamar a **GetSystemMetrics** (o **SystemParametersInfoForDpi**), mientras se ejecuta en un dispositivo con un determinado valor de PPP del sistema, se devolverá el mismo valor que sus variantes que reconocen PPP (**GetSystemMetricsForDpi** y **SystemParametersInfoForDpi**), dado el mismo valor de PPP que la entrada.
+    Por lo tanto, al llamar a **GetSystemMetrics** (o **SystemParametersInfoForDpi),** mientras se ejecuta en un dispositivo con un determinado valor de PPP del sistema, se devolverá el mismo valor que sus variantes con reconocimiento de PPP **(GetSystemMetricsForDpi** y **SystemParametersInfoForDpi),** dado el mismo valor de PPP que la entrada.
 
--   [**AdjustWindowRectExForDpi**](/windows/desktop/api/Winuser/nf-winuser-adjustwindowrectexfordpi) toma un HWND y calcula el tamaño necesario del rectángulo de una ventana con distinción de PPP.
+-   [**AdjustWindowRectExForDpi**](/windows/desktop/api/Winuser/nf-winuser-adjustwindowrectexfordpi) toma un HWND y calculará el tamaño necesario de un rectángulo de ventana de una manera sensible a PPP.
 
 </dd> <dd>
 
@@ -77,14 +77,14 @@ Tenga en cuenta que las áreas que no son de cliente de una ventana secundaria, 
 
 | Modo de reconocimiento de PPP de HWND | Valor devuelto                                                                                                                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Consciente                    | 96                                                                                                                                                                                                            |
-| System                     | PPP del sistema                                                                                                                                                                                                |
-| Per-Monitor                | El PPP de la pantalla en la que se encuentra principalmente la ventana de nivel superior asociada <br/> (Si se proporciona una ventana secundaria, se devolverá el PPP de la ventana primaria de nivel superior correspondiente)<br/> |
+| Conscientes                    | 96                                                                                                                                                                                                            |
+| Sistema                     | Ppp del sistema                                                                                                                                                                                                |
+| Per-Monitor                | Ppp de la pantalla en la que se encuentra principalmente la ventana de nivel superior asociada <br/> (Si se proporciona una ventana secundaria, se devolverá el valor de PPP de la ventana primaria de nivel superior correspondiente)<br/> |
 
 </dt> </dl> </dd> <dd><b><a href="/windows/desktop/api/Winuser/nf-winuser-getdpiforsystem">GetDpiForSystem</a></b><dl> <dt>
 
-Llamar a **GetDpiForSystem** es más eficaz que llamar a [**GetDC**](/windows/desktop/api/winuser/nf-winuser-getdc) y [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para obtener el PPP del sistema.
+Llamar **a GetDpiForSystem es** más eficaz que llamar a [**GetDC**](/windows/desktop/api/winuser/nf-winuser-getdc) y [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para obtener el ppp del sistema.
 </dt> <dt>
 
-Cualquier componente que pueda ejecutarse en una aplicación que utilice el reconocimiento de PPP de subproceso no debe suponer que el PPP del sistema es estático durante el ciclo de vida del proceso. Por ejemplo, si un subproceso que se ejecuta con el contexto de reconocimiento de **PPP que \_ \_ \_ contenga** contexto de conocimiento no compatible consulta el PPP del sistema, la respuesta será 96. Sin embargo, si el mismo subproceso cambió al contexto de reconocimiento **\_ \_ \_ del sistema de contexto de reconocimiento de PPP** y vuelve a consultar el PPP del sistema, la respuesta podría ser diferente. Para evitar el uso de un valor de PPP del sistema (y posiblemente obsoleto) en caché, use **GetDpiForSystem** para recuperar el valor de PPP del sistema en relación con el modo de reconocimiento de PPP del subproceso que realiza la llamada. 
+Cualquier componente que pueda ejecutarse en una aplicación que use reconocimiento de PPP de sub process no debe suponer que el PPP del sistema es estático durante el ciclo de vida del proceso. Por ejemplo, si un subproceso que se ejecuta en CONTEXTO DE RECONOCIMIENTO DE **PPP \_ \_ \_ UNWARE** consulta el PPP del sistema, la respuesta será 96. Sin embargo, si ese mismo subproceso cambió al contexto de reconocimiento del SISTEMA DE CONTEXTO DE RECONOCIMIENTO DE PPP y volvió a consultar el VALOR PPP del sistema, la respuesta podría ser diferente. **\_ \_ \_** Para evitar el uso de un valor de PPP del sistema almacenado en caché (y posiblemente obsoleto), use **GetDpiForSystem** para recuperar el PPP del sistema en relación con el modo de reconocimiento de PPP del subproceso que realiza la llamada. 
 </dt> </dl> </dd> </dl>

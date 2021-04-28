@@ -1,7 +1,7 @@
 ---
-description: Método de destructor.
+description: 'Destructor CSeekingPassThru.~CSeekingPassThru : método destructor.'
 ms.assetid: 98e00ff2-0175-4c44-9a7f-c5c1b23f8fce
-title: CSeekingPassThru. ~ CSeekingPassThru (Seekpt. h)
+title: Destructor CSeekingPassThru.~CSeekingPassThru (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 926cb0fd9b50ab3c83b740ec9bd1e28c9a406d11
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6ed17cf4fd57f3470a57b22daafa9858ba97f79
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670724"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085393"
 ---
-# <a name="cseekingpassthrucseekingpassthru-destructor"></a>CSeekingPassThru. ~ CSeekingPassThru (destructor)
+# <a name="cseekingpassthrucseekingpassthru-destructor"></a>Destructor CSeekingPassThru.~CSeekingPassThru
 
-Método de destructor.
+Método destructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ Método de destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Seekpt. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Seekpt.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CSeekingPassThru**](cseekingpassthru.md)
+[**CSeekingPassThru (clase)**](cseekingpassthru.md)
 </dt> </dl>
 
  
