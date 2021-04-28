@@ -1,7 +1,7 @@
 ---
-description: Establece un valor BOOLEANO.
+description: 'Método ID3DXBaseEffect::SetBool: establece un valor BOOL.'
 ms.assetid: bb7c4860-50a0-416a-b9e0-5a2bec113e3c
-title: 'ID3DXBaseEffect:: SetBool (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::SetBool (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: be137ac210297b9fce12dafaffb6fead61d39512
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5045c26f521da289899c8f8bc0d97b7eaf01826f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717549"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097523"
 ---
-# <a name="id3dxbaseeffectsetbool-method"></a><span data-ttu-id="d8edc-103">ID3DXBaseEffect:: SetBool (método)</span><span class="sxs-lookup"><span data-stu-id="d8edc-103">ID3DXBaseEffect::SetBool method</span></span>
+# <a name="id3dxbaseeffectsetbool-method"></a><span data-ttu-id="aa76b-103">Método ID3DXBaseEffect::SetBool</span><span class="sxs-lookup"><span data-stu-id="aa76b-103">ID3DXBaseEffect::SetBool method</span></span>
 
-<span data-ttu-id="d8edc-104">Establece un valor BOOLEANO.</span><span class="sxs-lookup"><span data-stu-id="d8edc-104">Sets a BOOL value.</span></span>
+<span data-ttu-id="aa76b-104">Establece un valor BOOL.</span><span class="sxs-lookup"><span data-stu-id="aa76b-104">Sets a BOOL value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d8edc-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="d8edc-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="aa76b-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="aa76b-105">Syntax</span></span>
 
 
 ```C++
@@ -37,53 +37,53 @@ HRESULT SetBool(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="d8edc-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="d8edc-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="aa76b-106">Parámetros</span><span class="sxs-lookup"><span data-stu-id="aa76b-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="d8edc-107">*hParameter* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="d8edc-107">*hParameter* \[in\]</span></span>
+<span data-ttu-id="aa76b-107">*hParameter* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="aa76b-107">*hParameter* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d8edc-108">Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**</span><span class="sxs-lookup"><span data-stu-id="d8edc-108">Type: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**</span></span>
+<span data-ttu-id="aa76b-108">Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**</span><span class="sxs-lookup"><span data-stu-id="aa76b-108">Type: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**</span></span>
 
-<span data-ttu-id="d8edc-109">Identificador único.</span><span class="sxs-lookup"><span data-stu-id="d8edc-109">Unique identifier.</span></span> <span data-ttu-id="d8edc-110">Vea [identificadores (Direct3D 9)](handles.md).</span><span class="sxs-lookup"><span data-stu-id="d8edc-110">See [Handles (Direct3D 9)](handles.md).</span></span>
+<span data-ttu-id="aa76b-109">Identificador único.</span><span class="sxs-lookup"><span data-stu-id="aa76b-109">Unique identifier.</span></span> <span data-ttu-id="aa76b-110">Vea [Identificadores (Direct3D 9).](handles.md)</span><span class="sxs-lookup"><span data-stu-id="aa76b-110">See [Handles (Direct3D 9)](handles.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="d8edc-111">*b* \[ en\]</span><span class="sxs-lookup"><span data-stu-id="d8edc-111">*b* \[in\]</span></span>
+<span data-ttu-id="aa76b-111">*b* \[ en\]</span><span class="sxs-lookup"><span data-stu-id="aa76b-111">*b* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d8edc-112">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="d8edc-112">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="aa76b-112">Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="aa76b-112">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="d8edc-113">Valor booleano.</span><span class="sxs-lookup"><span data-stu-id="d8edc-113">Boolean value.</span></span>
+<span data-ttu-id="aa76b-113">Valor booleano.</span><span class="sxs-lookup"><span data-stu-id="aa76b-113">Boolean value.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="d8edc-114">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="d8edc-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="aa76b-114">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="aa76b-114">Return value</span></span>
 
-<span data-ttu-id="d8edc-115">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="d8edc-115">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="aa76b-115">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="aa76b-115">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="d8edc-116">Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="d8edc-116">If the method succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="d8edc-117">Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.</span><span class="sxs-lookup"><span data-stu-id="d8edc-117">If the method fails, the return value can be D3DERR\_INVALIDCALL.</span></span>
+<span data-ttu-id="aa76b-116">Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="aa76b-116">If the method succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="aa76b-117">Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.</span><span class="sxs-lookup"><span data-stu-id="aa76b-117">If the method fails, the return value can be D3DERR\_INVALIDCALL.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="d8edc-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d8edc-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="aa76b-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="aa76b-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="d8edc-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="d8edc-119">Requirement</span></span> | <span data-ttu-id="d8edc-120">Value</span><span class="sxs-lookup"><span data-stu-id="d8edc-120">Value</span></span> |
+| <span data-ttu-id="aa76b-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="aa76b-119">Requirement</span></span> | <span data-ttu-id="aa76b-120">Value</span><span class="sxs-lookup"><span data-stu-id="aa76b-120">Value</span></span> |
 |--------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="d8edc-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="d8edc-121">Header</span></span><br/>  | <dl> <span data-ttu-id="d8edc-122"><dt>D3DX9Shader. h</dt></span><span class="sxs-lookup"><span data-stu-id="d8edc-122"><dt>D3DX9Shader.h</dt></span></span> </dl> |
-| <span data-ttu-id="d8edc-123">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="d8edc-123">Library</span></span><br/> | <dl> <span data-ttu-id="d8edc-124"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="d8edc-124"><dt>D3dx9.lib</dt></span></span> </dl>     |
+| <span data-ttu-id="aa76b-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="aa76b-121">Header</span></span><br/>  | <dl> <span data-ttu-id="aa76b-122"><dt>D3DX9Shader.h</dt></span><span class="sxs-lookup"><span data-stu-id="aa76b-122"><dt>D3DX9Shader.h</dt></span></span> </dl> |
+| <span data-ttu-id="aa76b-123">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="aa76b-123">Library</span></span><br/> | <dl> <span data-ttu-id="aa76b-124"><dt>D3dx9.lib</dt></span><span class="sxs-lookup"><span data-stu-id="aa76b-124"><dt>D3dx9.lib</dt></span></span> </dl>     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="d8edc-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="d8edc-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aa76b-125">Consulte también</span><span class="sxs-lookup"><span data-stu-id="aa76b-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d8edc-126">ID3DXBaseEffect</span><span class="sxs-lookup"><span data-stu-id="d8edc-126">ID3DXBaseEffect</span></span>](id3dxbaseeffect.md)
+[<span data-ttu-id="aa76b-126">ID3DXBaseEffect</span><span class="sxs-lookup"><span data-stu-id="aa76b-126">ID3DXBaseEffect</span></span>](id3dxbaseeffect.md)
 </dt> <dt>
 
-[<span data-ttu-id="d8edc-127">**GetBool**</span><span class="sxs-lookup"><span data-stu-id="d8edc-127">**GetBool**</span></span>](id3dxbaseeffect--getbool.md)
+[<span data-ttu-id="aa76b-127">**GetBool**</span><span class="sxs-lookup"><span data-stu-id="aa76b-127">**GetBool**</span></span>](id3dxbaseeffect--getbool.md)
 </dt> </dl>
 
  
