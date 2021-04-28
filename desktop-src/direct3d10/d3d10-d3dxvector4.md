@@ -1,7 +1,7 @@
 ---
-description: Describe un vector de cuatro componentes que incluye sobrecargas de operador y conversiones de tipo.
+description: 'Estructura D3DXVECTOR4 (D3DX10Math.h): describe un vector de cuatro componentes que incluye sobrecargas de operador y conversión de tipos.'
 ms.assetid: c6348346-f317-48ed-a369-e39fdb4dc1d6
-title: Estructura D3DXVECTOR4 (D3DX10Math. h)
+title: Estructura D3DXVECTOR4 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: ce65fe5cc6de9d842fb7c93b1089e53b9b27920c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2e3af4c11922d7433c56b9353482eba8d374d5a5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424499"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102833"
 ---
-# <a name="d3dxvector4-structure-d3dx10mathh"></a><span data-ttu-id="40eeb-103">Estructura D3DXVECTOR4 (D3DX10Math. h)</span><span class="sxs-lookup"><span data-stu-id="40eeb-103">D3DXVECTOR4 structure (D3DX10Math.h)</span></span>
+# <a name="d3dxvector4-structure-d3dx10mathh"></a><span data-ttu-id="2c35e-103">Estructura D3DXVECTOR4 (D3DX10Math.h)</span><span class="sxs-lookup"><span data-stu-id="2c35e-103">D3DXVECTOR4 structure (D3DX10Math.h)</span></span>
 
-<span data-ttu-id="40eeb-104">Describe un vector de cuatro componentes que incluye sobrecargas de operador y conversiones de tipo.</span><span class="sxs-lookup"><span data-stu-id="40eeb-104">Describes a four-component vector including operator overloads and type casts.</span></span>
+<span data-ttu-id="2c35e-104">Describe un vector de cuatro componentes, incluidas las sobrecargas de operadores y las conversión de tipos.</span><span class="sxs-lookup"><span data-stu-id="2c35e-104">Describes a four-component vector including operator overloads and type casts.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="40eeb-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="40eeb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2c35e-105">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="2c35e-105">Syntax</span></span>
 
 
 ```C++
@@ -38,59 +38,59 @@ typedef struct D3DXVECTOR4 {
 
 
 
-## <a name="members"></a><span data-ttu-id="40eeb-106">Miembros</span><span class="sxs-lookup"><span data-stu-id="40eeb-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="2c35e-106">Miembros</span><span class="sxs-lookup"><span data-stu-id="2c35e-106">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="40eeb-107">**x**</span><span class="sxs-lookup"><span data-stu-id="40eeb-107">**x**</span></span>
+<span data-ttu-id="2c35e-107">**x**</span><span class="sxs-lookup"><span data-stu-id="2c35e-107">**x**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="40eeb-108">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="40eeb-108">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="2c35e-108">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="2c35e-108">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="40eeb-109">Componente x.</span><span class="sxs-lookup"><span data-stu-id="40eeb-109">The x-component.</span></span>
+<span data-ttu-id="2c35e-109">Componente x.</span><span class="sxs-lookup"><span data-stu-id="2c35e-109">The x-component.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="40eeb-110">**y**</span><span class="sxs-lookup"><span data-stu-id="40eeb-110">**y**</span></span>
+<span data-ttu-id="2c35e-110">**y**</span><span class="sxs-lookup"><span data-stu-id="2c35e-110">**y**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="40eeb-111">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="40eeb-111">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="2c35e-111">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="2c35e-111">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="40eeb-112">Componente y.</span><span class="sxs-lookup"><span data-stu-id="40eeb-112">The y-component.</span></span>
+<span data-ttu-id="2c35e-112">Componente Y.</span><span class="sxs-lookup"><span data-stu-id="2c35e-112">The y-component.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="40eeb-113">**z**</span><span class="sxs-lookup"><span data-stu-id="40eeb-113">**z**</span></span>
+<span data-ttu-id="2c35e-113">**z**</span><span class="sxs-lookup"><span data-stu-id="2c35e-113">**z**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="40eeb-114">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="40eeb-114">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="2c35e-114">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="2c35e-114">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="40eeb-115">Componente z.</span><span class="sxs-lookup"><span data-stu-id="40eeb-115">The z-component.</span></span>
+<span data-ttu-id="2c35e-115">Componente z.</span><span class="sxs-lookup"><span data-stu-id="2c35e-115">The z-component.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="40eeb-116">**w**</span><span class="sxs-lookup"><span data-stu-id="40eeb-116">**w**</span></span>
+<span data-ttu-id="2c35e-116">**w**</span><span class="sxs-lookup"><span data-stu-id="2c35e-116">**w**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="40eeb-117">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="40eeb-117">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="2c35e-117">Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="2c35e-117">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="40eeb-118">Componente w-.</span><span class="sxs-lookup"><span data-stu-id="40eeb-118">The w-component.</span></span>
+<span data-ttu-id="2c35e-118">W-component.</span><span class="sxs-lookup"><span data-stu-id="2c35e-118">The w-component.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="40eeb-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="40eeb-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2c35e-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2c35e-119">Remarks</span></span>
 
-<span data-ttu-id="40eeb-120">**D3DXVECTOR4** tiene las siguientes extensiones de C++.</span><span class="sxs-lookup"><span data-stu-id="40eeb-120">**D3DXVECTOR4** has the following C++ extensions.</span></span>
+<span data-ttu-id="2c35e-120">**D3DXVECTOR4 tiene** las siguientes extensiones de C++.</span><span class="sxs-lookup"><span data-stu-id="2c35e-120">**D3DXVECTOR4** has the following C++ extensions.</span></span>
 
-### <a name="d3dxvector4-extensions"></a><span data-ttu-id="40eeb-121">Extensiones de D3DXVECTOR4</span><span class="sxs-lookup"><span data-stu-id="40eeb-121">D3DXVECTOR4 Extensions</span></span>
+### <a name="d3dxvector4-extensions"></a><span data-ttu-id="2c35e-121">Extensiones D3DXVECTOR4</span><span class="sxs-lookup"><span data-stu-id="2c35e-121">D3DXVECTOR4 Extensions</span></span>
 
 
 ```
@@ -138,21 +138,21 @@ public:
 
 
 
-## <a name="requirements"></a><span data-ttu-id="40eeb-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="40eeb-122">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2c35e-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2c35e-122">Requirements</span></span>
 
 
 
-| <span data-ttu-id="40eeb-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="40eeb-123">Requirement</span></span> | <span data-ttu-id="40eeb-124">Value</span><span class="sxs-lookup"><span data-stu-id="40eeb-124">Value</span></span> |
+| <span data-ttu-id="2c35e-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="2c35e-123">Requirement</span></span> | <span data-ttu-id="2c35e-124">Value</span><span class="sxs-lookup"><span data-stu-id="2c35e-124">Value</span></span> |
 |-------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="40eeb-125">Encabezado</span><span class="sxs-lookup"><span data-stu-id="40eeb-125">Header</span></span><br/> | <dl> <span data-ttu-id="40eeb-126"><dt>D3DX10Math. h</dt></span><span class="sxs-lookup"><span data-stu-id="40eeb-126"><dt>D3DX10Math.h</dt></span></span> </dl> |
+| <span data-ttu-id="2c35e-125">Encabezado</span><span class="sxs-lookup"><span data-stu-id="2c35e-125">Header</span></span><br/> | <dl> <span data-ttu-id="2c35e-126"><dt>D3DX10Math.h</dt></span><span class="sxs-lookup"><span data-stu-id="2c35e-126"><dt>D3DX10Math.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="40eeb-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="40eeb-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2c35e-127">Consulte también</span><span class="sxs-lookup"><span data-stu-id="2c35e-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="40eeb-128">Estructuras de D3DX</span><span class="sxs-lookup"><span data-stu-id="40eeb-128">D3DX Structures</span></span>](d3d10-graphics-reference-d3dx10-structures.md)
+[<span data-ttu-id="2c35e-128">Estructuras D3DX</span><span class="sxs-lookup"><span data-stu-id="2c35e-128">D3DX Structures</span></span>](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

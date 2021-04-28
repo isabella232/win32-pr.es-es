@@ -1,19 +1,19 @@
 ---
-description: .
+description: System.Contact.DisplayBusinessPhoneNumbers
 ms.assetid: e8b1ce0a-a6af-4035-b8f5-4b16cc0b47ae
-title: System. contact. DisplayBusinessPhoneNumbers
+title: System.Contact.DisplayBusinessPhoneNumbers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a33ce1be99d22ecfc91f64a45cc4075ecbefb03c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c9e5490c0d555aa59a4ac22ec346c7b799035ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678281"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102443"
 ---
-# <a name="systemcontactdisplaybusinessphonenumbers"></a><span data-ttu-id="4f653-103">System. contact. DisplayBusinessPhoneNumbers</span><span class="sxs-lookup"><span data-stu-id="4f653-103">System.Contact.DisplayBusinessPhoneNumbers</span></span>
+# <a name="systemcontactdisplaybusinessphonenumbers"></a><span data-ttu-id="0c132-103">System.Contact.DisplayBusinessPhoneNumbers</span><span class="sxs-lookup"><span data-stu-id="0c132-103">System.Contact.DisplayBusinessPhoneNumbers</span></span>
 
-## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a><span data-ttu-id="4f653-104">Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="4f653-104">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1</span></span>
+## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a><span data-ttu-id="0c132-104">Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="0c132-104">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1</span></span>
 
 ```
 propertyDescription
@@ -28,54 +28,54 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a><span data-ttu-id="4f653-105">Observaciones</span><span class="sxs-lookup"><span data-stu-id="4f653-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0c132-105">Comentarios</span><span class="sxs-lookup"><span data-stu-id="0c132-105">Remarks</span></span>
 
-<span data-ttu-id="4f653-106">Los valores PKEY se definen en Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="4f653-106">PKEY values are defined in Propkey.h.</span></span>
+<span data-ttu-id="0c132-106">Los valores PKEY se definen en Propkey.h.</span><span class="sxs-lookup"><span data-stu-id="0c132-106">PKEY values are defined in Propkey.h.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="4f653-107">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4f653-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="0c132-107">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="0c132-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4f653-108">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="4f653-108">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
+[<span data-ttu-id="0c132-108">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="0c132-108">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-109">searchInfo</span><span class="sxs-lookup"><span data-stu-id="4f653-109">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
+[<span data-ttu-id="0c132-109">searchInfo</span><span class="sxs-lookup"><span data-stu-id="0c132-109">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-110">labelInfo</span><span class="sxs-lookup"><span data-stu-id="4f653-110">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
+[<span data-ttu-id="0c132-110">labelInfo</span><span class="sxs-lookup"><span data-stu-id="0c132-110">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-111">Requerida</span><span class="sxs-lookup"><span data-stu-id="4f653-111">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
+[<span data-ttu-id="0c132-111">typeInfo</span><span class="sxs-lookup"><span data-stu-id="0c132-111">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-112">displayInfo</span><span class="sxs-lookup"><span data-stu-id="4f653-112">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
+[<span data-ttu-id="0c132-112">displayInfo</span><span class="sxs-lookup"><span data-stu-id="0c132-112">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-113">stringFormat</span><span class="sxs-lookup"><span data-stu-id="4f653-113">stringFormat</span></span>](./propdesc-schema-stringformat.md)
+[<span data-ttu-id="0c132-113">stringFormat</span><span class="sxs-lookup"><span data-stu-id="0c132-113">stringFormat</span></span>](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-114">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="4f653-114">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
+[<span data-ttu-id="0c132-114">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="0c132-114">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-115">Numérico</span><span class="sxs-lookup"><span data-stu-id="4f653-115">numberFormat</span></span>](./propdesc-schema-numberformat.md)
+[<span data-ttu-id="0c132-115">numberFormat</span><span class="sxs-lookup"><span data-stu-id="0c132-115">numberFormat</span></span>](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-116">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="4f653-116">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
+[<span data-ttu-id="0c132-116">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="0c132-116">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-117">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="4f653-117">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
+[<span data-ttu-id="0c132-117">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="0c132-117">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-118">drawControl</span><span class="sxs-lookup"><span data-stu-id="4f653-118">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
+[<span data-ttu-id="0c132-118">drawControl</span><span class="sxs-lookup"><span data-stu-id="0c132-118">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-119">editControl</span><span class="sxs-lookup"><span data-stu-id="4f653-119">editControl</span></span>](./propdesc-schema-editcontrol.md)
+[<span data-ttu-id="0c132-119">editControl</span><span class="sxs-lookup"><span data-stu-id="0c132-119">editControl</span></span>](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-120">filterControl</span><span class="sxs-lookup"><span data-stu-id="4f653-120">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
+[<span data-ttu-id="0c132-120">filterControl</span><span class="sxs-lookup"><span data-stu-id="0c132-120">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f653-121">Consulta</span><span class="sxs-lookup"><span data-stu-id="4f653-121">queryControl</span></span>](./propdesc-schema-querycontrol.md)
+[<span data-ttu-id="0c132-121">queryControl</span><span class="sxs-lookup"><span data-stu-id="0c132-121">queryControl</span></span>](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  
