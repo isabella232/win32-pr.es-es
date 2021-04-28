@@ -1,7 +1,7 @@
 ---
-description: Recupera el número de canales de color utilizados en la memoria para almacenar ejemplos.
+description: 'Método ID3DXPRTBuffer::GetNumChannels: recupera el número de canales de color usados en la memoria para almacenar ejemplos.'
 ms.assetid: dd1e3590-78e1-41a2-9f15-79389d9a210a
-title: 'ID3DXPRTBuffer:: GetNumChannels (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::GetNumChannels (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 99456c6386a822489eca6beef41f639008007778
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5dab8491128a242116c48a58e8edba1be9eb51b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698432"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107343"
 ---
-# <a name="id3dxprtbuffergetnumchannels-method"></a>ID3DXPRTBuffer:: GetNumChannels (método)
+# <a name="id3dxprtbuffergetnumchannels-method"></a>Método ID3DXPRTBuffer::GetNumChannels
 
-Recupera el número de canales de color utilizados en la memoria para almacenar ejemplos.
+Recupera el número de canales de color usados en memoria para almacenar ejemplos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Devuelve el número de canales de color utilizados en la memoria para almacenar ejemplos. En general, el valor será 1 para representar los valores de luminancia o 3 para representar los valores RGB.
+Devuelve el número de canales de color usados en memoria para almacenar muestras. Por lo general, el valor será 1 para representar los valores de luminosidad o 3 para representar valores RGB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Devuelve el número de canales de color utilizados en la memoria para almacenar 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

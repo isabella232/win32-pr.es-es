@@ -1,7 +1,7 @@
 ---
-description: Obtiene información sobre una devolución de llamada específica en el conjunto de animaciones.
+description: 'Método ID3DXAnimationSet::GetCallback: obtiene información sobre una devolución de llamada específica en el conjunto de animaciones.'
 ms.assetid: e8388bfc-5438-4216-a98f-dd0dbca12c87
-title: 'ID3DXAnimationSet:: GetCallback (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationSet::GetCallback (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f4cde6c9d51fd29c0412f33b34ca7bea8260dfea
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 563c1007cc471ab10a9609e776da69b7c5ed493b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280505"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097543"
 ---
-# <a name="id3dxanimationsetgetcallback-method"></a>ID3DXAnimationSet:: GetCallback (método)
+# <a name="id3dxanimationsetgetcallback-method"></a>Método ID3DXAnimationSet::GetCallback
 
 Obtiene información sobre una devolución de llamada específica en el conjunto de animaciones.
 
@@ -43,12 +43,12 @@ HRESULT GetCallback(
 
 <dl> <dt>
 
-*Posición* \[ de de\]
+*Posición* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Posición desde la que se van a buscar devoluciones de llamada.
+Posición desde la que se buscarán las devoluciones de llamada.
 
 </dd> <dt>
 
@@ -57,20 +57,20 @@ Posición desde la que se van a buscar devoluciones de llamada.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Marcas de búsqueda de devolución de llamada. Este parámetro se puede establecer en una combinación de una o varias marcas de [**las \_ \_ marcas de búsqueda de D3DXCALLBACK**](./d3dxcallback-search-flags.md).
+Marcas de búsqueda de devolución de llamada. Este parámetro se puede establecer en una combinación de una o varias marcas de [**D3DXCALLBACK \_ SEARCH \_ FLAGS**](./d3dxcallback-search-flags.md).
 
 </dd> <dt>
 
-*pCallbackPosition* \[ enuncia\]
+*pCallbackPosition* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)\***
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)\***
 
 Puntero a la posición de la devolución de llamada.
 
 </dd> <dt>
 
-*ppCallbackData* \[ enuncia\]
+*ppCallbackData* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
@@ -83,7 +83,7 @@ Dirección del puntero de datos de devolución de llamada.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Un programador de aplicaciones implementa los valores devueltos de este método. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. En caso contrario, programe el método para que devuelva un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
+Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR.**](./d3dxerr.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,12 +91,12 @@ Un programador de aplicaciones implementa los valores devueltos de este método.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

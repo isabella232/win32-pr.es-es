@@ -1,7 +1,7 @@
 ---
-description: Calcular el término Fresnel.
+description: 'Función D3DXFresnelTerm (D3dx9math.h): calcule el término Fresnel.'
 ms.assetid: d3d281db-91a1-4100-8a82-028554b5a91d
-title: Función D3DXFresnelTerm (D3dx9math. h)
+title: Función D3DXFresnelTerm (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ed6c6dd19dd6b7b70c5eeb08051f9799756b0782
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5472f9839928fd3b4c1830bc309c7f610d487864
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362568"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114483"
 ---
-# <a name="d3dxfresnelterm-function-d3dx9mathh"></a>Función D3DXFresnelTerm (D3dx9math. h)
+# <a name="d3dxfresnelterm-function-d3dx9mathh"></a>Función D3DXFresnelTerm (D3dx9math.h)
 
-Calcular el término Fresnel.
+Calcule el término Fresnel.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,35 +41,35 @@ FLOAT D3DXFresnelTerm(
 
 <dl> <dt>
 
-*CosTheta* \[ de\]
+*CosTheta* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 El valor debe estar entre 0 y 1.
 
 </dd> <dt>
 
-*RefractionIndex* \[ de\]
+*RefracciónIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Índice de refracción de un material. El valor debe ser mayor que 1.
+Índice de retracción de un material. El valor debe ser mayor que 1.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Esta función devuelve el término Fresnel para una luz no polarizada. CosTheta es el coseno del ángulo del incidente.
+Esta función devuelve el término Fresnel para la luz nopolarizada. CosTheta es el coseno del ángulo del incidente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para encontrar el término Fresnel (F):
+Para buscar el término Fresnel (F):
 
-Si un es el ángulo de incidencia y B es el ángulo de la refracción, entonces
+Si A es ángulo de incidencia y B es el ángulo de retracción, entonces
 
 
 ```
@@ -83,7 +83,7 @@ Let g   = (r2 + c2 - 1)1/2
 
 
 
-A continuación, la expansión con las identidades trigonométricas y la simplificación, obtiene:
+A continuación, al expandir mediante las identidades trig y simplificar, obtiene lo siguiente:
 
 
 ```
@@ -98,12 +98,12 @@ F = 0.5 * (g + c)2 / (g - c)2 * ([c(g + c) - 1]2 / [c(g - c) + 1]2 + 1)
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Establece una matriz de números de punto flotante.
+description: 'Método ID3DXConstantTable::SetFloatArray: establece una matriz de números de punto flotante.'
 ms.assetid: 7a622dd5-47ed-4166-a6df-f484b03e0b5a
-title: 'ID3DXConstantTable:: SetFloatArray (método) (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::SetFloatArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d75d4171ab51859e4095acbe5d3e86d704b1f437
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 23c96cb2bfc8113fd167c8b57a21a46285b691a6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280355"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115173"
 ---
-# <a name="id3dxconstanttablesetfloatarray-method"></a>ID3DXConstantTable:: SetFloatArray (método)
+# <a name="id3dxconstanttablesetfloatarray-method"></a>Método ID3DXConstantTable::SetFloatArray
 
 Establece una matriz de números de punto flotante.
 
@@ -43,37 +43,37 @@ HRESULT SetFloatArray(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntero a una interfaz [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa el dispositivo asociado a la tabla de constantes.
+Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa el dispositivo asociado a la tabla constante.
 
 </dd> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificador único de la matriz de constantes. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
 
 </dd> <dt>
 
-*PF* \[ de\]
+*pf* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
 Matriz de números de punto flotante.
 
 </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de valores de punto flotante de la matriz.
 
@@ -83,7 +83,7 @@ Número de valores de punto flotante de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,12 +91,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

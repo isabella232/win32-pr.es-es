@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SB_SETUNICODEFORMAT (commctrl. h)
-description: Establece la marca del formato de caracteres Unicode para el control. Este mensaje permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución, en lugar de tener que volver a crear el control.
+title: SB_SETUNICODEFORMAT mensaje (Commctrl.h)
+description: 'SB_SETUNICODEFORMAT mensaje: establece la marca de formato de caracteres Unicode para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución en lugar de tener que volver a crear el control.'
 ms.assetid: 022e7138-c12f-4c59-82da-2ac6d276fa77
 keywords:
-- SB_SETUNICODEFORMAT controles de mensajes de Windows
+- SB_SETUNICODEFORMAT mensaje Controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95c5223f1e707747356c8869ad047a69f6e8d94a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 278a5645928a51732b87c12447bb2524bfadfbcd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658293"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085893"
 ---
-# <a name="sb_setunicodeformat-message"></a>\_Mensaje SETUNICODEFORMAT de SB
+# <a name="sb_setunicodeformat-message"></a>Mensaje \_ SB SETUNICODEFORMAT
 
-Establece la marca del formato de caracteres Unicode para el control. Este mensaje permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución, en lugar de tener que volver a crear el control.
+Establece la marca de formato de caracteres Unicode para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución en lugar de tener que volver a crear el control.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece la marca del formato de caracteres Unicode para el control. Este mensa
 *wParam* 
 </dt> <dd>
 
-Determina el juego de caracteres utilizado por el control. Si este valor es **true**, el control usará caracteres Unicode. Si este valor es **false**, el control usará caracteres ANSI.
+Determina el juego de caracteres utilizado por el control . Si este valor es **TRUE**, el control usará caracteres Unicode. Si este valor es **FALSE,** el control usará caracteres ANSI.
 
 </dd> <dt>
 
@@ -41,25 +41,25 @@ Determina el juego de caracteres utilizado por el control. Si este valor es **tr
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca de formato Unicode anterior para el control.
+Devuelve la marca de formato Unicode anterior para el control .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea la sección Comentarios para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat.md) para obtener una descripción de este mensaje.
+Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodeformat.md) obtener una explicación de este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

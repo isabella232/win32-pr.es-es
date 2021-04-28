@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método InitializeFromMemory.
+description: 'IWICStream_InitializeFromMemory_Proxy función: función proxy para el método InitializeFromMemory.'
 ms.assetid: 737526ac-fe79-4d53-83c5-33102f5ac67b
-title: IWICStream_InitializeFromMemory_Proxy función)
+title: IWICStream_InitializeFromMemory_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: fe034698635a35c098f6466712d17489f301dd57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be3cec08f2ad3970d8860803cfb70970cf7b765b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717213"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097133"
 ---
-# <a name="iwicstream_initializefrommemory_proxy-function"></a>IWICStream \_ InitializeFromMemory \_ función proxy
+# <a name="iwicstream_initializefrommemory_proxy-function"></a>Función IWICStream \_ InitializeFromMemory \_ Proxy
 
-Función de proxy para el método [**InitializeFromMemory**](/windows/desktop/api/Wincodec/nf-wincodec-iwicstream-initializefrommemory) .
+Función de proxy para [**el método InitializeFromMemory.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicstream-initializefrommemory)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ HRESULT IWICStream_InitializeFromMemory_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) \** _
+Tipo: **[ **IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream)\***
 
-Puntero a este objeto [_ *IWICStream* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) .
+Puntero a este [**objeto IWICStream.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream)
 
 </dd> <dt>
 
-*pbBuffer* \[ de\]
+*pbBuffer* \[ En\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
 Puntero al búfer utilizado para inicializar la secuencia.
 
 </dd> <dt>
 
-_cbBufferSize * \[ en\]
+*cbBufferSize* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -73,7 +73,7 @@ Tamaño del búfer.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -81,11 +81,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

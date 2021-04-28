@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SB_GETUNICODEFORMAT (commctrl. h)
-description: Recupera la marca del formato de caracteres Unicode para el control.
+title: SB_GETUNICODEFORMAT mensaje (Commctrl.h)
+description: 'SB_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control.'
 ms.assetid: 0b2b543a-b1ef-452c-9b34-c5fbbac4aaa9
 keywords:
-- SB_GETUNICODEFORMAT controles de mensajes de Windows
+- SB_GETUNICODEFORMAT mensaje Controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dbb639a04f0a40d9d5e11b938aaadbcc8b4c730
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 857af43911a01ffc58b1a878be6e1875a44c76cb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534828"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085903"
 ---
-# <a name="sb_getunicodeformat-message"></a>\_Mensaje GETUNICODEFORMAT de SB
+# <a name="sb_getunicodeformat-message"></a>Mensaje \_ SB GETUNICODEFORMAT
 
-Recupera la marca del formato de caracteres Unicode para el control.
+Recupera la marca de formato de caracteres Unicode para el control .
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,25 +37,25 @@ Recupera la marca del formato de caracteres Unicode para el control.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca de formato Unicode para el control. Si este valor es distinto de cero, el control utiliza caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
+Devuelve la marca de formato Unicode del control. Si este valor es distinto de cero, el control usa caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea la sección Comentarios para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para obtener una descripción de este mensaje.
+Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodeformat.md) obtener una explicación de este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Matriz de 4x4, de 16 bytes alineada que contiene métodos y sobrecargas de operador.
+description: 'Estructura D3DXMATRIXA16 (D3dx9math.h): matriz alineada en 4x4 y 16 bytes que contiene métodos y sobrecargas de operadores.'
 ms.assetid: c7082fe5-f98b-4ab7-b8c2-7cdbab4848ad
-title: Estructura D3DXMATRIXA16 (D3dx9math. h)
+title: Estructura D3DXMATRIXA16 (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 57d2e5e796b929c87d4724d298758f26088918c4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7bb14f23d041ec2634b9710d5620382d8b93da2b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821031"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094213"
 ---
-# <a name="d3dxmatrixa16-structure-d3dx9mathh"></a>Estructura D3DXMATRIXA16 (D3dx9math. h)
+# <a name="d3dxmatrixa16-structure-d3dx9mathh"></a>Estructura D3DXMATRIXA16 (D3dx9math.h)
 
-Matriz de 4x4, de 16 bytes alineada que contiene métodos y sobrecargas de operador.
+Matriz de 4x4 y 16 bytes alineada que contiene métodos y sobrecargas de operadores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,22 +39,22 @@ typedef struct D3DXMATRIXA16 {
 
 <dl> <dt>
 
-**\_ij**
+**\_Ij**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El componente (i, j) de la matriz, donde i es el número de fila y j es el número de columna. Por ejemplo, \_ 34 significa lo mismo que \[ ₃ ₄ \] , el componente de la tercera fila y la cuarta columna.
+Componente (i, j) de la matriz, donde i es el número de fila y j es el número de columna. Por ejemplo, 34 significa lo mismo que a₃₄ , el componente de \_ la tercera fila y la cuarta \[ \] columna.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una matriz alineada de 16 bytes, cuando se usa en las funciones matemáticas de D3DX, se ha optimizado para mejorar el rendimiento de los procesadores Intel Pentium 4. Las matrices se alinean independientemente de dónde se crean: en la pila del programa, en el montón o en el ámbito global. La alineación se logra mediante \_ \_ declspec (Align (16)), que funciona con Visual C++ .net y con Visual C++ 6,0 solo cuando se instala el paquete de procesadores. Desafortunadamente, no hay ninguna manera de detectar el paquete de procesadores, por lo que la alineación de bytes está activada de forma predeterminada solo con Visual C++ .NET.
+Una matriz alineada de 16 bytes, cuando la usan las funciones matemáticas D3DX, se ha optimizado para mejorar el rendimiento en procesadores Intel Pentium 4. Las matrices se alinean independientemente de dónde se creen: en la pila del programa, en el montón o en el ámbito global. La alineación se realiza mediante \_ \_ declspec(align(16)), que funciona con Visual C++ .NET y con Visual C++ 6.0 solo cuando se instala el paquete de procesador. Desafortunadamente, no hay ninguna manera de detectar el paquete de procesador, por lo que la alineación de bytes está activada de forma predeterminada solo con Visual C++ .NET.
 
-Los vectores y cuaterniones no están alineados en bytes en D3DX. Al usar vectores y cuaterniones con funciones matemáticas de D3DX, use \_ declspec (Align (16)) para generar vectores alineados de bytes y cuaterniones, ya que se realizarán de forma mucho mejor. \_Aquí se muestra la definición de declspec.
+Los vectores y cuaterniones no están alineados en bytes en D3DX. Al usar vectores y cuaterniones con funciones matemáticas D3DX, use declspec(align(16)) para generar vectores y cuaterniones alineados con bytes, ya que tendrán un rendimiento considerablemente \_ mejor. La definición \_ de declspec se muestra aquí.
 
 
 ```
@@ -63,11 +63,11 @@ Los vectores y cuaterniones no están alineados en bytes en D3DX. Al usar vector
 
 
 
-Otros compiladores interpretan D3DXMATRIXA16 como D3DXMATRIX. El uso de esta estructura en un compilador que no alinee realmente la matriz puede ser problemático, ya que no expondrá errores que omitan la alineación. Por ejemplo, si un objeto D3DXMATRIXA16 está dentro de una estructura o una clase, se puede hacer un [**memcpy**](https://msdn.microsoft.com/library/dswaw1wk(v=VS.71).aspx) con un empaquetado estrecho (omitiendo los límites de 16 bytes). Esto provocaría saltos de compilación si el compilador estuviera en algún momento agregar alineación de matriz.
+Otros compiladores interpretan D3DXMATRIXA16 como D3DXMATRIX. El uso de esta estructura en un compilador que no alinea realmente la matriz puede ser problemático porque no expondrá errores que omiten la alineación. Por ejemplo, si un objeto D3DXMATRIXA16 está dentro de una estructura o clase, se podría realizar [**una memcpy**](https://msdn.microsoft.com/library/dswaw1wk(v=VS.71).aspx) con empaquetado estricto (omitiendo los límites de 16 bytes). Esto provocaría interrupciones de compilación si el compilador agregara alguna vez la alineación de la matriz.
 
 ### <a name="d3dxmatrixa16"></a>D3DXMATRIXA16
 
-**D3DXMATRIXA16** tiene las siguientes extensiones de C++.
+**D3DXMATRIXA16 tiene** las siguientes extensiones de C++.
 
 
 ```
@@ -103,15 +103,15 @@ typedef D3DX_ALIGN16 _D3DXMATRIXA16 D3DXMATRIXA16, *LPD3DXMATRIXA16;
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXMATRIX**](d3dxmatrix.md)

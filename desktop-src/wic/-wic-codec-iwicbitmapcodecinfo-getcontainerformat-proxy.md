@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método GetContainerFormat.
+description: 'IWICBitmapCodecInfo_GetContainerFormat_Proxy función: función proxy para el método GetContainerFormat.'
 ms.assetid: d8a2387a-fb75-4812-b046-51359071281d
-title: IWICBitmapCodecInfo_GetContainerFormat_Proxy función)
+title: IWICBitmapCodecInfo_GetContainerFormat_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 896c2ff88085c0300cffcc56c2877b98cd4ab68a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 729b4e2fe0f21fd1e96082e53194fd49bbc39ae1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275354"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086373"
 ---
-# <a name="iwicbitmapcodecinfo_getcontainerformat_proxy-function"></a>IWICBitmapCodecInfo \_ GetContainerFormat \_ función proxy
+# <a name="iwicbitmapcodecinfo_getcontainerformat_proxy-function"></a>Función IWICBitmapCodecInfo \_ GetContainerFormat \_ Proxy
 
-Función de proxy para el método [**GetContainerFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getcontainerformat) .
+Función de proxy para [**el método GetContainerFormat.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getcontainerformat)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT IWICBitmapCodecInfo_GetContainerFormat_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) \** _
+Tipo: **[ **IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)\***
 
-Puntero a este objeto [_ *IWICBitmapCodecInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) .
+Puntero a este [**objeto IWICBitmapCodecInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)
 
 </dd> <dt>
 
-*pguidContainerFormat* \[ enuncia\]
+*pguidContainerFormat* \[ out\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
 Puntero que recibe el GUID del contenedor.
 
@@ -61,9 +61,9 @@ Puntero que recibe el GUID del contenedor.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -71,11 +71,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

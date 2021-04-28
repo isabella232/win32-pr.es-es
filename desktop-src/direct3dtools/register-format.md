@@ -1,10 +1,10 @@
 ---
-description: Interno.
+description: '<span id="vspixengine.register_format"></span>REGISTER_FORMAT enumeración : interno.'
 MS-HAID: vspixengine.REGISTER\_FORMAT
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Enumeración REGISTER_FORMAT
+title: REGISTER_FORMAT enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 869415AA-841E-439B-B561-F761B5B0E0B1
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e3c7a8b635ebb1a80bdd9e10cca8afb168cda846
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b008f3cdb225c7616306dbd425c24e6737bc1ef1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806673"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110523"
 ---
-# <a name="span-idvspixengineregister_formatspanregister_format-enumeration"></a><span id="vspixengine.register_format"></span>\_Enumeración de formato de registro
+# <a name="span-idvspixengineregister_formatspanregister_format-enumeration"></a><span id="vspixengine.register_format"></span>Enumeración REGISTER \_ FORMAT
 
 Interno
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -37,24 +37,24 @@ Interno
 
 ## <a name="constants"></a>Constantes
 
-<span id="REGISTER_FORMAT_UNKNOWN"></span><span id="register_format_unknown"></span>**formato de registro \_ \_ desconocido**  
+<span id="REGISTER_FORMAT_UNKNOWN"></span><span id="register_format_unknown"></span>**FORMATO \_ DE REGISTRO \_ DESCONOCIDO**  
 Interno
 
-<span id="REGISTER_FORMAT_FLOAT"></span><span id="register_format_float"></span>**formato de registro \_ \_ float**  
+<span id="REGISTER_FORMAT_FLOAT"></span><span id="register_format_float"></span>**REGISTER \_ FORMAT \_ FLOAT**  
 Interno
 
-<span id="REGISTER_FORMAT_UINT"></span><span id="register_format_uint"></span>**formato de registro \_ \_ uint**  
+<span id="REGISTER_FORMAT_UINT"></span><span id="register_format_uint"></span>**REGISTER \_ FORMAT \_ UINT**  
 Interno
 
-<span id="REGISTER_FORMAT_SINT"></span><span id="register_format_sint"></span>**REGISTRO del \_ formato \_ Sint**  
+<span id="REGISTER_FORMAT_SINT"></span><span id="register_format_sint"></span>**FORMATO \_ DE \_ REGISTRO SINT**  
 Interno
 
-<span id="REGISTER_FORMAT_COLOR"></span><span id="register_format_color"></span>**\_color de formato de registro \_**  
+<span id="REGISTER_FORMAT_COLOR"></span><span id="register_format_color"></span>**COLOR \_ DE FORMATO DE \_ REGISTRO**  
 Interno
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 
