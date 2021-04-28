@@ -1,7 +1,7 @@
 ---
-description: Proporciona una interfaz de usuario personalizada que reemplaza la interfaz de usuario predeterminada del sistema.
+description: 'Método IWiaUIExtension::D eviceDialog: proporciona una interfaz de usuario personalizada que reemplaza a la interfaz de usuario predeterminada del sistema.'
 ms.assetid: 5dbcacde-5bbe-459d-804f-5ce7eb1cd8d8
-title: IWiaUIExtension::D método eviceDialog (Wiadevd. h)
+title: IWiaUIExtension::D eviceDialog (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 7d42d0c7f8cca510a9c8f78de7bf589f8e1d2d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d467769308707032b8e92b4ac7877488991356dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541955"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116713"
 ---
-# <a name="iwiauiextensiondevicedialog-method"></a>IWiaUIExtension::D método eviceDialog
+# <a name="iwiauiextensiondevicedialog-method"></a>IWiaUIExtension::D eviceDialog (método)
 
-Proporciona una interfaz de usuario personalizada que reemplaza la interfaz de usuario predeterminada del sistema.
+Proporciona una interfaz de usuario personalizada que reemplaza a la interfaz de usuario predeterminada del sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ HRESULT DeviceDialog(
 
 <dl> <dt>
 
-*pDeviceDialogData* \[ de\]
+*pDeviceDialogData* \[ En\]
 </dt> <dd>
 
-Tipo: **PDEVICEDIALOGDATA \** _
+Tipo: **PDEVICEDIALOGDATA \***
 
-Apunta a una estructura [_ *DEVICEDIALOGDATA* *](-wia-devicedialogdata.md) que contiene todos los datos necesarios para implementar el cuadro de diálogo de dispositivo.
+Apunta a una [**estructura DEVICEDIALOGDATA**](-wia-devicedialogdata.md) que contiene todos los datos necesarios para implementar el cuadro de diálogo del dispositivo.
 
 </dd> </dl>
 
@@ -52,21 +52,21 @@ Apunta a una estructura [_ *DEVICEDIALOGDATA* *](-wia-devicedialogdata.md) que c
 
 Tipo: **HRESULT**
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si el usuario cancela el cuadro de diálogo, el método devuelve S \_ false. Si no se implementa el método, devuelve E \_ NOTIMPL. Si se produce un error en el método, devuelve un código de error COM estándar.
+Si el método se realiza correctamente, devuelve S \_ OK. Si el usuario cancela el cuadro de diálogo, el método devuelve S \_ FALSE. Si el método no se implementa, devuelve E \_ NOTIMPL. Si se produce un error en el método, devuelve un código de error COM estándar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si implementa la interfaz [**IWiaUIExtension**](-wia-iwiauiextension.md) y no desea reemplazar la interfaz de usuario del sistema, este método debe seguir implementado, pero no debe hacer nada más que devolver E \_ NOTIMPL.
+Si implementa la interfaz [**IWiaUIExtension**](-wia-iwiauiextension.md) y no desea reemplazar la interfaz de usuario del sistema, este método todavía debe implementarse, pero no debe hacer nada más que devolver E \_ NOTIMPL.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                          |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

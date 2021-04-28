@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de vídeo.
+description: 'SystemConfig_Video clase : esta clase es la clase de tipo de evento para eventos de configuración de vídeo.'
 ms.assetid: ddb5924b-70d9-4693-bf68-0536c3c3fa8d
-title: SystemConfig_Video (clase)
+title: SystemConfig_Video clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 370c67501b75f0fd4ac88488744280f1e0065bcf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 716194eb9ceb67b609f886482393795eaef2ef09
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986131"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105903"
 ---
-# <a name="systemconfig_video-class"></a>\_Clase de vídeo SystemConfig
+# <a name="systemconfig_video-class"></a>Clase SystemConfig \_ Video
 
-Esta clase es la clase de tipo de evento para los eventos de configuración de vídeo.
+Esta clase es la clase de tipo de evento para eventos de configuración de vídeo.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,42 +58,42 @@ class SystemConfig_Video : SystemConfig
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ vídeo SystemConfig** tiene estos tipos de miembros:
+La **clase SystemConfig \_ Video** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ vídeo SystemConfig** tiene estas propiedades.
+La **clase SystemConfig \_ Video** tiene estas propiedades.
 
 <dl> <dt>
 
 **AdapterString**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (8), **Max** (256), **Format ("s")**
+Calificadores: **WmiDataId** (8), **Max** (256), **Format("s")**
 </dt> </dl>
 
-Nombre o Descripción del adaptador.
+Nombre o descripción del adaptador.
 
 </dd> <dt>
 
 **BiosString**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (9), **Max** (256), **Format ("s")**
+Calificadores: **WmiDataId** (9), **Max** (256), **Format("s")**
 </dt> </dl>
 
 Nombre del BIOS del adaptador.
@@ -103,7 +103,7 @@ Nombre del BIOS del adaptador.
 **BitsPerPixel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -119,13 +119,13 @@ Número de bits usados para mostrar cada píxel.
 **ChipType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (6), **Max** (256), **Format ("s")**
+Calificadores: **WmiDataId** (6), **Max** (256), **Format("s")**
 </dt> </dl>
 
 Nombre del chip del adaptador.
@@ -135,13 +135,13 @@ Nombre del chip del adaptador.
 **DACType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (7), **Max** (256), **Format ("s")**
+Calificadores: **WmiDataId** (7), **Max** (256), **Format("s")**
 </dt> </dl>
 
 Nombre del chip del convertidor digital a analógico (DAC) del adaptador.
@@ -151,23 +151,23 @@ Nombre del chip del convertidor digital a analógico (DAC) del adaptador.
 **DeviceId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (10), **Max** (256), **Format ("s")**
+Calificadores: **WmiDataId** (10), **Max** (256), **Format("s")**
 </dt> </dl>
 
-Dirección u otra información de identificación para asignar un nombre único al dispositivo lógico.
+Dirección u otra información de identificación para dar un nombre único al dispositivo lógico.
 
 </dd> <dt>
 
 **MemorySize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -183,27 +183,27 @@ Cantidad máxima de memoria admitida, en bytes.
 **StateFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (11), **formato ("x")**
+Calificadores: **WmiDataId** (11), **Format("x")**
 </dt> </dl>
 
-Marcas de estado de dispositivo. Puede ser cualquier combinación razonable de lo siguiente.
+Marcas de estado del dispositivo. Puede ser cualquier combinación razonable de lo siguiente.
 
 
 
-| Value                                                                                                                                                                                                                                                                                        | Significado                                                                                                                                                                                                                      |
+| Valor                                                                                                                                                                                                                                                                                        | Significado                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DISPLAY_DEVICE_ATTACHED_TO_DESKTOP"></span><span id="display_device_attached_to_desktop"></span><dl> <dt>**Mostrar \_ DISPOSITIVO \_ conectado \_ al \_ escritorio**</dt> <dt>1 (0x1)</dt> </dl> | El dispositivo es parte del escritorio.<br/>                                                                                                                                                                                |
-| <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**Mostrar \_ \_ \_ Controlador de creación de reflejo de dispositivos**</dt> <dt>8 (0x8)</dt> </dl>           | Representa un pseudo dispositivo que se usa para reflejar el dibujo de la aplicación para conectarse a un equipo remoto o a otros fines. Un pseudo monitor invisible está asociado a este dispositivo. Por ejemplo, NetMeeting lo usa.<br/> |
-| <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**Mostrar \_ DISPOSITIVO \_ MODESPRUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | El dispositivo tiene más modos de visualización que los dispositivos de salida que admiten.<br/>                                                                                                                                                |
-| <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**Mostrar \_ Dispositivo \_ primario \_ de dispositivo**</dt> <dt>4 (0x4)</dt> </dl>                 | El escritorio principal está en el dispositivo. Para un sistema con una sola tarjeta de presentación, siempre se establece. Para un sistema con varias tarjetas de presentación, solo un dispositivo puede tener este conjunto.<br/>                                   |
-| <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**Mostrar \_ DISPOSITIVO \_ extraíble**</dt> <dt>32 (0x20)</dt> </dl>                               | El dispositivo es extraíble; no puede ser la pantalla principal.<br/>                                                                                                                                                        |
-| <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**Mostrar \_ DISPOSITIVO \_ VGA \_ compatible**</dt> <dt>16 (0x10)</dt> </dl>               | El dispositivo es compatible con VGA.<br/>                                                                                                                                                                                     |
+| <span id="DISPLAY_DEVICE_ATTACHED_TO_DESKTOP"></span><span id="display_device_attached_to_desktop"></span><dl> <dt>**DISPLAY \_ DISPOSITIVO \_ CONECTADO \_ AL \_ ESCRITORIO**</dt> <dt>1 (0x1)</dt> </dl> | El dispositivo forma parte del escritorio.<br/>                                                                                                                                                                                |
+| <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**DISPLAY \_ CONTROLADOR \_ DE CREACIÓN DE REFLEJO \_ DEL**</dt> <dt>DISPOSITIVO 8 (0x8)</dt> </dl>           | Representa un pseudodispositivo que se usa para reflejar el dibujo de la aplicación para conectarse a un equipo remoto u otros propósitos. Un pseudo monitor invisible está asociado a este dispositivo. Por ejemplo, NetMeeting lo usa.<br/> |
+| <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**DISPLAY \_ MODOS \_ DE DISPOSITIVORUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | El dispositivo tiene más modos de presentación de los que admiten sus dispositivos de salida.<br/>                                                                                                                                                |
+| <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**DISPLAY \_ DISPOSITIVO \_ PRINCIPAL \_ DISPOSITIVO**</dt> <dt>4 (0x4)</dt> </dl>                 | El escritorio principal está en el dispositivo. Para un sistema con una sola tarjeta de presentación, esto siempre se establece. Para un sistema con varias tarjetas de presentación, solo un dispositivo puede tener este conjunto.<br/>                                   |
+| <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**DISPLAY \_ DISPOSITIVO \_ EXTRAÍBLE**</dt> <dt>32 (0x20)</dt> </dl>                               | El dispositivo es extraíble; no puede ser la pantalla principal.<br/>                                                                                                                                                        |
+| <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**DISPLAY \_ COMPATIBLE \_ CON \_ DEVICE VGA**</dt> <dt>16 (0x10)</dt> </dl>               | El dispositivo es compatible con VGA.<br/>                                                                                                                                                                                     |
 
 
 
@@ -214,7 +214,7 @@ Marcas de estado de dispositivo. Puede ser cualquier combinación razonable de l
 **VRefresh**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -223,14 +223,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (5)
 </dt> </dl>
 
-Frecuencia de actualización actual, en hercios.
+Frecuencia de actualización actual, en hertz.
 
 </dd> <dt>
 
 **XResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -246,7 +246,7 @@ Número actual de píxeles horizontales.
 **YResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -263,14 +263,14 @@ Número actual de píxeles verticales.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

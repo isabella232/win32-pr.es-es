@@ -1,7 +1,7 @@
 ---
-description: Una función de devolución de llamada que debe ser implementada por un usuario para establecer una matriz de constantes de punto flotante del sombreador de vértices.
+description: 'Método ID3DXEffectStateManager::SetPixelShaderConstantF: una función de devolución de llamada que debe implementar un usuario para establecer una matriz de constantes de punto flotante del sombreador de vértices.'
 ms.assetid: db87ca8c-2539-4d80-854c-25b114a7e7e0
-title: 'ID3DXEffectStateManager:: SetPixelShaderConstantF (método) (D3DX9Effect. h)'
+title: Método ID3DXEffectStateManager::SetPixelShaderConstantF (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 19e8654fbc851460fea932a8c858240c5e4631de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f73963e98d4951eaf2905cc5da6eab3a6409f220
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718305"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090463"
 ---
-# <a name="id3dxeffectstatemanagersetpixelshaderconstantf-method"></a>ID3DXEffectStateManager:: SetPixelShaderConstantF (método)
+# <a name="id3dxeffectstatemanagersetpixelshaderconstantf-method"></a>Método ID3DXEffectStateManager::SetPixelShaderConstantF
 
-Una función de devolución de llamada que debe ser implementada por un usuario para establecer una matriz de constantes de punto flotante del sombreador de vértices.
+Función de devolución de llamada que debe implementar un usuario para establecer una matriz de constantes de punto flotante del sombreador de vértices.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT SetPixelShaderConstantF(
 
 <dl> <dt>
 
-*StartRegister* \[ enuncia\]
+*StartRegister* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de base cero del primer registro constante.
 
 </dd> <dt>
 
-*pConstantData* \[ enuncia\]
+*pConstantData* \[ out\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
 Matriz de constantes de punto flotante.
 
 </dd> <dt>
 
-*RegisterCount* \[ enuncia\]
+*RegisterCount* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de registros en pConstantData.
+Número de registros en pConstantData.
 
 </dd> </dl>
 
@@ -73,10 +73,10 @@ El número de registros en pConstantData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ correcto. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
--   Se producirá un error en el efecto durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9:: SetPixelShaderConstantF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf)).
+-   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9::SetPixelShaderConstantF).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,12 +84,12 @@ El método implementado por el usuario debe devolver S \_ correcto. Si se produc
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

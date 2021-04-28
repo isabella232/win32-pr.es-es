@@ -1,7 +1,7 @@
 ---
-description: Establece la tabla de atributos de una malla y el número de entradas almacenadas en la tabla.
+description: 'Método ID3DX10Mesh::SetAttributeTable: establece la tabla de atributos para una malla y el número de entradas almacenadas en la tabla.'
 ms.assetid: 629fd31b-d88a-4650-82ed-ab7c40690986
-title: 'ID3DX10Mesh:: SetAttributeTable (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::SetAttributeTable (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 808349b3f7456ebf3f8e1c3a7f9fdf2236db4beb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e06b181bb512e16e9caaa0d233ebbd3472bfcf8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280415"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084013"
 ---
-# <a name="id3dx10meshsetattributetable-method"></a>ID3DX10Mesh:: SetAttributeTable (método)
+# <a name="id3dx10meshsetattributetable-method"></a>Método ID3DX10Mesh::SetAttributeTable
 
-Establece la tabla de atributos de una malla y el número de entradas almacenadas en la tabla.
+Establece la tabla de atributos para una malla y el número de entradas almacenadas en la tabla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetAttributeTable(
 
 <dl> <dt>
 
-*pAttribTable* \[ de\]
+*pAttribTable* \[ En\]
 </dt> <dd>
 
-Tipo: **\* [**intervalo de \_ atributo \_ const D3DX10**](d3dx10-attribute-range.md)**
+Tipo: **const [**D3DX10 \_ ATTRIBUTE \_ RANGE**](d3dx10-attribute-range.md) \***
 
-Puntero a una matriz de estructuras de intervalos de atributos de D3DX10 \_ \_ , que representa las entradas de la tabla de atributos de malla.
+Puntero a una matriz de estructuras D3DX10 ATTRIBUTE RANGE, que representan \_ las entradas de la tabla de atributos de \_ malla.
 
 </dd> <dt>
 
-*cAttribTableSize* \[ de\]
+*cAttribTableSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de atributos en la tabla de atributos de malla.
+Número de atributos de la tabla de atributos de malla.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Número de atributos en la tabla de atributos de malla.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si una aplicación realiza un seguimiento de la información en una tabla de atributos y reorganiza la tabla como resultado de los cambios en los atributos o caras, este método permite que la aplicación actualice las tablas de atributos en lugar de volver a llamar a ID3DX10Mesh:: Optimize.
+Si una aplicación realiza un seguimiento de la información de una tabla de atributos y reorganiza la tabla como resultado de cambios en atributos o caras, este método permite a la aplicación actualizar las tablas de atributos en lugar de llamar de nuevo a ID3DX10Mesh::Optimize.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,19 +75,19 @@ Si una aplicación realiza un seguimiento de la información en una tabla de atr
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

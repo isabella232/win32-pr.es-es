@@ -1,7 +1,7 @@
 ---
-description: Crea una matriz que refleja el sistema de coordenadas de un plano.
+description: 'Función D3DXMatrixReflect (D3dx9math.h): crea una matriz que refleja el sistema de coordenadas sobre un plano.'
 ms.assetid: f6dc3834-42f2-4ad0-8098-8c5e25e10d58
-title: Función D3DXMatrixReflect (D3dx9math. h)
+title: Función D3DXMatrixReflect (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2e54c5f93164e5fccee0d74199a1843a1476e69a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e4118a5f0a1cd997d5fab5fecebae449d4c30b09
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003762"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118223"
 ---
-# <a name="d3dxmatrixreflect-function-d3dx9mathh"></a>Función D3DXMatrixReflect (D3dx9math. h)
+# <a name="d3dxmatrixreflect-function-d3dx9mathh"></a>Función D3DXMatrixReflect (D3dx9math.h)
 
-Crea una matriz que refleja el sistema de coordenadas de un plano.
+Crea una matriz que refleja el sistema de coordenadas sobre un plano.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ D3DXMATRIX* D3DXMatrixReflect(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pPlane* \[ de\]
+*pPlane* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntero a la estructura de [**D3DXPLANE**](d3dxplane.md) de origen.
+Puntero a la estructura [**D3DXPLANE de**](d3dxplane.md) origen.
 
 </dd> </dl>
 
@@ -63,15 +63,15 @@ Puntero a la estructura de [**D3DXPLANE**](d3dxplane.md) de origen.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una estructura [**D3DXMATRIX**](d3dxmatrix.md) que refleja el sistema de coordenadas del plano de origen.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que refleja el sistema de coordenadas sobre el plano de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función normaliza la ecuación del plano antes de crear la matriz reflejada.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXMatrixReflect** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixReflect** se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -91,12 +91,12 @@ P = normalize(Plane);
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

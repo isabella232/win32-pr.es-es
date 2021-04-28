@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor COutputQueue.COutputQueue: método constructor.'
 ms.assetid: 672c0337-0c36-4f53-9125-d02fe8b36b1c
-title: Constructor COutputQueue. COutputQueue (Outputq. h)
+title: Constructor COutputQueue.COutputQueue (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de4d8fe0d0a7c3dcf90e67f80a939f6294cb3d5b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 17a795bf4ec33ec904b83f6621fc0bc4f43b4b15
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680583"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095333"
 ---
-# <a name="coutputqueuecoutputqueue-constructor"></a>Constructor COutputQueue. COutputQueue
+# <a name="coutputqueuecoutputqueue-constructor"></a>Constructor COutputQueue.COutputQueue
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,66 +52,66 @@ COutputQueue(
 *pInputPin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN de entrada. El objeto proporcionará ejemplos a este pin.
+Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin de entrada. El objeto entregará ejemplos a este pin.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un código de retorno **HRESULT** . Establezca el valor en es \_ correcto antes de llamar a este método. En la devolución, *PHR* recibe un valor que indica si el método se ha ejecutado correctamente o no.
+Puntero a un **código de retorno HRESULT.** Establezca el valor en S \_ OK antes de llamar a este método. Al devolver, *phr* recibe un valor que indica el éxito o el error del método.
 
 </dd> <dt>
 
 *bAuto* 
 </dt> <dd>
 
-Marca que especifica si el objeto decide cuándo se debe crear una cola. Si **es true**, el objeto crea una cola solo si el PIN de entrada puede bloquearse. Si **es false**, el parámetro *bQueue* especifica si se va a crear una cola.
+Marca que especifica si el objeto decide cuándo crear una cola. Si **es TRUE,** el objeto crea una cola solo si el pin de entrada puede bloquearse. Si **es FALSE,** *el parámetro bQueue* especifica si se va a crear una cola.
 
 </dd> <dt>
 
 *bQueue* 
 </dt> <dd>
 
-Si *bAuto* es **true**, se omite este parámetro. Si *bAuto* es **false**, esta marca especifica si se va a crear una cola.
+Si *bAuto* es **TRUE**, se omite este parámetro. Si *bAuto* es **FALSE,** esta marca especifica si se va a crear una cola.
 
 </dd> <dt>
 
 *lBatchSize* 
 </dt> <dd>
 
-Número máximo de muestras que se van a enviar en un lote.
+Número máximo de muestras para entregar en un lote.
 
 </dd> <dt>
 
 *bBatchExact* 
 </dt> <dd>
 
-Marca que especifica si se van a utilizar tamaños de lote exactos. Si **es true**, el objeto espera los ejemplos de *lBatchSize* antes de entregarlos al pin de entrada. Si **es false**, el objeto proporciona ejemplos a medida que los recibe.
+Marca que especifica si se deben usar tamaños de lote exactos. Si **es TRUE,** el objeto espera los ejemplos *de lBatchSize* antes de entregarlos al pin de entrada. Si **es FALSE,** el objeto entrega muestras a medida que las recibe.
 
 </dd> <dt>
 
 *lListSize* 
 </dt> <dd>
 
-Tamaño de la memoria caché para la cola. El valor predeterminado, DEFAULTCACHE, es una constante definida para la clase [**CBaseList**](cbaselist.md) .
+Tamaño de caché de la cola. El valor predeterminado, DEFAULTCACHE, es una constante definida para la [**clase CBaseList.**](cbaselist.md)
 
 </dd> <dt>
 
 *dwPriority* 
 </dt> <dd>
 
-Prioridad del subproceso que proporciona ejemplos.
+Prioridad del subproceso que entrega ejemplos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *bAuto* es **true**, el objeto llama al método [**IMemInputPin:: ReceiveCanBlock**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivecanblock) en el código PIN de nivel inferior. Si **ReceiveCanBlock** devuelve S \_ correcto (lo que significa que el PIN podría bloquearse en las llamadas a [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) ), el objeto crea un subproceso para entregar ejemplos. De lo contrario, no crea un subproceso.
+Si *bAuto* es **TRUE,** el objeto llama al método [**IMemInputPin::ReceiveCanBlock**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivecanblock) en el pin de nivel inferior. Si **ReceiveCanBlock devuelve** S OK (lo que significa que el pin podría bloquearse en \_ llamadas [**IMemInputPin::Receive),**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) el objeto crea un subproceso para entregar ejemplos. De lo contrario, no crea un subproceso.
 
-Si *bAuto* es **false**, el valor de *bQueue* determina si se va a crear un subproceso.
+Si *bAuto* es **FALSE,** el valor de *bQueue* determina si se va a crear un subproceso.
 
-Si el objeto crea un subproceso, asigna el identificador de subproceso a la variable miembro [**COutputQueue:: m \_ hThread**](coutputqueue-m-hthread.md) . El procedimiento de subproceso es [**COutputQueue:: InitialThreadProc**](coutputqueue-initialthreadproc.md)y el parámetro Thread es un puntero a este. El objeto también crea una cola para contener ejemplos, que viene dado por la variable de miembro de [**\_ lista COutputQueue:: m**](coutputqueue-m-list.md) .
+Si el objeto crea un subproceso, asigna el identificador de subproceso a la variable miembro [**COutputQueue::m \_ hThread.**](coutputqueue-m-hthread.md) El procedimiento del subproceso [**es COutputQueue::InitialThreadProc**](coutputqueue-initialthreadproc.md)y el parámetro thread es un puntero a esto. El objeto también crea una cola para contener ejemplos, que se proporciona mediante la variable miembro [**COutputQueue::m \_ List.**](coutputqueue-m-list.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,16 +119,16 @@ Si el objeto crea un subproceso, asigna el identificador de subproceso a la vari
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

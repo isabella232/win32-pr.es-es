@@ -1,21 +1,21 @@
 ---
-description: .
+description: Estructuras de LA API de impresión xps
 ms.assetid: 13aa0d6b-8964-4d41-9fec-98c09b764a77
-title: Estructuras de API de impresión XPS
+title: Estructuras de LA API de impresión xps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1af07b0359c1f1865ad9388a2cfbf797bdad7ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05f9ba240f31de8b8ca301b98e30fb9f80a76784
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155953"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105213"
 ---
-# <a name="xps-print-api-structures"></a>Estructuras de API de impresión XPS
+# <a name="xps-print-api-structures"></a>Estructuras de LA API de impresión xps
 
-\[Las estructuras descritas en esta sección están desusadas. En su lugar, las aplicaciones cliente deben usar la [API Print Document Package](./tailored-app-printing-api.md) .\]
+\[Las estructuras descritas en esta sección están en desuso. Las aplicaciones cliente deben usar [la API Print Document Package en](./tailored-app-printing-api.md) su lugar.\]
 
-\[**XPS \_ El \_ Estado del trabajo** no es compatible y puede modificarse o no estar disponible en el futuro. \]
+\[**XPS \_ JOB \_ STATUS** no se admite y puede modificarse o no estar disponible en el futuro. \]
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,7 +23,7 @@ ms.locfileid: "104155953"
 
 | Estructura                                             | Descripción                                   |
 |-------------------------------------------------------|-----------------------------------------------|
-| [**\_Estado del trabajo de XPS \_**](/windows/win32/api/xpsprint/ns-xpsprint-xps_job_status)<br/> | Contiene una instantánea del estado del trabajo.<br/> |
+| [**ESTADO DEL \_ TRABAJO \_ XPS**](/windows/win32/api/xpsprint/ns-xpsprint-xps_job_status)<br/> | Contiene una instantánea del estado del trabajo.<br/> |
 
 
 

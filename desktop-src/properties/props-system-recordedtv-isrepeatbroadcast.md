@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.RecordedTV.IsRepeatBroadcast
 ms.assetid: b6e1b229-e86f-4417-9db2-b3fb3eab419f
-title: System. RecordedTV. IsRepeatBroadcast
+title: System.RecordedTV.IsRepeatBroadcast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2606976bc42676c119becd7f3e4d14060c9c63fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c176edc94ca5af480c12559c1daa5ba249fd2b8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909198"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091683"
 ---
-# <a name="systemrecordedtvisrepeatbroadcast"></a>System. RecordedTV. IsRepeatBroadcast
+# <a name="systemrecordedtvisrepeatbroadcast"></a>System.RecordedTV.IsRepeatBroadcast
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -42,9 +42,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -71,7 +71,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -89,7 +89,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

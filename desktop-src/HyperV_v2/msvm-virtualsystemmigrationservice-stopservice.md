@@ -1,7 +1,7 @@
 ---
-description: detiene el servicio.
+description: 'Método StopService de la clase Msvm_VirtualSystemMigrationService : detiene el servicio.'
 ms.assetid: cf0dde8d-b6cf-4a52-905f-c686ac41e314
-title: Método StopService de la clase Msvm_VirtualSystemMigrationService
+title: Método StopService de la Msvm_VirtualSystemMigrationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f815b400101bbddf019026675c69421bcc2c6598
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f945f20e86c25b89bf935e46140c1f994e8735b8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666328"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109353"
 ---
-# <a name="stopservice-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método StopService de la \_ clase MSVM VirtualSystemMigrationService
+# <a name="stopservice-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método StopService de la clase Msvm \_ VirtualSystemMigrationService
 
 detiene el servicio.
 
@@ -53,21 +53,21 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

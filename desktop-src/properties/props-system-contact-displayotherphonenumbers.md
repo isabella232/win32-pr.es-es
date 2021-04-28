@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Contact.DisplayOtherPhoneNumbers
 ms.assetid: 987ab3ff-6b8b-4774-92d7-c3486746d3ca
-title: System. contact. DisplayOtherPhoneNumbers
+title: System.Contact.DisplayOtherPhoneNumbers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5219d2850b1003c32da82c02d8d981ba0a63140b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e74b136c0a8973ed8f0e496b043b4c933e988908
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277433"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102363"
 ---
-# <a name="systemcontactdisplayotherphonenumbers"></a>System. contact. DisplayOtherPhoneNumbers
+# <a name="systemcontactdisplayotherphonenumbers"></a>System.Contact.DisplayOtherPhoneNumbers
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -28,9 +28,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -45,7 +45,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -57,7 +57,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

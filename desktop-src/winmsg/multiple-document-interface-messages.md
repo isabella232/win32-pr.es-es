@@ -1,30 +1,30 @@
 ---
-description: .
+description: Mensajes MDI
 ms.assetid: 75504cf2-e656-440d-a2dc-16e9ca801565
 title: Mensajes MDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68022f30cc44356110853661d29102d42519c9a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96cbae2388e81f4848d9a8d1acfcd337ef0e5dd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659893"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100353"
 ---
 # <a name="mdi-messages"></a>Mensajes MDI
 
--   [**MDIACTIVATE de WM \_**](wm-mdiactivate.md)
--   [**MDICASCADE de WM \_**](wm-mdicascade.md)
--   [**MDICREATE de WM \_**](wm-mdicreate.md)
--   [**MDIDESTROY de WM \_**](wm-mdidestroy.md)
--   [**MDIGETACTIVE de WM \_**](wm-mdigetactive.md)
--   [**MDIICONARRANGE de WM \_**](wm-mdiiconarrange.md)
--   [**MDIMAXIMIZE de WM \_**](wm-mdimaximize.md)
--   [**MDINEXT de WM \_**](wm-mdinext.md)
--   [**MDIREFRESHMENU de WM \_**](wm-mdirefreshmenu.md)
--   [**MDIRESTORE de WM \_**](wm-mdirestore.md)
--   [**MDISETMENU de WM \_**](wm-mdisetmenu.md)
--   [**MDITILE de WM \_**](wm-mditile.md)
+-   [**WM \_ MDIACTIVATE**](wm-mdiactivate.md)
+-   [**WM \_ MDICASCADE**](wm-mdicascade.md)
+-   [**WM \_ MDICREATE**](wm-mdicreate.md)
+-   [**WM \_ MDIDESTROY**](wm-mdidestroy.md)
+-   [**WM \_ MDIGETACTIVE**](wm-mdigetactive.md)
+-   [**WM \_ MDIICONARRANGE**](wm-mdiiconarrange.md)
+-   [**WM \_ MDIMAXIMIZE**](wm-mdimaximize.md)
+-   [**WM \_ MDINEXT**](wm-mdinext.md)
+-   [**WM \_ MDIREFRESHMENU**](wm-mdirefreshmenu.md)
+-   [**WM \_ MDIRESTORE**](wm-mdirestore.md)
+-   [**WM \_ MDISETMENU**](wm-mdisetmenu.md)
+-   [**WM \_ MDITILE**](wm-mditile.md)
 
  
 

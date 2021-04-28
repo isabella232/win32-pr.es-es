@@ -1,7 +1,7 @@
 ---
-description: Almacena una entrada de tabla de atributos.
+description: 'D3DX10_ATTRIBUTE_RANGE estructura: almacena una entrada de tabla de atributos.'
 ms.assetid: 81c77dc9-e078-46a1-a435-4b241e36ec13
-title: D3DX10_ATTRIBUTE_RANGE estructura (D3DX10. h)
+title: D3DX10_ATTRIBUTE_RANGE estructura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: ddf7f10882e08232467130b3abbc6fb723a843ed
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3e2954483da53c77ebef57f9cf2de104734caba2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718434"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094373"
 ---
-# <a name="d3dx10_attribute_range-structure"></a>Estructura del intervalo del \_ atributo D3DX10 \_
+# <a name="d3dx10_attribute_range-structure"></a>Estructura D3DX10 \_ ATTRIBUTE \_ RANGE
 
 Almacena una entrada de tabla de atributos.
 
@@ -46,29 +46,29 @@ typedef struct D3DX10_ATTRIBUTE_RANGE {
 **AttribId**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador de la tabla de atributos.
+Identificador de tabla de atributos.
 
 </dd> <dt>
 
 **FaceStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Superficie inicial.
+Cara inicial.
 
 </dd> <dt>
 
 **FaceCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -79,7 +79,7 @@ Recuento de caras.
 **VertexStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -90,7 +90,7 @@ Vértice inicial.
 **VertexCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -98,11 +98,11 @@ Recuento de vértices.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con distintas texturas, Estados de representación, materiales, etc. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla sin dibujar un identificador de atributo determinado (AttribId) al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado (AttribId) al dibujar el marco.
 
-El \_ tipo de intervalo de atributo LPD3DX \_ se define como un puntero a la estructura de intervalo de atributos de D3DX \_ \_ .
+El tipo LPD3DX ATTRIBUTE RANGE se define como un \_ puntero a la estructura \_ D3DX \_ ATTRIBUTE \_ RANGE.
 
 
 ```
@@ -117,15 +117,15 @@ typedef D3DX_ATTRIBUTE_RANGE* LPD3DX_ATTRIBUTE_RANGE;
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

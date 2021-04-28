@@ -1,7 +1,7 @@
 ---
-description: Construye un plano a partir de un punto y un normal.
+description: 'Función D3DXPlaneFromPointNormal (D3dx9math.h): construye un plano a partir de un punto y un normal.'
 ms.assetid: af396bbb-09b7-492f-a25f-9c950da7e605
-title: Función D3DXPlaneFromPointNormal (D3dx9math. h)
+title: Función D3DXPlaneFromPointNormal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8eeb8ea3a1725e0bf615be888d8e862c97730a2c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e34765d150932d6a7b3b0293e603237ffb2b45ad
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717551"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098093"
 ---
-# <a name="d3dxplanefrompointnormal-function-d3dx9mathh"></a>Función D3DXPlaneFromPointNormal (D3dx9math. h)
+# <a name="d3dxplanefrompointnormal-function-d3dx9mathh"></a>Función D3DXPlaneFromPointNormal (D3dx9math.h)
 
 Construye un plano a partir de un punto y un normal.
 
@@ -47,25 +47,25 @@ D3DXPLANE* D3DXPlaneFromPointNormal(
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntero a la estructura [**D3DXPLANE**](d3dxplane.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXPLANE**](d3dxplane.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PPoint* \[ de\]
+*pPoint* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que define el punto usado para construir el plano.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define el punto utilizado para construir el plano.
 
 </dd> <dt>
 
-*pNormal* \[ de\]
+*pNormal* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que define el uso normal para construir el plano.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define la normal usada para construir el plano.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que define el uso n
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntero a la estructura [**D3DXPLANE**](d3dxplane.md) construida a partir del punto y el normal.
+Puntero a la [**estructura D3DXPLANE**](d3dxplane.md) construida a partir del punto y el normal.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXPlaneFromPointNormal** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXPlaneFromPointNormal** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,12 +85,12 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

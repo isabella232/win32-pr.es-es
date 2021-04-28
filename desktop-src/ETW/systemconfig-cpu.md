@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de la CPU.
+description: 'SystemConfig_CPU clase : esta clase es la clase de tipo de evento para los eventos de configuración de CPU.'
 ms.assetid: 5a24be04-9e5e-4ba9-baaf-b58b79ad947b
-title: SystemConfig_CPU (clase)
+title: SystemConfig_CPU clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d08d0eeac9aa2287576bbb6dfe0e8ce41f116e8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07efa01bf58aeadfdfe12cd5db4d010a7f6dbca0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985695"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106123"
 ---
-# <a name="systemconfig_cpu-class"></a>\_Clase de CPU SystemConfig
+# <a name="systemconfig_cpu-class"></a>Clase de CPU SystemConfig \_
 
-Esta clase es la clase de tipo de evento para los eventos de configuración de la CPU.
+Esta clase es la clase de tipo de evento para los eventos de configuración de CPU.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,20 +52,20 @@ class SystemConfig_CPU : SystemConfig
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ CPU SystemConfig** tiene estos tipos de miembros:
+La **clase de \_ CPU SystemConfig** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ CPU SystemConfig** tiene estas propiedades.
+La **clase de \_ CPU SystemConfig** tiene estas propiedades.
 
 <dl> <dt>
 
 **AllocationGranularity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -81,13 +81,13 @@ Granularidad con la que se asigna la memoria virtual.
 **nombreDeEquipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (6), **Max** (256), **Format ("s")**
+Calificadores: **WmiDataId** (6), **Max** (256), **Format("s")**
 </dt> </dl>
 
 Nombre del equipo.
@@ -97,39 +97,39 @@ Nombre del equipo.
 **DomainName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (7), **Max** (132), **Format ("s")**
+Calificadores: **WmiDataId** (7), **Max** (132), **Format("s")**
 </dt> </dl>
 
-Nombre del dominio al que pertenece el equipo.
+Nombre del dominio en el que el equipo es miembro.
 
 </dd> <dt>
 
 **HyperThreadingFlag**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (8), puntero
+Calificadores: **WmiDataId** (8), Pointer
 </dt> </dl>
 
-Indica si la opción de Hyper-Threading está activada o desactivada para un procesador. Cada bit refleja el estado de Hyper-Threading de una CPU del equipo.
+Indica si la opción hyper-threading está activa o desactivada para un procesador. Cada bit refleja el estado de hyper-threading de una CPU en el equipo.
 
 </dd> <dt>
 
 **MemSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -145,7 +145,7 @@ Cantidad total de memoria física disponible para el sistema operativo.
 **MHz**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -161,7 +161,7 @@ Velocidad máxima del procesador, en megahercios.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -174,10 +174,10 @@ Número de procesadores del equipo.
 
 </dd> <dt>
 
-**PageSize**
+**Pagesize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -194,14 +194,14 @@ Tamaño de una página de intercambio, en bytes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
