@@ -1,7 +1,7 @@
 ---
-description: Puntero al filtro propietario.
+description: 'CTransformOutputPin::m_pTransformFilter miembro: puntero al filtro propietario.'
 ms.assetid: b70c4c25-ee2a-4667-964e-70db0f46f0ae
-title: 'Miembro CTransformOutputPin:: m_pTransformFilter (Transfrm. h)'
+title: CTransformOutputPin::m_pTransformFilter miembro (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72521fe706882a3be0cce2d1226c6db0109cfae1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1840090030c4bbdfa2020462bd8f5a2b51595996
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680743"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094863"
 ---
-# <a name="ctransformoutputpinm_ptransformfilter-member"></a>Miembro pTransformFilter CTransformOutputPin:: m \_
+# <a name="ctransformoutputpinm_ptransformfilter-member"></a>Miembro CTransformOutputPin::m \_ pTransformFilter
 
 Puntero al filtro propietario.
 
@@ -42,8 +42,8 @@ CTransformOutputPin *m_pTransformFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

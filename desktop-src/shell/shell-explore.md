@@ -1,7 +1,7 @@
 ---
-description: Abre una carpeta especificada en una ventana del explorador de Windows.
+description: 'Método Shell.Explore: abre una carpeta especificada en Explorador de Windows ventana.'
 ms.assetid: a788a3c4-f316-4fae-9294-3872eee8f46a
-title: Método Shell. Explore (Shldisp. h)
+title: Método Shell.Explore (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 00b597aea0121e5f87f51886e8019a1130a20584
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ec1756ad6743c5bbac36f56087e6f3820cbb624
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002725"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104333"
 ---
-# <a name="shellexplore-method"></a>Shell. Explore (método)
+# <a name="shellexplore-method"></a>Método Shell.Explore
 
-Abre una carpeta especificada en una ventana del explorador de Windows.
+Abre una carpeta especificada en una Explorador de Windows ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,12 +49,12 @@ Shell.Explore( _
 
 <dl> <dt>
 
-*vDir* \[ de\]
+*vDir* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Carpeta que se va a mostrar. Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En estos casos, se deben usar los valores numéricos en su lugar.
+Carpeta que se va a mostrar. Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra la **exploración** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra Explorar** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -88,7 +88,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -128,13 +128,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

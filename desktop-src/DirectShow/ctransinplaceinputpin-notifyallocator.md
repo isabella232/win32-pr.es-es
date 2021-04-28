@@ -1,7 +1,7 @@
 ---
-description: 'El método NotifyAllocator especifica un asignador para la conexión. Este método implementa el método IMemInputPin:: NotifyAllocator.'
+description: 'Método CTransInPlaceInputPin.NotifyAllocator: el método NotifyAllocator especifica un asignador para la conexión. Este método implementa el método IMemInputPin::NotifyAllocator.'
 ms.assetid: adc1c5b6-99da-4140-b644-7b98f6b8bad4
-title: Método CTransInPlaceInputPin. NotifyAllocator (TRANSip. h)
+title: Método CTransInPlaceInputPin.NotifyAllocator (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 74578243ce780e09d7435f9dd4b70bd9497e1e97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca15be5dc1893a393e6052832cc7522f27355eeb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660360"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094753"
 ---
-# <a name="ctransinplaceinputpinnotifyallocator-method"></a>CTransInPlaceInputPin. NotifyAllocator, método
+# <a name="ctransinplaceinputpinnotifyallocator-method"></a>CTransInPlaceInputPin.NotifyAllocator (método)
 
-El `NotifyAllocator` método especifica un asignador para la conexión. Este método implementa el método [**IMemInputPin:: NotifyAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) .
+El `NotifyAllocator` método especifica un asignador para la conexión. Este método implementa el [**método IMemInputPin::NotifyAllocator.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,43 +46,43 @@ HRESULT NotifyAllocator(
 *pAllocator* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador.
+Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 </dd> <dt>
 
 *bReadOnly* 
 </dt> <dd>
 
-Marca que especifica si los ejemplos de este asignador son de solo lectura. Si **es true**, los ejemplos son de solo lectura.
+Marca que especifica si las muestras de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                          |
 |-------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | Correcto<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto<br/>                   |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>    | Error<br/>                   |
-| <dl> <dt>**\_puntero E**</dt> </dl> | Argumento de puntero **nulo**<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro intenta usar el mismo asignador para ambas conexiones de PIN.
+El filtro intenta usar el mismo asignador para ambas conexiones de pin.
 
--   Si el PIN de salida no está conectado, el PIN de entrada acepta automáticamente el asignador. Cuando el PIN de salida está conectado, el filtro volverá a conectar el PIN de entrada. En ese momento, el filtro intentará volver a utilizar un único asignador.
--   Si el PIN de salida está conectado, el PIN de entrada acepta el asignador. El PIN de salida también usa el mismo asignador. Llama a `NotifyAllocator` en el PIN de entrada de nivel inferior.
+-   Si el pin de salida no está conectado, el pin de entrada acepta automáticamente el asignador. Cuando el pin de salida está conectado, el filtro volverá a conectar el pin de entrada. En ese momento, el filtro intentará de nuevo usar un solo asignador.
+-   Si el pin de salida está conectado, el pin de entrada acepta el asignador. El pin de salida también usa el mismo asignador. Llama a `NotifyAllocator` en el pin de entrada de bajada.
 
 El caso anterior tiene la siguiente excepción:
 
--   Si el asignador propuesto es de solo lectura (es decir, el parámetro *bReadOnly* es **true**) y el filtro necesita modificar los ejemplos, el filtro debe utilizar dos asignadores diferentes. En este caso, si el filtro de nivel superior propone usar el asignador del filtro de bajada, el método devuelve E \_ Fail.
+-   Si el asignador propuesto es de solo lectura (es decir, el parámetro *bReadOnly* es **TRUE)** y el filtro necesita modificar los ejemplos, el filtro debe usar dos asignadores diferentes. En este caso, si el filtro ascendente está proponiendo usar el asignador del filtro de bajada, el método devuelve E \_ FAIL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,16 +90,16 @@ El caso anterior tiene la siguiente excepción:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceInputPin**](ctransinplaceinputpin.md)
+[**CTransInPlaceInputPin (clase)**](ctransinplaceinputpin.md)
 </dt> </dl>
 
  

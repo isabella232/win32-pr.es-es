@@ -1,12 +1,12 @@
 ---
 title: Método PauseService de la clase Win32_Service (Servicios de Escritorio remoto)
-description: Intenta poner el servicio en estado de pausa.
+description: 'Método PauseService de la Win32_Service (Servicios de Escritorio remoto): intenta colocar el servicio en estado en pausa.'
 ms.assetid: 101987F6-FBAB-4E79-B1FA-346B1EF58DE1
 ms.tgt_platform: multiple
 keywords:
 - Método PauseService Servicios de Escritorio remoto
-- Método PauseService Servicios de Escritorio remoto, clase Win32_Service
-- Win32_Service de clase Servicios de Escritorio remoto, método PauseService
+- Método PauseService Servicios de Escritorio remoto , Win32_Service clase
+- Win32_Service clase Servicios de Escritorio remoto método , PauseService
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69951a77530b3aff89148b08e19f3a7c4da8f5b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d7c9847f363d9bc6d1743da6189d2c4290c00dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676661"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090603"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-remote-desktop-services"></a>Método PauseService de la clase Win32_Service (Servicios de Escritorio remoto)
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta poner el servicio en estado de pausa.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio en estado en pausa.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener los **valores HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** Property) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** property) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Error desconocido al iniciar el servicio.
 **9**
 </dt> <dd>
 
-No se encontró la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encontró la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ La base de datos para agregar un nuevo servicio está bloqueada.
 **12**
 </dt> <dd>
 
-Una dependencia de la que depende este servicio se ha quitado del sistema.
+Se ha quitado del sistema una dependencia en la que se basa este servicio.
 
 </dd> <dt>
 
@@ -178,14 +178,14 @@ El servicio no tiene ningún subproceso de ejecución.
 **18**
 </dt> <dd>
 
-El servicio tiene dependencias circulares al iniciarse.
+El servicio tiene dependencias circulares cuando se inicia.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Se está ejecutando un servicio con el mismo nombre.
+Un servicio se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
@@ -206,7 +206,7 @@ Se han pasado parámetros no válidos al servicio.
 **22**
 </dt> <dd>
 
-La cuenta con la que se ejecuta este servicio no es válida o carece de permisos para ejecutar el servicio.
+La cuenta con la que se ejecuta este servicio no es válida o carece de los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -224,48 +224,48 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de determinar qué servicios se pueden detener o pausar, puede utilizar los métodos [**StopService**](win32-terminalservice-stopservice.md) y **PauseService** para detener y pausar los servicios. La decisión de detener un servicio en lugar de pausarlo, o viceversa, depende de varios factores, entre los que se incluyen los siguientes:
+Después de determinar qué servicios se pueden detener o pausar, puede usar los métodos [**StopService**](win32-terminalservice-stopservice.md) y **PauseService** para detener y pausar los servicios. La decisión de detener un servicio en lugar de pausarlo, o viceversa, depende de varios factores, incluidos los siguientes:
 
--   ¿Se puede pausar el servicio? Si no es así, la única opción es detener el servicio.
--   ¿Necesita seguir controlando las solicitudes de cliente para los usuarios que ya están conectados al servicio? Si es así, al pausar un servicio normalmente se le permite administrar los clientes existentes a la vez que deniega el acceso a los clientes nuevos. Por el contrario, cuando se detiene un servicio, todos los clientes se desconectan inmediatamente.
--   ¿Necesita volver a configurar un servicio y hacer que los cambios surtan efecto inmediatamente? Aunque se pueden cambiar las propiedades del servicio mientras se pausa un servicio, la mayoría de ellos no surtirán efecto hasta que el servicio se detenga y se reinicie realmente.
+-   ¿El servicio es capaz de pausar? Si no es así, la única opción es detener el servicio.
+-   ¿Necesita seguir controlando las solicitudes de cliente de cualquier persona que ya esté conectada al servicio? Si es así, pausar un servicio normalmente le permite controlar los clientes existentes mientras se deniega el acceso a los nuevos clientes. Por el contrario, cuando se detiene un servicio, todos los clientes se desconectan inmediatamente.
+-   ¿Necesita volver a configurar un servicio y hacer que los cambios sumen efecto inmediatamente? Aunque las propiedades del servicio se pueden cambiar mientras un servicio está en pausa, la mayoría de ellas no tienen efecto hasta que el servicio se detiene y reinicia realmente.
 
 El código de scripting necesario para detener un servicio es casi idéntico al código necesario para pausar el servicio.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de [aplicación pausar los servicios que se ejecutan con una cuenta específica](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) de VBScript se detienen todos los servicios que se ejecutan en la misma cuenta de servicio
+El [ejemplo de VBScript Pausar](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) servicios que se ejecutan en una cuenta específica pausa todos los servicios que se ejecutan en la cuenta de servicio hipotética Netsvc.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service)
+[**Servicio \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
 [Clases de sistema operativo](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**Win32 \_ TerminalService**](win32-terminalservice.md)
+[**TerminalService de Win32 \_**](win32-terminalservice.md)
 </dt> <dt>
 
-[Tareas WMI: servicios](/windows/desktop/WmiSdk/wmi-tasks--services)
+[Tareas wmi: servicios](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> <dt>
 
 [**StopService**](/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service)

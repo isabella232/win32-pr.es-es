@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m pFilter es un puntero al filtro propietario.
+description: 'CImageAllocator::m_pFilter miembro: la variable miembro m pFilter es un puntero \_ al filtro propietario.'
 ms.assetid: 57ba31bb-e047-4046-a58d-6ca39d6093f8
-title: 'Miembro CImageAllocator:: m_pFilter (Winutil. h)'
+title: CImageAllocator::m_pFilter miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 325450d44a649008a4a4f16297ad52404c242c52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f62a7e9ce7a9449072cfdd318330f5bfae0bbb16
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660817"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085663"
 ---
-# <a name="cimageallocatorm_pfilter-member"></a>Miembro pFilter CImageAllocator:: m \_
+# <a name="cimageallocatorm_pfilter-member"></a>Miembro CImageAllocator::m \_ pFilter
 
 La `m_pFilter` variable miembro es un puntero al filtro propietario.
 
@@ -42,16 +42,16 @@ CBaseFilter *m_pFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImageAllocator**](cimageallocator.md)
+[**CImageAllocator (clase)**](cimageallocator.md)
 </dt> </dl>
 
  

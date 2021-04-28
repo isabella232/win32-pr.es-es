@@ -1,7 +1,7 @@
 ---
-description: El método Inactive notifica al pin que el filtro ya no está activo.
+description: 'Método CBasePin.Inactive: el método Inactivo notifica al pin que el filtro ya no está activo.'
 ms.assetid: 71847578-2271-4243-87c4-9f14b33f770c
-title: Método CBasePin. Inactive (Amfilter. h)
+title: Método CBasePin.Inactive (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 431b243107c365b5d9fda729fff2de80d9193c7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c0d9ec403b53c3197c001e966ce7efd5eb8bed2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671101"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099343"
 ---
-# <a name="cbasepininactive-method"></a>CBasePin. Inactive (método)
+# <a name="cbasepininactive-method"></a>CBasePin.Inactive (método)
 
 El `Inactive` método notifica al pin que el filtro ya no está activo.
 
@@ -42,15 +42,15 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el filtro se detiene, la clase [**CBaseFilter**](cbasefilter.md) llama a este método en todas las clavijas conectadas del filtro.
+Cuando se detiene el filtro, la [**clase CBaseFilter**](cbasefilter.md) llama a este método en todos los pines conectados del filtro.
 
-Este método no hace nada en la clase base. Las clases derivadas deben invalidar este método para liberar los recursos obtenidos por el método [**CBasePin:: Active**](cbasepin-active.md) ; por ejemplo, para anular la confirmación de los asignadores del PIN.
+Este método no hace nada en la clase base. Las clases derivadas deben invalidar este método para liberar los recursos obtenidos por el [**método CBasePin::Active;**](cbasepin-active.md) por ejemplo, para desasignar los asignadores del pin.
 
-El estado interno del administrador de gráficos de filtro no se actualiza hasta que se devuelve este método, por lo que no se prueba el estado desde este método.
+El estado interno del administrador de gráficos de filtro no se actualiza hasta después de que este método vuelva, por lo que no pruebe el estado de este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,16 +58,16 @@ El estado interno del administrador de gráficos de filtro no se actualiza hasta
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: La eliminación&\# 8194; El método de clase WMI elimina un servicio existente.
+description: 'Método Delete de la Win32_SystemDriver clase : el&\# 8194; El método de clase WMI elimina un servicio existente.'
 ms.assetid: 5e437d36-3582-448c-b568-45f7fb13b096
 ms.tgt_platform: multiple
-title: Método Delete de la clase Win32_SystemDriver
+title: Método Delete de la Win32_SystemDriver clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 807fa6090fe2e088fb3900feb7f2068751ad2df6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e1b7435a1bca561b19e7d85299413f88f1ae76c3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907278"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097093"
 ---
-# <a name="delete-method-of-the-win32_systemdriver-class"></a>Método Delete de la \_ clase Win32 SystemDriver
+# <a name="delete-method-of-the-win32_systemdriver-class"></a>Método Delete de la clase \_ SystemDriver de Win32
 
-El método **Delete** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servicio existente.
+El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servicio existente.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ Devuelve un valor de 0 (cero) si el servicio se eliminó correctamente, 1 (uno) 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

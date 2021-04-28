@@ -1,7 +1,7 @@
 ---
-description: Transforma un plano mediante una matriz. La matriz de entrada es la transposición inversa de la transformación real.
+description: 'Función D3DXPlaneTransform (D3DX10Math.h): transforma un plano mediante una matriz. La matriz de entrada es la transpuesta inversa de la transformación real.'
 ms.assetid: ded06eac-4086-47e8-bc55-c37959afc22d
-title: Función D3DXPlaneTransform (D3DX10Math. h)
+title: Función D3DXPlaneTransform (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1b3c3390d84cd0d9c876afac6243ab90ca515e11
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b1d16ba2a29d42614c388a6207503ad32dd5e0f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362718"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108793"
 ---
-# <a name="d3dxplanetransform-function-d3dx10mathh"></a>Función D3DXPlaneTransform (D3DX10Math. h)
+# <a name="d3dxplanetransform-function-d3dx10mathh"></a>Función D3DXPlaneTransform (D3DX10Math.h)
 
-Transforma un plano mediante una matriz. La matriz de entrada es la transposición inversa de la transformación real.
+Transforma un plano mediante una matriz. La matriz de entrada es la transpuesta inversa de la transformación real.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,21 +51,21 @@ Puntero al [**D3DXPLANE**](d3d10-d3dxplane.md) que contiene el plano transformad
 
 </dd> <dt>
 
-*PP* \[ de\]
+*pP* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
 
-Puntero a la estructura D3DXPLANE de entrada, que contiene el plano que se va a transformar. El vector (a, b, c) que describe el plano debe normalizarse antes de que se llame a esta función. Vea el ejemplo.
+Puntero a la estructura D3DXPLANE de entrada, que contiene el plano que se va a transformar. El vector (a,b,c) que describe el plano debe normalizarse antes de llamar a esta función. Vea el ejemplo.
 
 </dd> <dt>
 
-*p. m* \[ de\]
+*pM* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origen, que contiene los valores de la transformación. Esta matriz debe contener la transposición inversa de los valores de transformación.
+Puntero a la estructura [**D3DXMATRIX de**](d3d10-d3dxmatrix.md) origen, que contiene los valores de transformación. Esta matriz debe contener la transpuesta inversa de los valores de transformación.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a la estructura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origen, que con
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
-Puntero a una estructura D3DXPLANE que representa el plano transformado. Este es el mismo valor que se devuelve en el parámetro pOut para que esta función se pueda usar como parámetro de otra función.
+Puntero a una estructura D3DXPLANE, que representa el plano transformado. Este es el mismo valor devuelto en el parámetro pOut para que esta función se pueda usar como parámetro para otra función.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -96,9 +96,9 @@ D3DXPlaneTransform(&planeNew, &plane, &matrix);
 
 
 
-AX + por + cz + DW = 0 describe un plano. El primer plano se crea con (a, b, c, d) = (0, 1, 1, 0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a, b, c, d) = (0, 0.353 f, 0.235 f, 0), que muestra el nuevo plano que se va a describir mediante 0.353 y + 0.235 z = 0.
+Un plano se describe mediante ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
 
-El parámetro pM contiene la transposición inversa de la matriz de transformación. Este método requiere la TRANSPOSE inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
+El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transpuesta inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,12 +106,12 @@ El parámetro pM contiene la transposición inversa de la matriz de transformaci
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

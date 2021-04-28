@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CRendererPosPassThru.CRendererPosPassThru: método constructor.'
 ms.assetid: 9d6f40ee-31bf-4334-bee5-4be834f1f269
-title: Constructor CRendererPosPassThru. CRendererPosPassThru (Ctlutil. h)
+title: Constructor CRendererPosPassThru.CRendererPosPassThru (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 97b21ba3ad9438189f97c3e0bb9f011b210a0195
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 59972f12f0f746ef68c267e3fbd0d071d54193c3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671309"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085413"
 ---
-# <a name="crendererpospassthrucrendererpospassthru-constructor"></a>Constructor CRendererPosPassThru. CRendererPosPassThru
+# <a name="crendererpospassthrucrendererpospassthru-constructor"></a>Constructor CRendererPosPassThru.CRendererPosPassThru
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,28 +48,28 @@ CRendererPosPassThru(
 *pName* 
 </dt> <dd>
 
-Puntero al nombre del objeto, para la depuración. Asigne este parámetro en la memoria estática.
+Puntero al nombre del objeto para fines de depuración. Asigne este parámetro en memoria estática.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . ignorado.
+Puntero a un **valor HRESULT.** ignorado.
 
 </dd> <dt>
 
 *pPin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN de entrada del filtro.
+Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin de entrada del filtro.
 
 </dd> </dl>
 
@@ -79,8 +79,8 @@ Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

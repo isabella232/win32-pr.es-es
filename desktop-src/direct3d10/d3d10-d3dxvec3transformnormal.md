@@ -1,7 +1,7 @@
 ---
-description: Transforma el vector 3D normal de la matriz especificada.
+description: 'Función D3DXVec3TransformNormal (D3DX10Math.h): transforma el vector 3D normal por la matriz dada.'
 ms.assetid: 8068b80f-6222-4f23-8b1c-2ff5592fa898
-title: Función D3DXVec3TransformNormal (D3DX10Math. h)
+title: Función D3DXVec3TransformNormal (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 602f366d3d7ccbcd37804226323d5584eed034f9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0fc1456b89f3e11f2076a8e7b6b960d15e9c7083
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362659"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103063"
 ---
-# <a name="d3dxvec3transformnormal-function-d3dx10mathh"></a>Función D3DXVec3TransformNormal (D3DX10Math. h)
+# <a name="d3dxvec3transformnormal-function-d3dx10mathh"></a>Función D3DXVec3TransformNormal (D3DX10Math.h)
 
-Transforma el vector 3D normal de la matriz especificada.
+Transforma el vector 3D normal por la matriz especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,25 +46,25 @@ D3DXVECTOR3* D3DXVec3TransformNormal(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PV* \[ de\]
+*pV* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a la estructura de D3DXVECTOR3 de origen.
+Puntero a la estructura D3DXVECTOR3 de origen.
 
 </dd> <dt>
 
-*p. m* \[ de\]
+*pM* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a la estructura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origen.
+Puntero a la estructura [**D3DXMATRIX de**](d3d10-d3dxmatrix.md) origen.
 
 </dd> </dl>
 
@@ -74,13 +74,13 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es el vector transformado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función transforma el vector (pV->x, pV->y, pV->z, 0) por la matriz a la que señala pM.
+Esta función transforma el vector (pV->x, pV->y, pV->z, 0) por la matriz a la que apunta pM.
 
-Si desea transformar un normal, la matriz que se pasa a esta función debe ser la transformación del inverso de la matriz que se usaría para transformar un punto.
+Si desea transformar un normal, la matriz que pase a esta función debe ser la transponer del inverso de la matriz que se usaría para transformar un punto.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función **D3DXVec3TransformNormal** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXVec3TransformNormal** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,11 +88,11 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

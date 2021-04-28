@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de inicio y fin de subproceso. La siguiente sintaxis se simplifica desde el código MOF.
+description: 'Thread_TypeGroup1 clase : esta clase es la clase de tipo de evento para los eventos de inicio y finalización de subprocesos. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: d9e3e33a-0e59-4753-a8d8-5320cbae9d95
-title: Thread_TypeGroup1 (clase)
+title: Thread_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 75352efbe044f5fee837c496c394fe28e2dbbbfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9693bef4449cc076710a74dd9cef88ae608754b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155552"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105713"
 ---
-# <a name="thread_typegroup1-class"></a>Thread \_ TypeGroup1 (clase)
+# <a name="thread_typegroup1-class"></a>Clase \_ TypeGroup1 de subproceso
 
-Esta clase es la clase de tipo de evento para los eventos de inicio y fin de subproceso.
+Esta clase es la clase de tipo de evento para los eventos de inicio y finalización de subprocesos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,90 +64,90 @@ class Thread_TypeGroup1 : Thread
 
 ## <a name="members"></a>Miembros
 
-La clase **Thread \_ TypeGroup1** tiene estos tipos de miembros:
+La **clase \_ Thread TypeGroup1** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **Thread \_ TypeGroup1** tiene estas propiedades.
+La **clase \_ Thread TypeGroup1** tiene estas propiedades.
 
 <dl> <dt>
 
 Afinidad
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), puntero
+Calificadores: WmiDataId(7), Pointer
 </dt> </dl>
 
-Conjunto de procesadores en el que se permite la ejecución del subproceso.
+Conjunto de procesadores en los que se puede ejecutar el subproceso.
 
 </dd> <dt>
 
 BasePriority
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (11)
+Calificadores: WmiDataId(11)
 </dt> </dl>
 
-La prioridad del programador del subproceso (vea la función [**SetThreadPriority**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) ).
+Prioridad del programador del subproceso (vea la [**función SetThreadPriority).**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority)
 
 </dd> <dt>
 
 IoPriority
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (13)
+Calificadores: WmiDataId(13)
 </dt> </dl>
 
-Una sugerencia de prioridad de e/s para programar IOs generados por el subproceso.
+Sugerencia de prioridad de E/S para programar las E/S generadas por el subproceso.
 
 </dd> <dt>
 
 PagePriority
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (12)
+Calificadores: WmiDataId(12)
 </dt> </dl>
 
-Una sugerencia de prioridad de página de memoria para las páginas de memoria a las que tiene acceso el subproceso.
+Sugerencia de prioridad de página de memoria para las páginas de memoria a las que tiene acceso el subproceso.
 
 </dd> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Identificador de proceso del subproceso implicado en el evento.
@@ -157,13 +157,13 @@ Identificador de proceso del subproceso implicado en el evento.
 StackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), puntero
+Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
 Dirección base de la pila del subproceso.
@@ -173,13 +173,13 @@ Dirección base de la pila del subproceso.
 StackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
 Límite de la pila del subproceso.
@@ -189,45 +189,45 @@ Límite de la pila del subproceso.
 SubProcessTag
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (10), formato ("x")
+Calificadores: WmiDataId(10), Format("x")
 </dt> </dl>
 
-Identifica el servicio si el subproceso es propiedad de un servicio; de lo contrario, es cero.
+Identifica el servicio si el subproceso es propiedad de un servicio; de lo contrario, cero.
 
 </dd> <dt>
 
 TebBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (9), puntero
+Calificadores: WmiDataId(9), Pointer
 </dt> </dl>
 
-Dirección base del bloque del entorno del subproceso.
+Dirección base del bloque de entorno de subproceso.
 
 </dd> <dt>
 
 ThreadFlags
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (14)
+Calificadores: WmiDataId(14)
 </dt> </dl>
 
 No se utiliza.
@@ -237,13 +237,13 @@ No se utiliza.
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), Format ("x")
+Calificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
 Identificador de subproceso del subproceso implicado en el evento.
@@ -253,13 +253,13 @@ Identificador de subproceso del subproceso implicado en el evento.
 UserStackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), puntero
+Calificadores: WmiDataId(5), Pointer
 </dt> </dl>
 
 Dirección base de la pila de modo de usuario del subproceso.
@@ -269,13 +269,13 @@ Dirección base de la pila de modo de usuario del subproceso.
 UserStackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), puntero
+Calificadores: WmiDataId(6), Pointer
 </dt> </dl>
 
 Límite de la pila de modo de usuario del subproceso.
@@ -285,39 +285,39 @@ Límite de la pila de modo de usuario del subproceso.
 Win32StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8), puntero
+Calificadores: WmiDataId(8), Pointer
 </dt> </dl>
 
-Dirección de inicio de la función que va a ejecutar este subproceso.
+Dirección inicial de la función que va a ejecutar este subproceso.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se están ejecutando actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.
+Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se ejecutan actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Conversaciones**](thread.md)
+[**Hilo**](thread.md)
 </dt> </dl>
 
  

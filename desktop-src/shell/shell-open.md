@@ -1,7 +1,7 @@
 ---
-description: Abre la carpeta especificada.
+description: 'Método Shell.Open: abre la carpeta especificada.'
 ms.assetid: 96ed9360-fb8f-4f7e-aefb-4a63ec95df07
-title: Método Shell. Open (Shldisp. h)
+title: Método Shell.Open (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3572f48a7b129500c38c3c0227ba479ecb775067
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36f8914be3fce6b461e5267562e6f3ef40aa5fef
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910762"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104233"
 ---
-# <a name="shellopen-method"></a>Shell. Open (método)
+# <a name="shellopen-method"></a>Método Shell.Open
 
 Abre la carpeta especificada.
 
@@ -49,22 +49,22 @@ Shell.Open( _
 
 <dl> <dt>
 
-*vDir* \[ de\]
+*vDir* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Cadena que especifica la ruta de acceso de la carpeta o uno de los valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En estos casos, se deben usar los valores numéricos en su lugar.
+Cadena que especifica la ruta de acceso de la carpeta o uno de los [**valores de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
-Si *vDir* está establecido en uno de los [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) y la carpeta Special no existe, esta función creará la carpeta.
+Si *vDir* se establece en uno de [**los shellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) y la carpeta especial no existe, esta función creará la carpeta.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra **abierto** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra Abrir** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -81,7 +81,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,17 +119,17 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

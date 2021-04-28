@@ -1,7 +1,7 @@
 ---
-description: Describe un vector de punto flotante de 16 bits.
+description: 'Estructura D3DXFLOAT16 (D3DX10Math.h): describe un vector de punto flotante de 16 bits.'
 ms.assetid: 2aaca07b-66eb-4845-9d22-692be02234ac
-title: Estructura D3DXFLOAT16 (D3DX10Math. h)
+title: Estructura D3DXFLOAT16 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: c6b478cb6651df496a3895e35e88b99e99d42a17
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 01ad9bf268a1ae8ec26685e521e5dad5e6a898bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670253"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103513"
 ---
-# <a name="d3dxfloat16-structure-d3dx10mathh"></a>Estructura D3DXFLOAT16 (D3DX10Math. h)
+# <a name="d3dxfloat16-structure-d3dx10mathh"></a>Estructura D3DXFLOAT16 (D3DX10Math.h)
 
 Describe un vector de punto flotante de 16 bits.
 
@@ -42,7 +42,7 @@ typedef struct D3DXFLOAT16 {
 **Valor**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,15 +56,15 @@ Datos de 16 bits.
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Marcas que se usan para especificar las opciones de creación de una malla.
+description: 'Enumeración D3DXMESH: marcas que se usan para especificar las opciones de creación de una malla.'
 ms.assetid: c94e19ab-8024-4a28-9d1a-6d57707c3a52
-title: Enumeración D3DXMESH (D3dx9mesh. h)
+title: Enumeración D3DXMESH (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 602eb38f2113b54ee02477faf3bdd15a6a924abc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a312c2618960691184182039afe38acc8947eb6a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362436"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098103"
 ---
 # <a name="d3dxmesh-enumeration"></a>Enumeración D3DXMESH
 
-Marcas que se usan para especificar las opciones de creación de una malla.
+Marcas usadas para especificar opciones de creación para una malla.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -60,7 +60,7 @@ typedef enum D3DXMESH {
 
 <dl> <dt>
 
-<span id="D3DXMESH_32BIT"></span><span id="d3dxmesh_32bit"></span>**D3DXMESH \_ 32 bits**
+<span id="D3DXMESH_32BIT"></span><span id="d3dxmesh_32bit"></span>**D3DXMESH \_ 32BIT**
 </dt> <dd>
 
 La malla tiene índices de 32 bits en lugar de índices de 16 bits. Vea la sección Comentarios.
@@ -70,153 +70,153 @@ La malla tiene índices de 32 bits en lugar de índices de 16 bits. Vea la secci
 <span id="D3DXMESH_DONOTCLIP"></span><span id="d3dxmesh_donotclip"></span>**D3DXMESH \_ DONOTCLIP**
 </dt> <dd>
 
-Use la marca de uso de [**D3DUSAGE \_ DONOTCLIP**](d3dusage.md) para los búferes de vértices y de índices.
+Use la [**marca de uso D3DUSAGE \_ DONOTCLIP**](d3dusage.md) para los búferes de vértice e índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_POINTS"></span><span id="d3dxmesh_points"></span>**\_Puntos D3DXMESH**
+<span id="D3DXMESH_POINTS"></span><span id="d3dxmesh_points"></span>**PUNTOS D3DXMESH \_**
 </dt> <dd>
 
-Use la marca de uso de [**\_ puntos D3DUSAGE**](d3dusage.md) para los búferes de vértices y de índices.
+Use la [**marca de uso D3DUSAGE \_ POINTS para**](d3dusage.md) los búferes de vértice e índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_RTPATCHES"></span><span id="d3dxmesh_rtpatches"></span>**D3DXMESH \_ RTPATCHES**
 </dt> <dd>
 
-Use la marca de uso de [**D3DUSAGE \_ RTPATCHES**](d3dusage.md) para los búferes de vértices y de índices.
+Use la [**marca de uso D3DUSAGE \_ RTPATCHES**](d3dusage.md) para los búferes de vértices e índices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_NPATCHES"></span><span id="d3dxmesh_npatches"></span>**D3DXMESH \_ NPATCHES**
 </dt> <dd>
 
-Si se especifica esta marca, el vértice y el búfer de índice de la malla se crearán con la marca [**D3DUSAGE \_ NPATCHES**](d3dusage.md) . Esto es necesario si el objeto de malla se va a representar mediante la mejora de N-patch mediante Direct3D.
+Al especificar esta marca, el vértice y el búfer de índice de la malla se crean con la marca [**D3DUSAGE \_ NPATCHES.**](d3dusage.md) Esto es necesario si el objeto de malla se va a representar mediante la mejora de N revisiones mediante Direct3D.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_SYSTEMMEM"></span><span id="d3dxmesh_vb_systemmem"></span>**D3DXMESH \_ VB \_ SYSTEMMEM**
 </dt> <dd>
 
-Use la marca de uso de [**D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para los búferes de vértices.
+Use la [**marca de uso D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para los búferes de vértices.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_MANAGED"></span><span id="d3dxmesh_vb_managed"></span>**D3DXMESH \_ VB \_ administrado**
+<span id="D3DXMESH_VB_MANAGED"></span><span id="d3dxmesh_vb_managed"></span>**D3DXMESH \_ VB \_ ADMINISTRADO**
 </dt> <dd>
 
-Use la marca de uso [**\_ administrado D3DPOOL**](./d3dpool.md) para los búferes de vértices.
+Use la marca [**de uso D3DPOOL \_ MANAGED**](./d3dpool.md) para los búferes de vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_WRITEONLY"></span><span id="d3dxmesh_vb_writeonly"></span>**D3DXMESH \_ VB \_ WRITEONLY**
 </dt> <dd>
 
-Use la marca de uso [**\_ WRITEONLY de D3DUSAGE**](d3dusage.md) para los búferes de vértices.
+Use la [**marca de uso \_ WRITEONLY de D3DUSAGE**](d3dusage.md) para los búferes de vértices.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_DYNAMIC"></span><span id="d3dxmesh_vb_dynamic"></span>**D3DXMESH \_ VB \_ dinámico**
+<span id="D3DXMESH_VB_DYNAMIC"></span><span id="d3dxmesh_vb_dynamic"></span>**D3DXMESH \_ VB \_ DYNAMIC**
 </dt> <dd>
 
-Use la marca de uso [**\_ dinámico D3DUSAGE**](d3dusage.md) para los búferes de vértices.
+Use la [**marca de uso D3DUSAGE \_ DYNAMIC**](d3dusage.md) para los búferes de vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_vb_softwareprocessing"></span>**D3DXMESH \_ VB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Use la marca de uso de [**D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para los búferes de vértices.
+Use la [**marca de uso D3DUSAGE \_ SOFTWAREPROCESSING para**](d3dusage.md) los búferes de vértice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_SYSTEMMEM"></span><span id="d3dxmesh_ib_systemmem"></span>**D3DXMESH \_ IB \_ SYSTEMMEM**
 </dt> <dd>
 
-Use la marca de uso [**D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para los búferes de índice.
+Use la [**marca de uso \_ SYSTEMMEM de D3DPOOL**](./d3dpool.md) para búferes de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_IB_MANAGED"></span><span id="d3dxmesh_ib_managed"></span>**Administrado por D3DXMESH \_ IB \_**
+<span id="D3DXMESH_IB_MANAGED"></span><span id="d3dxmesh_ib_managed"></span>**D3DXMESH \_ IB \_ ADMINISTRADO**
 </dt> <dd>
 
-Use la marca de uso [**\_ administrado D3DPOOL**](./d3dpool.md) para los búferes de índice.
+Use la marca [**de uso D3DPOOL \_ MANAGED**](./d3dpool.md) para búferes de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_WRITEONLY"></span><span id="d3dxmesh_ib_writeonly"></span>**D3DXMESH \_ IB \_ WRITEONLY**
 </dt> <dd>
 
-Use la marca de uso [**\_ WRITEONLY de D3DUSAGE**](d3dusage.md) para los búferes de índice.
+Use la [**marca de uso \_ WRITEONLY de D3DUSAGE**](d3dusage.md) para búferes de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_IB_DYNAMIC"></span><span id="d3dxmesh_ib_dynamic"></span>**D3DXMESH \_ IB \_ Dynamic**
+<span id="D3DXMESH_IB_DYNAMIC"></span><span id="d3dxmesh_ib_dynamic"></span>**D3DXMESH \_ IB \_ DYNAMIC**
 </dt> <dd>
 
-Use la marca de uso [**\_ dinámico D3DUSAGE**](d3dusage.md) para los búferes de índice.
+Use la marca de uso DYNAMIC de [**D3DUSAGE \_**](d3dusage.md) para los búferes de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_ib_softwareprocessing"></span>**D3DXMESH \_ IB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Use la marca de uso [**D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para los búferes de índice.
+Use la [**marca de uso D3DUSAGE \_ SOFTWAREPROCESSING para**](d3dusage.md) los búferes de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_SHARE"></span><span id="d3dxmesh_vb_share"></span>**\_Recurso compartido de VB D3DXMESH \_**
+<span id="D3DXMESH_VB_SHARE"></span><span id="d3dxmesh_vb_share"></span>**RECURSO COMPARTIDO DE VB D3DXMESH \_ \_**
 </dt> <dd>
 
-Obliga a que las mallas clonadas compartan búferes de vértices.
+Fuerza a las mallas clonadas a compartir búferes de vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_USEHWONLY"></span><span id="d3dxmesh_usehwonly"></span>**D3DXMESH \_ USEHWONLY**
 </dt> <dd>
 
-Usar solo el procesamiento de hardware. En el caso de dispositivos de modo mixto, esta marca hará que el sistema use el hardware (si se admite en el hardware) o el procesamiento de software de forma predeterminada.
+Use solo el procesamiento de hardware. En el caso del dispositivo en modo mixto, esta marca hará que el sistema use hardware (si se admite en hardware) o que el procesamiento de software sea predeterminado.
 
 </dd> <dt>
 
 <span id="D3DXMESH_SYSTEMMEM"></span><span id="d3dxmesh_systemmem"></span>**D3DXMESH \_ SYSTEMMEM**
 </dt> <dd>
 
-Equivale a especificar D3DXMESH \_ VB \_ SYSTEMMEM y D3DXMESH \_ IB \_ SYSTEMMEM.
+Equivalente a especificar D3DXMESH \_ VB \_ SYSTEMMEM y D3DXMESH \_ IB \_ SYSTEMMEM.
 
 </dd> <dt>
 
-<span id="D3DXMESH_MANAGED"></span><span id="d3dxmesh_managed"></span>**Administrado por D3DXMESH \_**
+<span id="D3DXMESH_MANAGED"></span><span id="d3dxmesh_managed"></span>**D3DXMESH \_ ADMINISTRADO**
 </dt> <dd>
 
-Equivale a especificar D3DXMESH \_ VB \_ administrado y D3DXMESH \_ IB \_ administrado.
+Equivalente a especificar D3DXMESH \_ VB \_ MANAGED y D3DXMESH \_ IB \_ MANAGED.
 
 </dd> <dt>
 
 <span id="D3DXMESH_WRITEONLY"></span><span id="d3dxmesh_writeonly"></span>**D3DXMESH \_ WRITEONLY**
 </dt> <dd>
 
-Equivalente a especificar tanto D3DXMESH \_ VB \_ WRITEONLY como D3DXMESH \_ IB \_ WriteOnly.
+Equivalente a especificar D3DXMESH \_ VB \_ WRITEONLY y D3DXMESH \_ IB \_ WRITEONLY.
 
 </dd> <dt>
 
-<span id="D3DXMESH_DYNAMIC"></span><span id="d3dxmesh_dynamic"></span>**D3DXMESH \_ dinámico**
+<span id="D3DXMESH_DYNAMIC"></span><span id="d3dxmesh_dynamic"></span>**D3DXMESH \_ DYNAMIC**
 </dt> <dd>
 
-Equivale a especificar D3DXMESH \_ VB \_ Dynamic y D3DXMESH \_ IB \_ Dynamic.
+Equivalente a especificar D3DXMESH \_ VB \_ DYNAMIC y D3DXMESH \_ IB \_ DYNAMIC.
 
 </dd> <dt>
 
 <span id="D3DXMESH_SOFTWAREPROCESSING"></span><span id="d3dxmesh_softwareprocessing"></span>**D3DXMESH \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Equivale a especificar D3DXMESH \_ VB \_ SOFTWAREPROCESSING y D3DXMESH \_ IB \_ SOFTWAREPROCESSING.
+Equivalente a especificar D3DXMESH \_ VB \_ SOFTWAREPROCESSING y D3DXMESH \_ IB \_ SOFTWAREPROCESSING.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una malla de 32 bits (D3DXMESH \_ 32 bits) puede admitir teóricamente (2 ^ 32)-1 caras y vértices. Sin embargo, la asignación de memoria para una malla que es grande en un sistema operativo de 32 bits no es práctica.
+Una malla de 32 bits (D3DXMESH de 32 BITS) puede admitir teóricamente \_ (2^32)-1 caras y vértices. Sin embargo, no es práctico asignar memoria para una malla de gran tamaño en un sistema operativo de 32 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -224,15 +224,15 @@ Una malla de 32 bits (D3DXMESH \_ 32 bits) puede admitir teóricamente (2 ^ 32)-
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método InitializeFromMemory.
+description: 'IWICColorContext_InitializeFromMemory_Proxy función: función de proxy para el método InitializeFromMemory.'
 ms.assetid: d98fe40c-c3f1-4c46-a558-1910e3dee51b
-title: IWICColorContext_InitializeFromMemory_Proxy función)
+title: IWICColorContext_InitializeFromMemory_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 32c3c24902b6c3157b9776d84c5a8eea47cce43e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e77bbcf1e430891b031b2e77bc168c33f781eacf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706492"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097223"
 ---
-# <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>IWICColorContext \_ InitializeFromMemory \_ función proxy
+# <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>Función IWICColorContext \_ InitializeFromMemory \_ Proxy
 
-Función de proxy para el método [**InitializeFromMemory**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccolorcontext-initializefrommemory) .
+Función de proxy para [**el método InitializeFromMemory.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccolorcontext-initializefrommemory)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT IWICColorContext_InitializeFromMemory_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext) \** _
+Tipo: **[ **IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)\***
 
 </dd> <dt>
 
-_pbBuffer * \[ en\]
+*pbBuffer* \[ En\]
 </dt> <dd>
 
-Tipo: **const byte \** _
+Tipo: **const \* BYTE**
 
-Búfer que se usa para inicializar [_ *IWICColorContext* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext).
+Búfer utilizado para inicializar [**IWICColorContext.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)
 
 </dd> <dt>
 
-*cbBufferSize* \[ de\]
+*cbBufferSize* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Tamaño del búfer de *pbBuffer* .
+Tamaño del búfer *pbBuffer.*
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Tamaño del búfer de *pbBuffer* .
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -79,11 +79,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

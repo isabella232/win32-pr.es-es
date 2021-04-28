@@ -1,7 +1,7 @@
 ---
-description: Generar una lista de bordes de la malla, así como una lista de caras que comparten cada borde.
+description: 'Método ID3DX10Mesh::GenerateAdjacencyAndPointReps: genera una lista de bordes de malla, así como una lista de caras que comparten cada borde.'
 ms.assetid: 3932e2b1-031d-4962-ad90-6e9da8cf2e0e
-title: 'ID3DX10Mesh:: GenerateAdjacencyAndPointReps (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GenerateAdjacencyAndPointReps (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c46cf83931c95116132798ca971f9d4e61da2af8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e496f96f36805d411c71e9aba1e2560b0dcbe3c6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104548014"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083983"
 ---
-# <a name="id3dx10meshgenerateadjacencyandpointreps-method"></a>ID3DX10Mesh:: GenerateAdjacencyAndPointReps (método)
+# <a name="id3dx10meshgenerateadjacencyandpointreps-method"></a>Método ID3DX10Mesh::GenerateAdjacencyAndPointReps
 
-Generar una lista de bordes de la malla, así como una lista de caras que comparten cada borde.
+Genere una lista de bordes de malla, así como una lista de caras que comparten cada borde.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GenerateAdjacencyAndPointReps(
 
 <dl> <dt>
 
-*Épsilon* \[ de\]
+*Epsilon* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Especifica que los vértices que difieren en la posición inferior al épsilon se deben tratar como coincidentes.
+Especifica que los vértices que difieren en posición por menos de epsilon deben tratarse como coincidentes.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Especifica que los vértices que difieren en la posición inferior al épsilon s
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una vez que una aplicación genera información de adyacencias para una malla, los datos de la malla pueden optimizarse para mejorar el rendimiento del dibujo.
+Una vez que una aplicación genera información de adyacencia para una malla, los datos de la malla se pueden optimizar para mejorar el rendimiento del dibujo.
 
-El orden de las entradas en el búfer de adyacencia viene determinado por el orden de los índices de vértice en el búfer de índice. El triángulo 0 adyacente siempre corresponde al borde entre los índices de las esquinas 0 y 1. El triángulo 1 adyacente siempre corresponde al borde entre los índices de las esquinas 1 y 2, mientras que el triángulo 2 adyacente se corresponde con el borde entre los índices de las esquinas 2 y 0.
+El orden de las entradas del búfer de adyacencia viene determinado por el orden de los índices de vértices en el búfer de índice. El triángulo adyacente 0 siempre se corresponde con el borde entre los índices de las esquinas 0 y 1. El triángulo adyacente 1 siempre se corresponde con el borde entre los índices de las esquinas 1 y 2, mientras que el triángulo adyacente 2 se corresponde con el borde entre los índices de las esquinas 2 y 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,19 +67,19 @@ El orden de las entradas en el búfer de adyacencia viene determinado por el ord
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

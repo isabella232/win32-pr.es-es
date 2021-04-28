@@ -1,7 +1,7 @@
 ---
-description: Puntero al asignador de memoria.
+description: 'CBaseOutputPin::m_pAllocator miembro: puntero al asignador de memoria.'
 ms.assetid: b5e37ce0-7c02-4395-bfdf-0ee8c11da09a
-title: 'Miembro CBaseOutputPin:: m_pAllocator (Amfilter. h)'
+title: CBaseOutputPin::m_pAllocator miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9f46c786cb0cec5c5082b5cda003a8f4b345f518
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d5b512f2b40d27e13fa78904481fcc749d0bde4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661189"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096112"
 ---
-# <a name="cbaseoutputpinm_pallocator-member"></a>Miembro pAllocator CBaseOutputPin:: m \_
+# <a name="cbaseoutputpinm_pallocator-member"></a>CBaseOutputPin::m \_ miembro pAllocator
 
 Puntero al asignador de memoria.
 
@@ -42,16 +42,16 @@ IMemAllocator *m_pAllocator;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseOutputPin**](cbaseoutputpin.md)
+[**CBaseOutputPin (clase)**](cbaseoutputpin.md)
 </dt> </dl>
 
  

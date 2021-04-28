@@ -1,7 +1,7 @@
 ---
-description: Método de constructor.
+description: 'Constructor CDispParams.CDispParams: método constructor.'
 ms.assetid: da67a5e4-b4a1-4a38-93fe-0965695e93f5
-title: Constructor CDispParams. CDispParams (Ctlutil. h)
+title: Constructor CDispParams.CDispParams (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f3beeb0a6e3a18c3fac6606385d9206938bbc1cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42f55a57a0f9e06d3001c2638d457fe0b82a914d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680499"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095793"
 ---
-# <a name="cdispparamscdispparams-constructor"></a>Constructor CDispParams. CDispParams
+# <a name="cdispparamscdispparams-constructor"></a>Constructor CDispParams.CDispParams
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ CDispParams(
 *nArgs* 
 </dt> <dd>
 
-Número de argumentos pasados al método o a la propiedad.
+Número de argumentos pasados al método o propiedad.
 
 </dd> <dt>
 
 *pArgs* 
 </dt> <dd>
 
-Puntero a la lista de argumentos. En la lista, cada argumento se almacena con su tipo variante.
+Puntero a la lista de argumentos. En la lista, cada argumento se almacena con su tipo de variante.
 
 </dd> </dl>
 
@@ -63,16 +63,16 @@ Puntero a la lista de argumentos. En la lista, cada argumento se almacena con su
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDispParams**](cdispparams.md)
+[**CDispParams (clase)**](cdispparams.md)
 </dt> </dl>
 
  
