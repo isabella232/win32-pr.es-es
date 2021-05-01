@@ -4,7 +4,7 @@ title: WinMain The Application Entry Point description: WinMain: The Application
 
 # <a name="winmain-the-application-entry-point"></a>WinMain: el punto de entrada de la aplicación
 
-Cada programa de Windows incluye una función de punto de entrada denominada **WinMain** o **wWinMain**. Esta es la firma de **wWinMain.**
+Cada programa de Windows incluye una función de punto de entrada denominada **WinMain** o **wWinMain.** Esta es la firma **de wWinMain.**
 
 
 ```C++
@@ -17,14 +17,14 @@ Los cuatro parámetros son:
 
 -   *hInstance* es algo denominado "identificador de una instancia" o "identificador de un módulo". El sistema operativo usa este valor para identificar el ejecutable (EXE) cuando se carga en memoria. El identificador de instancia es necesario para determinadas funciones de Windows, por ejemplo, para cargar iconos o mapas de bits.
 -   *hPrevInstance* no tiene ningún significado. Se usó en Windows de 16 bits, pero ahora es siempre cero.
--   *pCmdLine contiene* los argumentos de línea de comandos como una cadena Unicode.
+-   *pCmdLine contiene* los argumentos de la línea de comandos como una cadena Unicode.
 -   *nCmdShow* es una marca que indica si la ventana principal de la aplicación se minimizará, maximizará o se mostrará con normalidad.
 
 La función devuelve un **valor** int. El sistema operativo no usa el valor devuelto, pero puede usar el valor devuelto para transmitir un código de estado a algún otro programa que escriba.
 
 **WINAPI** es la convención de llamada. Una *convención de llamada* define cómo una función recibe parámetros del autor de la llamada. Por ejemplo, define el orden en que aparecen los parámetros en la pila. Asegúrese de declarar la función **wWinMain** como se muestra.
 
-La **función WinMain** es idéntica a **wWinMain,** salvo que los argumentos de la línea de comandos se pasan como una cadena ANSI. Se prefiere la versión Unicode. Puede usar la función **ANSI WinMain** incluso si compila el programa como Unicode. Para obtener una copia Unicode de los argumentos de la línea de comandos, llame a la [**función GetCommandLine.**](/windows/desktop/api/processenv/nf-processenv-getcommandlinea) Esta función devuelve todos los argumentos de una sola cadena. Si desea que los argumentos como una *matriz argv*-style, pase esta cadena a [**CommandLineToArgvW**](/windows/desktop/api/shellapi/nf-shellapi-commandlinetoargvw).
+La **función WinMain** es idéntica a **wWinMain**, excepto que los argumentos de la línea de comandos se pasan como una cadena ANSI. Se prefiere la versión Unicode. Puede usar la función **ANSI WinMain** incluso si compila el programa como Unicode. Para obtener una copia Unicode de los argumentos de la línea de comandos, llame a la [**función GetCommandLine.**](/windows/desktop/api/processenv/nf-processenv-getcommandlinea) Esta función devuelve todos los argumentos de una sola cadena. Si desea que los argumentos como una *matriz argv*-style, pase esta cadena a [**CommandLineToArgvW**](/windows/desktop/api/shellapi/nf-shellapi-commandlinetoargvw).
 
 ¿Cómo sabe el compilador invocar **wWinMain en** lugar de la **función main** estándar? Lo que sucede realmente es que la biblioteca en tiempo de ejecución de Microsoft C (CRT) proporciona una implementación de **main** que llama a **WinMain** o **wWinMain**.
 
@@ -37,7 +37,7 @@ Esta es una función **vacía de WinMain.**
 
 
 ```C++
-INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
+INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     PSTR lpCmdLine, INT nCmdShow)
 {
     return 0;

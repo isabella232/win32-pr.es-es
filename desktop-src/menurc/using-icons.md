@@ -3,29 +3,29 @@ title: Usar iconos
 description: En esta sección se proporcionan ejemplos de código que muestran cómo realizar tareas relacionadas con iconos.
 ms.assetid: 5021d59a-7aae-4ddc-be66-9abdc75ad316
 keywords:
-- recursos, iconos
-- iconos, crear
-- iconos, Mostrar
-- iconos, compartir recursos
+- resources,icons
+- icons,creating
+- iconos, mostrar
+- iconos, recursos compartidos
 - crear iconos
 - mostrar iconos
-- compartir recursos de icono
+- recursos del icono de uso compartido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e93f831e3411985ecfb9f841ade750acd4a61b
-ms.sourcegitcommit: 8755905962e156f29203705d09d6df8b7d0e2fca
+ms.openlocfilehash: 03202c250502794d5f845bcc8c2ae263d919ea62
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105661417"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327120"
 ---
 # <a name="using-icons"></a>Usar iconos
 
-En los temas siguientes se describe cómo realizar ciertas tareas relacionadas con los iconos:
+En los temas siguientes se describe cómo realizar ciertas tareas relacionadas con iconos:
 
 -   [Crear un icono](#creating-an-icon)
 -   [Mostrar un icono](#displaying-an-icon)
--   [Compartir recursos de icono](#sharing-icon-resources)
+-   [Recursos del icono de uso compartido](#sharing-icon-resources)
 
 ## <a name="creating-an-icon"></a>Crear un icono
 
@@ -50,7 +50,7 @@ hIcon2 = LoadIcon(hinst, MAKEINTRESOURCE(460));
 
 
 
-Una aplicación debe implementar iconos personalizados como recursos y debe utilizar la función [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) , en lugar de crear los iconos en tiempo de ejecución. Este enfoque evita la dependencia del dispositivo, simplifica la localización y permite que las aplicaciones compartan los mapas de bits de los iconos. Sin embargo, en el ejemplo siguiente se usa [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) para crear un icono personalizado en tiempo de ejecución, basado en máscaras de bits de mapa de bits. se incluye para mostrar cómo interpreta el sistema las máscaras de bits de los mapas de bits de los iconos.
+Una aplicación debe implementar iconos personalizados como recursos y debe usar la función [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) en lugar de crear los iconos en tiempo de ejecución. Este enfoque evita la dependencia de dispositivos, simplifica la localización y permite a las aplicaciones compartir mapas de bits de icono. Sin embargo, en el ejemplo siguiente se [**usa CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) para crear un icono personalizado en tiempo de ejecución, basado en máscaras de bits de mapa de bits; se incluye para ilustrar cómo el sistema interpreta las máscaras de bits de mapa de bits del icono.
 
 
 ```
@@ -152,26 +152,26 @@ hIcon3 = CreateIcon(hinst,    // application instance
 
 
 
-Para crear el icono, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) aplica la siguiente tabla de verdad a las máscaras de máscara y y XOR.
+Para crear el icono, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) aplica la siguiente tabla truth a las máscaras de bits AND y XOR.
 
 
 
-| Y máscara de la | Máscara de máscara XOR | Pantalla        |
+| Máscara de bits AND | Máscara de bits XOR | Mostrar        |
 |-------------|-------------|----------------|
 | 0           | 0           | Negro          |
 | 0           | 1           | Blanco          |
 | 1           | 0           | Screen         |
-| 1           | 1           | Pantalla invertida |
+| 1           | 1           | Pantalla inversa |
 
 
 
  
 
-Antes de cerrar, la aplicación debe usar [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) para destruir cualquier icono que haya creado con [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect). No es necesario destruir iconos creados por otras funciones.
+Antes de cerrar, la aplicación debe usar [**DestroyIcon para**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) destruir cualquier icono que haya creado mediante [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect). No es necesario destruir los iconos creados por otras funciones.
 
 ## <a name="displaying-an-icon"></a>Mostrar un icono
 
-La aplicación puede cargar y crear iconos para mostrar en el área de cliente o las ventanas secundarias de la aplicación. En el ejemplo siguiente se muestra cómo dibujar un icono en el área cliente de la ventana cuyo contexto de dispositivo (DC) se identifica mediante el parámetro *HDC* .
+La aplicación puede cargar y crear iconos para mostrar en el área cliente de la aplicación o en las ventanas secundarias. En el ejemplo siguiente se muestra cómo dibujar un icono en el área cliente de la ventana cuyo contexto de dispositivo (DC) se identifica mediante el *parámetro hdc.*
 
 
 ```
@@ -183,7 +183,7 @@ DrawIcon(hdc, 10, 20, hIcon1);
 
 
 
-El sistema muestra automáticamente los iconos de clase de una ventana. La aplicación puede asignar iconos de clase al registrar una clase de ventana. La aplicación puede reemplazar un icono de clase mediante la función [**SetClassLong**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) . Esta función cambia la configuración de ventana predeterminada para todas las ventanas de una clase determinada. En el ejemplo siguiente se reemplaza un icono de clase con el icono cuyo identificador de recurso es 480.
+El sistema muestra automáticamente los iconos de clase de una ventana. La aplicación puede asignar iconos de clase al registrar una clase de ventana. La aplicación puede reemplazar un icono de clase mediante la [**función SetClassLong.**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) Esta función cambia la configuración de ventana predeterminada para todas las ventanas de una clase determinada. En el ejemplo siguiente se reemplaza un icono de clase por el icono cuyo identificador de recurso es 480.
 
 
 ```
@@ -192,21 +192,21 @@ HWND hwnd;                  // main window handle
  
 // Change the icon for hwnd's window class. 
  
-SetClassLong(hwnd,          // window handle 
-    GCL_HICON,              // changes icon 
-    (LONG) LoadIcon(hinst, MAKEINTRESOURCE(480))
+SetClassLongPtr(hwnd,          // window handle 
+    GCLP_HICON,              // changes icon 
+    (LONG_PTR) LoadIcon(hinst, MAKEINTRESOURCE(480))
    ); 
 ```
 
 
 
-Para obtener más información sobre las clases de ventana, vea [clases de ventana](/windows/desktop/winmsg/window-classes).
+Para obtener más información sobre las clases de ventana, vea [Clases de ventana](/windows/desktop/winmsg/window-classes).
 
-## <a name="sharing-icon-resources"></a>Compartir recursos de icono
+## <a name="sharing-icon-resources"></a>Recursos del icono de uso compartido
 
-En el código siguiente se usan las funciones [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)y [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex), y algunas de las funciones de recursos, para crear un identificador de icono basado en los datos de icono de otro archivo ejecutable. A continuación, muestra el icono en una ventana.
+En el código siguiente se usan las funciones [**CreateIconFromResourceEx,**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex) [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)y [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)y varias de las funciones de recursos para crear un identificador de icono basado en datos de icono de otro archivo ejecutable. A continuación, muestra el icono en una ventana.
 
-**Advertencia de seguridad:** El uso incorrecto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación mediante la carga de una DLL incorrecta. Consulte la documentación de **LoadLibrary** para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Windows.
+**Advertencia de seguridad:** El [**uso incorrecto de LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación cargando el archivo DLL incorrecto. Consulte la documentación **de LoadLibrary** para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Windows.
 
 
 ```
