@@ -4,12 +4,12 @@ ms.assetid: 0a226629-084c-40c5-bdd4-ad7355c807cf
 title: Formato de cadena del descriptor de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42780c408908faf0a226584be7315ab6bf9e78e5
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: 2d7fd6e9e2387deee63b5046086ed167a29fa54b
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925697"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644207"
 ---
 # <a name="security-descriptor-string-format"></a>Formato de cadena del descriptor de seguridad
 
@@ -18,7 +18,7 @@ El **formato de cadena del descriptor de** seguridad es un formato de texto para
 El formato es una cadena terminada en **NULL** con tokens para indicar cada uno de los cuatro componentes principales de un descriptor de seguridad: owner (O:), primary group (G:), DACL (D:) y SACL (S:).
 
 > [!Note]  
-> [*Las entradas de control de*](/windows/desktop/SecGloss/a-gly) acceso (ACE) y las ACE condicionales tienen formatos diferentes. Para las ACE, vea [Ace Strings](ace-strings.md). Para las ACE condicionales, vea [Lenguaje de definición de descriptores de seguridad para ACE condicionales.](security-descriptor-definition-language-for-conditional-aces-.md)
+> [*Las entradas de control de*](/windows/desktop/SecGloss/a-gly) acceso (ACE) y las ACE condicionales tienen formatos diferentes. Para las ACE, consulte [Ace Strings](ace-strings.md). Para las ACE condicionales, vea [Lenguaje de definición de descriptores de seguridad para ACE condicionales.](security-descriptor-definition-language-for-conditional-aces-.md)
 
  
 
@@ -34,7 +34,7 @@ S:sacl_flags(string_ace1)(string_ace2)... (string_acen)
 
 <dl> <dt>
 
-<span id="owner_sid"></span><span id="OWNER_SID"></span>sid \_ propietario
+<span id="owner_sid"></span><span id="OWNER_SID"></span>sid \_ de propietario
 </dt> <dd>
 
 Cadena [de SID](sid-strings.md) que identifica el propietario del objeto.
@@ -60,7 +60,7 @@ Marcas de control del descriptor de seguridad que se aplican a la DACL. Para obt
 | "P"                   | SDDL \_ PROTECTED          | Se establece \_ la marca SE DACL \_ PROTECTED.          |
 | "AR"                  | SDDL \_ AUTO \_ INHERIT \_ REQ | Se establece \_ la marca SE DACL AUTO INHERIT \_ \_ \_ REQ. |
 | "IA"                  | SDDL \_ AUTO \_ INHERITED    | Se establece \_ la marca SE DACL AUTO \_ \_ INHERITED.    |
-| "NO \_ ACCESS \_ CONTROL" | ACL NULL de SDDL \_ \_          | La ACL es null.                              |
+| "NO \_ ACCESS \_ CONTROL" | ACL NULL de SDDL \_ \_          | La ACL es null. **Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
 
 
 
@@ -88,7 +88,7 @@ El formato de cadena del descriptor de seguridad no admite **ACL NULL.**
 
 Para indicar una ACL vacía, la cadena del descriptor de seguridad incluye el token D: o S: sin información de cadena adicional.
 
-La cadena de descriptor de seguridad almacena los [**bits DE CONTROL DEL DESCRIPTOR DE**](security-descriptor-control.md) SEGURIDAD de maneras diferentes. Los bits SE DACL PRESENT o SE SACL PRESENT se indican mediante la presencia del \_ \_ token \_ \_ D: o S: en la cadena. Otros bits que se aplican a la DACL o SACL se almacenan en marcas dacl \_ y \_ sacl. Los bits SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE \_ DACL DEFAULTED y SE \_ \_ SACL DEFAULTED no \_ se almacenan en una cadena de descriptor de seguridad. El bit SE SELF RELATIVE no se almacena en la cadena, pero \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) siempre establece este bit en el descriptor de seguridad de salida.
+La cadena de descriptor de seguridad almacena los bits [**DE CONTROL DEL DESCRIPTOR DE SEGURIDAD**](security-descriptor-control.md) de maneras diferentes. Los bits SE DACL PRESENT o SE SACL PRESENT se indican mediante la presencia del \_ \_ token \_ \_ D: o S: en la cadena. Otros bits que se aplican a la DACL o SACL se almacenan en marcas dacl \_ y \_ sacl. Los bits SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE \_ DACL DEFAULTED y SE \_ \_ SACL DEFAULTED no se almacenan \_ en una cadena de descriptor de seguridad. El bit SE SELF RELATIVE no se almacena en la cadena, pero \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) siempre establece este bit en el descriptor de seguridad de salida.
 
 En los ejemplos siguientes se muestran cadenas de descriptores de seguridad y la información de los descriptores de seguridad asociados.
 

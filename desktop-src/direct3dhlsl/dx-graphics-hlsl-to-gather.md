@@ -1,6 +1,6 @@
 ---
-title: Recopilar (objeto de textura de HLSL de DirectX)
-description: Obtiene los cuatro ejemplos (solo componente rojo) que se utilizarían para la interpolación bilineal al realizar el muestreo de una textura.
+title: Recopilar (objeto de textura HLSL de DirectX)
+description: Obtiene las cuatro muestras (solo componente rojo) que se usarían para la interpolación bilineal al muestrear una textura.
 ms.assetid: a394d8c2-99cc-4a38-9ac9-34afc666ebe0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 16c568afc3cfdc0d26472d50599abdf3dbd08301
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: f333c204b77d6e0c64119e16f31e170fec1d0f6c
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "104984123"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644107"
 ---
-# <a name="gather-directx-hlsl-texture-object"></a>Recopilar (objeto de textura de HLSL de DirectX)
+# <a name="gather-directx-hlsl-texture-object"></a>Recopilar (objeto de textura HLSL de DirectX)
 
-Obtiene los cuatro ejemplos (solo componente rojo) que se utilizarían para la interpolación bilineal al realizar el muestreo de una textura.
+Obtiene las cuatro muestras (solo componente rojo) que se usarían para la interpolación bilineal al muestrear una textura.
 
 
 
 |                                                                                                    |
 |----------------------------------------------------------------------------------------------------|
-| &lt;Tipo de plantilla &gt; 4 Object. Gather ( \_ Estado de muestra S, float2 \| 3 \| 4 ubicación \[ , desplazamiento de INT2 \] ); |
+| &lt;Tipo de &gt; plantilla 4 Object.Gather( sampler \_ state S, float2 \| 3 \| 4 Location , \[ int2 Offset \] ); |
 
 
 
@@ -48,19 +48,19 @@ Obtiene los cuatro ejemplos (solo componente rojo) que se utilizarían para la i
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Objeto</em><br/></td>
-<td>Se admiten los siguientes tipos <a href="dx-graphics-hlsl-to-type.md">de objeto de textura</a> : Texture2D, Texture2DArray, TextureCube, TextureCubeArray.<br/></td>
+<td>Se <a href="dx-graphics-hlsl-to-type.md">admiten los siguientes</a> tipos de objeto de textura: Texture2D, Texture2DArray, TextureCube, TextureCubeArray.<br/></td>
 </tr>
 <tr class="even">
-<td><span id="S"></span><span id="s"></span><em>Seg</em><br/></td>
-<td>de Un <a href="dx-graphics-hlsl-sampler.md">Estado de muestra</a>. Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.<br/></td>
+<td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
+<td>[in] Un <a href="dx-graphics-hlsl-sampler.md">estado sampler</a>. Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Cód</em><br/></td>
-<td>de Coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura. <br/> 
+<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Ubicación</em><br/></td>
+<td>[in] Coordenadas de textura. El tipo de argumento depende del tipo texture-object. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -83,13 +83,13 @@ Obtiene los cuatro ejemplos (solo componente rojo) que se utilizarían para la i
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Posición</em></p></td>
-<td><p>de Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. el desplazamiento se aplica a la ubicación antes del muestreo. Los desplazamientos de textura deben ser estáticos. El tipo de argumento depende del tipo de objeto de textura. Para obtener más información, vea <a href="dx-graphics-hlsl-to-sample.md">aplicar desplazamientos de coordenadas de textura</a>.</p>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensar</em></p></td>
+<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura; el desplazamiento se aplica a la ubicación antes del muestreo. El tipo de argumento depende del tipo texture-object. En el caso de los sombreadores que tienen como destino Shader Model 5.0 y posterior, los 6 bits menos significativos de cada valor de desplazamiento se respetan como un valor con firma, lo que produce un intervalo [-32..31]. Para los sombreadores de modelos de sombreador anteriores, los desplazamientos deben ser enteros inmediatos entre -8 y 7.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -116,15 +116,15 @@ Obtiene los cuatro ejemplos (solo componente rojo) que se utilizarían para la i
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un vector de cuatro componentes, con cuatro componentes de datos rojos, cuyo tipo es el mismo que el tipo de plantilla de la textura.
+Vector de cuatro componentes, con cuatro componentes de datos rojos, cuyo tipo es el mismo que el tipo de plantilla de la textura.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 |          | x         |          | x         |          | x         |
 
@@ -132,8 +132,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-1.  TextureCubeArray está disponible en el modelo de sombreador 4,1 o superior.
-2.  El modelo de sombreador 4,1 está disponible en Direct3D 10,1 o superior.
+1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="example"></a>Ejemplo
 
@@ -171,7 +171,7 @@ int4 main (float4 f : SV_Position) : SV_Target
 
 <dl> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  
