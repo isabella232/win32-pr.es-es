@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 64212c523459696ced37e42689f6a4be0edb056b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a88b80773ec60b161df51fc759cc932d5c53c931
+ms.sourcegitcommit: cfcac5a083b72fd7f2a5188166d470cc0e95d02d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277711"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "109626697"
 ---
 # <a name="wmimonitorconnectionparams-class"></a>Clase WmiMonitorConnectionParams
 
@@ -42,13 +42,13 @@ class WmiMonitorConnectionParams
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorConnectionParams** tiene estos tipos de miembros:
+La **clase WmiMonitorConnectionParams** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorConnectionParams** tiene estas propiedades.
+La **clase WmiMonitorConnectionParams** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -84,13 +84,13 @@ Nombre de la instancia de monitor específica.
 **VideoOutputTechnology**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se documentan en la enumeración [ \_ tecnología de \_ salida \_ de vídeo D3DKMDT](https://msdn.microsoft.com/library/ms794498.aspx) .
+Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se documentan en la [enumeración D3DKMDT \_ VIDEO OUTPUT \_ \_ TECHNOLOGY.](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_video_output_technology)
 
 </dd> </dl>
 
@@ -102,13 +102,13 @@ Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se do
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
