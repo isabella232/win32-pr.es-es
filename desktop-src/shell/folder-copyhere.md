@@ -1,6 +1,6 @@
 ---
 description: Copia un elemento o elementos en una carpeta.
-title: Método Folder. CopyHere (Shldisp. h)
+title: Método Folder.CopyHere (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 22bf1b4c-f242-4c52-b094-c5339bb35d02
-ms.openlocfilehash: ac616aa88cfb0ad6742c6037ec28e8b93ff1a4d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1466e5d01715c0c820cbc7cd9809c51e4963ec56
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997736"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842146"
 ---
-# <a name="foldercopyhere-method"></a>Folder. CopyHere (método)
+# <a name="foldercopyhere-method"></a>Método Folder.CopyHere
 
 Copia un elemento o elementos en una carpeta.
 
@@ -43,21 +43,21 @@ Folder.CopyHere(
 *vItem* 
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Elemento o elementos que se van a copiar. Puede ser una cadena que representa un nombre de archivo, un objeto [**carpeta**](folderitem.md) o un objeto [**FolderItems**](folderitems.md) .
+Elemento o elementos que se copian. Puede ser una cadena que representa un nombre de archivo, un [**objeto FolderItem**](folderitem.md) o un [**objeto FolderItems.**](folderitems.md)
 
 </dd> <dt>
 
-*vOptions* \[ opta\]
+*vOptions* \[ Opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Opciones de la operación de copia. Este valor puede ser cero o una combinación de los siguientes valores. Estos valores se basan en marcas definidas para su uso con el miembro **fFlags** de la estructura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) de C++. Cada espacio de nombres del shell debe proporcionar su propia implementación de estas marcas, y cada espacio de nombres puede optar por omitir algunos o incluso todos estos marcadores. Estas marcas no se definen por nombre para Visual Basic, VBScript o JScript, por lo que debe definirlas usted mismo o usar sus equivalentes numéricos.
+Opciones para la operación de copia. Este valor puede ser cero o una combinación de los valores siguientes. Estos valores se basan en marcas definidas para su uso con el **miembro fFlags** de la estructura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) de C++. Cada espacio de nombres de Shell debe proporcionar su propia implementación de estas marcas y cada espacio de nombres puede optar por omitir algunas o incluso todas estas marcas. Estas marcas no se definen por nombre para Visual Basic, VBScript o JScript, por lo que debe definirlas usted mismo o usar sus equivalentes numéricos.
 
 > [!Note]  
-> En algunos casos, como los archivos comprimidos (. zip), es posible que algunas marcas de opción se omitan por diseño.
+> En algunos casos, como los archivos comprimidos (.zip), algunas marcas de opción pueden omitirse por diseño.
 
  
 
@@ -81,7 +81,7 @@ No mostrar un cuadro de diálogo de progreso.
 
 </dt> <dd>
 
-Dé al archivo que opere con un nuevo nombre en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
+Asigne al archivo que se está operando con un nombre nuevo en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Dé al archivo que opere con un nuevo nombre en una operación de movimiento, co
 
 </dt> <dd>
 
-Responda con "sí a todo" para cualquier cuadro de diálogo que se muestre.
+Responda con "Sí a todo" para cualquier cuadro de diálogo que se muestre.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Responda con "sí a todo" para cualquier cuadro de diálogo que se muestre.
 
 </dt> <dd>
 
-Si es posible, conserve la información de deshacer.
+Conserve la información de deshacer, si es posible.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Realice la operación en archivos solo si se especifica un nombre de archivo com
 
 </dt> <dd>
 
-Muestra un cuadro de diálogo de progreso pero no muestra los nombres de archivo.
+Mostrar un cuadro de diálogo de progreso, pero no mostrar los nombres de archivo.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Muestra un cuadro de diálogo de progreso pero no muestra los nombres de archivo
 
 </dt> <dd>
 
-No confirme la creación de un directorio nuevo si la operación requiere que se cree uno.
+No confirme la creación de un nuevo directorio si la operación requiere que se cree uno.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ No muestre una interfaz de usuario si se produce un error.
 
 </dt> <dd>
 
-[Versión 4,71.](versions.md) No copie los atributos de seguridad del archivo.
+[Versión 4.71.](versions.md) No copie los atributos de seguridad del archivo.
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ No muestre una interfaz de usuario si se produce un error.
 
 </dt> <dd>
 
-Solo funciona en el directorio local. No opere de forma recursiva en subdirectorios.
+Solo funciona en el directorio local. No funcione de forma recursiva en subdirectorios.
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Solo funciona en el directorio local. No opere de forma recursiva en subdirector
 
 </dt> <dd>
 
-[Versión 5,0.](versions.md) No copie los archivos conectados como un grupo. Solo se copian los archivos especificados.
+[Versión 5.0.](versions.md) No copie los archivos conectados como un grupo. Copie solo los archivos especificados.
 
 </dd> </dl> </dd> </dl>
 
@@ -190,18 +190,18 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-No se proporciona ninguna notificación al programa que realiza la llamada para indicar que la copia se ha completado.
+No se envía ninguna notificación al programa que realiza la llamada para indicar que la copia se ha completado.
 
 > [!Note]  
-> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el método [**ParseName**](folder-parsename.md) no se implementa para la carpeta panel de control ( \_ controles CSIDL). Si intenta llamar a un método no implementado, se genera un error 0x800A01BD (decimal 445).
+> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se 0x800A01BD error (decimal 445).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **CopyHere** para copiar el archivo de Autoexec.bat desde el directorio raíz al \\ directorio C: Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa CopyHere** para copiar el archivo Autoexec.bat desde el directorio raíz al directorio C: \\ Windows. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -222,7 +222,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -274,15 +274,15 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: Enviado por una extensión del administrador de archivos para que el administrador de archivos vuelva a dibujar su ventana activa o todas sus ventanas.
-title: Mensaje de FM_REFRESH_WINDOWS (Wfext. h)
+description: Enviado por una extensión del Administrador de archivos para hacer que el Administrador de archivos vuelva a dibujar su ventana activa o todas sus ventanas.
+title: FM_REFRESH_WINDOWS mensaje (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 210168c6-d83b-4ffd-93d4-d22fa748cef2
-ms.openlocfilehash: 386fdee5c7a8b56899fa7e13282445c57eccff08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0513955fd1b03dfae321d52fe9a5df3794f54782
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275112"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842356"
 ---
-# <a name="fm_refresh_windows-message"></a>\_Mensaje de \_ Windows actualizar FM
+# <a name="fm_refresh_windows-message"></a>Mensaje \_ DE WINDOWS DE ACTUALIZACIÓN DE \_ FM
 
-Enviado por una extensión del administrador de archivos para que el administrador de archivos vuelva a dibujar su ventana activa o todas sus ventanas.
+Enviado por una extensión del Administrador de archivos para hacer que el Administrador de archivos vuelva a dibujar su ventana activa o todas sus ventanas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Enviado por una extensión del administrador de archivos para que el administrad
 *fRepaint* 
 </dt> <dd>
 
-Valor que indica si el administrador de archivos vuelve A dibujar su ventana activa o todas sus ventanas. Si este parámetro es **true**, el administrador de archivos vuelve a dibujar todas sus ventanas. De lo contrario, el administrador de archivos vuelve a dibujar solo la ventana activa.
+Valor que indica si el Administrador de archivos vuelve a dibujar su ventana activa o todas sus ventanas. Si este parámetro es **TRUE,** el Administrador de archivos vuelve a dibujar todas sus ventanas. De lo contrario, el Administrador de archivos vuelve a dibujar solo su ventana activa.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El administrador de archivos detecta automáticamente los cambios realizados en el sistema de archivos causados por una extensión. Una extensión solo debe usar este mensaje en situaciones en las que se realizan o cancelan conexiones de unidad.
+El Administrador de archivos detecta automáticamente los cambios del sistema de archivos causados por una extensión. Una extensión debe usar este mensaje solo en situaciones en las que se realizan o cancelan conexiones de unidad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,11 +54,11 @@ El administrador de archivos detecta automáticamente los cambios realizados en 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

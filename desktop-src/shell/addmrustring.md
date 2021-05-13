@@ -1,6 +1,6 @@
 ---
-description: Agrega una cadena a la parte superior de la lista de elementos usados más recientemente (MRU).
-title: AddMRUStringW función)
+description: Agrega una cadena a la parte superior de la lista usada más recientemente (MRU).
+title: Función AddMRUStringW
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: ad94a442-8492-412c-a4f2-ac6e7c5327d7
-ms.openlocfilehash: 0d0d65187105f4ad844b349c6ac60b030c464716
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b62e23cd0604273559e36e561970dd62f117c11d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082008"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841196"
 ---
-# <a name="addmrustringw-function"></a>AddMRUStringW función)
+# <a name="addmrustringw-function"></a>Función AddMRUStringW
 
 \[Esta función está disponible a través de Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows. \]
 
-Agrega una cadena a la parte superior de la lista de elementos usados más recientemente (MRU).
+Agrega una cadena a la parte superior de la lista de mru usada más recientemente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,21 +43,21 @@ int AddMRUStringW(
 
 <dl> <dt>
 
-*hMRU* \[ de\]
+*hMRU* \[ En\]
 </dt> <dd>
 
-Tipo: **Handle**
+Tipo: **HANDLE**
 
-Identificador de la lista MRU.
+Identificador de la lista de MRU.
 
 </dd> <dt>
 
-*szString* \[ de\]
+*szString* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Puntero a los datos. Puede ser una cadena o bien, si la lista MRU se creó con la marca **\_ binaria de MRU** , datos binarios. En el caso de los datos binarios, el primer **valor DWORD** indica su tamaño.
+Puntero a los datos. Puede ser una cadena o, si se creó la lista de MRU con la **marca \_ BINARY de MRU,** datos binarios. En el caso de los datos binarios, el primer **DWORD** indica su tamaño.
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ Puntero a los datos. Puede ser una cadena o bien, si la lista MRU se creó con l
 
 Tipo: **int**
 
-Devuelve un valor no negativo si es correcto; de lo contrario,-1.
+Devuelve un valor no negativo si se realiza correctamente; de lo contrario, -1.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función no está incluida en un encabezado público o una biblioteca. Se puede tener acceso a ella a través de [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) o extraer de comctl32.dll por su ordinal, que es 401 para **AddMRUStringW**.
+Esta función no se incluye en un encabezado o biblioteca públicos. Se puede acceder a él a través de [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) o extraerse de comctl32.dll por su ordinal, que es 401 **para AddMRUStringW**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ Esta función no está incluida en un encabezado público o una biblioteca. Se p
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                     |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Archivo DLL<br/>                      | <dl> <dt>Comctl32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Comctl32.dll (versión 5.0 o posterior)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **AddMRUStringW** (Unicode)<br/>                                                                         |
 
 

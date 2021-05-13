@@ -1,7 +1,7 @@
 ---
 description: Define los perfiles registrados a los que se ajusta el sistema al que se hace referencia.
 ms.assetid: F01E79BE-82D9-49E0-AB0C-FD1B48BC4A55
-title: Msvm_ElementConformsToProfile (clase)
+title: Msvm_ElementConformsToProfile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6b0afdc7dd9d55a036de0695f9a88a95d2b01308
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9b4e257c2ebc0584a8291461439f75238599d35
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687948"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843286"
 ---
-# <a name="msvm_elementconformstoprofile-class"></a>MSVM \_ ElementConformsToProfile (clase)
+# <a name="msvm_elementconformstoprofile-class"></a>Clase \_ ElementConformsToProfile de Msvm
 
-Define los perfiles registrados a los que se ajusta el sistema al que se hace referencia. Esta asociación se puede aplicar a cualquier elemento administrado. El uso típico lo aplicará a una instancia de nivel superior, como un sistema, un espacio de nombres o un servicio. Cuando se aplica a una instancia de nivel superior, todas las partes constituyentes deben comportarse de forma adecuada para admitir la conformidad del elemento administrado con el perfil registrado con nombre.
+Define los perfiles registrados a los que se ajusta el sistema al que se hace referencia. Esta asociación puede aplicarse a cualquier elemento administrado. El uso típico lo aplicará a una instancia de nivel superior, como un sistema, un espacio de nombres o un servicio. Cuando se aplica a una instancia de nivel superior, todas las partes constituyentes deben comportarse correctamente en apoyo de la conformidad del elemento administrado con el perfil registrado con nombre.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,47 +38,47 @@ class Msvm_ElementConformsToProfile : CIM_ElementConformsToProfile
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La clase **MSVM \_ ElementConformsToProfile** tiene estos tipos de miembros:
+La **clase \_ ElementConformsToProfile de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ElementConformsToProfile** tiene estas propiedades.
+La **clase \_ ElementConformsToProfile de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **ConformantStandard**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ RegisteredProfile**](msvm-registeredprofile.md)**
+Tipo de datos: **[ **Msvm \_ RegisteredProfile**](msvm-registeredprofile.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **invalidación**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Referencia a una instancia de la clase [**MSVM \_ RegisteredProfile**](msvm-registeredprofile.md) que representa el perfil registrado al que se ajusta el sistema.
+Referencia a una instancia de la clase [**\_ RegisteredProfile de Msvm**](msvm-registeredprofile.md) que representa el perfil registrado al que se ajusta el sistema.
 
 </dd> <dt>
 
 **ManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ ComputerSystem**](msvm-computersystem.md)**
+Tipo de datos: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **invalidación**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa el sistema que se ajusta al perfil registrado.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa el sistema que se ajusta al perfil registrado.
 
 </dd> </dl>
 
@@ -88,10 +88,10 @@ Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-com
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 8.1 solo \[ aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[ R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

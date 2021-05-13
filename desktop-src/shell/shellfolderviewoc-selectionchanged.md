@@ -1,6 +1,6 @@
 ---
-description: Indica que ha cambiado el estado de selección de uno o varios elementos de la vista.
-title: Evento ShellFolderViewOC. SelectionChanged (Shldisp. h)
+description: Indica que el estado de selección de uno o varios elementos de la vista ha cambiado.
+title: Evento ShellFolderViewOC.SelectionChanged (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 85c37f4e-229f-4383-8218-10f8c2b0b8a0
-ms.openlocfilehash: 3f88ad698b990847a9b7f2fa1b74cc5b53ec7beb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53d6fc3eb6f13d136af603a3129ba75a46c3c6a6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361183"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841046"
 ---
-# <a name="shellfolderviewocselectionchanged-event"></a>Evento ShellFolderViewOC. SelectionChanged
+# <a name="shellfolderviewocselectionchanged-event"></a>Evento ShellFolderViewOC.SelectionChanged
 
-Indica que ha cambiado el estado de selección de uno o varios elementos de la vista.
+Indica que el estado de selección de uno o varios elementos de la vista ha cambiado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Este controlador de eventos no tiene parámetros.
 
 ## <a name="remarks"></a>Observaciones
 
-Proporcione el código de control de eventos para este evento, tal como se muestra aquí.
+Proporcione código de control de eventos para este evento como se muestra aquí.
 
 
 ```
@@ -64,15 +64,15 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

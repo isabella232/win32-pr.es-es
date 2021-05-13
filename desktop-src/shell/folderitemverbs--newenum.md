@@ -1,6 +1,6 @@
 ---
 description: Crea y devuelve un nuevo objeto FolderItemVerbs que es una copia de este objeto FolderItemVerbs.
-title: Método FolderItemVerbs._NewEnum (Shldisp. h)
+title: FolderItemVerbs._NewEnum método (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 63cfc56c-4e6f-4e69-9fce-f625d550023b
-ms.openlocfilehash: f6233e1008ad254358a1597fc56c6f3233a792c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b24e9310eae82f88e11de4e3781585e7f769d3c7
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276756"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842036"
 ---
-# <a name="folderitemverbs_newenum-method"></a>FolderItemVerbs. \_ NewEnum (método)
+# <a name="folderitemverbs_newenum-method"></a>FolderItemVerbs. \_ Método NewEnum
 
-Crea y devuelve un nuevo objeto [**FolderItemVerbs**](folderitemverbs.md) que es una copia de este objeto FolderItemVerbs.
+Crea y devuelve un [**nuevo objeto FolderItemVerbs**](folderitemverbs.md) que es una copia de este objeto FolderItemVerbs.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,11 +47,11 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

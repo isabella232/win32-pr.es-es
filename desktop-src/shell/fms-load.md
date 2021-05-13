@@ -1,6 +1,6 @@
 ---
-description: Contiene información que utiliza el administrador de archivos para agregar un menú personalizado proporcionado por un archivo DLL de extensión del administrador de archivos. La estructura también proporciona un valor Delta que el archivo DLL de extensión puede utilizar para manipular el menú personalizado una vez que el administrador de archivos ha cargado el menú.
-title: FMS_LOAD estructura (Wfext. h)
+description: Contiene información que el Administrador de archivos usa para agregar un menú personalizado proporcionado por un archivo DLL de extensión del Administrador de archivos. La estructura también proporciona un valor delta que el archivo DLL de extensión puede usar para manipular el menú personalizado después de que el Administrador de archivos haya cargado el menú.
+title: FMS_LOAD estructura (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0e76bcc5-76c2-4ec0-8ddb-4042cb5ffa7d
-ms.openlocfilehash: 1745c4e34ac124e9990602350db6479ce287be8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efd1777704c775db84c7dabf54b9e06c81535fb4
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984203"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842196"
 ---
-# <a name="fms_load-structure"></a>Estructura de carga de FMS \_
+# <a name="fms_load-structure"></a>Estructura \_ DE FMS LOAD
 
-Contiene información que utiliza el administrador de archivos para agregar un menú personalizado proporcionado por un archivo DLL de extensión del administrador de archivos. La estructura también proporciona un valor Delta que el archivo DLL de extensión puede utilizar para manipular el menú personalizado una vez que el administrador de archivos ha cargado el menú.
+Contiene información que el Administrador de archivos usa para agregar un menú personalizado proporcionado por un archivo DLL de extensión del Administrador de archivos. La estructura también proporciona un valor delta que el archivo DLL de extensión puede usar para manipular el menú personalizado después de que el Administrador de archivos haya cargado el menú.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ typedef struct _FMS_LOAD {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -49,18 +49,18 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Longitud, en bytes, de la estructura.
+Longitud, en bytes, de la estructura .
 
 </dd> <dt>
 
 **szMenuName**
 </dt> <dd>
 
-Tipo: **\[ texto del menú TCHAR \_ \_ longitud \]**
+Tipo: **\[ \_ LEN \_ \] DE TEXTO DEL MENÚ TCHAR**
 
 </dd> <dd>
 
-Un nombre terminado en null para un elemento de menú que aparece en la barra de menús del administrador de archivos.
+Nombre terminado en NULL para un elemento de menú que aparece en la barra de menús del Administrador de archivos.
 
 </dd> <dt>
 
@@ -71,18 +71,18 @@ Tipo: **HMENU**
 
 </dd> <dd>
 
-Identificador del menú emergente que se ha agregado a la barra de menús del administrador de archivos.
+Identificador del menú emergente agregado a la barra de menús del Administrador de archivos.
 
 </dd> <dt>
 
 **wMenuDelta**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-Valor Delta del elemento de menú. Para evitar conflictos con sus propios elementos de menú, el administrador de archivos renumera los identificadores de elemento de menú en el menú emergente identificado por el miembro **hMenu** agregando este valor Delta a cada identificador. Un archivo DLL de extensión que debe modificar un elemento de menú debe identificar el elemento agregando el valor delta al identificador del elemento de menú. El valor de este miembro puede variar de una sesión a una sesión.
+Valor delta del elemento de menú. Para evitar conflictos con sus propios elementos de menú, el Administrador de archivos vuelve a numerar los identificadores de elementos de menú en el menú emergente identificado por el **miembro hMenu** agregando este valor delta a cada identificador. Un archivo DLL de extensión que debe modificar un elemento de menú debe identificar el elemento agregando el valor delta al identificador del elemento de menú. El valor de este miembro puede variar de una sesión a otra.
 
 </dd> </dl>
 
@@ -94,11 +94,11 @@ Valor Delta del elemento de menú. Para evitar conflictos con sus propios elemen
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

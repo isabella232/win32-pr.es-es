@@ -1,6 +1,6 @@
 ---
-description: Se envía a un procedimiento de archivo DLL de extensión del administrador de archivos cuando el administrador de archivos desea una cadena de ayuda para un elemento de comando de menú o barra de herramientas.
-title: Mensaje de FMEVENT_HELPSTRING (Wfext. h)
+description: Se envía a un procedimiento DLL de extensión del Administrador de archivos cuando el Administrador de archivos quiere una cadena de Ayuda para un elemento de comando de menú o barra de herramientas.
+title: FMEVENT_HELPSTRING mensaje (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 55fb5bfe-2889-40e5-9798-85f63727e31f
-ms.openlocfilehash: ae3be1953d4c8bbf70f8f17fcf34fcfb1ac583f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fe187330e27f7e246c9bbd68005f68f346bbc90
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276761"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841286"
 ---
-# <a name="fmevent_helpstring-message"></a>FMEVENT el \_ mensaje de HELPSTRING
+# <a name="fmevent_helpstring-message"></a>Mensaje \_ HELPSTRING de FMEVENT
 
-Se envía a un procedimiento de archivo DLL de extensión del administrador de archivos cuando el administrador de archivos desea una cadena de ayuda para un elemento de comando de menú o barra de herramientas.
+Se envía a un procedimiento DLL de extensión del Administrador de archivos cuando el Administrador de archivos quiere una cadena de Ayuda para un elemento de comando de menú o barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,13 +34,13 @@ Se envía a un procedimiento de archivo DLL de extensión del administrador de a
 *lpfmshs* 
 </dt> <dd>
 
-La dirección de una estructura [**FMS \_ HELPSTRING**](fms-helpstring.md) que comunica los datos de la cadena de ayuda de los elementos de comando. La estructura **FMS \_ HELPSTRING** identifica el elemento de comando para el que se desea una cadena de ayuda, junto con un identificador de su menú. Después, una aplicación escribe la cadena de ayuda adecuada en el miembro **szHelp** de la estructura **FMS \_ HELPSTRING** .
+Dirección de una estructura [**\_ HELPSTRING de FMS**](fms-helpstring.md) que comunica los datos de la cadena de ayuda del elemento de comando. La **estructura \_ HELPSTRING de FMS** identifica el elemento de comando para el que se desea una cadena de Ayuda, junto con un identificador para su menú. A continuación, una aplicación escribe la cadena de Ayuda adecuada en el miembro szHelp de la estructura **\_ HELPSTRING** **de FMS.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un procedimiento de archivo DLL de extensión debe devolver cero si procesa este mensaje.
+Un procedimiento DLL de extensión debe devolver cero si procesa este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,11 +50,11 @@ Un procedimiento de archivo DLL de extensión debe devolver cero si procesa este
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

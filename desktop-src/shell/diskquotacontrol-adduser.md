@@ -1,6 +1,6 @@
 ---
 description: Asigna una cuota de disco no predeterminada a un nuevo usuario.
-title: DiskQuotaControl. AddUser (método)
+title: Método DiskQuotaControl.AddUser
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: de20d016-83da-42ac-962f-86faf9b25419
-ms.openlocfilehash: e91bfee0cf491d7191d64bdec6ed7593e10654ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dd69b78210ecda418e784681694d84b27b1732a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540475"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841536"
 ---
-# <a name="diskquotacontroladduser-method"></a>DiskQuotaControl. AddUser (método)
+# <a name="diskquotacontroladduser-method"></a>Método DiskQuotaControl.AddUser
 
 Asigna una cuota de disco no predeterminada a un nuevo usuario.
 
@@ -42,23 +42,23 @@ objRetVal = DiskQuotaControl.AddUser(
 *sLogonName* 
 </dt> <dd>
 
-Tipo: **Char**
+Tipo: **CHAR**
 
-Valor de cadena que contiene el nombre de inicio de sesión del usuario. Use la propiedad [**UserNameResolution**](diskquotacontrol-usernameresolution.md) para especificar cómo se va a resolver el nombre.
+Valor de cadena que contiene el nombre de inicio de sesión del usuario. Use la [**propiedad UserNameResolution**](diskquotacontrol-usernameresolution.md) para especificar cómo se va a resolver el nombre.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **Object**
+Tipo: **Objeto**
 
-Devuelve una expresión de objeto que se evalúa como el objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) del usuario.
+Devuelve una expresión de objeto que se evalúa como el objeto [**DIDiskQuotaUser del**](didiskquotauser-object.md) usuario.
 
 ## <a name="remarks"></a>Observaciones
 
-El sistema de archivos NTFS crea automáticamente una entrada de cuota de usuario la primera vez que un usuario escribe en el volumen. A las entradas que se crean de esta manera se les asignan los valores de umbral de advertencia y límite de cuota máxima predeterminados para el volumen. Este método permite crear una entrada de cuota de usuario antes de que un usuario escriba información en el volumen. Devuelve un objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) que se puede usar para asignar un umbral de advertencia o un valor de límite de cuota que difiere de la configuración predeterminada del volumen.
+El sistema de archivos NTFS crea automáticamente una entrada de cuota de usuario cuando un usuario escribe por primera vez en el volumen. A las entradas que se crean de esta manera se les asignan los valores predeterminados de umbral de advertencia y límite de cuota fija para el volumen. Este método permite crear una entrada de cuota de usuario antes de que un usuario escriba información en el volumen. Devuelve un objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) que se puede usar para asignar un umbral de advertencia o un valor de límite de cuota que difiere de la configuración predeterminada del volumen.
 
-Si el usuario ya existe, no se crea ninguna entrada nueva. El método devuelve el objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) asociado a la entrada existente.
+Si el usuario ya existe, no se crea ninguna entrada nueva. El método devuelve el [**objeto DIDiskQuotaUser**](didiskquotauser-object.md) asociado a la entrada existente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,11 +68,11 @@ Si el usuario ya existe, no se crea ninguna entrada nueva. El método devuelve e
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -82,7 +82,7 @@ Si el usuario ya existe, no se crea ninguna entrada nueva. El método devuelve e
 [**DefaultQuotaThreshold**](diskquotacontrol-defaultquotathreshold.md)
 </dt> <dt>
 
-[**Objeto DiskQuotaControl**](diskquotacontrol-object.md)
+[**DiskQuotaControl (objeto)**](diskquotacontrol-object.md)
 </dt> </dl>
 
  

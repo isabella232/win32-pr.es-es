@@ -1,7 +1,7 @@
 ---
-description: El método Create del objeto WIA establece una conexión con el dispositivo de adquisición de imágenes de Windows (WIA) especificado y devuelve un objeto de elemento que representa el dispositivo.
+description: El método Create del objeto Wia establece una conexión con el dispositivo Windows Image Acquisition (WIA) especificado y devuelve un objeto Item que representa el dispositivo.
 ms.assetid: c33c635a-159c-4ac3-8ad5-6f21a1986702
-title: WIA. Create (método)
+title: Método Wia.Create
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 6a388ba2b3ee0506b093221275e34104e3f91bbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d22d45e473cec1d5186c300f97cbdb4661237ab9
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545558"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841336"
 ---
-# <a name="wiacreate-method"></a>WIA. Create (método)
+# <a name="wiacreate-method"></a>Método Wia.Create
 
-El método **Create** del objeto [**WIA**](-wia-wia.md) establece una conexión con el dispositivo de adquisición de imágenes de Windows (WIA) especificado y devuelve un objeto de [**elemento**](-wia-item.md) que representa el dispositivo.
+El **método Create** del objeto [**Wia**](-wia-wia.md) establece una conexión con el dispositivo Windows Image Acquisition (WIA) especificado y devuelve un objeto [**Item**](-wia-item.md) que representa el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ retVal = Wia.Create(
 
 <dl> <dt>
 
-*Dispositivo* \[ de de\]
+*Dispositivo* \[ En\]
 </dt> <dd>
 
-Tipo: **variante \** _
+Tipo: **\* VARIANT**
 
 Especifica el dispositivo WIA al que se va a conectar.
 
@@ -51,19 +51,19 @@ Especifica el dispositivo WIA al que se va a conectar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *IWiaDispatchItem**
+Tipo: **IWiaDispatchItem**
 
-Si es correcto, este método devuelve un objeto de [**elemento**](-wia-item.md) que representa un dispositivo de hardware WIA (un elemento raíz).
+Si se realiza correctamente, este método devuelve un [**objeto Item**](-wia-item.md) que representa un dispositivo de hardware WIA (un elemento raíz).
 
 ## <a name="remarks"></a>Observaciones
 
-El parámetro *Device* especifica un objeto [**DeviceInfo**](-wia-deviceinfo.md) pasando el propio objeto, su índice de un objeto de colección o el valor de su propiedad [**ID**](-wia-iwiadeviceinfo-id.md) . No pasar **nada** para mostrar un cuadro de diálogo que permita al usuario seleccionar un dispositivo.
+El *parámetro Device* especifica un objeto [**DeviceInfo**](-wia-deviceinfo.md) pasando el propio objeto, su índice de un objeto de colección o el valor de su [**propiedad Id.**](-wia-iwiadeviceinfo-id.md) Pasar **nada** para mostrar un cuadro de diálogo que permite a un usuario seleccionar un dispositivo.
 
 ## <a name="examples"></a>Ejemplos
 
-Los siguientes ejemplos de VBScript muestran el uso del método **Create** .
+En los siguientes ejemplos de VBScript se muestra el uso del **método Create.**
 
-En el primer ejemplo se pasa un objeto [**DeviceInfo**](-wia-deviceinfo.md) al método **Create** . Tenga en cuenta que al pasar la propiedad [**ID**](-wia-iwiadeviceinfo-id.md) del objeto se produce exactamente el mismo comportamiento.
+En el primer ejemplo se pasa [**un objeto DeviceInfo**](-wia-deviceinfo.md) al **método Create.** Tenga en cuenta que pasar la propiedad [**Id**](-wia-iwiadeviceinfo-id.md) del objeto produce exactamente el mismo comportamiento.
 
 
 ```JScript
@@ -85,7 +85,7 @@ Next
 
 
 
-En el ejemplo siguiente, la aplicación que realiza la llamada pasa el índice del objeto [**DeviceInfo**](-wia-deviceinfo.md) de la colección al método **Create** .
+En el ejemplo siguiente, la aplicación que realiza la llamada pasa el índice del [**objeto DeviceInfo**](-wia-deviceinfo.md) de la colección al **método Create.**
 
 
 ```JScript
@@ -106,7 +106,7 @@ Next
 
 
 
-En el ejemplo siguiente se pasa **Nothing** al método **Create** para mostrar un cuadro de diálogo que permite a un usuario seleccionar un dispositivo.
+En el ejemplo siguiente se **pasa Nothing** al **método Create** para mostrar un cuadro de diálogo que permite a un usuario seleccionar un dispositivo.
 
 
 ```JScript
@@ -126,9 +126,9 @@ Set objWia = objWia.Create(Nothing)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

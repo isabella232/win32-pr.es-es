@@ -1,6 +1,6 @@
 ---
 description: Indica que el objeto ShellFolderView ha terminado de enumerar el contenido de la carpeta.
-title: Evento ShellFolderViewOC. EnumDone (Shldisp. h)
+title: Evento ShellFolderViewOC.EnumDone (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 7baa5f58-62c2-406e-a81e-4ca9c446a756
-ms.openlocfilehash: 3ce02fd418a93ec5914c438fcad39d8dc73c5c8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00b0e58ed18ab0da9c3fa362da4b8e3e066cdcc4
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997861"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841056"
 ---
-# <a name="shellfolderviewocenumdone-event"></a>Evento ShellFolderViewOC. EnumDone
+# <a name="shellfolderviewocenumdone-event"></a>Evento ShellFolderViewOC.EnumDone
 
-Indica que el objeto [**ShellFolderView**](shellfolderview.md) ha terminado de enumerar el contenido de la carpeta.
+Indica que el [**objeto ShellFolderView**](shellfolderview.md) ha terminado de enumerar el contenido de la carpeta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,9 +45,9 @@ Este controlador de eventos no tiene parámetros.
 
 ## <a name="remarks"></a>Observaciones
 
-El objeto [**ShellFolderView**](shellfolderview.md) debe enumerar el contenido de una carpeta antes de poder mostrarla. Con las carpetas que son grandes o se encuentran en un sistema remoto, este proceso puede tardar hasta varios minutos. Durante este tiempo, se muestra un gráfico de linterna animada para indicar al usuario que el procesamiento está en curso. Una vez completada la enumeración, se desencadena el evento **EnumDone** y el gráfico de linterna se sustituye por el contenido de la carpeta.
+El [**objeto ShellFolderView**](shellfolderview.md) debe enumerar el contenido de una carpeta para poder mostrarlo. Con carpetas grandes o ubicadas en un sistema remoto, este proceso puede tardar hasta varios minutos. Durante este tiempo, se muestra un gráfico animado de la luz para indicar al usuario que se está procesando. Una vez completada la enumeración, se desencadena el evento **EnumDone** y el gráfico de la mano se reemplaza por el contenido de la carpeta.
 
-Proporcione el código de control de eventos para este evento, tal como se muestra aquí.
+Proporcione código de control de eventos para este evento como se muestra aquí.
 
 
 ```
@@ -66,15 +66,15 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

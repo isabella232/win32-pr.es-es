@@ -1,5 +1,5 @@
 ---
-description: Expone métodos que permiten que una extensión de Shell proporcione un espacio de nombres de búsqueda.
+description: Expone métodos que permiten a una extensión de Shell proporcionar un espacio de nombres que permite búsquedas.
 title: Interfaz IShellFolderSearchable
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,34 +13,34 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 359def5c-d7ad-46bd-bdda-30a7b3eea56c
-ms.openlocfilehash: 1f42b3af012361bfd24c93e03c38e6954eb5326e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6daa00e6821833d783aefa95be23b7b8de769907
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984631"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842836"
 ---
 # <a name="ishellfoldersearchable-interface"></a>Interfaz IShellFolderSearchable
 
-Expone métodos que permiten que una extensión de Shell proporcione un espacio de nombres de búsqueda.
+Expone métodos que permiten a una extensión de Shell proporcionar un espacio de nombres que permite búsquedas.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La interfaz **IShellFolderSearchable** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IShellFolderSearchable** también tiene estos tipos de miembros:
+La **interfaz IShellFolderSearchable** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderSearchable** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IShellFolderSearchable** tiene estos métodos.
+La **interfaz IShellFolderSearchable** tiene estos métodos.
 
 
 
 | Método                                                                | Descripción                                                               |
 |:----------------------------------------------------------------------|:--------------------------------------------------------------------------|
 | [**CancelAsyncSearch**](ishellfoldersearchable-cancelasyncsearch.md) | Comienza el proceso de cancelación de una búsqueda asincrónica pendiente.<br/> |
-| [**FindString**](ishellfoldersearchable-findstring.md)               | Inicia una búsqueda de una cadena de búsqueda especificada.<br/>                 |
-| [**InvalidateSearch**](ishellfoldersearchable-invalidatesearch.md)   | Convierte este PIDL en una parte no válida de la carpeta de Shell.<br/>        |
+| [**FindString**](ishellfoldersearchable-findstring.md)               | Comienza una búsqueda de una cadena de búsqueda especificada.<br/>                 |
+| [**InvalidateSearch**](ishellfoldersearchable-invalidatesearch.md)   | Convierte este PIDL en una parte no válida de la carpeta shell.<br/>        |
 
 
 
@@ -48,7 +48,7 @@ La interfaz **IShellFolderSearchable** tiene estos métodos.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta interfaz no está definida en ningún archivo de encabezado público. Si decide implementar esta interfaz, puede usar el siguiente código de C/C++ para declarar sus métodos.
+Esta interfaz no se define en ningún archivo de encabezado público. Si decide implementar esta interfaz, puede usar el siguiente código de C/C++ para declarar sus métodos.
 
 
 ```
@@ -56,18 +56,18 @@ Esta interfaz no está definida en ningún archivo de encabezado público. Si de
 #define INTERFACE IShellFolderSearchable
 DECLARE_INTERFACE_IID_(IShellFolderSearchable, IUnknown, "4E1AE66C-204B-11d2-8DB3-0000F87A556C")
 {
-    // **_ IUnknown methods _*_
-    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void _*ppv) PURE;
+    // *** IUnknown methods ***
+    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void **ppv) PURE;
     STDMETHOD_(ULONG,AddRef)  (THIS) PURE;
     STDMETHOD_(ULONG,Release) (THIS) PURE;
 
-    // **_ IShellFolderSearchable methods _*_
+    // *** IShellFolderSearchable methods ***
 
     // FindString -
     //  The returned Shell folder's enumerator will have any
     //   search hits for the given search string.
     //  punkOnAsyncSearch will be QI'd for IShellFolderSearchableCallback
-    STDMETHOD(FindString)(THIS_ LPCWSTR pwszTarget, __inout_opt DWORD _pdwFlags,
+    STDMETHOD(FindString)(THIS_ LPCWSTR pwszTarget, __inout_opt DWORD *pdwFlags,
                           __in_opt IUnknown *punkOnAsyncSearch, __out LPITEMIDLIST *ppidlOut)   PURE;
     // CancelAsyncSearch -
     //   Begins the process of canceling any pending

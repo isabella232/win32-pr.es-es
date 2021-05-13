@@ -1,6 +1,6 @@
 ---
 description: Comienza el proceso de cancelación de una búsqueda asincrónica pendiente.
-title: 'IShellFolderSearchable:: CancelAsyncSearch (método)'
+title: IShellFolderSearchable::CancelAsyncSearch (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5c920dca-fbca-48e1-9dce-38713cf1fcef
-ms.openlocfilehash: e9e3231e8cc602a4e00b6ee79a25392717b6e68b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3146fea4f6c8d8547c8c86096b434cbaea5b5926
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984638"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842996"
 ---
-# <a name="ishellfoldersearchablecancelasyncsearch-method"></a>IShellFolderSearchable:: CancelAsyncSearch (método)
+# <a name="ishellfoldersearchablecancelasyncsearch-method"></a>IShellFolderSearchable::CancelAsyncSearch (método)
 
 Comienza el proceso de cancelación de una búsqueda asincrónica pendiente.
 
@@ -40,21 +40,21 @@ HRESULT CancelAsyncSearch(
 
 <dl> <dt>
 
-*pidlSearch* \[ de\]
+*pidlSearch* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCITEMIDLIST**
 
-Un puntero a un [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) para la búsqueda.
+Puntero a [**itemidlist para**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) la búsqueda.
 
 </dd> <dt>
 
-*pdwFlags* \[ de\]
+*pdwFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Actualmente no hay marcas definidas; establézcalo en _ * NULL * *.
+No hay marcas definidas actualmente; se establece en **NULL.**
 
 </dd> </dl>
 
@@ -62,11 +62,11 @@ Actualmente no hay marcas definidas; establézcalo en _ * NULL * *.
 
 Tipo: **HRESULT**
 
-Devuelve S \_ OK si se cancela o s \_ false si la búsqueda no se está ejecutando.
+Devuelve S \_ OK si se cancela, o S FALSE \_ si la búsqueda no se está ejecutando.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando la búsqueda se cancela realmente, se llamará a [**RunEnd**](ishellfoldersearchablecallback-runend.md) .
+Cuando la búsqueda se cancele realmente, se llamará a [**RunEnd.**](ishellfoldersearchablecallback-runend.md)
 
 ## <a name="requirements"></a>Requisitos
 

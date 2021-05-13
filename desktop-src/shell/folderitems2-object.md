@@ -1,6 +1,6 @@
 ---
 description: Extiende el objeto FolderItems. Admite un método adicional.
-title: Objeto FolderItems2 (Shldisp. h)
+title: Objeto FolderItems2 (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,32 +13,32 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 0ca0efb3-6831-4561-9fd1-6d0b62704931
-ms.openlocfilehash: ade67fe931b443e40ea063d4a2ca46e212c35b86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b11bc4d1b3cd2bdd71802e79ca959c0a0f84e360
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984166"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840976"
 ---
 # <a name="folderitems2-object"></a>Objeto FolderItems2
 
-Extiende el objeto [**FolderItems**](folderitems.md) . Admite un método adicional.
+Extiende el [**objeto FolderItems.**](folderitems.md) Admite un método adicional.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-El objeto **FolderItems2** tiene estos tipos de miembros:
+El **objeto FolderItems2** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **FolderItems2** tiene estos métodos.
+El **objeto FolderItems2** tiene estos métodos.
 
 
 
 | Método                                            | Descripción                                                                                                                                                                                                                                         |
 |:--------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**InvokeVerbEx**](folderitems2-invokeverbex.md) | Ejecuta un verbo en una colección de objetos [**carpeta**](folderitem.md) . Este método es una extensión del método [**InvokeVerb**](folderitem-invokeverb.md) , lo que permite un control adicional de la operación a través de un conjunto de marcas.<br/> |
+| [**InvokeVerbEx**](folderitems2-invokeverbex.md) | Ejecuta un verbo en una colección de [**objetos FolderItem.**](folderitem.md) Este método es una extensión del método [**InvokeVerb,**](folderitem-invokeverb.md) lo que permite un control adicional de la operación a través de un conjunto de marcas.<br/> |
 
 
 
@@ -50,15 +50,15 @@ El objeto **FolderItems2** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

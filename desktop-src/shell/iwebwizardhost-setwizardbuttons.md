@@ -1,6 +1,6 @@
 ---
-description: Actualiza los botones atrás, siguiente y finalizar en el marco del asistente del cliente.
-title: Método WebWizardHost. SetWizardButtons (Shldisp. h)
+description: Actualiza los botones Atrás, Siguiente y Finalizar en el marco del asistente del cliente.
+title: Método WebWizardHost.SetWizardButtons (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 863aa667-454c-40cd-8091-9bb456047b6c
-ms.openlocfilehash: 18af31eac1042e84a41e5651c517279869f03697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1b2a79c7ea323c36371e08d3519e71e4c537935
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985786"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842626"
 ---
-# <a name="webwizardhostsetwizardbuttons-method"></a>WebWizardHost. SetWizardButtons, método
+# <a name="webwizardhostsetwizardbuttons-method"></a>Método WebWizardHost.SetWizardButtons
 
-Actualiza los botones **atrás**, **siguiente** y **Finalizar** en el marco del asistente del cliente.
+Actualiza los **botones** **Atrás,** Siguiente **y** Finalizar en el marco del asistente del cliente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ iRetVal = WebWizardHost.SetWizardButtons(
 
 <dl> <dt>
 
-*vbEnableBack* \[ de\]
+*vbEnableBack* \[ En\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Habilita el botón **atrás** .
+Habilita el **botón** Atrás.
 
 </dd> <dt>
 
-*vbEnableNext* \[ de\]
+*vbEnableNext* \[ En\]
 </dt> <dd>
 
 Tipo: **booleano**
@@ -59,18 +59,18 @@ Habilita el botón **Siguiente**.
 
 </dd> <dt>
 
-*vbLastPage* \[ de\]
+*vbLastPage* \[ En\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Habilita el botón **Finalizar** . Indica que se trata de la última página del servidor.
+Habilita el **botón** Finalizar. Indica que esta es la última página del lado servidor.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Asegúrese de implementar las funciones de controlador en cada página del servidor para la función alback () y en la siguiente (), correspondientes a los botones del asistente **atrás** y **siguiente**. Las funciones alback () y alnext () responden a **SetWizardButtons**. En el momento adecuado, la función Next () llama a **SetWizardButtons** con *vbLastPage* = **true**, que puede habilitar un botón **Finalizar** . El siguiente () también llama a [**FinalNext**](iwebwizardhost-finalnext.md) cuando un usuario hace clic en el botón **Finalizar** .
+Asegúrese de implementar funciones de controlador en cada página del lado servidor para OnBack() y OnNext(), correspondientes a los botones del asistente **Atrás** y **Siguiente.** Las funciones OnBack() y OnNext() responden a **SetWizardButtons**. En el momento adecuado, la función OnNext() llama a **SetWizardButtons** con *vbLastPage* true , que = puede habilitar un **botón Finalizar.** OnNext() también llama a [**FinalNext**](iwebwizardhost-finalnext.md) cuando un usuario hace clic en **el botón** Finalizar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ Asegúrese de implementar las funciones de controlador en cada página del servi
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

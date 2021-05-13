@@ -1,6 +1,6 @@
 ---
 description: Obtiene el estado de la cuenta del usuario.
-title: Propiedad DIDiskQuotaUser. Estados
+title: Propiedad DIDiskQuotaUser.AccountStatus
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ff2234f7-4758-43c7-a3c2-8fb980b27c04
-ms.openlocfilehash: 155ae627d70c5125fd0d1d501062224450fc8e3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e27e86fadab02616f91a4838acfc4be93e985ebd
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984290"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841656"
 ---
-# <a name="didiskquotauseraccountstatus-property"></a>Propiedad DIDiskQuotaUser. Estados
+# <a name="didiskquotauseraccountstatus-property"></a>Propiedad DIDiskQuotaUser.AccountStatus
 
 Obtiene el estado de la cuenta del usuario.
 
@@ -37,13 +37,13 @@ iAccountStatus = DIDiskQuotaUser.AccountStatus
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Esta propiedad puede tomar uno de los valores siguientes.
+Esta propiedad puede tomar uno de los siguientes valores.
 
 
 
 | Estado            | Value | Descripción                         |
 |-------------------|-------|-------------------------------------|
-| dqAcctResolved    | 0     | Se resolvió la información de la cuenta.    |
+| dqAcctResolved    | 0     | Se resuelve la información de la cuenta.    |
 | dqAcctUnavailable | 1     | La información de la cuenta no está disponible. |
 | dqAcctDeleted     | 2     | Se ha eliminado la cuenta.           |
 | dqAcctInvalid     | 3     | La cuenta no es válida.                 |
@@ -62,15 +62,15 @@ Esta propiedad puede tomar uno de los valores siguientes.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DIDiskQuotaUser**](didiskquotauser-object.md)
+[**DIDiskQuotaUser (objeto)**](didiskquotauser-object.md)
 </dt> </dl>
 
  

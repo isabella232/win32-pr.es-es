@@ -1,6 +1,6 @@
 ---
-description: Convierte este puntero a una lista de identificadores de elemento (PIDL) en una parte no válida de la carpeta de Shell.
-title: 'IShellFolderSearchable:: InvalidateSearch (método)'
+description: Convierte este puntero a una lista de identificadores de elemento (PIDL) en una parte no válida de la carpeta shell.
+title: IShellFolderSearchable::InvalidateSearch (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6985a299-8547-4db4-99f9-d46dafe4789b
-ms.openlocfilehash: 36c1de0a606fdfddbe8eb74b5cc6c20cdda8e983
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43d76c6a27b301a61474b8028af16e5e540cf2ce
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275676"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841696"
 ---
-# <a name="ishellfoldersearchableinvalidatesearch-method"></a>IShellFolderSearchable:: InvalidateSearch (método)
+# <a name="ishellfoldersearchableinvalidatesearch-method"></a>IShellFolderSearchable::InvalidateSearch (método)
 
-Convierte este puntero a una lista de identificadores de elemento (PIDL) en una parte no válida de la carpeta de Shell.
+Convierte este puntero a una lista de identificadores de elemento (PIDL) en una parte no válida de la carpeta shell.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,21 +40,21 @@ HRESULT InvalidateSearch(
 
 <dl> <dt>
 
-*pidlSearch* \[ de\]
+*pidlSearch* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCITEMIDLIST**
 
-Un puntero a la estructura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) para la carpeta de búsqueda.
+Puntero a la estructura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) de la carpeta de búsqueda.
 
 </dd> <dt>
 
-*pdwFlags* \[ de\]
+*pdwFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Actualmente no hay marcas definidas; establézcalo en _ * NULL * *.
+No hay marcas definidas actualmente; se establece en **NULL.**
 
 </dd> </dl>
 
@@ -62,11 +62,11 @@ Actualmente no hay marcas definidas; establézcalo en _ * NULL * *.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando se invalida una carpeta de búsqueda, puede realizar la limpieza de los recursos que ha usado. El método **IShellFolderSearchable:: InvalidateSearch** puede hacer que se cancele una búsqueda asincrónica y dará como resultado la versión final del objeto de interfaz [**IShellFolderSearchableCallback**](ishellfoldersearchablecallback.md) .
+Cuando se invalida una carpeta de búsqueda, puede realizar la limpieza de los recursos que ha usado. El **método IShellFolderSearchable::InvalidateSearch** puede hacer que se cancele una búsqueda asincrónica y dará lugar a la versión final del objeto de interfaz [**IShellFolderSearchableCallback.**](ishellfoldersearchablecallback.md)
 
 ## <a name="requirements"></a>Requisitos
 

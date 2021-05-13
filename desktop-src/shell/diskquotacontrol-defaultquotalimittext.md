@@ -1,6 +1,6 @@
 ---
 description: Obtiene el límite de cuota predeterminado como una cadena de texto.
-title: Propiedad DiskQuotaControl. DefaultQuotaLimitText
+title: Propiedad DiskQuotaControl.DefaultQuotaLimitText
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ea1b02e0-c480-4ef1-b6e0-1ec202d5f3c5
-ms.openlocfilehash: 442e9094c62f22c3d990cf1112d145a1b2838e62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14a5b5a0cc42bda17f922020a8485430797875e1
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153908"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841546"
 ---
-# <a name="diskquotacontroldefaultquotalimittext-property"></a>Propiedad DiskQuotaControl. DefaultQuotaLimitText
+# <a name="diskquotacontroldefaultquotalimittext-property"></a>Propiedad DiskQuotaControl.DefaultQuotaLimitText
 
 Obtiene el límite de cuota predeterminado como una cadena de texto.
 
@@ -37,7 +37,7 @@ DefaultQuotaLimitText = DiskQuotaControl.DefaultQuotaLimitText
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor de cadena que contiene el límite de cuota predeterminado para los nuevos usuarios del volumen. Por ejemplo, si la cuota predeterminada es 10,5 MB, el valor de la propiedad es "10,5 MB". Si el volumen no tiene ninguna cuota predeterminada, la propiedad se establece en "sin límite" o en el equivalente localizado.
+Valor de cadena que contiene el límite de cuota predeterminado para los nuevos usuarios del volumen. Por ejemplo, si la cuota predeterminada es de 10,5 MB, el valor de la propiedad es "10,5 MB". Si el volumen no tiene ninguna cuota predeterminada, la propiedad se establece en "Sin límite" o en el equivalente localizado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,11 +47,11 @@ Valor de cadena que contiene el límite de cuota predeterminado para los nuevos 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

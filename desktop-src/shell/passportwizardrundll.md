@@ -1,6 +1,6 @@
 ---
-description: Inicia el Asistente de Passport cuando se usa con Rundll32.exe.
-title: PassportWizardRunDll función)
+description: Inicia el Asistente para Passport cuando se usa Rundll32.exe.
+title: Función PassportWizardRunDll
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Netplwiz.dll
 ms.assetid: 015c3875-698e-4d80-bbfc-4fc8a71197b7
-ms.openlocfilehash: a858a36caa4af8095fc7023abae5ad918321f53e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1678677bcb305b7e5c47d28f5168d1e596ca3e26
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277412"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842516"
 ---
-# <a name="passportwizardrundll-function"></a>PassportWizardRunDll función)
+# <a name="passportwizardrundll-function"></a>Función PassportWizardRunDll
 
 \[Esta función está disponible a través de Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows.\]
 
-Inicia el Asistente de Passport cuando se usa con Rundll32.exe.
+Inicia el Asistente para Passport cuando se usa Rundll32.exe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,25 +44,25 @@ void PassportWizardRunDll(
 
 <dl> <dt>
 
-*hwndStub* \[ de\]
+*hwndStub* \[ En\]
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
-Identificador de una ventana propietaria. Normalmente, este parámetro se establece en **null**.
+Identificador de una ventana de propietario. Este parámetro se establece normalmente en **NULL.**
 
 </dd> <dt>
 
-*hAppInstance* \[ de\]
+*hAppInstance* \[ En\]
 </dt> <dd>
 
-Tipo: **hInstance**
+Tipo: **HINSTANCE**
 
-Identificador del archivo de biblioteca, obtenido como valor devuelto por [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)("netplwiz").
+Identificador del archivo de biblioteca, obtenido como un valor devuelto de [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)("netplwiz").
 
 </dd> <dt>
 
-*lpszCmdLine* \[ de\]
+*lpszCmdLine* \[ En\]
 </dt> <dd>
 
 Tipo: **LPTSTR**
@@ -71,7 +71,7 @@ Datos de argumento. Este valor siempre estará vacío.
 
 </dd> <dt>
 
-*nCmdShow* \[ de\]
+*nCmdShow* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -86,13 +86,13 @@ Ninguno.
 
 ## <a name="remarks"></a>Observaciones
 
-El Asistente de Passport se usa para obtener una cuenta de Passport predeterminada para Windows. Un pasaporte proporciona al usuario acceso personalizado a todos los sitios web de MSN y otros sitios habilitados para Passport mediante la dirección de correo electrónico del usuario. El uso de **PassportWizardRunDll** como punto de entrada en el archivo Netplwiz.dll a través de un comando Rundll32 le permite iniciar el Asistente de Passport desde una línea de comandos como si fuera un archivo ejecutable.
+El Asistente para Passport se usa para obtener un passport para Windows predeterminado. Passport proporciona al usuario acceso personalizado a todos los sitios web de MSN y a otros sitios habilitados para Passport mediante la dirección de correo electrónico del usuario. El uso de **PassportWizardRunDll** como punto de entrada en el archivo Netplwiz.dll mediante un comando Rundll32 permite iniciar el Asistente para Passport desde una línea de comandos como si fuera un archivo ejecutable.
 
-**PassportWizardRunDll** se utiliza únicamente en el contexto de un comando Rundll32.exe como se indica a continuación:
+**PassportWizardRunDll** se usa únicamente en el contexto de un Rundll32.exe comando como se muestra a continuación:
 
 **rundll32.exe netplwiz.dll, PassportWizardRunDll**
 
-El uso de una función de punto de entrada con Rundll32.exe no es similar a una llamada de función normal. El nombre de la función y el nombre del archivo. dll donde se almacenan solo se usan como parámetros de la línea de comandos. La definición de función mostrada en sintaxis es solo un prototipo estándar para todas las funciones a las que se puede llamar mediante rundll32. Los valores específicos de *hwndStub*, *hAppInstance* y *nCmdShow* no son proporcionados por el usuario, sino que se administran en segundo plano mediante rundll32. **PassportWizardRunDll** no usa el valor *lpszCmdLine* , por lo que no se requiere ningún dato adicional.
+El uso de una función de punto de Rundll32.exe no se parece a una llamada de función normal. El nombre de la función y el nombre del archivo .dll donde se almacena solo se usan como parámetros de línea de comandos. La definición de función que se muestra en Sintaxis es solo un prototipo estándar para todas las funciones a las que se puede llamar mediante Rundll32. El usuario no proporciona los valores específicos de *hwndStub,* *hAppInstance* y *nCmdShow,* pero Rundll32 los controla en segundo plano. **PassportWizardRunDll** no usa el valor *lpszCmdLine,* por lo que no se requiere ningún dato adicional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ El uso de una función de punto de entrada con Rundll32.exe no es similar a una 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                            |
-| Encabezado<br/>                   | <dl> <dt>None</dt> </dl>                                 |
-| Archivo DLL<br/>                      | <dl> <dt>Netplwiz.dll (versión 5,60 o posterior)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ninguno</dt> </dl>                                 |
+| Archivo DLL<br/>                      | <dl> <dt>Netplwiz.dll (versión 5.60 o posterior)</dt> </dl> |
 
 
 

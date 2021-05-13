@@ -1,6 +1,6 @@
 ---
-description: Simula un clic del botón Cancelar.
-title: Método WebWizardHost. Cancel (Shldisp. h)
+description: Simula un clic en el botón Cancelar.
+title: Método WebWizardHost.Cancel (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: ea53c8ad-d6dd-4ff7-92e4-681d807a3d98
-ms.openlocfilehash: 79ad23dc0f419e884ad291ab911ddb66d156e1a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a75ecc508f6e901d5003f9e5ecd23497aa8de919
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080305"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841886"
 ---
-# <a name="webwizardhostcancel-method"></a>WebWizardHost. Cancel (método)
+# <a name="webwizardhostcancel-method"></a>Método WebWizardHost.Cancel
 
-Simula un clic del botón **Cancelar** .
+Simula un clic **en el** botón Cancelar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,10 +47,10 @@ El cliente es responsable de responder a este método con el comportamiento espe
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

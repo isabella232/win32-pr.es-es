@@ -1,6 +1,6 @@
 ---
-description: Enviado por una extensión del administrador de archivos para recuperar la información de la unidad de la ventana del administrador de archivos activo.
-title: Mensaje de FM_GETDRIVEINFO (Wfext. h)
+description: Enviado por una extensión del Administrador de archivos para recuperar información de unidad desde la ventana activa del Administrador de archivos.
+title: FM_GETDRIVEINFO mensaje (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 142fff71-3a1b-4197-8c06-2e981cce4e4f
-ms.openlocfilehash: 7accd78b36e82abbf56b02b133c79e92dd40d37c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0abac794ed23eca30676a839a6eb5ad7c1079c3c
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997220"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842416"
 ---
-# <a name="fm_getdriveinfo-message"></a>\_Mensaje GETDRIVEINFO de FM
+# <a name="fm_getdriveinfo-message"></a>Mensaje \_ GETDRIVEINFO de FM
 
-Enviado por una extensión del administrador de archivos para recuperar la información de la unidad de la ventana del administrador de archivos activo.
+Enviado por una extensión del Administrador de archivos para recuperar información de unidad desde la ventana activa del Administrador de archivos.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,17 +34,17 @@ Enviado por una extensión del administrador de archivos para recuperar la infor
 *lpfmsgdi* 
 </dt> <dd>
 
-La dirección de una estructura de [**FMS \_ GETDRIVEINFO**](fms-getdriveinfo.md) que recibe información de la unidad.
+Dirección de una estructura [**\_ GETDRIVEINFO de FMS**](fms-getdriveinfo.md) que recibe información de unidad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero.
+Devuelve distinto de cero.
 
 ## <a name="remarks"></a>Observaciones
 
-Si se devuelve 0xFFFFFFFF en el miembro **dwTotalSpace** o **dwFreeSpace** de la estructura de [**FMS \_ GETDRIVEINFO**](fms-getdriveinfo.md) , la biblioteca de extensiones debe calcular el valor o los valores.
+Si 0xFFFFFFFF en el **miembro dwTotalSpace** o **dwFreeSpace** de la estructura [**\_ GETDRIVEINFO de FMS,**](fms-getdriveinfo.md) la biblioteca de extensiones debe calcular el valor o los valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,11 +54,11 @@ Si se devuelve 0xFFFFFFFF en el miembro **dwTotalSpace** o **dwFreeSpace** de la
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

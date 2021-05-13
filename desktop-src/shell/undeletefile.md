@@ -1,6 +1,6 @@
 ---
-description: Especifica una función de devolución de llamada definida por la aplicación llamada por el administrador de archivos cuando el usuario elige el comando Undelete en el menú archivo.
-title: FM_UNDELETE_PROC puntero a función (Wfext. h)
+description: Especifica una función de devolución de llamada definida por la aplicación a la que llama el Administrador de archivos cuando el usuario elige el comando Undelete en el menú Archivo.
+title: FM_UNDELETE_PROC de función (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 456b053e-e83d-43af-9691-57e1d4fd3f8f
-ms.openlocfilehash: 3bed8995954cdfe05bcc8eea82dc47415033e205
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7549b521c241429f1c5c7edb7f83eadf25f5d37
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278863"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842426"
 ---
-# <a name="fm_undelete_proc-function-pointer"></a>\_Puntero de función de procedimiento de eliminación de FM \_
+# <a name="fm_undelete_proc-function-pointer"></a>Puntero \_ de función FM UNDELETE \_ PROC
 
-Especifica una función de devolución de llamada definida por la aplicación llamada por el administrador de archivos cuando el usuario elige el comando **Undelete** en el menú **archivo** .
+Especifica una función de devolución de llamada definida por la aplicación a la que llama el Administrador de archivos cuando el usuario elige el comando **Undelete** en el **menú** Archivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,9 +43,9 @@ typedef DWORD ( APIENTRY *FM_UNDELETE_PROC)(
 *hwndOwner* 
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
-Identificador de ventana para el administrador de archivos. Un archivo DLL de deseliminación debe usar este identificador para especificar la ventana propietaria de cualquier cuadro de diálogo o cuadro de mensaje que el archivo DLL puede mostrar.
+Identificador de ventana del Administrador de archivos. Un archivo DLL de recuperación debe usar este identificador para especificar la ventana de propietario de cualquier cuadro de diálogo o cuadro de mensaje que pueda mostrar el archivo DLL.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Identificador de ventana para el administrador de archivos. Un archivo DLL de de
 
 Tipo: **LPSTR**
 
-Dirección de una cadena terminada en null que contiene el nombre del directorio inicial.
+Dirección de una cadena terminada en NULL que contiene el nombre del directorio inicial.
 
 </dd> </dl>
 
@@ -69,8 +69,8 @@ Devuelve uno de los valores siguientes.
 | Código devuelto                                                                             | Descripción                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**-1**</dt> </dl>       | Se produjo un error.<br/>                                      |
-| <dl> <dt>**IDOK**</dt> </dl>     | Se ha cancelado la eliminación de un archivo. El administrador de archivos vuelve a dibujar su ventana.<br/> |
-| <dl> <dt>**IDCANCEL**</dt> </dl> | No se eliminó ningún archivo.<br/>                                  |
+| <dl> <dt>**IDOK**</dt> </dl>     | Se ha eliminado un archivo. El Administrador de archivos vuelve a dibujar su ventana.<br/> |
+| <dl> <dt>**IDCANCEL**</dt> </dl> | No se ha eliminado ningún archivo.<br/>                                  |
 
 
 
@@ -84,7 +84,7 @@ Devuelve uno de los valores siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

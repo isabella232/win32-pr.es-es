@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4cc44e5a-3578-448b-9b19-1b71e1ae2cb9
-ms.openlocfilehash: e5ec05ab09c7592e976085c230a2b359091fb819
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26677173cce2b72d1a0ba6bdc941cd2407908712
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104373"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841816"
 ---
 # <a name="shellbrowseforfolder-method"></a>Método Shell.BrowseForFolder
 
-Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto Folder de [**la carpeta**](folder.md) seleccionada.
+Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto Carpeta de [**la carpeta**](folder.md) seleccionada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,7 +78,7 @@ Valor **string** que representa el título que se muestra dentro del **cuadro de
 
 Tipo: **Entero**
 
-Valor **Entero** que contiene las opciones para el método . Puede ser cero o una combinación de los valores enumerados en el **miembro ulFlags** de la [**estructura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
+Valor **entero** que contiene las opciones para el método . Puede ser cero o una combinación de los valores enumerados en el **miembro ulFlags** de la [**estructura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Valor **Entero** que contiene las opciones para el método . Puede ser cero o un
 
 Tipo: **Variant**
 
-Carpeta raíz que se usará en el cuadro de diálogo. El usuario no puede examinar más arriba en el árbol que esta carpeta. Si no se especifica este valor, la carpeta raíz que se usa en el cuadro de diálogo es el escritorio. Este valor puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
+Carpeta raíz que se usará en el cuadro de diálogo. El usuario no puede examinar más arriba en el árbol que esta carpeta. Si no se especifica este valor, la carpeta raíz que se usa en el cuadro de diálogo es el escritorio. Este valor puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Referencia de objeto al objeto Folder de [**la carpeta**](folder.md) seleccionad
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa BrowseForFolder para** mostrar una ventana de exploración titulada "Ejemplo" con raíz en la carpeta Windows. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa BrowseForFolder para** mostrar una ventana de exploración titulada "Example" rooteado en la carpeta Windows. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 Jscript:
 
@@ -181,7 +181,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

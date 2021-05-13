@@ -1,6 +1,6 @@
 ---
-description: Extiende el objeto de carpeta para admitir carpetas sin conexión.
-title: Objeto Carpeta2 (Shldisp. h)
+description: Extiende el objeto Folder para admitir carpetas sin conexión.
+title: Objeto Folder2 (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,34 +13,34 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5b52b141-ced3-4d38-8584-7dfcfe12ab56
-ms.openlocfilehash: 8db899fc52cc3511d1af82013fc6c4c87544f1cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2c630ef36f6e4b2b58f3902c3d5728a31ad1f0d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985498"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842066"
 ---
-# <a name="folder2-object"></a>Carpeta2 (objeto)
+# <a name="folder2-object"></a>Objeto Folder2
 
-Extiende el objeto de [**carpeta**](folder.md) para admitir carpetas sin conexión.
+Extiende el objeto [**Folder para**](folder.md) admitir carpetas sin conexión.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-El objeto **Carpeta2** tiene estos tipos de miembros:
+El **objeto Folder2** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **Carpeta2** tiene estos métodos.
+El **objeto Folder2** tiene estos métodos.
 
 
 
 | Método                                                                 | Descripción                                                                          |
 |:-----------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [**DismissedWebViewBarricade**](folder2-dismissedwebviewbarricade.md) | Se llama en respuesta a la vista Web Barricade que el usuario está descartando.<br/> |
-| [**Sincronizándose**](folder2-synchronize.md)                             | Sincroniza todos los archivos sin conexión de la carpeta.<br/>                             |
+| [**DismissedWebViewBarricade**](folder2-dismissedwebviewbarricade.md) | Se llama en respuesta a que el usuario descarta la vista web.<br/> |
+| [**Sincronizar**](folder2-synchronize.md)                             | Sincroniza todos los archivos sin conexión de la carpeta .<br/>                             |
 
 
 
@@ -48,7 +48,7 @@ El objeto **Carpeta2** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **Carpeta2** tiene estas propiedades.
+El **objeto Folder2** tiene estas propiedades.
 
 
 
@@ -56,7 +56,7 @@ El objeto **Carpeta2** tiene estas propiedades.
 |:------------------------------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------|
 | [**HaveToShowWebViewBarricade**](folder2-havetoshowwebviewbarricade.md)<br/> | Solo lectura<br/> | No se admite actualmente.<br/>                                       |
 | [**OfflineStatus**](folder2-offlinestatus.md)<br/>                           | Solo lectura<br/> | Contiene el estado sin conexión de la carpeta.<br/>                     |
-| [**Mismo**](folder2-self.md)<br/>                                             | Solo lectura<br/> | Contiene el objeto [**carpeta**](folderitem.md) de la carpeta.<br/> |
+| [**propio**](folder2-self.md)<br/>                                             | Solo lectura<br/> | Contiene el objeto [**FolderItem de la**](folderitem.md) carpeta.<br/> |
 
 
 
@@ -68,15 +68,15 @@ El objeto **Carpeta2** tiene estas propiedades.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 description: Comprueba que el monitor está activo y disponible.
-title: 'IMultiMonitorDockingSite:: RequestMonitor (método)'
+title: IMultiMonitorDockingSite::RequestMonitor (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 9aa6eb20-de39-41f7-a17e-183f4088f972
-ms.openlocfilehash: 5389b10af9aaa3da5d3106d82a4fbdcbd614a094
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f219e5fd62fb4f85fd206501e6a53ac3927195a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003159"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841976"
 ---
-# <a name="imultimonitordockingsiterequestmonitor-method"></a>IMultiMonitorDockingSite:: RequestMonitor (método)
+# <a name="imultimonitordockingsiterequestmonitor-method"></a>IMultiMonitorDockingSite::RequestMonitor (Método)
 
 Comprueba que el monitor está activo y disponible.
 
@@ -39,19 +39,19 @@ HRESULT RequestMonitor(
 
 <dl> <dt>
 
-*punkSrc* \[ de\]
+*yerbaSrc* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Un puntero al objeto que implementa la interfaz [_ *IDockingWindow* *](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) .
+Puntero al objeto que implementa la [**interfaz IDockingWindow.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow)
 
 </dd> <dt>
 
-*phMon* \[ de\]
+*phMon* \[ En\]
 </dt> <dd>
 
-Tipo: **HMONITOR \** _
+Tipo: **HMONITOR \***
 
 Puntero al identificador del monitor predeterminado.
 
@@ -59,9 +59,9 @@ Puntero al identificador del monitor predeterminado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/> |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                   |
 
 

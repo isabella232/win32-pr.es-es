@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ffa6311c-8bbe-45c4-9b06-069779d2306d
-ms.openlocfilehash: d46e27781dc569b473615926509f51ed9d089af3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bbe8ed55865322fc7436959fd80b478baa3c0b40
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104073"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842616"
 ---
 # <a name="shellwindows-method"></a>Método Shell.Windows
 
@@ -61,7 +61,7 @@ Referencia de objeto al [**objeto ShellWindows.**](shellwindows.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente **se usa Windows** para recuperar el objeto [**ShellWindows**](shellwindows.md) y mostrar un recuento del número de elementos que contiene. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Windows** para recuperar el objeto [**ShellWindows**](shellwindows.md) y mostrar un recuento del número de elementos que contiene. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 Jscript:
 
@@ -136,7 +136,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

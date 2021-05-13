@@ -1,5 +1,5 @@
 ---
-description: Se usa para determinar si un elemento está presente en una lista de elementos usados más recientemente (MRU).
+description: Se usa para determinar si un elemento está presente en una lista usada más recientemente (MRU).
 title: Función de devolución de llamada MRUCMPPROC
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 - UserDefined
 api_location: ''
 ms.assetid: 00f31d6b-2a96-4abd-9647-24a6e66aa22f
-ms.openlocfilehash: f95856f6508ad728a15b3df3d6f5eafa4f5bd2ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83020fbcd0d4cfcfbc643d1360e3671595de6f32
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001338"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840786"
 ---
 # <a name="mrucmpproc-callback-function"></a>Función de devolución de llamada MRUCMPPROC
 
-Se usa para determinar si un elemento está presente en una lista de elementos usados más recientemente (MRU).
+Se usa para determinar si un elemento está presente en una lista usada más recientemente (MRU).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ La primera cadena.
 
 Tipo: **LPCTSTR**
 
-Segunda cadena que se va a comparar con la primera.
+Segunda cadena que se comparará con la primera.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Segunda cadena que se va a comparar con la primera.
 
 Tipo: **int**
 
-Devuelve 0 si los elementos son idénticos, un valor distinto de cero en caso contrario.
+Devuelve 0 si los elementos son idénticos; de lo contrario, un valor distinto de cero.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se puede especificar opcionalmente para su uso en la estructura [**MRUINFO**](mruinfo.md) pasada a [**CreateMRUListW**](createmrulist.md). Esto resulta útil cuando la lista MRU se creó con la **marca \_ binaria MRU** . Cuando no se especifica esta función, se usan las funciones de comparación de cadenas estándar.
+Esta función se puede especificar opcionalmente para su uso en la estructura [**MRUINFO**](mruinfo.md) pasada a [**CreateMRUListW**](createmrulist.md). Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Cuando no se especifica esta función, se usan funciones de comparación de cadenas estándar.
 
 ## <a name="requirements"></a>Requisitos
 

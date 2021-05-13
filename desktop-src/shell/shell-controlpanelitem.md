@@ -1,6 +1,6 @@
 ---
-description: Ejecuta la aplicación del panel de control ( \* . cpl) especificada.
-title: Método Shell. ControlPanelItem (Shldisp. h)
+description: Ejecuta la aplicación Panel de control especificada \* (.cpl).
+title: Método Shell.ControlPanelItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 54979bbd-b36b-4b5b-a8a0-5f63e9526fa5
-ms.openlocfilehash: dec27dab8bd37cc9c15e603c24a54d528cea331a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04d2493f5d0ec5b86d19689cb8e7c2a02a82e536
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985618"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841806"
 ---
-# <a name="shellcontrolpanelitem-method"></a>Shell. ControlPanelItem (método)
+# <a name="shellcontrolpanelitem-method"></a>Método Shell.ControlPanelItem
 
-Ejecuta la aplicación del panel de control ( \* . cpl) especificada. Si la aplicación ya está abierta, se activará la instancia en ejecución.
+Ejecuta la aplicación Panel de control especificada \* (.cpl). Si la aplicación ya está abierta, activará la instancia en ejecución.
 
 > [!Note]  
-> A partir de Windows Vista, la mayoría de las aplicaciones del panel de control son elementos de Shell y no se pueden abrir con esta función. Para abrir esas aplicaciones del panel de control, pase el nombre canónico a control.exe. Por ejemplo:
+> Desde Windows Vista, la mayoría Panel de control aplicaciones son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -58,12 +58,12 @@ Shell.ControlPanelItem( _
 
 <dl> <dt>
 
-*bstrDir* \[ de\]
+*bstrDir* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Nombre de archivo de la aplicación del panel de control. Todas las aplicaciones del panel de control tienen la extensión. cpl.
+El Panel de control de archivo de la aplicación. Todas Panel de control aplicaciones tienen la extensión .cpl.
 
 </dd> </dl>
 
@@ -79,9 +79,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **ControlPanelItem** para ejecutar el elemento de **propiedades de presentación** del panel de control. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa ControlPanelItem** para ejecutar el Panel de control **de** Propiedades de pantalla elemento. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -97,7 +97,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -137,11 +137,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

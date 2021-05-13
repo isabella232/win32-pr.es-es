@@ -1,6 +1,6 @@
 ---
 description: Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
-title: Interfaz IShellFolderViewType
+title: IShellFolderViewType (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,35 +13,35 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9b597f6b-ef27-4fa1-ad00-e131dbd979e7
-ms.openlocfilehash: 1440b6d14950ad70d2c76168b28bb1077b19b5a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3ccb4073d59e0ebe9b840bd6f8f592f463e1e46
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082632"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842696"
 ---
-# <a name="ishellfolderviewtype-interface"></a>Interfaz IShellFolderViewType
+# <a name="ishellfolderviewtype-interface"></a>IShellFolderViewType (interfaz)
 
 Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La interfaz **IShellFolderViewType** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IShellFolderViewType** también tiene estos tipos de miembros:
+La **interfaz IShellFolderViewType** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderViewType** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IShellFolderViewType** tiene estos métodos.
+La **interfaz IShellFolderViewType** tiene estos métodos.
 
 
 
 | Método                                                                      | Descripción                                                                                                                                                          |
 |:----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**EnumViews**](ishellfolderviewtype-enumviews.md)                         | Recupera un enumerador que devolverá un PIDL para cada vista extendida.<br/>                                                                                |
-| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtiene el nombre de la vista predeterminada. Llame a [**IShellFolder:: GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar los nombres de las otras vistas.<br/> |
+| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtiene el nombre de la vista predeterminada. Llame [**a IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar los nombres de las otras vistas.<br/> |
 | [**GetViewTypeProperties**](ishellfolderviewtype-getviewtypeproperties.md) | Obtiene las propiedades de la vista.<br/>                                                                                                                          |
-| [**TranslateViewPidl**](ishellfolderviewtype-translateviewpidl.md)         | Reconstruye un PIDL a partir de una representación jerárquica de la carpeta de Shell en una representación diferente.<br/>                                             |
+| [**TranslateViewPidl**](ishellfolderviewtype-translateviewpidl.md)         | Reconstruye un PIDL de una representación jerárquica de la carpeta Shell en una representación diferente.<br/>                                             |
 
 
 
@@ -49,7 +49,7 @@ La interfaz **IShellFolderViewType** tiene estos métodos.
 
 ## <a name="remarks"></a>Observaciones
 
-Este enumerador devuelve PIDL que son carpetas ocultas especiales en el nivel superior de la carpeta de Shell, que no se enumeran de otra manera. La vista predeterminada es la que la carpeta de Shell muestra con normalidad.
+Este enumerador devuelve PIDL que son carpetas ocultas especiales en el nivel superior de la carpeta Shell, que de lo contrario no se enumeran. La vista predeterminada es la que la carpeta shell muestra con normalidad.
 
 Esta interfaz no está definida en ningún archivo de encabezado público. Si decide implementar esta interfaz, puede usar el siguiente código de C/C++ para declarar sus métodos.
 
@@ -59,16 +59,16 @@ Esta interfaz no está definida en ningún archivo de encabezado público. Si de
 #define INTERFACE   IShellFolderViewType
 DECLARE_INTERFACE_IID_(IShellFolderViewType, IUnknown, "49422C1E-1C03-11d2-8DAB-0000F87A556C")
 {
-    // **_ IUnknown methods _*_
-    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void _*ppv) PURE;
+    // *** IUnknown methods ***
+    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void **ppv) PURE;
     STDMETHOD_(ULONG,AddRef)  (THIS) PURE;
     STDMETHOD_(ULONG,Release) (THIS) PURE;
 
-    // **_ IShellFolderViewType Methods _*_
+    // *** IShellFolderViewType Methods ***
 
     // EnumViews:
     //   Returns an enumerator which will give out one pidl for every extended view.
-    STDMETHOD(EnumViews)(THIS_ ULONG grfFlags, __out IEnumIDList _*ppenum) PURE;
+    STDMETHOD(EnumViews)(THIS_ ULONG grfFlags, __out IEnumIDList **ppenum) PURE;
 
     // GetDefaultViewName:
     //   Returns the name of the default view.  The names of the other views

@@ -1,6 +1,6 @@
 ---
-description: Carga una lista de cadenas en la lista de elementos usados más recientemente (MRU) del registro.
-title: 'IACLCustomMRU:: Initialize (método)'
+description: Carga una lista de cadenas en la lista de mru usada más recientemente desde el registro.
+title: IACLCustomMRU::Initialize (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 358921b0-46c4-4428-b0b5-57a44fc3247b
-ms.openlocfilehash: 768df625cb66c888ddccc85f72de5b8676c20b10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 715c6991021070dd132942de0bb18c8b77684860
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997684"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841236"
 ---
-# <a name="iaclcustommruinitialize-method"></a>IACLCustomMRU:: Initialize (método)
+# <a name="iaclcustommruinitialize-method"></a>IACLCustomMRU::Initialize (Método)
 
-Carga una lista de cadenas en la lista de elementos usados más recientemente (MRU) del registro.
+Carga una lista de cadenas en la lista de mru usada más recientemente desde el registro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,16 +39,16 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*pwszMRURegKey* \[ de\]
+*pwszMRURegKey* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Un puntero a un búfer que contiene la clave del registro que contiene las cadenas para la lista MRU.
+Puntero a un búfer que contiene la clave del Registro que contiene las cadenas de la lista de MRU.
 
 </dd> <dt>
 
-*dwMax* \[ de\]
+*dwMax* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -61,7 +61,7 @@ Número máximo de entradas que se pueden tomar de *pwszMRURegKey*.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

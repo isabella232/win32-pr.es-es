@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 91c39d4c-56c3-4c2b-93e8-9f782ca0aa93
-ms.openlocfilehash: c8cbff0da4da55d9621bfeb01f26c5ed62fe230a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ab0f65094f638c56df6a10434f9a404072278c55
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116753"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842556"
 ---
 # <a name="shellfolderviewselectitem-method"></a>Método ShellFolderView.SelectItem
 
@@ -98,7 +98,7 @@ Coloque el elemento en modo de edición.
 
 </dt> <dd>
 
-Anule la selección de todos los elementos menos el especificado.
+Anule la selección de todos los elementos, menos el elemento especificado.
 
 </dd> <dt>
 
@@ -128,13 +128,13 @@ Dé el foco al elemento.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se puede llamar a [**FocusedItem**](shellfolderview-focuseditem.md) en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método en JScript insertado en HTML.
 
 
 ```JScript
@@ -193,7 +193,7 @@ En el ejemplo siguiente se muestra el uso adecuado de este método en JScript in
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

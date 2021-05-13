@@ -1,6 +1,6 @@
 ---
 description: Crea y devuelve un nuevo objeto FolderItems que es una copia de este objeto FolderItemsss.
-title: Método FolderItems._NewEnum (Shldisp. h)
+title: FolderItems._NewEnum método (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: c03aceab-3437-46ae-be43-a54935bb24cb
-ms.openlocfilehash: e0d4da945ee224955024389b055283f86b1a31e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 757707354b410abd42504e04b4bb14504696e83c
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104998971"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842076"
 ---
-# <a name="folderitems_newenum-method"></a>FolderItems. \_ NewEnum (método)
+# <a name="folderitems_newenum-method"></a>FolderItems. \_ Método NewEnum
 
-Crea y devuelve un nuevo objeto [**FolderItems**](folderitems.md) que es una copia de este objeto FolderItemsss.
+Crea y devuelve un [**nuevo objeto FolderItems**](folderitems.md) que es una copia de este objeto FolderItemsss.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,9 +47,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>    | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>    | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>    | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>    | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
