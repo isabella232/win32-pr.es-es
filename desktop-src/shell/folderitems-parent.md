@@ -1,6 +1,6 @@
 ---
-description: FolderItems. Parent (propiedad)
-title: FolderItems. Parent (propiedad)
+description: Propiedad FolderItems.Parent
+title: Propiedad FolderItems.Parent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: 17ac7b71-4c78-480b-b35b-5557b5b85c89
-ms.openlocfilehash: 59cb014dff89e19a9921c21cb8c52e47a8a1bf8d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8162987c540d8e611b8ee632a77df7ce3fd5fe93
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496769"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842026"
 ---
-# <a name="folderitemsparent-property"></a>FolderItems. Parent (propiedad)
+# <a name="folderitemsparent-property"></a>Propiedad FolderItems.Parent
 
 Esta propiedad no está implementada.
 

@@ -1,6 +1,6 @@
 ---
 description: Obtiene el uso actual del disco del usuario, en bytes.
-title: Propiedad DIDiskQuotaUser. QuotaUsed
+title: DiDiskQuotaUser.QuotaUsed, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3e3ade59-b925-4ff5-ae7e-ed97eff506c7
-ms.openlocfilehash: 7d5068e6f80fd2b0b435d04583e99da929e17fce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a08d7579ad4de51fbc88b7091f2f906ace838883
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153911"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841576"
 ---
-# <a name="didiskquotauserquotaused-property"></a>Propiedad DIDiskQuotaUser. QuotaUsed
+# <a name="didiskquotauserquotaused-property"></a>DiDiskQuotaUser.QuotaUsed, propiedad
 
 Obtiene el uso actual del disco del usuario, en bytes.
 
@@ -37,7 +37,7 @@ iQuotaUsed = DIDiskQuotaUser.QuotaUsed
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor **entero** que se establece en la cantidad de espacio en disco que se está usando actualmente. Si está habilitada la compresión de archivos NTFS, **QuotaUsed** refleja la cantidad de espacio en disco que los datos necesitarían en un estado sin comprimir.
+Valor **entero** que se establece en la cantidad de espacio en disco actualmente en uso. Si la compresión de archivos NTFS está habilitada, **QuotaUsed** refleja la cantidad de espacio en disco que los datos requerirían en un estado sin comprimir.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,11 +47,11 @@ Valor **entero** que se establece en la cantidad de espacio en disco que se est�
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

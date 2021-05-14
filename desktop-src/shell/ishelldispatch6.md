@@ -1,6 +1,6 @@
 ---
 description: Extiende el objeto IShellDispatch5.
-title: Objeto IShellDispatch6 (Shldisp. h)
+title: Objeto IShellDispatch6 (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,37 +13,37 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 540A5CFD-1520-4B61-B461-E893EFA27115
-ms.openlocfilehash: 42e9690ec5b2f5995b184e4e686b27037aab891d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de27322324dc8a25bdc679374e625f94a1d1a2ae
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154933"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843036"
 ---
 # <a name="ishelldispatch6-object"></a>Objeto IShellDispatch6
 
-Extiende el objeto [**IShellDispatch5**](ishelldispatch5.md) . Además de las propiedades y los métodos admitidos por **IShellDispatch5**, **IShellDispatch6** agrega un método que muestra el panel de búsqueda de aplicaciones.
+Extiende el [**objeto IShellDispatch5.**](ishelldispatch5.md) Además de las propiedades y los métodos admitidos por **IShellDispatch5,** **IShellDispatch6** agrega un método que muestra el panel Búsqueda de aplicaciones.
 
 > [!Note]  
-> **IShellDispatch6** se implementa y se obtiene acceso a él a través del objeto de [**Shell**](shell.md) .
+> **IShellDispatch6** se implementa y se accede a través del [**objeto Shell.**](shell.md)
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-El objeto **IShellDispatch6** tiene estos tipos de miembros:
+El **objeto IShellDispatch6** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **IShellDispatch6** tiene estos métodos.
+El **objeto IShellDispatch6** tiene estos métodos.
 
 
 
 | Método                                                 | Descripción                                                                                                                  |
 |:-------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| [**SearchCommand**](ishelldispatch6-searchcommand.md) | Muestra el panel de búsqueda de aplicaciones, que normalmente aparece cuando empieza a escribir un término de búsqueda en la pantalla Inicio.<br/> |
+| [**SearchCommand**](ishelldispatch6-searchcommand.md) | Muestra el panel Búsqueda de aplicaciones, que normalmente aparece cuando se empieza a escribir un término de búsqueda desde el pantalla Inicio.<br/> |
 
 
 
@@ -55,22 +55,22 @@ El objeto **IShellDispatch6** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Objeto de Shell**](shell.md)
+[**Objeto Shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

@@ -1,6 +1,6 @@
 ---
-description: Indica que se ha iniciado una búsqueda.
-title: 'IShellFolderSearchableCallback:: RunBegin (método)'
+description: Indica que se inició una búsqueda.
+title: IShellFolderSearchableCallback::RunBegin (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6e3ae592-a0cb-4d9d-b186-241a757da5ea
-ms.openlocfilehash: 2bef0f29486143f97f886c0d31ab456a070ed857
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 953bf54ff64cf41724ce0dfabd064f9c7b980cc6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543110"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842816"
 ---
-# <a name="ishellfoldersearchablecallbackrunbegin-method"></a>IShellFolderSearchableCallback:: RunBegin (método)
+# <a name="ishellfoldersearchablecallbackrunbegin-method"></a>IShellFolderSearchableCallback::RunBegin (método)
 
-Indica que se ha iniciado una búsqueda.
+Indica que se inició una búsqueda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ HRESULT RunBegin(
 
 <dl> <dt>
 
-*dwReserved* \[ de\]
+*dwReserved* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -52,11 +52,11 @@ Reservado. Se debe establecer en 0.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Como respuesta a esta devolución de llamada, la aplicación puede habilitar el botón **Cancelar** , por ejemplo.
+En respuesta a esta devolución de llamada, la aplicación puede habilitar el **botón Cancelar,** por ejemplo.
 
 ## <a name="requirements"></a>Requisitos
 

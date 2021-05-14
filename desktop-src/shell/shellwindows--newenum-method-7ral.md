@@ -1,6 +1,6 @@
 ---
 description: Crea y devuelve un nuevo objeto ShellWindows que es una copia de este objeto ShellWindows.
-title: Método ShellWindows._NewEnum (exdisp. h)
+title: ShellWindows._NewEnum método (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 85e84c13-62aa-4502-b642-ca55273a800d
-ms.openlocfilehash: ded5ae2c337e80359c012fb63a37aa13cc43b5fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 944da80196db12d0bfa5d64767c5e6c2e8ff733e
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278864"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841256"
 ---
-# <a name="shellwindows_newenum-method"></a>ShellWindows. \_ NewEnum (método)
+# <a name="shellwindows_newenum-method"></a>ShellWindows. \_ Método NewEnum
 
-Crea y devuelve un nuevo objeto [**ShellWindows**](shellwindows.md) que es una copia de este objeto **ShellWindows** .
+Crea y devuelve un nuevo [**objeto ShellWindows**](shellwindows.md) que es una copia de **este objeto ShellWindows.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ Este método no tiene parámetros.
 
 Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\*\***
 
-Una referencia de objeto a la copia del objeto [**ShellWindows**](shellwindows.md) .
+Referencia de objeto a la [**copia del objeto ShellWindows.**](shellwindows.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el **\_ NewEnum** en uso. Se muestra el uso correcto para VBScript y Visual Basic. Este método no se puede utilizar con JScript.
+En el ejemplo siguiente se **\_ muestra NewEnum** en uso. Se muestra un uso adecuado para VBScript y Visual Basic. Este método no se puede usar con JScript.
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -107,10 +107,10 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

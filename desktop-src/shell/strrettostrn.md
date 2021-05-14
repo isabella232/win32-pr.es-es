@@ -1,6 +1,6 @@
 ---
-description: 'Toma una estructura STRRET devuelta por IShellFolder:: GetDisplayNameOf, la convierte en una cadena y coloca el resultado en un búfer.'
-title: StrRetToStrN función)
+description: Toma una estructura STRRET devuelta por IShellFolder::GetDisplayNameOf, la convierte en una cadena y coloca el resultado en un búfer.
+title: Función StrRetToStrN
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: a816fb5f-8320-4b63-a85d-dd4c59596ead
-ms.openlocfilehash: 89a8d991e22e8615456bd8d4690c046ec0d325d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50295d712e539c94f10a708674cea595a47ae4e0
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997953"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841036"
 ---
-# <a name="strrettostrn-function"></a>StrRetToStrN función)
+# <a name="strrettostrn-function"></a>Función StrRetToStrN
 
-Toma una estructura [**Strret**](/windows/desktop/api/Shtypes/ns-shtypes-strret) devuelta por [**IShellFolder:: GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof), la convierte en una cadena y coloca el resultado en un búfer.
+Toma una [**estructura STRRET**](/windows/desktop/api/Shtypes/ns-shtypes-strret) devuelta por [**IShellFolder::GetDisplayNameOf,**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof)la convierte en una cadena y coloca el resultado en un búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,19 +42,19 @@ BOOL StrRetToStrN(
 
 <dl> <dt>
 
-*pszOut* \[ enuncia\]
+*pszOut* \[ out\]
 </dt> <dd>
 
 Tipo: **LPTSTR**
 
-Búfer que va a contener el nombre para mostrar. Se devolverá como una cadena terminada en NULL. Si *cchOut* es demasiado pequeño, el nombre se truncará para ajustarse.
+Búfer para contener el nombre para mostrar. Se devolverá como una cadena terminada en NULL. Si *cchOut* es demasiado pequeño, el nombre se truncará para ajustarse.
 
 </dd> <dt>
 
-*cchOut* \[ de\]
+*cchOut* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Tamaño de *pszOut*, en caracteres. Si *cchOut* es demasiado pequeño, la cadena se truncará para ajustarse.
 
@@ -65,37 +65,37 @@ Tamaño de *pszOut*, en caracteres. Si *cchOut* es demasiado pequeño, la cadena
 
 Tipo: **LPSTRRET**
 
-Puntero a una estructura [**Strret**](/windows/desktop/api/Shtypes/ns-shtypes-strret) . Cuando la función devuelve, este puntero ya no será válido.
+Puntero a una [**estructura STRRET.**](/windows/desktop/api/Shtypes/ns-shtypes-strret) Cuando la función vuelva, este puntero ya no será válido.
 
 </dd> <dt>
 
-*PIDL* \[ de\]
+*pidl* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCITEMIDLIST**
 
-Puntero a la estructura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) del elemento.
+Puntero a la estructura [**ITEMIDLIST del**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) elemento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-**True si es** correcto, **false** en caso de error.
+**TRUE** si se ha hecho **correctamente, FALSE** en caso de error.
 
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> A partir de Shell32.dll versión 5,0, llamar a esta función es equivalente a llamar a [**StrRetToBuf**](/windows/desktop/api/Shlwapi/nf-shlwapi-strrettobufa).
+> A partir Shell32.dll versión 5.0, llamar a esta función equivale a llamar a [**StrRetToBuf.**](/windows/desktop/api/Shlwapi/nf-shlwapi-strrettobufa)
 
  
 
-**StrRetToStrN** no se exporta por nombre. Para usarlo, debe utilizar [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) y el ordinal de solicitud 96 de Shell32.dll para obtener un puntero de función.
+**StrRetToStrN** no se exporta por nombre. Para usarlo, debe usar [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 96 a Shell32.dll para obtener un puntero de función.
 
-Si el miembro **uType** de la estructura a la que apunta *pStrRet* se establece en **Strret \_ WSTR**, el miembro **pOleStr** de esa estructura se liberará en la devolución.
+Si el **miembro uType** de la estructura a la que apunta *pStrRet* se establece en **STRRET \_ WSTR**, el miembro **pOleStr** de esa estructura se liberará al devolverse.
 
-Tenga en cuenta que esta función se exporta desde Shell32.dll en lugar de Shlwapi.dll. También se incluye en ShlObj. h en lugar de en shlwapi. h.
+Tenga en cuenta que esta función se exporta Shell32.dll en lugar de Shlwapi.dll. También se incluye en Shlobj.h en lugar de en Shlwapi.h.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,13 +103,13 @@ Tenga en cuenta que esta función se exporta desde Shell32.dll en lugar de Shlwa
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

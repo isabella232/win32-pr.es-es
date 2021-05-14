@@ -1,5 +1,5 @@
 ---
-description: Contiene información que define una nueva lista de elementos usados más recientemente (MRU). Usado por CreateMRUListW.
+description: Contiene información que define una nueva lista usada más recientemente (MRU). Lo usa CreateMRUListW.
 title: Estructura MRUINFO
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 - NA
 api_location: ''
 ms.assetid: 31d5831d-9a19-4bd9-8439-ce844966c414
-ms.openlocfilehash: 91c0b1a2c10f4ac77afa5f8af2380b3d14ced8f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 652168e6a4e61ac754aac3202e0681ec6b7d9e66
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997261"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840766"
 ---
 # <a name="mruinfo-structure"></a>Estructura MRUINFO
 
-Contiene información que define una nueva lista de elementos usados más recientemente (MRU). Usado por [**CreateMRUListW**](createmrulist.md).
+Contiene información que define una nueva lista usada más recientemente (MRU). Utilizado por [**CreateMRUListW.**](createmrulist.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -56,21 +56,21 @@ Tamaño de la estructura.
 
 </dd> <dt>
 
-**Escáner**
+**Umax**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-Número máximo de entradas en la lista MRU.
+Número máximo de entradas de la lista de MRU.
 
 </dd> <dt>
 
 **fFlags**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
@@ -80,12 +80,12 @@ Una o varias de las marcas siguientes.
 
 <span id="MRU_BINARY"></span><span id="mru_binary"></span>
 
-<span id="MRU_BINARY"></span><span id="mru_binary"></span>**MRU \_ BINARIo** (0x0001)
+<span id="MRU_BINARY"></span><span id="mru_binary"></span>**MRU \_ BINARY** (0x0001)
 
 
 </dt> <dd>
 
-Los datos se almacenan en el registro como datos binarios en lugar de datos de cadena.
+Los datos se almacenan en el Registro como datos binarios en lugar de datos de cadena.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Los datos se almacenan en el registro como datos binarios en lugar de datos de c
 
 </dt> <dd>
 
-Escriba los cambios en la versión de MRU almacenada en el registro solo cuando se agregue un nuevo elemento o se liberen los recursos de la lista MRU de la memoria. Tenga en cuenta que la versión activa de las MRU en memoria se actualiza inmediatamente en respuesta a cualquier cambio en el contenido o la ordenación.
+Escriba los cambios en la versión de MRU almacenada en el Registro solo cuando se agrega un nuevo elemento o los recursos de la lista de MRU se liberan de la memoria. Tenga en cuenta que la versión activa de MRU en memoria se actualiza inmediatamente en respuesta a cualquier cambio en el contenido u orden.
 
 </dd> </dl> </dd> <dt>
 
@@ -107,14 +107,14 @@ Tipo: **HKEY**
 
 </dd> <dd>
 
-Identificador de la clave abierta actualmente o uno de los siguientes valores predefinidos en los que se van a almacenar los datos de la MRU.
+Identificador de la clave abierta actualmente o uno de los siguientes valores predefinidos en los que se almacenarán los datos de MRU.
 
 <dl><span id="HKEY_CURRENT_USER"></span><span id="hkey_current_user"></span><dt>
 
-**HKEY \_ Current \_ User**
+**USUARIO ACTUAL DE HKEY \_ \_**
 </dt><span id="HKEY_LOCAL_MACHINE"></span><span id="hkey_local_machine"></span><dt>
 
-**HKEY \_ local \_ Machine**
+**HKEY \_ LOCAL \_ MACHINE**
 </dt> </dl> </dd> <dt>
 
 **lpszSubKey**
@@ -135,13 +135,13 @@ Tipo: **[ **MRUCMPPROC**](mrucmpproc.md)**
 
 </dd> <dd>
 
-Puntero a una función de comparación de datos opcional que se puede usar para determinar si un elemento está presente en la lista MRU. Esto resulta útil cuando la lista MRU se creó con la **marca \_ binaria MRU** . Si este miembro es **null**, se usan las funciones de comparación de cadenas estándar; en el caso de los datos binarios, se usa una comparación de memoria directa.
+Puntero a una función de comparación de datos opcional que se puede usar para determinar si un elemento está presente en la lista de MRU. Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Si este miembro es **NULL, se** usan funciones de comparación de cadenas estándar; Para los datos binarios, se usa una comparación de memoria directa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Esta estructura no está definida en un archivo de encabezado. Debe definirlo por sí mismo.
+Esta estructura no está definida en un archivo de encabezado. Debe definirlo usted mismo.
 
 ## <a name="requirements"></a>Requisitos
 

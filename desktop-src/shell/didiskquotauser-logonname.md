@@ -1,6 +1,6 @@
 ---
 description: Obtiene el nombre de la cuenta de inicio de sesión del usuario.
-title: Propiedad DIDiskQuotaUser. LogonName
+title: Propiedad DIDiskQuotaUser.LogonName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: f423b394-77fc-4eea-9f0c-70befb934e48
-ms.openlocfilehash: c5e15c3415e4eede730ee59a8e24086f44e4487b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44b52b50cd26fafae32455b79ad2ce0e6f9a0cf2
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984278"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841606"
 ---
-# <a name="didiskquotauserlogonname-property"></a>Propiedad DIDiskQuotaUser. LogonName
+# <a name="didiskquotauserlogonname-property"></a>Propiedad DIDiskQuotaUser.LogonName
 
 Obtiene el nombre de la cuenta de inicio de sesión del usuario.
 
@@ -47,15 +47,15 @@ Valor de cadena que se establece en el nombre de inicio de sesión de la cuenta 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DIDiskQuotaUser**](didiskquotauser-object.md)
+[**DIDiskQuotaUser (objeto)**](didiskquotauser-object.md)
 </dt> </dl>
 
  

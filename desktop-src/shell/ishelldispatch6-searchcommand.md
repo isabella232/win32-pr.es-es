@@ -1,6 +1,6 @@
 ---
-description: Muestra el panel de búsqueda de aplicaciones, que normalmente aparece cuando empieza a escribir un término de búsqueda en la pantalla Inicio.
-title: Método IShellDispatch6. SearchCommand (Shldisp. h)
+description: Muestra el panel Búsqueda de aplicaciones, que normalmente aparece al empezar a escribir un término de búsqueda en el pantalla Inicio.
+title: Método IShellDispatch6.SearchCommand (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: B5861125-2B21-4C47-8425-026381B2F677
-ms.openlocfilehash: 9868d21cb5f5a0208f45ddc1c9ff6fb1d051a325
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ca8818960704627376bde8b394eae7deb0317b6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984642"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842986"
 ---
-# <a name="ishelldispatch6searchcommand-method"></a>IShellDispatch6. SearchCommand, método
+# <a name="ishelldispatch6searchcommand-method"></a>IShellDispatch6.SearchCommand (método)
 
-Muestra el panel de búsqueda de aplicaciones, que normalmente aparece cuando empieza a escribir un término de búsqueda en la pantalla Inicio.
+Muestra el panel Búsqueda de aplicaciones, que normalmente aparece al empezar a escribir un término de búsqueda en el pantalla Inicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,10 +61,10 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: 54cf67f1b75ae9d6423b02d0cacdde032ad2e018
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 485eda530adc4955abb27899d67ac0900eb0a910
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083383"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840746"
 ---
 # <a name="shellfolderviewselecteditems-method"></a>Método ShellFolderView.SelectedItems
 
@@ -43,13 +43,13 @@ Tipo: **[ **FolderItems**](folderitems.md)\*\***
 
 Referencia de objeto al [**objeto FolderItems.**](folderitems.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se puede llamar a **SelectedItems** en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método en JScript insertado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método en JScript incrustado en HTML.
 
 
 ```JScript
@@ -101,7 +101,7 @@ En el ejemplo siguiente se muestra el uso adecuado de este método en JScript in
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

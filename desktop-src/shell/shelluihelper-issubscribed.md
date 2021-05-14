@@ -1,6 +1,6 @@
 ---
-description: Indica si se ha suscrito a una dirección URL especificada.
-title: Método ShellUIHelper. IsSubscribed (exdisp. h)
+description: Indica si se ha suscrito una dirección URL especificada.
+title: Método ShellUIHelper.IsSubscribed (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: fcf23352-6603-4b17-9c3b-b353cca1c003
-ms.openlocfilehash: 2085f38e5f91f13a2f67ff4f22b003b533249386
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca68d2e46ce74593b66aac6f995b88ddcb79796b
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082809"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842496"
 ---
-# <a name="shelluihelperissubscribed-method"></a>ShellUIHelper. IsSubscribed, método
+# <a name="shelluihelperissubscribed-method"></a>Método ShellUIHelper.IsSubscribed
 
-Indica si se ha suscrito a una dirección URL especificada.
+Indica si se ha suscrito una dirección URL especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,26 +39,26 @@ bRetVal = ShellUIHelper.IsSubscribed(
 
 <dl> <dt>
 
-*sURL* \[ de\]
+*sURL* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valor de **cadena** que especifica la dirección URL.
+Valor **string** que especifica la dirección URL.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **booleano \** _
+Tipo: **\* booleano**
 
-_ *true** si la dirección URL está suscrita a; en caso contrario, **false**.
+**True** si la dirección URL está suscrita; de lo contrario, **false**.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método para JScript incrustado en HTML y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -114,10 +114,10 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

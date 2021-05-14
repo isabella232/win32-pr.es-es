@@ -1,6 +1,6 @@
 ---
 description: Obtiene el nombre para mostrar del usuario.
-title: Propiedad DIDiskQuotaUser. DisplayName
+title: DiDiskQuotaUser.DisplayName, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 2951c2fb-1682-4ec2-bb48-470a7c2d2b15
-ms.openlocfilehash: 8b0267949ed42fe8ddb07d92e9efd3bff9f57f67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51e708bb406a79e7cfdd29c7a4a23f414e93335d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275234"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843266"
 ---
-# <a name="didiskquotauserdisplayname-property"></a>Propiedad DIDiskQuotaUser. DisplayName
+# <a name="didiskquotauserdisplayname-property"></a>DiDiskQuotaUser.DisplayName, propiedad
 
 Obtiene el nombre para mostrar del usuario.
 
@@ -41,7 +41,7 @@ Valor de cadena que se establece en el nombre para mostrar del usuario.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad contiene el "nombre descriptivo" del usuario. Su valor no es necesariamente definido.
+Esta propiedad contiene el "nombre descriptivo" del usuario. Su valor no se define necesariamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,15 +51,15 @@ Esta propiedad contiene el "nombre descriptivo" del usuario. Su valor no es nece
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DIDiskQuotaUser**](didiskquotauser-object.md)
+[**DIDiskQuotaUser (objeto)**](didiskquotauser-object.md)
 </dt> </dl>
 
  

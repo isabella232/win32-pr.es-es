@@ -1,6 +1,6 @@
 ---
-description: Establece u obtiene un valor que controla cómo se resuelve el identificador de seguridad (SID) del usuario en los nombres de usuario.
-title: Propiedad DiskQuotaControl. UserNameResolution
+description: Establece u obtiene un valor que controla cómo se resuelve el identificador de seguridad de usuario (SID) en nombres de usuario.
+title: Propiedad DiskQuotaControl.UserNameResolution
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: dc936421-e66d-4762-912a-c586f9cdace4
-ms.openlocfilehash: fbe079680191937f022bd45a491fad054e1a9033
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 169f4db6e135392e9548767520f6d2b0bd2d527c
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984414"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841466"
 ---
-# <a name="diskquotacontrolusernameresolution-property"></a>Propiedad DiskQuotaControl. UserNameResolution
+# <a name="diskquotacontrolusernameresolution-property"></a>Propiedad DiskQuotaControl.UserNameResolution
 
-Establece u obtiene un valor que controla cómo se resuelve el identificador de seguridad (SID) del usuario en los nombres de usuario.
+Establece u obtiene un valor que controla cómo se resuelve el identificador de seguridad de usuario (SID) en nombres de usuario.
 
 Esta propiedad es de lectura y escritura.
 
@@ -44,9 +44,9 @@ Esta propiedad se puede establecer en uno de los valores siguientes.
 
 | Tipo de resolución | Value | Descripción                                                                                                                                              |
 |-----------------|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dqResolveNone   | 0     | No resuelva la información del nombre de usuario.                                                                                                                    |
-| dqResolveSync   | 1     | Espere mientras se resuelve la información de nombre.                                                                                                                   |
-| dqResolveAsync  | 2     | No espere a que se resuelva la información de nombre. El evento [**OnUserNameChanged**](diskquotacontrol-onusernamechanged.md) se desencadena cuando se resuelve el nombre. |
+| dqResolveNone   | 0     | No resuelva la información de nombre de usuario.                                                                                                                    |
+| dqResolveSync   | 1     | Espere mientras resuelve la información de nombre.                                                                                                                   |
+| dqResolveAsync  | 2     | No espere mientras resuelve la información de nombre. El [**evento OnUserNameChanged**](diskquotacontrol-onusernamechanged.md) se produce cuando se resuelve el nombre. |
 
 
 
@@ -54,7 +54,7 @@ Esta propiedad se puede establecer en uno de los valores siguientes.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad afecta a la enumeración de los objetos [**DIDiskQuotaUser**](didiskquotauser-object.md) y a los métodos [**adduser**](diskquotacontrol-adduser.md) y [**FindUser**](diskquotacontrol-finduser.md) .
+Esta propiedad afecta a la enumeración de [**objetos DIDiskQuotaUser**](didiskquotauser-object.md) y a los [**métodos AddUser**](diskquotacontrol-adduser.md) [**y FindUser.**](diskquotacontrol-finduser.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,15 +64,15 @@ Esta propiedad afecta a la enumeración de los objetos [**DIDiskQuotaUser**](did
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DiskQuotaControl**](diskquotacontrol-object.md)
+[**DiskQuotaControl (objeto)**](diskquotacontrol-object.md)
 </dt> </dl>
 
  

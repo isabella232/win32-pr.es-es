@@ -1,6 +1,6 @@
 ---
-description: Traduce un nombre de inicio de sesión al ID. de seguridad de usuario correspondiente en formato de cadena.
-title: DiskQuotaControl. TranslateLogonNameToSID, método
+description: Traduce un nombre de inicio de sesión al identificador de seguridad de usuario correspondiente en formato de cadena.
+title: Método DiskQuotaControl.TranslateLogonNameToSID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3b6b0d03-e9ef-4575-bb67-f7b7b39d2a16
-ms.openlocfilehash: ec5e6c0bbd013c8fbd3f6616671ee006109566d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f0a2591b0f5df6bc0f50994fcbf101b7bfbb36d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082961"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841566"
 ---
-# <a name="diskquotacontroltranslatelogonnametosid-method"></a>DiskQuotaControl. TranslateLogonNameToSID, método
+# <a name="diskquotacontroltranslatelogonnametosid-method"></a>Método DiskQuotaControl.TranslateLogonNameToSID
 
-Traduce un nombre de inicio de sesión al ID. de seguridad de usuario correspondiente en formato de cadena.
+Traduce un nombre de inicio de sesión al identificador de seguridad de usuario correspondiente en formato de cadena.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ DiskQuotaControl.TranslateLogonNameToSID(
 *logonname* 
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **Cadena**
 
 Valor de cadena que especifica el nombre de inicio de sesión del usuario.
 
@@ -50,15 +50,15 @@ Valor de cadena que especifica el nombre de inicio de sesión del usuario.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de seguridad (SID) del usuario en formato de cadena que corresponde al nombre de inicio de sesión proporcionado. La cadena devuelta incluye las llaves de inclusión estándar. Por ejemplo:
+Devuelve el identificador de seguridad de usuario (SID) en formato de cadena correspondiente al nombre de inicio de sesión proporcionado. La cadena devuelta incluye las llaves de cierre estándar. Por ejemplo:
 
 "{S-1-5-21-2127521184-1604012920-1887927527-19009}"
 
 ## <a name="remarks"></a>Observaciones
 
-La cadena de SID devuelta se puede pasar al método [**FindUser**](diskquotacontrol-finduser.md) en lugar de un nombre de inicio de sesión.
+La cadena SID devuelta se puede pasar al [**método FindUser**](diskquotacontrol-finduser.md) en lugar de un nombre de inicio de sesión.
 
-Cuando se produce un error en una llamada al método [**FindUser**](diskquotacontrol-finduser.md)( *logonname*), podría deberse a una falta de coincidencia entre el formulario (por ejemplo, el administrador de cuentas de seguridad \[ Sam \] compatible y el nombre principal \[ de usuario UPN \] ) del nombre de inicio de sesión proporcionado y el formulario almacenado en la caché de nombres de SID. En tales casos, el nombre de inicio de sesión se puede convertir en un SID y la llamada a **FindUser** se repite. **FindUser** reconoce una cadena de SID y omitirá la búsqueda de caché de nombres de SID. En el siguiente código de Microsoft Visual Basic Scripting Edition (VBScript) se muestra esta técnica.
+Cuando se produce un error en una llamada al método [**FindUser**](diskquotacontrol-finduser.md)( *logonname*), podría deberse a una discrepancia entre el formulario (por ejemplo, compatible con SAM del Administrador de cuentas de seguridad y el UPN de nombre principal de usuario) del nombre de inicio de sesión proporcionado y el formulario almacenado en la caché \[ de nombres de \] \[ \] SID. En tales casos, el nombre de inicio de sesión se puede convertir en un SID y la llamada a **FindUser se repite.** **FindUser** reconoce una cadena de SID y omitirá la búsqueda de caché de nombres de SID. El siguiente código Visual Basic Scripting Edition Microsoft (VBScript) ilustra esta técnica.
 
 
 ```
@@ -84,17 +84,17 @@ La traducción de nombre a SID puede ser un proceso lento en comparación con la
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DiskQuotaControl**](diskquotacontrol-object.md)
+[**DiskQuotaControl (objeto)**](diskquotacontrol-object.md)
 </dt> </dl>
 
  
