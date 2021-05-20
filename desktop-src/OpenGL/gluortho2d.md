@@ -1,9 +1,9 @@
 ---
-title: función gluOrtho2D (GLU. h)
+title: Función gluOrtho2D (Glu.h)
 description: La función gluOrtho2D define una matriz de proyección ortográfica 2D.
 ms.assetid: ba83fb5c-e5c7-4486-a815-a1aff0469757
 keywords:
-- gluOrtho2D (función) OpenGL
+- Función gluOrtho2D OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a36b321f312a074a5dd78340968f1c9b2b844c6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bf07fea583c5ae46680d888f6bf6c0a9c5aa9a0
+ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421901"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110153558"
 ---
-# <a name="gluortho2d-function"></a>gluOrtho2D función)
+# <a name="gluortho2d-function"></a>Función gluOrtho2D
 
-La función **gluOrtho2D** define una matriz de proyección ortográfica 2D.
+La **función gluOrtho2D** define una matriz de proyección ortográfica 2D.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ void WINAPI gluOrtho2D(
 
 <dl> <dt>
 
-*salido* 
+*Izquierda* 
 </dt> <dd>
 
 Coordenada del plano de recorte vertical izquierdo.
 
 </dd> <dt>
 
-*correcta* 
+*Correcto* 
 </dt> <dd>
 
 Coordenada del plano de recorte vertical derecho.
@@ -64,7 +64,7 @@ Coordenada del plano de recorte horizontal superior.
 
 </dd> <dt>
 
-*descendente* 
+*Parte inferior* 
 </dt> <dd>
 
 Coordenada del plano de recorte horizontal inferior.
@@ -75,25 +75,25 @@ Coordenada del plano de recorte horizontal inferior.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluOrtho2D** configura una región de visualización ortográfica bidimensional. Esto es equivalente a llamar a [**glOrtho**](glortho.md) con Near = 1 y Far = 1.
+La **función gluOrtho2D** configura una región de visualización ortográfica bidimensional. Esto equivale a llamar [**a glOrtho**](glortho.md) con zNear = -1 y zFar = 1.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
