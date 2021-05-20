@@ -6,12 +6,12 @@ keywords:
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: 9e0bc6cf6433f65fa1bc28ec2654492057842b94
-ms.sourcegitcommit: 5a39ee31075cd81ab865c81c39e128b8312da21b
+ms.openlocfilehash: 49681f434fa4eef99e9775b2c3800f48f15915a2
+ms.sourcegitcommit: 8a31a21726d4a8ebfddfa71f02f1bfffea459277
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/20/2021
-ms.locfileid: "110207387"
+ms.locfileid: "110208716"
 ---
 # <a name="dwritecore-overview"></a>Información general de DWriteCore
 
@@ -27,7 +27,7 @@ Sin embargo, debido a la larga duración de DirectWrite, los avances en el desar
 
 DWriteCore resuelve los problemas fundamentales de la característica de versión huérfana y la compatibilidad multiplataforma mediante la eliminación de la biblioteca del sistema y el destino de todos los posibles puntos de conexión admitidos. Con ese fin, hemos integrado DWriteCore en Project Hacer.
 
-El valor principal que DWriteCore le proporciona, como desarrollador, en Project Hacer es que proporciona acceso a muchas (y, finalmente, a todas) características de DirectWrite. Todas las características de DWriteCore funcionarán igual en todas las versiones de nivel inferior sin ninguna disparidad con respecto a qué características pueden funcionar en qué versiones.
+El valor principal que DWriteCore le proporciona, como desarrollador, en Project Hacer es que proporciona acceso a muchas características de DirectWrite (y, finalmente, a todas). Todas las características de DWriteCore funcionarán igual en todas las versiones de nivel inferior sin ninguna disparidad con respecto a qué características pueden funcionar en qué versiones.
 
 ## <a name="the-dwritecore-demo-appmdashdwritecoregallery"></a>La aplicación de demostración DWriteCore &mdash; DWriteCoreGallery
 
@@ -51,7 +51,7 @@ Para obtener más información, consulta [Introducción a WinUI 3 para aplicacio
 
 ### <a name="install-the-microsoftprojectreuniondwrite-nuget-package"></a>Instalación del paquete NuGet Microsoft.ProjectReunion.DWrite
 
-En Visual Studio, haga  clic en Project Manage NuGet Packages... Browse (Administrar proyectos paquetes NuGet... Examinar), escriba o pegue \>  \>  **Microsoft.ProjectReunion.DWrite**  en el cuadro de búsqueda, seleccione el elemento en los resultados de la búsqueda y, a continuación, haga clic en Instalar para instalar el paquete para ese proyecto.
+En Visual Studio, haga  clic en Proyecto Administrar paquetes NuGet... Examinar, escriba o pegue \>  \>  **Microsoft.ProjectReunion.DWrite**  en el cuadro de búsqueda, seleccione el elemento en los resultados de la búsqueda y, a continuación, haga clic en Instalar para instalar el paquete para ese proyecto.
 
 ### <a name="alternatively-begin-with-the-dwritecoregallery-sample-app"></a>Como alternativa, comience con la aplicación de ejemplo DWriteCoreGallery.
 
@@ -79,11 +79,11 @@ La versión de DWriteCore disponible actualmente forma parte de [Project Hacer 0
 - Fuentes de color.
 - Optimizaciones misceláneas (limpieza de la caché de fuentes, cargador de fuentes en memoria, entre otras).
 
-Una característica de banner son las fuentes de color. Las fuentes de color permiten representar las fuentes con una funcionalidad de color más sofisticada más allá de los colores simples. Por ejemplo, las fuentes de color son lo que potencia la capacidad de representar fuentes de icono de emoji y de barra de herramientas (la última de las cuales la usa Office, por ejemplo). Las fuentes de color se introdujeron por primera vez en Windows 8.1, pero la característica se expandió en gran medida en Windows 10, versión 1607 (Actualización de aniversario).
+Una característica de banner son las fuentes de color. Las fuentes de color permiten representar las fuentes con una funcionalidad de color más sofisticada más allá de colores simples. Por ejemplo, las fuentes de color son lo que potencia la capacidad de representar fuentes de icono de emoji y de barra de herramientas (la última de las cuales la usa Office, por ejemplo). Las fuentes de color se introdujeron por primera vez en Windows 8.1, pero la característica se expandió en gran medida en Windows 10, versión 1607 (Actualización de aniversario).
 
 El trabajo de limpieza de la caché de fuentes y del cargador de fuentes en memoria permite una carga más rápida de fuentes y mejoras en la memoria.
 
-Con estas características, puede empezar a aprovechar inmediatamente algunas de las funcionalidades básicas modernas de DirectWrite, &mdash; como las fuentes variables. Las fuentes variables son una de las características más importantes para los clientes de DirectWrite. se introdujeron en Windows 10, versión 1709 (Fall Creators Update), por lo que acceder a ellos en versiones anteriores es una ventaja importante para usted como desarrollador.
+Con estas características, puede empezar a aprovechar inmediatamente algunas de las funcionalidades básicas modernas de DirectWrite, &mdash; como las fuentes variables. Las fuentes variables son una de las características más importantes para los clientes de DirectWrite.
 
 ## <a name="our-invitation-to-you-as-a-directwrite-developer"></a>Nuestra invitación para usted como desarrollador de DirectWrite
 
@@ -106,7 +106,7 @@ El `dwrite_core.h` archivo de encabezado define primero el token *DWRITE_CORE* y
 
 ### <a name="apis-that-are-new-or-different-for-dwritecore"></a>API nuevas o diferentes para DWriteCore
 
-La superficie de la API DWriteCore es prácticamente la misma que para [DirectWrite.](/windows/win32/api/_directwrite/) Pero hay un pequeño número de nuevas API que solo están en DWriteCore en la actualidad.
+La superficie de la API DWriteCore es prácticamente la misma que para [DirectWrite.](/windows/win32/api/_directwrite/) Pero hay un pequeño número de NUEVAS API que solo están en DWriteCore en la actualidad.
 
 #### <a name="create-a-factory-object"></a>Creación de un objeto de generador
 
