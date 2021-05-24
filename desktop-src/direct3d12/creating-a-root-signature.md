@@ -5,35 +5,35 @@ ms.assetid: 565B28C1-DBD1-42B6-87F9-70743E4A2E4A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3705f4e1a0a88841560d67d5904e0f1b5dabd3f8
-ms.sourcegitcommit: a0cb986d5694b69d4a65b7d42a22694d02a6e83a
+ms.openlocfilehash: ed993618e021656dbc9377882e2961f7f0d62263
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108296340"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335649"
 ---
 # <a name="creating-a-root-signature"></a>Creación de una firma raíz
 
-Las firmas raíz son una estructura de datos compleja que contiene estructuras anidadas. Se pueden definir mediante programación mediante la definición de estructura de datos siguiente (que incluye métodos para ayudar a inicializar miembros). Como alternativa, se pueden crear en lenguaje de sombreado de alto nivel (HLSL), lo que ofrece la ventaja de que el compilador validará pronto que el diseño es compatible con el sombreador.
+Las firmas raíz son una estructura de datos compleja que contiene estructuras anidadas. Se pueden definir mediante programación mediante la definición de estructura de datos siguiente (que incluye métodos para ayudar a inicializar miembros). Como alternativa, se pueden crear en lenguaje de sombreado de alto nivel (HLSL), lo que da la ventaja de que el compilador validará pronto que el diseño es compatible con el sombreador.
 
 La API para crear una firma raíz toma una versión serializada (independiente, sin puntero) de la descripción del diseño que se describe a continuación. Se proporciona un método para generar esta versión serializada a partir de la estructura de datos de C++, pero otra manera de obtener una definición de firma raíz serializada es recuperarla de un sombreador compilado con una firma raíz.
 
-Si desea aprovechar las optimizaciones de controladores para los datos y descriptores de firma raíz, consulte [Root Signature Version 1.1 (Versión de firma raíz 1.1).](root-signature-version-1-1.md)
+Si desea aprovechar las optimizaciones de controladores para los datos y descriptores de firma raíz, consulte Root [Signature Version 1.1 (Versión de firma raíz 1.1).](root-signature-version-1-1.md)
 
--   [Tipos de enlace de tabla descriptor](#descriptor-table-bind-types)
--   [Intervalo de descriptor](#descriptor-range)
--   [Diseño de tabla descriptor](#descriptor-table-layout)
+-   [Tipos de enlace de tabla de descriptores](#descriptor-table-bind-types)
+-   [Intervalo de descriptores](#descriptor-range)
+-   [Diseño de tabla de descriptores](#descriptor-table-layout)
 -   [Constantes raíz](#root-constants)
 -   [Descriptor raíz](#root-descriptor)
 -   [Visibilidad del sombreador](#shader-visibility)
 -   [Definición de firma raíz](#root-signature-definition)
 -   [Serialización y deserialización de la estructura de datos de firma raíz](/windows)
--   [API de creación de firmas raíz](#root-signature-creation-api)
+-   [API de creación de firma raíz](#root-signature-creation-api)
 -   [Firma raíz en objetos de estado de canalización](#root-signature-in-pipeline-state-objects)
 -   [Código para definir una firma raíz de la versión 1.1](#code-for-defining-a-version-11-root-signature)
 -   [Temas relacionados](#related-topics)
 
-## <a name="descriptor-table-bind-types"></a>Tipos de enlace de tabla descriptor
+## <a name="descriptor-table-bind-types"></a>Tipos de enlace de tabla de descriptores
 
 La enumeración [**D3D12 \_ DESCRIPTOR \_ RANGE \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) define los tipos de descriptores a los que se puede hacer referencia como parte de una definición de diseño de tabla de descriptores.
 
@@ -53,11 +53,11 @@ typedef enum D3D12_DESCRIPTOR_RANGE_TYPE
 
 La [**estructura D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range) define un intervalo de descriptores de un tipo determinado (como SRV) dentro de una tabla de descriptores.
 
-La `D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND` macro se puede usar normalmente para el parámetro de `OffsetInDescriptorsFromTableStart` [**D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range). Esto significa anexar el intervalo de descriptor que se define después del anterior en la tabla de descriptores. Si la aplicación quiere usar descriptores de alias o, por algún motivo, quiere omitir ranuras, puede establecer en el `OffsetInDescriptorsFromTableStart` desplazamiento deseado. La definición de intervalos superpuestos de distintos tipos no es válida.
+La `D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND` macro se puede usar normalmente para el parámetro de `OffsetInDescriptorsFromTableStart` [**D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range). Esto significa anexar el intervalo de descriptores que se define después del anterior en la tabla de descriptores. Si la aplicación quiere usar descriptores de alias o, por algún motivo, quiere omitir ranuras, puede establecer en `OffsetInDescriptorsFromTableStart` el desplazamiento deseado. La definición de intervalos superpuestos de distintos tipos no es válida.
 
-El conjunto de registros de sombreador especificados por la combinación de , , y no puede tener conflictos ni superponerse entre las declaraciones de una firma raíz que tengan Visibilidad común del sombreador `RangeType` `NumDescriptors` `BaseShaderRegister` `RegisterSpace` [**\_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) (consulte la sección de visibilidad del sombreador siguiente).
+El conjunto de registros de sombreador especificados por la combinación de , , y no puede tener conflictos ni superponerse entre las declaraciones de una firma raíz que tengan Visibilidad común de sombreador `RangeType` `NumDescriptors` `BaseShaderRegister` `RegisterSpace` [**\_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) (consulte la sección de visibilidad del sombreador siguiente).
 
-## <a name="descriptor-table-layout"></a>Diseño de tabla de descriptores
+## <a name="descriptor-table-layout"></a>Diseño de tabla descriptor
 
 La [**estructura D3D12 \_ ROOT DESCRIPTOR \_ \_ TABLE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table) declara el diseño de una tabla de descriptores como una colección de intervalos de descriptores que aparecen uno tras otro en un montón de descriptores. No se permiten muestreadores en la misma tabla de descriptores que CBV/UAV/SRV.
 
@@ -75,13 +75,13 @@ Esta estructura se usa cuando el tipo de ranura de firma raíz se establece en `
 
 ## <a name="root-descriptor"></a>Descriptor raíz
 
-La [**estructura D3D12 \_ ROOT \_ DESCRIPTOR**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) declara descriptores (que aparecen en sombreadores) en línea en la firma raíz.
+La [**estructura D3D12 ROOT DESCRIPTOR declara \_ \_ descriptores**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) (que aparecen en sombreadores) en línea en la firma raíz.
 
-Esta estructura se usa cuando el tipo de ranura de firma raíz se establece en `D3D12_ROOT_PARAMETER_TYPE_CBV` , `D3D12_ROOT_PARAMETER_TYPE_SRV` o `D3D12_ROOT_PARAMETER_TYPE_UAV` .
+Esta estructura se usa cuando el tipo de ranura de firma raíz se establece en `D3D12_ROOT_PARAMETER_TYPE_CBV` o `D3D12_ROOT_PARAMETER_TYPE_SRV` `D3D12_ROOT_PARAMETER_TYPE_UAV` .
 
 ## <a name="shader-visibility"></a>Visibilidad del sombreador
 
-El miembro de la enumeración [**\_ SHADER \_ VISIBILITY de D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) establecida en el parámetro de visibilidad del sombreador [**de D3D12 \_ ROOT \_ PARAMETER**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) determina qué sombreadores ven el contenido de una ranura de firma raíz determinada. El proceso siempre \_ usa ALL (ya que solo hay una fase activa). Los gráficos pueden elegir, pero si usa ALL, todas las fases del \_ sombreador ven lo que está enlazado en la ranura de firma raíz.
+El miembro de la enumeración [**\_ SHADER \_ VISIBILITY de D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) establecida en el parámetro de visibilidad del sombreador [**de ROOT \_ \_ PARAMETER de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) determina qué sombreadores ven el contenido de una ranura de firma raíz determinada. El proceso siempre \_ usa ALL (ya que solo hay una fase activa). Los gráficos pueden elegir, pero si usa ALL, todas las fases del sombreador ven lo \_ que está enlazado en la ranura de firma raíz.
 
 Un uso de la visibilidad del sombreador es ayudar con los sombreadores creados que esperan enlaces diferentes por fase de sombreador mediante un espacio de nombres superpuesto. Por ejemplo, un sombreador de vértices puede declarar:
 
@@ -95,15 +95,15 @@ y el sombreador de píxeles también puede declarar:
 Texture2D bar : register(t0);
 ```
 
-Si la aplicación realiza un enlace de firma raíz a t0 VISIBILITY \_ ALL, ambos sombreadores verán la misma textura. Si el sombreador define realmente quiere que cada sombreador vea texturas diferentes, puede definir 2 ranuras de firma raíz con \_ VISIBILITY VERTEX y \_ PIXEL. Independientemente de la visibilidad que tenga una ranura de firma raíz, siempre tiene el mismo costo (solo en función de lo que sea SlotType) hacia un tamaño de firma raíz máximo fijo.
+Si la aplicación realiza un enlace de firma raíz a t0 VISIBILITY \_ ALL, ambos sombreadores ven la misma textura. Si el sombreador define realmente quiere que cada sombreador vea texturas diferentes, puede definir dos ranuras de firma raíz con VISIBILITY \_ VERTEX y \_ PIXEL. Independientemente de cuál sea la visibilidad en una ranura de firma raíz, siempre tiene el mismo costo (costo solo en función de lo que sea SlotType) hacia un tamaño máximo fijo de firma raíz.
 
-En el hardware D3D11 de gama baja, SHADER VISIBILITY también se tiene en cuenta al validar los tamaños de las tablas descriptores en un diseño raíz, ya que algún hardware D3D11 solo puede admitir una cantidad máxima de enlaces por \_ fase. Estas restricciones solo se imponen cuando se ejecutan en hardware de bajo nivel y no limitan el hardware más moderno en absoluto.
+En el hardware D3D11 de bajo nivel, LA VISIBILIDAD DEL SOMBREADOR también se tiene en cuenta al validar los tamaños de las tablas de descriptores en un diseño raíz, ya que algunos hardware D3D11 solo pueden admitir una cantidad máxima de enlaces por \_ fase. Estas restricciones solo se imponen cuando se ejecutan en hardware de bajo nivel y no limitan el hardware más moderno en absoluto.
 
-Si una firma raíz tiene varias tablas descriptoras definidas que se superponen entre sí en el espacio de nombres (los enlaces de registro al sombreador) y cualquiera de ellas especifica ALL para la visibilidad, el diseño no es válido (se producirá un error en la \_ creación).
+Si una firma raíz tiene varias tablas de descriptor definidas que se superponen entre sí en el espacio de nombres (los enlaces de registro al sombreador) y cualquiera de ellas especifica ALL para la visibilidad, el diseño no es válido (se producirá un error en la \_ creación).
 
 ## <a name="root-signature-definition"></a>Definición de firma raíz
 
-La estructura [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) puede contener tablas de descriptores y constantes insertadas, cada tipo de ranura definido por la estructura ROOT PARAMETER de [**D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) y la enumeración [**D3D12 \_ ROOT PARAMETER \_ \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_parameter_type).
+La estructura [**\_ \_ \_ DESC D3D12 ROOT SIGNATURE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) puede contener tablas descriptores y constantes insertadas, cada tipo de ranura definido por la estructura ROOT PARAMETER de [**D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) y la enumeración [**D3D12 \_ ROOT PARAMETER \_ \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_parameter_type).
 
 Para iniciar una ranura de firma raíz, consulte los métodos **SetComputeRoot \* \* \*** y **\* \* \* SetGraphicsRoot** de [**ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist).
 
@@ -117,19 +117,19 @@ Los métodos descritos en esta sección se exportan mediante D3D12Core.dll y pro
 
 El formulario serializado es lo que se pasa a la API al crear una firma raíz. Si se ha creado un sombreador con una firma raíz en él (cuando se agrega esa funcionalidad), el sombreador compilado ya contendrá una firma raíz serializada en él.
 
-Si una aplicación genera por procedimientos una estructura de datos [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) debe crear el formulario serializado mediante [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature). Salida de que se puede pasar a [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature).
+Si una aplicación genera por procedimientos una estructura de datos [**\_ \_ \_ DESC D3D12 ROOT SIGNATURE,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) debe crear el formulario serializado mediante [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature). Salida de que se puede pasar a [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature).
 
 Si una aplicación ya tiene una firma raíz serializada o tiene un sombreador compilado que contiene una firma raíz y desea detectar mediante programación la definición de diseño (conocida como "reflexión"), se puede llamar a [**D3D12CreateRootSignatureDeserializer.**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) Esto genera una interfaz [**ID3D12RootSignatureDeserializer,**](/windows/desktop/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) que contiene un método para devolver la estructura de datos [**D3D12 \_ ROOT SIGNATURE \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) deserialización. La interfaz posee la duración de la estructura de datos deserialización.
 
-## <a name="root-signature-creation-api"></a>API de creación de firmas raíz
+## <a name="root-signature-creation-api"></a>API de creación de firma raíz
 
 La API [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature) toma una versión serializada de una firma raíz.
 
 ## <a name="root-signature-in-pipeline-state-objects"></a>Firma raíz en objetos de estado de canalización
 
-Los métodos para crear el estado de canalización ([**ID3D12Device::CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate) e [**ID3D12Device::CreateComputePipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcomputepipelinestate) ) toman una interfaz [**OPCIONAL ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) como parámetro de entrada (almacenado en una estructura [**\_ \_ \_ \_ DESC DESC DE ESTADO DE CANALIZACIÓN DE GRÁFICOS D3D12).**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) Esto invalidará cualquier firma raíz que ya se encuentra en los sombreadores.
+Los métodos para crear el estado de canalización ([**ID3D12Device::CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate) e [**ID3D12Device::CreateComputePipelineState)**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcomputepipelinestate) toman una interfaz [**ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) opcional como parámetro de entrada (almacenado en una estructura [**\_ \_ \_ \_ DESC DESC GRAPHICS PIPELINE STATE de D3D12).**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) Esto invalidará cualquier firma raíz que ya se encuentra en los sombreadores.
 
-Si se pasa una firma raíz a uno de los métodos de estado de la canalización de creación, esta firma raíz se valida con todos los sombreadores del PSO por razones de compatibilidad y se le da al controlador que se va a usar con todos los sombreadores. Si alguno de los sombreadores tiene una firma raíz diferente, se reemplaza por la firma raíz que se pasa en la API. Si no se pasa una firma raíz, todos los sombreadores pasados deben tener una firma raíz y deben coincidir; esto se le dará al controlador. Establecer un PSO en una lista o agrupación de comandos no cambia la firma raíz. Esto se logra mediante los [**métodos SetGraphicsRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootsignature) y [**SetComputeRootSignature.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature) En el momento en que se invoca draw(graphics)/dispatch(compute), la aplicación debe asegurarse de que el PSO actual coincide con la firma raíz actual. de lo contrario, el comportamiento es indefinido.
+Si se pasa una firma raíz a uno de los métodos de estado de la canalización de creación, esta firma raíz se valida con todos los sombreadores del PSO por compatibilidad y se le da al controlador que se usará con todos los sombreadores. Si alguno de los sombreadores tiene una firma raíz diferente, se reemplaza por la firma raíz que se pasa en la API. Si no se pasa una firma raíz, todos los sombreadores pasados deben tener una firma raíz y deben coincidir; esto se le dará al controlador. Establecer un PSO en una lista o agrupación de comandos no cambia la firma raíz. Esto se logra mediante los [**métodos SetGraphicsRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootsignature) y [**SetComputeRootSignature.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature) En el momento en que se invoca draw(graphics)/dispatch(compute), la aplicación debe asegurarse de que el PSO actual coincide con la firma raíz actual; de lo contrario, el comportamiento es indefinido.
 
 ## <a name="code-for-defining-a-version-11-root-signature"></a>Código para definir una firma raíz de la versión 1.1
 
@@ -137,9 +137,8 @@ En el ejemplo siguiente se muestra cómo crear una firma raíz con el formato si
 
 
 
-|                        |                                                |                                              |
-|------------------------|------------------------------------------------|----------------------------------------------|
-| **RootParameterIndex** | **Contents**                                   |                                              |
+| RootParameterIndex                       | Contenido                                               | Valores                                             |
+|------------------------|------------------------------------------------|----------------------------------------------|                                              
 | \[0\]                  | Constantes raíz: { b2 }                         | (1 CBV)                                      |
 | \[1\]                  | Tabla de descriptores: { t2-t7, u0-u3 }             | (6 SRV + 4 UAV)                            |
 | \[2\]                  | CBV raíz: { b0 }                               | (1 CBV, datos estáticos)                         |
@@ -152,7 +151,7 @@ En el ejemplo siguiente se muestra cómo crear una firma raíz con el formato si
 
  
 
-Si la mayoría de las partes de la firma raíz se usan la mayoría del tiempo, puede ser mejor que tener que cambiar la firma raíz con demasiada frecuencia. Las aplicaciones deben ordenar las entradas de la firma raíz de cambiar con más frecuencia a menos. Cuando una aplicación cambia los enlaces a cualquier parte de la firma raíz, es posible que el controlador tenga que realizar una copia de parte o de todo el estado de la firma raíz, lo que puede convertirse en un costo notrivial cuando se multiplica entre muchos cambios de estado.
+Si la mayoría de las partes de la firma raíz se usan la mayoría del tiempo, puede ser mejor que tener que cambiar la firma raíz con demasiada frecuencia. Las aplicaciones deben ordenar las entradas de la firma raíz de que cambien con más frecuencia a menos. Cuando una aplicación cambia los enlaces a cualquier parte de la firma raíz, es posible que el controlador tenga que realizar una copia de parte o de todo el estado de la firma raíz, lo que puede convertirse en un costo notrivial cuando se multiplica entre muchos cambios de estado.
 
 Además, la firma raíz definirá un muestreador estático que realiza el filtrado de textura anisotropica en el registro de sombreador s3.
 

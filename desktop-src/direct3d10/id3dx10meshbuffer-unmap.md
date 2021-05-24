@@ -1,7 +1,7 @@
 ---
-description: Desasignar un búfer.
+description: Desamape un búfer.
 ms.assetid: 47f125cd-5c0a-4814-93c5-f2f11ce33ea6
-title: 'ID3DX10MeshBuffer:: desasignar método (D3DX10. h)'
+title: Método ID3DX10MeshBuffer::Unmap (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0c3b382e0cfd01a51d89ddacb51ad390446315a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 11b15f8bc1e4103503b183672ebd31e92b4daea7
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698454"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335379"
 ---
-# <a name="id3dx10meshbufferunmap-method"></a>ID3DX10MeshBuffer:: unwith (método)
+# <a name="id3dx10meshbufferunmap-method"></a>Método ID3DX10MeshBuffer::Unmap
 
-Desasignar un búfer.
+Desamape un búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,15 +42,15 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-|                                                                                                                                               |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferencias entre Direct3D 9 y Direct3D 10:<br/> Desasignar () en Direct3D 10 es análogo al desbloqueo de recursos () en Direct3D 9.<br/> |
+Diferencias entre Direct3D 9 y Direct3D 10:
+
+- Unmap() en Direct3D 10 es análogo al recurso Unlock() en Direct3D 9.
 
 
 
@@ -62,19 +62,19 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10MeshBuffer](id3dx10meshbuffer.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

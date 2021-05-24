@@ -1,78 +1,78 @@
 ---
 title: Formato BC6H
-description: El formato BC6H es un formato de compresión de textura diseñado para admitir los espacios de colores de intervalos dinámicos (HDR) en los datos de origen.
+description: El formato BC6H es un formato de compresión de textura diseñado para admitir espacios de color de alto rango dinámico (HDR) en los datos de origen.
 ms.assetid: D6A1A729-5023-4A94-A8DB-5954D453E136
 keywords:
 - BC6H
 - DXGI_FORMAT_BC6H
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ed4b934df742a4d2c99e20b52b7172b64e598dc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 92ea15e0275bc478c0708ce08f531d8888a3c84d
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078109"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335229"
 ---
 # <a name="bc6h-format"></a>Formato BC6H
 
-El formato BC6H es un formato de compresión de textura diseñado para admitir los espacios de colores de intervalos dinámicos (HDR) en los datos de origen.
+El formato BC6H es un formato de compresión de textura diseñado para admitir espacios de color de alto rango dinámico (HDR) en los datos de origen.
 
--   [Acerca del formato BC6H/DXGI \_ \_ BC6H](/windows)
+-   [Acerca del FORMATO BC6H/DXGI \_ \_ BC6H](/windows)
 -   [Implementación de BC6H](#bc6h-implementation)
--   [Descodificar el formato BC6H](#decoding-the-bc6h-format)
--   [Formato de punto de conexión comprimido BC6H](#bc6h-compressed-endpoint-format)
--   [Extensión de signo para los valores de punto de conexión](#sign-extension-for-endpoint-values)
--   [Transformación de la inversión para los valores de punto de conexión](#transform-inversion-for-endpoint-values)
--   [Descuantificación de los extremos de color](#unquantization-of-color-endpoints)
+-   [Decoding the BC6H Format](#decoding-the-bc6h-format)
+-   [Formato de punto de conexión comprimido bc6H](#bc6h-compressed-endpoint-format)
+-   [Extensión de signo para valores de punto de conexión](#sign-extension-for-endpoint-values)
+-   [Inversión de transformación para valores de punto de conexión](#transform-inversion-for-endpoint-values)
+-   [Descuantización de puntos de conexión de color](#unquantization-of-color-endpoints)
 -   [Temas relacionados](#related-topics)
 
-## <a name="about-bc6hdxgi_format_bc6h"></a>Acerca del formato BC6H/DXGI \_ \_ BC6H
+## <a name="about-bc6hdxgi_format_bc6h"></a>Acerca del FORMATO BC6H/DXGI \_ \_ BC6H
 
-El formato BC6H proporciona compresión de alta calidad para las imágenes que usan tres canales de color HDR, con un valor de 16 bits para cada canal de color del valor (16:16:16). No se admiten canales alfa.
+El formato BC6H proporciona compresión de alta calidad para imágenes que usan tres canales de color HDR, con un valor de 16 bits para cada canal de color del valor (16:16:16). No hay compatibilidad con un canal alfa.
 
-BC6H se especifica mediante los siguientes \_ valores de enumeración de formato de DXGI:
+BC6H se especifica mediante los siguientes valores de enumeración DXGI \_ FORMAT:
 
--   **DXGI \_ DAR formato a \_ BC6H \_ sin tipo**.
--   **DXGI \_ DAR formato a \_ BC6H \_ UF16**. Este formato BC6H no usa un bit de signo en los valores de canal de color de punto flotante de 16 bits.
--   **DXGI \_ DAR formato a \_ BC6H \_ SF16**. Este formato BC6H usa un bit de signo en los valores de canal de color de punto flotante de 16 bits.
+-   **DXGI \_ FORMAT \_ BC6H \_ TYPELESS**.
+-   **DXGI \_ FORMAT \_ BC6H \_ UF16**. Este formato BC6H no usa un bit de signo en los valores del canal de color de punto flotante de 16 bits.
+-   **DXGI \_ FORMAT \_ BC6H \_ SF16**. Este formato BC6H usa un bit de signo en los valores del canal de color de punto flotante de 16 bits.
 
 > [!Note]  
 > El formato de punto flotante de 16 bits para los canales de color a menudo se conoce como formato de punto flotante "medio". Este formato tiene el siguiente diseño de bits:
 >
-> |                       |                                                 |
+> |  Formato                     | Diseño de bits                                                |
 > |-----------------------|-------------------------------------------------|
-> | UF16 (unsigned float) | 5 bits de exponente + 11 bits de mantisa              |
-> | SF16 (valor Float con signo)   | 1 bit de signo + 5 bits de exponente + 10 bits de mantisa |
+> | UF16 (flotante sin signo) | 5 bits de exponente + 11 bits de mantisa              |
+> | SF16 (float con firma)   | 1 bit de signo + 5 bits de exponente + 10 bits de mantisa |
 >
 > 
 >
->  
+>  
 
- 
+ 
 
-El formato BC6H se puede usar para los recursos de textura [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluidas las matrices), Texture3D o TextureCube (incluidas las matrices). Del mismo modo, este formato se aplica a las superficies de mapa MIP asociadas a estos recursos.
+El formato BC6H se puede usar para los recursos de textura [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluidas las matrices), Texture3D o TextureCube (incluidas las matrices). De forma similar, este formato se aplica a las superficies de mapa de MIP asociadas a estos recursos.
 
-BC6H usa un tamaño de bloque fijo de 16 bytes (128 bits) y un tamaño de mosaico fijo de textura 4x4. Al igual que con los formatos BC anteriores, las imágenes de textura mayores que el tamaño de mosaico compatible (4x4) se comprimen mediante varios bloques. Esta identidad de direccionamiento se aplica también a imágenes tridimensionales, mapas MIP, cubemaps y matrices de texturas. Todos los mosaicos de imagen deben tener el mismo formato.
+BC6H usa un tamaño de bloque fijo de 16 bytes (128 bits) y un tamaño de mosaico fijo de 4 x 4 texturas. Al igual que con los formatos BC anteriores, las imágenes de textura mayores que el tamaño de mosaico admitido (4x4) se comprimen mediante el uso de varios bloques. Esta identidad de direccionamiento también se aplica a imágenes tridimensionales, mapas MIP, mapas de cubos y matrices de textura. Todos los iconos de imagen deben tener el mismo formato.
 
 Algunas notas importantes sobre el formato BC6H:
 
--   BC6H admite la desnormalización de punto flotante, pero no admite INF (infinito) y NaN (no un número). La excepción es el modo con signo de BC6H (DXGI \_ format \_ BC6H \_ SF16), que admite-INF (infinito negativo). Tenga en cuenta que esta compatibilidad con-INF es simplemente un artefacto del mismo formato y no es compatible específicamente con los codificadores para este formato. En general, cuando los codificadores encuentran datos de entrada INF (positivos o negativos) o NaN, deben \\ convertir los datos en el valor de representación de no INF máximo permitido y asignar Nan a 0 antes de la compresión.
--   BC6H no es compatible con un canal alfa.
--   El descodificador de BC6H realiza la descompresión antes de realizar el filtrado de textura.
--   La descompresión de BC6H debe ser precisa de bits; es decir, el hardware debe devolver resultados idénticos al descodificador descrito en esta documentación.
+-   BC6H admite la desnormalización de punto flotante, pero no admite INF (infinito) y NaN (no un número). La excepción es el modo firmado de BC6H (DXGI \_ FORMAT \_ BC6H \_ SF16), que admite -INF (infinito negativo). Tenga en cuenta que esta compatibilidad con -INF es simplemente un artefacto del propio formato y no es compatible específicamente con los codificadores para este formato. En general, cuando los codificadores encuentran datos de entrada INF (positivos o negativos) o NaN, deben convertir los datos en el valor de representación no INF máximo permitido y asignar NaN a 0 antes de la \\ compresión.
+-   BC6H no admite un canal alfa.
+-   El descodificador BC6H realiza la descompresión antes de realizar el filtrado de texturas.
+-   La descompresión de BC6H debe ser precisa en bits; Es decir, el hardware debe devolver resultados idénticos al descodificador descrito en esta documentación.
 
 ## <a name="bc6h-implementation"></a>Implementación de BC6H
 
 Un bloque BC6H consta de bits de modo, puntos de conexión comprimidos, índices comprimidos y un índice de partición opcional. Este formato especifica 14 modos diferentes.
 
-Un color de punto de conexión se almacena como un tripledo RGB. BC6H define una paleta de colores en una línea aproximada en varios extremos de color definidos. Además, en función del modo, un icono se puede dividir en dos regiones o tratarse como una sola región, en la que un mosaico de dos regiones tiene un conjunto independiente de extremos de color para cada región. BC6H almacena un índice de paleta por textura.
+Un color de punto de conexión se almacena como un triplete RGB. BC6H define una paleta de colores en una línea aproximada a través de varios puntos de conexión de color definidos. Además, en función del modo, un icono se puede dividir en dos regiones o tratarse como una sola región, donde un icono de dos regiones tiene un conjunto independiente de puntos de conexión de color para cada región. BC6H almacena un índice de paleta por elemento de textura.
 
 En el caso de dos regiones, hay 32 particiones posibles.
 
-## <a name="decoding-the-bc6h-format"></a>Descodificar el formato BC6H
+## <a name="decoding-the-bc6h-format"></a>Decoding the BC6H Format
 
-En el siguiente pseudocódigo se muestran los pasos para descomprimir el píxel en (x, y) dado el bloque BC6H de 16 bytes.
+El pseudocódigo siguiente muestra los pasos para descomprimir el píxel en (x,y) dado el bloque BC6H de 16 bytes.
 
 ``` syntax
 decompress_bc6h(x, y, block)
@@ -100,9 +100,9 @@ decompress_bc6h(x, y, block)
 }
 ```
 
-La tabla siguiente contiene el recuento de bits y los valores para cada uno de los 14 formatos posibles para los bloques BC6H. 
+La tabla siguiente contiene el número de bits y los valores de cada uno de los 14 formatos posibles para los bloques BC6H. 
 
-| Mode | Índices de partición | Partición | Extremos de color                  | Bits de modo      |
+| Mode | Índices de partición | Partición | Puntos de conexión de color                  | Bits de modo      |
 |------|-------------------|-----------|----------------------------------|----------------|
 | 1    | 46 bits           | 5 bits    | 75 bits (10,555, 10,555, 10,555) | 2 bits (00)    |
 | 2    | 46 bits           | 5 bits    | 75 bits (7666, 7666, 7666)       | 2 bits (01)    |
@@ -114,67 +114,67 @@ La tabla siguiente contiene el recuento de bits y los valores para cada uno de l
 | 8    | 46 bits           | 5 bits    | 72 bits (8555, 8666, 8555)       | 5 bits (10110) |
 | 9    | 46 bits           | 5 bits    | 72 bits (8555, 8555, 8666)       | 5 bits (11010) |
 | 10   | 46 bits           | 5 bits    | 72 bits (6666, 6666, 6666)       | 5 bits (11110) |
-| 11   | 63 bits           | 0 bits    | 60 bits (10,10, 10,10, 10,10)    | 5 bits (00011) |
-| 12   | 63 bits           | 0 bits    | 60 bits (11,9, 11,9, 11,9)       | 5 bits (00111) |
-| 13   | 63 bits           | 0 bits    | 60 bits (12,8, 12,8, 12,8)       | 5 bits (01011) |
-| 14   | 63 bits           | 0 bits    | 60 bits (16,4, 16,4, 16,4)       | 5 bits (01111) |
+| 11   | 63 bits           | 0 bits    | 60 bits (10.10, 10.10, 10.10)    | 5 bits (00011) |
+| 12   | 63 bits           | 0 bits    | 60 bits (11.9, 11.9, 11.9)       | 5 bits (00111) |
+| 13   | 63 bits           | 0 bits    | 60 bits (12.8, 12.8, 12.8)       | 5 bits (01011) |
+| 14   | 63 bits           | 0 bits    | 60 bits (16.4, 16.4, 16.4)       | 5 bits (01111) |
 
 
 
- 
+ 
 
-Los bits de modo pueden identificar de forma única cada formato de esta tabla. Los primeros diez modos se usan para los mosaicos de dos regiones y el campo de bits de modo puede tener dos o cinco bits de longitud. Estos bloques también tienen campos para los puntos de conexión de color comprimidos (bits 72 o 75), la partición (5 bits) y los índices de partición (46 bits).
+Los bits de modo pueden identificar de forma única cada formato de esta tabla. Los diez primeros modos se usan para los iconos de dos regiones y el campo de bits de modo puede tener una longitud de dos o cinco bits. Estos bloques también tienen campos para los puntos de conexión de color comprimidos (72 o 75 bits), la partición (5 bits) y los índices de partición (46 bits).
 
-En el caso de los extremos de color comprimido, los valores de la tabla anterior tienen en cuenta la precisión de los puntos de conexión RGB almacenados y el número de bits usados para cada valor de color. Por ejemplo, el modo 3 especifica un nivel de precisión de punto de conexión de color de 11, y el número de bits que se usa para almacenar los valores Delta de los puntos de conexión transformados para los colores rojo, azul y verde (5, 4 y 4, respectivamente). El modo 10 no utiliza la compresión Delta y, en su lugar, almacena explícitamente los cuatro extremos de color.
+Para los puntos de conexión de color comprimidos, los valores de la tabla anterior tienen en cuenta la precisión de los puntos de conexión RGB almacenados y el número de bits usados para cada valor de color. Por ejemplo, el modo 3 especifica un nivel de precisión de punto de conexión de color de 11 y el número de bits usados para almacenar los valores delta de los puntos de conexión transformados para los colores rojo, azul y verde (5, 4 y 4 respectivamente). El modo 10 no usa la compresión diferencial y, en su lugar, almacena los cuatro puntos de conexión de color explícitamente.
 
-Los cuatro últimos modos de bloqueo se usan para los mosaicos de una región, donde el campo de modo es 5 bits. Estos bloques tienen campos para los puntos de conexión (60 bits) y los índices comprimidos (63 bits). El modo 11 (como el modo 10) no utiliza la compresión Delta y, en su lugar, almacena explícitamente ambos extremos de color.
+Los cuatro últimos modos de bloque se usan para los iconos de una región, donde el campo de modo es de 5 bits. Estos bloques tienen campos para los puntos de conexión (60 bits) y los índices comprimidos (63 bits). El modo 11 (como el modo 10) no usa la compresión diferencial y, en su lugar, almacena ambos puntos de conexión de color explícitamente.
 
-Los modos 10011, 10111, 11011 y 11111 (no mostrados) están reservados. No los use en el codificador. Si el hardware pasa bloques con uno de estos modos especificados, el bloque descomprimido resultante debe contener todos los ceros en todos los canales excepto el canal alfa.
+Los modos 10011, 10111, 11011 y 11111 (no se muestran) están reservados. No los use en el codificador. Si se pasan bloques de hardware con uno de estos modos especificados, el bloque descomprimido resultante debe contener todos los ceros en todos los canales, excepto el canal alfa.
 
-En el caso de BC6H, el canal alfa siempre debe devolver 1,0 independientemente del modo.
+Para BC6H, el canal alfa siempre debe devolver 1.0 independientemente del modo.
 
 ### <a name="bc6h-partition-set"></a>Conjunto de particiones BC6H
 
-Hay 32 posibles conjuntos de particiones para un mosaico de dos regiones y que se definen en la tabla siguiente. Cada bloque 4x4 representa una sola forma.
+Hay 32 posibles conjuntos de particiones para un icono de dos regiones y que se definen en la tabla siguiente. Cada bloque 4x4 representa una sola forma.
 
-![tabla de conjuntos de particiones de bc6h](images/bc6h-partition-sets.png)
+![tabla de conjuntos de particiones bc6h](images/bc6h-partition-sets.png)
 
-En esta tabla de conjuntos de particiones, la entrada en negrita y en subrayado es la ubicación del índice de corrección del subconjunto 1 (que se especifica con un bit menos). El índice de corrección del subconjunto 0 siempre es el índice 0, ya que las particiones siempre están organizadas de forma que el índice 0 siempre está en el subconjunto 0. El orden de las particiones va de arriba a izquierda a la derecha, de izquierda a derecha y de arriba abajo.
+En esta tabla de conjuntos de particiones, la entrada en negrita y subrayado es la ubicación del índice de corrección para el subconjunto 1 (que se especifica con un bit menos). El índice de corrección del subconjunto 0 siempre es el índice 0, ya que la creación de particiones siempre se organiza de forma que el índice 0 siempre está en el subconjunto 0. El orden de partición va de arriba a abajo a la derecha, se mueve de izquierda a derecha y, a continuación, de arriba abajo.
 
-## <a name="bc6h-compressed-endpoint-format"></a>Formato de punto de conexión comprimido BC6H
+## <a name="bc6h-compressed-endpoint-format"></a>Formato de punto de conexión comprimido bc6H
 
-![campos de bits para formatos de punto de conexión comprimidos de bc6h](images/bc6h-headers-med.png)
+![campos de bits para formatos de punto de conexión comprimido bc6h](images/bc6h-headers-med.png)
 
-En esta tabla se muestran los campos de bits de los puntos de conexión comprimidos como una función del formato del extremo, donde cada columna especifica una codificación y cada fila especifica un campo de bits. Este enfoque ocupa 82 bits para los mosaicos de dos regiones y 65 bits para los mosaicos de una región. Por ejemplo, los primeros cinco bits para la codificación de una región \[ 16 4 \] anterior (en concreto, la columna situada más a la derecha) son \[ los bits m 4:0 \] , los 10 bits siguientes son bits RW \[ 9:0 \] y así sucesivamente con los 6 últimos bits que contienen BW \[ 10:15 \] .
+En esta tabla se muestran los campos de bits de los puntos de conexión comprimidos como una función del formato de punto de conexión, donde cada columna especifica una codificación y cada fila especifica un campo de bits. Este enfoque toma 82 bits para los iconos de dos regiones y 65 bits para los iconos de una región. Por ejemplo, los primeros 5 bits para la codificación one-region 16 4 anterior (específicamente la columna más a la derecha) son \[ \] bits m 4:0, los 10 bits siguientes son bits rw 9:0, y así sucesivamente con los últimos 6 bits que contienen \[ bw \] \[ \] \[ 10:15 \] .
 
 Los nombres de campo de la tabla anterior se definen de la siguiente manera:
 
 | Campo | Variable          |
 |-------|-------------------|
 | m     | mode              |
-| d     | Índice de la forma       |
-| RW    | endpt \[ 0 \] . Un \[ 0\] |
-| CSO    | endpt \[ 0 \] . B \[ 0\] |
-| r    | endpt \[ 1 \] . Un \[ 0\] |
-| RZ    | endpt \[ 1 \] . B \[ 0\] |
-| GW    | endpt \[ 0 \] . \[1\] |
-| GX    | endpt \[ 0 \] . B \[ 1\] |
-| GY (    | endpt \[ 1 \] . \[1\] |
+| d     | índice de forma       |
+| Rw    | endpt \[ 0 \] . A \[ 0\] |
+| Rx    | endpt \[ 0 \] . B \[ 0\] |
+| Ry    | endpt \[ 1 \] . A \[ 0\] |
+| Rz    | endpt \[ 1 \] . B \[ 0\] |
+| Gw    | endpt \[ 0 \] . A \[ 1\] |
+| Gx    | endpt \[ 0 \] . B \[ 1\] |
+| Gy    | endpt \[ 1 \] . A \[ 1\] |
 | gz    | endpt \[ 1 \] . B \[ 1\] |
-| ancho    | endpt \[ 0 \] . A \[ 2\] |
-| BX    | endpt \[ 0 \] . B \[ 2\] |
+| Bw    | endpt \[ 0 \] . A \[ 2\] |
+| Bx    | endpt \[ 0 \] . B \[ 2\] |
 | by    | endpt \[ 1 \] . A \[ 2\] |
-| BZ    | endpt \[ 1 \] . B \[ 2\] |
+| Bz    | endpt \[ 1 \] . B \[ 2\] |
 
 
 
- 
+ 
 
-Endpt \[ i \] , donde i es 0 o 1, hace referencia al conjunto de extremos 0 o 1, respectivamente.
+Endpt i , donde i es 0 o 1, hace referencia al \[ 0 o 1.º conjunto de puntos de \] conexión, respectivamente.
 
-## <a name="sign-extension-for-endpoint-values"></a>Extensión de signo para los valores de punto de conexión
+## <a name="sign-extension-for-endpoint-values"></a>Extensión de signo para valores de punto de conexión
 
-En el caso de los mosaicos de dos regiones, hay cuatro valores de punto de conexión que se pueden firmar. Endpt \[ 0 \] . Un solo está firmado si el formato es un formato con signo; los otros puntos de conexión solo se firman si se transformó el punto de conexión, o si el formato es un formato con signo. En el código siguiente se muestra el algoritmo para extender el signo de los valores de punto de conexión de dos regiones.
+Para los iconos de dos regiones, hay cuatro valores de punto de conexión que se pueden firmar extendidos. Endpt \[ 0 \] . Un solo se firma si el formato es un formato firmado; Los demás puntos de conexión solo se firman si el punto de conexión se transformó o si el formato es un formato firmado. El código siguiente muestra el algoritmo para extender el signo de valores de punto de conexión de dos regiones.
 
 ``` syntax
 static void sign_extend_two_region(Pattern &p, IntEndpts endpts[NREGIONS_TWO])
@@ -193,7 +193,7 @@ static void sign_extend_two_region(Pattern &p, IntEndpts endpts[NREGIONS_TWO])
 }
 ```
 
-En el caso de los mosaicos de una región, el comportamiento es el mismo, solo con endpt \[ 1 \] quitado.
+En el caso de los iconos de una región, el comportamiento es el mismo, solo con el punto \[ final 1 \] quitado.
 
 ``` syntax
 static void sign_extend_one_region(Pattern &p, IntEndpts endpts[NREGIONS_ONE])
@@ -208,31 +208,31 @@ static void sign_extend_one_region(Pattern &p, IntEndpts endpts[NREGIONS_ONE])
 }
 ```
 
-## <a name="transform-inversion-for-endpoint-values"></a>Transformación de la inversión para los valores de punto de conexión
+## <a name="transform-inversion-for-endpoint-values"></a>Inversión de transformación para valores de punto de conexión
 
-En el caso de los mosaicos de dos regiones, la transformación aplica el inverso de la codificación de diferencia, agregando el valor base en endpt \[ 0 \] . A las otras tres entradas para un total de 9 operaciones de adición. En la imagen siguiente, el valor base se representa como "a0" y tiene la precisión de punto flotante más alta. "A1", "B0" y "B1" son deltas calculados a partir del valor de delimitador y estos valores Delta se representan con una precisión inferior. (A0 corresponde a endpt \[ 0 \] . A, B0 corresponde a endpt \[ 0 \] . B, a1 corresponde a endpt \[ 1 \] . Y B1 corresponde a endpt \[ 1 \] . B).
+En el caso de los iconos de dos regiones, la transformación aplica la codificación inversa de la diferencia, agregando el valor base en el punto \[ final \] 0. a las otras tres entradas para un total de 9 operaciones de adición. En la imagen siguiente, el valor base se representa como "A0" y tiene la mayor precisión de punto flotante. "A1," "B0" y "B1" son deltas calculados a partir del valor delimitador y estos valores delta se representan con una precisión inferior. (A0 corresponde al punto final \[ \] 0. A, B0 corresponde al punto final \[ \] 0. B, A1 corresponde al punto \[ final \] 1. A y B1 corresponden al punto de conexión \[ 1 \] .B).
 
 ![cálculo de valores de punto de conexión de inversión de transformación](images/bc6h-transform-inverse.png)
 
-En el caso de los mosaicos de una región solo hay un desplazamiento Delta y, por lo tanto, solo 3 operaciones de adición.
+En el caso de los iconos de una región, solo hay un desplazamiento diferencial y, por tanto, solo 3 operaciones de adición.
 
-El descompresor debe asegurarse de que los resultados de la transformación inversa no desbordarán la precisión de endpt \[ 0 \] . a. En el caso de un desbordamiento, los valores resultantes de la transformación inversa deben ajustarse en el mismo número de bits. Si la precisión de a0 es "p" bits, el algoritmo de transformación es:
+El descomprimidor debe asegurarse de que los resultados de la transformación inversa no desbordarán la precisión del punto \[ final 0 \] .a. En el caso de un desbordamiento, los valores resultantes de la transformación inversa deben ajustarse dentro del mismo número de bits. Si la precisión de A0 es "p", el algoritmo de transformación es:
 
 `B0 = (B0 + A0) & ((1 << p) - 1)`
 
-En el caso de los formatos con signo, los resultados del cálculo Delta también se deben firmar. Si la operación de extensión de signo considera la ampliación de ambos signos, donde 0 es positivo y 1 es negativo, la extensión de signo de 0 se encarga de la abrazadera anterior. De igual forma, después de la abrazadera anterior, solo es necesario firmar el valor 1 (negativo).
+En el caso de los formatos firmados, los resultados del cálculo diferencial también se deben extender. Si la operación de extensión de signo considera extender ambos signos, donde 0 es positivo y 1 es negativo, la extensión de signo de 0 se encarga de la fijación anterior. De forma equivalente, después de la fijación anterior, solo es necesario firmar un valor de 1 (negativo).
 
-## <a name="unquantization-of-color-endpoints"></a>Descuantificación de los extremos de color
+## <a name="unquantization-of-color-endpoints"></a>Descuantización de puntos de conexión de color
 
-Dados los puntos de conexión sin comprimir, el paso siguiente consiste en realizar una descuantificación inicial de los extremos de color. Esto implica tres pasos:
+Dados los puntos de conexión sin comprimir, el siguiente paso consiste en realizar una eliminación de la marca inicial de los puntos de conexión de color. Esto implica tres pasos:
 
--   Una descuantificación de las paletas de colores
+-   Un descuantización de las paletas de colores
 -   Interpolación de las paletas
--   Finalización de la descuantificación
+-   Fin de la descontización
 
-La separación del proceso de descuantificación en dos partes (descuantificación de la paleta de colores antes de la interpolación y la descuantificación final después de la interpolación) reduce el número de operaciones de multiplicación necesarias cuando se compara con un proceso de descuantificación completo antes de la interpolación de la paleta.
+La separación del proceso de desquantización en dos partes (descuantización de la paleta de colores antes de la interpolación y desenlazamiento final después de la interpolación) reduce el número de operaciones de multiplicación necesarias en comparación con un proceso de descesión completo antes de la interpolación de la paleta.
 
-En el código siguiente se muestra el proceso para recuperar las estimaciones de los valores de color de 16 bits originales y, a continuación, usar los valores de peso proporcionados para agregar 6 valores de color adicionales a la paleta. La misma operación se realiza en cada canal.
+El código siguiente muestra el proceso para recuperar estimaciones de los valores de color originales de 16 bits y, a continuación, usar los valores de peso proporcionados para agregar 6 valores de color adicionales a la paleta. La misma operación se realiza en cada canal.
 
 ``` syntax
 int aWeight3[] = {0, 9, 18, 27, 37, 46, 55, 64};
@@ -256,11 +256,11 @@ void generate_palette_unquantized(UINT8 uNumIndices, int c1, int c2, int prec, U
 }
 ```
 
-En el siguiente ejemplo de código se muestra el proceso de interpolación, con las siguientes observaciones:
+En el ejemplo de código siguiente se muestra el proceso de interpolación, con las siguientes observaciones:
 
--   Puesto que el intervalo completo de valores de color para la función de **descuantificación** (a continuación) está comprendido entre-32768 y 65535, el interpolador se implementa mediante la aritmética con signo de 17 bits.
--   Después de la interpolación, los valores se pasan a la función **Finish \_ uncuantificate** (descrita en el tercer ejemplo de esta sección), que aplica el ajuste de escala final.
--   Todos los descompresores de hardware son necesarios para devolver resultados de bits precisos con estas funciones.
+-   Puesto que el intervalo completo de valores de color para la función **unquantize** (a continuación) va de -32768 a 65535, el interpolador se implementa mediante aritmética con firma de 17 bits.
+-   Después de la interpolación, los valores se pasan a la función **finish \_ unquantize** (descrita en el tercer ejemplo de esta sección), que aplica el escalado final.
+-   Todos los descompresores de hardware son necesarios para devolver resultados con precisión de bits con estas funciones.
 
 ``` syntax
 int unquantize(int comp, int uBitsPerComp)
@@ -306,7 +306,7 @@ int unquantize(int comp, int uBitsPerComp)
 }
 ```
 
-**la \_ descuantificación finalizar** se llama después de la interpolación de la paleta. La función **uncuantificate** pospone el ajuste de escala en 31/32 para signed, 31/64 para sin signo. Este comportamiento es necesario para obtener el valor final en el intervalo medio válido (-0x7BFF ~ 0x7BFF) después de que se complete la interpolación de la paleta con el fin de reducir el número de multiplicaciones necesarias. **finalizar \_ descuantificar** aplica el ajuste de escala final y devuelve un valor **Short sin signo** que se reinterpreta en la **mitad**.
+**Se llama a finish \_ unquantize** después de la interpolación de la paleta. La **función unquantize** pospone el escalado en 31/32 para signed, 31/64 para unsigned. Este comportamiento es necesario para obtener el valor final en un intervalo medio válido (-0x7BFF ~ 0x7BFF) una vez completada la interpolación de la paleta con el fin de reducir el número de multiplicaciones necesarias. **finish \_ unquantize** aplica el escalado final y devuelve **un** valor corto sin signo que se reinterpreta a la **mitad.**
 
 ``` syntax
 unsigned short finish_unquantize(int comp)
@@ -334,9 +334,9 @@ unsigned short finish_unquantize(int comp)
 
 <dl> <dt>
 
-[Compresión de bloque de textura en Direct3D 11](texture-block-compression-in-direct3d-11.md)
+[Compresión de bloques de textura en Direct3D 11](texture-block-compression-in-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
