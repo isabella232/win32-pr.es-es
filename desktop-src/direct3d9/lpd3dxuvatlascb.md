@@ -1,17 +1,17 @@
 ---
 description: Función de devolución de llamada para UVAtlas.
 ms.assetid: a605ae27-10c9-49b4-98fe-8c788c2c0752
-title: LPD3DXUVATLASCB
+title: LPD3D LPVATLASCB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbda7c58ef001a936b01f3af2027f9207c3d2770
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dfe073b5e6a798ccb74421d42502b089d59be11f
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105714731"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342800"
 ---
-# <a name="lpd3dxuvatlascb"></a>LPD3DXUVATLASCB
+# <a name="lpd3dxuvatlascb"></a>LPD3D LPVATLASCB
 
 Función de devolución de llamada para UVAtlas.
 
@@ -29,24 +29,24 @@ typedef HRESULT (*LPD3DXUVATLASCB (
 
 ## <a name="parameters"></a>Parámetros
 
-\[out \] fPercentDone: número de punto flotante entre 0 y 1,0 que representa el porcentaje de cálculos completados (entre 0 y 100 por ciento).
+\[out fPercentDone: número de punto flotante entre 0 y 1,0 que representa el porcentaje de \] cálculos completados (entre 0 y 100 por ciento).
 
-\[en \] lpUserContext: puntero a un valor definido por el usuario que se pasa a la función de devolución de llamada; normalmente se usa en una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
+\[en lpUserContext: puntero a un valor definido por el usuario que se pasa a la función de devolución de llamada; normalmente lo usa una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de \] llamada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función se debe implementar para que se devuelvan \_ los elementos correctos para seguir ejecutando el simulador. Cualquier otro valor detendrá el simulador.
+Esta función debe implementarse para devolver S \_ OK para seguir ejecutando el simulador. Cualquier otro valor detendrá el simulador.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Asegúrese de especificar la Convención de llamada de [**tipos de datos de Windows**](../winprog/windows-data-types.md) al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
+Asegúrese de especificar la convención de llamada tipos de datos de [**Windows**](../winprog/windows-data-types.md) al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
 
 
 
-|                          |             |
+| Requisito                         | Value            |
 |--------------------------|-------------|
-| Encabezado                   | d3dx9mesh. h |
-| Biblioteca de importación           | d3dx9. lib   |
+| Encabezado                   | d3dx9mesh.h |
+| Biblioteca de importación           | d3dx9.lib   |
 | Sistema operativo mínimo | Windows 98  |
 
 

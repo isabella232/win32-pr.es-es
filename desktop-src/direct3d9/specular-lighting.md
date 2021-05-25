@@ -1,31 +1,27 @@
 ---
-description: El modelado de reflexión especular requiere que el sistema no solo sepa en qué dirección se desplaza la luz, sino también la dirección del ojo del espectador.
+description: La reflexión especular de modelado requiere que el sistema no solo sepa en qué dirección viaja la luz, sino también la dirección hacia el ojo del espectador.
 ms.assetid: 35da0ac3-4e68-4d37-a987-405fc15d0cbf
 title: Iluminación especular (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab378d4ca3f00ef81c5048e6ad6cc85eaeb18ad
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2b16d71bd8d814e104cf8a90d1d1fe9b15ba10f3
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104559524"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343680"
 ---
 # <a name="specular-lighting-direct3d-9"></a>Iluminación especular (Direct3D 9)
 
-El modelado de reflexión especular requiere que el sistema no solo sepa en qué dirección se desplaza la luz, sino también la dirección del ojo del espectador. El sistema utiliza una versión simplificada del modelo de reflexión especular de Phong, que emplea un vector a la mitad para aproximar la intensidad de reflexión especular.
+La reflexión especular de modelado requiere que el sistema no solo sepa en qué dirección viaja la luz, sino también la dirección hacia el ojo del espectador. El sistema usa una versión simplificada del modelo de reflexión especular de Phong, que emplea un vector a medio camino para aproximar la intensidad de la reflexión especular.
 
-El estado de iluminación predeterminado no calcula los reflejos especulares. Para habilitar la iluminación especular, asegúrese de establecer D3DRS \_ SPECULARENABLE en **true**.
+El estado de iluminación predeterminado no calcula los resaltados especulares. Para habilitar la iluminación especular, asegúrese de establecer D3DRS \_ SPECULARENABLE en **TRUE.**
 
 ## <a name="specular-lighting-equation"></a>Ecuación de iluminación especular
 
-La iluminación especular se describe mediante la siguiente ecuación.
+La iluminación especular se describe mediante la ecuación siguiente:
 
-
-
-|                                                                             |
-|-----------------------------------------------------------------------------|
-| Iluminación especular = CS \* SUM \[ LS \* (N · H)<sup>P</sup> \* ATTEN \*\] |
+**Iluminación especular = Cs \* sum \[ Ls \* (N · H)<sup>P</sup> \* Atten \* Spot\]**
 
 
 
@@ -37,20 +33,20 @@ En la tabla siguiente se identifican las variables, sus tipos y sus intervalos.
 
 | Parámetro    | Valor predeterminado | Tipo          | Descripción                                                                                                         |
 |--------------|---------------|---------------|---------------------------------------------------------------------------------------------------------------------|
-| Estrategia           | (0, 0, 0, 0)     | D3DCOLORVALUE | Color especular.                                                                                                     |
+| Cs           | (0,0,0,0)     | D3DCOLORVALUE | Color especular.                                                                                                     |
 | Sum          | N/D           | N/D           | Suma del componente especular de cada luz.                                                                       |
-| N            | N/D           | D3DVECTOR     | El vértice es normal.                                                                                                      |
-| H            | N/D           | D3DVECTOR     | Vector medio. Vea la sección sobre el vector a la mitad.                                                             |
-| <sup>P</sup> | 0,0           | FLOAT         | Potencia de reflexión especular. El intervalo es de 0 a + infinito                                                                  |
-| LS           | (0, 0, 0, 0)     | D3DCOLORVALUE | Color especular claro.                                                                                               |
-| Atten        | N/D           | FLOAT         | Valor de atenuación de luz. Vea [atenuación y factor de Spotlight (Direct3D 9)](attenuation-and-spotlight-factor.md). |
-| Zona         | N/D           | FLOAT         | Factor destacado. Vea [atenuación y factor de Spotlight (Direct3D 9)](attenuation-and-spotlight-factor.md).        |
+| No            | N/D           | D3DVECTOR     | Vértice normal.                                                                                                      |
+| H            | N/D           | D3DVECTOR     | Vector a medio camino. Consulte la sección sobre el vector a medio camino.                                                             |
+| <sup>P</sup> | 0,0           | FLOAT         | Potencia de reflexión especular. El intervalo es de 0 a +infinito                                                                  |
+| Ls           | (0,0,0,0)     | D3DCOLORVALUE | Color especular claro.                                                                                               |
+| Atten        | N/D           | FLOAT         | Valor de atenuación de luz. Consulte [Atenuación y factor spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md) |
+| Zona         | N/D           | FLOAT         | Factor spotlight. Consulte [Atenuación y factor spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md)        |
 
 
 
  
 
-El valor de CS es:
+El valor de Cs es:
 
 
 ```
@@ -60,26 +56,22 @@ if(SPECULARMATERIALSOURCE == D3DMCS_COLOR1)
 
 
 
--   vértice color1, si el origen del material especular es D3DMCS \_ color1 y el primer color de vértice se proporciona en la declaración de vértices.
--   Vertex color2, si el origen del material especular es D3DMCS \_ color2 y el segundo color de vértice se proporciona en la declaración de vértices.
+-   vertex color1, si el origen del material especular es D3DMCS COLOR1 y el primer color de vértice se proporciona \_ en la declaración de vértice.
+-   vertex color2, si el origen del material especular es D3DMCS COLOR2 y el segundo color del vértice se proporciona \_ en la declaración de vértice.
 -   color especular de material
 
 > [!Note]  
-> Si se usa la opción de origen de material especular y no se proporciona el color de vértice, se usa el color especular de material.
+> Si se usa cualquiera de las opciones de origen de material especular y no se proporciona el color del vértice, se usa el color especular del material.
 
  
 
-Los componentes especulares están fijados de 0 a 255, después de que todas las luces se procesan y se interpolan por separado.
+Los componentes especulares se fijan para que sean de 0 a 255, una vez que todas las luces se procesan e interpolan por separado.
 
-## <a name="the-halfway-vector"></a>Vector en la mitad
+## <a name="the-halfway-vector"></a>Vector a medio camino
 
-El vector medio (H) existe entre dos vectores: el vector de un vértice de objeto a la fuente de luz y el vector de un vértice de objeto a la posición de la cámara. Direct3D proporciona dos maneras de calcular el vector a la mitad. Cuando D3DRS \_ LOCALVIEWER se establece en **true**, el sistema calcula el vector en la mitad con la posición de la cámara y la posición del vértice, junto con el vector de dirección de la luz. La siguiente fórmula ilustra esto.
+El vector medio (H) existe a medio camino entre dos vectores: el vector de un vértice de objeto a la fuente de luz y el vector de un vértice de objeto a la posición de la cámara. Direct3D proporciona dos maneras de calcular el vector medio. Cuando LOCALVIEWER de D3DRS se establece en TRUE, el sistema calcula el vector a medio camino usando la posición de la cámara y la posición del vértice, junto con el vector de dirección de \_ la luz.  En la fórmula siguiente se muestra esto.
 
-
-
-|                                           |
-|-------------------------------------------|
-| H = norma (Norm (CP-VP) + L<sub>dir</sub>) |
+**H = norm(norm(Cp - Vp) + L <sub>dir</sub>)**
 
 
 
@@ -89,31 +81,27 @@ El vector medio (H) existe entre dos vectores: el vector de un vértice de objet
 
 | Parámetro       | Valor predeterminado | Tipo      | Descripción                                                  |
 |-----------------|---------------|-----------|--------------------------------------------------------------|
-| CP              | N/D           | D3DVECTOR | Posición de la cámara.                                             |
-| Expertos              | N/D           | D3DVECTOR | Posición del vértice.                                             |
-| <sub>Directorio</sub> L | N/D           | D3DVECTOR | Vector de dirección desde la posición del vértice hasta la posición de la luz. |
+| Cp              | N/D           | D3DVECTOR | Posición de la cámara.                                             |
+| Vp              | N/D           | D3DVECTOR | Posición del vértice.                                             |
+| L<sub>dir</sub> | N/D           | D3DVECTOR | Vector de dirección desde la posición del vértice a la posición de la luz. |
 
 
 
  
 
-Determinar el vector a la mitad de esta manera puede consumir un uso intensivo de los cálculos. Como alternativa, el establecimiento de D3DRS \_ LOCALVIEWER = **false** indica al sistema que actúe como si el punto de vista se distan infinitamente en el eje z. Esto se refleja en la siguiente fórmula.
+Determinar el vector medio de esta manera puede ser un proceso intensivo. Como alternativa, al establecer D3DRS LOCALVIEWER = FALSE se indica al sistema que actúe como si el punto de vista se encontrara infinitamente alejado en \_ el eje Z.  Esto se refleja en la fórmula siguiente.
 
-
-
-|                                     |
-|-------------------------------------|
-| H = normal ((0, 0, 1) + L<sub>dir</sub>) |
+**H = norm((0,0,1) + L <sub>dir</sub>)**
 
 
 
  
 
-Este valor es menos computacionalmente intensivo, pero es mucho menos preciso, por lo que es mejor para las aplicaciones que usan la proyección ortogonal.
+Esta configuración consume menos cálculos, pero es mucho menos precisa, por lo que es más usada por las aplicaciones que usan proyección ortogonal.
 
 ## <a name="example"></a>Ejemplo
 
-En este ejemplo, el objeto se colorea utilizando el color de luz especular de la escena y un color especular de material. A continuación se muestra el código.
+En este ejemplo, el objeto se colore con el color claro especular de la escena y un color especular de material. El código se muestra a continuación.
 
 
 ```
@@ -155,19 +143,19 @@ m_pd3dDevice->SetRenderState(D3DRS_SPECULARMATERIALSOURCE, D3DMCS_MATERIAL);
 
 Según la ecuación, el color resultante para los vértices del objeto es una combinación del color del material y el color claro.
 
-En las dos ilustraciones siguientes se muestra el color del material especular, que está atenuado, y el color de luz especular, que es blanco.
+En la siguiente ilustración se muestra el color del material especular, que es gris, y el color claro especular, que es blanco.
 
-![Ilustración de una esfera gris](images/amb1.jpg)![Ilustración de una esfera blanca](images/lightwhite.jpg)
+![ilustración de una esfera gris](images/amb1.jpg)![ilustración de una esfera blanca](images/lightwhite.jpg)
 
-El resaltado especular resultante se muestra en la siguiente ilustración.
+El resaltado especular resultante se muestra en la ilustración siguiente.
 
-![Ilustración del resaltado especular](images/lights.jpg)
+![ilustración del resaltado especular](images/lights.jpg)
 
-La combinación del resaltado especular con el ambiente y la iluminación difusa produce la siguiente ilustración. Con los tres tipos de iluminación aplicados, esto se parece más claramente a un objeto realista.
+La combinación del resaltado especular con la iluminación ambiente y difusa genera la ilustración siguiente. Con los tres tipos de iluminación aplicados, esto se parece más claramente a un objeto realista.
 
-![Ilustración de la combinación del resaltado especular, la iluminación ambiente y la iluminación difusa](images/lightads.jpg)
+![ilustración de la combinación del resaltado especular, la iluminación ambiente y la iluminación difusa](images/lightads.jpg)
 
-La iluminación especular es más intensiva para calcular que la luz difusa. Normalmente se usa para proporcionar pistas visuales sobre el material de la superficie. El resaltado especular varía en tamaño y color con el material de la superficie.
+La iluminación especular es más intensiva para calcular que la iluminación difusa. Normalmente se usa para proporcionar pistas visuales sobre el material de superficie. El resaltado especular varía en tamaño y color con el material de la superficie.
 
 ## <a name="related-topics"></a>Temas relacionados
 

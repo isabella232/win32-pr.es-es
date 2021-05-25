@@ -4,12 +4,12 @@ ms.assetid: 46a611bd-a1ec-4967-b68d-72661d1b5cad
 title: D3DLOCK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adaeddbc1aff0812d3e0f67df90c2cf9b1118347
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 15e4fcf8db9e60a30aee060dcc483b8d01e59b1c
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999432"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343200"
 ---
 # <a name="d3dlock"></a>D3DLOCK
 
@@ -34,7 +34,7 @@ Combinación de cero o más opciones de bloqueo que describen el tipo de bloqueo
 
 
 
-|                          |             |
+|  Requisito                        | Value            |
 |--------------------------|-------------|
 | Encabezado                   | d3d9types.h |
 | Sistema operativo mínimo | Windows 98  |

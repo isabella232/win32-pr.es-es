@@ -4,12 +4,12 @@ ms.assetid: b763b994-6488-40c0-9c14-e00b19e818b0
 title: D3DCURSORCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b5915c133b3f3c3df3b344a2a9b2a72626411d5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e3b0efcbd5626ce4236b08f3ecd008fcb3d4f7d2
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995742"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343220"
 ---
 # <a name="d3dcursorcaps"></a>D3DCURSORCAPS
 
@@ -17,7 +17,7 @@ Marcas de funcionalidad del cursor del controlador.
 
 
 
-| \#Definir              | Value       | Descripción                                                                                     |
+| \#Definir              | Valor       | Descripción                                                                                     |
 |-----------------------|-------------|-------------------------------------------------------------------------------------------------|
 | D3DCURSORCAPS \_ COLOR  | 0x00000001L | El controlador admite el cursor de color de hardware en al menos modos de alta resolución (altura >= 400). |
 | D3DCURSORCAPS \_ LOWRES | 0x00000002L | El controlador admite el cursor de color de hardware en modos de baja resolución (altura < 400).            |
@@ -30,7 +30,7 @@ Marcas de funcionalidad del cursor del controlador.
 
 
 
-|                          |            |
+| Requisito                         | Value           |
 |--------------------------|------------|
 | Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |

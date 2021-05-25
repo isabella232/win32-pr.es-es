@@ -1,28 +1,28 @@
 ---
-description: Se trata de constantes de sombreador y efecto.
+description: Estas son constantes de sombreador y efecto.
 ms.assetid: cfc6ef62-c791-4714-93cb-4df682543c30
 title: Constantes de efecto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aaa3920bb9483526e264b7b16def448d6915feb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c08f0520541c80b64fdfc9837130ed10fcf42517
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152169"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342760"
 ---
 # <a name="effect-constants"></a>Constantes de efecto
 
-Se trata de constantes de sombreador y efecto.
+Estas son constantes de sombreador y efecto.
 
--   [**\_Parámetro D3DX**](d3dx-parameter.md)
+-   [**PARÁMETRO \_ D3DX**](d3dx-parameter.md)
 -   [D3DXFX](d3dxfx.md)
 
-Los efectos usan [identificadores (Direct3D 9)](handles.md) para hacer referencia a técnicas, pasos, anotaciones y parámetros.
+Los efectos [usan identificadores (Direct3D 9)](handles.md) para hacer referencia a técnicas, pases, anotaciones y parámetros.
 
 
 
-|         |        |            |
+| Parámetro        | Efecto       |  Handle          |
 |---------|--------|------------|
 | typedef | LPCSTR | D3DXHANDLE |
 
@@ -34,7 +34,7 @@ Los efectos usan [identificadores (Direct3D 9)](handles.md) para hacer referenci
 
 <dl> <dt>
 
-[Referencia de efectos](dx9-graphics-reference-effects.md)
+[Referencia de efecto](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 36b2b715-5ced-4246-840e-8ea343521ef4
 title: D3DTA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 898e1bb66f74a1087a9da186599469bb195734ce
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9fe6dd62ce7fc7fe4d438290af1ddb33a75813f0
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995292"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343020"
 ---
 # <a name="d3dta"></a>D3DTA
 
@@ -23,7 +23,7 @@ Las constantes de argumento de textura se usan como valores para los siguientes 
 -   D3DTSS \_ COLORARG2
 -   D3DTSS \_ RESULTARG
 
-Establezca y recupere argumentos de textura mediante una llamada a los [**métodos SetTextureStageState**](/windows/desktop/api) [**y GetTextureStageState.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettexturestagestate)
+Establezca y recupere argumentos de textura llamando a los [**métodos SetTextureStageState**](/windows/desktop/api) y [**GetTextureStageState.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettexturestagestate)
 
 Marcas de argumento
 
@@ -33,12 +33,12 @@ Puede combinar una marca de argumento con un modificador , pero no se pueden com
 
 | \#Definir          | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3DTA \_ (CONSTANTE)   | Seleccione una constante de una fase de textura. El valor predeterminado es 0xffffffff.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| D3DTA \_ ACTUAL    | El argumento de textura es el resultado de la fase de mezcla anterior. En la primera fase de textura (fase 0), este argumento es equivalente a D3DTA \_ DIFFUSE. Si la fase de mezcla anterior usa una textura de mapa de protuberancia (la operación D3DTOP BUMPENVMAP), el sistema elige la textura de la fase antes de la textura del mapa de \_ protuberancia. Si s representa la fase de textura actual y s - 1 contiene una textura de mapa de protuberancia, este argumento se convierte en la salida del resultado por fases de textura s - 2. Los permisos son de lectura y escritura. |
-| DIFUSO D3DTA \_    | El argumento de textura es el color difuso interpolado a partir de los componentes de vértice durante el sombreado de Gouraud. Si el vértice no contiene un color difuso, el color predeterminado es 0xffffffff. Los permisos son de solo lectura.                                                                                                                                                                                                                                                                                          |
+| CONSTANTE D3DTA \_   | Seleccione una constante de una fase de textura. El valor predeterminado es 0xffffffff.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| D3DTA \_ ACTUAL    | El argumento de textura es el resultado de la fase de mezcla anterior. En la primera fase de textura (fase 0), este argumento es equivalente a D3DTA \_ DIFUSO. Si la fase de mezcla anterior usa una textura de mapa de protuberancias (la operación D3DTOP BUMPENVMAP), el sistema elige la textura de la fase antes de la textura del mapa \_ de protuberancias. Si s representa la fase de textura actual y s - 1 contiene una textura de mapa de protuberancias, este argumento se convierte en la salida del resultado por fases de textura s - 2. Los permisos son de lectura y escritura. |
+| DIFUSO D3DTA \_    | El argumento de textura es el color difuso interpolado a partir de componentes de vértice durante el sombreado de Gouraud. Si el vértice no contiene un color difuso, el color predeterminado es 0xffffffff. Los permisos son de solo lectura.                                                                                                                                                                                                                                                                                          |
 | D3DTA \_ SELECTMASK | Valor de máscara para todos los argumentos; no se usa al establecer argumentos de textura.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ESPECULAR D3DTA \_   | El argumento de textura es el color especular interpolado a partir de los componentes de vértice durante el sombreado de Gouraud. Si el vértice no contiene un color especular, el color predeterminado es 0xffffffff. Los permisos son de solo lectura.                                                                                                                                                                                                                                                                                        |
-| D3DTA \_ TEMP       | El argumento de textura es un color de registro temporal para lectura o escritura. D3DTA TEMP se admite si la funcionalidad del dispositivo \_ [D3DPMISCCAPS \_ TSSARGTEMP](d3dpmisccaps.md) está presente. El valor predeterminado del registro es (0.0, 0.0, 0.0, 0.0). Los permisos son de lectura y escritura.                                                                                                                                                                                                                                   |
+| D3DTA \_ TEMP       | El argumento de textura es un color de registro temporal para lectura o escritura. Se admite D3DTA TEMP si la funcionalidad del dispositivo \_ [D3DPMISCCAPS \_ TSSARGTEMP](d3dpmisccaps.md) está presente. El valor predeterminado del registro es (0.0, 0.0, 0.0, 0.0). Los permisos son de lectura y escritura.                                                                                                                                                                                                                                   |
 | TEXTURA \_ D3DTA    | El argumento de textura es el color de textura de esta fase de textura. Los permisos son de solo lectura.                                                                                                                                                                                                                                                                                                                                                                                                               |
 | D3DTA \_ TFACTOR    | El argumento de textura es el factor de textura establecido en una llamada anterior a [**SetRenderState**](/windows/desktop/api) con el valor de estado de representación [**\_ TEXTUREFACTOR de D3DRS.**](./d3drenderstatetype.md) Los permisos son de solo lectura.                                                                                                                                                                                                                                                       |
 
@@ -65,7 +65,7 @@ Una marca de argumento se puede combinar con una de las siguientes marcas modifi
 
 
 
-|                          |             |
+|   Requisito                       |  Value           |
 |--------------------------|-------------|
 | Encabezado                   | d3d9types.h |
 | Sistema operativo mínimo | Windows 98  |

@@ -4,12 +4,12 @@ ms.assetid: 85d9f5b2-8e4a-4f92-a587-eae5b293778c
 title: D3DFVF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a12b4f6008023a388bd204440a0b544db85c19
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: a088dda530904c320720371c76601fd4fb254481
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999442"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343270"
 ---
 # <a name="d3dfvf"></a>D3DFVF
 
@@ -25,12 +25,12 @@ Las marcas siguientes describen un formato de vértice. Para obtener informació
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | D3DFVF \_ DIFUSO                     | El formato de vértice incluye un componente de color difuso.                                                                                                                                                                                                                                                                                                                       | DWORD en orden ARGB. Vea [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
 | D3DFVF \_ NORMAL                      | El formato de vértice incluye un vector normal de vértice. Esta marca no se puede usar con la marca D3DFVF \_ XYZRHW.                                                                                                                                                                                                                                                                   | float, float, float                                                                                       |
-| D3DFVF \_ PSIZE                       | Formato de vértice especificado en tamaño de punto. Este tamaño se expresa en unidades de espacio de la cámara para vértices que no se transforman ni se encienden, y en unidades de espacio del dispositivo para vértices transformados y encendidos.                                                                                                                                                                          | FLOAT                                                                                                     |
-| D3DFVF \_ SPECULAR                    | El formato de vértice incluye un componente de color especular.                                                                                                                                                                                                                                                                                                                      | DWORD en orden ARGB. Vea [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
-| D3DFVF \_ XYZ                         | El formato de vértice incluye la posición de un vértice sin formato. Esta marca no se puede usar con la marca D3DFVF \_ XYZRHW.                                                                                                                                                                                                                                                  | float, float, float.                                                                                      |
+| D3DFVF \_ PSIZE                       | Formato de vértice especificado en tamaño de punto. Este tamaño se expresa en unidades de espacio de la cámara para los vértices que no se transforman ni se encienden, y en unidades de espacio del dispositivo para vértices transformados y encendidos.                                                                                                                                                                          | FLOAT                                                                                                     |
+| ESPECULAR D3DFVF \_                    | El formato de vértice incluye un componente de color especular.                                                                                                                                                                                                                                                                                                                      | DWORD en orden ARGB. Vea [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
+| D3DFVF \_ XYZ                         | El formato de vértice incluye la posición de un vértice sin convertir. Esta marca no se puede usar con la marca D3DFVF \_ XYZRHW.                                                                                                                                                                                                                                                  | float, float, float.                                                                                      |
 | D3DFVF \_ XYZRHW                      | El formato de vértice incluye la posición de un vértice transformado. Esta marca no se puede usar con las marcas D3DFVF \_ XYZ o D3DFVF \_ NORMAL.                                                                                                                                                                                                                                     | float, float, float, float.                                                                               |
-| D3DFVF \_ XYZB1 a D3DFVF \_ XYZB5 | El formato de vértice contiene datos de posición y un número correspondiente de valores de ponderación (beta) que se usarán para las operaciones de combinación de vértices multimatrix. Actualmente, Direct3D puede combinarse con hasta tres valores de ponderación y cuatro matrices de mezcla. Para obtener más información sobre el uso de matrices de mezcla, vea [Indexed Vertex Blending (Direct3D 9)](indexed-vertex-blending.md)(Mezcla de vértices indexados [Direct3D 9]). | 1, 2 o 3 flotantes. Cuando se usa D3DFVF \_ LASTBETA UBYTE4, el último peso de mezcla se \_ trata como DWORD. |
-| D3DFVF \_ XYZW                        | El formato de vértice contiene datos transformados y recortados (x, y, z, w). ProcessVertices no invoca el recortador, sino que genera datos en coordenadas de recorte. Esta constante está diseñada para y solo se puede usar con la canalización de vértices programable.                                                                                                                 | float, float, float, float                                                                                |
+| D3DFVF \_ XYZB1 a D3DFVF \_ XYZB5 | El formato de vértice contiene datos de posición y un número correspondiente de valores de ponderación (beta) que se usarán para las operaciones de combinación de vértices multimatrix. Actualmente, Direct3D puede combinarse con hasta tres valores de ponderación y cuatro matrices de mezcla. Para obtener más información sobre el uso de matrices de mezcla, vea [Indexed Vertex Blending (Direct3D 9)](indexed-vertex-blending.md). | 1, 2 o 3 flotantes. Cuando se usa D3DFVF \_ LASTBETA UBYTE4, el último peso de mezcla \_ se trata como DWORD. |
+| D3DFVF \_ XYZW                        | El formato de vértice contiene datos transformados y recortados (x, y, z, w). ProcessVertices no invoca el clipper, sino que genera datos en coordenadas de recorte. Esta constante está diseñada para la canalización programable de vértices y solo se puede usar con esta.                                                                                                                 | float, float, float, float                                                                                |
 
 
 
@@ -45,7 +45,7 @@ Las marcas siguientes describen las marcas de textura usadas por la canalizació
 | \#Definir                          | Descripción                                                                                                                                                                                                                                                                        |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DFVF \_ TEX0 - D3DFVF \_ TEX8       | Número de conjuntos de coordenadas de textura para este vértice. Los valores reales de estas marcas no son secuenciales.                                                                                                                                                                           |
-| D3DFVF \_ TEXCOORDSIZEN(coordIndex) | Defina un conjunto de datos de coordenadas de textura. n indica la dimensión de las coordenadas de textura. coordIndex indica el número de índice de coordenadas de textura. Vea [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) y [Coordenadas de textura y Fases de textura.](texture-coordinates.md) |
+| D3DFVF \_ TEXCOORDSIZEN(coordIndex) | Defina un conjunto de datos de coordenadas de textura. n indica la dimensión de las coordenadas de textura. coordIndex indica el número de índice de coordenadas de textura. Vea [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) y Las coordenadas [de textura y las fases de textura.](texture-coordinates.md) |
 
 
 
@@ -61,7 +61,7 @@ Las marcas siguientes describen las marcas de máscara usadas por la canalizaci�
 |--------------------------------------|-------------------------------------------------------|
 | MÁSCARA DE POSICIÓN D3DFVF \_ \_               | Máscara para los bits de posición.                               |
 | D3DFVF \_ RESERVED0, D3DFVF \_ RESERVED2 | Enmascara los valores de los bits reservados en FVF. No debe usarse. |
-| D3DFVF \_ TEXCOUNT \_ MASK               | Valor de máscara para los bits de marca de textura.                     |
+| D3DFVF \_ TEXCOUNT \_ MASK               | Valor de máscara para los bits de la marca de textura.                     |
 
 
 
@@ -85,11 +85,11 @@ Las marcas siguientes describen una variedad de marcas usadas por la canalizaci�
 </tr>
 <tr class="even">
 <td>D3DFVF_LASTBETA_D3DCOLOR</td>
-<td>El último campo beta en los datos de posición del vértice será de tipo D3DCOLOR. Los datos de los campos beta se usan con el movimiento de la paleta de matrices para especificar índices de matriz.</td>
+<td>El último campo beta de los datos de posición del vértice será del tipo D3DCOLOR. Los datos de los campos beta se usan con el desnasado de la paleta de matrices para especificar índices de matriz.</td>
 </tr>
 <tr class="odd">
 <td>D3DFVF_LASTBETA_UBYTE4</td>
-<td>El último campo beta de los datos de posición del vértice será de tipo UBYTE4. Los datos de los campos beta se usan con el movimiento de la paleta de matrices para especificar índices de matriz. <span data-codelanguage=""></span>
+<td>El último campo beta de los datos de posición del vértice será del tipo UBYTE4. Los datos de los campos beta se usan con el desnasado de la paleta de matrices para especificar índices de matriz. <span data-codelanguage=""></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -118,7 +118,7 @@ struct VERTEXPOSITION
 </tr>
 <tr class="even">
 <td>D3DFVF_TEXCOUNT_SHIFT</td>
-<td>Número de bits por el que se desplaza un valor entero que identifica el número de coordenadas de textura de un vértice. Este valor se puede usar como se muestra a continuación.
+<td>Número de bits por los que se desplaza un valor entero que identifica el número de coordenadas de textura para un vértice. Este valor puede usarse como se muestra a continuación.
 <div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -198,7 +198,7 @@ dwFVF = ( D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 
 
 
-|                          |             |
+| Requisito                         | Value            |
 |--------------------------|-------------|
 | Encabezado                   | d3d9types.h |
 | Sistema operativo mínimo | Windows 98  |
@@ -217,7 +217,7 @@ dwFVF = ( D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 [Códigos FVF de función fija (Direct3D 9)](fixed-function-fvf-codes.md)
 </dt> <dt>
 
-[Combinación de geometría (Direct3D 9)](geometry-blending.md)
+[Mezcla de geometría (Direct3D 9)](geometry-blending.md)
 </dt> </dl>
 
  

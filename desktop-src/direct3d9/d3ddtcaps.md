@@ -4,12 +4,12 @@ ms.assetid: 751d7b92-b187-40e5-882c-6fdb80e1ff5f
 title: D3DDTCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 094ca568554722f4da2606233f4ad2c1e59e892f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 97ded570b8f451ea7e99050467f70f945d202bd4
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999452"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343249"
 ---
 # <a name="d3ddtcaps"></a>D3DDTCAPS
 
@@ -17,7 +17,7 @@ Constantes que describen los tipos de datos de vértice admitidos por un disposi
 
 
 
-| \#Definir              | Value       | Descripción                                                                                                                   |
+| \#Definir              | Valor       | Descripción                                                                                                                   |
 |-----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
 | D3DDTCAPS \_ UBYTE4     | 0x00000001L | Byte 4D sin signo.                                                                                                             |
 | D3DDTCAPS \_ UBYTE4N    | 0x00000002L | Byte 4D sin signo normalizado. Cada uno de los cuatro bytes se normaliza dividiendo a 255,0.                                      |
@@ -40,7 +40,7 @@ El miembro DeclTypes de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps
 
 
 
-|                          |            |
+|  Requisito                        | Value           |
 |--------------------------|------------|
 | Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |

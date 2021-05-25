@@ -4,12 +4,12 @@ ms.assetid: 1347c3d6-67f6-4cea-9a93-9fc754755b47
 title: D3DVERTEXTEXTURESAMPLER
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b94ef68fd6228b615073c03fc578fc69591711f5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: c0f9526f38bac0f1f1af94b8714aa9b3c685a64c
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995092"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342970"
 ---
 # <a name="d3dvertextexturesampler"></a>D3DVERTEXTEXTURESAMPLER
 
@@ -48,7 +48,7 @@ Se trata de una constante interna utilizada por el muestreador de textura en el 
 
 
 
-|                          |             |
+| Requisito                         | Value            |
 |--------------------------|-------------|
 | Encabezado                   | d3d9types.h |
 | Sistema operativo mínimo | Windows 98  |

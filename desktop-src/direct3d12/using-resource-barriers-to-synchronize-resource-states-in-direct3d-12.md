@@ -1,58 +1,58 @@
 ---
-title: Usar barreras de recursos para sincronizar los Estados de los recursos en Direct3D 12
-description: Para reducir el uso general de la CPU y habilitar el procesamiento previo y multithreading del controlador, Direct3D 12 mueve la responsabilidad de la administración de Estados por recurso del controlador de gráficos a la aplicación.
+title: Uso de barreras de recursos para sincronizar los estados de los recursos en Direct3D 12
+description: Para reducir el uso general de LA CPU y habilitar el procesamiento previo y multiproceso de controladores, Direct3D 12 traslada la responsabilidad de la administración del estado por recurso del controlador de gráficos a la aplicación.
 ms.assetid: 3AB3BF34-433C-400B-921A-55B23CCDA44F
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c766f18e85ab8acc2ed0afad8e680d566a723a68
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: df27e7997b4f3f56ae8e87688e5cc136dc7eb87d
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104549173"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343480"
 ---
-# <a name="using-resource-barriers-to-synchronize-resource-states-in-direct3d-12"></a>Usar barreras de recursos para sincronizar los Estados de los recursos en Direct3D 12
+# <a name="using-resource-barriers-to-synchronize-resource-states-in-direct3d-12"></a>Uso de barreras de recursos para sincronizar los estados de los recursos en Direct3D 12
 
-Para reducir el uso general de la CPU y habilitar el procesamiento previo y multithreading del controlador, Direct3D 12 mueve la responsabilidad de la administración de Estados por recurso del controlador de gráficos a la aplicación. Un ejemplo de estado por recurso es si se está accediendo actualmente a un recurso de textura a través de un sombreador Vista de recursos o como una vista de destino de representación. En Direct3D 11, los controladores eran necesarios para realizar el seguimiento de este estado en segundo plano. Esto resulta caro desde la perspectiva de la CPU y complica significativamente cualquier tipo de diseño multiproceso. En Microsoft Direct3D 12, la mayoría de los Estados por recurso se administra mediante la aplicación con una sola API, [**ID3D12GraphicsCommandList:: ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier).
+Para reducir el uso general de LA CPU y habilitar el procesamiento previo y multiproceso de controladores, Direct3D 12 traslada la responsabilidad de la administración del estado por recurso del controlador de gráficos a la aplicación. Un ejemplo de estado por recurso es si actualmente se tiene acceso a un recurso de textura como a través de un objeto Shader Vista de recursos o como una vista de destino de representación. En Direct3D 11, los controladores eran necesarios para realizar un seguimiento de este estado en segundo plano. Esto es costoso desde la perspectiva de la CPU y complica significativamente cualquier tipo de diseño multiproceso. En Microsoft Direct3D 12, la mayoría del estado por recurso se administra mediante la aplicación con una sola API, [**ID3D12GraphicsCommandList::ResourceBartero**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier).
 
--   [Uso de la API de ResourceBarrier para administrar el estado de cada recurso](#using-the-resourcebarrier-api-to-manage-per-resource-state)
-    -   [Estados de los recursos](#using-resource-barriers-to-synchronize-resource-states-in-direct3d-12)
+-   [Uso de ResourceBar php API para administrar el estado por recurso](#using-the-resourcebarrier-api-to-manage-per-resource-state)
+    -   [Estados de recursos](#using-resource-barriers-to-synchronize-resource-states-in-direct3d-12)
     -   [Estados iniciales de los recursos](#initial-states-for-resources)
-    -   [Restricciones de estado de recursos de lectura/escritura](#readwrite-resource-state-restrictions)
-    -   [Estados de los recursos para la presentación de búferes de reserva](#resource-states-for-presenting-back-buffers)
-    -   [Descartar recursos](#discarding-resources)
--   [Transiciones de estado IMPLÍCITAS](#implicit-state-transitions)
-    -   [Promoción de Estado común](#common-state-promotion)
-    -   [Caída del estado a común](#state-decay-to-common)
+    -   [Restricciones de estado de recursos de lectura y escritura](#readwrite-resource-state-restrictions)
+    -   [Estados de recursos para presentar búferes de reserva](#resource-states-for-presenting-back-buffers)
+    -   [Descarte de recursos](#discarding-resources)
+-   [Transiciones de estado implícitas](#implicit-state-transitions)
+    -   [Promoción de estado común](#common-state-promotion)
+    -   [Decadencia del estado a común](#state-decay-to-common)
     -   [Implicaciones de rendimiento](#performance-implications)
 -   [Barreras divididas](#split-barriers)
 -   [Escenario de ejemplo de barrera de recursos](#resource-barrier-example-scenario)
--   [Ejemplo de promoción de Estado común y decadencia](#common-state-promotion-and-decay-sample)
+-   [Ejemplo común de promoción de estado y decadencia](#common-state-promotion-and-decay-sample)
 -   [Ejemplo de barreras divididas](#example-of-split-barriers)
 -   [Temas relacionados](#related-topics)
 
-## <a name="using-the-resourcebarrier-api-to-manage-per-resource-state"></a>Uso de la API de ResourceBarrier para administrar el estado de cada recurso
+## <a name="using-the-resourcebarrier-api-to-manage-per-resource-state"></a>Uso de ResourceBar php API para administrar el estado por recurso
 
-[**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) notifica al controlador de gráficos las situaciones en las que el controlador puede necesitar sincronizar varios accesos a la memoria en la que se almacena un recurso. Se llama al método con una o más estructuras de descripción de barrera de recursos que indican el tipo de barrera de recursos que se declara.
+[**ResourceBar odbc notifica**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) al controlador de gráficos las situaciones en las que el controlador puede necesitar sincronizar varios accesos a la memoria en la que se almacena un recurso. Se llama al método con una o varias estructuras de descripción de barrera de recursos que indican el tipo de barrera de recursos que se declara.
 
-Existen tres tipos de barreras de recursos:
+Hay tres tipos de barreras de recursos:
 
--   **Barrera de transición** : una barrera de transición indica que un conjunto de Subrecursos realiza una transición entre distintos usos. Una estructura de [**barrera de \_ transición de recursos \_ \_ D3D12**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_transition_barrier) se usa para especificar el subrecurso que está cambiando, así como los Estados *antes* y *después* del subrecurso.
+-   **Barrera de transición:** una barrera de transición indica que un conjunto de subrecursos pasa entre distintos usos. Se [**usa una estructura D3D12 \_ RESOURCE TRANSITION \_ \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_transition_barrier) para especificar el subrecurso que está en transición, así como los estados *antes* y después del subrecurso. 
 
-    El sistema comprueba que las transiciones de subrecurso en una lista de comandos son coherentes con las transiciones anteriores en la misma lista de comandos. El nivel de depuración realiza un seguimiento adicional del estado de los Subrecursos para buscar otros errores, pero esta validación es conservadora y no es exhaustiva.
+    El sistema comprueba que las transiciones de subrecursos de una lista de comandos son coherentes con las transiciones anteriores de la misma lista de comandos. La capa de depuración realiza un seguimiento adicional del estado del subrecurso para encontrar otros errores, pero esta validación es conservadora y no exhaustiva.
 
-    Tenga en cuenta que puede usar la \_ marca de la barrera de recursos D3D12 \_ \_ todos los \_ Subrecursos para especificar que se están realizando las transiciones de todos los Subrecursos de un recurso.
+    Tenga en cuenta que puede usar la marca D3D12 RESOURCE BARRIER ALL SUBRESOURCES para especificar que todos los subrecursos de un recurso se están \_ \_ \_ \_ transimendo.
 
--   **Barrera de alias** : una barrera de alias indica una transición entre los usos de dos recursos diferentes que tienen asignaciones que se superponen en el mismo montón. Esto se aplica a los recursos reservados y colocados. Se utiliza una estructura de [**barrera de \_ alias de recursos \_ \_ D3D12**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier) para especificar el recurso *Before* y el recurso *After* .
+-   **Barrera de alias:** una barrera de alias indica una transición entre los usos de dos recursos diferentes que tienen asignaciones superpuestas en el mismo montón. Esto se aplica a los recursos reservados y colocados. Se [**usa una estructura D3D12 RESOURCE \_ \_ ALIASING \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier) para especificar tanto el recurso *anterior* como *el recurso* after.
 
-    Tenga en cuenta que uno o ambos recursos pueden ser NULL, lo que indica que cualquier recurso en mosaico podría provocar el alias. Para obtener más información sobre el uso de recursos en mosaico [, vea recursos en mosaico y](../direct3d11/tiled-resources.md) recursos en mosaico de [volumen](volume-tiled-resources.md).
+    Tenga en cuenta que uno o ambos recursos pueden ser NULL, lo que indica que cualquier recurso en mosaico podría provocar alias. Para obtener más información sobre el uso de recursos en mosaico, vea [Recursos en mosaico y](../direct3d11/tiled-resources.md) Recursos en mosaico por [volumen.](volume-tiled-resources.md)
 
--   **Barrera de vista de acceso desordenado (UAV)** : una barrera UAV indica que todos los accesos de UAV, tanto de lectura como de escritura, a un recurso determinado deben completarse entre cualquier acceso de UAV futuro, tanto de lectura como de escritura. No es necesario que una aplicación ponga una barrera UAV entre dos llamadas a Draw o Dispatch que solo se leen de un UAV. Además, no es necesario poner una barrera UAV entre dos llamadas a Draw o Dispatch que escriben en el mismo UAV si la aplicación sabe que es seguro ejecutar el acceso UAV en cualquier orden. Se utiliza una estructura de [**\_ barrera de \_ UAV \_ de recursos D3D12**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_uav_barrier) para especificar el recurso UAV al que se aplica la barrera. La aplicación puede especificar NULL para el UAV de la barrera, lo que indica que cualquier acceso a UAV podría requerir la barrera.
+-   Barrera de la vista de acceso desordenado **(UAV):** una barrera UAV indica que todos los accesos UAV, tanto de lectura como de escritura, a un recurso determinado deben completarse entre cualquier acceso UAV futuro, tanto de lectura como de escritura. No es necesario que una aplicación coloque una barrera UAV entre dos llamadas a draw o dispatch que solo se leen desde un UAV. Además, no es necesario colocar una barrera UAV entre dos llamadas a draw o dispatch que escriben en el mismo UAV si la aplicación sabe que es seguro ejecutar el acceso UAV en cualquier orden. Se [**usa una estructura D3D12 RESOURCE \_ \_ UAV \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_uav_barrier) para especificar el recurso UAV al que se aplica la barrera. La aplicación puede especificar NULL para el UAV de la barrera, lo que indica que cualquier acceso UAV podría requerir la barrera.
 
-Cuando se llama a [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) con una matriz de descripciones de barrera de recursos, la API se comporta como si se hubiese llamado una vez para cada elemento, en el orden en el que se proporcionaron.
+Cuando se llama a [**ResourceBartero**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) con una matriz de descripciones de barrera de recursos, la API se comporta como si se llamara una vez para cada elemento, en el orden en que se proporcionaron.
 
-En un momento dado, un subrecurso está en exactamente un estado, determinado por el conjunto de marcas de [**\_ \_ Estados de recursos de D3D12**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) proporcionadas a [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier). La aplicación debe asegurarse de que los Estados *antes* y *después* de las llamadas consecutivas a **ResourceBarrier** coinciden.
+En un momento dado, un subrecurso está exactamente en un estado, determinado por el conjunto de marcas [**\_ RESOURCE \_ STATES de D3D12**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) proporcionadas a [**ResourceBarander**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier). La aplicación debe asegurarse de que los *estados antes* y *después* de las llamadas consecutivas a **ResourceBarlda están de acuerdo.**
 
 > [!TIP]
 >
@@ -60,125 +60,124 @@ En un momento dado, un subrecurso está en exactamente un estado, determinado po
 
  
 
-### <a name="resource-states"></a>Estados de los recursos
+### <a name="resource-states"></a>Estados de recursos
 
-Para obtener una lista completa de los Estados de los recursos entre los que un recurso puede realizar una transición, vea el tema de referencia de la enumeración de [**\_ \_ Estados de recursos de D3D12**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) .
+Para obtener la lista completa de estados de recursos entre los que un recurso puede realizar la transición, consulte el tema de referencia de la [**enumeración \_ RESOURCE STATES \_ de D3D12.**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states)
 
-En el caso de las barreras de recursos divididos, consulte también las [**marcas de barrera de recursos de D3D12 \_ \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_barrier_flags).
+Para las barreras de recursos divididos, consulte también [**D3D12 \_ RESOURCE \_ BARRIER \_ FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_barrier_flags).
 
 ### <a name="initial-states-for-resources"></a>Estados iniciales de los recursos
 
 Los recursos se pueden crear con cualquier estado inicial especificado por el usuario (válido para la descripción del recurso), con las siguientes excepciones:
 
--   Los montones de carga deben comenzar en el estado de recurso de D3D12 de \_ \_ \_ \_ lectura Generic Read que es una combinación OR bit a bit de:
-    -   D3D12 \_ \_ de estado \_ \_ de recurso \_ y \_ búfer de constantes
-    -   \_Búfer de \_ Índice de estado de recurso de D3D12 \_ \_
-    -   \_Origen de \_ copia de estado de recurso de D3D12 \_ \_
-    -   \_Recurso de \_ \_ \_ \_ sombreador de estado de recursos sin píxeles de \_ D3D12
-    -   \_Recurso de \_ \_ \_ sombreador de píxeles de estado \_ de recursos de D3D12
-    -   D3D12 \_ \_ \_ argumento indirecto de estado de recurso \_
--   Los montones de Readback deben comenzar en el estado de destino de la copia de estado de recursos de D3D12 \_ \_ \_ \_ .
--   Los búferes de intercambio de cadena se inician automáticamente en el \_ \_ Estado común de los recursos de D3D12 \_ .
+-   Los montones de carga deben comenzar en el estado D3D12 RESOURCE STATE GENERIC READ, que es \_ una combinación or bit a bit \_ \_ \_ de:
+    -   VÉRTICE DE ESTADO DE RECURSO D3D12 \_ \_ Y BÚFER \_ \_ \_ \_ CONSTANTE
+    -   BÚFER DE ÍNDICE DE ESTADO DE RECURSO D3D12 \_ \_ \_ \_
+    -   ORIGEN DE COPIA DEL ESTADO DEL RECURSO D3D12 \_ \_ \_ \_
+    -   RECURSO DE SOMBREADOR \_ DE PÍXELES DE ESTADO \_ DE RECURSO \_ \_ \_ \_ D3D12
+    -   RECURSO SOMBREADOR DE \_ PÍXELES DE ESTADO DE RECURSO D3D12 \_ \_ \_ \_
+    -   ARGUMENTO INDIRECTO DE ESTADO DE RECURSO D3D12 \_ \_ \_ \_
+-   Los montones de readback deben iniciarse en el estado D3D12 \_ RESOURCE \_ STATE COPY \_ \_ DEST.
+-   Los búferes de reserva de cadena de intercambio se inician automáticamente en el estado RESOURCE STATE COMMON de D3D12. \_ \_ \_
 
-Antes de que un montón pueda ser el destino de una operación de copia de GPU, normalmente primero se debe pasar el montón al \_ Estado de destino de copia de estado de recurso D3D12 \_ \_ \_ . Sin embargo, los recursos creados en montones de carga deben comenzar en y no pueden cambiar desde el \_ Estado de lectura genérico, ya que solo la CPU va a escribir. Por el contrario, los recursos confirmados creados en montones de READBACK deben comenzar en y no pueden cambiar desde el estado de destino de la copia \_ .
+Para que un montón pueda ser el destino de una operación de copia de GPU, normalmente el montón debe pasar primero al estado D3D12 \_ RESOURCE \_ STATE COPY \_ \_ DEST. Sin embargo, los recursos creados en los montones DE CARGA deben iniciarse en y no pueden cambiar desde el estado DE LECTURA GENÉRICA, ya que solo la CPU realizará \_ la escritura. Por el contrario, los recursos confirmados creados en montones READBACK deben iniciarse en y no pueden cambiar desde el estado COPY \_ DEST.
 
-### <a name="readwrite-resource-state-restrictions"></a>Restricciones de estado de recursos de lectura/escritura
+### <a name="readwrite-resource-state-restrictions"></a>Restricciones de estado de recursos de lectura y escritura
 
-Los bits de uso de estado de recursos que se usan para describir un estado de recurso se dividen en Estados de solo lectura y de lectura y escritura. El tema de referencia para [**los \_ \_ Estados**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) de los recursos de D3D12 indica el nivel de acceso de lectura y escritura para cada bit de la enumeración.
+Los bits de uso del estado de recurso que se usan para describir un estado de recurso se dividen en estados de solo lectura y de lectura y escritura. El tema de referencia para [**D3D12 \_ RESOURCE \_ STATES**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) indica el nivel de acceso de lectura y escritura para cada bit de la enumeración.
 
 Como máximo, solo se puede establecer un bit de lectura/escritura para cualquier recurso. Si se establece un bit de escritura, no se puede establecer ningún bit de solo lectura para ese recurso. Si no se establece ningún bit de escritura, se puede establecer cualquier número de bits de lectura.
 
-### <a name="resource-states-for-presenting-back-buffers"></a>Estados de los recursos para la presentación de búferes de reserva
+### <a name="resource-states-for-presenting-back-buffers"></a>Estados de recursos para presentar búferes de reserva
 
-Antes de que se presente un búfer de reserva, debe estar en \_ el \_ Estado común de los recursos de D3D12 \_ . Tenga en cuenta que el estado del recurso D3D12 de estado del recurso \_ \_ \_ es un sinónimo del \_ Estado del recurso D3D12 \_ \_ común y ambos tienen un valor de 0. Si se llama a [**IDXGISwapChain::P reenviar**](/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present) (o [**IDXGISwapChain1::P resent1**](/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1)) en un recurso que actualmente no está en este estado, se emite una advertencia de nivel de depuración.
+Antes de que se presente un búfer de reserva, debe estar en el estado D3D12 \_ RESOURCE \_ STATE \_ COMMON. Tenga en cuenta que el estado del recurso D3D12 RESOURCE STATE PRESENT es un sinónimo de \_ \_ \_ D3D12 RESOURCE STATE COMMON y ambos tienen un \_ \_ valor de \_ 0. Si se llama a [**IDXGISwapChain::P resent**](/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present) (o [**IDXGISwapChain1::P resent1)**](/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1)en un recurso que no está actualmente en este estado, se emite una advertencia de capa de depuración.
 
 ### <a name="discarding-resources"></a>Descartar recursos
 
-Todos los Subrecursos de un recurso deben estar en el \_ Estado de destino de representación, o \_ Estado de escritura de profundidad, para los destinos de representación y los recursos de la galería de símbolos de profundidad, cuando se llama a [**ID3D12GraphicsCommandList::D iscardresource**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-discardresource) .
+Todos los subrecursos de un recurso deben estar en el estado RENDER TARGET o DEPTH WRITE para los destinos de representación y los recursos de galería de símbolos de profundidad, respectivamente, cuando se llama a \_ \_ [**ID3D12GraphicsCommandList::D iscardResource.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-discardresource)
 
-## <a name="implicit-state-transitions"></a>Transiciones de estado IMPLÍCITAS
+## <a name="implicit-state-transitions"></a>Transiciones de estado implícitas
 
-Los recursos solo se pueden "promover" fuera del estado de los recursos de D3D12 \_ \_ \_ común. Del mismo modo, los recursos solo determinarán el estado de los recursos de D3D12 \_ \_ \_ común.
+Los recursos solo se pueden "promover" fuera de D3D12 \_ RESOURCE \_ STATE \_ COMMON. Del mismo modo, los recursos solo se "degradarán" a D3D12 \_ RESOURCE \_ STATE \_ COMMON.
 
-### <a name="common-state-promotion"></a>Promoción de Estado común
+### <a name="common-state-promotion"></a>Promoción de estado común
 
-Todos los recursos de búfer y las texturas con la \_ marca de recurso D3D12 \_ \_ permiten que el \_ \_ conjunto de marcadores de acceso simultáneos se promuevan implícitamente del \_ Estado de los recursos de D3D12 \_ \_ común al estado relevante en el primer acceso de la GPU, incluida la \_ lectura genérica para cubrir cualquier escenario de lectura. Se puede tener acceso a cualquier recurso del Estado común tal y como se encontraba en un solo Estado con
+Todos los recursos de búfer, así como las texturas con el conjunto de marcas D3D12 RESOURCE FLAG ALLOW SIMULTANEOUS ACCESS, se promueven implícitamente de \_ \_ \_ \_ \_ D3D12 \_ RESOURCE STATE \_ \_ COMMON \_ al estado pertinente en el primer acceso de GPU, incluida LA LECTURA GENÉRICA para cubrir cualquier escenario de lectura. Se puede acceder a cualquier recurso en el estado COMMON como a través de él en un solo estado con
 
-<dl> 1 marca de escritura, o  
-1 o más marcas de lectura  
+<dl> 1 marca WRITE o  
+1 o más marcas DE LECTURA  
 </dl>
 
-Los recursos se pueden promocionar desde el Estado común en función de la tabla siguiente:
+Los recursos se pueden promover desde el estado COMMON en función de la tabla siguiente:
 
 
 
-| Marca de estado                    | Estado promocionable                             |                                      |
+| Marca de estado                    | Búferes y Simultaneous-Access texturas                             | Texturas de acceso no simultáneo                                     |
 |-------------------------------|----------------------------------------------|--------------------------------------|
-|                               | **Búferes y texturas de Simultaneous-Access** | **Texturas de acceso no simultáneo** |
-| \_búfer de vértices y \_ constantes \_ | Sí                                          | No                                   |
-| búfer de índice \_                 | Sí                                          | No                                   |
-| destino de representación \_                | Sí                                          | No                                   |
-| acceso desordenado \_             | Sí                                          | No                                   |
-| escritura de profundidad \_                  | No<sup>\*</sup>                              | No                                   |
-| lectura de profundidad \_                   | No<sup>\*</sup>                              | No                                   |
-| \_recurso de \_ sombreador sin píxeles \_  | Sí                                          | Sí                                  |
-| \_recurso de sombreador de píxeles \_       | Sí                                          | Sí                                  |
-| transmisión \_ por secuencias                   | Sí                                          | No                                   |
-| argumento indirecto \_            | Sí                                          | No                                   |
-| COPIAR \_ dest                    | Sí                                          | Sí                                  |
-| COPIAR \_ origen                  | Sí                                          | Sí                                  |
-| RESOLVER \_ dest                 | Sí                                          | No                                   |
-| RESOLVER \_ origen               | Sí                                          | No                                   |
-| PREDICATION                   | Sí                                          | No                                   |
+| VÉRTICE \_ Y \_ BÚFER \_ CONSTANTE | Sí                                          | No                                   |
+| BÚFER DE \_ ÍNDICE                 | Sí                                          | No                                   |
+| DESTINO DE \_ REPRESENTACIÓN                | Sí                                          | No                                   |
+| ACCESO \_ DESORDENADO             | Sí                                          | No                                   |
+| ESCRITURA EN \_ PROFUNDIDAD                  | No<sup>\*</sup>                              | No                                   |
+| LECTURA DE \_ PROFUNDIDAD                   | No<sup>\*</sup>                              | No                                   |
+| RECURSO DE \_ \_ SOMBREADOR SIN \_ PÍXELES  | Sí                                          | Sí                                  |
+| RECURSO \_ SOMBREADOR DE \_ PÍXELES       | Sí                                          | Sí                                  |
+| STREAM \_ OUT                   | Sí                                          | No                                   |
+| ARGUMENTO \_ INDIRECTO            | Sí                                          | No                                   |
+| COPY \_ DEST                    | Sí                                          | Sí                                  |
+| COPY \_ SOURCE                  | Sí                                          | Sí                                  |
+| RESOLVE \_ DEST                 | Sí                                          | No                                   |
+| RESOLVER \_ ORIGEN               | Sí                                          | No                                   |
+| Predicación                   | Sí                                          | No                                   |
 
 
 
  
 
-<sup>\*</sup>Los recursos de la galería de símbolos de profundidad deben ser texturas de acceso no simultáneo y, por tanto, nunca se pueden promocionar implícitamente.
+<sup>\*</sup>Los recursos de galería de símbolos de profundidad deben ser texturas de acceso no simultáneo y, por tanto, nunca se pueden promover implícitamente.
 
-Cuando se produce este acceso, la promoción actúa como una barrera de recursos implícita. En el caso de los accesos posteriores, se requerirán barreras de recursos para cambiar el estado del recurso si es necesario. Tenga en cuenta que la promoción de un estado de lectura promocionado a varios Estados de lectura es válida, pero no es el caso de los Estados de escritura.  
-Por ejemplo, si un recurso del Estado común se promueve al recurso de \_ sombreador \_ de píxeles en una llamada a Draw, todavía se puede promover a NON_PIXEL \_ recurso de sombreador \_ | \_ \_ Recurso de sombreador de píxeles en otra llamada a Draw. Sin embargo, si se usa en una operación de escritura, como un destino de copia, una barrera de transición de estado de recursos de los Estados de lectura promovidos combinados, aquí NON_PIXEL \_ recurso de sombreador \_ | \_Recurso de sombreador de píxeles \_ , \_ se necesita copiar el destino.  
-Del mismo modo, si se promovió de común a COPY \_ dest, todavía se requiere una barrera para realizar la transición de la copia de \_ destino al destino de representación \_ .
+Cuando se produce este acceso, la promoción actúa como una barrera implícita de recursos. Para los accesos posteriores, se requieren barreras de recursos para cambiar el estado del recurso si es necesario. Tenga en cuenta que la promoción de un estado de lectura promocionado a varios estados de lectura es válida, pero este no es el caso de los estados de escritura.  
+Por ejemplo, si un recurso en estado común se promueve a PIXEL SHADER RESOURCE en una llamada a Draw, todavía se puede promover a NON_PIXEL \_ \_ RECURSO SHADER \_ \_ | RECURSO \_ \_ SOMBREADOR DE PÍXELes en otra llamada a Draw. Sin embargo, si se usa en una operación de escritura, como un destino de copia, una barrera de transición de estado de recurso de los estados de lectura promocionados combinados, NON_PIXEL \_ SHADER \_ RESOURCE | SE \_ NECESITA EL RECURSO \_ SOMBREADOR DE PÍXELES \_ PARA COPIAR DEST.  
+De forma similar, si se promueve de COMMON a COPY DEST, todavía se requiere una barrera para realizar la transición de \_ COPY \_ DEST a RENDER \_ TARGET.
 
-Tenga en cuenta que la promoción de Estado común es "gratis", ya que no es necesario que la GPU realice ninguna espera de sincronización. La promoción representa el hecho de que los recursos del Estado común no deben requerir ningún trabajo de GPU adicional ni seguimiento de controladores para admitir determinados accesos.
+Tenga en cuenta que la promoción de estado común es "gratuita", ya que no es necesario que la GPU realice ninguna espera de sincronización. La promoción representa el hecho de que los recursos en el estado COMMON no deben requerir trabajo adicional de GPU ni seguimiento de controladores para admitir determinados accesos.
 
-### <a name="state-decay-to-common"></a>Caída del estado a común
+### <a name="state-decay-to-common"></a>Decadencia del estado a común
 
-El volteo de la promoción de Estado común es la decadencia en el estado del recurso de D3D12 \_ \_ \_ común. Los recursos que cumplen determinados requisitos se consideran sin estado y, de hecho, vuelven al Estado común cuando la GPU finaliza la ejecución de una operación de [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) . No se produce la caída entre las listas de comandos que se ejecutan juntas en la misma llamada **ExecuteCommandLists** .
+El otro lado de la promoción de estado común es volver a decadencia a D3D12 \_ RESOURCE \_ STATE \_ COMMON. Los recursos que cumplen determinados requisitos se consideran sin estado y vuelven eficazmente al estado común cuando la GPU finaliza la ejecución de una [**operación ExecuteCommandLists.**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) La decadencia no se produce entre las listas de comandos ejecutadas juntas en la misma **llamada ExecuteCommandLists.**
 
-Los siguientes recursos determinarán cuando se complete una operación [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) en la GPU:
+Los siguientes recursos se degradarán cuando se complete una operación [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) en la GPU:
 
--   Recursos a los que se tiene acceso en una cola de copia, *o*
--   Recursos de búfer en cualquier tipo de cola, *o*
--   Los recursos de textura en cualquier tipo de cola que tienen la \_ marca de recurso D3D12 permiten el marcador de \_ \_ \_ \_ acceso simultáneo establecido, *o bien*
+-   Recursos a los que se accede en una cola de copia *o*
+-   Recursos de búfer en cualquier tipo de cola *o*
+-   Recursos de textura en cualquier tipo de cola que tenga establecida la marca DE RECURSOS D3D12 \_ \_ ALLOW SIMULTANEOUS ACCESS \_ \_ \_ o 
 -   Cualquier recurso promovido implícitamente a un estado de solo lectura.
 
-Al igual que la promoción de Estado común, la caída es gratuita porque no se necesita ninguna sincronización adicional. La combinación de la promoción de Estado común y la caída puede ayudar a eliminar muchas transiciones de [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) innecesarias. En algunos casos, esto puede proporcionar mejoras significativas en el rendimiento.
+Al igual que la promoción de estado común, la decadencia es libre en el sentido de que no se necesita ninguna sincronización adicional. Combinar la promoción de estado común y la decadencia puede ayudar a eliminar muchas transiciones [**innecesarias de ResourceBarcomposición.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) En algunos casos, esto puede proporcionar mejoras de rendimiento significativas.
 
-Los búferes y los recursos de Simultaneous-Access se determinarán en el Estado común, independientemente de si se han transferido explícitamente mediante barreras de recursos o se han promocionado implícitamente.
+Los búferes y Simultaneous-Access recursos se degradarán al estado común, independientemente de si se han pasado explícitamente mediante barreras de recursos o se han promocionado implícitamente.
 
 ### <a name="performance-implications"></a>Implicaciones de rendimiento
 
-Al grabar transiciones de [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) explícitas en los recursos en el Estado común, es correcto usar el \_ Estado de recurso D3D12 \_ \_ común o cualquier estado promocionable como valor *BeforeState* en la estructura de la barrera de transición de recursos de D3D12 \_ \_ \_ . Esto permite la administración de estado tradicional que omite la caída automática de los búferes y las texturas de acceso simultáneo. Sin embargo, esto puede no ser conveniente, ya que evitar las llamadas de transición **ResourceBarrier** con los recursos que se sabe que están en el Estado común puede mejorar significativamente el rendimiento. Las barreras de recursos pueden ser costosas. Están diseñados para forzar vaciados de caché, cambios de diseño de memoria y otra sincronización que puede que no sean necesarios para los recursos que ya están en el Estado común. Una lista de comandos que usa una barrera de recursos de un estado no común a otro Estado no común en un recurso que se encuentra actualmente en estado común puede introducir una sobrecarga innecesaria.
+Al registrar transiciones [**de ResourceBargida**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) explícitas en recursos en el estado común, es correcto usar D3D12 RESOURCE STATE COMMON o cualquier estado promocionable como valor BeforeState en la estructura \_ \_ \_ D3D12  RESOURCE TRANSITION \_ \_ \_ BARRIER. Esto permite la administración de estado tradicional que omite la decadencia automática de búferes y texturas de acceso simultáneo. Sin embargo, puede que esto no sea deseable, ya que evitar la transición de llamadas **ResourceBartero** con recursos que se sabe que están en el estado común puede mejorar significativamente el rendimiento. Las barreras de recursos pueden ser costosas. Están diseñados para forzar vaciados de caché, cambios en el diseño de memoria y otra sincronización que pueden no ser necesarias para los recursos que ya están en el estado común. Una lista de comandos que usa una barrera de recursos de un estado no común a otro estado no común en un recurso actualmente en el estado común puede introducir una gran sobrecarga innecesario.
 
-Además, evite las transiciones de [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) explícitas al \_ Estado de los recursos de D3D12 \_ \_ común a menos que sea absolutamente necesario (por ejemplo, el siguiente acceso se encuentra en una cola de comandos de copia que requiere que los recursos comiencen en el Estado común). Las transiciones excesivas al Estado común pueden reducir drásticamente el rendimiento de la GPU.
+Además, evite las transiciones explícitas de [**ResourceBarunda**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) a D3D12 RESOURCE STATE COMMON a menos que sea absolutamente necesario (por ejemplo, el siguiente acceso se encuentra en una cola de comandos COPY que requiere que los recursos comiencen en el estado \_ \_ \_ común). Las transiciones excesivas al estado común pueden ralentizar drásticamente el rendimiento de GPU.
 
-En Resumen, intente basarse en la promoción de Estado común y en la decadencia siempre que su semántica le permita salir sin emitir llamadas a [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) .
+En resumen, intente confiar en la promoción de estado común y la degradación cada vez que su semántica le permita salir sin emitir [**llamadas a ResourceBarcomposición.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
 
-## <a name="split-barriers"></a>Barreras divididas
+## <a name="split-barriers"></a>Dividir barreras
 
-Una barrera de transición de recursos con la marca de la barrera de recurso de D3D12 \_ \_ \_ \_ \_ solo comienza una barrera de división y se dice que la barrera de transición está pendiente. Mientras la barrera está pendiente, la GPU no puede leer ni escribir el recurso (sub). La única barrera de transición válida que se puede aplicar a un recurso (sub) con una barrera pendiente es la misma con los mismos Estados *antes* y *después* y la marca de fin de la marca de barrera de los recursos de D3D12 \_ , la \_ \_ \_ \_ barrera que completa la transición pendiente.
+Una barrera de transición de recursos con la marca D3D12 RESOURCE BARRIER FLAG BEGIN ONLY comienza una barrera de división y se dice que la barrera de transición \_ \_ está \_ \_ \_ pendiente. Mientras la barrera está pendiente, la GPU no puede leer ni escribir el recurso (sub) . La única barrera de transición legal que se puede aplicar a un  recurso  (sub)resource con una barrera pendiente es una con los mismos estados antes y después y la marca D3D12 RESOURCE BARRIER FLAG END ONLY, que completa la transición \_ \_ \_ \_ \_ pendiente.
 
-Las barreras divididas proporcionan sugerencias a la GPU de que un recurso en *el estado a* se usará a continuación en el estado *B* posteriormente. Esto proporciona a la GPU la opción de optimizar la carga de trabajo de transición, lo que podría reducir o eliminar las paradas de ejecución. La emisión de la barrera solo final garantiza que todo el trabajo de transición de la GPU finalice antes de pasar al siguiente comando.
+Las barreras divididas proporcionan sugerencias a la GPU de que un recurso en el estado *A* se usará más adelante en el estado *B.* Esto ofrece a la GPU la opción de optimizar la carga de trabajo de transición, lo que posiblemente reduce o elimina los puestos de ejecución. La emisión de la barrera de solo fin garantiza que todo el trabajo de transición de GPU haya finalizado antes de pasar al siguiente comando.
 
-El uso de barreras divididas puede ayudar a mejorar el rendimiento, especialmente en escenarios con varios motores o en los que los recursos se transfieran de forma dispersa en una o varias listas de comandos.
+El uso de barreras divididas puede ayudar a mejorar el rendimiento, especialmente en escenarios de varios motores o en los que los recursos se han pasado de lectura y escritura de forma dispersa a lo largo de una o varias listas de comandos.
 
 ## <a name="resource-barrier-example-scenario"></a>Escenario de ejemplo de barrera de recursos
 
-En los fragmentos de código siguientes se muestra el uso del método [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) en un ejemplo de subprocesamiento múltiple.
+Los fragmentos de código siguientes muestran el uso del [**método ResourceBarproceso**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) en un ejemplo de varios subprocesos.
 
-Crear la vista de galería de símbolos de profundidad, en la que se realiza la transición a un estado grabable.
+Crear la vista de galería de símbolos de profundidad y pasarla a un estado que se puede escribir.
 
 
 ```C++
@@ -217,7 +216,7 @@ Crear la vista de galería de símbolos de profundidad, en la que se realiza la 
 
 
 
-Crear la vista de búfer de vértices y cambiarla primero de un Estado común a un destino y, a continuación, de un destino a un estado legible genérico.
+Crear la vista de búfer de vértices, cambiarla primero de un estado común a un destino y, a continuación, de un destino a un estado legible genérico.
 
 
 ```C++
@@ -258,7 +257,7 @@ Crear la vista de búfer de vértices y cambiarla primero de un Estado común a 
 
 
 
-Crear la vista del búfer de índice, cambiando primero de un Estado común a un destino y, a continuación, de un destino a un estado legible genérico.
+Crear la vista de búfer de índice, cambiarla primero de un estado común a un destino y, a continuación, de un destino a un estado legible genérico.
 
 
 ```C++
@@ -305,7 +304,7 @@ Crear la vista del búfer de índice, cambiando primero de un Estado común a un
 
 
 
-Creación de texturas y vistas de recursos de sombreador. La textura se cambia de un Estado común a un destino y, a continuación, de un destino a un recurso de sombreador de píxeles.
+Crear texturas y vistas de recursos de sombreador. La textura cambia de un estado común a un destino y, a continuación, de un destino a un recurso de sombreador de píxeles.
 
 
 ```C++
@@ -376,7 +375,7 @@ Creación de texturas y vistas de recursos de sombreador. La textura se cambia d
 
 
 
-Inicio de un fotograma; Esto no solo usa [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) para indicar que el búfer de reserva se va a usar como destino de representación, sino que también inicializa el recurso de marco (que llama a **ResourceBarrier** en el búfer de estarcido de profundidad).
+Inicio de un marco; Esto no solo usa [**ResourceBarbuffer**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) para indicar que el búfer de reserva se va a usar como destino de representación, sino que también inicializa el recurso de marco (que llama a **ResourceBarbuffer** en el búfer de la galería de símbolos de profundidad).
 
 
 ```C++
@@ -409,7 +408,7 @@ void D3D12Multithreading::MidFrame()
 
 
 
-Finalización de un fotograma, que indica que el búfer de reserva ahora se usa para presentar.
+Finalizando un marco, lo que indica que el búfer de reserva ahora se usa para presentarse.
 
 
 ```C++
@@ -427,7 +426,7 @@ void D3D12Multithreading::EndFrame()
 
 
 
-Al inicializar un recurso de marco, llamado al iniciar un fotograma, se pasa el búfer de estarcido de profundidad a grabable.
+Al inicializar un recurso de marco, al que se llama al iniciar un marco, se pasa el búfer de la galería de símbolos de profundidad a writeable.
 
 
 ```C++
@@ -457,7 +456,7 @@ void FrameResource::Init()
 
 
 
-Las barreras se intercambian de trama intermedia y se realiza la transición de la asignación de instantáneas de escritura a legible.
+Las barreras se intercambian a mitad del marco, lo que hace que el mapa de sombras se cambie de fácil de escribir a legible.
 
 
 ```C++
@@ -470,7 +469,7 @@ void FrameResource::SwapBarriers()
 
 
 
-Se llama a Finish cuando finaliza un fotograma, pasando el mapa de instantáneas a un Estado común.
+Se llama a Finish cuando finaliza un marco, con lo que se pasa el mapa de sombras a un estado común.
 
 
 ```C++
@@ -482,7 +481,7 @@ void FrameResource::Finish()
 
 
 
-## <a name="common-state-promotion-and-decay-sample"></a>Ejemplo de promoción de Estado común y decadencia
+## <a name="common-state-promotion-and-decay-sample"></a>Ejemplo común de promoción de estado y decadencia
 
 ``` syntax
     // Create a buffer resource using D3D12_RESOURCE_STATE_COMMON as the init state
@@ -532,7 +531,7 @@ void FrameResource::Finish()
 
 ## <a name="example-of-split-barriers"></a>Ejemplo de barreras divididas
 
-En el ejemplo siguiente se muestra cómo usar una barrera dividida para reducir las paradas de canalización. El código que sigue no utiliza barreras divididas:
+En el ejemplo siguiente se muestra cómo usar una barrera de división para reducir los puestos de canalización. El código siguiente no usa barreras divididas:
 
 ``` syntax
  D3D12_RESOURCE_BARRIER BarrierDesc = {};
@@ -590,11 +589,11 @@ D3D12_RESOURCE_BARRIER BarrierDesc = {};
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Tutoriales de vídeo de aprendizaje avanzado de DirectX: barreras de recursos y seguimiento de estado](https://www.youtube.com/watch?v=nmB2XMasz2o)
+[Tutoriales de vídeo de aprendizaje avanzado de DirectX: Barreras de recursos y seguimiento de estado](https://www.youtube.com/watch?v=nmB2XMasz2o)
 
 [Sincronización de varios motores](./user-mode-heap-synchronization.md)
 
-[Envío de trabajo en Direct3D 12](command-queues-and-command-lists.md)
+[Envío de trabajo en Direct3D 12](command-queues-and-command-lists.md)
 
-[Una mirada dentro de las barreras de estado de los recursos de D3D12](https://devblogs.microsoft.com/directx/a-look-inside-d3d12-resource-state-barriers/)
+[Una mirada dentro de las barreras de estado de recursos D3D12](https://devblogs.microsoft.com/directx/a-look-inside-d3d12-resource-state-barriers/)
 

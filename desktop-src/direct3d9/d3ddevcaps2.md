@@ -4,12 +4,12 @@ ms.assetid: 3f3b9f86-dee3-4506-bd2e-1dcc8ba617ed
 title: D3DDEVCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11ef30540f19add130aaca6eb48655a5ac47b2b4
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 6296db9b338d5f9a8c8ede702a784baf1fdfd462
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999472"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343210"
 ---
 # <a name="d3ddevcaps2"></a>D3DDEVCAPS2
 
@@ -35,7 +35,7 @@ Marcas de funcionalidad del controlador D3DDEVCAPS2.
 
 
 
-|                          |            |
+| Requisito                         | Value           |
 |--------------------------|------------|
 | Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |

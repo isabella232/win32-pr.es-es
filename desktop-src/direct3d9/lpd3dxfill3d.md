@@ -1,15 +1,15 @@
 ---
-description: 'LPD3DXFILL3D: tipo de función usado por las funciones de relleno de textura.'
+description: 'LPD3DXFILL3D: tipo de función utilizado por las funciones de relleno de textura.'
 ms.assetid: ab2f3005-150f-46e1-b75b-75c39e7feed1
 title: LPD3DXFILL3D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6c711459cffa3430b31ba7c91d77cc9519e6a43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: feed5845f04486a6ac9cf1c984178fb0ed98447a
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114313"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342770"
 ---
 # <a name="lpd3dxfill3d"></a>LPD3DXFILL3D
 
@@ -37,7 +37,7 @@ pTexCoord: puntero a un vector que contiene las coordenadas del texel que se est
 
 pTexelSize: puntero a un vector que contiene las dimensiones del texel actual.
 
-pData: puntero a los datos de usuario.
+pData: puntero a datos de usuario.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -45,11 +45,11 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Asegúrese de especificar la convención de llamada tipos de datos de [**Windows**](../winprog/windows-data-types.md) al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
+Asegúrese de especificar la convención de llamada de tipos de datos de [**Windows**](../winprog/windows-data-types.md) al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
 
 
 
-|                          |            |
+| Requisito                         | Value           |
 |--------------------------|------------|
 | Encabezado                   | d3dx9tex.h |
 | Biblioteca de importación           | d3dx9.lib  |

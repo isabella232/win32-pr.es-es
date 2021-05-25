@@ -4,12 +4,12 @@ ms.assetid: bc7c36fd-b905-47e7-a38f-1139a8337121
 title: D3DCONVOLUTIONMONO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df52e2f8e6053f0149eafb35c0356b413ed2f520
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 25a5cb3b5f7d8f43ebf38a3c4ea2a53dc683ced5
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994142"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343251"
 ---
 # <a name="d3dconvolutionmono"></a>D3DCONVOLUTIONMONO
 
@@ -17,7 +17,7 @@ Especifica las dimensiones máximas de los filtros de convolución de textura.
 
 
 
-| \#Definir                      | Value | Descripción                                                |
+| \#Definir                      | Valor | Descripción                                                |
 |-------------------------------|-------|------------------------------------------------------------|
 | D3DCONVOLUTIONMONO \_ MAXHEIGHT | 7     | Alto máximo de un filtro de convolución de textura monocromática. |
 | D3DCONVOLUTIONMONO \_ MAXWIDTH  | 7     | Ancho máximo de un filtro de convolución de textura monocromática.  |
@@ -30,7 +30,7 @@ Especifica las dimensiones máximas de los filtros de convolución de textura.
 
 
 
-|                          |             |
+| Requisito                         |  Value           |
 |--------------------------|-------------|
 | Encabezado                   | d3d9types.h |
 | Sistema operativo mínimo |             |

@@ -4,12 +4,12 @@ ms.assetid: 187c758c-5e7f-48ee-97cb-b1f30b709723
 title: D3DSTENCILCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6716748d77fe4c3620413f43ae4a4ae48076c09f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8999d73044a061cb8eea8f5829351c1d04079462
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997382"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343060"
 ---
 # <a name="d3dstencilcaps"></a>D3DSTENCILCAPS
 
@@ -17,7 +17,7 @@ Marcas de funcionalidad de galería de símbolos del controlador.
 
 
 
-| \#Definir                 | Value       | Descripción                                                                                           |
+| \#Definir                 | Valor       | Descripción                                                                                           |
 |--------------------------|-------------|-------------------------------------------------------------------------------------------------------|
 | D3DSTENCILCAPS \_ KEEP     | 0x00000001L | No actualice la entrada en el búfer de galería de símbolos. Este es el valor predeterminado.                             |
 | D3DSTENCILCAPS \_ ZERO     | 0x00000002L | Establezca la entrada stencil-buffer en 0.                                                                    |
@@ -41,7 +41,7 @@ El miembro StencilCaps de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9ca
 
 
 
-|                          |            |
+| Requisito                         | Value           |
 |--------------------------|------------|
 | Encabezado                   | d3d9caps.h |
 | Sistema operativo mínimo | Windows 98 |
