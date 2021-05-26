@@ -1,11 +1,11 @@
 ---
-title: Evento Player. StringCollectionChange
-description: El evento StringCollectionChange se produce cuando cambia una colección de cadenas. | Evento Player. StringCollectionChange
+title: Evento Player.StringCollectionChange
+description: El evento StringCollectionChange tiene lugar cuando cambia una colección de cadenas. | Evento Player.StringCollectionChange
 ms.assetid: 465ec694-afd1-4baa-b559-3ab75874388f
 keywords:
-- Media Player StringCollectionChange de eventos de Windows
-- Evento StringCollectionChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento StringCollectionChange
+- Evento StringCollectionChange Reproductor de Windows Media
+- Evento StringCollectionChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media evento , StringCollectionChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29f72d7af0f73d74393d980b2506a3b7f05e578
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6a61b8e1e09e749579f323d506371138b0d9b59
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708259"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424095"
 ---
-# <a name="playerstringcollectionchange-event"></a>Evento Player. StringCollectionChange
+# <a name="playerstringcollectionchange-event"></a>Evento Player.StringCollectionChange
 
-El evento StringCollectionChange se produce cuando cambia una colección de cadenas.
+El evento StringCollectionChange tiene lugar cuando cambia una colección de cadenas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,26 +47,25 @@ Player.StringCollectionChange(
 *pdispStringCollection* 
 </dt> <dd>
 
-Objeto **StringCollection** que ha cambiado.
+**Objeto StringCollection** que ha cambiado.
 
 </dd> <dt>
 
 *change* 
 </dt> <dd>
 
-Número (largo) que indica el tipo de cambio que se produjo en la colección de cadenas. Incluye uno de los valores siguientes.
+Número (long) que indica el tipo de cambio que se produjo en la colección de cadenas. Incluye uno de los siguientes valores.
 
 
 
-|        |                                    |
-|--------|------------------------------------|
 | Number | Descripción                        |
-| 0      | Desconocido. (No es un valor válido)       |
+|--------|------------------------------------|
+| 0      | desconocida. (No es un valor válido)       |
 | 1      | Se insertó un elemento.              |
 | 2      | La colección de cadenas ha cambiado.     |
 | 3      | Se eliminó un elemento.               |
-| 4      | Se borró la colección de cadenas. |
-| 5      | Se están iniciando las actualizaciones masivas.        |
+| 4      | Se ha borrado la colección de cadenas. |
+| 5      | Las actualizaciones masivas comienzan.        |
 | 6      | Las actualizaciones masivas han finalizado.           |
 
 
@@ -78,7 +77,7 @@ Número (largo) que indica el tipo de cambio que se produjo en la colección de 
 *lCollectionIndex* 
 </dt> <dd>
 
-Número (largo) que contiene el índice del elemento de colección de cadenas que ha cambiado.
+Número (long) que contiene el índice del elemento de colección de cadenas que ha cambiado.
 
 </dd> </dl>
 
@@ -86,22 +85,22 @@ Número (largo) que contiene el índice del elemento de colección de cadenas qu
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

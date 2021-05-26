@@ -3,34 +3,34 @@ title: Formulario de información de inicio para una tienda de música en línea
 description: Formulario de información de inicio para una tienda de música en línea
 ms.assetid: 6ee30446-7505-40ae-b664-3727a5be9976
 keywords:
-- Windows Media Player tiendas en línea
+- Reproductor de Windows Media Online Stores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99c32ef8f3c5bdb5779a5c7fbd36ed2dd3efac7b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3ded923538d6be6c8a22fa0ba96ddcd0814348d
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075287"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424075"
 ---
 # <a name="startup-information-form-for-an-online-music-store"></a>Formulario de información de inicio para una tienda de música en línea
 
-Rellene y envíe un formulario para cada almacén y cada configuración regional al equipo virtual de Windows Media Player Services en mpsvctm@microsoft.com .
+Rellene y envíe un formulario para cada tienda y cada configuración regional al equipo virtual de Reproductor de Windows Media Services en mpsvctm@microsoft.com .
 
 
 
 | Elemento                      | Descripción |
 |---------------------------|-------------|
 | Nombre de la tienda                |             |
-| Configuración regional                    |             |
-| Fecha                      |             |
-| Ventana de destino de la incorporación |             |
+| Locale                    |             |
+| Date                      |             |
+| Ventana de incorporación de destino |             |
 
 
 
  
 
-## <a name="startup-information-for-test-store"></a>Información de inicio para el almacén de pruebas
+## <a name="startup-information-for-test-store"></a>Información de inicio del almacén de pruebas
 
 
 
@@ -39,9 +39,9 @@ Rellene y envíe un formulario para cada almacén y cada configuración regional
 | Dirección URL XML de información de servicio (límite de 2048 caracteres)                                                              |             |
 | Clave de servicio (identificador único)                                                                                  |             |
 | Nombre descriptivo (límite de 30 caracteres)                                                                       |             |
-| URL de imagen de menú (límite de 2048 caracteres)                                                                    |             |
-| Comprar dirección URL de música (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas)<br/>                |             |
-| Dirección URL de compra de la interfaz de usuario de 10 ft (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados: opcional)<br/> |             |
+| Dirección URL de imagen de menú (límite de 2048 caracteres)                                                                    |             |
+| Comprar dirección URL de música (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados)<br/>                |             |
+| DIRECCIÓN URL de compra de interfaz de usuario de 10 pies (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados : opcional)<br/> |             |
 
 
 
@@ -49,18 +49,18 @@ Rellene y envíe un formulario para cada almacén y cada configuración regional
 
 
 
-| Elemento hospedado por Microsoft en "examinar todas las tiendas en línea"                             | Descripción |
+| Elemento hospedado por Microsoft en "Examinar todas las tiendas en línea"                             | Descripción |
 |------------------------------------------------------------------------------------|-------------|
-| Logotipo de la tienda (130W x 30 h)<br/> (Adjunte el archivo PNG por separado).<br/>        |             |
-| Examinar: toda la imagen (108W x 108h)<br/> (Adjunte el archivo PNG por separado).<br/> |             |
-| Texto de descripción de la tienda (límite de 110 caracteres)                                       |             |
-| Texto del hipervínculo (límite de 45 caracteres)                                            |             |
+| Logotipo de la tienda (130 w x 30h)<br/> (Adjunte el archivo PNG por separado).<br/>        |             |
+| Examinar toda la imagen (108 w x 108h)<br/> (Adjunte el archivo PNG por separado).<br/> |             |
+| Texto de descripción del almacén (límite de 110 caracteres)                                       |             |
+| Texto para hipervínculo (límite de 45 caracteres)                                            |             |
 
 
 
  
 
-## <a name="startup-information-for-production-store"></a>Información de inicio de la tienda de producción
+## <a name="startup-information-for-production-store"></a>Información de inicio para el almacén de producción
 
 
 
@@ -69,9 +69,9 @@ Rellene y envíe un formulario para cada almacén y cada configuración regional
 | Dirección URL XML de información de servicio (límite de 2048 caracteres)                                                              |             |
 | Clave de servicio (identificador único)                                                                                  |             |
 | Nombre descriptivo (límite de 30 caracteres)                                                                       |             |
-| URL de imagen de menú (límite de 2048 caracteres)                                                                    |             |
+| Dirección URL de la imagen de menú (límite de 2048 caracteres)                                                                    |             |
 | Comprar dirección URL de música (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas)<br/>                |             |
-| Dirección URL de compra de la interfaz de usuario de 10 ft (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados: opcional)<br/> |             |
+| DIRECCIÓN URL de compra de interfaz de usuario de 10 pies (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas: opcional)<br/> |             |
 
 
 
@@ -79,12 +79,12 @@ Rellene y envíe un formulario para cada almacén y cada configuración regional
 
 
 
-| Elemento hospedado por Microsoft en "examinar todas las tiendas en línea"                             | Descripción |
+| Elemento hospedado por Microsoft en "Examinar todas las tiendas en línea"                             | Descripción |
 |------------------------------------------------------------------------------------|-------------|
-| Logotipo de la tienda (130W x 30 h)<br/> (Adjunte el archivo PNG por separado).<br/>        |             |
-| Examinar: toda la imagen (108W x 108h)<br/> (Adjunte el archivo PNG por separado).<br/> |             |
-| Texto de descripción de la tienda (límite de 110 caracteres)                                       |             |
-| Texto del hipervínculo (límite de 45 caracteres)                                            |             |
+| Logotipo de la tienda (130w x 30h)<br/> (Adjunte el archivo PNG por separado).<br/>        |             |
+| Imagen de exploración completa (108w x 108h)<br/> (Adjunte el archivo PNG por separado).<br/> |             |
+| Texto de descripción del almacén (límite de 110 caracteres)                                       |             |
+| Texto para hipervínculo (límite de 45 caracteres)                                            |             |
 
 
 
@@ -96,17 +96,17 @@ Rellene y envíe un formulario para cada almacén y cada configuración regional
 
 | Elemento                                                                                     | Descripción |
 |------------------------------------------------------------------------------------------|-------------|
-| ¿Cómo se recargan las cuentas de prueba?<br/> (Número de tarjeta de crédito ficticio?, ...?<br/> |             |
+| ¿Cómo se pueden evaluar las cuentas de prueba?<br/> (Número ficticio de tarjeta de crédito?, ...?<br/> |             |
 
 
 
  
 
-## <a name="valid-accounts-that-testers-can-use-to-purchase-albums-or-tracks"></a>Cuentas válidas que los evaluadores pueden usar para comprar álbumes o pistas
+## <a name="valid-accounts-that-testers-can-use-to-purchase-albums-or-tracks"></a>Cuentas válidas que los evaluadores pueden usar para comprar discos o pistas
 
 
 
-|                | Nombre de usuario | Contraseña |
+|  Cuenta       | Nombre de usuario | Contraseña |
 |----------------|-----------|----------|
 | Cuenta de prueba 1 |           |          |
 | Cuenta de prueba 2 |           |          |
