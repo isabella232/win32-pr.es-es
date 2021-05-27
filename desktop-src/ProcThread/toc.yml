@@ -11,11 +11,11 @@
           items:
             - name: Ventajas de la multitarea
               href: advantages-of-multitasking.md
-            - name: Cuándo usar la multitarea
+            - name: Cuándo usar multitarea
               href: when-to-use-multitasking.md
-            - name: Consideraciones sobre la multitarea
+            - name: Consideraciones sobre multitarea
               href: multitasking-considerations.md
-        - name: Scheduling
+        - name: Programación
           href: scheduling.md
           items:
             - name: Prioridades de programación
@@ -24,24 +24,24 @@
               href: context-switches.md
             - name: Aumentos de prioridad
               href: priority-boosts.md
-            - name: Inversión de prioridad
+            - name: Inversión de prioridades
               href: priority-inversion.md
             - name: Varios procesadores
               href: multiple-processors.md
-            - name: Compatibilidad con NUMA
+            - name: Compatibilidad NUMA
               href: numa-support.md
             - name: Servicio de ordenación de subprocesos
               href: thread-ordering-service.md
-            - name: Servicio del programador de clases multimedia
+            - name: Servicio Programador de clases multimedia
               href: multimedia-class-scheduler-service.md
               items:
-                - name: API de Real-Time Work Queue
+                - name: Real-Time Work Queue API
                   href: platform-work-queue-api.md
                   items:
                     - name: IRtwqAsyncCallback
                       href: /windows/desktop/api/rtworkq/nn-rtworkq-irtwqasynccallback
                       items:
-                        - name: GetParameters (método)
+                        - name: Método GetParameters
                           href: /windows/desktop/api/rtworkq/nf-rtworkq-irtwqasynccallback-getparameters
                         - name: Invoke (método)
                           href: /windows/desktop/api/rtworkq/nf-rtworkq-irtwqasynccallback-invoke
@@ -148,7 +148,7 @@
               href: thread-handles-and-identifiers.md
             - name: Suspender la ejecución de subprocesos
               href: suspending-thread-execution.md
-            - name: Sincronizar la ejecución de varios subprocesos
+            - name: Sincronización de la ejecución de varios subprocesos
               href: synchronizing-execution-of-multiple-threads.md
             - name: Varios subprocesos y objetos GDI
               href: multiple-threads-and-gdi-objects.md
@@ -156,35 +156,35 @@
               href: thread-local-storage.md
             - name: Crear ventanas en subprocesos
               href: creating-windows-in-threads.md
-            - name: Finalización de un subproceso
+            - name: Terminación de un subproceso
               href: terminating-a-thread.md
-            - name: Seguridad para subprocesos y derechos de acceso
+            - name: Derechos de acceso y seguridad de subprocesos
               href: thread-security-and-access-rights.md
         - name: Procesos secundarios
           href: child-processes.md
           items:
-            - name: Establecer las propiedades de la ventana mediante STARTUPINFO
+            - name: Establecer propiedades de ventana mediante STARTUPINFO
               href: setting-window-properties-using-startupinfo.md
-            - name: Identificadores e identificadores de proceso
+            - name: Identificadores y identificadores de procesos
               href: process-handles-and-identifiers.md
             - name: Enumeración de procesos
               href: process-enumeration.md
-            - name: Obtención de información de proceso adicional
+            - name: Obtener información adicional del proceso
               href: obtaining-additional-process-information.md
             - name: Herencia
               href: inheritance.md
             - name: Variables de entorno
               href: environment-variables.md
-            - name: Finalizar un proceso
+            - name: Terminación de un proceso
               href: terminating-a-process.md
-            - name: Espacio de trabajo del proceso
+            - name: Conjunto de trabajo de proceso
               href: process-working-set.md
-            - name: Seguridad del proceso y derechos de acceso
+            - name: Derechos de acceso y seguridad de procesos
               href: process-security-and-access-rights.md
         - name: Grupos de subprocesos
           href: thread-pools.md
           items:
-            - name: API de grupo de subprocesos
+            - name: API del grupo de subprocesos
               href: thread-pool-api.md
             - name: Agrupación de subprocesos
               href: thread-pooling.md
@@ -197,11 +197,11 @@
               href: job-object-security-and-access-rights.md
         - name: Conjuntos de CPU
           href: cpu-sets.md
-        - name: Fibra
+        - name: Fibras
           href: fibers.md
-        - name: Programación de User-Mode
+        - name: User-Mode programación
           href: user-mode-scheduling.md
-    - name: Usar procesos y subprocesos
+    - name: Uso de procesos y subprocesos
       href: using-processes-and-threads.md
       items:
         - name: Crear procesos
@@ -212,13 +212,13 @@
           href: creating-a-child-process-with-redirected-input-and-output.md
         - name: Procesos de modo de usuario aislado (IUM)
           href: isolated-user-mode--ium--processes.md
-        - name: Cambiar variables de entorno
+        - name: Cambio de variables de entorno
           href: changing-environment-variables.md
         - name: Uso del almacenamiento local de subprocesos
           href: using-thread-local-storage.md
         - name: Uso de fibras
           href: using-fibers.md
-        - name: Usar las funciones de grupo de subprocesos
+        - name: Uso de las funciones del grupo de subprocesos
           href: using-the-thread-pool-functions.md
     - name: Referencia de procesos y subprocesos
       href: process-and-thread-reference.md
@@ -311,7 +311,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-createjobobjecta
             - name: CreateProcess
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa
-            - name: CreateProcessAsUser ha
+            - name: CreateProcessAsUser
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera
             - name: CreateProcessWithLogonW
               href: /windows/desktop/api/WinBase/nf-winbase-createprocesswithlogonw
@@ -403,7 +403,7 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessornumberex
             - name: GetCurrentThread
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread
-            - name: GetCurrentThreadId (
+            - name: GetCurrentThreadId
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid
             - name: GetCurrentThreadStackLimits
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadstacklimits
@@ -413,7 +413,7 @@
               href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
             - name: GetEnvironmentVariable
               href: /windows/desktop/api/WinBase/nf-winbase-getenvironmentvariable
-            - name: API GetExitCodeProcess
+            - name: GetExitCodeProcess
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess
             - name: GetExitCodeThread
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread
@@ -454,7 +454,7 @@
             - name: GetProcessAffinityMask
               href: /windows/desktop/api/WinBase/nf-winbase-getprocessaffinitymask
             - name: GetProcessDefaultCpuSets
-              href: getprocessdefaultcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessdefaultcpusets
             - name: GetProcessGroupAffinity
               href: /windows/desktop/api/processtopologyapi/nf-processtopologyapi-getprocessgroupaffinity
             - name: GetProcessHandleCount
@@ -504,7 +504,7 @@
             - name: GetThreadPriorityBoost
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadpriorityboost
             - name: GetThreadSelectedCpuSets
-              href: getthreadselectedcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadselectedcpusets.md
             - name: GetThreadTimes
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadtimes
             - name: GetUmsCompletionListEvent
@@ -596,7 +596,7 @@
             - name: SetProcessAffinityUpdateMode
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessaffinityupdatemode
             - name: SetProcessDefaultCpuSets
-              href: setprocessdefaultcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessdefaultcpusets
             - name: SetProcessInformation
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessinformation
             - name: SetProcessMitigationPolicy
@@ -656,7 +656,7 @@
             - name: SetThreadPriorityBoost
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriorityboost
             - name: SetThreadSelectedCpuSets
-              href: setthreadselectedcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadselectedcpusets
             - name: SetThreadStackGuarantee
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadstackguarantee
             - name: SetUmsThreadInformation
@@ -747,7 +747,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-wow64suspendthread
             - name: ZwQueryInformationProcess
               href: zwqueryinformationprocess.md
-        - name: Macros de procesos y subprocesos
+        - name: Macros de proceso y subproceso
           href: process-and-thread-macros.md
           items:
             - name: GetCurrentFiber
@@ -817,7 +817,7 @@
               href: /windows/win32/api/WinNT/ns-winnt-numa_node_relationship
             - name: ORIENTATION_PREFERENCE
               href: /windows/desktop/api/WinUser/ne-winuser-orientation_preference
-            - name: PEB
+            - name: Peb
               href: /windows/win32/api/Winternl/ns-winternl-peb
             - name: PEB_LDR_DATA
               href: /windows/win32/api/Winternl/ns-winternl-peb_ldr_data

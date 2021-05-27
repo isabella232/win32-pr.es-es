@@ -1,6 +1,6 @@
 ---
 title: Estructura XMUINT4
-description: Describe un vector entero de 4D sin signo.
+description: Describe un vector entero 4D sin signo.
 ms.assetid: 289293e5-882e-479c-886e-82c802f824b5
 keywords:
 - HLSL de la estructura XMUINT4
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e461d5b10f01f61de3fcfd721c4a6b1350c7d68
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: 5e424b4e5fd1c97f5aec01571d887b54dbb143b7
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107222853"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549900"
 ---
-# <a name="xmuint4-structure"></a><span data-ttu-id="49b87-104">Estructura XMUINT4</span><span class="sxs-lookup"><span data-stu-id="49b87-104">XMUINT4 structure</span></span>
+# <a name="xmuint4-structure"></a><span data-ttu-id="14c5c-104">Estructura XMUINT4</span><span class="sxs-lookup"><span data-stu-id="14c5c-104">XMUINT4 structure</span></span>
 
-<span data-ttu-id="49b87-105">Describe un vector entero de 4D sin signo.</span><span class="sxs-lookup"><span data-stu-id="49b87-105">Describes an 4D unsigned integer vector.</span></span>
+<span data-ttu-id="14c5c-105">Describe un vector entero 4D sin signo.</span><span class="sxs-lookup"><span data-stu-id="14c5c-105">Describes an 4D unsigned integer vector.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="49b87-106">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="49b87-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="14c5c-106">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="14c5c-106">Syntax</span></span>
 
 
 ``` syntax
@@ -41,64 +41,64 @@ typedef struct _XMUINT4 {
 
 
 
-## <a name="members"></a><span data-ttu-id="49b87-107">Miembros</span><span class="sxs-lookup"><span data-stu-id="49b87-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="14c5c-107">Members</span><span class="sxs-lookup"><span data-stu-id="14c5c-107">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="49b87-108">**x**</span><span class="sxs-lookup"><span data-stu-id="49b87-108">**x**</span></span>
+<span data-ttu-id="14c5c-108">**x**</span><span class="sxs-lookup"><span data-stu-id="14c5c-108">**x**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="49b87-109">componente x del vector.</span><span class="sxs-lookup"><span data-stu-id="49b87-109">x-component of the vector.</span></span>
+<span data-ttu-id="14c5c-109">Componente x del vector.</span><span class="sxs-lookup"><span data-stu-id="14c5c-109">x-component of the vector.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="49b87-110">**y**</span><span class="sxs-lookup"><span data-stu-id="49b87-110">**y**</span></span>
+<span data-ttu-id="14c5c-110">**y**</span><span class="sxs-lookup"><span data-stu-id="14c5c-110">**y**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="49b87-111">componente y del vector.</span><span class="sxs-lookup"><span data-stu-id="49b87-111">y-component of the vector.</span></span>
+<span data-ttu-id="14c5c-111">Componente y del vector.</span><span class="sxs-lookup"><span data-stu-id="14c5c-111">y-component of the vector.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="49b87-112">**z**</span><span class="sxs-lookup"><span data-stu-id="49b87-112">**z**</span></span>
+<span data-ttu-id="14c5c-112">**Z**</span><span class="sxs-lookup"><span data-stu-id="14c5c-112">**z**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="49b87-113">componente z del vector.</span><span class="sxs-lookup"><span data-stu-id="49b87-113">z-component of the vector.</span></span>
+<span data-ttu-id="14c5c-113">Componente z del vector.</span><span class="sxs-lookup"><span data-stu-id="14c5c-113">z-component of the vector.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="49b87-114">**w**</span><span class="sxs-lookup"><span data-stu-id="49b87-114">**w**</span></span>
+<span data-ttu-id="14c5c-114">**w**</span><span class="sxs-lookup"><span data-stu-id="14c5c-114">**w**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="49b87-115">componente w del vector.</span><span class="sxs-lookup"><span data-stu-id="49b87-115">w-component of the vector.</span></span>
+<span data-ttu-id="14c5c-115">w-component del vector.</span><span class="sxs-lookup"><span data-stu-id="14c5c-115">w-component of the vector.</span></span>
 
 </dd> </dl> </dd> </dl> </dd> </dl>
 
 
 
 
-## <a name="remarks"></a><span data-ttu-id="49b87-116">Observaciones</span><span class="sxs-lookup"><span data-stu-id="49b87-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="14c5c-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="14c5c-116">Remarks</span></span>
 
-<span data-ttu-id="49b87-117">Esta estructura se define en el ``D3DX\_DXGIFormatConvert.inl`` encabezado del SDK de DirectX (2010 de junio) para su uso desde C++.</span><span class="sxs-lookup"><span data-stu-id="49b87-117">This structure is defined in the ``D3DX\_DXGIFormatConvert.inl`` header in the DirectX SDK (June 2010) for use from C++.</span></span> <span data-ttu-id="49b87-118">La versión más reciente de este encabezado en el paquete NuGet [Microsoft. DXSDK. D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) ya no lo define y se basa en [DirectX:: XMUINT4](https://docs.microsoft.com/en-us/windows/win32/api/directxmath/ns-directxmath-xmuint4) en DirectXMath en su lugar.</span><span class="sxs-lookup"><span data-stu-id="49b87-118">The latest version of this header in the [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) NuGet Package no longer defines it, and relies on [DirectX::XMUINT4](https://docs.microsoft.com/en-us/windows/win32/api/directxmath/ns-directxmath-xmuint4) in DirectXMath instead.</span></span>
-
-
-
-
-## <a name="requirements"></a><span data-ttu-id="49b87-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="49b87-119">Requirements</span></span>
+<span data-ttu-id="14c5c-117">Esta estructura se define en el encabezado del ``D3DX\_DXGIFormatConvert.inl`` SDK de DirectX (junio de 2010) para su uso desde C++.</span><span class="sxs-lookup"><span data-stu-id="14c5c-117">This structure is defined in the ``D3DX\_DXGIFormatConvert.inl`` header in the DirectX SDK (June 2010) for use from C++.</span></span> <span data-ttu-id="14c5c-118">La versión más reciente de este encabezado en el paquete NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) ya no lo define y se basa en [DirectX::XMUINT4](/windows/win32/api/directxmath/ns-directxmath-xmuint4) en DirectXMath en su lugar.</span><span class="sxs-lookup"><span data-stu-id="14c5c-118">The latest version of this header in the [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) NuGet Package no longer defines it, and relies on [DirectX::XMUINT4](/windows/win32/api/directxmath/ns-directxmath-xmuint4) in DirectXMath instead.</span></span>
 
 
 
-| <span data-ttu-id="49b87-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="49b87-120">Requirement</span></span> | <span data-ttu-id="49b87-121">Value</span><span class="sxs-lookup"><span data-stu-id="49b87-121">Value</span></span> |
+
+## <a name="requirements"></a><span data-ttu-id="14c5c-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="14c5c-119">Requirements</span></span>
+
+
+
+| <span data-ttu-id="14c5c-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="14c5c-120">Requirement</span></span> | <span data-ttu-id="14c5c-121">Value</span><span class="sxs-lookup"><span data-stu-id="14c5c-121">Value</span></span> |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="49b87-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="49b87-122">Header</span></span><br/> | <dl> <span data-ttu-id="49b87-123"><dt>D3DX \_ DXGIFormatConvert. INL</dt></span><span class="sxs-lookup"><span data-stu-id="49b87-123"><dt>D3DX\_DXGIFormatConvert.inl</dt></span></span> </dl> |
+| <span data-ttu-id="14c5c-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="14c5c-122">Header</span></span><br/> | <dl> <span data-ttu-id="14c5c-123"><dt>D3DX \_ DXGIFormatConvert.inl</dt></span><span class="sxs-lookup"><span data-stu-id="14c5c-123"><dt>D3DX\_DXGIFormatConvert.inl</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="49b87-124">Vea también</span><span class="sxs-lookup"><span data-stu-id="49b87-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="14c5c-124">Consulte también</span><span class="sxs-lookup"><span data-stu-id="14c5c-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="49b87-125">Estructuras</span><span class="sxs-lookup"><span data-stu-id="49b87-125">Structures</span></span>](format-conversion-structures.md)
+[<span data-ttu-id="14c5c-125">Estructuras</span><span class="sxs-lookup"><span data-stu-id="14c5c-125">Structures</span></span>](format-conversion-structures.md)
 </dt> <dt>
 
-[<span data-ttu-id="49b87-126">Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen</span><span class="sxs-lookup"><span data-stu-id="49b87-126">Unpacking and Packing DXGI\_FORMAT for In-Place Image Editing</span></span>](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[<span data-ttu-id="14c5c-126">Desempaquetar y empaquetar DXGI \_ FORMAT para In-Place de imágenes</span><span class="sxs-lookup"><span data-stu-id="14c5c-126">Unpacking and Packing DXGI\_FORMAT for In-Place Image Editing</span></span>](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
