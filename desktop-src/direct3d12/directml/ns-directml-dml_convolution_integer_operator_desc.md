@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_CONVOLUTION_INTEGER_OPERATOR_DESC
-ms.openlocfilehash: 07406155be9ae5f78fbf5f3b7fcd750aa4631dbc
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: f4045598dd1aa050479fec8e5732fe5c0a4e77ee
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803381"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550421"
 ---
 # <a name="dml_convolution_integer_operator_desc-structure-directmlh"></a>DML_CONVOLUTION_INTEGER_OPERATOR_DESC estructura (directml.h)
 
@@ -76,7 +76,7 @@ struct DML_CONVOLUTION_INTEGER_OPERATOR_DESC {
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
@@ -122,28 +122,28 @@ Número de dimensiones espaciales para la operación de convolución. Las dimens
 
 `Strides`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Matriz que contiene los avances de la operación de convolución. Estos strides se aplican al filtro de convolución. Son independientes de los avances de tensor incluidos [en DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
+Matriz que contiene los avances de la operación de convolución. Estas strides se aplican al filtro de convolución. Son independientes de los avances de tensor incluidos [en DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
 
 
 `Dilations`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Matriz que contiene las sutenciones de la operación de convolución. Las reparaciones son avances aplicados a los elementos del kernel de filtro. Esto tiene el efecto de simular un kernel de filtro mayor mediante el relleno de los elementos internos del kernel de filtro con ceros.
+Matriz que contiene las sutenciones de la operación de convolución. Las reparaciones son avances que se aplican a los elementos del kernel de filtro. Esto tiene el efecto de simular un kernel de filtro mayor mediante el relleno de los elementos internos del kernel de filtro con ceros.
 
 
 `StartPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Matriz que contiene los valores de relleno que se aplicarán al principio de cada dimensión espacial del tensor de entrada y filtro de la operación de convolución.
 
 
 `EndPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Matriz que contiene los valores de relleno que se aplicarán al final de cada dimensión espacial del tensor de entrada y filtro de la operación de convolución.
 

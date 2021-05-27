@@ -39,19 +39,19 @@ api_location:
 - dwrite_3.h
 api_name:
 - DWRITE_BITMAP_DATA_BGRA32
-ms.openlocfilehash: ad36eb8fe691330b471db0b7e8b5378f3e7614db
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 813f3601cac03dcf477fa40f6db5105e075029ab
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955058"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548930"
 ---
 # <a name="dwrite_bitmap_data_bgra32-structure-dwrite_3h"></a>DWRITE_BITMAP_DATA_BGRA32 estructura (dwrite_3.h)
 
 Representa los datos de mapa de bits en formato BGRA32.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte de la implementación de DWriteCore [de DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea [Introducción a DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
+> Esta API está disponible como parte de la implementación de DWriteCore de [DirectWrite](../direct-write-portal.md). DWriteCore es una forma de DirectWrite que se ejecuta en versiones de Windows hasta Windows 8, y que le permite su uso en varias plataformas. Para obtener más información y ejemplos de código, vea [Introducción a DWriteCore.](../dwritecore-overview.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ struct DWRITE_BITMAP_DATA_BGRA32
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `width`
 
@@ -89,7 +89,7 @@ Puntero a la ubicación de los valores de bits del mapa de bits.
 
 ## <a name="examples"></a>Ejemplos
 
-Consulte el tema [de información general de DWriteCore](/windows/win32/directwrite/dwritecore-overview) y la aplicación de ejemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Consulte el [tema de información general de DWriteCore](../dwritecore-overview.md) y la aplicación de ejemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |

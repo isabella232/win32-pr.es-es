@@ -1,19 +1,19 @@
 ---
-description: Los siguientes GUID definen los distintos tipos de perfiles de sensor.
+description: Los GUID siguientes definen los distintos tipos de perfiles de sensor.
 ms.assetid: 9CA55255-484F-44C9-B3B7-3C152392FDF5
-title: GUID de Perfil de sensor (mfapi. h)
+title: GUID de perfil de sensor (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ae7bf1bd1e3391301cc6da4151968b4e761fb0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 825a7c83b45d9ceeaf32640b084682f138eca86b
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811557"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550000"
 ---
-# <a name="sensor-profile-guids"></a>GUID de Perfil de sensor
+# <a name="sensor-profile-guids"></a>GUID de perfil de sensor
 
-Los siguientes GUID definen los distintos tipos de perfiles de sensor. Estos GUID se usan normalmente en la estructura [**SENSORPROFILEID**](/windows/win32/api/mfidl/ns-mfidl-sensorprofileid) .
+Los GUID siguientes definen los distintos tipos de perfiles de sensor. Estos GUID se usan normalmente en la [**estructura SENSORPROFILEID.**](/windows/win32/api/mfidl/ns-mfidl-sensorprofileid)
 
 <dl> <dt>
 
@@ -32,7 +32,7 @@ Velocidad de fotogramas alta.
 
 
 
-HDR con vídeo de WCG.
+Vídeo de HDR con WCG.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ HDR con vídeo de WCG.
 
 
 
-HDR con WCG Photo.
+FOTO DE HDR con WCG.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ HDR con WCG Photo.
 
 
 
-Secuencia de fotográficas variable.
+Secuencia de fotos variable.
 
 
 </dt> </dl> </dd> <dt>
@@ -67,15 +67,23 @@ Vídeo HDR8.
 
 </dt> </dl> </dd> </dl>
 
+<span id="KSCAMERAPROFILE_CompressedCamera"></span><span id="kscameraprofile_compressedcamera"></span><span id="KSCAMERAPROFILE_COMPRESSEDCAMERA"></span>**KSCAMERAPROFILE \_ CompressedCamera**
+</dt> <dd> <dl> <dt>
+
+El perfil admite secuencias de cámara comprimidas para permitir guardar flujos comprimidos directamente en un formato comprimido sin incurrir en el costo de descomprimir y, a continuación, volver a comprimir la secuencia.
+
+
+</dt> </dl> </dd> </dl>
+
 ## <a name="requirements"></a>Requisitos
 
 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 solo para \[ aplicaciones de escritorio\]<br/>                          |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Server\]<br/>                                    |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

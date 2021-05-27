@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RESAMPLE_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 0caba1a560b72a94ed04cacd824414964af82c35
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: ff2660257fa619edb72f10efb419f3c15f43fbde
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804044"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549730"
 ---
 # <a name="dml_resample_grad_operator_desc-structure-directmlh"></a>DML_RESAMPLE_GRAD_OPERATOR_DESC estructura (directml.h)
 
@@ -96,7 +96,7 @@ struct DML_RESAMPLE_GRAD_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputGradientTensor`
 
@@ -124,19 +124,19 @@ Número de elementos de las *matrices Scales*, *InputPixelOffsets* y *OutputPixe
 
 `Scales`
 
-Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) **const [FLOAT](../../winprog/windows-data-types.md) \***
 
 Vea *Escalas* en [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).
 
 `InputPixelOffsets`
 
-Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) **const [FLOAT](../../winprog/windows-data-types.md) \***
 
 Vea *InputPixelOffsets* en [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).
 
 `OutputPixelOffsets`
 
-Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Tamaño de campo \_ \_ (DimensionCount) **const [FLOAT](../../winprog/windows-data-types.md) \***
 
 Vea *OutputPixelOffsets* en [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).
 

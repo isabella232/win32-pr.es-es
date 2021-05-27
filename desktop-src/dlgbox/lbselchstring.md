@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 137429b8fa7eb29fb96ec579e0240c4c282d0766
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 62d61f88bd7cb6a84a94a3d8a246e6045f88a305
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590772"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550050"
 ---
 # <a name="lbselchstring-message"></a>Mensaje LBSELCHSTRING
 
-\[A partir de Windows Vista, **los** cuadros **de** diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo de elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
+\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
 Un **cuadro de** diálogo Abrir o Guardar como envía el mensaje registrado  **LBSELCHSTRING** al procedimiento de enlace cuando la selección cambia en cualquiera de los cuadros de lista o cuadros combinados del cuadro de diálogo.
 
@@ -71,7 +71,7 @@ La palabra de orden bajo especifica el número de elemento de la cadena seleccio
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El procedimiento de enlace debe especificar la **constante LBSELCHSTRING** en una llamada a la función [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener el identificador del mensaje enviado por el cuadro de diálogo.
 
@@ -83,7 +83,7 @@ El procedimiento de enlace debe especificar la **constante LBSELCHSTRING** en un
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LBSELCHSTRINGW** (Unicode) y **LBSELCHSTRINGA** (ANSI)<br/>                                    |
 
 
@@ -98,7 +98,7 @@ El procedimiento de enlace debe especificar la **constante LBSELCHSTRING** en un
 [**CDN \_ SELCHANGE**](cdn-selchange.md)
 </dt> <dt>
 
-[**CDN \_ TYPECHANGE**](cdn-typechange.md)
+[**CAMBIO DE \_ TIPO DE RED CDN**](cdn-typechange.md)
 </dt> <dt>
 
 [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)
@@ -109,6 +109,4 @@ El procedimiento de enlace debe especificar la **constante LBSELCHSTRING** en un
 
 [Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: cefe46cad201490d7343cc8c95258809739e0492
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: 9fdb3073928739e28df63fc7d3ade918b29f9217
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380841"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549400"
 ---
 # <a name="id2d1factorycreaterectanglegeometry-methods"></a>Métodos ID2D1Factory::CreateRectangleGeometry
 
@@ -29,8 +29,8 @@ Crea un [**objeto ID2D1RectangleGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2
 
 | Método                                                                                                                                                            | Descripción                                                                      |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|
-| [**CreateRectangleGeometry(D2D1 \_ RECT \_ F \* ,ID2D1RectangleGeometry \* \* )**](https://msdn.microsoft.com/library/Dd371286(v=VS.85).aspx) | Crea un [**objeto ID2D1RectangleGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)) <br/> |
-| [**CreateRectangleGeometry(D2D1 \_ RECT \_ F&,ID2D1RectangleGeometry \* \* )**](https://msdn.microsoft.com/library/Dd371286(v=VS.85).aspx)  | Crea un [**objeto ID2D1RectangleGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)) <br/> |
+| [**CreateRectangleGeometry(D2D1 \_ RECT \_ F , \* ID2D1RectangleGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)) | Crea un [**objeto ID2D1RectangleGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)) <br/> |
+| [**CreateRectangleGeometry(D2D1 \_ RECT \_ F&,ID2D1RectangleGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry))  | Crea un [**objeto ID2D1RectangleGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)) <br/> |
 
 
 

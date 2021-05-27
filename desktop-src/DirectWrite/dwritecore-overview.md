@@ -6,12 +6,12 @@ keywords:
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: 49681f434fa4eef99e9775b2c3800f48f15915a2
-ms.sourcegitcommit: 8a31a21726d4a8ebfddfa71f02f1bfffea459277
+ms.openlocfilehash: c619b74cf334218813a74e63cca6d5fab400e563
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110208716"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550300"
 ---
 # <a name="dwritecore-overview"></a>Información general de DWriteCore
 
@@ -110,13 +110,13 @@ La superficie de la API DWriteCore es prácticamente la misma que para [DirectWr
 
 #### <a name="create-a-factory-object"></a>Creación de un objeto de generador
 
-La [**función gratuita DWriteCoreCreateFactory**](/windows/win32/directwrite/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) crea un objeto de generador que se usa para la posterior creación de objetos DWriteCore individuales.
+La [**función gratuita DWriteCoreCreateFactory**](./dwrite_core/nf-dwrite_core-dwritecorecreatefactory.md) crea un objeto de generador que se usa para la posterior creación de objetos DWriteCore individuales.
 
 **DWriteCoreCreateFactory es** funcionalmente igual que la función [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) exportada por la versión del sistema de DirectWrite. La función DWriteCore tiene un nombre diferente para evitar ambigüedades.
 
 #### <a name="create-a-restricted-factory-object"></a>Creación de un objeto de generador restringido
 
-La [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) enumeración tiene una nueva &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, que indica un generador restringido. Una fábrica restringida está más bloqueada que una factoría aislada. No interactúa con una caché de fuentes persistente ni entre procesos de ninguna manera. Además, la colección de fuentes del sistema devuelta desde este generador incluye solo fuentes conocidas. Aquí se muestra cómo puede usar **DWRITE_FACTORY_TYPE_ISOLATED2** para crear un objeto de generador restringido al llamar a la función [**gratuita DWriteCoreCreateFactory.**](/windows/win32/directwrite/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)
+La [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) enumeración tiene una nueva &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, que indica un generador restringido. Una fábrica restringida está más bloqueada que una factoría aislada. No interactúa con una caché de fuentes persistente ni entre procesos de ninguna manera. Además, la colección de fuentes del sistema devuelta desde este generador incluye solo fuentes conocidas. Aquí se muestra cómo puede usar **DWRITE_FACTORY_TYPE_ISOLATED2** para crear un objeto de generador restringido al llamar a la función [**gratuita DWriteCoreCreateFactory.**](./dwrite_core/nf-dwrite_core-dwritecorecreatefactory.md)
 
 ```cppwinrt
 // Create a factory that doesn't interact with any cross-process nor

@@ -1,9 +1,9 @@
 ---
-title: D1111 usando la capa cuando el clip sea suficiente
+title: D1111 usar capa cuando el clip es suficiente
 ms.assetid: 07fe3c66-15be-408b-a30b-a7f52919c058
-description: Una capa se usa con una máscara de opacidad nula, una opacidad de 1,0 y una máscara geométrica rectangular alineada de eje. La API de recorte de inserciones/pop debe lograr los mismos resultados con un rendimiento mayor.
+description: Se usa una capa con una máscara de opacidad NULL, una opacidad de 1,0 y una máscara geométrica rectangular alineada en el eje. Push/Pop Clip API debe lograr los mismos resultados con un mayor rendimiento.
 keywords:
-- D1111 usar la capa cuando el clip sea Direct2D suficiente
+- D1111 Usar capa cuando clip es suficiente con Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,39 +13,39 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: a30bbfd7b8ca448928249018a28bc4d6a8a2f57f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e8463cc3940b69e326f13df6be9602dd6073fec0
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793702"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549910"
 ---
-# <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: uso de la capa cuando el clip es suficiente
+# <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: Usar la capa cuando el clip es suficiente
 
-PERF: una capa se usa con una máscara de opacidad **nula** , una opacidad de 1,0 y una máscara geométrica rectangular alineada de eje. La API de recorte de inserciones/pop debe lograr los mismos resultados con un rendimiento mayor.
+PERF: se usa una capa con una máscara de opacidad **NULL,** una opacidad de 1,0 y una máscara geométrica rectangular alineada en el eje. Push/Pop Clip API debe lograr los mismos resultados con un mayor rendimiento.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
 <dl> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interfaz*
+<span id="interface"></span><span id="INTERFACE"></span>*Interfaz*
 </dt> <dd>
 
 Dirección de la interfaz.
 
 </dd> </dl> 
 
-|             |             |
+| &nbsp;      |    &nbsp;   |
 |-------------|-------------|
-| Nivel de error | Información |
+| Nivel de error | Information |
 
 
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
-El código siguiente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) y [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) cuando la capa contiene solo un primitivo (un rectángulo) y los campos de la estructura [**de \_ \_ parámetros de capa D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) se establecen en valores predeterminados. Para obtener los valores predeterminados de la estructura de **\_ \_ parámetros de capa D2D1** , vea [**LayerParameter**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters).
+En el código siguiente se usan [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) y [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) cuando la capa contiene solo un primitivo (un rectángulo) y los campos de la estructura LAYER PARAMETERS de [**D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) se establecen en valores predeterminados. Para obtener los valores predeterminados de la estructura **D2D1 \_ LAYER \_ PARAMETERS,** vea [**LayerParameter**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters).
 
 
 ```C++
@@ -59,7 +59,7 @@ El código siguiente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1re
 
 
 
-Este ejemplo genera el siguiente mensaje de depuración:
+En este ejemplo se genera el siguiente mensaje de depuración:
 
 ``` syntax
 DEBUG INFO - PERF - A layer is being used with a NULL opacity mask, 1.0 opacity, 
@@ -69,8 +69,8 @@ DEBUG INFO - PERF - A layer is being used with a NULL opacity mask, 1.0 opacity,
 
 ## <a name="possible-causes"></a>Causas posibles
 
-Se usó una capa cuando los métodos [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) y [**PopAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-popaxisalignedclip) hubieran sido suficientes.
+Se usó una capa cuando los [**métodos PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) y [**PopAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-popaxisalignedclip) hubieran bastado.
 
- 
+ 
 
- 
+ 

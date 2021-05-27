@@ -1,19 +1,19 @@
 ---
+title: Funciones auxiliares de IP
 description: Las siguientes funciones recuperan y modifican los valores de configuración para el transporte TCP/IP en el equipo local.
-ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-title: Funciones de aplicación auxiliar IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11c8bff21f41c04bb5aecf505b251fbbe2f8bc62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
+ms.openlocfilehash: ae19803c25512242b613735a060c7beda8c1df70
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103818995"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549510"
 ---
 # <a name="ip-helper-functions"></a>Funciones auxiliares de IP
 
-Las siguientes funciones recuperan y modifican los valores de configuración para el transporte TCP/IP en el equipo local. La siguiente lista de categorías puede ayudar a determinar qué colección de funciones es la más adecuada para una tarea determinada.
+Las siguientes funciones recuperan y modifican los valores de configuración para el transporte TCP/IP en el equipo local. La siguiente lista de categorías puede ayudar a determinar qué colección de funciones es más adecuada para una tarea determinada.
 
 -   [**GetNetworkConnectivityHint**](/windows/win32/api/netioapi/nf-netioapi-getnetworkconnectivityhint)
 -   [**GetNetworkConnectivityHintForInterface**](/windows/win32/api/netioapi/nf-netioapi-getnetworkconnectivityhintforinterface)
@@ -50,8 +50,8 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**ConvertInterfaceLuidToNameW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfaceluidtonamew)
 -   [**ConvertInterfaceNameToLuidA**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluida)
 -   [**ConvertInterfaceNameToLuidW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluidw)
--   [**Si \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
--   [**Si \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
+-   [**if \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
+-   [**if \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
 
 ## <a name="interface-management"></a>Administración de interfaces
 
@@ -173,7 +173,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 
 -   [**GetNetworkParams**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getnetworkparams)
 
-## <a name="notification"></a>notificación
+## <a name="notification"></a>Notificación
 
 -   [**CancelMibChangeNotify2**](/windows/win32/api/Netioapi/nf-netioapi-cancelmibchangenotify2)
 -   [**NotifyAddrChange**](/windows/win32/api/Iphlpapi/nf-iphlpapi-notifyaddrchange)
@@ -182,7 +182,15 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**NotifyRouteChange2**](/windows/win32/api/Netioapi/nf-netioapi-notifyroutechange2)
 -   [**NotifyUnicastIpAddressChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyunicastipaddresschange)
 
-## <a name="persistent-port-reservation"></a>Reserva de Puerto persistente
+## <a name="packet-timestamping"></a>Marca de tiempo de paquetes
+
+-   [**CaptureInterfaceHardwareCrossTimestamp**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp)
+-   [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities)
+-   [**GetInterfaceSupportedTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities)
+-   [**RegisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange)
+-   [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/unregisterinterfacetimestampconfigchange)
+
+## <a name="persistent-port-reservation"></a>Reserva de puerto persistente
 
 -   [**CreatePersistentTcpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistenttcpportreservation)
 -   [**CreatePersistentUdpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistentudpportreservation)
@@ -196,18 +204,18 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**CancelSecurityHealthChangeNotify**](/previous-versions/windows/desktop/legacy/bb442512(v=vs.85))
 -   [**NotifySecurityHealthChange**](/previous-versions/windows/desktop/legacy/bb451761(v=vs.85))
 
-Estas funciones se definen solo en Windows Server 2003.
+Estas funciones solo se definen en Windows Server 2003.
 
 > [!Note]  
 > Estas funciones no están disponibles en Windows Vista ni en Windows Server 2008.
 
-## <a name="teredo-ipv6-client-management"></a>Administración de cliente IPv6 Teredo
+## <a name="teredo-ipv6-client-management"></a>Administración de cliente IPv6 de Teredo
 
 -   [**GetTeredoPort**](/windows/win32/api/Netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y Protocolo de datagramas de usuario (UDP)
+## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y protocolo de datagramas de usuario (UDP)
 
 -   [**GetExtendedTcpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedtcptable)
 -   [**GetExtendedUdpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedudptable)
@@ -236,7 +244,7 @@ Estas funciones se definen solo en Windows Server 2003.
 ## <a name="deprecated-apis"></a>Interfaces API desusadas
 
 > [!Note]  
-> Estas funciones están en desuso y no son compatibles con Microsoft.
+> Estas funciones están en desuso y Microsoft no las admite.
 
 -   [**AllocateAndGetTcpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgettcpextablefromstack)
 -   [**AllocateAndGetUdpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgetudpextablefromstack)

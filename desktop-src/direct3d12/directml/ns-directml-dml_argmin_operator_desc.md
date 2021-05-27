@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ARGMIN_OPERATOR_DESC
-ms.openlocfilehash: 2e12a81593504a4eb7a0917e545bfa20c70647ff
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: da270ea5354e361067335ba1c789efe18310437a
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804080"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550480"
 ---
 # <a name="dml_argmin_operator_desc-structure-directmlh"></a>DML_ARGMIN_OPERATOR_DESC estructura (directml.h)
 
 Genera los índices de los elementos con valores mínimos dentro de una o varias dimensiones del tensor de entrada.
 
-Cada elemento de salida es el resultado de aplicar una *reducción argmin* en un subconjunto del tensor de entrada. La *función argmin* genera el índice del elemento con valores mínimos dentro de un conjunto de elementos de entrada. Los elementos de entrada implicados en cada reducción se determinan mediante los ejes de entrada proporcionados. De forma similar, cada índice de salida es con respecto a los ejes de entrada proporcionados. Si se especifican todos los ejes de entrada, el operador aplica una reducción *argmin* única y genera un único elemento de salida.
+Cada elemento de salida es el resultado de aplicar una reducción *argmin* en un subconjunto del tensor de entrada. La *función argmin* genera el índice del elemento con valores mínimos dentro de un conjunto de elementos de entrada. Los elementos de entrada implicados en cada reducción están determinados por los ejes de entrada proporcionados. De forma similar, cada índice de salida es con respecto a los ejes de entrada proporcionados. Si se especifican todos los ejes de entrada, el operador aplica una reducción *de argmin* única y genera un único elemento de salida.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -73,7 +73,7 @@ struct DML_ARGMIN_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
@@ -85,22 +85,22 @@ Tensor del que se leerá.
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensor en el que se escriben los resultados. Cada elemento de salida es el resultado de una *reducción argmin* en un subconjunto de elementos de *InputTensor*.
+Tensor en el que se escriben los resultados. Cada elemento de salida es el resultado de una reducción *argmin* en un subconjunto de elementos de *InputTensor*.
 
-- *DimensionCount* debe coincidir *con InputTensor.DimensionCount* (se conserva el rango del tensor de entrada).
+- *DimensionCount* debe coincidir *con InputTensor.DimensionCount* (se conserva la clasificación del tensor de entrada).
 - *Los* tamaños deben *coincidir con InputTensor.Sizes,* excepto las dimensiones incluidas en los ejes reducidos, que deben tener el tamaño 1.
 
 `AxisCount`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
 Número de ejes que se reducirán. Este campo determina el tamaño de la matriz *Axes.*
 
 `Axes`
 
-Tipo: \_ Field_size \_ (AxisCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (AxisCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Ejes a lo largo de los que se va a reducir. Los valores deben estar en el intervalo `[0, InputTensor.DimensionCount - 1]` .
+Ejes a lo largo de los cuales se va a reducir. Los valores deben estar en el intervalo `[0, InputTensor.DimensionCount - 1]` .
 
 `AxisDirection`
 
@@ -108,7 +108,7 @@ DML_AXIS_DIRECTION AxisDirection;
 
 Tipo: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**
 
-Determina qué índice seleccionar cuando varios elementos de entrada tienen el mismo valor.
+Determina qué índice se va a seleccionar cuando varios elementos de entrada tengan el mismo valor.
 - **DML_AXIS_DIRECTION_INCREASING** devuelve el índice del primer elemento con valores mínimos (por ejemplo, `argmin({1,2,3,2,1}) = 0` )
 - **DML_AXIS_DIRECTION_DECREASING** devuelve el índice del último elemento con valores mínimos (por ejemplo, `argmin({1,2,3,2,1}) = 4` )
 
@@ -157,8 +157,8 @@ OutputTensor: (Sizes:{1, 1}, DataType:UINT32)
 [[4]]  // argmin({1, 2, 3, 3, 0, 4, 2, 5, 2})
 ```
 
-## <a name="remarks"></a>Observaciones
-Los tamaños de tensor de salida deben ser los mismos que los tamaños de tensor de entrada, excepto para los ejes reducidos, que deben ser 1.
+## <a name="remarks"></a>Comentarios
+Los tamaños de tensor de salida deben ser los mismos que los tamaños de tensor de entrada, excepto los ejes reducidos, que deben ser 1.
 
 Cuando *AxisDirection* es [DML_AXIS_DIRECTION_INCREASING](/windows/win32/api/directml/ne-directml-dml_axis_direction), esta API es equivalente a [DML_REDUCE_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_reduce_operator_desc) con [DML_REDUCE_FUNCTION_ARGMIN](/windows/win32/api/directml/ne-directml-dml_reduce_function).
 
@@ -167,7 +167,7 @@ Un subconjunto de esta funcionalidad se expone a través [del operador DML_REDUC
 ## <a name="availability"></a>Disponibilidad
 Este operador se introdujo en `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensor
+## <a name="tensor-constraints"></a>Restricciones de Tensor
 *InputTensor* y *OutputTensor* deben tener el mismo *DimensionCount.*
 
 ## <a name="tensor-support"></a>Compatibilidad con Tensor

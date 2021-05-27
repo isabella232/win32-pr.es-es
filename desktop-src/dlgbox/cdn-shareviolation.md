@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e79d9c48d3e80d14d83de07c03f7db119ea8e78
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 77cd862fa1c3598a4e81a776004f26ef02290477
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590702"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548860"
 ---
 # <a name="cdn_shareviolation-notification-code"></a>Código de notificación \_ DE SHAREVIOLATION de CDN
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
 Enviado por un  cuadro de diálogo Abrir o Guardar  **como** de estilo explorador cuando el usuario hace clic en el botón Aceptar y se produce una infracción de uso compartido de red para el archivo seleccionado.
 
@@ -74,7 +74,7 @@ Para evitar la presentación del mensaje de advertencia estándar, devuelva un v
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El sistema envía esta notificación solo si el cuadro de diálogo se creó con el **valor OFN \_ EXPLORER.**
 
@@ -122,6 +122,4 @@ El sistema envía esta notificación solo si no se especificó el valor **OFN \_
 
 [Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

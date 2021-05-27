@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 180a16c32fb6e83ea0b17e38b42ce8c729f7685a
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 3922dd71b70ace579fa4b5f2318776779afdfa4e
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590812"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548870"
 ---
 # <a name="cdn_typechange-notification-code"></a>Código de notificación TYPECHANGE de CDN \_
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
 Enviado por un cuadro de **diálogo** Abrir o Guardar **como** de estilo explorador cuando el usuario selecciona un nuevo tipo de archivo en el cuadro combinado tipos de archivo.
 
@@ -63,7 +63,7 @@ La [**estructura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) 
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El sistema envía esta notificación solo si el cuadro de diálogo se creó con el **valor OFN \_ EXPLORER.**
 
@@ -106,6 +106,4 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 
 [Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

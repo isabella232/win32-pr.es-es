@@ -1,9 +1,9 @@
 ---
-title: D1104 posible fuga
+title: D1104 Posible pérdida
 ms.assetid: 564de2e2-5004-43e8-8616-1ab11127738a
-description: El generador se liberó pero la interfaz creada a partir de ella todavía está activa. Aunque es válido liberar recursos después de liberar el generador, esta condición podría indicar una fuga de memoria.
+description: Se lanzó el generador, pero la interfaz creada a partir de ella sigue estando activo. Aunque es válido liberar recursos después de liberar el generador, esta condición podría indicar una pérdida de memoria.
 keywords:
-- D1104 posible fuga Direct2D
+- D1104 Possible Leak Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,50 +13,50 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 71ccbee152d60a73fbea5ebac2a1074534b69c3a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b6629a0da2b89e13feebc33fe5742e3459fc082b
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104357992"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548680"
 ---
-# <a name="d1104-possible-leak"></a>D1104: posible fuga
+# <a name="d1104-possible-leak"></a>D1104: posible pérdida
 
-\[  \] Se liberó el generador de fábrica pero la \[ *interfaz* \] de interfaz creada a partir de ella todavía está activa. Aunque es válido liberar recursos después de liberar el generador, esta condición podría indicar una fuga de memoria.
+Se lanzó \[ *el generador* \] de fábrica, pero la interfaz \[ *creada* a partir de ella \] sigue estando activo. Aunque es válido liberar recursos después de liberar el generador, esta condición podría indicar una pérdida de memoria.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
 <dl> <dt>
 
-<span id="factory"></span><span id="FACTORY"></span>*Factory*
+<span id="factory"></span><span id="FACTORY"></span>*Fábrica*
 </dt> <dd>
 
-Dirección del generador que se liberó.
+Dirección del generador que se publicó.
 
 </dd> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interfaz*
+<span id="interface"></span><span id="INTERFACE"></span>*Interfaz*
 </dt> <dd>
 
 Dirección de la interfaz que se creó en el *generador*.
 
 </dd> </dl> 
 
-|             |             |
+| &nbsp;      |    &nbsp;   |
 |-------------|-------------|
-| Nivel de error | Información |
+| Nivel de error | Information |
 
 
 
- 
+ 
 
 ## <a name="possible-causes"></a>Causas posibles
 
-El generador se liberó pero la interfaz creada a partir de ella todavía está activa.
+Se lanzó el generador, pero la interfaz creada a partir de ella sigue estando activo.
 
- 
+ 
 
- 
+ 
 
 
 

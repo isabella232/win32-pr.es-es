@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
-ms.openlocfilehash: eecf849a06ee8e99ac9c015ecd4568496120b2d9
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: e858b8ce20df4b1bf12ac9efe360941eb93c54d1
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804474"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550410"
 ---
 # <a name="dml_local_response_normalization_grad_operator_desc-directmlh"></a>DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC (directml.h)
 
@@ -75,7 +75,7 @@ struct DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
@@ -97,31 +97,31 @@ Tensor de salida que contiene los degradados de propiedad pendiente.
 
 `CrossChannel`
 
-Tipo: **[BOOL](/windows/win32/winprog/windows-data-types)**
+Tipo: **[BOOL](../../winprog/windows-data-types.md)**
 
 **TRUE** si la capa LRN suma entre canales; **FALSE** si la capa LRN suma entre dimensiones espaciales.
 
 `LocalSize`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
-Número máximo de elementos que se suman por dimensión (la región local se recorta para que todos los elementos estén dentro de los límites). Si *CrossChannel* es **TRUE**, este es el ancho y alto de la región local. Si *CrossChannel* es **FALSE,** este es el número de elementos de la región local. Este valor debe ser al menos 1.
+Número máximo de elementos que se suma por dimensión (la región local se recorta para que todos los elementos estén dentro de los límites). Si *CrossChannel* es **TRUE**, este es el ancho y alto de la región local. Si *CrossChannel* es **FALSE,** este es el número de elementos de la región local. Este valor debe ser al menos 1.
 
 `Alpha`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valor del parámetro de escalado. Se recomienda un valor de 0,0001 como valor predeterminado.
 
 `Beta`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valor del exponente. Se recomienda un valor de 0,75 como valor predeterminado.
 
 `Bias`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valor de sesgo. Se recomienda un valor de 1 como valor predeterminado.
 

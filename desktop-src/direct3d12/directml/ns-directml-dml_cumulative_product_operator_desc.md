@@ -44,19 +44,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
-ms.openlocfilehash: 2f0c6a6b6f12792a245027a7f8e86c05f7e85192
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 71a078ad0f47c19ad1964d8d21f22e06822b5d01
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804534"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550220"
 ---
 # <a name="dml_cumulative_product_operator_desc-directmlh"></a>DML_CUMULATIVE_PRODUCT_OPERATOR_DESC (directml.h)
 
 Multiplica los elementos de un tensor a lo largo de un eje, escribiendo el recuento en ejecución del producto en el tensor de salida.
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.5 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.5 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -70,27 +70,27 @@ struct DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensor que contiene los datos de entrada. Suele ser el mismo tensor que se proporcionó que *inputTensor* para [**DML_BATCH_NORMALIZATION_OPERATOR_DESC**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) en el paso de reenvío.
+Tensor que contiene los datos de entrada. Suele ser el mismo tensor que se proporcionó que *inputTensor* para [**DML_BATCH_NORMALIZATION_OPERATOR_DESC**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) en el paso hacia delante.
 
-Tensor de entrada que contiene los elementos que se va a multiplicar.
+Tensor de entrada que contiene los elementos que se deben multiplicar.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensor de salida en el que se escriben los productos acumulativos resultantes. Este tensor debe tener los mismos tamaños y tipo de datos que *InputTensor.*
+Tensor de salida en el que se escriben los productos acumulativos resultantes. Este tensor debe tener los mismos tamaños y tipo de datos *que InputTensor.*
 
 `Axis`
 
 Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Índice de la dimensión por la que se multiplican los elementos. Este valor debe ser menor que *dimensionCount* de *InputTensor.*
+Índice de la dimensión por la que se multiplican los elementos. Este valor debe ser menor que *DimensionCount* del *inputTensor*.
 
 `AxisDirection`
 
@@ -102,7 +102,7 @@ Uno de los valores de la [enumeración DML_AXIS_DIRECTION](./ne-directml-dml_axi
 
 Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">BOOL</a></b>
 
-Si **es TRUE**, el valor del elemento actual se excluye al escribir el recuento en ejecución en el tensor de salida. Si **es FALSE**, el valor del elemento actual se incluye en el recuento en ejecución.
+Si **es TRUE**, el valor del elemento actual se excluye al escribir el recuento en ejecución en el tensor de salida. Si **es FALSE,** el valor del elemento actual se incluye en el recuento en ejecución.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -115,7 +115,7 @@ InputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [9, 6, 2, 4]]]]
 ```
 
-### <a name="example-1-cumulative-product-across-horizontal-slivers"></a>Ejemplo 1. Producto acumulativo en los slivers horizontales
+### <a name="example-1-cumulative-product-across-horizontal-slivers"></a>Ejemplo 1. Producto acumulativo a través de slivers horizontales
 
 ```
 Axis: 3
@@ -145,7 +145,7 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
 
 ### <a name="example-3-axis-direction"></a>Ejemplo 3. Dirección del eje
 
-Establecer *AxisDirection en* [**DML_AXIS_DIRECTION_DECREASING**](/windows/win32/direct3d12/directml/ne-directml-dml_axis_direction) tiene el efecto de invertir el orden transversal de los elementos al calcular el recuento en ejecución.
+Establecer *AxisDirection en* [**DML_AXIS_DIRECTION_DECREASING**](./ne-directml-dml_axis_direction.md) tiene el efecto de invertir el orden transversal de los elementos al calcular el recuento en ejecución.
 
 ```
 Axis: 3
@@ -160,7 +160,7 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
 
 ### <a name="example-4-multiplying-along-a-different-axis"></a>Ejemplo 4. Multiplicación a lo largo de un eje diferente
 
-En este ejemplo, el producto se produce verticalmente, a lo largo del eje de alto (segunda dimensión).
+En este ejemplo, el producto se produce verticalmente, a lo largo del eje de altura (segunda dimensión).
 
 ```
 Axis: 2
@@ -173,13 +173,13 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [54, 48, 42, 60]]]] //      [2*3*9 ...]
 ```
 
-## <a name="remarks"></a>Observaciones
-Este operador admite la ejecución en contexto, lo que significa que el tensor de salida puede usar el alias *InputTensor durante* el enlace.
+## <a name="remarks"></a>Comentarios
+Este operador admite la ejecución en contexto, lo que significa que el tensor de salida puede usar el alias *InputTensor* durante el enlace.
 
 ## <a name="availability"></a>Disponibilidad
 Este operador se introdujo en `DML_FEATURE_LEVEL_3_1` .
 
-## <a name="tensor-constraints"></a>Restricciones de tensor
+## <a name="tensor-constraints"></a>Restricciones de Tensor
 *InputTensor* y *OutputTensor* deben tener los mismos *tipos de datos* y *tamaños.*
 
 ## <a name="tensor-support"></a>Compatibilidad con Tensor

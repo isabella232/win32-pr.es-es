@@ -16,18 +16,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fddbb3460f15e1efb946b9bd17f1c85fd031a8
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 24dd07faecc66bc50c408eab36bcbd8c93c460ef
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590792"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549220"
 ---
 # <a name="fileokstring-message"></a>Mensaje FILEOKSTRING
 
-\[A partir de Windows Vista, **los** cuadros **de** diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo de elemento común](/windows/win32/shell/common-file-dialog). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
+\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
-Un **cuadro de** diálogo Abrir o Guardar como envía el mensaje registrado **FILEOKSTRING** al procedimiento de enlace,  [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc), cuando el usuario especifica un nombre de archivo y hace clic en el **botón** Aceptar. El procedimiento de enlace puede aceptar el nombre de archivo y permitir que el cuadro de diálogo se cierre o rechazar el nombre de archivo y forzar que el cuadro de diálogo permanezca abierto.
+Un **cuadro** de **diálogo** Abrir o Guardar como envía el mensaje **registrado FILEOKSTRING** al procedimiento de enlace, [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc), cuando el usuario especifica un nombre de archivo y hace clic en el **botón** Aceptar. El procedimiento de enlace puede aceptar el nombre de archivo y permitir que el cuadro de diálogo se cierre, o rechazar el nombre de archivo y forzar que el cuadro de diálogo permanezca abierto.
 
 
 ```C++
@@ -58,9 +58,9 @@ Puntero a una [**estructura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commd
 
 Si el procedimiento de enlace  devuelve cero, **el** cuadro de diálogo Abrir o Guardar como acepta el nombre de archivo especificado y se cierra.
 
-Si el procedimiento de enlace devuelve  un  valor distinto de cero, el cuadro de diálogo Abrir o Guardar como rechaza el nombre de archivo especificado y permanece abierto.
+Si el procedimiento de enlace devuelve  un valor distinto de cero, el cuadro de diálogo Abrir o Guardar **como** rechaza el nombre de archivo especificado y permanece abierto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El procedimiento de enlace debe especificar la **constante FILEOKSTRING** en una llamada a la función [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener el identificador del mensaje enviado por el cuadro de diálogo.
 
@@ -72,7 +72,7 @@ El procedimiento de enlace debe especificar la **constante FILEOKSTRING** en una
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **FILEOKSTRINGW** (Unicode) y **FILEOKSTRINGA** (ANSI)<br/>                                      |
 
 
@@ -98,6 +98,4 @@ El procedimiento de enlace debe especificar la **constante FILEOKSTRING** en una
 
 [Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

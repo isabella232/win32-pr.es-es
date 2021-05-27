@@ -75,7 +75,7 @@
             - name: DWriteCreateFactory
               href: /windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory
             - name: DWriteCoreCreateFactory (DWriteCore)
-              href: /windows/win32/directwrite/dwrite_core/nf-dwrite_core-dwritecorecreatefactory
+              href: ./dwrite_core/nf-dwrite_core-dwritecorecreatefactory.md
         - name: Enumeraciones de DirectWrite
           href: enumerations.md
           items:
@@ -727,7 +727,7 @@
             - name: IDWriteFontFile
               href: /windows/win32/api/dwrite/nn-dwrite-idwritefontfile
               items:
-                - name: Analizar
+                - name: Análisis
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritefontfile-analyze
                 - name: GetLoader
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritefontfile-getloader
@@ -965,11 +965,11 @@
             - name: IDWriteLocalFontFileLoader
               href: idwritelocalfontfileloader.md
               items:
-                - name: GetFilePathLengthFromKey (método)
+                - name: Método GetFilePathLengthFromKey
                   href: idwritelocalfontfileloader-getfilepathlengthfromkey.md
                 - name: GetFilePathFromKey (método)
                   href: idwritelocalfontfileloader-getfilepathfromkey.md
-                - name: GetLastWriteTimeFromKey (método)
+                - name: Método GetLastWriteTimeFromKey
                   href: idwritelocalfontfileloader-getlastwritetimefromkey.md
             - name: IDWriteLocalizedStrings
               href: /windows/win32/api/dwrite/nn-dwrite-idwritelocalizedstrings
@@ -1351,7 +1351,7 @@
                   href: idwritetextlayout3-getlinemetrics.md
                 - name: Método GetLineSpacing
                   href: idwritetextlayout3-getlinespacing.md
-                - name: InvalidateLayout (método)
+                - name: Método InvalidateLayout
                   href: idwritetextlayout3-invalidatelayout.md
                 - name: Método SetLineSpacing
                   href: idwritetextlayout3-setlinespacing.md

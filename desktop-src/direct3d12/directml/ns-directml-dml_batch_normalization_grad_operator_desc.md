@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC
-ms.openlocfilehash: ba12541514c8121d483236afa2163a04bd991288
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 2b94ac1dcf389d424aaf74d615f36cdf7acc804c
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804535"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550440"
 ---
 # <a name="dml_batch_normalization_grad_operator_desc-directmlh"></a>DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC (directml.h)
 
@@ -76,7 +76,7 @@ struct DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
@@ -164,11 +164,11 @@ El siguiente cálculo se realiza o cada valor correspondiente en las entradas.
 
 `OutputBiasGradient = sum(InputGradient)`  
 
-se `sum` calcula en todas las dimensiones que deben difundirse (vea el ejemplo de *OutputScaleGradientTensor*). Si no se necesita ninguna difusión, no se necesita ninguna suma.
+se calcula en todas las dimensiones que se deben `sum` difundir (vea el ejemplo de *OutputScaleGradientTensor).* Si no se necesita ninguna difusión, no se necesita ninguna suma.
 
 `Epsilon`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valor pequeño que se agrega a la varianza para evitar cero.
 

@@ -44,32 +44,32 @@ api_location:
 - DirectML.h
 api_name:
 - DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC
-ms.openlocfilehash: 4dd50d80dfe4ae60e3fe7e67124ef00bfbc7bf2b
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 5b98e1f57268cab70c2fb672991bce3d67419db8
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803883"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549790"
 ---
 # <a name="dml_quantized_linear_convolution_operator_desc-structure-directmlh"></a>DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC estructura (directml.h)
 Realiza una convolución del *filterTensor* con *InputTensor*. Este operador realiza la convolución hacia delante en datos cuantificados. Este operador es matemáticamente equivalente a descuantizar las entradas, implicar y, a continuación, cuantificar la salida. 
 
-Las funciones lineales de cuantificación usadas por este operador son las funciones de cuantificación lineal
+Las funciones lineales de cuantificación usadas por este operador son las funciones de cuantificación lineales.
 
-### <a name="dequantize-function"></a>Desquantize (Función)
+### <a name="dequantize-function"></a>Función Dequantize
 
 ```
 f(Input, Scale, ZeroPoint) = (Input - ZeroPoint) * Scale
 ```
 
-### <a name="quantize-function"></a>Cuantificación de la función
+### <a name="quantize-function"></a>Función Quantize
 
 ```
 f(Input, Scale, ZeroPoint) = clamp(round(Input / Scale) + ZeroPoint, Min, Max)
 ```
 
 > [!IMPORTANT]
-> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también historial [de versiones de DirectML.](../dml-version-history.md)
+> Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.4 y posteriores). Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -95,7 +95,7 @@ struct DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
@@ -122,7 +122,7 @@ Tensor opcional que contiene los datos de punto cero de entrada. Las dimensiones
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensor que contiene los datos de filtro. Las dimensiones esperadas del *filterTensor* son `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
+Tensor que contiene los datos de filtro. Las dimensiones esperadas de *FilterTensor* son `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
 
 
 `FilterScaleTensor`
@@ -136,7 +136,7 @@ Tensor que contiene los datos de escala de filtro. Las dimensiones esperadas de 
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensor opcional que contiene los datos de punto cero del filtro. Las dimensiones esperadas de *FilterZeroPointTensor* son si se requiere una cuantificación por tensor o si se requiere una cuantificación por `{ 1, 1, 1, 1 }` `{ 1, OutputChannelCount, 1, 1 }` canal. Este valor de punto cero se usa para descuantizar los valores de filtro.
+Tensor opcional que contiene los datos de punto cero de filtro. Las dimensiones esperadas de *FilterZeroPointTensor* son si se requiere una cuantificación por tensor o si se requiere una `{ 1, 1, 1, 1 }` `{ 1, OutputChannelCount, 1, 1 }` cuantificación por canal. Este valor de punto cero se usa para descuantizar los valores de filtro.
 
 
 `BiasTensor`
@@ -164,40 +164,40 @@ Tensor opcional que contiene los datos de punto cero de filtro. Las dimensiones 
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensor en el que escribir los resultados. Las dimensiones esperadas de OutputTensor son `{ OutputBatchCount, OutputChannelCount, OutputHeight, OutputWidth }` .
+Tensor en el que se escriben los resultados. Las dimensiones esperadas de OutputTensor son `{ OutputBatchCount, OutputChannelCount, OutputHeight, OutputWidth }` .
 
 
 `DimensionCount`
 
 Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Número de dimensiones espaciales para la operación de convolución. Las dimensiones espaciales son las dimensiones inferiores del tensor *FilterTensor* del filtro de convolución. Este valor también determina el tamaño de las matrices *Strides,* *Sustions,* *StartPadding* y *EndPadding.* Solo se admite un valor de 2.
+Número de dimensiones espaciales para la operación de convolución. Las dimensiones espaciales son las dimensiones inferiores del tensor *FilterTensor* del filtro de convolución. Este valor también determina el tamaño de las matrices *Strides*, *Posición,* *StartPadding* y *EndPadding.* Solo se admite un valor de 2.
 
 
 `Strides`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Los avances de la operación de convolución. Estos pasos se aplican al filtro de convolución. Son independientes de los avances de tensor incluidos [en DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
+Los avances de la operación de convolución. Estos strides se aplican al filtro de convolución. Son independientes de los avances de tensor incluidos [en DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
 
 
 `Dilations`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Las sustituciones de la operación de convolución. Las reparaciones son avances que se aplican a los elementos del kernel de filtro. Esto tiene el efecto de simular un kernel de filtro mayor mediante el relleno de los elementos internos del kernel de filtro con ceros.
+Las convoluciones de la operación de convolución. Las reparaciones son avances aplicados a los elementos del kernel de filtro. Esto tiene el efecto de simular un kernel de filtro mayor mediante el relleno de los elementos internos del kernel de filtro con ceros.
 
 
 `StartPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Valores de relleno que se aplicarán al principio de cada dimensión espacial del filtro y del tensor de entrada de la operación de convolución.
 
 
 `EndPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Valores de relleno que se aplicarán al final de cada dimensión espacial del filtro y del tensor de entrada de la operación de convolución.
 

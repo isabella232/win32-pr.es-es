@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e149727650223f40a290d1ada40abc69f9033440
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: f099c1c71015ca433299843d388085103571d31d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380639"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549420"
 ---
 # <a name="id2d1rendertargetcreategradientstopcollection-methods"></a>Métodos ID2D1RenderTarget::CreateGradientStopCollection
 
-Crea una [**clase ID2D1GradientStopCollection a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) de la matriz especificada de estructuras GRADIENT [**\_ \_ STOP de D2D1.**](/windows/win32/api/d2d1/ns-d2d1-d2d1_gradient_stop)
+Crea una [**clase ID2D1GradientStopCollection a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) de la matriz especificada de estructuras GRADIENT STOP de [**D2D1. \_ \_**](/windows/win32/api/d2d1/ns-d2d1-d2d1_gradient_stop)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,14 +29,14 @@ Crea una [**clase ID2D1GradientStopCollection a partir**](/windows/win32/api/d2d
 
 | Método                                                                                                                                                                                                                                                               | Descripción                                                                                                                                                                                                                           |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateGradientStopCollection(D2D1 \_ GRADIENT \_ STOP \* ,D2D1 \_ GAMMA,D2D1 \_ EXTEND \_ MODE,ID2D1GradientStopCollection \* \* )**](https://msdn.microsoft.com/library/Dd316783(v=VS.85).aspx) | Crea un [**id2D1GradientStopCollection a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) de los delimitadores de degradado, gamma de interpolación de colores y modo de extensión especificados. <br/>                                                              |
-| [**CreateGradientStopCollection(D2D1 \_ GRADIENT \_ STOP \* ,ID2D1GradientStopCollection \* \* )**](https://msdn.microsoft.com/library/Dd316783(v=VS.85).aspx)                                                            | Crea una [**colección ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir de los delimitadores de degradado especificados que usa el gamma de interpolación de color [**gamma de D2D1 \_ GAMMA \_ \_ 2 2**](/windows/win32/api/d2d1/ne-d2d1-d2d1_gamma) y el modo de extensión de la fijación.<br/> |
+| [**CreateGradientStopCollection(D2D1 \_ GRADIENT \_ STOP \* ,D2D1 \_ GAMMA,D2D1 \_ EXTEND \_ MODE,ID2D1GradientStopCollection \* \* )**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) | Crea una [**clase ID2D1GradientStopCollection a**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) partir de los delimitadores de degradado, gamma de interpolación de color y modo de extensión especificados. <br/>                                                              |
+| [**CreateGradientStopCollection(D2D1 \_ GRADIENT \_ STOP \* ,ID2D1GradientStopCollection \* \* )**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection)                                                            | Crea una [**clase ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir de los delimitadores de degradado especificados que usa el gamma de interpolación de color [**gamma \_ \_ 2 \_ 2 de D2D1**](/windows/win32/api/d2d1/ne-d2d1-d2d1_gamma) y el modo de extensión de la fijación.<br/> |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea una matriz de delimitadores de degradado y, a continuación, se usan para crear un [**id2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection).
+En el ejemplo siguiente se crea una matriz de delimitadores de degradado y, a continuación, se usan para crear un [**elemento ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection).
 
 
 ```C++
