@@ -89,7 +89,7 @@
         - name: Arquitectura de Media Foundation
           href: media-foundation-architecture.md
           items:
-            - name: Información general de la Media Foundation arquitectura
+            - name: Introducción a la arquitectura Media Foundation de datos
               href: overview-of-the-media-foundation-architecture.md
             - name: Media Foundation primitivos
               href: media-foundation-primitives.md
@@ -133,7 +133,7 @@
                           href: recommended-8-bit-yuv-formats-for-video-rendering.md
                         - name: Formatos de vídeo YUV de 10 y 16 bits
                           href: 10-bit-and-16-bit-yuv-video-formats.md
-                        - name: Vídeo FOURCCs
+                        - name: Video FOURCCs
                           href: video-fourccs.md
                     - name: GUID de subtipo de secuencia
                       href: stream-subtype-guids.md
@@ -251,7 +251,7 @@
                           href: direct3d-aware-mfts.md
                         - name: MTO de hardware
                           href: hardware-mfts.md
-                        - name: Codec Merit
+                        - name: Codec Codec Codec (Códec de programación
                           href: codec-merit.md
                 - name: Receptores multimedia
                   href: media-sinks.md
@@ -304,7 +304,7 @@
                       items:
                         - name: Creación de nodos de origen
                           href: creating-source-nodes.md
-                        - name: Crear nodos de transformación
+                        - name: Creación de nodos de transformación
                           href: creating-transform-nodes.md
                         - name: Creación de nodos de salida
                           href: creating-output-nodes.md
@@ -357,7 +357,7 @@
               items:
                 - name: Cómo crear una topología para la codificación Two-Pass Windows Media
                   href: how-to-create-a-topology-for-2-pass-windows-media-encoding.md
-                - name: 'Tutorial: Codificación de Windows Media de paso único'
+                - name: 'Tutorial: Codificación de windows media de paso único'
                   href: tutorial--1-pass-windows-media-encoding.md
                 - name: Origen multimedia de ASF
                   href: asf-media-source.md
@@ -447,12 +447,12 @@
                       href: creating-the-asf-splitter-object.md
                     - name: Configuración del objeto divisor de ASF
                       href: configuring-the-asf-splitter-object.md
-                    - name: Generar ejemplos de flujo a partir de un objeto de datos asf existente
+                    - name: Generar ejemplos de flujo a partir de un objeto de datos ASF existente
                       href: generating-stream-samples-from-an-existing-asf-data-object.md
                 - name: Multiplexor de ASF
                   href: asf-multiplexer.md
                   items:
-                    - name: Creación del objeto multiplexor
+                    - name: Crear el objeto multiplexor
                       href: creating-the-multiplexer-object.md
                     - name: Generación de nuevos paquetes de datos de ASF
                       href: generating-new-asf-data-packets.md
@@ -1672,7 +1672,7 @@
                   items:
                     - name: 'ID3D12VideoProcessor1::GetProtectedResourceSession'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoprocessor-getoutputstreamdes/nf-d3d12video-id3d12videoprocessor1-getprotectedresourcesession
-            - name: Estructuras de vídeo de Direct3D 12
+            - name: "Estructuras de vídeo de Direct3D\_12"
               href: direct3d-12-video-structures.md
               items:
                 - name: D3D12_FEATURE_DATA_VIDEO_DECODE_CONVERSION_SUPPORT
@@ -1847,7 +1847,7 @@
         - name: Metadatos multimedia
           href: media-metadata.md
           items:
-            - name: Proveedores de metadatos de shell
+            - name: Proveedores de metadatos de Shell
               href: shell-metadata-providers.md
             - name: Propiedades de metadatos para archivos multimedia
               href: metadata-properties-for-media-files.md
@@ -2050,7 +2050,7 @@
               href: encodingmethods.md
             - name: Implementación de códecs
               href: codecimplementation.md
-            - name: El modelo de búfer de cubo de fugas
+            - name: El modelo de búfer de cubo filtrada
               href: the-leaky-bucket-buffer-model.md
             - name: Trabajar con DDO de códec
               href: workingwithcodecdmos.md
@@ -2065,7 +2065,7 @@
                   href: workingwithmediatypes.md
                 - name: Trabajar con ejemplos y búferes multimedia de MFT
                   href: workingwithmftmediabuffersandsamples.md
-                - name: Configuración de las DDO de códec
+                - name: Configuración de las DDO de códecs
                   href: enumeratingsupportedformats.md
                 - name: Procesamiento de entrada y salida de DMO de códec
                   href: processingsamples.md
@@ -2087,14 +2087,14 @@
               items:
                 - name: Elección de un códec de audio
                   href: choosinganaudiocodec.md
-                - name: Configuración de la decodificación de audio
+                - name: Configuración de la descodación de audio
                   href: configuringaudiodecoding.md
                 - name: Configuración de la codificación de audio
                   href: configuringaudioencoding.md
                   items:
                     - name: Búsqueda de tipos de salida del codificador de audio
                       href: findingaudioencoderoutputtypes.md
-                    - name: 'Configuración de la codificación de audio estándar, profesional o sin pérdida de datos'
+                    - name: 'Configuración de codificación de audio estándar, profesional o sin pérdida de datos'
                       href: configuring-standard--professional--or-lossless-audio-encoding.md
                     - name: Enumeración de tipos de audio para modos de codificación específicos
                       href: enumeratingaudiotypesforspecificencodingmodes.md
@@ -2139,7 +2139,7 @@
               href: gettingencodingstatistics.md
             - name: Uso de extensiones de unidad de datos
               href: usingdataunitextensions.md
-            - name: Constantes IPropertyBag de códec y DSP
+            - name: Códec y constantes IPropertyBag de DSP
               href: codecanddspproperties.md
               items:
                 - name: Acerca del analizador de tabla de contenido
@@ -2147,7 +2147,7 @@
                   items:
                     - name: Información general del analizador de tabla de contenido
                       href: overview-of-toc-parser.md
-                - name: Guía de programación del analizador de tablas de contenido
+                - name: Guía de programación del analizador de tabla de contenido
                   href: toc-parser-programming-guide.md
                   items:
                     - name: Insertar una tabla de contenido en un archivo de vídeo
@@ -2317,7 +2317,7 @@
           href: mfcaptured3d-sample.md
         - name: Ejemplo MFCaptureToFile
           href: mfcapturetofile-sample.md
-        - name: Ejemplo mfplayer2
+        - name: Ejemplo de MFPlayer2
           href: mfplayer2-sample.md
         - name: MFT_AudioDelay ejemplo
           href: mft-audiodelay-sample.md
@@ -2375,7 +2375,7 @@
               href: mpeg-2-video-decoder.md
             - name: 'Descodificador de vídeo MPEG-4, parte 2'
               href: mpeg4part2videodecoder.md
-            - name: Windows Media Audio descodificador
+            - name: Windows Media Audio Decoder
               href: windowsmediaaudiodecoder.md
             - name: Windows Media Audio Encoder
               href: windowsmediaaudioencoder.md
@@ -2539,6 +2539,8 @@
                   href: mf-capture-engine-use-audio-device-only.md
                 - name: MF_CAPTURE_ENGINE_USE_VIDEO_DEVICE_ONLY atributo
                   href: mf-capture-engine-use-video-device-only.md
+                - name: MF_CAPTURE_METADATA_DIGITALWINDOW
+                  href: mf-capture-metadata-digitalwindow.md
                 - name: MF_CAPTURE_METADATA_FRAME_ILLUMINATION
                   href: mf-capture-metadata-frame-illumination.md
                 - name: MF_CAPTURE_METADATA_PHOTO_FRAME_FLASH
@@ -4016,7 +4018,7 @@
               href: mestreamtick.md
             - name: METransformDrainComplete
               href: metransformdraincomplete.md
-            - name: METransformTransformTransformOutput
+            - name: METransformTransformOutput
               href: metransformhaveoutput.md
             - name: METransformMarker
               href: metransformmarker.md
@@ -4996,7 +4998,7 @@
             - name: ATTRIBUTEAttributes
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfattributes
               items:
-                - name: Comparar
+                - name: Comparación
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-compare
                 - name: CompareItem
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-compareitem
@@ -5201,7 +5203,7 @@
               items:
                 - name: CreateInstance
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengineclassfactory-createinstance
-            - name: CALLBACKCaptureEngineOnEventCallback
+            - name: IMFCaptureEngineOnEventCallback
               href: /windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcaptureengineoneventcallback
               items:
                 - name: OnEvent
@@ -5317,7 +5319,7 @@
                   href: imfcdmsuspendnotify-begin.md
                 - name: End (método)
                   href: imfcdmsuspendnotify-end.md
-            - name: IMFClock
+            - name: LOCKClock
               href: /windows/desktop/api/mfidl/nn-mfidl-imfclock
               items:
                 - name: GetClockCharacteristics
@@ -6012,7 +6014,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology
                 - name: Apagar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown
-                - name: Inicio
+                - name: Start
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start
                 - name: Stop
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-stop
@@ -6065,7 +6067,7 @@
                   href: remotecreatepresentationdescriptor.md
                 - name: Apagar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown
-                - name: Inicio
+                - name: Start
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start
                 - name: Stop
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-stop
@@ -6535,7 +6537,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-removeclockstatesink
                 - name: SetTimeSource
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-settimesource
-                - name: Inicio
+                - name: Start
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-start
                 - name: Stop
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-stop
@@ -6795,7 +6797,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensoractivitymonitor-start
                 - name: Método Stop
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensoractivitymonitor-stop
-            - name: IMFSensorActivityReport
+            - name: SENSORSensorActivityReport
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensoractivityreport
               items:
                 - name: Método GetFriendlyName
@@ -8524,6 +8526,8 @@
               href: /windows/win32/api/wmcontainer/ns-wmcontainer-asf_index_identifier
             - name: ASF_MUX_STATISTICS
               href: /windows/desktop/api/wmcontainer/ns-wmcontainer-asf_mux_statistics
+            - name: DigitalWindowSetting
+              href: /windows/desktop/api/mfapi/ns-mfapi-digitalwindowsetting
             - name: DEVICE_INFO
               href: /windows/desktop/api/mfsharingengine/ns-mfsharingengine-device_info
             - name: DXVA_PicEntry_HEVC

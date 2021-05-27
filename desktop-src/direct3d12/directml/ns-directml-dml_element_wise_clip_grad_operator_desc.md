@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 224fbacdb8816a6aed6a7779c5c8ff991736ee6c
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 3b993ca1c027119ae64157db2327a2836445bf43
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804494"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550210"
 ---
 # <a name="dml_element_wise_clip_grad_operator_desc-directmlh"></a>DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC (directml.h)
 
@@ -78,7 +78,7 @@ struct DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `InputTensor`
 
@@ -100,13 +100,13 @@ Tensor de salida que contiene los degradados de propiedad pendiente. Normalmente
 
 `Min`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valor mínimo. Si x está en o por debajo de este valor, el resultado del degradado es 0.
 
 `Max`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valor máximo. Si x está en o por encima de este valor, el resultado del degradado es 0.
 
