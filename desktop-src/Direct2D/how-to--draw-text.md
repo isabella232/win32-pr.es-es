@@ -1,25 +1,25 @@
 ---
-title: Cómo dibujar texto
+title: Dibujar texto
 description: Muestra cómo representar texto con Direct2D.
 ms.assetid: 914dd9d0-78c8-44a3-8504-837faf3201d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a30f15704673c63c4bf44a31c64843250cceafd4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bd841f3b07edbde5e3fc6ed70f679cd58b3725f4
+ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421200"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "111349974"
 ---
-# <a name="how-to-draw-text"></a>Cómo dibujar texto
+# <a name="how-to-draw-text"></a>Dibujar texto
 
-Para dibujar texto con Direct2D, use el método [**ID2D1RenderTarget::D rawtext**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) para el texto que tiene un único formato. O bien, use el método [**ID2D1RenderTarget::D rawtextlayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) para varios formatos, características OpenType avanzadas o pruebas de posicionamiento. Estos métodos usan la API de DirectWrite para proporcionar una presentación de texto de alta calidad.
+Para dibujar texto con Direct2D, use el método [**ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) para el texto que tiene un único formato. O bien, use el [**método ID2D1RenderTarget::D rawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) para varios formatos, características avanzadas de OpenType o pruebas de acceso. Estos métodos usan directWrite API para proporcionar una presentación de texto de alta calidad.
 
-## <a name="the-drawtext-method"></a>El método DrawText
+## <a name="the-drawtext-method"></a>Método DrawText
 
-Para dibujar texto con un solo formato, use el método [**DrawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) . Para usar este método, use primero un [**IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) para crear una instancia de [**IDWriteTextFormat**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat) .
+Para dibujar texto con un único formato, use el [**método DrawText.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) Para usar este método, use primero [**una instancia de IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) para crear una [**instancia de IDWriteTextFormat.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat)
 
-El siguiente código crea un objeto [**IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) y lo almacena en la *variable \_ pTextFormat m* .
+El código siguiente crea un [**objeto IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) y lo almacena en la variable *m \_ pTextFormat.*
 
 
 ```C++
@@ -39,8 +39,7 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
     hr = D2D1CreateFactory(D2D1_FACTORY_TYPE_SINGLE_THREADED, &m_pD2DFactory);
 
     if (SUCCEEDED(hr))
-    {
-        
+    {        
         // Create a DirectWrite factory.
         hr = DWriteCreateFactory(
             DWRITE_FACTORY_TYPE_SHARED,
@@ -66,10 +65,8 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
     {
         // Center the text horizontally and vertically.
         m_pTextFormat->SetTextAlignment(DWRITE_TEXT_ALIGNMENT_CENTER);
-
+        
         m_pTextFormat->SetParagraphAlignment(DWRITE_PARAGRAPH_ALIGNMENT_CENTER);
-       
-
     }
 
     return hr;
@@ -78,9 +75,9 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
 
 
 
-Dado que los objetos [**IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) y [**IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) son [recursos independientes del dispositivo](resources-and-resource-domains.md), puede mejorar el rendimiento de una aplicación creando solo una vez, en lugar de volver a crearlos cada vez que se representa un fotograma.
+Dado que los objetos [**IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) e [**IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) son recursos independientes del [dispositivo,](resources-and-resource-domains.md)puede mejorar el rendimiento de una aplicación si los crea solo una vez, en lugar de volver a crearlos cada vez que se representa un fotograma.
 
-Después de crear el objeto de formato de texto, puede utilizarlo con un destino de representación. El código siguiente dibuja el texto mediante el método [**DrawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) del destino de representación (la variable *m \_ pRenderTarget* ).
+Después de crear el objeto de formato de texto, puede usarlo con un destino de representación. El código siguiente dibuja el texto mediante el método [**DrawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) del destino de representación (la variable *m \_ pRenderTarget).*
 
 
 ```C++
@@ -134,21 +131,21 @@ HRESULT DemoApp::OnRender()
 
 
 
-## <a name="the-drawtextlayout-method"></a>El método DrawTextLayout
+## <a name="the-drawtextlayout-method"></a>Método DrawTextLayout
 
-El método [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) representa un objeto [**IDWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) . Utilice este método para aplicar varios formatos a un bloque de texto (como el subrayado de una parte del texto), para usar las características OpenType avanzadas o para realizar la prueba de posicionamiento.
+El [**método DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) representa un [**objeto IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Use este método para aplicar varios formatos a un bloque de texto (como la línea de una parte del texto), para usar características avanzadas de OpenType o para realizar pruebas de acceso.
 
-El método [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) también proporciona ventajas de rendimiento para dibujar el mismo texto varias veces. El objeto [**IDWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) mide y coloca el texto al crearlo. Si crea un objeto **IDWriteTextLayout** solo una vez y lo vuelve a usar cada vez que tiene que volver a dibujar el texto, el rendimiento mejora porque el sistema no tiene que medir y diseñar el texto de nuevo.
+El [**método DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) también proporciona ventajas de rendimiento para dibujar el mismo texto repetidamente. El [**objeto IDWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) mide y dispone su texto al crearlo. Si crea un objeto **IDWriteTextLayout** solo una vez y lo reutiliza cada vez que tiene que volver a dibujar el texto, el rendimiento mejora porque el sistema no tiene que medir y volver a trazar el texto.
 
-Antes de poder usar el método [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) , debe usar un [**IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) para crear objetos [**IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) y [**IDWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) . Una vez creados estos objetos, llame al método **DrawTextLayout** .
+Para poder usar el [**método DrawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) debe usar [**IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) para crear objetos [**IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) [**e IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Una vez creados estos objetos, llame al **método DrawTextLayout.**
 
-Para obtener más información y ejemplos, vea información general sobre el [diseño y el formato de texto](/windows/desktop/DirectWrite/text-formatting-and-layout) .
+Para obtener más información y ejemplos, vea Información [general sobre formato de texto y](/windows/desktop/DirectWrite/text-formatting-and-layout) diseño.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**DrawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))
+[**Drawtext**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))
 </dt> <dt>
 
 [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout)
@@ -163,6 +160,6 @@ Para obtener más información y ejemplos, vea información general sobre el [di
 [Formato y diseño de texto](/windows/desktop/DirectWrite/text-formatting-and-layout)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
