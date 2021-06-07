@@ -1,19 +1,19 @@
 ---
-description: Contiene los datos binarios codificados en base64 del objeto de entrada manuscrita para un InkWord o un dibujo.
+description: Contiene los datos binarios codificados en Base64 del objeto Ink para un objeto InkWord o Drawing.
 ms.assetid: 7ee9ecd3-9dd6-4c6b-80bc-23f9a8e6b352
 title: Elemento InkObject
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c3c5965f2c23f3799a988a9cf2dbaa7eac29a0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54c3a626da2afef506f8777ea188bdd883e29dd5
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361179"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432367"
 ---
 # <a name="inkobject-element"></a>Elemento InkObject
 
-Contiene los datos binarios codificados en base64 del objeto de entrada manuscrita para un [**InkWord**](inkword-element.md) o un [**dibujo**](drawing-element.md).
+Contiene los datos binarios codificados en Base64 del objeto Ink para [**un objeto InkWord**](inkword-element.md) o [**Drawing**](drawing-element.md).
 
 ## <a name="definition"></a>Definición
 
@@ -39,10 +39,10 @@ Ninguno.
 
 
 
-|              |                                            |
+|  Elemento     | Value                                                     |
 |--------------|--------------------------------------------|
 | Tipo de elemento | **xs:base64Binary**                        |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink |
 | Nombre del esquema  | Lector de diario                             |
 
 

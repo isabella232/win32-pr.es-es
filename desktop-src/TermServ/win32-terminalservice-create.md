@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9daf877f56bb7e9bfcc349e4efb38635a9286a48
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14b776d3e451d84c63be5bb61b98ed22081e1a29
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090693"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387124"
 ---
 # <a name="create-method-of-the-win32_service-class-remote-desktop-services"></a>Método Create de la clase Win32_Service (Servicios de Escritorio remoto)
 
-El **método create** wmi [class](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo servicio del sistema.
+El **método Create** WMI [Class](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo servicio del sistema.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ uint32 Create(
 *Nombre* \[ En\]
 </dt> <dd>
 
-Nombre del servicio que se instalará en **el método Create.** La longitud máxima de la cadena es de 256 caracteres. La base de datos del Administrador de control de servicios conserva las mayúsculas y minúsculas de los caracteres, pero las comparaciones de nombres de servicio siempre no tienen en cuenta las mayúsculas y minúsculas. Las barras diagonales (/) y las barras diagonales dobles \) (son caracteres de nombre de servicio no válidos).
+Nombre del servicio que se instalará en **el método Create.** La longitud máxima de la cadena es de 256 caracteres. La base de datos del Administrador de control de servicios conserva las mayúsculas y minúsculas de los caracteres, pero las comparaciones de nombres de servicio siempre no tienen en cuenta las mayúsculas y minúsculas. Las barras diagonales (/) y las barras diagonales dobles \\ \\ () son caracteres de nombre de servicio no válidos.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Ejemplo: "Atdisk".
 
 Ruta de acceso completa al archivo ejecutable que implementa el servicio.
 
-Ejemplo: " \\ SystemRoot \\ System32 \\ drivers \\afd.sys".
+Ejemplo: \\ "SystemRoot \\ System32 \\ drivers \\afd.sys".
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Tipo de servicios proporcionados a los procesos que los llaman.
 1 (0x1)
 </dt> <dd>
 
-Controlador kernel
+Kernel Driver
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Adapter (Adaptador)
 8 (0x8)
 </dt> <dd>
 
-Controlador de Recognizer
+Controlador de reconocedor
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Proceso interactivo
 *ErrorControl* \[ En\]
 </dt> <dd>
 
-Gravedad del error si el **método Create** no se puede iniciar. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
+Gravedad del error si no se puede iniciar el método **Create.** El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
 
 <dt>
 
@@ -170,7 +170,7 @@ El sistema se reinicia con la última configuración válida conocida.
 3
 </dt> <dd>
 
-El sistema intenta empezar con una buena configuración.
+El sistema intenta comenzar con una buena configuración.
 
 </dd> </dl> </dd> <dt>
 
@@ -205,7 +205,7 @@ Servicio que el Administrador de control de servicios iniciará automáticamente
 Manual
 </dt> <dd>
 
-Servicio que va a iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](win32-terminalservice-startservice.md)
+Servicio que debe iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](win32-terminalservice-startservice.md)
 
 </dd> <dt>
 
@@ -233,23 +233,23 @@ Nombre de cuenta con el que se ejecuta el servicio. Según el tipo de servicio, 
 *StartPassword* \[ En\]
 </dt> <dd>
 
-Contraseña en el nombre de cuenta especificado por el *parámetro StartName.* Especifique **NULL** si no va a cambiar la contraseña. Especifique una cadena vacía si el servicio no tiene contraseña.
+Contraseña del nombre de cuenta especificado por el *parámetro StartName.* Especifique **NULL** si no va a cambiar la contraseña. Especifique una cadena vacía si el servicio no tiene contraseña.
 
 </dd> <dt>
 
 *LoadOrderGroup* \[ En\]
 </dt> <dd>
 
-Nombre de grupo asociado al nuevo servicio. Los grupos de orden de carga se encuentran en el Registro y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro tiene una lista de grupos de ordenación de carga ubicados en:
+Nombre de grupo asociado al nuevo servicio. Los grupos de orden de carga se encuentran en el Registro y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en *el parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro tiene una lista de grupos de pedidos de carga ubicados en:
 
-**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
+**HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
 *LoadOrderGroupDependencies* \[ En\]
 </dt> <dd>
 
-Matriz de grupos de ordenación de carga que deben iniciarse antes de este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista finaliza con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no tiene dependencias. Los nombres de grupo deben ir precedidos por el carácter **SC \_ GROUP \_ IDENTIFIER** (definido en el archivo Winsvc.h) para diferenciarlo de un nombre de servicio, ya que los servicios y los grupos de servicios comparten el mismo espacio de nombres. La dependencia de un grupo significa que este servicio se puede ejecutar si al menos un miembro del grupo se está ejecutando después de un intento de iniciar todos los miembros del grupo.
+Matriz de grupos de ordenación de carga que deben iniciarse antes de este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista termina con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL o** si apunta a una cadena vacía, el servicio no tiene dependencias. Los nombres de grupo deben ir precedidos por el carácter **SC \_ GROUP \_ IDENTIFIER** (definido en el archivo Winsvc.h) para diferenciarlo de un nombre de servicio, ya que los servicios y los grupos de servicios comparten el mismo espacio de nombres. La dependencia de un grupo significa que este servicio se puede ejecutar si al menos un miembro del grupo se está ejecutando después de un intento de iniciar todos los miembros del grupo.
 
 </dd> <dt>
 
@@ -443,13 +443,13 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 ## <a name="remarks"></a>Comentarios
 
-Por lo general, los servicios se instalan de una de estas dos maneras: como parte de la instalación del sistema operativo o mediante un programa de instalación proporcionado por el desarrollador del servicio. Sin embargo, es posible que algunos servicios, especialmente los creados de forma local, no tengan un programa de instalación. En esos casos, puede usar el **método Create** para instalar servicios mediante programación.
+Por lo general, los servicios se instalan de dos maneras: como parte de la instalación del sistema operativo o mediante un programa de instalación proporcionado por el desarrollador del servicio. Sin embargo, es posible que algunos servicios, especialmente los creados de forma local, no tengan un programa de instalación. En esos casos, puede usar el **método Create** para instalar servicios mediante programación.
 
-A pesar del nombre, el método Create no crea realmente un servicio; simplemente instala un servicio existente. Para usar este comando, debe copiar el archivo ejecutable del servicio en un equipo y, a continuación, usar **Crear** para instalar el servicio.
+A pesar del nombre, el método Create no crea realmente un servicio; simplemente instala un servicio existente. Para usar este comando, debe copiar el archivo ejecutable de servicio en un equipo y, a continuación, usar **Crear** para instalar el servicio.
 
-El **método Create** es similar al método [**Change.**](win32-terminalservice-change.md) En ambos casos, las propiedades del servicio se pasan como parámetros al método . Al igual que con los parámetros usados con **el método Change,** el orden en que se pasan estos parámetros es muy importante.
+El **método Create** es similar al método [**Change.**](win32-terminalservice-change.md) En ambos casos, las propiedades del servicio se pasan como parámetros al método . Al igual que con los parámetros usados con **el método Change,** el orden en el que se pasan estos parámetros es muy importante.
 
-El *parámetro LoadOrderGroup* representa una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
+El *parámetro LoadOrderGroup representa* una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -459,13 +459,13 @@ El *parámetro LoadOrderGroup* representa una agrupación de servicios del siste
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

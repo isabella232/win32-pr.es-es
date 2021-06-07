@@ -1,9 +1,9 @@
 ---
 title: Tab (Elemento)
-description: Representa una pestaña principal o contextual.
+description: Representa una pestaña de núcleo o contextual.
 ms.assetid: 2e73a89c-4d31-4075-93c8-e43213a20791
 keywords:
-- Barra de herramientas de Windows de elemento de pestaña
+- Tab, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e54abc7e13906ada69c1e10f81878c77c4bf5d8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 410326961df84f6ae62d3c43bee3e651c9533066
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078153"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443886"
 ---
 # <a name="tab-element"></a>Tab (Elemento)
 
-Representa una pestaña [principal](windowsribbon-controls-tab.md) o [contextual](windowsribbon-controls-tabgroup.md) .
+Representa una [pestaña de](windowsribbon-controls-tab.md) núcleo [o contextual.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Uso
 
@@ -49,7 +49,7 @@ Representa una pestaña [principal](windowsribbon-controls-tab.md) o [contextual
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,15 +58,15 @@ Representa una pestaña [principal](windowsribbon-controls-tab.md) o [contextual
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Válido solo si <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> es el elemento primario.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Una cadena que contiene una lista separada por comas de enteros entre 0 y 31.<br/> El espacio en blanco es válido y se omite.<br/> Longitud máxima: 250 caracteres. <br/> </dd> </dl></td>
+<td>Solo es válido <a href="windowsribbon-element-menugroup.md"><strong>si MenuGroup</strong></a> es el elemento primario.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que contiene una lista separada por comas de enteros entre 0 y 31.<br/> El espacio en blanco es válido y se omite.<br/> Longitud máxima: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +80,7 @@ Representa una pestaña [principal](windowsribbon-controls-tab.md) o [contextual
 | Elemento                                                                         | Descripción                                        |
 |---------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Group (Grupo)**](windowsribbon-element-group.md)<br/>                         | Puede producirse una o varias veces<br/> <br/> |
-| [**TAB. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> | Puede aparecer como máximo una vez<br/> <br/>      |
+| [**Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> | Puede producirse como máximo una vez<br/> <br/>      |
 
 
 
@@ -90,26 +90,26 @@ Representa una pestaña [principal](windowsribbon-controls-tab.md) o [contextual
 
 | Elemento                                                             |
 |---------------------------------------------------------------------|
-| [**Cinta. pestañas**](windowsribbon-element-ribbon-tabs.md)<br/> |
+| [**Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md)<br/> |
 | [**TabGroup**](windowsribbon-element-tabgroup.md)<br/>       |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe producirse al menos una vez para cada elemento [**Ribbon. tabs**](windowsribbon-element-ribbon-tabs.md) o [**TabGroup**](windowsribbon-element-tabgroup.md) .
+Debe producirse al menos una vez para cada [**elemento Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md) [**o TabGroup.**](windowsribbon-element-tabgroup.md)
 
-La **pestaña** admite los [modos de aplicación](ribbon-applicationmodes.md).
+**Tab admite** los [modos de aplicación](ribbon-applicationmodes.md).
 
-Si [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) está presente para el elemento de **ficha** , se requiere una entrada para cada elemento de [**grupo**](windowsribbon-element-group.md) y su tamaño ideal en **ScalingPolicy. IdealSizes**.
+Si [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) está presente para el elemento **Tab,** se requiere una entrada para cada elemento [**Group**](windowsribbon-element-group.md) y su tamaño ideal en **ScalingPolicy.IdealSizes.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo se muestra el marcado básico del elemento **Tab** .
+En el ejemplo siguiente se muestra el marcado básico para el **elemento Tab.**
 
-En esta sección de código se muestran las declaraciones del comando **Tab** para una pestaña **Inicio** .
+En esta sección de código se muestran las **declaraciones del** comando Tab para una **pestaña** Inicio.
 
 
 ```XML
@@ -177,7 +177,7 @@ En esta sección de código se muestran las declaraciones del comando **Tab** pa
 
 
 
-En esta sección de código se muestran las declaraciones de control de **pestaña** .
+En esta sección de código se muestran las **declaraciones de** control Tab.
 
 
 ```XML
@@ -195,23 +195,19 @@ En esta sección de código se muestran las declaraciones de control de **pesta�
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+- **Sistema mínimo admitido:** Windows 7 
+- **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Control Tab](windowsribbon-controls-tab.md)
 </dt> <dt>
 
-[Control de grupo de pestañas](windowsribbon-controls-tabgroup.md)
+[Control Grupo de pestañas](windowsribbon-controls-tabgroup.md)
 </dt> <dt>
 
 [**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)

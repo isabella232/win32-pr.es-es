@@ -1,9 +1,9 @@
 ---
 title: Elemento TabGroup
-description: Representa un conjunto contextual de controles de ficha.
+description: Representa un conjunto contextual de controles Tab.
 ms.assetid: f131efe1-b8c4-416e-997a-5e2d3bcc03ea
 keywords:
-- TabGroup cinta de opciones de Windows
+- Cinta de opciones de Windows del elemento TabGroup
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fcbe0760c850f37c6a7bf348c38e48aa7cf54ddc
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 6a4c18db72d6b0161842bfde9d5a836d14189c6a
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104270381"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444066"
 ---
 # <a name="tabgroup-element"></a>Elemento TabGroup
 
-Representa un conjunto contextual de controles de [ficha](windowsribbon-controls-tabgroup.md) .
+Representa un conjunto contextual de [controles Tab.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Uso
 
@@ -48,17 +48,17 @@ Representa un conjunto contextual de controles de [ficha](windowsribbon-controls
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Representa un conjunto contextual de controles de [ficha](windowsribbon-controls
 
 | Elemento                                             | Descripción                                     |
 |-----------------------------------------------------|-------------------------------------------------|
-| [**Tabulación**](windowsribbon-element-tab.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**pestaña**](windowsribbon-element-tab.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -81,21 +81,21 @@ Representa un conjunto contextual de controles de [ficha](windowsribbon-controls
 
 | Elemento                                                                                 |
 |-----------------------------------------------------------------------------------------|
-| [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/> |
+| [**Ribbon.ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe producirse al menos una vez para cada elemento [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md) .
+Debe producirse al menos una vez para cada [**elemento Ribbon.ContextualTabs.**](windowsribbon-element-ribbon-contextualtabs.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el elemento **TabGroup** .
+En el ejemplo siguiente se muestra el marcado básico para el **elemento TabGroup.**
 
-En esta sección de código se muestra una declaración de comando **TabGroup** con dos pestañas contextuales.
+En esta sección de código se muestra una **declaración de comando TabGroup** con dos pestañas contextuales.
 
 
 ```XML
@@ -113,7 +113,7 @@ En esta sección de código se muestra una declaración de comando **TabGroup** 
 
 
 
-En esta sección de código se muestran las declaraciones de control **TabGroup** correspondientes.
+En esta sección de código se muestran las **declaraciones de** control TabGroup correspondientes.
 
 
 ```XML
@@ -157,20 +157,16 @@ En esta sección de código se muestran las declaraciones de control **TabGroup*
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+- **Sistema mínimo admitido:** Windows 7 
+- **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control de grupo de pestañas](windowsribbon-controls-tabgroup.md)
+[Control Grupo de pestañas](windowsribbon-controls-tabgroup.md)
 </dt> <dt>
 
 [Control Tab](windowsribbon-controls-tab.md)

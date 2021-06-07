@@ -1,72 +1,72 @@
 ---
 title: Barra de tareas
-description: La barra de tareas es el punto de acceso para los programas que se muestran en el escritorio. Con las nuevas características de la barra de tareas de Windows 7, los usuarios pueden proporcionar comandos, tener acceso a los recursos y ver el estado del programa directamente desde la barra de tareas.
+description: La barra de tareas es el punto de acceso para los programas que se muestran en el escritorio. Con las nuevas características de la barra de tareas de Windows 7, los usuarios pueden proporcionar comandos, acceder a recursos y ver el estado del programa directamente desde la barra de tareas.
 ms.assetid: c00e558a-313f-4741-a4b2-7d738f4544fa
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: f8b2bc21a75bc11c43df2cbdd37381165b89a793
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: c3e549e665f0200a448144ddf7202b258e88ff26
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104552783"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443396"
 ---
 # <a name="taskbar"></a>Barra de tareas
 
 > [!NOTE]
-> Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).
+> Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-La barra de tareas es el punto de acceso para los programas que se muestran en el escritorio. Con las nuevas características de la barra de tareas de Windows 7, los usuarios pueden proporcionar comandos, tener acceso a los recursos y ver el estado del programa directamente desde la barra de tareas.
+La barra de tareas es el punto de acceso para los programas que se muestran en el escritorio. Con las nuevas características de la barra de tareas de Windows 7, los usuarios pueden proporcionar comandos, acceder a recursos y ver el estado del programa directamente desde la barra de tareas.
 
-La barra de tareas es el punto de acceso para los programas que se muestran en el escritorio, incluso si el programa está minimizado. Se dice que estos programas tienen presencia de escritorio. Con la barra de tareas, los usuarios pueden ver las ventanas principales abiertas y ciertas ventanas secundarias en el escritorio, y pueden cambiar rápidamente entre ellas.
+La barra de tareas es el punto de acceso para los programas que se muestran en el escritorio, incluso si el programa está minimizado. Se dice que estos programas tienen presencia en el escritorio. Con la barra de tareas, los usuarios pueden ver las ventanas principales abiertas y determinadas ventanas secundarias en el escritorio, y pueden cambiar rápidamente entre ellas.
 
 ![captura de pantalla de la barra de tareas con características llamadas ](images/winenv-taskbar-image1.png)
 
-Barra de tareas de Microsoft Windows.
+La barra de tareas de Microsoft Windows.
 
-Los controles de la barra de tareas se conocen como botones de la barra de tareas. Cuando un programa crea una ventana principal (o una ventana secundaria con ciertas características), Windows agrega un botón de la barra de tareas para esa ventana y la quita cuando se cierra la ventana.
+Los controles de la barra de tareas se conocen como botones de la barra de tareas. Cuando un programa crea una ventana principal (o una ventana secundaria con determinadas características), Windows agrega un botón de la barra de tareas para esa ventana y la quita cuando se cierra esa ventana.
 
-Los programas diseñados para Windows 7 pueden aprovechar las ventajas de estas nuevas características del botón de la barra de tareas:
+Los programas diseñados para Windows 7 pueden aprovechar estas nuevas características del botón de la barra de tareas:
 
--   Las listas de saltos proporcionan un acceso rápido a los destinos usados con frecuencia (como archivos, carpetas y vínculos) y a los comandos a través de un menú contextual accesible desde el botón de la barra de tareas y el elemento del menú Inicio del programa, incluso si el programa no se está ejecutando actualmente.
--   Las barras de herramientas de miniaturas proporcionan acceso rápido a comandos usados con frecuencia para una ventana determinada. Las barras de herramientas en miniatura aparecen en la miniatura del botón de la barra de tareas.
--   Los iconos de superposición muestran el cambio de estado en el icono de botón de la barra de tareas del programa.
--   Las barras de progreso muestran el progreso de las tareas de ejecución prolongada en el botón de la barra de tareas del programa.
--   Los botones de la barra de tareas de la subventana permiten a los usuarios usar miniaturas de botones de la barra de tareas para cambiar directamente a las ventanas de ventanas, ventanas de proyecto, ventanas secundarias de interfaz de múltiples documentos (MDI) y ventanas secundarias.
--   Los botones anclados de la barra de tareas permiten a los usuarios anclar botones de programa a la barra de tareas para proporcionar acceso rápido a los programas incluso cuando no se están ejecutando.
+-   Las listas de accesos directos proporcionan acceso rápido a destinos usados con frecuencia (como archivos, carpetas y vínculos) y comandos a través de un menú contextual accesible desde el botón de la barra de tareas del programa y un elemento menú Inicio incluso si el programa no se está ejecutando actualmente.
+-   Las barras de herramientas en miniatura proporcionan acceso rápido a los comandos usados con frecuencia para una ventana determinada. Las barras de herramientas en miniatura aparecen en la miniatura del botón de la barra de tareas.
+-   Los iconos superpuestos muestran el cambio de estado en el icono del botón de la barra de tareas del programa.
+-   Las barras de progreso muestran el progreso de las tareas de ejecución larga en el botón de la barra de tareas del programa.
+-   Los botones de la barra de tareas de sub window permiten a los usuarios usar miniaturas de botón de la barra de tareas para cambiar directamente a pestañas de ventana, ventanas de proyecto, ventanas secundarias de interfaz de múltiples documentos (MDI) y ventanas secundarias.
+-   Los botones de la barra de tareas anclados permiten a los usuarios anclar botones de programa a la barra de tareas para proporcionar acceso rápido a los programas incluso cuando no se están ejecutando.
 
-Técnicamente, la barra de tareas abarca toda la barra desde el botón Inicio hasta el área de notificación. No obstante, lo más habitual es que la barra de tareas solo haga referencia al área que contiene los botones de la barra de tareas. En el caso de las configuraciones de varios monitores, solo un monitor tiene una barra de tareas y dicho monitor es el predeterminado.
+Técnicamente, la barra de tareas abarca toda la barra desde la botón Inicio al área de notificación; Sin embargo, más comúnmente, la barra de tareas solo hace referencia al área que contiene los botones de la barra de tareas. Para varias configuraciones de monitor, solo un monitor tiene una barra de tareas y ese monitor es el predeterminado.
 
-**Nota:** Las instrucciones relacionadas con el [escritorio](winenv-desktop.md), el [área de notificación](winenv-notification.md)y la [Administración de ventanas](win-window-mgt.md) se presentan en artículos independientes.
+**Nota:** Las directrices relacionadas [con el escritorio,](winenv-desktop.md) [el área de notificación](winenv-notification.md)y la administración de ventanas se presentan en artículos independientes. [](win-window-mgt.md)
 
-## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario correcta?
+## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario adecuada?
 
-Los programas diseñados para Windows 7 pueden aprovechar las ventajas de estas características de botón de la barra de tareas. Hágase las siguientes preguntas clave para determinar si se deben usar o no:
+Los programas diseñados para Windows 7 pueden aprovechar estas características del botón de la barra de tareas. Haga las siguientes preguntas clave para determinar si desea usarlas o no:
 
-**Jump Lists**
+**Listas de saltos**
 
--   **¿A menudo los usuarios tienen que iniciar nuevas tareas con el programa?** Si es así, considere la posibilidad de proporcionar una Jump List. Aunque las listas de accesos directos se pueden usar para otros fines, la mayoría de los escenarios implican el inicio de una nueva tarea.
--   **¿A menudo los usuarios necesitan tener acceso a archivos, carpetas, vínculos u otros recursos usados recientemente o con frecuencia?** Si es así, considere la posibilidad de proporcionar una Jump List para tener acceso a estos recursos útiles.
+-   **¿A menudo los usuarios necesitan iniciar nuevas tareas mediante el programa?** Si es así, considere la posibilidad de proporcionar Lista de accesos directos. Aunque las listas de saltos se pueden usar para otros fines, la mayoría de los escenarios implican iniciar una nueva tarea.
+-   **¿A menudo los usuarios necesitan acceder a archivos, carpetas, vínculos u otros recursos usados recientemente o con frecuencia?** Si es así, considere la posibilidad de proporcionar Lista de accesos directos acceso a estos recursos útiles.
 
-    ![captura de pantalla de la barra de tareas con Internet Explorer Jump List ](images/winenv-taskbar-image2.png)
+    ![captura de pantalla de la barra de tareas con la lista de accesos de Internet Explorer ](images/winenv-taskbar-image2.png)
 
-    En este ejemplo, Windows Internet Explorer usa una Jump List para presentar las páginas que se visitan con frecuencia.
+    En este ejemplo, Windows Internet Explorer usa un Lista de accesos directos para presentar páginas visitadas con frecuencia.
 
--   **A menudo, los usuarios necesitan un acceso rápido a un pequeño número de comandos del programa mientras usan otros programas, incluso si el programa no se está ejecutando?** Si es así, considere la posibilidad de proporcionar una Jump List con estos comandos usados con frecuencia. Estos comandos deben funcionar incluso si el programa no se está ejecutando y se deben aplicar a todo el programa, no a una ventana específica. Como alternativa, considere la posibilidad de proporcionar una barra de herramientas en miniatura para los comandos que se aplican a una ventana específica.
+-   **¿A menudo los usuarios necesitan acceso rápido a un pequeño número de comandos del programa mientras usan otros programas, incluso si el programa no se está ejecutando?** Si es así, considere la posibilidad de proporcionar Lista de accesos directos con estos comandos usados con frecuencia. Estos comandos deben funcionar incluso si el programa no se está ejecutando y deben aplicarse a todo el programa, no a una ventana específica. Como alternativa, considere la posibilidad de proporcionar una barra de herramientas en miniatura para los comandos que se aplican a una ventana específica.
 
-    ![captura de pantalla de la barra de tareas con lista de saltos de notas rápidas ](images/winenv-taskbar-image3.png)
+    ![captura de pantalla de la barra de tareas con la lista de accesos de notas rápidas ](images/winenv-taskbar-image3.png)
 
-    En este ejemplo, el accesorio de Notas rápidas permite a los usuarios crear una nueva nota rápidamente mientras usan otros programas.
+    En este ejemplo, el complemento Notas rápidas permite a los usuarios crear una nueva nota rápidamente mientras usan otros programas.
 
--   **¿Promueve características nuevas, de uso único o difíciles de encontrar?** Si es así, no utilice Jump Lists porque no están pensadas para este fin. En su lugar, mejore la detectabilidad de estos comandos directamente en el programa.
+-   **¿Está promocionando características nuevas, de un solo uso o difíciles de encontrar?** Si es así, no use jump lists porque no están diseñados para este propósito. En su lugar, mejore la detectabilidad de estos comandos directamente en el programa.
 
-**Barras de herramientas en miniatura**
+**Barras de herramientas de miniaturas**
 
 ¿Se aplican todas las condiciones siguientes?
 
--   **¿Los comandos se aplican a una ventana específica?** Las barras de herramientas en miniatura son para los comandos que se aplican a las tareas existentes, mientras que los comandos Jump List son para iniciar nuevas tareas.
--   **¿Los usuarios necesitan interactuar con una tarea en ejecución rápidamente mientras usan otros programas?** Si es así, las barras de herramientas de miniaturas son una buena elección. Las barras de herramientas de miniaturas pueden presentar un máximo de siete comandos, pero generalmente se prefiere un máximo de cinco comandos.
--   **¿Los comandos son inmediatos?** Es decir, ¿no requieren ninguna entrada adicional? Las barras de herramientas de miniaturas deben tener comandos inmediatos para ser eficientes, mientras que las listas de accesos directos funcionan mejor con comandos que requieren una entrada adicional.
+-   **¿Los comandos se aplican a una ventana específica?** Las barras de herramientas en miniatura son para los comandos que se aplican a las tareas existentes, Lista de accesos directos comandos son para iniciar nuevas tareas.
+-   **¿Los usuarios necesitan interactuar rápidamente con una tarea en ejecución mientras usan otros programas?** Si es así, las barras de herramientas en miniatura son una buena opción. Las barras de herramientas en miniatura pueden presentar un máximo de siete comandos, pero generalmente se prefiere un máximo de cinco comandos.
+-   **¿Los comandos son inmediatos?** Es decir, ¿no requieren entradas adicionales? Las barras de herramientas en miniatura deben tener comandos inmediatos para ser eficaces, mientras que las listas de accesos directos funcionan mejor con comandos que requieren entrada adicional.
 
     **Incorrecto:**
 
@@ -74,35 +74,35 @@ Los programas diseñados para Windows 7 pueden aprovechar las ventajas de estas 
 
     Los comandos que requieren una entrada adicional no funcionan bien en las barras de herramientas en miniatura.
 
--   **¿Los comandos son directos?** Es decir, ¿pueden los usuarios interactuar con ellos mediante un solo clic? Las barras de herramientas deben tener comandos directos para ser eficientes.
--   **¿Los comandos se representan bien mediante iconos?** Los comandos de la barra de herramientas de miniaturas se presentan mediante iconos que no son etiquetas de texto, mientras que los comandos Jump List se representan mediante etiquetas de texto.
+-   **¿Los comandos son directos?** Es decir, ¿pueden los usuarios interactuar con ellos con un solo clic? Las barras de herramientas deben tener comandos directos para ser eficaces.
+-   **¿Los comandos están bien representados por iconos?** Los comandos de la barra de herramientas de miniaturas se presentan mediante iconos no etiquetas de texto, Lista de accesos directos los comandos se representan mediante etiquetas de texto.
 
     **Incorrecto:**
 
-    ![captura de pantalla de un comando de miniatura con icono ](images/winenv-taskbar-image5.png)
+    ![captura de pantalla del comando thumbnail con icono ](images/winenv-taskbar-image5.png)
 
     En este ejemplo, el comando no está bien representado por iconos.
 
 **Iconos de superposición**
 
--   **¿El programa tiene "presencia de escritorio"?** En caso contrario, use un icono de área de notificación. Si es así, considere la posibilidad de usar un icono de superposición en lugar de poner el estado en el icono del área de notificación para los programas diseñados para Windows 7. Esto garantiza que el icono siempre estará visible (cuando se usen iconos grandes) y consolide el programa con su estado en un solo lugar.
--   **¿El icono de superposición se muestra temporalmente para mostrar un cambio de estado?** En ese caso, puede que el icono de superposición sea adecuado, en función de los siguientes factores:
-    -   **¿Es el estado útil y relevante al usar otros programas?** Si no es así, muestre la información en las [barras de estado](ctrl-status-bars.md) del programa o en el área de estado de otro programa.
+-   **¿El programa tiene "presencia de escritorio"?** Si no es así, use un icono de área de notificación en su lugar. Si es así, considere la posibilidad de usar un icono de superposición en lugar de colocar el estado en el icono del área de notificación para programas diseñados para Windows 7. Esto garantiza que el icono siempre será visible (cuando se usan iconos grandes) y consolida el programa con su estado en un solo lugar.
+-   **¿Se muestra temporalmente el icono de superposición para mostrar un cambio de estado?** Si es así, un icono de superposición puede ser adecuado, en función de los siguientes factores:
+    -   **¿El estado es útil y relevante al usar otros programas?** Si no es así, muestre la información en las barras de estado del programa u [otro](ctrl-status-bars.md) área de estado del programa.
 
         ![captura de pantalla de la barra de estado de la ventana de Internet Explorer ](images/winenv-taskbar-image7.png)
 
         En este ejemplo, se usa la barra de estado porque el estado no es útil cuando se usan otros programas.
 
-    -   **¿El estado muestra el progreso?** Si es así, utilice en su lugar una barra de progreso del botón de la barra de tareas.
-    -   **¿El estado es crítico? ¿Es necesaria una acción inmediata?** Si es así, muestre la información de una manera que requiera atención y no se pueda omitir fácilmente, como un [cuadro de diálogo](win-dialog-box.md).
+    -   **¿El estado muestra progreso?** Si es así, use en su lugar una barra de progreso del botón de la barra de tareas.
+    -   **¿El estado es crítico? ¿Se requiere una acción inmediata?** Si es así, muestre la información de forma que exija atención y no se pueda omitir fácilmente, como un cuadro [de diálogo](win-dialog-box.md).
 
 **Barras de progreso**
 
--   **¿Los comentarios de progreso son útiles y relevantes al usar otros programas?** Es decir, ¿es probable que los usuarios supervisen el progreso mientras usan otros programas y cambiar su comportamiento como resultado? Este estado útil y relevante se muestra normalmente mediante un cuadro de diálogo de progreso no modal o una página de progreso dedicada, pero no con un puntero ocupado, un indicador de actividad o una barra de progreso en una barra de estado. Si el estado no es útil cuando se utilizan otros programas, solo se muestran los comentarios de progreso directamente en el propio programa.
+-   **¿Los comentarios de progreso son útiles y pertinentes al usar otros programas?** Es decir, ¿es probable que los usuarios supervisen el progreso mientras usan otros programas y cambien su comportamiento como resultado? Este estado útil y relevante normalmente se muestra mediante un cuadro de diálogo de progreso no modelo o una página de progreso dedicada, pero no con un puntero ocupado, un indicador de actividad o una barra de progreso en una barra de estado. Si el estado no es útil al usar otros programas, solo tiene que mostrar los comentarios de progreso directamente en el propio programa.
 
     **Correcto:**
 
-    ![captura de pantalla del cuadro de diálogo copiar con barra de progreso ](images/winenv-taskbar-image8.png)
+    ![captura de pantalla del cuadro de diálogo copiar con la barra de progreso ](images/winenv-taskbar-image8.png)
 
     **Incorrecto:**
 
@@ -110,43 +110,43 @@ Los programas diseñados para Windows 7 pueden aprovechar las ventajas de estas 
 
     En el ejemplo incorrecto, la barra de progreso del botón de la barra de tareas no es muy útil.
 
--   **¿La tarea es continua?** Si la tarea no se completa nunca, no es necesario mostrar su progreso. Entre los ejemplos de tareas continuas se incluyen los exámenes de antivirus que no inician los usuarios y la indexación de archivos.
+-   **¿La tarea es continua?** Si la tarea nunca se completa, no es necesario mostrar su progreso. Algunos ejemplos de tareas continuas son los exámenes antivirus que los usuarios no inician y la indexación de archivos.
 
     **Incorrecto:**
 
     ![captura de pantalla del icono de progreso de una tarea continua ](images/winenv-taskbar-image10.png)
 
-    En este ejemplo, no es necesario mostrar el progreso de una tarea continua.
+    En este ejemplo, no es necesario que una tarea continua muestre el progreso.
 
-**Barra de tareas de la ventana secundaria**
+**Barras de tareas de sub window**
 
--   **¿El programa contiene pestañas, ventanas de proyecto, ventanas secundarias MDI o ventanas secundarias a las que los usuarios suelen querer cambiar directamente?** En ese caso, puede ser adecuado asignar miniaturas de botón de la barra de tareas a estas ventanas.
+-   **¿El programa contiene pestañas, ventanas de proyecto, ventanas secundarias MDI o ventanas secundarias a las que los usuarios suelen querer cambiar directamente?** Si es así, puede ser adecuado dar a estas ventanas sus propias miniaturas de botón de la barra de tareas.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-### <a name="using-jump-lists-and-thumbnail-toolbars-effectively"></a>Uso eficaz de listas de accesos directos y barras de herramientas en miniatura
+### <a name="using-jump-lists-and-thumbnail-toolbars-effectively"></a>Uso eficaz de listas de saltos y barras de herramientas en miniatura
 
-Las listas de accesos directos y las vistas en miniatura ayudan a los usuarios a acceder a los recursos y realizar comandos de forma más eficaz. Sin embargo, al diseñar el modo en que el programa admite estas características, no se ha mejorado la eficacia de los concedidos. Si los usuarios no pueden predecir con precisión qué característica tiene el comando que necesitan o tienen que comprobar varios lugares, los usuarios acabarán frustrados y dejarán de usar estas características.
+Las listas de saltos y las barras de herramientas en miniatura ayudan a los usuarios a acceder a los recursos y a realizar comandos de forma más eficaz. Sin embargo, al diseñar cómo el programa admite estas características, no se da por hecho una eficacia mejorada. Si los usuarios no pueden predecir con precisión qué característica tiene el comando que necesitan o tienen que comprobar varios lugares, los usuarios finalmente se frustrarán y dejarán de usar estas características.
 
-Las listas de accesos directos y las barras de miniaturas funcionan de forma más eficaz cuando son:
+Las listas de saltos y las barras de herramientas en miniatura funcionan de forma más eficaz cuando:
 
--   **Claramente diferenciados.** Los usuarios saben Cuándo buscar un destino o un comando en una Jump List y cuándo deben buscarse en una barra de herramientas en miniatura. Hay un propósito claro para cada uno, de modo que los usuarios rara vez disfunden el contenido de los dos. Por lo general, las listas de saltos se utilizan para iniciar nuevas tareas, mientras que las barras de herramientas en miniatura se usan para interactuar con las tareas en ejecución mientras se usan otros programas.
--   **Son.** Los destinos y comandos que se ofrecen son los que necesitan los usuarios. Si no es probable que los usuarios necesiten algo, no se incluye. No use el número máximo de elementos si no son necesarios.
--   **Predicción.** Los destinos y comandos que se ofrecen son los que los usuarios esperan encontrar. Los usuarios rara vez tienen que buscar en más de un lugar.
--   **Bien organizado.** Los usuarios pueden encontrar lo que buscan rápidamente. Usan etiquetas descriptivas pero concisas, y iconos adecuados para el reconocimiento de la ayuda.
+-   **Claramente diferenciado.** Los usuarios saben cuándo buscar un destino o comando en un Lista de accesos directos y cuándo buscar en una barra de herramientas en miniatura. Hay un propósito claro para cada uno, por lo que los usuarios rara vez confundan el contenido de los dos. Por lo general, las listas de accesos rápidos se usan para iniciar nuevas tareas, mientras que las barras de herramientas en miniatura se usan para interactuar con las tareas en ejecución mientras se usan otros programas.
+-   **Útil.** Los destinos y comandos ofrecidos son los que necesitan los usuarios. Si es probable que los usuarios no necesiten algo, no se incluye. No use el número máximo de elementos si no son necesarios.
+-   **Predecible.** Los destinos y comandos ofrecidos son los que los usuarios esperan encontrar. Los usuarios rara vez tienen que buscar en más de un lugar.
+-   **Bien organizado.** Los usuarios pueden encontrar lo que buscan rápidamente. Usan etiquetas descriptivas pero concisas e iconos adecuados para facilitar el reconocimiento.
 
-Asegúrese de realizar una investigación de usuario para asegurarse de que la tiene correcta. Si en última instancia no se puede diseñar listas de saltos y barras de herramientas en miniatura que consigan estos objetivos, considere la posibilidad de proporcionar solo una de ellas. Es mejor tener una manera predecible de proporcionar comandos de los dos confusos.
+Asegúrese de investigar a los usuarios para asegurarse de que lo ha hecho bien. Si, en última instancia, descubre que no puede diseñar listas de saltos y barras de herramientas en miniatura juntos que alcancen estos objetivos, considere la posibilidad de proporcionar solo una de ellas. Es mejor tener una manera predecible de proporcionar comandos que dos confusos.
 
 ## <a name="guidelines"></a>Directrices
 
 ### <a name="taskbar-buttons"></a>Botones de la barra de tareas
 
--   **Haga que aparezcan los siguientes tipos de ventana en la barra de tareas (para Windows 7, mediante una miniatura del botón de la barra de tareas):**
+-   **Haga que los siguientes tipos de ventana aparezcan en la barra de tareas (para Windows 7, mediante una miniatura de botón de la barra de tareas):**
     -   Ventanas principales (que incluye cuadros de diálogo sin propietarios)
     -   Hojas de propiedades
-    -   Cuadros de diálogo de progreso no modal
+    -   Cuadros de diálogo de progreso de modeless
     -   Asistentes
--   **En Windows 7, use las miniaturas del botón de la barra de tareas para agrupar los siguientes tipos de ventana con el botón de la barra de tareas de la ventana principal en el que se inició.** Cada programa (específicamente, cada programa percibido como un programa independiente) debe tener un solo botón de la barra de tareas.
+-   **Para Windows 7, use miniaturas de botón de la barra de tareas para agrupar los siguientes tipos de ventana con el botón de la barra de tareas de la ventana principal desde el que se inició.** Cada programa (específicamente, cada programa que se percibe como un programa independiente) debe tener un solo botón de la barra de tareas.
 
     -   Ventanas secundarias
     -   Pestañas del área de trabajo
@@ -155,7 +155,7 @@ Asegúrese de realizar una investigación de usuario para asegurarse de que la t
 
     **Correcto:**
 
-    ![captura de pantalla del explorador de Windows y la barra de progreso ](images/winenv-taskbar-image11.png)
+    ![captura de pantalla del Explorador de Windows y la barra de progreso ](images/winenv-taskbar-image11.png)
 
     En este ejemplo, una ventana secundaria se agrupa con el botón de la barra de tareas de la ventana principal.
 
@@ -163,45 +163,45 @@ Asegúrese de realizar una investigación de usuario para asegurarse de que la t
 
     ![captura de pantalla del explorador de Windows y el panel de control ](images/winenv-taskbar-image12.png)
 
-    En este ejemplo, el panel de control no está correctamente agrupado con el explorador de Windows. Los usuarios los perciben como programas independientes.
+    En este ejemplo, Panel de control agrupa incorrectamente con Explorador de Windows. Los usuarios los perciben como programas independientes.
 
     **Incorrecto:**
 
     ![captura de pantalla del programa, la barra de progreso y una barra de tareas ](images/winenv-taskbar-image13.png)
 
-    En este ejemplo, copia de seguridad de Windows usa incorrectamente dos botones de la barra de tareas para un único programa.
+    En este ejemplo, Copias de seguridad de Windows usa incorrectamente dos botones de la barra de tareas para un solo programa.
 
--   La **restauración de una ventana principal también debe restaurar todas las ventanas secundarias,** incluso si esas ventanas secundarias tienen sus propios botones de la barra de tareas. Al restaurar, coloque las ventanas secundarias en la parte superior de la ventana principal.
--   **En Windows 7, los programas que normalmente tienen presencia de escritorio pueden mostrar temporalmente un botón de la barra de tareas para mostrar el estado.** Hágalo solo si el programa se muestra normalmente en el escritorio y los usuarios suelen interactuar con él. Un programa que normalmente se ejecuta sin presencia de escritorio debe usar en su lugar el icono del área de notificación, aunque es posible que no siempre sea visible.
+-   **La restauración de una ventana principal también debe restaurar todas sus ventanas secundarias,** incluso si esas ventanas secundarias tienen sus propios botones de la barra de tareas. Al restaurar, coloque las ventanas secundarias en la parte superior de la ventana principal.
+-   **Para Windows 7, los programas que normalmente tienen presencia en el escritorio pueden mostrar temporalmente un botón de la barra de tareas para mostrar el estado.** Solo lo hace si el programa se muestra normalmente en el escritorio y los usuarios interactúan con él con frecuencia. Un programa que normalmente se ejecuta sin presencia de escritorio debe usar su icono de área de notificación en su lugar, aunque no siempre esté visible.
 
     **Incorrecto:**
 
     ![captura de pantalla del botón de la barra de tareas del centro de sincronización de Windows ](images/winenv-taskbar-image14.png)
 
-    En este ejemplo, el centro de sincronización de Windows usa incorrectamente un botón de la barra de tareas temporal para mostrar el estado. En su lugar, debe usar su icono de área de notificación.
+    En este ejemplo, Windows Centro de sincronización usa incorrectamente un botón de la barra de tareas temporal para mostrar el estado. En su lugar, debe usar su icono de área de notificación.
 
 ### <a name="icons"></a>Iconos
 
--   **Diseñe el icono del programa para que tenga un aspecto excelente en la barra de tareas.** Asegúrese de que sea significativo y refleje su función y su marca. Haga que sea distinto, haga que sea especial y asegúrese de que se representa bien en todos los tamaños de icono. Dedique el tiempo necesario para que sea correcto. Siga las [instrucciones del icono de estilo Aero](vis-icons.md).
--   **Si el programa usa iconos superpuestos, diseñe el icono base del programa para controlar las superposiciones correctamente.** Los iconos de superposición se muestran en la esquina inferior derecha, por lo que debe diseñar el icono para que se oculte el área.
+-   **Diseñe el icono del programa para que se vea muy bien en la barra de tareas.** Asegúrese de que sea significativo y refleje su función y su marca. Haz que sea diferente, haz que sea especial y asegúrate de que se representa bien en todos los tamaños de icono. Dedime el tiempo necesario para hacerlo correcto. Siga las [directrices del icono de estilo aeronáuco](vis-icons.md).
+-   **Si el programa usa iconos de superposición, diseñe el icono base del programa para controlar bien las superposiciones.** Los iconos superpuestos se muestran en la esquina inferior derecha, por lo que debe diseñar el icono para que esa área se pueda ocultar.
 
-    ![captura de pantalla de iconos y con la superposición inferior derecha ](images/winenv-taskbar-image15.png)
+    ![captura de pantalla de iconos y con superposición inferior derecha ](images/winenv-taskbar-image15.png)
 
-    En este ejemplo, el icono de botón de la barra de tareas del programa no tiene información importante en el área inferior derecha.
+    En este ejemplo, el icono del botón de la barra de tareas del programa no tiene información importante en el área inferior derecha.
 
--   **No use superposiciones en el icono base del programa,** tanto si el programa usa iconos superpuestos como si no. El uso de una superposición en el icono de base será confuso porque los usuarios tendrán que averiguar que no se está comunicando el estado.
+-   **No use superposiciones en el icono base** del programa, independientemente de si el programa usa iconos de superposición o no. El uso de una superposición en el icono base será confuso porque los usuarios tendrán que averiguar que no se comunica el estado.
 
     **Incorrecto:**
 
-    ![captura de pantalla del icono base con la superposición ](images/winenv-taskbar-image16.png)
+    ![captura de pantalla del icono base con superposición ](images/winenv-taskbar-image16.png)
 
-    En este ejemplo, el icono base del programa tiene el aspecto que muestra el estado.
+    En este ejemplo, el icono base del programa parece que muestra el estado.
 
-Para obtener instrucciones y ejemplos de iconos generales, vea [iconos](vis-icons.md).
+Para obtener instrucciones y ejemplos de iconos generales, vea [Iconos.](vis-icons.md)
 
 ### <a name="overlay-icons"></a>Iconos de superposición
 
--   **Use los iconos de superposición para indicar únicamente el estado útil y relevante.** Tenga en cuenta que la presentación de un icono de superposición es una posible interrupción del trabajo del usuario, por lo que el cambio de Estado debe ser lo suficientemente importante como para merecer una posible interrupción.
+-   **Use iconos superpuestos para indicar solo el estado útil y pertinente.** Considere la visualización de un icono de superposición como una posible interrupción del trabajo del usuario, por lo que el cambio de estado debe ser lo suficientemente importante como para merecer una posible interrupción.
 
     **Incorrecto:**
 
@@ -209,234 +209,233 @@ Para obtener instrucciones y ejemplos de iconos generales, vea [iconos](vis-icon
 
     En estos ejemplos, el icono de superposición no es lo suficientemente importante como para merecer una posible interrupción.
 
--   **Usar iconos de superposición para estado temporal.** Los iconos de superposición pierden su valor si se muestran constantemente, por lo que el estado normal del programa no debe mostrar un icono. Quitar el icono de superposición cuando el icono:
+-   **Use iconos de superposición para el estado temporal.** Los iconos superpuestos pierden su valor si se muestran constantemente, por lo que el estado normal del programa no debe mostrar un icono. Quite el icono de superposición cuando el icono:
 
-    -   **Es un problema:** Quite el icono una vez resuelto el problema.
+    -   **Es para un problema:** Quite el icono una vez resuelto el problema.
     -   **Alerta de que algo es nuevo:** Quite el icono una vez que el usuario haya activado el programa.
 
     **Excepción:** El programa puede mostrar constantemente un icono de superposición si los usuarios siempre necesitan conocer su estado.
 
-    ![captura de pantalla de Live Messenger con el icono de superposición ](images/winenv-taskbar-image18.png)
+    ![captura de pantalla de Live Messenger con icono de superposición ](images/winenv-taskbar-image18.png)
 
-    En este ejemplo, Windows Live Messenger siempre muestra un icono de superposición para que los usuarios puedan comprobar siempre su presencia detectada.
+    En este ejemplo, Windows Live Messenger siempre muestra un icono de superposición para que los usuarios siempre puedan comprobar su presencia notificada.
 
--   **No mostrar un icono para indicar que se ha resuelto un problema.** En su lugar, simplemente quite cualquier icono anterior que indique un problema. Supongamos que los usuarios esperan normalmente que el programa se ejecute sin problemas.
--   **Mostrar iconos de superposición o iconos del área de notificación, pero nunca ambos.** El programa puede admitir ambos mecanismos para la compatibilidad con versiones anteriores, pero si el programa muestra el estado mediante iconos superpuestos, no debe utilizar también iconos del área de notificación para el estado.
+-   **No muestre un icono para indicar que se ha resuelto un problema.** En su lugar, simplemente quite cualquier icono anterior que indique un problema. Supongamos que los usuarios normalmente esperan que el programa se ejecute sin problemas.
+-   **Muestra iconos superpuestos o iconos de área de notificación, pero nunca ambos.** El programa puede admitir ambos mecanismos para la compatibilidad con versiones anteriores, pero si el programa muestra el estado mediante iconos superpuestos, tampoco debe usar iconos de área de notificación para el estado.
 
     **Incorrecto:**
 
     ![captura de pantalla de la barra de tareas con el icono mostrado dos veces ](images/winenv-taskbar-image19.png)
 
-    En este ejemplo, el icono nuevo correo se muestra de forma redundante.
+    En este ejemplo, el nuevo icono de correo se muestra de forma redundante.
 
--   **No parpadee el botón de la barra de tareas para llamar la atención sobre un cambio de estado.** Si lo hace, se destraerán. Permita que los usuarios detecten iconos superpuestos por su cuenta.
--   **Prefiere los iconos de superposición estándar para indicar el estado o los cambios de estado.** Use estos iconos de superposición estándar: 
+-   **No flashee el botón de la barra de tareas para llamar la atención sobre un cambio de estado.** Si lo hace, sería demasiado distraer. Permitir que los usuarios detecten iconos superpuestos por sí mismos.
+-   **Prefiere iconos de superposición estándar para indicar los cambios de estado o de estado.** Use estos iconos de superposición estándar: 
 
-    |                                                                                                   |                                  |
+    | Overlay | Estado |
     |---------------------------------------------------------------------------------------------------|----------------------------------|
-    | **Overlay**<br/>                                                                            | **Estado**<br/>            |
-    | ![captura de pantalla de un icono pequeño de advertencia ](images/winenv-taskbar-image20.png)<br/>               | Advertencia<br/>               |
-    | ![captura de pantalla de un icono de error pequeño ](images/winenv-taskbar-image21.png)<br/>                 | Error<br/>                 |
-    | ![captura de pantalla de un icono pequeño desconectado o desconectado ](images/winenv-taskbar-image22.png)<br/> | Deshabilitado o desconectado<br/> |
-    | ![captura de pantalla del icono pequeño de bloqueado/sin conexión ](images/winenv-taskbar-image23.png)<br/>       | Bloqueado/sin conexión<br/>       |
+    | ![captura de pantalla del icono de advertencia pequeño ](images/winenv-taskbar-image20.png)<br/>               | Advertencia<br/>               |
+    | ![captura de pantalla del icono de error pequeño ](images/winenv-taskbar-image21.png)<br/>                 | Error<br/>                 |
+    | ![captura de pantalla del icono pequeño deshabilitado o desconectado ](images/winenv-taskbar-image22.png)<br/> | Deshabilitado o desconectado<br/> |
+    | ![captura de pantalla del icono pequeño bloqueado o sin conexión ](images/winenv-taskbar-image23.png)<br/>       | Bloqueado/sin conexión<br/>       |
 
     
 
      
 
--   **En el caso de los iconos de superposición personalizados, elija un diseño fácilmente reconocible.** Use iconos de color completo de 16x16 de alta calidad. Prefiere iconos con contornos distintivos sobre los iconos con forma de cuadrado o rectangular. Aplique también las otras [instrucciones de iconos de estilo Aero](vis-icons.md) .
--   **Mantenga el diseño de los iconos de superposición personalizados sencillos.** No intente comunicar ideas complejas, desconocidas o abstractas. Si no puede pensar en un icono personalizado adecuado, use un icono de error o un icono de advertencia estándar en su lugar cuando corresponda. Estos iconos se pueden usar de forma eficaz para comunicar muchos tipos de estado.
--   **No cambie el estado con demasiada frecuencia.** Los iconos de superposición no deben parecer ruidos, inestables o de petición. El ojo es sensible a los cambios en el campo de visión de periféricos, por lo que los cambios de estado deben ser sutiles.
-    -   **No cambie el icono rápidamente.** Si el estado subyacente cambia rápidamente, haga que el icono refleje el estado de alto nivel.
+-   **Para los iconos de superposición personalizados, elija un diseño fácilmente reconocible.** Use iconos de color completo de 16 x 16 píxeles de alta calidad. Prefiere iconos con contornos distintivos sobre iconos de forma cuadrada o rectangular. Aplique también las [otras directrices de icono](vis-icons.md) de estilo Avión.
+-   **Mantenga sencillo el diseño de iconos de superposición personalizados.** No intente comunicar ideas complejas, desconocidas o abstractas. Si no puede pensar en un icono personalizado adecuado, use un icono estándar de error o icono de advertencia en su lugar cuando corresponda. Estos iconos se pueden usar eficazmente para comunicar muchos tipos de estado.
+-   **No cambie el estado con demasiada frecuencia.** Los iconos superpuestos no deben parecer ruidosos, inestables ni exigir atención. El ojo es sensible a los cambios en el campo periférico de la visión, por lo que los cambios de estado deben ser sutiles.
+    -   **No cambie el icono rápidamente.** Si el estado subyacente cambia rápidamente, haga que el icono refleje el estado general.
 
         **Incorrecto:**
 
-        ![captura de pantalla del icono de superposición en dos Estados ](images/winenv-taskbar-image24.png)
+        ![captura de pantalla del icono de superposición en dos estados ](images/winenv-taskbar-image24.png)
 
-        En este ejemplo, el icono de superposición que cambia rápidamente exige atención.
+        En este ejemplo, el icono de superposición que cambia rápidamente requiere atención.
 
-    -   **No use animaciones.** Si lo hace, se destraerá.
-    -   **No parpadee el icono.** Si lo hace, se destraerá. Si un evento requiere atención inmediata, utilice en su lugar un cuadro de diálogo. Si, de lo contrario, el evento necesita atención, use una notificación.
+    -   **No use animaciones.** Hacerlo es demasiado distraer.
+    -   **No flashee el icono.** Hacerlo es demasiado distraer. Si un evento requiere atención inmediata, use un cuadro de diálogo en su lugar. Si el evento necesita atención, use una notificación.
 
-### <a name="taskbar-button-flashing"></a>Botón de la barra de tareas intermitente
+### <a name="taskbar-button-flashing"></a>Parpadear el botón de la barra de tareas
 
--   **Use el botón de la barra de tareas en exceso para solicitar la atención inmediata del usuario para mantener la ejecución de una tarea en curso.** Es difícil para los usuarios concentrar mientras un botón de la barra de tareas parpadea, por lo que se supone que interrumpirán lo que están haciendo para que se detenga. Aunque parpadear un botón de la barra de tareas es mejor que robar el foco de entrada, los botones intermitentes de la barra de tareas siguen siendo muy intrusivos. Asegúrese de que la interrupción esté justificada, como para indicar que el usuario debe guardar los datos antes de cerrar una ventana. Los programas inactivos no suelen requerir una acción inmediata. No parpadee el botón de la barra de tareas si lo único que tiene que hacer el usuario es activar el programa, leer un mensaje o ver un cambio de estado.
+-   **Use el parpadeo de botones de la barra de tareas con moderación para exigir la atención inmediata del usuario para mantener una tarea en curso en ejecución.** Es difícil que los usuarios se concentren mientras parpadea un botón de la barra de tareas, así que suponga que interrumpirán lo que hacen para que se detenga. Aunque parpadear un botón de la barra de tareas es mejor que robar el foco de entrada, los botones de la barra de tareas parpadeantes siguen siendo muy intrusivos. Asegúrese de que la interrupción está justificada, por ejemplo, para indicar que el usuario debe guardar los datos antes de cerrar una ventana. Los programas inactivos rara vez deben requerir una acción inmediata. No flashee el botón de la barra de tareas si lo único que tiene que hacer el usuario es activar el programa, leer un mensaje o ver un cambio de estado.
 -   **Si no se requiere una acción inmediata, tenga en cuenta estas alternativas:**
-    -   Use una [notificación de acción correcta](mess-notif.md) para indicar que una tarea se ha completado.
-    -   No haga nada. Espere a que los usuarios asistan al problema la próxima vez que activen el programa. Esta suele ser la mejor opción.
--   **Si un programa inactivo requiere atención inmediata, destaque el botón de la barra de tareas para atraer la atención y dejarla resaltada.** No haga nada más: no restaure ni active la ventana y no reproduzca efectos sonoros. En su lugar, respete la selección del estado de la ventana del usuario y deje que el usuario Active la ventana cuando esté listo.
--   **En el caso de las ventanas secundarias que tienen un botón de la barra de tareas, en lugar del botón de la barra de tareas de la ventana principal, Flash.** Si lo hace, los usuarios podrán asistir a la ventana directamente.
--   **En el caso de las ventanas secundarias que no tienen un botón de la barra de tareas, parpadee el botón de la barra de tareas de la ventana principal y coloque la ventana secundaria encima de todas las demás ventanas para ese programa.** Las ventanas secundarias que requieren atención deben ser mayores para asegurarse de que los usuarios las ven.
--   **Solo Flash botón de la barra de tareas de una ventana a la vez.** El parpadeo de más de un botón no es necesario y se distraen.
--   **Quite el resaltado del botón de la barra de tareas cuando el programa se active.**
--   **Cuando el programa se active, asegúrese de que es algo obvio.** Normalmente, este objetivo se consigue mostrando un cuadro de diálogo que formula una pregunta o inicia una acción.
+    -   Use una [notificación de acción correcta](mess-notif.md) para indicar que se ha completado una tarea.
+    -   No haga nada. Espere a que los usuarios atendan el problema la próxima vez que activen el programa. Esta suele ser la mejor opción.
+-   **Si un programa inactivo requiere atención inmediata, flashee el botón de la barra de tareas para llamar la atención y déjelo resaltado.** No haga nada más: no restaure ni active la ventana y no reprodgue ningún efecto de sonido. En su lugar, respete la selección del estado de la ventana del usuario y deje que el usuario active la ventana cuando esté listo.
+-   **Para las ventanas secundarias que tienen un botón de la barra de tareas, flash su botón en lugar del botón de la barra de tareas de la ventana principal.** Esto permite que los usuarios asistan directamente a la ventana.
+-   **En el caso de las ventanas secundarias que no tienen un botón de barra de tareas, flashee el botón de la barra de tareas de la ventana principal y lleve la ventana secundaria encima de todas las demás ventanas de ese programa.** Las ventanas secundarias que requieren atención deben ser las más destacadas para asegurarse de que los usuarios las ven.
+-   **Flash solo un botón de la barra de tareas para una ventana a la vez.** No es necesario parpadear más de un botón y distraer demasiado.
+-   **Quite el resaltado del botón de la barra de tareas una vez que el programa se active.**
+-   **Cuando el programa se active, asegúrese de que hay algo obvio que hacer.** Normalmente, este objetivo se logra mediante la visualización de un cuadro de diálogo que realiza una pregunta o inicia una acción.
 
-### <a name="quick-launch-shortcuts"></a>Accesos directos de inicio rápido
+### <a name="quick-launch-shortcuts"></a>inicio rápido accesos directos
 
--   **Coloque los accesos directos de programa en el área de inicio rápido solo si los usuarios optan por.** Dado que el inicio rápido se ha quitado de Windows 7, los programas diseñados para Windows 7 no deben agregar accesos directos de programa al área Inicio rápido ni proporcionar opciones para hacerlo.
+-   **Coloque los métodos abreviados de programa en inicio rápido solo si los usuarios optan por participar.** Dado inicio rápido se quitó de Windows 7, los programas diseñados para Windows 7 no deben agregar accesos directos de programa al área inicio rápido ni proporcionar opciones para ello.
 
-### <a name="jump-lists"></a>Jump Lists
+### <a name="jump-lists"></a>Listas de saltos
 
 **Diseño**
 
--   **Diseñe listas de saltos para satisfacer los objetivos de sus usuarios para sus tareas cotidianas.** Considere:
-    -   **El propósito del programa.** Piense en qué usuarios es más probable que lo hagan a continuación. En el caso de los programas de creación de documentos, es probable que los usuarios vuelvan a documentos usados recientemente. En el caso de los programas que muestran contenido existente, es posible que los usuarios deseen tener acceso a los recursos que usan con frecuencia. En el caso de otros programas, es probable que los usuarios realicen tareas que no hayan realizado antes, como leer nuevos mensajes, ver nuevos vídeos o comprobar la próxima reunión.
-    -   **Lo que más le interesan los usuarios.** Piense por qué los usuarios usarían la Jump List en lugar de otros medios. Por ejemplo, los usuarios tienen más probabilidades de preocuparse de los destinos que se identifican explícitamente como importantes (por ejemplo, las direcciones web que se colocan en la barra de vínculos o en los favoritos, o escriben). Es menos probable que se ocupen de las obtenidas indirectamente o con poco esfuerzo (como las direcciones web visitadas a través de la redirección o haciendo clic en los vínculos).
+-   **Diseñar listas de saltos para satisfacer los objetivos de los usuarios para sus tareas diarias.** Considere:
+    -   **El propósito del programa.** Piense en lo que es más probable que hagan los usuarios a continuación. En el caso de los programas de creación de documentos, es probable que los usuarios vuelvan a los documentos usados recientemente. En el caso de los programas que muestran contenido existente, es posible que los usuarios quieran acceder a los recursos que usan con frecuencia. En el caso de otros programas, es posible que los usuarios puedan realizar tareas que no hayan hecho antes, como leer mensajes nuevos, ver vídeos nuevos o comprobar su próxima reunión.
+    -   **Lo que más interesa a los usuarios.** Piense por qué los usuarios usarían el Lista de accesos directos en lugar de otros medios. Por ejemplo, es más probable que a los usuarios les importan los destinos que han identificado explícitamente como importantes (por ejemplo, las direcciones web que los usuarios colocan en la barra de vínculos o en Favoritos o escriben). Es menos probable que les importan las obtenidas indirectamente o con poco esfuerzo (por ejemplo, las direcciones web visitadas a través del redireccionamiento o haciendo clic en vínculos).
 
         **Correcto:**
 
-        ![captura de pantalla de Jump List con un vínculo a un destino ](images/winenv-taskbar-image25.png)
+        ![captura de pantalla de la lista de saltos con un vínculo a un destino ](images/winenv-taskbar-image25.png)
 
         **Incorrecto:**
 
-        ![captura de pantalla de Jump List con cinco vínculos al destino ](images/winenv-taskbar-image26.png)
+        ![captura de pantalla de la lista de saltos con cinco vínculos al destino ](images/winenv-taskbar-image26.png)
 
-        En el ejemplo incorrecto, la Jump List contiene muchos destinos que es probable que los usuarios no tengan que preocuparse.
+        En el ejemplo incorrecto, el Lista de accesos directos contiene muchos destinos que es probable que a los usuarios no les preocupen.
 
--   **No cree destinos demasiado granulares.** La creación de destinos es demasiado estrecha y específica puede producir redundancia, con varias formas de ir al mismo lugar. Por ejemplo, en lugar de enumerar páginas web individuales, enumere las páginas principales de nivel superior. en lugar de mostrar canciones, enumere álbumes.
+-   **No haga que los destinos sea demasiado pormenorizados.** Hacer que los destinos sea demasiado estrechos y específicos puede dar lugar a redundancia, con varias maneras de ir al mismo lugar. Por ejemplo, en lugar de enumerar páginas web individuales, en su lugar se enumeran las páginas principales de nivel superior. en lugar de enumerar canciones, enumera los álbumes.
 
     **Correcto:**
 
-    ![captura de pantalla de la Jump List organizada por grupos ](images/winenv-taskbar-image27.png)
+    ![captura de pantalla de la lista de saltos organizada por grupos ](images/winenv-taskbar-image27.png)
 
     **Incorrecto:**
 
-    ![captura de pantalla de la Jump List organizada por canciones ](images/winenv-taskbar-image28.png)
+    ![captura de pantalla de la lista de saltos organizada por canciones ](images/winenv-taskbar-image28.png)
 
-    En el ejemplo incorrecto, al mostrar las canciones en una Jump List, se rellenará con un solo álbum.
+    En el ejemplo incorrecto, la enumeración de canciones en un Lista de accesos directos la rellenará con un solo álbum.
 
--   **No rellene todas las ranuras de Jump List disponibles si no es necesario.** Centre el contenido de la Jump List en los elementos más útiles si el programa tiene solo tres elementos útiles, proporcione solo tres. Cuanto mayor sea el número de elementos de una Jump List, más esfuerzo se necesita para encontrar cualquier elemento específico.
+-   **No rellene todas las ranuras Lista de accesos directos disponibles si no es necesario.** Cént Lista de accesos directos contenido en los elementos más útiles si el programa tiene solo tres elementos útiles, proporcione solo tres. Entre más elementos de un Lista de accesos directos, más esfuerzo se requiere para encontrar un elemento específico.
 
-    ![captura de pantalla de Jump List con un comando ](images/winenv-taskbar-image29.png)
+    ![captura de pantalla de jump list con un comando ](images/winenv-taskbar-image29.png)
 
-    En este ejemplo, el accesorio Notas rápidas proporciona un comando de Jump List único, ya que es todo lo que se necesita.
+    En este ejemplo, el Notas rápidas proporciona un único Lista de accesos directos, ya que es todo lo que se necesita.
 
--   **Proporcione información sobre herramientas solo cuando sea necesario para ayudar a los usuarios a comprender los elementos de Jump List.** Evite la información sobre herramientas redundante porque son una distracción innecesaria. Para obtener más instrucciones sobre información sobre herramientas, consulte [información sobre herramientas y recuadros informativos](ctrl-tooltips-and-infotips.md).
+-   **Proporcione información sobre herramientas solo cuando sea necesario para ayudar a los usuarios a comprender Lista de accesos directos elementos.** Evite la información sobre herramientas redundante porque son una distracción innecesaria. Para obtener más instrucciones sobre herramientas, vea [Información sobre herramientas e información sobre herramientas.](ctrl-tooltips-and-infotips.md)
 
     **Incorrecto:**
 
-    ![captura de pantalla de Jump List con información sobre herramientas redundante ](images/winenv-taskbar-image30.png)
+    ![captura de pantalla de jump list con información sobre herramientas redundante ](images/winenv-taskbar-image30.png)
 
-    En este ejemplo, la información sobre herramientas de Jump List es redundante.
+    En este ejemplo, la información Lista de accesos directos información sobre herramientas es redundante.
 
-**Características de Jump List frente a características del programa**
+**Lista de accesos directos características frente a las características del programa**
 
--   **No haga que los destinos y comandos estén disponibles solo a través de Jump lists.** Los mismos destinos y comandos deben estar disponibles directamente desde el propio programa.
--   **Use nombres coherentes para los destinos y etiquetas para los comandos.** Los elementos de Jump List deben etiquetarse igual que los elementos equivalentes a los que se tiene acceso directamente desde el programa.
--   **Permite que el programa controle los destinos y comandos incluso cuando el programa no se está ejecutando.** Esto es necesario para una experiencia coherente, confiable y cómoda.
+-   **No haga que los destinos y los comandos estén disponibles solo a través de listas de accesos.** Los mismos destinos y comandos deben estar disponibles directamente desde el propio programa.
+-   **Use nombres coherentes para destinos y etiquetas para los comandos.** Lista de accesos directos los elementos deben etiquetarse igual que los elementos equivalentes a los que se accede directamente desde el programa.
+-   **Habilite el programa para controlar destinos y comandos incluso cuando el programa no se esté ejecutando.** Esto es necesario para una experiencia coherente, confiable y cómoda.
 
 **Agrupación**
 
--   **Proporcione al menos uno y tres grupos como máximo.** Los elementos de Jump List siempre se agrupan para etiquetar su propósito. Tener más de tres grupos hace que los elementos sean más difíciles de encontrar.
--   **Use los nombres de grupo estándar cuando corresponda.** Los nombres de los grupos estándar son familiares y fáciles de entender para los usuarios.
+-   **Proporcione al menos uno y, como máximo, tres grupos.** Lista de accesos directos los elementos siempre se agrupan para etiquetar su propósito. Tener más de tres grupos hace que los elementos sea más difícil de encontrar.
+-   **Use nombres de grupo estándar cuando sea necesario.** Los nombres de grupo estándar son familiares y fáciles de entender para los usuarios.
 
-    A los comandos se les asigna el nombre del grupo de tareas, que es asignado por Windows y, por tanto, no se puede cambiar.
+    A los comandos se les asigna el nombre del grupo Tareas, que está asignado por Windows y, por tanto, no se puede cambiar.
 
     **Correcto:**
 
-    ![captura de pantalla de Jump List con el nombre de grupo reciente ](images/winenv-taskbar-image31.png)
+    ![captura de pantalla de la lista de saltos con el nombre del grupo reciente ](images/winenv-taskbar-image31.png)
 
     **Incorrecto:**
 
-    ![captura de pantalla de Jump List con el nombre del grupo de historial ](images/winenv-taskbar-image32.png)
+    ![captura de pantalla de la lista de saltos con el nombre del grupo de historial ](images/winenv-taskbar-image32.png)
 
-    Reciente es el mejor nombre de grupo porque es familiar, y la diferencia sutil entre el historial y el reciente no merece la pena hacerlo.
+    Recientes es el mejor nombre de grupo porque es familiar y no merece la pena distinguir sutilmente entre el historial y el reciente.
 
 **Comandos**
 
--   **Proporcionar un conjunto fijo de comandos independientemente del estado de ejecución del programa, el documento actual o el usuario actual.** Los comandos se deben aplicar a todo el programa, no a una ventana o un documento específicos. Esto es necesario para una experiencia coherente, confiable y cómoda. Los comandos no deben quitarse o deshabilitarse.
+-   **Proporcione un conjunto fijo de comandos independientemente del estado de ejecución del programa, el documento actual o el usuario actual.** Los comandos deben aplicarse a todo el programa, no a una ventana o documento específicos. Esto es necesario para una experiencia coherente, confiable y cómoda. Los comandos no deben quitarse ni deshabilitarse.
 
     **Excepciones:** Puede sustituir o quitar comandos cuando:
 
-    -   Un conjunto de comandos mutuamente exclusivos comparte una sola ranura de comandos, siempre que se aplique un comando.
-    -   Los comandos no se aplican hasta que se hayan usado características específicas, siempre y cuando los comandos de lo contrario siempre se apliquen.
+    -   Un conjunto de comandos mutuamente excluyentes comparte una sola ranura de comandos, siempre y cuando siempre se aplique un comando.
+    -   Los comandos no se aplican hasta que se han usado características específicas, siempre y cuando siempre se apliquen los comandos.
 
     **Incorrecto:**
 
-    ![captura de pantalla de Jump List con la tarea de impresión ](images/winenv-taskbar-image33.png)
+    ![captura de pantalla de la lista de saltos con la tarea de impresión ](images/winenv-taskbar-image33.png)
 
-    En este ejemplo, Print no es un buen comando Jump List porque depende del documento actual.
+    En este ejemplo, Imprimir no es un buen Lista de accesos directos comando porque depende del documento actual.
 
     **Correcto:**
 
-    ![captura de pantalla de Jump List con inicio y cierre de sesión ](images/winenv-taskbar-image34.png)
+    ![captura de pantalla de jump list con inicio y cerrar sesión ](images/winenv-taskbar-image34.png)
 
-    En este ejemplo, el inicio y cierre de sesión son comandos mutuamente exclusivos. Además, los separadores se usan para agrupar comandos relacionados.
+    En este ejemplo, Iniciar sesión y Cerrar sesión son comandos mutuamente excluyentes. Además, los separadores se usan para agrupar comandos relacionados.
 
--   **Use las siguientes etiquetas de comando estándar cuando corresponda.** Las etiquetas de comando estándar son más fáciles de entender para los usuarios.
--   **Presente los comandos en un orden lógico.** Los pedidos comunes incluyen la frecuencia de uso o el orden de uso. Coloque comandos muy relacionados entre sí. Dentro del grupo tareas, coloque los separadores entre los grupos de comandos relacionados según sea necesario.
--   **No proporcione comandos para abrir o cerrar el programa.** Estos comandos están integrados en todas las listas de accesos directos.
+-   **Use las siguientes etiquetas de comando estándar cuando corresponda.** Las etiquetas de comandos estándar son más fáciles de entender para los usuarios.
+-   **Presente los comandos en un orden lógico.** Los pedidos comunes incluyen por frecuencia de uso o orden de uso. Coloque comandos muy relacionados entre sí. En el grupo Tareas, coloque separadores entre grupos de comandos relacionados según sea necesario.
+-   **No proporcione comandos para abrir o cerrar el programa.** Estos comandos están integrados en todas las listas de accesos.
 
 **Iconos de comando**
 
--   **En el grupo tareas, proporcione un icono de comando solo cuando Ayude a los usuarios a entender, reconocer o diferenciar comandos,** especialmente cuando hay un icono establecido para el comando que se usa en el programa.
+-   **Dentro del grupo Tareas,** proporcione un icono de comando solo cuando ayude a los usuarios a comprender, reconocer o diferenciar comandos, especialmente cuando hay un icono establecido para el comando que se usa dentro del programa.
 
-    -   **Excepción:** Si el programa usa ambos destinos (que siempre tienen iconos) y comandos, considere la posibilidad de proporcionar iconos para todos los comandos si, de lo contrario, tendría un aspecto extraño.
+    -   **Excepción:** Si el programa usa ambos destinos (que siempre tienen iconos) y comandos, considere la posibilidad de proporcionar iconos para todos los comandos, si no lo hace, sería difícil.
 
     **Incorrecto:**
 
-    ![captura de pantalla del uso incoherente de la Jump List de los iconos ](images/winenv-taskbar-image35.png)
+    ![captura de pantalla de la lista de saltos uso incoherente de iconos ](images/winenv-taskbar-image35.png)
 
-    En este ejemplo, Internet Explorer debe proporcionar iconos para todos los comandos con el fin de evitar un aspecto extraño.
+    En este ejemplo, Internet Explorer debe proporcionar iconos para todos los comandos a fin de evitar una apariencia difícil.
 
 **Destinations**
 
--   **Proporcionan un conjunto dinámico de destinos que son específicos del usuario actual, pero son independientes del estado de ejecución del programa o del documento actual.** Como se mencionó anteriormente, asegúrese de que se ajustan a la finalidad del programa, que son lo que los usuarios tienen más cuidado y tienen el nivel de especificidad adecuado.
+-   **Proporcione un conjunto dinámico de destinos específicos del usuario actual, pero independientes del programa que ejecuta el estado o el documento actual.** Como se mencionó anteriormente, asegúrese de que se ajusten al propósito del programa, de que son los que más les importan a los usuarios y de que tienen el nivel adecuado de especificidad.
 -   **Cuando sea adecuado, use una lista de destino "automática".** Windows administra los destinos automáticos, pero el programa controla los destinos específicos que se pasan.
-    -   Considere la posibilidad de usar recientes para programas de creación de documentos en los que es probable que los usuarios vuelvan a destinos usados recientemente.
+    -   Considere la posibilidad de usar Recientes para los programas de creación de documentos en los que es probable que los usuarios vuelvan a destinos usados recientemente.
 
-        ![captura de pantalla de Jump List con el nombre de grupo "reciente" ](images/winenv-taskbar-image36.png)
+        ![captura de pantalla de la lista de saltos con el nombre del grupo "reciente" ](images/winenv-taskbar-image36.png)
 
         En este ejemplo, el Bloc de notas de Windows usa destinos recientes.
 
-    -   Considere la posibilidad de usar con frecuencia para programas que muestran contenido existente, donde es probable que los usuarios vuelvan a los elementos que usan con frecuencia. Los destinos frecuentes se ordenan por orden de frecuencia, lo que suele ser más frecuente.
+    -   Considere la posibilidad de usar Frecuente para programas que muestran contenido existente, donde es probable que los usuarios vuelvan a los elementos que usan con frecuencia. Los destinos frecuentes se ordenan por orden de frecuencia, primero con más frecuencia.
 
-        ![captura de pantalla de Jump List con un nombre de grupo frecuente ](images/winenv-taskbar-image37.png)
+        ![captura de pantalla de la lista de saltos con el nombre frecuente del grupo ](images/winenv-taskbar-image37.png)
 
-        En este ejemplo, el explorador de Windows usa destinos frecuentes.
+        En este ejemplo, Explorador de Windows destinos frecuentes.
 
-    -   Use frecuente si el reciente daría como resultado muchos destinos inútiles. Las listas frecuentes son más estables y la mejor opción cuando los usuarios van a muchos destinos diferentes, pero no es probable que vuelvan a las usadas con poca frecuencia.
+    -   Usar Frecuente si es reciente daría lugar a muchos destinos inutilizados. Las listas frecuentes son más estables y la mejor opción cuando los usuarios van a muchos destinos diferentes, pero no es probable que vuelvan a los usados con muy poco frecuencia.
 
         **Incorrecto:**
 
-        ![captura de pantalla de Jump List con varios elementos recientes ](images/winenv-taskbar-image38.png)
+        ![captura de pantalla de la lista de saltos con varios elementos recientes ](images/winenv-taskbar-image38.png)
 
-        Usar recientes en Windows Internet Explorer daría como resultado muchos destinos inútiles.
+        El uso de Recientes en Windows Internet Explorer provocaría muchos destinos inutilizados.
 
-    -   Si las opciones recientes o frecuentes son igualmente adecuadas, use reciente porque ese enfoque es más fácil para los usuarios entender y es más predecible.
-    -   Si usa reciente y el programa tiene un equivalente en el menú Archivo, haga que las listas tengan el mismo contenido en el mismo orden. Para los usuarios, deben parecerse a las mismas listas.
+    -   Si las opciones Recientes o Frecuentes son igualmente adecuadas, use Recientes porque ese enfoque es más fácil de entender para los usuarios y es más predecible.
+    -   Si usa Recientes y el programa tiene un equivalente en el menú Archivo, haga que las listas tengan el mismo contenido en el mismo orden. Para los usuarios, deberían parecer las mismas listas.
 
--   **Cuando sea necesario, use una lista de destino personalizada.** El programa tiene control total sobre el contenido y el criterio de ordenación de la lista de destino personalizada y, por tanto, puede basar la lista en función de los factores.
-    -   Cree versiones personalizadas de recientes o frecuentes si son adecuadas, pero la administración automática no funciona bien para el programa. Por ejemplo, es posible que el programa tenga que realizar un seguimiento de diversos factores más allá de los comandos Open File. En este caso, use el mismo nombre (reciente o frecuente) y el criterio de ordenación, ya que los usuarios no tendrán en cuenta la diferencia.
-    -   De lo contrario, use un tipo diferente de destino para satisfacer mejor los objetivos del usuario. A menudo, estas listas ayudan a los usuarios a realizar tareas que no han realizado antes, como leer nuevos mensajes, ver nuevos vídeos o comprobar la próxima reunión.
+-   **Cuando sea necesario, use una lista de destino personalizada.** El programa tiene un control completo sobre el contenido y el criterio de ordenación de una lista de destino personalizada y, por tanto, puede basar la lista en cualquier factor.
+    -   Cree versiones personalizadas de Recientes o Frecuentes si son adecuadas, pero la administración automática no funciona bien para el programa. Por ejemplo, es posible que el programa tenga que realizar un seguimiento de diversos factores más allá de los comandos de archivo abierto. En este caso, use el mismo nombre (Reciente o Frecuente) y el mismo criterio de ordenación porque los usuarios no serán conscientes de la diferencia.
+    -   De lo contrario, use otro tipo de destino para satisfacer mejor los objetivos del usuario. A menudo, estas listas ayudan a los usuarios a realizar tareas que no han hecho antes, como leer mensajes nuevos, ver vídeos nuevos o comprobar su próxima reunión.
 
-        ![captura de pantalla de Jump List con el nombre de grupo ' New ' ](images/winenv-taskbar-image39.png)
+        ![captura de pantalla de la lista de saltos con el nombre del grupo "nuevo" ](images/winenv-taskbar-image39.png)
 
-        En este ejemplo, Windows Media Center muestra los programas grabados recientemente que el usuario todavía no ha observado.
+        En este ejemplo, Windows Media Center muestra los archivos registrados recientemente que el usuario aún no ha visto.
 
-    -   Elija un criterio de ordenación que se corresponda con el modelo mental del usuario de la lista. Por ejemplo, una lista de estilos de tareas pendientes tendría lo siguiente que se debe mostrar en primer lugar. Si no hay ningún modelo mental claro, ordene la lista de destino en orden alfabético.
+    -   Elija un criterio de ordenación que se corresponda con el modelo mental del usuario de la lista. Por ejemplo, una lista de estilos de tareas por hacer tendría lo siguiente que hacer en primer lugar. Si no hay ningún modelo mental claro, ordene la lista de destino en orden alfabético.
 
--   **No use varias listas de destino que proporcionen vistas diferentes de los mismos datos.** En su lugar, varias listas de destino deben tener principalmente datos diferentes para admitir escenarios de diferencia. Por ejemplo, puede proporcionar una lista reciente o una lista frecuente, pero no ambos. Si lo hace, es excesivo si los elementos superpuestos están presentes, pero confuso si se quitan los elementos superpuestos.
+-   **No use varias listas de destino que ofrecen vistas diferentes de los mismos datos.** En su lugar, varias listas de destino deben tener datos principalmente diferentes para admitir escenarios de diferencia. Por ejemplo, puede proporcionar una lista Reciente o una Lista frecuente, pero no ambas. Esto es un desperdicio si hay elementos superpuestos, pero confuso si se quitan los elementos superpuestos.
 
     **Incorrecto:**
 
-    ![captura de pantalla de Jump List con elementos de grupo repetidos ](images/winenv-taskbar-image40.png)
+    ![captura de pantalla de la lista de saltos con elementos de grupo repetidos ](images/winenv-taskbar-image40.png)
 
-    En este ejemplo, la entrega de vistas diferentes de los mismos destinos es inestable.
+    En este ejemplo, proporcionar vistas diferentes de los mismos destinos es un desperdicio.
 
     **Correcto:**
 
-    ![captura de pantalla de Jump List con tareas bien organizadas ](images/winenv-taskbar-image41.png)
+    ![captura de pantalla de la lista de saltos con tareas bien organizadas ](images/winenv-taskbar-image41.png)
 
-    En este ejemplo, las listas de destino tienen datos diferentes para las distintas tareas.
+    En este ejemplo, las listas de destino tienen datos diferentes para diferentes tareas.
 
--   **Si el programa tiene un comando para borrar los datos de privacidad, borre también las listas de destinos.** Las listas de destino pueden contener datos confidenciales.
+-   **Si el programa tiene un comando para borrar los datos de privacidad, borre también las listas destinos.** Las listas de destino pueden contener datos confidenciales.
 
-### <a name="thumbnail-toolbars"></a>Barras de herramientas en miniatura
+### <a name="thumbnail-toolbars"></a>Barras de herramientas de miniaturas
 
 **Interacción**
 
--   **Proporcione hasta siete de los comandos más importantes que se usan con frecuencia y que se aplican a la ventana que se muestra en la miniatura.** No se sienta obligado a proporcionar tantos comandos como sea posible si el programa solo tiene tres comandos importantes, que se usan con frecuencia, proporcionan solo tres.
+-   **Proporcione hasta siete de los comandos más importantes y usados con frecuencia que se aplican a la ventana que se muestra en la miniatura.** No se sienta obligado a proporcionar tantos comandos como pueda si el programa solo tiene tres comandos importantes que se usan con frecuencia y solo proporciona tres.
 
     **Incorrecto:**
 
@@ -444,73 +443,73 @@ Para obtener instrucciones y ejemplos de iconos generales, vea [iconos](vis-icon
 
     En este ejemplo, la barra de herramientas de miniaturas tiene comandos que no son importantes.
 
--   **Usar comandos que son directos e inmediatos.** Estos comandos deben tener un efecto inmediato al hacer clic en el comando no debe mostrar un menú desplegable o un cuadro de diálogo para obtener más información.
+-   **Use comandos directos e inmediatos.** Estos comandos deben tener un efecto inmediato al hacer clic en el comando para no mostrar un menú desplegable ni un cuadro de diálogo para obtener más entradas.
 
     **Incorrecto:**
 
-    ![captura de pantalla de la miniatura con el menú desplegable ](images/winenv-taskbar-image43.png)
+    ![captura de pantalla de miniatura con menú desplegable ](images/winenv-taskbar-image43.png)
 
     Los comandos de la barra de herramientas de miniaturas deben tener un efecto inmediato.
 
--   **Deshabilitar los comandos que no se aplican al contexto actual o que producirían un error directamente.** No oculte estos comandos, ya que esto hace que la presentación de la barra de herramientas sea inestable.
--   **No descarte la miniatura cuando los usuarios hagan clic en un comando si es probable que revisen los resultados o hagan clic en otro comando inmediatamente.** Quite la miniatura para los comandos que indican que el usuario ha finalizado por ahora, como los comandos que muestran otras ventanas.
+-   **Deshabilite los comandos que no se aplican al contexto actual o que generarían directamente un error.** No oculte estos comandos porque hacer esto hace que la presentación de la barra de herramientas sea inestable.
+-   **No descarte la miniatura cuando los usuarios hacen clic en un comando si es probable que revisen los resultados o haga clic inmediatamente en otro comando.** Quite la miniatura de los comandos que indican que el usuario ha terminado por ahora, por ejemplo, con comandos que muestran otras ventanas.
 
-    ![captura de pantalla de la miniatura del reproductor de media con el comando ](images/winenv-taskbar-image44.png)
+    ![captura de pantalla de la miniatura del reproductor multimedia con el comando ](images/winenv-taskbar-image44.png)
 
-    En este ejemplo, al hacer clic en siguiente en Windows Media Player continúa mostrando la miniatura porque es posible que los usuarios deseen proporcionar otros comandos.
+    En este ejemplo, al hacer clic en Siguiente en Reproductor de Windows Media sigue mostrando la miniatura porque es posible que los usuarios quieran proporcionar otros comandos.
 
-    ![captura de pantalla de la miniatura con el icono de chat ](images/winenv-taskbar-image45.png)
+    ![captura de pantalla de miniatura con icono de chat ](images/winenv-taskbar-image45.png)
 
-    En este ejemplo, al hacer clic en chat en Windows Live Messenger se descarta la miniatura porque es muy probable que los usuarios envíen un mensaje.
+    En este ejemplo, al hacer clic en Chat en Windows Live Messenger se descarta la miniatura porque es más probable que los usuarios envíen un mensaje.
 
 **Presentación**
 
--   **Asegúrese de que los iconos de la barra de herramientas en miniatura cumplen las directrices de iconos de estilo Aero.** Para cada comando, proporcione iconos de color completo 16x16, 20x20 y 24x24 de alta calidad. Las versiones mayores se usan en los modos de presentación de alta ppp.
--   **Asegúrese de que los iconos están claramente visibles en el color de fondo de la barra de herramientas en los Estados normal y de desplazamiento.** Evalúe siempre los iconos en contexto y en los modos de alto contraste.
--   **Elija los diseños de icono de comando que comuniquen claramente su efecto.** Los iconos de comandos bien diseñados se explican por sí solos para ayudar a los usuarios a encontrar y comprender los comandos de forma eficaz.
--   **Elija los iconos que sean reconocibles y distinguibles.** Asegúrese de que los iconos tienen formas y colores distintivos. Esto ayuda a los usuarios a encontrar los comandos rápidamente, incluso si no recuerdan el símbolo del icono. Después del uso inicial, los usuarios no deben confiar en la información sobre herramientas para distinguir entre los comandos.
--   **Proporcione una información sobre herramientas para etiquetar cada comando.** Una buena información sobre herramientas etiqueta el control sin etiqueta al que apunta. Para obtener instrucciones y ejemplos, consulte la [información sobre herramientas y recuadros informativos](ctrl-tooltips-and-infotips.md).
+-   **Asegúrese de que los iconos de la barra de herramientas de miniaturas se ajustan a las directrices de icono de estilo Avión.** Para cada comando, proporcione iconos de color completo de alta calidad de 16x16, 20x20 y 24 x 24 píxeles. Las versiones más grandes se usan en los modos de presentación de valores altos de ppp.
+-   **Asegúrese de que los iconos estén claramente visibles en el color de fondo de la barra de herramientas en los estados normales y de mantener el puntero.** Evalúe siempre los iconos en contexto y en los modos de contraste alto.
+-   **Elija diseños de icono de comando que comuniquen claramente su efecto.** Los iconos de comandos bien diseñados se explican por sí solos para ayudar a los usuarios a encontrar y comprender los comandos de forma eficaz.
+-   **Elija iconos que sean reconocibles y distintivos.** Asegúrese de que los iconos tienen formas y colores distintivos. Esto ayuda a los usuarios a encontrar los comandos rápidamente, aunque no recuerden el símbolo del icono. Después del uso inicial, los usuarios no deben tener que confiar en la información sobre herramientas para distinguir entre los comandos.
+-   **Proporcione información sobre herramientas para etiquetar cada comando.** Una buena información sobre herramientas etiqueta el control sin etiquetar al que se apunta. Para obtener instrucciones y ejemplos, vea [Información sobre herramientas e información sobre herramientas.](ctrl-tooltips-and-infotips.md)
 
 ### <a name="progress-bars"></a>Barras de progreso
 
--   **Siga las instrucciones generales de la barra de progreso, incluido el** reinicio o la copia de seguridad del progreso, y el uso de una barra de progreso roja para indicar un problema.
--   **Evite el uso de barras de progreso indeterminadas.** Las barras de progreso indeterminadas muestran actividad, no progreso. Reserve barras de progreso indeterminadas para aquellas situaciones excepcionales en las que los usuarios no tienen la actividad concedida.
+-   **Siga las directrices generales de la barra** de progreso, lo que incluye no reiniciar ni hacer una copia de seguridad del progreso y usar una barra de progreso roja para indicar un problema.
+-   **Evite usar barras de progreso indeterminados.** Las barras de progreso indeterminado muestran la actividad, no el progreso. Reserve barras de progreso indeterminadas para aquellas situaciones poco frecuentes en las que los usuarios no toman actividad para concederse.
 
-Para obtener más instrucciones, vea [barras de progreso](progress-bars.md).
+Para obtener más instrucciones, vea [Barras de progreso](progress-bars.md).
 
 ## <a name="text"></a>Texto
 
 ### <a name="window-titles"></a>Títulos de ventana
 
-Al elegir los títulos de ventana, tenga en cuenta la apariencia del título en la barra de tareas:
+Al elegir títulos de ventana, tenga en cuenta la apariencia del título en la barra de tareas:
 
--   Optimice los títulos que se muestran en la barra de tareas. para ello, coloque primero la información distintiva en primer lugar.
--   En los cuadros de diálogo de progreso no modal, resuma primero el progreso. Ejemplo: "66% completado".
--   Evite los títulos de ventana que tengan truncamientos extraños.
+-   Optimice los títulos para mostrarlos en la barra de tareas colocando primero la información distintiva de forma concisa.
+-   En el caso de los cuadros de diálogo de progreso del modelo, primero resuma el progreso. Ejemplo: "66 % completado".
+-   Evite los títulos de ventana que tengan truncamientos difíciles.
 
     **Incorrecto:**
 
     ![captura de pantalla del título que corta el nombre del programa ](images/winenv-taskbar-image48.png)
 
-    En este ejemplo, el título de la ventana truncado tiene resultados desafortunados.
+    En este ejemplo, el título de la ventana truncada tiene resultados desafortunados.
 
-### <a name="jump-list-commands"></a>Comandos Jump List
+### <a name="jump-list-commands"></a>Lista de accesos directos comandos
 
--   **Iniciar comandos con un verbo.**
+-   **Comandos de inicio con un verbo.**
 -   **Use mayúsculas de estilo de frase.**
 
-Para obtener más instrucciones sobre las etiquetas de comandos, vea [menús](cmd-menus.md).
+Para obtener más instrucciones de etiquetas de comandos, vea [Menús](cmd-menus.md).
 
 ## <a name="documentation"></a>Documentación
 
 Al hacer referencia a la barra de tareas:
 
--   Haga referencia a la barra completa como la barra de tareas (una sola palabra compuesta en minúsculas).
--   Haga referencia a los elementos de la barra de tareas específicamente por su etiqueta o, por lo general, como botones de la barra de tareas.
--   Siempre que sea posible, dé formato a las etiquetas de la barra de tareas con texto en negrita. De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.
--   Consulte iconos de superposición como iconos de botón de la barra de tareas. No se hace referencia a ellos como notificaciones, incluso si su finalidad es notificar a los usuarios. Sin embargo, puede decir que estos iconos notifican a los usuarios eventos concretos.
+-   Consulte toda la barra como barra de tareas (una sola palabra compuesta en minúsculas).
+-   Consulte los elementos de la barra de tareas específicamente por su etiqueta o, por lo general, como botones de la barra de tareas.
+-   Cuando sea posible, formatee las etiquetas de la barra de tareas con texto en negrita. De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.
+-   Consulte iconos superpuestos como iconos de botón de la barra de tareas. No haga referencia a ellas como notificaciones, aunque su propósito sea notificar a los usuarios. Sin embargo, puede decir que estos iconos notifican a los usuarios eventos específicos.
 
-Ejemplo: el icono del botón de la barra de tareas nuevo correo informa de que ha llegado un nuevo mensaje de correo electrónico.
+Ejemplo: el icono del botón Nueva barra de tareas Correo le notifica que ha llegado un nuevo mensaje de correo electrónico.
 
  
 

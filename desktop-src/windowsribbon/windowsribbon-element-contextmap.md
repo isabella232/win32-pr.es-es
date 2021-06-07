@@ -1,9 +1,9 @@
 ---
 title: Elemento ContextMap
-description: Representa una asignación de par de ContextMenu y MiniToolbar.
+description: Representa una asignación de pares ContextMenu y MiniToolbar.
 ms.assetid: 84379578-24c6-4bf7-8dcf-8e21e5665d29
 keywords:
-- ContextMap cinta de opciones de Windows
+- Elemento ContextMap de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e2ddcc8bdea16f5e00974b2b2e58934941e44c68
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 4754fc75ca09e39cdc7eabbeae2a0a2d2630c31f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "105704895"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443016"
 ---
 # <a name="contextmap-element"></a>Elemento ContextMap
 
-Representa una asignación de par de [**ContextMenu**](windowsribbon-element-contextmenu.md) y [**MiniToolbar**](windowsribbon-element-minitoolbar.md) .
+Representa una [**asignación de pares ContextMenu**](windowsribbon-element-contextmenu.md) [**y MiniToolbar.**](windowsribbon-element-minitoolbar.md)
 
 ## <a name="usage"></a>Uso
 
@@ -48,31 +48,31 @@ Representa una asignación de par de [**ContextMenu**](windowsribbon-element-con
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ContextMenu</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Debe corresponder a un <a href="windowsribbon-element-contextmenu.md"><strong></strong></a> <em>nombre</em>de ContextMenu existente.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Debe corresponder a un <a href="windowsribbon-element-contextmenu.md"><strong>nombre ContextMenu</strong></a> <em>existente.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MiniToolbar</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Debe corresponder a un <a href="windowsribbon-element-minitoolbar.md"><strong></strong></a> <em>nombre</em>de MiniToolbar existente.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Debe corresponder a un nombre <a href="windowsribbon-element-minitoolbar.md"><strong>de MiniToolbar</strong></a> <em>existente.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -93,17 +93,17 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**ContextPopup. ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md).
+Puede producirse una o varias veces para [**cada ContextPopup.ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para una [**vista ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-En esta sección de código se muestra un conjunto de declaraciones de control **ContextMap** .
+En esta sección de código se muestra un conjunto de declaraciones de control **ContextMap.**
 
 
 ```XML
@@ -193,19 +193,16 @@ En esta sección de código se muestra un conjunto de declaraciones de control *
 ## <a name="element-information"></a>Información de elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** Sí
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

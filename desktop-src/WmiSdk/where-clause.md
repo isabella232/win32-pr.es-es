@@ -1,20 +1,20 @@
 ---
-description: Utilice la cláusula WHERE para restringir el ámbito de una consulta de datos, eventos o esquemas.
+description: Use la cláusula WHERE para restringir el ámbito de una consulta de datos, eventos o esquema.
 ms.assetid: b275f8e0-773d-422c-be21-b427e7a1fb6b
 ms.tgt_platform: multiple
-title: WHERE (cláusula, WMI)
+title: Cláusula WHERE (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a72e68d8266b72f6e41e17c0b85766b7a58bb197
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0587bffb1a10c4611773de8a61fdb7ac1576952
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707343"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386733"
 ---
-# <a name="where-clause-wmi"></a>WHERE (cláusula, WMI)
+# <a name="where-clause-wmi"></a>Cláusula WHERE (WMI)
 
-Utilice la cláusula WHERE para restringir el ámbito de una consulta de datos, eventos o esquemas. Para obtener más información, vea [consultas con WQL](querying-with-wql.md). La cláusula WHERE se compone de una propiedad o una palabra clave, un operador y una constante. Todas las cláusulas WHERE deben especificar uno de los operadores predefinidos que se incluyen en el lenguaje de consulta de Instrumental de administración de Windows (WMI). Puede anexar la cláusula WHERE a la instrucción SELECT mediante una de las siguientes formas:
+Use la cláusula WHERE para restringir el ámbito de una consulta de datos, eventos o esquema. Para obtener más información, [vea Consulta con WQL.](querying-with-wql.md) La cláusula WHERE se forma de una propiedad o palabra clave, un operador y una constante. Todas las cláusulas WHERE deben especificar uno de los operadores predefinidos que se incluyen en el lenguaje de consulta (WQL) Instrumental de administración de Windows (WMI). Puede anexar la cláusula WHERE a la instrucción SELECT mediante uno de los siguientes formularios:
 
 
 ```sql
@@ -24,17 +24,17 @@ SELECT * FROM class WHERE constant operator property
 
 
 
-donde \* es el elemento que se consulta, la clase es la clase en la que se realiza la consulta, y la constante, el operador y la propiedad son la constante, el operador y la propiedad o la palabra clave que se va a usar. Para obtener más información acerca de la instrucción SELECT, vea [instrucción SELECT para consultas de datos](select-statement-for-data-queries.md), [instrucción SELECT para consultas de eventos](select-statement-for-event-queries.md)o [instrucción SELECT para consultas de esquema](select-statement-for-schema-queries.md).
+donde es el elemento sobre el que se consulta, class es la clase en la que se consulta, y constant, operator y property son la constante, el operador y la propiedad o palabra clave que se van a \* usar. Para obtener más información sobre la instrucción SELECT, vea [Instrucción SELECT](select-statement-for-data-queries.md)para consultas de datos , Instrucción SELECT para consultas [de](select-statement-for-event-queries.md)eventos o Instrucción SELECT para consultas [de esquema.](select-statement-for-schema-queries.md)
 
-El valor de la constante debe ser del tipo correcto para la propiedad. Además, el operador debe estar entre la lista de [operadores WQL](wql-operators.md)válidos. Un nombre de propiedad o una constante deben aparecer a cada lado del operador en la cláusula WHERE.
+El valor de la constante debe ser del tipo correcto para la propiedad . Además, el operador debe estar entre la lista de operadores [WQL válidos.](wql-operators.md) Un nombre de propiedad o una constante deben aparecer a ambos lados del operador en la cláusula WHERE.
 
-Puede usar literales de cadena, como "NTFS", en una cláusula WHERE. Si desea incluir los siguientes caracteres especiales en la cadena, primero debe escapar el carácter prefijando el carácter con una barra diagonal inversa ( \) :
+Puede usar literales de cadena, como "NTFS", en una cláusula WHERE. Si desea incluir los siguientes caracteres especiales en la cadena, primero debe usar como prefijo el carácter con una barra diagonal inversa ( \\ ):
 
--   barra diagonal inversa\\\)
+-   barra diagonal inversa ( \\ \\ )
 -   comillas dobles ( \\ ")
 -   comillas simples ( \\ ')
 
-No se pueden usar expresiones aritméticas arbitrarias. Por ejemplo, la siguiente consulta solo devuelve las instancias de la clase [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) que representan las unidades NTFS:
+No se pueden usar expresiones aritméticas arbitrarias. Por ejemplo, la consulta siguiente devuelve solo las instancias de la clase [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) que representan unidades NTFS:
 
 
 ```sql
@@ -43,7 +43,7 @@ SELECT * FROM Win32_LogicalDisk WHERE FileSystem = "NTFS"
 
 
 
-Los nombres de propiedad no pueden aparecer en ambos lados del operador. La consulta siguiente es un ejemplo de una consulta no válida:
+Los nombres de propiedad no pueden aparecer en ambos lados del operador . La consulta siguiente es un ejemplo de una consulta no válida:
 
 
 ```sql
@@ -53,13 +53,13 @@ SELECT * FROM PhysicalDisk WHERE Partitions < (4 + 7 - 2)
 
 
 
-Para la mayoría de los usos de los descriptores de clase en una cláusula WHERE, WMI marca la consulta como no válida y devuelve un error. Sin embargo, utilice el operador de punto (.) para las propiedades de tipo **Object** en WMI. Por ejemplo, la consulta siguiente es válida si prop es una propiedad válida de MyClass y es de tipo **Object**:
+Para la mayoría de los usos de descriptores de clase en una cláusula WHERE, WMI marca la consulta como no válida y devuelve un error. Sin embargo, use el operador punto (.) para las propiedades del objeto **de tipo** en WMI. Por ejemplo, la consulta siguiente es válida si Prop es una propiedad válida de MyClass y es el objeto de **tipo**:
 
 ``` syntax
 SELECT * FROM MyClass WHERE Prop.embedprop = 5
 ```
 
-Las pruebas de comparación siempre distinguen entre mayúsculas y minúsculas. Es decir, las tres instrucciones siguientes se evalúan como **true**:
+Las pruebas de comparación siempre no tienen en cuenta mayúsculas de minúsculas. Es decir, las tres instrucciones siguientes se evalúan como **TRUE:**
 
 
 ```sql
@@ -70,7 +70,7 @@ SELECT * FROM MyClass WHERE Prop1 = "cAt"
 
 
 
-Puede crear una consulta que incluya tipos de datos booleanos, pero los únicos tipos de operando booleanos válidos son los tipos =,! = y <> . El valor **true** es equivalente al número 1 y el valor **false** es equivalente al número 0. Los ejemplos siguientes son de consultas que comparan un valor booleano con los valores **true** o **false**.
+Puede construir una consulta que incluya tipos de datos booleanos, pero los únicos tipos de operando booleanos válidos son los tipos =, != y <> válidos. El valor **TRUE** es equivalente al número 1 y el valor **FALSE** es equivalente al número 0. Los ejemplos siguientes son de consultas que comparan un valor booleano con los valores **TRUE** o **FALSE.**
 
 
 ```sql
@@ -98,7 +98,7 @@ SELECT * FROM win32_computersystem WHERE infraredsupported >= null
 
 
 
-Se pueden combinar varios grupos de propiedades, operadores y constantes en una cláusula WHERE mediante operadores lógicos y subexpresiones entre paréntesis. Cada grupo se debe combinar con los [operadores](wql-operators.md) and, or o not tal y como se muestra en las siguientes consultas. La primera consulta recupera todas las instancias de la clase [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) con la propiedad **Name** establecida en C o D:
+Se pueden combinar varios grupos de propiedades, operadores y constantes en una cláusula WHERE mediante operadores lógicos y subexpresiones entre paréntesis. Cada grupo debe estar unido a los operadores AND, OR o [NOT,](wql-operators.md) como se muestra en las consultas siguientes. La primera consulta recupera todas las instancias de la clase [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) con la **propiedad Name** establecida en C o D:
 
 
 ```sql
@@ -107,7 +107,7 @@ SELECT * FROM Win32_LogicalDisk WHERE Name = "C:" OR Name = "D:"
 
 
 
-La segunda consulta recupera los discos denominados "C:" o "D:" solo si tienen una determinada cantidad de espacio libre restante y tienen sistemas de archivos NTFS:
+La segunda consulta recupera discos denominados "C:" o "D:" solo si tienen una cierta cantidad de espacio libre restante y tienen sistemas de archivos NTFS:
 
 
 ```sql
@@ -117,7 +117,7 @@ SELECT * FROM Win32_LogicalDisk WHERE (Name = "C:" OR Name = "D:")
 
 
 
-EN este ejemplo se muestra una consulta de esquema mediante la cláusula WHERE.
+En este ejemplo se muestra una consulta de esquema mediante la cláusula WHERE.
 
 
 ```sql
@@ -126,9 +126,9 @@ SELECT * FROM meta_class WHERE __this ISA "myClassName"
 
 
 
-La clase meta lo \_ identifica como una consulta de esquema, la propiedad a la que \_ \_ se identifica la clase de destino de la consulta y el [operador ISA](isa-operator-for-schema-queries.md) solicita las definiciones de las subclases de la clase de destino. Por lo tanto, la consulta anterior devuelve la definición de la clase myClassName y las definiciones de todas sus subclases.
+La metaclase class identifica esto como una consulta de esquema, la propiedad denominada this identifica la clase de destino de la consulta y el operador ISA solicita definiciones para las \_ \_ \_ subclases [](isa-operator-for-schema-queries.md) de la clase de destino. Por lo tanto, la consulta anterior devuelve la definición de la clase myClassName y las definiciones de todas sus subclases.
 
-El ejemplo siguiente es una consulta de datos que utiliza la [instrucción ASSOCIATORS of](associators-of-statement.md) con Where:
+El ejemplo siguiente es una consulta de datos que usa [la instrucción ASSOCIATORS OF](associators-of-statement.md) con WHERE:
 
 
 ```sql
@@ -137,7 +137,7 @@ ASSOCIATORS OF {myClass.keyVal="Value1"} WHERE ClassDefsOnly
 
 
 
-EN el ejemplo siguiente se muestra una consulta de esquema mediante ASSOCIATORS OF y donde:
+En el ejemplo siguiente se muestra una consulta de esquema mediante ASSOCIATORS OF y WHERE:
 
 
 ```sql
@@ -146,7 +146,7 @@ ASSOCIATORS OF {myClass} WHERE SchemaOnly
 
 
 
-El ejemplo siguiente es una consulta de datos que usa las [referencias de la instrucción](references-of-statement.md) y dónde:
+El ejemplo siguiente es una consulta de datos que usa [la instrucción REFERENCES OF](references-of-statement.md) y WHERE:
 
 
 ```sql
@@ -156,7 +156,7 @@ REFERENCES OF {myClass.keyVal="Value1"}
 
 
 
-Este último ejemplo es una consulta de esquema que usa referencias de y donde:
+Este último ejemplo es una consulta de esquema que usa REFERENCES OF y WHERE:
 
 
 ```sql
@@ -165,10 +165,10 @@ REFERENCES OF {myClass} WHERE SchemaOnly
 
 
 
-Además del formato [DateTime](date-and-time-format.md) de WMI, la cláusula WHERE de WQL admite varios formatos de fecha y hora:
+Además del formato [DATETIME de](date-and-time-format.md) WMI, la cláusula WHERE de WQL admite otros formatos de fecha y hora:
 
--   [WQL: formatos de fecha admitidos](wql-supported-date-formats.md)
--   [WQL: formatos de hora compatibles](wql-supported-time-formats.md)
+-   [Formatos de fecha admitidos por WQL](wql-supported-date-formats.md)
+-   [Formatos de tiempo compatibles con WQL](wql-supported-time-formats.md)
 
  
 

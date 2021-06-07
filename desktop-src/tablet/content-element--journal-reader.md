@@ -1,19 +1,19 @@
 ---
-description: Incluye el contenido de una página de diario.
+description: Contiene el contenido de una página De diario.
 ms.assetid: 1df78a17-1cd4-4e98-aed1-b09d2b357703
-title: Content (elemento) [Journal Reader]
+title: Elemento Content [Lector de diario]
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b5a7c9631cd69d38b8db54e2a2f8e69636f7e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fec59601a91d63b09c703557b7c6cd28fd11620
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697380"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432157"
 ---
-# <a name="content-element-journal-reader"></a>Lector del diario de elementos de contenido \[\]
+# <a name="content-element-journal-reader"></a>Lector del diario \[ de elementos content\]
 
-Incluye el contenido de una página de diario.
+Contiene el contenido de una página De diario.
 
 ## <a name="definition"></a>Definición
 
@@ -27,7 +27,7 @@ Incluye el contenido de una página de diario.
 
 ## <a name="child-elements"></a>Elementos secundarios
 
-[**Groupnode BizTalk**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 [**Paragraph**](paragraph-element.md)
 
@@ -35,7 +35,7 @@ Incluye el contenido de una página de diario.
 
 [**Texto**](text-element.md)
 
-[**Impresión**](image-element.md)
+[**Imagen**](image-element.md)
 
 [**Marca**](flag-element.md)
 
@@ -55,7 +55,7 @@ Incluye el contenido de una página de diario.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 <th>PossibleValues</th>
 </tr>
@@ -63,12 +63,12 @@ Incluye el contenido de una página de diario.
 <tbody>
 <tr class="odd">
 <td><strong>Tipo</strong></td>
-<td><a href="contenttype-complex-type.md"><strong>ComplexType de ContentType</strong></a></td>
-<td>Obligatorio</td>
-<td>Si el tipo es &quot; inerte &quot; , no se puede modificar el contenido.<br/></td>
+<td><a href="contenttype-complex-type.md"><strong>ContentType complexType</strong></a></td>
+<td>Requerido</td>
+<td>Si el tipo es &quot; Inert &quot; , no se puede modificar el contenido.<br/></td>
 <td><ul>
 <li>Normal</li>
-<li>Inert</li>
+<li>Inerte</li>
 </ul></td>
 </tr>
 </tbody>
@@ -82,10 +82,10 @@ Incluye el contenido de una página de diario.
 
 
 
-|              |                                                             |
+|  Elemento     | Value                                                     |
 |--------------|-------------------------------------------------------------|
-| Tipo de elemento | ComplexType de [**ContentType**](contenttype-complex-type.md) |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink                  |
+| Tipo de elemento | [**ContentType**](contenttype-complex-type.md) complexType |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink                  |
 | Nombre del esquema  | Lector de diario                                              |
 
 

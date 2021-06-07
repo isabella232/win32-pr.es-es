@@ -1,9 +1,9 @@
 ---
 title: Elemento HelpButton
-description: Representa el control de botón de ayuda.
+description: Representa el control Botón de ayuda.
 ms.assetid: 24c709da-539e-4ea0-bd3e-d3fbd72dfb97
 keywords:
-- HelpButton cinta de opciones de Windows
+- Elemento HelpButton de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5be084ff6fc92d4eac4bbaffb3c507142f91eba8
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 9f34f04133b7628cce01ac0ce2808923b4f6bbdb
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "105695522"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442846"
 ---
 # <a name="helpbutton-element"></a>Elemento HelpButton
 
-Representa el control de [botón de ayuda](windowsribbon-controls-helpbutton.md) .
+Representa el [control Botón de](windowsribbon-controls-helpbutton.md) ayuda.
 
 ## <a name="usage"></a>Uso
 
@@ -46,17 +46,17 @@ Representa el control de [botón de ayuda](windowsribbon-controls-helpbutton.md)
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -73,23 +73,23 @@ No hay elementos secundarios.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/> |
+| [**Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una vez como máximo para cada cinta de opciones [**. HelpButton**](windowsribbon-element-ribbon-helpbutton.md).
+Puede producirse como máximo una vez para [**cada Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md).
 
-Inicia un cuadro de diálogo de ayuda de la aplicación al hacer clic en él.
+Inicia un cuadro de diálogo de ayuda de la aplicación cuando se hace clic en él.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico necesario para implementar un control de [botón de ayuda](windowsribbon-controls-helpbutton.md) de la cinta de opciones.
+En el ejemplo siguiente se muestra el marcado básico necesario para implementar un control Botón [de ayuda de](windowsribbon-controls-helpbutton.md) la cinta de opciones.
 
-En esta sección de código se muestra la declaración del comando **HelpButton** .
+En esta sección de código se muestra la **declaración HelpButton** Command.
 
 
 ```XML
@@ -100,7 +100,7 @@ En esta sección de código se muestra la declaración del comando **HelpButton*
 
 
 
-En esta sección de código se muestra la declaración de control **HelpButton** .
+En esta sección de código se muestra la declaración de control **HelpButton.**
 
 
 ```XML
@@ -113,20 +113,16 @@ En esta sección de código se muestra la declaración de control **HelpButton**
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** Sí
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control de botón de ayuda](windowsribbon-controls-helpbutton.md)
+[Control Botón ayuda](windowsribbon-controls-helpbutton.md)
 </dt> </dl>
 
  

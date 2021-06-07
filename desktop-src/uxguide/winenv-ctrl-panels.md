@@ -1,454 +1,454 @@
 ---
 title: Paneles de control
-description: Use los elementos del panel de control para ayudar a los usuarios a configurar características de nivel de sistema y realizar tareas relacionadas. En su lugar, los programas que tienen una interfaz de usuario deben configurarse directamente desde su interfaz de usuario.
+description: Use elementos del panel de control para ayudar a los usuarios a configurar características de nivel de sistema y realizar tareas relacionadas. En su lugar, los programas que tienen una interfaz de usuario deben configurarse directamente desde su interfaz de usuario.
 ms.assetid: 845325ef-9f1d-4aa7-a5b0-685fac74a9f8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: dde41544f2bf8c920365f160f71dce7e88d89b81
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3b0e6fdf4e0c916f80ae3c1783e4e9e5fee920a8
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104003283"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443316"
 ---
 # <a name="control-panels"></a>Paneles de control
 
 > [!NOTE]
-> Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).
+> Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-Use los elementos del panel de control para ayudar a los usuarios a configurar características de nivel de sistema y realizar tareas relacionadas. En su lugar, los programas que tienen una interfaz de usuario deben configurarse directamente desde su interfaz de usuario.
+Use elementos del panel de control para ayudar a los usuarios a configurar características de nivel de sistema y realizar tareas relacionadas. En su lugar, los programas que tienen una interfaz de usuario deben configurarse directamente desde su interfaz de usuario.
 
-Con el panel de control de Microsoft Windows, los usuarios pueden configurar características de nivel de sistema y realizar tareas relacionadas. Entre los ejemplos de configuración de características de nivel de sistema se incluyen instalación y configuración de hardware y software, seguridad, mantenimiento del sistema y administración de cuentas de usuario.
+Con Panel de control en Microsoft Windows, los usuarios pueden configurar características de nivel de sistema y realizar tareas relacionadas. Entre los ejemplos de configuración de características de nivel de sistema se incluyen la configuración y configuración de hardware y software, la seguridad, el mantenimiento del sistema y la administración de cuentas de usuario.
 
-El término panel de control hace referencia a toda la característica del panel de control de Windows. Los paneles de control individuales se denominan elementos del panel de control. Un elemento del panel de control se considera de nivel superior cuando es accesible directamente desde la Página principal del panel de control o una página de categorías.
+El término Panel de control hace referencia a toda la característica de Panel de control Windows. Los paneles de control individuales se conocen como elementos del panel de control. Un elemento del panel de control se considera de nivel superior cuando es accesible directamente desde la página principal del panel de control o desde una página de categoría.
 
 ![captura de pantalla de la categoría de voz del panel de control ](images/winenv-ctrl-panels-image1.png)
 
-Un elemento típico del panel de control.
+Elemento típico del panel de control.
 
-La Página principal del panel de control es el punto de entrada principal para todos los elementos del panel de control. Enumera los elementos por su categoría, junto con las tareas más comunes. Se muestra cuando los usuarios hacen clic en panel de control en el menú Inicio.
+La página principal del panel de control es el punto de entrada principal de todos los elementos del panel de control. Enumera los elementos por categoría, junto con las tareas más comunes. Se muestra cuando los usuarios hacen clic Panel de control en el menú Inicio.
 
-Una página de categorías del panel de control enumera los elementos de una única categoría, junto con las tareas más comunes. Se muestra cuando los usuarios hacen clic en un nombre de categoría en la Página principal.
+Una página de categoría del panel de control enumera los elementos dentro de una sola categoría, junto con las tareas más comunes. Se muestra cuando los usuarios hacen clic en un nombre de categoría en la página principal.
 
-Los elementos del panel de control se implementan mediante [flujos de tareas](glossary.md) o hojas de propiedades. En Windows Vista y versiones posteriores, los flujos de tareas son la interfaz de usuario preferida (UI).
+Los elementos del panel de control se implementan mediante flujos [de tareas o](glossary.md) hojas de propiedades. Para Windows Vista y versiones posteriores, los flujos de tareas son la interfaz de usuario (UI) preferida.
 
-**Desarrolladores:** Para obtener información sobre cómo crear elementos del panel de control, consulte [elementos del panel de control](/previous-versions//bb776838(v=vs.85)).
+**Desarrolladores:** Para obtener información sobre cómo crear elementos del panel de control, [vea Panel de control Items](/previous-versions//bb776838(v=vs.85)).
 
-**Nota:** Las instrucciones relacionadas con las [hojas de propiedades](win-property-win.md) se presentan en un artículo independiente.
+**Nota:** Las directrices relacionadas [con las hojas de](win-property-win.md) propiedades se presentan en un artículo independiente.
 
-## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario correcta?
+## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario adecuada?
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿Es el propósito de configurar características de nivel de sistema?** Si no es así, use otro punto de integración. Haga que las características de la aplicación se puedan configurar directamente desde la interfaz de usuario mediante los cuadros de diálogo Opciones, en lugar de usar el panel de control. En el caso de las utilidades que no se usan para la instalación, la configuración o las tareas relacionadas (como la solución de problemas), use el menú Inicio como punto de integración.
--   **¿La característica de nivel de sistema tiene su propia interfaz de usuario?** Si es así, esa interfaz de usuario es donde los usuarios deben ir para realizar los cambios. Por ejemplo, una utilidad de copia de seguridad del sistema debe configurarse desde las opciones del programa en lugar de desde el panel de control.
--   **¿Los usuarios tendrán que cambiar la configuración a menudo?** Si es así (por ejemplo, varias veces a la semana), considere soluciones alternativas, quizás además de usar el panel de control. Por ejemplo, la configuración del volumen maestro de Windows puede configurarse directamente desde su icono en el área de notificación. Algunos valores de configuración se pueden configurar automáticamente. En el explorador de Windows, por ejemplo, la pestaña Compatibilidad de las propiedades de la aplicación permite que una aplicación se ejecute en modo de color 256 en lugar de requerir que los usuarios cambien el modo de vídeo manualmente.
--   **¿Los profesionales de TI de los usuarios de destino?** Si es así, use un complemento de [Microsoft Management Console (MMC)](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) en su lugar, que está diseñado específicamente para tareas de administración del sistema. En algunos casos, la mejor solución es tener un elemento del panel de control para los usuarios generales y un complemento MMC para los profesionales de ti.
+-   **¿El propósito es configurar características de nivel de sistema?** Si no es así, use otro punto de integración. Haga que las características de la aplicación se configurablen directamente desde la interfaz de usuario mediante cuadros de diálogo de opciones, en lugar de usar Panel de control. Para las utilidades que no se usan para la instalación, configuración o tareas relacionadas (como la solución de problemas), use el menú Inicio como punto de integración.
+-   **¿La característica de nivel de sistema tiene su propia interfaz de usuario?** Si es así, esa interfaz de usuario es donde los usuarios deben ir para realizar cambios. Por ejemplo, una utilidad de copia de seguridad del sistema debe configurarse a partir de sus opciones de programa en lugar de Panel de control.
+-   **¿Necesitarán los usuarios cambiar la configuración con frecuencia?** Si es así (por ejemplo, varias veces a la semana), considere soluciones alternativas, quizás además de usar Panel de control. Por ejemplo, la configuración del volumen maestro de Windows se puede configurar directamente desde su icono en el área de notificación. Algunas opciones se pueden configurar automáticamente. En Explorador de Windows, por ejemplo, la pestaña Compatibilidad para las propiedades de la aplicación permite que una aplicación se ejecute en modo de color 256 en lugar de requerir que los usuarios cambien el modo de vídeo manualmente.
+-   **¿Son los usuarios de destino profesionales de IT?** Si es así, use un [complemento Microsoft Management Console (MMC)](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) en su lugar, que está diseñado específicamente para las tareas de administración del sistema. En algunos casos, la mejor solución es tener un elemento de panel de control para usuarios generales y un complemento MMC para profesionales de TI.
 
-    ![captura de pantalla de la ventana Administración de equipos ](images/winenv-ctrl-panels-image2.png)
+    ![captura de pantalla de la ventana de administración de equipos ](images/winenv-ctrl-panels-image2.png)
 
-    En este ejemplo, el complemento MMC usuarios y grupos locales proporciona administración de usuarios dirigida a los profesionales de ti. Es más probable que otros usuarios utilicen el elemento cuentas de usuario del panel de control.
+    En este ejemplo, el complemento MMC Usuarios y grupos locales proporciona administración de usuarios dirigida a profesionales de IT. Es más probable que otros usuarios usen el elemento Cuentas de usuario en Panel de control.
 
--   **¿La característica es una característica de OEM que solo se usa durante la configuración inicial del sistema?** Si es así, use el centro de bienvenida de Windows como punto de integración.
+-   **¿La característica es una característica de OEM que solo se usa durante la configuración inicial del sistema?** Si es así, use windows Centro de bienvenida como punto de integración.
 
-Los elementos del panel de control son necesarios porque muchas características de nivel de sistema no tienen un punto de integración más obvio o directo. Además, el panel de control no se debe ver como "una ubicación" para todas las opciones de configuración. **Los programas que tienen una interfaz de usuario deben configurarse directamente desde su interfaz de usuario en lugar de usar elementos del panel de control.**
+Los elementos del panel de control son necesarios porque muchas características de nivel de sistema no tienen un punto de integración más obvio o directo. Sin Panel de control no se debería ver como el "único lugar" para todas las opciones de configuración. **Los programas que tienen una interfaz de usuario deben configurarse directamente desde su interfaz de usuario en lugar de usar elementos del panel de control.**
 
 **Incorrecto:**
 
-![captura de pantalla del elemento opciones de Internet del panel de control ](images/winenv-ctrl-panels-image3.png)
+![captura de pantalla del elemento de opciones de Internet del panel de control ](images/winenv-ctrl-panels-image3.png)
 
-En este ejemplo, Windows Internet Explorer no debe representarse en el panel de control, porque su propia interfaz de usuario es un punto de integración mejor.
+En este ejemplo, Windows Internet Explorer debe representarse en Panel de control, porque su propia interfaz de usuario es un mejor punto de integración.
 
-### <a name="create-a-new-control-panel-item-or-extend-an-existing-one"></a>¿Crear un nuevo elemento del panel de control o extender uno existente?
+### <a name="create-a-new-control-panel-item-or-extend-an-existing-one"></a>¿Cree un nuevo elemento del panel de control o extienda uno existente?
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿Se puede expresar la funcionalidad como tareas que se pueden conectar a un elemento del panel de control extensible existente?** Los siguientes elementos del panel de control son extensibles: dispositivos Bluetooth, pantalla, Internet, teclado, Mouse, red, alimentación, sistema, inalámbrico (infrarrojos).
--   **¿Las propiedades y las tareas reemplazan las características del elemento del panel de control extensible existente?** Si es así, debe extender el elemento existente del panel de control, ya que resulta en una experiencia de usuario más sencilla. Si no es así, cree un nuevo elemento del panel de control.
+-   **¿Se puede expresar la funcionalidad como tareas que se pueden conectar a un elemento del panel de control extensible existente?** Los siguientes elementos del panel de control son extensibles: Dispositivos Bluetooth, Pantalla, Internet, Teclado, Mouse, Red, Energía, Sistema, Inalámbrico (infiel).
+-   **¿Las propiedades y las tareas reemplazan las características del elemento del panel de control extensible existente?** Si es así, debe extender el elemento del panel de control existente, ya que esto da como resultado una experiencia de usuario más sencilla. Si no es así, cree un nuevo elemento del panel de control.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-**El concepto del panel de control se basa en una metáfora del mundo real.** Un panel de control del mundo real es una colección de controles (botones, conmutadores, medidores y pantallas) que se usa para supervisar y controlar un dispositivo. Los usuarios de estos paneles de control suelen necesitar aprendizaje para comprender cómo usarlos.
+**El Panel de control se basa en una metáfora del mundo real.** Un panel de control real es una colección de controles (botones, conmutadores, medidores y pantallas) que se usan para supervisar y controlar un dispositivo. Los usuarios de estos paneles de control a menudo necesitan entrenamiento para entender cómo usarlos.
 
-A diferencia de sus homólogos del mundo real, **los diseños del panel de control de Windows están optimizados para los usuarios de primera vez.** Los usuarios no realizan la mayoría de las tareas del panel de control con mucha frecuencia, por lo que normalmente no recuerdan cómo realizarlas y, de hecho, tienen que volver a aprenderlas cada vez.
+A diferencia de sus homólogos reales, los diseños **del panel de control de Windows están optimizados para los usuarios por primera vez.** Los usuarios no realizan la mayoría de las tareas del panel de control con mucha frecuencia, por lo que normalmente no recuerda cómo hacerlos y, de hecho, tienen que volver a aprenderlas cada vez.
 
 Para diseñar un elemento del panel de control que sea útil y fácil de usar:
 
 -   Asegúrese de que las propiedades son necesarias.
--   Presente propiedades en términos de objetivos de usuario en lugar de tecnología.
--   Presentar propiedades en el nivel de la derecha.
--   Diseñe páginas para tareas específicas.
--   Diseñe páginas para usuarios estándar y administradores protegidos.
+-   Presentar propiedades en términos de objetivos de usuario en lugar de tecnología.
+-   Presentar propiedades en el nivel correcto.
+-   Páginas de diseño para tareas específicas.
+-   Páginas de diseño para usuarios estándar y administradores protegidos.
 
-Al diseñar y evaluar los elementos que se van a incluir en el panel de control, determine las tareas comunes que realizan los usuarios y asegúrese de que hay una ruta de acceso clara para realizar dichas tareas. Normalmente, los usuarios realizan los siguientes tipos de tareas con los elementos del panel de control:
+Al diseñar y evaluar elementos que se incluirán en Panel de control, determine las tareas comunes que realizan los usuarios y asegúrese de que hay una ruta de acceso clara para realizar esas tareas. Normalmente, los usuarios realizan los siguientes tipos de tareas con elementos del panel de control:
 
 -   Configuración inicial
--   Cambios poco frecuentes (para la mayoría de los valores)
--   Cambios frecuentes (para algunos valores de configuración importantes)
+-   Cambios poco frecuentes (para la mayoría de la configuración)
+-   Cambios frecuentes (para algunas configuraciones importantes)
 -   Revertir la configuración a un estado inicial o anterior
 -   Solución de problemas
 
-**Si solo hace algo...**
+**Si solo hace una cosa...**
 
-Diseñe páginas del panel de control para tareas específicas y preséntelas en términos de objetivos del usuario en lugar de tecnología.
+Diseñar páginas del panel de control para tareas específicas y presentarlas en términos de objetivos de usuario en lugar de tecnología.
 
 ## <a name="usage-patterns"></a>Patrones de uso
 
-En el caso de los elementos del panel de control, puede usar un flujo de tareas o una hoja de propiedades. Estos son sus patrones de uso:
+Para los elementos del panel de control, puede usar un flujo de tareas o una hoja de propiedades. Estos son sus patrones de uso:
 
 ### <a name="task-flow-patterns"></a>Patrones de flujo de tareas
 
-Los elementos de flujo de tareas usan una página de concentrador para presentar las opciones de alto nivel y las páginas radiales para realizar la configuración real.
+Los elementos de flujo de tareas usan una página central para presentar las opciones de alto nivel y las páginas de radio para realizar la configuración real.
 
-**Páginas del concentrador**
+**Páginas centrales**
 
--   Páginas de concentrador basadas en tareas. Estas páginas del concentrador presentan las tareas que se usan con más frecuencia. Se usan mejor para algunas tareas importantes o de uso frecuente en las que los usuarios necesitan más instrucciones y explicación. Las páginas del concentrador no tienen botones de confirmación. Las páginas de concentrador basadas en tareas híbridas también tienen algunas propiedades o comandos directamente en ellas. Se recomienda encarecidamente usar páginas centrales híbridas cuando es más probable que los usuarios usen el panel de control para tener acceso a esas propiedades y comandos.
--   Páginas de concentrador basadas en objetos. Estas páginas del concentrador presentan los objetos disponibles mediante un control de vista de lista. Se usan mejor cuando podría haber varios objetos. Las páginas del concentrador no tienen botones de confirmación.
+-   Páginas centrales basadas en tareas. Estas páginas centrales presentan las tareas más usadas. Se usan mejor para algunas tareas de uso frecuente o importantes en las que los usuarios necesitan más instrucciones y explicaciones. Las páginas centrales no tienen botones de confirmación. Las páginas centrales basadas en tareas híbridas también tienen algunas propiedades o comandos directamente en ellas. Las páginas del centro híbrido se recomiendan encarecidamente cuando es más probable que los usuarios usen Panel de control para acceder a esas propiedades y comandos.
+-   Páginas centrales basadas en objetos. Estas páginas centrales presentan los objetos disponibles mediante un control de vista de lista. Se usan mejor cuando podría haber varios objetos. Las páginas centrales no tienen botones de confirmación.
 
-**Páginas de radios**
+**Páginas de radio**
 
--   Páginas de tareas. Estas páginas de radios presentan una tarea o un paso en una tarea con una instrucción principal específica basada en tareas. Se usan mejor para las tareas que se benefician de instrucciones y explicaciones adicionales.
--   Páginas de formulario. Estas páginas de radios presentan una colección de propiedades y tareas relacionadas basadas en una instrucción principal general. Se usan mejor para las características que tienen muchas propiedades y se benefician de una presentación directa de una sola página, como las propiedades avanzadas.
+-   Páginas de tareas. Estas páginas de radio presentan una tarea o un paso en una tarea con una instrucción principal específica basada en tareas. Se usan mejor para las tareas que se benefician de instrucciones y explicaciones adicionales.
+-   Páginas de formulario. Estas páginas de radio presentan una colección de propiedades y tareas relacionadas basadas en una instrucción principal general. Se usan mejor para las características que tienen muchas propiedades y se benefician de una presentación directa de una sola página, como las propiedades avanzadas.
 
-### <a name="property-sheet-patterns"></a>Patrones de la hoja de propiedades
+### <a name="property-sheet-patterns"></a>Patrones de hoja de propiedades
 
--   Las hojas de propiedades se usan mejor en elementos heredados con muchas configuraciones destinadas a usuarios avanzados. Los elementos nuevos pueden lograr el mismo efecto con un flujo de tareas mediante el patrón de página de formulario.
+-   Las hojas de propiedades se usan mejor en elementos heredados con muchas configuraciones dirigidas a usuarios avanzados. Los nuevos elementos pueden lograr el mismo efecto con un flujo de tareas mediante el patrón de página de formulario.
 
 ## <a name="guidelines"></a>Directrices
 
-### <a name="property-sheet-control-panel-items"></a>Elementos del panel de control de la hoja de propiedades
+### <a name="property-sheet-control-panel-items"></a>Elementos del panel de control de hoja de propiedades
 
--   **No use hojas de propiedades para los nuevos elementos del panel de control.** En su lugar, use flujos de tareas para crear una experiencia sin problemas y hacer uso completo de la funcionalidad de categorización y búsqueda de la Página principal del panel de control.
+-   **No use hojas de propiedades para los nuevos elementos del panel de control.** En su lugar, use flujos de tareas para crear una experiencia sin problemas y hacer un uso completo de la funcionalidad de categorización y búsqueda de la página principal del panel de control.
 
-### <a name="task-flow-control-panel-items"></a>Elementos del panel de control del flujo de tareas
+### <a name="task-flow-control-panel-items"></a>Elementos del panel de control de flujo de tareas
 
 **General**
 
--   **Mantenga visible el contenido y los controles más importantes sin desplazarse.** Los usuarios no se desplazarán para ver el contenido de la página a menos que tengan un motivo. Puede hacer que los botones de confirmación siempre estén visibles si los coloca en un [área de comandos](glossary.md) en lugar de en el área de contenido. No divida las páginas solo para evitar el desplazamiento.
-    -   **Puede desplazar verticalmente las páginas largas,** siempre que los controles más importantes estén visibles sin desplazarse.
-    -   **No utilice el desplazamiento horizontal.** En su lugar, rediseñe el contenido de la página y utilice el desplazamiento vertical. Las páginas pueden tener barras de desplazamiento horizontales solo cuando se hacen muy estrechas.
--   **Para navegar entre las páginas:**
-    -   Use los [vínculos de tarea](glossary.md) para iniciar una tarea.
-    -   Use los vínculos de tarea o el botón siguiente para navegar a la página siguiente en una tarea de varios pasos.
-    -   Use los botones de confirmación para completar una tarea.
-    -   Use el botón atrás de la barra de menús para volver a las páginas vistas anteriormente. No agregue un botón atrás al área de comandos.
-    -   Use la barra de direcciones para volver directamente a la Página principal del panel de control.
-    -   Use vea también vínculos en el panel de tareas para ir a las páginas de otros elementos del panel de control. De lo contrario, la navegación debe permanecer dentro de un único elemento del panel de control.
--   **Coloque solo la Página principal del panel de control en la barra de direcciones.** Al hacer clic en ese vínculo, se vuelve a la Página principal del panel de control y se abandona todo el trabajo en curso sin [confirmación](https://msdn.microsoft.com/library/windows/desktop/aa511273.aspx).
--   **No coloque un botón de comando cerrar en las páginas del panel de control.** Los usuarios pueden cerrar una ventana del panel de control con el botón cerrar de la barra de título.
+-   **Mantenga visible el contenido y los controles más importantes sin desplazarse.** Los usuarios no se desplazarán para ver el contenido de la página a menos que tengan una razón para hacerlo. Puede hacer que los botones de confirmación siempre sean visibles si los coloca en un [área de comandos](glossary.md) en lugar del área de contenido. No rompa las páginas solo para evitar el desplazamiento.
+    -   **Puede desplazarse verticalmente por páginas largas,** siempre y cuando los controles más importantes estén visibles sin desplazarse.
+    -   **No use el desplazamiento horizontal.** En su lugar, rediseñar el contenido de la página y usar el desplazamiento vertical. Las páginas pueden tener barras de desplazamiento horizontales solo cuando se hacen muy estrechas.
+-   **Para navegar entre páginas:**
+    -   Use [vínculos de tarea](glossary.md) para iniciar una tarea.
+    -   Use vínculos de tarea o un botón Siguiente para ir a la página siguiente de una tarea de varios pasos.
+    -   Use botones de confirmación para completar una tarea.
+    -   Use la botón Atrás en la barra de menús para volver a las páginas vistas anteriormente. No agregue una botón Atrás al área de comandos.
+    -   Use la barra de direcciones para volver directamente a la página principal del panel de control.
+    -   Use Ver también vínculos en el panel de tareas para navegar a las páginas de otros elementos del panel de control. De lo contrario, la navegación debe permanecer dentro de un único elemento del panel de control.
+-   **Coloque solo la página principal del panel de control en la barra de direcciones.** Al hacer clic en ese vínculo, vuelve a la página principal del panel de control, abandonando cualquier trabajo en curso sin una [confirmación](https://msdn.microsoft.com/library/windows/desktop/aa511273.aspx).
+-   **No coloque un botón de comando Cerrar en las páginas del panel de control.** Los usuarios pueden cerrar una ventana del panel de control mediante el botón Cerrar de la barra de título.
 
-**Vínculos y botones de tareas**
+**Botones y vínculos de tareas**
 
--   **Cuando una página tiene un pequeño conjunto de opciones fijas, use los vínculos de tarea en lugar de una combinación de botones de radio y un botón siguiente.** Esto permite a los usuarios seleccionar una respuesta con un solo clic.
--   Puede colocar vínculos de tarea y botones en los lugares siguientes (en orden de detectabilidad):
-    -   [Área de comandos](glossary.md) (solo para botones de comando en páginas de radios).
+-   **Cuando una página tiene un pequeño conjunto de opciones fijas, use vínculos de tarea en lugar de una combinación de botones de radio y un botón Siguiente.** Esto permite a los usuarios seleccionar una respuesta con un solo clic.
+-   Puede colocar botones y vínculos de tareas en los siguientes lugares (en orden de detectabilidad):
+    -   El [área de comandos](glossary.md) (solo para botones de comando en páginas de radio).
     -   El [área de contenido](glossary.md):
         -   Botones de comando
-        -   Vínculos de tarea
+        -   Vínculos de tareas
         -   Otros vínculos
-    -   Vínculos en el [Panel de tareas](glossary.md) (solo páginas del concentrador).
--   **Base la ubicación de los vínculos de tarea y los botones de importancia y necesidad de detectarlos.**
+    -   Vínculos en el [panel de tareas](glossary.md) (solo páginas centrales).
+-   **Base la ubicación de los vínculos y botones de tareas en función de la importancia y la necesidad de detectabilidad.**
     -   **Coloque solo los botones de confirmación en el área de comandos.**
-    -   **Coloque tareas esenciales en el área de contenido.** Los botones de comando tienden a atraer la atención, de modo que se reservan para los comandos que los usuarios deben ver. Los vínculos de tarea también dibujan la atención, pero menos que los botones de comando.
-    -   **Reserve el panel de tareas y los vínculos sin formato para las tareas secundarias (menos importantes).** El panel de tareas es el área menos reconocible de una página de tareas y los vínculos sin formato no son tan visibles como botones de comando y vínculos de tarea.
--   Para los vínculos de tareas presentados en el área de contenido:
-    -   **Si hay más de siete vínculos, agrupe los vínculos en categorías.** Proporcione encabezados para cada uno de los grupos.
-    -   **Para menos de siete vínculos, presente los vínculos en un solo grupo sin encabezado.**
--   **Presente los vínculos de tarea y los botones en un orden lógico.** Enumerar vínculos de tarea verticalmente, botones de comando horizontalmente.
--   Dentro de las categorías, **Divida los comandos en grupos relacionados.** Coloque los grupos de tareas colocando el más usado primero y, dentro de cada grupo, coloque primero las tareas que se usan con más frecuencia. **El orden resultante debe seguir aproximadamente la probabilidad de uso, pero también tiene un flujo lógico.**
-    -   **Excepción:** Los vínculos de tareas que dan lugar a hacer todo deben colocarse en primer lugar.
--   **Si hay muchos vínculos de tareas, asigne a las tareas más importantes una apariencia más prominenta** mediante el uso de un icono de 24x24 píxeles y dos líneas de texto. En el caso de tareas menos importantes, use un icono de 16x16 píxeles o ningún icono, y una sola línea de texto de vínculo.
+    -   **Coloque tareas esenciales en el área de contenido.** Los botones de comando tienden a llamar más la atención, por lo que se reservan para los comandos que los usuarios deben ver. Los vínculos de tareas también llama la atención, pero menos que los botones de comando.
+    -   **Reserve el panel de tareas y los vínculos sin formato para las tareas secundarias (menos importantes).** El panel de tareas es el área menos reconocible de una página de tareas y los vínculos sin formato no son tan visibles como los botones de comando y los vínculos de tareas.
+-   Para los vínculos de tareas que se presentan en el área de contenido:
+    -   **Si hay más de siete vínculos, a agrupar los vínculos en categorías.** Proporcione encabezados para cada uno de los grupos.
+    -   **Para menos de siete vínculos, presente los vínculos en un único grupo sin un encabezado.**
+-   **Presentar vínculos y botones de tareas en un orden lógico.** Mostrar vínculos de tareas verticalmente, botones de comando horizontalmente.
+-   Dentro de las **categorías, divida los comandos en grupos relacionados.** Presente los grupos de tareas colocando primero el más usado y, dentro de cada grupo, coloque primero las tareas más usadas. **El orden resultante debe seguir aproximadamente la probabilidad de uso, pero también tener un flujo lógico.**
+    -   **Excepción:** Los vínculos de tareas que hacen que todo se haga primero deben colocarse en primer lugar.
+-   **Si hay muchos vínculos** de tarea, dé a las tareas más importantes una apariencia más destacada mediante un icono de 24 x 24 píxeles y dos líneas de texto. Para las tareas menos importantes, use un icono de 16 x 16 píxeles, o ningún icono, y una sola línea de texto de vínculo.
 
     ![captura de pantalla de elementos con iconos grandes y pequeños ](images/winenv-ctrl-panels-image4.png)
 
-    En este ejemplo, los comandos importantes reciben una apariencia más prominente.
+    En este ejemplo, los comandos importantes tienen una apariencia más destacada.
 
--   **Tener una separación física clara entre los comandos usados con frecuencia y los comandos destructivos.** De lo contrario, los usuarios podrían hacer clic en comandos destructivos accidentalmente. Es posible que tenga que volver a ordenar los comandos para colocar comandos destructivos juntos.
--   **Proporcione el mecanismo para deshacer los comandos directamente en la página.** Los usuarios no deben tener que navegar en otro lugar para deshacer un error.
--   **Para los vínculos de tarea, use todos los iconos de vínculo de tarea predeterminados o todos los iconos personalizados.** No las mezcle. Considere la posibilidad de usar iconos personalizados solo si:
+-   **Tener una separación física clara entre los comandos usados con frecuencia y los comandos destructivos.** De lo contrario, los usuarios podrían hacer clic en comandos destructivos accidentalmente. Es posible que tenga que reordenar los comandos un poco para reunir comandos destructivos.
+-   **Proporcione el mecanismo para deshacer comandos directamente en la página.** Los usuarios no deben tener que navegar a otro lugar para deshacer un error.
+-   **Para los vínculos de tareas, use todos los iconos de vínculo de tareas predeterminados o todos los iconos personalizados.** No los mezcle. Considere la posibilidad de usar iconos personalizados solo si:
     -   Ayudan a los usuarios a comprender las tareas.
-    -   Cumplen con los [estándares de iconos de Aero](vis-icons.md).
+    -   Cumplen con los estándares [de icono de Avión.](vis-icons.md)
     -   Tienen una apariencia discreta.
 
 **Cuadros de diálogo**
 
-Cuando se usan flujos de tareas, normalmente se desea que una tarea fluya de una página a una en una sola ventana, pero las siguientes circunstancias son excepciones. Utilice los cuadros de diálogo en las siguientes circunstancias:
+Cuando se usan flujos de tareas, normalmente se quiere que una tarea fluya de página a página dentro de una sola ventana, pero las siguientes circunstancias son excepciones. Use cuadros de diálogo en las siguientes circunstancias:
 
--   Para solicitar a los usuarios un nombre de usuario y una contraseña de administrador. Use siempre el cuadro de diálogo Administrador de credenciales para este fin. (Debe ser [modal](glossary.md)).
--   Para confirmar un comando en contexto mediante un cuadro de diálogo de tarea o un cuadro de mensaje. (Debe ser modal).
--   Para obtener la entrada para comandos en contexto, como para los comandos nuevo, agregar, guardar como, cambiar nombre e imprimir.
+-   Para solicitar a los usuarios un nombre de usuario y una contraseña de administrador. Use siempre el cuadro de diálogo Administrador de credenciales para este propósito. (Debe ser [modal).](glossary.md)
+-   Para confirmar un comando local mediante un cuadro de diálogo de tarea o un cuadro de mensaje. (Debe ser modal).
+-   Para obtener la entrada de los comandos locales, como para los comandos Nuevo, Agregar, Guardar como, Cambiar nombre e Imprimir.
 
-    ![captura de pantalla del cuadro de diálogo eliminar ubicaciones de red ](images/winenv-ctrl-panels-image5.png)
+    ![captura de pantalla del cuadro de diálogo Eliminar ubicaciones de red ](images/winenv-ctrl-panels-image5.png)
 
-    En este ejemplo, el comando eliminar se realiza en un cuadro de diálogo en lugar de en una página independiente.
+    En este ejemplo, el comando Eliminar se realiza en un cuadro de diálogo en lugar de en una página independiente.
 
--   Para realizar tareas secundarias independientes. El uso de una ventana secundaria no [modal](glossary.md)permite realizar estas tareas de forma independiente y fuera del flujo de tareas principal.
+-   Para realizar tareas secundarias independientes. Con una [ventana modeless](glossary.md), la ventana secundaria permite que estas tareas se realicen de forma independiente y fuera del flujo de tareas principal.
 
-### <a name="hub-pages"></a>Páginas del concentrador
+### <a name="hub-pages"></a>Páginas centrales
 
 **General**
 
--   Usar páginas de concentrador basadas en tareas cuando:
-    -   **Hay un pequeño número de tareas muy utilizadas o importantes.**
-    -   **La configuración implica uno o dos objetos** (ejemplos: monitores, teclado, Mouse, controladores de juegos).
+-   Use páginas centrales basadas en tareas cuando:
+    -   **Hay un pequeño número de tareas de uso frecuente o importantes.**
+    -   **La configuración implica uno o dos objetos** (ejemplos: monitores, teclado, mouse y controladores de juegos).
     -   **La configuración se aplica a todo el sistema** (ejemplos: fecha y hora, seguridad, opciones de energía).
--   Usar páginas de concentrador basadas en objetos cuando:
-    -   **La configuración puede implicar varios objetos** (ejemplos: cuentas de usuario, conexiones de red, impresoras).
-    -   **La configuración solo se aplica al objeto seleccionado**.
--   **No use una página de concentrador si el elemento del panel de control tiene una sola página** que contiene todas las tareas y propiedades implicadas.
+-   Use páginas centrales basadas en objetos cuando:
+    -   **La configuración podría implicar varios objetos** (ejemplos: cuentas de usuario, conexiones de red, impresoras).
+    -   **La configuración solo se aplica al objeto seleccionado.**
+-   **No use una página central si el** elemento del panel de control tiene una sola página que contiene todas las tareas y propiedades implicadas.
 
 **Listas de objetos**
 
--   **Enumerar los elementos en un orden lógico.** Ordene los objetos con nombre en orden alfabético, números en orden numérico y fechas en orden cronológico.
--   En el caso de los concentradores basados en objetos, **proporcione comandos de la vista de objetos en el panel de tareas si la capacidad de cambiar la vista es importante para las tareas**. La capacidad de cambiar las vistas es importante si hay muchos objetos y la presentación predeterminada no funciona bien en todos los escenarios. Los usuarios pueden cambiar la vista de lista incluso si no hay comandos explícitos a través del menú contextual de la vista de lista, pero es menos reconocible.
+-   **Enumera los elementos en un orden lógico.** Ordene los objetos con nombre en orden alfabético, números en orden numérico y fechas en orden cronológico.
+-   En el caso de los concentradores basados en objetos, proporcione comandos de vista de objetos en el panel de tareas si la capacidad de cambiar la vista es **importante para las tareas**. La capacidad de cambiar las vistas es importante si hay muchos objetos y la presentación predeterminada no funciona bien en todos los escenarios. Los usuarios pueden cambiar la vista de lista incluso si no hay comandos explícitos a través del menú contextual de la vista de lista, pero es menos reconocible.
 
-Para obtener más instrucciones sobre cómo presentar listas de objetos, vea [vistas de lista](ctrl-list-views.md).
+Para obtener más instrucciones sobre cómo presentar listas de objetos, vea [List Views](ctrl-list-views.md).
 
 **Interacción**
 
--   **No coloque botones de confirmación en páginas del concentrador.** Las páginas del concentrador son puntos de inicio fundamentalmente. Los usuarios nunca "confirman" páginas del concentrador que nunca se llevan a cabo con ellas. Y los botones de confirmación en las páginas del concentrador hacen que las tareas iniciadas desde un centro resulten confusas (los usuarios se preguntarán si es necesario confirmar esas tareas).
-    -   **Excepción:** Si el cambio de una configuración requiere [elevación](glossary.md), proporcione un botón aplicar con un [icono de escudo de seguridad](winenv-uac.md). Deshabilite el botón de confirmación una vez que se hayan aplicado los cambios.
--   **Considere la posibilidad de colocar las propiedades más útiles directamente en las páginas del concentrador.** Se recomienda encarecidamente usar estas páginas de concentrador híbrido cuando es más probable que los usuarios usen el panel de control para tener acceso a esas propiedades.
+-   **No coloque botones de confirmación en las páginas centrales.** Las páginas centrales son fundamentalmente puntos de inicio. Los usuarios nunca "confirman" las páginas del centro que nunca han terminado con ellas. Y los botones de confirmación de las páginas del centro hacen que las tareas iniciadas desde un centro sean confusas (los usuarios se preguntarán si es necesario confirmar esas tareas).
+    -   **Excepción:** Si cambiar una configuración requiere [elevación,](glossary.md)proporcione un botón Aplicar con un icono [de escudo de seguridad](winenv-uac.md). Deshabilite el botón de confirmación una vez aplicados los cambios.
+-   **Considere la posibilidad de colocar las propiedades más útiles directamente en las páginas centrales.** Estas páginas del centro híbrido se recomiendan encarecidamente cuando es más probable que los usuarios usen Panel de control acceder a esas propiedades.
 
-    ![captura de pantalla de la página del concentrador de opciones de energía ](images/winenv-ctrl-panels-image6.png)
+    ![captura de pantalla de la página del centro de opciones de energía ](images/winenv-ctrl-panels-image6.png)
 
-    En este ejemplo, el elemento opciones de energía del panel de control tiene la configuración más útil directamente en la página del concentrador.
+    En este ejemplo, el Opciones de energía panel de control tiene la configuración más útil directamente en la página central.
 
--   **Use un modelo de confirmación inmediato para cualquier configuración en las páginas del concentrador híbrido para que los cambios se realicen inmediatamente.** De nuevo, los usuarios nunca confirman una página de concentrador. Si un valor de configuración requiere un botón confirmar, no lo coloque en una página del concentrador.
--   **Considere la posibilidad de colocar comandos sencillos "de un paso" directamente en páginas del concentrador en lugar de usar vínculos de navegación.**
--   **Confirme los comandos en contexto cuyos efectos no se puedan deshacer fácilmente.** Use un cuadro de [diálogo de tarea](win-dialog-box.md) o de [mensaje](glossary.md).
+-   **Use un modelo de confirmación inmediata para cualquier configuración en las páginas del centro híbrido para que los cambios se realicen inmediatamente.** De nuevo, los usuarios nunca confirman una página del centro. Si una configuración requiere un botón de confirmación, no lo coloque en una página central.
+-   **Considere la posibilidad de colocar comandos sencillos de "un paso" directamente en las páginas centrales en lugar de usar vínculos de navegación.**
+-   **Confirme los comandos locales cuyos efectos no se pueden deshacer fácilmente.** Use un cuadro [de diálogo de tarea](win-dialog-box.md) o un cuadro de [mensaje](glossary.md).
 
-    ![captura de pantalla del cuadro de diálogo confirmar eliminación ](images/winenv-ctrl-panels-image7.png)
+    ![captura de pantalla del cuadro de diálogo Confirmar eliminación ](images/winenv-ctrl-panels-image7.png)
 
-    En este ejemplo, el comando DELETE se confirma con un cuadro de diálogo.
+    En este ejemplo, el comando Eliminar se confirma con un cuadro de diálogo.
 
--   **En el caso de las páginas del concentrador basado en tareas, identifique cada tarea con un vínculo de tarea y un icono.** También puede proporcionar una descripción opcional para cada vínculo. Sin embargo, intente hacer que los vínculos de tarea sean autodescriptivos y proporcione descripciones opcionales solo a los vínculos que realmente los necesiten.
+-   **En el caso de las páginas centrales basadas en tareas, identifique cada tarea con un vínculo de tarea y un icono.** También puede proporcionar una descripción opcional para cada vínculo. Sin embargo, intente hacer que los vínculos de tarea se explican por sí mismos y proporcionar descripciones opcionales solo a los vínculos que realmente los necesiten.
 
-    ![captura de pantalla de la página del concentrador de rendimiento del equipo ](images/winenv-ctrl-panels-image8.png)
+    ![captura de pantalla de la página del centro de rendimiento del equipo ](images/winenv-ctrl-panels-image8.png)
 
     En este ejemplo, cada tarea tiene un vínculo de tarea y un icono.
 
--   **En el caso de las páginas de concentrador basadas en objetos, al hacer clic con un solo clic se seleccionan objetos y, al hacer doble clic en, se selecciona un objeto y se navega a su página predeterminada.** La página predeterminada suele ser una página de propiedades o una página de concentrador basada en tareas.
--   **Una página de concentrador basada en objetos puede desplazarse a un concentrador basado en tareas para los objetos seleccionados.** Sin embargo, estos centros secundarios deben evitarse porque hacen que un elemento del panel de control se sienta demasiado indirecto.
+-   **En el caso de las páginas centrales basadas en objetos, al hacer clic único se seleccionan objetos y, al hacer doble clic, se selecciona un objeto y se navega a su página predeterminada.** La página predeterminada suele ser una página de propiedades o una página central basada en tareas.
+-   **Una página central basada en objetos puede navegar a un centro basado en tareas para los objetos seleccionados.** Sin embargo, estos concentradores secundarios deben evitarse porque hacen que un elemento del panel de control se sienta demasiado indirecto.
 
 **Paneles de tareas**
 
-Use los paneles de tareas para presentar vínculos a comandos, vistas y elementos del panel de control relacionados.
+Use paneles de tareas para presentar vínculos a comandos, vistas y elementos relacionados del panel de control.
 
--   En el caso de los paneles de tareas de los concentradores basados en tareas, presente los vínculos en el orden siguiente:
-    -   **Comandos secundarios**. Presente solo las tareas principales en el área de contenido. Use el panel de tareas para las tareas secundarias y opcionales. Considere la posibilidad de una tarea principal si los usuarios deben detectarla en escenarios importantes; secundario si es aceptable que los usuarios no lo detecten.
-    -   **Vea también**. Los vínculos opcionales que se desplazan a los elementos relacionados del panel de control.
--   En el caso de los paneles de tareas de los concentradores basados en objetos, presente los vínculos en el orden siguiente:
+-   En el caso de los paneles de tareas en centros basados en tareas, presente vínculos en el orden siguiente:
+    -   **Comandos secundarios**. Presente las tareas principales solo en el área de contenido. Use el panel de tareas para tareas secundarias opcionales. Considere una tarea principal si los usuarios deben detectarla en escenarios importantes. secundaria si es aceptable que los usuarios no lo detecte.
+    -   **Consulte también**. Vínculos opcionales que navegan a los elementos relacionados del panel de control.
+-   En el caso de los paneles de tareas en centros basados en objetos, presente vínculos en el orden siguiente:
     -   **Vistas de objeto**. Vínculos opcionales que se usan para controlar la presentación de los objetos.
-    -   **Comandos fijos**. Comandos que son independientes de los objetos seleccionados actualmente.
-    -   **Comandos contextuales**. Los comandos que dependen de los objetos seleccionados actualmente y, por tanto, no se muestran siempre.
-    -   **Vea también**. Los vínculos opcionales que se desplazan a los elementos relacionados del panel de control.
--   **No use paneles de tareas en las páginas de radios.** A diferencia de las páginas del concentrador, las páginas radiales deben centrarse en completar la tarea. No quiere animar a los usuarios a salir antes de la finalización.
+    -   **Se han corregido los comandos**. Comandos que son independientes de los objetos seleccionados actualmente.
+    -   **Comandos contextuales**. Los comandos que dependen de los objetos seleccionados actualmente y, por tanto, no siempre se muestran.
+    -   **Consulte también**. Vínculos opcionales que navegan a los elementos relacionados del panel de control.
+-   **No use paneles de tareas en páginas de radio.** A diferencia de las páginas de concentrador, las páginas de radio deben centrarse en completar la tarea. No quiere animar a los usuarios a salir antes de finalizar.
 
-**Vea también vínculos**
+**Consulte también vínculos**
 
--   **Proporcione también vínculos en el panel de tareas para ayudar a los usuarios a buscar elementos relacionados del panel de control o el elemento derecho del panel de control si tienen uno incorrecto.** Vínculo a elementos es probable que los usuarios asocien con el elemento del panel de control.
+-   **Proporcionar Vea también vínculos en el panel de tareas para ayudar a los usuarios a encontrar elementos relacionados del panel de control o el elemento del panel de control correcto si tienen uno incorrecto.** Es probable que los usuarios asocie un vínculo a elementos con el elemento del panel de control.
 
-    ![captura de pantalla del centro de actividades "vea también" vínculos ](images/winenv-ctrl-panels-image9.png)
+    ![captura de pantalla de centro de actividades vínculos "ver también" ](images/winenv-ctrl-panels-image9.png)
 
-    En este ejemplo, el elemento del panel de control del centro de actividades se vincula a los elementos relacionados del panel de control.
+    En este ejemplo, el elemento del panel de control del Centro de acciones se vincula a los elementos relacionados del panel de control.
 
--   **Vincular a una página de tarea específica si es lo que es más probable que reconozcan los usuarios.** De lo contrario, vincule a todo el elemento del panel de control. Use el nombre del panel de control sin agregar la frase, panel de control.
+-   **Vincule a una página de tareas específica si es lo que es más probable que reconozcan los usuarios.** De lo contrario, vincule a todo el elemento del panel de control. Use el nombre del panel de control sin agregar la frase, panel de control.
 
-### <a name="spoke-pages"></a>Páginas de radios
+### <a name="spoke-pages"></a>Páginas de radio
 
 **General**
 
--   **Use las páginas de tareas para tareas importantes o de uso frecuente en las que los usuarios necesitan más instrucciones y explicación.**
--   **Usar páginas de formulario para características que tienen muchos valores y se benefician de una presentación directa de una sola página.** Las tareas ideales para estas páginas normalmente implican cambios obvios en algunas propiedades simples.
--   **No use paneles de tareas en las páginas de radios.**
+-   **Use páginas de tareas para tareas de uso frecuente o importantes en las que los usuarios necesiten más instrucciones y explicaciones.**
+-   **Use páginas de formulario para las características que tienen muchas configuraciones y se benefician de una presentación directa de una sola página.** Las tareas ideales para estas páginas suelen implicar cambios obvios en algunas propiedades simples.
+-   **No use paneles de tareas en páginas de radio.**
 
 **Interacción**
 
--   **Intente limitar las tareas principales a una sola página.** Si se necesita más de una página, puede:
-    -   **Use páginas radiales intermedias para pasos adicionales u opcionales.** La página de radios final confirma las páginas de radios intermedias.
-    -   **Use ventanas independientes para tareas auxiliares independientes.** Las ventanas independientes se confirman por sí mismas y de forma independiente de la tarea principal.
+-   **Intente limitar las tareas principales a una sola página.** Si se requiere más de una página, puede:
+    -   **Use páginas de radio intermedias para pasos adicionales u opcionales.** Las páginas de radio intermedias se confirman en la página de radio final.
+    -   **Use ventanas independientes para tareas auxiliares independientes.** Las ventanas independientes se confirman por sí solas e independientemente de la tarea principal.
 
-Al hacerlo, se mantiene el significado de los botones de confirmación de la tarea principal sin ambigüedades. Los usuarios siempre deben estar seguros de saber en qué se están confirmando.
+Si lo hace, el significado de los botones de confirmación de la tarea principal es claro e inequívovo. Los usuarios siempre deben estar seguros de comprender a qué se comprometen.
 
--   **No usar vea también vínculos dentro de un flujo de tareas.** Estos vínculos a elementos de panel de control relacionados, pero diferentes. Aunque la navegación a un elemento diferente es aceptable en las páginas del concentrador, no se encuentra en páginas radiales, porque esto interrumpe la tarea.
--   **No utilice páginas de radios para entradas o confirmaciones simples.** En su lugar, use cuadros de diálogo modales.
+-   **No use Consulte también vínculos dentro de un flujo de tareas.** Estos vínculos a elementos relacionados, pero diferentes, del panel de control. Aunque la navegación a un elemento diferente es aceptable en las páginas centrales, no se encuentra en páginas de radio, ya que al hacerlo se interrumpe la tarea.
+-   **No use páginas de radio para entradas o confirmaciones simples.** Use cuadros de diálogo modales en su lugar.
 
-**Interacción (páginas radiales intermedias)**
+**Interacción (páginas de radio intermedias)**
 
--   **Use los vínculos de tarea o el botón siguiente para navegar a la página siguiente.** La manera de continuar con el paso siguiente siempre debe ser obvia.
--   **Puede tener vínculos de navegación a pasos de tareas opcionales.** Para evitar confusiones cuando los usuarios se confirman en la tarea, esas páginas adicionales deben ser páginas intermedias dentro del mismo elemento del panel de control. No deben tener botones de confirmación, pero se deben confirmar cuando se confirma la tarea principal.
+-   **Use vínculos de tarea o un botón Siguiente para ir a la página siguiente.** La manera de continuar con el paso siguiente siempre debe ser obvia.
+-   **Puede tener vínculos de navegación a pasos de tareas opcionales.** Para evitar confusiones cuando los usuarios se confirman en la tarea, esas páginas adicionales deben ser páginas intermedias dentro del mismo elemento del panel de control. No deben tener botones de confirmación, pero deben confirmarse cuando se confirma la tarea principal.
 
-**Interacción (páginas radios finales)**
+**Interacción (páginas de radio final)**
 
--   **Use los botones de confirmación para completar una tarea.** Use un [modelo de confirmación diferida](glossary.md) para las páginas radiales, de modo que los cambios no se realicen hasta que se confirmen explícitamente (si los usuarios se desplazan con atrás, cerrar o la barra de direcciones, se abandonan los cambios). Los botones de confirmación son una pista visual de que el usuario está a punto de completar una tarea. No use vínculos para este fin.
--   **No confirme los botones de confirmación (incluida la cancelación).** Esto puede resultar molesto. Excepciones:
-    -   La acción tiene consecuencias importantes y, si es incorrecta, no se fixable fácilmente.
-    -   La acción puede provocar una pérdida significativa del tiempo o del trabajo del usuario.
+-   **Use botones de confirmación para completar una tarea.** Use un modelo [de](glossary.md) confirmación retrasada para las páginas de radio, de modo que los cambios no se realicen hasta que se confirmen explícitamente (si los usuarios se desplazan fuera mediante Atrás, Cerrar o la barra de direcciones, los cambios se abandonan). Los botones de confirmación son una pista visual de que el usuario está a punto de completar una tarea. No use vínculos para este propósito.
+-   **No confirme los botones de confirmación (incluido Cancelar).** Si lo hace, puede ser molesto. Excepciones:
+    -   La acción tiene consecuencias significativas y, si es incorrecta, no se puede corregir fácilmente.
+    -   La acción puede provocar una pérdida significativa del tiempo o el esfuerzo del usuario.
     -   La acción es claramente incoherente con otras acciones.
--   **No confirme si los usuarios abandonan los cambios** desplazándose hacia afuera, cerca o desde la barra de direcciones. Sin embargo, puede confirmar si una navegación potencialmente no intencionada puede provocar una pérdida significativa del tiempo o del trabajo del usuario.
--   **No use vínculos de comandos o de navegación** (incluidos los vínculos). En las páginas de radios finales, los usuarios deben completar o cancelar explícitamente la tarea. No se debe animar a los usuarios a navegar en otra parte, ya que si lo hace, es probable que cancele la tarea implícitamente.
--   **Cuando los usuarios completan o cancelan una tarea, deben enviarse de vuelta a la página del concentrador desde la que se inició la tarea.** Si no existe esa página, cierre la ventana del panel de control en su lugar. No suponga que las páginas de radio siempre se inician desde otra página.
--   **Quite las páginas "confirmadas" obsoletas de la pila de retroceso del explorador de Windows** cuando devuelva los usuarios a la página desde la que se inició la tarea. Los usuarios nunca deben ver las páginas en las que ya se han confirmado al hacer clic en el botón atrás. Los usuarios siempre deben realizar cambios adicionales rehaciendo completamente la tarea en lugar de hacer clic en atrás para modificar páginas obsoletas.
-    -   **Desarrolladores:** Puede quitar estas páginas obsoletas mediante las API ITravelLog:: FindTravelEntry () y ITravelLogEx::D eleteEntry ().
+-   **No confirme si los usuarios abandonan los cambios;** para ello, vaya hacia atrás, cierre o la barra de direcciones. Sin embargo, puede confirmar si una navegación potencialmente no deseada puede dar lugar a una pérdida significativa del tiempo o esfuerzo del usuario.
+-   **No use vínculos de navegación o comandos** (incluidos los vínculos ver también). En las páginas de radio final, los usuarios deben completar o cancelar explícitamente la tarea. No se debe animar a los usuarios a navegar por otro lugar, ya que es probable que al hacerlo se cancele la tarea implícitamente.
+-   **Cuando los usuarios completen o cancelen una tarea, deben devolverse a la página del centro desde la que se inició la tarea.** Si no hay ninguna página de este tipo, cierre la ventana del panel de control en su lugar. No suponga que las páginas de radio siempre se inician desde otra página.
+-   **Quite las páginas obsoletas "confirmados"** de la Explorador de Windows atrás cuando devuelva a los usuarios a la página desde la que se inició la tarea. Los usuarios nunca deben ver las páginas en las que ya se han confirmado al hacer clic en botón Atrás. Los usuarios siempre deben realizar cambios adicionales rehaciendo completamente la tarea en lugar de hacer clic en Atrás para modificar páginas obsoletas.
+    -   **Desarrolladores:** Puede quitar estas páginas obsoletas mediante las API ITravelLog::FindTravelEntry() e ITravelLogEx::D eleteEntry().
 
 **Botones de confirmación**
 
-**Nota:** Los botones cancelar se consideran botones de confirmación.
+**Nota:** Los botones de cancelación se consideran botones de confirmación.
 
--   **Confirmar tareas mediante botones de confirmación que son respuestas específicas a la instrucción principal, en lugar de etiquetas genéricas, como aceptar.** Las etiquetas de los botones de confirmación deben tener sentido por sí mismas. Evite usar OK porque no es una respuesta específica a la instrucción principal y, por lo tanto, es más fácil misunderstand. Además, aceptar se usa normalmente con los cuadros de diálogo modales e implica cerrar incorrectamente la ventana de elemento del panel de control.
+-   **Confirme las tareas mediante botones de confirmación que son respuestas específicas a la instrucción principal, en lugar de etiquetas genéricas como Aceptar.** Las etiquetas de los botones de confirmación deben tener sentido por sí solas. Evite usar Aceptar porque no es una respuesta específica a la instrucción principal y, por tanto, es más fácil de entender. Además, Ok se usa normalmente con cuadros de diálogo modales e implica cerrar incorrectamente la ventana de elementos del panel de control.
     -   **Excepciones:**
-        -   Utilice aceptar para las páginas que no tienen configuración.
-        -   Use aceptar cuando la respuesta específica siga siendo genérica, como guardar, seleccionar o elegir, como cuando se cambia una configuración concreta o una colección de valores de configuración.
-        -   Use aceptar si la página tiene botones de radio que son respuestas a la instrucción principal. Para mantener el modelo de confirmación diferida, no puede usar vínculos de tarea en una página de radio final.
+        -   Use Aceptar para las páginas que no tienen configuración.
+        -   Use Aceptar cuando la respuesta específica todavía sea genérica, como Guardar, Seleccionar o Elegir, como al cambiar una configuración específica o una colección de valores.
+        -   Use Aceptar si la página tiene botones de radio que son respuestas a la instrucción principal. Para mantener el modelo de confirmación retrasada, no puede usar vínculos de tareas en una página de radio final.
 
             ![captura de pantalla de restricciones web con el botón Aceptar ](images/winenv-ctrl-panels-image10.png)
 
             En este ejemplo, los botones de radio, no los botones de confirmación, son respuestas a la instrucción principal.
--   **Proporcione un botón Cancelar para permitir que los usuarios abandonen los cambios explícitamente.** Aunque los usuarios pueden abandonar implícitamente una tarea si no confirman sus cambios, proporcionar un botón Cancelar les permite hacerlo con mayor confianza.
-    -   **Excepción:** No proporcione un botón Cancelar para las tareas en las que los usuarios no pueden realizar cambios. El botón Aceptar tiene el mismo efecto que cancelar en este caso.
--   **No use los botones de confirmación cerrar, listo o finalizar.** Estos botones suelen usarse con cuadros de diálogo modales y, de forma incorrecta, cerrar la ventana de elemento del panel de control. Los usuarios pueden cerrar la ventana con el botón cerrar de la barra de título. Además, listo y finalizar son engañosos, ya que los usuarios se devuelven a la página en la que se inició la tarea, por lo que no se han hecho realmente.
--   **No deshabilite los botones de confirmación.** De lo contrario, los usuarios deben deducir por qué están deshabilitados los botones de confirmación. Es mejor dejar habilitados los botones de confirmación y proporcionar un mensaje de error útil siempre que haya un problema.
--   **Asegúrese de que los botones de confirmación aparecen en la página sin desplazarse.** Si la página es larga, puede hacer que los botones de confirmación siempre estén visibles si los coloca en un [área de comandos](glossary.md), en lugar de en el área de contenido.
+-   **Proporcione un botón Cancelar para permitir que los usuarios abandonen explícitamente los cambios.** Aunque los usuarios pueden abandonar implícitamente una tarea al no confirmar sus cambios, proporcionar un botón Cancelar les permite hacerlo con mayor confianza.
+    -   **Excepción:** No proporcione un botón Cancelar para las tareas en las que los usuarios no puedan realizar cambios. En este caso, el botón Aceptar tiene el mismo efecto que Cancelar.
+-   **No use los botones Cerrar, Listo o Finalizar confirmación.** Estos botones se usan normalmente con cuadros de diálogo modales e implican incorrectamente cerrar la ventana de elementos del panel de control. Los usuarios pueden cerrar la ventana mediante el botón Cerrar de la barra de título. Además, Done (Listo) y Finish (Finalizar) son confusos porque los usuarios se devuelven a la página desde la que se inició la tarea, por lo que no se han hecho realmente.
+-   **No deshabilite los botones de confirmación.** De lo contrario, los usuarios tienen que deducir por qué los botones de confirmación están deshabilitados. Es mejor dejar habilitados los botones de confirmación y proporcionar un mensaje de error útil siempre que haya un problema.
+-   **Asegúrese de que los botones de confirmación aparecen en la página sin desplazarse.** Si la página es larga, puede hacer que los botones de confirmación siempre sean visibles colocándolos en un área de [comandos,](glossary.md)en lugar de en el área de contenido.
 
-    ![captura de pantalla del cuadro de diálogo reproducción automática ](images/winenv-ctrl-panels-image11.png)
+    ![captura de pantalla del cuadro de diálogo Reproducción automática ](images/winenv-ctrl-panels-image11.png)
 
-    En este ejemplo, el tamaño del área de contenido es ilimitado, por lo que los botones de confirmación se colocan en el área de comandos.
+    En este ejemplo, el tamaño del área de contenido está sin enlazar, por lo que los botones de confirmación se colocan en el área de comandos.
 
--   Alinee a la derecha los botones de confirmación y use este orden (de izquierda a derecha): botones de confirmación positivos, cancelar y aplicar.
+-   Alinee a la derecha los botones de confirmación y use este orden (de izquierda a derecha): botones de confirmación positivos, Cancelar y Aplicar.
 
 **Botones de vista previa**
 
--   Asegúrese de que **el botón vista previa significa aplicar los cambios pendientes ahora pero restaure la configuración actual si los usuarios navegan fuera de la página sin confirmar los cambios.**
--   **Puede usar los botones de vista previa en cualquier página de radio.** Las páginas del concentrador no necesitan botones de vista previa porque usan un [modelo de confirmación inmediata](glossary.md).
--   **Considere la posibilidad de usar un botón de vista previa en lugar de un botón aplicar en las páginas del panel de control.** Los botones de vista previa son más fáciles de entender para los usuarios y se pueden usar en cualquier página de radio.
--   **Proporcione un botón de vista previa solo si la página tiene valores de configuración (al menos uno) con efectos que los usuarios pueden ver.** Los usuarios deben poder obtener una vista previa de un cambio, evaluar el cambio y realizar cambios adicionales en función de esa evaluación.
--   **Habilite siempre el botón vista previa.**
+-   Asegúrese de que el botón Vista previa significa aplicar los cambios pendientes ahora, pero restaure la configuración actual si los usuarios se alejan de la página sin confirmar **los cambios.**
+-   **Puede usar botones de vista previa en cualquier página de radio.** Las páginas centrales no necesitan botones de vista previa porque usan un [modelo de confirmación inmediata.](glossary.md)
+-   **Considere la posibilidad de usar un botón Vista previa en lugar de un botón Aplicar para las páginas del panel de control.** Los botones de vista previa son más fáciles de entender para los usuarios y se pueden usar en cualquier página de radio.
+-   **Proporcione un botón Vista previa solo si la página tiene una configuración (al menos una) con efectos que los usuarios pueden ver.** Los usuarios deben poder obtener una vista previa de un cambio, evaluarlo y realizar más cambios en función de esa evaluación.
+-   **Habilite siempre el botón Vista previa.**
 
-**Vistas previas en vivo**
+**Vistas previas en directo**
 
-Un elemento del panel de control tiene una vista previa dinámica cuando el efecto de los cambios en una página radial se puede ver de inmediato.
+Un elemento del panel de control tiene una vista previa dinámica cuando el efecto de los cambios en una página de radio se puede ver inmediatamente.
 
--   **Considere la posibilidad de usar la vista previa dinámica para la configuración de pantalla cuando:**
+-   **Considere la posibilidad de usar la versión preliminar en vivo para la configuración de pantalla cuando:**
     -   El efecto es obvio, normalmente porque se aplica a todo el monitor.
-    -   El efecto se puede aplicar sin un retraso significativo.
+    -   El efecto se puede aplicar sin retrasos significativos.
     -   El efecto es seguro y se puede deshacer fácilmente.
 
         ![captura de pantalla del cuadro de diálogo Cambiar configuración de color ](images/winenv-ctrl-panels-image12.png)
 
-        En este ejemplo, el efecto de la configuración de color y apariencia de Windows se ve inmediatamente. Esto permite a los usuarios realizar cambios con un esfuerzo mínimo.
+        En este ejemplo, el efecto de la configuración color y apariencia de Windows se ve inmediatamente. Esto permite a los usuarios realizar cambios con el mínimo esfuerzo.
 
--   **Use guardar cambios y Cancelar para los botones de confirmación.** "Guardar cambios" mantiene la configuración actual, mientras que cancelar vuelve a la configuración original. "Guardar cambios" se usa en lugar de aceptar para aclarar que todavía no se han aplicado los cambios de vista previa.
--   **No proporcione un botón aplicar.** La vista previa dinámica hace que la aplicación sea innecesaria.
--   **Restaure los cambios si los usuarios se desplazan** con atrás, cerrar o la barra de direcciones. Para conservar los cambios, los usuarios deben confirmarlos explícitamente.
+-   **Use Guardar cambios y Cancelar para los botones de confirmación.** "Guardar cambios" mantiene la configuración actual, mientras que Cancelar vuelve a la configuración original. "Guardar cambios" se usa en lugar de Aceptar para dejar claro que aún no se han aplicado los cambios en vista previa.
+-   **No proporcione un botón Aplicar.** La versión preliminar en directo hace que Aplicar sea innecesario.
+-   **Restaure los cambios si los usuarios se desplazan** fuera mediante Atrás, Cerrar o la barra de direcciones. Para conservar los cambios, los usuarios deben confirmarlos explícitamente.
 
 **Aplicar botones**
 
--   Asegúrese **de que el botón aplicar significa que se aplican los cambios pendientes (realizados desde que se inició la tarea o se aplicó la última), pero permanecen en la página actual.** Esto permite a los usuarios evaluar los cambios antes de pasar a otras tareas.
--   **Use los botones aplicar solo en las páginas de radios finales.** Los botones aplicar no se deben usar en páginas de radios intermedias para mantener un modelo de confirmación inmediato.
-    -   **Excepción:** Puede usar los botones aplicar en una página central híbrida si el cambio de una configuración requiere [elevación](glossary.md). Para obtener más información, consulte interacción de la [página del concentrador](#hub-pages).
--   **Proporcione un botón Aplicar solo si la página tiene valores de configuración (al menos uno) con efectos que los usuarios pueden evaluar de forma significativa.** Normalmente, se usan botones aplicar cuando la configuración realiza cambios visibles. Los usuarios deben poder aplicar un cambio, evaluar el cambio y realizar cambios adicionales en función de esa evaluación.
--   **Habilite el botón Aplicar solo cuando haya cambios pendientes;** de lo contrario, deshabilítelo.
--   **Asigne "A" como tecla de acceso.**
+-   Asegúrese de que el botón Aplicar significa aplicar los cambios pendientes (realizados desde que se inició la tarea o la última aplicación), pero **permanezca en la página actual.** Esto permite a los usuarios evaluar los cambios antes de pasar a otras tareas.
+-   **Use los botones Aplicar solo en las páginas de radio finales.** Los botones Aplicar no se deben usar en páginas de radio intermedias para mantener un modelo de confirmación inmediata.
+    -   **Excepción:** Puede usar Aplicar botones en una página de centro híbrido si cambiar una configuración requiere [elevación](glossary.md). Para más información, consulte Interacción [de la página central.](#hub-pages)
+-   **Proporcione un botón Aplicar solo si la página tiene una configuración (al menos una) con efectos que los usuarios pueden evaluar de forma significativa.** Normalmente, los botones Aplicar se usan cuando la configuración realiza cambios visibles. Los usuarios deben poder aplicar un cambio, evaluarlo y realizar más cambios en función de esa evaluación.
+-   **Habilite el botón Aplicar solo cuando haya cambios pendientes;** De lo contrario, deshabilite .
+-   **Asigne "A" como clave de acceso.**
 
 ### <a name="control-panel-integration"></a>Integración del panel de control
 
-Para integrar el elemento del panel de control con Windows, puede:
+Para integrar el elemento del panel de control con Windows, puede hacer lo siguiente:
 
--   **Registre el elemento del panel de control (incluido el nombre, la descripción y el icono)** para que Windows sea consciente de ello.
+-   **Registre el elemento del panel de control (incluido su nombre, descripción** e icono) para que Windows lo tenga en cuenta.
 -   Si el elemento del panel de control es de nivel superior (consulte a continuación):
-    -   Asócielo a la página de **categorías** adecuada.
-    -   **Proporcione vínculos de tareas (incluido el nombre, la descripción, las palabras clave y la línea de comandos)** para indicar las tareas principales y permitir que los usuarios naveguen directamente a las tareas.
--   **Proporcione términos de búsqueda** para ayudar a los usuarios a encontrar los vínculos de tareas mediante la característica de búsqueda del panel de control.
+    -   Asócialo a la página **de categoría adecuada.**
+    -   Proporcione vínculos a tareas (incluido su **nombre, descripción, palabras** clave y línea de comandos) para indicar las tareas principales y permitir que los usuarios naveguen directamente a las tareas.
+-   **Proporcione términos de búsqueda** para ayudar a los usuarios a encontrar los vínculos de las tareas mediante Panel de control de búsqueda.
 
-    Tenga en cuenta que solo puede proporcionar esta información para los elementos individuales del panel de control. no puede Agregar o cambiar esta información para los elementos del panel de control existentes que extiende.
+    Tenga en cuenta que solo puede proporcionar esta información para los elementos individuales del panel de control que no puede agregar ni cambiar esta información para los elementos del panel de control existentes que extiende.
 
-**Páginas de categorías**
+**Páginas de categoría**
 
 -   **Agregue el elemento del panel de control a una página de categoría solo si:**
 
-    -   La mayoría de los usuarios la necesitan. Ejemplo: Centro de redes y recursos compartidos
-    -   Se usa muchas veces. Ejemplo: System
+    -   La mayoría de los usuarios lo necesitan. Ejemplo: Centro de redes y recursos compartidos
+    -   Se usa muchas veces. Ejemplo: Sistema
     -   Proporciona una funcionalidad importante que no se expone en ningún otro lugar. Ejemplo: impresoras
 
-    Los elementos del panel de control que cumplen estos criterios se conocen como nivel superior.
+    Los elementos del panel de control que cumplen estos criterios se conocen como de nivel superior.
 
--   **No agregue el elemento del panel de control a una página de categorías si:**
+-   **No agregue el elemento del panel de control a una página de categoría si:**
 
-    -   Rara vez se usa o se usa para la configuración única. Ejemplo: Centro de bienvenida
-    -   Está destinado a usuarios avanzados o profesionales de ti. Ejemplo: administración del color
-    -   No se aplica a la configuración de hardware o software actual. Ejemplo: Windows SideShow (si no se admite en el hardware actual).
+    -   Rara vez se usa o se usa para la configuración de una sola vez. Ejemplo: Centro de bienvenida
+    -   Está dirigido a usuarios avanzados o profesionales de IT. Ejemplo: Administración de colores
+    -   No se aplica a la configuración actual de hardware o software. Ejemplo: Windows SideShow (si no es compatible con el hardware actual).
 
-    Quitar estos elementos del panel de control de las páginas de categorías facilita la búsqueda de los elementos de nivel superior. Dado su uso, estos elementos del panel de control son suficientemente detectables a través de puntos de entrada contextuales o de búsqueda.
+    Quitar estos elementos del panel de control de las páginas de categorías facilita la búsqueda de los elementos de nivel superior. Dado su uso, estos elementos del panel de control son suficientemente reconocibles a través de puntos de entrada contextuales o de búsqueda.
 
--   **Asocie el elemento de nivel superior del panel de control a la categoría en la que los usuarios tienen más probabilidades de buscarlo.** Esta decisión debe basarse en las pruebas de usuario.
--   **Considere la posibilidad de asociar el elemento de nivel superior del panel de control con la segunda categoría más probable.** Debe asociar un elemento del panel de control con dos categorías si es probable que los usuarios busquen sus tareas principales en más de un lugar.
--   **No asocie el elemento del panel de control con más de dos categorías.** El valor de la categorización está desordenado si los elementos del panel de control aparecen en varias categorías.
+-   **Asocie el elemento del panel de control de nivel superior a la categoría en la que es más probable que los usuarios lo busquen.** Esta decisión debe basarse en las pruebas de usuario.
+-   **Considere la posibilidad de asociar también el elemento del panel de control de nivel superior a la segunda categoría más probable.** Debe asociar un elemento del panel de control a dos categorías si es probable que los usuarios busquen sus tareas principales en más de un lugar.
+-   **No asocie el elemento del panel de control a más de dos categorías.** El valor de la categorización se contrae si los elementos del panel de control aparecen en varias categorías.
 
-**Vínculos de tarea**
+**Vínculos de tareas**
 
--   **Asocie el elemento del panel de control con sus tareas principales.** Puede mostrar hasta cinco tareas en una página de categoría, pero las tareas adicionales se usan para la búsqueda en el panel de control. Use la misma frase que para los vínculos de tareas, posiblemente quitando algunas palabras para que los vínculos de tarea sean más concisos.
--   **Prefiere que los vínculos de tarea conducen a lugares diferentes en el elemento del panel de control.** Tener varios vínculos al mismo lugar puede ser confuso.
+-   **Asocie el elemento del panel de control a sus tareas principales.** Puede mostrar hasta cinco tareas en una página Categoría, pero se usan tareas adicionales para la búsqueda en el panel de control. Use la misma expresión que para los vínculos de tarea, posiblemente quitando algunas palabras para que los vínculos de tarea sea más concisa.
+-   **Prefiere que los vínculos de tareas lleve a distintos lugares del elemento del panel de control.** Tener varios vínculos al mismo lugar puede resultar confuso.
 
 **Términos de búsqueda**
 
--   **Registre los términos de búsqueda del elemento del panel de control que los usuarios tienen más probabilidades de usar para describirlos.** Estos términos de búsqueda deben incluir:
+-   **Registre los términos de búsqueda del elemento del panel de control que es más probable que los usuarios usen para describirlo.** Estos términos de búsqueda deben incluir:
 
-    -   Las características o los objetos configurados.
+    -   Características u objetos configurados.
     -   Tareas principales.
 
-    Estos términos de búsqueda deben basarse en las pruebas de usuario.
+    Estos términos de búsqueda deben basarse en pruebas de usuario.
 
 -   **Incluya también sinónimos comunes para estos términos de búsqueda.** Por ejemplo, supervisar y mostrar son sinónimos, por lo que se deben incluir ambas palabras.
--   **Incluir palabras alternativas o saltos de palabra.** Por ejemplo, los usuarios pueden buscar sitio web y sitio Web. Considere la posibilidad de escribir también errores comunes.
--   **Considere los formatos singular y plural.** La característica de búsqueda del panel de control no busca automáticamente ambos formularios; proporcione los formularios para los que es probable que los usuarios busquen.
--   **Usar verbos de presentación en el pasado sencillo.** Si registra Connect como término de búsqueda, la característica de búsqueda no buscará automáticamente las conexiones, la conexión y la conexión.
--   **No se preocupe por las mayúsculas y minúsculas.** La característica de búsqueda no distingue entre mayúsculas y minúsculas.
+-   **Incluya ortografías alternativas o saltos de palabras.** Por ejemplo, los usuarios pueden buscar sitios web y sitios web. Considere también la posibilidad de proporcionar errores ortográficos comunes.
+-   **Considere las formas singulares frente a los nombres plurales.** La característica de búsqueda del panel de control no busca automáticamente ambos formularios; proporcione los formularios para los que es probable que los usuarios busquen.
+-   **Use verbos de tiempo presentes simples.** Si registra la conexión como término de búsqueda, la característica de búsqueda no buscará automáticamente las conexiones, la conexión ni la conexión.
+-   **No se preocupe por las mayúsculas y minúsculas.** La característica de búsqueda no distingue mayúsculas de minúsculas.
 
 ### <a name="standard-users-and-protected-administrators"></a>Usuarios estándar y administradores protegidos
 
-**Muchas opciones requieren privilegios de administrador para cambiar.** Si un proceso requiere privilegios de administrador, Windows Vista y versiones posteriores requieren que [los usuarios estándar](glossary.md) y [los administradores protegidos](glossary.md) eleven sus privilegios explícitamente. Esto ayuda a evitar que se ejecute código malintencionado con privilegios de administrador.
+**Muchas configuraciones requieren privilegios de administrador para cambiar.** Si un proceso requiere privilegios de [](glossary.md) administrador, [](glossary.md) Windows Vista y versiones posteriores requieren que los usuarios estándar y los administradores protegidos eleve sus privilegios explícitamente. Esto ayuda a evitar que el código malintencionado se ejecute con privilegios de administrador.
 
-Para obtener más información y ejemplos, vea [control de cuentas de usuario](winenv-uac.md).
+Para obtener más información y ejemplos, vea [Control de cuentas de usuario](winenv-uac.md).
 
 ### <a name="schemes-and-themes"></a>Esquemas y temas
 
-Un esquema es una colección con nombre de la configuración visual. Un tema es una colección con nombre de valores de configuración en todo el sistema. Entre los ejemplos de esquemas y temas se incluyen las opciones pantalla, Mouse, teléfono y módem, opciones de energía y sonido y audio.
+Un esquema es una colección con nombre de configuración visual. Un tema es una colección con nombre de configuración en todo el sistema. Algunos ejemplos de esquemas y temas son Display, Mouse, Phone and Modem, Opciones de energía opciones de sonido y audio.
 
 -   **Permitir a los usuarios crear esquemas cuando:**
 
     -   **Es probable que los usuarios cambien la configuración.**
-    -   **Lo más probable es que los usuarios cambien la configuración como una colección.**
+    -   **Es más probable que los usuarios cambien la configuración como una colección.**
 
-    Los esquemas son útiles cuando los usuarios se encuentran en un entorno diferente, como una ubicación física diferente (país o región, zona horaria). usar su equipo en una situación diferente (con baterías, acopladas o desacopladas); o usar su equipo para una función diferente (presentaciones, reproducción de vídeo).
+    Los esquemas son útiles cuando los usuarios están en un entorno diferente, como una ubicación física diferente (país o región, zona horaria); usar su equipo en una situación diferente (en baterías, acopladas o desacopladas); o usar su equipo para una función diferente (presentaciones, reproducción de vídeo).
 
--   **Proporcione al menos un esquema predeterminado.** El esquema predeterminado debe ser bien denominado y aplicarse a la mayoría de los usuarios en la mayoría de los casos. Los usuarios no deben tener que crear un esquema propio.
--   **Proporcione una vista previa** u otro mecanismo para que los usuarios puedan ver los valores dentro del esquema.
+-   **Proporcione al menos un esquema predeterminado.** El esquema predeterminado debe tener el nombre y aplicarse a la mayoría de los usuarios en la mayoría de las circunstancias. Los usuarios no deben tener que crear un esquema propio.
+-   **Proporcione una vista previa** u otro mecanismo para que los usuarios puedan ver la configuración dentro del esquema.
 
-    ![captura de pantalla del cuadro de diálogo de personalización ](images/winenv-ctrl-panels-image13.png)
+    ![captura de pantalla del cuadro de diálogo personalización ](images/winenv-ctrl-panels-image13.png)
 
-    En este ejemplo, el elemento del panel de control personalización muestra una vista previa de la configuración de escritorio y apariencia.
+    En este ejemplo, el elemento del panel de control Personalization muestra una vista previa de la configuración de escritorio y apariencia.
 
--   **Proporcione los comandos Guardar como y eliminar.** Un comando rename no es necesario los usuarios pueden cambiar el nombre de los esquemas guardando en el nombre deseado y eliminando el esquema original.
--   Si no se puede aplicar la configuración sin un esquema, **no permita que los usuarios eliminen todos los esquemas.** Los usuarios no deben tener que crear un esquema propio.
--   Si los esquemas no son completamente independientes (por ejemplo, los esquemas de energía dependen del modo de funcionamiento del portátil actual), asegúrese de que **hay una forma sencilla de cambiar la configuración que se aplica a todos los esquemas.** Por ejemplo, con los esquemas de energía, asegúrese de que los usuarios pueden establecer lo que ocurre cuando se cierra la tapa de un equipo portátil en una sola ubicación.
+-   **Proporcione los comandos Guardar como y Eliminar.** Un comando rename no es necesario para que los usuarios puedan cambiar el nombre de los esquemas guardando en el nombre deseado y eliminando el esquema original.
+-   Si la configuración no se puede aplicar sin un esquema, no permita que los usuarios **eliminen todos los esquemas.** Los usuarios no deben tener que crear un esquema propio.
+-   Si los esquemas no son completamente independientes (por ejemplo, los esquemas de energía dependen del modo de funcionamiento actual del equipo portátil), asegúrese de que hay una manera sencilla de cambiar la configuración que se aplica en todos los **esquemas.** Por ejemplo, con esquemas de energía, asegúrese de que los usuarios puedan establecer lo que sucede cuando la tapa de un equipo portátil se cierra en una sola ubicación.
 
 ### <a name="miscellaneous"></a>Varios
 
--   **Use las extensiones del panel de control para las características que reemplazan o extienden la funcionalidad existente de Windows.** Los siguientes elementos del panel de control son extensibles: dispositivos Bluetooth, pantalla, Internet, teclado, Mouse, red, alimentación, sistema, inalámbrico (infrarrojos).
+-   **Use Panel de control para las características que reemplazan o amplían la funcionalidad existente de Windows.** Los siguientes elementos del panel de control son extensibles: Dispositivos Bluetooth, Pantalla, Internet, Teclado, Mouse, Red, Energía, Sistema, Inalámbrico (infiel).
 
 ### <a name="default-values"></a>Valores predeterminados
 
--   **La configuración de un elemento del panel de control debe reflejar el estado actual de la característica.** De lo contrario, podría ser engañoso y, posiblemente, provocar resultados no deseados. Por ejemplo, si la configuración refleja las recomendaciones pero no el estado actual, los usuarios pueden hacer clic en Cancelar en lugar de realizar cambios, pensando que no se necesita ningún cambio.
--   **Elija el más seguro (para evitar la pérdida de datos o el acceso al sistema) y el estado inicial más seguro.** Supongamos que la mayoría de los usuarios no cambiarán la configuración.
--   **Si la seguridad y la seguridad no son factores, elija el estado inicial que sea más probable o práctico.**
+-   **La configuración dentro de un elemento del panel de control debe reflejar el estado actual de la característica.** De lo contrario, sería engañoso y posiblemente provocaría resultados no deseados. Por ejemplo, si la configuración refleja las recomendaciones, pero no el estado actual, los usuarios pueden hacer clic en Cancelar en lugar de realizar cambios, pensando que no se necesitan cambios.
+-   **Elija el estado inicial más seguro (para evitar la pérdida de datos o el acceso al sistema) y el estado inicial más seguro.** Suponga que la mayoría de los usuarios no cambiarán la configuración.
+-   **Si la seguridad y la seguridad no son factores, elija el estado inicial más probable o conveniente.**
 
 ## <a name="text"></a>Texto
 
-### <a name="item-names"></a>Nombres de elementos
+### <a name="item-names"></a>Nombres de elemento
 
--   **Elija un nombre descriptivo que se comunique claramente y describa lo que hace el elemento del panel de control.** La mayoría de los nombres describen la característica o el objeto de Windows que se está configurando y se muestran en la vista clásica de la Página principal del panel de control.
--   **No incluya las palabras "configuración", "opciones", "propiedades" o "configuración" en el nombre.** Esto es implícito y, si se deja desactivado, facilita la exploración de los usuarios.
+-   **Elija un nombre descriptivo que comunique claramente y diferencie lo que hace el elemento del panel de control.** La mayoría de los nombres describen la característica u objeto de Windows que se está configurando y se muestran en la vista clásica de la página principal del panel de control.
+-   **No incluya las palabras "Configuración", "Opciones", "Propiedades" o "Configuración" en el nombre.** Esto está implícito y dejarla desactivada facilita el examen de los usuarios.
 
     **Incorrecto:**
 
@@ -466,13 +466,13 @@ Un esquema es una colección con nombre de la configuración visual. Un tema es 
 
     Módem
 
-    Power
+    Potencia
 
-    Idiomas y formatos regionales
+    Formatos e idiomas regionales
 
-    En los ejemplos correctos, se quitan las palabras innecesarias.
+    En los ejemplos correctos, se quitan palabras innecesarias.
 
--   **Si el elemento del panel de control configura características relacionadas, enumera solo las características necesarias para identificar el elemento y enumera las características que es más probable que se reconozcan o se usen primero.**
+-   **Si el elemento del panel de control configura las características relacionadas, enumére solo las características necesarias para identificar el elemento y enumére las características que más probabilidades de que se reconozcan o se utilicen primero.**
 
     **Incorrecto:**
 
@@ -486,71 +486,68 @@ Un esquema es una colección con nombre de la configuración visual. Un tema es 
 
     Módem
 
-    En los ejemplos correctos, se da énfasis a las características principales del elemento del panel de control.
+    En los ejemplos correctos, se da énfasis a las características del elemento del panel de control principal.
 
--   Usar [mayúsculas y minúsculas de estilo de título](glossary.md).
+-   Use [el uso de mayúsculas de estilo de título.](glossary.md)
 
 ### <a name="page-titles"></a>Títulos de página
 
-**Nota:** Al igual que con todas las ventanas del explorador, los títulos de página del panel de control se muestran en la [barra de direcciones](glossary.md), pero no en la barra de título.
+**Nota:** Al igual que con todas las ventanas del Explorador, los títulos de las páginas del panel de control se muestran en la [barra](glossary.md)de direcciones, pero no en la barra de título.
 
--   **En el caso de las páginas del concentrador, use el nombre del elemento del panel de control.**
--   **En el caso de las páginas radiales, use un resumen conciso del propósito de la página.** Use la instrucción principal de la página si es concisa; de lo contrario, use una resituación concisa de la instrucción principal.
+-   **Para las páginas centrales, use el nombre del elemento del panel de control.**
+-   **Para las páginas de radio, use un resumen conciso del propósito de la página.** Use la instrucción principal de la página si es concisa; de lo contrario, use una nueva declaración concisa de la instrucción principal.
 
-    ![captura de pantalla del cuadro de diálogo Opciones de energía ](images/winenv-ctrl-panels-image6.png)
+    ![captura de pantalla del cuadro de diálogo opciones de energía ](images/winenv-ctrl-panels-image6.png)
 
-    En este ejemplo, se usan las opciones de energía para el título de la página en lugar de la instrucción principal.
+    En este ejemplo, Opciones de energía se usa para el título de la página en lugar de la instrucción principal.
 
--   Usar mayúsculas y minúsculas de estilo de título.
+-   Use el uso de mayúsculas y mayúsculas de estilo de título.
 
-### <a name="task-link-text"></a>Texto de vínculo de tarea
+### <a name="task-link-text"></a>Texto del vínculo de tarea
 
-Las siguientes directrices se aplican a los vínculos a las páginas de tareas, como los vínculos de tarea de la página de categorías y los vínculos.
+Las siguientes directrices se aplican a los vínculos a páginas de tareas, como vínculos a tareas de página categoría y Vea también vínculos.
 
--   **Elija nombres de tarea concisos que se comunican claramente y diferencian la tarea.** Los usuarios no deben tener que averiguar qué significa realmente la tarea o cómo se diferencia de otras tareas.
+-   **Elija nombres de tarea concisos que comuniquen y diferencien claramente la tarea.** Los usuarios no deben tener que averiguar qué significa realmente la tarea ni cómo difiere de otras tareas.
 
     **Incorrecto:**
 
-    Ajustar la configuración de pantalla
+    Ajuste de la configuración de pantalla
 
     **Correcto:**
 
     Resolución de pantalla
 
-    En el ejemplo correcto, el texto transmite más precisión.
+    En el ejemplo correcto, la redacción transmite más precisión.
 
--   **Conserve el idioma similar entre los vínculos de tareas y las páginas a las que apuntan.** Los usuarios no deben sorprender por la página que se muestra en un vínculo.
--   **En el caso de las páginas de tareas, diseñe la instrucción principal, los botones de confirmación y los vínculos de tareas como un conjunto de texto relacionado.**
-
-    **Ejemplos:**
-
+-   **Conserve un lenguaje similar entre los vínculos de tareas y las páginas a las que apuntan.** Los usuarios no deben desapreorse de la página que se muestra mediante un vínculo.
+-   **Para las páginas de tareas, diseñe la instrucción principal, los botones de confirmación y los vínculos de tarea como un conjunto de texto relacionado.**
     
 
-    |                              |                                                       |
+    | Ejemplo                             |    Instrucción                                                   |
     |------------------------------|-------------------------------------------------------|
     | Vínculo de tarea:<br/>        | Conexión a una red inalámbrica<br/>              |
-    | Instrucción principal:<br/> | Elegir una red a la que conectarse<br/>             |
-    | Botón confirmar:<br/>    | Conectar<br/>                                    |
-    | Vínculo de tarea:<br/>        | Configurar controles parentales<br/>                   |
-    | Instrucción principal:<br/> | Elegir un usuario y configurar el control parental<br/> |
-    | Botón confirmar:<br/>    | Aplicar control parental<br/>                     |
-    | Vínculo de tarea:<br/>        | Resolver los conflictos de sincronización<br/>                |
+    | Instrucción principal:<br/> | Elección de una red a la que conectarse<br/>             |
+    | Botón Confirmar:<br/>    | Conectar<br/>                                    |
+    | Vínculo de tarea:<br/>        | Configuración de controles parentales<br/>                   |
+    | Instrucción principal:<br/> | Elección de un usuario y configuración de controles parentales<br/> |
+    | Botón Confirmar:<br/>    | Aplicación del control parental<br/>                     |
+    | Vínculo de tarea:<br/>        | Resolución de conflictos de sincronización<br/>                |
     | Instrucción principal:<br/> | ¿Cómo desea resolver este conflicto?<br/>  |
-    | Botón confirmar:<br/>    | Resolver<br/>                                    |
+    | Botón Confirmar:<br/>    | Resolver<br/>                                    |
 
     
 
      
 
-    En estos ejemplos se muestra la relación entre el texto del vínculo de la tarea, la instrucción principal y el texto del botón confirmar.
+    En estos ejemplos se muestra la relación del texto del vínculo de tarea, la instrucción principal y el texto del botón de confirmación.
 
--   Aunque las tareas suelen empezar con verbos, **considere la posibilidad de omitir el verbo en las páginas de categorías si es un verbo genérico relacionado con la configuración que no ayuda a comunicar la tarea.**
+-   Aunque las tareas suelen comenzar con verbos, considere la posibilidad de omitir el verbo en las páginas categoría si es un verbo genérico relacionado con la configuración que no **ayuda a comunicar la tarea.**
 
     **Verbos específicos y útiles:**
 
     Sumar
 
-    de Azure Functions
+    Comprobar
 
     Conectar
 
@@ -564,9 +561,9 @@ Las siguientes directrices se aplican a los vínculos a las páginas de tareas, 
 
     Instalar
 
-    Remove
+    Quitar
 
-    Configurar
+    Configuración
 
     Start
 
@@ -574,11 +571,11 @@ Las siguientes directrices se aplican a los vínculos a las páginas de tareas, 
 
     Solución de problemas
 
-    **Verbos genéricos no Ayudales:**
+    **Verbos genéricos y poco útiles:**
 
     Ajustar
 
-    Cambio
+    Change
 
     Elegir
 
@@ -586,7 +583,7 @@ Las siguientes directrices se aplican a los vínculos a las páginas de tareas, 
 
     Editar
 
-    Administrar
+    Administración
 
     Abrir
 
@@ -600,23 +597,23 @@ Las siguientes directrices se aplican a los vínculos a las páginas de tareas, 
 
     Ver
 
--   **Si la tarea configura varias características relacionadas, enumere solo las características representativas del conjunto.** Omitir los detalles que se pueden deducir fácilmente.
+-   **Si la tarea configura varias características relacionadas, enumera solo las características que son representativas del conjunto.** Omita los detalles que se pueden inferir fácilmente.
 
     **Incorrecto:**
 
-    Icono de volumen, silenciar, volumen de altavoz
+    Volumen del altavoz, exclusión mutua, icono de volumen
 
     Altavoces, micrófonos, MIDI y esquemas de sonido
 
     **Correcto:**
 
-    Volumen de altavoz
+    Volumen del altavoz
 
     Altavoces y micrófonos
 
     En los ejemplos correctos, solo se proporcionan las características representativas en el vínculo de tarea.
 
--   **Solo se deben formular las tareas en términos de tecnología si los usuarios de destino lo harían también.**
+-   **Debe incluir tareas en términos de tecnología solo si los usuarios de destino también lo harían.**
 
     **Incorrecto:**
 
@@ -634,27 +631,27 @@ Las siguientes directrices se aplican a los vínculos a las páginas de tareas, 
 
     Mouse
 
-    Los ejemplos correctos son términos basados en tecnología que es probable que utilicen los usuarios, mientras que los ejemplos incorrectos no lo son.
+    Los ejemplos correctos son términos basados en tecnología que es probable que usen los usuarios de destino, mientras que los ejemplos incorrectos no lo son.
 
--   Use sustantivos plural solo si el sistema puede admitir más de uno.
--   Usar [mayúsculas y minúsculas en el estilo de oraciones](glossary.md).
+-   Use nombres plurales solo si el sistema puede admitir más de uno.
+-   Use [mayúsculas y mayúsculas de estilo oración.](glossary.md)
 -   No uses puntuación final.
 
 ### <a name="main-instructions"></a>Instrucciones principales
 
--   **En la página del concentrador, use la instrucción principal para explicar el objetivo del usuario con el elemento del panel de control.** La instrucción principal debe ayudar a los usuarios a determinar si han seleccionado el elemento derecho del panel de control. Tenga en cuenta que es posible que los usuarios hayan seleccionado el elemento del panel de control por error y que busquen valores que formen parte de otro elemento del panel de control.
+-   **En la página central, use la instrucción principal para explicar el objetivo del usuario con el elemento del panel de control.** La instrucción principal debe ayudar a los usuarios a determinar si han seleccionado el elemento del panel de control correcto. Tenga en cuenta que es posible que los usuarios hubieran seleccionado el elemento del panel de control por error y que realmente buscan configuraciones que forme parte de otro elemento del panel de control.
 
     **Ejemplos:**
 
-    Mantenga su equipo seguro y actualizado
+    Mantener el equipo seguro y actualizado
 
-    Optimizar el equipo para que sea más fácil de ver, oír y controlar
+    Optimice el equipo para que sea más fácil ver, escuchar y controlar
 
--   **En el caso de las páginas radiales, use la instrucción principal para explicar qué hacer en la página.** La instrucción debe ser una instrucción específica, una dirección imperativa o una pregunta. Las buenas instrucciones comunican el objetivo del usuario con la página en lugar de centrarse exclusivamente en la mecánica de la manipulación.
+-   **En el caso de las páginas de radio, use la instrucción principal para explicar qué hacer en la página.** La instrucción debe ser una instrucción específica, una dirección imperativa o una pregunta. Las instrucciones correctas comunican el objetivo del usuario con la página en lugar de centrarse exclusivamente en la mecánica de su manipulación.
 
     **Incorrecto:**
 
-    Seleccionar una tarea de notificación
+    Selección de una tarea de notificación
 
     **Correcto:**
 
@@ -663,71 +660,71 @@ Las siguientes directrices se aplican a los vínculos a las páginas de tareas, 
     La versión correcta comunica mejor el objetivo logrado por la página.
 
 -   **Use verbos específicos siempre que sea posible.** Los verbos específicos son más significativos para los usuarios que los genéricos.
--   Usar [mayúsculas y minúsculas en el estilo de oraciones](glossary.md).
--   **No incluya los períodos finales si la instrucción es una instrucción.** Si la instrucción es una pregunta, incluya un signo de interrogación final.
+-   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   **No incluya períodos finales si la instrucción es una instrucción .** Si la instrucción es una pregunta, incluya un signo de interrogación final.
 
 ### <a name="supplemental-instructions"></a>Instrucciones complementarias
 
--   **En la página del concentrador, use la instrucción complementaria opcional para explicar mejor el propósito del elemento del panel de control.**
--   **En el caso de las páginas radiales, use la instrucción complementaria opcional para presentar información adicional útil para entender o usar la página.** Puede proporcionar información más detallada y definir la terminología.
--   Use frases completas y uso [de mayúsculas del estilo de oraciones](glossary.md).
+-   **Para la página central, use la instrucción complementaria opcional para explicar aún más el propósito del elemento del panel de control.**
+-   **Para las páginas de radio, use la instrucción complementaria opcional para presentar información adicional útil para comprender o usar la página.** Puede proporcionar información más detallada y definir terminología.
+-   Use oraciones completas y [mayúsculas de estilo oración.](glossary.md)
 
 ### <a name="page-text"></a>Texto de la página
 
--   **No represente la instrucción principal en el área de contenido.**
--   **Use la palabra "página" para hacer referencia a la propia página.**
--   **Use la segunda persona (usted, su) para indicar a los usuarios qué hacer** en la instrucción principal y en el área de contenido. A menudo, la segunda persona está implícita.
+-   **No vuelva a establecer la instrucción principal en el área de contenido.**
+-   **Use la palabra "page" para hacer referencia a la propia página.**
+-   **Use la segunda persona (usted, su) para** decir a los usuarios qué hacer en el área principal de instrucción y contenido. A menudo, la segunda persona está implícita.
 
     **Ejemplo**:
 
     Elija las imágenes que desea imprimir.
 
--   **Use la primera persona (I, me, My) para permitir que los usuarios indiquen al elemento del panel de control qué hacer** en el área de contenido que responda a la instrucción principal.
+-   **Use la primera persona (I, me, my)** para permitir que los usuarios digan al elemento del panel de control qué hacer en el área de contenido que responde a la instrucción principal.
 
     **Ejemplo**:
 
-    Imprimir las fotos en la cámara.
+    Imprima las fotos en mi cámara.
 
-### <a name="task-links"></a>Vínculos de tarea
+### <a name="task-links"></a>Vínculos de tareas
 
--   **Elija texto de vínculo conciso que se comunique claramente y diferencie lo que hace el vínculo de tarea.** Debe ser autoexplicativo y corresponder a la instrucción principal. Los usuarios no deben tener que averiguar qué significa realmente el vínculo o cómo se diferencia de otros vínculos.
--   **Inicie siempre los vínculos de tarea con un verbo.**
--   Usar [mayúsculas y minúsculas en el estilo de oraciones](glossary.md).
+-   **Elija texto de vínculo conciso que comunique y diferencie claramente lo que hace el vínculo de tarea.** Debe ser autoexplicativo y corresponder a la instrucción principal. Los usuarios no deben tener que averiguar qué significa realmente el vínculo ni cómo difiere de otros vínculos.
+-   **Inicie siempre vínculos de tarea con un verbo.**
+-   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
 -   No uses puntuación final.
--   **Si el vínculo de tarea requiere una explicación más detallada, proporcione la explicación en un control de texto independiente** mediante frases completas y puntuación final. Sin embargo, agregue estas explicaciones solo cuando sea necesario no agregue explicaciones a todos los vínculos de tarea porque otro vínculo de tarea necesita uno.
+-   **Si el vínculo de tarea requiere una explicación adicional, proporcione** la explicación en un control de texto independiente mediante oraciones completas y signos de puntuación finales. Sin embargo, agregue estas explicaciones solo cuando sea necesario, no agregue explicaciones a todos los vínculos de tarea porque otro vínculo de tarea necesita uno.
 
-Para obtener más información y ejemplos, vea [vínculos](ctrl-command-links.md).
+Para obtener más información y ejemplos, vea [Vínculos](ctrl-command-links.md).
 
 ### <a name="commit-buttons"></a>Botones de confirmación
 
--   **Use etiquetas de botón de confirmación específicas que tengan sentido por sí mismas y que coincidan con la instrucción principal.** Lo ideal es que los usuarios no tengan que leer nada más para entender la etiqueta. Es mucho más probable que los usuarios lean etiquetas de botón de comando que el texto estático.
--   **Iniciar siempre etiquetas de botón de confirmación con un verbo.**
--   **No utilice Close, Done o Finish.** Estas etiquetas de botón son más adecuadas para otros tipos de ventanas.
--   Usar [mayúsculas y minúsculas en el estilo de oraciones](glossary.md).
+-   **Use etiquetas de botón de confirmación específicas que tienen sentido por sí solas y coinciden con la instrucción principal.** Lo ideal es que los usuarios no tengan que leer nada más para comprender la etiqueta. Es mucho más probable que los usuarios lean las etiquetas de los botones de comando que el texto estático.
+-   **Inicie siempre las etiquetas de botón de confirmación con un verbo.**
+-   **No use Close, Done ni Finish.** Estas etiquetas de botón son más adecuadas para otros tipos de ventanas.
+-   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
 -   No uses puntuación final.
--   Asigne una [clave de acceso](glossary.md)única.
-    -   **Excepción:** No asigne teclas de acceso para cancelar botones, porque ESC es su clave de acceso. Esto hace que las demás claves de acceso sean más fáciles de asignar.
+-   Asigne una clave [de acceso única.](glossary.md)
+    -   **Excepción:** No asigne claves de acceso a los botones Cancelar, ya que Esc es su clave de acceso. Esto facilita la asignación de las demás claves de acceso.
 
 ## <a name="documentation"></a>Documentación
 
-Al hacer referencia a la Página principal del panel de control o a las páginas de categorías:
+Al hacer referencia a la página principal del panel de control o a las páginas de categoría:
 
--   En la documentación del usuario, consulte panel de control, uso de mayúsculas y minúsculas del estilo de título y omisión de un artículo definitivo anterior.
+-   En la documentación del usuario, consulte Panel de control, usando mayúsculas de estilo de título y omitiendo un artículo definido anterior.
 
     **Ejemplo**:
 
-    En el panel de control, Abra **Security Center**.
+    En Panel de control, abra **Security Center**.
 
--   En programación y otra documentación técnica, consulte la Página principal del panel de control y la página de categorías del panel de control sin mayúsculas en ninguna de las palabras. Un artículo definitivo anterior es opcional.
+-   En programación y otra documentación técnica, consulte la página principal del panel de control y la página de categoría del panel de control, sin usar ninguna de las palabras en mayúsculas. Un artículo definido anterior es opcional.
 
 Para los elementos del panel de control:
 
--   Al hacer referencia a un elemento individual del panel de control, use " \[ nombre \] del elemento del panel de control en el panel de control" o, por lo general, "elemento del panel de control" en la documentación del usuario. No use el applet, el programa o el panel de control para hacer referencia a elementos individuales del panel de control.
--   Al hacer referencia a la página del concentrador de un elemento del panel de control, use la \[ Página de nombre de elemento del panel de control principal \] .
--   Siempre que sea posible, formatee el nombre del panel de control usando texto en negrita. De lo contrario, ponga el nombre entre comillas solo si es necesario para evitar confusiones.
+-   Al hacer referencia a un elemento individual del panel de control, use "nombre de elemento del panel de control en Panel de control" o, por \[ lo general, "Panel de control elemento" en la documentación \] del usuario. No use applet, programa ni panel de control para hacer referencia a elementos individuales del panel de control.
+-   Al hacer referencia a la página central de un elemento del panel de control, use "página de nombre de elemento \[ del panel de control \] principal".
+-   Cuando sea posible, formatee el nombre del panel de control con texto en negrita. De lo contrario, coloque el nombre entre comillas solo si es necesario para evitar confusiones.
 
 Ejemplos:
 
--   En el panel de control, Abra **controles parentales**.
--   Vuelva a la Página principal de **controles parentales** .
+-   En Panel de control, abra **Controles parentales**.
+-   Vuelva a la página **principal Controles parentales.**
 

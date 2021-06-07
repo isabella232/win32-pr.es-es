@@ -4,12 +4,12 @@ ms.assetid: 70f90c34-5f9b-4be5-85b9-6d2ccf9dde8c
 title: Elemento TitleInfo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a416ef07adea33a11b0df6aacd21183f47b89e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ae170700e8a82e145767336a2943d45bedec9eb
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361471"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432217"
 ---
 # <a name="titleinfo-element"></a>Elemento TitleInfo
 
@@ -39,10 +39,10 @@ Ninguno.
 
 
 
-|              |                                                                 |
+|   Elemento    | Value                                                           |
 |--------------|-----------------------------------------------------------------|
 | Tipo de elemento | [**TitleInfoType**](titleinfotype-complex-type.md) complexType |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink                      |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink                      |
 | Nombre del esquema  | Lector de diario                                                  |
 
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento SizeDefinition
-description: Representa una plantilla de diseño personalizado de controles de la cinta de opciones.
+description: Representa una plantilla de diseño personalizada de controles de cinta de opciones.
 ms.assetid: f90bb469-aee2-4bba-9efe-142a39a8c1ae
 keywords:
-- SizeDefinition cinta de opciones de Windows
+- Cinta de opciones de Windows del elemento SizeDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7bfab87f01700f8f4d36f76cbcbfe3696acfbec2
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: cc68ac032459bed77d402ebd860886398748c874
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "105704891"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444806"
 ---
 # <a name="sizedefinition-element"></a>Elemento SizeDefinition
 
-Representa una plantilla de diseño personalizado de controles de la cinta de opciones.
+Representa una plantilla de diseño personalizada de controles de cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -48,17 +48,17 @@ Representa una plantilla de diseño personalizado de controles de la cinta de op
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Nombre</strong><br/></td>
-<td>XS: positiveInteger o XS: String o XS: token<br/></td>
+<td>xs:positiveInteger o xs:string o xs:token<br/></td>
 <td>Sí<br/></td>
-<td>Cuando <a href="windowsribbon-element-ribbon-sizedefinitions.md"><strong>Ribbon. SizeDefinitions</strong></a> es el elemento primario; de lo contrario, es opcional.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String o XS: token)<br/> </dt> <dd> Una cadena o un valor entero entre 2 y 59999, inclusive, o 0X2 y 0xea5f en formato hexadecimal, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<td>Cuando <a href="windowsribbon-element-ribbon-sizedefinitions.md"><strong>Ribbon.SizeDefinitions</strong></a> es el elemento primario; de lo contrario, es opcional.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string o xs:token)<br/> </dt> <dd> Una cadena o un valor entero entre 2 y 59999, ambos incluidos, o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -71,8 +71,8 @@ Representa una plantilla de diseño personalizado de controles de la cinta de op
 
 | Elemento                                                                             | Descripción                                     |
 |-------------------------------------------------------------------------------------|-------------------------------------------------|
-| [**ControlNameMap**](windowsribbon-element-controlnamemap.md)<br/>           | Puede aparecer como máximo una vez<br/> <br/>   |
-| [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**ControlNameMap**](windowsribbon-element-controlnamemap.md)<br/>           | Puede producirse como máximo una vez<br/> <br/>   |
+| [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -83,21 +83,21 @@ Representa una plantilla de diseño personalizado de controles de la cinta de op
 | Elemento                                                                                   |
 |-------------------------------------------------------------------------------------------|
 | [**Group (Grupo)**](windowsribbon-element-group.md)<br/>                                   |
-| [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/> |
+| [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede aparecer como máximo una vez para cada elemento de [**Grupo**](windowsribbon-element-group.md) .
+Puede producirse como máximo una vez para cada [**elemento Group.**](windowsribbon-element-group.md)
 
-Puede producirse una o varias veces para cada elemento [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md) .
+Puede producirse una o varias veces para cada [**elemento Ribbon.SizeDefinitions.**](windowsribbon-element-ribbon-sizedefinitions.md)
 
-Las plantillas predefinidas de [diseño](windowsribbon-templates.md) del marco de cinta se especifican con el atributo *SizeDefinition* del elemento de [**Grupo**](windowsribbon-element-group.md) .
+Las plantillas de diseño del marco de [la](windowsribbon-templates.md) cinta predefinidas se especifican con el *atributo SizeDefinition* del [**elemento Group.**](windowsribbon-element-group.md)
 
-Si no se declara un elemento [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) correspondiente para cada elemento [**Group**](windowsribbon-element-group.md) de un elemento [**Tab**](windowsribbon-element-tab.md) , se producirá un error de validación.
+Si no se [**declara un elemento ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) correspondiente para cada elemento [**Group**](windowsribbon-element-group.md) de un elemento [**Tab,**](windowsribbon-element-tab.md) se producirá un error de validación.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -194,19 +194,16 @@ En el ejemplo de código siguiente se muestra una plantilla personalizada básic
 ## <a name="element-information"></a>Información de elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+- **Sistema mínimo admitido:** Windows 7 
+- **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

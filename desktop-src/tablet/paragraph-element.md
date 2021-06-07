@@ -1,7 +1,7 @@
 ---
 description: Contiene un párrafo.
 ms.assetid: 60322907-3902-49a9-91a9-e00b0a714c00
-title: Elemento Paragraph (Windows.ui.xaml.documents. h)
+title: Elemento Paragraph (Windows.ui.xaml.documents.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.documents.h
-ms.openlocfilehash: bfe3752541bb54571e9802f557e83dcc7632f845
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f246294c80814ec809c0a1ca035fcb4741c30c5
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660157"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432237"
 ---
 # <a name="paragraph-element"></a>Elemento Paragraph
 
@@ -34,7 +34,7 @@ Contiene un párrafo.
 
 [**Contenido**](content-element--journal-reader.md)
 
-[**Groupnode BizTalk**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -46,14 +46,14 @@ Contiene un párrafo.
 
 
 
-| Atributo       | Tipo                      | Obligatorio | Descripción                                                                             | Valores posibles           |
+| Atributo       | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
 |-----------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**        | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto situado más a la izquierda del cuadro de límite del elemento. | Cualquier número entero.              |
-| **Top** (Principales)         | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
-| **Width**       | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
-| **Height**      | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
-| **BlockNumber** | **xs:nonNegativeInteger** | Obligatorio | Número de bloque.                                                                           | Cualquier entero no negativo. |
-| **LineNumber**  | **xs:nonNegativeInteger** | Obligatorio | Línea en la que comienza el párrafo.                                                 | Cualquier entero no negativo. |
+| **Left**        | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Top** (Principales)         | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
+| **Width**       | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
+| **Height**      | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
+| **BlockNumber** | **xs:nonNegativeInteger** | Requerido | Número de bloque.                                                                           | Cualquier entero no negativo. |
+| **LineNumber**  | **xs:nonNegativeInteger** | Requerido | Línea en la que comienza el párrafo.                                                 | Cualquier entero no negativo. |
 
 
 
@@ -63,10 +63,10 @@ Contiene un párrafo.
 
 
 
-|              |                                                                 |
+|  Elemento     | Value                                                     |
 |--------------|-----------------------------------------------------------------|
 | Tipo de elemento | [**ParagraphType**](paragraphtype-complex-type.md) complexType |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink                      |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink                      |
 | Nombre del esquema  | Lector de diario                                                  |
 
 
@@ -79,7 +79,7 @@ Contiene un párrafo.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Windows.ui.xaml.documents. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Windows.ui.xaml.documents.h</dt> </dl> |
 
 
 

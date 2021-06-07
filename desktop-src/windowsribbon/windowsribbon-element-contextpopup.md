@@ -1,9 +1,9 @@
 ---
 title: Elemento ContextPopup
-description: Representa el control emergente de contexto en la vista ContextPopup.
+description: Representa el control Context Popup en la vista ContextPopup.
 ms.assetid: b955be16-803e-47b5-a72d-f993180fbf14
 keywords:
-- ContextPopup cinta de opciones de Windows
+- Elemento ContextPopup de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4feb7c4fbd2ca538fe4d0c2b2584163ee8c9fcea
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f779b0196d14fb42246c2a10d476352d835b6cf8
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076794"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443475"
 ---
 # <a name="contextpopup-element"></a>Elemento ContextPopup
 
-Representa el control [emergente de contexto](windowsribbon-controls-contextpopup.md) en la vista ContextPopup.
+Representa el [control Context Popup](windowsribbon-controls-contextpopup.md) en la vista ContextPopup.
 
 ## <a name="usage"></a>Uso
 
@@ -42,9 +42,9 @@ No hay atributos.
 
 | Elemento                                                                                         | Descripción                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**ContextPopup.ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md)<br/>   | Puede aparecer como máximo una vez<br/> <br/> |
-| [**ContextPopup.ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
-| [**ContextPopup.MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**ContextPopup.ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md)<br/>   | Puede producirse como máximo una vez<br/> <br/> |
+| [**ContextPopup.ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
+| [**ContextPopup.MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -54,19 +54,19 @@ No hay atributos.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Application. views**](windowsribbon-element-application-views.md)<br/> |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**aplicación. views**](windowsribbon-element-application-views.md).
+Puede producirse como máximo una vez para [**cada Application.Views**](windowsribbon-element-application-views.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista **ContextPopup** .
+En el ejemplo siguiente se muestra el marcado básico para una **vista ContextPopup.**
 
 
 ```XML
@@ -155,20 +155,16 @@ En el ejemplo siguiente se muestra el marcado básico de una vista **ContextPopu
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

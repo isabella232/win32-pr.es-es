@@ -3,7 +3,7 @@ title: Elemento ContextMenu
 description: Representa un control de menú contextual.
 ms.assetid: 08cc0514-0795-4e6b-b80c-33d920783032
 keywords:
-- Barra de herramientas de Windows de elemento ContextMenu
+- Elemento ContextMenu de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c824e87c063fb863e79f10cb9755b74df36023f7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 916a031ed642a76fb22ecc58dbbe1ce29cbcd105
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103783916"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443476"
 ---
 # <a name="contextmenu-element"></a>Elemento ContextMenu
 
@@ -37,9 +37,9 @@ Representa un control de menú contextual.
 
 
 
-| Atributo           | Tipo                 | Obligatorio       | Descripción                                                                                                                                                                                                                |
+| Atributo           | Tipo                 | Requerido       | Descripción                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl> |
+| **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Representa un control de menú contextual.
 
 | Elemento                                                         | Descripción                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -63,22 +63,22 @@ Representa un control de menú contextual.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**ContextPopup. ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md).
+Puede producirse una o varias veces para [**cada ContextPopup.ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md).
 
 > [!IMPORTANT]
-> Un control **ContextMenu** no puede hospedar controles de [cuadro combinado](windowsribbon-controls-combobox.md) o [control de número](windowsribbon-controls-spinner.md) .
+> ContextMenu **no** puede hospedar [controles Combo Box](windowsribbon-controls-combobox.md) o [Spinner.](windowsribbon-controls-spinner.md)
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para una [**vista ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-En esta sección de código se muestra un conjunto de declaraciones de control **ContextMenu** .
+En esta sección de código se muestra un conjunto de declaraciones de control **ContextMenu.**
 
 
 ```XML
@@ -167,20 +167,16 @@ En esta sección de código se muestra un conjunto de declaraciones de control *
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

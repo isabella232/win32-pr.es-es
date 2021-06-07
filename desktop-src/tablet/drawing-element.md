@@ -1,19 +1,19 @@
 ---
-description: Contiene contenido que ha sido clasificado por el analizador o por el usuario como un dibujo.
+description: Contiene contenido clasificado por el analizador o el usuario como un dibujo.
 ms.assetid: 566542f3-b824-442d-9d8b-0064ebcf9b68
-title: Elemento de dibujo
+title: Elemento Drawing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe516a4ba33e6e597b17ce8365d792f19468c3b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d87c0a3d8879fb5f3146c46c9c88d83a6e658d8
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697858"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432517"
 ---
-# <a name="drawing-element"></a>Elemento de dibujo
+# <a name="drawing-element"></a>Elemento Drawing
 
-Contiene contenido que ha sido clasificado por el analizador o por el usuario como un dibujo.
+Contiene contenido clasificado por el analizador o el usuario como un dibujo.
 
 ## <a name="definition"></a>Definición
 
@@ -25,7 +25,7 @@ Contiene contenido que ha sido clasificado por el analizador o por el usuario co
 
 [**Contenido**](content-element--journal-reader.md)
 
-[**Groupnode BizTalk**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -41,12 +41,12 @@ Contiene contenido que ha sido clasificado por el analizador o por el usuario co
 
 
 
-| Atributo  | Tipo                      | Obligatorio | Descripción                                                                             | Valores posibles           |
+| Atributo  | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto situado más a la izquierda del cuadro de límite del elemento. | Cualquier número entero.              |
-| **Top** (Principales)    | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
-| **Width**  | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
-| **Height** | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
+| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
+| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite para el elemento.                                          | Cualquier entero no negativo. |
+| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
 
 
 
@@ -56,10 +56,10 @@ Contiene contenido que ha sido clasificado por el analizador o por el usuario co
 
 
 
-|              |                                                             |
+|  Elemento     | Value                                                     |
 |--------------|-------------------------------------------------------------|
 | Tipo de elemento | [**DrawingType**](drawingtype-complex-type.md) complexType |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink                  |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink                  |
 | Nombre del esquema  | Lector de diario                                              |
 
 

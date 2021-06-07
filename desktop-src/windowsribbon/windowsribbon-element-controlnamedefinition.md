@@ -3,7 +3,7 @@ title: Elemento ControlNameDefinition
 description: Representa un nombre de un control en una plantilla de diseño SizeDefinition personalizada.
 ms.assetid: 94b724bd-a4e3-40e0-9cf0-3cc6a71100d2
 keywords:
-- ControlNameDefinition cinta de opciones de Windows
+- ControlNameDefinition, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14ec269ce51b0074b9a03f78aea218b482955d1b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6b2dc1db251d4d657c3793d2a66a9add1d324c37
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358148"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443446"
 ---
 # <a name="controlnamedefinition-element"></a>Elemento ControlNameDefinition
 
-Representa un nombre de un control en una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada.
+Representa un nombre de un control en una plantilla [**de diseño SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada.
 
 ## <a name="usage"></a>Uso
 
@@ -37,9 +37,9 @@ Representa un nombre de un control en una plantilla de diseño [**SizeDefinition
 
 
 
-| Atributo           | Tipo                                       | Obligatorio      | Descripción                                                                                                                                                                                                                                                                                                                                                                           |
+| Atributo           | Tipo                                       | Requerido      | Descripción                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------|--------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nombre**<br/> | XS: positiveInteger o XS: String<br/> | No<br/> | <dt> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl> |
+| **Nombre**<br/> | xs:positiveInteger o xs:string<br/> | No<br/> | <dt> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl> |
 
 
 
@@ -63,15 +63,15 @@ Representa un nombre de un control en una plantilla de diseño [**SizeDefinition
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada elemento [**ControlNameMap**](windowsribbon-element-controlnamemap.md) .
+Puede producirse una o varias veces para cada [**elemento ControlNameMap.**](windowsribbon-element-controlnamemap.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado básico de una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con cuatro elementos **ControlNameDefinition** .
+En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con cuatro **elementos ControlNameDefinition.**
 
 
 ```XML
@@ -163,20 +163,16 @@ En el ejemplo de código siguiente se muestra el marcado básico de una plantill
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

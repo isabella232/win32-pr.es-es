@@ -3,7 +3,7 @@ title: Elemento VerticalMenuLayout
 description: Representa un diseño vertical para los elementos de una galería.
 ms.assetid: 4124c639-c078-4eb0-9d36-37d1ffcebac0
 keywords:
-- VerticalMenuLayout cinta de opciones de Windows
+- VerticalMenuLayout, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7fb848edcc8ab5ddff1405f35d5abd414ae40d15
-ms.sourcegitcommit: 2387bc0339a1764564c1509e72ed5f2e8ae60b36
+ms.openlocfilehash: 5e6f3e4a691c9691b9bc6c8c6d760bb10635d8d8
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "103789406"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444056"
 ---
 # <a name="verticalmenulayout-element"></a>Elemento VerticalMenuLayout
 
@@ -48,31 +48,31 @@ Representa un diseño vertical para los elementos de una galería.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Agarrador</strong><br/></td>
+<td><strong>Pinza</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Un controlador de cambio de tamaño adjunto al menú desplegable de la galería. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restringido a uno de los siguientes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Ninguna<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Vertical<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
+<td>Un identificador de tamaño asociado a la lista desplegable de la galería. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restringido a uno de los siguientes valores:<br/> <br/>
+<dt><span></span><span></span><strong></strong> (Ninguno)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Vertical)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsMultipleHighlightingEnabled</strong><br/></td>
 <td>xs:boolean<br/></td>
 <td>No<br/></td>
-<td><strong>Windows 8 y versiones más recientes</strong><br/> Resalta todos los elementos de la lista hasta el elemento mouseover actual (en lugar del elemento mouseover, y lo incluye). Se suele usar para varias funciones de <strong>Deshacer</strong> y <strong>rehacer</strong> .<br/> <br/>
-<dt><span></span><span></span><strong></strong> reales<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> es<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
+<td><strong>Windows 8 y versiones más recientes</strong><br/> Resalta todos los elementos de la lista hasta el elemento actual del mouseover (en lugar de solo el elemento de mouseover). Normalmente se usa para varias <strong>funcionalidades deshacer</strong> <strong>y rehacer.</strong><br/> <br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Filas</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Especifica el número de filas de elementos que se van a ver sin desplazamiento. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: integer)<br/> </dt> <dd> Cualquier entero positivo o negativo. <br/> El valor predeterminado es <strong>-1</strong> , que especifica que se muestren tantas filas de elementos como sea posible.<br/> </dd> </dl></td>
+<td>Especifica el número de filas de elementos que se verán sin desplazarse. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> Cualquier entero positivo o negativo. <br/> El valor predeterminado <strong>es -1,</strong> que especifica que se muestren tantas filas de elementos como sea posible.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -95,17 +95,17 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-El elemento **VerticalMenuLayout** o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md) debe aparecer una vez por cada elemento [**DropDownGallery. MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery. MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery. MenuLayout**](windowsribbon-element-splitbuttongallery-menulayout.md) .
+El **elemento VerticalMenuLayout** o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md) deben producirse una vez para cada [**elemento DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de un elemento **VerticalMenuLayout** .
+En el ejemplo siguiente se muestra el marcado básico para un **elemento VerticalMenuLayout.**
 
-En esta sección de código se muestran las declaraciones de control de [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) .
+En esta sección de código se muestran las declaraciones de control [**InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 
 ```XML
@@ -139,11 +139,8 @@ En esta sección de código se muestran las declaraciones de control de [**InRib
 ## <a name="element-information"></a>Información de elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
+- **Sistema mínimo admitido:** Windows 7 
+- **Puede estar vacío:** Sí
 
 
 

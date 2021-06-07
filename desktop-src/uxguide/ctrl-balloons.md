@@ -4,67 +4,67 @@ description: Un globo es una pequeña ventana emergente que informa a los usuari
 ms.assetid: 67092831-e573-4ad6-b1fc-baa1836031cb
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 348167594db2f7895e185d8d7761832ec5c0c1cb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 792974ebaaa946a3e1a4f05d52c8fd9ac32fc87a
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104361811"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524559"
 ---
 # <a name="balloons"></a>Globos
 
 > [!NOTE]
-> Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).
+> Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
 Un globo es una pequeña ventana emergente que informa a los usuarios de un problema no crítico o una condición especial en un control.
 
-![Captura de pantalla que muestra un globo que indica que Bloq Mayús está activado.](images/ctrl-balloons-image1.png)
+![Captura de pantalla que muestra un globo que indica que El bloqueo de límites está en.](images/ctrl-balloons-image1.png)
 
-Globo típico.
+Un globo típico.
 
-Los globos tienen un icono, un título y el texto del cuerpo, todos ellos opcionales. A diferencia de la información sobre herramientas y recuadros informativos, los globos también tienen una cola que identifica su origen. Normalmente, el origen es un control si es así, se conoce como [control propietario](glossary.md).
+Los globos tienen un icono, un título y texto del cuerpo, que son opcionales. A diferencia de la información sobre herramientas y la información sobre herramientas, los globos también tienen una cola que identifica su origen. Normalmente, el origen es un control, si es así, se conoce como [control de propietario](glossary.md).
 
-Aunque los globos informan a los usuarios de problemas no críticos, no impiden problemas, aunque es posible que el control propietario. Los problemas no controlados deben controlarse mediante la interfaz de usuario (UI) del propietario cuando los usuarios intentan confirmar la acción.
+Aunque los globos informan a los usuarios de problemas no críticos, no evitan problemas, aunque el control de propietario podría. La interfaz de usuario (UI) del propietario debe controlar los problemas no controladas cuando los usuarios intenten confirmar la acción.
 
-Los globos se suelen usar con cuadros de texto o controles que usan cuadros de texto para cambiar valores, como cuadros combinados, vistas de lista y vistas de árbol. Otros tipos de controles están suficientemente restringidos y no necesitan recibir más globos de comentarios. Además, si hay un problema con otros tipos de controles, a menudo implica una incoherencia entre varios controles una situación en la que los globos no son adecuados. Solo los controles de entrada de texto no están restringidos y son un origen común de los errores de un [solo punto](glossary.md).
+Los globos se usan normalmente con cuadros de texto o controles que usan cuadros de texto para cambiar valores, como cuadros combinados, vistas de lista y vistas de árbol. Otros tipos de controles están suficientemente restringidos y no necesitan los globos de comentarios adicionales. Además, si hay un problema con otros tipos de controles, a menudo implica incoherencia entre varios controles, situación para la que los globos no son adecuados. Solo los controles de entrada de texto no están entrenados y son un origen común de [errores de un solo punto.](glossary.md)
 
-Una notificación es un tipo específico de globo mostrado por un icono de [área de notificación](winenv-notification.md) .
+Una notificación es un tipo específico de globo que muestra un icono [de área de](winenv-notification.md) notificación.
 
-**Nota:** Las instrucciones relacionadas con las [notificaciones](mess-notif.md), la [información sobre herramientas y recuadros informativos](ctrl-tooltips-and-infotips.md), y [los mensajes de error](mess-error.md) se presentan en artículos independientes.
+**Nota:** Las directrices relacionadas [con las notificaciones,](mess-notif.md)la información sobre herramientas y la información sobre [herramientas,](ctrl-tooltips-and-infotips.md)y los mensajes de [error](mess-error.md) se presentan en artículos independientes.
 
 **¿Es este el control adecuado?**
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿La información describe un problema o una condición especial?** Si no es así, usa otro control. No utilice globos para mostrar información complementaria de un control. considere la posibilidad de usar [texto estático](glossary.md),[recuadros informativos](glossary.md), [divulgación progresiva](glossary.md)o mensajes en su lugar.
--   **¿Se puede detectar el problema o la condición especial inmediatamente** en la entrada o cuando el control propietario pierde el foco de entrada? Si no es así, use un mensaje de error que se muestra en un cuadro de [diálogo de tarea](glossary.md) o de [mensaje](glossary.md).
--   **En el caso de problemas, ¿es crítico el problema?** Si es así, use un mensaje de error que se muestra en un cuadro de diálogo de tarea o de mensaje. Estos mensajes de error requieren interacción (que es adecuado para errores críticos), mientras que los globos no.
--   **En el caso de las condiciones especiales, ¿es válida la condición pero probablemente no esté pensada?** Si es así, los globos son adecuados. En el caso de las condiciones no válidas, es mejor evitarlos en primer lugar. En el caso de las condiciones previstas, no es necesario hacer nada.
--   **¿El problema o la condición especial se pueden expresar de forma concisa?** Si no es así, usa otro control. Los globos no pueden tener explicaciones detalladas ni proporcionar información complementaria.
--   **¿La información describe el control en el que se mantiene el puntero actualmente?** Si es así, use una sugerencia en su lugar, a menos que los usuarios tengan que interactuar con el mensaje.
--   **¿La información está relacionada con la actividad actual del usuario?** Si no es así, considere la posibilidad de usar en su lugar una [notificación](mess-notif.md) o un [cuadro de diálogo](win-dialog-box.md) . Es probable que los usuarios pasen por alto los globos fuera de la actividad actual y, de forma predeterminada, se agote el tiempo de espera de los globos después de 10 segundos.
--   **¿La información procede de un solo origen específico?** Si un problema o una condición tienen varios orígenes o ningún origen específico, use en su lugar un [mensaje en contexto](glossary.md) o un cuadro de diálogo.
+-   **¿Describe la información un problema o una condición especial?** Si no es así, usa otro control. No use globos para mostrar información complementaria para un control; considere la posibilidad [de usar texto estático](glossary.md), información sobre[información,](glossary.md) [divulgación progresiva](glossary.md)o avisos en su lugar.
+-   **¿Se puede detectar el problema o la condición especial inmediatamente** en la entrada o cuando el control de propietario pierde el foco de entrada? Si no es así, use un mensaje de error que se muestra en un cuadro [de diálogo de tarea](glossary.md) o [mensaje](glossary.md).
+-   **En el caso de los problemas, ¿el problema es crítico?** Si es así, use un mensaje de error que se muestra en un cuadro de diálogo o mensaje de tarea. Estos mensajes de error requieren interacción (que es adecuada para errores críticos), mientras que los globos no.
+-   **En el caso de las condiciones especiales, ¿la condición es válida pero probablemente no sea intencionado?** Si es así, los globos son adecuados. En el caso de condiciones no válidas, es mejor evitarlas en primer lugar. En el caso de las condiciones previstas probables, no es necesario hacer nada.
+-   **¿Se puede expresar el problema o la condición especial de forma concisa?** Si no es así, usa otro control. Los globos no pueden tener explicaciones detalladas ni proporcionar información complementaria.
+-   **¿Describe la información el control sobre el que se mantiene el puntero actualmente?** Si es así, use una sugerencia en su lugar, a menos que los usuarios necesiten interactuar con el mensaje.
+-   **¿La información está relacionada con la actividad actual del usuario?** Si no es así, considere la posibilidad de [usar una notificación](mess-notif.md) o un cuadro de [diálogo](win-dialog-box.md) en su lugar. Es probable que los usuarios pasen por alto los globos fuera de la actividad actual y que, de forma predeterminada, los globos se quedán fuera del tiempo de espera después de 10 segundos.
+-   **¿La información procede de un origen único y específico?** Si un problema o una condición tiene varios orígenes o ningún origen específico, use un mensaje local o [un](glossary.md) cuadro de diálogo en su lugar.
 
-**Incorrecto:** ![ captura de pantalla de un globo: Inicio de sesión incorrecto](images/ctrl-balloons-image2.png)
+**Incorrecto:** ![ captura de pantalla de un globo: inicio de sesión no correcto](images/ctrl-balloons-image2.png)
 
-En este ejemplo, el problema podría ser con el nombre de usuario o la contraseña, pero la notificación del problema con un globo sugiere visualmente que solo la contraseña es el problema. Por lo tanto, los comentarios de escribir un nombre de usuario incorrecto son engañosos.
+En este ejemplo, el problema podría ser con el nombre de usuario o la contraseña, pero notificar el problema con un globo sugiere visualmente que solo la contraseña es el problema. Por lo tanto, los comentarios de escribir un nombre de usuario incorrecto son engañosos.
 
-Los globos son una alternativa a recuadros informativos, cuadros de diálogo y mensajes en contexto. A diferencia de la información sobre herramientas y recuadros informativos:
+Los globos son una alternativa a la información sobre información, los cuadros de diálogo y los mensajes locales. A diferencia de la información sobre herramientas y la información sobre herramientas:
 
--   Los globos se pueden mostrar independientemente de la ubicación actual del puntero, por lo que tienen un final que indica su origen.
--   Los globos tienen un título, texto de cuerpo y un icono.
--   Los globos pueden ser interactivos, pero es imposible hacer clic en una sugerencia.
+-   Los globos se pueden mostrar independientemente de la ubicación actual del puntero, por lo que tienen una cola que indica su origen.
+-   Los globos tienen un título, texto del cuerpo y un icono.
+-   Los globos pueden ser interactivos, mientras que es imposible hacer clic en una propina.
 
 A diferencia de los cuadros de diálogo modales:
 
 -   Los globos no roban el foco de entrada ni requieren interacción.
--   Los globos identifican un único origen específico. Los cuadros de diálogo modales pueden tener varios orígenes o no tener ningún origen específico.
+-   Los globos identifican un origen único y específico. Los diálogos modales pueden tener varios orígenes o ningún origen específico.
 
-A diferencia de los mensajes en contexto:
+A diferencia de los mensajes en posición:
 
 -   Los globos son más evidentes.
--   Los globos no requieren espacio de pantalla disponible ni el diseño dinámico necesario para mostrar los mensajes en contexto.
--   Los globos se eliminan automáticamente después de un tiempo de espera.
+-   Los globos no requieren espacio de pantalla disponible ni el diseño dinámico necesario para mostrar los mensajes en su lugar.
+-   Los globos se quitan automáticamente después de un tiempo de espera.
 
 **Patrones de uso**
 
@@ -72,10 +72,10 @@ Los globos tienen estos patrones de uso:
 
 
 
-|                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Uso                                                                                                                                                            |    Ejemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Problema de entrada** Un problema de entrada de usuario no crítico procedente de un solo control propietario, normalmente un cuadro de texto. <br/>                                               | el uso de globos para mensajes de error no roba el foco de entrada, pero todavía es muy apreciable si el control propietario tiene el foco de entrada. para corregir el problema, es posible que el usuario tenga que cambiar o volver a escribir la entrada. pero si el control propietario omite la entrada incorrecta, es posible que el usuario no tenga que realizar ningún cambio. Dado que el problema no es crítico, no es necesario ningún [icono de error](vis-std-icons.md) . <br/> ![Captura de pantalla que muestra un globo que indica un carácter incorrecto.](images/ctrl-balloons-image3.png)<br/> Globo que se usa para notificar un problema de entrada de usuario no crítico.<br/>                                                                                                  |
-| **Condición especial** El control propietario está en un estado que afecta a la entrada. Es probable que este estado no sea el deseado y que el usuario no se vea afectado. <br/> | Use globos para evitar la frustración al avisar a los usuarios de condiciones especiales tan pronto como se produzcan (por ejemplo, superando el tamaño máximo de entrada o estableciendo Bloq Mayús en por error). es importante dar tales comentarios sin robar el foco de entrada ni forzar la interacción, ya que estas condiciones podrían ser intencionadas. Estos globos son especialmente importantes para las casillas de contraseña y PIN, donde los usuarios trabajan con los comentarios mínimos. Estos globos tienen un [icono de advertencia](vis-std-icons.md). <br/> ![Captura de pantalla que muestra globos que indican que Bloq Mayús está activado y se escribe un carácter incorrecto.](images/ctrl-balloons-image4.png)<br/> Globo que se usa para notificar una condición especial.<br/> |
+| **Problema de entrada** Un problema de entrada de usuario no crítico procedente de un control de propietario único, normalmente un cuadro de texto. <br/>                                               | El uso de globos para los mensajes de error no roba el foco de entrada, pero sigue siendo muy evidente si el control de propietario tiene el foco de entrada. para corregir el problema, es posible que el usuario tenga que cambiar o volver a escribir la entrada; pero si el control de propietario omite la entrada incorrecta, es posible que el usuario no tenga que realizar ningún cambio. dado que el problema no es crítico, no [es necesario ningún icono](vis-std-icons.md) de error. <br/> ![Captura de pantalla que muestra un globo que indica un carácter incorrecto.](images/ctrl-balloons-image3.png)<br/> Un globo que se usa para notificar un problema de entrada de usuario no crítico.<br/>                                                                                                  |
+| **Condición especial** El control de propietario está en un estado que afecta a la entrada. Es probable que este estado no sea intencionado y que el usuario no se dé cuenta de que la entrada se ve afectada. <br/> | use globos para evitar frustraciones al avisar a los usuarios de condiciones especiales en cuanto se cumplen (por ejemplo, superar el tamaño máximo de entrada o establecer límites de bloqueo por error). es importante proporcionar estos comentarios sin robar el foco de entrada ni forzar la interacción porque estas condiciones pueden ser intencionadas. estos globos son especialmente importantes para los cuadros de contraseña y anclado, donde los usuarios trabajan con comentarios mínimos. estos globos tienen un [icono de advertencia](vis-std-icons.md). <br/> ![Captura de pantalla que muestra globos que indican que El bloqueo de límites está en y se introduce un carácter incorrecto.](images/ctrl-balloons-image4.png)<br/> Globo que se usa para notificar una condición especial.<br/> |
 
 
 
@@ -85,48 +85,48 @@ Los globos tienen estos patrones de uso:
 
 **Cuándo se debe mostrar**
 
--   **Muestre el globo en cuanto se detecte el problema o la condición especial, incluso si es repetidamente, sin ningún retraso perceptible.**
-    -   En el caso de problemas relacionados con caracteres individuales o el tamaño de entrada máximo, muestre el globo inmediatamente en la entrada.
-    -   En el caso de problemas relacionados con el valor de entrada (incluida la exigencia de un valor que no está en blanco), muestre el globo cuando el control propietario pierda el foco de entrada. De lo contrario, Mostrar globos mientras los usuarios escriben datos potencialmente válidos pueden distraerse y molestos.
--   **Muestra un solo globo a la vez.** Mostrar varios globos puede ser abrumador. Si un solo evento produce varios problemas, presente todos los problemas a la vez o informe solo del problema más importante.
+-   **Muestre el globo en cuanto se detecte el problema o la condición especial, incluso si se repite, sin ningún retraso apreciable.**
+    -   Para problemas que implican caracteres individuales o el tamaño máximo de entrada, muestre el globo inmediatamente en la entrada.
+    -   Para problemas relacionados con el valor de entrada (incluida la necesidad de un valor no en blanco), muestre el globo cuando el control de propietario pierda el foco de entrada. De lo contrario, mostrar globos mientras los usuarios escriben entradas potencialmente válidas puede ser molesto y molesto.
+-   **Mostrar solo un globo a la vez.** Mostrar varios globos puede ser abrumador. Si un solo evento produce varios problemas, presente todos los problemas a la vez o informe solo del problema más importante.
 
-**Incorrecto:** ![ captura de pantalla de dos globos que señalan a un cuadro](images/ctrl-balloons-image5.png)
+**Incorrecto:** ![ captura de pantalla de dos globos que apuntan a un cuadro](images/ctrl-balloons-image5.png)
 
-En este ejemplo, se presentan incorrectamente dos problemas al mismo tiempo.
+En este ejemplo, dos problemas se presentan incorrectamente al mismo tiempo.
 
 **Cuánto tiempo se va a mostrar**
 
--   **Quitar un globo cuando:**
+-   **Quite un globo cuando:**
     -   El problema se resuelve o se quita una condición especial.
-    -   El usuario especifica datos válidos (para problemas de entrada).
-    -   Se agota el tiempo de espera del globo. De forma predeterminada, los globos se eliminan después de 10 segundos, aunque los usuarios pueden cambiar esto modificando el \_ parámetro del sistema SPI MESSAGEDURATION.
--   **Quite el tiempo de espera si los usuarios no pueden continuar hasta que se resuelva el problema. Desarrolladores:** en Win32, puede establecer la hora de visualización con el \_ mensaje TTM SETDELAYTIME.
+    -   El usuario escribe datos válidos (para problemas de entrada).
+    -   Se ha pasado el tiempo de espera del globo. De forma predeterminada, los globos se quitan después de 10 segundos, aunque los usuarios pueden cambiarlo modificando el parámetro del sistema \_ SPI MESSAGEDURATION.
+-   **Quite el tiempo de espera si los usuarios no pueden continuar hasta que se resuelva el problema. Desarrolladores:** en Win32, puede establecer la hora de presentación con el mensaje \_ SETDELAYTIME de TTM.
 
 **Cómo mostrar**
 
--   **Mostrar globos debajo de su control propietario.** Esto permite a los usuarios ver el contexto, incluido el control propietario y su etiqueta. Microsoft Windows ajusta automáticamente las posiciones de los globos para que estén completamente en pantalla. El comportamiento predeterminado es mostrar un globo encima de su control propietario, como se hace con las notificaciones.
+-   **Mostrar globos debajo de su control de propietario.** Esto permite a los usuarios ver el contexto, incluido el control de propietario y su etiqueta. Microsoft Windows ajusta automáticamente las posiciones del globo para que estén completamente en pantalla. El comportamiento predeterminado es mostrar un globo encima de su control de propietario, como se hace con las notificaciones.
 
 **Correcto:** ![ captura de pantalla de un globo que se muestra debajo de su control](images/ctrl-balloons-image6.png)
 
-**Incorrecto:** ![ captura de pantalla de un globo mostrado encima de su control](images/ctrl-balloons-image7.png)
+**Incorrecto:** ![ captura de pantalla de un globo que se muestra encima de su control](images/ctrl-balloons-image7.png)
 
-En el ejemplo incorrecto, el globo se muestra de forma complicada sobre su control propietario.
+En el ejemplo incorrecto, el globo se muestra incorrectamente encima de su control de propietario.
 
-**Cuadros de texto contraseña y PIN**
+**Cuadros de texto de contraseña y PIN**
 
--   **Use un globo para indicar que Bloq Mayús está activado** y use el texto del ejemplo siguiente:
+-   **Use un globo para indicar que El bloqueo de límites está en**, mediante el texto del ejemplo siguiente:
 
-![captura de pantalla de un globo que indica que el Bloq Mayús está activado](images/ctrl-balloons-image8.png)
+![captura de pantalla de un globo que indica que el bloqueo de límites está en](images/ctrl-balloons-image8.png)
 
-En este ejemplo, un globo indica que Bloq Mayús está activado en un cuadro de texto de PIN.
+En este ejemplo, un globo indica que El bloqueo de límites está en un cuadro de texto de PIN.
 
--   **Use un globo para indicar cuándo un usuario intenta superar el tamaño de entrada máximo.** Alcanzar el tamaño máximo de entrada es mucho menos obvio en los cuadros de texto contraseña y PIN que los cuadros de texto ordinarios.
+-   **Use un globo para indicar cuándo los usuarios intentan superar el tamaño máximo de entrada.** Alcanzar el tamaño máximo de entrada es mucho menos obvio en los cuadros de texto de contraseña y PIN que los cuadros de texto normales.
 
-![captura de pantalla de un globo que indica los límites del código PIN](images/ctrl-balloons-image9.png)
+![captura de pantalla de un globo que indica los límites de código pin](images/ctrl-balloons-image9.png)
 
-En este ejemplo, un globo indica que el usuario está intentando superar el tamaño de entrada máximo.
+En este ejemplo, un globo indica que el usuario está intentando superar el tamaño máximo de entrada.
 
--   **Use un globo para indicar si los usuarios escriben caracteres incorrectos.** Sin embargo, es mejor no tener estas restricciones, ya que reducen la seguridad de la contraseña o el PIN. Para evitar la divulgación de información, el globo solo debe mencionar hechos documentados sobre contraseñas o PIN válidos.
+-   **Use un globo para indicar cuándo los usuarios introducen caracteres incorrectos.** Sin embargo, es mejor no tener estas restricciones porque reducen la seguridad de la contraseña o el PIN. Para evitar la divulgación de información, el globo solo debe mencionar hechos documentados sobre contraseñas o PIN válidos.
 
 ![captura de pantalla de un globo que indica una entrada incorrecta](images/ctrl-balloons-image10.png)
 
@@ -134,15 +134,15 @@ En este ejemplo, un globo indica que el PIN requiere números.
 
 **Otros cuadros de texto**
 
--   **Considere la posibilidad de usar un globo para indicar si los usuarios intentan superar el tamaño de entrada máximo para los cuadros de texto graves y críticos destinados a usuarios inexpertos.** Entre los ejemplos se incluyen nombres de usuario y nombres de cuenta. Los cuadros de texto emiten un pitido cuando los usuarios intentan superar la entrada máxima, pero es posible que los usuarios inexpertos no sepan el significado del pitido.
+-   **Considere la posibilidad de usar un globo para indicar cuándo los usuarios intentan superar el tamaño máximo de entrada para los cuadros de texto críticos y cortos dirigidos a usuarios principiantes.** Algunos ejemplos son los nombres de usuario y los nombres de cuenta. Los cuadros de texto bip cuando los usuarios intentan superar la entrada máxima, pero es posible que los usuarios principiantes no comprendan el significado del bip.
 
 ![captura de pantalla de un globo que indica los límites de caracteres](images/ctrl-balloons-image11.png)
 
-En este ejemplo, un globo indica que el usuario intentó superar el tamaño de entrada máximo.
+En este ejemplo, un globo indica que el usuario intentó superar el tamaño máximo de entrada.
 
 **Interacción**
 
--   **Cuando los usuarios hacen clic en un globo, solo tiene que descartar el globo sin mostrar ninguna otra interfaz de usuario ni tener ningún otro efecto secundario.** A diferencia de las notificaciones, los globos no deben tener botones de cierre.
+-   **Cuando los usuarios hacen clic en un globo, simplemente descartan el globo sin mostrar ninguna otra interfaz de usuario ni tener ningún otro efecto secundario.** A diferencia de las notificaciones, los globos no deben tener botones de cierre.
 
 **Iconos**
 
@@ -152,47 +152,47 @@ En este ejemplo, un globo indica que el usuario intentó superar el tamaño de e
 
     |  Patrón |  Icono                                                                                                                                                       |
     ------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Problema de entrada | Sin icono. No usar un [icono de error](vis-std-icons.md) aquí es coherente con las directrices de [tono de Windows](text-style-tone.md) . |
-    | Condición especial | [Icono de advertencia](vis-std-icons.md)estándar de 16x16 píxeles.                                                                                  |
+    | Problema de entrada | Sin icono. No usar un [icono de error aquí](vis-std-icons.md) es coherente con las [directrices de tono de Windows.](text-style-tone.md) |
+    | Condición especial | Icono de advertencia estándar de 16 x 16 [píxeles](vis-std-icons.md).                                                                                  |
 
 **Accesibilidad**
 
-Cuando se usa correctamente, los globos mejoran la accesibilidad. Para que se pueda obtener acceso a los globos:
+Cuando se usan correctamente, los globos mejoran la accesibilidad. Para que los globos sean accesibles:
 
--   Solo muestra los globos relacionados con la actividad actual del usuario.
--   Mantenga el texto del globo conciso. Esto hace que el texto del globo sea más fácil de leer para los usuarios con deficiencias visuales y minimiza la interrupción cuando lo leen los lectores de pantalla.
--   Vuelva a mostrar el globo cada vez que se repite el problema o la condición.
+-   Solo se muestran globos relacionados con la actividad actual del usuario.
+-   Mantenga el texto del globo conciso. De este modo, el texto del globo resulta más fácil de leer para los usuarios con visión baja y minimiza la interrupción cuando los lectores de pantalla leen.
+-   Vuelva a mostrar el globo cada vez que se repita el problema o la condición.
 
 **Texto**
 
 **Texto del título**
 
--   **Use el texto del título que resume brevemente el problema de entrada o la condición especial en lenguajes claros, sencillos y concisos.** Los usuarios deben poder comprender el propósito del globo rápidamente y con el mínimo esfuerzo.
--   **Utilice fragmentos de texto o frases completas sin puntuación final.**
--   **Use mayúsculas de estilo de frase.** Para obtener más información, consulte el [Glosario](./glossary.md).
--   **No use más de 48 caracteres (en inglés) para dar cabida a la localización.** El título tiene una longitud máxima de 63 caracteres y debe poder expandirse al menos en un 30 por ciento para adaptarse a la localización.
+-   **Use texto de título que resuma brevemente el problema de entrada o la condición especial en un lenguaje claro, sin formato, conciso y específico.** Los usuarios deben ser capaces de comprender el propósito del globo rápidamente y con el mínimo esfuerzo.
+-   **Use fragmentos de texto o oraciones completas sin finalizar la puntuación.**
+-   **Use mayúsculas de estilo de frase.** Para más información, consulte el [glosario](./glossary.md).
+-   **No use más de 48 caracteres (en inglés) para adaptarse a la localización.** El título tiene una longitud máxima de 63 caracteres y debe ser capaz de expandirse al menos un 30 % para adaptarse a la localización.
 
 **Texto del cuerpo**
 
--   **Use la primera oración del texto del cuerpo para indicar el problema o la condición de una manera claramente relevante para el usuario.** No repita la información en el título. Omita este valor si no hay nada más que agregar.
--   **Use la segunda oración para indicar lo que el usuario puede hacer para resolver el problema o revertir el estado.** De acuerdo con las directrices de [estilo y tono](./text-style-tone.md) , no es necesario usar la palabra en esta instrucción. Coloque dos saltos de línea entre la primera y la segunda oración.
+-   **Use la primera oración del texto del cuerpo para decir el problema o la condición de una manera claramente relevante para el usuario.** No repita la información del título. Omita esta opción si no hay nada más que agregar.
+-   **Use la segunda frase para especificar lo que el usuario puede hacer para resolver el problema o revertir el estado.** De acuerdo con las [directrices de](./text-style-tone.md) estilo y tono, no es necesario usar la palabra Please en esta instrucción. Coloque dos saltos de línea entre la primera y la segunda oración.
 
-![captura de pantalla de un globo con el título y el texto del cuerpo](images/ctrl-balloons-image12.png)
+![captura de pantalla de un globo con texto de título y cuerpo](images/ctrl-balloons-image12.png)
 
 En este ejemplo se muestra el diseño de texto de globo estándar.
 
--   **Explique cómo resolver el problema o revertir el estado aunque la explicación sea obvia,** pero omita la redundancia entre la declaración del problema y su resolución. **Excepciones:**
-    -   Omita la resolución si no se puede expresar de manera concisa o sin redundancia significativa.
-    -   Omita la resolución si no hay nada que pueda hacer el usuario, por ejemplo, cuando se omiten los caracteres incorrectos.
--   **Use frases completas con una puntuación final.**
+-   **Explique cómo resolver el problema o revertir** el estado aunque esa explicación sea obvia, pero omita la redundancia entre la instrucción del problema y su resolución. **Excepciones:**
+    -   Omita la resolución si no se puede expresar de forma concisa o sin redundancia significativa.
+    -   Omita la resolución si no hay nada que hacer para el usuario, como cuando se omiten los caracteres incorrectos.
+-   **Use oraciones completas con signos de puntuación finales.**
 -   **Use mayúsculas de estilo de frase.**
--   **No use más de 200 caracteres (en inglés) para dar cabida a la localización.** El texto del cuerpo tiene una longitud máxima de 255 caracteres y debe ser capaz de expandirse al menos en un 30 por ciento para adaptarse a la localización.
+-   **No use más de 200 caracteres (en inglés) para adaptarse a la localización.** El texto del cuerpo tiene una longitud máxima de 255 caracteres y debe ser capaz de expandirse al menos un 30 % para dar cabida a la localización.
 
 **Documentación**
 
-Al hacer referencia a los globos:
+Al hacer referencia a globos:
 
--   Use el texto de título exacto, incluido el uso de mayúsculas.
--   Haga referencia al componente como un globo, no como una notificación o una alerta.
--   Siempre que sea posible, dé formato al texto del título usando texto en negrita. De lo contrario, coloque el título entre comillas solo si es necesario para evitar confusiones.
+-   Use el texto del título exacto, incluido su uso de mayúsculas.
+-   Consulte el componente como un globo, no como una notificación o una alerta.
+-   Cuando sea posible, formatee el texto del título con texto en negrita. De lo contrario, coloque el título entre comillas solo si es necesario para evitar confusiones.
 
