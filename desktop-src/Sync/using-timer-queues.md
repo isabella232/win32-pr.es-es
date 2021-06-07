@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo siguiente se crea una rutina de temporizador que se ejecutará en un subproceso desde una cola de temporizador después de un retraso de 10 segundos.
+description: En el ejemplo siguiente se crea una rutina de temporizador que ejecutará un subproceso desde una cola de temporizador después de un retraso de 10 segundos.
 ms.assetid: 779156fe-f825-452b-acbe-e2cb189e24d2
-title: Usar colas de temporizador
+title: Uso de colas de temporizador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a13f7afd18a22c42e3af8cffd8b2b148f68b9d99
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d084a03eb25301f94361c1e7ca6b76dd9fee269
+ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668160"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111549946"
 ---
-# <a name="using-timer-queues"></a>Usar colas de temporizador
+# <a name="using-timer-queues"></a>Uso de colas de temporizador
 
-En el ejemplo siguiente se crea una rutina de temporizador que se ejecutará en un subproceso desde una [cola de temporizador](timer-queues.md) después de un retraso de 10 segundos. En primer lugar, el código usa la función [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear un objeto de evento que se señala cuando se completa el subproceso de cola de temporizador. A continuación, crea una cola de temporizador y un temporizador de cola de temporizador, mediante las funciones [**CreateTimerQueue**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueue) y [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) , respectivamente. El código usa la función [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) para determinar cuándo se ha completado la rutina del temporizador. Por último, el código llama a [**DeleteTimerQueue**](/windows/desktop/api/WinBase/nf-winbase-deletetimerqueue) para realizar la limpieza.
+En el ejemplo siguiente se crea una rutina de temporizador que ejecutará un subproceso desde una cola [de temporizador](timer-queues.md) después de un retraso de 10 segundos. En primer lugar, el código usa la [**función CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear un objeto de evento que se señala cuando se completa el subproceso timer-queue. A continuación, crea una cola de temporizadores y un temporizador de cola de temporizador, mediante las funciones [**CreateTimerQueue**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueue) y [**CreateTimerQueueTimer,**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) respectivamente. El código usa la [**función WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) para determinar cuándo se ha completado la rutina de temporizador. Por último, el código llama [**a DeleteTimerQueue**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueue) para limpiar.
 
-Para obtener más información sobre la rutina del temporizador, vea [**WaitOrTimerCallback**](/previous-versions/windows/desktop/legacy/ms687066(v=vs.85)).
+Para obtener más información sobre la rutina de temporizador, [**vea WaitOrTimerCallback**](/previous-versions/windows/desktop/legacy/ms687066(v=vs.85)).
 
 
 ```C++

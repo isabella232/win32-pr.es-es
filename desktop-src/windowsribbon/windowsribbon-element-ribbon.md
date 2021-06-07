@@ -1,9 +1,9 @@
 ---
 title: Elemento Ribbon
-description: Representa el control de la cinta de opciones en la vista de la cinta.
+description: Representa el control de la cinta de opciones en la vista de cinta de opciones.
 ms.assetid: 51083180-4e86-4c90-9fd1-a58c12bcc756
 keywords:
-- Cinta de opciones de Windows (elemento)
+- Cinta de opciones de Windows, elemento
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76ce73735d05b3d8c8cfa686f53570fd08ae6f1c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9a743fc354dfea73c525884ec5ffe1f9471f3752
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105714279"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111445006"
 ---
 # <a name="ribbon-element"></a>Elemento Ribbon
 
-Representa el control de la cinta de opciones en la vista de la cinta.
+Representa el control de la cinta de opciones en la vista de cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -49,7 +49,7 @@ Representa el control de la cinta de opciones en la vista de la cinta.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,14 +58,14 @@ Representa el control de la cinta de opciones en la vista de la cinta.
 <td><strong>GroupSpacing</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> Pequeño<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> Medio<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Amplíe<br/> </dt> <dd></dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (Pequeño)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (Medio)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Nombre</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Se utiliza para anotar el elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cualquier secuencia de cero o más caracteres.<br/> La longitud máxima es sin límite.<br/> </dd> </dl></td>
+<td>Se usa para anotar el elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cualquier secuencia de cero o más caracteres.<br/> La longitud máxima es sin enlazar.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -78,12 +78,12 @@ Representa el control de la cinta de opciones en la vista de la cinta.
 
 | Elemento                                                                                         | Descripción                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**Ribbon. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/>       | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/>         | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/>                 | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Ribbon. QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/>       | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Cinta. pestañas**](windowsribbon-element-ribbon-tabs.md)<br/>                             | Puede aparecer como máximo una vez<br/> <br/> |
+| [**Ribbon.ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/>       | Puede producirse como máximo una vez<br/> <br/> |
+| [**Ribbon.ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/>         | Puede producirse como máximo una vez<br/> <br/> |
+| [**Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/>                 | Puede producirse como máximo una vez<br/> <br/> |
+| [**Ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
+| [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/>       | Puede producirse como máximo una vez<br/> <br/> |
+| [**Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md)<br/>                             | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -93,19 +93,19 @@ Representa el control de la cinta de opciones en la vista de la cinta.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Application. views**](windowsribbon-element-application-views.md)<br/> |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe aparecer exactamente una vez para cada elemento [**Application. views**](windowsribbon-element-application-views.md) .
+Debe producirse exactamente una vez para [**cada elemento Application.Views.**](windowsribbon-element-application-views.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista de **la cinta** de opciones.
+En el ejemplo siguiente se muestra el marcado básico para una vista **de cinta** de opciones.
 
 
 ```XML
@@ -137,10 +137,9 @@ En el ejemplo siguiente se muestra el marcado básico de una vista de **la cinta
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 

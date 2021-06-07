@@ -1,9 +1,9 @@
 ---
 title: Elemento MenuGroup
-description: Representa un contenedor de controles que se van a mostrar en una galería, un menú o una barra de herramientas.
+description: Representa un contenedor de controles que se mostrarán en una galería, un menú o una barra de herramientas.
 ms.assetid: 75da63fe-dd9e-46af-8f13-a8d8e7575641
 keywords:
-- MenuGroup cinta de opciones de Windows
+- Elemento MenuGroup de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fa3c126a99cddd4918ea9033acffd185ad5cf3da
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 95cbda43fe2f652888a7b84539752b5d671868c3
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "103787485"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442856"
 ---
 # <a name="menugroup-element"></a>Elemento MenuGroup
 
-Representa un contenedor de controles que se van a mostrar en una galería, un menú o una barra de herramientas.
+Representa un contenedor de controles que se mostrarán en una galería, un menú o una barra de herramientas.
 
 ## <a name="usage"></a>Uso
 
@@ -49,7 +49,7 @@ Representa un contenedor de controles que se van a mostrar en una galería, un m
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,20 +58,20 @@ Representa un contenedor de controles que se van a mostrar en una galería, un m
 <td><strong>Clase</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Especifica el tamaño y el estilo de diseño de los elementos de la interfaz de usuario del menú.<br/> Un recurso de imagen se puede proporcionar en dos tamaños (grande y pequeño) y asociarse al elemento en el marcado mediante los elementos de propiedad <a href="windowsribbon-element-command-largeimages.md"><strong>Command. LargeImages</strong></a> y <a href="windowsribbon-element-command-smallimages.md"><strong>Command. SmallImages</strong></a> . Si solo se proporciona una imagen, el marco de trabajo lo cambia según sea necesario.<br/> Restringido a uno de los siguientes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (StandardItems)<br/> </dt> <dd> Predeterminada. <br/> Estilo: imagen pequeña y texto desacentuado.<br/><img src="images/markup/menugroup-standarditems.png" alt="Screen shot of a StandardItems button." /></dd> <dt><span></span><span></span><strong></strong> (MajorItems)<br/> </dt> <dd> Estilo: imagen grande y texto en negrita.<br/>
+<td>Especifica el tamaño y el estilo de diseño de los elementos de la interfaz de usuario del menú.<br/> Un recurso de imagen se puede proporcionar en dos tamaños (grande y pequeño) y asociarse al elemento en el marcado mediante los elementos de propiedad <a href="windowsribbon-element-command-largeimages.md"><strong>Command.LargeImages</strong></a> y <a href="windowsribbon-element-command-smallimages.md"><strong>Command.SmallImages.</strong></a> Si solo se proporciona una imagen, el marco cambia su tamaño según sea necesario.<br/> Restringido a uno de los siguientes valores:<br/> <br/>
+<dt><span></span><span></span><strong></strong> (StandardItems)<br/> </dt> <dd> Predeterminada. <br/> Estilo: imagen pequeña y texto sin resaltar.<br/><img src="images/markup/menugroup-standarditems.png" alt="Screen shot of a StandardItems button." /></dd> <dt><span></span><span></span><strong></strong> (MajorItems)<br/> </dt> <dd> Estilo: imagen grande y texto en negrita.<br/>
 <blockquote>
 [!Note]<br />
-Si <strong>MenuGroup</strong> es un elemento secundario de <a href="windowsribbon-element-applicationmenu.md"><strong>ApplicationMenu</strong></a>, se omite el atributo de <em>clase</em> y <code>MajorItems</code> el marco de trabajo aplica un estilo de.
+Si <strong>MenuGroup</strong> es un elemento secundario de <a href="windowsribbon-element-applicationmenu.md"><strong>ApplicationMenu</strong></a>, el atributo <em>Class</em> se omite y el marco aplica un estilo <code>MajorItems</code> de .
 </blockquote>
 <br/> <img src="images/markup/menugroup-majoritems.png" alt="Screen shot of a MajorItems button." /></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -84,13 +84,13 @@ Si <strong>MenuGroup</strong> es un elemento secundario de <a href="windowsribbo
 
 | Elemento                                                                             | Descripción                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Botón**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
+| [**Button**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
+| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>           | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>         | Puede producirse una o varias veces<br/> <br/> |
-| [**FontControl**](windowsribbon-element-fontcontrol.md)<br/>                 | Puede aparecer como máximo una vez<br/> <br/>      |
+| [**FontControl**](windowsribbon-element-fontcontrol.md)<br/>                 | Puede producirse como máximo una vez<br/> <br/>      |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                 | Puede producirse una o varias veces<br/> <br/> |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/>   | Puede producirse una o varias veces<br/> <br/> |
 | [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/>               | Puede producirse una o varias veces<br/> <br/> |
@@ -109,32 +109,32 @@ Si <strong>MenuGroup</strong> es un elemento secundario de <a href="windowsribbo
 | [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md)<br/>       |
 | [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md)<br/>       |
 | [**MiniToolbar**](windowsribbon-element-minitoolbar.md)<br/>                                     |
-| [**SplitButton. MenuGroups**](windowsribbon-element-splitbutton-menugroups.md)<br/>               |
+| [**SplitButton.MenuGroups**](windowsribbon-element-splitbutton-menugroups.md)<br/>               |
 | [**SplitButtonGallery.MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe producirse al menos una vez para cada elemento [**ApplicationMenu**](windowsribbon-element-applicationmenu.md), [**ContextMenu**](windowsribbon-element-contextmenu.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery. MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md), [**InRibbonGallery. MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md), [**splitButton. MenuGroups**](windowsribbon-element-splitbutton-menugroups.md), [**MiniToolbar**](windowsribbon-element-minitoolbar.md)o [**SplitButtonGallery. MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md) .
+Debe producirse al menos una vez para cada [**elemento ApplicationMenu**](windowsribbon-element-applicationmenu.md), [**ContextMenu**](windowsribbon-element-contextmenu.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md), [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md), [**SplitButton.MenuGroups,**](windowsribbon-element-splitbutton-menugroups.md) [**MiniToolbar**](windowsribbon-element-minitoolbar.md)o [**SplitButtonGallery.MenuGroups.**](windowsribbon-element-splitbuttongallery-menugroups.md)
 
-Si [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) es el elemento primario, **MenuGroup** está restringido a los siguientes elementos secundarios: [**Button**](windowsribbon-element-button.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**splitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md).
+Si [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) es el elemento primario, **MenuGroup** se restringe a los siguientes elementos secundarios: [**Button**](windowsribbon-element-button.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery,**](windowsribbon-element-dropdowngallery.md) [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md).
 
-Si [**ContextMenu**](windowsribbon-element-contextmenu.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery. MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md), [**InRibbonGallery. MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md), [**splitButton. MenuGroups**](windowsribbon-element-splitbutton-menugroups.md)o [**SplitButtonGallery. MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md) es el elemento principal, entonces **MenuGroup** está restringido a los siguientes elementos secundarios: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), **DropDownButton**, [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**splitButton**](windowsribbon-element-splitbutton.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md).
+Si [**ContextMenu,**](windowsribbon-element-contextmenu.md) [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md), [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md), [**SplitButton.MenuGroups**](windowsribbon-element-splitbutton-menugroups.md)o [**SplitButtonGallery.MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md) es el elemento primario, **MenuGroup** se restringe a los siguientes elementos secundarios: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), **DropDownButton**, [**DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**SplitButtonGallery**](windowsribbon-element-splitbutton.md)o [**ToggleButton.**](windowsribbon-element-togglebutton.md) [](windowsribbon-element-splitbuttongallery.md)
 
-Si [**MiniToolbar**](windowsribbon-element-minitoolbar.md) es el elemento primario, **MenuGroup** está restringido a los siguientes elementos secundarios: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**Spinner**](windowsribbon-element-spinner.md), [**splitButton**](windowsribbon-element-splitbutton.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md).
+Si [**MiniToolbar**](windowsribbon-element-minitoolbar.md) es el elemento primario, **MenuGroup** se restringe a los siguientes elementos secundarios: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**Spinner,**](windowsribbon-element-spinner.md) [**SplitButton,**](windowsribbon-element-splitbutton.md) [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md).
 
-El atributo class no es necesario cuando [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) es el elemento primario. El marco de trabajo aplica un valor de MajorItems para el atributo de clase.
+El atributo Class no es necesario cuando [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) es el elemento primario. El marco aplica un valor de MajorItems para el atributo Class.
 
-Cuando [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) es el elemento primario, el atributo de clase no es necesario.
+Cuando [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) es el elemento primario, el atributo Class no es necesario.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para [**splitButton**](windowsribbon-element-splitbutton.md) con un elemento **MenuGroup** .
+En el ejemplo siguiente se muestra el marcado básico para [**SplitButton**](windowsribbon-element-splitbutton.md) con un **elemento MenuGroup.**
 
-En esta sección de código se muestran las declaraciones de comandos [**splitButton**](windowsribbon-element-splitbutton.md) y **MenuGroup** con un recurso de imagen grande y pequeño. También se declara un [**Grupo**](windowsribbon-element-group.md) asociado que actúa como contenedor primario para el elemento **splitButton** .
+En esta sección de código se muestran [**las declaraciones SplitButton**](windowsribbon-element-splitbutton.md) **y MenuGroup** Command con un recurso de imagen grande y pequeño. También se [**declara**](windowsribbon-element-group.md) un grupo asociado que actúa como contenedor primario para el elemento **SplitButton.**
 
 
 ```XML
@@ -178,7 +178,7 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 
 
-En esta sección de código se muestran las declaraciones de control [**splitButton**](windowsribbon-element-splitbutton.md) y **MenuGroup** con `StandardItems` y `MajorItems` .
+En esta sección de código se muestran [**las declaraciones de**](windowsribbon-element-splitbutton.md) control SplitButton y **MenuGroup** con `StandardItems` y `MajorItems` .
 
 
 ```XML
@@ -211,20 +211,16 @@ En esta sección de código se muestran las declaraciones de control [**splitBut
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Especificar recursos de imagen de cinta](windowsribbon-imageformats.md)
+[Especificar recursos de imagen de cinta de opciones](windowsribbon-imageformats.md)
 </dt> <dt>
 
 [Grupo de menús](windowsribbon-controls-menugroup.md)

@@ -3,7 +3,7 @@ title: Command, elemento
 description: Representa una definición de comando.
 ms.assetid: f332423d-d258-488d-9233-71687288b462
 keywords:
-- Elemento Command de la cinta de opciones de Windows
+- Elemento command de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b684b361927180a4bb87d2d7814d2f26d4fdcd91
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1e1df5b62c7b2d7c55345ba8d6da366d04697054
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359308"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443486"
 ---
 # <a name="command-element"></a>Command, elemento
 
@@ -56,7 +56,7 @@ Representa una definición de comando.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -65,62 +65,62 @@ Representa una definición de comando.
 <td><strong>Comentario</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Se utiliza para anotar el elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> Longitud máxima: 250 caracteres.<br/> </dd> </dl></td>
+<td>Se usa para anotar el elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> Longitud máxima: 250 caracteres.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Id</strong><br/></td>
-<td>XS: positiveInteger Union XS: String<br/></td>
+<td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
-<td>IDENTIFICADOR de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (La Unión de XS: positiveInteger y XS: String)<br/> </dt> <dd> Un valor entero entre 2 y 59999, inclusive, o 0X2 y 0xea5f en formato hexadecimal, ambos incluidos. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros a la izquierda opcionales. <br/> </dd> </dl></td>
+<td>Identificador de recurso único. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, ambos incluidos, 0x2 y 0xea5f en formato hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>KeyTip</strong><br/></td>
+<td><strong>Keytip</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Cadena que representa el método abreviado de teclado de un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluido el espacio en blanco.<br/> </dd> </dl></td>
+<td>Cadena que representa el método abreviado de teclado de un elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>LabelDescription</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Cadena que representa el texto que se muestra en un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>LabelTitle</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Cadena que representa el texto que se muestra en un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Nombre</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Una cadena que consta de una letra o un carácter de subrayado seguido de cualquier secuencia de dígitos, letras o caracteres de subrayado.<br/> Longitud máxima: 100 caracteres.<br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que consta de una letra o un carácter de subrayado seguido de cualquier secuencia de dígitos, letras o caracteres de subrayado.<br/> Longitud máxima: 100 caracteres.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Símbolo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Una cadena que consta de una letra o un carácter de subrayado seguido de cualquier secuencia de dígitos, letras o caracteres de subrayado.<br/> Longitud máxima: 100 caracteres.<br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que consta de una letra o un carácter de subrayado seguido de cualquier secuencia de dígitos, letras o caracteres de subrayado.<br/> Longitud máxima: 100 caracteres.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>TooltipDescription</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Cadena que representa el texto que se muestra en un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>TooltipTitle</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Cadena que representa el texto que se muestra en un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -133,19 +133,19 @@ Representa una definición de comando.
 
 | Elemento                                                                                                     | Descripción                                   |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**Comando. Comment**](windowsribbon-element-command-comment.md)<br/>                                 | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Command.Id**](windowsribbon-element-command-id.md)<br/>                                           | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Command. KeyTip**](windowsribbon-element-command-keytip.md)<br/>                                   | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. LabelDescription**](windowsribbon-element-command-labeldescription.md)<br/>               | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. LabelTitle**](windowsribbon-element-command-labeltitle.md)<br/>                           | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Command.Name**](windowsribbon-element-command-name.md)<br/>                                       | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. Symbol**](windowsribbon-element-command-symbol.md)<br/>                                   | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)<br/>           | Puede aparecer como máximo una vez<br/> <br/> |
-| [**Comando. TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)<br/>                       | Puede aparecer como máximo una vez<br/> <br/> |
+| [**Command.Comment**](windowsribbon-element-command-comment.md)<br/>                                 | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.Id**](windowsribbon-element-command-id.md)<br/>                                           | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.Keytip**](windowsribbon-element-command-keytip.md)<br/>                                   | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.LabelDescription**](windowsribbon-element-command-labeldescription.md)<br/>               | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md)<br/>                           | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.Name**](windowsribbon-element-command-name.md)<br/>                                       | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.Symbol**](windowsribbon-element-command-symbol.md)<br/>                                   | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)<br/>           | Puede producirse como máximo una vez<br/> <br/> |
+| [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)<br/>                       | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -155,34 +155,34 @@ Representa una definición de comando.
 
 | Elemento                                                                               |
 |---------------------------------------------------------------------------------------|
-| [**Application. Commands**](windowsribbon-element-application-commands.md)<br/> |
+| [**Application.Commands**](windowsribbon-element-application-commands.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Puede producirse una o varias veces para cada elemento [**Application. Commands**](windowsribbon-element-application-commands.md) .
+Puede producirse una o varias veces para cada [**elemento Application.Commands.**](windowsribbon-element-application-commands.md)
 
-Los elementos secundarios del elemento **Command** pueden aparecer en cualquier orden.
+Los elementos secundarios del **elemento Command** pueden producirse en cualquier orden.
 
-Normalmente, los recursos de comando se declaran en el marcado de la cinta de opciones, pero también se pueden establecer en tiempo de ejecución con una llamada a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Por ejemplo, es posible establecer la propiedad [ \_ \_ KeyTip PKEY](windowsribbon-reference-properties-uipkey-keytip.md) de la interfaz de usuario para un comando en lugar de declarar un valor en el marcado con el elemento [**Command. KeyTip**](windowsribbon-element-command-keytip.md) .
+Normalmente, los recursos de comando se declaran en el marcado de la cinta de opciones, pero también se pueden establecer en tiempo de ejecución con una llamada a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Por ejemplo, es posible establecer la propiedad [ \_ ui PKEY \_ Keytip](windowsribbon-reference-properties-uipkey-keytip.md) para un comando en lugar de declarar un valor en el marcado con el [**elemento Command.Keytip.**](windowsribbon-element-command-keytip.md)
 
-En los casos en los que las propiedades de comando, como etiquetas e imágenes, no se pueden establecer con [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) , se pueden invalidar con una llamada a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Después de la invalidación, el marco de trabajo consulta la aplicación host para ver los detalles del recurso.
+En los casos en los que las propiedades de comando, como las etiquetas y las imágenes, no se pueden establecer con [**SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) se pueden invalidar con una llamada a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Después de la invalidación, el marco consulta a la aplicación host los detalles del recurso.
 
 > [!Note]  
-> Un recurso no se puede restablecer desde la tabla de recursos de marcado una vez que se ha invalidado.
+> No se puede restablecer un recurso de la tabla de recursos de marcado después de que se haya invalidado.
 
  
 
-Una definición de comando se agrega al archivo de encabezado de marca de la cinta de opciones para cada **comando** declarado en el marcado.
+Se agrega una definición de comando al archivo de encabezado de marcado de la cinta de opciones para cada **comando** declarado en el marcado.
 
-El valor de *KeyTip* actúa como la tecla de aceleración para un comando, a menos que ese comando se exponga a través de un elemento de menú. En este caso, el marco de trabajo omite el valor de *KeyTip* y, en su lugar, usa un carácter precedido por una y comercial según lo especificado por *LabelTitle* o la [ \_ \_ etiqueta PKEY](windowsribbon-reference-properties-uipkey-label.md)de la interfaz de usuario. Si el *LabelTitle* o la etiqueta PKEY de IU no especifican el carácter de y comercial \_ \_ , no se expone ningún KeyTip ni tecla de aceleración.
+El valor de *Keytip actúa* como acelerador de teclado para un comando a menos que ese comando se exponga a través de un elemento de menú. En este caso, el marco omite el valor *keytip* y, en su lugar, usa un carácter precedido por una y comercial como se especifica *en LabelTitle* o ui [ \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md). Si *labelTitle* o ui PKEY Label no especifican ninguna yand, no se expone ninguna tecla o acelerador \_ \_ de teclado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un manifiesto de elementos **Command** para una pestaña **Home** .
+En el ejemplo siguiente se muestra un manifiesto de **elementos Command** para una **pestaña Inicio.**
 
 
 ```XML
@@ -266,12 +266,8 @@ En el ejemplo siguiente se muestra un manifiesto de elementos **Command** para u
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 

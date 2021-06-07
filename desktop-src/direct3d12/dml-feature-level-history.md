@@ -4,24 +4,24 @@ description: TBD
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 68633f531c627eed8b02c7f65a248213743ca8bc
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: fdc489184b3220afd0b8c75738fa1d40de207c8d
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803791"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387054"
 ---
 # <a name="directml-feature-level-history"></a>Historial de nivel de característica de DirectML
 
-Para obtener información general sobre el historial de versiones de DirectML, [consulte Historial de versiones de DirectML.](./dml-version-history.md)
+Para obtener el historial general de versiones de DirectML, [consulte Historial de versiones de DirectML.](./dml-version-history.md)
 
 ## <a name="dml_feature_level_3_1"></a>DML_FEATURE_LEVEL_3_1
 
 Se introdujo en la versión 1.5.0 de DirectML.
 
-Se ha agregado compatibilidad con los operadores siguientes.
+Se ha agregado compatibilidad con los operadores [siguientes.](/windows/win32/api/directml/ne-directml-dml_operator_type)
 
-* [DML_OPERATOR_ELEMENT_WISE_ATAN_YX](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_ATAN_YX**
 * **DML_OPERATOR_ELEMENT_WISE_CLIP_GRAD**
 * **DML_OPERATOR_ELEMENT_WISE_DIFFERENCE_SQUARE**
 * **DML_OPERATOR_LOCAL_RESPONSE_NORMALIZATION_GRAD**
@@ -46,9 +46,9 @@ El número máximo de dimensiones admitidas para los operadores siguientes ha au
 
 Se introdujo en la versión 1.4.0 de DirectML.
 
-Se ha agregado compatibilidad con los operadores siguientes.
+Se ha agregado compatibilidad con los operadores [siguientes.](/windows/win32/api/directml/ne-directml-dml_operator_type)
 
-* [DML_OPERATOR_ELEMENT_WISE_BIT_AND](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_BIT_AND**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_OR**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_XOR**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_NOT**
@@ -76,7 +76,7 @@ Se han agregado las siguientes mejoras.
   * **DML_OPERATOR_ELEMENT_WISE_POW**
   * **DML_OPERATOR_ELEMENT_WISE_CONSTANT_POW**
   * **DML_OPERATOR_MAX_POOLING**, **DML_OPERATOR_MAX_POOLING1** y **DML_OPERATOR_MAX_POOLING2**
-  * **DML_OPERATOR_REDUCE**, cuando se **usa DML_REDUCE_FUNCTION_ARGMIN** o **DML_REDUCE_FUNCTION_ARGMAX**
+  * **DML_OPERATOR_REDUCE**, al usar **DML_REDUCE_FUNCTION_ARGMIN** o **DML_REDUCE_FUNCTION_ARGMAX**
 * Se han agregado los siguientes tipos de datos de 64 bits y son compatibles con operadores select.
   * **DML_TENSOR_DATA_TYPE_FLOAT64**
   * **DML_TENSOR_DATA_TYPE_UINT64**
@@ -84,7 +84,7 @@ Se han agregado las siguientes mejoras.
 
 Funcionalidad en desuso.
 
-* **DML_REDUCE_FUNCTION_ARGMAX** y **DML_REDUCE_FUNCTION_ARGMIN** han quedado en desuso. Debe preferir usar los operadores **DML_OPERATOR_ARGMIN** y **DML_OPERATOR_ARGMAX** independientes en su lugar.
+* **DML_REDUCE_FUNCTION_ARGMAX** y **DML_REDUCE_FUNCTION_ARGMIN** han quedado en desuso. Debe preferir usar los operadores de **DML_OPERATOR_ARGMIN** y **DML_OPERATOR_ARGMAX** independientes en su lugar.
 
 ## <a name="dml_feature_level_2_1"></a>DML_FEATURE_LEVEL_2_1
 
@@ -93,7 +93,7 @@ Se introdujo en la versión 1.2.0 de DirectML.
 Se han agregado las siguientes API.
 
 * [Interfaz IDMLDevice1](./directml/nn-directml-idmldevice1.md)
-* Compatibilidad con gráficos de operadores [(consulte IDMLDevice1::CompileGraph).](./directml/nf-directml-idmldevice1-compilegraph.md)
+* Compatibilidad con gráficos de operadores [(vea IDMLDevice1::CompileGraph)](./directml/nf-directml-idmldevice1-compilegraph.md)
 
 Se ha agregado compatibilidad con los operadores siguientes.
 
@@ -194,7 +194,7 @@ Se ha agregado compatibilidad con los operadores siguientes.
 
 Se han agregado las siguientes mejoras.
 
-* Al enlazar un recurso de entrada para el envío de un [IDMLOperatorInitializer,](/windows/win32/api/directml/nn-directml-idmloperatorinitializer)ahora es legal proporcionar un recurso con [D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (además de **D3D12_HEAP_TYPE_DEFAULT**), siempre que también se establezcan las propiedades del montón adecuadas. Vea [Enlace en DirectML.](./dml-binding.md)
+* Al enlazar un recurso de entrada para el envío de un [IDMLOperatorInitializer,](/windows/win32/api/directml/nn-directml-idmloperatorinitializer)ahora es legal proporcionar un recurso con [D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (además de **D3D12_HEAP_TYPE_DEFAULT**), siempre y cuando también se establezcan las propiedades del montón adecuadas. Vea [Enlace en DirectML.](./dml-binding.md)
 * Los siguientes operadores booleanos lógicos ahora admiten tensores de salida **UINT8,** además de la compatibilidad existente con **UINT32**.
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_AND**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_EQUALS**
@@ -209,7 +209,7 @@ Se han agregado las siguientes mejoras.
 
 Nivel de característica en el que se introdujo DirectML.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 * [Historial de versiones de DirectML](./dml-version-history.md)
 * [DML_FEATURE_LEVEL enumeración](/windows/win32/api/directml/ne-directml-dml_feature_level)

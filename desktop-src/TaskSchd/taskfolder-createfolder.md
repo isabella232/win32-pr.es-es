@@ -1,11 +1,11 @@
 ---
-title: TaskFolder. CreateFolder, método
-description: En el caso de los scripts, crea una carpeta para las tareas relacionadas.
+title: Método TaskFolder.CreateFolder
+description: Para el scripting, crea una carpeta para las tareas relacionadas.
 ms.assetid: 4fdc96bc-8c85-4b36-b3ea-bad7a46c3d35
 keywords:
-- CreateFolder (método) Programador de tareas
-- Método CreateFolder Programador de tareas, objeto TaskFolder
-- Programador de tareas de objeto TaskFolder, CreateFolder (método)
+- Método CreateFolder Programador de tareas
+- Método CreateFolder Programador de tareas , objeto TaskFolder
+- Objeto TaskFolder Programador de tareas , método CreateFolder
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ae66dadb0c943b1ca33be3e696ac1c8ca7d6234
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93a873ef59ea9d099a7a739e5238c722f4b908fd
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676829"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387084"
 ---
-# <a name="taskfoldercreatefolder-method"></a>TaskFolder. CreateFolder, método
+# <a name="taskfoldercreatefolder-method"></a>Método TaskFolder.CreateFolder
 
-En el caso de los scripts, crea una carpeta para las tareas relacionadas.
+Para el scripting, crea una carpeta para las tareas relacionadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ ppFolder = .CreateFolder( _
 
 <dl> <dt>
 
-*nombrecarpeta* \[ de\]
+*folderName* \[ En\]
 </dt> <dd>
 
-Nombre que se usa para identificar la carpeta. Si \\ se especifica "NombreCarpeta subcarpeta subfolder1 \\ SubFolder2", se creará el árbol de carpetas completo si las carpetas no existen. Este parámetro puede ser una ruta de acceso relativa a la instancia de [**TaskFolder**](taskfolder.md) actual. La carpeta de tareas raíz se especifica con una barra diagonal inversa ( \) . Un ejemplo de una ruta de carpeta de tareas, en la carpeta de tareas raíz, es \\ MyTaskFolder. No se puede usar el carácter '. ' para especificar la carpeta de tareas actual y '.. ' no se pueden usar caracteres para especificar la carpeta de tareas primaria en la ruta de acceso.
+Nombre que se usa para identificar la carpeta. Si se especifica "FolderName \\ SubFolder1 SubFolder2", se creará el árbol de carpetas completo si las carpetas \\ no existen. Este parámetro puede ser una ruta de acceso relativa a la instancia [**actual de TaskFolder.**](taskfolder.md) La carpeta de tareas raíz se especifica con una barra diagonal inversa ( \\ ). Un ejemplo de una ruta de acceso de carpeta de tareas, en la carpeta de tareas raíz, \\ es MyTaskFolder. No se puede usar el carácter '.' para especificar la carpeta de tareas actual y '..'. no se pueden usar caracteres para especificar la carpeta de tareas primaria en la ruta de acceso.
 
 </dd> <dt>
 
-*SDDL* \[ de\]
+*sddl* \[ En\]
 </dt> <dd>
 
 Descriptor de seguridad asociado a la carpeta.
@@ -65,11 +65,11 @@ Objeto [**TaskFolder**](taskfolder.md) que representa la nueva subcarpeta.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -5,12 +5,12 @@ title: Marcas de opción (Winhttp.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 02/25/2020
-ms.openlocfilehash: f9405d604318205b4e951d28d5b0c304a5f7ab71
-ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
+ms.openlocfilehash: f9ca6b7c74d484a6bcac235b2396b2005c8c3260
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "111349984"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386684"
 ---
 # <a name="option-flags"></a>Marcas de opción
 
@@ -399,7 +399,7 @@ Permite que las conexiones seguras usen certificados de seguridad para los que n
 
 
 
-Habilita la reserva rápida de IPv6 (eyeballs desasosidores) para la conexión. Este comportamiento es similar al comportamiento de Happy Eyeballs descrito en [RFC 6555](https://tools.ietf.org/html/rfc6555) para mejorar los tiempos de conexión en redes donde IPv6 no es confiable.
+Habilita la reserva rápida IPv6 (eyeballs desapedachas) para la conexión. Este comportamiento es similar al comportamiento de Happy Eyeballs descrito en [RFC 6555](https://tools.ietf.org/html/rfc6555) para mejorar los tiempos de conexión en redes donde IPv6 no es confiable.
 - Si las direcciones IPv6 e IPv4 se resuelven para un host determinado, WinHttp comenzará conectándose a la primera dirección IPv6 resuelta con un tiempo de espera corto (300 ms).
 - Si se producirá un error en la conexión, WinHttp intentará conectarse a la primera dirección IPv4 resuelta con el tiempo de espera estándar.
 - Si se producirá un error en la segunda conexión, WinHttp volverá a intentar la primera dirección IPv6 resuelta con el tiempo de espera estándar.
@@ -418,7 +418,7 @@ Obtiene si se puede recuperar o no una respuesta de conexión de devolución de 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_MAX_CONNS_PER_1_0_SERVER"></span><span id="winhttp_option_max_conns_per_1_0_server"></span>**OPCIÓN WINHTTP \_ \_ NÚMERO MÁXIMO DE \_ CONNS \_ POR \_ 1 \_ 0 \_ SERVIDOR**
+<span id="WINHTTP_OPTION_MAX_CONNS_PER_1_0_SERVER"></span><span id="winhttp_option_max_conns_per_1_0_server"></span>**OPCIÓN WINHTTP \_ \_ NÚMERO MÁXIMO DE \_ CONN POR \_ \_ 1 \_ SERVIDOR 0 \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -430,7 +430,7 @@ Establece o recupera un valor entero largo sin signo que contiene el número má
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_MAX_CONNS_PER_SERVER"></span><span id="winhttp_option_max_conns_per_server"></span>**OPCIÓN WINHTTP \_ \_ NÚMERO MÁXIMO DE \_ \_ CONNS POR \_ SERVIDOR**
+<span id="WINHTTP_OPTION_MAX_CONNS_PER_SERVER"></span><span id="winhttp_option_max_conns_per_server"></span>**OPCIÓN WINHTTP \_ \_ NÚMERO MÁXIMO DE \_ CONN POR \_ \_ SERVIDOR**
 </dt> <dd> <dl> <dt>
 
 
@@ -447,7 +447,7 @@ Cuando esta opción se establece en cero, WinHTTP establece el límite en el nú
 
 
 
-Establece el número máximo de redirecciones que sigue WinHTTP; el valor predeterminado es 10. Este límite impide que sitios no autorizados haga que el cliente WinHTTP se detenga después de un gran número de redirecciones.
+Establece el número máximo de redirecciones que sigue WinHTTP; el valor predeterminado es 10. Este límite impide que sitios no autorizados haga que el cliente WinHTTP se ponga en pausa después de un gran número de redirecciones.
 
 **Windows XP con SP1 y Windows 2000 con SP3:** Esta marca está obsoleta.
 
@@ -471,14 +471,14 @@ Número máximo de respuestas de código de estado informativo 100-199 omitido a
 
 
 
-Enlazado a la cantidad de datos purgados de las respuestas para reutilizar una conexión, especificada en bytes. El valor predeterminado es 1 MB.
+Enlazado a la cantidad de datos que se purgan de las respuestas para reutilizar una conexión, especificada en bytes. El valor predeterminado es 1 MB.
 
 **Windows XP con SP1 y Windows 2000 con SP3:** Esta marca está obsoleta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_MAX_RESPONSE_HEADER_SIZE"></span><span id="winhttp_option_max_response_header_size"></span>**TAMAÑO MÁXIMO DE ENCABEZADO DE RESPUESTA DE LA \_ \_ OPCIÓN \_ \_ \_ WINHTTP**
+<span id="WINHTTP_OPTION_MAX_RESPONSE_HEADER_SIZE"></span><span id="winhttp_option_max_response_header_size"></span>**TAMAÑO MÁXIMO \_ DE ENCABEZADO DE RESPUESTA DE LA \_ \_ \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -490,7 +490,7 @@ Un conjunto enlazado en el tamaño máximo de la parte de encabezado de la respu
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_PARENT_HANDLE"></span><span id="winhttp_option_parent_handle"></span>**IDENTIFICADOR PRIMARIO DE LA OPCIÓN WINHTTP \_ \_ \_**
+<span id="WINHTTP_OPTION_PARENT_HANDLE"></span><span id="winhttp_option_parent_handle"></span>**IDENTIFICADOR PRIMARIO DE \_ LA \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -505,12 +505,12 @@ Recupera el identificador primario de este identificador.
 
 
 
-Recupera una cadena que contiene el texto [*de marca*](glossary.md) que proporciona el servidor de inicio de sesión de Passport. Esta opción debe recuperarse inmediatamente después de que el servidor de inicio de sesión responda con un código de estado 401. Una aplicación debe pasar un tamaño de búfer, en bytes, lo suficientemente grande como para contener la cadena devuelta.
+Recupera una cadena que contiene el texto [*de marca*](glossary.md) de marca proporcionado por el servidor de inicio de sesión de Passport. Esta opción debe recuperarse inmediatamente después de que el servidor de inicio de sesión responda con un código de estado 401. Una aplicación debe pasar un tamaño de búfer, en bytes, lo suficientemente grande como para contener la cadena devuelta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_PASSPORT_COBRANDING_URL"></span><span id="winhttp_option_passport_cobranding_url"></span>**DIRECCIÓN URL DE \_ \_ \_ COBRANDING DE LA OPCIÓN WINHTTP PASSPORT \_**
+<span id="WINHTTP_OPTION_PASSPORT_COBRANDING_URL"></span><span id="winhttp_option_passport_cobranding_url"></span>**DIRECCIÓN URL DE \_ \_ COBRANDING DE LA OPCIÓN WINHTTP PASSPORT \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -520,7 +520,7 @@ Recupera una cadena que contiene una dirección URL para un [*gráfico de marca*
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_PASSPORT_RETURN_URL"></span><span id="winhttp_option_passport_return_url"></span>**DIRECCIÓN URL DE RETORNO DE PASSPORT DE LA \_ \_ OPCIÓN WINHTTP \_ \_**
+<span id="WINHTTP_OPTION_PASSPORT_RETURN_URL"></span><span id="winhttp_option_passport_return_url"></span>**DIRECCIÓN URL DE \_ RETORNO DE PASSPORT DE LA \_ OPCIÓN WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -535,7 +535,7 @@ Establece una opción de solo lectura en un identificador de solicitud que recup
 
 
 
-Establece la opción en un identificador de sesión para cerrar sesión de los inicios de sesión de Passport. Una aplicación debe pasar la dirección URL de devolución de Passport que se recuperó con **WINHTTP \_ OPTION PASSPORT RETURN \_ \_ \_ URL**. Se borran todas las cookies relacionadas con la dirección URL de devolución.
+Establece la opción en un identificador de sesión para cerrar la sesión de los inicios de sesión de Passport. Una aplicación debe pasar la dirección URL de devolución de Passport que se recuperó con **WINHTTP \_ OPTION PASSPORT RETURN \_ \_ \_ URL**. Se borran todas las cookies relacionadas con la dirección URL de devolución.
 
 
 </dt> </dl> </dd> <dt>
@@ -550,17 +550,17 @@ Establece o recupera un valor de cadena que contiene la contraseña asociada a u
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_PROXY"></span><span id="winhttp_option_proxy"></span>**PROXY DE OPCIÓN \_ WINHTTP \_**
+<span id="WINHTTP_OPTION_PROXY"></span><span id="winhttp_option_proxy"></span>**PROXY DE \_ OPCIÓN WINHTTP \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Establece o recupera una estructura [**DE INFORMACIÓN DE \_ PROXY \_ WINHTTP**](/windows/win32/api/winhttp/ns-winhttp-winhttp_proxy_info) que contiene los datos de proxy en un identificador de sesión o identificador de solicitud existente. Al recuperar datos de proxy, una aplicación debe liberar las cadenas **lpszProxy** y **lpszProxyBypass** contenidas en esta estructura (si no son **NULL)** mediante la [**función GlobalFree.**](/windows/desktop/api/winbase/nf-winbase-globalfree) Una aplicación puede consultar los datos de proxy global (el proxy predeterminado) pasando un **identificador NULL.**
+Establece o recupera una estructura [**DE INFORMACIÓN DE \_ PROXY \_ WINHTTP**](/windows/win32/api/winhttp/ns-winhttp-winhttp_proxy_info) que contiene los datos de proxy en un identificador de sesión o identificador de solicitud existente. Al recuperar datos de proxy, una aplicación debe liberar las **cadenas lpszProxy** y **lpszProxyBypass** contenidas en esta estructura (si no son **NULL)** mediante la [**función GlobalFree.**](/windows/desktop/api/winbase/nf-winbase-globalfree) Una aplicación puede consultar los datos del proxy global (el proxy predeterminado) pasando un **identificador NULL.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_PROXY_PASSWORD"></span><span id="winhttp_option_proxy_password"></span>**CONTRASEÑA DE \_ PROXY DE OPCIÓN \_ WINHTTP \_**
+<span id="WINHTTP_OPTION_PROXY_PASSWORD"></span><span id="winhttp_option_proxy_password"></span>**CONTRASEÑA DE \_ PROXY DE \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -575,7 +575,7 @@ Establece o recupera un valor de cadena que contiene la contraseña usada para a
 
 
 
-Obtiene el nombre principal del servidor proxy que WinHTTP proporcionó a SSPI durante la autenticación. Este valor de cadena se usa para pasar a [**SspiPromptForCredentials después**](/windows/desktop/api/sspi/nf-sspi-sspipromptforcredentialsa) de un error de autenticación.
+Obtiene el nombre principal del servidor proxy que WinHTTP proporcionó a SSPI durante la autenticación. Este valor de cadena se usa para pasar a [**SspiPromptForCredentials**](/windows/desktop/api/sspi/nf-sspi-sspipromptforcredentialsa) después de un error de autenticación.
 
 
 </dt> </dl> </dd> <dt>
@@ -590,17 +590,17 @@ Establece o recupera un valor de cadena que contiene el nombre de usuario utiliz
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_READ_BUFFER_SIZE"></span><span id="winhttp_option_read_buffer_size"></span>**TAMAÑO DEL BÚFER \_ DE LECTURA DE LA OPCIÓN \_ \_ \_ WINHTTP**
+<span id="WINHTTP_OPTION_READ_BUFFER_SIZE"></span><span id="winhttp_option_read_buffer_size"></span>**TAMAÑO DEL BÚFER \_ DE LECTURA DE LA \_ \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Esta opción ha quedado en desuso; no tiene ningún efecto.
+Esta opción está en desuso; no tiene ningún efecto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_RECEIVE_PROXY_CONNECT_RESPONSE"></span><span id="winhttp_option_receive_proxy_connect_response"></span>**RESPUESTA DE CONEXIÓN DE \_ PROXY DE RECEPCIÓN DE LA OPCIÓN \_ \_ \_ \_ WINHTTP**
+<span id="WINHTTP_OPTION_RECEIVE_PROXY_CONNECT_RESPONSE"></span><span id="winhttp_option_receive_proxy_connect_response"></span>**RESPUESTA DE \_ CONEXIÓN DEL PROXY DE RECEPCIÓN DE LA OPCIÓN \_ \_ \_ \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -627,63 +627,63 @@ Este tiempo de espera solo se comprueba cuando se reciben datos del socket. Como
 
 
 
-Establece o recupera un valor entero largo sin signo que contiene el valor de tiempo de espera, en milisegundos, para recibir una respuesta parcial a una solicitud o leer algunos datos. Si la respuesta tarda más que este valor de tiempo de espera, se cancela la solicitud. El valor predeterminado del tiempo de espera es de 30 segundos.
+Establece o recupera un valor entero largo sin signo que contiene el valor de tiempo de espera, en milisegundos, para recibir una respuesta parcial a una solicitud o leer algunos datos. Si la respuesta tarda más tiempo que este valor de tiempo de espera, se cancela la solicitud. El valor predeterminado del tiempo de espera es de 30 segundos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_REDIRECT_POLICY"></span><span id="winhttp_option_redirect_policy"></span>**DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES WINHTTP \_**
+<span id="WINHTTP_OPTION_REDIRECT_POLICY"></span><span id="winhttp_option_redirect_policy"></span>**DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Establece el comportamiento de WinHTTP con respecto al control de un código de estado de redirección HTTP 30x. Esta opción se puede establecer en un identificador de sesión o solicitud en uno de los valores siguientes:
+Establece el comportamiento de WinHTTP con respecto al control de un código de estado de redireccionamiento HTTP 30 veces mayor. Esta opción se puede establecer en un identificador de sesión o solicitud en uno de los valores siguientes:
 
 | Término | Descripción |
 |-|-|
 | <span id="WINHTTP_OPTION_REDIRECT_POLICY_ALWAYS"></span><span id="winhttp_option_redirect_policy_always"></span>DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES WINHTTP \_ \_ SIEMPRE | Todas las redirecciones se siguen automáticamente. |
-| <span id="WINHTTP_OPTION_REDIRECT_POLICY_DISALLOW_HTTPS_TO_HTTP"></span><span id="winhttp_option_redirect_policy_disallow_https_to_http"></span>LA DIRECTIVA DE \_ REDIRECCIÓN \_ DE OPCIONES WINHTTP NO PERMITE \_ HTTPS A \_ \_ \_ \_ HTTP | Se siguen todas las redirecciones, excepto las que se originan desde una dirección URL segura (https) a una dirección URL no segura (http). Esta es la configuración predeterminada. |
-| <span id="WINHTTP_OPTION_REDIRECT_POLICY_NEVER"></span><span id="winhttp_option_redirect_policy_never"></span>DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES WINHTTP \_ \_ NUNCA | Las redirecciones nunca se siguen. El estado 30x se devuelve a la aplicación. |
+| <span id="WINHTTP_OPTION_REDIRECT_POLICY_DISALLOW_HTTPS_TO_HTTP"></span><span id="winhttp_option_redirect_policy_disallow_https_to_http"></span>DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES WINHTTP NO PERMITE HTTPS \_ A \_ \_ \_ \_ HTTP | Se siguen todas las redirecciones, excepto las que se originan desde una dirección URL segura (https) a una dirección URL no segura (http). Esta es la configuración predeterminada. |
+| <span id="WINHTTP_OPTION_REDIRECT_POLICY_NEVER"></span><span id="winhttp_option_redirect_policy_never"></span>DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES WINHTTP \_ \_ NUNCA | Los redireccionamientos nunca se siguen. El estado 30x se devuelve a la aplicación. |
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_REJECT_USERPWD_IN_URL"></span><span id="winhttp_option_reject_userpwd_in_url"></span>**OPCIÓN WINHTTP \_ \_ RECHAZAR \_ USERPWD \_ EN \_ URL**
+<span id="WINHTTP_OPTION_REJECT_USERPWD_IN_URL"></span><span id="winhttp_option_reject_userpwd_in_url"></span>**OPCIÓN WINHTTP \_ \_ REJECT \_ USERPWD \_ IN \_ URL**
 </dt> <dd> <dl> <dt>
 
 
 
-Rechaza las direcciones URL que contienen un nombre de usuario y una contraseña. Esta opción también rechaza las direcciones URL que contienen la semántica *username:password,* incluso si no se especifica ningún nombre de usuario o contraseña. Por ejemplo, " ", " ", " " y " " se marcarán como u:p@hostname :@hostname no u:@hostname :p@hostname válidos. Si se pasa una dirección URL no válida a la función, devuelve [ERROR \_ WINHTTP \_ INVALID \_ URL](error-messages.md). Esta opción está desactivada de forma predeterminada.
+Rechaza las direcciones URL que contienen un nombre de usuario y una contraseña. Esta opción también rechaza las direcciones URL que contienen semántica *username:password,* incluso si no se especifica ningún nombre de usuario o contraseña. Por ejemplo, " u:p@hostname ", " ", " " " y :@hostname " " " se u:@hostname :p@hostname marcarán como no válidos. Si se pasa una dirección URL no válida a la función, devuelve [ERROR \_ WINHTTP \_ INVALID \_ URL](error-messages.md). Esta opción está desactivada de forma predeterminada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_REQUEST_PRIORITY"></span><span id="winhttp_option_request_priority"></span>**PRIORIDAD DE SOLICITUD \_ DE \_ LA OPCIÓN \_ WINHTTP**
+<span id="WINHTTP_OPTION_REQUEST_PRIORITY"></span><span id="winhttp_option_request_priority"></span>**PRIORIDAD DE \_ SOLICITUD DE LA OPCIÓN \_ \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Esta opción ha quedado en desuso; no tiene ningún efecto.
+Esta opción está en desuso; no tiene ningún efecto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_REQUEST_STATS"></span><span id="winhttp_option_request_stats"></span>**ESTADÍSTICAS DE SOLICITUD \_ DE \_ OPCIÓN \_ WINHTTP**
+<span id="WINHTTP_OPTION_REQUEST_STATS"></span><span id="winhttp_option_request_stats"></span>**ESTADÍSTICAS DE \_ SOLICITUD DE LA OPCIÓN \_ \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Retraives statistics for the request( Retreives statistics for the request( Retreives statistics for the request).  Para obtener una lista de las estadísticas disponibles, vea [**ESTADÍSTICAS DE SOLICITUDES WINHTTP \_ \_**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_stats).
+Retraive las estadísticas de la solicitud.  Para obtener una lista de las estadísticas disponibles, [**vea \_ ESTADÍSTICAS DE SOLICITUDES \_ WINHTTP**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_stats).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_REQUEST_TIMES"></span><span id="winhttp_option_request_times"></span>**TIEMPOS DE SOLICITUD \_ DE \_ LA OPCIÓN \_ WINHTTP**
+<span id="WINHTTP_OPTION_REQUEST_TIMES"></span><span id="winhttp_option_request_times"></span>**TIEMPOS DE SOLICITUD \_ DE \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Retraive la información de tiempo de la solicitud. Para obtener una lista de los intervalos disponibles, vea [**WINHTTP \_ REQUEST \_ TIMES**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_times).
+Retraive la información de tiempo de la solicitud. Para obtener una lista de los intervalos disponibles, [**vea WINHTTP \_ REQUEST \_ TIMES**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_times).
 
 
 </dt> </dl> </dd> <dt>
@@ -693,7 +693,7 @@ Retraive la información de tiempo de la solicitud. Para obtener una lista de lo
 
 
 
-Establece o recupera un valor entero largo sin signo que contiene el valor de tiempo de espera, en milisegundos, para resolver un nombre de host. El valor de tiempo de espera predeterminado **es INFINITE.** Si se especifica un valor no predeterminado, hay una sobrecarga de una creación de subprocesos por resolución de nombres.
+Establece o recupera un valor entero largo sin signo que contiene el valor de tiempo de espera, en milisegundos, para resolver un nombre de host. El valor de tiempo de espera predeterminado **es INFINITE.** Si se especifica un valor no predeterminado, hay una sobrecarga de una creación de subprocesos por resolución de nombre.
 
 
 </dt> </dl> </dd> <dt>
@@ -737,7 +737,7 @@ Establece o recupera un valor entero largo sin signo que contiene las marcas de 
 | Término | Descripción |
 |-|-|
 | <span id="SECURITY_FLAG_IGNORE_CERT_CN_INVALID"></span><span id="security_flag_ignore_cert_cn_invalid"></span>LA MARCA \_ DE SEGURIDAD OMITIR CN DE CERTIFICADO NO ES \_ \_ \_ \_ VÁLIDA |Permite un nombre común no válido en un certificado; es decir, el nombre de servidor especificado por la aplicación no coincide con el nombre común del certificado. Si se establece esta marca, la aplicación no recibe una devolución de llamada **WINHTTP \_ CALLBACK \_ STATUS FLAG CERT CN \_ \_ \_ \_ INVALID.** |
-| <span id="SECURITY_FLAG_IGNORE_CERT_DATE_INVALID"></span><span id="security_flag_ignore_cert_date_invalid"></span>LA MARCA \_ DE SEGURIDAD OMITIR LA FECHA DE CERTIFICADO NO ES \_ \_ \_ \_ VÁLIDA |Permite una fecha de certificado no válida, es decir, un certificado expirado o aún no efectivo. Si se establece esta marca, la aplicación no recibe una devolución de llamada **CERT \_ DATE \_ \_ \_ \_ \_ INVALID** DE MARCA DE ESTADO DE DEVOLUCIÓN DE LLAMADA WINHTTP. |
+| <span id="SECURITY_FLAG_IGNORE_CERT_DATE_INVALID"></span><span id="security_flag_ignore_cert_date_invalid"></span>MARCA DE \_ SEGURIDAD OMITIR LA FECHA DE CERTIFICADO NO \_ \_ \_ \_ VÁLIDA |Permite una fecha de certificado no válida, es decir, un certificado expirado o no efectivo. Si se establece esta marca, la aplicación no recibe una devolución de llamada **CERT \_ DATE \_ \_ \_ \_ \_ INVALID** DE LA MARCA DE ESTADO DE DEVOLUCIÓN DE LLAMADA WINHTTP. |
 | <span id="SECURITY_FLAG_IGNORE_UNKNOWN_CA"></span><span id="security_flag_ignore_unknown_ca"></span>MARCA DE \_ SEGURIDAD \_ OMITIR CA \_ \_ DESCONOCIDA | Permite una entidad de certificación no válida. Si se establece esta marca, la aplicación no recibe una devolución de llamada DE CA NO VÁLIDA DE LA MARCA DE ESTADO DE DEVOLUCIÓN DE LLAMADA **WINHTTP. \_ \_ \_ \_ \_** |
 | <span id="SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE"></span><span id="security_flag_ignore_cert_wrong_usage"></span>MARCA DE \_ SEGURIDAD OMITIR EL USO INCORRECTO DEL \_ \_ \_ \_ CERTIFICADO | Permite establecer la identidad de un servidor con un certificado que no es de servidor (por ejemplo, un certificado de cliente). |
 | <span id="SECURITY_FLAG_IGNORE_WEAK_SIGNATURE"></span><span id="security_flag_ignore_weak_signature"></span>MARCA DE \_ SEGURIDAD \_ OMITIR FIRMA \_ \_ DÉBIL | Permite omitir una firma débil.<br/>Esta marca está disponible en la actualización de acumulación para cada sistema operativo a partir de Windows 7 y Windows Server 2008 R2. |
@@ -769,7 +769,7 @@ Recupera un valor entero largo sin signo que contiene la intensidad de cifrado d
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_SEND_TIMEOUT"></span><span id="winhttp_option_send_timeout"></span>**OPCIÓN WINHTTP \_ ENVIAR \_ TIEMPO DE \_ ESPERA**
+<span id="WINHTTP_OPTION_SEND_TIMEOUT"></span><span id="winhttp_option_send_timeout"></span>**OPCIÓN WINHTTP \_ ENVIAR TIEMPO DE \_ \_ ESPERA**
 </dt> <dd> <dl> <dt>
 
 
@@ -849,6 +849,16 @@ Habilita TCP Fast Open para la conexión.
 
 </dt> </dl> </dd> <dt>
 
+<span id="WINHTTP_OPTION_TCP_KEEPALIVE"></span><span id="winhttp_option_tcp_keepalive"></span>**OPCIÓN WINHTTP \_ \_ TCP \_ KEEPALIVE**
+</dt> <dd> <dl> <dt>
+
+
+
+Esta opción se puede establecer en un identificador de sesión WinHttp para habilitar el comportamiento de conexión de TCP en el socket subyacente. Toma una [**estructura \_ tcp keepalive.**](/windows/win32/winsock/sio-keepalive-vals)
+
+
+</dt> </dl> </dd> <dt>
+
 <span id="WINHTTP_OPTION_TLS_FALSE_START"></span><span id="winhttp_option_tls_false_start"></span>**OPCIÓN WINHTTP \_ \_ TLS FALSE \_ \_ START**
 </dt> <dd> <dl> <dt>
 
@@ -859,7 +869,7 @@ Habilita TLS False Start para la conexión.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_UNLOAD_NOTIFY_EVENT"></span><span id="winhttp_option_unload_notify_event"></span>**EVENTO UNLOAD \_ NOTIFY DE LA OPCIÓN \_ WINHTTP \_ \_**
+<span id="WINHTTP_OPTION_UNLOAD_NOTIFY_EVENT"></span><span id="winhttp_option_unload_notify_event"></span>**EVENTO DE NOTIFICACIÓN DE \_ DESCARGA DE LA OPCIÓN \_ WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -869,7 +879,7 @@ Toma un evento que se establecerá cuando se haya completado la última devoluci
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_UNSAFE_HEADER_PARSING"></span><span id="winhttp_option_unsafe_header_parsing"></span>**ANÁLISIS DE ENCABEZADOS NO SEGUROS \_ DE LA \_ OPCIÓN \_ \_ WINHTTP**
+<span id="WINHTTP_OPTION_UNSAFE_HEADER_PARSING"></span><span id="winhttp_option_unsafe_header_parsing"></span>**ANÁLISIS DE ENCABEZADOS NO SEGUROS DE LA \_ \_ \_ \_ OPCIÓN WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -884,7 +894,7 @@ Esta opción está reservada para uso interno y no se debe llamar a .
 
 
 
-Indica a la pila que inicie un proceso de protocolo de enlace webSocket [**con WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest). Esta opción no toma ningún parámetro.
+Indica a la pila que inicie un proceso de protocolo de enlace de WebSocket [**con WinHttpSendRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) Esta opción no toma ningún parámetro.
 
 
 </dt> </dl> </dd> <dt>
@@ -894,7 +904,7 @@ Indica a la pila que inicie un proceso de protocolo de enlace webSocket [**con W
 
 
 
-Recupera un valor de cadena que contiene la dirección URL completa de un recurso descargado. Si la dirección URL original contenía datos adicionales, como cadenas de búsqueda o delimitadores, o si se redirija la llamada, la dirección URL devuelta difiere del original. La aplicación debe pasar un búfer, con un tamaño en bytes, lo suficientemente grande como para contener la dirección URL devuelta en caracteres anchos.
+Recupera un valor de cadena que contiene la dirección URL completa de un recurso descargado. Si la dirección URL original contenía datos adicionales, como cadenas de búsqueda o delimitadores, o si la llamada se redirija, la dirección URL devuelta difiere de la original. La aplicación debe pasar un búfer, con un tamaño en bytes, lo suficientemente grande como para contener la dirección URL devuelta en caracteres anchos.
 
 
 </dt> </dl> </dd> <dt>
@@ -904,22 +914,22 @@ Recupera un valor de cadena que contiene la dirección URL completa de un recurs
 
 
 
-Toma un **valor BOOL** y solo se puede establecer un identificador de sesión. Solo se propagará hacia abajo a los identificadores creados a partir del identificador de sesión una vez establecida la opción. Si **es TRUE,** esta opción provoca como último recurso el uso de credenciales de servidor globales que se insertaron desde WinInet. El valor predeterminado de esta opción es **FALSE.** Esta opción requiere la clave del Registro **HKLM \\ Software Microsoft \\ Windows \\ \\ CurrentVersion Internet \\ Settings! ShareCredsWithWinHttp**. Esta clave del Registro no está presente de forma predeterminada. Cuando se establece, WinINet enviará las credenciales a WinHTTP. Cada vez que WinHttp obtiene un desafío de autenticación y no hay ninguna credencial establecida en el identificador actual, usará las credenciales proporcionadas por WinINet.
+Toma un **valor BOOL** y solo se puede establecer un identificador de sesión. Solo se propagará hacia abajo a los identificadores creados a partir del identificador de sesión una vez establecida la opción. Si **es TRUE,** esta opción provoca como último recurso el uso de credenciales de servidor global que se insertaron desde WinInet. El valor predeterminado de esta opción es **FALSE.** Esta opción requiere la clave del Registro **HKLM \\ Software Microsoft \\ Windows \\ \\ CurrentVersion Internet \\ Settings! ShareCredsWithWinHttp**. Esta clave del Registro no está presente de forma predeterminada. Cuando se establece, WinINet enviará las credenciales a WinHTTP. Cada vez que WinHttp obtiene un desafío de autenticación y no hay ninguna credencial establecida en el identificador actual, usará las credenciales proporcionadas por WinINet.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_USER_AGENT"></span><span id="winhttp_option_user_agent"></span>**AGENTE DE USUARIO DE \_ \_ LA OPCIÓN \_ WINHTTP**
+<span id="WINHTTP_OPTION_USER_AGENT"></span><span id="winhttp_option_user_agent"></span>**AGENTE DE USUARIO \_ DE LA \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Establece o recupera [](glossary.md) la cadena del agente de usuario en los identificadores proporcionados por [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) y usados en funciones [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) posteriores, siempre y cuando no se invalide por un encabezado agregado por [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) o **WinHttpSendRequest**. Al recuperar un agente de usuario, la aplicación debe pasar un búfer, con un tamaño en bytes, lo suficientemente grande como para contener la dirección URL devuelta en caracteres anchos. Al establecer el agente de usuario, el tamaño del búfer es la longitud de la cadena, en caracteres, más el **terminador NULL.**
+Establece o recupera [](glossary.md) la cadena del agente de usuario en los identificadores proporcionados por [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) y usados en funciones [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) posteriores, siempre que no se invalide por un encabezado agregado por [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) **o WinHttpSendRequest**. Al recuperar un agente de usuario, la aplicación debe pasar un búfer, con un tamaño en bytes, lo suficientemente grande como para contener la dirección URL devuelta en caracteres anchos. Al establecer el agente de usuario, el tamaño del búfer es la longitud de la cadena, en caracteres, más el **terminador NULL.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_USERNAME"></span><span id="winhttp_option_username"></span>**NOMBRE DE USUARIO DE \_ LA OPCIÓN \_ WINHTTP**
+<span id="WINHTTP_OPTION_USERNAME"></span><span id="winhttp_option_username"></span>**NOMBRE DE USUARIO DE LA OPCIÓN WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -929,7 +939,7 @@ Establece o recupera una cadena que contiene el nombre de usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_WEB_SOCKET_CLOSE_TIMEOUT"></span><span id="winhttp_option_web_socket_close_timeout"></span>**OPCIÓN WINHTTP \_ TIEMPO DE ESPERA DE CIERRE DE SOCKET \_ \_ \_ \_ WEB**
+<span id="WINHTTP_OPTION_WEB_SOCKET_CLOSE_TIMEOUT"></span><span id="winhttp_option_web_socket_close_timeout"></span>**TIEMPO DE ESPERA \_ DE CIERRE DE SOCKET WEB DE LA \_ \_ \_ OPCIÓN \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -939,20 +949,20 @@ Establece el tiempo, en milisegundos, que [**WinHttpWebSocketClose**](/windows/d
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_WEB_SOCKET_KEEPALIVE_INTERVAL"></span><span id="winhttp_option_web_socket_keepalive_interval"></span>**OPCIÓN WINHTTP \_ \_ WEB SOCKET \_ \_ KEEPALIVE \_ INTERVAL**
+<span id="WINHTTP_OPTION_WEB_SOCKET_KEEPALIVE_INTERVAL"></span><span id="winhttp_option_web_socket_keepalive_interval"></span>**OPCIÓN WINHTTP \_ \_ WEB SOCKET \_ \_ \_ KEEPALIVE INTERVAL**
 </dt> <dd> <dl> <dt>
 
 
 
-Establece el intervalo, en milisegundos, para enviar un paquete keep-alive a través de la conexión. El intervalo predeterminado es 30 000 (30 segundos). El intervalo mínimo es 15 000 (15 segundos). El [**uso de WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) para establecer un valor inferior a 15000 devolverá **con ERROR INVALID \_ \_ PARAMETER**.
+Establece el intervalo, en milisegundos, para enviar un paquete keep-alive a través de la conexión. El intervalo predeterminado es 30 000 (30 segundos). El intervalo mínimo es 15 000 (15 segundos). El [**uso de WinHttpSetOption para**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) establecer un valor inferior a 15000 devolverá con ERROR INVALID **\_ \_ PARAMETER**.
 
 > [!Note]
-> El valor predeterminado de **WINHTTP \_ OPTION WEB SOCKET \_ \_ \_ KEEPALIVE \_ INTERVAL** se lee en **HKLM: \\ SOFTWARE Microsoft \\ \\ WebSocket \\ KeepaliveInterval**. Si no se establece un valor, se usará el valor predeterminado 30000. No es posible tener un intervalo de keepalive inferior a 15 000 milisegundos.
+> El valor predeterminado de **WINHTTP \_ OPTION WEB SOCKET \_ \_ \_ KEEPALIVE \_ INTERVAL** se lee de **HKLM: \\ SOFTWARE Microsoft \\ \\ WebSocket \\ KeepaliveInterval**. Si no se establece un valor, se usará el valor predeterminado de 30000. No es posible tener un intervalo de keepalive inferior a 15 000 milisegundos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_OPTION_WEB_SOCKET_RECEIVE_BUFFER_SIZE"></span><span id="winhttp_option_web_socket_receive_buffer_size"></span>**TAMAÑO DEL BÚFER \_ DE RECEPCIÓN DE LA OPCIÓN WINHTTP \_ \_ WEB SOCKET \_ \_ \_**
+<span id="WINHTTP_OPTION_WEB_SOCKET_RECEIVE_BUFFER_SIZE"></span><span id="winhttp_option_web_socket_receive_buffer_size"></span>**TAMAÑO DEL BÚFER DE RECEPCIÓN DE LA OPCIÓN WINHTTP \_ \_ WEB \_ SOCKET \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -967,7 +977,7 @@ Establece o recupera un DWORD que especifica el tamaño del búfer de recepción
 
 
 
-Establece o recupera un DWORD que especifica el tamaño del búfer de envío que se va a usar en las conexiones de WebSocket.
+Establece o recupera un DWORD que especifica el tamaño del búfer de envío que se usará en las conexiones webSocket.
 
 
 </dt> </dl> </dd> <dt>
@@ -989,47 +999,47 @@ Establece un valor entero largo sin signo que especifica el número de subproces
 
 
 
-Esta opción está en desuso; no tiene ningún efecto.
+Esta opción ha quedado en desuso; no tiene ningún efecto.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-En la tabla siguiente se enumeran las marcas de opción especificando sobre qué identificadores pueden actuar, si se pueden consultar y establecer, y el tipo de datos utilizado. Una "X" indica que la marca de opción es válida para su uso con la función o el identificador, mientras que "-" especifica que la marca de opción no es válida.
+En la tabla siguiente se enumeran las marcas de opción especificando los identificadores sobre los que pueden actuar, si se pueden consultar y establecer, y el tipo de datos utilizado. Una "X" indica que la marca de opción es válida para su uso con la función o el identificador, mientras que "-" especifica que la marca de opción no es válida.
 
-Si intenta establecer o consultar una marca de opción en una versión de Windows en la que no se admite, se producirá **el error \_ WINHTTP INVALID \_ \_ OPTION**.
+Al intentar establecer o consultar una marca de opción en una versión de Windows en la que no se admite, se producirá **el error \_ WINHTTP INVALID \_ \_ OPTION**.
 
 | Marca de opción y tipo de datos | Identificador de sesión | Identificador de solicitud | Opción de consulta | Opción SET | Versión mínima de Windows |
 |-|-|-|-|-|-|
 | OPCIÓN WINHTTP \_ QUE GARANTIZA DEVOLUCIONES DE LLAMADA SIN \_ \_ \_ \_ BLOQUEO<br/>**Bool** | X | \- | \- | X | \- |
 | DIRECTIVA DE \_ INICIO DE SESIÓN AUTOMÁTICO DE LA OPCIÓN \_ \_ WINHTTP<br/>**DWORD** | \- | X | \- | X | \- |
-| DEVOLUCIÓN DE LLAMADA \_ DE \_ LA OPCIÓN WINHTTP<br/>**LPVOID** | X | X | X | X | \- |
-| CONTEXTO DE CERTIFICADO \_ DE CLIENTE DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**CONTEXTO \_ DE CERTIFICADO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) | \- | X | \- | X | Windows Vista |
+| DEVOLUCIÓN DE LLAMADA \_ DE LA \_ OPCIÓN WINHTTP<br/>**LPVOID** | X | X | X | X | \- |
+| CONTEXTO DE CERTIFICADO \_ DE CLIENTE DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**CONTEXTO \_ DE CERT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) | \- | X | \- | X | Windows Vista |
 | LISTA DE \_ \_ EMISORES DE \_ CERTIFICADOS DE CLIENTE DE LA \_ OPCIÓN \_ WINHTTP<br/>[**SecPkgContext \_ IssuerListInfoEx**](/windows/desktop/api/schannel/ns-schannel-secpkgcontext_issuerlistinfoex) | \- | X | X | \- | Windows Vista |
-| PÁGINA DE CÓDIGOS \_ DE \_ LA OPCIÓN WINHTTP<br/>**DWORD** | X | \- | \- | X | \- |
-| OPCIÓN WINHTTP \_ CONFIGURAR \_ LA \_ \_ AUTENTICACIÓN DE PASSPORT<br/>**DWORD** | X | \- | \- | X | \- |
+| PÁGINA DE CÓDIGOS \_ DE LA \_ OPCIÓN WINHTTP<br/>**DWORD** | X | \- | \- | X | \- |
+| OPCIÓN WINHTTP \_ CONFIGURAR \_ LA \_ AUTENTICACIÓN DE PASSPORT \_<br/>**DWORD** | X | \- | \- | X | \- |
 | REINTENTOS DE \_ CONEXIÓN DE LA OPCIÓN \_ \_ WINHTTP<br/>**DWORD** | X | X | X | X | \- |
-| OPCIÓN WINHTTP \_ CONNECT \_ \_ TIMEOUT<br/>**DWORD** | X | X | X | X | \- |
-| INFORMACIÓN DE CONEXIÓN \_ DE LA \_ OPCIÓN \_ WINHTTP<br/>[**INFORMACIÓN DE CONEXIÓN \_ \_ WINHTTP**](/windows/desktop/api/Winhttp/ns-winhttp-winhttp_connection_info) | \- | X | X | \- | \- |
+| TIEMPO DE ESPERA \_ DE CONEXIÓN DE LA OPCIÓN \_ \_ WINHTTP<br/>**DWORD** | X | X | X | X | \- |
+| INFORMACIÓN DE CONEXIÓN \_ DE \_ LA OPCIÓN \_ WINHTTP<br/>[**INFORMACIÓN DE CONEXIÓN \_ WINHTTP \_**](/windows/desktop/api/Winhttp/ns-winhttp-winhttp_connection_info) | \- | X | X | \- | \- |
 | WINHTTP \_ OPTION \_ CONNECTION \_ STATS \_ V0<br/>[**TCP \_ INFO \_ v0**](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v0) | \- | X | X | \- | Windows 10 versión 1903 |
-| ESTADÍSTICAS DE CONEXIÓN DE LA OPCIÓN WINHTTP \_ \_ \_ \_ V1<br/>[**TCP \_ INFO \_ v1**](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v1) | \- | X | X | \- | Windows 10 versión 2004 |
-| VALOR DE CONTEXTO \_ DE LA \_ OPCIÓN \_ WINHTTP<br/>**DWORD \_ PTR** | X | X | X | X | \- |
-| \_DESCOMPRESIÓN DE LA OPCIÓN WINHTTP \_<br/>**DWORD** | X | X | \- | X | Windows 8.1 |
+| WINHTTP \_ OPTION \_ CONNECTION \_ STATS \_ V1<br/>[**TCP \_ INFO \_ v1**](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v1) | \- | X | X | \- | Windows 10 versión 2004 |
+| VALOR DE CONTEXTO \_ DE \_ LA OPCIÓN \_ WINHTTP<br/>**DWORD \_ PTR** | X | X | X | X | \- |
+| DESCOMPRESIÓN DE \_ LA OPCIÓN WINHTTP \_<br/>**DWORD** | X | X | \- | X | Windows 8.1 |
 | CARACTERÍSTICA DESHABILITAR OPCIÓN WINHTTP \_ \_ \_<br/>**DWORD** | \- | X | \- | X | \- |
-| OPCIÓN WINHTTP \_ DESHABILITAR RESERVA DE PROTOCOLO \_ \_ \_ \_ SEGURO<br/>**Bool** | X | \- | \- | X | Windows 10 versión 1903 |
-| OPCIÓN WINHTTP \_ DESHABILITAR \_ COLA DE \_ \_ TRANSMISIONES<br/>**Bool** | X | X | \- | X | Windows 10 versión 1809 |
+| OPCIÓN WINHTTP \_ DESHABILITAR LA RESERVA DE \_ \_ \_ \_ PROTOCOLOS SEGUROS<br/>**Bool** | X | \- | \- | X | Windows 10 versión 1903 |
+| OPCIÓN WINHTTP \_ DISABLE \_ STREAM \_ \_ QUEUE<br/>**Bool** | X | X | \- | X | Windows 10 versión 1809 |
 | CARACTERÍSTICA HABILITAR OPCIÓN WINHTTP \_ \_ \_<br/>**DWORD** | \* | \* | \- | X | \- |
 | OPCIÓN WINHTTP \_ HABILITAR \_ PROTOCOLO \_ \_ HTTP<br/>**DWORD** | X | X | \- | X | Windows 10 Versión 1607 |
 | HABILITACIÓN \_ DE LA OPCIÓN \_ WINHTTPTRACING<br/>**DWORD** | \- | \- | X | X | \- |
 | CODIFICACIÓN \_ ADICIONAL DE LA \_ OPCIÓN \_ WINHTTP<br/>**Bool** | X | X | \- | X | Windows 10 versión 1803 |
-| OPCIÓN WINHTTP \_ \_ EXPIRE \_ CONNECTION<br/>N/D | \- | X | \- | X | Windows 10 versión 1903 |
+| LA OPCIÓN WINHTTP \_ \_ EXPIRA LA \_ CONEXIÓN<br/>N/D | \- | X | \- | X | Windows 10 versión 1903 |
 | ERROR EXTENDIDO DE LA OPCIÓN WINHTTP \_ \_ \_<br/>**DWORD** | X | X | X | \- | \- |
-| CREDS DE PROXY GLOBAL DE \_ \_ LA OPCIÓN \_ \_ WINHTTP<br/>[**WINHTTP \_ CREDS**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds) | X | X | \- | X | \- |
-| WINHTTP \_ OPTION \_ GLOBAL \_ SERVER \_ CREDS<br/>[**WINHTTP \_ CREDS \_ EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex) | X | X | \- | X | \- |
-| TIPO DE IDENTIFICADOR \_ DE OPCIÓN \_ WINHTTP \_<br/>**DWORD** | X | X | X | \- | \- |
-| SE REQUIERE \_ EL PROTOCOLO HTTP DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>**Bool** | X | X | \- | X | Windows 10 versión 1903 |
-| SE USA EL PROTOCOLO HTTP DE \_ \_ LA OPCIÓN WINHTTP \_ \_<br/>**DWORD** | \- | X | X | \- | Windows 10 Versión 1607 |
+| \_CREDS DE PROXY GLOBAL DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**CREDS DE WINHTTP \_**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds) | X | X | \- | X | \- |
+| \_CREDS DE SERVIDOR GLOBAL DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**WINHTTP \_ CREDS \_ EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex) | X | X | \- | X | \- |
+| TIPO DE IDENTIFICADOR \_ DE \_ OPCIÓN \_ WINHTTP<br/>**DWORD** | X | X | X | \- | \- |
+| SE REQUIERE EL \_ PROTOCOLO HTTP DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>**Bool** | X | X | \- | X | Windows 10 versión 1903 |
+| OPCIÓN WINHTTP \_ \_ PROTOCOLO HTTP \_ \_ USADO<br/>**DWORD** | \- | X | X | \- | Windows 10 Versión 1607 |
 | VERSIÓN HTTP DE \_ LA OPCIÓN \_ \_ WINHTTP<br/>[**INFORMACIÓN \_ DE VERSIÓN \_ HTTP**](/windows/win32/api/winhttp/ns-winhttp-http_version_info) | X | X | X | X | \- |
 | OPCIÓN WINHTTP \_ OMITIR \_ \_ REVOCACIÓN \_ DE CERTIFICADOS \_ SIN CONEXIÓN<br/>**Bool** | \- | X | \- | X | Windows 10 versión 2004 |
 | OPCIÓN WINHTTP \_ \_ IPV6 \_ FAST \_ FALLBACK<br/>**Bool** | X | \- | \- | X | Windows 10 versión 1903 |
@@ -1046,34 +1056,35 @@ Si intenta establecer o consultar una marca de opción en una versión de Window
 | DIRECCIÓN URL DE \_ RETORNO DE PASSPORT DE LA \_ OPCIÓN WINHTTP \_ \_<br/>**LPVOID** | \- | X | X | \- | \- |
 | OPCIÓN WINHTTP \_ \_ PASSPORT SIGN \_ \_ OUT<br/>**LPVOID** | X | \- | \- | X | \- |
 | CONTRASEÑA DE LA OPCIÓN WINHTTP \_ \_<br/>**LPWSTR** | \- | X | X | X | \- |
-| PROXY DE \_ OPCIÓN WINHTTP \_<br/>[**INFORMACIÓN DEL PROXY WINHTTP \_ \_**](/windows/win32/api/winhttp/ns-winhttp-winhttp_proxy_info) | X | X | X | X | \- |
+| PROXY DE \_ OPCIÓN WINHTTP \_<br/>[**INFORMACIÓN DEL \_ PROXY \_ WINHTTP**](/windows/win32/api/winhttp/ns-winhttp-winhttp_proxy_info) | X | X | X | X | \- |
 | CONTRASEÑA DE \_ PROXY DE \_ OPCIÓN \_ WINHTTP<br/>**LPWSTR** | \- | X | X | X | \- |
 | SPN DE \_ \_ PROXY DE OPCIÓN \_ WINHTTP \_ USADO<br/>**LPWSTR** | \- | X | X | \- | \- |
 | NOMBRE DE USUARIO \_ DEL PROXY DE OPCIÓN \_ \_ WINHTTP<br/>**LPWSTR** | \- | X | X | X | \- |
-| TAMAÑO DEL BÚFER \_ DE LECTURA DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>**DWORD** | \- | X | X | X | \- |
+| TAMAÑO DEL BÚFER \_ DE LECTURA DE LA \_ \_ OPCIÓN \_ WINHTTP<br/>**DWORD** | \- | X | X | X | \- |
 | RESPUESTA DE CONEXIÓN DE \_ PROXY DE RECEPCIÓN DE LA OPCIÓN \_ \_ \_ \_ WINHTTP<br/>**Bool** | X | X | \- | X | \- |
 | TIEMPO DE ESPERA \_ DE RESPUESTA DE RECEPCIÓN DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>**DWORD** | X | X | X | X | \- |
 | TIEMPO DE ESPERA \_ DE RECEPCIÓN DE LA OPCIÓN \_ \_ WINHTTP<br/>**DWORD** | X | X | X | X | \- |
-| DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES WINHTTP \_<br/>**DWORD** | X | X | X | X | \- |
-| OPCIÓN WINHTTP \_ \_ RECHAZAR \_ USERPWD \_ EN \_ URL<br/>**Bool** | \- | X | \- | X | \- |
-| PRIORIDAD DE SOLICITUD \_ DE \_ LA OPCIÓN \_ WINHTTP<br/>**DWORD** | \- | X | X | X | \- |
-| ESTADÍSTICAS DE SOLICITUD \_ DE \_ OPCIÓN \_ WINHTTP<br/>[**ESTADÍSTICAS DE \_ SOLICITUDES \_ WINHTTP**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_stats) | \- | X | X | \- | Windows 10 versión 1903 |
+| DIRECTIVA DE REDIRECCIÓN \_ DE \_ OPCIONES \_ WINHTTP<br/>**DWORD** | X | X | X | X | \- |
+| OPCIÓN WINHTTP \_ \_ RECHAZAR \_ USERPWD \_ EN LA DIRECCIÓN \_ URL<br/>**Bool** | \- | X | \- | X | \- |
+| PRIORIDAD DE \_ SOLICITUD DE LA OPCIÓN \_ \_ WINHTTP<br/>**DWORD** | \- | X | X | X | \- |
+| ESTADÍSTICAS DE \_ SOLICITUD DE LA OPCIÓN \_ \_ WINHTTP<br/>[**ESTADÍSTICAS DE \_ SOLICITUDES \_ WINHTTP**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_stats) | \- | X | X | \- | Windows 10 versión 1903 |
 | TIEMPOS DE SOLICITUD \_ DE \_ LA OPCIÓN \_ WINHTTP<br/>[**TIEMPOS DE \_ SOLICITUD \_ WINHTTP**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_times) | \- | X | X | \- | Windows 10 versión 1903 |
 | OPCIÓN WINHTTP \_ RESOLVER \_ TIEMPO DE \_ ESPERA<br/>**DWORD** | X | X | X | X | \- |
-| PROTOCOLOS SEGUROS \_ DE \_ LA OPCIÓN WINHTTP \_<br/>**DWORD** | X | \- | \- | X | \- |
-| ESTRUCTURA DE CERTIFICADO \_ DE SEGURIDAD DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**INFORMACIÓN DEL \_ CERTIFICADO \_ WINHTTP**](/windows/win32/api/winhttp/ns-winhttp-winhttp_certificate_info) | \- | X | X | \- | \- |
+| PROTOCOLOS SEGUROS \_ DE \_ LA OPCIÓN \_ WINHTTP<br/>**DWORD** | X | \- | \- | X | \- |
+| ESTRUCTURA DE \_ CERTIFICADO DE SEGURIDAD DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**INFORMACIÓN DEL \_ CERTIFICADO \_ WINHTTP**](/windows/win32/api/winhttp/ns-winhttp-winhttp_certificate_info) | \- | X | X | \- | \- |
 | MARCAS DE \_ SEGURIDAD DE \_ LA \_ OPCIÓN WINHTTP<br/>**DWORD** | \- | X | X | X | \- |
-| INFORMACIÓN DE SEGURIDAD \_ DE LA \_ OPCIÓN \_ WINHTTP<br/>[**WINHTTP_SECURITY_INFO**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_security_info) | \- | X | X | \- | Windows 10 versión 2004 |
+| INFORMACIÓN DE \_ SEGURIDAD DE LA OPCIÓN \_ \_ WINHTTP<br/>[**WINHTTP_SECURITY_INFO**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_security_info) | \- | X | X | \- | Windows 10 versión 2004 |
 | VALOR DE BITS \_ DE CLAVE DE SEGURIDAD DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>**DWORD** | \- | X | X | \- | \- |
-| OPCIÓN WINHTTP \_ ENVIAR TIEMPO DE \_ \_ ESPERA<br/>**DWORD** | X | X | X | X | \- |
+| TIEMPO DE ESPERA \_ DE ENVÍO DE LA OPCIÓN \_ \_ WINHTTP<br/>**DWORD** | X | X | X | X | \- |
 | WINHTTP \_ OPTION \_ SERVER \_ CBT<br/>[**Enlaces \_ SecPkgContext**](/windows/desktop/api/sspi/ns-sspi-secpkgcontext_bindings)\* | \- | X | X | \- | \- |
-| CONTEXTO DE CADENA \_ DE CERTIFICADOS DE SERVIDOR DE \_ \_ OPCIÓN \_ \_ WINHTTP<br/>[**CERT_CHAIN_CONTEXT**](/windows/win32/api/wincrypt/ns-wincrypt-cert_chain_context) | \- | X | X | \- | Windows 10 versión 2004 |
-| CONTEXTO DE CERTIFICADO \_ DE SERVIDOR DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**CONTEXTO DE CERT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) | \- | X | X | \- | \- |
+| CONTEXTO DE CADENA \_ DE CERTIFICADOS DE SERVIDOR DE OPCIÓN \_ \_ \_ \_ WINHTTP<br/>[**CERT_CHAIN_CONTEXT**](/windows/win32/api/wincrypt/ns-wincrypt-cert_chain_context) | \- | X | X | \- | Windows 10 versión 2004 |
+| CONTEXTO DE \_ CERTIFICADO DE SERVIDOR DE LA OPCIÓN \_ \_ \_ WINHTTP<br/>[**CONTEXTO DE CERTIFICADO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) | \- | X | X | \- | \- |
 | OPCIÓN WINHTTP \_ \_ SERVIDOR \_ SPN \_ USADO<br/>**LPWSTR** | \- | X | X | \- | \- |
 | SPN DE \_ OPCIÓN \_ WINHTTP<br/>**DWORD** | \- | X | \- | X | \- |
 | OPCIÓN WINHTTP \_ \_ TCP FAST \_ \_ OPEN<br/>**Bool** | X | \- | \- | X | Windows 10 versión 2004 |
+| OPCIÓN WINHTTP \_ \_ TCP \_ KEEPALIVE<br/>[**tcp \_ keepalive**](/windows/win32/winsock/sio-keepalive-vals) | X | \- | \- | X | Windows 10 versión 2004 |
 | OPCIÓN WINHTTP \_ \_ TLS FALSE \_ \_ START<br/>**Bool** | X | \- | \- | X | Windows 10 versión 2004 |
-| EVENTO DE \_ NOTIFICACIÓN DE DESCARGA DE LA OPCIÓN \_ WINHTTP \_ \_<br/>[HINTERNET](hinternet-handles-in-winhttp.md) | X | \- | \- | X | \- |
+| EVENTO DE NOTIFICACIÓN DE \_ DESCARGA DE LA OPCIÓN \_ WINHTTP \_ \_<br/>[HINTERNET](hinternet-handles-in-winhttp.md) | X | \- | \- | X | \- |
 | ANÁLISIS DE ENCABEZADOS NO SEGUROS DE LA \_ \_ \_ \_ OPCIÓN WINHTTP<br/>**DWORD** | \- | X | \- | X | \- |
 | ACTUALIZACIÓN DE LA OPCIÓN WINHTTP \_ \_ AL SOCKET \_ \_ \_ WEB<br/>N/D | \- | X | \- | X | \- |
 | DIRECCIÓN URL DE LA OPCIÓN WINHTTP \_ \_<br/>**LPWSTR** | \- | X | X | \- | \- |
@@ -1092,13 +1103,13 @@ Si intenta establecer o consultar una marca de opción en una versión de Window
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]            |
 | Servidor mínimo compatible | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]         |
 | Redistribuible          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000. |
 | Encabezado                   | Winhttp.h                                                                       |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Versiones de WinHTTP](winhttp-versions.md)

@@ -1,9 +1,9 @@
 ---
 title: Elemento Spinner
-description: Representa un control de número.
+description: Representa un control Spinner.
 ms.assetid: 6a174ec9-0fde-4171-a363-0e330ac31a8b
 keywords:
-- Cinta de opciones de Windows (elemento)
+- Cinta de opciones de Windows del elemento Spinner
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5b1f9727dc7fbad8be24c15f0b1f551b021294dd
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: d1ec2e074271e125199ddfd4ff8fac7b2af80c33
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104077253"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444816"
 ---
 # <a name="spinner-element"></a>Elemento Spinner
 
-Representa un control de [número](windowsribbon-controls-spinner.md) .
+Representa un [control Spinner.](windowsribbon-controls-spinner.md)
 
 ## <a name="usage"></a>Uso
 
@@ -46,17 +46,17 @@ Representa un control de [número](windowsribbon-controls-spinner.md) .
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -81,17 +81,17 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**ControlGroup**](windowsribbon-element-controlgroup.md) o elemento de [**Grupo**](windowsribbon-element-group.md) .
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md) [**o Group.**](windowsribbon-element-group.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el [control de número](windowsribbon-controls-spinner.md).
+En el ejemplo siguiente se muestra el marcado básico para [spinner.](windowsribbon-controls-spinner.md)
 
-En esta sección de código se muestran las declaraciones de comandos de **control de número** , con un elemento de [**Grupo**](windowsribbon-element-group.md) que funciona como contenedor primario del elemento de **número** .
+En esta sección de código se muestran las declaraciones de comando de **spinner,** con un elemento [**Group**](windowsribbon-element-group.md) que funciona como contenedor primario para el **elemento Spinner.**
 
 
 ```XML
@@ -109,7 +109,7 @@ En esta sección de código se muestran las declaraciones de comandos de **contr
 
 
 
-En esta sección de código se muestran las declaraciones de control de **número** .
+En esta sección de código se muestran las declaraciones de control **Spinner.**
 
 
 ```XML
@@ -122,20 +122,16 @@ En esta sección de código se muestran las declaraciones de control de **númer
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
+- **Sistema mínimo admitido:** Windows 7 
+- **Puede estar vacío:** Sí
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control de número](windowsribbon-controls-spinner.md)
+[Control spinner](windowsribbon-controls-spinner.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: El elemento de nivel superior de un archivo XML de notas de Journal.
+description: Elemento de nivel superior de un archivo XML de nota de diario.
 ms.assetid: 3887667c-67a7-416a-b94d-c30bb02a7985
 title: Elemento JournalDocument
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 408df14347c130e6b0a73ba869b634ca2493fb56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7820ef68dc87bf42d9580c800e2e165f2f2859a4
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546918"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432177"
 ---
 # <a name="journaldocument-element"></a>Elemento JournalDocument
 
-El elemento de nivel superior de un archivo XML de notas de Journal.
+Elemento de nivel superior de un archivo XML de nota de diario.
 
 ## <a name="definition"></a>Definición
 
@@ -45,11 +45,11 @@ Ninguno.
 
 
 
-| Atributo             | Tipo                      | Obligatorio | Descripción                                                      | Valores posibles           |
+| Atributo             | Tipo                      | Requerido | Descripción                                                      | Valores posibles           |
 |-----------------------|---------------------------|----------|------------------------------------------------------------------|---------------------------|
-| **Versión**           | **xs:string**             | Obligatorio | Versión del documento de diario representada en el archivo XML. | 1,0                       |
-| **DefaultPageWidth**  | **xs:nonNegativeInteger** | Obligatorio | El ancho predeterminado de la página del documento de diario.          | Cualquier entero no negativo. |
-| **DefaultPageHeight** | **xs:nonNegativeInteger** | Obligatorio | El alto predeterminado de la página del documento de diario.         | Cualquier entero no negativo. |
+| **Versión**           | **xs:string**             | Requerido | La versión del documento Journal representada en el archivo XML. | 1.0                       |
+| **DefaultPageWidth**  | **xs:nonNegativeInteger** | Requerido | Ancho predeterminado de la página para el documento Journal.          | Cualquier entero no negativo. |
+| **DefaultPageHeight** | **xs:nonNegativeInteger** | Requerido | Alto predeterminado de la página para el documento Journal.         | Cualquier entero no negativo. |
 
 
 
@@ -59,10 +59,10 @@ Ninguno.
 
 
 
-|              |                                            |
+|  Elemento     | Value                                                     |
 |--------------|--------------------------------------------|
 | Tipo de elemento | **JournalDocument**                        |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink |
 | Nombre del esquema  | Lector de diario                             |
 
 

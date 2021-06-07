@@ -3,7 +3,7 @@ title: Elemento ControlNameMap
 description: Representa un contenedor para los nombres de control en una plantilla de diseño SizeDefinition personalizada.
 ms.assetid: b4bceb90-a9a3-42d7-a85b-bf6e4e02784b
 keywords:
-- ControlNameMap cinta de opciones de Windows
+- ControlNameMap, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ca5338978be7f9ddf3432cbe1a0fb8d243d8c00
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 42654af7f81730d01f9c699de7041ba24be185e9
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904111"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442916"
 ---
 # <a name="controlnamemap-element"></a>Elemento ControlNameMap
 
-Representa un contenedor para los nombres de control en una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada.
+Representa un contenedor para los nombres de control en una [**plantilla de diseño SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada.
 
 ## <a name="usage"></a>Uso
 
@@ -56,15 +56,15 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede aparecer como máximo una vez por cada elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+Puede producirse como máximo una vez para cada [**elemento SizeDefinition.**](windowsribbon-element-sizedefinition.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado básico de una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con un elemento **ControlNameMap** .
+En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con un **elemento ControlNameMap.**
 
 
 ```XML
@@ -156,20 +156,16 @@ En el ejemplo de código siguiente se muestra el marcado básico de una plantill
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

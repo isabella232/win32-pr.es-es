@@ -1,19 +1,19 @@
 ---
-description: Contiene información sobre una palabra de tinta determinada en la nota de Journal, incluida la posición, los alternativos y los datos de tinta reales.
+description: Contiene información sobre una palabra de entrada de lápiz determinada en la nota del diario, incluida la posición, las alternativas y los datos de entrada de lápiz reales.
 ms.assetid: 1e197716-bf6c-4a28-ae66-38aa59d7371d
 title: Elemento InkWord
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 179fb5e2bcce2e01f684f0b39d662e8538c7d27e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8dc9baea7cda0346e82c11331c45f453e61f192
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706508"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432397"
 ---
 # <a name="inkword-element"></a>Elemento InkWord
 
-Contiene información sobre una palabra de tinta determinada en la nota de Journal, incluida la posición, los alternativos y los datos de tinta reales.
+Contiene información sobre una palabra de entrada de lápiz determinada en la nota del diario, incluida la posición, las alternativas y los datos de entrada de lápiz reales.
 
 ## <a name="definition"></a>Definición
 
@@ -23,7 +23,7 @@ Contiene información sobre una palabra de tinta determinada en la nota de Journ
 
 ## <a name="parent-elements"></a>Elementos primarios
 
-[**Groupnode BizTalk**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 [**Línea**](line-element.md)
 
@@ -43,19 +43,19 @@ Contiene información sobre una palabra de tinta determinada en la nota de Journ
 
 
 
-| Atributo  | Tipo                      | Obligatorio | Descripción                                                                             | Valores posibles           |
+| Atributo  | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto situado más a la izquierda del cuadro de límite del elemento. | Cualquier número entero.              |
-| **Top** (Principales)    | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
-| **Width**  | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
-| **Height** | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
+| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
+| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite para el elemento.                                          | Cualquier entero no negativo. |
+| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
 
 
 
  
 
 > [!WARNING]
-> La asignación de coordenadas interna de la palabra de tinta es una unidad de métricas en inglés y la aplicación debe usar un multiplicador de 2,54 para convertir los valores de ancho y alto en las unidades de HIMETRIC utilizadas por las API de la plataforma de Tablet PC.
+> La asignación de coordenadas internas de la palabra manuscrita es Unidades métricas en inglés y la aplicación deberá usar un multiplicador de 2,54 para convertir los valores width y Height en las unidades HIMETRIC que usan las API de la plataforma de Tablet PC.
 
  
 
@@ -63,10 +63,10 @@ Contiene información sobre una palabra de tinta determinada en la nota de Journ
 
 
 
-|              |                                                             |
+|  Elemento     | Value                                                     |
 |--------------|-------------------------------------------------------------|
 | Tipo de elemento | [**InkWordType**](inkwordtype-complex-type.md) complexType |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink                  |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink                  |
 | Nombre del esquema  | Lector de diario                                              |
 
 

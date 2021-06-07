@@ -3,7 +3,7 @@ title: Elemento ApplicationMenu
 description: Representa el menú de la aplicación. | Elemento ApplicationMenu
 ms.assetid: 815e0462-ea45-44b1-81bf-f5797b22e920
 keywords:
-- ApplicationMenu cinta de opciones de Windows
+- Elemento ApplicationMenu de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a02193b4c3e61b4b8cf2f129619969f6a82a84ac
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e535fbcc09a404ad7dd5a4019438f4513f5c77c6
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280084"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443056"
 ---
 # <a name="applicationmenu-element"></a>Elemento ApplicationMenu
 
-Representa el [menú](windowsribbon-controls-applicationmenu.md)de la aplicación.
+Representa el [menú de la aplicación](windowsribbon-controls-applicationmenu.md).
 
 ## <a name="usage"></a>Uso
 
@@ -49,17 +49,17 @@ Representa el [menú](windowsribbon-controls-applicationmenu.md)de la aplicació
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +72,7 @@ Representa el [menú](windowsribbon-controls-applicationmenu.md)de la aplicació
 
 | Elemento                                                                                             | Descripción                                        |
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**ApplicationMenu.RecentItems**](windowsribbon-element-applicationmenu-recentitems.md)<br/> | Puede aparecer como máximo una vez<br/> <br/>      |
+| [**ApplicationMenu.RecentItems**](windowsribbon-element-applicationmenu-recentitems.md)<br/> | Puede producirse como máximo una vez<br/> <br/>      |
 | [**MenuGroup**](windowsribbon-element-menugroup.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 
 
@@ -83,26 +83,26 @@ Representa el [menú](windowsribbon-controls-applicationmenu.md)de la aplicació
 
 | Elemento                                                                                   |
 |-------------------------------------------------------------------------------------------|
-| [**Ribbon. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/> |
+| [**Ribbon.ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe aparecer exactamente una vez para cada [**cinta. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md).
+Debe producirse exactamente una vez para [**cada Ribbon.ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md).
 
-Los elementos secundarios del elemento **ApplicationMenu** deben aparecer en el orden especificado:
+Los elementos secundarios del **elemento ApplicationMenu** deben producirse en el orden especificado:
 
 1.  [**ApplicationMenu.RecentItems**](windowsribbon-element-applicationmenu-recentitems.md)
 2.  [**MenuGroup**](windowsribbon-element-menugroup.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el menú de la [aplicación](windowsribbon-controls-applicationmenu.md).
+En el ejemplo siguiente se muestra el marcado básico para el [menú de la aplicación](windowsribbon-controls-applicationmenu.md).
 
-En esta sección de código se muestran las declaraciones de comandos de **ApplicationMenu** .
+En esta sección de código se muestran las declaraciones del comando **ApplicationMenu.**
 
 
 ```XML
@@ -155,7 +155,7 @@ En esta sección de código se muestran las declaraciones de comandos de **Appli
 
 
 
-En esta sección de código se muestran las declaraciones de control de **ApplicationMenu** .
+En esta sección de código se muestran las declaraciones del control **ApplicationMenu.**
 
 
 ```XML
@@ -184,20 +184,16 @@ En esta sección de código se muestran las declaraciones de control de **Applic
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control de menú de la aplicación](windowsribbon-controls-applicationmenu.md)
+[Control Menú de la aplicación](windowsribbon-controls-applicationmenu.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: DirectMLX es una biblioteca auxiliar de solo encabezado de C++ para
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 2ddd6d9063002b76449224ebafdb6dd021b27fa0
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: ba7eca27a39b690f678bdac1ea0feba1991e8b40
+ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803371"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111521222"
 ---
 # <a name="directmlx"></a>DirectMLX
 
@@ -21,7 +21,7 @@ DirectMLX proporciona contenedores cómodos para todos los tipos de operadores d
 
 `DirectMLX.h` se distribuye como software de código abierto bajo la licencia MIT. La versión más reciente se puede encontrar en [GitHub de DirectML.](https://github.com/microsoft/DirectML/tree/master/Libraries)
 
-## <a name="tensor-constraints"></a>Restricciones de Tensor
+## <a name="tensor-constraints"></a>Restricciones de tensor
 
 DirectMLX requiere directML versión 1.4.0 o posterior (consulte historial [de versiones de DirectML).](dml-version-history.md#version-table) No se admiten versiones anteriores de DirectML.
 
@@ -115,22 +115,22 @@ DirectMLX admite los #define tiempo de compilación para personalizar varias par
 
 |Opción|Descripción|
 |-|-|
-|**DMLX_NO_EXCEPTIONS**|Si #define, hace que los errores den como resultado una llamada a en `std::abort` lugar de producir una excepción. Esto se define de forma predeterminada si las excepciones no están disponibles (por ejemplo, si las excepciones se han deshabilitado en las opciones del compilador).|
-|**DMLX_USE_WIL**|Si #define, las excepciones se inician mediante tipos de excepción [de la biblioteca de implementación de Windows.](https://github.com/microsoft/wil) De lo contrario, se usan tipos de excepción estándar (como `std::runtime_error` ) en su lugar. Esta opción no tiene ningún efecto **si DMLX_NO_EXCEPTIONS** está definido.|
-|**DMLX_USE_ABSEIL**|Si #define, usa [Abseil](https://github.com/abseil/abseil-cpp) como reemplazos de colocación para los tipos de biblioteca estándar no disponibles en C++11. Estos tipos incluyen `absl::optional` (en lugar de `std::optional` ), `absl::Span` (en lugar de `std::span` ) y `absl::InlinedVector` .|
-|**DMLX_USE_GSL**|Controla si se debe [usar GSL](https://github.com/microsoft/GSL) como reemplazo de `std::span` . Si #define, los usos de `std::span` se reemplazan por `gsl::span` en compiladores sin `std::span` implementaciones nativas. De lo contrario, se proporciona una implementación de lista desplegable insertda en su lugar. Tenga en cuenta que esta opción solo se usa cuando se compila en un compilador anterior a C++20 sin compatibilidad con y cuando no se usa ningún otro reemplazo de biblioteca estándar de colocación `std::span` (como Abseil).|
+|**DMLX_NO_EXCEPTIONS**|Si #define, hace que los errores den como resultado una llamada a `std::abort` en lugar de producir una excepción. Esto se define de forma predeterminada si las excepciones no están disponibles (por ejemplo, si las excepciones se han deshabilitado en las opciones del compilador).|
+|**DMLX_USE_WIL**|Si #define, las excepciones se inician mediante tipos de excepción de la [Biblioteca de implementación de Windows.](https://github.com/microsoft/wil) De lo contrario, se usan tipos de excepción estándar (como `std::runtime_error` ) en su lugar. Esta opción no tiene ningún efecto **si DMLX_NO_EXCEPTIONS** está definido.|
+|**DMLX_USE_ABSEIL**|Si #define, usa [Abseil](https://github.com/abseil/abseil-cpp) como reemplazos desplegables para los tipos de biblioteca estándar no disponibles en C++11. Estos tipos incluyen `absl::optional` (en lugar de `std::optional` ), `absl::Span` (en lugar de `std::span` ) y `absl::InlinedVector` .|
+|**DMLX_USE_GSL**|Controla si se debe [usar GSL](https://github.com/microsoft/GSL) como reemplazo de `std::span` . Si #define, los usos de `std::span` se reemplazan por en `gsl::span` compiladores sin `std::span` implementaciones nativas. De lo contrario, se proporciona en su lugar una implementación de colocación insertda. Tenga en cuenta que esta opción solo se usa cuando se compila en un compilador anterior a C++20 sin compatibilidad con y cuando no se usa ningún otro reemplazo de biblioteca estándar de `std::span` colocación (como Abseil).|
 
-## <a name="controlling-tensor-layout"></a>Controlar el diseño del tensor
+## <a name="controlling-tensor-layout"></a>Control del diseño del tensor
 
-Para la mayoría de los operadores, DirectMLX calcula las propiedades de los tensores de salida del operador en su nombre. Por ejemplo, al realizar un en ejes con un tensor de entrada de tamaños , DirectMLX calculará automáticamente las propiedades del `dml::Reduce` tensor de salida, incluida la `{ 0, 2, 3 }` `{ 3, 4, 5, 6 }` forma correcta de `{ 1, 4, 1, 1 }` .
+Para la mayoría de los operadores, DirectMLX calcula las propiedades de los tensores de salida del operador en su nombre. Por ejemplo, al realizar un objeto entre ejes con un tensor de entrada de tamaños , DirectMLX calculará automáticamente las propiedades del `dml::Reduce` `{ 0, 2, 3 }` `{ 3, 4, 5, 6 }` tensor de salida, incluida la forma correcta de `{ 1, 4, 1, 1 }` .
 
-Sin embargo, las demás propiedades de un tensor de salida incluyen *Strides*, *TotalTensorSizeInBytes* y *GuaranteedBaseOffsetAlignment.* De forma predeterminada, DirectMLX establece estas propiedades de forma que el tensor no tenga ninguna estructura de striding, ninguna alineación de desplazamiento base garantizada y un tamaño de tensor total en bytes calculado por [DMLCalcBufferTensorSize](./dml-helper-functions.md#dmlcalcbuffertensorsize).
+Sin embargo, las demás propiedades de un tensor de salida incluyen *Strides*, *TotalTensorSizeInBytes* y *GuaranteedBaseOffsetAlignment*. De forma predeterminada, DirectMLX establece estas propiedades de modo que el tensor no tenga ninguna striding, ninguna alineación de desplazamiento base garantizada y un tamaño de tensor total en bytes calculado por [DMLCalcBufferTensorSize](./dml-helper-functions.md#dmlcalcbuffertensorsize).
 
-DirectMLX admite la capacidad de personalizar estas propiedades de tensor de salida, mediante objetos conocidos como *directivas de tensor.* **TensorPolicy** es una devolución de llamada personalizable invocada por DirectMLX y devuelve propiedades de tensor de salida según el tipo de datos, las marcas y los tamaños calculados de un tensor.
+DirectMLX admite la capacidad de personalizar estas propiedades de tensor de salida mediante objetos conocidos como *directivas de tensor.* **TensorPolicy** es una devolución de llamada personalizable invocada por DirectMLX y devuelve propiedades de tensor de salida según el tipo de datos, las marcas y los tamaños calculados de un tensor.
 
 Las directivas de Tensor se pueden establecer en el **objeto dml::Graph** y se usarán para todos los operadores posteriores de ese gráfico. Las directivas de Tensor también se pueden establecer directamente al construir **un objeto TensorDesc.**
 
-Por lo tanto, el diseño de tensores generado por DirectMLX se puede controlar estableciendo **una propiedad TensorPolicy** que establece los avances adecuados en sus tensores.
+Por lo tanto, el diseño de los tensores generado por DirectMLX se puede controlar estableciendo **una propiedad TensorPolicy** que establece los avances adecuados en sus tensores.
 
 ### <a name="example-1"></a>Ejemplo 1
 
@@ -169,9 +169,9 @@ graph.SetTensorPolicy(dml::TensorPolicy::InterleavedChannel());
 auto result = dml::Convolution(/* ... */);
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 * [DirectML GitHub](https://github.com/microsoft/DirectML/tree/master/Libraries)
 * [Ejemplo yolov4 de DirectMLX](https://github.com/microsoft/DirectML/tree/master/Samples/yolov4)
 * [Uso de strides para expresar el relleno y el diseño de memoria](./dml-strides.md)
-* [DML_GRAPH_DESC estructura](./directml/ns-directml-dml_graph_desc.md)
+* [DML_GRAPH_DESC estructura](/windows/win32/api/directml/ns-directml-dml_graph_desc)

@@ -1,194 +1,194 @@
 ---
-title: Personalización de una cinta a través de definiciones de tamaño y directivas de escalado
-description: Los controles hospedados en la barra de comandos de la cinta de opciones están sujetos a las reglas de diseño que aplica el marco de la cinta de opciones de Windows y se basan en una combinación de comportamientos y plantillas de diseño predeterminados (definidas por el marco y personalizadas) como se declara en el marcado de la cinta. Estas reglas definen los comportamientos de diseño adaptable del marco de cinta que influyen en cómo se adaptan los controles de la barra de comandos a varios tamaños de cinta en tiempo de ejecución.
+title: Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado
+description: Los controles hospedados en la barra de comandos de la cinta de opciones están sujetos a reglas de diseño que exige el marco de la cinta de opciones de Windows y se basan en una combinación de comportamientos predeterminados y plantillas de diseño (tanto definidas como personalizadas por el marco) tal y como se declara en el marcado de la cinta de opciones. Estas reglas definen los comportamientos de diseño adaptable del marco de la cinta de opciones que influyen en cómo se adaptan los controles de la barra de comandos a varios tamaños de cinta en tiempo de ejecución.
 ms.assetid: b5869394-3fa9-4817-add9-54487434fc4f
 keywords:
-- Cinta de Windows, personalizar
-- Cinta, personalizar
-- Cinta de Windows, plantillas de SizeDefinition
-- Cinta de opciones, plantillas de SizeDefinition
+- Cinta de opciones de Windows, personalización
+- Cinta de opciones, personalización
+- Cinta de opciones de Windows, plantillas SizeDefinition
+- Ribbon,SizeDefinition templates
 - Cinta de opciones de Windows, plantillas personalizadas
 - Cinta de opciones, plantillas personalizadas
-- Personalización de la cinta de opciones de Windows
+- personalizar la cinta de opciones de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b12618f88576cddeff119534215e501216193c3
-ms.sourcegitcommit: 2387bc0339a1764564c1509e72ed5f2e8ae60b36
+ms.openlocfilehash: f6576a672aa8c3d328a341370a7568595e988908
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "104560258"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444146"
 ---
-# <a name="customizing-a-ribbon-through-size-definitions-and-scaling-policies"></a>Personalización de una cinta a través de definiciones de tamaño y directivas de escalado
+# <a name="customizing-a-ribbon-through-size-definitions-and-scaling-policies"></a>Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado
 
-Los controles hospedados en la barra de comandos de la cinta de opciones están sujetos a las reglas de diseño que aplica el marco de la cinta de opciones de Windows y se basan en una combinación de comportamientos y plantillas de diseño predeterminados (definidas por el marco y personalizadas) como se declara en el marcado de la cinta. Estas reglas definen los comportamientos de diseño adaptable del marco de cinta que influyen en cómo se adaptan los controles de la barra de comandos a varios tamaños de cinta en tiempo de ejecución.
+Los controles hospedados en la barra de comandos de la cinta de opciones están sujetos a reglas de diseño que exige el marco de la cinta de opciones de Windows y se basan en una combinación de comportamientos predeterminados y plantillas de diseño (tanto definidas como personalizadas por el marco) tal y como se declara en el marcado de la cinta de opciones. Estas reglas definen los comportamientos de diseño adaptable del marco de la cinta de opciones que influyen en cómo se adaptan los controles de la barra de comandos a varios tamaños de cinta en tiempo de ejecución.
 
 -   [Introducción](#introduction)
-    -   [Plantillas SizeDefinition de la cinta](#customizing-a-ribbon-through-size-definitions-and-scaling-policies)
+    -   [Plantillas SizeDefinition de la cinta de opciones](#customizing-a-ribbon-through-size-definitions-and-scaling-policies)
     -   [Plantillas personalizadas](#custom-templates)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introducción
 
-El diseño adaptable, tal como se define en el marco de la cinta de opciones, es la capacidad de todos los controles de la interfaz de usuario de la cinta de ajustar dinámicamente la organización, el tamaño, el formato y la escala relativa en función de los cambios en el tamaño de la cinta de opciones en tiempo de ejecución.
+El diseño adaptable, tal como se define en el marco de la cinta de opciones, es la capacidad de todos los controles dentro de la interfaz de usuario de la cinta de opciones de ajustar dinámicamente su organización, tamaño, formato y escala relativa en función de los cambios en el tamaño de la cinta en tiempo de ejecución.
 
-El marco de trabajo expone la funcionalidad de diseño adaptable a través de un conjunto de elementos de marcado que están dedicados a especificar y personalizar distintos comportamientos de diseño. Una colección de plantillas, denominada [**SizeDefinitions**](windowsribbon-element-sizedefinition.md), se define en el marco de trabajo, cada una de las cuales admite varios escenarios de control y diseño. Sin embargo, el marco también admite plantillas personalizadas si las plantillas predefinidas no proporcionan la experiencia de interfaz de usuario ni los diseños necesarios para una aplicación.
+El marco expone la funcionalidad de diseño adaptable a través de un conjunto de elementos de marcado dedicados a especificar y personalizar varios comportamientos de diseño. El marco define una colección de plantillas, [**denominada SizeDefinitions,**](windowsribbon-element-sizedefinition.md)cada una de las cuales admite varios escenarios de control y diseño. Sin embargo, el marco también admite plantillas personalizadas si las plantillas predefinidas no proporcionan la experiencia de interfaz de usuario o los diseños requeridos por una aplicación.
 
-Para mostrar los controles en un diseño preferido en un tamaño de cinta determinado, las plantillas predefinidas y las plantillas personalizadas funcionan junto con el elemento [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) . Este elemento contiene un manifiesto de las preferencias de tamaño que el marco de trabajo usa como guía al representar la cinta de opciones.
+Para mostrar controles en un diseño preferido con un tamaño de cinta determinado, tanto las plantillas predefinidas como las plantillas personalizadas funcionan junto con el [**elemento ScalingPolicy.**](windowsribbon-element-scalingpolicy.md) Este elemento contiene un manifiesto de preferencias de tamaño que el marco usa como guía al representar la cinta de opciones.
 
 > [!Note]  
-> El marco de cinta proporciona comportamientos de diseño predeterminados basados en un conjunto de heurísticas integradas para la organización y presentación de controles en tiempo de ejecución sin necesidad de las plantillas predefinidas de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) . Sin embargo, esta funcionalidad está pensada solo para la generación de prototipos.
+> El marco de la cinta de opciones proporciona comportamientos de diseño predeterminados basados en un conjunto de heurística integrada para la organización y la presentación de controles en tiempo de ejecución sin necesidad de las plantillas [**Predefinidas sizeDefinition.**](windowsribbon-element-sizedefinition.md) Sin embargo, esta funcionalidad está pensada solo para fines de creación de prototipos.
 
  
 
-### <a name="ribbon-sizedefinition-templates"></a>Plantillas SizeDefinition de la cinta
+### <a name="ribbon-sizedefinition-templates"></a>Plantillas SizeDefinition de la cinta de opciones
 
-El marco de cinta de opciones proporciona un conjunto completo de plantillas de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) que especifican el tamaño y el comportamiento de diseño de un [Grupo](windowsribbon-controls-group.md) de controles de la cinta. Estas plantillas cubren los escenarios más comunes para organizar los controles en una aplicación de cinta.
+El marco de la cinta de opciones proporciona un conjunto completo de [**plantillas SizeDefinition**](windowsribbon-element-sizedefinition.md) que especifican el tamaño y el comportamiento de diseño para un [grupo de](windowsribbon-controls-group.md) controles de cinta de opciones. Estas plantillas cubren los escenarios más comunes para organizar controles en una aplicación de cinta de opciones.
 
-Para aplicar una experiencia de usuario coherente en todas las aplicaciones de la cinta, cada plantilla de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) impone restricciones en los controles o en la familia de controles que admite.
+Para aplicar una experiencia de usuario coherente en las aplicaciones de la cinta de opciones, cada plantilla [**SizeDefinition**](windowsribbon-element-sizedefinition.md) impone restricciones en los controles o en la familia de controles que admite.
 
-Por ejemplo, la familia de controles Button incluye:
+Por ejemplo, la familia de botones de controles incluye:
 
--   [Botón](windowsribbon-controls-button.md)
--   [Botón de alternancia](windowsribbon-controls-togglebutton.md)
+-   [Button](windowsribbon-controls-button.md)
+-   [Botón De alternancia](windowsribbon-controls-togglebutton.md)
 -   [Botón desplegable](windowsribbon-controls-dropdownbutton.md)
--   [Botón de expansión](windowsribbon-controls-splitbutton.md)
+-   [Botón De división](windowsribbon-controls-splitbutton.md)
 -   [Galería desplegable](windowsribbon-controls-dropdowngallery.md)
--   [Galería de botones de expansión](windowsribbon-controls-splitbuttongallery.md)
--   [Selector de colores desplegables](windowsribbon-controls-dropdowncolorpicker.md)
+-   [Galería de botones de división](windowsribbon-controls-splitbuttongallery.md)
+-   [Lista desplegable Selector de colores](windowsribbon-controls-dropdowncolorpicker.md)
 
-Mientras que la familia de controles de entrada incluye:
+Mientras que la familia de entrada de controles incluye:
 
 -   [Cuadro combinado](windowsribbon-controls-combobox.md)
 -   [Spinner](windowsribbon-controls-spinner.md)
 
-Las [casillas](windowsribbon-controls-checkbox.md) y [en la galería de la cinta de](windowsribbon-controls-inribbongallery.md) opciones no pertenecen a la familia de botones ni a la familia de entrada. Estos dos controles solo se pueden usar cuando se indican explícitamente en una plantilla [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+[Las casillas](windowsribbon-controls-checkbox.md) [y la](windowsribbon-controls-inribbongallery.md) Galería de la cinta de opciones no pertenecen a la familia de botones ni a la familia de entrada. Estos dos controles solo se pueden usar cuando se indica explícitamente en una [**plantilla SizeDefinition.**](windowsribbon-element-sizedefinition.md)
 
-A continuación se muestra una lista de las plantillas [**SizeDefinition**](windowsribbon-element-sizedefinition.md) con una descripción del diseño y los controles permitidos por cada plantilla.
+A continuación se muestra una lista de las [**plantillas SizeDefinition**](windowsribbon-element-sizedefinition.md) con una descripción del diseño y los controles permitidos por cada plantilla.
 
 > [!IMPORTANT]
-> Si los controles declarados en el marcado no se asignan exactamente al tipo de control, el orden y la cantidad definidos en la plantilla asociada, el [compilador de marcado](windowsribbon-intentcl.md) registra un [error de validación](windowsribbon-compilationerrors.md) y finaliza la compilación.
+> Si los controles declarados en el marcado no se asignan exactamente al tipo de control, el [](windowsribbon-intentcl.md) orden y la cantidad definidos en la plantilla asociada, el compilador de marcado registra un [error](windowsribbon-compilationerrors.md) de validación y finaliza la compilación.
 
  
 
 
 
-OneButton
+Onebutton
 
 Un control de familia de botones.<br/> Solo se admite el tamaño de grupo grande.<br/>
 
-![imagen de la plantilla de OneButton sizedefinition.](images/overviews/sizedefinition-onebutton.png)
+![imagen de la plantilla onebutton sizedefinition.](images/overviews/sizedefinition-onebutton.png)
 
 TwoButtons
 
-Dos controles de la familia de botones.<br/> Solo se admiten tamaños de grupo grandes y medianas.<br/>
+Dos controles de familia de botones.<br/> Solo se admiten tamaños de grupo grandes y medianos.<br/>
 
-![imagen de la plantilla twobuttons Large sizedefinition](images/overviews/sizedefinition-twobuttons-large.png)
+![imagen de la plantilla twobuttons large sizedefinition.](images/overviews/sizedefinition-twobuttons-large.png)
 
-![imagen de la plantilla sizedefinition twobuttons Medium.](images/overviews/sizedefinition-twobuttons-medium.png)
+![imagen de la plantilla twobuttons medium sizedefinition.](images/overviews/sizedefinition-twobuttons-medium.png)
 
 ThreeButtons
 
-Tres controles de la familia de botones.<br/> Solo se admiten tamaños de grupo grandes y medianas.<br/>
+Tres controles de familia de botones.<br/> Solo se admiten tamaños de grupo grandes y medianos.<br/>
 
-![imagen de la plantilla threebuttons Large sizedefinition](images/overviews/sizedefinition-threebuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de tres botones.](images/overviews/sizedefinition-threebuttons-large.png)
 
-![imagen de la plantilla sizedefinition threebuttons Medium.](images/overviews/sizedefinition-threebuttons-medium.png)
+![imagen de la plantilla de definición de tamaño medio de tres botones.](images/overviews/sizedefinition-threebuttons-medium.png)
 
 ThreeButtons-OneBigAndTwoSmall
 
-Tres controles de la familia de botones.<br/> El primer botón se presenta de forma destacada en los tres tamaños.<br/>
+Tres controles de familia de botones.<br/> El primer botón se presenta de forma destacada en los tres tamaños.<br/>
 
-![imagen de la plantilla threebuttons-onebigandtwosmall Large sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-large.png)
+![imagen de la plantilla threebuttons-onebigandtwosmall large sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-large.png)
 
-![imagen de la plantilla threebuttons-onebigandtwosmall Medium sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-medium.png)
+![imagen de la plantilla threebuttons-onebigandtwosmall medium sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-medium.png)
 
-![imagen de la plantilla threebuttons-onebigandtwosmall Small sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-small.png)
+![imagen de la plantilla threebuttons-onebigandtwosmall small sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-small.png)
 
 ThreeButtonsAndOneCheckBox
 
-Tres controles de la familia de botones acompañados por un único control CheckBox.<br/> Solo se admiten tamaños de grupo grandes y medianas.<br/>
+Tres controles de familia de botones acompañados de un único control CheckBox.<br/> Solo se admiten tamaños de grupo grandes y medianos.<br/>
 
-![imagen de la plantilla threebuttonsandonecheckbox Large sizedefinition](images/overviews/sizedefinition-threebuttonsandonecheckbox-large.png)
+![imagen de la plantilla threebuttonsandonecheckbox large sizedefinition.](images/overviews/sizedefinition-threebuttonsandonecheckbox-large.png)
 
-![imagen de la plantilla sizedefinition threebuttonsandonecheckbox Medium.](images/overviews/sizedefinition-threebuttonsandonecheckbox-medium.png)
+![imagen de la plantilla threebuttonsandonecheckbox medium sizedefinition.](images/overviews/sizedefinition-threebuttonsandonecheckbox-medium.png)
 
 FourButtons
 
-Cuatro controles de la familia de botones.<br/>
+Cuatro controles de familia de botones.<br/>
 
-![imagen de la plantilla fourbuttons Large sizedefinition](images/overviews/sizedefinition-fourbuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de cuatro botones.](images/overviews/sizedefinition-fourbuttons-large.png)
 
-![imagen de la plantilla sizedefinition fourbuttons Medium.](images/overviews/sizedefinition-fourbuttons-medium.png)
+![imagen de la plantilla fourbuttons medium sizedefinition.](images/overviews/sizedefinition-fourbuttons-medium.png)
 
-![imagen de la plantilla fourbuttons Small sizedefinition](images/overviews/sizedefinition-fourbuttons-small.png)
+![imagen de la plantilla sizedefinition de cuatro botones pequeños.](images/overviews/sizedefinition-fourbuttons-small.png)
 
 FiveButtons
 
-Cinco controles de la familia de botones.<br/>
+Cinco controles de familia de botones.<br/>
 
-![imagen de la plantilla fivebuttons Large sizedefinition](images/overviews/sizedefinition-fivebuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de cinco botones.](images/overviews/sizedefinition-fivebuttons-large.png)
 
-![imagen de la plantilla sizedefinition fivebuttons Medium.](images/overviews/sizedefinition-fivebuttons-medium.png)
+![imagen de la plantilla de definición de tamaño medio de cinco botones.](images/overviews/sizedefinition-fivebuttons-medium.png)
 
-![imagen de la plantilla fivebuttons Small sizedefinition](images/overviews/sizedefinition-fivebuttons-small.png)
+![imagen de la plantilla small sizedefinition de cinco botones.](images/overviews/sizedefinition-fivebuttons-small.png)
 
 FiveOrSixButtons
 
-Cinco controles de la familia de botones y un sexto botón opcional.<br/>
+Cinco controles de familia de botones y un sexto botón opcional.<br/>
 
-![imagen de la plantilla fiveorsixbuttons Large sizedefinition](images/overviews/sizedefinition-fiveorsixbuttons-large.png)
+![imagen de la plantilla fiveorsixbuttons large sizedefinition.](images/overviews/sizedefinition-fiveorsixbuttons-large.png)
 
-![imagen de la plantilla sizedefinition fiveorsixbuttons Medium.](images/overviews/sizedefinition-fiveorsixbuttons-medium.png)
+![imagen de la plantilla fiveorsixbuttons medium sizedefinition.](images/overviews/sizedefinition-fiveorsixbuttons-medium.png)
 
-![imagen de la plantilla fiveorsixbuttons Small sizedefinition](images/overviews/sizedefinition-fiveorsixbuttons-small.png)
+![imagen de la plantilla fiveorsixbuttons small sizedefinition.](images/overviews/sizedefinition-fiveorsixbuttons-small.png)
 
 SixButtons
 
-Seis controles de la familia de botones.<br/>
+Seis controles de familia de botones.<br/>
 
-![imagen de la plantilla sixbuttons Large sizedefinition](images/overviews/sizedefinition-sixbuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de seis botones.](images/overviews/sizedefinition-sixbuttons-large.png)
 
-![imagen de la plantilla sizedefinition sixbuttons Medium.](images/overviews/sizedefinition-sixbuttons-medium.png)
+![imagen de la plantilla de definición de tamaño medio de seis botones.](images/overviews/sizedefinition-sixbuttons-medium.png)
 
-![imagen de la plantilla sixbuttons Small sizedefinition](images/overviews/sizedefinition-sixbuttons-small.png)
+![imagen de la plantilla de definición de tamaño pequeño de seis botones.](images/overviews/sizedefinition-sixbuttons-small.png)
 
 SixButtons-TwoColumns
 
-Seis controles de la familia de botones (presentación alternativa).<br/>
+Seis controles de familia de botones (presentación alternativa).<br/>
 
-![imagen de la plantilla sixbuttons-twocolumns Large sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-large.png)
+![imagen de la plantilla sixbuttons-twocolumns large sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-large.png)
 
-![sixbuttons: twocolumns Medium sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-medium.png)
+![Plantilla sixbuttons-twocolumns medium sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-medium.png)
 
-![imagen de la plantilla sixbuttons-twocolumns Small sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-small.png)
+![imagen de la plantilla de definición de tamaño pequeño sixbuttons-twocolumns.](images/overviews/sizedefinition-sixbuttons-twocolumns-small.png)
 
 SevenButtons
 
-Siete controles de la familia de botones.<br/>
+Siete controles de familia de botones.<br/>
 
-![imagen de la plantilla sevenbuttons Large sizedefinition](images/overviews/sizedefinition-sevenbuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de siete botones.](images/overviews/sizedefinition-sevenbuttons-large.png)
 
-![imagen de la plantilla de sevenbuttons mediumsizedefinition.](images/overviews/sizedefinition-sevenbuttons-medium.png)
+![imagen de la plantilla de definición mediumsize de siete botones.](images/overviews/sizedefinition-sevenbuttons-medium.png)
 
-![imagen de la plantilla sevenbuttons Small sizedefinition](images/overviews/sizedefinition-sevenbuttons-small.png)
+![imagen de la plantilla de definición de tamaño pequeño de siete botones.](images/overviews/sizedefinition-sevenbuttons-small.png)
 
 EightButtons
 
-Ocho controles de la familia de botones.<br/>
+Ocho controles de familia de botones.<br/>
 
-![imagen de la plantilla eightbuttons-lastthreesmall Large sizedefinition.](images/overviews/sizedefinition-eightbuttons-lastthreesmall-large.png)
+![imagen de la plantilla eightbuttons-lastthreesmall large sizedefinition.](images/overviews/sizedefinition-eightbuttons-lastthreesmall-large.png)
 
-![imagen de la plantilla eightbuttons-lastthreesmall Medium sizedefinition.](images/overviews/sizedefinition-eightbuttons-lastthreesmall-medium.png)
+![imagen de la plantilla eightbuttons-lastthreesmall medium sizedefinition.](images/overviews/sizedefinition-eightbuttons-lastthreesmall-medium.png)
 
-![imagen de la plantilla eightbuttons-lastthreesmall Small sizedefinition.](images/overviews/sizedefinition-eightbuttons-lastthreesmall-small.png)
+![imagen de la plantilla eightbuttons-lastthreesmall small sizedefinition.](images/overviews/sizedefinition-eightbuttons-lastthreesmall-small.png)
 
 EightButtons-LastThreeSmall
 
-Ocho controles de la familia de botones (presentación alternativa).<br/>
+Ocho controles de familia de botones (presentación alternativa).<br/>
 
 > [!Note]  
-> Todos los elementos de control declarados con esta plantilla deben estar contenidos en dos elementos [**ControlGroup**](windowsribbon-element-controlgroup.md) : uno para los primeros cinco elementos y otro para los tres últimos elementos.
+> Todos los elementos de control declarados con esta plantilla deben estar contenidos en dos [**elementos ControlGroup:**](windowsribbon-element-controlgroup.md) uno para los cinco primeros elementos y otro para los tres últimos elementos.
 
 <br/> En el ejemplo siguiente se muestra el marcado necesario para esta plantilla.<br/>
 
@@ -212,99 +212,99 @@ Ocho controles de la familia de botones (presentación alternativa).<br/>
 
 
 
-![imagen de la plantilla eightbuttons Large sizedefinition](images/overviews/sizedefinition-eightbuttons-large.png)
+![imagen de la plantilla sizedefinition de ocho botones de gran tamaño.](images/overviews/sizedefinition-eightbuttons-large.png)
 
-![imagen de la plantilla sizedefinition eightbuttons Medium.](images/overviews/sizedefinition-eightbuttons-medium.png)
+![imagen de la plantilla de definición de tamaño medio de ocho botones.](images/overviews/sizedefinition-eightbuttons-medium.png)
 
-![imagen de la plantilla eightbuttons Small sizedefinition](images/overviews/sizedefinition-eightbuttons-small.png)
+![imagen de la plantilla small sizedefinition de ocho botones.](images/overviews/sizedefinition-eightbuttons-small.png)
 
 NineButtons
 
-Nueve controles de la familia de botones.
+Nueve controles de familia de botones.
 
-![imagen de la plantilla ninebuttons Large sizedefinition](images/overviews/sizedefinition-ninebuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de ninebuttons.](images/overviews/sizedefinition-ninebuttons-large.png)
 
-![imagen de la plantilla sizedefinition ninebuttons Medium.](images/overviews/sizedefinition-ninebuttons-medium.png)
+![imagen de la plantilla ninebuttons medium sizedefinition.](images/overviews/sizedefinition-ninebuttons-medium.png)
 
-![imagen de la plantilla ninebuttons Small sizedefinition](images/overviews/sizedefinition-ninebuttons-small.png)
+![imagen de la plantilla small sizedefinition de ninebuttons.](images/overviews/sizedefinition-ninebuttons-small.png)
 
 TenButtons
 
-Diez controles de la familia de botones.
+Diez controles de familia de botones.
 
-![imagen de la plantilla tenbuttons Large sizedefinition](images/overviews/sizedefinition-tenbuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de los botones de diez botones.](images/overviews/sizedefinition-tenbuttons-large.png)
 
-![imagen de la plantilla sizedefinition tenbuttons Medium.](images/overviews/sizedefinition-tenbuttons-medium.png)
+![imagen de la plantilla tenbuttons medium sizedefinition.](images/overviews/sizedefinition-tenbuttons-medium.png)
 
-![imagen de la plantilla tenbuttons Small sizedefinition](images/overviews/sizedefinition-tenbuttons-small.png)
+![imagen de la plantilla small sizedefinition de tenbuttons.](images/overviews/sizedefinition-tenbuttons-small.png)
 
-ElevenButtons
+OnceButtons
 
-Once controles de la familia de botones.
+Once controles de familia de botones.
 
-![imagen de la plantilla elevenbuttons Large sizedefinition](images/overviews/sizedefinition-elevenbuttons-large.png)
+![imagen de la plantilla de definición de tamaño grande de once botones.](images/overviews/sizedefinition-elevenbuttons-large.png)
 
-![imagen de la plantilla sizedefinition elevenbuttons Medium.](images/overviews/sizedefinition-elevenbuttons-medium.png)
+![imagen de la plantilla de definición de tamaño medio de once botones.](images/overviews/sizedefinition-elevenbuttons-medium.png)
 
-![imagen de la plantilla elevenbuttons Small sizedefinition](images/overviews/sizedefinition-elevenbuttons-small.png)
+![imagen de la plantilla small sizedefinition de once botones.](images/overviews/sizedefinition-elevenbuttons-small.png)
 
 OneFontControl
 
 Un [**FontControl**](windowsribbon-element-fontcontrol.md).
 
-Solo se admiten tamaños de grupo grandes y medianas.
+Solo se admiten tamaños de grupo grandes y medianos.
 
 > [!IMPORTANT]
-> El marco de trabajo no admite la inclusión de [**FontControl**](windowsribbon-element-fontcontrol.md) dentro de una definición de plantilla personalizada.
+> El marco de trabajo no admite la inclusión de [**un FontControl**](windowsribbon-element-fontcontrol.md) dentro de una definición de plantilla personalizada.
 
  
 
-![imagen de la plantilla onefontcontrol Large sizedefinition](images/overviews/sizedefinition-onefontcontrol-large.png)
+![imagen de una plantilla de definición de tamaño grande de onefontcontrol.](images/overviews/sizedefinition-onefontcontrol-large.png)
 
-![imagen de la plantilla sizedefinition onefontcontrol Medium.](images/overviews/sizedefinition-onefontcontrol-medium.png)
+![imagen de una plantilla de definición de tamaño medio de onefontcontrol.](images/overviews/sizedefinition-onefontcontrol-medium.png)
 
 OneInRibbonGallery
 
-Un control [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) .
+Un [**control InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
-Solo se admiten tamaños de grupo grandes y pequeños.
+Solo se admiten los tamaños de grupo grande y pequeño.
 
-![imagen de la plantilla oneinribbongallery Large sizedefinition](images/overviews/sizedefinition-oneinribbongallery-large.png)
+![imagen de una plantilla de definición de tamaño grande de oneinribbongallery.](images/overviews/sizedefinition-oneinribbongallery-large.png)
 
-![imagen de la plantilla oneinribbongallery Small sizedefinition](images/overviews/sizedefinition-oneinribbongallery-small.png)
+![imagen de una plantilla de definición de tamaño pequeño de oneinribbongallery.](images/overviews/sizedefinition-oneinribbongallery-small.png)
 
 InRibbonGalleryAndBigButton
 
-Un control [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) y un control Family Button.
+Un [**control InRibbonGallery**](windowsribbon-element-inribbongallery.md) y un control de familia de botones.
 
-Solo se admiten tamaños de grupo grandes y pequeños.
+Solo se admiten los tamaños de grupo grande y pequeño.
 
-![imagen de la plantilla inribbongalleryandbigbutton Large sizedefinition](images/overviews/sizedefinition-inribbongalleryandbigbutton-large.png)
+![imagen de la plantilla inribbongalleryandbigbutton large sizedefinition.](images/overviews/sizedefinition-inribbongalleryandbigbutton-large.png)
 
-![imagen de la plantilla inribbongalleryandbigbutton Small sizedefinition](images/overviews/sizedefinition-inribbongalleryandbigbutton-small.png)
+![imagen de la plantilla inribbongalleryandbigbutton small sizedefinition.](images/overviews/sizedefinition-inribbongalleryandbigbutton-small.png)
 
 InRibbonGalleryAndButtons-GalleryScalesFirst
 
-Un control [de la galería de la cinta de](windowsribbon-controls-inribbongallery.md) opciones y dos o tres controles de la familia de botones.
+Un [control de la Galería en la cinta de](windowsribbon-controls-inribbongallery.md) opciones y dos o tres controles de familia de botones.
 
-La galería se contrae en la representación emergente en tamaños de grupo de tamaño medio y pequeño.
+La galería se contrae en la representación Popup en tamaños de grupo Mediano y Pequeño.
 
-![imagen de la plantilla inribbongalleryandbuttons-galleryscalesfirst Large sizedefinition.](images/overviews/sizedefinition-inribbongalleryandbuttons-galleryscalesfirst-large.png)
+![imagen de inribbongalleryandbuttons-galleryscalesfirst large sizedefinition template.](images/overviews/sizedefinition-inribbongalleryandbuttons-galleryscalesfirst-large.png)
 
-![imagen de la plantilla inribbongalleryandbuttons-galleryscalesfirst Medium sizedefinition.](images/overviews/sizedefinition-inribbongalleryandbuttons-galleryscalesfirst-medium.png)
+![imagen de inribbongalleryandbuttons-galleryscalesfirst medium sizedefinition template.](images/overviews/sizedefinition-inribbongalleryandbuttons-galleryscalesfirst-medium.png)
 
-![imagen de la plantilla inribbongalleryandbuttons-galleryscalesfirst Small sizedefinition.](images/overviews/sizedefinition-inribbongalleryandbuttons-galleryscalesfirst-small.png)
+![imagen de inribbongalleryandbuttons-galleryscalesfirst small sizedefinition template.](images/overviews/sizedefinition-inribbongalleryandbuttons-galleryscalesfirst-small.png)
 
 ButtonGroups
 
-Una organización compleja de controles de familia de botones de 32 (la mayoría de los cuales son opcionales).
+Una disposición compleja de 32 controles de familia de botones (la mayoría de los cuales son opcionales).
 
 > [!Note]  
-> Aparte del botón opcional de tamaño completo de la plantilla grande de ButtonGroups, todos los elementos de control que se declaran con esta plantilla deben estar contenidos en elementos [**ControlGroup**](windowsribbon-element-controlgroup.md) .
+> Aparte del botón de tamaño completo opcional de la plantilla ButtonGroups grande, todos los elementos de control declarados con esta plantilla deben estar incluidos en [**los elementos ControlGroup.**](windowsribbon-element-controlgroup.md)
 
  
 
-En el ejemplo siguiente se muestra el marcado necesario para mostrar todos los elementos de control de 32 (obligatorio y opcional) con esta plantilla.
+En el ejemplo siguiente se muestra el marcado necesario para mostrar los 32 elementos de control (obligatorios y opcionales) con esta plantilla.
 
 
 ```
@@ -371,24 +371,24 @@ En el ejemplo siguiente se muestra el marcado necesario para mostrar todos los e
 
 
 
-![imagen de la plantilla buttongroups Large sizedefinition](images/overviews/sizedefinition-buttongroups-large.png)
+![imagen de la plantilla sizedefinition de grupos de botones de gran tamaño.](images/overviews/sizedefinition-buttongroups-large.png)
 
-![imagen de la plantilla sizedefinition buttongroups Medium.](images/overviews/sizedefinition-buttongroups-medium.png)
+![imagen de la plantilla de definición de tamaño medio de los grupos de botones.](images/overviews/sizedefinition-buttongroups-medium.png)
 
-![imagen de la plantilla buttongroups Small sizedefinition](images/overviews/sizedefinition-buttongroups-small.png)
+![imagen de la plantilla small sizedefinition de grupos de botones.](images/overviews/sizedefinition-buttongroups-small.png)
 
 ButtonGroupsAndInputs
 
-Dos controles de la familia de entrada (el segundo es opcional) seguidos de una organización compleja de 29 controles de la familia de botones (la mayoría de los cuales son opcionales).
+Dos controles de familia de entrada (el segundo es opcional) seguidos de una compleja disposición de 29 controles de familia de botones (la mayoría de los cuales son opcionales).
 
-Solo se admiten tamaños de grupo grandes y medianas.
+Solo se admiten tamaños de grupo grandes y medianos.
 
 > [!Note]  
-> Todos los elementos de control declarados con esta plantilla deben estar contenidos en elementos [**ControlGroup**](windowsribbon-element-controlgroup.md) .
+> Todos los elementos de control declarados con esta plantilla deben estar incluidos en [**los elementos ControlGroup.**](windowsribbon-element-controlgroup.md)
 
  
 
-En el ejemplo siguiente se muestra el marcado necesario para mostrar todos los elementos de control (obligatorio y opcional) con esta plantilla.
+En el ejemplo siguiente se muestra el marcado necesario para mostrar todos los elementos de control (obligatorios y opcionales) con esta plantilla.
 
 
 ```
@@ -456,19 +456,19 @@ En el ejemplo siguiente se muestra el marcado necesario para mostrar todos los e
 
 
 
-![imagen de la plantilla buttongroupsandinputs Large sizedefinition](images/overviews/sizedefinition-buttongroupsandinputs-large.png)
+![imagen de la plantilla buttongroupsandinputs large sizedefinition.](images/overviews/sizedefinition-buttongroupsandinputs-large.png)
 
-![imagen de la plantilla sizedefinition buttongroupsandinputs Medium.](images/overviews/sizedefinition-buttongroupsandinputs-medium.png)
+![imagen de la plantilla buttongroupsandinputs medium sizedefinition.](images/overviews/sizedefinition-buttongroupsandinputs-medium.png)
 
 BigButtonsAndSmallButtonsOrInputs
 
-Dos controles de la familia de botones (ambos opcionales) seguidos de dos o tres controles de botón o familia de entrada.
+Dos controles de familia de botones (ambos opcionales) seguidos de dos o tres controles de botón o familia de entrada.
 
-Solo se admiten tamaños de grupo grandes y medianas.
+Solo se admiten tamaños de grupo grandes y medianos.
 
-![imagen de la plantilla bigbuttonsandsmallbuttonsorinputs Large sizedefinition](images/overviews/sizedefinition-bigbuttonsandsmallbuttonsorinputs-large.png)
+![imagen de la plantilla bigbuttonsandsmallbuttonsorinputs large sizedefinition.](images/overviews/sizedefinition-bigbuttonsandsmallbuttonsorinputs-large.png)
 
-![imagen de la plantilla sizedefinition bigbuttonsandsmallbuttonsorinputs Medium.](images/overviews/sizedefinition-bigbuttonsandsmallbuttonsorinputs-medium.png)
+![imagen de la plantilla bigbuttonsandsmallbuttonsorinputs medium sizedefinition.](images/overviews/sizedefinition-bigbuttonsandsmallbuttonsorinputs-medium.png)
 
 
 
@@ -476,9 +476,9 @@ Solo se admiten tamaños de grupo grandes y medianas.
 
 ### <a name="basic-sizedefinition-example"></a>Ejemplo de SizeDefinition básico
 
-En el ejemplo de código siguiente se proporciona una demostración básica de cómo declarar una plantilla de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) en el marcado de la cinta.
+En el ejemplo de código siguiente se proporciona una demostración básica de cómo declarar una [**plantilla SizeDefinition**](windowsribbon-element-sizedefinition.md) en el marcado de la cinta de opciones.
 
-*OneInRibbonGallery* [**SizeDefinition**](windowsribbon-element-sizedefinition.md) se usa para este ejemplo concreto, pero todas las plantillas de Framework se especifican de manera similar.
+*OneInRibbonGallery* [**SizeDefinition**](windowsribbon-element-sizedefinition.md) se usa para este ejemplo en particular, pero todas las plantillas de marco se especifican de forma similar.
 
 
 ```XML
@@ -511,16 +511,16 @@ En el ejemplo de código siguiente se proporciona una demostración básica de c
 
 ### <a name="complex-sizedefinition-example-with-scaling-policies"></a>Ejemplo de SizeDefinition complejo con directivas de escalado
 
-El comportamiento de contracción de las plantillas [**SizeDefinition**](windowsribbon-element-sizedefinition.md) se puede controlar mediante el uso de directivas de escalado en el marcado de la cinta de opciones.
+El comportamiento de con contraer las plantillas [**SizeDefinition**](windowsribbon-element-sizedefinition.md) se puede controlar mediante el uso de directivas de escalado en el marcado de la cinta de opciones.
 
-El elemento [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) contiene un manifiesto de [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) y declaraciones de [**escala**](windowsribbon-element-scale.md) que especifican las preferencias de diseño adaptable para uno o más elementos de [**Grupo**](windowsribbon-element-group.md) cuando se cambia el tamaño de la cinta de opciones.
+El [**elemento ScalingPolicy**](windowsribbon-element-scalingpolicy.md) contiene un manifiesto de declaraciones [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) y [**Scale**](windowsribbon-element-scale.md) que especifican preferencias de diseño adaptable para uno o varios elementos [**Group**](windowsribbon-element-group.md) cuando se cambia el tamaño de la cinta.
 
 > [!Note]  
-> Se recomienda especificar el nivel de detalle de la Directiva de escalado adecuado de modo que la mayoría de los elementos de [**Grupo**](windowsribbon-element-group.md) , si no todos, estén asociados a un elemento de [**escala**](windowsribbon-element-scale.md) en el que el atributo de *tamaño* sea igual a `Popup` . Esto permite al marco de trabajo representar la cinta de opciones con el menor tamaño posible y admitir la gama más amplia de dispositivos de pantalla, antes de introducir automáticamente un mecanismo de desplazamiento.
+> Se recomienda encarecidamente especificar los detalles adecuados de la directiva de escalado de forma que la mayoría de los elementos [**Group,**](windowsribbon-element-group.md) si no todos, estén asociados a un elemento [**Scale**](windowsribbon-element-scale.md) donde el atributo *Size* sea igual a `Popup` . Esto permite que el marco represente la cinta de opciones con el menor tamaño posible y admita la gama más amplia de dispositivos de visualización, antes de introducir automáticamente un mecanismo de desplazamiento.
 
  
 
-En el ejemplo de código siguiente se muestra un manifiesto de [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) que especifica una preferencia [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de cuatro grupos de controles en una pestaña **Inicio** . Además, los elementos de [**escala**](windowsribbon-element-scale.md) se especifican para influir en el comportamiento de contracción, en orden de tamaño descendente, de cada grupo.
+En el ejemplo de código siguiente se muestra un [**manifiesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) que especifica una preferencia [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de los cuatro grupos de controles de una **pestaña** Inicio. Además, los [**elementos Scale**](windowsribbon-element-scale.md) se especifican para influir en el comportamiento de conserción, en orden descendente de tamaño, de cada grupo.
 
 
 ```C++
@@ -590,13 +590,13 @@ En el ejemplo de código siguiente se muestra un manifiesto de [**ScalingPolicy*
 
 ### <a name="custom-templates"></a>Plantillas personalizadas
 
-Si los comportamientos de diseño predeterminados y las plantillas predefinidas de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) no ofrecen la flexibilidad o compatibilidad para un escenario de diseño determinado, el marco de la cinta de opciones admite plantillas personalizadas a través del elemento [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md) .
+Si los comportamientos de diseño predeterminados y las plantillas [**de SizeDefinition**](windowsribbon-element-sizedefinition.md) predefinidas no ofrecen la flexibilidad o compatibilidad para un escenario de diseño determinado, el marco de la cinta de opciones admite las plantillas personalizadas a través del elemento [**Ribbon.SizeDefinitions.**](windowsribbon-element-ribbon-sizedefinitions.md)
 
-Las plantillas personalizadas se pueden declarar de dos maneras: un método independiente mediante el elemento [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md) para declarar plantillas con nombre reutilizables o un método insertado específico del [**Grupo**](windowsribbon-element-group.md).
+Las plantillas personalizadas se pueden declarar de dos maneras: un método independiente mediante el elemento [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md) para declarar plantillas reutilizables con nombre o un método en línea específico de [**Group.**](windowsribbon-element-group.md)
 
 ### <a name="standalone-template"></a>Plantilla independiente
 
-En el ejemplo de código siguiente se muestra una plantilla personalizada básica reutilizable.
+En el ejemplo de código siguiente se muestra una plantilla personalizada básica y reutilizable.
 
 
 ```
@@ -617,11 +617,11 @@ En el ejemplo de código siguiente se muestra una plantilla personalizada básic
 
 
 
-### <a name="inline-template"></a>Plantilla alineada
+### <a name="inline-template"></a>Plantilla inserta
 
-En los siguientes ejemplos de código se muestra una plantilla personalizada básica insertada para un grupo de cuatro botones.
+En los ejemplos de código siguientes se muestra una plantilla personalizada en línea básica para un grupo de cuatro botones.
 
-En esta sección de código se muestran las declaraciones de comandos de un grupo de botones. Los recursos de imagen grandes y pequeños también se especifican aquí.
+En esta sección de código se muestran las declaraciones command para un grupo de botones. Aquí también se especifican recursos de imagen grandes y pequeños.
 
 
 ```XML
@@ -694,7 +694,7 @@ En esta sección de código se muestran las declaraciones de comandos de un grup
 
 
 
-En esta sección de código se muestra cómo definir plantillas [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) grandes, medianas y pequeñas para mostrar los cuatro botones en distintos tamaños y diseños. La declaración [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de la pestaña define la plantilla que se usa para un grupo de controles basándose en el tamaño de la cinta de opciones y el espacio que requiere la pestaña activa.
+En esta sección de código se muestra cómo definir plantillas [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) grandes, medianas y pequeñas para mostrar los cuatro botones en distintos tamaños y diseños. La [**declaración ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de la pestaña define qué plantilla se usa para un grupo de controles en función del tamaño y el espacio de la cinta de opciones requeridos por la pestaña activa.
 
 
 ```XML
@@ -807,16 +807,16 @@ En esta sección de código se muestra cómo definir plantillas [**GroupSizeDefi
 
 
 
-En las siguientes imágenes se muestra cómo se aplican las plantillas del ejemplo anterior a la interfaz de usuario de la cinta para dar cabida a una reducción del tamaño de la cinta.
+En las imágenes siguientes se muestra cómo se aplican las plantillas del ejemplo anterior a la interfaz de usuario de la cinta de opciones para dar cabida a una disminución del tamaño de la cinta.
 
 
 
-|        |                                                                                                    |
+|  Tipo  |      Imagen                                                                                         |
 |--------|----------------------------------------------------------------------------------------------------|
-| Grande  | ![imagen de una plantilla personalizada de gran tamaño en línea.](images/overviews/sizedefinition-custom-large.png)   |
-| Media | ![imagen de una plantilla personalizada mediana en línea.](images/overviews/sizedefinition-custom-medium.png) |
-| Pequeña  | ![imagen de una plantilla personalizada pequeña insertada.](images/overviews/sizedefinition-custom-small.png)   |
-| Popup  | ![imagen de una plantilla personalizada emergente en línea.](images/overviews/sizedefinition-custom-popup.png)   |
+| grande  | ![imagen de una plantilla personalizada grande insertda.](images/overviews/sizedefinition-custom-large.png)   |
+| Media | ![imagen de una plantilla personalizada mediana insertda.](images/overviews/sizedefinition-custom-medium.png) |
+| Pequeña  | ![imagen de una plantilla personalizada pequeña insertda.](images/overviews/sizedefinition-custom-small.png)   |
+| Popup  | ![imagen de una plantilla personalizada emergente insertda.](images/overviews/sizedefinition-custom-popup.png)   |
 
 
 

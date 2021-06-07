@@ -1,9 +1,9 @@
 ---
 title: Elemento GroupSizeDefinition
-description: Representa un tamaño de diseño de un grupo de controles en una plantilla personalizada.
+description: Representa un tamaño de diseño para un grupo de controles en una plantilla personalizada.
 ms.assetid: c0e20c80-16af-41d5-81e1-0dc32e92e3fa
 keywords:
-- GroupSizeDefinition cinta de opciones de Windows
+- GroupSizeDefinition, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5cf166dbf428c9d17beb148887cc94be73dc11a0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 650301a29ace2c6df9316a315d4cdbad448e5573
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105704869"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443386"
 ---
 # <a name="groupsizedefinition-element"></a>Elemento GroupSizeDefinition
 
-Representa un tamaño de diseño de un grupo de controles en una plantilla personalizada.
+Representa un tamaño de diseño para un grupo de controles en una plantilla personalizada.
 
 ## <a name="usage"></a>Uso
 
@@ -48,7 +48,7 @@ Representa un tamaño de diseño de un grupo de controles en una plantilla perso
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ Representa un tamaño de diseño de un grupo de controles en una plantilla perso
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Amplíe<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> Medio<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Pequeño<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (Medio)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Pequeño)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ Representa un tamaño de diseño de un grupo de controles en una plantilla perso
 | [**ColumnBreak**](windowsribbon-element-columnbreak.md)<br/>                     | Puede producirse una o varias veces<br/> <br/> |
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Puede producirse una o varias veces<br/> <br/> |
 | [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
-| [**Row**](windowsribbon-element-row.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
+| [**Fila**](windowsribbon-element-row.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 
 
 
@@ -88,15 +88,15 @@ Representa un tamaño de diseño de un grupo de controles en una plantilla perso
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse hasta tres veces para cada elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) (una vez por cada *tamaño*).
+Puede producirse hasta tres veces para cada [**elemento SizeDefinition**](windowsribbon-element-sizedefinition.md) (una vez para cada *size*).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra una plantilla personalizada básica que incluye los tres tamaños de diseño de grupo que se deben definir con el elemento **GroupSizeDefinition** al crear una plantilla personalizada.
+En el ejemplo de código siguiente se muestra una plantilla personalizada básica que incluye los tres tamaños de diseño de grupo que se deben definir con el **elemento GroupSizeDefinition** al crear una plantilla personalizada.
 
 
 ```XML
@@ -188,20 +188,16 @@ En el ejemplo de código siguiente se muestra una plantilla personalizada básic
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

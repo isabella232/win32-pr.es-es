@@ -1,45 +1,45 @@
 ---
-description: El códec nativo JPEG XR está disponible a través de Windows Imaging Component (WIC). El formato JPEG XR, que el códec admite, está diseñado para la fotografía digital del consumidor y del profesional.
+description: El códec XR JPEG nativo está disponible a través de Windows Imaging Component (WIC). El formato JPEG XR, compatible con el códec, está diseñado para la fotografía digital profesional y de consumidor.
 ms.assetid: CB8D1A5F-B544-462E-8927-F45512CED873
-title: Información general sobre el códec JPEG XR
+title: Introducción al códec JPEG XR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f32ffa397667b325d4e49eadf4d8ce42d49e8a88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0d39608535f9be09821d8db3615641a84fd95a6
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706877"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444475"
 ---
-# <a name="jpeg-xr-codec-overview"></a>Información general sobre el códec JPEG XR
+# <a name="jpeg-xr-codec-overview"></a>Introducción al códec JPEG XR
 
-El códec nativo JPEG XR está disponible a través de Windows Imaging Component (WIC). El formato JPEG XR, que el códec admite, está diseñado para la fotografía digital del consumidor y del profesional.
+El códec XR JPEG nativo está disponible a través de Windows Imaging Component (WIC). El formato JPEG XR, compatible con el códec, está diseñado para la fotografía digital profesional y de consumidor.
 
-El formato JPEG XR puede lograr hasta dos veces la eficiencia de compresión del formato JPEG original, con artefactos de compresión menos perceptibles. Las características de JPEG XR incluyen:
+El formato JPEG XR puede lograr hasta el doble de eficacia de compresión del formato JPEG original, con artefactos de compresión menos evidentes. Las características de JPEG XR incluyen:
 
--   Compatibilidad con imágenes monocromáticas, RGB, CMYK y n-Channel
--   formatos enteros de 8, 16 y 32 bits
--   Alta gama dinámica, formatos anchos, con valores de color de punto fijo o punto flotante
--   Descodificación progresiva
--   Codificación con pérdida o sin pérdida mediante el mismo algoritmo de compresión
--   Compatibilidad con la descodificación de regiones de interés en imágenes de gran tamaño
+-   Compatibilidad con imágenes monocromáticas, RGB, GRAMA y n canales
+-   Formatos enteros de 8, 16 y 32 bits
+-   Rango dinámico alto, formatos de gama ancha, con valores de color de punto fijo o punto flotante
+-   Decoding progresiva
+-   Codificación sin pérdida o pérdida de datos con el mismo algoritmo de compresión
+-   Compatibilidad con la decodificación de regiones de interés en imágenes de gran tamaño
 
-El formato JPEG XR se define en los siguientes documentos de estándares:
+El formato JPEG XR se define en los siguientes documentos de estándar:
 
--   ITU-T T. 832: *tecnología de la información: JPEG XR Image Coding System – Image codificación Specification*
--   ISO/IEC 29199-2:2010: *tecnología de la información: sistema de codificación de imágenes JPEG XR, parte 2: especificación de codificación de imágenes*
+-   ITU-T T.832: tecnología de la información: sistema de codificación de imágenes *JPEG XR: especificación de codificación de imágenes*
+-   ISO/IEC 29199-2:2010: Tecnología de la información: sistema de codificación de imágenes *JPEG XR, parte 2:* Especificación de codificación de imágenes
 
-El estándar JPEG XR se basa en gran medida en el formato de [fotografía HD](hdphoto-format-overview.md) , pero hay algunas diferencias entre los dos formatos. En Windows 8, el códec HD Photo se ha actualizado para que sea compatible con JPEG XR. El codificador ahora siempre genera un flujo de bits compatible con JPEG XR. El descodificador puede descodificar imágenes JPEG XR y HD.
+El estándar JPEG XR se basa en gran medida en el formato [HD Photo,](hdphoto-format-overview.md) pero hay algunas diferencias entre los dos formatos. En Windows 8, el códec HD Photo se ha actualizado para admitir JPEG XR. El codificador ahora siempre genera una secuencia de bits compatible con JPEG XR. El descodificador puede descodificar imágenes JPEG XR y HD Photo.
 
-Se han realizado mejoras sustanciales en el rendimiento, en relación con el códec HD Photo, en el códec JPEG XR. Por ejemplo, se ha mejorado la descodificación de imágenes de subresolución, como la generación de miniaturas, así como la descodificación de imágenes de baja resolución. Se recomienda usar el formato JPEG XR en lugar del formato HD Photo.
+Se han realizado mejoras sustanciales de rendimiento en relación con el códec HD Photo con el códec JPEG XR. Por ejemplo, se ha mejorado la decodificación de imágenes de sub resolución, como la generación de miniaturas, así como lacoding de imágenes de baja resolución. Se recomienda usar el formato JPEG XR en lugar del formato HD Photo.
 
 ## <a name="codec-information"></a>Información del códec
 
 
 
-|                     |                                                                         |
+|      Componente      |    Descripción                                                          |
 |---------------------|-------------------------------------------------------------------------|
-| Extensión de nombre de archivo | "jxr" y "WDP"                                                         |
+| Extensión de nombre de archivo | "jxr" y "wdp"                                                         |
 | GUID de contenedor      | **GUID \_ ContainerFormatWmp**                                            |
 | GUID del descodificador        | **CLSID \_ WICWmpDecoder**                                                |
 | GUID del codificador        | **CLSID \_ WICWmpEncoder**                                                |
@@ -53,66 +53,66 @@ Se han realizado mejoras sustanciales en el rendimiento, en relación con el có
 
 ### <a name="high-dynamic-range"></a>Alto rango dinámico
 
-JPEG XR admite imágenes de rangos más dinámicas, mediante el uso de colores de punto flotante o de punto fijo. En estos formatos de color, el intervalo numérico de un píxel es mayor que el intervalo visible, de modo que puede ajustar los colores por encima o por debajo del rango visible durante las fases de procesamiento intermedios.
+JPEG XR admite imágenes de rango altamente dinámicas, mediante colores de punto flotante o de punto fijo. En estos formatos de color, el intervalo numérico de un píxel es mayor que el intervalo visible, por lo que puede ajustar los colores por encima o por debajo del intervalo visible durante las fases de procesamiento intermedio.
 
--   Punto fijo: en una representación de punto fijo, 0 representa el negro y 1,0 representa la saturación máxima. El códec JPEG XR admite formatos de punto fijo de 16 y 32 bits. Para 16 bits, 1,0 = 0x2000h, que proporciona 13 bits para el intervalo visible \[ 0... 1 \] . El intervalo total es de – 4,0 a + 3,999 y se asigna linealmente. Para 32 bits, 1,0 = 0x01000000h, el intervalo visible es de 24 bits y el intervalo total es – 128 a + 127,999.
--   Punto flotante: en una representación de punto flotante, 0 representa el negro y 1,0 representa la saturación máxima. El códec JPEG XR es compatible con los formatos de punto flotante de 16 y 32 bits.
+-   Punto fijo: en una representación de punto fijo, 0 representa el negro y 1,0 representa la saturación máxima. El códec JPEG XR admite formatos de punto fijo de 16 y 32 bits. Para 16 bits, 1,0 = 0x2000h, que proporciona 13 bits para el intervalo visible \[ 0...1. \] El intervalo total es de –4,0 a +3,999 y se asigna linealmente. Para 32 bits, 1,0 = 0x01000000 h, el intervalo visible es de 24 bits y el intervalo total es de -128 a +127,999.
+-   Punto flotante: en una representación de punto flotante, 0 representa el negro y 1,0 representa la saturación máxima. El códec JPEG XR admite formatos de punto flotante de 16 y 32 bits.
 
 ### <a name="tiles"></a>Iconos
 
-Un marco se puede particionar en subregiones rectangulares denominadas *mosaicos*. Un icono es un área de una imagen que contiene matrices rectangulares de macrobloques. Los mosaicos permiten descodificar las regiones de la imagen sin procesar toda la imagen.
+Un marco se puede particionar en subregiones rectangulares *denominadas iconos*. Un icono es un área de una imagen que contiene matrices rectangulares de macrobloqueos. Los iconos permiten descodificar las regiones de la imagen sin procesar toda la imagen.
 
-Durante la codificación, seleccione el número de mosaicos mediante el establecimiento de las propiedades **HorizontalTileSlices** y **VerticalTileSlices** . El tamaño mínimo del mosaico es de 16 × 16 píxeles. El codificador ajusta el número de mosaicos para mantener esta restricción. Hay una sobrecarga de almacenamiento y procesamiento asociada a cada mosaico, por lo que debe tener en cuenta el número de mosaicos necesarios para determinados escenarios.
+Durante la codificación, seleccione el número de iconos estableciendo las propiedades **HorizontalTileSlices** y **VerticalTileSlices.** El tamaño mínimo del icono es de 16 × 16 píxeles. El codificador ajusta el número de iconos para mantener esta restricción. Hay una sobrecarga de almacenamiento y procesamiento asociada a cada icono, por lo que debe tener en cuenta el número de iconos necesarios para escenarios concretos.
 
-### <a name="image-stream-output"></a>Salida de flujo de imagen
+### <a name="image-stream-output"></a>Salida del flujo de imagen
 
 El estándar JPEG-XR define dos partes de un archivo JPEG-XR:
 
--   Flujo de bits de imagen, definido en el cuerpo del estándar.
--   Contenedor de la imagen. El archivo contiene metadatos Exif y XMP, y se define en el anexo A del estándar.
+-   Secuencia de bits de imagen, definida en el cuerpo del estándar.
+-   Contenedor de imágenes. El archivo contiene metadatos Exif y XMP, y se define en el anexo A del estándar.
 
-Es posible, y permitido por el estándar, incrustar el flujo de imágenes dentro de otro tipo de contenedor de archivos. El codificador admite un modo de solo transmisión, que genera la secuencia de bits de imagen sin procesar sin contenedor de imágenes. Una aplicación puede almacenar el flujo de bits en otro formato de contenedor.
+Es posible, y lo permite el estándar, insertar la secuencia de imágenes dentro de otro tipo de contenedor de archivos. El codificador admite un modo de solo secuencia, que genera la secuencia de bits de imagen sin procesar sin contenedor de imágenes. Una aplicación puede almacenar la secuencia de bits en algún otro formato de contenedor.
 
-Para habilitar el modo de solo transmisión, establezca la propiedad **StreamOnly** .
+Para habilitar el modo de solo secuencia, establezca **la propiedad StreamOnly.**
 
 ### <a name="image-quality-settings"></a>Configuración de calidad de imagen
 
 Varias propiedades de códec controlan la calidad de la imagen de salida del codificador.
 
--   [ImageQuality](#imagequality) es una propiedad común a través de los códecs WIC. Especifica la calidad de la imagen como un valor de punto flotante único entre 0,0 y 1,0.
--   Las propiedades [calidad](#image-quality-settings), [superposición](#overlap)y [submuestreo](#subsampling) proporcionan más control sobre la configuración de calidad.
+-   [ImageQuality es](#imagequality) una propiedad común entre códecs WIC. Especifica la calidad de la imagen como un valor de punto flotante único entre 0,0 y 1,0.
+-   Las [propiedades Calidad,](#image-quality-settings) [Superposición](#overlap) [y Submuestreo](#subsampling) dan más control sobre la configuración de calidad.
 
-Para usar las propiedades [calidad](#image-quality-settings), [superposición](#overlap)y [submuestreo](#subsampling) , establezca la propiedad [UseCodecOptions](#usecodecoptions) en **Variant \_ true**.
+Para usar las [propiedades Quality](#image-quality-settings), [Overlap](#overlap)y [Subsampling,](#subsampling) establezca la [propiedad UseCodecOptions](#usecodecoptions) en **VARIANT \_ TRUE.**
 
-Si [UseCodecOptions](#usecodecoptions) es **Variant \_ false** (**Variant \_ false** es el valor predeterminado), el codificador utiliza la propiedad [ImageQuality](#imagequality) . El codificador asigna el valor de ImageQuality a la [calidad](#image-quality-settings), la [superposición](#overlap)y el [submuestreo](#subsampling) a través de una tabla de búsqueda.
+Si [UseCodecOptions](#usecodecoptions) es **VARIANT \_ FALSE** **(VARIANT \_ FALSE** es el valor predeterminado), el codificador usa la [propiedad ImageQuality.](#imagequality) El codificador asigna el valor de ImageQuality a [Quality](#image-quality-settings), [Overlap](#overlap)y [Subsampling](#subsampling) a través de una tabla de búsqueda.
 
-El codificador no admite la propiedad **CompressionQuality** .
+El codificador no admite la **propiedad CompressionQuality.**
 
-### <a name="compressed-domain-transcode"></a>Transcodificación de dominios comprimidos
+### <a name="compressed-domain-transcode"></a>Transcodificación de dominio comprimido
 
-El códec JPEG XR puede realizar ciertas transformaciones de imágenes sin descodificar realmente los datos comprimidos y volver a codificarlos. Las operaciones de dominio comprimido son muy eficaces y evitan cualquier pérdida de calidad adicional que sea habitual al descodificar y volver a codificar una imagen comprimida con pérdida.
+El códec JPEG XR puede realizar determinadas transformaciones de imagen sin realmente decodir los datos comprimidos y volver a codificar. Las operaciones de dominio comprimido son muy eficaces y evitan cualquier pérdida de calidad adicional que sea típica al descodificar y volver a codificar una imagen comprimida por pérdida.
 
 Se admiten las siguientes operaciones de dominio comprimido:
 
 -   Recortar una región de la imagen.
 -   Girar o voltear la imagen.
 -   Descarte los datos de frecuencia para crear un archivo de imagen más pequeño.
--   Reorganice la imagen entre el orden espacial y el orden de las frecuencias.
+-   Reorganizar la imagen entre el orden espacial y el orden de frecuencia.
 
-El codificador de JPEG XR usa la transcodificación de dominios comprimidos, si es posible, cuando la imagen de origen es una imagen de JPEG XR. Cuando el codificador realiza una operación de dominio comprimido, omite las siguientes propiedades de códec: [AlphaQuality](#alphaquality), [ImageQuality](#imagequality), [InterleavedAlpha](#interleavedalpha),[superposición](#overlap)sin [pérdida](#lossless)y [calidad](#image-quality-settings). Si las propiedades [HorizontalTileSlices](/windows) y [VerticalTileSlices](/windows) están presentes, debe establecerlas en cero. No se puede cambiar el tamaño de mosaico de una imagen como parte de un transcodificación de dominios comprimidos.
+El codificador JPEG XR usa la transcodificación de dominios comprimidos, si es posible, cuando la imagen de origen es una imagen JPEG XR. Cuando el codificador realiza una operación de dominio comprimido, omite las siguientes propiedades de códec: [AlphaQuality,](#alphaquality) [ImageQuality,](#imagequality) [InterleavedAlpha,](#interleavedalpha) [Lossless](#lossless)[Overlap](#overlap)y [Quality](#image-quality-settings). Si las [propiedades HorizontalTileSlices](/windows) y [VerticalTileSlices están presentes,](/windows) debe establecerlas en cero. No se puede cambiar el tamaño de mosaico de una imagen como parte de una transcodificación de dominio comprimido.
 
 En la lista siguiente se describe cómo realizar las transformaciones de imagen.
 
--   Para recortar la imagen, establezca la región deseada en el parámetro [**WICRect**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource) del método **WriteSource** .
--   Para girar o voltear la imagen, establezca la propiedad [BitmapTransform](#bitmaptransform) .
--   Para descartar los datos de frecuencia de la imagen, establezca la propiedad [ImageDataDiscard](#imagedatadiscard) . Para descartar los datos de frecuencia en el canal alfa, establezca la propiedad [AlphaDataDiscard](#alphadatadiscard) . Descartar los datos de frecuencia reduce el tamaño del archivo codificado y puede reducir la resolución.
--   Para cambiar la organización de la imagen entre la frecuencia y la ordenación espacial, establezca la propiedad [FrequencyOrdering](/windows) .
+-   Para recortar la imagen, establezca la región deseada en el [**parámetro WICRect**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource) del **método WriteSource.**
+-   Para girar o voltear la imagen, establezca la [propiedad BitmapTransform.](#bitmaptransform)
+-   Para descartar los datos de frecuencia de la imagen, establezca [la propiedad ImageDataDiscard.](#imagedatadiscard) Para descartar los datos de frecuencia en el canal alfa, establezca la [propiedad AlphaDataDiscard.](#alphadatadiscard) Descartar los datos de frecuencia reduce el tamaño del archivo codificado y puede reducir la resolución.
+-   Para cambiar la organización de la imagen entre la frecuencia y el orden espacial, establezca la [propiedad FrequencyOrdering.](/windows)
 
-Para deshabilitar el transcodificación de dominios comprimidos y forzar que el codificador vuelva a codificar la imagen, establezca [UseCodecOptions](#usecodecoptions) en **Variant \_ true** y establezca [CompressedDomainTranscode](#compresseddomaintranscode) en **Variant \_ false**.
+Para deshabilitar la transcodificación de dominio comprimido y forzar al codificador a volver a codificar la imagen, establezca [UseCodecOptions](#usecodecoptions) en **VARIANT \_ TRUE** y [establezca CompressedDomainTranscode](#compresseddomaintranscode) en **VARIANT \_ FALSE.**
 
 ## <a name="encoder-options"></a>Opciones del codificador
 
-Para establecer las propiedades de codificación, use la interfaz [**IPropertyBag2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) . Para obtener más información, vea [información general sobre la codificación](-wic-creating-encoder.md).
+Para establecer las propiedades de codificación, use la [**interfaz IPropertyBag2.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) Para obtener más información, vea Información general [sobre codificación.](-wic-creating-encoder.md)
 
 En la lista siguiente se especifican las opciones del codificador.
 
@@ -127,83 +127,83 @@ En la lista siguiente se especifican las opciones del codificador.
 -   [ImageQuality](#imagequality)
 -   [InterleavedAlpha](#interleavedalpha)
 -   [Lossless](#lossless)
--   [Superpone](#overlap)
+-   [Traslapo](#overlap)
 -   [ProgressiveMode](#progressivemode)
 -   [Quality](#image-quality-settings)
 -   [StreamOnly](#streamonly)
--   [Un submuestreo](#subsampling)
+-   [Submuestreo](#subsampling)
 -   [UseCodecOptions](#usecodecoptions)
 -   [VerticalTileSlices](#verticaltileslices)
 
 ### <a name="alphadatadiscard"></a>AlphaDataDiscard
 
-Establece la cantidad de datos de frecuencia alfa que se va a descartar durante la transcodificación de un dominio comprimido.
+Establece la cantidad de datos de frecuencia alfa que se descartarán durante una transcodificación de dominio comprimido.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo | Valor predeterminado |
+| Tipo de datos | VARTYPE     | Intervalo | Predeterminado |
 |-----------|-------------|-------|---------|
-| **UCHAR** | **VT \_ UI1** | de 0 a 4   | None    |
+| **UCHAR** | **VT \_ UI1** | 0–4   | Ninguno    |
 
 
 
  
 
-Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode) está establecida en **Variant \_ true** y la imagen contiene un canal alfa plano o un canal alfa intercalado; de lo contrario, se omite.
+Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode) está establecida en **VARIANT \_ TRUE** y la imagen contiene un canal alfa plano o un canal alfa intercalado; de lo contrario, se omite.
 
-En el caso de las imágenes que contienen un canal alfa plano, los valores siguientes son válidos.
+En el caso de las imágenes que contienen un canal alfa plana, los valores siguientes son válidos.
 
 
 
-| Value | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Valor | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | No se descartan datos de frecuencia de la imagen.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 1     | Se descartan los flexbits. Esto reduce arbitrariamente la calidad del canal alfa plano para la imagen transcodificada. , sin un cambio en la resolución efectiva. La reducción exacta del tamaño y la calidad de los archivos depende de numerosos factores y no se puede especificar exactamente.                                                                                                                                                                                           |
-| 2     | La banda de datos de frecuencia de paso alto se descarta, incluido el flexbits. Esto reduce eficazmente la resolución del canal alfa plano en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada bloque 4x4 de píxeles de canal alfa. Normalmente, solo debe establecer este valor cuando la propiedad [ImageDataDiscard](#imagedatadiscard) tiene el mismo valor.                            |
-| 3     | Se descartan las bandas de datos de frecuencia alta y de baja pasada, incluido el flexbits. Este ffectively reduce la resolución del canal alfa plano en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada adaptativo macrobloque de 16x16 de píxeles de canal alfa. Normalmente, solo debe establecer este valor cuando la propiedad [ImageDataDiscard](#imagedatadiscard) tiene el mismo valor. |
-| 4     | Se descarta totalmente el canal alfa. El formato de píxel de la imagen transcodificada se cambia para reflejar la eliminación del canal alfa.                                                                                                                                                                                                                                                                                                                                |
+| 1     | Los flexbits se descartan. Esto reduce arbitrariamente la calidad del canal alfa planar para la imagen transcodificada. , sin un cambio en la resolución efectiva. La reducción exacta del tamaño y la calidad del archivo depende de numerosos factores y no se puede especificar exactamente.                                                                                                                                                                                           |
+| 2     | Se descarta la banda de datos de frecuencia de paso alto, incluidos los flexbits. Esto reduce eficazmente la resolución del canal alfa plana en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles de cada bloque 4x4 de píxeles de canal alfa. Normalmente, debe establecer este valor solo cuando la [propiedad ImageDataDiscard](#imagedatadiscard) tenga el mismo valor.                            |
+| 3     | Se descartan las bandas de datos de frecuencia de paso alto y baja, incluidos los flexbits. Esto reduce de forma ffectively la resolución del canal alfa planar en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada macrobloqueo de 16 x 16 píxeles de píxeles de canal alfa. Normalmente, debe establecer este valor solo cuando la [propiedad ImageDataDiscard](#imagedatadiscard) tenga el mismo valor. |
+| 4     | Se descarta totalmente el canal alfa. El formato de píxel de la imagen transcodificada cambia para reflejar la eliminación del canal alfa.                                                                                                                                                                                                                                                                                                                                |
 
 
 
  
 
-En el caso de las imágenes que contienen un canal alfa intercalado, el valor siguiente es válido.
+Para las imágenes que contienen un canal alfa intercalado, el siguiente valor es válido.
 
 
 
-| Value | Descripción                                                                                                                                 |
+| Valor | Descripción                                                                                                                                 |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| 4     | Se descarta totalmente el canal alfa. El formato de píxel de la imagen transcodificada se cambia para reflejar la eliminación del canal alfa. |
+| 4     | Se descarta totalmente el canal alfa. El formato de píxel de la imagen transcodificada cambia para reflejar la eliminación del canal alfa. |
 
 
 
  
 
-En el caso de alfa intercalado, a menos que esta propiedad esté establecida en 4, el canal alfa se procesa igual que los datos de la imagen, de acuerdo con el valor de la propiedad [ImageDataDiscard](#imagedatadiscard) .
+Para alfa intercalado, a menos que esta propiedad esté establecida en 4, el canal alfa se procesa igual que los datos de imagen, según el valor de la [propiedad ImageDataDiscard.](#imagedatadiscard)
 
 ### <a name="alphaquality"></a>AlphaQuality
 
-Establece la calidad de compresión para la imagen del canal alfa plana.
+Establece la calidad de compresión de la imagen de canal alfa plana.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo | Valor predeterminado |
+| Tipo de datos | VARTYPE     | Intervalo | Predeterminado |
 |-----------|-------------|-------|---------|
-| **UCHAR** | **VT \_ UI1** | de 1 a 255 | 1       |
+| **UCHAR** | **VT \_ UI1** | 1–255 | 1       |
 
 
 
  
 
-Esta propiedad se aplica cuando la imagen tiene un canal alfa y la propiedad [InterleavedAlpha](#interleavedalpha) es una **variante \_ falsa**. El valor 1 indica el modo sin pérdida. Aumentar los valores produce mayores proporciones de compresión y una calidad de imagen inferior.
+Esta propiedad se aplica cuando la imagen tiene un canal alfa y la [propiedad InterleavedAlpha](#interleavedalpha) es **VARIANT \_ FALSE.** El valor 1 indica el modo sin pérdida. Al aumentar los valores, se aumentan las relaciones de compresión y se reduce la calidad de la imagen.
 
 ### <a name="bitmaptransform"></a>BitmapTransform
 
-Especifica si la imagen se gira o voltea al descodificar.
+Especifica si la imagen se gira o se voltear cuando se descodifica.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo                                                                     | Valor predeterminado                       |
+| Tipo de datos | VARTYPE     | Intervalo                                                                     | Predeterminado                       |
 |-----------|-------------|---------------------------------------------------------------------------|-------------------------------|
 | **UCHAR** | **VT \_ UI1** | [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) | **WICBitmapTransformRotate0** |
 
@@ -217,93 +217,93 @@ Habilita o deshabilita la transcodificación de dominios comprimidos.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado           |
+| Tipo de datos         | VARTYPE      | Predeterminado           |
 |-------------------|--------------|-------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ true** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ TRUE** |
 
 
 
  
 
-Para deshabilitar las operaciones de dominio comprimido, establezca esta propiedad en **Variant \_ false**.
+Para deshabilitar las operaciones de dominio comprimido, establezca esta propiedad en **VARIANT \_ FALSE.**
 
 ### <a name="frequencyorder"></a>FrequencyOrder
 
-Habilita la codificación en orden de frecuencia. Las implementaciones de dispositivos de los codificadores JPEG XR pueden organizar un archivo en orden espacial para reducir la memoria necesaria durante la codificación.
+Habilita la codificación en orden de frecuencia. Las implementaciones de dispositivos de codificadores JPEG XR pueden organizar un archivo en orden espacial para reducir la memoria necesaria durante la codificación.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado           |
+| Tipo de datos         | VARTYPE      | Predeterminado           |
 |-------------------|--------------|-------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ true** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ TRUE** |
 
 
 
  
 
--   **Variante \_ TRUE**: orden de la frecuencia. Los datos de la frecuencia más baja aparecen en primer lugar en el archivo y el contenido de la imagen se agrupa por su frecuencia en lugar de su orientación espacial. La organización de un archivo por orden de frecuencia proporciona el mejor rendimiento para cualquier descodificación basada en frecuencias.
--   **Variante \_ FALSE**: orden espacial. El orden espacial reduce la memoria necesaria durante la codificación
+-   **VARIANT \_ TRUE:** orden de frecuencia. Los datos de frecuencia más baja aparecen primero en el archivo y el contenido de la imagen se agrupa por su frecuencia en lugar de por su orientación espacial. La organización de un archivo por orden de frecuencia proporciona el mejor rendimiento para cualquier decodificación basada en frecuencia.
+-   **VARIANT \_ FALSE:** orden espacial. El orden espacial reduce la memoria necesaria durante la codificación
 
-Se recomienda el orden de las frecuencias a menos que tenga razones de rendimiento o específicas de la aplicación para usar el orden espacial.
+Se recomienda el orden de frecuencia a menos que tenga razones específicas del rendimiento o de la aplicación para usar el orden espacial.
 
 ### <a name="horizontaltileslices"></a>HorizontalTileSlices
 
-Establece el número de mosaicos horizontales.
+Establece el número de iconos horizontales.
 
 
 
-| Tipo de datos  | VARTYPE     | Intervalo  | Valor predeterminado                      |
+| Tipo de datos  | VARTYPE     | Intervalo  | Predeterminado                      |
 |------------|-------------|--------|------------------------------|
-| **USHORT** | **VT \_ UI2** | 0 – 4095 | (ancho de imagen – 1)  >> 8 |
+| **USHORT** | **VT \_ UI2** | 0–4095 | (ancho de imagen – 1) >> 8 |
 
 
 
  
 
-El valor es el número de subdivisiones horizontales; es decir, el número de mosaicos horizontales: 1.
+El valor es el número de subdivisiones horizontales; es decir, el número de iconos horizontales: 1.
 
 ### <a name="ignoreoverlap"></a>IgnoreOverlap
 
-Especifica cómo el codificador controla los límites del mosaico durante la transcodificación de un dominio comprimido.
+Especifica cómo el codificador controla los límites de mosaico durante una transcodificación de dominio comprimido.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado            |
+| Tipo de datos         | VARTYPE      | Predeterminado            |
 |-------------------|--------------|--------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ false** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ FALSE** |
 
 
 
  
 
-Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode) se establece en **Variant \_ true** y se realiza una subcodificación de una subregión de exactamente uno o más mosaicos.
+Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode) está establecida en **VARIANT \_ TRUE** y se realiza una transcodificación de subr regiones de exactamente uno o varios iconos.
 
-La operación predeterminada para una región Transcode es expandir la región solicitada para incluir los píxeles circundantes necesarios para la descodificación de superposiciones de los bordes de la región. Si esta propiedad se establece en **Variant \_ true**, el códec omite los píxeles circundantes y solo se extraen el mosaico o los mosaicos seleccionados. Si la imagen de origen no está en mosaico o si la región solicitada incluye mosaicos parciales, se omite este parámetro.
+La operación predeterminada para una transcodificación de región es expandir la región solicitada para incluir los píxeles circundantes necesarios para la descodificación superpuesta de los bordes de la región. Si esta propiedad se establece en **VARIANT \_ TRUE,** el códec omite los píxeles circundantes y solo se extraen los mosaicos o iconos seleccionados. Si la imagen de origen no está en mosaico o si la región solicitada incluye iconos parciales, este parámetro se omite.
 
 ### <a name="imagedatadiscard"></a>ImageDataDiscard
 
-Establece la cantidad de datos de frecuencia de la imagen que se van a descartar durante una transcodificación de dominio comprimido.
+Establece la cantidad de datos de frecuencia de imagen que se descartarán durante una transcodificación de dominio comprimido.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo | Valor predeterminado |
+| Tipo de datos | VARTYPE     | Intervalo | Predeterminado |
 |-----------|-------------|-------|---------|
-| **UCHAR** | **VT \_ UI1** | 0 – 3   | 0       |
+| **UCHAR** | **VT \_ UI1** | 0–3   | 0       |
 
 
 
  
 
-Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode) está establecida en **Variant \_ true**; en caso contrario, se omite.
+Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode) está establecida en **VARIANT \_ TRUE;** de lo contrario, se omite.
 
 
 
-| Value | Descripción                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Valor | Descripción                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | No se descartan datos de frecuencia de la imagen.                                                                                                                                                                                                                                                                                                                                                                             |
-| 1     | Se descartan los flexbits. Esto reduce arbitrariamente la calidad de la imagen transcodificada sin cambiar la resolución efectiva de la imagen. La reducción exacta del tamaño y la calidad de los archivos depende de numerosos factores y no se puede especificar exactamente. Este valor devuelve un error especificado para un canal alfa intercalado.                                                                                |
-| 2     | La banda de datos de frecuencia de paso alto se descarta, incluido el flexbits. Esto reduce la resolución de la imagen transcodificada en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada bloque 4x4 de píxeles. Por lo tanto, la imagen transcodificada debe downsampledse en consecuencia cada vez que se descodifica.                             |
-| 3     | Se descartan las bandas de datos de frecuencia alta y de baja pasada, incluido el flexbits. Esto reduce la resolución de la imagen transcodificada en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada adaptativo macrobloque de 16x16 de píxeles. Por lo tanto, la imagen transcodificada debe downsampledse en consecuencia cada vez que se descodifica. |
+| 1     | Los flexbits se descartan. Esto reduce arbitrariamente la calidad de la imagen transcodificada sin cambiar la resolución efectiva de la imagen. La reducción exacta del tamaño y la calidad del archivo depende de numerosos factores y no se puede especificar exactamente. Este valor devuelve un error especificado para un canal alfa intercalado.                                                                                |
+| 2     | Se descarta la banda de datos de frecuencia de paso alto, incluidos los flexbits. Esto reduce la resolución de la imagen transcodificada en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles de cada bloque de 4 x 4 píxeles. Por lo tanto, la imagen transcodificada se debe degradar en consecuencia cada vez que se descodifica.                             |
+| 3     | Se descartan las bandas de datos de frecuencia de paso alto y baja, incluidos los flexbits. Esto reduce la resolución de la imagen transcodificada en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada macrobloque de 16 x 16 píxeles de píxeles. Por lo tanto, la imagen transcodificada se debe degradar en consecuencia cada vez que se descodifica. |
 
 
 
@@ -311,7 +311,7 @@ Esta propiedad solo se aplica si la propiedad [CompressedDomainTranscode](#compr
 
 Si la imagen contiene un canal alfa intercalado, el valor de [ImageDataDiscard](#imagedatadiscard) se aplica al canal alfa a menos que la propiedad [AlphaDataDiscard](#alphadatadiscard) esté establecida en 4, en cuyo caso se descarta el canal alfa.
 
-En el caso del alfa plano, los datos de frecuencia que se descartan se controlan mediante la propiedad [AlphaDataDiscard](#alphadatadiscard) .
+En el caso de alfa plano, los datos de frecuencia descartados se controlan mediante la [propiedad AlphaDataDiscard.](#alphadatadiscard)
 
 ### <a name="imagequality"></a>ImageQuality
 
@@ -319,36 +319,36 @@ Establece la calidad de la imagen.
 
 
 
-| Tipo de datos | VARTYPE    | Intervalo | Valor predeterminado |
+| Tipo de datos | VARTYPE    | Intervalo | Predeterminado |
 |-----------|------------|-------|---------|
-| **FLOAT** | **VT \_ R4** | 0 – 1,0 | 0.9     |
+| **FLOAT** | **VT \_ R4** | 0–1.0 | 0.9     |
 
 
 
  
 
-El nivel 1,0 proporciona una compresión matemática sin pérdida de los mismos.
+El nivel 1.0 proporciona compresión matemáticamente sin pérdida.
 
-El nivel 0,0 es el valor de la calidad más baja.
+El nivel 0.0 es la configuración de calidad más baja.
 
 ### <a name="interleavedalpha"></a>InterleavedAlpha
 
-Especifica si se va a codificar un alfa plano o alfa intercalado.
+Especifica si se debe codificar alfa intercalado o alfa planar.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado            |
+| Tipo de datos         | VARTYPE      | Predeterminado            |
 |-------------------|--------------|--------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ false** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ FALSE** |
 
 
 
  
 
--   **Variante \_ TRUE**: alfa intercalado. La información del canal alfa se codifica como un canal intercalado adicional, sin correlación con los canales de contenido de la imagen. Este modo es útil para descodificar alfa simultáneamente con la imagen cuando la imagen se transmite por secuencias.
--   VARIANT \_ false: alfa plana. Un canal alfa plano se codifica como una imagen independiente. Los datos de la imagen y el canal alfa se descodifican de forma independiente. Opcionalmente, puede establecer el nivel de calidad del canal alfa estableciendo la propiedad [AlphaQuality](#alphaquality) .
+-   **VARIANT \_ TRUE:** alfa intercalado. La información del canal alfa se codifica como un canal intercalado adicional, sin correlación con los canales de contenido de la imagen. Este modo es útil para la decodificación alfa simultáneamente con la imagen cuando la imagen se transmite por secuencias.
+-   VARIANT \_ FALSE: alfa planar. Un canal alfa planar se codifica como una imagen independiente. Los datos de imagen y el canal alfa se descodifican de forma independiente. Opcionalmente, puede establecer el nivel de calidad del canal alfa estableciendo la [propiedad AlphaQuality.](#alphaquality)
 
-El alfa intercalado solo se admite para determinados formatos de píxeles RGB. El alfa plano es compatible con cualquier formato de imagen que defina un canal alfa.
+Alfa intercalado solo se admite para determinados formatos de píxel RGB. Se admite alfa plana para cualquier formato de imagen que defina un canal alfa.
 
 ### <a name="lossless"></a>Lossless
 
@@ -356,25 +356,25 @@ Habilita la compresión de pérdidas.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado        |
+| Tipo de datos         | VARTYPE      | Predeterminado        |
 |-------------------|--------------|----------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | VARIANTE \_ false |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | VARIANT \_ FALSE |
 
 
 
  
 
-Si el valor es **Variant \_ true**, el codificador utiliza la compresión sin pérdida de datos. Cuando se establece en **Variant \_ true**, esta propiedad invalida la propiedad [ImageQuality](#imagequality) .
+Si el valor es **VARIANT \_ TRUE,** el codificador usa la compresión sin pérdida. Cuando se establece **en VARIANT \_ TRUE**, esta propiedad invalida la [propiedad ImageQuality.](#imagequality)
 
 ### <a name="overlap"></a>Superposición
 
-Establece el nivel de filtrado de superposición. Con el filtrado de superposición, los coeficientes de transformación se aplican en los límites de bloque y adaptativo macrobloque. Esto puede reducir los artefactos de bloqueo.
+Establece el nivel de filtrado de superposición. Con el filtrado de superposición, los coeficientes de transformación se aplican a través de los límites de bloque y macrobloqueo. Esto puede reducir los artefactos de bloqueo.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo | Valor predeterminado |
+| Tipo de datos | VARTYPE     | Intervalo | Predeterminado |
 |-----------|-------------|-------|---------|
-| **UCHAR** | **VT \_ UI1** | de 0 a 4   | 1       |
+| **UCHAR** | **VT \_ UI1** | 0–4   | 1       |
 
 
 
@@ -382,13 +382,13 @@ Establece el nivel de filtrado de superposición. Con el filtrado de superposici
 
 
 
-| Value | Descripción                                   |
+| Valor | Descripción                                   |
 |-------|-----------------------------------------------|
-| 0     | No superponerse.                                   |
-| 1     | Un nivel de superposición, mosaico flexible. (Valor predeterminado). |
-| 2     | Dos niveles de superposición, mosaico flexible.           |
-| 3     | Un nivel de superposición, mosaico fuerte             |
-| 4     | Dos niveles de superposición, mosaico fuerte.           |
+| 0     | Sin superposición.                                   |
+| 1     | Un nivel de superposición, tiling suave. (Valor predeterminado). |
+| 2     | Dos niveles de superposición, tiling suave.           |
+| 3     | Un nivel de superposición, tiling duro             |
+| 4     | Dos niveles de superposición, tiling duro.           |
 
 
 
@@ -397,11 +397,11 @@ Establece el nivel de filtrado de superposición. Con el filtrado de superposici
 Definiciones:
 
 -   Un nivel de superposición: los valores codificados de los bloques 4x4 se modifican en función de los bloques vecinos.
--   Dos niveles de superposición: se aplica el primer nivel de superposición. Además, los valores codificados de 16x16 macrobloques se modifican en función de la macrobloques vecina.
--   Mosaico flexible: el filtrado de superposición se aplica a través de los límites del mosaico.
--   Mosaico fuerte: el filtrado de superposición no se aplica a través de los límites del mosaico. Los mosaicos fuertes pueden introducir algunos artefactos visuales a lo largo de los límites del mosaico.
+-   Dos niveles de superposición: se aplica el primer nivel de superposición. Además, los valores codificados de macrobloques de 16 x 16 se modifican en función de los bloques de macro vecinos.
+-   Mosaico flexible: el filtrado de superposición se aplica a través de los límites de los mosaicos.
+-   Mosaicos duros: el filtrado de superposición no se aplica a través de los límites de mosaico. Los iconos duros pueden introducir algunos artefactos visuales a lo largo de los límites de los iconos.
 
-Si establece esta propiedad, establezca también [UseCodecOptions](#usecodecoptions) en **Variant \_ true**.
+Si establece esta propiedad, establezca también [UseCodecOptions](#usecodecoptions) en **VARIANT \_ TRUE.**
 
 ### <a name="progressivemode"></a>ProgressiveMode
 
@@ -409,9 +409,9 @@ Habilita o deshabilita la codificación progresiva.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado            |
+| Tipo de datos         | VARTYPE      | Predeterminado            |
 |-------------------|--------------|--------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ false** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ FALSE** |
 
 
 
@@ -419,10 +419,10 @@ Habilita o deshabilita la codificación progresiva.
 
 
 
-| Value              | Descripción                |
+| Valor              | Descripción                |
 |--------------------|----------------------------|
-| **VARIANTE \_ true**  | Modo secuencial (valor predeterminado). |
-| **VARIANTE \_ false** | Modo progresivo.          |
+| **VARIANT \_ TRUE**  | Modo secuencial (valor predeterminado). |
+| **VARIANT \_ FALSE** | Modo progresiva.          |
 
 
 
@@ -434,27 +434,27 @@ Establece la calidad de compresión.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo | Valor predeterminado |
+| Tipo de datos | VARTYPE     | Intervalo | Predeterminado |
 |-----------|-------------|-------|---------|
-| **UCHAR** | **VT \_ UI1** | de 1 a 255 | 1       |
+| **UCHAR** | **VT \_ UI1** | 1–255 | 1       |
 
 
 
  
 
-El valor 1 indica el modo sin pérdida. Aumentar los valores produce mayores proporciones de compresión y una calidad de imagen inferior.
+El valor 1 indica el modo sin pérdida. Al aumentar los valores, se aumentan las relaciones de compresión y se reduce la calidad de la imagen.
 
-Si establece esta propiedad, establezca también [UseCodecOptions](#usecodecoptions) en **Variant \_ true**.
+Si establece esta propiedad, establezca también [UseCodecOptions](#usecodecoptions) en **VARIANT \_ TRUE.**
 
 ### <a name="streamonly"></a>StreamOnly
 
-Habilita o deshabilita el modo de solo transmisión por secuencias.
+Habilita o deshabilita el modo de solo secuencia.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado            |
+| Tipo de datos         | VARTYPE      | Predeterminado            |
 |-------------------|--------------|--------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ false** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ FALSE** |
 
 
 
@@ -462,24 +462,24 @@ Habilita o deshabilita el modo de solo transmisión por secuencias.
 
 
 
-| Value              | Descripción                                                            |
+| Valor              | Descripción                                                            |
 |--------------------|------------------------------------------------------------------------|
-| **VARIANTE \_ true**  | El codificador genera el flujo de imágenes sin formato sin metadatos.             |
-| **VARIANTE \_ false** | El codificador genera el formato de contenedor (flujo de imagen más metadatos). |
+| **VARIANT \_ TRUE**  | El codificador genera la secuencia de imagen sin procesar sin metadatos.             |
+| **VARIANT \_ FALSE** | El codificador genera el formato de contenedor (secuencia de imágenes más metadatos). |
 
 
 
  
 
-### <a name="subsampling"></a>Un submuestreo
+### <a name="subsampling"></a>Submuestreo
 
 Establece el submuestreo de croma. Esta propiedad solo se aplica a las imágenes RGB.
 
 
 
-| Tipo de datos | VARTYPE     | Intervalo | Valor predeterminado                                                  |
+| Tipo de datos | VARTYPE     | Intervalo | Predeterminado                                                  |
 |-----------|-------------|-------|----------------------------------------------------------|
-| **UCHAR** | **VT \_ UI1** | 0 – 3   | 3 Si [ImageQuality](#imagequality) > 0,8; de lo contrario 1 |
+| **UCHAR** | **VT \_ UI1** | 0–3   | 3 si [ImageQuality](#imagequality) > 0.8; de lo contrario, 1 |
 
 
 
@@ -494,29 +494,29 @@ Establece el submuestreo de croma. Esta propiedad solo se aplica a las imágenes
 </colgroup>
 <thead>
 <tr class="header">
-<th>Value</th>
+<th>Valor</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>3</td>
-<td>codificación 4:4:4. Conserva la resolución de croma completa.</td>
+<td>Codificación 4:4:4. Conserva la resolución completa de los conflictos.</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td>codificación 4:2:2. La resolución de croma es 1/2 de la resolución de luminancia.</td>
+<td>Codificación 4:2:2. La resolución de la luminosidad es de 1/2 de resolución de luminosidad.</td>
 </tr>
 <tr class="odd">
 <td>1</td>
-<td>codificación 4:2:0. La resolución de croma es 1/4 de la resolución de luminancia.</td>
+<td>Codificación 4:2:0. La resolución de la zona es de 1/4 de resolución de luminosidad.</td>
 </tr>
 <tr class="even">
 <td>0</td>
-<td>Codificación 4:0:0. Descarta todos los valores de croma y conserva solo la luminancia.
+<td>Codificación 4:0:0. Descarta todos los valores de croma y solo conserva la luminosidad.
 <blockquote>
 [!Note]<br />
-No se recomienda este modo, ya que el códec utiliza una definición ligeramente modificada de luminancia para mejorar el rendimiento. En su lugar, es mejor convertir la imagen en monocromo antes de la codificación.
+Este modo no se recomienda, ya que el códec usa una definición ligeramente modificada de la luminosidad para mejorar el rendimiento. En su lugar, es mejor convertir la imagen en monocromática antes de la codificación.
 </blockquote>
 <br/></td>
 </tr>
@@ -527,19 +527,19 @@ No se recomienda este modo, ya que el códec utiliza una definición ligeramente
 
  
 
-4:2:2 y 4:2:0 conservar el detalle de luminancia a costa de los detalles de color.
+4:2:2 y 4:2:0 conservan los detalles de luminosidad a costa de los detalles de color.
 
-Si establece esta propiedad, establezca también [UseCodecOptions](#usecodecoptions) en **Variant \_ true**.
+Si establece esta propiedad, establezca también [UseCodecOptions](#usecodecoptions) en **VARIANT \_ TRUE.**
 
 ### <a name="usecodecoptions"></a>UseCodecOptions
 
-Especifica si se deben usar las propiedades de [calidad](#image-quality-settings), [superposición](#overlap)y [submuestreo](#subsampling) en lugar de la propiedad [ImageQuality](#imagequality) genérica.
+Especifica si se deben usar las propiedades [Quality](#image-quality-settings), [Overlap](#overlap)y [Subsampling](#subsampling) en lugar de la [propiedad ImageQuality](#imagequality) genérica.
 
 
 
-| Tipo de datos         | VARTYPE      | Valor predeterminado            |
+| Tipo de datos         | VARTYPE      | Predeterminado            |
 |-------------------|--------------|--------------------|
-| **VARIANTE \_ bool** | **VT \_ bool** | **VARIANTE \_ false** |
+| **VARIANT \_ BOOL** | **VT \_ BOOL** | **VARIANT \_ FALSE** |
 
 
 
@@ -547,23 +547,23 @@ Especifica si se deben usar las propiedades de [calidad](#image-quality-settings
 
 ### <a name="verticaltileslices"></a>VerticalTileSlices
 
-Establece el número de mosaicos horizontales.
+Establece el número de iconos horizontales.
 
 
 
-| Tipo de datos  | VARTYPE     | Intervalo  | Valor predeterminado                       |
+| Tipo de datos  | VARTYPE     | Intervalo  | Predeterminado                       |
 |------------|-------------|--------|-------------------------------|
-| **USHORT** | **VT \_ UI2** | 0 – 4095 | (alto de imagen – 1)  >> 8 |
+| **USHORT** | **VT \_ UI2** | 0–4095 | (alto de la imagen : 1) >> 8 |
 
 
 
  
 
-El valor es el número de subdivisiones verticales; es decir, el número de mosaicos verticales-1.
+El valor es el número de subdivisiones verticales; es decir, el número de mosaicos verticales: 1.
 
 ## <a name="supported-color-formats"></a>Formatos de color admitidos
 
-Para obtener más información sobre estos formatos, vea [formatos de píxeles nativos](-wic-codec-native-pixel-formats.md).
+Para obtener más información sobre estos formatos, vea [Formatos de píxeles nativos.](-wic-codec-native-pixel-formats.md)
 
 -   **Formatos RGB enteros**
     -   GUID \_ WICPixelFormat24bppRGB
@@ -600,10 +600,10 @@ Para obtener más información sobre estos formatos, vea [formatos de píxeles n
     -   GUID \_ WICPixelFormat16bppBGR565
     -   GUID \_ WICPixelFormat32bppBGR101010
     -   GUID \_ WICPixelFormat32bppRGBE
--   **Formatos CMYK**
-    -   GUID \_ WICPixelFormat40bppCMYKAlpha
-    -   GUID \_ WICPixelFormat64bppCMYK
-    -   GUID \_ WICPixelFormat80bppCMYKAlpha
+-   **Formatos TIFF**
+    -   GUID \_ WICPixelFormat40bppALEAlpha
+    -   GUID \_ WICPixelFormat64bppYUN
+    -   GUID \_ WICPixelFormat80bppALEAlpha
 -   **Formatos de N canales**
     -   GUID \_ WICPixelFormat32bpp4Channels
     -   GUID \_ WICPixelFormat40bpp5Channels

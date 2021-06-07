@@ -1,9 +1,9 @@
 ---
-title: Elemento QuickAccessToolbar
-description: Representa la barra de herramientas de acceso rápido (QAT), una pequeña barra de herramientas que muestra accesos directos a comandos de la cinta de opciones.
+title: QuickAccessToolbar, elemento
+description: Representa la barra de herramientas de acceso rápido (QAT), una pequeña barra de herramientas que muestra accesos directos a los comandos de la cinta de opciones.
 ms.assetid: 59aa35c3-a844-46b3-b066-c9a321fb0891
 keywords:
-- QuickAccessToolbar cinta de opciones de Windows
+- Cinta de opciones de Windows del elemento QuickAccessToolbar
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0076890a8d9858d4bf410ecfdd866bf4f48fdbb6
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 6ae01f620d66298a5f7200d0be947dbfb3750af4
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104420197"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443306"
 ---
-# <a name="quickaccesstoolbar-element"></a>Elemento QuickAccessToolbar
+# <a name="quickaccesstoolbar-element"></a>QuickAccessToolbar, elemento
 
-Representa la [barra de herramientas de acceso rápido (Qat)](windowsribbon-controls-quickaccesstoolbar.md), una pequeña barra de herramientas que muestra accesos directos a comandos de la cinta de opciones.
+Representa la [barra de herramientas de acceso rápido (QAT),](windowsribbon-controls-quickaccesstoolbar.md)una pequeña barra de herramientas que muestra accesos directos a los comandos de la cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -49,24 +49,24 @@ Representa la [barra de herramientas de acceso rápido (Qat)](windowsribbon-cont
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CustomizeCommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Inserta un elemento de comando adicional en el menú QAT.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> <img src="images/markup/qat-customizecommandname.png" alt="Screen shot of a QAT menu with the More commands... Command item." /><br/> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<td>Inserta un elemento Command adicional en el menú QAT.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> <img src="images/markup/qat-customizecommandname.png" alt="Screen shot of a QAT menu with the More commands... Command item." /><br/> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -79,7 +79,7 @@ Representa la [barra de herramientas de acceso rápido (Qat)](windowsribbon-cont
 
 | Elemento                                                                                                                   | Descripción                                   |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -89,25 +89,25 @@ Representa la [barra de herramientas de acceso rápido (Qat)](windowsribbon-cont
 
 | Elemento                                                                                         |
 |-------------------------------------------------------------------------------------------------|
-| [**Ribbon. QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> |
+| [**Ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe aparecer exactamente una vez para cada [**cinta. QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md).
+Debe producirse exactamente una vez para [**cada ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md).
 
-Los elementos de QAT se pueden agregar o quitar en tiempo de ejecución.
+Los elementos del QAT se pueden agregar o quitar en tiempo de ejecución.
 
-Para mantener la coherencia entre las aplicaciones de la cinta de opciones, se recomienda que el controlador de comandos *CustomizeCommandName* inicie un cuadro de diálogo de personalización de Qat.
+Para mantener la coherencia entre las aplicaciones de la cinta de opciones, se recomienda que el controlador de comandos *CustomizeCommandName* inicie un cuadro de diálogo de personalización de QAT.
 
 ## <a name="examples"></a>Ejemplos
 
 En el ejemplo siguiente se muestra el marcado básico para **QuickAccessToolbar**.
 
-En esta sección de código se muestra la declaración del comando **QuickAccessToolbar** .
+En esta sección de código se muestra **la declaración QuickAccessToolbar** Command.
 
 
 ```XML
@@ -121,7 +121,7 @@ En esta sección de código se muestra la declaración del comando **QuickAccess
 
 
 
-En esta sección de código se muestra la declaración de control **QuickAccessToolbar** .
+En esta sección de código se muestra la declaración de control **QuickAccessToolbar.**
 
 
 ```XML
@@ -141,20 +141,16 @@ En esta sección de código se muestra la declaración de control **QuickAccessT
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control de barra de herramientas de acceso rápido](windowsribbon-controls-quickaccesstoolbar.md)
+[Control barra de herramientas de acceso rápido](windowsribbon-controls-quickaccesstoolbar.md)
 </dt> </dl>
 
  
