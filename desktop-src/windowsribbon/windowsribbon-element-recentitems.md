@@ -1,9 +1,9 @@
 ---
 title: Elemento RecentItems
-description: Representa el control de elementos recientes en el menú de la aplicación.
+description: Representa el control Elementos recientes en el menú De la aplicación.
 ms.assetid: a3df0bb0-e0f8-413a-879d-8e39164535d0
 keywords:
-- RecentItems cinta de opciones de Windows
+- RecentItems, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17269342521a5da5db8d7a852a985c29ed7e2e98
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: a433e2f04eae8607b0c14c5494c734ad0f0dd83a
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104077259"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444116"
 ---
 # <a name="recentitems-element"></a>Elemento RecentItems
 
-Representa el control de [elementos recientes](windowsribbon-controls-recentitems.md) en el menú de la [aplicación](windowsribbon-controls-applicationmenu.md).
+Representa el [control Elementos recientes](windowsribbon-controls-recentitems.md) en el menú de la [aplicación](windowsribbon-controls-applicationmenu.md).
 
 ## <a name="usage"></a>Uso
 
@@ -48,31 +48,31 @@ Representa el control de [elementos recientes](windowsribbon-controls-recentitem
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>EnablePinning</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> reales<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> es<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MaxCount</strong><br/></td>
 <td>xs:nonNegativeInteger<br/></td>
 <td>No<br/></td>
-<td>Número de elementos recientes que se van a mostrar.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: nonNegativeInteger)<br/> </dt> <dd> Valor entero de 0 o superior.<br/> El valor predeterminado es <strong>10</strong>.<br/> </dd> </dl></td>
+<td>Número de elementos recientes que se mostrarán.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:nonNegativeInteger)<br/> </dt> <dd> Valor entero de 0 o mayor.<br/> El valor predeterminado <strong>es 10.</strong><br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -93,19 +93,19 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obligatorio.
+Necesario.
 
-Debe aparecer exactamente una vez para cada elemento [**ApplicationMenu. RecentItems**](windowsribbon-element-applicationmenu-recentitems.md) .
+Debe producirse exactamente una vez [**para cada elemento ApplicationMenu.RecentItems.**](windowsribbon-element-applicationmenu-recentitems.md)
 
-El control [elementos recientes](windowsribbon-controls-recentitems.md) muestra la lista de elementos usados más recientemente (MRU) de la aplicación de cinta.
+El [control Elementos recientes](windowsribbon-controls-recentitems.md) muestra la lista de elementos usados más recientemente (MRU) de la aplicación Ribbon.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el control de [elementos recientes](windowsribbon-controls-recentitems.md) .
+En el ejemplo siguiente se muestra el marcado básico para el control [Elementos recientes.](windowsribbon-controls-recentitems.md)
 
-En el ejemplo siguiente se muestra una declaración de comando **RecentItems** .
+En el ejemplo siguiente se muestra **una declaración RecentItems** Command.
 
 
 ```XML
@@ -117,7 +117,7 @@ En el ejemplo siguiente se muestra una declaración de comando **RecentItems** .
 
 
 
-En el ejemplo siguiente se muestra la declaración de controles **RecentItems** asociados.
+En el ejemplo siguiente se muestra la **declaración de controles RecentItems** asociada.
 
 
 ```XML
@@ -131,23 +131,18 @@ En el ejemplo siguiente se muestra la declaración de controles **RecentItems** 
 
 ## <a name="element-information"></a>Información de elemento
 
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** Sí
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
-
-
-
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control de menú de la aplicación](windowsribbon-controls-applicationmenu.md)
+[Control Menú de la aplicación](windowsribbon-controls-applicationmenu.md)
 </dt> <dt>
 
-[Control de elementos recientes](windowsribbon-controls-recentitems.md)
+[Control Elementos recientes](windowsribbon-controls-recentitems.md)
 </dt> </dl>
 
  

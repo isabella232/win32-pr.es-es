@@ -1,37 +1,37 @@
 ---
 title: Propiedades (elementos comunes)
-description: El marco de trabajo de servicios de texto (TSF) proporciona propiedades que asocian los metadatos a un intervalo de texto.
+description: Text Services Framework (TSF) proporciona propiedades que asocian metadatos a un intervalo de texto.
 ms.assetid: d1d0dd99-f303-4355-9835-917de9491a0b
 keywords:
-- Text Services Framework (TSF), propiedades
-- TSF (marco de trabajo de servicios de texto), propiedades
-- servicios de texto, propiedades
+- Text Services Framework (TSF),properties
+- TSF (Text Services Framework),properties
+- text services,properties
 - Aplicaciones habilitadas para TSF, propiedades
 - properties
-- Text Services Framework (TSF), tipos de propiedad
-- TSF (marco de trabajo de servicios de texto), tipos de propiedad
-- servicios de texto, tipos de propiedades
-- Aplicaciones habilitadas para TSF, tipos de propiedades
+- Text Services Framework (TSF),tipos de propiedad
+- TSF (Text Services Framework),tipos de propiedad
+- servicios de texto, tipos de propiedad
+- Aplicaciones habilitadas para TSF, tipos de propiedad
 - tipos de propiedades
 - Text Services Framework (TSF), almacenamiento persistente de propiedades
-- TSF (marco de trabajo de servicios de texto), almacenamiento persistente de propiedades
+- TSF (Text Services Framework), almacenamiento persistente de propiedades
 - servicios de texto, almacenamiento persistente de propiedades
 - Aplicaciones habilitadas para TSF, almacenamiento persistente de propiedades
 - almacenamiento persistente de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bff852bccfb7d9b6c94e57a2fa0cf8eef6fbdf18
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f5b94a1f6c504fcd3e6491af9e66b399d59a3eeb
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105685832"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524219"
 ---
 # <a name="properties-common-elements"></a>Propiedades (elementos comunes)
 
-El marco de trabajo de servicios de texto (TSF) proporciona propiedades que asocian los metadatos a un intervalo de texto. Estas propiedades incluyen, entre otras, atributos que se muestran como texto en negrita, el identificador de idioma del texto y datos sin procesar proporcionados por un servicio de texto como los datos de audio asociados al texto del servicio de texto de voz.
+Text Services Framework (TSF) proporciona propiedades que asocian metadatos a un intervalo de texto. Estas propiedades incluyen, entre otros, atributos para mostrar, como el texto en negrita, el identificador de idioma del texto y los datos sin procesar proporcionados por un servicio de texto, como los datos de audio asociados al texto del servicio de texto de voz.
 
-En el ejemplo siguiente se muestra cómo se puede ver una propiedad de color de texto hipotética con valores posibles de rojo (R), verde (G) o azul (B).
+En el ejemplo siguiente se muestra cómo se puede ver una propiedad hipotética de color de texto con valores posibles de rojo (R), verde (G) o azul (B).
 
 
 ```C++
@@ -41,7 +41,7 @@ TEXT:  this is some colored text
 
 
 
-Las propiedades de distintos tipos pueden superponerse. Por ejemplo, tome el ejemplo anterior y agregue un atributo de texto que puede estar en negrita (B) o cursiva (I).
+Las propiedades de tipos diferentes se pueden superponer. Por ejemplo, tome el ejemplo anterior y agregue un atributo de texto que pueda ser negrita (B) o cursiva (I).
 
 
 ```C++
@@ -52,9 +52,9 @@ TEXT:  this is some colored text
 
 
 
-El texto "this" debería aparecer en negrita, "is", en negrita y en rojo, "Some" se mostraría normalmente, "color" sería verde y en cursiva y "Text" se cursiva.
+El texto "this" estaría en negrita, "is" sería negrita y rojo, "some" se mostraría normalmente, "coloreado" sería verde y cursiva y "text" estaría en cursiva.
 
-Las propiedades del mismo tipo no pueden superponerse. Por ejemplo, la situación siguiente no está permitida porque "es" y "coloreado" tienen valores que se superponen de los mismos tipos.
+Las propiedades del mismo tipo no se pueden superponer. Por ejemplo, no se permite la siguiente situación porque "is" y "colored" tienen valores superpuestos de los mismos tipos.
 
 
 ```C++
@@ -71,11 +71,11 @@ TSF define tres tipos diferentes de propiedades.
 
 
 
-|                |                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Tipo de propiedad             |   Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| estática         | Un objeto de propiedad estática almacena los datos de la propiedad con texto. También almacena el intervalo de información de texto para cada intervalo al que se aplica la propiedad. ITfReadOnlyProperty:: GetType devuelve la \_ \_ categoría estática TFCAT PROPSTYLE GUID \_ .                                                                                                                                                                                                                      |
-| Static-Compact | Un objeto de propiedad static-Compact es idéntico a un objeto de propiedad estático, salvo que una propiedad static-Compact no almacena datos de intervalo. Cuando se solicita el intervalo que abarca una propiedad estática-Compact, se crea un intervalo para cada grupo de propiedades adyacentes. Las propiedades estáticas-Compact son la manera más eficaz de almacenar las propiedades por carácter. ITfReadOnlyProperty:: GetType devuelve la \_ categoría GUID TFCAT \_ PROPSTYLE \_ STATICCOMPACT. |
-| Personalizados         | Un objeto de propiedad personalizada almacena la información de intervalo para cada intervalo al que se aplica la propiedad. No obstante, no almacena los datos reales para la propiedad. En su lugar, una propiedad personalizada almacena un objeto ITfPropertyStore. El administrador de TSF usa este objeto para tener acceso a los datos de la propiedad y mantenerlos. ITfReadOnlyProperty:: GetType devuelve la \_ \_ categoría personalizada TFCAT PROPSTYLE de GUID \_ .                                                                    |
+| estática         | Un objeto de propiedad estático almacena los datos de propiedad con texto. También almacena el intervalo de información de texto para cada intervalo al que se aplica la propiedad . ITfReadOnlyProperty::GetType devuelve la categoría \_ GUID \_ TFCAT PROPSTYLE \_ STATIC.                                                                                                                                                                                                                      |
+| Static-Compact | Un objeto de propiedad estático-compacto es idéntico a un objeto de propiedad estático, salvo que una propiedad estática compacta no almacena datos de intervalo. Cuando se solicita el intervalo cubierto por una propiedad estática-compacta, se crea un intervalo para cada grupo de propiedades adyacentes. Las propiedades estáticas compactas son la manera más eficaz de almacenar propiedades por carácter. ITfReadOnlyProperty::GetType devuelve la categoría \_ \_ GUID TFCAT PROPSTYLE \_ STATICCOMPACT. |
+| Personalizado         | Un objeto de propiedad personalizado almacena la información de intervalo para cada intervalo al que se aplica la propiedad. Sin embargo, no almacena los datos reales de la propiedad . En su lugar, una propiedad personalizada almacena un objeto ITfPropertyStore. El administrador de TSF usa este objeto para tener acceso a los datos de propiedad y mantener estos. ITfReadOnlyProperty::GetType devuelve la categoría \_ GUID TFCAT \_ PROPSTYLE \_ CUSTOM.                                                                    |
 
 
 
@@ -83,11 +83,11 @@ TSF define tres tipos diferentes de propiedades.
 
 ## <a name="working-with-properties"></a>Trabajar con propiedades
 
-Los atributos y el valor de propiedad se obtienen mediante la interfaz [ITfReadOnlyProperty](/windows/desktop/api/msctf/nn-msctf-itfreadonlyproperty) y se modifican mediante la interfaz [ITfProperty](/windows/desktop/api/Msctf/nn-msctf-itfproperty) .
+El valor de propiedad y los atributos se obtienen mediante la [interfaz ITfReadOnlyProperty](/windows/desktop/api/msctf/nn-msctf-itfreadonlyproperty) y se modifican mediante la [interfaz ITfProperty.](/windows/desktop/api/Msctf/nn-msctf-itfproperty)
 
-Si se requiere un tipo de propiedad concreto, se utiliza [ITfContext:: GetProperty](/windows/desktop/api/msctf/nf-msctf-itfcontext-getproperty) . **ITfContext:: GetProperty** requiere un **GUID** que identifica la propiedad que se va a obtener. TSF define un conjunto de [identificadores de propiedad predefinidos](predefined-properties.md) usados o un servicio de texto puede definir sus propios identificadores de propiedad. Si se utiliza una propiedad personalizada, el proveedor de propiedades debe publicar el **GUID** de la propiedad y el formato de los datos obtenidos.
+Si se requiere un tipo de propiedad específico, [se usa ITfContext::GetProperty.](/windows/desktop/api/msctf/nf-msctf-itfcontext-getproperty) **ITfContext::GetProperty** requiere un **GUID** que identifique la propiedad que se debe obtener. TSF define un conjunto de identificadores de propiedad [predefinidos usados](predefined-properties.md) o un servicio de texto puede definir sus propios identificadores de propiedad. Si se usa una propiedad personalizada, el proveedor de propiedades debe publicar el **GUID de** propiedad y el formato de los datos obtenidos.
 
-Por ejemplo, para obtener el **CLSID** para el propietario de un intervalo de texto, llame a **ITfContext:: GetProperty** para obtener el objeto de propiedad, llame a [ITfProperty:: FindRange](/windows/desktop/api/msctf/nf-msctf-itfproperty-findrange) para obtener el intervalo que cubre por completo la propiedad y, después, llame a [ITfReadOnlyProperty:: GetValue](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-getvalue) para obtener un [TfGuidAtom](/windows/desktop/TSF/tfguidatom) que representa el **CLSID** del servicio de texto que posee el texto. En el ejemplo siguiente se muestra una función que, dado un contexto, un intervalo y una cookie de edición, obtendrá el **CLSID** del servicio de texto que posee el texto.
+Por ejemplo, para obtener el **CLSID** para el propietario de un intervalo de texto, llame a **ITfContext::GetProperty** para obtener el objeto de propiedad, llame a [ITfProperty::FindRange](/windows/desktop/api/msctf/nf-msctf-itfproperty-findrange) para obtener el intervalo que cubre completamente la propiedad y, a continuación, llame a [ITfReadOnlyProperty::GetValue](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-getvalue) para obtener un [TfGuidAtom](/windows/desktop/TSF/tfguidatom) que representa el **CLSID** del servicio de texto que posee el texto. En el ejemplo siguiente se muestra una función que, dado un contexto, un intervalo y una cookie de edición, obtendrá el **CLSID** del servicio de texto que posee el texto.
 
 
 ```C++
@@ -165,23 +165,23 @@ HRESULT GetTextOwner(   ITfContext *pContext,
 
 
 
-Las propiedades también se pueden enumerar obteniendo una interfaz [IEnumTfProperties](/windows/desktop/api/msctf/nn-msctf-ienumtfproperties) de [ITfContext:: EnumProperties (](/windows/desktop/api/msctf/nf-msctf-itfcontext-enumproperties).
+Las propiedades también se pueden enumerar mediante la obtención de una [interfaz IEnumTfProperties](/windows/desktop/api/msctf/nn-msctf-ienumtfproperties) de [ITfContext::EnumProperties](/windows/desktop/api/msctf/nf-msctf-itfcontext-enumproperties).
 
 ## <a name="persistent-storage-of-properties"></a>Almacenamiento persistente de propiedades
 
-A menudo, las propiedades son transparentes para una aplicación y se usan en uno o varios servicios de texto. Para conservar los datos de la propiedad, como cuando se guarda en un archivo, una aplicación debe serializar los datos de la propiedad cuando se almacenan y desaserializan los datos de la propiedad cuando se restauran los datos. En este caso, la aplicación no debe estar interesada en las propiedades individuales, sino que debe enumerar todas las propiedades en el contexto y almacenarlas.
+A menudo, las propiedades son transparentes para una aplicación y los usan uno o varios servicios de texto. Para conservar los datos de propiedad, como cuando se guardan en un archivo, una aplicación debe serializar los datos de propiedad cuando se almacenan y deserializar los datos de propiedad cuando se restauran. En este caso, la aplicación no debe estar interesada en propiedades individuales, pero debe enumerar todas las propiedades del contexto y almacenarlas.
 
-Al almacenar datos de propiedades, una aplicación debe realizar los pasos siguientes.
+Al almacenar datos de propiedad, una aplicación debe realizar los pasos siguientes.
 
-1.  Obtenga un enumerador de propiedad llamando a **ITfContext:: EnumProperties (**.
-2.  Enumere cada propiedad llamando a [IEnumTfProperties:: Next](/windows/desktop/api/msctf/nf-msctf-ienumtfproperties-next).
-3.  Para cada propiedad, obtenga un enumerador de intervalo mediante una llamada a [ITfReadOnlyProperty:: EnumRanges](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-enumranges).
-4.  Enumere cada intervalo en la propiedad mediante una llamada a [IEnumTfRanges:: Next](/windows/desktop/api/msctf/nf-msctf-ienumtfranges-next).
-5.  Para cada intervalo de la propiedad, llame a [ITextStoreACPServices:: Serialize](/windows/desktop/api/msctf/nf-msctf-itextstoreacpservices-serialize) con la propiedad, el intervalo, una estructura [ACP de \_ \_ \_ encabezado \_ de propiedad persistente de TF](/windows/desktop/api/msctf/ns-msctf-tf_persistent_property_header_acp) y un objeto de secuencia implementado por la aplicación.
-6.  Escriba el contenido de la **estructura \_ \_ ACP del \_ encabezado \_ de propiedad persistente TF** en la memoria persistente.
-7.  Escriba el contenido del objeto de secuencia en la memoria persistente.
+1.  Obtenga un enumerador de propiedades mediante una **llamada a ITfContext::EnumProperties**.
+2.  Para enumerar cada propiedad, llame a [IEnumTfProperties::Next](/windows/desktop/api/msctf/nf-msctf-ienumtfproperties-next).
+3.  Para cada propiedad, obtenga un enumerador de intervalo llamando a [ITfReadOnlyProperty::EnumRanges](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-enumranges).
+4.  Para enumerar cada intervalo de la propiedad , llame a [IEnumTfRanges::Next](/windows/desktop/api/msctf/nf-msctf-ienumtfranges-next).
+5.  Para cada intervalo de la propiedad , llame a [ITextStoreACPServices::Serialize](/windows/desktop/api/msctf/nf-msctf-itextstoreacpservices-serialize) con la propiedad , el intervalo, una estructura [TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP](/windows/desktop/api/msctf/ns-msctf-tf_persistent_property_header_acp) y un objeto de secuencia implementado por la aplicación.
+6.  Escriba el contenido de la estructura **TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP** en memoria persistente.
+7.  Escriba el contenido del objeto de secuencia en memoria persistente.
 8.  Continúe con los pasos anteriores para todos los intervalos de todas las propiedades.
-9.  La aplicación debe escribir algún tipo de terminiator en la secuencia para que, cuando se restauren los datos, se pueda identificar un punto de detención.
+9.  La aplicación debe escribir algún tipo deator en la secuencia para que, cuando se restauran los datos, se pueda identificar un punto de detención.
 
 
 ```C++
@@ -271,19 +271,19 @@ HRESULT SaveProperties( ITfContext *pContext,
 
 
 
-**ITextStoreACPServices:: Serialize**[ITfPropertyStore:: Serialize](/windows/desktop/api/msctf/nf-msctf-itfpropertystore-serialize)
+**ITextStoreACPServices::Serialize**[ITfPropertyStore::Serialize](/windows/desktop/api/msctf/nf-msctf-itfpropertystore-serialize)
 
-Al restaurar los datos de la propiedad, una aplicación debe realizar los pasos siguientes.
+Al restaurar los datos de propiedad, una aplicación debe realizar los pasos siguientes.
 
-1.  Establezca el puntero de la secuencia al principio de la primera estructura **\_ ACP del \_ \_ encabezado \_ de propiedad persistente de TF** .
-2.  Lea la **estructura \_ \_ ACP del \_ encabezado \_ de propiedad persistente TF** .
-3.  Llame a **ITfContext:: GetProperty** con el miembro **guidType** de la estructura ACP del **\_ \_ \_ encabezado \_ de propiedad persistente TF** .
-4.  En este momento, la aplicación puede realizar una de estas dos acciones.
-    1.  Cree una instancia de un objeto [ITfPersistentPropertyLoaderACP](/windows/desktop/api/msctf/nn-msctf-itfpersistentpropertyloaderacp) que la aplicación debe implementar. Después, llame a [ITextStoreACPServices:: unserializate](/windows/desktop/api/msctf/nf-msctf-itextstoreacpservices-unserialize) con **null** para *pStream* y el puntero **ITfPersistentPropertyLoaderACP** .
-    2.  Pase el flujo de entrada a **ITextStoreACPServices:: unserializate** y **null** para *pLoader*.
+1.  Establezca el puntero de secuencia en el inicio de la primera **estructura TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP.**
+2.  Lea la **estructura TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP.**
+3.  Llame **a ITfContext::GetProperty con** el miembro **guidType** de la estructura **TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP.**
+4.  La aplicación puede hacer una de estas dos cosas en este momento.
+    1.  Cree una instancia de un [objeto ITfPersistentPropertyLoaderACP](/windows/desktop/api/msctf/nn-msctf-itfpersistentpropertyloaderacp) que la aplicación debe implementar. A [continuación, llame a ITextStoreACPServices::Unserialize](/windows/desktop/api/msctf/nf-msctf-itextstoreacpservices-unserialize) con **NULL** para *pStream* y el **puntero ITfPersistentPropertyLoaderACP.**
+    2.  Pase el flujo de entrada **a ITextStoreACPServices::Unserialize** y **NULL** para *pLoader.*
 
-    El primer método es preferible, ya que es el más eficaz. La implementación del segundo método hace que todos los datos de propiedad se lean de la secuencia durante la llamada a **ITextStoreACPServices:: undeserialize** . El primer método hace que los datos de la propiedad se lean a petición en otro momento.
-5.  Repita los pasos anteriores hasta que se hayan deserializado todos los bloques de propiedades.
+    Se prefiere el primer método, ya que es el más eficaz. La implementación del segundo método hace que todos los datos de propiedad se lean de la secuencia durante la **llamada a ITextStoreACPServices::Unserialize.** El primer método hace que los datos de propiedad se lean a petición más adelante.
+5.  Repita los pasos anteriores hasta que se deserialicen todos los bloques de propiedades.
 
 
 ```C++

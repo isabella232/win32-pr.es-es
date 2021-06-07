@@ -1,26 +1,26 @@
 ---
-description: El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con una barra diagonal inversa ( \) carácter cuando se utilizan en una ruta de acceso de las interfaces de servicio Active Directory LDAP (ADSI).
+description: El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con una barra diagonal inversa (carácter) cuando se usan en una ruta de acceso de \) LDAP Active Directory Service Interfaces (ADSI).
 ms.assetid: bc04359c-4eda-4574-a9c2-f005a1d92dea
 ms.tgt_platform: multiple
-title: Descripción de la ruta de acceso ADSI
+title: Descripción de la ruta de acceso adsi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51a6f3f28ffa5faa80dbd9f3d7906bba542e47e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e0ba1dafac273ab3564549a5caca44180161643
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544838"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387114"
 ---
-# <a name="describing-the-adsi-path"></a>Descripción de la ruta de acceso ADSI
+# <a name="describing-the-adsi-path"></a>Descripción de la ruta de acceso adsi
 
-El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con una barra diagonal inversa ( \) carácter cuando se utilizan en una ruta de acceso de las interfaces de servicio Active Directory LDAP (ADSI).
+El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con un carácter de barra diagonal inversa ( ) cuando se usan en una ruta de acceso de \\ LDAP Active Directory Service Interfaces (ADSI).
 
-, = +<>\# ; \\ "
+,=+<>\# ; \\ "
 
-El carácter de escape solo es necesario para el valor de la propiedad **ADSIPath** .
+El carácter de escape solo es necesario para el valor de la propiedad **ADSIPath.**
 
-En el ejemplo siguiente se muestra cómo definir la propiedad **ADSIPath** . Tenga en cuenta que el \# carácter del valor de la propiedad **CN** de ABC es un carácter de \# escape.
+En el ejemplo siguiente se muestra cómo definir la **propiedad ADSIPath.** Tenga en cuenta que \# el carácter del valor de la propiedad **CN** de abc tiene caracteres \# de escape.
 
 
 ```C++
@@ -39,7 +39,7 @@ SysFreeString(strObjPath); // Free memory resources.
 
 
 > [!Note]  
-> Para obtener más información acerca de la compatibilidad y la instalación de este componente en un sistema operativo específico, consulte [disponibilidad del sistema operativo de los componentes de WMI](operating-system-availability-of-wmi-components.md).
+> Para obtener más información sobre la compatibilidad y la instalación de este componente en un sistema operativo específico, vea Disponibilidad del sistema operativo [de componentes WMI](operating-system-availability-of-wmi-components.md).
 
  
 

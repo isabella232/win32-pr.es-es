@@ -1,9 +1,9 @@
 ---
-title: Elemento MiniToolbar
+title: MiniToolbar, elemento
 description: Representa una barra de herramientas contextual.
 ms.assetid: bb50890d-554a-4add-a583-d4fd48b823bf
 keywords:
-- MiniToolbar cinta de opciones de Windows
+- Cinta de opciones de Windows del elemento MiniToolbar
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb5e4a27d10fe5233f8e7059bc9da8ecfd2fa383
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ceea8ba1a220674f177e740411bf98a13d7bfc2e
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104148873"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443266"
 ---
-# <a name="minitoolbar-element"></a>Elemento MiniToolbar
+# <a name="minitoolbar-element"></a>MiniToolbar, elemento
 
 Representa una barra de herramientas contextual.
 
@@ -37,9 +37,9 @@ Representa una barra de herramientas contextual.
 
 
 
-| Atributo           | Tipo                 | Obligatorio       | Descripción                                                                                                                                                                                                                |
+| Atributo           | Tipo                 | Requerido       | Descripción                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (XS: String)<br/> </dt> <dd> Cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl> |
+| **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Representa una barra de herramientas contextual.
 
 | Elemento                                                         | Descripción                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -63,28 +63,28 @@ Representa una barra de herramientas contextual.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**ContextPopup. MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md).
+Puede producirse una o varias veces para [**cada ContextPopup.MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md).
 
-A diferencia del elemento [**ContextMenu**](windowsribbon-element-contextmenu.md) , el **MiniToolbar** permanece visible cuando se hace clic en un elemento de la barra de herramientas.
+A diferencia [**del elemento ContextMenu,**](windowsribbon-element-contextmenu.md) **minitoolbar** permanece visible cuando se hace clic en un elemento de la barra de herramientas.
 
-Si se muestra sin un [**ContextMenu**](windowsribbon-element-contextmenu.md), el **MiniToolbar** se atenúa cuando se mueve el puntero del mouse.
+Si se muestra sin [**contextMenu,**](windowsribbon-element-contextmenu.md) **la barra miniherramienta** se atenua cuando se desplaza el puntero del mouse.
 
 > [!Note]  
-> Debido a este comportamiento de difuminación, se debe mostrar un [**ContextMenu**](windowsribbon-element-contextmenu.md) cerca del puntero del mouse.
+> Debido a este comportamiento de desvanezco, [**contextMenu**](windowsribbon-element-contextmenu.md) debe mostrarse cerca del puntero del mouse.
 
  
 
-Dado que los controles de **MiniToolbar** no son accesibles desde el teclado, los comandos que exponen deben estar disponibles en cualquier parte de la interfaz de usuario de la cinta.
+Dado que los controles de **MiniToolbar** no son accesibles mediante el teclado, los comandos que exponen deben estar disponibles en otra parte de la interfaz de usuario de la cinta de opciones.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para una [**vista ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-En esta sección de código se muestra un conjunto de declaraciones de control **MiniToolbar** .
+En esta sección de código se muestra un conjunto de declaraciones de control **MiniToolbar.**
 
 
 ```XML
@@ -173,20 +173,16 @@ En esta sección de código se muestra un conjunto de declaraciones de control *
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

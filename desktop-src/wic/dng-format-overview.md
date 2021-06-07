@@ -1,43 +1,43 @@
 ---
-description: En este tema se proporciona información sobre el códec DNG nativo disponible a través de Windows Imaging Component (WIC).
+description: En este tema se proporciona información sobre el códec DNG nativo disponible a través Windows Imaging Component (WIC).
 ms.assetid: 6F87A47D-E54A-42D9-92DC-2411803278AA
 title: Información general sobre el formato DNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f766356f7c13d7b2bb25adab5411ae55c2735f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0815d6a24bb8e57e6c64b90f9e9068765838e148
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360762"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444936"
 ---
 # <a name="dng-format-overview"></a>Información general sobre el formato DNG
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-En este tema se proporciona información sobre el códec DNG nativo disponible a través de Windows Imaging Component (WIC).
+En este tema se proporciona información sobre el códec DNG nativo disponible a través Windows Imaging Component (WIC).
 
--   [Identidad del códec](#codec-identity)
+-   [Identidad de códec](#codec-identity)
 -   [Descodificación](#decoding)
 
-## <a name="codec-identity"></a>Identidad del códec
+## <a name="codec-identity"></a>Identidad de códec
 
-En la tabla siguiente se proporciona información de identificación del códec.
+En la tabla siguiente se proporciona información de identificación de códecs.
 
 
 
-|                        |                                                      |
+|     Componente          |  Descripción                                         |
 |------------------------|------------------------------------------------------|
 | Nombres formales         | Negativo digital (DNG)                               |
 | Extensiones de nombre de archivo | .dng                                                 |
-| Tipos MIME           | imagen/DNG                                            |
-| Compatibilidad con las especificaciones  | Versión de especificación negativa digital (DNG) 1.4.0.0 |
+| Tipos MIME           | image/DNG                                            |
+| Compatibilidad con especificaciones  | Especificación negativa digital (DNG) versión 1.4.0.0 |
 
 
 
  
 
-En la tabla siguiente se enumeran los GUID que se usan para identificar los componentes del códec DNG nativo.
+En la tabla siguiente se enumeran los GUID que se usan para identificar los componentes de códec DNG nativos.
 
 
 
@@ -52,9 +52,9 @@ En la tabla siguiente se enumeran los GUID que se usan para identificar los comp
 
 ## <a name="decoding"></a>Descodificación
 
-La API de descodificación de WIC está diseñada para ser independiente del códec y la descodificación de imágenes para códecs habilitados para WIC es esencialmente la misma. Para obtener más información sobre la descodificación de imágenes, consulte la [información general sobre descodificación](-wic-creating-decoder.md). Para obtener más información sobre el uso de datos de imagen descodificados, vea [información general sobre orígenes de mapas de bits](-wic-bitmapsources.md).
+La API de decoding de WIC está diseñada para ser independiente del códec y lacoding de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre lacodación de imágenes, vea Información general [sobre la decodación.](-wic-creating-decoder.md) Para obtener más información sobre el uso de datos de imagen descodificados, vea Información general sobre orígenes [de mapa de bits](-wic-bitmapsources.md).
 
-El descodificador no admite la descodificación de datos de sensor sin procesar y solo admite archivos con una representación de imagen sin formato insertada en una IFD con NewSubFileType igual a 1.
+El descodificador no admite la descodificación de datos sin procesar del sensor y solo admite archivos con una representación de imagen sin procesar incrustada en un IFD con NewSubFileType igual a 1.
 
  
 

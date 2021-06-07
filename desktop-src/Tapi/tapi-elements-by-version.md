@@ -4,12 +4,12 @@ ms.assetid: 38fb3b72-4648-4c44-ad58-af81a5de5623
 title: Elementos TAPI por versión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9092077daeec0c6db1d0f117c8b79a351a0f5b8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a13bcbcd99dfc255a069003e934e611444d3edca
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688138"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432576"
 ---
 # <a name="tapi-elements-by-version"></a>Elementos TAPI por versión
 
@@ -19,7 +19,7 @@ Las tablas siguientes son una lista alfabética de referencia rápida de las fun
 
 Función TAPI
 
-Usar con versiones de TAPI
+Uso con versiones tapi
 
 [**lineAccept**](/windows/desktop/api/Tapi/nf-tapi-lineaccept)
 
@@ -211,7 +211,7 @@ Usar con versiones de TAPI
 
 2.2
 
-[**Fino**](/windows/desktop/api/Tapi/nf-tapi-linedial)
+[**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial)
 
 1.3
 
@@ -647,7 +647,7 @@ Usar con versiones de TAPI
 
 2.2
 
-[**lineMonitorTones**](/windows/desktop/api/Tapi/nf-tapi-linemonitortones)
+[**lineMonitorMonitorMonitor**](/windows/desktop/api/Tapi/nf-tapi-linemonitortones)
 
 1.3
 
@@ -1399,7 +1399,7 @@ Usar con versiones de TAPI
 
 2.2
 
-[**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen)
+[**phoneAbrir**](/windows/desktop/api/Tapi/nf-tapi-phoneopen)
 
 1.3
 
@@ -1561,7 +1561,7 @@ Usar con versiones de TAPI
 
 
 
-| Estructura de TAPI                                                     | Usar con versiones de TAPI |     |     |     |
+| Estructura TAPI                                                     | Uso con versiones de TAPI |  &nbsp;   | &nbsp;    |  &nbsp;   |
 |--------------------------------------------------------------------|--------------------------|-----|-----|-----|
 | [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)                     | 1.4                      | 2.0 | 2.1 | 2.2 |
 | [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus)                 | 1.4                      | 2.0 | 2.1 | 2.2 |
@@ -1589,7 +1589,7 @@ Usar con versiones de TAPI
 | [**LINECOUNTRYLIST**](/windows/desktop/api/Tapi/ns-tapi-linecountrylist)                     | 1.4                      | 2.0 | 2.1 | 2.2 |
 | [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps)                             | 1.4                      | 2.0 | 2.1 | 2.2 |
 | [**LINEDEVSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linedevstatus)                         | 1.4                      | 2.0 | 2.1 | 2.2 |
-| [**LINEDIALPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linedialparams)                       | 1.4                      | 2.0 | 2.1 | 2.2 |
+| [**DELINEIALPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linedialparams)                       | 1.4                      | 2.0 | 2.1 | 2.2 |
 | [**LINEEXTENSIONID**](/windows/desktop/api/Tapi/ns-tapi-lineextensionid)                     | 1.4                      | 2.0 | 2.1 | 2.2 |
 | [**LINEFORWARD**](/windows/desktop/api/Tapi/ns-tapi-lineforward)                             | 1.4                      | 2.0 | 2.1 | 2.2 |
 | [**LINEFORWARDLIST**](/windows/desktop/api/Tapi/ns-tapi-lineforwardlist)                     | 1.4                      | 2.0 | 2.1 | 2.2 |

@@ -1,39 +1,39 @@
 ---
 title: UI_PKEY_FontProperties_Underline
-description: Identifica la \_ propiedad de \_ subrayado PKEY FontProperties de la interfaz de usuario \_ .
+description: Identifica la propiedad \_ FontProperties Underline de PKEY \_ de la interfaz de \_ usuario.
 ms.assetid: 88492558-ab19-4606-8fe0-5f100677b88a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 380c3fdadb636775f80b789a585c42ff2369234a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 066027e5f62416667619937eea7dbe493a3ff279
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487955"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443786"
 ---
-# <a name="ui_pkey_fontproperties_underline"></a>Subrayado de UI \_ PKEY \_ FontProperties \_
+# <a name="ui_pkey_fontproperties_underline"></a>Subrayado \_ fontproperties PKEY de la interfaz \_ de \_ usuario
 
-Identifica la \_ propiedad de \_ subrayado PKEY FontProperties de la interfaz de usuario \_ .
+Identifica la propiedad \_ FontProperties Underline de PKEY \_ de la interfaz de \_ usuario.
 
 ```
 propertyDescription
-   name = UI_PKEY_FontProperties_Underline
-   shellPKey = UI_PKEY_FontProperties_Underline
-   formatID = 00000305-7363-696e-8441798acf5aebb7
-   propID = 305
-   typeInfo
-      type = UI_FONTUNDERLINE
+   name = UI_PKEY_FontProperties_Underline
+   shellPKey = UI_PKEY_FontProperties_Underline
+   formatID = 00000305-7363-696e-8441798acf5aebb7
+   propID = 305
+   typeInfo
+      type = UI_FONTUNDERLINE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-\_ \_ \_ Una aplicación usa el subrayado FontProperties PKEY de interfaz de usuario para consultar el estado del botón de **subrayado** .
+La \_ interfaz de usuario \_ PKEY FontProperties \_ Underline se usa en una aplicación para consultar el estado del botón **Subrayado.**
 
-El valor de la propiedad es de la enumeración [**\_ FONTUNDERLINE**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline) de la interfaz de usuario.
+El valor de propiedad es de la [**\_ enumeración FONTUNDERLINE de la interfaz de**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline) usuario.
 
 El valor predeterminado es `UI_FONTUNDERLINE_NOTSET`.
 
-En la captura de pantalla siguiente se muestra el botón **subrayado** de la cinta de opciones [**FontControl**](windowsribbon-element-fontcontrol.md).
+En la captura de pantalla siguiente se muestra **el botón Subrayado** de [**FontControl de**](windowsribbon-element-fontcontrol.md)la cinta de opciones .
 
 ![captura de pantalla del elemento fontcontrol con el atributo richfont establecido en true.](images/markup/fontcontrol-underline.png)
 
@@ -41,29 +41,29 @@ En la tabla siguiente se describen las propiedades y el resultado de la interfaz
 
 
 
-|                                 |                                                                          |
+|      Propiedad                   |       Resultado de la interfaz de usuario                                                          |
 |---------------------------------|--------------------------------------------------------------------------|
-| `UI_FONTUNDERLINE_NOTAVAILABLE` | El botón **subrayado** está deshabilitado y solo la aplicación puede establecerlo. |
-| `UI_FONTUNDERLINE_NOTSET`       | El botón **subrayado** no está seleccionado.                                    |
-| `UI_FONTUNDERLINE_SET`          | El botón **subrayado** está seleccionado.                                        |
+| `UI_FONTUNDERLINE_NOTAVAILABLE` | **El** botón Subrayado está deshabilitado y solo la aplicación puede establecerlo. |
+| `UI_FONTUNDERLINE_NOTSET`       | **El botón** Subrayado no está seleccionado.                                    |
+| `UI_FONTUNDERLINE_SET`          | **El botón** Subrayado está seleccionado.                                        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Propiedades de control de fuente](windowsribbon-reference-properties-fontcontrol.md)
+[Propiedades del control de fuentes](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
-[**UI \_ FONTUNDERLINE**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline)
+[**\_FONTUNDERLINE de la interfaz de usuario**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline)
 </dt> <dt>
 
-[Control de fuente](windowsribbon-controls-fontcontrol.md)
+[Control de fuentes](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

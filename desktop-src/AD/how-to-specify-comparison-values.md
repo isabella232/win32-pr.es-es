@@ -1,33 +1,33 @@
 ---
 title: Cómo especificar valores de comparación
-description: Cada tipo de atributo tiene una sintaxis que determina el tipo de valores de comparación que se pueden especificar en un filtro de búsqueda para ese atributo.
+description: Cada tipo de atributo tiene una sintaxis que determina el tipo de valores de comparación que puede especificar en un filtro de búsqueda para ese atributo.
 ms.assetid: 72bd58e4-e1c3-40a5-9917-4910f40c52c5
 ms.tgt_platform: multiple
 keywords:
-- Cómo especificar los valores de comparación AD
+- Cómo especificar valores de comparación de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95f9355bc4853fa6dc62645e1c241d8e26f731f9
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: edba238961cdc18b088b6b5bd5b06ff4be383add
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103789519"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386755"
 ---
 # <a name="how-to-specify-comparison-values"></a>Cómo especificar valores de comparación
 
-Cada tipo de atributo tiene una sintaxis que determina el tipo de valores de comparación que se pueden especificar en un filtro de búsqueda para ese atributo.
+Cada tipo de atributo tiene una sintaxis que determina el tipo de valores de comparación que puede especificar en un filtro de búsqueda para ese atributo.
 
 En las secciones siguientes se describen los requisitos para cada sintaxis de atributo. Para obtener más información sobre las sintaxis de atributo, vea [Sintaxis de atributos en Active Directory Domain Services](syntaxes-for-attributes-in-active-directory-domain-services.md).
 
 <dl> <dt>
 
-<span id="Boolean"></span><span id="boolean"></span><span id="BOOLEAN"></span>Booleano
+<span id="Boolean"></span><span id="boolean"></span><span id="BOOLEAN"></span>Booleana
 </dt> <dd>
 
-El valor especificado en un filtro debe ser un valor de cadena que sea "TRUE" o "FALSE". En los siguientes ejemplos se muestra cómo especificar una cadena de comparación booleana.
+El valor especificado en un filtro debe ser un valor de cadena que sea "TRUE" o "FALSE". En los ejemplos siguientes se muestra cómo especificar una cadena de comparación booleana.
 
-En el ejemplo siguiente se buscarán objetos que tengan un valor de **del showinadvancedviewonly** establecido en **true**:
+En el ejemplo siguiente se buscarán objetos que tengan **un valor showInAdvancedViewOnly** establecido en **TRUE**:
 
 
 ```C++
@@ -36,7 +36,7 @@ En el ejemplo siguiente se buscarán objetos que tengan un valor de **del showin
 
 
 
-En el ejemplo siguiente se buscarán objetos que tengan un valor de **del showinadvancedviewonly** establecido en **false**:
+En el ejemplo siguiente se buscarán objetos que tengan **un valor showInAdvancedViewOnly** establecido en **FALSE**:
 
 
 ```C++
@@ -50,7 +50,7 @@ En el ejemplo siguiente se buscarán objetos que tengan un valor de **del showin
 <span id="Integer_and_Enumeration"></span><span id="integer_and_enumeration"></span><span id="INTEGER_AND_ENUMERATION"></span>Entero y enumeración
 </dt> <dd>
 
-El valor especificado en un filtro debe ser un entero decimal. Los valores hexadecimales deben convertirse a decimal. Una cadena de comparación de valores tiene el formato siguiente:
+El valor especificado en un filtro debe ser un entero decimal. Los valores hexadecimales deben convertirse en decimales. Una cadena de comparación de valores tiene la forma siguiente:
 
 
 ```C++
@@ -59,9 +59,9 @@ El valor especificado en un filtro debe ser un entero decimal. Los valores hexad
 
 
 
-" <attribute name> " es el **lDAPDisplayName** del atributo y "<value>"es el valor que se va a usar para la comparación.
+" <attribute name> " es el **lDAPDisplayName** del atributo y "<value>" es el valor que se va a usar para la comparación.
 
-En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tengan un valor de **GroupType** igual a la marca de **\_ \_ \_ \_ grupo universal** (8) de tipo de grupo de ADS y la marca de **seguridad de tipo de grupo de ADS \_ \_ \_ \_ habilitada** (0x80000000). Las dos marcas combinadas igual a 0x80000008, que se convierten en decimal es 2147483656.
+En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tengan un valor **groupType** igual a la marca **ADS GROUP TYPE UNIVERSAL \_ \_ \_ \_ GROUP** (8) y la marca **ADS GROUP TYPE SECURITY \_ \_ \_ \_ ENABLED** (0x80000000). Las dos marcas combinadas son iguales 0x80000008, que se convierten en decimales es 2147483656.
 
 
 ```C++
@@ -70,7 +70,7 @@ En el ejemplo de código siguiente se muestra un filtro que buscará objetos que
 
 
 
-Los operadores de reglas de coincidencia LDAP también se pueden utilizar para realizar comparaciones bit a bit. Para obtener más información sobre las reglas de coincidencia, consulte [Sintaxis de filtro de búsqueda](/windows/desktop/ADSI/search-filter-syntax). En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tengan un valor **GroupType** con el conjunto de bits **\_ \_ \_ \_ habilitado para seguridad de tipo de grupo de ADS** (0x80000000 = 2147483648).
+Los operadores de reglas de coincidencia LDAP también se pueden usar para realizar comparaciones bit a bit. Para obtener más información sobre las reglas de coincidencia, vea [Sintaxis de filtro de búsqueda.](/windows/desktop/ADSI/search-filter-syntax) En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tienen un **groupType** con el conjunto de bits **ADS GROUP TYPE SECURITY \_ \_ \_ \_ ENABLED** (0x80000000 = 2147483648).
 
 
 ```C++
@@ -84,13 +84,13 @@ Los operadores de reglas de coincidencia LDAP también se pueden utilizar para r
 <span id="OctetString"></span><span id="octetstring"></span><span id="OCTETSTRING"></span>OctetString
 </dt> <dd>
 
-El valor especificado en un filtro son los datos que se van a buscar. Los datos se deben representar como una cadena de bytes codificada de dos caracteres, donde cada byte está precedido por una barra diagonal inversa ( \) . Por ejemplo, el valor 0x05 aparecerá en la cadena como " \\ 05".
+El valor especificado en un filtro son los datos que se encuentran. Los datos deben representarse como una cadena de bytes codificada en dos caracteres, donde cada byte va precedido de una barra diagonal inversa ( \\ ). Por ejemplo, el valor 0x05 aparecerá en la cadena como \\ "05".
 
-La función [**ADsEncodeBinaryData**](/windows/desktop/api/adshlp/nf-adshlp-adsencodebinarydata) se puede utilizar para crear una representación de cadena codificada de datos binarios. La función **ADsEncodeBinaryData** no codifica los valores de byte que representan caracteres alfanuméricos. En su lugar, colocará el carácter en la cadena sin codificarlo. Esto da como resultado la cadena que contiene una mezcla de caracteres codificados y sin codificar. Por ejemplo, si los datos binarios son 0x05 \| 0x1A \| 0x1b \| 0X43 \| , la cadena codificada contendrá " \\ 05 \\ 1A \\ 1BC2". Esto no tiene ningún efecto en el filtro y los filtros de búsqueda funcionarán correctamente con estos tipos de cadenas.
+La [**función ADsEncodeBinaryData**](/windows/desktop/api/adshlp/nf-adshlp-adsencodebinarydata) se puede usar para crear una representación de cadena codificada de datos binarios. La **función ADsEncodeBinaryData** no codifica valores de bytes que representan caracteres alfanuméricos. En su lugar, colocará el carácter en la cadena sin codificar. Esto da como resultado la cadena que contiene una combinación de caracteres codificados y sin codificar. Por ejemplo, si los datos binarios se 0x05 0x1A 0x1B 0x43 0x32, la cadena codificada \| \| \| \| contendrá \\ "05 \\ 1A \\ 1BC2". Esto no tiene ningún efecto en el filtro y los filtros de búsqueda funcionarán correctamente con estos tipos de cadenas.
 
 Se aceptan caracteres comodín.
 
-En el ejemplo de código siguiente se muestra un filtro que contiene la cadena codificada para **schemaIDGUID** con el valor GUID "{BF967ABA-0DE6-11D0-A285-00AA003049E2}":
+En el ejemplo de código siguiente se muestra un filtro que contiene una cadena codificada para **schemaIDGUID** con el valor GUID "{BF967ABA-0DE6-11D0-A285-00AA003049E2}":
 
 
 ```C++
@@ -101,12 +101,12 @@ En el ejemplo de código siguiente se muestra un filtro que contiene la cadena c
 
 </dd> <dt>
 
-<span id="Sid"></span><span id="sid"></span><span id="SID"></span>Junction
+<span id="Sid"></span><span id="sid"></span><span id="SID"></span>Sid
 </dt> <dd>
 
-El valor especificado en un filtro es la representación de la cadena de bytes codificada del SID. Para obtener más información sobre las cadenas de bytes codificadas, vea la sección anterior de este tema, en la que se describe la sintaxis de OctetString.
+El valor especificado en un filtro es la representación de cadena de bytes codificada del SID. Para obtener más información sobre las cadenas de bytes codificadas, vea la sección anterior de este tema en la que se describe la sintaxis octetString.
 
-En el ejemplo de código siguiente se muestra un filtro que contiene una cadena codificada para **objectSid** con el valor de cadena Sid "S-1-5-21-1935655697-308236825-1417001333":
+En el ejemplo de código siguiente se muestra un filtro que contiene una cadena codificada para **objectSid** con el valor de cadena SID "S-1-5-21-193565697-308236825-1417001333":
 
 
 ```C++
@@ -117,16 +117,16 @@ En el ejemplo de código siguiente se muestra un filtro que contiene una cadena 
 
 </dd> <dt>
 
-<span id="DN"></span><span id="dn"></span>NOMBRE
+<span id="DN"></span><span id="dn"></span>Dn
 </dt> <dd>
 
-Se debe proporcionar el nombre distintivo completo, que se va a comparar.
+Se debe proporcionar el nombre distintivo completo que se va a coincidir.
 
 No se aceptan caracteres comodín.
 
-Tenga en cuenta que el atributo **objectCategory** también le permite especificar el **lDAPDisplayName** de la clase establecida en el atributo.
+Tenga en cuenta que el **atributo objectCategory** también permite especificar **el lDAPDisplayName** de la clase establecida en el atributo .
 
-En el ejemplo siguiente se muestra un filtro que especifica un **miembro** que contiene "CN = TESTUSER, DC = Fabrikam, DC = com":
+En el ejemplo siguiente se muestra un filtro que especifica un **miembro** que contiene "CN=TestUser,DC=Fabrikam,DC=COM":
 
 
 ```C++
@@ -142,7 +142,7 @@ En el ejemplo siguiente se muestra un filtro que especifica un **miembro** que c
 
 El valor especificado en un filtro debe ser un entero decimal. Convertir valores hexadecimales en decimales.
 
-En el ejemplo de código siguiente se muestra un filtro que especifica un **creationTime** establecido en un [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) de "1999-12-31 23:59:59 (UTC/GMT)":
+En el ejemplo de código siguiente se muestra un filtro que especifica un **valor creationTime** establecido en [**filetime**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) de "1999-12-31 23:59:59 (UTC/GMT)":
 
 
 ```C++
@@ -151,7 +151,7 @@ En el ejemplo de código siguiente se muestra un filtro que especifica un **crea
 
 
 
-Las siguientes funciones crean un filtro de coincidencia exacta (=) para un atributo de entero grande y comprueban el atributo en el esquema y su sintaxis:
+Las funciones siguientes crean un filtro de coincidencia exacta (=) para un atributo entero grande y comprueban el atributo en el esquema y su sintaxis:
 
 
 ```C++
@@ -279,18 +279,18 @@ HRESULT CreateExactMatchFilterLargeInteger( LPOLESTR szAttribute,
 <span id="PrintableString"></span><span id="printablestring"></span><span id="PRINTABLESTRING"></span>PrintableString
 </dt> <dd>
 
-Los atributos con estas sintaxis deben adherirse a conjuntos de caracteres concretos. Para obtener más información, vea [Sintaxis de atributos en Active Directory Domain Services](syntaxes-for-attributes-in-active-directory-domain-services.md).
+Los atributos con estas sintaxis deben cumplir con conjuntos de caracteres específicos. Para obtener más información, vea [Sintaxis para atributos en Active Directory Domain Services](syntaxes-for-attributes-in-active-directory-domain-services.md).
 
-Actualmente, Active Directory Domain Services no aplican esos conjuntos de caracteres.
+Actualmente, Active Directory Domain Services no aplican esos juegos de caracteres.
 
-El valor especificado en un filtro es una cadena. La comparación distingue entre mayúsculas y minúsculas.
+El valor especificado en un filtro es una cadena. La comparación distingue mayúsculas de minúsculas.
 
 </dd> <dt>
 
 <span id="GeneralizedTime"></span><span id="generalizedtime"></span><span id="GENERALIZEDTIME"></span>GeneralizedTime
 </dt> <dd>
 
-El valor especificado en un filtro es una cadena que representa la fecha en el formato siguiente:
+El valor especificado en un filtro es una cadena que representa la fecha con el formato siguiente:
 
 
 ```C++
@@ -299,11 +299,11 @@ YYYYMMDDHHMMSS.0Z
 
 
 
-"0Z" no indica ninguna diferencia horaria. Tenga en cuenta que el servidor de Active Directory almacena la fecha y hora como hora del meridiano de Greenwich (GMT). Si no se especifica una diferencia horaria, el valor predeterminado es GMT.
+"0Z" indica que no hay diferencias de tiempo. Tenga en cuenta que Active Directory servidor almacena la fecha y hora como Hora media de Greenwich (GMT). Si no se especifica un diferencial de hora, el valor predeterminado es GMT.
 
-Si la zona horaria local no es GMT, use un valor diferencial para especificar la zona horaria local y aplique la diferencia a GMT. La diferencia se basa en: GMT = local + diferencial.
+Si la zona horaria local no es GMT, use un valor diferencial para especificar la zona horaria local y aplicar el diferencial a GMT. El diferencial se basa en: GMT=Local+differential.
 
-Para especificar una diferencia, use:
+Para especificar un diferencial, use:
 
 
 ```C++
@@ -312,7 +312,7 @@ YYYYMMDDHHMMSS.0[+/-]HHMM
 
 
 
-En el ejemplo siguiente se muestra un filtro que especifica una hora **FechaDeCreación** establecida en 3/23/99 8:52:58 pm GMT:
+En el ejemplo siguiente se muestra un filtro que especifica una hora **whenCreated** establecida en 3/23/99 8:52:58 PM GMT:
 
 
 ```C++
@@ -321,7 +321,7 @@ En el ejemplo siguiente se muestra un filtro que especifica una hora **FechaDeCr
 
 
 
-En el ejemplo siguiente se muestra un filtro que especifica una hora **FechaDeCreación** establecida en 3/23/99 8:52:58 PM hora estándar de Nueva Zelanda (diferencial es + 12 horas):
+En el ejemplo siguiente se muestra un filtro que especifica una hora **whenCreated** establecida en 3/23/99 8:52:58 PM Hora estándar de Nueva Zelanda (diferencial es +12 horas):
 
 
 ```C++
@@ -330,7 +330,7 @@ En el ejemplo siguiente se muestra un filtro que especifica una hora **FechaDeCr
 
 
 
-En el ejemplo de código siguiente se muestra cómo calcular el diferencial de zona horaria. La función devuelve la diferencia entre la zona horaria local actual y la hora GMT. El valor devuelto es una cadena con el formato siguiente:
+En el ejemplo de código siguiente se muestra cómo calcular la diferencia de zona horaria. La función devuelve el diferencial entre la zona horaria local actual y GMT. El valor devuelto es una cadena con el formato siguiente:
 
 
 ```C++
@@ -339,7 +339,7 @@ En el ejemplo de código siguiente se muestra cómo calcular el diferencial de z
 
 
 
-Por ejemplo, la hora estándar del Pacífico es-0800.
+Por ejemplo, la hora estándar del Pacífico es -0800.
 
 
 ```C++
@@ -424,10 +424,10 @@ HRESULT GetLocalTimeZoneDifferential(LPOLESTR *pszDifferential)
 
 </dd> <dt>
 
-<span id="UTCTime"></span><span id="utctime"></span><span id="UTCTIME"></span>UTCTime
+<span id="UTCTime"></span><span id="utctime"></span><span id="UTCTIME"></span>HORA UTC
 </dt> <dd>
 
-El valor especificado en un filtro es una cadena que representa la fecha en el formato siguiente:
+El valor especificado en un filtro es una cadena que representa la fecha con el formato siguiente:
 
 
 ```C++
@@ -436,13 +436,13 @@ YYMMDDHHMMSSZ
 
 
 
-Z indica que no hay ninguna diferencia horaria. Tenga en cuenta que el servidor de Active Directory almacena la fecha y la hora como hora GMT. Si no se especifica una diferencia horaria, GMT es el valor predeterminado.
+Z indica que no hay diferencias de tiempo. Tenga en cuenta que el Active Directory almacena la fecha y la hora como hora GMT. Si no se especifica un diferencial de hora, GMT es el valor predeterminado.
 
 El valor de segundos ("SS") es opcional.
 
-Si GMT no es la zona horaria local, aplique un valor diferencial local para especificar la zona horaria local. La diferencia es: GMT = local + diferencial.
+Si GMT no es la zona horaria local, aplique un valor diferencial local para especificar la zona horaria local. El diferencial es: GMT=Local+differential.
 
-Para especificar una diferencia, use el formato siguiente:
+Para especificar un diferencial, use el formato siguiente:
 
 
 ```C++
@@ -451,7 +451,7 @@ YYMMDDHHMMSS[+/-]HHMM
 
 
 
-En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAttrib** establecida en 3/23/99 8:52:58 pm GMT:
+En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAttrib** establecida en 3/23/99 8:52:58 PM GMT:
 
 
 ```C++
@@ -460,7 +460,7 @@ En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAtt
 
 
 
-En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAttrib** establecida en 3/23/99 8:52:58 PM sin segundos especificado:
+En el ejemplo siguiente se muestra un filtro que especifica un tiempo **myTimeAttrib** establecido en 3/23/99 8:52:58 PM sin segundos especificados:
 
 
 ```C++
@@ -469,7 +469,7 @@ En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAtt
 
 
 
-En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAttrib** establecida en hora estándar de nueva Zelanda 3/23/99 8:52:58 PM (diferencial es 12 horas). Es equivalente a 3/23/99 8:52:58 AM GMT.
+En el ejemplo siguiente se muestra un filtro que especifica una hora **myTimeAttrib** establecida en 3/23/99 8:52:58 PM Hora estándar de Nueva Zelanda (diferencial es 12 horas). Esto equivale al 23/03/99 8:52:58 AM GMT.
 
 
 ```C++
@@ -487,16 +487,16 @@ El valor especificado en un filtro es una cadena. DirectoryString puede contener
 
 </dd> <dt>
 
-<span id="OID"></span><span id="oid"></span>OID
+<span id="OID"></span><span id="oid"></span>Oid
 </dt> <dd>
 
-Se debe proporcionar el OID completo que debe coincidir.
+Se debe proporcionar el OID completo que se va a coincidir.
 
 No se aceptan caracteres comodín.
 
-El atributo **objectCategory** le permite especificar el **lDAPDisplayName** del conjunto de clases para el atributo.
+El **atributo objectCategory** permite especificar el **valor lDAPDisplayName** del conjunto de clases para el atributo.
 
-En el ejemplo siguiente se muestra un filtro que especifica **governsID** para la clase Volume:
+En el ejemplo siguiente se muestra un filtro que especifica **governsID para** la clase de volumen:
 
 
 ```C++
@@ -521,7 +521,7 @@ Dos filtros equivalentes que especifican el atributo **systemMustContain** que c
 <span id="Other_Syntaxes"></span><span id="other_syntaxes"></span><span id="OTHER_SYNTAXES"></span>Otras sintaxis
 </dt> <dd>
 
-Las siguientes sintaxis se evalúan en un filtro similar a una cadena de octeto:
+Las sintaxis siguientes se evalúan en un filtro similar a una cadena de octeto:
 
 -   ObjectSecurityDescriptor
 -   AccessPointDN
@@ -533,6 +533,6 @@ Las siguientes sintaxis se evalúan en un filtro similar a una cadena de octeto:
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

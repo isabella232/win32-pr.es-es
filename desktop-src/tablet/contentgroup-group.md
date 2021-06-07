@@ -1,19 +1,19 @@
 ---
-description: Define un grupo que contiene un conjunto de contenido agrupado en una nota de Journal.
+description: Define un grupo que contiene un conjunto de contenido agrupado en una nota de diario.
 ms.assetid: e2561be1-03ce-41f7-9ad4-197d75411c48
-title: Grupo ContentGroup
+title: Grupo contentgroup
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fbbc13a3dee796646b6d61ac9ba0bde50880f12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02e4291da1912c43674871c06fb803e1936f7178
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083012"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432617"
 ---
-# <a name="contentgroup-group"></a>Grupo ContentGroup
+# <a name="contentgroup-group"></a>Grupo contentgroup
 
-Define un grupo que contiene un conjunto de contenido agrupado en una nota de Journal.
+Define un grupo que contiene un conjunto de contenido agrupado en una nota de diario.
 
 ## <a name="definition"></a>Definición
 
@@ -34,7 +34,7 @@ Define un grupo que contiene un conjunto de contenido agrupado en una nota de Jo
 
 ## <a name="child-elements"></a>Elementos secundarios
 
-[**Groupnode BizTalk**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 [**Paragraph**](paragraph-element.md)
 
@@ -44,7 +44,7 @@ Define un grupo que contiene un conjunto de contenido agrupado en una nota de Jo
 
 [**Texto**](text-element.md)
 
-[**Impresión**](docimage-element.md)
+[**Imagen**](docimage-element.md)
 
 [**Marca**](flag-element.md)
 
@@ -52,12 +52,12 @@ Define un grupo que contiene un conjunto de contenido agrupado en una nota de Jo
 
 
 
-| Atributo  | Tipo                      | Obligatorio | Descripción                                                                                        | PossibleValues                       |
+| Atributo  | Tipo                      | Requerido | Descripción                                                                                        | PossibleValues                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto situado más a la izquierda del cuadro de límite del elemento.<br/> | Cualquier número entero.<br/>              |
-| **Top** (Principales)    | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.<br/>  | Cualquier número entero.<br/>              |
-| **Width**  | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.<br/>                                          | Cualquier entero no negativo.<br/> |
-| **Height** | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.<br/>                                         | Cualquier entero no negativo.<br/> |
+| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento.<br/> | Cualquier número entero.<br/>              |
+| **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.<br/>  | Cualquier número entero.<br/>              |
+| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite para el elemento.<br/>                                          | Cualquier entero no negativo.<br/> |
+| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.<br/>                                         | Cualquier entero no negativo.<br/> |
 
 
 
@@ -67,9 +67,9 @@ Define un grupo que contiene un conjunto de contenido agrupado en una nota de Jo
 
 
 
-|             |                                            |
+|  Elemento     | Value                                                     |
 |-------------|--------------------------------------------|
-| Espacio de nombres   | urn: schemas-microsoft-com: TabletPC: richink |
+| Espacio de nombres   | urn:schemas-microsoft-com:tabletpc:richink |
 | Nombre del esquema | Lector de diario                             |
 
 

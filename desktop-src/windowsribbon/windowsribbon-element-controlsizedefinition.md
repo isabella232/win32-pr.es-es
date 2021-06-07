@@ -3,7 +3,7 @@ title: Elemento ControlSizeDefinition
 description: Representa el estilo de diseño de un grupo de controles en una plantilla personalizada.
 ms.assetid: f9b875f4-e0cf-4823-81b5-ed19c201dcbb
 keywords:
-- ControlSizeDefinition cinta de opciones de Windows
+- ControlSizeDefinition, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e35fe159bf5bafa1ebfa6119215a4265ee900ef0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0ff5217c08b4ea6da1931b0c65501f912f2cc5dc
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358147"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443416"
 ---
 # <a name="controlsizedefinition-element"></a>Elemento ControlSizeDefinition
 
@@ -50,44 +50,44 @@ Representa el estilo de diseño de un grupo de controles en una plantilla person
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Nombrecontrol</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td><strong>ControlName</strong><br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ImageSize</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Amplíe<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Pequeño<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Pequeño)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>IsImageVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> reales<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> es<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsLabelVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> reales<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> es<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>IsPopup</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> reales<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> es<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -106,19 +106,19 @@ No hay elementos secundarios.
 |-------------------------------------------------------------------------------------|
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>               |
 | [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> |
-| [**Row**](windowsribbon-element-row.md)<br/>                                 |
+| [**Fila**](windowsribbon-element-row.md)<br/>                                 |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**Row**](windowsribbon-element-row.md)o [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**Row**](windowsribbon-element-row.md)o [**SizeDefinition.**](windowsribbon-element-sizedefinition.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado básico de una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con varios elementos **ControlSizeDefinition** .
+En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con varios **elementos ControlSizeDefinition.**
 
 
 ```XML
@@ -210,20 +210,16 @@ En el ejemplo de código siguiente se muestra el marcado básico de una plantill
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** Sí
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Row, elemento
+title: Elemento Row
 description: Representa una fila de controles en una plantilla de diseño SizeDefinition personalizada.
 ms.assetid: c3dac35f-3537-4eb7-b378-501ea88813f5
 keywords:
-- Elemento Row de la cinta de opciones de Windows
+- Cinta de opciones de Windows del elemento Row
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 83a0a5a9e7908cc1c8cff688b3fefc1e8910b6a4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7d642cd209b3e00e2c63f7376e321132a1c0e686
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105714278"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111445026"
 ---
-# <a name="row-element"></a>Row, elemento
+# <a name="row-element"></a>Elemento Row
 
 Representa una fila de controles en una plantilla de diseño SizeDefinition personalizada.
 
@@ -57,15 +57,15 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .
+Puede producirse una o varias veces para cada [**elemento GroupSizeDefinition.**](windowsribbon-element-groupsizedefinition.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado básico de una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con varios elementos **Row** .
+En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con varios **elementos Row.**
 
 
 ```XML
@@ -159,18 +159,17 @@ En el ejemplo de código siguiente se muestra el marcado básico de una plantill
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

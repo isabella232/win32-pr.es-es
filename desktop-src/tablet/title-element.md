@@ -1,19 +1,19 @@
 ---
-description: Contiene información de título sobre la nota de Journal.
+description: Contiene información de título sobre la nota de diario.
 ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2362e286482b329c50788b8eae4b4a30cbd1a125
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef687f809aae5c3722cdad84ee63d79c7bfcfb21
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697752"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432227"
 ---
 # <a name="title-element"></a>Elemento Title
 
-Contiene información de título sobre la nota de Journal.
+Contiene información de título sobre la nota de diario.
 
 ## <a name="definition"></a>Definición
 
@@ -45,7 +45,7 @@ Contiene información de título sobre la nota de Journal.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 <th>Valores posibles</th>
 </tr>
@@ -54,10 +54,10 @@ Contiene información de título sobre la nota de Journal.
 <tr class="odd">
 <td><strong>Estilo</strong></td>
 <td><strong>xs:string</strong></td>
-<td>Obligatorio</td>
+<td>Requerido</td>
 <td>Especifica el tipo de borde que rodea el título de la nota.</td>
 <td><ul>
-<li>None</li>
+<li>Ninguno</li>
 <li>SolidSquare</li>
 <li>OutlineSquare</li>
 <li>SolidRoundRect</li>
@@ -68,19 +68,19 @@ Contiene información de título sobre la nota de Journal.
 <tr class="even">
 <td><strong>DateStyle</strong></td>
 <td><strong>xs:string</strong></td>
-<td>Obligatorio</td>
-<td>Define si el título incluye o no una fecha.</td>
+<td>Requerido</td>
+<td>Define si el título incluye una fecha o no.</td>
 <td><ul>
-<li>None</li>
+<li>Ninguno</li>
 <li>Short</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Color</strong></td>
-<td><a href="colortype-simple-type.md"><strong>SimpleType de ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a></td>
 <td>Opcionales</td>
 <td>Especifica el color del fondo.</td>
-<td>Consulte <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>.</td>
+<td>Vea <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>.</td>
 </tr>
 </tbody>
 </table>
@@ -93,10 +93,10 @@ Contiene información de título sobre la nota de Journal.
 
 
 
-|              |                                                         |
+| Elemento      | Value                                                   |
 |--------------|---------------------------------------------------------|
 | Tipo de elemento | [**TitleType**](titletype-complex-type.md) complexType |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink              |
+| Espacio de nombres    | urn:schemas-microsoft-com:tabletpc:richink              |
 | Nombre del esquema  | Lector de diario                                          |
 
 

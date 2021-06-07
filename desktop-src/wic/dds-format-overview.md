@@ -1,37 +1,37 @@
 ---
-description: Proporciona información sobre el códec DDS nativo disponible a través de Windows Imaging Component (WIC).
+description: Proporciona información sobre el códec DDS nativo disponible a través del Windows Imaging Component (WIC).
 ms.assetid: 6CFDD674-C8AE-4F29-B2E5-C9C9431CB85A
-title: Información general sobre el formato DDS
+title: Introducción al formato DDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1c45222a66d5a250caaf46db465d2359e09b3e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f860a5759218575acb53be5f2142e71aa34e9554
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697224"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444956"
 ---
-# <a name="dds-format-overview"></a>Información general sobre el formato DDS
+# <a name="dds-format-overview"></a>Introducción al formato DDS
 
-En este tema se proporciona información sobre el códec DDS nativo disponible a través de Windows Imaging Component (WIC).
+En este tema se proporciona información sobre el códec DDS nativo disponible a través Windows Imaging Component (WIC).
 
-## <a name="codec-identity"></a>Identidad del códec
+## <a name="codec-identity"></a>Identidad de códec
 
-En la tabla siguiente se proporciona información de identificación del códec.
+En la tabla siguiente se proporciona información de identificación de códecs.
 
 
 
-|                        |                    |
+| Componente              | Descripción        |
 |------------------------|--------------------|
-| Nombres formales         | Superficie de DirectDraw |
-| Extensiones de nombre de archivo | DDS                |
-| Tipo de MIME              | Image/vnd-ms. DDS   |
+| Nombres formales         | DirectDraw Surface |
+| Extensiones de nombre de archivo | Dds                |
+| Tipo de MIME              | image/vnd-ms.dds   |
 
 
 
  
 
-En la tabla siguiente se enumeran los GUID que se usan para identificar los componentes del códec DDS nativo.
+En la tabla siguiente se enumeran los GUID que se usan para identificar los componentes de códec DDS nativos.
 
 
 
@@ -45,27 +45,27 @@ En la tabla siguiente se enumeran los GUID que se usan para identificar los comp
 
  
 
-## <a name="pixel-format-support"></a>Compatibilidad con formato de píxeles
+## <a name="pixel-format-support"></a>Compatibilidad con el formato de píxel
 
-Tenga en cuenta que el formato DDS admite cualquier valor de [**\_ formato de DXGI**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) válido. Sin embargo, el códec DDS de WIC solo admite la descodificación y la codificación de archivos que contienen los formatos siguientes:
+Tenga en cuenta que el formato DDS admite cualquier valor [**VÁLIDO \_ DE DXGI FORMAT.**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) Sin embargo, el códec WIC DDS solo admite la codificación y la codificación de archivos que contienen los siguientes formatos:
 
--   Formato de DXGI \_ \_ BC1 \_ UNORM
--   Formato de DXGI \_ \_ BC2 \_ UNORM
--   Formato de DXGI \_ \_ BC3 \_ UNORM
+-   DXGI \_ FORMAT \_ BC1 \_ UNORM
+-   DXGI \_ FORMAT \_ BC2 \_ UNORM
+-   DXGI \_ FORMAT \_ BC3 \_ UNORM
 
 ## <a name="encoding"></a>Encoding
 
-Las API de codificación WIC están diseñadas para ser independientes del códec y, por lo tanto, la codificación de imágenes para códecs habilitados para WIC es esencialmente la misma. Para obtener más información sobre la codificación de imágenes mediante la API de WIC, consulte la [información general](-wic-creating-encoder.md)sobre la codificación.
+Las API de codificación de WIC están diseñadas para ser independientes del códec y, por tanto, la codificación de imágenes para códecs habilitados para WIC es básicamente la misma. Para más información sobre la codificación de imágenes mediante la API de WIC, consulte Información general [sobre codificación.](-wic-creating-encoder.md)
 
-El formato de archivo DDS tiene requisitos únicos que surgen de su compatibilidad con conceptos como mapas de y matrices de texturas. Para ejercer el control completo sobre la codificación de imagen DDS, debe usar la interfaz [**IWICDdsEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicddsencoder) para establecer los parámetros de codificación específicos de DDS.
+El formato de archivo DDS tiene requisitos únicos que surgen de su compatibilidad con conceptos como mapas mip y matrices de textura. Para controlar completamente la codificación de imágenes DDS, debe usar la interfaz [**IWICDdsEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicddsencoder) para establecer parámetros de codificación específicos de DDS.
 
 ## <a name="decoding"></a>Descodificación
 
-Las API de descodificación de WIC están diseñadas para ser independientes del códec y la descodificación de imágenes para códecs habilitados para WIC es esencialmente la misma. Para obtener más información sobre la descodificación de imágenes, consulte la [información general sobre descodificación](-wic-creating-decoder.md). Para obtener más información sobre el uso de datos de imagen descodificados, vea [información general sobre orígenes de mapas de bits](-wic-bitmapsources.md).
+Las API de decodificación de WIC están diseñadas para ser independientes del códec y lacoding de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre lacodación de imágenes, vea Información general [sobre la decodación.](-wic-creating-decoder.md) Para obtener más información sobre el uso de datos de imagen descodificados, vea Información general sobre orígenes [de mapa de bits](-wic-bitmapsources.md).
 
 ## <a name="block-compressed-data-access"></a>Bloquear el acceso a datos comprimidos
 
-Además de admitir las interfaces de códecs WIC estándar, el descodificador DDS proporciona acceso directo a los datos comprimidos de bloque nativo mediante las interfaces específicas de DDS, [**IWICDdsDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicddsdecoder) y [**IWICDdsFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicddsframedecode). Para utilizar estas interfaces, llame a QueryInterface fuera de [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) y [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode), respectivamente.
+Además de admitir las interfaces de códec WIC estándar, el descodificador DDS proporciona acceso directo a los datos comprimidos en bloque nativo mediante las interfaces específicas de DDS, [**IWICDdsDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicddsdecoder) e [**IWICDdsFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicddsframedecode). Para usar estas interfaces, llame a QueryInterface fuera de [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) e [**IWICBitmapFrameDecode,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)respectivamente.
 
  
 

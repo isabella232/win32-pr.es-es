@@ -1,6 +1,6 @@
 ---
-title: const (atributo)
-description: La palabra clave const modifica el tipo de una declaración de tipos o el tipo de un parámetro de función, lo que impide variar el valor.
+title: Atributo const
+description: La palabra clave const modifica el tipo de una declaración de tipo o el tipo de un parámetro de función, lo que impide que el valor varíe.
 ms.assetid: 398fab76-93f3-4d5a-9223-1c57c612b2d7
 keywords:
 - atributo const MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d2980f0f484c838e4f972bbf12fb72173edb3e7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7095e29daf18dc111caf37038b06b0beff5245a8
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103789874"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387064"
 ---
-# <a name="const-attribute"></a>const (atributo)
+# <a name="const-attribute"></a>Atributo const
 
-La palabra clave **const** modifica el tipo de una declaración de tipos o el tipo de un parámetro de función, lo que impide variar el valor.
+La **palabra clave const** modifica el tipo de una declaración de tipo o el tipo de un parámetro de función, lo que impide que el valor varíe.
 
 ``` syntax
 const const-type identifier = const-expression ;
@@ -40,98 +40,98 @@ const-type [declarator], [ [ parameter-attribute-list ] ] pointer-type const [de
 
 <dl> <dt>
 
-*const-Type* 
+*const-type* 
 </dt> <dd>
 
-Especifica un entero, un carácter, una cadena o un tipo booleano válidos de MIDL. Entre los tipos de MIDL válidos se incluyen [**Small**](small.md), [**Short**](short.md), [**Long**](long.md), [**Char**](char-idl.md), **charÂ \***, [**WCHAR \_ t**](wchar-t.md), **WCHAR \_ tÂ \***, [**byte**](byte.md), **byteÂ \*** y [**voidÂ \***](void.md). Los tipos enteros y de caracteres pueden estar [**firmados**](signed.md) o [**sin firmar**](unsigned.md).
+Especifica un entero MIDL válido, un carácter, una cadena o un tipo booleano. Los tipos MIDL válidos incluyen small [**,**](small.md) [**short**](short.md), [**long**](long.md), [**char**](char-idl.md), **\* charÂ*, __ [*wchar \_ t* *](wchar-t.md), **wchar \_ \* tÂ*_, _ [*byte* *](byte.md), **byteÂ \** _, y [_*voidÂ \**_](void.md). Los tipos enteros y de caracteres pueden [ser _ *signed* *](signed.md) [**o unsigned**](unsigned.md).
 
 </dd> <dt>
 
 *identifier* 
 </dt> <dd>
 
-Especifica un identificador de MIDL válido. Los identificadores de MIDL válidos constan de hasta 31 caracteres alfanuméricos o de subrayado, y deben comenzar por un carácter alfabético o de subrayado.
+Especifica un identificador MIDL válido. Los identificadores MIDL válidos constan de hasta 31 caracteres alfanuméricos o de subrayado y deben comenzar con un carácter alfabético o de subrayado.
 
 </dd> <dt>
 
-*const-Expression* 
+*const-expression* 
 </dt> <dd>
 
-Especifica una expresión, un identificador o una constante numérica o de caracteres adecuada para el tipo especificado: literales constantes de tipo entero o expresiones de entero constante para constantes de tipo entero. Expresiones booleanas que se pueden calcular en la compilación para tipos [**booleanos**](boolean.md) ; constantes de un solo carácter para tipos [**Char**](char-idl.md) ; y las constantes de cadena para los tipos de **\[** [**cadena**](string.md) **\]** . El [**tipo \* voidÂ**](void.md) solo se puede inicializar en **null**.
+Especifica una expresión, un identificador o una constante numérica o de caracteres adecuada para el tipo especificado: literales enteros constantes o expresiones de entero constante para constantes enteras; Expresiones booleanas que se pueden calcular durante la compilación para tipos [**booleanos;**](boolean.md) constantes de un solo carácter para [**tipos char;**](char-idl.md) y constantes de cadena para tipos **\[** [**de**](string.md) **\]** cadena. El [ * *tipo \* voidÂ* _](void.md) solo se puede inicializar en _*NULL**.
 
 </dd> <dt>
 
-*lista de atributos de tipo* 
+*type-attribute-list* 
 </dt> <dd>
 
-Especifica uno o más atributos que se aplican al tipo.
+Especifica uno o varios atributos que se aplican al tipo.
 
 </dd> <dt>
 
-*tipo de puntero* 
+*pointer-type* 
 </dt> <dd>
 
 Especifica un tipo de puntero MIDL válido.
 
 </dd> <dt>
 
-*declarador y lista de declaradores* 
+*declarator y declarator-list* 
 </dt> <dd>
 
-Especifica los declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. Para obtener más información, vea [matrices y Sized-Pointer atributos](array-and-sized-pointer-attributes.md), [**matrices**](arrays-1.md)y [matrices y punteros](/windows/desktop/Rpc/arrays-and-pointers). La *lista de declaradores* consta de uno o varios declaradores, separados por comas. El identificador de nombre de parámetro en el declarador de función es opcional.
+Especifica declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. Para obtener más información, vea [Array and Sized-Pointer Attributes](array-and-sized-pointer-attributes.md), [**arrays**](arrays-1.md), and [Arrays and Pointers](/windows/desktop/Rpc/arrays-and-pointers). La *lista de declaradores* consta de uno o varios declaradores, separados por comas. El identificador de nombre de parámetro en el declarador de función es opcional.
 
 </dd> <dt>
 
-*function-ATTR-List* 
+*function-attr-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la función. Los atributos de función válidos son **\[** [**callback**](callback.md) **\]** , **\[** [**local**](local.md) **\]** ; el atributo de puntero **\[** [**ref**](ref.md) **\]** , **\[** [**Unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md) **\]** ; y los atributos de uso **\[** [**cadena**](string.md) **\]** , **\[** [**omitir**](ignore.md) **\]** y **\[** [**\_ identificador de contexto**](context-handle.md) **\]** .
+Especifica cero o más atributos que se aplican a la función. Los atributos de función válidos son la devolución de llamada , local; el atributo de puntero **\[** [](callback.md) **\]** **\[** [](local.md) **\]** **\[** [**ref**](ref.md) **\]** , **\[** [**unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md); **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** y la cadena de atributos de uso , ignore y el identificador de contexto .
 
 </dd> <dt>
 
-*Type-Specifier* 
+*type-specifier* 
 </dt> <dd>
 
-Especifica un [ \_ tipo base](midl-base-types.md), [**un struct**](struct.md), una [**Unión**](union.md), un tipo de [**enumeración**](enum.md) o un identificador de tipo. Una especificación de almacenamiento opcional puede preceder *a Type-Specifier*.
+Especifica un tipo base , [**struct**](struct.md), [**union**](union.md), [**enum**](enum.md) type o un identificador de tipo. [ \_](midl-base-types.md) Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
-*PTR-decl* 
+*ptr-decl* 
 </dt> <dd>
 
-Especifica cero o más declaradores de puntero. Un declarador de puntero es el mismo que el declarador de puntero utilizado en C. Se construye a partir del **\*** designador, modificadores como **Far** y el calificador **const**.
+Especifica cero o más declaradores de puntero. Un declarador de puntero es el mismo que el declarador de puntero usado en C. Se construye a partir del **\* *designador _ , modificadores como _* far** y el calificador **const**.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento remoto.
 
 </dd> <dt>
 
-*Parameter-Attribute-List* 
+*parameter-attribute-list* 
 </dt> <dd>
 
 Especifica cero o más atributos direccionales, atributos de campo, atributos de uso y atributos de puntero adecuados para el tipo de parámetro especificado. Separe varios atributos con comas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-MIDL permite declarar tipos enteros constantes, de caracteres, de cadena y booleanos en el cuerpo de la interfaz del archivo IDL. Las declaraciones de tipos **const** se reproducen en el archivo de encabezado generado como directivas de **\# definición** .
+MIDL permite declarar tipos enteros, caracteres, cadenas y booleanos constantes en el cuerpo de la interfaz del archivo IDL. **Las declaraciones** de tipo Const se reproducen en el archivo de encabezado generado como **\# directivas define.**
 
-Los compiladores de DCE IDL no admiten expresiones constantes. Por lo tanto, esta característica no está disponible cuando se usa el modificador [**/OSF**](-osf.md) del compilador MIDL.
+Los compiladores IDL de DCE no admiten expresiones constantes. Por lo tanto, esta característica no está disponible cuando se usa el modificador [**/osf**](-osf.md) del compilador midL.
 
-Se puede usar una constante definida previamente como el valor asignado de una constante subsiguiente. El valor de una expresión integral constante se convierte automáticamente al tipo de entero correspondiente de acuerdo con las reglas de conversión de C.
+Una constante definida previamente se puede usar como el valor asignado de una constante subsiguiente. El valor de una expresión entera constante se convierte automáticamente al tipo entero correspondiente de acuerdo con las reglas de conversión de C.
 
-El valor de una constante de caracteres debe ser un carácter ASCII entre comillas simples. Cuando la constante de caracteres es el propio carácter de comilla simple ('), el carácter de barra diagonal inversa ( \) debe preceder al carácter de comilla simple, como en \\ '.
+El valor de una constante de caracteres debe ser un carácter ASCII entre comillas simples. Cuando la constante de caracteres es el propio carácter de comilla simple ('), el carácter de barra diagonal inversa ( ) debe preceder al carácter de comilla \\ simple, como en \\ '.
 
-El valor de una constante de cadena de caracteres debe ser una cadena entre comillas dobles. Dentro de una cadena, el carácter de barra diagonal inversa ( **\\** ) debe preceder a un carácter de comilla doble literal ( **"** ), como en **\\ "**. Dentro de una cadena, el carácter de barra diagonal inversa ( **\\** ) representa un carácter de escape. Las constantes de cadena pueden constar de hasta 255 caracteres.
+El valor de una constante de cadena de caracteres debe ser una cadena entre comillas dobles. Dentro de una cadena, el carácter de barra diagonal inversa ( ) debe preceder a un carácter literal de comilla **\\** doble ( **"** ), como en **\\ "**. Dentro de una cadena, el carácter de barra diagonal inversa ( **\\** ) representa un carácter de escape. Las constantes de cadena pueden constar de hasta 255 caracteres.
 
-El valor **null** es el único valor válido para las constantes de tipo [**voidÂ \***](void.md). Se omiten los atributos asociados a la declaración **const** .
+El valor **NULL** es el único valor válido para las constantes de tipo [ * *voidÂ \** _](void.md). Se omiten todos los atributos asociados a la declaración _ *const**.
 
-El compilador MIDL no comprueba los errores de intervalo en la inicialización **const** . Por ejemplo, si especifica "const Short x = 0xFFFFFFFF;", el compilador MIDL no notificará un error y el inicializador se reproducirá en el archivo de encabezado generado.
+El compilador MIDL no comprueba si hay errores de intervalo en **la inicialización const.** Por ejemplo, cuando se especifica "const short x = 0xFFFFFFFF;", el compilador MIDL no informa de un error y el inicializador se reproduce en el archivo de encabezado generado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -152,81 +152,81 @@ HRESULT GetName([out] wchar_t * const pszName );
 
 <dl> <dt>
 
-[**matrices**](arrays-1.md)
+[**Matrices**](arrays-1.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**Booleano**](boolean.md)
+[**Boolean**](boolean.md)
 </dt> <dt>
 
-[**bytes**](byte.md)
+[**Byte**](byte.md)
 </dt> <dt>
 
 [**devolución de llamada**](callback.md)
 </dt> <dt>
 
-[**char**](char-idl.md)
+[**Char**](char-idl.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**enumeración**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**omitir**](ignore.md)
+[**Ignorar**](ignore.md)
 </dt> <dt>
 
-[**localizar**](local.md)
+[**Local**](local.md)
 </dt> <dt>
 
-[**tal**](long.md)
+[**Largo**](long.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
 [**ref**](ref.md)
 </dt> <dt>
 
-[**short**](short.md)
+[**Corto**](short.md)
 </dt> <dt>
 
-[**conectado**](signed.md)
+[**Firmado**](signed.md)
 </dt> <dt>
 
-[**pequeño**](small.md)
+[**Pequeño**](small.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
-[**Destructor**](struct.md)
+[**Estructura**](struct.md)
 </dt> <dt>
 
 [**Unión**](union.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> <dt>
 
-[**sin signo**](unsigned.md)
+[**Unsigned**](unsigned.md)
 </dt> <dt>
 
 [**void**](void.md)
 </dt> <dt>
 
-[**WCHAR \_ t**](wchar-t.md)
+[**wchar \_ t**](wchar-t.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

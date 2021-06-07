@@ -1,9 +1,9 @@
 ---
-title: CheckBox, elemento
-description: Representa un control de casilla.
+title: Elemento CheckBox
+description: Representa un control Casilla.
 ms.assetid: ebb44d6d-91fb-4a59-9b62-4a694fea8a4d
 keywords:
-- CheckBox (elemento) cinta de Windows
+- Cinta de opciones de Windows del elemento CheckBox
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0af090058e0475f1997c681750009a12f4e5e7cd
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 4d9357337e569f43b14c34798c9c6e8da4b7b10b
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104149066"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443046"
 ---
-# <a name="checkbox-element"></a>CheckBox, elemento
+# <a name="checkbox-element"></a>Elemento CheckBox
 
-Representa un control de [casilla](windowsribbon-controls-checkbox.md) .
+Representa un [control Casilla.](windowsribbon-controls-checkbox.md)
 
 ## <a name="usage"></a>Uso
 
@@ -47,29 +47,29 @@ Representa un control de [casilla](windowsribbon-controls-checkbox.md) .
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>ApplicationDefaults. IsChecked</strong><br/></td>
+<td><strong>ApplicationDefaults.IsChecked</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
-<td>Este atributo solo es válido cuando el elemento <strong>CheckBox</strong> es un elemento secundario de <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar. ApplicationDefaults</strong></a>. <br/> Restringido a uno de los siguientes valores:<br/>
+<td>Este atributo solo es válido cuando el <strong>elemento CheckBox</strong> es un elemento secundario <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>de QuickAccessToolbar.ApplicationDefaults.</strong></a> <br/> Restringido a uno de los siguientes valores:<br/>
 <blockquote>
 [!Note]<br />
-La <strong>casilla</strong> no admite un estado terciario o indeterminado.
+<strong>CheckBox</strong> no admite un estado terciario o indeterminado.
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> reales<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> es<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -97,17 +97,17 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Opcional o obligatorio, dependiendo del elemento primario.
+Opcional o obligatorio, en función del elemento primario.
 
-Puede producirse una o varias veces para cada elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar. ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md), [**splitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el elemento **CheckBox** .
+En el ejemplo siguiente se muestra el marcado básico para el **elemento CheckBox.**
 
-En esta sección de código se muestran las declaraciones del comando **CheckBox** .
+En esta sección de código se muestran las declaraciones del comando **CheckBox.**
 
 
 ```XML
@@ -123,7 +123,7 @@ En esta sección de código se muestran las declaraciones del comando **CheckBox
 
 
 
-En esta sección de código se muestran las declaraciones del control **CheckBox** .
+En esta sección de código se muestran las declaraciones del control **CheckBox.**
 
 
 ```XML
@@ -136,16 +136,11 @@ En esta sección de código se muestran las declaraciones del control **CheckBox
 
 ## <a name="element-information"></a>Información de elemento
 
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** Sí
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | Sí       |
-
-
-
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

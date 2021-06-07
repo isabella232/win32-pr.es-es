@@ -1,11 +1,11 @@
 ---
-title: TaskFolder. DeleteFolder, método
-description: En el caso de scripting, elimina una subcarpeta de la carpeta principal.
+title: Método TaskFolder.DeleteFolder
+description: Para el scripting, elimina una subcarpeta de la carpeta primaria.
 ms.assetid: 0d6a9a60-7909-4945-8186-3495e6fe9bc4
 keywords:
 - Método DeleteFolder Programador de tareas
-- Método DeleteFolder Programador de tareas, objeto TaskFolder
-- Programador de tareas de objeto TaskFolder, método DeleteFolder
+- Método DeleteFolder Programador de tareas , objeto TaskFolder
+- TaskFolder object Programador de tareas , DeleteFolder (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ea9b8aaa7da7710cedc49e10d6be2a203f62b34
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31080f017329cde376b646befd4b7e12ba02926b
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491374"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387044"
 ---
-# <a name="taskfolderdeletefolder-method"></a>TaskFolder. DeleteFolder, método
+# <a name="taskfolderdeletefolder-method"></a>Método TaskFolder.DeleteFolder
 
-En el caso de scripting, elimina una subcarpeta de la carpeta principal.
+Para el scripting, elimina una subcarpeta de la carpeta primaria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ TaskFolder.DeleteFolder( _
 
 <dl> <dt>
 
-*nombrecarpeta* \[ de\]
+*folderName* \[ En\]
 </dt> <dd>
 
-Nombre de la subcarpeta que se va a quitar. La carpeta de tareas raíz se especifica con una barra diagonal inversa ( \) . Este parámetro puede ser una ruta de acceso relativa a la carpeta que desea eliminar. Un ejemplo de una ruta de carpeta de tareas, en la carpeta de tareas raíz, es \\ MyTaskFolder. No se puede usar el carácter '. ' para especificar la carpeta de tareas actual y '.. ' no se pueden usar caracteres para especificar la carpeta de tareas primaria en la ruta de acceso.
+Nombre de la subcarpeta que se va a quitar. La carpeta de tareas raíz se especifica con una barra diagonal inversa ( \\ ). Este parámetro puede ser una ruta de acceso relativa a la carpeta que desea eliminar. Un ejemplo de una ruta de acceso de carpeta de tareas, en la carpeta de tareas raíz, \\ es MyTaskFolder. No se puede usar el carácter '.' para especificar la carpeta de tareas actual y '..'. no se pueden usar caracteres para especificar la carpeta de tareas primaria en la ruta de acceso.
 
 </dd> <dt>
 
-*marcas* \[ de de\]
+*flags* \[ En\]
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

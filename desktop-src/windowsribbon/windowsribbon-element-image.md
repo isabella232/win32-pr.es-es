@@ -1,9 +1,9 @@
 ---
-title: Elemento Image (marco de cinta de Windows)
+title: Elemento Image (Marco de la cinta de opciones de Windows)
 description: Representa una imagen.
 ms.assetid: 2c71bb16-93ac-484f-b81b-1b95842472b3
 keywords:
-- Cinta de opciones de Windows (elemento)
+- Cinta de opciones de Windows del elemento Image
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1d33f6710da2261a359aa7fd0a3b493871155cf4
-ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.openlocfilehash: fe0b9afb51697d50de9cb80886cf829b90c81262
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "104148977"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442896"
 ---
 # <a name="image-element"></a>Elemento Image
 
@@ -51,36 +51,36 @@ Representa una imagen.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Id</strong><br/></td>
-<td>XS: positiveInteger Union XS: String<br/></td>
+<td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
-<td>IDENTIFICADOR de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (La Unión de XS: positiveInteger y XS: String)<br/> </dt> <dd> Un valor entero entre 2 y 59999, inclusive, o 0X2 y 0xea5f en formato hexadecimal, ambos incluidos. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros a la izquierda opcionales. <br/> </dd> </dl></td>
+<td>Identificador de recurso único. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, ambos incluidos, 0x2 y 0xea5f en formato hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinDPI</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: positiveInteger)<br/> </dt> <dd> Cualquier secuencia de dígitos con un valor mínimo de 96. <br/> Si se omite MinDPI, el valor predeterminado es 96. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Cualquier secuencia de dígitos con un valor mínimo de 96. <br/> Si se omite MinDPI, el valor predeterminado es 96. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Origen</strong><br/></td>
 <td>xs:anyURI<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: anyURI)<br/> </dt> <dd> Cualquier secuencia de caracteres que representa un identificador URI. El valor del URI es una ruta de acceso absoluta o relativa (en el archivo de marcado de la cinta de opciones) a un recurso de imagen de tipo BMP. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:anyURI)<br/> </dt> <dd> Cualquier secuencia de caracteres que represente un URI. El valor uri es una ruta de acceso absoluta o relativa (al archivo de marcado de la cinta de opciones) a un recurso de imagen de tipo BMP. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Símbolo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Símbolo de recurso de la imagen.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Cadena formada por una letra o un carácter de subrayado seguido de cualquier secuencia de letras, dígitos o caracteres de subrayado hasta un máximo de 100 caracteres. <br/> </dd> </dl></td>
+<td>Símbolo de recurso para la imagen.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por una letra o un carácter de subrayado seguido de cualquier secuencia de letras, dígitos o caracteres de subrayado hasta un máximo de 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +93,7 @@ Representa una imagen.
 
 | Elemento                                                               | Descripción                                   |
 |-----------------------------------------------------------------------|-----------------------------------------------|
-| [**Imagen. origen**](windowsribbon-element-image-source.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**Image.Source**](windowsribbon-element-image-source.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -103,26 +103,26 @@ Representa una imagen.
 
 | Elemento                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|
-| [**Comando. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> |
-| [**Comando. LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         |
-| [**Comando. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> |
-| [**Comando. SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         |
+| [**Command.LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> |
+| [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         |
+| [**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> |
+| [**Command.SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse una o varias veces para cada elemento [**Command. SmallImages**](windowsribbon-element-command-smallimages.md), [**Command. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md), [**Command. LargeImages**](windowsribbon-element-command-largeimages.md)o [**Command. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md) .
+Puede producirse una o varias veces para cada [**elemento Command.SmallImages,**](windowsribbon-element-command-smallimages.md) [**Command.SmallHighContrastImages,**](windowsribbon-element-command-smallhighcontrastimages.md) [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)o [**Command.LargeHighContrastImages.**](windowsribbon-element-command-largehighcontrastimages.md)
 
-Cuando una colección de recursos de imagen diseñada para admitir la configuración específica de puntos por pulgada (PPP) se proporciona al marco de la cinta de opciones a través de un conjunto de elementos de **imagen** , el marco de trabajo usa la **imagen** con un valor de atributo *MinDPI* que coincide con la configuración de PPP de la pantalla actual.
+Cuando se proporciona una colección de recursos de imagen diseñados para admitir valores específicos de puntos de pantalla por  pulgada (ppp) al marco de la cinta de opciones a través de un conjunto de elementos **Image,** el marco usa la imagen con un valor de atributo *MinDPI* que coincide con la configuración de ppp de la pantalla actual.
 
-Si no se declara ningún elemento de **imagen** con un valor de *MinDPI* que coincida con la configuración de PPP de pantalla actual, el marco de trabajo selecciona la **imagen** que tiene el valor de *MinDPI* más cercano menor que la configuración de PPP de pantalla actual y escala el recurso de imagen hacia arriba. De lo contrario, si no se declara ningún elemento de **imagen** con un valor de atributo *MinDPI* inferior al valor de PPP de pantalla actual, el marco de trabajo selecciona el valor de *MinDPI* más cercano mayor que la configuración de PPP de pantalla actual y escala el recurso de imagen hacia abajo.
+Si no se declara ningún elemento **Image** con un valor *MinDPI* que  coincida con la configuración de ppp de la pantalla actual, el marco elige la imagen que tiene el valor *MinDPI* más próximo menos que el valor de ppp de la pantalla actual y escala verticalmente el recurso de imagen. De lo contrario, si no se declara ningún elemento **Image** con un valor de atributo *MinDPI* menor que el valor de ppp de pantalla actual, el marco elige el valor *MinDPI* más próximo mayor que el valor de ppp de pantalla actual y escala el recurso de imagen hacia abajo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado necesario para declarar, a través de un conjunto de elementos de **imagen** , una colección de recursos de imagen que están diseñados para admitir cuatro configuraciones de PPP de pantalla específicas.
+En el ejemplo de código siguiente se muestra el marcado necesario para declarar, a través de un conjunto de elementos **Image,** una colección de recursos de imagen diseñados para admitir cuatro configuraciones de ppp de pantalla específicas.
 
 
 ```XML
@@ -143,20 +143,16 @@ En el ejemplo de código siguiente se muestra el marcado necesario para declarar
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
-| Puede estar vacío                        | No        |
+* **Sistema mínimo admitido:** Windows 7
+* **Puede estar vacío:** No
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Especificar recursos de imagen de cinta](windowsribbon-imageformats.md)
+[Especificar recursos de imagen de cinta de opciones](windowsribbon-imageformats.md)
 </dt> </dl>
 
  
