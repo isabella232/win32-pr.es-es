@@ -3,7 +3,7 @@ title: Elemento ControlNameMap
 description: Representa un contenedor para los nombres de control en una plantilla de diseño SizeDefinition personalizada.
 ms.assetid: b4bceb90-a9a3-42d7-a85b-bf6e4e02784b
 keywords:
-- ControlNameMap cinta de opciones de Windows
+- ControlNameMap, elemento de la cinta de opciones de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ca5338978be7f9ddf3432cbe1a0fb8d243d8c00
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 42654af7f81730d01f9c699de7041ba24be185e9
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904111"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442916"
 ---
-# <a name="controlnamemap-element"></a><span data-ttu-id="ddfc1-104">Elemento ControlNameMap</span><span class="sxs-lookup"><span data-stu-id="ddfc1-104">ControlNameMap element</span></span>
+# <a name="controlnamemap-element"></a><span data-ttu-id="848a8-104">Elemento ControlNameMap</span><span class="sxs-lookup"><span data-stu-id="848a8-104">ControlNameMap element</span></span>
 
-<span data-ttu-id="ddfc1-105">Representa un contenedor para los nombres de control en una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada.</span><span class="sxs-lookup"><span data-stu-id="ddfc1-105">Represents a container for control names in a custom [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template.</span></span>
+<span data-ttu-id="848a8-105">Representa un contenedor para los nombres de control en una [**plantilla de diseño SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada.</span><span class="sxs-lookup"><span data-stu-id="848a8-105">Represents a container for control names in a custom [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="ddfc1-106">Uso</span><span class="sxs-lookup"><span data-stu-id="ddfc1-106">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="848a8-106">Uso</span><span class="sxs-lookup"><span data-stu-id="848a8-106">Usage</span></span>
 
 ``` syntax
 <ControlNameMap>
@@ -32,39 +32,39 @@ ms.locfileid: "103904111"
 </ControlNameMap>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="ddfc1-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="ddfc1-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="848a8-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="848a8-107">Attributes</span></span>
 
-<span data-ttu-id="ddfc1-108">No hay atributos.</span><span class="sxs-lookup"><span data-stu-id="ddfc1-108">There are no attributes.</span></span>
+<span data-ttu-id="848a8-108">No hay atributos.</span><span class="sxs-lookup"><span data-stu-id="848a8-108">There are no attributes.</span></span>
 
-## <a name="child-elements"></a><span data-ttu-id="ddfc1-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ddfc1-109">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="848a8-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="848a8-109">Child elements</span></span>
 
 
 
-| <span data-ttu-id="ddfc1-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="ddfc1-110">Element</span></span>                                                                                 | <span data-ttu-id="ddfc1-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="ddfc1-111">Description</span></span>                                        |
+| <span data-ttu-id="848a8-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="848a8-110">Element</span></span>                                                                                 | <span data-ttu-id="848a8-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="848a8-111">Description</span></span>                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [<span data-ttu-id="ddfc1-112">**ControlNameDefinition**</span><span class="sxs-lookup"><span data-stu-id="ddfc1-112">**ControlNameDefinition**</span></span>](windowsribbon-element-controlnamedefinition.md)<br/> | <span data-ttu-id="ddfc1-113">Puede producirse una o varias veces</span><span class="sxs-lookup"><span data-stu-id="ddfc1-113">May occur one or more times</span></span><br/> <br/> |
+| [<span data-ttu-id="848a8-112">**ControlNameDefinition**</span><span class="sxs-lookup"><span data-stu-id="848a8-112">**ControlNameDefinition**</span></span>](windowsribbon-element-controlnamedefinition.md)<br/> | <span data-ttu-id="848a8-113">Puede producirse una o varias veces</span><span class="sxs-lookup"><span data-stu-id="848a8-113">May occur one or more times</span></span><br/> <br/> |
 
 
 
-## <a name="parent-elements"></a><span data-ttu-id="ddfc1-114">Elementos primarios</span><span class="sxs-lookup"><span data-stu-id="ddfc1-114">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="848a8-114">Elementos primarios</span><span class="sxs-lookup"><span data-stu-id="848a8-114">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="ddfc1-115">Elemento</span><span class="sxs-lookup"><span data-stu-id="ddfc1-115">Element</span></span>                                                                   |
+| <span data-ttu-id="848a8-115">Elemento</span><span class="sxs-lookup"><span data-stu-id="848a8-115">Element</span></span>                                                                   |
 |---------------------------------------------------------------------------|
-| [<span data-ttu-id="ddfc1-116">**SizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="ddfc1-116">**SizeDefinition**</span></span>](windowsribbon-element-sizedefinition.md)<br/> |
+| [<span data-ttu-id="848a8-116">**SizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="848a8-116">**SizeDefinition**</span></span>](windowsribbon-element-sizedefinition.md)<br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="ddfc1-117">Observaciones</span><span class="sxs-lookup"><span data-stu-id="ddfc1-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="848a8-117">Comentarios</span><span class="sxs-lookup"><span data-stu-id="848a8-117">Remarks</span></span>
 
-<span data-ttu-id="ddfc1-118">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ddfc1-118">Optional.</span></span>
+<span data-ttu-id="848a8-118">Opcional.</span><span class="sxs-lookup"><span data-stu-id="848a8-118">Optional.</span></span>
 
-<span data-ttu-id="ddfc1-119">Puede aparecer como máximo una vez por cada elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="ddfc1-119">May occur at most once for each [**SizeDefinition**](windowsribbon-element-sizedefinition.md) element.</span></span>
+<span data-ttu-id="848a8-119">Puede producirse como máximo una vez para cada [**elemento SizeDefinition.**](windowsribbon-element-sizedefinition.md)</span><span class="sxs-lookup"><span data-stu-id="848a8-119">May occur at most once for each [**SizeDefinition**](windowsribbon-element-sizedefinition.md) element.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ddfc1-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="ddfc1-120">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="848a8-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="848a8-120">Examples</span></span>
 
-<span data-ttu-id="ddfc1-121">En el ejemplo de código siguiente se muestra el marcado básico de una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con un elemento **ControlNameMap** .</span><span class="sxs-lookup"><span data-stu-id="ddfc1-121">The following code example demonstrates the basic markup for a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template with a **ControlNameMap** element.</span></span>
+<span data-ttu-id="848a8-121">En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con un **elemento ControlNameMap.**</span><span class="sxs-lookup"><span data-stu-id="848a8-121">The following code example demonstrates the basic markup for a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template with a **ControlNameMap** element.</span></span>
 
 
 ```XML
@@ -154,22 +154,18 @@ ms.locfileid: "103904111"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="ddfc1-122">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="ddfc1-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="848a8-122">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="848a8-122">Element information</span></span>
+
+* <span data-ttu-id="848a8-123">**Sistema mínimo admitido:** Windows 7</span><span class="sxs-lookup"><span data-stu-id="848a8-123">**Minimum supported system**: Windows 7</span></span>
+* <span data-ttu-id="848a8-124">**Puede estar vacío:** No</span><span class="sxs-lookup"><span data-stu-id="848a8-124">**Can be empty**: No</span></span>
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| <span data-ttu-id="ddfc1-123">Sistema mínimo compatible</span><span class="sxs-lookup"><span data-stu-id="ddfc1-123">Minimum supported system</span></span><br/> | <span data-ttu-id="ddfc1-124">Windows 7</span><span class="sxs-lookup"><span data-stu-id="ddfc1-124">Windows 7</span></span> |
-| <span data-ttu-id="ddfc1-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ddfc1-125">Can be empty</span></span>                        | <span data-ttu-id="ddfc1-126">No</span><span class="sxs-lookup"><span data-stu-id="ddfc1-126">No</span></span>        |
-
-
-
-## <a name="see-also"></a><span data-ttu-id="ddfc1-127">Consulte también</span><span class="sxs-lookup"><span data-stu-id="ddfc1-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="848a8-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="848a8-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ddfc1-128">Personalización de una cinta a través de definiciones de tamaño y directivas de escalado</span><span class="sxs-lookup"><span data-stu-id="ddfc1-128">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
+[<span data-ttu-id="848a8-126">Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado</span><span class="sxs-lookup"><span data-stu-id="848a8-126">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
 </dt> </dl>
 
  

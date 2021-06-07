@@ -10,32 +10,34 @@
           href: event-tracing-sessions.md
         - name: Controladores de dispositivos
           href: device-drivers.md
-    - name: Usar el seguimiento de eventos
+    - name: Uso del seguimiento de eventos
       href: using-event-tracing.md
       items:
         - name: Controlar sesiones de seguimiento de eventos
           href: controlling-event-tracing-sessions.md
           items:
-            - name: Configurar e iniciar una sesión de seguimiento de eventos
+            - name: Configuración e inicio de una sesión de seguimiento de eventos
               href: configuring-and-starting-an-event-tracing-session.md
               items:
                 - name: Ejemplo que crea una sesión y habilita un proveedor clásico o basado en manifiestos
                   href: example-that-creates-a-session-and-enables-a-manifest-based-provider.md
-            - name: Configurar e iniciar una sesión de SystemTraceProvider
+            - name: Configuración e inicio de una sesión de SystemTraceProvider
               href: configuring-and-starting-a-systemtraceprovider-session.md
               items:
-                - name: Configuración e inicio de la sesión del registrador del kernel de NT
+                - name: Configuración e inicio de la sesión del registrador de kernel de NT
                   href: configuring-and-starting-the-nt-kernel-logger-session.md
-            - name: Configurar e iniciar una sesión de registrador automático
+                - name: Proveedores de sistemas
+                  href: system-providers.md
+            - name: Configuración e inicio de una sesión de Registrador automático
               href: configuring-and-starting-an-autologger-session.md
               items:
-                - name: Configurar e iniciar la sesión del registrador global
+                - name: Configuración e inicio de la sesión de registrador global
                   href: configuring-and-starting-the-global-logger-session.md
-            - name: Configurar e iniciar una sesión de registrador privado
+            - name: Configuración e inicio de una sesión de registrador privado
               href: configuring-and-starting-a-private-logger-session.md
             - name: Actualizar una sesión de seguimiento de eventos
               href: updating-an-event-tracing-session.md
-            - name: Recuperación de datos de seguimiento de eventos adicionales
+            - name: Recuperación de datos adicionales de seguimiento de eventos
               href: retrieving-additional-event-tracing-data.md
         - name: Proporcionar eventos
           href: providing-events.md
@@ -45,32 +47,32 @@
               items:
                 - name: Escribir eventos basados en manifiestos
                   href: writing-manifest-based-events.md
-                - name: Escritura de eventos MOF (clásico)
+                - name: Escribir eventos MOF (clásico)
                   href: tracing-events.md
-                - name: Escribir eventos WPP
+                - name: Escribir eventos de WPP
                   href: windows-software-trace-preprocessor.md
-                - name: Obtener un proveedor y un GUID de clase
+                - name: Obtener un GUID de proveedor y clase
                   href: obtaining-a-provider-and-class-guid.md
-                - name: Rasgos de proveedor
+                - name: Rasgos del proveedor
                   href: provider-traits.md
-            - name: Escritura de eventos relacionados en un escenario de un extremo a otro
+            - name: Escribir eventos relacionados en un escenario de un extremo a otro
               href: writing-related-events-in-an-end-to-end-scenario.md
               items:
                 - name: Escribir eventos relacionados en un proveedor basado en manifiestos
                   href: writing-related-events-in-a-manifest-base-provider.md
-                - name: Escritura de eventos relacionados en un proveedor clásico
+                - name: Escribir eventos relacionados en un proveedor clásico
                   href: tracing-event-instances.md
-            - name: Publicar el esquema de eventos
+            - name: Publicación del esquema de eventos
               href: publishing-your-event-schema.md
               items:
-                - name: Publicar el esquema de eventos para un proveedor basado en manifiestos
+                - name: Publicación del esquema de eventos para un proveedor basado en manifiestos
                   href: publishing-your-event-schema-for-a-manifest-base-provider.md
-                - name: Publicar el esquema de eventos para un proveedor clásico
+                - name: Publicación del esquema de eventos para un proveedor clásico
                   href: publishing-your-event-schema-for-a-classic-provider.md
-        - name: Consumir eventos
+        - name: Consumo de eventos
           href: consuming-events.md
           items:
-            - name: Recuperar datos de eventos
+            - name: Recuperación de datos de eventos
               href: retrieving-event-data.md
               items:
                 - name: Información general sobre metadatos de eventos
@@ -78,9 +80,9 @@
                 - name: Recuperación de datos de eventos mediante TDH
                   href: retrieving-event-data-using-tdh.md
                   items:
-                    - name: Usar TdhFormatProperty para consumir datos de eventos
+                    - name: Uso de TdhFormatProperty para consumir datos de eventos
                       href: using-tdhformatproperty-to-consume-event-data.md
-                    - name: Usar TdhGetProperty para consumir datos de eventos
+                    - name: Uso de TdhGetProperty para consumir datos de eventos
                       href: using-tdhgetproperty-to-consume-event-data.md
                     - name: Enumeración de proveedores
                       href: enumerating-providers.md
@@ -88,7 +90,7 @@
                       href: retrieving-event-metadata.md
                 - name: Recuperación de datos de eventos mediante MOF
                   href: retrieving-event-data-using-mof.md
-            - name: Usar eventos para calcular el uso de CPU
+            - name: Uso de eventos para calcular el uso de CPU
               href: using-events-to-calculate-cpu-usage.md
     - name: Referencia de seguimiento de eventos
       href: event-tracing-reference.md
@@ -96,7 +98,7 @@
         - name: Constantes de seguimiento de eventos
           href: event-tracing-constants.md
           items:
-            - name: Constantes del registrador del kernel de NT
+            - name: Constantes del registrador de kernel nt
               href: nt-kernel-logger-constants.md
             - name: Constantes de modo de registro
               href: logging-mode-constants.md
@@ -142,7 +144,7 @@
         - name: Clases MOF de seguimiento de eventos
           href: event-tracing-mof-classes.md
           items:
-            - name: Eventtracer
+            - name: EventTrace
               href: eventtrace.md
               items:
                 - name: MSNT_SystemTrace
@@ -161,7 +163,7 @@
                           href: alpc-wait-for-new-message.md
                         - name: ALPC_Wait_For_Reply
                           href: alpc-wait-for-reply.md
-                    - name: Desmontaje
+                    - name: DiskIo
                       href: diskio.md
                       items:
                         - name: DiskIo_TypeGroup1
@@ -369,7 +371,7 @@
                           href: systemconfig-v0-services.md
                         - name: SystemConfig_V0_Video
                           href: systemconfig-v0-video.md
-                    - name: Luego
+                    - name: Tcpip
                       href: tcpip.md
                       items:
                         - name: TcpIp_Fail
