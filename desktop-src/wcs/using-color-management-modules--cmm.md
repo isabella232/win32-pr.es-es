@@ -1,35 +1,35 @@
 ---
 title: Uso de módulos de administración del color (CMM)
-description: Los módulos de administración de color (CMMs) son módulos de código WCS que usan la información de perfiles de dispositivo para realizar la conversión de colores y la asignación de colores.
+description: Los módulos de administración de colores (CMM) son módulos de código WCS que usan la información de los perfiles de dispositivo para realizar la conversión de colores y la asignación de colores.
 ms.assetid: df119e1a-b6f5-40a3-8852-8a57b21483d0
 keywords:
-- Sistema de color de Windows (WCS), módulo de administración de color (CMM)
-- WCS (sistema de colores de Windows), módulo de administración del color (CMM)
-- Administración del color de imagen, módulo de administración del color (CMM)
-- Administración del color, módulo de administración del color (CMM)
-- colores, módulo de administración del color (CMM)
-- Módulo de administración del color (CMM)
-- CMM (módulo de administración del color)
+- Sistema de colores de Windows (WCS),Módulo de administración de colores (CMM)
+- WCS (Sistema de colores de Windows),Módulo de administración de colores (CMM)
+- administración de colores de imagen,Módulo de administración de colores (CMM)
+- administración de colores,Módulo de administración de colores (CMM)
+- colors,Módulo de administración de colores (CMM)
+- Módulo de administración de colores (CMM)
+- CMM (módulo de administración de colores)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 518558305639f0699358f22fb3544698741cfedf
-ms.sourcegitcommit: 9bf844f41bd6451b8508d93e722e88a43e913b56
+ms.openlocfilehash: 9b12a087bfc972ffcbd7f9fb083a9d73d669f134
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "105721157"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386904"
 ---
-# <a name="using-color-management-modules-cmm"></a><span data-ttu-id="5b7af-110">Uso de módulos de administración del color (CMM)</span><span class="sxs-lookup"><span data-stu-id="5b7af-110">Using Color Management Modules (CMM)</span></span>
+# <a name="using-color-management-modules-cmm"></a><span data-ttu-id="97c18-110">Uso de módulos de administración del color (CMM)</span><span class="sxs-lookup"><span data-stu-id="97c18-110">Using Color Management Modules (CMM)</span></span>
 
-<span data-ttu-id="5b7af-111">Los módulos de administración de color (CMMs) son módulos de código WCS que usan la información de perfiles de dispositivo para realizar la conversión de colores y la asignación de colores.</span><span class="sxs-lookup"><span data-stu-id="5b7af-111">Color Management Modules (CMMs) are modules of WCS code that use the information in device profiles to perform color conversion and color mapping.</span></span> <span data-ttu-id="5b7af-112">Los desarrolladores de aplicaciones no deben tener que implementar CMMs.</span><span class="sxs-lookup"><span data-stu-id="5b7af-112">Application developers should not have to implement CMMs.</span></span> <span data-ttu-id="5b7af-113">Microsoft proporciona la CMM predeterminada.</span><span class="sxs-lookup"><span data-stu-id="5b7af-113">Microsoft provides the default CMM.</span></span> <span data-ttu-id="5b7af-114">Sin embargo, si escribe software que requiere el uso de algoritmos de conversión de colores y de asignación de colores especializados, puede crear uno.</span><span class="sxs-lookup"><span data-stu-id="5b7af-114">However, if you do write software that requires the use of specialized color conversion and color mapping algorithms, you may create one.</span></span>
+<span data-ttu-id="97c18-111">Los módulos de administración de colores (CMM) son módulos de código WCS que usan la información de los perfiles de dispositivo para realizar la conversión de colores y la asignación de colores.</span><span class="sxs-lookup"><span data-stu-id="97c18-111">Color Management Modules (CMMs) are modules of WCS code that use the information in device profiles to perform color conversion and color mapping.</span></span> <span data-ttu-id="97c18-112">Los desarrolladores de aplicaciones no deben tener que implementar CMM.</span><span class="sxs-lookup"><span data-stu-id="97c18-112">Application developers should not have to implement CMMs.</span></span> <span data-ttu-id="97c18-113">Microsoft proporciona el CMM predeterminado.</span><span class="sxs-lookup"><span data-stu-id="97c18-113">Microsoft provides the default CMM.</span></span> <span data-ttu-id="97c18-114">Sin embargo, si escribe software que requiere el uso de algoritmos especializados de conversión de colores y asignación de colores, puede crear uno.</span><span class="sxs-lookup"><span data-stu-id="97c18-114">However, if you do write software that requires the use of specialized color conversion and color mapping algorithms, you may create one.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="5b7af-115">Los puntos de entrada de CMM *no* son funciones de API y las aplicaciones no deben llamarlos.</span><span class="sxs-lookup"><span data-stu-id="5b7af-115">CMM entry points are *not* API functions and should not be called by applications.</span></span>
+> <span data-ttu-id="97c18-115">Los puntos de entrada de CMM *no son* funciones de API y las aplicaciones no deben llamar a ellos.</span><span class="sxs-lookup"><span data-stu-id="97c18-115">CMM entry points are *not* API functions and should not be called by applications.</span></span>
 
  
 
-<span data-ttu-id="5b7af-116">Cuando se instalan CMMs, el programa de instalación los registra en el registro de Windows.</span><span class="sxs-lookup"><span data-stu-id="5b7af-116">When CMMs are installed, the installation program registers them in the Windows registry.</span></span> <span data-ttu-id="5b7af-117">Las aplicaciones pueden enumerar el CMMs registrado y seleccionar uno mediante la función [**SelectCMM**](/windows/win32/api/icm/nf-icm-selectcmm) .</span><span class="sxs-lookup"><span data-stu-id="5b7af-117">Applications can enumerate the registered CMMs and select one using the [**SelectCMM**](/windows/win32/api/icm/nf-icm-selectcmm) function.</span></span> <span data-ttu-id="5b7af-118">En la aplicación de ejemplo siguiente se muestra cómo enumerar todas las CMMs registradas.</span><span class="sxs-lookup"><span data-stu-id="5b7af-118">The following sample application demonstrates how to enumerate all registered CMMs.</span></span>
+<span data-ttu-id="97c18-116">Cuando se instalan las CMM, el programa de instalación los registra en el Registro de Windows.</span><span class="sxs-lookup"><span data-stu-id="97c18-116">When CMMs are installed, the installation program registers them in the Windows registry.</span></span> <span data-ttu-id="97c18-117">Las aplicaciones pueden enumerar las CMM registradas y seleccionar una mediante la [**función SelectCMM.**](/windows/win32/api/icm/nf-icm-selectcmm)</span><span class="sxs-lookup"><span data-stu-id="97c18-117">Applications can enumerate the registered CMMs and select one using the [**SelectCMM**](/windows/win32/api/icm/nf-icm-selectcmm) function.</span></span> <span data-ttu-id="97c18-118">En la siguiente aplicación de ejemplo se muestra cómo enumerar todas las CMM registradas.</span><span class="sxs-lookup"><span data-stu-id="97c18-118">The following sample application demonstrates how to enumerate all registered CMMs.</span></span>
 
 
 ```C++
@@ -55,11 +55,11 @@ _CRTAPI1 main (int argc, char *argv[])
 
     HANDLE hkCMM;
     DWORD dwErr = RegCreateKey(HKEY_LOCAL_MACHINE,
-                 gszICMatcher, &amp;hkCMM);
+                 gszICMatcher, &hkCMM);
     DWORD dwMaxName, dwMaxValue;
-    DWORD dwInfoErr = RegQueryInfoKey(&amp;hkCMM, NULL, NULL,
+    DWORD dwInfoErr = RegQueryInfoKey(&hkCMM, NULL, NULL,
                                 NULL, NULL, NULL, NULL, NULL,
-                                &amp;dwMaxName, &amp;dwMaxValue,
+                                &dwMaxName, &dwMaxValue,
                                 NULL, NULL);
     TCHAR chCMM[dwMaxName];
     ULONG cjCMM = sizeof(chCMM)/sizeof(chCMM[0]);
@@ -76,8 +76,8 @@ _CRTAPI1 main (int argc, char *argv[])
     {
         while (RegEnumValue(
                    hkCMM,dwNumCMM,chCMM,
-                   &amp;cjCMM,NULL,&amp;dwType,
-                   chCMMFile,&amp;cjCMMFile) == ERROR_SUCCESS)
+                   &cjCMM,NULL,&dwType,
+                   chCMMFile,&cjCMMFile) == ERROR_SUCCESS)
         {
             if (dwType == REG_SZ)
             {

@@ -13,7 +13,7 @@
               href: advantages-of-multitasking.md
             - name: Cuándo usar multitarea
               href: when-to-use-multitasking.md
-            - name: Consideraciones sobre multitarea
+            - name: Consideraciones de multitarea
               href: multitasking-considerations.md
         - name: Programación
           href: scheduling.md
@@ -201,7 +201,7 @@
           href: fibers.md
         - name: User-Mode programación
           href: user-mode-scheduling.md
-    - name: Uso de procesos y subprocesos
+    - name: Usar procesos y subprocesos
       href: using-processes-and-threads.md
       items:
         - name: Crear procesos
@@ -478,7 +478,7 @@
             - name: GetProcessVersion
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocessversion
             - name: GetProcessWorkingSetSize
-              href: /windows/desktop/api/WinBase/nf-winbase-getprocessworkingsetsize
+              href: /windows/desktop/api/memoryapi/nf-memoryapi-getprocessworkingsetsize
             - name: GetProcessWorkingSetSizeEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-getprocessworkingsetsizeex
             - name: GetProcessorSystemCycleTime
@@ -608,7 +608,7 @@
             - name: SetProcessShutdownParameters
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessshutdownparameters
             - name: SetProcessWorkingSetSize
-              href: /windows/desktop/api/WinBase/nf-winbase-setprocessworkingsetsize
+              href: /windows/desktop/api/memoryapi/nf-memoryapi-setprocessworkingsetsize
             - name: SetProcessWorkingSetSizeEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-setprocessworkingsetsizeex
             - name: SetProtectedPolicy

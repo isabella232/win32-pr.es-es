@@ -11,7 +11,7 @@
               href: adding-deleting-and-replacing-resources.md
             - name: Enumerar recursos
               href: enumerating-resources.md
-            - name: Buscar y cargar recursos
+            - name: Búsqueda y carga de recursos
               href: finding-and-loading-resources.md
             - name: Formatos de archivo de recursos
               href: resource-file-formats.md
@@ -44,7 +44,7 @@
                 - name: EnumResourceLanguagesEx
                   href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
                 - name: EnumResourceNames
-                  href: /windows/desktop/api/Winbase/nf-winbase-enumresourcenamesa
+                  href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesa
                 - name: EnumResourceNamesEx
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesexw
                 - name: EnumResourceTypes
@@ -87,7 +87,7 @@
                   href: cursordir.md
                 - name: CURSORSHAPE
                   href: /windows/win32/api/Winuser/ns-winuser-cursorshape
-                - name: ARRENDAMIENTO
+                - name: DIRENTRY
                   href: direntry.md
                 - name: FONTDIRENTRY
                   href: fontdirentry.md
@@ -121,17 +121,17 @@
                   href: resourceheader.md
             - name: Tipos de recursos
               href: resource-types.md
-    - name: Símbolos
+    - name: Carets
       href: carets.md
       items:
-        - name: Acerca de las intercalaciones
+        - name: Acerca de los carets
           href: about-carets.md
-        - name: Usar las intercalaciones
+        - name: Uso de los carets
           href: using-carets.md
-        - name: Referencia de símbolo de intercalación
+        - name: Referencia de caret
           href: caret-reference.md
           items:
-            - name: Funciones de símbolo de intercalación
+            - name: Funciones de caret
               href: caret-functions.md
               items:
                 - name: CreateCaret
@@ -228,7 +228,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex
                 - name: CreateIconIndirect
                   href: /windows/desktop/api/Winuser/nf-winuser-createiconindirect
-                - name: DestroyIcon
+                - name: Destroyicon
                   href: /windows/desktop/api/Winuser/nf-winuser-destroyicon
                 - name: DrawIcon
                   href: /windows/desktop/api/Winuser/nf-winuser-drawicon
@@ -254,7 +254,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex
                 - name: PrivateExtractIcons
                   href: /windows/desktop/api/Winuser/nf-winuser-privateextracticonsa
-            - name: Estructuras de iconos
+            - name: Estructuras de icono
               href: icon-structures.md
               items:
                 - name: ICONINFO
@@ -270,12 +270,12 @@
       items:
         - name: Acerca de los aceleradores de teclado
           href: about-keyboard-accelerators.md
-        - name: Usar aceleradores de teclado
+        - name: Uso de aceleradores de teclado
           href: using-keyboard-accelerators.md
-        - name: Referencia de acelerador de teclado
+        - name: Referencia del acelerador de teclado
           href: keyboard-accelerator-reference.md
           items:
-            - name: Funciones de acelerador de teclado
+            - name: Funciones del acelerador de teclado
               href: keyboard-accelerator-functions.md
               items:
                 - name: CopyAcceleratorTable
@@ -312,10 +312,10 @@
                   href: wm-syschar.md
                 - name: WM_SYSCOMMAND
                   href: wm-syscommand.md
-            - name: Estructuras de aceleradores de teclado
+            - name: Estructuras del acelerador de teclado
               href: keyboard-accelerator-structures.md
               items:
-                - name: FONÉTICA
+                - name: Accel
                   href: /windows/win32/api/Winuser/ns-winuser-accel
     - name: Menús
       href: menus.md
@@ -324,7 +324,7 @@
           href: about-menus.md
         - name: Uso de los menús
           href: using-menus.md
-        - name: Referencia de menú
+        - name: Referencia del menú
           href: menu-reference.md
           items:
             - name: Funciones de menú
@@ -461,7 +461,7 @@
       items:
         - name: Acerca de las cadenas
           href: about-strings.md
-        - name: Acerca de strsafe. h
+        - name: Acerca de Strsafe.h
           href: strsafe-ovw.md
         - name: Referencia de cadena
           href: string-reference.md
@@ -497,7 +497,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-ischarlowera
                 - name: IsCharUpper
                   href: /windows/desktop/api/Winuser/nf-winuser-ischaruppera
-                - name: Fall
+                - name: LoadString
                   href: /windows/desktop/api/Winuser/nf-winuser-loadstringa
                 - name: lstrcat
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcata
@@ -605,9 +605,9 @@
     - name: Información de versión
       href: version-information.md
       items:
-        - name: Información sobre la versión
+        - name: Acerca de la información de versión
           href: about-version-information.md
-        - name: Usar información de versión
+        - name: Uso de información de versión
           href: using-version-information.md
         - name: Referencia de información de versión
           href: version-information-reference.md
@@ -683,101 +683,101 @@
               href: preprocessor-operators.md
             - name: Directivas pragma
               href: pragma-directives.md
-            - name: Instrucciones de Resource-Definition
+            - name: Resource-Definition instrucciones
               href: resource-definition-statements.md
               items:
-                - name: Recurso de ACELERAdores
+                - name: Recurso ACCELERATORS
                   href: accelerators-resource.md
-                - name: Control AUTO3STATE
+                - name: AUTO3STATE (Control)
                   href: auto3state-control.md
-                - name: Autocheckbox (control)
+                - name: AUTOCHECKBOX (Control)
                   href: autocheckbox-control.md
-                - name: Control autoradiobutton
+                - name: AUTORADIOBUTTON Control
                   href: autoradiobutton-control.md
-                - name: Recurso de mapa de bits
+                - name: Recurso BITMAP
                   href: bitmap-resource.md
-                - name: CAPTION (instrucción)
+                - name: CAPTION (Instrucción)
                   href: caption-statement.md
-                - name: Instrucción CHARACTERISTICS
+                - name: CHARACTERISTICS (Instrucción)
                   href: characteristics-statement.md
-                - name: CHECKBOX (control)
+                - name: CHECKBOX Control
                   href: checkbox-control.md
-                - name: CLASS (instrucción)
+                - name: CLASS (Instrucción)
                   href: class-statement.md
-                - name: COMBOBOX (control)
+                - name: COMBOBOX Control
                   href: combobox-control.md
-                - name: Control CONTROL
+                - name: CONTROL Control
                   href: control-control.md
-                - name: Control CTEXT
+                - name: CTEXT (Control)
                   href: ctext-control.md
-                - name: Recurso de CURSOR
+                - name: Recurso CURSOR
                   href: cursor-resource.md
-                - name: Control DEFPUSHBUTTON
+                - name: DEFPUSHBUTTON (Control)
                   href: defpushbutton-control.md
-                - name: Recurso de cuadro de diálogo
+                - name: Recurso DIALOG
                   href: dialog-resource.md
                 - name: Recurso DIALOGEX
                   href: dialogex-resource.md
-                - name: EDITTEXT (control)
+                - name: EDITTEXT (Control)
                   href: edittext-control.md
-                - name: ExStyle (instrucción)
+                - name: EXSTYLE (Instrucción)
                   href: exstyle-statement.md
-                - name: Recurso de fuente
+                - name: Recurso FONT
                   href: font-resource.md
-                - name: FONT (instrucción)
+                - name: Font (Instrucción)
                   href: font-statement.md
-                - name: GROUPBOX (control)
+                - name: GROUPBOX (Control)
                   href: groupbox-control.md
                 - name: Recurso HTML
                   href: html-resource.md
-                - name: Recurso de icono
+                - name: Recurso ICON
                   href: icon-resource.md
-                - name: Control de icono
+                - name: ICON (Control)
                   href: icon-control.md
-                - name: LANGUAGE (instrucción)
+                - name: LANGUAGE (Instrucción)
                   href: language-statement.md
-                - name: LISTBOX (control)
+                - name: LISTBOX (Control)
                   href: listbox-control.md
-                - name: Control LTEXT
+                - name: LTEXT (Control)
                   href: ltext-control.md
-                - name: Recurso de menú
+                - name: Recurso MENU
                   href: menu-resource.md
-                - name: Instrucción de menú
+                - name: MENU (Instrucción)
                   href: menu-statement.md
                 - name: Recurso MENUEX
                   href: menuex-resource.md
-                - name: MENUITEM (instrucción)
+                - name: MENUITEM (Instrucción)
                   href: menuitem-statement.md
                 - name: Recurso MESSAGETABLE
                   href: messagetable-resource.md
                 - name: Recurso POPUP
                   href: popup-resource.md
-                - name: Control PUSHBOX
+                - name: PUSHBOX Control
                   href: pushbox-control.md
-                - name: Control PUSHBUTTON
+                - name: PUSHBUTTON Control
                   href: pushbutton-control.md
-                - name: RADIOBUTTON (control)
+                - name: RADIOBUTTON (Control)
                   href: radiobutton-control.md
                 - name: Recurso RCDATA
                   href: rcdata-resource.md
-                - name: Control RTEXT
+                - name: RTEXT Control
                   href: rtext-control.md
-                - name: SCROLLBAR (control)
+                - name: SCROLLBAR Control
                   href: scrollbar-control.md
-                - name: Control STATE3
+                - name: State3 (Control)
                   href: state3-control.md
                 - name: Recurso STRINGTABLE
                   href: stringtable-resource.md
-                - name: STYLE (instrucción)
+                - name: STYLE (Instrucción)
                   href: style-statement.md
-                - name: User-Defined recurso
+                - name: User-Defined resource
                   href: user-defined-resource.md
-                - name: VERSION (instrucción)
+                - name: VERSION (Instrucción)
                   href: version-statement.md
                 - name: Recurso VERSIONINFO
                   href: versioninfo-resource.md
                   items:
-                    - name: Bloque StringFileInfo
+                    - name: StringFileInfo (bloque)
                       href: stringfileinfo-block.md
                     - name: Bloque VarFileInfo
                       href: varfileinfo-block.md
@@ -785,23 +785,23 @@
                   href: common-control-parameters.md
                 - name: Atributos de recursos comunes
                   href: common-resource-attributes.md
-            - name: Archivo de Resource-Definition de ejemplo
+            - name: Archivo de Resource-Definition ejemplo
               href: sample-resource-definition-file.md
         - name: 'Using RC (The RC Command Line) [Uso de RC (la línea de comandos de RC)]'
           href: using-rc-the-rc-command-line-.md
           items:
             - name: Definir nombres para el preprocesador
               href: defining-names-for-the-preprocessor.md
-            - name: Cambiar el nombre del archivo de recursos compilados
+            - name: Cambiar el nombre del archivo de recursos compilado
               href: renaming-the-compiled-resource-file.md
-            - name: Buscar archivos
+            - name: Búsqueda de archivos
               href: searching-for-files.md
             - name: Mostrar mensajes de progreso
               href: displaying-progress-messages.md
-            - name: RC mensajes de diagnóstico
+            - name: Mensajes de diagnóstico rc
               href: rc-diagnostic-messages.md
               items:
-                - name: Un
+                - name: A
                   href: a.md
                 - name: B
                   href: b.md
@@ -813,7 +813,7 @@
                   href: f.md
                 - name: I
                   href: i.md
-                - name: 'N'
+                - name: 'No'
                   href: n.md
                 - name: O
                   href: o.md
@@ -830,47 +830,47 @@
     - name: Referencia de API de PRI
       href: pri-indexing-reference.md
       items:
-        - name: MrmCreateConfig función)
+        - name: Función MrmCreateConfig
           href: mrmcreateconfig.md
-        - name: MrmCreateConfigInMemory función)
+        - name: Función MrmCreateConfigInMemory
           href: mrmcreateconfiginmemory.md
-        - name: MrmCreateResourceFile función)
+        - name: Función MrmCreateResourceFile
           href: mrmcreateresourcefile.md
-        - name: MrmCreateResourceFileInMemory función)
+        - name: Función MrmCreateResourceFileInMemory
           href: mrmcreateresourcefileinmemory.md
-        - name: MrmCreateResourceIndexer función)
+        - name: Función MrmCreateResourceIndexer
           href: mrmcreateresourceindexer.md
-        - name: MrmCreateResourceIndexerFromPreviousPriData función)
+        - name: Función MrmCreateResourceIndexerFromPreviousPriData
           href: mrmcreateresourceindexerfrompreviouspridata-.md
-        - name: MrmCreateResourceIndexerFromPreviousPriFile función)
+        - name: Función MrmCreateResourceIndexerFromPreviousPriFile
           href: mrmcreateresourceindexerfrompreviousprifile.md
-        - name: MrmCreateResourceIndexerFromPreviousSchemaData función)
+        - name: Función MrmCreateResourceIndexerFromPreviousSchemaData
           href: mrmcreateresourceindexerfrompreviousschemadata.md
-        - name: MrmCreateResourceIndexerFromPreviousSchemaFile función)
+        - name: Función MrmCreateResourceIndexerFromPreviousSchemaFile
           href: mrmcreateresourceindexerfrompreviousschemafile.md
-        - name: MrmDestroyIndexerAndMessages función)
+        - name: Función MrmDestroyIndexerAndMessages
           href: mrmdestroyindexerandmessages.md
-        - name: MrmDumpPriFile función)
+        - name: Función MrmDumpPriFile
           href: mrmdumpprifile.md
-        - name: MrmDumpPriFileInMemory función)
+        - name: Función MrmDumpPriFileInMemory
           href: mrmdumpprifileinmemory.md
-        - name: MrmDumpPriDataInMemory función)
+        - name: Función MrmDumpPriDataInMemory
           href: mrmdumppridatainmemory.md
-        - name: MrmFreeMemory función)
+        - name: Función MrmFreeMemory
           href: mrmfreememory.md
-        - name: MrmIndexEmbeddedData función)
+        - name: Función MrmIndexEmbeddedData
           href: mrmindexembeddeddata.md
-        - name: MrmIndexFile función)
+        - name: Función MrmIndexFile
           href: mrmindexfile.md
-        - name: MrmIndexFileAutoQualifiers función)
+        - name: Función MrmIndexFileAutoQualifiers
           href: mrmindexfileautoqualifiers.md
-        - name: MrmIndexResourceContainerAutoQualifiers función)
+        - name: Función MrmIndexResourceContainerAutoQualifiers
           href: mrmindexresourcecontainerautoqualifiers.md
-        - name: MrmIndexString función)
+        - name: Función MrmIndexString
           href: mrmindexstring.md
-        - name: MrmPeekResourceIndexerMessages función)
+        - name: Función MrmPeekResourceIndexerMessages
           href: mrmpeekresourceindexermessages.md
-        - name: Estructura MrmResourceIndexerHandle
+        - name: MrmResourceIndexerHandle (estructura)
           href: mrmresourceindexerhandle.md
         - name: Estructura MrmResourceIndexerMessage
           href: mrmresourceindexermessage.md
@@ -882,5 +882,5 @@
           href: mrmpackagingoptions.md
         - name: Enumeración MrmPlatformVersion
           href: mrmplatformversion.md
-        - name: Enumeración MrmResourceIndexerMessageSeverity
+        - name: MrmResourceIndexerMessageSeverity (enumeración)
           href: mrmresourceindexermessageseverity.md
