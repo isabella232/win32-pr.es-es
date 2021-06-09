@@ -1,7 +1,7 @@
 - name: Artículos técnicos
   href: dx9-technical-articles.md
   items:
-    - name: programación de 64 bits para desarrolladores de juegos
+    - name: Programación de 64 bits para desarrolladores de juegos
       href: sixty-four-bit-programming-for-game-developers.md
     - name: Firma de Authenticode para desarrolladores de juegos
       href: authenticode-signing-for-game-developers.md
@@ -15,23 +15,23 @@
       href: common-techniques-to-improve-shadow-depth-maps.md
     - name: 'Análisis del volcado de memoria '
       href: crash-dump-analysis.md
-    - name: Depurar con símbolos
+    - name: Depuración con símbolos
       href: debugging-with-symbols.md
     - name: Preguntas más frecuentes sobre Direct3D 10
-      href: direct3d10-frequently-asked-questions.md
+      href: direct3d10-frequently-asked-questions.yml
     - name: Preguntas más frecuentes sobre DirectX
-      href: directx-9-frequently-asked-questions.md
+      href: directx-9-frequently-asked-questions.yml
     - name: Instalación de DirectX para desarrolladores de juegos
       href: directx-setup-for-game-developers.md
     - name: Deshabilitar teclas de método abreviado en juegos
       href: disabling-shortcut-keys-in-games.md
     - name: Control del tiempo de juego y procesadores de varios núcleos
       href: game-timing-and-multicore-processors.md
-    - name: Juegos para requisitos técnicos de Windows
+    - name: Requisitos técnicos de Juegos para Windows
       href: games-for-windows-technical-requirements-1-1-0006.md
     - name: Juegos para casos de prueba de Windows
       href: games-for-windows-test-requirements-1-0-0006.md
-    - name: Juegos con cuentas de usuario de Least-Privileged
+    - name: Juegos con cuentas Least-Privileged usuario
       href: gaming-with-least-privileged-user-accounts.md
     - name: Instalación a petición de juegos
       href: install-on-demand-for-games.md
@@ -39,25 +39,25 @@
       href: installation-and-maintenance-of-games.md
     - name: Consideraciones de programación sin bloqueo para Xbox 360 y Microsoft Windows
       href: lockless-programming.md
-    - name: Prácticas recomendadas de instalación para juegos en línea multijugador masivo
+    - name: Procedimientos recomendados de instalación para juegos en línea multijugador masivos
       href: mmo-installation-best-practices.md
     - name: Instalación y uso de editores de métodos de entrada
       href: installing-and-using-input-method-editors.md
-    - name: Introducción a la experiencia de 10 pies para los desarrolladores de juegos de Windows
+    - name: Introducción a la experiencia de 10 pies para desarrolladores de juegos de Windows
       href: introduction-to-the-10-foot-experience-for-windows-game-developers.md
-    - name: 'Acceso a juegos de vídeo: justificaciones de negocio y consideraciones de diseño'
+    - name: 'Hacer accesibles los juegos de vídeo: justificaciones empresariales y consideraciones de diseño'
       href: accessibility-best-practices.md
-    - name: Optimizar el rendimiento de DVD para juegos de Windows
+    - name: Optimización del rendimiento de DVD para juegos de Windows
       href: optimizing-dvd-performance-for-windows-games.md
-    - name: 'Aplicar revisiones al software de juegos en Windows XP, Windows Vista y Windows 7'
+    - name: 'Aplicación de revisiones a Game Software en Windows XP, Windows Vista y Windows 7'
       href: patching-methods-in-windows-xp-and-vista.md
-    - name: Procedimientos recomendados para la administración de recursos
+    - name: Procedimientos recomendados de administración de recursos
       href: resource-management-best-practices.md
     - name: Simplificar la instalación de juegos
       href: simplifying-game-installation.md
-    - name: Sacar partido de High-Definition movimiento del mouse
+    - name: Aprovechar las ventajas del movimiento High-Definition mouse
       href: taking-advantage-of-high-dpi-mouse-movement.md
-    - name: La canalización de transformación de Direct3D
+    - name: Canalización de transformación de Direct3D
       href: the-direct3d-transformation-pipeline.md
     - name: Principales problemas de los títulos de Windows
       href: top-issues-for-windows-titles.md

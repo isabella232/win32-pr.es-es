@@ -1,0 +1,166 @@
+### YamlMime:FAQ
+metadata:
+  title: 'Preguntas frecuentes de aceleración de GPU en WSL '
+  description: Preguntas más frecuentes sobre la aceleración de GPU en Subsistema de Windows para Linux
+  ms.topic: article
+  ms.date: 09/28/2020
+  ms.openlocfilehash: 108fefe5d5aa9f2beef9c7dc1e97d9abf406c6f1
+  ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 06/09/2021
+  ms.locfileid: "111852748"
+title: Preguntas más frecuentes
+summary: ''
+sections:
+- name: Omitido
+  questions:
+  - question: Cómo habilitar la aceleración de DirectML?
+    answer: "El dispositivo DirectML está habilitado de forma predeterminada, suponiendo que tenga disponible una GPU de DirectX 12 adecuada. Las operaciones de TensorFlow se asignarán automáticamente al dispositivo DirectML si es posible. \n\nSi tiene problemas para determinar si el modelo se ejecuta mediante la aceleración de DirectML o no, puede colocar como la primera instrucción del programa y TensorFlow imprimirá la información de ubicación del dispositivo en la `tf.debugging.set_log_device_placement(True)` consola.\n"
+  - question: Cómo controlar la colocación de dispositivos de operaciones específicas?
+    answer: "Al igual que con cualquier otro dispositivo (consulte [TensorFlow Guide: Use a GPU](https://www.tensorflow.org/guide/gpu)) (Guía de TensorFlow: Uso de una GPU), puede usar para controlar en qué dispositivo se va a `tf.device()` ejecutar. \n \n\nLa cadena de dispositivo DirectML es `'DML'` . \n\n\n```python \n\nimport tensorflow as tf \n\ntf.debugging.set_log_device_placement(True) \n\ntf.enable_eager_execution() \n\n\n\n# Explicitly place tensors on the DirectML device \n\nwith tf.device('/DML:0'): \n\n  a = tf.constant([1.0, 2.0, 3.0]) \n\n  b = tf.constant([4.0, 5.0, 6.0]) \n\n\n\nc = tf.add(a, b) \n\nprint(c)\n```          \n\n```\nExecuting op Add in device /job:localhost/replica:0/task:0/device:DML:0 \n\ntf.Tensor([5. 7. 9.], shape=(3,), dtype=float32)\n```\n"
+  - question: Tengo varias GPU. Cómo seleccionar cuál usa DirectML?
+    answer: >
+      Hay un par de maneras diferentes de hacerlo, dependiendo de si desea controlarlo en todo el proceso o por sesión (o ambos).
+
+
+      Si desea controlar qué dispositivos son visibles para todo el proceso de TensorFlow, use la `DML_VISIBLE_DEVICES` variable de entorno . Si desea controlarlo por sesión, use `tf.GPUOptions.visible_device_list` .
+  - question: Cómo la variable de entorno para controlar qué GPU usa `DML_VISIBLE_DEVICES` DirectML?
+    answer: >
+      TensorFlow con DirectML admite una variable de entorno, que adopta la forma de una lista separada por comas de los IDs de dispositivo (también conocido como "índices de `DML_VISIBLE_DEVICES` adaptador"). Cuando se establece, solo los IDs de dispositivo de esa lista serán visibles para todo el proceso de TensorFlow. Los dispositivos excluidos `DML_VISIBLE_DEVICES` mediante no aparecerán en la lista de dispositivos físicos disponibles para TensorFlow.
+
+
+      ```python
+
+      import tensorflow as tf
+
+      tf.debugging.set_log_device_placement(True)
+
+      tf.enable_eager_execution()
+
+
+      a = tf.constant([1.])
+
+      b = tf.constant([2.])
+
+      c = tf.add(a, b)
+
+      print(c)
+
+      ```
+
+
+      Este es un ejemplo de salida **sin** `DML_VISIBLE_DEVICES` establecer:
+
+
+      ```
+
+      DirectML device enumeration: found 2 compatible adapters.
+
+      DirectML: creating device on adapter 0 (NVIDIA TITAN V)
+
+      DirectML: creating device on adapter 1 (AMD Radeon RX 5700 XT)
+
+      Executing op Add in device /job:localhost/replica:0/task:0/device:DML:0
+
+      tf.Tensor([3.], shape=(1,), dtype=float32)
+
+      ```
+
+
+      Con `DML_VISIBLE_DEVICES="1"`:
+
+
+      ```
+
+      DirectML device enumeration: found 1 compatible adapters.
+
+      DirectML: creating device on adapter 0 (AMD Radeon RX 5700 XT)
+
+      Executing op Add in device /job:localhost/replica:0/task:0/device:DML:0
+
+      tf.Tensor([3.], shape=(1,), dtype=float32)
+
+      ```
+
+
+      Tenga en cuenta que al restringir los dispositivos visibles solo al índice 1 (AMD Radeon RX 5700 XT), TensorFlow ahora asigna un identificador de 0 a este dispositivo y lo convierte en el valor predeterminado.
+
+
+      También puede volver a ordenar los dispositivos mediante esta variable de entorno. Por ejemplo, establecer `DML_VISIBLE_DEVICES="1,0"` :
+
+
+      ```
+
+      DirectML device enumeration: found 2 compatible adapters.
+
+      DirectML: creating device on adapter 0 (AMD Radeon RX 5700 XT)
+
+      DirectML: creating device on adapter 1 (NVIDIA TITAN V)
+
+      Executing op Add in device /job:localhost/replica:0/task:0/device:DML:0
+
+      tf.Tensor([3.], shape=(1,), dtype=float32)
+
+      ```
+
+
+      Observe que las dos GPU (NVIDIA TITAN V y AMD Radeon RX 5700 XT) ahora han cambiado de lugar.
+
+
+      Para evitar que determinados dispositivos sean visibles, puede proporcionar un identificador no válido (por ejemplo, ) en `-1` la lista separada por comas. Se omiten todos los identificadores de dispositivo después de la entrada no válida. También puede usar esto para deshabilitar la aceleración de DirectML por completo.
+
+
+      `DML_VISIBLE_DEVICES="-1"`:
+
+
+      ```
+
+      DirectML device enumeration: found 0 compatible adapters.
+
+      Executing op Add in device /job:localhost/replica:0/task:0/device:CPU:0
+
+      tf.Tensor([3.], shape=(1,), dtype=float32)
+
+      ```
+  - question: Cómo usar la `visible_device_list` opción de sesión para controlar qué GPU usa DirectML para ejecutar la sesión?
+    answer: >-
+      De forma `DML_VISIBLE_DEVICES` similar a , también puede establecer una cadena similar para controlar los dispositivos visibles en un nivel de sesión. El `visible_device_list` atributo está disponible en la clase al crear la sesión de `GPUOptions` TensorFlow.
+
+
+      ```python
+
+      import tensorflow as tf
+
+
+      a = tf.constant([1.])
+
+      b = tf.constant([2.])
+
+      c = tf.add(a, b)
+
+
+      gpu_config = tf.GPUOptions()
+
+      gpu_config.visible_device_list = "1"
+
+
+      session = tf.Session(config=tf.ConfigProto(gpu_options=gpu_config))
+
+      print(session.run(c))
+
+      ```
+
+
+      ```
+
+      DirectML device enumeration: found 2 compatible adapters.
+
+      DirectML: creating device on adapter 1 (AMD Radeon RX 5700 XT)
+
+      [3.]
+
+      ```
+
+
+      Puede leer la referencia de [la API de GPUOptions de TensorFlow](https://www.tensorflow.org/versions/r1.15/api_docs/python/tf/GPUOptions#visible_device_list) para obtener más detalles.
