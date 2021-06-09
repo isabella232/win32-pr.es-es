@@ -4,12 +4,12 @@ description: Los siguientes objetos se han agregado al modelo de sombreador 5.1.
 ms.assetid: 2958618D-54C6-4860-9910-B45AAB73CCFD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c56fbe035f63bd8f25a8b34377c333c2ce9946c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 376ce272e789501e21f5866be37f56daf31bc829
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993862"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825722"
 ---
 # <a name="shader-model-51-objects"></a>Objetos del modelo de sombreador 5.1
 
@@ -19,9 +19,8 @@ Para las vistas de [orden de rasterizador](/windows/desktop/direct3d11/rasterize
 
 
 
-|                                    |                                                               |
+| Objeto Rasterizer                                   | Objeto UAV                                                              |
 |------------------------------------|---------------------------------------------------------------|
-| Objeto Rasterizer                  | UAV (objeto)                                                    |
 | RasterizerOrderedBuffer            | [**RWBuffer**](sm5-object-rwbuffer.md)                       |
 | RasterizerOrderedByteAddressBuffer | [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md) |
 | RasterizerOrderedStructuredBuffer  | [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md)   |
@@ -39,7 +38,7 @@ Para las vistas de [orden de rasterizador](/windows/desktop/direct3d11/rasterize
 
 <dl> <dt>
 
-[Shader Model 5.1](shader-model-5-1.md)
+[Modelo de sombreador 5.1](shader-model-5-1.md)
 </dt> <dt>
 
 [Características del modelo de sombreador HLSL 5.1 para Direct3D 12](hlsl-shader-model-5-1-features-for-direct3d-12.md)

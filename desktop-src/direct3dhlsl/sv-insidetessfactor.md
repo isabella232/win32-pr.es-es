@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d047f7961868de020ac50ffce22b6ce02d078a5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 90d31aa6a11ce8e2bdd75ff1171705cc9b3de437
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996922"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826619"
 ---
 # <a name="sv_insidetessfactor"></a>SV \_ InsideTessFactor
 
@@ -28,11 +28,10 @@ Define la cantidad de teselación dentro de una superficie de revisión.
 
 
 
-|            |                |
+|  Tipo          | Topología de entrada               |
 |------------|----------------|
-| Tipo       | Topología de entrada |
 | float \[ 2\] | revisión quad     |
-| FLOAT      | tri patch      |
+| FLOAT      | revisión tri      |
 | unused     | Isolínea        |
 
 
@@ -45,13 +44,13 @@ Los factores de teselación deben declararse como matriz; no se pueden empaqueta
 
 Este valor debe definirse durante la función de constante de revisión del sombreador de casco.
 
-Valor de salida necesario para el sombreador de casco si se usan revisiones quad o tri. Este valor es una entrada necesaria para el sombreador de dominio con el fin de que el hardware coincida con las firmas a través del teselador.
+Valor de salida requerido para el sombreador de casco si se usan revisiones quad o tri. Este valor es una entrada necesaria para el sombreador de dominio con el fin de que el hardware coincida con las firmas a través del teselador.
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    | x      |          |       |         |
 
@@ -66,7 +65,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Semántica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

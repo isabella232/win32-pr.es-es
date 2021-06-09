@@ -1,6 +1,6 @@
 ---
-title: SampleGrad (objeto de textura de HLSL de DirectX)
-description: Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de ejemplo. | SampleGrad (objeto de textura de HLSL de DirectX)
+title: SampleGrad (objeto de textura HLSL de DirectX)
+description: Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra. | SampleGrad (objeto de textura HLSL de DirectX)
 ms.assetid: f3d73296-23c4-4178-b89e-6f84cfcb48a5
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 236c453f3636452cbba8ed6000b2416e5187898d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 959304d36da2b95bdf6289fba1b8c75d6ecfa314
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279986"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825742"
 ---
-# <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (objeto de textura de HLSL de DirectX)
+# <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (objeto de textura HLSL de DirectX)
 
-Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de ejemplo.
+Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.
 
-
-
-|                                                                                                            |
-|------------------------------------------------------------------------------------------------------------|
-| &lt;Tipo &gt; de plantilla Object. SampleGrad ( \_ Estado de muestra S, ubicación Float, Float DDX, Float DDY \[ , int offset \] ); |
+&lt;Tipo de &gt; plantilla Object.SampleGrad( sampler \_ state S, float Location, float DDX, float DDY \[ , int Offset \] );
 
 
 
@@ -48,19 +44,19 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Objeto</em><br/></td>
-<td>Cualquier tipo <a href="dx-graphics-hlsl-to-type.md">de objeto de textura</a> (excepto Texture2DMS y Texture2DMSArray).<br/></td>
+<td>Cualquier <a href="dx-graphics-hlsl-to-type.md">tipo de objeto de</a> textura (excepto Texture2DMS y Texture2DMSArray).<br/></td>
 </tr>
 <tr class="even">
-<td><span id="S"></span><span id="s"></span><em>Seg</em><br/></td>
-<td>de Un <a href="dx-graphics-hlsl-sampler.md">Estado de muestra</a>. Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.<br/></td>
+<td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
+<td>[in] Un <a href="dx-graphics-hlsl-sampler.md">estado sampler</a>. Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Cód</em><br/></td>
-<td>de Coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura. <br/> 
+<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Ubicación</em><br/></td>
+<td>[in] Coordenadas de textura. El tipo de argumento depende del tipo texture-object. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -91,13 +87,13 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="DDX"></span><span id="ddx"></span><em>DDX</em></p></td>
-<td><p>de La tasa de cambio de la geometría de la superficie en la dirección x. El tipo de argumento depende del tipo de objeto de textura.</p>
+<td><p><span id="DDX"></span><span id="ddx"></span><em>Ddx</em></p></td>
+<td><p>[in] Velocidad de cambio de la geometría de la superficie en la dirección x. El tipo de argumento depende del tipo texture-object.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -125,12 +121,12 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 </tr>
 <tr class="odd">
 <td><p><span id="DDY"></span><span id="ddy"></span><em>DDY</em></p></td>
-<td><p>de La tasa de cambio de la geometría de la superficie en la dirección y. El tipo de argumento depende del tipo de objeto de textura.</p>
+<td><p>[in] Velocidad de cambio de la geometría de la superficie en la dirección y. El tipo de argumento depende del tipo texture-object.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -157,13 +153,13 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Posición</em></p></td>
-<td><p>de Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. El desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un entero miplevel; de lo contrario, puede obtener resultados que no se traduzcan bien al hardware. El tipo de argumento depende del tipo de objeto de textura. Para obtener más información, vea<a href="dx-graphics-hlsl-to-sample.md">aplicar desplazamientos enteros</a>.</p>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensar</em></p></td>
+<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. El desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un valor miplevel entero; De lo contrario, puede obtener resultados que no se traducen bien al hardware. El tipo de argumento depende del tipo texture-object. Para obtener más información,<a href="dx-graphics-hlsl-to-sample.md">vea Aplicar desplazamientos de enteros.</a></p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -202,15 +198,15 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo de plantilla de la textura, que puede ser un vector de un solo componente o de varios componentes. El formato se basa en el formato de [**DXGI \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)de la textura.
+El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en el [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 | x        | x         | x        | x         | x        | x         |
 
@@ -218,12 +214,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-1.  TextureCubeArray está disponible en el modelo de sombreador 4,1 o superior.
-2.  El modelo de sombreador 4,1 está disponible en Direct3D 10,1 o superior.
+1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
 
 ## <a name="example"></a>Ejemplo
 
-Este ejemplo de código parcial procede del archivo MotionBlur. FX en el [ejemplo MotionBlur10](https://msdn.microsoft.com/library/Ee416417(v=VS.85).aspx).
+Este ejemplo de código parcial es del archivo MotionBlur.fx del [ejemplo MotionBlur10](https://msdn.microsoft.com/library/Ee416417(v=VS.85).aspx).
 
 
 ```
@@ -264,7 +260,7 @@ float4 PSSceneMain( VSSceneOut Input ) : SV_TARGET
 
 <dl> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

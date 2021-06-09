@@ -5,12 +5,12 @@ ms.assetid: 565B28C1-DBD1-42B6-87F9-70743E4A2E4A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed993618e021656dbc9377882e2961f7f0d62263
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 87209dfc324b950a74d2b31e5f1a1f6326792b9f
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335649"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826441"
 ---
 # <a name="creating-a-root-signature"></a>Creación de una firma raíz
 
@@ -53,11 +53,11 @@ typedef enum D3D12_DESCRIPTOR_RANGE_TYPE
 
 La [**estructura D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range) define un intervalo de descriptores de un tipo determinado (como SRV) dentro de una tabla de descriptores.
 
-La `D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND` macro se puede usar normalmente para el parámetro de `OffsetInDescriptorsFromTableStart` [**D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range). Esto significa anexar el intervalo de descriptores que se define después del anterior en la tabla de descriptores. Si la aplicación quiere usar descriptores de alias o, por algún motivo, quiere omitir ranuras, puede establecer en `OffsetInDescriptorsFromTableStart` el desplazamiento deseado. La definición de intervalos superpuestos de distintos tipos no es válida.
+La `D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND` macro se puede usar normalmente para el parámetro de `OffsetInDescriptorsFromTableStart` [**D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range). Esto significa anexar el intervalo de descriptor que se define después del anterior en la tabla de descriptores. Si la aplicación quiere usar descriptores de alias o, por algún motivo, quiere omitir ranuras, puede establecer en el `OffsetInDescriptorsFromTableStart` desplazamiento deseado. La definición de intervalos superpuestos de distintos tipos no es válida.
 
-El conjunto de registros de sombreador especificados por la combinación de , , y no puede tener conflictos ni superponerse entre las declaraciones de una firma raíz que tengan Visibilidad común de sombreador `RangeType` `NumDescriptors` `BaseShaderRegister` `RegisterSpace` [**\_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) (consulte la sección de visibilidad del sombreador siguiente).
+El conjunto de registros de sombreador especificados por la combinación de , , y no puede tener conflictos ni superponerse entre las declaraciones de una firma raíz que tengan Visibilidad común del sombreador `RangeType` `NumDescriptors` `BaseShaderRegister` `RegisterSpace` [**\_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) (consulte la sección de visibilidad del sombreador siguiente).
 
-## <a name="descriptor-table-layout"></a>Diseño de tabla descriptor
+## <a name="descriptor-table-layout"></a>Diseño de tabla de descriptores
 
 La [**estructura D3D12 \_ ROOT DESCRIPTOR \_ \_ TABLE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table) declara el diseño de una tabla de descriptores como una colección de intervalos de descriptores que aparecen uno tras otro en un montón de descriptores. No se permiten muestreadores en la misma tabla de descriptores que CBV/UAV/SRV.
 
@@ -103,7 +103,7 @@ Si una firma raíz tiene varias tablas de descriptor definidas que se superponen
 
 ## <a name="root-signature-definition"></a>Definición de firma raíz
 
-La estructura [**\_ \_ \_ DESC D3D12 ROOT SIGNATURE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) puede contener tablas descriptores y constantes insertadas, cada tipo de ranura definido por la estructura ROOT PARAMETER de [**D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) y la enumeración [**D3D12 \_ ROOT PARAMETER \_ \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_parameter_type).
+La estructura [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) puede contener tablas de descriptores y constantes insertadas, cada tipo de ranura definido por la estructura ROOT PARAMETER de [**D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) y la enumeración [**D3D12 \_ ROOT PARAMETER \_ \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_parameter_type).
 
 Para iniciar una ranura de firma raíz, consulte los métodos **SetComputeRoot \* \* \*** y **\* \* \* SetGraphicsRoot** de [**ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist).
 
@@ -117,7 +117,7 @@ Los métodos descritos en esta sección se exportan mediante D3D12Core.dll y pro
 
 El formulario serializado es lo que se pasa a la API al crear una firma raíz. Si se ha creado un sombreador con una firma raíz en él (cuando se agrega esa funcionalidad), el sombreador compilado ya contendrá una firma raíz serializada en él.
 
-Si una aplicación genera por procedimientos una estructura de datos [**\_ \_ \_ DESC D3D12 ROOT SIGNATURE,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) debe crear el formulario serializado mediante [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature). Salida de que se puede pasar a [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature).
+Si una aplicación genera por procedimientos una estructura de datos [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) debe crear el formulario serializado mediante [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature). Salida de que se puede pasar a [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature).
 
 Si una aplicación ya tiene una firma raíz serializada o tiene un sombreador compilado que contiene una firma raíz y desea detectar mediante programación la definición de diseño (conocida como "reflexión"), se puede llamar a [**D3D12CreateRootSignatureDeserializer.**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) Esto genera una interfaz [**ID3D12RootSignatureDeserializer,**](/windows/desktop/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) que contiene un método para devolver la estructura de datos [**D3D12 \_ ROOT SIGNATURE \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) deserialización. La interfaz posee la duración de la estructura de datos deserialización.
 
@@ -153,9 +153,9 @@ En el ejemplo siguiente se muestra cómo crear una firma raíz con el formato si
 
 Si la mayoría de las partes de la firma raíz se usan la mayoría del tiempo, puede ser mejor que tener que cambiar la firma raíz con demasiada frecuencia. Las aplicaciones deben ordenar las entradas de la firma raíz de que cambien con más frecuencia a menos. Cuando una aplicación cambia los enlaces a cualquier parte de la firma raíz, es posible que el controlador tenga que realizar una copia de parte o de todo el estado de la firma raíz, lo que puede convertirse en un costo notrivial cuando se multiplica entre muchos cambios de estado.
 
-Además, la firma raíz definirá un muestreador estático que realiza el filtrado de textura anisotropica en el registro de sombreador s3.
+Además, la firma raíz definirá un muestreador estático que realiza el filtrado de textura anisotrófica en el registro de sombreador s3.
 
-Una vez enlazada esta firma raíz, se pueden asignar tablas de descriptores, CBV raíz y constantes al \[ espacio de parámetros 0..6. \] Por ejemplo, las tablas de descriptores (intervalos en un montón de descriptores) se pueden enlazar en cada uno de los parámetros raíz 1 y \[ \] \[ 3..6 \] .
+Una vez enlazada esta firma raíz, se pueden asignar tablas descriptoras, CBV raíz y constantes al espacio de parámetros \[ 0..6. \] Por ejemplo, las tablas de descriptores (intervalos en un montón de descriptores) se pueden enlazar en cada uno de los parámetros raíz 1 y \[ \] \[ 3..6 \] .
 
 ``` syntax
 CD3DX12_DESCRIPTOR_RANGE1 DescRange[6];
@@ -195,7 +195,7 @@ hr = CheckHR(pDevice->CreateRootSignature(
     &pRootSignature));
 ```
 
-El código siguiente muestra cómo se podría usar la firma raíz anterior en una lista de comandos gráficos.
+El código siguiente muestra cómo se podría usar la firma raíz anterior en una lista de comandos de gráficos.
 
 ``` syntax
 InitializeMyDescriptorHeapContentsAheadOfTime(); // for simplicity of the 
@@ -205,7 +205,7 @@ CreatePipelineStatesAhreadOfTime(pRootSignature); // The root signature is passe
 ...
 
 ID3D12DescriptorHeap* pHeaps[2] = {pCommonHeap, pSamplerHeap};
-pGraphicsCommandList->SetDescriptorHeaps(pHeaps,2);
+pGraphicsCommandList->SetDescriptorHeaps(2,pHeaps);
 pGraphicsCommandList->SetGraphicsRootSignature(pRootSignature);
 pGraphicsCommandList->SetGraphicsRootDescriptorTable(
                         6,heapOffsetForMoreData,DescRange[5].NumDescriptors);

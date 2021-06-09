@@ -1,16 +1,16 @@
 ---
 title: Sintaxis de variables
-description: Use las siguientes reglas de sintaxis para declarar variables de HLSL.
+description: Use las siguientes reglas de sintaxis para declarar variables HLSL.
 ms.assetid: 684c42d1-2dd4-42e1-9cff-580edb5c6bcd
 keywords:
-- extern, sintaxis de variables (DirectX HLSL)
-- nointerpolación, sintaxis de variables (DirectX HLSL)
-- Sintaxis de variables compartidas (DirectX HLSL)
-- groupshared, sintaxis de variables (DirectX HLSL)
-- Sintaxis de variables estáticas (DirectX HLSL)
-- Sintaxis de variables uniformes (DirectX HLSL)
-- Sintaxis volátil y variable (DirectX HLSL)
-- Sintaxis de variables precisa (DirectX HLSL)
+- extern, sintaxis de variables (HLSL de DirectX)
+- nointerpolation, sintaxis de variables (HLSL de DirectX)
+- shared, Sintaxis de variables (HLSL de DirectX)
+- groupshared, sintaxis de variables (HLSL de DirectX)
+- static, sintaxis variable (HLSL de DirectX)
+- sintaxis uniforme de variables (HLSL de DirectX)
+- volatile, variable syntax (DirectX HLSL)
+- sintaxis precisa de variables (HLSL de DirectX)
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -18,22 +18,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f6e63bafa62a9857af678e0848c81237dcd0d585
-ms.sourcegitcommit: 4e0bde7dfa48a0b60bca4a5230eb2b05be3778d3
+ms.openlocfilehash: 446444e09b0b6aff3e0ba8ca8b12cfbf6dc94128
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "104997189"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826073"
 ---
 # <a name="variable-syntax"></a>Sintaxis de variables
 
-Use las siguientes reglas de sintaxis para declarar variables de HLSL.
+Use las siguientes reglas de sintaxis para declarar variables HLSL.
 
-
-
-|                                                                                                                                                                                    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \[*Almacenamiento \_ de* Type ( \] \[ *\_ modificador de tipo* de clase) \]  \[ *index* \] \[ *: Semantic* \] \[ *: Packoffset* \] \[ *: Register* \] ;    \[  \] Anotaciones \[ *= Inicial \_ Valor* de                    \] |
+\[*Almacenamiento \_ Class* \] \[ *Type \_ Modifier* \] *Type Name* \[ *Index* \] \[ *: Semantic*: \] \[ *Packoffset*: \] \[ *Register* \] ;    \[  \] Anotaciones \[ *= Inicial \_ Valor*                    \]
 
 
 
@@ -43,10 +39,10 @@ Use las siguientes reglas de sintaxis para declarar variables de HLSL.
 
 <dl> <dt>
 
-<span id="Storage_Class_"></span><span id="storage_class_"></span><span id="STORAGE_CLASS_"></span>*Clase de almacenamiento \_* 
+<span id="Storage_Class_"></span><span id="storage_class_"></span><span id="STORAGE_CLASS_"></span>*Clase de \_ almacenamiento* 
 </dt> <dd>
 
-Modificadores de clase de almacenamiento opcionales que proporcionan sugerencias al compilador sobre el ámbito y la duración de las variables. los modificadores se pueden especificar en cualquier orden.
+Modificadores opcionales de clase de almacenamiento que dan al compilador sugerencias sobre el ámbito y la duración de las variables; Los modificadores se pueden especificar en cualquier orden.
 
 
 
@@ -57,31 +53,31 @@ Modificadores de clase de almacenamiento opcionales que proporcionan sugerencias
 </colgroup>
 <thead>
 <tr class="header">
-<th>Value</th>
+<th>Valor</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>extern</strong></td>
-<td>Marque una variable global como entrada externa al sombreador; Este es el marcado predeterminado para todas las variables globales. No se puede combinar con <strong>static</strong>.</td>
+<td>Marcar una variable global como una entrada externa al sombreador; este es el marcado predeterminado para todas las variables globales. No se puede combinar con <strong>estático.</strong></td>
 </tr>
 <tr class="even">
-<td><strong>nointerpolación</strong></td>
-<td>No interpole las salidas de un sombreador de vértices antes de pasarlas a un sombreador de píxeles.</td>
+<td><strong>nointerpolation</strong></td>
+<td>No interpola las salidas de un sombreador de vértices antes de pasarlas a un sombreador de píxeles.</td>
 </tr>
 <tr class="odd">
-<td><strong>cifras</strong></td>
-<td>La palabra clave <strong>precisa</strong> cuando se aplica a una variable restringirá los cálculos utilizados para generar el valor asignado a esa variable de las siguientes maneras:
+<td><strong>Precisa</strong></td>
+<td>La <strong>palabra</strong> clave precisa cuando se aplica a una variable restringirá los cálculos usados para generar el valor asignado a esa variable de las maneras siguientes:
 
-*   Las operaciones independientes se mantienen separadas. Por ejemplo, en los casos en los que una operación Mul y Add se ha fusionado en una operación de Mad, <strong>precisa</strong> obliga a las operaciones a permanecer separadas. En su lugar, debe utilizar explícitamente la función intrínseca Mad.
-*   Se mantiene el orden de las operaciones. Cuando el orden de las instrucciones podría haberse aleatorio para mejorar el rendimiento, es <strong>preciso</strong> asegurarse de que el compilador conserva el orden como escrito.
-*   Las operaciones IEEE no seguras están restringidas. En los casos en los que el compilador podría haber usado operaciones matemáticas rápidas que no tienen en cuenta los valores NaN (no un número) e INF (infinito <strong>), se</strong> deben respetar los requisitos de IEEE relativos a los valores Nan y INF. Sin <strong>precisión</strong>, estas optimizaciones y operaciones matemáticas no son seguras para IEEE.
-*   La calificación de una variable <strong>precisa</strong> no hace que las operaciones que usan la variable sean <strong>precisas</strong>. Dado que <strong>precise</strong> se propaga solo a las operaciones que contribuyen a los valores que se asignan a la variable calificada con <strong>precisión</strong>, el hecho de que los cálculos deseados sean <strong>precisos</strong> puede ser complicado, por lo que se recomienda marcar <strong>las salidas del</strong> sombreador exactamente donde se declaran, ya sea en un campo de estructura o en un parámetro de salida, o en el tipo de valor
+*   Las operaciones independientes se mantienen independientes. Por ejemplo, cuando una operación mul y add se podrían haber fusionado en una operación loca, <strong>la</strong> precisión obliga a que las operaciones permanezcan independientes. En su lugar, debe usar explícitamente la función intrínseca loca.
+*   Se mantiene el orden de las operaciones. Cuando el orden de las instrucciones podría haber sido aleatorio para mejorar el rendimiento, <strong>la</strong> precisión garantiza que el compilador conserva el orden tal y como está escrito.
+*   Las operaciones ieee no seguras están restringidas. Cuando el compilador podría haber usado operaciones matemáticas rápidas que no tienen en cuenta <strong></strong> los valores NaN (no un número) e INF (infinito), la precisión obliga a respetar los requisitos ieee relativos a los valores NaN e INF. Sin <strong>precisión,</strong>estas optimizaciones y operaciones matemáticas no son seguras para IEEE.
+*   Calificar una variable <strong>precisa</strong> no realiza operaciones que usan la variable <strong>precisa.</strong> Dado <strong></strong> que la precisión solo se propaga a las <strong></strong>operaciones que contribuyen a los valores asignados a la variable precisa- calificado, realizar correctamente los <strong>cálculos</strong> deseados con precisión puede ser complicado, por lo que se recomienda marcar las <strong>salidas</strong> del sombreador directamente donde se declaran, ya sea en un campo de estructura, en un parámetro de salida o en el tipo de valor devuelto de la función de entrada.
 
-La capacidad de controlar las optimizaciones de este modo mantiene la inestabilidad de resultados para la variable de salida modificada al deshabilitar las optimizaciones que pueden afectar a los resultados finales debido a las diferencias en las diferencias de precisión acumuladas. Resulta útil cuando se desea que los sombreadores de teselación mantengan coincidencias de parches con agua apretada o valores de profundidad de coincidencia en varias fases.
+La capacidad de controlar las optimizaciones de esta manera mantiene la invariable de resultados para la variable de salida modificada al deshabilitar las optimizaciones que podrían afectar a los resultados finales debido a diferencias en las diferencias de precisión acumuladas. Resulta útil cuando se desea que los sombreadores para la teselación mantengan las juntas de revisión estrechas al agua o coincidan con los valores de profundidad en varios pases.
 
-[Código de ejemplo](https://github.com/microsoft/DirectXShaderCompiler/blob/master/tools/clang/test/HLSLFileCheck/hlsl/types/modifiers/precise/precise4.hlsl): 
+[Código de ejemplo:](https://github.com/microsoft/DirectXShaderCompiler/blob/master/tools/clang/test/HLSLFileCheck/hlsl/types/modifiers/precise/precise4.hlsl) 
 ```HLSL
 matrix g_mWorldViewProjection;
 void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
@@ -93,27 +89,27 @@ void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
 </td>
 </tr>
 <tr class="even">
-<td><strong>recurso</strong></td>
-<td>Marcar una variable para compartir entre efectos; Esta es una sugerencia para el compilador.</td>
+<td><strong>Compartido</strong></td>
+<td>Marcar una variable para compartir entre efectos; se trata de una sugerencia para el compilador.</td>
 </tr>
 <tr class="odd">
 <td><strong>groupshared</strong></td>
-<td>Marque una variable para la memoria compartida por el grupo de subprocesos para los sombreadores de cálculo. En D3D10, el tamaño total máximo de todas las variables con la clase de almacenamiento groupshared es 16 KB, en D3D11 el tamaño máximo es 32 KB. Vea los ejemplos.</td>
+<td>Marque una variable para la memoria compartida de grupo de subprocesos para sombreadores de proceso. En D3D10, el tamaño total máximo de todas las variables con la clase de almacenamiento groupshared es de 16 kb, en D3D11 el tamaño máximo es de 32 kb. Consulte los ejemplos.</td>
 </tr>
 <tr class="even">
 <td><strong>static</strong></td>
-<td>Marque una variable local para que se inicialice una vez y se conserve entre las llamadas de función. Si la declaración no incluye un inicializador, el valor se establece en cero. Una variable global marcada como <strong>static</strong> no es visible para una aplicación.</td>
+<td>Marque una variable local para que se inicialice una vez y persista entre las llamadas de función. Si la declaración no incluye un inicializador, el valor se establece en cero. Una variable global marcada <strong>como estática</strong> no es visible para una aplicación.</td>
 </tr>
 <tr class="odd">
 <td><strong>uniforme</strong></td>
-<td>Marque una variable cuyos datos sean constantes a lo largo de la ejecución de un sombreador (por ejemplo, un color material en un sombreador de vértices). de forma predeterminada, las variables globales se consideran <strong>uniformes</strong> .</td>
+<td>Marcar una variable cuyos datos son constantes durante la ejecución de un sombreador (por ejemplo, un color de material en un sombreador de vértices); Las variables globales se consideran <strong>uniformes de</strong> forma predeterminada.</td>
 </tr>
 <tr class="even">
 <td><strong>volatile</strong></td>
-<td>Marque una variable que cambie con frecuencia; Esta es una sugerencia para el compilador. Este modificador de clase de almacenamiento solo se aplica a una variable local.<br/>
+<td>Marcar una variable que cambia con frecuencia; se trata de una sugerencia para el compilador. Este modificador de clase de almacenamiento solo se aplica a una variable local.<br/>
 <blockquote>
 [!Note]<br />
-El compilador de HLSL actualmente omite este modificador de clase de almacenamiento.
+El compilador HLSL omite actualmente este modificador de clase de almacenamiento.
 </blockquote>
 <br/></td>
 </tr>
@@ -126,86 +122,86 @@ El compilador de HLSL actualmente omite este modificador de clase de almacenamie
 
 </dd> <dt>
 
-<span id="Type_Modifier"></span><span id="type_modifier"></span><span id="TYPE_MODIFIER"></span>*\_Modificador de tipo*
+<span id="Type_Modifier"></span><span id="type_modifier"></span><span id="TYPE_MODIFIER"></span>*Modificador de \_ tipo*
 </dt> <dd>
 
 Modificador de tipo variable opcional.
 
 
 
-| Value             | Descripción                                                                                                                                                                                                                                  |
+| Valor             | Descripción                                                                                                                                                                                                                                  |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **const**         | Marque una variable que un sombreador no pueda cambiar; por lo tanto, debe inicializarse en la declaración de la variable. Las variables globales se consideran **const** de forma predeterminada (suprima este comportamiento mediante la especificación de la marca/GEC en el compilador). |
-| **fila \_ principal**    | Marque una variable que almacene cuatro componentes en una sola fila para que puedan almacenarse en un solo registro de constante.                                                                                                                             |
-| **columna \_ principal** | Marque una variable que almacene 4 componentes en una sola columna para optimizar la aritmética de la matriz.                                                                                                                                                         |
+| **const**         | Marque una variable que un sombreador no pueda cambiar; por lo tanto, debe inicializarse en la declaración de variable. Las variables globales se consideran **const** de forma predeterminada (suprima este comportamiento al proporcionar la marca /Gec al compilador). |
+| **fila \_ principal**    | Marque una variable que almacene cuatro componentes en una sola fila para que se puedan almacenar en un único registro constante.                                                                                                                             |
+| **columna \_ principal** | Marque una variable que almacena 4 componentes en una sola columna para optimizar los cálculos matemáticos de matriz.                                                                                                                                                         |
 
 
 
  
 
 > [!Note]  
-> Si no se especifica un valor de modificador de tipo, el compilador utiliza la **columna \_ major** como valor predeterminado.
+> Si no especifica un valor de modificador de tipo, el compilador usa la columna **\_ principal** como valor predeterminado.
 
  
 
 </dd> <dt>
 
-<span id="Type"></span><span id="type"></span><span id="TYPE"></span>*Automáticamente*
+<span id="Type"></span><span id="type"></span><span id="TYPE"></span>*Tipo*
 </dt> <dd>
 
-Cualquier tipo HLSL mostrado en [tipos de datos (DirectX HLSL)](dx-graphics-hlsl-data-types.md).
+Cualquier tipo HLSL enumerado en [Tipos de datos (HlSL de DirectX)](dx-graphics-hlsl-data-types.md).
 
 </dd> <dt>
 
-<span id="Name_Index_"></span><span id="name_index_"></span><span id="NAME_INDEX_"></span>*Nombre* \[ de *Índice* de\]
+<span id="Name_Index_"></span><span id="name_index_"></span><span id="NAME_INDEX_"></span>*Nombre* \[ *Índice*\]
 </dt> <dd>
 
-Cadena ASCII que identifica de forma única una variable de sombreador. Para definir una matriz opcional, utilice **index** para el tamaño de la matriz, que es un entero positivo = 1.
+Cadena ASCII que identifica de forma única una variable de sombreador. Para definir una matriz opcional, use **index para** el tamaño de la matriz, que es un entero positivo = 1.
 
 </dd> <dt>
 
 <span id="Semantic"></span><span id="semantic"></span><span id="SEMANTIC"></span>*Semántica*
 </dt> <dd>
 
-Información de uso de parámetros opcional utilizada por el compilador para vincular entradas y salidas del sombreador. Hay varias [semánticas](dx-graphics-hlsl-semantics.md) predefinidas para los sombreadores de vértices y píxeles. El compilador omite la semántica a menos que se declaren en una variable global o un parámetro pasado a un sombreador.
+Información de uso de parámetros opcional, utilizada por el compilador para vincular entradas y salidas del sombreador. Hay varias semánticas [predefinidas para sombreadores](dx-graphics-hlsl-semantics.md) de vértices y píxeles. El compilador omite la semántica a menos que se declaren en una variable global o un parámetro pasado a un sombreador.
 
 </dd> <dt>
 
 <span id="Packoffset"></span><span id="packoffset"></span><span id="PACKOFFSET"></span>*Packoffset*
 </dt> <dd>
 
-Palabra clave opcional para empaquetar manualmente las constantes de sombreador. Consulte [packoffset (DirectX HLSL)](dx-graphics-hlsl-variable-packoffset.md).
+Palabra clave opcional para empaquetar manualmente las constantes del sombreador. Consulte [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
 
 </dd> <dt>
 
-<span id="Register"></span><span id="register"></span><span id="REGISTER"></span>*El*
+<span id="Register"></span><span id="register"></span><span id="REGISTER"></span>*Registro*
 </dt> <dd>
 
-Palabra clave opcional para asignar manualmente una variable de sombreador a un registro determinado. Consulte [Register (DirectX HLSL)](dx-graphics-hlsl-variable-register.md).
+Palabra clave opcional para asignar manualmente una variable de sombreador a un registro determinado. Vea [register (DirectX HLSL).](dx-graphics-hlsl-variable-register.md)
 
 </dd> <dt>
 
-<span id="Annotation_s_"></span><span id="annotation_s_"></span><span id="ANNOTATION_S_"></span>*Anotación (s)*
+<span id="Annotation_s_"></span><span id="annotation_s_"></span><span id="ANNOTATION_S_"></span>*Anotaciones*
 </dt> <dd>
 
-Metadatos opcionales, en forma de cadena, adjuntos a una variable global. El marco de trabajo usa una anotación y la omite HLSL. para ver una sintaxis más detallada, vea [Sintaxis de anotación](/windows/desktop/direct3d10/d3d10-effect-annotation-syntax).
+Metadatos opcionales, en forma de cadena, asociados a una variable global. La plataforma de efectos usa una anotación y HLSL la omite; Para ver una sintaxis más detallada, consulte la [sintaxis de anotación](/windows/desktop/direct3d10/d3d10-effect-annotation-syntax).
 
 </dd> <dt>
 
-<span id="Initial_Value"></span><span id="initial_value"></span><span id="INITIAL_VALUE"></span>*\_Valor inicial*
+<span id="Initial_Value"></span><span id="initial_value"></span><span id="INITIAL_VALUE"></span>*Valor \_ inicial*
 </dt> <dd>
 
-Valores iniciales opcionales; el número de valores debe coincidir con el número de componentes de *tipo*. Cada variable global marcada como **extern** debe inicializarse con un valor literal; cada variable marcada como **static** debe inicializarse con una constante.
+Valores iniciales opcionales; el número de valores debe coincidir con el número de componentes de *Tipo*. Cada variable global marcada **como extern** debe inicializarse con un valor literal; cada variable marcada **como estática** debe inicializarse con una constante.
 
-Las variables globales que no están marcadas como **static** o **extern** no se compilan en el sombreador. El compilador no establece automáticamente los valores predeterminados para las variables globales y no puede utilizarlos en las optimizaciones. Para inicializar este tipo de variable global, utilice la reflexión para obtener su valor y, a continuación, copie el valor en un búfer de constantes. Por ejemplo, puede usar el método [**ID3D11ShaderReflection:: GetVariableByName**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11shaderreflection-getvariablebyname) para obtener la variable, usar el método [**ID3D11ShaderReflectionVariable:: GetDesc**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11shaderreflectionvariable-getdesc) para obtener la descripción de la variable de sombreador y obtener el valor inicial del miembro **DefaultValue** de la estructura de la [**\_ \_ variable de \_ sombreador D3D11**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_shader_variable_desc) . Para copiar el valor en el búfer de constantes, debe asegurarse de que el búfer se creó con acceso de escritura de CPU ([**D3D11 de \_ acceso de CPU \_ \_**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_cpu_access_flag)). Para obtener más información sobre cómo crear un búfer de constantes, vea [Cómo: crear un búfer de constantes](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to).
+Las variables globales que no están marcadas **como static** o **extern** no se compilan en el sombreador. El compilador no establece automáticamente los valores predeterminados para las variables globales y no puede usarlos en las optimizaciones. Para inicializar este tipo de variable global, use la reflexión para obtener su valor y, a continuación, copie el valor en un búfer constante. Por ejemplo, puede usar el método [**ID3D11ShaderReflection::GetVariableByName**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11shaderreflection-getvariablebyname) para obtener la variable, usar el método [**ID3D11ShaderReflectionVariable::GetDesc**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11shaderreflectionvariable-getdesc) para obtener la descripción de la variable de sombreador y obtener el valor inicial del miembro **DefaultValue** de la estructura [**D3D11 \_ SHADER VARIABLE \_ \_ DESC.**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_shader_variable_desc) Para copiar el valor en el búfer constante, debe asegurarse de que el búfer se creó con acceso de escritura de CPU [**(D3D11 \_ CPU \_ ACCESS \_ WRITE**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_cpu_access_flag)). Para obtener más información sobre cómo crear un búfer constante, [vea Cómo: Crear un búfer constante.](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to)
 
-También puede usar el [marco de trabajo de efectos](../direct3d11/d3d11-graphics-programming-guide-effects.md) para procesar automáticamente el reflejo y establecer el valor inicial. Por ejemplo, puede usar el método [**ID3DX11EffectPass:: Apply**](/windows/desktop/direct3d11/id3dx11effectpass-apply) .
+También puede usar el marco [de efectos para](../direct3d11/d3d11-graphics-programming-guide-effects.md) procesar automáticamente el reflejo y establecer el valor inicial. Por ejemplo, puede usar el [**método ID3DX11EffectPass::Apply.**](/windows/desktop/direct3d11/id3dx11effectpass-apply)
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-Estos son algunos ejemplos de declaraciones de variables de sombreador.
+Estos son varios ejemplos de declaraciones de variable de sombreador.
 
 
 ```
@@ -232,17 +228,17 @@ const float4 lightDirection = {0,0,1};
 
 ### <a name="group-shared"></a>Grupo compartido
 
-HLSL permite a los subprocesos de un sombreador de cálculo intercambiar valores a través de la memoria compartida. HLSL proporciona primitivas de barrera como [**GroupMemoryBarrierWithGroupSync**](groupmemorybarrierwithgroupsync.md), y así sucesivamente para garantizar el orden correcto de las lecturas y escrituras en la memoria compartida del sombreador y para evitar carreras de datos.
+HLSL permite a los subprocesos de un sombreador de proceso intercambiar valores a través de memoria compartida. HLSL proporciona primitivas de barrera como [**GroupMemoryBarhlWithGroupSync,**](groupmemorybarrierwithgroupsync.md)y así sucesivamente para garantizar el orden correcto de las lecturas y escrituras en la memoria compartida en el sombreador y evitar carreras de datos.
 
 > [!Note]  
-> El hardware ejecuta subprocesos en grupos (alabeos o frontales) y la sincronización de barrera a veces se puede omitir para aumentar el rendimiento cuando solo se sincronizan los subprocesos que pertenecen al mismo grupo. Pero se desaconseja encarecidamente esta omisión por estos motivos:
+> El hardware ejecuta subprocesos en grupos (deformes o frentes de onda), y la sincronización de barreras a veces se puede omitir para aumentar el rendimiento cuando solo la sincronización de subprocesos que pertenecen al mismo grupo es correcta. Pero se desaconseja esta omisión por estos motivos:
 >
-> -   Esta omisión produce código no portable, que podría no funcionar en algún hardware y no funciona en rasterizadores de software que normalmente ejecutan subprocesos en grupos más pequeños.
-> -   Las mejoras de rendimiento que puede lograr con esta omisión serán menores en comparación con el uso de la barrera de todos los subprocesos.
+> -   Esta omisión da como resultado código no portátil, que podría no funcionar en algún hardware y no funciona en rasterizadores de software que normalmente ejecutan subprocesos en grupos más pequeños.
+> -   Las mejoras de rendimiento que podría lograr con esta omisión serán menores en comparación con el uso de la barrera de todos los subprocesos.
 
  
 
-En Direct3D 10 no hay ninguna sincronización de subprocesos al escribir en **groupshared**, por lo que cada subproceso se limita a una única ubicación en una matriz para su escritura. Use el valor del sistema [VP \_ GroupIndex](dx-graphics-hlsl-semantics.md) para indexar en esta matriz al escribir para asegurarse de que no haya dos subprocesos que puedan entrar en conflicto. En cuanto a la lectura, todos los subprocesos tienen acceso a toda la matriz para su lectura.
+En Direct3D 10 no hay ninguna sincronización de subprocesos al escribir en **groupshared,** por lo que esto significa que cada subproceso se limita a una sola ubicación en una matriz para escribir. Use el [valor del \_ sistema GroupIndex](dx-graphics-hlsl-semantics.md) de SV para indexar en esta matriz al escribir para asegurarse de que no pueden colisionar dos subprocesos. En términos de lectura, todos los subprocesos tienen acceso a toda la matriz para su lectura.
 
 
 ```
@@ -266,9 +262,9 @@ void main( uint index : SV_GroupIndex )
 
 
 
-### <a name="packing"></a>Envase
+### <a name="packing"></a>Embalaje
 
-Empaquete subcomponentes de vectores y escalares cuyo tamaño sea lo suficientemente grande como para evitar límites de registro de cruce. Por ejemplo, todos son válidos:
+Empaquetar subcomponentes de vectores y escalares cuyo tamaño es lo suficientemente grande como para evitar el cruce de límites de registro. Por ejemplo, todos son válidos:
 
 
 ```
@@ -285,9 +281,9 @@ cbuffer MyBuffer
 
 No se pueden mezclar tipos de empaquetado.
 
-Al igual que la palabra clave Register, un packoffset puede ser específico del destino. El empaquetado de subcomponentes solo está disponible con la palabra clave packoffset, no con la palabra clave Register. Dentro de una declaración de CBuffer, la palabra clave Register se omite para los destinos de Direct3D 10, ya que se supone que es para la compatibilidad entre plataformas.
+Al igual que la palabra clave register, un packoffset puede ser específico del destino. El empaquetado de subcomponentes solo está disponible con la palabra clave packoffset, no con la palabra clave register. Dentro de una declaración de cbuffer, la palabra clave register se omite para los destinos de Direct3D 10, ya que se supone que es para la compatibilidad multiplataforma.
 
-Los elementos empaquetados se pueden superponer y el compilador no proporcionará ningún error o advertencia. En este ejemplo, Elemento2 y Element3 se superpondrán con Element1. x y Element1. y.
+Los elementos empaquetados pueden superponerse y el compilador no producirá ningún error ni advertencia. En este ejemplo, Element2 y Element3 se superponerán con Element1.x y Element1.y.
 
 
 ```
@@ -302,7 +298,7 @@ cbuffer MyBuffer
 
 
 
-Un ejemplo que usa packoffset es: [HLSLWithoutFX10 Sample](https://msdn.microsoft.com/library/Ee416414(v=VS.85).aspx).
+Un ejemplo que usa packoffset es: [EJEMPLO HLSLWithoutFX10](https://msdn.microsoft.com/library/Ee416414(v=VS.85).aspx).
 
 ## <a name="related-topics"></a>Temas relacionados
 

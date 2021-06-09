@@ -1,6 +1,6 @@
 ---
-title: SampleLevel (objeto de textura de HLSL de DirectX)
-description: Muestrea una textura mediante un desplazamiento de nivel de mipmap.
+title: SampleLevel (objeto de textura HLSL de DirectX)
+description: Muestrea una textura mediante un desplazamiento de nivel de mapa mip.
 ms.assetid: d61426c8-e09f-4e88-99f6-fa96c4a2b58d
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,28 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73cf7bc0c13987099540cecd49519de35b4b7de1
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: bc3a074641ce5b15a3d837e8bd91dfdae09fe627
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "104149748"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826689"
 ---
-# <a name="samplelevel-directx-hlsl-texture-object"></a>SampleLevel (objeto de textura de HLSL de DirectX)
+# <a name="samplelevel-directx-hlsl-texture-object"></a>SampleLevel (objeto de textura HLSL de DirectX)
 
-Muestrea una textura mediante un desplazamiento de nivel de mipmap.
+Muestrea una textura mediante un desplazamiento de nivel de mapa mip.
 
-
-
-|                                                                                                  |
-|--------------------------------------------------------------------------------------------------|
-| &lt;Tipo &gt; de plantilla Object. SampleLevel ( \_ Estado de muestra S, ubicación Float, Float LOD \[ , int offset \] ); |
+&lt;Tipo de &gt; plantilla Object.SampleLevel( sampler \_ state S, float Location, float LOD \[ , int Offset \] );
 
 
 
  
 
-Esta función es similar a [Sample](dx-graphics-hlsl-to-sample.md) , salvo que usa el nivel LOD (en el último componente del parámetro Location) para elegir el nivel de mipmap. Por ejemplo, una textura 2D usa los dos primeros componentes para las coordenadas UV y el tercer componente para el nivel de mipmap.
+Esta función es similar a [Sample,](dx-graphics-hlsl-to-sample.md) salvo que usa el nivel de LOD (en el último componente del parámetro location) para elegir el nivel mipmap. Por ejemplo, una textura 2D usa los dos primeros componentes para las coordenadas uv y el tercer componente para el nivel de mapa mip.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -50,19 +46,19 @@ Esta función es similar a [Sample](dx-graphics-hlsl-to-sample.md) , salvo que u
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Objeto</em><br/></td>
-<td>Cualquier tipo <a href="dx-graphics-hlsl-to-type.md">de objeto de textura</a> (excepto Texture2DMS y Texture2DMSArray).<br/></td>
+<td>Cualquier <a href="dx-graphics-hlsl-to-type.md">tipo de objeto de</a> textura (excepto Texture2DMS y Texture2DMSArray).<br/></td>
 </tr>
 <tr class="even">
-<td><span id="S"></span><span id="s"></span><em>Seg</em><br/></td>
-<td>de Un <a href="dx-graphics-hlsl-sampler.md">Estado de muestra</a>. Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.<br/></td>
+<td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
+<td>[in] Un <a href="dx-graphics-hlsl-sampler.md">estado sampler</a>. Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Cód</em><br/></td>
-<td>de Coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura. <br/> 
+<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Ubicación</em><br/></td>
+<td>[in] Coordenadas de textura. El tipo de argumento depende del tipo texture-object. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -87,20 +83,20 @@ Esta función es similar a [Sample](dx-graphics-hlsl-to-sample.md) , salvo que u
 </table>
 
 <p> </p>
-<p>Si el objeto Texture es una matriz, el último componente es el índice de la matriz.</p></td>
+<p>Si el objeto de textura es una matriz, el último componente es el índice de la matriz.</p></td>
 </tr>
 <tr class="even">
-<td><p><span id="LOD"></span><span id="lod"></span><em>LOD</em></p></td>
-<td><p>de Número que especifica el nivel de mipmap. Si el valor es = 0, se usa zero'th (el mapa más grande). El valor fraccionario (si se proporciona) se usa para interpolar entre dos niveles de mipmap.</p></td>
+<td><p><span id="LOD"></span><span id="lod"></span><em>Lod</em></p></td>
+<td><p>[in] Número que especifica el nivel de mapa mip. Si el valor es = 0, se usa el cero (mapa más grande). El valor fraccionrio (si se proporciona) se usa para interpolar entre dos niveles de mapa mip.</p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Posición</em></p></td>
-<td><p>de Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. el desplazamiento se aplica a la ubicación antes del muestreo. Los desplazamientos de textura deben ser estáticos. El tipo de argumento depende del tipo de objeto de textura. Para obtener más información, vea <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">aplicar desplazamientos de coordenadas de textura</a>.</p>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensar</em></p></td>
+<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura; el desplazamiento se aplica a la ubicación antes del muestreo. Los desplazamientos de textura deben ser estáticos. El tipo de argumento depende del tipo texture-object. Para obtener más información, vea <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">Aplicar desplazamientos de coordenadas de textura.</a></p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -135,15 +131,15 @@ Esta función es similar a [Sample](dx-graphics-hlsl-to-sample.md) , salvo que u
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo de plantilla de la textura, que puede ser un vector de un solo componente o de varios componentes. El formato se basa en el formato de [**DXGI \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)de la textura.
+El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en el [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 | x        | x         | x        | x         | x        | x         |
 
@@ -151,12 +147,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-1.  TextureCubeArray está disponible en el modelo de sombreador 4,1 o superior.
-2.  El modelo de sombreador 4,1 está disponible en Direct3D 10,1 o superior.
+1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
 
 ## <a name="example"></a>Ejemplo
 
-Este ejemplo de código parcial procede del archivo Instancing. FX en el [ejemplo Instancing10](https://msdn.microsoft.com/library/Ee416415(v=VS.85).aspx).
+Este ejemplo de código parcial es del archivo Instancing.fx del [ejemplo Instancing10](https://msdn.microsoft.com/library/Ee416415(v=VS.85).aspx).
 
 
 ```
@@ -186,7 +182,7 @@ float3 RandomDir(float fOffset)
 
 <dl> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

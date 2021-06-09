@@ -1,0 +1,302 @@
+### YamlMime:FAQ
+metadata:
+  title: Preguntas más frecuentes sobre Direct3D 10
+  description: Este artículo contiene algunas de las preguntas más frecuentes sobre Direct3D 10 desde el punto de vista de un desarrollador que está porciendo una aplicación existente de Direct3D 9 (D3D9) a Direct3D 10 (D3D10).
+  ms.assetid: da3022ca-b120-d0d7-6747-65b946dbc73c
+  ms.topic: article
+  ms.date: 05/31/2018
+  ms.openlocfilehash: e4d83f20d5dac1c067144e715dee7331cabe2ce7
+  ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 06/09/2021
+  ms.locfileid: "111852749"
+title: Preguntas más frecuentes sobre Direct3D 10
+summary: >
+  Este artículo contiene algunas de las preguntas más frecuentes sobre Direct3D 10 desde el punto de vista de un desarrollador que está porciendo una aplicación existente de Direct3D 9 (D3D9) a Direct3D 10 (D3D10).
+sections:
+- name: Búferes constantes
+  questions:
+  - question: ¿Cuál es la mejor manera de actualizar los búferes constantes?
+    answer: UpdateSubresource y Map with Discard deben tener la misma velocidad. Elija entre ellas en función de cuál copie la menor cantidad de memoria. Si ya tiene los datos almacenados en memoria en un bloque contiguo, use UpdateSubresource. Si necesita acumular datos de otros lugares, use Mapa con Descartar.
+  - question: ¿Cuál es la peor manera de organizar los búferes constantes?
+    answer: >
+      El peor rendimiento se realiza colocando todas las constantes de un sombreador determinado en un búfer constante. Aunque esta suele ser la manera más fácil de portabilidad de D3D9 a D3D10, puede paralizar el rendimiento. Por ejemplo, considere un escenario que usa el siguiente búfer constante:
+
+
+      ``` syntax
+
+      cbuffer VSGlobalsCB
+
+      {
+          matrix  ViewProj;
+          matrix  Bones[100];
+          matrix  World;
+          float   SpecPower;
+          float4  BDRFCoefficients;
+          float   AppTime;
+          uint2   RenderTargetSize;
+      };
+
+      ```
+
+
+      El búfer es de 6560 bytes. Supongamos que hay una aplicación con 1000 objetos que se van a representar, 100 de los cuales son mallas de máscara y 900 de las cuales son mallas estáticas. Además, suponga que esta aplicación usa la asignación de sombras con una fuente de luz. Esto significa que hay dos pases, uno para el mapa de profundidad representado a partir de la luz y otro para el paso de representación hacia delante. Esto da como resultado 2000 llamadas a draw. Aunque cada llamada a draw no necesita actualizar cada parte del búfer constante, todo el búfer constante todavía se actualiza y se envía a la tarjeta. Esto da como resultado la actualización de 13 MB de datos por fotograma (2000 llamadas a draw veces 6560 KB).
+  - question: ¿Cuál es la mejor manera de organizar mis búferes constantes?
+    answer: "La mejor manera es organizar los búferes constantes por frecuencia de actualización. Las constantes que se actualizan a frecuencias similares deben estar en el mismo búfer. Por ejemplo, considere el escenario que se presenta en \"¿Cuál es la peor manera de organizar los búferes constantes?\", pero con un mejor diseño constante:\n\n``` syntax\ncbuffer VSGlobalPerFrameCB\n  { \n    float   AppTime; \n  };\ncbuffer VSPerSkinnedCB\n  { \n    matrix  Bones[100]; \n  };\ncbuffer VSPerStaticCB\n  {\n    matrix  World;\n  };\ncbuffer VSPerPassCB\n  {\n    matrix  ViewProj;\n    uint2   RenderTargetSize;\n  };\ncbuffer VSPerMaterialCB\n  {\n    float   SpecPower;\n    float4  BDRFCoefficients;\n  };    \n```\n\nLos búferes constantes se dividen por su frecuencia de actualización, pero esto solo es la mitad de la solución. La aplicación debe actualizar correctamente los búferes constantes para aprovechar al máximo la división. Asumiremos la misma escena que antes: 900 mallas estáticas, 100 mallas con máscara, un paso de luz y un paso hacia delante. También se supone que se almacenarán algunos búferes constantes por objeto. Esto significa que cada objeto contendrá un VSPerSkinnedCB o UN VSPerStaticCB, dependiendo de si está des máscara o estático. Esto se hace para evitar duplicar la cantidad de matrices enviadas a través de la canalización.\n\nDividimos el marco en tres fases. La primera fase es el principio del marco y no implica ninguna representación, solo actualizaciones constantes.\n\n\n\n**Marco de inicio**\n\n\n-   Actualización de VSGlobalPerFrameCB para el tiempo de aplicación (4 bytes)\n-   Actualización de 100 VSPerSkinnedCB para los 100 objetos con máscara (640 000 bytes)\n-   Actualización de VSPerStaticCB para 900 objetos estáticos (57600 bytes)\n\nA continuación, se muestra el paso del mapa de sombras. Observe que el único búfer constante que se actualiza realmente es VSPerPassCB. Todos los demás búferes constantes se actualizaron durante el paso del marco de inicio. Aunque todavía necesitamos enlazar estos búferes constantes, la cantidad de información que se pasa a la tarjeta de vídeo es mínima, ya que los búferes ya se han actualizado.\n\n\n**Shadow Pass**\n\n\n-   Actualización de VSPerPassCB (72 bytes)\n-   Dibujar 100 mallas con máscara (100 enlaces, sin actualizaciones)\n-   Dibujar 900 mallas estáticas (100 enlaces, sin actualizaciones)\n\nDel mismo modo, el paso de representación hacia delante solo necesita actualizar los datos por material, ya que no se almacenaba por malla. Si se supone que hay 500 materiales en uso en la escena:\n\n\n**Forward Pass**\n\n\n-   Actualización de VSPerPassCB (72 bytes)\n-   Actualización de 500 VSPerMaterialCBs (10 000 bytes)\n\nEsto da como resultado un total de solo 707 KB. Aunque se trata de un escenario muy derivado, muestra la cantidad de sobrecarga de actualización constante que se puede reducir mediante la ordenación de constantes por frecuencia de actualización.\n\n \n"
+  - question: ¿Qué ocurre si no tengo suficiente espacio para almacenar búferes constantes individuales para mis mallas, material, entre otros?
+    answer: >
+      Siempre puede usar un sistema en capas de búferes constantes. Cree búferes constantes de tamaño variable (16 bytes, 32 bytes, 64 bytes, entre otros) hasta el mayor tamaño de búfer constante necesario. Cuando llegue el momento de enlazar un búfer constante a un sombreador, seleccione el búfer constante más pequeño que pueda contener los datos necesarios para el sombreador. Aunque este enfoque es ligeramente menos eficaz, es un buen paso intermedio.
+  - question: Estoy compartiendo búferes constantes entre diferentes sombreadores. Un sombreador puede usar todas las constantes, pero otro puede usar algunas de las constantes. ¿Cuál es la mejor manera de actualizar estos datos?
+    answer: >
+      Un enfoque es dividir aún más el búfer constante. Sin embargo, llega un punto en el que se enlazan demasiados búferes constantes. En este caso, mueva las constantes que es probable que varios sombreadores no utilicen al final del búfer constante. Al obtener los datos de variables del sombreador, use la marca D3D10 SVF USED de \_ \_ D3D10 \_ SHADER VARIABLE \_ DESC para determinar si se usa \_ la variable. Al colocar variables sin usar al final del búfer constante, puede enlazar un búfer más pequeño al sombreador que no use estas variables, lo que ahorra el costo de actualización.
+  - question: ¿Cuánto puedo mejorar mi velocidad de fotogramas si solo carbo los esqueletos de mi carácter una vez por fotograma en lugar de una vez por pase o dibujo?
+    answer: >
+      Puede mejorar la velocidad de fotogramas entre el 8 y el 50 por ciento en función de la cantidad de datos redundantes. En el peor de los casos, no se reducirá el rendimiento.
+  - question: ¿Cuántos búferes constantes debo haber enlazado a la vez?
+    answer: >
+      Enlace el número mínimo de búferes constantes que se necesitan para obtener todos los datos en el sombreador. En un escenario realista, cinco es el número recomendado de búferes constantes que se deben usar. Compartir búferes constantes entre sombreadores (enlazar el mismo CB a VS y PS) también puede mejorar el rendimiento.
+  - question: ¿Hay un costo por enlazar búferes constantes sin usarlos?
+    answer: >
+      Sí, si realmente no va a usar el búfer, no llame a VSSetConsantBuffer o PSSetConstantBuffer. Esta sobrecarga adicional de API puede sumar a lo largo de varias llamadas a draw.
+- name: Estado
+  questions:
+  - question: ¿Cuál es la mejor manera de administrar el estado en D3D10?
+    answer: >
+      La mejor solución es conocer todo el estado por adelantado y crear los objetos de estado por adelantado. Esto significa que, en tiempo de representación, el enlace de estado es la única operación que debe producirse. D3D10 también filtra los duplicados.
+  - question: Mi juego se ha cargado dinámicamente o tiene contenido generado por el usuario. No puedo cargar todos mis objetos de estado por adelantado. ¿Cuál debo hacer?
+    answer: >
+      Hay dos soluciones aquí. La primera es crear objetos de estado sobre la marcha y dejar que D3D10 filtre los duplicados. Sin embargo, esto no se recomienda para escenarios con muchos cambios de objetos de estado por fotograma. Una solución mejor es crear un algoritmo hash de los objetos de estado y crear un objeto de estado solo si no se encuentra uno que cumpla los requisitos en la tabla hash. El razonamiento subyacente al uso de una tabla hash personalizada es que una aplicación puede seleccionar un hash rápido en función del escenario de uso concreto para esa aplicación. Por ejemplo, si una aplicación solo cambia la máscara rendertargetwrite en BlendState y mantiene todos los demás valores iguales, la aplicación puede generar un hash a partir de rendertargetwritemask en lugar de toda la estructura.
+  - question: El estado AlphaTest ha desaparecido. ¿A dónde ha ir?
+    answer: >
+      AlphaTest ahora debe ser de rendimiento en el sombreador. Consulte el ejemplo FixedFuncEMU.
+  - question: ¿Qué ha ocurrido con los planos de recorte de usuario?
+    answer: >
+      Los planos de recorte de usuario se han movido al sombreador. Hay dos maneras de controlar esto. La primera es generar SV \_ ClipDistance desde el sombreador de vértices o el sombreador de geometría. La otra opción es usar el descarte en el sombreador de píxeles en función de algún valor pasado por el sombreador de vértices o el sombreador de geometría. Experimente con ambos para ver cuál es más rápido para su escenario concreto. El uso de SV ClipDistance podría hacer que el hardware usara una rutina de recorte basada en geometría que puede hacer que las llamadas a draw enlazadas a geometría se \_ ejecuten más lentamente. Del mismo modo, el uso de descarte desplaza el trabajo al sombreador de píxeles, lo que puede hacer que las llamadas a draw enlazadas a píxeles se ejecuten más lentamente.
+  - question: Las borras no respetan ninguna configuración de estado, como la configuración de la rect de la rect de la fábrica en mi estado rasterizador.
+    answer: >
+      Las borraciones se han separado del estado de canalización. Para obtener el comportamiento del estilo D3D9, emule borrar dibujando un cuadrándular de pantalla completa.
+  - question: He establecido mis estados de nuevo en el valor predeterminado para intentar diagnosticar un error de representación. Ahora mi pantalla solo muestra el color negro, aunque sé que estoy dibujando objetos en la pantalla.
+    answer: >
+      Al volver a establecer el estado en valores predeterminados (NULL), asegúrese de que SampleMask en la llamada a OMSetBlendState nunca sea cero. Si SampleMask está establecido en cero, todas las muestras se mostrarán lógicamente como AND con cero. En este escenario, ningún ejemplo superará la prueba blend.
+  - question: ¿Dónde se ha producido el estado D3DSAMP\SRGBTEXTURE?
+    answer: >
+      SRGB se quitó como parte del estado del muestreador y ahora está vinculado al formato de textura. El enlace de una textura SRGB dará como resultado el mismo muestreo que se obtiene si especifica D3DSAMP \_ SRGBTEXTURE en Direct3D 9.
+- name: Formatos
+  questions:
+  - question: ¿Qué formato D3D9 corresponde al formato D3D10?
+    answer: >
+      Para obtener información, [consulte Consideraciones de Direct3D 9 a Direct3D 10.](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-d3d9-to-d3d10-considerations)
+  - question: ¿Qué ha ocurrido con los formatos de textura A8R8G8B8?
+    answer: >
+      Han quedado en desuso en D3D10. Puede volver a crear el origen de las texturas como R8G8B8A8, o puede deslizar al cargar, o puede deslizar en el sombreador.
+  - question: Cómo usar texturas endeutadas?
+    answer: >
+      Coloque la paleta de colores en una textura o un búfer constante y encuadres con la canalización. En el sombreador de píxeles, realice una búsqueda indirecta con el índice de la textura de color verde.
+  - question: ¿Cuáles son estos nuevos formatos de SRGB?
+    answer: >
+      SRGB se quitó como parte del estado del muestreador y ahora está vinculado al formato de textura. El enlace de una textura SRGB dará como resultado el mismo muestreo que se obtiene si especifica D3DSAMP \_ SRGBTEXTURE en Direct3D 9.
+  - question: ¿Dónde se han situado los seguidores del triángulo?
+    answer: >
+      Los ventiladores de triángulo han quedado en desuso en D3D10. Los ventiladores triángulos deban convertirse en la canalización de contenido o en la carga.
+- name: Vinculación del sombreador
+  questions:
+  - question: Mis sombreadores direct3D 9 se compilan bien con el modelo de sombreador 4.0, pero cuando los enlazo a la canalización, se muestran errores de vinculación en la salida de depuración con el tiempo de ejecución de depuración.
+    answer: >
+      La vinculación del sombreador es mucho más estricta en D3D10. Los elementos de una fase posterior deben leerse en el orden en que se emiten en la fase anterior. Por ejemplo:
+
+
+      Salidas de un sombreador de vértices:
+
+
+      ``` syntax
+          float4 Pos  : SV_POSITION;
+          float3 Norm : NORMAL;
+          float2 Tex  : TEXCOORD0;
+      ```
+
+
+      Un sombreador de píxeles lee:
+
+
+      ``` syntax
+              float3 Norm : NORMAL;
+              float2 Tex  : TEXCOORD0;
+      ```
+
+
+      Aunque la posición no es necesaria en el sombreador de píxeles, se producirá un error de vinculación, ya que la posición se está generando desde el sombreador de vértices, pero no lo lee el sombreador de píxeles. La versión más correcta tendría este aspecto:
+
+
+      Salidas de un sombreador de vértices:
+
+
+      ``` syntax
+              float3 Norm : NORMAL;
+              float2 Tex  : TEXCOORD0;
+              float4 Pos  : SV_POSITION;
+      ```
+
+
+      Un sombreador de píxeles lee:
+
+
+      ``` syntax
+              float3 Norm : NORMAL;
+              float2 Tex  : TEXCOORD0;
+      ```
+
+
+      En este caso, el sombreador de vértices genera la misma información, pero ahora el sombreador de píxeles está leyendo las cosas en la salida del orden. Dado que el sombreador de píxeles no lee nada después de Texas, no tenemos que preocuparnos de que vs esté generando más información de la que está leyendo el PS.
+  - question: Necesito una firma de sombreador para crear un diseño de entrada, pero se cargan las mallas y se crean diseños antes de crear sombreadores. ¿Qué puedo hacer?
+    answer: >
+      Una solución es cambiar el orden y cargar sombreadores antes de cargar mallas. Sin embargo, esto es mucho más fácil de decir que hacerlo. Siempre puede crear los diseños de entrada a petición cuando la aplicación lo necesite. Tendrá que mantener una versión de la firma del sombreador. Debe crear un hash basado en el sombreador y el diseño del búfer, y crear solo el diseño de entrada si aún no existe uno que coincida.
+- name: Llamadas a Draw
+  questions:
+  - question: ¿Cuál es el límite de llamadas a draw para que D3D10 alcance los 60 Hz? ¿30 Hz?
+    answer: >
+      Direct3D 9 tenía una limitación en el número de llamadas a draw debido al costo de CPU por llamada a draw. En Direct3D 10, se ha reducido el costo de cada llamada a draw. Sin embargo, ya no hay una correlación definitiva entre las llamadas a draw y las velocidades de fotogramas. Dado que las llamadas a draw a menudo requieren muchas llamadas de soporte técnico (actualizaciones de búfer constante, enlaces de textura, configuración de estado, etc.), el impacto de la velocidad de fotogramas de la API ahora depende más del uso general de la API en lugar de simplemente dibujar recuentos de llamadas.
+- name: Recursos
+  questions:
+  - question: ¿Qué tipo de uso de recursos debo usar para qué operaciones?
+    answer: >
+      Use la siguiente hoja de códigos de seguridad:
+
+
+      -   La CPU actualiza el recurso más de una vez por fotograma: D3D10 \_ USAGE \_ DYNAMIC
+
+      -   La CPU actualiza el recurso menos de una vez por fotograma: D3D10 \_ USAGE \_ DEFAULT
+
+      -   La CPU no actualiza el recurso: D3D10 \_ USAGE \_ IMMUTABLE
+
+      -   La CPU debe leer el recurso: D3D10 \_ USAGE \_ STAGING
+
+
+      Dado que los búferes constantes siempre están diseñados para actualizarse con frecuencia, no se ajustan a la "hoja de códigos de seguridad". Para saber qué tipos de recursos se usarán para los búferes constantes, consulte la [sección Búferes](/windows/win32/dxtecharts/direct3d10-frequently-asked-questions#constant-buffers) constantes.
+  - question: ¿Qué ha ocurrido con DrawPrimitiveUP y DrawIndexedPrimitiveUP?
+    answer: >
+      Han desaparecido en D3D10. Para la geometría dinámica, use un búfer dinámico DE USO de D3D10 \_ \_ grande. Al principio del marco, asíéchalo con D3D10 \_ MAP \_ WRITE \_ DISCARD. Para cada llamada a draw posterior, avance el puntero de escritura más allá de la posición de los vértices dibujados anteriormente y asigne el búfer con D3D10 \_ MAP \_ WRITE NO \_ \_ OVERWRITE. Si está cerca del final del búfer antes del final del marco, ajuste el puntero de escritura alrededor del principio y asigne con D3D10 \_ MAP \_ WRITE \_ DISCARD.
+  - question: ¿Puedo escribir índices de 16 bits e índices de 32 bits en el mismo búfer de geometría dinámico?
+    answer: >
+      Sí, puede, pero esto puede incurrir en una penalización de rendimiento en cierto hardware. Es más seguro crear búferes independientes para datos dinámicos de índice de 16 bits y datos de índice de 32 bits.
+  - question: Cómo leer datos de la GPU a la CPU?
+    answer: >
+      Debe usar un recurso de almacenamiento provisional. Copie los datos del recurso de GPU en el recurso de almacenamiento provisional mediante CopyResource. Asigne el recurso de almacenamiento provisional para leer los datos.
+  - question: Mi aplicación dependía de la funcionalidad StretchRect.
+    answer: >
+      Dado que se trata básicamente de un contenedor para la funcionalidad básica de Direct3D, se quitó de la API. Parte de la funcionalidad StretchRect se ha movido a D3DX10LoadTextureFromTexture. Para las conversiones de formato y la copia de texturas, D3DX10LoadTextureFromTexture puede realizar el trabajo. Sin embargo, es probable que operaciones como la conversión de un tamaño a otro requieran una operación de representación en textura en la aplicación.
+  - question: No hay desplazamientos ni tamaños en las llamadas de asignación de recursos. Se encontraban en llamadas de bloqueo en Direct3D 9; ¿Por qué cambiaron?
+    answer: >
+      Los desplazamientos y tamaños de las llamadas de bloqueo en Direct3D 9 estaban básicamente desordenados por la API y, a menudo, el controlador los ignoraba. En su lugar, la aplicación debe calcular los desplazamientos a partir del puntero devuelto en la llamada a Map.
+- name: Profundidad como textura
+  questions:
+  - question: ¿Cuál es más rápido? ¿Usar la profundidad como textura o escribir la profundidad en alfa y leerla?
+    answer: >
+      Esto es específico de la aplicación y el hardware. Use el que guarde más ancho de banda. Si ya usa varios destinos de representación y tiene un canal adicional, escribir profundidad desde el sombreador puede ser una mejor solución. Además, escribir profundidad en alfa u otro destino de representación permite escribir valores de profundidad lineales que pueden acelerar los cálculos que necesitan acceder al búfer de profundidad.
+  - question: ¿Puedo tener una textura enlazada como entrada y enlazada como una textura de galería de símbolos de profundidad, siempre y cuando deshabilite las escrituras de profundidad?
+    answer: >
+      No en D3D10.
+- name: MSAA
+  questions:
+  - question: ¿Puedo resolver una textura de galería de símbolos de profundidad de MSAA?
+    answer: >
+      No en D3D10. Sin embargo, puede muestrear muestras individuales de la textura MSAA. Consulte la [sección HLSL](/windows/win32/dxtecharts/direct3d10-frequently-asked-questions#hlsl) para obtener más información.
+  - question: ¿Por qué mi aplicación se bloquea tan pronto como se habilita MSAA?
+    answer: >
+      Asegúrese de que está habilitando un número de calidad y un recuento de muestras de MSAA que el controlador enumera realmente.
+- name: Bloqueos
+  questions:
+  - question: Mi aplicación se bloquea en D3D10 o en el controlador y no sé por qué.
+    answer: >
+      El primer paso es habilitar el entorno de ejecución de depuración (marca [**D3D10 \_ CREATE \_ DEVICE \_ DEBUG**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_create_device_flag) pasada a [**D3D10CreateDevice).**](/windows/desktop/api/d3d10misc/nf-d3d10misc-d3d10createdevice) Esto expondrá los errores más comunes como salida de depuración.
+  - question: LA FUNCIÓN se bloquea cuando intento usar mi aplicación con ella.
+    answer: >
+      El primer paso es habilitar el entorno de ejecución de depuración (marca [**D3D10 \_ CREATE \_ DEVICE \_ DEBUG**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_create_device_flag) pasada a [**D3D10CreateDevice).**](/windows/desktop/api/d3d10misc/nf-d3d10misc-d3d10createdevice) LA FUNCIÓN tiene una probabilidad mucho mayor de bloqueo si la salida de depuración no está limpia.
+  - question: Mi juego se queda sin espacio de direcciones virtuales en Vista de 32 bits en D3D10. No tiene problemas en D3D9.
+    answer: >
+      Hubo algunos problemas con D3D10 y el espacio de direcciones virtuales. Esto se ha corregido en [KB940105.](https://support.microsoft.com/kb/940105) Si eso no soluciona el problema, asegúrese de no crear más recursos que se puedan asignar (bloquear) en D3D10 de los que estaba creando en D3D9. Piense también en la porción a 64 bits, ya que esto será más frecuente en el futuro.
+- name: Representación predicada
+  questions:
+  - question: He usado la representación predicada (en función de los resultados de la consulta de oclusión). ¿Por qué mi aplicación sigue siendo la misma velocidad?
+    answer: >
+      En primer lugar, asegúrese de que la representación que desea omitir es realmente el cuello de botella de la aplicación. Si no es el cuello de botella, omitir la representación no ayudará a la velocidad de fotogramas.
+
+
+      En segundo lugar, asegúrese de que haya transcurrido suficiente tiempo entre el problema de la consulta y la representación que desea predicar. Si la consulta no ha finalizado en el momento en que la llamada de representación llega a la GPU, la representación se producirá de todos modos.
+
+
+      En tercer lugar, el predicado solo omite determinadas llamadas. Las llamadas que se omiten son Draw, Clear, Copy, Update, ResolveSubresource y GenerateMips. Las llamadas state setting, IA setup, Map y Create no respetan el predicado. Si hay muchas llamadas de configuración de estado en torno a la llamada a draw que se va a predicar, estos estados se seguirán estableciendo.
+- name: Sombreador de geometría
+  questions:
+  - question: ¿Debo usar el sombreador de geometría para insertar mi (insertar algo aquí)?
+    answer: >
+      No. El sombreador de geometría NO debe usarse para la teselación.
+  - question: ¿Puedo usar el sombreador de geometría para crear geometría?
+    answer: >
+      Sí, en escenarios muy limitados. El sombreador de geometría de las partes D3D10 (2008) actuales no está equipado para controlar una gran expansión. Esto puede cambiar en el futuro. Los proveedores de tarjetas de vídeo pueden tener una ruta de acceso especial para una a cuatro expansiones debido al hardware point-sprite existente. Cualquier otra expansión tendría que ser muy limitada. Las muestras de ParticlesGS y PipesGS logran velocidades de fotogramas altas solo realizando una expansión limitada. Solo se expanden algunos puntos por fotograma.
+  - question: ¿Para qué debo usar el sombreador de geometría?
+    answer: >
+      Todo lo que requiere operaciones en una primitiva completa, como la detección de detecciones, coordenadas centradas en barras, y así sucesivamente. Úselo también para seleccionar a qué segmento de una matriz de destino de representación se va a enviar primitivas.
+  - question: ¿Puedo generar cantidades variables de geometría desde el sombreador de geometría?
+    answer: >
+      Sí, pero esto puede causar problemas de rendimiento. Tome el ejemplo de salida de 1 punto para una invocación y 4 puntos para otra. Al ajustarse dentro de las directrices de expansión, esto puede hacer que los subprocesos del sombreador de geometría se ejecuten en serie.
+  - question: ¿Cómo sabe D3D10 cómo generar índices de adyacencia para mi malla? O bien, ¿por qué D3D10 no se representa correctamente cuando se especifica que el sombreador de geometría necesita información de adyacencia?
+    answer: >
+      D3D10 no crea la información de adyacencia, sino la aplicación. La aplicación genera índices de adyacencia y deben contener seis índices por primitiva. de los seis, los índices impares numerados son los vértices adyacentes perimetrales. ID3DX10Mesh::GenerateAdjacencyAndPointsReps se puede usar para generar estos datos.
+- name: HLSL
+  questions:
+  - question: ¿Las instrucciones de tipo entero y bit a bit son lentas?
+    answer: >
+      Pueden ser. Es posible que varias tarjetas D3D10 solo puedan emitir operaciones de enteros en un subconjunto de las unidades de ALU disponibles. Esto depende en gran medida del hardware. Consulte a su proveedor de hardware individual para obtener recomendaciones sobre cómo abordar las operaciones de enteros en ese hardware concreto. Además, tenga mucho cuidado con las conversión entre tipos.
+  - question: ¿Qué le ha ocurrido a VPOS?
+    answer: >
+      Si declara una entrada en el sombreador de píxeles como SV POSITION, tendrá el mismo comportamiento que \_ declararla como VPOS.
+  - question: Cómo muestra una textura MSAA?
+    answer: >
+      En el sombreador, declare la textura como Texture2DMS. A continuación, puede capturar ejemplos individuales mediante los métodos Sample del objeto Texture2DMS.
+  - question: Cómo saber si se usa realmente una variable de sombreador en un búfer constante?
+    answer: >
+      Mire la estructura DESC de variable de sombreador D3D10 reflejada \_ \_ para esa \_ variable. uFlags debe tener establecida la marca D3D10 \_ SVF \_ USED.
+  - question: Cómo saber si una variable de sombreador en un búfer constante usa realmente FX10?
+    answer: >
+      Actualmente, esto no es posible mediante FX10.
+  - question: No tengo control sobre los búferes constantes que crea FX10. ¿Cómo se crean y actualizan?
+    answer: >
+      Todos los búferes constantes administrados por FX10 se crean como recursos USAGE DEFAULT de D3D10 y se actualizan \_ \_ mediante UpdateSubresource. Dado que FX10 mantiene un almacén de respaldo de todos los datos constantes, UpdateSubresource es el mejor enfoque para actualizar estos datos.
+  - question: Cómo emular la canalización de funciones fijas mediante sombreadores?
+    answer: >
+      Consulte el ejemplo FixedFuncEMU.
+  - question: ¿Debo usar el nuevo bucle , bucle , rama, y \[ \] así \[ \] \[ \] sucesivamente, sugerencias del compilador?
+    answer: >
+      En general, no. A menudo, el compilador probará ambas maneras y elegirá la más rápida. En algunos casos, puede que sea necesario usar la suplante , por ejemplo, cuando una captura de textura dentro de un \[ bucle necesita acceso a un \] degradado.
+  - question: ¿La precisión parcial marca alguna diferencia en D3D10? Puedo especificar precisión parcial en mi HLSL D3D9, pero no en mi HLSL D3D10.
+    answer: >
+      Todas las operaciones D3D10 se especifican para ejecutarse con una precisión de punto flotante de 32 bits. Por lo tanto, la precisión parcial no debe marcar ninguna diferencia en D3D10.
+  - question: En D3D9, podría realizar el filtrado de sombras de HW PCF enlazando un búfer de profundidad como una textura y usando instrucciones regulares de hlsl de texas2d. Cómo Hacer esto en D3D10?
+    answer: >
+      Debe usar un estado de sampler de comparación y usar instrucciones sampleCmp.
+  - question: ¿Cómo funciona esta palabra clave register en D3D10?
+    answer: >
+      La palabra clave register de D3D10 ahora se aplica a la ranura a la que está enlazado un recurso determinado. En este caso, el recurso puede ser buffer (constante o de otro tipo), textura o sampler.
+
+
+      -   Para los búferes constantes, use la sintaxis: register(bN), donde N es la ranura de entrada (0-15)
+
+      -   Para las texturas, use la sintaxis: register(tN), donde N es la ranura de entrada (0-127)
+
+      -   Para los muestreadores, use la sintaxis: register(sN), donde N es la ranura de entrada (0-127)
+  - question: Cómo colocar una variable dentro de un búfer constante si register solo se usa para especificar dónde enlazar todo el búfer?
+    answer: >-
+      Use la palabra clave packoffset. El argumento para packoffset tiene el formato c \[ 0-4095 \] . \[ x,y,z,w \] . Por ejemplo:
+
+
+      ``` syntax
+              cbuffer cbLotsOfEmptySpace
+              {
+              float   IWaste2Floats   : packoffset(c0.z);
+              float4  IWasteMore  : packoffset(c13);
+              };
+      ```
+
+
+      En este búfer constante, IWaste2Floats se coloca en el tercer valor float (12th byte) del búfer constante. IWasteMore se coloca en el 13º float4 o 52º float en el búfer constante.

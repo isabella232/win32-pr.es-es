@@ -13,26 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cf96e1db7dbb93c88ec741e309413dea3df2b01d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ab94cef0a9a33f23947e11b93a5487c65eee3890
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997002"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827044"
 ---
 # <a name="sv_groupid"></a>SV \_ GroupID
 
 Índices en los que se ejecuta un sombreador de proceso para el grupo de subprocesos. Los índices son para todo el grupo y no para un subproceso individual. Los valores posibles varían en el intervalo pasado como parámetros a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch). Por ejemplo, llamar a Dispatch(2,1,1) da como resultado valores posibles de 0,0,0 y 1,0,0.
 
-Define el desplazamiento de grupo dentro de [**una llamada a Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) por dimensión de la llamada de distribución.
+Define el desplazamiento de grupo dentro de [**una llamada de**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) dispatch, por dimensión de la llamada de distribución.
 
 ## <a name="type"></a>Tipo
 
 
 
-|       |
+| Tipo      |
 |-------|
-| Tipo  |
 | uint3 |
 
 
@@ -51,7 +50,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
@@ -66,7 +65,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Semántica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

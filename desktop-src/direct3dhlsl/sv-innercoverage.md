@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1ac278f0524446b5171ef278e169fbe7c3a082f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 168f90c17c9e6837d696ebb6dac8f39dc6dfb366
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996972"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826629"
 ---
 # <a name="sv_innercoverage"></a>SV \_ InnerCoverage
 
@@ -27,9 +27,8 @@ Entrada SVCoverage representa información de rasterización conservadora subest
 
 
 
-|      |
+| Tipo     |
 |------|
-| Tipo |
 | uint |
 
 
@@ -54,7 +53,7 @@ La rasterización conservadora está disponible en D3D11.3 y D3D12. Consulte
 [Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> <dt>
 
-[Modelos de sombreador 5.1 Valores del sistema](shader-model-5-1-system-values.md)
+[Valores del sistema del modelo de sombreador 5.1](shader-model-5-1-system-values.md)
 </dt> </dl>
 
  

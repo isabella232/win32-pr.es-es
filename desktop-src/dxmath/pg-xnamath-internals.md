@@ -1,75 +1,75 @@
 ---
-description: En este tema se describe el diseño interno de la biblioteca de DirectXMath.
+description: En este tema se describe el diseño interno de la biblioteca DirectXMath.
 ms.assetid: 31512657-c413-9e6e-e343-1ea677a02b8c
-title: Elementos internos de la biblioteca
+title: Biblioteca interna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccac708934c393a526fdb46d73f819d6557107f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f7c1843a83a81e7acac241c66dd18ff26217569
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696713"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827239"
 ---
-# <a name="library-internals"></a>Elementos internos de la biblioteca
+# <a name="library-internals"></a>Biblioteca interna
 
-En este tema se describe el diseño interno de la biblioteca de DirectXMath.
+En este tema se describe el diseño interno de la biblioteca DirectXMath.
 
 -   [Convenciones de llamada](#calling-conventions)
--   [Equivalencia de tipos de la biblioteca de gráficos](#graphics-library-type-equivalence)
--   [Constantes globales en la biblioteca de DirectXMath](#global-constants-in-the-directxmath-library)
--   [Windows SSE frente a SSE2](#windows-sse-versus-sse2)
--   [Variantes de rutina](#routine-variants)
+-   [Equivalencia de tipos de biblioteca de gráficos](#graphics-library-type-equivalence)
+-   [Constantes globales en la biblioteca DirectXMath](#global-constants-in-the-directxmath-library)
+-   [SSE de Windows frente a SSE2](#windows-sse-versus-sse2)
+-   [Variantes rutinarias](#routine-variants)
 -   [Incoherencias de la plataforma](#platform-inconsistencies)
 -   [Extensiones específicas de la plataforma](#platform-specific-extensions)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="calling-conventions"></a>Convenciones de llamada
 
-Para mejorar la portabilidad y optimizar el diseño de los datos, debe usar las convenciones de llamada adecuadas para cada plataforma admitida por la biblioteca de DirectXMath. En concreto, cuando se pasan objetos [**XMVECTOR**](xmvector-data-type.md) como parámetros, que se definen como alineados en un límite de 16 bytes, hay diferentes conjuntos de requisitos de llamada, en función de la plataforma de destino:
+Para mejorar la portabilidad y optimizar el diseño de datos, debe usar las convenciones de llamada adecuadas para cada plataforma compatible con la biblioteca DirectXMath. En concreto, cuando se pasan objetos [**XMVECTOR**](xmvector-data-type.md) como parámetros, que se definen como alineados en un límite de 16 bytes, hay diferentes conjuntos de requisitos de llamada, en función de la plataforma de destino:
 
 **Para Windows de 32 bits**
 
-En Windows de 32 bits, hay dos convenciones de llamada disponibles para el paso eficaz de los valores de [ \_ \_ M128](/cpp/cpp/m128) (que implementa [**XMVECTOR**](xmvector-data-type.md) en esa plataforma). El estándar es [ \_ \_ fastcall](https://msdn.microsoft.com/library/6xa169sk(VS.71).aspx), que puede pasar los tres primeros valores de [ \_ \_ M128](/cpp/cpp/m128) (instancias de **XMVECTOR** ) como argumentos a una función en un registro *sse/sse2* . [ \_ \_ fastcall](https://msdn.microsoft.com/library/6xa169sk(VS.71).aspx) pasa los argumentos restantes a través de la pila.
+Para Windows de 32 bits, hay dos convenciones de llamada disponibles para el paso eficaz de valores [ \_ \_ m128](/cpp/cpp/m128) (que implementa [**XMVECTOR**](xmvector-data-type.md) en esa plataforma). El estándar es [ \_ \_ fastcall](https://docs.microsoft.com/cpp/cpp/fastcall), que puede pasar los tres primeros valores [ \_ \_ m128](/cpp/cpp/m128) (instancias **XMVECTOR)** como argumentos a una función de un registro *SSE/SSE2.* [ \_ \_ fastcall](https://docs.microsoft.com/cpp/cpp/fastcall) pasa los argumentos restantes a través de la pila.
 
-Los compiladores de Microsoft Visual Studio más recientes admiten una nueva Convención de llamada, \_ \_ vectorcall, que puede pasar hasta seis valores [ \_ \_ M128](/cpp/cpp/m128) (instancias [**XMVECTOR**](xmvector-data-type.md) ) como argumentos a una función en un registro *sse/sse2* . También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)) a través de registros *sse/sse2* si hay espacio suficiente.
+Los compiladores de Microsoft Visual Studio más recientes admiten una nueva convención de llamada, vectorcall, que puede pasar hasta seis valores \_ \_ [ \_ \_ m128](/cpp/cpp/m128) (instancias [**XMVECTOR)**](xmvector-data-type.md) como argumentos a una función en un registro *de SSE/SSE2.* También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX)**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)a través de registros *de SSE/SSE2* si hay espacio suficiente.
 
-**Para las ediciones de 64 bits de Windows**
+**Para ediciones de 64 bits de Windows**
 
-En Windows de 64 bits, hay dos convenciones de llamada disponibles para el paso eficaz de los valores de [ \_ \_ M128](/cpp/cpp/m128) . El estándar es [ \_ \_ fastcall](https://msdn.microsoft.com/library/6xa169sk(VS.71).aspx), que pasa todos los valores de [ \_ \_ M128](/cpp/cpp/m128) en la pila.
+Para Windows de 64 bits, hay dos convenciones de llamada disponibles para pasar de forma eficaz valores [ \_ \_ m128.](/cpp/cpp/m128) El estándar es [ \_ \_ fastcall](https://docs.microsoft.com/cpp/cpp/fastcall), que pasa todos los [ \_ \_ valores m128](/cpp/cpp/m128) en la pila.
 
-Los compiladores de Visual Studio más recientes admiten la \_ \_ Convención de llamada vectorcall, que puede pasar hasta seis valores [ \_ \_ M128](/cpp/cpp/m128) (instancias [**XMVECTOR**](xmvector-data-type.md) ) como argumentos a una función en un registro *sse/sse2* . También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)) a través de registros *sse/sse2* si hay espacio suficiente.
+Los compiladores de Visual Studio más recientes admiten la convención de llamada vectorcall, que puede pasar hasta seis valores \_ \_ [ \_ \_ m128](/cpp/cpp/m128) (instancias [**XMVECTOR)**](xmvector-data-type.md) como argumentos a una función en un registro *de SSE/SSE2.* También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX)**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)a través de registros *de SSE/SSE2* si hay espacio suficiente.
 
-**Para Windows RT**
+**Para Windows en ARM**
 
-El sistema operativo Windows RT admite el paso de los cuatro primeros \_ \_ valores de n128 (instancias de [**XMVECTOR**](xmvector-data-type.md) ) en el registro.
+Windows en ARM & ARM64 admite pasar los cuatro primeros valores \_ \_ n128 (instancias [**XMVECTOR)**](xmvector-data-type.md) en el registro.
 
-**Solución de DirectXMath**
+**Solución DirectXMath**
 
-Los alias **FXMVECTOR**, **GXMVECTOR**, **HXMVECTOR** y **CXMVECTOR** admiten estas convenciones:
+Los alias **FXMVECTOR,** **GXMVECTOR,** **HXMVECTOR** y **CXMVECTOR** admiten estas convenciones:
 
--   Use el alias **FXMVECTOR** para pasar hasta las tres primeras instancias de [**XMVECTOR**](xmvector-data-type.md) usadas como argumentos a una función.
--   Use el alias **GXMVECTOR** para pasar la cuarta instancia de un [**XMVECTOR**](xmvector-data-type.md) utilizado como argumento a una función.
--   Use el alias **HXMVECTOR** para pasar las instancias quinta y sexta de un [**XMVECTOR**](xmvector-data-type.md) usado como argumento a una función. Para obtener información sobre consideraciones adicionales, vea la \_ \_ documentación de vectorcall.
--   Use el alias **CXMVECTOR** para pasar cualquier otra instancia de [**XMVECTOR**](xmvector-data-type.md) utilizada como argumento.
+-   Use el alias **FXMVECTOR** para pasar a las tres primeras instancias de [**XMVECTOR**](xmvector-data-type.md) que se usan como argumentos para una función.
+-   Use el alias **GXMVECTOR** para pasar la 4.ª instancia de [**un XMVECTOR**](xmvector-data-type.md) usado como argumento a una función.
+-   Use el alias **HXMVECTOR** para pasar las instancias 5 y 6 de un [**XMVECTOR**](xmvector-data-type.md) usado como argumento a una función. Para obtener información sobre consideraciones adicionales, consulte la \_ \_ documentación de vectorcall.
+-   Use el alias **CXMVECTOR** para pasar cualquier otra instancia de [**XMVECTOR**](xmvector-data-type.md) usada como argumentos.
 
 > [!Note]  
-> En el caso de los parámetros de salida, use siempre XMVECTOR \* o XMVECTOR& y omítalo con respecto a las reglas anteriores para los parámetros de entrada.
+> Para los parámetros de salida, use siempre XMVECTOR o XMVECTOR& omitirlos con respecto a las reglas anteriores para los parámetros \* de entrada.
 
  
 
-Debido a las limitaciones de \_ \_ vectorcall, se recomienda no usar **GXMVECTOR** o **HXMVECTOR** para los constructores de C++. Simplemente use **FXMVECTOR** para los tres primeros valores de [**XMVECTOR**](xmvector-data-type.md) y, luego, use **CXMVECTOR** para el resto.
+Debido a las limitaciones de vectorcall, se recomienda no usar \_ \_ **GXMVECTOR** o **HXMVECTOR** para constructores de C++. Solo tiene **que usar FXMVECTOR para** los tres primeros valores [**XMVECTOR**](xmvector-data-type.md) y, a continuación, **usar CXMVECTOR** para el resto.
 
-Los alias **FXMMATRIX** y **CXMMATRIX** sirven de ayuda para aprovechar el argumento HVA que se pasa con \_ \_ vectorcall.
+Los alias **FXMMATRIX** y **CXMMATRIX** ayudan a admitir el uso del argumento HVA pasando con \_ \_ vectorcall.
 
--   Use el alias **FXMMATRIX** para pasar el primer [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) como argumento a la función. Se supone que no tiene más de dos argumentos **FXMVECTOR** o más de dos argumentos Float, Double o **FXMVECTOR** en el ' derecho ' de la matriz. Para obtener información sobre consideraciones adicionales, vea la \_ \_ documentación de vectorcall.
--   En caso contrario, utilice el alias **CXMMATRIX** .
+-   Use el alias **FXMMATRIX** para pasar el primer [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) como argumento a la función. Esto supone que no tiene más de dos argumentos **FXMVECTOR** o más de dos argumentos float, double o **FXMVECTOR** a la "derecha" de la matriz. Para obtener información sobre consideraciones adicionales, consulte la \_ \_ documentación de vectorcall.
+-   Use el alias **CXMMATRIX en caso** contrario.
 
-Debido a las limitaciones de \_ \_ vectorcall, recomendamos que nunca use **FXMMATRIX** para los constructores de C++. Simplemente use **CXMMATRIX**.
+Debido a las limitaciones de vectorcall, se recomienda no usar \_ \_ **nunca FXMMATRIX para** constructores de C++. Solo tiene que **usar CXMMATRIX.**
 
-Además de los alias de tipo, también debe utilizar la anotación XM CALLCONV para asegurarse de que \_ la función usa la Convención de llamada adecuada ( \_ \_ fastcall frente a \_ \_ vectorcall) según el compilador y la arquitectura. Debido a las limitaciones de \_ \_ vectorcall, se recomienda no usar los \_ constructores XM CALLCONV para C++.
+Además de los alias de tipo, también debe usar la anotación CALLCONV de XM para asegurarse de que la función usa la convención de llamada adecuada \_ \_ \_ (fastcall frente \_ \_ a vectorcall) basada en el compilador y la arquitectura. Debido a las limitaciones de vectorcall, se recomienda no usar \_ \_ XM \_ CALLCONV para constructores de C++.
 
-A continuación se muestran las declaraciones de ejemplo que ilustran esta Convención:
+A continuación se muestran declaraciones de ejemplo que ilustran esta convención:
 
 
 ```C++
@@ -90,11 +90,11 @@ XMMATRIX XM_CALLCONV XMMatrixMultiplyTranspose(FXMMATRIX M1, CXMMATRIX M2);
 
 
 
-Para admitir estas convenciones de llamada, estos alias de tipo se definen como se indica a continuación (los parámetros deben pasarse por valor para que el compilador los tenga en cuenta para el paso en el registro):
+Para admitir estas convenciones de llamada, estos alias de tipo se definen de la siguiente manera (los parámetros deben pasarse por valor para que el compilador los tenga en cuenta para pasarlos en el registro):
 
-**Para aplicaciones Windows de 32 bits**
+**Para aplicaciones de Windows de 32 bits**
 
-Al usar \_ \_ fastcall:
+Cuando se usa \_ \_ fastcall:
 
 
 ```C++
@@ -122,9 +122,9 @@ typedef const XMMATRIX& CXMMATRIX;
 
 
 
-**Para aplicaciones Windows nativas de 64 bits**
+**Para aplicaciones nativas de Windows de 64 bits**
 
-Al usar \_ \_ fastcall:
+Cuando se usa \_ \_ fastcall:
 
 
 ```C++
@@ -152,7 +152,7 @@ typedef const XMMATRIX& CXMMATRIX;
 
 
 
-**Windows RT**
+**Windows en ARM**
 
 
 ```C++
@@ -166,106 +166,106 @@ typedef const XMMATRIX& CXMMATRIX;
 
 
 > [!Note]  
-> Aunque todas las funciones se declaran en línea y, en muchos casos, el compilador no necesitará usar convenciones de llamada para estas funciones, hay casos en los que el compilador puede decidir que es más eficaz no alinear la función y, en estos casos, queremos la mejor Convención de llamada posible para cada plataforma.
+> Aunque todas las funciones se declaran insertadas y, en muchos casos, el compilador no necesitará usar convenciones de llamada para estas funciones, hay casos en los que el compilador puede decidir que es más eficaz no incluir la función y, en estos casos, queremos la mejor convención de llamada posible para cada plataforma.
 
  
 
-## <a name="graphics-library-type-equivalence"></a>Equivalencia de tipos de la biblioteca de gráficos
+## <a name="graphics-library-type-equivalence"></a>Equivalencia de tipos de biblioteca de gráficos
 
-Para admitir el uso de la biblioteca de DirectXMath, muchos tipos y estructuras de la biblioteca de DirectXMath son equivalentes a las implementaciones de Windows de los tipos **D3DDECLTYPE** y **D3DFORMAT** , así como los tipos de [**\_ formato de DXGI**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) . 
+Para admitir el uso de la biblioteca DirectXMath, muchos tipos y estructuras de directXMath Library son equivalentes a las implementaciones de Windows de los tipos **D3DDECLTYPE** y **D3DFORMAT,** así como a los tipos [**\_ DXGI FORMAT.**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-| DirectXMath                      | D3DDECLTYPE                                                                           | D3DFORMAT                                                     | formato de DXGI \_                                                                                                                                                                                            |
+| DirectXMath                      | D3DDECLTYPE                                                                           | D3DFORMAT                                                     | FORMATO \_ DXGI                                                                                                                                                                                            |
 |----------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2)       |                                                                                       |                                                               | Formato de DXGI \_ \_ R8G8 \_ Sint                                                                                                                                                                                |
-| [**XMBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyte4)       | D3DDECLTYPE \_ BYTE4 (solo Xbox)                                                        | D3DFMT \_ x8x8x8x8                                              | Formato de DXGI \_ \_ x8x8x8x8 \_ Sint                                                                                                                                                                            |
-| [**XMBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyten2)     |                                                                                       | D3DFMT \_ V8U8                                                  | Formato de DXGI \_ \_ R8G8 \_ SNORM                                                                                                                                                                               |
-| [**XMBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyten4)     | D3DDECLTYPE \_ BYTE4N (solo Xbox)                                                       | D3DFMT \_ x8x8x8x8                                              | Formato de DXGI \_ \_ x8x8x8x8 \_ SNORM                                                                                                                                                                           |
-| [**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor)       | D3DDECLTYPE \_ D3DCOLOR                                                                 | D3DFMT \_ A8R8G8B8                                              | Formato de DXGI \_ \_ B8G8R8A8 \_ UNORM (dxgi 1.1 +)                                                                                                                                                               |
+| [**XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2)       |                                                                                       |                                                               | FORMATO DXGI \_ \_ R8G8 \_ SINT                                                                                                                                                                                |
+| [**XMBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyte4)       | D3DDECLTYPE \_ BYTE4 (solo Xbox)                                                        | D3DFMT \_ x8x8x8x8                                              | DXGI \_ FORMAT \_ x8x8x8x8 \_ SINT                                                                                                                                                                            |
+| [**XMBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyten2)     |                                                                                       | D3DFMT \_ V8U8                                                  | DXGI \_ FORMAT \_ R8G8 \_ SNORM                                                                                                                                                                               |
+| [**XMBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyten4)     | D3DDECLTYPE \_ BYTE4N (solo Xbox)                                                       | D3DFMT \_ x8x8x8x8                                              | DXGI \_ FORMAT \_ x8x8x8x8 \_ SNORM                                                                                                                                                                           |
+| [**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor)       | D3DDECLTYPE \_ D3DCOLOR                                                                 | D3DFMT \_ A8R8G8B8                                              | DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM (DXGI 1.1+)                                                                                                                                                               |
 | [**XMDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)         | D3DDECLTYPE \_ DEC4 (solo Xbox)                                                         | D3DDECLTYPE \_ DEC3 (solo Xbox)                                 |                                                                                                                                                                                                         |
 | [**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4)       | D3DDECLTYPE \_ DEC4N (solo Xbox)                                                        | D3DDECLTYPE \_ DEC3N (solo Xbox)                                |                                                                                                                                                                                                         |
-| [**XMFLOAT2**](/windows/win32/api/directxmath/ns-directxmath-xmfloat2)     | D3DDECLTYPE \_ FLOAT2                                                                   | D3DFMT \_ G32R32F                                               | Formato de DXGI \_ \_ R32G32 \_ float                                                                                                                                                                             |
-| [**XMFLOAT2A**](/previous-versions/windows/desktop/legacy/ee419469(v=vs.85))   | D3DDECLTYPE \_ FLOAT2                                                                   | D3DFMT \_ G32R32F                                               | Formato de DXGI \_ \_ R32G32 \_ float                                                                                                                                                                             |
-| [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3)     | D3DDECLTYPE \_ FLOAT3                                                                   |                                                               | Formato de DXGI \_ \_ R32G32B32 \_ float                                                                                                                                                                          |
-| [**XMFLOAT3A**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3a)   | D3DDECLTYPE \_ FLOAT3                                                                   |                                                               | Formato de DXGI \_ \_ R32G32B32 \_ float                                                                                                                                                                          |
-| [**XMFLOAT3PK**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk) |                                                                                       |                                                               | Formato de DXGI \_ \_ R11G11B10 \_ float                                                                                                                                                                          |
-| [**XMFLOAT3SE**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3se) |                                                                                       |                                                               | Formato de DXGI \_ \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                                                       |
-| [**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4)     | D3DDECLTYPE \_ FLOAT4                                                                   | D3DFMT \_ A32B32G32R32F                                         | Formato de DXGI \_ \_ R32G32B32A32 \_ float                                                                                                                                                                       |
-| [**XMFLOAT4A**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4a)   | D3DDECLTYPE \_ FLOAT4                                                                   | D3DFMT \_ A32B32G32R32F                                         | Formato de DXGI \_ \_ R32G32B32A32 \_ float                                                                                                                                                                       |
-| [**XMHALF2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2)       | D3DDECLTYPE \_ FLOAT16 \_ 2                                                               | D3DFMT \_ G16R16F                                               | Formato de DXGI \_ \_ R16G16 \_ float                                                                                                                                                                             |
-| [**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4)       | D3DDECLTYPE \_ FLOAT16 \_ 4                                                               | D3DFMT \_ A16B16G16R16F                                         | Formato de DXGI \_ \_ R16G16B16A16 \_ float                                                                                                                                                                       |
-| [**XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2)         |                                                                                       |                                                               | Formato de DXGI \_ \_ R32G32 \_ Sint                                                                                                                                                                              |
-| [**XMINT3**](/windows/win32/api/directxmath/ns-directxmath-xmint3)         |                                                                                       |                                                               | Formato de DXGI \_ \_ R32G32B32 \_ Sint                                                                                                                                                                           |
-| [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4)         |                                                                                       |                                                               | Formato de DXGI \_ \_ R32G32B32A32 \_ Sint                                                                                                                                                                        |
-| [**XMSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2)     | D3DDECLTYPE \_ SHORT2                                                                   | D3DFMT \_ V16U16                                                | Formato de DXGI \_ \_ R16G16 \_ Sint                                                                                                                                                                              |
-| [**XMSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2)   | D3DDECLTYPE \_ SHORT2N                                                                  | D3DFMT \_ V16U16                                                | Formato de DXGI \_ \_ R16G16 \_ SNORM                                                                                                                                                                             |
-| [**XMSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4)     | D3DDECLTYPE \_ SHORT4                                                                   | D3DFMT \_ x16x16x16x16                                          | Formato de DXGI \_ \_ R16G16B16A16 \_ Sint                                                                                                                                                                        |
-| [**XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn4)   | D3DDECLTYPE \_ SHORT4N                                                                  | D3DFMT \_ x16x16x16x16                                          | Formato de DXGI \_ \_ R16G16B16A16 \_ SNORM                                                                                                                                                                       |
-| [**XMUBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyte2)     |                                                                                       |                                                               | Formato de DXGI \_ \_ R8G8 \_ uint                                                                                                                                                                                |
-| [**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2)   |                                                                                       | D3DFMT \_ A8P8, D3DFMT \_ A8L8                                    | Formato de DXGI \_ \_ R8G8 \_ UNORM                                                                                                                                                                               |
-| [**XMUINT2**](/windows/win32/api/directxmath/ns-directxmath-xmuint2)       |                                                                                       |                                                               | Formato de DXGI \_ \_ R32G32 \_ uint                                                                                                                                                                              |
-| [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3)       |                                                                                       |                                                               | Formato de DXGI \_ \_ R32G32B32 \_ uint                                                                                                                                                                           |
-| [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint4)       |                                                                                       |                                                               | Formato de DXGI \_ \_ R32G32B32A32 \_ uint                                                                                                                                                                        |
-| [**XMU555**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu555)         |                                                                                       | D3DFMT \_ X1R5G5B5, D3DFMT \_ A1R5G5B5                            | Formato de DXGI \_ \_ B5G5R5A1 \_ UNORM                                                                                                                                                                           |
-| [**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565)         |                                                                                       | D3DFMT \_ R5G6B5                                                | Formato de DXGI \_ \_ B5G6R5 \_ UNORM                                                                                                                                                                             |
-| [**XMUBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyte4)     | D3DDECLTYPE \_ UBYTE4                                                                   | D3DFMT \_ x8x8x8x8                                              | Formato de DXGI \_ \_ x8x8x8x8 \_ uint                                                                                                                                                                            |
-| [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4)   | D3DDECLTYPE \_ UBYTE4N                                                                  | D3DFMT \_ x8x8x8x8                                              | Formato de DXGI \_ \_ x8x8x8x8 \_ UNORM<br/> \_Formato DXGI \_ R10G10B10 \_ XR \_ Bias \_ a2 \_ UNORM (use [**XMLoadUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudecn4_xr) y [**XMStoreUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudecn4_xr)).<br/> |
-| [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4)       | D3DDECLTYPE \_ UDEC4 (solo Xbox)<br/> D3DDECLTYPE \_ UDEC3 (solo Xbox)<br/>   | D3DFMT \_ A2R10G10B10<br/> D3DFMT \_ A2B10G10R10<br/> | Formato de DXGI \_ \_ R10G10B10A2 \_ uint                                                                                                                                                                         |
-| [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4)     | D3DDECLTYPE \_ UDEC4N (solo Xbox)<br/> D3DDECLTYPE \_ UDEC3N (solo Xbox)<br/> | D3DFMT \_ A2R10G10B10<br/> D3DFMT \_ A2B10G10R10<br/> | Formato de DXGI \_ \_ R10G10B10A2 \_ UNORM                                                                                                                                                                        |
-| [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) |                                                                                       | D3DFMT \_ A4R4G4B4, D3DFMT \_ X4R4G4B4                            | Formato de DXGI \_ \_ B4G4R4A4 \_ UNORM (dxgi 1.2 +)                                                                                                                                                               |
-| [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2)   | D3DDECLTYPE \_ USHORT2                                                                  | D3DFMT \_ G16R16                                                | Formato de DXGI \_ \_ R16G16 \_ uint                                                                                                                                                                              |
-| [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) | D3DDECLTYPE \_ USHORT2N                                                                 | D3DFMT \_ G16R16                                                | Formato de DXGI \_ \_ R16G16 \_ UNORM                                                                                                                                                                             |
-| [**XMUSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4)   | D3DDECLTYPE \_ USHORT4 (solo Xbox)                                                      | D3DFMT \_ x16x16x16x16                                          | Formato de DXGI \_ \_ R16G16B16A16 \_ uint                                                                                                                                                                        |
-| [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) | D3DDECLTYPE \_ USHORT4N                                                                 | D3DFMT \_ x16x16x16x16                                          | Formato de DXGI \_ \_ R16G16B16A16 \_ UNORM                                                                                                                                                                       |
+| [**XMFLOAT2**](/windows/win32/api/directxmath/ns-directxmath-xmfloat2)     | D3DDECLTYPE \_ FLOAT2                                                                   | D3DFMT \_ G32R32F                                               | DXGI \_ FORMAT \_ R32G32 \_ FLOAT                                                                                                                                                                             |
+| [**XMFLOAT2A**](/previous-versions/windows/desktop/legacy/ee419469(v=vs.85))   | D3DDECLTYPE \_ FLOAT2                                                                   | D3DFMT \_ G32R32F                                               | DXGI \_ FORMAT \_ R32G32 \_ FLOAT                                                                                                                                                                             |
+| [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3)     | D3DDECLTYPE \_ FLOAT3                                                                   |                                                               | DXGI \_ FORMAT \_ R32G32B32 \_ FLOAT                                                                                                                                                                          |
+| [**XMFLOAT3A**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3a)   | D3DDECLTYPE \_ FLOAT3                                                                   |                                                               | DXGI \_ FORMAT \_ R32G32B32 \_ FLOAT                                                                                                                                                                          |
+| [**XMFLOAT3PK**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk) |                                                                                       |                                                               | DXGI \_ FORMAT \_ R11G11B10 \_ FLOAT                                                                                                                                                                          |
+| [**XMFLOAT3SE**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3se) |                                                                                       |                                                               | FORMATO DXGI \_ \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                                                       |
+| [**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4)     | D3DDECLTYPE \_ FLOAT4                                                                   | D3DFMT \_ A32B32G32R32F                                         | DXGI \_ FORMAT \_ R32G32B32A32 \_ FLOAT                                                                                                                                                                       |
+| [**XMFLOAT4A**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4a)   | D3DDECLTYPE \_ FLOAT4                                                                   | D3DFMT \_ A32B32G32R32F                                         | DXGI \_ FORMAT \_ R32G32B32A32 \_ FLOAT                                                                                                                                                                       |
+| [**XMHALF2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2)       | D3DDECLTYPE \_ FLOAT16 \_ 2                                                               | D3DFMT \_ G16R16F                                               | DXGI \_ FORMAT \_ R16G16 \_ FLOAT                                                                                                                                                                             |
+| [**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4)       | D3DDECLTYPE \_ FLOAT16 \_ 4                                                               | D3DFMT \_ A16B16G16R16F                                         | DXGI \_ FORMAT \_ R16G16B16A16 \_ FLOAT                                                                                                                                                                       |
+| [**XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2)         |                                                                                       |                                                               | FORMATO DXGI \_ \_ R32G32 \_ SINT                                                                                                                                                                              |
+| [**XMINT3**](/windows/win32/api/directxmath/ns-directxmath-xmint3)         |                                                                                       |                                                               | FORMATO DXGI \_ \_ R32G32B32 \_ SINT                                                                                                                                                                           |
+| [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4)         |                                                                                       |                                                               | FORMATO DXGI \_ \_ R32G32B32A32 \_ SINT                                                                                                                                                                        |
+| [**XMSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2)     | D3DDECLTYPE \_ SHORT2                                                                   | D3DFMT \_ V16U16                                                | DXGI \_ FORMAT \_ R16G16 \_ SINT                                                                                                                                                                              |
+| [**XMSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2)   | D3DDECLTYPE \_ SHORT2N                                                                  | D3DFMT \_ V16U16                                                | DXGI \_ FORMAT \_ R16G16 \_ SNORM                                                                                                                                                                             |
+| [**XMSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4)     | D3DDECLTYPE \_ SHORT4                                                                   | D3DFMT \_ x16x16x16x16                                          | FORMATO DXGI \_ \_ R16G16B16A16 \_ SINT                                                                                                                                                                        |
+| [**XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn4)   | D3DDECLTYPE \_ SHORT4N                                                                  | D3DFMT \_ x16x16x16x16                                          | DXGI \_ FORMAT \_ R16G16B16A16 \_ SNORM                                                                                                                                                                       |
+| [**XMUBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyte2)     |                                                                                       |                                                               | DXGI \_ FORMAT \_ R8G8 \_ UINT                                                                                                                                                                                |
+| [**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2)   |                                                                                       | D3DFMT \_ A8P8, D3DFMT \_ A8L8                                    | DXGI \_ FORMAT \_ R8G8 \_ UNORM                                                                                                                                                                               |
+| [**XMUINT2**](/windows/win32/api/directxmath/ns-directxmath-xmuint2)       |                                                                                       |                                                               | FORMATO DXGI \_ \_ R32G32 \_ UINT                                                                                                                                                                              |
+| [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3)       |                                                                                       |                                                               | FORMATO DXGI \_ \_ R32G32B32 \_ UINT                                                                                                                                                                           |
+| [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint4)       |                                                                                       |                                                               | FORMATO DXGI \_ \_ R32G32B32A32 \_ UINT                                                                                                                                                                        |
+| [**XMU555**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu555)         |                                                                                       | D3DFMT \_ X1R5G5B5, D3DFMT \_ A1R5G5B5                            | DXGI \_ FORMAT \_ B5G5R5A1 \_ UNORM                                                                                                                                                                           |
+| [**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565)         |                                                                                       | D3DFMT \_ R5G6B5                                                | DXGI \_ FORMAT \_ B5G6R5 \_ UNORM                                                                                                                                                                             |
+| [**XMUBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyte4)     | D3DDECLTYPE \_ UBYTE4                                                                   | D3DFMT \_ x8x8x8x8                                              | DXGI \_ FORMAT \_ x8x8x8x8 \_ UINT                                                                                                                                                                            |
+| [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4)   | D3DDECLTYPE \_ UBYTE4N                                                                  | D3DFMT \_ x8x8x8x8                                              | DXGI \_ FORMAT \_ x8x8x8x8 \_ UNORM<br/> DXGI \_ FORMAT \_ R10G10B10 \_ XR \_ BIAS \_ A2 \_ UNORM (use [**XMLoadUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudecn4_xr) y [**XMStoreUDecN4 \_ XR).**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudecn4_xr)<br/> |
+| [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4)       | D3DDECLTYPE \_ UDEC4 (solo Xbox)<br/> D3DDECLTYPE \_ UDEC3 (solo Xbox)<br/>   | D3DFMT \_ A2R10G10B10<br/> D3DFMT \_ A2B10G10R10<br/> | FORMATO DXGI \_ \_ R10G10B10A2 \_ UINT                                                                                                                                                                         |
+| [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4)     | D3DDECLTYPE \_ UDEC4N (solo Xbox)<br/> D3DDECLTYPE \_ UDEC3N (solo Xbox)<br/> | D3DFMT \_ A2R10G10B10<br/> D3DFMT \_ A2B10G10R10<br/> | DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM                                                                                                                                                                        |
+| [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) |                                                                                       | D3DFMT \_ A4R4G4B4, D3DFMT \_ X4R4G4B4                            | DXGI \_ FORMAT \_ B4G4R4A4 \_ UNORM (DXGI 1.2+)                                                                                                                                                               |
+| [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2)   | D3DDECLTYPE \_ USHORT2                                                                  | D3DFMT \_ G16R16                                                | DXGI \_ FORMAT \_ R16G16 \_ UINT                                                                                                                                                                              |
+| [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) | D3DDECLTYPE \_ USHORT2N                                                                 | D3DFMT \_ G16R16                                                | DXGI \_ FORMAT \_ R16G16 \_ UNORM                                                                                                                                                                             |
+| [**XMUSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4)   | D3DDECLTYPE \_ USHORT4 (solo Xbox)                                                      | D3DFMT \_ x16x16x16x16                                          | FORMATO DXGI \_ \_ R16G16B16A16 \_ UINT                                                                                                                                                                        |
+| [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) | D3DDECLTYPE \_ USHORT4N                                                                 | D3DFMT \_ x16x16x16x16                                          | DXGI \_ FORMAT \_ R16G16B16A16 \_ UNORM                                                                                                                                                                       |
 
 
 
  
 
-## <a name="global-constants-in-the-directxmath-library"></a>Constantes globales en la biblioteca de DirectXMath
+## <a name="global-constants-in-the-directxmath-library"></a>Constantes globales en la biblioteca DirectXMath
 
-Para reducir el tamaño del segmento de datos, la biblioteca de DirectXMath usa la macro [XMGLOBALCONST](xmglobalconst.md) para hacer uso de varias constantes internas globales en su implementación. Por Convención, tales constantes globales internas llevan el prefijo **g \_ XM**. Normalmente, son uno de los tipos siguientes: [**XMVECTORU32**](xmvectoru32-data-type.md), [**XMVECTORF32**](xmvectorf32-data-type.md)o **XMVECTORI32**.
+Para reducir el tamaño del segmento de datos, la biblioteca DirectXMath usa la macro [XMGLOBALCONST](xmglobalconst.md) para hacer uso de una serie de constantes internas globales en su implementación. Por convención, estas constantes globales internas tienen como prefijo **g \_ XM**. Normalmente, son uno de los siguientes tipos: [**XMVECTORU32,**](xmvectoru32-data-type.md) [**XMVECTORF32**](xmvectorf32-data-type.md)o **XMVECVECVEC32**.
 
-Estas constantes globales internas están sujetas a cambios en futuras revisiones de la biblioteca de DirectXMath. Utilice funciones públicas que encapsulen las constantes cuando sea posible, en lugar de usar directamente los valores globales de **g \_ XM** . También puede declarar sus propias constantes globales mediante [XMGLOBALCONST](xmglobalconst.md).
+Estas constantes globales internas están sujetas a cambios en futuras revisiones de la biblioteca DirectXMath. Use funciones públicas que encapsulan las constantes siempre que sea posible en lugar de usar directamente los **valores globales de g \_ XM.** También puede declarar sus propias constantes globales mediante [XMGLOBALCONST.](xmglobalconst.md)
 
-## <a name="windows-sse-versus-sse2"></a>Windows SSE frente a SSE2
+## <a name="windows-sse-versus-sse2"></a>SSE de Windows frente a SSE2
 
-El conjunto de instrucciones SSE solo proporciona compatibilidad con vectores de punto flotante de precisión sencilla. DirectXMath debe hacer uso del conjunto de instrucciones SSE2 para proporcionar compatibilidad con vectores enteros. SSE2 es compatible con todos los procesadores Intel desde la introducción de Pentium 4, todos los procesadores AMD K8 y versiones posteriores, y todos los procesadores compatibles con x64.
+El conjunto de instrucciones SSE proporciona compatibilidad solo con vectores de punto flotante de precisión sencilla. DirectXMath debe usar el conjunto de instrucciones SSE2 para proporcionar compatibilidad con vectores enteros. SSE2 es compatible con todos los procesadores Intel desde la introducción de Pentium 4, todos los procesadores AMD K8 y posteriores, y todos los procesadores compatibles con x64.
 
 > [!Note]  
-> Windows 8 para x86 requiere compatibilidad con SSE2. Todas las versiones de Windows x64 requieren compatibilidad con SSE2. Windows RT (también conocido como Windows en ARM) requiere ARM \_ neón.
+> Windows 8 para x86 o posterior requiere compatibilidad con SSE2. Todas las versiones de Windows x64 requieren compatibilidad con SSE2. Windows en ARM/ARM64 requiere ARM \_ NEON.
 
  
 
-## <a name="routine-variants"></a>Variantes de rutina
+## <a name="routine-variants"></a>Variantes rutinarias
 
-Hay varias variantes de las funciones de DirectXMath que facilitan el trabajo:
+Hay varias variantes de las funciones de DirectXMath que facilitan su trabajo:
 
--   Funciones de comparación para crear una bifurcación condicional complicada basada en un número menor de operaciones de comparación vectoriales. El nombre de estas funciones termina en "R", como XMVector3InBoundsR. Las funciones devuelven un registro de comparación como un valor devuelto de UINT o como un parámetro de salida UINT. Puede usar las macros ** \* XMComparision* _ para probar el valor.
--   Funciones de batch para realizar operaciones de estilo de lote en matrices de vectores más grandes. El nombre de estas funciones termina en "Stream", como [_ *XMVector3TransformStream* *](/windows/win32/api/directxmath/nf-directxmath-xmvector3transformstream). Las funciones operan en una matriz de entradas y generan una matriz de salidas. Normalmente, toman un intervalo de entrada y salida.
--   Funciones de estimación que implementan una estimación más rápida en lugar de un resultado más lento y más preciso. El nombre de estas funciones termina en "est", como [**XMVector3NormalizeEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector3normalizeest). El impacto en la calidad y el rendimiento del uso de la estimación varía según la plataforma y la plataforma, pero se recomienda usar variantes de estimación para el código sensible al rendimiento.
+-   Funciones de comparación para crear bifurcaciones condicionales complicadas basadas en un número menor de operaciones de comparación de vectores. El nombre de estas funciones termina en "R", como XMVector3InBoundsR. Las funciones devuelven un registro de comparación como un valor devuelto UINT o como un parámetro de salida UINT. Puede usar las macros **XMComparision \*** para probar el valor.
+-   Funciones por lotes para realizar operaciones de estilo por lotes en matrices de vectores más grandes. El nombre de estas funciones termina en "Stream", como [**XMVector3TransformStream.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3transformstream) Las funciones funcionan en una matriz de entradas y generan una matriz de salidas. Normalmente, toman un paso de entrada y salida.
+-   Funciones de estimación que implementan una estimación más rápida en lugar de un resultado más lento y preciso. El nombre de estas funciones termina en "Est", como [**XMVector3NormalizeEst.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3normalizeest) El impacto en la calidad y el rendimiento del uso de la estimación varía de una plataforma a otra, pero se recomienda usar variantes de estimación para el código que tiene en cuenta el rendimiento.
 
 ## <a name="platform-inconsistencies"></a>Incoherencias de la plataforma
 
-La biblioteca de DirectXMath está pensada para su uso en aplicaciones y juegos de gráficos sensibles al rendimiento. Por lo tanto, la implementación está diseñada para ofrecer una velocidad óptima en todas las plataformas admitidas. Los resultados en las condiciones de límite, especialmente los que generan especiales de punto flotante, pueden variar de un destino a un destino. Este comportamiento también dependerá de otras opciones de configuración en tiempo de ejecución, como la palabra de control x87 para el destino no intrínsecos de bits de Windows 32 o la palabra de control de SSE para Windows 32-bit y 64 bits. Además, habrá diferencias en las condiciones de límite entre varios proveedores de CPU.
+La biblioteca DirectXMath está pensada para usarse en juegos y aplicaciones de gráficos sensibles al rendimiento. Por lo tanto, la implementación está diseñada para una velocidad óptima que realiza un procesamiento normal en todas las plataformas admitidas. Es probable que los resultados en condiciones de límite, especialmente los que generan especiales de punto flotante, varían de destino a destino. Este comportamiento también dependerá de otras configuraciones en tiempo de ejecución, como la palabra de control x87 para el destino no intrínsecos de Windows de 32 bits o la palabra de control SSE para Windows de 32 y 64 bits. Además, habrá diferencias en las condiciones de límite entre varios proveedores de CPU.
 
-No use DirectXMath en las aplicaciones científicas o de otro lugar donde la precisión numérica sea primordial. Además, esta limitación se refleja en la falta de compatibilidad con los cálculos de precisión doble u otros.
+No use DirectXMath en aplicaciones científicas u otras en las que la precisión numérica sea fundamental. Además, esta limitación se refleja en la falta de compatibilidad con cálculos de precisión doble u otros cálculos de precisión extendidos.
 
 > [!Note]  
-> Las \_ \_ \_ rutas de acceso del \_ código escalar no intrínsecos de XM generalmente están escritas para el cumplimiento, no para el rendimiento. También variarán los resultados de la condición de límite.
+> Por lo general, las rutas de acceso de código escalar XM NO INTRINSICS se \_ \_ \_ \_ escriben para el cumplimiento, no para el rendimiento. Los resultados de la condición de límite también variarán.
 
  
 
 ## <a name="platform-specific-extensions"></a>Extensiones específicas de la plataforma
 
-La biblioteca de DirectXMath está diseñada para simplificar la programación de C++ SIMD, lo que proporciona una excelente compatibilidad con las plataformas x86, x64 y Windows RT mediante instrucciones intrínsecas compatibles ampliamente (SSE2 y ARM-neón).
+La biblioteca DirectXMath está diseñada para simplificar la programación SIMD de C++ proporcionando una excelente compatibilidad con plataformas x86, x64 y Windows RT mediante instrucciones intrínsecas ampliamente compatibles (SSE2 y ARM-NEON).
 
-Sin embargo, hay ocasiones en las que es posible que las instrucciones específicas de la plataforma resulten beneficiosas. Debido a la forma en que se implementa DirectXMath, en muchos casos es trivial usar directamente los tipos de DirectXMath en las instrucciones intrínsecas compatibles con el compilador estándar y usar DirectXMath como ruta de acceso de reserva para las plataformas que no admiten la instrucción extendida.
+Sin embargo, hay ocasiones en las que las instrucciones específicas de la plataforma pueden resultar beneficiosas. Debido a la manera en que se implementa DirectXMath, en muchos casos es trivial usar los tipos directXMath directamente en instrucciones intrínsecas compatibles con el compilador estándar y usar DirectXMath como ruta de acceso de reserva para las plataformas que no admiten la instrucción extendida.
 
-Por ejemplo, a continuación se muestra un ejemplo simplificado del uso de la instrucción de producto SSE 4,1 dot-product. Tenga en cuenta que debe proteger explícitamente la ruta de acceso del código para evitar que se generen excepciones de instrucción no válidas en tiempo de ejecución. Asegúrese de que las rutas de acceso del código hacen que el trabajo sea lo suficientemente importante para justificar el costo adicional de la bifurcación, la complejidad del mantenimiento de varias rutas de acceso de código, etc.
+Por ejemplo, este es un ejemplo simplificado de cómo aprovechar la instrucción dot-product de SSE 4.1. Tenga en cuenta que debe proteger explícitamente la ruta de acceso del código para evitar generar excepciones de instrucciones no válidas en tiempo de ejecución. Asegúrese de que las rutas de acceso de código hacen un trabajo lo suficientemente importante como para justificar el costo adicional de la bifurcación, la complejidad de mantener varias rutas de acceso de código, y así sucesivamente.
 
 
 ```
-#include <windows.h>
+#include <Windows.h>
 #include <stdio.h>
 
 #include <DirectXMath.h>
@@ -283,12 +283,20 @@ void DetectCPUFeatures()
    // See __cpuid documentation on MSDN for more information
 
    int CPUInfo[4] = {-1};
-   __cpuid( CPUInfo, 0 );
+#if defined(__clang__) || defined(__GNUC__)
+   __cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
+   __cpuid(CPUInfo, 0);
+#endif
 
    if ( CPUInfo[0] >= 1 )
    {
-       __cpuid(CPUInfo, 1 );
- 
+#if defined(__clang__) || defined(__GNUC__)
+        __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
+        __cpuid(CPUInfo, 1);
+#endif
+
        if ( CPUInfo[2] & 0x80000 )
            g_bSSE41 = true;
    }
@@ -324,7 +332,7 @@ int main()
        r4 = XMVector4Dot( v1, v2 );
    }
 
-   ... 
+   ...
 
    return 0;
 }
@@ -332,13 +340,13 @@ int main()
 
 
 
-Para obtener más información acerca de las extensiones específicas de la plataforma, consulte:
+Para más información sobre las extensiones específicas de la plataforma, consulte:
 
 <dl>
 
-[DirectXMath: SSE, SSE2 y ARM-neón](https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/)  
+[DirectXMath: SSE, SSE2 y ARM-NEON](https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/)  
 [DirectXMath: SSE3 y SSSE3](https://walbourn.github.io/directxmath-sse3-and-ssse3/)  
-[DirectXMath: SSE 4.1 y SSE 4.2](https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/)  
+[DirectXMath: SSE4.1 y SSE4.2](https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/)  
 [DirectXMath: AVX](https://walbourn.github.io/directxmath-avx/)  
 [DirectXMath: F16C y FMA](https://walbourn.github.io/directxmath-f16c-and-fma/)  
 [DirectXMath: AVX2](https://walbourn.github.io/directxmath-avx2/)  
