@@ -3,55 +3,55 @@ title: Lenguaje de marcado de vectores (VML)
 description: Lenguaje de marcado de vectores (VML)
 ms.assetid: 1f30d60f-3d4f-43e4-9a2b-424a5ee8f852
 keywords:
-- Lenguaje de marcado de vectores (VML), acerca de
-- VML (Lenguaje de marcado de vectores), acerca de
+- Lenguaje de marcado de vectores (VML),about
+- VML (Lenguaje de marcado de vectores),about
 - gráficos vectoriales, acerca de
-- gráficos vectoriales, Lenguaje de marcado de vectores (VML)
-- Lenguaje de marcado de vectores (VML), World Wide Web Consortium (W3C)
-- VML (Lenguaje de marcado de vectores), World Wide Web Consortium (W3C)
-- gráficos vectoriales, World Wide Web Consortium (W3C)
+- vector graphics,Lenguaje de marcado de vectores (VML)
+- Lenguaje de marcado de vectores (VML),World Wide Web Consortium (W3C)
+- VML (Lenguaje de marcado de vectores),World Wide Web Consortium (W3C)
+- vector graphics,World Wide Web Consortium (W3C)
 - gráficos vectoriales, ventajas de VML
 - Lenguaje de marcado de vectores (VML), ventajas
-- VML (Lenguaje de marcado de vectores), ventajas
+- VML (Lenguaje de marcado de vectores),benefits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ba51fd041f36915eaafe20201876653f597e04
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 4637fff0550ce9c93e295c51fc529f62c370b8aa
+ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105678614"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111910262"
 ---
 # <a name="vector-markup-language-vml"></a>Lenguaje de marcado de vectores (VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!NOTE]
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
-Lenguaje de marcado de vectores (VML) es un formato de intercambio, edición y entrega basado en XML para gráficos vectoriales de alta calidad en la web que satisface las necesidades de los usuarios de productividad y los profesionales de diseño gráfico. XML es un lenguaje emergente sencillo, flexible y abierto basado en texto que complementa HTML. (Vea la [sección XML](/documentation/?frame=true) de MSDN Library para obtener información detallada sobre XML).
+Lenguaje de marcado de vectores (VML) es un formato de intercambio, edición y entrega basado en XML para gráficos vectoriales de alta calidad en la Web que satisface las necesidades tanto de los usuarios de productividad como de los profesionales del diseño gráfico. XML es un lenguaje emergente basado en texto simple, flexible y abierto que complementa a HTML. (Consulte la [sección XML](/documentation/?frame=true) de MSDN Library para obtener información detallada sobre XML).
 
-VML es compatible actualmente con Microsoft Internet Explorer versión 5,0 o posterior.
+VmL es compatible actualmente con Microsoft Internet Explorer versión 5.0 o posterior.
 
-VML se ha propuesto al W3C como estándar para los gráficos vectoriales en la web (vea [lenguaje de marcado de vectores (VML)](https://www.w3.org/TR/NOTE-VML)). Microsoft continúa liderando la carga en el desarrollo y la implementación de tecnologías basadas en XML, trabajando con los principales asociados del sector (AutoDesk, Hewlett-Packard, Macromedia, Visio) y el W3C para avanzar en los estándares basados en Web. Esperamos trabajar con el W3C para impulsar en última instancia un formato estándar para los gráficos vectoriales en la Web.
+VmL se ha propuesto al W3C como un estándar para gráficos vectoriales en la Web (consulte Lenguaje de marcado de vectores [(VML)](https://www.w3.org/TR/NOTE-VML)). Microsoft sigue a la cabeza en el desarrollo y la implementación de tecnologías basadas en XML, trabajando con asociados líderes del sector (AutoDesk, Autodesk-Pcl, Macromedia, Visio) y el W3C para avanzar en los estándares basados en web. Esperamos trabajar con el W3C para, en última instancia, llevar a un formato estándar para gráficos vectoriales en la Web.
 
 VML también es compatible con Microsoft Office 2000 o posterior. Microsoft Word, Microsoft Excel y Microsoft PowerPoint se pueden usar para crear gráficos VML.
 
-### <a name="using-vml"></a>Usar VML
+### <a name="using-vml"></a>Uso de VML
 
-Para usar VML en las páginas web, use un elemento de estilo para importar el comportamiento de VML, tal y como se muestra en el código siguiente.
+Para usar VML en las páginas web, use un elemento de estilo para importar el comportamiento de VML, como se muestra en el código siguiente.
 
 ```
 <style>v\: * { behavior:url(#default#VML); display:inline-block }</style>
 ```
 
-A continuación, declare el espacio de nombres VML, tal como se muestra en el ejemplo de código siguiente.
+A continuación, declare el espacio de nombres VML, como se muestra en el ejemplo de código siguiente.
 
 ```
 <xml:namespace ns="urn:schemas-microsoft-com:vml" prefix="v" />
 ```
 
-Por último, agregue elementos VML para definir efectos visuales. Por ejemplo, el siguiente código VML crea un óvalo rojo.
+Por último, agregue elementos VML para definir los efectos de los objetos visuales. Por ejemplo, el siguiente código VML crea un óvalo rojo.
 
 ```
 <v:oval style="width:100pt;height:50pt" fillcolor="red">
@@ -59,20 +59,20 @@ Por último, agregue elementos VML para definir efectos visuales. Por ejemplo, e
 ```
 
 > [!NOTE]
-> Para obtener los mejores resultados cuando se usan documentos en modo Strict, asegúrese de que el marcado es válido y está bien formado. Para obtener más información, vea la. Página de referencia DOCTYPE.
+> Para obtener mejores resultados al usar documentos en modo estricto, asegúrese de que el marcado es válido y tiene el formato correcto. Para obtener más información, vea ! Página de referencia de DOCTYPE.
 
 
 ### <a name="benefits-of-vml"></a>Ventajas de VML
 
--   VML facilita la creación de usuarios y autores de productividad. Facilita el intercambio (a través de cortar y pegar) y la edición posterior de los gráficos vectoriales entre una gran variedad de aplicaciones de productividad y diseño.
--   VML proporciona descargas gráficas más rápidas y una mejor experiencia de usuario. Permite la entrega de gráficos vectoriales escalables completamente integrados y de alta calidad en la web, en un formato basado en texto abierto. En lugar de hacer referencia a gráficos como archivos externos, los gráficos VML se entregan en línea con la página HTML, lo que les permite interactuar y escalar con la interacción del usuario.
--   VML está abierto y basado en estándares. Es un formato basado en XML. XML 1,0 es un lenguaje abierto, simple y basado en texto para describir los datos estructurados en la web y complementa el código HTML para mostrarlo. VML también admite otros estándares del W3C, como Hojas de estilo CSS 2,0 (CSS), que especifica la información de estilo y la posición en 2D, así como el Document Object Model (DOM), que permite a los desarrolladores interactuar de forma coherente con los elementos de la página como objetos.
+-   VML facilita la creación a los usuarios y autores de productividad. Facilita el intercambio (mediante cortar y pegar) y la posterior edición de gráficos vectoriales entre una amplia variedad de aplicaciones de productividad y diseño.
+-   VML proporciona descargas gráficas más rápidas y una mejor experiencia de usuario. Permite la entrega de gráficos vectoriales escalables, totalmente integrados y de alta calidad a la Web, en un formato abierto basado en texto. En lugar de hacer referencia a gráficos como archivos externos, los gráficos VML se entregan en línea con la página HTML, lo que les permite interactuar y escalar con la interacción del usuario.
+-   VML está abierto y está basado en estándares. Es un formato basado en XML. XML 1.0 es un lenguaje abierto, sencillo y basado en texto para describir datos estructurados en la Web y complementa HTML para su presentación. VML también admite otros estándares W3C, como Hojas de estilo CSS 2.0 (CSS), que especifica información de estilo y posicionamiento 2D, así como el Document Object Model (DOM), que permite a los desarrolladores interactuar de forma coherente con los elementos de página como objetos.
 
 ### <a name="for-additional-information"></a>Para obtener información adicional
 
-Vea los vínculos siguientes:
+Consulte los vínculos siguientes:
 
--   Para obtener respuestas a las preguntas más frecuentes sobre VML, vea las [preguntas más frecuentes sobre VML](frequently-asked-questions-about-vml.md).
--   Para ver un tutorial sobre el uso de VML en páginas web, consulte [Cómo usar VML en páginas web](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md), que complementa la [especificación de VML](https://www.w3.org/TR/NOTE-datetime.html) enviada al W3C.
--   Para obtener información sobre los tipos de datos de VML, vea el documento [tipos básicos de VML](basic-vml-types.md) .
--   Para obtener la referencia completa en VML, incluida la información sobre cómo usar VML con etiquetas y scripts, vea la [referencia de VML](msdn-online-vml-introduction.md).
+-   Para obtener respuestas a las preguntas más frecuentes sobre VML, consulte las preguntas más frecuentes [sobre VML.](frequently-asked-questions-about-vml.yml)
+-   Para ver un tutorial sobre el uso de VML en páginas web, consulte Uso de VML en [Páginas web,](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)que complementa la especificación [de VML](https://www.w3.org/TR/NOTE-datetime.html) enviada al W3C.
+-   Para obtener información sobre los tipos de datos de VML, consulte el [documento Tipos básicos de VML.](basic-vml-types.md)
+-   Para obtener una referencia completa sobre VML, incluida información sobre cómo usar VML con etiquetas, así como scripting, consulte la referencia [de VML](msdn-online-vml-introduction.md).
