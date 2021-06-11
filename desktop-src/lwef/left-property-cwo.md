@@ -1,39 +1,39 @@
 ---
 title: Propiedad Left (objeto CommandsWindow)
-description: Left (propiedad)
+description: Obtenga información sobre la propiedad de objeto Left CommandsWindow. Microsoft Agent está en desuso a partir de Windows 7.
 ms.assetid: 03786379-42c2-4f54-99cc-1dc120c45858
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db50ebeb2d714d85d8c42a813aad61f2cd1acda
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 9fdcbb8cb39b2c07120ecab2b4da5da99d55b78f
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105695820"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989050"
 ---
-# <a name="left-property-commandswindow-object"></a><span data-ttu-id="5a948-103">Propiedad Left (objeto CommandsWindow)</span><span class="sxs-lookup"><span data-stu-id="5a948-103">Left Property (CommandsWindow Object)</span></span>
+# <a name="left-property-commandswindow-object"></a><span data-ttu-id="36dfa-104">Propiedad Left (objeto CommandsWindow)</span><span class="sxs-lookup"><span data-stu-id="36dfa-104">Left Property (CommandsWindow Object)</span></span>
 
-<span data-ttu-id="5a948-104">\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]</span><span class="sxs-lookup"><span data-stu-id="5a948-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="36dfa-105">\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]</span><span class="sxs-lookup"><span data-stu-id="36dfa-105">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="5a948-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**</span><span class="sxs-lookup"><span data-stu-id="5a948-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
+<span data-ttu-id="36dfa-106"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**</span><span class="sxs-lookup"><span data-stu-id="36dfa-106"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5a948-106">Devuelve un valor entero que especifica el borde izquierdo, en píxeles, de la ventana comandos de voz.</span><span class="sxs-lookup"><span data-stu-id="5a948-106">Returns an integer value specifying the left edge, in pixels, of the Voice Commands Window.</span></span>
+<span data-ttu-id="36dfa-107">Devuelve un valor entero que especifica el borde izquierdo, en píxeles, de la ventana Comandos de voz.</span><span class="sxs-lookup"><span data-stu-id="36dfa-107">Returns an integer value specifying the left edge, in pixels, of the Voice Commands Window.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="5a948-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**</span><span class="sxs-lookup"><span data-stu-id="5a948-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
+<span data-ttu-id="36dfa-108"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**</span><span class="sxs-lookup"><span data-stu-id="36dfa-108"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5a948-108">*agente \* \* *. CommandsWindow. Left**</span><span class="sxs-lookup"><span data-stu-id="5a948-108">*agent\*\*\*.CommandsWindow.Left*\*</span></span>
+<span data-ttu-id="36dfa-109">*agent!". ComandosWindow.Left*\*</span><span class="sxs-lookup"><span data-stu-id="36dfa-109">*agent\*\*\*.CommandsWindow.Left*\*</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="5a948-109">Observaciones</span><span class="sxs-lookup"><span data-stu-id="5a948-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36dfa-110">Comentarios</span><span class="sxs-lookup"><span data-stu-id="36dfa-110">Remarks</span></span>
 
-<span data-ttu-id="5a948-110">El servidor muestra la ventana comandos de voz en función de la posición y el tamaño establecidos por el usuario.</span><span class="sxs-lookup"><span data-stu-id="5a948-110">The server displays the Voice Commands Window based on the position and size set by the user.</span></span>
+<span data-ttu-id="36dfa-111">El servidor muestra la ventana Comandos de voz en función de la posición y el tamaño establecidos por el usuario.</span><span class="sxs-lookup"><span data-stu-id="36dfa-111">The server displays the Voice Commands Window based on the position and size set by the user.</span></span>
 
  
 

@@ -1,36 +1,36 @@
 ---
-title: Obtener un puntero al objeto lector (Windows Media Format 11 SDK)
-description: Obtener un puntero al objeto lector
+title: Obtener un puntero al objeto reader (Windows Media Format SDK 11)
+description: Obtenga información sobre cómo obtener un puntero al objeto reader del SDK Windows Media Format mediante la interfaz IWMReaderAdvanced2.
 ms.assetid: 70696ffc-2612-460d-b445-f200ba85d3c7
 keywords:
-- Windows Media Format SDK, DirectShow
-- SDK de Windows Media Format, objetos de lector
-- SDK de Windows Media Format, interfaz IWMReaderAdvanced2
-- Advanced Systems Format (ASF), DirectShow
-- ASF (formato de sistemas avanzados), DirectShow
-- Advanced Systems Format (ASF), objetos Reader
+- Windows Media Format SDK,DirectShow
+- Windows Media Format SDK,objetos de lector
+- Windows Media Format SDK,IWMReaderAdvanced2 (interfaz)
+- Formato de sistemas avanzados (ASF),DirectShow
+- ASF (formato de sistemas avanzados),DirectShow
+- Formato de sistemas avanzados (ASF), objetos de lector
 - ASF (formato de sistemas avanzados), objetos de lector
-- Advanced Systems Format (ASF), IWMReaderAdvanced2 (interfaz)
+- Advanced Systems Format (ASF), interfaz IWMReaderAdvanced2
 - ASF (formato de sistemas avanzados), interfaz IWMReaderAdvanced2
-- DirectShow, objetos de lector
+- Objetos DirectShow,Reader
 - DirectShow, punteros a objetos de lector
-- DirectShow, interfaz IWMReaderAdvanced2
+- Interfaz DirectShow,IWMReaderAdvanced2
 - objetos de lector, obtener punteros
-- flujos, objetos de lector
-- secuencias, punteros a objetos de lector
+- streams,Reader Objects
+- streams,pointers to Reader Objects
 - IWMReaderAdvanced2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e0bb6611ba1d4e3c41fb2c00a68dd9c898505f
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6dd31bd868365b87b38eefd0c0c81e8beafef51c
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104359619"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989140"
 ---
-# <a name="obtaining-a-pointer-to-the-reader-object-windows-media-format-11-sdk"></a><span data-ttu-id="46aef-119">Obtener un puntero al objeto lector (Windows Media Format 11 SDK)</span><span class="sxs-lookup"><span data-stu-id="46aef-119">Obtaining a Pointer to the Reader Object (Windows Media Format 11 SDK)</span></span>
+# <a name="obtaining-a-pointer-to-the-reader-object-windows-media-format-11-sdk"></a><span data-ttu-id="e3b6a-119">Obtener un puntero al objeto reader (Windows Media Format SDK 11)</span><span class="sxs-lookup"><span data-stu-id="e3b6a-119">Obtaining a Pointer to the Reader Object (Windows Media Format 11 SDK)</span></span>
 
-<span data-ttu-id="46aef-120">En algunos casos, por ejemplo, al determinar qué extensiones de unidad de datos se establecen en un flujo determinado, puede que necesite tener acceso directamente al [objeto lector](reader-object.md) del SDK de Windows Media Format.</span><span class="sxs-lookup"><span data-stu-id="46aef-120">In certain cases, for example when determining which data unit extensions are set on a given stream, you may need to access the [Reader Object](reader-object.md) of the Windows Media Format SDK directly.</span></span> <span data-ttu-id="46aef-121">La siguiente función muestra cómo obtener la interfaz [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) en el propio objeto de lector:</span><span class="sxs-lookup"><span data-stu-id="46aef-121">The following function shows how to obtain the [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) interface on the Reader Object itself:</span></span>
+<span data-ttu-id="e3b6a-120">En determinados casos, por ejemplo, al determinar qué extensiones de unidad de datos se establecen en una secuencia determinada, es posible que tenga que acceder directamente al objeto [reader](reader-object.md) del SDK Windows Media Format datos.</span><span class="sxs-lookup"><span data-stu-id="e3b6a-120">In certain cases, for example when determining which data unit extensions are set on a given stream, you may need to access the [Reader Object](reader-object.md) of the Windows Media Format SDK directly.</span></span> <span data-ttu-id="e3b6a-121">La función siguiente muestra cómo obtener la [**interfaz IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) en el propio objeto Reader:</span><span class="sxs-lookup"><span data-stu-id="e3b6a-121">The following function shows how to obtain the [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) interface on the Reader Object itself:</span></span>
 
 
 ```C++

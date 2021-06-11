@@ -1,7 +1,7 @@
 ---
-description: 'Nota: esta interfaz está en desuso.'
+description: Obtenga información sobre el método IAMFilterData::P arseFilterData y desempaquete los datos binarios del Registro para un filtro. Esta interfaz está desusada.
 ms.assetid: 86095fcf-3364-42a0-95db-08223fa3cc20
-title: IAMFilterData::P método arseFilterData (Fil \_ Data. h)
+title: Método IAMFilterData::P arseFilterData (Fil \_ data.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 18e1367813adff6b0debdfb698644731668bfc5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9560280fa6f16699af907cdb5cf682b9c4bb1277
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679393"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989450"
 ---
-# <a name="iamfilterdataparsefilterdata-method"></a><span data-ttu-id="2d531-103">IAMFilterData::P método arseFilterData</span><span class="sxs-lookup"><span data-stu-id="2d531-103">IAMFilterData::ParseFilterData method</span></span>
+# <a name="iamfilterdataparsefilterdata-method"></a><span data-ttu-id="2b2db-104">IAMFilterData::P arseFilterData (método)</span><span class="sxs-lookup"><span data-stu-id="2b2db-104">IAMFilterData::ParseFilterData method</span></span>
 
 > [!Note]  
-> <span data-ttu-id="2d531-104">Esta interfaz está desusada.</span><span class="sxs-lookup"><span data-stu-id="2d531-104">This interface has been deprecated.</span></span> <span data-ttu-id="2d531-105">Las nuevas aplicaciones no deben utilizarla.</span><span class="sxs-lookup"><span data-stu-id="2d531-105">New applications should not use it.</span></span>
+> <span data-ttu-id="2b2db-105">Esta interfaz está desusada.</span><span class="sxs-lookup"><span data-stu-id="2b2db-105">This interface has been deprecated.</span></span> <span data-ttu-id="2b2db-106">Las nuevas aplicaciones no deben usarla.</span><span class="sxs-lookup"><span data-stu-id="2b2db-106">New applications should not use it.</span></span>
 
  
 
-<span data-ttu-id="2d531-106">El `ParseFilterData` método desempaqueta los datos binarios del registro para un filtro.</span><span class="sxs-lookup"><span data-stu-id="2d531-106">The `ParseFilterData` method unpacks the binary registry data for a filter.</span></span>
+<span data-ttu-id="2b2db-107">El `ParseFilterData` método desempaquete los datos binarios del Registro para un filtro.</span><span class="sxs-lookup"><span data-stu-id="2b2db-107">The `ParseFilterData` method unpacks the binary registry data for a filter.</span></span>
 
-<span data-ttu-id="2d531-107">Normalmente no hay ningún motivo para que una aplicación llame a este método.</span><span class="sxs-lookup"><span data-stu-id="2d531-107">There is typically no reason for an application to call this method.</span></span> <span data-ttu-id="2d531-108">El método [**IFilterMapper2:: EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) proporciona una manera más cómoda de acceder a los datos del registro del filtro.</span><span class="sxs-lookup"><span data-stu-id="2d531-108">The [**IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) method provides a more convenient way to access the filter registry data.</span></span>
+<span data-ttu-id="2b2db-108">Normalmente no hay ninguna razón para que una aplicación llame a este método.</span><span class="sxs-lookup"><span data-stu-id="2b2db-108">There is typically no reason for an application to call this method.</span></span> <span data-ttu-id="2b2db-109">El [**método IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) proporciona una manera más cómoda de acceder a los datos del Registro de filtro.</span><span class="sxs-lookup"><span data-stu-id="2b2db-109">The [**IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) method provides a more convenient way to access the filter registry data.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2d531-109">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="2d531-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2b2db-110">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="2b2db-110">Syntax</span></span>
 
 
 ```C++
@@ -44,58 +44,58 @@ HRESULT ParseFilterData(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="2d531-110">Parámetros</span><span class="sxs-lookup"><span data-stu-id="2d531-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2b2db-111">Parámetros</span><span class="sxs-lookup"><span data-stu-id="2b2db-111">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="2d531-111">*rgbFilterData* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="2d531-111">*rgbFilterData* \[in\]</span></span>
+<span data-ttu-id="2b2db-112">*rgbFilterData* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="2b2db-112">*rgbFilterData* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2d531-112">Puntero a los datos del registro binarios.</span><span class="sxs-lookup"><span data-stu-id="2d531-112">Pointer to the binary registry data.</span></span> <span data-ttu-id="2d531-113">Puede obtener estos datos recuperando la propiedad "FilterData" del moniker del filtro.</span><span class="sxs-lookup"><span data-stu-id="2d531-113">You can get this data by retrieving the "FilterData" property from the filter moniker.</span></span> <span data-ttu-id="2d531-114">Los datos se almacenan como una **SAFEARRAY** de bytes ( \_ matriz de VT UI1 \| VT \_ ).</span><span class="sxs-lookup"><span data-stu-id="2d531-114">The data is stored as a **SAFEARRAY** of bytes (VT\_UI1 \| VT\_ARRAY).</span></span>
+<span data-ttu-id="2b2db-113">Puntero a los datos binarios del Registro.</span><span class="sxs-lookup"><span data-stu-id="2b2db-113">Pointer to the binary registry data.</span></span> <span data-ttu-id="2b2db-114">Puede obtener estos datos recuperando la propiedad "FilterData" del moniker de filtro.</span><span class="sxs-lookup"><span data-stu-id="2b2db-114">You can get this data by retrieving the "FilterData" property from the filter moniker.</span></span> <span data-ttu-id="2b2db-115">Los datos se almacenan como **SAFEARRAY** de bytes (VT \_ UI1 \| VT \_ ARRAY).</span><span class="sxs-lookup"><span data-stu-id="2b2db-115">The data is stored as a **SAFEARRAY** of bytes (VT\_UI1 \| VT\_ARRAY).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2d531-115">*CB* \[ de\]</span><span class="sxs-lookup"><span data-stu-id="2d531-115">*cb* \[in\]</span></span>
+<span data-ttu-id="2b2db-116">*cb* \[ En\]</span><span class="sxs-lookup"><span data-stu-id="2b2db-116">*cb* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2d531-116">Especifica el tamaño de los datos binarios, en bytes.</span><span class="sxs-lookup"><span data-stu-id="2d531-116">Specifies the size of the binary data, in bytes.</span></span>
+<span data-ttu-id="2b2db-117">Especifica el tamaño de los datos binarios, en bytes.</span><span class="sxs-lookup"><span data-stu-id="2b2db-117">Specifies the size of the binary data, in bytes.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2d531-117">*prgbRegFilter2* \[ enuncia\]</span><span class="sxs-lookup"><span data-stu-id="2d531-117">*prgbRegFilter2* \[out\]</span></span>
+<span data-ttu-id="2b2db-118">*prgbRegFilter2* \[ out\]</span><span class="sxs-lookup"><span data-stu-id="2b2db-118">*prgbRegFilter2* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2d531-118">Dirección de una variable que recibe un puntero a los datos desempaquetados.</span><span class="sxs-lookup"><span data-stu-id="2d531-118">Address of a variable that receives a pointer to the unpacked data.</span></span> <span data-ttu-id="2d531-119">Cuando el método devuelve, convierte este puntero en un tipo [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) para tener acceso a los datos del filtro.</span><span class="sxs-lookup"><span data-stu-id="2d531-119">When the method returns, cast this pointer to a [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) type to access the filter data.</span></span> <span data-ttu-id="2d531-120">El llamador debe liberar la memoria mediante una llamada al método **CoTaskMemFree** .</span><span class="sxs-lookup"><span data-stu-id="2d531-120">The caller must release the memory by calling the **CoTaskMemFree** method.</span></span>
+<span data-ttu-id="2b2db-119">Dirección de una variable que recibe un puntero a los datos desempaquetados.</span><span class="sxs-lookup"><span data-stu-id="2b2db-119">Address of a variable that receives a pointer to the unpacked data.</span></span> <span data-ttu-id="2b2db-120">Cuando el método devuelve un resultado, convierte este puntero a un [**tipo REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) para tener acceso a los datos del filtro.</span><span class="sxs-lookup"><span data-stu-id="2b2db-120">When the method returns, cast this pointer to a [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) type to access the filter data.</span></span> <span data-ttu-id="2b2db-121">El autor de la llamada debe liberar la memoria llamando al **método CoTaskMemFree.**</span><span class="sxs-lookup"><span data-stu-id="2b2db-121">The caller must release the memory by calling the **CoTaskMemFree** method.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="2d531-121">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="2d531-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2b2db-122">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="2b2db-122">Return value</span></span>
 
-<span data-ttu-id="2d531-122">Si el método se ejecuta correctamente, devuelve S \_ correcto.</span><span class="sxs-lookup"><span data-stu-id="2d531-122">If the method succeeds, it returns S\_OK.</span></span> <span data-ttu-id="2d531-123">Si se produce un error, devuelve un código de error.</span><span class="sxs-lookup"><span data-stu-id="2d531-123">If it fails, it returns an error code.</span></span>
+<span data-ttu-id="2b2db-123">Si el método se realiza correctamente, devuelve S \_ OK.</span><span class="sxs-lookup"><span data-stu-id="2b2db-123">If the method succeeds, it returns S\_OK.</span></span> <span data-ttu-id="2b2db-124">Si se produce un error, devuelve un código de error.</span><span class="sxs-lookup"><span data-stu-id="2b2db-124">If it fails, it returns an error code.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="2d531-124">Observaciones</span><span class="sxs-lookup"><span data-stu-id="2d531-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2b2db-125">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2b2db-125">Remarks</span></span>
 
 > [!Note]  
-> <span data-ttu-id="2d531-125">El encabezado Fil \_ Data. h se encuentra en el directorio de [ejemplo del asignador](mapper-sample.md) en el Windows SDK.</span><span class="sxs-lookup"><span data-stu-id="2d531-125">The header Fil\_data.h is located in the [Mapper Sample](mapper-sample.md) directory in the Windows SDK.</span></span>
+> <span data-ttu-id="2b2db-126">El encabezado Fil \_ data.h se encuentra en el directorio [Ejemplo del](mapper-sample.md) asignador en la Windows SDK.</span><span class="sxs-lookup"><span data-stu-id="2b2db-126">The header Fil\_data.h is located in the [Mapper Sample](mapper-sample.md) directory in the Windows SDK.</span></span>
 
  
 
-## <a name="requirements"></a><span data-ttu-id="2d531-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2d531-126">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2b2db-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2b2db-127">Requirements</span></span>
 
 
 
-| <span data-ttu-id="2d531-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="2d531-127">Requirement</span></span> | <span data-ttu-id="2d531-128">Value</span><span class="sxs-lookup"><span data-stu-id="2d531-128">Value</span></span> |
+| <span data-ttu-id="2b2db-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="2b2db-128">Requirement</span></span> | <span data-ttu-id="2b2db-129">Value</span><span class="sxs-lookup"><span data-stu-id="2b2db-129">Value</span></span> |
 |-------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="2d531-129">Encabezado</span><span class="sxs-lookup"><span data-stu-id="2d531-129">Header</span></span><br/> | <dl> <span data-ttu-id="2d531-130"><dt>Fil \_ Data. h</dt></span><span class="sxs-lookup"><span data-stu-id="2d531-130"><dt>Fil\_data.h</dt></span></span> </dl> |
-| <span data-ttu-id="2d531-131">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="2d531-131">DLL</span></span><br/>    | <dl> <span data-ttu-id="2d531-132"><dt>Quartz.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2d531-132"><dt>Quartz.dll</dt></span></span> </dl>  |
+| <span data-ttu-id="2b2db-130">Encabezado</span><span class="sxs-lookup"><span data-stu-id="2b2db-130">Header</span></span><br/> | <dl> <span data-ttu-id="2b2db-131"><dt>Fil \_ data.h</dt></span><span class="sxs-lookup"><span data-stu-id="2b2db-131"><dt>Fil\_data.h</dt></span></span> </dl> |
+| <span data-ttu-id="2b2db-132">Archivo DLL</span><span class="sxs-lookup"><span data-stu-id="2b2db-132">DLL</span></span><br/>    | <dl> <span data-ttu-id="2b2db-133"><dt>Quartz.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2b2db-133"><dt>Quartz.dll</dt></span></span> </dl>  |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="2d531-133">Vea también</span><span class="sxs-lookup"><span data-stu-id="2d531-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2b2db-134">Vea también</span><span class="sxs-lookup"><span data-stu-id="2b2db-134">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2d531-134">**Interfaz IAMFilterData**</span><span class="sxs-lookup"><span data-stu-id="2d531-134">**IAMFilterData Interface**</span></span>](iamfilterdata.md)
+[<span data-ttu-id="2b2db-135">**IamFilterData (interfaz)**</span><span class="sxs-lookup"><span data-stu-id="2b2db-135">**IAMFilterData Interface**</span></span>](iamfilterdata.md)
 </dt> </dl>
 
  
