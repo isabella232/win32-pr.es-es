@@ -1,7 +1,7 @@
 ---
-description: 'Nota: esta interfaz está en desuso.'
+description: Obtenga información sobre el método IAMFilterData::CreateFilterData, que crea datos binarios del Registro para un filtro. Esta interfaz está desusada.
 ms.assetid: ab6972ef-7c28-4cd1-b007-eb70f9aeb2cb
-title: 'IAMFilterData:: CreateFilterData (método) (Fil \_ Data. h)'
+title: Método IAMFilterData::CreateFilterData (Fil \_ data.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,23 +13,23 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 4c83f19de8e709f9890b23957f730fbbac12dd7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679394"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989460"
 ---
-# <a name="iamfilterdatacreatefilterdata-method"></a>IAMFilterData:: CreateFilterData (método)
+# <a name="iamfilterdatacreatefilterdata-method"></a>IamFilterData::CreateFilterData (método)
 
 > [!Note]  
-> Esta interfaz está desusada. Las nuevas aplicaciones no deben utilizarla.
+> Esta interfaz está desusada. Las nuevas aplicaciones no deben usarla.
 
  
 
-El `CreateFilterData` método crea datos binarios del registro para un filtro. Estos datos se pueden escribir en el registro como una \_ subclave reg binaria denominada FilterData, en la clave CLSID del filtro.
+El `CreateFilterData` método crea datos binarios del Registro para un filtro. Estos datos se pueden escribir en el Registro como una subclave REG BINARY denominada FilterData, bajo la clave \_ CLSID del filtro.
 
-Normalmente no hay ningún motivo para que una aplicación llame a este método. El método [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automáticamente los datos binarios y los agrega a la ubicación correcta en el registro. Para obtener más información, consulte [Cómo registrar filtros de DirectShow](how-to-register-directshow-filters.md).
+Normalmente no hay ninguna razón para que una aplicación llame a este método. El [**método IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automáticamente los datos binarios y los agrega a la ubicación correcta del Registro. Para obtener más información, [vea Cómo registrar filtros de DirectShow.](how-to-register-directshow-filters.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,21 +48,21 @@ HRESULT CreateFilterData(
 
 <dl> <dt>
 
-*PRF2* \[ de\]
+*prf2* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) que contiene la información del filtro.
+Puntero a una [**estructura REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) que contiene la información del filtro.
 
 </dd> <dt>
 
-*prgbFilterData* \[ enuncia\]
+*prgbFilterData* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a los datos binarios. El método asigna la memoria para los datos. El llamador debe liberar la memoria mediante una llamada al método **CoTaskMemFree** .
+Dirección de una variable que recibe un puntero a los datos binarios. El método asigna la memoria para los datos. El autor de la llamada debe liberar la memoria llamando al **método CoTaskMemFree.**
 
 </dd> <dt>
 
-*PCB* \[ enuncia\]
+*y* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe el tamaño de los datos binarios, en bytes.
@@ -71,12 +71,12 @@ Puntero a una variable que recibe el tamaño de los datos binarios, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, devuelve un código de error.
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El encabezado Fil \_ Data. h se encuentra en el directorio de [ejemplo del asignador](mapper-sample.md) en el Windows SDK.
+> El encabezado Fil \_ data.h se encuentra en el directorio [Ejemplo del](mapper-sample.md) asignador en la Windows SDK.
 
  
 
@@ -86,7 +86,7 @@ Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Fil \_ Data. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Fil \_ data.h</dt> </dl> |
 | Archivo DLL<br/>    | <dl> <dt>Quartz.dll</dt> </dl>  |
 
 
@@ -95,7 +95,7 @@ Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un
 
 <dl> <dt>
 
-[**Interfaz IAMFilterData**](iamfilterdata.md)
+[**IamFilterData (interfaz)**](iamfilterdata.md)
 </dt> </dl>
 
  

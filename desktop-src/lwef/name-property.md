@@ -1,39 +1,39 @@
 ---
 title: Propiedad Name (objeto Characters)
-description: Propiedad Name
+description: Obtenga información sobre la propiedad Name del objeto Characters. Microsoft Agent está en desuso a partir de Windows 7.
 ms.assetid: vs|msagent|~\pacontrol_2bxm.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6e7b4a8872952cce0ae68445ec22a5599891674
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 7365550d5d4d4071cf4292e505f16e7047628cf1
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104488729"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989330"
 ---
 # <a name="name-property-characters-object"></a>Propiedad Name (objeto Characters)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Devuelve o establece una cadena que especifica el nombre predeterminado del carácter especificado.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agente ***. Caracteres ("**_CharacterID_*_")._ *  \[  =  *Cadena* de nombre\]
+*agent***. Caracteres ("**_CharacterID_*_"). Cadena de_ *  \[  =  *nombre*\]
 
 
 
 | Parte     | Descripción                                                                             |
 |----------|-----------------------------------------------------------------------------------------|
-| *string* | Valor de cadena que corresponde al nombre del carácter (en la configuración de idioma actual). |
+| *string* | Valor de cadena correspondiente al nombre del carácter (en la configuración de idioma actual). |
 
 
 
@@ -41,11 +41,11 @@ Devuelve o establece una cadena que especifica el nombre predeterminado del car�
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **nombre** de un carácter puede depender del valor de [**LanguageID**](languageid-property.md) del carácter. El nombre de un carácter en un idioma puede ser diferente o utilizar caracteres distintos a los de otro. El **nombre** predeterminado del carácter para un idioma específico se define cuando el carácter se compila con el editor de caracteres del agente de Microsoft.
+El nombre de un **carácter** puede depender de la configuración [**de LanguageID del**](languageid-property.md) carácter. El nombre de un carácter en un idioma puede ser diferente o usar caracteres diferentes que en otro. El nombre predeterminado del **carácter para** un idioma específico se define cuando el carácter se compila con el Editor de caracteres del Agente de Microsoft.
 
-Evite cambiar el nombre de un carácter, especialmente cuando se usa en un escenario en el que otras aplicaciones cliente pueden utilizar el mismo carácter. Además, el agente usa el **nombre** del carácter para crear automáticamente comandos para ocultar y mostrar el carácter.
+Evite cambiar el nombre de un carácter, especialmente cuando se usa en un escenario en el que otras aplicaciones cliente pueden usar el mismo carácter. Además, el Agente usa el nombre **del** carácter para crear automáticamente comandos para ocultar y mostrar el carácter.
 
  
 

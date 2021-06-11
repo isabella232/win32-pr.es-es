@@ -1,7 +1,7 @@
 ---
-description: 'Nota: esta interfaz está en desuso.'
+description: Obtenga información sobre el método IAMFilterData::P arseFilterData y desempaquete los datos binarios del Registro para un filtro. Esta interfaz está desusada.
 ms.assetid: 86095fcf-3364-42a0-95db-08223fa3cc20
-title: IAMFilterData::P método arseFilterData (Fil \_ Data. h)
+title: Método IAMFilterData::P arseFilterData (Fil \_ data.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,23 +13,23 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 18e1367813adff6b0debdfb698644731668bfc5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9560280fa6f16699af907cdb5cf682b9c4bb1277
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679393"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989450"
 ---
-# <a name="iamfilterdataparsefilterdata-method"></a>IAMFilterData::P método arseFilterData
+# <a name="iamfilterdataparsefilterdata-method"></a>IAMFilterData::P arseFilterData (método)
 
 > [!Note]  
-> Esta interfaz está desusada. Las nuevas aplicaciones no deben utilizarla.
+> Esta interfaz está desusada. Las nuevas aplicaciones no deben usarla.
 
  
 
-El `ParseFilterData` método desempaqueta los datos binarios del registro para un filtro.
+El `ParseFilterData` método desempaquete los datos binarios del Registro para un filtro.
 
-Normalmente no hay ningún motivo para que una aplicación llame a este método. El método [**IFilterMapper2:: EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) proporciona una manera más cómoda de acceder a los datos del registro del filtro.
+Normalmente no hay ninguna razón para que una aplicación llame a este método. El [**método IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) proporciona una manera más cómoda de acceder a los datos del Registro de filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,35 +48,35 @@ HRESULT ParseFilterData(
 
 <dl> <dt>
 
-*rgbFilterData* \[ de\]
+*rgbFilterData* \[ En\]
 </dt> <dd>
 
-Puntero a los datos del registro binarios. Puede obtener estos datos recuperando la propiedad "FilterData" del moniker del filtro. Los datos se almacenan como una **SAFEARRAY** de bytes ( \_ matriz de VT UI1 \| VT \_ ).
+Puntero a los datos binarios del Registro. Puede obtener estos datos recuperando la propiedad "FilterData" del moniker de filtro. Los datos se almacenan como **SAFEARRAY** de bytes (VT \_ UI1 \| VT \_ ARRAY).
 
 </dd> <dt>
 
-*CB* \[ de\]
+*cb* \[ En\]
 </dt> <dd>
 
 Especifica el tamaño de los datos binarios, en bytes.
 
 </dd> <dt>
 
-*prgbRegFilter2* \[ enuncia\]
+*prgbRegFilter2* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a los datos desempaquetados. Cuando el método devuelve, convierte este puntero en un tipo [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) para tener acceso a los datos del filtro. El llamador debe liberar la memoria mediante una llamada al método **CoTaskMemFree** .
+Dirección de una variable que recibe un puntero a los datos desempaquetados. Cuando el método devuelve un resultado, convierte este puntero a un [**tipo REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) para tener acceso a los datos del filtro. El autor de la llamada debe liberar la memoria llamando al **método CoTaskMemFree.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, devuelve un código de error.
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El encabezado Fil \_ Data. h se encuentra en el directorio de [ejemplo del asignador](mapper-sample.md) en el Windows SDK.
+> El encabezado Fil \_ data.h se encuentra en el directorio [Ejemplo del](mapper-sample.md) asignador en la Windows SDK.
 
  
 
@@ -86,7 +86,7 @@ Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Fil \_ Data. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Fil \_ data.h</dt> </dl> |
 | Archivo DLL<br/>    | <dl> <dt>Quartz.dll</dt> </dl>  |
 
 
@@ -95,7 +95,7 @@ Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un
 
 <dl> <dt>
 
-[**Interfaz IAMFilterData**](iamfilterdata.md)
+[**IamFilterData (interfaz)**](iamfilterdata.md)
 </dt> </dl>
 
  

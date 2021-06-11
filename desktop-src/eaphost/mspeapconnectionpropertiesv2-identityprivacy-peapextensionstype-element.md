@@ -1,6 +1,6 @@
 ---
 title: Elemento IdentityPrivacy (PeapExtensionsType)
-description: Indica si se envía la verdadera identidad de un usuario o una identidad anónima. | Elemento IdentityPrivacy (PeapExtensionsType)
+description: El elemento IdentityPrivacy (PeapExtensionsType) indica si la identidad verdadera de un usuario se envía en el esquema mspeapconnectionpropertiesv2.
 ms.assetid: 57b8747e-6919-4243-a379-3a85c4a2023a
 keywords:
 - Elemento IdentityPrivacy EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2701352ee0e192dfd2d33fc2647b9ec6df96dd5c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d0a23ce28a1a807bb948c114435463102561570b
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104547550"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111988951"
 ---
-# <a name="the-identityprivacy-peapextensionstype-element"></a>El elemento IdentityPrivacy (PeapExtensionsType)
+# <a name="the-identityprivacy-peapextensionstype-element"></a>Elemento IdentityPrivacy (PeapExtensionsType)
 
-El elemento **IdentityPrivacy (PeapExtensionsType)** indica si se envía la verdadera identidad de un usuario o una identidad anónima.
+El **elemento IdentityPrivacy (PeapExtensionsType)** indica si se envía la identidad verdadera de un usuario o una identidad anónima.
 
 ``` syntax
 <xs:element name="IdentityPrivacy"
@@ -31,20 +31,20 @@ El elemento **IdentityPrivacy (PeapExtensionsType)** indica si se envía la verd
  />
 ```
 
-El elemento **IdentityPrivacy** se define mediante el elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+El **elemento IdentityPrivacy** se define mediante el [**elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **IdentityPrivacy** es opcional.
+El **elemento IdentityPrivacy** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[ R2\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ El elemento **IdentityPrivacy** es opcional.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)
+[Mspeapconnectionpropertiesv2 Schema](mspeapconnectionpropertiesv2schema-schema.md)
 </dt> <dt>
 
 [Elementos de esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-elements.md)

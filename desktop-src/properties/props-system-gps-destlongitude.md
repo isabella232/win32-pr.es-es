@@ -1,19 +1,19 @@
 ---
-description: Indica la latitud del punto de destino.
+description: Obtenga información sobre cómo la propiedad System.GPS.DestLongitude indica la longitud del punto de destino.
 ms.assetid: 72a3fb10-4554-4a4d-bb73-ee515341b9c1
-title: System. GPS. DestLongitude
+title: System.GPS.DestLongitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e11cb93fece8b5d2d95c649bdaf87c01390a8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a64f4fe5229195bcbc976d78f9a0b09b053a94ca
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648348"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111988890"
 ---
-# <a name="systemgpsdestlongitude"></a>System. GPS. DestLongitude
+# <a name="systemgpsdestlongitude"></a>System.GPS.DestLongitude
 
-Indica la latitud del punto de destino. Se trata de una matriz de tres valores, como se indica a continuación: el índice 0 es el grado, el índice 1 es el minuto, el índice 2 es el segundo. Cada se calcula a partir de los valores de PKEY \_ GPS \_ DESTLONGITUDENUMERATOR y PKEY \_ GPS \_ DestLongitudeDenominator.
+Indica la latitud del punto de destino. Se trata de una matriz de tres valores, como se muestra a continuación: el índice 0 es los grados, el índice 1 son los minutos, el índice 2 es el segundo. Cada se calcula a partir de los valores de PKEY \_ GPS \_ DestLongitudeNumerator y PKEY \_ GPS \_ DestLongitudeDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

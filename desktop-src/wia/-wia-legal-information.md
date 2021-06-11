@@ -1,15 +1,15 @@
 ---
-description: La información que se proporciona en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, está sujeta a modificaciones sin previo aviso.
+description: En este artículo se proporciona información legal sobre WIA, incluida la información sobre derechos de autor y marcas comerciales.
 ms.assetid: 343c8f3c-3172-4e38-b276-082199b2d48b
 title: Información legal (WIA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1bbf1942c87405020067ee07e9e71a99278d5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb8023ce16eed495f977f5703d14c9457179fbbc
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001182"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989500"
 ---
 # <a name="legal-information-wia"></a>Información legal (WIA)
 
@@ -19,7 +19,7 @@ Microsoft puede ser titular de patentes, solicitudes de patentes, marcas, derech
 
 
 
-Microsoft, MS-DOS, Windows, Windows NT, JScript, Visual Basic Scripting Edition y Visual Basic son marcas registradas o marcas comerciales de Microsoft Corporation en los Estados Unidos y/o en otros países o regiones.
+Microsoft, MS-DOS, Windows, Windows NT, JScript, Visual Basic Scripting Edition y Visual Basic son marcas comerciales registradas o marcas comerciales de Microsoft Corporation en los Estados Unidos y/o en otros países o regiones.
 
 Los nombres de las compañías y productos reales mencionados en el presente documento pueden ser marcas comerciales de sus respectivos propietarios.
 

@@ -1,19 +1,19 @@
 ---
-description: Marca de la zona Web, como valor de enumeración URLZONE.
+description: Obtenga información sobre la propiedad System.ZoneIdentifier, que es la marca de la zona web, como un valor de enumeración URLZONE.
 ms.assetid: 9d13d739-3d94-4fe2-9f63-21ed2fe5d44f
-title: System. ZoneIdentifier
+title: System.ZoneIdentifier
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d97b2a4345cae7d73615d9ffdc183569c39bd50b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41a0df9a0e25ebe4a5db2f96b7425daf5e9f14ba
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360195"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989490"
 ---
-# <a name="systemzoneidentifier"></a>System. ZoneIdentifier
+# <a name="systemzoneidentifier"></a>System.ZoneIdentifier
 
-Marca de la zona Web, como valor de enumeración URLZONE.
+Marca de la zona web, como valor de enumeración URLZONE.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

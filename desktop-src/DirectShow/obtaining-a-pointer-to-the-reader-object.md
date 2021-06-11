@@ -1,19 +1,19 @@
 ---
-description: Obtener un puntero al objeto lector
+description: Obtenga información sobre cómo obtener un puntero al objeto reader del SDK de Windows Media Format mediante la interfaz IWMReaderAdvanced2 en DirectShow.
 ms.assetid: d1292e2f-bd0e-4961-a6fa-8cdaeb28b692
-title: Obtener un puntero al objeto lector (DirectShow)
+title: Obtener un puntero al objeto Reader (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3be22a22581c8f262ac4c6898271ebccb53a0e4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e131b9e111aa5e779d1208b68e04c9979e3b1d7f
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805348"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989111"
 ---
-# <a name="obtaining-a-pointer-to-the-reader-object-directshow"></a>Obtener un puntero al objeto lector (DirectShow)
+# <a name="obtaining-a-pointer-to-the-reader-object-directshow"></a>Obtener un puntero al objeto Reader (DirectShow)
 
-En algunos casos, por ejemplo, al determinar qué extensiones de unidad de datos se establecen en un flujo determinado, puede que necesite tener acceso directamente al objeto lector del SDK de Windows Media Format. La siguiente función muestra cómo obtener la interfaz [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) en el propio objeto de lector:
+En algunos casos, por ejemplo, al determinar qué extensiones de unidad de datos se establecen en una secuencia determinada, es posible que tenga que acceder directamente al objeto lector del SDK Windows Media Format datos. La función siguiente muestra cómo obtener la [**interfaz IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) en el propio objeto Reader:
 
 
 ```C++
@@ -75,7 +75,7 @@ HRESULT GetReaderAdvanced(IGraphBuilder *pGraph, IWMReaderAdvanced2** pReaderAdv
 
 <dl> <dt>
 
-[Leer archivos ASF en DirectShow](reading-asf-files-in-directshow.md)
+[Lectura de archivos ASF en DirectShow](reading-asf-files-in-directshow.md)
 </dt> </dl>
 
  
