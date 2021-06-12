@@ -1,6 +1,6 @@
 ---
 title: vs_1_1
-description: Un sombreador de vértices programable se compone de un conjunto de instrucciones que operan en los datos de vértices. Registra datos de transferencia dentro y fuera de la ALU. Se puede aplicar un control adicional para modificar la instrucción, los resultados o los datos que se escriben.
+description: Obtenga información vs_1_1, un sombreador de vértices programable, que se conste de un conjunto de instrucciones que funcionan con datos de vértices.
 ms.assetid: 54ad41d7-aaa4-4cf4-8834-47f10cd5425c
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b956613c2a4dd882b8bb810e586de9b6b90a2f3b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 78ea10e751fd7fe902b1631376e9eb2023d31c12
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903890"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011068"
 ---
 # <a name="vs_1_1"></a>vs \_ 1 \_ 1
 
-Un sombreador de vértices programable se compone de un conjunto de instrucciones que operan en los datos de vértices. Registra datos de transferencia dentro y fuera de la ALU. Se puede aplicar un control adicional para modificar la instrucción, los resultados o los datos que se escriben.
+Un sombreador de vértices programable se forma de un conjunto de instrucciones que funcionan con datos de vértices. Registra la transferencia de datos dentro y fuera de la ALU. Se puede aplicar un control adicional para modificar la instrucción, los resultados o los datos que se escriben.
 
--   [Instrucciones: vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md) contiene una lista de las instrucciones disponibles.
--   [Registros: vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-registers-vs-1-1.md) enumera los distintos tipos de registros utilizados por el sombreador de vértices Alu.
--   Los [modificadores de registro del sombreador de vértices](dx9-graphics-reference-asm-vs-registers-modifiers.md) se utilizan para modificar la forma en que funciona una instrucción.
--   Los [modificadores de registro de origen del sombreador de vértices](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) modifican los datos del registro de origen antes de que se ejecute la instrucción.
--   [El registro de origen permutación](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) proporciona control adicional sobre qué componentes de registro se leen, copian o escriben.
--   [El enmascaramiento del registro de destino](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) determina los componentes del registro de destino que se van a escribir.
+-   [Instrucciones: frente \_ a \_ 1 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md) contiene una lista de las instrucciones disponibles.
+-   [Registros: frente \_ a \_ 1 1, se](dx9-graphics-reference-asm-vs-registers-vs-1-1.md) enumeran los distintos tipos de registros que usa el sombreador de vértices ALU.
+-   [Los modificadores de registro del sombreador](dx9-graphics-reference-asm-vs-registers-modifiers.md) de vértices se usan para modificar el funcionamiento de una instrucción.
+-   [Los modificadores de registro de origen del sombreador de vértices](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) modifican los datos de registro de origen antes de que se ejecute la instrucción.
+-   [El swling del registro de código](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) fuente proporciona control adicional sobre qué componentes de registro se leen, copian o escriben.
+-   [El enmascaramiento del registro de](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) destino determina qué componentes del registro de destino se escriben.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -34,9 +34,9 @@ Un sombreador de vértices programable se compone de un conjunto de instruccione
 [Sombreadores de vértices](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

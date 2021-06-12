@@ -1,47 +1,47 @@
 ---
-description: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+description: Obtenga información sobre Windows Installer conceptos que comienzan con la letra R, como la interfaz de usuario reducida y la resistencia.
 ms.assetid: 868cb5b7-d5ab-41c7-a6d4-d7964a8ff6de
 title: R (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95f5093064838ff390b2fa1fa8cc38335d4c5db3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2622ddd13bcd0c6ed7969e88eb27d41e281bf2f4
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909462"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011278"
 ---
 # <a name="r-windows-installer"></a>R (Windows Installer)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L [M](m-gly.md) N [o](o-gly.md) [p](p-gly.md) [Q](q-gly.md) R [s](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) [Q](q-gly.md) R [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 
 <span id="_msi_reduced_ui_gly"></span><span id="_MSI_REDUCED_UI_GLY"></span>**interfaz de usuario reducida**
 </dt> <dd>
 
-Nivel de las capacidades de la [*interfaz de usuario internas*](i-gly.md) del instalador. Muestra solo los cuadros de diálogo no modales creados. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Nivel de las funcionalidades de la [*interfaz de usuario interna del*](i-gly.md) instalador. Muestra solo los cuadros de diálogo del modelo de creación. Para obtener más información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
 </dd> <dt>
 
-<span id="_msi_reinstall_gly"></span><span id="_MSI_REINSTALL_GLY"></span>**reinstalar**
+<span id="_msi_reinstall_gly"></span><span id="_MSI_REINSTALL_GLY"></span>**Reinstalar**
 </dt> <dd>
 
-Reinstalación parcial o completa de una aplicación instalada. Normalmente se hace para reparar una aplicación si los archivos o las entradas del registro están dañados o faltan. Para obtener más información, vea [reinstalar una característica o una aplicación](reinstalling-a-feature-or-application.md).
+Reinstalación parcial o completa de una aplicación instalada. Normalmente se hace para reparar una aplicación si algún archivo o entrada del Registro se ha dañado o falta. Para obtener más información, vea [Reinstalar una característica o una aplicación.](reinstalling-a-feature-or-application.md)
 
 </dd> <dt>
 
-<span id="_msi_resiliency_gly"></span><span id="_MSI_RESILIENCY_GLY"></span>**resistencia**
+<span id="_msi_resiliency_gly"></span><span id="_MSI_RESILIENCY_GLY"></span>**Resiliencia**
 </dt> <dd>
 
-Funcionalidad de la aplicación de recuperación correcta a partir de un error sin generar mensajes de error. Para obtener más información, consulte [resistencia](resiliency.md).
+Funcionalidad de la aplicación de recuperación correcta del error sin generar mensajes de error. Para obtener más información, vea [Resistencia.](resiliency.md)
 
 </dd> <dt>
 
-<span id="_msi_rollback_gly"></span><span id="_MSI_ROLLBACK_GLY"></span>**recuperación**
+<span id="_msi_rollback_gly"></span><span id="_MSI_ROLLBACK_GLY"></span>**Rollback**
 </dt> <dd>
 
-Restauración automática del estado original del equipo en caso de error en la instalación. Para obtener más información, vea [instalación de reversión (Windows Installer)](rollback-installation.md).
+Restauración automática del estado original del equipo en caso de que se producirá un error en la instalación. Para obtener más información, [vea Rollback Installation (Windows Installer).](rollback-installation.md)
 
 </dd> </dl>
 

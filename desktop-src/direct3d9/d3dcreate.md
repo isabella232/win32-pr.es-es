@@ -1,15 +1,15 @@
 ---
-description: Vea una combinación de una o varias marcas que controlan el comportamiento de creación del dispositivo.
+description: Vea una combinación de una o varias marcas que controlan el comportamiento de creación del dispositivo en la constante D3DCREATE.
 ms.assetid: 91387a2d-3927-4285-a09b-9ce247e6bfdd
 title: D3DCREATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d89043ac49b72bccf6279ef3c9c8fa2c856c775
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: b525c24529c725b8b7c7f71c53718d56ceb50603
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343245"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011288"
 ---
 # <a name="d3dcreate"></a>D3DCREATE
 
@@ -29,7 +29,7 @@ Combinación de una o varias marcas que controlan el comportamiento de creación
 </tr>
 <tr class="even">
 <td>D3DCREATE_ADAPTERGROUP_DEVICE</td>
-<td>La aplicación pide al dispositivo que controle todas las caras que posee este adaptador maestro. La marca no es posible en adaptadores no maestros. Si se establece esta marca, los parámetros de presentación pasados a <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> deben apuntar a una matriz <a href="d3dpresent-parameters.md"><strong>de D3DPRESENT_PARAMETERS</strong></a>. El número de elementos <strong>de D3DPRESENT_PARAMETERS</strong> debe ser igual al número de adaptadores definido por el miembro NumberOfAdaptersInGroup de la estructura <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9.</strong></a> El tiempo de ejecución de DirectX asignará cada elemento a cada elemento principal en el orden numérico especificado por el miembro AdapterOrdinalInGroup <strong>de D3DCAPS9</strong>.</td>
+<td>La aplicación pide al dispositivo que controle todas las caras que posee este adaptador maestro. La marca no es posible en adaptadores no maestros. Si se establece esta marca, los parámetros de presentación pasados a <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> deben apuntar a una matriz <a href="d3dpresent-parameters.md"><strong>de D3DPRESENT_PARAMETERS</strong></a>. El número de elementos <strong>de D3DPRESENT_PARAMETERS</strong> debe ser igual al número de adaptadores definido por el miembro NumberOfAdaptersInGroup de la estructura <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9.</strong></a> El tiempo de ejecución de DirectX asignará cada elemento a cada elemento principal en el orden numérico especificado por el miembro AdapterOrdinalInGroup de <strong>D3DCAPS9</strong>.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_DISABLE_DRIVER_MANAGEMENT</td>
@@ -54,7 +54,7 @@ Combinación de una o varias marcas que controlan el comportamiento de creación
 </tr>
 <tr class="even">
 <td>D3DCREATE_DISABLE_PSGP_THREADING</td>
-<td>Restrinja el cálculo al subproceso de aplicación principal. Si no se establece la marca, el tiempo de ejecución puede realizar el procesamiento de vértices de software y otros cálculos en el subproceso de trabajo para mejorar el rendimiento en sistemas de varios procesadores. 
+<td>Restrinja el cálculo al subproceso de aplicación principal. Si no se establece la marca, el tiempo de ejecución puede realizar el procesamiento de vértices de software y otros cálculos en subprocesos de trabajo para mejorar el rendimiento en sistemas de varios procesadores. 
 <table>
 <tbody>
 <tr class="odd">
@@ -82,8 +82,8 @@ Combinación de una o varias marcas que controlan el comportamiento de creación
 <td>D3DCREATE_FPU_PRESERVE</td>
 <td>Establezca la precisión de los cálculos de punto flotante de Direct3D en la precisión utilizada por el subproceso que realiza la llamada. Si no especifica esta marca, Direct3D tiene como valor predeterminado el modo round-to-nearest de precisión sencilla por dos motivos:
 <ul>
-<li>El modo de doble precisión reducirá el rendimiento de Direct3D.</li>
-<li>Las partes de Direct3D suponen que las excepciones de unidad de punto flotante están enmascaradas; la desenmascaramiento de estas excepciones puede dar lugar a un comportamiento indefinido.</li>
+<li>El modo de precisión doble reducirá el rendimiento de Direct3D.</li>
+<li>Las partes de Direct3D suponen que las excepciones de unidad de punto flotante están enmascaradas; La desenmascaramiento de estas excepciones puede dar lugar a un comportamiento indefinido.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -126,7 +126,7 @@ Si se establece esta marca, la aplicación debe admitir completamente todos los 
 </tr>
 <tr class="even">
 <td>D3DCREATE_PUREDEVICE</td>
-<td>Especifica que Direct3D no admite llamadas Get* para todo lo que se puede almacenar en bloques de estado. También indica a Direct3D que no proporcione ningún servicio de emulación para el procesamiento de vértices. Esto significa que si el dispositivo no admite el procesamiento de vértices, la aplicación solo puede usar vértices posteriores a la transformación.</td>
+<td>Especifica que Direct3D no admite llamadas Get* para nada que se pueda almacenar en bloques de estado. También indica a Direct3D que no proporcione ningún servicio de emulación para el procesamiento de vértices. Esto significa que si el dispositivo no admite el procesamiento de vértices, la aplicación solo puede usar vértices posteriores a la transformación.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_SCREENSAVER</td>
@@ -148,7 +148,7 @@ Si se establece esta marca, la aplicación debe admitir completamente todos los 
 
  
 
-D3DCREATE \_ HARDWARE \_ VERTEXPROCESSING, D3DCREATE \_ MIXED VERTEXPROCESSING y \_ D3DCREATE SOFTWARE VERTEXPROCESSING son marcas \_ \_ mutuamente excluyentes. Al menos una de estas marcas de procesamiento de vértices debe especificarse al llamar a [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice).
+D3DCREATE \_ HARDWARE \_ VERTEXPROCESSING, D3DCREATE \_ MIXED VERTEXPROCESSING y \_ D3DCREATE SOFTWARE VERTEXPROCESSING son marcas \_ \_ mutuamente excluyentes. Al menos una de estas marcas de procesamiento de vértices debe especificarse al llamar a [**CreateDevice.**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice)
 
 ## <a name="constant-information"></a>Información constante
 

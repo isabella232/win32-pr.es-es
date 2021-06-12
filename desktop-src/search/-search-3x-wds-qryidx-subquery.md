@@ -1,19 +1,19 @@
 ---
-description: Una subconsulta es un archivo de búsqueda guardado ( \* . Search-MS) que puede usar como filtro para una nueva consulta.
+description: Obtenga información sobre el argumento SUBQUERY en Windows Search. Una subconsulta es un archivo de búsqueda guardado que puede usar como filtro para una nueva consulta.
 ms.assetid: a92c774f-310b-4c40-be1c-0c2b0cac907b
-title: Argumento de subconsulta (búsqueda de Windows)
+title: Argumento SUBQUERY (Windows Search)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f673cf9c2a9867593fd6c8fdac83b5901f531257
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93b23028d0bddcc674714f51f8b31883052431bd
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000999"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011038"
 ---
-# <a name="subquery-argument-windows-search"></a>Argumento de subconsulta (búsqueda de Windows)
+# <a name="subquery-argument-windows-search"></a>Argumento SUBQUERY (Windows Search)
 
-Una subconsulta es un archivo de búsqueda guardado ( \* . Search-MS) que puede usar como filtro para una nueva consulta. Los resultados de la subconsulta se usan como origen de la nueva consulta. Por ejemplo, supongamos que tiene varios archivos de búsqueda guardados que restringen una consulta por lista de distribución de correo electrónico: Departamento. Search-MS, teamproject. Search-MS y corporatewide. Search-ms. El uso del `subquery` argumento le permite limitar las búsquedas de correo electrónico a cualquiera de estas búsquedas guardadas.
+Una subconsulta es un archivo de búsqueda guardado (.search-ms) que puede usar como \* filtro para una nueva consulta. Los resultados de la subconsulta se usan como origen de la nueva consulta. Por ejemplo, supongamos que tiene varios archivos de búsqueda guardados que restringen una consulta por lista de distribución de correo electrónico: mydepartment.search-ms, teamproject.search-ms y corporatewide.search-ms. El uso `subquery` del argumento permite limitar las búsquedas de correo electrónico a cualquiera de estas búsquedas guardadas o a todas ellas.
 
 Este tema se organiza de la siguiente manera:
 
@@ -33,16 +33,16 @@ Este tema se organiza de la siguiente manera:
 
 <dl> <dt>
 
-[Introducción con argumentos de Parameter-Value](getting-started-with-parameter-value-arguments.md)
+[Tareas iniciales con Parameter-Value argumentos](getting-started-with-parameter-value-arguments.md)
 </dt> <dt>
 
-[Argumentos de identificador de configuración regional](-search-3x-wds-qryidx-localeidentifiers.md)
+[Argumentos del identificador de configuración regional](-search-3x-wds-qryidx-localeidentifiers.md)
 </dt> <dt>
 
-[Argumento de MIGAs de](-search-3x-wds-qryidx-crumb.md)
+[Argumento CRUMB](-search-3x-wds-qryidx-crumb.md)
 </dt> <dt>
 
-[Argumento de sintaxis](-search-3x-wds-qryidx-syntaxargument.md)
+[Argumento SYNTAX](-search-3x-wds-qryidx-syntaxargument.md)
 </dt> <dt>
 
 [Argumento STACKEDBY](-search-3x-wds-qryidx-stackedby.md)

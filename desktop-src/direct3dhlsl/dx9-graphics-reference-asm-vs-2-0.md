@@ -1,6 +1,6 @@
 ---
 title: vs_2_0
-description: Un sombreador de vértices programable se compone de un conjunto de instrucciones que operan en los datos de vértices. Registra datos de transferencia dentro y fuera de la ALU. Se puede aplicar un control adicional para modificar la instrucción, los resultados o los datos que se escriben.
+description: Obtenga información vs_2_0, un sombreador de vértices programable, que se forma de un conjunto de instrucciones que funcionan con datos de vértices.
 ms.assetid: 6e38c138-5f9c-40a6-9fe2-a93471c3c573
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ce4e986e610ff95716cd6899d6167e4f69efe042
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fe951d62b869a303a0c07839b46840dc8f9fda00
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104983734"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112010858"
 ---
 # <a name="vs_2_0"></a>vs \_ 2 \_ 0
 
-Un sombreador de vértices programable se compone de un conjunto de instrucciones que operan en los datos de vértices. Registra datos de transferencia dentro y fuera de la ALU. Se puede aplicar un control adicional para modificar la instrucción, los resultados o los datos que se escriben.
+Un sombreador de vértices programable se forma de un conjunto de instrucciones que funcionan con datos de vértices. Registra la transferencia de datos dentro y fuera de la ALU. Se puede aplicar un control adicional para modificar la instrucción, los resultados o los datos que se escriben.
 
--   [Instrucciones: vs \_ 2 \_ 0](dx9-graphics-reference-asm-vs-instructions-vs-2-0.md) contiene una lista de las instrucciones disponibles.
--   [Registros: vs \_ 2 \_ 0](dx9-graphics-reference-asm-vs-registers-vs-2-0.md) muestra los distintos tipos de registros utilizados por el sombreador de vértices Alu.
--   Los [modificadores de registro del sombreador de vértices](dx9-graphics-reference-asm-vs-registers-modifiers.md) se utilizan para modificar la forma en que funciona una instrucción.
--   Los [modificadores de registro de origen del sombreador de vértices](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) modifican los datos del registro de origen antes de que se ejecute la instrucción.
--   [El registro de origen permutación](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) proporciona control adicional sobre qué componentes de registro se leen, se copian o se escriben.
--   [El enmascaramiento del registro de destino](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) determina los componentes del registro de destino que se van a escribir.
+-   [Instrucciones: frente \_ a \_ 2 0](dx9-graphics-reference-asm-vs-instructions-vs-2-0.md) contiene una lista de las instrucciones disponibles.
+-   [Registros: frente \_ a 2 \_ 0,](dx9-graphics-reference-asm-vs-registers-vs-2-0.md) se enumeran los distintos tipos de registros usados por el sombreador de vértices ALU.
+-   [Los modificadores de registro del sombreador](dx9-graphics-reference-asm-vs-registers-modifiers.md) de vértices se usan para modificar el funcionamiento de una instrucción.
+-   [Los modificadores de registro de origen del sombreador de vértices](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) modifican los datos de registro de origen antes de que se ejecute la instrucción.
+-   [Source Register Swling proporciona](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) control adicional sobre qué componentes de registro se leen, copian o escriben.
+-   [El enmascaramiento de registros de destino](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) determina qué componentes del registro de destino se escriben.
 
 ## <a name="instruction-count"></a>Recuento de instrucciones
 
-Cada sombreador de vértices puede tener hasta 256 instrucciones almacenadas. El número de instrucciones que se ejecutan puede ser mucho mayor (debido al soporte de bucle/REP) y está limitado por D3DCAPS9. MaxVShaderInstructionsExecuted, que debe ser al menos 0xFFFF.
+Cada sombreador de vértices puede tener hasta 256 instrucciones almacenadas. El número de instrucciones que se ejecutan puede ser mucho mayor (debido a la compatibilidad con bucles y réplicas) y D3DCAPS9. MaxVShaderInstructionsExecuted, que debe ser al menos 0xFFFF.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,9 +38,9 @@ Cada sombreador de vértices puede tener hasta 256 instrucciones almacenadas. El
 [Sombreadores de vértices](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
