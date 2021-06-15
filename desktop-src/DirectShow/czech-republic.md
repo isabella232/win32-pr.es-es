@@ -1,33 +1,33 @@
 ---
-description: Para obtener una explicación de las tablas siguientes, vea tablas y asignaciones.
+description: Este artículo contiene tablas de frecuencia para la optimización de televisión análoga internacional para la República Checo. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: 6bbef2a3-7104-4b5f-8381-0a89751e572b
 title: República Checa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 732a8a9082484d0b8167d8c3f565afdafd0664a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91e3d946fdfc42f0e418d7bba1a786d49c5d6785
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806776"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068031"
 ---
 # <a name="czech-republic"></a>República Checa
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Los índices de frecuencia de las tablas de la República Checa no son adecuados para su uso como números de canal.
+Los índices de frecuencia de las tablas de la República Checo no son adecuados para su uso como números de canal.
 
 -   [Windows 7 y versiones posteriores](#windows-7-and-later)
-    -   [Asignaciones de difusión de República Checa](#czech-republic-broadcast-assignments)
-    -   [Asignaciones de cable de la República Checa](#czech-republic-cable-assignments)
+    -   [Asignaciones de difusión de la República Checo](#czech-republic-broadcast-assignments)
+    -   [Asignaciones de cable de la República Checo](#czech-republic-cable-assignments)
 -   [Asignaciones de canal anteriores](#earlier-channel-assignments)
-    -   [Asignaciones de difusión de República Checa](#czech-republic-broadcast-assignments)
-    -   [Asignaciones de cable de la República Checa](#czech-republic-cable-assignments)
+    -   [Asignaciones de difusión de la República Checo](#czech-republic-broadcast-assignments)
+    -   [Asignaciones de cable de la República Checo](#czech-republic-cable-assignments)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 y versiones posteriores
 
-### <a name="czech-republic-broadcast-assignments"></a>Asignaciones de difusión de República Checa
+### <a name="czech-republic-broadcast-assignments"></a>Asignaciones de difusión de la República Checo
 
 ``` syntax
         1L,             // Lowest channel
@@ -106,7 +106,7 @@ Los índices de frecuencia de las tablas de la República Checa no son adecuados
        855250000L,      // 71 TV71
 ```
 
-### <a name="czech-republic-cable-assignments"></a>Asignaciones de cable de la República Checa
+### <a name="czech-republic-cable-assignments"></a>Asignaciones de cable de la República Checo
 
 ``` syntax
         1L,             // Lowest channel
@@ -254,7 +254,7 @@ Los índices de frecuencia de las tablas de la República Checa no son adecuados
 
 ## <a name="earlier-channel-assignments"></a>Asignaciones de canal anteriores
 
-### <a name="czech-republic-broadcast-assignments"></a>Asignaciones de difusión de República Checa
+### <a name="czech-republic-broadcast-assignments"></a>Asignaciones de difusión de la República Checo
 
 ``` syntax
         1L,             // Lowest channel
@@ -333,7 +333,7 @@ Los índices de frecuencia de las tablas de la República Checa no son adecuados
        855250000L,      // 69
 ```
 
-### <a name="czech-republic-cable-assignments"></a>Asignaciones de cable de la República Checa
+### <a name="czech-republic-cable-assignments"></a>Asignaciones de cable de la República Checo
 
 ``` syntax
         1L,             // Lowest channel
@@ -403,7 +403,7 @@ Los índices de frecuencia de las tablas de la República Checa no son adecuados
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

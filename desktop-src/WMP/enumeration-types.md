@@ -1,45 +1,45 @@
 ---
-title: Tipos de enumeración del SDK de Windows Media Player
-description: Tipos de enumeración
+title: Reproductor de Windows Media tipos de enumeración del SDK
+description: Obtenga información sobre los tipos de enumeración que admite Reproductor de Windows Media SDK, como WMPFormat y WMPState.
 ms.assetid: 90689fb7-656d-4c06-a0a9-02bbe0e5b5dd
 keywords:
-- Media Player de Windows, tipos de enumeración
-- Modelo de objetos de Windows Media Player, tipos de enumeración
+- Reproductor de Windows Media,tipos de enumeración
+- Reproductor de Windows Media de objetos, tipos de enumeración
 - modelo de objetos, tipos de enumeración
-- Control ActiveX de Windows Media Player, tipos de enumeración
+- Reproductor de Windows Media control ActiveX, tipos de enumeración
 - Control ActiveX, tipos de enumeración
-- Control ActiveX móvil de Windows Media Player, tipos de enumeración
-- Windows Media Player Mobile, tipos de enumeración
-- enumeraciones, tipos
-- Referencia del modelo de objetos, tipos de enumeración
+- Reproductor de Windows Media control ActiveX móvil, tipos de enumeración
+- Reproductor de Windows Media Móvil,tipos de enumeración
+- enumerations,types
+- referencia para el modelo de objetos, tipos de enumeración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 112f7bfecf767dd43f15a42b4185b268f66357ca
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: b5f0bd389548c81da21217e28f9c90a8e771a5f6
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105695814"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068501"
 ---
-# <a name="windows-media-player-sdk-enumeration-types"></a>Tipos de enumeración del SDK de Windows Media Player
+# <a name="windows-media-player-sdk-enumeration-types"></a>Reproductor de Windows Media tipos de enumeración del SDK
 
-El SDK de Windows Media Player admite los siguientes tipos de enumeración.
+El SDK Reproductor de Windows Media admite los siguientes tipos de enumeración.
 
 
 
 | Tipo de enumeración                                                             | Descripción                                                                                                            |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [WMPBurnFormat](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnformat)                                           | Define los posibles tipos de CDs para la grabación.                                                                         |
-| [WMPBurnState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)                                             | Define los posibles estados operativos de Windows Media Player a medida que graba un CD.                                      |
+| [WMPFormat](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnformat)                                           | Define los posibles tipos de CD para la grabación.                                                                         |
+| [WMPState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)                                             | Define los posibles estados operativos de Reproductor de Windows Media a medida que se mente un CD.                                      |
 | [WMPDeviceStatus](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpdevicestatus)                                       | Define los valores posibles para el estado actual de un dispositivo.                                                        |
-| [WMPFolderScanState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpfolderscanstate)                                 | Define los posibles estados operativos de Windows Media Player a medida que supervisa las carpetas de archivos en busca de contenido multimedia digital. |
-| [WMPLibraryType](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmplibrarytype)                                         | Define los posibles tipos de biblioteca a los que se puede conectar Windows Media Player.                                          |
-| [WMPOpenState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpopenstate)                                             | Define los posibles estados operativos de Windows Media Player cuando abre un archivo multimedia digital.                      |
+| [WMPFolderScanState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpfolderscanstate)                                 | Define los posibles estados operativos de Reproductor de Windows Media, ya que supervisa las carpetas de archivos para el contenido multimedia digital. |
+| [WMPLibraryType](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmplibrarytype)                                         | Define los posibles tipos de biblioteca a los Reproductor de Windows Media pueden conectarse.                                          |
+| [WMPOpenState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpopenstate)                                             | Define los posibles estados operativos de Reproductor de Windows Media cuando abre un archivo multimedia digital.                      |
 | [WMPPlaylistChangeEventType](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpplaylistchangeeventtype)                 | Define los tipos de cambios que se pueden realizar en una lista de reproducción.                                                           |
-| [WMPPlayState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpplaystate)                                             | Define los posibles estados operativos de Windows Media Player a medida que reproduce un archivo multimedia digital.                      |
-| [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate)                                               | Define los posibles estados operativos de Windows Media Player como RIP un CD.                                       |
-| [WMPStringCollectionChangeEventType](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpstringcollectionchangeeventtype) | Define los tipos de cambios que se pueden producir en una colección de cadenas.                                                    |
-| [WMPSyncState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpsyncstate)                                             | Define los posibles estados operativos de Windows Media Player a medida que sincroniza los archivos multimedia digitales con un dispositivo.          |
+| [WMPPlayState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpplaystate)                                             | Define los posibles estados operativos de Reproductor de Windows Media mientras reproduce un archivo multimedia digital.                      |
+| [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate)                                               | Define los posibles estados operativos de Reproductor de Windows Media a medida que arranca un CD.                                       |
+| [WMPStringCollectionChangeEventType](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpstringcollectionchangeeventtype) | Define los tipos de cambios que pueden producirse en una colección de cadenas.                                                    |
+| [WMPSyncState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpsyncstate)                                             | Define los posibles estados operativos de Reproductor de Windows Media a medida que sincroniza medios digitales con un dispositivo.          |
 
 
 
@@ -49,7 +49,7 @@ El SDK de Windows Media Player admite los siguientes tipos de enumeración.
 
 <dl> <dt>
 
-[**Referencia del modelo de objetos de Windows Media Player**](windows-media-player-object-model-reference.md)
+[**Reproductor de Windows Media referencia del modelo de objetos**](windows-media-player-object-model-reference.md)
 </dt> </dl>
 
  

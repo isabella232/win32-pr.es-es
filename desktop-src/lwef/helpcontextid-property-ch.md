@@ -1,33 +1,33 @@
 ---
 title: Propiedad HelpContextID (objeto Characters)
-description: Propiedad HelpContextID
+description: Obtenga información sobre la propiedad HelpContextID del objeto Characters. Microsoft Agent está en desuso a partir de Windows 7.
 ms.assetid: 7ef190ba-c194-4386-a8d6-d32d902a1c03
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42006f74cc3668f8df9af2c2ffcd2515614ec735
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e751cb2d8834a6af2c3b816066d6051e3a28c767
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104421797"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068192"
 ---
 # <a name="helpcontextid-property-characters-object"></a>Propiedad HelpContextID (objeto Characters)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
-Devuelve o establece un número de contexto asociado para el carácter. Se utiliza para proporcionar ayuda contextual para el carácter.
+Devuelve o establece un número de contexto asociado para el carácter. Se usa para proporcionar ayuda contextual para el carácter.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*Caracteres Agent. ***("**_CharacterID_*_")._ *  \[  =  *Número* de HelpContextID\]
+*agent.***Characters("**_CharacterID_*_"). HelpContextID_ *  \[  =  *Number*\]
 
 
 
@@ -43,18 +43,18 @@ Devuelve o establece un número de contexto asociado para el carácter. Se utili
 
 ## <a name="remarks"></a>Observaciones
 
-Para admitir la ayuda contextual para el carácter, asigne el número de contexto al carácter que se usa para el tema de ayuda asociado al compilar el archivo de ayuda. Esta propiedad solo se aplica al cliente del carácter; la configuración no afecta a otros clientes del carácter u otros caracteres del cliente.
+Para admitir la Ayuda contextual para el carácter, asigne el número de contexto al carácter que usa para el tema de Ayuda asociado al compilar el archivo de Ayuda. Esta propiedad solo se aplica al cliente del carácter; la configuración no afecta a otros clientes del carácter ni a otros caracteres del cliente.
 
-Si ha creado un archivo de ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter, el agente llama automáticamente a Help cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **true** y el usuario hace clic en el carácter. Si hay un número de contexto en el [**HelpContextID**](helpcontextid-property.md), el agente llama a help y busca el tema identificado por el número de contexto actual. El número de contexto actual es el valor de **HelpContextID** para el carácter.
+Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter, el Agente llama automáticamente a la Ayuda cuando [**HelpModeOn**](helpmodeon-property.md) se establece en **True** y el usuario hace clic en el carácter. Si hay un número de contexto en [**HelpContextID,**](helpcontextid-property.md)el Agente llama a la Ayuda y busca el tema identificado por el número de contexto actual. El número de contexto actual es el valor **de HelpContextID** para el carácter.
 
 > [!Note]  
-> La compilación de un archivo de ayuda requiere el compilador de ayuda de Microsoft Windows.
+> La compilación de un archivo de Ayuda requiere el compilador de Ayuda de Microsoft Windows.
 
  
 
 ## <a name="see-also"></a>Consulte también
 
-[**HelpFile (propiedad)**](helpfile-property.md)
+[**Propiedad HelpFile**](helpfile-property.md)
 
 
  

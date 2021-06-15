@@ -1,17 +1,17 @@
 ---
-description: Propiedad del archivo.
+description: Obtenga información sobre la propiedad System.Security.EncryptionOwners, que admite la propiedad de archivos para diferentes versiones de Windows.
 ms.assetid: d29d70d7-8a0b-4fa5-afb7-ba115028e115
-title: System. Security. EncryptionOwners
+title: System.Security.EncryptionOwners
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a802533c8d8f6bb27cdb298b5e4f37b5775a0f56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d381b009943159cfc12e13750b2aeb6181401df0
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716925"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068491"
 ---
-# <a name="systemsecurityencryptionowners"></a>System. Security. EncryptionOwners
+# <a name="systemsecurityencryptionowners"></a>System.Security.EncryptionOwners
 
 Propiedad del archivo
 
@@ -64,7 +64,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -79,7 +79,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -91,7 +91,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -109,7 +109,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

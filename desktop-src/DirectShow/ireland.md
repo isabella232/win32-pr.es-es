@@ -1,19 +1,19 @@
 ---
-description: Para obtener una explicación de las tablas siguientes, vea tablas y asignaciones.
+description: Este artículo contiene tablas de frecuencia para la optimización de televisión análoga internacional para Irlanda. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: be60ca37-9f3a-44cd-8646-28fcbda5e79e
 title: Irlanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81dba5254cd64262fa40c330b3f65ba589090fed
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b004a811a59a6e2556cdd4187728e5842bea1a46
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536856"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068161"
 ---
 # <a name="ireland"></a>Irlanda
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
 Los índices de frecuencia de las tablas de Irlanda no son adecuados para su uso como números de canal.
 
@@ -204,7 +204,7 @@ Los índices de frecuencia de las tablas de Irlanda no son adecuados para su uso
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

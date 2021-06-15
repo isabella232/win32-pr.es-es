@@ -1,33 +1,33 @@
 ---
-title: Enumerar dispositivos (SDK de WMP)
-description: Enumerar dispositivos
+title: Enumeración de dispositivos (SDK de WMP)
+description: Este código de ejemplo muestra una función que enumera los dispositivos mediante la creación de una matriz de punteros que cada uno representa un dispositivo.
 ms.assetid: 0236a629-c09a-4687-a8ba-fa05107fab33
 keywords:
-- Windows Media Player, dispositivos portátiles
-- Modelo de objetos de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media dispositivos portátiles
+- Reproductor de Windows Media modelo de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Control ActiveX de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media control ActiveX, dispositivos portátiles
 - Control ActiveX, dispositivos portátiles
-- Control ActiveX móvil de Windows Media Player, dispositivos portátiles
-- Windows Media Player dispositivos móviles y portátiles
+- Reproductor de Windows Media control ActiveX móvil, dispositivos portátiles
+- Reproductor de Windows Media móviles, dispositivos portátiles
 - dispositivos portátiles, enumeración
 - enumeraciones, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5025d0e0a7e99028b22cc24ebc56337ea84d2fb
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: d44f71fa26f40983424ced70280d9c03e0892a00
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994949"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068442"
 ---
-# <a name="enumerating-devices"></a>Enumerar dispositivos
+# <a name="enumerating-devices"></a>Enumeración de dispositivos
 
-Windows Media Player representa dispositivos portátiles mediante la interfaz **IWMPSyncDevice** . En el ejemplo de código siguiente se muestra una función que crea una matriz de punteros a **IWMPSyncDevice**. Cada puntero de la matriz representa un dispositivo para el que Windows Media Player tiene información almacenada. No es necesario que un dispositivo esté conectado al equipo, ni es necesario tener una asociación con la instancia actual de Media Player de Windows.
+Reproductor de Windows Media representa dispositivos portátiles mediante la **interfaz IWMPSyncDevice.** El código de ejemplo siguiente muestra una función que crea una matriz de punteros a **IWMPSyncDevice**. Cada puntero de la matriz representa un dispositivo para el que Reproductor de Windows Media información almacenada. No es necesario que un dispositivo esté conectado al equipo ni que tenga una asociación con la instancia de Reproductor de Windows Media actual.
 
-Debe enumerar los dispositivos siempre que reciba el evento **DeviceConnect** o el evento **DeviceDisconnect** .
+Debe enumerar los dispositivos cada vez que reciba el **evento DeviceConnect** o **el evento DeviceDisconnect.**
 
-La función siguiente enumera los dispositivos. El parámetro *bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.
+La siguiente función enumera los dispositivos. El *parámetro bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.
 
 
 ```C++
@@ -121,7 +121,7 @@ STDMETHODIMP CMainDlg::EnumDevices(BOOL bConnectedOnly)
 
 
 
-Podría usar código similar para recuperar otras listas de dispositivos de este tipo. Por ejemplo, puede usar [IWMPSyncDevice:: get \_ status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) para crear una matriz de dispositivos para los que existe una asociación.
+Puede usar código similar para recuperar otras listas de dispositivos de este tipo. Por ejemplo, podría usar el estado [IWMPSyncDevice::get \_ ](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) para crear una matriz de dispositivos para los que existe una asociación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -133,21 +133,21 @@ Podría usar código similar para recuperar otras listas de dispositivos de este
 [**IWMPEvents2::D eviceDisconnect**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents2-devicedisconnect)
 </dt> <dt>
 
-[**Interfaz IWMPSyncDevice**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
+[**IWMPSyncDevice (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
 </dt> <dt>
 
-[**IWMPSyncDevice:: get \_ connected**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_connected)
+[**IWMPSyncDevice::get \_ connected**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_connected)
 </dt> <dt>
 
-[**Interfaz IWMPSyncServices**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncservices)
+[**IWMPSyncServices (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncservices)
 </dt> <dt>
 
 [**Trabajar con dispositivos portátiles**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,29 +1,29 @@
 ---
-title: Introducción con el SDK de Windows Media Format
-description: Introducción
+title: Tareas iniciales con Windows Media Format SDK
+description: Use estos recursos para recibir el SDK de Windows Media Format, como los archivos de biblioteca y la configuración del compilador.
 ms.assetid: e6f560a6-e677-47dc-b99c-e14bd60e4007
 keywords:
-- SDK de Windows Media Format, introducción
-- SDK de Windows Media Format, acerca de
+- Windows Media Format SDK, introducción
+- Windows Media Format SDK, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b763a1462f3d07b9ac630895e65ab5be5a3589e5
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f6022ead1dfa3e7efcab09e771c5b4fdffe601d9
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103800836"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068251"
 ---
-# <a name="getting-started-with-windows-media-format-sdk"></a>Introducción con el SDK de Windows Media Format
+# <a name="getting-started-with-windows-media-format-sdk"></a>Tareas iniciales con Windows Media Format SDK
 
-En las secciones siguientes se enumeran las configuraciones y los problemas que deben tenerse en cuenta antes de desarrollar aplicaciones con este SDK.
+En las secciones siguientes se muestra la configuración y los problemas que deben tenerse en cuenta antes de desarrollar aplicaciones con este SDK.
 
 
 
 | Sección                                                                        | Descripción                                                                                                              |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Archivos de biblioteca y configuración del compilador](library-files-and-compiler-settings.md) | Describe el entorno de desarrollo necesario para desarrollar aplicaciones con este SDK y enumera las bibliotecas que se van a incluir. |
-| [Usar los ejemplos de código](using-the-code-examples.md)                         | Describe las convenciones de los ejemplos de código incluidos en esta guía.                                                   |
+| [Archivos de biblioteca y configuración del compilador](library-files-and-compiler-settings.md) | Describe el entorno de desarrollo necesario para desarrollar aplicaciones con este SDK y enumera las bibliotecas que se incluirán. |
+| [Uso de los ejemplos de código](using-the-code-examples.md)                         | Describe las convenciones de los ejemplos de código incluidos en esta guía.                                                   |
 
 
 

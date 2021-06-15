@@ -1,26 +1,26 @@
 ---
-description: Para obtener una explicación de las tablas siguientes, vea tablas y asignaciones.
+description: Este artículo contiene tablas de frecuencia para la optimización de televisión análoga internacional para Nueva Zelanda. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: a314d0b1-9e4f-42dd-914a-65a8f3610300
 title: Nueva Zelanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b56d806951fff53a674870b446167c2599838cd4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9879e89f6460ab25aa93594001068526404dcd84
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494315"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112067991"
 ---
 # <a name="new-zealand"></a>Nueva Zelanda
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuados para su uso como números de canal; los índices de frecuencia de cable no son adecuados para su uso como números de canal.
+Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuados para su uso como números de canal. los índices de frecuencia de cable no son adecuados para su uso como números de canal.
 
 -   [Windows 7 y versiones posteriores](#windows-7-and-later)
     -   [Asignaciones de difusión de Nueva Zelanda](#new-zealand-broadcast-assignments)
     -   [Asignaciones de cable de Nueva Zelanda](#new-zealand-cable-assignments)
--   [Asignaciones de canal anteriores](#earlier-channel-assignments)
+-   [Asignaciones de canales anteriores](#earlier-channel-assignments)
     -   [Asignaciones de difusión de Nueva Zelanda](#new-zealand-broadcast-assignments)
     -   [Asignaciones de cable de Nueva Zelanda](#new-zealand-cable-assignments)
 -   [Temas relacionados](#related-topics)
@@ -142,7 +142,7 @@ Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuad
        799250000L,      // 49   E62 
 ```
 
-## <a name="earlier-channel-assignments"></a>Asignaciones de canal anteriores
+## <a name="earlier-channel-assignments"></a>Asignaciones de canales anteriores
 
 ### <a name="new-zealand-broadcast-assignments"></a>Asignaciones de difusión de Nueva Zelanda
 
@@ -226,7 +226,7 @@ Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuad
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

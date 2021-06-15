@@ -1,17 +1,17 @@
 ---
-description: Ruta de acceso del sistema de archivos a la representación en miniatura grande del elemento multimedia.
+description: La propiedad System.Media.ThumbnailSmallPath contiene la ruta de acceso del sistema de archivos a la representación en miniatura pequeña del elemento multimedia.
 ms.assetid: 5ce12c5a-c9ed-4f96-bdbf-1e14b7b5dbcd
-title: System. Media. ThumbnailSmallPath
+title: System.Media.ThumbnailSmallPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fd1f63d67895d1ddf5ae6b058c39c97d33852c4
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c834315bc423f29b916167d2ff6f29f178cb5cb5
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103820210"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068361"
 ---
-# <a name="systemmediathumbnailsmallpath"></a>System. Media. ThumbnailSmallPath
+# <a name="systemmediathumbnailsmallpath"></a>System.Media.ThumbnailSmallPath
 
 Ruta de acceso del sistema de archivos a la representación en miniatura grande del elemento multimedia.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

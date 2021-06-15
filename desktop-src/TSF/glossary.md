@@ -1,32 +1,32 @@
 ---
-title: Glosario (marco de trabajo de servicios de texto)
-description: Glosario
+title: Glosario (Text Services Framework)
+description: Este glosario incluye términos y conceptos clave sobre la Text Services Framework. Siga estos vínculos para ver las entradas.
 ms.assetid: 2fd6c6bf-c556-414c-98bf-ed042d49920b
 keywords:
-- Text Services Framework (TSF), Glosario
-- TSF (marco de trabajo de servicios de texto), Glosario
-- servicios de texto, Glosario
-- Aplicaciones habilitadas para TSF, Glosario
-- Text Services Framework (TSF), términos
-- TSF (marco de trabajo de servicios de texto), términos
+- Text Services Framework (TSF), glosario
+- TSF (Text Services Framework),glosario
+- servicios de texto, glosario
+- Aplicaciones habilitadas para TSF, glosario
+- Text Services Framework (TSF),terms
+- TSF (Text Services Framework),terms
 - servicios de texto, términos
 - Aplicaciones habilitadas para TSF, términos
-- Text Services Framework (TSF), definiciones
-- TSF (marco de trabajo de servicios de texto), definiciones
+- Text Services Framework (TSF),definiciones
+- TSF (Text Services Framework),definiciones
 - servicios de texto, definiciones
 - Aplicaciones habilitadas para TSF, definiciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11b9d66e9cad15b0a65a7d07ecd9b047e5db7415
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 5bc44d685ff521b42d47618578ea80c5f7b3007e
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103800769"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068120"
 ---
-# <a name="glossary-text-services-framework"></a>Glosario (marco de trabajo de servicios de texto)
+# <a name="glossary-text-services-framework"></a>Glosario (Text Services Framework)
 
-[A](a.md)[B](b.md)[C](c.md)[D](d.md)[E](e.md)[F](f.md)[G](g.md)[H](h.md)[I](i.md)[J](j.md)[K](k.md)[L](l.md)[M](m.md)[N](n.md)[o](o.md)[p](p.md)[Q](q.md)[R](r.md)[s](s.md)[T](t.md)[U](u.md)[V](v.md)[W](w.md)[X](x.md)[Y](y.md)[Z](z.md)
+[A](a.md)[B](b.md)[C](c.md)[D](d.md)[E](e.md)[F](f.md)[G](g.md)H[](h.md)[I](i.md)[J](j.md)[K](k.md)[L](l.md)M[N](m.md)[](n.md)[O](o.md)[P P](p.md)[Q](q.md)[R](r.md)[S](s.md)[T](t.md)[U](u.md)[V](v.md)[W](w.md)[X](x.md)[Y](y.md)[Z](z.md)
 
  
 
