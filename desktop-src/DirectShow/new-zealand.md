@@ -1,33 +1,33 @@
 ---
-description: Para obtener una explicación de las tablas siguientes, vea tablas y asignaciones.
+description: Este artículo contiene tablas de frecuencia para la optimización de televisión análoga internacional para Nueva Zelanda. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: a314d0b1-9e4f-42dd-914a-65a8f3610300
 title: Nueva Zelanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b56d806951fff53a674870b446167c2599838cd4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9879e89f6460ab25aa93594001068526404dcd84
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494315"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112067991"
 ---
-# <a name="new-zealand"></a><span data-ttu-id="d2bd1-103">Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-103">New Zealand</span></span>
+# <a name="new-zealand"></a><span data-ttu-id="35a31-104">Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-104">New Zealand</span></span>
 
-<span data-ttu-id="d2bd1-104">Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="d2bd1-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="35a31-105">Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)</span><span class="sxs-lookup"><span data-stu-id="35a31-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="d2bd1-105">Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuados para su uso como números de canal; los índices de frecuencia de cable no son adecuados para su uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="d2bd1-105">The frequency indexes in the New Zealand broadcast table are suitable for use as channel numbers; the cable frequency indexes are not suitable for use as channel numbers.</span></span>
+<span data-ttu-id="35a31-106">Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuados para su uso como números de canal. los índices de frecuencia de cable no son adecuados para su uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="35a31-106">The frequency indexes in the New Zealand broadcast table are suitable for use as channel numbers; the cable frequency indexes are not suitable for use as channel numbers.</span></span>
 
--   [<span data-ttu-id="d2bd1-106">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="d2bd1-106">Windows 7 and Later</span></span>](#windows-7-and-later)
-    -   [<span data-ttu-id="d2bd1-107">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-107">New Zealand Broadcast Assignments</span></span>](#new-zealand-broadcast-assignments)
-    -   [<span data-ttu-id="d2bd1-108">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-108">New Zealand Cable Assignments</span></span>](#new-zealand-cable-assignments)
--   [<span data-ttu-id="d2bd1-109">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="d2bd1-109">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
-    -   [<span data-ttu-id="d2bd1-110">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-110">New Zealand Broadcast Assignments</span></span>](#new-zealand-broadcast-assignments)
-    -   [<span data-ttu-id="d2bd1-111">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-111">New Zealand Cable Assignments</span></span>](#new-zealand-cable-assignments)
--   [<span data-ttu-id="d2bd1-112">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="d2bd1-112">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="35a31-107">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="35a31-107">Windows 7 and Later</span></span>](#windows-7-and-later)
+    -   [<span data-ttu-id="35a31-108">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-108">New Zealand Broadcast Assignments</span></span>](#new-zealand-broadcast-assignments)
+    -   [<span data-ttu-id="35a31-109">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-109">New Zealand Cable Assignments</span></span>](#new-zealand-cable-assignments)
+-   [<span data-ttu-id="35a31-110">Asignaciones de canales anteriores</span><span class="sxs-lookup"><span data-stu-id="35a31-110">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
+    -   [<span data-ttu-id="35a31-111">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-111">New Zealand Broadcast Assignments</span></span>](#new-zealand-broadcast-assignments)
+    -   [<span data-ttu-id="35a31-112">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-112">New Zealand Cable Assignments</span></span>](#new-zealand-cable-assignments)
+-   [<span data-ttu-id="35a31-113">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="35a31-113">Related topics</span></span>](#related-topics)
 
-## <a name="windows-7-and-later"></a><span data-ttu-id="d2bd1-113">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="d2bd1-113">Windows 7 and Later</span></span>
+## <a name="windows-7-and-later"></a><span data-ttu-id="35a31-114">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="35a31-114">Windows 7 and Later</span></span>
 
-### <a name="new-zealand-broadcast-assignments"></a><span data-ttu-id="d2bd1-114">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-114">New Zealand Broadcast Assignments</span></span>
+### <a name="new-zealand-broadcast-assignments"></a><span data-ttu-id="35a31-115">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-115">New Zealand Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -84,7 +84,7 @@ ms.locfileid: "104494315"
        815000000L,      // 49 TV63_Cable
 ```
 
-### <a name="new-zealand-cable-assignments"></a><span data-ttu-id="d2bd1-115">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-115">New Zealand Cable Assignments</span></span>
+### <a name="new-zealand-cable-assignments"></a><span data-ttu-id="35a31-116">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-116">New Zealand Cable Assignments</span></span>
 
 ``` syntax
          1L,            // Lowest channel
@@ -142,9 +142,9 @@ ms.locfileid: "104494315"
        799250000L,      // 49   E62 
 ```
 
-## <a name="earlier-channel-assignments"></a><span data-ttu-id="d2bd1-116">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="d2bd1-116">Earlier Channel Assignments</span></span>
+## <a name="earlier-channel-assignments"></a><span data-ttu-id="35a31-117">Asignaciones de canales anteriores</span><span class="sxs-lookup"><span data-stu-id="35a31-117">Earlier Channel Assignments</span></span>
 
-### <a name="new-zealand-broadcast-assignments"></a><span data-ttu-id="d2bd1-117">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-117">New Zealand Broadcast Assignments</span></span>
+### <a name="new-zealand-broadcast-assignments"></a><span data-ttu-id="35a31-118">Asignaciones de difusión de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-118">New Zealand Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -164,7 +164,7 @@ ms.locfileid: "104494315"
        224250000L,      // 11
 ```
 
-### <a name="new-zealand-cable-assignments"></a><span data-ttu-id="d2bd1-118">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="d2bd1-118">New Zealand Cable Assignments</span></span>
+### <a name="new-zealand-cable-assignments"></a><span data-ttu-id="35a31-119">Asignaciones de cable de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="35a31-119">New Zealand Cable Assignments</span></span>
 
 ``` syntax
          1L,            // Lowest channel
@@ -222,11 +222,11 @@ ms.locfileid: "104494315"
        799250000L,      // 49   E62 
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="d2bd1-119">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="d2bd1-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="35a31-120">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="35a31-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d2bd1-120">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="d2bd1-120">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="35a31-121">Ajuste internacional de televisión análoga</span><span class="sxs-lookup"><span data-stu-id="35a31-121">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

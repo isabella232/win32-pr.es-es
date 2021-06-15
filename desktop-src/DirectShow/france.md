@@ -1,33 +1,33 @@
 ---
-description: Para obtener una explicación de las tablas siguientes, vea tablas y asignaciones.
+description: Este artículo contiene tablas de frecuencia para la optimización internacional de televisión análoga para Francia. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: 852ead0e-3539-483d-943d-1779f7358ba5
 title: Francia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da01c7645f8ed8a7715ae0514b073b63bd33e0f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 825efa71702dfe617325586d657665a302076369
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105652309"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068121"
 ---
-# <a name="france"></a><span data-ttu-id="ad9fe-103">Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-103">France</span></span>
+# <a name="france"></a><span data-ttu-id="4b81a-104">Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-104">France</span></span>
 
-<span data-ttu-id="ad9fe-104">Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="ad9fe-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="4b81a-105">Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)</span><span class="sxs-lookup"><span data-stu-id="4b81a-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="ad9fe-105">Los índices de frecuencia de las tablas de Francia no son adecuados para su uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="ad9fe-105">The frequency indexes in the France tables are not suitable for use as channel numbers.</span></span>
+<span data-ttu-id="4b81a-106">Los índices de frecuencia de las tablas de Francia no son adecuados para su uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="4b81a-106">The frequency indexes in the France tables are not suitable for use as channel numbers.</span></span>
 
--   [<span data-ttu-id="ad9fe-106">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="ad9fe-106">Windows 7 and Later</span></span>](#windows-7-and-later)
-    -   [<span data-ttu-id="ad9fe-107">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-107">France Broadcast Assignments</span></span>](#france-broadcast-assignments)
-    -   [<span data-ttu-id="ad9fe-108">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-108">France Cable Assignments</span></span>](#france-cable-assignments)
--   [<span data-ttu-id="ad9fe-109">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="ad9fe-109">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
-    -   [<span data-ttu-id="ad9fe-110">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-110">France Broadcast Assignments</span></span>](#france-broadcast-assignments)
-    -   [<span data-ttu-id="ad9fe-111">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-111">France Cable Assignments</span></span>](#france-cable-assignments)
--   [<span data-ttu-id="ad9fe-112">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="ad9fe-112">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="4b81a-107">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="4b81a-107">Windows 7 and Later</span></span>](#windows-7-and-later)
+    -   [<span data-ttu-id="4b81a-108">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-108">France Broadcast Assignments</span></span>](#france-broadcast-assignments)
+    -   [<span data-ttu-id="4b81a-109">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-109">France Cable Assignments</span></span>](#france-cable-assignments)
+-   [<span data-ttu-id="4b81a-110">Asignaciones de canales anteriores</span><span class="sxs-lookup"><span data-stu-id="4b81a-110">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
+    -   [<span data-ttu-id="4b81a-111">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-111">France Broadcast Assignments</span></span>](#france-broadcast-assignments)
+    -   [<span data-ttu-id="4b81a-112">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-112">France Cable Assignments</span></span>](#france-cable-assignments)
+-   [<span data-ttu-id="4b81a-113">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4b81a-113">Related topics</span></span>](#related-topics)
 
-## <a name="windows-7-and-later"></a><span data-ttu-id="ad9fe-113">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="ad9fe-113">Windows 7 and Later</span></span>
+## <a name="windows-7-and-later"></a><span data-ttu-id="4b81a-114">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="4b81a-114">Windows 7 and Later</span></span>
 
-### <a name="france-broadcast-assignments"></a><span data-ttu-id="ad9fe-114">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-114">France Broadcast Assignments</span></span>
+### <a name="france-broadcast-assignments"></a><span data-ttu-id="4b81a-115">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-115">France Broadcast Assignments</span></span>
 
 ``` syntax
         2L,             // Lowest channel
@@ -103,7 +103,7 @@ ms.locfileid: "105652309"
        855250000L,      // 69
 ```
 
-### <a name="france-cable-assignments"></a><span data-ttu-id="ad9fe-115">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-115">France Cable Assignments</span></span>
+### <a name="france-cable-assignments"></a><span data-ttu-id="4b81a-116">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-116">France Cable Assignments</span></span>
 
 ``` syntax
          1L,            // Lowest channel
@@ -233,9 +233,9 @@ ms.locfileid: "105652309"
        296000000L,      // 120 TV37++
 ```
 
-## <a name="earlier-channel-assignments"></a><span data-ttu-id="ad9fe-116">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="ad9fe-116">Earlier Channel Assignments</span></span>
+## <a name="earlier-channel-assignments"></a><span data-ttu-id="4b81a-117">Asignaciones de canales anteriores</span><span class="sxs-lookup"><span data-stu-id="4b81a-117">Earlier Channel Assignments</span></span>
 
-### <a name="france-broadcast-assignments"></a><span data-ttu-id="ad9fe-117">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-117">France Broadcast Assignments</span></span>
+### <a name="france-broadcast-assignments"></a><span data-ttu-id="4b81a-118">Asignaciones de difusión de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-118">France Broadcast Assignments</span></span>
 
 ``` syntax
         2L,             // Lowest channel
@@ -311,7 +311,7 @@ ms.locfileid: "105652309"
        855250000L,      // 69
 ```
 
-### <a name="france-cable-assignments"></a><span data-ttu-id="ad9fe-118">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="ad9fe-118">France Cable Assignments</span></span>
+### <a name="france-cable-assignments"></a><span data-ttu-id="4b81a-119">Asignaciones de cable de Francia</span><span class="sxs-lookup"><span data-stu-id="4b81a-119">France Cable Assignments</span></span>
 
 ``` syntax
          1L,            // Lowest channel
@@ -427,11 +427,11 @@ ms.locfileid: "105652309"
        855250000L,      // 107
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="ad9fe-119">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="ad9fe-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4b81a-120">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4b81a-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ad9fe-120">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="ad9fe-120">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="4b81a-121">Ajuste internacional de televisión análoga</span><span class="sxs-lookup"><span data-stu-id="4b81a-121">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

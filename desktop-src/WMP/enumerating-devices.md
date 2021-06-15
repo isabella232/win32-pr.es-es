@@ -1,33 +1,33 @@
 ---
-title: Enumerar dispositivos (SDK de WMP)
-description: Enumerar dispositivos
+title: Enumeración de dispositivos (SDK de WMP)
+description: Este código de ejemplo muestra una función que enumera los dispositivos mediante la creación de una matriz de punteros que cada uno representa un dispositivo.
 ms.assetid: 0236a629-c09a-4687-a8ba-fa05107fab33
 keywords:
-- Windows Media Player, dispositivos portátiles
-- Modelo de objetos de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media dispositivos portátiles
+- Reproductor de Windows Media modelo de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Control ActiveX de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media control ActiveX, dispositivos portátiles
 - Control ActiveX, dispositivos portátiles
-- Control ActiveX móvil de Windows Media Player, dispositivos portátiles
-- Windows Media Player dispositivos móviles y portátiles
+- Reproductor de Windows Media control ActiveX móvil, dispositivos portátiles
+- Reproductor de Windows Media móviles, dispositivos portátiles
 - dispositivos portátiles, enumeración
 - enumeraciones, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5025d0e0a7e99028b22cc24ebc56337ea84d2fb
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: d44f71fa26f40983424ced70280d9c03e0892a00
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994949"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068442"
 ---
-# <a name="enumerating-devices"></a><span data-ttu-id="30e29-112">Enumerar dispositivos</span><span class="sxs-lookup"><span data-stu-id="30e29-112">Enumerating Devices</span></span>
+# <a name="enumerating-devices"></a><span data-ttu-id="56617-112">Enumeración de dispositivos</span><span class="sxs-lookup"><span data-stu-id="56617-112">Enumerating Devices</span></span>
 
-<span data-ttu-id="30e29-113">Windows Media Player representa dispositivos portátiles mediante la interfaz **IWMPSyncDevice** .</span><span class="sxs-lookup"><span data-stu-id="30e29-113">Windows Media Player represents portable devices by using the **IWMPSyncDevice** interface.</span></span> <span data-ttu-id="30e29-114">En el ejemplo de código siguiente se muestra una función que crea una matriz de punteros a **IWMPSyncDevice**.</span><span class="sxs-lookup"><span data-stu-id="30e29-114">The following example code shows a function that creates an array of pointers to **IWMPSyncDevice**.</span></span> <span data-ttu-id="30e29-115">Cada puntero de la matriz representa un dispositivo para el que Windows Media Player tiene información almacenada.</span><span class="sxs-lookup"><span data-stu-id="30e29-115">Each pointer in the array represents a device for which Windows Media Player has stored information.</span></span> <span data-ttu-id="30e29-116">No es necesario que un dispositivo esté conectado al equipo, ni es necesario tener una asociación con la instancia actual de Media Player de Windows.</span><span class="sxs-lookup"><span data-stu-id="30e29-116">A device is not required to be connected to the computer, nor is it required to have a partnership with the current Windows Media Player instance.</span></span>
+<span data-ttu-id="56617-113">Reproductor de Windows Media representa dispositivos portátiles mediante la **interfaz IWMPSyncDevice.**</span><span class="sxs-lookup"><span data-stu-id="56617-113">Windows Media Player represents portable devices by using the **IWMPSyncDevice** interface.</span></span> <span data-ttu-id="56617-114">El código de ejemplo siguiente muestra una función que crea una matriz de punteros a **IWMPSyncDevice**.</span><span class="sxs-lookup"><span data-stu-id="56617-114">The following example code shows a function that creates an array of pointers to **IWMPSyncDevice**.</span></span> <span data-ttu-id="56617-115">Cada puntero de la matriz representa un dispositivo para el que Reproductor de Windows Media información almacenada.</span><span class="sxs-lookup"><span data-stu-id="56617-115">Each pointer in the array represents a device for which Windows Media Player has stored information.</span></span> <span data-ttu-id="56617-116">No es necesario que un dispositivo esté conectado al equipo ni que tenga una asociación con la instancia de Reproductor de Windows Media actual.</span><span class="sxs-lookup"><span data-stu-id="56617-116">A device is not required to be connected to the computer, nor is it required to have a partnership with the current Windows Media Player instance.</span></span>
 
-<span data-ttu-id="30e29-117">Debe enumerar los dispositivos siempre que reciba el evento **DeviceConnect** o el evento **DeviceDisconnect** .</span><span class="sxs-lookup"><span data-stu-id="30e29-117">You should enumerate devices whenever you receive the **DeviceConnect** event or the **DeviceDisconnect** event.</span></span>
+<span data-ttu-id="56617-117">Debe enumerar los dispositivos cada vez que reciba el **evento DeviceConnect** o **el evento DeviceDisconnect.**</span><span class="sxs-lookup"><span data-stu-id="56617-117">You should enumerate devices whenever you receive the **DeviceConnect** event or the **DeviceDisconnect** event.</span></span>
 
-<span data-ttu-id="30e29-118">La función siguiente enumera los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="30e29-118">The following function enumerates devices.</span></span> <span data-ttu-id="30e29-119">El parámetro *bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.</span><span class="sxs-lookup"><span data-stu-id="30e29-119">The *bConnectedOnly* parameter specifies whether to enumerate only devices currently connected to the user's computer.</span></span>
+<span data-ttu-id="56617-118">La siguiente función enumera los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="56617-118">The following function enumerates devices.</span></span> <span data-ttu-id="56617-119">El *parámetro bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.</span><span class="sxs-lookup"><span data-stu-id="56617-119">The *bConnectedOnly* parameter specifies whether to enumerate only devices currently connected to the user's computer.</span></span>
 
 
 ```C++
@@ -121,33 +121,33 @@ STDMETHODIMP CMainDlg::EnumDevices(BOOL bConnectedOnly)
 
 
 
-<span data-ttu-id="30e29-120">Podría usar código similar para recuperar otras listas de dispositivos de este tipo.</span><span class="sxs-lookup"><span data-stu-id="30e29-120">You might use similar code to retrieve other such device lists.</span></span> <span data-ttu-id="30e29-121">Por ejemplo, puede usar [IWMPSyncDevice:: get \_ status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) para crear una matriz de dispositivos para los que existe una asociación.</span><span class="sxs-lookup"><span data-stu-id="30e29-121">For example, you could use [IWMPSyncDevice::get\_status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) to create an array of devices for which a partnership exists.</span></span>
+<span data-ttu-id="56617-120">Puede usar código similar para recuperar otras listas de dispositivos de este tipo.</span><span class="sxs-lookup"><span data-stu-id="56617-120">You might use similar code to retrieve other such device lists.</span></span> <span data-ttu-id="56617-121">Por ejemplo, podría usar el estado [IWMPSyncDevice::get \_ ](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) para crear una matriz de dispositivos para los que existe una asociación.</span><span class="sxs-lookup"><span data-stu-id="56617-121">For example, you could use [IWMPSyncDevice::get\_status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) to create an array of devices for which a partnership exists.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="30e29-122">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="30e29-122">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="56617-122">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="56617-122">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="30e29-123">**IWMPEvents2::D eviceConnect**</span><span class="sxs-lookup"><span data-stu-id="30e29-123">**IWMPEvents2::DeviceConnect**</span></span>](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents2-deviceconnect)
+[<span data-ttu-id="56617-123">**IWMPEvents2::D eviceConnect**</span><span class="sxs-lookup"><span data-stu-id="56617-123">**IWMPEvents2::DeviceConnect**</span></span>](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents2-deviceconnect)
 </dt> <dt>
 
-[<span data-ttu-id="30e29-124">**IWMPEvents2::D eviceDisconnect**</span><span class="sxs-lookup"><span data-stu-id="30e29-124">**IWMPEvents2::DeviceDisconnect**</span></span>](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents2-devicedisconnect)
+[<span data-ttu-id="56617-124">**IWMPEvents2::D eviceDisconnect**</span><span class="sxs-lookup"><span data-stu-id="56617-124">**IWMPEvents2::DeviceDisconnect**</span></span>](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents2-devicedisconnect)
 </dt> <dt>
 
-[<span data-ttu-id="30e29-125">**Interfaz IWMPSyncDevice**</span><span class="sxs-lookup"><span data-stu-id="30e29-125">**IWMPSyncDevice Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
+[<span data-ttu-id="56617-125">**IWMPSyncDevice (interfaz)**</span><span class="sxs-lookup"><span data-stu-id="56617-125">**IWMPSyncDevice Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
 </dt> <dt>
 
-[<span data-ttu-id="30e29-126">**IWMPSyncDevice:: get \_ connected**</span><span class="sxs-lookup"><span data-stu-id="30e29-126">**IWMPSyncDevice::get\_connected**</span></span>](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_connected)
+[<span data-ttu-id="56617-126">**IWMPSyncDevice::get \_ connected**</span><span class="sxs-lookup"><span data-stu-id="56617-126">**IWMPSyncDevice::get\_connected**</span></span>](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_connected)
 </dt> <dt>
 
-[<span data-ttu-id="30e29-127">**Interfaz IWMPSyncServices**</span><span class="sxs-lookup"><span data-stu-id="30e29-127">**IWMPSyncServices Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncservices)
+[<span data-ttu-id="56617-127">**IWMPSyncServices (interfaz)**</span><span class="sxs-lookup"><span data-stu-id="56617-127">**IWMPSyncServices Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncservices)
 </dt> <dt>
 
-[<span data-ttu-id="30e29-128">**Trabajar con dispositivos portátiles**</span><span class="sxs-lookup"><span data-stu-id="30e29-128">**Working with Portable Devices**</span></span>](working-with-portable-devices.md)
+[<span data-ttu-id="56617-128">**Trabajar con dispositivos portátiles**</span><span class="sxs-lookup"><span data-stu-id="56617-128">**Working with Portable Devices**</span></span>](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

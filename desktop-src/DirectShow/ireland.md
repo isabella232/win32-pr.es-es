@@ -1,33 +1,33 @@
 ---
-description: Para obtener una explicación de las tablas siguientes, vea tablas y asignaciones.
+description: Este artículo contiene tablas de frecuencia para la optimización de televisión análoga internacional para Irlanda. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: be60ca37-9f3a-44cd-8646-28fcbda5e79e
 title: Irlanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81dba5254cd64262fa40c330b3f65ba589090fed
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b004a811a59a6e2556cdd4187728e5842bea1a46
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536856"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068161"
 ---
-# <a name="ireland"></a><span data-ttu-id="b3825-103">Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-103">Ireland</span></span>
+# <a name="ireland"></a><span data-ttu-id="99907-104">Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-104">Ireland</span></span>
 
-<span data-ttu-id="b3825-104">Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="b3825-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="99907-105">Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)</span><span class="sxs-lookup"><span data-stu-id="99907-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="b3825-105">Los índices de frecuencia de las tablas de Irlanda no son adecuados para su uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="b3825-105">The frequency indexes in the Ireland tables are not suitable for use as channel numbers.</span></span>
+<span data-ttu-id="99907-106">Los índices de frecuencia de las tablas de Irlanda no son adecuados para su uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="99907-106">The frequency indexes in the Ireland tables are not suitable for use as channel numbers.</span></span>
 
--   [<span data-ttu-id="b3825-106">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="b3825-106">Windows 7 and Later</span></span>](#windows-7-and-later)
-    -   [<span data-ttu-id="b3825-107">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-107">Ireland Broadcast Assignments</span></span>](#ireland-broadcast-assignments)
-    -   [<span data-ttu-id="b3825-108">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-108">Ireland Cable Assignments</span></span>](#ireland-cable-assignments)
--   [<span data-ttu-id="b3825-109">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="b3825-109">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
-    -   [<span data-ttu-id="b3825-110">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-110">Ireland Broadcast Assignments</span></span>](#ireland-broadcast-assignments)
-    -   [<span data-ttu-id="b3825-111">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-111">Ireland Cable Assignments</span></span>](#ireland-cable-assignments)
--   [<span data-ttu-id="b3825-112">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="b3825-112">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="99907-107">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="99907-107">Windows 7 and Later</span></span>](#windows-7-and-later)
+    -   [<span data-ttu-id="99907-108">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-108">Ireland Broadcast Assignments</span></span>](#ireland-broadcast-assignments)
+    -   [<span data-ttu-id="99907-109">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-109">Ireland Cable Assignments</span></span>](#ireland-cable-assignments)
+-   [<span data-ttu-id="99907-110">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="99907-110">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
+    -   [<span data-ttu-id="99907-111">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-111">Ireland Broadcast Assignments</span></span>](#ireland-broadcast-assignments)
+    -   [<span data-ttu-id="99907-112">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-112">Ireland Cable Assignments</span></span>](#ireland-cable-assignments)
+-   [<span data-ttu-id="99907-113">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="99907-113">Related topics</span></span>](#related-topics)
 
-## <a name="windows-7-and-later"></a><span data-ttu-id="b3825-113">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="b3825-113">Windows 7 and Later</span></span>
+## <a name="windows-7-and-later"></a><span data-ttu-id="99907-114">Windows 7 y versiones posteriores</span><span class="sxs-lookup"><span data-stu-id="99907-114">Windows 7 and Later</span></span>
 
-### <a name="ireland-broadcast-assignments"></a><span data-ttu-id="b3825-114">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-114">Ireland Broadcast Assignments</span></span>
+### <a name="ireland-broadcast-assignments"></a><span data-ttu-id="99907-115">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-115">Ireland Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -103,7 +103,7 @@ ms.locfileid: "104536856"
        855250000L,      // 68 69
 ```
 
-### <a name="ireland-cable-assignments"></a><span data-ttu-id="b3825-115">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-115">Ireland Cable Assignments</span></span>
+### <a name="ireland-cable-assignments"></a><span data-ttu-id="99907-116">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-116">Ireland Cable Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -162,27 +162,9 @@ ms.locfileid: "104536856"
        488000000L,      // 51 TV51
 ```
 
-## <a name="earlier-channel-assignments"></a><span data-ttu-id="b3825-116">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="b3825-116">Earlier Channel Assignments</span></span>
+## <a name="earlier-channel-assignments"></a><span data-ttu-id="99907-117">Asignaciones de canal anteriores</span><span class="sxs-lookup"><span data-stu-id="99907-117">Earlier Channel Assignments</span></span>
 
-### <a name="ireland-broadcast-assignments"></a><span data-ttu-id="b3825-117">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-117">Ireland Broadcast Assignments</span></span>
-
-``` syntax
-        1L,             // Lowest channel
-        10L,            // Highest channel
-
-        45750000L,      // A
-        53750000L,      // B
-        61750000L,      // C
-       175250000L,      // D
-       183750000L,      // E
-       191250000L,      // F
-       199250000L,      // G
-       207250000L,      // H
-       215250000L,      // I
-       223250000L,      // J
-```
-
-### <a name="ireland-cable-assignments"></a><span data-ttu-id="b3825-118">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="b3825-118">Ireland Cable Assignments</span></span>
+### <a name="ireland-broadcast-assignments"></a><span data-ttu-id="99907-118">Asignaciones de difusión de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-118">Ireland Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -200,11 +182,29 @@ ms.locfileid: "104536856"
        223250000L,      // J
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="b3825-119">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="b3825-119">Related topics</span></span>
+### <a name="ireland-cable-assignments"></a><span data-ttu-id="99907-119">Asignaciones de cable de Irlanda</span><span class="sxs-lookup"><span data-stu-id="99907-119">Ireland Cable Assignments</span></span>
+
+``` syntax
+        1L,             // Lowest channel
+        10L,            // Highest channel
+
+        45750000L,      // A
+        53750000L,      // B
+        61750000L,      // C
+       175250000L,      // D
+       183750000L,      // E
+       191250000L,      // F
+       199250000L,      // G
+       207250000L,      // H
+       215250000L,      // I
+       223250000L,      // J
+```
+
+## <a name="related-topics"></a><span data-ttu-id="99907-120">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="99907-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b3825-120">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="b3825-120">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="99907-121">Ajuste internacional de televisión análoga</span><span class="sxs-lookup"><span data-stu-id="99907-121">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  
