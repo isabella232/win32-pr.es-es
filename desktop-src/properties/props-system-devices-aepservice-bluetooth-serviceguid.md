@@ -1,17 +1,17 @@
 ---
-description: GUID del servicio Bluetooth.
+description: Obtenga información sobre el GUID del servicio Bluetooth. En esta página de referencia se describe la propiedad System.Devices.AepService.Bluetooth.ServiceGuid.
 ms.assetid: b623c597-3cf3-4c46-a1df-3a15425a41c6
-title: System. Devices. AepService. Bluetooth. ServiceGuid
+title: System.Devices.AepService.Bluetooth.ServiceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e167a626e6cdf03943a2c6c61b912fdea03fe1ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1f71d58b9661bdbbb7a531d6ce5d1364f79e19a
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082825"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262567"
 ---
-# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System. Devices. AepService. Bluetooth. ServiceGuid
+# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System.Devices.AepService.Bluetooth.ServiceGuid
 
 GUID del servicio Bluetooth.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

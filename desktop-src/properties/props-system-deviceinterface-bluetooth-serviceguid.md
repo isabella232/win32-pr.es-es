@@ -1,17 +1,17 @@
 ---
-description: GUID del servicio Bluetooth.
+description: Obtenga información sobre el GUID del servicio Bluetooth. En esta página de referencia se describe la propiedad System.DeviceInterface.Bluetooth.ServiceGuid.
 ms.assetid: a6df61fa-5e6d-45cb-9012-e550fb1d08d4
-title: System. DeviceInterface. Bluetooth. ServiceGuid
+title: System.DeviceInterface.Bluetooth.ServiceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e47317906b9480e91f765054b3b17375195335c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c8a8eea07a06e615dd5f0adbbf35a8074094ffc
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276647"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112261957"
 ---
-# <a name="systemdeviceinterfacebluetoothserviceguid"></a>System. DeviceInterface. Bluetooth. ServiceGuid
+# <a name="systemdeviceinterfacebluetoothserviceguid"></a>System.DeviceInterface.Bluetooth.ServiceGuid
 
 GUID del servicio Bluetooth.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

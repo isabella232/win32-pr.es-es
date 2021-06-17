@@ -1,21 +1,21 @@
 ---
 title: Atributos (VML)
-description: Atributos
+description: En este artículo se enumeran los atributos del elemento Shape en VML. VmL ha quedado en desuso a partir de Windows Internet Explorer 9.
 ms.assetid: 0EBA02C8-3F44-492E-BC55-AD56849093D2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecf184ca87eb7344fe17b959647f672da53eec1b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2a369ce7e5ec416ec3e9c36588dc1fc58a7d0701
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104421856"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262747"
 ---
 # <a name="attributes-vml"></a>Atributos (VML)
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Ajustar](adj-attribute.md)
+-   [Adj](adj-attribute.md)
 -   [AllowInCell](allowincell-attribute.md)
 -   [AllowOverlap](msdn-online-vml-allowoverlap-attribute.md)
 -   [Alt](msdn-online-vml-alt-attribute.md)
@@ -23,8 +23,8 @@ ms.locfileid: "104421856"
 -   [BorderLeftColor](msdn-online-vml-borderleftcolor-attribute.md)
 -   [BorderRightColor](msdn-online-vml-borderrightcolor-attribute.md)
 -   [BorderTopColor](msdn-online-vml-bordertopcolor-attribute.md)
--   [Viñeta](msdn-online-vml-bullet-attribute.md)
--   [Botón](msdn-online-vml-button-attribute.md)
+-   [Bala](msdn-online-vml-bullet-attribute.md)
+-   [Button](msdn-online-vml-button-attribute.md)
 -   [BWMode](msdn-online-vml-bwmode-attribute.md)
 -   [BWNormal](msdn-online-vml-bwnormal-attribute.md)
 -   [BWPure](msdn-online-vml-bwpure-attribute.md)
@@ -33,14 +33,14 @@ ms.locfileid: "104421856"
 -   [CoordOrigin](msdn-online-vml-coordorigin-attribute.md)
 -   [CoordSize](msdn-online-vml-coordsize-attribute.md)
 -   [DoubleClickNotify](msdn-online-vml-doubleclicknotify-attribute.md)
--   [Relleno](msdn-online-vml-fillcolor-attribute.md)
--   [Has](msdn-online-vml-filled-attribute.md)
--   [Horizontal](msdn-online-vml-flip-attribute.md)
+-   [FillColor](msdn-online-vml-fillcolor-attribute.md)
+-   [Lleno](msdn-online-vml-filled-attribute.md)
+-   [dar la vuelta](msdn-online-vml-flip-attribute.md)
 -   [ForceDash](msdn-online-vml-forcedash-attribute.md)
 -   [Height](msdn-online-vml-height-attribute.md)
 -   [RR. HH.](msdn-online-vml-hr-attribute.md)
 -   [HRAlign](msdn-online-vml-hralign-attribute.md)
--   [Referencia](href-attribute--shape--vml.md)
+-   [Href](href-attribute--shape--vml.md)
 -   [HRHeight](msdn-online-vml-hrheight-attribute.md)
 -   [HRNoShade](msdn-online-vml-hrnoshade-attribute.md)
 -   [HRPct](msdn-online-vml-hrpct-attribute.md)
@@ -52,17 +52,17 @@ ms.locfileid: "104421856"
 -   [Margen izquierdo](msdn-online-vml-margin-left-attribute.md)
 -   [Margen derecho](msdn-online-vml-margin-right-attribute.md)
 -   [Margen superior](msdn-online-vml-margin-top-attribute.md)
--   [OnMouseOver](msdn-online-vml-onmouseover-attribute.md)
--   [MSO-posición-horizontal-relativa](msdn-online-vml-mso-position-horizontal-relative-attribute.md)
--   [MSO-posición-vertical-relativa](msdn-online-vml-mso-position-vertical-relative-attribute.md)
--   [MSO-posición-horizontal](msdn-online-vml-mso-position-horizontal-attribute.md)
--   [MSO-posición-vertical](msdn-online-vml-mso-position-vertical-attribute.md)
--   [MSO-Wrap-editado](msdn-online-vml-mso-wrap-edited-attribute.md)
--   [MSO-encapsulado-modo](msdn-online-vml-mso-wrap-mode-attribute.md)
--   [MSO-Wrap-Distance-inferior](msdn-online-vml-mso-wrap-distance-bottom-attribute.md)
--   [MSO-Wrap-Distance-izquierda](msdn-online-vml-mso-wrap-distance-left-attribute.md)
--   [MSO-Wrap-Distance-derecha](msdn-online-vml-mso-wrap-distance-right-attribute.md)
--   [MSO-Wrap-Distance-superior](msdn-online-vml-mso-wrap-distance-top-attribute.md)
+-   [Onmouseover](msdn-online-vml-onmouseover-attribute.md)
+-   [MSO-Position-Horizontal-Relative](msdn-online-vml-mso-position-horizontal-relative-attribute.md)
+-   [MSO-Position-Vertical-Relative](msdn-online-vml-mso-position-vertical-relative-attribute.md)
+-   [Posición de MSO horizontal](msdn-online-vml-mso-position-horizontal-attribute.md)
+-   [MSO-Position-Vertical](msdn-online-vml-mso-position-vertical-attribute.md)
+-   [MSO-Wrap-Edited](msdn-online-vml-mso-wrap-edited-attribute.md)
+-   [MSO-Wrap-Mode](msdn-online-vml-mso-wrap-mode-attribute.md)
+-   [MSO-Wrap-Distance-Bottom](msdn-online-vml-mso-wrap-distance-bottom-attribute.md)
+-   [MSO-Wrap-Distance-Left](msdn-online-vml-mso-wrap-distance-left-attribute.md)
+-   [MSO-Wrap-Distance-Right](msdn-online-vml-mso-wrap-distance-right-attribute.md)
+-   [MSO-Wrap-Distance-Top](msdn-online-vml-mso-wrap-distance-top-attribute.md)
 -   [OLEIcon](msdn-online-vml-oleicon-attribute.md)
 -   [OnEd](msdn-online-vml-oned-attribute.md)
 -   [Ruta de acceso](msdn-online-vml-path-attribute.md)
@@ -74,9 +74,9 @@ ms.locfileid: "104421856"
 -   [Rotación](rotation-attribute--shape--vml.md)
 -   [RuleInitiator](msdn-online-vml-ruleinitiator-attribute.md)
 -   [RuleProxy](msdn-online-vml-ruleproxy-attribute.md)
--   [Corta](msdn-online-vml-spt-attribute.md)
--   [StrokeColor](msdn-online-vml-strokecolor-attribute.md)
--   [Traza](msdn-online-vml-stroked-attribute.md)
+-   [Spt](msdn-online-vml-spt-attribute.md)
+-   [Strokecolor](msdn-online-vml-strokecolor-attribute.md)
+-   [Acarició](msdn-online-vml-stroked-attribute.md)
 -   [StrokeWeight](msdn-online-vml-strokeweight-attribute.md)
 -   [TableLimits](msdn-online-vml-tablelimits-attribute.md)
 -   [TableProperties](msdn-online-vml-tableproperties-attribute.md)

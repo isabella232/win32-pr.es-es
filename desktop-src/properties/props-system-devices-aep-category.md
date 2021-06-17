@@ -1,19 +1,19 @@
 ---
-description: Categorías de las que forma parte el dispositivo. por ejemplo, impresora, cámara, etc.
+description: La propiedad System.Devices.Aep.Category indica las categorías de las que forma parte el dispositivo, como impresora o cámara.
 ms.assetid: 40fde8e1-7c09-4486-89d2-f86f6d48b4bf
 title: System.Devices.Aep.Category
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5bb2a8017df30dee90bfeadc428dc04ebb1fac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0625744d735bb6884a96894c4c47e2152e66f6f7
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277807"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262207"
 ---
 # <a name="systemdevicesaepcategory"></a>System.Devices.Aep.Category
 
-Categorías de las que forma parte el dispositivo. por ejemplo, impresora, cámara, etc.
+Categorías de las que forma parte el dispositivo. Por ejemplo, impresora, cámara, etc.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  
