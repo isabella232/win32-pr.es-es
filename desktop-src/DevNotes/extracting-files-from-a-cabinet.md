@@ -1,26 +1,26 @@
 ---
-description: La sintaxis siguiente muestra la creación de un archivo. cab.
+description: Vea un ejemplo de código que muestra cómo extraer archivos de un archivador mediante la API Cabinet. Para compilar, se deben definir las funciones de devolución de llamada.
 ms.assetid: d9d0e14a-f68c-4b3d-b91d-a3fa824031ea
-title: Extraer archivos de un archivo. cab
+title: Extraer archivos de un archivador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ed62779f97c083fd39af79626d5b79baa6d305
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aeb7089ded913a874a41c458bc99a8546f63bad6
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998213"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396620"
 ---
-# <a name="extracting-files-from-a-cabinet"></a><span data-ttu-id="6f8b2-103">Extraer archivos de un archivo. cab</span><span class="sxs-lookup"><span data-stu-id="6f8b2-103">Extracting Files from a Cabinet</span></span>
+# <a name="extracting-files-from-a-cabinet"></a><span data-ttu-id="10216-104">Extraer archivos de un archivador</span><span class="sxs-lookup"><span data-stu-id="10216-104">Extracting Files from a Cabinet</span></span>
 
-<span data-ttu-id="6f8b2-104">La sintaxis siguiente muestra la creación de un archivo. cab.</span><span class="sxs-lookup"><span data-stu-id="6f8b2-104">The following syntax illustrates the creation of a cabinet.</span></span>
+<span data-ttu-id="10216-105">La sintaxis siguiente ilustra la creación de un gabinete.</span><span class="sxs-lookup"><span data-stu-id="10216-105">The following syntax illustrates the creation of a cabinet.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="6f8b2-105">Este código solo es para fines ilustrativos.</span><span class="sxs-lookup"><span data-stu-id="6f8b2-105">This code is for illustrative purposes only.</span></span> <span data-ttu-id="6f8b2-106">Para compilar, se deben definir las funciones de devolución de llamada.</span><span class="sxs-lookup"><span data-stu-id="6f8b2-106">To compile, the callback functions must be defined.</span></span>
+> <span data-ttu-id="10216-106">Este código solo tiene fines ilustrativos.</span><span class="sxs-lookup"><span data-stu-id="10216-106">This code is for illustrative purposes only.</span></span> <span data-ttu-id="10216-107">Para compilar, se deben definir las funciones de devolución de llamada.</span><span class="sxs-lookup"><span data-stu-id="10216-107">To compile, the callback functions must be defined.</span></span>
 
  
 
-## <a name="example"></a><span data-ttu-id="6f8b2-107">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6f8b2-107">Example</span></span>
+## <a name="example"></a><span data-ttu-id="10216-108">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="10216-108">Example</span></span>
 
 
 ```C++
@@ -236,20 +236,20 @@ LPCSTR FDIErrorToString(FDIERROR err)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="6f8b2-108">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="6f8b2-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="10216-109">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="10216-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6f8b2-109">**FDICreate**</span><span class="sxs-lookup"><span data-stu-id="6f8b2-109">**FDICreate**</span></span>](/windows/desktop/api/Fdi/nf-fdi-fdicreate)
+[<span data-ttu-id="10216-110">**FDICreate**</span><span class="sxs-lookup"><span data-stu-id="10216-110">**FDICreate**</span></span>](/windows/desktop/api/Fdi/nf-fdi-fdicreate)
 </dt> <dt>
 
-[<span data-ttu-id="6f8b2-110">**FDICopy**</span><span class="sxs-lookup"><span data-stu-id="6f8b2-110">**FDICopy**</span></span>](/windows/desktop/api/Fdi/nf-fdi-fdicopy)
+[<span data-ttu-id="10216-111">**FDICopy**</span><span class="sxs-lookup"><span data-stu-id="10216-111">**FDICopy**</span></span>](/windows/desktop/api/Fdi/nf-fdi-fdicopy)
 </dt> <dt>
 
-[<span data-ttu-id="6f8b2-111">**FDIDestroy**</span><span class="sxs-lookup"><span data-stu-id="6f8b2-111">**FDIDestroy**</span></span>](/windows/desktop/api/Fdi/nf-fdi-fdidestroy)
+[<span data-ttu-id="10216-112">**FDIDestroy**</span><span class="sxs-lookup"><span data-stu-id="10216-112">**FDIDestroy**</span></span>](/windows/desktop/api/Fdi/nf-fdi-fdidestroy)
 </dt> <dt>
 
-[<span data-ttu-id="6f8b2-112">Macros de API de archivo. cab</span><span class="sxs-lookup"><span data-stu-id="6f8b2-112">Cabinet API Macros</span></span>](cabinet-api-macros.md)
+[<span data-ttu-id="10216-113">Macros de API de gabinete</span><span class="sxs-lookup"><span data-stu-id="10216-113">Cabinet API Macros</span></span>](cabinet-api-macros.md)
 </dt> </dl>
 
  

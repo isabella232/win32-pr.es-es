@@ -1,42 +1,42 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageWatermarkOriginWidth. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: e1bea06b-11b9-4652-915a-deb563ad59f8
 title: PageWatermarkOriginWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa78cf29952258a7c6c3489d40291ba8cd4b756c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bffe6457496972231877af2a51e03bc5109083d0
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996072"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396010"
 ---
-# <a name="pagewatermarkoriginwidth"></a><span data-ttu-id="37edc-104">PageWatermarkOriginWidth</span><span class="sxs-lookup"><span data-stu-id="37edc-104">PageWatermarkOriginWidth</span></span>
+# <a name="pagewatermarkoriginwidth"></a><span data-ttu-id="bdc40-105">PageWatermarkOriginWidth</span><span class="sxs-lookup"><span data-stu-id="bdc40-105">PageWatermarkOriginWidth</span></span>
 
-<span data-ttu-id="37edc-105">Este tema no es actual.</span><span class="sxs-lookup"><span data-stu-id="37edc-105">This topic is not current.</span></span> <span data-ttu-id="37edc-106">Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="37edc-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+<span data-ttu-id="bdc40-106">Este tema no es actual.</span><span class="sxs-lookup"><span data-stu-id="bdc40-106">This topic is not current.</span></span> <span data-ttu-id="bdc40-107">Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="bdc40-107">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
 
-<span data-ttu-id="37edc-107">Especifica el origen de una marca de agua relativa al origen de PageImageableSize.</span><span class="sxs-lookup"><span data-stu-id="37edc-107">Specifies the origin of a watermark relative to the origin of the PageImageableSize.</span></span>
+<span data-ttu-id="bdc40-108">Especifica el origen de una marca de agua relativa al origen de PageImageableSize.</span><span class="sxs-lookup"><span data-stu-id="bdc40-108">Specifies the origin of a watermark relative to the origin of the PageImageableSize.</span></span>
 
--   [<span data-ttu-id="37edc-108">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="37edc-108">Element Information</span></span>](#element-information)
--   [<span data-ttu-id="37edc-109">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="37edc-109">Structure Content</span></span>](#structure-content)
+-   [<span data-ttu-id="bdc40-109">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="bdc40-109">Element Information</span></span>](#element-information)
+-   [<span data-ttu-id="bdc40-110">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="bdc40-110">Structure Content</span></span>](#structure-content)
 
-## <a name="element-information"></a><span data-ttu-id="37edc-110">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="37edc-110">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bdc40-111">Información de elemento</span><span class="sxs-lookup"><span data-stu-id="bdc40-111">Element Information</span></span>
 
 
 
-| <span data-ttu-id="37edc-111">Nombre</span><span class="sxs-lookup"><span data-stu-id="37edc-111">Name</span></span> | <span data-ttu-id="37edc-112">Value</span><span class="sxs-lookup"><span data-stu-id="37edc-112">Value</span></span> |
+| <span data-ttu-id="bdc40-112">Nombre</span><span class="sxs-lookup"><span data-stu-id="bdc40-112">Name</span></span> | <span data-ttu-id="bdc40-113">Valor</span><span class="sxs-lookup"><span data-stu-id="bdc40-113">Value</span></span> |
 |----------------------------|--------------------------------------------|
-| <span data-ttu-id="37edc-113">Tipo de elemento</span><span class="sxs-lookup"><span data-stu-id="37edc-113">Element Type</span></span> <br/>   | <span data-ttu-id="37edc-114">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="37edc-114">ParameterDef</span></span><br/>                    |
-| <span data-ttu-id="37edc-115">Prefijo de ámbito</span><span class="sxs-lookup"><span data-stu-id="37edc-115">Scoping Prefix</span></span> <br/> | <span data-ttu-id="37edc-116">Página</span><span class="sxs-lookup"><span data-stu-id="37edc-116">Page</span></span><br/>                            |
-| <span data-ttu-id="37edc-117">Notas</span><span class="sxs-lookup"><span data-stu-id="37edc-117">Notes</span></span> <br/>          | <span data-ttu-id="37edc-118">Vinculado al elemento PageWatermark</span><span class="sxs-lookup"><span data-stu-id="37edc-118">Linked to PageWatermark element</span></span><br/> |
+| <span data-ttu-id="bdc40-114">Tipo de elemento</span><span class="sxs-lookup"><span data-stu-id="bdc40-114">Element Type</span></span> <br/>   | <span data-ttu-id="bdc40-115">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="bdc40-115">ParameterDef</span></span><br/>                    |
+| <span data-ttu-id="bdc40-116">Prefijo de ámbito</span><span class="sxs-lookup"><span data-stu-id="bdc40-116">Scoping Prefix</span></span> <br/> | <span data-ttu-id="bdc40-117">Página</span><span class="sxs-lookup"><span data-stu-id="bdc40-117">Page</span></span><br/>                            |
+| <span data-ttu-id="bdc40-118">Notas</span><span class="sxs-lookup"><span data-stu-id="bdc40-118">Notes</span></span> <br/>          | <span data-ttu-id="bdc40-119">Vinculado al elemento PageWatermark</span><span class="sxs-lookup"><span data-stu-id="bdc40-119">Linked to PageWatermark element</span></span><br/> |
 
 
 
  
 
-## <a name="structure-content"></a><span data-ttu-id="37edc-119">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="37edc-119">Structure Content</span></span>
+## <a name="structure-content"></a><span data-ttu-id="bdc40-120">Contenido de la estructura</span><span class="sxs-lookup"><span data-stu-id="bdc40-120">Structure Content</span></span>
 
-<span data-ttu-id="37edc-120">La estructura XML de este elemento es:</span><span class="sxs-lookup"><span data-stu-id="37edc-120">The XML structure of this element is:</span></span>
+<span data-ttu-id="bdc40-121">La estructura XML de este elemento es:</span><span class="sxs-lookup"><span data-stu-id="bdc40-121">The XML structure of this element is:</span></span>
 
 ``` syntax
 <psf:ParameterDef name="psk:PageWatermarkOriginWidth">
@@ -65,31 +65,31 @@ ms.locfileid: "107996072"
       
 ```
 
-## <a name="structure-properties"></a><span data-ttu-id="37edc-121">Propiedades de estructura</span><span class="sxs-lookup"><span data-stu-id="37edc-121">Structure Properties</span></span>
+## <a name="structure-properties"></a><span data-ttu-id="bdc40-122">Propiedades de estructura</span><span class="sxs-lookup"><span data-stu-id="bdc40-122">Structure Properties</span></span>
 
-<span data-ttu-id="37edc-122">En la tabla siguiente se describen las características de las variables definidas en la estructura XML.</span><span class="sxs-lookup"><span data-stu-id="37edc-122">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
+<span data-ttu-id="bdc40-123">En la tabla siguiente se describen las características de las variables definidas en la estructura XML.</span><span class="sxs-lookup"><span data-stu-id="bdc40-123">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
 
 
 
-| <span data-ttu-id="37edc-123">Propiedad</span><span class="sxs-lookup"><span data-stu-id="37edc-123">Property</span></span>                | <span data-ttu-id="37edc-124">xsi:type</span><span class="sxs-lookup"><span data-stu-id="37edc-124">xsi:type</span></span>           | <span data-ttu-id="37edc-125">Value</span><span class="sxs-lookup"><span data-stu-id="37edc-125">Value</span></span>                                                                  |
+| <span data-ttu-id="bdc40-124">Propiedad</span><span class="sxs-lookup"><span data-stu-id="bdc40-124">Property</span></span>                | <span data-ttu-id="bdc40-125">xsi:type</span><span class="sxs-lookup"><span data-stu-id="bdc40-125">xsi:type</span></span>           | <span data-ttu-id="bdc40-126">Valor</span><span class="sxs-lookup"><span data-stu-id="bdc40-126">Value</span></span>                                                                  |
 |-------------------------|--------------------|------------------------------------------------------------------------|
-| <span data-ttu-id="37edc-126">DataType</span><span class="sxs-lookup"><span data-stu-id="37edc-126">DataType</span></span><br/>     | <span data-ttu-id="37edc-127">string</span><span class="sxs-lookup"><span data-stu-id="37edc-127">string</span></span><br/>  | <span data-ttu-id="37edc-128">xs:integer</span><span class="sxs-lookup"><span data-stu-id="37edc-128">xs:integer</span></span><br/>                                                  |
-| <span data-ttu-id="37edc-129">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="37edc-129">DefaultValue</span></span><br/> | <span data-ttu-id="37edc-130">integer</span><span class="sxs-lookup"><span data-stu-id="37edc-130">integer</span></span><br/> | <span data-ttu-id="37edc-131">no definido</span><span class="sxs-lookup"><span data-stu-id="37edc-131">undefined</span></span><br/>                                                   |
-| <span data-ttu-id="37edc-132">MaxValue</span><span class="sxs-lookup"><span data-stu-id="37edc-132">MaxValue</span></span><br/>     | <span data-ttu-id="37edc-133">integer</span><span class="sxs-lookup"><span data-stu-id="37edc-133">integer</span></span><br/> | <span data-ttu-id="37edc-134">Valor de PageImageableSize: ExtentWidth menor o igual que</span><span class="sxs-lookup"><span data-stu-id="37edc-134">Less than or equal to PageImageableSize - ExtentWidth value</span></span><br/> |
-| <span data-ttu-id="37edc-135">MinValue</span><span class="sxs-lookup"><span data-stu-id="37edc-135">MinValue</span></span><br/>     | <span data-ttu-id="37edc-136">integer</span><span class="sxs-lookup"><span data-stu-id="37edc-136">integer</span></span><br/> | <span data-ttu-id="37edc-137">0</span><span class="sxs-lookup"><span data-stu-id="37edc-137">0</span></span><br/>                                                           |
-| <span data-ttu-id="37edc-138">Múltiple</span><span class="sxs-lookup"><span data-stu-id="37edc-138">Multiple</span></span><br/>     | <span data-ttu-id="37edc-139">integer</span><span class="sxs-lookup"><span data-stu-id="37edc-139">integer</span></span><br/> | <span data-ttu-id="37edc-140">1</span><span class="sxs-lookup"><span data-stu-id="37edc-140">1</span></span><br/>                                                           |
-| <span data-ttu-id="37edc-141">Mandatory</span><span class="sxs-lookup"><span data-stu-id="37edc-141">Mandatory</span></span><br/>    | <span data-ttu-id="37edc-142">string</span><span class="sxs-lookup"><span data-stu-id="37edc-142">string</span></span><br/>  | <span data-ttu-id="37edc-143">psk:Conditional</span><span class="sxs-lookup"><span data-stu-id="37edc-143">psk:Conditional</span></span><br/>                                             |
-| <span data-ttu-id="37edc-144">UnitType</span><span class="sxs-lookup"><span data-stu-id="37edc-144">UnitType</span></span><br/>     | <span data-ttu-id="37edc-145">string</span><span class="sxs-lookup"><span data-stu-id="37edc-145">string</span></span><br/>  | <span data-ttu-id="37edc-146">Micras</span><span class="sxs-lookup"><span data-stu-id="37edc-146">microns</span></span><br/>                                                     |
+| <span data-ttu-id="bdc40-127">DataType</span><span class="sxs-lookup"><span data-stu-id="bdc40-127">DataType</span></span><br/>     | <span data-ttu-id="bdc40-128">string</span><span class="sxs-lookup"><span data-stu-id="bdc40-128">string</span></span><br/>  | <span data-ttu-id="bdc40-129">xs:integer</span><span class="sxs-lookup"><span data-stu-id="bdc40-129">xs:integer</span></span><br/>                                                  |
+| <span data-ttu-id="bdc40-130">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="bdc40-130">DefaultValue</span></span><br/> | <span data-ttu-id="bdc40-131">integer</span><span class="sxs-lookup"><span data-stu-id="bdc40-131">integer</span></span><br/> | <span data-ttu-id="bdc40-132">no definido</span><span class="sxs-lookup"><span data-stu-id="bdc40-132">undefined</span></span><br/>                                                   |
+| <span data-ttu-id="bdc40-133">MaxValue</span><span class="sxs-lookup"><span data-stu-id="bdc40-133">MaxValue</span></span><br/>     | <span data-ttu-id="bdc40-134">integer</span><span class="sxs-lookup"><span data-stu-id="bdc40-134">integer</span></span><br/> | <span data-ttu-id="bdc40-135">Valor de PageImageableSize: ExtentWidth menor o igual que</span><span class="sxs-lookup"><span data-stu-id="bdc40-135">Less than or equal to PageImageableSize - ExtentWidth value</span></span><br/> |
+| <span data-ttu-id="bdc40-136">MinValue</span><span class="sxs-lookup"><span data-stu-id="bdc40-136">MinValue</span></span><br/>     | <span data-ttu-id="bdc40-137">integer</span><span class="sxs-lookup"><span data-stu-id="bdc40-137">integer</span></span><br/> | <span data-ttu-id="bdc40-138">0</span><span class="sxs-lookup"><span data-stu-id="bdc40-138">0</span></span><br/>                                                           |
+| <span data-ttu-id="bdc40-139">Múltiple</span><span class="sxs-lookup"><span data-stu-id="bdc40-139">Multiple</span></span><br/>     | <span data-ttu-id="bdc40-140">integer</span><span class="sxs-lookup"><span data-stu-id="bdc40-140">integer</span></span><br/> | <span data-ttu-id="bdc40-141">1</span><span class="sxs-lookup"><span data-stu-id="bdc40-141">1</span></span><br/>                                                           |
+| <span data-ttu-id="bdc40-142">Mandatory</span><span class="sxs-lookup"><span data-stu-id="bdc40-142">Mandatory</span></span><br/>    | <span data-ttu-id="bdc40-143">string</span><span class="sxs-lookup"><span data-stu-id="bdc40-143">string</span></span><br/>  | <span data-ttu-id="bdc40-144">psk:Conditional</span><span class="sxs-lookup"><span data-stu-id="bdc40-144">psk:Conditional</span></span><br/>                                             |
+| <span data-ttu-id="bdc40-145">UnitType</span><span class="sxs-lookup"><span data-stu-id="bdc40-145">UnitType</span></span><br/>     | <span data-ttu-id="bdc40-146">string</span><span class="sxs-lookup"><span data-stu-id="bdc40-146">string</span></span><br/>  | <span data-ttu-id="bdc40-147">Micras</span><span class="sxs-lookup"><span data-stu-id="bdc40-147">microns</span></span><br/>                                                     |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="37edc-147">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="37edc-147">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bdc40-148">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="bdc40-148">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="37edc-148">Especificación del esquema de impresión</span><span class="sxs-lookup"><span data-stu-id="37edc-148">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[<span data-ttu-id="bdc40-149">Especificación del esquema de impresión</span><span class="sxs-lookup"><span data-stu-id="bdc40-149">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
