@@ -1,21 +1,21 @@
 ---
 description: Notifica a las aplicaciones que se ha producido un evento de administración de energía.
 ms.assetid: 46452909-ac0e-4c06-8542-0b94d00e6556
-title: Mensaje de WM_POWERBROADCAST (WinUser. h)
+title: WM_POWERBROADCAST mensaje (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82f1b273462d8de27c19d715836d168ab8bf8c90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b205a146b731bdf8cf9adc1563621232c24c10b4
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545486"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396510"
 ---
-# <a name="wm_powerbroadcast-message"></a>Mensaje de POWERBROADCAST de WM \_
+# <a name="wm_powerbroadcast-message"></a>Mensaje \_ DE WM POWERBROADCAST
 
 Notifica a las aplicaciones que se ha producido un evento de administración de energía.
 
-Una ventana recibe este mensaje a través de su función **WindowProc** .
+Una ventana recibe este mensaje a través de su **función WindowProc.**
 
 
 ```C++
@@ -33,16 +33,19 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
-</dd> <dt>*uMsg*</dt> <dd> 
+</dd> <dt>
+  
+*uMsg*
+</dt> <dd> 
 
-| Value                                                                                                                                                                                                                                          | Significado                        |
+| Valor                                                                                                                                                                                                                                          | Significado                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> * * * * <dt>WM \_ POWERBROADCAST *</dt> * * * <dt>536 (0x218)</dt> </dl> | Identificador de mensaje.<br/> |
+| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>*:WM \_ POWERBROADCAST**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
 
 
@@ -53,16 +56,16 @@ Identificador de la ventana.
 *wParam* 
 </dt> <dd>
 
-El evento de administración de energía. Este parámetro puede ser uno de los siguientes identificadores de eventos.
+Evento de administración de energía. Este parámetro puede ser uno de los siguientes identificadores de evento.
 
 
 
 | Evento                                                                                                                                                                                                                                                                                        | Significado                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PBT_APMPOWERSTATUSCHANGE"></span><span id="pbt_apmpowerstatuschange"></span><dl> <dt>**[PBT \_ APMPOWERSTATUSCHANGE](pbt-apmpowerstatuschange.md)**</dt> <dt>10 (0xA)</dt> </dl> | El estado de la energía ha cambiado.<br/>                                                                                                                                                                        |
-| <span id="PBT_APMRESUMEAUTOMATIC"></span><span id="pbt_apmresumeautomatic"></span><dl> <dt>**[PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md)**</dt> <dt>18 (0X12)</dt> </dl>        | La operación se está reanudando automáticamente desde un estado de baja energía. Este mensaje se envía cada vez que se reanuda el sistema.<br/>                                                                                  |
-| <span id="PBT_APMRESUMESUSPEND"></span><span id="pbt_apmresumesuspend"></span><dl> <dt>**[PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md)**</dt> <dt>7 (0X7)</dt> </dl>                  | La operación se está reanudando desde un estado de baja energía. Este mensaje se envía después de [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) si la entrada del usuario desencadena la reanudación, como presionar una tecla.<br/> |
-| <span id="PBT_APMSUSPEND"></span><span id="pbt_apmsuspend"></span><dl> <dt>**[PBT \_ APMSUSPEND](pbt-apmsuspend.md)**</dt> <dt>4 (0x4)</dt> </dl>                                          | El sistema está suspendiendo la operación.<br/>                                                                                                                                                                  |
+| <span id="PBT_APMPOWERSTATUSCHANGE"></span><span id="pbt_apmpowerstatuschange"></span><dl> <dt>**[PBT \_ APMPOWERSTATUSCHANGE](pbt-apmpowerstatuschange.md)**</dt> <dt>10 (0xA)</dt> </dl> | El estado de energía ha cambiado.<br/>                                                                                                                                                                        |
+| <span id="PBT_APMRESUMEAUTOMATIC"></span><span id="pbt_apmresumeautomatic"></span><dl> <dt>**[PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md)**</dt> <dt>18 (0x12)</dt> </dl>        | La operación se reanuda automáticamente desde un estado de bajo consumo. Este mensaje se envía cada vez que se reanuda el sistema.<br/>                                                                                  |
+| <span id="PBT_APMRESUMESUSPEND"></span><span id="pbt_apmresumesuspend"></span><dl> <dt>**[PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md)**</dt> <dt>7 (0x7)</dt> </dl>                  | La operación se reanuda desde un estado de bajo consumo. Este mensaje se envía después de [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) si la reanudación se desencadena mediante la entrada del usuario, como presionar una tecla.<br/> |
+| <span id="PBT_APMSUSPEND"></span><span id="pbt_apmsuspend"></span><dl> <dt>**[PBT \_ APMSUSPEND](pbt-apmsuspend.md)**</dt> <dt>4 (0x4)</dt> </dl>                                          | El sistema suspende la operación.<br/>                                                                                                                                                                  |
 | <span id="PBT_POWERSETTINGCHANGE"></span><span id="pbt_powersettingchange"></span><dl> <dt>**[PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.md)**</dt> <dt>32787 (0x8013)</dt> </dl>   | Se ha recibido un evento de cambio de configuración de energía. <br/>                                                                                                                                                 |
 
 
@@ -74,25 +77,25 @@ El evento de administración de energía. Este parámetro puede ser uno de los s
 *lParam* 
 </dt> <dd>
 
-Datos específicos del evento. Para la mayoría de los eventos, este parámetro está reservado y no se utiliza.
+Datos específicos del evento. Para la mayoría de los eventos, este parámetro está reservado y no se usa.
 
-Si el parámetro *wParam* es [PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.md), el parámetro *lParam* es un puntero a una estructura de [**\_ configuración de POWERBROADCAST**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting) .
+Si el *parámetro wParam* es [PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.md), el parámetro *lParam* es un puntero a una [**estructura DE CONFIGURACIÓN DE POWERBROADCAST. \_**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una aplicación debe devolver **true** si procesa este mensaje.
+Una aplicación debe devolver **TRUE** si procesa este mensaje.
 
 ## <a name="remarks"></a>Observaciones
 
-El sistema siempre envía un mensaje [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) cuando se reanuda el sistema. Si el sistema se reanuda en respuesta a la entrada del usuario, como presionar una tecla, el sistema también envía un mensaje de **PBT \_ APMRESUMESUSPEND** después de enviar PBT \_ APMRESUMEAUTOMATIC.
+El sistema siempre envía un mensaje [ \_ PBT APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) cada vez que se reanuda el sistema. Si el sistema se reanuda en respuesta a la entrada del usuario, como presionar una tecla, el sistema también envía un mensaje **\_ PBT APMRESUMESUSPEND** después de enviar PBT \_ APMRESUMEAUTOMATIC.
 
-**WM \_** Los mensajes POWERBROADCAST no distinguen entre diferentes Estados de energía baja. Una aplicación solo puede determinar que el sistema está entrando en estado de baja energía o se ha reanudado. no puede determinar el estado de energía específico. El sistema registra los detalles acerca de las transiciones de estado de energía en el registro de eventos del sistema de Windows.
+**WM \_ Los mensajes POWERBROADCAST** no distinguen entre distintos estados de bajo consumo. Una aplicación solo puede determinar que el sistema entra o se ha reanudado desde un estado de bajo consumo. no puede determinar el estado de energía específico. El sistema registra detalles sobre las transiciones de estado de energía en el registro de eventos del sistema de Windows.
 
-Para evitar que el sistema pase a un estado de baja energía en Windows Vista, una aplicación debe llamar a [**SetThreadExecutionState**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate) para informar al sistema de que está en uso.
+Para evitar que el sistema haga la transición a un estado de bajo consumo en Windows Vista, una aplicación debe llamar a [**SetThreadExecutionState**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate) para informar al sistema de que está en uso.
 
-Los siguientes mensajes no se admiten en ninguno de los sistemas operativos especificados en la sección de requisitos:
+Los mensajes siguientes no se admiten en ninguno de los sistemas operativos especificados en la sección Requisitos:
 
 - PBT_APMQUERYSTANDBY  
 - PBT_APMQUERYSTANDBYFAILED  
@@ -103,11 +106,11 @@ Los siguientes mensajes no se admiten en ninguno de los sistemas operativos espe
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                              |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -115,7 +118,7 @@ Los siguientes mensajes no se admiten en ninguno de los sistemas operativos espe
 
 <dl> <dt>
 
-[\_Mensajes POWERBROADCAST de WM](wm-powerbroadcast-messages.md)
+[Mensajes \_ DE WM POWERBROADCAST](wm-powerbroadcast-messages.md)
 </dt> <dt>
 
 [Mensajes de administración de energía](power-management-messages.md)

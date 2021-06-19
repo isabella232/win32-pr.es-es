@@ -1,19 +1,19 @@
 ---
-description: URI de la representación en miniatura grande del elemento multimedia.
+description: Comprenda la propiedad System.Media.ThumbnailLargeUri, que representa el URI de la representación en miniatura grande del elemento multimedia.
 ms.assetid: cafccadf-45de-437f-abe9-b09ede747f02
-title: System. Media. ThumbnailLargeUri
+title: System.Media.ThumbnailLargeUri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 566f34ab39fdd1336c15a0c2729a3199879ee8d3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2c399996e15f4c8692af95f990fb1f8a00005990
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105717346"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396660"
 ---
-# <a name="systemmediathumbnaillargeuri"></a>System. Media. ThumbnailLargeUri
+# <a name="systemmediathumbnaillargeuri"></a>System.Media.ThumbnailLargeUri
 
-URI de la representación en miniatura grande del elemento multimedia.
+Uri de la representación en miniatura grande del elemento multimedia.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

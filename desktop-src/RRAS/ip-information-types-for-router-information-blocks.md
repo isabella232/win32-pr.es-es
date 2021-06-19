@@ -1,38 +1,38 @@
 ---
-title: Tipos de información de IP para bloques de información del enrutador
-description: Los siguientes tipos de información se enumeran en Ipinfoid. h.
+title: Tipos de información ip para bloques de información de enrutador
+description: Obtenga información sobre los tipos de información de IP enumerados en Ipinfoid.h. Use estos tipos de información con las funciones de encabezado de información al ejecutar el transporte IP.
 ms.assetid: 911c61d4-e500-48c6-8861-39dbc09ab4e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac918380fa5e828a763d9aec7a134bdfaf0dfa6d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a49abdb139eaa94440e380ce710280d744bd6ac5
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075841"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395120"
 ---
-# <a name="ip-information-types-for-router-information-blocks"></a>Tipos de información de IP para bloques de información del enrutador
+# <a name="ip-information-types-for-router-information-blocks"></a>Tipos de información ip para bloques de información de enrutador
 
-Los siguientes tipos de información se enumeran en Ipinfoid. h. Use estos tipos de información con las funciones del encabezado de información al ejecutar el transporte IP:
+Los siguientes tipos de información se enumeran en Ipinfoid.h. Use estos tipos de información con las funciones de encabezado de información al ejecutar el transporte IP:
 
--   \_información del \_ filtro de marcado a petición IP \_ \_
--   \_filtro IP \_ habilitar \_ información
--   IP \_ en \_ información de filtro \_
--   \_información del \_ filtro de salida de IP \_
--   \_información global de IP \_
--   \_información de IFFILTER IP \_
--   información de estado de la \_ interfaz IP \_ \_
--   información de IP \_ IPINIP \_ cfg \_
--   \_MCAST IP \_ latido \_ info
--   \_información de \_ límite de MCAST IP \_
--   \_información de \_ límite de MCAST IP \_
--   \_información de \_ prioridad de Prot de IP \_
--   \_información de ruta IP \_
--   \_información del disco del enrutador IP \_ \_
+-   INFORMACIÓN DEL \_ FILTRO DE MARCADO A \_ \_ PETICIÓN \_ IP
+-   INFORMACIÓN \_ DE HABILITACIÓN \_ DEL FILTRO \_ IP
+-   IP \_ EN LA INFORMACIÓN DE \_ \_ FILTRO
+-   INFORMACIÓN \_ DE FILTRO DE SALIDA DE \_ \_ IP
+-   INFORMACIÓN \_ GLOBAL DE \_ IP
+-   INFORMACIÓN \_ DE \_ IFFILTER DE IP
+-   INFORMACIÓN DE \_ ESTADO DE LA INTERFAZ \_ \_ IP
+-   IP \_ IPINIP \_ CFG \_ INFO
+-   INFORMACIÓN \_ DE HEARBEAT DE MCAST \_ \_ DE IP
+-   INFORMACIÓN DE \_ LÍMITES DE MCAST \_ DE \_ IP
+-   INFORMACIÓN DE \_ LÍMITE DE MCAST \_ DE \_ IP
+-   IP \_ PROT \_ PRIORITY \_ INFO
+-   INFORMACIÓN DE \_ RUTA \_ IP
+-   INFORMACIÓN DE \_ DISCO \_ DEL ENRUTADOR \_ IP
 
- 
+ 
 
- 
+ 
 
 
 

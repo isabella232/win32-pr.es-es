@@ -1,22 +1,22 @@
 ---
-description: La sintaxis siguiente muestra la creación de un archivo. cab.
+description: Vea un ejemplo de código que muestra cómo crear un gabinete mediante La API de gabinete. Para compilar, se deben definir las funciones de devolución de llamada.
 ms.assetid: a16c332d-5afc-46ad-992b-324ed5e70683
-title: Creación de un archivo. cab
+title: Crear un gabinete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b54df5e5373de82e7de6cc194d3e16e6917bb62
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7d1d746a61f09237d08ade349ea33b4ec8146913
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274877"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396610"
 ---
-# <a name="creating-a-cabinet"></a>Creación de un archivo. cab
+# <a name="creating-a-cabinet"></a>Crear un gabinete
 
-La sintaxis siguiente muestra la creación de un archivo. cab.
+La sintaxis siguiente ilustra la creación de un gabinete.
 
 > [!Note]  
-> Este código solo es para fines ilustrativos. Para compilar, se deben definir las funciones de devolución de llamada.
+> Este código solo tiene fines ilustrativos. Para compilar, se deben definir las funciones de devolución de llamada.
 
  
 
@@ -264,7 +264,7 @@ LPCSTR FCIErrorToString(FCIERROR err)
 [**FCIDestroy**](/windows/desktop/api/Fci/nf-fci-fcidestroy)
 </dt> <dt>
 
-[Macros de API de archivo. cab](cabinet-api-macros.md)
+[Macros de API de gabinete](cabinet-api-macros.md)
 </dt> </dl>
 
  

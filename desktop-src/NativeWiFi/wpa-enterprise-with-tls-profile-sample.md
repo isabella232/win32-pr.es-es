@@ -1,29 +1,29 @@
 ---
-description: Usa seguridad de nivel de transporte (EAP-TLS) del Protocolo de autenticación extensible con certificados para autenticarse en la red.
+description: Usa seguridad de nivel de transporte del protocolo de autenticación extensible (EAP-TLS) con certificados para autenticarse en la red (WPA-Enterprise).
 ms.assetid: fceeae22-3761-48ab-a190-1a7b1568ed64
-title: WPA-Enterprise con el ejemplo de perfil TLS
+title: WPA-Enterprise ejemplo de perfil TLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5300f8886d55ac713b0206b45f20857f22b2772
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d6f236429c94e9602e173c2d6c3eb1e3bc8111f
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002768"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395040"
 ---
-# <a name="wpa-enterprise-with-tls-profile-sample"></a>WPA-Enterprise con el ejemplo de perfil TLS
+# <a name="wpa-enterprise-with-tls-profile-sample"></a>WPA-Enterprise ejemplo de perfil TLS
 
-Este perfil de ejemplo usa seguridad de nivel de transporte (EAP-TLS) del Protocolo de autenticación extensible con certificados para autenticarse en la red.
+Este perfil de ejemplo usa seguridad de nivel de transporte del protocolo de autenticación extensible (EAP-TLS) con certificados para autenticarse en la red.
 
-Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido que se ejecuta en modo de empresa (WPA-Enterprise). El tipo de seguridad WPA-Enterprise usa 802.1 X para el intercambio de autenticación con el back-end. El protocolo de integridad de clave temporal (TKIP) se usa para el cifrado.
+Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido que se ejecuta en modo Enterprise (WPA-Enterprise). El WPA-Enterprise de seguridad usa 802.1X para el intercambio de autenticación con el back-end. El Protocolo de integridad de clave temporal (TKIP) se usa para el cifrado.
 
-Las credenciales de EAP-TLS se obtienen del almacén de certificados. Si se produce un error en la autenticación basada en las credenciales del almacén de certificados, se solicitará al usuario que proporcione credenciales válidas. No se usan servidores alternativos, entidades de certificación raíz o nombres de usuario para la autenticación si se produce un error en el primer intento.
+Las credenciales EAP-TLS se obtienen del almacén de certificados. Si se produce un error en la autenticación basada en las credenciales del almacén de certificados, se solicita al usuario que proporcione credenciales válidas. No se usan servidores alternativos, entidad de certificación raíz ni nombres de usuario para la autenticación si se produce un error en el primer intento.
 
-La configuración de EAPHost usada en este ejemplo de perfil inalámbrico se deriva del ejemplo de [propiedades de conexión EAP-TLS](../eaphost/eap-tls-connection-properties.md) .
+La configuración de EAPHost usada en este ejemplo de perfil inalámbrico se deriva del ejemplo de propiedades de conexión [EAP-TLS.](../eaphost/eap-tls-connection-properties.md)
 
-**Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. La configuración predeterminada de [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) cuando este elemento no está establecida en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado. La configuración predeterminada era "true" en Windows Server 2008 y Windows Vista. Para obtener más información, consulte la descripción del elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) .
+**Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. La configuración predeterminada de [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) cuando este elemento no está establecido en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado. El valor predeterminado era "true" en Windows Server 2008 y Windows Vista. Consulte la descripción del [**elemento de esquema autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obtener más información.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** EAP-TLS no es compatible.
+**Windows XP con SP3 e API de LAN inalámbrica para Windows XP con SP2:** No se admite EAP-TLS.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

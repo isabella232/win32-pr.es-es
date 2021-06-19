@@ -1,27 +1,27 @@
 ---
-title: Referencia de Windows Defender
-description: Windows Defender ayuda a proteger los equipos contra elementos emergentes, rendimiento lento y amenazas de seguridad causados por spyware y otro software no deseado.
+title: Windows Defender referencia
+description: En estos artículos de referencia se Windows Defender, que ayuda a proteger los equipos frente a elementos emergentes, rendimiento lento y amenazas de seguridad.
 ms.assetid: ed86e1bc-0625-4367-a1f7-fdb23412828f
 keywords:
 - Windows Defender
-- API de Windows Defender
+- Windows Defender API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 756dec2f9805382a64e6173e7776135ff3a31573
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ef04a4c7a5306473d1f505e0457fb27ba62b6ef1
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104421654"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396430"
 ---
-# <a name="windows-defender-reference"></a>Referencia de Windows Defender
+# <a name="windows-defender-reference"></a>Windows Defender referencia
 
-Windows Defender ayuda a proteger los equipos contra elementos emergentes, rendimiento lento y amenazas de seguridad causados por spyware y otro software no deseado. Las aplicaciones pueden consultar información como el estado del equipo, información de malware específica y el historial de malware del cliente, y pueden invocar exámenes a petición.
+Windows Defender ayuda a proteger los equipos frente a elementos emergentes, rendimiento lento y amenazas de seguridad causadas por spyware y otro software no deseado. Las aplicaciones pueden consultar información como el estado del equipo, información de malware específica e historial de malware para el cliente, y pueden invocar exámenes a petición.
 
 
--   [Enumeraciones de Windows Defender](windows-defender-enumerations.md)
--   [Funciones de Windows Defender](windows-defender-functions.md)
--   [Estructuras de Windows Defender](windows-defender-structures.md)
+-   [Windows Defender enumeraciones](windows-defender-enumerations.md)
+-   [Windows Defender Functions](windows-defender-functions.md)
+-   [Windows Defender estructuras](windows-defender-structures.md)
 
  
 

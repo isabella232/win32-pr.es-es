@@ -1,23 +1,23 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageImageableSize. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 6b81814f-2d9e-4862-8633-6ba016c11dac
 title: PageImageableSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1eef9012a7fda3eed6afd16add1d483c35c1111
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ee4e44bc9afe33b87d32b43c93eafc3b6d4ba4b0
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996112"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395310"
 ---
 # <a name="pageimageablesize"></a>PageImageableSize
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe el lienzo con imágenes para el diseño y la representación. Esto se notifica en función de PageMediaSize y PageOrientation.
 
-Los diagramas siguientes ilustran el uso de variables PageImageableSize basadas en PageOrientation.
+En los diagramas siguientes se muestra el uso de variables PageImageableSize basadas en PageOrientation.
 
 ![un diagrama que muestra las medidas de página](images/local-1641910626-image.png)
 
@@ -27,18 +27,11 @@ Los diagramas siguientes ilustran el uso de variables PageImageableSize basadas 
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|                            |                     |
-|----------------------------|---------------------|
-| Nombre | Value |
+| Nombre                 | Valor         |
+|----------------------|---------------|
 | Tipo de elemento<br/>    | Propiedad<br/> |
 | Prefijo de ámbito <br/> | Página<br/>     |
 | Notas <br/>          | Ninguno<br/>     |
-
-
-
- 
 
 ## <a name="structural-content"></a>Contenido estructural
 
@@ -78,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                    | Tipo de datos          | Unidad               | Valores admitidos                       | Resumen                                                                                                                    |
 |-----------------------------------------|--------------------|--------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| \_ImageableSizeWidthValue\_<br/>  | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la dimensión horizontal del tamaño del medio de aplicación con respecto a PageOrientation.<br/>               |
+| \_ImageableSizeWidthValue\_<br/>  | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la dimensión horizontal del tamaño del medio de la aplicación con respecto a PageOrientation.<br/>               |
 | \_ImageableSizeHeightValue\_<br/> | integer<br/> | Micras<br/> | Mayor que 0.<br/>             | Especifica la dimensión vertical del tamaño del medio de la aplicación con respecto a PageOrientation.<br/>                 |
 | \_OriginWidthValue\_<br/>         | integer<br/> | Micras<br/> | Mayor o igual que 0.<br/> | Especifica el origen horizontal del área en la que se pueden crear imágenes en relación con el tamaño del medio de la aplicación.<br/>                   |
 | \_OriginHeightValue\_<br/>        | integer<br/> | Micras<br/> | Mayor o igual que 0.<br/> | Especifica el origen vertical del área en la que se pueden crear imágenes en relación con el tamaño del medio de la aplicación.<br/>                     |

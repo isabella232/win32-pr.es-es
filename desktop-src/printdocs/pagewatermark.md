@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento PageWatermark configurable por el usuario. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: d1c36c47-107c-4012-a839-1018c2652209
 title: PageWatermark
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e16a475255e42bda8e60b3bfb2ab41ea3998738
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4b93eadfb3aeaa2c0be1de2cf5775bd1b5c88666
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994462"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396090"
 ---
 # <a name="pagewatermark"></a>PageWatermark
 
@@ -25,7 +25,7 @@ Describe la configuración de marca de agua de la salida y las características 
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                              |
 | Prefijo de ámbito <br/> | Página<br/>                                                                                                                                 |
@@ -106,7 +106,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageWatermark">
