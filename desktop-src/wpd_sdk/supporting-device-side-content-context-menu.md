@@ -1,21 +1,21 @@
 ---
-title: Compatibilidad con el contenido del dispositivo WPD (ContextMenu)
-description: Compatibilidad con contenido de Device-Side
+title: Compatibilidad con contenido del lado del dispositivo WPD (ContextMenu)
+description: Obtenga información sobre cómo usar la API de Shell de Windows o la API de WPD para obtener datos de objetos de dispositivo WPD, a los que no se puede acceder a través del sistema de archivos en Windows Vista.
 ms.assetid: 47fb7f49-9026-43c1-be46-8a520c048862
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b5e7029a6a772a5706eaf80270cc87ea83ab76b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 626c92633b1aa215c0e826a4b720de0375aa6048
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720668"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404288"
 ---
-# <a name="supporting-wpd-device-side-content"></a><span data-ttu-id="569c4-103">Compatibilidad con el contenido del dispositivo WPD</span><span class="sxs-lookup"><span data-stu-id="569c4-103">Supporting WPD device-side content</span></span>
+# <a name="supporting-wpd-device-side-content"></a><span data-ttu-id="8f7e8-103">Compatibilidad con contenido del lado del dispositivo WPD</span><span class="sxs-lookup"><span data-stu-id="8f7e8-103">Supporting WPD device-side content</span></span>
 
-<span data-ttu-id="569c4-104">Dado que el contenido del dispositivo no es accesible a través del sistema de archivos en Windows Vista, deberá usar la API de Shell de Windows o la API de WPD para recuperar los datos de los objetos de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="569c4-104">Because device-side content is not accessible through the file system in Windows Vista, you'll need to use either the Windows Shell API or the WPD API to retrieve data for device objects.</span></span> <span data-ttu-id="569c4-105">Esta es la diferencia principal entre un controlador de menú contextual normal y un controlador de menú contextual de WPD.</span><span class="sxs-lookup"><span data-stu-id="569c4-105">This is the primary difference between a normal context menu handler and a WPD context menu handler.</span></span> <span data-ttu-id="569c4-106">En el código de ejemplo siguiente se muestra la recuperación del contenido del dispositivo mediante la API de Shell de Windows.</span><span class="sxs-lookup"><span data-stu-id="569c4-106">The following sample code demonstrates the retrieval of device-side content using the Windows Shell API.</span></span>
+<span data-ttu-id="8f7e8-104">Dado que el contenido del lado del dispositivo no es accesible a través del sistema de archivos en Windows Vista, deberá usar la API de Shell de Windows o la API de WPD para recuperar datos de objetos de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="8f7e8-104">Because device-side content is not accessible through the file system in Windows Vista, you'll need to use either the Windows Shell API or the WPD API to retrieve data for device objects.</span></span> <span data-ttu-id="8f7e8-105">Esta es la diferencia principal entre un controlador de menú contextual normal y un controlador de menú contextual WPD.</span><span class="sxs-lookup"><span data-stu-id="8f7e8-105">This is the primary difference between a normal context menu handler and a WPD context menu handler.</span></span> <span data-ttu-id="8f7e8-106">El código de ejemplo siguiente muestra la recuperación de contenido del lado del dispositivo mediante la API de Windows Shell.</span><span class="sxs-lookup"><span data-stu-id="8f7e8-106">The following sample code demonstrates the retrieval of device-side content using the Windows Shell API.</span></span>
 
-<span data-ttu-id="569c4-107">El primer paso es la inicialización de la lista de identificadores de elemento o PIDL.</span><span class="sxs-lookup"><span data-stu-id="569c4-107">The first step is the initialization of the item identifier list or PIDL.</span></span> <span data-ttu-id="569c4-108">(Esta lista contiene el identificador único del objeto de dispositivo determinado).</span><span class="sxs-lookup"><span data-stu-id="569c4-108">(This list contains the unique identifier for the given device object.)</span></span>
+<span data-ttu-id="8f7e8-107">El primer paso es la inicialización de la lista de identificadores de elemento o PIDL.</span><span class="sxs-lookup"><span data-stu-id="8f7e8-107">The first step is the initialization of the item identifier list or PIDL.</span></span> <span data-ttu-id="8f7e8-108">(Esta lista contiene el identificador único para el objeto de dispositivo especificado).</span><span class="sxs-lookup"><span data-stu-id="8f7e8-108">(This list contains the unique identifier for the given device object.)</span></span>
 
 
 ```C++
@@ -62,7 +62,7 @@ HRESULT CWPDContextMenu::_InitializePIDLArray(IDataObject *pDataObj)
 
 
 
-<span data-ttu-id="569c4-109">La función de inicialización llama a la \_ función ExaminePIDLArray, que recupera las propiedades para el objeto identificado por un PIDL en la matriz PIDL.</span><span class="sxs-lookup"><span data-stu-id="569c4-109">The initialization function calls the \_ExaminePIDLArray function, which retrieves the properties for object identified by a PIDL in the PIDL array.</span></span>
+<span data-ttu-id="8f7e8-109">La función de inicialización llama a la función ExaminePIDLArray, que recupera las propiedades del objeto identificado por un \_ PIDL en la matriz PIDL.</span><span class="sxs-lookup"><span data-stu-id="8f7e8-109">The initialization function calls the \_ExaminePIDLArray function, which retrieves the properties for object identified by a PIDL in the PIDL array.</span></span>
 
 
 ```C++
@@ -158,11 +158,11 @@ Exit:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="569c4-110">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="569c4-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8f7e8-110">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="8f7e8-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="569c4-111">**Guía de programación**</span><span class="sxs-lookup"><span data-stu-id="569c4-111">**Programming Guide**</span></span>](programming-guide.md)
+[<span data-ttu-id="8f7e8-111">**Guía de programación**</span><span class="sxs-lookup"><span data-stu-id="8f7e8-111">**Programming Guide**</span></span>](programming-guide.md)
 </dt> </dl>
 
  
