@@ -1,28 +1,28 @@
 ---
-title: Lectura de usuario no puede cambiar la contraseña (proveedor WinNT)
-description: La capacidad de un usuario de cambiar su propia contraseña es un permiso que se puede conceder o denegar.
+title: Leer que el usuario no puede cambiar la contraseña (proveedor winNT)
+description: Obtenga información sobre cómo determinar si un usuario tiene permiso para cambiar una contraseña para el proveedor winNT. La capacidad de un usuario para cambiar una contraseña se puede conceder o denegar.
 ms.assetid: b8b8de00-0def-4506-ab73-d03a7e06256d
 ms.tgt_platform: multiple
 keywords:
-- Leer usuario no puede cambiar la contraseña (proveedor WinNT) ADSI
-- El usuario no puede cambiar la contraseña (proveedor WinNT) ADSI, leer
-- Proveedor de WinNT ADSI, ejemplos de administración de usuarios, el usuario no puede cambiar la contraseña, leer
+- LEER ADSI del usuario no puede cambiar la contraseña (proveedor winNT)
+- El usuario no puede cambiar la contraseña (proveedor winNT) ADSI , lectura
+- ADSI del proveedor WinNT, ejemplos de administración de usuarios,Usuario no puede cambiar contraseña, lectura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab257f620d3e103866639f8ecacb57cc924efec4
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: dd075bfb6700779b60f9e578a4e89957487a2646
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "103994991"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405918"
 ---
-# <a name="reading-user-cannot-change-password-winnt-provider"></a><span data-ttu-id="786c7-106">Lectura de usuario no puede cambiar la contraseña (proveedor WinNT)</span><span class="sxs-lookup"><span data-stu-id="786c7-106">Reading User Cannot Change Password (WinNT Provider)</span></span>
+# <a name="reading-user-cannot-change-password-winnt-provider"></a><span data-ttu-id="101fe-107">Leer que el usuario no puede cambiar la contraseña (proveedor winNT)</span><span class="sxs-lookup"><span data-stu-id="101fe-107">Reading User Cannot Change Password (WinNT Provider)</span></span>
 
-<span data-ttu-id="786c7-107">La capacidad de un usuario de cambiar su propia contraseña es un permiso que se puede conceder o denegar.</span><span class="sxs-lookup"><span data-stu-id="786c7-107">The ability of a user to change their own password is a permission that can be granted or denied.</span></span> <span data-ttu-id="786c7-108">Para determinar si el usuario ha concedido este permiso con el proveedor de WinNT, lea la marca de modificación de la etiqueta de cambio no se pudo **\_ \_ \_ \_ cambiar** de la propiedad **userFlags** del objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="786c7-108">To determine if the user has been granted this permission with the WinNT provider, read the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of the user object.</span></span> <span data-ttu-id="786c7-109">La marca de cambio de no se pudo **\_ \_ \_ \_ cambiar** la etiqueta [**de \_ usuario \_ \_**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) de ad</span><span class="sxs-lookup"><span data-stu-id="786c7-109">The **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag is defined in the [**ADS\_USER\_FLAG\_ENUM**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) enumeration.</span></span>
+<span data-ttu-id="101fe-108">La capacidad de un usuario para cambiar su propia contraseña es un permiso que se puede conceder o denegar.</span><span class="sxs-lookup"><span data-stu-id="101fe-108">The ability of a user to change their own password is a permission that can be granted or denied.</span></span> <span data-ttu-id="101fe-109">Para determinar si se ha concedido este permiso al usuario con el proveedor winNT, lea la marca **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** de la propiedad **userFlags** del objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="101fe-109">To determine if the user has been granted this permission with the WinNT provider, read the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of the user object.</span></span> <span data-ttu-id="101fe-110">La **marca ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** se define en la [**\_ enumeración \_ \_ ENUM USER FLAG de ADS.**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum)</span><span class="sxs-lookup"><span data-stu-id="101fe-110">The **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag is defined in the [**ADS\_USER\_FLAG\_ENUM**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) enumeration.</span></span>
 
-## <a name="example-code"></a><span data-ttu-id="786c7-110">Código de ejemplo</span><span class="sxs-lookup"><span data-stu-id="786c7-110">Example Code</span></span>
+## <a name="example-code"></a><span data-ttu-id="101fe-111">Código de ejemplo</span><span class="sxs-lookup"><span data-stu-id="101fe-111">Example Code</span></span>
 
-<span data-ttu-id="786c7-111">En el ejemplo de código siguiente se muestra cómo obtener la marca de  cambio de la propiedad de la propiedad userFlags de un objeto de usuario de **ADS \_ up \_ passwd \_ \_** .</span><span class="sxs-lookup"><span data-stu-id="786c7-111">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
+<span data-ttu-id="101fe-112">En el ejemplo de código siguiente se muestra cómo obtener la marca **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** de la **propiedad userFlags** de un objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="101fe-112">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
 
 
 ```VB
@@ -56,7 +56,7 @@ End Function
 
 
 
-<span data-ttu-id="786c7-112">En el ejemplo de código siguiente se muestra cómo obtener la marca de  cambio de la propiedad de la propiedad userFlags de un objeto de usuario de **ADS \_ up \_ passwd \_ \_** .</span><span class="sxs-lookup"><span data-stu-id="786c7-112">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
+<span data-ttu-id="101fe-113">En el ejemplo de código siguiente se muestra cómo obtener la marca **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** de la **propiedad userFlags** de un objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="101fe-113">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
 
 
 ```C++
@@ -120,9 +120,9 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszDomain,
 
 
 
- 
+ 
 
- 
+ 
 
 
 
