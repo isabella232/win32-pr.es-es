@@ -1,41 +1,41 @@
 ---
-title: Lectura de usuario no puede cambiar la contraseña (proveedor LDAP)
-description: La capacidad de un usuario de cambiar su contraseña es un permiso que se puede conceder o denegar.
+title: Leer el usuario no puede cambiar la contraseña (proveedor LDAP)
+description: Obtenga información sobre cómo determinar si un usuario tiene permiso para cambiar una contraseña para el proveedor LDAP. La capacidad de un usuario para cambiar una contraseña se puede conceder o denegar.
 ms.assetid: d0d95d20-dcdb-453a-9d15-c386217927c8
 ms.tgt_platform: multiple
 keywords:
-- Lectura de usuario no puede cambiar la contraseña (proveedor LDAP) ADSI
-- El usuario no puede cambiar la contraseña (proveedor LDAP) ADSI, leer
-- ADSI Provider LDAP, ejemplos de administración de usuarios, el usuario debe cambiar la contraseña en el siguiente inicio de sesión, leer
+- AdsI de lectura del usuario no se puede cambiar la contraseña (proveedor LDAP)
+- ADSI del usuario no se puede cambiar la contraseña (proveedor LDAP), leer
+- ADSI del proveedor LDAP, ejemplos de administración de usuarios, El usuario debe cambiar la contraseña en el siguiente inicio de sesión, leer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ea818c8b01fbbac6b80037de13b25a82a07944
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b26818ee02d3876aa209dcd4990288ea1cfe96fc
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104533489"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405938"
 ---
-# <a name="reading-user-cannot-change-password-ldap-provider"></a><span data-ttu-id="45b83-106">Lectura de usuario no puede cambiar la contraseña (proveedor LDAP)</span><span class="sxs-lookup"><span data-stu-id="45b83-106">Reading User Cannot Change Password (LDAP Provider)</span></span>
+# <a name="reading-user-cannot-change-password-ldap-provider"></a><span data-ttu-id="81f96-107">Leer el usuario no puede cambiar la contraseña (proveedor LDAP)</span><span class="sxs-lookup"><span data-stu-id="81f96-107">Reading User Cannot Change Password (LDAP Provider)</span></span>
 
-<span data-ttu-id="45b83-107">La capacidad de un usuario de cambiar su contraseña es un permiso que se puede conceder o denegar.</span><span class="sxs-lookup"><span data-stu-id="45b83-107">The ability of a user to change their password is a permission that can be granted or denied.</span></span>
+<span data-ttu-id="81f96-108">La capacidad de un usuario para cambiar su contraseña es un permiso que se puede conceder o denegar.</span><span class="sxs-lookup"><span data-stu-id="81f96-108">The ability of a user to change their password is a permission that can be granted or denied.</span></span>
 
-<span data-ttu-id="45b83-108">**Para determinar si se concede o se deniega el permiso cambiar contraseña**</span><span class="sxs-lookup"><span data-stu-id="45b83-108">**To determine if the change password permission is granted or denied**</span></span>
+<span data-ttu-id="81f96-109">**Para determinar si se concede o se deniega el permiso de cambio de contraseña**</span><span class="sxs-lookup"><span data-stu-id="81f96-109">**To determine if the change password permission is granted or denied**</span></span>
 
-1.  <span data-ttu-id="45b83-109">Enlazar al objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="45b83-109">Bind to the user object.</span></span>
-2.  <span data-ttu-id="45b83-110">Obtenga el objeto [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la propiedad **ntSecurityDescriptor** del objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="45b83-110">Obtain the [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) object from the **ntSecurityDescriptor** property of the user object.</span></span>
-3.  <span data-ttu-id="45b83-111">Obtenga una interfaz [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la propiedad [**IADsSecurityDescriptor. DiscretionaryAcl**](iadssecuritydescriptor-property-methods.md) .</span><span class="sxs-lookup"><span data-stu-id="45b83-111">Obtain an [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) interface for the security descriptor from the [**IADsSecurityDescriptor.DiscretionaryAcl**](iadssecuritydescriptor-property-methods.md) property.</span></span>
-4.  <span data-ttu-id="45b83-112">Enumerar las entradas de control de acceso (ACE) para el objeto y buscar las ACE que tienen el GUID de cambio de contraseña ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry. ObjectType**](iadsaccesscontrolentry-property-methods.md) y las entidades de seguridad conocidas de "todos" o "NT Authority \\ Self" para la propiedad **IADsAccessControlEntry. Trustee** .</span><span class="sxs-lookup"><span data-stu-id="45b83-112">Enumerate the access control entries (ACE) for the object and search for the ACEs that have the change password GUID ({AB721A53-1E2F-11D0-9819-00AA0040529B}) for the [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) property and "Everyone" or "NT AUTHORITY\\SELF" well-known security principals for the **IADsAccessControlEntry.Trustee** property.</span></span>
+1.  <span data-ttu-id="81f96-110">Enlace al objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="81f96-110">Bind to the user object.</span></span>
+2.  <span data-ttu-id="81f96-111">Obtenga el [**objeto IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la **propiedad ntSecurityDescriptor** del objeto de usuario.</span><span class="sxs-lookup"><span data-stu-id="81f96-111">Obtain the [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) object from the **ntSecurityDescriptor** property of the user object.</span></span>
+3.  <span data-ttu-id="81f96-112">Obtenga una [**interfaz IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la [**propiedad IADsSecurityDescriptor.DiscretionaryAcl.**](iadssecuritydescriptor-property-methods.md)</span><span class="sxs-lookup"><span data-stu-id="81f96-112">Obtain an [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) interface for the security descriptor from the [**IADsSecurityDescriptor.DiscretionaryAcl**](iadssecuritydescriptor-property-methods.md) property.</span></span>
+4.  <span data-ttu-id="81f96-113">Enumerar las entradas de control de acceso (ACE) del objeto y buscar las ACE que tienen el GUID de contraseña de cambio ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) y las entidades de seguridad conocidas "Everyone" o "NT AUTHORITY SELF" para la propiedad \\ **IADsAccessControlEntry.Trustee.**</span><span class="sxs-lookup"><span data-stu-id="81f96-113">Enumerate the access control entries (ACE) for the object and search for the ACEs that have the change password GUID ({AB721A53-1E2F-11D0-9819-00AA0040529B}) for the [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) property and "Everyone" or "NT AUTHORITY\\SELF" well-known security principals for the **IADsAccessControlEntry.Trustee** property.</span></span>
     > [!Note]  
-    > <span data-ttu-id="45b83-113">Las cadenas "todos" y "NT AUTHORITY \\ Self" se localizan en función del idioma del primer controlador de dominio del dominio.</span><span class="sxs-lookup"><span data-stu-id="45b83-113">The "Everyone" and "NT AUTHORITY\\SELF" strings are localized based on the language of the first domain controller in the domain.</span></span> <span data-ttu-id="45b83-114">Por lo tanto, las cadenas no deben usarse directamente.</span><span class="sxs-lookup"><span data-stu-id="45b83-114">Therefore, the strings should not be used directly.</span></span> <span data-ttu-id="45b83-115">Los nombres de cuenta se deben obtener en tiempo de ejecución mediante una llamada a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID para las entidades de seguridad conocidas "todos" ("s-1-1-0") y "NT Authority \\ Self" ("s-1-5-10").</span><span class="sxs-lookup"><span data-stu-id="45b83-115">The account names should be obtained at run time by calling the [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) function with the SID for the "Everyone" ("S-1-1-0") and "NT AUTHORITY\\SELF" ("S-1-5-10") well-known security principals.</span></span> <span data-ttu-id="45b83-116">Los siguientes ejemplos de C++ **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** Code muestran cómo hacerlo.</span><span class="sxs-lookup"><span data-stu-id="45b83-116">The following C++ **GetSidAccountName**, **GetSidAccountName\_Everyone**, and **GetSidAccountName\_Self** code examples show how to do this.</span></span>
+    > <span data-ttu-id="81f96-114">Las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador \\ de dominio del dominio.</span><span class="sxs-lookup"><span data-stu-id="81f96-114">The "Everyone" and "NT AUTHORITY\\SELF" strings are localized based on the language of the first domain controller in the domain.</span></span> <span data-ttu-id="81f96-115">Por lo tanto, las cadenas no deben usarse directamente.</span><span class="sxs-lookup"><span data-stu-id="81f96-115">Therefore, the strings should not be used directly.</span></span> <span data-ttu-id="81f96-116">Los nombres de cuenta se deben obtener en tiempo de ejecución llamando a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID de las entidades de seguridad conocidas "S-1-1-0") y "NT AUTHORITY \\ SELF" ("S-1-5-10").</span><span class="sxs-lookup"><span data-stu-id="81f96-116">The account names should be obtained at run time by calling the [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) function with the SID for the "Everyone" ("S-1-1-0") and "NT AUTHORITY\\SELF" ("S-1-5-10") well-known security principals.</span></span> <span data-ttu-id="81f96-117">Los siguientes ejemplos de código de C++ **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** muestran cómo hacerlo.</span><span class="sxs-lookup"><span data-stu-id="81f96-117">The following C++ **GetSidAccountName**, **GetSidAccountName\_Everyone**, and **GetSidAccountName\_Self** code examples show how to do this.</span></span>
 
-     
+     
 
-5.  <span data-ttu-id="45b83-117">Si las ACE "everyone" y "NT AUTHORITY \\ Self" tienen el valor **de \_ objeto ADS ACETYPE \_ acceso \_ denegado \_** para la propiedad [**IADsAccessControlEntry. ACETYPE**](iadsaccesscontrolentry-property-methods.md) , se deniega el permiso.</span><span class="sxs-lookup"><span data-stu-id="45b83-117">If both the "Everyone" and "NT AUTHORITY\\SELF" ACEs have the **ADS\_ACETYPE\_ACCESS\_DENIED\_OBJECT** value for the [**IADsAccessControlEntry.AceType**](iadsaccesscontrolentry-property-methods.md) property, then the permission is denied.</span></span>
+5.  <span data-ttu-id="81f96-118">Si las ACE "Everyone" y "NT AUTHORITY SELF" tienen el valor \\ **ADS \_ ACETYPE ACCESS \_ DENIED \_ \_ OBJECT** para la propiedad [**IADsAccessControlEntry.AceType,**](iadsaccesscontrolentry-property-methods.md) se deniega el permiso.</span><span class="sxs-lookup"><span data-stu-id="81f96-118">If both the "Everyone" and "NT AUTHORITY\\SELF" ACEs have the **ADS\_ACETYPE\_ACCESS\_DENIED\_OBJECT** value for the [**IADsAccessControlEntry.AceType**](iadsaccesscontrolentry-property-methods.md) property, then the permission is denied.</span></span>
 
-## <a name="example-code"></a><span data-ttu-id="45b83-118">Código de ejemplo</span><span class="sxs-lookup"><span data-stu-id="45b83-118">Example Code</span></span>
+## <a name="example-code"></a><span data-ttu-id="81f96-119">Código de ejemplo</span><span class="sxs-lookup"><span data-stu-id="81f96-119">Example Code</span></span>
 
-<span data-ttu-id="45b83-119">En el ejemplo de código siguiente se muestra cómo determinar si el usuario no puede cambiar el permiso de contraseña mediante el proveedor LDAP.</span><span class="sxs-lookup"><span data-stu-id="45b83-119">The following code example shows how to determine if the User Cannot Change Password Permission using the LDAP provider.</span></span>
+<span data-ttu-id="81f96-120">En el ejemplo de código siguiente se muestra cómo determinar si el usuario no puede cambiar el permiso de contraseña mediante el proveedor LDAP.</span><span class="sxs-lookup"><span data-stu-id="81f96-120">The following code example shows how to determine if the User Cannot Change Password Permission using the LDAP provider.</span></span>
 
 
 ```C++
@@ -414,12 +414,12 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszUserDN,
 
 
 
-<span data-ttu-id="45b83-120">En el ejemplo de código siguiente se muestra cómo determinar si el usuario no puede cambiar el permiso de contraseña mediante el proveedor LDAP.</span><span class="sxs-lookup"><span data-stu-id="45b83-120">The following code example shows how to determine the User Cannot Change Password Permission using the LDAP provider.</span></span>
+<span data-ttu-id="81f96-121">En el ejemplo de código siguiente se muestra cómo determinar el permiso User Cannot Change Password mediante el proveedor LDAP.</span><span class="sxs-lookup"><span data-stu-id="81f96-121">The following code example shows how to determine the User Cannot Change Password Permission using the LDAP provider.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="45b83-121">El siguiente ejemplo de código solo funciona para los dominios en los que el idioma principal es el inglés, ya que las cadenas "todos" y "NT AUTHORITY \\ Self" se localizan en función del idioma del primer controlador de dominio del dominio.</span><span class="sxs-lookup"><span data-stu-id="45b83-121">The following code example only works for domains where the primary language is English, because the "Everyone" and "NT AUTHORITY\\SELF" strings are localized based on the language of the first domain controller in the domain.</span></span> <span data-ttu-id="45b83-122">No hay ninguna manera de Visual Basic para obtener los nombres de cuenta de una entidad de seguridad conocida sin llamar a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) .</span><span class="sxs-lookup"><span data-stu-id="45b83-122">There is no way in Visual Basic to obtain the account names for a well-known security principal without calling the [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) function.</span></span> <span data-ttu-id="45b83-123">Si usa Visual Basic, se recomienda que use el proveedor de WinNT para determinar el permiso de usuario no puede cambiar la contraseña, tal como se muestra en [lectura de usuario no puede cambiar la contraseña (proveedor de WinNT)](reading-user-cannot-change-password-winnt-provider.md).</span><span class="sxs-lookup"><span data-stu-id="45b83-123">If using Visual Basic, it is suggested that you use the WinNT provider to determine the User Cannot Change Password Permission as shown in [Reading User Cannot Change Password (WinNT Provider)](reading-user-cannot-change-password-winnt-provider.md).</span></span>
+> <span data-ttu-id="81f96-122">El ejemplo de código siguiente solo funciona para los dominios en los que el idioma principal es el inglés, porque las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio.</span><span class="sxs-lookup"><span data-stu-id="81f96-122">The following code example only works for domains where the primary language is English, because the "Everyone" and "NT AUTHORITY\\SELF" strings are localized based on the language of the first domain controller in the domain.</span></span> <span data-ttu-id="81f96-123">No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida)</span><span class="sxs-lookup"><span data-stu-id="81f96-123">There is no way in Visual Basic to obtain the account names for a well-known security principal without calling the [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) function.</span></span> <span data-ttu-id="81f96-124">Si usa Visual Basic, se recomienda usar el proveedor winNT para determinar el permiso Usuario no se puede cambiar la contraseña, como se muestra en Lectura del usuario no se puede cambiar la contraseña [(proveedor winNT).](reading-user-cannot-change-password-winnt-provider.md)</span><span class="sxs-lookup"><span data-stu-id="81f96-124">If using Visual Basic, it is suggested that you use the WinNT provider to determine the User Cannot Change Password Permission as shown in [Reading User Cannot Change Password (WinNT Provider)](reading-user-cannot-change-password-winnt-provider.md).</span></span>
 
- 
+ 
 
 
 ```VB
@@ -475,6 +475,6 @@ End Function
 
 
 
- 
+ 
 
- 
+ 
