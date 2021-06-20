@@ -1,21 +1,21 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el elemento DocumentHolePunch, que describe las características de los huecos de la salida.
 ms.assetid: 46fd5e22-a2f3-424d-8c2f-2d5ac089a230
 title: DocumentHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 825120996d0d488af347ed871386a12d7f8014a7
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 760559d3bb155030ff72a616096e5a860ba0d6b0
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997892"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409298"
 ---
 # <a name="documentholepunch"></a>DocumentHolePunch
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las características de los huecos de la salida. Cada documento se explica por separado. Las palabras clave JobHolePunch y DocumentHolePunch son mutuamente excluyentes. Ambos no deben especificarse simultáneamente en un documento PrintTicket o Capacidades de impresión.
+Describe las características de los huecos de la salida. Cada documento se asecha por separado. Las palabras clave JobHolePunch y DocumentHolePunch son mutuamente excluyentes. Ambos no se deben especificar simultáneamente en un documento PrintTicket o Capacidades de impresión.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -25,7 +25,7 @@ Describe las características de los huecos de la salida. Cada documento se expl
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                             |
 | Prefijo de ámbito <br/> | Documento<br/>                                                            |
@@ -60,7 +60,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 

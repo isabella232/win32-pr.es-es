@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Obtenga información sobre el elemento Value, que asocia un literal a un tipo. El tipo de datos de Value debe ser string, integer, decimal o QName.
 ms.assetid: 933528f6-8f34-4509-887c-c7c223c79367
-title: Value
+title: Valor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15a8f8c5bf9e2ec1696d6282b859fc99b7701159
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 272bee4d7a5f88899f83e439d8e1630b4026713d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105653129"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405988"
 ---
-# <a name="value"></a>Value
+# <a name="value"></a>Valor
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Un elemento de valor asocia un literal a un tipo.
+Un elemento Value asocia un literal a un tipo.
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
@@ -29,13 +29,13 @@ En la tabla siguiente se enumeran los atributos XML que pueden pertenecer a este
 
 | Atributo XML       | Detalles                                                                                                                                                                          |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| xsi:type<br/> | Especifica el tipo de datos de Value, que debe ser uno de los siguientes tipos definidos por XSD: String, integer, decimal, QName. Si falta, el tipo de datos predeterminado es String.<br/> |
+| xsi:type<br/> | Especifica el tipo de datos value, que debe ser uno de los siguientes tipos definidos por XSD: cadena, entero, decimal, QName. Si falta, el tipo de datos predeterminado es string.<br/> |
 
 
 
  
 
-Para obtener más información, consulte la sección [atributos XML](xml-attributes.md) .
+Para más información, consulte la [sección Atributos XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -47,7 +47,7 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Elementos primarios<br/> | ParameterInit <br/> Propiedad<br/> ScoredProperty<br/>                                                                                   |
 | Elementos secundarios<br/>  | Solo se permite el contenido de caracteres o enteros.<br/>                                                                                                |
-| Este elemento<br/>    | Se permite el contenido null. El contenido de los caracteres debe ajustarse a la sintaxis definida por el tipo de datos.<br/> No se permiten nodos secundarios duplicados.<br/> |
+| Este elemento<br/>    | Se permite el contenido NULL. El contenido de caracteres debe ajustarse a la sintaxis definida por el tipo de datos.<br/> No se permiten elementos secundarios duplicados relacionados.<br/> |
 
 
 
@@ -55,22 +55,22 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 
 ## <a name="configuration-dependencies"></a>Dependencias de configuración
 
-Los elementos de valor que aparecen en el elemento ScoredProperty no pueden tener dependencias de configuración. Los elementos de valor que aparecen dentro de los elementos de propiedad pueden tener dependencias arbitrarias en la configuración.
+Es posible que los elementos de valor que aparecen en el elemento ScoredProperty no tengan dependencias de configuración. Los elementos de valor que aparecen en los elementos Property pueden tener dependencias arbitrarias en la configuración.
 
 ## <a name="element-usage"></a>Uso de elementos
 
-Un elemento de valor puede aparecer dentro de una propiedad o un elemento ScoredProperty. El propósito del elemento Value es representar un valor como un tipo de datos XML estándar. El tipo de datos se especifica como un atributo XML del elemento Value, xsi: Type. Tenga en cuenta que no se admiten todos los tipos definidos por XSD o definidos por XML. Para obtener una lista de los tipos admitidos, vea [Resumen de tipos de elementos](summary-of-element-types.md). Un elemento de valor solo puede contener contenido de caracteres. Nada más puede aparecer como contenido en un elemento de valor.
+Un elemento Value puede aparecer dentro de un elemento Property o ScoredProperty. El propósito del elemento Value es representar un valor como un tipo de datos XML estándar. El tipo de datos se especifica como un atributo XML del elemento Value, xsi:type. Tenga en cuenta que no se admiten todos los tipos definidos por XSD o XML. Para obtener una lista de los tipos admitidos, [vea Resumen de tipos de elementos](summary-of-element-types.md). Un elemento Value solo puede contener contenido de caracteres. No puede aparecer nada más como contenido en un elemento Value.
 
 > [!Note]  
-> Algunos elementos ScoredProperty y de propiedad definidos por el esquema de impresión no contienen un elemento de valor, porque su finalidad es simplemente ser elementos primarios de subpropiedades. No debe agregar un elemento de valor a tales propiedades, como las propiedades que no contienen un elemento de valor.
+> Algunos elementos Print Schema-defined Property y ScoredProperty no contienen un elemento Value, porque su finalidad es simplemente ser elementos primarios de subpropiedades. No debe agregar un elemento Value a propiedades como estas, propiedades que no contienen un elemento Value.
 
  
 
-Para cumplir con el marco de trabajo del esquema de impresión, que requiere que haya un elemento de valor o subelementos en los elementos que admiten valores, se debe representar un valor ausente o indefinido presentando el elemento de valor como un elemento vacío. es decir, como <Value></Value>.
+Para cumplir con el marco de esquema de impresión, que requiere que un elemento Value o subelementos esté presente en los elementos que admiten valores, se debe representar un valor ausente o no definido mediante la presentación del elemento Value como un elemento vacío; es decir, como <Value></Value>.
 
 ## <a name="example"></a>Ejemplo
 
-Defina un valor de tipo decimal e Inicialícelo en "128,5".
+Defina un valor de tipo decimal e inicialízcalo en "128.5".
 
 ``` syntax
 <Value xsi:type="decimal">128.5</Value>

@@ -1,35 +1,35 @@
 ---
-description: Paso 6.
+description: Agregue compatibilidad con COM como parte de la escritura de un filtro de transformación. Este es el paso final de este tutorial.
 ms.assetid: 53e4f5b7-c85d-4b44-9a0c-0ad05ca872cc
 title: Paso 6. Agregar compatibilidad con COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e477cc22650604bce623874c0afbba1063609e44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 097d51fa440812311edde9ce448916c66721a507
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688221"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406778"
 ---
 # <a name="step-6-add-support-for-com"></a>Paso 6. Agregar compatibilidad con COM
 
-Este es el paso 6 del tutorial de [escritura de filtros de transformación](writing-transform-filters.md).
+Este es el paso 6 del tutorial Escribir [filtros de transformación](writing-transform-filters.md).
 
-El paso final consiste en agregar compatibilidad con COM.
+El último paso es agregar compatibilidad con COM.
 
 ## <a name="reference-counting"></a>Recuento de referencias
 
-No es necesario implementar [**IUnknown:: AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) o [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). Todas las clases Filter y PIN derivan de [**CUnknown**](cunknown.md), que controla el recuento de referencias.
+No es necesario implementar [**IUnknown::AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) o [**IUnknown::Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). Todas las clases de filtro y anclar derivan de [**CUnknown**](cunknown.md), que controla el recuento de referencias.
 
 ## <a name="queryinterface"></a>QueryInterface
 
-Todas las clases Filter y PIN implementan [**IUnknown:: QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para todas las interfaces com que heredan. Por ejemplo, [**CTransformFilter**](ctransformfilter.md) hereda [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) (a través de [**CBaseFilter**](cbasefilter.md)). Si el filtro no expone ninguna interfaz adicional, no es necesario hacer nada más.
+Todas las clases de filtro y anclar implementan [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para las interfaces COM que heredan. Por ejemplo, [**CTransformFilter**](ctransformfilter.md) hereda [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) (a través [**de CBaseFilter).**](cbasefilter.md) Si el filtro no expone ninguna interfaz adicional, no tiene que hacer nada más.
 
-Para exponer interfaces adicionales, invalide el método [**CUnknown:: NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) . Por ejemplo, supongamos que el filtro implementa una interfaz personalizada denominada IMyCustomInterface. Para exponer esta interfaz a los clientes, haga lo siguiente:
+Para exponer interfaces adicionales, invalide el [**método CUnknown::NonDelegatingQueryInterface.**](cunknown-nondelegatingqueryinterface.md) Por ejemplo, suponga que el filtro implementa una interfaz personalizada denominada IMyCustomInterface. Para exponer esta interfaz a los clientes, haga lo siguiente:
 
 -   Derive la clase de filtro de esa interfaz.
--   Coloque la macro [**declare \_ IUNKNOWN**](declare-iunknown.md) en la sección declaración pública.
--   Invalide [**NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) para comprobar el IID de la interfaz y devolver un puntero al filtro.
+-   Coloque la [**macro DECLARE \_ IUNKNOWN en**](declare-iunknown.md) la sección de declaración pública.
+-   Invalide [**NonDelegatingQueryInterface para**](cunknown-nondelegatingqueryinterface.md) buscar el IID de la interfaz y devolver un puntero al filtro.
 
 El siguiente código muestra estos pasos:
 
@@ -52,13 +52,13 @@ STDMETHODIMP CMyFilter::NonDelegatingQueryInterface(REFIID iid, void **ppv)
 
 
 
-Para obtener más información, vea [How to implement IUnknown](how-to-implement-iunknown.md).
+Para obtener más información, [vea How to Implement IUnknown](how-to-implement-iunknown.md).
 
 ## <a name="object-creation"></a>Creación de objetos
 
-Si planea empaquetar el filtro en un archivo DLL y ponerlo a disposición de otros clientes, debe admitir [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) y otras funciones com relacionadas. La biblioteca de clases base implementa la mayor parte de esto; solo tiene que proporcionar información sobre el filtro. En esta sección se proporciona una breve descripción de lo que hay que hacer. Para obtener más información, vea [Cómo crear un archivo dll de filtro de DirectShow](how-to-create-a-dll.md).
+Si tiene previsto empaquetar el filtro en un archivo DLL y hacer que esté disponible para otros clientes, debe admitir [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) y otras funciones COM relacionadas. La biblioteca de clases base implementa la mayor parte de esto; solo tiene que proporcionar información sobre el filtro. En esta sección se proporciona una breve introducción a lo que se debe hacer. Para obtener más información, [vea How to Create a DirectShow Filter DLL](how-to-create-a-dll.md).
 
-En primer lugar, escriba un método de clase estática que devuelva una nueva instancia del filtro. Puede asignar el nombre que desee a este método, pero la firma debe coincidir con la que se muestra en el ejemplo siguiente:
+En primer lugar, escriba un método de clase estático que devuelva una nueva instancia del filtro. Puede dar a este método el nombre que quiera, pero la firma debe coincidir con la que se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -75,7 +75,7 @@ CUnknown * WINAPI CRleFilter::CreateInstance(LPUNKNOWN pUnk, HRESULT *pHr)
 
 
 
-A continuación, declare una matriz global de instancias de la clase [**CFactoryTemplate**](cfactorytemplate.md) , denominada *g \_ templates*. Cada clase **CFactoryTemplate** contiene información del registro para un filtro. Varios filtros pueden residir en un único archivo DLL; simplemente incluya entradas **CFactoryTemplate** adicionales. También puede declarar otros objetos COM, como páginas de propiedades.
+A continuación, declare una matriz global [**de instancias de clase CFactoryTemplate,**](cfactorytemplate.md) denominada g *\_ Templates*. Cada **clase CFactoryTemplate** contiene información del Registro para un filtro. Varios filtros pueden residir en un solo archivo DLL; simplemente incluya entradas **adicionales de CFactoryTemplate.** También puede declarar otros objetos COM, como páginas de propiedades.
 
 
 ```C++
@@ -94,7 +94,7 @@ CFactoryTemplate g_Templates[] =
 
 
 
-Defina un entero global denominado *g \_ cTemplates* cuyo valor sea igual a la longitud de la matriz de *\_ plantillas g* :
+Defina un entero global denominado *g \_ cTemplates* cuyo valor sea igual a la longitud de la matriz *g \_ Templates:*
 
 
 ```C++
@@ -103,7 +103,7 @@ int g_cTemplates = sizeof(g_Templates) / sizeof(g_Templates[0]);
 
 
 
-Por último, implemente las funciones de registro de archivos DLL. En el ejemplo siguiente se muestra la implementación mínima para estas funciones:
+Por último, implemente las funciones de registro de DLL. En el ejemplo siguiente se muestra la implementación mínima para estas funciones:
 
 
 ```C++
@@ -119,14 +119,14 @@ STDAPI DllUnregisterServer()
 
 
 
-## <a name="filter-registry-entries"></a>Filtrar entradas del registro
+## <a name="filter-registry-entries"></a>Filtrar entradas del Registro
 
-En los ejemplos anteriores se muestra cómo registrar el CLSID de un filtro para COM. Para muchos filtros, esto es suficiente. A continuación, se espera que el cliente cree el filtro mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) y lo agregue al gráfico de filtros mediante una llamada a [**IFilterGraph:: addFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter). En algunos casos, sin embargo, es posible que desee proporcionar información adicional sobre el filtro en el registro. Esta información hace lo siguiente:
+En los ejemplos anteriores se muestra cómo registrar el CLSID de un filtro para COM. Para muchos filtros, esto es suficiente. A continuación, se espera que el cliente cree el filtro mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) y lo agregue al gráfico de filtros mediante una llamada a [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter). Sin embargo, en algunos casos, es posible que desee proporcionar información adicional sobre el filtro en el Registro. Esta información hace lo siguiente:
 
--   Permite a los clientes detectar el filtro mediante el [asignador de filtros](filter-mapper.md) o el [enumerador de dispositivos del sistema](system-device-enumerator.md).
--   Permite al administrador de gráficos de filtro detectar el filtro durante la creación automática de gráficos.
+-   Permite a los clientes detectar el filtro mediante [el Asignador de filtros](filter-mapper.md) o el [Enumerador de dispositivos del sistema](system-device-enumerator.md).
+-   Permite que el Administrador de gráficos de filtros detecte el filtro durante la creación automática del grafo.
 
-En el ejemplo siguiente se registra el filtro del codificador RLE en la categoría compresor de vídeo. Para obtener más información, consulte [Cómo registrar filtros de DirectShow](how-to-register-directshow-filters.md). Asegúrese de leer la sección [directrices para registrar filtros](guidelines-for-registering-filters.md), que describe las prácticas recomendadas para el registro de filtros.
+En el ejemplo siguiente se registra el filtro del codificador RLE en la categoría de vídeos. Para más información, [consulte Registro de filtros de DirectShow.](how-to-register-directshow-filters.md) Asegúrese de leer la sección [Directrices](guidelines-for-registering-filters.md)para registrar filtros , que describe las prácticas recomendadas para el registro de filtros.
 
 
 ```C++
@@ -210,7 +210,7 @@ STDAPI DllUnregisterServer()
 
 
 
-Además, no es necesario empaquetar los filtros dentro de los archivos dll. En algunos casos, puede escribir un filtro especializado que esté diseñado únicamente para una aplicación específica. En ese caso, puede compilar la clase de filtro directamente en la aplicación y crearla con el `new` operador, como se muestra en el ejemplo siguiente:
+Además, los filtros no tienen que empaquetarse dentro de archivos DLL. En algunos casos, podría escribir un filtro especializado diseñado solo para una aplicación específica. En ese caso, puede compilar la clase de filtro directamente en la aplicación y crearla con el operador , como se `new` muestra en el ejemplo siguiente:
 
 
 ```C++

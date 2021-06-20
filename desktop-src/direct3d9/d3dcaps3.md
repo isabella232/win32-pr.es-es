@@ -1,15 +1,15 @@
 ---
-description: Marcas de funcionalidad del controlador.
+description: Consulte una lista de las marcas de funcionalidad del controlador D3DCAPS3. Incluye las definiciones, valores y descripciones con vínculos a las API.
 ms.assetid: d9cd7388-3413-472d-aacb-0b8c9c60031a
 title: D3DCAPS3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fda81aa7f77dcaf03eb06b357ebfb91b4956f6d4
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 7b28614b2b2ea3c20f828b39f2b8926cb484a88c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343370"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408268"
 ---
 # <a name="d3dcaps3"></a>D3DCAPS3
 
@@ -53,7 +53,7 @@ Marcas de funcionalidad del controlador.
 <tr class="odd">
 <td>D3DCAPS3_DXVAHD</td>
 <td>0x00000400L</td>
-<td>El controlador de pantalla admite el DDI DXVA-HD. Para obtener más información sobre DXVA-HD DDI, vea <a href="https://msdn.microsoft.com/library/dd835176.aspx">Processing High-Definition Video</a>.<br/> 
+<td>El controlador de pantalla admite el DDI DXVA-HD. Para obtener más información sobre DXVA-HD DDI, consulte <a href="https://msdn.microsoft.com/library/dd835176.aspx">Processing High-Definition Video</a>.<br/> 
 <table>
 <tbody>
 <tr class="odd">
@@ -67,7 +67,7 @@ Marcas de funcionalidad del controlador.
 <tr class="even">
 <td>D3DCAPS3_LINEAR_TO_SRGB_PRESENTATION</td>
 <td>0x00000080L</td>
-<td>Indica que el dispositivo puede realizar la corrección gamma desde un búfer de reserva con ventanas (que contiene contenido lineal) a un escritorio sRGB.</td>
+<td>Indica que el dispositivo puede realizar la corrección gamma desde un búfer de reserva con ventana (que contiene contenido lineal) a un escritorio sRGB.</td>
 </tr>
 <tr class="odd">
 <td>D3DCAPS3_RESERVED</td>

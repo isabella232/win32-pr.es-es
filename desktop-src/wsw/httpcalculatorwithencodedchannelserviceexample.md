@@ -1,31 +1,31 @@
 ---
 title: HttpCalculatorWithEncodedChannelServiceExample
-description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora con una implementación de canalización personalizada y de agente de escucha que se capa encima de HTTP.
+description: Revise un ejemplo de C++ de la API de servicios web de Windows (WWSAPI) de una calculadora HTTP con el servicio de canal codificado.
 ms.assetid: 3b8d58dd-2f0c-4008-81ad-abda23a26a52
 keywords:
 - HttpCalculatorWithEncodedChannelServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4f0e35c84d0e3e23d23e8acf2b8d1a5f1ced500
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c1eb0ef089b546a87ce741934ce26855e726c38a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357745"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404168"
 ---
 # <a name="httpcalculatorwithencodedchannelserviceexample"></a>HttpCalculatorWithEncodedChannelServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora con una implementación de canalización personalizada y de agente de escucha que se capa encima de HTTP.
+En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora con un canal personalizado y la implementación del agente de escucha de esa capa sobre HTTP.
 
--   [HttpCalculatorWithEncodedChannelService. cpp](#httpcalculatorwithencodedchannelservicecpp)
--   [EncodedChannel. h](#encodedchannelh)
--   [EncodedChannel. cpp](#encodedchannelcpp)
--   [CalculatorService. wsdl](#calculatorservicewsdl)
+-   [HttpCalculatorWithEncodedChannelService.cpp](#httpcalculatorwithencodedchannelservicecpp)
+-   [EncodedChannel.h](#encodedchannelh)
+-   [EncodedChannel.cpp](#encodedchannelcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httpcalculatorwithencodedchannelservicecpp"></a>HttpCalculatorWithEncodedChannelService. cpp
+## <a name="httpcalculatorwithencodedchannelservicecpp"></a>HttpCalculatorWithEncodedChannelService.cpp
 
 
 ```C++
@@ -273,7 +273,7 @@ Exit:
 
 
 
-## <a name="encodedchannelh"></a>EncodedChannel. h
+## <a name="encodedchannelh"></a>EncodedChannel.h
 
 
 ```C++
@@ -283,7 +283,7 @@ extern WS_CHANNEL_DECODER channelDecoder;
 
 
 
-## <a name="encodedchannelcpp"></a>EncodedChannel. cpp
+## <a name="encodedchannelcpp"></a>EncodedChannel.cpp
 
 
 ```C++
@@ -649,7 +649,7 @@ WS_CHANNEL_DECODER channelDecoder =
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -777,9 +777,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

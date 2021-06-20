@@ -1,35 +1,35 @@
 ---
 title: InprocHandler
-description: Especifica si una aplicación utiliza un controlador personalizado.
+description: InprocHandler especifica si una aplicación usa un controlador personalizado en el HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID clave del Registro.
 ms.assetid: b371b331-148b-46f2-a21e-b88b285bcfc9
 keywords:
-- Clave del registro InprocHandler COM
+- Com de clave del Registro InprocHandler
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a8c19089ece43496465351b44e9faa8793ba893
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aea1ca0d5eb5dec58a36578d268d7020a963a95e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418958"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404738"
 ---
 # <a name="inprochandler"></a>InprocHandler
 
-Especifica si una aplicación utiliza un controlador personalizado.
+Especifica si una aplicación usa un controlador personalizado.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      InprocHandler = handler.dll
+   {CLSID}
+      InprocHandler = handler.dll
 ```
 
 ## <a name="remarks"></a>Observaciones
 
-Se trata de un valor de **reg \_ SZ** que especifica el controlador personalizado que utiliza la aplicación. Si no se utiliza un controlador personalizado, la entrada debe establecerse en Ole32.dll.
+Se trata de **un valor \_ REG SZ** que especifica el controlador personalizado utilizado por la aplicación. Si no se usa un controlador personalizado, la entrada debe establecerse en Ole32.dll.
 
-Si un contenedor está buscando en el registro un controlador personalizado, la versión de 16 bits tiene prioridad con un contenedor de 16 bits y la versión de 32 bits tiene prioridad con un contenedor de 32 bits.
+Si un contenedor busca en el Registro un controlador personalizado, la versión de 16 bits tiene prioridad con un contenedor de 16 bits y la versión de 32 bits tiene prioridad con un contenedor de 32 bits.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,9 +38,9 @@ Si un contenedor está buscando en el registro un controlador personalizado, la 
 [**InprocHandler32**](inprochandler32.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

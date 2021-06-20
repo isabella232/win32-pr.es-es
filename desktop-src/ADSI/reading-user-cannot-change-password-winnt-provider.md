@@ -1,28 +1,28 @@
 ---
-title: Lectura de usuario no puede cambiar la contraseña (proveedor WinNT)
-description: La capacidad de un usuario de cambiar su propia contraseña es un permiso que se puede conceder o denegar.
+title: Leer que el usuario no puede cambiar la contraseña (proveedor winNT)
+description: Obtenga información sobre cómo determinar si un usuario tiene permiso para cambiar una contraseña para el proveedor winNT. La capacidad de un usuario para cambiar una contraseña se puede conceder o denegar.
 ms.assetid: b8b8de00-0def-4506-ab73-d03a7e06256d
 ms.tgt_platform: multiple
 keywords:
-- Leer usuario no puede cambiar la contraseña (proveedor WinNT) ADSI
-- El usuario no puede cambiar la contraseña (proveedor WinNT) ADSI, leer
-- Proveedor de WinNT ADSI, ejemplos de administración de usuarios, el usuario no puede cambiar la contraseña, leer
+- LEER ADSI del usuario no puede cambiar la contraseña (proveedor winNT)
+- El usuario no puede cambiar la contraseña (proveedor winNT) ADSI , lectura
+- ADSI del proveedor WinNT, ejemplos de administración de usuarios,Usuario no puede cambiar contraseña, lectura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab257f620d3e103866639f8ecacb57cc924efec4
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: dd075bfb6700779b60f9e578a4e89957487a2646
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "103994991"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405918"
 ---
-# <a name="reading-user-cannot-change-password-winnt-provider"></a>Lectura de usuario no puede cambiar la contraseña (proveedor WinNT)
+# <a name="reading-user-cannot-change-password-winnt-provider"></a>Leer que el usuario no puede cambiar la contraseña (proveedor winNT)
 
-La capacidad de un usuario de cambiar su propia contraseña es un permiso que se puede conceder o denegar. Para determinar si el usuario ha concedido este permiso con el proveedor de WinNT, lea la marca de modificación de la etiqueta de cambio no se pudo **\_ \_ \_ \_ cambiar** de la propiedad **userFlags** del objeto de usuario. La marca de cambio de no se pudo **\_ \_ \_ \_ cambiar** la etiqueta [**de \_ usuario \_ \_**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) de ad
+La capacidad de un usuario para cambiar su propia contraseña es un permiso que se puede conceder o denegar. Para determinar si se ha concedido este permiso al usuario con el proveedor winNT, lea la marca **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** de la propiedad **userFlags** del objeto de usuario. La **marca ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** se define en la [**\_ enumeración \_ \_ ENUM USER FLAG de ADS.**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum)
 
 ## <a name="example-code"></a>Código de ejemplo
 
-En el ejemplo de código siguiente se muestra cómo obtener la marca de  cambio de la propiedad de la propiedad userFlags de un objeto de usuario de **ADS \_ up \_ passwd \_ \_** .
+En el ejemplo de código siguiente se muestra cómo obtener la marca **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** de la **propiedad userFlags** de un objeto de usuario.
 
 
 ```VB
@@ -56,7 +56,7 @@ End Function
 
 
 
-En el ejemplo de código siguiente se muestra cómo obtener la marca de  cambio de la propiedad de la propiedad userFlags de un objeto de usuario de **ADS \_ up \_ passwd \_ \_** .
+En el ejemplo de código siguiente se muestra cómo obtener la marca **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** de la **propiedad userFlags** de un objeto de usuario.
 
 
 ```C++
@@ -120,9 +120,9 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszDomain,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

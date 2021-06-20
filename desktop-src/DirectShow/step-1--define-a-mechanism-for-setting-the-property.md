@@ -1,25 +1,25 @@
 ---
-description: Paso 1.
+description: Defina un mecanismo para establecer la propiedad como parte de la creación de una página de propiedades de filtro para un filtro de DirectShow personalizado.
 ms.assetid: 1912af22-11dc-4864-8c20-91675d4f45d9
 title: Paso 1. Definir un mecanismo para establecer la propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74a1845cfb3cdf5642378a2321e827e52720a83d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 191014c35e27974c52961c2c6218e3a83effcc99
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678088"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410078"
 ---
 # <a name="step-1-define-a-mechanism-for-setting-the-property"></a>Paso 1. Definir un mecanismo para establecer la propiedad
 
-El filtro debe admitir una forma para que la página de propiedades se comunique con él, de modo que la página de propiedades pueda establecer y recuperar propiedades en el filtro. Entre los posibles mecanismos se incluyen los siguientes:
+El filtro debe admitir una manera de que la página de propiedades se comunique con ella, de modo que la página de propiedades pueda establecer y recuperar propiedades en el filtro. Entre los posibles mecanismos se incluyen los siguientes:
 
--   Exponga una interfaz COM personalizada.
--   Compatibilidad con las propiedades de automatización, a través de **IDispatch**.
--   Exponga la interfaz **IPropertyBag** y defina un conjunto de propiedades con nombre.
+-   Exponer una interfaz COM personalizada.
+-   Admite propiedades de Automation mediante **IDispatch**.
+-   Exponga **la interfaz IPropertyBag** y defina un conjunto de propiedades con nombre.
 
-En este ejemplo se usa una interfaz COM personalizada, denominada ISaturation. No se trata de una interfaz de DirectShow real. solo se define para este ejemplo. Empiece por declarar la interfaz en un archivo de encabezado, junto con el identificador de interfaz (IID):
+En este ejemplo se usa una interfaz COM personalizada, denominada ISaturation. No se trata de una interfaz real de DirectShow; solo se define para este ejemplo. Comience declarando la interfaz en un archivo de encabezado, junto con el identificador de interfaz (IID):
 
 
 ```C++
@@ -36,7 +36,7 @@ interface ISaturation : public IUnknown
 
 
 
-También puede definir la interfaz con IDL y usar el compilador MIDL para crear el archivo de encabezado. A continuación, implemente la interfaz personalizada en el filtro. En este ejemplo se usan los métodos "Get" y "SET" para el valor de saturación del filtro. Observe que ambos métodos protegen el \_ miembro m lSaturation con una sección crítica.
+También puede definir la interfaz con IDL y usar el compilador MIDL para crear el archivo de encabezado. A continuación, implemente la interfaz personalizada en el filtro. En este ejemplo se usan los métodos "Get" y "Set" para el valor de saturación del filtro. Observe que ambos métodos protegen el miembro \_ m lSaturation con una sección crítica.
 
 
 ```C++
@@ -68,15 +68,15 @@ public:
 
 
 
-Por supuesto, los detalles de su propia implementación variarán en el ejemplo que se muestra aquí.
+Por supuesto, los detalles de su propia implementación serán diferentes del ejemplo que se muestra aquí.
 
-Siguiente: [paso 2. Implemente ISpecifyPropertyPages](step-2--implement-ispecifypropertypages.md).
+Siguiente: [Paso 2. Implemente ISpecifyPropertyPages](step-2--implement-ispecifypropertypages.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Clase CCritSec**](ccritsec.md)
+[**CCritSec (clase)**](ccritsec.md)
 </dt> <dt>
 
 [Crear una página de propiedades de filtro](creating-a-filter-property-page.md)

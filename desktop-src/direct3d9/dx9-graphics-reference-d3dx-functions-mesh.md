@@ -1,15 +1,15 @@
 ---
-description: D3DX proporciona las siguientes funciones de malla.
+description: Obtenga información sobre las funciones de malla en D3DX. D3DX proporciona varias funciones de malla, como D3DXboxBoundProbe y D3DXCleanMesh.
 ms.assetid: d6698040-8fdd-40e6-a61a-402647d48dbc
 title: Funciones de malla (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a5242a06b1261d3fddd9649ac52c73f1555a30
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b74a35933fd9c6302b8c59ef1cd8ea62b4fac231
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536424"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408188"
 ---
 # <a name="mesh-functions-direct3d-9-graphics"></a>Funciones de malla (gráficos de Direct3D 9)
 
@@ -67,7 +67,7 @@ D3DX proporciona las siguientes funciones de malla.
 
 <dl> <dt>
 
-[Funciones de D3DX](dx9-graphics-reference-d3dx-functions.md)
+[Funciones D3DX](dx9-graphics-reference-d3dx-functions.md)
 </dt> <dt>
 
 [**D3DXCreateTextureGutterHelper**](d3dxcreatetexturegutterhelper.md)

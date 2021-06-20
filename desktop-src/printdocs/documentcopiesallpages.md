@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento DocumentCopiesAllPages, que especifica el número de copias de un documento.
 ms.assetid: 6319e8fc-787f-4bc8-8436-1b498b3882d2
 title: DocumentCopiesAllPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723242ddd127113b573f167e6902b27fcca9665a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 05bf82c23b764f3fe1f8257f4cdb2e7fa03374bd
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993992"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409448"
 ---
 # <a name="documentcopiesallpages"></a>DocumentCopiesAllPages
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el número de copias de un documento.
 
@@ -24,7 +24,7 @@ Especifica el número de copias de un documento.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefijo de ámbito <br/> | Documento<br/>     |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                        |
+| Propiedad                | xsi:type           | Valor                        |
 |-------------------------|--------------------|------------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>        |
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

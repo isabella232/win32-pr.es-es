@@ -1,27 +1,27 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento DocumentCollate, que describe las características de intercalación de la salida.
 ms.assetid: 752cccf7-1f95-4597-b0e2-a96fd22ffeef
 title: DocumentCollate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959613299c53996ce7d66171d2da1518f28b9298
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e4c3036cc64265ea8f88bfcc46aea0149f8af5ad
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994002"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409458"
 ---
 # <a name="documentcollate"></a>DocumentCollate
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe las características de intercalación de la salida. Se intercalan todas las páginas de cada documento individual. DocumentCollate y JobCollateAlldocuments son mutuamente excluyentes. El comportamiento y la implementación de si se implementan ambas o solo una de estas palabras clave se deja al controlador.
 
 A continuación se deberán seguir las reglas para la implementación de Collate.
 
-## <a name="element-definition-and-rules"></a>Reglas y definición de elementos
+## <a name="element-definition-and-rules"></a>Definición y reglas de elementos
 
-Primero debe seguir las reglas de JobCollateAllDocument y, a continuación, aplicar reglas para DocumentCollate para que los escenarios funcionen. Tenga en cuenta que en un valor de conversión PrintTicket a Devmode, donde JobCollateAllDocuments no es compatible con el controlador, es el controlador el que elige el comportamiento adecuado que se debe tomar (JobCollateAllDocuments = ON u OFF). Además, la opción se puede cambiar en función de otras opciones de PrintTicket.
+Primero debe seguir las reglas de JobCollateAllDocument y, a continuación, aplicar las reglas de DocumentCollate para que los escenarios funcionen. Tenga en cuenta que en un valor de conversión PrintTicket a Devmode, donde JobCollateAllDocuments no es compatible con el controlador, es el controlador el que elige el comportamiento adecuado que se debe tomar (JobCollateAllDocuments = ON u OFF). Además, la opción se puede cambiar en función de otras opciones de PrintTicket.
 
 ### <a name="jobcollatealldocuments"></a>JobCollateAllDocuments
 
@@ -45,7 +45,7 @@ OFF: para todas las copias (JobCopiesAllDocuments x DocumentCopiesAllPages) impr
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Característica<br/>  |
 | Prefijo de ámbito <br/> | Documento<br/> |

@@ -1,19 +1,19 @@
 ---
-description: Paso 2.
+description: Implemente la interfaz ISpecifyPropertyPages en el filtro como parte de la creación de una página de propiedades de filtro para un filtro directShow personalizado.
 ms.assetid: 8be83564-07ad-47cf-9538-73136f42ba79
-title: Paso 2. Implementar ISpecifyPropertyPages
+title: Paso 2. Implementación de ISpecifyPropertyPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3125230c8e28c6bd6b8593839d7175bb43d39674
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe37a22c6ba9c14f8656ac41294360569316be1a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688084"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410058"
 ---
-# <a name="step-2-implement-ispecifypropertypages"></a>Paso 2. Implementar ISpecifyPropertyPages
+# <a name="step-2-implement-ispecifypropertypages"></a>Paso 2. Implementación de ISpecifyPropertyPages
 
-A continuación, implemente la interfaz **ISpecifyPropertyPages** en el filtro. Esta interfaz tiene un método único, **GetPages**, que devuelve una matriz de CLSID para las páginas de propiedades que admite el filtro. En este ejemplo, el filtro tiene una sola página de propiedades. Empiece generando el CLSID y declarándolo en el archivo de encabezado:
+A continuación, **implemente la interfaz ISpecifyPropertyPages** en el filtro. Esta interfaz tiene un único método, **GetPages**, que devuelve una matriz de CLID para las páginas de propiedades que admite el filtro. En este ejemplo, el filtro tiene una sola página de propiedades. Empiece por generar el CLSID y declararlo en el archivo de encabezado:
 
 
 ```C++
@@ -24,7 +24,7 @@ DEFINE_GUID(CLSID_SaturationProp, 0xa9bd4eb, 0xded5,
 
 
 
-Ahora implemente el método **GetPages** :
+Ahora implemente **el método GetPages:**
 
 
 ```C++
@@ -54,9 +54,9 @@ public:
 
 
 
-Asigne memoria para la matriz mediante **CoTaskMemAlloc**. El autor de la llamada liberará la memoria.
+Asigne memoria para la matriz **mediante CoTaskMemAlloc**. El autor de la llamada liberará la memoria.
 
-Siguiente: [paso 3. Compatibilidad con QueryInterface](step-3--support-queryinterface.md).
+Siguiente: [Paso 3. Compatibilidad con QueryInterface](step-3--support-queryinterface.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

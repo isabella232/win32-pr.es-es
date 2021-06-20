@@ -1,28 +1,28 @@
 ---
-description: La biblioteca matemática proporcionada por la biblioteca de utilidades de D3DX proporciona funciones para calcular operaciones matemáticas 3D.
+description: Obtenga información sobre la biblioteca matemática proporcionada por la biblioteca de utilidades D3DX en Gráficos de Direct3D 9. La biblioteca proporciona funciones para calcular operaciones matemáticas 3D.
 ms.assetid: 00f0f943-64fa-45e3-8bd3-ca61c8b87e1a
 title: Funciones matemáticas (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 069b0de6a40806a4461fa68ba00e456b1d3b9dfb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 17fa7e56282d74dbe6a67b023ca5f64d0f88be20
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806062"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408218"
 ---
 # <a name="math-functions-direct3d-9-graphics"></a>Funciones matemáticas (gráficos de Direct3D 9)
 
 > [!Note]  
-> Las funciones matemáticas de la biblioteca de utilidades de D3DX están desusadas en Windows 8. En su lugar, se recomienda usar [DirectXMath](../dxmath/directxmath-portal.md) .
+> Las funciones matemáticas de la biblioteca de utilidades D3DX están en desuso para Windows 8. Se recomienda usar [DirectXMath en su](../dxmath/directxmath-portal.md) lugar.
 
  
 
-La biblioteca matemática proporcionada por la biblioteca de utilidades de D3DX proporciona funciones para calcular operaciones matemáticas 3D. Cada una de las funciones puede tomar el mismo objeto que los \[ \] parámetros pasados y devueltos \[ \] . Además, los parámetros out se suelen devolver como valores devueltos, por lo que se puede usar la salida de una función matemática como parámetro de otra función matemática.
+La biblioteca matemática proporcionada por la biblioteca de utilidades D3DX proporciona funciones para calcular operaciones matemáticas 3D. Cada una de las funciones puede tomar el mismo objeto que los parámetros \[ pasados \] y \[ \] devueltos. Además, los parámetros out normalmente se devuelven como valores devueltos, por lo que la salida de una función matemática se puede usar como parámetro para otra función matemática.
 
-Muchas de las funciones se implementan en d3dx9math. INL.
+Muchas de las funciones se implementan en d3dx9math.inl.
 
-Las funciones de la aplicación matemática 3D se pueden organizar en los siguientes grupos.
+Las funciones de aplicación matemática 3D se pueden organizar en los grupos siguientes.
 
 ## <a name="functions"></a>Functions
 
@@ -101,18 +101,18 @@ Las funciones de la aplicación matemática 3D se pueden organizar en los siguie
 -   [**D3DXQuaternionSquad**](d3dxquaternionsquad.md)
 -   [**D3DXQuaternionSquadSetup**](d3dxquaternionsquadsetup.md)
 -   [**D3DXQuaternionToAxisAngle**](d3dxquaterniontoaxisangle.md)
--   [**D3DXSHAdd**](d3dxshadd.md)
+-   [**D3DXSHAgregue**](d3dxshadd.md)
 -   [**D3DXSHDot**](d3dxshdot.md)
 -   [**D3DXSHEvalConeLight**](d3dxshevalconelight.md)
 -   [**D3DXSHEvalDirection**](d3dxshevaldirection.md)
 -   [**D3DXSHEvalDirectionalLight**](d3dxshevaldirectionallight.md)
--   [**D3DXSHEvalHemisphereLight**](d3dxshevalhemispherelight.md)
+-   [**D3DXSHEvalRriisphereLight**](d3dxshevalhemispherelight.md)
 -   [**D3DXSHEvalSphericalLight**](d3dxshevalsphericallight.md)
 -   [**D3DXSHProjectCubeMap**](d3dxshprojectcubemap.md)
 -   [**D3DXSHRotate**](d3dxshrotate.md)
 -   [**D3DXSHRotateZ**](d3dxshrotatez.md)
 -   [**D3DXSHScale**](d3dxshscale.md)
--   [**D3DXVec2Add**](d3dxvec2add.md)
+-   [**D3DXVec2Agregue**](d3dxvec2add.md)
 -   [**D3DXVec2BaryCentric**](d3dxvec2barycentric.md)
 -   [**D3DXVec2CatmullRom**](d3dxvec2catmullrom.md)
 -   [**D3DXVec2CCW**](d3dxvec2ccw.md)
@@ -132,7 +132,7 @@ Las funciones de la aplicación matemática 3D se pueden organizar en los siguie
 -   [**D3DXVec2TransformCoordArray**](d3dxvec2transformcoordarray.md)
 -   [**D3DXVec2TransformNormal**](d3dxvec2transformnormal.md)
 -   [**D3DXVec2TransformNormalArray**](d3dxvec2transformnormalarray.md)
--   [**D3DXVec3Add**](d3dxvec3add.md)
+-   [**D3DXVec3Agregue**](d3dxvec3add.md)
 -   [**D3DXVec3BaryCentric**](d3dxvec3barycentric.md)
 -   [**D3DXVec3CatmullRom**](d3dxvec3catmullrom.md)
 -   [**D3DXVec3Cross**](d3dxvec3cross.md)
@@ -156,7 +156,7 @@ Las funciones de la aplicación matemática 3D se pueden organizar en los siguie
 -   [**D3DXVec3TransformNormalArray**](d3dxvec3transformnormalarray.md)
 -   [**D3DXVec3Unproject**](d3dxvec3unproject.md)
 -   [**D3DXVec3UnprojectArray**](d3dxvec3unprojectarray.md)
--   [**D3DXVec4Add**](d3dxvec4add.md)
+-   [**D3DXVec4Agregue**](d3dxvec4add.md)
 -   [**D3DXVec4BaryCentric**](d3dxvec4barycentric.md)
 -   [**D3DXVec4CatmullRom**](d3dxvec4catmullrom.md)
 -   [**D3DXVec4Cross**](d3dxvec4cross.md)
@@ -177,7 +177,7 @@ Las funciones de la aplicación matemática 3D se pueden organizar en los siguie
 
 <dl> <dt>
 
-[Funciones de D3DX](dx9-graphics-reference-d3dx-functions.md)
+[Funciones D3DX](dx9-graphics-reference-d3dx-functions.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Paso 3.
+description: Exponga las nuevas interfaces de un filtro a los clientes como parte de la creación de una página de propiedades de filtro para un filtro directShow personalizado.
 ms.assetid: a0e52ba9-9f7c-4cf3-ba5f-b0035ed1794c
 title: Paso 3. Compatibilidad con QueryInterface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e3d44b67971e165b8586aa3a02cc65ab3ab05f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84b62132a6f24c68453ad4e51f72cdd9a2a78c65
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688380"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410028"
 ---
 # <a name="step-3-support-queryinterface"></a>Paso 3. Compatibilidad con QueryInterface
 
 Para exponer las nuevas interfaces del filtro a los clientes, haga lo siguiente:
 
--   Incluya la macro [**declare \_ IUNKNOWN**](declare-iunknown.md) en la sección declaración pública del filtro:
+-   Incluya la [**macro DECLARE \_ IUNKNOWN en**](declare-iunknown.md) la sección de declaración pública del filtro:
     ```C++
     public:
         DECLARE_IUNKNOWN;
@@ -23,7 +23,7 @@ Para exponer las nuevas interfaces del filtro a los clientes, haga lo siguiente:
 
     
 
--   Invalide [**CUnknown:: NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) para comprobar los IID de las dos interfaces:
+-   Invalide [**CUnknown::NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) para comprobar los IID de las dos interfaces:
     ```C++
     STDMETHODIMP CGrayFilter::NonDelegatingQueryInterface(REFIID riid, void **ppv)
     {
@@ -51,7 +51,7 @@ Para exponer las nuevas interfaces del filtro a los clientes, haga lo siguiente:
 
     
 
-Siguiente: [paso 4. Cree la página de propiedades](step-4--create-the-property-page.md).
+Siguiente: [Paso 4. Cree la página de propiedades](step-4--create-the-property-page.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre DocumentOutputBin, que describe la lista completa de ubicaciones admitidas para el dispositivo y permite la especificación de la ubicación de salida por documento.
 ms.assetid: 73840548-f68b-4af8-acb4-6f7faa2e8879
 title: DocumentOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96f6d16ca000e76b01cd2c3165054d7acc81351b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2afc20f15aed8d3076afb79d755c54791573b393
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997142"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409248"
 ---
 # <a name="documentoutputbin"></a>DocumentOutputBin
 
@@ -27,7 +27,7 @@ Describe la lista completa de ubicaciones admitidas para el dispositivo. Permite
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Característica<br/>  |
 | Prefijo de ámbito <br/> | Documento<br/> |
@@ -80,7 +80,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:DocumentOutputBin">
@@ -104,7 +104,7 @@ Las palabras clave públicas del esquema de impresión se definen en el espacio 
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
