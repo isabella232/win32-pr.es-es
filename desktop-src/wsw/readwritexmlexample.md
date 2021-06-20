@@ -1,29 +1,29 @@
 ---
 title: ReadWriteXmlExample
-description: Este ejemplo escribe XML en un búfer XML y, a continuación, lo lee de nuevo.
+description: Revise un ejemplo xml de lectura y escritura que usa la API de servicios web de Windows (WWSAPI). En este ejemplo se escribe XML en un búfer XML y, a continuación, se vuelve a leer.
 ms.assetid: e9802e3c-c8a0-4b68-bba5-cdafb7250298
 keywords:
-- Servicios Web de ReadWriteXmlExample para Windows
+- ReadWriteXmlExample Web Services para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbc1571716c2f01a20c18743c1f73c7306c7b53b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3d83230f690098958ea396e830aaa54dace1f73
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993810"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404098"
 ---
-# <a name="readwritexmlexample"></a><span data-ttu-id="ee4bd-106">ReadWriteXmlExample</span><span class="sxs-lookup"><span data-stu-id="ee4bd-106">ReadWriteXmlExample</span></span>
+# <a name="readwritexmlexample"></a><span data-ttu-id="1f1c3-107">ReadWriteXmlExample</span><span class="sxs-lookup"><span data-stu-id="1f1c3-107">ReadWriteXmlExample</span></span>
 
-<span data-ttu-id="ee4bd-107">Este ejemplo escribe XML en un búfer XML y, a continuación, lo lee de nuevo.</span><span class="sxs-lookup"><span data-stu-id="ee4bd-107">This example writes XML to an XML buffer, and then reads it back out.</span></span>
+<span data-ttu-id="1f1c3-108">En este ejemplo se escribe XML en un búfer XML y, a continuación, se vuelve a leer.</span><span class="sxs-lookup"><span data-stu-id="1f1c3-108">This example writes XML to an XML buffer, and then reads it back out.</span></span>
 
--   [<span data-ttu-id="ee4bd-108">ReadWriteXml. cpp</span><span class="sxs-lookup"><span data-stu-id="ee4bd-108">ReadWriteXml.cpp</span></span>](#readwritexmlcpp)
--   [<span data-ttu-id="ee4bd-109">PurchaseOrder. wsdl</span><span class="sxs-lookup"><span data-stu-id="ee4bd-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="ee4bd-110">Archivo Make</span><span class="sxs-lookup"><span data-stu-id="ee4bd-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="1f1c3-109">ReadWriteXml.cpp</span><span class="sxs-lookup"><span data-stu-id="1f1c3-109">ReadWriteXml.cpp</span></span>](#readwritexmlcpp)
+-   [<span data-ttu-id="1f1c3-110">PurchaseOrder.wsdl</span><span class="sxs-lookup"><span data-stu-id="1f1c3-110">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="1f1c3-111">Archivo Make</span><span class="sxs-lookup"><span data-stu-id="1f1c3-111">Makefile</span></span>](#makefile)
 
-## <a name="readwritexmlcpp"></a><span data-ttu-id="ee4bd-111">ReadWriteXml. cpp</span><span class="sxs-lookup"><span data-stu-id="ee4bd-111">ReadWriteXml.cpp</span></span>
+## <a name="readwritexmlcpp"></a><span data-ttu-id="1f1c3-112">ReadWriteXml.cpp</span><span class="sxs-lookup"><span data-stu-id="1f1c3-112">ReadWriteXml.cpp</span></span>
 
 
 ```C++
@@ -462,7 +462,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="ee4bd-112">PurchaseOrder. wsdl</span><span class="sxs-lookup"><span data-stu-id="ee4bd-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="1f1c3-113">PurchaseOrder.wsdl</span><span class="sxs-lookup"><span data-stu-id="1f1c3-113">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -573,7 +573,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="ee4bd-113">Archivo Make</span><span class="sxs-lookup"><span data-stu-id="ee4bd-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="1f1c3-114">Archivo Make</span><span class="sxs-lookup"><span data-stu-id="1f1c3-114">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------
@@ -606,9 +606,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
