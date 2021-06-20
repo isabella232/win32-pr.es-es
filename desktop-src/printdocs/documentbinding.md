@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el elemento DocumentBinding, que describe el método de enlace. DocumentBinding y JobBindAllDocuments son mutuamente excluyentes.
 ms.assetid: 36a7c360-2d26-46b9-b829-0fb35b36c79c
 title: DocumentBinding
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da4aeb31acb72932bbf272d52676b7795abe8311
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bf2b8f44c90cdef37a6599bf25904949748c82ba
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996302"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409468"
 ---
 # <a name="documentbinding"></a>DocumentBinding
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe el método de enlace. Cada documento se enlaza por separado. DocumentBinding y JobBindAllDocuments son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre palabras clave.
 
@@ -25,7 +25,7 @@ Describe el método de enlace. Cada documento se enlaza por separado. DocumentBi
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                              |
 | Prefijo de ámbito <br/> | Documento<br/>                                                                                                                             |
@@ -63,7 +63,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos          | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                                                                                                                |
 |------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                                                     |
+| \_OptionName\_<br/>          | string<br/>  | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                                                           |
 | \_BindingGutterValue\_<br/>  | Entero<br/> | Micras<br/>    | Mayor o igual que 0.<br/>                                                                                                                                                | Define el median de enlace mínimo para el enlace final especificado. El medianía se mide en micrones con respecto al borde de la dimensión de medios físicos.<br/> |
 

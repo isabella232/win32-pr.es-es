@@ -1,29 +1,29 @@
 ---
 title: ReadWriteXmlExample
-description: Este ejemplo escribe XML en un búfer XML y, a continuación, lo lee de nuevo.
+description: Revise un ejemplo xml de lectura y escritura que usa la API de servicios web de Windows (WWSAPI). En este ejemplo se escribe XML en un búfer XML y, a continuación, se vuelve a leer.
 ms.assetid: e9802e3c-c8a0-4b68-bba5-cdafb7250298
 keywords:
-- Servicios Web de ReadWriteXmlExample para Windows
+- ReadWriteXmlExample Web Services para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbc1571716c2f01a20c18743c1f73c7306c7b53b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3d83230f690098958ea396e830aaa54dace1f73
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993810"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404098"
 ---
 # <a name="readwritexmlexample"></a>ReadWriteXmlExample
 
-Este ejemplo escribe XML en un búfer XML y, a continuación, lo lee de nuevo.
+En este ejemplo se escribe XML en un búfer XML y, a continuación, se vuelve a leer.
 
--   [ReadWriteXml. cpp](#readwritexmlcpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [ReadWriteXml.cpp](#readwritexmlcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="readwritexmlcpp"></a>ReadWriteXml. cpp
+## <a name="readwritexmlcpp"></a>ReadWriteXml.cpp
 
 
 ```C++
@@ -462,7 +462,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -606,9 +606,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

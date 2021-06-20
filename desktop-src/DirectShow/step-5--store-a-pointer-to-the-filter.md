@@ -1,19 +1,19 @@
 ---
-description: Paso 5.
+description: Almacene un puntero a un filtro como parte de la creación de una página de propiedades de filtro para un filtro directShow personalizado.
 ms.assetid: 7c715129-5bdf-468f-96cd-a46ab9c97f4c
 title: Paso 5. Almacenar un puntero al filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eff096c6afcf830494ef02920176d8f80a3b9569
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3aa1e98e98fcc0f41d07774b8a2d1ab93dea8d0c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278287"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406798"
 ---
 # <a name="step-5-store-a-pointer-to-the-filter"></a>Paso 5. Almacenar un puntero al filtro
 
-Invalide el método [**CBasePropertyPage:: alconnect**](cbasepropertypage-onconnect.md) para almacenar un puntero al filtro. En el ejemplo siguiente se consulta el parámetro *pUnk* de la interfaz ISaturation personalizada del filtro:
+Invalide [**el método CBasePropertyPage::OnConnect**](cbasepropertypage-onconnect.md) para almacenar un puntero al filtro. En el ejemplo siguiente se consulta *el parámetro pUnk* para la interfaz de ISaturation personalizada del filtro:
 
 
 ```C++
@@ -31,7 +31,7 @@ HRESULT CGrayProp::OnConnect(IUnknown *pUnk)
 
 
 
-Siguiente: [paso 6. Inicialice el cuadro de diálogo](step-6--initialize-the-dialog.md).
+Siguiente: [Paso 6. Inicialice el cuadro de diálogo](step-6--initialize-the-dialog.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

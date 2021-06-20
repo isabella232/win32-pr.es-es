@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithBasicOverSslServiceExample
-description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con seguridad de transporte SSL y autenticación básica de encabezado HTTP.
+description: Revise un ejemplo de C++ de Windows Web Services API (WWSAPI) de una calculadora HTTP con un servicio over-SSL básico.
 ms.assetid: ff56afec-da8c-4a2c-b26e-a065f9b73db1
 keywords:
 - HttpCalculatorWithBasicOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18517b52bf0a623877dc2d04b28daa177f1a9e81
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0490c8409ea8a08c990bad49472303dd4ae58c93
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714263"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404158"
 ---
 # <a name="httpcalculatorwithbasicoversslserviceexample"></a>HttpCalculatorWithBasicOverSslServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con seguridad de transporte SSL y autenticación básica de encabezado HTTP. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un par de nombre de usuario/contraseña proporcionado en encabezados HTTP con el esquema básico.
+En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con seguridad de transporte SSL y autenticación básica de encabezado HTTP. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un par de nombre de usuario y contraseña proporcionado en encabezados HTTP mediante el esquema básico.
 
--   [HttpCalculatorWithBasicOverSslService. cpp](#httpcalculatorwithbasicoversslservicecpp)
--   [CalculatorService. wsdl](#calculatorservicewsdl)
+-   [HttpCalculatorWithBasicOverSslService.cpp](#httpcalculatorwithbasicoversslservicecpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httpcalculatorwithbasicoversslservicecpp"></a>HttpCalculatorWithBasicOverSslService. cpp
+## <a name="httpcalculatorwithbasicoversslservicecpp"></a>HttpCalculatorWithBasicOverSslService.cpp
 
 
 ```C++
@@ -282,7 +282,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -407,9 +407,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

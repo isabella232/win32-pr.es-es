@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento JobDuplexAllDocumentsContiguously, que describe las características dúplex de la salida.
 ms.assetid: dd24166c-d5e2-420e-8a8c-e1a25728ab2f
 title: JobDuplexAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e5ae88213af15b53f71e406b4caf791b80f286f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 20a8911a4c62644bfc073a2a9c1dcfd67dad536a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998222"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408958"
 ---
 # <a name="jobduplexalldocumentscontiguously"></a>JobDuplexAllDocumentsContiguously
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe las características dúplex de la salida. La característica dúplex permite imprimir en ambos lados del medio. Todos los documentos del trabajo se dúplex juntos de forma contigua. JobDuplexAllDocumentsContiguously y DocumentDuplex son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
 
@@ -25,7 +25,7 @@ Describe las características dúplex de la salida. La característica dúplex p
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |

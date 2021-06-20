@@ -1,23 +1,23 @@
 ---
-description: La función CreateThread crea un nuevo subproceso para un proceso.
+description: Revise cómo usar la función CreateThread para crear un subproceso nuevo para un proceso. Examine un ejemplo de código que muestra su uso.
 ms.assetid: eb0cc3c0-14f2-4913-a592-4ba3eaf67002
 title: Crear subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 545088779bdaff665a8079296014535ab244e821
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: befd6c00cadb6758d076ad6c4d0fe940cf855f89
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677864"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406738"
 ---
 # <a name="creating-threads"></a>Crear subprocesos
 
-La función [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) crea un nuevo subproceso para un proceso. El subproceso de creación debe especificar la dirección inicial del código que va a ejecutar el nuevo subproceso. Normalmente, la dirección de inicio es el nombre de una función definida en el código del programa (para obtener más información, vea [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85))). Esta función toma un parámetro único y devuelve un valor **DWORD** . Un proceso puede tener varios subprocesos que ejecutan simultáneamente la misma función.
+La [**función CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) crea un nuevo subproceso para un proceso. El subproceso de creación debe especificar la dirección inicial del código que se va a ejecutar el nuevo subproceso. Normalmente, la dirección inicial es el nombre de una función definida en el código del programa (para obtener más información, vea [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85))). Esta función toma un único parámetro y devuelve un **valor DWORD.** Un proceso puede tener varios subprocesos ejecutando simultáneamente la misma función.
 
-A continuación se muestra un ejemplo sencillo en el que se muestra cómo crear un nuevo subproceso que ejecuta la función definida localmente, `MyThreadFunction` .
+A continuación se muestra un ejemplo sencillo que muestra cómo crear un subproceso que ejecuta la función definida localmente, `MyThreadFunction` .
 
-El subproceso que realiza la llamada utiliza la función [**WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) para conservar hasta que todos los subprocesos de trabajo hayan terminado. El subproceso que realiza la llamada se bloquea mientras está esperando; para continuar con el procesamiento, un subproceso de llamada usaría [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) y esperar a que cada subproceso de trabajo señale su objeto de espera. Tenga en cuenta que si fuera a cerrar el identificador de un subproceso de trabajo antes de finalizar, no finaliza el subproceso de trabajo. Sin embargo, el identificador no estará disponible para su uso en las siguientes llamadas de función.
+El subproceso de llamada usa [**la función WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) para conservar hasta que todos los subprocesos de trabajo han finalizado. El subproceso que realiza la llamada se bloquea mientras está esperando; Para continuar el procesamiento, un subproceso de llamada usaría [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) y esperaría a que cada subproceso de trabajo señalara su objeto wait. Tenga en cuenta que si fuera a cerrar el identificador a un subproceso de trabajo antes de finalizar, esto no finaliza el subproceso de trabajo. Sin embargo, el identificador no estará disponible para su uso en llamadas de función posteriores.
 
 
 ```C++
@@ -180,23 +180,23 @@ void ErrorHandler(LPTSTR lpszFunction)
 
 
 
-La `MyThreadFunction` función evita el uso de la biblioteca en tiempo de ejecución de C (CRT), ya que muchas de sus funciones no son seguras para subprocesos, especialmente si no se usa CRT multiproceso. Si desea usar CRT en una `ThreadProc` función, use la función **\_ beginthreadex** en su lugar.
+La función evita el uso de la biblioteca en tiempo de ejecución de C (CRT), ya que muchas de sus funciones no son seguras para subprocesos, especialmente si no usa `MyThreadFunction` CRT multiproceso. Si desea usar CRT en una función, use la `ThreadProc` **\_ función beginthreadex** en su lugar.
 
-Es arriesgado pasar la dirección de una variable local si el subproceso de creación sale antes del nuevo subproceso, ya que el puntero deja de ser válido. En su lugar, pase un puntero a la memoria asignada dinámicamente o haga que el subproceso de creación espere a que finalice el nuevo subproceso. Los datos también se pueden pasar del subproceso de creación al nuevo subproceso mediante variables globales. Con las variables globales, normalmente es necesario sincronizar el acceso de varios subprocesos. Para obtener más información acerca de la sincronización, vea [sincronizar la ejecución de varios subprocesos](synchronizing-execution-of-multiple-threads.md).
+Es arriesgado pasar la dirección de una variable local si el subproceso de creación sale antes del nuevo subproceso, porque el puntero deja de ser válido. En su lugar, pase un puntero a la memoria asignada dinámicamente o haga que el subproceso de creación espere a que finalice el nuevo subproceso. Los datos también se pueden pasar desde el subproceso de creación al nuevo subproceso mediante variables globales. Con las variables globales, normalmente es necesario sincronizar el acceso mediante varios subprocesos. Para obtener más información sobre la sincronización, vea Sincronizar la ejecución [de varios subprocesos.](synchronizing-execution-of-multiple-threads.md)
 
-El subproceso de creación puede utilizar los argumentos para [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para especificar lo siguiente:
+El subproceso de creación puede usar los argumentos de [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para especificar lo siguiente:
 
--   Los atributos de seguridad para el identificador del nuevo subproceso. Estos atributos de seguridad incluyen una marca de herencia que determina si los procesos secundarios pueden heredar el identificador. Los atributos de seguridad también incluyen un descriptor de seguridad, que el sistema utiliza para realizar comprobaciones de acceso en todos los usos subsiguientes del identificador del subproceso antes de que se conceda el acceso.
--   Tamaño de pila inicial del nuevo subproceso. La pila del subproceso se asigna automáticamente en el espacio de memoria del proceso. el sistema aumenta la pila según sea necesario y la libera cuando finaliza el subproceso. Para obtener más información, vea [tamaño de pila de subprocesos](thread-stack-size.md).
--   Marca de creación que permite crear el subproceso en un estado suspendido. Cuando se suspende, el subproceso no se ejecuta hasta que se llama a la función [**ResumeThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) .
+-   Atributos de seguridad del identificador para el nuevo subproceso. Estos atributos de seguridad incluyen una marca de herencia que determina si los procesos secundarios pueden heredar el identificador. Los atributos de seguridad también incluyen un descriptor de seguridad, que el sistema usa para realizar comprobaciones de acceso en todos los usos posteriores del identificador del subproceso antes de conceder el acceso.
+-   Tamaño de pila inicial del nuevo subproceso. La pila del subproceso se asigna automáticamente en el espacio de memoria del proceso; el sistema aumenta la pila según sea necesario y la libera cuando finaliza el subproceso. Para obtener más información, vea [Tamaño de pila de subprocesos.](thread-stack-size.md)
+-   Marca de creación que permite crear el subproceso en un estado suspendido. Cuando se suspende, el subproceso no se ejecuta hasta que se llama a la función [**ResumeThread.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread)
 
-También puede crear un subproceso llamando a la función [**CreateRemoteThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread) . Esta función la usan los procesos del depurador para crear un subproceso que se ejecuta en el espacio de direcciones del proceso que se está depurando.
+También puede crear un subproceso llamando a la [**función CreateRemoteThread.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread) Esta función la usan los procesos del depurador para crear un subproceso que se ejecuta en el espacio de direcciones del proceso que se está depurando.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Finalización de un subproceso](terminating-a-thread.md)
+[Terminación de un subproceso](terminating-a-thread.md)
 </dt> </dl>
 
  

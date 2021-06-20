@@ -1,7 +1,7 @@
 ---
-description: Actualiza el contenido del menú Inicio. Solo se usa con sistemas anteriores a Windows XP.
+description: Obtenga información sobre el método Shell.RefreshMenu, que actualiza el contenido de la menú Inicio. Solo se usa con sistemas anteriores a Windows XP.
 ms.assetid: 1269c66d-61df-432d-9220-5ac975e3ad58
-title: Método Shell. RefreshMenu (Shldisp. h)
+title: Método Shell.RefreshMenu (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a5812312c846026f4e0c7d2a4f6a5f857a572a23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90020cd128f5cbc585bd7bc9ab33a8a81c745f8e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985543"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404538"
 ---
-# <a name="shellrefreshmenu-method"></a>Shell. RefreshMenu (método)
+# <a name="shellrefreshmenu-method"></a>Método Shell.RefreshMenu
 
-Actualiza el contenido del menú **Inicio** . Solo se usa con sistemas anteriores a Windows XP.
+Actualiza el contenido del **menú** Inicio. Solo se usa con sistemas anteriores a Windows XP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,13 +47,13 @@ Este método no tiene parámetros.
 
 ## <a name="remarks"></a>Observaciones
 
-La funcionalidad que proporciona **RefreshMenu** se administra automáticamente en Windows XP o posterior. No llame a este método en ese sistema operativo.
+La funcionalidad **que proporciona RefreshMenu** se controla automáticamente en Windows XP o versiones posteriores. No llame a este método en ese sistema operativo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra **RefreshMenu** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra RefreshMenu** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+Jscript:
 
 
 ```JScript
@@ -69,7 +69,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -107,13 +107,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

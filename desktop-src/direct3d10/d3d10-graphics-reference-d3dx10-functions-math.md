@@ -1,24 +1,24 @@
 ---
-description: La biblioteca matemática proporcionada por la biblioteca de utilidades de D3DX proporciona funciones para calcular operaciones matemáticas 3D.
+description: Obtenga información sobre la biblioteca matemática proporcionada por la biblioteca de utilidades D3DX en Gráficos de Direct3D 10. La biblioteca proporciona funciones para calcular operaciones matemáticas 3D.
 ms.assetid: 6e180c12-8cbe-4013-8bb4-3ac5bb9c65f1
 title: Funciones matemáticas (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5401299b1aafd5663d8aaefefa4c7fa0da88a89
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85b47aec382f8b21d8769722afab51cb69a7452e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907439"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408048"
 ---
 # <a name="math-functions-direct3d-10-graphics"></a>Funciones matemáticas (gráficos de Direct3D 10)
 
 > [!Note]  
-> Las funciones matemáticas de la biblioteca de utilidades de D3DX están desusadas en Windows 8. En su lugar, se recomienda usar [DirectXMath](../dxmath/directxmath-portal.md) .
+> Las funciones matemáticas de la biblioteca de utilidades D3DX están en desuso para Windows 8. Se recomienda usar [DirectXMath en su](../dxmath/directxmath-portal.md) lugar.
 
  
 
-La biblioteca matemática proporcionada por la biblioteca de utilidades de D3DX proporciona funciones para calcular operaciones matemáticas 3D. Cada una de las funciones puede tomar el mismo objeto que los \[ \] parámetros pasados y devueltos \[ \] . Además, los parámetros out se suelen devolver como valores devueltos, por lo que se puede usar la salida de una función matemática como parámetro de otra función matemática.
+La biblioteca matemática proporcionada por la biblioteca de utilidades D3DX proporciona funciones para calcular operaciones matemáticas 3D. Cada una de las funciones puede tomar el mismo objeto que los parámetros \[ pasados \] y \[ \] devueltos. Además, los parámetros out normalmente se devuelven como valores devueltos, de modo que la salida de una función matemática se puede usar como parámetro para otra función matemática.
 
 -   [**D3DXColorAdjustContrast**](d3d10-d3dxcoloradjustcontrast.md)
 -   [**D3DXColorAdjustSaturation**](d3d10-d3dxcoloradjustsaturation.md)
@@ -76,7 +76,7 @@ La biblioteca matemática proporcionada por la biblioteca de utilidades de D3DX 
 -   [**D3DXSHEvalConeLight**](d3d10-d3dxshevalconelight.md)
 -   [**D3DXSHEvalDirection**](d3d10-d3dxshevaldirection.md)
 -   [**D3DXSHEvalDirectionalLight**](d3d10-d3dxshevaldirectionallight.md)
--   [**D3DXSHEvalHemisphereLight**](d3d10-d3dxshevalhemispherelight.md)
+-   [**D3DXSHEvalGraisphereLight**](d3d10-d3dxshevalhemispherelight.md)
 -   [**D3DXSHMultiply2**](d3d10-d3dxshmultiply2.md)
 -   [**D3DXSHMultiply3**](d3d10-d3dxshmultiply3.md)
 -   [**D3DXSHMultiply4**](d3d10-d3dxshmultiply4.md)
@@ -116,11 +116,11 @@ La biblioteca matemática proporcionada por la biblioteca de utilidades de D3DX 
 -   [**D3DXVec4Transform**](d3d10-d3dxvec4transform.md)
 -   [**D3DXVec4TransformArray**](d3d10-d3dxvec4transformarray.md)
 
-## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Resolver errores de vínculo con funciones matemáticas de D3DX
+## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Resolución de errores de vínculo con funciones matemáticas D3DX
 
-Las funciones matemáticas de D3DX se implementan de forma idéntica en D3DX10 (D3DX10math. h) y D3DX9 (D3DX9math. h). Esto puede producir errores de vínculo si un proyecto implementa código de DirectX 9 y DirectX 10 e intenta vincular una función de un encabezado con la biblioteca opuesta.
+Las funciones matemáticas D3DX se implementan de forma idéntica en D3DX10 (D3DX10math.h) y D3DX9 (D3DX9math.h). Esto puede provocar errores de vínculo si un proyecto implementa código DirectX 9 y DirectX 10 e intenta vincular una función desde un encabezado con la biblioteca opuesta.
 
-Para eliminar el problema de incluir ambos encabezados, D3DX10math. h incluye la siguiente \# definición:
+Para eliminar el problema de incluir ambos encabezados, D3DX10math.h incluye la siguiente \# definición:
 
 
 ```
@@ -130,13 +130,13 @@ Para eliminar el problema de incluir ambos encabezados, D3DX10math. h incluye la
 
 
 
-Para eliminar los posibles errores de vínculo, los ejemplos del SDK de DX se vinculan primero a las bibliotecas de D3DX9 (D3DX9d. lib y D3DX9. lib) y, a continuación, a las bibliotecas de D3DX10 (D3DX10d. lib y D3DX10. lib). Estos valores están en proyecto/propiedades si usa Visual Studio.
+Para eliminar posibles errores de vínculo, los ejemplos del SDK de DX vinculan primero a las bibliotecas D3DX9d.lib y D3DX9.lib y, después, a las bibliotecas D3DX10 en segundo lugar (D3DX10d.lib y D3DX10.lib). Esta configuración se encuentra en Proyecto/Propiedades si usa Visual Studio.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d10-graphics-reference-d3dx10-functions.md)
+[Funciones D3DX](d3d10-graphics-reference-d3dx10-functions.md)
 </dt> </dl>
 
  

@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithSslPolicyServiceExample
-description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con seguridad de transporte SSL y autenticación básica de encabezado HTTP.
+description: Revise un ejemplo de C++ de Windows Web Services API (WWSAPI) de una calculadora HTTP con el servicio de directivas SSL.
 ms.assetid: 5b3fc119-10c2-444b-91d3-415ad36a65ab
 keywords:
 - HttpCalculatorWithSslPolicyServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45fd787d10dab20386c016848e238eb345b347f9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05ef60e86ff6c14bb8fb91369785c197b3994c94
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418691"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409778"
 ---
 # <a name="httpcalculatorwithsslpolicyserviceexample"></a>HttpCalculatorWithSslPolicyServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con seguridad de transporte SSL y autenticación básica de encabezado HTTP. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un par de nombre de usuario/contraseña proporcionado en encabezados HTTP con el esquema básico.
+En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con seguridad de transporte SSL y autenticación básica de encabezado HTTP. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un par de nombre de usuario y contraseña proporcionado en encabezados HTTP mediante el esquema básico.
 
--   [HttpCalculatorWithSslPolicyService. cpp](#httpcalculatorwithsslpolicyservicecpp)
--   [CalculatorServiceWithPolicy. wsdl](#calculatorservicewithpolicywsdl)
+-   [HttpCalculatorWithSslPolicyService.cpp](#httpcalculatorwithsslpolicyservicecpp)
+-   [CalculatorServiceWithPolicy.wsdl](#calculatorservicewithpolicywsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httpcalculatorwithsslpolicyservicecpp"></a>HttpCalculatorWithSslPolicyService. cpp
+## <a name="httpcalculatorwithsslpolicyservicecpp"></a>HttpCalculatorWithSslPolicyService.cpp
 
 
 ```C++
@@ -271,7 +271,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewithpolicywsdl"></a>CalculatorServiceWithPolicy. wsdl
+## <a name="calculatorservicewithpolicywsdl"></a>CalculatorServiceWithPolicy.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -424,9 +424,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el elemento JobBindAllDocumentsGutter, que especifica el ancho del medianía de enlace.
 ms.assetid: 97a00cd6-508c-47e9-a1c1-75646ca0c721
 title: JobBindAllDocumentsGutter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04615b85939d483f6bd2e720afa65a88d44c1caf
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: a42180ff9a00d1502d844b270fe5da7324825ca3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998382"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409078"
 ---
 # <a name="jobbindalldocumentsgutter"></a>JobBindAllDocumentsGutter
 
@@ -24,7 +24,7 @@ Especifica el ancho del medianía de enlace.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-----------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                 |
 | Prefijo de ámbito <br/> | Trabajo <br/>                         |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |

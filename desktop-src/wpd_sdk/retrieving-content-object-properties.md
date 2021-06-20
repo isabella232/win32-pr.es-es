@@ -1,15 +1,15 @@
 ---
 title: Recuperación de propiedades de objetos WPD
-description: Recuperar propiedades de objeto
+description: La aplicación WpdServiceApiSample muestra cómo una aplicación puede recuperar las propiedades de objeto de contenido compatibles con un servicio Contacts determinado.
 ms.assetid: 7fbd6f65-366a-49ea-a680-be77ca0d64f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e2c206b6e3afe75144ce10de615657e788d6d1c
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 98e57258993d0a81f68042195db2caf338c97c53
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424065"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404318"
 ---
 # <a name="retrieving-wpd-object-properties"></a>Recuperación de propiedades de objetos WPD
 
@@ -37,11 +37,11 @@ Este método recupera las cuatro propiedades siguientes para el objeto de contac
 
 
 
-| Propiedad                     | Descripción                                                                                                                                                                                                      | Device Services PROPERTYKEY     | WPD \_ PROPERTYKEY equivalente         |
+| Propiedad                     | Descripción                                                                                                                                                                                                      | Device Services PROPERTYKEY     | PROPERTYKEY de WPD \_ equivalente         |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|-------------------------------------|
 | Identificador de objeto primario     | Cadena que especifica el identificador del elemento primario del objeto especificado.                                                                                                                                            | PKEY \_ GenericObj \_ ParentID      | IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD             |
 | Nombre del objeto                  | Cadena que especifica el nombre del objeto especificado                                                                                                                                                             | PKEY \_ GenericObj \_ Name          | NOMBRE DE OBJETO \_ \_ WPD                   |
-| Identificador único persistente | Cadena que especifica un identificador único para el objeto especificado. Este identificador es persistente entre sesiones, a diferencia del identificador de objeto. Para los servicios, debe ser una representación de cadena de un GUID. | PKEY \_ GenericObj \_ PersistentUID | IDENTIFICADOR ÚNICO \_ PERSISTENTE \_ DEL OBJETO \_ \_ WPD |
+| Identificador único persistente | Cadena que especifica un identificador único para el objeto especificado. Este identificador es persistente entre sesiones, a diferencia del identificador de objeto. Para los servicios, debe ser una representación de cadena de un GUID. | PKEY \_ GenericObj \_ PersistentUID | WPD \_ OBJECT \_ PERSISTENT \_ UNIQUE \_ ID |
 | Formato de objeto                | Identificador único global (GUID) que especifica el formato del archivo correspondiente a un objeto determinado.                                                                                                        | PKEY \_ GenericObj \_ ObjectFormat  | FORMATO DE OBJETO \_ \_ WPD                 |
 
 

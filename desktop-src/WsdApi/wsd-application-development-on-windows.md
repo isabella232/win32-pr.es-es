@@ -1,24 +1,24 @@
 ---
-description: La API de servicios Web de Microsoft en dispositivos (WSDAPI) admite la implementación de dispositivos y servicios controlados por el cliente, y los hosts de dispositivo que se ajustan al perfil de dispositivos para servicios web (DPWS).
+description: Aprenda a usar microsoft Web Services on Devices API (WSD) API (WSDAPI) para implementar servicios y dispositivos controlados por el cliente, y hosts de dispositivos conformes a DPWS.
 ms.assetid: 88de8dea-56d5-4bfc-8837-03da81b7d0f9
 title: Desarrollo de aplicaciones WSD en Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e33976a1903c87ffb6c577cd5a451a3b772a67a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 167cd1ad013ea387a6e33b6de449f3f84d49db13
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716123"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405788"
 ---
 # <a name="wsd-application-development-on-windows"></a>Desarrollo de aplicaciones WSD en Windows
 
-La API de servicios Web de Microsoft en dispositivos (WSDAPI) admite la implementación de dispositivos y servicios controlados por el cliente, y los hosts de dispositivo que se ajustan al [Perfil de dispositivos para servicios web](https://specs.xmlsoap.org/ws/2006/02/devprof/) (DPWS). WSDAPI se puede usar para el desarrollo de implementaciones de cliente y servidor (dispositivo).
+Microsoft Web Services on Devices API (WSDAPI) admite la implementación de dispositivos y servicios controlados por el cliente, y hosts de dispositivos que se ajustan al perfil de dispositivos para servicios [web](https://specs.xmlsoap.org/ws/2006/02/devprof/) (DPWS). WSDAPI se puede usar para el desarrollo de implementaciones de cliente y servidor (dispositivo).
 
-Con bastante frecuencia, el código de WSDAPI para estas aplicaciones se genera mediante [WsdCodeGen](web-services-for-devices-code-generator.md). Algunas funciones y métodos WSDAPI están diseñados para ser llamados únicamente por parte del código generado. La documentación de referencia de la API indica cuándo debe usarse o implementarse una función o un método solo por código generado.
+A menudo, el código WSDAPI para estas aplicaciones se genera mediante [WsdCodeGen](web-services-for-devices-code-generator.md). Algunas funciones y métodos de WSDAPI están diseñados para ser llamados solo por código generado. La documentación de referencia de API indica cuándo se debe usar o implementar una función o un método solo mediante código generado.
 
-El Windows SDK incluye algunos archivos WSDL de ejemplo, archivos de configuración de WsdCodeGen y código generado. Para obtener más información, vea [ejemplos de WSDAPI](wsdapi-samples.md).
+El Windows SDK incluye algunos archivos WSDL de ejemplo, archivos de configuración WsdCodeGen y código generado. Para obtener más información, vea [Ejemplos de WSDAPI.](wsdapi-samples.md)
 
-Si desea enumerar los dispositivos con el protocolo WSD y consultar los metadatos del dispositivo WSD, puede usar la API de [detección de funciones](/previous-versions/windows/desktop/fundisc/fd-portal) en su lugar.
+Si desea enumerar los dispositivos mediante el protocolo WSD y consultar los metadatos del dispositivo WSD, puede usar function [discovery](/previous-versions/windows/desktop/fundisc/fd-portal) API en su lugar.
 
-Si desea implementar un dispositivo WSD que no ejecuta Windows, consulte el desarrollo de [dispositivos WSD](wsd-device-development.md).
+Si desea implementar un dispositivo WSD que no ejecute Windows, consulte [Desarrollo de dispositivos WSD.](wsd-device-development.md)

@@ -1,25 +1,25 @@
 ---
 title: NavigateXmlExample
-description: Este ejemplo escribe XML en un búfer XML y, a continuación, lo lee de nuevo.
+description: Revise un ejemplo de navegación XML que usa la API de servicios web de Windows (WWSAPI). En este ejemplo se escribe XML en un búfer XML y, a continuación, se vuelve a leer.
 ms.assetid: b37da839-de05-4fb6-b1aa-b00801e88e47
 keywords:
-- Servicios Web de NavigateXmlExample para Windows
+- NavigateXmlExample Web Services para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c78cd9687d5f84005128834346a84e648a59495
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d056a7931ed469bdb84c3b27cc947e463db4cad5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994528"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404108"
 ---
 # <a name="navigatexmlexample"></a>NavigateXmlExample
 
-Este ejemplo escribe XML en un búfer XML y, a continuación, lo lee de nuevo.
+En este ejemplo se escribe XML en un búfer XML y, a continuación, se vuelve a leer.
 
-## <a name="navigatexmlcpp"></a>NavigateXml. cpp
+## <a name="navigatexmlcpp"></a>NavigateXml.cpp
 
 
 ```C++
@@ -360,9 +360,9 @@ Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

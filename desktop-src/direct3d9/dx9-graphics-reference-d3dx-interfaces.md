@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información de referencia de las interfaces del modelo de objetos componentes (COM) proporcionadas por la biblioteca de utilidades de D3DX. Las interfaces siguientes se usan con la biblioteca de utilidades de D3DX.
+description: Esta sección contiene información de referencia para las interfaces del modelo de objetos componentes (COM) proporcionadas por la biblioteca de utilidades D3DX en Gráficos de Direct3D 9.
 ms.assetid: 4b8cdbf8-650c-4dd8-a730-b7ba7dad638b
-title: Interfaces de D3DX (gráficos de Direct3D 9)
+title: Interfaces D3DX (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd5b66c013d43e1f288bea211f28954660084d50
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5705b37c1089cd965213339f50486a6f1c4f8fd7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152119"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408178"
 ---
-# <a name="d3dx-interfaces-direct3d-9-graphics"></a>Interfaces de D3DX (gráficos de Direct3D 9)
+# <a name="d3dx-interfaces-direct3d-9-graphics"></a>Interfaces D3DX (gráficos de Direct3D 9)
 
-Esta sección contiene información de referencia de las interfaces del modelo de objetos componentes (COM) proporcionadas por la biblioteca de utilidades de D3DX. Las interfaces siguientes se usan con la biblioteca de utilidades de D3DX.
+Esta sección contiene información de referencia para las interfaces del modelo de objetos componentes (COM) proporcionadas por la biblioteca de utilidades D3DX. Las interfaces siguientes se usan con la biblioteca de utilidades D3DX.
 
 -   [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)
 -   [**ID3DXAnimationCallbackHandler**](id3dxanimationcallbackhandler.md)

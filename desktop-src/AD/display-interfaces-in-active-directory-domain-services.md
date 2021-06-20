@@ -1,16 +1,16 @@
 ---
 title: Mostrar interfaces en Active Directory Domain Services
-description: Esta categoría de interfaces incluye lo siguiente.
+description: Obtenga vínculos para mostrar interfaces Active Directory Domain Services, como ICommonQuery e IDsBrowseDomainTree.
 ms.assetid: f53d4425-5496-45f8-a09b-f163b63a29c8
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91b1ce53e9dd0f404bc20e0b3fff9ec8687a3d1d
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: aff1a1632eeac18c3c0e0048b466b9f33fac3b75
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487459"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407458"
 ---
 # <a name="display-interfaces-in-active-directory-domain-services"></a>Mostrar interfaces en Active Directory Domain Services
 
@@ -24,9 +24,9 @@ Esta categoría de interfaces incluye lo siguiente:
 
 ## <a name="see-also"></a>Consulte también
 
-[Interfaces de administración de Active Directory](/windows/desktop/AD/admin-interfaces-in-active-directory-domain-services), interfaces del [cuadro de diálogo Selector de objetos](object-picker-dialog-box-interfaces.md)
+[Active Directory interfaces de administración](/windows/desktop/AD/admin-interfaces-in-active-directory-domain-services)de , [interfaces de cuadro de diálogo selector de objetos](object-picker-dialog-box-interfaces.md)
 
 
- 
+ 
 
- 
+ 

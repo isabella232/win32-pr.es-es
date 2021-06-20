@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: En este artículo se incluye un ejemplo de un documento PrintCapabilities. Los nombres de instancia del ejemplo son solo ilustrativos.
 ms.assetid: 86577c09-919b-4f07-9388-47879c656f32
-title: Ejemplo de documento de PrintCapabilities
+title: Ejemplo de documento PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a032958221f531186c5c6ec993102e574aefc315
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: f3e2bf839e3e88e43a295912966f5b1906ef8f35
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105660021"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407108"
 ---
-# <a name="printcapabilities-document-example"></a>Ejemplo de documento de PrintCapabilities
+# <a name="printcapabilities-document-example"></a>Ejemplo de documento PrintCapabilities
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Notas: el espacio de nombres predeterminado no se aplica a los atributos XML. Se deben calificar explícitamente como prefijo. Los nombres de instancia que se usan en el ejemplo siguiente solo tienen fines ilustrativos, aunque generalmente se ajustan a los nombres de instancia definidos en las palabras clave del esquema de impresión.
+Notas: El espacio de nombres predeterminado no se aplica a los atributos XML. Deben tener explícitamente el prefijo completo. Los nombres de instancia usados en el ejemplo siguiente son solo ilustrativos, aunque generalmente se ajustan a los nombres de instancia definidos en las palabras clave de esquema de impresión.
 
 ``` syntax
 <psf:PrintCapabilities xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 

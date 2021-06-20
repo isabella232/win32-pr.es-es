@@ -1,19 +1,19 @@
 ---
-description: El separador de grupos de propiedades utilizado en las listas de propiedades para separar los archivos de audio de otros tipos. No utilice esta propiedad para obtener o establecer valores. Está pensado únicamente como un marcador.
+description: Obtenga información sobre la propiedad System.PropGroup.Camera. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
 ms.assetid: 8354e1d1-9c8e-43d8-972f-b7c5c22bbc98
-title: System. PropGroup. Camera
+title: System.PropGroup.Camera
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f61b85d50b16715ee17189331a08d49ba07f852
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b65790c926098947403b8cf9a9af3736eee264b3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813395"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403778"
 ---
-# <a name="systempropgroupcamera"></a>System. PropGroup. Camera
+# <a name="systempropgroupcamera"></a>System.PropGroup.Camera
 
-El separador de grupos de propiedades utilizado en las listas de propiedades para separar los archivos de audio de otros tipos. No utilice esta propiedad para obtener o establecer valores. Está pensado únicamente como un marcador.
+Separador de grupo de propiedades que se usa en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

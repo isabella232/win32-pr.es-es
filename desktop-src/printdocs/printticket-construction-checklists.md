@@ -1,31 +1,31 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Vea cómo el autor de un cliente PrintTicket puede usar tipos de elemento para crear un PrintTicket que describa las intenciones de un dispositivo.
 ms.assetid: ed53d1a8-d302-4855-9858-0f37dfbbd1d3
 title: Listas de comprobación de construcción de PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e742bcd3b94c5016fda6f97e2fb5e20a2cf70f73
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: f76d47911d0060cc6d06604bfaeaa4abcebd3daa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105697986"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405478"
 ---
 # <a name="printticket-construction-checklists"></a>Listas de comprobación de construcción de PrintTicket
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-En esta sección se muestra cómo el autor de un cliente PrintTicket puede usar los tipos de elemento definidos en el marco de trabajo del esquema de impresión para crear un PrintTicket que describa los intentos de un dispositivo. El PrintTicket puede ser genérico (no vinculado a un dispositivo específico) o puede ser específico del dispositivo. La semántica del PrintTicket se presenta con mayor detalle. Además, esta sección contiene información general sobre los conceptos y la terminología que se describen con más detalle en secciones posteriores.
+En esta sección se muestra cómo el autor de un cliente PrintTicket puede usar los tipos de elementos definidos en el marco de esquema de impresión para crear un PrintTicket que describa las intenciones de un dispositivo. PrintTicket puede ser genérico (no vinculado a un dispositivo específico) o puede ser específico del dispositivo. La semántica de PrintTicket se presenta con más detalle. Además, esta sección contiene información general de conceptos y terminología que se tratan con más detalle en secciones posteriores.
 
-Hay dos enfoques fundamentalmente diferentes para construir un PrintTicket. Se puede usar cualquiera de estos enfoques.
+Hay dos enfoques fundamentalmente diferentes para construir un PrintTicket. Se puede usar cualquier enfoque.
 
--   Destine el PrintTicket a un dispositivo genérico o desconocido mediante la [creación de un PrintTicket genérico](creating-a-generic-printticket.md).
+-   Para dirigir PrintTicket a un dispositivo desconocido o genérico, [cree un PrintTicket genérico.](creating-a-generic-printticket.md)
 
-    Si el objetivo principal es conservar la intención del usuario final, es posible que quiera tomar este enfoque mediante la construcción y el almacenamiento de un PrintTicket genérico no validado con el documento.
+    Si el objetivo principal es conservar la intención del usuario final, es posible que quiera seguir este enfoque mediante la construcción y el almacenamiento de un printTicket genérico no validado con el documento.
 
--   Establecer como destino el PrintTicket en un dispositivo específico mediante la [creación de un Device-Specific PrintTicket](creating-a-device-specific-printticket.md).
+-   Para dirigir PrintTicket a un dispositivo específico, cree [un Device-Specific PrintTicket](creating-a-device-specific-printticket.md).
 
-    Si está más interesado en sacar provecho de todas las características que ofrece un dispositivo determinado, puede tomar este enfoque mediante la construcción de un PrintTicket para el dispositivo específico y el almacenamiento del PrintTicket validado con el documento.
+    Si está más interesado en aprovechar todas las características que ofrece un dispositivo determinado, puede que quiera seguir este enfoque mediante la construcción de un PrintTicket para el dispositivo específico y el almacenamiento del PrintTicket validado con el documento.
 
 ## <a name="related-topics"></a>Temas relacionados
 
