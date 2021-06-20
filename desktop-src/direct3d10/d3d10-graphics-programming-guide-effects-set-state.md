@@ -1,21 +1,21 @@
 ---
-description: Algunas constantes Effect solo deben inicializarse.
+description: Solo es necesario inicializar algunas constantes de efecto. Consulte el código básico para establecer variables de efecto en Direct3D 10.
 ms.assetid: 743261a8-fdd8-492e-be8a-4faeb9b6f986
-title: Establecer el estado del efecto (Direct3D 10)
+title: Establecer estado de efecto (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f14d4cdfb23c56f9534d1b4029482ce4e494b37
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6df7133276b6392abca8d75eed16de896fb58f84
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998197"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404728"
 ---
-# <a name="set-effect-state-direct3d-10"></a>Establecer el estado del efecto (Direct3D 10)
+# <a name="set-effect-state-direct3d-10"></a>Establecer estado de efecto (Direct3D 10)
 
-Algunas constantes Effect solo deben inicializarse. Una vez inicializado, el estado del efecto se establece en el dispositivo para todo el bucle de representación. Es necesario actualizar otras variables cada vez que se llama al bucle de representación. A continuación se muestra el código básico para establecer las variables de efecto, para cada uno de los tipos de variables.
+Solo es necesario inicializar algunas constantes de efecto. Una vez inicializado, el estado del efecto se establece en el dispositivo para todo el bucle de representación. Es necesario actualizar otras variables cada vez que se llama al bucle de representación. A continuación se muestra el código básico para establecer variables de efecto para cada uno de los tipos de variables.
 
-Un efecto encapsula todo el estado de representación necesario para realizar una fase de representación. En lo que respecta a la API, hay tres tipos de estado encapsulados en un efecto.
+Un efecto encapsula todo el estado de representación necesario para realizar un paso de representación. En cuanto a la API, hay tres tipos de estado encapsulados en un efecto.
 
 -   [Estado constante](#constant-state)
 -   [Estado del sombreador](#shader-state)
@@ -23,7 +23,7 @@ Un efecto encapsula todo el estado de representación necesario para realizar un
 
 ## <a name="constant-state"></a>Estado constante
 
-En primer lugar, declare las variables en un efecto mediante los tipos de datos de HLSL.
+En primer lugar, declare variables en un efecto mediante tipos de datos HLSL.
 
 
 ```
@@ -47,7 +47,7 @@ float4x4 g_mWorldViewProjection;    // World * View * Projection matrix
 
 
 
-En segundo lugar, declare las variables de la aplicación que se pueden establecer en la aplicación y, a continuación, actualice las variables de efecto.
+En segundo lugar, declare variables en la aplicación que la aplicación pueda establecer y, a continuación, actualizará las variables de efecto.
 
 
 ```
@@ -106,7 +106,7 @@ OnD3D10FrameRender()
 
 Hay dos maneras de obtener el estado contenido en una variable de efecto. Dado un efecto que se ha cargado en la memoria.
 
-Una manera es obtener el estado de muestra de una [**interfaz ID3D10EffectVariable**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectvariable) que se ha convertido en una interfaz de muestra.
+Una manera es obtener el estado del muestreador de una interfaz [**ID3D10EffectVariable**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectvariable) que se ha convertido como una interfaz sampler.
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect10 )
 
 
 
-La otra forma es obtener el estado de muestra de una [**interfaz ID3D10SamplerState**](/windows/desktop/api/D3D10/nn-d3d10-id3d10samplerstate).
+La otra manera es obtener el estado del sampler de una [**interfaz ID3D10SamplerState**](/windows/desktop/api/D3D10/nn-d3d10-id3d10samplerstate).
 
 
 ```
@@ -147,7 +147,7 @@ if( g_pEffect10 )
 
 ## <a name="shader-state"></a>Estado del sombreador
 
-El estado del sombreador se declara y se asigna en una técnica de efecto, dentro de un paso.
+El estado del sombreador se declara y asigna en una técnica de efecto, dentro de un paso.
 
 
 ```
@@ -164,11 +164,11 @@ technique10 RenderSceneWithTexture1Light
 
 
 
-Esto funciona igual que si no estuviera usando ningún efecto. Hay tres llamadas, una para cada tipo de sombreador (vértice, geometría y píxel). El primero, SetVertexShader, llama a [**ID3D10Device:: VSSetShader**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-vssetshader). CompileShader es una función especial de efecto que toma el perfil de sombreador (vs \_ 4 \_ 0) y el nombre de la función de sombreador de vértices (RenderVS). En otras palabras, cada una de estas llamadas SetXXXShader compila su función de sombreador asociada y devuelve un puntero al sombreador compilado.
+Esto funciona igual que lo haría si no usara ningún efecto. Hay tres llamadas, una para cada tipo de sombreador (vértice, geometría y píxel). El primero, SetVertexShader, llama a [**ID3D10Device::VSSetShader**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-vssetshader). CompileShader es una función de efecto especial que toma el perfil del sombreador (frente a 4 0) y el nombre de la función de sombreador de vértices \_ \_ (RenderVS). En otras palabras, cada una de estas llamadas a SetXXXShader compila su función de sombreador asociada y devuelve un puntero al sombreador compilado.
 
 ## <a name="texture-state"></a>Estado de textura
 
-El estado de la textura es un poco más complejo que establecer una variable, ya que los datos de la textura no se leen simplemente como una variable, se muestra a partir de una textura. Por lo tanto, debe definir la variable de textura (al igual que una variable normal, excepto que usa un tipo de textura) y debe definir las condiciones de muestreo. A continuación se muestra un ejemplo de una declaración de variable de textura y la declaración de estado de muestreo correspondiente.
+El estado de textura es un poco más complejo que establecer una variable, ya que los datos de textura no se leen simplemente como una variable, sino que se muestrea a partir de una textura. Por lo tanto, debe definir la variable de textura (al igual que una variable normal, excepto que usa un tipo de textura) y debe definir las condiciones de muestreo. Este es un ejemplo de una declaración de variable de textura y la declaración de estado de muestreo correspondiente.
 
 
 ```
@@ -185,9 +185,9 @@ SamplerState MeshTextureSampler
 
 
 
-Este es un ejemplo de cómo establecer una textura desde una aplicación. En este ejemplo, la textura se almacena en los datos de la malla, que se cargó al crear el efecto.
+Este es un ejemplo de cómo establecer una textura desde una aplicación. En este ejemplo, la textura se almacena en los datos de malla que se cargaron cuando se creó el efecto.
 
-El primer paso es obtener un puntero a la textura del efecto (desde la malla).
+El primer paso es obtener un puntero a la textura desde el efecto (desde la malla).
 
 
 ```
@@ -199,7 +199,7 @@ ID3D10EffectShaderResourceVariable* g_ptxDiffuse = NULL;
 
 
 
-El segundo paso consiste en especificar una vista para tener acceso a la textura. La vista define una manera general de tener acceso a los datos del recurso de textura.
+El segundo paso es especificar una vista para acceder a la textura. La vista define una manera general de acceder a los datos desde el recurso de textura.
 
 
 ```
@@ -217,13 +217,13 @@ OnD3D10FrameRender()
 
 
 
-Para obtener más información sobre cómo ver recursos, vea [vistas de textura (Direct3D 10)](d3d10-graphics-programming-guide-resources-access-views.md).
+Para obtener más información sobre cómo ver recursos, vea [Vistas de textura (Direct3D 10).](d3d10-graphics-programming-guide-resources-access-views.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Representar un efecto (Direct3D 10)](d3d10-graphics-programming-guide-effects-render.md)
+[Representación de un efecto (Direct3D 10)](d3d10-graphics-programming-guide-effects-render.md)
 </dt> </dl>
 
  

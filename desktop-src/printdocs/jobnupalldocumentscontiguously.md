@@ -1,25 +1,25 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento JobNUpAllDocumentsContiguously, que describe la salida de varias páginas lógicas en una sola hoja física.
 ms.assetid: e73e1736-9be5-4831-8277-23a62658b7b5
 title: JobNUpAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f90620ac99bf97e85acb22c723a938c31605bd
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9106259c80a7efb89cc4481780bfb55af4f07e23
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998092"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408868"
 ---
 # <a name="jobnupalldocumentscontiguously"></a>JobNUpAllDocumentsContiguously
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la salida de varias páginas lógicas en una sola hoja física. Todos los documentos del trabajo se compilan juntos de forma contigua. JobNUpAllDocumentsContiguously y DocumentNUp son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
 
-En el diagrama siguiente se muestra un ejemplo con el documento 1 que contiene 3 páginas y el documento 2 que contiene 2 páginas. Cada documento del trabajo se dúplex de forma contigua. Las direcciones de presentación que se muestran en el ejemplo son la opción RightBottom.
+En el diagrama siguiente se muestra un ejemplo con el documento 1 que contiene 3 páginas y el documento 2 que contiene 2 páginas. Cada documento del trabajo se dúplex de forma contigua. Las instrucciones de presentación que se muestran en el ejemplo son la opción RightBottom.
 
-![diagrama que muestra cómo se estableciendo las páginas del documento en una sola hoja en función de la configuración de documentnup](images/local-1242234459-jobduplexpics.gif)
+![un diagrama que muestra cómo se estableciendo las páginas del documento en una sola hoja en función de la configuración de documentnup](images/local-1242234459-jobduplexpics.gif)
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -29,11 +29,11 @@ En el diagrama siguiente se muestra un ejemplo con el documento 1 que contiene 3
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                             |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                                                                                 |
-| Notas <br/>          | Top, Bottom, Left y Right son relativos a PageImageableSize, donde TopLeft se indica por el origen del alto y el ancho.<br/> |
+| Notas <br/>          | Top, Bottom, Left y Right son relativos a PageImageableSize, donde TopLeft se indica mediante el origen del alto y el ancho.<br/> |
 
 
 
@@ -83,7 +83,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobNUpAllDocumentsContiguously">

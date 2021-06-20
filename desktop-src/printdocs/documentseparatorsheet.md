@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento DocumentSeparatorSheet, que describe el uso de la hoja separadora de un documento.
 ms.assetid: f0b2192d-4bb7-4ba2-8dd0-35a20183ea31
 title: DocumentSeparatorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb6bd0d58c5b361b167d22c672b7e080e4498d3e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 38195c2d1c52e5c02d9da4844b5fa981866a61bc
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997062"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409168"
 ---
 # <a name="documentseparatorsheet"></a>DocumentSeparatorSheet
 
@@ -25,7 +25,7 @@ Describe el uso de la hoja separadora para un documento. Las hojas separadoras d
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Característica<br/>  |
 | Prefijo de ámbito <br/> | Documento<br/> |
@@ -70,7 +70,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:DocumentSeparatorSheet">
@@ -93,7 +93,7 @@ Las palabras clave públicas del esquema de impresión se definen en el espacio 
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

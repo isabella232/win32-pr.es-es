@@ -1,32 +1,32 @@
 ---
 title: Usar atributos para mostrar
-description: El marco de trabajo de servicios de texto (TSF) permite que un servicio de texto proporcione atributos de presentación para el texto.
+description: Lea cómo usar los atributos para mostrar. Text Services Framework (TSF) permite que un servicio de texto proporcione atributos de presentación para el texto.
 ms.assetid: b0f6e8e8-586a-4b51-a498-fb22bd36161f
 keywords:
-- Text Services Framework (TSF), Mostrar atributos
-- TSF (marco de trabajo de servicios de texto), Mostrar atributos
+- Text Services Framework (TSF), mostrar atributos
+- TSF (Text Services Framework), mostrar atributos
 - Aplicaciones habilitadas para TSF, atributos para mostrar
 - atributos de presentación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbc725f67fab904db23f6232ac5efb5d63c62c26
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3c576064ab22571b5a7822f5e6ff143add55d03
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773879"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406138"
 ---
 # <a name="using-display-attributes"></a>Usar atributos para mostrar
 
-El marco de trabajo de servicios de texto (TSF) permite que un servicio de texto proporcione atributos de presentación para el texto. Esto permite que una aplicación muestre comentarios visuales adicionales. Por ejemplo, un servicio de texto de corrector ortográfico puede resaltar una palabra mal escrita con un subrayado rojo. Los atributos de visualización que se pueden proporcionar se definen mediante la estructura [TF \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) e incluyen el color de texto, el color de fondo del texto, el estilo de subrayado, el color de subrayado y el grosor del subrayado.
+Text Services Framework (TSF) permite que un servicio de texto proporcione atributos de presentación para el texto. Esto permite que una aplicación muestre comentarios visuales adicionales. Por ejemplo, un servicio de texto corrector ortográfico puede resaltar una palabra mal escrita con un subrayado rojo. Los atributos de presentación que se pueden proporcionar se definen mediante la estructura [ \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) de TF e incluyen el color de texto, el color de fondo del texto, el estilo de subrayado, el color de subrayado y el peso del subrayado.
 
-Al representar texto, una aplicación debe obtener los atributos de presentación del texto dibujado y usar los atributos para modificar el modo en que se dibuja el texto. Complete los pasos siguientes para obtener los atributos de visualización.
+Al representar texto, una aplicación debe obtener los atributos para mostrar del texto dibujado y usar los atributos para modificar cómo se dibuja el texto. Complete los pasos siguientes para obtener los atributos de visualización.
 
-1.  Obtenga un objeto de propiedad para el atributo prop de GUID llamando \_ \_ a [ITfContext:: GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty).
-2.  Obtenga el valor del \_ atributo prop GUID \_ para el intervalo especificado mediante una llamada a [ITfReadOnlyProperty:: GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue). Esto proporciona un valor de [TfGuidAtom](tfguidatom.md) .
-3.  Convierta el valor de [TfGuidAtom](tfguidatom.md) en un GUID llamando a [ITfCategoryMgr:: GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid).
-4.  Cree un objeto [ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo) para el atributo de visualización llamando a [ITfDisplayAttributeMgr:: GetDisplayAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).
-5.  Obtenga la información del atributo de visualización llamando a [ITfDisplayAttributeInfo:: GetAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).
+1.  Obtenga un objeto de propiedad para GUID \_ PROP ATTRIBUTE llamando a \_ [ITfContext::GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty).
+2.  Obtenga el valor de GUID PROP ATTRIBUTE para el intervalo especificado mediante una llamada \_ \_ a [ITfReadOnlyProperty::GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue). Esto proporciona un [valor TfGuidAtom.](tfguidatom.md)
+3.  Convierta el [valor de TfGuidAtom](tfguidatom.md) en un GUID mediante una llamada a [ITfCategoryMgr::GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid).
+4.  Cree un [objeto ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo) para el atributo display llamando a [ITfDisplayAttributeMgr::GetDisplayAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).
+5.  Obtenga la información del atributo para mostrar llamando a [ITfDisplayAttributeInfo::GetAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).
 
 En el ejemplo de código siguiente se muestra una función que obtiene los atributos de presentación de un contexto, un intervalo y una cookie de edición proporcionados.
 
@@ -124,16 +124,16 @@ HRESULT GetDispAttrFromRange(   ITfContext *pContext,
 [TF \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute)
 </dt> <dt>
 
-[ITfContext:: GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty)
+[ITfContext::GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty)
 </dt> <dt>
 
-[ITfReadOnlyProperty:: GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue)
+[ITfReadOnlyProperty::GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue)
 </dt> <dt>
 
 [TfGuidAtom](tfguidatom.md)
 </dt> <dt>
 
-[ITfCategoryMgr:: GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid)
+[ITfCategoryMgr::GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid)
 </dt> <dt>
 
 [ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo)
@@ -145,9 +145,9 @@ HRESULT GetDispAttrFromRange(   ITfContext *pContext,
  ITfDisplayAttributeInfo::GetAttributeInfo 
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

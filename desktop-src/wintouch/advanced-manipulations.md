@@ -1,6 +1,6 @@
 ---
 title: Manipulaciones avanzadas
-description: En esta sección se explican las manipulaciones avanzadas de las aplicaciones.
+description: Vea la página de aterrizaje para ver las manipulaciones avanzadas de las aplicaciones. Consulte los vínculos a las páginas de información general, expansión, rotación y traducción.
 ms.assetid: 8a1cff27-b2c0-4e72-9f4c-df656059953f
 keywords:
 - Windows Touch, manipulaciones
@@ -10,18 +10,18 @@ keywords:
 - manipulaciones, complejas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 628e85d9b2963e6377ba5ab239d10c70e8343465
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48c059ad30a338fe5d413ff6c7e6e7f2e9383dc9
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075209"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406328"
 ---
 # <a name="advanced-manipulations"></a>Manipulaciones avanzadas
 
-En esta sección se explican las manipulaciones avanzadas de las aplicaciones.
+En esta sección se explican las manipulaciones avanzadas para las aplicaciones.
 
-Por motivos de facilidad de uso, puede que desee agregar manipulaciones complejas a la aplicación para que los objetos se puedan manipular con un grado muy exhaustivo de granularidad. En las secciones siguientes se describen las manipulaciones avanzadas.
+Con fines de facilidad de uso, es posible que desee agregar manipulaciones complejas a la aplicación para que los objetos se puedan manipular con un grado de granularidad determinado. En las secciones siguientes se describen las manipulaciones avanzadas.
 
 
 
@@ -34,7 +34,7 @@ Por motivos de facilidad de uso, puede que desee agregar manipulaciones compleja
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -43,9 +43,9 @@ Por motivos de facilidad de uso, puede que desee agregar manipulaciones compleja
 [Manipulaciones](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: Interfaces necesarias (SDK de Windows Media Player)
-description: Interfaces necesarias
+title: Interfaces necesarias (Reproductor de Windows Media SDK)
+description: Obtenga información sobre las interfaces necesarias que Reproductor de Windows Media implementa en DirectShow o Media Foundation.
 ms.assetid: 202d5769-edff-46df-bc05-bbb630a8f3f4
 keywords:
-- Complementos de Windows Media Player, interfaces
+- Reproductor de Windows Media complementos, interfaces
 - complementos, interfaces
-- Complementos de procesamiento de señal digital, interfaces
-- Complementos DSP, interfaces
-- interfaces, Complementos DSP
+- complementos de procesamiento de señales digitales, interfaces
+- Complementos de DSP, interfaces
+- interfaces, complementos DSP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e9c6923af513f2d241955b508f0872f85a4b020
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 3d27a0c0ed56db5f35c8cde8203fcf99a81a9260
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103904952"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406098"
 ---
-# <a name="required-interfaces-windows-media-player-sdk"></a>Interfaces necesarias (SDK de Windows Media Player)
+# <a name="required-interfaces-windows-media-player-sdk"></a>Interfaces necesarias (Reproductor de Windows Media SDK)
 
-Windows Media Player representa audio y vídeo mediante una de las siguientes canalizaciones.
+Reproductor de Windows Media representa audio y vídeo mediante una de las siguientes canalizaciones.
 
 -   DirectShow
 -   Media Foundation
 
-En Microsoft Windows XP y versiones anteriores, el reproductor utiliza DirectShow. En Windows Vista, el reproductor a veces usa DirectShow y a veces usa Media Foundation.
+En Microsoft Windows XP y versiones anteriores, el reproductor usa DirectShow. En Windows Vista, el Reproductor a veces usa DirectShow y, a veces, usa Media Foundation.
 
 Un complemento DSP implementa algunas o todas las interfaces siguientes:
 
@@ -34,13 +34,13 @@ Un complemento DSP implementa algunas o todas las interfaces siguientes:
 -   **IMFGetService**
 -   **ISpecifyPropertyPages**
 
-Un complemento que implementa **IMediaObject** y **IWMPPluginEnable** puede ejecutarse en la canalización de DirectShow. También puede ejecutarse en la canalización de Media Foundation dentro de un contenedor proporcionado por Media Foundation. Un complemento de este tipo se denomina Microsoft DirectX media Object (DMO). Es habitual considerar que un DMO es análogo a un objeto de filtro en DirectShow. La documentación de DMO está en la sección de DirectShow del Windows SDK.
+Un complemento que implementa **IMediaObject** e **IWMPPluginEnable** se puede ejecutar en la canalización de DirectShow. También se puede ejecutar en la canalización Media Foundation dentro de un contenedor proporcionado por Media Foundation. Un complemento de este tipo se denomina objeto multimedia (DMO) de Microsoft DirectX. Es habitual pensar que un DMO es análogo a un objeto de filtro en DirectShow. La documentación de DMO se encuentra en la sección DirectShow de la Windows SDK.
 
-Un complemento que implementa **IMFTransform** y **IMFGetService** se puede ejecutar de forma nativa (no se requiere ningún contenedor) en la canalización de Media Foundation. Un complemento de este tipo se denomina Media Foundation Transform (MFT). La documentación de MFT está en la sección Media Foundation del Windows SDK de.
+Un complemento que implementa **IMFTransform** y **IMFGetService** se puede ejecutar de forma nativa (no se requiere ningún contenedor) en la Media Foundation ejecución. Un complemento de este tipo se denomina Media Foundation Transform (MFT). La documentación de MFT se encuentra en Media Foundation sección de la Windows SDK.
 
-Los complementos que implementan **IMediaObject**, **IWMPPluginEnable**, **IMFTransform** y **IMFGetService** se pueden ejecutar en la canalización de DirectShow y también se pueden ejecutar de forma nativa en la canalización de Media Foundation. Este tipo de complemento, que se denomina un *complemento DSP de modo dual*, puede desempeñar el rol de un DMO o una MFT.
+Un complemento que implementa **IMediaObject**, **IWMPPluginEnable,** **IMFTransform** y **IMFGetService** se puede ejecutar en la canalización DirectShow y también se puede ejecutar de forma nativa en la canalización Media Foundation. Este tipo de complemento, que se denomina complemento DSP de modo *dual,* puede desempeñar el rol de DMO o MFT.
 
-Cuando Windows Media Player usa un complemento DSP de modo dual en la canalización de Media Foundation, primero consulta la interfaz **IMFTransform** . Si se produce un error en la consulta, Windows Media Player consultas para la interfaz **IMediaObject** . Si la consulta **IMediaObject** se realiza correctamente, el complemento se ajusta y se agrega a la canalización Media Foundation.
+Cuando Reproductor de Windows Media un complemento DSP de modo dual en la canalización de Media Foundation, primero consulta la interfaz **DETRANSFORM.** Si se produce un error en esa consulta, Reproductor de Windows Media consultas para la **interfaz IMediaObject.** Si la **consulta IMediaObject** se realiza correctamente, el complemento se encapsula y se agrega a la Media Foundation ejecución.
 
 Independientemente de la canalización, cualquier complemento de DSP que permita al usuario establecer propiedades debe implementar **ISpecifyPropertyPages**.
 
@@ -48,13 +48,13 @@ Independientemente de la canalización, cualquier complemento de DSP que permita
 
 <dl> <dt>
 
-[**Introducción al desarrollador de complementos de DSP**](dsp-plug-in-developer-overview.md)
+[**Introducción al desarrollador del complemento DSP**](dsp-plug-in-developer-overview.md)
 </dt> <dt>
 
-[**Interfaces de complemento de DSP**](dsp-plug-in-interfaces.md)
+[**Interfaces de complemento DE DSP**](dsp-plug-in-interfaces.md)
 </dt> <dt>
 
-[**Empaquetado de complementos de DSP**](dsp-plug-in-packaging.md)
+[**Empaquetado del complemento DE DSP**](dsp-plug-in-packaging.md)
 </dt> </dl>
 
  

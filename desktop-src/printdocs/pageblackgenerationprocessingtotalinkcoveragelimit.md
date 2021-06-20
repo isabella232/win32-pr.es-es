@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el elemento PageBlackGenerationProcessingTotalInkCoverageLimit, que especifica la suma máxima permitida de la cobertura de lápiz de cuatro en cualquier lugar de una imagen.
 ms.assetid: 7ccd02c2-7cec-4d9d-83c1-512f25f4045c
 title: PageBlackGenerationProcessingTotalInkCoverageLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29918bfe48d1547a3c61b8d79425b36368f6d249
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 68410cabdfafa5ce82450821e4ae45709ee8d4c9
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993882"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408448"
 ---
 # <a name="pageblackgenerationprocessingtotalinkcoveragelimit"></a>PageBlackGenerationProcessingTotalInkCoverageLimit
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica la suma máxima permitida de la cobertura de lápiz de cuatro en cualquier lugar de una imagen.
 
@@ -24,7 +24,7 @@ Especifica la suma máxima permitida de la cobertura de lápiz de cuatro en cual
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                            |
@@ -70,7 +70,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -88,7 +88,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

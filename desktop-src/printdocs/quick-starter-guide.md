@@ -1,43 +1,43 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: En este artículo se proporciona un inicio rápido para implementar PrintTicket e PrintCapabilities para el controlador de aplicación o dispositivo.
 ms.assetid: 2c1d912e-464e-48d2-ba4f-c0b9a811b25e
 title: Guía de inicio rápido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8f3933cb59e270dd8ef2eff8d295d33ab1f9203
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 6060de551d3fb663e148cf80f661c4d517a51b93
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104361954"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405318"
 ---
 # <a name="quick-starter-guide"></a>Guía de inicio rápido
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Esta página está diseñada para proporcionarle una guía de inicio rápido para implementar PrintTicket y PrintCapabilities para su aplicación o controlador de dispositivo. Aunque se recomienda que lea la especificación del esquema de impresión en su totalidad, esta página le ayudará a dar un salto en las áreas clave a las que debe prestar atención.
+Esta página está diseñada para ofrecer un inicio rápido para implementar PrintTicket e PrintCapabilities para el controlador de aplicación o dispositivo. Aunque le recomendamos que lea la especificación del esquema de impresión en su totalidad, esta página le ayudará a empezar a trabajar en áreas clave a las que debe prestar atención.
 
-1) Lea las [tecnologías de impresión Schema-Related](print-schema-related-technologies.md) para proporcionarle información general sobre las tecnologías de funcionalidad de impresión y de PrintTicket
+1) Lea las [tecnologías de Schema-Related impresión](print-schema-related-technologies.md) para obtener información general sobre las tecnologías PrintTicket y Capacidades de impresión.
 
-2) Asegúrese de que tiene un agarre en el [Resumen de los tipos de elemento](summary-of-element-types.md) que se usan para expresar las tecnologías relacionadas con el esquema de impresión.
+2) Asegúrese de que tiene una idea del resumen de los tipos de elemento [que](summary-of-element-types.md) se usan para expresar las tecnologías relacionadas con el esquema de impresión.
 
-3) Los documentos y elementos PrintTicket de PrintCapabilities se definen en tres niveles de [Prefijo de ámbito](scoping-prefix.md) , trabajo, documento y página.
+3) Los documentos PrintCapabilities y PrintTickets se definen en tres [niveles](scoping-prefix.md) de prefijo de ámbito: Trabajo, Documento y Página.
 
-4) Leer los distintos [atributos XML](xml-attributes.md) que se usan en los distintos tipos de elementos de esquemas de impresión
+4) Lea los distintos atributos [XML que se](xml-attributes.md) usan en distintos tipos de elementos de esquema de impresión.
 
-5) Revise la [lista de comprobación de construcción de documentos de PrintCapabilities](printcapabilities-document-construction-checklist.md) y también el ejemplo de documento de [PrintCapabilities](printcapabilities-document-example.md) proporcionado
+5) Revise la lista [de comprobación de construcción de documentos PrintCapabilities](printcapabilities-document-construction-checklist.md) y también el ejemplo de documento [PrintCapabilities proporcionado](printcapabilities-document-example.md)
 
-6) Revise las [listas de comprobación de construcción de PrintTicket](printticket-construction-checklists.md) y también el [ejemplo de PrintTicket](printticket-example.md) proporcionado.
+6) Revise las listas [de comprobación de construcción de PrintTicket y](printticket-construction-checklists.md) también el ejemplo de [PrintTicket proporcionado](printticket-example.md)
 
-7) Los proveedores de PrintTicket también deben revisar la [lista de comprobación de validación de PrintTicket](printticket-validation-checklist.md) para garantizar la conformidad con la especificación de PrintSchema
+7) Los proveedores de PrintTicket también deben revisar la [lista de comprobación de validación de PrintTicket](printticket-validation-checklist.md) para garantizar la conformidad con la especificación PrintSchema.
 
-8) Revisar [los elementos configurables](user-configurable-elements.md) por el usuario y las [definiciones de parámetros](parameter-definitions.md) palabras clave del esquema de impresión público que pueden aparecer en un documento de PrintCapabilities
+8) Revise las [palabras clave públicas de](user-configurable-elements.md) esquema de impresión de elementos [configurables](parameter-definitions.md) por el usuario y definiciones de parámetros que pueden aparecer en un documento PrintCapabilities.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

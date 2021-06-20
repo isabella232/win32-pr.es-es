@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento JobInputBin, que describe la ubicación de entrada instalada en un dispositivo o la lista completa de ubicaciones admitidas para un dispositivo.
 ms.assetid: 9192ceb1-90c4-480e-9247-68d457976f42
 title: JobInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f87782d6cf9aae5c34d36603f025e803f47db3e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 929df4cb4871e5a8d2ebacfe533b5da3ad9babf3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998102"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408898"
 ---
 # <a name="jobinputbin"></a>JobInputBin
 
@@ -25,7 +25,7 @@ Describe la ubicación de entrada instalada en un dispositivo o la lista complet
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |
@@ -96,7 +96,7 @@ En la tabla siguiente se describen las características de las variables definid
 | \_EnvelopeOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Especifica el tipo de la ubicación.<br/>                                           |
 | \_FeedTypeValue\_<br/>           | string<br/>  | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                         | Especifica el mecanismo de fuente de la ubicación.<br/>                                 |
-| \_MediaCapacityValue\_<br/>      | string<br/>  | N/D<br/>        | Alto, Estándar.<br/>                                                                                                                                                            | Especifica si la ubicación es un cubo de alta capacidad (cualitativo).<br/>          |
+| \_MediaCapacityValue\_<br/>      | string<br/>  | N/D<br/>        | Alto, Estándar.<br/>                                                                                                                                                            | Especifica si el cubo es un cubo de alta capacidad (cualitativo).<br/>          |
 | \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tamaño del medio del dispositivo.<br/>                |
 | \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tipo de medio del dispositivo.<br/>                |
 | \_MediaSheetCapacityValue\_<br/> | integer<br/> | Hojas<br/>     | Restricción de entero máxima permitida por el dispositivo.<br/>                                                                                                                              | Especifica la capacidad multimedia en número de páginas (nivel completo) de la ubicación.<br/> |

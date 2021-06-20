@@ -1,19 +1,19 @@
 ---
-description: La ruta de acceso de visualización fácil de ver al elemento.
+description: Obtenga información sobre la propiedad System.ItemPathDisplayNarrow, que representa la ruta de acceso de presentación fácil de usar al elemento.
 ms.assetid: 5dd44e13-bc5c-4e32-b5eb-2c7c40e10dfb
-title: System. ItemPathDisplayNarrow
+title: System.ItemPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87ef7b9d03a78a23e955c20f52e32062a8bcabd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b84455a8b69ebf42cb91c191d1c275b70eeeb5ac
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278326"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403898"
 ---
-# <a name="systemitempathdisplaynarrow"></a>System. ItemPathDisplayNarrow
+# <a name="systemitempathdisplaynarrow"></a>System.ItemPathDisplayNarrow
 
-La ruta de acceso de visualización fácil de ver al elemento.
+Ruta de acceso de presentación fácil de usar al elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,23 +33,23 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Para optimizar en una columna de visualización estrecha, el formato de la cadena debe estar adaptado para que el nombre aparezca primero.
+Para optimizar una columna de visualización estrecha, el formato de la cadena debe adaptarse para que el nombre sea el primero.
 
-Si el elemento es un archivo, el valor de la propiedad excluye la extensión de archivo, pero incluye nombres localizados si están presentes. Si el elemento es un mensaje, el valor incluye [System. ItemNamePrefix](./props-system-itemnameprefix.md). Para analizar una ruta de acceso de elemento, use [System. ItemUrl](./props-system-itemurl.md) o [System. ParsingPath](./props-system-parsingpath.md).
+Si el elemento es un archivo, el valor de propiedad excluye la extensión de archivo, pero incluye nombres localizados si están presentes. Si el elemento es un mensaje, el valor incluye [System.ItemNamePrefix](./props-system-itemnameprefix.md). Para analizar una ruta de acceso de elemento, use [System.ItemUrl](./props-system-itemurl.md) o [System.ParsingPath](./props-system-parsingpath.md).
 
 Valores de ejemplo:
 
 
 
-| Ruta                                   | ItemPathDisplayName                 |
+| Ruta de acceso                                   | ItemPathDisplayName                 |
 |----------------------------------------|-------------------------------------|
-| c: \\hello.txt de la \\ barra myDir \\              | Hola (c: \\ myDir \\ bar)              |
-| \\\\\\goodnews.doc del recurso compartido del servidor \\ myDir \\ | Goodnews ( \\ \\ \\ recurso compartido de servidor \\ myDir) |
-| \\\\\\carpeta de recurso compartido de servidor \\              | carpeta ( \\ \\ \\ recurso compartido de servidor)          |
-| c: \\ MyDir \\ carpeta                    | Carpeta (c: \\ myDir)                |
-| Cuenta o bandeja de entrada de/Mailbox/' re: Hello! '    | Re: ¡ Hola! (Cuenta o bandeja de entrada de/Mailbox) |
+| c: \\ barra de mydir \\ \\hello.txt              | hello (c: \\ barra \\ mydir)              |
+| \\\\servidor \\ compartido \\ mydir \\goodnews.doc | goodnews ( \\ \\ server share \\ \\ mydir) |
+| \\\\carpeta de \\ recurso compartido \\ de servidor              | carpeta \\ \\ (recurso compartido \\ de servidor)          |
+| c: \\ MyDir \\ MyFolder                    | MyFolder (c: \\ mydir)                |
+| /Mailbox Account/Inbox/'Re: Hello!'    | Re: Hello! (/Cuenta de buzón/Bandeja de entrada) |
 
 
 
@@ -68,7 +68,7 @@ Valores de ejemplo:
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -80,7 +80,7 @@ Valores de ejemplo:
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -98,7 +98,7 @@ Valores de ejemplo:
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

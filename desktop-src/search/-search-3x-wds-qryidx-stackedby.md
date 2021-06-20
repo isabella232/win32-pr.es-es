@@ -1,19 +1,19 @@
 ---
-description: El argumento stackedby especifica la columna de propiedad por la que se van a apilar los resultados. Puede apilar por cualquier propiedad válida del sistema de propiedades.
+description: Comprenda cómo usar el argumento stackedby en Windows Search. Este argumento especifica la columna de propiedad por la que se apilan los resultados.
 ms.assetid: 7563bf34-b790-4cb0-94fa-31e771f34455
-title: Argumento STACKEDBY (búsqueda de Windows)
+title: Argumento STACKEDBY (Windows Search)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c691f2f9dd08575a9f93a5fc309b167e83f6acff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9844efb21849cad6c1d02f48f7adf793992aec08
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001000"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403718"
 ---
-# <a name="stackedby-argument-windows-search"></a>Argumento STACKEDBY (búsqueda de Windows)
+# <a name="stackedby-argument-windows-search"></a>Argumento STACKEDBY (Windows Search)
 
-El argumento **stackedby** especifica la columna de propiedad por la que se van a apilar los resultados. Puede apilar por cualquier propiedad válida del sistema de propiedades.
+El **argumento stackedby** especifica la columna de propiedad por la que se apilan los resultados. Puede apilar por cualquier propiedad válida del sistema de propiedades.
 
 Este tema se organiza de la siguiente manera:
 
@@ -33,19 +33,19 @@ Este tema se organiza de la siguiente manera:
 
 <dl> <dt>
 
-[Introducción con argumentos de Parameter-Value](getting-started-with-parameter-value-arguments.md)
+[Tareas iniciales con Parameter-Value argumentos](getting-started-with-parameter-value-arguments.md)
 </dt> <dt>
 
-[Argumentos de identificador de configuración regional](-search-3x-wds-qryidx-localeidentifiers.md)
+[Argumentos del identificador de configuración regional](-search-3x-wds-qryidx-localeidentifiers.md)
 </dt> <dt>
 
-[Argumento de MIGAs de](-search-3x-wds-qryidx-crumb.md)
+[Argumento CRUMB](-search-3x-wds-qryidx-crumb.md)
 </dt> <dt>
 
-[Argumento de sintaxis](-search-3x-wds-qryidx-syntaxargument.md)
+[Argumento SYNTAX](-search-3x-wds-qryidx-syntaxargument.md)
 </dt> <dt>
 
-[Argumento de subconsulta](-search-3x-wds-qryidx-subquery.md)
+[ARGUMENTO SUBQUERY](-search-3x-wds-qryidx-subquery.md)
 </dt> </dl>
 
  

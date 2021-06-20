@@ -1,21 +1,21 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el elemento JobStapleAllDocuments, que describe las características de estampación de la salida del trabajo.
 ms.assetid: a6721c13-a3dc-4273-b40f-2a28184b04a9
 title: JobStapleAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9abf6184c3164e0e5a1492911e15794ea7e1d948
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8f9598f09181a225bf10d097b8c2aedaf19373a1
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993912"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408648"
 ---
 # <a name="jobstaplealldocuments"></a>JobStapleAllDocuments
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las características de estapling de la salida. Todos los documentos del trabajo se apilen juntos. Las palabras clave JobStapleAllDocuments y DocumentStaple son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
+Describe las características de escalonamiento de la salida. Todos los documentos del trabajo se apilen juntos. Las palabras clave JobStapleAllDocuments y DocumentStaple son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -25,7 +25,7 @@ Describe las características de estapling de la salida. Todos los documentos de
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                             |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                 |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos          | Unidad                       | Valores admitidos                                                                                                                                                                      | Resumen                                                                                                                                               |
 |------------------------------------|--------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | Characters<br/>      | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                                    |
+| \_OptionName\_<br/>          | string<br/>  | Characters<br/>      | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                                    |
 | \_IdentityOptionValue\_<br/> | string<br/>  | N/D<br/>             | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                                          |
 | \_AngleValue\_<br/>          | integer<br/> | grados<br/>         | Mayor que 0.<br/>                                                                                                                                                            | Especifica el ángulo de la grapa, en relación con el ancho de PageImageableSize. El ángulo de la grapa se mide en sentido contrario a las agujas del reloj.<br/> |
 | \_SheetCapacityValue\_<br/>  | integer<br/> | hojas de medios<br/> | Mayor que 0.<br/>                                                                                                                                                            | Especifica el número de hojas admitidas por la opción de stapling para el elemento MediaType seleccionado actualmente.<br/>                                          |

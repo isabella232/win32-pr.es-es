@@ -1,19 +1,19 @@
 ---
-description: Este tema contiene código para la reproducción de audio y vídeo del tutorial en DirectShow.
+description: Este artículo contiene código para el archivo playback.h del tutorial Reproducción de audio y vídeo en DirectShow.
 ms.assetid: 8cf0f281-3680-4329-80d0-8282d1051c1a
-title: reproducción. h
+title: playback.h
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03bd6ebd1d0b37c0351fbbe1b4e7906b243ffc7a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ba52dc50cd14b26bcd26284a62c96400706d8aa8
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805228"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405118"
 ---
-# <a name="playbackh"></a>reproducción. h
+# <a name="playbackh"></a>playback.h
 
-Este tema contiene código para la [reproducción de audio y vídeo del tutorial en DirectShow](audio-video-playback-in-directshow.md).
+Este tema contiene código para el tutorial [Reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md).
 
 
 ```C++

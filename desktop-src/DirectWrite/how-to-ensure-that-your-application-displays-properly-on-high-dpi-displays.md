@@ -1,43 +1,43 @@
 ---
-title: Cómo asegurarse de que la aplicación se muestre correctamente en pantallas de alta PPP (DirectWrite)
-description: Describe cómo crear una ventana que se muestra correctamente en pantallas de alta ppp.
+title: Cómo asegurarse de que la aplicación se muestra correctamente en pantallas de valores altos de PPP (DirectWrite)
+description: Describe cómo asegurarse de que la aplicación crea una ventana que se muestra correctamente en pantallas con valores altos de PPP.
 ms.assetid: d174a337-c98e-46c7-86d2-c208900882d1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 317eb3379963cec600ab9bac7deb3778f0874e59
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 71166d312fe666644c683fe2ece7dd3ced59f765
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359168"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406428"
 ---
-# <a name="how-to-ensure-that-your-application-displays-properly-on-high-dpi-displays"></a>Cómo asegurarse de que la aplicación se muestre correctamente en pantallas de alta resolución de PPP
+# <a name="how-to-ensure-that-your-application-displays-properly-on-high-dpi-displays"></a>Cómo asegurarse de que la aplicación se muestra correctamente en pantallas con valores altos de PPP
 
-Aunque [DirectWrite](direct-write-portal.md) soluciona muchos problemas con un alto nivel de PPP, hay dos pasos que debe seguir para asegurarse de que la aplicación funciona correctamente en pantallas de alta PPP:
+Aunque [DirectWrite](direct-write-portal.md) soluciona muchos problemas de valores altos de PPP, hay dos pasos que debe seguir para asegurarse de que la aplicación funciona correctamente en pantallas con valores altos de PPP:
 
--   [Paso 1: usar el PPP del sistema al crear ventanas](#step-1-use-the-system-dpi-when-creating-windows)
+-   [Paso 1: Usar el valor de PPP del sistema al crear Windows](#step-1-use-the-system-dpi-when-creating-windows)
     -   [Direct2D](#direct2d)
-    -   [GDI](#gdi)
--   [Paso 2: declarar que la aplicación es compatible con PPP](#step-2-declare-that-the-application-is-dpi-aware)
+    -   [Gdi](#gdi)
+-   [Paso 2: Declarar que la aplicación es compatible con PPP](#step-2-declare-that-the-application-is-dpi-aware)
 -   [Temas relacionados](#related-topics)
 
-## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Paso 1: usar el PPP del sistema al crear ventanas
+## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Paso 1: Usar el valor de PPP del sistema al crear Windows
 
-Esto se puede hacer mediante [Direct2D](../direct2d/direct2d-portal.md) o mediante [GDI](../gdi/windows-gdi.md).
+Esto se puede hacer mediante [Direct2D](../direct2d/direct2d-portal.md) o mediante [GDI.](../gdi/windows-gdi.md)
 
 ### <a name="direct2d"></a>Direct2D
 
-La interfaz [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) proporciona el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) para recuperar los PPP del sistema. Proporciona las dimensiones horizontal y vertical de la pantalla en puntos por pulgada (PPP). Para usar estos valores para establecer el ancho de una ventana, use la siguiente fórmula:
+La [**interfaz ID2D1Factory proporciona**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) para recuperar el ppp del sistema. Proporciona las dimensiones horizontal y vertical de la pantalla en puntos por pulgada (PPP). Para usar estos valores para establecer el ancho de una ventana, use la siguiente fórmula:
 
-<*PPP* >  \* horizontal  < *ancho*, en píxeles>/<*valores de PPP horizontales predeterminados*>
+<*PPP horizontal* >  \*  < *width*, en píxeles> /<*ppp horizontal predeterminado*>
 
-... donde *PPP horizontal* es el valor recuperado por GetDpi y el *PPP horizontal predeterminado* es 96. La fórmula es similar para el tamaño vertical:
+... donde *PPP horizontal* es el valor retrived by GetDpi y el valor predeterminado de PPP *horizontal* es 96. La fórmula es similar para el tamaño vertical:
 
-<*PPP* >  \* vertical  < *alto*, en píxeles>/<*PPP vertical predeterminado*>
+<*PPP vertical* >  \*  < *height*, en píxeles>/<*ppp vertical predeterminado*>
 
-... donde *DPI vertical* es el valor recuperado por el método [**GETDESKTOPDPI**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) y el *PPP vertical predeterminado* es 96.
+... donde *PPP vertical* es el valor recuperado por el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) y *el valor predeterminado de PPP vertical* es 96.
 
-En el código siguiente se usa el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) para crear una ventana de 640 x 480, escalada a PPP del sistema. (En el código siguiente, *m \_ spD2DFactory* es un puntero inteligente a una instancia de [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) ).
+El código siguiente usa el [**método GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) para crear una ventana de 640 x 480, escalada a ppp del sistema. (En el código siguiente, *m \_ spD2DFactory* es un puntero inteligente a una [**instancia de ID2D1Factory).**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)
 
 
 ```C++
@@ -70,9 +70,9 @@ En el código siguiente se usa el método [**GetDesktopDpi**](/windows/win32/api
 
 ### <a name="gdi"></a>GDI
 
-[GDI](interoperating-with-gdi.md) proporciona la función [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para recuperar información del dispositivo. Puede recuperar información de PPP pasando los valores de índice de *LOGPIXELSX* y *LOGPIXELSY* . La fórmula para determinar el tamaño horizontal y vertical de una ventana es la misma que con el ejemplo de [Direct2D](../direct2d/direct2d-portal.md) anterior.
+[GDI](interoperating-with-gdi.md) proporciona la [**función GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para recuperar información del dispositivo. Puede recuperar información de PPP pasando los valores de índice *LOGPIXELSX* *y LOGPIXELSY.* La fórmula para determinar el tamaño horizontal y vertical de una ventana es la misma que con el [ejemplo de Direct2D](../direct2d/direct2d-portal.md) anterior.
 
-En el código siguiente se usa la función [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para crear una ventana de 640 x 480, escalada a PPP del sistema.
+El código siguiente usa la [**función GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para crear una ventana de 640 x 480, escalada a ppp del sistema.
 
 
 ```C++
@@ -100,12 +100,12 @@ hWnd = CreateWindow(
 
 
 
-## <a name="step-2-declare-that-the-application-is-dpi-aware"></a>Paso 2: declarar que la aplicación está DPI-Aware
+## <a name="step-2-declare-that-the-application-is-dpi-aware"></a>Paso 2: Declarar que la aplicación está DPI-Aware
 
-Cuando una aplicación se declara para que sea compatible con PPP, es una instrucción que especifica que la aplicación se comporta bien con valores de PPP de hasta 200 ppp. En Windows Vista y Windows 7, cuando está habilitada la virtualización de PPP, se escalan las aplicaciones que no reconocen los PPP y las aplicaciones reciben datos virtualizados de las API del sistema, como la función [**GetSystemMetric**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) . Para declarar que la aplicación es compatible con PPP, complete los pasos siguientes.
+Cuando una aplicación se declara compatible con PPP, es una instrucción que especifica que la aplicación se comporta bien en la configuración de PPP de hasta 200 PPP. En Windows Vista y Windows 7, cuando se habilita la virtualización de PPP, las aplicaciones que no tienen reconocimiento de PPP se escalan y las aplicaciones reciben datos virtualizados de las API del sistema, como la [**función GetSystemMetric.**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) Para declarar que la aplicación es compatible con PPP, complete los pasos siguientes.
 
-1.  Cree un archivo denominado DeclareDPIAware. manifest.
-2.  Copie el siguiente código XML en el archivo y guárdelo:
+1.  Cree un archivo denominado DeclareDPIAware.manifest.
+2.  Copie el siguiente xml en el archivo y guárdelo:
     ```C++
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" >
       <asmv3:application>
@@ -118,7 +118,7 @@ Cuando una aplicación se declara para que sea compatible con PPP, es una instru
 
     
 
-3.  En el archivo. vcproj del proyecto, agregue la entrada siguiente dentro de cada elemento de configuración en VisualStudioProject/Configurations:
+3.  En el archivo .vcproj del proyecto, agregue la siguiente entrada dentro de cada elemento Configuration en VisualStudioProject/Configurations:
     ```C++
     <Tool
         Name="VCManifestTool"
@@ -132,9 +132,9 @@ Cuando una aplicación se declara para que sea compatible con PPP, es una instru
 
 <dl> <dt>
 
-[Direct2D y High-PPP](../direct2d/direct2d-and-high-dpi.md)
+[Direct2D y valores altos de PPP](../direct2d/direct2d-and-high-dpi.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
