@@ -1,37 +1,37 @@
 ---
-title: Lectura de usuario no puede cambiar la contraseña (proveedor LDAP)
-description: La capacidad de un usuario de cambiar su contraseña es un permiso que se puede conceder o denegar.
+title: Leer el usuario no puede cambiar la contraseña (proveedor LDAP)
+description: Obtenga información sobre cómo determinar si un usuario tiene permiso para cambiar una contraseña para el proveedor LDAP. La capacidad de un usuario para cambiar una contraseña se puede conceder o denegar.
 ms.assetid: d0d95d20-dcdb-453a-9d15-c386217927c8
 ms.tgt_platform: multiple
 keywords:
-- Lectura de usuario no puede cambiar la contraseña (proveedor LDAP) ADSI
-- El usuario no puede cambiar la contraseña (proveedor LDAP) ADSI, leer
-- ADSI Provider LDAP, ejemplos de administración de usuarios, el usuario debe cambiar la contraseña en el siguiente inicio de sesión, leer
+- AdsI de lectura del usuario no se puede cambiar la contraseña (proveedor LDAP)
+- ADSI del usuario no se puede cambiar la contraseña (proveedor LDAP), leer
+- ADSI del proveedor LDAP, ejemplos de administración de usuarios, El usuario debe cambiar la contraseña en el siguiente inicio de sesión, leer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ea818c8b01fbbac6b80037de13b25a82a07944
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b26818ee02d3876aa209dcd4990288ea1cfe96fc
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104533489"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405938"
 ---
-# <a name="reading-user-cannot-change-password-ldap-provider"></a>Lectura de usuario no puede cambiar la contraseña (proveedor LDAP)
+# <a name="reading-user-cannot-change-password-ldap-provider"></a>Leer el usuario no puede cambiar la contraseña (proveedor LDAP)
 
-La capacidad de un usuario de cambiar su contraseña es un permiso que se puede conceder o denegar.
+La capacidad de un usuario para cambiar su contraseña es un permiso que se puede conceder o denegar.
 
-**Para determinar si se concede o se deniega el permiso cambiar contraseña**
+**Para determinar si se concede o se deniega el permiso de cambio de contraseña**
 
-1.  Enlazar al objeto de usuario.
-2.  Obtenga el objeto [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la propiedad **ntSecurityDescriptor** del objeto de usuario.
-3.  Obtenga una interfaz [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la propiedad [**IADsSecurityDescriptor. DiscretionaryAcl**](iadssecuritydescriptor-property-methods.md) .
-4.  Enumerar las entradas de control de acceso (ACE) para el objeto y buscar las ACE que tienen el GUID de cambio de contraseña ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry. ObjectType**](iadsaccesscontrolentry-property-methods.md) y las entidades de seguridad conocidas de "todos" o "NT Authority \\ Self" para la propiedad **IADsAccessControlEntry. Trustee** .
+1.  Enlace al objeto de usuario.
+2.  Obtenga el [**objeto IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la **propiedad ntSecurityDescriptor** del objeto de usuario.
+3.  Obtenga una [**interfaz IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la [**propiedad IADsSecurityDescriptor.DiscretionaryAcl.**](iadssecuritydescriptor-property-methods.md)
+4.  Enumerar las entradas de control de acceso (ACE) del objeto y buscar las ACE que tienen el GUID de contraseña de cambio ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) y las entidades de seguridad conocidas "Everyone" o "NT AUTHORITY SELF" para la propiedad \\ **IADsAccessControlEntry.Trustee.**
     > [!Note]  
-    > Las cadenas "todos" y "NT AUTHORITY \\ Self" se localizan en función del idioma del primer controlador de dominio del dominio. Por lo tanto, las cadenas no deben usarse directamente. Los nombres de cuenta se deben obtener en tiempo de ejecución mediante una llamada a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID para las entidades de seguridad conocidas "todos" ("s-1-1-0") y "NT Authority \\ Self" ("s-1-5-10"). Los siguientes ejemplos de C++ **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** Code muestran cómo hacerlo.
+    > Las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador \\ de dominio del dominio. Por lo tanto, las cadenas no deben usarse directamente. Los nombres de cuenta se deben obtener en tiempo de ejecución llamando a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID de las entidades de seguridad conocidas "S-1-1-0") y "NT AUTHORITY \\ SELF" ("S-1-5-10"). Los siguientes ejemplos de código de C++ **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** muestran cómo hacerlo.
 
-     
+     
 
-5.  Si las ACE "everyone" y "NT AUTHORITY \\ Self" tienen el valor **de \_ objeto ADS ACETYPE \_ acceso \_ denegado \_** para la propiedad [**IADsAccessControlEntry. ACETYPE**](iadsaccesscontrolentry-property-methods.md) , se deniega el permiso.
+5.  Si las ACE "Everyone" y "NT AUTHORITY SELF" tienen el valor \\ **ADS \_ ACETYPE ACCESS \_ DENIED \_ \_ OBJECT** para la propiedad [**IADsAccessControlEntry.AceType,**](iadsaccesscontrolentry-property-methods.md) se deniega el permiso.
 
 ## <a name="example-code"></a>Código de ejemplo
 
@@ -414,12 +414,12 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszUserDN,
 
 
 
-En el ejemplo de código siguiente se muestra cómo determinar si el usuario no puede cambiar el permiso de contraseña mediante el proveedor LDAP.
+En el ejemplo de código siguiente se muestra cómo determinar el permiso User Cannot Change Password mediante el proveedor LDAP.
 
 > [!Note]  
-> El siguiente ejemplo de código solo funciona para los dominios en los que el idioma principal es el inglés, ya que las cadenas "todos" y "NT AUTHORITY \\ Self" se localizan en función del idioma del primer controlador de dominio del dominio. No hay ninguna manera de Visual Basic para obtener los nombres de cuenta de una entidad de seguridad conocida sin llamar a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . Si usa Visual Basic, se recomienda que use el proveedor de WinNT para determinar el permiso de usuario no puede cambiar la contraseña, tal como se muestra en [lectura de usuario no puede cambiar la contraseña (proveedor de WinNT)](reading-user-cannot-change-password-winnt-provider.md).
+> El ejemplo de código siguiente solo funciona para los dominios en los que el idioma principal es el inglés, porque las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio. No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Si usa Visual Basic, se recomienda usar el proveedor winNT para determinar el permiso Usuario no se puede cambiar la contraseña, como se muestra en Lectura del usuario no se puede cambiar la contraseña [(proveedor winNT).](reading-user-cannot-change-password-winnt-provider.md)
 
- 
+ 
 
 
 ```VB
@@ -475,6 +475,6 @@ End Function
 
 
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento JobDigitalSignatureProcessing, que describe cómo configurar el procesamiento de firmas digitales para todo el trabajo.
 ms.assetid: 0592f7a4-cace-41b0-91e3-2811f72aeb3e
 title: JobDigitalSignatureProcessing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aad9dbe0ba82d219a28602178efa2e102ccf167b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f9491a921d9d733dd0de0a4e5133d5c6690b2b4a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998292"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408948"
 ---
 # <a name="jobdigitalsignatureprocessing"></a>JobDigitalSignatureProcessing
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la configuración del procesamiento de firmas digitales para todo el trabajo. Solo se aplica al contenido que contiene firmas digitales.
 
@@ -24,7 +24,7 @@ Describe la configuración del procesamiento de firmas digitales para todo el tr
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |
@@ -58,7 +58,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                   | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres <br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción<br/>                                            |
+| \_OptionName\_<br/>          | string<br/> | caracteres <br/> | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción<br/>                                            |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>         | True, False<br/>                                                                                                                                                                | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobDigitalSignatureProcessing">

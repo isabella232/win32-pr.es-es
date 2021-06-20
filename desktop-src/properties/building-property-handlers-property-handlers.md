@@ -1,17 +1,17 @@
 ---
-description: En este tema se explica cómo crear y registrar controladores de propiedades para trabajar con el sistema de propiedades de Windows.
+description: En este artículo se explica cómo inicializar controladores de propiedades para trabajar con el sistema de propiedades de Windows.
 ms.assetid: 3b54dd65-b7db-4e6a-bc3d-1008fdabcfa9
-title: Inicializar controladores de propiedades
+title: Inicialización de controladores de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f8eb11bc44217e508313bfb477c65925b44216e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7d7626f92b3d81a6764e635c10302747f82a383
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277066"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406998"
 ---
-# <a name="initializing-property-handlers"></a>Inicializar controladores de propiedades
+# <a name="initializing-property-handlers"></a>Inicialización de controladores de propiedades
 
 En este tema se explica cómo crear y registrar controladores de propiedades para trabajar con el sistema de propiedades de Windows.
 
@@ -19,44 +19,44 @@ Este tema se organiza de la siguiente manera:
 
 -   [Controladores de propiedades](#property-handlers)
 -   [Antes de comenzar](#before-you-begin)
--   [Inicializar controladores de propiedades](#initializing-property-handlers)
--   [Almacén de propiedades en memoria](#in-memory-property-store)
+-   [Inicialización de controladores de propiedades](#initializing-property-handlers)
+-   [En memoria Almacén de propiedades](#in-memory-property-store)
 -   [Trabajar con PROPVARIANT-Based valores](#dealing-with-propvariant-based-values)
--   [Compatibilidad con metadatos abiertos](#supporting-open-metadata)
+-   [Admitir metadatos abiertos](#supporting-open-metadata)
 -   [Contenido de texto completo](#full-text-contents)
--   [Proporcionar valores para las propiedades](#providing-values-for-properties)
--   [Escribir valores hacia atrás](#writing-back-values)
+-   [Proporcionar valores para propiedades](#providing-values-for-properties)
+-   [Escritura de valores devueltos](#writing-back-values)
 -   [Implementación de IPropertyStoreCapabilities](#implementing-ipropertystorecapabilities)
--   [Registrar y distribuir controladores de propiedades](#registering-and-distributing-property-handlers)
+-   [Registro y distribución de controladores de propiedades](#registering-and-distributing-property-handlers)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="property-handlers"></a>Controladores de propiedades
 
-Los controladores de propiedades son una parte fundamental del sistema de propiedades. El indexador los invoca en proceso para leer e indexar los valores de propiedad, y el explorador de Windows también los invoca en el proceso para leer y escribir los valores de propiedad directamente en los archivos. Estos controladores deben escribirse y probarse cuidadosamente para evitar el rendimiento degradado o la pérdida de datos en los archivos afectados. Para obtener más información sobre las consideraciones específicas del indexador que afectan a la implementación del controlador de propiedades, vea [desarrollar controladores de propiedades para Windows Search](../search/-search-3x-wds-extidx-propertyhandlers.md).
+Los controladores de propiedades son una parte fundamental del sistema de propiedades. El indexador los invoca en proceso para leer e indexar valores de propiedad, y también se invocan mediante Explorador de Windows en proceso para leer y escribir valores de propiedad directamente en los archivos. Estos controladores deben escribirse y probarse cuidadosamente para evitar un rendimiento degradado o la pérdida de datos en los archivos afectados. Para obtener más información sobre las consideraciones específicas del indexador que afectan a la implementación del controlador de propiedades, vea [Developing Property Handlers for Windows Search](../search/-search-3x-wds-extidx-propertyhandlers.md).
 
-En este tema se describe un ejemplo de formato de archivo basado en XML que describe una receta con una extensión de nombre de archivo. receta. La extensión de nombre de archivo. Recipe se registra como su propio formato de archivo distinto en lugar de basarse en el formato de archivo. XML más genérico, cuyo controlador usa un flujo secundario para almacenar propiedades. Se recomienda registrar las extensiones de nombre de archivo únicas para los tipos de archivo.
+En este tema se describe un formato de archivo basado en XML de ejemplo que describe una receta con una extensión de nombre de archivo .recipe. La extensión de nombre de archivo .recipe se registra como su propio formato de archivo distinto en lugar de basarse en el formato de archivo .xml más genérico, cuyo controlador usa una secuencia secundaria para almacenar propiedades. Se recomienda registrar extensiones de nombre de archivo únicas para los tipos de archivo.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los controladores de propiedades son objetos COM que crean la abstracción [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para un formato de archivo específico. Leen (analizan) y escriben este formato de archivo de forma que se ajuste a su especificación. Algunos controladores de propiedades realizan su trabajo en función de las API que abstraen el acceso a un formato de archivo específico. Antes de desarrollar un controlador de propiedades para el formato de archivo, debe comprender cómo el formato de archivo almacena las propiedades y cómo se asignan esas propiedades (nombres y valores) en la abstracción del almacén de propiedades.
+Los controladores de propiedades son objetos COM que crean la abstracción [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para un formato de archivo específico. Leen (analizan) y escriben este formato de archivo de forma que se ajuste a su especificación. Algunos controladores de propiedades hacen su trabajo en función de las API que abstraen el acceso a un formato de archivo específico. Antes de desarrollar un controlador de propiedades para el formato de archivo, debe comprender cómo almacena las propiedades el formato de archivo y cómo esas propiedades (nombres y valores) se asignan a la abstracción del almacén de propiedades.
 
-Al planear la implementación, recuerde que los controladores de propiedades son componentes de bajo nivel que se cargan en el contexto de procesos como el explorador de Windows, el indizador de Windows Search y aplicaciones de terceros que utilizan el modelo de programación de elementos de Shell. Como resultado, los controladores de propiedades no se pueden implementar en código administrado y deben implementarse en C++. Si el controlador usa cualquier API o servicio para realizar su trabajo, debe asegurarse de que esos servicios pueden funcionar correctamente en los entornos en los que se carga el controlador de propiedades.
+Al planear la implementación, recuerde que los controladores de propiedades son componentes de bajo nivel que se cargan en el contexto de procesos como Explorador de Windows, el indexador de Windows Search y aplicaciones de terceros que usan el modelo de programación de elementos de Shell. Como resultado, los controladores de propiedades no se pueden implementar en código administrado y deben implementarse en C++. Si el controlador usa alguna API o servicio para realizar su trabajo, debe asegurarse de que esos servicios pueden funcionar correctamente en los entornos en los que se carga el controlador de propiedades.
 
 > [!Note]  
-> Los controladores de propiedades siempre se asocian a tipos de archivo específicos; por lo tanto, si el formato de archivo contiene propiedades que requieren un controlador de propiedades personalizado, debe registrar siempre una extensión de nombre de archivo única para cada formato de archivo.
+> Los controladores de propiedades siempre están asociados a tipos de archivo específicos; Por lo tanto, si el formato de archivo contiene propiedades que requieren un controlador de propiedades personalizado, siempre debe registrar una extensión de nombre de archivo única para cada formato de archivo.
 
  
 
-## <a name="initializing-property-handlers"></a>Inicializar controladores de propiedades
+## <a name="initializing-property-handlers"></a>Inicialización de controladores de propiedades
 
-Antes de que el sistema use una propiedad, se inicializa llamando a una implementación de [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream). El controlador de propiedad debe inicializarse haciendo que el sistema lo asigne a una secuencia en lugar de dejar esa asignación a la implementación del controlador. Este método de inicialización garantiza lo siguiente:
+Antes de que el sistema utilice una propiedad, se inicializa mediante una llamada a una implementación de [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream). El controlador de propiedades se debe inicializar haciendo que el sistema le asigne una secuencia en lugar de dejar esa asignación a la implementación del controlador. Este método de inicialización garantiza lo siguiente:
 
--   El controlador de propiedades puede ejecutarse en un proceso restringido (una característica de seguridad importante) sin tener derechos de acceso para leer o escribir archivos directamente, en lugar de tener acceso a su contenido a través de la secuencia.
--   Se puede confiar en el sistema para controlar el archivo bloqueos oportunistas correctamente, que es una medida de confiabilidad importante.
--   El sistema de propiedades proporciona un servicio de almacenamiento seguro automático sin ninguna funcionalidad adicional requerida por la implementación del controlador de propiedad. Para obtener más información sobre las secuencias, consulte la sección [escritura de valores de reserva](#writing-back-values) .
--   El uso de [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) abstrae la implementación de los detalles del sistema de archivos. Esto permite al controlador admitir la inicialización a través de almacenamientos alternativos, como una carpeta de protocolo de transferencia de archivos (FTP) o un archivo comprimido con la extensión de nombre de archivo. zip.
+-   El controlador de propiedades se puede ejecutar en un proceso restringido (una característica de seguridad importante) sin tener derechos de acceso para leer o escribir archivos directamente, en lugar de tener acceso a su contenido a través de la secuencia.
+-   El sistema puede ser de confianza para controlar los bloqueos de archivos correctamente, lo que es una medida de confiabilidad importante.
+-   El sistema de propiedades proporciona un servicio de guardado seguro automático sin ninguna funcionalidad adicional necesaria en la implementación del controlador de propiedades. Consulte la sección [Escritura de valores](#writing-back-values) devueltos para obtener más información sobre las secuencias.
+-   El uso de [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) abstrae la implementación de los detalles del sistema de archivos. Esto permite al controlador admitir la inicialización a través de almacenamientos alternativos, como una carpeta protocolo de transferencia de archivos (FTP) o un archivo comprimido con una extensión de nombre .zip archivo.
 
-Hay casos en los que no es posible la inicialización con secuencias. En esas situaciones, hay dos interfaces adicionales que los controladores de propiedades pueden implementar: [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile) y [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem). Si un controlador de propiedad no implementa [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), debe dejar de ejecutarse en el proceso aislado en el que el indexador del sistema la colocaría de forma predeterminada si se produjeron cambios en la secuencia. Para no participar en esta característica, establezca el siguiente valor del registro.
+Hay casos en los que no es posible inicializar con secuencias. En esas situaciones, hay dos interfaces más que los controladores de propiedades pueden implementar: [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile) e [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem). Si un controlador de propiedades no implementa [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), debe rechazar la ejecución en el proceso aislado en el que el indexador del sistema lo colocaría de forma predeterminada si se produjera un cambio en la secuencia. Para rechazar esta característica, establezca el siguiente valor del Registro.
 
 ```
 HKEY_CLASSES_ROOT
@@ -65,12 +65,12 @@ HKEY_CLASSES_ROOT
          DisableProcessIsolation = 1
 ```
 
-Sin embargo, es mucho mejor implementar [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) y realizar una inicialización basada en streaming. El controlador de propiedades será más seguro y confiable como resultado. Generalmente, la deshabilitación del aislamiento de procesos está destinada únicamente a los controladores de propiedades heredadas y se debe evitar por cualquier nuevo código.
+Sin embargo, es mucho mejor implementar [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) y realizar una inicialización basada en secuencias. Como resultado, el controlador de propiedades será más seguro y confiable. Por lo general, deshabilitar el aislamiento de procesos solo está pensado para controladores de propiedades heredados y cualquier código nuevo debe evitarlo.
 
-Para examinar la implementación de un controlador de propiedades en detalle, examine el siguiente ejemplo de código, que es una implementación de [**IInitializeWithStream:: Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize). El controlador se inicializa cargando un documento receta basado en XML a través de un puntero a la instancia de [**IStream**](/windows/win32/api/objidl/nn-objidl-istream) asociada de ese documento. La variable **\_ spDocEle** que se usa cerca del final del ejemplo de código se define anteriormente en el ejemplo como MSXML2:: IXMLDOMElementPtr.
+Para examinar la implementación de un controlador de propiedades en detalle, examine el ejemplo de código siguiente, que es una implementación de [**IInitializeWithStream::Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize). El controlador se inicializa cargando un documento de receta basado en XML a través de un puntero a la instancia [**IStream**](/windows/win32/api/objidl/nn-objidl-istream) asociada de ese documento. La variable **\_ spDocEle** usada cerca del final del ejemplo de código se define anteriormente en el ejemplo como MSXML2::IXMLDOMElementPtr.
 
 > [!Note]  
-> Lo siguiente y todos los ejemplos de código siguientes se han tomado del ejemplo de controlador de recetas incluido en el kit de desarrollo de software (SDK) de Windows. .
+> Los ejemplos de código siguientes y todos los siguientes se toman del ejemplo de controlador de recetas incluido en el Kit de desarrollo de software de Windows (SDK). .
 
  
 
@@ -96,9 +96,9 @@ HRESULT CRecipePropertyStore::Initialize(IStream *pStream, DWORD grfMode)
 
 
 
-Ti 
+Â 
 
-Una vez cargado el propio documento, las propiedades que se van a mostrar en el explorador de Windows se cargan llamando al método **\_ LoadProperties** protegido, como se muestra en el ejemplo de código siguiente. Este proceso se examina en detalle en la sección siguiente.
+Una vez cargado el propio documento, las propiedades que se van a mostrar en Explorador de Windows se cargan mediante una llamada al método **\_ LoadProperties** protegido, como se muestra en el ejemplo de código siguiente. Este proceso se examina en detalle en la sección siguiente.
 
 
 ```
@@ -134,15 +134,15 @@ Una vez cargado el propio documento, las propiedades que se van a mostrar en el 
 
 
 
-Si el flujo es de solo lectura, pero el parámetro *grfMode* contiene la \_ marca ReadWrite de STGM, se debe producir un error en la inicialización y devolver STG \_ E \_ ACCESSDENIED. Sin esta comprobación, el explorador de Windows muestra los valores de propiedad como de escritura, aunque no lo hacen, lo que provoca una experiencia de usuario final confusa.
+Si la secuencia es de solo lectura pero el parámetro *grfMode* contiene la marca STGM READWRITE, la inicialización debe producir un error y devolver \_ STG \_ E \_ ACCESSDENIED. Sin esta comprobación, Explorador de Windows los valores de propiedad como editables aunque no lo sean, lo que conduce a una experiencia confusa del usuario final.
 
-El controlador de propiedad se inicializa una sola vez en su duración. Si se solicita una segunda inicialización, el controlador debe devolver `HRESULT_FROM_WIN32(ERROR_ALREADY_INITIALIZED)` .
+El controlador de propiedades se inicializa solo una vez en su duración. Si se solicita una segunda inicialización, el controlador debe devolver `HRESULT_FROM_WIN32(ERROR_ALREADY_INITIALIZED)` .
 
-## <a name="in-memory-property-store"></a>In-Memory almacén de propiedades
+## <a name="in-memory-property-store"></a>In-Memory Almacén de propiedades
 
-Antes de examinar la implementación de **\_ LoadProperties**, debe comprender la matriz **PropertyMap** utilizada en el ejemplo para asignar las propiedades del documento XML a las propiedades existentes en el sistema de propiedades a través de sus valores PKEY.
+Antes de ver la implementación de **\_ LoadProperties,** debe comprender la matriz **PropertyMap** que se usa en el ejemplo para asignar propiedades del documento XML a propiedades existentes en el sistema de propiedades a través de sus valores PKEY.
 
-No debe exponer todos los elementos y atributos del archivo XML como una propiedad. En su lugar, seleccione solo aquellos que cree que serán útiles para los usuarios finales de la organización de sus documentos (en este caso, recetas). Este es un concepto importante que hay que tener en cuenta al desarrollar los controladores de propiedades: la diferencia entre la información que es realmente útil para los escenarios de la organización y la información que pertenece a los detalles del archivo y se puede ver abriendo el propio archivo. Las propiedades no pretenden ser una duplicación completa de un archivo XML.
+No debe exponer todos los elementos y atributos del archivo XML como una propiedad. En su lugar, seleccione solo aquellos que cree que serán útiles para los usuarios finales en la organización de sus documentos (en este caso, recetas). Este es un concepto importante que se debe tener en cuenta al desarrollar los controladores de propiedades: la diferencia entre la información que es realmente útil para escenarios organizativos y la información que pertenece a los detalles del archivo y se puede ver abriendo el propio archivo. Las propiedades no pretenden ser una duplicación completa de un archivo XML.
 
 
 ```
@@ -169,7 +169,7 @@ PropertyMap c_rgPropertyMap[] =
 
 
 
-Esta es la implementación completa del método **\_ LoadProperties** llamado por [**IInitializeWithStream:: Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize).
+Esta es la implementación completa del **\_ método LoadProperties** llamado por [**IInitializeWithStream::Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize).
 
 
 ```
@@ -204,9 +204,9 @@ HRESULT CRecipePropertyStore::_LoadProperties()
 
 
 
-El método **\_ LoadProperties** llama a la función auxiliar de Shell [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) para crear un almacén de propiedades en memoria (caché) para las propiedades controladas. Mediante el uso de una memoria caché, se realiza un seguimiento de los cambios. Esto le libera del seguimiento de si se ha cambiado un valor de propiedad en la memoria caché, pero aún no se ha guardado en el almacenamiento persistente. También le libera de la persistencia innecesaria de valores de propiedad que no han cambiado.
+El **\_ método LoadProperties** llama a la función auxiliar de Shell [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) para crear un almacén de propiedades en memoria (caché) para las propiedades administradas. Mediante el uso de una memoria caché, se realiza un seguimiento de los cambios. Esto le libera del seguimiento de si un valor de propiedad se ha cambiado en la memoria caché pero aún no se ha guardado en el almacenamiento persistente. También le libera de conservar los valores de propiedad que no han cambiado.
 
-El método **\_ LoadProperties** también llama a **\_ LoadProperty** cuya implementación se muestra en el código siguiente) una vez para cada propiedad asignada. **\_ LoadProperty** obtiene el valor de la propiedad tal y como se especifica en el elemento **PROPERTYMAP** de la secuencia XML y lo asigna a la memoria caché en memoria a través de una llamada a [**IPropertyStoreCache:: SetValueAndState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate). La \_ marca de PSC normal en la llamada a **IPropertyStoreCache:: SetValueAndState** indica que el valor de propiedad no se ha modificado desde el momento en que entró en la memoria caché.
+El **\_ método LoadProperties** también llama **\_ a LoadProperty** cuya implementación se muestra en el código siguiente) una vez para cada propiedad asignada. **\_ LoadProperty** obtiene el valor de la propiedad tal como se especifica en el elemento **PropertyMap** del flujo XML y lo asigna a la memoria caché en memoria mediante una llamada a [**IPropertyStoreCache::SetValueAndState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate). La marca PSC NORMAL de la llamada a \_ **IPropertyStoreCache::SetValueAndState** indica que el valor de propiedad no se ha modificado desde el momento en que entró en la memoria caché.
 
 
 ```
@@ -255,9 +255,9 @@ HRESULT CRecipePropertyStore::_LoadProperty(PropertyMap &map)
 
 ## <a name="dealing-with-propvariant-based-values"></a>Trabajar con PROPVARIANT-Based valores
 
-En la implementación de **\_ LoadProperty**, se proporciona un valor de propiedad en forma de [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant). Se proporciona un conjunto de API en el kit de desarrollo de software (SDK) para convertir tipos primitivos como **PWSTR** o **int** a o desde tipos **PROPVARIANT** . Estas API se encuentran en Propvarutil. h.
+En la implementación de **\_ LoadProperty**, se proporciona un valor de propiedad en forma de [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant). Se proporciona un conjunto de API en el kit de desarrollo de software (SDK) para convertir de tipos primitivos como **PWSTR** o **int** a o de tipos **PROPVARIANT.** Estas API se encuentran en Propvarutil.h.
 
-Por ejemplo, para convertir un [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) en una cadena, puede usar [**PropVariantToString**](/windows/win32/api/propvarutil/nf-propvarutil-propvarianttostring) como se muestra aquí.
+Por ejemplo, para convertir [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) en una cadena, puede usar [**PropVariantToString**](/windows/win32/api/propvarutil/nf-propvarutil-propvarianttostring) como se muestra aquí.
 
 
 ```
@@ -266,7 +266,7 @@ PropVariantToString(REFPROPVARIANT propvar, PWSTR psz, UINT cch);
 
 
 
-Para inicializar un PROPVARIANT de una cadena, puede usar [**InitPropVariantFromString**](/windows/win32/api/propvarutil/nf-propvarutil-initpropvariantfromstring).
+Para inicializar propVARIANT a partir de una cadena, puede usar [**InitPropVariantFromString**](/windows/win32/api/propvarutil/nf-propvarutil-initpropvariantfromstring).
 
 
 ```
@@ -275,7 +275,7 @@ InitPropVariantFromString(PCWSTR psz, PROPVARIANT *ppropvar);
 
 
 
-Como puede ver en cualquiera de los archivos de recetas incluidos en el ejemplo, puede haber más de una palabra clave en cada archivo. Para tener en cuenta esto, el sistema de propiedades admite cadenas de varios valores que se representan como un vector de cadenas (por ejemplo, "VT \_ Vector \| VT \_ LPWStr"). El método **\_ LoadVectorProperty** del ejemplo utiliza valores basados en vectores.
+Como puede ver en cualquiera de los archivos de receta incluidos en el ejemplo, puede haber más de una palabra clave en cada archivo. Para tener esto en cuenta, el sistema de propiedades admite cadenas multivalor representadas como un vector de cadenas (por ejemplo, "VT \_ VECTOR \| VT \_ LPWSTR"). El **\_ método LoadVectorProperty** del ejemplo usa valores basados en vectores.
 
 
 ```
@@ -330,11 +330,11 @@ HRESULT CRecipePropertyStore::_LoadVectorProperty
 
 
 
-Si un valor no existe en el archivo, no devuelva un error. En su lugar, establezca el valor en VT \_ vacío y devuelva los valores **\_ correctos**. VT \_ vacío indica que el valor de la propiedad no existe.
+Si no existe un valor en el archivo, no devuelva un error. En su lugar, establezca el valor en VT \_ EMPTY y devuelva S **\_ OK**. VT \_ EMPTY indica que el valor de propiedad no existe.
 
-## <a name="supporting-open-metadata"></a>Compatibilidad con metadatos abiertos
+## <a name="supporting-open-metadata"></a>Admitir metadatos abiertos
 
-En este ejemplo se usa un formato de archivo basado en XML. Su esquema se puede extender para admitir propiedades que no se han considerado durante developmet, por ejemplo. Este sistema se conoce como metadatos abiertos. En este ejemplo se amplía el sistema de propiedades mediante la creación de un nodo bajo el elemento **Recipe** denominado **ExtendedProperties**, como se muestra en el ejemplo de código siguiente.
+En este ejemplo se usa un formato de archivo basado en XML. Su esquema se puede extender para admitir propiedades que no se han pensado en durante developmet, por ejemplo. Este sistema se conoce como metadatos abiertos. En este ejemplo se extiende el sistema de propiedades mediante la creación de un nodo en el elemento **Recipe** denominado **ExtendedProperties**, como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -347,7 +347,7 @@ En este ejemplo se usa un formato de archivo basado en XML. Su esquema se puede 
 
 
 
-Para cargar propiedades extendidas persistentes durante la inicialización, implemente el método **\_ LoadExtendedProperties** , como se muestra en el ejemplo de código siguiente.
+Para cargar propiedades extendidas persistentes durante la inicialización, implemente el **\_ método LoadExtendedProperties,** como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -388,7 +388,7 @@ HRESULT CRecipePropertyStore::_LoadExtendedProperties()
 
 
 
-Las API de serialización declaradas en propsys. h se utilizan para serializar y deserializar los tipos de [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) en blobs de datos y, a continuación, se usa la codificación base64 para serializar esos blobs en cadenas que se pueden guardar en el XML. Estas cadenas se almacenan en el atributo **EncodedValue** del elemento **ExtendedProperties** . El siguiente método de utilidad, implementado en el archivo util. cpp del ejemplo, realiza la serialización. Comienza con una llamada a la función [**StgSerializePropVariant**](/windows/win32/api/propvarutil/nf-propvarutil-stgserializepropvariant) para realizar la serialización binaria, como se muestra en el ejemplo de código siguiente.
+Las API de serialización declaradas en Propsys.h se usan para serializar y deserializar tipos [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) en blobs de datos y, a continuación, la codificación Base64 se usa para serializar esos blobs en cadenas que se pueden guardar en el XML. Estas cadenas se almacenan en el **atributo EncodedValue** del **elemento ExtendedProperties.** El siguiente método de utilidad, implementado en el archivo Util.cpp del ejemplo, realiza la serialización. Comienza con una llamada a la función [**StgSerializePropVariant**](/windows/win32/api/propvarutil/nf-propvarutil-stgserializepropvariant) para realizar la serialización binaria, como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -401,7 +401,7 @@ HRESULT SerializePropVariantAsString(const PROPVARIANT *ppropvar, PWSTR *pszOut)
 
 
 
-A continuación, la función [**CryptBinaryToString**](/windows/win32/api/wincrypt/nf-wincrypt-cryptbinarytostringa), declarada en Wincrypt. h, realiza la conversión Base64.
+A continuación, la función [**Â CryptBinaryToString,**](/windows/win32/api/wincrypt/nf-wincrypt-cryptbinarytostringa)declarada en Wincrypt.h, realiza la conversión base64.
 
 
 ```
@@ -445,33 +445,33 @@ A continuación, la función [**CryptBinaryToString**](/windows/win32/api/wincry
 
 
 
-La función **DeserializePropVariantFromString** , que también se encuentra en util. cpp, invierte la operación y deserializa los valores del archivo XML.
+La **función DeserializePropVariantFromString,** que también se encuentra en Util.cpp, invierte la operación y deserializa los valores del archivo XML.
 
-Para obtener información sobre la compatibilidad con los metadatos abiertos, vea "tipos de archivo que admiten metadatos abiertos" en [tipos de archivo](../shell/fa-file-types.md).
+Para obtener información sobre la compatibilidad con metadatos abiertos, vea "Tipos de archivo que admiten metadatos abiertos" en [Tipos de archivo](../shell/fa-file-types.md).
 
-## <a name="full-text-contents"></a>Contenido de Full-Text
+## <a name="full-text-contents"></a>Full-Text contenido
 
-Los controladores de propiedades también pueden facilitar una búsqueda de texto completo del contenido del archivo, y son una manera sencilla de proporcionar esa funcionalidad si el formato del archivo no es demasiado complicado. Existe una forma alternativa y más eficaz de proporcionar el texto completo del archivo a través de la implementación de la interfaz de [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) .
+Los controladores de propiedades también pueden facilitar una búsqueda de texto completo del contenido del archivo y son una manera sencilla de proporcionar esa funcionalidad si el formato de archivo no es demasiado complicado. Hay una manera alternativa y más eficaz de proporcionar el texto completo del archivo a través de la implementación de la interfaz [**IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
 
-En la tabla siguiente se resumen las ventajas de cada enfoque mediante [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) o [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+En la tabla siguiente se resumen las ventajas de cada enfoque mediante [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) o [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 
 
-| Capacidad                                   | Imaging                      | IPropertyStore |
+| Capacidad                                   | Ifilter                      | IPropertyStore |
 |----------------------------------------------|------------------------------|----------------|
-| ¿Permite la escritura de datos en archivos?                  | No                           | Sí            |
-| ¿Proporciona una combinación de contenido y propiedades?      | Sí                          | Sí            |
-| Entornos?                                | Sí                          | No             |
+| ¿Permite la reescribición en archivos?                  | No                           | Sí            |
+| ¿Proporciona combinación de contenido y propiedades?      | Sí                          | Sí            |
+| ¿Multilingüe?                                | Sí                          | No             |
 | ¿MIME/Embedded?                               | Sí                          | No             |
-| ¿Límites de texto?                             | Oración, párrafo, capítulo | None           |
-| ¿La implementación es compatible con SP/SQL Server? | Sí                          | No             |
+| ¿Límites de texto?                             | Oración, párrafo, capítulo | Ninguno           |
+| ¿Implementación compatible con SPS/SQL Server? | Sí                          | No             |
 | Implementación                               | Complex                      | Simple         |
 
 
 
  
 
-En el ejemplo de controlador de recetas, el formato de archivo receta no tiene ningún requisito complejo, por lo que solo se ha implementado [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para la compatibilidad de texto completo. La búsqueda de texto completo se implementa para los nodos XML nombrados en la matriz siguiente.
+En el ejemplo de controlador de recetas, el formato de archivo de receta no tiene requisitos complejos, por lo que solo se ha implementado [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para la compatibilidad con texto completo. La búsqueda de texto completo se implementa para los nodos XML denominados en la siguiente matriz.
 
 
 ```
@@ -485,7 +485,7 @@ const PWSTR c_rgszContentXPath[] = {
 
 
 
-El sistema de propiedades contiene la `System.Search.Contents` propiedad (contenido de búsqueda de PKEY \_ \_ ), que se creó para proporcionar contenido de texto completo al indexador. El valor de esta propiedad nunca se muestra directamente en la interfaz de usuario; el texto de todos los nodos XML nombrados en la matriz anterior se concatena en una sola cadena. A continuación, esa cadena se proporciona al indexador como el contenido de texto completo del archivo receta a través de una llamada a [**IPropertyStoreCache:: SetValueAndState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) como se muestra en el ejemplo de código siguiente.
+El sistema de propiedades contiene la propiedad (Contenido de búsqueda PKEY), que se creó para proporcionar contenido `System.Search.Contents` de texto completo al \_ \_ indexador. El valor de esta propiedad nunca se muestra directamente en la interfaz de usuario; el texto de todos los nodos XML denominados en la matriz anterior se concatena en una sola cadena. Después, esa cadena se proporciona al indexador como contenido de texto completo del archivo de receta mediante una llamada a [**IPropertyStoreCache::SetValueAndState,**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -530,21 +530,21 @@ HRESULT CRecipePropertyStore::_LoadSearchContent()
 
 
 
-## <a name="providing-values-for-properties"></a>Proporcionar valores para las propiedades
+## <a name="providing-values-for-properties"></a>Proporcionar valores para propiedades
 
-Cuando se usa para leer valores, normalmente se invocan los controladores de propiedades por una de las razones siguientes:
+Cuando se usa para leer valores, los controladores de propiedades normalmente se invocan por una de las razones siguientes:
 
 -   Para enumerar todos los valores de propiedad.
 -   Para obtener el valor de una propiedad específica.
 
-Para la enumeración, se pide a un controlador de propiedades que Enumere sus propiedades durante la indización o cuando el cuadro de diálogo Propiedades pida que se muestren las propiedades en el **otro** grupo. La indexación se activa constantemente como una operación en segundo plano. Cada vez que un archivo cambia, se notifica al indexador y vuelve a indizar el archivo pidiendo al controlador de propiedades que Enumere sus propiedades. Por lo tanto, es fundamental que los controladores de propiedades se implementen de manera eficaz y devuelvan los valores de propiedad lo más rápido posible. Enumere todas las propiedades para las que tiene valores, del mismo modo que lo haría para cualquier colección, pero no enumere las propiedades que impliquen cálculos de uso intensivo de memoria o solicitudes de red que podrían ralentizar la recuperación.
+En el caso de la enumeración, se pide a un controlador de propiedades que enumere sus propiedades durante la indexación o cuando el cuadro de diálogo de propiedades solicita que las propiedades se muestren en **el grupo** Otros. La indexación continúa constantemente como una operación en segundo plano. Cada vez que cambia un archivo, se notifica al indexador y se vuelve a indexar el archivo solicitando al controlador de propiedades que enumere sus propiedades. Por lo tanto, es fundamental que los controladores de propiedades se implementen de forma eficaz y devuelvan valores de propiedad lo antes posible. Enumera todas las propiedades para las que tiene valores, igual que lo haría para cualquier colección, pero no enumera las propiedades que implican cálculos con un uso intensivo de memoria o solicitudes de red que podrían ralentizar su recuperación.
 
-Al escribir un controlador de propiedades, normalmente es necesario tener en cuenta los dos conjuntos de propiedades siguientes.
+Al escribir un controlador de propiedades, normalmente debe tener en cuenta los dos conjuntos de propiedades siguientes.
 
--   Propiedades principales: propiedades que el tipo de archivo admite de forma nativa. Por ejemplo, un controlador de propiedades de fotografía para metadatos de archivo de imagen intercambiable (EXIF) es compatible de forma nativa con `System.Photo.FNumber` .
+-   Propiedades principales: propiedades que el tipo de archivo admite de forma nativa. Por ejemplo, un controlador de propiedades de foto para metadatos de archivo de imagen intercambiable (EXIF) admite de forma nativa `System.Photo.FNumber` .
 -   Propiedades extendidas: propiedades que admite el tipo de archivo como parte de los metadatos abiertos.
 
-Dado que el ejemplo usa la memoria caché en memoria, la implementación de métodos [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) es simplemente una cuestión de delegar en esa caché, tal y como se muestra en el ejemplo de código siguiente.
+Dado que el ejemplo usa la memoria caché en memoria, la implementación de métodos [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) es simplemente una cuestión de delegar a esa caché, como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -562,14 +562,14 @@ IFACEMETHODIMP GetValue(REFPROPERTYKEY key, __out PROPVARIANT *pPropVar)
 
 Si decide no delegar en la memoria caché en memoria, debe implementar los métodos para proporcionar> el siguiente comportamiento esperado:
 
--   [**IPropertyStore:: GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)): Si no hay ninguna propiedad, este método devuelve **S \_ correcto**.
--   [**IPropertyStore:: getatt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)): Si *iProp* es mayor o igual que *CProps*, este método devuelve e \_ INVALIDARG y la estructura a la que apunta el parámetro *PKEY* se rellena con ceros.
--   [**IPropertyStore:: GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) y [**IPropertyStore:: GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) reflejan el estado actual del controlador de propiedad. Si se agrega o se quita un [**PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) del archivo a través de [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), estos dos métodos deben reflejar ese cambio la próxima vez que se llamen.
--   [**IPropertyStore:: GetValue**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85)): si se solicita a este método un valor que no existe, devuelve **S \_ OK** con el valor que se indica como VT \_ vacío.
+-   [**IPropertyStore::GetCount:**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85))si no hay ninguna propiedad, este método devuelve **S \_ OK**.
+-   [**IPropertyStore::GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)): si *iProp* es mayor o igual que *cProps*, este método devuelve E INVALIDARG y la estructura a la que apunta el parámetro pkey se rellena con \_ ceros. 
+-   [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) [**e IPropertyStore::GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) reflejan el estado actual del controlador de propiedades. Si se agrega o quita [**un PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) del archivo a través de [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), estos dos métodos deben reflejar que cambian la próxima vez que se llamen.
+-   [**IPropertyStore::GetValue:**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85))si se solicita a este método un valor que no existe, devuelve **S \_ OK** con el valor notificado como VT \_ EMPTY.
 
-## <a name="writing-back-values"></a>Escribir valores hacia atrás
+## <a name="writing-back-values"></a>Escritura de valores devueltos
 
-Cuando el controlador de propiedades escribe el valor de una propiedad mediante [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), no escribe el valor en el archivo hasta que se llama a [**IPropertyStore:: commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) . La caché en memoria puede ser útil para implementar este esquema. En el código de ejemplo, la implementación **IPropertyStore:: SetValue** simplemente establece el nuevo valor en la memoria caché en memoria y establece el estado de esa propiedad en PSC \_ sucio.
+Cuando el controlador de propiedades escribe el valor de una propiedad mediante [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), no escribe el valor en el archivo hasta que se llama a [**IPropertyStore::Commit.**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) La memoria caché en memoria puede ser útil para implementar este esquema. En el código de ejemplo, la implementación **de IPropertyStore::SetValue** simplemente establece el nuevo valor en la caché en memoria y establece el estado de esa propiedad en PSC \_ DIRTY.
 
 
 ```
@@ -594,17 +594,17 @@ HRESULT CRecipePropertyStore::SetValue(REFPROPERTYKEY key, const PROPVARIANT *pP
 
 
 
-En cualquier implementación de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) , se espera el siguiente comportamiento de [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)):
+En cualquier [**implementación de IPropertyStore,**](/windows/win32/api/propsys/nn-propsys-ipropertystore) se espera el comportamiento siguiente de [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)):
 
--   Si la propiedad ya existe, se establece el valor de la propiedad.
--   Si la propiedad no existe, se agrega la nueva propiedad y se establece su valor.
--   Si el valor de la propiedad no se puede conservar con la misma precisión que se indica (por ejemplo, truncamiento debido a las limitaciones de tamaño en el formato de archivo), el valor se establece en la medida de lo posible y se devuelve la InPlace \_ S \_ truncada.
--   Si el controlador de propiedad no admite la propiedad, `HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED)` se devuelve.
--   Si hay otro motivo por el que no se puede establecer el valor de la propiedad, como el archivo que se está bloqueando o la falta de derechos de edición a través de las listas de control de acceso (ACL), \_ \_ se devuelve STG E ACCESSDENIED.
+-   Si la propiedad ya existe, se establece el valor de la propiedad .
+-   Si la propiedad no existe, se agrega la nueva propiedad y su valor establecido.
+-   Si el valor de propiedad no se puede conservar con la misma precisión que se proporciona (por ejemplo, truncamiento debido a limitaciones de tamaño en el formato de archivo), el valor se establece en la medida de lo posible y se devuelve INPLACE \_ S \_ TRUNCATED.
+-   Si el controlador de propiedades no admite la propiedad, `HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED)` se devuelve .
+-   Si hay otra razón por la que no se puede establecer el valor de propiedad, como el archivo bloqueado o la falta de derechos para editar mediante listas de control de acceso (ACL), se devuelve STG \_ E \_ ACCESSDENIED.
 
-Una ventaja importante del uso de secuencias, como el ejemplo, es la confiabilidad. Los controladores de propiedades siempre deben tener en cuenta que no pueden dejar un archivo en un estado incoherente en caso de que se produzca un error catastrófico. Obviamente, se deben evitar los daños en los archivos de un usuario y la mejor manera de hacerlo es con un mecanismo de "copia en escritura". Si el controlador de propiedad usa una secuencia para tener acceso a un archivo, este comportamiento se obtiene automáticamente. el sistema escribe cualquier cambio en la secuencia, reemplazando el archivo con la nueva copia solo durante la operación de confirmación.
+Una ventaja importante del uso de secuencias, como ejemplo, es la confiabilidad. Los controladores de propiedades siempre deben tener en cuenta que no pueden dejar un archivo en un estado incoherente en caso de error catastrófico. Obviamente, se debe evitar dañar los archivos de un usuario y la mejor manera de hacerlo es con un mecanismo de "copia en escritura". Si el controlador de propiedades usa una secuencia para acceder a un archivo, este comportamiento se obtiene automáticamente. el sistema escribe los cambios en la secuencia, reemplazando el archivo por la nueva copia solo durante la operación de confirmación.
 
-Para invalidar este comportamiento y controlar el proceso de guardado de archivos manualmente, puede dejar de participar en el comportamiento de guardado seguro estableciendo el valor de ManualSafeSave en la entrada del registro del controlador, como se muestra aquí.
+Para invalidar este comportamiento y controlar manualmente el proceso de guardado de archivos, puede rechazar el comportamiento de guardado seguro estableciendo el valor ManualSafeSave en la entrada del Registro del controlador, como se muestra aquí.
 
 ```
 HKEY_CLASSES_ROOT
@@ -613,22 +613,22 @@ HKEY_CLASSES_ROOT
          ManualSafeSave = 1
 ```
 
-Cuando un controlador especifica el valor de ManualSafeSave, la secuencia con la que se inicializa no es una secuencia de transacción (STGM \_ ). El propio controlador debe implementar la función Safe Save para asegurarse de que el archivo no esté dañado si se interrumpe la operación de guardar. Si el controlador implementa la escritura en contexto, se escribirá en la secuencia que se proporciona. Si el controlador no admite esta característica, debe recuperar una secuencia con la que escribir la copia actualizada del archivo mediante [**IDestinationStreamFactory:: GetDestinationStream**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream). Una vez que el controlador ha terminado de escribir, debe llamar a [**IPropertyStore:: commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) en el flujo original para completar la operación y reemplazar el contenido de la secuencia original con la nueva copia del archivo.
+Cuando un controlador especifica el valor ManualSafeSave, la secuencia con la que se inicializa no es una secuencia con transacciones (STGM \_ TRANSACTED). El propio controlador debe implementar la función de guardado seguro para asegurarse de que el archivo no está dañado si se interrumpe la operación de guardado. Si el controlador implementa la escritura local, escribirá en la secuencia que se le ha dado. Si el controlador no admite esta característica, debe recuperar una secuencia con la que escribir la copia actualizada del archivo mediante [**IDestinationStreamFactory::GetDestinationStream**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream). Una vez que el controlador haya terminado de escribir, debe llamar a [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) en la secuencia original para completar la operación y reemplazar el contenido de la secuencia original por la nueva copia del archivo.
 
-ManualSafeSave es también la situación predeterminada si no inicializa el controlador con una secuencia. Sin un flujo original para recibir el contenido de la secuencia temporal, debe utilizar [**ReplaceFile**](/windows/win32/api/winbase/nf-winbase-replacefilea) para realizar una sustitución atómica del archivo de código fuente.
+ManualSafeSave también es la situación predeterminada si no inicializa el controlador con una secuencia. Sin una secuencia original para recibir el contenido de la secuencia temporal, debe usar [**ReplaceFile**](/windows/win32/api/winbase/nf-winbase-replacefilea) para realizar un reemplazo atómico del archivo de origen.
 
-Los formatos de archivo de gran tamaño que se usarán de forma que generen archivos de más de 1 MB deben implementar la compatibilidad con la escritura de propiedades en contexto; de lo contrario, el comportamiento de rendimiento no cumple las expectativas de los clientes del sistema de propiedades. En este escenario, el tiempo necesario para escribir propiedades no debe verse afectado por el tamaño del archivo.
+Los formatos de archivo grandes que se usarán de forma que produzcan archivos mayores de 1 MB deben implementar la compatibilidad con la escritura de propiedades en su lugar. de lo contrario, el comportamiento de rendimiento no cumple las expectativas de los clientes del sistema de propiedades. En este escenario, el tiempo necesario para escribir propiedades no debe verse afectado por el tamaño del archivo.
 
-En el caso de archivos muy grandes, por ejemplo, un archivo de vídeo de 1 GB o más, se requiere una solución diferente. Si no hay espacio suficiente en el archivo para realizar la escritura en contexto, el controlador puede producir un error en la actualización de la propiedad si se ha agotado la cantidad de espacio reservado para la escritura de propiedades en contexto. Este error se produce para evitar un bajo rendimiento derivado de 2 GB de e/s (1 para leer, 1 para escribir). Debido a este posible error, estos formatos de archivo deben reservar suficiente espacio para la escritura de propiedades en contexto.
+Para archivos muy grandes, por ejemplo, un archivo de vídeo de 1 GB o más, se requiere una solución diferente. Si no hay suficiente espacio en el archivo para realizar la escritura local, el controlador puede producir un error en la actualización de la propiedad si se ha agotado la cantidad de espacio reservado para la escritura de propiedades en el lugar. Este error se produce para evitar un rendimiento deficiente derivado de 2 GB de E/S (1 para lectura y 1 para escritura). Debido a este posible error, estos formatos de archivo deben reservar espacio suficiente para la escritura de propiedades en el lugar.
 
-Si el archivo tiene espacio suficiente en el encabezado para escribir metadatos y la escritura de esos metadatos no hace que el archivo aumente o se reduzca, podría ser seguro escribir en contexto. Se recomienda 64 KB como punto de partida. Escribir en contexto es equivalente al controlador que solicita ManualSafeSave y llamar a [**IStream:: commit**](/windows/win32/api/objidl/nf-objidl-istream-commit) en la implementación de [**IPropertyStore:: commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)), y tiene un rendimiento mucho mejor que la copia en escritura. Si cambia el tamaño del archivo debido a cambios en el valor de la propiedad, no se debe intentar escribir en contexto debido a la posibilidad de que un archivo esté dañado en caso de que se produzca una terminación anómala.
+Si el archivo tiene suficiente espacio en su encabezado para escribir metadatos y si la escritura de los metadatos no hace que el archivo crezca o se reduzca, podría ser seguro escribir en su lugar. Se recomiendan 64 KB como punto de partida. Escribir en el lugar es equivalente al controlador que solicita ManualSafeSave y llama a [**IStream::Commit**](/windows/win32/api/objidl/nf-objidl-istream-commit) en la implementación de [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85))y tiene un rendimiento mucho mejor que copiar en escritura. Si el tamaño del archivo cambia debido a cambios en el valor de propiedad, no se debe intentar escribir en el lugar debido a la posibilidad de que haya un archivo dañado en caso de una terminación anómala.
 
 > [!Note]  
 > Por motivos de rendimiento, se recomienda usar la opción ManualSafeSave con controladores de propiedades que trabajen con archivos de 100 KB o más.
 
  
 
-Tal y como se muestra en la siguiente implementación de ejemplo de [**IPropertyStore:: commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)), el controlador de ManualSafeSave se registra para ilustrar la opción de guardado Safe manual. El método **\_ SaveCacheToDom** escribe los valores de propiedad almacenados en la memoria caché en memoria en el objeto XMLdocument.
+Como se muestra en la siguiente implementación de ejemplo de [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)), el controlador de ManualSafeSave se registra para ilustrar la opción de guardado seguro manual. El **\_ método SaveCacheToDom** escribe los valores de propiedad almacenados en la memoria caché en el objeto XMLdocument.
 
 
 ```
@@ -652,7 +652,7 @@ HRESULT CRecipePropertyStore::Commit()
 
 
 
-A continuación, pregunte si el especificada admite [**IDestinationStreamFactory**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-idestinationstreamfactory).
+A continuación, pregunte si admite [**IDestinationStreamFactory.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-idestinationstreamfactory)
 
 
 ```
@@ -670,7 +670,7 @@ A continuación, pregunte si el especificada admite [**IDestinationStreamFactory
 
 
 
-A continuación, confirme la secuencia original, que vuelve a escribir los datos en el archivo original de una manera segura.
+A continuación, confirme la secuencia original, que vuelve a escribir los datos en el archivo original de forma segura.
 
 
 ```
@@ -694,7 +694,7 @@ A continuación, confirme la secuencia original, que vuelve a escribir los datos
 
 
 
-A continuación, examine la implementación de **\_ SaveCacheToDom** .
+A continuación, **\_ examine la implementación de SaveCacheToDom.**
 
 
 ```
@@ -717,7 +717,7 @@ HRESULT hr = _pCache->GetCount(&cProps);
 
 
 
-Ahora recorra en iteración las propiedades para determinar si el valor de una propiedad ha cambiado desde que se cargó en la memoria.
+Ahora, recorre en iteración las propiedades para determinar si el valor de una propiedad se ha cambiado desde que se cargó en la memoria.
 
 
 ```
@@ -729,7 +729,7 @@ Ahora recorra en iteración las propiedades para determinar si el valor de una p
 
 
 
-El método [**IPropertyStoreCache:: GetState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-getstate) obtiene el estado de la propiedad en la memoria caché. La \_ marca de modificador de PSC, que se estableció en la implementación [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) , marca una propiedad como modificada.
+El [**método IPropertyStoreCache::GetState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-getstate) obtiene el estado de la propiedad en la memoria caché. La marca PSC DIRTY, que se estableció en la implementación \_ [**de IPropertyStore::SetValue,**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) marca una propiedad como modificada.
 
 
 ```
@@ -747,7 +747,7 @@ El método [**IPropertyStoreCache:: GetState**](/windows/win32/api/propsys/nf-pr
 
 
 
-Asigne la propiedad al nodo XML tal y como se especifica en la matriz de **\_ rgPropertyMap de ejemplo** .
+Asigne la propiedad al nodo XML como se especifica en la **\_ matriz rgPropertyMap.**
 
 
 ```
@@ -767,7 +767,7 @@ if (SUCCEEDED(hr))
 
 
 
-Si una propiedad no está en el mapa, se trata de una nueva propiedad establecida por el explorador de Windows. Dado que se admiten los metadatos abiertos, guarde la nueva propiedad en la sección **ExtendedProperties** del XML.
+Si una propiedad no está en el mapa, es una nueva propiedad establecida por Explorador de Windows. Dado que se admiten metadatos abiertos, guarde la nueva propiedad en la **sección ExtendedProperties** del XML.
 
 
 ```
@@ -791,7 +791,7 @@ Si una propiedad no está en el mapa, se trata de una nueva propiedad establecid
 
 ## <a name="implementing-ipropertystorecapabilities"></a>Implementación de IPropertyStoreCapabilities
 
-[**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) informa a la interfaz de usuario del shell de si se puede editar una propiedad determinada en la interfaz de usuario del shell. Es importante tener en cuenta que esto se refiere únicamente a la capacidad de editar la propiedad en la interfaz de usuario, no de si se puede llamar correctamente a [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) en la propiedad. Una propiedad que genera un valor devuelto de S \_ false desde [**IPropertyStoreCapabilities:: IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) puede seguir siendo capaz de establecerse a través de una aplicación.
+[**IPropertyStoreCapabilities informa a**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) la interfaz de usuario de Shell si se puede editar una propiedad determinada en la interfaz de usuario de Shell. Es importante tener en cuenta que esto solo se relaciona con la capacidad de editar la propiedad en la interfaz de usuario, no si puede llamar correctamente a [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) en la propiedad . Una propiedad que provoca un valor devuelto de S FALSE de \_ [**IPropertyStoreCapabilities::IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) puede seguir siendo capaz de establecerse a través de una aplicación.
 
 
 ```
@@ -803,21 +803,21 @@ interface IPropertyStoreCapabilities : IUnknown
 
 
 
-[**IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) devuelve **S \_ OK** para indicar que los usuarios finales deben tener permiso para editar la propiedad directamente. S \_ False indica que no deberían. S \_ false puede significar que las aplicaciones son responsables de escribir la propiedad, no de los usuarios. El shell deshabilita los controles de edición según corresponda en función de los resultados de las llamadas a este método. Se supone que un controlador que no implementa [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) admite metadatos abiertos a través de la compatibilidad con la escritura de cualquier propiedad.
+[**IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) devuelve **S \_ OK** para indicar que los usuarios finales deben tener permiso para editar la propiedad directamente; S \_ FALSE indica que no deben hacerlo. S \_ FALSE puede significar que las aplicaciones son responsables de escribir la propiedad, no de los usuarios. El Shell deshabilita los controles de edición según corresponda en función de los resultados de las llamadas a este método. Se supone que un controlador que no implementa [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) admite metadatos abiertos a través de la compatibilidad con la escritura de cualquier propiedad.
 
-Si va a compilar un controlador que solo controla las propiedades de solo lectura, debe implementar el método **Initialize** ([**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem)o [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile)) para que devuelva STG \_ E \_ ACCESSDENIED cuando se llame con la \_ marca ReadWrite STGM.
+Si está creando un controlador que controla solo las propiedades de solo lectura, debe implementar el método **Initialize** ([**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem o**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile)) para que devuelva STG E ACCESSDENIED cuando se llame con la marca \_ \_ \_ STGM READWRITE.
 
-Algunas propiedades tienen el atributo [isInnate](./propdesc-schema-typeinfo.md) establecido en **true**. Las propiedades de INNATE tienen las siguientes características:
+Algunas propiedades tienen su [atributo isInnate](./propdesc-schema-typeinfo.md) establecido en **true.** Las propiedades innate tienen las siguientes características:
 
--   La propiedad se calcula normalmente de alguna manera. Por ejemplo, `System.Image.BitDepth` se calcula a partir de la propia imagen.
--   Cambiar la propiedad no tendría sentido sin cambiar el archivo. Por ejemplo, cambiar `System.Image.Dimensions` no cambia el tamaño de la imagen, por lo que no tiene sentido permitir que el usuario la cambie.
--   En algunos casos, el sistema proporciona automáticamente estas propiedades. Entre los ejemplos `System.DateModified` se incluyen, proporcionado por el sistema de archivos, y `System.SharedWith` , que se basa en la persona con la que el usuario comparte el archivo.
+-   La propiedad normalmente se calcula de alguna manera. Por ejemplo, `System.Image.BitDepth` se calcula a partir de la propia imagen.
+-   Cambiar la propiedad no tendría sentido sin cambiar el archivo. Por ejemplo, cambiar no cambiaría el tamaño de la imagen, por lo que no tiene sentido permitir que `System.Image.Dimensions` el usuario la cambie.
+-   En algunos casos, el sistema proporciona automáticamente estas propiedades. Algunos ejemplos son , que proporciona el sistema de archivos, y , que se basa en quién `System.DateModified` comparte el archivo el `System.SharedWith` usuario.
 
-Debido a estas características, las propiedades marcadas como *IsInnate* se proporcionan al usuario en la interfaz de usuario de Shell solo como propiedades de solo lectura. Si una propiedad se marca como *IsInnate*, el sistema de propiedades no almacena esa propiedad en el controlador de propiedad. Por lo tanto, los controladores de propiedades no necesitan un código especial para tener en cuenta estas propiedades en sus implementaciones. Si el valor del atributo *IsInnate* no se especifica explícitamente para una propiedad determinada, el valor predeterminado es **false**.
+Debido a estas características, las propiedades marcadas como *IsInnate* se proporcionan al usuario en la interfaz de usuario de Shell solo como propiedades de solo lectura. Si una propiedad está marcada como *IsInnate,* el sistema de propiedades no almacena esa propiedad en el controlador de propiedades. Por lo tanto, los controladores de propiedades no necesitan código especial para tener en cuenta estas propiedades en sus implementaciones. Si el valor del *atributo IsInnate* no se indica explícitamente para una propiedad determinada, el valor predeterminado es **false.**
 
-## <a name="registering-and-distributing-property-handlers"></a>Registrar y distribuir controladores de propiedades
+## <a name="registering-and-distributing-property-handlers"></a>Registro y distribución de controladores de propiedades
 
-Con el controlador de propiedades implementado, debe estar registrado y su extensión de nombre de archivo asociada al controlador. Para obtener más información, vea [registrar y distribuir controladores de propiedades](./prophand-reg-dist.md).
+Con el controlador de propiedades implementado, se debe registrar y su extensión de nombre de archivo asociada al controlador. Para obtener más información, vea [Registrar y distribuir controladores de propiedades](./prophand-reg-dist.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -832,10 +832,10 @@ Con el controlador de propiedades implementado, debe estar registrado y su exten
 [Usar listas de propiedades](./building-property-handlers-property-lists.md)
 </dt> <dt>
 
-[Registrar y distribuir controladores de propiedades](./prophand-reg-dist.md)
+[Registro y distribución de controladores de propiedades](./prophand-reg-dist.md)
 </dt> <dt>
 
-[Prácticas recomendadas y preguntas más frecuentes sobre controladores de propiedades](./prophand-bestprac-faq.md)
+[Procedimientos recomendados y preguntas más frecuentes sobre el controlador de propiedades](./prophand-bestprac-faq.md)
 </dt> </dl>
 
  

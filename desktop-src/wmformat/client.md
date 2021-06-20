@@ -1,46 +1,46 @@
 ---
-title: Registro de cliente (Windows Media Format 11 SDK)
-description: Registro de cliente
+title: Registro de cliente (Windows Media Format SDK 11)
+description: Obtenga información sobre el registro de cliente Windows Media Format SDK 11. El registro proporciona una manera de que el servidor multimedia realice un seguimiento de la actividad de los clientes que se conectan a él.
 ms.assetid: 3e0d0fea-4370-41f8-b461-73a37de8d8bc
 keywords:
-- SDK de Windows Media Format, registro de cliente
-- SDK de Windows Media Format, registro
-- Advanced Systems Format (ASF), registro de cliente
+- Windows Media Format SDK,registro de cliente
+- Windows Media Format SDK, registro
+- Formato de sistemas avanzados (ASF), registro de cliente
 - ASF (formato de sistemas avanzados), registro de cliente
-- Advanced Systems Format (ASF), registro
+- Formato de sistemas avanzados (ASF), registro
 - ASF (formato de sistemas avanzados), registro
 - registro de cliente
-- clientes de registro
+- registrar clientes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 856f2df4c2377b94edc40574c3e2efcced34aa81
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 095e01fcf0730fdec8d06a931a9a988ca79ea77f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104149768"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406268"
 ---
-# <a name="client-logging-windows-media-format-11-sdk"></a>Registro de cliente (Windows Media Format 11 SDK)
+# <a name="client-logging-windows-media-format-11-sdk"></a>Registro de cliente (Windows Media Format SDK 11)
 
-Cuando el objeto lector lee datos de un servidor, envía información de registro al servidor. Los proveedores de contenido suelen usar esta información para medir la calidad del servicio, generar información de facturación o realizar un seguimiento de la publicidad. La información de registro no contiene datos personales.
+Cuando el objeto de lector lee datos de un servidor, envía información de registro al servidor. Normalmente, los proveedores de contenido usan esta información para medir la calidad del servicio, generar información de facturación o realizar un seguimiento de la publicidad. La información de registro no contiene datos personales.
 
-La aplicación puede especificar parte de la información que se registra, llamando al método [**IWMReaderAdvanced:: SetClientInfo**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setclientinfo) en el objeto del lector. Por ejemplo, puede especificar la cadena de agente de usuario, el nombre de la aplicación de reproducción o la página web que hospeda el reproductor.
+La aplicación puede especificar parte de la información que se registra mediante una llamada al método [**IWMReaderAdvanced::SetClientInfo**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setclientinfo) en el objeto reader. Por ejemplo, puede especificar la cadena de agente de usuario, el nombre de la aplicación del reproductor o la página web que hospeda el reproductor.
 
-La información de registro incluye un GUID que identifica la sesión. De forma predeterminada, el lector genera un identificador de sesión anónimo. Opcionalmente, el lector puede enviar en su lugar un identificador que identifica de forma única al usuario actual. Para habilitar esta característica, llame al método [**IWMReaderAdvanced2:: SetLogClientID**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setlogclientid) con el valor **true**.
+La información de registro incluye un GUID que identifica la sesión. De forma predeterminada, el lector genera un identificador de sesión anónimo. Opcionalmente, el lector puede enviar en su lugar un identificador que identifique de forma única al usuario actual. Para habilitar esta característica, llame al método [**IWMReaderAdvanced2::SetLogClientID**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setlogclientid) con el valor **TRUE**.
 
-Puede configurar el objeto lector para enviar la información de registro a otro servidor, además del servidor de origen. Para ello, llame al método [**IWMReaderNetworkConfig:: AddLoggingUrl**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-addloggingurl) con la dirección URL del servidor. Esta dirección URL debe apuntar a un script o ejecutable que pueda controlar las solicitudes GET y POST de HTTP. Puede usar el agente de anuncios de multidifusión y registro (wmsiislog.dll), o puede escribir un script ASP o CGI personalizado para recibir los datos de registro.
+Puede configurar el objeto de lector para enviar la información de registro a otro servidor, además del servidor de origen. Para ello, llame al [**método IWMReaderNetworkConfig::AddLoggingUrl**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-addloggingurl) con la dirección URL del servidor. Esta dirección URL debe apuntar a un script o ejecutable que pueda controlar las solicitudes HTTP GET y POST. Puede usar el Agente de anuncios de multidifusión y registro (wmsiislog.dll), o bien puede escribir un script personalizado de ASP o CGI para recibir los datos de registro.
 
 > [!Note]  
-> Puede obtener la misma funcionalidad si crea una lista de reproducción del servidor con un atributo **logURL** .
+> Puede obtener la misma funcionalidad mediante la creación de una lista de reproducción del lado servidor con un **atributo logURL.**
 
  
 
-Cuando el objeto lector envía el registro, hace lo siguiente:
+Cuando el objeto reader envía el registro, hace lo siguiente:
 
 1.  Envía una solicitud GET vacía al servidor.
-2.  Analiza la respuesta del servidor para una de las siguientes cadenas:
+2.  Analiza la respuesta del servidor para una de las cadenas siguientes:
     -   `<body><h1>NetShow ISAPI Log Dll</h1>`
-    -   `<body><h1>WMS ISAPI Log Dll/0.0.0.0</h1>` donde "0.0.0.0" es un número de versión válido.
+    -   `<body><h1>WMS ISAPI Log Dll/0.0.0.0</h1>` donde "0.0.0.0" es cualquier número de versión válido.
 3.  Envía una solicitud POST con la información de registro.
 
 En el código siguiente se muestra un script ASP de ejemplo que recibe la información de registro y la escribe en un archivo:
@@ -73,7 +73,7 @@ En el código siguiente se muestra un script ASP de ejemplo que recibe la inform
 
 
 
-Puede especificar varios servidores para recibir información de registro; simplemente llame a **AddLoggingUrl** una vez con cada dirección URL. Para borrar la lista de servidores que reciben registros, llame al método [**IWMReaderNetworkConfig:: ResetLoggingUrlList**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-resetloggingurllist) .
+Puede especificar varios servidores para recibir información de registro; Simplemente llame a **AddLoggingUrl una** vez con cada dirección URL. Para borrar la lista de servidores que reciben registros, llame al [**método IWMReaderNetworkConfig::ResetLoggingUrlList.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-resetloggingurllist)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -82,10 +82,10 @@ Puede especificar varios servidores para recibir información de registro; simpl
 [**Implementación de la funcionalidad de red**](implementing-network-functionality.md)
 </dt> <dt>
 
-[**Interfaz IWMReaderAdvanced**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced)
+[**IWMReaderAdvanced (Interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced)
 </dt> <dt>
 
-[**Interfaz IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2)
+[**IWMReaderAdvanced2 (Interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2)
 </dt> </dl>
 
  

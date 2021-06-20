@@ -1,21 +1,21 @@
 ---
-description: Paso 2.
+description: Declare una clase de C++ que herede la clase base que eligió como parte de la escritura de un filtro de transformación.
 ms.assetid: 74fbfc16-541f-4f80-a72f-26b67dc09a93
-title: Paso 2. Declarar la clase de filtro
+title: Paso 2. Declarar la clase Filter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ddfe28b7f31238089c331b319621787aef49f18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88be97e47d529ffa22c90e9c8c200160dbd5f261
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678219"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410068"
 ---
-# <a name="step-2-declare-the-filter-class"></a>Paso 2. Declarar la clase de filtro
+# <a name="step-2-declare-the-filter-class"></a>Paso 2. Declarar la clase Filter
 
-Este es el paso 2 del tutorial de [escritura de filtros de transformación](writing-transform-filters.md).
+Este es el paso 2 del tutorial Escribir [filtros de transformación](writing-transform-filters.md).
 
-Empiece por declarar una clase de C++ que herede la clase base:
+Comience declarando una clase de C++ que hereda la clase base:
 
 
 ```C++
@@ -27,9 +27,9 @@ class CRleFilter : public CTransformFilter
 
 
 
-Cada una de las clases de filtro tiene asociadas clases de PIN. En función de las necesidades específicas del filtro, puede que tenga que invalidar las clases de PIN. En el caso de **CTransformFilter**, los pin delegan la mayor parte del trabajo en el filtro, por lo que probablemente no sea necesario invalidar los pin.
+Cada una de las clases de filtro tiene clases de pin asociadas. En función de las necesidades específicas del filtro, es posible que tenga que invalidar las clases de pin. En el caso de **CTransformFilter,** los pines delegan la mayor parte de su trabajo en el filtro, por lo que probablemente no necesite invalidar los pines.
 
-Debe generar un CLSID único para el filtro. Puede usar la utilidad Guidgen o uuidgen; no copie nunca un GUID existente. Hay varias maneras de declarar un CLSID. En el ejemplo siguiente se usa la macro **definir \_ GUID** :
+Debe generar un CLSID único para el filtro. Puede usar la utilidad Guidgen o Uuidgen; nunca copie un GUID existente. Hay varias maneras de declarar un CLSID. En el ejemplo siguiente se usa la **\_ macro DEFINE GUID:**
 
 
 ```C++
@@ -58,9 +58,9 @@ CRleFilter::CRleFilter()
 
 
 
-Tenga en cuenta que uno de los parámetros para el constructor [**CTransformFilter**](ctransformfilter-ctransformfilter.md) es el CLSID definido anteriormente.
+Observe que uno de los parámetros del constructor [**CTransformFilter**](ctransformfilter-ctransformfilter.md) es el CLSID definido anteriormente.
 
-Siguiente: [paso 3. Compatibilidad con la negociación de tipos de medios](step-3--support-media-type-negotiation.md).
+Siguiente: [Paso 3. Admite la negociación de tipos de medios](step-3--support-media-type-negotiation.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

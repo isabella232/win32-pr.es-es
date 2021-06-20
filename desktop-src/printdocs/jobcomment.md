@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento JobComment, que especifica un comentario asociado al trabajo, por ejemplo, Please deliver to room 1234 when completed (Entregar a la sala 1234 cuando haya finalizado).
 ms.assetid: 100fe310-8e64-453f-8eaf-10abaf8b10b7
 title: JobComment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5210b80d4f81771dfa98d79d4ecf187b3ef145f5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1decf4cf3af7b3a992b07d8008579ac005d3d14e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998352"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409048"
 ---
 # <a name="jobcomment"></a>JobComment
 
@@ -24,7 +24,7 @@ Especifica un comentario asociado al trabajo. Ejemplo: "Entrega a la sala 1234 c
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>          |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |

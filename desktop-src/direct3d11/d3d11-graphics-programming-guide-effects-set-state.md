@@ -1,21 +1,21 @@
 ---
-title: Establecer el estado del efecto (Direct3D 11)
-description: Algunas constantes Effect solo deben inicializarse.
+title: Establecer estado de efecto (Direct3D 11)
+description: Solo es necesario inicializar algunas constantes de efecto. Consulte el código básico para establecer variables de efecto en Direct3D 12.
 ms.assetid: f94ba82e-fc67-4e4d-a49d-20e1163bdff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8df65e164c2df01f78ae9ea9ab83a547b977335
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65c64f9e642e867e9398722d4590a4c2ce9193b4
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104531912"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407668"
 ---
-# <a name="set-effect-state-direct3d-11"></a>Establecer el estado del efecto (Direct3D 11)
+# <a name="set-effect-state-direct3d-11"></a>Establecer estado de efecto (Direct3D 11)
 
-Algunas constantes Effect solo deben inicializarse. Una vez inicializado, el estado del efecto se establece en el dispositivo para todo el bucle de representación. Es necesario actualizar otras variables cada vez que se llama al bucle de representación. A continuación se muestra el código básico para establecer las variables de efecto, para cada uno de los tipos de variables.
+Solo es necesario inicializar algunas constantes de efecto. Una vez inicializado, el estado del efecto se establece en el dispositivo para todo el bucle de representación. Es necesario actualizar otras variables cada vez que se llama al bucle de representación. A continuación se muestra el código básico para establecer variables de efecto para cada uno de los tipos de variables.
 
-Un efecto encapsula todo el estado de representación necesario para realizar una fase de representación. En lo que respecta a la API, hay tres tipos de estado encapsulados en un efecto.
+Un efecto encapsula todo el estado de representación necesario para realizar un paso de representación. En cuanto a la API, hay tres tipos de estado encapsulados en un efecto.
 
 -   [Estado constante](#constant-state)
 -   [Estado del sombreador](#shader-state)
@@ -23,7 +23,7 @@ Un efecto encapsula todo el estado de representación necesario para realizar un
 
 ## <a name="constant-state"></a>Estado constante
 
-En primer lugar, declare las variables en un efecto mediante los tipos de datos de HLSL.
+En primer lugar, declare variables en un efecto mediante tipos de datos HLSL.
 
 
 ```
@@ -47,7 +47,7 @@ float4x4 g_mWorldViewProjection;    // World * View * Projection matrix
 
 
 
-En segundo lugar, declare las variables de la aplicación que se pueden establecer en la aplicación y, a continuación, actualice las variables de efecto.
+En segundo lugar, declare variables en la aplicación que la aplicación pueda establecer y, a continuación, actualizará las variables de efecto.
 
 
 ```
@@ -106,7 +106,7 @@ OnD3D11FrameRender()
 
 Hay dos maneras de obtener el estado contenido en una variable de efecto. Dado un efecto que se ha cargado en la memoria.
 
-Una manera es obtener el estado de la muestra de un [**ID3DX11EffectVariable**](id3dx11effectvariable.md) que se ha convertido en una interfaz de muestra.
+Una manera es obtener el estado del sampler de [**un ID3DX11EffectVariable**](id3dx11effectvariable.md) que se ha convertido como una interfaz sampler.
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect11 )
 
 
 
-La otra forma es obtener el estado de la muestra de un [**ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
+La otra manera es obtener el estado del sampler de [**un id3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
 
 
 ```
@@ -147,7 +147,7 @@ if( g_pEffect11 )
 
 ## <a name="shader-state"></a>Estado del sombreador
 
-El estado del sombreador se declara y se asigna en una técnica de efecto, dentro de un paso.
+El estado del sombreador se declara y asigna en una técnica de efecto, dentro de un paso.
 
 
 ```
@@ -165,13 +165,13 @@ technique10 RenderSceneWithTexture1Light
 
 
 
-Esto funciona igual que si no estuviera usando ningún efecto. Hay tres llamadas, una para cada tipo de sombreador (vértice, geometría y píxel). El primero, SetVertexShader, llama a [**ID3D11DeviceContext:: VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader). CompileShader es una función especial de efecto que toma el perfil de sombreador (vs \_ 4 \_ 0) y el nombre de la función de sombreador de vértices (RenderVS). En otras palabras, cada una de estas llamadas CompileShader compila su función de sombreador asociada y devuelve un puntero al sombreador compilado.
+Esto funciona igual que lo haría si no usara ningún efecto. Hay tres llamadas, una para cada tipo de sombreador (vértice, geometría y píxel). El primero, SetVertexShader, llama a [**ID3D11DeviceContext::VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader). CompileShader es una función de efecto especial que toma el perfil del sombreador (frente a 4 0) y el nombre de la función de sombreador de vértices \_ \_ (RenderVS). En otras palabras, cada una de estas llamadas a CompileShader compila su función de sombreador asociada y devuelve un puntero al sombreador compilado.
 
-Tenga en cuenta que no se debe establecer todo el estado del sombreador. Este paso no incluye ninguna llamada a SetHullShader o SetDomainShader, lo que significa que el casco y los sombreadores de dominio actualmente enlazados no se modificarán.
+Tenga en cuenta que no se debe establecer todo el estado del sombreador. Este paso no incluye ninguna llamada a SetHullShader o SetDomainShader, lo que significa que los sombreadores de casco y dominio enlazados actualmente no se modificarán.
 
 ## <a name="texture-state"></a>Estado de textura
 
-El estado de la textura es un poco más complejo que establecer una variable, ya que los datos de la textura no se leen simplemente como una variable, se muestra a partir de una textura. Por lo tanto, debe definir la variable de textura (al igual que una variable normal, excepto que usa un tipo de textura) y debe definir las condiciones de muestreo. A continuación se muestra un ejemplo de una declaración de variable de textura y la declaración de estado de muestreo correspondiente.
+El estado de textura es un poco más complejo que establecer una variable, ya que los datos de textura no se leen simplemente como una variable, sino que se muestrea a partir de una textura. Por lo tanto, debe definir la variable de textura (al igual que una variable normal, excepto que usa un tipo de textura) y debe definir las condiciones de muestreo. Este es un ejemplo de una declaración de variable de textura y la declaración de estado de muestreo correspondiente.
 
 
 ```
@@ -188,9 +188,9 @@ SamplerState MeshTextureSampler
 
 
 
-Este es un ejemplo de cómo establecer una textura desde una aplicación. En este ejemplo, la textura se almacena en los datos de la malla, que se cargó al crear el efecto.
+Este es un ejemplo de cómo establecer una textura desde una aplicación. En este ejemplo, la textura se almacena en los datos de malla que se cargaron cuando se creó el efecto.
 
-El primer paso es obtener un puntero a la textura del efecto (desde la malla).
+El primer paso es obtener un puntero a la textura desde el efecto (desde la malla).
 
 
 ```
@@ -202,7 +202,7 @@ g_ptxDiffuse = g_pEffect11->GetVariableByName( "g_MeshTexture" )->AsShaderResour
 
 
 
-El segundo paso consiste en especificar una vista para tener acceso a la textura. La vista define una manera general de tener acceso a los datos del recurso de textura.
+El segundo paso es especificar una vista para acceder a la textura. La vista define una manera general de acceder a los datos desde el recurso de textura.
 
 
 ```
@@ -220,20 +220,20 @@ OnD3D11FrameRender()
 
 
 
-Desde la perspectiva de la aplicación, las vistas de acceso desordenados se controlan de forma similar a las vistas de recursos del sombreador. Sin embargo, en el efecto sombreador de píxeles y las funciones del sombreador de cálculo, los datos de vista de acceso desordenados se leen o se escriben directamente en. No se puede muestrear desde una vista de acceso desordenado.
+Desde la perspectiva de la aplicación, las vistas de acceso desordenado se controlan de forma similar a las vistas de recursos de sombreador. Sin embargo, en las funciones de sombreador de píxeles de efecto y sombreador de cálculo, los datos de la vista de acceso desordenado se leen o escriben directamente en ellos. No se puede muestrear desde una vista de acceso desordenado.
 
-Para obtener más información sobre cómo ver recursos, vea [recursos](overviews-direct3d-11-resources.md).
+Para obtener más información sobre cómo ver recursos, vea [Recursos](overviews-direct3d-11-resources.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Representar un efecto (Direct3D 11)](d3d11-graphics-programming-guide-effects-render.md)
+[Representación de un efecto (Direct3D 11)](d3d11-graphics-programming-guide-effects-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: La ruta de acceso de visualización fácil de ver de la carpeta primaria de un elemento.
+description: Obtenga información sobre la propiedad System.ItemFolderPathDisplayNarrow, que representa la ruta de acceso de presentación fácil de usar de la carpeta primaria de un elemento.
 ms.assetid: f60b7465-bca4-4c7b-9caf-9cda1bf6eeeb
-title: System. ItemFolderPathDisplayNarrow
+title: System.ItemFolderPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 898927c23aae95b5037919c908a3ae86e020e1fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbee8a45eb6ea557e99c854464c7dc09ec5613d2
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082723"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403918"
 ---
-# <a name="systemitemfolderpathdisplaynarrow"></a>System. ItemFolderPathDisplayNarrow
+# <a name="systemitemfolderpathdisplaynarrow"></a>System.ItemFolderPathDisplayNarrow
 
-La ruta de acceso de visualización fácil de ver de la carpeta primaria de un elemento.
+Ruta de acceso para mostrar fácil de usar de la carpeta primaria de un elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,9 +33,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-El formato de la cadena debe estar adaptado para que el nombre de la carpeta aparezca en primer lugar, para optimizar para una columna de visualización estrecha. Si la carpeta es una carpeta de archivos, el valor incluye todos los nombres localizados. Si [System. ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md) es VT \_ vacío, esta propiedad también debe estar vacía. De lo contrario, el origen de datos debe derivar de la forma adecuada de System. ItemFolderPathDisplay.
+El formato de la cadena debe adaptarse para que el nombre de la carpeta sea el primero en optimizarse para una columna de visualización estrecha. Si la carpeta es una carpeta de archivos, el valor incluye los nombres localizados. Si [System.ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md) es VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos debe derivarlo correctamente de System.ItemFolderPathDisplay.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,7 +50,7 @@ El formato de la cadena debe estar adaptado para que el nombre de la carpeta apa
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -62,7 +62,7 @@ El formato de la cadena debe estar adaptado para que el nombre de la carpeta apa
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -80,7 +80,7 @@ El formato de la cadena debe estar adaptado para que el nombre de la carpeta apa
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  
