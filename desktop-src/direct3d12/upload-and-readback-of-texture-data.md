@@ -1,32 +1,32 @@
 ---
-title: Cargar datos de textura a través de búferes
-description: La carga de datos de textura 2D o 3D es similar a la carga de datos 1D, salvo que las aplicaciones necesitan prestar atención a la alineación de datos relacionada con el paso de las filas.
+title: Carga de datos de textura a través de búferes
+description: Cargar datos de textura 2D o 3D es similar a cargar datos 1D, salvo que las aplicaciones necesitan prestar más atención a la alineación de datos relacionada con el paso de fila.
 ms.assetid: 22A25A94-A45C-482D-853A-FA6860EE7E4E
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aadbd1e71b3c9895b75c973397488472b57f8eb1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f72177be1fefbf102e901d28d47413c8bcff41ab
+ms.sourcegitcommit: 39754f1af7853adff2525d0936afe9aad2066a9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104549176"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112426969"
 ---
-# <a name="uploading-texture-data-through-buffers"></a>Cargar datos de textura a través de búferes
+# <a name="uploading-texture-data-through-buffers"></a>Carga de datos de textura a través de búferes
 
-La carga de datos de textura 2D o 3D es similar a la carga de datos 1D, salvo que las aplicaciones necesitan prestar atención a la alineación de datos relacionada con el paso de las filas. Los búferes se pueden usar de forma ortogonal y simultánea desde varias partes de la canalización de gráficos y son muy flexibles.
+Cargar datos de textura 2D o 3D es similar a cargar datos 1D, salvo que las aplicaciones necesitan prestar más atención a la alineación de datos relacionada con el paso de fila. Los búferes se pueden usar ortogonalmente y simultáneamente desde varias partes de la canalización de gráficos, y son muy flexibles.
 
 -   [Carga de datos de textura a través de búferes](#upload-texture-data-via-buffers)
 -   [asincrónica](#copying)
--   [Asignación y desasignación](#mapping-and-unmapping)
+-   [Asignación y desapping](#mapping-and-unmapping)
 -   [Alineación del búfer](#buffer-alignment)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="upload-texture-data-via-buffers"></a>Carga de datos de textura a través de búferes
 
-Las aplicaciones deben cargar datos a través de [**ID3D12GraphicsCommandList:: CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion) o [**ID3D12GraphicsCommandList:: CopyBufferRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copybufferregion). Es mucho más probable que los datos de textura sean más grandes, se tenga acceso a ellos de forma repetida y se beneficien de la mayor coherencia en la caché de los diseños de memoria no lineales que otros datos de recursos. Cuando se utilizan búferes en D3D12, las aplicaciones tienen control total sobre la colocación de los datos y la organización asociada con la copia de los datos de recursos, siempre que se satisfagan los requisitos de alineación de memoria.
+Las aplicaciones deben cargar datos a [**través de ID3D12GraphicsCommandList::CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion) o [**ID3D12GraphicsCommandList::CopyBufferRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copybufferregion). Es mucho más probable que los datos de textura sean más grandes, se acceda a ellos repetidamente y se beneficien de la coherencia de caché mejorada de los diseños de memoria no lineal que otros datos de recursos. Cuando se usan búferes en D3D12, las aplicaciones tienen control total sobre la ubicación y la disposición de los datos asociados con la copia de datos de recursos, siempre y cuando se cumplen los requisitos de alineación de la memoria.
 
-En el ejemplo se resalta el lugar en el que la aplicación simplemente alisa los datos 2D en 1D antes de colocarlos en el búfer. En el caso de un escenario de 2D de mipmap, la aplicación puede aplanar cada subrecurso de manera discreta y con rapidez usar un algoritmo de subasignación 1D, o bien usar una técnica de subasignación de 2D más complicada para minimizar el uso de memoria de vídeo. Se espera que la primera técnica se use con más frecuencia, ya que es más sencilla. La segunda técnica puede ser útil cuando se empaquetan datos en un disco o a través de una red. En cualquier caso, la aplicación debe seguir llamando a las API de copia de cada subrecurso.
+El ejemplo resalta dónde la aplicación simplemente aplana los datos 2D en 1D antes de colocarlos en el búfer. Para el escenario mipmap 2D, la aplicación puede aplanar cada subconstribución discretamente y usar rápidamente un algoritmo de subatribución 1D, o bien usar una técnica de subatribución 2D más complicada para minimizar el uso de memoria de vídeo. Se espera que la primera técnica se utilice con más frecuencia, ya que es más sencilla. La segunda técnica puede ser útil al empaquetar datos en un disco o a través de una red. En cualquier caso, la aplicación todavía debe llamar a las API de copia para cada sub-recurso.
 
 ``` syntax
 // Prepare a pBitmap in memory, with bitmapWidth, bitmapHeight, and pixel format of DXGI_FORMAT_B8G8R8A8_UNORM. 
@@ -93,11 +93,11 @@ commandList->CopyTextureRegion(
         nullptr );
 ```
 
-Tenga en cuenta el uso de las estructuras [**auxiliares \_ CD3DX12 \_ propiedades del montón**](cd3dx12-heap-properties.md) y la ubicación de la [**copia de \_ textura \_ \_ CD3DX12**](cd3dx12-texture-copy-location.md)y los métodos [**CreateCommittedResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommittedresource) y [**CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion).
+Observe el uso de las estructuras auxiliares [**CD3DX12 \_ HEAP \_ PROPERTIES**](cd3dx12-heap-properties.md) y [**CD3DX12 \_ TEXTURE COPY \_ \_ LOCATION**](cd3dx12-texture-copy-location.md)y los métodos [**CreateCommittedResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommittedresource) y [**CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion).
 
 ## <a name="copying"></a>asincrónica
 
-Los métodos de D3D12 permiten a las aplicaciones reemplazar los datos iniciales de D3D11 [**UpdateSubresource**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-updatesubresource), [**CopySubresourceRegion**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-copysubresourceregion)y Resource. Un subrecurso 3D único de los datos de textura de la fila principal puede encontrarse en recursos de búfer. [**CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion) puede copiar los datos de textura del búfer en un recurso de textura con un diseño de textura desconocido y viceversa. Las aplicaciones deben preferir este tipo de técnica para rellenar los recursos de GPU a los que se accede con frecuencia, mediante la creación de búferes grandes en un montón de carga mientras se crean los recursos de GPU a los que se accede con frecuencia en un montón predeterminado que no tiene acceso de CPU. Esta técnica admite eficazmente GPU discretas y sus grandes cantidades de memoria inaccesible a la CPU, sin tener que usar arquitecturas UMA con frecuencia.
+Los métodos D3D12 permiten a las aplicaciones reemplazar a D3D11 [**UpdateSubresource,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-updatesubresource) [**CopySubresourceRegion**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-copysubresourceregion)y los datos iniciales del recurso. Un único subrecurso 3D de datos de textura principal de fila puede encontrarse en recursos de búfer. [**CopyTextureRegion puede**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion) copiar los datos de textura del búfer en un recurso de textura con un diseño de textura desconocido y viceversa. Las aplicaciones deben preferir este tipo de técnica para rellenar los recursos de GPU a los que se accede con frecuencia, mediante la creación de búferes grandes en un montón DE CARGA mientras se crean los recursos de GPU a los que se accede con frecuencia en un montón DEFAULT que no tiene acceso a la CPU. Esta técnica admite de forma eficaz GPU discretas y sus grandes cantidades de memoria inaccesible a la CPU, sin afectar normalmente a las arquitecturas de UMA.
 
 Tenga en cuenta las dos constantes siguientes:
 
@@ -106,10 +106,10 @@ const UINT D3D12_TEXTURE_DATA_PITCH_ALIGNMENT = 256;
 const UINT D3D12_TEXTURE_DATA_PLACEMENT_ALIGNMENT = 512;
 ```
 
--   [**\_Superficie de SUBrecursos de D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
--   [**\_Superficie de \_ Subrecursos colocada en D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint)
--   [**D3D12 \_ \_ Ubicación de copia de textura \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_texture_copy_location)
--   [**\_Tipo de \_ copia de textura D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_copy_type)
+-   [**SUPERFICIE DE SUBRECURSO D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
+-   [**SUPERFICIE DE SUBRECURSO COLOCADA EN D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint)
+-   [**UBICACIÓN DE COPIA DE TEXTURA D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_texture_copy_location)
+-   [**TIPO DE COPIA DE TEXTURA D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_copy_type)
 -   [**ID3D12Device::GetCopyableFootprints**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints)
 -   [**ID3D12GraphicsCommandList::CopyResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copyresource)
 -   [**ID3D12GraphicsCommandList::CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion)
@@ -117,32 +117,32 @@ const UINT D3D12_TEXTURE_DATA_PLACEMENT_ALIGNMENT = 512;
 -   [**ID3D12GraphicsCommandList::CopyTiles**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytiles)
 -   [**ID3D12CommandQueue::UpdateTileMappings**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-updatetilemappings)
 
-## <a name="mapping-and-unmapping"></a>Asignación y desasignación
+## <a name="mapping-and-unmapping"></a>Asignación y desapping
 
-La asignación [**y la**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) [**desasignación**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) se pueden llamar mediante varios subprocesos de forma segura. La primera llamada a **map** asigna un intervalo de direcciones virtuales de CPU para el recurso. La última llamada a DEALLOCATE desasigna el intervalo de direcciones **virtuales de la** CPU. La dirección virtual de CPU se devuelve normalmente a la aplicación.
+[**Varios**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) subprocesos pueden llamar a Map y [**Unmap**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) de forma segura. La primera llamada a **Map** asigna un intervalo de direcciones virtuales de CPU para el recurso. La última llamada a **Unmap** desasigna el intervalo de direcciones virtuales de CPU. La dirección virtual de CPU se devuelve normalmente a la aplicación.
 
-Cada vez que se pasan datos entre la CPU y la GPU a través de los recursos de montones de readback, [**se debe usar**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) [**asignar y desasignar**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) para admitir todos los sistemas D3D12 se admite en. Mantener los intervalos lo más estrechos posible maximiza la eficacia en los sistemas que requieren intervalos (consulte [**el \_ intervalo de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range)).
+Cada vez que se pasan datos entre la CPU y la GPU a través de recursos en montones de readback, se deben usar [**Map**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) y [**Unmap**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) para admitir todos los sistemas en los que se admite D3D12. Mantener los intervalos lo más ajustados posible maximiza la eficacia en los sistemas que requieren intervalos (consulte [**D3D12 \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range)).
 
-El rendimiento de las herramientas de depuración no solo se beneficia del uso preciso de los intervalos en todas las llamadas de [**asignación de asignación**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map)  /  [](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) , sino también de las aplicaciones que desasignan recursos cuando ya no se realizan modificaciones de la CPU.
+El rendimiento de las herramientas de depuración no solo [](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map)se beneficia del uso preciso de intervalos en todas las llamadas a Map  /  [**Unmap,**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) sino también de las aplicaciones que no asignan recursos cuando ya no se realizarán modificaciones en la CPU.
 
-El método D3D11 de usar [**map**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) (con el conjunto de parámetros discard) para cambiar el nombre de los recursos no se admite en D3D12. Las aplicaciones deben implementar el cambio de nombre de recursos. Todas las llamadas de **mapa** no se \_ sobrescriben implícitamente y son multiproceso. Es responsabilidad de la aplicación asegurarse de que cualquier trabajo de GPU relevante contenido en las listas de comandos finaliza antes de tener acceso a los datos con la CPU. Las llamadas a D3D12 a la **asignación** no vacían implícitamente ningún búfer de comandos ni bloquean la espera para que la GPU finalice el trabajo. Como resultado, el mapa y [**la**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) **desasignación** se pueden optimizar incluso en algunos escenarios.
+El método D3D11 de usar [**Map**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) (con el parámetro DISCARD establecido) para cambiar el nombre de los recursos no se admite en D3D12. Las aplicaciones deben implementar el cambio de nombre de los recursos. Todas **las llamadas** a Map son implícitamente NO OVERWRITE y \_ multiproceso. Es responsabilidad de la aplicación asegurarse de que cualquier trabajo de GPU relevante incluido en las listas de comandos finalice antes de que se acceda a los datos con la CPU. Las llamadas D3D12 a **Map** no vacían implícitamente ningún búfer de comandos, ni bloquean la espera a que la GPU finalice el trabajo. Como resultado, **Map y** [**Unmap**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) pueden incluso optimizarse en algunos escenarios.
 
 ## <a name="buffer-alignment"></a>Alineación del búfer
 
-Restricciones de alineación del búfer:
+Restricciones de alineación de búfer:
 
--   La copia de Subrecursos lineal debe estar alineada a 512 bytes (con el paso de fila alineado con los \_ bytes de alineación de tono de datos de D3D12 Texture \_ \_ \_ ).
--   Las lecturas de datos constantes deben ser un múltiplo de 256 bytes desde el principio del montón (es decir, solo desde direcciones de 256 bytes alineadas).
--   Las lecturas de datos de índice deben ser un múltiplo del tamaño del tipo de datos del índice (es decir, solo de las direcciones que están alineadas naturalmente para los datos).
--   [**ID3D12GraphicsCommandList::D rawinstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawinstanced) y [**ID3D12GraphicsCommandList::D**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawindexedinstanced) los datos rawindexedinstanced deben ser de desplazamientos que sean múltiplos de 4 (es decir, solo de direcciones que estén alineadas con DWORD).
+-   La copia lineal de subrecursos debe estar alineada con 512 bytes (con el paso de fila alineado con los bytes de ALINEACIÓN DEL TONO DE DATOS DE TEXTURA D3D12). \_ \_ \_ \_
+-   Las lecturas de datos constantes deben ser un múltiplo de 256 bytes desde el principio del montón (es decir, solo desde direcciones alineadas de 256 bytes).
+-   Las lecturas de datos de índice deben ser un múltiplo del tamaño del tipo de datos de índice (es decir, solo desde direcciones alineadas de forma natural para los datos).
+-   Los datos [**ID3D12GraphicsCommandList::ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) deben ser de desplazamientos que sean múltiplo de 4 (es decir, solo de direcciones alineadas con DWORD).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Subasignación dentro de búferes](large-buffers.md)
+[Subasignación en los búferes](large-buffers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
