@@ -9,23 +9,25 @@ keywords:
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 65da2f26026ef1d9fe443fc3cfc05736459a3743
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: da0e83639eaa92e84dd076e797431d5f7138245c
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078149"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112588031"
 ---
 # <a name="dns-structures"></a>Estructuras DNS
 
-Las siguientes estructuras se definen para su uso con DNS:
+Las estructuras siguientes se definen para su uso con DNS:
 
 - [**DNS_ADDR**](/windows/win32/api/windns/ns-windns-dns_addr)
 - [**DNS_ADDR_ARRAY**](/windows/win32/api/windns/ns-windns-dns_addr_array)
+- [**DNS_CUSTOM_SERVER**](/windows/win32/api/windns/ns-windns-dns_custom_server)
 - [**DNS_HEADER**](/windows/desktop/api/Windns/ns-windns-dns_header)
 - [**DNS_MESSAGE_BUFFER**](/windows/desktop/api/Windns/ns-windns-dns_message_buffer)
 - [**DNS_PROXY_INFORMATION**](/windows/desktop/api/Windns/ns-windns-dns_proxy_information)
 - [**DNS_QUERY_REQUEST**](/windows/desktop/api/Windns/ns-windns-dns_query_request)
+- [**DNS_QUERY_REQUEST3**](/windows/desktop/api/Windns/ns-windns-dns_query_request3)
 - [**DNS_RECORD**](/windows/win32/api/windns/ns-windns-dns_recorda)
 - [**DNS_RECORD_FLAGS**](/windows/win32/api/windns/ns-windns-dns_record_flags)
 - [**DNS_SERVICE_BROWSE_REQUEST**](/windows/desktop/api/Windns/ns-windns-dns_service_browse_request)
@@ -38,7 +40,7 @@ Las siguientes estructuras se definen para su uso con DNS:
 - [**MDNS_QUERY_HANDLE**](/windows/desktop/api/Windns/ns-windns-mdns_query_handle)
 - [**MDNS_QUERY_REQUEST**](/windows/desktop/api/Windns/ns-windns-mdns_query_request)
 
-Las siguientes estructuras de registro de recursos (RR) también se incluyen en la API de DNS. Estas estructuras se utilizan con la estructura **DNS_RECORD** para administrar mediante programación los registros de recursos DNS.
+Las siguientes estructuras de registro de recursos (RR) también se incluyen en la API de DNS. Estas estructuras se usan con la estructura **DNS_RECORD** para administrar mediante programación los registros de recursos DNS.
 
 - [**DNS_A_DATA**](/windows/win32/api/windns/ns-windns-dns_a_data)
 - [**DNS_AAAA_DATA**](/windows/win32/api/windns/ns-windns-dns_aaaa_data)

@@ -1,23 +1,23 @@
 ---
-title: Introducción con la fase de Stream-Output
-description: En esta sección se describe cómo usar un sombreador de geometría con la fase de salida de la secuencia.
+title: Tareas iniciales con la Stream-Output fase
+description: En esta sección se describe cómo usar un sombreador de geometría con la fase de salida del flujo.
 ms.assetid: 37146486-5922-4833-850c-cc4a51de0957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 909b3ba37e8b80201a4afc3e5bf18f016fed38a0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ae2e72d25177926c948f43996b6c57d42a7c557b
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104984030"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587882"
 ---
-# <a name="getting-started-with-the-stream-output-stage"></a>Introducción con la fase de Stream-Output
+# <a name="getting-started-with-the-stream-output-stage"></a>Tareas iniciales con la Stream-Output fase
 
-En esta sección se describe cómo usar un sombreador de geometría con la fase de salida de la secuencia.
+En esta sección se describe cómo usar un sombreador de geometría con la fase de salida del flujo.
 
 ## <a name="compile-a-geometry-shader"></a>Compilar un sombreador de geometría
 
-Este sombreador de geometría (GS) calcula una cara normal para cada triángulo y genera datos de coordenadas normal y de textura.
+Este sombreador de geometría (GS) calcula una cara normal para cada triángulo y genera datos de coordenadas de posición, normales y de textura.
 
 
 ```
@@ -93,7 +93,7 @@ void GS( triangle GSPS_INPUT input[3], inout TriangleStream<GSPS_INPUT> TriStrea
 
 
 
-Teniendo en cuenta ese código, tenga en cuenta que un sombreador de geometría se parece mucho a un sombreador de vértices o de píxeles, pero con las siguientes excepciones: el tipo devuelto por la función, las declaraciones de parámetros de entrada y la función intrínseca.
+Teniendo en cuenta ese código, tenga en cuenta que un sombreador de geometría se parece mucho a un sombreador de vértices o píxeles, pero con las siguientes excepciones: el tipo devuelto por la función, las declaraciones de parámetros de entrada y la función intrínseca.
 
 
 
@@ -111,7 +111,7 @@ Teniendo en cuenta ese código, tenga en cuenta que un sombreador de geometría 
 <tbody>
 <tr class="odd">
 <td><span id="Function_return_type"></span><span id="function_return_type"></span><span id="FUNCTION_RETURN_TYPE"></span>Tipo de valor devuelto de función<br/></td>
-<td>El tipo de valor devuelto de función realiza una acción, declara el número máximo de vértices que puede generar el sombreador. En este caso, <span data-codelanguage=""></span>
+<td>El tipo de valor devuelto de función hace una cosa, declara el número máximo de vértices que puede generar el sombreador. En este caso, <span data-codelanguage=""></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -123,7 +123,7 @@ Teniendo en cuenta ese código, tenga en cuenta que un sombreador de geometría 
 </tbody>
 </table>
 
-define la salida para que tenga un máximo de 12 vértices.</td>
+define la salida para que sea un máximo de 12 vértices.</td>
 </tr>
 <tr class="even">
 <td><p><span id="Input_parameter_declarations"></span><span id="input_parameter_declarations"></span><span id="INPUT_PARAMETER_DECLARATIONS"></span>Declaraciones de parámetros de entrada</p></td>
@@ -136,19 +136,19 @@ define la salida para que tenga un máximo de 12 vértices.</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><pre><code>triangle GSPS_INPUT input[3] , inout TriangleStream<GSPS_INPUT> TriStream</code></pre></td>
+<td><pre><code>triangle GSPS_INPUT input[3] , inout TriangleStream&lt;GSPS_INPUTT&gt; TriStream</code></pre></td>
 </tr>
 </tbody>
 </table>
 
 </div>
-<p>El primer parámetro es una matriz de vértices (3 en este caso) definida por una estructura de GSPS_INPUT (que define los datos por vértice como una posición, una coordenada normal y de textura). El primer parámetro también usa la palabra clave triangular, lo que significa que la etapa del ensamblador de entrada debe generar los datos en el sombreador de geometría como uno de los tipos primitivos triangulares (lista de triángulos o franja de triángulo).</p>
-<p>El segundo parámetro es una secuencia de triángulo definida por el tipo TriangleStream <GSPS_INPUT> . Esto significa que el parámetro es una matriz de triángulos, cada uno de los cuales se compone de tres vértices (que contienen los datos de los miembros de GSPS_INPUT).</p>
-<p>Use las palabras clave Triangle y trianglestream para identificar triángulos individuales o un flujo de triángulos en un GS.</p></td>
+<p>El primer parámetro es una matriz de vértices (3 en este caso) definida por una estructura GSPS_INPUT (que define los datos por vértice como una posición, una coordenada normal y una coordenada de textura). El primer parámetro también usa la palabra clave triangle, lo que significa que la fase del ensamblador de entrada debe generar datos al sombreador de geometría como uno de los tipos primitivos de triángulo (lista de triángulos o franja de triángulo).</p>
+<p>El segundo parámetro es una secuencia de triángulo definida por el tipo TriangleStream &lt; GSPS_INPUTT &gt; . Esto significa que el parámetro es una matriz de triángulos, cada uno de los cuales se forma de tres vértices (que contienen los datos de los miembros de GSPS_INPUT).</p>
+<p>Use las palabras clave triangle y trianglestream para identificar triángulos individuales o una secuencia de triángulos en un GS.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="Intrinsic_function"></span><span id="intrinsic_function"></span><span id="INTRINSIC_FUNCTION"></span>Función intrínseca</p></td>
-<td><p>Las líneas de código de la función de sombreador usan funciones intrínsecas de HLSL Common-Shader-Core, excepto las dos últimas líneas, que llaman a Append y RestartStrip. Estas funciones solo están disponibles para un sombreador de geometría. Append informa al sombreador de geometría para que anexe la salida a la franja actual; RestartStrip crea una nueva franja primitiva. Se crea una nueva banda implícitamente en cada invocación de la fase GS.</p></td>
+<td><p>Las líneas de código de la función de sombreador usan funciones intrínsecas HLSL common-shader-core, excepto las dos últimas líneas, que llaman a Append y RestartStrip. Estas funciones solo están disponibles para un sombreador de geometría. Anexar informa al sombreador de geometría para anexar la salida a la franja actual; RestartStrip crea una nueva franja primitiva. Se crea implícitamente una nueva franja en cada invocación de la fase GS.</p></td>
 </tr>
 </tbody>
 </table>
@@ -157,9 +157,9 @@ define la salida para que tenga un máximo de 12 vértices.</td>
 
  
 
-El resto del sombreador es muy similar a un sombreador de vértices o de píxeles. El sombreador de geometría utiliza una estructura para declarar los parámetros de entrada y marca el miembro de posición con la semántica de posición de la VP \_ para indicar al hardware que se trata de datos posicionales. La estructura de entrada identifica los otros dos parámetros de entrada como coordenadas de textura (aunque uno de ellos contendrá una cara normal). Podría usar su propia semántica personalizada para la cara normal si lo prefiere.
+El resto del sombreador es muy similar a un sombreador de vértices o píxeles. El sombreador de geometría usa una estructura para declarar parámetros de entrada y marca el miembro de posición con la semántica POSITION de SV para decir al hardware que se trata de \_ datos posicionales. La estructura de entrada identifica los otros dos parámetros de entrada como coordenadas de textura (aunque uno de ellos contendrá una cara normal). Si lo prefiere, puede usar su propia semántica personalizada para la cara normal.
 
-Una vez diseñado el sombreador de geometría, llame a [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) para compilar como se muestra en el ejemplo de código siguiente.
+Después de diseñar el sombreador de geometría, llame [**a D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) para compilar, como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -173,13 +173,13 @@ D3DCompile( pSrcData, sizeof( pSrcData ),
 
 
 
-Al igual que los sombreadores de píxeles y vértices, se necesita una marca de sombreador para indicar al compilador cómo desea que se compile el sombreador (para la depuración, optimizada para velocidad, etc.), la función de punto de entrada y el modelo de sombreador con el que realizar la validación. En este ejemplo se crea un sombreador de geometría generado a partir del archivo Tutorial13. FX mediante la función GS. El sombreador se compila para el modelo de sombreador 4,0.
+Al igual que los sombreadores de vértices y píxeles, necesita una marca de sombreador para decir al compilador cómo desea que se compile el sombreador (para la depuración, optimizado para velocidad, entre otros), la función de punto de entrada y el modelo de sombreador con el que se va a validar. En este ejemplo se crea un sombreador de geometría creado a partir del archivo Tutorial13.fx, mediante la función GS. El sombreador se compila para el modelo de sombreador 4.0.
 
-## <a name="create-a-geometry-shader-object-with-stream-output"></a>Creación de un objeto de Geometry-Shader con salida de flujo
+## <a name="create-a-geometry-shader-object-with-stream-output"></a>Crear un objeto Geometry-Shader con salida de flujo
 
-Una vez que sepa que va a transmitir los datos de la geometría y que ha compilado correctamente el sombreador, el paso siguiente consiste en llamar a [**ID3D11Device:: CreateGeometryShaderWithStreamOutput**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-creategeometryshaderwithstreamoutput) para crear el objeto de sombreador de geometría.
+Una vez que sepa que va a transmitir los datos desde la geometría y que ha compilado correctamente el sombreador, el siguiente paso es llamar a [**ID3D11Device::CreateGeometryShaderWithStreamOutput**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-creategeometryshaderwithstreamoutput) para crear el objeto de sombreador geometry.
 
-Pero en primer lugar, debe declarar la firma de entrada de la etapa de salida de la secuencia. Esta firma coincide o valida las salidas GS y las entradas de SO en el momento de la creación del objeto. El código siguiente es un ejemplo de la declaración de SO.
+Pero en primer lugar, debe declarar la firma de entrada de la fase de salida de aire (SO). Esta firma coincide o valida las salidas de GS y las entradas SO en el momento de la creación del objeto. El código siguiente es un ejemplo de la declaración SO.
 
 
 ```
@@ -199,20 +199,20 @@ D3D11Device->CreateGeometryShaderWithStreamOut( pShaderBytecode, ShaderBytecodes
 
 Esta función toma varios parámetros, entre los que se incluyen:
 
--   Puntero al sombreador de geometría compilado (o sombreador de vértices si no hay ningún sombreador de geometría presente y los datos se transmitirán directamente desde el sombreador de vértices). Para obtener información sobre cómo obtener este puntero, vea [obtener un puntero a un sombreador compilado](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-using-shaders-10).
--   Puntero a una matriz de declaraciones que describen los datos de entrada para la fase de salida de la secuencia. (Consulte [**D3D11 \_ para obtener la \_ \_ entrada de declaración**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_so_declaration_entry)). Puede proporcionar hasta 64 declaraciones, una para cada tipo de elemento diferente que se va a mostrar desde la fase de. La matriz de entradas de declaración describe el diseño de los datos, independientemente de si solo se van a enlazar un único búfer o varios búferes para la salida de la secuencia.
--   Número de elementos que se escriben en la fase de.
--   Un puntero al objeto de sombreador de geometría que se crea (vea [**ID3D11GeometryShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11geometryshader)).
+-   Puntero al sombreador de geometría compilado (o sombreador de vértices si no habrá ningún sombreador de geometría y los datos se transmitirán directamente desde el sombreador de vértices). Para obtener información sobre cómo obtener este puntero, vea [Getting a Pointer to a Compiled Shader](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-using-shaders-10).
+-   Puntero a una matriz de declaraciones que describen los datos de entrada de la fase de salida del flujo. (Vea [**D3D11 \_ SO DECLARATION \_ \_ ENTRY**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_so_declaration_entry)).) Puede proporcionar hasta 64 declaraciones, una para cada tipo diferente de elemento que se va a generar desde la fase SO. La matriz de entradas de declaración describe el diseño de datos independientemente de si solo se va a enlazar un búfer único o varios búferes para la salida del flujo.
+-   Número de elementos escritos por la fase SO.
+-   Puntero al objeto de sombreador de geometría que se crea (vea [**ID3D11GeometryShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11geometryshader)).
 
-En esta situación, el intervalo del búfer es NULL, el índice de la secuencia que se va a enviar al rasterizador es 0 y la interfaz de vinculación de clases es NULL.
+En esta situación, el paso del búfer es NULL, el índice de la secuencia que se va a enviar al rasterizador es 0 y la interfaz de vinculación de clase es NULL.
 
-La declaración de salida de flujo define la forma en que los datos se escriben en un recurso de búfer. Puede agregar tantos componentes como desee a la declaración de salida. Utilice la fase for para escribir en un único recurso de búfer o en muchos recursos de búfer. En el caso de un solo búfer, la fase for puede escribir muchos elementos diferentes por vértice. En el caso de varios búferes, la fase for solo puede escribir un único elemento de datos por vértice en cada búfer.
+La declaración de salida de flujo define la forma en que se escriben los datos en un recurso de búfer. Puede agregar tantos componentes como desee a la declaración de salida. Use la fase SO para escribir en un único recurso de búfer o en muchos recursos de búfer. Para un solo búfer, la fase SO puede escribir muchos elementos diferentes por vértice. Para varios búferes, la fase SO solo puede escribir un único elemento de datos por vértice en cada búfer.
 
-Para usar la fase for sin usar un sombreador de geometría, llame a [**ID3D11Device:: CreateGeometryShaderWithStreamOutput**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-creategeometryshaderwithstreamoutput) y pase un puntero a un sombreador de vértices al parámetro *pShaderBytecode* .
+Para usar la fase SO sin usar un sombreador de geometría, llame a [**ID3D11Device::CreateGeometryShaderWithStreamOutput**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-creategeometryshaderwithstreamoutput) y pase un puntero a un sombreador de vértices al *parámetro pShaderBytecode.*
 
-## <a name="set-the-output-targets"></a>Establecimiento de los destinos de salida
+## <a name="set-the-output-targets"></a>Establecer los destinos de salida
 
-El último paso es establecer los búferes de este modo. Los datos se pueden transmitir en uno o varios búferes de la memoria para su uso posterior. En el código siguiente se muestra cómo crear un búfer único que se puede usar para los datos de vértices, así como para la fase de creación de datos en streaming.
+El último paso es establecer los búferes de la fase SO. Los datos se pueden transmitir a uno o varios búferes en memoria para usarlos más adelante. En el código siguiente se muestra cómo crear un búfer único que se puede usar para los datos de vértice, así como para la fase SO en la que se transmitirán datos.
 
 
 ```
@@ -233,9 +233,9 @@ D3D11Device->CreateBuffer( &bufferDesc, NULL, &m_pBuffer );
 
 
 
-Cree un búfer mediante una llamada a [**ID3D11Device:: CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer). En este ejemplo se muestra el uso predeterminado, que es habitual para un recurso de búfer que se espera que se actualice con bastante frecuencia por la CPU. La marca de enlace identifica la fase de canalización a la que se puede enlazar el recurso. Cualquier recurso usado por la fase SO también se debe crear con la salida de flujo de enlace D3D10 de la \_ secuencia de enlace \_ \_ .
+Cree un búfer mediante una llamada [**a ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer). En este ejemplo se muestra el uso predeterminado, que es típico para un recurso de búfer que se espera que la CPU actualice con bastante frecuencia. La marca de enlace identifica la fase de canalización a la que se puede enlazar el recurso. Cualquier recurso utilizado por la fase SO también debe crearse con la marca de enlace D3D10 \_ BIND \_ STREAM \_ OUTPUT.
 
-Una vez que el búfer se crea correctamente, establézcalo en el dispositivo actual llamando a [**ID3D11DeviceContext:: SOSetTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-sosettargets):
+Una vez creado correctamente el búfer, estaléctelo en el dispositivo actual mediante una llamada a [**ID3D11DeviceContext::SOSetTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-sosettargets):
 
 
 ```
@@ -245,15 +245,15 @@ D3D11Device->SOSetTargets( 1, &m_pBuffer, offset );
 
 
 
-Esta llamada toma el número de búferes, un puntero a los búferes y una matriz de desplazamientos (un desplazamiento en cada uno de los búferes que indica dónde comenzar a escribir datos). Los datos se escribirán en estos búferes de salida de streaming cuando se llama a una función Draw. Una variable interna realiza un seguimiento de la posición en la que se comienza a escribir datos en los búferes de salida de streaming y que las variables continuarán aumentando hasta que se vuelva a llamar a [**SOSetTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-sosettargets) y se especifique un nuevo valor de desplazamiento.
+Esta llamada toma el número de búferes, un puntero a los búferes y una matriz de desplazamientos (un desplazamiento en cada uno de los búferes que indica dónde empezar a escribir datos). Los datos se escribirán en estos búferes de salida de streaming cuando se llame a una función draw. Una variable interna realiza un seguimiento de la posición de dónde empezar a escribir datos en los búferes de salida de streaming, y las variables seguirán incrementando hasta que se vuelva a llamar a [**SOSetTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-sosettargets) y se especifique un nuevo valor de desplazamiento.
 
-Todos los datos que se escriben en los búferes de destino serán valores de 32 bits.
+Todos los datos escritos en los búferes de destino serán valores de 32 bits.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Secuencia: fase de salida](d3d10-graphics-programming-guide-output-stream-stage.md)
+[Fase stream-output](d3d10-graphics-programming-guide-output-stream-stage.md)
 </dt> </dl>
 
  

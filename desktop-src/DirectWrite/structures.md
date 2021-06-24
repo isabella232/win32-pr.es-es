@@ -1,66 +1,66 @@
 ---
 title: Estructuras de DirectWrite
-description: DirectWrite define las siguientes estructuras.
+description: DirectWrite define las estructuras siguientes.
 ms.assetid: 348dd001-bad9-4f1a-a5f5-84b118a5e2d4
 keywords:
-- DirectWrite, estructuras
+- DirectWrite,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea132cde1ea6b740cc02b938767f941e9c999e5a
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 19f678be8e02c8afecd849673d97ae20f6b1a710
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105689610"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587916"
 ---
 # <a name="directwrite-structures"></a>Estructuras de DirectWrite
 
-DirectWrite define las siguientes estructuras.
+DirectWrite define las estructuras siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción |
 |-|-|
-| [**DWRITE_BITMAP_DATA_BGRA32**](./dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32.md) | Representa los datos de mapa de bits en formato BGRA32. |
-| [**DWRITE \_ métricas de intercalación \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics) | La estructura de [**\_ \_ métricas del símbolo de intercalación de DWRITE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics) especifica las métricas de la posición del símbolo de intercalación en una fuente. |
-| [**\_métricas de clúster de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_cluster_metrics) | Contiene información acerca de un clúster de glifos. |
-| [**\_color \_ F de DWRITE**](dwrite-color-f.md) | Describe los componentes rojo, verde, azul y alfa de un color. |
-| [**DWRITE \_ \_ ejecución del glifo de color \_**](/windows/win32/api/DWrite_2/ns-dwrite_2-dwrite_color_glyph_run) | Contiene la información necesaria para que los representadores dibujen ejecuciones de glifos con información de color del glifo. |
-| [**DWRITE \_ glifo de color \_ \_ RUN1**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_color_glyph_run1) | Representa una ejecución de glifo de color. El método IDWriteFactory4:: TranslateColorGlyphRun devuelve una colección ordenada de ejecuciones de glifos de color de tipos diferentes en función de lo que admita la fuente. |
-| [**\_fragmento de archivo DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_file_fragment) | Representa un intervalo de bytes en un archivo de fuente. |
+| [**DWRITE_BITMAP_DATA_BGRA32**](/windows/windows-app-sdk/api/win32/dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32) | Representa los datos de mapa de bits en formato BGRA32. |
+| [**MÉTRICAS \_ DE DWRITE CARET \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics) | La [**estructura DWRITE \_ CARET \_ METRICS**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics) especifica las métricas para la colocación del elemento de inserción en una fuente. |
+| [**MÉTRICAS DE CLÚSTER DE DWRITE \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_cluster_metrics) | Contiene información sobre un clúster de glifos. |
+| [**DWRITE \_ COLOR \_ F**](dwrite-color-f.md) | Describe los componentes rojo, verde, azul y alfa de un color. |
+| [**EJECUCIÓN DEL \_ GLIFO DE COLOR \_ DWRITE \_**](/windows/win32/api/DWrite_2/ns-dwrite_2-dwrite_color_glyph_run) | Contiene la información necesaria para que los representadores dibujen ejecuciones de glifo con información de color de glifo. |
+| [**DWRITE \_ COLOR \_ GLYPH \_ RUN1**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_color_glyph_run1) | Representa una ejecución de glifo de color. El método IDWriteFactory4::TranslateColorGlyphRun devuelve una colección ordenada de ejecuciones de glifos de color de distintos tipos en función de lo que admita la fuente. |
+| [**FRAGMENTO DE \_ ARCHIVO DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_file_fragment) | Representa un intervalo de bytes en un archivo de fuente. |
 | [**DWRITE_FONT_AXIS_RANGE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_range) | Representa el intervalo mínimo y máximo de los valores posibles para un eje de fuente. |
-| [**DWRITE_FONT_AXIS_VALUE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_value) | Representa un valor para un eje de fuentes. Se utiliza al consultar y crear instancias de fuentes. |
-| [**\_característica de fuente DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_feature) | Especifica las propiedades que se utilizan para identificar y ejecutar características tipográficas en la fuente actual. |
-| [**DWRITE \_ \_ métricas de fuente**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics) | La estructura de [**\_ \_ métricas de fuentes DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics) especifica las métricas que se aplican a todos los glifos dentro de la fuente. |
-| [**DWRITE \_ Font \_ METRICS1**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_font_metrics1) | La estructura [**DWRITE \_ Font \_ METRICS1**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_font_metrics1) especifica las métricas que se aplican a todos los glifos dentro de la fuente. |
-| [**\_propiedad de fuente DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_property) | Propiedad de fuente usada para filtrar conjuntos de fuentes y generar un conjunto de fuentes con propiedades explícitas. |
-| [**\_datos de \_ imagen de GLIFO de DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_glyph_image_data) | Datos para un solo glifo de GetGlyphImageData. |
-| [**\_métricas del glifo de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) | Especifica las métricas de un glifo individual. |
-| [**\_desplazamiento del glifo de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_offset) | Ajuste opcional a la posición de un glifo. |
-| [**\_ejecución del glifo de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run) | Contiene la información necesaria para que los representadores dibujen las ejecuciones del glifo. |
-| [**\_Descripción de \_ ejecución del GLIFO de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run_description) | Contiene propiedades adicionales relacionadas con las de [**la \_ \_ ejecución del glifo de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run). |
-| [**métricas de la prueba de posicionamiento de DWRITE \_ \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_hit_test_metrics) | Describe la región obtenida por una prueba de posicionamiento. |
-| [**DWRITE \_ \_ métricas de objeto insertado \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics) | Contiene propiedades que describen la medida geométrica de un objeto insertado definido por la aplicación. |
-| [**\_oportunidad de justificación de DWRITE \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) | La estructura de la [**\_ \_ oportunidad de justificación de DWRITE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) especifica la información de justificación por glifo. |
-| [**punto de interrupción de \_ línea DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_breakpoint) | Características de punto de interrupción de línea de un carácter. |
-| [**\_métricas de línea de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_metrics) | Contiene información sobre una línea de texto con formato. |
-| [**\_METRICS1 DWRITE line \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_metrics1) | Contiene información sobre una línea de texto con formato. |
-| [**\_espaciado de línea de DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_spacing) | |
-| [**\_matriz DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) | La estructura de la [**\_ matriz DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) especifica la transformación de gráficos que se va a aplicar a los glifos representados. |
-| [**\_métricas salientes de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics) | Indica cuántos DIP visibles (píxeles independientes del dispositivo) sobretoman cada lado del diseño o los objetos insertados. |
-| [**DWRITE \_ PAnose**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_panose) | La [**DWRITE \_ Panose**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_panose) Union describe los valores de clasificación de tipos de letra que se usan con [**IDWriteFont1:: GetPanose**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefont1-getpanose) para seleccionar y coincidir con la fuente. |
-| [**\_análisis de scripts de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_script_analysis) | Almacena la Asociación de texto y su script del sistema de escritura, así como algunos atributos de visualización. |
-| [**\_propiedades del script DWRITE \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_script_properties) | La estructura de [**\_ \_ propiedades del script DWRITE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_script_properties) especifica propiedades de script para la exploración y la justificación del símbolo de intercalación. |
-| [**\_ \_ propiedades del glifo \_ de forma de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_glyph_properties) | Contiene propiedades de salida de forma para un glifo de salida. |
-| [**\_ \_ propiedades de texto \_ de forma DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_text_properties) | Dar forma a las propiedades de salida de un glifo de salida. |
-| [**\_tachado DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_strikethrough) | Contiene información sobre el tamaño y la posición de los tachados. |
-| [**DWRITE \_ \_ métricas de texto**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_metrics) | Contiene las métricas asociadas al texto después del diseño. |
-| [**DWRITE \_ Text \_ METRICS1**](/windows/win32/api/dwrite_2/ns-dwrite_2-dwrite_text_metrics1) | Contiene las métricas asociadas al texto después del diseño. |
-| [**\_intervalo de texto de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_range) | Especifica un intervalo de posiciones de texto donde se aplica el formato en el texto representado por un objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) . |
-| [**recorte de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_trimming) | Especifica la opción de recorte para el desbordamiento de texto en el cuadro de diseño.  |
-| [**\_características tipográficas de DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_typographic_features) | Contiene un conjunto de características tipográficas que se van a aplicar durante la forma de texto. |
-| [**\_subrayado DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_underline) | Contiene información sobre el ancho, el grosor, el desplazamiento, el alto de la ejecución, la dirección de lectura y la dirección del flujo de un subrayado.  |
-| [**DWRITE \_ intervalo de UNIcode \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_unicode_range) | La estructura de [**\_ \_ intervalo Unicode DWRITE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_unicode_range) especifica el intervalo de puntos de código Unicode. |
+| [**DWRITE_FONT_AXIS_VALUE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_value) | Representa un valor para un eje de fuente. Se usa al consultar y crear instancias de fuente. |
+| [**CARACTERÍSTICA DE \_ FUENTE \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_feature) | Especifica las propiedades usadas para identificar y ejecutar características tipográficos en la cara de fuente actual. |
+| [**MÉTRICAS DE \_ FUENTE DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics) | La [**estructura DWRITE \_ FONT \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics) especifica las métricas que son aplicables a todos los glifos dentro de la cara de fuente. |
+| [**DWRITE \_ FONT \_ METRICS1**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_font_metrics1) | La [**estructura DWRITE \_ FONT \_ METRICS1**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_font_metrics1) especifica las métricas que son aplicables a todos los glifos dentro de la cara de fuente. |
+| [**DWRITE \_ FONT \_ PROPERTY**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_property) | Propiedad de fuente utilizada para filtrar conjuntos de fuentes y crear un conjunto de fuentes con propiedades explícitas. |
+| [**DATOS DE IMAGEN \_ DE GLIFO \_ DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_glyph_image_data) | Datos de un único glifo de GetGlyphImageData. |
+| [**MÉTRICAS DE GLIFO DE DWRITE \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) | Especifica las métricas de un glifo individual. |
+| [**DESPLAZAMIENTO DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_offset) | Ajuste opcional en la posición de un glifo. |
+| [**EJECUCIÓN DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run) | Contiene la información necesaria para que los representadores dibujen ejecuciones de glifo. |
+| [**DESCRIPCIÓN DE EJECUCIÓN \_ DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run_description) | Contiene propiedades adicionales relacionadas con las de [**DWRITE \_ GLYPH \_ RUN**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run). |
+| [**MÉTRICAS DE \_ PRUEBAS DE IMPACTO DE DWRITE \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_hit_test_metrics) | Describe la región obtenida por una prueba de acceso. |
+| [**MÉTRICAS \_ DE OBJETOS EN LÍNEA \_ DE DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics) | Contiene propiedades que describen la medida geométrica de un objeto en línea definido por la aplicación. |
+| [**OPORTUNIDAD DE \_ JUSTIFICACIÓN DE \_ DWRITE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) | La [**estructura DWRITE \_ JUSTIFICATION \_ OPPORTUNITY**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) especifica la información de justificación por glifo. |
+| [**PUNTO DE \_ INTERRUPCIÓN DE LÍNEA \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_breakpoint) | Características de punto de interrupción de línea de un carácter. |
+| [**MÉTRICAS DE \_ LÍNEA DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_metrics) | Contiene información sobre una línea de texto con formato. |
+| [**DWRITE \_ LINE \_ METRICS1**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_metrics1) | Contiene información sobre una línea de texto con formato. |
+| [**ESPACIADO DE LÍNEA \_ DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_spacing) | |
+| [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) | La [**estructura DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) especifica la transformación de gráficos que se aplicará a los glifos representados. |
+| [**MÉTRICAS \_ DE SOBRESALIR DE DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics) | Indica la cantidad de dips visibles (píxeles independientes del dispositivo) que se sobresalgan en cada lado del diseño o de los objetos en línea. |
+| [**DWRITE \_ PANOSE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_panose) | La [**unión \_ DWRITE PANOSE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_panose) describe los valores de clasificación de tipo de letra que se usan con [**IDWriteFont1::GetPanose**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefont1-getpanose) para seleccionar y buscar coincidencias con la fuente. |
+| [**ANÁLISIS DE \_ SCRIPTS DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_script_analysis) | Almacena la asociación de texto y su script del sistema de escritura, así como algunos atributos para mostrar. |
+| [**PROPIEDADES DE \_ SCRIPT DWRITE \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_script_properties) | La [**estructura DWRITE \_ SCRIPT \_ PROPERTIES**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_script_properties) especifica las propiedades del script para la navegación y la justificación del elemento de tipo "caret". |
+| [**DWRITE SHAPING GLYPH PROPERTIES (PROPIEDADES DE \_ GLIFO DE FORMA DE DWRITE) \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_glyph_properties) | Contiene propiedades de salida de forma para un glifo de salida. |
+| [**DWRITE \_ SHAPING \_ TEXT \_ PROPERTIES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_text_properties) | Dar forma a las propiedades de salida de un glifo de salida. |
+| [**DWRITE \_ STRIKETHROUGH**](/windows/win32/api/dwrite/ns-dwrite-dwrite_strikethrough) | Contiene información sobre el tamaño y la ubicación de los tachados. |
+| [**MÉTRICAS DE TEXTO DE DWRITE \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_metrics) | Contiene las métricas asociadas al texto después del diseño. |
+| [**DWRITE \_ TEXT \_ METRICS1**](/windows/win32/api/dwrite_2/ns-dwrite_2-dwrite_text_metrics1) | Contiene las métricas asociadas al texto después del diseño. |
+| [**INTERVALO DE \_ TEXTO \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_range) | Especifica un intervalo de posiciones de texto donde se aplica el formato en el texto representado por un [**objeto IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) |
+| [**RECORTE DE \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_trimming) | Especifica la opción de recorte para el texto que desborda el cuadro de diseño.  |
+| [**CARACTERÍSTICAS \_ TIPOGRÁFICOS DE DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_typographic_features) | Contiene un conjunto de características tipográficos que se aplicarán durante el modelado de texto. |
+| [**DWRITE \_ UNDERLINE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_underline) | Contiene información sobre el ancho, grosor, desplazamiento, alto de ejecución, dirección de lectura y dirección de flujo de un subrayado.  |
+| [**INTERVALO \_ UNICODE DWRITE \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_unicode_range) | La [**estructura DWRITE \_ UNICODE \_ RANGE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_unicode_range) especifica el intervalo de puntos de código Unicode. |
 
 
 
