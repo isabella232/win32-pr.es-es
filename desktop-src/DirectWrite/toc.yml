@@ -36,7 +36,7 @@
         - name: Temas de procedimientos
           href: how-to-topics.md
           items:
-            - name: Alineación de texto
+            - name: Cómo alinear texto
               href: how-to-align-text.md
             - name: Cómo agregar compatibilidad con varios monitores
               href: how-to-add-support-for-multiple-monitors.md
@@ -46,13 +46,13 @@
               href: how-to-ensure-text-is-displayed-with-the-correct-reading-direction.md
             - name: Enumeración de fuentes
               href: font-enumeration.md
-            - name: Realización de pruebas de acceso en un diseño de texto
+            - name: Cómo realizar pruebas de acceso en un diseño de texto
               href: how-to-perform-hit-testing-on-a-text-layout.md
             - name: Cómo agregar objetos en línea a un diseño de texto
               href: how-to-add-inline-objects-to-a-text-layout.md
             - name: Cómo agregar efectos de dibujo de cliente a un diseño de texto
               href: how-to-add-custom-drawing-efffects-to-a-text-layout.md
-        - name: Glifos y ejecuciones de glifos
+        - name: Ejecuciones de glifos y glifos
           href: glyphs-and-glyph-runs.md
         - name: Conjuntos de fuentes personalizadas
           href: custom-font-sets-win10.md
@@ -75,7 +75,7 @@
             - name: DWriteCreateFactory
               href: /windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory
             - name: DWriteCoreCreateFactory (DWriteCore)
-              href: ./dwrite_core/nf-dwrite_core-dwritecorecreatefactory.md
+              href: /windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory
         - name: Enumeraciones de DirectWrite
           href: enumerations.md
           items:
@@ -90,7 +90,7 @@
             - name: DWRITE_FACTORY_TYPE
               href: /windows/win32/api/dwrite/ne-dwrite-dwrite_factory_type
             - name: DWRITE_FACTORY_TYPE (DWriteCore)
-              href: ./dwrite/ne-dwrite-dwrite_factory_type.md
+              href: /windows/windows-app-sdk/api/win32/dwrite/ne-dwrite-dwrite_factory_type
             - name: DWRITE_FLOW_DIRECTION
               href: /windows/win32/api/dwrite/ne-dwrite-dwrite_flow_direction
             - name: DWRITE_FONT_AXIS_ATTRIBUTES
@@ -253,10 +253,10 @@
                 - name: Método SetTextAntialiasMode
                   href: /windows/win32/api/dwrite_1/nf-dwrite_1-idwritebitmaprendertarget1-settextantialiasmode
             - name: IDWriteBitmapRenderTarget2 (DWriteCore)
-              href: ./dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2.md
+              href: /windows/windows-app-sdk/api/win32/dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2
               items:
                 - name: Método GetBitmapData (DWriteCore)
-                  href: ./dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md
+                  href: /windows/windows-app-sdk/api/win32/dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata
             - name: IDWriteColorGlyphRunEnumerator
               href: idwritecolorglyphrunenumerator.md
               items:
@@ -346,7 +346,7 @@
                   items:
                     - name: 'Método CreateFontFaceReference(IDWriteFontFile*, UINT32, DWRITE_FONT_SIMULATIONS, IDWriteFontFaceReference**)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference)
-                    - name: 'Método CreateFontFaceReference(WCHAR const *, FILETIME const,* UINT32, DWRITE_FONT_SIMULATIONS, IDWriteFontFaceReference**)'
+                    - name: 'Método CreateFontFaceReference(WCHAR const *, FILETIME const*, UINT32, DWRITE_FONT_SIMULATIONS, IDWriteFontFaceReference**)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference)
                 - name: Método CreateFontSetBuilder
                   href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontsetbuilder
@@ -364,7 +364,7 @@
                 - name: Métodos ComputeGlyphOrigins
                   href: idwritefactory4-computeglyphorigins-overload.md
                   items:
-                    - name: 'Método ComputeGlyphOrigins(DWRITE_GLYPH_RUN, DWRITE_MEASURING_MODE, D2D1_POINT_2F, DWRITE_MATRIX, D2D1_POINT_2F*)'
+                    - name: 'ComputeGlyphOrigins(DWRITE_GLYPH_RUN, DWRITE_MEASURING_MODE, D2D1_POINT_2F, DWRITE_MATRIX, D2D1_POINT_2F*)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-computeglyphorigins(dwrite_glyph_runconst_d2d1_point_2f_d2d1_point_2f)
                     - name: 'Método ComputeGlyphOrigins(DWRITE_GLYPH_RUN, D2D1_POINT_2F, D2D1_POINT_2F*)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-computeglyphorigins(dwrite_glyph_runconst_d2d1_point_2f_d2d1_point_2f)
@@ -499,7 +499,7 @@
             - name: IDWriteFontDownloadListener
               href: /windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadlistener
               items:
-                - name: DownloadCompleted (método)
+                - name: Método DownloadCompleted
                   href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontdownloadlistener-downloadcompleted
             - name: IDWriteFontDownloadQueue
               href: /windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue
@@ -965,11 +965,11 @@
             - name: IDWriteLocalFontFileLoader
               href: idwritelocalfontfileloader.md
               items:
-                - name: Método GetFilePathLengthFromKey
+                - name: GetFilePathLengthFromKey (método)
                   href: idwritelocalfontfileloader-getfilepathlengthfromkey.md
                 - name: GetFilePathFromKey (método)
                   href: idwritelocalfontfileloader-getfilepathfromkey.md
-                - name: Método GetLastWriteTimeFromKey
+                - name: GetLastWriteTimeFromKey (método)
                   href: idwritelocalfontfileloader-getlastwritetimefromkey.md
             - name: IDWriteLocalizedStrings
               href: /windows/win32/api/dwrite/nn-dwrite-idwritelocalizedstrings
@@ -1397,7 +1397,7 @@
           href: structures.md
           items:
             - name: DWRITE_BITMAP_DATA_BGRA32 (DWriteCore)
-              href: ./dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32.md
+              href: /windows/windows-app-sdk/api/win32/dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32
             - name: DWRITE_CARET_METRICS
               href: /windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics
             - name: DWRITE_CLUSTER_METRICS
