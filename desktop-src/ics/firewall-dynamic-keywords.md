@@ -1,24 +1,24 @@
 ---
-title: Palabras clave dinámicas de firewall
-description: Las API de palabras clave dinámicas del firewall se usan para administrar direcciones de palabras clave dinámicas Firewall de Windows Defender.
+title: Palabras clave dinámicas del firewall
+description: Las API de palabras clave dinámicas del firewall se usan para administrar direcciones de palabras clave dinámicas Firewall de Microsoft Defender.
 keywords:
-- Palabras clave dinámicas de firewall
+- Palabras clave dinámicas del firewall
 ms.topic: article
 ms.date: 05/17/2021
 ms.localizationpriority: low
-ms.openlocfilehash: e60526d8a7889af3173913774790bdd209121040
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 15e35f26b72ed8d685e8302f6222836507e5c6a3
+ms.sourcegitcommit: ae8c320a757558262167a4f4e385235b8d89035c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "112681209"
+ms.locfileid: "112765539"
 ---
-# <a name="firewall-dynamic-keywords"></a>Palabras clave dinámicas de firewall
+# <a name="firewall-dynamic-keywords"></a>Palabras clave dinámicas del firewall
 
-Las API de palabras clave dinámicas del firewall se usan para administrar direcciones de *palabras clave dinámicas* [Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Una dirección de palabra clave dinámica se usa para crear un conjunto de direcciones IP a las que pueden hacer referencia una o varias reglas de firewall. Las direcciones de palabras clave dinámicas admiten IPv4 e IPv6.
+Las API de palabras clave dinámicas del firewall se usan para administrar direcciones de *palabras clave dinámicas* [Firewall de Microsoft Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Una dirección de palabra clave dinámica se usa para crear un conjunto de direcciones IP a las que puede hacer referencia una o varias reglas de firewall. Las direcciones de palabras clave dinámicas admiten IPv4 e IPv6.
 
 > [!NOTE]
-> Para obtener contenido de referencia de API para las API introducidas en este tema, consulte Referencia [de palabras clave dinámicas de firewall.](firewall-dynamic-keywords-reference.md)
+> Para obtener contenido de referencia de API para las API introducidas en este tema, consulte [Referencia de palabras clave dinámicas de firewall.](firewall-dynamic-keywords-reference.md)
 
 ## <a name="operations-on-dynamic-keyword-addresses"></a>Operaciones en direcciones de palabras clave dinámicas
 
@@ -32,7 +32,7 @@ Con las API de palabras clave dinámicas del firewall, puede realizar las siguie
 
 Hay ejemplos de código para todas esas operaciones más adelante en este tema.
 
-Una vez que haya agregado una dirección de palabra clave dinámica, se conserva en los reinicios. Debe eliminar una dirección de palabra clave dinámica una vez que haya terminado con el objeto .
+Una vez que haya agregado una dirección de palabra clave dinámica, se conserva entre reinicios. Debe eliminar una dirección de palabra clave dinámica una vez que haya terminado con el objeto .
 
 Hay dos clases de direcciones de palabras clave dinámicas, como se describe en las dos secciones siguientes.
 
@@ -42,38 +42,38 @@ El primer tipo es *AutoResolve*, donde el campo de palabra clave representa un n
 
 Estos objetos están diseñados para que sus direcciones IP se resuelvan automáticamente. Es decir, no a través de un administrador en el momento de la creación del objeto; ni a través del propio sistema operativo (SO). Un componente fuera del servicio de firewall debe realizar la resolución de direcciones IP para estos objetos y actualizarlos correctamente. La implementación de este componente está fuera del ámbito de este contenido.
 
-Una dirección de palabra clave dinámica se indica como *AutoResolve* estableciendo la marca FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS_AUTO_RESOLVE en el objeto al llamar **a** la función [**FWAddDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) El *campo de* palabra clave debe usarse para representar el valor que se resuelve, es decir, un nombre de dominio completo &mdash; (FQDN) o nombre de host. El *campo de* direcciones debe ser NULL inicialmente para estos objetos. Estos objetos no tendrán sus direcciones IP persistentes en los ciclos de arranque y debe volver a evaluar o volver a rellenar sus direcciones durante el siguiente ciclo de arranque.
+Una dirección de palabra clave dinámica se indica como *AutoResolve* estableciendo la marca FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS_AUTO_RESOLVE en el objeto al llamar **a** la función [**FWAddDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) El *campo de* palabra clave debe usarse para representar el valor que se resuelve, es decir, un nombre de dominio completo &mdash; (FQDN) o nombre de host. *Inicialmente,* el campo direcciones debe ser NULL para estos objetos. Estos objetos no tendrán sus direcciones IP persistentes en los ciclos de arranque y debe volver a evaluar o volver a rellenar sus direcciones durante el siguiente ciclo de arranque.
 
 > [!NOTE]
-> Los objetos de dirección de palabras clave dinámicas AutoResolve desencadenan notificaciones [**en FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) y [**FWDeleteDynamicKeywordAddress0,**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)pero [**no en FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
+> Los objetos de dirección de palabras clave dinámicas AutoResolve desencadenan notificaciones en [**FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) y [**FWDeleteDynamicKeywordAddress0,**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)pero no [**en FWUpdateDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0)
 
 ## <a name="non-autoresolve-dynamic-keyword-addresses"></a>Direcciones de palabras clave dinámicas que no son de AutoResolve
 
-El segundo tipo no *es AutoResolve,* donde el campo de palabra clave es cualquier cadena y las direcciones se definen en el momento de la creación. 
+El segundo tipo no *es AutoResolve,* donde el campo *de* palabra clave es cualquier cadena y las direcciones se definen en el momento de la creación.
 
-Estos objetos se usan para almacenar un conjunto de direcciones IP, subredes o intervalos. El *campo de* palabra clave aquí se usa para mayor comodidad de administración y se puede establecer en cualquier cadena. El *campo de* direcciones debe ser distinto de NULL tras la creación. Las direcciones de estos objetos se conservan en los reinicios.
+Estos objetos se usan para almacenar un conjunto de direcciones IP, subredes o intervalos. El *campo de* palabra clave aquí se usa para mayor comodidad de administración y se puede establecer en cualquier cadena. El *campo direcciones* debe ser distinto de NULL tras la creación. Las direcciones de estos objetos se conservan en los reinicios.
 
 > [!NOTE]
-> Los objetos de dirección de palabras clave dinámicas que no son AutoResolve desencadenan notificaciones [**en FWAddDynamicKeywordAddress0,**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)y [**también FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
+> Los objetos de dirección de palabras clave dinámicas que no son AutoResolve desencadenan notificaciones [**en FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0), [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)y [**también FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
 
 ## <a name="more-about-dynamic-keyword-addresses"></a>Más información sobre las direcciones de palabras clave dinámicas 
 
 Todas las direcciones de palabras clave dinámicas deben tener un [**identificador GUID**](/windows/win32/api/guiddef/ns-guiddef-guid) único para representarlas.
 
-La API [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) entrega notificaciones a un cliente cuando cambian las direcciones de palabras clave dinámicas. No se entrega ninguna carga al cliente que describa exactamente lo que ha cambiado en el sistema. Si necesita saber qué objetos han cambiado, debe consultar el estado actual de los objetos en el sistema mediante las API [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) o [**FWEnumDynamicKeywordAddressesByType0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressesbytype0) Puede usar las distintas marcas para solicitar notificaciones solo para un subconjunto de objetos. Si no usa marcas, se entregarán notificaciones de cambio para todos los objetos.
+La API [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) entrega notificaciones a un cliente cuando cambian las direcciones de palabras clave dinámicas. No se entrega ninguna carga al cliente que describa exactamente lo que cambió en el sistema. Si necesita saber qué objetos han cambiado, debe consultar el estado actual de los objetos en el sistema mediante las API [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) o [**FWEnumDynamicKeywordAddressesByType0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressesbytype0) Puede usar las distintas marcas para solicitar notificaciones solo para un subconjunto de objetos. Si no usa ninguna marca, se entregarán notificaciones de cambio para todos los objetos.
 
-Una regla de firewall puede usar direcciones de palabra clave dinámicas en lugar de definir explícitamente direcciones IP para su condición de dirección remota. Una regla de firewall puede usar direcciones de palabras clave dinámicas e intervalos de direcciones remotas definidos estáticamente. Un único objeto de dirección de palabra clave dinámica se puede volver a usar en varias reglas de firewall. Si una regla de firewall no tiene ninguna dirección remota configurada (es decir, configurada solo con objetos AutoResolve que aún no se han resuelto), la regla no se aplicará. Además, si una regla usa varias direcciones de palabra clave dinámicas, la regla se aplicará para todas las direcciones que se resuelven actualmente, incluso si hay otros objetos que aún no se han resuelto. Cuando se actualiza una dirección de palabra clave dinámica, todos los objetos de regla asociados también tendrán sus direcciones remotas actualizadas.
+Una regla de firewall puede usar direcciones de palabras clave dinámicas en lugar de definir explícitamente direcciones IP para su condición de dirección remota. Una regla de firewall puede usar direcciones de palabras clave dinámicas e intervalos de direcciones remotas definidos estáticamente. Un único objeto de dirección de palabra clave dinámica se puede volver a usar en varias reglas de firewall. Si una regla de firewall no tiene ninguna dirección remota configurada (es decir, configurada solo con objetos AutoResolve que aún no se han resuelto), la regla no se aplicará. Además, si una regla usa varias direcciones de palabras clave dinámicas, la regla se aplicará para todas las direcciones que se resuelven actualmente, incluso si hay otros objetos que aún no se han resuelto. Cuando se actualiza una dirección de palabra clave dinámica, todos los objetos de regla asociados también tendrán sus direcciones remotas actualizadas.
 
-El propio sistema operativo (SO) no aplica ninguna dependencia entre una regla y una dirección de palabra clave dinámica. Esto significa que cualquiera de los objetos se puede crear primero; la regla puede hacer referencia a los IDs de direcciones de palabras clave dinámicas que aún no existen (en cuyo caso, no se aplicará &mdash; la regla). Además, puede eliminar una dirección de palabra clave dinámica incluso si está en uso por una regla de firewall. En este tema se describe cómo un administrador puede configurar reglas para usar la dirección de palabra clave dinámica.
+El propio sistema operativo (SO) no aplica ninguna dependencia entre una regla y una dirección de palabra clave dinámica. Esto significa que cualquier objeto se puede crear primero, la regla puede hacer referencia a los ID de dirección de palabra clave dinámica que aún no existen (en cuyo caso, la regla no se &mdash; aplicará). Además, puede eliminar una dirección de palabra clave dinámica incluso si está en uso por una regla de firewall. En este tema se describe cómo un administrador puede configurar reglas para usar la dirección de palabra clave dinámica.
 
 ## <a name="code-examples"></a>Ejemplos de código
 
 Para probar cada uno de estos ejemplos de código, primero inicie Visual Studio y cree un proyecto basado en la plantilla de proyecto **Aplicación** de consola. Solo puede reemplazar el contenido de `main.cpp` por la lista de código.
 
-La mayoría de los ejemplos de código usan las [bibliotecas de implementación de Windows (WIL).](https://github.com/Microsoft/wil) Una manera cómoda de instalar WIL es ir  a Visual Studio, hacer clic en Project Manage NuGet Packages... (Administrar proyectos paquetes NuGet... Examinar), escribir o pegar \>  \>  **Microsoft.Windows.ImplementationLibrary**  en el cuadro de búsqueda, seleccionar el elemento en los resultados de la búsqueda y, a continuación, hacer clic en Instalar para instalar el paquete para ese proyecto.
+La mayoría de los ejemplos de código usan [bibliotecas de implementación de Windows (WIL).](https://github.com/Microsoft/wil) Una manera cómoda de instalar WIL es ir  a Visual Studio, hacer clic en Project Manage NuGet Packages... Browse (Administrar proyectos paquetes NuGet... Examinar), escribir o pegar \>  \>  **Microsoft.Windows.ImplementationLibrary**  en el cuadro de búsqueda, seleccionar el elemento en los resultados de la búsqueda y, a continuación, hacer clic en Instalar para instalar el paquete para ese proyecto.
 
 > [!NOTE]
-> Los tipos de puntero para las funciones gratuitas de NetFw se publican a través de , pero no se publica una biblioteca de vínculos `NetFw.h` estáticos. Use el [patrón LoadLibraryExW](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)GetProcAddress para llamar a / [](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) estas funciones, como se muestra en estos ejemplos de código.
+> Los tipos de puntero para las funciones gratuitas de NetFw se publican a través de , pero no se publica una biblioteca de vínculos `NetFw.h` estáticos. Use el [patrón LoadLibraryExW](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) / [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para llamar a estas funciones, como se muestra en estos ejemplos de código.
 
 ### <a name="add-a-dynamic-keyword-address"></a>Adición de una dirección de palabra clave dinámica
 
@@ -245,7 +245,7 @@ int main()
 
 ### <a name="enumerate-and-free-dynamic-keyword-addresses-by-id"></a>Enumerar y liberar direcciones de palabras clave dinámicas por identificador
 
-En este ejemplo se muestra cómo usar las [**funciones FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) [**y FWFreeDynamicKeywordAddressData0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwfreedynamickeywordaddressdata0)
+En este ejemplo se muestra cómo usar las funciones [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) y [**FWFreeDynamicKeywordAddressData0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwfreedynamickeywordaddressdata0)
 
 ```cpp
 // main.cpp in a Console App project.
@@ -464,7 +464,7 @@ int main()
 
 ### <a name="subscribe-to-and-handle-dynamic-keyword-address-change-notifications"></a>Suscripción y control de notificaciones de cambio de dirección de palabras clave dinámicas
 
-En este ejemplo se muestra cómo usar las funciones [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) y [**FwpmDynamicKeywordUnsubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordunsubscribe0) y la devolución FWPM_DYNAMIC_KEYWORD_CALLBACK0 [**de**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) llamada.
+En este ejemplo se muestra cómo usar las funciones [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) y [**FwpmDynamicKeywordUnsubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordunsubscribe0) y la devolución [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) llamada.
 
 ```cppwinrt
 // main.cpp in a Console App project.
@@ -564,4 +564,4 @@ int main()
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Referencia de palabras clave dinámicas de firewall](firewall-dynamic-keywords-reference.md)
+* [Referencia de palabras clave dinámicas del firewall](firewall-dynamic-keywords-reference.md)
