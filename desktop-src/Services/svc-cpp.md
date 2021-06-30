@@ -1,21 +1,21 @@
 ---
-description: A continuación se muestra un ejemplo de servicio completo. Al usar este código como una plantilla, basta con agregar código a las secciones precedidas por a \_ .
+description: A continuación se muestra un ejemplo de servicio completo. Al usar este código como plantilla, simplemente agregue código a las secciones precedida por TO \_ DO.
 ms.assetid: dc968bd2-0397-4cec-a825-f807037b4c14
 title: Svc.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57db06947be0143712568eb8a25e8700fc075c7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6388a51335883aa48d15a52667d89d2188ac4ea3
+ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668187"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113102124"
 ---
 # <a name="svccpp"></a>Svc.cpp
 
-A continuación se muestra un ejemplo de servicio completo. Al usar este código como una plantilla, simplemente agregue código a las secciones precedidas por `TO_DO` .
+A continuación se muestra un ejemplo de servicio completo. Al usar este código como plantilla, simplemente agregue código a las secciones precedida por `TO_DO` .
 
-Al compilar el ejemplo, asegúrese de vincular a Kernel32. lib y advapi32. lib. El archivo Sample. h se genera al compilar el archivo DLL de solo recursos Sample.dll. Para obtener más información, vea [sample.MC](sample-mc.md).
+Al compilar el ejemplo, asegúrese de vincular con Kernel32.lib y Advapi32.lib. El archivo Sample.h se genera al compilar el archivo DLL de solo recursos, Sample.dll. Para obtener más información, [vea Sample.mc](sample-mc.md).
 
 
 ```C++
@@ -214,7 +214,7 @@ VOID SvcInit( DWORD dwArgc, LPTSTR *lpszArgv)
 
     if ( ghSvcStopEvent == NULL)
     {
-        ReportSvcStatus( SERVICE_STOPPED, NO_ERROR, 0 );
+        ReportSvcStatus( SERVICE_STOPPED, GetLastError(), 0 );
         return;
     }
 
@@ -358,7 +358,7 @@ VOID SvcReportEvent(LPTSTR szFunction)
 
 <dl> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

@@ -1,40 +1,40 @@
 ---
-description: Un objeto de evento es un objeto de sincronización cuyo estado se puede establecer explícitamente en señalado por el uso de la función SetEvent. A continuación se muestran los dos tipos de objeto de evento.
+description: Un objeto de evento es un objeto de sincronización cuyo estado se puede establecer explícitamente en señalado mediante el uso de la función SetEvent. A continuación se enumeran los dos tipos de objeto de evento.
 ms.assetid: 63dc2991-e070-4981-9e2d-90b4fdaaee7a
-title: Objetos de eventos (sincronización)
+title: Objetos de evento (sincronización)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 365b42bb7550507fe3522f07d950dac74c88843d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03ef4f5102df91cabb76529c9d4a9958859418aa
+ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667979"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113102144"
 ---
-# <a name="event-objects-synchronization"></a>Objetos de eventos (sincronización)
+# <a name="event-objects-synchronization"></a>Objetos de evento (sincronización)
 
-Un *objeto de evento* es un objeto de sincronización cuyo estado se puede establecer explícitamente en señalado por el uso de la función [**SetEvent**](/windows/win32/api/synchapi/nf-synchapi-resetevent) . A continuación se muestran los dos tipos de objeto de evento.
+Un *objeto de evento* es un objeto de sincronización cuyo estado se puede establecer explícitamente en señalado mediante el uso de la función [**SetEvent.**](/windows/win32/api/synchapi/nf-synchapi-setevent) A continuación se enumeran los dos tipos de objeto de evento.
 
 
 
 | Object             | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Evento de restablecimiento manual | Objeto de evento cuyo estado permanece señalado hasta que se restablece explícitamente a no señalado por la función [**ResetEvent**](/windows/win32/api/synchapi/nf-synchapi-resetevent) . Mientras se señala, se puede liberar cualquier número de subprocesos en espera, o subprocesos que especifiquen posteriormente el mismo objeto de evento en una de las [funciones de espera](wait-functions.md).                                                                                                        |
-| Evento de restablecimiento automático   | Objeto de evento cuyo estado permanece señalado hasta que se libera un único subproceso en espera, momento en el que el sistema establece automáticamente el estado en no señalado. Si no hay subprocesos en espera, el objeto del evento sigue teniendo el estado señalizado. Si hay más de un subproceso en espera, se selecciona un subproceso en espera. No asuma un orden FIFO (primero en salir, primero en salir). Los eventos externos como APC en modo kernel pueden cambiar el orden de espera.<br/> |
+| Evento de restablecimiento manual | Objeto de evento cuyo estado permanece señalado hasta que la función ResetEvent lo restablece explícitamente a [**sin signo.**](/windows/win32/api/synchapi/nf-synchapi-resetevent) Mientras se señala, se puede liberar cualquier número de subprocesos en espera [](wait-functions.md)o subprocesos que posteriormente especifiquen el mismo objeto de evento en una de las funciones de espera.                                                                                                        |
+| Evento de restablecimiento automático   | Objeto de evento cuyo estado permanece señalado hasta que se libera un único subproceso en espera, momento en el que el sistema establece automáticamente el estado en sin signo. Si no hay subprocesos en espera, el objeto del evento sigue teniendo el estado señalizado. Si hay más de un subproceso en espera, se selecciona un subproceso en espera. No asuma un pedido fifo (primero en entrada y salida). Los eventos externos, como las API en modo kernel, pueden cambiar el orden de espera.<br/> |
 
 
 
  
 
-El objeto de evento es útil para enviar una señal a un subproceso que indica que se ha producido un evento determinado. Por ejemplo, en la entrada y la salida superpuestas, el sistema establece un objeto de evento especificado en el estado señalado cuando se ha completado la operación superpuesta. Un único subproceso puede especificar objetos de evento diferentes en varias operaciones simultáneas superpuestas y, a continuación, utilizar una de las [funciones de espera](wait-functions.md) de varios objetos para esperar a que se señale el estado de cualquiera de los objetos de evento.
+El objeto de evento es útil para enviar una señal a un subproceso que indica que se ha producido un evento determinado. Por ejemplo, en la entrada y salida superpuestas, el sistema establece un objeto de evento especificado en el estado señalado cuando se ha completado la operación superpuesta. Un único subproceso puede especificar distintos objetos de evento en varias [](wait-functions.md) operaciones superpuestas simultáneas y, a continuación, usar una de las funciones de espera de varios objetos para esperar a que se señale el estado de cualquiera de los objetos de evento.
 
-Un subproceso utiliza la función [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) o [**CreateEventEx**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) para crear un objeto de evento. El subproceso de creación especifica el estado inicial del objeto y si es un objeto de evento de restablecimiento manual o de restablecimiento automático. El subproceso de creación también puede especificar un nombre para el objeto de evento. Los subprocesos de otros procesos pueden abrir un identificador de un objeto de evento existente especificando su nombre en una llamada a la función [**OpenEvent**](/windows/win32/api/synchapi/nf-synchapi-openeventa) . Para obtener más información sobre los nombres de los objetos mutex, Event, Semaphore y Timer, consulte [sincronización entre procesos](interprocess-synchronization.md).
+Un subproceso usa las [**funciones CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) [**o CreateEventEx**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) para crear un objeto de evento. El subproceso de creación especifica el estado inicial del objeto y si es un objeto de evento de restablecimiento manual o de restablecimiento automático. El subproceso de creación también puede especificar un nombre para el objeto de evento. Los subprocesos de otros procesos pueden abrir un identificador para un objeto de evento existente especificando su nombre en una llamada a la [**función OpenEvent.**](/windows/win32/api/synchapi/nf-synchapi-openeventa) Para obtener información adicional sobre los nombres de los objetos mutex, event, semaphore y timer, vea [Sincronización entre procesos.](interprocess-synchronization.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar objetos de eventos](using-event-objects.md)
+[Usar objetos de evento](using-event-objects.md)
 </dt> </dl>
 
  
