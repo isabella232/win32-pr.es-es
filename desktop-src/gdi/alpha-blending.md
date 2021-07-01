@@ -1,23 +1,23 @@
 ---
 description: La combinación alfa se usa para mostrar un mapa de bits alfa, que es un mapa de bits que tiene píxeles transparentes o semitransparentes.
 ms.assetid: 52a044cc-a471-4951-adbe-32319b8e3129
-title: Combinación alfa (Windows GDI)
+title: Alpha Blending (GDI de Windows)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f68cb34d189fb80d23cbb5eeec9d9006aa93a1eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4add2aca8ac4e2d7e1b24988eb5d40f80bac259c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985074"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120290"
 ---
-# <a name="alpha-blending-windows-gdi"></a>Combinación alfa (Windows GDI)
+# <a name="alpha-blending-windows-gdi"></a>Alpha Blending (GDI de Windows)
 
-La *combinación alfa* se usa para mostrar un mapa de bits alfa, que es un mapa de bits que tiene píxeles transparentes o semitransparentes. Además de un canal de color rojo, verde y azul, cada píxel de un mapa de bits alfa tiene un componente de transparencia conocido como *canal alfa*. Normalmente, el canal alfa contiene tantos bits como un canal de color. Por ejemplo, un canal alfa de 8 bits puede representar 256 niveles de transparencia, desde 0 (el mapa de bits completo es transparente) hasta 255 (todo el mapa de bits es opaco).
+*La combinación alfa* se usa para mostrar un mapa de bits alfa, que es un mapa de bits que tiene píxeles transparentes o semitransparentes. Además de un canal de color rojo, verde y azul, cada píxel de un mapa de bits alfa tiene un componente de transparencia conocido como *su canal alfa*. El canal alfa normalmente contiene tantos bits como un canal de color. Por ejemplo, un canal alfa de 8 bits puede representar 256 niveles de transparencia, de 0 (todo el mapa de bits es transparente) a 255 (todo el mapa de bits es opaco).
 
-Los mecanismos de combinación alfa se invocan llamando a [**AlphaBlend**](/windows/desktop/api/WinGdi/nf-wingdi-alphablend), que hace referencia a la estructura [**BLENDFUNCTION**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction) .
+Los mecanismos de combinación alfa se invocan mediante una llamada [**a AlphaBlend**](/windows/desktop/api/WinGdi/nf-wingdi-alphablend), que hace referencia a la [**estructura BLENDFUNCTION.**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction)
 
-Los valores alfa por píxel solo se admiten para 32-bpp BI \_ RGB. Esta fórmula se define como:
+Los valores alfa por píxel solo se admiten para RGB bi de 32 \_ bpp. Esta fórmula se define como:
 
 
 ```C++
@@ -31,22 +31,41 @@ typedef struct {
 
 
 
-Esto se representa en la memoria tal y como se muestra en la tabla siguiente.
+Esto se representa en memoria, como se muestra en la tabla siguiente.
 
+:::row:::
+    :::column:::
+        31:24
+    :::column-end:::
+    :::column:::
+        23:16
+    :::column-end:::
+    :::column:::
+        15:08
+    :::column-end:::
+    :::column:::
+        07:00
+    :::column-end:::
+:::row-end:::
 
+:::row:::
+    :::column:::
+        Alpha
+    :::column-end:::
+    :::column:::
+        Rojo
+    :::column-end:::
+    :::column:::
+        Verde
+    :::column-end:::
+    :::column:::
+        Azul
+    :::column-end:::
+:::row-end:::
 
-|       |       |       |       |
-|-------|-------|-------|-------|
-| 31:24 | 23:16 | 15:08 | 07:00 |
-| Alpha | Rojo   | Verde | Azul  |
+Los mapas de bits también se pueden mostrar con un factor de transparencia aplicado a todo el mapa de bits. Cualquier formato de mapa de bits se puede mostrar con un valor alfa constante global estableciendo **SourceConstantAlpha** en la [**estructura BLENDFUNCTION.**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction) El valor alfa constante global tiene 256 niveles de transparencia, de 0 (todo el mapa de bits es completamente transparente) a 255 (todo el mapa de bits es completamente opaco). El valor alfa constante global se combina con el valor alfa por píxel.
 
-
-
- 
-
-También es posible que se muestren los mapas de bits con un factor de transparencia aplicado a todo el mapa de bits. Cualquier formato de mapa de bits se puede mostrar con un valor alfa constante global estableciendo **SourceConstantAlpha** en la estructura [**BLENDFUNCTION**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction) . El valor alfa constante global tiene 256 niveles de transparencia, desde 0 (todo el mapa de bits es completamente transparente) hasta 255 (el mapa de bits completo es totalmente opaco). El valor alfa de constante global se combina con el valor alfa por píxel.
-
-Para obtener un ejemplo, vea [alpha blending a Bitmap](alpha-blending-a-bitmap.md).
+Para obtener un ejemplo, vea [Alpha Blending a Bitmap](alpha-blending-a-bitmap.md).
 
  
 

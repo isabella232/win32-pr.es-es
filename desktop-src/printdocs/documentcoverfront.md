@@ -1,21 +1,21 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario DocumentCoverFront. Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 25dbd083-5815-4b25-bfdc-4d14f96d2b45
 title: DocumentCoverFront
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd89bea06d3004b435cb55ff51612b1b91380c7
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 301b67c9a741caa48024646854b208ac5dffbb20
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996272"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119830"
 ---
 # <a name="documentcoverfront"></a>DocumentCoverFront
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la hoja de cobertura frontal (inicial). Cada documento tendrá una hoja independiente. La hoja de cobertura debe imprimirse en pageMediaSize y PageMediaType usados para la primera página del documento. La hoja de cobertura debe integrarse en las opciones de procesamiento (como DocumentDuplex o DocumentNUp), tal como se indica en la opción especificada.
+Describe la hoja de cobertura frontal (inicial). Cada documento tendrá una hoja independiente. La hoja de cobertura debe imprimirse en PageMediaSize y PageMediaType usados para la primera página del documento. La hoja de cobertura debe integrarse en las opciones de procesamiento (como DocumentDuplex o DocumentNUp), tal como se indica en la opción especificada.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -25,11 +25,11 @@ Describe la hoja de cobertura frontal (inicial). Cada documento tendrá una hoja
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefijo de ámbito <br/> | Documento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Notas <br/>          | Los consumidores compatibles con XPS DEBEN exigir que una referencia de URI a un recurso como una imagen o un perfil de color en un documento de capacidades de impresión o PrintTicket DEBE hacer referencia a un nombre de elemento (un URI relativo a la raíz del paquete) dentro del mismo paquete de documento XPS que contiene el PrintTicket resultante. Un consumidor XPS compatible NO DEBE usar un URI que no sea compatible con la sintaxis de nombre de elemento. Esta configuración es específica de XPS. <br/> Los URI a los que se hace referencia en un documento de capacidades de impresión o PrintTicket NO SE DEBEN resolver como direcciones URL. Esto no es seguro, ya que es posible que no se resuelvan según lo previsto y puedan crear riesgos de seguridad perjudiciales para el controlador y el sistema operativo.<br/> |
+| Notas <br/>          | Los consumidores compatibles con XPS DEBEN exigir que una referencia de URI a un recurso, como una imagen o un perfil de color en un documento De capacidades de impresión o PrintTicket, haga referencia a un nombre de elemento (un URI relativo a la raíz del paquete) dentro del mismo paquete de documento XPS que contiene el PrintTicket resultante. Un consumidor XPS compatible NO DEBE usar un URI que no sea compatible con la sintaxis de nombre de elemento. Esta configuración es específica de XPS. <br/> Los URI a los que se hace referencia en un documento De capacidades de impresión o PrintTicket NO SE DEBEN resolver como direcciones URL. Esto no es seguro, ya que es posible que no se resuelvan según lo previsto y pueden crear riesgos de seguridad perjudiciales para el controlador y el sistema operativo.<br/> |
 
 
 

@@ -4,12 +4,12 @@ description: Obtenga información sobre un puntero común RPC, que se define com
 ms.assetid: 9756E637-BCBB-48F1-B962-25AF2C917921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e41a0b6208745b543a9efe2fe22ab090046778
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ade676610a310e230eb6fa89dd666996bb82040f
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406598"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119710"
 ---
 # <a name="pointers-rpc"></a>Punteros (RPC)
 
@@ -31,7 +31,7 @@ pointer_type<1> pointer_attributes<1>
 offset_to_complex_description<2>
 ```
 
-El primer formato se usa si el puntero es un puntero a un tipo simple o a un puntero de cadena no no administrado. El segundo formato se usa para punteros a todos los demás tipos. Los atributos de puntero indican qué diseño de descripción es con la marca \_ FC SIMPLE \_ POINTER.
+El primer formato se usa si el puntero es un puntero a un tipo simple o a un puntero de cadena no especificado. El segundo formato se usa para punteros a todos los demás tipos. Los atributos de puntero indican qué diseño de descripción es con la marca \_ FC SIMPLE \_ POINTER.
 
 el \_ tipo de<1> es uno de los siguientes.
 
@@ -54,13 +54,13 @@ Los \_ atributos<1> pueden tener cualquiera de las marcas que se muestran en la 
 
 
 
-| Marca | Descripción              |                                                                                                                                                                                                                                       |
+| Atributo | Marca              | Descripción                                                                                                                                                                                                                                      |
 |------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 01   | FC \_ ALLOCATE \_ ALL \_ NODES | El puntero forma parte de un esquema de asignación de asignación (todos \_ los nodos).                                                                                                                                                                   |
-| 02   | FC \_ DONT \_ FREE           | Un puntero allocate(don't \_ free).                                                                                                                                                                                                      |
+| 01   | FC \_ ASIGNA TODOS LOS \_ \_ NODOS | El puntero forma parte de un esquema de asignación allocate(all \_ nodes).                                                                                                                                                                   |
+| 02   | FC \_ DONT \_ FREE           | Puntero allocate(don't \_ free).                                                                                                                                                                                                      |
 | 04   | FC \_ ALLOCED \_ ON \_ STACK   | Puntero cuyo referencia se asigna en la pila del código auxiliar.                                                                                                                                                                            |
-| 08   | PUNTERO \_ SIMPLE DE \_ FC      | Puntero a un tipo simple o cadena conforme no compatible. Esta marca que se establece indica el diseño de la descripción del puntero como el diseño de puntero simple descrito anteriormente; de lo contrario, se indica el formato del descriptor con el desplazamiento. |
-| 10   | FC \_ POINTER \_ DEREF       | Puntero que se debe desreferenciar antes de controlar el referencia del puntero.                                                                                                                                                           |
+| 08   | PUNTERO \_ SIMPLE DE \_ FC      | Puntero a un tipo simple o cadena compatible no compatible. Esta marca que se establece indica el diseño de la descripción del puntero como el diseño de puntero simple descrito anteriormente; de lo contrario, se indica el formato del descriptor con el desplazamiento. |
+| 10   | FC \_ POINTER \_ DEREF       | Puntero que se debe desreferenciar antes de controlar el referenciador del puntero.                                                                                                                                                           |
 
 
 
@@ -88,7 +88,7 @@ FC_IP FC_PAD
 iid_description<> 
 ```
 
-La descripción de iid<> es un descriptor de correlación y tiene 4 o 6 bytes, dependiendo \_ de si se usa [**/robust.**](/windows/desktop/Midl/-robust) El valor calculado por **la función ComputeConformance** es el puntero IID.
+La descripción de iid<> descriptor de correlación y tiene 4 o 6 bytes, dependiendo de \_ si [**se usa /robust.**](/windows/desktop/Midl/-robust) El valor calculado por **la función ComputeConformance** es el puntero IID.
 
 ## <a name="byte-count-pointers"></a>Punteros de recuento de bytes
 

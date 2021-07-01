@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_MIM_MOREDATA (mmsystem. h)
-description: El mensaje de MOREDATA de MIM de MM \_ \_ se envía a una ventana de devolución de llamada cuando un dispositivo de entrada MIDI recibe un mensaje MIDI, pero la aplicación no está procesando \_ los mensajes de datos de MIM lo suficientemente rápido para mantenerse al día con el controlador de dispositivo de entrada.
+title: MM_MIM_MOREDATA mensaje (Mmsystem.h)
+description: El mensaje MM MIM MOREDATA se envía a una ventana de devolución de llamada cuando un dispositivo de entrada MIDI recibe un mensaje MIDI, pero la aplicación no procesa los mensajes DE DATOS DE MIM lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de \_ \_ \_ entrada.
 ms.assetid: 25d507f9-01d4-4a9a-afdd-693d74e3bd22
 keywords:
-- Mensaje de MM_MIM_MOREDATA de Windows multimedia
+- MM_MIM_MOREDATA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b67835a67c957a250fe1ae6d391f5ebd56d5301b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3079c537ddca056ca690537c27edd95826de1189
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079345"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120030"
 ---
-# <a name="mm_mim_moredata-message"></a>Mensaje de MOREDATA de \_ MIM mm \_
+# <a name="mm_mim_moredata-message"></a>Mensaje \_ MM MIM \_ MOREDATA
 
-El mensaje de **\_ \_ MOREDATA de MIM de mm** se envía a una ventana de devolución de llamada cuando un dispositivo de entrada MIDI recibe un mensaje MIDI, pero la aplicación no está procesando los mensajes de [**\_ datos de MIM**](mim-data.md) lo suficientemente rápido para mantenerse al día con el controlador de dispositivo de entrada. La ventana recibe este mensaje solo cuando la aplicación especifica el \_ Estado de e/s \_ de MIDI en la llamada a la función [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) .
+El **mensaje MM \_ MIM \_ MOREDATA** se envía a una ventana de devolución de llamada cuando un dispositivo de entrada MIDI recibe un mensaje MIDI, pero la aplicación no procesa los mensajes DE DATOS DE [**MIM \_**](mim-data.md) lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de entrada. La ventana recibe este mensaje solo cuando la aplicación especifica EL ESTADO DE E/S DE MIDI en \_ la llamada a la función \_ [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
 
 
 ```C++
@@ -41,68 +41,68 @@ lParam = (LPARAM) (DWORD) lMidiMessage
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Identificador del dispositivo de entrada MIDI que recibió el mensaje MIDI.
+Controle el dispositivo de entrada de MIDI que recibió el mensaje DE MIDI.
 
 </dd> <dt>
 
 <span id="lMidiMessage"></span><span id="lmidimessage"></span><span id="LMIDIMESSAGE"></span>*lMidiMessage*
 </dt> <dd>
 
-Especifica el mensaje MIDI recibido. El mensaje se empaqueta en un valor de palabra como se indica a continuación:
+Especifica el mensaje MIDI que se recibió. El mensaje se empaqueta en un valor doubleword como se indica a continuación:
 
 
 
-| Requisito | Value |
+| Requisito | Valor | Descripción |
 |-----------|-----------------|-----------------------------------------------------|
-| Palabra alta | Byte de orden superior | No se utiliza.                                           |
-|           | Byte de orden inferior  | Contiene un segundo byte de datos MIDI (si es necesario).  |
-| Palabra baja  | Byte de orden superior | Contiene el primer byte de datos MIDI (si es necesario). |
-|           | Byte de orden inferior  | Contiene el estado de MIDI.                           |
+| Palabra alta | Byte de orden superior | No se usa.                                           |
+|           | Byte de orden bajo  | Contiene un segundo byte de datos MIDI (cuando sea necesario).  |
+| Palabra baja  | Byte de orden superior | Contiene el primer byte de datos DE MIDI (cuando sea necesario). |
+|           | Byte de orden bajo  | Contiene el estado de MIDI.                           |
 
 
 
  
 
-Los dos bytes de datos MIDI son opcionales, dependiendo del byte de estado de MIDI.
+Los dos bytes de datos de MIDI son opcionales, dependiendo del byte de estado de MIDI.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Si la aplicación va a recibir datos MIDI más rápido de lo que puede procesarlos, no debe utilizar un mecanismo de devolución de llamada de ventana. Para maximizar la velocidad, use una función de devolución de llamada y use el mensaje de [**\_ MOREDATA de MIM**](mim-moredata.md) en lugar de mm \_ MIM \_ MOREDATA.
+Si la aplicación recibirá datos DE MIDI más rápido de lo que puede procesar, no debe usar un mecanismo de devolución de llamada de ventana. Para maximizar la velocidad, use una función de devolución de llamada y use el mensaje [**\_ MOREDATA de MIM**](mim-moredata.md) en lugar de MM \_ MIM \_ MOREDATA.
 
-Una aplicación solo debe realizar una cantidad mínima de procesamiento de mensajes de MOREDATA de MIM de MM \_ \_ . (En particular, las aplicaciones no deben llamar a la función [PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) mientras PROCESAn mm \_ MIM \_ MOREDATA). En su lugar, la aplicación debe colocar los datos de evento en un búfer y, a continuación, devolver.
+Una aplicación solo debe realizar una cantidad mínima de procesamiento de mensajes \_ \_ MOREDATA de MM MIM. (En concreto, las aplicaciones no deben llamar a la [función PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) durante el procesamiento de MM \_ MIM \_ MOREDATA). En su lugar, la aplicación debe colocar los datos del evento en un búfer y, a continuación, devolver.
 
-Cuando una aplicación recibe un mensaje de [**\_ \_ datos de mm MIM**](mm-mim-data.md) después de una serie de mensajes de MOREDATA de MIM de mm, se ha puesto al \_ \_ día con los eventos MIDI entrantes y puede llamar a funciones que consumen mucho tiempo.
+Cuando una aplicación recibe un mensaje [**MM \_ MIM \_ DATA**](mm-mim-data.md) después de una serie de mensajes \_ MM MIM MOREDATA, se ha puesto al día con los eventos ENTRANTES DE MIDI y puede llamar de forma segura a funciones que consumen mucho \_ tiempo.
 
-Los mensajes MIDI recibidos de un puerto de entrada MIDI tienen el estado de en ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado de MIDI.
+Los mensajes DE MIDI recibidos desde un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
 
-No se envía este mensaje cuando se recibe un mensaje de sistema exclusivo de MIDI. No hay ninguna marca de tiempo disponible con este mensaje. En el caso de los datos de entrada con marca de tiempo, debe utilizar los mensajes que se envían a las funciones de devolución de llamada.
+Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI. No hay ninguna marca de tiempo disponible con este mensaje. Para los datos de entrada con marca de tiempo, debe usar los mensajes que se envían a las funciones de devolución de llamada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluye Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Interfaz digital de instrumentos digitales (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

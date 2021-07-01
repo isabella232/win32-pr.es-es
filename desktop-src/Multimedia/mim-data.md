@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MIM_DATA (mmsystem. h)
-description: El mensaje de datos de MIM \_ se envía a una función de devolución de llamada de entrada MIDI cuando un dispositivo de entrada MIDI recibe un mensaje MIDI.
+title: MIM_DATA mensaje (Mmsystem.h)
+description: El mensaje MIM DATA se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada MIDI recibe un \_ mensaje MIDI.
 ms.assetid: 966aab84-420a-42ce-9989-da5910ced9c0
 keywords:
-- Mensaje de MIM_DATA de Windows multimedia
+- MIM_DATA mensaje multimedia de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f96d2c23e64700a7a923cdd7633dabfcba9d1d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a11d2701d488fe29ae6d0bc0742c32c803b28076
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905659"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118410"
 ---
-# <a name="mim_data-message"></a>Mensaje de datos de MIM \_
+# <a name="mim_data-message"></a>Mensaje DE \_ DATOS DE MIM
 
-El mensaje de **\_ datos de MIM** se envía a una función de devolución de llamada de entrada MIDI cuando un dispositivo de entrada MIDI recibe un mensaje MIDI.
+El **mensaje MIM \_ DATA se** envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje DE MIDI.
 
 
 ```C++
@@ -41,62 +41,62 @@ dwParam2 = dwTimestamp
 <span id="dwMidiMessage"></span><span id="dwmidimessage"></span><span id="DWMIDIMESSAGE"></span>*dwMidiMessage*
 </dt> <dd>
 
-Mensaje MIDI recibido. El mensaje se empaqueta en un valor de palabra como se indica a continuación:
+Mensaje DE MIDI que se recibió. El mensaje se empaqueta en un valor doubleword como se indica a continuación:
 
 
 
-| Requisito | Value |
+| Requisito | Valor | Descripción |
 |-----------|-----------------|-----------------------------------------------------|
-| Palabra alta | Byte de orden superior | No se utiliza.                                           |
-|           | Byte de orden inferior  | Contiene un segundo byte de datos MIDI (si es necesario).  |
-| Palabra baja  | Byte de orden superior | Contiene el primer byte de datos MIDI (si es necesario). |
-|           | Byte de orden inferior  | Contiene el estado de MIDI.                           |
+| Palabra alta | Byte de orden superior | No se usa.                                           |
+|           | Byte de orden bajo  | Contiene un segundo byte de datos DE MIDI (cuando sea necesario).  |
+| Palabra baja  | Byte de orden superior | Contiene el primer byte de datos DE MIDI (cuando sea necesario). |
+|           | Byte de orden bajo  | Contiene el estado de MIDI.                           |
 
 
 
  
 
-Los dos bytes de datos MIDI son opcionales, dependiendo del byte de estado de MIDI.
+Los dos bytes de datos de MIDI son opcionales, dependiendo del byte de estado de MIDI.
 
 </dd> <dt>
 
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Hora en que el controlador del dispositivo de entrada recibió el mensaje. La marca de tiempo se especifica en milisegundos, empezando por cero cuando se llamó a la función [**midiInStart**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart) .
+Hora a la que el controlador de dispositivo de entrada recibió el mensaje. La marca de tiempo se especifica en milisegundos, empezando en cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Los mensajes MIDI recibidos de un puerto de entrada MIDI tienen el estado de en ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado de MIDI.
+Los mensajes DE MIDI recibidos de un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
 
-No se envía este mensaje cuando se recibe un mensaje de sistema exclusivo de MIDI.
+Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Interfaz digital de instrumentos digitales (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2781d173eb4a1c18a661495d9fb55a0cced81921
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 847194c08b865542cff1deb20c8518a7e4b62ab9
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998332"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119050"
 ---
 # <a name="function-declaration-syntax"></a>Sintaxis de declaración de funciones
 
 Las funciones HLSL se declaran con la sintaxis siguiente.
 
-
-
-|                                                                                                                                          |
-|------------------------------------------------------------------------------------------------------------------------------------------|
-| \[*StorageClass* \] \[clipplanes() \] \[ precise \] Return Value \_ *Name* ( \[ *ArgumentList* \] ) : \[ *Semantic* \] { \[ *StatementBlock* \] }; |
+\[*StorageClass* \] \[clipplanes() \] \[ precise \] Return Value \_ *Name* ( \[ *ArgumentList* \] ) : \[ *Semantic* \] { \[ *StatementBlock* \] };
 
 
 
@@ -37,14 +33,14 @@ Las funciones HLSL se declaran con la sintaxis siguiente.
 <span id="StorageClass"></span><span id="storageclass"></span><span id="STORAGECLASS"></span>*StorageClass*
 </dt> <dd>
 
-Modificador que redefine una declaración de función. **inline** es actualmente el único valor modificador. El valor modificador debe estar **en línea** porque también es el valor predeterminado. Por lo tanto, una función está insertable independientemente de si se especifica en línea y todas las funciones de HLSL están insertadas. Una función insertda genera una copia del cuerpo de la función (al compilar) para cada llamada de función. Esto se hace para reducir la sobrecarga de llamar a la función.
+Modificador que redefine una declaración de función. **inline** es actualmente el único valor modificador. El valor modificador debe **estar en línea** porque también es el valor predeterminado. Por lo tanto, una función está insertable independientemente de si se especifica en línea **y** todas las funciones de HLSL están insertadas. Una función insertda genera una copia del cuerpo de la función (al compilar) para cada llamada de función. Esto se hace para reducir la sobrecarga de llamar a la función.
 
 </dd> <dt>
 
 <span id="Clipplanes"></span><span id="clipplanes"></span><span id="CLIPPLANES"></span>*Clipplanes*
 </dt> <dd>
 
-Lista opcional de planos de recorte, que es hasta 6 planos de recorte especificados por el usuario. Se trata de un mecanismo alternativo para [SV \_ ClipDistance](dx-graphics-hlsl-semantics.md) que funciona en el [nivel](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) de característica 9 x \_ y superior.
+Lista opcional de planos de recorte, que es hasta 6 planos de clips especificados por el usuario. Se trata de un mecanismo alternativo para [SV \_ ClipDistance](dx-graphics-hlsl-semantics.md) que funciona [en](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) el nivel de característica 9 x y \_ superior.
 
 </dd> <dt>
 
@@ -80,13 +76,13 @@ Instrucciones [opcionales](dx-graphics-hlsl-statement-blocks.md) que son el cuer
 
 El tipo de valor devuelto puede ser cualquiera de estos [tipos HLSL.](dx-graphics-hlsl-data-types.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La sintaxis de esta página describe casi todos los tipos de función HLSL, lo que incluye sombreadores de vértices, sombreadores de píxeles y funciones auxiliares. Aunque un sombreador de geometría también se implementa con una función, su sintaxis es un poco más complicada, por lo que hay una página independiente que define una declaración de función de sombreador de geometría (vea Objeto de sombreador de geometría [(HLSL de DirectX).](dx-graphics-hlsl-geometry-shader.md)
 
 Una función se puede sobrecargar siempre y cuando se le de una combinación única de tipos de parámetro o orden de parámetros. HLSL también implementa una serie de funciones intrínsecas o [**integradas.**](dx-graphics-hlsl-intrinsic-functions.md)
 
-Puede especificar planos de recorte específicos del usuario con el **atributo clipplanes.** Windows aplica estos planos de recorte a todas las primitivas dibujadas. El **atributo clipplanes** funciona como [SV \_ ClipDistance,](dx-graphics-hlsl-semantics.md) pero funciona en todas las características de [hardware](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) de nivel 9 x \_ y superiores. Para obtener más información, consulte [Planos de recorte de usuario en hardware de nivel de característica 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
+Puede especificar planos de recorte específicos del usuario con el **atributo clipplanes.** Windows aplica estos planos de recorte a todas las primitivas dibujadas. El **atributo clipplanes** funciona como [SV \_ ClipDistance,](dx-graphics-hlsl-semantics.md) pero funciona en todas las características [de](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) hardware de nivel 9 x \_ y superior. Para obtener más información, consulte [Planos de recorte de usuario en hardware de nivel de característica 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -135,7 +131,7 @@ float4 PSPointSprite(PSSceneIn input) : SV_Target
 
 <dl> <dt>
 
-[Funciones (DirectX HLSL)](dx-graphics-hlsl-functions.md)
+[Funciones (HLSL de DirectX)](dx-graphics-hlsl-functions.md)
 </dt> </dl>
 
  

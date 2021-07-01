@@ -4,12 +4,12 @@ ms.assetid: d5419c40-43e9-49ff-a378-9aeb0757e400
 title: ParameterInit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e211fcad2c53824c7786850a7fc78c6825c219a7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0e0e0cadbf26d6ff516ab0ace90165e11420a9b7
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407268"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118980"
 ---
 # <a name="parameterinit"></a>ParameterInit
 
@@ -43,7 +43,7 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 
 
 
-| Category                   |                                                                                                   |
+| Category                   | Nombre o restricción                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------------|
 | Elementos primarios<br/> | PrintTicket (raíz de PrintTicket)<br/>                                                         |
 | Elementos secundarios<br/>  | Valor (uno)<br/>                                                                            |

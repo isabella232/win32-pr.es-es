@@ -1,6 +1,6 @@
 ---
-title: Getdimensions ((objeto de textura de HLSL de DirectX)
-description: Obtiene la información de tamaño de la textura. El bloque de sintaxis muestra todos los parámetros que son posibles en la declaración del método. En la tabla de la sección comentarios se muestran los parámetros que se implementan para cada tipo de objeto de textura.
+title: GetDimensions (objeto de textura HLSL de DirectX)
+description: Obtiene información de tamaño de textura. El bloque de sintaxis muestra todos los parámetros que son posibles en la declaración del método. La tabla de la sección Comentarios muestra qué parámetros se implementan para cada tipo de objeto de textura.
 ms.assetid: b72e54da-382a-4b90-bbfe-0b32effc7c05
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,28 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0ad4be68049c92955c5ddb06a0c5eccfe2c26b77
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: bb6ef3c35af60ea776622718099acdedb5188ba8
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103904282"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119841"
 ---
-# <a name="getdimensions-directx-hlsl-texture-object"></a>Getdimensions ((objeto de textura de HLSL de DirectX)
+# <a name="getdimensions-directx-hlsl-texture-object"></a>GetDimensions (objeto de textura HLSL de DirectX)
 
-Obtiene la información de tamaño de la textura. El bloque de sintaxis muestra todos los parámetros que son posibles en la declaración del método. En la tabla de la sección comentarios se muestran los parámetros que se implementan para cada tipo de objeto de textura.
+Obtiene información de tamaño de textura. El bloque de sintaxis muestra todos los parámetros que son posibles en la declaración del método. La tabla de la sección Comentarios muestra qué parámetros se implementan para cada tipo de objeto de textura.
 
-
-
-|                                                                                                                                                  |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| void Object. Getdimensions ((UINT MipLevel, typeX width, typeX height, typeX Elements, typeX Depth, typeX NumberOfLevels, typeX NumberOfSamples); |
+void Object.GetDimensions( UINT MipLevel, typeX Width, typeX Height, typeX Elements, typeX Depth, typeX NumberOfLevels, typeX NumberOfSamples );
 
 
 
  
 
-typeX denota que hay dos tipos posibles: **uint** o **float**.
+typeX indica que hay dos tipos posibles: **uint** o **float.**
 
 ## <a name="parameters"></a>Parámetros
 
@@ -38,14 +34,14 @@ typeX denota que hay dos tipos posibles: **uint** o **float**.
 
 | Elemento                                                                                                                               | Descripción                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Object"></span><span id="object"></span><span id="OBJECT"></span>*Objeto*<br/>                                     | Cualquier tipo [de objeto de textura,](dx-graphics-hlsl-to-type.md) excepto un objeto de **búfer** .<br/>                                       |
-| <span id="MipLevel"></span><span id="miplevel"></span><span id="MIPLEVEL"></span>*MipLevel*<br/>                             | \[en \] un índice de base cero que identifica el nivel de mipmap. Si no se usa este argumento, se supone el primer nivel de MIP.<br/> |
-| <span id="Width"></span><span id="width"></span><span id="WIDTH"></span>*Ancho*<br/>                                         | \[\]el ancho de la textura, en textura.<br/>                                                                                     |
-| <span id="Height"></span><span id="height"></span><span id="HEIGHT"></span>*Alto*<br/>                                     | \[\]el alto de la textura, en textura.<br/>                                                                                    |
-| <span id="Elements"></span><span id="elements"></span><span id="ELEMENTS"></span>*Elemento*<br/>                             | \[\]el número de elementos de una matriz.<br/>                                                                               |
-| <span id="Depth"></span><span id="depth"></span><span id="DEPTH"></span>*Amplia*<br/>                                         | \[\]profundidad de textura, en textura.<br/>                                                                                     |
-| <span id="NumberOfLevels"></span><span id="numberoflevels"></span><span id="NUMBEROFLEVELS"></span>*NumberOfLevels*<br/>     | \[\]el número de niveles de mipmap.<br/>                                                                                      |
-| <span id="NumberOfSamples"></span><span id="numberofsamples"></span><span id="NUMBEROFSAMPLES"></span>*NumberOfSamples*<br/> | \[\]el número de muestras.<br/>                                                                                            |
+| <span id="Object"></span><span id="object"></span><span id="OBJECT"></span>*Objeto*<br/>                                     | Cualquier [tipo de objeto de textura,](dx-graphics-hlsl-to-type.md) excepto un objeto **Buffer.**<br/>                                       |
+| <span id="MipLevel"></span><span id="miplevel"></span><span id="MIPLEVEL"></span>*MipLevel*<br/>                             | \[en \] Un índice de base cero que identifica el nivel de mapa mip. Si no se usa este argumento, se asume el primer nivel de mip.<br/> |
+| <span id="Width"></span><span id="width"></span><span id="WIDTH"></span>*Ancho*<br/>                                         | \[out \] Ancho de textura, en texturas.<br/>                                                                                     |
+| <span id="Height"></span><span id="height"></span><span id="HEIGHT"></span>*Altura*<br/>                                     | \[out \] Alto de textura, en texturas.<br/>                                                                                    |
+| <span id="Elements"></span><span id="elements"></span><span id="ELEMENTS"></span>*Elementos*<br/>                             | \[out \] Número de elementos de una matriz.<br/>                                                                               |
+| <span id="Depth"></span><span id="depth"></span><span id="DEPTH"></span>*Profundidad*<br/>                                         | \[out \] Profundidad de textura, en texturas.<br/>                                                                                     |
+| <span id="NumberOfLevels"></span><span id="numberoflevels"></span><span id="NUMBEROFLEVELS"></span>*NumberOfLevels*<br/>     | \[out \] Número de niveles de mapa mip.<br/>                                                                                      |
+| <span id="NumberOfSamples"></span><span id="numberofsamples"></span><span id="NUMBEROFSAMPLES"></span>*NumberOfSamples*<br/> | \[out \] Número de muestras.<br/>                                                                                            |
 
 
 
@@ -57,56 +53,56 @@ None
 
 ## <a name="overloaded-methods"></a>Métodos sobrecargados
 
-En esta tabla se enumeran todas las versiones diferentes del método; las versiones difieren en función del número de parámetros de entrada. Observe que para cada método que toma parámetros de entero, hay un método sobrecargado que toma parámetros de punto flotante.
+En esta tabla se enumeran todas las distintas versiones del método . las versiones difieren en el número de parámetros de entrada. Observe que para cada método que toma parámetros enteros, hay un método sobrecargado que toma parámetros de punto flotante.
 
 
 
-| Tipo de Texture-Object | Parámetros de entrada                                                               |
+| Texture-Object tipo | Parámetros de entrada                                                               |
 |---------------------|--------------------------------------------------------------------------------|
-| Texture1D           | UINT MipLevel, UINT width, UINT NumberOfLevels                                 |
-| Texture1D           | Ancho de UINT                                                                     |
-| Texture1D           | UINT MipLevel, ancho flotante, Float NumberOfLevels                               |
-| Texture1D           | Ancho flotante                                                                    |
-| Texture1DArray      | UINT MipLevel, UINT width, UINT Elements, UINT NumberOfLevels                  |
-| Texture1DArray      | UINT width, elementos UINT                                                      |
-| Texture1DArray      | UINT MipLevel, ancho flotante, elementos Float, Float NumberOfLevels               |
-| Texture1DArray      | Ancho flotante, elementos Float                                                    |
-| Texture2D           | UINT MipLevel, UINT width, UINT height, UINT NumberOfLevels                    |
-| Texture2D           | UINT width, alto de UINT                                                        |
-| Texture2D           | UINT MipLevel, ancho flotante, alto Float, Float NumberOfLevels                 |
-| Texture2D           | Ancho flotante, alto flotante                                                      |
-| Texture2DArray      | UINT MipLevel, UINT width, UINT height, UINT Elements, UINT NumberOfLevels     |
-| Texture2DArray      | UINT width, UINT height, UINT (elementos)                                         |
-| Texture2DArray      | UINT MipLevel, ancho flotante, alto Float, elementos Float, Float NumberOfLevels |
-| Texture2DArray      | Ancho flotante, alto flotante, elementos Float                                      |
-| Texture3D           | UINT MipLevel, UINT width, UINT height, UINT Depth, UINT NumberOfLevels        |
-| Texture3D           | UINT width, UINT height, UINT Depth                                            |
-| Texture3D           | UINT MipLevel, ancho flotante, alto flotante, profundidad Float, Float NumberOfLevels    |
-| Texture3D           | Ancho flotante, alto flotante, profundidad de punto flotante                                         |
-| TextureCube         | UINT MipLevel, UINT width, UINT height, UINT NumberOfLevels                    |
-| TextureCube         | UINT width, alto de UINT                                                        |
-| TextureCube         | UINT MipLevel, ancho flotante, alto Float, UINT NumberOfLevels                  |
-| TextureCube         | Ancho flotante, alto flotante                                                      |
-| TextureCubeArray    | UINT MipLevel, UINT width, UINT height, UINT Elements, UINT NumberOfLevels     |
-| TextureCubeArray    | UINT width, UINT height, UINT (elementos)                                         |
-| TextureCubeArray    | UINT MipLevel, ancho flotante, alto Float, elementos Float, Float NumberOfLevels |
-| TextureCubeArray    | Ancho flotante, alto flotante, elementos Float                                      |
-| Texture2DMS         | UINT width, UINT height, UINT samples                                          |
-| Texture2DMS         | Ancho flotante, alto flotante, ejemplos Float                                       |
-| Texture2DMSArray    | UINT width, UINT height, UINT (elementos), ejemplos de UINT                           |
-| Texture2DMSArray    | Ancho flotante, alto Float, elementos Float, ejemplos Float                       |
+| Texture1D           | UINT MipLevel, UINT Width, UINT NumberOfLevels                                 |
+| Texture1D           | Ancho UINT                                                                     |
+| Texture1D           | UINT MipLevel, float Width, float NumberOfLevels                               |
+| Texture1D           | float Width                                                                    |
+| Texture1DArray      | UINT MipLevel, UINT Width, UINT Elements, UINT NumberOfLevels                  |
+| Texture1DArray      | UINT Width, UINT Elements                                                      |
+| Texture1DArray      | UINT MipLevel, float Width, float Elements, float NumberOfLevels               |
+| Texture1DArray      | float Width, float Elements                                                    |
+| Texture2D           | UINT MipLevel, UINT Width, UINT Height, UINT NumberOfLevels                    |
+| Texture2D           | UINT Width, UINT Height                                                        |
+| Texture2D           | UINT MipLevel, float Width, float Height, float NumberOfLevels                 |
+| Texture2D           | float Width, float Height                                                      |
+| Texture2DArray      | UINT MipLevel, UINT Width, UINT Height, UINT Elements, UINT NumberOfLevels     |
+| Texture2DArray      | UINT Width, UINT Height, UINT Elements                                         |
+| Texture2DArray      | UINT MipLevel, float Width, float Height, float Elements, float NumberOfLevels |
+| Texture2DArray      | float Width, float Height, float Elements                                      |
+| Texture3D           | UINT MipLevel, UINT Width, UINT Height, UINT Depth, UINT NumberOfLevels        |
+| Texture3D           | UINT Width, UINT Height, UINT Depth                                            |
+| Texture3D           | UINT MipLevel, float Width, float Height, float Depth, float NumberOfLevels    |
+| Texture3D           | float Width, float Height, float Depth                                         |
+| TextureCube         | UINT MipLevel, UINT Width, UINT Height, UINT NumberOfLevels                    |
+| TextureCube         | UINT Width, UINT Height                                                        |
+| TextureCube         | UINT MipLevel, float Width, float Height, UINT NumberOfLevels                  |
+| TextureCube         | float Width, float Height                                                      |
+| TextureCubeArray    | UINT MipLevel, UINT Width, UINT Height, UINT Elements, UINT NumberOfLevels     |
+| TextureCubeArray    | UINT Width, UINT Height, UINT Elements                                         |
+| TextureCubeArray    | UINT MipLevel, float Width, float Height, float Elements, float NumberOfLevels |
+| TextureCubeArray    | float Width, float Height, float Elements                                      |
+| Texture2DMS         | UINT Width, UINT Height, UINT Samples                                          |
+| Texture2DMS         | float Width, float Height, float Samples                                       |
+| Texture2DMSArray    | UINT Width, UINT Height, UINT Elements, UINT Samples                           |
+| Texture2DMSArray    | float Width, float Height, float Elements, float Samples                       |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 | x        | x         | x        | x         | x        | x         |
 
@@ -114,15 +110,15 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-1.  Devuelve dimensiones para el nivel de mipmap más grande (inicial).
-2.  TextureCubeArray está disponible en el modelo de sombreador 4,1 o superior.
-3.  El modelo de sombreador 4,1 está disponible en Direct3D 10,1 o superior.
+1.  Devuelve dimensiones para el nivel de mapa mip más grande (cero).
+2.  TextureCubeArray está disponible en El modelo de sombreador 4.1 o superior.
+3.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

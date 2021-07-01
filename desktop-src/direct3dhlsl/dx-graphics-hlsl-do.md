@@ -1,9 +1,9 @@
 ---
-title: Instrucción do (Ocidl. h)
-description: Ejecute una serie de instrucciones de forma continua hasta que se produzca un error en la expresión condicional.
+title: do (Instrucción, Ocidl.h)
+description: Ejecute una serie de instrucciones continuamente hasta que se produce un error en la expresión condicional.
 ms.assetid: 07fd37b0-59c2-404b-a755-7178e4a058e4
 keywords:
-- Instrucción do HLSL
+- do (Instrucción HLSL)
 topic_type:
 - apiref
 api_name:
@@ -14,22 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c0ced3c9747f0bfbdf01847b21350a45b68aa6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a1f019af77ef0021ad0574bf703ff2a2a52ac0f6
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280309"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118790"
 ---
-# <a name="do-statement"></a>Instrucción do
+# <a name="do-statement"></a>do (Instrucción)
 
-Ejecute una serie de instrucciones de forma continua hasta que se produzca un error en la expresión condicional.
+Ejecute una serie de instrucciones continuamente hasta que se produce un error en la expresión condicional.
 
-
-
-|                                                                     |
-|---------------------------------------------------------------------|
-| \[*Atributo* \] de do { *bloque de instrucciones*;} while ( *condicional* ); |
+\[*Atributo* \] do { *Statement Block*; } while( *Conditional* );
 
 
 
@@ -39,7 +35,7 @@ Ejecute una serie de instrucciones de forma continua hasta que se produzca un er
 
 <dl> <dt>
 
-<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Atribui*
+<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Atributo*
 </dt> <dd>
 
 Parámetro opcional que controla cómo se compila la instrucción.
@@ -48,7 +44,7 @@ Parámetro opcional que controla cómo se compila la instrucción.
 
 | Atributo | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fastopt   | Reduce el tiempo de compilación, pero produce optimizaciones menos agresivas. Si utiliza este atributo, el compilador no deshará los bucles.<br/> Este atributo solo afecta a los destinos del modelo de sombreador que admiten instrucciones de [interrupción](dx-graphics-hlsl-break.md) . Este atributo está disponible en el modelo de sombreador [vs \_ 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) y en el [modelo de sombreador 3](dx-graphics-hlsl-sm3.md) y versiones posteriores. Es especialmente útil en el [modelo de sombreador 4](dx-graphics-hlsl-sm4.md) y versiones posteriores cuando el compilador compila bucles. El compilador simula los bucles de forma predeterminada para evaluar si puede deshacerlos. Si no desea que el compilador deshaga los bucles, utilice este atributo para reducir el tiempo de compilación.<br/> |
+| fastopt   | Reduce el tiempo de compilación, pero genera optimizaciones menos agresivas. Si usa este atributo, el compilador no desenrollará bucles.<br/> Este atributo solo afecta a los destinos del modelo de sombreador que admiten [instrucciones de](dx-graphics-hlsl-break.md) interrupción. Este atributo está disponible en el modelo de sombreador [frente \_ a 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) y en el modelo [de sombreador 3](dx-graphics-hlsl-sm3.md) y versiones posteriores. Es especialmente útil en el modelo [de sombreador 4](dx-graphics-hlsl-sm4.md) y versiones posteriores cuando el compilador compila bucles. El compilador simula bucles de forma predeterminada para evaluar si puede deshacer su inscripción. Si no desea que el compilador desrolle bucles, use este atributo para reducir el tiempo de compilación.<br/> |
 
 
 
@@ -59,14 +55,14 @@ Parámetro opcional que controla cómo se compila la instrucción.
 <span id="Statement_Block"></span><span id="statement_block"></span><span id="STATEMENT_BLOCK"></span>*Bloque de instrucciones*
 </dt> <dd>
 
-Una o más [instrucciones](dx-graphics-hlsl-statement-blocks.md).
+Una o varias [instrucciones](dx-graphics-hlsl-statement-blocks.md).
 
 </dd> <dt>
 
-<span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Instrucción*
+<span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condicional*
 </dt> <dd>
 
-[Expresión](dx-graphics-hlsl-expressions.md)condicional. El bloque de instrucciones se ejecuta antes de que se evalúe la expresión. El bucle se cierra cuando la expresión se evalúa como false.
+Expresión [condicional](dx-graphics-hlsl-expressions.md). El bloque de instrucciones se ejecuta antes de evaluar la expresión. El bucle se cierra cuando la expresión se evalúa como false.
 
 </dd> </dl>
 
@@ -76,11 +72,11 @@ Una o más [instrucciones](dx-graphics-hlsl-statement-blocks.md).
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Ocidl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Ocidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

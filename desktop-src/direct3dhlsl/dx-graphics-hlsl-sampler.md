@@ -1,9 +1,9 @@
 ---
-title: Tipo de muestra
-description: Use la siguiente sintaxis para declarar el estado de la muestra, así como el estado de la comparación de muestra.
+title: Tipo de sampler
+description: Use la sintaxis siguiente para declarar el estado del muestreador, así como el estado de comparación del muestreador.
 ms.assetid: 6534d343-d724-46e5-b300-2a29124a1a28
 keywords:
-- Tipo de muestra HLSL
+- Tipo de sampler HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe3cd51c81617632d240dd06df5c8f61b103bf91
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c0206f7030d3b3a05570e74273d9510bb9c2592c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077778"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119580"
 ---
-# <a name="sampler-type"></a>Tipo de muestra
+# <a name="sampler-type"></a>Tipo de sampler
 
-Use la siguiente sintaxis para declarar el estado de la muestra, así como el estado de la comparación de muestra.
+Use la sintaxis siguiente para declarar el estado del muestreador, así como el estado de comparación del muestreador.
 
 
 
@@ -32,22 +32,22 @@ Use la siguiente sintaxis para declarar el estado de la muestra, así como el es
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Diferencias entre Direct3D 9 y Direct3D 10 y versiones posteriores:<br/> Esta es la sintaxis de una muestra en Direct3D 9.<br/> 
+<td>Diferencias entre Direct3D 9 y Direct3D 10 y versiones posteriores:<br/> Esta es la sintaxis de un sampler en Direct3D 9.<br/> 
 <table>
 <tbody>
 <tr class="odd">
-<td><em>nombre</em>de muestra  =  <em>SamplerType</em>{Texture = <<em>texture_variable</em> > ;   [<em>state_name = state_value;</em>]   ... };</td>
+<td>sampler <em>Name</em>  =  <em>SamplerType</em>{ Texture = <<em>texture_variable</em> > ;   [<em>state_name = state_value;</em>]   ... };</td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p>La sintaxis de una muestra en Direct3D 10 y versiones posteriores se cambia ligeramente para admitir objetos de textura y matrices de muestra.</p>
+<p>La sintaxis de un muestreador en Direct3D 10 y versiones posteriores cambia ligeramente para admitir objetos de textura y matrices de muestreador.</p>
 
 <table>
 <tbody>
 <tr class="odd">
-<td><em>SamplerType nombre [índice]</em>{[<em>state_name = state_value;</em>]   ... };</td>
+<td><em>SamplerType Name[Index]</em>{ [<em>state_name = state_value;</em>]   ... };</td>
 </tr>
 </tbody>
 </table>
@@ -65,37 +65,35 @@ Use la siguiente sintaxis para declarar el estado de la muestra, así como el es
 
 <dl> <dt>
 
-<span id="sampler"></span><span id="SAMPLER"></span>muestras
+<span id="sampler"></span><span id="SAMPLER"></span>Sampler
 </dt> <dd>
 
-Solo Direct3D 9. Palabra clave required.
+Solo Direct3D 9. Palabra clave Required.
 
 </dd> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Name*
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nombre*
 </dt> <dd>
 
-Cadena ASCII que identifica de forma única el nombre de la variable de muestra.
+Cadena ASCII que identifica de forma única el nombre de la variable de sampler.
 
 </dd> <dt>
 
-<span id="_Index_"></span><span id="_index_"></span><span id="_INDEX_"></span>*\[Ajustar\]*
+<span id="_Index_"></span><span id="_index_"></span><span id="_INDEX_"></span>*\[Índice\]*
 </dt> <dd>
 
-Solo Direct3D 10 y versiones posteriores. Tamaño de matriz opcional; un entero positivo mayor o igual que 1.
+Solo Direct3D 10 y versiones posteriores. Tamaño opcional de la matriz; entero positivo mayor o igual que 1.
 
 </dd> <dt>
 
 <span id="SamplerType"></span><span id="samplertype"></span><span id="SAMPLERTYPE"></span>*SamplerType*
 </dt> <dd>
 
-\[en \] el tipo de muestra, que es uno de los siguientes: *Sampler*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *\_ State Sample*, *SamplerState*.
+\[en el tipo sampler, que es uno de los \] siguientes: *sampler*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *sampler \_ state*, *SamplerState*.
 
+Diferencias entre Direct3D 9 y Direct3D 10 y versiones posteriores:
 
-
-|                                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferencias entre Direct3D 9 y Direct3D 10 y versiones posteriores:<br/> Direct3D 10 y versiones posteriores admiten un tipo de muestra adicional: *SamplerComparisonState*.<br/> |
+- Direct3D 10 y versiones posteriores admiten un tipo de sampler adicional: *SamplerComparisonState.*
 
 
 
@@ -103,17 +101,17 @@ Solo Direct3D 10 y versiones posteriores. Tamaño de matriz opcional; un entero 
 
 </dd> <dt>
 
-<span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Texture* = <*\_ variable de textura*>;
+<span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Textura* = <*\_ variable de textura>;*
 </dt> <dd>
 
-Solo Direct3D 9. Una variable de textura. La palabra clave *Texture* es obligatoria en el lado izquierdo; el nombre de la variable pertenece al lado derecho de la expresión dentro de los corchetes angulares.
+Solo Direct3D 9. Variable de textura. La *palabra clave Texture* es necesaria en el lado izquierdo; el nombre de la variable pertenece al lado derecho de la expresión entre corchetes angulares.
 
 </dd> <dt>
 
-<span id="state_name___state_value"></span><span id="STATE_NAME___STATE_VALUE"></span>*nombre del estado \_ = \_ valor de estado*
+<span id="state_name___state_value"></span><span id="STATE_NAME___STATE_VALUE"></span>*state \_ name = state \_ value*
 </dt> <dd>
 
-\[en \] asignaciones de estado opcionales. La parte izquierda de una asignación es un nombre de estado, el lado derecho es el valor de estado. Todas las asignaciones de estado deben aparecer dentro de un bloque de instrucciones (entre llaves). Cada instrucción se separa con un punto y coma. En la tabla siguiente se enumeran los nombres de estado posibles.
+\[en \] Asignaciones de estado opcionales. El lado izquierdo de una asignación es un nombre de estado, el lado derecho es el valor de estado. Todas las asignaciones de estado deben aparecer dentro de un bloque de instrucciones (entre llaves). Cada instrucción se separa con un punto y coma. En la tabla siguiente se enumeran los posibles nombres de estado.
 
 
 ```
@@ -134,16 +132,16 @@ ComparisonFunc
 
 
 
-El lado derecho de cada expresión es el valor asignado a cada Estado. Consulte la [**estructura \_ \_ DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_sampler_desc) de la muestra de D3D11 para ver los valores de estado posibles para Direct3D 11. Hay una relación de 1 a 1 entre los nombres de estado y los miembros de la estructura. Consulte el ejemplo siguiente.
+El lado derecho de cada expresión es el valor asignado a cada estado. Consulte la [**estructura D3D11 \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_sampler_desc) para ver los valores de estado posibles para Direct3D 11. Hay una relación de 1 a 1 entre los nombres de estado y los miembros de la estructura . Consulte el ejemplo siguiente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando se implementa un efecto, el estado de muestra es uno de los diversos tipos de estado que puede necesitar configurar en la canalización para la representación. Para obtener una lista de todos los Estados posibles que se pueden establecer en un efecto, vea:
+Al implementar un efecto, el estado del muestreador es uno de varios tipos de estado que es posible que tenga que configurar en la canalización para la representación. Para obtener una lista de todos los estados posibles que puede establecer en un efecto, vea:
 
--   Direct3D 10 usa [grupos de Estados](/windows/desktop/direct3d10/d3d10-effect-states).
--   Direct3D 9 usa [Estados](/windows/desktop/direct3d9/effect-states)individuales.
+-   Direct3D 10 usa grupos [de estados](/windows/desktop/direct3d10/d3d10-effect-states).
+-   Direct3D 9 usa estados [individuales.](/windows/desktop/direct3d9/effect-states)
 
 ## <a name="example"></a>Ejemplo
 
@@ -155,7 +153,7 @@ Cuando se implementa un efecto, el estado de muestra es uno de los diversos tipo
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Diferencias entre Direct3D 9 y Direct3D 10:<br/> Este es un ejemplo parcial de una muestra de Direct3D 9 de <a href="https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx">ejemplo de BasicHLSL</a>.<br/> <span data-codelanguage=""></span>
+<td>Diferencias entre Direct3D 9 y Direct3D 10:<br/> Este es un ejemplo parcial de un sampler de Direct3D 9 de <a href="https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx">BasicHLSL Sample</a>.<br/> <span data-codelanguage=""></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -174,7 +172,7 @@ sampler_state
 </tbody>
 </table>
 
-<p>Este es un ejemplo parcial de una muestra de Direct3D 10 de <a href="https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx">ejemplo de BasicHLSL10</a>.</p>
+<p>Este es un ejemplo parcial de un sampler de Direct3D 10 <a href="https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx">del ejemplo BasicHLSL10</a>.</p>
 <div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -202,7 +200,7 @@ sampler_state
 
  
 
-Este es un ejemplo parcial de cómo declarar el estado de la comparación de muestra y llamar a una muestra de comparación en Direct3D 10.
+Este es un ejemplo parcial de declarar el estado de comparación del muestreador y llamar a un muestreador de comparación en Direct3D 10.
 
 
 ```
@@ -224,7 +222,7 @@ float fShadow = g_ShadowMap.SampleCmpLevelZero( ShadowSampler, vModProjUV.xy, vM
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

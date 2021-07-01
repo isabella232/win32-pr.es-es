@@ -4,18 +4,18 @@ description: Image Mastering API
 ms.assetid: 4902d3fb-3195-4909-ab64-28f8a77ba14c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 641d9357496eb82a7e30f25a711928b16eeee2bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c7fabf41d1c82420709b39bb5db03c2ac3e851d2
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117583"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119689"
 ---
 # <a name="image-mastering-api"></a>Image Mastering API
 
 ## <a name="purpose"></a>Propósito
 
-La API de mastering de imágenes de Microsoft Windows permite a las aplicaciones almacenar y grabar imágenes en medios de almacenamiento óptico de CD, DVD y Dv-ray. Otros medios de tipo disco que menten imágenes de la misma manera también pueden usar esta API.
+La API de mastering de imágenes de Microsoft Windows permite a las aplicaciones almacenar y grabar imágenes en medios de almacenamiento óptico de CD, DVD y Dv-ray. Otros medios parecidos a discos que menten imágenes de la misma manera también pueden usar esta API.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
@@ -53,12 +53,12 @@ Puede encontrar más información sobre IMAPI y otros temas relacionados en las 
 
 
 
-|                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                    |
+| Tema                                                                                                 | Descripción                                                                                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Microsoft Optical Storage Blog](/archive/blogs/opticalstorage/)                | Resalta los temas que se centran en la implementación de Image Mastering API en escenarios de desarrollo del mundo real.                                                                                                                                                                                                                                                 |
-| [Foro de discusión de plataformas ópticas](https://social.msdn.microsoft.com/forums/windowsopticalplatform/threads/)              | Analice CDROM.SYS, IMAPIv2 y Live File System. Este foro se centra en temas de nivel de sistema y está destinado a desarrolladores de aplicaciones en lugar de usuarios finales.                                                                                                                                                                                                 |
-| [T10 Technical Committee](https://www.t10.org/)                       | Un comité técnico del Comité Internacionales de Estándares de Tecnologías de la Información (INCITS) pronunciaba "conclusiones". INCITS está reconocido por y funciona según las reglas aprobadas por el American National Standards Institute (ANSI). Estas reglas están diseñadas para garantizar que los estándares voluntarias se desarrollan mediante el consenso de los grupos del sector. |
-| [Asociación de tecnología de almacenamiento óptico ( TECHNOLOGY)](http://www.osta.org/) | Trabaja para dar forma al futuro del sector a través de reuniones periódicas de aplicaciones comerciales de almacenamiento óptico (COSA), compatibilidad de DVD, marketing, MPV (MusicPhotoVideo), comités de UDF y un nuevo comité de Blue. Las empresas interesadas de todo el mundo están invitadas a unirse a la organización y participar en sus comités y programas.               |
+| [Foro de discusión de plataformas ópticas](https://social.msdn.microsoft.com/forums/windowsopticalplatform/threads/)              | Analice CDROM.SYS, IMAPIv2 y Live File System. Este foro se centra en temas de nivel de sistema y está pensado para desarrolladores de aplicaciones en lugar de usuarios finales.                                                                                                                                                                                                 |
+| [T10 Technical Committee](https://www.t10.org/)                       | Un comité técnico del Comité Inter internationalista de estándares de tecnologías de la información (INCITS) pronunciaba "conclusiones". INCITS está reconocido por y funciona según las reglas aprobadas por, el American National Standards Institute (ANSI). Estas reglas están diseñadas para garantizar que los estándares voluntarias se desarrollan mediante el consenso de los grupos del sector. |
+| [Asociación de tecnología de almacenamiento óptico ( TECHNOLOGY)](http://www.osta.org/) | Trabaja para dar forma al futuro del sector a través de reuniones periódicas de aplicaciones comerciales de almacenamiento óptico (COSA), compatibilidad de DVD, marketing, MPV (MusicPhotoVideo), comités de UDF y un nuevo comité de blue. Se invita a empresas interesadas de todo el mundo a unirse a la organización y participar en sus comités y programas.               |
 
 
 

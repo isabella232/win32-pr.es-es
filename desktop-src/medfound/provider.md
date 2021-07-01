@@ -4,16 +4,16 @@ ms.assetid: 692cce3b-ebf5-4a49-8c37-48c8ef6caee7
 title: provider (elemento)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ca319b686101766dacd79821ac6d9caf859cf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d96b3015dddbcff74c09f77a1b6245d052fe034
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811575"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118450"
 ---
 # <a name="provider-element"></a>provider (elemento)
 
-Especifica un proveedor de seguimiento (ETW o WPP) para [MFTrace](mftrace.md).
+Especifica un proveedor de seguimiento (ETW o WPP) para [MFTrace.](mftrace.md)
 
 ## <a name="usage"></a>Uso
 
@@ -31,7 +31,7 @@ Especifica un proveedor de seguimiento (ETW o WPP) para [MFTrace](mftrace.md).
 
 | Atributo            | Tipo             | Obligatorio       | Descripción                                              |
 |----------------------|------------------|----------------|----------------------------------------------------------|
-| **Id**<br/>    | CDATA<br/> | Sí<br/> | El nombre o GUID del proveedor.<br/> <br/> |
+| **Id**<br/>    | CDATA<br/> | Sí<br/> | Nombre o GUID del proveedor.<br/> <br/> |
 | **level**<br/> | CDATA<br/> | Sí<br/> | Nivel de seguimiento.<br/> <br/>                  |
 
 
@@ -42,7 +42,7 @@ Especifica un proveedor de seguimiento (ETW o WPP) para [MFTrace](mftrace.md).
 
 | Elemento                               |
 |---------------------------------------|
-| [**palabra clave**](keyword.md)<br/> |
+| [**Palabra clave**](keyword.md)<br/> |
 
 
 
@@ -58,25 +58,26 @@ keyword+
 
 | Elemento                                   |
 |-------------------------------------------|
-| [**providers**](providers.md)<br/> |
+| [**Proveedores**](providers.md)<br/> |
 
 
 
 ## <a name="element-information"></a>Información de elemento
 
-
-
-|              |     |
-|--------------|-----|
-| Puede estar vacío | No  |
-
-
+:::row:::
+    :::column:::
+        Puede estar vacío
+    :::column-end:::
+    :::column span="2":::
+        No
+    :::column-end:::
+:::row-end:::
 
 ## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Archivo de configuración MFTrace](mftrace-configuration-file.md)
+[Archivo de configuración de MFTrace](mftrace-configuration-file.md)
 </dt> </dl>
 
  

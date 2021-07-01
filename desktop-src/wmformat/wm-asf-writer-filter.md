@@ -1,6 +1,6 @@
 ---
 title: Filtro wm asf writer (Windows Media Format SDK 11)
-description: Obtenga información sobre el filtro WM ASF Writer.
+description: Obtenga información sobre el filtro WM ASF Writer para el SDK Windows Media Format 11. Revise la información del filtro y vea los temas relacionados.
 ms.assetid: a902c92e-836d-492c-b2d2-89c216125774
 keywords:
 - Windows Media Format SDK,WM ASF Writer
@@ -11,16 +11,16 @@ keywords:
 - ASF (formato de sistemas avanzados),WM ASF Writer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0fbd6e36a8178f6ebd1943cdaac214597e0ba4e
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 24ee013b55455c3100ee23e076b767d70fb3ffda
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444706"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119670"
 ---
 # <a name="wm-asf-writer-filter-windows-media-format-11-sdk"></a>Filtro wm asf writer (Windows Media Format SDK 11)
 
-El filtro WM ASF Writer acepta un número variable de flujos de entrada y crea un archivo ASF. El filtro controla toda la compresión y multiplexación (aunque se puede omitir el mecanismo de compresión). Puede usar el filtro WM ASF Writer en varios escenarios, como la captura de vídeo digital (DV), la re Audio-Video compresión de audio y la conversión de archivos multimedia digitales intercalados (AVI) o MPEG para streaming de red. Este filtro proporciona la única manera de crear archivos Windows Media Audio Microsoft Windows Media Video en DirectShow.
+El filtro WM ASF Writer acepta un número variable de flujos de entrada y crea un archivo ASF. El filtro controla toda la compresión y la multiplexación (aunque se puede omitir el mecanismo de compresión). Puede usar el filtro WM ASF Writer en varios escenarios, como la captura de vídeo digital (DV), la re Audio-Video compresión de audio y la conversión de archivos multimedia digitales intercalados (AVI) o MPEG para streaming de red. Este filtro proporciona la única manera de crear archivos Windows Media Audio Microsoft Windows Media Video en DirectShow.
 
 Para obtener más información, vea [Crear archivos ASF en DirectShow.](creating-asf-files-in-directshow.md)
 
@@ -38,14 +38,14 @@ La tabla siguiente contiene información sobre el filtro WM ASF Writer, como las
 | Filtrar CLSID           | CLSID \_ WMAsfWriter                                                                                                                                                                                                      |
 | CLSID de la página de propiedades    | CLSID \_ WMAsfWriterProperties                                                                                                                                                                                            |
 | Executable             | Qasf.dll                                                                                                                                                                                                                |
-| Mérito                  | NO \_ SE USA EL VALOR DE LUGAR DE \_ \_ SERVICIO                                                                                                                                                                                                     |
+| Mérito                  | NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.                                                                                                                                                                                                     |
 | Categoría de filtro        | No especificado                                                                                                                                                                                                           |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El número de pines de entrada en el filtro depende del perfil que se pasa al filtro. Se crea un pin del tipo de medio adecuado para cada secuencia definida en el perfil.
 

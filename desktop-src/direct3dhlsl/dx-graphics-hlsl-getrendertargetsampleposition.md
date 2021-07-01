@@ -1,9 +1,9 @@
 ---
 title: GetRenderTargetSamplePosition
-description: Obtiene la posición de muestreo (x, y) de un índice de ejemplo determinado.
+description: Obtiene la posición de muestreo (x,y) de un índice de ejemplo determinado.
 ms.assetid: 07f14d1c-4fe5-4838-acce-d664cdc641e6
 keywords:
-- HLSL de GetRenderTargetSamplePosition
+- GetRenderTargetSamplePosition HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3b0cd944b175522ab7d722ae791f3548c6633b71
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c31bc829f8990517ddbea8be7c25eead413ab666
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103783311"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120580"
 ---
 # <a name="getrendertargetsampleposition"></a>GetRenderTargetSamplePosition
 
-Obtiene la posición de muestreo (x, y) de un índice de ejemplo determinado.
+Obtiene la posición de muestreo (x,y) de un índice de ejemplo determinado.
 
-
-
-|                                                                                  |
-|----------------------------------------------------------------------------------|
-| Float<2> GetRenderTargetSamplePosition (en int<1> index<br/>); |
+float<2> GetRenderTargetSamplePosition( in int<1> Index<br/>);
 
 
 
@@ -40,7 +36,7 @@ Obtiene la posición de muestreo (x, y) de un índice de ejemplo determinado.
 
 | Elemento                                                                                       | Descripción                                  |
 |--------------------------------------------------------------------------------------------|----------------------------------------------|
-| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>*Ajustar*<br/> | \[en \] un índice de ejemplo basado en cero.<br/> |
+| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>*Índice*<br/> | \[en \] un índice de ejemplo de base cero.<br/> |
 
 
 
@@ -48,13 +44,13 @@ Obtiene la posición de muestreo (x, y) de un índice de ejemplo determinado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Posición (x, y) del ejemplo determinado.
+Posición (x,y) del ejemplo dado.
 
 ## <a name="remarks"></a>Observaciones
 
-Use esta función y [**GetRenderTargetSampleCount**](dx-graphics-hlsl-getrendertargetsamplecount.md) para averiguar el número y la posición de las ubicaciones de muestreo para un destino de representación.
+Use esta función y [**GetRenderTargetSampleCount para**](dx-graphics-hlsl-getrendertargetsamplecount.md) averiguar el número y la posición de las ubicaciones de muestreo de un destino de representación.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -62,9 +58,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 4](dx-graphics-hlsl-sm4.md) y versiones posteriores | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) y modelos de sombreador posteriores | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | No        |
 
 
@@ -75,7 +71,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

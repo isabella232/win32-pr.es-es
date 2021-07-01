@@ -4,12 +4,12 @@ ms.assetid: a85fe46c-ce5f-4978-aa37-a3666560426b
 title: Punto a punto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a62469eee79fbc501da911a60d8e21e3c6e94452
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ed371f203d34166f1d84462a363326adc32100ae
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094563"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118610"
 ---
 # <a name="peer-to-peer"></a>Punto a punto
 
@@ -45,7 +45,7 @@ La infraestructura del mismo nivel se admite en Windows Vista, Windows XP con Se
 
 | Tema                                                     | Descripción                                                                                         |
 |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Infraestructura del mismo nivel](peer-infrastructure.md)<br/> | Información sobre la infraestructura del mismo nivel y el protocolo de resolución de nombres del mismo nivel (PNRP). <br/> |
+| [Infraestructura del mismo nivel](peer-infrastructure.md)<br/> | Información sobre la infraestructura del mismo nivel y el Protocolo de resolución de nombres del mismo nivel (PNRP). <br/> |
 | [Colaboración del mismo nivel](peer-collaboration.md)<br/>   | Información y material de referencia específico de la API de colaboración del mismo nivel.<br/>               |
 | [Distribución del mismo nivel](peer-distribution.md)<br/>     | Información y material de referencia específico de la API de distribución del mismo nivel.<br/>                |
 
@@ -57,7 +57,7 @@ La infraestructura del mismo nivel se admite en Windows Vista, Windows XP con Se
 
 Puede encontrar más información sobre las tecnologías punto a punto en las siguientes ubicaciones:
 
-|                                                                                                           |                                                                                                                |
+| Tema                                                                                                          | Descripción                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [Recursos de redes del mismo nivel de Windows](https://www.microsoft.com/p2p)                       | Acceda a documentos técnicos publicados, ejemplos y presentaciones que detallan la tecnología de redes del mismo nivel.<br/> |
 | [Blog de redes del mismo nivel de Microsoft](/archive/blogs/p2p/)                          | Lea las entradas de blog más recientes del equipo de redes del mismo nivel de Microsoft.<br/>                                 |

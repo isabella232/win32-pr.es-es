@@ -1,22 +1,22 @@
 ---
-description: Con algunas excepciones, WinINet es un supraconjunto de WinHTTP. Al seleccionar entre los dos, debe usar WinINet, a menos que tenga previsto ejecutarlo en un servicio o un proceso similar a un servicio que requiera la suplantación y el aislamiento de la sesión.
+description: Al seleccionar entre ellos, use WinINet a menos que planee ejecutarse dentro de un servicio o proceso de tipo servicio que requiera suplantación y aislamiento de sesión.
 ms.assetid: 82de0e60-9341-4266-bcff-cdb8a7f244a5
 title: WinHTTP frente a WinINet
 ms.topic: article
 ms.date: 02/22/2019
-ms.openlocfilehash: 2909117ab6100bf0115bfac8d3565ec8ab3742c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f011aa57a866deaa82e5dc1737bfa68a6edebc4c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541683"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118620"
 ---
 # <a name="winhttp-vs-wininet"></a>WinHTTP frente a WinINet
 
-Vea [WinInet frente a winhttp](/windows/desktop/wininet/wininet-vs-winhttp). 
+Consulte [WinINet frente a WinHTTP.](/windows/desktop/wininet/wininet-vs-winhttp) 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 * [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page)
-* [WinINet](/windows/desktop/WinInet/about-wininet)
+* [Wininet](/windows/desktop/WinInet/about-wininet)
 * [WinINet frente a WinHTTP](/windows/desktop/wininet/wininet-vs-winhttp)

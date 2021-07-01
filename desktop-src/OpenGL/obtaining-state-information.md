@@ -1,6 +1,6 @@
 ---
-title: Obtención de información de estado
-description: Obtención de información de estado
+title: Obtener información de estado
+description: Obtener información de estado
 ms.assetid: 86fc8503-92b9-4b5b-8a28-4c9783983ac6
 keywords:
 - OpenGL, información de estado
@@ -8,42 +8,77 @@ keywords:
 - información de estado OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfac92233e971104fd4d343970a9ecc79496ed54
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8329fd34fc68122be8d63e4dc28756f88faf7797
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775253"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120690"
 ---
-# <a name="obtaining-state-information"></a>Obtención de información de estado
+# <a name="obtaining-state-information"></a>Obtener información de estado
 
 OpenGL mantiene muchas variables de estado que afectan al comportamiento de muchas funciones. Algunas de estas variables tienen funciones de consulta especializadas.
 
+:::row:::
+    :::column:::
+        [**glGetClipPlane**](glgetclipplane.md)
+    :::column-end:::
+    :::column:::
+        [**glGetPixelMap**](glgetpixelmap.md)
+    :::column-end:::
+    :::column:::
+        [**glGetTexImage**](glgetteximage.md)
+    :::column-end:::
+:::row-end:::
 
+:::row:::
+    :::column:::
+        [**glGetLight**](glgetlight.md)
+    :::column-end:::
+    :::column:::
+        [**glGetPolygonStipple**](glgetpolygonstipple.md)
+    :::column-end:::
+    :::column:::
+        [**glGetTexLevelParameter**](glgettexlevelparameter.md)
+    :::column-end:::
+:::row-end:::
 
-|                                          |                                                    |                                                          |
-|------------------------------------------|----------------------------------------------------|----------------------------------------------------------|
-| [**glGetClipPlane**](glgetclipplane.md) | [**glGetPixelMap**](glgetpixelmap.md)             | [**glGetTexImage**](glgetteximage.md)                   |
-| [**glGetLight**](glgetlight.md)         | [**glGetPolygonStipple**](glgetpolygonstipple.md) | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
-| [**glGetMap**](glgetmap.md)             | [**glGetTexEnv**](glgettexenv.md)                 | [**glGetTexParameter**](glgettexparameter.md)           |
-| [**glGetMaterial**](glgetmaterial.md)   | [**glGetTexGen**](glgettexgen.md)                 |                                                          |
+:::row:::
+    :::column:::
+        [**glGetMap**](glgetmap.md)
+    :::column-end:::
+    :::column:::
+        [**glGetTexEnv**](glgettexenv.md)
+    :::column-end:::
+    :::column:::
+        [**glGetTexParameter**](glgettexparameter.md)
+    :::column-end:::
+:::row-end:::
 
+:::row:::
+    :::column:::
+        [**glGetMaterial**](glgetmaterial.md)
+    :::column-end:::
+    :::column:::
+        [**glGetTexGen**](glgettexgen.md)
+    :::column-end:::
+    :::column:::
 
+    :::column-end:::
+:::row-end:::
 
- 
+Para obtener el valor de otras variables de estado, use [**glGetBooleanv**](glgetbooleanv.md), [**glGetDoublev**](glgetdoublev.md), [**glGetFloatv**](glgetfloatv.md)o [**glGetIntegerv**](glgetintegerv.md), según corresponda. Consulte [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) para obtener información sobre cómo usar estas funciones. Otras funciones de consulta que puede usar son [**glGetError,**](glgeterror.md) [**glGetString**](glgetstring.md)y [**glIsEnabled.**](glisenabled.md) (Consulte [Control de errores](handling-errors.md) para obtener más información sobre las funciones relacionadas con el control de errores). Para guardar y restaurar conjuntos de variables de estado, use [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md).
 
-Para obtener el valor de otras variables de estado, use [**glGetBooleanv**](glgetbooleanv.md), [**glGetDoublev**](glgetdoublev.md), [**glGetFloatv**](glgetfloatv.md)o [**glGetIntegerv**](glgetintegerv.md), según corresponda. Consulte [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) para obtener información sobre cómo usar estas funciones. Otras funciones de consulta que podría querer usar son [**glGetError**](glgeterror.md), [**glGetString**](glgetstring.md)y [**glIsEnabled**](glisenabled.md). (Consulte [control de errores](handling-errors.md) para obtener más información acerca de las funciones relacionadas con el control de errores). Para guardar y restaurar conjuntos de variables de estado, use [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md).
-
--   [Usar las funciones de consulta](using-the-query-functions.md)
+-   [Uso de las funciones de consulta](using-the-query-functions.md)
 -   [Tratamiento de errores](error-handling.md)
 -   [Códigos de error de OpenGL](opengl-error-codes.md)
 -   [Guardar y restaurar conjuntos de variables de estado](saving-and-restoring-sets-of-state-variables.md)
--   [Variables de estado de OpenGL](opengl-state-variables.md)
+-   [Variables de estado openGL](opengl-state-variables.md)
 -   [Referencia de información de estado](state-information-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 
