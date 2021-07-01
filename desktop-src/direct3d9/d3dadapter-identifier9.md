@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: db4b25cb44b3b43b3b9754f241e2c505bdfedbc7
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 85401573956d29386b5ddabbd48711a7be140463
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343400"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129974"
 ---
 # <a name="d3dadapter_identifier9-structure"></a>Estructura D3DADAPTER \_ IDENTIFIER9
 
@@ -32,9 +32,12 @@ typedef struct D3DADAPTER_IDENTIFIER9 {
   char          Driver[MAX_DEVICE_IDENTIFIER_STRING];
   char          Description[MAX_DEVICE_IDENTIFIER_STRING];
   char          DeviceName[32];
+#ifdef _WIN32
   LARGE_INTEGER DriverVersion;
+#else
   DWORD         DriverVersionLowPart;
   DWORD         DriverVersionHighPart;
+#endif
   DWORD         VendorId;
   DWORD         DeviceId;
   DWORD         SubSysId;
@@ -101,7 +104,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identifique la versión del controlador de Direct3D. Es válido realizar comparaciones < y > en el valor entero de 64 bits con signo. Sin embargo, tenga cuidado si usa este elemento para identificar controladores problemáticos. En su lugar, debe usar DeviceIdentifier. Vea la sección Comentarios.
+Identifique la versión del controlador Direct3D. Es válido realizar comparaciones < y > en el valor entero de 64 bits con signo. Sin embargo, tenga cuidado si usa este elemento para identificar controladores problemáticos. En su lugar, debe usar DeviceIdentifier. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -112,7 +115,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identifique la versión del controlador de Direct3D. Es válido realizar comparaciones < y > en el valor entero de 64 bits con signo. Sin embargo, tenga cuidado si usa este elemento para identificar controladores problemáticos. En su lugar, debe usar DeviceIdentifier. Vea la sección Comentarios.
+Identifique la versión del controlador Direct3D. Es válido realizar comparaciones < y > en el valor entero de 64 bits con signo. Sin embargo, tenga cuidado si usa este elemento para identificar controladores problemáticos. En su lugar, debe usar DeviceIdentifier. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -123,7 +126,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se puede usar para ayudar a identificar un conjunto de chip determinado. Consulte este miembro para identificar al fabricante. El valor puede ser cero si se desconoce.
+Se puede usar para ayudar a identificar un conjunto de chips determinado. Consulte este miembro para identificar al fabricante. El valor puede ser cero si es desconocido.
 
 </dd> <dt>
 
@@ -134,7 +137,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se puede usar para ayudar a identificar un conjunto de chip determinado. Consulte este miembro para identificar el tipo de conjunto de chip. El valor puede ser cero si se desconoce.
+Se puede usar para ayudar a identificar un conjunto de chips determinado. Consulte este miembro para identificar el tipo de conjunto de chip. El valor puede ser cero si es desconocido.
 
 </dd> <dt>
 
@@ -178,13 +181,13 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se usa para determinar el Laboratorios de calidad de hardware de Windows (WHQL) de validación de controladores (WHQL) para este par de controladores y dispositivos. DWORD es una estructura de fechas empaquetada que define la fecha de lanzamiento de la prueba WHQL más reciente superada por el controlador. Es legal realizar operaciones < y > en este valor. A continuación se muestra el formato de fecha.
+Se usa para determinar el Laboratorios de calidad de hardware de Windows (WHQL) de validación de controladores (WHQL) para este par de controladores y dispositivos. DWORD es una estructura de fecha empaquetada que define la fecha de lanzamiento de la prueba WHQL más reciente superada por el controlador. Es válido realizar operaciones < y > en este valor. A continuación se muestra el formato de fecha.
 
 
 
 | Bits  |  Descripción                                             |
 |-------|-----------------------------------------------|
-| 31-16 | Año, un número decimal de 1999 hacia arriba. |
+| 31-16 | El año, un número decimal de 1999 hacia arriba. |
 | 15-8  | El mes, un número decimal de 1 a 12.     |
 | 7-0   | El día, un número decimal de 1 a 31.       |
 
@@ -211,7 +214,7 @@ Para Direct3D9Ex que se ejecuta en Windows Vista, Windows Server 2008, Windows 7
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el ejemplo de pseudocódigo siguiente se muestra el formato de versión codificado en los miembros DriverVersion, DriverVersionLowPart y DriverVersionHighPart.
 
@@ -225,7 +228,7 @@ Build = LOWORD(DriverVersion.LowPart)
 
 
 
-Consulte Platform SDK para obtener más información sobre la macro HIWORD, la macro LOWORD y la estructura \_ LARGE INTEGER.
+Consulte Platform SDK para obtener más información sobre la macro HIWORD, la macro LOWORD y la estructura LARGE \_ INTEGER.
 
 MAX \_ DEVICE IDENTIFIER STRING es una constante con la siguiente \_ \_ definición.
 
@@ -236,7 +239,7 @@ MAX \_ DEVICE IDENTIFIER STRING es una constante con la siguiente \_ \_ definici
 
 
 
-Los miembros VendorId, DeviceId, SubSysId y Revision se pueden usar conjuntamente para identificar conjuntos de chip determinados. Sin embargo, use estos miembros con precaución.
+Los miembros VendorId, DeviceId, SubSysId y Revision se pueden usar conjuntamente para identificar conjuntos de chips concretos. Sin embargo, use estos miembros con precaución.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -248,7 +251,7 @@ Los miembros VendorId, DeviceId, SubSysId y Revision se pueden usar conjuntament
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

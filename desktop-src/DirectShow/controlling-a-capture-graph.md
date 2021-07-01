@@ -4,12 +4,12 @@ ms.assetid: e7afafca-e993-4096-bad4-399ee6c67fe9
 title: Controlar un gráfico de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0089fa11adbc0ac861fb9e8e30e2cd0f56b23680
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a00573256c1c010e23dfc598ceca5ac62d772711
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909053"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119480"
 ---
 # <a name="controlling-a-capture-graph"></a>Controlar un gráfico de captura
 
@@ -45,7 +45,7 @@ El primer parámetro especifica qué flujo se va a controlar, como GUID de categ
 
 Los dos parámetros siguientes definen las horas a las que se iniciará y detendrá la secuencia, en relación con la hora en que el gráfico comienza a ejecutarse. Llame [**a IMediaControl::Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run) para ejecutar el gráfico. Hasta que ejecute el gráfico, el **método ControlStream** no tiene ningún efecto. Si el gráfico ya se está ejecutando, la configuración tendrá efecto inmediatamente.
 
-Los dos últimos parámetros se usan para obtener notificaciones de eventos cuando la secuencia se inicia y se detiene. Para cada secuencia que controle mediante este método, el gráfico de filtros envía un par de eventos: [**EC \_ STREAM CONTROL \_ \_ STARTED**](ec-stream-control-started.md) cuando se inicia la secuencia y [**EC STREAM CONTROL \_ \_ \_ STOPPED**](ec-stream-control-stopped.md) cuando se detiene la secuencia. Los valores de **wStartCookie** y **wStopCookie** se usan como segundo parámetro de evento. Por lo tanto, *lParam2* en el evento de inicio es igual a **wStartCookie** y *lParam2* en el evento stop es igual a **wStopCookie**. El código siguiente muestra cómo obtener estos eventos:
+Los dos últimos parámetros se usan para obtener notificaciones de eventos cuando la secuencia se inicia y se detiene. Para cada secuencia que controle mediante este método, el gráfico de filtros envía un par de eventos: [**EC \_ STREAM CONTROL \_ \_ STARTED**](ec-stream-control-started.md) cuando se inicia la secuencia y [**EC STREAM CONTROL \_ \_ \_ STOPPED**](ec-stream-control-stopped.md) cuando se detiene la secuencia. Los valores de **wStartCookie** y **wStopCookie** se usan como segundo parámetro de evento. Por lo tanto, *lParam2* en el evento de inicio es igual a **wStartCookie** y *lParam2* en el evento stop es igual a **wStopCookie.** El código siguiente muestra cómo obtener estos eventos:
 
 
 ```C++
@@ -72,11 +72,10 @@ El **método ControlStream** define algunos valores especiales para las horas de
 
 
 
-| Etiqueta | Value |
-|-------------|----------------------------------------|------------------------------------|
-|             | Inicio                                  | Stop                               |
-| MAXLONGLONG | No inicie nunca esta secuencia.               | No se detenga hasta que se detenga el gráfico. |
-| **NULL**    | Comience inmediatamente cuando se ejecute el gráfico. | Detenga inmediatamente.                  |
+| Valor | Inicio                                  | Stop                               |
+|-------------|----------------------------------------|---------|
+| MAXLONGLONG | Nunca inicie esta secuencia.               | No se detenga hasta que se detenga el gráfico. |
+| **NULL**    | Comience inmediatamente cuando se ejecute el gráfico. | Detén inmediatamente.                  |
 
 
 
@@ -93,11 +92,11 @@ pBuild->ControlStream(&PIN_CATEGORY_CAPTURE, &MEDIATYPE_Video, pCap,
 
 
 
-Aunque puede detener la secuencia de captura y reiniciarla más adelante, esto creará un intervalo en las marcas de tiempo. Durante la reproducción, el vídeo parece detendría durante la separación (según el formato de archivo).
+Aunque puede detener la secuencia de captura y reiniciarla más adelante, esto creará un intervalo en las marcas de tiempo. Durante la reproducción, parecerá que el vídeo se detiene durante la separación (dependiendo del formato de archivo).
 
 Controlar la secuencia de vista previa
 
-Para controlar la marca de vista previa, llame **a ControlStream,** pero establezca el primer parámetro en PIN \_ CATEGORY \_ PREVIEW. Esto funciona igual que para PIN CATEGORY CAPTURE, salvo que no se pueden usar horas de referencia para especificar el inicio y la detenerse, porque los fotogramas de vista previa no tienen marcas \_ \_ de tiempo. Por lo tanto, debe **usar NULL** o MAXLONGLONG. Use **NULL para** iniciar la secuencia de vista previa:
+Para controlar el pin de vista previa, llame **a ControlStream,** pero establezca el primer parámetro en PIN \_ CATEGORY \_ PREVIEW. Esto funciona igual que para PIN CATEGORY CAPTURE, salvo que no se pueden usar horas de referencia para especificar el inicio y la detenerse, porque los fotogramas de vista previa no tienen marcas \_ \_ de tiempo. Por lo tanto, debe **usar NULL** o MAXLONGLONG. Use **NULL para** iniciar la secuencia de vista previa:
 
 
 ```C++
@@ -109,7 +108,7 @@ pBuild->ControlStream(&PIN_CATEGORY_PREVIEW, &MEDIATYPE_Video, pCap,
 
 
 
-Use MAXLONGLONG para detener la secuencia de vista previa:
+Use MAXLONGLONG para detener la secuencia de versión preliminar:
 
 
 ```C++

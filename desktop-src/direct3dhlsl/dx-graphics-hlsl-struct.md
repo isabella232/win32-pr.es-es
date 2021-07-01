@@ -3,7 +3,7 @@ title: Tipo de estructura
 description: Tipo de estructura
 ms.assetid: 896030b0-07cd-41bd-8c94-e173eabc81dd
 keywords:
-- Tipo de struct HLSL
+- Tipo de estructura HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 416c14c18fa1d0b76f4d13b609b895b0c64c2594
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 89435e9c8757d2e732bc6237b02a508d3af4b4db
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104996820"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119100"
 ---
 # <a name="struct-type"></a>Tipo de estructura
 
-Use la siguiente sintaxis para declarar una estructura mediante HLSL.
+Use la sintaxis siguiente para declarar una estructura mediante HLSL.
 
-
-
-|                                                                                           |
-|-------------------------------------------------------------------------------------------|
-| *nombre* de struct { \[ *InterpolationModifier* \] *Type* \[ *R* x *C* \] *memberName*;     ... }; |
+struct *Name*{ \[ *InterpolationModifier* \] *Type* \[ *R* x *C* \] *MemberName*;     ... };
 
 
 
@@ -38,7 +34,7 @@ Use la siguiente sintaxis para declarar una estructura mediante HLSL.
 
 <dl> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Name*
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nombre*
 </dt> <dd>
 
 Cadena ASCII que identifica de forma única el nombre de la estructura.
@@ -52,14 +48,14 @@ Modificador opcional que especifica un tipo de interpolación. Consulte [Comenta
 
 </dd> <dt>
 
-<span id="Type_RxC_"></span><span id="type_rxc_"></span><span id="TYPE_RXC_"></span>*Tipo* \[ de *R* x *C*\]
+<span id="Type_RxC_"></span><span id="type_rxc_"></span><span id="TYPE_RXC_"></span>*Tipo* \[ *R* x *C*\]
 </dt> <dd>
 
-El tipo de miembro con un tamaño de matriz de columna (*C*) x de fila opcional (*R*). Una estructura contiene al menos un elemento; Si contiene más de un elemento, los elementos son del mismo tipo. El número de filas y columnas son enteros sin signo entre 1 y 4, ambos incluidos.
+Tipo de miembro con una fila opcional (*R*) x columna (*C*) tamaño de matriz. Una estructura contiene al menos un elemento; Si contiene más de un elemento, los elementos son del mismo tipo. El número de filas y columnas son enteros sin signo entre 1 y 4 inclusive.
 
 </dd> <dt>
 
-<span id="MemberName"></span><span id="membername"></span><span id="MEMBERNAME"></span>*NombreDeMiembro*
+<span id="MemberName"></span><span id="membername"></span><span id="MEMBERNAME"></span>*MemberName*
 </dt> <dd>
 
 Cadena ASCII que identifica de forma única el nombre del miembro.
@@ -68,23 +64,23 @@ Cadena ASCII que identifica de forma única el nombre del miembro.
 
 ## <a name="remarks"></a>Observaciones
 
-Se puede especificar un modificador de interpolación en cualquier miembro de estructura o en un argumento para una función de sombreador de píxeles. Si un modificador aparece en ambos lugares, el modificador exterior (el modificador de argumento del sombreador de píxeles) sobreasignará el modificador in (el modificador de estructura).
+Se puede especificar un modificador de interpolación en cualquier miembro de estructura o en un argumento para una función de sombreador de píxeles. Si aparece un modificador en ambos lugares, el modificador externo (el modificador de argumento del sombreador de píxeles) anula el modificador inside (el modificador structure).
 
-Al compilar un sombreador o un efecto, el compilador del sombreador empaqueta los miembros de la estructura de acuerdo con [las reglas de empaquetado de HLSL](dx-graphics-hlsl-packing-rules.md).
+Al compilar un sombreador o un efecto, el compilador del sombreador empaqueta miembros de estructura según las reglas de [empaquetado hlsl](dx-graphics-hlsl-packing-rules.md).
 
 ### <a name="interpolation-modifiers-introduced-in-shader-model-4"></a>Modificadores de interpolación introducidos en el modelo de sombreador 4
 
-Las salidas del sombreador de vértices que se usan para las entradas del sombreador de píxeles se interpolan linealmente para obtener valores por píxel durante la rasterización. Para establecer el método de interpolación, use cualquiera de los siguientes valores, que se admiten en el [modelo de sombreador 4](dx-graphics-hlsl-sm4.md) o posterior. El modificador se omite en cualquier salida del sombreador de vértices que no se use como entrada de sombreador de píxeles.
+Las salidas del sombreador de vértices que se usan para las entradas del sombreador de píxeles se interpolan linealmente para obtener valores por píxel durante la rasterización. Para establecer el método de interpolación, use cualquiera de los siguientes valores, que se admiten en el modelo [de sombreador 4](dx-graphics-hlsl-sm4.md) o posterior. El modificador se omite en cualquier salida del sombreador de vértices que no se usa como entrada del sombreador de píxeles.
 
 
 
 | Modificador de interpolación | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **lineal**             | Interpolar entre las entradas del sombreador; **lineal** es el valor predeterminado si no se especifica ningún modificador de interpolación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **centroide**           | Interpolar entre las muestras que se encuentran en algún lugar dentro del área tratada del píxel (esto puede requerir la extrapolación de los puntos finales de un centro de píxeles). El muestreo de centroide puede mejorar el suavizado de contorno si un píxel está parcialmente incluido (aunque no esté incluido el centro de píxeles). El modificador **centroide** debe combinarse con el modificador **linear** o **noperspective** .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **nointerpolación**    | No se interpolan.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **noperspective**      | No realice correcciones de perspectiva durante la interpolación. El modificador **noperspective** se puede combinar con el modificador **centroide** .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **AdventureWorks**             | **Disponible en el modelo de sombreador 4,1 y versiones posteriores** Interpolación en la ubicación de ejemplo en lugar de en el centro de píxeles. Esto hace que el sombreador de píxeles se ejecute por ejemplo en lugar de por píxel. Otra manera de producir la ejecución por muestra es tener una entrada con la [ \_ SampleIndex semántica](dx-graphics-hlsl-semantics.md), que indica el ejemplo actual. Solo las entradas con el **ejemplo** especificado (o la entrada \_ SampleIndex de SV) difieren entre las invocaciones del sombreador en el píxel, mientras que otras entradas que no especifican modificadores (por ejemplo, si se mezclan modificadores en entradas diferentes) todavía se interpolan en el centro de píxeles. Tanto la invocación del sombreador de píxeles como la prueba de profundidad y estarcido se producen para cada muestra incluida en el píxel. A veces, esto se conoce como *supermuestreo*. Por el contrario, en ausencia de una invocación de frecuencia de muestreo, conocida como *multimuestreo*, el sombreador de píxeles se invoca una vez por píxel, independientemente del número de muestras que se cubran, mientras que las pruebas de profundidad y estarcido se producen con frecuencia de ejemplo. Ambos modos proporcionan suavizado de contorno de borde equivalente. Sin embargo, el supermuestreo proporciona una mejor calidad de sombreado mediante la invocación del sombreador de píxeles con más frecuencia.<br/> |
+| **Lineal**             | Interpolación entre entradas del sombreador; **linear** es el valor predeterminado si no se especifica ningún modificador de interpolación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Centroide**           | Interpolación entre muestras que se encuentran en algún lugar dentro del área cubierta del píxel (esto puede requerir la extrapolación de puntos de conexión desde un centro de píxeles). El muestreo de centroide puede mejorar el suavizado de contorno si un píxel está parcialmente cubierto (incluso si el centro de píxeles no está cubierto). El **modificador centroide** debe combinarse con el **modificador linear** o **noperspective.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **nointerpolation**    | No interpolar .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **noperspective**      | No realice la corrección de perspectiva durante la interpolación. El **modificador noperspective** se puede combinar con el **modificador centroide.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Muestra**             | **Disponible en el modelo de sombreador 4.1 y versiones posteriores** Interpolar en la ubicación de la muestra en lugar de en el centro de píxeles. Esto hace que el sombreador de píxeles se ejecute por ejemplo en lugar de por píxel. Otra manera de provocar la ejecución por ejemplo es tener una entrada con [SV \_ SampleIndex](dx-graphics-hlsl-semantics.md)semántico, que indica el ejemplo actual. Solo las entradas  con la muestra especificada (o la entrada SV SampleIndex) difieren entre las invocaciones del sombreador en el píxel, mientras que otras entradas que no especifican modificadores (por ejemplo, si se mezclan modificadores en distintas entradas) se interpolan en el centro \_ de píxeles. Tanto la invocación del sombreador de píxeles como las pruebas de profundidad o galería de símbolos se producen para cada muestra cubierta en el píxel. Esto se conoce a veces como *supermuestreo.* Por el contrario, en ausencia de invocación de frecuencia de muestreo, conocida como multimuestreo, el sombreador de píxeles se invoca una vez por píxel, independientemente de cuántas muestras se cubren, mientras que las *pruebas* de profundidad o galería de símbolos se producen con frecuencia de la muestra. Ambos modos proporcionan suavizado de contorno perimetral equivalente. Sin embargo, el supermuestreo proporciona una mejor calidad de sombreado al invocar el sombreador de píxeles con más frecuencia.<br/> |
 
 
 
@@ -93,11 +89,11 @@ Las salidas del sombreador de vértices que se usan para las entradas del sombre
 <dl> 1. Cuando se usa un tipo int/uint, la única opción válida es **nointerpolation**.  
 </dl>
 
-Los modificadores de interpolación se pueden aplicar a los miembros de la estructura o a los argumentos de la [función](dx-graphics-hlsl-function-parameters.md), o a ambos.
+Los modificadores de interpolación se pueden aplicar a miembros de estructura o [argumentos de función,](dx-graphics-hlsl-function-parameters.md)o ambos.
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se muestran algunas declaraciones de estructura de ejemplo.
+Estas son algunas declaraciones de estructura de ejemplo.
 
 
 ```
@@ -109,7 +105,7 @@ struct struct1
 
 
 
-Esta Declaración incluye una matriz.
+Esta declaración incluye una matriz.
 
 
 ```
@@ -123,7 +119,7 @@ struct struct2
 
 
 
-Esta Declaración incluye un modificador de interpolación.
+Esta declaración incluye un modificador de interpolación.
 
 
 ```
@@ -135,11 +131,11 @@ struct In
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Tipos de datos (DirectX HLSL)](dx-graphics-hlsl-data-types.md)
+[Tipos de datos (HLSL de DirectX)](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
  

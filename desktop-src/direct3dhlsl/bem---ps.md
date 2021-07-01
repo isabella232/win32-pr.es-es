@@ -1,6 +1,6 @@
 ---
-title: BEM-PS
-description: Aplicar una transformación de mapa de entorno de rugosidad falsa.
+title: bem - ps
+description: Aplicar una transformación de mapa de entorno de protuberancia falsa.
 ms.assetid: b41009d4-a2bb-4397-ad23-c95ef2620a66
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,45 +9,45 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7c591555e2cbd2c6eaebf6e392bb94d6ec50e748
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1adae07e3e2ebbca085981ca03a3b6449e2ffd9d
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419953"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129934"
 ---
-# <a name="bem---ps"></a>BEM-PS
+# <a name="bem---ps"></a>bem - ps
 
-Aplicar una transformación de mapa de entorno de rugosidad falsa.
+Aplicar una transformación de mapa de entorno de protuberancia falsa.
 
 ## <a name="syntax"></a>Sintaxis
 
 
 
-| BEM DST. RG, src0, SRC1 |
+| bem dst.rg, src0, src1 |
 |------------------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST. RG DST es el registro de destino. Se debe usar la máscara de escritura del componente rojo y verde.
+-   dst.rg dst es el registro de destino. Se debe usar la máscara de escritura del componente rojo y verde.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
 ## <a name="remarks"></a>Observaciones
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| bem                   |      |      |      | x    |      |      |       |      |       |
+| Bem                   |      |      |      | x    |      |      |       |      |       |
 
 
 
- 
+ 
 
 Esta instrucción realiza el cálculo siguiente.
 
@@ -63,26 +63,26 @@ dest.g = src0.g + D3DTSS_BUMPENVMAT01(stage n) * src1.r
 
 
 
-Reglas para usar BEM:
+Reglas para usar bem:
 
-1.  BEM debe aparecer en la primera fase de un sombreador (es decir, antes de un marcador de fase).
-2.  BEM consume dos ranuras de Instrucciones aritméticas.
+1.  bem debe aparecer en la primera fase de un sombreador (es decir, antes de un marcador de fase).
+2.  bem consume dos ranuras de instrucciones aritméticas.
 3.  Solo se permite un uso de esta instrucción por sombreador.
-4.  El writemask de destino debe ser. RG/.XY.
-5.  Esta instrucción no se puede comemisión de forma conjunta.
-6.  Aparte de la restricción de que la máscara de escritura de destino sea. RG, los modificadores de los modificadores de instrucción src0, SRC1 y Instruction de origen no están restringidos.
+4.  La máscara de escritura de destino debe ser .rg /.xy.
+5.  Esta instrucción no se puede emitir de forma coe emitida.
+6.  Aparte de la restricción de que la máscara de escritura de destino sea .rg, los modificadores de origen src0, src1 y modificadores de instrucción no están entrenados.
 
 ## <a name="instruction-information"></a>Información de instrucciones
 
 
 
-|                          |            |
+| Requisito                         | Valor           |
 |--------------------------|------------|
 | Sistema operativo mínimo | Windows 98 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -91,9 +91,9 @@ Reglas para usar BEM:
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

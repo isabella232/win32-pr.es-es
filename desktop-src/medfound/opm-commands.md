@@ -1,28 +1,28 @@
 ---
-description: Comandos OPM
+description: Comandos de OPM
 ms.assetid: 52165e1b-a178-4483-bf76-4197281f856d
-title: Comandos OPM
+title: Comandos de OPM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aa14026123656b26e978bc179d65c3b61913c62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b00240925c28322b911ab55a0e4f026f051d6ec
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705895"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119150"
 ---
-# <a name="opm-commands"></a>Comandos OPM
+# <a name="opm-commands"></a>Comandos de OPM
 
-En esta sección se enumeran los comandos disponibles para el [Administrador de protección de salida](output-protection-manager.md) (OPM).
+En esta sección se enumeran los comandos disponibles para [Output Protection Manager](output-protection-manager.md) (OPM).
 
-Para enviar un comando OPM, llame a [**IOPMVideoOutput:: configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure). Para cada comando, se muestra la siguiente información.
+Para enviar un comando de OPM, llame a [**IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure). Para cada comando, se muestra la siguiente información.
 
 
 
-|              |                                                                                                                                                             |
+| Valor             | Descripción                                                                                                                                                            |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GUID de comando | Identifica el comando. Establezca el miembro **guidSetting** de la estructura de [**\_ \_ parámetros de configuración de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) igual a este valor. |
-| Datos de entrada   | Especifica cómo interpretar la matriz **abParameters** en la estructura [**de \_ \_ parámetros de configuración de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) .                      |
+| GUID de comando | Identifica el comando . Establezca el **miembro guidSetting** de la estructura [**\_ OPM CONFIGURE \_ PARAMETERS**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) igual a este valor. |
+| Datos de entrada   | Especifica cómo interpretar la matriz **abParameters** en la [**estructura OPM \_ CONFIGURE \_ PARAMETERS.**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters)                      |
 
 
 
@@ -32,12 +32,12 @@ Se definen los siguientes comandos:
 
 
 
-| Get-Help                                                                                                       | Descripción                                                                                         |
+| Comando                                                                                                       | Descripción                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [**\_configuración \_ de la \_ \_ señalización de CGMSA de OPM y ACP \_**](opm-set-acp-and-cgmsa-signaling.md)                               | Especifica información sobre la señal de vídeo, excepto el nivel de protección.                      |
-| [**OPM \_ set \_ HDCP \_ SRM**](opm-set-hdcp-srm.md)                                                               | Actualiza el mensaje de renovación de sistema (SRM) para High-Bandwidth Digital Content Protection (HDCP). |
-| [**\_nivel de \_ protección de conjunto de OPM \_**](opm-set-protection-level.md)                                               | Establece el nivel de protección de un mecanismo de protección de la salida.                                       |
-| [**\_configuración \_ \_ \_ de nivel de protección de OPM según el \_ \_ DVD de CSS \_**](opm-set-protection-level-according-to-css-dvd.md) | Establece el nivel de protección de HDCP para la reproducción de DVD, siguiendo las reglas del sistema de cifrado de contenido (CSS) de DVD. |
+| [**SEÑALIZACIÓN DE \_ OPM SET \_ ACP Y \_ \_ CGMSA \_**](opm-set-acp-and-cgmsa-signaling.md)                               | Especifica información sobre la señal de vídeo, aparte del nivel de protección.                      |
+| [**OPM \_ SET \_ HDCP \_ SRM**](opm-set-hdcp-srm.md)                                                               | Actualiza el mensaje de renovación del sistema (SRM) para High-Bandwidth Digital Content Protection (HDCP). |
+| [**OPM \_ SET \_ PROTECTION \_ LEVEL**](opm-set-protection-level.md)                                               | Establece el nivel de protección para un mecanismo de protección de salida.                                       |
+| [**OPM \_ SET \_ PROTECTION \_ LEVEL \_ ACCORDING \_ TO \_ CSS \_ DVD**](opm-set-protection-level-according-to-css-dvd.md) | Establece el nivel de protección de HDCP para la reproducción de DVD, siguiendo las reglas del sistema de codificación de contenido de DVD (CSS). |
 
 
 

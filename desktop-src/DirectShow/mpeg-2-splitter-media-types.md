@@ -4,30 +4,28 @@ ms.assetid: d0ff2011-4ee3-4f5e-8bd0-af9f4c6346e8
 title: Tipos de medios divisores MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e878acaea8bc87bee2bf5c46a6f7e66c7aa0a485
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: ef4e025fafabdeb8c437cc1d1cd6fbb843cf63e3
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909433"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119980"
 ---
 # <a name="mpeg-2-splitter-media-types"></a>Tipos de medios divisores MPEG-2
 
-El [filtro divisor MPEG-2](mpeg-2-splitter.md) admite actualmente audio y vídeo. Dolby AC-3 se admite como una subtransmisión, tal y como se define en DVD. El filtro también admite audio MPEG-2. Los tipos de medios dependen de si el divisor MPEG-2 está entregando paquetes PES o cargas PES.
+El [filtro divisor MPEG-2](mpeg-2-splitter.md) admite actualmente audio y vídeo. Dolby AC-3 se admite como una subtransmisión, tal y como se define en DVD. El filtro también admite audio MPEG-2. Los tipos de medios dependen de si el divisor MPEG-2 entrega paquetes PES o cargas PES.
 
 ### <a name="video"></a>Vídeo
 
 En el caso del vídeo MPEG-2, los tipos de medios son los siguientes.
 
 
-
-| Etiqueta | Value |
+|                | Salida de PES | Salida de carga
 |------------------|------------------------------------------|--------------------------------|
-|                  | Salida de PES                               | Salida de carga                 |
-| Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**                | **Vídeo \_ DE MEDIATYPE**           |
-| Subtype          | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_**           | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_** |
-| Tipo de formato      | **FORMAT \_ MPEG2Video**                   | **FORMAT \_ MPEG2Video**         |
-| Estructura de formato | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) | **MPEG2VIDEOINFO**             |
+| **Tipo principal**       | **MEDIATYPE \_ MPEG2 \_ PES**                | **Vídeo \_ DE MEDIATYPE**           |
+| **Subtipo**          | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_**           | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_** |
+| **Tipo de formato**      | **FORMAT \_ MPEG2Video**                   | **FORMAT \_ MPEG2Video**         |
+| **Estructura de formato** | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) | **MPEG2VIDEOINFO**             |
 
 
 
@@ -37,21 +35,18 @@ En el caso del vídeo MPEG-2, los tipos de medios son los siguientes.
 
 Para el audio AC-3, los tipos de medios son los siguientes.
 
-
-
-| Etiqueta | Value |
+| | Salida de PES | Salida de carga |
 |------------------|--------------------------------------|------------------------------|
-|                  | Salida de PES                           | Salida de carga               |
-| Tipo principal       | MEDIATYPE \_ MPEG2 \_ PES                | **MEDIATYPE \_ Audio**         |
-| Subtype          | MEDIASUBTYPE \_ DOLBY \_ AC3             | **MEDIASUBTYPE \_ DOLBY \_ AC3** |
-| Tipo de formato      | FORMAT \_ WaveFormatEx                 | **FORMAT \_ WaveFormatEx**     |
-| Estructura de formato | [**FORMA DE ONDAATEX**](/previous-versions/dd757713(v=vs.85)) | **FORMA DE ONDAATEX**             |
+| **Tipo principal**       | **MEDIATYPE \_ MPEG2 \_ PES**                | **MEDIATYPE \_ Audio**         |
+| **Subtipo**          | **MEDIASUBTYPE \_ DOLBY \_ AC3**             | **MEDIASUBTYPE \_ DOLBY \_ AC3** |
+| **Tipo de formato**      | FORMAT \_ WaveFormatEx                 | **FORMAT \_ WaveFormatEx**     |
+| **Estructura de formato** | [**FORMA DE ONDAATEX**](/previous-versions/dd757713(v=vs.85)) | **FORMA DE ONDAATEX**             |
 
 
 
  
 
-El miembro **wFormatTag** de la estructura **DEFORMATEX** para AC-3 es actualmente **WAVE FORMAT \_ \_ UNKNOWN,** pero esto podría cambiar.
+El miembro **wFormatTag** de la estructura **WAVEATEX** para AC-3 es actualmente **WAVE FORMAT \_ \_ UNKNOWN,** pero esto podría cambiar.
 
 ### <a name="mpeg-2-audio"></a>MPEG-2 Audio
 
@@ -59,13 +54,12 @@ En el caso del audio MPEG-2, los tipos de medios son los siguientes.
 
 
 
-| Etiqueta | Value |
+|  | Salida de PES | Salida de carga |
 |------------------|-------------------------------|--------------------------------|
-|                  | Salida de PES                    | Salida de carga                 |
-| Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**     | **MEDIATYPE \_ Audio**           |
-| Subtype          | **AUDIO MPEG2 DE MEDIASUBTYE \_ \_** | **MEDIASUBTYPE \_ MPEG2 \_ AUDIO** |
-| Tipo de formato      | **FORMAT \_ WaveFormatEx**      | **FORMAT \_ WaveFormatEx**       |
-| Estructura de formato | **FORMA DE ONDAATEX**              | **FORMA DE ONDAATEX**               |
+| **Tipo principal**       | **MEDIATYPE \_ MPEG2 \_ PES**     | **MEDIATYPE \_ Audio**           |
+| **Subtipo**          | **AUDIO MPEG2 DE MEDIASUBTYE \_ \_** | **MEDIASUBTYPE \_ MPEG2 \_ AUDIO** |
+| **Tipo de formato**      | **FORMAT \_ WaveFormatEx**      | **FORMAT \_ WaveFormatEx**       |
+| **Estructura de formato** | **FORMA DE ONDAATEX**              | **FORMA DE ONDAATEX**               |
 
 
 
@@ -81,13 +75,12 @@ En el caso del audio LPCM, los tipos de medios son los siguientes.
 
 
 
-| Etiqueta | Value |
+|  | Salida de PES | Salida de carga |
 |------------------|------------------------------------|------------------------------------|
-|                  | Salida de PES                         | Salida de carga                     |
-| Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**          | **MEDIATYPE \_ Audio**               |
-| Subtype          | **AUDIO \_ LPCM DE DVD DE MEDIASUBTYPE \_ \_** | **AUDIO \_ LPCM DE DVD DE MEDIASUBTYPE \_ \_** |
-| Tipo de formato      | **FORMAT \_ WaveFormatEx**           | **FORMAT \_ WaveFormatEx**           |
-| Estructura de formato | **FORMA DE ONDAATEX**                   | **FORMA DE ONDAATEX**                   |
+| **Tipo principal**       | **MEDIATYPE \_ MPEG2 \_ PES**          | **MEDIATYPE \_ Audio**               |
+| **Subtipo**          | **AUDIO \_ LPCM de DVD DE MEDIASUBTYPE \_ \_** | **AUDIO \_ LPCM de DVD DE MEDIASUBTYPE \_ \_** |
+| **Tipo de formato**      | **FORMAT \_ WaveFormatEx**           | **FORMAT \_ WaveFormatEx**           |
+| **Estructura de formato** | **FORMA DE ONDAATEX**                   | **FORMA DE ONDAATEX**                   |
 
 
 

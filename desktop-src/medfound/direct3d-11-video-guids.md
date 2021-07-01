@@ -1,15 +1,15 @@
 ---
 description: Los siguientes GUID admiten las API de vídeo de Direct3D 11.
 ms.assetid: CF2F3058-328A-4128-B5C6-29723B49AB1E
-title: GUID de vídeo de Direct3D 11 (D3d11. h)
+title: GUID de vídeo de Direct3D 11 (D3d11.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d97a43285a59cf5196584b9be04fc36b02e5243f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a16f5277123c3d174427debc3f0ad5e184e49a6c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080319"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118640"
 ---
 # <a name="direct3d-11-video-guids"></a>GUID de vídeo de Direct3D 11
 
@@ -17,19 +17,19 @@ Los siguientes GUID admiten las API de vídeo de Direct3D 11.
 
 <dl> <dt>
 
-<span id="D3D11_KEY_EXCHANGE_HW_PROTECTION"></span><span id="d3d11_key_exchange_hw_protection"></span>**\_Protección de \_ hardware de intercambio de claves de D3D11 \_ \_**
+<span id="D3D11_KEY_EXCHANGE_HW_PROTECTION"></span><span id="d3d11_key_exchange_hw_protection"></span>**D3D11 \_ KEY \_ EXCHANGE \_ HW \_ PROTECTION**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que el descodificador recibirá datos de un componente DRM basado en hardware
+Indica que el descodificador recibirá datos de un componente DRM basado en hardware.
 
-**D3D11 \_ La \_ \_ \_ protección de hardware de intercambio de claves** se puede especificar en el parámetro *pKeyExchangeType* de la función [**ID3D11VideoDevice:: CreateCryptoSession**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createcryptosession) para indicar que la interfaz [**ID3D11CryptoSession**](/windows/desktop/api/d3d11/nn-d3d11-id3d11cryptosession) se usará únicamente para la comunicación entre un componente DRM de modo de usuario y el entorno de ejecución seguro.
+**D3D11 \_ KEY \_ EXCHANGE \_ HW \_ PROTECTION** se puede especificar en el parámetro *pKeyExchangeType* de la función [**ID3D11VideoDevice::CreateCryptoSession**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createcryptosession) para indicar que la interfaz [**ID3D11CryptoSession**](/windows/desktop/api/d3d11/nn-d3d11-id3d11cryptosession) se usará exclusivamente para la comunicación entre un componente DRM en modo de usuario y el entorno de ejecución segura.
 
-Cuando se especifica este GUID, no se debe llamar a los siguientes métodos:
+Cuando se especifica este GUID, no se debe llamar a los métodos siguientes:
 
 -   [**ID3D11CryptoSession::GetCertificateSize**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificatesize)
--   [**ID3D11CryptoSession:: GetCertificate**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificate)
+-   [**ID3D11CryptoSession::GetCertificate**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificate)
 -   [**ID3D11VideoContext::EncryptionBlt**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-encryptionblt)
 -   [**ID3D11VideoContext::D ecryptionBlt**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decryptionblt)
 -   [**ID3D11VideoContext::StartSessionKeyRefresh**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-startsessionkeyrefresh)
@@ -39,21 +39,21 @@ Cuando se especifica este GUID, no se debe llamar a los siguientes métodos:
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D11_DECODER_ENCRYPTION_HW_CENC"></span><span id="d3d11_decoder_encryption_hw_cenc"></span>**D3D11 de \_ cifrado de DEScodificador de \_ \_ hardware \_ Cenc**
+<span id="D3D11_DECODER_ENCRYPTION_HW_CENC"></span><span id="d3d11_decoder_encryption_hw_cenc"></span>**D3D11 \_ DECODER \_ ENCRYPTION \_ HW \_ CENC**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que el descodificador recibirá datos de un componente DRM basado en hardware
+Indica que el descodificador recibirá datos de un componente DRM basado en hardware.
 
-El establecimiento de este GUID en el miembro **guidConfigBitstreamEncryption** de la estructura de [**\_ \_ \_ configuración del descodificador de vídeo D3D11**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_video_decoder_config) que se pasa a la API [**ID3D11VideoDevice:: CreateVideoDecoder**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createvideodecoder) indica que los siguientes parámetros se pasarán en la llamada [**ID3D11VideoDevice::D ecoderbeginframe**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decoderbeginframe) :
+El establecimiento de este GUID en el miembro **guidConfigBitstreamEncryption** de la estructura DE CONFIGURACIÓN [**D3D11 \_ VIDEO \_ DECODER \_**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_video_decoder_config) pasada a la API [**ID3D11VideoDevice::CreateVideoDecoder**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createvideodecoder) indica que se pasarán los parámetros siguientes en la llamada [**ID3D11VideoDevice::D ecoderBeginFrame:**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decoderbeginframe)
 
 
 
-|                  |                                                                                                                                                                                                                                                     |
+| Valor                 | Descripción                                                                                                                                                                                                                                                    |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *ContentKeySize* | Contiene el tamaño de la estructura de la [**\_ \_ sesión de \_ \_ \_ CIFRAdo \_ de inicio del descodificador de vídeo D3D11**](/windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_decoder_begin_frame_crypto_session) .                                                                                                  |
-| *pContentKey*    | Un puntero a un [**\_ descodificador de vídeo de D3D11 \_ \_ iniciar \_ \_ \_ sesión de cifrado de fotogramas**](/windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_decoder_begin_frame_crypto_session) que proporciona el [**ID3D11CryptoSession**](/windows/desktop/api/d3d11/nn-d3d11-id3d11cryptosession) y la información de clave necesaria para descifrar el marco. |
+| *ContentKeySize* | Contiene el tamaño de la estructura [**BEGIN \_ FRAME CRYPTO \_ \_ \_ \_ \_ SESSION del DESCODIFICADOR DE VÍDEO D3D11.**](/windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_decoder_begin_frame_crypto_session)                                                                                                  |
+| *pContentKey*    | Puntero a [**D3D11 \_ VIDEO DECODER BEGIN FRAME CRYPTO \_ \_ \_ \_ \_ SESSION**](/windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_decoder_begin_frame_crypto_session) que proporciona [**id3D11CryptoSession**](/windows/desktop/api/d3d11/nn-d3d11-id3d11cryptosession) y la información clave necesaria para descifrar el fotograma. |
 
 
 
@@ -66,15 +66,15 @@ El establecimiento de este GUID en el miembro **guidConfigBitstreamEncryption** 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>D3d11. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d11.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

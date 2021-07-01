@@ -1,6 +1,6 @@
 ---
 title: Modificadores de registro de origen del sombreador de píxeles
-description: Utilice modificadores de registro de origen para cambiar el valor leído de un registro antes de que se ejecute una instrucción.
+description: Use modificadores de registro de origen para cambiar el valor leído de un registro antes de que se ejecute una instrucción.
 ms.assetid: b45d0919-7878-4184-ad4a-5623aae9d1f1
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,50 +9,49 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 12cfee533a71408a445d97a63bbd8b76b281236b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a9dd4476dd7a1a885edb2e62a29b5127f5ff0a14
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357757"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129682"
 ---
 # <a name="pixel-shader-source-register-modifiers"></a>Modificadores de registro de origen del sombreador de píxeles
 
-Utilice modificadores de registro de origen para cambiar el valor leído de un registro antes de que se ejecute una instrucción. El contenido de un registro de origen se deja sin cambios. Los modificadores son útiles para ajustar el intervalo de datos de registro como preparación para la instrucción. Un conjunto de modificadores denominados selectores copia o replica los datos de un canal único (r, g, b, a) en los otros canales.
+Use modificadores de registro de origen para cambiar el valor leído de un registro antes de que se ejecute una instrucción. El contenido de un registro de origen se deja sin cambios. Los modificadores son útiles para ajustar el intervalo de datos de registro como preparación para la instrucción. Un conjunto de modificadores denominado selectores copia o replica los datos de un único canal (r,g,b,a) en los demás canales.
 
-## <a name="ps_1_1---ps_1_4"></a>PS \_ 1 \_ 1-PS \_ 1 \_ 4
+## <a name="ps_1_1---ps_1_4"></a>ps \_ 1 \_ 1 - ps \_ 1 \_ 4
 
-En esta tabla se identifican las versiones que admiten cada modificador:
-
-
-
-| Modificadores de registro de origen                                                                                    | Sintaxis         | Versión |      |      |      |     |     |
-|--------------------------------------------------------------------------------------------------------------|----------------|---------|------|------|------|-----|-----|
-|                                                                                                              |                | 1\_1    | 1\_2 | 1 \_ 3 | 1\_4 |     |     |
-| [parcial](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)                                           | \_desviar registro | X       | X    | X    | X    |     |     |
-| [triángulo](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)                                       | 1-registro   | X       | X    | X    | X    |     |     |
-| [negate](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)                                       | \- el    | X       | X    | X    | X    |     |     |
-| [escalar por 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)                                 | registrar \_ x2   |         |      |      | X    |     |     |
-| [escalado con signo](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)                         | registrar \_ BX2  | X       | X    | X    | X    |     |     |
-| [modificadores texld y texcrd](dx9-graphics-reference-asm-ps-registers-modifiers-ps-1-4.md)                   | Registro \_ d\*  | X       | X    | X    | X    |     |     |
-| [registro de origen permutación](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md) | registro. xyzw  | X       | X    | X    | X    |     |     |
+Esta tabla identifica las versiones que admiten cada modificador:
 
 
 
- 
+| Modificadores de registro de origen                                                                                    | Sintaxis         | Versión 1 \_ 1 | Versión 1 \_ 2     | Versión 1 \_ 3     | Versión 1 \_ 4     |
+|--------------------------------------------------------------------------------------------------------------|----------------|---------|------|------|------|
+| [predisposición](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)                                           | registro \_ de sesgo | X       | X    | X    | X    |
+| [Invertir](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)                                       | 1 : registro   | X       | X    | X    | X    |
+| [Negar](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)                                       | \- Registro    | X       | X    | X    | X    |
+| [escala en 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)                                 | register \_ x2   |         |      |      | X    |
+| [escalado firmado](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)                         | register \_ bx2  | X       | X    | X    | X    |
+| [modificadores texld y texcrd](dx9-graphics-reference-asm-ps-registers-modifiers-ps-1-4.md)                   | register \_ d\*  | X       | X    | X    | X    |
+| [swling del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md) | register.xyzw  | X       | X    | X    | X    |
 
-Los modificadores de registro de origen solo se pueden usar en Instrucciones aritméticas. No se pueden usar en instrucciones de dirección de textura. La excepción es el modificador [Scale by 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md) . En el caso de la versión 1 \_ , se puede usar la escala con signo en el argumento de origen de cualquier \* instrucción texm. En el caso de la versión 1 \_ 2 o 1 \_ 3, la escala firmada se puede utilizar en el argumento de origen de cualquier instrucción de dirección de textura.
+
+
+ 
+
+Los modificadores de registro de origen solo se pueden usar en instrucciones aritméticas. No se pueden usar en instrucciones de dirección de textura. La excepción a esto es el [modificador de escala por 2.](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md) Para la versión \_ 1 1, se puede usar la escala con firma en el argumento de origen de cualquier instrucción \* texm. Para la versión 1 \_ 2 o 1 3, la escala con firma se puede usar en el argumento de origen \_ de cualquier instrucción de dirección de textura.
 
 Algunas restricciones específicas del modificador:
 
--   Niega puede combinarse con el modificador Bias, escalado con signo o scalex2. Cuando se combina, la ejecución de la negación es la última.
+-   Negate se puede combinar con el sesgo, el escalado con firma o el modificador scalex2. Cuando se combina, negate se ejecuta en último lugar.
 -   La inversión no se puede combinar con ningún otro modificador.
--   Invert, Negate, Bias, escala firmada y scalex2 se pueden combinar con cualquiera de los selectores.
--   Los modificadores de registro de origen no se deben usar en registros constantes porque producirán resultados no definidos. En el caso de la versión \_ 4, no se permiten modificadores en constantes y se producirá un error en la validación.
+-   Invert, negate, bias, signed scaling y scalex2 se pueden combinar con cualquiera de los selectores.
+-   Los modificadores de registro de origen no deben usarse en registros constantes porque provocarán resultados no definidos. Para la versión 1 4, no se permiten modificadores en constantes \_ y se producirá un error en la validación.
 
-## <a name="ps_2_0-and-above"></a>PS \_ 2 \_ 0 y versiones posteriores
+## <a name="ps_2_0-and-above"></a>ps \_ 2 \_ 0 y superiores
 
-En el caso de la versión PS \_ 2 \_ 0 y versiones más arriba, se ha simplificado el número de modificadores.
+Para la versión ps 2 0 y versiones arriba, se ha simplificado el número \_ \_ de modificadores.
 
 ### <a name="negate"></a>Negate
 
@@ -62,23 +61,23 @@ Niega el contenido del registro de origen.
 
 | Modificador de componente | Descripción     |
 |--------------------|-----------------|
-| \- c               | Negación de origen |
+| \- R               | Negación de origen |
 
 
 
- 
+ 
 
-No se puede usar el modificador Negate en el segundo registro de código fuente de estas instrucciones: [m3x2-PS](m3x2---ps.md), [M3x3-PS](m3x3---ps.md), [M3x4-PS](m3x4---ps.md), [m4x3-PS](m4x3---ps.md)y [M4x4-PS](m4x4---ps.md).
+El modificador negate no se puede usar en el segundo registro de origen de estas instrucciones: [m3x2 - ps](m3x2---ps.md), [m3x3 - ps](m3x3---ps.md), [m3x4 - ps](m3x4---ps.md), [m4x3 - ps](m4x3---ps.md)y [m4x4 - ps](m4x4---ps.md).
 
 
 
-| Versiones del sombreador de píxeles | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|-------|------|-------|
 | \-                    | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 ### <a name="absolute-value"></a>Valor absoluto
 
@@ -86,18 +85,18 @@ Tome el valor absoluto del registro.
 
 
 
-| Versiones del sombreador de píxeles | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|-------|------|-------|
 | abs                   |      |      |       | x    | x     |
 
 
 
- 
+ 
 
-Si cualquier sombreador de la versión 3 Lee de uno o más registros Float constantes (c \# ), debe cumplirse una de las siguientes condiciones.
+Si algún sombreador de la versión 3 lee de uno o varios registros float constantes \# (c), debe cumplirse una de las siguientes condiciones.
 
--   Todos los registros de punto flotante constantes deben usar el modificador ABS.
--   Ninguno de los registros de punto flotante constantes puede usar el modificador ABS.
+-   Todos los registros de punto flotante constantes deben usar el modificador abs.
+-   Ninguno de los registros de punto flotante constantes puede usar el modificador abs.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -106,9 +105,9 @@ Si cualquier sombreador de la versión 3 Lee de uno o más registros Float const
 [Modificadores de registro del sombreador de píxeles](dx9-graphics-reference-asm-ps-registers-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

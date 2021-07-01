@@ -1,6 +1,6 @@
 ---
-title: Agregar-PS
-description: Agrega dos vectores. | Agregar-PS
+title: add - ps
+description: Agrega dos vectores. | add - ps
 ms.assetid: f7d29a66-879b-4160-82fd-0a1b2076559a
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f8c6ef7c14ac54610301f283d076751b0c4d4a5e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 54092caf19a486b68b92ef63d992f11289a51c93
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986222"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113130094"
 ---
-# <a name="add---ps"></a>Agregar-PS
+# <a name="add---ps"></a>add - ps
 
 Agrega dos vectores.
 
@@ -24,24 +24,24 @@ Agrega dos vectores.
 
 
 
-| Agregar DST, src0, SRC1 |
+| add dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
 ## <a name="remarks"></a>Observaciones
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | add                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ Agrega dos vectores.
 
  
 
-En el fragmento de código siguiente se muestran las operaciones realizadas.
+El siguiente fragmento de código muestra las operaciones realizadas.
 
 
 ```
@@ -65,7 +65,7 @@ dest.w = src0.w + src1.w;
 
 
 
-|                          |            |
+|   Requisito                       | Valor           |
 |--------------------------|------------|
 | Sistema operativo mínimo | Windows 98 |
 

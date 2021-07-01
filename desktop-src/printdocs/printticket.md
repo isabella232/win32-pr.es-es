@@ -1,21 +1,21 @@
 ---
-description: Este tema no está actualizado. Para obtener la información más reciente, consulte la especificación del esquema de impresión.
+description: Busque información sobre el elemento PrintTicket. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: fe6bd921-cbf3-4cca-afae-82d3822206ba
 title: PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3d2e225eb38584e290db55c33594be80d0d7999
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: b279ff681704a63f6547738c73fb9192d6f8a65d
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105689704"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120080"
 ---
 # <a name="printticket"></a>PrintTicket
 
-Este tema no está actualizado. Para obtener la información más reciente, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Un elemento PrintTicket es el elemento raíz del documento PrintTicket. Un elemento PrintTicket contiene toda la información de formato del trabajo necesaria para generar un trabajo.
+Un elemento PrintTicket es el elemento raíz del documento PrintTicket. Un elemento PrintTicket contiene toda la información de formato de trabajo necesaria para generar un trabajo.
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
@@ -35,7 +35,7 @@ En la tabla siguiente se enumeran los atributos XML que pueden pertenecer a este
 
  
 
-Para obtener más información, consulte la sección [atributos XML](xml-attributes.md) .
+Para más información, consulte la [sección Atributos XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -45,9 +45,9 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 
 | Category                   | Detalles                                                                                                            |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Elementos primarios<br/> | Solo raíz de documento.<br/>                                                                                     |
+| Elementos primarios<br/> | Solo raíz del documento.<br/>                                                                                     |
 | Elementos secundarios<br/>  | *Característica* (cero o más)<br/> *ParameterInit* (cero o más)<br/> *Propiedad* (cero o más)<br/> |
-| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten nodos secundarios duplicados.<br/>                  |
+| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados relacionados.<br/>                  |
 
 
 
@@ -55,11 +55,11 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 
 ## <a name="configuration-dependencies"></a>Dependencias de configuración
 
-Las dependencias de configuración solo se pueden aplicar a los elementos de un documento de PrintCapabilities.
+Las dependencias de configuración solo se aplican a los elementos de un documento PrintCapabilities.
 
 ## <a name="example"></a>Ejemplo
 
-Vea el [ejemplo de PrintTicket](printticket-example.md).
+Vea [Ejemplo de PrintTicket.](printticket-example.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

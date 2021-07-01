@@ -1,11 +1,11 @@
 ---
 title: Constantes de sombreador (HLSL)
-description: En el modelo de sombreador 4, las constantes de sombreador se almacenan en uno o varios recursos de búfer en la memoria.
+description: En El modelo de sombreador 4, las constantes del sombreador se almacenan en uno o varios recursos de búfer en memoria.
 ms.assetid: 89fe874a-8009-4901-bebe-2d9e45f894bb
 keywords:
 - cbuffer
 - tbuffer
-- búfer de constantes
+- búfer constante
 - búfer de textura
 ms.topic: article
 ms.date: 05/31/2018
@@ -14,24 +14,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a1b78da747a248bf4bb5774add1bf97f14f048c4
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f314be4b8da98ff80bd7404c270479855e13fb6e
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103800722"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129964"
 ---
 # <a name="shader-constants-hlsl"></a>Constantes de sombreador (HLSL)
 
-En el modelo de sombreador 4, las constantes de sombreador se almacenan en uno o varios recursos de búfer en la memoria. Se pueden organizar en dos tipos de búferes: búferes de constantes (cbuffers) y búferes de textura (tbuffers). Los búferes de constantes están optimizados para el uso de variables constantes, que se caracteriza por un acceso de baja latencia y una actualización más frecuente de la CPU. Por esta razón, se aplican restricciones de acceso, diseño y tamaño adicionales a estos recursos. Se tiene acceso a los búferes de texturas como las texturas y funcionan mejor para los datos indexados de forma arbitraria. Independientemente del tipo de recurso que use, no hay límite para el número de búferes de constantes o de texturas que puede crear una aplicación.
+En El modelo de sombreador 4, las constantes del sombreador se almacenan en uno o varios recursos de búfer en memoria. Se pueden organizar en dos tipos de búferes: búferes constantes (cbuffers) y búferes de textura (tbuffers). Los búferes constantes están optimizados para el uso constante-variable, que se caracteriza por el acceso de menor latencia y una actualización más frecuente desde la CPU. Por este motivo, se aplican restricciones de tamaño, diseño y acceso adicionales a estos recursos. Se accede a los búferes de textura como texturas y se realiza mejor para los datos indexados arbitrariamente. Independientemente del tipo de recurso que use, no hay ningún límite en el número de búferes constantes o búferes de textura que una aplicación puede crear.
 
-Declarar un búfer de constantes o un búfer de textura es muy similar a una declaración de estructura en C, con la adición de las palabras clave **Register** y **packoffset** para asignar manualmente los registros o empaquetar los datos.
+Declarar un búfer constante o un búfer de textura se parece mucho a una declaración de estructura en C, con la adición de las palabras clave **register** y **packoffset** para asignar manualmente registros o empaquetar datos.
 
 
 
 |                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------------|
-| *BufferType* \[ *Nombre* \] de \[: **Register**(b \# ) \] { *VariableDeclaration* \[ : **packoffset**(c \# . xyzw) \] ;      ... }; |
+| *BufferType* \[ *Nombre* \] \[: **register**(b \# ) { \] *VariableDeclaration* \[ : **packoffset**(c \# .xyzw) \] ;      ... }; |
 
 
 
@@ -44,13 +44,13 @@ Declarar un búfer de constantes o un búfer de textura es muy similar a una dec
 <span id="BufferType"></span><span id="buffertype"></span><span id="BUFFERTYPE"></span>*BufferType*
 </dt> <dd>
 
-\[en \] el tipo de búfer.
+\[en \] El tipo de búfer.
 
 
 
 | BufferType | Descripción     |
 |------------|-----------------|
-| cbuffer    | búfer de constantes |
+| cbuffer    | búfer constante |
 | tbuffer    | búfer de textura  |
 
 
@@ -59,67 +59,65 @@ Declarar un búfer de constantes o un búfer de textura es muy similar a una dec
 
 </dd> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Name*
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nombre*
 </dt> <dd>
 
-\[en \] una cadena ASCII opcional que contiene un nombre de búfer único.
+\[en \] Cadena ASCII opcional que contiene un nombre de búfer único.
 
 </dd> <dt>
 
-<span id="register_b__"></span><span id="REGISTER_B__"></span>**registro**(b \# )
+<span id="register_b__"></span><span id="REGISTER_B__"></span>**register**(b \# )
 </dt> <dd>
 
-\[en la \] palabra clave opcional, se usa para empaquetar manualmente los datos constantes. Las constantes se pueden empaquetar en un registro solo en un búfer de constantes, donde el registro de inicio se proporciona mediante el número de registro ( *\#* ).
+\[en \] la palabra clave Optional, se usa para empaquetar manualmente los datos constantes. Las constantes se pueden empaquetar en un registro solo en un búfer constante, donde el registro inicial lo da el número de registro ( *\#* ).
 
 </dd> <dt>
 
 <span id="VariableDeclaration"></span><span id="variabledeclaration"></span><span id="VARIABLEDECLARATION"></span>*VariableDeclaration*
 </dt> <dd>
 
-\[en \] la declaración de variable, similar a una declaración de miembro de estructura. Puede ser cualquier objeto de tipo HLSL o de efecto (excepto una textura o un objeto de muestra).
+\[en \] Declaración de variable, similar a una declaración de miembro de estructura. Puede ser cualquier tipo HLSL o objeto de efecto (excepto una textura o un objeto sampler).
 
 </dd> <dt>
 
-<span id="packoffset_c_.xyzw_"></span><span id="PACKOFFSET_C_.XYZW_"></span>**packoffset**(c \# . xyzw)
+<span id="packoffset_c_.xyzw_"></span><span id="PACKOFFSET_C_.XYZW_"></span>**packoffset**(c \# .xyzw)
 </dt> <dd>
 
-\[en la \] palabra clave opcional, se usa para empaquetar manualmente los datos constantes. Las constantes se pueden empaquetar en cualquier búfer de constantes, donde () proporciona el número de registro *\#* . El empaquetado de subcomponentes (con xyzw permutación) está disponible para las constantes cuyo tamaño cabe en un solo registro (no cruce un límite de registro). Por ejemplo, una FLOAT4 no se pudo empaquetar en un solo registro a partir del componente y porque no cabe en un registro de cuatro componentes.
+\[en \] la palabra clave Optional, se usa para empaquetar manualmente los datos constantes. Las constantes se pueden empaquetar en cualquier búfer constante, donde el número de registro lo da ( *\#* ). El empaquetado de sub component (con xyzw swling) está disponible para las constantes cuyo tamaño cabe dentro de un único registro (no cruza un límite de registro). Por ejemplo, no se pudo empaquetar float4 en un único registro a partir del componente y porque no cabría en un registro de cuatro componentes.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Los búferes de constantes reducen el ancho de banda necesario para actualizar las constantes de sombreador al permitir que las constantes de sombreador se agrupen y se confirmen al mismo tiempo, en lugar de realizar llamadas individuales para confirmar cada constante por separado.
+Los búferes constantes reducen el ancho de banda necesario para actualizar las constantes del sombreador, ya que permiten agrupar y confirmar constantes de sombreador al mismo tiempo en lugar de realizar llamadas individuales para confirmar cada constante por separado.
 
-Un búfer de constantes es un recurso de búfer especializado al que se tiene acceso como un búfer. Cada búfer de constantes puede contener hasta 4096 [vectores](dx-graphics-hlsl-vector.md); cada vector contiene valores de hasta 4 32 bits. Puede enlazar hasta 14 búferes de constantes por fase de canalización (2 ranuras adicionales se reservan para uso interno).
+Un búfer constante es un recurso de búfer especializado al que se accede como un búfer. Cada búfer constante puede contener hasta 4096 [vectores](dx-graphics-hlsl-vector.md); cada vector contiene hasta cuatro valores de 32 bits. Puede enlazar hasta 14 búferes constantes por fase de canalización (2 ranuras adicionales están reservadas para uso interno).
 
-Un búfer de textura es un recurso de búfer especializado al que se tiene acceso como una textura. El acceso de textura (en comparación con el acceso al búfer) puede mejorar el rendimiento de los datos indexados de forma arbitraria. Puede enlazar hasta 128 búferes de textura por fase de canalización.
+Un búfer de textura es un recurso de búfer especializado al que se accede como una textura. El acceso de textura (en comparación con el acceso al búfer) puede tener un mejor rendimiento para los datos indexados arbitrariamente. Puede enlazar hasta 128 búferes de textura por fase de canalización.
 
-Un recurso de búfer está diseñado para minimizar la sobrecarga que supone establecer constantes de sombreador. El marco de efecto (consulte la [**interfaz ID3D10Effect**](/windows/desktop/api/d3d10effect/nn-d3d10effect-id3d10effect)) administrará los búferes de constante y de textura, o puede usar la API de Direct3D para actualizar los búferes (consulte [copia y acceso a los datos de recursos (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-mapping) para obtener información). Una aplicación también puede copiar datos de otro búfer (como un destino de representación o un destino de flujo de salida) en un búfer de constantes.
+Un recurso de búfer está diseñado para minimizar la sobrecarga de establecer constantes de sombreador. El marco de trabajo de efectos (vea [**Id3D10Effect Interface)**](/windows/desktop/api/d3d10effect/nn-d3d10effect-id3d10effect)administrará la actualización de búferes de constantes y texturas, o puede usar la API de Direct3D para actualizar los búferes (consulte Copiar y acceder a los datos de recursos [(Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-mapping) para obtener información). Una aplicación también puede copiar datos de otro búfer (como un destino de representación o un destino de salida de flujo) en un búfer constante.
 
-Para obtener más información sobre el uso de búferes de constantes en una aplicación D3D10, consulte [tipos de recursos (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types) y [creación de recursos de búfer (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-creating).
+Para obtener más información sobre el uso de búferes constantes en una aplicación D3D10, vea Tipos de [recursos (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types) y Creación de recursos de [búfer (Direct3D 10).](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-creating)
 
-Para obtener información sobre Morel sobre el uso de búferes de constantes en una aplicación de D3D11, vea [Introducción a los búferes en Direct3D 11](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-intro) y [Cómo: crear un búfer de constantes](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to).
+Para obtener más información sobre el uso de búferes constantes en una aplicación D3D11, vea Introducción a los búferes en [Direct3D 11](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-intro) y [Cómo:](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to)Crear un búfer constante .
 
-Un búfer de constantes no requiere que una [vista](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-access-views) esté enlazada a la canalización. Sin embargo, un búfer de textura requiere una vista y debe estar enlazada a una ranura de textura (o debe estar enlazada con [**SetTextureBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-settexturebuffer) cuando se usa un efecto).
+Un búfer constante no requiere que [una vista](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-access-views) esté enlazada a la canalización. Sin embargo, un búfer de textura requiere una vista y debe enlazarse a una ranura de textura (o debe enlazarse con [**SetTextureBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-settexturebuffer) cuando se usa un efecto).
 
-Hay dos maneras de empaquetar datos de constantes: mediante las palabras clave [Register (DirectX HLSL)](dx-graphics-hlsl-variable-register.md) y [PACKOFFSET (DirectX HLSL)](dx-graphics-hlsl-variable-packoffset.md) .
+Hay dos maneras de empaquetar datos de constantes: mediante las palabras clave [register (DirectX HLSL)](dx-graphics-hlsl-variable-register.md) y [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
 
+Diferencias entre Direct3D 9 y Direct3D 10 y 11:
 
-
-|                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferencias entre Direct3D 9 y Direct3D 10 y 11:<br/> A diferencia de la asignación automática de constantes en Direct3D 9, que no realizaban el empaquetado y, en su lugar, asignaba cada variable a un conjunto de registros de FLOAT4, las variables de constantes de HLSL siguen las reglas de empaquetado en Direct3D 10 y 11.<br/> |
+- A diferencia de la asignación automática de constantes en Direct3D 9, que no realizaba el empaquetado y, en su lugar, asignaba cada variable a un conjunto de registros float4, las variables constantes HLSL siguen las reglas de empaquetado en Direct3D 10 y 11.
 
 
 
  
 
-### <a name="organizing-constant-buffers"></a>Organizar búferes de constantes
+### <a name="organizing-constant-buffers"></a>Organización de búferes constantes
 
-Los búferes de constantes reducen el ancho de banda necesario para actualizar las constantes de sombreador al permitir que las constantes de sombreador se agrupen y se confirmen al mismo tiempo, en lugar de realizar llamadas individuales para confirmar cada constante por separado.
+Los búferes constantes reducen el ancho de banda necesario para actualizar las constantes del sombreador, ya que permiten agrupar y confirmar constantes de sombreador al mismo tiempo en lugar de realizar llamadas individuales para confirmar cada constante por separado.
 
-La mejor forma de usar búferes de constantes con eficiencia es organizar las variables de sombreador en búferes de constantes según su frecuencia de actualización. Esto permite a una aplicación minimizar el ancho de banda necesario para actualizar las constantes de sombreador. Por ejemplo, un sombreador podría declarar dos búferes de constantes y organizar los datos en cada uno de ellos según su frecuencia de actualización: los datos que deben actualizarse por objeto (como una matriz universal) se agrupan en un búfer de constantes que se puede actualizar para cada objeto. Esto es independiente de los datos que caracterizan una escena y, por tanto, es probable que se actualice con mucha menos frecuencia (cuando cambie la escena).
+La mejor forma de usar búferes de constantes con eficiencia es organizar las variables de sombreador en búferes de constantes según su frecuencia de actualización. Esto permite que una aplicación minimice el ancho de banda necesario para actualizar las constantes del sombreador. Por ejemplo, un sombreador podría declarar dos búferes constantes y organizar los datos en cada uno en función de su frecuencia de actualización: los datos que deben actualizarse por objeto (como una matriz mundial) se agrupan en un búfer constante que se puede actualizar para cada objeto. Esto es independiente de los datos que caracteriza una escena y, por tanto, es probable que se actualice con mucha menos frecuencia (cuando cambia la escena).
 
 
 ```
@@ -140,13 +138,13 @@ cbuffer myScene
 
 
 
-### <a name="default-constant-buffers"></a>Búferes de constantes predeterminados
+### <a name="default-constant-buffers"></a>Búferes constantes predeterminados
 
-Hay dos búferes de constantes predeterminados disponibles, $Global y $Param. Las variables que se colocan en el ámbito global se agregan implícitamente al $Global CBuffer, mediante el mismo método de empaquetado que se usa para cbuffers. Los parámetros uniformes en la lista de parámetros de una función aparecen en el búfer de constantes de $Param cuando un sombreador se compila fuera del marco de trabajo de efectos. Cuando se compilan dentro del marco de trabajo de Effects, todos los uniformes deben resolverse en las variables definidas en el ámbito global.
+Hay dos búferes de constantes predeterminados disponibles, $Global y $Param. Las variables que se colocan en el ámbito global se agregan implícitamente al $Global, con el mismo método de empaquetado que se usa para los búferes de carga. Los parámetros uniformes de la lista de parámetros de una función aparecen en $Param búfer constante cuando se compila un sombreador fuera del marco de efectos. Cuando se compilan dentro del marco de efectos, todos los uniformes deben resolverse en variables definidas en el ámbito global.
 
 ## <a name="examples"></a>Ejemplos
 
-Este es un ejemplo de ejemplo de [Skinning10](https://msdn.microsoft.com/library/Ee416429(v=VS.85).aspx) que es un búfer de textura que se compone de una matriz de matrices.
+Este es un ejemplo de [Skinning10 Sample](https://msdn.microsoft.com/library/Ee416429(v=VS.85).aspx) que es un búfer de textura que se forma con una matriz de matrices.
 
 
 ```
@@ -159,7 +157,7 @@ tbuffer tbAnimMatrices
 
 
 
-Esta declaración de ejemplo asigna manualmente un búfer de constantes para que se inicie en un registro determinado y también empaqueta elementos determinados por subcomponentes.
+Esta declaración de ejemplo asigna manualmente un búfer constante para iniciarse en un registro determinado y también empaqueta elementos determinados por subcomponentes.
 
 
 ```
@@ -178,7 +176,7 @@ cbuffer MyBuffer : register(b3)
 
 <dl> <dt>
 
-[Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)
+[Shader Model 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
  
