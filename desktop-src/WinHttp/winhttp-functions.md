@@ -4,12 +4,12 @@ ms.assetid: dcb56d5d-ed0d-49bb-95bf-940a49c033f1
 title: Funciones WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf5f9db8fcde5589a86556111bec6df3b2b18c76
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 41e45289230c1cc22a7f8799dfbbe1dafddccf38
+ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587747"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113174975"
 ---
 # <a name="winhttp-functions"></a>Funciones WinHTTP
 
@@ -21,6 +21,13 @@ WinHTTP proporciona las siguientes funciones:
 </dt> <dd>
 
 Agrega uno o varios encabezados de solicitud HTTP al identificador de solicitud HTTP.
+
+</dd> <dt>
+
+[**WinHttpAddRequestHeadersEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheadersex)
+</dt> <dd>
+
+Agrega uno o varios encabezados de solicitud HTTP a un identificador de solicitud HTTP, lo que le permite usar cadenas de nombre y valor independientes.
 
 </dd> <dt>
 
@@ -62,7 +69,7 @@ Crea un identificador para que [**lo use WinHttpGetProxyForUrlEx.**](/windows/de
 [**WinHttpCreateUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl)
 </dt> <dd>
 
-Crea una dirección URL a partir de elementos de componente, por ejemplo, el nombre de host y la ruta de acceso.
+Crea una dirección URL a partir de elementos componentes, por ejemplo, el nombre de host y la ruta de acceso.
 
 </dd> <dt>
 
@@ -76,7 +83,7 @@ Busca la dirección URL del archivo de configuración automática (PAC) del prox
 [**WinHttpFreeProxyResult**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpfreeproxyresult)
 </dt> <dd>
 
-Libera los datos recuperados de una llamada anterior a [**WinHttpGetProxyResult.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult)
+Libera los datos recuperados de una llamada anterior a [**WinHttpGetProxyResult**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult).
 
 </dd> <dt>
 
@@ -97,21 +104,21 @@ Recupera la configuración predeterminada del proxy WinHTTP del Registro.
 [**WinHTTPGetIEProxyConfigForCurrentUser**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser)
 </dt> <dd>
 
-Obtiene la configuración Internet Explorer proxy (IE) del usuario actual.
+Obtiene la configuración Internet Explorer (IE) del usuario actual.
 
 </dd> <dt>
 
 [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl)
 </dt> <dd>
 
-Recupera la información de proxy de la dirección URL especificada.
+Recupera la información del proxy para la dirección URL especificada.
 
 </dd> <dt>
 
 [**WinHttpGetProxyForUrlEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurlex)
 </dt> <dd>
 
-Recupera la información de proxy de la dirección URL especificada.
+Recupera la información del proxy para la dirección URL especificada.
 
 </dd> <dt>
 
@@ -164,6 +171,13 @@ Recupera la información de encabezado asociada a una solicitud HTTP.
 
 </dd> <dt>
 
+[**WinHttpQueryHeadersEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheadersex)
+</dt> <dd>
+
+Recupera información de encabezado asociada a una solicitud HTTP; ofrece una manera de recuperar cadenas de nombre de encabezado y valor analizadas.
+
+</dd> <dt>
+
 [**WinHttpQueryOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryoption)
 </dt> <dd>
 
@@ -178,10 +192,17 @@ Lee datos de un identificador abierto por la [**función WinHttpOpenRequest.**](
 
 </dd> <dt>
 
+[**WinHttpReadDataEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddataex)
+</dt> <dd>
+
+Lee datos de un identificador abierto por la [**función WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)
+
+</dd> <dt>
+
 [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse)
 </dt> <dd>
 
-Finaliza una solicitud HTTP iniciada por [**WinHttpSendRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest)
+Finaliza una solicitud HTTP iniciada por [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest).
 
 </dd> <dt>
 
@@ -230,7 +251,7 @@ Configura una función de devolución de llamada a la que WinHTTP puede llamar a
 [**WinHttpSetTimeouts**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsettimeouts)
 </dt> <dd>
 
-Establece los distintos tiempos de espera que implican las transacciones HTTP.
+Establece los distintos tiempos de espera que intervienen en las transacciones HTTP.
 
 </dd> <dt>
 
@@ -286,7 +307,7 @@ Recibe datos de una conexión webSocket.
 [**WinHttpWebSocketSend**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketsend)
 </dt> <dd>
 
-Envía datos a través de una conexión webSocket.
+Envía datos a través de una conexión de WebSocket.
 
 </dd> <dt>
 
@@ -297,6 +318,4 @@ Envía un fotograma cercano a una conexión de WebSocket.
 
 </dd> </dl>
 
- 
 
- 

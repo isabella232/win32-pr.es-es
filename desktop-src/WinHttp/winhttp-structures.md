@@ -4,12 +4,12 @@ ms.assetid: e1567393-162e-48d4-8e6b-7620e351136c
 title: Estructuras WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9d6f0cdbb467e916b1a6ac54b90491cbee9efdb
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: f7ecf91702a2f49e2c0a754fcc69d9d34febf229
+ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587978"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113174982"
 ---
 # <a name="winhttp-structures"></a>Estructuras WinHTTP
 
@@ -72,7 +72,7 @@ Contiene la dirección IP de origen y destino de la solicitud que generó la res
 Contiene información de credenciales de usuario utilizada para la autenticación de servidor y proxy.
 
 > [!Note]
-> Esta estructura ha quedado en desuso. En su lugar, se recomienda [**el uso de WINHTTP_CREDS_EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex) estructura.
+> Esta estructura está en desuso. En su lugar, se recomienda [**el uso de la WINHTTP_CREDS_EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex) estructura.
 
 </dd> <dt>
 
@@ -86,7 +86,21 @@ Contiene información de credenciales de usuario utilizada para la autenticació
 [**WINHTTP_CURRENT_USER_IE_PROXY_CONFIG**](/windows/win32/api/winhttp/ns-winhttp-winhttp_current_user_ie_proxy_config)
 </dt> <dd>
 
-Contiene la información Internet Explorer de configuración del proxy.
+Contiene la información Internet Explorer configuración del proxy.
+
+</dd> <dt>
+
+[**WINHTTP_EXTENDED_HEADER**](/windows/win32/api/winhttp/ns-winhttp-winhttp_extended_header)
+</dt> <dd>
+
+Representa un encabezado de solicitud HTTP como un par de cadenas nombre-valor.
+
+</dd> <dt>
+
+[**WINHTTP_HEADER_NAME**](/windows/win32/api/winhttp/ns-winhttp-winhttp_header_name)
+</dt> <dd>
+
+Representa un nombre de encabezado de solicitud HTTP.
 
 </dd> <dt>
 
@@ -100,7 +114,7 @@ Representa una colección de grupos de conexiones.
 [**WINHTTP_MATCH_CONNECTION_GUID**](/windows/win32/api/Winhttp/ns-winhttp-winhttp_match_connection_group)
 </dt> <dd>
 
-Representa el GUID de una conexión, para fines de coincidencia de conexión.
+Representa el GUID de una conexión, con fines de coincidencia de conexiones.
 
 </dd> <dt>
 
@@ -114,14 +128,14 @@ Contiene la configuración de proxy predeterminada o de sesión.
 [**WINHTTP_PROXY_RESULT**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_proxy_result)
 </dt> <dd>
 
-Colección de entradas de resultado de proxy proporcionadas [**por WinHttpGetProxyResult.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult)
+Colección de entradas de resultado de proxy proporcionadas [**por WinHttpGetProxyResult**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult).
 
 </dd> <dt>
 
 [**WINHTTP_PROXY_RESULT_ENTRY**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_proxy_result_entry)
 </dt> <dd>
 
-Entrada de resultado de una llamada a [**WinHttpGetProxyResult**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult).
+Entrada de resultado de una llamada a [**WinHttpGetProxyResult.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult)
 
 </dd> <dt>
 
