@@ -4,22 +4,52 @@ description: TBD
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 1e5d9f8b0532b809bab617655694af68ba530430
-ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
+ms.openlocfilehash: 3ddb2eec80448b8119bf2d990afbb998f212db26
+ms.sourcegitcommit: 0b93de98c4afc79a6801a113bc91adbc89e835b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111521221"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113282554"
 ---
 # <a name="directml-feature-level-history"></a>Historial de nivel de característica de DirectML
 
 Para obtener información general sobre el historial de versiones de DirectML, [consulte Historial de versiones de DirectML.](./dml-version-history.md)
 
+## <a name="dml_feature_level_4_0"></a>DML_FEATURE_LEVEL_4_0
+
+Se introdujo en la versión 1.6.0 de DirectML.
+
+Se ha agregado compatibilidad con los siguientes tipos de operador, documentados [**en DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Para cada constante de tipo de operador, ese tema proporciona un vínculo a la estructura correspondiente.
+
+* **DML_OPERATOR_ELEMENT_WISE_QUANTIZED_LINEAR_ADD**
+* **DML_OPERATOR_DYNAMIC_QUANTIZE_LINEAR**
+* **DML_OPERATOR_ROI_ALIGN1**
+
+Compatibilidad con el tipo de datos extendido y el recuento de dimensiones para los operadores siguientes, [**documentados DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Para obtener más información sobre la compatibilidad específica agregada [**en DML_FEATURE_LEVEL_4_0**](/windows/win32/api/directml/ne-directml-dml_feature_level), vea el tema sobre la estructura de cada operador.
+
+* **DML_OPERATOR_ACTIVATION_RELU_GRAD**
+* **DML_OPERATOR_ADAM_OPTIMIZER**
+* **DML_OPERATOR_CONVOLUTION**
+* **DML_OPERATOR_CONVOLUTION_INTEGER**
+* **DML_OPERATOR_CUMULATIVE_PRODUCT**
+* **DML_OPERATOR_CUMULATIVE_SUMMATION**
+* **DML_OPERATOR_DIAGONAL_MATRIX**
+* **DML_OPERATOR_FILL_VALUE_CONSTANT**
+* **DML_OPERATOR_FILL_VALUE_SEQUENCE**
+* **DML_OPERATOR_GEMM**
+* **DML_OPERATOR_MATRIX_MULTIPLY_INTEGER**
+* **DML_OPERATOR_MAX_POOLING_GRAD**
+* **DML_OPERATOR_NONZERO_COORDINATES**
+* **DML_OPERATOR_QUANTIZED_LINEAR_CONVOLUTION**
+* **DML_OPERATOR_QUANTIZED_LINEAR_MATRIX_MULTIPLY**
+* **DML_OPERATOR_RANDOM_GENERATOR**
+* **DML_OPERATOR_REVERSE_SUBSEQUENCES**
+
 ## <a name="dml_feature_level_3_1"></a>DML_FEATURE_LEVEL_3_1
 
 Se introdujo en la versión 1.5.0 de DirectML.
 
-Se ha agregado compatibilidad con los operadores [siguientes.](/windows/win32/api/directml/ne-directml-dml_operator_type)
+Se ha agregado compatibilidad con los siguientes tipos de operador, documentados [**en DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Para cada constante de tipo de operador, ese tema proporciona un vínculo a la estructura correspondiente.
 
 * **DML_OPERATOR_ELEMENT_WISE_ATAN_YX**
 * **DML_OPERATOR_ELEMENT_WISE_CLIP_GRAD**
@@ -46,7 +76,7 @@ El número máximo de dimensiones admitidas para los operadores siguientes ha au
 
 Se introdujo en la versión 1.4.0 de DirectML.
 
-Se ha agregado compatibilidad con los operadores [siguientes.](/windows/win32/api/directml/ne-directml-dml_operator_type)
+Se ha agregado compatibilidad con los siguientes tipos de operador, documentados [**en DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Para cada constante de tipo de operador, ese tema proporciona un vínculo a la estructura correspondiente.
 
 * **DML_OPERATOR_ELEMENT_WISE_BIT_AND**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_OR**
@@ -93,9 +123,9 @@ Se introdujo en la versión 1.2.0 de DirectML.
 Se han agregado las siguientes API.
 
 * [Interfaz IDMLDevice1](/windows/win32/api/directml/nn-directml-idmldevice1)
-* Compatibilidad con gráficos de operadores [(vea IDMLDevice1::CompileGraph)](/windows/win32/api/directml/nf-directml-idmldevice1-compilegraph)
+* Compatibilidad con gráficos de operadores [(consulte IDMLDevice1::CompileGraph)](/windows/win32/api/directml/nf-directml-idmldevice1-compilegraph)
 
-Se ha agregado compatibilidad con los operadores siguientes.
+Se ha agregado compatibilidad con los siguientes tipos de operador, documentados [**en DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Para cada constante de tipo de operador, ese tema proporciona un vínculo a la estructura correspondiente.
 
 * **DML_OPERATOR_ELEMENT_WISE_BIT_SHIFT_LEFT**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_SHIFT_RIGHT**
@@ -170,7 +200,7 @@ Se han agregado las siguientes API.
 * [DML_FEATURE_LEVEL enumeración](/windows/win32/api/directml/ne-directml-dml_feature_level)
 * Consultas de nivel de característica (consulte [DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels))
 
-Se ha agregado compatibilidad con los operadores siguientes.
+Se ha agregado compatibilidad con los siguientes tipos de operadores, documentados [**en DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Para cada constante de tipo de operador, ese tema proporciona un vínculo a la estructura correspondiente.
 
 * **DML_OPERATOR_ELEMENT_WISE_SIGN**
 * **DML_OPERATOR_ELEMENT_WISE_IS_NAN**

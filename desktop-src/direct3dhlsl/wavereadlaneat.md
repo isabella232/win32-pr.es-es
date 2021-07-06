@@ -1,9 +1,9 @@
 ---
-title: WaveReadLaneAt función)
-description: Devuelve el valor de la expresión para el índice de la calle especificado dentro de la onda especificada.
+title: Función WaveReadLaneAt
+description: Devuelve el valor de la expresión para el índice de la cadena especificado dentro de la onda especificada.
 ms.assetid: CA9467D9-8885-4A5D-87F3-5BA40AE78993
 keywords:
-- WaveReadLaneAt de función HLSL
+- Función HLSL de WaveReadLaneAt
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e40940f2df6685a3096da6886ad3bcb6d9ca99af
-ms.sourcegitcommit: 4423a9d48f1c90d2ec2eca68e9cae30df1787f25
+ms.openlocfilehash: 573730053a93a110381637ef8e62dc08a4aa1535
+ms.sourcegitcommit: 1897c2a39b4ac4ca4b1e4aec394cef2ce2619c03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "104420500"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113316487"
 ---
-# <a name="wavereadlaneat-function"></a>WaveReadLaneAt función)
+# <a name="wavereadlaneat-function"></a>Función WaveReadLaneAt
 
-Devuelve el valor de la expresión para el índice de la calle especificado dentro de la onda especificada.
+Devuelve el valor de la expresión para el índice de la cadena especificado dentro de la onda especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <type> WaveReadLaneAt(
-   <type> expr,
-   uint laneIndex
+   <type> expr,
+   uint laneIndex
 );
 ```
 
@@ -47,7 +47,7 @@ La expresión que se va a evaluar.
 *laneIndex* 
 </dt> <dd>
 
-Índice de la calle para la que se devolverá el resultado de *expr* .
+Índice del lane para el que se devolverá el resultado *expr.*
 
 </dd> </dl>
 
@@ -55,36 +55,13 @@ La expresión que se va a evaluar.
 
 El valor resultante es el resultado de *expr*. Será uniforme si *laneIndex* es uniforme.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función es realmente una difusión del valor de laneIndex'th Lane.
+Esta función es efectivamente una difusión del valor en *el laneIndex*'th lane.
 
-Esta función se admite desde el modelo de sombreador 6,0, en los siguientes tipos de sombreadores:
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador.
 
+## <a name="see-also"></a>Consulte también
 
-
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
-|--------|------|--------|----------|-------|---------|
-|        |      |        |          | x     | x       |
-
-
-
- 
-
-## <a name="see-also"></a>Vea también
-
-<dl> <dt>
-
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
-</dt> <dt>
-
-[Modelo de sombreador 6](shader-model-6-0.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
+* [Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+* [Modelo de sombreador 6](shader-model-6-0.md)
