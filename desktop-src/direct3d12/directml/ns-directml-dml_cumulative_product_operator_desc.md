@@ -44,21 +44,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
-ms.openlocfilehash: 68b001467496ab9affc559e76ecac5461902399c
-ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
+ms.openlocfilehash: cb4006a20dd25751c027ba97e63dcfc60c25faf6
+ms.sourcegitcommit: 0b93de98c4afc79a6801a113bc91adbc89e835b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111521210"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113282564"
 ---
-# <a name="dml_cumulative_product_operator_desc-directmlh"></a><span data-ttu-id="d3061-103">DML_CUMULATIVE_PRODUCT_OPERATOR_DESC (directml.h)</span><span class="sxs-lookup"><span data-stu-id="d3061-103">DML_CUMULATIVE_PRODUCT_OPERATOR_DESC (directml.h)</span></span>
+# <a name="dml_cumulative_product_operator_desc-directmlh"></a><span data-ttu-id="cd187-103">DML_CUMULATIVE_PRODUCT_OPERATOR_DESC (directml.h)</span><span class="sxs-lookup"><span data-stu-id="cd187-103">DML_CUMULATIVE_PRODUCT_OPERATOR_DESC (directml.h)</span></span>
 
-<span data-ttu-id="d3061-104">Multiplica los elementos de un tensor a lo largo de un eje y escribe el recuento en ejecución del producto en el tensor de salida.</span><span class="sxs-lookup"><span data-stu-id="d3061-104">Multiplies the elements of a tensor along an axis, writing the running tally of the product into the output tensor.</span></span>
+<span data-ttu-id="cd187-104">Multiplica los elementos de un tensor a lo largo de un eje y escribe el recuento en ejecución del producto en el tensor de salida.</span><span class="sxs-lookup"><span data-stu-id="cd187-104">Multiplies the elements of a tensor along an axis, writing the running tally of the product into the output tensor.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="d3061-105">Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.5 y posteriores).</span><span class="sxs-lookup"><span data-stu-id="d3061-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.5 and later.</span></span> <span data-ttu-id="d3061-106">Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)</span><span class="sxs-lookup"><span data-stu-id="d3061-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
+> <span data-ttu-id="cd187-105">Esta API está disponible como parte del paquete redistribuible independiente de DirectML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versión 1.5 y posteriores).</span><span class="sxs-lookup"><span data-stu-id="cd187-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.5 and later.</span></span> <span data-ttu-id="cd187-106">Consulte también Historial [de versiones de DirectML.](../dml-version-history.md)</span><span class="sxs-lookup"><span data-stu-id="cd187-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d3061-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="d3061-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cd187-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="cd187-107">Syntax</span></span>
 ```cpp
 struct DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
 {
@@ -70,43 +70,43 @@ struct DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="d3061-108">Miembros</span><span class="sxs-lookup"><span data-stu-id="d3061-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="cd187-108">Miembros</span><span class="sxs-lookup"><span data-stu-id="cd187-108">Members</span></span>
 
 `InputTensor`
 
-<span data-ttu-id="d3061-109">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="d3061-109">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
+<span data-ttu-id="cd187-109">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="cd187-109">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
 
-<span data-ttu-id="d3061-110">Tensor que contiene los datos de entrada.</span><span class="sxs-lookup"><span data-stu-id="d3061-110">A tensor containing the input data.</span></span> <span data-ttu-id="d3061-111">Suele ser el mismo tensor que se proporcionó que *inputTensor* para [**DML_BATCH_NORMALIZATION_OPERATOR_DESC**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) en el paso hacia delante.</span><span class="sxs-lookup"><span data-stu-id="d3061-111">This is typically the same tensor that was provided as the *InputTensor* to [**DML_BATCH_NORMALIZATION_OPERATOR_DESC**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) in the forward pass.</span></span>
+<span data-ttu-id="cd187-110">Tensor que contiene los datos de entrada.</span><span class="sxs-lookup"><span data-stu-id="cd187-110">A tensor containing the input data.</span></span> <span data-ttu-id="cd187-111">Suele ser el mismo tensor que se proporcionó que *inputTensor* para [**DML_BATCH_NORMALIZATION_OPERATOR_DESC**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) en el paso hacia delante.</span><span class="sxs-lookup"><span data-stu-id="cd187-111">This is typically the same tensor that was provided as the *InputTensor* to [**DML_BATCH_NORMALIZATION_OPERATOR_DESC**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) in the forward pass.</span></span>
 
-<span data-ttu-id="d3061-112">Tensor de entrada que contiene los elementos que se deben multiplicar.</span><span class="sxs-lookup"><span data-stu-id="d3061-112">The input tensor containing elements to be multiplied.</span></span>
+<span data-ttu-id="cd187-112">Tensor de entrada que contiene los elementos que se deben multiplicar.</span><span class="sxs-lookup"><span data-stu-id="cd187-112">The input tensor containing elements to be multiplied.</span></span>
 
 `OutputTensor`
 
-<span data-ttu-id="d3061-113">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="d3061-113">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
+<span data-ttu-id="cd187-113">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="cd187-113">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
 
-<span data-ttu-id="d3061-114">Tensor de salida en el que se escriben los productos acumulativos resultantes.</span><span class="sxs-lookup"><span data-stu-id="d3061-114">The output tensor to write the resulting cumulative products to.</span></span> <span data-ttu-id="d3061-115">Este tensor debe tener los mismos tamaños y tipo de datos *que InputTensor.*</span><span class="sxs-lookup"><span data-stu-id="d3061-115">This tensor must have the same sizes and data type as *InputTensor*.</span></span>
+<span data-ttu-id="cd187-114">Tensor de salida en el que se escriben los productos acumulativos resultantes.</span><span class="sxs-lookup"><span data-stu-id="cd187-114">The output tensor to write the resulting cumulative products to.</span></span> <span data-ttu-id="cd187-115">Este tensor debe tener los mismos tamaños y tipo de datos *que InputTensor.*</span><span class="sxs-lookup"><span data-stu-id="cd187-115">This tensor must have the same sizes and data type as *InputTensor*.</span></span>
 
 `Axis`
 
-<span data-ttu-id="d3061-116">Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)</span><span class="sxs-lookup"><span data-stu-id="d3061-116">Type: [**UINT**](/windows/desktop/winprog/windows-data-types)</span></span>
+<span data-ttu-id="cd187-116">Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)</span><span class="sxs-lookup"><span data-stu-id="cd187-116">Type: [**UINT**](/windows/desktop/winprog/windows-data-types)</span></span>
 
-<span data-ttu-id="d3061-117">Índice de la dimensión por la que se multiplican los elementos.</span><span class="sxs-lookup"><span data-stu-id="d3061-117">The index of the dimension to multiply elements over.</span></span> <span data-ttu-id="d3061-118">Este valor debe ser menor que *DimensionCount* de *InputTensor.*</span><span class="sxs-lookup"><span data-stu-id="d3061-118">This value must be less than the *DimensionCount* of the *InputTensor*.</span></span>
+<span data-ttu-id="cd187-117">Índice de la dimensión por la que se multiplican los elementos.</span><span class="sxs-lookup"><span data-stu-id="cd187-117">The index of the dimension to multiply elements over.</span></span> <span data-ttu-id="cd187-118">Este valor debe ser menor que *DimensionCount* de *InputTensor.*</span><span class="sxs-lookup"><span data-stu-id="cd187-118">This value must be less than the *DimensionCount* of the *InputTensor*.</span></span>
 
 `AxisDirection`
 
-<span data-ttu-id="d3061-119">Tipo: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**</span><span class="sxs-lookup"><span data-stu-id="d3061-119">Type: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**</span></span>
+<span data-ttu-id="cd187-119">Tipo: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**</span><span class="sxs-lookup"><span data-stu-id="cd187-119">Type: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**</span></span>
 
-<span data-ttu-id="d3061-120">Uno de los valores de la [enumeración DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction) datos.</span><span class="sxs-lookup"><span data-stu-id="d3061-120">One of the values of the [DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction) enumeration.</span></span> <span data-ttu-id="d3061-121">Si se establece **en DML_AXIS_DIRECTION_INCREASING**, el producto se produce recorriendo el tensor a lo largo del eje especificado por índice de elemento ascendente.</span><span class="sxs-lookup"><span data-stu-id="d3061-121">If set to **DML_AXIS_DIRECTION_INCREASING**, then the product occurs by traversing the tensor along the specified axis by ascending element index.</span></span> <span data-ttu-id="d3061-122">Si se establece **en DML_AXIS_DIRECTION_DECREASING**, el valor inverso es true y el producto se produce recorriendo elementos por índice descendente.</span><span class="sxs-lookup"><span data-stu-id="d3061-122">If set to **DML_AXIS_DIRECTION_DECREASING**, the reverse is true and the product occurs by traversing elements by descending index.</span></span>
+<span data-ttu-id="cd187-120">Uno de los valores de la [enumeración DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction) datos.</span><span class="sxs-lookup"><span data-stu-id="cd187-120">One of the values of the [DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction) enumeration.</span></span> <span data-ttu-id="cd187-121">Si se establece **en DML_AXIS_DIRECTION_INCREASING**, el producto se produce recorriendo el tensor a lo largo del eje especificado por índice de elemento ascendente.</span><span class="sxs-lookup"><span data-stu-id="cd187-121">If set to **DML_AXIS_DIRECTION_INCREASING**, then the product occurs by traversing the tensor along the specified axis by ascending element index.</span></span> <span data-ttu-id="cd187-122">Si se establece **en DML_AXIS_DIRECTION_DECREASING**, el valor inverso es true y el producto se produce recorriendo elementos por índice descendente.</span><span class="sxs-lookup"><span data-stu-id="cd187-122">If set to **DML_AXIS_DIRECTION_DECREASING**, the reverse is true and the product occurs by traversing elements by descending index.</span></span>
 
 `HasExclusiveProduct`
 
-<span data-ttu-id="d3061-123">Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">BOOL</a></b></span><span class="sxs-lookup"><span data-stu-id="d3061-123">Type: <b><a href="/windows/win32/winprog/windows-data-types">BOOL</a></b></span></span>
+<span data-ttu-id="cd187-123">Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">BOOL</a></b></span><span class="sxs-lookup"><span data-stu-id="cd187-123">Type: <b><a href="/windows/win32/winprog/windows-data-types">BOOL</a></b></span></span>
 
-<span data-ttu-id="d3061-124">Si **es TRUE**, el valor del elemento actual se excluye al escribir el recuento en ejecución en el tensor de salida.</span><span class="sxs-lookup"><span data-stu-id="d3061-124">If **TRUE**, then the value of the current element is excluded when writing the running tally to the output tensor.</span></span> <span data-ttu-id="d3061-125">Si **es FALSE**, el valor del elemento actual se incluye en el recuento en ejecución.</span><span class="sxs-lookup"><span data-stu-id="d3061-125">If **FALSE**, then the value of the current element is included in the running tally.</span></span>
+<span data-ttu-id="cd187-124">Si **es TRUE**, el valor del elemento actual se excluye al escribir el recuento en ejecución en el tensor de salida.</span><span class="sxs-lookup"><span data-stu-id="cd187-124">If **TRUE**, then the value of the current element is excluded when writing the running tally to the output tensor.</span></span> <span data-ttu-id="cd187-125">Si **es FALSE**, el valor del elemento actual se incluye en el recuento en ejecución.</span><span class="sxs-lookup"><span data-stu-id="cd187-125">If **FALSE**, then the value of the current element is included in the running tally.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d3061-126">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="d3061-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cd187-126">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="cd187-126">Examples</span></span>
 
-<span data-ttu-id="d3061-127">Todos los ejemplos de esta sección usan este mismo tensor de entrada.</span><span class="sxs-lookup"><span data-stu-id="d3061-127">The examples in this section all use this same input tensor.</span></span>
+<span data-ttu-id="cd187-127">Todos los ejemplos de esta sección usan este mismo tensor de entrada.</span><span class="sxs-lookup"><span data-stu-id="cd187-127">The examples in this section all use this same input tensor.</span></span>
 
 ```
 InputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
@@ -115,7 +115,7 @@ InputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [9, 6, 2, 4]]]]
 ```
 
-### <a name="example-1-cumulative-product-across-horizontal-slivers"></a><span data-ttu-id="d3061-128">Ejemplo 1.</span><span class="sxs-lookup"><span data-stu-id="d3061-128">Example 1.</span></span> <span data-ttu-id="d3061-129">Producto acumulativo en los slivers horizontales</span><span class="sxs-lookup"><span data-stu-id="d3061-129">Cumulative product across horizontal slivers</span></span>
+### <a name="example-1-cumulative-product-across-horizontal-slivers"></a><span data-ttu-id="cd187-128">Ejemplo 1.</span><span class="sxs-lookup"><span data-stu-id="cd187-128">Example 1.</span></span> <span data-ttu-id="cd187-129">Producto acumulativo en los slivers horizontales</span><span class="sxs-lookup"><span data-stu-id="cd187-129">Cumulative product across horizontal slivers</span></span>
 
 ```
 Axis: 3
@@ -128,9 +128,9 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [9, 54, 108, 432]]]]     //      [...                   ]
 ```
 
-### <a name="example-2-exclusive-products"></a><span data-ttu-id="d3061-130">Ejemplo 2.</span><span class="sxs-lookup"><span data-stu-id="d3061-130">Example 2.</span></span> <span data-ttu-id="d3061-131">Productos exclusivos</span><span class="sxs-lookup"><span data-stu-id="d3061-131">Exclusive products</span></span>
+### <a name="example-2-exclusive-products"></a><span data-ttu-id="cd187-130">Ejemplo 2.</span><span class="sxs-lookup"><span data-stu-id="cd187-130">Example 2.</span></span> <span data-ttu-id="cd187-131">Productos exclusivos</span><span class="sxs-lookup"><span data-stu-id="cd187-131">Exclusive products</span></span>
 
-<span data-ttu-id="d3061-132">Establecer *HasExclusiveProduct* en **TRUE** tiene el efecto de excluir el valor del elemento actual del recuento en ejecución al escribir en el tensor de salida.</span><span class="sxs-lookup"><span data-stu-id="d3061-132">Setting *HasExclusiveProduct* to **TRUE** has the effect of excluding the current element's value from the running tally when writing to the output tensor.</span></span>
+<span data-ttu-id="cd187-132">Establecer *HasExclusiveProduct* en **TRUE** tiene el efecto de excluir el valor del elemento actual del recuento en ejecución al escribir en el tensor de salida.</span><span class="sxs-lookup"><span data-stu-id="cd187-132">Setting *HasExclusiveProduct* to **TRUE** has the effect of excluding the current element's value from the running tally when writing to the output tensor.</span></span>
 
 ```
 Axis: 3
@@ -143,9 +143,9 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [1, 9, 54, 108]]]]
 ```
 
-### <a name="example-3-axis-direction"></a><span data-ttu-id="d3061-133">Ejemplo 3.</span><span class="sxs-lookup"><span data-stu-id="d3061-133">Example 3.</span></span> <span data-ttu-id="d3061-134">Dirección del eje</span><span class="sxs-lookup"><span data-stu-id="d3061-134">Axis direction</span></span>
+### <a name="example-3-axis-direction"></a><span data-ttu-id="cd187-133">Ejemplo 3.</span><span class="sxs-lookup"><span data-stu-id="cd187-133">Example 3.</span></span> <span data-ttu-id="cd187-134">Dirección del eje</span><span class="sxs-lookup"><span data-stu-id="cd187-134">Axis direction</span></span>
 
-<span data-ttu-id="d3061-135">Establecer *AxisDirection en* [**DML_AXIS_DIRECTION_DECREASING**](/windows/win32/api/directml/ne-directml-dml_axis_direction) tiene el efecto de invertir el orden transversal de los elementos al calcular el recuento en ejecución.</span><span class="sxs-lookup"><span data-stu-id="d3061-135">Setting the *AxisDirection* to [**DML_AXIS_DIRECTION_DECREASING**](/windows/win32/api/directml/ne-directml-dml_axis_direction) has the effect of reversing the traversal order of elements when computing the running tally.</span></span>
+<span data-ttu-id="cd187-135">Establecer *AxisDirection en* [**DML_AXIS_DIRECTION_DECREASING**](/windows/win32/api/directml/ne-directml-dml_axis_direction) tiene el efecto de invertir el orden transversal de los elementos al calcular el recuento en ejecución.</span><span class="sxs-lookup"><span data-stu-id="cd187-135">Setting the *AxisDirection* to [**DML_AXIS_DIRECTION_DECREASING**](/windows/win32/api/directml/ne-directml-dml_axis_direction) has the effect of reversing the traversal order of elements when computing the running tally.</span></span>
 
 ```
 Axis: 3
@@ -158,9 +158,9 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [432,  48,  8, 4]]]]  //      [...                   ]
 ```
 
-### <a name="example-4-multiplying-along-a-different-axis"></a><span data-ttu-id="d3061-136">Ejemplo 4.</span><span class="sxs-lookup"><span data-stu-id="d3061-136">Example 4.</span></span> <span data-ttu-id="d3061-137">Multiplicación a lo largo de un eje diferente</span><span class="sxs-lookup"><span data-stu-id="d3061-137">Multiplying along a different axis</span></span>
+### <a name="example-4-multiplying-along-a-different-axis"></a><span data-ttu-id="cd187-136">Ejemplo 4.</span><span class="sxs-lookup"><span data-stu-id="cd187-136">Example 4.</span></span> <span data-ttu-id="cd187-137">Multiplicación a lo largo de un eje diferente</span><span class="sxs-lookup"><span data-stu-id="cd187-137">Multiplying along a different axis</span></span>
 
-<span data-ttu-id="d3061-138">En este ejemplo, el producto se produce verticalmente, a lo largo del eje de alto (segunda dimensión).</span><span class="sxs-lookup"><span data-stu-id="d3061-138">In this example, the product occurs vertically, along the height axis (second dimension).</span></span>
+<span data-ttu-id="cd187-138">En este ejemplo, el producto se produce verticalmente, a lo largo del eje de alto (segunda dimensión).</span><span class="sxs-lookup"><span data-stu-id="cd187-138">In this example, the product occurs vertically, along the height axis (second dimension).</span></span>
 
 ```
 Axis: 2
@@ -173,22 +173,29 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
    [54, 48, 42, 60]]]] //      [2*3*9 ...]
 ```
 
-## <a name="remarks"></a><span data-ttu-id="d3061-139">Comentarios</span><span class="sxs-lookup"><span data-stu-id="d3061-139">Remarks</span></span>
-<span data-ttu-id="d3061-140">Este operador admite la ejecución en contexto, lo que significa que el tensor de salida puede usar el alias *InputTensor durante* el enlace.</span><span class="sxs-lookup"><span data-stu-id="d3061-140">This operator supports in-place execution, meaning that the output tensor is permitted to alias *InputTensor* during binding.</span></span>
+## <a name="remarks"></a><span data-ttu-id="cd187-139">Observaciones</span><span class="sxs-lookup"><span data-stu-id="cd187-139">Remarks</span></span>
+<span data-ttu-id="cd187-140">Este operador admite la ejecución en contexto, lo que significa que el tensor de salida puede usar el alias *InputTensor durante* el enlace.</span><span class="sxs-lookup"><span data-stu-id="cd187-140">This operator supports in-place execution, meaning that the output tensor is permitted to alias *InputTensor* during binding.</span></span>
 
-## <a name="availability"></a><span data-ttu-id="d3061-141">Disponibilidad</span><span class="sxs-lookup"><span data-stu-id="d3061-141">Availability</span></span>
-<span data-ttu-id="d3061-142">Este operador se introdujo en `DML_FEATURE_LEVEL_3_1` .</span><span class="sxs-lookup"><span data-stu-id="d3061-142">This operator was introduced in `DML_FEATURE_LEVEL_3_1`.</span></span>
+## <a name="availability"></a><span data-ttu-id="cd187-141">Disponibilidad</span><span class="sxs-lookup"><span data-stu-id="cd187-141">Availability</span></span>
+<span data-ttu-id="cd187-142">Este operador se introdujo en `DML_FEATURE_LEVEL_3_1` .</span><span class="sxs-lookup"><span data-stu-id="cd187-142">This operator was introduced in `DML_FEATURE_LEVEL_3_1`.</span></span>
 
-## <a name="tensor-constraints"></a><span data-ttu-id="d3061-143">Restricciones de tensor</span><span class="sxs-lookup"><span data-stu-id="d3061-143">Tensor constraints</span></span>
-<span data-ttu-id="d3061-144">*InputTensor* y *OutputTensor* deben tener los mismos *tipos de datos* y *tamaños.*</span><span class="sxs-lookup"><span data-stu-id="d3061-144">*InputTensor* and *OutputTensor* must have the same *DataType* and *Sizes*.</span></span>
+## <a name="tensor-constraints"></a><span data-ttu-id="cd187-143">Restricciones de tensor</span><span class="sxs-lookup"><span data-stu-id="cd187-143">Tensor constraints</span></span>
+<span data-ttu-id="cd187-144">*InputTensor* y *OutputTensor* deben tener los mismos *tamaños DataType,* *DimensionCount* y *.*</span><span class="sxs-lookup"><span data-stu-id="cd187-144">*InputTensor* and *OutputTensor* must have the same *DataType*, *DimensionCount*, and *Sizes*.</span></span>
 
-## <a name="tensor-support"></a><span data-ttu-id="d3061-145">Compatibilidad con Tensor</span><span class="sxs-lookup"><span data-stu-id="d3061-145">Tensor support</span></span>
-| <span data-ttu-id="d3061-146">Tensor</span><span class="sxs-lookup"><span data-stu-id="d3061-146">Tensor</span></span> | <span data-ttu-id="d3061-147">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3061-147">Kind</span></span> | <span data-ttu-id="d3061-148">Recuentos de dimensiones admitidos</span><span class="sxs-lookup"><span data-stu-id="d3061-148">Supported dimension counts</span></span> | <span data-ttu-id="d3061-149">Tipos de datos admitidos</span><span class="sxs-lookup"><span data-stu-id="d3061-149">Supported data types</span></span> |
+## <a name="tensor-support"></a><span data-ttu-id="cd187-145">Compatibilidad con Tensor</span><span class="sxs-lookup"><span data-stu-id="cd187-145">Tensor support</span></span>
+### <a name="dml_feature_level_4_0-and-above"></a><span data-ttu-id="cd187-146">DML_FEATURE_LEVEL_4_0 y posteriores</span><span class="sxs-lookup"><span data-stu-id="cd187-146">DML_FEATURE_LEVEL_4_0 and above</span></span>
+| <span data-ttu-id="cd187-147">Tensor</span><span class="sxs-lookup"><span data-stu-id="cd187-147">Tensor</span></span> | <span data-ttu-id="cd187-148">Tipo</span><span class="sxs-lookup"><span data-stu-id="cd187-148">Kind</span></span> | <span data-ttu-id="cd187-149">Recuentos de dimensiones admitidos</span><span class="sxs-lookup"><span data-stu-id="cd187-149">Supported dimension counts</span></span> | <span data-ttu-id="cd187-150">Tipos de datos admitidos</span><span class="sxs-lookup"><span data-stu-id="cd187-150">Supported data types</span></span> |
 | ------ | ---- | -------------------------- | -------------------- |
-| <span data-ttu-id="d3061-150">InputTensor</span><span class="sxs-lookup"><span data-stu-id="d3061-150">InputTensor</span></span> | <span data-ttu-id="d3061-151">Entrada</span><span class="sxs-lookup"><span data-stu-id="d3061-151">Input</span></span> | <span data-ttu-id="d3061-152">4</span><span class="sxs-lookup"><span data-stu-id="d3061-152">4</span></span> | <span data-ttu-id="d3061-153">FLOAT32, FLOAT16, UINT32, UINT16</span><span class="sxs-lookup"><span data-stu-id="d3061-153">FLOAT32, FLOAT16, UINT32, UINT16</span></span> |
-| <span data-ttu-id="d3061-154">OutputTensor</span><span class="sxs-lookup"><span data-stu-id="d3061-154">OutputTensor</span></span> | <span data-ttu-id="d3061-155">Resultados</span><span class="sxs-lookup"><span data-stu-id="d3061-155">Output</span></span> | <span data-ttu-id="d3061-156">4</span><span class="sxs-lookup"><span data-stu-id="d3061-156">4</span></span> | <span data-ttu-id="d3061-157">FLOAT32, FLOAT16, UINT32, UINT16</span><span class="sxs-lookup"><span data-stu-id="d3061-157">FLOAT32, FLOAT16, UINT32, UINT16</span></span> |
+| <span data-ttu-id="cd187-151">InputTensor</span><span class="sxs-lookup"><span data-stu-id="cd187-151">InputTensor</span></span> | <span data-ttu-id="cd187-152">Entrada</span><span class="sxs-lookup"><span data-stu-id="cd187-152">Input</span></span> | <span data-ttu-id="cd187-153">De 1 a 8</span><span class="sxs-lookup"><span data-stu-id="cd187-153">1 to 8</span></span> | <span data-ttu-id="cd187-154">FLOAT32, FLOAT16, UINT32, UINT16</span><span class="sxs-lookup"><span data-stu-id="cd187-154">FLOAT32, FLOAT16, UINT32, UINT16</span></span> |
+| <span data-ttu-id="cd187-155">OutputTensor</span><span class="sxs-lookup"><span data-stu-id="cd187-155">OutputTensor</span></span> | <span data-ttu-id="cd187-156">Output</span><span class="sxs-lookup"><span data-stu-id="cd187-156">Output</span></span> | <span data-ttu-id="cd187-157">De 1 a 8</span><span class="sxs-lookup"><span data-stu-id="cd187-157">1 to 8</span></span> | <span data-ttu-id="cd187-158">FLOAT32, FLOAT16, UINT32, UINT16</span><span class="sxs-lookup"><span data-stu-id="cd187-158">FLOAT32, FLOAT16, UINT32, UINT16</span></span> |
 
-## <a name="requirements"></a><span data-ttu-id="d3061-158">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d3061-158">Requirements</span></span>
+### <a name="dml_feature_level_3_1-and-above"></a><span data-ttu-id="cd187-159">DML_FEATURE_LEVEL_3_1 y posteriores</span><span class="sxs-lookup"><span data-stu-id="cd187-159">DML_FEATURE_LEVEL_3_1 and above</span></span>
+| <span data-ttu-id="cd187-160">Tensor</span><span class="sxs-lookup"><span data-stu-id="cd187-160">Tensor</span></span> | <span data-ttu-id="cd187-161">Tipo</span><span class="sxs-lookup"><span data-stu-id="cd187-161">Kind</span></span> | <span data-ttu-id="cd187-162">Recuentos de dimensiones admitidos</span><span class="sxs-lookup"><span data-stu-id="cd187-162">Supported dimension counts</span></span> | <span data-ttu-id="cd187-163">Tipos de datos admitidos</span><span class="sxs-lookup"><span data-stu-id="cd187-163">Supported data types</span></span> |
+| ------ | ---- | -------------------------- | -------------------- |
+| <span data-ttu-id="cd187-164">InputTensor</span><span class="sxs-lookup"><span data-stu-id="cd187-164">InputTensor</span></span> | <span data-ttu-id="cd187-165">Entrada</span><span class="sxs-lookup"><span data-stu-id="cd187-165">Input</span></span> | <span data-ttu-id="cd187-166">4</span><span class="sxs-lookup"><span data-stu-id="cd187-166">4</span></span> | <span data-ttu-id="cd187-167">FLOAT32, FLOAT16, UINT32, UINT16</span><span class="sxs-lookup"><span data-stu-id="cd187-167">FLOAT32, FLOAT16, UINT32, UINT16</span></span> |
+| <span data-ttu-id="cd187-168">OutputTensor</span><span class="sxs-lookup"><span data-stu-id="cd187-168">OutputTensor</span></span> | <span data-ttu-id="cd187-169">Output</span><span class="sxs-lookup"><span data-stu-id="cd187-169">Output</span></span> | <span data-ttu-id="cd187-170">4</span><span class="sxs-lookup"><span data-stu-id="cd187-170">4</span></span> | <span data-ttu-id="cd187-171">FLOAT32, FLOAT16, UINT32, UINT16</span><span class="sxs-lookup"><span data-stu-id="cd187-171">FLOAT32, FLOAT16, UINT32, UINT16</span></span> |
+
+## <a name="requirements"></a><span data-ttu-id="cd187-172">Requisitos</span><span class="sxs-lookup"><span data-stu-id="cd187-172">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="d3061-159">**Header**</span><span class="sxs-lookup"><span data-stu-id="d3061-159">**Header**</span></span> | <span data-ttu-id="d3061-160">directml.h</span><span class="sxs-lookup"><span data-stu-id="d3061-160">directml.h</span></span> |
+| <span data-ttu-id="cd187-173">**Header**</span><span class="sxs-lookup"><span data-stu-id="cd187-173">**Header**</span></span> | <span data-ttu-id="cd187-174">directml.h</span><span class="sxs-lookup"><span data-stu-id="cd187-174">directml.h</span></span> |
