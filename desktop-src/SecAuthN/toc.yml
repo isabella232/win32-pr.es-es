@@ -18,17 +18,17 @@
               href: lsa-authentication-model.md
             - name: Sesiones de inicio de sesión de LSA
               href: lsa-logon-sessions.md
-            - name: Autenticación de inicio de sesión de usuario LSA
+            - name: Autenticación de inicio de sesión de usuario de LSA
               href: lsa-user-logon-authentication.md
               items:
                 - name: Autenticación interactiva
                   href: interactive-authentication.md
-                - name: Autenticación no inactiva
+                - name: Autenticación no interactiva
                   href: noninteractive-authentication.md
             - name: Paquetes de autenticación
               href: authentication-packages.md
               items:
-                - name: Paquetes de autenticación de Windows
+                - name: Windows Paquetes de autenticación
                   href: windows-authentication-packages.md
                 - name: Proveedores de compatibilidad de seguridad/paquetes de autenticación
                   href: security-support-provider-authentication-packages.md
@@ -39,7 +39,7 @@
                       href: kerberos-ssp-ap.md
                     - name: MSV1_0 de autenticación
                       href: msv1-0-authentication-package.md
-                - name: Paquetes de subauticación
+                - name: Paquetes de subauauticación
                   href: subauthentication-packages.md
         - name: API del proveedor de red
           href: network-provider-api.md
@@ -57,7 +57,7 @@
                   href: capabilities-functions.md
                 - name: Funciones de nombre de usuario
                   href: user-name-functions.md
-                - name: Device-Redirecting Functions
+                - name: Device-Redirecting functions
                   href: device-redirecting-functions.md
                 - name: Provider-Specific funciones del cuadro de diálogo
                   href: provider-specific-dialog-box-functions.md
@@ -75,7 +75,7 @@
             - name: Conceptos de tarjeta inteligente
               href: smart-card-concepts.md
               items:
-                - name: Lectores de tarjetas inteligentes
+                - name: Lectores de tarjeta inteligente
                   href: smart-card-readers.md
                 - name: Interfaces de tarjeta inteligente
                   href: smart-card-interfaces.md
@@ -92,20 +92,20 @@
               items:
                 - name: Resource Manager implementación
                   href: resource-manager-implementation.md
-                - name: API de Resource Manager tarjeta inteligente
+                - name: Smart Card Resource Manager API
                   href: smart-card-resource-manager-api.md
                   items:
                     - name: Funciones de consulta de base de datos de tarjeta inteligente
                       href: smart-card-database-query-functions.md
                     - name: Funciones de administración de bases de datos de tarjetas inteligentes
                       href: smart-card-database-management-functions.md
-                    - name: Resource Manager Context Functions
+                    - name: Resource Manager funciones de contexto
                       href: resource-manager-context-functions.md
                     - name: Resource Manager support (Función)
                       href: resource-manager-support-function.md
                     - name: Funciones de seguimiento de tarjetas inteligentes
                       href: smart-card-tracking-functions.md
-                    - name: Funciones de acceso de tarjeta inteligente y lector
+                    - name: Funciones de acceso de lector y tarjeta inteligente
                       href: smart-card-and-reader-access-functions.md
                     - name: Funciones de acceso directo a tarjetas
                       href: direct-card-access-functions.md
@@ -146,7 +146,7 @@
                 - name: Proveedor de soporte técnico de seguridad de credenciales
                   href: credential-security-support-provider.md
                   items:
-                    - name: Configuración de directiva de grupo CredSSP
+                    - name: CredSSP directiva de grupo Configuración
                       href: credssp-group-policy-settings.md
                 - name: Microsoft Negotiate
                   href: microsoft-negotiate.md
@@ -160,22 +160,22 @@
                       items:
                         - name: Autenticación de clave
                           href: key-authentication.md
-                        - name: Mensajes de autenticación
+                        - name: Authenticator Mensajes
                           href: authenticator-messages.md
                         - name: Distribución de claves
                           href: key-distribution.md
                         - name: Vales de sesión
                           href: session-tickets.md
-                        - name: Ticket-Granting tickets
+                        - name: Ticket-Granting Tickets
                           href: ticket-granting-tickets.md
-                    - name: Subprotocolos de Kerberos
+                    - name: Subprotocolos kerberos
                       href: kerberos-subprotocols.md
                       items:
                         - name: Intercambio del servicio de autenticación
                           href: authentication-service-exchange.md
                         - name: Intercambio del servicio de concesión de vales
                           href: ticket-granting-service-exchange.md
-                        - name: Intercambio de cliente/servidor
+                        - name: Cliente o servidor Exchange
                           href: client-server-exchange.md
                     - name: Modelo kerberos
                       href: kerberos-components.md
@@ -268,7 +268,7 @@
                           href: tls-cipher-suites-in-windows-7.md
                         - name: Conjuntos de cifrado TLS en Windows Vista
                           href: schannel-cipher-suites-in-windows-vista.md
-                        - name: Priorización de conjuntos de cifrado Schannel
+                        - name: Priorización de conjuntos de cifrado de Schannel
                           href: prioritizing-schannel-cipher-suites.md
                     - name: Curvas elípticas en TLS (Schannel SSP)
                       items:
@@ -393,11 +393,11 @@
             - name: Problemas de autenticación web
               href: web-authentication-problems.md
             - name: Preguntas más frecuentes sobre el Agente de autenticación web
-              href: faq-for-web-authentication-broker.md
+              href: faq-for-web-authentication-broker.yml
         - name: Uso de la API del proveedor de red
           href: using-network-provider-api.md
           items:
-            - name: Implementar un proveedor de red
+            - name: Implementación de un proveedor de red
               href: implementing-a-network-provider.md
             - name: Implementación de un Administrador de credenciales
               href: implementing-a-credential-manager.md
@@ -411,7 +411,7 @@
               href: receiving-connection-notifications.md
             - name: Registro para recibir notificaciones de conexión
               href: registering-to-receive-connection-notifications.md
-            - name: Invalidar el intervalo de tiempo de espera de MPR predeterminado
+            - name: Invalidar el intervalo de tiempo de espera predeterminado de MPR
               href: overriding-the-default-mpr-time-out-interval.md
         - name: Uso de SSPI
           href: using-sspi.md
@@ -428,39 +428,39 @@
                       href: writing-and-installing-a-security-support-provider.md
                     - name: Inicialización del paquete de seguridad
                       href: initializing-the-security-package.md
-                    - name: Obtener información acerca de los paquetes de seguridad
+                    - name: Obtener información sobre los paquetes de seguridad
                       href: getting-information-about-security-packages.md
                     - name: Uso de paquetes de seguridad
                       href: using-security-packages.md
                 - name: Establecimiento de una conexión segura con autenticación
                   href: establishing-a-secure-connection-with-authentication.md
                   items:
-                    - name: Inicialización del contexto de cliente
+                    - name: Inicialización de contexto de cliente
                       href: client-context-initialization.md
                       items:
-                        - name: Continuación de cliente
+                        - name: Continuación del cliente
                           href: client-continuation.md
                     - name: Inicialización del contexto de servidor
                       href: server-context-initialization.md
                       items:
                         - name: Continuación del servidor
                           href: server-continuation.md
-                - name: Garantizar la integridad de la comunicación durante el intercambio de mensajes
+                - name: Garantizar la integridad de la comunicación durante la Exchange
                   href: ensuring-communication-integrity-during-message-exchange.md
                 - name: Finalización de una sesión de SSPI
                   href: ending-an-sspi-session.md
             - name: Código SSPI de ejemplo
               href: sample-sspi-code.md
               items:
-                - name: Uso de SSPI con un cliente de Windows Sockets
+                - name: Uso de SSPI con un cliente Windows Sockets
                   href: using-sspi-with-a-windows-sockets-client.md
-                - name: Uso de SSPI con un servidor de Windows Sockets
+                - name: Uso de SSPI con un servidor Windows Sockets
                   href: using-sspi-with-a-windows-sockets-server.md
-                - name: Archivo de encabezado para el cliente y el servidor de SSPI
+                - name: Archivo de encabezado para el cliente y el servidor SSPI
                   href: header-file-for-sspi-client-and-server.md
                 - name: Código de ejemplo secBuffer y SecBufferDesc
                   href: secbuffer-and-secbufferdesc-example-code.md
-                - name: Uso de compatibilidad con mensajes
+                - name: Uso de la compatibilidad con mensajes
                   href: using-message-support.md
                   items:
                     - name: Firmar un mensaje
@@ -479,7 +479,7 @@
                   items:
                     - name: Obtención de credenciales implícitas predeterminadas
                       href: obtaining-default-digest-credentials.md
-                    - name: Obtención de credenciales implícitas alternativas
+                    - name: Obtención de credenciales de resumen alternativas
                       href: obtaining-alternate-digest-credentials.md
                 - name: Generación del desafío de resumen
                   href: generating-the-digest-challenge.md
@@ -507,13 +507,13 @@
                 - name: Creación de un contexto de seguridad de Schannel
                   href: creating-an-schannel-security-context.md
                   items:
-                    - name: Realización de la autenticación mediante Schannel
+                    - name: Realizar la autenticación mediante Schannel
                       href: performing-authentication-using-schannel.md
                     - name: Asignación de certificados
                       href: mapping-certificates.md
                     - name: Validación manual de credenciales de Schannel
                       href: manually-validating-schannel-credentials.md
-                - name: Obtener información sobre las conexiones Schannel
+                - name: Obtención de información sobre las conexiones Schannel
                   href: getting-information-about-schannel-connections.md
                   items:
                     - name: Consulta de los atributos de un contexto de Schannel
@@ -527,7 +527,7 @@
                       href: load-balancing-using-schannel.md
                     - name: Renegociación de una conexión de Schannel
                       href: renegotiating-an-schannel-connection.md
-                    - name: Reconocer una solicitud de renegociación de una conexión
+                    - name: Reconocer una solicitud para volver a negociar una conexión
                       href: recognizing-a-request-to-renegotiate-a-connection.md
                     - name: Apagar una conexión Schannel
                       href: shutting-down-an-schannel-connection.md
@@ -559,7 +559,7 @@
           items:
             - name: PLSA_CLIENT_REQUEST
               href: plsa-client-request.md
-            - name: Identificadores de SSPI
+            - name: Identificadores SSPI
               href: sspi-handles.md
             - name: Códigos de estado de SSPI
               href: sspi-status-codes.md
@@ -623,7 +623,7 @@
         - name: Funciones de autenticación
           href: authentication-functions.md
           items:
-            - name: AcceptSecurityContext (general)
+            - name: AcceptSecurityContext (General)
               href: acceptsecuritycontext--general.md
               items:
                 - name: AcceptSecurityContext (CredSSP)
@@ -729,7 +729,7 @@
               href: /windows/desktop/api/Ntsecpkg/nc-ntsecpkg-credreadfn
             - name: CredReadDomainCredentialsFn
               href: /windows/desktop/api/Ntsecpkg/nc-ntsecpkg-credreaddomaincredentialsfn
-            - name: Se ha desaconsejeadoUnmarshalandDecodeStringFn.
+            - name: Se deshalandDecodeStringFn
               href: /windows/desktop/api/Ntsecpkg/nc-ntsecpkg-crediunmarshalanddecodestringfn
             - name: CredWriteFn
               href: /windows/desktop/api/Ntsecpkg/nc-ntsecpkg-credwritefn
@@ -778,7 +778,7 @@
             - name: DecryptMessage (General)
               href: decryptmessage--general.md
               items:
-                - name: DecryptMessage (digest)
+                - name: DecryptMessage (Digest)
                   href: decryptmessage--digest.md
                 - name: DecryptMessage (Kerberos)
                   href: decryptmessage--kerberos.md
@@ -802,7 +802,7 @@
               href: /windows/desktop/api/Ntsecpkg/nc-ntsecpkg-lsa_delete_shared_memory
             - name: DuplicateHandle
               href: /windows/desktop/api/ntsecpkg/nc-ntsecpkg-lsa_duplicate_handle
-            - name: EncryptMessage (General)
+            - name: EncryptMessage (general)
               href: encryptmessage--general.md
               items:
                 - name: EncryptMessage (digest)
@@ -857,7 +857,7 @@
               href: /windows/desktop/api/Sspi/nf-sspi-impersonatesecuritycontext
             - name: ImportSecurityContext
               href: /windows/desktop/api/Sspi/nf-sspi-importsecuritycontexta
-            - name: InitializeSecurityContext (general)
+            - name: InitializeSecurityContext (General)
               href: initializesecuritycontext--general.md
               items:
                 - name: InitializeSecurityContext (CredSSP)
@@ -1430,15 +1430,10 @@
                       href: ibytebuffer-setsize.md
                     - name: Stat (método)
                       href: ibytebuffer-stat.md
-                    - name: Método UnlockRegion
+                    - name: UnlockRegion (método)
                       href: ibytebuffer-unlockregion.md
                     - name: Método Write
                       href: ibytebuffer-write.md
-            - name: ICcgDomainAuthCredentials
-              href: windows/win32/api/ccgplugins/nn-ccgplugins-iccgdomainauthcredentials
-              items:
-                - name: GetPasswordCredentials (método)
-                  href: windows/win32/api/ccgplugins/nf-ccgplugins-iccgdomainauthcredentials-getpasswordcredentials
             - name: IConnectedIdentityProvider
               href: /windows/desktop/api/Identityprovider/nn-identityprovider-iconnectedidentityprovider
               items:
@@ -1472,16 +1467,16 @@
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-findbyuniqueid
                     - name: GetIdentityEnum (método)
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-getidentityenum
-                    - name: Método GetProviderPropertyStore
+                    - name: GetProviderPropertyStore (método)
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-getproviderpropertystore
                     - name: Método de importación
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-import
-                    - name: Método UnAdvise
+                    - name: UnAdvise (método)
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-unadvise
             - name: IIdentityStore
               href: /windows/desktop/api/Identitystore/nn-identitystore-iidentitystore
               items:
-                - name: Métodos IIdentityStore
+                - name: Métodos de IIdentityStore
                   href: iidentitystore-methods.md
                   items:
                     - name: AddToCache (método)
@@ -1499,22 +1494,22 @@
             - name: ISCard
               href: iscard.md
               items:
-                - name: Métodos de ISCard
+                - name: Métodos iscard
                   href: iscard-methods.md
                   items:
-                    - name: AttachByHandle (método)
+                    - name: Método AttachByHandle
                       href: iscard-attachbyhandle.md
                     - name: AttachByReader (método)
                       href: iscard-attachbyreader.md
                     - name: Método Detach
                       href: iscard-detach.md
-                    - name: get_Atr (método)
+                    - name: get_Atr método
                       href: iscard-get-atr.md
-                    - name: get_CardHandle (método)
+                    - name: get_CardHandle método
                       href: iscard-get-cardhandle.md
                     - name: get_Context (método)
                       href: iscard-get-context.md
-                    - name: get_Protocol (método)
+                    - name: get_Protocol método
                       href: iscard-get-protocol.md
                     - name: get_Status (método)
                       href: iscard-get-status.md
@@ -1529,14 +1524,14 @@
             - name: ISCardAuth
               href: iscardauth.md
               items:
-                - name: Métodos de ISCardAuth
+                - name: Métodos ISCardAuth
                   href: iscardauth-methods.md
                   items:
                     - name: APP_Auth (método)
                       href: iscardauth-app-auth.md
                     - name: GetChallenge (método)
                       href: iscardauth-getchallenge.md
-                    - name: ICC_Auth (método)
+                    - name: ICC_Auth método
                       href: iscardauth-icc-auth.md
                     - name: User_Auth (método)
                       href: iscardauth-user-auth.md
@@ -1554,17 +1549,17 @@
                       href: iscardcmd-encapsulate.md
                     - name: get_AlternateClassId (método)
                       href: iscardcmd-get-alternateclassid.md
-                    - name: get_Apdu (método)
+                    - name: get_Apdu método
                       href: iscardcmd-get-apdu.md
-                    - name: get_ApduLength (método)
+                    - name: get_ApduLength método
                       href: iscardcmd-get-apdulength.md
-                    - name: get_ApduReply (método)
+                    - name: get_ApduReply método
                       href: iscardcmd-get-apdureply.md
-                    - name: get_ApduReplyLength (método)
+                    - name: get_ApduReplyLength método
                       href: iscardcmd-get-apdureplylength.md
-                    - name: get_ClassId (método)
+                    - name: get_ClassId método
                       href: iscardcmd-get-classid.md
-                    - name: get_Data (método)
+                    - name: get_Data método
                       href: iscardcmd-get-data.md
                     - name: get_InstructionId (método)
                       href: iscardcmd-get-instructionid.md
@@ -1574,7 +1569,7 @@
                       href: iscardcmd-get-p1.md
                     - name: get_P2 (método)
                       href: iscardcmd-get-p2.md
-                    - name: get_P3 (método)
+                    - name: get_P3 método
                       href: iscardcmd-get-p3.md
                     - name: get_ReplyNad (método)
                       href: iscardcmd-get-replynad.md
@@ -1586,19 +1581,19 @@
                       href: iscardcmd-get-replystatussw2.md
                     - name: put_AlternateClassId (método)
                       href: iscardcmd-put-alternateclassid.md
-                    - name: put_Apdu (método)
+                    - name: put_Apdu método
                       href: iscardcmd-put-apdu.md
-                    - name: put_ApduReply (método)
+                    - name: put_ApduReply método
                       href: iscardcmd-put-apdureply.md
-                    - name: put_ClassId (método)
+                    - name: put_ClassId método
                       href: iscardcmd-put-classid.md
-                    - name: put_Data (método)
+                    - name: put_Data método
                       href: iscardcmd-put-data.md
-                    - name: put_InstructionId (método)
+                    - name: put_InstructionId método
                       href: iscardcmd-put-instructionid.md
-                    - name: put_Nad (método)
+                    - name: put_Nad método
                       href: iscardcmd-put-nad.md
-                    - name: put_P1 (método)
+                    - name: put_P1 método
                       href: iscardcmd-put-p1.md
                     - name: put_P2 (método)
                       href: iscardcmd-put-p2.md
@@ -1642,7 +1637,7 @@
                       href: iscardfileaccess-getfilecapabilities.md
                     - name: GetProperties (método)
                       href: iscardfileaccess-getproperties.md
-                    - name: Invalidate (Método)
+                    - name: Invalidate (método)
                       href: iscardfileaccess-invalidate.md
                     - name: Método Abrir
                       href: iscardfileaccess-open.md
@@ -1684,13 +1679,13 @@
                       href: iscardiso7816-readbinary.md
                     - name: ReadRecord (método)
                       href: iscardiso7816-readrecord.md
-                    - name: SelectFile (método)
+                    - name: Método SelectFile
                       href: iscardiso7816-selectfile.md
-                    - name: SetDefaultClassId (método)
+                    - name: Método SetDefaultClassId
                       href: iscardiso7816-setdefaultclassid.md
                     - name: UpdateBinary (método)
                       href: iscardiso7816-updatebinary.md
-                    - name: UpdateRecord (método)
+                    - name: Método UpdateRecord
                       href: iscardiso7816-updaterecord.md
                     - name: Verify (método)
                       href: iscardiso7816-verify.md
@@ -1714,7 +1709,7 @@
                 - name: Métodos ISCardManage
                   href: iscardmanage-methods.md
                   items:
-                    - name: Método AttachByHandle
+                    - name: AttachByHandle (método)
                       href: iscardmanage-attachbyhandle.md
                     - name: Método AttachByIFD
                       href: iscardmanage-attachbyifd.md
@@ -1746,7 +1741,7 @@
                       href: iscardtypeconv-convertbytearraytobytebuffer.md
                     - name: Método ConvertByteBufferToByteArray
                       href: iscardtypeconv-convertbytebuffertobytearray.md
-                    - name: Método ConvertByteBufferToSafeArray
+                    - name: ConvertByteBufferToSafeArray (método)
                       href: iscardtypeconv-convertbytebuffertosafearray.md
                     - name: Método ConvertSafeArrayToByteBuffer
                       href: iscardtypeconv-convertsafearraytobytebuffer.md
@@ -1760,7 +1755,7 @@
                       href: iscardtypeconv-freeistreammemoryptr.md
                     - name: GetAtIStreamMemory (método)
                       href: iscardtypeconv-getatistreammemory.md
-                    - name: Método SizeOfIStream
+                    - name: SizeOfIStream (método)
                       href: iscardtypeconv-sizeofistream.md
             - name: ISCardVerify
               href: iscardverify.md
@@ -1772,7 +1767,7 @@
                       href: iscardverify-changecode.md
                     - name: ResetSecurityState (método)
                       href: iscardverify-resetsecuritystate.md
-                    - name: Unblock (método)
+                    - name: Método Unblock
                       href: /previous-versions/windows/desktop/legacy/aa377269(v=vs.85)
                     - name: Verify (método)
                       href: iscardverify-verify.md
