@@ -1,0 +1,141 @@
+### YamlMime:FAQ
+metadata:
+  description: En este artículo se incluyen los procedimientos recomendados y las preguntas más frecuentes sobre cómo crear y registrar controladores de propiedades para trabajar con el Windows de propiedades.
+  ms.assetid: E583A00B-F615-41c8-AECF-061F1396DB9A
+  title: Procedimientos recomendados y preguntas más frecuentes sobre el controlador de propiedades
+  ms.topic: article
+  ms.date: 05/31/2018
+  ms.openlocfilehash: 6e1b7d22516b1573562b25f2889b6d1ba703483c
+  ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "113483674"
+title: Procedimientos recomendados y preguntas más frecuentes sobre el controlador de propiedades
+summary: >
+  En este tema se explica cómo crear y registrar controladores de propiedades para trabajar con el Windows de propiedades.
+
+
+  Este tema se organiza de la siguiente manera:
+
+
+  -   [Procedimientos recomendados](#best-practices)
+      -   [Invalidar las propiedades del sistema de archivos](#overriding-file-system-properties)
+      -   [Almacenar propiedades en formatos de archivo basados en XML](#storing-properties-in-xml-based-file-formats)
+      -   [Propiedades calculadas](#computed-properties)
+  -   [Preguntas más frecuentes](#frequently-asked-questions)
+
+  -   [Temas relacionados](#related-topics)
+sections:
+- name: Prácticas recomendadas
+  questions:
+  - question: >
+      Invalidar las propiedades del sistema de archivos
+    answer: >
+      Algunas propiedades de los archivos las proporciona el origen de datos del sistema de archivos, como:
+
+
+      -   PKEY \_ FileName
+
+      -   Extensión \_ PKEY
+
+      -   PKEY \_ ModifiedTime
+
+
+      En general, los controladores de propiedades no pueden proporcionar valores para estas propiedades. Sin embargo, en algunos casos estas propiedades se pueden invalidar en función de la información de registro proporcionada por el controlador de propiedades. Los controladores de propiedades rellenan **HKEY \_ CLASSES \_ ROOT** \\ **CLSID** \\ *{handler clsid}* \\ **OverrideFileSystemProperties** con los nombres de las propiedades que desean invalidar. Esto se limita a un conjunto fijo de propiedades que se muestran en la siguiente lista de las que el sistema tiene conocimientos.
+
+
+      La invalidación se admite para los siguientes valores de propiedad:
+
+
+      -   [System.Kind](./props-system-kind.md)
+
+      -   [System.FileName](./props-system-filename.md)
+
+      -   [System.IsPinnedToNameSpaceTree](./props-system-ispinnedtonamespacetree.md)
+
+      -   [System.ItemNameDisplay](./props-system-itemnamedisplay.md)
+
+      -   [System.SFGAOFlags](./props-system-sfgaoflags.md)
+
+      -   [System.ItemPathDisplay](./props-system-itempathdisplay.md)
+
+      -   [System.ItemPathDisplayNarrow](./props-system-itempathdisplaynarrow.md)
+
+      -   [System.ItemFolderNameDisplay](./props-system-itemfoldernamedisplay.md)
+
+      -   [System.ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md)
+
+      -   [System.ItemFolderPathDisplayNarrow](./props-system-itemfolderpathdisplaynarrow.md)
+
+
+      Para obtener una lista completa de todas las propiedades de Shell, vea [Propiedades del shell](./props.md).
+
+
+      > [!IMPORTANT]
+
+      > Los valores de propiedad invalidados solo se usan cuando se indexan los archivos. Por lo tanto, al examinar los archivos del origen de datos del sistema de archivos no se revelan los valores invalidados.
+
+       
+  - question: >
+      Almacenar propiedades en formatos de archivo basados en XML
+    answer: >
+      Hay dos opciones básicas disponibles para almacenar propiedades en formatos de archivo basados en XML:
+
+
+      -   Almacene cada propiedad mediante elementos y atributos XML según el esquema XML del documento. Este enfoque es más "descriptivo para XML".
+
+      -   Serializar todo el almacén de propiedades en un objeto binario grande (BLOB) de memoria, convertir el BLOB en una cadena codificada en base64 y, a continuación, almacenar esa cadena en el XML. Este es el más sencillo de los dos enfoques y se puede usar para proporcionar compatibilidad trivial con metadatos abiertos.
+
+
+      Algunos controladores pueden combinar estos enfoques, almacenar algunos valores importantes en formato XML estándar y almacenar el resto en un BLOB, por ejemplo.
+  - question: >
+      Propiedades calculadas
+    answer: >
+      Algunas propiedades se derivan de atributos específicos de un archivo. Por ejemplo, la [propiedad System.Image.Dimensions](./props-system-image-dimensions.md) viene determinada por las dimensiones reales de la imagen en un archivo de imagen. Dado que el controlador de propiedades no puede cambiar estos valores de propiedad, se marcan en `isInnate="true"` la descripción de la propiedad. Otras propiedades se calculan a partir de una parte de una propiedad específica o agregando los valores de varias propiedades. Dado que las actualizaciones de estas propiedades "calculadas" crearían ambigüedad en cuanto a cómo se deben cambiar los valores de "origen", las propiedades calculadas deben marcarse en la descripción de la propiedad o notificadas como de `isInnate="true"` solo lectura. La última opción está disponible indicando al controlador que devuelva S \_ FALSE desde [**IPropertyStoreCapabilities::IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable).
+- name: Preguntas más frecuentes
+  questions:
+  - question: >
+      ¿Por qué el indexador de Windows Search no carga mi controlador de propiedades?
+    answer: >
+      El Windows Search se ejecuta como un servicio del sistema y no puede cargar archivos DLL almacenados en el directorio del perfil de usuario. Si va a compilar y depurar mediante Microsoft Visual Studio, colocará el archivo DLL en el perfil de usuario (y, por tanto, el indexador no lo cargará). Para evitarlo, copie el archivo DLL fuera de la carpeta del perfil (por ejemplo, en C: Archivos de programa **\\ \\ YourAppName)** y regístrelo allí.
+
+
+      Para obtener instrucciones más específicas sobre cómo desarrollar controladores de propiedades para trabajar con el indexador Windows Search, vea [Developing Property Handlers for Windows Search](../search/-search-3x-wds-extidx-propertyhandlers.md).
+  - question: >
+      ¿Qué propiedades se deben detectar mediante los métodos de enumeración "IPropertyStore::GetCount" e "IPropertyStore::GetAt"?
+    answer: "No todos los clientes de objetos de almacén de propiedades usan estos métodos. Algunos clientes son conscientes de las propiedades que planean solicitar directamente (por nombre PKEY) o reciben información de propiedades a través de una lista de descripción de propiedades. Los métodos de detección de propiedades suppport otros escenarios. Si una propiedad no necesita participar en estos escenarios, no es necesario enumerar. Por lo tanto, un controlador de propiedades puede generar un valor EMPTY que no sea VT para las propiedades que no se detectan a través de los métodos \\_ [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) e [**IPropertyStore::GetAt.**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85))\n\nSin embargo, las propiedades deben ser visibles a través de estos métodos si se cumple alguna de las condiciones siguientes:\n\n- **Si la propiedad se indexa para que se pueda buscar:** Esto significa que se incluye en el almacén de propiedades Windows Search (que se indica en el esquema de descripción de la propiedad) o está disponible para las búsquedas de `isColumn = \"true\"` texto completo ( `inInvertedIndex = \"true\"` ). En ausencia de estas marcas o ausencia de una descripción de propiedad, las propiedades de tipo \"string\" se agregarán automáticamente al índice invertido para habilitar la búsqueda. Dado que la lista de propiedades conocidas (aquellas con descripciones de propiedades instaladas) en el sistema de propiedades es muy grande (más de 800 propiedades), sería poco práctico preguntar a cada controlador de propiedades por cada propiedad registrada en el sistema de propiedades. En su lugar, el proceso de indexación enumera las propiedades pertinentes del controlador de propiedades para cada elemento que indexa y usa los valores de las propiedades enumeradas para generar el índice de texto completo.\n- **Si la propiedad se debe copiar cuando se duplica el conjunto** de propiedades del elemento: Para implementar una función \"copiar un conjunto de propiedades\", el elemento de origen hace que las propiedades que se deben copiar sean visibles a través de los métodos [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) e [**IPropertyStore::GetAt.**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) No se deben incluir las propiedades que no necesitan copiarse o que no tienen sentido copiar.\n- **Si el valor de propiedad no está vacío (VT \\_ EMPTY):** los valores de propiedad que están vacíos no son útiles para los clientes. Cuando los clientes intentan devolver valores de propiedad vacíos, se devuelve un valor de VT \\_ EMPTY. Por lo tanto, no se deben enumerar las propiedades con valores vacíos.\n-   **Si se debe quitar la propiedad al invocar la función \"quitar propiedades\":** Esta característica existe para proteger la privacidad; detecta todos los valores del controlador de propiedades a través de la enumeración y quita cada uno seleccionado para su eliminación por el usuario.\n> [!Note]  \n> La enumeración de propiedades no comunica el conjunto de propiedades que admite un controlador de propiedades determinado si el controlador admite un esquema fijo (y no abre metadatos). En su lugar, estos controladores deben documentar el conjunto de propiedades que admiten.\n\n \n"
+  - question: >
+      Cómo saber qué formatos de archivo admiten metadatos abiertos?
+    answer: >
+      Para obtener información sobre la compatibilidad con metadatos abiertos, vea "Tipos de archivo que admiten metadatos abiertos" en [Tipos de archivo](../shell/fa-file-types.md).
+  - question: >
+      ¿VT_NULL los valores se pueden almacenar mediante un controlador de propiedades?
+    answer: >
+      No. Los valores NULL de VT se convertirán en VT EMPTY en las llamadas a \_ \_ [**IPropertyStore::GetValue**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85)) e [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)).
+  - question: >
+      ¿Qué formatos de cadena de fecha son compatibles con la función 'PropVariantChangeType'?
+    answer: >
+      Por lo general, las propiedades que representan valores de fecha y hora deben representarse mediante \_ VT FILETIME. Sin embargo, muchos orígenes de datos proporcionan esta información en forma de cadena. La API [**auxiliar PropVariantChangeType**](/windows/win32/api/propvarutil/nf-propvarutil-propvariantchangetype) admite la coerción de algunos formatos de fecha de cadena en valores [**FILETIME,**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) como se muestra en la tabla siguiente.
+
+
+
+
+      | Formato                  | Windows Vista, Windows XP y Microsoft Windows Desktop Search (WDS) | Windows 7 | Notas                                                                                                                                                                                                 |
+
+      |-------------------------|-----------------------------------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+      | yyyy/mm/dd:hh:mm:ss.uuu | Sí                                                                   | Sí       | UTC; y=year, m=month, d=date, h=hours (reloj de 24 horas), m=minutes, s=seconds, u=microseconds                                                                                                           |
+
+      | yyyy-mm-ddThh:mm:ssZ    | No                                                                    | Sí       | **Especificación de formato ISO8601** UTC (se indica mediante el indicador de zona horaria "Z"); y=year, m=month, d=date, h=hours (reloj de 24 horas), m=minutes, s=seconds; 'T' es un delimitador para la parte de tiempo.<br/> |
+  - question: >
+      ¿Es posible crear un controlador de propiedades de solo lectura?
+    answer: >
+      Sí. Algunas implementaciones del controlador de propiedades no admiten la escritura de valores de propiedad. Estos controladores de propiedades deben devolver STGM E ACCESSDENIED en las llamadas a \_ \_ **IInitializeXXX::Initialize** que pasan STGM READWRITE o en cualquier llamada a \_ [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)).
+
+
+      Todos los controladores de propiedades abiertos en el modo READ de STGM deben devolver \_ STGM E ACCESSDENIED en las llamadas \_ a \_ [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)).
+  - question: >
+      ¿Puede un controlador de propiedades tratar una propiedad como de solo lectura, incluso si el esquema indica que la propiedad es de escritura?
+    answer: "Sí. En el sistema de esquema, las propiedades se anotan como de solo lectura (incluidas las que tienen `isInnate = \"true\"` ) o de lectura y escritura. Los controladores de propiedades que no admiten la escritura de una propiedad determinada que el esquema dice que debe ser grabable deben implementar [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) y devolver S FALSE en las llamadas a \\_ [**IPropertyStoreCapabilities::IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) para esa propiedad. Esto indica que, en el contexto de este controlador y este archivo, la propiedad no se puede escribir.\n\n> [!Note]  \n> La acción inversa no es posible. No se puede habilitar un controlador de propiedades para escribir una propiedad marcada como de solo lectura en el esquema\n"
+additionalContent: "\n## <a name=\"related-topics\"></a>Temas relacionados\n\n[Descripción de los controladores de propiedades](./building-property-handlers-properties.md)\n\n[Usar nombres de tipo](./building-property-handlers-user-friendly-kind-names.md)\n\n[Usar listas de propiedades](./building-property-handlers-property-lists.md)\n\n[Inicialización de controladores de propiedades](./building-property-handlers-property-handlers.md)\n\n[Registro y distribución de controladores de propiedades](./prophand-reg-dist.md)"
