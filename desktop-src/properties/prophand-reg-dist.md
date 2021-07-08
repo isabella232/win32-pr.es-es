@@ -1,19 +1,19 @@
 ---
-description: En este artículo se explica cómo registrar y distribuir controladores de propiedades para trabajar con el sistema de propiedades de Windows.
+description: En este artículo se explica cómo registrar y distribuir controladores de propiedades para trabajar con el Windows de propiedades.
 ms.assetid: E6E81E04-9CC1-4df5-9A87-DE0CBD177356
 title: Registro y distribución de controladores de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cffd6169ecbf371e49e27c555f468cdc03e2c3fc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ce53f0805c4db5efe38e77ba4e7d1ab5b331c83f
+ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408348"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113481930"
 ---
 # <a name="registering-and-distributing-property-handlers"></a>Registro y distribución de controladores de propiedades
 
-En este tema se explica cómo crear y registrar controladores de propiedades para trabajar con el sistema de propiedades de Windows.
+En este tema se explica cómo crear y registrar controladores de propiedades para trabajar con el Windows de propiedades.
 
 Este tema se organiza de la siguiente manera:
 
@@ -56,13 +56,13 @@ Los controladores de propiedades para un tipo de archivo determinado se distribu
 Los controladores de propiedades se invocan para cada archivo de un equipo determinado. Normalmente se les llama en las siguientes circunstancias:
 
 -   Durante la indexación del archivo. Esto se realiza fuera de proceso, en un proceso aislado con derechos restringidos.
--   Cuando se accede a los archivos en Explorador de Windows con el fin de leer y escribir valores de propiedad. Esto se realiza en proceso.
+-   Cuando se accede a los archivos en Windows Explorer con el fin de leer y escribir valores de propiedad. Esto se realiza en proceso.
 
 ### <a name="guidelines-for-performance-and-reliability"></a>Directrices para el rendimiento y la confiabilidad
 
 En cualquier momento, un usuario podría tener decenas de miles de archivos de cualquier tipo específico (incluido el suyo) en sus equipos y podría acceder o modificar cualquiera o todos estos archivos en cualquier momento. Dado que los controladores de propiedades se invocan con frecuencia para admitir estas operaciones de acceso y modificación, las características de rendimiento y confiabilidad del controlador de propiedades en entornos ocupados y muy simultáneos son de importancia crítica.
 
-Tenga en cuenta las siguientes directrices a medida que desarrolla y prueba el controlador de propiedades.
+Tenga en cuenta las siguientes directrices mientras desarrolla y prueba el controlador de propiedades.
 
 -   **Enumeración de propiedades**
 
@@ -70,19 +70,19 @@ Tenga en cuenta las siguientes directrices a medida que desarrolla y prueba el c
 
 -   **Escritura de propiedades en el lugar**
 
-    Si es posible, cuando se trabaja con archivos de tamaño mediano o grande (varios cientos de KB o más), el formato de archivo debe organizarse para que la lectura o escritura de valores de propiedad no requiera la lectura de todo el archivo desde el disco. Incluso si es necesario buscar el archivo, no debe leerse en la memoria en su totalidad porque eso abate el espacio de trabajo de Explorador de Windows o el indexador de Windows Search cuando intentan acceder a estos archivos o indexar estos archivos. Para obtener más información, vea [Inicializar controladores de propiedades](./building-property-handlers-property-handlers.md).
+    Si es posible, cuando se trabaja con archivos de tamaño mediano o grande (varios cientos de KB o más), el formato de archivo debe organizarse para que la lectura o escritura de valores de propiedad no requiera la lectura de todo el archivo desde el disco. Incluso si es necesario buscar el archivo, no debe leerse en la memoria en su totalidad porque eso abate el espacio de trabajo de Windows Explorer o el indexador de Windows Search cuando intentan acceder a estos archivos o indexar estos. Para obtener más información, vea [Inicializar controladores de propiedades](./building-property-handlers-property-handlers.md).
 
-    Una técnica útil para lograrlo es agregar espacio adicional al encabezado del archivo para que la próxima vez que sea necesario escribir un valor de propiedad, el valor se pueda escribir en su lugar sin necesidad de volver a escribir todo el archivo. Esto requiere la funcionalidad ManualSafeSave. Este enfoque implica un riesgo adicional de que la operación de escritura de archivos se interrumpa mientras la escritura está en curso (debido a un bloqueo del sistema o a una pérdida de energía), pero dado que los tamaños de propiedad suelen ser pequeños, la probabilidad de esta interrupción es similar a pequeña y las mejoras de rendimiento que se pueden realizar a través de la escritura de propiedades en el lugar se consideran lo suficientemente importantes como para justificar este riesgo adicional. Aun así, debe tener cuidado de probar la implementación exhaustivamente para asegurarse de que los archivos no estén dañados en caso de que se presente un error en el transcurso de una operación de escritura.
+    Una técnica útil para lograrlo es agregar espacio adicional al encabezado del archivo para que la próxima vez que sea necesario escribir un valor de propiedad, el valor se pueda escribir en su lugar sin necesidad de volver a escribir todo el archivo. Esto requiere la funcionalidad ManualSafeSave. Este enfoque implica un riesgo adicional de que la operación de escritura de archivos se interrumpa mientras la escritura está en curso (debido a un bloqueo del sistema o a una pérdida de energía), pero como los tamaños de propiedad suelen ser pequeños, la probabilidad de esta interrupción es similarmente pequeña y las mejoras de rendimiento que se pueden realizar a través de la escritura de propiedades en el lugar se consideran lo suficientemente importantes como para justificar este riesgo adicional. Aun así, debe tener cuidado de probar la implementación exhaustivamente para asegurarse de que los archivos no estén dañados en caso de que se presente un error en el transcurso de una operación de escritura.
 
     Por último, al implementar la escritura de propiedades local con ManualSafeSave, a veces la operación no se puede realizar en su lugar y toda la secuencia se debe volver a escribir de todos modos. Para facilitar la reescritura, la secuencia proporcionada durante la inicialización del controlador admite la [**interfaz IDestinationStreamFactory.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-idestinationstreamfactory) La **interfaz IDestinationStreamFactory permite** que las implementaciones de controladores obtengan una secuencia temporal para escribir; Cuando se completan todas las escrituras y se llama al método [**IDestinationStreamFactory::GetDestinationStream,**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream) esta secuencia se usa para reemplazar completamente la secuencia de archivos original. Cuando se usa la secuencia de destino, la secuencia de archivo original debe tratarse como de solo lectura, ya que se reemplazará por la secuencia de destino después de llamar al método **IDestinationStreamFactory::GetDestinationStream.**
 
 -   **Elección del modelo de subprocesos COM**
 
-    Para maximizar la eficacia del controlador de propiedades, debe especificar que usa el modelo de subprocesos COM `Both` . Esto permite el acceso directo desde los departamentos STA (Explorador de Windows, por ejemplo) y los departamentos del agente de transferencia de mensajes (MTA) (el proceso SearchProtocolHost en Windows Search, por ejemplo), evitando la sobrecarga de serialización en esos entornos. Para lograr todas las ventajas del modelo de subprocesos, los servicios de los que depende el controlador también se deben designar como para evitar cualquier serialización en las llamadas a `Both` `Both` esos componentes. Consulte la documentación de estos servicios concretos para comprobar si usan este modelo de subprocesos.
+    Para maximizar la eficacia del controlador de propiedades, debe especificar que usa el modelo de subprocesos COM `Both` . Esto permite el acceso directo desde los departamentos sta (por ejemplo, Windows Explorer) y los departamentos del agente de transferencia de mensajes (MTA) (el proceso SearchProtocolHost en Windows Search, por ejemplo), evitando la sobrecarga de serialización en esos entornos. Para lograr todas las ventajas del modelo de subprocesos, los servicios de los que depende el controlador también se deben designar como para evitar cualquier serialización en las llamadas a `Both` `Both` esos componentes. Consulte la documentación de estos servicios concretos para comprobar si usan este modelo de subprocesos.
 
 -   **Simultaneidad del controlador de propiedades**
 
-    Los controladores de propiedades y la [**interfaz IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) están diseñados para el acceso en serie en lugar de simultáneo. Explorador de Windows, el indexador Windows Search y todas las demás invocaciones de controlador de propiedades del código base de Windows garantizan este uso. No debe haber ninguna razón para que terceros usen un controlador de propiedades simultáneamente, pero este comportamiento no se puede garantizar. Además, aunque se espera que el patrón de llamada sea serie, las llamadas pueden aparecer en subprocesos diferentes (por ejemplo, cuando se llama al objeto de forma remota a través de COM RPC, como ocurre en el indexador). Por lo tanto, las implementaciones del controlador de propiedades deben admitir la llamada a en subprocesos diferentes y, idealmente, no deben sufrir ningún efecto negativo cuando se llama a la vez. Dado que el patrón de llamada previsto es serie, una implementación trivial que use una sección crítica debe ser suficiente para cumplir estos requisitos en la mayoría de los casos. Es aceptable evitar el bloqueo en llamadas simultáneas mediante la función [**TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection) para detectar y producir errores en las llamadas simultáneas.
+    Los controladores de propiedades y la [**interfaz IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) están diseñados para el acceso en serie en lugar de simultáneo. Windows El Explorador, el Windows search y todas las demás invocaciones de controlador de propiedades de la base de Windows código base garantizan este uso. No debe haber ninguna razón para que terceros usen un controlador de propiedades simultáneamente, pero este comportamiento no se puede garantizar. Además, aunque se espera que el patrón de llamada sea serie, las llamadas pueden aparecer en subprocesos diferentes (por ejemplo, cuando se llama al objeto de forma remota a través de COM RPC, como ocurre en el indexador). Por lo tanto, las implementaciones del controlador de propiedades deben admitir la llamada a en subprocesos diferentes y, idealmente, no deben sufrir ningún efecto negativo cuando se llama a la vez. Dado que el patrón de llamada previsto es serie, una implementación trivial que use una sección crítica debe ser suficiente para cumplir estos requisitos en la mayoría de los casos. Es aceptable evitar el bloqueo en llamadas simultáneas mediante la función [**TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection) para detectar y producir errores en las llamadas simultáneas.
 
 -   **Simultaneidad de archivos**
 
@@ -103,7 +103,7 @@ Tenga en cuenta las siguientes directrices a medida que desarrolla y prueba el c
 
      
 
-    Los controladores de propiedades abiertos **para escritura** (GPS READWRITE) denegarán a \_ otros lectores y escritores. Los controladores pueden optar por un comportamiento que permita a los lectores especificar la `EnableShareDenyWrite` marca (lo que implica habilitar lectura) en su registro.
+    Los controladores de propiedades abiertos **para escritura** (GPS \_ READWRITE) denegarán a otros lectores y escritores. Los controladores pueden optar por un comportamiento que permita a los lectores especificar la `EnableShareDenyWrite` marca (lo que implica habilitar lectura) en su registro.
 
     Los controladores de propiedades se abren **para lectura** (GPS DEFAULT), de forma predeterminada habilitan otros lectores, \_ pero deniegan a otros escritores. Los controladores pueden optar por habilitar otros escritores especificando la `EnableShareDenyNone` marca en su registro. Esto significa que un controlador puede controlar correctamente una situación en la que cambia el contenido de un archivo mientras el controlador lee el archivo.
 
@@ -125,7 +125,7 @@ Tenga en cuenta las siguientes directrices a medida que desarrolla y prueba el c
 [Inicialización de controladores de propiedades](./building-property-handlers-property-handlers.md)
 </dt> <dt>
 
-[Procedimientos recomendados y preguntas más frecuentes sobre el controlador de propiedades](./prophand-bestprac-faq.md)
+[Procedimientos recomendados y preguntas más frecuentes sobre el controlador de propiedades](./prophand-bestprac-faq.yml)
 </dt> </dl>
 
  

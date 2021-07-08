@@ -1,10 +1,10 @@
-- name: Características heredadas del entorno de Windows
+- name: Características heredadas Windows entorno de ejecución
   href: legacy-windows-environment.md
   items:
     - name: Características heredadas del shell
       href: legacy-shell-features.md
       items:
-        - name: Creación de conciliadores de minúsculas
+        - name: Creación de conciliadores de mal estado
           href: briefcase-reconcilers.md
         - name: Crear un controlador de limpieza de disco
           href: disk-cleanup.md
@@ -14,15 +14,15 @@
           href: nse-folderview.md
         - name: Personalizar la vista web de una carpeta
           href: web-view.md
-        - name: Accesos directos a Internet de aplicaciones
+        - name: Accesos directos a Internet de la aplicación
           href: internet-shortcuts.md
         - name: Usar el objeto Active Desktop
           href: active-desktop-interface.md
-        - name: Crear controladores de columna
+        - name: Crear controladores de columnas
           href: column-handlers.md
         - name: Crear controladores de búsqueda
           href: search-handlers.md
-        - name: Reemplazo de la aplicación visor de imágenes y faxes de Windows mediante el verbo de vista previa
+        - name: Reemplazar la aplicación Windows visor de imágenes y faxes mediante el verbo de vista previa
           href: replacing-picture-fax-viewer.md
         - name: Asistentes para fotos
           href: photo-wizards-bumper.md
@@ -213,7 +213,7 @@
                       href: be-non-exclusive.md
                     - name: Proporcionar los comentarios adecuados
                       href: provide-appropriate-feedback.md
-                    - name: Uso de variación natural
+                    - name: Usar variación natural
                       href: use-natural-variation.md
                 - name: Interacción social
                   href: social-interaction.md
@@ -222,9 +222,9 @@
                       href: create-personality.md
                     - name: Observar la etiqueta adecuada
                       href: observe-appropriate-etiquette.md
-                    - name: Uso de la indescomo
+                    - name: Uso de Elogio
                       href: use-praise.md
-                    - name: Creación de un team player
+                    - name: Creación de un jugador de equipo
                       href: create-a-team-player.md
                     - name: Consideración de los efectos de género
                       href: consider-gender-effects.md
@@ -242,9 +242,9 @@
                   items:
                     - name: Ser eficaz y natural
                       href: be-efficient-and-natural.md
-                    - name: Uso de la voz activa
+                    - name: Uso de La voz activa
                       href: use-the-active-voice.md
-                    - name: Usar el tiempo y el énfasis adecuados
+                    - name: Uso de tiempo y énfasis adecuados
                       href: use-appropriate-timing-and-emphasis.md
             - name: Introducción a la interfaz de programación de Microsoft Agent
               href: microsoft-agent-programming-interface-overview.md
@@ -315,14 +315,14 @@
                 - name: Acceso directo a los servicios de Microsoft Agent
                   href: accessing-microsoft-agent-services-directly.md
                   items:
-                    - name: Modelo de objetos del agente
+                    - name: Modelo de objetos del Agente
                       href: the-agent-object-model.md
                 - name: Referencia
                   href: reference-.md
                   items:
                     - name: El objeto Request
                       href: the-request-object.md
-                    - name: El control agente
+                    - name: Control del agente
                       href: the-agent-control.md
                       items:
                         - name: Métodos de control del agente
@@ -333,7 +333,7 @@
                         - name: Propiedades del control de agente
                           href: agent-control-properties.md
                           items:
-                            - name: Propiedad Connected
+                            - name: Propiedad connected
                               href: connected-property.md
                             - name: Propiedad Name
                               href: name-property-a.md
@@ -415,9 +415,9 @@
                               href: hide-method.md
                             - name: Interrupt (método)
                               href: interrupt-method.md
-                            - name: Listen (método)
+                            - name: Método Listen
                               href: listen-method.md
-                            - name: Método MoveTo
+                            - name: MoveTo (método)
                               href: moveto-method.md
                             - name: Play (método)
                               href: play-method.md
@@ -435,7 +435,7 @@
                               href: think-method.md
                             - name: Wait (Método)
                               href: wait-method.md
-                        - name: Propiedades del objeto Character
+                        - name: Propiedades del objeto character
                           href: character-object-properties.md
                           items:
                             - name: Propiedad activa
@@ -458,7 +458,7 @@
                               href: helpfile-property.md
                             - name: Propiedad HelpModeOn
                               href: helpmodeon-property.md
-                            - name: IdleOn( Propiedad)
+                            - name: Propiedad IdleOn
                               href: idleon-property.md
                             - name: Propiedad LanguageID
                               href: languageid-property.md
@@ -482,7 +482,7 @@
                               href: srmodeid-property.md
                             - name: Propiedad SRStatus
                               href: srstatus-property.md
-                            - name: Top (Propiedad)
+                            - name: Propiedad Top
                               href: top-property.md
                             - name: Propiedad TTSModeID
                               href: ttsmodeid-property.md
@@ -543,7 +543,7 @@
                               href: caption-property.md
                             - name: Propiedad De confianza
                               href: confidence-property.md
-                            - name: ConfidenceText (propiedad)
+                            - name: Propiedad ConfidenceText
                               href: confidencetext-property.md
                             - name: Propiedad Enabled
                               href: enabled-property-co.md
@@ -555,7 +555,7 @@
                               href: voice-property-c.md
                             - name: Propiedad VoiceCaption
                               href: voicecaption-property-c.md
-                    - name: El objeto Balloon
+                    - name: El objeto Globo
                       href: the-balloon-object.md
                       items:
                         - name: Propiedad BackColor
@@ -578,7 +578,7 @@
                           href: fontsize-property-bal.md
                         - name: Propiedad FontStrikeThru
                           href: fontstrikethru-property.md
-                        - name: Propiedad FontUnderline
+                        - name: FontUnderline (propiedad)
                           href: fontunderline-property.md
                         - name: Propiedad ForeColor
                           href: forecolor-property.md
@@ -645,7 +645,7 @@
             - name: Programación de la interfaz del servidor de Microsoft Agent
               href: programming-the-microsoft-agent-server-interface.md
               items:
-                - name: Agregar funcionalidad de Microsoft Agent a la aplicación
+                - name: Adición de la funcionalidad de Microsoft Agent a la aplicación
                   href: adding-microsoft-agent-functionality-to-your-application.md
                 - name: Cargar datos de caracteres y animaciones
                   href: loading-character-and-animation-data.md
@@ -676,7 +676,7 @@
                       items:
                         - name: 'IAgentAudioOutputProperties::GetEnabled'
                           href: iagentaudiooutputproperties--getenabled.md
-                        - name: 'IAgentAudioOutputProperties::GetUsing SoundEffects'
+                        - name: 'IAgentAudioOutputProperties::GetUsingSoundEffects'
                           href: iagentaudiooutputproperties--getusingsoundeffects.md
                     - name: IAgentAudioOutputPropertiesEx
                       href: iagentaudiooutputpropertiesex.md
@@ -754,7 +754,7 @@
                           href: iagentcharacter--getposition.md
                         - name: 'IAgentCharacter::GetSize'
                           href: iagentcharacter--getsize.md
-                        - name: 'IAgentCharacter::GetEffectsOn'
+                        - name: 'IAgentCharacter::GetSoundEffectsOn'
                           href: iagentcharacter--getsoundeffectson.md
                         - name: 'IAgentCharacter::GetTTSPitch'
                           href: iagentcharacter--getttspitch.md
@@ -1045,7 +1045,7 @@
                         - name: 'IAgentUserInput::GetItemText'
                           href: iagentuserinput--getitemtext.md
             - name: Preguntas más frecuentes sobre programación y scripting
-              href: programming-scripting-faq.md
+              href: programming-scripting-faq.yml
             - name: Códigos de error de Microsoft Agent
               href: microsoft-agent-error-codes.md
         - name: Uso de motores de voz con Microsoft Agent
@@ -1135,7 +1135,7 @@
               items:
                 - name: Diseño de animación
                   href: animation-design.md
-                - name: El conjunto de animaciones de Office
+                - name: Conjunto Office animación
                   href: the-office-animation-set.md
                 - name: Instalación del carácter
                   href: installing-your-character.md
@@ -1174,21 +1174,21 @@
           items:
             - name: Animaciones de Microsoft Agent para el carácter Genie
               href: microsoft-agent-animations-for-genie-character.md
-            - name: Animaciones de Microsoft Agent para el carácter Desándes
+            - name: Animaciones de Microsoft Agent para el carácter Descibe
               href: microsoft-agent-animations-for-merlin-character.md
-            - name: Animaciones de Microsoft Agent para caracteres desastrados
+            - name: Animaciones de Microsoft Agent para el carácter descarado
               href: microsoft-agent-animations-for-robby-character.md
-            - name: Animaciones de Microsoft Agent para caracteres de desorden
+            - name: Animaciones de Microsoft Agent para carácter despiadado
               href: microsoft-agent-animations-for-peedy-character.md
         - name: Bibliografía
           href: bibliography.md
-    - name: Windows Desktop Search 2.x
+    - name: Windows Búsqueda de escritorio 2.x
       href: '-search-2x-wds-overview.md'
       items:
         - name: Consulta del índice (WDS 2.x)
           href: '-search-2x-querying-entry-page.md'
           items:
-            - name: Llamada a WDS desde páginas web
+            - name: Llamada a WDS desde Páginas web
               href: '-search-2x-wds-browserhelpobject.md'
             - name: Llamar a WDS mediante programación
               href: '-search-2x-wds-callingwdsprogrammatically.md'
@@ -1208,7 +1208,7 @@
                   href: '-search-2x-wds-ph-ui-extensions.md'
                 - name: Notificación al índice de cambios
                   href: '-search-2x-wds-notifyingofchanges.md'
-                - name: Código de ejemplo de controlador Interfaz de usuario protocolo personalizado
+                - name: Código de ejemplo de controlador Interfaz de usuario personalizado
                   href: '-search-2x-wds-ph-ui-samplecode.md'
                 - name: Instalación y registro de controladores de protocolo
                   href: '-search-2x-wds-ph-install-registration.md'
@@ -1220,7 +1220,7 @@
           href: '-search-2x-wds-perceivedtype.md'
         - name: Protocolo de servicios de indexación de contenido
           href: '-search-2x-wds-content-indexing-services-protocol.md'
-        - name: WDS 2.x ActiveX Control Interfaces
+        - name: Interfaces de control de ActiveX WDS 2.x
           href: '-search-activex-control-reference-entry-page.md'
           items:
             - name: IPropertyFilter
@@ -1413,7 +1413,7 @@
         - name: Referencia
           href: defender-ref-entry.md
           items:
-            - name: Windows Defender enumeraciones
+            - name: Windows Defender Enumeraciones
               href: windows-defender-enumerations.md
               items:
                 - name: MPCALLBACK_TYPE
@@ -1458,7 +1458,7 @@
                   href: mpthreat-status.md
                 - name: MPTHREAT_TYPE
                   href: mpthreat-type.md
-            - name: Windows Defender Functions
+            - name: Windows Defender Funciones
               href: windows-defender-functions.md
               items:
                 - name: MpErrorMessageFormat
@@ -1493,7 +1493,7 @@
                   href: /windows/desktop/api/Windowsdefender/nf-windowsdefender-wdenable
                 - name: WDStatus
                   href: /windows/desktop/api/Windowsdefender/nf-windowsdefender-wdstatus
-            - name: Windows Defender estructuras
+            - name: Windows Defender Estructuras
               href: windows-defender-structures.md
               items:
                 - name: MPCALLBACK_DATA
@@ -1560,17 +1560,17 @@
                   href: mpthreat-stats-data.md
                 - name: MPVERSION_INFO
                   href: mpversion-info.md
-    - name: Prevención de pérdida de datos de punto de conexión
+    - name: Prevención de pérdida de datos del punto de conexión
       href: endpointdlp-endpoint-data-loss-prevention.md
       items:
-        - name: Enumeraciones de prevención de pérdida de datos de punto de conexión
+        - name: Enumeraciones de prevención de pérdida de datos del punto de conexión
           href: endpointdlp-enumerations.md
           items:
             - name: DlpActionType
               href: endpointdlp-dlpactiontype.md
             - name: DlpAppEnforceLevel
               href: endpointdlp-dlpappenforcelevel.md
-        - name: Funciones de prevención de pérdida de datos de punto de conexión
+        - name: Funciones de prevención de pérdida de datos del punto de conexión
           href: endpointdlp-functions.md
           items:
             - name: DlpNotifyCloseDocument
@@ -1621,7 +1621,7 @@
               href: endpointdlp-dlpnotifypresaveasdocument.md
             - name: DlpNotifyPreStashClipboard
               href: endpointdlp-dlpnotifyprestashclipboard.md
-        - name: Estructuras de prevención de pérdida de datos de punto de conexión
+        - name: Estructuras de prevención de pérdida de datos del punto de conexión
           href: endpointdlp-structures.md
           items:
             - name: DLP_APP_OP_ENLIGHTENED_LEVEL
