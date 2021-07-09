@@ -1,21 +1,21 @@
 ---
 title: PageBlackGenerationProcessingUnderColorAdditionStart
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Revise el parámetro PageBlackGenerationProcessingUnderColorAdditionStart. Este tema no es actual. Para obtener información actual, vea Especificación del esquema de impresión.
 ms.assetid: 6c2a7bb5-436d-40ed-a855-242a6a04bc16
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 595bc3e4514b1a2e8a4d302005b97e2625a560e2
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 11bdbd970f30a7d573b7c803ea447e4ac3e94ca2
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999192"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549353"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionstart"></a>PageBlackGenerationProcessingUnderColorAdditionStart
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe el nivel de sombra por debajo del cual se aplicará MICO.
+Describe el nivel de sombra por debajo del que se aplicará SHADOW.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Describe el nivel de sombra por debajo del cual se aplicará MICO.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                            |
@@ -70,7 +70,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -88,7 +88,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

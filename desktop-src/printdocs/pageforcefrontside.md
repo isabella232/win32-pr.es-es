@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageForceFrontSide. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 0658c808-f050-41f3-90b6-2a013b616b58
 title: PageForceFrontSide
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e363050034137bcfb3ff2b779ecda05200865312
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 79f22e9ec52b7cee72e8f3a479d161e9abb765c4
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996942"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549193"
 ---
 # <a name="pageforcefrontside"></a>PageForceFrontSide
 
@@ -25,7 +25,7 @@ Obliga a que la salida aparezca en la parte delantera de una hoja de medios. Rel
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
@@ -70,7 +70,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageForceFrontSide">
@@ -88,7 +88,7 @@ Las palabras clave públicas del esquema de impresión se definen en el espacio 
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

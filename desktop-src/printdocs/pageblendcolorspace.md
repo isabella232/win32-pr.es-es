@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageBlendColorSpace. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 86e3f44d-192e-412a-abb1-118e8592d90b
 title: PageBlendColorSpace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e12002b25265a66a0aa3a5168f29e1e8e542ce31
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: b36ce3a1def74058014fc396d9ef53aed6a32302
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998082"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549343"
 ---
 # <a name="pageblendcolorspace"></a>PageBlendColorSpace
 
@@ -25,7 +25,7 @@ Describe el espacio de color que se debe usar para las operaciones de combinaci�
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -69,7 +69,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageBlendColorSpace">
@@ -94,7 +94,7 @@ Las palabras clave públicas del esquema de impresión se definen en el espacio 
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

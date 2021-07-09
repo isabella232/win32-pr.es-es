@@ -1,21 +1,21 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario JobHolePunch. Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 26e9e7d6-7c01-4687-aa64-7aea867b4e58
 title: JobHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56316c94dc56a2646446a8cd63885cceaa1407fa
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 7c82a36784ab6a1fb5eb0c8d682c45cce574ee9e
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999302"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549363"
 ---
 # <a name="jobholepunch"></a>JobHolePunch
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las características de los huecos de la salida. Todos los documentos están juntos. Las palabras clave JobHolePunch y DocumentHolePunch son mutuamente excluyentes. Ambos no se deben especificar simultáneamente en un documento PrintTicket o Capacidades de impresión.
+Describe las características de los huecos de la salida. Todos los documentos se reúnen. Las palabras clave JobHolePunch y DocumentHolePunch son mutuamente excluyentes. Ambos no deben especificarse simultáneamente en un documento PrintTicket o Capacidades de impresión.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -25,7 +25,7 @@ Describe las características de los huecos de la salida. Todos los documentos e
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                              |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                                                                                  |
@@ -60,7 +60,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 

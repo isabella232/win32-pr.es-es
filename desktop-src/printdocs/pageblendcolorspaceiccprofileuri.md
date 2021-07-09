@@ -1,21 +1,21 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro PageBlendColorSpaceICCProfileURI. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 05924c7d-e074-4835-b42c-53c77dc1bbb5
 title: PageBlendColorSpaceICCProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cbf1233e172a81053baee0abe1e21d79064045a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 50db89757737ff5aa6a1358af418ee33809b960e
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997702"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549323"
 ---
 # <a name="pageblendcolorspaceiccprofileuri"></a>PageBlendColorSpaceICCProfileURI
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica una referencia de URI relativa a un perfil DEERK que define el espacio de colores que SE DEBE usar para la combinación. es <Uri> un nombre de elemento absoluto relativo a la raíz del \_ paquete.
+Especifica una referencia de URI relativa a un perfil DE CIA que define el espacio de color que se debe usar para la combinación. es <Uri> un nombre de elemento absoluto relativo a la raíz del \_ paquete.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Especifica una referencia de URI relativa a un perfil DEERK que define el espaci
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                                                                                                |
 | Prefijo de ámbito <br/> | Página<br/>                                                                                                                        |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

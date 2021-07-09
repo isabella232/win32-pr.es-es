@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageScalingScaleWidth. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 0de776f3-ae09-49f4-a829-b3c0e2ab5bbc
 title: PageScalingScaleWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4ef53d9fe2906ae04cd1e7e3ea1513a631bc162
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 75b6180395eb656ee40d8558f7208fec2ad2fce8
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997462"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548803"
 ---
 # <a name="pagescalingscalewidth"></a>PageScalingScaleWidth
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el factor de escalado en la dirección ImageableSizeWidth para el escalado personalizado.
 
@@ -24,7 +24,7 @@ Especifica el factor de escalado en la dirección ImageableSizeWidth para el esc
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefijo de ámbito <br/> | Página<br/>                                         |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | String<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Entero<br/> | no definido<br/>       |
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

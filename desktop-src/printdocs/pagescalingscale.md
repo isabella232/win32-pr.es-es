@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageScalingScale. Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 49a60a94-fb65-4439-bebf-3f77ea0861fe
 title: PageScalingScale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 974242cf43bae50a8e81b17bcdd13d653032c6a9
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d8c6cee5fc46568e3cf7f15ecd43c07c6584c856
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999202"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548833"
 ---
 # <a name="pagescalingscale"></a>PageScalingScale
 
@@ -24,7 +24,7 @@ Especifica el factor de escalado para el escalado cuadrado personalizado.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefijo de ámbito <br/> | Página<br/>                                         |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |

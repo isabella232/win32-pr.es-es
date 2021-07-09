@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro PageScalingOffsetHeight. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: f6fa0421-a125-4ead-a540-d2f7327a26b6
 title: PageScalingOffsetHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a91178f1506196ab505a90de8bf3a3163fa8a3c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5f02370d28716dd3a8840001959bb7d963307d2f
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993743"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548963"
 ---
 # <a name="pagescalingoffsetheight"></a>PageScalingOffsetHeight
 
@@ -24,7 +24,7 @@ Especifica el desplazamiento de escala en la dirección ImageableSizeHeight para
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefijo de ámbito <br/> | Página<br/>                                         |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |

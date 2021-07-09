@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre la propiedad DocumentURI. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 7926ae9b-e195-4391-9006-1eb4cf386f88
 title: DocumentURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0d339b1b469f276492f7989b0ed7951ca1edad8
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2cb4d1572417ac85e14c25c238be1d49611ba858
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997072"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548813"
 ---
 # <a name="documenturi"></a>DocumentURI
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica un identificador uniforme de recursos (URI) para el documento.
 
@@ -25,7 +25,7 @@ Especifica un identificador uniforme de recursos (URI) para el documento.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Propiedad<br/> |
 | Prefijo de ámbito <br/> | Documento<br/> |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

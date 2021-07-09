@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageInputBin. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 78eb3119-a52f-4ff8-83bb-903e181c8a11
 title: PageInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f74e75653f7c6cbc6a586b80b3e8217286ce7c36
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: dc53d377106b95b26e694d531af2952cea98a8b1
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993772"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549173"
 ---
 # <a name="pageinputbin"></a>PageInputBin
 
@@ -25,7 +25,7 @@ Describe la ubicación de entrada instalada en un dispositivo o la lista complet
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
@@ -96,8 +96,8 @@ En la tabla siguiente se describen las características de las variables definid
 | \_EnvelopeOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Especifica el tipo de la ubicación.<br/>                                           |
 | \_FeedTypeValue\_<br/>           | string<br/>  | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                         | Especifica el mecanismo de fuente de la ubicación.<br/>                                 |
-| \_MediaCapacityValue\_<br/>      | string<br/>  | N/D<br/>        | Alto, Estándar.<br/>                                                                                                                                                            | Especifica si la ubicación es un cubo de alta capacidad (cualitativo).<br/>          |
-| \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática de tamaño de medio del dispositivo.<br/>                |
+| \_MediaCapacityValue\_<br/>      | string<br/>  | N/D<br/>        | Alto, Estándar.<br/>                                                                                                                                                            | Especifica si el cubo es un cubo de alta capacidad (cualitativo).<br/>          |
+| \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tamaño del medio del dispositivo.<br/>                |
 | \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tipo de medio del dispositivo.<br/>                |
 | \_MediaSheetCapacityValue\_<br/> | integer<br/> | Hojas<br/>     | Restricción de entero máxima permitida por el dispositivo.<br/>                                                                                                                              | Especifica la capacidad multimedia en número de páginas (nivel completo) de la ubicación.<br/> |
 | \_MediaPathValue\_<br/>          | string<br/>  | N/D<br/>        | Recta, Tieneine.<br/>                                                                                                                                                      | Especifica las características de la ruta de acceso multimedia.<br/>                         |

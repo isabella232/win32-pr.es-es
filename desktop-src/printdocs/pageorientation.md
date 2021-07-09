@@ -1,19 +1,19 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageOrientation. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 52f02fc1-56fb-404d-8939-df3a4b21570d
 title: PageOrientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01a94fb97ad1e64c7f55fd9520ed8a648a74f550
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: b6f0af08fcd29f34bb55bd16b1eac50487e96ffb
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997542"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549123"
 ---
 # <a name="pageorientation"></a>PageOrientation
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la orientación de la hoja de medios físicos.
 
@@ -23,8 +23,8 @@ Describe la orientación de la hoja de medios físicos.
 |------------------------------|---------------------------------------------------------------------------------------------------------|
 | Horizontal <br/>        | ¿El contenido se gira en la página 90?? grados CCW con respecto a la orientación estándar (vertical).<br/>  |
 | Vertical <br/>         | Orientación estándar.<br/>                                                                        |
-| ReverseLandscape <br/> | ¿El contenido se gira en la página 270?? grados CCW con respecto a la orientación estándar (vertical).<br/> |
-| ReversePortrait <br/>  | ¿El contenido se gira en la página 180?? grados relativos a la orientación estándar (vertical).<br/>     |
+| ReverseLandscape <br/> | ¿El contenido gira en la página 270?? grados CCW con respecto a la orientación estándar (vertical).<br/> |
+| ReversePortrait <br/>  | ¿El contenido gira en la página 180?? grados relativos a la orientación estándar (vertical).<br/>     |
 
 
 
@@ -38,11 +38,11 @@ Describe la orientación de la hoja de medios físicos.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                      |
 | Prefijo de ámbito <br/> | Página<br/>                                                                                                                                                                                         |
-| Notas <br/>          | Si un dispositivo de impresora solo puede admitir una dirección horizontal y esta dirección se conoce como "Horizontal inverso", la orientación de la página todavía se considerará como "Horizontal".<br/> |
+| Notas <br/>          | Si un dispositivo de impresora solo puede admitir una dirección horizontal y esta dirección se conoce como "Horizontal inversa", la orientación de la página se considerará como "Horizontal".<br/> |
 
 
 

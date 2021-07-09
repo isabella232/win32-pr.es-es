@@ -1,15 +1,15 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro JobErrorSheetSource. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 6de13ed8-bf15-4e2c-b42a-ea8178a6b5f9
 title: JobErrorSheetSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99c87a31e645b9ea5eedb22b48000991a99bc7e5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 656d71422c46800d6155c1dea1e221f9c6dfe021
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998162"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549393"
 ---
 # <a name="joberrorsheetsource"></a>JobErrorSheetSource
 
@@ -24,7 +24,7 @@ Especifica el origen de una hoja de errores personalizada.
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Documento<br/>                        |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |

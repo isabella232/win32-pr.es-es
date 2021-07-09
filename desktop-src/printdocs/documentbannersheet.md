@@ -1,21 +1,21 @@
 ---
-description: Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario DocumentBannerSheet. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: c10da176-946a-4439-8ad7-037013b39e41
 title: DocumentBannerSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ef61001e45178989d6f89e17d8cc38b82c1354
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 80ce05ffae190835e4a8b4082c634b34e26103ab
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996312"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548773"
 ---
 # <a name="documentbannersheet"></a>DocumentBannerSheet
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la hoja de banners que se va a generar para un documento determinado. La hoja de banners debe generarse en el valor predeterminado PageMediaSize , utilizando el valor predeterminado PageMediaType. La hoja de banners también debe aislarse del resto del documento. Esto significa que las opciones de finalización o procesamiento de documentos (como DocumentDuplex, DocumentStaple o DocumentBinding) no deben incluir la hoja de banners. La hoja de banners puede o no aislarse del resto del trabajo. Esto significa que cualquier opción de finalización o procesamiento de trabajos puede incluir la hoja de banners del documento. La hoja de banners debe aparecer como la primera hoja del documento.
+Describe la hoja de banners que se va a generar para un documento determinado. La hoja de banners debe generarse en el valor predeterminado PageMediaSize , utilizando el valor predeterminado PageMediaType. La hoja de banners también debe aislarse del resto del documento. Esto significa que las opciones de finalización o procesamiento de documentos (como DocumentDuplex, DocumentStaple o DocumentBinding) no deben incluir la hoja de banners. La hoja de banners puede o no estar aislada del resto del trabajo. Esto significa que cualquier opción de finalización o procesamiento del trabajo puede incluir la hoja de banners del documento. La hoja de banners debe aparecer como la primera hoja del documento.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -24,7 +24,7 @@ Describe la hoja de banners que se va a generar para un documento determinado. L
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefijo de ámbito <br/> | Documento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -63,7 +63,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                   | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres <br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción<br/>                                            |
+| \_OptionName\_<br/>          | string<br/> | caracteres <br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción<br/>                                            |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>         | True, False<br/>                                                                                                                                                                | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
@@ -72,7 +72,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:DocumentBannerSheet">
@@ -97,7 +97,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
