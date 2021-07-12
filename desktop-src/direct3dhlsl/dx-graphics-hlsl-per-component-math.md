@@ -1,5 +1,5 @@
 ---
-title: Per-Component matemáticas
+title: Per-Component operaciones matemáticas
 description: Con HLSL, puede programar sombreadores en un nivel de algoritmo.
 ms.assetid: a919df50-2d13-489d-9011-1137c997e121
 ms.topic: article
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c8c9eeea1072c53915588ac0099998e76c0452a
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5cd065e415aafffa59dd6c31d2b9aa4f4505021d
+ms.sourcegitcommit: 7c7a05f65d2cf1ba2dadf05f63ae91a048083946
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119600"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113589592"
 ---
-# <a name="per-component-math-operations"></a>Per-Component matemáticas
+# <a name="per-component-math-operations"></a>Per-Component operaciones matemáticas
 
-Con HLSL, puede programar sombreadores en un nivel de algoritmo. Para comprender el lenguaje, debe saber cómo declarar variables y funciones, usar funciones intrínsecas, definir tipos de datos personalizados y usar semántica para conectar argumentos de sombreador a otros sombreadores y a la canalización.
+Con HLSL, puede programar sombreadores en un nivel de algoritmo. Para entender el lenguaje, deberá saber cómo declarar variables y funciones, usar funciones intrínsecas, definir tipos de datos personalizados y usar semántica para conectar argumentos de sombreador a otros sombreadores y a la canalización.
 
 Una vez que aprenda a crear sombreadores en HLSL, deberá obtener información sobre las llamadas API para que pueda: compilar un sombreador para hardware determinado, inicializar constantes de sombreador e inicializar otro estado de canalización si es necesario.
 
--   [El tipo de vector](#the-vector-type)
+-   [Tipo de vector](#the-vector-type)
 -   [El tipo de matriz](#the-matrix-type)
     -   [Ordenación de matrices](#matrix-ordering)
 -   [Ejemplos](#examples)
 -   [Temas relacionados](#related-topics)
 
-## <a name="the-vector-type"></a>El tipo de vector
+## <a name="the-vector-type"></a>Tipo de vector
 
 Un vector es una estructura de datos que contiene entre uno y cuatro componentes.
 
@@ -71,12 +71,12 @@ vector <double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 El tipo de vector usa corchetes angulares para especificar el tipo y el número de componentes.
 
-Los vectores contienen hasta cuatro componentes, a los que se puede acceder a cada uno de ellos mediante uno de los dos conjuntos de nombres:
+Los vectores contienen hasta cuatro componentes, a los que se puede acceder mediante uno de los dos conjuntos de nomenclatura:
 
 -   El conjunto de posiciones: x,y,z,w
 -   El conjunto de colores: r,g,b,a
 
-Ambas instrucciones devuelven el valor del tercer componente.
+Ambas instrucciones devuelven el valor en el tercer componente.
 
 
 ```
@@ -105,7 +105,7 @@ temp = pos.xg  // NOT VALID because the position and color sets were used.
 
 
 
-La especificación de uno o varios componentes vectoriales al leer componentes se denomina swlingling. Por ejemplo:
+La especificación de uno o varios componentes vectoriales al leer componentes se denomina deslizar. Por ejemplo:
 
 
 ```
@@ -168,7 +168,7 @@ f_4D.a = pos.r * 5.0f;
 
 ## <a name="the-matrix-type"></a>El tipo de matriz
 
-Una matriz es una estructura de datos que contiene filas y columnas de datos. Los datos pueden ser cualquiera de los tipos de datos escalares; sin embargo, cada elemento de una matriz es el mismo tipo de datos. El número de filas y columnas se especifica con la cadena fila por columna que se anexa al tipo de datos.
+Una matriz es una estructura de datos que contiene filas y columnas de datos. Los datos pueden ser cualquiera de los tipos de datos escalares, pero cada elemento de una matriz es el mismo tipo de datos. El número de filas y columnas se especifica con la cadena fila por columna que se anexa al tipo de datos.
 
 
 ```
@@ -221,7 +221,7 @@ matrix <float, 2, 3> fFloatMatrix;
 
 
 
-Una matriz contiene valores organizados en filas y columnas, a los que se puede acceder mediante el operador de estructura "." seguido de uno de los dos conjuntos de nombres:
+Una matriz contiene valores organizados en filas y columnas, a los que se puede acceder mediante el operador de estructura "." seguido de uno de los dos conjuntos de nomenclatura:
 
 -   Posición de columna de fila de base cero:
     -   \_m00, \_ m01, \_ m02, \_ m03
@@ -234,7 +234,7 @@ Una matriz contiene valores organizados en filas y columnas, a los que se puede 
     -   \_31, \_ 32, \_ 33, \_ 34
     -   \_41, \_ 42, \_ 43, \_ 44
 
-Cada conjunto de nombres comienza con un carácter de subrayado seguido del número de fila y el número de columna. La convención de base cero también incluye la letra "m" antes del número de fila y columna. Este es un ejemplo que usa los dos conjuntos de nombres para acceder a una matriz:
+Cada conjunto de nombres comienza con un carácter de subrayado seguido del número de fila y el número de columna. La convención de base cero también incluye la letra "m" antes del número de fila y columna. Este es un ejemplo en el que se usan los dos conjuntos de nomenclatura para acceder a una matriz:
 
 
 ```
@@ -253,7 +253,7 @@ f_1D = matrix._22;  // read the value in row 2, column 2: 2.1
 
 
 
-Al igual que los vectores, los conjuntos de nombres pueden usar uno o varios componentes de cualquiera de los conjuntos de nombres.
+Al igual que los vectores, los conjuntos de nombres pueden usar uno o varios componentes de cualquier conjunto de nomenclatura.
 
 
 ```
@@ -271,12 +271,12 @@ temp = fMatrix._22_11   // valid
 
 
 
-También se puede acceder a una matriz mediante la notación de acceso de matriz, que es un conjunto de índices de base cero. Cada índice está dentro de corchetes. Se accede a una matriz 4x4 con los índices siguientes:
+También se puede acceder a una matriz mediante la notación de acceso de matriz, que es un conjunto de índices de base cero. Cada índice está entre corchetes. Se accede a una matriz 4x4 con los índices siguientes:
 
 -   \[0 \] \[ 0 \] , \[ 0 \] \[ 1 \] , \[ 0 \] \[ 2 \] , \[ 0 \] \[ 3\]
--   \[1 \] \[ 0 \] , \[ 1 \] \[ \] 1, \[ 1 \] \[ 2 \] , \[ 1 \] \[ 3\]
+-   \[1 \] \[ \] 0, \[ 1 \] \[ \] 1, \[ 1 \] \[ \] 2, \[ 1 \] \[ 3\]
 -   \[2 \] \[ \] 0, \[ 2 \] \[ \] 1, \[ 2 \] \[ 2 \] , \[ 2 \] \[ 3\]
--   \[3 \] \[ \] 0, \[ 3 \] \[ \] 1, \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]
+-   \[3 \] \[ 0 \] , \[ 3 \] \[ 1 \] , \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]
 
 Este es un ejemplo de acceso a una matriz:
 
@@ -293,7 +293,7 @@ temp = fMatrix[0][1] // single component read
 
 
 
-Observe que el operador de estructura "." no se usa para tener acceso a una matriz. La notación de acceso de matriz no puede usar el desdobado para leer más de un componente.
+Observe que el operador de estructura "." no se usa para tener acceso a una matriz. La notación de acceso de matriz no puede usar swling para leer más de un componente.
 
 
 ```
@@ -314,7 +314,7 @@ temp = fMatrix[0] // read the first row
 
 
 
-Al igual que con los vectores, la lectura de más de un componente de matriz se denomina swlingling. Se puede asignar más de un componente, suponiendo que solo se utilice un espacio de nombres. Todas estas son asignaciones válidas:
+Al igual que con los vectores, la lectura de más de un componente de matriz se denomina deslizar. Se puede asignar más de un componente, suponiendo que solo se usa un espacio de nombres. Todas estas son asignaciones válidas:
 
 
 ```
@@ -367,11 +367,11 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
 ### <a name="matrix-ordering"></a>Ordenación de matrices
 
-El orden de empaquetado de matriz para los parámetros uniformes se establece en column-major de forma predeterminada. Esto significa que cada columna de la matriz se almacena en un único registro constante. Por otro lado, una matriz principal de fila empaqueta cada fila de la matriz en un único registro constante. El empaquetado de matriz se puede cambiar con la directiva de matriz **\# \_ pragmapack** o con la fila **\_ principal** o la palabra **clave principal de \_ columna.**
+El orden de empaquetado de la matriz para los parámetros uniformes se establece en column-major de forma predeterminada. Esto significa que cada columna de la matriz se almacena en un único registro constante. Por otro lado, una matriz principal de fila empaqueta cada fila de la matriz en un único registro constante. El empaquetado de matriz se puede cambiar con la directiva de matriz **\# \_ pragmapack** o con la fila **\_ principal** o la palabra **clave principal \_ de** columna.
 
-Los datos de una matriz se cargan en registros constantes de sombreador antes de que se ejecute un sombreador. Hay dos opciones para leer los datos de la matriz: en orden de fila principal o en orden de columna principal. El orden principal de columna significa que cada columna de matriz se almacenará en un único registro constante y el orden principal de fila significa que cada fila de la matriz se almacenará en un único registro constante. Esta es una consideración importante para el número de registros constantes que se usan para una matriz.
+Los datos de una matriz se cargan en registros constantes de sombreador antes de que se ejecute un sombreador. Hay dos opciones para leer los datos de la matriz: en orden principal de fila o en orden de columna principal. El orden principal de columna significa que cada columna de matriz se almacenará en un único registro constante y el orden principal de fila significa que cada fila de la matriz se almacenará en un único registro constante. Esta es una consideración importante para el número de registros constantes que se usan para una matriz.
 
-Se ha diseñado una matriz de fila principal como la siguiente:
+Una matriz principal de fila se dispone de la siguiente manera:
 
 :::row:::
     :::column:::
@@ -428,9 +428,9 @@ Se dispone una matriz de columnas principales como la siguiente:
         34<br/>
     :::column-end:::
     :::column:::
-        14<br/>
-        24<br/>
-        34<br/>
+        41<br/>
+        42<br/>
+        43<br/>
         44<br/>
     :::column-end:::
 :::row-end:::

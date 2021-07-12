@@ -1,5 +1,5 @@
 ---
-description: Las tablas de este documento muestran funciones contenedoras de Shlwapi.dll que proporcionan funcionalidad Unicode limitada a Windows 95, Windows 98 y Windows Edition Edition (Windows Me).
+description: Las tablas de este documento muestran funciones contenedoras de Shlwapi.dll que proporcionan una funcionalidad Unicode limitada a Windows 95, Windows 98 y Windows Edition De Edition (Windows Me).
 title: Funciones de encapsulador SHLWAPI
 ms.topic: reference
 ms.date: 05/31/2018
@@ -83,20 +83,20 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6d928228873b893228c7fddc22fc1ca29ca511cd
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: 7c166e005c9bcc9efe68fee926c9fa9c2a4f4e7e
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549757"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581773"
 ---
 # <a name="shlwapi-wrapper-functions"></a>Funciones de encapsulador SHLWAPI
 
-\[Estas funciones están disponibles a través de Windows XP Service Pack 2 (SP2) y Windows Server 2003. Podrían modificarse o no estar disponibles en versiones posteriores de Windows.\]
+\[Estas funciones están disponibles a través Windows XP Service Pack 2 (SP2) y Windows Server 2003. Podrían modificarse o no estar disponibles en versiones posteriores de Windows.\]
 
-Las tablas de este documento muestran funciones contenedoras de Shlwapi.dll que proporcionan funcionalidad Unicode limitada a Windows 95, Windows 98 y Windows Edition Edition (Windows Me).
+Las tablas de este documento muestran funciones contenedoras de Shlwapi.dll que proporcionan una funcionalidad Unicode limitada a Windows 95, Windows 98 y Windows Edition De Edition (Windows Me).
 
-Windows 95, Windows 98 y Windows Millennium Edition (Windows Me) se conocen aquí como "plataformas ANSI nativas". En las plataformas ANSI nativas, estas funciones contenedoras convierten los parámetros de cadena de entrada Unicode en ANSI y llaman a versiones ANSI de funciones de la **columna Reenvíos a** . Por ejemplo, **AppendMenuWrapW llama** **a AppendMenuA**, que es la versión ANSI de [**AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua). Las demás funciones siguen el mismo patrón. Las cadenas devueltas por la función ANSI se convierten en Unicode y se devuelven a la aplicación que realiza la llamada. Aparte de las excepciones  anotadas en la columna Comentarios, la función contenedora tiene la misma sintaxis y proporciona la misma funcionalidad que la función en la **columna Reenvíos a** . Debe hacer referencia a esa página de referencia para obtener información de uso detallada.
+Windows 95, Windows 98 y Windows Edition (Windows Me) se conocen aquí como "plataformas ANSI nativas". En las plataformas ANSI nativas, estas funciones contenedoras convierten los parámetros de cadena de entrada Unicode en ANSI y llaman a versiones ANSI de funciones de la **columna Reenvíos a** . Por ejemplo, **AppendMenuWrapW llama** **a AppendMenuA**, que es la versión ANSI de [**AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua). Las demás funciones siguen el mismo patrón. Las cadenas devueltas por la función ANSI se convierten a Unicode y se devuelven a la aplicación que realiza la llamada. Aparte de las excepciones  anotadas en la columna Comentarios, la función contenedora tiene la misma sintaxis y proporciona la misma funcionalidad que la función en la **columna Reenvíos a** . Debe hacer referencia a esa página de referencia para obtener información de uso detallada.
 
 **Advertencia de seguridad:** Varias cadenas Unicode se pueden convertir en la misma cadena ANSI. Las colisiones inesperadas después de la conversión podrían dar lugar a un comportamiento inesperado. Por ejemplo, si **CreateEventWrapW** se usa para crear dos eventos con nombre diferente cuyos nombres coinciden después de la conversión de Unicode a ANSI, la segunda llamada devolverá un identificador al mismo evento que la primera llamada, aunque las cadenas Unicode originales fueran diferentes.
 
@@ -107,13 +107,13 @@ Microsoft Windows NT, Windows 2000, Windows XP, Windows Server 2003 y sistemas o
 Todas las funciones contenedoras de esta tabla están contenidas en Shlwapi.dll. Para llamarlos, debe usar el ordinal que aparece en la tabla.
 
 > [!Note]  
-> Estas funciones contenedoras están disponibles en Windows XP, pero no proporcionan ninguna funcionalidad de contenedor en Windows XP Service Pack 2 (SP2) y versiones posteriores. Tampoco proporcionan funcionalidad de contenedor en Windows Server 2003. En su lugar, debe usar las funciones enumeradas en la **columna Reenvíos** a .
+> Estas funciones de contenedor están disponibles en Windows XP, pero no proporcionan ninguna funcionalidad de contenedor en Windows XP Service Pack 2 (SP2) y versiones posteriores. Tampoco proporcionan funcionalidad de contenedor en Windows Server 2003. En su lugar, debe usar las funciones enumeradas en la columna **Reenvíos** a .
 
  
 
 
 
-| Función                  | Ordinal | Reenvía a                                             | Archivo DLL      | Comentarios                                                                                                                             |
+| Función                  | Ordinal | Reenvía a                                             | Archivo DLL      | Observaciones                                                                                                                             |
 |---------------------------|---------|---------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
 | AppendMenuWrapW           | 36      | [**AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua)                     | USER32   | [(a)](#shlwapi-wrapper-functions), [(f)](#dragqueryfile), [(Menú)](#menu)                                                           |
 | CallWindowProcWrapW       | 37      | [**CallWindowProc**](/windows/win32/api/winuser/nf-winuser-callwindowproca)             | USER32   | [(i)](#shlwapi-wrapper-functions)                                                                                                   |
@@ -187,7 +187,7 @@ Las funciones contenedoras de la tabla siguiente no realizan ninguna conversión
 
 
 
-| Función                     | Ordinal | Reenvía a                                                                     | Archivo DLL      | Comentarios                                                                        |
+| Función                     | Ordinal | Reenvía a                                                                     | Archivo DLL      | Observaciones                                                                        |
 |------------------------------|---------|---------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------|
 | MLGetUILanguage              | 376     | [**GetUserDefaultUILanguage**](/windows/win32/api/winnls/nf-winnls-getuserdefaultuilanguage)                   | KERNEL32 | [(h)](#shlwapi-wrapper-functions)                                              |
 | SHCancelTimerQueueTimer      | 265     | [**DeleteTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueuetimer)                         | KERNEL32 | [(h)](#shlwapi-wrapper-functions)                                              |
@@ -200,25 +200,25 @@ Las funciones contenedoras de la tabla siguiente no realizan ninguna conversión
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="a"></a>(a)
 
 Si es necesaria la conversión de cadenas, todas las cadenas se convierten a través de la página de códigos \_ CP ACP.
 
-Estas funciones emplean caracteres de ajuste óptimo y no realizan la comprobación predeterminada al convertir de Unicode a ANSI. Además, si la cadena no se puede convertir de Unicode a ANSI, la función contenedora pasa una cadena **NULL** a la función ANSI subyacente. Esto puede ocurrir, por ejemplo, cuando no hay memoria suficiente. Si se **pasa una cadena NULL,** algunas funciones pueden producir un error de parámetro no válido, pero otras funciones aceptan la cadena **NULL** y la tratan como el parámetro deseado. Por ejemplo, se produce un error cuando la función **CreateWindowExWrapW** intenta convertir el parámetro *lpWindowName* en ANSI y [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) crea una ventana con un título vacío. El contenedor no le notifica cuándo se han producido estos problemas.
+Estas funciones emplean caracteres de ajuste perfecto y no realizan la comprobación predeterminada al convertir de Unicode a ANSI. Además, si la cadena no se puede convertir de Unicode a ANSI, la función contenedora pasa una cadena **NULL** a la función ANSI subyacente. Esto puede ocurrir, por ejemplo, cuando no hay memoria suficiente. Si se **pasa una cadena NULL,** algunas funciones pueden producir un error de parámetro no válido, pero otras funciones aceptan la cadena **NULL** y la tratan como el parámetro deseado. Por ejemplo, se produce un error cuando la función **CreateWindowExWrapW** intenta convertir el parámetro *lpWindowName* en ANSI y [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) crea una ventana con un título vacío. El contenedor no le notifica cuándo se han producido estos problemas.
 
 La capa de Microsoft para Unicode (MSLU) comprueba si hay errores durante la conversión de Unicode a ANSI y devuelve los valores de error adecuados. Por ejemplo, la [**función contenedora AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua) de MSLU devuelve 0 si el elemento no se anexó correctamente.
 
 ### <a name="b"></a>(b)
 
-Estas funciones usan un vínculo de carga retrasada a la función adecuada. Esto significa que el archivo DLL que contiene la función en la columna "Reenvíos a" no se carga mediante el Shlwapi.dll hasta que se llama a una función de ese archivo DLL. El Microsoft Visual C++ admite esta funcionalidad más generalmente a través de la opción /DELAYLOAD.
+Estas funciones usan un vínculo de carga retrasada a la función adecuada. Esto significa que el archivo DLL que contiene la función en la columna "Reenvíos a" no se carga mediante el Shlwapi.dll hasta que se llama a una función de ese archivo DLL. El Microsoft Visual C++ es compatible con esta funcionalidad de forma más general a través de la opción /DELAYLOAD.
 
 ### <a name="c"></a>(c)
 
-Esta función manipula nombres de archivo. Como se indica [en (a),](#shlwapi-wrapper-functions)las funciones convierten todas las cadenas a través de la página de códigos \_ CP ACP. No comprueban si las funciones de E/S de archivo se han establecido en modo ANSI. Si las funciones de E/S de archivo están en modo OEM, las cadenas se convertirán a y desde el juego de caracteres incorrecto. Una aplicación puede establecer explícitamente las funciones de E/S de archivo en modo OEM llamando a la [**función SetFileApisToOEM.**](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem)
+Esta función manipula nombres de archivo. Como se indica [en (a),](#shlwapi-wrapper-functions)las funciones convierten todas las cadenas a través de la página de códigos \_ CP ACP. No comprueban si las funciones de E/S de archivo se han establecido en modo ANSI. Si las funciones de E/S de archivo están en modo OEM, las cadenas se convertirán a y desde el juego de caracteres incorrecto. Una aplicación puede establecer las funciones de E/S de archivo en modo OEM explícitamente mediante una llamada a la [**función SetFileApisToOEM.**](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem)
 
-**Advertencia de seguridad: ** El uso de estas funciones contenedoras para nombres de archivo puede poner en peligro la seguridad de la aplicación. Puesto que no se realiza ninguna comprobación predeterminada y se emplean caracteres de mejor ajuste, los caracteres de nombre de archivo se pueden convertir de maneras inesperadas. Esto podría dar lugar a ataques de suplantación de sistema de archivos. Además, se puede producir una pérdida de datos silenciosa durante la conversión de Unicode a ANSI.
+**Advertencia de seguridad: ** El uso de estas funciones contenedoras para nombres de archivo puede poner en peligro la seguridad de la aplicación. Puesto que no se realiza ninguna comprobación predeterminada y se emplean caracteres de ajuste perfecto, los caracteres de nombre de archivo se pueden convertir de maneras inesperadas. Esto podría dar lugar a ataques de suplantación de sistema de archivos. Además, se puede producir una pérdida de datos silenciosa durante la conversión de Unicode a ANSI.
 
 MSLU no tiene estas limitaciones.
 
@@ -232,7 +232,7 @@ Las implementaciones de Unicode completa de estas funciones están disponibles e
 
 ### <a name="f"></a>(f)
 
-Si el lenguaje de interfaz de usuario predeterminado del usuario usa un juego de caracteres diferente al idioma predeterminado de la interfaz de usuario del sistema, el sistema intenta volver a escribir plantillas de diálogo y controles de subclase y convertir elementos de menú en dibujo de propietario, de modo que las cadenas en el idioma de la interfaz de usuario predeterminado del usuario sigan a la vista correcta. Los únicos controles admitidos por las reglas de reescritura de plantillas de cuadro de diálogo son los controles estáticos, de botón, de cuadro de lista y de cuadro combinado. Estos controles se incluyen en subclases de forma que la función **SendMessageWrapW** puede obtener la cadena Unicode original sin traducirse a través del juego de caracteres ANSI. A diferencia de la mayoría de las demás funciones contenedoras, estas son funcionales en Microsoft Windows NT 4.0, así como en plataformas ANSI nativas. Consulte los comentarios de la documentación de la función [**MLLoadLibrary**](./callbacks.md) para obtener más información sobre cómo se determinan el idioma de la interfaz de usuario predeterminado del usuario y el idioma de la interfaz de usuario predeterminado del sistema.
+Si el idioma de la interfaz de usuario predeterminado del usuario usa un juego de caracteres diferente al idioma de la interfaz de usuario predeterminado del sistema, el sistema intenta volver a escribir plantillas de diálogo y controles de subclase y convertir elementos de menú en dibujo de propietario, de modo que las cadenas del idioma de la interfaz de usuario predeterminado del usuario sigan mostrificando correctamente. Los únicos controles admitidos por las reglas de reescritura de plantillas de cuadro de diálogo son los controles estáticos, de botón, de cuadro de lista y de cuadro combinado. Estos controles están subclases de forma que la función **SendMessageWrapW** puede obtener la cadena Unicode original sin traducirse a través del juego de caracteres ANSI. A diferencia de la mayoría de las demás funciones contenedoras, estas son funcionales en Microsoft Windows NT 4.0, así como en plataformas ANSI nativas. Consulte los comentarios de la documentación de la función [**MLLoadLibrary**](./callbacks.md) para obtener más información sobre cómo se determinan el idioma predeterminado de la interfaz de usuario y el idioma predeterminado de la interfaz de usuario del sistema.
 
 ### <a name="g"></a>(g)
 
@@ -242,7 +242,7 @@ Al convertir de ANSI a Unicode para la salida, si la cadena devuelta no cabe en 
 
 ### <a name="h"></a>(h)
 
-En sistemas anteriores a Windows XP, estas funciones implementan un grupo de subprocesos simplificado y una cola de temporizadores. En Windows XP y versiones posteriores, estas funciones usan el grupo de subprocesos del sistema y la cola de temporizador del sistema. Para las funciones de cola de temporizador, el *parámetro hQueue* debe establecerse en **NULL** para indicar que la operación se va a realizar en la cola de temporizador predeterminada.
+En sistemas anteriores a Windows XP, estas funciones implementan un grupo de subprocesos simplificado y una cola de temporizadores. En Windows XP y versiones posteriores, estas funciones usan el grupo de subprocesos del sistema y la cola de temporizadores del sistema. Para las funciones de cola de temporizador, el *parámetro hQueue* debe establecerse en **NULL** para indicar que la operación se va a realizar en la cola de temporizador predeterminada.
 
 ### <a name="i"></a>(i)
 
@@ -260,7 +260,7 @@ En las plataformas ANSI, estas funciones devuelven la longitud de la cadena ANSI
 
 ### <a name="compareexchange"></a>(CompareExchange)
 
-La sintaxis **de SHInterlockedCompareExchange es** ligeramente diferente de la de [**InterlockedCompareExchangePointer,**](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchangepointer)pero funciona de forma idéntica.
+La sintaxis **de SHInterlockedCompareExchange** es ligeramente diferente de la de [**InterlockedCompareExchangePointer,**](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchangepointer)pero funciona de forma idéntica.
 
 ``` syntax
 void* SHInterlockedCompareExchange(void **ppDest, void *pExch, void *pComp);
@@ -272,7 +272,7 @@ Recuerde que en las plataformas ANSI nativas, ambas cadenas se convierten en ANS
 
 ### <a name="datetime"></a>(DateTime)
 
-En Shlwapi.dll versión 5.0, que se incluye con Windows 2000, la página de códigos del identificador de configuración regional que se pasa como primer parámetro de **GetDateFormatWrapW** y **GetTimeFormatWrapW** debe coincidir con la página de códigos ANSI actual. De lo contrario, la cadena devuelta puede convertirse incorrectamente. Esta limitación no se aplica a Shlwapi.dll versiones 5.5 o posteriores. Esto significa que Windows XP y los sistemas posteriores no están sujetos a esta limitación. MSLU no tiene esta limitación.
+En Shlwapi.dll versión 5.0, que se incluye con Windows 2000, la página de códigos del identificador de configuración regional que se pasa como primer parámetro de **GetDateFormatWrapW** y **GetTimeFormatWrapW** debe coincidir con la página de códigos ANSI actual. De lo contrario, la cadena devuelta puede convertirse incorrectamente. Esta limitación no se aplica a Shlwapi.dll versiones 5.5 o posteriores. Esto significa que Windows XP y sistemas posteriores no están sujetos a esta limitación. MSLU no tiene esta limitación.
 
 ### <a name="dialogboxparam"></a>(DialogBoxParam)
 
@@ -280,7 +280,7 @@ El *parámetro lpTemplateName* de la **función DialogBoxParamWrapW** no puede s
 
 ### <a name="exttextout"></a>(ExtTextOut)
 
-Las plataformas ANSI nativas [**implementan la función ExtTextOutW,**](/windows/win32/api/wingdi/nf-wingdi-exttextouta) así como las plataformas Unicode nativas. El propósito de **ExtTextOutWrapW es** realizar la vinculación de fuentes, como se describe en un comentario independiente.
+Las plataformas ANSI nativas [**implementan la función ExtTextOutW,**](/windows/win32/api/wingdi/nf-wingdi-exttextouta) así como las plataformas Unicode nativas. El propósito de **ExtTextOutWrapW** es realizar la vinculación de fuentes, como se describe en un comentario independiente.
 
 ### <a name="dragqueryfile"></a>(DragQueryFile)
 
@@ -307,21 +307,21 @@ FormatMessageWrapW(FORMAT_MESSAGE_FROM_STRING,
 
 En este ejemplo de código se usa "!s!". expresa como formato HH:MM:SS… En las plataformas ANSI nativas, esta cadena se pasa a la versión ANSI de la [**función FormatMessage.**](/windows/win32/api/winbase/nf-winbase-formatmessage) Por lo tanto, se espera una cadena ANSI en lugar de una cadena Unicode. Del mismo modo, el formato "%2" implica un argumento de cadena. Cuando se pasa a la función **ANSI FormatMessage,** se interpreta como una cadena ANSI en lugar de como una cadena Unicode. La cadena de formato correcto es L"%1!ws! %2!ws!". Esto imprime las cadenas correctamente en las plataformas ANSI y Unicode.
 
-La función no admite "%0" cadena de formato especial.
+La función no admite "%0". cadena de formato especial.
 
 MSLU no tiene estas limitaciones.
 
 ### <a name="getclassinfo"></a>(GetClassInfo)
 
-En las plataformas ANSI nativas, los miembros **lpszMenuName** y **lpszClassName** de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) no se traducen a Unicode y siempre se establecen en **NULL.** Además, el procedimiento de ventana devuelto en el **miembro lpfnWndProc** de la estructura **WNDCLASS** no se traduce a Unicode y hace referencia a un procedimiento de ventana ANSI. MSLU no tiene estas limitaciones.
+En las plataformas ANSI nativas, los miembros **lpszMenuName** y **lpszClassName** de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) no se traducen a Unicode y siempre se establecen en **NULL.** Además, el procedimiento de ventana devuelto en el miembro **lpfnWndProc** de la estructura **WNDCLASS** no se traduce a Unicode y hace referencia a un procedimiento de ventana ANSI. MSLU no tiene estas limitaciones.
 
 ### <a name="menu"></a>(Menú)
 
-En Shlwapi.dll versión 5.0, que se incluye con Windows 2000, es posible que las cadenas de elemento de menú que contienen caracteres de tabulación (t) no se muestren \\ correctamente. Esta limitación no se aplica a Shlwapi.dll versiones 5.5 o posteriores. Esto significa que Windows XP y los sistemas posteriores no están sujetos a esta limitación. MSLU no tiene esta limitación.
+En Shlwapi.dll versión 5.0, que se incluye con Windows 2000, es posible que las cadenas de elementos de menú que contienen caracteres de tabulación (t) no se muestren \\ correctamente. Esta limitación no se aplica a Shlwapi.dll versiones 5.5 o posteriores. Esto significa que Windows XP y sistemas posteriores no están sujetos a esta limitación. MSLU no tiene esta limitación.
 
 ### <a name="menuiteminfo"></a>(MenuItemInfo)
 
-Esta función solo admite la versión de Microsoft Windows NT 4.0 de la [**estructura MENUITEMINFOW.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) Esta estructura carece de un **miembro hbmpItem.** Además, la función no admite la marca MIIM \_ BITMAP. MSLU no tiene estas limitaciones.
+Esta función solo admite la versión Windows NT 4.0 de Microsoft de la [**estructura MENUITEMINFOW.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) Esta estructura carece de un **miembro hbmpItem.** Además, la función no admite la marca MIIM \_ BITMAP. MSLU no tiene estas limitaciones.
 
 ### <a name="openfilename"></a>(OpenFileName)
 
@@ -363,7 +363,7 @@ Los parámetros deben establecerse de la manera siguiente:
 
     
 
-    | Nombre              | Valor      | Significado                          |
+    | Nombre              | Value      | Significado                          |
     |-------------------|------------|----------------------------------|
     | TPS \_ EXECUTEIO    | 0x00000001 | Igual que WT \_ EXECUTEINIOTHREAD.   |
     | TPS \_ LONGEXECTIME | 0x00000008 | Igual que WT \_ EXECUTELONGFUNCTION. |
@@ -389,13 +389,13 @@ En las plataformas ANSI nativas, no se realiza ninguna traducción en el **miemb
 
 ### <a name="sendmessage"></a>(SendMessage)
 
-En plataformas Unicode nativas, **la función SendMessageWrapW** reenvía a [**la función SendMessageW.**](/windows/win32/api/winuser/nf-winuser-sendmessage) En las plataformas ANSI nativas, **SendMessageWrapW proporciona** compatibilidad limitada para traducir mensajes Unicode a ANSI. La lista de mensajes admitidos se muestra en la tabla siguiente. La función no traducirá ningún otro mensaje.
+En las plataformas Unicode nativas, **la función SendMessageWrapW** reenvía a [**la función SendMessageW.**](/windows/win32/api/winuser/nf-winuser-sendmessage) En las plataformas ANSI nativas, **SendMessageWrapW proporciona** compatibilidad limitada para traducir mensajes Unicode a ANSI. La lista de mensajes admitidos se muestra en la tabla siguiente. La función no traducirá ningún otro mensaje.
 
 MSLU no tiene estas limitaciones.
 
 
 
-|                      |                                                                                                           |
+| Message              | Descripción                                                                                               |
 |----------------------|-----------------------------------------------------------------------------------------------------------|
 | CB \_ ADDSTRING        | (b) (f) (c)                                                                                               |
 | CB \_ FINDSTRING       | (b) (f) (c)                                                                                               |
@@ -431,13 +431,13 @@ MSLU no tiene estas limitaciones.
 -   (a) La cadena ANSI que se mide o recupera debe cumplir la siguiente condición: la longitud de la versión Unicode correspondiente de la cadena no puede superar la longitud de la versión ANSI de la cadena. Si no se cumple esta condición, la longitud devuelta será corta. Si no hay memoria suficiente para determinar la longitud de la cadena Unicode, la función devuelve cero, no LB ERR o \_ CB \_ ERR, como podría esperarse.
 -   (b) Si es necesaria la conversión de cadenas, todas las cadenas se convierten a través de la página de códigos \_ CP ACP.
 
-    Esta función emplea caracteres de ajuste perfecto y no realiza la comprobación predeterminada al convertir de Unicode a ANSI. Además, si la cadena no se puede convertir de Unicode a ANSI, la función pasa una cadena NULL a la función ANSI subyacente. Esto puede ocurrir, por ejemplo, cuando no hay memoria suficiente. Si se pasa una cadena null, algunas funciones pueden producir un error en algunas funciones con un error de parámetro no válido, pero otras funciones aceptan la cadena nula y la tratan como el parámetro previsto. Por ejemplo, si se produce un error cuando el contenedor SETTEXT de WM intenta convertir el título de la ventana en ANSI, la ventana \_ tendrá un título vacío. La función no le notifica cuándo se producen estos problemas. MSLU no tiene estas limitaciones.
+    Esta función emplea caracteres de ajuste perfecto y no realiza la comprobación predeterminada al convertir de Unicode a ANSI. Además, si la cadena no se puede convertir de Unicode a ANSI, la función pasa una cadena null a la función ANSI subyacente. Esto puede ocurrir, por ejemplo, cuando no hay memoria suficiente. Si se pasa una cadena null, algunas funciones pueden producir un error en algunas funciones con un error de parámetro no válido, pero otras funciones aceptan la cadena nula y la tratan como el parámetro previsto. Por ejemplo, si se produce un error cuando el contenedor SETTEXT de WM intenta convertir el título de la ventana en ANSI, la ventana \_ tendrá un título vacío. La función no le notifica cuándo se producen estos problemas. MSLU no tiene estas limitaciones.
 
 -   (c) El identificador de ventana especificado debe ser el identificador de un control [ComboBox](../controls/combo-boxes.md) o [ComboBoxEx.](../controls/comboboxex-controls.md) Si el identificador está en un control de cuadro combinado que es de dibujo de propietario y no se creó con el estilo [Estilos](../controls/list-box-styles.md) de cuadro de lista, se producirá un error en la traducción de este mensaje e incluso puede bloquearse.
 -   (d) El identificador de ventana especificado debe ser el identificador de un control de cuadro de lista. Si el cuadro de lista es de dibujo de propietario y no se creó con el estilo [Estilos](../controls/list-box-styles.md) de cuadro de lista, se producirá un error en la traducción de este mensaje e incluso puede bloquearse.
 -   (e) Si es necesaria la conversión de cadenas, todas las cadenas se convierten a través de la página de códigos \_ CP ACP.
 
-    Al convertir de ANSI a Unicode para la salida, las funciones contenedoras truncan la cadena devuelta si no cabe en el búfer proporcionado. El valor devuelto para las funciones que devuelven el número de caracteres copiados en el búfer o el número de caracteres necesarios para evitar el truncamiento hace referencia al número de caracteres ANSI copiados en el búfer o requeridos por la función ANSI subyacente, no al número de caracteres Unicode copiados en el búfer proporcionado por o requeridos por la aplicación de llamada que llamó a la función contenedora. MSLU no tiene esta limitación. Para obtener más información, [vea Capa de Microsoft para Unicode en sistemas Windows 95/98/Me](/previous-versions/ms812865(v=msdn.10)).
+    Al convertir de ANSI a Unicode para la salida, las funciones contenedoras truncan la cadena devuelta si no cabe en el búfer proporcionado. El valor devuelto para las funciones que devuelven el número de caracteres copiados en el búfer o el número de caracteres necesarios para evitar el truncamiento hace referencia al número de caracteres ANSI copiados en el búfer o requeridos por la función ANSI subyacente, no al número de caracteres Unicode copiados en el búfer proporcionado por o requeridos por la aplicación de llamada que llamó a la función contenedora. MSLU no tiene esta limitación. Para obtener más información, [vea Capa de Microsoft para Unicode en Windows 95/98/Me Systems](/previous-versions/ms812865(v=msdn.10)).
 
 ### <a name="settimerqueuetimer"></a>(SetTimerQueueTimer)
 
@@ -462,7 +462,7 @@ Los parámetros deben establecerse de la siguiente manera:
 
     
 
-    | Nombre              | Valor      | Significado                         |
+    | Nombre              | Value      | Significado                         |
     |-------------------|------------|---------------------------------|
     | TPS \_ EXECUTEIO    | 0x00000001 | Igual que WT \_ EXECUTEINIOTHREAD   |
     | TPS \_ LONGEXECTIME | 0x00000008 | Igual que WT \_ EXECUTELONGFUNCTION |

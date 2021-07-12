@@ -1,26 +1,26 @@
 ---
-description: El proveedor de servicios criptográficos Microsoft DSS y Diffie-Hellman/Schannel admite el algoritmo hash, la firma de datos con DSS, la generación de claves Diffie-Hellman (D-H), el intercambio de claves D-H y la exportación de una tecla D-H.
+description: Microsoft DSS y Diffie-Hellman/Schannel Cryptographic Provider admiten el hash, la firma de datos con DSS, la generación de claves Diffie-Hellman (D-H), el intercambio de claves D-H y la exportación de una clave D-H.
 ms.assetid: 9e5e8833-cb54-41ca-8101-d518ece7e17f
-title: Proveedor de servicios criptográficos de Microsoft DSS y Diffie-Hellman/Schannel
+title: Proveedor criptográfico DSS y Diffie-Hellman/Schannel de Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8f14826166306197eeb3c8f6503da909c8099fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdbe1aff9aa50a11b8855b596d20b93cd572f46f
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908082"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581883"
 ---
-# <a name="microsoft-dss-and-diffie-hellmanschannel-cryptographic-provider"></a>Proveedor de servicios criptográficos de Microsoft DSS y Diffie-Hellman/Schannel
+# <a name="microsoft-dss-and-diffie-hellmanschannel-cryptographic-provider"></a>Proveedor criptográfico DSS y Diffie-Hellman/Schannel de Microsoft
 
-El proveedor de servicios criptográficos de Microsoft DSS y [*Diffie-Hellman*](../secgloss/d-gly.md) / [*Schannel*](../secgloss/s-gly.md) admite el algoritmo hash, la firma de datos con DSS, la generación de claves Diffie-Hellman (D-h), el intercambio de claves d-h y la exportación de una tecla d-h. Este CSP admite la derivación de claves para los protocolos SSL3 y TLS1. Se puede exportar a otros países o regiones.
+El proveedor criptográfico Schannel de Microsoft DSS y [*Diffie-Hellman*](../secgloss/d-gly.md)admite la creación de hash, la firma de datos con DSS, la generación de claves Diffie-Hellman (D-H), el intercambio de claves D-H y la exportación de una / [](../secgloss/s-gly.md) clave D-H. Este CSP admite la derivación de claves para los protocolos SSL3 y TLS1. Se puede exportar a otros países o regiones.
 
 
 
-|                |                                 |
-|----------------|---------------------------------|
-| Tipo de proveedor: | **PROV \_ DH \_ Schannel**          |
-| Nombre del proveedor: | **Microsoft \_ Def \_ DH \_ Schannel \_ Prov** |
+|                   | Value                       |
+|-------------------|-----------------------------|
+| **Tipo de proveedor** | PROV \_ DH \_ SCHANNEL          |
+| **Nombre del proveedor** | MS \_ DEF \_ DH \_ SCHANNEL \_ PROV |
 
 
 

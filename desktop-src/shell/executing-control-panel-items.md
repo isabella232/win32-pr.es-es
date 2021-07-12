@@ -1,29 +1,29 @@
 ---
-description: Describe los métodos para abrir un elemento del panel de control para Windows Vista y sistemas posteriores, así como para abarcar los comandos heredados del panel de control.
+description: Describe los métodos para abrir un Panel de control para Windows Vista y sistemas posteriores, así como para tratar los comandos Panel de control heredados.
 ms.assetid: c17167ab-e9a0-4290-955c-484d038b82af
-title: Ejecutar elementos del panel de control
+title: Ejecutar elementos Panel de control datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eaaac4b782273e0b4444fb2b5b6d3cab0b3599ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08cb6ae2fa08231d3876e1a5a636e404f519f4a6
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997833"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581763"
 ---
-# <a name="executing-control-panel-items"></a>Ejecutar elementos del panel de control
+# <a name="executing-control-panel-items"></a>Ejecutar elementos Panel de control datos
 
 > [!Note]  
-> Si busca la lista de nombres canónicos y de módulos para los elementos del panel de control, consulte [nombres canónicos de elementos del panel de control](controlpanel-canonical-names.md).
+> Si busca la lista de nombres canónicos y de módulos para los Panel de control, vea Nombres canónicos [de Panel de control elementos](controlpanel-canonical-names.md).
 
  
 
-Hay dos maneras de abrir un elemento del panel de control:
+Hay dos maneras de abrir un Panel de control elemento:
 
--   El usuario puede abrir el panel de control y, a continuación, abrir un elemento haciendo clic o haciendo doble clic en el icono del elemento.
--   El usuario o una aplicación puede iniciar un elemento del panel de control si lo ejecuta directamente desde el símbolo de la línea de comandos.
+-   El usuario puede abrir Panel de control y, a continuación, abrir un elemento haciendo clic o haciendo doble clic en el icono del elemento.
+-   El usuario o una aplicación pueden iniciar un Panel de control elemento ejecutándose directamente desde el símbolo de la línea de comandos.
 
-Una aplicación puede abrir el panel de control mediante programación con la función [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) .
+Una aplicación puede abrir el Panel de control mediante programación mediante la [**función WinExec.**](/windows/win32/api/winbase/nf-winbase-winexec)
 
 
 ```
@@ -32,7 +32,7 @@ WinExec("c:\windows\system32\control.exe", SW_NORMAL);
 
 
 
-En el ejemplo siguiente se muestra cómo una aplicación puede iniciar el elemento del panel de control denominado **MyCpl.cpl** mediante la función [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) .
+En el ejemplo siguiente se muestra cómo una aplicación puede iniciar el elemento Panel de control denominado **MyCpl.cpl** mediante la [**función WinExec.**](/windows/win32/api/winbase/nf-winbase-winexec)
 
 
 ```
@@ -41,7 +41,7 @@ WinExec("c:\windows\system32\control.exe MyCpl.cpl", SW_NORMAL);
 
 
 
-Cuando un elemento del panel de control se abre a través de una línea de comandos, puede indicarle que se abra en una pestaña determinada del elemento. Debido a la adición y eliminación de ciertas pestañas en algunos elementos del panel de control de Windows Vista, es posible que la numeración de las pestañas haya cambiado en Windows XP. Por ejemplo, en el ejemplo siguiente se inicia la cuarta pestaña en el elemento del sistema en Windows XP y la tercera pestaña en Windows Vista.
+Cuando un Panel de control se abre a través de una línea de comandos, puede indicarle que se abra en una pestaña determinada del elemento. Debido a la adición y eliminación de ciertas pestañas en algunos elementos de Windows Vista Panel de control, la numeración de las pestañas podría haber cambiado a partir de Windows XP. Por ejemplo, en el ejemplo siguiente se inicia la cuarta pestaña del elemento Sistema en Windows XP y la tercera pestaña en Windows Vista.
 
 
 ```
@@ -52,18 +52,18 @@ control.exe sysdm.cpl,,3
 
 Este tema trata lo siguiente:
 
--   [Nombres canónicos de Windows Vista](#windows-vista-canonical-names)
+-   [Windows Nombres canónicos de Vista](#windows-vista-canonical-names)
 -   [Nuevos comandos para Windows Vista](#new-commands-for-windows-vista)
--   [Comandos del panel de control heredado](#legacy-control-panel-commands)
+-   [Comandos de Panel de control heredados](#legacy-control-panel-commands)
 -   [Temas relacionados](#related-topics)
 
-## <a name="windows-vista-canonical-names"></a>Nombres canónicos de Windows Vista
+## <a name="windows-vista-canonical-names"></a>Windows Nombres canónicos de Vista
 
-En Windows Vista y versiones posteriores, el método preferido para iniciar un elemento del panel de control desde una línea de comandos es usar el nombre canónico del elemento del panel de control. Un nombre canónico es una cadena no localizada que el elemento del panel de control declara en el registro. El valor de usar un nombre canónico es que abstrae el nombre del módulo del elemento del panel de control. Un elemento se puede implementar en un archivo. dll y, posteriormente, volver a implementarse como un archivo. exe o cambiar su nombre de módulo. Siempre que el nombre canónico siga siendo el mismo, no es necesario actualizar ningún programa que lo abra con ese nombre canónico.
+En Windows Vista y versiones posteriores, el método preferido para iniciar un elemento Panel de control desde una línea de comandos es usar el nombre canónico del elemento de Panel de control. Un nombre canónico es una cadena no localizada que el elemento Panel de control declara en el Registro. El valor de usar un nombre canónico es que abstrae el nombre del módulo del Panel de control elemento. Un elemento se puede implementar en un .dll y posterior se puede volver a implementar como un .exe o cambiar su nombre de módulo. Siempre que el nombre canónico siga siendo el mismo, no es necesario actualizar ningún programa que lo abra con ese nombre canónico.
 
-Por Convención, el nombre canónico tiene el formato "CorporationName. ControlPanelItemName".
+Por convención, el nombre canónico se forma como "CorporationName.ControlPanelItemName".
 
-En el ejemplo siguiente se muestra cómo una aplicación puede iniciar el elemento del panel de control **Windows Update** con [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
+En el ejemplo siguiente se muestra cómo una aplicación puede iniciar Panel de control elemento **Windows Update** con [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
 
 
 ```
@@ -72,70 +72,70 @@ WinExec("%systemroot%\system32\control.exe /name Microsoft.WindowsUpdate", SW_NO
 
 
 
-Para iniciar un elemento del panel de control con su nombre canónico, use: "% SystemRoot% \\ system32 \\control.exe/name *canonicalName*"
+Para iniciar un Panel de control con su nombre canónico, use: "%systemroot% \\ system32 \\control.exe /name *canonicalName"*
 
-Para abrir una subpágina específica de un elemento, o para abrirla con parámetros adicionales, use: "% SystemRoot% \\ system32 \\control.exe/name **canonicalName** /Page **pagename**"
+Para abrir una subpáptica específica en un elemento o para abrirla con parámetros adicionales, use: "%systemroot% \\ system32 \\control.exe /name **canonicalName** /page **pageName"**
 
-Una aplicación también puede implementar el método [**IOpenControlPanel:: Open**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iopencontrolpanel-open) para iniciar elementos del panel de control, incluida la capacidad de abrir una subpágina concreta.
+Una aplicación también puede implementar el método [**IOpenControlPanel::Open**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iopencontrolpanel-open) para iniciar Panel de control, incluida la capacidad de abrir una sub página específica.
 
-Para obtener una lista completa de los nombres canónicos de los elementos del panel de control, consulte [nombres canónicos de elementos del panel de control](controlpanel-canonical-names.md).
+Para obtener una lista completa de Panel de control de elementos canónicos, vea Nombres canónicos [de Panel de control elementos](controlpanel-canonical-names.md).
 
 ## <a name="new-commands-for-windows-vista"></a>Nuevos comandos para Windows Vista
 
-En Windows Vista, algunas de las opciones a las que tenía acceso un módulo. cpl en Windows XP se implementan ahora como archivos. exe. Esto proporciona seguridad adicional al permitir que se pida a los usuarios estándar que proporcionen credenciales de administrador al intentar iniciar los archivos. Las opciones que no requieren seguridad adicional tienen acceso a las mismas líneas de comandos que se usaron en Windows XP. A continuación se muestra una lista de comandos usados en Windows Vista para tener acceso a pestañas específicas de elementos del panel de control:
+En Windows Vista, algunas opciones a las que se ha accedido mediante un módulo .cpl en Windows XP ahora se implementan como .exe archivos. Esto proporciona mayor seguridad al permitir que se pida a los usuarios estándar que proporcionen credenciales de administrador al intentar iniciar los archivos. Se accede a las opciones que no requieren seguridad adicional mediante las mismas líneas de comandos que se usaron en Windows XP. A continuación se muestra una lista de los comandos que se usan en Windows Vista para acceder a pestañas específicas de Panel de control elementos:
 
-### <a name="personalization"></a>Personalización
+### <a name="personalization"></a>Personalization
 
--   Tamaño de fuente y PPP:% WINDIR% \\ system32 \\DpiScaling.exe
--   Resolución de pantalla:% WINDIR% \\ system32 \\control.exe desk.cpl, configuración@Settings
--   Configuración de pantalla:% WINDIR% \\ system32 \\control.exe desk.cpl, configuración@Settings
--   Temas:% WINDIR% \\ system32 \\control.exe desk.cpl, temas@Themes
--   Protector de la:% WINDIR% \\ system32 \\control.exe desk.cpl, protector de la@screensaver
--   Varios monitores:% WINDIR% \\ system32 \\control.exe desk.cpl, monitor,@Monitor
--   Combinación de colores:% WINDIR% \\ system32 \\control.exe/Name Microsoft. Personalization/Page pageColorization
--   Fondo de escritorio:% WINDIR% \\ system32 \\control.exe/Name Microsoft. Personalization/Page pageWallpaper
+-   Tamaño de fuente y PPP: %windir% \\ system32 \\DpiScaling.exe
+-   Resolución de pantalla: %windir% \\ system32 \\control.exe desk.cpl,Configuración,@Settings
+-   Configuración de visualización: %windir% \\ system32 \\control.exe desk.cpl,Configuración,@Settings
+-   Temas: %windir% \\ system32 \\control.exe desk.cpl,Themes,@Themes
+-   Protector de pantalla: %windir% \\ system32 \\control.exe desk.cpl,screensaver,@screensaver
+-   Varios monitores: %windir% \\ system32 \\control.exe desk.cpl,Monitor,@Monitor
+-   Combinación de colores: %windir% \\ system32 \\control.exe /name Microsoft.Personalization /pageColorization
+-   Fondo del escritorio: %windir% \\ system32 \\control.exe /name Microsoft.Personalization /pageWallpaper
 
 > [!Note]  
-> Las ediciones Starter y Basic no admiten el comando control.exe/Name Microsoft. Personalization.
+> Las ediciones Starter y Basic no admiten control.exe comando /name Microsoft.Personalization.
 
  
 
 ### <a name="system"></a>Sistema
 
--   Rendimiento:% WINDIR% \\ system32 \\SystemPropertiesPerformance.exe
--   Acceso remoto:% WINDIR% \\ system32 \\SystemPropertiesRemote.exe
--   Nombre de equipo:% WINDIR% \\ system32 \\SystemPropertiesComputerName.exe
--   Protección del sistema:% WINDIR% \\ system32 \\SystemPropertiesProtection.exe
--   Propiedades avanzadas del sistema:% WINDIR% \\ system32 \\SystemPropertiesAdvanced.exe
+-   Rendimiento: %windir% \\ system32 \\SystemPropertiesPerformance.exe
+-   Acceso remoto: %windir% \\ system32 \\SystemPropertiesRemote.exe
+-   Nombre del equipo: %windir% \\ system32 \\SystemPropertiesComputerName.exe
+-   Protección del sistema: %windir% \\ system32 \\SystemPropertiesProtection.exe
+-   Propiedades avanzadas del sistema: %windir% \\ system32 \\SystemPropertiesAdvanced.exe
 
 ### <a name="programs-and-features"></a>Programas y características
 
--   Agregar o quitar programas:% WINDIR% \\ system32 \\control.exe/Name Microsoft. ProgramsAndFeatures
--   Características de Windows:% WINDIR% \\ system32 \\OptionalFeatures.exe
+-   Agregar o quitar programas: %windir% \\ system32 \\control.exe /name Microsoft.ProgramsAndFeatures
+-   Windows características: %windir% \\ system32 \\OptionalFeatures.exe
 
 ### <a name="regional-and-language-options"></a>Configuración regional y de idioma
 
--   Teclado:% SystemRoot% \\ system32 \\control.exe/Name Microsoft. RegionalAndLanguageOptions/Page/p: "Keyboard"
--   Ubicación:% SystemRoot% \\ system32 \\control.exe/Name Microsoft. RegionalAndLanguageOptions/Page/p: "Location"
--   Administrativo:% SystemRoot% \\ system32 \\control.exe/Name Microsoft. RegionalAndLanguageOptions/Page/p: "Administrative"
+-   Teclado: %systemroot% \\ system32 \\control.exe /name Microsoft.RegionalAndLanguageOptions /page /p:"keyboard"
+-   Ubicación: %systemroot% \\ system32 \\control.exe /name Microsoft.RegionalAndLanguageOptions /page /p:"location"
+-   Administrativo: %systemroot% \\ system32 \\control.exe /name Microsoft.RegionalAndLanguageOptions /page /p:"administrative"
 
 ### <a name="folder-options"></a>Opciones de carpeta
 
--   Búsqueda de carpetas:% WINDIR% \\ system32 \\rundll32.exe shell32.dll, opciones \_ RunDLL 2
--   Asociaciones de archivo:% WINDIR% \\ system32 \\control.exe/Name Microsoft. DefaultPrograms/Page pageFileAssoc
--   Vista:% WINDIR% \\ system32 \\rundll32.exe shell32.dll, opciones \_ RunDLL 7
--   General:% WINDIR% \\ system32 \\rundll32.exe shell32.dll, opciones \_ RunDLL 0
+-   Búsqueda de carpetas: %windir% \\ system32 \\rundll32.exe shell32.dll,Options \_ RunDLL 2
+-   Asociaciones de archivo: %windir% \\ system32 \\control.exe /name Microsoft.DefaultPrograms /pageFileAssoc
+-   Vista: %windir% \\ system32 \\rundll32.exe shell32.dll,Options \_ RunDLL 7
+-   General: %windir% \\ system32 \\rundll32.exe shell32.dll,Options \_ RunDLL 0
 
 ### <a name="power-options"></a>Opciones de energía
 
--   Editar la configuración del plan actual:% WINDIR% \\ system32 \\control.exe/Name Microsoft. PowerOptions/Page pagePlanSettings
--   Configuración del sistema:% WINDIR% \\ system32 \\control.exe/Name Microsoft. PowerOptions/Page pageGlobalSettings
--   Crear un plan de energía:% WINDIR% \\ system32 \\control.exe/Name Microsoft. PowerOptions/Page pageCreateNewPlan
--   No hay ningún comando canónico para la página Configuración avanzada, se tiene acceso a ella de la manera más antigua:% WINDIR% \\ system32 \\control.exe powercfg.cpl,, 3
+-   Editar la configuración actual del plan: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pagePlanSettings
+-   Configuración del sistema: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /pageGlobalSettings
+-   Crear un plan de energía: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /pageCreateNewPlan
+-   No hay ningún comando canónico para la página advanced Configuración, se accede a él de la manera anterior: %windir% \\ system32 \\control.exe powercfg.cpl,3
 
-## <a name="legacy-control-panel-commands"></a>Comandos del panel de control heredado
+## <a name="legacy-control-panel-commands"></a>Comandos de Panel de control heredados
 
-Cuando se usa la función [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) , el sistema puede reconocer comandos especiales del panel de control. Estos comandos preparan Windows Vista.
+Cuando se usa [**la función WinExec,**](/windows/win32/api/winbase/nf-winbase-winexec) el sistema puede reconocer comandos Panel de control especiales. Estos comandos son anteriores a Windows Vista.
 
 
 
@@ -146,8 +146,8 @@ Cuando se usa la función [**WinExec**](/windows/win32/api/winbase/nf-winbase-wi
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Escritorio control.exe</td>
-<td>Inicia la ventana <strong>propiedades de pantalla</strong> .
+<td>control.exe escritorio</td>
+<td>Inicia la <strong>Propiedades de pantalla</strong> ventana.
 <blockquote>
 [!Note]<br />
 Las ediciones Starter y Basic no admiten este comando.
@@ -155,32 +155,32 @@ Las ediciones Starter y Basic no admiten este comando.
 <br/></td>
 </tr>
 <tr class="even">
-<td>Color de control.exe</td>
-<td>Inicia la ventana <strong>propiedades de pantalla</strong> con la pestaña <strong>apariencia</strong> preseleccionada.</td>
+<td>control.exe color</td>
+<td>Inicia la ventana <strong>Propiedades de pantalla</strong> con la <strong>pestaña</strong> Apariencia preseleccionada.</td>
 </tr>
 <tr class="odd">
 <td>control.exe fecha y hora</td>
-<td>Inicia la ventana <strong>propiedades de fecha y hora</strong> .</td>
+<td>Inicia la ventana <strong>Propiedades de fecha y</strong> hora.</td>
 </tr>
 <tr class="even">
 <td>control.exe internacional</td>
-<td>Inicia la ventana <strong>Opciones regionales y de idioma</strong> .</td>
+<td>Inicia la ventana <strong>Opciones regionales y de</strong> idioma.</td>
 </tr>
 <tr class="odd">
-<td>Mouse control.exe</td>
-<td>Inicia la ventana <strong>propiedades del mouse</strong> .</td>
+<td>control.exe mouse</td>
+<td>Inicia la ventana <strong>Propiedades del</strong> mouse.</td>
 </tr>
 <tr class="even">
-<td>Teclado control.exe</td>
-<td>Inicia la ventana <strong>propiedades del teclado</strong> .</td>
+<td>control.exe teclado</td>
+<td>Inicia la ventana <strong>Propiedades del</strong> teclado.</td>
 </tr>
 <tr class="odd">
 <td>control.exe impresoras</td>
-<td>Muestra la carpeta <strong>impresoras y faxes</strong> .</td>
+<td>Muestra la <strong>carpeta Impresoras y faxes.</strong></td>
 </tr>
 <tr class="even">
-<td>Fuentes de control.exe</td>
-<td>Muestra la carpeta <strong>fuentes</strong> .</td>
+<td>control.exe fuentes</td>
+<td>Muestra la <strong>carpeta Fuentes.</strong></td>
 </tr>
 </tbody>
 </table>
@@ -189,20 +189,20 @@ Las ediciones Starter y Basic no admiten este comando.
 
  
 
-Para sistemas Windows 2000 y versiones posteriores:
+Para Windows sistemas 2000 y posteriores:
 
 
 
-|                            |                                                          |
+| Comando                    | Descripción                                              |
 |----------------------------|----------------------------------------------------------|
-| Carpetas de control.exe        | Inicia la ventana **Opciones de carpeta** .                  |
-| control.exe NetWare        | Inicia la ventana de **Novell NetWare** (si está instalado).   |
-| Telefonía control.exe      | Inicia la ventana **Opciones de teléfono y módem** .         |
-| control.exe AdminTools     | Muestra la carpeta **herramientas administrativas** .            |
-| control.exe schedtasks     | Muestra la carpeta **tareas programadas** .                 |
-| control.exe netconnections | Muestra la carpeta **conexiones de red** .             |
-| control.exe infrarrojos       | Inicia la ventana **monitor de infrarrojos** (si está instalado). |
-| control.exe userpasswords  | Inicia la ventana **cuentas de usuario** .                   |
+| control.exe carpetas        | Inicia la ventana **Opciones de carpeta.**                  |
+| control.exe netware        | Inicia la ventana **NetWare de Asíns** (si está instalada).   |
+| control.exe telefonía      | Inicia la ventana **Teléfono y opciones de módem.**         |
+| control.exe admintools     | Muestra la **carpeta Herramientas administrativas.**            |
+| control.exe schedtasks     | Muestra la **carpeta Tareas programadas.**                 |
+| control.exe netconnections | Muestra la carpeta **Conexiones de** red.             |
+| control.exe de datos       | Inicia la ventana **Monitor de inifijo** (si está instalado). |
+| control.exe userpasswords  | Inicia la ventana **Cuentas de** usuario.                   |
 
 
 
@@ -212,31 +212,31 @@ Para sistemas Windows 2000 y versiones posteriores:
 
 <dl> <dt>
 
-[Elementos del panel de control](control-panel-applications.md)
+[Panel de control elementos](control-panel-applications.md)
 </dt> <dt>
 
 [Directrices de la experiencia de usuario](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrar elementos del panel de control](registering-control-panel-items.md)
+[Registro de Panel de control elementos](registering-control-panel-items.md)
 </dt> <dt>
 
-[Usar CPLApplet](using-cplapplet.md)
+[Uso de CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Procesamiento de mensajes del panel de control](message-processing.md)
+[Panel de control de mensajes](message-processing.md)
 </dt> <dt>
 
-[Extender elementos del panel de control del sistema](extending-system-control-panel-items.md)
+[Extender elementos de Panel de control sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Asignar categorías del panel de control](assigning-control-panel-categories.md)
+[Asignación de Panel de control categorías](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Crear vínculos de tarea que se pueden buscar para un elemento del panel de control](creating-searchable-task-links.md)
+[Crear vínculos de tareas buscables para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Acceder al panel de control en modo seguro en Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Acceso al Panel de control en modo Caja fuerte en Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  
