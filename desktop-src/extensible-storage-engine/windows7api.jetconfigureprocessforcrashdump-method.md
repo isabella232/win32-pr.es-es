@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows7Api. JetConfigureProcessForCrashDump (método)'
-title: Método Windows7Api. JetConfigureProcessForCrashDump (Microsoft. ISAM. esent. Interop. Windows7)
+description: Más información sobre el método Windows7Api.JetConfigureProcessForCrashDump
+title: Método Windows7Api.JetConfigureProcessForCrashDump (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: 'JetConfigureProcessForCrashDump method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows7.Windows7Api.JetConfigureProcessForCrashDump(Microsoft.Isam.Esent.Interop.Windows7.CrashDumpGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7api.jetconfigureprocessforcrashdump(v=EXCHG.10)
@@ -20,23 +20,24 @@ topic_type:
 - kbSyntax
 - apiref
 api_type:
-- Managed
+- DllExport
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
+- esent.interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3291e882ecaac97699385e9e344702ea5414bd68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecabba69d87d64995179de99e5fc4e42a93d0f3e
+ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715397"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113691674"
 ---
-# <a name="windows7apijetconfigureprocessforcrashdump-method"></a>Windows7Api. JetConfigureProcessForCrashDump, método
+# <a name="windows7apijetconfigureprocessforcrashdump-method"></a>Método Windows7Api.JetConfigureProcessForCrashDump
 
 Opciones de volcado de memoria para Watson.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,11 +59,11 @@ public static void JetConfigureProcessForCrashDump(
 #### <a name="parameters"></a>Parámetros
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. Windows7. CrashDumpGrbit](./crashdumpgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows7.CrashDumpGrbit](./crashdumpgrbit-enumeration.md)  
     
     Opciones de volcado de memoria.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -70,4 +71,4 @@ public static void JetConfigureProcessForCrashDump(
 
 [Miembros de Windows7Api](./windows7api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
