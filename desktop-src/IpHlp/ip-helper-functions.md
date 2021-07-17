@@ -4,12 +4,12 @@ description: Las siguientes funciones recuperan y modifican los valores de confi
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-ms.openlocfilehash: ae19803c25512242b613735a060c7beda8c1df70
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ee16bb0b65545c4abbef387c5b90d42fb9d3c629
+ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549510"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "114394218"
 ---
 # <a name="ip-helper-functions"></a>Funciones auxiliares de IP
 
@@ -55,6 +55,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 
 ## <a name="interface-management"></a>Administración de interfaces
 
+-   [**FreeInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-freeinterfacednssettings)
 -   [**GetFriendlyIfIndex**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getfriendlyifindex)
 -   [**GetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getifentry)
 -   [**GetIfEntry2**](/windows/win32/api/Netioapi/nf-netioapi-getifentry2)
@@ -63,6 +64,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**GetIfTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getiftable)
 -   [**GetIfTable2**](/windows/win32/api/Netioapi/nf-netioapi-getiftable2)
 -   [**GetIfTable2Ex**](/windows/win32/api/Netioapi/nf-netioapi-getiftable2ex)
+-   [**GetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-getinterfacednssettings)
 -   [**GetInterfaceInfo**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo)
 -   [**GetInvertedIfStackTable**](/windows/win32/api/Netioapi/nf-netioapi-getinvertedifstacktable)
 -   [**GetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-getipinterfaceentry)
@@ -70,6 +72,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**GetNumberOfInterfaces**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getnumberofinterfaces)
 -   [**InitializeIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-initializeipinterfaceentry)
 -   [**SetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setifentry)
+-   [**SetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-setinterfacednssettings)
 -   [**SetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-setipinterfaceentry)
 
 ## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>Protocolo de Internet (IP) y Protocolo de mensajes de control de Internet (ICMP)
@@ -119,7 +122,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**RtlIpv6StringToAddress**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressa)
 -   [**RtlIpv6StringToAddressEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressexw)
 
-## <a name="ip-neighbor-address-management"></a>Administración de direcciones de vecino IP
+## <a name="ip-neighbor-address-management"></a>Administración de direcciones ip de vecino
 
 -   [**CreateIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -215,7 +218,7 @@ Estas funciones solo se definen en Windows Server 2003.
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y protocolo de datagramas de usuario (UDP)
+## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y Protocolo de datagramas de usuario (UDP)
 
 -   [**GetExtendedTcpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedtcptable)
 -   [**GetExtendedUdpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedudptable)

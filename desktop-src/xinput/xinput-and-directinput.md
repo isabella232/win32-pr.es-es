@@ -1,61 +1,64 @@
 ---
 title: XInput y DirectInput
-description: XInput es una API que permite que las aplicaciones reciban datos de la controladora Xbox para Windows.
+description: XInput es una API que permite a las aplicaciones recibir entradas del controlador de Xbox para Windows.
 ms.assetid: 0f29a47b-24ed-c0fa-e9e9-8a061619845c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dcdbc31a66d4928b52ae5d097cab0e877f6f078
-ms.sourcegitcommit: 48d4947b16f1ed1eaf6fae2b75954b736dd25450
+ms.openlocfilehash: 58339616f1e9e3a43529b6853bfc193d359ef11e
+ms.sourcegitcommit: b3839bea8d55c981d53cb8802d666bf49093b428
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "103794176"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114373190"
 ---
 # <a name="xinput-and-directinput"></a>XInput y DirectInput
 
-XInput es una API que permite que las aplicaciones reciban datos de la controladora Xbox para Windows. En este documento se describen las diferencias entre las implementaciones de XInput y de [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) del controlador de Xbox y cómo puede admitir dispositivos XInput y dispositivos de DirectInput heredados al mismo tiempo.
+XInput es una API que permite a las aplicaciones recibir entradas del controlador de Xbox para Windows. En este documento se describen las diferencias entre las implementaciones de XInput y [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) del controlador de Xbox y cómo puede admitir dispositivos XInput y dispositivos DirectInput heredados al mismo tiempo.
 
 > [!Note]  
-> No se recomienda el uso de [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredado y DirectInput no está disponible para las aplicaciones de la tienda Windows.
+> No se recomienda el [uso de DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredado y DirectInput no está disponible para Windows Store.
 
 ## <a name="the-new-standard-xinput"></a>El nuevo estándar: XInput
 
 XInput ya está disponible para el desarrollo de juegos. Este es el nuevo estándar de entrada para Xbox y Windows. Las API están disponibles a través del SDK de DirectX y el controlador está disponible a través de Windows Update.
 
-Hay varias ventajas en el uso de XInput en [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)):
+El uso de XInput sobre DirectInput tiene varias [ventajas:](/previous-versions/windows/desktop/ee416842(v=vs.85))
 
 -   XInput es más fácil de usar y requiere menos configuración que [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85))
--   Tanto la programación de Xbox como la de Windows usarán los mismos conjuntos de API principales, lo que permite que la programación traduzca mucho más fácilmente
--   Habrá una gran base instalada de controladores de Xbox
--   Los dispositivos XInput (es decir, los controladores de Xbox) solo tendrán la funcionalidad de vibración al usar las API de XInput
--   Los controladores futuros que se publiquen para la consola Xbox (es decir, las ruedas de gobierno) también funcionarán en Windows
+-   Tanto Xbox como Windows programación usarán los mismos conjuntos de API principales, lo que permite que la programación traduzca la multiplataforma mucho más fácil.
+-   Habrá una gran base instalada de controladores de Xbox.
+-   Los dispositivos XInput (es decir, los controladores de Xbox) solo tendrán funcionalidad de vibración cuando se usen las API XInput.
+-   Los controladores futuros publicados para la consola Xbox (es decir, las ruedas de ruedas) también funcionarán en Windows
 
-### <a name="using-the-xbox-controller-with-directinput"></a>Usar el controlador Xbox con DirectInput
+### <a name="using-the-xbox-controller-with-directinput"></a>Uso del controlador xbox con DirectInput
 
-La controladora Xbox está correctamente enumerada en [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85))y se puede usar con DirectInputAPIs. Sin embargo, algunas funciones que proporciona XInput no se mostrarán en la implementación de DirectInput:
+El controlador de Xbox se enumera correctamente en [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85))y se puede usar con directInputAPIs. Sin embargo, faltará alguna funcionalidad proporcionada por XInput en la implementación de DirectInput:
 
--   Los botones de desencadenador izquierdo y derecho actuarán como un solo botón, no independientemente
+-   Los botones de desencadenador izquierdo y derecho actuarán como un botón único, no de forma independiente.
 -   Los efectos de vibración no estarán disponibles
--   Las consultas de dispositivos con auriculares no estarán disponibles
+-   Las consultas de dispositivos de casco no estarán disponibles
 
-La combinación de los desencadenadores izquierdo y derecho de [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) es por diseño. Los juegos siempre suponen que los ejes del dispositivo DirectInput están centrados cuando no hay ninguna interacción del usuario con el dispositivo. Sin embargo, el controlador Xbox se diseñó para registrar el valor mínimo, no el centro, cuando no se mantienen los desencadenadores. Por lo tanto, los juegos más antiguos suponen la interacción del usuario.
+La combinación de los desencadenadores izquierdo y derecho [en DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) es por diseño. Los juegos siempre han asumido que los ejes del dispositivo DirectInput están centrados cuando no hay ninguna interacción del usuario con el dispositivo. Sin embargo, el controlador de Xbox se diseñó para registrar el valor mínimo, no el centro, cuando no se mantienen los desencadenadores. Por lo tanto, los juegos más antiguos asumirían la interacción del usuario.
 
-La solución era combinar los desencadenadores, establecer un desencadenador en una dirección positiva y otro en una dirección negativa, por lo que ninguna interacción del usuario es [indicativa de que](/previous-versions/windows/desktop/ee416842(v=vs.85)) el "control" esté en el centro.
+La solución era combinar los desencadenadores, estableciendo un desencadenador en una dirección positiva y el otro en una dirección negativa, por lo que ninguna interacción del usuario es indicativa a [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) de que el "control" está en el centro.
 
 Para probar los valores del desencadenador por separado, debe usar XInput.
 
 ## <a name="xinput-and-directinput-side-by-side"></a>XInput y DirectInput en paralelo
 
-Al admitir XInput únicamente, el juego no funcionará con los dispositivos [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredados. XInput no reconocerá estos dispositivos.
+Al admitir solo XInput, el juego no funcionará con dispositivos [DirectInput heredados.](/previous-versions/windows/desktop/ee416842(v=vs.85)) XInput no reconocerá estos dispositivos.
 
-Si desea que el juego admita dispositivos [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredados, puede usar DirectInput y XInput en paralelo. Al enumerar los dispositivos de DirectInput, todos los dispositivos de DirectInput se enumerarán correctamente. Todos los dispositivos XInput aparecerán como dispositivos XInput y DirectInput, pero no deben controlarse a través de DirectInput. Tendrá que determinar qué dispositivos de DirectInput son dispositivos heredados y cuáles son los dispositivos XInput y quitarlos de la enumeración de los dispositivos de DirectInput.
+Si quiere que el juego admita dispositivos [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredados, puede usar DirectInput y XInput en paralelo. Al enumerar los dispositivos DirectInput, todos los dispositivos DirectInput se enumerarán correctamente. Todos los dispositivos XInput se mostrarán como dispositivos XInput y DirectInput, pero no se deben controlar a través de DirectInput. Deberá determinar cuáles de los dispositivos DirectInput son dispositivos heredados y cuáles son dispositivos XInput y quitarlos de la enumeración de dispositivos DirectInput.
 
-Para ello, inserte este código en su devolución de llamada de enumeración de DirectInput:
+Para ello, inserte este código en la devolución de llamada de enumeración DirectInput:
 
 ```cpp
 #include <wbemidl.h>
 #include <oleauto.h>
-#include <wmsstd.h>
+
+#ifndef SAFE_RELEASE
+#define SAFE_RELEASE(p) { if (p) { (p)->Release(); (p) = nullptr; } }
+#endif
 
 //-----------------------------------------------------------------------------
 // Enum each PNP device using WMI and check each device ID to see if it contains 
@@ -64,85 +67,86 @@ Para ello, inserte este código en su devolución de llamada de enumeración de 
 //-----------------------------------------------------------------------------
 BOOL IsXInputDevice( const GUID* pGuidProductFromDirectInput )
 {
-    IWbemLocator*           pIWbemLocator  = NULL;
-    IEnumWbemClassObject*   pEnumDevices   = NULL;
-    IWbemClassObject*       pDevices[20]   = {0};
-    IWbemServices*          pIWbemServices = NULL;
-    BSTR                    bstrNamespace  = NULL;
-    BSTR                    bstrDeviceID   = NULL;
-    BSTR                    bstrClassName  = NULL;
-    DWORD                   uReturned      = 0;
-    bool                    bIsXinputDevice= false;
-    UINT                    iDevice        = 0;
-    VARIANT                 var;
-    HRESULT                 hr;
-
+    IWbemLocator*           pIWbemLocator = nullptr;
+    IEnumWbemClassObject*   pEnumDevices = nullptr;
+    IWbemClassObject*       pDevices[20] = {};
+    IWbemServices*          pIWbemServices = nullptr;
+    BSTR                    bstrNamespace = nullptr;
+    BSTR                    bstrDeviceID = nullptr;
+    BSTR                    bstrClassName = nullptr;
+    bool                    bIsXinputDevice = false;
+    
     // CoInit if needed
-    hr = CoInitialize(NULL);
+    HRESULT hr = CoInitialize(nullptr);
     bool bCleanupCOM = SUCCEEDED(hr);
 
     // So we can call VariantClear() later, even if we never had a successful IWbemClassObject::Get().
+    VARIANT var = {};
     VariantInit(&var);
 
     // Create WMI
-    hr = CoCreateInstance( __uuidof(WbemLocator),
-                           NULL,
-                           CLSCTX_INPROC_SERVER,
-                           __uuidof(IWbemLocator),
-                           (LPVOID*) &pIWbemLocator);
-    if( FAILED(hr) || pIWbemLocator == NULL )
+    hr = CoCreateInstance(__uuidof(WbemLocator),
+        nullptr,
+        CLSCTX_INPROC_SERVER,
+        __uuidof(IWbemLocator),
+        (LPVOID*)&pIWbemLocator);
+    if (FAILED(hr) || pIWbemLocator == nullptr)
         goto LCleanup;
 
-    bstrNamespace = SysAllocString( L"\\\\.\\root\\cimv2" );if( bstrNamespace == NULL ) goto LCleanup;        
-    bstrClassName = SysAllocString( L"Win32_PNPEntity" );   if( bstrClassName == NULL ) goto LCleanup;        
-    bstrDeviceID  = SysAllocString( L"DeviceID" );          if( bstrDeviceID == NULL )  goto LCleanup;        
+    bstrNamespace = SysAllocString(L"\\\\.\\root\\cimv2");  if (bstrNamespace == nullptr) goto LCleanup;
+    bstrClassName = SysAllocString(L"Win32_PNPEntity");     if (bstrClassName == nullptr) goto LCleanup;
+    bstrDeviceID = SysAllocString(L"DeviceID");             if (bstrDeviceID == nullptr)  goto LCleanup;
     
     // Connect to WMI 
-    hr = pIWbemLocator->ConnectServer( bstrNamespace, NULL, NULL, 0L, 
-                                       0L, NULL, NULL, &pIWbemServices );
-    if( FAILED(hr) || pIWbemServices == NULL )
+    hr = pIWbemLocator->ConnectServer(bstrNamespace, nullptr, nullptr, 0L,
+        0L, nullptr, nullptr, &pIWbemServices);
+    if (FAILED(hr) || pIWbemServices == nullptr)
         goto LCleanup;
 
     // Switch security level to IMPERSONATE. 
-    CoSetProxyBlanket( pIWbemServices, RPC_C_AUTHN_WINNT, RPC_C_AUTHZ_NONE, NULL, 
-                       RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE, NULL, EOAC_NONE );                    
+    hr = CoSetProxyBlanket(pIWbemServices,
+        RPC_C_AUTHN_WINNT, RPC_C_AUTHZ_NONE, nullptr,
+        RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE,
+        nullptr, EOAC_NONE);
+    if ( FAILED(hr) )
+        goto LCleanup;
 
-    hr = pIWbemServices->CreateInstanceEnum( bstrClassName, 0, NULL, &pEnumDevices ); 
-    if( FAILED(hr) || pEnumDevices == NULL )
+    hr = pIWbemServices->CreateInstanceEnum(bstrClassName, 0, nullptr, &pEnumDevices);
+    if (FAILED(hr) || pEnumDevices == nullptr)
         goto LCleanup;
 
     // Loop over all devices
-    for( ;; )
+    for (;;)
     {
-        // Get 20 at a time
-        hr = pEnumDevices->Next( 10000, 20, pDevices, &uReturned );
-        if( FAILED(hr) )
+        ULONG uReturned = 0;
+        hr = pEnumDevices->Next(10000, _countof(pDevices), pDevices, &uReturned);
+        if (FAILED(hr))
             goto LCleanup;
-        if( uReturned == 0 )
+        if (uReturned == 0)
             break;
 
-        for( iDevice=0; iDevice<uReturned; iDevice++ )
+        for (size_t iDevice = 0; iDevice < uReturned; ++iDevice)
         {
             // For each device, get its device ID
-            hr = pDevices[iDevice]->Get( bstrDeviceID, 0L, &var, NULL, NULL );
-            if( SUCCEEDED( hr ) && var.vt == VT_BSTR && var.bstrVal != NULL )
+            hr = pDevices[iDevice]->Get(bstrDeviceID, 0L, &var, nullptr, nullptr);
+            if (SUCCEEDED(hr) && var.vt == VT_BSTR && var.bstrVal != nullptr)
             {
                 // Check if the device ID contains "IG_".  If it does, then it's an XInput device
-                    // This information can not be found from DirectInput 
-                if( wcsstr( var.bstrVal, L"IG_" ) )
+                // This information can not be found from DirectInput 
+                if (wcsstr(var.bstrVal, L"IG_"))
                 {
                     // If it does, then get the VID/PID from var.bstrVal
                     DWORD dwPid = 0, dwVid = 0;
-                    WCHAR* strVid = wcsstr( var.bstrVal, L"VID_" );
-                    if( strVid && swscanf( strVid, L"VID_%4X", &dwVid ) != 1 )
+                    WCHAR* strVid = wcsstr(var.bstrVal, L"VID_");
+                    if (strVid && swscanf_s(strVid, L"VID_%4X", &dwVid) != 1)
                         dwVid = 0;
-                    WCHAR* strPid = wcsstr( var.bstrVal, L"PID_" );
-                    if( strPid && swscanf( strPid, L"PID_%4X", &dwPid ) != 1 )
+                    WCHAR* strPid = wcsstr(var.bstrVal, L"PID_");
+                    if (strPid && swscanf_s(strPid, L"PID_%4X", &dwPid) != 1)
                         dwPid = 0;
 
                     // Compare the VID/PID to the DInput device
-                    DWORD dwVidPid = MAKELONG( dwVid, dwPid );
-                    if( dwVidPid == pGuidProductFromDirectInput->Data1 )
+                    DWORD dwVidPid = MAKELONG(dwVid, dwPid);
+                    if (dwVidPid == pGuidProductFromDirectInput->Data1)
                     {
                         bIsXinputDevice = true;
                         goto LCleanup;
@@ -150,25 +154,28 @@ BOOL IsXInputDevice( const GUID* pGuidProductFromDirectInput )
                 }
             }
             VariantClear(&var);
-            SAFE_RELEASE( pDevices[iDevice] );
+            SAFE_RELEASE(pDevices[iDevice]);
         }
     }
 
 LCleanup:
     VariantClear(&var);
+    
     if(bstrNamespace)
         SysFreeString(bstrNamespace);
     if(bstrDeviceID)
         SysFreeString(bstrDeviceID);
     if(bstrClassName)
         SysFreeString(bstrClassName);
-    for( iDevice=0; iDevice<20; iDevice++ )
-        SAFE_RELEASE( pDevices[iDevice] );
-    SAFE_RELEASE( pEnumDevices );
-    SAFE_RELEASE( pIWbemLocator );
-    SAFE_RELEASE( pIWbemServices );
+        
+    for (size_t iDevice = 0; iDevice < _countof(pDevices); ++iDevice)
+        SAFE_RELEASE(pDevices[iDevice]);
 
-    if( bCleanupCOM )
+    SAFE_RELEASE(pEnumDevices);
+    SAFE_RELEASE(pIWbemLocator);
+    SAFE_RELEASE(pIWbemServices);
+
+    if(bCleanupCOM)
         CoUninitialize();
 
     return bIsXinputDevice;
@@ -183,8 +190,6 @@ LCleanup:
 BOOL CALLBACK EnumJoysticksCallback( const DIDEVICEINSTANCE* pdidInstance,
                                      VOID* pContext )
 {
-    HRESULT hr;
-
     if( IsXInputDevice( &pdidInstance->guidProduct ) )
         return DIENUM_CONTINUE;
 
@@ -194,8 +199,10 @@ BOOL CALLBACK EnumJoysticksCallback( const DIDEVICEINSTANCE* pdidInstance,
 }
 ```
 
+> Hay una versión ligeramente mejorada de este código en el ejemplo heredado de DirectInput [Qr.](https://github.com/walbourn/directx-sdk-samples/tree/master/DirectInput/Joystick)
+
 ## <a name="related-topics"></a>Temas relacionados
 
-[Introducción con XInput](getting-started-with-xinput.md)
+[Tareas iniciales con XInput](getting-started-with-xinput.md)
 
 [Referencia de programación](programming-reference.md)
