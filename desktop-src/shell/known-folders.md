@@ -1,5 +1,5 @@
 ---
-description: Windows Vista presenta nuevos escenarios de almacenamiento y un nuevo espacio de nombres de Perfil de usuario.
+description: Windows Vista presenta nuevos escenarios de almacenamiento y un nuevo espacio de nombres de perfil de usuario.
 title: Carpetas conocidas
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7527b7242c68f0d6c78cd0fae427626c182302f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b5fbdaf0086f88fc4eed42ce47749a99ab07b40
+ms.sourcegitcommit: 8bfe4f468ee5de7bbe096e5db81e427db53d977c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985782"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680318"
 ---
 # <a name="known-folders"></a>Carpetas conocidas
 
-Windows Vista presenta nuevos escenarios de almacenamiento y un nuevo espacio de nombres de Perfil de usuario. Para abordar estos nuevos factores, se ha reemplazado el sistema anterior que hace referencia a las carpetas estándar mediante un valor [**CSIDL**](csidl.md) . A partir de Windows Vista, se hace referencia a esas carpetas mediante un nuevo conjunto de valores GUID denominados identificadores de carpeta conocidos.
+Windows Vista presenta nuevos escenarios de almacenamiento y un nuevo espacio de nombres de perfil de usuario. Para abordar estos nuevos factores, se ha reemplazado el sistema anterior de hacer referencia a carpetas estándar por un [**valor CSIDL.**](csidl.md) A Windows Vista, se hace referencia a esas carpetas mediante un nuevo conjunto de valores GUID denominados identificadores de carpeta conocidos.
 
-El sistema de carpetas conocido proporciona estas ventajas:
+El sistema de carpetas conocidas proporciona estas ventajas:
 
--   Los fabricantes de software independientes (ISV) pueden extender el conjunto de identificadores de carpeta conocidos con los suyos propios. Pueden definir carpetas, asignarles identificadores y registrarlos en el sistema. No se pudieron extender los valores de CSIDL.
--   Todas las carpetas conocidas de un sistema se pueden enumerar. Ninguna API proporcionó esta funcionalidad para los valores CSIDL. Vea [**IKnownFolderManager:: GetFolderIds**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-getfolderids) para obtener más información.
--   Una carpeta conocida agregada por un ISV puede Agregar propiedades personalizadas que le permitan explicar su finalidad y el uso previsto.
--   Muchas carpetas conocidas se pueden redirigir a nuevas ubicaciones, incluidas las ubicaciones de red. En el sistema CSIDL, solo se podría redirigir la carpeta **Mis documentos** .
--   Las carpetas conocidas pueden tener controladores personalizados para su uso durante la creación o la eliminación.
+-   Los proveedores de software independientes (ISV) pueden ampliar el conjunto de los propios iD de carpeta conocidos. Pueden definir carpetas, darles los iDs y registrarlos en el sistema. No se pudieron extender los valores CSIDL.
+-   Se pueden enumerar todas las carpetas conocidas de un sistema. Ninguna API proporcionó esta funcionalidad para los valores CSIDL. Vea [**IKnownFolderManager::GetFolderIds para**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-getfolderids) obtener más información.
+-   Una carpeta conocida agregada por un ISV puede agregar propiedades personalizadas que le permitan explicar su propósito y su uso previsto.
+-   Muchas carpetas conocidas se pueden redirigir a ubicaciones nuevas, incluidas las ubicaciones de red. En el sistema CSIDL, solo se **puede redirigir Mis documentos** carpeta principal.
+-   Las carpetas conocidas pueden tener controladores personalizados para su uso durante la creación o eliminación.
 
-Todavía se admite el sistema CSIDL y las API que hacen uso de los valores de CSIDL por compatibilidad. Sin embargo, no se recomienda usarlas en ningún desarrollo nuevo.
+El sistema CSIDL y las API que usan valores CSIDL siguen siendo compatibles. Sin embargo, no se recomienda usarlas en ningún desarrollo nuevo.
 
 
-En los temas siguientes se describen los detalles del sistema de carpetas conocidas.
+En los temas siguientes se tratan los detalles del sistema carpetas conocidas.
 
 -   [Trabajar con carpetas conocidas en aplicaciones](working-with-known-folders.md)
--   [Cómo extender carpetas conocidas con carpetas personalizadas](how-to-extend-known-folders-with-custom-folders.md)
+-   [Cómo ampliar carpetas conocidas con carpetas personalizadas](how-to-extend-known-folders-with-custom-folders.md)
 -   [**KNOWNFOLDERID**](knownfolderid.md)
 
-Las siguientes páginas de referencia explican las funciones de carpetas conocidas de Win32, que se pueden usar para recuperar la ubicación de carpetas conocidas o redirigirlas a una nueva ubicación. Estas funciones reemplazan a las funciones anteriores de Win32. Las nuevas funciones se proporcionan para proporcionar un comportamiento equivalente a las funciones anteriores, pero cada nueva función también se duplica mediante una API del modelo de objetos componentes (COM).
+En las siguientes páginas de referencia se explican las funciones carpetas conocidas de Win32, que se pueden usar para recuperar la ubicación de carpetas conocidas o redirigirlas a una nueva ubicación. Estas funciones reemplazan a las funciones anteriores de Win32. Las nuevas funciones se proporcionan para proporcionar un comportamiento equivalente a las funciones antiguas, pero cada función nueva también se duplica mediante una API de modelo de objetos componentes (COM).
 
 
 
-| Nueva función                                             | Reemplazo                                           | Equivalente de COM                                            |
+| Nueva función                                             | Reemplaza                                           | EQUIVALENTE COM                                            |
 |----------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------|
 | [**SHGetKnownFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath)     | [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha)         | [**IKnownFolder::GetPath**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getpath)     |
 | [**SHGetKnownFolderIDList**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderidlist) | [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) | [**IKnownFolder::GetIDList**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getidlist) |
@@ -51,20 +51,16 @@ Las siguientes páginas de referencia explican las funciones de carpetas conocid
 
  
 
-Las siguientes páginas de referencia explican las API de carpetas conocidas de COM, que proporcionan toda la funcionalidad de las API de Win32 enumeradas anteriormente, además de agregar la capacidad de enumerar todas las carpetas conocidas, tener acceso a las propiedades de las carpetas conocidas y ampliar el conjunto estándar de carpetas conocidas.
+En las siguientes páginas de referencia se explican las API de carpetas conocidas de COM, que proporcionan toda la funcionalidad de las API de Win32 enumeradas anteriormente, además de agregar la capacidad de enumerar todas las carpetas conocidas, acceder a las propiedades de carpetas conocidas y ampliar el conjunto estándar de carpetas conocidas.
 
 -   [**IKnownFolder**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iknownfolder)
 -   [**IKnownFolderManager**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iknownfoldermanager)
 
-En el kit de desarrollo de software (SDK) de Windows se incluye un ejemplo de C++ que muestra las API de carpeta conocidas. Una vez que haya instalado el Windows SDK en el equipo, el ejemplo se puede encontrar en% ProgramFiles% \\ Microsoft SDKs \\ Windows \\ v 6.0 \\ Samples \\ WinUI \\ Shell \\ AppPlatform \\ KnownFolders.
+Un ejemplo de C++ que muestra las API de carpetas conocidas se incluye en Windows Software Development Kit (SDK). Una vez instalado el SDK de Windows en el equipo, el ejemplo se puede encontrar en %ProgramFiles% \\ Microsoft SDKs \\ Windows \\ v6.0 Samples WinUI Shell AppPlatform KnownFolders (Archivos de programa% SDK de Microsoft Windows ejemplos de \\ \\ WinUI Shell \\ \\ AppPlatform \\ KnownFolders).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejemplo de carpetas conocidas](/previous-versions/windows/desktop/legacy/dd940364(v=vs.85))
+[Ejemplo de carpetas conocidas](/windows/win32/shell/samples-knownfolders)
 </dt> </dl>
-
- 
-
- 

@@ -1,19 +1,19 @@
 ---
-description: Contiene una alternativa de reconocimiento para un InkWord. Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con la más alta primero.
+description: Contiene una alternativa de reconocimiento para inkWord. Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con el valor más alto primero.
 ms.assetid: 6ec78ac9-c10c-4227-bead-5ddfc48ce27e
-title: Elemento alternativo (WinGDI. h)
+title: Elemento Alternate (Wingdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71eb1bc0bf74462cadecb480ceb87a0b610be876
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55dfb629aadea988a6aeec1cba1020c8ab47c994
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671719"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436610"
 ---
 # <a name="alternate-element"></a>Elemento alternativo
 
-Contiene una alternativa de reconocimiento para un [**InkWord**](inkword-element.md). Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con la más alta primero.
+Contiene una alternativa de reconocimiento para [**un objeto InkWord.**](inkword-element.md) Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con el valor más alto primero.
 
 ## <a name="definition"></a>Definición
 
@@ -37,11 +37,11 @@ Ninguno.
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo de elemento | **xs:string**                              |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink |
-| Nombre del esquema  | Lector de diario                             |
+|                  | Value                                      |
+|------------------|--------------------------------------------|
+| **Tipo de elemento** | xs:string                                  |
+| **Espacio de nombres**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nombre del esquema**  | Lector de diario                             |
 
 
 
@@ -53,7 +53,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WinGDI. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wingdi.h</dt> </dl> |
 
 
 

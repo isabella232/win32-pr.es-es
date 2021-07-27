@@ -1,19 +1,19 @@
 ---
-description: Define un grupo de atributos que se utiliza en una variedad de elementos de un archivo XML de diario. Contiene atributos que se usan para definir los límites (izquierda, superior, alto y ancho) de un elemento en el documento.
+description: Define un grupo de atributos utilizado por diversos elementos de un archivo XML de diario. Contiene atributos que se usan para definir los límites (izquierda, superior, alto y ancho) de un elemento del documento.
 ms.assetid: 7841aa65-fb35-4909-a34e-3c883555f764
 title: Grupo de atributos BoundsType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 411a9d3ec30363e5c405cf27654330a0886f8946
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78c51fcb9bc0041bbc030f2c67e434a964212562
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807981"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436520"
 ---
 # <a name="boundstype-attribute-group"></a>Grupo de atributos BoundsType
 
-Define un grupo de atributos que se utiliza en una variedad de elementos de un archivo XML de diario. Contiene atributos que se usan para definir los límites (izquierda, superior, alto y ancho) de un elemento en el documento.
+Define un grupo de atributos utilizado por diversos elementos de un archivo XML de diario. Contiene atributos que se usan para definir los límites (izquierda, superior, alto y ancho) de un elemento del documento.
 
 ## <a name="definition"></a>Definición
 
@@ -36,7 +36,7 @@ Ninguno.
 
 | Atributo  | Tipo                      | Obligatorio | Descripción                                                                                        | PossibleValues                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto situado más a la izquierda del cuadro de límite del elemento.<br/> | Cualquier número entero.<br/>              |
+| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto más a la izquierda en el cuadro de límite del elemento.<br/> | Cualquier número entero.<br/>              |
 | **Top** (Principales)    | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.<br/>  | Cualquier número entero.<br/>              |
 | **Width**  | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.<br/>                                          | Cualquier entero no negativo.<br/> |
 | **Height** | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.<br/>                                         | Cualquier entero no negativo.<br/> |
@@ -49,10 +49,10 @@ Ninguno.
 
 
 
-|             |                                            |
-|-------------|--------------------------------------------|
-| Espacio de nombres   | urn: schemas-microsoft-com: TabletPC: richink |
-| Nombre del esquema | Lector de diario                             |
+|                 | Value                                      |
+|-----------------|--------------------------------------------|
+| **Espacio de nombres**   | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nombre del esquema** | Lector de diario                             |
 
 
 

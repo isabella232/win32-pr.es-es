@@ -1,19 +1,19 @@
 ---
 description: Contiene el fondo de un elemento JournalDocument o un elemento JournalPage.
 ms.assetid: 48527c4e-50fb-4800-ac87-1646234783ba
-title: Background (elemento)
+title: Elemento Background
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e58a836c7cfd13130779c1cd6b017105bcaa6321
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46388d56c04fc24ecd578788eecf9926ef01a301
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716591"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436590"
 ---
-# <a name="background-element"></a>Background (elemento)
+# <a name="background-element"></a>Elemento Background
 
-Contiene el fondo de un elemento [**JournalDocument**](journaldocument-element.md) o un elemento [**JournalPage**](journalpage-element.md) .
+Contiene el fondo de un [**elemento JournalDocument**](journaldocument-element.md) o [**un elemento JournalPage.**](journalpage-element.md)
 
 ## <a name="definition"></a>Definición
 
@@ -27,7 +27,7 @@ Contiene el fondo de un elemento [**JournalDocument**](journaldocument-element.m
 
 ## <a name="child-elements"></a>Elementos secundarios
 
-[**Impresión**](image-element.md)
+[**Imagen**](image-element.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -57,13 +57,13 @@ Contiene el fondo de un elemento [**JournalDocument**](journaldocument-element.m
 <td>Obligatorio</td>
 <td>Especifica el estilo del fondo.</td>
 <td><ul>
-<li>None</li>
+<li>Ninguno</li>
 <li>Sólido</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Color</strong></td>
-<td>SimpleType de <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType</td>
 <td>Opcionales</td>
 <td>Especifica el color del fondo.</td>
 <td>Consulte <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType.</td>
@@ -79,11 +79,11 @@ Contiene el fondo de un elemento [**JournalDocument**](journaldocument-element.m
 
 
 
-|              |                                                                   |
-|--------------|-------------------------------------------------------------------|
-| Tipo de elemento | [**BackgroundType**](backgroundtype-complex-type.md) complexType |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink                        |
-| Nombre del esquema  | Lector de diario                                                    |
+|                  | Value                                                             |
+|------------------|-------------------------------------------------------------------|
+| **Tipo de elemento** | [**BackgroundType**](backgroundtype-complex-type.md) complexType |
+| **Espacio de nombres**    | urn:schemas-microsoft-com:tabletpc:richink                        |
+| **Nombre del esquema**  | Lector de diario                                                    |
 
 
 

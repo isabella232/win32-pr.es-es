@@ -1,30 +1,30 @@
 ---
-description: En la información general siguiente se describen los tipos de información del sistema disponibles.
+description: En las siguientes información general se describen los tipos de información del sistema disponibles.
 ms.assetid: cb7b50fc-6591-48a9-b3a7-327de9a6dc06
-title: Información del sistema de Windows
+title: Windows Información del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1df90d6e7a5a90d9ee108d67e5f9182ffca59f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f7144d5be7f6ba33dc1743e57935f9bf3bbdadd
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666925"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436240"
 ---
-# <a name="windows-system-information"></a>Información del sistema de Windows
+# <a name="windows-system-information"></a>Windows Información del sistema
 
-En la información general siguiente se describen los tipos de información del sistema disponibles.
+En las siguientes información general se describen los tipos de información del sistema disponibles.
 
 
 
 | Información general                                                | Descripción                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Identificadores y objetos](handles-and-objects.md)          | Un *objeto* es una estructura de datos que representa un recurso del sistema, como un archivo, un subproceso o una imagen gráfica. Una aplicación no puede tener acceso directamente a los datos de objeto o al recurso del sistema que representa un objeto. En su lugar, una aplicación debe obtener un *identificador* de objeto, que puede usar para examinar o modificar el recurso del sistema. |
-| [Registro](registry.md)                                | Base de datos definida por el sistema en la que las aplicaciones y el almacén del sistema y recuperan información de configuración.                                                                                                                                                                                                                        |
-| [Información del sistema](system-information.md)            | Recupera o establece la configuración del sistema, la configuración, la versión y las métricas.                                                                                                                                                                                                                                                             |
+| [Identificadores y objetos](handles-and-objects.md)          | Un *objeto* es una estructura de datos que representa un recurso del sistema, como un archivo, un subproceso o una imagen gráfica. Una aplicación no puede acceder directamente a los datos del objeto ni al recurso del sistema que representa un objeto. En su lugar, una aplicación debe obtener un *identificador de objeto*, que puede usar para examinar o modificar el recurso del sistema. |
+| [Registro](registry.md)                                | Una base de datos definida por el sistema en la que las aplicaciones y el sistema almacenan y recuperan información de configuración.                                                                                                                                                                                                                        |
+| [Información del sistema](system-information.md)            | Recupera o establece la configuración, la configuración, la versión y las métricas del sistema.                                                                                                                                                                                                                                                             |
 | [Time](time.md)                                        | Recupera o establece la hora del sistema.                                                                                                                                                                                                                                                                                                  |
-| [Proveedor de hora](time-provider.md)                      | Recupera las marcas de tiempo precisas del hardware o la red y proporciona marcas de tiempo a otros clientes de la red.                                                                                                                                                                                                              |
-| [Plataforma de evaluación de WaaS](update-assessor-service.md) | La plataforma de evaluación de actualizaciones de Windows como servicio (WaaS) proporciona información sobre las actualizaciones de Windows de un dispositivo.                                                                                                                                                                                                                      |
+| [Proveedor de hora](time-provider.md)                      | Recupera marcas de tiempo precisas del hardware o la red y proporciona marcas de tiempo a otros clientes de la red.                                                                                                                                                                                                              |
+| [Plataforma de evaluación de WaaS](update-assessor-service.md) | La Windows de evaluación de actualizaciones de Windows como servicio (WaaS) proporciona información sobre las actualizaciones Windows un dispositivo.                                                                                                                                                                                                                      |
 
 
 
@@ -34,9 +34,9 @@ En la información general siguiente se describen los tipos de información del 
 
 
 
-|                                                                                                                                   |                                                                                                                   |
+| Elemento                                                                                                                              | Descripción                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Foro General de problemas de desarrollo de Windows](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsgeneraldevelopmentissues) | Analice la información del sistema de Windows y otros problemas generales relacionados con el desarrollo de aplicaciones para Windows.<br/> |
+| [Foro de problemas Windows desarrollo de aplicaciones generales](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsgeneraldevelopmentissues) | Analice Windows Información del sistema y otros problemas generales sobre el desarrollo de aplicaciones para Windows.<br/> |
 
 
 

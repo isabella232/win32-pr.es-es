@@ -1,69 +1,69 @@
 ---
-description: La compresión de bloque es una técnica de compresión de textura para reducir el tamaño de la textura.
+description: La compresión de bloques es una técnica de compresión de textura para reducir el tamaño de la textura.
 ms.assetid: add98d8f-6846-4dd6-b0e2-a4b6e89cbcc5
 title: Compresión de bloques (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fcfb4bc91256415ab23686b7333df7d21df335d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f7c3a74fba0b4c7c2adade210a9a54952b5d1269
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104570873"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436551"
 ---
 # <a name="block-compression-direct3d-10"></a>Compresión de bloques (Direct3D 10)
 
-La compresión de bloque es una técnica de compresión de textura para reducir el tamaño de la textura. Cuando se comparan con una textura con 32 bits por color, una textura comprimida en bloque puede tener un tamaño de hasta un 75% inferior. Las aplicaciones normalmente ven un aumento del rendimiento cuando se usa la compresión de bloques debido a la menor superficie de memoria.
+La compresión de bloques es una técnica de compresión de textura para reducir el tamaño de la textura. En comparación con una textura con 32 bits por color, una textura comprimida en bloques puede ser hasta un 75 % más pequeña. Las aplicaciones suelen ver un aumento del rendimiento al usar la compresión de bloques debido a la menor superficie de memoria.
 
-Aunque la pérdida, la compresión de bloque funciona bien y se recomienda para todas las texturas que se transforman y filtran por la canalización. Las texturas que se asignan directamente a la pantalla (elementos de la interfaz de usuario como iconos y texto) no son buenas opciones de compresión porque los artefactos son más evidentes.
+Aunque es una pérdida, la compresión de bloques funciona bien y se recomienda para todas las texturas que la canalización transforma y filtra. Las texturas que se asignan directamente a la pantalla (elementos de la interfaz de usuario como iconos y texto) no son buenas opciones para la compresión porque los artefactos son más perceptibles.
 
-Una textura comprimida en bloques debe crearse como un múltiplo del tamaño 4 en todas las dimensiones y no se puede usar como salida de la canalización.
+Una textura comprimida por bloques debe crearse como un múltiplo de tamaño 4 en todas las dimensiones y no se puede usar como salida de la canalización.
 
--   [¿Cómo funciona la compresión de bloque?](#how-does-block-compression-work)
-    -   [Almacenar datos sin comprimir](#storing-uncompressed-data)
-    -   [Almacenar datos comprimidos](#storing-compressed-data)
--   [Usar la compresión de bloque](#using-block-compression)
-    -   [Tamaño virtual frente al tamaño físico](#virtual-size-versus-physical-size)
+-   [¿Cómo funciona la compresión de bloques?](#how-does-block-compression-work)
+    -   [Almacenamiento de datos sin comprimir](#storing-uncompressed-data)
+    -   [Almacenamiento de datos comprimidos](#storing-compressed-data)
+-   [Uso de la compresión de bloques](#using-block-compression)
+    -   [Tamaño virtual frente a tamaño físico](#virtual-size-versus-physical-size)
 -   [Algoritmos de compresión](#compression-algorithms)
     -   [BC1](#bc1)
     -   [BC2](#bc2)
     -   [BC3](#bc3)
-    -   [LAS texturas BC4](#bc4)
+    -   [BC4](#bc4)
     -   [BC5](#bc5)
--   [Conversión de formato mediante Direct3D 10,1](#format-conversion-using-direct3d-101)
+-   [Conversión de formato mediante Direct3D 10.1](#format-conversion-using-direct3d-101)
 -   [Temas relacionados](#related-topics)
 
-## <a name="how-does-block-compression-work"></a>¿Cómo funciona la compresión de bloque?
+## <a name="how-does-block-compression-work"></a>¿Cómo funciona la compresión de bloques?
 
-La compresión de bloque es una técnica para reducir la cantidad de memoria necesaria para almacenar los datos de color. Al almacenar algunos colores en su tamaño original y otros colores con un esquema de codificación, puede reducir drásticamente la cantidad de memoria necesaria para almacenar la imagen. Dado que el hardware descodifica automáticamente los datos comprimidos, no hay ninguna penalización de rendimiento para el uso de texturas comprimidas.
+La compresión de bloques es una técnica para reducir la cantidad de memoria necesaria para almacenar datos de color. Al almacenar algunos colores en su tamaño original y otros colores mediante un esquema de codificación, puede reducir drásticamente la cantidad de memoria necesaria para almacenar la imagen. Puesto que el hardware descodifica automáticamente los datos comprimidos, no hay ninguna penalización de rendimiento para el uso de texturas comprimidas.
 
-Para ver cómo funciona la compresión, consulte los dos ejemplos siguientes. En el primer ejemplo se describe la cantidad de memoria que se utiliza al almacenar datos sin comprimir. en el segundo ejemplo se describe la cantidad de memoria que se utiliza al almacenar datos comprimidos.
+Para ver cómo funciona la compresión, consulte los dos ejemplos siguientes. En el primer ejemplo se describe la cantidad de memoria utilizada al almacenar datos sin comprimir. En el segundo ejemplo se describe la cantidad de memoria utilizada al almacenar datos comprimidos.
 
-### <a name="storing-uncompressed-data"></a>Almacenar datos sin comprimir
+### <a name="storing-uncompressed-data"></a>Almacenamiento de datos sin comprimir
 
-En la ilustración siguiente se representa una textura de 4 × 4 sin comprimir. Supongamos que cada color contiene un componente de color único (rojo por ejemplo) y se almacena en un byte de memoria.
+En la ilustración siguiente se representa una textura 4×4 sin comprimir. Supongamos que cada color contiene un único componente de color (rojo por ejemplo) y se almacena en un byte de memoria.
 
-![Ilustración de una textura 4x4 sin comprimir](images/d3d10-block-compress-1.png)
+![ilustración de una textura 4x4 sin comprimir](images/d3d10-block-compress-1.png)
 
-Los datos sin comprimir se colocan en la memoria secuencialmente y requieren 16 bytes, tal como se muestra en la siguiente ilustración.
+Los datos sin comprimir se menten en memoria secuencialmente y requieren 16 bytes, como se muestra en la ilustración siguiente.
 
-![Ilustración de datos sin comprimir en memoria secuencial](images/d3d10-block-compress-2.png)
+![ilustración de datos sin comprimir en memoria secuencial](images/d3d10-block-compress-2.png)
 
-### <a name="storing-compressed-data"></a>Almacenar datos comprimidos
+### <a name="storing-compressed-data"></a>Almacenamiento de datos comprimidos
 
-Ahora que ha visto cuánta memoria utiliza una imagen sin comprimir, eche un vistazo a cuánta memoria guarda una imagen comprimida. El formato de compresión [BC1](#bc1) almacena 2 colores (1 byte cada uno) y índices de 16 3 bits (48 bits o 6 bytes) que se usan para interpolar los colores originales en la textura, como se muestra en la siguiente ilustración.
+Ahora que ha visto cuánta memoria usa una imagen sin comprimir, vea cuánta memoria guarda una imagen comprimida. El formato de compresión [BC4](#bc4) almacena 2 colores (1 byte cada uno) y 16 índices de 3 bits (48 bits o 6 bytes) que se usan para interpolar los colores originales de la textura, como se muestra en la ilustración siguiente.
 
-![Ilustración del formato de compresión BC1](images/d3d10-block-compress-3.png)
+![ilustración del formato de compresión bc4](images/d3d10-block-compress-3.png)
 
-El espacio total necesario para almacenar los datos comprimidos es de 8 bytes, lo que supone un ahorro de memoria del 50% sobre el ejemplo sin comprimir. El ahorro es incluso mayor cuando se usa más de un componente de color.
+El espacio total necesario para almacenar los datos comprimidos es de 8 bytes, lo que significa un ahorro de memoria del 50 % con respecto al ejemplo sin comprimir. El ahorro es incluso mayor cuando se usa más de un componente de color.
 
-El importante ahorro de memoria que proporciona la compresión por bloques puede dar lugar a un aumento del rendimiento. Este rendimiento se produce a costa de la calidad de la imagen (debido a la interpolación de color). sin embargo, la calidad inferior no suele ser apreciable.
+El ahorro sustancial de memoria que proporciona la compresión de bloques puede dar lugar a un aumento del rendimiento. Este rendimiento se produce a costa de la calidad de la imagen (debido a la interpolación de colores); sin embargo, la calidad inferior no suele ser perceptible.
 
-En la sección siguiente se muestra cómo Direct3D 10 facilita el uso de la compresión de bloque en la aplicación.
+En la sección siguiente se muestra cómo Direct3D 10 facilita el uso de la compresión de bloques en la aplicación.
 
-## <a name="using-block-compression"></a>Usar la compresión de bloque
+## <a name="using-block-compression"></a>Uso de la compresión de bloques
 
-Cree una textura comprimida en bloque como una textura sin comprimir (consulte [creación de una textura a partir de un archivo](d3d10-graphics-programming-guide-resources-creating-textures.md)), excepto que se especifica un formato comprimido en bloques.
+Cree una textura comprimida por bloques igual que una textura sin comprimir (vea Crear una textura [a](d3d10-graphics-programming-guide-resources-creating-textures.md)partir de un archivo ), salvo que especifique un formato comprimido por bloques.
 
 
 ```
@@ -73,42 +73,42 @@ D3DX10CreateTextureFromFile(...);
 
 
 
-A continuación, cree una vista para enlazar la textura a la canalización. Dado que una textura con compresión de bloque solo se puede usar como entrada para una fase de sombreador, desea crear una vista de recursos de sombreador mediante una llamada a [**CreateShaderResourceView**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createshaderresourceview).
+A continuación, cree una vista para enlazar la textura a la canalización. Puesto que una textura comprimida en bloques solo se puede usar como entrada para una fase de sombreador, quiere crear una vista de recursos de sombreador mediante una llamada a [**CreateShaderResourceView**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createshaderresourceview).
 
-Use una textura comprimida de bloque del mismo modo que usaría una textura sin comprimir. Si la aplicación va a obtener un puntero de memoria para bloquear datos comprimidos, debe tener en cuenta el relleno de memoria en un mipmap que hace que el tamaño declarado difiera del tamaño real.
+Use una textura comprimida de bloque de la misma manera que usaría una textura sin comprimir. Si la aplicación va a obtener un puntero de memoria a los datos comprimidos en bloque, debe tener en cuenta el relleno de memoria en un mapa mipmap que hace que el tamaño declarado sea diferente del tamaño real.
 
-### <a name="virtual-size-versus-physical-size"></a>Tamaño virtual frente al tamaño físico
+### <a name="virtual-size-versus-physical-size"></a>Tamaño virtual frente a tamaño físico
 
-Si tiene código de aplicación que usa un puntero de memoria para recorrer la memoria de una textura comprimida de bloque, hay una consideración importante que puede requerir una modificación en el código de la aplicación. Una textura comprimida por bloques debe ser un múltiplo de 4 en todas las dimensiones, ya que los algoritmos de compresión de bloque operan en bloques textura de 4x4. Esto supondrá un problema para un mipmap cuyas dimensiones iniciales son divisibles en 4, pero los niveles subdivididos no lo son. En el diagrama siguiente se muestra la diferencia en el área entre el tamaño virtual (declarado) y el tamaño físico (real) de cada nivel de mipmap.
+Si tiene código de aplicación que usa un puntero de memoria para recorrer la memoria de una textura comprimida en bloque, hay una consideración importante que puede requerir una modificación en el código de la aplicación. Una textura comprimida por bloques debe ser un múltiplo de 4 en todas las dimensiones porque los algoritmos de compresión de bloques funcionan en bloques de texel 4x4. Esto será un problema para un mapa mip cuyas dimensiones iniciales se pueden dividir entre 4, pero los niveles subdivididas no lo son. En el diagrama siguiente se muestra la diferencia en el área entre el tamaño virtual (declarado) y el tamaño físico (real) de cada nivel de mapa mip.
 
-![diagrama de niveles de mipmap sin comprimir y comprimidos](images/d3d10-block-compress-pad.png)
+![diagrama de niveles mipmap sin comprimir y comprimidos](images/d3d10-block-compress-pad.png)
 
-En el lado izquierdo del diagrama se muestran los tamaños de nivel de mipmap que se generan para una textura de 60 × 40 sin comprimir. El tamaño de nivel superior se toma de la llamada API que genera la textura; cada nivel subsiguiente es la mitad del tamaño del nivel anterior. En el caso de una textura sin comprimir, no hay ninguna diferencia entre el tamaño virtual (declarado) y el tamaño físico (real).
+El lado izquierdo del diagrama muestra los tamaños de nivel de mapa mip que se generan para una textura de 60×40 sin comprimir. El tamaño de nivel superior se toma de la llamada API que genera la textura. cada nivel posterior es la mitad del tamaño del nivel anterior. Para una textura sin comprimir, no hay ninguna diferencia entre el tamaño virtual (declarado) y el tamaño físico (real).
 
-En el lado derecho del diagrama se muestran los tamaños de nivel de mipmap que se generan para la misma textura de 60 × 40 con compresión. Tenga en cuenta que tanto el segundo como el tercer nivel tienen un relleno de memoria para que los factores de tamaño de 4 se conviertan en todos los niveles. Esto es necesario para que los algoritmos puedan funcionar en 4 × 4 bloques textura. Este especiales es evidente si tiene en cuenta los niveles de mipmap inferiores a 4 × 4; el tamaño de estos niveles de mipmap pequeños se redondeará al factor más cercano de 4 cuando se asigne memoria de textura.
+El lado derecho del diagrama muestra los tamaños de nivel de mapa mip que se generan para la misma textura de 60×40 con compresión. Tenga en cuenta que tanto el segundo como el tercer nivel tienen relleno de memoria para que los factores de tamaño de 4 en cada nivel. Esto es necesario para que los algoritmos puedan funcionar en bloques de ×4. Esto es evidente si se tienen en cuenta los niveles de mapa mip que son menores que 4×4; El tamaño de estos niveles mipmap muy pequeños se redondeará al factor más cercano de 4 cuando se asigne memoria de textura.
 
-El hardware de muestreo utiliza el tamaño virtual; Cuando se muestrea la textura, se omite el relleno de memoria. En el caso de los niveles de mipmap inferiores a 4 × 4, solo se usarán los cuatro primeros textura para un mapa 2 × 2 y solo el primer textura se usará en un bloque 1 × 1. Sin embargo, no hay ninguna estructura de API que exponga el tamaño físico (incluido el relleno de memoria).
+El hardware de muestreo usa el tamaño virtual; cuando se muestrea la textura, se omite el relleno de memoria. En el caso de los niveles de mapa mip menores que 4×4, solo se usarán los cuatro primeros elementos de textura para un mapa de 2×2 y un bloque 1×1 usará solo el primer texel. Sin embargo, no hay ninguna estructura de API que exponga el tamaño físico (incluido el relleno de memoria).
 
-En Resumen, tenga cuidado de utilizar bloques de memoria alineados al copiar regiones que contienen datos comprimidos en bloques. Para hacer esto en una aplicación que obtiene un puntero de memoria, asegúrese de que el puntero usa el paso de la superficie para tener en cuenta el tamaño de la memoria física.
+En resumen, tenga cuidado de usar bloques de memoria alineados al copiar regiones que contienen datos comprimidos en bloques. Para ello en una aplicación que obtiene un puntero de memoria, asegúrese de que el puntero usa el tono de superficie para tener en cuenta el tamaño de la memoria física.
 
 ## <a name="compression-algorithms"></a>Algoritmos de compresión
 
-Las técnicas de compresión en bloque de Direct3D dividen los datos de textura sin comprimir en 4 × 4 bloques, comprimen cada bloque y, a continuación, almacenan los datos. Por esta razón, se espera que las texturas se compriman deben tener dimensiones de textura que sean múltiplos de 4.
+Las técnicas de compresión de bloques de Direct3D separan los datos de textura sin comprimir en bloques 4×4, comprimen cada bloque y, a continuación, almacenan los datos. Por esta razón, se espera que las texturas se comprima deben tener dimensiones de textura que sean múltiplo de 4.
 
-![diagrama de la compresión de bloque](images/d3d10-compression-1.png)
+![diagrama de compresión de bloques](images/d3d10-compression-1.png)
 
-En el diagrama anterior se muestra una textura particionada en bloques textura. El primer bloque muestra el diseño de los 16 textura etiquetados como-p, pero cada bloque tiene la misma organización de datos.
+En el diagrama anterior se muestra una textura particionada en bloques de texel. El primer bloque muestra el diseño de los 16 elementos de textura etiquetados como a-p, pero cada bloque tiene la misma organización de datos.
 
-Direct3D implementa varios esquemas de compresión, cada uno de ellos implementa un equilibrio diferente entre el número de componentes almacenados, el número de bits por componente y la cantidad de memoria consumida. Use esta tabla para ayudar a elegir el formato que mejor se adapte al tipo de datos y la resolución de los datos que mejor se adapta a su aplicación.
+Direct3D implementa varios esquemas de compresión, cada uno implementa un equilibrio diferente entre el número de componentes almacenados, el número de bits por componente y la cantidad de memoria consumida. Use esta tabla para ayudar a elegir el formato que mejor funciona con el tipo de datos y la resolución de datos que mejor se adapte a la aplicación.
 
 
 
 | Datos de origen                     | Resolución de compresión de datos (en bits) | Elegir este formato de compresión |
 |---------------------------------|---------------------------------------|--------------------------------|
-| Color de tres componentes y alfa | Color (5:6:5), alfa (1) o no alfa  | BC1                            |
-| Color de tres componentes y alfa | Color (5:6:5), alfa (4)              | [BC2](#bc2)                    |
-| Color de tres componentes y alfa | Color (5:6:5), alfa (8)              | [BC3](#bc3)                    |
-| Color de un componente             | Un componente (8)                     | [LAS texturas BC4](#bc4)                    |
+| Color de tres componentes y alfa | Color (5:6:5), Alfa (1) o ningún alfa  | BC1                            |
+| Color de tres componentes y alfa | Color (5:6:5), Alfa (4)              | [BC2](#bc2)                    |
+| Color de tres componentes y alfa | Color (5:6:5), Alfa (8)              | [BC3](#bc3)                    |
+| Color de un componente             | Un componente (8)                     | [BC4](#bc4)                    |
 | Color de dos componentes             | Dos componentes (8:8)                  | [BC5](#bc5)                    |
 
 
@@ -117,13 +117,13 @@ Direct3D implementa varios esquemas de compresión, cada uno de ellos implementa
 
 ### <a name="bc1"></a>BC1
 
-Use el primer formato de compresión de bloque (BC1) (el formato de DXGI \_ \_ BC1 \_ sin tipo, \_ el formato de DXGI \_ BC1 \_ UNORM o dxgi \_ BC1 \_ UNORM \_ sRGB) para almacenar datos de color de tres componentes mediante un color de 5:6:5 (5 bits rojo, 6 bits verde, 5 bits azul). Esto es así incluso si los datos también contienen alfa de 1 bit. Suponiendo una textura de 4 × 4 con el formato de datos más grande posible, el formato BC1 reduce la cantidad de memoria necesaria de 48 bytes (16 colores × 3 componentes/color × 1 byte/componente) a 8 bytes de memoria.
+Use el primer formato de compresión de bloques (BC1) (DXGI FORMAT BC1 TYPELESS, DXGI FORMAT BC1 UNORM o DXGI BC1 UNORM SRGB) para almacenar datos de color de tres componentes con un \_ \_ color de \_ \_ \_ \_ \_ \_ \_ 5:6:5 (5 bits rojo, 6 bits verde y 5 bits azul). Esto es cierto incluso si los datos también contienen alfa de 1 bit. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, el formato BC1 reduce la memoria necesaria de 48 bytes (16 colores × 3 componentes/color × 1 byte/componente) a 8 bytes de memoria.
 
-El algoritmo funciona en 4 × 4 bloques de textura. En lugar de almacenar 16 colores, el algoritmo guarda 2 colores de referencia (color \_ 0 y color \_ 1) y índices de color de 16 2 bits (bloques a – p), tal como se muestra en el diagrama siguiente.
+El algoritmo funciona en bloques × 4 de elementos de textura. En lugar de almacenar 16 colores, el algoritmo guarda 2 colores de referencia (color 0 y color 1) y 16 índices de color de 2 bits \_ (bloques a–p), como se muestra en el \_ diagrama siguiente.
 
-![diagrama del diseño de la compresión BC1](images/d3d10-compression-bc1.png)
+![diagrama del diseño para la compresión bc1](images/d3d10-compression-bc1.png)
 
-Los índices de color (a – p) se usan para buscar los colores originales de una tabla de colores. La tabla de colores contiene 4 colores. Los dos primeros colores (color \_ 0 y color \_ 1) son los colores mínimo y máximo. Los otros dos colores, color \_ 2 y color \_ 3, son colores intermedios calculados con interpolación lineal.
+Los índices de color (a–p) se usan para buscar los colores originales de una tabla de colores. La tabla de colores contiene 4 colores. Los dos primeros colores, color \_ 0 y color \_ 1, son los colores mínimo y máximo. Los otros dos colores, color 2 y color 3, son colores intermedios \_ \_ calculados con interpolación lineal.
 
 
 ```
@@ -133,7 +133,7 @@ color_3 = 1/3*color_0 + 2/3*color_1
 
 
 
-A los cuatro colores se les asignan valores de índice de 2 bits que se guardarán en bloques a – p.
+A los cuatro colores se les asignan valores de índice de 2 bits que se guardarán en bloques a–p.
 
 
 ```
@@ -145,9 +145,9 @@ color_3 = 11
 
 
 
-Por último, cada uno de los colores de los bloques a – p se comparan con los cuatro colores de la tabla de colores y el índice del color más cercano se almacena en los bloques de 2 bits.
+Por último, cada uno de los colores de los bloques a–p se compara con los cuatro colores de la tabla de colores y el índice del color más cercano se almacena en los bloques de 2 bits.
 
-Este algoritmo se presta a los datos que contienen también Alpha de 1 bit. La única diferencia es que el color \_ 3 se establece en 0 (que representa un color transparente) y \_ el color 2 es una mezcla lineal del color \_ 0 y el color \_ 1.
+Este algoritmo se presta a los datos que también contienen alfa de 1 bit. La única diferencia es que el color 3 se establece en 0 (que representa un color transparente) y el color 2 es una combinación lineal de color 0 y \_ \_ color \_ \_ 1.
 
 
 ```
@@ -180,11 +180,11 @@ color_3 = 0;
 
 ### <a name="bc2"></a>BC2
 
-Use el formato BC2 (ya sea el formato de DXGI \_ \_ BC2 \_ sin tipo, el formato de dxgi \_ \_ BC2 \_ UNORM o dxgi \_ BC2 \_ UNORM \_ sRGB) para almacenar datos que contengan datos de color y alfa con baja coherencia (use [BC3](#bc3) para datos alfa altamente coherentes). El formato BC2 almacena los datos RGB como un color 5:6:5 (5 bits rojo, 6 bits verde, 5 bits azul) y alfa como un valor de 4 bits independiente. Suponiendo una textura de 4 × 4 con el formato de datos más grande posible, esta técnica de compresión reduce la cantidad de memoria necesaria de 64 bytes (16 colores × 4 componentes/color × 1 byte/componente) a 16 bytes de memoria.
+Use el formato BC2 (DXGI \_ FORMAT \_ BC2 \_ TYPELESS, DXGI \_ FORMAT BC2 UNORM o \_ \_ DXGI \_ BC2 \_ UNORM SRGB) \_ [](#bc3) para almacenar datos que contengan datos alfa y de color con baja coherencia (use BC3 para datos alfa altamente coherentes). El formato BC2 almacena los datos RGB como un color de 5:6:5 (5 bits rojo, 6 bits verde, 5 bits azul) y alfa como un valor de 4 bits independiente. Suponiendo una textura de 4×4 con el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 64 bytes (16 colores × 4 componentes/color × 1 byte/componente) a 16 bytes de memoria.
 
-El formato BC2 almacena los colores con el mismo número de bits y diseño de datos que el formato [BC1](#bc1) . sin embargo, BC2 requiere una memoria adicional de 64 bits para almacenar los datos alfa, tal como se muestra en el diagrama siguiente.
+El formato BC2 almacena colores con el mismo número de bits y diseño de datos que el [formato BC1;](#bc1) Sin embargo, BC2 requiere 64 bits adicionales de memoria para almacenar los datos alfa, como se muestra en el diagrama siguiente.
 
-![diagrama del diseño de la compresión BC2](images/d3d10-compression-bc2.png)
+![diagrama del diseño para la compresión bc2](images/d3d10-compression-bc2.png)
 
 <table>
 <colgroup>
@@ -207,17 +207,17 @@ El formato BC2 almacena los colores con el mismo número de bits y diseño de da
 
 ### <a name="bc3"></a>BC3
 
-Use el formato BC3 (ya sea el formato de DXGI \_ \_ BC3 \_ sin tipo, el formato de dxgi \_ \_ BC3 \_ UNORM o dxgi \_ BC3 \_ UNORM \_ sRGB) para almacenar datos de color muy coherentes (use [BC2](#bc2) con datos alfa menos coherentes). El formato BC3 almacena los datos de color con color 5:6:5 (5 bits rojo, 6 bits verde, 5 bits azul) y datos alfa usando un byte. Suponiendo una textura de 4 × 4 con el formato de datos más grande posible, esta técnica de compresión reduce la cantidad de memoria necesaria de 64 bytes (16 colores × 4 componentes/color × 1 byte/componente) a 16 bytes de memoria.
+Use el formato BC3 (DXGI \_ FORMAT \_ BC3 \_ TYPELESS, DXGI \_ FORMAT BC3 UNORM o \_ \_ DXGI \_ BC3 \_ UNORM SRGB) \_ [](#bc2) para almacenar datos de color altamente coherentes (use BC2 con datos alfa menos coherentes). El formato BC3 almacena los datos de color con datos alfa y de color 5:6:5 (5 bits rojos, 6 bits verdes, 5 bits azules) y alfa con un byte. Suponiendo una textura de 4×4 con el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 64 bytes (16 colores × 4 componentes/color × 1 byte/componente) a 16 bytes de memoria.
 
-El formato BC3 almacena los colores con el mismo número de bits y diseño de datos que el formato [BC1](#bc1) . sin embargo, BC3 requiere una memoria adicional de 64 bits para almacenar los datos alfa. El formato BC3 controla el valor alfa al almacenar dos valores de referencia y interpolar entre ellos (de forma similar al modo en que BC1 almacena el color RGB).
+El formato BC3 almacena colores con el mismo número de bits y diseño de datos que el [formato BC1;](#bc1) sin embargo, BC3 requiere 64 bits adicionales de memoria para almacenar los datos alfa. El formato BC3 controla el alfa almacenando dos valores de referencia y interpolando entre ellos (de forma similar a cómo BC1 almacena el color RGB).
 
-El algoritmo funciona en 4 × 4 bloques de textura. En lugar de almacenar 16 valores alfa, el algoritmo almacena 2 alfas de referencia (alfa \_ 0 y alfa \_ 1) y los índices de color de 16 3 bits (alfa a a p), tal como se muestra en el diagrama siguiente.
+El algoritmo funciona en 4×4 bloques de texturas. En lugar de almacenar 16 valores alfa, el algoritmo almacena 2 alfas de referencia (alfa 0 y alfa 1) y 16 índices de color de 3 bits (alfa a a p), como se muestra en el \_ \_ diagrama siguiente.
 
-![diagrama del diseño de la compresión BC3](images/d3d10-compression-bc3.png)
+![diagrama del diseño para la compresión bc3](images/d3d10-compression-bc3.png)
 
-El formato BC3 usa los índices alfa (a – p) para buscar los colores originales de una tabla de búsqueda que contiene 8 valores. Los dos primeros valores (alfa \_ 0 y alfa \_ 1) son los valores mínimo y máximo; los otros seis valores intermedios se calculan mediante la interpolación lineal.
+El formato BC3 usa los índices alfa (a–p) para buscar los colores originales de una tabla de búsqueda que contiene 8 valores. Los dos primeros valores(alfa 0 y alfa 1) son los valores mínimo y máximo; los otros seis valores intermedios se \_ \_ calculan mediante interpolación lineal.
 
-El algoritmo determina el número de valores alfa interpolados examinando los dos valores alfa de referencia. Si el \_ valor alfa 0 es mayor que el \_ valor alfa 1, BC3 interpola 6 valores alfa; de lo contrario, interpola 4. Cuando BC3 interpola solo 4 valores alfa, establece dos valores alfa adicionales (0 para totalmente transparente y 255 para totalmente opaco). BC3 comprime los valores alfa en el área textura de 4 × 4 almacenando el código de bit correspondiente a los valores alfa interpolados que más se aproxime al alfa original de un textura determinado.
+El algoritmo determina el número de valores alfa interpolados examinando los dos valores alfa de referencia. Si alfa \_ 0 es mayor que alfa 1, BC3 interpola 6 valores alfa; de lo \_ contrario, interpola 4. Cuando BC3 interpola solo 4 valores alfa, establece dos valores alfa adicionales (0 para totalmente transparente y 255 para totalmente opacos). BC3 comprime los valores alfa en el área de texel 4×4 almacenando el código de bits correspondiente a los valores alfa interpolados que coinciden más estrechamente con el alfa original para un texel determinado.
 
 
 ```
@@ -266,22 +266,22 @@ else
 
  
 
-### <a name="bc4"></a>LAS texturas BC4
+### <a name="bc4"></a>BC4
 
-Use el formato las texturas BC4 para almacenar datos de color de un componente usando 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1](#bc1)), las texturas BC4 es ideal para almacenar los datos de punto flotante en el intervalo de \[ 0 a 1 \] mediante el formato de dxgi \_ \_ las texturas BC4 \_ UNORM y \[ -1 a + 1 \] con el formato dxgi \_ \_ las texturas BC4 \_ SNORM. Suponiendo una textura de 4 × 4 con el formato de datos más grande posible, esta técnica de compresión reduce la cantidad de memoria necesaria de 16 bytes (16 colores × 1 componentes/color × 1 byte/componente) a 8 bytes.
+Use el formato BC4 para almacenar datos de color de un componente con 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1), BC4](#bc1)es ideal para almacenar datos de punto flotante en el intervalo de 0 a 1 con el formato DXGI FORMAT BC4 UNORM y -1 a +1 con el formato \[ \] \_ \_ \_ \[ \] SNORM DXGI \_ FORMAT \_ \_ BC4. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 16 bytes (16 colores × 1 componentes/color × 1 byte/componente) a 8 bytes.
 
-El algoritmo funciona en 4 × 4 bloques de textura. En lugar de almacenar 16 colores, el algoritmo almacena 2 colores de referencia (rojo \_ 0 y rojo \_ 1) y índices de color de 16 3 bits (rojo a a rojo p), tal como se muestra en el diagrama siguiente.
+El algoritmo funciona en 4×4 bloques de texturas. En lugar de almacenar 16 colores, el algoritmo almacena 2 colores de referencia (rojo 0 y rojo 1) y 16 índices de color de 3 bits (rojo a rojo p), como se muestra en el \_ \_ diagrama siguiente.
 
-![diagrama del diseño de la compresión las texturas BC4](images/d3d10-compression-bc4.png)
+![diagrama del diseño para la compresión bc4](images/d3d10-compression-bc4.png)
 
-El algoritmo utiliza los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros colores, rojo \_ 0 y rojo \_ 1, son los colores mínimo y máximo. El algoritmo calcula el resto de los colores mediante la interpolación lineal.
+El algoritmo usa los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros \_ colores(rojo 0 y \_ rojo 1) son los colores mínimo y máximo. El algoritmo calcula los colores restantes mediante la interpolación lineal.
 
-El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si el rojo \_ 0 es mayor que rojo \_ 1, las texturas BC4 interpola los valores de 6 colores; de lo contrario, interpola 4. Cuando las texturas BC4 interpola solo 4 valores de color, establece dos valores de color adicionales (0.0 f para totalmente transparente y 1,0 f para totalmente opaco). LAS texturas BC4 comprime los valores alfa en el área textura de 4 × 4 almacenando el código de bit correspondiente a los valores alfa interpolados que más se aproxime al alfa original de un textura determinado.
+El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si rojo 0 es mayor que rojo 1, BC4 interpola 6 valores de color; de lo \_ \_ contrario, interpola 4. Cuando BC4 interpola solo 4 valores de color, establece dos valores de color adicionales (0,0f para totalmente transparente y 1,0f para totalmente opacos). BC4 comprime los valores alfa en el área de texel 4×4 almacenando el código de bits correspondiente a los valores alfa interpolados que coinciden más estrechamente con el alfa original para un texel determinado.
 
--   [LAS texturas BC4 \_ UNORM](/windows)
--   [LAS texturas BC4 \_ SNORM](/windows)
+-   [BC4 \_ UNORM](/windows)
+-   [BC4 \_ SNORM](/windows)
 
-### <a name="bc4_unorm"></a>LAS texturas BC4 \_ UNORM
+### <a name="bc4_unorm"></a>BC4 \_ UNORM
 
 La interpolación de los datos de un solo componente se realiza como en el ejemplo de código siguiente.
 
@@ -313,11 +313,11 @@ else
 
 
 
-A los colores de referencia se les asignan índices de 3 bits (000 – 111, ya que hay 8 valores), que se guardarán en bloques rojo a a rojo p durante la compresión.
+A los colores de referencia se les asignan índices de 3 bits (de 000 a 111, ya que hay 8 valores), que se guardarán en bloques de color rojo a rojo p durante la compresión.
 
-### <a name="bc4_snorm"></a>LAS texturas BC4 \_ SNORM
+### <a name="bc4_snorm"></a>BC4 \_ SNORM
 
-El formato de DXGI \_ \_ las texturas BC4 \_ SNORM es exactamente el mismo, salvo que los datos se codifican en el intervalo SNORM y cuando se interpolan 4 valores de color. La interpolación de los datos de un solo componente se realiza como en el ejemplo de código siguiente.
+DXGI FORMAT BC4 SNORM es exactamente igual, salvo que los datos se codifican en el intervalo SNORM y cuando \_ \_ se \_ interpolan 4 valores de color. La interpolación de los datos de un solo componente se realiza como en el ejemplo de código siguiente.
 
 
 ```
@@ -347,19 +347,19 @@ else
 
 
 
-A los colores de referencia se les asignan índices de 3 bits (000 – 111, ya que hay 8 valores), que se guardarán en bloques rojo a a rojo p durante la compresión.
+A los colores de referencia se les asignan índices de 3 bits (de 000 a 111, ya que hay 8 valores), que se guardarán en bloques de color rojo a rojo p durante la compresión.
 
 ### <a name="bc5"></a>BC5
 
-Use el formato BC5 para almacenar datos de color de dos componentes mediante 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1](#bc1)), BC5 es ideal para almacenar los datos de punto flotante en el intervalo de \[ 0 a 1 \] mediante el formato de dxgi \_ \_ BC5 \_ UNORM y \[ -1 a + 1 \] con el formato dxgi \_ \_ BC5 \_ SNORM. Suponiendo una textura de 4 × 4 con el formato de datos más grande posible, esta técnica de compresión reduce la cantidad de memoria necesaria de 32 bytes (16 colores × 2 componentes/color × 1 byte/componente) a 16 bytes.
+Use el formato BC5 para almacenar datos de color de dos componentes con 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1), BC5](#bc1)es ideal para almacenar datos de punto flotante en el intervalo de 0 a 1 mediante el formato DXGI FORMAT BC5 UNORM y -1 a +1 con el formato \[ \] \_ \_ \_ \[ \] SNORM DXGI \_ FORMAT \_ \_ BC5. Suponiendo una textura de 4×4 con el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 32 bytes (16 colores × 2 componentes/color × 1 byte/componente) a 16 bytes.
 
-El algoritmo funciona en 4 × 4 bloques de textura. En lugar de almacenar 16 colores para ambos componentes, el algoritmo almacena 2 colores de referencia para cada componente (rojo \_ 0, rojo \_ 1, verde \_ 0 y verde \_ 1) y los índices de color de 16 3 bits para cada componente (de rojo a a rojo p y de verde a a verde p), tal y como se muestra en el diagrama siguiente.
+El algoritmo funciona en 4×4 bloques de texturas. En lugar de almacenar 16 colores para ambos componentes, el algoritmo almacena 2 colores de referencia para cada componente (rojo 0, rojo 1, verde 0 y verde \_ \_ 1) y \_ 16 índices de color de 3 bits para cada componente (de rojo a a rojo y de verde a a verde p), como se muestra en el \_ diagrama siguiente.
 
-![diagrama del diseño de la compresión BC5](images/d3d10-compression-bc5.png)
+![diagrama del diseño para la compresión bc5](images/d3d10-compression-bc5.png)
 
-El algoritmo utiliza los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros colores, rojo \_ 0 y rojo \_ 1 (o verde \_ 0 y verde \_ 1), son los colores mínimo y máximo. El algoritmo calcula el resto de los colores mediante la interpolación lineal.
+El algoritmo usa los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros colores,rojo 0 y \_ rojo \_ 1 (o verde \_ 0 y verde 1) son los colores mínimo \_ y máximo. El algoritmo calcula los colores restantes mediante la interpolación lineal.
 
-El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si el rojo \_ 0 es mayor que rojo \_ 1, BC5 interpola los valores de 6 colores; de lo contrario, interpola 4. Cuando BC5 interpola solo 4 valores de color, establece los dos valores de color restantes en 0,0 f y 1,0 f.
+El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si rojo 0 es mayor que rojo 1, BC5 interpola 6 valores de color; de lo \_ \_ contrario, interpola 4. Cuando BC5 interpola solo 4 valores de color, establece los dos valores de color restantes en 0,0f y 1,0f.
 
 -   [BC5 \_ UNORM](/windows)
 -   [BC5 \_ SNORM](/windows)
@@ -396,11 +396,11 @@ else
 
 
 
-A los colores de referencia se les asignan índices de 3 bits (000 – 111, ya que hay 8 valores), que se guardarán en bloques rojo a a rojo p durante la compresión.
+A los colores de referencia se les asignan índices de 3 bits (de 000 a 111, ya que hay 8 valores), que se guardarán en bloques de color rojo a rojo p durante la compresión.
 
 ### <a name="bc5_snorm"></a>BC5 \_ SNORM
 
-El formato de DXGI \_ \_ BC5 \_ SNORM es exactamente el mismo, salvo que los datos se codifican en el intervalo SNORM y cuando se interpolan 4 valores de datos, los dos valores adicionales son: 1,0 f y 1,0 f. La interpolación de los datos de un solo componente se realiza como en el ejemplo de código siguiente. Los cálculos de los componentes verdes son similares.
+DxGI FORMAT BC5 SNORM es exactamente igual, salvo que los datos se codifican en el intervalo SNORM y cuando se interpolan 4 valores de datos, los dos valores adicionales son \_ \_ \_ -1.0f y 1.0f. La interpolación de los datos de un solo componente se realiza como en el ejemplo de código siguiente. Los cálculos de los componentes verdes son similares.
 
 
 ```
@@ -430,13 +430,13 @@ else
 
 
 
-A los colores de referencia se les asignan índices de 3 bits (000 – 111, ya que hay 8 valores), que se guardarán en bloques rojo a a rojo p durante la compresión.
+A los colores de referencia se les asignan índices de 3 bits (de 000 a 111, ya que hay 8 valores), que se guardarán en bloques de color rojo a rojo p durante la compresión.
 
-## <a name="format-conversion-using-direct3d-101"></a>Conversión de formato mediante Direct3D 10,1
+## <a name="format-conversion-using-direct3d-101"></a>Conversión de formato mediante Direct3D 10.1
 
-Direct3D 10,1 habilita las copias entre texturas con tipo preestructurado y texturas comprimidas por bloques de los mismos anchos de bits. Las funciones que pueden lograr esto son [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) y [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion).
+Direct3D 10.1 permite copias entre texturas con tipo estructurado y texturas comprimidas por bloques de los mismos anchos de bits. Las funciones que pueden realizar esto son [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) y [**CopySubresourceRegion.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion)
 
-A partir de Direct3D 10,1, puede usar [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) y [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion) para copiar entre algunos tipos de formato. Este tipo de operación de copia realiza un tipo de conversión de formato que reinterpreta los datos de recursos como un tipo de formato diferente. Considere este ejemplo que muestra la diferencia entre reinterpretar los datos con la manera en que se comporta un tipo más típico de conversión:
+A partir de Direct3D 10.1, puede usar [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) y [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion) para copiar entre algunos tipos de formato. Este tipo de operación de copia realiza un tipo de conversión de formato que reinterpreta los datos de recursos como un tipo de formato diferente. Considere este ejemplo que muestra la diferencia entre volver a interpretar los datos con la forma en que se comporta un tipo de conversión más típico:
 
 
 ```
@@ -446,7 +446,7 @@ A partir de Direct3D 10,1, puede usar [**CopyResource**](/windows/desktop/api/D3
 
 
 
-Para reinterpretar ' f ' como el tipo de ' u ', use [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy):
+Para reinterpretar "f" como el tipo de "u", use [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy):
 
 
 ```
@@ -455,9 +455,9 @@ Para reinterpretar ' f ' como el tipo de ' u ', use [memcpy](/cpp/c-runtime-libr
 
 
 
-En la reinterpretación anterior, el valor subyacente de los datos no cambia; [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy) reinterpreta el Float como un entero sin signo.
+En la reinterpretación anterior, el valor subyacente de los datos no cambia; [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy) vuelve a interpretar el valor float como un entero sin signo.
 
-Para realizar el tipo más típico de conversión, use la asignación:
+Para realizar el tipo más típico de conversión, use asignación:
 
 
 ```
@@ -468,15 +468,15 @@ Para realizar el tipo más típico de conversión, use la asignación:
 
 En la conversión anterior, cambia el valor subyacente de los datos.
 
-En la tabla siguiente se enumeran los formatos de origen y destino permitidos que se pueden usar en este tipo de reinterpretación de conversión de formato. Debe codificar los valores correctamente para que la reinterpretación funcione según lo previsto.
+En la tabla siguiente se enumeran los formatos de origen y destino permitidos que puede usar en este tipo de reinterpretación de conversión de formato. Debe codificar los valores correctamente para que la reinterpretación funcione según lo previsto.
 
 
 
-| Ancho de bits | Recurso sin comprimir                                                                                                                                               | Block-Compressed recurso                                                                                                                                           |
+| Ancho de bits | Recurso sin comprimir                                                                                                                                               | Block-Compressed resource                                                                                                                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 32        | Formato de DXGI \_ \_ R32 \_ uint<br/> Formato de DXGI \_ \_ R32 \_ Sint<br/>                                                                                               | Formato de DXGI \_ \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                   |
-| 64        | Formato de DXGI \_ \_ R16G16B16A16 \_ uint<br/> Formato de DXGI \_ \_ R16G16B16A16 \_ Sint<br/> Formato de DXGI \_ \_ R32G32 \_ uint<br/> Formato de DXGI \_ \_ R32G32 \_ Sint<br/> | Formato de DXGI \_ \_ BC1 \_ UNORM \[ \_ sRGB\]<br/> Formato de DXGI \_ \_ las texturas BC4 \_ UNORM<br/> Formato de DXGI \_ \_ las texturas BC4 \_ SNORM<br/>                                               |
-| 128       | Formato de DXGI \_ \_ R32G32B32A32 \_ uint<br/> Formato de DXGI \_ \_ R32G32B32A32 \_ Sint<br/>                                                                             | Formato de DXGI \_ \_ BC2 \_ UNORM \[ \_ sRGB\]<br/> Formato de DXGI \_ \_ BC3 \_ UNORM \[ \_ sRGB\]<br/> Formato de DXGI \_ \_ BC5 \_ UNORM<br/> Formato de DXGI \_ \_ BC5 \_ SNORM<br/> |
+| 32        | DXGI \_ FORMAT \_ R32 \_ UINT<br/> DXGI \_ FORMAT \_ R32 \_ SINT<br/>                                                                                               | FORMATO DXGI \_ \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                   |
+| 64        | DXGI \_ FORMAT \_ R16G16B16A16 \_ UINT<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ SINT<br/> DXGI \_ FORMAT \_ R32G32 \_ UINT<br/> DXGI \_ FORMAT \_ R32G32 \_ SINT<br/> | DXGI \_ FORMAT \_ BC1 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC4 \_ UNORM<br/> DXGI \_ FORMAT \_ BC4 \_ SNORM<br/>                                               |
+| 128       | DXGI \_ FORMAT \_ R32G32B32A32 \_ UINT<br/> FORMATO DXGI \_ \_ R32G32B32A32 \_ SINT<br/>                                                                             | DXGI \_ FORMAT \_ BC2 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC3 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC5 \_ UNORM<br/> DXGI \_ FORMAT \_ BC5 \_ SNORM<br/> |
 
 
 

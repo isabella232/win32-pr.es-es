@@ -1,19 +1,19 @@
 ---
-description: Contiene la clasificación de confianza devuelta por Journal Ink Analyzer para InkWord.
+description: Contiene la clasificación de confianza devuelta por el analizador de entrada de lápiz Journal para InkWord.
 ms.assetid: cb0ed0d0-5e2f-44a3-b72b-61cbfd22bae8
 title: Elemento Confidence
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cef4869776a6cafc4e6ef4758649b918e0b5988
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5fdaaed8d9c57822ad94ec49183a399ed317917
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153753"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436519"
 ---
 # <a name="confidence-element"></a>Elemento Confidence
 
-Contiene la clasificación de confianza devuelta por Journal Ink Analyzer para [**InkWord**](inkword-element.md).
+Contiene la clasificación de confianza devuelta por el analizador de entrada manuscrita Journal para [**InkWord**](inkword-element.md).
 
 ## <a name="definition"></a>Definición
 
@@ -27,7 +27,7 @@ Contiene la clasificación de confianza devuelta por Journal Ink Analyzer para [
 
 ## <a name="values"></a>Valores
 
-Los valores válidos para este campo son "0", "1" y "2". 0 indica una confianza alta, 1 indica confianza intermedia y 2 indica una confianza deficiente.
+Los valores válidos para este campo incluyen "0", "1" y "2". 0 indica confianza fuerte, 1 indica confianza intermedia y 2 indica confianza baja.
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -41,11 +41,11 @@ Ninguno.
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo de elemento | **xs:string**                              |
-| Espacio de nombres    | urn: schemas-microsoft-com: TabletPC: richink |
-| Nombre del esquema  | Lector de diario                             |
+|                  | Value                                      |
+|------------------|--------------------------------------------|
+| **Tipo de elemento** | xs:string                                  |
+| **Espacio de nombres**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nombre del esquema**  | Lector de diario                             |
 
 
 

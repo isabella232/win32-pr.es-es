@@ -3,12 +3,12 @@ description: Obtenga información sobre los conjuntos de cifrado TLS Windows 10 
 title: Conjuntos de cifrado TLS Windows 10 v1903, v1909 y v2004
 ms.topic: article
 ms.date: 10/09/2018
-ms.openlocfilehash: 8bfea2623a7935ec64c4cc1ef1e04271d4227b3c
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 5c5cd0ff5b61d301ded666f1c236e83539698fe1
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262347"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436250"
 ---
 # <a name="tls-cipher-suites-in-windows-10-v1903-v1909-and-v2004"></a>Conjuntos de cifrado TLS Windows 10 v1903, v1909 y v2004
 
@@ -24,13 +24,13 @@ La disponibilidad de los conjuntos de cifrado debe controlarse de una de estas d
 
  
 
-El cumplimiento de FIPS se ha vuelto más complejo con la adición de curvas elípticas, lo que hace que la columna habilitada para el modo FIPS en versiones anteriores de esta tabla sea confusa. Por ejemplo, un conjunto de cifrado como TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256 solo es una queja de FIPS cuando se usan curvas elípticas NIST. Para averiguar qué combinaciones de curvas elípticas y conjuntos de cifrado se habilitarán en el modo FIPS, consulte la sección 3.3.1 de Directrices para la selección, configuración y uso de implementaciones [de TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf)
+El cumplimiento de FIPS se ha vuelto más complejo con la adición de curvas elípticas, lo que hace que la columna habilitada para el modo FIPS en versiones anteriores de esta tabla sea confusa. Por ejemplo, un conjunto de cifrado como TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256 solo es compatible con FIPS cuando se usan curvas elípticas NIST. Para averiguar qué combinaciones de curvas elípticas y conjuntos de cifrado se habilitarán en el modo FIPS, consulte la sección 3.3.1 de Directrices para la selección, configuración y uso de implementaciones [de TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf)
 
-Para Windows 10, versiones 1903, 1909 y 2004, los siguientes conjuntos de cifrado están habilitados y en este orden de prioridad de forma predeterminada mediante el proveedor de Microsoft Schannel:
+Por Windows 10, versión 1903, 1909 y 2004, se habilitan los siguientes conjuntos de cifrado y, de forma predeterminada, en este orden de prioridad mediante el proveedor de Microsoft Schannel:
 
 
 
-| Cadena de conjunto de cifrado                                                                                 | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
+| Cadena del conjunto de cifrado                                                                                 | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
 |-----------------------------------------------------------------------------------------------------|-------------------------------------|-----------------------------------------------|
 | TLS \_ ECDHE \_ ECDSA \_ CON \_ AES \_ 256 \_ GCM \_ SHA384<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ ECDHE \_ ECDSA \_ WITH \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
@@ -52,7 +52,7 @@ Para Windows 10, versiones 1903, 1909 y 2004, los siguientes conjuntos de cifrad
 | TLS \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ RSA \_ CON \_ AES \_ 256 \_ CBC \_ SHA<br/>                                                       | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                       | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
-| TLS \_ RSA \_ CON \_ 3DES \_ EDE \_ CBC \_ SHA<br/>                                                      | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
+| TLS \_ RSA \_ WITH \_ 3DES \_ EDE \_ CBC \_ SHA<br/>                                                      | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ RSA \_ CON \_ \_ SHA256 NULL <br/> Solo se usa cuando la aplicación solicita explícitamente.<br/> | No<br/>                       | TLS 1.2<br/>                            |
 | TLS \_ RSA CON SHA \_ \_ \_ NULL <br/> Solo se usa cuando la aplicación solicita explícitamente.<br/>    | No<br/>                       | TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0<br/> |
 
@@ -64,7 +64,7 @@ El proveedor de Microsoft Schannel admite los siguientes conjuntos de cifrado, p
 
 
 
-| Cadena de conjunto de cifrado                                                                               | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
+| Cadena del conjunto de cifrado                                                                               | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
 |---------------------------------------------------------------------------------------------------|-------------------------------------|-----------------------------------------------|
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 256 \_ CBC \_ SHA<br/>                                                | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
@@ -111,7 +111,7 @@ Los siguientes conjuntos de cifrado PSK están habilitados y en este orden de pr
 
 Para agregar conjuntos de cifrado, implemente una directiva de grupo o use los cmdlets TLS:
 
--   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Network > Opciones de configuración de SSL con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
+-   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Network > Configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
 -   Para usar PowerShell, consulte [Cmdlets de TLS.](/powershell/module/tls/?view=win10-ps)
 
 > [!Note]  
