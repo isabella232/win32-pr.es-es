@@ -1,21 +1,21 @@
 ---
 title: IUniversalOrchestrator::HasMoratoriumPassed
-description: Consulta a universal Orchestrator para determinar si se ha superado el período posterior a OOBE.
-ms.topic: method
+description: Consulta a Universal Orchestrator para determinar si se ha superado el período posterior a la OOBE.
+ms.topic: reference
 ms.date: 01/14/2021
-ms.openlocfilehash: 2ed354d365b795a0c959396e6b26d6bc73baad97
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.openlocfilehash: 3ccbf673b8fe22fabe7001112e04e87bd45eeaa4
+ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "105720776"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991802"
 ---
-# <a name="iuniversalorchestratorhasmoratoriumpassed-method"></a>IUniversalOrchestrator:: HasMoratoriumPassed (método)
+# <a name="iuniversalorchestratorhasmoratoriumpassed-method"></a>IUniversalOrchestrator::HasModoresPassed (método)
 
 > [!NOTE] 
-> Esta API pertenece a la API de orquestador universal.
+> Esta API pertenece a la API de Orquestador universal.
 
-Permite a los clientes determinar si el orquestador universal funciona inmediatamente después de la nueva experiencia del dispositivo, lo que limita los intentos de trabajo para minimizar la interrupción del usuario. 
+Permite a los clientes determinar si El orquestador universal funciona inmediatamente después de la nueva experiencia de configuración de dispositivo, lo que limita los intentos de trabajo para minimizar la interrupción del usuario. 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ Cadena única que identifica todas las llamadas de este cliente específico.
 Parámetro de salida que almacena el resultado de la consulta.
 
 ## <a name="return-value"></a>Valor devuelto
-Si este método se ejecuta correctamente, devuelve **S_OK**.  De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S_OK**.  De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
