@@ -1,39 +1,39 @@
 ---
-description: Un codificador convierte audio o vídeo sin comprimir en paquetes comprimidos en el formato especificado por la aplicación. Para convertir archivos multimedia en formato ASF, puede usar los códecs de audio y vídeo de Windows Media.
+description: Un codificador convierte audio o vídeo sin comprimir en paquetes comprimidos en el formato especificado por la aplicación. Para convertir archivos multimedia al formato ASF, puede usar los códecs Windows audio y vídeo multimedia.
 ms.assetid: 6dcf12d0-ea37-446b-a807-2b27fd1f6124
-title: Codificadores de Windows Media
+title: Windows Codificadores multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a642702562cbb6a70b0380deb196c70c4f8207b6
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 8d79ff55e98227c63e9761a8dec5ae068c8b1786c067230548ad0028dbe301a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237294"
 ---
-# <a name="windows-media-encoders"></a>Codificadores de Windows Media
+# <a name="windows-media-encoders"></a>Windows Codificadores multimedia
 
-Un codificador convierte audio o vídeo sin comprimir en paquetes comprimidos en el formato especificado por la aplicación. Para convertir archivos multimedia en formato ASF, puede usar los códecs de audio y vídeo de Windows Media.
+Un codificador convierte audio o vídeo sin comprimir en paquetes comprimidos en el formato especificado por la aplicación. Para convertir archivos multimedia al formato ASF, puede usar los códecs Windows audio y vídeo multimedia.
 
-Un codificador se identifica mediante el GUID que representa la categoría: audio o vídeo. El tipo de salida del codificador se representa con el GUID principal y el subtipo del tipo de archivo multimedia.
+Un codificador se identifica mediante el GUID que representa la categoría: audio o vídeo. El tipo de salida del codificador se representa mediante el GUID principal de un tipo de medio y el subtipo.
 
--   Códecs de audio de Windows Media
+-   Windows Códecs de audio multimedia
 
-    Categoría: **\_ categoría MFT \_ , \_ codificador de audio**
+    Categoría: **CODIFICADOR DE AUDIO CATEGORÍA \_ \_ \_ MFT**
 
-    Tipo principal: MFMediaType \_ audio
+    Tipo principal: AUDIO \_ MFMediaType
 
-    SubType: MFAudioFormat \_ WMAudioV9, MFAudioFormat \_ WMAudioV8, MFAudioFormat \_ WMAudio \_ Lossless, MFAudioFormat \_ WMASPDIF
+    SubTipo: MFAudioFormat \_ WMAudioV9, MFAudioFormat \_ WMAudioV8, MFAudioFormat \_ WMAudio \_ Lossless, MFAudioFormat \_ WMASPDIF
 
--   Códecs de vídeo de Windows Media
+-   Windows Códecs de vídeo multimedia
 
-    Categoría: **categoría de MFT \_ \_ \_ codificador de vídeo**
+    Categoría: **CODIFICADOR DE VÍDEO DE \_ CATEGORÍA \_ \_ MFT**
 
-    Tipo principal: vídeo de MFMediaType \_
+    Tipo principal: VÍDEO \_ MFMediaType
 
-    SubType: MFVideoFormat \_ Wvc1, MFVideoFormat \_ Wmv3, MFVideoFormat wmv2 \_ , MFVideoFormat \_ WMV1
+    Subtipo: MFVideoFormat \_ WVC1, MFVideoFormat \_ WMV3, MFVideoFormat \_ WMV2, MFVideoFormat \_ WMV1
 
-Estos codificadores se implementan como [Media Foundation Transform](media-foundation-transforms.md) (MFT) y Media Foundation proporcionan acceso a la aplicación a través de la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) del codificador. Si utiliza componentes de capa de canalización para la codificación ASF, la MFT del codificador se inserta en la canalización como nodo de transformación, ya que es responsable de transformar los datos multimedia que fluyen a través del origen al receptor. Si el origen es un tipo comprimido, la canalización agrega los descodificadores necesarios para convertir el origen en un tipo sin comprimir. Un codificador tiene un flujo de entrada y un flujo de salida. El codificador recibe datos de entrada y genera datos codificados de acuerdo con la configuración y el formato establecidos por la aplicación antes de la sesión de codificación. El formato del flujo de salida se describe mediante un tipo de medio.
+Estos codificadores se implementan como [Media Foundation](media-foundation-transforms.md) transformación (MFT) y Media Foundation acceso a la aplicación a través de la interfaz [**DETRANSFORMTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) del codificador. Si usa componentes de capa de canalización para la codificación ASF, el codificador MFT se inserta en la canalización como un nodo de transformación porque es responsable de transformar los datos multimedia que fluyen a través del origen al receptor. Si el origen es un tipo comprimido, la canalización agrega los descodificadores necesarios para convertir el origen en un tipo sin comprimir. Un codificador tiene una secuencia de entrada y una de salida. El codificador recibe datos de entrada y genera datos codificados según la configuración y el formato establecidos por la aplicación antes de la sesión de codificación. El formato del flujo de salida se describe mediante un tipo de medio.
 
 Esta sección contiene los temas siguientes.
 
@@ -41,11 +41,11 @@ Esta sección contiene los temas siguientes.
 
 | Tema                                                                              | Descripción                                                                                 |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [Crear instancias de una MFT del codificador](instantiating-the-encoder-mft.md)                  | Explica cómo crear el codificador.                                                         |
-| [Propiedades de codificación](configuring-the-encoder.md)                                 | Explica cómo configurar el codificador mediante el establecimiento de las propiedades adecuadas en la MFT del codificador. |
-| [Negociación de tipo de medio en el codificador](media-type-negotiation-on-the-encoder.md) | Explica cómo establecer los tipos de medios de entrada y salida en el codificador.                            |
+| [Creación de instancias de un MFT de codificador](instantiating-the-encoder-mft.md)                  | Explica cómo crear el codificador.                                                         |
+| [Propiedades de codificación](configuring-the-encoder.md)                                 | Explica cómo configurar el codificador estableciendo las propiedades adecuadas en el MFT del codificador. |
+| [Negociación de tipos de medios en el codificador](media-type-negotiation-on-the-encoder.md) | Explica cómo establecer tipos de medios de entrada y salida en el codificador.                            |
 | [Configuración de un codificador WMV](configuring-a-wmv-encoder.md)                         | Explica cómo configurar un codificador Windows Media Video (WMV).                              |
-| [Establecer un tipo de salida para un codificador WMA](configuring-a-wma-encoder.md)          | Explica cómo establecer un tipo de salida en un codificador Windows Media Audio (WMA).                  |
+| [Establecimiento de un tipo de salida para un codificador WMA](configuring-a-wma-encoder.md)          | Explica cómo establecer un tipo de salida en un codificador Windows Media Audio (WMA).                  |
 
 
 
@@ -55,7 +55,7 @@ Esta sección contiene los temas siguientes.
 
 <dl> <dt>
 
-[Componentes ASF de capa de canalización](pipeline-layer-asf-components.md)
+[Componentes de ASF de capa de canalización](pipeline-layer-asf-components.md)
 </dt> </dl>
 
  

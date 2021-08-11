@@ -4,28 +4,28 @@ ms.assetid: 7be4c5e7-db2c-4063-8e5c-af6ffb861aa5
 title: Procesamiento de datos en el codificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99b7fedef50df61851408d084b511497eacd0288
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 666c2a2ff2139aadcb489022eb9b324eff1de523551244c2fd12ad0e11f68f1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238736"
 ---
 # <a name="processing-data-in-the-encoder"></a>Procesamiento de datos en el codificador
 
-Después de haber negociado el tipo de entrada y el tipo de salida de la MFT del codificador, tal y como se describe en [negociación de tipos multimedia en el codificador](media-type-negotiation-on-the-encoder.md), puede empezar a procesar muestras de datos multimedia. Los datos se pasan en forma de muestras de medios (interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) ) y también se reciben del resultado como muestras de medios.
+Después de haber negociado el tipo de entrada y el tipo de salida para el MFT del codificador, como se describe en [Negociación](media-type-negotiation-on-the-encoder.md)de tipo multimedia en el codificador , puede empezar a procesar ejemplos de datos multimedia. Los datos se pasan en forma de muestras de medios (interfaz [**DESAMPLESAMPLE)**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) y también se reciben de la salida como ejemplos multimedia.
 
-Antes de enviar datos al codificador para su procesamiento, debe asignar un ejemplo multimedia y agregar uno o varios búferes multimedia que contengan los datos multimedia que deben codificarse. Llame a [**IMFTransform::P rocessinput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) y pase un puntero al ejemplo de medios asignados. Además del ejemplo multimedia, **ProcessInput** también necesita el identificador del flujo de entrada. Para obtener el identificador de flujo, llame a [**IMFTransform:: GetStreamIDs**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getstreamids). Dado que un codificador está diseñado para tener solo una salida y una, estos identificadores de flujo siempre tienen el valor 0.
+Antes de enviar datos al codificador para su procesamiento, debe asignar un ejemplo multimedia y agregar uno de los búferes multimedia más que contienen datos multimedia que deben codificarse. Llame [**a IMFTransform::P rocessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) y pase un puntero al ejemplo multimedia asignado. Además del ejemplo multimedia, **ProcessInput** también necesita el identificador de flujo de entrada. Para obtener el identificador de flujo, llame [**a LALETransform::GetStreamIDs**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getstreamids). Dado que un codificador está diseñado para tener solo una salida, estos identificadores de secuencia siempre tienen el valor 0.
 
-Para obtener datos del codificador, llame a [**IMFTransform::P rocessoutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput). Antes de llamar a [**ProcessOutput**](/windows/desktop/api/mfidl/nf-mfidl-imfqualitymanager-notifyprocessoutput), debe averiguar si el codificador asigna los ejemplos de medios de salida o debe hacerlo explícitamente. Para ello, llame a [**IMFTransform:: GetOutputStreamInfo**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreaminfo). Esto devuelve información de ejemplo multimedia de salida en la estructura de [**información del flujo de salida de MFT \_ \_ \_**](/windows/desktop/api/mftransform/ns-mftransform-mft_output_stream_info) . Si el codificador asigna ejemplos de medios, devuelve el flujo de salida de \_ MFT \_ proporciona \_ la \_ marca samples en el miembro **dwFlags** y el miembro **cbSize** contiene cero. Si el codificador espera que asigne el búfer de salida, cree el ejemplo multimedia de salida y el búfer de medios asociado en función del tamaño devuelto en **cbSize**. Cuando llame a [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample), pase un puntero al ejemplo multimedia que se acaba de crear. Durante la sesión de codificación, el codificador llena los búferes multimedia, señalados por el ejemplo multimedia de salida, con los datos codificados.
+Para obtener datos del codificador, llame [**a LATRANSFORMTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput). Antes de llamar a [**ProcessOutput**](/windows/desktop/api/mfidl/nf-mfidl-imfqualitymanager-notifyprocessoutput), debe averiguar si el codificador asigna los ejemplos de medios de salida o debe hacerlo explícitamente. Para ello, llame a [**IMFTransform::GetOutputStreamInfo**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreaminfo). Esto devuelve información de ejemplo de medios de salida en la [**estructura \_ MFT OUTPUT \_ STREAM \_ INFO.**](/windows/desktop/api/mftransform/ns-mftransform-mft_output_stream_info) Si el codificador asigna ejemplos multimedia, devuelve la marca MFT OUTPUT STREAM PROVIDES SAMPLES en el miembro dwFlags y el \_ \_ miembro \_ \_ **cbSize** contiene cero.  Si el codificador espera que asigne el búfer de salida, cree el ejemplo de medios de salida y el búfer multimedia asociado en función del tamaño devuelto en **cbSize**. Al llamar a [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample), pase un puntero al ejemplo multimedia recién creado. Durante la sesión de codificación, el codificador rellena los búferes multimedia, señalados por el ejemplo de medios de salida, con los datos codificados.
 
-Para iniciar la sesión de codificación, pase el ejemplo de medios de entrada al codificador mediante una llamada a [**ProcessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput). El codificador comienza el procesamiento y los datos, y genera uno o más ejemplos de medios de salida que se deben recuperar mediante [**ProcessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) siempre que devuelva la \_ transformación MF E \_ \_ necesite \_ más \_ entrada. Si llama a **ProcessInput** para pasar más entradas mientras haya datos de salida que se van a recuperar, **ProcessInput** producirá un error con MF \_ E \_ NOTACCEPTING. El codificador no acepta más entradas hasta que el cliente llama a **ProcessOutput** al menos una vez.
+Para iniciar la sesión de codificación, pase el ejemplo de medios de entrada al codificador mediante una llamada [**a ProcessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput). El codificador inicia el procesamiento y los datos y genera uno o varios ejemplos de medios de salida que [**ProcessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) debe recuperar siempre que devuelva MF \_ E TRANSFORM NEED MORE \_ \_ \_ \_ INPUT. Si llama a **ProcessInput para** pasar más entrada siempre y cuando haya datos de salida que recuperar, **ProcessInput** produce un error con MF \_ E \_ NOTACCEPTING. El codificador no acepta más entradas hasta que el cliente llama a **ProcessOutput** al menos una vez.
 
-Debe establecer las marcas de tiempo y duraciones precisas para todos los ejemplos de entrada pasados. Las marcas de tiempo no son estrictamente necesarias pero ayudan a mantener la sincronización de audio y vídeo. Si no dispone de las marcas de tiempo para los ejemplos, es mejor dejarlas de usar valores inciertos.
+Debe establecer marcas de tiempo y duraciones precisas para todas las muestras de entrada pasadas. Las marcas de tiempo no son estrictamente necesarias, pero ayudan a mantener la sincronización de audio y vídeo. Si no tiene las marcas de tiempo para los ejemplos, es mejor dejarlos fuera que usar valores inseguros.
 
 ## <a name="encoder-processing-example"></a>Ejemplo de procesamiento del codificador
 
-En el ejemplo de código siguiente se muestra cómo llamar a [**IMFTransform::P rocessoutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) para obtener un ejemplo codificado. Para obtener el contexto completo de este ejemplo, vea [código de ejemplo del codificador](encoder-example-code.md).
+En el código de ejemplo siguiente se muestra cómo llamar [**a IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) para obtener un ejemplo codificado. Para obtener el contexto completo de este ejemplo, vea [Código de ejemplo de codificador](encoder-example-code.md).
 
 
 ```C++
@@ -110,13 +110,13 @@ done:
 
 <dl> <dt>
 
-[Multiplexor ASF](asf-multiplexer.md)
+[Multiplexor de ASF](asf-multiplexer.md)
 </dt> <dt>
 
-[Crear instancias de una MFT del codificador](instantiating-the-encoder-mft.md)
+[Creación de instancias de un MFT de codificador](instantiating-the-encoder-mft.md)
 </dt> <dt>
 
-[Codificadores de Windows Media](windows-media-encoders.md)
+[Windows Codificadores multimedia](windows-media-encoders.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Especifica la coordenada y de la esquina superior izquierda de la abertura geométrica.
+description: Especifica la coordenada Y de la esquina superior izquierda de la apertura geométrica.
 ms.assetid: 5015e864-fd34-449f-b3fc-1ddcb507dfdf
-title: Propiedad MFPKEY_RESIZE_GEOMAPY (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_GEOMAPY propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d695aea69e590cf9ff447dcf095f9b2151fceb50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cddc1ce0c74aa1606db22004b92a13eaeeaa63a632bb642b37a11bb06167f040
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242409"
 ---
-# <a name="mfpkey_resize_geomapy-property"></a>MFPKEY \_ cambiar el tamaño de la \_ propiedad GEOMAPY
+# <a name="mfpkey_resize_geomapy-property"></a>Propiedad \_ GEOMAPY RESIZE de MFPKEY \_
 
-Especifica la coordenada y de la esquina superior izquierda de la abertura geométrica.
+Especifica la coordenada Y de la esquina superior izquierda de la apertura geométrica.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -25,29 +25,29 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Vídeo de tamaño DSP](videoresizer.md)
+-   [DSP de cambio de tamaño de vídeo](videoresizer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor es un número real de punto fijo. La parte entera del número se almacena en los 2 bytes superiores y la parte fraccionaria se almacena en los 2 bytes inferiores.
+El valor es un número real de punto fijo. La parte entera del número se almacena en los 2 bytes más altos y la parte fraccionera se almacena en los 2 bytes inferiores.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

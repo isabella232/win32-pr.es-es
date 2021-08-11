@@ -1,19 +1,19 @@
 ---
 description: En este tema se enumeran los métodos de la clase FontFamily. Para obtener una lista de clases completa, vea FontFamilyClass.
 ms.assetid: 170a2bac-843f-451b-b2fa-6710bf828710
-title: Métodos de FontFamily
+title: Métodos FontFamily
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd303aa47014ead184450c5ba799a0ccb42dfcb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0744cb4dad0b5620bf5762aafd90ca0d644f7e54ef22e690a05424c56e03edee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249536"
 ---
-# <a name="fontfamily-methods"></a>Métodos de FontFamily
+# <a name="fontfamily-methods"></a>Métodos FontFamily
 
-En este tema se enumeran los métodos de la clase [**FontFamily**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) . Para obtener una lista de clases completa, vea **FontFamilyClass**.
+En este tema se enumeran los métodos de [**la clase FontFamily.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) Para obtener una lista de clases completa, **vea FontFamilyClass**.
 
 -   [**Clonar**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-clone)
 -   [**GenericMonospace**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-genericmonospace)

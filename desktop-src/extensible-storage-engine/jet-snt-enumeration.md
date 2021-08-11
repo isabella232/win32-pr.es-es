@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_SNT'
-title: Enumeración JET_SNT
+description: 'Más información sobre: enumeración JET_SNT datos'
+title: JET_SNT enumeración
 TOCTitle: JET_SNT enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SNT
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snt(v=EXCHG.10)
@@ -34,19 +34,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f6cad661d8265c32d605bbef94d75714ccb1783
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d25137c9e976d05bd065837fed7753e26e3afdae020499b3388948e11733fd77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252529"
 ---
-# <a name="jet_snt-enumeration"></a>Enumeración JET_SNT
+# <a name="jet_snt-enumeration"></a>JET_SNT enumeración
 
-Tipo de progreso en el que se va a informar.
+Tipo de progreso que se notifica.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -80,7 +80,7 @@ public enum JET_SNT
 <tr class="odd">
 <td></td>
 <td>Comenzar</td>
-<td>Devolución de llamada para el inicio de una operación.</td>
+<td>Devolución de llamada para el principio de una operación.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -95,20 +95,20 @@ public enum JET_SNT
 <tr class="even">
 <td></td>
 <td>Suspenso</td>
-<td>Devolución de llamada para el error durante la operación.</td>
+<td>Devolución de llamada en caso de error durante la operación.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecoveryStep</td>
 <td>Devolución de llamada para el control de recuperación.
-<p>Se usa para el procesamiento interno en versiones del sistema operativo Windows anteriores a Windows 8. Este valor no es aplicable a las versiones de Windows a partir de Windows 8.</p></td>
+<p>Se usa para el procesamiento interno en versiones del Windows sistema operativo anteriores a Windows 8. Este valor no es aplicable a las versiones de Windows a partir de Windows 8.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

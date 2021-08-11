@@ -1,19 +1,19 @@
 ---
-description: En los temas de esta sección se proporcionan las especificaciones de referencia para las funciones de identificación de origen de entrada.
+description: Los temas de esta sección proporcionan las especificaciones de referencia para las funciones de identificación del origen de entrada.
 ms.assetid: 382D60F5-9E21-4881-915F-A5F0257A701D
 title: Funciones (identificación del origen de entrada)
 ms.topic: article
 ms.date: 02/05/2020
-ms.openlocfilehash: 6a618607df31076f2fd021cee61d62220a8cc5e5
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: f84c2b44f80e045332aa2df1976e676f21e7489ed55c481662e5f29424738a06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105721648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248804"
 ---
 # <a name="input-source-identification-functions"></a>Funciones de identificación de origen de entrada
 
-En los temas de esta sección se proporcionan las especificaciones de referencia para las funciones de [identificación de origen de entrada](input-source-identification-portal.md) .
+Los temas de esta sección proporcionan las especificaciones de referencia para las [funciones de identificación del origen de](input-source-identification-portal.md) entrada.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -24,4 +24,4 @@ En los temas de esta sección se proporcionan las especificaciones de referencia
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Referencia de identificación de origen de entrada](input-source-identification-reference.md)
+[Referencia de identificación del origen de entrada](input-source-identification-reference.md)

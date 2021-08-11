@@ -4,34 +4,34 @@ ms.assetid: bb71e792-d09c-4338-9cf4-4854e14042f9
 title: Ejemplo de MFPlayer2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1904dcc6e64024dacb76e9109f2e785ec8d5a96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ead2df415af1584f34661a0c1d18751350d59bd1a94ac48f41d3bf9dca2070f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241741"
 ---
 # <a name="mfplayer2-sample"></a>Ejemplo de MFPlayer2
 
 > [!IMPORTANT]
-> En desuso. Esta API se puede quitar de las versiones futuras de Windows. Las aplicaciones deben usar la [sesión multimedia](media-session.md) para la reproducción.
+> En desuso. Esta API puede quitarse de futuras versiones de Windows. Las aplicaciones deben usar la [sesión multimedia para](media-session.md) la reproducción.
 
  
 
-Muestra algunas de las características de reproducción que se omiten en el ejemplo [SimplePlay](simpleplay-sample.md) , como:
+Muestra algunas de las características de reproducción que se omiten en el [ejemplo simplePlay,](simpleplay-sample.md) como:
 
--   Invoca
+-   Buscando
 -   Control de velocidad (avance rápido y rebobinado)
--   Controles volumen de audio y silenciar
+-   Controles de volumen de audio y exclusión mutua
 -   Zoom de vídeo
 
-En la imagen siguiente se muestran los controles que se usan para estas características.
+En la imagen siguiente se muestran los controles usados para estas características.
 
-![captura de pantalla del ejemplo mfPlayer ](images/mfplayer2.png)
+![captura de pantalla del ejemplo mfplayer ](images/mfplayer2.png)
 
-## <a name="apis-demonstrated"></a>API mostradas
+## <a name="apis-demonstrated"></a>API demostradas
 
-Este ejemplo muestra las siguientes API.
+En este ejemplo se muestran las siguientes API.
 
 -   [**IAudioSessionControl**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
 -   [**IAudioSessionManager**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager)
@@ -48,7 +48,7 @@ Este ejemplo muestra las siguientes API.
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 
 
 
@@ -56,7 +56,7 @@ Este ejemplo muestra las siguientes API.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Este ejemplo está disponible en el [repositorio de github de ejemplos de Windows clásico](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFPlayer2).
+Este ejemplo está disponible en el repositorio [de github Windows ejemplos clásicos](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFPlayer2).
 
 ## <a name="related-topics"></a>Temas relacionados
 

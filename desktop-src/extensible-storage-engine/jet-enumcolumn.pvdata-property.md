@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_ENUMCOLUMN. pvData'
-title: Propiedad JET_ENUMCOLUMN. pvData
+description: 'Más información sobre: JET_ENUMCOLUMN.pvData'
+title: JET_ENUMCOLUMN.pvData, propiedad
 TOCTitle: 'pvData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.pvData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.pvdata(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b7d4c72a45d90fd8004af2011f9f6081a59cfabf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df79d838277a849c99ea49af2a8ca12e77cb3667d4750b141f0b9247b46b9232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254698"
 ---
-# <a name="jet_enumcolumnpvdata-property"></a>Propiedad JET_ENUMCOLUMN. pvData
+# <a name="jet_enumcolumnpvdata-property"></a>JET_ENUMCOLUMN.pvData, propiedad
 
-Obtiene el valor que se enumeró para la columna. Este miembro solo se utiliza si el valor de [Err](./jet-enumcolumn.err-property.md) es igual a [ColumnSingleValue](./jet-wrn-enumeration.md). Esto apunta a la memoria asignada con la devolución de llamada de asignador [JET_PFNREALLOC](./jet-pfnrealloc-delegate.md) pasada a [JetEnumerateColumns (JET_SESID, JET_TABLEID, Int32, \[ \] , Int32, \[ \] , JET_PFNREALLOC, IntPtr, Int32, EnumerateColumnsGrbit)](./api.jetenumeratecolumns-method.md). Recuerde liberar la memoria cuando termine.
+Obtiene el valor enumerado para la columna. Este miembro solo se usa si [err](./jet-enumcolumn.err-property.md) es igual a [ColumnSingleValue.](./jet-wrn-enumeration.md) Esto apunta a la memoria asignada con la devolución de llamada del asignador de JET_PFNREALLOC pasada [a](./jet-pfnrealloc-delegate.md) [JetEnumerateColumns(JET_SESID, JET_TABLEID, Int32, \[ \] , Int32, , \[ \] JET_PFNREALLOC, IntPtr, Int32, EnumerateColumnsGrbit).](./api.jetenumeratecolumns-method.md) No olvide liberar la memoria cuando haya terminado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public IntPtr pvData { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMN (clase)](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN clase](./jet-enumcolumn-class.md)
 
-[Miembros de JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN miembros](./jet-enumcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

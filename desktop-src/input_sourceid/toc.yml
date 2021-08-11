@@ -1,7 +1,7 @@
 - name: Identificación del origen de entrada
   href: input-source-identification-portal.md
   items:
-    - name: Referencia de identificación de origen de entrada
+    - name: Referencia de identificación del origen de entrada
       href: input-source-identification-reference.md
       items:
         - name: Enumeraciones
@@ -11,7 +11,7 @@
               href: /windows/win32/api/winuser/ne-winuser-input_message_device_type
             - name: INPUT_MESSAGE_ORIGIN_ID
               href: /windows/win32/api/winuser/ne-winuser-input_message_origin_id
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: GetCIMSSM

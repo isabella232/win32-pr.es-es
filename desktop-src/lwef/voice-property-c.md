@@ -4,12 +4,12 @@ description: Obtenga información sobre la propiedad Voice del objeto Command, q
 ms.assetid: e393aa89-6fa7-4080-9faf-66faca83d561
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ee7981de076fb3c7d8f796a8cc7d1177f96495c
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 698b39bf2129ff30eae78a949cf6d694af3c356e4c994a1a192bc55ab29fa23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118245081"
 ---
 # <a name="voice-property-command-object"></a>Propiedad Voice (objeto Command)
 
@@ -41,7 +41,7 @@ Devuelve o establece el texto que se pasa a la gramática del motor de voz (para
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si no proporciona este parámetro, [**VoiceCaption**](voicecaption-property.md) del objeto [**Commands**](/windows/desktop/lwef/the-commands-collection-object) no aparecerá en la ventana Comandos de voz. Si especifica [](voice-property.md) un parámetro Voice pero no **voiceCaption** (o [**Caption),**](https://www.bing.com/search?q=**Caption**)el comando no aparecerá en la ventana Comandos de voz, pero será accesible por voz cuando la aplicación cliente se convierta en entrada-activa.
 

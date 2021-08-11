@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_SIGNATURE'
-title: Estructura de JET_SIGNATURE
+description: 'Más información sobre: estructura JET_SIGNATURE datos'
+title: JET_SIGNATURE estructura
 TOCTitle: JET_SIGNATURE structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SIGNATURE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_signature(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5c8ce12b23194aea2a45c273e0207f88faad6f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0f9c6508f3901d9755b3a244f88eb948959164918278f067ee6f6d25fefd3e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253419"
 ---
-# <a name="jet_signature-structure"></a>Estructura de JET_SIGNATURE
+# <a name="jet_signature-structure"></a>JET_SIGNATURE estructura
 
-La estructura JET_SIGNATURE contiene información que identifica de forma única una secuencia de archivo o de base de datos.
+La JET_SIGNATURE estructura contiene información que identifica de forma única una base de datos o una secuencia de archivos de registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,10 +58,10 @@ public struct JET_SIGNATURE : IEquatable<JET_SIGNATURE>
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE miembros](./jet-signature-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

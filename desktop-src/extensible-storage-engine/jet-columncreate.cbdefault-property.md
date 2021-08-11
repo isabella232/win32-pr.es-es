@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_COLUMNCREATE. cbDefault'
-title: Propiedad JET_COLUMNCREATE. cbDefault
+description: 'Más información sobre: JET_COLUMNCREATE.cbDefault'
+title: JET_COLUMNCREATE.cbDefault, propiedad
 TOCTitle: 'cbDefault property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE.cbDefault
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columncreate.cbdefault(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7d93ec4936b137a18d13bf82eb318cf1000c7f74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c3ee915c42c0c3536f49a1ebb506ad80045cc8ba4a17d75bd09a3317c2acaa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254975"
 ---
-# <a name="jet_columncreatecbdefault-property"></a>Propiedad JET_COLUMNCREATE. cbDefault
+# <a name="jet_columncreatecbdefault-property"></a>JET_COLUMNCREATE.cbDefault, propiedad
 
 Obtiene o establece el tamaño del valor predeterminado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int cbDefault { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNCREATE (clase)](./jet-columncreate-class.md)
+[JET_COLUMNCREATE clase](./jet-columncreate-class.md)
 
-[Miembros de JET_COLUMNCREATE](./jet-columncreate-members.md)
+[JET_COLUMNCREATE miembros](./jet-columncreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

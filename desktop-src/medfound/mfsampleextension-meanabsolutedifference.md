@@ -1,45 +1,45 @@
 ---
-description: Este atributo devuelve la diferencia absoluta media (MAD) en todos los bloques de macros del plano Y.
+description: Este atributo devuelve la diferencia absoluta media (MAD) entre todos los bloques de macros del plano Y.
 ms.assetid: 7F0358F1-794A-4E75-8D97-3B91955E19EE
-title: MFSampleExtension_MeanAbsoluteDifference atributo (mfapi. h)
+title: MFSampleExtension_MeanAbsoluteDifference atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4b7187b295071b8e27b68d9b5804aab6b2ddef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7908c8ea69d5d2b074fa8d2ac6b44ca0b3f40ba5b2ca72cd358350c2e749b62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240642"
 ---
-# <a name="mfsampleextension_meanabsolutedifference-attribute"></a>\_Atributo MeanAbsoluteDifference de MFSampleExtension
+# <a name="mfsampleextension_meanabsolutedifference-attribute"></a>Atributo MFSampleExtension \_ MeanAbsoluteDifference
 
-Este atributo devuelve la diferencia absoluta media (MAD) en todos los bloques de macros del plano Y.
+Este atributo devuelve la diferencia absoluta media (MAD) entre todos los bloques de macros del plano Y.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación puede solicitar el codificador para establecer este atributo en los ejemplos de salida mediante [CODECAPI \_ AVEncVideoMeanAbsoluteDifference](codecapi-avencvideomeanabsolutedifference.md).
+La aplicación puede solicitar al codificador que establezca este atributo en los ejemplos de salida mediante [CODECAPI \_ AVEncVideoMeanAbsoluteDifference](codecapi-avencvideomeanabsolutedifference.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

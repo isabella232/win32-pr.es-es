@@ -1,17 +1,17 @@
 ---
 description: Especifica la marca de tiempo del dispositivo original en el ejemplo.
 ms.assetid: 93BB6E41-308E-4527-A04B-C685C818FEC4
-title: MFSampleExtension_DeviceReferenceSystemTime atributo (Mfcaptureengine. h)
+title: MFSampleExtension_DeviceReferenceSystemTime atributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00af99e3d2c34d0e4cf72af519497ea04f13e62c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0458c1a2b0f5b204483cba0e6f571a2a5ace34b7b39463cc20ded664eecaaa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241140"
 ---
-# <a name="mfsampleextension_devicereferencesystemtime-attribute"></a>\_Atributo DeviceReferenceSystemTime de MFSampleExtension
+# <a name="mfsampleextension_devicereferencesystemtime-attribute"></a>Atributo MFSampleExtension \_ DeviceReferenceSystemTime
 
 Especifica la marca de tiempo del dispositivo original en el ejemplo.
 
@@ -19,28 +19,28 @@ Especifica la marca de tiempo del dispositivo original en el ejemplo.
 
 **UINT64**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una marca de tiempo de referencia de dispositivo de ejemplos de medios en la resolución de 100 NS. Esta marca de tiempo puede o no contener el valor real del contador de rendimiento de la consulta (QPC), dependiendo del origen que produzca los ejemplos. Otros componentes de la canalización multimedia pueden modificar este valor. Este valor no está disponible para MFTs insertado en la canalización de captura.
+Se trata de una marca de tiempo de referencia de dispositivo de muestras multimedia en resolución de 100ns. Esta marca de tiempo puede llevar o no el valor real del contador de rendimiento de consultas (QPC), en función del origen que produzca las muestras. Otros componentes de la canalización multimedia pueden modificar este valor. Este valor no está disponible para las MTA insertadas en la canalización de captura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Mfcaptureengine. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Mfcaptureengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                   |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Mfcaptureengine.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

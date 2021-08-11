@@ -1,11 +1,11 @@
 ---
-title: Propiedad de representador DevicePair
-description: Obtiene el representador para el par de dispositivo básico activo.
+title: Propiedad DevicePair Renderer
+description: Obtiene el representador del par de dispositivos básico activo.
 ms.assetid: DB2ED5D3-CCDF-4704-A29A-F1A13F7B953A
 keywords:
-- Streaming de multimedia de propiedad de representador API
-- Propiedad de representador media streaming API, DevicePair (interfaz)
-- Interfaz DevicePair API de streaming de multimedia, propiedad de representador
+- Api de streaming multimedia de propiedad del representador
+- Propiedad del representador Media Streaming API, interfaz DevicePair
+- Interfaz DevicePair Media Streaming API, propiedad representador
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f74b212ed4e8ec29b0234a3769c3beff91c0c777
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 05707fd65e2ac8998fa2412ec15c12d3b003b88990641aad6510d87bd7692e1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236088"
 ---
-# <a name="devicepairrenderer-property"></a>DevicePair:: renderer (propiedad)
+# <a name="devicepairrenderer-property"></a>DevicePair::Renderer, propiedad
 
-Obtiene el representador para el par de dispositivo básico activo.
+Obtiene el representador del par de dispositivos básico activo.
 
 Esta propiedad es de solo lectura.
 
@@ -34,7 +34,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_Renderer(
-  [out] ActiveBasicDevice **value
+  [out] ActiveBasicDevice **value
 );
 ```
 
@@ -42,7 +42,7 @@ HRESULT get_Renderer(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recibe un objeto [**ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85)) que representa el dispositivo de representador.
+Recibe un [**objeto ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85)) que representa el dispositivo representador.
 
 ## <a name="see-also"></a>Vea también
 
@@ -51,6 +51,6 @@ Recibe un objeto [**ActiveBasicDevice**](/previous-versions/windows/desktop/lega
 [**DevicePair**](/previous-versions/windows/desktop/legacy/dn385771(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

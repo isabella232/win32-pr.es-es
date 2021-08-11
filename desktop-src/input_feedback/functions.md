@@ -1,6 +1,6 @@
 ---
 title: Funciones (configuración de comentarios de entrada))
-description: En los temas de esta sección se proporcionan las especificaciones de referencia de las funciones de configuración de comentarios de entrada.
+description: Los temas de esta sección proporcionan las especificaciones de referencia para las funciones de configuración de comentarios de entrada.
 ms.assetid: 9CC3EA75-8FD5-4A29-8FD7-785E25ACCBA2
 keywords:
 - interacción con el usuario
@@ -12,16 +12,16 @@ keywords:
 - lápiz
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: e7b2ea940da878b4229b405aa4b4e8ece4680481
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: 47134be85bcc02ee6b2f224c39b1e915a7638317df003687f040d8cf11ee713b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105721629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249315"
 ---
 # <a name="input-feedback-configuration-functions"></a>Funciones de configuración de comentarios de entrada
 
-En los temas de esta sección se proporcionan las especificaciones de referencia de las funciones de [configuración de comentarios de entrada](input-feedback-configuration-portal.md) .
+Los temas de esta sección proporcionan las especificaciones de referencia para las [funciones de configuración de comentarios de](input-feedback-configuration-portal.md) entrada.
 
 ## <a name="in-this-section"></a>En esta sección
 

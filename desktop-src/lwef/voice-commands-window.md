@@ -1,61 +1,61 @@
 ---
-title: Ventana comandos de voz
-description: Ventana comandos de voz
+title: Ventana Comandos de voz
+description: Ventana Comandos de voz
 ms.assetid: vs|msagent|~\guidlin_12gn.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c4ad0a1521e8dacc941ba5b2ce5f6c264c65a31
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 06f4e5ce02ea9a964663efacbc19a3b302d6e58f0364d705491be26229b15f69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105704951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118245108"
 ---
-# <a name="voice-commands-window"></a>Ventana comandos de voz
+# <a name="voice-commands-window"></a>Ventana Comandos de voz
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-La ventana comandos de voz muestra los comandos de voz activos actuales disponibles para el carácter. La ventana aparece cuando se elige el comando Abrir ventana comandos o la propiedad [**visible**](visible-property.md) del objeto [**CommandsWindow**](/windows/desktop/lwef/the-commandswindow-object) se establece en **true**. Si el motor de voz aún no se ha cargado, la consulta o el establecimiento de esta propiedad hará que el agente de Microsoft intente inicializar el motor. Si el usuario deshabilita la voz, la ventana puede seguir apareciendo; sin embargo, incluirá un mensaje de texto que informa al usuario de que la voz está deshabilitada actualmente.
+La ventana Comandos de voz muestra los comandos de voz activos actuales disponibles para el carácter. La ventana aparece cuando se elige el comando Abrir ventana comandos o la propiedad [**Visible**](visible-property.md) del objeto [**CommandsWindow**](/windows/desktop/lwef/the-commandswindow-object) se establece en **True.** Si el motor de voz aún no se ha cargado, al consultar o establecer esta propiedad, Microsoft Agent intentará inicializar el motor. Si el usuario deshabilita la voz, la ventana todavía se puede mostrar; sin embargo, incluirá un mensaje de texto que informa al usuario de que la voz está deshabilitada actualmente.
 
-Los comandos de entrada-activo del cliente aparecen en la ventana comandos de voz en [**función de los valores**](voice-property.md)de propiedad [**leyenda**](caption-property.md) y **voz** de voz que aparecen en el [**VoiceCaption**](voicecaption-property.md) de su colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .
+Los comandos del cliente activo de entrada aparecen en la [](voice-property.md)ventana Comandos de voz en función de la configuración de las propiedades Voice [**Caption**](caption-property.md) y **Voice** enumeradas en [**VoiceCaption**](voicecaption-property.md) de su [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
-**Figura 1. Ventana comandos de voz**
+**Figura 1. Ventana Comandos de voz**
 
-La ventana comandos de voz aparece cuando se elige el comando Abrir ventana comandos. Los comandos de entrada-activo del cliente aparecen en la ventana comandos de voz en [**función de los valores**](voice-property.md)de propiedad [**leyenda**](caption-property.md) y **voz** de voz que aparecen en **voz** de la colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .
+La ventana Comandos de voz aparece cuando se elige el comando Abrir ventana comandos. Los comandos del cliente activo de entrada aparecen en la [](voice-property.md)[](caption-property.md) ventana  Comandos de voz en función de la configuración de las propiedades Título de voz y Voz que aparecen en **Voz** de la [**colección**](/windows/desktop/lwef/the-commands-collection-object) Comandos.
 
-La ventana comandos de voz también muestra el [**VoiceCaption**](voicecaption-property.md) de la colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) para otros clientes del carácter y los siguientes comandos de voz generados por el servidor para la interacción general en la entrada comandos globales:
+En la ventana Comandos de voz también se muestra [**voiceCaption**](voicecaption-property.md) de la colección [**Commands**](/windows/desktop/lwef/the-commands-collection-object) para otros clientes del carácter y los siguientes comandos de voz generados por el servidor para la interacción general en la entrada Comandos globales:
 
 
 
-| Leyenda de voz                       | Gramática de voz                                                                                                                                            |
+| Título de voz                       | Gramática de voz                                                                                                                                            |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Abrir la \| ventana comandos de voz de cierre | (abrir \| Mostrar) \[ la \] \[ ventana comandos \] \| ¿Qué puedo decir \[ ahora?\] <br/> alterna con: <br/> cerrar \[ la \] \[ ventana comandos\] <br/> |
-| Ocultar                                | u \*                                                                                                                                                  |
-| *Nombredecarácter*                     | *Nombredecarácter*\*\*                                                                                                                                      |
+| Abrir \| la ventana Cerrar comandos de voz | (abrir \| la ventana de \[ \] comandos) \[ \] \| ¿Qué puedo \[ decir ahora?\] <br/> alterna con: <br/> Cerrar \[ la ventana de \] \[ comandos\] <br/> |
+| Ocultar                                | Ocultar \*                                                                                                                                                  |
+| *CharacterName*                     | *CharacterName*\*\*                                                                                                                                      |
 | Comandos globales                     | \[mostrarme \] \[ \] comandos globales                                                                                                                          |
 
 
 
  
 
-\* Aquí solo se muestra un carácter si está visible actualmente.
+\* Un carácter se muestra aquí solo si está visible actualmente.
 
-\*\* Se enumeran todos los caracteres cargados.
+\*\* Se muestran todos los caracteres cargados.
 
-Al hablar del comando de voz de la colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) de otro cliente, se cambia a ese cliente y la ventana comandos de voz muestra los comandos de ese cliente. No se expanden otras entradas. Del mismo modo, si el usuario cambia los caracteres, la ventana comandos de voz cambia para mostrar los comandos de su cliente de entrada-activo. Si el cliente ya es de entrada-activo, hablar de uno de sus comandos de voz no tiene ningún efecto. (Sin embargo, si el usuario contrae el subárbol del cliente activo con el mouse, al hablar del nombre del cliente se vuelve a mostrar el subárbol del cliente).
+Al hablar el comando de voz de la colección [**Comandos**](/windows/desktop/lwef/the-commands-collection-object) de otro cliente, se cambia a ese cliente y la ventana Comandos de voz muestra los comandos de ese cliente. No se expande ninguna otra entrada. De forma similar, si el usuario cambia los caracteres, la ventana Comandos de voz cambia para mostrar los comandos de su cliente activo de entrada. Si el cliente ya está activo de entrada, hablar uno de sus comandos de voz no tiene ningún efecto. (Sin embargo, si el usuario contrae el subárbol del cliente activo con el mouse, al hablar el nombre del cliente se vuelve a mostrar el subárbol del cliente).
 
-Si un cliente tiene comandos de voz, pero no tiene ningún valor de [**voz**](voice-property.md) para el objeto de [**comando**](/windows/desktop/lwef/the-commands-collection-object) (o no tiene [**título**](caption-property.md)de **voz**), el árbol muestra "(comando sin definir)" como entrada primaria, pero solo cuando ese cliente es de entrada-activo y el cliente tiene comandos en su colección que tienen una configuración de **leyenda** y de **voz** .
+Si un cliente tiene comandos de voz, pero no hay ninguna configuración de voz para su objeto [**Commands**](/windows/desktop/lwef/the-commands-collection-object) (o ningún título de [**voz),**](caption-property.md)el árbol muestra "(command undefined)" como la entrada primaria, pero solo cuando ese cliente está activo para la entrada y el cliente tiene comandos en su colección que tienen configuración de título y **voz.** [](voice-property.md) 
 
-El servidor muestra automáticamente los comandos del cliente actual de entrada-activo y, si es necesario, desplaza la ventana para mostrar tantos comandos del cliente como sea posible, en función del tamaño de la ventana. Si el carácter no tiene entradas de cliente, se expandirá la entrada comandos globales.
+El servidor muestra automáticamente los comandos del cliente activo de entrada actual y, si es necesario, desplaza la ventana para mostrar tantos comandos del cliente como sea posible, en función del tamaño de la ventana. Si el carácter no tiene entradas de cliente, se expande la entrada Comandos globales.
 
-Si el usuario habla de "comandos globales", la ventana comandos de voz muestra siempre las entradas de subárbol asociadas. Si ya se muestran, el comando no tiene ningún efecto.
+Si el usuario habla "Comandos globales", la ventana Comandos de voz siempre muestra sus entradas de subárbol asociadas. Si ya se muestran, el comando no tiene ningún efecto.
 
-Aunque también puede mostrar u ocultar la ventana comandos de voz del código de la aplicación mediante la propiedad [**visible**](visible-property.md) , no puede cambiar el tamaño o la ubicación de la ventana comandos de voz. El servidor mantiene las propiedades de la ventana comandos de voz en función de la interacción del usuario con la ventana. Su ubicación inicial es inmediatamente adyacente al icono de la barra de tareas del carácter.
+Aunque también puede mostrar u ocultar la ventana Comandos de voz del código de la aplicación mediante la [**propiedad Visible,**](visible-property.md) no puede cambiar el tamaño o la ubicación de la ventana Comandos de voz. El servidor mantiene las propiedades de la ventana Comandos de voz en función de la interacción del usuario con la ventana. Su ubicación inicial es inmediatamente adyacente al icono de la barra de tareas del carácter.
 
-La ventana comandos de voz se incluye en el orden de las ventanas ALT + TAB. Esto permite a un usuario cambiar a la ventana para desplazarse, cambiar el tamaño o cambiar la posición de la ventana con el teclado.
+La ventana Comandos de voz se incluye en el orden de la ventana ALT+TAB. Esto permite al usuario cambiar a la ventana para desplazarse, cambiar el tamaño o cambiar la posición de la ventana con el teclado.
 
--   [La sugerencia de escucha](the-listening-tip.md)
--   [La ventana Opciones de carácter avanzadas](https://www.bing.com/search?q=The+Advanced+Character+Options+Window)
+-   [Sugerencia de escucha](the-listening-tip.md)
+-   [Ventana Opciones avanzadas de caracteres](https://www.bing.com/search?q=The+Advanced+Character+Options+Window)
 
  
 

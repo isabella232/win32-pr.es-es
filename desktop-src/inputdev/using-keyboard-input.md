@@ -1,40 +1,40 @@
 ---
-title: Usar la entrada del teclado
-description: En esta sección se describen las tareas que están asociadas a la entrada de teclado.
+title: Uso de la entrada de teclado
+description: En esta sección se tratan las tareas asociadas a la entrada de teclado.
 ms.assetid: d08e7f12-6595-4234-bfc4-08daad93e4c4
 keywords:
 - entrada de usuario, entrada de teclado
-- capturar datos proporcionados por el usuario, entrada mediante teclado
+- captura de la entrada del usuario, entrada de teclado
 - entrada mediante teclado
 - mensajes de pulsación de teclas
 - mensajes de caracteres
-- insumos, entrada de teclado
+- carets,entrada de teclado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d76b3f90a626506430b91e7539069c6ecdf634c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cb1be8753ec6a5f920f09f6e5376b7988a88de0f9a49551492408e84908bb0c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105714375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248277"
 ---
-# <a name="using-keyboard-input"></a>Usar la entrada del teclado
+# <a name="using-keyboard-input"></a>Uso de la entrada de teclado
 
-Una ventana recibe la entrada del teclado en forma de mensajes de pulsación de teclas y mensajes de caracteres. El bucle de mensajes asociado a la ventana debe incluir código para traducir los mensajes de pulsación de tecla en los mensajes de caracteres correspondientes. Si la ventana muestra la entrada de teclado en su área de cliente, debe crear y mostrar un símbolo de intercalación para indicar la posición en la que se escribirá el siguiente carácter. En las secciones siguientes se describe el código implicado en la recepción, el procesamiento y la visualización de la entrada del teclado:
+Una ventana recibe la entrada del teclado en forma de mensajes de pulsación de tecla y mensajes de caracteres. El bucle de mensajes asociado a la ventana debe incluir código para traducir los mensajes de pulsación de tecla en los mensajes de caracteres correspondientes. Si la ventana muestra la entrada de teclado en su área cliente, debe crear y mostrar un carácter de diálogo para indicar la posición en la que se especificará el carácter siguiente. En las secciones siguientes se describe el código implicado en la recepción, el procesamiento y la visualización de la entrada de teclado:
 
--   [Procesar mensajes de pulsación de tecla](#processing-keystroke-messages)
--   [Traducir mensajes de caracteres](#translating-character-messages)
--   [Procesamiento de mensajes de caracteres](#processing-character-messages)
--   [Usar el símbolo de intercalación](#using-the-caret)
--   [Mostrar la entrada del teclado](#displaying-keyboard-input)
+-   [Procesamiento de mensajes de pulsación de teclas](#processing-keystroke-messages)
+-   [Traducción de mensajes de caracteres](#translating-character-messages)
+-   [Procesar mensajes de caracteres](#processing-character-messages)
+-   [Uso del caret](#using-the-caret)
+-   [Mostrar la entrada de teclado](#displaying-keyboard-input)
 
-## <a name="processing-keystroke-messages"></a>Procesar mensajes de pulsación de tecla
+## <a name="processing-keystroke-messages"></a>Procesamiento de mensajes de pulsación de teclas
 
-El procedimiento de ventana de la ventana que tiene el foco de teclado recibe mensajes de pulsación de tecla cuando el usuario escribe en el teclado. Los mensajes de pulsación de tecla son [**WM \_ KEYDOWN**](wm-keydown.md), [**WM \_ KEYUP**](wm-keyup.md), [**WM \_ SYSKEYDOWN**](wm-syskeydown.md)y [**WM \_ SYSKEYUP**](wm-syskeyup.md). Un procedimiento de ventana típico no tiene en cuenta todos los mensajes de pulsación de tecla, excepto el **\_ KEYDOWN de WM**. El sistema envía el mensaje de **\_ KEYDOWN de WM** cuando el usuario presiona una tecla.
+El procedimiento de ventana de la ventana que tiene el foco del teclado recibe mensajes de pulsación de tecla cuando el usuario los pulsa en el teclado. Los mensajes de pulsación de tecla [**son WM \_ KEYDOWN,**](wm-keydown.md) [**WM \_ KEYUP,**](wm-keyup.md) [**WM \_ SYSKEYDOWN**](wm-syskeydown.md)y [**WM \_ SYSKEYUP.**](wm-syskeyup.md) Un procedimiento de ventana típico omite todos los mensajes de pulsación de teclas excepto **WM \_ KEYDOWN**. El sistema envía el **mensaje WM \_ KEYDOWN** cuando el usuario presiona una tecla.
 
-Cuando el procedimiento de ventana recibe el mensaje de [**\_ KEYDOWN de WM**](wm-keydown.md) , debe examinar el código de la clave virtual que acompaña al mensaje para determinar cómo procesar la pulsación de tecla. El código de la clave virtual está en el parámetro *wParam* del mensaje. Normalmente, una aplicación solo procesa las pulsaciones de tecla generadas por las teclas que no son de caracteres, incluidas las teclas de función, las teclas de desplazamiento del cursor y las teclas especiales, como INS, SUPR, Inicio y fin.
+Cuando el procedimiento de ventana recibe el mensaje [**WM \_ KEYDOWN,**](wm-keydown.md) debe examinar el código de clave virtual que acompaña al mensaje para determinar cómo procesar la pulsación de tecla. El código de clave virtual está en el parámetro *wParam del* mensaje. Normalmente, una aplicación procesa solo las pulsaciones de teclas generadas por claves que no son de caracteres, incluidas las claves de función, las claves de movimiento del cursor y las claves de propósito especial, como INS, DEL, HOME y END.
 
-En el ejemplo siguiente se muestra el marco de trabajo de procedimientos de ventana que utiliza una aplicación típica para recibir y procesar mensajes de pulsación de tecla.
+En el ejemplo siguiente se muestra el marco de procedimiento de ventana que usa una aplicación típica para recibir y procesar mensajes de pulsación de tecla.
 
 
 ```
@@ -105,11 +105,11 @@ En el ejemplo siguiente se muestra el marco de trabajo de procedimientos de vent
 
 
 
-## <a name="translating-character-messages"></a>Traducir mensajes de caracteres
+## <a name="translating-character-messages"></a>Traducción de mensajes de caracteres
 
-Cualquier subproceso que reciba la entrada de caracteres del usuario debe incluir la función [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) en su bucle de mensajes. Esta función examina el código de tecla virtual de un mensaje de pulsación de teclas y, si el código corresponde a un carácter, coloca un mensaje de carácter en la cola de mensajes. El mensaje de carácter se quita y se envía en la siguiente iteración del bucle de mensajes; el parámetro *wParam* del mensaje contiene el código de carácter.
+Cualquier subproceso que reciba la entrada de caracteres del usuario debe incluir [**la función TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) en su bucle de mensajes. Esta función examina el código de clave virtual de un mensaje de pulsación de tecla y, si el código corresponde a un carácter, coloca un mensaje de carácter en la cola de mensajes. El mensaje de caracteres se quita y se envía en la siguiente iteración del bucle de mensajes; El *parámetro wParam* del mensaje contiene el código de carácter.
 
-En general, el bucle de mensajes de un subproceso debe utilizar la función [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) para traducir todos los mensajes, no solo los mensajes de clave virtual. Aunque **TranslateMessage** no tiene ningún efecto en otros tipos de mensajes, garantiza que la entrada del teclado se traduzca correctamente. En el ejemplo siguiente se muestra cómo incluir la función **TranslateMessage** en un bucle de mensajes de subprocesos típico.
+En general, el bucle de mensajes de un subproceso debe usar la función [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) para traducir todos los mensajes, no solo los mensajes de clave virtual. Aunque **TranslateMessage** no tiene ningún efecto en otros tipos de mensajes, garantiza que la entrada de teclado se traduzca correctamente. En el ejemplo siguiente se muestra cómo incluir la **función TranslateMessage** en un bucle de mensajes de subproceso típico.
 
 
 ```
@@ -135,20 +135,20 @@ while (( bRet = GetMessage(&msg, (HWND) NULL, 0, 0)) != 0)
 
 
 
-## <a name="processing-character-messages"></a>Procesamiento de mensajes de caracteres
+## <a name="processing-character-messages"></a>Procesar mensajes de caracteres
 
-Un procedimiento de ventana recibe un mensaje de carácter cuando la función [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) traduce un código de tecla virtual correspondiente a una tecla de carácter. Los mensajes de caracteres [**son \_ WM char**](wm-char.md), [**WM \_ DEADCHAR**](wm-deadchar.md), [**WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar)y [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md). Un procedimiento de ventana típico omite todos los mensajes de caracteres excepto **WM \_ Char**. La función **TranslateMessage** genera un mensaje de **WM \_ Char** cuando el usuario presiona cualquiera de las claves siguientes:
+Un procedimiento de ventana recibe un mensaje de carácter [**cuando la función TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) traduce un código de clave virtual correspondiente a una clave de caracteres. Los mensajes de caracteres [**son WM \_ CHAR,**](wm-char.md) [**WM \_ DEADCHAR,**](wm-deadchar.md) [**WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar)y [**WM \_ SYSDEADCHAR.**](wm-sysdeadchar.md) Un procedimiento de ventana típico omite todos los mensajes de caracteres excepto **WM \_ CHAR.** La **función TranslateMessage** genera un mensaje **WM \_ CHAR** cuando el usuario presiona cualquiera de las siguientes teclas:
 
--   Cualquier clave de carácter
+-   Cualquier tecla de carácter
 -   RETROCESO
--   ENTRAR (retorno de carro)
+-   ENTER (retorno de carro)
 -   ESC
--   Mayús + entrar (avance de la alimentación)
+-   MAYÚS+ENTRAR (linefeed)
 -   TAB
 
-Cuando un procedimiento de ventana recibe el mensaje de carácter de [**WM \_**](wm-char.md) , debe examinar el código de carácter que acompaña al mensaje para determinar cómo procesar el carácter. El código de carácter se encuentra en el parámetro *wParam* del mensaje.
+Cuando un procedimiento de ventana recibe el mensaje [**\_ CHAR de WM,**](wm-char.md) debe examinar el código de caracteres que acompaña al mensaje para determinar cómo procesar el carácter. El código de carácter está en el parámetro *wParam del* mensaje.
 
-En el ejemplo siguiente se muestra el marco de trabajo de procedimientos de ventana que utiliza una aplicación típica para recibir y procesar mensajes de caracteres.
+En el ejemplo siguiente se muestra el marco de procedimiento de ventana que usa una aplicación típica para recibir y procesar mensajes de caracteres.
 
 
 ```
@@ -195,23 +195,23 @@ En el ejemplo siguiente se muestra el marco de trabajo de procedimientos de vent
 
 
 
-## <a name="using-the-caret"></a>Usar el símbolo de intercalación
+## <a name="using-the-caret"></a>Uso del caret
 
-Una ventana que recibe la entrada del teclado normalmente muestra los caracteres que el usuario escribe en el área cliente de la ventana. Una ventana debe usar un símbolo de intercalación para indicar la posición en el área cliente donde aparecerá el carácter siguiente. La ventana también debe crear y mostrar el símbolo de intercalación cuando recibe el foco de teclado y ocultar y destruir el símbolo de intercalación cuando pierde el foco. Una ventana puede realizar estas operaciones en el procesamiento de los mensajes de [**WM \_ SETFOCUS**](wm-setfocus.md) y [**WM \_ KILLFOCUS**](wm-killfocus.md) . Para obtener más información sobre las intercalaciones, consulte [Cares](/windows/desktop/menurc/carets).
+Una ventana que recibe la entrada de teclado normalmente muestra los caracteres que el usuario tipos en el área de cliente de la ventana. Una ventana debe usar un carácter de diálogo para indicar la posición en el área de cliente donde aparecerá el carácter siguiente. La ventana también debe crear y mostrar el caret cuando recibe el foco del teclado, y ocultar y destruir el centro de atención cuando pierde el foco. Una ventana puede realizar estas operaciones en el procesamiento de los mensajes [**\_ WM SETFOCUS**](wm-setfocus.md) y [**WM \_ KILLFOCUS.**](wm-killfocus.md) Para obtener más información sobre los carets, vea [Carets](/windows/desktop/menurc/carets).
 
-## <a name="displaying-keyboard-input"></a>Mostrar la entrada del teclado
+## <a name="displaying-keyboard-input"></a>Mostrar la entrada de teclado
 
-En el ejemplo de esta sección se muestra cómo una aplicación puede recibir caracteres del teclado, mostrarlos en el área de cliente de una ventana y actualizar la posición del símbolo de intercalación con cada carácter escrito. También muestra cómo mover el símbolo de intercalación en respuesta a la flecha izquierda, flecha derecha, Inicio y FINALización de las pulsaciones de teclas y muestra cómo resaltar el texto seleccionado en respuesta a la combinación de teclas Mayús + Flecha derecha.
+En el ejemplo de esta sección se muestra cómo una aplicación puede recibir caracteres del teclado, mostrarlos en el área cliente de una ventana y actualizar la posición del carácter de subrayado con cada carácter con tipo. También se muestra cómo mover el símbolo de cursor en respuesta a las pulsaciones de tecla FLECHA IZQUIERDA, FLECHA DERECHA, INICIO y FIN, y se muestra cómo resaltar el texto seleccionado en respuesta a la combinación de teclas MAYÚS+FLECHA DERECHA.
 
-Durante el procesamiento del mensaje de [**\_ creación de WM**](/windows/desktop/winmsg/wm-create) , el procedimiento de ventana que se muestra en el ejemplo asigna un búfer de 64k para almacenar la entrada del teclado. También recupera las métricas de la fuente cargada actualmente, guardando el alto y el ancho medio de los caracteres de la fuente. El alto y el ancho se utilizan en el procesamiento del mensaje de [**\_ tamaño de WM**](/windows/desktop/winmsg/wm-size) para calcular la longitud de línea y el número máximo de líneas, en función del tamaño del área cliente.
+Durante el procesamiento del [**mensaje WM \_ CREATE,**](/windows/desktop/winmsg/wm-create) el procedimiento de ventana que se muestra en el ejemplo asigna un búfer de 64 000 para almacenar la entrada del teclado. También recupera las métricas de la fuente cargada actualmente, guardando el alto y el ancho medio de los caracteres en la fuente. El alto y el ancho se usan en el procesamiento del mensaje [**WM \_ SIZE**](/windows/desktop/winmsg/wm-size) para calcular la longitud de línea y el número máximo de líneas, en función del tamaño del área de cliente.
 
-El procedimiento de ventana crea y muestra el símbolo de intercalación al procesar el mensaje de [**\_ SETFOCUS de WM**](wm-setfocus.md) . Oculta y elimina el símbolo de intercalación al procesar el mensaje de [**\_ KILLFOCUS de WM**](wm-killfocus.md) .
+El procedimiento de ventana crea y muestra el caret al procesar el [**\_ mensaje SETFOCUS de WM.**](wm-setfocus.md) Oculta y elimina el caret al procesar el [**mensaje \_ KILLFOCUS de WM.**](wm-killfocus.md)
 
-Al procesar el mensaje de tipo de datos de [**WM \_**](wm-char.md) , el procedimiento de ventana muestra caracteres, los almacena en el búfer de entrada y actualiza la posición del símbolo de intercalación. El procedimiento de ventana también convierte los caracteres de tabulación en cuatro caracteres de espacio consecutivos. Los caracteres de retroceso, avance y salida generan un pitido, pero no se procesan de otra manera.
+Al procesar el [**mensaje \_ WM CHAR,**](wm-char.md) el procedimiento de ventana muestra caracteres, los almacena en el búfer de entrada y actualiza la posición del carácter de diálogo. El procedimiento de ventana también convierte los caracteres de tabulación en cuatro caracteres de espacio consecutivos. Los caracteres de retroceso, de retroceso y de escape generan un pitido, pero no se procesan de otro modo.
 
-El procedimiento de ventana realiza los movimientos de intercalación izquierda, derecha, final y inicio al procesar el mensaje de [**\_ KEYDOWN de WM**](wm-keydown.md) . Al procesar la acción de la tecla de dirección derecha, el procedimiento de ventana comprueba el estado de la tecla Mayús y, si está inactivo, selecciona el carácter situado a la derecha del símbolo de intercalación mientras se mueve el símbolo de intercalación.
+El procedimiento de ventana realiza los movimientos de los elementos de careta izquierdo, derecho, final e inicio al procesar el [**mensaje WM \_ KEYDOWN.**](wm-keydown.md) Al procesar la acción de la tecla DE FLECHA DERECHA, el procedimiento de ventana comprueba el estado de la tecla MAYÚS y, si está fuera de servicio, selecciona el carácter a la derecha del carácter de diálogo mientras se mueve el carácter de careta.
 
-Tenga en cuenta que el código siguiente se escribe para que se pueda compilar como Unicode o como ANSI. Si el código fuente define Unicode, las cadenas se administran como caracteres Unicode; de lo contrario, se tratan como caracteres ANSI.
+Tenga en cuenta que el código siguiente está escrito para que se pueda compilar como Unicode o como ANSI. Si el código fuente define UNICODE, las cadenas se controlan como caracteres Unicode; De lo contrario, se controlan como caracteres ANSI.
 
 
 ```
@@ -561,6 +561,6 @@ LONG APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lParam
 
 
 
- 
+ 
 
- 
+ 

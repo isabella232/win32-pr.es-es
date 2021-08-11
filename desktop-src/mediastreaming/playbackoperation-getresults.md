@@ -1,11 +1,11 @@
 ---
-title: PlaybackOperation. GetResults, método
+title: Método PlaybackOperation.GetResults
 description: Devuelve los resultados de una operación asincrónica iniciada por uno de los métodos de reproducción de MediaRenderer.
 ms.assetid: EAA5B342-51EF-449A-A7E2-FFBDBE07757C
 keywords:
-- Método GetResults API de streaming de multimedia
-- Método GetResults API de streaming multimedia, interfaz PlaybackOperation
-- PlaybackOperation interface media streaming API, GetResults (método)
+- Método GetResults de Media Streaming API
+- Método GetResults de Media Streaming API, interfaz PlaybackOperation
+- Interfaz PlaybackOperation de Media Streaming API, método GetResults
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f146876966cc4e003bd88ad295c9938e5240abfe
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9bd3c79164a78e7993eb8a58d0d89a64c7ceb31a0c33eaff2e9c1bc352144088
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235788"
 ---
-# <a name="playbackoperationgetresults-method"></a>PlaybackOperation. GetResults, método
+# <a name="playbackoperationgetresults-method"></a>Método PlaybackOperation.GetResults
 
-Devuelve los resultados de una operación asincrónica iniciada por uno de los métodos de reproducción de [**MediaRenderer**](mediarenderer.md) .
+Devuelve los resultados de una operación asincrónica iniciada por uno de los métodos [**de reproducción de MediaRenderer.**](mediarenderer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ HRESULT GetResults(
 
 <dl> <dt>
 
-*valor* \[ de out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Resultado de la operación. Un valor de 0 indica que la operación se completó. Otros valores están reservados.
+Resultado de la operación. Un valor de 0 indica que se completó la operación. Otros valores están reservados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, se llama al método **GetResults** desde el controlador de eventos que se registró estableciendo la propiedad [**completed**](playbackoperation-completed.md) .
+Normalmente, se llama al método **GetResults** desde el controlador de eventos que se registró estableciendo la [**propiedad Completed.**](playbackoperation-completed.md)
 
 ## <a name="see-also"></a>Vea también
 

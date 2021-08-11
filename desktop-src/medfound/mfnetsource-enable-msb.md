@@ -1,25 +1,25 @@
 ---
-description: Especifica si está habilitado el protocolo de multidifusión de difusión de transmisión multimedia (MSB) en el origen de red.
+description: Especifica si el protocolo de multidifusión de difusión de secuencias multimedia (MSB) está habilitado en el origen de red.
 ms.assetid: a46e3b4c-60be-4470-b9dc-041902c2563c
-title: Propiedad MFNETSOURCE_ENABLE_MSB (Mfidl. h)
+title: MFNETSOURCE_ENABLE_MSB propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e6b2a49876cf504bfc4e086ab1e064e6835283a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1054b4a94bf966457ddeccc606fbd2fd2c8a1d5b3978b830b5e3c48f0f93b5ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243822"
 ---
-# <a name="mfnetsource_enable_msb-property"></a>MFNETSOURCE \_ Habilitar la \_ propiedad MSB
+# <a name="mfnetsource_enable_msb-property"></a>MFNETSOURCE \_ ENABLE \_ MSB, propiedad
 
-Especifica si está habilitado el protocolo de multidifusión de difusión de transmisión multimedia (MSB) en el origen de red.
+Especifica si el protocolo de multidifusión de difusión de secuencias multimedia (MSB) está habilitado en el origen de red.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
@@ -31,32 +31,32 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante **MFNETSOURCE \_ enable \_ MSB** define el GUID para esta clave de propiedad. El identificador de propiedad (PID) es cero.
+La constante **MFNETSOURCE \_ ENABLE \_ MSB** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
-Las aplicaciones pueden utilizar esta propiedad para configurar el origen de red. Para establecer la propiedad, pase un puntero **IPropertyStore** a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Para establecer la propiedad , pase un **puntero IPropertyStore** al solucionador de origen. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
 [Protocolos admitidos](supported-protocols.md)

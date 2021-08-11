@@ -1,7 +1,7 @@
 - name: Pila de entrada de dispositivo de puntero
   href: pointer-device-stack-portal.md
   items:
-    - name: Referencia de la pila de entrada de dispositivo de puntero
+    - name: Referencia de pila de entrada de dispositivo de puntero
       href: unified-input-stack-reference.md
       items:
         - name: Enumeraciones
@@ -11,7 +11,7 @@
               href: /windows/win32/api/Winuser/ne-winuser-pointer_device_cursor_type
             - name: POINTER_DEVICE_TYPE
               href: /windows/win32/api/Winuser/ne-winuser-pointer_device_type
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: GetPointerDevice

@@ -1,19 +1,19 @@
 ---
-description: Especifica el GUID que identifica el sistema de protección de Rights Management digital (DRM) en el contenedor.
+description: Especifica el GUID que identifica el sistema de protección Rights Management digital (DRM) en el contenedor.
 ms.assetid: DACB355B-17B9-4968-8920-5233603FD796
-title: Propiedad MFPKEY_MediaProtectionContainerGuid (Mfidl. h)
+title: MFPKEY_MediaProtectionContainerGuid propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433ef4723eb91527ad621a50bada79da76e39631
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 86dcfd4bb3a99041b15022dde4833d4a4f7fb866998283028fb82d5e650acc8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105707567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242572"
 ---
-# <a name="mfpkey_mediaprotectioncontainerguid-property"></a>\_Propiedad MediaProtectionContainerGuid de MFPKEY
+# <a name="mfpkey_mediaprotectioncontainerguid-property"></a>Propiedad \_ MediaProtectionContainerGuid de MFPKEY
 
-Especifica el GUID que identifica el sistema de protección de Rights Management digital (DRM) en el contenedor.
+Especifica el GUID que identifica el sistema de protección Rights Management digital (DRM) en el contenedor.
 
 **Tipo:** VT \_ CLSID
 
@@ -21,7 +21,7 @@ Especifica el GUID que identifica el sistema de protección de Rights Management
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
@@ -37,19 +37,19 @@ VT \_ CLSID
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

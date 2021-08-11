@@ -1,11 +1,11 @@
 ---
-title: Propiedad BasicDevice. PhysicalAddresses
+title: BasicDevice.PhysicalAddresses, propiedad
 description: Obtiene un vector de direcciones físicas.
 ms.assetid: E9D86D13-8DD4-40BA-8608-54F8B3832E05
 keywords:
-- Propiedad PhysicalAddresses API de streaming de multimedia
-- Propiedad PhysicalAddresses API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad PhysicalAddresses
+- Propiedad PhysicalAddresses de Media Streaming API
+- PhysicalAddresses property Media Streaming API , BasicDevice interface
+- BasicDevice interface Media Streaming API , propiedad PhysicalAddresses
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 698f8ac794a0a89bf8c31a6fd134cd4291c5fa6e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 93f5517008d4195dace53d77a8f9a4f6ca4f50aa704e52540ffbf2553aa76c84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105714373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236608"
 ---
-# <a name="basicdevicephysicaladdresses-property"></a>Propiedad BasicDevice. PhysicalAddresses
+# <a name="basicdevicephysicaladdresses-property"></a>BasicDevice.PhysicalAddresses, propiedad
 
 Obtiene un vector de direcciones físicas.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_PhysicalAddresses(
-  [out] IVector< HSTRING > **value
+  [out] IVector< HSTRING > **value
 );
 ```
 
@@ -50,6 +50,6 @@ Colección enumerable de punteros a direcciones físicas.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

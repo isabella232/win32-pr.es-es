@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPTHREAT_ACTION (MpClient. h)
+title: MPTHREAT_ACTION enumeración (MpClient.h)
 description: Posibles acciones de amenaza.
 ms.assetid: 142249A5-4C9D-4E3A-A06E-70C040F9C14F
 keywords:
-- MPTHREAT_ACTION enumeración características de entorno heredado de Windows
-- PMPTHREAT_ACTION el puntero de enumeración características de entorno heredado de Windows
+- MPTHREAT_ACTION enumeración heredada de Windows environment
+- PMPTHREAT_ACTION puntero de enumeración heredado Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae0377517af590072b797a57c051ad062842ea9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a3cd46583b9736ad8304c16e3b12d4f0157edcdb319fd0923a0fe737d504415
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247269"
 ---
-# <a name="mpthreat_action-enumeration"></a>\_Enumeración de acciones de MPTHREAT
+# <a name="mpthreat_action-enumeration"></a>Enumeración MPTHREAT \_ ACTION
 
 Posibles acciones de amenaza.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,42 +49,42 @@ typedef enum tagMPTHREAT_ACTION {
 
 <dl> <dt>
 
-<span id="MP_THREAT_ACTION_UNKNOWN"></span><span id="mp_threat_action_unknown"></span>**acción de amenaza de MP \_ \_ \_ desconocida**
+<span id="MP_THREAT_ACTION_UNKNOWN"></span><span id="mp_threat_action_unknown"></span>**ACCIÓN \_ DE AMENAZA DE MP \_ \_ DESCONOCIDA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_CLEAN"></span><span id="mp_threat_action_clean"></span>**acción de amenaza de MP \_ \_ \_ limpia**
+<span id="MP_THREAT_ACTION_CLEAN"></span><span id="mp_threat_action_clean"></span>**ACCIÓN \_ DE AMENAZA DE MP \_ \_ LIMPIA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_QUARANTINE"></span><span id="mp_threat_action_quarantine"></span>**\_cuarentena de \_ acción de amenazas MP \_**
+<span id="MP_THREAT_ACTION_QUARANTINE"></span><span id="mp_threat_action_quarantine"></span>**CUARENTENA \_ DE ACCIÓN DE AMENAZA DE \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_REMOVE"></span><span id="mp_threat_action_remove"></span>**\_eliminación de \_ acción de amenaza de MP \_**
+<span id="MP_THREAT_ACTION_REMOVE"></span><span id="mp_threat_action_remove"></span>**ACCIÓN \_ DE AMENAZA DE MP \_ \_ REMOVE**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_ALLOW"></span><span id="mp_threat_action_allow"></span>**\_ \_ permitir acción de amenaza de MP \_**
+<span id="MP_THREAT_ACTION_ALLOW"></span><span id="mp_threat_action_allow"></span>**ACCIÓN \_ DE AMENAZA DE MP \_ \_ ALLOW**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_USERDEFINED"></span><span id="mp_threat_action_userdefined"></span>**acción de amenaza del módulo de administración \_ \_ \_ USERDEFINED**
+<span id="MP_THREAT_ACTION_USERDEFINED"></span><span id="mp_threat_action_userdefined"></span>**ACCIÓN \_ DE AMENAZA DE MP DEFINIDA POR EL \_ \_ USUARIO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_NOACTION"></span><span id="mp_threat_action_noaction"></span>**acción de amenaza de MP no \_ \_ \_ Action**
+<span id="MP_THREAT_ACTION_NOACTION"></span><span id="mp_threat_action_noaction"></span>**ACCIÓN \_ DE AMENAZA DE MP \_ \_ NOACTION**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_BLOCK"></span><span id="mp_threat_action_block"></span>**\_bloque de \_ acción de amenazas MP \_**
+<span id="MP_THREAT_ACTION_BLOCK"></span><span id="mp_threat_action_block"></span>**BLOQUE DE \_ ACCIÓN DE AMENAZA DE \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_MAX_VALUE"></span><span id="mp_threat_action_max_value"></span>**\_ \_ valor máximo de acción de amenaza de \_ MP \_**
+<span id="MP_THREAT_ACTION_MAX_VALUE"></span><span id="mp_threat_action_max_value"></span>**VALOR \_ MÁXIMO DE ACCIÓN DE AMENAZA DE \_ \_ \_ MP**
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

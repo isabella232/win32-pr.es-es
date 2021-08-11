@@ -1,19 +1,19 @@
 ---
-description: Especifica deshabilitar protección contra desecho de pantalla.
+description: Especifica deshabilitar la protección contra la desprotección de pantalla.
 ms.assetid: 2CA548FC-0923-4E02-BFEE-A5179C0C5110
-title: MFPROTECTION_DISABLE_SCREEN_SCRAPE atributo (Mfidl. h)
+title: MFPROTECTION_DISABLE_SCREEN_SCRAPE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7577e3efc9e52419ed965a4599841543d565d722
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c97de33bd4ebbf7b66693881a9eedddcae7c14d9ac0d773d82ce3a23e952b832
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241626"
 ---
-# <a name="mfprotection_disable_screen_scrape-attribute"></a>MFPROTECTION \_ deshabilitar el \_ atributo de barrido de pantalla \_
+# <a name="mfprotection_disable_screen_scrape-attribute"></a>Atributo MFPROTECTION \_ DISABLE \_ SCREEN \_ SCRAPE
 
-Especifica deshabilitar protección contra desecho de pantalla.
+Especifica deshabilitar la protección contra la desprotección de pantalla.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -23,19 +23,19 @@ Especifica deshabilitar protección contra desecho de pantalla.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

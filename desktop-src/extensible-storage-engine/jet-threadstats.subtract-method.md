@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_THREADSTATS. Resta (método)'
-title: JET_THREADSTATS. Método resta (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_THREADSTATS. Método Subtract'
+title: JET_THREADSTATS. Método Subtract (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'Subtract method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.Subtract(Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS,Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.subtract(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf1f47258fe965c41b0a02ccbb32712b0a54c97b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 443e572afd80b3af28e2a88f84880e8679e8e462b0a7f7540e4a277cfa759941
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118251774"
 ---
-# <a name="jet_threadstatssubtract-method"></a>JET_THREADSTATS. Resta (método)
+# <a name="jet_threadstatssubtract-method"></a>JET_THREADSTATS. Método Subtract
 
-Calcular la diferencia en estadísticas entre dos estructuras de JET_THREADSTATS.
+Calcule la diferencia en las estadísticas entre dos JET_THREADSTATS estructura.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,28 +64,28 @@ public static JET_THREADSTATS Subtract(
 #### <a name="parameters"></a>Parámetros
 
   - t1  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
     
-    Primer JET_THREADSTATS.
+    El primer JET_THREADSTATS.
 
 <!-- end list -->
 
-  - T2  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+  - t2  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
     
-    Segundo JET_THREADSTATS.
+    La segunda JET_THREADSTATS.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
-JET_THREADSTATS que contiene la diferencia entre T1 y T2.  
+Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+Un JET_THREADSTATS que contiene la diferencia en las estadísticas entre t1 y t2.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS estructura](./jet-threadstats-structure2.md)
 
-[Miembros de JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS miembros](./jet-threadstats-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

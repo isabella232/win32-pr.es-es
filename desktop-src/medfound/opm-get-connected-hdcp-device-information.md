@@ -1,62 +1,62 @@
 ---
-description: 'Más información acerca de: OPM_GET_CONNECTED_HDCP_DEVICE_INFORMATION'
+description: 'Más información sobre: OPM_GET_CONNECTED_HDCP_DEVICE_INFORMATION'
 ms.assetid: 71fa9a99-83e4-4b27-9fd1-5a9dc3070820
-title: OPM_GET_CONNECTED_HDCP_DEVICE_INFORMATION (Opmapi. h)
+title: OPM_GET_CONNECTED_HDCP_DEVICE_INFORMATION (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7561a348588b1244a6763eb447affa2b330e9c51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d692680e6492a3dc5d92073baf069eefffde68841925ced9afd69dde4d5fcd97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118239898"
 ---
-# <a name="opm_get_connected_hdcp_device_information"></a>\_información de \_ \_ dispositivo HDCP \_ conectado \_ a OPM
+# <a name="opm_get_connected_hdcp_device_information"></a>OPM \_ GET \_ CONNECTED \_ HDCP \_ DEVICE \_ INFORMATION
 
-Obtiene información acerca de un dispositivo High-Bandwidth Digital Content Protection (HDCP) conectado a la salida de vídeo. Se devuelve la siguiente información:
+Obtiene información sobre un High-Bandwidth de Content Protection digital (HDCP) conectado a la salida de vídeo. Se devuelve la siguiente información:
 
--   Vector de selección de clave de HDCP del dispositivo (KSV).
--   Si el dispositivo es un repetidor de HDCP.
+-   Vector de selección de claves HDCP (KSV) del dispositivo.
+-   Si el dispositivo es un repetidor HDCP.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------|---------------------------------------------------------------------------------------------------------|
-| GUID de solicitud | \_información de \_ \_ dispositivo HDCP \_ conectado \_ a OPM                                                          |
+| GUID de solicitud | OPM \_ GET \_ CONNECTED \_ HDCP \_ DEVICE \_ INFORMATION                                                          |
 | Datos de entrada   | None                                                                                                    |
-| Devolver datos  | Una estructura de [**\_ \_ \_ \_ información del dispositivo HDCP conectada a OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_connected_hdcp_device_information) |
+| Devolver datos  | Estructura [**OPM \_ CONNECTED \_ HDCP DEVICE \_ \_ INFORMATION**](/windows/desktop/api/opmapi/ns-opmapi-opm_connected_hdcp_device_information) |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta consulta solo se puede usar con el *modo de emulación de COPP*. Si la interfaz [**IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) usa la semántica de administrador de protección de salida (OPM), esta solicitud de estado no se admite.
+Esta consulta solo se puede usar con el *modo de emulación copp*. Si la [**interfaz IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) usa la semántica del Administrador de protección de salida (OPM), no se admite esta solicitud de estado.
 
-KSV es un identificador proporcionado al fabricante del dispositivo y se usa en el proceso de autenticación y configuración de HDCP. En el modo de emulación de COPP, la aplicación usa KSV para determinar si el dispositivo HDCP está revocado. Si es así, la aplicación no debería reproducir contenido protegido. Además, la aplicación no debe reproducir contenido protegido si el dispositivo es un repetidor de HDCP, porque COPP no admite repetidores de HDCP.
+KSV es un identificador proporcionado al fabricante del dispositivo y se usa en el proceso de autenticación y configuración de HDCP. En el modo de emulación de COPP, la aplicación usa KSV para determinar si se revoca el dispositivo HDCP. Si es así, la aplicación no debe reproducir contenido protegido. Además, la aplicación no debe reproducir contenido protegido si el dispositivo es un repetidor HDCP, ya que COPP no admite repetidores HDCP.
 
-Esta consulta no es necesaria cuando se usan semánticas de OPM, porque OPM admite repetidores de devocación de dispositivos y de HDCP.
+Esta consulta no es necesaria cuando se usa la semántica de OPM, ya que OPM admite la revocación de dispositivos y los repetidores de HDCP.
 
-Esta consulta es equivalente a la \_ consulta COPPQueryHDCPKeyData de DXVA usada en el protocolo de protección de la salida certificada (COPP).
+Esta consulta es equivalente a la consulta DXVA COPPQueryHDCPKeyData que se usa en el Protocolo de protección de salida \_ certificado (COPP).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IOPMVideoOutput:: COPPCompatibleGetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-coppcompatiblegetinformation)
+[**IOPMVideoOutput::COPPCompatibleGetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-coppcompatiblegetinformation)
 </dt> <dt>
 
 [Solicitudes de estado de OPM](opm-status-requests.md)

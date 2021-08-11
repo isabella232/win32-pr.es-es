@@ -1,19 +1,19 @@
 ---
-description: En este tema se enumeran los métodos de la clase LinearGradientBrush. Para obtener una lista de clases completa, vea LinearGradientBrush (clase).
+description: En este tema se enumeran los métodos de la clase LinearGradientBrush. Para obtener una lista de clases completa, vea LinearGradientBrush (Clase).
 ms.assetid: fbbc4cca-6337-4429-b35f-ef9de951ea12
-title: Métodos LinearGradientBrush
+title: LinearGradientBrush (métodos)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03967a302c75731db2f327fc4a7cc1b63856f074
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2fe55b9506047eccc89d8e01ccedb01f77f7db0b6ba0224e3df00b0219834de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249499"
 ---
-# <a name="lineargradientbrush-methods"></a>Métodos LinearGradientBrush
+# <a name="lineargradientbrush-methods"></a>LinearGradientBrush (métodos)
 
-En este tema se enumeran los métodos de la clase [**LinearGradientBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-lineargradientbrush) . Para obtener una lista de clases completa, vea **LinearGradientBrush (clase**).
+En este tema se enumeran los métodos de [**la clase LinearGradientBrush.**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-lineargradientbrush) Para obtener una lista de clases completa, **vea LinearGradientBrush (Clase).**
 
 -   [**Clonar**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-clone)
 -   [**GetBlend**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getblend)
@@ -23,10 +23,10 @@ En este tema se enumeran los métodos de la clase [**LinearGradientBrush**](/win
 -   [**GetInterpolationColors**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getinterpolationcolors)
 -   [**GetLastStatus**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-getlaststatus)
 -   [**GetLinearColors**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getlinearcolors)
--   [**GetRectangle (Rect \* )**](/windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getrectangle(outrect))
--   [**GetRectangle (RectF \* )**](/previous-versions//ms535352(v=vs.85))
+-   [**GetRectangle(Rect \* )**](/windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getrectangle(outrect))
+-   [**GetRectangle(RectF \* )**](/previous-versions//ms535352(v=vs.85))
 -   [**GetTransform**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-gettransform)
--   [**GetType**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-gettype)
+-   [**Gettype**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-gettype)
 -   [**GetWrapMode**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getwrapmode)
 -   [**MultiplyTransform**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-multiplytransform)
 -   [**ResetTransform**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-resettransform)

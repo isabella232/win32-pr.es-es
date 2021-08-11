@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_SESID. Método ToString (String, IFormatProvider)'
+description: 'Más información sobre: JET_SESID. Método ToString (String, IFormatProvider)'
 title: JET_SESID. Método ToString (String, IFormatProvider)
 TOCTitle: ToString method (String, IFormatProvider)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SESID.ToString(System.String,System.IFormatProvider)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5565e67cc0f91fd1c2edb0d9c0aa421211c57c2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8c750d2b05ecadc3cb900838b1b20b2c8f79e74ba61d50508dd7ae62dc66705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253867"
 ---
 # <a name="jet_sesidtostring-method-string-iformatprovider"></a>JET_SESID. Método ToString (String, IFormatProvider)
 
 Da formato al valor de la instancia actual usando el formato especificado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,34 +62,34 @@ public string ToString(
 #### <a name="parameters"></a>Parámetros
 
   - format  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    [Cadena](/dotnet/api/system.string) que especifica el formato que se va a utilizar. o bien, null para usar el formato predeterminado definido para el tipo de la implementación de [IFormattable](/dotnet/api/system.iformattable) .
+    Cadena [que](/dotnet/api/system.string) especifica el formato que se usará; o bien, null para usar el formato predeterminado definido para el tipo de implementación [de IFormattable.](/dotnet/api/system.iformattable)
 
 <!-- end list -->
 
-  - FormatProvider (  
-    Tipo: [System. IFormatProvider](/dotnet/api/system.iformatprovider)  
+  - formatProvider  
+    Tipo: [System.IFormatProvider](/dotnet/api/system.iformatprovider)  
     
-    [IFormatProvider](/dotnet/api/system.iformatprovider) que se va a utilizar para dar formato al valor; o bien, null para obtener la información de formato numérico de la configuración regional actual del sistema operativo.
+    [IFormatProvider que se](/dotnet/api/system.iformatprovider) usará para dar formato al valor; o null para obtener la información de formato numérico de la configuración regional actual del sistema operativo.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que contiene el valor de la instancia actual en el formato especificado.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) contiene el valor de la instancia actual en el formato especificado.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IFormattable. ToString (String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
+[IFormattable.ToString(String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_SESID](./jet-sesid-structure.md)
+[JET_SESID estructura](./jet-sesid-structure.md)
 
-[Miembros de JET_SESID](./jet-sesid-members.md)
+[JET_SESID miembros](./jet-sesid-members.md)
 
 [Sobrecarga de ToString](./jet-sesid.tostring-method2.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

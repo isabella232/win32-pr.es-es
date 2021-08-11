@@ -1,19 +1,19 @@
 ---
-description: En este tema se enumeran los métodos Inflate de la clase RectF. Para obtener una lista completa de los métodos de la clase RectF, consulte métodos RectF.
+description: En este tema se enumeran los métodos Inflate de la clase RectF. Para obtener una lista completa de los métodos de la clase RectF, vea Métodos rectF.
 ms.assetid: 5f393247-0209-41b4-a97c-89e4d5d7d55d
-title: RectF. Inflate (método) (Gdiplustypes. h)
+title: Métodos RectF.Inflate (Gdiplustypes.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 991cc06b75181976181314e5575f134e2b37ab4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c86842991450c87f3c4ad32a33596be3f754aeb6b1abb154df91207882c35db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104987523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118250164"
 ---
-# <a name="rectfinflate-methods"></a>RectF. Inflate (métodos)
+# <a name="rectfinflate-methods"></a>Métodos RectF.Inflate
 
-En este tema se enumeran los métodos Inflate de la clase [**RectF**](/windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf) . Para obtener una lista completa de los métodos de la clase **RectF** , consulte [métodos RectF](-gdiplus-class-rectf-methods.md).
+En este tema se enumeran los métodos Inflate de [**la clase RectF.**](/windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf) Para obtener una lista completa de los métodos de la **clase RectF,** vea [Métodos rectF](-gdiplus-class-rectf-methods.md).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -21,8 +21,8 @@ En este tema se enumeran los métodos Inflate de la clase [**RectF**](/windows/w
 
 | Método                                                            | Descripción                                                                                                                         |
 |:------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [**Inflate (& de PointF)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-inflate(inconstpointf_))   | El *punto* [**RectF:: Inflate**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-inflate(inconstpointf_)). _Punto_ X. **Y** en los bordes superior e inferior.<br/> |
-| [**Inflate (REAL, REAL)**](/previous-versions//ms534953(v=vs.85)) | [**RectF:: Inflate**](/previous-versions//ms534953(v=vs.85))*DXDY* en los bordes superior e inferior.<br/>                     |
+| [**Inflado(PointF&)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-inflate(inconstpointf_))   | Punto [**de inflado RectF::Inflate**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-inflate(inconstpointf_)). **Punto**_X_. **Y** en los bordes superior e inferior.<br/> |
+| [**Inflado (REAL,REAL)**](/previous-versions//ms534953(v=vs.85)) | La *dxdy* [**RectF::Inflate**](/previous-versions//ms534953(v=vs.85))en los bordes superior e inferior.<br/>                     |
 
 
 
@@ -32,7 +32,7 @@ En este tema se enumeran los métodos Inflate de la clase [**RectF**](/windows/w
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Gdiplustypes. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Gdiplustypes.h</dt> </dl> |
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: Las API de representador de tinta permiten la representación de trazos de tinta en el contexto de dispositivo de Direct2D designado de una aplicación universal de Windows, en lugar del control InkCanvas predeterminado.
+description: Las API de representador de lápiz permiten la representación de trazos de lápiz en el contexto de dispositivo Direct2D designado de una aplicación Windows universal, en lugar del control InkCanvas predeterminado.
 ms.assetid: 8E532066-19EB-4FA6-823D-21823591742F
-title: Representador de tinta
+title: Representador de entrada manuscrita
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: f9e1e654859dd8d777855bc2bffaf953feb8ba8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d7ba9325f6aeccca706fab206aee0835243341376108d9355fac9e54ff9998d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249153"
 ---
-# <a name="ink-renderer"></a>Representador de tinta
+# <a name="ink-renderer"></a>Representador de entrada manuscrita
 
-Las API de representador de tinta permiten la representación de trazos de tinta en el contexto de dispositivo de Direct2D designado de una aplicación universal de Windows, en lugar del control [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) predeterminado.
+Las API del representador de ink permiten la representación de trazos de lápiz en el contexto de dispositivo Direct2D designado de una aplicación Windows universal, en lugar del control [**InkCanvas predeterminado.**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
 
-El representador de tinta está diseñado para que lo usen los desarrolladores de aplicaciones universales de Windows interesados en personalizar el modo en que los trazos de tinta se representan "seco" y de la misma calidad que el control [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) .
+El representador de lápiz está diseñado para su uso por los desarrolladores de aplicaciones universales de Windows interesados en personalizar cómo se representan los trazos de lápiz "dry" y de una calidad idéntica al control [**InkCanvas.**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema                                                             | Descripción                                                                                                        |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Clases de representadores de tinta](ink-renderer-classes.md)<br/>       | Los temas contenidos en esta sección proporcionan las especificaciones de referencia para las clases de representadores de tinta. <br/>    |
-| [Interfaces de representación de tinta](ink-renderer-interfaces.md)<br/> | Los temas contenidos en esta sección proporcionan las especificaciones de referencia de las interfaces de representación de tinta. <br/> |
+| [Clases de representador de ink](ink-renderer-classes.md)<br/>       | Los temas contenidos en esta sección proporcionan las especificaciones de referencia para las clases de representador de Ink. <br/>    |
+| [Interfaces del representador de lápiz](ink-renderer-interfaces.md)<br/> | Los temas contenidos en esta sección proporcionan las especificaciones de referencia para las interfaces del representador de Ink. <br/> |
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Entrada manuscrita](input-ink-portal.md), [interacciones de lápiz y lápiz óptico](/windows/uwp/design/input/pen-and-stylus-interactions), [ejemplo de análisis de tinta](/samples/microsoft/windows-universal-samples/inkanalysis/), ejemplo de tinta [simple](/samples/microsoft/windows-universal-samples/simpleink/), [ejemplo de tinta compleja](/samples/microsoft/windows-universal-samples/complexink/)
+[Entrada de lápiz,](input-ink-portal.md) [interacciones de lápiz y lápiz,](/windows/uwp/design/input/pen-and-stylus-interactions)ejemplo de [análisis](/samples/microsoft/windows-universal-samples/inkanalysis/)de entrada de lápiz, ejemplo de entrada manuscrita [simple,](/samples/microsoft/windows-universal-samples/simpleink/) [ejemplo de entrada de lápiz compleja](/samples/microsoft/windows-universal-samples/complexink/)

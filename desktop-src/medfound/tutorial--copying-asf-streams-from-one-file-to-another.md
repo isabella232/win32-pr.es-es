@@ -1,59 +1,59 @@
 ---
-description: Una manera de crear un archivo ASF es copiar secuencias ASF desde un archivo existente.
+description: Una manera de crear un archivo ASF es copiar secuencias de ASF desde un archivo existente.
 ms.assetid: 158fe3a1-42e6-461d-b56b-5419cd961fca
-title: 'Tutorial: copiar secuencias ASF mediante objetos WMContainer'
+title: 'Tutorial: Copia de asf Secuencias mediante objetos WMContainer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44bac13626a8c80f474eeb029db4eb1351273910
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2149358d216e044f3392b882a997ef4aa455ae799b6ece450bca11f0f22a6781
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237879"
 ---
-# <a name="tutorial-copying-asf-streams-by-using-wmcontainer-objects"></a>Tutorial: copiar secuencias ASF mediante objetos WMContainer
+# <a name="tutorial-copying-asf-streams-by-using-wmcontainer-objects"></a>Tutorial: Copia de asf Secuencias mediante objetos WMContainer
 
-Una manera de crear un archivo ASF es copiar secuencias ASF desde un archivo existente. Para ello, puede recuperar los datos multimedia del archivo de origen y escribir en el archivo de salida. Si el archivo de origen es un archivo ASF, puede copiar ejemplos de secuencias sin descomprimirlos y volver a comprimirlos.
+Una manera de crear un archivo ASF es copiar secuencias de ASF desde un archivo existente. Para ello, puede recuperar los datos multimedia del archivo de origen y escribir en el archivo de salida. Si el archivo de origen es un archivo ASF, puede copiar ejemplos de secuencia sin descomprimirlos y volver acomprimirlos.
 
-En este tutorial se muestra este escenario mediante la extracción de la primera secuencia de audio de un archivo de audio y vídeo ASF (. wmv) y su copia en un nuevo archivo de audio ASF (. WMA). En este tutorial, creará una aplicación de consola que toma los nombres de archivo de entrada y salida como argumentos. La aplicación utiliza el divisor ASF para analizar los ejemplos de flujo de entrada y, a continuación, los envía al multiplexor ASF para escribir los paquetes de datos ASF para la secuencia de audio.
+En este tutorial se muestra este escenario mediante la extracción de la primera secuencia de audio de un archivo de audio y vídeo de ASF (.wmv) y su copia en un nuevo archivo de audio ASF (.wma). En este tutorial, creará una aplicación de consola que toma los nombres de archivo de entrada y salida como argumentos. La aplicación usa el divisor de ASF para analizar los ejemplos de flujo de entrada y, a continuación, los envía al multiplexor de ASF para escribir los paquetes de datos de ASF para la secuencia de audio.
 
 Este tutorial contiene los siguientes pasos:
 
 -   [Requisitos previos](#prerequisites)
 -   [Terminología](#terminology)
--   [1. configurar el proyecto](#1-set-up-the-project)
--   [2. declarar funciones auxiliares](#2-declare-helper-functions)
--   [3. abrir el archivo ASF de entrada](#3-open-the-input-asf-file)
--   [4. inicializar objetos para el archivo de entrada](#4-initialize-objects-for-the-input-file)
--   [5. crear un perfil de audio](#5-create-an-audio-profile)
--   [6. inicializar los objetos para el archivo de salida](#6-initialize-objects-for-the-output-file)
--   [7. generar nuevos paquetes de datos ASF](#7-generate-new-asf-data-packets)
--   [8. escribir los objetos ASF en el nuevo archivo](#8-write-the-asf-objects-in-the-new-file)
--   [9 escribir la función Entry-Point](#9-write-the-entry-point-function)
+-   [1. Configure el Project](#1-set-up-the-project)
+-   [2. Declarar funciones auxiliares](#2-declare-helper-functions)
+-   [3. Abra el archivo ASF de entrada.](#3-open-the-input-asf-file)
+-   [4. Inicializar objetos para el archivo de entrada](#4-initialize-objects-for-the-input-file)
+-   [5. Crear un perfil de audio](#5-create-an-audio-profile)
+-   [6. Inicializar objetos para el archivo de salida](#6-initialize-objects-for-the-output-file)
+-   [7. Generar nuevos paquetes de datos de ASF](#7-generate-new-asf-data-packets)
+-   [8. Escribir los objetos ASF en el nuevo archivo](#8-write-the-asf-objects-in-the-new-file)
+-   [9 Escriba la función Entry-Point trabajo](#9-write-the-entry-point-function)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se da por hecho lo siguiente:
 
--   Está familiarizado con la estructura de un archivo ASF y los componentes proporcionados por Media Foundation para trabajar con objetos ASF. Estos componentes incluyen los objetos ContentInfo, Splitter, multiplexor y Profile. Para obtener más información, consulte [WMCONTAINER ASF Components](wmcontainer-asf-components.md).
--   Está familiarizado con el proceso de analizar el objeto de encabezado ASF y los paquetes de datos ASF de un archivo existente y generar ejemplos de secuencias comprimidas mediante el divisor. Para obtener más información, consulte [Tutorial: leer un archivo ASF](tutorial--reading-an-asf-file.md).
--   Está familiarizado con los búferes multimedia y los flujos de bytes: en concreto, las operaciones de archivo que usan un flujo de bytes y la escritura del contenido de un búfer multimedia en una secuencia de bytes. (Consulte [2. Declare las funciones auxiliares](#2-declare-helper-functions)).
+-   Está familiarizado con la estructura de un archivo ASF y los componentes proporcionados por Media Foundation para trabajar con objetos de ASF. Estos componentes incluyen ContentInfo, splitter, multiplexor y objetos de perfil. Para obtener más información, [vea WmContainer ASF Components](wmcontainer-asf-components.md).
+-   Está familiarizado con el proceso de análisis del objeto de encabezado DE ASF y los paquetes de datos de ASF de un archivo existente y la generación de ejemplos de secuencias comprimidas mediante el divisor. Para obtener más información, [vea Tutorial: Lectura de un archivo ASF.](tutorial--reading-an-asf-file.md)
+-   Está familiarizado con los búferes multimedia y las secuencias de bytes: en concreto, las operaciones de archivo mediante una secuencia de bytes y la escritura del contenido de un búfer multimedia en una secuencia de bytes. (Vea [2. Declarar funciones auxiliares](#2-declare-helper-functions)).
 
 ## <a name="terminology"></a>Terminología
 
-En este tutorial se usan los siguientes términos:
+En este tutorial se usan los términos siguientes:
 
--   Secuencia de bytes de origen: objeto de secuencia de bytes, expone la interfaz [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) , que incluye el contenido del archivo de entrada.
--   Source ContentInfo Object: ContentInfo Object, expone la interfaz [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) , que representa el objeto de encabezado ASF del archivo de entrada.
--   Perfil de audio: objeto de perfil, expone la interfaz [**IMFASFProfile**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) , que solo contiene secuencias de audio del archivo de entrada.
--   Stream Sample: ejemplo multimedia, expone la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , generada por el divisor representa los datos multimedia del flujo seleccionado obtenidos del archivo de entrada en estado comprimido.
--   OUTPUT ContentInfo Object: ContentInfo Object, expone la interfaz [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) , que representa el objeto de encabezado ASF del archivo de salida.
--   Secuencia de bytes de datos: objeto de secuencia de bytes, expone la interfaz [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) , que representa la parte del objeto de datos ASF completa del archivo de salida.
--   Paquete de datos: el ejemplo multimedia, expone la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , generada por el multiplexor representa un paquete de datos ASF que se escribirá en la secuencia de bytes de datos.
--   Secuencia de bytes de salida: objeto de flujo de bytes, expone la interfaz [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) , que incluye el contenido del archivo de salida.
+-   Secuencia de bytes de origen: objeto de secuencia de bytes, expone la interfaz [**BYTEByteStream,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) que contiene el contenido del archivo de entrada.
+-   Objeto ContentInfo de origen: objeto ContentInfo, expone la interfaz [**IMFASFContentInfo,**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) que representa el objeto de encabezado ASF del archivo de entrada.
+-   Perfil de audio: objeto de perfil, expone la interfaz [**DEPERFProfile,**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) que contiene solo secuencias de audio del archivo de entrada.
+-   Ejemplo de secuencia: muestra multimedia, expone la interfaz [**DE PRUEBASEJEMPLO,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) generada por el divisor, que representa los datos multimedia de la secuencia seleccionada obtenidos del archivo de entrada en estado comprimido.
+-   Objeto ContentInfo de salida: objeto ContentInfo, expone la interfaz [**IMFASFContentInfo,**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) que representa el objeto de encabezado ASF del archivo de salida.
+-   Flujo de bytes de datos: objeto de secuencia de bytes, expone la interfaz [**BYTEByteStream,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) que representa toda la parte del objeto de datos ASF del archivo de salida.
+-   Paquete de datos: ejemplo multimedia, expone la interfaz [**DE PRUEBASEJEMPLO,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) generada por el multiplexor representa un paquete de datos asf que se escribirá en el flujo de bytes de datos.
+-   Secuencia de bytes de salida: objeto de secuencia de bytes, expone la interfaz [**BYTEByteStream,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) que contiene el contenido del archivo de salida.
 
-## <a name="1-set-up-the-project"></a>1. configurar el proyecto
+## <a name="1-set-up-the-project"></a>1. Configure el Project
 
 Incluya los siguientes encabezados en el archivo de código fuente:
 
@@ -70,11 +70,11 @@ Incluya los siguientes encabezados en el archivo de código fuente:
 
 Vínculo a los siguientes archivos de biblioteca:
 
--   mfplat. lib
--   MF. lib
--   mfuuid. lib
+-   mfplat.lib
+-   mf.lib
+-   mfuuid.lib
 
-Declare la función [SafeRelease](saferelease.md) :
+Declare la [función SafeRelease:](saferelease.md)
 
 
 ```C++
@@ -90,11 +90,11 @@ template <class T> void SafeRelease(T **ppT)
 
 
 
-## <a name="2-declare-helper-functions"></a>2. declarar funciones auxiliares
+## <a name="2-declare-helper-functions"></a>2. Declarar funciones auxiliares
 
-En este tutorial se usan las siguientes funciones auxiliares para leer y escribir en una secuencia de bytes.
+En este tutorial se usan las siguientes funciones auxiliares para leer y escribir desde una secuencia de bytes.
 
-La `AllocReadFromByteStream` función Lee los datos de una secuencia de bytes y asigna un nuevo búfer multimedia para contener los datos. Para obtener más información, vea [**IMFByteStream:: Read**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-read).
+La función lee datos de una secuencia de bytes y asigna un nuevo búfer `AllocReadFromByteStream` multimedia para contener los datos. Para obtener más información, [**vea IMFByteStream::Read**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-read).
 
 
 ```C++
@@ -157,7 +157,7 @@ HRESULT AllocReadFromByteStream(
 
 
 
-La `WriteBufferToByteStream` función escribe datos de un búfer multimedia en una secuencia de bytes. Para obtener más información, vea [**IMFByteStream:: Write**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-write).
+La `WriteBufferToByteStream` función escribe datos de un búfer multimedia en una secuencia de bytes. Para obtener más información, [**vea IMFByteStream::Write**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-write).
 
 
 ```C++
@@ -203,7 +203,7 @@ HRESULT WriteBufferToByteStream(
 
 
 
-La `AppendToByteStream` función anexa el contenido de un flujo de bytes a otro:
+La `AppendToByteStream` función anexa el contenido de una secuencia de bytes a otra:
 
 
 ```C++
@@ -245,11 +245,11 @@ HRESULT AppendToByteStream(IMFByteStream *pSrc, IMFByteStream *pDest)
 
 
 
-## <a name="3-open-the-input-asf-file"></a>3. abrir el archivo ASF de entrada
+## <a name="3-open-the-input-asf-file"></a>3. Abra el archivo ASF de entrada.
 
-Abra el archivo de entrada mediante una llamada a la función [**MFCreateFile**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatefile) . El método devuelve un puntero al objeto de flujo de bytes que incluye el contenido del archivo. El nombre de archivo lo especifica el usuario a través de los argumentos de línea de comandos de la aplicación.
+Abra el archivo de entrada mediante una llamada [**a la función MFCreateFile.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatefile) El método devuelve un puntero al objeto de secuencia de bytes que contiene el contenido del archivo. El usuario especifica el nombre de archivo a través de argumentos de línea de comandos de la aplicación.
 
-El siguiente código de ejemplo toma un nombre de archivo y devuelve un puntero a un objeto de flujo de bytes que se puede usar para leer el archivo.
+El código de ejemplo siguiente toma un nombre de archivo y devuelve un puntero a un objeto de secuencia de bytes que se puede usar para leer el archivo.
 
 
 ```C++
@@ -260,23 +260,23 @@ El siguiente código de ejemplo toma un nombre de archivo y devuelve un puntero 
 
 
 
-## <a name="4-initialize-objects-for-the-input-file"></a>4. inicializar objetos para el archivo de entrada
+## <a name="4-initialize-objects-for-the-input-file"></a>4. Inicializar objetos para el archivo de entrada
 
-A continuación, creará e inicializará el objeto ContentInfo de origen y el divisor para generar ejemplos de secuencias.
+A continuación, creará e inicializará el objeto ContentInfo de origen y el divisor para generar ejemplos de flujo.
 
-Esta secuencia de bytes de origen creada en el paso 2 se usará para analizar el objeto de encabezado ASF y rellenar el objeto ContentInfo de origen. Este objeto se usará para inicializar el divisor y facilitar el análisis de los paquetes de datos ASF para la secuencia de audio en el archivo de entrada. También recuperará la longitud del objeto de datos ASF en el archivo de entrada y el desplazamiento al primer paquete de datos ASF con respecto al inicio del archivo. El divisor usará estos atributos para generar ejemplos de secuencias de audio.
+Esta secuencia de bytes de origen creada en el paso 2 se usará para analizar el objeto de encabezado ASF y rellenar el objeto ContentInfo de origen. Este objeto se usará para inicializar el divisor para facilitar el análisis de los paquetes de datos de ASF para la secuencia de audio en el archivo de entrada. También recuperará la longitud del objeto de datos de ASF en el archivo de entrada y el desplazamiento al primer paquete de datos de ASF con respecto al inicio del archivo. El divisor usará estos atributos para generar ejemplos de secuencias de audio.
 
-Para crear e inicializar los componentes ASF para el archivo de entrada:
+Para crear e inicializar componentes de ASF para el archivo de entrada:
 
-1.  Llame a [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) para crear el objeto ContentInfo. Esta función devuelve un puntero a la interfaz [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) .
-2.  Llame a [**IMFASFContentInfo::P arseheader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) para analizar el encabezado ASF. Para obtener más información acerca de este paso, vea [leer el objeto de encabezado ASF de un archivo existente](reading-the-asf-header-object-of-an-existing-file.md).
-3.  Llame a [**MFCreateASFSplitter**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfsplitter) para crear el objeto divisor de ASF. Esta función devuelve un puntero a la interfaz [**IMFASFSplitter**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfsplitter) .
-4.  Llame a [**IMFASFSplitter:: Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-initialize), pasando el puntero [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo). Para obtener más información acerca de este paso, consulte [crear el objeto divisor de ASF](creating-the-asf-splitter-object.md).
-5.  Llame a [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) para obtener un descriptor de presentación para el archivo ASF.
-6.  Obtiene el valor del atributo [**de \_ \_ desplazamiento de \_ \_ Inicio de \_ datos ASF de MF PD**](mf-pd-asf-data-start-offset-attribute.md) del descriptor de presentación. Este valor es la ubicación del objeto de datos ASF en el archivo, como un desplazamiento de bytes desde el inicio del archivo.
-7.  Obtiene el valor del atributo [**de \_ \_ longitud de \_ datos \_ ASF de MF PD**](mf-pd-asf-data-length-attribute.md) del descriptor de presentación. Este valor es el tamaño total del objeto de datos ASF, en bytes. Para obtener más información, vea [obtener información de los objetos de encabezado ASF](getting-information-from-asf-header-objects.md).
+1.  Llame [**a MFCreateASFContentInfo para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) crear el objeto ContentInfo. Esta función devuelve un puntero a la [**interfaz IMFASFContentInfo.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo)
+2.  Llame [**a IMFASFContentInfo::P arseHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) para analizar el encabezado ASF. Para obtener más información sobre este paso, vea [Leer el objeto de encabezado ASF de un archivo existente.](reading-the-asf-header-object-of-an-existing-file.md)
+3.  Llame [**a MFCreateASFSplitter para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfsplitter) crear el objeto divisor de ASF. Esta función devuelve un puntero a la [**interfaz IMFASFSplitter.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfsplitter)
+4.  Llame [**a IMFASFSplitter::Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-initialize), pasando el puntero [**DE ALFContentInfo.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) Para obtener más información sobre este paso, vea [Creating the ASF Splitter Object](creating-the-asf-splitter-object.md).
+5.  Llame [**a IMFASFContentInfo::GeneratePresentationDescriptor para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) obtener un descriptor de presentación para el archivo ASF.
+6.  Obtenga el valor del atributo [**MF \_ PD \_ ASF DATA START \_ \_ \_ OFFSET**](mf-pd-asf-data-start-offset-attribute.md) del descriptor de presentación. Este valor es la ubicación del objeto de datos de ASF en el archivo, como un desplazamiento de bytes desde el principio del archivo.
+7.  Obtenga el valor del atributo [**MF \_ PD \_ ASF DATA \_ \_ LENGTH**](mf-pd-asf-data-length-attribute.md) del descriptor de presentación. Este valor es el tamaño total del objeto de datos de ASF, en bytes. Para obtener más información, vea [Obtener información de objetos de encabezado de ASF.](getting-information-from-asf-header-objects.md)
 
-En el ejemplo de código siguiente se muestra una función que consolida todos los pasos. Esta función toma un puntero a la secuencia de bytes de origen y devuelve punteros al objeto ContentInfo de origen y al divisor. Además, recibe la longitud y los desplazamientos al objeto de datos ASF.
+En el código de ejemplo siguiente se muestra una función que consolida todos los pasos. Esta función toma un puntero a la secuencia de bytes de origen y devuelve punteros al objeto ContentInfo de origen y al divisor. Además, recibe la longitud y los desplazamientos del objeto de datos de ASF.
 
 
 ```C++
@@ -409,22 +409,22 @@ HRESULT CreateSourceParsers(
 
 
 
-## <a name="5-create-an-audio-profile"></a>5. crear un perfil de audio
+## <a name="5-create-an-audio-profile"></a>5. Crear un perfil de audio
 
-A continuación, creará un objeto de perfil para el archivo de entrada mediante su obtención del objeto ContentInfo de origen. Después, configurará el perfil para que contenga solo las secuencias de audio del archivo de entrada. Para ello, enumere las secuencias y quite las secuencias que no sean de audio del perfil. El objeto de Perfil de audio se usará más adelante en este tutorial para inicializar el objeto ContentInfo de salida.
+A continuación, creará un objeto de perfil para el archivo de entrada al obtenerlo del objeto ContentInfo de origen. A continuación, configurará el perfil para que contenga solo las secuencias de audio del archivo de entrada. Para ello, enumere las secuencias y quite las secuencias que no son de audio del perfil. El objeto de perfil de audio se usará más adelante en este tutorial para inicializar el objeto ContentInfo de salida.
 
 Para crear un perfil de audio
 
-1.  Obtiene el objeto de perfil para el archivo de entrada del objeto ContentInfo de origen llamando a [**IMFASFContentInfo:: GetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getprofile). El método devuelve un puntero a un objeto de perfil que contiene todas las secuencias del archivo de entrada. Para obtener más información, consulte [crear un perfil ASF](creating-an-asf-profile.md).
-2.  Quite todos los objetos de exclusión mutua del perfil. Este paso es necesario porque los flujos que no son de audio se quitarán del perfil, lo que podría invalidar los objetos de exclusión mutua.
-3.  Quite todas las secuencias que no sean de audio del perfil, como se indica a continuación:
-    -   Llame a [**IMFASFProfile:: GetStreamCount**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreamcount) para obtener el número de secuencias.
-    -   En un bucle, llame a [**IMFASFProfile:: GetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstream) para obtener cada flujo por índice.
-    -   Llame a [**IMFASFStreamConfig:: GetStreamType**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamtype) para obtener el tipo de flujo.
-    -   En el caso de las secuencias que no son de audio, llame a [**IMFASFProfile:: RemoveStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-removestream) para quitar el flujo.
-4.  Almacene el número de secuencia de la primera secuencia de audio. Se seleccionará en el divisor para generar ejemplos de secuencias. Si el número de secuencia es cero, el llamador puede suponer que no había ningún archivo de secuencias de audio.
+1.  Obtenga el objeto de perfil para el archivo de entrada del objeto ContentInfo de origen mediante una llamada a [**IMFASFContentInfo::GetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getprofile). El método devuelve un puntero a un objeto de perfil que contiene todas las secuencias del archivo de entrada. Para obtener más información, [vea Crear un perfil de ASF.](creating-an-asf-profile.md)
+2.  Quite los objetos de exclusión mutua del perfil. Este paso es necesario porque las secuencias que no son de audio se quitarán del perfil, lo que podría invalidar los objetos de exclusión mutua.
+3.  Quite todas las secuencias que no son de audio del perfil, como se muestra a continuación:
+    -   Llame [**a IMFASFProfile::GetStreamCount para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreamcount) obtener el número de secuencias.
+    -   En un bucle, llame [**a IMFASFProfile::GetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstream) para obtener cada secuencia por índice.
+    -   Llame [**a IMFASFStreamConfig::GetStreamType para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamtype) obtener el tipo de secuencia.
+    -   En el caso de las secuencias que no son de audio, llame [**a IMFASFProfile::RemoveStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-removestream) para quitar la secuencia.
+4.  Almacene el número de secuencia de la primera secuencia de audio. Se seleccionará en el divisor para generar ejemplos de flujo. Si el número de secuencia es cero, el autor de la llamada puede suponer que no había ningún archivo de secuencias de audio.
 
-En el siguiente código se indican estos pasos:
+En el código siguiente se indican estos pasos:
 
 
 ```C++
@@ -545,18 +545,18 @@ HRESULT RemoveMutexes(IMFASFProfile *pProfile)
 
 
 
-## <a name="6-initialize-objects-for-the-output-file"></a>6. inicializar los objetos para el archivo de salida
+## <a name="6-initialize-objects-for-the-output-file"></a>6. Inicializar objetos para el archivo de salida
 
 A continuación, creará el objeto ContentInfo de salida y el multiplexor para generar paquetes de datos para el archivo de salida.
 
-El perfil de audio creado en el paso 4 se usará para rellenar el objeto ContentInfo de salida. Este objeto contiene información como atributos de archivo global y propiedades de secuencia. El objeto ContentInfo de salida se usará para inicializar el multiplexor que generará paquetes de datos para el archivo de salida. Una vez generados los paquetes de datos, el objeto ContentInfo debe actualizarse para reflejar los nuevos valores.
+El perfil de audio creado en el paso 4 se usará para rellenar el objeto ContentInfo de salida. Este objeto contiene información como atributos de archivo globales y propiedades de flujo. El objeto ContentInfo de salida se usará para inicializar el multiplexor que generará paquetes de datos para el archivo de salida. Una vez generados los paquetes de datos, el objeto ContentInfo debe actualizarse para reflejar los nuevos valores.
 
-Para crear e inicializar componentes ASF para el archivo de salida
+Para crear e inicializar componentes de ASF para el archivo de salida
 
-1.  Cree un objeto ContentInfo vacío llamando a [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) y rellénelo con información del perfil de audio creado en el paso 3 llamando a [**IMFASFContentInfo:: SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile). Para obtener más información, consulte [inicializar el objeto ContentInfo de un nuevo archivo ASF](initializing-the-contentinfo-object-of-a-new-asf-file.md).
-2.  Cree e inicialice el objeto multiplexor usando el objeto ContentInfo de salida. Para obtener más información, vea [crear el objeto multiplexor](creating-the-multiplexer-object.md).
+1.  Cree un objeto ContentInfo vacío mediante una llamada a [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) y rellene con información del perfil de audio creado en el paso 3 mediante una llamada a [**MFASFContentInfo::SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile). Para obtener más información, [vea Inicializar el objeto ContentInfo de un nuevo archivo ASF.](initializing-the-contentinfo-object-of-a-new-asf-file.md)
+2.  Cree e inicialice el objeto multiplexor mediante el objeto ContentInfo de salida. Para obtener más información, [vea Creating the Multiplexer Object](creating-the-multiplexer-object.md).
 
-En el ejemplo de código siguiente se muestra una función que consolida los pasos. Esta función toma un puntero a un objeto de perfil y devuelve punteros al objeto ContentInfo de salida y al multiplexor.
+En el código de ejemplo siguiente se muestra una función que consolida los pasos. Esta función toma un puntero a un objeto de perfil y devuelve punteros al objeto ContentInfo de salida y al multiplexor.
 
 
 ```C++
@@ -615,20 +615,20 @@ HRESULT CreateOutputGenerators(
 
 
 
-## <a name="7-generate-new-asf-data-packets"></a>7. generar nuevos paquetes de datos ASF
+## <a name="7-generate-new-asf-data-packets"></a>7. Generar nuevos paquetes de datos de ASF
 
-A continuación, generará ejemplos de secuencias de audio a partir de la secuencia de bytes de origen mediante el divisor y los enviará al multiplexor para crear paquetes de datos ASF. Estos paquetes de datos constituirán el último objeto de datos ASF del nuevo archivo.
+A continuación, generará muestras de secuencias de audio a partir de la secuencia de bytes de origen mediante el divisor y las enviará al multiplexor para crear paquetes de datos de ASF. Estos paquetes de datos constituyen el objeto de datos de ASF final para el nuevo archivo.
 
 Para generar ejemplos de secuencias de audio
 
-1.  Seleccione la primera secuencia de audio en el divisor llamando a [**IMFASFSplitter:: SelectStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-selectstreams).
-2.  Leer bloques de tamaño fijo de los datos multimedia de la secuencia de bytes de origen en un búfer multimedia.
-3.  Recopile los ejemplos de secuencias como muestras de medios del divisor llamando a [**IMFASFSplitter:: GetNextSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-getnextsample) en un bucle siempre que reciba la \_ marca ASF STATUSFLAGS \_ incompleta en el parámetro *pdwStatusFlags* . Para obtener más información, vea generar ejemplos de paquetes de datos ASF en generación de ejemplos de [secuencias a partir de un objeto de datos ASF existente](generating-stream-samples-from-an-existing-asf-data-object.md).
-4.  Para cada ejemplo de medio, llame a [**IMFASFMultiplexer::P rocesssample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) para enviar el ejemplo multimedia al multiplexor. El multiplexor genera los paquetes de datos para el objeto de datos ASF.
-5.  Escriba el paquete de datos generado por el multiplexor en la secuencia de bytes de datos.
-6.  Una vez generados todos los paquetes de datos, llame a [**IMFASFMultiplexer:: end**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-end) para actualizar el objeto ContentInfo de salida con la información recopilada durante la generación de paquetes de datos ASF.
+1.  Seleccione la primera secuencia de audio en el divisor mediante una llamada [**a IMFASFSplitter::SelectStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-selectstreams).
+2.  Leer bloques de tamaño fijo de datos multimedia de la secuencia de bytes de origen en un búfer multimedia.
+3.  Recopile los ejemplos de secuencia como ejemplos multimedia del divisor mediante una llamada a [**IMFASFSplitter::GetNextSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-getnextsample) en un bucle siempre que reciba la marca ASF STATUSFLAGS INCOMPLETE en el \_ \_ parámetro *pdwStatusFlags.* Para obtener más información, vea Generar ejemplos para paquetes de datos ASF" en Generar ejemplos de flujo a partir de [un objeto de datos ASF existente.](generating-stream-samples-from-an-existing-asf-data-object.md)
+4.  Para cada ejemplo de medio, llame [**a IMFASFMultiplexer::P rocessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) para enviar el ejemplo multimedia al multiplexor. El multiplexor genera los paquetes de datos para el objeto de datos ASF.
+5.  Escriba el paquete de datos generado por el multiplexor en el flujo de bytes de datos.
+6.  Una vez que se hayan generado todos los paquetes de datos, llame a [**MULTICASTASFMultiplexer::End**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-end) para actualizar el objeto ContentInfo de salida con la información recopilada durante la generación de paquetes de datos de ASF.
 
-El siguiente código de ejemplo genera ejemplos de secuencias del divisor de ASF y los envía al multiplexor. El multiplexor genera paquetes de datos ASF y los escribe en una secuencia.
+El código de ejemplo siguiente genera ejemplos de secuencias desde el divisor ASF y los envía al multiplexor. El multiplexor genera paquetes de datos de ASF y los escribe en una secuencia.
 
 
 ```C++
@@ -736,7 +736,7 @@ HRESULT GenerateASFDataObject(
 
 
 
-Para obtener paquetes del divisor de ASF, el código anterior llama a la `GetPacketsFromSplitter` función, que se muestra aquí:
+Para obtener paquetes del divisor ASF, el código anterior llama a la `GetPacketsFromSplitter` función , que se muestra aquí:
 
 
 ```C++
@@ -797,7 +797,7 @@ HRESULT GetPacketsFromSplitter(
 
 
 
-La `GenerateDataPackets` función obtiene los paquetes de datos del multiplexor. Para obtener más información, vea [obtener paquetes de datos ASF](generating-new-asf-data-packets.md).
+La `GenerateDataPackets` función obtiene paquetes de datos del multiplexor. Para obtener más información, vea [Obtener paquetes de datos de ASF.](generating-new-asf-data-packets.md)
 
 
 ```C++
@@ -860,11 +860,11 @@ HRESULT GenerateASFDataPackets(
 
 
 
-## <a name="8-write-the-asf-objects-in-the-new-file"></a>8. escribir los objetos ASF en el nuevo archivo
+## <a name="8-write-the-asf-objects-in-the-new-file"></a>8. Escribir los objetos ASF en el nuevo archivo
 
-A continuación, escribirá el contenido del objeto ContentInfo de salida en un búfer multimedia mediante una llamada a [**IMFASFContentInfo:: GenerateHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generateheader). Este método convierte los datos almacenados en el objeto ContentInfo en datos binarios en formato de objeto de encabezado ASF. Para obtener más información, vea [generar un nuevo objeto de encabezado ASF](generating-a-new-asf-header-object.md).
+A continuación, escribirá el contenido del objeto ContentInfo de salida en un búfer multimedia mediante una llamada a [**IMFASFContentInfo::GenerateHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generateheader). Este método convierte los datos almacenados en el objeto ContentInfo en datos binarios en formato de objeto de encabezado ASF. Para obtener más información, vea [Generar un nuevo objeto de encabezado ASF](generating-a-new-asf-header-object.md).
 
-Una vez generado el nuevo objeto de encabezado ASF, escriba el archivo de salida escribiendo primero el objeto de encabezado en la secuencia de bytes de salida creada en el paso 2 mediante una llamada a la función auxiliar WriteBufferToByteStream. Siga el objeto de encabezado con el objeto de datos contenido en la secuencia de bytes de datos. En el código de ejemplo se muestra una función que transfiere el contenido de la secuencia de bytes de datos a la secuencia de bytes de salida.
+Una vez generado el nuevo objeto de encabezado ASF, escriba primero el archivo de salida escribiendo el objeto de encabezado en la secuencia de bytes de salida creada en el paso 2 mediante una llamada a la función auxiliar WriteBufferToByteStream. Siga el objeto de encabezado con el objeto de datos incluido en el flujo de bytes de datos. El código de ejemplo muestra una función que transfiere el contenido de la secuencia de bytes de datos a la secuencia de bytes de salida.
 
 
 ```C++
@@ -941,11 +941,11 @@ HRESULT WriteASFFile(
 
 
 
-## <a name="9-write-the-entry-point-function"></a>9 escribir la función Entry-Point
+## <a name="9-write-the-entry-point-function"></a>9 Escriba la función Entry-Point trabajo
 
-Ahora puede poner los pasos anteriores juntos en una aplicación completa. Antes de usar cualquiera de los objetos Media Foundation, inicialice la plataforma de Media Foundation mediante una llamada a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup). Cuando haya terminado, llame a [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown). Para obtener más información, vea [inicializar Media Foundation](initializing-media-foundation.md).
+Ahora puede colocar los pasos anteriores en una aplicación completa. Antes de usar cualquiera de los Media Foundation, inicialice la plataforma Media Foundation mediante una llamada [**a MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup). Cuando haya terminado, llame a [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown). Para obtener más información, vea [Inicializar Media Foundation](initializing-media-foundation.md).
 
-En el código siguiente se muestra la aplicación de consola completa. El argumento de línea de comandos especifica el nombre del archivo que se va a convertir y el nombre del nuevo archivo de audio.
+El código siguiente muestra la aplicación de consola completa. El argumento de línea de comandos especifica el nombre del archivo que se convertirá y el nombre del nuevo archivo de audio.
 
 
 ```C++
@@ -1080,7 +1080,7 @@ int wmain(int argc, WCHAR* argv[])
 
 <dl> <dt>
 
-[Componentes de WMContainer ASF](wmcontainer-asf-components.md)
+[Componentes de ASF de WMContainer](wmcontainer-asf-components.md)
 </dt> <dt>
 
 [Compatibilidad con ASF en Media Foundation](asf-support-in-media-foundation.md)

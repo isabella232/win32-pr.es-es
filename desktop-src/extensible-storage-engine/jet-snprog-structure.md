@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_SNPROG'
-title: Estructura de JET_SNPROG
+description: 'Más información sobre: JET_SNPROG estructura'
+title: JET_SNPROG estructura
 TOCTitle: JET_SNPROG Structure
 ms:assetid: 8b4224e4-ad4d-440f-8915-8eb43b0885f0
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269328(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 961e9cf264652924cfb1d870fa1a04aabc7fb61a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 251f7948ec4d15e455720043b847abbd855e24146dd05a432b2bf3ea6d28dfef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252772"
 ---
-# <a name="jet_snprog-structure"></a>Estructura de JET_SNPROG
+# <a name="jet_snprog-structure"></a>JET_SNPROG estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_snprog-structure"></a>Estructura de JET_SNPROG
+## <a name="jet_snprog-structure"></a>JET_SNPROG estructura
 
-La estructura **JET_SNPROG** contiene información sobre el progreso de una operación de ejecución prolongada. Cuando se llama a la función de devolución de llamada para notificar el estado de la operación y la operación aún está en curso, el último parámetro de la función de devolución de llamada es un puntero a una estructura de **JET_SNPROG** .
+La **JET_SNPROG** estructura contiene información sobre el progreso de una operación de ejecución larga. Cuando se llama a la función de devolución de llamada para notificar el estado de la operación y la operación sigue en curso, el último parámetro de la función de devolución de llamada es un puntero a una **JET_SNPROG** estructura.
 
 ```cpp
     typedef struct {
@@ -43,15 +43,15 @@ La estructura **JET_SNPROG** contiene información sobre el progreso de una oper
 
 **cbStruct**
 
-Tamaño de la estructura de **JET_SNPROG** , en bytes. Este valor confirma la presencia de los campos siguientes.
+Tamaño de la estructura **JET_SNPROG,** en bytes. Este valor confirma la presencia de los campos siguientes.
 
 **cunitDone**
 
-El número de unidades de trabajo que ya se han completado durante la función de larga ejecución.
+Número de unidades de trabajo que ya se han completado durante la función de larga duración.
 
 **cunitTotal**
 
-El número de unidades de trabajo que se deben completar. Este valor siempre debe ser mayor o igual que **cunitDone**.
+Número de unidades de trabajo que deben completarse. Este valor siempre debe ser mayor o igual que **cunitDone.**
 
 ### <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ El número de unidades de trabajo que se deben completar. Este valor siempre deb
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

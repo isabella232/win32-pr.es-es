@@ -1,9 +1,9 @@
 ---
-title: Recurso de ACELERAdores
-description: Define uno o varios aceleradores para una aplicación. Un acelerador es una pulsación de tecla definida por la aplicación para proporcionar al usuario una forma rápida de realizar una tarea.
+title: Recurso ACCELERATORS
+description: Define uno o varios aceleradores para una aplicación. Un acelerador es una pulsación de tecla definida por la aplicación para proporcionar al usuario una manera rápida de realizar una tarea.
 ms.assetid: 5953ee2d-b7a7-45d2-8445-4cba1207e272
 keywords:
-- Menús de recursos de ACELERAdores y otros recursos
+- Menús de recursos de ACCELERATORS y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2aeb09ca52438f7b2f4903e5403eeb722e5d7d7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0e7ba2d19bbab6346f7a62afe56269f762cd94f7ef1730654fb6ac1abf317e4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104533136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235744"
 ---
-# <a name="accelerators-resource"></a>Recurso de ACELERAdores
+# <a name="accelerators-resource"></a>Recurso ACCELERATORS
 
-Define uno o varios aceleradores para una aplicación. Un acelerador es una pulsación de tecla definida por la aplicación para proporcionar al usuario una forma rápida de realizar una tarea.
+Define uno o varios aceleradores para una aplicación. Un acelerador es una pulsación de tecla definida por la aplicación para proporcionar al usuario una manera rápida de realizar una tarea.
 
 ``` syntax
 acctablename ACCELERATORS [optional-statements] {event, idvalue, [type] [options]... }
@@ -34,30 +34,30 @@ acctablename ACCELERATORS [optional-statements] {event, idvalue, [type] [options
 <span id="acctablename"></span><span id="ACCTABLENAME"></span>*acctablename*
 </dt> <dd>
 
-Nombre único o un valor entero sin signo de 16 bits que identifica el recurso.
+Nombre único o un valor entero de 16 bits sin signo que identifica el recurso.
 
 </dd> <dt>
 
-<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*instrucciones opcionales*
+<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*optional-statements*
 </dt> <dd>
 
-Cero o más de las instrucciones siguientes.
+Cero o más de las siguientes instrucciones.
 
 
 
 | .                                                        | Descripción                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Características**](characteristics-statement.md) *DWORD*     | Información definida por el usuario sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**características**](characteristics-statement.md). |
-| [](language-statement.md) *Idioma* del idioma, *subidioma* | Especifica el idioma del recurso. Para obtener más información, vea [**Language**](language-statement.md).                                                                              |
-| [**Versión**](version-statement.md) *DWORD*                     | Número de versión definido por el usuario para el recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**versión**](version-statement.md).              |
+| [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Información definida por el usuario sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**CHARACTERISTICS**](characteristics-statement.md). |
+| [**Language**](language-statement.md) *language*, *sublanguage* | Especifica el idioma del recurso. Para obtener más información, vea [**LANGUAGE**](language-statement.md).                                                                              |
+| [**VERSION**](version-statement.md) *dword*                     | Número de versión definido por el usuario para el recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**VERSION**](version-statement.md).              |
 
 
 
- 
+ 
 
 </dd> <dt>
 
-<span id="event"></span><span id="EVENT"></span>*ceso*
+<span id="event"></span><span id="EVENT"></span>*Evento*
 </dt> <dd>
 
 Pulsación de tecla que se va a usar como acelerador. Puede ser cualquiera de los siguientes tipos de caracteres.
@@ -66,27 +66,27 @@ Pulsación de tecla que se va a usar como acelerador. Puede ser cualquiera de lo
 
 | Tipo                    | Descripción                                                                                                                                                                                                                                  |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "*Char*"                | Un solo carácter entre comillas dobles ("). El carácter puede ir precedido de un símbolo de intercalación (^), lo que significa que el carácter es un carácter de control.                                                                                  |
-| *Carácter*             | Valor entero que representa un carácter. El parámetro de *tipo* debe ser **ASCII**.                                                                                                                                                           |
-| *carácter de clave virtual* | Un valor entero que representa una clave virtual. La clave virtual de las claves alfanuméricas se puede especificar colocando la letra mayúscula o el número entre comillas dobles (por ejemplo, "9" o "C"). El parámetro de *tipo* debe ser **VIRTKEY**. |
+| "*char*"                | Un solo carácter entre comillas dobles ("). El carácter puede ir precedido de un carácter de intercalación (^), lo que significa que el carácter es un carácter de control.                                                                                  |
+| *Carácter*             | Valor entero que representa un carácter. El *parámetro de* tipo debe ser **ASCII.**                                                                                                                                                           |
+| *carácter de clave virtual* | Valor entero que representa una clave virtual. La clave virtual para las claves alfanuméricas se puede especificar colocando la letra o el número en mayúsculas entre comillas dobles (por ejemplo, "9" o "C"). El *parámetro* de tipo debe ser **VIRTKEY.** |
 
 
 
- 
+ 
 
 </dd> <dt>
 
 <span id="idvalue"></span><span id="IDVALUE"></span>*idvalue*
 </dt> <dd>
 
-valor entero sin signo de 16 bits que identifica el acelerador.
+un valor entero de 16 bits sin signo que identifica el acelerador.
 
 </dd> <dt>
 
-<span id="type"></span><span id="TYPE"></span>*automáticamente*
+<span id="type"></span><span id="TYPE"></span>*Tipo*
 </dt> <dd>
 
-Solo se requiere cuando el parámetro de *evento* es un *carácter o un* *carácter de tecla virtual*. El parámetro de *tipo* especifica **ASCII** o **VIRTKEY**; el valor entero del *evento* se interpreta en consecuencia. Cuando se especifica **VIRTKEY** y el *evento* contiene una cadena, el *evento* debe estar en mayúsculas.
+Solo es necesario cuando *el parámetro* de evento es *un carácter* o un carácter de *clave virtual*. El *parámetro* type especifica **ASCII o** **VIRTKEY**; El valor entero del *evento* se interpreta en consecuencia. Cuando **se especifica VIRTKEY** y *el evento* contiene una cadena, el *evento* debe estar en mayúsculas.
 
 </dd> <dt>
 
@@ -99,26 +99,26 @@ opciones que definen el acelerador. Este parámetro puede ser uno o varios de lo
 
 | Opción                             | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Noinvertir**                       | Especifica que no se resalta ningún elemento de menú de nivel superior cuando se utiliza el acelerador. Esto resulta útil al definir aceleradores para acciones como el desplazamiento que no se corresponden con un elemento de menú. Si se omite **Revert** , se resaltará un elemento de menú de nivel superior (si es posible) cuando se use el acelerador. Este atributo está obsoleto y solo se conserva por compatibilidad con versiones anteriores de los archivos de recursos diseñados para Windows de 16 bits. |
-| **ALTERNATIVA**                            | Hace que el acelerador se active solo si la tecla ALT está presionada. Solo se aplica a las claves virtuales.                                                                                                                                                                                                                                                                                                                                            |
-| **MOVER**                          | Hace que el acelerador se active solo si la tecla Mayús está presionada. Solo se aplica a las claves virtuales                                                                                                                                                                                                                                                                                                                                           |
-| [**CONTROL**](control-control.md) | Define el carácter como un carácter de control (el acelerador solo se activa si la tecla CONTROL está inactiva). Esto tiene el mismo efecto que el uso de un símbolo de intercalación (^) antes del carácter de acelerador en el parámetro de *evento* . Solo se aplica a las claves virtuales                                                                                                                                                                                           |
+| **NOINVERT**                       | Especifica que no se resalta ningún elemento de menú de nivel superior cuando se usa el acelerador. Esto resulta útil al definir aceleradores para acciones como el desplazamiento que no corresponden a un elemento de menú. Si **se omite NOINVERT,** se resaltará un elemento de menú de nivel superior (si es posible) cuando se usa el acelerador. Este atributo está obsoleto y se conserva solo por compatibilidad con versiones anteriores con archivos de recursos diseñados para archivos de 16 bits Windows. |
+| **ALT**                            | Hace que el acelerador se active solo si la tecla ALT está presionada. Solo se aplica a las claves virtuales.                                                                                                                                                                                                                                                                                                                                            |
+| **Cambio**                          | Hace que el acelerador se active solo si la tecla MAYÚS está fuera de servicio. Solo se aplica a las claves virtuales                                                                                                                                                                                                                                                                                                                                           |
+| [**Control**](control-control.md) | Define el carácter como un carácter de control (el acelerador solo se activa si la tecla CONTROL está fuera de servicio). Esto tiene el mismo efecto que usar un carácter de intercalación (^) antes del carácter de acelerador en el *parámetro de* evento. Solo se aplica a las claves virtuales                                                                                                                                                                                           |
 
 
 
- 
+ 
 
 </dd> </dl>
 
-Algunos atributos también se admiten por razones de compatibilidad con versiones anteriores. Para obtener más información, vea [atributos comunes de recursos](common-resource-attributes.md).
+Algunos atributos también se admiten por compatibilidad con versiones anteriores. Para obtener más información, vea [Atributos de recursos comunes.](common-resource-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) se usa para convertir los mensajes de acelerador de la cola de la aplicación en [**mensajes de WM o de \_**](./wm-command.md) [**WM \_ SYSCOMMAND**](./wm-syscommand.md) .
+La [**función TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) se usa para traducir los mensajes del acelerador de la cola de la aplicación en mensajes [**WM \_ COMMAND**](./wm-command.md) [**o WM \_ SYSCOMMAND.**](./wm-syscommand.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo se muestra el uso de las teclas de aceleración.
+En el ejemplo siguiente se muestra el uso de teclas de aceleración.
 
 ``` syntax
 1 ACCELERATORS
@@ -144,22 +144,22 @@ En el siguiente ejemplo se muestra el uso de las teclas de aceleración.
 
 <dl> <dt>
 
-[Usar aceleradores de teclado](./using-keyboard-accelerators.md)
+[Uso de aceleradores de teclado](./using-keyboard-accelerators.md)
 </dt> <dt>
 
 [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora)
 </dt> <dt>
 
-[**SUS**](characteristics-statement.md)
+[**Características**](characteristics-statement.md)
 </dt> <dt>
 
-[**DIÁLOGO**](dialog-resource.md)
+[**Diálogo**](dialog-resource.md)
 </dt> <dt>
 
-[**MÓDULO**](language-statement.md)
+[**Lengua**](language-statement.md)
 </dt> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menú**](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
@@ -171,6 +171,6 @@ En el siguiente ejemplo se muestra el uso de las teclas de aceleración.
 [**Versión**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

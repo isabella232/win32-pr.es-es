@@ -1,9 +1,9 @@
 ---
-title: Función MpFreeMemory (MpClient. h)
-description: Libera memoria para el administrador de protección contra malware de.
+title: Función MpFreeMemory (MpClient.h)
+description: Libera memoria para el administrador de protección contra malware.
 ms.assetid: D0B43AE5-756F-4E86-B8A5-8268A41901BC
 keywords:
-- Función MpFreeMemory características de entorno heredado de Windows
+- Función MpFreeMemory Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a15a2845b034a3aa739b1ba2f33a023b742b4b22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 806795cee45fcfe95473c0961106da074c1157b65ac5c19f5d4813c84865616a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247430"
 ---
-# <a name="mpfreememory-function"></a>MpFreeMemory función)
+# <a name="mpfreememory-function"></a>Función MpFreeMemory
 
-Libera memoria para el administrador de protección contra malware de. El autor de la llamada debe liberar todos los búferes asignados y devueltos por las funciones de protección contra malware mediante esta función.
+Libera memoria para el administrador de protección contra malware. El autor de la llamada debe liberar todos los búferes asignados y devueltos por las funciones de protección contra malware mediante esta función.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ void WINAPI MpFreeMemory(
 
 <dl> <dt>
 
-*pMemory* \[ de\]
+*pMemory* \[ En\]
 </dt> <dd>
 
 Tipo: **PVOID**
@@ -53,17 +53,17 @@ Puntero a la memoria asignada por una función de protección contra malware.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para facilitar la administración de la memoria para los clientes, el administrador de protección contra malware también define las macros para liberar memoria asociada a las distintas estructuras devueltas por las funciones de protección contra malware. Las siguientes macros se definen en el archivo de encabezado mpmemfree. h:
+Para facilitar la administración de memoria para los clientes, el administrador de protección contra malware también define macros para liberar memoria asociada a varias estructuras devueltas por las funciones de protección contra malware. Las macros siguientes se definen en el archivo de encabezado mpmemfree.h:
 
 
 
 | Nombre                            | Descripción                                                                      |
 |---------------------------------|----------------------------------------------------------------------------------|
-| MPRESOURCE \_ info \_ Free          | Libera una información de [**MPRESOURCE \_**](mpresource-info.md)asignada.                  |
-| MPTHREAT \_ info \_ Free            | Libera una información de [**MPTHREAT \_**](mpthreat-info.md)asignada.                      |
-| MPTHREAT \_ \_ información localizada \_ gratis | Libera [**\_ \_ información localizada MPTHREAT**](mpthreat-localized-info.md)asignada. |
+| MPRESOURCE \_ INFO \_ FREE          | Libera una información de [**MPRESOURCE \_ asignada.**](mpresource-info.md)                  |
+| MPTHREAT \_ INFO \_ FREE            | Libera una información [**de MPTHREAT \_ asignada.**](mpthreat-info.md)                      |
+| MPTHREAT \_ LOCALIZED \_ INFO \_ FREE | Libera una información localizada [**de MPTHREAT \_ \_ asignada.**](mpthreat-localized-info.md) |
 
 
 
@@ -73,29 +73,29 @@ Para facilitar la administración de la memoria para los clientes, el administra
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**MpErrorMessageFormat**](mperrormessageformat.md)
 </dt> <dt>
 
-[**información de MPRESOURCE \_**](mpresource-info.md)
+[**MPRESOURCE \_ INFO**](mpresource-info.md)
 </dt> <dt>
 
-[**información de MPTHREAT \_**](mpthreat-info.md)
+[**INFORMACIÓN DE \_ MPTHREAT**](mpthreat-info.md)
 </dt> <dt>
 
-[**\_información localizada de MPTHREAT \_**](mpthreat-localized-info.md)
+[**INFORMACIÓN LOCALIZADA DE MPTHREAT \_ \_**](mpthreat-localized-info.md)
 </dt> </dl>
 
  

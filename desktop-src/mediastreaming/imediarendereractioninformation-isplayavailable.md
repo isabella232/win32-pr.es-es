@@ -1,11 +1,11 @@
 ---
-title: IMediaRendererActionInformation IsPlayAvailable, método
-description: Recupera un valor que indica si el DMR acepta actualmente la aceptación de los métodos PlayAsync y PlayAtSpeedAsync.
+title: Método IMediaRendererActionInformation IsPlayAvailable
+description: Recupera un valor que indica si la DMR acepta actualmente los métodos PlayAsync y PlayAtSpeedAsync.
 ms.assetid: 969C55FA-872D-4063-B85C-573C8DA5593C
 keywords:
-- Método IsPlayAvailable API de streaming de multimedia
-- Método IsPlayAvailable API de streaming de multimedia, interfaz IMediaRendererActionInformation
-- Interfaz IMediaRendererActionInformation API de streaming de multimedia, método IsPlayAvailable
+- Método IsPlayAvailable de Media Streaming API
+- Método IsPlayAvailable de Media Streaming API, interfaz IMediaRendererActionInformation
+- IMediaRendererActionInformation interface Media Streaming API , IsPlayAvailable method
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 87fa3a2005772a4d948bafe32d2a0e10cc5a6914
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 912e5478ef1d9bd7114d198a9671d38ba7b721c9dbd82d2a8080b5a7876e76cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235850"
 ---
-# <a name="imediarendereractioninformationisplayavailable-method"></a>IMediaRendererActionInformation:: IsPlayAvailable (método)
+# <a name="imediarendereractioninformationisplayavailable-method"></a>IMediaRendererActionInformation::IsPlayAvailable (Método)
 
-Recupera un valor que indica si el DMR acepta actualmente la aceptación de los métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) y [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) .
+Recupera un valor que indica si la DMR acepta actualmente los métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) y [**PlayAtSpeedAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,22 +41,22 @@ HRESULT IsPlayAvailable(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
-Valor booleano que es **true** si el DMR acepta actualmente los métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) y [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) y **false** en caso contrario.
+Valor booleano que es **True si** la DMR acepta actualmente los métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) y [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) y **False** si no lo está.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

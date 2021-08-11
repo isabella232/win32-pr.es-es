@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre las API de controlador radial para accesorios de la rueda de Windows, como el marcado de Surface.
+description: Obtenga información sobre las API de controlador radial para Windows wheel, como el Surface Dial.
 ms.assetid: a548b450-180b-4fbe-be75-bb490cf76563
-title: Entrada de controlador radial
+title: Entrada del controlador radial
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d5e94c99343f0591cb50a63cd9f2f6e4ec4dbba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9575a01083b77975feee0151b6c6ff3a9b95aa607594bff707c3873f19c43e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248954"
 ---
-# <a name="radial-controller-input"></a>Entrada de controlador radial
+# <a name="radial-controller-input"></a>Entrada del controlador radial
 
-Obtenga información sobre las API de controlador radial para accesorios de la rueda de Windows, como el marcado de Surface.
+Obtenga información sobre las API de controlador radial para Windows wheel, como el Surface Dial.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,4 +23,4 @@ Obtenga información sobre las API de controlador radial para accesorios de la r
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Windows. UI. Input](/uwp/api/Windows.UI.Input), [interacciones de marcado de Surface](/windows/uwp/design/input/windows-wheel-interactions), [ejemplos de plataforma universal de Windows (C \# y C++)](https://github.com/Microsoft/Windows-universal-samples/tree/b78d95134ce2d57c848e0a8dc339fc362748fb9c/Samples/RadialController), [ejemplo de escritorio clásico de Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/RadialController)
+[Windows. Ui. Input](/uwp/api/Windows.UI.Input), [Surface Dial interacciones,](/windows/uwp/design/input/windows-wheel-interactions)ejemplos de plataforma Windows universal [(C \# y C++),](https://github.com/Microsoft/Windows-universal-samples/tree/b78d95134ce2d57c848e0a8dc339fc362748fb9c/Samples/RadialController)Windows [de escritorio clásico](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/RadialController)
