@@ -1,17 +1,17 @@
 ---
 description: Denominador de PKEY \_ Photo \_ FocalPlaneYResolution.
 ms.assetid: cc871d84-fad0-4b18-b9ad-6f3b24b0b751
-title: System. Photo. FocalPlaneYResolutionDenominator
+title: System.Photo.FocalPlaneYResolutionDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 916c6e12a7e16c13410c777b740148c4bf503537
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72b876fe0a4618b07923642206cb09699fc99f14a61d71961df343c40c515d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229089"
 ---
-# <a name="systemphotofocalplaneyresolutiondenominator"></a>System. Photo. FocalPlaneYResolutionDenominator
+# <a name="systemphotofocalplaneyresolutiondenominator"></a>System.Photo.FocalPlaneYResolutionDenominator
 
 Denominador de PKEY \_ Photo \_ FocalPlaneYResolution.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

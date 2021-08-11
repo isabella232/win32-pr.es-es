@@ -1,19 +1,19 @@
 ---
-description: El espacio libre del equipo y el espacio total indicado como &\# 0034;% s libre de% s&\# 0034;.
+description: El espacio libre del equipo y el espacio total indicados como &\# 0034;%s libres de %s&\# 0034;.
 ms.assetid: af6445d4-b91d-4999-a809-b2a3b63c67ba
-title: System. Computer. DecoratedFreeSpace
+title: System.Computer.DecoratedFreeSpace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 057c4e475f48caf389c3fd03e05614dbb8651e3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d25f629526f8631ca2c1cf5c1184f2ef78ef0bdb2100b1ced04c34c6297556ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232514"
 ---
-# <a name="systemcomputerdecoratedfreespace"></a>System. Computer. DecoratedFreeSpace
+# <a name="systemcomputerdecoratedfreespace"></a>System.Computer.DecoratedFreeSpace
 
-Espacio libre y espacio total del equipo indicados como "% s libres de% s".
+El espacio libre del equipo y el espacio total indicados como "%s libres de %s".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

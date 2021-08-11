@@ -1,19 +1,19 @@
 ---
-description: Indica el número de canales del archivo de audio. Los valores posibles son 1 para mono y 2 para estéreo.
+description: Indica el número de canales para el archivo de audio. Los valores posibles son 1 para mono y 2 para estéreo.
 ms.assetid: 8a028167-dc0f-4ed9-a710-568caf1b9a47
-title: System. audio. ChannelCount
+title: System.Audio.ChannelCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b9a370e517f8c3552e27bf034c4873b5e1cb593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2e6de40e3c214b060955f011769dc4ce80660b936e7a576c6ed0f1516190568
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232955"
 ---
-# <a name="systemaudiochannelcount"></a>System. audio. ChannelCount
+# <a name="systemaudiochannelcount"></a>System.Audio.ChannelCount
 
-Indica el número de canales del archivo de audio. Los valores posibles son 1 para mono y 2 para estéreo.
+Indica el número de canales para el archivo de audio. Los valores posibles son 1 para mono y 2 para estéreo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -69,9 +69,9 @@ propertyDescription
             defineName = AUDIO_CHANNELCOUNT_STEREO
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -86,7 +86,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -98,7 +98,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -116,7 +116,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

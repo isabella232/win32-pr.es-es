@@ -4,12 +4,12 @@ ms.assetid: cd71978d-09d9-43f1-ab1b-4b213e3a193b
 title: Medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72d436db24aba399b49cc6c905091900d8c08c23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cdfac0eafc04def953e669facff17bd1df1594623a7d32c4e4c4318fabf2a7dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118233180"
 ---
 # <a name="media"></a>Medios
 
@@ -32,7 +32,7 @@ ms.locfileid: "108105033"
 | [System.Media.DateEncoded](./props-system-media-dateencoded.md)<br/>                             | Representa la fecha y hora en que se ha codificado el archivo. DateTime está en formato UTC (en el documento, no en el sistema de archivos).<br/>    |
 | [System.Media.DateReleased](./props-system-media-datereleased.md)<br/>                           |                                                                                                                        |
 | [System.Media.DlnaProfileID](props-system-media-dlnaprofileid.md)<br/>                                | El identificador de perfil de DLNA para el contenido multimedia, definido por los estándares DLNA.<br/>                                           |
-| [System.Media.Duration](./props-system-media-duration.md)<br/>                                   | Representa el tiempo de reproducción real de un archivo multimedia y se mide en unidades de 100ns, no en milisegundos.<br/>           |
+| [System.Media.Duration](./props-system-media-duration.md)<br/>                                   | Representa el tiempo de reproducción real de un archivo multimedia y se mide en unidades de 100ns, no milisegundos.<br/>           |
 | [System.Media.DVDID](./props-system-media-dvdid.md)<br/>                                         |                                                                                                                        |
 | [System.Media.EncodedBy](./props-system-media-encodedby.md)<br/>                                 |                                                                                                                        |
 | [System.Media.EncodingSettings](./props-system-media-encodingsettings.md)<br/>                   |                                                                                                                        |
@@ -43,10 +43,10 @@ ms.locfileid: "108105033"
 | [System.Media.Producer](./props-system-media-producer.md)<br/>                                   |                                                                                                                        |
 | [System.Media.PromotionUrl](./props-system-media-promotionurl.md)<br/>                           |                                                                                                                        |
 | [System.Media.ProtectionType](./props-system-media-protectiontype.md)<br/>                       | Describe el tipo de protección de medios.<br/>                                                                     |
-| [System.Media.ProviderRating](./props-system-media-providerrating.md)<br/>                       | Clasificación (0 - 99) proporcionada por el proveedor de metadatos.<br/>                                                          |
+| [System.Media.ProviderRating](./props-system-media-providerrating.md)<br/>                       | La clasificación (0 - 99) proporcionada por el proveedor de metadatos.<br/>                                                          |
 | [System.Media.ProviderStyle](./props-system-media-providerstyle.md)<br/>                         | Estilo de música o vídeo proporcionado por el proveedor de metadatos.<br/>                                                 |
-| [System.Media.Publisher](./props-system-media-publisher.md)<br/>                                 |                                                                                                                        |
-| [System.Media.SeasonNumber](props-system-media-seasonnumber.md)<br/>                                  | Número de incremento monótono basado en 1 que corresponde a la temporada en la que se presentó por primera vez el programa.<br/> |
+| [System.Media. Publisher](./props-system-media-publisher.md)<br/>                                 |                                                                                                                        |
+| [System.Media.SeasonNumber](props-system-media-seasonnumber.md)<br/>                                  | Número de incremento monótono basado en 1 que corresponde a la estación en la que se presentó por primera vez el programa.<br/> |
 | [System.Media.SeriesName](props-system-media-seriesname.md)<br/>                                      | Nombre que representa una serie específica, como un podcast o una serie de televisión grabada.<br/>                  |
 | [System.Media.SubscriptionContentId](./props-system-media-subscriptioncontentid.md)<br/>         |                                                                                                                        |
 | [System.Media.SubTitle](./props-system-media-subtitle.md)<br/>                                   |                                                                                                                        |

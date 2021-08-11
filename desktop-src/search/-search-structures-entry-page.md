@@ -1,17 +1,17 @@
 ---
-description: Windows Search estructuras
+description: Windows Estructuras de búsqueda
 ms.assetid: 11c84bd0-9314-4c57-9466-57bcce7c2883
-title: Windows Search estructuras
+title: Windows Estructuras de búsqueda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 920a072f631ef70cbcba8beb4cbea67cd9e48080
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0f14da856876b1a53e8eba063d007cd698984dfe18cd07a1e69ba7a5fcd3b95a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226718"
 ---
-# <a name="windows-search-structures"></a>Windows Search estructuras
+# <a name="windows-search-structures"></a>Windows Estructuras de búsqueda
 
 
 En esta sección se documenta las estructuras siguientes:
@@ -26,9 +26,9 @@ En esta sección se documenta las estructuras siguientes:
 
 [**HITRANGE**](/windows/win32/api/structuredquery/ns-structuredquery-hitrange)
 
-[**INFORMACIÓN \_ DE ACCESO \_ INCREMENTAL**](/windows/desktop/api/Searchapi/ns-searchapi-incremental_access_info)
+[**INFORMACIÓN DE \_ ACCESO \_ INCREMENTAL**](/windows/desktop/api/Searchapi/ns-searchapi-incremental_access_info)
 
-[**ENTRADA INSERT NOTIFY \_ \_ DATA \_ CHANGE \_**](/previous-versions/windows/desktop/legacy/aa965367(v=vs.85))
+[**ENTRADA INSERTLINE \_ NOTIFY \_ DATA \_ CHANGE \_**](/previous-versions/windows/desktop/legacy/aa965367(v=vs.85))
 
 [**INFORMACIÓN DEL \_ ELEMENTO**](/windows/desktop/api/Searchapi/ns-searchapi-item_info)
 

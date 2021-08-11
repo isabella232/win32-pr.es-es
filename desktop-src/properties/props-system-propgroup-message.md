@@ -4,12 +4,12 @@ ms.assetid: bbb475f3-f5da-42f1-be8f-396c5be86417
 title: System.PropGroup.Message
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 603a0e85c54d736a086585d932638ec908a0f566
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7911153a0b6082ff447efefab8098e5dd298e67395a8f424033e5323501ae7ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228115"
 ---
 # <a name="systempropgroupmessage"></a>System.PropGroup.Message
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

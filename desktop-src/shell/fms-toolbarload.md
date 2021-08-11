@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 7185f9e5-10c6-43cc-b85b-cd077378338f
-ms.openlocfilehash: 3a993312b9e365561018459c43dab87afbd3c2b2
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 719e13e824778ec133ad761d09ccd3bd8f5846ae8cdb36c83ba4f85eca1c2408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224114"
 ---
 # <a name="fms_toolbarload-structure"></a>ESTRUCTURA FMS \_ TOOLBARLOAD
 
@@ -40,7 +40,7 @@ typedef struct _FMS_TOOLBARLOAD {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
@@ -95,7 +95,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Identificador de un recurso de mapa de bits en el archivo ejecutable para el archivo DLL de extensión. El recurso de mapa de bits contiene imágenes para el número de botones especificado por **cBitmaps.** El Administrador de archivos carga el recurso de mapa de bits y, a continuación, lo usa para mostrar los botones.
+Identificador de un recurso de mapa de bits en el archivo ejecutable para el archivo DLL de extensión. El recurso de mapa de bits contiene imágenes para el número de botones especificado por **cBitmaps**. El Administrador de archivos carga el recurso de mapa de bits y, a continuación, lo usa para mostrar los botones.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Identificador de un mapa de bits que el Administrador de archivos usará para ob
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 

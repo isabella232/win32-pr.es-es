@@ -1,19 +1,19 @@
 ---
-description: Indica la velocidad de datos media en hercios (Hz) para el archivo de audio en bits por segundo.
+description: Indica la velocidad media de datos en Hertz (Hz) para el archivo de audio en bits por segundo.
 ms.assetid: 570711c2-ef9b-4b3a-9b5f-94a6601fa3d4
-title: System. audio. EncodingBitrate
+title: System.Audio.EncodingBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd0325ea0e8971e7764346b3dada2784d9209cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce2aa4f560ee0efc63838f11be2a66370f06c06e3f7b1f34c9af736d4e350d32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232900"
 ---
-# <a name="systemaudioencodingbitrate"></a>System. audio. EncodingBitrate
+# <a name="systemaudioencodingbitrate"></a>System.Audio.EncodingBitrate
 
-Indica la velocidad de datos media en hercios (Hz) para el archivo de audio en bits por segundo.
+Indica la velocidad media de datos en Hertz (Hz) para el archivo de audio en bits por segundo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -95,9 +95,9 @@ propertyDescription
             minValue = 4294967295
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -112,7 +112,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -124,7 +124,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -142,7 +142,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

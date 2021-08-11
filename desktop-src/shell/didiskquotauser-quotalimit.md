@@ -1,6 +1,6 @@
 ---
 description: Establece u obtiene el límite de cuota actual del usuario.
-title: Propiedad DIDiskQuotaUser.QuotaLimit
+title: DiDiskQuotaUser.QuotaLimit, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 7eee1be7-8ad5-4796-910c-987fe3fd6338
-ms.openlocfilehash: b1971871bdeb18e3c7dd4c7978152bbec276fa8b
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: db0b6154d6eb6940a83434c010e7da1e124110f94cae7637d340621c86e7a30c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224735"
 ---
-# <a name="didiskquotauserquotalimit-property"></a>Propiedad DIDiskQuotaUser.QuotaLimit
+# <a name="didiskquotauserquotalimit-property"></a>DiDiskQuotaUser.QuotaLimit, propiedad
 
-Establece u obtiene el límite de cuota actual [**del usuario.**](diskquotacontrol-object.md)
+Establece u obtiene el límite de cuota [**actual del usuario.**](diskquotacontrol-object.md)
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -52,7 +52,7 @@ Valor **entero** que especifica o recibe el límite de cuota actual del usuario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 

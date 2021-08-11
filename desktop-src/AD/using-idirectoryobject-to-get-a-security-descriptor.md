@@ -4,26 +4,26 @@ description: En este tema se incluye un ejemplo de código que se usa para obten
 ms.assetid: 989abd3f-9043-4c3f-a99a-63fa95daf203
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, uso de IDirectoryObject para obtener un descriptor de seguridad
+- Active Directory ejemplos Active Directory , mediante IDirectoryObject para obtener un descriptor de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 562438d37d6bfadadfee95d13f80cb4c4728e0f2
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: bd7b2bd256fb9601cc61ff41465763ccc30c39bc68ff79760019dad1f8d510bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103789442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118182519"
 ---
 # <a name="using-idirectoryobject-to-get-a-security-descriptor"></a>Uso de IDirectoryObject para obtener un descriptor de seguridad
 
 En este tema se incluye un ejemplo de código que se usa para obtener un descriptor de seguridad.
 
-El siguiente ejemplo de código C++:
+El siguiente ejemplo de código de C++:
 
 -   Crea un búfer.
--   Usa la interfaz [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) para obtener el descriptor de seguridad del objeto especificado.
+-   Usa la [**interfaz IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) para obtener el descriptor de seguridad del objeto especificado.
 -   Copia el descriptor de seguridad en el búfer.
--   Devuelve un puntero a una estructura de [**\_ descriptores de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene los datos del descriptor de seguridad.
+-   Devuelve un puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene los datos del descriptor de seguridad.
 
 
 ```C++
@@ -85,6 +85,6 @@ HRESULT GetSDFromIDirectoryObject(
 
 
 
- 
+ 
 
- 
+ 

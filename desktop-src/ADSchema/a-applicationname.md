@@ -1,10 +1,10 @@
 ---
-title: Application-Name atributo)
+title: Application-Name atributo
 description: Nombre de la aplicación.
 ms.assetid: ebcbae00-04bd-40be-b256-8e27611eee22
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Application-Name
+- Application-Name esquema de AD de atributo
 - Esquema de AD del atributo applicationName
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05927d3c2105ab3d811c15022e8025eef30371d6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 248c852919b934c219fe7037e06ab46b2921594b8dd91239a1d536788e3276f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178034"
 ---
-# <a name="application-name-attribute"></a>Application-Name atributo)
+# <a name="application-name-attribute"></a>Application-Name atributo
 
 Nombre de la aplicación.
 
@@ -30,13 +30,13 @@ Nombre de la aplicación.
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Application-Name                            |
-| Nombre para mostrar de LDAP | applicationName                             |
+| Ldap-Display-Name | applicationName                             |
 | Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.218                      |
-| System-ID-GUID    | dd712226-10e4-11d0-a05f-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | dd712226-10e4-11d0-a05f-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Nombre de la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
+| Es de un solo valor       | True                                                                                                                                       |
 | Está indexado             | False                                                                                                                                      |
 | En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**Configuración de la aplicación**](c-applicationsettings.md)<br/> [**Configuración del sitio de la aplicación**](c-applicationsitesettings.md)<br/> |
+| Clases usadas en        | [**Application-Configuración**](c-applicationsettings.md)<br/> [**Application-Site-Configuración**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Nombre de la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
+| Es de un solo valor       | True                                                                                                                                       |
 | Está indexado             | False                                                                                                                                      |
 | En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**Configuración de la aplicación**](c-applicationsettings.md)<br/> [**Configuración del sitio de la aplicación**](c-applicationsitesettings.md)<br/> |
+| Clases usadas en        | [**Application-Configuración**](c-applicationsettings.md)<br/> [**Application-Site-Configuración**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Nombre de la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
+| Es de un solo valor       | True                                                                                                                                       |
 | Está indexado             | False                                                                                                                                      |
 | En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**Configuración de la aplicación**](c-applicationsettings.md)<br/> [**Configuración del sitio de la aplicación**](c-applicationsitesettings.md)<br/> |
+| Clases usadas en        | [**Application-Configuración**](c-applicationsettings.md)<br/> [**Application-Site-Configuración**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Nombre de la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
+| Es de un solo valor       | True                                                                                                                                       |
 | Está indexado             | False                                                                                                                                      |
 | En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**Configuración de la aplicación**](c-applicationsettings.md)<br/> [**Configuración del sitio de la aplicación**](c-applicationsitesettings.md)<br/> |
+| Clases usadas en        | [**Application-Configuración**](c-applicationsettings.md)<br/> [**Application-Site-Configuración**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Nombre de la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
+| Es de un solo valor       | True                                                                                                                                       |
 | Está indexado             | False                                                                                                                                      |
 | En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**Configuración de la aplicación**](c-applicationsettings.md)<br/> [**Configuración del sitio de la aplicación**](c-applicationsitesettings.md)<br/> |
+| Clases usadas en        | [**Application-Configuración**](c-applicationsettings.md)<br/> [**Application-Site-Configuración**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Nombre de la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
+| Es de un solo valor       | True                                                                                                                                       |
 | Está indexado             | False                                                                                                                                      |
 | En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**Configuración de la aplicación**](c-applicationsettings.md)<br/> [**Configuración del sitio de la aplicación**](c-applicationsitesettings.md)<br/> |
+| Clases usadas en        | [**Application-Configuración**](c-applicationsettings.md)<br/> [**Application-Site-Configuración**](c-applicationsitesettings.md)<br/> |
 
 
 

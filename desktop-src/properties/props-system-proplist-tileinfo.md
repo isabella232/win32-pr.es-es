@@ -1,19 +1,19 @@
 ---
-description: Lista de propiedades que se van a mostrar en el control ListView en los mosaicos. Regístrese en el regvalue de &\# 0034; TileInfo&\# 0034;.
+description: Lista de propiedades que se mostrarán en la vista de lista en los iconos. Regístrese en el valor reg de &\# 0034; TileInfo&\# 0034;.
 ms.assetid: f9e7213d-5607-4f85-bb56-34ecf546380e
-title: System. proplist. TileInfo
+title: System.PropList.TileInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12fbc109c886a9d4e463b957368b118695e35c9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7785d7ccf62893215e0b18a8df04ac98fd05c789b07f6c8f67bed0d315596729
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228162"
 ---
-# <a name="systemproplisttileinfo"></a>System. proplist. TileInfo
+# <a name="systemproplisttileinfo"></a>System.PropList.TileInfo
 
-Lista de propiedades que se van a mostrar en el control ListView en los mosaicos. Regístrese en el regvalue de "TileInfo".
+Lista de propiedades que se mostrarán en la vista de lista en los iconos. Regístrese en el valor reg de "TileInfo".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

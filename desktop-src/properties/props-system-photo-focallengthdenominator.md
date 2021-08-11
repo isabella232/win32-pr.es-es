@@ -1,17 +1,17 @@
 ---
 description: Denominador de PKEY \_ Photo \_ FocalLength.
 ms.assetid: 9bcb7d2f-33be-4e4f-ab8e-2e29e8688c1e
-title: System. Photo. FocalLengthDenominator
+title: System.Photo.FocalLengthDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1ac983053ba3630c467847497e42ddfb578f1de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fbad0ea1b41771d57246ef573624fc76d2626651d5ed4026f8748c9dbf496b6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229727"
 ---
-# <a name="systemphotofocallengthdenominator"></a>System. Photo. FocalLengthDenominator
+# <a name="systemphotofocallengthdenominator"></a>System.Photo.FocalLengthDenominator
 
 Denominador de PKEY \_ Photo \_ FocalLength.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

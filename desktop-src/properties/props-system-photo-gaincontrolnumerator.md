@@ -1,19 +1,19 @@
 ---
-description: El numerador de PKEY \_ Photo \_ GainControl.
+description: Numerador de PKEY \_ Photo \_ GainControl.
 ms.assetid: 5b94f7b8-ced8-4f49-bba2-30d15bafba4e
-title: System. Photo. GainControlNumerator
+title: System.Photo.GainControlNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3a8650405d95e2ef714bd39ef9702177610742e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 594319282634c062233ad0e8bb683a0f5a4f5e859b4636c1a046bd67d4359cea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228890"
 ---
-# <a name="systemphotogaincontrolnumerator"></a>System. Photo. GainControlNumerator
+# <a name="systemphotogaincontrolnumerator"></a>System.Photo.GainControlNumerator
 
-El numerador de PKEY \_ Photo \_ GainControl.
+Numerador de PKEY \_ Photo \_ GainControl.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

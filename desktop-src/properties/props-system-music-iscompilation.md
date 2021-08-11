@@ -1,17 +1,17 @@
 ---
 description: Indica si el archivo de música forma parte de una compilación.
 ms.assetid: E3FD56F1-8886-408b-BDF2-7499AAF5AF97
-title: System. Music. IsCompilation
+title: Sistema. Música. IsCompilation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b0ed2150265996d40fb638e1c6304f02d329b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7c1483f48c2d84b16282f4acfa74ae3b26e9034eaa1d7b7b5e445568753ace3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230503"
 ---
-# <a name="systemmusiciscompilation"></a>System. Music. IsCompilation
+# <a name="systemmusiciscompilation"></a>Sistema. Música. IsCompilation
 
 Indica si el archivo de música forma parte de una compilación.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

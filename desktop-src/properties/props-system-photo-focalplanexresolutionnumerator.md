@@ -1,19 +1,19 @@
 ---
-description: El numerador de PKEY \_ Photo \_ FocalPlaneXResolution.
+description: Numerador de PKEY \_ Photo \_ FocalPlaneXResolution.
 ms.assetid: 386f434a-22c3-4f72-8981-f99e1c9b2722
-title: System. Photo. FocalPlaneXResolutionNumerator
+title: System.Photo.FocalPlaneXResolutionNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0deb4d98a9ac43181645860816e211726f6f7a0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 965ecbacbed9eb4cca15a8e78925f0333c562c100b62d886d02f1c1fc621339f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229162"
 ---
-# <a name="systemphotofocalplanexresolutionnumerator"></a>System. Photo. FocalPlaneXResolutionNumerator
+# <a name="systemphotofocalplanexresolutionnumerator"></a>System.Photo.FocalPlaneXResolutionNumerator
 
-El numerador de PKEY \_ Photo \_ FocalPlaneXResolution.
+Numerador de PKEY \_ Photo \_ FocalPlaneXResolution.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

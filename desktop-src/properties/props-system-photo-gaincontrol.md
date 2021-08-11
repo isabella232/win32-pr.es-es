@@ -1,19 +1,19 @@
 ---
-description: Indica el grado de ajuste total de la ganancia de la imagen. Se calcula a partir de PKEY \_ Photo \_ GAINCONTROLNUMERATOR y PKEY \_ Photo \_ GainControlDenominator.
+description: Indica el grado de ajuste general de la ganancia de imagen. Se calcula a partir de PKEY \_ Photo \_ GainControlNumerator y PKEY \_ Photo \_ GainControlDenominator.
 ms.assetid: 5076e03b-2c8a-4ef4-93d6-271a4bd697a6
-title: System. Photo. GainControl
+title: System.Photo.GainControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8278120e5e65137eda491f52af7bc36f1c163c61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65faba3fe41d63d12b5918e229543670f122ac36e2dbcbfd80c96947a3a408a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229006"
 ---
-# <a name="systemphotogaincontrol"></a>System. Photo. GainControl
+# <a name="systemphotogaincontrol"></a>System.Photo.GainControl
 
-Indica el grado de ajuste total de la ganancia de la imagen. Se calcula a partir de PKEY \_ Photo \_ GAINCONTROLNUMERATOR y PKEY \_ Photo \_ GainControlDenominator.
+Indica el grado de ajuste general de la ganancia de imagen. Se calcula a partir de PKEY \_ Photo \_ GainControlNumerator y PKEY \_ Photo \_ GainControlDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -96,9 +96,9 @@ propertyDescription
             defineName = PHOTO_GAINCONTROL_HIGHGAINDOWN
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -113,7 +113,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -125,7 +125,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -143,7 +143,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

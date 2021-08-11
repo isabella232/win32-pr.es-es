@@ -1,7 +1,7 @@
 ---
 description: Contiene el objeto ShellLinkObject del elemento, si el elemento es un acceso directo.
 ms.assetid: 6444476a-a065-4f69-9330-584e30dbe30d
-title: Propiedad carpeta. GetLink (Shldisp. h)
+title: Propiedad FolderItem.GetLink (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d12c0fbd296610174c8b8363602288f59fcb9714
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f4eaf3019ad46599fe572cdc403738d281f97eecd0b09752cdcc35335abb856
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224069"
 ---
-# <a name="folderitemgetlink-property"></a>Propiedad carpeta. GetLink
+# <a name="folderitemgetlink-property"></a>Propiedad FolderItem.GetLink
 
-Contiene el objeto [**ShellLinkObject**](shelllinkobject-object.md) del elemento, si el elemento es un acceso directo.
+Contiene el objeto [**ShellLinkObject del**](shelllinkobject-object.md) elemento, si el elemento es un acceso directo.
 
 Esta propiedad es de solo lectura.
 
@@ -37,13 +37,13 @@ objGetLink = FolderItem.GetLink
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el objeto [**ShellLinkObject**](shelllinkobject-object.md) .
+Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el [**objeto ShellLinkObject.**](shelllinkobject-object.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **GetLink** para recuperar el objeto [**ShellLinkObject**](shelllinkobject-object.md) para un acceso directo a Internet Explorer. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa GetLink para** recuperar el [**objeto ShellLinkObject**](shelllinkobject-object.md) para un acceso directo a Internet Explorer. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -77,7 +77,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -163,19 +163,19 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 
-[**Carpeta**](folderitem.md)
+[**FolderItem**](folderitem.md)
 </dt> <dt>
 
 [**IsLink**](folderitem-islink.md)

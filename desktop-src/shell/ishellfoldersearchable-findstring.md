@@ -1,7 +1,7 @@
 ---
-description: Inicia una búsqueda de una cadena de búsqueda especificada.
+description: Comienza una búsqueda de una cadena de búsqueda especificada.
 ms.assetid: 6ecad03c-e8e0-45ba-8def-b55a029992f2
-title: 'IShellFolderSearchable:: FindString (método) (MMC. h)'
+title: Método IShellFolderSearchable::FindString (Mmc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3e256329bc235f7fe5a0428ba33710fa6b838f04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 947cda4094491702fa0f847e6a8abd4fed7bcbe9bd3504c5f8aec2097b0d6b8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220941"
 ---
-# <a name="ishellfoldersearchablefindstring-method"></a>IShellFolderSearchable:: FindString (método)
+# <a name="ishellfoldersearchablefindstring-method"></a>IShellFolderSearchable::FindString (método)
 
-Inicia una búsqueda de una cadena de búsqueda especificada.
+Comienza una búsqueda de una cadena de búsqueda especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,39 +42,39 @@ HRESULT FindString(
 
 <dl> <dt>
 
-*pwszTarget* \[ de\]
+*pwszTarget* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntero a una cadena que especifica la palabra clave de búsqueda.
+Puntero a una cadena que especifica la palabra clave search.
 
 </dd> <dt>
 
-*pdwFlags* \[ de\]
+*pdwFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Actualmente no hay marcas definidas; establézcalo en _ * NULL * *.
+No hay marcas definidas actualmente; se establece en **NULL.**
 
 </dd> <dt>
 
-*punkOnAsyncSearch* \[ de\]
+*yonAsyncSearch* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Un puntero a un objeto de tipo [_ *IUnknown* *](/windows/win32/api/unknwn/nn-unknwn-iunknown). Este objeto debe admitir la interfaz [**IShellFolderSearchableCallback**](ishellfoldersearchablecallback.md) . Se establece en **null** si no se necesita ninguna devolución de llamada.
+Puntero a un objeto de tipo [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) Este objeto debe admitir la [**interfaz IShellFolderSearchableCallback.**](ishellfoldersearchablecallback.md) Establezca en **NULL si** no es necesaria ninguna devolución de llamada.
 
 </dd> <dt>
 
-*ppidlOut* \[ enuncia\]
+*pppdlOut* \[ out\]
 </dt> <dd>
 
 Tipo: **LPITEMIDLIST**
 
-Puntero a una estructura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) para la carpeta de búsqueda.
+Puntero a una [**estructura ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) para la carpeta de búsqueda.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Puntero a una estructura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtype
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,7 +92,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>MMC. h</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Mmc.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll</dt> </dl> |
 
 

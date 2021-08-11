@@ -1,19 +1,19 @@
 ---
-description: Esta propiedad representa una lista de los Estados de los recursos compartidos para el archivo o la carpeta especificados por el proveedor de almacenamiento. Cada estado de recurso compartido debe ser uno de los valores conocidos especificados por las enumeraciones belowStorageProviderShareStatuses es una propiedad ReadOnly, solo lo debe actualizar el proveedor de almacenamiento.
+description: Esta propiedad representa una lista de estados de recurso compartido para el archivo o carpeta especificado por el proveedor de almacenamiento. Cada estado del recurso compartido debe ser uno de los valores conocidos especificados por las enumeraciones debajo deStorageProviderShareStatuses es una propiedad de solo lectura, solo debe actualizarla el proveedor de almacenamiento.
 ms.assetid: 131bf48a-0ab9-4b1f-9625-6fca5d15219f
-title: System. StorageProviderShareStatuses
+title: System.StorageProviderShareStatuses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c92340e4afb1005146a32d2505292a5e60dec971
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f573ad8ee6b10828e5172755d7a28d8df61b7033f924c1007cec2a440f6145a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227512"
 ---
-# <a name="systemstorageprovidersharestatuses"></a>System. StorageProviderShareStatuses
+# <a name="systemstorageprovidersharestatuses"></a>System.StorageProviderShareStatuses
 
-Esta propiedad representa una lista de los Estados de los recursos compartidos para el archivo o la carpeta especificados por el proveedor de almacenamiento. Cada estado de recurso compartido debe ser uno de los valores conocidos especificados por las enumeraciones belowStorageProviderShareStatuses es una propiedad ReadOnly, solo lo debe actualizar el proveedor de almacenamiento.
+Esta propiedad representa una lista de estados de recurso compartido para el archivo o carpeta especificado por el proveedor de almacenamiento. Cada estado del recurso compartido debe ser uno de los valores conocidos especificados por las enumeraciones debajo deStorageProviderShareStatuses es una propiedad de solo lectura, solo debe actualizarla el proveedor de almacenamiento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -63,9 +63,9 @@ propertyDescription
             mnemonics = owner
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -80,7 +80,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -92,7 +92,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -110,7 +110,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

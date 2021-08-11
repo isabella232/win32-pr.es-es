@@ -4,16 +4,16 @@ ms.assetid: 5dd44e13-bc5c-4e32-b5eb-2c7c40e10dfb
 title: System.ItemPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b84455a8b69ebf42cb91c191d1c275b70eeeb5ac
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 28385a889ea74b94ea990321dbb46173b078ff20222c22fe3599619faf9cb938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231478"
 ---
 # <a name="systemitempathdisplaynarrow"></a>System.ItemPathDisplayNarrow
 
-Ruta de acceso de presentación fácil de usar al elemento.
+Ruta de acceso para mostrar fácil de usar al elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -43,11 +43,11 @@ Valores de ejemplo:
 
 
 
-| Ruta de acceso                                   | ItemPathDisplayName                 |
+| Path                                   | ItemPathDisplayName                 |
 |----------------------------------------|-------------------------------------|
-| c: \\ barra de mydir \\ \\hello.txt              | hello (c: \\ barra \\ mydir)              |
+| c: \\ barra de mydir \\ \\hello.txt              | hello (c: \\ barra de \\ mydir)              |
 | \\\\servidor \\ compartido \\ mydir \\goodnews.doc | goodnews ( \\ \\ server share \\ \\ mydir) |
-| \\\\carpeta de \\ recurso compartido \\ de servidor              | carpeta \\ \\ (recurso compartido \\ de servidor)          |
+| \\\\carpeta de \\ recurso compartido de \\ servidor              | carpeta \\ \\ (recurso compartido \\ de servidor)          |
 | c: \\ MyDir \\ MyFolder                    | MyFolder (c: \\ mydir)                |
 | /Mailbox Account/Inbox/'Re: Hello!'    | Re: Hello! (/Cuenta de buzón/Bandeja de entrada) |
 

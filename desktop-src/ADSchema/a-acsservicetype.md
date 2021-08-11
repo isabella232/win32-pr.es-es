@@ -1,11 +1,11 @@
 ---
 title: Atributo ACS-Service-Type
-description: El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
+description: Tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 ms.assetid: 3de23f2b-16dc-48c0-a8c5-e3130cd84ba8
 ms.tgt_platform: multiple
 keywords:
-- 'ACS: esquema de AD de atributo de tipo de servicio'
-- aCSServiceType esquema de AD de atributos
+- Esquema de AD del atributo ACS-Service-Type
+- Esquema de AD del atributo aCSServiceType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b7dc97c17e9f7b38fa2f6f0ea863099bbef838a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd72f8cfab55c9bd0f089aa487e0b895ca528cfdb6ceac9ae42bdae867a1050f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178348"
 ---
 # <a name="acs-service-type-attribute"></a>Atributo ACS-Service-Type
 
-El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
+Tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-tipo de servicio                     |
-| Nombre para mostrar de LDAP | aCSServiceType                       |
+| CN                | Acs-Service-Type                     |
+| Ldap-Display-Name | aCSServiceType                       |
 | Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.762               |
-| System-ID-GUID    | 7f56127f-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7f56127f-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
+| Es de un solo valor       | True                                                                                                       |
 | Está indexado             | False                                                                                                      |
 | En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
+| Es de un solo valor       | True                                                                                                       |
 | Está indexado             | False                                                                                                      |
 | En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
+| Es de un solo valor       | True                                                                                                       |
 | Está indexado             | False                                                                                                      |
 | En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
+| Es de un solo valor       | True                                                                                                       |
 | Está indexado             | False                                                                                                      |
 | En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
+| Es de un solo valor       | True                                                                                                       |
 | Está indexado             | False                                                                                                      |
 | En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El tipo de servicio de ACS. Carga controlada o ancho de banda garantizado.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
+| Es de un solo valor       | True                                                                                                       |
 | Está indexado             | False                                                                                                      |
 | En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> |
 
 
 

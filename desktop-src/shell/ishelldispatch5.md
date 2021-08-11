@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9170340a-0f11-4ec9-877d-fb7fef9888b2
-ms.openlocfilehash: 26c3112faa748aa443526fbe9cb493af67502cd7
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 325fef2c56ec4f2fa31508c0f9b0f34f63097161e3ef7d4ecb835fe62c8c4fb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220408"
 ---
 # <a name="ishelldispatch5-object"></a>Objeto IShellDispatch5
 
@@ -29,7 +29,7 @@ Extiende el [**objeto IShellDispatch4.**](ishelldispatch4.md) Además de las pro
 
  
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto IShellDispatch5** tiene estos tipos de miembros:
 
@@ -43,7 +43,7 @@ El **objeto IShellDispatch5** tiene estos métodos.
 
 | Método                                                   | Descripción                                                                    |
 |:---------------------------------------------------------|:-------------------------------------------------------------------------------|
-| [**WindowSwitcher**](ishelldispatch5-windowswitcher.md) | Muestra las ventanas abiertas en una pila 3D por la que puede cambiar.<br/> |
+| [**WindowSwitcher**](ishelldispatch5-windowswitcher.md) | Muestra las ventanas abiertas en una pila 3D por la que puede pasar.<br/> |
 
 
 
@@ -55,22 +55,22 @@ El **objeto IShellDispatch5** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 
 [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Objeto shell**](shell.md)
+[**Objeto Shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

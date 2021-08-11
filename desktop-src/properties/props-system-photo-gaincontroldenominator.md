@@ -1,17 +1,17 @@
 ---
 description: Denominador de PKEY \_ Photo \_ GainControl.
 ms.assetid: 7ab2ea1e-8455-4724-b249-0c78688f6627
-title: System. Photo. GainControlDenominator
+title: System.Photo.GainControlDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f9aa6872526d16c9a0f14e86c8625cdceb1bdfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 115f89b5b27cead24c062dd95eb2cd51215aa6e26cd325f918edd1a808d4aab9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229007"
 ---
-# <a name="systemphotogaincontroldenominator"></a>System. Photo. GainControlDenominator
+# <a name="systemphotogaincontroldenominator"></a>System.Photo.GainControlDenominator
 
 Denominador de PKEY \_ Photo \_ GainControl.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

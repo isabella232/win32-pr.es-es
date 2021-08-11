@@ -1,7 +1,7 @@
 ---
 description: Indica si el elemento es una carpeta.
 ms.assetid: fb080c8f-04b1-4f9a-9219-0951a2e950ea
-title: Propiedad carpeta. IsFolder (Shldisp. h)
+title: Propiedad FolderItem.IsFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9bf0bd4eb9b7964620fe705d6e8f4d10644ca234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d104d33e843d46cc63a0a960afa3d36b56ddbd28b5a563f8973ee957d82da87e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223989"
 ---
-# <a name="folderitemisfolder-property"></a>Propiedad carpeta. IsFolder
+# <a name="folderitemisfolder-property"></a>Propiedad FolderItem.IsFolder
 
 Indica si el elemento es una carpeta.
 
@@ -37,13 +37,13 @@ bIsFolder = FolderItem.IsFolder
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **valor booleano** que recibe **true** si el elemento es una carpeta o **false** en caso contrario.
+Valor **booleano** que recibe **true** si el elemento es una carpeta o **false** si no es así.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **IsFolder** para determinar si el directorio de Windows es una carpeta. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsFolder** para determinar si el Windows es una carpeta. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

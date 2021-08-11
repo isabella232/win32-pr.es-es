@@ -1,21 +1,21 @@
 ---
-description: El <propertyBag> elemento requerido especifica un conjunto de una o varias propiedades utilizadas por este proveedor de ubicación.
+description: El elemento <propertyBag> requerido especifica un conjunto de una o varias propiedades usadas por este proveedor de ubicación.
 ms.assetid: 63f8f2e4-3b52-4d6e-8d3a-2e133aac0e86
-title: Elemento propertyBag (esquema del conector de búsqueda)
+title: elemento propertyBag (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8fb9e80691e929f7fcceaff3dded4b99a242e92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50a8b888ba57fd71c892c61bc8b3f29a8ebc7f9e240162d0ecf6b3bbff41d2e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226485"
 ---
-# <a name="propertybag-element-search-connector-schema"></a>Elemento propertyBag (esquema del conector de búsqueda)
+# <a name="propertybag-element-search-connector-schema"></a>elemento propertyBag (esquema del conector de búsqueda)
 
-El <propertyBag> elemento requerido especifica un conjunto de una o varias propiedades utilizadas por este proveedor de ubicación.
+El elemento <propertyBag> requerido especifica un conjunto de una o varias propiedades usadas por este proveedor de ubicación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -48,13 +48,13 @@ El <propertyBag> elemento requerido especifica un conjunto de una o varias propi
 
 | Elemento primario                                                                                 | Elementos secundarios                                                                                 |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Elemento locationProvider (esquema del conector de búsqueda)](search-schema-sconn-locationprovider.md) | [Elemento Property (esquema del conector de búsqueda)](search-schema-sconn-locationproviderproperty.md) |
+| [Elemento locationProvider (esquema del conector de búsqueda)](search-schema-sconn-locationprovider.md) | [elemento property (Esquema del conector de búsqueda)](search-schema-sconn-locationproviderproperty.md) |
 
 
 
  
 
-## <a name="example-of-a-propertybag-element-and-property-elements"></a>Ejemplo de elemento PropertyBag y elementos Property
+## <a name="example-of-a-propertybag-element-and-property-elements"></a>Ejemplo de elementos PropertyBag y elementos property
 
 
 ```

@@ -1,19 +1,19 @@
 ---
-description: Indica la dirección de procesamiento de contraste aplicada por la cámara cuando se tomó la imagen. &\#0034; 0&\# 0034; indica &\# 0034; Normal&\# 0034;; &\# 0034; 1&\# 0034; indica &\# 0034; Soft&\# 0034;; &\# 0034; 2&\# 0034; indica &\# 0034;&duro \# 0034;.
+description: Indica la dirección del procesamiento de contraste aplicado por la cámara cuando se tomó la imagen. &\#0034;0&\# 0034; indica &\# 0034; Normal&\# 0034;; &\# 0034;1&\# 0034; indica &\# 0034;&\# 0034;; &\# 0034;2&\# 0034; indica &\# 0034;&\# 0034;.
 ms.assetid: 32f89149-b90d-4fe9-9d1a-b8bb966d62fe
-title: System. Photo. Contrast
+title: System.Photo.Contrast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4117f13d35a352971a5f9b9f8685816f8ffbd1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 847eadd54e82ebed60f947b5aac994ad8e2e69c44d82246c8e65ccb70adf0675
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230375"
 ---
-# <a name="systemphotocontrast"></a>System. Photo. Contrast
+# <a name="systemphotocontrast"></a>System.Photo.Contrast
 
-Indica la dirección de procesamiento de contraste aplicada por la cámara cuando se tomó la imagen. "0" indica "normal"; "1" indica "soft"; "2" indica "hard".
+Indica la dirección del procesamiento de contraste aplicado por la cámara cuando se tomó la imagen. "0" indica "Normal"; "1" indica "Soft"; "2" indica "Hard".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -76,9 +76,9 @@ propertyDescription
             defineName = PHOTO_CONTRAST_HARD
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -105,7 +105,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -123,7 +123,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

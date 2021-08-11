@@ -4,18 +4,18 @@ ms.assetid: 4bad85d7-a933-43fe-9d79-4835d92c82d6
 title: Prefijo de ámbito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2c027de94fda403eb58905e536d8c6256cb2d6c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 06ad23369d2b2c60c00752e4f5be31f6ad605e2814d0b7502d42ff79baa10977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234098"
 ---
 # <a name="scoping-prefix"></a>Prefijo de ámbito
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Un prefijo de ámbito es una etiqueta textual anexada previamente a una palabra clave de esquema para proporcionar un ámbito contextual. Esto permite la suscripción de un contexto específico y bien comprendido a las palabras clave de una manera predefinida. La característica de esquema de impresión, ParameterDef, ParameterInit y ParameterRef y la palabra clave Property de nivel raíz Elements DEBEN tener uno de los prefijos de ámbito siguientes: "Job", "Document" o "Page".
+Un prefijo de ámbito es una etiqueta textual anexada previamente a una palabra clave de esquema para proporcionar un ámbito contextual. Esto permite la suscripción de un contexto específico y bien comprendido a las palabras clave de una manera predefinida. La característica de esquema de impresión, ParameterDef, ParameterInit y ParameterRef y la palabra clave Property de nivel raíz Elements DEBEN tener uno de los siguientes prefijos de ámbito: "Job", "Document" o "Page".
 
 ## <a name="interpretation-of-the-scoping-prefix-with-printticket-content"></a>Interpretación del prefijo de ámbito con contenido PrintTicket
 
@@ -29,7 +29,7 @@ La configuración con prefijo "Documento" y "Página" especificada en un vale de
 
 ## <a name="document-level-prefix"></a>Prefijo de nivel de documento
 
-El vale de nivel de documento incorpora cualquier configuración de formato de trabajo diseñada para aplicarse a uno o varios documentos de un trabajo. Esto puede incluir la configuración especificada previamente en el vale de nivel de trabajo. Solo se permiten elementos con prefijos de ámbito de "Documento" o "Página" en un vale de nivel de documento.
+El vale de nivel de documento incorpora cualquier configuración de formato de trabajo destinada a aplicarse a uno o varios documentos de un trabajo. Esto puede incluir la configuración especificada previamente en el vale de nivel de trabajo. Solo se permiten elementos con prefijos de ámbito de "Documento" o "Página" en un vale de nivel de documento.
 
 Un vale de nivel de documento puede contener la configuración con prefijo de documento especificada previamente por el vale de nivel de trabajo.
 

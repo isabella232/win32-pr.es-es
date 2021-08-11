@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información de controlador \_ \_ 3 contiene información sobre el controlador de impresora.
+description: La estructura DRIVER \_ INFO \_ 3 contiene información del controlador de impresora.
 ms.assetid: ccf87319-0bcf-4f71-8de3-0190459d2b0e
-title: Estructura de DRIVER_INFO_3 (winspool. h)
+title: DRIVER_INFO_3 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 64509977a85bc33cb13dac4e6ba2817502c06cc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8187b90ee9cc423051b8b57d942fa026cca6f8c3d3bbfabd7721ed204484cb71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234917"
 ---
-# <a name="driver_info_3-structure"></a>Estructura de información de controladores \_ \_ 3
+# <a name="driver_info_3-structure"></a>Estructura \_ DRIVER INFO \_ 3
 
-La estructura de la **información de controlador \_ \_ 3** contiene información sobre el controlador de impresora.
+La **estructura DRIVER INFO \_ \_ 3** contiene información del controlador de impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,70 +53,70 @@ typedef struct _DRIVER_INFO_3 {
 **cVersion**
 </dt> <dd>
 
-Versión del sistema operativo para el que se escribió el controlador. Los valores admitidos son 3 y 4, que representan los controladores V3 y V4, respectivamente.
+Versión del sistema operativo para la que se escribió el controlador. Los valores admitidos son 3 y 4, que representan los controladores V3 y V4, respectivamente.
 
 </dd> <dt>
 
 **pName**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el nombre del controlador (por ejemplo, "QMS 810").
+Puntero a una cadena terminada en NULL que especifica el nombre del controlador (por ejemplo, "QMS 810").
 
 </dd> <dt>
 
 **pEnvironment**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el entorno para el que se escribió el controlador (por ejemplo, Windows x86, Windows IA64 y Windows x64).
+Puntero a una cadena terminada en NULL que especifica el entorno para el que se escribió el controlador (por ejemplo, Windows x86, Windows IA64 y Windows x64).
 
 </dd> <dt>
 
 **pDriverPath**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene el controlador de dispositivo (por ejemplo, "C: \\ DRIVERS \\Pscript.dll").
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene el controlador de dispositivo (por ejemplo, "C: \\ CONTROLADORES \\Pscript.dll").
 
 </dd> <dt>
 
 **pDataFile**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene los datos del controlador (por ejemplo, "C: \\ drivers \\ Qms810. PPD").
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene datos de controlador (por ejemplo, "C: \\ DRIVERS \\ Qms810.ppd").
 
 </dd> <dt>
 
 **pConfigFile**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para la biblioteca de vínculos dinámicos de configuración del controlador del dispositivo (por ejemplo, "C: \\ DRIVERS \\Pscrptui.dll").
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para la biblioteca de vínculos dinámicos de configuración del controlador de dispositivo (por ejemplo, "C: \\ CONTROLADORES \\Pscrptui.dll").
 
 </dd> <dt>
 
 **pHelpFile**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo de ayuda del controlador del dispositivo.
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo de ayuda del controlador de dispositivo.
 
 </dd> <dt>
 
 **pDependentFiles**
 </dt> <dd>
 
-Un puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL del búfer contiene el nombre de un archivo del que depende el controlador. La secuencia de cadenas termina en una cadena vacía de longitud cero. Si **pDependentFiles** no es **null** y no contiene ningún nombre de archivo, apuntará a un búfer que contenga dos cadenas vacías.
+Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL del búfer contiene el nombre de un archivo del que depende el controlador. La secuencia de cadenas finaliza con una cadena vacía de longitud cero. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
 
 </dd> <dt>
 
 **pMonitorName**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica un monitor de idioma (por ejemplo, "monitor PJL"). Este miembro puede ser **null** y debe especificarse solo para impresoras capaces de comunicación bidireccional.
+Puntero a una cadena terminada en NULL que especifica un monitor de lenguaje (por ejemplo, "monitor PJL"). Este miembro puede ser **NULL** y debe especificarse solo para impresoras que puedan comunicarse bidireccionalmente.
 
 </dd> <dt>
 
 **pDefaultDataType**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el tipo de datos predeterminado del trabajo de impresión (por ejemplo, "EMF").
+Puntero a una cadena terminada en NULL que especifica el tipo de datos predeterminado del trabajo de impresión (por ejemplo, "EMF").
 
 </dd> </dl>
 
@@ -124,12 +124,12 @@ Un puntero a una cadena terminada en null que especifica el tipo de datos predet
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Información del controlador \_ \_ 3W** (Unicode) y la **\_ información del controlador \_ \_ 3A** (ANSI)<br/>                             |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ DRIVER \_ INFO \_ 3W** (Unicode) e **\_ DRIVER INFO \_ \_ 3A** (ANSI)<br/>                             |
 
 
 
@@ -140,7 +140,7 @@ Un puntero a una cadena terminada en null que especifica el tipo de datos predet
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

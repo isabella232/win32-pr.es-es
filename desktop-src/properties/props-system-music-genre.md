@@ -1,17 +1,17 @@
 ---
-description: System.Music.Genre
+description: Sistema. Música. Género
 ms.assetid: c1adbc13-5069-4760-901c-d5ca47913695
-title: System.Music.Genre
+title: Sistema. Música. Género
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb29e6242dcdc97fe3b814a6fa571551f77e4765
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d056cda4cbd3a7de6d639eb96076ca90dfd8afa60ad15e0f7d1de34ee9ff6bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230549"
 ---
-# <a name="systemmusicgenre"></a>System.Music.Genre
+# <a name="systemmusicgenre"></a>Sistema. Música. Género
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 Los valores PKEY se definen en Propkey.h.
 
-Tenga en cuenta que algunos formatos de archivo, como un archivo .mp3, solo admiten un único género. Otros, como los archivos .wma, admiten varios géneros. Si especifica varios géneros para un formato de archivo de un solo género, solo se reconocerá el primer género de la lista.
+Tenga en cuenta que algunos formatos de archivo, como .mp3 archivo, solo admiten un único género. Otros, como los archivos .wma, admiten varios géneros. Si especifica varios géneros para un formato de archivo de un solo género, solo se reconocerá el primer género de la lista.
 
 ## <a name="related-topics"></a>Temas relacionados
 

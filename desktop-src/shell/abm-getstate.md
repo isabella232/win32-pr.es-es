@@ -1,6 +1,6 @@
 ---
-description: Recupera los Estados de ocultación y siempre visible de la barra de tareas de Windows.
-title: Mensaje de ABM_GETSTATE (ShellAPI. h)
+description: Recupera los estados autohide y always-on-top de la barra de Windows tareas.
+title: ABM_GETSTATE mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 18e16752-16be-492b-a4fa-c951e18dc86c
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 71225cd8d93de09a07cb0049066e52be08c18a36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1a3618be793f4728dc6184b50b7a4e0e57c3ffd2c4d2cd8acde17372aa031f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118225234"
 ---
-# <a name="abm_getstate-message"></a>ABN \_ GETSTATE
+# <a name="abm_getstate-message"></a>Mensaje \_ GETSTATE de ABM
 
-Recupera los Estados de ocultación y siempre visible de la barra de tareas de Windows.
+Recupera los estados autohide y always-on-top de la barra de Windows tareas.
 
 
 ```C++
@@ -38,13 +38,13 @@ uState = (UINT) SHAppBarMessage(ABM_GETSTATE, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntero a una estructura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) . Debe especificar el miembro **cbSize** al enviar este mensaje. se omiten todos los demás miembros.
+Puntero a una [**estructura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) Debe especificar el **miembro cbSize** al enviar este mensaje; se omiten todos los demás miembros.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si la barra de tareas no está en el estado de ocultar automáticamente ni siempre visible. De lo contrario, el valor devuelto es uno de los siguientes:
+Devuelve cero si la barra de tareas no está en el estado autohide ni always-on-top. De lo contrario, el valor devuelto es uno o ambos de los siguientes:
 
 
 
@@ -62,16 +62,16 @@ Devuelve cero si la barra de tareas no está en el estado de ocultar automática
 <tbody>
 <tr class="odd">
 <td><dl> <dt><strong>ABS_ALWAYSONTOP</strong></dt> </dl></td>
-<td>La barra de tareas está en el estado siempre visible. <br/>
+<td>La barra de tareas está en estado siempre en la parte superior. <br/>
 <blockquote>
 [!Note]<br />
-A partir de Windows 7, ya no se devuelve ABS_ALWAYSONTOP porque la barra de tareas siempre está en ese estado. El código anterior debe actualizarse para omitir la ausencia de este valor en no suponer que el valor devuelto para significa que la barra de tareas no está en el estado siempre visible.
+A partir Windows 7, ABS_ALWAYSONTOP ya no se devuelve porque la barra de tareas siempre está en ese estado. El código anterior debe actualizarse para omitir la ausencia de este valor en no suponer que el valor devuelto significa que la barra de tareas no está en el estado siempre en la parte superior.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>ABS_AUTOHIDE</strong></dt> </dl></td>
-<td>La barra de tareas se encuentra en el estado de ocultar automáticamente.<br/></td>
+<td>La barra de tareas está en estado de autohide.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -86,9 +86,9 @@ A partir de Windows 7, ya no se devuelve ABS_ALWAYSONTOP porque la barra de tare
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>ShellAPI. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

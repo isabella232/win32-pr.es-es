@@ -1,10 +1,10 @@
 ---
-title: atributo bootParameter
+title: Atributo bootParameter
 description: Proporciona los datos necesarios para iniciar un cliente sin disco.
 ms.assetid: b6e90890-ad27-4d2a-aa71-bb433fe7eb75
 ms.tgt_platform: multiple
 keywords:
-- bootParameter esquema de AD de atributos
+- Esquema de AD del atributo bootParameter
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 649507f7a59c46a4221711ba7cf5380b59d6650c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bbf763257df3eed0143210e1b5ad7d4b7f007234c7cad6ef67a038f0a97daeec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177926"
 ---
-# <a name="bootparameter-attribute"></a>atributo bootParameter
+# <a name="bootparameter-attribute"></a>Atributo bootParameter
 
 Proporciona los datos necesarios para iniciar un cliente sin disco.
 
@@ -29,13 +29,13 @@ Proporciona los datos necesarios para iniciar un cliente sin disco.
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | bootParameter                        |
-| Nombre para mostrar de LDAP | bootParameter                        |
+| Ldap-Display-Name | bootParameter                        |
 | Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.23                     |
-| System-ID-GUID    | d72a0750-8c7c-416e-8714-e65f11e908be |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | d72a0750-8c7c-416e-8714-e65f11e908be |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Proporciona los datos necesarios para iniciar un cliente sin disco.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
+| Es de un solo valor       | False                                                 |
 | Está indexado             | False                                                 |
 | En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -73,13 +73,13 @@ Proporciona los datos necesarios para iniciar un cliente sin disco.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
+| Es de un solo valor       | False                                                 |
 | Está indexado             | False                                                 |
 | En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -94,13 +94,13 @@ Proporciona los datos necesarios para iniciar un cliente sin disco.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
+| Es de un solo valor       | False                                                 |
 | Está indexado             | False                                                 |
 | En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -115,13 +115,13 @@ Proporciona los datos necesarios para iniciar un cliente sin disco.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
+| Es de un solo valor       | False                                                 |
 | Está indexado             | False                                                 |
 | En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -130,7 +130,7 @@ Proporciona los datos necesarios para iniciar un cliente sin disco.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 

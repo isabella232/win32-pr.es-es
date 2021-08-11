@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsComputer (iAds. h)
-description: Los métodos de la interfaz IADsComputer leen y escriben las propiedades descritas en este tema. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsComputer (Iads.h)
+description: Los métodos de interfaz IADsComputer leen y escriben las propiedades descritas en este tema. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: c990b6bb-6256-4216-9435-c85c67db4d13
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsComputer ADSI
+- IADsComputer Property Methods ADSI
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f2f3c455e2e43436627b62d142781bb6a605bef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5692ffadde78c338845c497a1209cc6466923fe83e32fbf25649b4cd1d4b367d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179583"
 ---
 # <a name="iadscomputer-property-methods"></a>Métodos de propiedad IADsComputer
 
-Los métodos de la interfaz [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer) leen y escriben las propiedades descritas en este tema. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de interfaz [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer) leen y escriben las propiedades descritas en este tema. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -107,11 +107,11 @@ HRESULT get_ComputerID(
 **Departamento**
 </dt> <dd> <dl>
 
-Unidad organizativa (OU), como Departamento, a la que pertenece este equipo.
+Unidad organizativa (OU), como departamento, a la que pertenece este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -135,11 +135,11 @@ HRESULT put_Department(
 **Descripción**
 </dt> <dd> <dl>
 
-La descripción de este equipo.
+Descripción de este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -167,7 +167,7 @@ La división, dentro de una organización, a la que pertenece este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -195,7 +195,7 @@ Ubicación física asignada de este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -223,7 +223,7 @@ Tamaño, en megabytes, de la memoria de acceso aleatorio para este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -247,11 +247,11 @@ HRESULT put_MemorySize(
 **Modelo**
 </dt> <dd> <dl>
 
-Marca y modelo de este equipo.
+La versión y el modelo de este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -275,14 +275,14 @@ HRESULT put_Model(
 **NetAddresses**
 </dt> <dd> <dl>
 
-Una matriz de campos NetAddress que representan las direcciones a las que se puede tener acceso a este equipo. NetAddress es un **BSTR** específico del proveedor que se compone de dos subcadenas separadas por dos puntos (:). La subcadena izquierda indica el tipo de dirección y la subcadena derecha es una representación de cadena de una dirección de ese tipo. Por ejemplo, las direcciones TCP/IP tienen el siguiente formato: IP: 100.201.301.45. Las direcciones de tipo IPX tienen el formato: IPX: 10.123456.80.
+Matriz de campos NetAddress que representan las direcciones por las que se puede acceder a este equipo. NetAddress es un **BSTR** específico del proveedor compuesto por dos subcadenas separadas por dos puntos (:). La subcadena izquierda indica el tipo de dirección y la subcadena derecha es una representación de cadena de una dirección de ese tipo. Por ejemplo, las direcciones TCP/IP tienen el formato: IP:100.201.301.45. Las direcciones de tipo IPX tienen el formato: IPX:10.123456.80.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -300,14 +300,14 @@ HRESULT put_NetAddresses(
 
 </dt> </dl> </dd> <dt>
 
-**Identifica**
+**OperatingSystem**
 </dt> <dd> <dl>
 
-Sistema operativo que se usa en este equipo.
+Sistema operativo utilizado en este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -331,11 +331,11 @@ HRESULT put_OperatingSystem(
 **OperatingSystemVersion**
 </dt> <dd> <dl>
 
-La versión del sistema operativo que se usa en este equipo.
+Versión del sistema operativo que se usa en este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -363,7 +363,7 @@ La persona a la que se asigna este equipo. Esta persona también debe tener una 
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -387,11 +387,11 @@ HRESULT put_Owner(
 **PrimaryUser**
 </dt> <dd> <dl>
 
-El nombre de la persona de contacto, como un administrador, para este equipo.
+Nombre de la persona de contacto, como un administrador, para este equipo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -419,7 +419,7 @@ Tipo de procesador.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -443,11 +443,11 @@ HRESULT put_Processor(
 **ProcessorCount**
 </dt> <dd> <dl>
 
-El número de procesadores instalados.
+Número de procesadores instalados.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -471,11 +471,11 @@ HRESULT put_ProcessorCount(
 **Rol**
 </dt> <dd> <dl>
 
-El rol de este equipo, por ejemplo, estación de trabajo, servidor o controlador de dominio.
+Rol de este equipo, por ejemplo, estación de trabajo, servidor o controlador de dominio.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -528,7 +528,7 @@ Tamaño, en megabytes, del disco.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -551,17 +551,17 @@ HRESULT put_StorageCapacity(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Distintos proveedores pueden optar por exponer distintas propiedades de un objeto de equipo. Para obtener más información, consulte [ADSI System Providers](adsi-system-providers.md).
+Los distintos proveedores pueden optar por exponer distintas propiedades de un objeto de equipo. Para obtener más información, vea [PROVEEDORES DE SISTEMAS ADSI.](adsi-system-providers.md)
 
-Puede descubrir las propiedades que se admiten mediante la inspección de las propiedades obligatorias y opcionales a través de su clase de esquema. Para obtener más información, consulte la interfaz [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) .
+Puede detectar qué propiedades se admiten inspeccionando las propiedades obligatorias y opcionales a través de su clase de esquema. Para obtener más información, vea [**la interfaz IADsClass.**](/windows/desktop/api/Iads/nn-iads-iadsclass)
 
-Para examinar el estado de un equipo o para realizar la operación de apagado a través de la red, debe usar la interfaz [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) .
+Para examinar el estado de un equipo o realizar la operación de apagado a través de la red, debe usar la interfaz [**IADsComputerOperations.**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código Visual Basic se examinan las propiedades del equipo admitidas por el proveedor WinNT de ADSI.
+En el ejemplo Visual Basic código siguiente se examinan las propiedades del equipo compatibles con el proveedor ADSI WinNT.
 
 
 ```VB
@@ -581,7 +581,7 @@ End If
 
 
 
-En el siguiente ejemplo de código de C++ se examinan las propiedades del equipo admitidas por el proveedor WinNT de ADSI.
+En el siguiente ejemplo de código de C++ se examinan las propiedades del equipo compatibles con el proveedor ADSI WinNT.
 
 
 ```C++
@@ -620,20 +620,20 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsComputer se define como EFE3CC70-1D9F-11cf-B1F3-02608C9E7553<br/>         |
+| IID<br/>                      | IID \_ IADsComputer se define como EFE3CC70-1D9F-11CF-B1F3-02608C9E7553<br/>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 
 [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer)
 </dt> <dt>
 
-[Proveedores de sistema ADSI](adsi-system-providers.md)
+[Proveedores de sistemas ADSI](adsi-system-providers.md)
 </dt> <dt>
 
 [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)

@@ -1,17 +1,17 @@
 ---
 description: Los alias de grupo de columnas proporcionan una manera de usar nombres más cortos en lugar del nombre de una columna o un grupo de columnas. El predicado de alias de grupo opcional forma parte de la cláusula WHERE.
 ms.assetid: 7782ac24-ea6c-4a97-b1b6-982f276fcefc
-title: CON el predicado de alias de grupo AS
+title: 'WITH : predicado de alias de grupo de AS'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29218e11fbffe5f47128eeefba3a7fe847a5b21d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ed77072c83d1c28dcc3ec63396b46a21a57c4a97d9c6dcd70259bd861d19762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226738"
 ---
-# <a name="with----as-group-alias-predicate"></a>CON el predicado de alias de grupo AS
+# <a name="with----as-group-alias-predicate"></a>WITH : predicado de alias de grupo de AS
 
 Los alias de grupo de columnas proporcionan una manera de usar nombres más cortos en lugar del nombre de una columna o un grupo de columnas. El predicado de alias de grupo opcional forma parte de la cláusula WHERE. Su sintaxis es la siguiente:
 
@@ -23,13 +23,13 @@ Los alias de grupo de columnas proporcionan una manera de usar nombres más cort
 
 
 
-Puede especificar más de un alias de grupo, separando la... COMO predicados por comas.
+Puede especificar más de un alias de grupo, separando with... Los predicados AS se basan en comas.
 
-Cuando se hace referencia a un alias de grupo en un predicado de la cláusula WHERE, la condición se aplica a cada columna del grupo. Los valores lógicos resultantes de la coincidencia de cada columna se combinan mediante el operador lógico **or** .
+Cuando se hace referencia a un alias de grupo en un predicado de cláusula WHERE, la condición se aplica a cada columna del grupo. Los valores lógicos resultantes de la coincidencia de cada columna se combinan mediante el operador **lógico OR.**
 
-Se debe definir un alias antes de poder usarlo y solo se puede usar dentro de la cláusula WHERE. El nombre del alias debe ser un identificador normal precedido por un signo de almohadilla ( \# ) necesario.
+Un alias debe definirse antes de que se pueda usar y solo se puede usar dentro de la cláusula WHERE. El nombre de alias debe ser un identificador normal precedido de un signo de kilo requerido ( \# ).
 
-El especificador de columna puede contener uno o más especificadores de columna, separados por comas. La lista de columnas debe ir entre paréntesis y la ponderación se puede asignar a cada una. Cada columna tiene la siguiente sintaxis:
+El especificador de columna puede contener uno o varios especificadores de columna, separados por comas. La lista de columnas debe incluirse entre paréntesis y el peso se puede asignar a cada una de ellas. Cada columna tiene la sintaxis siguiente:
 
 
 ```
@@ -38,13 +38,13 @@ El especificador de columna puede contener uno o más especificadores de columna
 
 
 
-Para obtener información sobre cómo especificar los pesos de las columnas, vea [predicado FREETEXT](-search-sql-freetext.md) and [Contains Predicate](-search-sql-contains.md).
+Para obtener información sobre cómo especificar los pesos de columna, [vea FREETEXT Predicate](-search-sql-freetext.md) y [CONTAINS Predicate](-search-sql-contains.md).
 
 El identificador de columna puede ser normal o delimitado.
 
 ## <a name="examples"></a>Ejemplos
 
-Los siguientes ejemplos de la cláusula WHERE muestran Cuándo y cómo se puede usar el predicado de alias de grupo. EN el primer ejemplo se muestra una cláusula WHERE más repetitiva que no usa el alias de grupo.
+Los siguientes ejemplos de cláusula WHERE muestran cuándo y cómo se puede usar el predicado de alias de grupo. En el primer ejemplo se muestra una cláusula WHERE más repetitiva que no usa alias de grupo.
 
 
 ```
@@ -58,7 +58,7 @@ Los siguientes ejemplos de la cláusula WHERE muestran Cuándo y cómo se puede 
 
 
 
-El ejemplo anterior se puede simplificar mediante el uso de un alias de grupo, tal como se muestra en el ejemplo siguiente.
+El ejemplo anterior se puede simplificar mediante un alias de grupo, como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -70,7 +70,7 @@ El ejemplo anterior se puede simplificar mediante el uso de un alias de grupo, t
 
 
 
-A continuación se ofrece un ejemplo de ponderación positiva en la que la propiedad **title** tiene más peso para determinar el rango relativo.
+A continuación se muestra un ejemplo de ponderación positiva en el que la **propiedad Title** tiene más peso al determinar el rango relativo.
 
 
 ```
@@ -83,7 +83,7 @@ A continuación se ofrece un ejemplo de ponderación positiva en la que la propi
 
 
 
-A continuación se proporciona un ejemplo de ponderación negativa donde no se tiene en cuenta la propiedad **title** con el peso de 0.
+A continuación se muestra un ejemplo de ponderación negativa en el que no se tiene en cuenta la propiedad **Title** con un peso de 0.
 
 
 ```
@@ -106,7 +106,7 @@ A continuación se proporciona un ejemplo de ponderación negativa donde no se t
 [Predicado FREETEXT](-search-sql-freetext.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Predicados de texto completo](-search-sql-fulltextpredicates.md)

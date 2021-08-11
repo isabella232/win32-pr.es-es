@@ -1,10 +1,10 @@
 ---
-title: Mensaje de WM_ADSPROP_NOTIFY_EXIT (Adsprop. h)
-description: Una Active Directory extensión de la hoja de propiedades envía el mensaje de salida de notificación de WM \_ ADSPROP \_ \_ al objeto de notificación cuando ya no se necesita el objeto de notificación.
+title: WM_ADSPROP_NOTIFY_EXIT mensaje (Adsprop.h)
+description: Una Active Directory de hoja de propiedades envía el mensaje WM ADSPROP NOTIFY EXIT al objeto de notificación cuando el objeto de notificación \_ \_ ya no es \_ necesario.
 ms.assetid: b0f58c73-8953-412d-b801-bf34967fe0b4
 ms.tgt_platform: multiple
 keywords:
-- WM_ADSPROP_NOTIFY_EXIT Active Directory de mensaje
+- WM_ADSPROP_NOTIFY_EXIT mensaje Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32d74ef4b7dfa525cfb77a6d89499837cbfac8f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e144bb0b24112cabe1a806d4c746aac07708443665c0f457df8756be36d80b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181969"
 ---
-# <a name="wm_adsprop_notify_exit-message"></a>\_Mensaje de \_ salida de notificación de ADSPROP de WM \_
+# <a name="wm_adsprop_notify_exit-message"></a>Mensaje \_ DE SALIDA DE WM ADSPROP \_ NOTIFY \_
 
-Una Active Directory extensión de la hoja de propiedades envía el mensaje de **\_ \_ \_ salida** de notificación de WM ADSPROP al objeto de notificación cuando ya no se necesita el objeto de notificación.
+Una Active Directory de hoja de propiedades envía el mensaje **\_ WM ADSPROP NOTIFY \_ \_ EXIT** al objeto de notificación cuando el objeto de notificación ya no es necesario.
 
 
 ```C++
@@ -41,24 +41,24 @@ WM_ADSPROP_NOTIFY_EXIT
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador del objeto de notificación. Para obtener este identificador, llame a [**ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj).
+Identificador del objeto de notificación. Para obtener este identificador, llame [**a ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj).
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ No se utiliza.
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El objeto de notificación se eliminará en respuesta a este mensaje. Cuando se envía este mensaje, el identificador del objeto de notificación debe considerarse no válido.
+El objeto de notificación se eliminará en respuesta a este mensaje. Cuando se ha enviado este mensaje, el identificador del objeto de notificación debe considerarse no válido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,11 +78,11 @@ El objeto de notificación se eliminará en respuesta a este mensaje. Cuando se 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Adsprop. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Adsprop.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 <dl> <dt>
 

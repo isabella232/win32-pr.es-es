@@ -1,7 +1,7 @@
 ---
 description: La función DeletePrintProvidor quita un proveedor de impresión agregado por la función AddPrintProvidor.
 ms.assetid: b7104f9a-111c-4904-a355-063bb4cc81f1
-title: Función DeletePrintProvidor (winspool. h)
+title: Función DeletePrintProvidor (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: e68e56f115bac8abb1d0999990f57067f791d76d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97870208508f0a0d23b1f3ee2971a3738b8e22b8d6ef7b4252dffb2a7e77289f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235232"
 ---
-# <a name="deleteprintprovidor-function"></a>DeletePrintProvidor función)
+# <a name="deleteprintprovidor-function"></a>Función DeletePrintProvidor
 
-La función **DeletePrintProvidor** quita un proveedor de impresión agregado por la función [**AddPrintProvidor**](addprintprovidor.md) .
+La **función DeletePrintProvidor** quita un proveedor de impresión agregado por [**la función AddPrintProvidor.**](addprintprovidor.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,37 +43,37 @@ BOOL DeletePrintProvidor(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Sector debe ser **null**.
+Reservado; debe ser **NULL.**
 
 </dd> <dt>
 
-*pEnvironment* \[ de\]
+*pEnvironment* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el entorno desde el que se va a quitar el proveedor (por ejemplo, Windows NT x86, Windows IA64 o Windows x64). Si este parámetro es **null**, el proveedor se quita del entorno actual de la aplicación que realiza la llamada y del equipo cliente (no de la aplicación de destino y del servidor de impresión). **Null** es el valor recomendado porque proporciona la máxima portabilidad.
+Puntero a una cadena terminada en NULL que especifica el entorno del que se va a quitar el proveedor (por ejemplo, Windows NT x86, Windows IA64 o Windows x64). Si este parámetro es **NULL,** el proveedor se quita del entorno actual de la aplicación que realiza la llamada y del equipo cliente (no de la aplicación de destino ni del servidor de impresión). **NULL** es el valor recomendado porque proporciona la portabilidad máxima.
 
 </dd> <dt>
 
-*pPrintProviderName* \[ de\]
+*pPrintProviderName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del proveedor que se va a quitar.
+Puntero a una cadena terminada en NULL que especifica el nombre del proveedor que se va a quitar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -81,13 +81,13 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **DeletePrintProvidorW** (Unicode) y **DeletePrintProvidorA** (ANSI)<br/>                         |
 
 

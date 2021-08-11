@@ -1,19 +1,19 @@
 ---
-description: Cadena que indica el fabricante de la lente utilizada para tomar la foto. Puede estar en blanco o no presente.
+description: Cadena que indica el fabricante de la lente usada para tomar la imagen. Puede estar en blanco o no estar presente.
 ms.assetid: 81fb5540-509d-44ac-a249-430a0466fdbd
-title: System. Photo. LensManufacturer
+title: System.Photo.LensManufacturer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76593785bc2a86e5e35d4965f89564d8a308d606
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13943a8827c6787bb28caaec55673b43bb4a2c17ccf97a07f78197cfb8dbcbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228433"
 ---
-# <a name="systemphotolensmanufacturer"></a>System. Photo. LensManufacturer
+# <a name="systemphotolensmanufacturer"></a>System.Photo.LensManufacturer
 
-Cadena que indica el fabricante de la lente utilizada para tomar la foto. Puede estar en blanco o no presente.
+Cadena que indica el fabricante de la lente usada para tomar la imagen. Puede estar en blanco o no estar presente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

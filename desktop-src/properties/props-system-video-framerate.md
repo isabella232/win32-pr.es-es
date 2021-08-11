@@ -1,17 +1,17 @@
 ---
 description: Indica la velocidad de fotogramas de la secuencia de vídeo, en fotogramas por 1000 segundos.
 ms.assetid: cd5a2ae0-43ef-44e4-aa70-bca33baf2a56
-title: System. video. velocidad de fotogramas
+title: System.Video.FrameRate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcbdee7991186621a9d636e2072cecafc70176d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ee60d2a222809616064b57a90f9909909c4165494f0d9b62a3c16acd42d0339
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227377"
 ---
-# <a name="systemvideoframerate"></a>System. video. velocidad de fotogramas
+# <a name="systemvideoframerate"></a>System.Video.FrameRate
 
 Indica la velocidad de fotogramas de la secuencia de vídeo, en fotogramas por 1000 segundos.
 
@@ -46,11 +46,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para ayudar a reducir el error de truncamiento, esta propiedad no utiliza la medida de velocidad de fotogramas estándar de fotogramas por segundo (FPS). En su lugar, esta propiedad mide la velocidad de fotogramas como fotogramas por 1000 segundos (FPS multiplicado por 1000). Por ejemplo, [System. video. fotogramas]() expresaría una velocidad de fotogramas de 29,97 fps como valor entero de 29970.
+Para ayudar a reducir el error de truncamiento, esta propiedad no usa la medida de velocidad de fotogramas estándar de fotogramas por segundo (FPS). En su lugar, esta propiedad mide la velocidad de fotogramas como fotogramas por 1000 segundos (FPS multiplicado por 1000). Por ejemplo, [System.Video.FrameRate]() expresaría una velocidad de fotogramas de 29,97 FPS como un valor entero de 29970.
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -65,7 +65,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -95,7 +95,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

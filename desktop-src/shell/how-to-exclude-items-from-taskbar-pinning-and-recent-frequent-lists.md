@@ -1,23 +1,23 @@
 ---
-description: Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar disponibles para el anclaje en la barra de tareas o para su inclusión en la lista de uso más frecuente (MFU) del menú Inicio.
-title: Cómo excluir elementos del anclaje de la barra de tareas y listas recientes/frecuentes
+description: Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar disponibles para anclarse a la barra de tareas o para su inclusión en la lista de uso más frecuente (MFU) de menú Inicio.
+title: Cómo excluir elementos de la anclación de la barra de tareas y listas recientes o frecuentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af7f32ad641832703804f94b8cc28f47ea9cabb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3adb60353836e436f4327837c30448c7628a435048cc2a41b0464d56341f410
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223569"
 ---
-# <a name="how-to-exclude-items-from-taskbar-pinning-and-recentfrequent-lists"></a>Cómo excluir elementos del anclaje de la barra de tareas y listas recientes/frecuentes
+# <a name="how-to-exclude-items-from-taskbar-pinning-and-recentfrequent-lists"></a>Cómo excluir elementos de la anclación de la barra de tareas y listas recientes o frecuentes
 
-Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar disponibles para el anclaje en la barra de tareas o para su inclusión en la lista de uso más frecuente (MFU) del menú **Inicio** .
+Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar  disponibles para anclarse a la barra de tareas o para su inclusión en la lista De uso más frecuente (MFU) del menú Inicio.
 
 ## <a name="instructions"></a>Instrucciones
 
 
-Existen tres mecanismos para conseguir la exclusión de elementos del anclaje de la barra de tareas y listas recientes/frecuentes:
+Hay tres mecanismos para lograr la exclusión de elementos de las listas ancladas de la barra de tareas y las listas recientes o frecuentes:
 
 -   Agregue la entrada NoStartPage al registro de la aplicación como se muestra en este ejemplo:
 
@@ -28,12 +28,12 @@ Existen tres mecanismos para conseguir la exclusión de elementos del anclaje de
              NoStartPage
     ```
 
-    Se omiten los datos asociados a la entrada NoStartPage. Solo se requiere la presencia de la entrada. Por lo tanto, el tipo ideal para NoStartPage es **reg \_ None**.
+    Se omiten los datos asociados a la entrada NoStartPage. Solo se requiere la presencia de la entrada. Por lo tanto, el tipo ideal para NoStartPage es **REG \_ NONE.**
 
-    Tenga en cuenta que cualquier uso de un identificador de modelo de usuario de aplicación explícito (AppUserModelID) reemplaza la entrada NoStartPage. Si se aplica un AppUserModelID explícito a un acceso directo, proceso o ventana, se convierte en anclable y es válido para la lista de MFU del menú **Inicio** .
+    Tenga en cuenta que cualquier uso de un identificador de modelo de usuario de aplicación explícito (AppUserModelID) invalida la entrada NoStartPage. Si se aplica un AppUserModelID explícito a un acceso directo, proceso o  ventana, se vuelve anclable y apto para la lista MFU del menú Inicio.
 
--   Establezca la propiedad [System. AppUserModel. PreventPinning](../properties/props-system-appusermodel-preventpinning.md) en Windows y los métodos abreviados. Esta propiedad se debe establecer en una ventana antes de que se establezca la propiedad [PKEY \_ AppUserModel \_ ID](../properties/props-system-appusermodel-id.md) .
--   Agregue un AppUserModelID explícito como valor en la subclave del Registro siguiente, tal como se muestra en este ejemplo:
+-   Establezca la [propiedad System.AppUserModel.PreventPinning](../properties/props-system-appusermodel-preventpinning.md) en ventanas y accesos directos. Esta propiedad debe establecerse en una ventana antes de establecer la [propiedad \_ AppUserModel \_ ID de PKEY.](../properties/props-system-appusermodel-id.md)
+-   Agregue un AppUserModelID explícito como un valor en la subclave del Registro siguiente, como se muestra en este ejemplo:
 
     ```
     HKEY_LOCAL_MACHINE
@@ -49,18 +49,18 @@ Existen tres mecanismos para conseguir la exclusión de elementos del anclaje de
                             AppUserModelID3
     ```
 
-    Cada entrada es un valor de **reg \_ null** con el nombre de AppUserModelID. Cualquier AppUserModelID que se encuentre en esta lista no es anclable y no es válido para su inclusión en la lista de MFU del menú **Inicio** .
+    Cada entrada es un **valor REG \_ NULL** con el nombre de AppUserModelID. Los AppUserModelID que se encuentran en esta lista no se pueden anclar y no se pueden incluir en la **lista** MFU del menú Inicio.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que determinados archivos ejecutables, así como accesos directos que contienen determinadas cadenas en sus nombres, se excluyen automáticamente del anclaje y la inclusión en la lista de MFU.
+Tenga en cuenta que determinados archivos ejecutables, así como los accesos directos que contienen determinadas cadenas en sus nombres, se excluyen automáticamente de la anclar e incluir en la lista MFU.
 
 > [!Note]  
-> Esta exclusión automática se puede invalidar mediante la aplicación de un AppUserModelID explícito.
+> Esta exclusión automática se puede invalidar aplicando un AppUserModelID explícito.
 
  
 
-Si alguna de las siguientes cadenas, con independencia del caso, se incluye en el nombre de acceso directo, el programa no se muestra anclado y no se muestra en la lista de elementos usados con mayor frecuencia (no aplicable a Windows 10):
+Si alguna de las cadenas siguientes, independientemente de las mayúsculas y minúsculas, se incluye en el nombre del acceso directo, el programa no se puede anclar y no se muestra en la lista de uso más frecuente (no se aplica a Windows 10):
 
 -   Documentación
 -   Ayuda
@@ -72,9 +72,9 @@ Si alguna de las siguientes cadenas, con independencia del caso, se incluye en e
 -   Quitar
 -   Configurar
 -   Soporte técnico
--   Novedades
+-   What's New
 
-La siguiente lista de programas no es anclable y se excluyen de la lista de uso más frecuente:
+La siguiente lista de programas no se puede anclar y se excluye de la lista de uso más frecuente:
 
 -   Applaunch.exe
 -   Control.exe
@@ -99,10 +99,10 @@ La siguiente lista de programas no es anclable y se excluyen de la lista de uso 
 -   Wlrmdr.exe
 -   Wuapp.exe
 
-Las listas anteriores se almacenan en los siguientes valores del registro.
+Las listas anteriores se almacenan en los siguientes valores del Registro.
 
 > [!Note]  
-> Las aplicaciones no deben modificar estas listas. Use uno de los métodos de lista de exclusión descritos anteriormente en este tema para obtener la misma experiencia.
+> Las aplicaciones no deben modificar estas listas. Use uno de los métodos de lista de exclusión descritos anteriormente en este tema para la misma experiencia.
 
  
 
@@ -122,7 +122,7 @@ HKEY_LOCAL_MACHINE
 
 <dl> <dt>
 
-[La barra de tareas](taskbar.md)
+[Barra de tareas](taskbar.md)
 </dt> <dt>
 
 [Extensiones de la barra de tareas](taskbar-extensions.md)

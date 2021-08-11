@@ -4,12 +4,12 @@ ms.assetid: c17167ab-e9a0-4290-955c-484d038b82af
 title: Ejecutar elementos Panel de control datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08cb6ae2fa08231d3876e1a5a636e404f519f4a6
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: fc1e2bc84ce5225176585f2da221fab6110ce79f9ff68dfc83b3c66125d623d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224281"
 ---
 # <a name="executing-control-panel-items"></a>Ejecutar elementos Panel de control datos
 
@@ -100,7 +100,7 @@ En Windows Vista, algunas opciones a las que se ha accedido mediante un módulo 
 
  
 
-### <a name="system"></a>Sistema
+### <a name="system"></a>System
 
 -   Rendimiento: %windir% \\ system32 \\SystemPropertiesPerformance.exe
 -   Acceso remoto: %windir% \\ system32 \\SystemPropertiesRemote.exe
@@ -193,7 +193,7 @@ Para Windows sistemas 2000 y posteriores:
 
 
 
-| Comando                    | Descripción                                              |
+| Get-Help                    | Descripción                                              |
 |----------------------------|----------------------------------------------------------|
 | control.exe carpetas        | Inicia la ventana **Opciones de carpeta.**                  |
 | control.exe netware        | Inicia la ventana **NetWare de Asíns** (si está instalada).   |
@@ -201,7 +201,7 @@ Para Windows sistemas 2000 y posteriores:
 | control.exe admintools     | Muestra la **carpeta Herramientas administrativas.**            |
 | control.exe schedtasks     | Muestra la **carpeta Tareas programadas.**                 |
 | control.exe netconnections | Muestra la carpeta **Conexiones de** red.             |
-| control.exe de datos       | Inicia la ventana **Monitor de inifijo** (si está instalado). |
+| control.exe de datos       | Inicia la ventana **Monitor de** infieles (si está instalado). |
 | control.exe userpasswords  | Inicia la ventana **Cuentas de** usuario.                   |
 
 
@@ -233,7 +233,7 @@ Para Windows sistemas 2000 y posteriores:
 [Asignación de Panel de control categorías](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Crear vínculos de tareas buscables para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
+[Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
 </dt> <dt>
 
 [Acceso al Panel de control en modo Caja fuerte en Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)

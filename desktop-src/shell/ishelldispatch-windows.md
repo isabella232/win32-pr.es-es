@@ -1,7 +1,7 @@
 ---
-description: 'Método IShellDispatch.Windows: crea y devuelve un objeto ShellWindows. Este objeto representa una colección de todas las ventanas abiertas que pertenecen al Shell.'
+description: 'IShellDispatch. Windows método : crea y devuelve un objeto ShellWindows. Este objeto representa una colección de todas las ventanas abiertas que pertenecen al Shell.'
 ms.assetid: 788E2106-3534-4e22-801F-677FD02BDFE0
-title: Método IShellDispatch.Windows (Shldisp.h)
+title: IShellDispatch. Windows método (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 16991d6a251909e8f3b277894a96e6ad08a7f9a4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f17e6f9ff4a8118043cf452af0647b78c7d2c4365f83a497481ee97236edb21c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118221640"
 ---
-# <a name="ishelldispatchwindows-method"></a>Método IShellDispatch.Windows
+# <a name="ishelldispatchwindows-method"></a>IShellDispatch. Windows método
 
 Crea y devuelve un [**objeto ShellWindows.**](shellwindows.md) Este objeto representa una colección de todas las ventanas abiertas que pertenecen al Shell.
 
@@ -65,9 +65,9 @@ Este método se implementa y se accede a través del [**método Shell.Windows.**
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se **usa Windows** para recuperar el objeto [**ShellWindows**](shellwindows.md) y mostrar un recuento del número de elementos que contiene. El uso se muestra para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes **Windows** para recuperar el objeto [**ShellWindows**](shellwindows.md) y mostrar un recuento del número de elementos que contiene. El uso se muestra para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -139,9 +139,9 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

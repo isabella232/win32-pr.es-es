@@ -1,11 +1,11 @@
 ---
-title: Atributo admin-context-menu
-description: El número de orden y el GUID del menú contextual que se usará en las pantallas de administración.
+title: Atributo Admin-Context-Menu
+description: Número de pedido y GUID del menú contextual que se va a usar en las pantallas de administración.
 ms.assetid: da388bf3-1c44-4d34-b763-e45b784d3c9e
 ms.tgt_platform: multiple
 keywords:
-- 'Administrador: esquema de AD de atributo de menú contextual'
-- adminContextMenu esquema de AD de atributos
+- Esquema de AD del atributo Admin-Context-Menu
+- Esquema de AD del atributo adminContextMenu
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 955267bf1e494d6bb0c98b3f5d25832896393ff2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c217d5aa5ef94f16a250bdd5c6ec8bd506a8acd668eb3094d9e9adc35d0efccb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178284"
 ---
-# <a name="admin-context-menu-attribute"></a>Atributo admin-context-menu
+# <a name="admin-context-menu-attribute"></a>Atributo Admin-Context-Menu
 
-El número de orden y el GUID del menú contextual que se usará en las pantallas de administración.
+Número de pedido y GUID del menú contextual que se va a usar en las pantallas de administración.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Menú de contexto de administrador                          |
-| Nombre para mostrar de LDAP | adminContextMenu                            |
+| CN                | Menú contextual de administración                          |
+| Ldap-Display-Name | adminContextMenu                            |
 | Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| Privilegio actualizar  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.614                      |
-| System-ID-GUID    | 553fd038-f32e-11d0-b0bc-00c04fd8dca6        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 553fd038-f32e-11d0-b0bc-00c04fd8dca6        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ El número de orden y el GUID del menú contextual que se usará en las pantalla
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -76,13 +76,13 @@ El número de orden y el GUID del menú contextual que se usará en las pantalla
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -97,13 +97,13 @@ El número de orden y el GUID del menú contextual que se usará en las pantalla
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -118,13 +118,13 @@ El número de orden y el GUID del menú contextual que se usará en las pantalla
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -139,13 +139,13 @@ El número de orden y el GUID del menú contextual que se usará en las pantalla
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -160,13 +160,13 @@ El número de orden y el GUID del menú contextual que se usará en las pantalla
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
