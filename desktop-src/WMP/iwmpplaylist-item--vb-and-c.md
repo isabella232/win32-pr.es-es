@@ -1,9 +1,9 @@
 ---
-title: IWMPPlaylist. Item (VB y C)
-description: La propiedad Item (el \_ método get item en C \) obtiene una interfaz para el elemento multimedia en el índice especificado.
+title: IWMPPlaylist.Item (VB y C )
+description: La propiedad Item (el método get Item en C\) obtiene una interfaz al \_ elemento multimedia en el índice especificado.
 ms.assetid: 874663e2-0b89-4ef7-9d4a-3a334482b352
 keywords:
-- IWMPPlaylist. Item (VB y C) Windows Media Player
+- IWMPPlaylist.Item (VB y C ) Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1318f37c3f590eec2c97252e2f484b0d1bc6d83
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06b4c29b5f3821ad2ec3434fcad2defc2e4128e7f6e69c70940294ef0ff7f963
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575422"
 ---
-# <a name="iwmpplaylistitem-vb-and-c"></a>IWMPPlaylist. Item (VB y C#)
+# <a name="iwmpplaylistitem-vb-and-c"></a>IWMPPlaylist.Item (VB y C#)
 
-La propiedad **Item** (el método **Get \_ Item** en C#) obtiene una interfaz para el elemento multimedia en el índice especificado.
+La **propiedad Item** (el método get **\_ Item** en C#) obtiene una interfaz para el elemento multimedia en el índice especificado.
 
 
 ```
@@ -47,21 +47,21 @@ IWMPMedia get_Item (
 
 ## <a name="parameters"></a>Parámetros
 
-*lIndex*
+*Lindex*
 
-**System. Int32** que es el índice del elemento multimedia de la lista de reproducción.
+**System.Int32 que** es el índice del elemento multimedia de la lista de reproducción.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Una interfaz **WMPLib. IWMPMedia** que proporciona acceso al elemento multimedia en el índice especificado.
+Interfaz **WMPLib.IWMPMedia** que proporciona acceso al elemento multimedia en el índice especificado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**IWMPPlaylist. Item** es una propiedad de solo lectura en Visual Basic que toma un parámetro, mientras que en C# se conoce como el método **IWMPPlaylist. Get \_ Item** .
+**IWMPPlaylist.Item** es una propiedad de solo lectura en Visual Basic que toma un parámetro, mientras que en C# se conoce como el método **IWMPPlaylist.get \_ Item.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa la propiedad **Item** (el método **Get \_ Item** en C#) para recuperar un elemento multimedia de una lista de reproducción basada en una selección de usuario. Se ha creado un cuadro de lista con el nombre weblist y se han rellenado con los títulos de la lista de reproducción denominada audioPlaylist. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se usa la **propiedad Item** (el método **get \_ Item** en C#) para recuperar un elemento multimedia de una lista de reproducción en función de una selección del usuario. Se creó un cuadro de lista con el nombre weblist y se llenó con los títulos de la lista de reproducción denominado audioPlaylist. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -104,15 +104,15 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -122,16 +122,16 @@ End Sub
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. insertItem (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-insertitem--vb-and-c.md)
+[**IWMPPlaylist.insertItem (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-insertitem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. removeItem (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-removeitem--vb-and-c.md)
+[**IWMPPlaylist.removeItem (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-removeitem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

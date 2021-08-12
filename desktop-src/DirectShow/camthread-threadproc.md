@@ -1,7 +1,7 @@
 ---
 description: El método ThreadProc es el procedimiento de subproceso.
 ms.assetid: 2d991f15-afea-4843-bc68-aeb5ca69d28b
-title: Método CAMThread. ThreadProc (Wxutil. h)
+title: Método CAMThread.ThreadProc (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7081a7f7e1cd84a6bf8d482aa7dddf7a48b39f0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6419d315e162f859f49ee2448758999ca194adf8c16c6210f77d919fa2a18f47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662121"
 ---
-# <a name="camthreadthreadproc-method"></a>CAMThread. ThreadProc (método)
+# <a name="camthreadthreadproc-method"></a>Método CAMThread.ThreadProc
 
 El `ThreadProc` método es el procedimiento de subproceso.
 
@@ -42,15 +42,15 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **DWORD** cuyo significado está definido por la clase derivada.
+Devuelve un **valor DWORD** cuyo significado está definido por la clase derivada.
 
 ## <a name="remarks"></a>Observaciones
 
-Este es un método virtual puro. Implemente este método en la clase derivada para proporcionar un procedimiento de subproceso. Cuando el método [**CAMThread:: Create**](camthread-create.md) crea un subproceso, proporciona la dirección del método [**CAMThread:: InitialThreadProc**](camthread-initialthreadproc.md) , que a su vez llama al método ThreadProc.
+Se trata de un método virtual puro. Implemente este método en la clase derivada para proporcionar un procedimiento de subproceso. Cuando el [**método CAMThread::Create**](camthread-create.md) crea un subproceso, proporciona la dirección del método [**CAMThread::InitialThreadProc,**](camthread-initialthreadproc.md) que a su vez llama al método ThreadProc.
 
-Normalmente, el método ThreadProc entrará en un bucle que recupera las solicitudes (llamando a los métodos [**CAMThread:: GetRequest**](camthread-getrequest.md) o [**CAMThread:: CheckRequest**](camthread-checkrequest.md) ) y procesa los datos.
+Normalmente, el método ThreadProc escribirá un bucle que recupera las solicitudes (llamando a los métodos [**CAMThread::GetRequest**](camthread-getrequest.md) o [**CAMThread::CheckRequest)**](camthread-checkrequest.md) y procesa los datos.
 
-Cuando este método finaliza, el subproceso se cierra.
+Cuando este método devuelve un resultado, el subproceso se cierra.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,8 +58,8 @@ Cuando este método finaliza, el subproceso se cierra.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Cuando este método finaliza, el subproceso se cierra.
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

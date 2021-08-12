@@ -1,7 +1,7 @@
 ---
-description: El \_ método get AvgFrameRate calcula y recupera la velocidad media de fotogramas obtenida.
+description: El método \_ get AvgFrameRate calcula y recupera la velocidad media de fotogramas lograda.
 ms.assetid: f36fc020-8c1a-491f-9f55-18265fde8bf8
-title: Método CBaseVideoRenderer.get_AvgFrameRate (Renbase. h)
+title: CBaseVideoRenderer.get_AvgFrameRate método (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56d8fff53f3d56676805eca9029670d51210ef2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79aab0677cfd5cba5f6a889519e0c12ed2236d8f82eca28b3fa7b227b941b2b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658788"
 ---
-# <a name="cbasevideorendererget_avgframerate-method"></a>CBaseVideoRenderer. Get \_ AvgFrameRate (método)
+# <a name="cbasevideorendererget_avgframerate-method"></a>Método CBaseVideoRenderer.get \_ AvgFrameRate
 
-El `get_AvgFrameRate` método calcula y recupera la velocidad media de fotogramas obtenida.
+El `get_AvgFrameRate` método calcula y recupera la velocidad media de fotogramas lograda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT get_AvgFrameRate(
 *piAvgFrameRate* 
 </dt> <dd>
 
-Puntero al número de fotogramas por segundo desde que comenzó la transmisión por secuencias.
+Puntero al número de fotogramas por segundo desde que comenzó el streaming.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función miembro implementa el método [**IQualProp:: get \_ AvgFrameRate**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_avgframerate) .
+Esta función miembro implementa el [**método IQualProp::get \_ AvgFrameRate.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_avgframerate)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IQualProp:: get \_ AvgFrameRate**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IQualProp:: get \_ AvgFrameRate**
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

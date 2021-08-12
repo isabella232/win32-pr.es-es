@@ -1,7 +1,7 @@
 ---
-description: 'El método ReleaseBuffer devuelve un ejemplo multimedia a la lista de ejemplos de medios disponibles. Este método implementa el método IMemAllocator:: ReleaseBuffer.'
+description: El método ReleaseBuffer devuelve un ejemplo multimedia a la lista de ejemplos de medios gratuitos. Este método implementa el método IMemAllocator::ReleaseBuffer.
 ms.assetid: 35e4e426-044c-4e57-af13-2fddf8501db7
-title: Método CBaseAllocator. ReleaseBuffer (Amfilter. h)
+title: Método CBaseAllocator.ReleaseBuffer (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8e339f3a8186e845e28261633806a61b1b15c281
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d1096cc7cd4ed31346b38719a3f622edf780408fd50262d93515f68d92b421d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118661511"
 ---
-# <a name="cbaseallocatorreleasebuffer-method"></a>CBaseAllocator. ReleaseBuffer, método
+# <a name="cbaseallocatorreleasebuffer-method"></a>Método CBaseAllocator.ReleaseBuffer
 
-El `ReleaseBuffer` método devuelve un ejemplo multimedia a la lista de ejemplos de medios disponibles. Este método implementa el método [**IMemAllocator:: ReleaseBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) .
+El `ReleaseBuffer` método devuelve un ejemplo multimedia a la lista de ejemplos de medios gratuitos. Este método implementa el [**método IMemAllocator::ReleaseBuffer.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,22 +45,22 @@ HRESULT ReleaseBuffer(
 *pSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del objeto de ejemplo multimedia.
+Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del objeto de ejemplo multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el recuento de referencias de un ejemplo multimedia llega a cero, el ejemplo llama a **ReleaseBuffer** con sí mismo como parámetro. Este método realiza las acciones siguientes.
+Cuando el recuento de referencias de un ejemplo multimedia alcanza cero, el ejemplo llama a **ReleaseBuffer** con sí mismo como parámetro. Este método realiza las siguientes acciones.
 
--   Devuelve el ejemplo de medio a la lista libre ([**CBaseAllocator:: m \_ lFree**](cbaseallocator-m-lfree.md)).
--   Llama al método [**CBaseAllocator:: NotifySample**](cbaseallocator-notifysample.md) , que libera todos los subprocesos que están bloqueados en llamadas al método [**CBaseAllocator:: getBuffer**](cbaseallocator-getbuffer.md) .
--   Si se llamó previamente al método [**CBaseAllocator:: SetNotify**](cbaseallocator-setnotify.md) , llama al método **IMemAllocatorNotifyCallbackTemp:: NotifyRelease** .
--   Cuando se libera la última muestra, si hay una llamada pendiente [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) , llama al método [**CBaseAllocator:: Free**](cbaseallocator-free.md) para liberar la memoria del búfer. (En la clase base, **Free** es un método virtual puro).
+-   Devuelve el ejemplo multimedia a la lista libre ([**CBaseAllocator::m \_ lFree**](cbaseallocator-m-lfree.md)).
+-   Llama al [**método CBaseAllocator::NotifySample,**](cbaseallocator-notifysample.md) que libera los subprocesos bloqueados en las llamadas al método [**CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md)
+-   Si anteriormente se llamó al método [**CBaseAllocator::SetNotify,**](cbaseallocator-setnotify.md) llama al método **IMemAllocatorNotifyCallbackTemp::NotifyRelease.**
+-   Cuando se publica el último ejemplo, si hay una llamada a [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) pendiente, llama al método [**CBaseAllocator::Free**](cbaseallocator-free.md) para liberar la memoria del búfer. (En la clase base, **Free es** un método virtual puro).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ Cuando el recuento de referencias de un ejemplo multimedia llega a cero, el ejem
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Cuando el recuento de referencias de un ejemplo multimedia llega a cero, el ejem
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

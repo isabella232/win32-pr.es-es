@@ -1,7 +1,7 @@
 ---
-description: El método ReconnectPin interrumpe una conexión de PIN existente y la vuelve a conectar al mismo pin, utilizando un tipo de medio especificado.
+description: El método ReconnectPin interrumpe una conexión de pin existente y la vuelve a conectar al mismo pin, utilizando un tipo de medio especificado.
 ms.assetid: 9e2dea49-a2bd-4abd-b896-54b13b2271bb
-title: Método CBaseFilter. ReconnectPin (Amfilter. h)
+title: Método CBaseFilter.ReconnectPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22507995621d708e40437175d7004d10f68fedb5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a39cef0ac5a0a7c4f186b8eae90a96a8e26fbf886f819dc7562cb7d8df4e087e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659725"
 ---
-# <a name="cbasefilterreconnectpin-method"></a>CBaseFilter. ReconnectPin, método
+# <a name="cbasefilterreconnectpin-method"></a>Método CBaseFilter.ReconnectPin
 
-El `ReconnectPin` método interrumpe una conexión de PIN existente y lo vuelve a conectar al mismo pin, utilizando un tipo de medio especificado.
+El método interrumpe una conexión de pin existente y la vuelve a conectar `ReconnectPin` al mismo pin, utilizando un tipo de medio especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,27 +46,27 @@ HRESULT ReconnectPin(
 *pPin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN.
+Puntero a la interfaz [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin.
 
 </dd> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que especifica el tipo de medio, o **null**.
+Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que especifica el tipo de medio o **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que aparecen en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                   | Descripción                                                                       |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Correcto.<br/>                                                               |
-| <dl> <dt>**E \_ NOinterface**</dt> </dl> | la variable miembro de [**m \_ PGraph**](cbasefilter-m-pgraph.md) es **null**.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto.<br/>                                                               |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | [**La \_ variable miembro m pGraph**](cbasefilter-m-pgraph.md) es **NULL.**<br/> |
 
 
 
@@ -74,7 +74,7 @@ Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que a
 
 ## <a name="remarks"></a>Observaciones
 
-Este método llama al método [**IFilterGraph2:: ReconnectEx**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-reconnectex) en el administrador de gráficos de filtro. Si la interfaz [**IFilterGraph2**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph2) no está disponible, el método llama a [**IFilterGraph:: reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect).
+Este método llama al [**método IFilterGraph2::ReconnectEx**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-reconnectex) en el administrador de gráficos de filtros. Si la [**interfaz IFilterGraph2**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph2) no está disponible, el método llama a [**IFilterGraph::Reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ Este método llama al método [**IFilterGraph2:: ReconnectEx**](/windows/desktop
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Este método llama al método [**IFilterGraph2:: ReconnectEx**](/windows/desktop
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

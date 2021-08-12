@@ -1,24 +1,24 @@
 ---
-description: La lista siguiente proporciona vínculos a documentación en la que se describen las funciones, las devoluciones de llamada, las estructuras y las constantes que se deben usar al trabajar con la API de gráficos del mismo nivel.
+description: En la lista siguiente se proporcionan vínculos a documentación que describe las funciones, devoluciones de llamada, estructuras y constantes que se usarán al trabajar con Peer Graphing API.
 ms.assetid: b0291daa-7f6a-4f4d-8b8c-fe09e8d1f4a4
-title: Referencia de la API de gráficos
+title: Referencia de Graphing API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd0ce09b2577080c81ae61d8d3630ad1e4623248
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1695cb5ad0fee5217d2556110f332d6d2ec822d945cc8882d85d92ec3b726c4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612104"
 ---
-# <a name="graphing-api-reference"></a>Referencia de la API de gráficos
+# <a name="graphing-api-reference"></a>Referencia de Graphing API
 
-La lista siguiente proporciona vínculos a documentación en la que se describen las funciones, las devoluciones de llamada, las estructuras y las constantes que se deben usar al trabajar con la API de gráficos del mismo nivel:
+En la lista siguiente se proporcionan vínculos a documentación que describe las funciones, devoluciones de llamada, estructuras y constantes que se usarán al trabajar con Peer Graphing API:
 
--   [Funciones de la API de gráficos](graphing-api-functions.md)
--   [Devoluciones de llamada de la API de gráficos](graphing-api-callbacks.md)
--   [Gráficos de estructuras de API](graphing-api-structures.md)
--   [Constantes de la API de gráficos](graphing-api-enumerations.md)
+-   [Funciones de graphing API](graphing-api-functions.md)
+-   [Devoluciones de llamada de graphing API](graphing-api-callbacks.md)
+-   [Estructuras de GRAPHING API](graphing-api-structures.md)
+-   [Constantes de GRAPHING API](graphing-api-enumerations.md)
 
  
 

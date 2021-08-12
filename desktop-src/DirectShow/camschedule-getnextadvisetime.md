@@ -1,7 +1,7 @@
 ---
-description: El método GetNextAdviseTime recupera la hora de la solicitud de notificación siguiente.
+description: El método GetNextAdviseTime recupera la hora de la siguiente solicitud de aviso.
 ms.assetid: 2a376250-fb39-46d7-a5a8-e3a3143cd209
-title: Método CAMSchedule. GetNextAdviseTime (Dsschedule. h)
+title: Método CAMSchedule.GetNextAdviseTime (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5894ae98666c9134abd4bce96922a5f28d5919b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c7fd04622a5cdab8bade32f41b090d8f480db292209d284804b5180134954f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662352"
 ---
-# <a name="camschedulegetnextadvisetime-method"></a>CAMSchedule. GetNextAdviseTime, método
+# <a name="camschedulegetnextadvisetime-method"></a>Método CAMSchedule.GetNextAdviseTime
 
-El `GetNextAdviseTime` método recupera la hora de la solicitud de notificación siguiente.
+El `GetNextAdviseTime` método recupera la hora de la siguiente solicitud de aviso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la hora de referencia de la solicitud de notificación siguiente o el tiempo máximo que \_ no hay solicitudes programadas.
+Devuelve la hora de referencia de la siguiente solicitud de aviso o MAX \_ TIME no se programa ninguna solicitud.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve la hora de referencia de la solicitud de notificación siguiente o el t
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dsschedule. h (incluir streams. h)</dt> </dl>                                                                                |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dsschedule.h (incluir Secuencias.h)</dt> </dl>                                                                                |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve la hora de referencia de la solicitud de notificación siguiente o el t
 
 <dl> <dt>
 
-[**Clase CAMSchedule**](camschedule.md)
+[**CLASE CAMSchedule**](camschedule.md)
 </dt> </dl>
 
  

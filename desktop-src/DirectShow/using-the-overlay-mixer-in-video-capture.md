@@ -1,32 +1,32 @@
 ---
-description: Usar el mezclador de superposición en la captura de vídeo
+description: Uso de la función overlay Mixer captura de vídeo
 ms.assetid: 43468fa2-6dea-439d-9e24-f47a053ad561
-title: Usar el mezclador de superposición en la captura de vídeo
+title: Uso de la función overlay Mixer captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bff115d566654732e80c0bcb0f554c4ad96e65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 134ada11ca55009b3ad67ba80c82575ab2d9bdf5a7329a88157ed4e003eca74c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651199"
 ---
-# <a name="using-the-overlay-mixer-in-video-capture"></a>Usar el mezclador de superposición en la captura de vídeo
+# <a name="using-the-overlay-mixer-in-video-capture"></a>Uso de la función overlay Mixer captura de vídeo
 
-Hay determinados tipos de vídeo que el filtro de [representador de vídeo](video-renderer-filter.md) no puede mostrar por sí mismo. En estas situaciones, el representador de vídeo debe trabajar con el filtro de [mezclador de superposición](overlay-mixer-filter.md) . El mezclador de superposición administra la representación, mientras que el representador de vídeo administra la ventana de vídeo. El mezclador de superposición es necesario en las situaciones siguientes:
+Hay ciertos tipos de vídeo que el filtro [Representador de](video-renderer-filter.md) vídeo no puede mostrar por sí solo. En estas situaciones, el representador de vídeo debe trabajar con el filtro [overlay Mixer.](overlay-mixer-filter.md) El objeto Overlay Mixer la representación, mientras que el representador de vídeo administra la ventana de vídeo. La superposición Mixer es necesaria en las situaciones siguientes:
 
--   Clavijas del puerto de vídeo (VP). Si el dispositivo de captura usa un puerto de vídeo, el mezclador de superposición administra la superposición de hardware.
--   Vídeo entrelazado. En el caso del vídeo entrelazado, el descodificador requiere un formato [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) , que no es compatible con el representador de vídeo.
--   Subtítulos (CC). El texto de la leyenda se representa como mapa de bits de 8 bits por píxel, que el mezclador de superposición se superpone en el vídeo.
+-   Patillas de puerto de vídeo (VP). Si el dispositivo de captura usa un puerto de vídeo, el Mixer la superposición de hardware.
+-   Vídeo entrelazado. En el caso del vídeo entrelazado, el descodificador requiere un formato [**VIDEOINFOHEADER2,**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) que el representador de vídeo no admite.
+-   Subtítulos. El texto del título se representa como mapas de bits de 8 bits por píxel, que la superposición Mixer superpone en el vídeo.
 
-El método **RenderStream** del generador de gráficos de captura inserta el mezclador de superposición siempre que sea necesario. Sin embargo, si va a compilar el gráfico sin usar el generador de gráficos de captura, debe comprobar cada una de estas situaciones e insertar el mezclador de superposición usted mismo.
+El método **RenderStream** de Capture Graph Builder inserta el objeto Overlay Mixer sea necesario. Sin embargo, si va a compilar el gráfico sin usar capture Graph Builder, debe comprobar cada una de estas situaciones e insertar la superposición Mixer usted mismo.
 
--   \[! Aún\]  
-    > Si el dispositivo tiene una VP, debe conectar el mezclador de superposición, incluso si no necesita la funcionalidad de versión preliminar en la aplicación. Con un puerto de vídeo, el dispositivo de captura siempre envía los datos de vídeo a la superposición de hardware, por lo que siempre es necesario el mezclador de superposición.
+-   \[! Importante\]  
+    > Si el dispositivo tiene un pin de VP, debe conectar el dispositivo de superposición Mixer incluso si no necesita la funcionalidad de vista previa en la aplicación. Con un puerto de vídeo, el dispositivo de captura siempre envía los datos de vídeo a la superposición de hardware, por lo que siempre se necesita el Mixer superposición.
 
      
 
-Los filtros de representador de combinación de vídeo (VMR-7 y VMR-9) admiten vídeo entrelazado y pueden mezclar mapas de bits de subtítulos cerrados en el vídeo principal. Si usa la VMR para esos escenarios, no es necesario usar el mezclador de superposición. VMR-9 no es compatible con las conexiones de VP PIN. VMR-7 admite las conexiones de VP PIN a través del filtro del administrador de puertos de vídeo. Sin embargo, es posible que algunos controladores no funcionen correctamente con el administrador de puertos de vídeo. Por ese motivo, todavía se recomienda usar el mezclador de superposición para VICEPRESIDENTEs.
+Los filtros de representador de mezcla de vídeo (VMR-7 y VMR-9) admiten vídeo entrelazado y pueden mezclar mapas de bits de subtítulos en el vídeo principal. Si usa vmr para esos escenarios, no es necesario usar el cuadro de Mixer. VMR-9 no admite conexiones de pin de VP. VMR-7 admite conexiones de pin de VP a través del filtro Administrador de puertos de vídeo. Sin embargo, es posible que algunos controladores no funcionen correctamente con el Administrador de puertos de vídeo. Por ese motivo, se sigue Mixer de superposición para los pins de VP.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -35,7 +35,7 @@ Los filtros de representador de combinación de vídeo (VMR-7 y VMR-9) admiten v
 [Temas de captura avanzada](advanced-capture-topics.md)
 </dt> <dt>
 
-[PIN de puerto de vídeo](video-port-pins.md)
+[Anclar puertos de vídeo](video-port-pins.md)
 </dt> <dt>
 
 [Tipo de formato VideoInfo2](videoinfo2-format-type.md)

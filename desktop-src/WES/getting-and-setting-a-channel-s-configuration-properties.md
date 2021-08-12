@@ -1,29 +1,29 @@
 ---
 title: Obtener y establecer las propiedades de configuración de un canal
-description: Un canal se configura inicialmente en el manifiesto (consulte definición de canales). Para obtener las propiedades configurables de un canal, llame a la función EvtOpenChannelConfig para obtener un identificador para el canal.
+description: Un canal se configura inicialmente en el manifiesto (vea Definir canales). Para obtener las propiedades configurables de un canal, llame a la función EvtOpenChannelConfig para obtener un identificador para el canal.
 ms.assetid: 4ee44dae-b390-4d98-bcef-836b53b04860
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52b28e96e45a8b061fac2914b2ef79847cf25a6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82f77271e811a2f16599ac9fe94ce4c984564b2b8af559dba46a391d7759060d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588135"
 ---
 # <a name="getting-and-setting-a-channels-configuration-properties"></a>Obtener y establecer las propiedades de configuración de un canal
 
-Un canal se configura inicialmente en el manifiesto (consulte [definición de canales](defining-channels.md)). Para obtener las propiedades configurables de un canal, llame a la función [**EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) para obtener un identificador para el canal. A continuación, llame a la función [**EvtGetChannelConfigProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetchannelconfigproperty) para obtener el valor de una propiedad configurable del canal. Para obtener una lista de las propiedades configurables, consulte la enumeración de [**\_ \_ \_ \_ identificador de propiedad de canal de EVT**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) . El nombre del canal, el valor y las propiedades de la cadena de mensaje se consideran metadatos y no se pueden recuperar mediante la función **EvtGetChannelConfigProperty** . Para obtener más información sobre cómo obtener estas propiedades, vea [obtener los metadatos de un proveedor](getting-a-provider-s-metadata-.md).
+Un canal se configura inicialmente en el manifiesto (vea [Definir canales).](defining-channels.md) Para obtener las propiedades configurables de un canal, llame a [**la función EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) para obtener un identificador para el canal. A continuación, llame [**a la función EvtGetChannelConfigProperty para**](/windows/desktop/api/WinEvt/nf-winevt-evtgetchannelconfigproperty) obtener el valor de una propiedad configurable del canal. Para obtener una lista de propiedades configurables, vea la [**enumeración EVT \_ CHANNEL CONFIG PROPERTY \_ \_ \_ ID.**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) Las propiedades de nombre, valor y cadena de mensaje del canal se consideran metadatos y no se pueden recuperar mediante la **función EvtGetChannelConfigProperty.** Para obtener más información sobre cómo obtener estas propiedades, vea [Obtener los metadatos de un proveedor.](getting-a-provider-s-metadata-.md)
 
-Puede configurar muchas de las propiedades del canal en tiempo de ejecución. La enumeración del ID. de la propiedad de configuración del canal de EVT identifica las propiedades que no se pueden establecer. [**\_ \_ \_ \_**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) Para configurar las propiedades del canal, el usuario debe estar en el grupo administradores y ejecutarse con privilegios elevados. Para establecer las propiedades configurables de un canal, llame a la función [**EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) para obtener un identificador para el canal. A continuación, llame a la función [**EvtSetChannelConfigProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtsetchannelconfigproperty) para establecer el valor de una propiedad configurable. Después de establecer las propiedades configurables, llame a la función [**EvtSaveChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtsavechannelconfig) para guardar y aplicar los cambios.
+Puede configurar muchas de las propiedades del canal en tiempo de ejecución. La [**enumeración \_ EVT CHANNEL \_ CONFIG PROPERTY \_ \_ ID**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) identifica las propiedades que no se pueden establecer. Para configurar las propiedades del canal, el usuario debe estar en el grupo de administradores y ejecutarse con privilegios elevados. Para establecer las propiedades configurables de un canal, llame a [**la función EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) para obtener un identificador para el canal. A continuación, llame [**a la función EvtSetChannelConfigProperty para**](/windows/desktop/api/WinEvt/nf-winevt-evtsetchannelconfigproperty) establecer el valor de una propiedad configurable. Después de establecer las propiedades configurables, llame [**a la función EvtSaveChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtsavechannelconfig) para guardar y aplicar los cambios.
 
-Vea las siguientes secciones para obtener ejemplos en los que se muestra cómo obtener y establecer propiedades de canal:
+Consulte las secciones siguientes para obtener ejemplos que muestran cómo obtener y establecer las propiedades del canal:
 
--   [Enumerar canales](#enumerating-channels)
--   [Obtención de propiedades de canal](#getting-and-setting-a-channels-configuration-properties)
--   [Establecer propiedades de canal](#getting-and-setting-a-channels-configuration-properties)
+-   [Enumeración de canales](#enumerating-channels)
+-   [Obtención de las propiedades del canal](#getting-and-setting-a-channels-configuration-properties)
+-   [Establecimiento de las propiedades del canal](#getting-and-setting-a-channels-configuration-properties)
 
-## <a name="enumerating-channels"></a>Enumerar canales
+## <a name="enumerating-channels"></a>Enumeración de canales
 
 En el ejemplo siguiente se muestra cómo enumerar los canales registrados en el equipo.
 
@@ -108,7 +108,7 @@ cleanup:
 
 
 
-## <a name="getting-channel-properties"></a>Obtención de propiedades de canal
+## <a name="getting-channel-properties"></a>Obtención de las propiedades del canal
 
 En el ejemplo siguiente se muestra cómo obtener las propiedades configurables de un canal.
 
@@ -330,7 +330,7 @@ DWORD PrintChannelProperty(int Id, PEVT_VARIANT pProperty)
 
 
 
-## <a name="setting-channel-properties"></a>Establecer propiedades de canal
+## <a name="setting-channel-properties"></a>Establecimiento de las propiedades del canal
 
 En el ejemplo siguiente se muestra cómo establecer las propiedades configurables de un canal.
 
@@ -422,9 +422,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método inverso invierte el orden de la lista.
+description: El método Reverse invierte el orden de la lista.
 ms.assetid: f6f72f06-d219-4e18-a4fa-a816f9b50462
-title: Método CBaseList. Reverse (Wxlist. h)
+title: Método CBaseList.Reverse (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d37e56310bc48350f45b36c8c18d93c6246e36db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5af7e0aa31a2694af8ce2114f84342f09807d26e05b43af8cfce5ecc6f4146d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658888"
 ---
-# <a name="cbaselistreverse-method"></a>CBaseList. Reverse (método)
+# <a name="cbaselistreverse-method"></a>Método CBaseList.Reverse
 
 El `Reverse` método invierte el orden de la lista.
 
@@ -50,8 +50,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. addSelectedToPlaylist
+title: PLAYLIST.addSelectedToPlaylist
 description: El método addSelectedToPlaylist agrega el elemento seleccionado a una lista de reproducción.
 ms.assetid: 02ce8553-4ffc-44c1-b260-f41d0877137f
 keywords:
-- Windows Media Player de lista de reproducción. addSelectedToPlaylist
+- LISTA DE REPRODUCCIÓN.agregarSelectedToPlaylist Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5cda55f82d13db6061cb713388a618dfa8f2b5e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b67fd824bb5055156a6ae1846ab4017b662dbeea9434ff1657d7fe76ebda640b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571485"
 ---
-# <a name="playlistaddselectedtoplaylist"></a>Lista de reproducción. addSelectedToPlaylist
+# <a name="playlistaddselectedtoplaylist"></a>PLAYLIST.addSelectedToPlaylist
 
-El método **addSelectedToPlaylist** agrega el elemento seleccionado a una lista de reproducción.
+El **método addSelectedToPlaylist** agrega el elemento seleccionado a una lista de reproducción.
 
 ``` syntax
         elementID.addSelectedToPlaylist(playlist)
@@ -32,10 +32,10 @@ El método **addSelectedToPlaylist** agrega el elemento seleccionado a una lista
 
 <dl> <dt>
 
-<span id="playlist"></span><span id="PLAYLIST"></span>*automáticas*
+<span id="playlist"></span><span id="PLAYLIST"></span>*Reproducción*
 </dt> <dd>
 
-Objeto de **lista de reproducción** que recibirá el elemento seleccionado.
+**Objeto de** lista de reproducción que recibirá el elemento seleccionado.
 
 </dd> </dl>
 
@@ -47,17 +47,17 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La clase CAMThread es una clase abstracta para la administración de subprocesos de trabajo.
+description: La clase CAMThread es una clase abstracta para administrar subprocesos de trabajo.
 ms.assetid: c217d879-0203-4566-96ad-7463b05bc990
-title: Clase CAMThread (Wxutil. h)
+title: Clase CAMThread (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,39 +16,39 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e5c2bde058267ae4c530f33a96778792d5fe247b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca7182ecc16cd873732b2d39d2659f42017f9e01c1308642af4b8cac7ff2a682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662122"
 ---
-# <a name="camthread-class"></a>Clase CAMThread
+# <a name="camthread-class"></a>CLASE CAMThread
 
-La `CAMThread` clase es una clase abstracta para la administración de subprocesos de trabajo.
+La `CAMThread` clase es una clase abstracta para administrar subprocesos de trabajo.
 
 
 
-| Variables de miembro protegidas                                 | Descripción                                                                  |
+| Variables miembro protegidas                                 | Descripción                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------------------|
 | [**m \_ hThread**](camthread-m-hthread.md)                  | Identificador del subproceso.                                                        |
 | Variables de miembro público                                    | Descripción                                                                  |
-| [**m \_ AccessLock**](camthread-m-accesslock.md)            | Sección crítica que bloquea el subproceso para que no tenga acceso a otros subprocesos. |
+| [**m \_ AccessLock**](camthread-m-accesslock.md)            | Sección crítica que bloquea el acceso al subproceso por parte de otros subprocesos. |
 | [**m \_ WorkerLock**](camthread-m-workerlock.md)            | Sección crítica que bloquea los datos compartidos entre subprocesos.                       |
 | Métodos públicos                                             | Descripción                                                                  |
-| [**CAMThread**](camthread-camthread.md)                   | Método de constructor.                                                          |
-| [**~ CAMThread**](camthread--camthread.md)                | Método de destructor. Virtualiza.                                                  |
+| [**CAMThread**](camthread-camthread.md)                   | Método constructor.                                                          |
+| [**~ CAMThread**](camthread--camthread.md)                | Método destructor. Virtual.                                                  |
 | [**InitialThreadProc**](camthread-initialthreadproc.md)   | Llama al método ThreadProc cuando se crea el subproceso.                      |
-| [**A**](camthread-create.md)                         | Crea el subproceso.                                                          |
+| [**Crear**](camthread-create.md)                         | Crea el subproceso.                                                          |
 | [**CallWorker**](camthread-callworker.md)                 | Señala el subproceso con una solicitud.                                           |
-| [**Cercanos**](camthread-close.md)                           | Espera a que se cierre el subproceso y, a continuación, libera sus recursos.                   |
+| [**Cerrar**](camthread-close.md)                           | Espera a que se cierre el subproceso y, a continuación, libera sus recursos.                   |
 | [**ThreadExists**](camthread-threadexists.md)             | Consulta si el subproceso existe.                                           |
-| [**GetRequest**](camthread-getrequest.md)                 | Espera la siguiente solicitud.                                                  |
-| [**CheckRequest**](camthread-checkrequest.md)             | Comprueba si hay una solicitud, sin bloqueos.                              |
-| [**Responder**](camthread-reply.md)                           | Responde a una solicitud.                                                        |
+| [**GetRequest**](camthread-getrequest.md)                 | Espera a la siguiente solicitud.                                                  |
+| [**CheckRequest**](camthread-checkrequest.md)             | Comprueba si hay una solicitud, sin bloquear.                              |
+| [**Respuesta**](camthread-reply.md)                           | Responde a una solicitud.                                                        |
 | [**GetRequestHandle**](camthread-getrequesthandle.md)     | Recupera un identificador para el evento señalado por el método CallWorker.           |
 | [**GetRequestParam**](camthread-getrequestparam.md)       | Recupera la solicitud más reciente.                                                |
-| [**CoInitializeHelper**](camthread-coinitializehelper.md) | Llama a CoInitializeEx al inicio del subproceso.                             |
+| [**CoInitializeHelper**](camthread-coinitializehelper.md) | Llama a CoInitializeEx al principio del subproceso.                             |
 | Métodos virtuales puros                                       | Descripción                                                                  |
 | [**ThreadProc**](camthread-threadproc.md)                 | Procedimiento de subproceso.                                                            |
 
@@ -58,15 +58,15 @@ La `CAMThread` clase es una clase abstracta para la administración de subproces
 
 ## <a name="remarks"></a>Observaciones
 
-Esta clase proporciona métodos para crear un subproceso de trabajo, pasar solicitudes al subproceso y esperar a que el subproceso salga. Para usar esta clase, haga lo siguiente:
+Esta clase proporciona métodos para crear un subproceso de trabajo, pasar solicitudes al subproceso y esperar a que se cierre el subproceso. Para usar esta clase, haga lo siguiente:
 
--   Derive una clase de `CAMThread` e invalide el método virtual puro [**CAMThread:: ThreadProc**](camthread-threadproc.md). Este método es el procedimiento de subproceso al que se llama al principio del subproceso.
--   En la aplicación, cree una instancia de la clase derivada. Al crear el objeto, no se crea el subproceso. Para crear el subproceso, llame al método [**CAMThread:: Create**](camthread-create.md) .
--   Para enviar solicitudes al subproceso, llame al método [**CAMThread:: CallWorker**](camthread-callworker.md) . Este método toma un parámetro DWORD, cuyo significado está definido por la clase. El método se bloquea hasta que el subproceso responde (consulte a continuación).
--   En el procedimiento de subproceso, responda a las solicitudes llamando a [**CAMThread:: GetRequest**](camthread-getrequest.md) o [**CAMThread:: CheckRequest**](camthread-checkrequest.md). El método GetRequest se bloquea hasta que otro subproceso llama a CallWorker. El método CheckRequest no es de bloqueo, lo que permite al subproceso comprobar si hay nuevas solicitudes mientras se trabaja de forma asincrónica.
--   Cuando el subproceso recibe una solicitud, llame a [**CAMThread:: reply**](camthread-reply.md) para desbloquear el subproceso que realiza la llamada. El método reply toma un parámetro DWORD, que se pasa al subproceso que realiza la llamada como el valor devuelto para CallWorker.
+-   Derive una clase de `CAMThread` e invalide el método virtual [**puro CAMThread::ThreadProc**](camthread-threadproc.md). Este método es el procedimiento de subproceso al que se llama al principio del subproceso.
+-   En la aplicación, cree una instancia de la clase derivada. La creación del objeto no crea el subproceso. Para crear el subproceso, llame al [**método CAMThread::Create.**](camthread-create.md)
+-   Para enviar solicitudes al subproceso, llame al [**método CAMThread::CallWorker.**](camthread-callworker.md) Este método toma un parámetro DWORD, cuyo significado se define mediante la clase . El método se bloquea hasta que el subproceso responde (vea a continuación).
+-   En el procedimiento del subproceso, responda a las solicitudes mediante una llamada [**a CAMThread::GetRequest**](camthread-getrequest.md) o [**a CAMThread::CheckRequest**](camthread-checkrequest.md). El método GetRequest se bloquea hasta que otro subproceso llama a CallWorker. El método CheckRequest no está bloqueado, lo que permite que el subproceso compruebe si hay nuevas solicitudes mientras se trabaja de forma asincrónica.
+-   Cuando el subproceso recibe una solicitud, llame a [**CAMThread::Reply**](camthread-reply.md) para desbloquear el subproceso que realiza la llamada. El método Reply toma un parámetro DWORD, que se pasa al subproceso que realiza la llamada como valor devuelto para CallWorker.
 
-Cuando haya terminado con el subproceso, llame al método [**CAMThread:: Close**](camthread-close.md) . Este método espera a que se cierre el subproceso y, a continuación, cierra el identificador del subproceso. Se debe garantizar que el mensaje ThreadProc se cierre, ya sea por sí mismo o en respuesta a una solicitud CallWorker. El método de destructor también llama a Close.
+Cuando haya terminado con el subproceso, llame al [**método CAMThread::Close.**](camthread-close.md) Este método espera a que se cierre el subproceso y, a continuación, cierra el identificador del subproceso. Se debe garantizar que el mensaje ThreadProc se cierre, ya sea por sí mismo o en respuesta a una solicitud de CallWorker. El método destructor también llama a Close.
 
 En el ejemplo siguiente se muestran estos pasos:
 
@@ -105,7 +105,7 @@ void main()
 
 
 
-En la clase derivada, también puede definir funciones miembro que validan los parámetros en CallWorker. En el ejemplo siguiente se muestra una forma típica de hacerlo:
+En la clase derivada, también puede definir funciones miembro que validan los parámetros en CallWorker. En el ejemplo siguiente se muestra una manera típica de hacerlo:
 
 
 ```C++
@@ -119,7 +119,7 @@ HRESULT Exit(void)  { return CallWorker(CMD_EXIT); }
 
 
 
-La `CAMThread` clase proporciona dos secciones críticas como variables de miembro público. Use `CAMThread::m_AccessLock` para impedir que otros subprocesos accedan al subproceso. (Por ejemplo, los métodos Create y CallWorker contienen este bloqueo para serializar las operaciones en el subproceso). Use [**CAMThread:: m \_ WorkerLock**](camthread-m-workerlock.md) para bloquear los datos que se comparten entre los subprocesos.
+La `CAMThread` clase proporciona dos secciones críticas como variables miembro públicas. Use `CAMThread::m_AccessLock` para evitar que otros subprocesos accedan al subproceso. (Por ejemplo, los métodos Create y CallWorker mantienen este bloqueo para serializar las operaciones en el subproceso). Use [**CAMThread::m \_ WorkerLock para**](camthread-m-workerlock.md) bloquear los datos que se comparten entre subprocesos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -127,8 +127,8 @@ La `CAMThread` clase proporciona dos secciones críticas como variables de miemb
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

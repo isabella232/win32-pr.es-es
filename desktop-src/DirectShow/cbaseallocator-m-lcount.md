@@ -1,7 +1,7 @@
 ---
-description: Número de búferes que se van a proporcionar.
+description: Número de búferes que se proporcionarán.
 ms.assetid: 73f87b14-4346-4909-bd1e-c4981cde403d
-title: 'Miembro CBaseAllocator:: m_lCount (Amfilter. h)'
+title: CBaseAllocator::m_lCount miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16ab469db1d50007bd3aa55ab692c51aa7600452
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c33749ee6293c301501962939e25118595db10592713fb46dc10d01083c0096f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118661697"
 ---
-# <a name="cbaseallocatorm_lcount-member"></a>Miembro lCount CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lcount-member"></a>Miembro CBaseAllocator::m \_ lCount
 
-Número de búferes que se van a proporcionar. El método [**CBaseAllocator:: SetProperties**](cbaseallocator-setproperties.md) establece este valor. Los búferes no se asignan hasta que se llama al método [**CBaseAllocator:: commit**](cbaseallocator-commit.md) . La variable miembro [**CBaseAllocator:: m \_ lAllocated**](cbaseallocator-m-lallocated.md) especifica el número actual de búferes asignados.
+Número de búferes que se proporcionarán. El [**método CBaseAllocator::SetProperties**](cbaseallocator-setproperties.md) establece este valor. Los búferes no se asignan hasta que se llama al método [**CBaseAllocator::Commit.**](cbaseallocator-commit.md) La variable miembro [**CBaseAllocator::m \_ lAllocated**](cbaseallocator-m-lallocated.md) especifica el número actual de búferes asignados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ long m_lCount;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ long m_lCount;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

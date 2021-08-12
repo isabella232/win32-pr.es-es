@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b3b4871f8d61603ea77c7699a9993d29e2fc0187
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15bf3c84befd9dd8f4c9c4a544fc920b7066184c6bf367c404bb14f22f573b92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611193"
 ---
 # <a name="subject-sendemailtype-element"></a>Elemento Subject (sendEmailType)
 
@@ -30,7 +30,7 @@ Contiene el asunto del mensaje de correo electrónico.
  />
 ```
 
-El elemento de **asunto** se define mediante el tipo complejo de [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **Subject.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -44,9 +44,9 @@ El elemento de **asunto** se define mediante el tipo complejo de [**sendEmailTyp
 
 ## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de C++, vea la [**propiedad Subject de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_subject).
+Para el desarrollo de C++, vea [**Subject Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_subject).
 
-Para el desarrollo de scripts, vea [**EmailAction. Subject**](emailaction-subject.md).
+Para el desarrollo de scripts, [**vea EmailAction.Subject.**](emailaction-subject.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para el desarrollo de scripts, vea [**EmailAction. Subject**](emailaction-subjec
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

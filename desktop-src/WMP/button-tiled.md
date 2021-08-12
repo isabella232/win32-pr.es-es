@@ -1,9 +1,9 @@
 ---
-title: BOTÓN. en mosaico
-description: El atributo en mosaico especifica o recupera un valor que indica si se va a colocar en mosaico la imagen del botón.
+title: BUTTON.tiled
+description: El atributo en mosaico especifica o recupera un valor que indica si la imagen BUTTON se va a aplicar en mosaico.
 ms.assetid: 5526477d-a235-4960-adef-5cf0ef9c46be
 keywords:
-- BOTÓN. Media Player de Windows en mosaico
+- Button.tiled Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c6c1316f10ce9ae3135f4ac35ab214ecdd1096d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32f4f1dda0b5a79749cfbffaa30f29522ff318a763ad50fcd005479afa9c8997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581379"
 ---
-# <a name="buttontiled"></a>BOTÓN. en mosaico
+# <a name="buttontiled"></a>BUTTON.tiled
 
-El atributo en **mosaico** especifica o recupera un valor que indica si se va a colocar en mosaico la imagen del **botón** .
+El **atributo en** mosaico especifica o recupera un valor que indica si la imagen **BUTTON** se va a aplicar en mosaico.
 
 ``` syntax
         elementID.tiled
@@ -29,11 +29,11 @@ El atributo en **mosaico** especifica o recupera un valor que indica si se va a 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                       |
+| Valor | Descripción                       |
 |-------|-----------------------------------|
 | true  | La imagen se mostrará en mosaico.              |
 | false | Predeterminada. La imagen no se mostrará en mosaico. |
@@ -42,28 +42,28 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la imagen es menor que la región real del control, el mosaico de la imagen se repetirá hasta que se llene toda la región. Si no se especifica una imagen o no se puede recuperar, en **mosaico** se establecerá en false.
+Si la imagen es menor que la región real del control, el rellenado de la imagen la repetirá hasta que rellene toda la región. Si no se especifica una imagen o no se puede recuperar, **el mosaico** se establecerá en false.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BOTÓN. imagen**](button-image.md)
+[**BUTTON.image**](button-image.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Especifica si el acceso a todas las redes de infraestructura está bloqueado.
+description: Especifica si se bloquea el acceso a todas las redes de infraestructura.
 ms.assetid: d57ae27c-3cd3-4e53-b5c9-cd3cbb91289b
-title: Elemento denyAllESS (networkFilter)
+title: elemento denyAllESS (networkFilter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c3e83aeb14e0572f8e2ccc49bf2d04718afa7f30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5057f94dd91e2d7090c4f147ba987324e369dda706031ecebb8a79b165214414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619870"
 ---
-# <a name="denyalless-networkfilter-element"></a>Elemento denyAllESS (networkFilter)
+# <a name="denyalless-networkfilter-element"></a>elemento denyAllESS (networkFilter)
 
-El elemento denyAllESS (networkFilter) especifica si el acceso a todas las redes de infraestructura está bloqueado. Cuando **denyAllESS** tiene un valor true, las máquinas no se pueden conectar a una red de infraestructura; de lo contrario, las máquinas pueden conectarse a redes de infraestructura.
+El elemento denyAllESS (networkFilter) especifica si se bloquea el acceso a todas las redes de infraestructura. Cuando **denyAllESS tiene** el valor TRUE, las máquinas no se pueden conectar a una red de infraestructura; De lo contrario, las máquinas pueden conectarse a redes de infraestructura.
 
-El valor predeterminado de este elemento es FALSE. Si **denyAllESS** no se especifica en un perfil, los equipos pueden conectarse a las redes de infraestructura de forma predeterminada.
+El valor predeterminado de este elemento es FALSE. Si **denyAllESS** no se especifica en un perfil, las máquinas pueden conectarse de forma predeterminada a redes de infraestructura.
 
 ``` syntax
 <xs:element name="denyAllESS"
@@ -31,7 +31,7 @@ El valor predeterminado de este elemento es FALSE. Si **denyAllESS** no se espec
  />
 ```
 
-El elemento **denyAllESS** se define mediante el elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+El **elemento denyAllESS** se define mediante el [**elemento networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ El elemento **denyAllESS** se define mediante el elemento [**networkFilter**](wl
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

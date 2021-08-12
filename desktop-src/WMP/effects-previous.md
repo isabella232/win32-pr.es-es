@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. Previous
-description: El método anterior muestra el valor preestablecido de visualización anterior, desplazándose al último valor preestablecido de la visualización anterior si es necesario.
+title: EFFECTS.previous
+description: El método anterior muestra el valor preestablecido de visualización anterior, pasando al último valor preestablecido de la visualización anterior si es necesario.
 ms.assetid: 20ef8f8b-a308-4e79-a4a8-70d04f1f0be6
 keywords:
-- EFFECTs. Media Player de Windows anterior
+- EFFECTS.previous Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ee6bb89aab58324132a0023e843d23b840668b6f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41a4a8848ebad2e1580ff0ee0a5d102f012f8a91ef36ccd11803ee8933402f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578759"
 ---
-# <a name="effectsprevious"></a>EFFECTs. Previous
+# <a name="effectsprevious"></a>EFFECTS.previous
 
-El método **anterior** muestra el valor preestablecido de visualización anterior, desplazándose al último valor preestablecido de la visualización anterior si es necesario.
+El **método** anterior muestra el valor preestablecido de visualización anterior, pasando al último valor preestablecido de la visualización anterior si es necesario.
 
 ``` syntax
         elementID.previous()
@@ -36,31 +36,31 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor predeterminado actual es el primero de la serie de todas las visualizaciones disponibles, el último valor preestablecido de la última visualización se convierte en actual.
+Si el valor preestablecido actual es el primero de la serie de todas las visualizaciones disponibles, el último valor preestablecido de la última visualización se hace actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFECTOS. siguiente**](effects-next.md)
+[**EFFECTS.next**](effects-next.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> </dl>
 
  

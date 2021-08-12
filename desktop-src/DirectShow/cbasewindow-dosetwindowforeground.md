@@ -1,7 +1,7 @@
 ---
-description: El método DoSetWindowForeground coloca la ventana en primer plano.
+description: El método DoSetWindowForeground pone la ventana en primer plano.
 ms.assetid: 5aace88b-14c0-41ce-95a3-0e255ca56ae6
-title: Método CBaseWindow. DoSetWindowForeground (Winutil. h)
+title: Método CBaseWindow.DoSetWindowForeground (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16a4c8bf41c042c99624289fa26fe252dee62747
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f0d0dd99f5e2c5e5afffb78066a9380c56f744a4ba54b64bf987df15ea58862
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658024"
 ---
-# <a name="cbasewindowdosetwindowforeground-method"></a>CBaseWindow. DoSetWindowForeground, método
+# <a name="cbasewindowdosetwindowforeground-method"></a>CBaseWindow.DoSetWindowForeground (método)
 
 El `DoSetWindowForeground` método pone la ventana en primer plano.
 
@@ -45,7 +45,7 @@ void DoSetWindowForeground(
 *bFocus* 
 </dt> <dd>
 
-Valor booleano que especifica si se debe dar el foco a la ventana. Si el valor es **true**, la ventana obtiene el foco.
+Valor booleano que especifica si se debe dar el foco a la ventana. Si el valor es **TRUE,** la ventana obtiene el foco.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

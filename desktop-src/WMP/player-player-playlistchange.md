@@ -1,11 +1,11 @@
 ---
-title: Evento Player. PlaylistChange
-description: El evento PlaylistChange se produce cuando cambia una lista de reproducción. | Evento Player. PlaylistChange
+title: Evento Player.PlaylistChange
+description: El evento PlaylistChange tiene lugar cuando cambia una lista de reproducción. | Evento Player.PlaylistChange
 ms.assetid: 09ab0560-e18d-4ee8-a649-2b2468b40c31
 keywords:
-- Media Player PlaylistChange de eventos de Windows
-- Evento PlaylistChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento PlaylistChange
+- Lista de reproducciónCambiar evento Reproductor de Windows Media
+- Evento PlaylistChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media evento , PlaylistChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d371818e8166b536543246eeecf0090509e62b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ff4c45449c8de2062aa53ce9bda89c8d634dd30bc1ac8c03f091e8b97e9ce60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572808"
 ---
-# <a name="playerplaylistchange-event"></a>Evento Player. PlaylistChange
+# <a name="playerplaylistchange-event"></a>Evento Player.PlaylistChange
 
-El evento **PlaylistChange** se produce cuando cambia una lista de reproducción.
+El **evento PlaylistChange** tiene lugar cuando cambia una lista de reproducción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ Player.PlaylistChange(
 *Lista de reproducción* 
 </dt> <dd>
 
-Objeto de **lista de reproducción** que cambió.
+**Objeto de** lista de reproducción que ha cambiado.
 
 </dd> <dt>
 
 *change* 
 </dt> <dd>
 
-**Número** (**largo**) que indica el tipo de cambio que se produjo en la lista de reproducción. Contiene uno de los valores siguientes.
+**Number** ( long )**que** indica el tipo de cambio que se produjo en la lista de reproducción. Contiene uno de los valores siguientes.
 
 
 
@@ -67,7 +67,7 @@ Objeto de **lista de reproducción** que cambió.
 | 5      | Insertar        |
 | 6      | Append        |
 | 7      | No compatible |
-| 8      | NameChange (    |
+| 8      | NameChange    |
 | 9      | No compatible |
 | 10     | Sort          |
 
@@ -75,7 +75,7 @@ Objeto de **lista de reproducción** que cambió.
 
  
 
-La constante de enumeración de estilo C se puede derivar prefijando el valor de nombre con "wmplc". Por ejemplo, la constante para el estado de movimiento es **wmplcMove**.
+La constante de enumeración de estilo C se puede derivar prefindo el valor de nombre con "wmplc". Por ejemplo, la constante para el estado Move es **wmplcMove**.
 
 </dd> </dl>
 
@@ -83,24 +83,24 @@ La constante de enumeración de estilo C se puede derivar prefijando el valor de
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

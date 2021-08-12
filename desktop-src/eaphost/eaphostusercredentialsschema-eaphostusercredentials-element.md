@@ -1,9 +1,9 @@
 ---
 title: Elemento EapHostUserCredentials
-description: Contiene el elemento EapMethod, las credenciales o el elemento CredentialsBlob.
+description: Contiene el elemento EapMethod y el elemento Credentials o CredentialsBlob.
 ms.assetid: 6d0d41c8-560c-4d42-83c9-865053aef47a
 keywords:
-- Elemento EapHostUserCredentials EAPHost
+- EapHostUserCredentials, elemento EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 690770091219e51b3ebb550a1a72e50f76b20542
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a18922ef19bd828067ddb0153aa7c6369ecfeebd0446f5a6481f91fa64ca21b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274425"
 ---
 # <a name="eaphostusercredentials-element"></a>Elemento EapHostUserCredentials
 
-El elemento **EapHostUserCredentials** contiene el elemento [**EapMethod**](eaphostusercredentialsschema-eapmethod-eaphostusercredentials-element.md) , [**las credenciales**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) o el elemento [**CredentialsBlob**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md) .
+El **elemento EapHostUserCredentials** contiene el [**elemento EapMethod**](eaphostusercredentialsschema-eapmethod-eaphostusercredentials-element.md) y [**el elemento Credentials**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) [**o CredentialsBlob.**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md)
 
 ``` syntax
 <xs:element name="EapHostUserCredentials">
@@ -57,32 +57,32 @@ El elemento **EapHostUserCredentials** contiene el elemento [**EapMethod**](eaph
 
 | Elemento                                                                                                | Tipo                                                                                                                | Descripción                                                                                      |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [**Credenciales**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md)         | [**BaseEapMethodUserCredentials**](baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md) | Se usa cuando la configuración del método está en formato de texto XML en lugar de un BLOB binario.<br/>   |
+| [**Credenciales**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md)         | [**BaseEapMethodUserCredentials**](baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md) | Se usa cuando la configuración del método está en formato de texto XML en lugar de un blob binario.<br/>   |
 | [**CredentialsBlob**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md) | hexBinary                                                                                                           | Se usa cuando la configuración del método es un BLOB binario en lugar de en formato de texto XML.<br/> |
 | [**EapMethod**](eaphostusercredentialsschema-eapmethod-eaphostusercredentials-element.md)             | [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md)                                                  | Identifica el método al que se hace referencia. <br/>                                             |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las [**credenciales**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) y los elementos [**CredentialsBlob**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md) no se pueden usar simultáneamente.
+Los [**elementos Credentials**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) y [**CredentialsBlob**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md) no se pueden usar simultáneamente.
 
 Hay un punto de extensión para otros espacios de nombres.
 
-El elemento **processContents** permite futuras mejoras en el esquema. El elemento **processContents** es opcional.
+El **elemento processContents** permite futuras mejoras en el esquema. El **elemento processContents** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

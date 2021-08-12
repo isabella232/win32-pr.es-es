@@ -1,26 +1,26 @@
 ---
-title: Atributo de bajorrelieve (VML)
-description: Atributo de bajorrelieve (VML)
+title: Atributo inset de VML
+description: Atributo inset de VML
 ms.assetid: b50f900a-b0dc-4042-af9e-050011307765
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d83f2ea38ef4ca90f6687196335d2edd2d39c09c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6e1d4b44756034a3ebc7e46e1cdda43042f347e58cb87c02b00c90a14320a40f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118600241"
 ---
-# <a name="vml-inset-attribute"></a>Atributo de bajorrelieve (VML)
+# <a name="vml-inset-attribute"></a>Atributo inset de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Especifica los valores de margen interno del texto del cuadro de texto. Lectura/escritura **Cadena**.
+Especifica los valores de margen interno para el texto del cuadro de texto. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,25 +28,25 @@ Especifica los valores de margen interno del texto del cuadro de texto. Lectura/
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* bajorrelieve = " *expresión* " >
+<v: *element* inset=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . bajorrelieve = "*expresión*"
+*Element* .inset="*expression*"
 
-*expresión* = de *elemento*. bajorrelieve
+*expresión* = *elemento*.inset
 
 **Comentarios:**
 
-El valor del margen de texto interno se especifica como una cadena que contiene cuatro valores, separados por comas o espacios. Los valores se miden desde los bordes izquierdo, superior, derecho e inferior del cuadro especificado por el atributo [TextBoxRect](msdn-online-vml-textboxrect-attribute.md) de **path**. Los valores que faltan se establecen en el valor predeterminado, que es "0.1 en, 0,05 en, 0.1 en, 0,05 en".
+El valor de margen de texto interno se especifica como una cadena que contiene cuatro valores, cada uno separado por comas o espacios. Los valores miden el conjunto de los bordes izquierdo, superior, derecho e inferior del cuadro especificado por el atributo [TextBoxRect](msdn-online-vml-textboxrect-attribute.md) de **Path**. Los valores que faltan se establecen en el valor predeterminado, que es "0.1in, 0.05in, 0.1in, 0.05in".
 
-En el caso de las formas giradas en los exploradores que no admiten la rotación, el cuadro de límite se ajustará al múltiplo más cercano de 90 grados.
+En el caso de las formas giradas en exploradores que no admiten la rotación, el cuadro de límite se ajustará al múltiplo más cercano de 90 grados.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-El cuadro de texto tendrá un margen de bajorrelieve de 10 píxeles.
+El cuadro de texto tendrá un margen de conjunto de 10 píxeles.
 
 
 ```HTML
@@ -63,6 +63,6 @@ El cuadro de texto tendrá un margen de bajorrelieve de 10 píxeles.
 
 
 
- 
+ 
 
- 
+ 

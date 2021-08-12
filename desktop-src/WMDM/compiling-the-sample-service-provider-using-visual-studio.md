@@ -3,27 +3,27 @@ title: Compilar el proveedor de servicios de ejemplo mediante Visual Studio
 description: Compilar el proveedor de servicios de ejemplo mediante Visual Studio
 ms.assetid: db0ecc18-d5b0-47d8-9b3f-3a9644343de8
 keywords:
-- Administrador de dispositivos de Windows Media, ejemplos
-- Administrador de dispositivos, ejemplos
-- Windows Media Administrador de dispositivos, ejemplo de proveedor de servicios
-- Administrador de dispositivos, ejemplo de proveedor de servicios
+- Windows Archivos Administrador de dispositivos,ejemplos
+- Administrador de dispositivos,samples
+- Windows Ejemplo Administrador de dispositivos,proveedor de servicios
+- Administrador de dispositivos,ejemplo de proveedor de servicios
 - proveedores de servicios, ejemplos
-- ejemplos, proveedores de servicios
-- ejemplos, compilar con Visual Studio
+- samples,service providers
+- ejemplos, compilación mediante Visual Studio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abded2aa1272f2e5e14b711c0d8b0a8ec79f280
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd220e314a6de0a9c5e4cf50ccd710a0236c3b3ec469247ef99f319b553b15c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586023"
 ---
 # <a name="compiling-the-sample-service-provider-using-visual-studio"></a>Compilar el proveedor de servicios de ejemplo mediante Visual Studio
 
-El SDK de Windows Media Format no incluye un archivo de solución de Visual Studio. Sin embargo, en este documento se incluyen dos archivos que le permiten usar Visual Studio para crear y depurar el proveedor de servicios de ejemplo. Ambos archivos se proporcionan para Visual Studio .NET 2003.
+El SDK Windows Media Format no incluye un archivo Visual Studio solución. Sin embargo, este documento incluye dos archivos que permiten usar Visual Studio para compilar y depurar el proveedor de servicios de ejemplo. Ambos archivos proporcionados son para Visual Studio .NET 2003.
 
--   Guarde el código siguiente como un archivo de texto denominado mshdsp. vcproj en la carpeta <*ruta de instalación del SDK* > \\ WMFSDK \\ WMFSDK95 \\ WMDM \\ mdsp \\ mshdsp.
+-   Guarde el código siguiente como un archivo de texto denominado mshdsp.vcproj en la carpeta <RUTA de instalación del *SDK* > \\ de WMFSDK \\ WMFSDK95 \\ WMDM \\ mdsp \\ mshdsp.
 
 
 ```C++
@@ -300,7 +300,7 @@ El SDK de Windows Media Format no incluye un archivo de solución de Visual Stud
 
 
 
--   Guarde el código siguiente como un archivo de texto denominado mshdsp. sln en la misma carpeta donde guardó mshdsp. vcproj.
+-   Guarde el código siguiente como un archivo de texto denominado mshdsp.sln en la misma carpeta donde guardó mshdsp.vcproj.
 
 
 ```C++
@@ -338,9 +338,9 @@ EndGlobal
 [**Proveedor de servicios de ejemplo**](sample-service-provider.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

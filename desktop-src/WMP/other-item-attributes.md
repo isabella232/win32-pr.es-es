@@ -3,40 +3,40 @@ title: Otros atributos de elemento
 description: Otros atributos de elemento
 ms.assetid: 18090c66-32a1-42af-b4a1-e3d539491e19
 keywords:
-- Media Player de Windows, otros atributos de elemento
-- Windows Media Player Mobile, otros atributos de elemento
-- Modelo de objetos de Windows Media Player, otros atributos de elemento
+- Reproductor de Windows Media,otros atributos de elemento
+- Reproductor de Windows Media Atributos mobile y otros elementos
+- Reproductor de Windows Media de objetos, otros atributos de elemento
 - modelo de objetos, otros atributos de elemento
-- Control ActiveX, otros atributos de elemento
-- Control ActiveX de Windows Media Player, atributos de otros elementos
-- Control ActiveX móvil de Windows Media Player, atributos de otros elementos
-- Referencia del modelo de objetos, otros atributos de elemento
+- ActiveX control, otros atributos de elemento
+- Reproductor de Windows Media ActiveX control, otros atributos de elemento
+- Reproductor de Windows Media Control de ActiveX móvil,otros atributos de elemento
+- referencia para el modelo de objetos, otros atributos de elemento
 - atributos, otros elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28622c9a55091376f618874889b8d2e6897e2172
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c64a3289cec8490c801a530f001aef818498239864b34bfa7e81601b4f1d226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573708"
 ---
 # <a name="other-item-attributes"></a>Otros atributos de elemento
 
-Los siguientes atributos están disponibles para un elemento de la biblioteca que no es un audio, vídeo, lista de reproducción, foto o elemento de radio.
+Los atributos siguientes están disponibles para un elemento de la biblioteca que no es un elemento de audio, vídeo, lista de reproducción, foto o radio.
 
 -   [Atributo AcquisitionTime](acquisitiontime-attribute.md)
 -   [Atributo de velocidad de bits](bitrate-attribute.md)
 -   [**Atributo DLNASourceURI**](dlnasourceuri-attribute.md)
--   [Duration (atributo)](duration-attribute.md)
--   [Atributo de archivo](filesize-attribute.md)
--   [FileType (atributo)](filetype-attribute.md)
--   [**Atributo Nombrebiblioteca**](libraryname-attribute.md)
--   [MediaType (atributo)](mediatype-attribute.md)
+-   [Atributo Duration](duration-attribute.md)
+-   [Atributo FileSize](filesize-attribute.md)
+-   [Atributo FileType](filetype-attribute.md)
+-   [**Atributo LibraryName**](libraryname-attribute.md)
+-   [Atributo MediaType](mediatype-attribute.md)
 -   [Atributo PlaylistIndex](playlistindex-attribute.md)
 -   [Atributo SourceURL](sourceurl-attribute.md)
 -   [Atributo SyncState](syncstate-attribute.md)
--   [Atributo title](title-attribute.md)
+-   [Atributo Title](title-attribute.md)
 -   [Atributo TitleSortOrder](titlesortorder-attribute.md)
 -   [Atributo TrackingID](trackingid-attribute.md)
 -   [Atributo UserCustom1](usercustom1-attribute.md)
@@ -52,7 +52,7 @@ Los siguientes atributos están disponibles para un elemento de la biblioteca qu
 -   [Atributo UserPlaycountWeekend](userplaycountweekend-attribute.md)
 -   [Atributo UserRating](userrating-attribute.md)
 -   [Atributo UserServiceRating](userservicerating-attribute.md)
--   [Atributo WM/categoría](wm-category-attribute.md)
+-   [Atributo WM/Category](wm-category-attribute.md)
 -   [Atributo WM/Genre](wm-genre-attribute.md)
 -   [Atributo WM/MediaClassPrimaryID](wm-mediaclassprimaryid-attribute.md)
 -   [Atributo WM/MediaClassSecondaryID](wm-mediaclasssecondaryid-attribute.md)
@@ -61,12 +61,12 @@ Los siguientes atributos están disponibles para un elemento de la biblioteca qu
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

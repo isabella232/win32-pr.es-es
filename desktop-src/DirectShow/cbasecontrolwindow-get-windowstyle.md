@@ -1,7 +1,7 @@
 ---
-description: El \_ método get WindowStyle recupera los estilos de ventana estándar.
+description: El método get \_ WindowStyle recupera los estilos de ventana estándar.
 ms.assetid: 5c204814-5c7c-47e2-95dd-86455ed77cc7
-title: Método CBaseControlWindow.get_WindowStyle (Ctlutil. h)
+title: CBaseControlWindow.get_WindowStyle método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 91e04efac3a67c262b4eeb85948f846dbb06086a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9356b449adbb4ee760ec70990c4db0b6703c16e9d0970f2756bac23907b1bfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660264"
 ---
-# <a name="cbasecontrolwindowget_windowstyle-method"></a>CBaseControlWindow. Get \_ estiloVentana (método)
+# <a name="cbasecontrolwindowget_windowstyle-method"></a>CBaseControlWindow.get \_ (método WindowStyle)
 
 El `get_WindowStyle` método recupera los estilos de ventana estándar.
 
@@ -45,17 +45,17 @@ HRESULT get_WindowStyle(
 *pWindowStyle* 
 </dt> <dd>
 
-Puntero a los estilos de ventana.
+Puntero a estilos de ventana.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función miembro devuelve los estilos de ventana estándar, como WS \_ Child y WS \_ visible. Llama a la función miembro [**CBaseControlWindow::D ogetwindowstyle**](cbasecontrolwindow-dogetwindowstyle.md) .
+Esta función miembro devuelve los estilos de ventana estándar, como WS \_ CHILD y WS \_ VISIBLE. Llama a la [**función miembro CBaseControlWindow::D oGetWindowStyle.**](cbasecontrolwindow-dogetwindowstyle.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro devuelve los estilos de ventana estándar, como WS \_ Chil
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro devuelve los estilos de ventana estándar, como WS \_ Chil
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

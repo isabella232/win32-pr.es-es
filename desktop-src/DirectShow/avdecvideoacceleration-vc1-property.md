@@ -1,19 +1,19 @@
 ---
-description: Habilita o deshabilita la aceleración de hardware para la descodificación de vídeo VC-1.
+description: Habilita o deshabilita la aceleración de hardware para lacodización de vídeo vc-1.
 ms.assetid: eee85330-098e-4f21-81b7-a493abbd599b
-title: Propiedad AVDecVideoAcceleration_VC1 (Codecapi. h)
+title: AVDecVideoAcceleration_VC1 propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fcdbe265f5a65212a2846b724f570b024ea0ab8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1767206fab479dbcae1dec5e768b21d768440a66776b1f41610b75be4190d6c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118663844"
 ---
-# <a name="avdecvideoacceleration_vc1-property"></a>\_Propiedad VC1 de AVDecVideoAcceleration
+# <a name="avdecvideoacceleration_vc1-property"></a>Propiedad AVDecVideoAcceleration \_ VC1
 
-Habilita o deshabilita la aceleración de hardware para la descodificación de vídeo VC-1.
+Habilita o deshabilita la aceleración de hardware para lacodización de vídeo vc-1.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="remarks"></a>Observaciones
 
-Si el valor es cero, el descodificador no usa DirectX video Acceleration (DXVA) para la descodificación de vídeo VC-1. En el caso de los filtros DirectShow, establezca esta propiedad antes de que se conecte el PIN de salida del descodificador.
+Si el valor es cero, el descodificador no usa la aceleración de vídeo directX (DXVA) para la descodificación de vídeo VC-1. Para DirectShow filtros, establezca esta propiedad antes de que se conecte el pin de salida del descodificador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Si el valor es cero, el descodificador no usa DirectX video Acceleration (DXVA) 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ Si el valor es cero, el descodificador no usa DirectX video Acceleration (DXVA) 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

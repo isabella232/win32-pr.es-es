@@ -1,9 +1,9 @@
 ---
-title: Descripción (InputType) (elemento)
+title: description (InputType) (Elemento)
 description: Descripción del tipo de entrada.
 ms.assetid: f7d534d6-3477-4868-ab94-d4713222acf2
 keywords:
-- elemento Description EventLog
+- elemento description EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 11ea044efc9e9a0ed54d31ad98614c1c4ba8fa06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b501de2b1232da479006f31974ed44b8c8ba5e595c14840a25d28e265f2ce6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589620"
 ---
-# <a name="description-inputtype-element"></a>Descripción (InputType) (elemento)
+# <a name="description-inputtype-element"></a>description (InputType) (Elemento)
 
 Descripción del tipo de entrada.
 
@@ -30,7 +30,7 @@ Descripción del tipo de entrada.
  />
 ```
 
-El elemento **Description** se define mediante el tipo complejo [**InputType**](eventmanifestschema-inputtype-complextype.md) .
+El **elemento description** se define mediante el tipo complejo [**InputType.**](eventmanifestschema-inputtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,19 +38,19 @@ El elemento **Description** se define mediante el tipo complejo [**InputType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**Intype (InputTypeListType)**](eventmanifestschema-intype-inputtypelisttype-element.md)
+[**inType (InputTypeListType)**](eventmanifestschema-intype-inputtypelisttype-element.md)
 </dt> </dl>
 
  

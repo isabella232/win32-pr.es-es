@@ -1,7 +1,7 @@
 ---
 description: El método NotifyMediaType notifica al objeto CDrawImage del tipo de medio actual.
 ms.assetid: 419d516f-4b96-47aa-80cc-ac785e65af8b
-title: Método CDrawImage. NotifyMediaType (Winutil. h)
+title: Método CDrawImage.NotifyMediaType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e3af4d926bd0ca8db5ef11839dd0ca84523c374
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3df1f904bb5c2acfc328e8779da6135f901de9601cea6735de21b2e76aeea9c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656796"
 ---
-# <a name="cdrawimagenotifymediatype-method"></a>CDrawImage. NotifyMediaType, método
+# <a name="cdrawimagenotifymediatype-method"></a>Método CDrawImage.NotifyMediaType
 
 El `NotifyMediaType` método notifica al objeto **CDrawImage** del tipo de medio actual.
 
@@ -45,7 +45,7 @@ void NotifyMediaType(
 *pMediaType* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) o **null** para borrar el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) o **NULL** para borrar el tipo de medio.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El filtro propietario debe llamar a este método cada vez que cambie el tipo de medio. Normalmente esto se produce cuando el PIN se conecta por primera vez y después de un cambio de formato dinámico.
+El filtro propietario debe llamar a este método siempre que cambie el tipo de medio. Normalmente esto sucede cuando el pin se conecta por primera vez y después de un cambio de formato dinámico.
 
-El objeto **CDrawImage** almacena el puntero *pMediaType* en la variable miembro **m \_ pMediaType** . Por consiguiente, si el autor de la llamada necesita liberar el objeto **CMediaType** , debe actualizar el objeto **CDrawImage** llamando de nuevo a este método, ya sea con un puntero nuevo o con un valor **null** . De lo contrario, se puede producir un error cuando el objeto **CDrawImage** intenta hacer referencia al puntero anterior.
+El **objeto CDrawImage** almacena el *puntero pMediaType* en la variable **miembro m \_ pMediaType.** Por lo tanto, si el autor de la llamada necesita liberar el objeto **CMediaType,** debe actualizar el objeto **CDrawImage** llamando de nuevo a este método, ya sea con un nuevo puntero o con un **valor NULL.** De lo contrario, se puede producir un error **cuando el objeto CDrawImage** intenta hacer referencia al puntero antiguo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El objeto **CDrawImage** almacena el puntero *pMediaType* en la variable miembro
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ El objeto **CDrawImage** almacena el puntero *pMediaType* en la variable miembro
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

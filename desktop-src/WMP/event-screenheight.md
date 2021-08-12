@@ -1,9 +1,9 @@
 ---
-title: evento. screenHeight
+title: event.screenHeight
 description: El atributo screenHeight recupera el alto del tamaño de pantalla disponible en píxeles.
 ms.assetid: 84f5c70b-ef00-44e9-a24e-ef292936a88c
 keywords:
-- evento. screenHeight Windows Media Player
+- event.screenHeight Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94f631ebce3b349ea29492376cf31e0a85c4b093
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d4b16a2fefdf5cd357a319bc3a074332dfe1a0adc65e8318ab9932bf0a238553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577048"
 ---
-# <a name="eventscreenheight"></a>evento. screenHeight
+# <a name="eventscreenheight"></a>event.screenHeight
 
-El atributo **screenHeight** recupera el alto del tamaño de pantalla disponible en píxeles.
+El **atributo screenHeight** recupera el alto del tamaño de pantalla disponible en píxeles.
 
 ``` syntax
 event.screenHeight
@@ -29,30 +29,30 @@ event.screenHeight
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto resulta útil para determinar la cantidad de espacio que hay en el monitor. Si hay dos monitores, calcula el espacio de ambos monitores.
+Esto es útil para determinar la cantidad de espacio que hay en el monitor. Si hay dos monitores, calcula el espacio para ambos monitores.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**evento. screenWidth**](event-screenwidth.md)
+[**event.screenWidth**](event-screenwidth.md)
 </dt> </dl>
 
  

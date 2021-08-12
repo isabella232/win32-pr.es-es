@@ -1,7 +1,7 @@
 ---
-description: 'El método QueryVendorInfo recupera una cadena que contiene información del proveedor. Este método implementa el método IBaseFilter:: QueryVendorInfo.'
+description: El método QueryVendorInfo recupera una cadena que contiene información del proveedor. Este método implementa el método IBaseFilter::QueryVendorInfo.
 ms.assetid: 083c0556-d516-4daf-8621-e158ea78b5a3
-title: Método CBaseFilter. QueryVendorInfo (Amfilter. h)
+title: Método CBaseFilter.QueryVendorInfo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1786477c042bb1d9ecc6340056a771141d0a3c74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff1cd8b966456df631a573ab2e8691b3be5d8bda47b21b042986204144e639b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659808"
 ---
-# <a name="cbasefilterqueryvendorinfo-method"></a>CBaseFilter. QueryVendorInfo, método
+# <a name="cbasefilterqueryvendorinfo-method"></a>Método CBaseFilter.QueryVendorInfo
 
-El `QueryVendorInfo` método recupera una cadena que contiene información del proveedor. Este método implementa el método [**IBaseFilter:: QueryVendorInfo**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryvendorinfo) .
+El `QueryVendorInfo` método recupera una cadena que contiene información del proveedor. Este método implementa el [**método IBaseFilter::QueryVendorInfo.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryvendorinfo)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Devuelve E \_ NOTIMPL.
 
 ## <a name="remarks"></a>Observaciones
 
-Para proporcionar información de proveedor para un filtro, Invalide este método. Si implementa este método, utilice la función **CoTaskMemAlloc** para asignar memoria para la cadena. El autor de la llamada es responsable de llamar a la función **CoTaskMemFree** .
+Para proporcionar información del proveedor para un filtro, invalide este método. Si implementa este método, use la **función CoTaskMemAlloc** para asignar memoria para la cadena. El autor de la llamada es responsable de llamar a **la función CoTaskMemFree.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Para proporcionar información de proveedor para un filtro, Invalide este métod
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Para proporcionar información de proveedor para un filtro, Invalide este métod
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

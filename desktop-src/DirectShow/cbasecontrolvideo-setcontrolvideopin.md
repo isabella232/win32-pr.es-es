@@ -1,7 +1,7 @@
 ---
-description: El método SetControlVideoPin establece el PIN usado por el filtro.
+description: El método SetControlVideoPin establece el pin usado por el filtro.
 ms.assetid: 4346f828-4380-4150-9ecb-74eb690bdcdf
-title: Método CBaseControlVideo. SetControlVideoPin (Ctlutil. h)
+title: Método CBaseControlVideo.SetControlVideoPin (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4cf47469800a4d1ecd8abe373d6f3c1fd53ece5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6169b5d2ec71148cd868e340c5a2f4e206355044ce55e0905c20787ddb3a263e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660790"
 ---
-# <a name="cbasecontrolvideosetcontrolvideopin-method"></a>CBaseControlVideo. SetControlVideoPin, método
+# <a name="cbasecontrolvideosetcontrolvideopin-method"></a>Método CBaseControlVideo.SetControlVideoPin
 
-El `SetControlVideoPin` método establece el PIN utilizado por el filtro.
+El `SetControlVideoPin` método establece el pin utilizado por el filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Solo se puede llamar a la interfaz cuando el filtro se ha conectado correctamente. El objeto se pasa a través de este método al código PIN con el que está sincronizado; en la mayoría de los casos, determinará si el PIN está conectado cuando tenga un método de interfaz llamado y devolverá VFW \_ E \_ no \_ conectado si se produce un error.
+Solo se puede llamar a la interfaz cuando el filtro se ha conectado correctamente. El objeto se pasa a través de este método al pin con el que está sincronizado; En la mayoría de los casos, determinará si el pin está conectado cuando tiene un método de interfaz llamado y devolverá VFW E NOT CONNECTED si \_ \_ se produce un \_ error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Solo se puede llamar a la interfaz cuando el filtro se ha conectado correctament
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Solo se puede llamar a la interfaz cuando el filtro se ha conectado correctament
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

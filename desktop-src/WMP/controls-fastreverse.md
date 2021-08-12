@@ -1,11 +1,11 @@
 ---
-title: Controls. fastReverse (método)
+title: Método Controls.fastReverse
 description: El método fastReverse inicia el examen rápido del elemento multimedia en la dirección inversa.
 ms.assetid: 4fc61739-9006-4d62-b2c1-2b8e8830f2d9
 keywords:
-- método fastReverse de Windows Media Player
-- método fastReverse Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, método fastReverse
+- Método fastReverse Reproductor de Windows Media
+- método fastReverse Reproductor de Windows Media , clase Controls
+- Controla la clase Reproductor de Windows Media , método fastReverse
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e5a63c4299bf08c25e36e2d61924f3fb171792
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d4643525f66102cbd7b017a4a48f1068489062ec0849f197f1f55df45fc6f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580281"
 ---
-# <a name="controlsfastreverse-method"></a>Controls. fastReverse (método)
+# <a name="controlsfastreverse-method"></a>Método Controls.fastReverse
 
-El método **fastReverse** inicia el examen rápido del elemento multimedia en la dirección inversa.
+El **método fastReverse** inicia el examen rápido del elemento multimedia en la dirección inversa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,19 +44,19 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **fastReverse** recorre el clip en orden inverso cinco veces la velocidad normal, mostrando solo los fotogramas clave si se trata de un archivo de vídeo. Al invocar **fastReverse** se cambia la *configuración*. propiedad **Rate** en 5,0. Si la **velocidad** se cambia posteriormente, o si se llama a **Play** o **Stop** , Windows Media Player dejará de ser inversa rápido.
+El **método fastReverse** examina el clip en orden inverso a una velocidad cinco veces mayor que la velocidad normal, mostrando solo los fotogramas clave si es un archivo de vídeo. La invocación **de fastReverse** cambia el *Configuración*. **propiedad** rate a 5,0. Si **posteriormente** se cambia la velocidad, o si se llama a **play** o **stop,** Reproductor de Windows Media dejará de invertirse rápidamente.
 
-Si el elemento forma parte de una lista de reproducción, **fastReverse** se detiene al principio de la pista actual. Por ejemplo, si el seguimiento 3 está en **fastReverse**, cuando se alcanza el comienzo de la pista 3, Windows Media Player no irá al seguimiento 2. El recuento de reproducción no se incrementa al llamar a **fastReverse**.
+Si el elemento forma parte de una lista de reproducción, **fastReverse** se detiene al principio de la pista actual. Por ejemplo, si la pista 3 está en **fastReverse**, cuando se alcanza el principio de la pista 3, Reproductor de Windows Media irá a la pista 2. El recuento de reproducción no se incrementa al llamar **a fastReverse**.
 
-Si llama a **fastForward** mientras **fastReverse** está en vigor, **fastReverse** se detendrá y se iniciará **fastForward** .
+Si llama a **fastForward mientras** **fastReverse** está en vigor, se detendrán **fastReverse** y se iniciará **fastForward.**
 
-Este método no funciona para las difusiones en vivo y determinados tipos de medios. Para determinar si puede usar Fast Reverse en un clip, llame a **isavailable**("FastReverse").
+Este método no funciona para difusiones en directo y determinados tipos de medios. Para determinar si puede usar un inverso rápido en un clip, llame a **isAvailable**("FastReverse").
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que usa **fastReverse** para iniciar la reproducción rápida y inversa del elemento multimedia. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **fastReverse** para iniciar la reproducción inversa rápida del elemento multimedia. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -76,33 +76,33 @@ En el ejemplo siguiente se crea un elemento de botón HTML que usa **fastReverse
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controls. fastForward**](controls-fastforward.md)
+[**Controls.fastForward**](controls-fastforward.md)
 </dt> <dt>
 
-[**Controls. isAvailable**](controls-isavailable.md)
+[**Controls.isAvailable**](controls-isavailable.md)
 </dt> <dt>
 
-[**Controls. Play**](controls-play.md)
+[**Controls.play**](controls-play.md)
 </dt> <dt>
 
-[**Controls. STOP**](controls-stop.md)
+[**Controls.stop**](controls-stop.md)
 </dt> <dt>
 
-[**Settings. rate**](settings-rate.md)
+[**Configuración.rate**](settings-rate.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Versión actual del conjunto de PIN de este filtro.
+description: Versión actual del conjunto de pines de este filtro.
 ms.assetid: c748d62a-a725-43a0-b5f4-b14ae9e6ef2c
-title: 'Miembro CBaseFilter:: m_PinVersion (Amfilter. h)'
+title: Miembro CBaseFilter::m_PinVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 15936bc37ff4c1c02077ad65d6700cdbdf1dbe8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aef93f49119573d7c6fdacba3ba3796bea6fe3fafdf8b631bcf694e7b68fc433
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659959"
 ---
-# <a name="cbasefilterm_pinversion-member"></a>Miembro PinVersion CBaseFilter:: m \_
+# <a name="cbasefilterm_pinversion-member"></a>Miembro PinVersion de CBaseFilter::m \_
 
-Versión actual del conjunto de PIN de este filtro.
+Versión actual del conjunto de pines de este filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ long m_PinVersion;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ long m_PinVersion;
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> <dt>
 
 [**CBaseFilter::GetPinVersion**](cbasefilter-getpinversion.md)

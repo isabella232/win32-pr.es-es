@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m EndSample especifica la hora de detención de la muestra más reciente.
+description: La \_ variable miembro m EndSample especifica la hora de detenerse del ejemplo más reciente.
 ms.assetid: 694815b6-8da5-4174-b2c7-7d686a557c6c
-title: 'Miembro CDrawImage:: m_EndSample (Winutil. h)'
+title: CDrawImage::m_EndSample miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 78268e8335d6dd8c24497a9e4d74b0caab205a99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2877e709cb7d0d8a259dfa91e1ebe3b723771493e012bf29eef0fffe1c7eaeaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656988"
 ---
-# <a name="cdrawimagem_endsample-member"></a>Miembro EndSample CDrawImage:: m \_
+# <a name="cdrawimagem_endsample-member"></a>Miembro CDrawImage::m \_ EndSample
 
-La `m_EndSample` variable miembro especifica la hora de detención de la muestra más reciente.
+La `m_EndSample` variable miembro especifica la hora de detenerse del ejemplo más reciente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ CRefTime m_EndSample;
 
 ## <a name="remarks"></a>Observaciones
 
-El valor solo es válido dentro del método [**CDrawImage::D isplaysampletimes**](cdrawimage-displaysampletimes.md) .
+El valor solo es válido dentro del [**método CDrawImage::D isplaySampleTimes.**](cdrawimage-displaysampletimes.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ El valor solo es válido dentro del método [**CDrawImage::D isplaysampletimes**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ El valor solo es válido dentro del método [**CDrawImage::D isplaysampletimes**
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

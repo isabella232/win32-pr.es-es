@@ -1,7 +1,7 @@
 ---
-description: El método siguiente recupera la posición siguiente en la lista.
+description: El método Next recupera la siguiente posición de la lista.
 ms.assetid: ba9753b0-c82e-4772-84a7-e9982de3b8ad
-title: Método CBaseList. Next (Wxlist. h)
+title: Método CBaseList.Next (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f8a09ec91191437fbfb851ce92824b118a5440ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d07030c046f3fe55178707af297542f383bfd5cf75f40169b5c93cfafa1c698b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658961"
 ---
-# <a name="cbaselistnext-method"></a>CBaseList. Next (método)
+# <a name="cbaselistnext-method"></a>CBaseList.Next (método)
 
-El `Next` método recupera la posición siguiente en la lista.
+El `Next` método recupera la siguiente posición de la lista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ POSITION Next(
 *pos* 
 </dt> <dd>
 
-Valor de posición.
+Valor POSITION.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Devuelve el indicador de posición que sigue a la posición especificada por *po
 
 ## <a name="remarks"></a>Observaciones
 
-Si *pos* es la última posición de la lista, el método devuelve **null**. Si *pos* es **null**, el método devuelve la primera posición de la lista.
+Si *pos* es la última posición de la lista, el método devuelve **NULL.** Si *pos* es **NULL,** el método devuelve la primera posición de la lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si *pos* es la última posición de la lista, el método devuelve **null**. Si *
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si *pos* es la última posición de la lista, el método devuelve **null**. Si *
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

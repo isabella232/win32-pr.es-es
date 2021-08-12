@@ -1,9 +1,9 @@
 ---
-title: Elemento color
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. | Elemento color
+title: Elemento Color
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. | Elemento Color
 ms.assetid: 36fafe16-b708-4dc1-9325-d4f39265069a
 keywords:
-- Elemento de color Media Player de Windows
+- Color Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c73aa9fe2c7f731e872c4a2e235bf9c0e29ce05
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b8576f94c2d1aa88608f8f40cbfe32c2d1dc315e0e4578ca6554fa5fcde82c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580760"
 ---
-# <a name="color-element"></a>Elemento color
+# <a name="color-element"></a>Elemento Color
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El elemento color especifica el color de fondo de los botones de navegación de la tienda en línea, el texto del botón y la barra de tareas características.
+El elemento Color especifica el color de fondo para los botones de navegación de la tienda en línea, el texto de los botones y la barra de tareas Características.
 
 ``` syntax
 <Color
@@ -71,26 +71,26 @@ Valor de color RGB hexadecimal. Especifica el color del texto del botón.
 
 El valor predeterminado de **MediaPlayer** es \# 7C9AD6. El valor predeterminado de **MediaPlayerText** es \# FFFFFF.
 
-Asegúrese de usar colores que facilitan al usuario la lectura del texto del botón. Por ejemplo, debe evitar el uso de texto de botón blanco en botones de color claro.
+Asegúrese de usar colores que hagan que sea fácil para el usuario leer el texto del botón. Por ejemplo, debe evitar el uso de texto de botón en blanco en botones de color claro.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Ejemplo de documento ServiceInfo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Ejemplo de documento ServiceInfo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

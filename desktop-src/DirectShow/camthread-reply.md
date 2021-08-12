@@ -1,7 +1,7 @@
 ---
-description: El método reply responde a una solicitud.
+description: El método Reply responde a una solicitud.
 ms.assetid: 90e91b99-6a1c-46a2-b83d-eba483f1832a
-title: Método CAMThread. reply (Wxutil. h)
+title: Método CAMThread.Reply (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5e86e0bc0155e527aa11c26531ae5608e6828362
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9783703d711800b8002aa0372292349d83620eafb097be2256ffde6ab2c91c09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662371"
 ---
-# <a name="camthreadreply-method"></a>CAMThread. reply (método)
+# <a name="camthreadreply-method"></a>Método CAMThread.Reply
 
 El `Reply` método responde a una solicitud.
 
@@ -45,7 +45,7 @@ void Reply(
 *dw* 
 </dt> <dd>
 
-Valor que se va a devolver en el método [**CAMThread:: CallWorker**](camthread-callworker.md) .
+Valor que se devuelve en el [**método CAMThread::CallWorker.**](camthread-callworker.md)
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El método CallWorker se bloquea hasta que se llama a este método. El parámetro *DW* proporciona el valor devuelto para CallWorker. Llame a este método en el procedimiento del subproceso después de recuperar una solicitud, para liberar el subproceso que lo solicita.
+El método CallWorker se bloquea hasta que se llama a este método. El *parámetro dw* proporciona el valor devuelto para CallWorker. Llame a este método en el procedimiento de subproceso después de recuperar una solicitud para liberar el subproceso solicitante.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ El método CallWorker se bloquea hasta que se llama a este método. El parámetr
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ El método CallWorker se bloquea hasta que se llama a este método. El parámetr
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

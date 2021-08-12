@@ -1,9 +1,9 @@
 ---
 title: Evento CurrentItemChange del objeto AxWindowsMediaPlayer
-description: El evento CurrentItemChange se produce cuando cambia el valor de IWMPControls. currentItem.
+description: El evento CurrentItemChange tiene lugar cuando cambia el valor de IWMPControls.currentItem.
 ms.assetid: c5eeafd2-405b-4808-97d1-399a2344ca42
 keywords:
-- Evento CurrentItemChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento CurrentItemChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c33bb3e9c4c1e512e742c0e679f3c5b53a29735
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d1786fab3e312f95550103cdc6cf4f2558e25e883df9c7be2d6f850a7f8a5ce4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582561"
 ---
 # <a name="currentitemchange-event-of-the-axwindowsmediaplayer-object"></a>Evento CurrentItemChange del objeto AxWindowsMediaPlayer
 
-El evento CurrentItemChange se produce cuando el valor de IWMPControls. **CurrentItem** cambia.
+El evento CurrentItemChange tiene lugar cuando el valor de IWMPControls. **currentItem** cambia.
 
 ``` syntax
 [C#]
@@ -47,7 +47,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad   | Descripción                                                                                                   |
 |------------|---------------------------------------------------------------------------------------------------------------|
-| pdispMedia | System. ObjectThe nuevo elemento multimedia actual. Puede convertirlo en una interfaz IWMPMedia para tener acceso a él.<br/> |
+| pdispMedia | System.ObjectEl nuevo elemento multimedia actual. Puede convertir esto en una interfaz IWMPMedia para acceder a ella.<br/> |
 
 
 
@@ -55,7 +55,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un controlador de eventos para el evento CurrentItemChange. El objeto AxWMPLib. AxWindowsMediaPlayer se representa mediante la variable denominada Player.
+En el ejemplo siguiente se muestra un controlador de eventos para el evento CurrentItemChange. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -88,22 +88,22 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentItem (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
+[**IWMPControls.currentItem (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPMedia (VB y C#)**](iwmpmedia--vb-and-c.md)

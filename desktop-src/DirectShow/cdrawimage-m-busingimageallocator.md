@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m bUsingImageAllocator indica si el asignador de la conexión de PIN es un objeto CImageAllocator. Si el valor es TRUE, el asignador es un objeto CImageAllocator (o se deriva de esa clase).
+description: La variable miembro m bUsingImageAllocator indica si el asignador de la conexión de pin \_ es un objeto CImageAllocator. Si el valor es TRUE, el asignador es un objeto CImageAllocator (o se deriva de esa clase).
 ms.assetid: 8eddcab6-77b9-4c8f-be74-33e91661430d
-title: 'Miembro CDrawImage:: m_bUsingImageAllocator (Winutil. h)'
+title: CDrawImage::m_bUsingImageAllocator miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e08d1e8217f42c6855759cefeef40e56949156fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf60184758598872577e0c6b293f8eb0b72c5bf7305f1516a4dd6b5a4a639b94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657142"
 ---
-# <a name="cdrawimagem_busingimageallocator-member"></a>Miembro bUsingImageAllocator CDrawImage:: m \_
+# <a name="cdrawimagem_busingimageallocator-member"></a>Miembro CDrawImage::m \_ bUsingImageAllocator
 
-La `m_bUsingImageAllocator` variable miembro indica si el asignador de la conexión de PIN es un objeto **CImageAllocator** . Si el valor es **true**, el asignador es un objeto **CImageAllocator** (o se deriva de esa clase).
+La `m_bUsingImageAllocator` variable miembro indica si el asignador de la conexión de pin es un objeto **CImageAllocator.** Si el valor es **TRUE,** el asignador es un **objeto CImageAllocator** (o se deriva de esa clase).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ BOOL m_bUsingImageAllocator;
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el valor es **true**, el objeto **CDrawImage** puede usar las funciones **bitblt** y **StretchBlt** de GDI para representar la imagen, en lugar de las funciones **SetDIBitsToDevice** y **StretchDIBits** más lentas.
+Cuando el valor es **TRUE,** el objeto **CDrawImage** puede usar las funciones **BitBlt** y **StretchBlt** de GDI para representar la imagen, en lugar de las funciones **SetDIBitsToDevice** y **StretchDIBits más lentas.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Cuando el valor es **true**, el objeto **CDrawImage** puede usar las funciones *
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Cuando el valor es **true**, el objeto **CDrawImage** puede usar las funciones *
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> <dt>
 
 [**CDrawImage::NotifyAllocator**](cdrawimage-notifyallocator.md)

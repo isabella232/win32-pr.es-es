@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a0f6c976f64fe64d3ca583351ae5c7c32aa958fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ea9b91fe926ecbab34fa65fd6c21f852501b6d515acaf8b9aaa5b8971a27c37b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304509"
 ---
 # <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveLH (D3DX10Math.h)
 
@@ -93,7 +93,7 @@ Valor Z del plano de vista lejano.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva con la mano izquierda.
+Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva a la izquierda.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -101,7 +101,7 @@ Todos los parámetros de la función D3DXMatrixPerspectiveLH son distancias en e
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveLH se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```

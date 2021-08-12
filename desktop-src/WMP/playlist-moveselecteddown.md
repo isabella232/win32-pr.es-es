@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. moveSelectedDown
-description: El método moveSelectedDown mueve el elemento seleccionado una posición hacia abajo en la lista.
+title: PLAYLIST.moveSelectedDown
+description: El método moveSelectedDown mueve el elemento seleccionado hacia abajo una posición en la lista.
 ms.assetid: dbd2fa20-8e94-47d8-89e8-9b4677d9b825
 keywords:
-- Windows Media Player de lista de reproducción. moveSelectedDown
+- PLAYLIST.moveSelectedDown Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bce3a6fd2f27656684d77288cf5d3a1cdf6c36f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43124fc13044b1802b78d036700af9077ed8893bb9cc4ea0f2ad9df9a117e405
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571144"
 ---
-# <a name="playlistmoveselecteddown"></a>Lista de reproducción. moveSelectedDown
+# <a name="playlistmoveselecteddown"></a>PLAYLIST.moveSelectedDown
 
-El método **moveSelectedDown** mueve el elemento seleccionado una posición hacia abajo en la lista.
+El **método moveSelectedDown** mueve el elemento seleccionado hacia abajo una posición en la lista.
 
 ``` syntax
         elementID.moveSelectedDown()
@@ -40,20 +40,20 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. moveSelectedUp**](playlist-moveselectedup.md)
+[**PLAYLIST.moveSelectedUp**](playlist-moveselectedup.md)
 </dt> </dl>
 
  

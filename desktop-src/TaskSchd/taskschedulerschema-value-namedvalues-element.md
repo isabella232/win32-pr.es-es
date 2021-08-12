@@ -1,9 +1,9 @@
 ---
 title: Elemento Value (namedValues)
-description: Contiene el valor que está asociado a un nombre en un par nombre-valor.
+description: Contiene el valor asociado a un nombre en un par nombre-valor.
 ms.assetid: d5582b55-0b9b-4fed-a425-9d15a1a62fb7
 keywords:
-- Elemento Value Programador de tareas
+- Valor, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8afa12156a15ff399f3cbc967a5fd9c612df582b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2583d7fcaa9a9832e54c405200397e40948204546cb81e89a90ceb6949e218e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610420"
 ---
 # <a name="value-namedvalues-element"></a>Elemento Value (namedValues)
 
-Contiene el valor que está asociado a un nombre en un par nombre-valor.
+Contiene el valor asociado a un nombre en un par nombre-valor.
 
 ``` syntax
 <xs:element name="Value"
@@ -32,7 +32,7 @@ Contiene el valor que está asociado a un nombre en un par nombre-valor.
  />
 ```
 
-El elemento de **valor** se define mediante el tipo complejo de [**namedValues**](taskschedulerschema-namedvalues-complextype.md) .
+El **tipo** complejo [**namedValues**](taskschedulerschema-namedvalues-complextype.md) define el elemento Value.
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,15 +40,15 @@ El elemento de **valor** se define mediante el tipo complejo de [**namedValues**
 
 | Elemento                                                                                              | Derivado de                                                       | Descripción                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ValueQueries (eventTriggerType)**](taskschedulerschema-valuequeries-eventtriggertype-element.md) | [**namedValues**](taskschedulerschema-namedvalues-complextype.md) | Especifica una colección de consultas XPath con nombre. Cada consulta de la colección se aplica al último XML de evento coincidente que se devuelve de la consulta de suscripción especificada en el elemento [**subscription**](taskschedulerschema-subscription-eventtriggertype-element.md) . El nombre de la consulta se puede usar como una variable en el mensaje de una acción ShowMessage.<br/> |
+| [**ValueQueries (eventTriggerType)**](taskschedulerschema-valuequeries-eventtriggertype-element.md) | [**namedValues**](taskschedulerschema-namedvalues-complextype.md) | Especifica una colección de consultas XPath con nombre. Cada consulta de la colección se aplica al último XML de evento correspondiente que se devuelve de la consulta de suscripción especificada en el [**elemento Subscription.**](taskschedulerschema-subscription-eventtriggertype-element.md) El nombre de la consulta se puede usar como variable en el mensaje de una acción ShowMessage.<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de C++, vea la [**propiedad Value de ITaskNamedValuePair**](/windows/desktop/api/taskschd/nf-taskschd-itasknamedvaluepair-get_value).
+Para el desarrollo de C++, vea [**Propiedad Value de ITaskNamedValuePair.**](/windows/desktop/api/taskschd/nf-taskschd-itasknamedvaluepair-get_value)
 
-Para el desarrollo de scripts, vea [**TaskNamedValuePair. Value**](tasknamedvaluepair-value.md).
+Para el desarrollo de scripts, [**vea TaskNamedValuePair.Value**](tasknamedvaluepair-value.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Para el desarrollo de scripts, vea [**TaskNamedValuePair. Value**](tasknamedvalu
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

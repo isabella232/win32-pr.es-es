@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapSystemHealthValidationRequest2 (NapSystemHealthValidator. h)
-description: Proporciona métodos que se usan para admitir validadores de mantenimiento del sistema definidos por el desarrollador de la aplicación.
+title: Interfaz INapSystemHealthValidationRequest2 (NapSystemHealthValidator.h)
+description: Proporciona métodos que se usan para admitir validadores de estado del sistema definidos por el desarrollador de aplicaciones.
 ms.assetid: 12094203-bb6c-4028-9baf-a2a9b124ce6d
 keywords:
-- Interfaz INapSystemHealthValidationRequest2 NAP
-- Interfaz INapSystemHealthValidationRequest2 NAP, descripción
+- NAP de la interfaz INapSystemHealthValidationRequest2
+- Interfaz NAP INapSystemHealthValidationRequest2 , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12fdbfc46578a4e64a92accc46f6b910a44dd946
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b6438394120ecd901c6de6d7a8ccac40f742d9f73d27a36682de894d9c5a7ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105677007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620854"
 ---
 # <a name="inapsystemhealthvalidationrequest2-interface"></a>Interfaz INapSystemHealthValidationRequest2
 
@@ -29,7 +29,7 @@ ms.locfileid: "105677007"
 
  
 
-La interfaz **INapSystemHealthValidationRequest2** proporciona métodos que se usan para admitir los validadores de mantenimiento del sistema definidos por el desarrollador de la aplicación.
+La **interfaz INapSystemHealthValidationRequest2** proporciona métodos que se usan para admitir validadores de estado del sistema definidos por el desarrollador de la aplicación.
 
 > [!Note]  
 > Esta interfaz hereda todos los métodos de [**INapSystemHealthValidationRequest**](inapsystemhealthvalidationrequest.md) y se debe usar en su lugar.
@@ -38,13 +38,13 @@ La interfaz **INapSystemHealthValidationRequest2** proporciona métodos que se u
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapSystemHealthValidationRequest2** hereda de [**INapSystemHealthValidationRequest**](inapsystemhealthvalidationrequest.md). **INapSystemHealthValidationRequest2** también tiene estos tipos de miembros:
+La **interfaz INapSystemHealthValidationRequest2** hereda de [**INapSystemHealthValidationRequest.**](inapsystemhealthvalidationrequest.md) **INapSystemHealthValidationRequest2** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapSystemHealthValidationRequest2** tiene estos métodos.
+La **interfaz INapSystemHealthValidationRequest2** tiene estos métodos.
 
 
 
@@ -58,7 +58,7 @@ La interfaz **INapSystemHealthValidationRequest2** tiene estos métodos.
 
 ## <a name="remarks"></a>Observaciones
 
-Si un SHV no es compatible con [**INapComponentConfig3**](inapcomponentconfig3.md), esta interfaz no se aplica.
+Si una SHV no admite [**INapComponentConfig3,**](inapcomponentconfig3.md)esta interfaz no se aplica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Si un SHV no es compatible con [**INapComponentConfig3**](inapcomponentconfig3.m
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
@@ -81,7 +81,7 @@ Si un SHV no es compatible con [**INapComponentConfig3**](inapcomponentconfig3.m
 [**INapSystemHealthValidationRequest**](inapsystemhealthvalidationrequest.md)
 </dt> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6b63ee3aa52bc0363bcab90275be4148659b3bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: faf8b2cf0a4f1def8ea89ad04bd013d3867ff5a456e6c8922f72a078d860df92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654783"
 ---
 # <a name="ctransinplaceoutputpinctransinplaceoutputpin-constructor"></a>Constructor CTransInPlaceOutputPin.CTransInPlaceOutputPin
 
@@ -55,14 +55,14 @@ Cadena que contiene el nombre de depuración del objeto. Para obtener más infor
 *pFilter* 
 </dt> <dd>
 
-Puntero al filtro que creó este pin, que debe ser [**un objeto CTransInPlaceFilter.**](ctransinplacefilter.md)
+Puntero al filtro que creó este pin, que debe ser un [**objeto CTransInPlaceFilter.**](ctransinplacefilter.md)
 
 </dd> <dt>
 
 *Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o el error del método. Inicialice el valor en S \_ OK antes de crear el objeto. El valor solo se cambia si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto . El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Cadena de caracteres anchos que contiene el nombre del pin.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *parámetro pName* especifica el nombre del pin, que devuelve el [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Sin embargo, la cadena no se usa para el identificador de pin. El identificador de pin de esta clase siempre es "Out". Para obtener más información, vea [**QueryId**](ctransforminputpin-queryid.md).
 
@@ -83,12 +83,12 @@ El *parámetro pName* especifica el nombre del pin, que devuelve el [**método I
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

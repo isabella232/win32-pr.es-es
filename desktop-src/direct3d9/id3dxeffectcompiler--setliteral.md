@@ -1,7 +1,7 @@
 ---
 description: Alterna el estado literal de un parámetro. Un parámetro literal tiene un valor que no cambia durante la vigencia de un efecto.
 ms.assetid: 09ebf666-8a50-4604-abef-aed0d92a6d49
-title: 'ID3DXEffectCompiler:: SetLiteral (método) (D3DX9Shader. h)'
+title: Método ID3DXEffectCompiler::SetLiteral (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 5a64426381876458b601b741050a01e5f35d084c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d28ee64c1d1e52b4005c1a81ef4690c539a09e06eb7a8378a246184cf4d2fd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295836"
 ---
-# <a name="id3dxeffectcompilersetliteral-method"></a>ID3DXEffectCompiler:: SetLiteral (método)
+# <a name="id3dxeffectcompilersetliteral-method"></a>Método ID3DXEffectCompiler::SetLiteral
 
 Alterna el estado literal de un parámetro. Un parámetro literal tiene un valor que no cambia durante la vigencia de un efecto.
 
@@ -41,21 +41,21 @@ HRESULT SetLiteral(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de un parámetro. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único de un parámetro. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*Literal* \[ de de\]
+*Literal* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Establézcalo en **true** para que el parámetro sea un literal y **false** si el parámetro puede cambiar el valor durante la vigencia del sombreador.
+Establezca en **TRUE** para convertir el parámetro en literal y **FALSE** si el parámetro puede cambiar el valor durante la duración del sombreador.
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ Establézcalo en **true** para que el parámetro sea un literal y **false** si e
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo cambia si el parámetro es un literal o no. Para cambiar el valor de un parámetro, use un método como [**ID3DXBaseEffect:: SetBool**](id3dxbaseeffect--setbool.md) o [**ID3DXBaseEffect:: SetValue**](id3dxbaseeffect--setvalue.md).
+Este método solo cambia si el parámetro es un literal o no. Para cambiar el valor de un parámetro, use un método como [**ID3DXBaseEffect::SetBool**](id3dxbaseeffect--setbool.md) o [**ID3DXBaseEffect::SetValue**](id3dxbaseeffect--setvalue.md).
 
-Se debe llamar a esta función antes de que se compile el efecto. Este es un ejemplo de cómo puede usarse esta función:
+Se debe llamar a esta función antes de compilar el efecto. Este es un ejemplo de cómo se podría usar esta función:
 
 
 ```
@@ -106,12 +106,12 @@ Se debe llamar a esta función antes de que se compile el efecto. Este es un eje
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
