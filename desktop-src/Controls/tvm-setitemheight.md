@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_SETITEMHEIGHT (commctrl. h)
-description: Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro SetItemHeight de TreeView.
+title: TVM_SETITEMHEIGHT mensaje (Commctrl.h)
+description: Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetItemHeight.
 ms.assetid: 23f6f2a4-cdd9-441d-af24-ed40513d2721
 keywords:
-- TVM_SETITEMHEIGHT controles de mensajes de Windows
+- TVM_SETITEMHEIGHT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 114769f689cbf8d9475460e40d205c4282a1a787
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9afff57188a9683d18c6bff780b4a9f61479526d44ea77985742520a47e66cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669650"
 ---
-# <a name="tvm_setitemheight-message"></a>\_Mensaje de SETITEMHEIGHT TVM
+# <a name="tvm_setitemheight-message"></a>Mensaje \_ SETITEMHEIGHT de TVM
 
-Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetItemHeight de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitemheight) .
+Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetItemHeight.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitemheight)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece el alto de los elementos de la vista de árbol. Puede enviar este mens
 *wParam* 
 </dt> <dd>
 
-Nuevo alto de cada elemento en la vista de árbol, en píxeles. El alto inferior a 1 se establecerá en 1. Si este argumento no es par y el control de vista de árbol no tiene el [**estilo \_ NONEVENHEIGHT de TV**](tree-view-control-window-styles.md) , este valor se redondeará al valor par más cercano. Si este argumento es-1, el control volverá a usar su alto predeterminado del elemento.
+Nuevo alto de cada elemento de la vista de árbol, en píxeles. Las alturas inferiores a 1 se establecerán en 1. Si este argumento no es par y el control de vista de árbol no tiene el estilo [**\_ TVS NONEVENHEIGHT,**](tree-view-control-window-styles.md) este valor se redondeará hacia abajo al valor par más cercano. Si este argumento es -1, el control volverá a usar su alto de elemento predeterminado.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Devuelve el alto anterior de los elementos, en píxeles.
 
 ## <a name="remarks"></a>Observaciones
 
-El control de vista de árbol usa este valor para el alto de todos los elementos. Para modificar el alto de elementos individuales, vea la descripción del miembro **iIntegral** de la estructura [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) .
+El control de vista de árbol usa este valor para el alto de todos los elementos. Para modificar el alto de elementos individuales, vea la descripción del **miembro iIntegral** de la [**estructura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ El control de vista de árbol usa este valor para el alto de todos los elementos
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

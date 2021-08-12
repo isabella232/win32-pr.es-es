@@ -1,7 +1,7 @@
 ---
 description: Agrega un nombre de red local alternativo para el equipo desde el que se llama.
 ms.assetid: e4d8355b-0492-4b6f-988f-3887e63a2bba
-title: AddLocalAlternateComputerName función)
+title: Función AddLocalAlternateComputerName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,14 +23,14 @@ api_location:
 - API-Ms-Win-Core-Kernel32-Legacy-Ansi-L1-1-0.dll
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-4.dll
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-5.dll
-ms.openlocfilehash: 6027752a0e60f135f0cc8a1c0cdd536c59c09621
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90945188209abdcaf16a7250e43db2af9a99ab4a3fbb55b8baabf0ea610c99e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668687"
 ---
-# <a name="addlocalalternatecomputername-function"></a>AddLocalAlternateComputerName función)
+# <a name="addlocalalternatecomputername-function"></a>Función AddLocalAlternateComputerName
 
 Agrega un nombre de red local alternativo para el equipo desde el que se llama.
 
@@ -50,14 +50,14 @@ DWORD AddLocalAlternateComputerName(
 
 <dl> <dt>
 
-*lpDnsFQHostname* \[ de\]
+*lpDnsFQHostname* \[ En\]
 </dt> <dd>
 
-Nombre alternativo que se va a agregar. El nombre debe estar en el formato **ComputerNameDnsFullyQualified** , tal y como se define en la enumeración de [**\_ \_ formato de nombre de equipo**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format) , y la función [**DnsValidateName \_ W**](/windows/win32/api/windns/nf-windns-dnsvalidatename) debe ser capaz de validarla con su formato establecido en **DnsNameHostnameFull**.
+Nombre alternativo que se va a agregar. El nombre debe tener el formato **ComputerNameDnsFullyQualified** tal como se define en la enumeración [**COMPUTER NAME \_ \_ FORMAT**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format) y la función [**DnsValidateName \_ W**](/windows/win32/api/windns/nf-windns-dnsvalidatename) debe poder validarlo con su formato establecido en **DnsNameHostnameFull**.
 
 </dd> <dt>
 
-*ulFlags* \[ de\]
+*ulFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro está reservado y debe establecerse en cero.
@@ -66,14 +66,14 @@ Este parámetro está reservado y debe establecerse en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve el **error \_ Success**. Si se produce un error en la función, devuelve un código de error distinto de cero. Entre los códigos de error que devuelve se encuentran los siguientes:
+Si la función se realiza correctamente, la función devuelve **ERROR \_ SUCCESS**. Si se produce un error en la función, devuelve un código de error distinto de cero. Entre los códigos de error que devuelve se encuentran los siguientes:
 
 
 
 | Código devuelto                                                                                               | Descripción                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ERROR \_ de \_ parámetro no válido**</dt> </dl>  | Indica que el parámetro *lpDnsFQHostname* no apunta a un nombre DNS válido o que el parámetro *ulFlags* no es igual a cero.<br/> |
-| <dl> <dt>**ERROR \_ de \_ memoria insuficiente \_**</dt> </dl> | no hay suficiente memoria para completar la operación.<br/>                                                                                    |
+| <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>  | Indica que el parámetro *lpDnsFQHostname* no apunta a un nombre DNS válido o que el parámetro *ulFlags* no es igual a cero.<br/> |
+| <dl> <dt>**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**</dt> </dl> | no hay suficiente memoria para completar la operación.<br/>                                                                                    |
 
 
 
@@ -95,7 +95,7 @@ Si la función se ejecuta correctamente, la función devuelve el **error \_ Succ
 
 <dl> <dt>
 
-[**\_formato de nombre de equipo \_**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format)
+[**FORMATO DE \_ NOMBRE \_ DE EQUIPO**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format)
 </dt> <dt>
 
 [**DnsValidateName \_ W**](/windows/win32/api/windns/nf-windns-dnsvalidatename)

@@ -1,8 +1,8 @@
 ---
-description: Recupera el tamaño actual, en bytes, del espacio de direcciones virtuales libre disponible para el proceso.
+description: Recupera el tamaño actual, en bytes, del espacio de direcciones virtuales disponible para el proceso.
 ms.assetid: 13b3b347-5db1-484f-bd1d-3a604eb6bc5b
 ms.tgt_platform: multiple
-title: Método GetAvailableVirtualSize de la clase Win32_Process
+title: Método GetAvailableVirtualSize de la Win32_Process clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ee6e798b8df32822de481f3af1dc6b21a81d1024
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7cdea363ce835297469242a4166d5e1e9eeea0845f27d0c780eef88f775bf751
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675998"
 ---
-# <a name="getavailablevirtualsize-method-of-the-win32_process-class"></a>Método GetAvailableVirtualSize de la \_ clase Process de Win32
+# <a name="getavailablevirtualsize-method-of-the-win32_process-class"></a>Método GetAvailableVirtualSize de la clase Process de \_ Win32
 
-Recupera el tamaño actual, en bytes, del espacio de direcciones virtuales libre disponible para el proceso.
+Recupera el tamaño actual, en bytes, del espacio de direcciones virtuales disponible para el proceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ uint32 GetAvailableVirtualSize(
 
 <dl> <dt>
 
-*AvailableVirtualSize* \[ enuncia\]
+*AvailableVirtualSize* \[ out\]
 </dt> <dd>
 
-El parámetro *AvailableVirtualSize* devuelve el espacio de direcciones virtuales disponible para este proceso.
+El *parámetro AvailableVirtualSize* devuelve el espacio de direcciones virtuales disponible para este proceso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero (0) para indicar que la operación se ha realizado correctamente. Cualquier otro número indica que hubo un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve cero (0) para indicar que se ha correcto. Cualquier otro número indica que hubo un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -112,7 +112,7 @@ El parámetro especificado no es válido.
 
 22 4294967295
 
-Para valores distintos de los enumerados, consulte la documentación de [códigos de error del sistema](/windows/desktop/Debug/system-error-codes) .
+Para obtener valores distintos de los enumerados, consulte la documentación [de códigos de error del](/windows/desktop/Debug/system-error-codes) sistema.
 
 </dd> </dl>
 
@@ -123,9 +123,9 @@ Para valores distintos de los enumerados, consulte la documentación de [código
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                       |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -134,7 +134,7 @@ Para valores distintos de los enumerados, consulte la documentación de [código
 
 <dl> <dt>
 
-[**\_Proceso Win32**](win32-process.md)
+[**Proceso \_ win32**](win32-process.md)
 </dt> </dl>
 
  

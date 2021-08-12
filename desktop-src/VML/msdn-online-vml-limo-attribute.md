@@ -1,26 +1,26 @@
 ---
-title: Atributo limo de VML
-description: Atributo limo de VML
+title: Atributo VmL Limo
+description: Atributo VmL Limo
 ms.assetid: 61919d48-0cc8-4693-a8bb-a8a4498ef840
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a364aebfc2384ac9e19c9dc5f2f0ae52f09228a8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: aa99325f396a3e4709fcd7ca1ee6ee82df1b653dff50df56df2df06ef2d513ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118598315"
 ---
-# <a name="vml-limo-attribute"></a>Atributo limo de VML
+# <a name="vml-limo-attribute"></a>Atributo VmL Limo
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define un punto de estiramiento en la ruta de acceso. Lectura/escritura **Vector2D**.
+Define un punto de extensión en la ruta de acceso. Lectura/escritura **Vector2D**.
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Define un punto de estiramiento en la ruta de acceso. Lectura/escritura **Vector
 
 **Sintaxis de etiquetas**
 
-<v: *Element* limo = " *expresión* " >
+<v: *element* limo=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . limo = "*expresión*"
+*element* .limo="*expression*"
 
-*expresión* = de *elemento*. limo
+*expresión* = *elemento*.limo
 
 **Comentarios:**
 
-El valor predeterminado es "0 0". Limo stretchs son puntos en el borde de una forma que definen dónde y cómo un usuario puede ajustar una forma en un editor gráfico.
+El valor predeterminado es "0 0". Los stretchs de limusina son puntos en el borde de una forma que definen dónde y cómo un usuario puede extender una forma en un editor gráfico.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-Un punto de estiramiento de limo se define A la mitad de la línea horizontal.
+Un punto de stretch de limusina se define a medio camino a lo largo de la línea horizontal.
 
 
 ```HTML
@@ -56,6 +56,6 @@ Un punto de estiramiento de limo se define A la mitad de la línea horizontal.
 
 
 
- 
+ 
 
- 
+ 

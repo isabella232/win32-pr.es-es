@@ -1,8 +1,8 @@
 ---
-description: El método de clase de WMI EnableDHCP habilita el protocolo de configuración dinámica de host (DHCP) para el servicio con este adaptador de red. DHCP permite que las direcciones IP se asignen dinámicamente.
+description: El método de clase WMI EnableDHCP habilita el Protocolo de configuración dinámica de host (DHCP) para el servicio con este adaptador de red. DHCP permite asignar dinámicamente direcciones IP.
 ms.assetid: 8c61d731-77a3-4ef4-bad9-26edaca60892
 ms.tgt_platform: multiple
-title: Método EnableDHCP de la clase Win32_NetworkAdapterConfiguration
+title: Método EnableDHCP de la Win32_NetworkAdapterConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 002dedd3b0165053fea98dda035316676af638f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d5be73abab17303cce7a9a0e4ae2beab9bdb53df6a45d0162a575ce167ee1df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676581"
 ---
-# <a name="enabledhcp-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableDHCP de la \_ clase NetworkAdapterConfiguration de Win32
+# <a name="enabledhcp-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableDHCP de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método de [clase de WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDHCP** habilita el protocolo de configuración dinámica de host (DHCP) para el servicio con este adaptador de red. DHCP permite que las direcciones IP se asignen dinámicamente.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDHCP** habilita el Protocolo de configuración dinámica de host (DHCP) para el servicio con este adaptador de red. DHCP permite asignar dinámicamente direcciones IP.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere un reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio, y cualquier otro número si se produce un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere un reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio y cualquier otro número si se produce un error. Para obtener más información sobre los códigos de error, vea [**Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Finalización correcta, no se requiere ningún reinicio**
+**Finalización correcta, no se requiere reinicio**
 </dt> <dd>
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
-**Finalización correcta, se requiere un reinicio**
+**Finalización correcta, reinicio necesario**
 </dt> <dd>
 
 1
 
-Finalización correcta, se requiere un reinicio.
+Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Finalización correcta, se requiere un reinicio.
 
 64
 
-El método no se admite en esta plataforma.
+Método no admitido en esta plataforma.
 
 </dd> <dt>
 
@@ -91,12 +91,12 @@ Máscara de subred no válida.
 
 </dd> <dt>
 
-**Se produjo un error al procesar una instancia devuelta**
+**Error al procesar una instancia que se devolvió**
 </dt> <dd>
 
 67
 
-Se produjo un error al procesar una instancia devuelta.
+Error al procesar una instancia que se devolvió.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Parámetro de entrada no válido.
 
 </dd> <dt>
 
-**Se especificaron más de 5 puertas de enlace**
+**Más de 5 puertas de enlace especificadas**
 </dt> <dd>
 
 69
@@ -136,12 +136,12 @@ Dirección IP de puerta de enlace no válida.
 
 </dd> <dt>
 
-**Se produjo un error al obtener acceso al registro para obtener la información solicitada.**
+**Error al acceder al Registro para obtener la información solicitada**
 </dt> <dd>
 
 72
 
-Error al obtener acceso al registro para obtener la información solicitada.
+Error al acceder al Registro para obtener la información solicitada.
 
 </dd> <dt>
 
@@ -163,12 +163,12 @@ Nombre de host no válido.
 
 </dd> <dt>
 
-**No hay definido ningún servidor WINS principal/secundario**
+**No se ha definido ningún servidor WINS principal o secundario**
 </dt> <dd>
 
 75
 
-No hay definido ningún servidor WINS principal ni secundario.
+No se ha definido ningún servidor WINS principal o secundario.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Ruta de acceso del sistema no válida.
 
 </dd> <dt>
 
-**No se pudo copiar el archivo**
+**Error de copia de archivos**
 </dt> <dd>
 
 78
 
-No se pudo copiar el archivo.
+Error de copia de archivos.
 
 </dd> <dt>
 
@@ -226,16 +226,16 @@ No se puede configurar el servicio DHCP.
 
 </dd> <dt>
 
-**No se puede renovar la concesión DHCP**
+**No se puede renovar la concesión dhcp**
 </dt> <dd>
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
-**No se puede liberar la concesión DHCP**
+**No se puede liberar la concesión dhcp**
 </dt> <dd>
 
 83
@@ -249,7 +249,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -258,20 +258,20 @@ IP no habilitada en el adaptador.
 
 85
 
-IPX no está habilitado en el adaptador.
+IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límite de número de trama/red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
 
-Error de límite de número de trama o de red.
+Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -298,12 +298,12 @@ Número de red duplicado.
 
 </dd> <dt>
 
-**Parámetro fuera de los límites**
+**Parámetro fuera de límites**
 </dt> <dd>
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -312,11 +312,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
-**Memoria agotada**
+**No hay memoria suficiente**
 </dt> <dd>
 
 92
@@ -339,7 +339,7 @@ Ya existe.
 
 94
 
-No se encuentra la ruta de acceso, el archivo o el objeto.
+Ruta de acceso, archivo u objeto no encontrado.
 
 </dd> <dt>
 
@@ -370,21 +370,21 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No se pudieron liberar o renovar todas las concesiones DHCP**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
 
-No todas las concesiones DHCP se pueden liberar o renovar.
+No todas las concesiones DHCP se podrían liberar o renovar.
 
 </dd> <dt>
 
-**DHCP no está habilitado en el adaptador**
+**DHCP no habilitado en el adaptador**
 </dt> <dd>
 
 100
 
-DHCP no está habilitado en el adaptador.
+DHCP no habilitado en el adaptador.
 
 </dd> <dt>
 
@@ -397,13 +397,13 @@ DHCP no está habilitado en el adaptador.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método no borra las puertas de enlace predeterminadas estáticas presentes en la máquina.
+Este método no borra ninguna puerta de enlace predeterminada estática presente en la máquina.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código de VBScript [Habilitar DHCP y asignar servidores DNS](https://Gallery.TechNet.Microsoft.Com/7b1cec46-bdb8-4afc-b240-9789eefce6de) en la galería de TechNet se usa EnableDHCP para habilitar DHCP y asignar servidores DNS a un equipo.
+El [ejemplo de código DE VBScript Habilitar DHCP](https://Gallery.TechNet.Microsoft.Com/7b1cec46-bdb8-4afc-b240-9789eefce6de) y Asignar servidores DNS en la Galería de TechNet usa EnableDHCP para habilitar DHCP y asignar servidores DNS a un equipo.
 
-El siguiente ejemplo de código VBScript muestra cómo habilitar el uso de DHCP en una instancia de [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) . En este caso, especificamos el adaptador con un índice de 0. Se debe seleccionar el índice correcto en \_ las instancias de Win32 para otras interfaces.
+En el siguiente ejemplo de código VBScript se muestra cómo habilitar el uso de DHCP en una instancia de [**\_ NetworkAdapterConfiguration de Win32.**](win32-networkadapterconfiguration.md) En este caso, se especifica el adaptador con un índice de 0. Se debe seleccionar el índice correcto de las instancias de NetworkAdapter de Win32 \_ para otras interfaces.
 
 > [!Note]  
 > Solo se admite en plataformas NT.
@@ -425,7 +425,7 @@ end if
 
 
 
-El siguiente ejemplo de código Perl muestra cómo habilitar el uso de DHCP en una instancia de [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) . En este caso, especificamos el adaptador con un índice de 0. Se debe seleccionar el índice correcto en \_ las instancias de Win32 para otras interfaces.
+En el siguiente ejemplo de código perl se muestra cómo habilitar el uso de DHCP en una instancia de [**\_ NetworkAdapterConfiguration de Win32.**](win32-networkadapterconfiguration.md) En este caso, se especifica el adaptador con un índice de 0. Se debe seleccionar el índice correcto de las instancias de NetworkAdapter de Win32 \_ para otras interfaces.
 
 > [!Note]  
 > Solo se admite en plataformas NT.
@@ -470,8 +470,8 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -480,16 +480,16 @@ else
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
+[**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas de WMI: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tareas de WMI: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Compatibilidad con IPv6 e IPv4 en WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

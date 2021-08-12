@@ -3,7 +3,7 @@ title: BN_DOUBLECLICKED de notificación (Winuser.h)
 description: 'BN_DOUBLECLICKED de notificación: se envía cuando el usuario hace doble clic en un botón.'
 ms.assetid: 2fd7363a-5a02-453c-bfab-df5cbf8e42a5
 keywords:
-- BN_DOUBLECLICKED código de notificación controles de Windows
+- BN_DOUBLECLICKED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64a11a4dec91a7a2f1d200c4c86c6989d846604a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8ce43cebee93516f929f9a763c14dd51d9d486470eeb93818b9605c3f23a1914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674129"
 ---
 # <a name="bn_doubleclicked-notification-code"></a>Código de notificación \_ DOUBLECLICKED de BN
 
-Se envía cuando el usuario hace doble clic en un botón. Este código de notificación se envía automáticamente para los [**botones \_ BS USERBUTTON,**](button-styles.md) [**BS \_ RADIOBUTTON**](button-styles.md)y [**BS \_ OWNERDRAW.**](button-styles.md) Otros tipos de botón envían BN \_ DOUBLECLICKED solo si tienen el [**estilo \_ BS NOTIFY.**](button-styles.md)
+Se envía cuando el usuario hace doble clic en un botón. Este código de notificación se envía automáticamente para los [**botones \_ BS USERBUTTON,**](button-styles.md) [**BS \_ RADIOBUTTON**](button-styles.md)y [**BS \_ OWNERDRAW.**](button-styles.md) Otros tipos de botón envían BN \_ DOUBLECLICKED solo si tienen el [**estilo \_ NOTIFY de BS.**](button-styles.md)
 
 La ventana primaria del botón recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
@@ -55,7 +55,7 @@ Identificador del botón.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 BN \_ DOUBLECLICKED es el mismo que el código de [notificación \_ DBLCLK de BN.](bn-dblclk.md)
 
@@ -63,11 +63,11 @@ BN \_ DOUBLECLICKED es el mismo que el código de [notificación \_ DBLCLK de BN
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_SETCUEBANNER (commctrl. h)
-description: Establece la indicación de texto o la sugerencia que se muestra en el control de edición para solicitar información al usuario.
+title: EM_SETCUEBANNER mensaje (Commctrl.h)
+description: Establece la indicación textual, o sugerencia, que muestra el control de edición para solicitar información al usuario.
 ms.assetid: 1b1ff5e7-e0b8-40c1-8b7e-7003e9ef959b
 keywords:
-- EM_SETCUEBANNER controles de mensajes de Windows
+- EM_SETCUEBANNER controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,47 +14,47 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d740bf0a3a055f45c6d104d44349f078d3bf9ad2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b08694d7368a994c639f236f18537e13d81f57083521599c23671941c74889bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673108"
 ---
-# <a name="em_setcuebanner-message"></a>\_Mensaje SETCUEBANNER em
+# <a name="em_setcuebanner-message"></a>Mensaje \_ EM SETCUEBANNER
 
-Establece la indicación de texto o la sugerencia que se muestra en el control de edición para solicitar información al usuario.
+Establece la indicación textual, o sugerencia, que muestra el control de edición para solicitar información al usuario.
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-**True** si el banner de indicación debe aparecer incluso cuando el control de edición tiene el foco. en caso contrario, **false**. **False** es el comportamiento predeterminado que desaparece el banner de indicación cuando el usuario hace clic en el control.
+**TRUE** si el banner de la indicación debe mostrarse incluso cuando el control de edición tiene el foco; de lo contrario, **FALSE**. **FALSE** es el comportamiento predeterminado que el banner de indicación desaparece cuando el usuario hace clic en el control.
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena Unicode que contiene el texto que se va a mostrar como indicación textual.
+Puntero a una cadena Unicode que contiene el texto que se mostrará como la indicación textual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se realiza correctamente, devuelve **true**. En caso contrario, devuelve **false**.
+Si el mensaje se realiza correctamente, devuelve **TRUE.** De lo contrario, **devuelve FALSE.**
 
 ## <a name="remarks"></a>Observaciones
 
-Un control de edición que se usa para iniciar una búsqueda puede mostrar "Escriba aquí la búsqueda" en el texto gris como una indicación textual. Cuando el usuario hace clic en el texto, el texto desaparece y el usuario puede escribir.
+Un control de edición que se usa para iniciar una búsqueda puede mostrar "Entrar búsqueda aquí" en texto gris como una indicación textual. Cuando el usuario hace clic en el texto, el texto desaparece y el usuario puede escribirlo.
 
-No se puede establecer un banner de indicación en un control de edición multilínea o en un control Rich Edit.
+No se puede establecer un banner de indicación en un control de edición multilínea o en un control de edición enriquecido.
 
 > [!Note]  
-> Para usar esta API, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar esta API, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -64,9 +64,9 @@ No se puede establecer un banner de indicación en un control de edición multil
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

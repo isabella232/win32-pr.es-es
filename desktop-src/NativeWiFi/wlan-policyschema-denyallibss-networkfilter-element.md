@@ -1,7 +1,7 @@
 ---
-description: Especifica si el acceso a todas las redes ad hoc está bloqueado.
+description: Especifica si se bloquea el acceso a todas las redes ad hoc.
 ms.assetid: 9001ccbb-c158-44d7-8d31-38c91881886e
-title: Elemento denyAllIBSS (networkFilter)
+title: elemento denyAllIBSS (networkFilter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 78a34b506f4db72d8b61d7c0918c93658e18a062
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f34a45a0fc527c4c27e24ad3137dfe49438f9255baf1893e1090137bfb40a3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619540"
 ---
-# <a name="denyallibss-networkfilter-element"></a>Elemento denyAllIBSS (networkFilter)
+# <a name="denyallibss-networkfilter-element"></a>elemento denyAllIBSS (networkFilter)
 
-El elemento denyAllIBSS (networkFilter) especifica si se bloquea el acceso a todas las redes ad hoc. Cuando **denyAllIBSS** tiene un valor true, las máquinas no se pueden conectar a una red ad hoc; de lo contrario, es posible que los equipos se conecten a redes ad hoc.
+El elemento denyAllIBSS (networkFilter) especifica si se bloquea el acceso a todas las redes ad hoc. Cuando **denyAllIBSS tiene** el valor TRUE, las máquinas no se pueden conectar a una red ad hoc; De lo contrario, las máquinas pueden conectarse a redes ad hoc.
 
-El valor predeterminado de este elemento es FALSE. Si **denyAllIBSS** no se especifica en un perfil, los equipos pueden conectarse a las redes ad hoc de forma predeterminada.
+El valor predeterminado de este elemento es FALSE. Si **denyAllIBSS** no se especifica en un perfil, las máquinas pueden conectarse de forma predeterminada a redes ad hoc.
 
 ``` syntax
 <xs:element name="denyAllIBSS"
@@ -31,7 +31,7 @@ El valor predeterminado de este elemento es FALSE. Si **denyAllIBSS** no se espe
  />
 ```
 
-El elemento **denyAllIBSS** se define mediante el elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+El **elemento denyAllIBSS** se define mediante el [**elemento networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ El elemento **denyAllIBSS** se define mediante el elemento [**networkFilter**](w
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

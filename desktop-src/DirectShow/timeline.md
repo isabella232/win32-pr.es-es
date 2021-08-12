@@ -4,30 +4,30 @@ ms.assetid: 6cc36034-224c-4126-873b-0cfeceec9781
 title: Escala de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d1f802f12df6ca3469b8283bd4fe8b27e22412
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d85809aed689d63ccdfc0b1dee1b5b792cafc9d7d0267d27e33bd7b6c1bea6cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651260"
 ---
 # <a name="timeline"></a>Escala de tiempo
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto Timeline administra todos los objetos de un proyecto de edición de vídeo. Para crear este objeto, llame a **CoCreateInstance**. El identificador de clase es CLSID \_ AMTimeline.
+El objeto de escala de tiempo administra todos los objetos de un proyecto de edición de vídeo. Para crear este objeto, llame a **CoCreateInstance**. El identificador de clase es CLSID \_ AMTimeline.
 
-Para leer archivos de™ de Windows Media, la aplicación debe proporcionar un certificado de software, también denominado clave. Registre la aplicación como proveedor de claves a través de la interfaz **IObjectWithSite** de la escala de tiempo. Para obtener más información, consulte [desbloquear el SDK de Windows Media Format](unlocking-the-windows-media-format-sdk.md).
+Para leer Windows archivos ™ multimedia, la aplicación debe proporcionar un certificado de software, también denominado clave. Registre la aplicación como proveedor de claves a través de la **interfaz IObjectWithSite** de la escala de tiempo. Para obtener más información, vea [Unlocking the Windows Media Format SDK](unlocking-the-windows-media-format-sdk.md)( Desbloqueo del SDK de formato multimedia).
 
-El objeto Timeline expone las siguientes interfaces:
+El objeto timeline expone las interfaces siguientes:
 
 -   [**IAMSetErrorLog**](iamseterrorlog.md)
 -   [**IAMTimeline**](iamtimeline.md)
 -   **IObjectWithSite**
--   **IPersistStream**
+-   **Ipersiststream**
 
 ## <a name="related-topics"></a>Temas relacionados
 

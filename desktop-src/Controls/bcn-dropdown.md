@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de BCN_DROPDOWN (Winuser. h)
-description: Se envía cuando el usuario hace clic en una flecha desplegable de un botón. La ventana primaria del control recibe este código de notificación en forma de mensaje de notificación de WM \_ .
+title: BCN_DROPDOWN de notificación (Winuser.h)
+description: Se envía cuando el usuario hace clic en una flecha desplegable de un botón. La ventana primaria del control recibe este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 61503b8d-193e-4855-b9eb-35c0dc636c02
 keywords:
-- BCN_DROPDOWN controles de código de notificación de Windows
+- BCN_DROPDOWN código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e78512419f62beaa82aff42ccaf951d34130fe3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1fbacf22cdabbac7c5d2932c604fab634dbc185207acda8cee311d434478e5ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674981"
 ---
-# <a name="bcn_dropdown-notification-code"></a>\_Código de notificación de desplegable BCN
+# <a name="bcn_dropdown-notification-code"></a>Código de notificación \_ DE BCN DROPDOWN
 
-Se envía cuando el usuario hace clic en una flecha desplegable de un botón. La ventana primaria del control recibe este código de notificación en forma de mensaje de [**\_ notificación de WM**](wm-notify.md) .
+Se envía cuando el usuario hace clic en una flecha desplegable de un botón. La ventana primaria del control recibe este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ BCN_DROPDOWN
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMBCDROPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) . El miembro **rcButton** se establece para describir el área desplegable.
+Puntero a una [**estructura NMBCDROPDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) El **miembro rcButton** se establece para describir el área desplegable.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El receptor de notificaciones convierte **lParam** para recuperar la estructura [**NMBCDROPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) . **WParam** contiene el identificador del control que envía este mensaje. El control de botón debe tener un estilo de botón de lista desplegable.
+El receptor de notificaciones convierte **LPARAM** para recuperar la estructura [**NMBCDROPDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) **WPARAM** contiene el identificador del control que envía este mensaje. El control de botón debe tener un estilo de botón desplegable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ El receptor de notificaciones convierte **lParam** para recuperar la estructura 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

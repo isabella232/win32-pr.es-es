@@ -1,25 +1,25 @@
 ---
-title: Mensaje TVM_GETITEMPARTRECT
-description: '\_Mensaje de GETITEMPARTRECT TVM'
+title: TVM_GETITEMPARTRECT mensaje
+description: Mensaje \_ GETITEMPARTRECT de TVM
 ms.assetid: 4fa5d167-9649-4346-89c2-8a48e8d4d2f6
 keywords:
-- TVM_GETITEMPARTRECT controles de mensajes de Windows
+- TVM_GETITEMPARTRECT controles de Windows mensaje
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91764bbba7787fd70ffafe53d683a6d51117fec4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1cfaea926c45d244262477659cebd38256b50e80ca4a27c78625fe0e0c8b5452
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669795"
 ---
-# <a name="tvm_getitempartrect-message"></a>\_Mensaje de GETITEMPARTRECT TVM
+# <a name="tvm_getitempartrect-message"></a>Mensaje \_ GETITEMPARTRECT de TVM
 
-Este mensaje no está implementado.
+Este mensaje no se implementa.
 
- 
+ 
 
- 
+ 
 
 
 

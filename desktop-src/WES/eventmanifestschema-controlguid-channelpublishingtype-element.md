@@ -1,9 +1,9 @@
 ---
 title: Elemento controlGuid (ChannelPublishingType)
-description: Identifica el GUID de sesión para una sesión de ETW que contiene eventos WPP.
+description: Identifica el GUID de sesión para una sesión ETW que contiene eventos WPP.
 ms.assetid: a9e86468-8a97-4689-a258-85d253debf55
 keywords:
-- elemento controlGuid EventLog
+- Elemento EventLog de controlGuid
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92d4f6e1d2985bc983c34552b2e7a973075c9989
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd831592d7b01f8ffca102c2cab6626d74d6b666bf6f0d6cfc6e6311c4aa7eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589956"
 ---
 # <a name="controlguid-channelpublishingtype-element"></a>Elemento controlGuid (ChannelPublishingType)
 
-Identifica el GUID de sesión para una sesión de ETW que contiene eventos WPP.
+Identifica el GUID de sesión para una sesión ETW que contiene eventos WPP.
 
 ``` syntax
 <xs:element name="controlGuid"
@@ -30,7 +30,7 @@ Identifica el GUID de sesión para una sesión de ETW que contiene eventos WPP.
  />
 ```
 
-El elemento **controlGuid** se define mediante el tipo complejo de [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+El tipo complejo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) define el elemento **controlGuid.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El elemento **controlGuid** se define mediante el tipo complejo de [**ChannelPub
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

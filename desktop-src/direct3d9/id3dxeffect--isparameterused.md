@@ -1,7 +1,7 @@
 ---
-description: Determina si la técnica utiliza un parámetro.
+description: Determina si la técnica usa un parámetro.
 ms.assetid: ac50c0d3-93d9-4477-a854-d0b53df28c90
-title: 'ID3DXEffect:: IsParameterUsed (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::IsParameterUsed (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 6cbe4783a9ad5b618f05941eae08af4c15be0512
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 80b0e69ec4f46541840d5b381cd25d056b25240a00a9ae84b0aaf46a79295ed1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296006"
 ---
-# <a name="id3dxeffectisparameterused-method"></a>ID3DXEffect:: IsParameterUsed (método)
+# <a name="id3dxeffectisparameterused-method"></a>Método ID3DXEffect::IsParameterUsed
 
-Determina si la técnica utiliza un parámetro.
+Determina si la técnica usa un parámetro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,29 +41,29 @@ BOOL IsParameterUsed(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único del parámetro. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único del parámetro. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*hTechnique* \[ de\]
+*hTechnique* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la técnica. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único de la técnica. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve **true** si se utiliza el parámetro y devuelve **false** si no se utiliza el parámetro.
+Devuelve **TRUE** si se está utilizando el parámetro y devuelve **FALSE** si el parámetro no se está utilizando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Devuelve **true** si se utiliza el parámetro y devuelve **false** si no se util
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

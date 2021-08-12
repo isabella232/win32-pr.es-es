@@ -1,11 +1,11 @@
 ---
-title: Método INapSystemHealthAgentCallback NotifySystemIsolationStateChange (NapSystemHealthAgent. h)
-description: El NapAgent llama a este método para indicar que ha cambiado el estado de aislamiento del sistema o la hora de finalización del período de prueba.
+title: Método INapSystemHealthAgentCallback NotifySystemIsolationStateChange (NapSystemHealthAgent.h)
+description: NapAgent llama a este método para indicar que ha cambiado el estado de aislamiento del sistema o la hora de finalización de la sondeo.
 ms.assetid: 0837eea4-6d92-44dc-b8b8-eca6be5f63e6
 keywords:
-- Método NotifySystemIsolationStateChange NAP
-- Método NotifySystemIsolationStateChange NAP, interfaz INapSystemHealthAgentCallback
-- Interfaz INapSystemHealthAgentCallback NAP, método NotifySystemIsolationStateChange
+- Método NAP NotifySystemIsolationStateChange
+- Método NAP NotifySystemIsolationStateChange , interfaz INapSystemHealthAgentCallback
+- INapSystemHealthAgentCallback interface NAP , NotifySystemIsolationStateChange method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c519d1569fe2e43cc6012ffa30c5bfb4402cc56
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5fc75686801148e0866f8996dabdb31af66eac9b55c60473782a794ea59f7463
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621156"
 ---
-# <a name="inapsystemhealthagentcallbacknotifysystemisolationstatechange-method"></a>INapSystemHealthAgentCallback:: NotifySystemIsolationStateChange (método)
+# <a name="inapsystemhealthagentcallbacknotifysystemisolationstatechange-method"></a>INapSystemHealthAgentCallback::NotifySystemIsolationStateChange (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El NapAgent llama al método **INapSystemHealthAgentCallback:: NotifySystemIsolationStateChange** para indicar que ha cambiado el estado de aislamiento del sistema o el tiempo de finalización del período de prueba.
+NapAgent llama al método **INapSystemHealthAgentCallback::NotifySystemIsolationStateChange** para indicar que el estado de aislamiento del sistema o la hora de finalización de la sondeo han cambiado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                          | Descripción                   |
 |--------------------------------------------------------------------------------------|-------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | Indica que se completó correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Indica que se completó correctamente.<br/> |
 
 
 
@@ -61,9 +61,9 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método de devolución de llamada lo declara el sistema NAP y se va a implementar con SHA Writer.
+El sistema NAP declara este método de devolución de llamada y lo va a implementar el escritor SHA.
 
-El agente de mantenimiento puede consultar el estado de NAP del sistema mediante [**INapSystemHealthAgentBinding:: GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md).
+El agente de mantenimiento puede consultar el estado nap del sistema mediante [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,10 +71,10 @@ El agente de mantenimiento puede consultar el estado de NAP del sistema mediante
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

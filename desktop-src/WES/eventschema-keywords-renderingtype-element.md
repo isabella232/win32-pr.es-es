@@ -1,6 +1,6 @@
 ---
-title: Keywords (RenderingInfoType), elemento
-description: Una lista de palabras clave representadas.
+title: Elemento Keywords (RenderingInfoType)
+description: Lista de palabras clave representados.
 ms.assetid: 8b318ada-662e-428e-bb39-315c4606802a
 keywords:
 - Elemento Keywords EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e050dd460da620def3ba67a69a42b5d33cdfe240
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d69aaf8b654b7ed079cc0b5c00c0a1c5fbc26f4952c0ce9fe981d0b694f9edb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588706"
 ---
-# <a name="keywords-renderinginfotype-element"></a>Keywords (RenderingInfoType), elemento
+# <a name="keywords-renderinginfotype-element"></a>Elemento Keywords (RenderingInfoType)
 
-Una lista de palabras clave representadas.
+Lista de palabras clave representados.
 
 ``` syntax
 <xs:element name="Keywords"
@@ -30,7 +30,7 @@ Una lista de palabras clave representadas.
  />
 ```
 
-El elemento **Keywords** se define mediante el tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+El **elemento Keywords** se define mediante el [**tipo complejo RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El elemento **Keywords** se define mediante el tipo complejo [**RenderingInfoTyp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -3,60 +3,60 @@ title: Propiedades, métodos y eventos
 description: Propiedades, métodos y eventos
 ms.assetid: 9426d13b-42db-4a20-81f2-7a849a6e1f33
 keywords:
-- Media Player de Windows, propiedades para el modelo de objetos
-- Windows Media Player, métodos para el modelo de objetos
-- Windows Media Player, eventos para el modelo de objetos
-- Modelo de objetos de Windows Media Player, propiedades
-- Modelo de objetos de Windows Media Player, métodos
-- Modelo de objetos de Windows Media Player, eventos
-- modelo de objetos, propiedades
-- modelo de objetos, métodos
-- modelo de objetos, eventos
-- Control ActiveX de Windows Media Player, propiedades para el modelo de objetos
-- Control ActiveX, propiedades del modelo de objetos
-- Control ActiveX móvil de Windows Media Player, propiedades para el modelo de objetos
-- Windows Media Player Mobile, propiedades para el modelo de objetos
-- Control ActiveX de Windows Media Player, métodos para el modelo de objetos
-- Control ActiveX, métodos para el modelo de objetos
-- Control ActiveX móvil de Windows Media Player, métodos para el modelo de objetos
-- Windows Media Player Mobile, métodos para el modelo de objetos
-- Control ActiveX de Windows Media Player, eventos para el modelo de objetos
-- Control ActiveX, eventos para el modelo de objetos
-- Control ActiveX móvil de Windows Media Player, eventos para el modelo de objetos
-- Windows Media Player Mobile, eventos para el modelo de objetos
-- propiedades, modelo de objetos de Windows Media Player
-- métodos, modelo de objetos de Windows Media Player
-- eventos, modelo de objetos de Windows Media Player
+- Reproductor de Windows Media,properties para el modelo de objetos
+- Reproductor de Windows Media,methods para el modelo de objetos
+- Reproductor de Windows Media,events para el modelo de objetos
+- Reproductor de Windows Media de objetos, propiedades
+- Reproductor de Windows Media modelo de objetos, métodos
+- Reproductor de Windows Media modelo de objetos, eventos
+- object model,properties
+- object model,methods
+- object model,events
+- Reproductor de Windows Media ActiveX control,propiedades para el modelo de objetos
+- ActiveX control,propiedades para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil,propiedades para el modelo de objetos
+- Reproductor de Windows Media Mobile,properties para el modelo de objetos
+- Reproductor de Windows Media ActiveX control,methods para el modelo de objetos
+- ActiveX control,methods para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil,métodos para el modelo de objetos
+- Reproductor de Windows Media Mobile,methods para el modelo de objetos
+- Reproductor de Windows Media ActiveX control,eventos para el modelo de objetos
+- ActiveX control,eventos para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil,eventos para el modelo de objetos
+- Reproductor de Windows Media Mobile,events para el modelo de objetos
+- properties,Reproductor de Windows Media modelo de objetos
+- methods,Reproductor de Windows Media object model
+- events,Reproductor de Windows Media object model
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e06a860d04bfc1a5ccd5b33c0604a0ef818a0127
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cbcc07977bc7ddcd2dd162600d4fa3d2822a3f52f38983ea8427f89d9403ecf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104148817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571089"
 ---
 # <a name="properties-methods-and-events"></a>Propiedades, métodos y eventos
 
-Cada objeto tiene métodos y propiedades a través de los cuales puede programar el control Media Player de Windows. Un método es una acción que el objeto puede llevar A cabo. Una propiedad es un valor de datos que puede leer o cambiar. Por ejemplo, el método **Play** inicia el contenido que se reproduce y la propiedad de **velocidad** de fotogramas indica la velocidad de fotogramas actual del contenido que se reproduce.
+Cada objeto tiene métodos y propiedades a través de los cuales puede programar Reproductor de Windows Media control. Un método es una acción que el objeto puede realizar. Una propiedad es un valor de datos que puede leer o cambiar. Por ejemplo, el **método Play** inicia la reproducción de contenido y la propiedad **frameRate** indica la velocidad de fotogramas actual del contenido que se está reproduciendo.
 
-Además, el objeto **Player** genera eventos que le ofrecen la oportunidad de llevar a cabo acciones en momentos concretos. El código se escribe en un controlador de eventos que se ejecutará cuando Windows Media Player genere el evento correspondiente. Por ejemplo, puede escribir código en un controlador de eventos **PlayStateChange** que determine si el cambio de estado es que el medio ha finalizado y, si es así, muestra un cuadro de diálogo preguntando a los usuarios si quieren reproducir el medio de nuevo.
+Además, el **objeto Player** genera eventos que le dan la oportunidad de llevar a cabo acciones en momentos específicos. El código se escribe en un controlador de eventos que se ejecutará cuando Reproductor de Windows Media genera el evento correspondiente. Por ejemplo, puede escribir código en un controlador de eventos **PlayStateChange** que determine si el cambio de estado es que el medio finalizó y, si es así, mostrar un cuadro de diálogo que pregunte a los usuarios si quieren volver a reproducir el medio.
 
 > [!Note]  
-> Todos los métodos del modelo de objetos de Windows Media Player son asíncronos. Si llama a dos métodos en el mismo procedimiento, el segundo método no puede confiar en el primer método que ha completado su acción.
+> Todos los métodos de la Reproductor de Windows Media modelo de objetos son asincrónicos. Si llama a dos métodos en el mismo procedimiento, el segundo método no puede confiar en que el primer método haya completado su acción.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Acerca del modelo de objetos de Player**](about-the-player-object-model.md)
+[**Acerca del modelo de objetos del reproductor**](about-the-player-object-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

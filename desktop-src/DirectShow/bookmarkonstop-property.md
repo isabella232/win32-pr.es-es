@@ -1,19 +1,19 @@
 ---
-description: La propiedad DVDAdm. BookmarkOnStop establece o recupera un valor que indica al objeto MSWebDVD si se debe guardar automáticamente un marcador de la configuración y la ubicación actuales cuando el usuario hace clic en el botón detener.
+description: La propiedad DVDAdm.BookmarkOnStop establece o recupera un valor que indica al objeto MSWebDVD si se debe guardar automáticamente un marcador de la ubicación y la configuración actuales cuando el usuario hace clic en el botón Detener.
 ms.assetid: bcadaa3c-23b7-4408-8199-058103a92a34
-title: Propiedad BookmarkOnStop
+title: BookmarkOnStop (propiedad)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 355ae01c43ef28a086c76f4716fe3d46d250fbe4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5c73d8b9829075125437e05da96c78d101f5a7f5df4dc2decc25f044cc3f5f27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662677"
 ---
-# <a name="bookmarkonstop-property"></a>Propiedad BookmarkOnStop
+# <a name="bookmarkonstop-property"></a>BookmarkOnStop (propiedad)
 
-La `DVDAdm.BookmarkOnStop` propiedad establece o recupera un valor que indica al objeto MSWebDVD si desea guardar automáticamente un marcador de la configuración y la ubicación actuales cuando el usuario hace clic en el botón **detener** .
+La propiedad establece o recupera un valor que indica al objeto MSWebDVD si se debe guardar automáticamente un marcador de la ubicación y la configuración actuales cuando el usuario hace clic en el `DVDAdm.BookmarkOnStop` **botón** Detener.
 
 ``` syntax
 [ bBookmarkOnStop = ] DVD.DVDAdm.BookmarkOnStop
@@ -21,13 +21,13 @@ La `DVDAdm.BookmarkOnStop` propiedad establece o recupera un valor que indica al
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor booleano que indica si el objeto MSDVDAdm guardará un marcador de toda la configuración de DVD, incluida la posición en el disco, el nivel parental y el país o región parental.
+Devuelve un valor booleano que indica si el objeto MSDVDAdm guardará un marcador de todas las configuraciones de DVD, incluida la posición en el disco, el nivel parental y el país o región parental.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad es de lectura/escritura y su valor predeterminado es false.
+Esta propiedad es de lectura y escritura con un valor predeterminado de false.
 
-Los marcadores solo son válidos para un equipo determinado. Un usuario no puede guardar un marcador y, a continuación, enviarlo a otra persona para que lo lea en otro equipo.
+Los marcadores solo son válidos para una máquina determinada. Un usuario no puede guardar un marcador y, a continuación, enviarlo a otra persona para leerlo en otro equipo.
 
 ## <a name="see-also"></a>Vea también
 

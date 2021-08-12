@@ -1,23 +1,23 @@
 ---
-title: dcl_resource estructurado (SM5-ASM)
-description: Declare una entrada de recurso de sombreador y asígnela a un registro de marcador de posición t \-a para el recurso. | dcl_resource estructurado (SM5-ASM)
+title: dcl_resource estructurado (sm5 - asm)
+description: 'Declare una entrada de recurso de sombreador y asígnela a t\: un registro de marcador de posición para el recurso. | dcl_resource estructurado (sm5 - asm)'
 ms.assetid: 87FC8A56-9DB2-424B-889C-2AB59885DA13
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ab993e0cb260529c3419210c33f5d735a625bce
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 79ec0bc0b818b345c62bb48ae6f5db68671127110ed06a85c988f8a0449fd490
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285898"
 ---
-# <a name="dcl_resource-structured-sm5---asm"></a>\_recurso de DCL estructurado (SM5-ASM)
+# <a name="dcl_resource-structured-sm5---asm"></a>dcl \_ resource structured (sm5 - asm)
 
-Declare una entrada de recurso de sombreador y asígnela a un \# registro de marcador de posición t-a para el recurso.
+Declare una entrada de recurso de sombreador y asígnela a \# t: un registro de marcador de posición para el recurso.
 
 
 
-| \_recurso \_ de DCL estructurado DstSRV, structByteStride |
+| dcl \_ resource \_ structured dstSRV, structByteStride |
 |----------------------------------------------------|
 
 
@@ -28,26 +28,26 @@ Declare una entrada de recurso de sombreador y asígnela a un \# registro de mar
 
 | Elemento                                                                                                                                   | Descripción                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dstSRV"></span><span id="dstsrv"></span><span id="DSTSRV"></span>*dstSRV*<br/>                                         | \[en \] un \# registro t declarado como una referencia a un ShaderResourceView de un búfer estructurado con el intervalo especificado que se debe enlazar a la ranura SRV \# en la API. <br/> |
-| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[en \] un uint que especifica el tamaño de la estructura en bytes del búfer que se está declarando. Este valor debe ser mayor que cero.<br/>                                   |
+| <span id="dstSRV"></span><span id="dstsrv"></span><span id="DSTSRV"></span>*dstSRV*<br/>                                         | \[en un registro t declarado como referencia a ShaderResourceView de un búfer estructurado con el intervalo especificado que debe enlazarse a la ranura SRV en \] \# la \# API. <br/> |
+| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[en \] uint que especifica el tamaño de la estructura en bytes en el búfer que se declara. Este valor debe ser mayor que cero.<br/>                                   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El contenido de la estructura no tiene ningún tipo; las operaciones realizadas en la memoria pueden interpretar implícitamente los datos como si tuvieran un tipo.
+El contenido de la estructura no tiene ningún tipo; Las operaciones realizadas en la memoria pueden interpretar implícitamente que los datos tienen un tipo.
 
-Las instrucciones que hacen referencia a un t estructurado \# toman una dirección 2D, donde el primer componente selecciona \[ struct \] , y el segundo componente elige \[ offset en struct, múltiplo de 32 bits \] .
+Las instrucciones que hacen referencia a una estructura t toman una dirección 2D, donde el primer componente elige struct y el segundo componente elige el desplazamiento dentro de struct, múltiplo de \# \[ \] \[ 32 bits \] .
 
-CS \_ 4 \_ 0 y CS \_ 4 \_ 1 admiten esta instrucción.
+cs \_ 4 \_ 0 y cs \_ 4 \_ 1 admiten esta instrucción.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -55,20 +55,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
-| Modelo de sombreador                                              | Compatible |
+| Modelo de sombreador                                              | Compatible. |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -78,7 +78,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

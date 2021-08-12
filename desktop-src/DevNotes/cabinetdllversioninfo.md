@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b6dfcd68f1bc684554d45feb13b9976465b70efa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9276a03d28bdfeee2b97b44e180bf190cbf20fc40ec58d0aafb44962a6e8fa9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118667988"
 ---
 # <a name="cabinetdllversioninfo-structure"></a>Estructura CABINETDLLVERSIONINFO
 
-\[Esta estructura contiene información necesaria solo cuando se usa la función **DllGetVersion** , que no se admite. Esta documentación se proporciona solo con fines informativos.\]
+\[Esta estructura contiene información necesaria solo cuando se usa **la función DllGetVersion,** que no se admite. Esta documentación solo se proporciona con fines informativos.\]
 
-**CABINETDLLVERSIONINFO** contiene la información de versión de Cabinet.dll.
+**CABINETDLLVERSIONINFO contiene** la información de versión de Cabinet.dll.
 
 ## <a name="syntax"></a>Sintaxis
 

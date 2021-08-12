@@ -1,9 +1,9 @@
 ---
-title: Mensaje de BM_SETIMAGE (Winuser. h)
+title: BM_SETIMAGE mensaje (Winuser.h)
 description: Asocia una nueva imagen (icono o mapa de bits) al botón.
 ms.assetid: bf05e684-63d0-4583-960b-f329edafb151
 keywords:
-- BM_SETIMAGE controles de mensajes de Windows
+- BM_SETIMAGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65d083c4fb509d51eb017bb7d3d38fab07b4c006
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b8948c73c04d3b01230a47ab91529764c9e20281e4f45803f71d82f59dedb14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674818"
 ---
-# <a name="bm_setimage-message"></a>Mensaje de el SETIMAGE de BM \_
+# <a name="bm_setimage-message"></a>Mensaje \_ DE BM SETIMAGE
 
 Asocia una nueva imagen (icono o mapa de bits) al botón.
 
@@ -32,34 +32,34 @@ Asocia una nueva imagen (icono o mapa de bits) al botón.
 *wParam* 
 </dt> <dd>
 
-Tipo de imagen que se va a asociar al botón. Este parámetro puede ser uno de los siguientes valores:
+Tipo de imagen que se asociará al botón. Este parámetro puede ser uno de los siguientes valores:
 
--   mapa de bits de imagen \_
--   icono de imagen \_
+-   MAPA DE BITS \_ DE IMAGEN
+-   ICONO DE \_ IMAGEN
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador (**HICON** o **hBitmap**) de la imagen que se va a asociar al botón.
+Identificador **(HICON** o **HBITMAP)** a la imagen que se asociará con el botón.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un identificador de la imagen asociada previamente al botón, si existe; de lo contrario, es **null**.
+El valor devuelto es un identificador de la imagen previamente asociada al botón, si existe; de lo contrario, es **NULL.**
 
 ## <a name="remarks"></a>Observaciones
 
-La apariencia del texto, un icono o ambos en un control de botón depende del [**\_ icono de BS**](button-styles.md) y de los estilos de [**mapa de \_ bits BS**](button-styles.md) , y de si se llama al mensaje de el **\_ SETIMAGE de BM** . Los resultados posibles son los siguientes:
+La apariencia del texto, un icono o ambos en un control de botón depende de los estilos [**BS \_ ICON**](button-styles.md) y [**BS \_ BITMAP,**](button-styles.md) y de si se llama al mensaje **BM \_ SETIMAGE.** Los resultados posibles son los siguientes:
 
 
 
-| \_¿Icono de BS \_ o conjunto de mapas de bits BS? | Se \_ llamó a la BM SETIMAGE? | Resultado              |
+| ¿Icono de BS \_ o conjunto de mapas de bits de BS? \_ | ¿Se \_ llama a BM SETIMAGE? | Resultado              |
 |-----------------------------|----------------------|---------------------|
-| Sí                         | Sí                  | Mostrar solo el icono.     |
-| No                          | Sí                  | Mostrar el icono y el texto. |
+| Sí                         | Sí                  | Mostrar solo icono.     |
+| No                          | Sí                  | Mostrar icono y texto. |
 | Sí                         | No                   | Mostrar solo texto.     |
 | No                          | No                   | Mostrar solo texto      |
 
@@ -73,9 +73,9 @@ La apariencia del texto, un icono o ambos en un control de botón depende del [*
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ La apariencia del texto, un icono o ambos en un control de botón depende del [*
 
 <dl> <dt>
 
-[**BM \_ de BM**](bm-getimage.md)
+[**BM \_ GETIMAGE**](bm-getimage.md)
 </dt> </dl>
 
  

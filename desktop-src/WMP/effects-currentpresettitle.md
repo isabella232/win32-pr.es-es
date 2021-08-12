@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentPresetTitle
-description: El atributo currentPresetTitle recupera el título del valor predeterminado actual de la visualización actual.
+title: EFFECTS.currentPresetTitle
+description: El atributo currentPresetTitle recupera el título del valor preestablecido actual de la visualización actual.
 ms.assetid: 479968a2-fb5e-4cde-b3fb-1f940ea1078c
 keywords:
-- EFFECTs. currentPresetTitle Windows Media Player
+- EFFECTS.currentPresetTitle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a93674b4be5e6490c846827ec7b17d496a5484b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1199b29ecc2871512e1d8dde7effda19a47998bd7bc6113ffabfa51ace07d559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578814"
 ---
-# <a name="effectscurrentpresettitle"></a>EFFECTs. currentPresetTitle
+# <a name="effectscurrentpresettitle"></a>EFFECTS.currentPresetTitle
 
-El atributo **currentPresetTitle** recupera el título del valor predeterminado actual de la visualización actual.
+El **atributo currentPresetTitle** recupera el título del valor preestablecido actual de la visualización actual.
 
 ``` syntax
         elementID.currentPresetTitle
@@ -29,23 +29,23 @@ El atributo **currentPresetTitle** recupera el título del valor predeterminado 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de solo lectura.
+Este atributo es una cadena de solo **lectura.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> </dl>
 
  

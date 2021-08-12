@@ -1,10 +1,10 @@
 ---
-title: Función CBCreateClientInstance (Cbclient. h)
-description: Crea una instancia del cliente RPC de Conexión a Escritorio remoto Broker.
+title: Función CBCreateClientInstance (Cbclient.h)
+description: Crea una instancia del cliente RPC Conexión a Escritorio remoto Broker.
 ms.assetid: 700E47BC-C547-44AB-8607-B9797D542AA7
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función CBCreateClientInstance
+- Función CBCreateClientInstance Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2b30f2d236bcc90dfa4977f54d56a5d1717d18a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 59b0873fac5b33370333ec8f5774e5b8dbbcd896f6afb9777a6dd74dd6913dcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610152"
 ---
-# <a name="cbcreateclientinstance-function"></a>CBCreateClientInstance función)
+# <a name="cbcreateclientinstance-function"></a>Función CBCreateClientInstance
 
-Crea una instancia del cliente RPC de Conexión a Escritorio remoto Broker.
+Crea una instancia del cliente RPC Conexión a Escritorio remoto Broker.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT CBCreateClientInstance(
 
 <dl> <dt>
 
-*Versión* \[ de de\]
+*Versión* \[ En\]
 </dt> <dd>
 
-Especifica la versión de la interfaz de cliente de Conexión a Escritorio remoto Broker que se solicita. Debe ser el siguiente valor.
+Especifica la versión de la interfaz de cliente Conexión a Escritorio remoto Broker que se solicita. Debe ser el siguiente valor.
 
 <dt>
 
 1
 </dt> <dd>
 
-Versión 1 del cliente del agente de Conexión a Escritorio remoto.
+Versión 1 del cliente Conexión a Escritorio remoto Broker.
 
 </dd> </dl> </dd> <dt>
 
-*ppCbClient* \[ enuncia\]
+*ppCbClient* \[ out\]
 </dt> <dd>
 
-Dirección de un puntero de interfaz [**IConnectionBrokerClient**](iconnectionbrokerclient.md) que recibe el objeto de cliente de conexión a escritorio remoto Broker.
+Dirección de un puntero de [**interfaz IConnectionBrokerClient**](iconnectionbrokerclient.md) que recibe el Conexión a Escritorio remoto cliente de Broker.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cbclient. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Cbclient. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cbclient.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Cbclient.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Cbclient.dll</dt> </dl> |
 
 

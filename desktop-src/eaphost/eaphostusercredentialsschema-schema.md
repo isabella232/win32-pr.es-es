@@ -1,6 +1,6 @@
 ---
 title: Esquema eaphostusercredentials
-description: Obtenga información sobre el esquema eaphostusercredentials. Este esquema define los elementos de esquema de credenciales de EAPHost.
+description: Obtenga información sobre el esquema eaphostusercredentials. Este esquema define los elementos del esquema de credenciales de EAPHost.
 ms.assetid: a2aff175-06c8-4352-9f37-edcd44229ea8
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2688824d9fc3c7c5c84bc2432cc81d26b3de8a22
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: c2d8f19c1d06ba726809d658860850dfd4fdf0360695e01aea91df6cfa14b152
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104421401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274287"
 ---
 # <a name="eaphostusercredentials-schema"></a>Esquema eaphostusercredentials
 
 El esquema eaphostusercredentials define el esquema de credenciales de EAPHost.
 
--   [Elementos de esquema eaphostusercredentials](eaphostusercredentialsschema-elements.md)
+-   [elementos de esquema eaphostusercredentials](eaphostusercredentialsschema-elements.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -29,9 +29,9 @@ El esquema eaphostusercredentials define el esquema de credenciales de EAPHost.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

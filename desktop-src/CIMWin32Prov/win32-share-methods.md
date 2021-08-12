@@ -1,25 +1,25 @@
 ---
-description: La \_ clase de recurso compartido de Win32 expone los métodos siguientes.
+description: La clase Win32 \_ Share expone los métodos siguientes.
 ms.assetid: 8CA65851-41D7-43DA-A25C-96CEB0B00413
 ms.tgt_platform: multiple
-title: Métodos Win32_Share
+title: Win32_Share métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e61ed1c3128e5f21d32be8702644f1195d5cf2c0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9cdce241fe04cde7be2cf75efbac990b5e183e429bffbba7692d6d20c5db2c2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675006"
 ---
-# <a name="win32_share-methods"></a>\_Métodos de uso compartido de Win32
+# <a name="win32_share-methods"></a>Métodos de recurso compartido de Win32 \_
 
-La clase de [**\_ recurso compartido de Win32**](win32-share.md) expone los métodos siguientes.
+La [**clase Win32 \_ Share**](win32-share.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Método de creación**](create-method-in-class-win32-share.md)
--   [**Delete (método)**](delete-method-in-class-win32-share.md)
+-   [**Método Delete**](delete-method-in-class-win32-share.md)
 -   [**Método GetAccessMask**](getaccessmask-method-in-class-win32-share.md)
 -   [**Método SetShareInfo**](setshareinfo-method-in-class-win32-share.md)
 

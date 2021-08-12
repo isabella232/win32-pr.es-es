@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SORTGROUPS (commctrl. h)
-description: Usa una función de comparación definida por la aplicación para ordenar grupos por identificador dentro de un control de vista de lista.
+title: LVM_SORTGROUPS mensaje (Commctrl.h)
+description: Usa una función de comparación definida por la aplicación para ordenar los grupos por identificador dentro de un control de vista de lista.
 ms.assetid: 553e96d6-a982-4482-8fba-ef11a74fb82e
 keywords:
-- LVM_SORTGROUPS controles de mensajes de Windows
+- LVM_SORTGROUPS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c70fd0f343c9efe0215c87f430e5ed1c89a3aed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1ec17d46205746495cfe95a2af83690644dd8bfced26041906bdea4f809fb36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670789"
 ---
-# <a name="lvm_sortgroups-message"></a>\_Mensaje SORTGROUPS LVM
+# <a name="lvm_sortgroups-message"></a>Mensaje \_ LVM SORTGROUPS
 
-Usa una función de comparación definida por la aplicación para ordenar grupos por identificador dentro de un control de vista de lista.
+Usa una función de comparación definida por la aplicación para ordenar los grupos por identificador dentro de un control de vista de lista.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,7 +33,7 @@ Usa una función de comparación definida por la aplicación para ordenar grupos
 </dt> <dd>Puntero a una función de comparación definida por la aplicación, <a href="/windows/desktop/api/commctrl/nc-commctrl-pfnlvgroupcompare">LVGroupCompare</a>.</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntero void a la información definida por la aplicación.</dd> </dl>
+</dt> <dd>Puntero Void a la información definida por la aplicación.</dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -42,7 +42,7 @@ Devuelve 1 si se realiza correctamente o 0 en caso contrario.
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -52,9 +52,9 @@ Devuelve 1 si se realiza correctamente o 0 en caso contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

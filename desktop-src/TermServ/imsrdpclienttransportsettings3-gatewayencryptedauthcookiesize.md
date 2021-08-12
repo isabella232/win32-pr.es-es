@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewayEncryptedAuthCookieSize de IMsRdpClientTransportSettings3
+title: Propiedad IMsRdpClientTransportSettings3 GatewayEncryptedAuthCookieSize
 description: Tamaño, en caracteres, de la propiedad GatewayEncryptedAuthCookie.
 ms.assetid: 52e24bef-5afa-4954-b639-08ea8701404a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayEncryptedAuthCookieSize
-- Propiedad GatewayEncryptedAuthCookieSize Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings3, propiedad GatewayEncryptedAuthCookieSize
+- Propiedad GatewayEncryptedAuthCookieSize Servicios de Escritorio remoto
+- Propiedad GatewayEncryptedAuthCookieSize Servicios de Escritorio remoto , interfaz IMsRdpClientTransportSettings3
+- Interfaz IMsRdpClientTransportSettings3 Servicios de Escritorio remoto , propiedad GatewayEncryptedAuthCookieSize
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 238245cdb9c0164b69434cf61f790b8f81fa3da2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41e26e4d15c134bcd8a2dd5bbf74b574f38ce56627d0f7e7840547ed1d56a67a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606940"
 ---
-# <a name="imsrdpclienttransportsettings3gatewayencryptedauthcookiesize-property"></a>IMsRdpClientTransportSettings3:: GatewayEncryptedAuthCookieSize (propiedad)
+# <a name="imsrdpclienttransportsettings3gatewayencryptedauthcookiesize-property"></a>Propiedad IMsRdpClientTransportSettings3::GatewayEncryptedAuthCookieSize
 
-Tamaño, en caracteres, de la propiedad [**GatewayEncryptedAuthCookie**](imsrdpclienttransportsettings3-gatewayencryptedauthcookie.md) .
+Tamaño, en caracteres, de la [**propiedad GatewayEncryptedAuthCookie.**](imsrdpclienttransportsettings3-gatewayencryptedauthcookie.md)
 
 Esta propiedad es de lectura y escritura.
 
@@ -49,7 +49,7 @@ HRESULT get_GatewayEncryptedAuthCookieSize(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor **ULong** que contiene el nuevo valor de tamaño.
+Valor **ULONG** que contiene el nuevo valor de tamaño.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Valor **ULong** que contiene el nuevo valor de tamaño.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |

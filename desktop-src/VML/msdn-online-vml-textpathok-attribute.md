@@ -4,23 +4,23 @@ description: Atributo TextPathOK de VML
 ms.assetid: 5d061258-1c4d-4391-81ce-13af90a4231c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06046a4f29c147ef109f0e4670d9965bab77a9fa
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dd2c14d613df36c314dea75275a4d60fe8792d6dea644ef2595422e74a73dc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597459"
 ---
 # <a name="vml-textpathok-attribute"></a>Atributo TextPathOK de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si se mostrará una ruta de acceso de texto. Lectura/escritura **VgTriState**.
+Determina si se mostrará una ruta de acceso de texto. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Determina si se mostrará una ruta de acceso de texto. Lectura/escritura **VgTri
 
 **Sintaxis de etiquetas**
 
-<v: *Element* textpathok = " *expresión* " >
+<v: *element* textpathok=" *expression* ">
 
 **Sintaxis de script**
 
-*elemento* . textpathok = "*expresión*"
+*elemento* . textpathok= "*expression*"
 
-*expresión* = de *elemento*. textpathok
+*expresión* = *elemento*. textpathok
 
 **Comentarios:**
 
-Si **es false**, la ruta de acceso no puede tener una ruta de acceso de texto. El valor predeterminado es **False**. Debe tener este atributo establecido en **true** para mostrar texto en una ruta de acceso.
+Si **es False,** la ruta de acceso no puede tener una ruta de acceso de texto. El valor predeterminado es **False**. Debe tener este atributo establecido en **True para** mostrar texto en una ruta de acceso.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-La forma tiene una ruta de acceso de texto. El texto "Hola VML" se muestra a lo largo de una curva en forma de sonrisa.
+La forma tiene un trazado de texto. El texto "Hello VML" se muestra a lo largo de una curva con forma de sonrisa.
 
 
 ```HTML
@@ -63,6 +63,6 @@ La forma tiene una ruta de acceso de texto. El texto "Hola VML" se muestra a lo 
 
 
 
- 
+ 
 
- 
+ 

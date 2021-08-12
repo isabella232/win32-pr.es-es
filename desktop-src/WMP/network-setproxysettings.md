@@ -1,11 +1,11 @@
 ---
-title: Network. setProxySettings (método)
+title: Método Network.setProxySettings
 description: El método setProxySettings especifica la configuración de proxy para un protocolo determinado.
 ms.assetid: 473501c9-27ea-47ec-bc82-691804fbfb89
 keywords:
-- método setProxySettings de Windows Media Player
-- método setProxySettings Windows Media Player, clase de red
-- Clase de red Windows Media Player, método setProxySettings
+- Método setProxySettings Reproductor de Windows Media
+- Método setProxySettings Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media método , setProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b3f3da665b07f717449721c9fb43a8733cdb6c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6501d097a4ec342c2831e4b72bf8f17edc4e4e1bec02b2b51cd7840325674b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573863"
 ---
-# <a name="networksetproxysettings-method"></a>Network. setProxySettings (método)
+# <a name="networksetproxysettings-method"></a>Método Network.setProxySettings
 
-El método **setProxySettings** especifica la configuración de proxy para un protocolo determinado.
+El **método setProxySettings** especifica la configuración de proxy para un protocolo determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,26 +43,26 @@ Network.setProxySettings(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*configuración* \[ de de\]
+*configuración* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que contiene uno de los valores siguientes.
+**Number** (**long**) que contiene uno de los valores siguientes.
 
 
 
-| Value | Descripción                                                          |
+| Valor | Descripción                                                          |
 |-------|----------------------------------------------------------------------|
 | 0     | No usar ningún servidor proxy.                                           |
-| 1     | Use la configuración de proxy del explorador actual (solo es válida para HTTP). |
-| 2     | Utilice la configuración de proxy especificada manualmente.                           |
-| 3     | Detectar automáticamente la configuración de proxy.                                      |
+| 1     | Use la configuración de proxy del explorador actual (solo válido para HTTP). |
+| 2     | Use la configuración de proxy especificada manualmente.                           |
+| 3     | Detecte automáticamente la configuración del proxy.                                      |
 
 
 
@@ -74,15 +74,15 @@ Network.setProxySettings(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa JScript con un elemento SELECT de HTML **para permitir al usuario especificar la configuración del proxy de Windows Media Player para el protocolo http. El objeto Player** se creó con ID = "Player".
+En el ejemplo siguiente se JScript con un elemento SELECT HTML para permitir al usuario especificar la configuración de proxy Reproductor de Windows Media para **el protocolo HTTP. El objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -110,14 +110,14 @@ En el ejemplo siguiente se usa JScript con un elemento SELECT de HTML **para per
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

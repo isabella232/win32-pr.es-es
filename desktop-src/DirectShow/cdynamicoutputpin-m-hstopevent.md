@@ -1,7 +1,7 @@
 ---
-description: Evento que se señala cuando se detiene el filtro o el PIN vacía los datos.
+description: Evento que se señala cuando el filtro se detiene o el pin vacía los datos.
 ms.assetid: 01edf32e-d44d-4b55-b422-165cbe12324c
-title: 'Miembro CDynamicOutputPin:: m_hStopEvent (Amfilter. h)'
+title: CDynamicOutputPin::m_hStopEvent miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 742f09872afd65633ed21006aeea5f499ed7b235
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c8d5e78a5a24ea2edd7fd04e30372da03259ba14f39f9f5c1f1148476c768f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656440"
 ---
-# <a name="cdynamicoutputpinm_hstopevent-member"></a>Miembro hStopEvent CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_hstopevent-member"></a>Miembro CDynamicOutputPin::m \_ hStopEvent
 
-Evento que se señala cuando se detiene el filtro o el PIN vacía los datos.
+Evento que se señala cuando el filtro se detiene o el pin vacía los datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ HANDLE m_hStopEvent;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ HANDLE m_hStopEvent;
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

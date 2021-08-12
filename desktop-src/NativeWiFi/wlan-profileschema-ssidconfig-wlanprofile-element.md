@@ -1,5 +1,5 @@
 ---
-description: Contiene uno o más SSID para LAN inalámbricas.
+description: Contiene uno o varios SSID para LAN inalámbricas.
 ms.assetid: f9c46db8-2933-48e1-8cb3-effeb13c43ed
 title: Elemento SSIDConfig (WLANProfile)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5665b385c3264ff9d36e79ad671c8f9e8377d4bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6df6edc3affa551d62473b616562257cd422fcc4a4021ea7e4ef05ba3c8af9dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619051"
 ---
 # <a name="ssidconfig-wlanprofile-element"></a>Elemento SSIDConfig (WLANProfile)
 
-El elemento SSIDConfig (WLANProfile) contiene uno o más SSID para LAN inalámbricas.
+El elemento SSIDConfig (WLANProfile) contiene uno o varios SSID para redes LAN inalámbricas.
 
 ``` syntax
 <xs:element name="SSIDConfig"
@@ -90,7 +90,7 @@ El elemento SSIDConfig (WLANProfile) contiene uno o más SSID para LAN inalámbr
 </xs:element>
 ```
 
-El elemento **SSIDConfig** se define mediante el elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+El **elemento SSIDConfig** se define mediante el [**elemento WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -98,16 +98,16 @@ El elemento **SSIDConfig** se define mediante el elemento [**WLANProfile**](wlan
 
 | Elemento                                                                    | Tipo                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**hex**](wlan-profileschema-hex-ssid-element.md)                         |                                                                   | Contiene el SSID de una LAN inalámbrica en formato hexadecimal.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [**name**](wlan-profileschema-name-ssid-element.md)                       |                                                                   | Contiene el nombre (distingue mayúsculas de minúsculas) del SSID de una LAN inalámbrica.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [**Difusión**](wlan-profileschema-nonbroadcast-ssidconfig-element.md) | [boolean](/dotnet/api/system.boolean) | Indica si la red difunde su SSID.<br/> Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en ESS, este valor puede ser **true** o **false**. El valor predeterminado es **true** si este elemento no está presente.<br/> Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en IBSS, este valor debe ser **false**.<br/> **Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.<br/> |
-| [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md)                 |                                                                   | Contiene un SSID para una LAN inalámbrica.<br/> **Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Como máximo, un elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) puede aparecer en un perfil.<br/>                                                                                                                                                                                                                                                                                                        |
+| [**Hexagonal**](wlan-profileschema-hex-ssid-element.md)                         |                                                                   | Contiene el SSID de una LAN inalámbrica en formato hexadecimal.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [**Nombre**](wlan-profileschema-name-ssid-element.md)                       |                                                                   | Contiene el nombre (que distingue mayúsculas de minúsculas) del SSID de una LAN inalámbrica.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [**nonBroadcast**](wlan-profileschema-nonbroadcast-ssidconfig-element.md) | [boolean](/dotnet/api/system.boolean) | Indica si la red difunde su SSID.<br/> Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en ESS, este valor puede ser **TRUE** o **FALSE.** El valor predeterminado es **TRUE** si este elemento está ausente.<br/> Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en IBSS, este valor debe ser **FALSE.**<br/> Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.<br/> |
+| [**Ssid**](wlan-profileschema-ssid-ssidconfig-element.md)                 |                                                                   | Contiene un SSID para una LAN inalámbrica.<br/> Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** Como máximo, [**un elemento SSID**](wlan-profileschema-ssid-ssidconfig-element.md) puede aparecer en un perfil.<br/>                                                                                                                                                                                                                                                                                                        |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **SSIDConfig** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan el **elemento SSIDConfig,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,8 +115,8 @@ Para ver los perfiles de ejemplo que usan el elemento **SSIDConfig** , consulte 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

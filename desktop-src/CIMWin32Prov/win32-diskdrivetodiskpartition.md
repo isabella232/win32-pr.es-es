@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI DiskDriveToDiskPartition Association de Win32 relaciona una unidad de disco y una partición existente.
+description: La clase WMI de asociación DiskDriveToDiskPartition de Win32 relaciona una unidad de disco \_ y una partición existente en ella.
 ms.assetid: 82953097-ebfb-42b8-84b4-fb4ed19f3525
 ms.tgt_platform: multiple
-title: Win32_DiskDriveToDiskPartition (clase)
+title: Win32_DiskDriveToDiskPartition clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b2bd5472bd4ad92ddde47f7d6a492916006a80cb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c92e9cc8a71516fa105e350ae8070ca417024c1802e9ea8a676d7355cb3aea7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675098"
 ---
-# <a name="win32_diskdrivetodiskpartition-class"></a>\_Clase Win32 DiskDriveToDiskPartition
+# <a name="win32_diskdrivetodiskpartition-class"></a>Clase \_ DiskDriveToDiskPartition de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DiskDriveToDiskPartition** Association de Win32 relaciona una unidad de disco y una partición existente.
+La clase WMI **de asociación \_ DiskDriveToDiskPartition** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una unidad de disco y una partición existente en ella.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -61,14 +61,14 @@ Tipo de datos: **Win32 \_ DiskDrive**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DiskDrive")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DiskDrive")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades de la unidad de disco en la que existe la partición.
+Referencia a la instancia de que representa las propiedades de la unidad de disco donde existe la partición.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ DiskPartition**
@@ -77,7 +77,7 @@ Tipo de datos: **Win32 \_ DiskPartition**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DiskPartition")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DiskPartition")
 </dt> </dl>
 
 Referencia a la instancia de que representa la partición de disco que reside en la unidad de disco.
@@ -86,13 +86,13 @@ Referencia a la instancia de que representa la partición de disco que reside en
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ DiskDriveToDiskPartition de Win32** se deriva de [**\_ MediaPresent de CIM**](cim-mediapresent.md).
+La **clase \_ DiskDriveToDiskPartition de Win32** se deriva de [**CIM \_ MediaPresent**](cim-mediapresent.md).
 
-Para obtener una explicación sobre cómo usar esta clase, consulte los artículos de blog [uso de PowerShell para asignar unidades de disco y particiones](https://blogs.technet.com/b/heyscriptingguy/archive/2012/12/17/use-powershell-to-map-disk-drives-and-partitions.aspx) , y de [cómo se pueden poner en correlación unidades lógicas y discos físicos](https://blogs.technet.com/b/heyscriptingguy/archive/2005/05/23/how-can-i-correlate-logical-drives-and-physical-disks.aspx) .
+Para obtener una explicación sobre cómo usar esta clase, consulte los artículos de blog Use PowerShell to Map Disk Drives and Partitions (Uso de PowerShell para asignar unidades de disco y particiones) y [How Can I Correlate Logical Drives and Physical Disks?](https://blogs.technet.com/b/heyscriptingguy/archive/2005/05/23/how-can-i-correlate-logical-drives-and-physical-disks.aspx) (¿Cómo puedo correlacionar unidades lógicas y discos [físicos?).](https://blogs.technet.com/b/heyscriptingguy/archive/2012/12/17/use-powershell-to-map-disk-drives-and-partitions.aspx)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de PowerShell [usar PowerShell para recopilar información de puntos de montaje y de disco, partición o punto de montaje](https://Gallery.TechNet.Microsoft.Com/Use-Powershell-to-Gather-b5c746d0) se usa **Win32 \_ DiskDriveToDiskPartition** para devolver información acerca de los discos locales, las particiones y los puntos de montaje.
+El ejemplo de PowerShell Use [Powershell to Gather Disk/Partition/Mount Point Information](https://Gallery.TechNet.Microsoft.Com/Use-Powershell-to-Gather-b5c746d0) usa **Win32 \_ DiskDriveToDiskPartition** para devolver información sobre discos o particiones locales y puntos de montaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ En el ejemplo de PowerShell [usar PowerShell para recopilar información de punt
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -112,13 +112,13 @@ En el ejemplo de PowerShell [usar PowerShell para recopilar información de punt
 
 <dl> <dt>
 
-[**\_MEDIAPRESENT CIM**](cim-mediapresent.md)
+[**CIM \_ MediaPresent**](cim-mediapresent.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[Tareas de WMI: discos y sistemas de archivos](/windows/desktop/WmiSdk/wmi-tasks--disks-and-file-systems)
+[Tareas wmi: discos y sistemas de archivos](/windows/desktop/WmiSdk/wmi-tasks--disks-and-file-systems)
 </dt> </dl>
 
  

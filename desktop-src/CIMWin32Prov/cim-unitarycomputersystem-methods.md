@@ -1,29 +1,29 @@
 ---
-description: La \_ clase UnitaryComputerSystem de CIM expone los métodos siguientes.
+description: La clase \_ UnitaryComputerSystem de CIM expone los métodos siguientes.
 ms.assetid: AE0FCA45-9F75-4608-9F83-28B238DBD960
 ms.tgt_platform: multiple
-title: Métodos CIM_UnitaryComputerSystem
+title: CIM_UnitaryComputerSystem métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77c4724d6175211ed4c6cb25d699481f1b4723f0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b432ff3425800d723b88058d83bc91db3fd96ba1604bcd68b44b042f4a122028
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118677381"
 ---
-# <a name="cim_unitarycomputersystem-methods"></a>\_Métodos UnitaryComputerSystem de CIM
+# <a name="cim_unitarycomputersystem-methods"></a>Métodos \_ unitaryComputerSystem de CIM
 
 La [**clase \_ UnitaryComputerSystem de CIM**](cim-unitarycomputersystem.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**SetPowerState (método)**](setpowerstate-method-in-class-cim-unitarycomputersystem.md)
+-   [**Método SetPowerState**](setpowerstate-method-in-class-cim-unitarycomputersystem.md)
 
  
 

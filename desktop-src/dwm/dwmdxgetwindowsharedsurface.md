@@ -1,7 +1,7 @@
 ---
-description: Recupera la superficie compartida de DirectX que respalda una ventana determinada. Esta superficie se puede escribir en para actualizar el contenido de la ventana.
+description: Recupera la superficie compartida de DirectX que hace una copia de seguridad de una ventana determinada. Esta superficie se puede escribir en para actualizar el contenido de la ventana.
 ms.assetid: 500CF5B4-0D56-4201-91F4-7333E45DACEE
-title: DwmDxGetWindowSharedSurface función)
+title: Función DwmDxGetWindowSharedSurface
 ms.topic: reference
 ms.date: 11/27/2018
 topic_type:
@@ -13,16 +13,16 @@ api_location:
 - Dwmapi.dll
 api_name:
 - DwmDxGetWindowSharedSurface
-ms.openlocfilehash: 15e7829383ce23e5bc06bb61ab9c0c224ab18182
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47f8c75ee55521c0f1da4151f5161cf44a63dc51aab5658edbca288cb8edce24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118280135"
 ---
-# <a name="dwmdxgetwindowsharedsurface-function"></a>DwmDxGetWindowSharedSurface función)
+# <a name="dwmdxgetwindowsharedsurface-function"></a>Función DwmDxGetWindowSharedSurface
 
-Recupera la superficie compartida de DirectX que respalda una ventana determinada. Esta superficie se puede escribir en para actualizar el contenido de la ventana.
+Recupera la superficie compartida de DirectX que hace una copia de seguridad de una ventana determinada. Esta superficie se puede escribir en para actualizar el contenido de la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ HRESULT WINAPI DwmDxGetWindowSharedSurface(
 
 `hwnd`
 
-[**HWnd**](/windows/desktop/winprog/windows-data-types) que especifica la ventana que se va a actualizar.
+HWND [**que**](/windows/desktop/winprog/windows-data-types) especifica la ventana que se va a actualizar.
 
 `luidAdapter`
 
-[**LUID**](/previous-versions/bb401655(v%3dmsdn.10)) del adaptador donde se debe ubicar la superficie.
+EL [**LUID del**](/previous-versions/bb401655(v%3dmsdn.10)) adaptador donde se debe localizar la superficie.
 
 `hmonitorAssociation`
 
@@ -54,12 +54,12 @@ Reservado.
 
 `dwFlags`
 
-Este parámetro puede ser uno de los valores siguientes, o una combinación OR bit a bit de varios valores cuando sea necesario.
+Este parámetro puede ser uno de los siguientes valores o una combinación OR bit a bit de varios valores cuando corresponda.
 
-| Value | Significado |
+| Valor | Significado |
 |-|-|
-| <span id="DWM_REDIRECTION_FLAG_WAIT"></span><span id="dwm_redirection_flag_wait"></span><dl> <dt>**DWM \_ \_ \_ Espera de la marca de redireccionamiento**</dt> <dt>0</dt> </dl> | Hace que la función se bloquee hasta que haya transcurrido una sincronización vertical (VSync) desde la última vez que se llamó a la función correctamente. |
-| <span id="DWM_REDIRECTION_FLAG_SUPPORT_PRESENT_TO_GDI_SURFACE"></span><span id="dwm_redirection_flag_support_present_to_gdi_surface"></span><dl> <dt>**DWM \_ \_Compatibilidad con la marca de REdireccionamiento \_ \_ presente \_ en la \_ \_ superficie de GDI**</dt> <dt>0x10</dt> </dl> | Indica que la aplicación que realiza la llamada es capaz de presentar en una superficie compartida de GDI. |
+| <span id="DWM_REDIRECTION_FLAG_WAIT"></span><span id="dwm_redirection_flag_wait"></span><dl> <dt>**DWM \_ MARCA DE \_ REDIRECCIÓN \_ WAIT**</dt> <dt>0</dt> </dl> | Hace que la función se bloquee hasta que haya pasado una sincronización vertical (VSync) desde la última vez que se llamó a la función correctamente. |
+| <span id="DWM_REDIRECTION_FLAG_SUPPORT_PRESENT_TO_GDI_SURFACE"></span><span id="dwm_redirection_flag_support_present_to_gdi_surface"></span><dl> <dt>**DWM \_ COMPATIBILIDAD CON \_ LA \_ MARCA DE \_ REDIRECCIONAMIENTO PRESENTE EN LOS \_ \_ \_ DISPOSITIVOS SURFACE**</dt> <dt>0X10</dt> </dl> | Indica que la aplicación que realiza la llamada es capaz de presentarse en una superficie compartida de GDI. |
 
 `pfmtWindow`
 
@@ -67,11 +67,11 @@ En la entrada, el formato deseado de la superficie. En la salida, el formato rea
 
 `phDxSurface`
 
-En la salida, el identificador compartido de la superficie.
+En la salida, el identificador compartido a la superficie.
 
 `puiUpdateId`
 
-En la salida, identificador de la actualización.
+En la salida, el identificador de la actualización.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -79,21 +79,21 @@ Esta función puede devolver uno de estos valores.
 
 | Código devuelto | Descripción |
 |-|-|
-| **S \_ correcto** | La llamada se realizó correctamente y debe actualizar la superficie, asegurándose de pasar el identificador de la actualización a [D3DKMTRender](/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtrender) (en el miembro **PresentHistoryToken** de la estructura de **\_ representación D3DKMT** cuando se envía la actualización y, a continuación, se debe llamar a [**DwmDxUpdateWindowSharedSurface**](dwmdxupdatewindowsharedsurface.md) con el mismo identificador de actualización. Tenga en cuenta que se debe llamar a **DwmDxUpdateWindowSharedSurface** independientemente de si la superficie se actualizó realmente o no. |
-| **\_superficie de \_ \_ redirección GDI \_ de DWM S** | La llamada se realizó correctamente y debe actualizar la superficie llamando a [D3DKMTPresent](/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtpresent)y estableciendo el **modelo** de miembro de **PresentHistoryToken** en **D3DKMT \_ PM \_ Redirigido \_ BLT** y proporcionando el identificador de actualización en el miembro **BLT** de la Unión. Este valor solo se devuelve si **la \_ \_ compatibilidad con la marca de redirección \_ de DWM presente en la \_ \_ \_ \_ superficie de GDI** se especificó en *dwFlags*. |
-| **\_ \_ \_ no \_ se encontró el adaptador de DWM E** | El valor de *luidAdapter* no es válido. |
-| **COMPOSITIONDISABLED de DWM \_ \_** | DWM no está habilitado actualmente y la aplicación tendrá que presentar otra manera. |
+| **S \_ OK** | La llamada se ha producido correctamente y debe actualizar la superficie, con la seguridad de pasar el identificador de actualización a [D3DKMTRender](/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtrender) (en el miembro **PresentHistoryToken** de la estructura RENDER de **D3DKMT \_** cuando se envía la actualización y, a continuación, se debe llamar a [**DwmDxUpdateWindowSharedSurface**](dwmdxupdatewindowsharedsurface.md) con el mismo identificador de actualización. Tenga en **cuenta que se debe llamar a DwmDxUpdateWindowSharedSurface** independientemente de si la superficie se actualizó realmente o no. |
+| **SUPERFICIE DE REDIRECCIÓN \_ \_ DE GDI \_ DE \_ DWM** | La llamada se ha hecho correctamente y debe actualizar la superficie llamando a [D3DKMTPresent](/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtpresent)y estableciendo el modelo del miembro **PresentHistoryToken** en **D3DKMT \_ PM REDIRECTED \_ \_ BLT** y proporcionando el identificador de actualización en el **miembro Blt** de la unión.  Este valor solo se devuelve si *dwFlags* especificó COMPATIBILIDAD CON LA MARCA DE REDIRECCIÓN DE DWM PRESENT **TO \_ \_ \_ \_ \_ \_ GDI \_ SURFACE.** |
+| **ADAPTADOR DE \_ DWM E \_ NO \_ \_ ENCONTRADO** | El valor *de luidAdapter* no es válido. |
+| **DWM \_ E \_ COMPOSITIONDISABLED** | DWM no está habilitado actualmente y la aplicación tendrá que presentar otra manera. |
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta API está pensada para implementar un controlador de gráficos o un entorno de tiempo de ejecución. Una aplicación no puede llamar a este método. Esta documentación solo es válida para Windows 7 y no se garantiza que esta API exista ni se comporte de forma similar en otras versiones de Windows. Esta función no está presente en ningún encabezado ni en una biblioteca de vínculos estáticos, y se encuentra en el ordinal 100 en dwmapi.dll.
+Esta API está pensada para implementar un controlador de gráficos o un entorno de ejecución. Es posible que una aplicación no llame a este método. Esta documentación solo es válida para Windows 7 y no se garantiza que esta API exista ni se comporte de forma similar en otras versiones de Windows. Esta función no está presente en ningún encabezado o biblioteca de vínculos estáticos y se encuentra en el ordinal 100 en dwmapi.dll.
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-|-|
-| Cliente mínimo compatible | Solo aplicaciones de escritorio de Windows 7 \[\] |
+| Cliente mínimo compatible | Windows solo 7 \[ aplicaciones de escritorio\] |
 | Servidor mínimo compatible | No se admite ninguno |
-| Fin de compatibilidad de cliente | Windows 7 |
+| Fin de compatibilidad de cliente | Windows 7 |
 | Encabezado | N/D |
 | Archivo DLL | Dwmapi.dll |

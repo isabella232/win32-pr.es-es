@@ -1,7 +1,7 @@
 ---
-description: Abre la base de datos de correcciones de compatibilidad.
+description: Abre la base de datos shim.
 ms.assetid: ece1bd39-20a1-42e6-8e2b-1d38f7223d42
-title: SdbInitDatabase función)
+title: Función SdbInitDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 7a3c63fa712aec988dbf13c4fb7f9fddbf159fdd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0504b12254658250820cb3ecac3e9e47ee2a6ca242b15600fa69241b597bb0dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104495923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666386"
 ---
-# <a name="sdbinitdatabase-function"></a>SdbInitDatabase función)
+# <a name="sdbinitdatabase-function"></a>Función SdbInitDatabase
 
-Abre la base de datos de correcciones de compatibilidad.
+Abre la base de datos shim.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,33 +40,33 @@ HSDB WINAPI SdbInitDatabase(
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Este parámetro especifica el formato de la ruta de acceso en el parámetro *pszDatabasePath* . Puede ser uno de los siguientes valores.
+Este parámetro especifica el formato de la ruta de acceso en el *parámetro pszDatabasePath.* Puede ser uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                                                                                                                      | Significado                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <span id="HID_DOS_PATHS"></span><span id="hid_dos_paths"></span><dl> <dt>**HID \_ \_Rutas**</dt> de acceso de dos <dt>0x00000001</dt> </dl>                             | Una ruta de acceso de estilo MS-DOS.<br/>                                                                       |
-| <span id="HID_DATABASE_FULLPATH"></span><span id="hid_database_fullpath"></span><dl> <dt>**HID \_ BASE de datos \_ FULLPATH**</dt> <dt>0x00000002</dt> </dl>     | Ruta de acceso completa.<br/>                                                                                |
-| <span id="HID_NO_DATABASE"></span><span id="hid_no_database"></span><dl> <dt>**HID \_ NO \_ Database**</dt> <dt>0x00000004</dt> </dl>                       | Se omite el parámetro *pszDatabasePath* y no se abre ninguna base de datos.<br/>                       |
-| <span id="HID_DATABASE_TYPE_MASK"></span><span id="hid_database_type_mask"></span><dl> <dt>**HID \_ \_ \_ Máscara de tipo de base de datos**</dt> <dt>0xF00F0000</dt> </dl> | Este parámetro especifica una base de datos predefinida. Se omite el parámetro *pszDatabasePath* .<br/> |
+| <span id="HID_DOS_PATHS"></span><span id="hid_dos_paths"></span><dl> <dt>**HID \_ Rutas \_ de acceso dos**</dt> <dt>0x00000001</dt> </dl>                             | Ruta de acceso de estilo MS-DOS.<br/>                                                                       |
+| <span id="HID_DATABASE_FULLPATH"></span><span id="hid_database_fullpath"></span><dl> <dt>**HID \_ Database \_ FULLPATH**</dt> <dt>0x00000002</dt> </dl>     | Ruta de acceso completa.<br/>                                                                                |
+| <span id="HID_NO_DATABASE"></span><span id="hid_no_database"></span><dl> <dt>**HID \_ NO \_ SE HA**</dt> <dt>0X00000004</dt> </dl>                       | El *parámetro pszDatabasePath* se omite y no se abre ninguna base de datos.<br/>                       |
+| <span id="HID_DATABASE_TYPE_MASK"></span><span id="hid_database_type_mask"></span><dl> <dt>**HID \_ DATABASE \_ TYPE \_ MASK**</dt> <dt>0xF00F0000</dt> </dl> | Este parámetro especifica una base de datos predefinida. Se *omite el parámetro pszDatabasePath.*<br/> |
 
 
 
  
 
-Si *dwFlags* contiene **la \_ \_ \_ máscara de tipo de datos HID**, este parámetro también puede incluir uno de los valores siguientes.
+Si *dwFlags contiene* **HID DATA TYPE \_ \_ \_ MASK,** este parámetro también puede incluir uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                                                                                                                               | Significado                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <span id="SDB_DATABASE_MAIN_SHIM"></span><span id="sdb_database_main_shim"></span><dl> <dt>**SDB \_ \_Corrección de \_ compatibilidad principal de base de datos**</dt> <dt>0x80030000</dt> </dl>          | Base de datos de corrección de compatibilidad de aplicaciones.<br/>         |
-| <span id="SDB_DATABASE_MAIN_MSI"></span><span id="sdb_database_main_msi"></span><dl> <dt>**SDB \_ \_ \_ MSI principal**</dt> de la base de datos <dt>0x80020000</dt> </dl>             | Base de datos MSI.<br/>                      |
-| <span id="SDB_DATABASE_MAIN_DRIVERS"></span><span id="sdb_database_main_drivers"></span><dl> <dt>**SDB \_ \_ \_ Controladores principales de base de datos**</dt> <dt>0x80040000</dt> </dl> | Base de datos de controladores que se van a bloquear.<br/> |
+| <span id="SDB_DATABASE_MAIN_SHIM"></span><span id="sdb_database_main_shim"></span><dl> <dt>**SDB \_ COMPATIBILIDAD \_ PRINCIPAL DE BASE DE \_**</dt> <dt>DATOS 0X80030000</dt> </dl>          | Base de datos de correcciones de compatibilidad (shim) de aplicación.<br/>         |
+| <span id="SDB_DATABASE_MAIN_MSI"></span><span id="sdb_database_main_msi"></span><dl> <dt>**SDB \_ BASE \_ DE DATOS PRINCIPAL \_ MSI**</dt> <dt>0x80020000</dt> </dl>             | Base de datos MSI.<br/>                      |
+| <span id="SDB_DATABASE_MAIN_DRIVERS"></span><span id="sdb_database_main_drivers"></span><dl> <dt>**SDB \_ CONTROLADORES \_ PRINCIPALES DE BASE \_ DE**</dt> <dt>DATOS 0x80040000</dt> </dl> | Base de datos de controladores que se va a bloquear.<br/> |
 
 
 
@@ -74,10 +74,10 @@ Si *dwFlags* contiene **la \_ \_ \_ máscara de tipo de datos HID**, este parám
 
 </dd> <dt>
 
-*pszDatabasePath* \[ de\]
+*pszDatabasePath* \[ En\]
 </dt> <dd>
 
-Ruta de acceso a la base de datos. Este parámetro puede ser **null** si el parámetro *dwFlags* especifica una base de datos predefinida.
+Ruta de acceso a la base de datos. Este parámetro puede ser **NULL** si el *parámetro dwFlags* especifica una base de datos predefinida.
 
 </dd> </dl>
 
@@ -91,8 +91,8 @@ La función devuelve un identificador a la base de datos abierta.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

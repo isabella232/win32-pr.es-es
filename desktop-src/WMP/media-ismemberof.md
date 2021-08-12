@@ -1,11 +1,11 @@
 ---
-title: Método media. isMemberOf
-description: El método isMemberOf devuelve un valor que indica si el elemento multimedia es un miembro de la lista de reproducción especificada.
+title: Método Media.isMemberOf
+description: El método isMemberOf devuelve un valor que indica si el elemento multimedia es miembro de la lista de reproducción especificada.
 ms.assetid: e620741f-6807-4a61-ba9b-f45426d6e33e
 keywords:
-- método isMemberOf de Windows Media Player
-- método isMemberOf Windows Media Player, clase multimedia
-- Clase multimedia Windows Media Player, método isMemberOf
+- Método isMemberOf Reproductor de Windows Media
+- Método isMemberOf Reproductor de Windows Media , Clase Media
+- Clase media Reproductor de Windows Media método , isMemberOf
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41555bd5910ddb3151468a458c5becbf247ea484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef9fc5eb55a306dad8b9d5de6d6501b615a9156c026c8e0fc12664795a23ab21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574807"
 ---
-# <a name="mediaismemberof-method"></a>Método media. isMemberOf
+# <a name="mediaismemberof-method"></a>Método Media.isMemberOf
 
-El método **isMemberOf** devuelve un valor que indica si el elemento multimedia es un miembro de la lista de reproducción especificada.
+El **método isMemberOf** devuelve un valor que indica si el elemento multimedia es miembro de la lista de reproducción especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ bRetVal = Media.isMemberOf(
 
 <dl> <dt>
 
-*lista de reproducción* \[ de\]
+*lista de reproducción* \[ En\]
 </dt> <dd>
 
-Objeto de **lista de reproducción** que puede contener el elemento multimedia.
+**Objeto de** lista de reproducción que puede contener el elemento multimedia.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ Objeto de **lista de reproducción** que puede contener el elemento multimedia.
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no puede comprobar las listas de reproducción recuperadas a través del objeto **MediaCollection** . Para probar si un elemento multimedia es miembro de una lista de reproducción con nombre determinada, recupere la lista de reproducción con el *reproductor*. *playlistCollection*. **getByName**(*nombre*). **elemento**(0). Este método también se puede utilizar con listas de reproducción de CD y listas de reproducción de metarchivo.
+Este método no puede comprobar las listas de reproducción recuperadas a través del **objeto MediaCollection.** Para probar si un elemento multimedia es miembro de una lista de reproducción con nombre determinada, recupere la lista de reproducción con el *reproductor*. *playlistCollection*. **getByName**(*name*). **item**(0). Este método también se puede usar con listas de reproducción de CD y listas de reproducción de metarchivo.
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se utiliza el *medio*. **isMemberOf** para comprobar si el elemento multimedia actual es un miembro de la lista de reproducción denominada lista de reproducción de ejemplo. Si no es así, el elemento multimedia actual se anexa a la lista de reproducción de ejemplo. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Media*. **isMemberOf para** probar si el elemento multimedia actual es miembro de la lista de reproducción denominada Lista de reproducción de ejemplo. Si no es así, el elemento multimedia actual se anexa a la lista de reproducción de ejemplo. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -85,30 +85,30 @@ if (answer == "No"){
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto multimedia**](media-object.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
 [**Objeto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

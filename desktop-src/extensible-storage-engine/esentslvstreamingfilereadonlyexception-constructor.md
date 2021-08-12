@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVStreamingFileReadOnlyException'
-title: Constructor de EsentSLVStreamingFileReadOnlyException
+description: 'Más información sobre: Constructor EsentSLVStreamingFileReadOnlyException'
+title: Constructor EsentSLVStreamingFileReadOnlyException
 TOCTitle: 'EsentSLVStreamingFileReadOnlyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileReadOnlyException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvstreamingfilereadonlyexception.esentslvstreamingfilereadonlyexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b5bdd060ccd8ae3fb042ac3c6bf5c9e5dff306b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eed9ee85c1977f84cff5b21d24b02e770f28eecadbd9479b129f355b4a6772c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118259203"
 ---
-# <a name="esentslvstreamingfilereadonlyexception-constructor"></a>Constructor de EsentSLVStreamingFileReadOnlyException
+# <a name="esentslvstreamingfilereadonlyexception-constructor"></a>Constructor EsentSLVStreamingFileReadOnlyException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,4 +58,4 @@ public EsentSLVStreamingFileReadOnlyException()
 
 [Miembros de EsentSLVStreamingFileReadOnlyException](./esentslvstreamingfilereadonlyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

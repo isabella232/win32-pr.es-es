@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ QuickFixEngineering&\# 8194; La clase WMI representa una pequeña actualización en todo el sistema, a la que se suele hacer referencia como una actualización de ingeniería de corrección rápida (QFE), que se aplica al sistema operativo actual.
+description: QuickFixEngineering de Win32 \_&\# 8194; La clase WMI representa una pequeña actualización de todo el sistema, conocida normalmente como actualización de ingeniería de corrección rápida (QFE), que se aplica al sistema operativo actual.
 ms.assetid: 84aed428-7620-4f7a-941f-f9d683020d8a
 ms.tgt_platform: multiple
-title: Win32_QuickFixEngineering (clase)
+title: Win32_QuickFixEngineering clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0e9db31dd452161a31575b6f7184a34c35dea71e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 15110b5801555947eed434b8148aec3cc753f6eec359f32b96cd67a5b2649f31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675017"
 ---
-# <a name="win32_quickfixengineering-class"></a>\_Clase Win32 QuickFixEngineering
+# <a name="win32_quickfixengineering-class"></a>Clase \_ QuickFixEngineering de Win32
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering de Win32** representa una pequeña actualización en todo el sistema, a la que se suele hacer referencia como una actualización de ingeniería de corrección rápida (QFE), que se aplica al sistema operativo actual. Esta clase devuelve solo las actualizaciones proporcionadas por el servicio basado en componentes (CBS). Estas actualizaciones no aparecen en el registro. Las actualizaciones proporcionadas por Microsoft Windows Installer (MSI) o el sitio de Windows Update ( [https://update.microsoft.com](https://update.microsoft.com/) ) no son devueltas por **\_ QuickFixEngineering de Win32**.
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering de Win32** representa una pequeña actualización de todo el sistema, conocida normalmente como actualización de ingeniería de corrección rápida (QFE), que se aplica al sistema operativo actual. Esta clase devuelve solo las actualizaciones proporcionadas por el servicio basado en componentes (CBS). Estas actualizaciones no aparecen en el Registro. Las actualizaciones proporcionadas por Microsoft Windows Installer (MSI) o el sitio de actualización de Windows ( ) no se devuelven mediante [https://update.microsoft.com](https://update.microsoft.com/) **\_ QuickFixEngineering de Win32.**
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -79,12 +79,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -97,10 +97,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nombre**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" WMI ")
+Calificadores: [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**propagado**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nombre local del equipo. El valor de esta propiedad procede de la clase de [**\_ ComputerSystem de CIM**](cim-computersystem.md) .
+Nombre local del sistema del equipo. El valor de esta propiedad procede de la [**clase \_ ComputerSystem de CIM.**](cim-computersystem.md)
 
 </dd> <dt>
 
@@ -113,12 +113,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
 Comentarios adicionales relacionados con la actualización.
@@ -147,7 +147,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
 Identificador único asociado a una actualización determinada.
@@ -157,18 +157,18 @@ Identificador único asociado a una actualización determinada.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -181,10 +181,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
-Persona que instaló la actualización. Si no se conoce este valor, la propiedad está vacía.
+Persona que instaló la actualización. Si se desconoce este valor, la propiedad está vacía.
 
 </dd> <dt>
 
@@ -197,13 +197,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
-Fecha en que se instaló la actualización. Si no se conoce este valor, la propiedad está vacía.
+Fecha en que se instaló la actualización. Si se desconoce este valor, la propiedad está vacía.
 
 > [!Note]  
-> Esta propiedad puede usar formatos diferentes, dependiendo de Cuándo se haya instalado QuickFix. La mayoría de los sistemas utilizan un formato de fecha estándar, como "23-10-2013". Sin embargo, algunos sistemas pueden devolver un valor hexadecimal de 64 bits en el formato [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) de Win32.
+> Esta propiedad puede usar formatos diferentes, dependiendo de cuándo se instaló QuickFix. La mayoría de los sistemas usan un formato de fecha estándar, como "23-10-2013". Sin embargo, algunos sistemas pueden devolver un valor hexadecimal de 64 bits en el formato [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) de Win32.
 
  
 
@@ -218,12 +218,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se encuentra en subclases, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -236,10 +236,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
-Service Pack en vigor cuando se aplicó la actualización. Si no se ha aplicado ningún Service Pack, la propiedad toma el valor SP0. Si no se puede determinar qué Service Pack estaba en vigor, esta propiedad es **null**.
+Service Pack en vigor cuando se aplicó la actualización. Si no se ha aplicado ningún Service Pack, la propiedad toma el valor SP0. Si no se puede determinar qué Service Pack estaba en vigor, esta propiedad es **NULL.**
 
 </dd> <dt>
 
@@ -252,14 +252,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -267,84 +267,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -353,23 +353,23 @@ Con **estrés** ("acentuado")
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ QuickFixEngineering de Win32** se deriva de [**\_ LogicalElement de CIM**](cim-logicalelement.md).
+La **clase \_ QuickFixEngineering de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
 Dado que las actualizaciones se almacenan en dos lugares, una enumeración de esta clase puede producir duplicados.
 
-Una corrección urgente es una revisión del sistema operativo temporal creada por el grupo de ingeniería de corrección rápida en Microsoft. Al igual que los Service Pack, las correcciones activas representan cambios que se han realizado en una versión de Windows una vez que se ha publicado el sistema operativo.
+Una corrección de acceso es una revisión temporal del sistema operativo producida por el grupo Corrección rápida Engineering de Microsoft. Al igual que los Service Pack, las correcciones rápidas representan los cambios realizados en una versión de Windows después de que se haya publicado el sistema operativo.
 
-A diferencia de los Service Pack, las correcciones urgentes no están destinadas a la instalación global en todos los equipos. En su lugar, se desarrollan para solucionar problemas muy concretos, a menudo para configuraciones específicas de equipos.
+A diferencia de los Service Pack, las correcciones rápidas no están diseñadas para la instalación de paquetes en todos los equipos. En su lugar, se desarrollan para abordar problemas muy específicos, a menudo para configuraciones de equipo específicas.
 
-Además, las revisiones de acceso frecuente representan instalaciones independientes que no dependen de otras correcciones activas publicadas. Por ejemplo, una solución de acceso frecuente hipotética no incluiría las correcciones de errores y la funcionalidad incluida en las revisiones 1, 2 y 3. En la mayoría de los casos, tampoco sería necesario instalar las revisiones de acceso rápido 1, 2 y 3 antes de instalar la revisión 4. Esto hace que la enumeración de las correcciones urgentes individuales sea una tarea administrativa importante: para conocer la configuración exacta de un equipo, necesita saber no solo los Service Packs que se han instalado sino también qué revisiones individuales se han instalado.
+Además, las correcciones de accesos temporales representan instalaciones independientes que no dependen de otras correcciones de accesos temporales publicadas. Por ejemplo, una corrección rápida hipotética 4 no incluiría las correcciones de errores y la funcionalidad incluidas en las correcciones de accesos temporales 1, 2 y 3. En la mayoría de los casos, tampoco habría ningún requisito para instalar las correcciones de accesos temporales 1, 2 y 3 antes de instalar la corrección rápida 4. Esto convierte la enumeración de correcciones activas individuales en una tarea administrativa importante: para conocer la configuración exacta de un equipo, debe saber no solo qué Service Pack se han instalado, sino también qué correcciones de acceso activas individuales se han instalado.
 
-La **clase \_ QuickFixEngineering de Win32** permite enumerar todas las revisiones activas que se han instalado en un equipo.
+La **clase \_ QuickFixEngineering de Win32** permite enumerar todas las correcciones activas que se han instalado en un equipo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de PowerShell de [obtener programas instalados](https://Gallery.TechNet.Microsoft.Com/Get-Installed-Programs-fae091ed) se devuelve una lista completa de los programas instalados.
+El [ejemplo de PowerShell](https://Gallery.TechNet.Microsoft.Com/Get-Installed-Programs-fae091ed) Obtener programas instalados devuelve una lista completa de los programas instalados.
 
-En el siguiente ejemplo de VBScript se enumeran las revisiones instaladas en un equipo.
+En el ejemplo de VBScript siguiente se enumeran las correcciones de accesos temporales instaladas en un equipo.
 
 
 ```VB
@@ -395,8 +395,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -405,13 +405,13 @@ Next
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)
 </dt> <dt>
 
-[Tareas WMI: sistemas operativos](../wmisdk/wmi-tasks--operating-systems.md)
+[Tareas wmi: sistemas operativos](../wmisdk/wmi-tasks--operating-systems.md)
 </dt> </dl>
 
  

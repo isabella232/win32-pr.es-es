@@ -1,9 +1,9 @@
 ---
 title: Atributo AverageLevel
-description: El atributo AverageLevel es un valor de amplitud de 16 bits que indica el nivel de volumen medio.
+description: El atributo AverageLevel es un valor de amplitud de 16 bits que indica el nivel medio del volumen.
 ms.assetid: 04ff19f1-a9a5-4e47-86a6-50c6f08b0d7d
 keywords:
-- AverageLevel Media Player de Windows
+- Atributo AverageLevel Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,50 +12,50 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 594612f3675d818f94270b1952d2a9ca7bed15d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e169b1e2d63e6f8215515acc852d431ff13ccd513924e4c2a237b16c17dacfc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582750"
 ---
 # <a name="averagelevel-attribute"></a>Atributo AverageLevel
 
-El atributo **AverageLevel** es un valor de amplitud de 16 bits que indica el nivel de volumen medio.
+El **atributo AverageLevel** es un valor de amplitud de 16 bits que indica el nivel medio del volumen.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
--   [Archivos de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Archivos multimedia de Windows usados con frecuencia](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
-Windows Media Player establece este valor en cualquiera de las instancias siguientes:
+Reproductor de Windows Media establece este valor en cualquiera de las siguientes instancias:
 
--   Una vez que haya copiado un archivo.
--   Una vez que haya reproducido un archivo (cuando la mejora de la nivelación de volumen automática está habilitada).
+-   Después de que haya arrancado un archivo.
+-   Después de reproducir un archivo (cuando está habilitada la mejora de nivelación automática de volumen).
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszAverageLevel.
+La Windows DEL SDK de formato multimedia para este atributo es g \_ wszAverageLevel.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  
