@@ -1,28 +1,28 @@
 ---
-title: Archivos JScript
-description: Archivos JScript
+title: JScript Archivos
+description: JScript Archivos
 ms.assetid: 5b862e52-5d49-44b4-811c-3dbca5552167
 keywords:
-- Aspectos de Windows Media Player, archivos JScript
-- máscaras, archivos JScript
+- Reproductor de Windows Media máscaras,JScript archivos
+- skins,JScript archivos
 - archivos para máscaras, JScript
-- Archivos JScript para máscaras, acerca de
+- JScript archivos para máscaras, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9123ade6b715ee5302925030545140329c06770c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7eb4378130eacbbddf06da0762587fb45d3b517fc46fea4b98840bf697a6869c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575165"
 ---
-# <a name="jscript-files"></a>Archivos JScript
+# <a name="jscript-files"></a>JScript Archivos
 
-Los archivos JScript se cargan con el atributo **scriptFile** del elemento de **vista** . Deben ser archivos de texto y deben usar la extensión de nombre de archivo. js. Si tiene un archivo JScript que tiene el mismo nombre que el archivo de definición de máscara, el archivo JScript se cargará al mismo tiempo que el archivo de definición de máscara. Por ejemplo, si tiene un archivo de definición de máscara denominado Laure. WMS y tiene un archivo JScript denominado laure.js, el archivo de laure.js se cargará automáticamente.
+JScript archivos se cargan con el **atributo scriptFile** del **elemento VIEW.** Deben ser archivos de texto y deben usar la extensión de nombre de archivo .js. Si tiene un archivo JScript que tiene el mismo nombre que el archivo de definición de máscara, el archivo JScript se cargará al mismo tiempo que el archivo de definición de máscara. Por ejemplo, si tiene un archivo de definición de máscara denominado laure.wms y tiene un archivo JScript denominado laure.js, el archivo laure.js se cargará automáticamente.
 
-Puede usar JScript para crear una funcionalidad elaborada detrás de la máscara. Al crear funciones en JScript, puede hacer prácticamente todo lo que sea imaginable con las máscaras. Por ejemplo, puede usar una lista de reproducción diferente para cada día de la semana, pero tener siempre el mismo en el viernes.
+Puede usar JScript crear funcionalidades elaborados detrás de la máscara. Al crear funciones en JScript, puede hacer casi cualquier cosa con máscaras. Por ejemplo, podría usar una lista de reproducción diferente para cada día de la semana, pero siempre tener la misma el viernes.
 
-Vea [usar JScript](using-jscript.md) para obtener más información sobre el uso de JScript con máscaras. Tenga en cuenta que Visual Basic Scripting Edition (VBScript), que se puede utilizar al incrustar el control de Windows Media Player en una página web, no se admite para su uso con máscaras.
+Consulte [Uso de JScript](using-jscript.md) para obtener más información sobre el uso de JScript con máscaras. Tenga en cuenta que Visual Basic Scripting Edition (VBScript), que se puede usar al insertar el control Reproductor de Windows Media en una página web, no se admite para su uso con máscaras.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -31,9 +31,9 @@ Vea [usar JScript](using-jscript.md) para obtener más información sobre el uso
 [**Archivos de máscara**](skin-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

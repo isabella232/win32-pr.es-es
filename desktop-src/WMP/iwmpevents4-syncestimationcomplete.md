@@ -1,11 +1,11 @@
 ---
-title: IWMPEvents4 SyncEstimationComplete, método
-description: El evento SyncEstimationComplete se produce cuando se completa una estimación de tamaño, iniciada anteriormente por IWMPSyncDevice3 estimateSyncSize.
+title: Método IWMPEvents4 SyncEstimationComplete
+description: El evento SyncEstimationComplete tiene lugar cuando se completa una estimación de tamaño iniciada anteriormente por IWMPSyncDevice3 estimateSyncSize.
 ms.assetid: 2fb45a13-d82b-48b6-b9bb-46409f33a33f
 keywords:
-- Método SyncEstimationComplete de Windows Media Player
-- Método SyncEstimationComplete Windows Media Player, interfaz IWMPEvents4
-- Interfaz IWMPEvents4 Windows Media Player, método SyncEstimationComplete
+- Método SyncEstimationComplete Reproductor de Windows Media
+- Método SyncEstimationComplete Reproductor de Windows Media , interfaz IWMPEvents4
+- Interfaz IWMPEvents4 Reproductor de Windows Media , método SyncEstimationComplete
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 209ed2f2bd0f075dbaa8d442a276c994d50ce2e5
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: b3f444cdc66874c907bb4c6412fa10384fde67145563d79153c28cb675c6fc3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103788679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575610"
 ---
-# <a name="iwmpevents4syncestimationcomplete-method"></a>IWMPEvents4:: SyncEstimationComplete (método)
+# <a name="iwmpevents4syncestimationcomplete-method"></a>IWMPEvents4::SyncEstimationComplete (método)
 
-El evento **SyncEstimationComplete** se produce cuando se completa una estimación de tamaño, iniciada anteriormente por [**IWMPSyncDevice3:: estimateSyncSize**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice3-estimatesyncsize).
+El **evento SyncEstimationComplete** tiene lugar cuando se completa una estimación de tamaño, iniciada anteriormente por [**IWMPSyncDevice3::estimateSyncSize.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice3-estimatesyncsize)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ void SyncEstimationComplete(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
-Puntero a la interfaz [**IWMPSyncDevice**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice) que representa el dispositivo para el que se inició la estimación del tamaño.
+Puntero a la [**interfaz IWMPSyncDevice**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice) que representa el dispositivo para el que se inició la estimación de tamaño.
 
 </dd> <dt>
 
-*hrResult* \[ de\]
+*hrResult* \[ En\]
 </dt> <dd>
 
-Valor que indica si la estimación se ha realizado correctamente o no.
+Valor que indica el éxito o el error de la estimación.
 
 
 
-| Value                                                                                                                                       | Significado                                |
+| Valor                                                                                                                                       | Significado                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| <span id="S_OK"></span><span id="s_ok"></span><dl> <dt>**S \_ correcto**</dt> </dl>          | La estimación se ha realizado correctamente.<br/>   |
-| <span id="E_ABORT"></span><span id="e_abort"></span><dl> <dt>**E \_ anular**</dt> </dl> | Se anuló la estimación.<br/> |
+| <span id="S_OK"></span><span id="s_ok"></span><dl> <dt>**S \_ OK**</dt> </dl>          | La estimación se ha logrado correctamente.<br/>   |
+| <span id="E_ABORT"></span><span id="e_abort"></span><dl> <dt>**E \_ ABORT**</dt> </dl> | Se anuló la estimación.<br/> |
 
 
 
@@ -69,17 +69,17 @@ Valor que indica si la estimación se ha realizado correctamente o no.
 
 </dd> <dt>
 
-*lEstimatedUsedSpace* \[ de\]
+*lEstimatedUsedSpace* \[ En\]
 </dt> <dd>
 
-Espacio Estimado (en bytes) que se utilizaría en el dispositivo.
+Espacio estimado (en bytes) que se usaría en el dispositivo.
 
 </dd> <dt>
 
-*lEstimatedSize* \[ de\]
+*lEstimatedSize* \[ En\]
 </dt> <dd>
 
-Tamaño estimado (en bytes) de los datos que se van a sincronizar.
+Tamaño estimado (en bytes) de los datos que se sincronizarán.
 
 </dd> </dl>
 
@@ -87,11 +87,11 @@ Tamaño estimado (en bytes) de los datos que se van a sincronizar.
 
 Este método no devuelve ningún valor.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IWMPEvents4**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents4)
+[**IWMPEvents4 (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents4)
 </dt> <dt>
 
 [**IWMPSyncDevice3::estimateSyncSize**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice3-estimatesyncsize)

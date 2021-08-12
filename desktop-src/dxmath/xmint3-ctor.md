@@ -1,24 +1,24 @@
 ---
 description: Constructores expuestos por XMINT3.
 ms.assetid: 69eb08b8-a533-40cc-8efb-ccb9106e0e24
-title: Constructores XMINT3 (Directxmath. h)
+title: Constructores XMINT3 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 08d5440f2a0c6302e936a0c58127aae8044338b8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b9b8adeeaaaf43023da2dc924e0d1bb646c6c36b3c0a3c4cc3f949511dde7b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276191"
 ---
 # <a name="xmint3-constructors"></a>Constructores XMINT3
 
 Constructores expuestos por `XMINT3` .
 
-Construye instancias de la estructura [**XMINT3**](/windows/win32/api/directxmath/ns-directxmath-xmint3) .
+Construye instancias de la [**estructura XMINT3.**](/windows/win32/api/directxmath/ns-directxmath-xmint3)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -39,8 +39,8 @@ Construye instancias de la estructura [**XMINT3**](/windows/win32/api/directxmat
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMINT3 (const int32_t *)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmint3-xmint3 (constint32_t))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMINT3</code> a partir de un argumento de matriz de tres elementos <code>int32_t</code> .<br/> Este constructor inicializa una nueva instancia de [<strong>XMINT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmint3) a partir de un argumento de matriz de tres elementos <code>int32_t</code> .<br/>
+<td style="text-align: left;">[<strong>XMINT3 (const int32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmint3-xmint3(constint32_t))</td>
+<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMINT3</code> de un argumento de matriz de tres <code>int32_t</code> elementos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint3) a partir de un argumento de matriz de tres <code>int32_t</code> elementos.<br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -48,8 +48,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMINT3 (int32_t, int32_t, int32_t)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmint3-xmint3 (int32_t_int32_t_int32_t))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMINT3</code> a partir de tres <code>int32_t</code> argumentos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMINT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmint3) a partir de tres <code>int32_t</code> argumentos.<br/>
+<td style="text-align: left;">[<strong>XMINT3 (int32_t,int32_t,int32_t)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmint3-xmint3(int32_t_int32_t_int32_t))</td>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMINT3</code> partir de tres <code>int32_t</code> argumentos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint3) a partir de tres <code>int32_t</code> argumentos.<br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -57,8 +57,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMINT3 ()</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmint3-xmint3 (constxmint3_))</td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMINT3</code> .<br/> Constructor predeterminado para [<strong>XMINT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmint3).<br/>
+<td style="text-align: left;">[<strong>XMINT3 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmint3-xmint3(constxmint3_))</td>
+<td style="text-align: left;">Constructor predeterminado para <code>XMINT3</code> .<br/> Constructor predeterminado para [<strong>XMINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint3).<br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -76,15 +76,15 @@ Este constructor solo está disponible en C++.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMINT3](ovw-xmint3-extensions.md)
+[Extensiones XMINT3](ovw-xmint3-extensions.md)
 </dt> <dt>
 
 **Referencia**

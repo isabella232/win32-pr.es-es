@@ -1,7 +1,7 @@
 ---
-description: Obtiene un parámetro o una descripción de la anotación.
+description: Obtiene un parámetro o una descripción de anotación.
 ms.assetid: fd54eb08-a7e4-4106-b0ed-49a4da7fcadc
-title: 'ID3DXBaseEffect:: GetParameterDesc (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetParameterDesc (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 8c3a52c06ebed764b3ab1718488c2dbc55ceda41
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8c60332909ef601d58cb624201bae6e1934a84699ead1227a5d8a83c2db64dc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296708"
 ---
-# <a name="id3dxbaseeffectgetparameterdesc-method"></a>ID3DXBaseEffect:: GetParameterDesc (método)
+# <a name="id3dxbaseeffectgetparameterdesc-method"></a>Método ID3DXBaseEffect::GetParameterDesc
 
-Obtiene un parámetro o una descripción de la anotación.
+Obtiene un parámetro o una descripción de anotación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ HRESULT GetParameterDesc(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador de parámetro o anotación. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador de parámetro o anotación. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pDesc* \[ enuncia\]
+*pDesc* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXPARAMETER \_ DESC**](d3dxparameter-desc.md)\***
@@ -63,7 +63,7 @@ Devuelve una descripción del parámetro o anotación especificados. Vea [**D3DX
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

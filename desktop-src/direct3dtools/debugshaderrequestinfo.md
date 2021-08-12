@@ -4,7 +4,7 @@ MS-HAID: vspixengine.DebugShaderRequestInfo
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura DebugShaderRequestInfo
+title: DebugShaderRequestInfo (estructura)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: DEFFAEE4-6C53-4C89-A533-A5BE73B80DEA
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a59bfb84bb7d4e8644c0cfadc4475be7d7da4a54
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f0698782b9829f752ecb1fd45c4baf7794a206c8a7162e1f960cc550012b8532
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283952"
 ---
-# <a name="span-idvspixenginedebugshaderrequestinfospandebugshaderrequestinfo-structure"></a><span id="vspixengine.debugshaderrequestinfo"></span>Estructura DebugShaderRequestInfo
+# <a name="span-idvspixenginedebugshaderrequestinfospandebugshaderrequestinfo-structure"></a><span id="vspixengine.debugshaderrequestinfo"></span>DebugShaderRequestInfo (estructura)
 
 Representa información sobre una solicitud del depurador de sombreador.
 
@@ -37,30 +37,30 @@ Representa información sobre una solicitud del depurador de sombreador.
 
 ## <a name="members"></a>Miembros
 
-**media**  
-Fase de canalización que se va a depurar.
+**Etapa**  
+Fase de canalización que se depura.
 
-**eventID**  
-IDENTIFICADOR del evento de gráficos que se va a depurar.
+**Eventid**  
+Identificador del evento de gráficos que se depura.
 
-**Númeromarco**  
-Marco que se va a depurar.
+**frameNumber**  
+Marco que se depura.
 
-**vértice**  
-El vértice que se va a depurar.
+**Vértice**  
+Vértice que se depura.
 
-**píxel**  
-Píxel que se va a depurar.
+**Pixel**  
+Píxel que se depura.
 
 **groupCoordinates**  
-Coordenadas del grupo que se va a depurar.
+Coordenadas del grupo que se depura.
 
 **threadCoordinates**  
-Coordenadas del subproceso que se va a depurar
+Coordenadas del subproceso que se depura
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

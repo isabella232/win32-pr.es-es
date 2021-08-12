@@ -3,7 +3,7 @@ title: Elemento PeapExtensions (EapType) (propiedades de usuario)
 description: Obtenga información sobre el elemento PeapExtensions (EapType). Este elemento permite futuras mejoras en el esquema. | Elemento PeapExtensions (EapType) (propiedades de usuario)
 ms.assetid: f04d1361-c88e-4415-9a81-d1195b14de05
 keywords:
-- Elemento PeapExtensions EAPHost
+- EapHost del elemento PeapExtensions
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b264bbb37d25053dadd66c7656811792432cf603
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0880c9c37015b5695598cf6b219cfe9a4857e91080dba46285170885b0317e69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272813"
 ---
 # <a name="peapextensions-eaptype-element-user-properties"></a>Elemento PeapExtensions (EapType) (propiedades de usuario)
 
-El elemento **PeapExtensions (EapType)** permite futuras mejoras en el esquema.
+El **elemento PeapExtensions (EapType)** permite futuras mejoras en el esquema.
 
 ``` syntax
 <xs:element name="PeapExtensions"
@@ -31,24 +31,24 @@ El elemento **PeapExtensions (EapType)** permite futuras mejoras en el esquema.
  />
 ```
 
-El elemento **PeapExtensions** se define mediante el elemento [**EapType**](mspeapuserpropertiesv1schema-eaptype-element.md) .
+El **elemento PeapExtensions** se define mediante [**el elemento EapType.**](mspeapuserpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PeapExtensions (EapType)** es opcional.
+El **elemento PeapExtensions (EapType)** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ El elemento **PeapExtensions (EapType)** es opcional.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-schema.md)
+[Mspeapuserpropertiesv1 Schema](mspeapuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

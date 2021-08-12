@@ -1,28 +1,28 @@
 ---
-description: COMREPL es una utilidad que replicará el catálogo de COM+ de un equipo de origen determinado en uno o varios equipos de destino.
+description: COMREPL es una utilidad que replicará el catálogo de COM+ desde un equipo de origen determinado a uno o varios equipos de destino.
 ms.assetid: 11aa7603-61f1-4af0-b6f9-81f484788052
-title: La utilidad de replicación COMREPL
+title: Utilidad de replicación COMREPL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a08ecd77a679b6fc150e7a91fc0214eb829792dd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 446cfc0e627463e8c142ccab624c3773123034c2becebc402a6069f74d30ccd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305300"
 ---
-# <a name="the-comrepl-replication-utility"></a>La utilidad de replicación COMREPL
+# <a name="the-comrepl-replication-utility"></a>Utilidad de replicación COMREPL
 
-COMREPL es una utilidad que replicará el catálogo de COM+ de un equipo de origen determinado en uno o varios equipos de destino. Piense en el equipo de origen que representa una "configuración maestra". COMREPL se usa para replicar esta configuración maestra con el fin de mantener un conjunto de equipos configurados de forma idéntica.
+COMREPL es una utilidad que replicará el catálogo de COM+ desde un equipo de origen determinado a uno o varios equipos de destino. Piense en el equipo de origen que representa una "configuración maestra". COMREPL se usa para replicar esta configuración maestra para mantener un conjunto de equipos configurados de forma idéntica.
 
-La unidad de replicación es toda la configuración de COM+ en el equipo maestro. Todas las aplicaciones COM+ del servidor principal se replican en los equipos de destino; es todo o nada. Además, todas las aplicaciones COM+ instaladas anteriormente en los equipos de destino, con la excepción de las aplicaciones COM+ preinstaladas, se eliminarán como parte del proceso de replicación.
+La unidad de replicación es toda la configuración de COM+ en el equipo maestro. Todas las aplicaciones COM+ del servidor maestro se replican en los equipos de destino. es todo o nada. Además, todas las aplicaciones COM+ instaladas previamente en los equipos de destino, a excepción de las aplicaciones preinstaladas de COM+, se eliminarán como parte del proceso de replicación.
 
-COMREPL solo replica los datos de configuración de COM+. Esto incluye las aplicaciones COM+ y la configuración del equipo específico de COM+. Microsoft Internet Information Services (IIS) tiene una utilidad similar (IISSync) que hace uso de COMREPL para replicar la configuración de IIS y COM+.
+COMREPL solo replica los datos de configuración de COM+. Esto incluye las aplicaciones COM+ y la configuración de equipo específica de COM+. Microsoft Internet Information Services (IIS) tiene una utilidad similar (IISSync), que usa COMREPL para replicar la configuración de IIS y COM+.
 
-Para obtener información detallada sobre cómo iniciar y usar COMREPL, vea los temas siguientes en esta sección:
+Para obtener información detallada sobre el inicio y el uso de COMREPL, consulte los temas siguientes en esta sección:
 
--   [Usar COMREPL](using-comrepl.md)
--   [Lo que se replica](what-gets-replicated.md)
+-   [Uso de COMREPL](using-comrepl.md)
+-   [Qué se replica](what-gets-replicated.md)
 -   [Fases de replicación](replication-phases.md)
 -   [Administración de archivos](file-management.md)
 -   [Registro e informes de errores](logging-and-error-reporting.md)

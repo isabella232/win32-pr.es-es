@@ -1,7 +1,7 @@
 ---
-description: Guarda las plantillas en un archivo de DirectX. En desuso.
+description: Guarda las plantillas en un archivo DirectX. En desuso.
 ms.assetid: 7a45565a-8c04-4fa1-a424-294b847d3a2f
-title: 'IDirectXFileSaveObject:: SaveTemplates (método) (DXFile. h)'
+title: Método IDirectXFileSaveObject::SaveTemplates (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 3c63ae2e0f211aa8e7064161d03a66cafe1e8289
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 87ec95932b26877354c22089a97b249bd542aa841552c3e3f9e4827a20f6d608
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292226"
 ---
-# <a name="idirectxfilesaveobjectsavetemplates-method"></a>IDirectXFileSaveObject:: SaveTemplates (método)
+# <a name="idirectxfilesaveobjectsavetemplates-method"></a>IDirectXFileSaveObject::SaveTemplates (método)
 
-Guarda las plantillas en un archivo de DirectX. En desuso.
+Guarda las plantillas en un archivo DirectX. En desuso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SaveTemplates(
 
 <dl> <dt>
 
-*cTemplates* \[ de\]
+*cTemplates* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número total de plantillas que se van a guardar.
+Número total de plantillas que se guardarán.
 
 </dd> <dt>
 
-*ppguidTemplates* \[ de\]
+*ppguidTemplates* \[ En\]
 </dt> <dd>
 
 Tipo: **[**GUID**](guid.md) \* \* const**
 
-Dirección de un puntero a una matriz de los GUID de todas las plantillas que se van a guardar.
+Dirección de un puntero a una matriz de GUID para todas las plantillas que se guardarán.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Dirección de un puntero a una matriz de los GUID de todas las plantillas que se
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser DXFILEERR \_ BADVALUE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El siguiente fragmento de código proporciona una llamada de ejemplo a **IDirectXFileSaveObject:: SaveTemplates** y el contenido de ejemplo de la matriz a la que apunta ppguidTemplates.
+El fragmento de código siguiente proporciona una llamada de ejemplo a **IDirectXFileSaveObject::SaveTemplates** y el contenido de ejemplo de la matriz a la que apunta ppguidTemplates.
 
 
 ```
@@ -83,7 +83,7 @@ hr = pDXFileSaveObject->SaveTemplates(3, aIds);
 
 
 
-Después de usar este método para guardar las plantillas, use el método [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para crear un objeto de datos.
+Después de usar este método para guardar las plantillas, use el método [**IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para crear un objeto de datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,12 +91,12 @@ Después de usar este método para guardar las plantillas, use el método [**IDi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

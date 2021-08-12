@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c966eeabe78deabefb2877405f649f3d162f9d73
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2e20e0f632fc25f25f5eedc76491cc7835a19e225dd0742a2a4647cdba1894e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297861"
 ---
 # <a name="d3dxvec3barycentric-function-d3dx9mathh"></a>Función D3DXVec3BaryCentric (D3dx9math.h)
 
-Devuelve un punto en coordenadas baricéntricas, utilizando los vectores 3D especificados.
+Devuelve un punto en coordenadas centradas en baría, utilizando los vectores 3D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -103,7 +103,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) en coordenadas centradas en Bary.
+Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) en coordenadas centradas en baría.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -118,11 +118,11 @@ Tenga en cuenta las siguientes relaciones.
 -   Si (f>=0 &, & g==0 &, & 1-f-g>=0), el punto está en la línea V1V2.
 -   Si (f>=0 &, & g>=0 &, & 1-f-g==0), el punto está en la línea V2V3.
 
-Las coordenadas centradas en barras son una forma de coordenadas generales. En este contexto, el uso de coordenadas centradas en Bary representa un cambio en los sistemas de coordenadas. Lo que es cierto para las coordenadas cartesianas es true para las coordenadas barícéntricas.
+Las coordenadas barycéntricas son una forma de coordenadas generales. En este contexto, el uso de coordenadas baricéntricas representa un cambio en los sistemas de coordenadas. Lo que se aplica a las coordenadas cartesianas es true para las coordenadas baríntricas.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3BaryCentric** se puede usar como parámetro para otra función.
 
-Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas baricéntricas, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 

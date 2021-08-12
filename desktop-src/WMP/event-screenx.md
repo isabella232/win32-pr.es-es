@@ -1,9 +1,9 @@
 ---
-title: evento. screenX
-description: El atributo screenX recupera la coordenada x absoluta del puntero del mouse con respecto a la pantalla.
+title: event.screenX
+description: El atributo screenX recupera la coordenada X absoluta del puntero del mouse con respecto a la pantalla.
 ms.assetid: 120c9247-183d-4324-8940-519d43687e9f
 keywords:
-- evento. screenX Windows Media Player
+- event.screenX Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7739af64fcfb829d1df55e0bcb4b501660ae15c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2765dba2267f8439029da9bf5dd4457779e144590e1720983f6963e7d2ca80a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576969"
 ---
-# <a name="eventscreenx"></a>evento. screenX
+# <a name="eventscreenx"></a>event.screenX
 
-El atributo **screenX** recupera la coordenada x absoluta del puntero del mouse con respecto a la pantalla.
+El **atributo screenX** recupera la coordenada X absoluta del puntero del mouse con respecto a la pantalla.
 
 ``` syntax
 event.screenX
@@ -29,26 +29,26 @@ event.screenX
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**evento. pantalla**](event-screeny.md)
+[**event.screenY**](event-screeny.md)
 </dt> </dl>
 
  

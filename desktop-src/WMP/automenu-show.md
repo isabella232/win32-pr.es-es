@@ -1,9 +1,9 @@
 ---
-title: Automenú. Mostrar
-description: El método Show muestra el panel de acceso rápido.
+title: AUTOMENU.show
+description: El método show muestra el Panel de acceso.
 ms.assetid: c4f2b106-180a-4526-af9b-6ce54c083578
 keywords:
-- Automenú. Mostrar Media Player de Windows
+- AUTOMENU.show Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cf3085065f10225c98071d5259480eb58216e75
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 48f160ca3433e42ee78c973312439b3e269fc49bf10e6dfafb93ae4e6f17e99f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582787"
 ---
-# <a name="automenushow"></a>Automenú. Mostrar
+# <a name="automenushow"></a>AUTOMENU.show
 
-El método **Show** muestra el **Panel de acceso rápido**.
+El **método show** muestra el **Panel de acceso**.
 
 ``` syntax
         elementID.show("Play")
@@ -32,7 +32,7 @@ El método **Show** muestra el **Panel de acceso rápido**.
 
 <dl> <dt>
 
-<span id="_Play_"></span><span id="_play_"></span><span id="_PLAY_"></span>*Reproducción*
+<span id="_Play_"></span><span id="_play_"></span><span id="_PLAY_"></span>*"Reproducir"*
 </dt> <dd>
 
 Especifique siempre este valor.
@@ -43,25 +43,25 @@ Especifique siempre este valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **Panel de acceso rápido** aparece en la ubicación especificada por los atributos **izquierdo** y **superior** del elemento de **menú automenu** .
+El **cuadro Panel de acceso** rápido aparece en la  ubicación especificada por los atributos izquierdo **y** superior del elemento **AUTOMENU.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Automenu (elemento)**](automenu-element.md)
+[**Elemento AUTOMENU**](automenu-element.md)
 </dt> </dl>
 
  

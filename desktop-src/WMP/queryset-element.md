@@ -1,9 +1,9 @@
 ---
-title: Elemento querySet
+title: elemento querySet
 description: El elemento querySet contiene elementos que definen qué elementos multimedia se seleccionarán de la biblioteca.
 ms.assetid: 18b5a509-a56b-4fd1-812f-60b8efd5136b
 keywords:
-- Elemento querySet Media Player Windows
+- QuerySet Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4971c2a7f601132640d7654a95dd288f1740a467
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb157bb30c2e728b7840fe7021a2a4fcacc317b10eb6778b5702d7d2277c4a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570618"
 ---
-# <a name="queryset-element"></a>Elemento querySet
+# <a name="queryset-element"></a>elemento querySet
 
-El elemento **querySet** contiene elementos que definen qué elementos multimedia se seleccionarán de la biblioteca.
+El **elemento querySet** contiene elementos que definen qué elementos multimedia se seleccionarán de la biblioteca.
 
 ``` syntax
 <querySet>
@@ -46,9 +46,9 @@ Este elemento no tiene atributos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **querySet** especifica qué elementos multimedia deben seleccionarse de la biblioteca, sin tener en cuenta el tamaño del conjunto de resultados. Por otro lado, el elemento **Filter** limita el tamaño del conjunto de resultados.
+El **elemento querySet** especifica qué elementos multimedia se deben seleccionar de la biblioteca, sin tener en cuenta el tamaño del conjunto de resultados. Por **otro** lado, el elemento filter limita el tamaño del conjunto de resultados.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -77,32 +77,32 @@ El elemento **querySet** especifica qué elementos multimedia deben seleccionars
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento argument**](argument-element.md)
+[**elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Filter**](filter-element.md)
+[**elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**elemento fragment**](fragment-element.md)
 </dt> <dt>
 
 [**Elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
-[**Elemento sourceFilter**](sourcefilter-element.md)
+[**elemento sourceFilter**](sourcefilter-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

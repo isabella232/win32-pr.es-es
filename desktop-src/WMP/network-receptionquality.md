@@ -1,9 +1,9 @@
 ---
-title: Network. receptionQuality
-description: La propiedad receptionQuality recupera el porcentaje de paquetes recibidos en los últimos 30 segundos.
+title: Network.receptionQuality
+description: La propiedad receivedQuality recupera el porcentaje de paquetes recibidos en los últimos 30 segundos.
 ms.assetid: 432f7f0a-0130-4485-b4a3-daa80ce9bb36
 keywords:
-- Windows Media Player de red. receptionQuality
+- Network.receptionQuality Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3706ba4d953f80c4a9e799971a7e73d49553c709
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 159bcac192d5a5bd9197ecc3ea935027dd6d707dde42a54c64a318459ae00040
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574161"
 ---
-# <a name="networkreceptionquality"></a>Network. receptionQuality
+# <a name="networkreceptionquality"></a>Network.receptionQuality
 
-La propiedad **receptionQuality** recupera el porcentaje de paquetes recibidos en los últimos 30 segundos.
+La **propiedad receivedQuality** recupera el porcentaje de paquetes recibidos en los últimos 30 segundos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **receptionQuality**
+*player*. *red*. **receptionQuality**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El número de paquetes recibidos, perdidos y recuperados durante el streaming se supervisa una vez por segundo. **receptionQuality** es el porcentaje de paquetes que no se pierden durante los últimos 30 segundos.
+El número de paquetes recibidos, perdidos y recuperados durante el streaming se supervisa una vez cada segundo. **receptionQuality es** el porcentaje de paquetes que no se pierden durante los últimos 30 segundos.
 
-Cada vez que se detiene y se reinicia la reproducción, esta propiedad se establece en cero. No se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se establece en cero. No se restablece si la reproducción está en pausa.
 
-Esta propiedad devuelve información válida solo durante el tiempo de ejecución y solo si el *reproductor*. También se establece la propiedad **URL** .
+Esta propiedad devuelve información válida solo durante el tiempo de ejecución y solo si el *reproductor .* **También se** establece la propiedad URL.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **receptionQuality** para mostrar el porcentaje de paquetes recibidos. La información se muestra en un DIV HTML creado con ID = "PET". En el ejemplo se usa un temporizador con un intervalo de 30 segundos para actualizar la pantalla. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **receivedQuality para** mostrar el porcentaje de paquetes recibidos. La información se muestra en un DIV HTML creado con id. = "RQ". En el ejemplo se usa un temporizador con un intervalo de 30 segundos para actualizar la pantalla. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -80,21 +80,21 @@ function UpdateRQ(){
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> </dl>
 
  

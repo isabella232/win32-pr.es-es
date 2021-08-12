@@ -1,7 +1,7 @@
 ---
 description: Obtiene un conjunto de animaciones, dado su nombre.
 ms.assetid: 4c3f3002-45f6-49b2-8a42-18d5824fb36f
-title: 'ID3DXAnimationController:: GetAnimationSetByName (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetAnimationSetByName (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d520625e457a50fe962ae74d6e25fc17e2beb729
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8b417bf9434b712903e61839807f71765b2e3c69916430f162a67febe65fc6cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297048"
 ---
-# <a name="id3dxanimationcontrollergetanimationsetbyname-method"></a>ID3DXAnimationController:: GetAnimationSetByName (método)
+# <a name="id3dxanimationcontrollergetanimationsetbyname-method"></a>Método ID3DXAnimationController::GetAnimationSetByName
 
 Obtiene un conjunto de animaciones, dado su nombre.
 
@@ -41,21 +41,21 @@ HRESULT GetAnimationSetByName(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Cadena que contiene el nombre del conjunto de animaciones.
+Cadena que contiene el nombre del conjunto de animación.
 
 </dd> <dt>
 
-*ppAnimSet* \[ enuncia\]
+*ppAnimSet* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)\***
 
-Puntero al conjunto de animaciones [**ID3DXAnimationSet**](id3dxanimationset.md) .
+Puntero al conjunto [**de animaciones ID3DXAnimationSet.**](id3dxanimationset.md)
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntero al conjunto de animaciones [**ID3DXAnimationSet**](id3dxanimationset.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El controlador de animación contiene una matriz de conjuntos de animaciones. Este método devuelve un conjunto de animaciones que tiene el nombre especificado.
+El controlador de animación contiene una matriz de conjuntos de animación. Este método devuelve un conjunto de animaciones que tiene el nombre especificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ El controlador de animación contiene una matriz de conjuntos de animaciones. Es
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

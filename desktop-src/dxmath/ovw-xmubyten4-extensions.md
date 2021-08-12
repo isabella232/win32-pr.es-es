@@ -1,22 +1,22 @@
 ---
-description: XMUBYTEN4 describe un vector 3D para almacenar valores normalizados sin signo como enteros de 8 bits sin signo (1 byte).
+description: XMUBYTEN4 describe un vector 3D para almacenar valores normalizados sin signo como enteros de 8 bits (1 byte) sin signo.
 ms.assetid: 95322cb2-37b9-4b2a-9427-c0c05cab3b8c
-title: Extensiones de XMUBYTEN4
+title: Extensiones XMUBYTEN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f512ccfa113f2e619b0c288b9d96060a302897a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 883e862cdb1dcd84229c73fcbbfe152a3489d76fad33c23ec4565bf5b26097a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277543"
 ---
-# <a name="xmubyten4-extensions"></a>Extensiones de XMUBYTEN4
+# <a name="xmubyten4-extensions"></a>Extensiones XMUBYTEN4
 
-[**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) describe un vector 3D para almacenar valores normalizados sin signo como enteros de 8 bits sin signo (1 byte).
+[**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) describe un vector 3D para almacenar valores normalizados sin signo como enteros de 8 bits (1 byte) sin signo.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

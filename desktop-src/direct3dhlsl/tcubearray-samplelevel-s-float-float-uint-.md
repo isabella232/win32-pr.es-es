@@ -1,9 +1,9 @@
 ---
-title: 'SampleLevel:: SampleLevel (S, Float, Float, uint) (función)'
-description: 'Muestrea una textura en el nivel de mipmap especificado y devuelve el estado de la operación. | SampleLevel:: SampleLevel (S, Float, Float, uint) (función)'
+title: Función SampleLevel::SampleLevel(S,float,float,uint)
+description: Muestrea una textura en el nivel de mapa mip especificado y devuelve el estado de la operación. | Función SampleLevel::SampleLevel(S,float,float,uint)
 ms.assetid: 3794D17F-BC70-4D3A-9F2C-ADF900983D2C
 keywords:
-- SampleLevel de función HLSL
+- Función SampleLevel HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 356e2779d82e886946e93d2071ae693279c07eb8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6eb4e4f6d3320bcac06c973ef28e8af0934f3a55da9045f01141157240434fbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284303"
 ---
-# <a name="samplelevelsamplelevelsfloatfloatuint-function"></a>SampleLevel:: SampleLevel (S, Float, Float, uint) (función)
+# <a name="samplelevelsamplelevelsfloatfloatuint-function"></a>Función SampleLevel::SampleLevel(S,float,float,uint)
 
-Muestrea una textura en el nivel de mipmap especificado y devuelve el estado de la operación.
+Muestrea una textura en el nivel de mapa mip especificado y devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,20 +47,20 @@ DXGI_FORMAT SampleLevel(
 
 Tipo: **SamplerState**
 
-Un [Estado de muestra](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.
+Un [estado sampler](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura.
+Las coordenadas de textura. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                    | Tipo de parámetro |
+| Texture-Object tipo                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -73,31 +73,31 @@ Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de t
 
 </dd> <dt>
 
-*LOD* \[ de\]
+*LOD* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-\[en \] un número que especifica el nivel de mipmap. Si el valor es ≤ 0, se utiliza el nivel de mipmap 0 (mapa más grande). El valor fraccionario (si se proporciona) se usa para interpolar entre dos niveles de mipmap.
+\[en \] Número que especifica el nivel de mapa mip. Si el valor es ≤ 0, se usa el nivel de mapa mip 0 (mapa más grande). El valor fraccionrio (si se proporciona) se usa para interpolar entre dos niveles de mapa mip.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

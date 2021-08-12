@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MediaCollectionMediaRemoved
-description: El evento MediaCollectionMediaRemoved se produce cuando se quita un elemento multimedia de la biblioteca local. | Evento Player. MediaCollectionMediaRemoved
+title: Evento Player.MediaCollectionMediaRemoved
+description: El evento MediaCollectionMediaRemoved tiene lugar cuando se quita un elemento multimedia de la biblioteca local. | Evento Player.MediaCollectionMediaRemoved
 ms.assetid: a1df6faf-38dc-4f5f-8f8a-953c91ea026c
 keywords:
-- Media Player MediaCollectionMediaRemoved de eventos de Windows
-- Evento MediaCollectionMediaRemoved de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento MediaCollectionMediaRemoved
+- Evento MediaCollectionMediaRemoved Reproductor de Windows Media
+- Evento MediaCollectionMediaRemoved Reproductor de Windows Media clase , Player
+- Clase player Reproductor de Windows Media evento , MediaCollectionMediaRemoved
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72af5fe4c5e90effeb34745ea71e3edb457da357
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 009432040deace140dd3cf4d7d7da1246c0a38dbd9fc0da028832af137cefa83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572855"
 ---
-# <a name="playermediacollectionmediaremoved-event"></a>Evento Player. MediaCollectionMediaRemoved
+# <a name="playermediacollectionmediaremoved-event"></a>Evento Player.MediaCollectionMediaRemoved
 
-El evento MediaCollectionMediaRemoved se produce cuando se quita un elemento multimedia de la biblioteca local.
+El evento MediaCollectionMediaRemoved tiene lugar cuando se quita un elemento multimedia de la biblioteca local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Player.MediaCollectionMediaRemoved(
 *pdispMedia* 
 </dt> <dd>
 
-Objeto **multimedia** que se ha quitado.
+**Objeto** multimedia que se quitó.
 
 </dd> </dl>
 
@@ -53,24 +53,24 @@ Objeto **multimedia** que se ha quitado.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este evento solo se produce para la biblioteca local.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Este evento solo se produce para la biblioteca local.
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. mediaCollection**](player-mediacollection.md)
+[**Player.mediaCollection**](player-mediacollection.md)
 </dt> </dl>
 
  

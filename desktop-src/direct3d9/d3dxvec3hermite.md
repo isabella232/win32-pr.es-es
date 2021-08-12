@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fd45851108d3700446a2b7f27aa00a4cc61ca39b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b35c99ac6127f1d0b74598fd53465709b45f533c6fbcbd7b898bb572fcc6a941
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297777"
 ---
 # <a name="d3dxvec3hermite-function-d3dx9mathh"></a>Función D3DXVec3Hermite (D3dx9math.h)
 
@@ -107,11 +107,11 @@ Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado d
 
 ## <a name="remarks"></a>Comentarios
 
-La **función D3DXVec3Hermite** interpola de (positionA, tangentA) a (positionB, tangentB) mediante la interpolación spline de Hermite.
+La **función D3DXVec3Hermite** interpola de (positionA, tangentA) a (positionB, tangentB) mediante la interpolación spline hermite.
 
-La interpolación spline es una generalización de la spline de facilidad de entrada y de salida. La rampa es una función de preguntas y respuestas con las siguientes propiedades.
+La interpolación spline es una generalización de la spline de facilidad de entrada y salida. La rampa es una función de preguntas y respuestas con las siguientes propiedades.
 
-Q(s) = Asntes + Bsmientos + Cs + D (y, por lo tanto, Q's) = 3Asntes + 2B + C)
+Q(s) = Asntes + Bs ' + Cs + D (y, por lo tanto, Q's) = 3Asmiento + 2B + C)
 
 a) Q(0) = v1, por lo que Q'(0) = t1
 
@@ -143,7 +143,7 @@ Q(s) = (2v1 - 2v2 + t2 + t1)s así + (3v2 - 3v1 - 2t1 - t2)sntes + t1 + v1
 
 Que se puede reorganizar como:
 
-Q(s) = (2sntes - 3s): + 1)v1 + (-2sntes + 3sntes)v2 + (sntes - 2s): + s)t1 + (sntes - s): t2
+Q(s) = (2sntes - 3s además de 1)v1 + (-2sntes + 3s): v2 + (sntes - 2s- s)t1 + (sntes - sntes)t2
 
 Las curvas spline de Hermite son útiles para controlar la animación porque la curva recorre todos los puntos de control. Además, dado que la posición y la tangente se especifican explícitamente en los extremos de cada segmento, es fácil crear una curva continua C2 siempre que se asegúrese de que la posición inicial y la tangente coinciden con los valores finales del último segmento.
 

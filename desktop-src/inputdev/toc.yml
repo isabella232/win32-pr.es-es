@@ -1,4 +1,4 @@
-- name: Entrada de mouse y teclado
+- name: Entrada de teclado y mouse
   href: user-input.md
   items:
     - name: Entrada de teclado
@@ -6,7 +6,7 @@
       items:
         - name: Acerca de la entrada de teclado
           href: about-keyboard-input.md
-        - name: Usar la entrada del teclado
+        - name: Uso de la entrada de teclado
           href: using-keyboard-input.md
         - name: Referencia de entrada de teclado
           href: keyboard-input-reference.md
@@ -134,14 +134,14 @@
             - name: Constantes de entrada de teclado
               href: keyboard-input-constants.md
               items:
-                - name: Códigos de Virtual-Key
+                - name: Virtual-Key de datos
                   href: virtual-key-codes.md
     - name: Entrada del mouse
       href: mouse-input.md
       items:
         - name: Acerca de la entrada del mouse
           href: about-mouse-input.md
-        - name: Usar la entrada del mouse
+        - name: Uso de la entrada del mouse
           href: using-mouse-input.md
         - name: Referencia de entrada del mouse
           href: mouse-input-reference.md
@@ -171,7 +171,7 @@
                   href: /windows/win32/api/winuser/nf-winuser-swapmousebutton
                 - name: TrackMouseEvent
                   href: /windows/win32/api/winuser/nf-winuser-trackmouseevent
-            - name: Macros de entrada de mouse
+            - name: Macros de entrada del mouse
               href: mouse-input-macros.md
               items:
                 - name: GET_APPCOMMAND_LPARAM
@@ -272,7 +272,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-mousemovepoint
                 - name: TRACKMOUSEEVENT
                   href: /windows/win32/api/winuser/ns-winuser-trackmouseevent
-    - name: Entrada sin formato
+    - name: Entrada sin procesar
       href: raw-input.md
       items:
         - name: Acerca de la entrada sin formato
@@ -282,7 +282,7 @@
         - name: Referencia de entrada sin formato
           href: raw-input-reference.md
           items:
-            - name: Funciones de entrada sin formato
+            - name: Funciones de entrada sin procesar
               href: raw-input-functions.md
               items:
                 - name: DefRawInputProc
@@ -299,21 +299,21 @@
                   href: /windows/win32/api/winuser/nf-winuser-getregisteredrawinputdevices
                 - name: RegisterRawInputDevices
                   href: /windows/win32/api/winuser/nf-winuser-registerrawinputdevices
-            - name: Macros de entrada sin formato
+            - name: Macros de entrada sin procesar
               href: raw-input-macros.md
               items:
                 - name: GET_RAWINPUT_CODE_WPARAM
                   href: /windows/win32/api/winuser/nf-winuser-get_rawinput_code_wparam
                 - name: NEXTRAWINPUTBLOCK
                   href: /windows/win32/api/winuser/nf-winuser-nextrawinputblock
-            - name: Notificaciones de entrada sin formato
+            - name: Notificaciones de entrada sin procesar
               href: raw-input-notifications.md
               items:
                 - name: WM_INPUT
                   href: wm-input.md
                 - name: WM_INPUT_DEVICE_CHANGE
                   href: wm-input-device-change.md
-            - name: Estructuras de entrada sin formato
+            - name: Estructuras de entrada sin procesar
               href: raw-input-structures.md
               items:
                 - name: RAWHID

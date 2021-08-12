@@ -1,9 +1,9 @@
 ---
-title: métodos idcompositioncolormatrixeffect SetMatrixElement (Dcomp. h)
+title: Métodos de SetMatrixElement idcompositioncolormatrixeffect (Dcomp.h)
 description: Establece un elemento de la matriz de colores.
 ms.assetid: 47fd4fa3-d10f-7750-c7ef-fd03e8cf933a
 keywords:
-- Métodos SetMatrixElement DirectComposition
+- Métodos de SetMatrixElement DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d7d98e851743b9046947b27d1869d8810f4afc58
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad9be35c186c5ef72dc685c032e9c131aa961297106b2d25f3f4add2fa2eb12d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281945"
 ---
-# <a name="idcompositioncolormatrixeffectsetmatrixelement-methods"></a>idcompositioncolormatrixeffect:: SetMatrixElement (métodos)
+# <a name="idcompositioncolormatrixeffectsetmatrixelement-methods"></a>Métodos idcompositioncolormatrixeffect::SetMatrixElement
 
 Establece un elemento de la matriz de colores.
 
@@ -40,11 +40,11 @@ Establece un elemento de la matriz de colores.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

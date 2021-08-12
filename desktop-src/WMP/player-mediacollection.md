@@ -1,9 +1,9 @@
 ---
-title: Player. mediaCollection
+title: Player.mediaCollection
 description: La propiedad mediaCollection recupera el objeto MediaCollection.
 ms.assetid: fbcf23db-2a36-4c3f-9d5d-628b604d1803
 keywords:
-- Media Player de Windows Player. mediaCollection
+- Player.mediaCollection Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,41 +14,41 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa79b455abec6fbdd5c7b4eda0eca327bd57f81f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea536f8938e5ab438312980f03536d7930ddcea45f01c7250c08a5c9665b1f45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573172"
 ---
-# <a name="playermediacollection"></a>Player. mediaCollection
+# <a name="playermediacollection"></a>Player.mediaCollection
 
-La propiedad **mediaCollection** recupera el objeto **mediaCollection** .
+La **propiedad mediaCollection** recupera el **objeto MediaCollection.**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor* . **mediaCollection**
+*player* . **mediaCollection**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto **MediaCollection** de solo lectura.
+Esta propiedad es un objeto **MediaCollection de** solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

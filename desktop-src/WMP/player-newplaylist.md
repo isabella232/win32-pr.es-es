@@ -1,11 +1,11 @@
 ---
-title: Player. reproducción (método)
-description: El método reproducción crea un nuevo objeto de lista de reproducción.
+title: Método Player.newPlaylist
+description: El método newPlaylist crea un nuevo objeto Playlist.
 ms.assetid: a566006e-8647-4c51-ab77-762728f25a30
 keywords:
-- método reproducción de Windows Media Player
-- método reproducción Windows Media Player, clase Player
-- Clase Player Media Player Windows, método reproducción
+- Método newPlaylist Reproductor de Windows Media
+- Método newPlaylist Reproductor de Windows Media , Clase Player
+- Clase player Reproductor de Windows Media método , newPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa65ae4b453fe919116a33c5ee86b14ba353f681
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 380d1f2751487f5c648b154852be625a5c93103851541dea7e2488ba75080ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572835"
 ---
-# <a name="playernewplaylist-method"></a>Player. reproducción (método)
+# <a name="playernewplaylist-method"></a>Método Player.newPlaylist
 
-El método **reproducción** crea un nuevo objeto de **lista de reproducción** .
+El **método newPlaylist** crea un nuevo objeto **Playlist.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,44 +43,44 @@ retVal = Player.newPlaylist(
 
 <dl> <dt>
 
-*nombre* \[ de de\]
+*name* \[ En\]
 </dt> <dd>
 
 **Cadena** que contiene el nombre de la nueva lista de reproducción.
 
 </dd> <dt>
 
-*Dirección URL* \[ de\]
+*DIRECCIÓN URL* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene la dirección URL de la lista de reproducción del metarchivo de Windows Media para crear el objeto de **lista de reproducción** .
+**Cadena** que contiene la dirección URL de la lista de Windows de metarchivo multimedia con la que crear el objeto **Playlist.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto de **lista de reproducción** .
+Este método devuelve un objeto **Playlist.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el parámetro de *dirección URL* se establece en null o en "" (cadena vacía), se creará un objeto de **lista de reproducción** vacío. Si el parámetro *Name* se establece en "", se utiliza el nombre del metarchivo.
+Si el *parámetro url* se establece en null o "" (cadena vacía), se creará un objeto **De lista** de reproducción vacío. Si el *parámetro name* se establece en "", se usa el nombre del metarchivo.
 
-La nueva lista de reproducción creada con este método no se agrega a la biblioteca. Para agregar una nueva lista de reproducción a la biblioteca, use *PlaylistCollection*. **importPlaylist** o *PlaylistCollection*. **reproducción**. Los espacios iniciales o finales del nombre de la lista de reproducción se quitan automáticamente cuando se agregan a la biblioteca.
+La nueva lista de reproducción creada con este método no se agrega a la biblioteca. Para agregar una nueva lista de reproducción a la biblioteca, use *PlaylistCollection*. **importPlaylist** o *PlaylistCollection*. **newPlaylist**. Los espacios iniciales o finales del nombre de la lista de reproducción se quitan automáticamente cuando se agrega a la biblioteca.
 
-Dado que la biblioteca permite varias listas de reproducción con el mismo nombre, es posible que desee comprobar la presencia de una lista de reproducción con un nombre determinado antes de agregar una nueva.
+Dado que la biblioteca permite varias listas de reproducción con el mismo nombre, es posible que quiera comprobar la presencia de una lista de reproducción con un nombre determinado antes de agregar una nueva.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -90,10 +90,10 @@ Dado que la biblioteca permite varias listas de reproducción con el mismo nombr
 [**PlaylistCollection.importPlaylist**](playlistcollection-importplaylist.md)
 </dt> <dt>
 
-[**PlaylistCollection. reproducción**](playlistcollection-newplaylist.md)
+[**PlaylistCollection.newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**Metaarchivos de Windows Media**](windows-media-metafiles.md)
+[**Windows Metarchivos multimedia**](windows-media-metafiles.md)
 </dt> </dl>
 
  

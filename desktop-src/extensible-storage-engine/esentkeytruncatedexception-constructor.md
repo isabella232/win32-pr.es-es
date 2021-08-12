@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentKeyTruncatedException'
-title: Constructor de EsentKeyTruncatedException
+description: 'Más información sobre: Constructor EsentKeyTruncatedException'
+title: Constructor EsentKeyTruncatedException
 TOCTitle: 'EsentKeyTruncatedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentKeyTruncatedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeytruncatedexception.esentkeytruncatedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 26571c95c810b9b89005a212f35d265c5968ce7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aae4fd709cbb956e8e59776bcf242f87c9deb1ee4fd53b653a4d9a71f5019d90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118264758"
 ---
-# <a name="esentkeytruncatedexception-constructor"></a>Constructor de EsentKeyTruncatedException
+# <a name="esentkeytruncatedexception-constructor"></a>Constructor EsentKeyTruncatedException
 
 Inicializa una nueva instancia de la clase EsentKeyTruncatedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentKeyTruncatedException()
 
 [Miembros de EsentKeyTruncatedException](./esentkeytruncatedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

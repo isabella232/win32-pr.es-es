@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentResource. ResourceWasAllocated (método)'
-title: EsentResource. ResourceWasAllocated, método
+description: 'Más información sobre: Método EsentResource.ResourceWasAllocated'
+title: Método EsentResource.ResourceWasAllocated
 TOCTitle: 'ResourceWasAllocated method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.ResourceWasAllocated
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.resourcewasallocated(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 19556ea7153f1a8a4580e2365b772efe6c02d89b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 369cac35cec9b218eb1de668f44098394a4df0670660c5d30d01fdd8e2ab802e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118260720"
 ---
-# <a name="esentresourceresourcewasallocated-method"></a>EsentResource. ResourceWasAllocated, método
+# <a name="esentresourceresourcewasallocated-method"></a>Método EsentResource.ResourceWasAllocated
 
 Lo llama una subclase cuando se asigna un recurso.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ protected void ResourceWasAllocated()
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

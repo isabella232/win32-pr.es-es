@@ -1,6 +1,6 @@
 ---
 title: Elementos de esquema eaptlsuserpropertiesv1
-description: Obtenga información sobre los elementos de esquema eaptlsuserpropertiesv1. Estos elementos son EapType, UserCert (EapType) y username.
+description: Obtenga información sobre los elementos de esquema eaptlsuserpropertiesv1. Estos elementos son EapType, UserCert (EapType) y Username.
 ms.assetid: b83eaa2e-76fd-43ed-94df-68d72664d98b
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 60a700f27652bd1c522a585a989300ea8817df98
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 1bc0c348b7c9b383f5e2caa0b893460b79cb622bac40c3bc57049fca1f4e9ab5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273408"
 ---
 # <a name="eaptlsuserpropertiesv1-schema-elements"></a>Elementos de esquema eaptlsuserpropertiesv1
 
-El esquema [eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md) se compone de los siguientes elementos de esquema.
+El [esquema eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md) se forma de los siguientes elementos de esquema.
 
 -   [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md)
 -   [**UserCert (EapType)**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md)
@@ -34,9 +34,9 @@ El esquema [eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md) se c
 [Esquema eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

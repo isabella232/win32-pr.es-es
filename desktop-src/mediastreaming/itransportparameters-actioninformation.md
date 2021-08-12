@@ -1,11 +1,11 @@
 ---
-title: ITransportParameters ActionInformation, método
-description: Obtiene una interfaz IMediaRendererActionInformation que proporciona información sobre los métodos que se pueden invocar actualmente en el DMR.
+title: Método ActionInformation de ITransportParameters
+description: Obtiene una interfaz IMediaRendererActionInformation que proporciona información sobre qué métodos se pueden invocar actualmente en la DMR.
 ms.assetid: 3EEB94E1-B6BC-4111-AEF1-D5724BD0A2E7
 keywords:
-- Método ActionInformation API de streaming de multimedia
-- Método ActionInformation API de streaming de multimedia, interfaz ITransportParameters
-- Interfaz ITransportParameters API de streaming de multimedia, método ActionInformation
+- Método ActionInformation de Media Streaming API
+- Método ActionInformation de Media Streaming API, interfaz ITransportParameters
+- ITransportParameters interface Media Streaming API , método ActionInformation
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b194da50e71402b6af69eb4cc9d67902e8ae89a0
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 551612fcaffb9379823efea15f29ed9feba1ff3d0c5af6e7271b61ad9d6036f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235860"
 ---
-# <a name="itransportparametersactioninformation-method"></a>ITransportParameters:: ActionInformation (método)
+# <a name="itransportparametersactioninformation-method"></a>ITransportParameters::ActionInformation (método)
 
-Obtiene una interfaz [**IMediaRendererActionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation) que proporciona información sobre los métodos que se pueden invocar actualmente en el DMR.
+Obtiene una interfaz [**IMediaRendererActionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation) que proporciona información sobre qué métodos se pueden invocar actualmente en la DMR.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,22 +41,22 @@ HRESULT ActionInformation(
 
 <dl> <dt>
 
-*valor* \[ de out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Recibe una referencia a una interfaz [**IMediaRendererActionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation) .
+Recibe una referencia a una [**interfaz IMediaRendererActionInformation.**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

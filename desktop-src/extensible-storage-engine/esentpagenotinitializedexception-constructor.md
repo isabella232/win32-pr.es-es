@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentPageNotInitializedException'
-title: Constructor de EsentPageNotInitializedException
+description: 'Más información sobre: Constructor EsentPageNotInitializedException'
+title: Constructor EsentPageNotInitializedException
 TOCTitle: 'EsentPageNotInitializedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentPageNotInitializedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentpagenotinitializedexception.esentpagenotinitializedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0e71eb0b92c47e34ca26ec7f7438e4bdc7a7eaf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 233aff9487e7b6e69ed2eb507cada944870843e3483429f876dba5585ecc2812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118261222"
 ---
-# <a name="esentpagenotinitializedexception-constructor"></a>Constructor de EsentPageNotInitializedException
+# <a name="esentpagenotinitializedexception-constructor"></a>Constructor EsentPageNotInitializedException
 
 Inicializa una nueva instancia de la clase EsentPageNotInitializedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentPageNotInitializedException()
 
 [Miembros de EsentPageNotInitializedException](./esentpagenotinitializedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

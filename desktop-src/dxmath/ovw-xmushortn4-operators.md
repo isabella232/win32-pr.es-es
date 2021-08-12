@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUSHORTN4 expone los siguientes operadores.
+description: La estructura XMUSHORTN4 expone los operadores siguientes.
 ms.assetid: ed6ebfb8-d988-4fdf-917d-08e29214c117
 title: Operadores XMUSHORTN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f850434a80a264db8d5e71825cde666ed41c19bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 102e0c3aa4fb2bdbb0e3aa0ac9811edf1999a04e13d6c2109a5d1d645a6c5623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277047"
 ---
 # <a name="xmushortn4-operators"></a>Operadores XMUSHORTN4
 
-La estructura [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) expone los siguientes operadores.
+La [**estructura XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-direc
 
 | Métodos                                                 | Descripción                                                                                                              |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmushortn4-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMUSHORTN4` a la instancia actual de `XMUSHORTN4` . <br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmushortn4-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMUSHORTN4` a la instancia actual de `XMUSHORTN4` . <br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-direc
 
 <dl> <dt>
 
-[Extensiones de XMUSHORTN4](ovw-xmushortn4-extensions.md)
+[Extensiones XMUSHORTN4](ovw-xmushortn4-extensions.md)
 </dt> <dt>
 
 **Referencia**

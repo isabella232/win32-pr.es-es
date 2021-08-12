@@ -1,19 +1,19 @@
 ---
-description: Permite especificar el nombre de un archivo de textura que se va a aplicar a una malla o a una esfera. Esta plantilla debe aparecer dentro de un objeto material.
+description: Permite especificar el nombre de archivo de una textura que se va a aplicar a una malla o una cara. Esta plantilla debe aparecer dentro de un objeto de material.
 ms.assetid: 3b27d58d-9c85-4c68-81a9-1ba9c3c0743e
 title: TextureFilename
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 122eefb1f23083e7d2ebe4005985134840ab8777
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2ce19a2ca528a5223b0b1d9845b277e9a4682a6493070321cb745ad8f47baee3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118290573"
 ---
 # <a name="texturefilename"></a>TextureFilename
 
-Permite especificar el nombre de un archivo de textura que se va a aplicar a una malla o a una esfera. Esta plantilla debe aparecer dentro de un objeto material.
+Permite especificar el nombre de archivo de una textura que se va a aplicar a una malla o una cara. Esta plantilla debe aparecer dentro de un objeto de material.
 
 ``` syntax
 template TextureFilename 
@@ -23,7 +23,7 @@ template TextureFilename
 } 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,18 +4,18 @@ description: Define constantes que especifican la agrupación de segmentos de me
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: ce94d5f806879ea84f64c88d3a62b074a5c5415b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2474f8084035ddb67f7081ea45cd1d1743c053415a7bbade68ecff3d4527636c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105720152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279627"
 ---
 # <a name="dxcoresegmentgroup-enum"></a>Enumeración DXCoreSegmentGroup
 
 Define constantes que especifican la agrupación de segmentos de memoria de un adaptador.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum class DXCoreSegmentGroup : uint32_t
@@ -29,12 +29,12 @@ enum class DXCoreSegmentGroup : uint32_t
 
 ### <a name="local"></a>Local
 
-Especifica una agrupación de segmentos que se considera que son locales para el adaptador y representa la memoria más rápida disponible para la GPU. La aplicación debe tener como destino el grupo de segmentos local como el tamaño de destino de su espacio de trabajo.
+Especifica una agrupación de segmentos que se considera local para el adaptador y representa la memoria más rápida disponible para la GPU. La aplicación debe tener como destino el grupo de segmentos local como el tamaño de destino de su conjunto de trabajo.
 
-### <a name="nonlocal"></a>No locales
+### <a name="nonlocal"></a>NonLocal
 
-Especifica una agrupación de segmentos que se considera no local en el adaptador y puede tener un rendimiento más lento que el grupo de segmentos local.
+Especifica una agrupación de segmentos que se considera no local para el adaptador y puede tener un rendimiento más lento que el grupo de segmentos local.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Referencia de DXCore](../dxcore-reference.md), [uso de DXCore para enumerar los adaptadores](../dxcore-enum-adapters.md)
+[Referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

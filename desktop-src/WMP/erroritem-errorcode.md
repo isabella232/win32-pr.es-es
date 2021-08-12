@@ -1,9 +1,9 @@
 ---
-title: ErrorItem. errorCode
+title: ErrorItem.errorCode
 description: La propiedad errorCode recupera el código de error actual.
 ms.assetid: 1495ec34-0995-40c6-bfd0-f3695784e057
 keywords:
-- ErrorItem. errorCode Windows Media Player
+- ErrorItem.errorCode Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c934b83b28e510f29b84a45b48bde700968c97b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f426bbaf1092b64cdb3578cb681282c9b27d9d2e2e23a69d50f9c065353ad104
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577709"
 ---
-# <a name="erroritemerrorcode"></a>ErrorItem. errorCode
+# <a name="erroritemerrorcode"></a>ErrorItem.errorCode
 
-La propiedad **ErrorCode** recupera el código de error actual.
+La **propiedad errorCode** recupera el código de error actual.
 
 ``` syntax
 player.error.item(
@@ -33,15 +33,15 @@ player.error.item(
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe establecer la *configuración*. **enableErrorDialogs** en false si elige mostrar mensajes de error personalizados.
+Debe establecer *Configuración*. **enableErrorDialogs en** false si decide mostrar mensajes de error personalizados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *ErrorItem*. **ErrorCode** en un controlador de eventos para mostrar el código de error al usuario. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se *usa ErrorItem*. **errorCode** en un controlador de eventos para mostrar el código de error al usuario. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -67,21 +67,21 @@ document.write(message);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto ErrorItem**](erroritem-object.md)
 </dt> <dt>
 
-[**ErrorItem. errorDescription**](erroritem-errordescription.md)
+[**ErrorItem.errorDescription**](erroritem-errordescription.md)
 </dt> </dl>
 
  

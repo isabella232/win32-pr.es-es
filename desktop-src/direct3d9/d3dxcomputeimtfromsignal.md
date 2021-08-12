@@ -1,7 +1,7 @@
 ---
-description: Calcula los IMT por triángulo a partir de una señal personalizada especificada por la aplicación que varía en la superficie de la malla (generalmente con una frecuencia mayor que los datos del vértice). La señal se evalúa mediante una función de devolución de llamada especificada por el usuario.
+description: Calcula las IMT por triángulo a partir de una señal personalizada especificada por la aplicación que varía en función de la superficie de la malla (generalmente con una frecuencia mayor que los datos de vértice). La señal se evalúa a través de una función de devolución de llamada especificada por el usuario.
 ms.assetid: f1d96021-0b7d-43e6-b51b-71a90d2f5ad8
-title: Función D3DXComputeIMTFromSignal (D3DX9Mesh. h)
+title: Función D3DXComputeIMTFromSignal (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 979304a350c226a9406e62896bb84492d8046e74
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d645e12f7159963f9b9bc5abeb960aee0bac2282537c482465be3ea08690181
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299417"
 ---
-# <a name="d3dxcomputeimtfromsignal-function"></a>D3DXComputeIMTFromSignal función)
+# <a name="d3dxcomputeimtfromsignal-function"></a>Función D3DXComputeIMTFromSignal
 
-Calcula los IMT por triángulo a partir de una señal personalizada especificada por la aplicación que varía en la superficie de la malla (generalmente con una frecuencia mayor que los datos del vértice). La señal se evalúa mediante una función de devolución de llamada especificada por el usuario.
+Calcula las IMT por triángulo a partir de una señal personalizada especificada por la aplicación que varía en función de la superficie de la malla (generalmente con una frecuencia mayor que los datos de vértice). La señal se evalúa a través de una función de devolución de llamada especificada por el usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,43 +49,43 @@ HRESULT D3DXComputeIMTFromSignal(
 
 <dl> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Un puntero a una malla de entrada (vea [**ID3DXMesh**](id3dxmesh.md)) que contiene la geometría del objeto para calcular el IMT.
+Puntero a una malla de entrada (vea [**ID3DXMesh)**](id3dxmesh.md)que contiene la geometría del objeto para calcular el IMT.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ de\]
+*dwTextureIndex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de coordenadas de textura basado en cero que identifica el conjunto de coordenadas de textura que se va a usar.
+Índice de coordenadas de textura de base cero que identifica qué conjunto de coordenadas de textura usar.
 
 </dd> <dt>
 
-*uSignalDimension* \[ de\]
+*uSignalDimension* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de componentes de cada punto de datos de la señal.
+Número de componentes de cada punto de datos de la señal.
 
 </dd> <dt>
 
-*fMaxUVDistance* \[ de\]
+*fMaxUVDistance* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Distancia máxima entre los vértices; el algoritmo continúa subdividiendo hasta que la distancia entre todos los vértices es menor o igual que fMaxUVDistance.
+Distancia máxima entre vértices; El algoritmo continúa subdividiendo hasta que la distancia entre todos los vértices es menor o igual que fMaxUVDistance.
 
 </dd> <dt>
 
-*dwOptions* \[ de\]
+*dwOptions* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -94,30 +94,30 @@ Opciones de ajuste de textura. Se trata de una combinación de una o varias [**m
 
 </dd> <dt>
 
-*pSignalCallback* \[ de\]
+*pSignalCallback* \[ En\]
 </dt> <dd>
 
 Tipo: **[LPD3DXIMTSIGNALCALLBACK](lpd3dximtsignalcallback.md)**
 
-Puntero a una función evaluadora proporcionada por el usuario, que se utilizará para calcular el valor de la señal en coordenadas U, V arbitrarias. La función sigue el prototipo de [LPD3DXIMTSIGNALCALLBACK](lpd3dximtsignalcallback.md).
+Puntero a una función de evaluador proporcionada por el usuario, que se usará para calcular el valor de señal en coordenadas U,V arbitrarias. La función sigue el prototipo de [LPD3DXIMTSIGNALCALLBACK](lpd3dximtsignalcallback.md).
 
 </dd> <dt>
 
-*pUserData* \[ de\]
+*pUserData* \[ En\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* VOID**
 
-Un puntero a un valor definido por el usuario que se pasa a la función de devolución de llamada de la señal. Lo suele usar una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
+Puntero a un valor definido por el usuario que se pasa a la función de devolución de llamada de señal. Normalmente lo usa una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
 
 </dd> <dt>
 
 *pStatusCallback* 
 </dt> <dd>
 
-Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
+Tipo: **[LPD3DRVALLASCB](lpd3dxuvatlascb.md)**
 
-Un puntero a una función de devolución de llamada para supervisar el progreso del cálculo de IMT.
+Puntero a una función de devolución de llamada para supervisar el progreso del cálculo de IMT.
 
 </dd> <dt>
 
@@ -126,16 +126,16 @@ Un puntero a una función de devolución de llamada para supervisar el progreso 
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntero a una variable definida por el usuario que se pasa a la función de devolución de llamada de estado. Lo suele usar una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
+Puntero a una variable definida por el usuario que se pasa a la función de devolución de llamada de estado. Normalmente lo usa una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
 
 </dd> <dt>
 
-*ppIMTData* \[ enuncia\]
+*ppIMTData* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Un puntero al búfer (vea [**ID3DXBuffer**](id3dxbuffer.md)) que contiene la matriz IMT devuelta. Esta matriz se puede proporcionar como entrada para las [funciones de UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) de D3DX a fin de dar prioridad a la asignación de espacio de textura en la parametrización de textura.
+Puntero al búfer (vea [**ID3DXBuffer**](id3dxbuffer.md)) que contiene la matriz IMT devuelta. Esta matriz se puede proporcionar como entrada a las funciones [D3DX UVAtlas para](dx9-graphics-reference-d3dx-functions-uvatlas.md) priorizar la asignación de espacio de textura en la parametrización de textura.
 
 </dd> </dl>
 
@@ -143,11 +143,11 @@ Un puntero al búfer (vea [**ID3DXBuffer**](id3dxbuffer.md)) que contiene la mat
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK; de lo contrario, el valor es D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK; de lo contrario, el valor es D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función requiere que la malla de entrada contenga una asignación de textura de señal a malla (es decir, coordenadas de textura). Permite al usuario definir una señal arbitrariamente a través de la superficie de la malla.
+Esta función requiere que la malla de entrada contenga una asignación de textura de señal a malla (es decir, coordenadas de textura). Permite al usuario definir una señal arbitrariamente sobre la superficie de la malla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -155,19 +155,19 @@ Esta función requiere que la malla de entrada contenga una asignación de textu
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
+[Funciones UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
 </dt> <dt>
 
-[Usar UVAtlas (Direct3D 9)](using-uvatlas.md)
+[Uso de UVAtlas (Direct3D 9)](using-uvatlas.md)
 </dt> </dl>
 
  

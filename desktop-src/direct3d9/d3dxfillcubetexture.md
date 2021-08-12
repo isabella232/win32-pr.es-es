@@ -1,7 +1,7 @@
 ---
-description: Utiliza una función proporcionada por el usuario para rellenar cada textura de cada nivel de MIP de una textura de cubo determinada.
+description: Usa una función proporcionada por el usuario para rellenar cada texel de cada nivel de mip de una textura de cubo determinada.
 ms.assetid: 0390a1b6-6675-42e1-bc45-65dd7b2d83c5
-title: Función D3DXFillCubeTexture (D3dx9tex. h)
+title: Función D3DXFillCubeTexture (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9fda70aa42d6982c40eb1ec926b6823e7ac7d997
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2fe82650aba639d0cd506bcdf86019a316890e7312e9bd008f0d16542af09de3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298553"
 ---
-# <a name="d3dxfillcubetexture-function"></a>D3DXFillCubeTexture función)
+# <a name="d3dxfillcubetexture-function"></a>Función D3DXFillCubeTexture
 
-Utiliza una función proporcionada por el usuario para rellenar cada textura de cada nivel de MIP de una textura de cubo determinada.
+Usa una función proporcionada por el usuario para rellenar cada texel de cada nivel de mip de una textura de cubo determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ HRESULT D3DXFillCubeTexture(
 
 <dl> <dt>
 
-*pTexture* \[ enuncia\]
+*pTexture* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DCUBETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9)**
 
-Puntero a una interfaz [**IDirect3DCubeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) que representa la textura rellenada.
+Puntero a una [**interfaz IDirect3DCubeTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) que representa la textura rellena.
 
 </dd> <dt>
 
-*pFunction* \[ de\]
+*pFunction* \[ En\]
 </dt> <dd>
 
 Tipo: **[LPD3DXFILL3D](lpd3dxfill3d.md)**
 
-Puntero a una función evaluadora proporcionada por el usuario, que se utilizará para calcular el valor de cada textura. La función sigue el prototipo de [LPD3DXFILL3D](lpd3dxfill3d.md).
+Puntero a una función de evaluador proporcionada por el usuario, que se usará para calcular el valor de cada elemento de textura. La función sigue el prototipo de [LPD3DXFILL3D](lpd3dxfill3d.md).
 
 </dd> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
@@ -73,11 +73,11 @@ Puntero a un bloque arbitrario de datos definidos por el usuario. Este puntero s
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es un ejemplo en el que se crea una función denominada ColorCubeFill, que se basa en D3DXFillCubeTexture.
+Este es un ejemplo que crea una función denominada ColorCubeFill, que se basa en D3DXFillCubeTexture.
 
 
 ```
@@ -104,12 +104,12 @@ if (FAILED (hr = D3DXFillCubeTexture (m_pTexture, ColorCubeFill, NULL)))
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

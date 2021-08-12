@@ -1,9 +1,9 @@
 ---
-title: Name (conexión) (elemento)
-description: Captura el nombre de la conexión que se está definiendo y ayuda en la identificación de varias conexiones.
+title: Elemento Name (Connection)
+description: Captura el nombre de la conexión que se está definiendo, lo que ayuda a identificar varias conexiones.
 ms.assetid: 649c238d-0940-4fbe-93e5-2612d95fffa7
 keywords:
-- Elemento Name de EAPHost
+- Elemento name EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6e69c35ebfb2bf263882c6fb0337fc44c609bab3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5346aff83f9a7f56907d67025ee92ec1148cff6af3f4b3a3ee917589be721ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118275193"
 ---
-# <a name="name-connection-element"></a>Name (conexión) (elemento)
+# <a name="name-connection-element"></a>Elemento Name (Connection)
 
-El elemento de **nombre (conexión)** captura el nombre de la conexión que se está definiendo y ayuda en la identificación de varias conexiones.
+El **elemento Name (Connection)** captura el nombre de la conexión que se está definiendo, lo que ayuda a identificar varias conexiones.
 
 ``` syntax
 <xs:element name="Name"
@@ -31,27 +31,27 @@ El elemento de **nombre (conexión)** captura el nombre de la conexión que se e
  />
 ```
 
-El elemento de **nombre** se define mediante el elemento de [**conexión**](eapconnectionpropertiesv1schema-connection-connections-element.md) .
+El **elemento Name** se define mediante el elemento [**Connection.**](eapconnectionpropertiesv1schema-connection-connections-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Conectarse**](eapconnectionpropertiesv1schema-connection-connections-element.md)
+[**Conexión**](eapconnectionpropertiesv1schema-connection-connections-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
@@ -63,7 +63,7 @@ El elemento de **nombre** se define mediante el elemento de [**conexión**](eapc
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
+[esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

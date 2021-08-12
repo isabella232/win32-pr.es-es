@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentResource. Dispose (lista de sobrecarga del método)'
-title: Lista de sobrecargas del método EsentResource. Dispose
+description: 'Más información sobre: Lista de sobrecargas del método EsentResource.Dispose'
+title: Lista de sobrecargas del método EsentResource.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentResource.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.dispose(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: a90411b937dbd4b7844837529fc19f27927bd035
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 5cb52d703caf03645a8be6f35196f12c858cdcb342f9e693cdea54b9e2b81b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118260908"
 ---
-# <a name="esentresourcedispose-method-overload-list"></a>Lista de sobrecargas del método EsentResource. Dispose
+# <a name="esentresourcedispose-method-overload-list"></a>Lista de sobrecargas del método EsentResource.Dispose
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,13 +39,13 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Desechar este objeto, liberando el recurso esent subyacente.</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Elimine este objeto y libere el recurso subyacente de Esent.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (booleano)</a></td>
-<td>Lo llama Dispose y el finalizador.</td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
+<td>Llamado por Dispose y el finalizador.</td>
 </tr>
 </tbody>
 </table>
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Event. Button
-description: El atributo Button recupera un valor que indica qué botones del mouse estaban inactivos cuando se produjo el evento.
+title: event.button
+description: El atributo button recupera un valor que indica qué botones del mouse estaban apagados cuando se produjo el evento.
 ms.assetid: 58fb1522-9946-4942-b4bf-4cff37f7dbaf
 keywords:
-- evento. Button Windows Media Player
+- event.button Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f218c0703bd2847cc0f3b7fb2091bbb02e7863e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbf9b98412630c91f0b0ffea03acf5c8f9a53043b280efdabbfffb8b972a17d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577672"
 ---
-# <a name="eventbutton"></a>Event. Button
+# <a name="eventbutton"></a>event.button
 
-El atributo **Button** recupera un valor que indica qué botones del mouse estaban inactivos cuando se produjo el evento.
+El **atributo** button recupera un valor que indica qué botones del mouse estaban apagados cuando se produjo el evento.
 
 ``` syntax
 event.button
@@ -29,16 +29,16 @@ event.button
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 
 
-| Value | Descripción                      |
+| Valor | Descripción                      |
 |-------|----------------------------------|
-| 0     | No hay botones del mouse en OFF.      |
-| 1     | El botón primario del mouse estaba inactivo.  |
-| 2     | El botón secundario del mouse estaba inactivo. |
-| 3     | Ambos botones del mouse estaban inactivos.    |
+| 0     | No había botones del mouse abajo.      |
+| 1     | El botón izquierdo del mouse estaba apagado.  |
+| 2     | El botón derecho del mouse estaba apagado. |
+| 3     | Ambos botones del mouse estaban abajo.    |
 
 
 
@@ -48,17 +48,17 @@ Este atributo es un **número** de solo lectura (**Long**).
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> </dl>
 
  

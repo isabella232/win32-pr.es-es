@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. windowlessVideo
-description: La propiedad windowlessVideo obtiene o establece un valor que indica si el control de Windows Media Player representa el vídeo en el modo sin ventanas.
+title: Propiedad AxWindowsMediaPlayer.windowlessVideo
+description: La propiedad windowlessVideo obtiene o establece un valor que indica si el control Reproductor de Windows Media representa vídeo en modo sin ventanas.
 ms.assetid: 70386aae-cd30-405d-90dd-9b3fa63dad17
 keywords:
-- propiedades de windowlessVideo Media Player de Windows
-- propiedad windowlessVideo Media Player de Windows, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad windowlessVideo
+- windowlessVideo, propiedad Reproductor de Windows Media
+- propiedad windowlessVideo Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media propiedad , windowlessVideo
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d22ecc0f39b03201809877fe8ebc667d62e16d0b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a63a7246e730f73bd6d6f27111112a3db2029e3b53c80569e2e013771da6708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581525"
 ---
-# <a name="axwindowsmediaplayerwindowlessvideo-property"></a>Propiedad AxWindowsMediaPlayer. windowlessVideo
+# <a name="axwindowsmediaplayerwindowlessvideo-property"></a>Propiedad AxWindowsMediaPlayer.windowlessVideo
 
-La propiedad windowlessVideo obtiene o establece un valor que indica si el control de Windows Media Player representa el vídeo en el modo sin ventanas.
+La propiedad windowlessVideo obtiene o establece un valor que indica si el control Reproductor de Windows Media representa vídeo en modo sin ventanas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,29 +46,29 @@ Public Property windowlessVideo As System.Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un valor System. Boolean que indica si el control de Media Player de Windows representa el vídeo en modo sin ventanas. El valor predeterminado es false.
+Valor System.Boolean que indica si el control Reproductor de Windows Media representa el vídeo en modo sin ventanas. El valor predeterminado es false.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, un control incrustado de Windows Media Player representa el vídeo en su propia ventana dentro del área cliente. Cuando **windowlessVideo** se establece en true, el objeto de Media Player de Windows representa el vídeo directamente en el área de cliente, de modo que puede aplicar efectos especiales o capas del vídeo con texto.
+De forma predeterminada, un control Reproductor de Windows Media integrado representa el vídeo en su propia ventana dentro del área cliente. Cuando **windowlessVideo** está establecido en true, el objeto Reproductor de Windows Media representa el vídeo directamente en el área cliente, por lo que puede aplicar efectos especiales o aplicar capas de texto al vídeo.
 
-En Windows Vista, la representación de vídeo en el modo sin ventanas puede degradar el rendimiento.
+En Windows Vista, la representación de vídeo en modo sin ventanas puede degradar el rendimiento.
 
-La obtención de un valor para esta propiedad no es compatible con Netscape Navigator. Establecer un valor para esta propiedad en Netscape Navigator puede producir resultados inesperados.
+No se admite la obtención de un valor para esta propiedad en Netscape Navigator. Establecer un valor para esta propiedad en Netscape Navigator puede producir resultados inesperados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

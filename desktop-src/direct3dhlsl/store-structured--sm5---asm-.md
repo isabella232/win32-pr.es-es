@@ -1,23 +1,23 @@
 ---
-title: store_structured (SM5-ASM)
-description: Escritura de acceso aleatorio de componentes de 1-4 32 bits en una vista de acceso desordenado de búfer estructurado (UAV).
+title: store_structured (sm5 - asm)
+description: Escritura de acceso aleatorio de componentes de 1 a 4 de 32 bits en una vista de acceso desordenado (UAV) de búfer estructurado.
 ms.assetid: 8080B2CA-5BDA-4F01-8B2B-B85BDD58C5AF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5890d30fac57923365f0bdea89fcce55f7922c7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 6a220fca330ba4198669245f0336b363c448067613e3f21fce44c9af9325bd9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104077086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285760"
 ---
-# <a name="store_structured-sm5---asm"></a>almacenamiento \_ estructurado (SM5-ASM)
+# <a name="store_structured-sm5---asm"></a>store \_ structured (sm5 - asm)
 
-Escritura de acceso aleatorio de componentes de 1-4 32 bits en una vista de acceso desordenado de búfer estructurado (UAV).
+Escritura de acceso aleatorio de componentes de 1 a 4 de 32 bits en una vista de acceso desordenado (UAV) de búfer estructurado.
 
 
 
-| Almacene la \_ \[ máscara dst0. Write estructurada, el \_ \] \[ componente dstAddress. Select, el componente \_ \] dstByteOffset \[ . Select \_ \] , src0 \[ . swizzle\] |
+| store \_ structured dst0 \[ .write mask , \_ \] dstAddress \[ .select component , \_ \] dstByteOffset \[ .select component , \_ \] src0 \[ .swjunle\] |
 |---------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,24 +28,24 @@ Escritura de acceso aleatorio de componentes de 1-4 32 bits en una vista de acce
 
 | Elemento                                                                                                                       | Descripción                                                    |
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                            | \[en \] la dirección de los resultados de la operación.<br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/>             | \[en \] la dirección en la que se va a escribir.<br/>               |
-| <span id="dstByteOffset"></span><span id="dstbyteoffset"></span><span id="DSTBYTEOFFSET"></span>*dstByteOffset*<br/> | \[en \] el índice de la estructura que se va a escribir.<br/>         |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                            | \[en \] los componentes que se van a escribir.<br/>                     |
+| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                            | \[en \] La dirección de los resultados de la operación.<br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/>             | \[en \] La dirección en la que se va a escribir.<br/>               |
+| <span id="dstByteOffset"></span><span id="dstbyteoffset"></span><span id="DSTBYTEOFFSET"></span>*dstByteOffset*<br/> | \[en \] El índice de la estructura que se escribirá.<br/>         |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                            | \[en \] Los componentes que se escribirán.<br/>                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza \* los componentes de 32 bits del componente de 1-4 escritos desde *src0* en *dst0* en la dirección de *dstAddress* y *dstByteOffset*. Sin conversión de formato.
+Esta instrucción realiza componentes de 1 a 4 componentes de 32 bits escritos de \* *src0* a *dst0* en la dirección *de dstAddress* y *dstByteOffset*. Sin conversión de formato.
 
-*dst0* debe ser UAV (u \# ). En el sombreador de cálculo, también puede ser memoria compartida de grupo de subprocesos (g \# ).
+*dst0* debe ser un UAV (u \# ). En el sombreador de proceso también puede ser memoria compartida de grupo de subprocesos (g \# ).
 
-*dstAddress* especifica el índice de la estructura que se va a escribir.
+*dstAddress* especifica el índice de la estructura que se debe escribir.
 
-La ubicación de los datos escritos es equivalente a la del pseudocódigo siguiente, que muestra el desplazamiento, la dirección, el puntero al contenido del búfer, el paso del origen y los datos almacenados linealmente.
+La ubicación de los datos escritos es equivalente al pseudocódigo siguiente, que muestra el desplazamiento, la dirección, el puntero al contenido del búfer, el intervalo del origen y los datos almacenados linealmente.
 
 ``` syntax
                     BYTE *BufferContents;             // from dst0
@@ -74,25 +74,25 @@ La ubicación de los datos escritos es equivalente a la del pseudocódigo siguie
                              WriteComponents * sizeof(INT32));
 ```
 
-En este pseudocódigo se muestra cómo funciona la operación, pero no es necesario que los datos reales se almacenen de forma lineal. Si los datos no se almacenan de forma lineal, la operación real de la instrucción debe coincidir con el comportamiento de la operación anterior.
+Este pseudocódigo muestra cómo funciona la operación, pero los datos reales no tienen que almacenarse linealmente. Si los datos no se almacenan linealmente, la operación real de la instrucción debe coincidir con el comportamiento de la operación anterior.
 
-*dst0* solo puede tener una máscara de escritura que sea uno de los siguientes:. x,. XY,. XYZ,. xyzw. La máscara de escritura determina el número de componentes de 32 bits que se van a escribir sin huecos.
+*dst0* solo puede tener una máscara de escritura que sea una de las siguientes: .x, .xy, .xyz, .xyzw. La máscara de escritura determina el número de componentes de 32 bits que se escribirán sin espacios.
 
-Fuera de los límites que se direccionan en u \# casued por *dstAddress* significa que no se escribe nada en la memoria fuera de los límites.
+El direccionamiento fuera de límites en u \# casued by *dstAddress* significa que no se escribe nada en la memoria fuera de límites.
 
-Si el *dstByteOffset*, incluido *dstWriteMask*, es lo que hace que los límites tengan acceso a usted \# , todo el contenido de la UAV se vuelve sin definir.
+Si *dstByteOffset*, incluido *dstWriteMask*, es lo que hace que el acceso fuera de los límites sea , todo el contenido de \# la UAV queda indefinido.
 
-Fuera de los límites que se dirigen a g \# (los límites de esa g concreta \# , en contraposición a toda la memoria compartida) de cualquier componente de 32 bits dado, hace que todo el contenido de toda la memoria compartida quede sin definir.
+Fuera de los límites que se direcciona en g (los límites de esa g concreta, en lugar de toda la memoria compartida) para cualquier componente de 32 bits dado hace que todo el contenido de toda la memoria compartida se vuelva \# \# indefinido.
 
-*dstByteOffset* es un argumento independiente de *dstAddress* porque suele ser un literal. Esta separación de parámetros no se ha realizado para Atomics en la memoria estructurada.
+*dstByteOffset* es un argumento independiente de *dstAddress* porque normalmente es un literal. Esta separación de parámetros no se ha realizado para atomics en la memoria estructurada.
 
-CS \_ 4 \_ 0 y CS \_ 4 \_ 1 admiten esta instrucción para UAV y TGSM.
+cs \_ 4 \_ 0 y cs \_ 4 \_ 1 admiten esta instrucción para UAV y TGSM.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -100,11 +100,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D 11,1, esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11,1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para el entorno de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -112,20 +112,20 @@ Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
-| Modelo de sombreador                                              | Compatible |
+| Modelo de sombreador                                              | Compatible. |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -135,7 +135,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

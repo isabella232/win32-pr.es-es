@@ -1,7 +1,7 @@
 ---
-description: Extrae los vectores de referencia media y de análisis de componentes principales (PCA) para un clúster determinado a partir de un búfer de datos comprimidos ID3DXPRTCompBuffer.
+description: Extrae los vectores de base de análisis de componentes principales (PCA) y medio para un clúster determinado de un búfer de datos comprimido ID3DXPRTCompBuffer.
 ms.assetid: dcb1372f-2c8f-4d18-9840-5982b2ed0d6e
-title: 'ID3DXPRTCompBuffer:: ExtractBasis (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTCompBuffer::ExtractBasis (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ebedef91c9f3d1e277a099ffd295903e9ba77ba8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 288a96a5f56bc04b245eaaf032bbcd946ed227c5b4fcad9e5d5d200dfa9903bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294044"
 ---
-# <a name="id3dxprtcompbufferextractbasis-method"></a>ID3DXPRTCompBuffer:: ExtractBasis (método)
+# <a name="id3dxprtcompbufferextractbasis-method"></a>Id3DXPRTCompBuffer::ExtractBasis (método)
 
-Extrae los vectores de referencia media y de análisis de componentes principales (PCA) para un clúster determinado a partir de un búfer de datos comprimidos [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) .
+Extrae los vectores de base de análisis de componentes principales (PCA) y medio para un clúster determinado de un búfer de datos comprimido [**ID3DXPRTCompBuffer.**](id3dxprtcompbuffer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ HRESULT ExtractBasis(
 
 <dl> <dt>
 
-*Clúster* \[ de de\]
+*Clúster* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Clúster para el que se extraerá la base.
 
@@ -53,9 +53,9 @@ Clúster para el que se extraerá la base.
 *pClusterBasis* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de datos vectoriales básicos del clúster. El tamaño de los datos FLOAT almacenados será: (1 + número de vectores PCA por clúster) \* (número de coeficientes) \* (número de canales de color)
+Puntero a una matriz de datos vectoriales base para Cluster. El tamaño de los datos FLOAT almacenados será: (1 + Número de vectores PCA por clúster) (Número de \* coeficientes) \* (Número de canales de color)
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una matriz de datos vectoriales básicos del clúster. El tamaño de l
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

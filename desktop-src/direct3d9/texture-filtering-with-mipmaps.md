@@ -1,51 +1,51 @@
 ---
-description: Un mipmap es una secuencia de texturas, cada una de las cuales es una representación de resolución progresivamente inferior de la misma imagen.
+description: Un mapa mip es una secuencia de texturas, cada una de las cuales es una representación de resolución progresivamente inferior de la misma imagen.
 ms.assetid: b64abca9-0efb-4939-849d-e75a8d0dc10b
-title: Filtrado de textura con mapas MIP (Direct3D 9)
+title: Filtrado de texturas con mapas Mip (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdc109ae6de93a26b5d5e5b90e948761e92ee92c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c68f98c1189f130261981fdd309bb3f06bcca1e66f6e23a70e141a5abfe32f4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104550430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118291646"
 ---
-# <a name="texture-filtering-with-mipmaps-direct3d-9"></a>Filtrado de textura con mapas MIP (Direct3D 9)
+# <a name="texture-filtering-with-mipmaps-direct3d-9"></a>Filtrado de texturas con mapas Mip (Direct3D 9)
 
-Un mipmap es una secuencia de texturas, cada una de las cuales es una representación de resolución progresivamente inferior de la misma imagen. El alto y el ancho de cada imagen, o nivel, en el mipmap es una potencia de dos más pequeña que el nivel anterior. Los mapas MIP no tienen por qué ser cuadrados.
+Un mapa mip es una secuencia de texturas, cada una de las cuales es una representación de resolución progresivamente inferior de la misma imagen. El alto y ancho de cada imagen, o nivel, en el mapa mip es una potencia de dos menores que el nivel anterior. Los mapas Mip no tienen que ser cuadrados.
 
-Se utiliza una imagen de mapa de bits de alta resolución para los objetos cercanos al usuario. Las imágenes de resolución inferior se usan cuando el objeto aparece más lejos. Mipmapping mejora la calidad de las texturas representadas a costa de usar más memoria.
+Se usa una imagen mipmap de alta resolución para los objetos que están cerca del usuario. Las imágenes de resolución inferior se usan a medida que el objeto aparece más lejos. Mipmapping mejora la calidad de las texturas representados a costa de usar más memoria.
 
-Direct3D representa los mipmaps como una cadena de superficies asociadas. La textura de resolución más alta está en el encabezado de la cadena y tiene el siguiente nivel de mipmap como datos adjuntos. A su vez, ese nivel tiene datos adjuntos que son el nivel siguiente del mipmap, y así sucesivamente, hasta el nivel de resolución más bajo del mipmap.
+Direct3D representa mapas MIP como una cadena de superficies adjuntas. La textura de resolución más alta está en la parte superior de la cadena y tiene el siguiente nivel de mipmap como datos adjuntos. A su vez, ese nivel tiene un dato adjunto que es el siguiente nivel del mapa mip, y así sucesivamente, hasta el nivel de resolución más bajo del mapa mip.
 
-En las ilustraciones siguientes se muestra un ejemplo de estos niveles. Las texturas de mapa de bits representan un inicio de sesión en un contenedor en un juego de primera persona 3D. Cuando se crea como un mipmap, la textura de resolución más alta es la primera en el conjunto. Cada una de las texturas posteriores en el conjunto de mipmap es más pequeña en el alto y el ancho con una potencia de 2. En este caso, el mipmap de resolución máxima es de 256 píxeles por 256 píxeles. A continuación, la textura es 128x128. La última textura de la cadena es 64 x 64.
+En las ilustraciones siguientes se muestra un ejemplo de estos niveles. Las texturas de mapa de bits representan un signo en un contenedor en un juego en 3D en primera persona. Cuando se crea como un mapa mip, la textura de resolución más alta es la primera del conjunto. Cada textura correcta del conjunto de mapas mipmap es más pequeña en alto y ancho por una potencia de 2. En este caso, el mapa mip de resolución máxima es de 256 píxeles por 256 píxeles. A continuación, la textura es 128 x 128. La última textura de la cadena es 64 x 64.
 
-Este signo tiene una distancia máxima a la que está visible. Si el usuario comienza lejos del signo, el juego muestra la textura más pequeña de la cadena de mipmap, que en este caso la textura 64 x 64.
+Este signo tiene una distancia máxima desde la que está visible. Si el usuario comienza lejos del signo, el juego muestra la textura más pequeña de la cadena mipmap, que en este caso es la textura 64x64.
 
-![Ilustración de una textura 64 x 64 de un signo de peligro](images/mip1.jpg)
+![ilustración de una textura de 64 x 64 de un signo de peligro](images/mip1.jpg)
 
-A medida que el usuario mueve el punto de vista más cerca del signo, se usan texturas progresivamente de resolución superior en la cadena de mipmap. La resolución de la siguiente ilustración es 128x128.
+A medida que el usuario mueve el punto de vista más cerca del signo, se usan texturas de mayor resolución progresivamente en la cadena mipmap. La resolución de la ilustración siguiente es 128 x 128.
 
-![Ilustración de una textura 128x128 de un signo de peligro](images/mip2.jpg)
+![ilustración de una textura de 128 x 128 de un signo de peligro](images/mip2.jpg)
 
-La textura de resolución más alta se utiliza cuando el punto de vista del usuario se encuentra en la distancia mínima permitida del signo, como se muestra en la siguiente ilustración.
+La textura de resolución más alta se usa cuando el punto de vista del usuario está a la distancia mínima posible del signo, como se muestra en la ilustración siguiente.
 
-![Ilustración de una textura 256x256 de un signo de peligro](images/mip3.jpg)
+![ilustración de una textura de 256 x 256 de un signo de peligro](images/mip3.jpg)
 
-Se trata de una forma más eficaz de simular la perspectiva de las texturas. En lugar de representar una sola textura en muchas resoluciones, es más rápido utilizar varias texturas en diferentes resoluciones.
+Se trata de una manera más eficaz de simular la perspectiva de las texturas. En lugar de representar una sola textura a muchas resoluciones, es más rápido usar varias texturas con distintas resoluciones.
 
-Direct3D puede evaluar qué textura de un conjunto de mipmap es la resolución más cercana a la salida deseada y puede asignar píxeles en su espacio de textura. Si la resolución de la imagen final se encuentra entre las resoluciones de las texturas del conjunto de mipmap, Direct3D puede examinar textura en los mapas MIP y mezclar sus valores de color juntos.
+Direct3D puede evaluar qué textura de un conjunto de mapas mip es la resolución más cercana a la salida deseada y puede asignar píxeles a su espacio de textura. Si la resolución de la imagen final se encuentra entre las resoluciones de las texturas del conjunto de mapas mip, Direct3D puede examinar los elementos de textura en ambos mapas mipmap y combinar sus valores de color.
 
-Para usar los mapas MIP, la aplicación debe crear un conjunto de mapas MIP. Las aplicaciones aplican los mipmaps seleccionando el conjunto de mipmap como primera textura en el conjunto de texturas actuales. Para obtener más información, vea [Texture blending (Direct3D 9)](texture-blending.md).
+Para usar mapas mip, la aplicación debe compilar un conjunto de mapas mip. Las aplicaciones aplican mapas mip seleccionando el conjunto de mapas mip como la primera textura del conjunto de texturas actuales. Para obtener más información, vea [Mezcla de textura (Direct3D 9).](texture-blending.md)
 
-A continuación, la aplicación debe establecer el método de filtrado que usa Direct3D para muestrear textura. El método más rápido de filtrado de mipmap es hacer que Direct3D Seleccione el textura más próximo. Use el \_ valor enumerado del punto D3DTEXF para seleccionarlo. Direct3D puede producir mejores resultados de filtrado si la aplicación usa el \_ valor enumerado lineal D3DTEXF. Esto selecciona el mipmap más cercano y, a continuación, calcula una media ponderada del textura alrededor de la ubicación en la textura a la que se asigna el píxel actual.
+A continuación, la aplicación debe establecer el método de filtrado que usa Direct3D en los elementos de textura de ejemplo. El método más rápido de filtrado de mapas mip es hacer que Direct3D seleccione el elemento de textura más cercano. Use el valor enumerado D3DTEXF \_ POINT para seleccionarlo. Direct3D puede producir mejores resultados de filtrado si la aplicación usa el valor enumerado linear \_ D3DTEXF. Esto selecciona el mapa mip más cercano y, a continuación, calcula un promedio ponderado de los elementos de textura que rodean la ubicación en la textura a la que se asigna el píxel actual.
 
-Las texturas de mipmap se usan en escenas 3D para reducir el tiempo necesario para representar una escena. También mejoran el realismo de la escena. Sin embargo, a menudo requieren grandes cantidades de memoria.
+Las texturas mipmap se usan en escenas 3D para reducir el tiempo necesario para representar una escena. También mejoran el realismo de la escena. Sin embargo, a menudo requieren grandes cantidades de memoria.
 
-## <a name="creating-a-set-of-mipmaps"></a>Crear un conjunto de mapas MIP
+## <a name="creating-a-set-of-mipmaps"></a>Creación de un conjunto de mapas Mip
 
-En el ejemplo siguiente se muestra cómo la aplicación puede llamar al método [**IDirect3DDevice9:: CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture) para crear una cadena de cinco niveles de mipmap: 256x256, 128x128, 64 x 64, 32x32 y 16x16.
+En el ejemplo siguiente se muestra cómo la aplicación puede llamar al método [**IDirect3DDevice9::CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture) para compilar una cadena de cinco niveles de mapa mip: 256x256, 128x128, 64x64, 32x32 y 16x16.
 
 
 ```
@@ -59,18 +59,18 @@ m_pD3DDevice->CreateTexture(256, 256, 5, 0, D3DFMT_R8G8B8,
 
 
 
-Los dos primeros parámetros aceptados por [**IDirect3DDevice9:: CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture) son el tamaño y el ancho de la textura de nivel superior. El tercer parámetro especifica el número de niveles de la textura. Si se establece en cero, Direct3D crea una cadena de superficies, cada una de las cuales tiene una potencia de dos más pequeña que la anterior, hasta el tamaño más pequeño posible de 1x1. El cuarto parámetro especifica el uso de este recurso; en este caso, se especifica 0 para indicar que no hay ningún uso específico para el recurso. El quinto parámetro especifica el formato de superficie de la textura. Use un valor del tipo enumerado [D3DFORMAT](d3dformat.md) para este parámetro. El sexto parámetro especifica un miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) que indica la clase de memoria en la que se va a colocar el recurso creado. A menos que use texturas dinámicas, se recomienda el uso de D3DPOOL \_ administrado. El último parámetro toma la dirección de un puntero a una interfaz [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) .
+Los dos primeros parámetros aceptados por [**IDirect3DDevice9::CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture) son el tamaño y el ancho de la textura de nivel superior. El tercer parámetro especifica el número de niveles de la textura. Si establece esta opción en cero, Direct3D crea una cadena de superficies, cada una de ellas una potencia de dos más pequeñas que la anterior, hasta el menor tamaño posible de 1x1. El cuarto parámetro especifica el uso de este recurso; En este caso, se especifica 0 para indicar que no hay ningún uso específico para el recurso. El quinto parámetro especifica el formato de superficie para la textura. Use un valor del tipo [enumerado D3DFORMAT](d3dformat.md) para este parámetro. El sexto parámetro especifica un miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) que indica la clase de memoria en la que se va a colocar el recurso creado. A menos que use texturas dinámicas, se recomienda D3DPOOL \_ MANAGED. El parámetro final toma la dirección de un puntero a una [**interfaz IDirect3DTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)
 
 > [!Note]  
-> Cada superficie de una cadena de mipmap tiene dimensiones que son una mitad de la superficie anterior de la cadena. Si el mipmap de nivel superior tiene dimensiones de 256x128, las dimensiones del mipmap de segundo nivel son 128x64, el tercer nivel es 64x32, y así sucesivamente, hasta 1x1. No se puede solicitar un número de niveles de mipmap en niveles que provoquen que el ancho o el alto de cualquier mipmap en la cadena sea menor que 1. En el caso simple de una superficie de mipmap de nivel superior de 4 TB, el valor máximo permitido para los niveles es tres. Las dimensiones de nivel superior son 4 TB, las dimensiones de segundo nivel son 2x1 y las dimensiones del tercer nivel son 1x1. Un valor mayor que 3 en niveles da como resultado un valor fraccionario en el alto del mipmap de segundo nivel y, por tanto, no se permite.
+> Cada superficie de una cadena de mapa mip tiene dimensiones que son la mitad de la superficie anterior de la cadena. Si el mapa mip de nivel superior tiene dimensiones de 256 x 128, las dimensiones del mapa mip de segundo nivel son 128 x 64, el tercer nivel son 64 x 32, y así sucesivamente, hasta 1x1. No se puede solicitar un número de niveles de mapa mip en Niveles que harían que el ancho o el alto de cualquier mapa mip de la cadena sea menor que 1. En el caso simple de una superficie mipmap de nivel superior de 4x2, el valor máximo permitido para Levels es tres. Las dimensiones de nivel superior son 4x2, las dimensiones de segundo nivel son 2x1 y las dimensiones del tercer nivel son 1x1. Un valor mayor que 3 en Niveles da como resultado un valor fraccionado en el alto del mapa MIP de segundo nivel y, por lo tanto, no se puede.
 
  
 
-## <a name="selecting-and-displaying-a-mipmap"></a>Seleccionar y mostrar un mipmap
+## <a name="selecting-and-displaying-a-mipmap"></a>Selección y visualización de un mapa Mip
 
-Llame al método [**IDirect3DDevice9:: SetTexture**](/windows/desktop/api) para establecer el conjunto de texturas de mipmap como la primera textura en la lista de texturas actuales. Para obtener más información, vea [Texture blending (Direct3D 9)](texture-blending.md).
+Llame al [**método IDirect3DDevice9::SetTexture**](/windows/desktop/api) para establecer el conjunto de texturas mipmap como la primera textura de la lista de texturas actuales. Para obtener más información, vea [Mezcla de textura (Direct3D 9).](texture-blending.md)
 
-Una vez que la aplicación selecciona el conjunto de texturas de mipmap, debe asignar valores del tipo enumerado [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md) al estado de muestra de D3DSAMP \_ MIPFILTER. Después, Direct3D realiza automáticamente el filtrado de texturas MIP. En el ejemplo de código siguiente se muestra cómo habilitar el filtrado de texturas MIP.
+Una vez que la aplicación selecciona el conjunto de texturas mipmap, debe asignar valores del tipo enumerado [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md) al estado del muestreador MIPFILTER de D3DSAMP. \_ A continuación, Direct3D realiza automáticamente el filtrado de textura de mapa mip. La habilitación del filtrado de texturas mipmap se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -80,7 +80,7 @@ m_pD3DDevice->SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_POINT);
 
 
 
-La aplicación también puede atravesar manualmente una cadena de superficies MIP mediante el método [**IDirect3DTexture9:: GetSurfaceLevel**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-getsurfacelevel) y especificando el nivel de mipmap que se va a recuperar. En el ejemplo siguiente se atraviesa una cadena de mipmap de la resolución más alta a la más baja.
+La aplicación también puede atravesar manualmente una cadena de superficies de mapa mip mediante el método [**IDirect3DTexture9::GetSurfaceLevel**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-getsurfacelevel) y especificando el nivel de mapa mipmap que se va a recuperar. En el ejemplo siguiente se recorre una cadena de asignación mip de las resoluciones más altas a las más bajas.
 
 
 ```
@@ -95,7 +95,7 @@ for (int iLevel = 0; iLevel < pMipMap->GetLevelCount(); iLevel++)
 
 
 
-Las aplicaciones deben atravesar manualmente una cadena de mipmap para cargar los datos de mapa de bits en cada superficie de la cadena. Esta suele ser la única razón para atravesar la cadena. Una aplicación puede recuperar el número de niveles de un mipmap llamando a [**IDirect3DBaseTexture9:: GetLevelCount**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dbasetexture9-getlevelcount).
+Las aplicaciones deben atravesar manualmente una cadena de mapas mipmap para cargar datos de mapa de bits en cada superficie de la cadena. Este suele ser el único motivo para recorrer la cadena. Una aplicación puede recuperar el número de niveles de un mapa mipmap llamando a [**IDirect3DBaseTexture9::GetLevelCount**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dbasetexture9-getlevelcount).
 
 ## <a name="related-topics"></a>Temas relacionados
 

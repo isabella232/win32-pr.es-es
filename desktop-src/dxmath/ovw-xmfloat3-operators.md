@@ -1,22 +1,22 @@
 ---
-description: La estructura XMFLOAT3 expone los siguientes operadores.
+description: La estructura XMFLOAT3 expone los operadores siguientes.
 ms.assetid: dc98a2ed-da87-4ba3-8394-682143b378b8
 title: Operadores XMFLOAT3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78c24d8c9486b4e6fddf03c227cd1a9b131b83d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e127aacbbb20740dd3de1a240f44c4f2eb111b970ef527b4908271a40ad1a26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278049"
 ---
 # <a name="xmfloat3-operators"></a>Operadores XMFLOAT3
 
-La estructura [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) expone los siguientes operadores.
+La [**estructura XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmflo
 
 | Métodos                                               | Descripción                                                                                                          |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxmath/nf-directxmath-xmfloat3-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMFLOAT3` a la instancia actual de `XMFLOAT3` . <br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmfloat3-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMFLOAT3` a la instancia actual de `XMFLOAT3` . <br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmflo
 
 <dl> <dt>
 
-[Extensiones de XMFLOAT3](ovw-xmfloat3-extensions.md)
+[Extensiones XMFLOAT3](ovw-xmfloat3-extensions.md)
 </dt> <dt>
 
 **Referencia**

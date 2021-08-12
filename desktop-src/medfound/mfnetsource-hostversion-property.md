@@ -1,65 +1,65 @@
 ---
-description: El valor del campo &\# 0034; c-hostexever&\# 0034; que usa el origen de red para el registro.
+description: Valor del campo &\# 0034;c-hostexever&0034; que el origen de red usa para \# el registro.
 ms.assetid: eee93457-483d-41dc-91c5-c12382d03152
-title: Propiedad MFNETSOURCE_HOSTVERSION (Mfidl. h)
+title: MFNETSOURCE_HOSTVERSION propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f10c1a66bc2ab52455140733a6b60f25863c8f3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d5f78a277de4fc5b0609be31f21f684357806dbb8609657a930cdc4816b1e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243465"
 ---
-# <a name="mfnetsource_hostversion-property"></a>\_Propiedad HOSTVERSION de MFNETSOURCE
+# <a name="mfnetsource_hostversion-property"></a>Propiedad MFNETSOURCE \_ HOSTVERSION
 
-El valor del campo "c-hostexever" que usa el origen de red para el registro. Las aplicaciones pueden establecer esta propiedad en el número de versión de la aplicación host. La aplicación host es el archivo. exe que se identifica mediante el campo c-hostexe.
+Valor del campo "c-hostexever" que usa el origen de red para el registro. Las aplicaciones pueden establecer esta propiedad en el número de versión de la aplicación host. La aplicación host es el .exe identificado por el campo c-hostexe.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
 **LONGLONG**
 
-VT \_ i8
+VT \_ I8
 
 **hVal**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante **MFNETSOURCE \_ HOSTVERSION** define el GUID para esta clave de propiedad. El identificador de propiedad (PID) es cero.
+La constante **MFNETSOURCE \_ HOSTVERSION** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
-Las aplicaciones pueden utilizar esta propiedad para configurar el origen de red. Para establecer la propiedad, pase un puntero **IPropertyStore** a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Para establecer la propiedad , pase un **puntero IPropertyStore** al solucionador Source. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Registro de cliente](client-logging.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

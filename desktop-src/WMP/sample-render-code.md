@@ -1,26 +1,26 @@
 ---
-title: Código de representación de ejemplo
-description: Código de representación de ejemplo
+title: Ejemplo de código de representación
+description: Ejemplo de código de representación
 ms.assetid: 14978cf4-47fa-4b2e-ba51-799be873dc8a
 keywords:
 - visualizaciones, código de ejemplo
 - visualizaciones personalizadas, código de ejemplo
 - visualizaciones, función Render
 - visualizaciones personalizadas, función Render
-- Función render, código de ejemplo
-- ejemplos, función Render para visualizaciones
+- Función de representación, código de ejemplo
+- samples,Render function for visualizations
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1ee5d00bc1aed5bd8bd91880e43e2ac2d1f6bc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 51265191ba7fd8b5eb9e4b1140990a7713eba08356d01c58097c727ec2fe533e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569791"
 ---
-# <a name="sample-render-code"></a>Código de representación de ejemplo
+# <a name="sample-render-code"></a>Ejemplo de código de representación
 
-Este es un código de ejemplo que usa la función **Render** para dibujar una línea a través de la pantalla. El alto de la línea se define mediante el valor de la forma de onda.
+Este es un código de ejemplo que usa la **función Render** para dibujar una línea en la pantalla. El alto de la línea se define mediante el valor de forma de onda.
 
 
 ```C++
@@ -65,64 +65,64 @@ STDMETHODIMP CStock::Render(TimedLevel *pLevels, HDC hdc, RECT *prc)
 
 
 
-La función de **representación** es donde tiene lugar el trabajo principal del código. Cada vez que Windows Media Player toma una instantánea del audio, llamará a esta función y el código se ejecutará.
+La **función Render** es donde tiene lugar el trabajo principal del código. Cada vez Reproductor de Windows Media toma una instantánea del audio, llamará a esta función y se ejecutará el código.
 
-Este código realiza las siguientes tareas. Consulte el SDK de la plataforma Microsoft Windows para Windows de 32 bits para obtener más detalles sobre funciones específicas.
+Este código realiza las siguientes tareas. Consulte el SDK de microsoft Windows Platform para aplicaciones de 32 Windows para obtener más detalles sobre funciones específicas.
 
 ## <a name="creating-objects"></a>Crear objetos
 
-Normalmente, se usarán las funciones de dibujo que se incorporan a la interfaz gráfica de visualización de Microsoft Windows (GDI). Debe crear lápices para dibujar líneas y pinceles para rellenar áreas.
+Normalmente, se usarán las funciones de dibujo que se incluyen con la interfaz gráfica de pantalla (GDI) de Microsoft Windows. Debe crear lápices para dibujar líneas y pinceles para rellenar áreas.
 
 Se crea un pincel negro sólido para rellenar el fondo.
 
-Se crea un lápiz sólido para dibujar una línea. El color será el color de primer plano tal como lo define la máscara que va a mostrar la visualización.
+Se crea un lápiz sólido para dibujar una línea. El color será el color de primer plano definido por la máscara que va a mostrar la visualización.
 
 ## <a name="adding-the-object-to-the-dc"></a>Agregar el objeto al controlador de dominio
 
-Debe agregar el lápiz al contexto de dispositivo (DC). El controlador de dominio es la parte de la memoria en la que se almacenan todos los datos y objetos de dibujo. Esencialmente, el controlador de dominio es el administrador de tráfico de Windows que realiza un seguimiento de todo el gráfico.
+Debe agregar el lápiz al contexto del dispositivo (DC). El controlador de dominio es la parte de la memoria en la que se almacenan todos los datos y objetos de dibujo. Básicamente, el controlador de dominio es el administrador de tráfico de ventana que realiza un seguimiento gráfico de todo.
 
-Debe *convertir* el objeto Pen que creó y almacenarlo como un lápiz antiguo. Use esta técnica de codificación para todos los lápices nuevos. Esta técnica es necesaria para la programación de 32 bits.
+Debe convertir el *objeto* de lápiz que creó y almacenarlo como un lápiz antiguo. Use esta técnica de codificación para todos los lápices nuevos. Esta técnica es necesaria para la programación de 32 bits.
 
 ## <a name="filling-in-the-background"></a>Rellenar el fondo
 
-Ahora está listo para dibujar. La función **FillRect** llenará el rectángulo de la ventana, tal como se define en los parámetros de la función de **representación** . El rectángulo se rellena con un pincel negro.
+Ya está listo para dibujar. La **función FillRect** rellenará el rectángulo de la ventana, tal como se define en los parámetros de la **función Render.** El rectángulo se rellena con un pincel negro.
 
 ## <a name="getting-audio-data"></a>Obtención de datos de audio
 
-A continuación, el código obtiene algunos datos de audio de Windows Media Player. Mediante el uso de la matriz de forma de onda, puede obtener el valor actual de la energía de audio en el momento en que se tomó la instantánea. En este caso, va a tomar los datos de audio del canal izquierdo. El primer valor de la matriz es el primer 1024th de la instantánea de la alimentación de audio.
+A continuación, el código obtiene algunos datos de audio Reproductor de Windows Media. Mediante el uso de la matriz de forma de onda, puede obtener el valor actual de la potencia de audio en el momento en que se tomó la instantánea. En este caso, está tomando los datos de audio del canal izquierdo. El primer valor de la matriz es el primer número 1024 de la instantánea de energía de audio.
 
-Esta información se usará para mostrar una línea cuyo alto coincida con la instantánea de la alimentación de audio.
+Esta información se usará para mostrar una línea cuyo alto coincidirá con la instantánea de energía de audio.
 
-## <a name="draw-the-line"></a>Dibujar la línea
+## <a name="draw-the-line"></a>Un hasta aquí
 
-La línea se dibuja de izquierda a derecha mediante las funciones GDI **MoveToEx** y **lineTo** .
+La línea se dibuja de izquierda a derecha mediante las **funciones MoveToEx** y **LineTo** GDI.
 
-En primer lugar, mueva el lápiz al punto inicial. En este caso, x e y se usan para definir los valores de izquierda a derecha y de arriba a abajo que el usuario verá en la pantalla. X se define mediante el rectángulo PRC y, en concreto, por el valor de PRC->izquierda. Y se define como el valor de los datos de la forma de onda en ese momento.
+En primer lugar, mueva el lápiz al punto inicial. En este caso, x e y se usan para definir los valores de izquierda a derecha y de arriba a abajo que el usuario verá en la pantalla. X se define mediante el rectángulo prc y específicamente por el valor de prc->izquierda. Y se define como el valor de los datos de forma de onda en ese momento.
 
-A continuación, dibuje una línea en el otro lado de la ventana. El punto al que se dibuja la línea es de nuevo un valor x, y. X se define mediante el rectángulo PRC, pero esta vez por PRC->a la derecha. Y sigue estando definido por los datos de la forma de onda y es el mismo que el punto desde el que se inició, porque está dibujando una línea recta de izquierda a derecha.
+A continuación, dibuje una línea al otro lado de la ventana. El punto en el que se dibuja la línea es de nuevo un valor x, y. X se define mediante el rectángulo prc, pero esta vez por prc->right. Y sigue definido por los datos de forma de onda y es el mismo que el punto desde el que empezó, porque está dibujando una línea recta de izquierda a derecha.
 
-## <a name="clean-up-everything"></a>Limpie todo
+## <a name="clean-up-everything"></a>Limpiar todo
 
-Debe eliminar los objetos que cree. En concreto, debe eliminar todos los pinceles y lápices que cree. Es recomendable eliminar lápices y pinceles cuando termine de utilizarlos.
+Debe eliminar los objetos que cree. En concreto, debe eliminar todos los pinceles y lápices que cree. Es un procedimiento recomendado eliminar lápices y pinceles cuando termine de usarlos.
 
-Si no Los elimina antes de finalizar la implementación de la función de **representación** , la visualización se bloqueará en un minuto o menos. Debe mantener un recuento de los lápices y pinceles y destruir cada uno de ellos. Tenga especial cuidado de no crear lápices dentro de un bucle de código.
+Si no los elimina antes de finalizar la implementación de la función **Render,** la visualización se bloqueará en un minuto o menos. Debe mantener un recuento de los lápices y pinceles y destruir cada uno de ellos. Tenga especial cuidado de no crear lápices dentro de un bucle de código.
 
-Use la técnica de codificación que se proporciona en el ejemplo para destruir los lápices y los pinceles.
+Use la técnica de codificación que se muestra en el ejemplo para destruir los lápices y pinceles.
 
--   **Importante** Destruya sus lápices y pinceles.
+-   **Importante** ¡Destruya los lápices y pinceles!
 
-Cuando haya terminado de limpiar, asegúrese de volver a ser \_ correcto para que Windows Media Player sepa que ha terminado de dibujar. Una vez que termine, el dibujo se transferirá a la ventana, se tomará otra instantánea, la **representación** le pedirá que vuelva a dibujar el código, etc.
+Cuando haya terminado de limpiar, asegúrese de devolver S OK para que \_ Reproductor de Windows Media sabe que ha terminado de dibujar. Una vez que haya terminado, el dibujo se transferirá a la ventana, se realizará otra instantánea, **Render** le pedirá al código que se dibuje de nuevo, y así sucesivamente.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Implementación de render**](implementing-render.md)
+[**Implementación de Render**](implementing-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

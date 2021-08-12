@@ -1,6 +1,6 @@
 ---
-title: Elemento PerformServerValidation
-description: Obtenga información sobre el elemento PerformServerValidation. Este elemento indica si se realiza la validación del servidor. | Elemento PerformServerValidation
+title: PerformServerValidation, elemento
+description: Obtenga información sobre el elemento PerformServerValidation. Este elemento indica si se realiza la validación del servidor. | PerformServerValidation, elemento
 ms.assetid: c1dd1af1-63a0-48f7-8da5-860c50d73259
 keywords:
 - Elemento PerformServerValidation EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f8d92bd5718e626f95cc7d08fbc01d5881ff9b59
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3361f9f92fd04aa0e08c6eba76e05bcfe870c8c769a87da95e667c78e45e01b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105707679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273524"
 ---
-# <a name="performservervalidation-element"></a>Elemento PerformServerValidation
+# <a name="performservervalidation-element"></a>PerformServerValidation, elemento
 
-El elemento **PerformServerValidation (EapType)** indica si se realiza la validación del servidor.
+El **elemento PerformServerValidation (EapType)** indica si se realiza la validación del servidor.
 
 ``` syntax
 <xs:element name="PerformServerValidation"
@@ -31,24 +31,24 @@ El elemento **PerformServerValidation (EapType)** indica si se realiza la valida
  />
 ```
 
-El elemento **PerformServerValidation** se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El **elemento PerformServerValidation** se define mediante el [**elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PerformServerValidation** es opcional.
+El **elemento PerformServerValidation** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión de SO mínima |
+| Rol | Versión de SO mínima |
 |------|--------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,10 +1,10 @@
 ---
 title: Estructura WMDMID
-description: La estructura WMDMID describe los números de serie y los ID. de grupo.
+description: La estructura WMDMID describe los números de serie y los identificaciónes de grupo.
 ms.assetid: eaa5786e-a2a1-42d7-b527-be83d944cb20
 keywords:
-- Estructura WMDMID Administrador de dispositivos Windows Media
-- Puntero de estructura PWMDMID Administrador de dispositivos de Windows Media
+- Ventanas de estructura WMDMID Administrador de dispositivos
+- Puntero de estructura PWMDMID ventanas Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8edc2a364bf29ead6aaf4fad8ad3a56fe80d7176
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93079b2b32dae918e1c7f5c7756a1c24dd29c539c6b760dc698273006ae30f47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583998"
 ---
 # <a name="wmdmid-structure"></a>Estructura WMDMID
 
-La estructura **WMDMID** describe los números de serie y los ID. de grupo.
+La **estructura WMDMID** describe los números de serie y los identificaciónes de grupo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ typedef struct __WMDMID {
 **cbSize**
 </dt> <dd>
 
-Tamaño de la estructura **WMDMID** , en bytes.
+Tamaño de la **estructura WMDMID,** en bytes.
 
 </dd> <dt>
 
 **dwVendorID**
 </dt> <dd>
 
-**DWORD** que contiene el número de ID. registrado del proveedor. Contiene cero si no está en uso.
+**DWORD que** contiene el número de identificador registrado del proveedor. Contiene cero si no está en uso.
 
 </dd> <dt>
 
-**\[longitud de WMDMID de PID \_\]**
+**pID \[ WMDMID \_ LENGTH\]**
 </dt> <dd>
 
-Puntero a una matriz de bytes que contiene el número de serie. El número de serie es una cadena de valores de bytes que no tienen ningún formato estándar. Tenga en cuenta que no se trata de un valor de caracteres anchos. **WMDMID \_ LENGTH** es un valor constante definido en mswmdm. h.
+Puntero a una matriz de bytes que contiene el número de serie. El número de serie es una cadena de valores de bytes que no tienen ningún formato estándar. Tenga en cuenta que no se trata de un valor de caracteres anchos. **WMDMID \_ LENGTH** es un valor constante definido en mswmdm.h.
 
 </dd> <dt>
 
@@ -78,11 +78,11 @@ Longitud real del número de serie devuelto, en bytes.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

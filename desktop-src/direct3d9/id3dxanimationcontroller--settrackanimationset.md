@@ -1,7 +1,7 @@
 ---
-description: Aplica la animación establecida a la pista especificada.
+description: Aplica el conjunto de animación a la pista especificada.
 ms.assetid: f48bb0f1-3ccd-4db9-8a30-58c79ae0939e
-title: 'ID3DXAnimationController:: SetTrackAnimationSet (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::SetTrackAnimationSet (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9dce979e48ed118dc257c147b27615f7bbc89231
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a94fee2a0bd80f391b514895aa5b5348cbef6d8a53e31200b49a403a6712e2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296888"
 ---
-# <a name="id3dxanimationcontrollersettrackanimationset-method"></a>ID3DXAnimationController:: SetTrackAnimationSet (método)
+# <a name="id3dxanimationcontrollersettrackanimationset-method"></a>Método ID3DXAnimationController::SetTrackAnimationSet
 
-Aplica la animación establecida a la pista especificada.
+Aplica el conjunto de animación a la pista especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetTrackAnimationSet(
 
 <dl> <dt>
 
-*Seguimiento* \[ de de\]
+*Seguimiento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificador de la pista a la que se aplica el conjunto de animaciones.
 
 </dd> <dt>
 
-*pAnimSet* \[ de\]
+*pAnimSet* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)**
 
-Puntero al conjunto de animaciones [**ID3DXAnimationSet**](id3dxanimationset.md) que se va a agregar a la pista.
+Puntero a la [**animación ID3DXAnimationSet**](id3dxanimationset.md) establecida para agregarse a la pista.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntero al conjunto de animaciones [**ID3DXAnimationSet**](id3dxanimationset.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece la animación establecida en la pista especificada para la combinación. El conjunto de animación de cada pista se combina según el peso y la velocidad del seguimiento cuando se llama a [**AdvanceTime**](id3dxanimationcontroller--advancetime.md) .
+Este método establece el conjunto de animación en la pista especificada para la combinación. El conjunto de animación para cada pista se combina según el peso y la velocidad de la pista cuando se llama a [**AdvanceTime.**](id3dxanimationcontroller--advancetime.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Este método establece la animación establecida en la pista especificada para l
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

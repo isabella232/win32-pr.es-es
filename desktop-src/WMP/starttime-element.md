@@ -1,9 +1,9 @@
 ---
-title: STARTTIME (elemento)
-description: El elemento STARTTIME define un índice de tiempo desde el que Windows Media Player comenzará a representar la secuencia.
+title: Elemento STARTTIME
+description: El elemento STARTTIME define un índice de tiempo a partir del Reproductor de Windows Media comenzará a representar la secuencia.
 ms.assetid: 9b0199c8-5c95-4b4e-a943-e3bd037bf0bc
 keywords:
-- Elemento STARTTIME Media Player Windows
+- Elemento STARTTIME Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a882da6c07ec76a94c8e214fe1da11c71680b0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9138b05b949098c59996c69143059de5cb5b25cafcd8da7d922de120d586b356
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568797"
 ---
-# <a name="starttime-element"></a>STARTTIME (elemento)
+# <a name="starttime-element"></a>Elemento STARTTIME
 
-El elemento **STARTTIME** define un índice de tiempo desde el que Windows Media Player comenzará a representar la secuencia.
+El **elemento STARTTIME** define un índice de tiempo a partir del Reproductor de Windows Media comenzará a representar la secuencia.
 
 ``` syntax
 <STARTTIME
@@ -32,9 +32,9 @@ El elemento **STARTTIME** define un índice de tiempo desde el que Windows Media
 
 ## <a name="attributes"></a>Atributos
 
-**Valor** (obligatorio)
+**VALUE** (obligatorio)
 
-El índice de tiempo (en horas, minutos, segundos y centésimas de segundo) desde el que Windows Media Player comienza a reproducir un flujo definido en el elemento asociado.
+Índice de tiempo (en horas, minutos, segundos y centésimas de segundo) desde el que Reproductor de Windows Media comienza a reproducir una secuencia definida en el elemento asociado.
 
 ## <a name="parentchild-elements"></a>Elementos primarios y secundarios
 
@@ -42,7 +42,7 @@ El índice de tiempo (en horas, minutos, segundos y centésimas de segundo) desd
 
 | Hierarchy       | Elementos           |
 |-----------------|--------------------|
-| Elementos primarios | **entrada**, **ref** |
+| Elementos primarios | **ENTRY**, **REF** |
 | Elementos secundarios  | Ninguno               |
 
 
@@ -51,7 +51,7 @@ El índice de tiempo (en horas, minutos, segundos y centésimas de segundo) desd
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento define un índice de tiempo en el contenido donde Windows Media Player va a comenzar a representar la secuencia. Este elemento solo se puede usar con contenido almacenado a petición que se ha indexado.
+Este elemento define un índice de tiempo en el contenido donde Reproductor de Windows Media es empezar a representar la secuencia. Este elemento solo se puede usar con contenido almacenado a petición que se ha indexado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -66,20 +66,20 @@ Este elemento define un índice de tiempo en el contenido donde Windows Media Pl
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

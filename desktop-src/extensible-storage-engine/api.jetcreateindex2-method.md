@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetCreateIndex2 (método)'
-title: Método API. JetCreateIndex2
+description: Más información sobre el método Api.JetCreateIndex2
+title: Método Api.JetCreateIndex2
 TOCTitle: 'JetCreateIndex2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetCreateIndex2(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_INDEXCREATE[],System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetcreateindex2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b5fa690ed127c41b8a84f5d8aa012510f3a9c3e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e58048098b137c4a0443cddc725c61622ee8bef94cf3752abf5b45a24d385734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272669"
 ---
-# <a name="apijetcreateindex2-method"></a>Método API. JetCreateIndex2
+# <a name="apijetcreateindex2-method"></a>Método Api.JetCreateIndex2
 
-Crea índices sobre los datos de una base de datos ESE.
+Crea índices sobre datos en una base de datos ese.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,41 +68,41 @@ public static void JetCreateIndex2(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla en la que se va a crear el índice.
+    Tabla en la que se creará el índice.
 
 <!-- end list -->
 
   - indexcreates  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Matriz de objetos que describen los índices que se van a crear.
+    Matriz de objetos que describen los índices que se crearán.
 
 <!-- end list -->
 
   - numIndexCreates  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de objetos de descripción de índice.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al crear varios índices (es decir, con numIndexCreates mayor que 1) se debe llamar a este método fuera de las transacciones y con acceso exclusivo a la tabla. El JET_TABLEID devuelto por "JetCreateTable" tendrá acceso a se o se puede abrir la tabla para el acceso exclusivo pasando [DenyRead](./opentablegrbit-enumeration.md) a [JetOpenTable (JET_SESID, JET_DBID, String, \[ \] , Int32, OpenTableGrbit, JET_TABLEID)](./api.jetopentable-method.md).
+Al crear varios índices (es decir, con numIndexCreates mayor que 1), se DEBE llamar a este método fuera de cualquier transacción y con acceso exclusivo a la tabla. El JET_TABLEID devuelto por "JetCreateTable" tendrá acceso exlusivo o la tabla se puede abrir para acceso exclusivo pasando [DenyRead](./opentablegrbit-enumeration.md) a [JetOpenTable(JET_SESID, JET_DBID, String, \[ \] , Int32, OpenTableGrbit, JET_TABLEID).](./api.jetopentable-method.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,22 +1,22 @@
 ---
-description: Se deben usar las siguientes definiciones al leer y escribir directamente el encabezado binario.
+description: Las definiciones siguientes se deben usar al leer y escribir directamente el encabezado binario.
 ms.assetid: 19c36f94-8088-417d-867d-3a02912087dc
-title: Encabezado
+title: Header
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cfaa589382812cfd752d47cc8b95cda0139385b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: baaed7884cef465110167d3e235197c534e48d19eb47ee308c0650bd86773ea3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105696072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297075"
 ---
-# <a name="header"></a>Encabezado
+# <a name="header"></a>Header
 
-Se deben usar las siguientes definiciones al leer y escribir directamente el encabezado binario.
+Las definiciones siguientes se deben usar al leer y escribir directamente el encabezado binario.
 
 > [!Note]  
-> Los flujos de datos comprimidos no se admiten actualmente y, por lo tanto, no se detallan aquí.
+> Los flujos de datos comprimidos no se admiten actualmente y, por tanto, no se detallan aquí.
 
  
 

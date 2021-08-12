@@ -1,23 +1,23 @@
 ---
-title: Iniciar el editor de sonidos
-description: Iniciar el editor de sonidos
+title: Inicio del Editor de sonido
+description: Inicio del Editor de sonido
 ms.assetid: bf910be0-46ad-4993-95a2-26575f2e5797
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05e2da01084881ca38ce1e11e70959720ceec6c8
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 4cb10ffa266ff4a8444adc760ec819ef5d91e6c7509d175432fc962f04386f38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "105707501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118246121"
 ---
-# <a name="starting-the-sound-editor"></a>Iniciar el editor de sonidos
+# <a name="starting-the-sound-editor"></a>Inicio del Editor de sonido
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-Para ejecutar la herramienta de edición de sonido lingüístico de Microsoft, elíjalo en el menú **Inicio** o haga doble clic en el icono del editor de sonidos. Se abrirá la ventana del editor de sonidos, mostrando los menús, una barra de herramientas para los comandos usados con frecuencia, un cuadro de texto para escribir las palabras que utiliza el editor para procesar el archivo de sonido y un área de presentación para ver y editar los datos de audio y lingüísticos.
+Para ejecutar la herramienta de edición de  sonidos de información lingüística de Microsoft, elija esta opción en el menú Inicio o haga doble clic en el icono del editor de sonido. Se abrirá la ventana del editor de sonido, con sus menús, una barra de herramientas para los comandos usados con frecuencia, un cuadro de texto para escribir las palabras que el editor usa para procesar el archivo de sonido y un área de visualización para ver y editar los datos lingüísticos y de audio.
 
-![Captura de pantalla que muestra la página de inicio de la herramienta de edición de sonido lingüístico de Microsoft.](images/f1listliq.gif)
+![Captura de pantalla que muestra la página de inicio de microsoft Linguistic Information Sound Editing Tool.](images/f1listliq.gif)
 
 Una vez que se inicia el editor de sonido, puede empezar a grabar un nuevo archivo de sonido o cargar un archivo de sonido existente.
 

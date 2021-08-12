@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_ERRINFOBASIC miembros'
-title: Miembros de JET_ERRINFOBASIC (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_ERRINFOBASIC miembros'
+title: JET_ERRINFOBASIC miembros (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic_members(v=EXCHG.10)
 ms:contentKeyID: 55107812
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7abd866ee770a3066f5d80c85845343d3b1a40c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b50486c3470613c034b7bb7c40dfd53f174e045d8ed16167dd78508ffd7ae5e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255481"
 ---
-# <a name="jet_errinfobasic-members"></a>Miembros de JET_ERRINFOBASIC
+# <a name="jet_errinfobasic-members"></a>JET_ERRINFOBASIC miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
 Contiene la información sobre un error.
 
-El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes miembros.
+El [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -37,7 +37,7 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335468(v=exchg.10).md">JET_ERRINFOBASIC</a></td>
-<td>Inicializa una nueva instancia de la clase JET_ERRINFOBASIC.</td>
+<td>Inicializa una nueva instancia de la JET_ERRINFOBASIC clase .</td>
 </tr>
 </tbody>
 </table>
@@ -69,7 +69,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335472(v=exchg.10).md">lSourceLine</a></td>
-<td>Obtiene o establece la línea del archivo de código fuente para el nivel de información solicitado.</td>
+<td>Obtiene o establece la línea de archivo de origen para el nivel de información solicitado.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -79,7 +79,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335474(v=exchg.10).md">rgszSourceFile</a></td>
-<td>Obtiene o establece el nombre del archivo de código fuente para el nivel de información solicitado.</td>
+<td>Obtiene o establece el nombre del archivo de origen para el nivel de información solicitado.</td>
 </tr>
 </tbody>
 </table>
@@ -101,12 +101,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335338(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335471(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -115,7 +115,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -125,7 +125,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -136,7 +136,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335337(v=exchg.10).md">ToString</a></td>
-<td>Generar una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -144,10 +144,10 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ERRINFOBASIC (clase)](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC clase](./jet-errinfobasic-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

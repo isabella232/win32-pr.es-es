@@ -1,36 +1,36 @@
 ---
-description: La frecuencia de actualización de variables indica que es necesario que se habilite el desactivado, lo que también se conoce como &\# 0034; VSYNC-off&\# 0034; soporte técnico.
+description: Las pantallas de frecuencia de actualización variable requieren que se habilite el desgarro, lo que también se conoce como compatibilidad con \# &0034;vsync-off&\# 0034;.
 ms.assetid: C5F140DD-5BAF-404A-9253-611831C4D424
-title: Se muestra la frecuencia de actualización de variables
+title: Se muestra la frecuencia de actualización variable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da6e658d84c51a6b51bc32855226194b9c22507e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 349592ce49d1008f6337b53c7f524ac7303907f75cd99205fe79bf55988b934b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104274684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118288928"
 ---
-# <a name="variable-refresh-rate-displays"></a>Se muestra la frecuencia de actualización de variables
+# <a name="variable-refresh-rate-displays"></a>Se muestra la frecuencia de actualización variable
 
-La frecuencia de *actualización de variables muestra requerir el* desactivado para habilitarla, lo que también se conoce como compatibilidad con "VSYNC".
+Las pantallas de *frecuencia* de actualización variable requieren que se habilite el desgarro, lo que también se conoce como compatibilidad con "vsync-off".
 
--   [Frecuencia de actualización de variables muestra/VSYNC OFF](#variable-refresh-rate-displaysvsync-off)
+-   [Se muestra la frecuencia de actualización variable/Vsync desactivada](#variable-refresh-rate-displaysvsync-off)
 -   [Temas relacionados](#related-topics)
 
-## <a name="variable-refresh-rate-displaysvsync-off"></a>Frecuencia de actualización de variables muestra/VSYNC OFF
+## <a name="variable-refresh-rate-displaysvsync-off"></a>Se muestra la frecuencia de actualización variable/Vsync desactivada
 
-La compatibilidad con las visualizaciones de frecuencia de actualización variable se logra estableciendo ciertas marcas al crear y presentar la cadena de intercambio.
+La compatibilidad con las pantallas de frecuencia de actualización variable se logra estableciendo ciertas marcas al crear y presentar la cadena de intercambio.
 
-Para usar esta característica, los usuarios de la aplicación deben estar en sistemas Windows 10 con [KB3156421](https://support.microsoft.com/kb/3156421) o la actualización de aniversario instalada. La característica funciona en todas las versiones de Direct3D 11 y 12 usando * efectos de *intercambio de DXGI \_ \_ \_ \_ \* Flip _ efecto* de intercambio.
+Para usar esta característica, los usuarios de la aplicación deben estar en Windows 10 con [KB3156421](https://support.microsoft.com/kb/3156421) o la actualización de aniversario instalada. La característica funciona en todas las versiones de Direct3D 11 y 12 mediante efectos de intercambio **\_ DXGI SWAP \_ EFFECT \_ FLIP. \_ \***
 
-Para agregar compatibilidad con la sincronización de VSYNC a las aplicaciones, puede consultar un ejemplo de ejecución completo de Direct3D 12, _ *D3D12Fullscreen** (consulte los [ejemplos de trabajo](../direct3d12/working-samples.md)). También hay algunos puntos que no se indican explícitamente en el código de ejemplo, pero tiene que prestar atención.
+Para agregar compatibilidad con vsync-off a las aplicaciones, puede consultar un ejemplo completo de ejecución para Direct3D 12, **D3D12Fullscreen** (consulte Ejemplos de [trabajo).](../direct3d12/working-samples.md) También hay algunos puntos que no se han llamado explícitamente en el código de ejemplo, pero debe prestar atención.
 
--   [**ResizeBuffers**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) (o [**ResizeBuffers1**](/windows/desktop/api/DXGI1_4/nf-dxgi1_4-idxgiswapchain3-resizebuffers1)) debe tener la misma marca de creación de cadena de intercambio (el \_ marcador de cadena de intercambio de DXGI \_ permite el \_ \_ \_ recorte) que se le pasa como [**presente**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) (o [**Present1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)).
--   DXGI \_ present \_ permitir el \_ recorte solo se puede usar con el intervalo de sincronización 0. Se recomienda pasar siempre esta marca de interrupción al usar el intervalo de sincronización 0 si [**CheckFeatureSupport**](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) informa de que se admite el desgarro *y* la aplicación está en un modo de ventana, incluido el modo de pantalla completa sin borde. Para más información, consulte las constantes de [**DXGI \_ presentes**](dxgi-present.md) .
--   Deshabilitar VSYNC no uncap necesariamente la velocidad de fotogramas: los desarrolladores también deben asegurarse de que las llamadas [**presentes**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) no estén limitadas por otros eventos de control de tiempo (como el `CompositionTarget::Rendering` evento en una aplicación basada en XAML).
+-   [**ResizeBuffers**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) (o [**ResizeBuffers1)**](/windows/desktop/api/DXGI1_4/nf-dxgi1_4-idxgiswapchain3-resizebuffers1)debe tener la misma marca de creación de cadena de intercambio (DXGI SWAP CHAIN FLAG ALLOW TEARING) pasada como \_ \_ \_ \_ \_ [**Present**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) (o [**Present1).**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)
+-   DXGI \_ PRESENT \_ ALLOW \_ TEARING solo se puede usar con el intervalo de sincronización 0. Se recomienda pasar siempre esta marca de desmontaje cuando se usa el intervalo  de sincronización 0 si [**CheckFeatureSupport**](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) informa de que se admite el desmontaje y la aplicación está en modo de ventana, incluido el modo de pantalla completa sin borde. Consulte las [**constantes PRESENT \_ de DXGI**](dxgi-present.md) para obtener más detalles.
+-   Deshabilitar vsync no desencapsular necesariamente la velocidad de fotogramas: los desarrolladores también deben asegurarse de que present [**calls**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) are not throttled by other timing events (como el evento en una aplicación basada en `CompositionTarget::Rendering` XAML).
 
-El código siguiente recapitula algunas piezas clave que debe agregar a las aplicaciones.
+El código siguiente recapitulará algunas partes clave que debe agregar a las aplicaciones.
 
 ``` syntax
 //--------------------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ ThrowIfFailed(m_swapChain->Present(0, presentFlags));
 
 <dl> <dt>
 
-[Mejoras en DXGI 1,5](dxgi-1-5-improvements.md)
+[Mejoras de DXGI 1.5](dxgi-1-5-improvements.md)
 </dt> <dt>
 
 [Guía de programación para DXGI](dx-graphics-dxgi-overviews.md)
