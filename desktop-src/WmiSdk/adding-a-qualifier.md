@@ -1,22 +1,22 @@
 ---
-description: Un calificador es una cadena de datos que proporciona más información sobre una clase, una instancia, una propiedad, un método o un parámetro.
+description: Un calificador es una cadena de datos que proporciona más información sobre una clase, instancia, propiedad, método o parámetro.
 ms.assetid: 6984b575-b365-49dd-aeab-a763430f434c
 ms.tgt_platform: multiple
-title: Adición de un calificador
+title: Agregar un calificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a6f18f2b79bcd25b2b4ca75811157c9091e6eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 333c24e89d711a8998c58c6201776d5d4c50cc1107f4c9ca4308d9cc992b44dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557828"
 ---
-# <a name="adding-a-qualifier"></a>Adición de un calificador
+# <a name="adding-a-qualifier"></a>Agregar un calificador
 
-Un calificador es una cadena de datos que proporciona más información sobre una clase, una instancia, una propiedad, un método o un parámetro.
+Un calificador es una cadena de datos que proporciona más información sobre una clase, instancia, propiedad, método o parámetro.
 
-La definición de clase siguiente es un ejemplo de una clase derivada que tiene calificadores de clase.
+La siguiente definición de clase es un ejemplo de una clase derivada que tiene calificadores de clase.
 
 ``` syntax
 [Dynamic, Provider ("ProviderX")] 
@@ -28,27 +28,27 @@ class MyDerivedClass : MyClass
 };
 ```
 
-Los calificadores se pueden dividir en calificadores estándar, calificadores CIM y calificadores únicos, entre los que se incluyen los siguientes:
+Los calificadores se pueden dividir en calificadores estándar, calificadores CIM y calificadores únicos:
 
 -   Calificador estándar
 
-    Un calificador estándar es un calificador definido por WMI que se usa habitualmente en código MOF. Por ejemplo, los calificadores [**dinámicos**](dynamic-qualifier.md) y de [**lectura**](standard-qualifiers.md) son calificadores estándar. Para obtener más información, vea [calificadores de WMI](wmi-qualifiers.md).
+    Un calificador estándar es un calificador definido por WMI y que se usa normalmente en el código MOF. Por ejemplo, los [**calificadores Dynamic**](dynamic-qualifier.md) [**y Read**](standard-qualifiers.md) son calificadores estándar. Para obtener más información, vea [Calificadores WMI](wmi-qualifiers.md).
 
--   Calificador de CIM
+-   Calificador CIM
 
-    Un calificador de CIM es un calificador incluido en la especificación CIM. Aunque use calificadores CIM en código MOF, los calificadores estándar se han diseñado específicamente con WMI en mente. Para obtener más información, consulte la [especificación de CIM](https://www.dmtf.org/spec/cims.html/)de DMTF.
+    Un calificador CIM es un calificador incluido en la especificación CIM. Aunque se usan calificadores CIM en código MOF, los calificadores estándar se diseñan específicamente con WMI en mente. Para obtener más información, vea la especificación [CIM de](https://www.dmtf.org/spec/cims.html/)DMTF .
 
 -   Calificador único
 
-    Un calificador único es un calificador definido específicamente para una nueva clase por parte de un proveedor de clases. Por ejemplo, el calificador de [**unidades**](standard-qualifiers.md) es un calificador no estándar específico del proveedor. Puede crear sus propios calificadores para usarlos con su proveedor. Para obtener más información sobre la creación de un proveedor, vea [desarrollar un proveedor WMI](developing-a-wmi-provider.md).
+    Un calificador único es un calificador definido específicamente para una nueva clase por un proveedor de clases. Por ejemplo, el [**calificador Units**](standard-qualifiers.md) es un calificador no estándar específico del proveedor. Puede crear sus propios calificadores para usarlos con el proveedor. Para obtener más información sobre cómo crear un proveedor, vea [Desarrollar un proveedor WMI.](developing-a-wmi-provider.md)
 
-Sea cual sea su calificador, el proceso principal que realice es usar el calificador en el código MOF. Para obtener más información, vea [aplicar un calificador](applying-a-qualifier.md). Puede describir más detalladamente un calificador con un tipo de calificador. Un tipo de calificador contiene más información sobre cómo un proveedor debe usar un calificador. Para obtener más información, vea [Descripción de un calificador con un tipo de calificador](describing-a-qualifier-with-a-qualifier-flavor.md).
+Independientemente de lo que haga el calificador, el proceso principal que realice es usar el calificador en el código MOF. Para obtener más información, [vea Aplicar un calificador](applying-a-qualifier.md). Puede describir aún más un calificador con un formato de calificador. Un calificador contiene más información sobre cómo un proveedor debe usar un calificador. Para obtener más información, vea [Describing a Qualifier with a Qualifier Flavor](describing-a-qualifier-with-a-qualifier-flavor.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Diseñar clases de Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md)
+[Diseñar clases Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md)
 </dt> </dl>
 
  

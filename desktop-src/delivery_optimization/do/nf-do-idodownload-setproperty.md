@@ -1,8 +1,8 @@
 ---
-title: 'IDODownload:: SetProperty (método)'
+title: Método IDODownload::SetProperty
 description: Establece una propiedad de descarga.
 keywords:
-- 'IDODownload:: SetProperty (método)'
+- Método IDODownload::SetProperty
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 0d496f49851aab665e49f3aaeb51e4b941d6c183
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: a7d966edb083107b80f0723bce195bfc588797efb8ad1931e0e75a468bec5a3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "103785099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543904"
 ---
-# <a name="idodownloadsetproperty-method"></a>IDODownload:: SetProperty (método)
+# <a name="idodownloadsetproperty-method"></a>Método IDODownload::SetProperty
 
-Establece una propiedad de descarga. El método acepta un puntero a una **variante** que contiene una propiedad específica que se va a aplicar a la descarga.
+Establece una propiedad de descarga. El método acepta un puntero a **un variant** que contiene una propiedad específica que se aplicará a la descarga.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,25 +38,25 @@ HRESULT SetProperty(
 
 `propId`
 
-IDENTIFICADOR de propiedad necesario que se va a establecer (de tipo **DODownloadProperty**).
+Identificador de propiedad necesario que se debe establecer (de tipo **DODownloadProperty**).
 
 `propVal`
 
-Valor de propiedad que se va a establecer, almacenado en una **variante**.
+Valor de propiedad que se establece, almacenado en **variant.**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](/windows/desktop/com/structure-of-com-error-codes) error [HRESULT](/windows/desktop/com/com-error-codes-10).
 
 |Valor devuelto|Descripción|
 |-|-|
-|DO_E_UNKNOWN_PROPERTY_ID|se desconoce el *propId* .|
+|DO_E_UNKNOWN_PROPERTY_ID|*propId* es desconocido.|
 |DO_E_INVALID_STATE|La descarga no está actualmente en un estado que permita establecer propiedades.|
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

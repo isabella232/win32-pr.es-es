@@ -1,19 +1,19 @@
 ---
-title: Interfaces de D3DCSX 11
-description: Esta sección contiene información de referencia sobre las interfaces COM que proporciona la biblioteca de la utilidad D3DCSX.
+title: D3DCSX 11 Interfaces
+description: Esta sección contiene información de referencia sobre las interfaces COM proporcionadas por la biblioteca de utilidades D3DCSX.
 ms.assetid: A4F5E487-AA6C-4C64-90CF-88587F2E8B8B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 812c052a0ab85eb16e51529b2a50c51dadcf99a9
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: f139b482dee20b53ef7663745579b465a1d6ec67fbd8b090e73ff139341beec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104421637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118537727"
 ---
-# <a name="d3dcsx-11-interfaces"></a>Interfaces de D3DCSX 11
+# <a name="d3dcsx-11-interfaces"></a>D3DCSX 11 Interfaces
 
-Esta sección contiene información de referencia sobre las interfaces COM que proporciona la biblioteca de la utilidad D3DCSX.
+Esta sección contiene información de referencia sobre las interfaces COM proporcionadas por la biblioteca de utilidades D3DCSX.
 
 
 ## <a name="in-this-section"></a>En esta sección
@@ -22,8 +22,8 @@ Esta sección contiene información de referencia sobre las interfaces COM que p
 
 | Tema                                                           | Descripción                                       |
 |-----------------------------------------------------------------|---------------------------------------------------|
-| [**ID3DX11FFT**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11fft)<br/>                     | Encapsula FFTs hacia delante e inversa.<br/> |
-| [**ID3DX11Scan**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11scan)<br/>                   | Examinar contexto.<br/>                          |
+| [**ID3DX11FFT**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11fft)<br/>                     | Encapsula los FFT inversos y hacia delante.<br/> |
+| [**ID3DX11Scan**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11scan)<br/>                   | Contexto de examen.<br/>                          |
 | [**ID3DX11SegmentedScan**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11segmentedscan)<br/> | Contexto de examen segmentado.<br/>                |
 
 

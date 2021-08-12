@@ -1,7 +1,7 @@
 ---
-description: Valida una malla de revisión, devolviendo el número de vértices degenerados y revisiones.
+description: Valida una malla de revisión y devuelve el número de vértices y revisiones degenerados.
 ms.assetid: a95ff9d9-d476-42ac-8d7e-1dc42418f763
-title: Función D3DXValidPatchMesh (D3DX9Mesh. h)
+title: Función D3DXValidPatchMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 87d7fbe15c78a8b768d845e6a23cc084b69f3e02
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6c3b7b28c763691af83dbb1ed0fe406fa6d370c82f9d8ffa702afa69566f2597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523821"
 ---
-# <a name="d3dxvalidpatchmesh-function"></a>D3DXValidPatchMesh función)
+# <a name="d3dxvalidpatchmesh-function"></a>Función D3DXValidPatchMesh
 
-Valida una malla de revisión, devolviendo el número de vértices degenerados y revisiones.
+Valida una malla de revisión y devuelve el número de vértices y revisiones degenerados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,39 +43,39 @@ HRESULT D3DXValidPatchMesh(
 
 <dl> <dt>
 
-*pMeshIn* \[ de\]
+*pMeshIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPATCHMESH**](id3dxpatchmesh.md)**
 
-Puntero a una interfaz [**ID3DXPatchMesh**](id3dxpatchmesh.md) que representa la malla de revisión que se va a probar.
+Puntero a una [**interfaz ID3DXPatchMesh,**](id3dxpatchmesh.md) que representa la malla de revisión que se va a probar.
 
 </dd> <dt>
 
-*pNumDegenerateVertices* \[ enuncia\]
+*pNumDegenerateVertices* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Devuelve el número de vértices degenerados en la malla de la revisión.
+Devuelve el número de vértices degenerados en la malla de revisión.
 
 </dd> <dt>
 
-*pNumDegeneratePatches* \[ enuncia\]
+*pNumDegeneratePatches* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Devuelve el número de revisiones degeneradas en la malla de la revisión.
+Devuelve el número de revisiones degeneradas en la malla de revisión.
 
 </dd> <dt>
 
-*ppErrorsAndWarnings* \[ enuncia\]
+*ppErrorsAndWarnings* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Devuelve un puntero a un búfer que contiene una cadena de errores y advertencias que explican los problemas detectados en la malla de la revisión.
+Devuelve un puntero a un búfer que contiene una cadena de errores y advertencias que explican los problemas encontrados en la malla de revisión.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Devuelve un puntero a un búfer que contiene una cadena de errores y advertencia
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método valida la malla comprobando si hay índices no válidos. La información del error está disponible en la salida del depurador.
+Este método valida la malla mediante la comprobación de índices no válidos. La información de error está disponible en la salida del depurador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Este método valida la malla comprobando si hay índices no válidos. La informa
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

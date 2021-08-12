@@ -1,6 +1,6 @@
 ---
-title: Método Suspend de IBackgroundCopyJob (Deliveryoptimization. h)
-description: Suspende un trabajo. Los nuevos trabajos, los trabajos que tienen errores y los trabajos que han terminado de transferir archivos se suspenden automáticamente.
+title: Método IBackgroundCopyJob Suspend (Deliveryoptimization.h)
+description: Suspende un trabajo. Los nuevos trabajos, los trabajos con errores y los trabajos que han terminado de transferir archivos se suspenden automáticamente.
 ms.assetid: 23EED354-A3AC-4865-8C06-ADA097851F96
 keywords:
 - Método Suspend
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dd4464a04f87a7759e9b51974eef2188ba1d0c2a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9458347c8f09a2f04c4e2800a0f2f747571f5519b322133ef4b874b15cf77a7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118542814"
 ---
-# <a name="ibackgroundcopyjobsuspend-method"></a>IBackgroundCopyJob:: Suspend (método)
+# <a name="ibackgroundcopyjobsuspend-method"></a>IBackgroundCopyJob::Suspend (método)
 
-Suspende un trabajo. Los nuevos trabajos, los trabajos que tienen errores y los trabajos que han terminado de transferir archivos se suspenden automáticamente.
+Suspende un trabajo. Los nuevos trabajos, los trabajos con errores y los trabajos que han terminado de transferir archivos se suspenden automáticamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve los siguientes valores **HRESULT** , así como otros.
+Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                          |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl>             | El trabajo se suspendió correctamente.<br/>                                                           |
-| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | El estado del trabajo no puede ser BG_JOB_STATE_CANCELLED o BG_JOB_STATE_ACKNOWLEDGED.<br/> |
+| <dl> <dt>S_OK**</dt> </dl>             | Suspendió correctamente el trabajo.<br/>                                                           |
+| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | El estado del trabajo no se puede BG_JOB_STATE_CANCELLED o BG_JOB_STATE_ACKNOWLEDGED.<br/> |
 
 
 
@@ -62,11 +62,11 @@ Este método devuelve los siguientes valores **HRESULT** , así como otros.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob se define como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
@@ -79,10 +79,10 @@ Este método devuelve los siguientes valores **HRESULT** , así como otros.
 [**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: CANCEL**](ibackgroundcopyjob-cancel.md)
+[**IBackgroundCopyJob::Cancel**](ibackgroundcopyjob-cancel.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: resume**](ibackgroundcopyjob-resume.md)
+[**IBackgroundCopyJob::Resume**](ibackgroundcopyjob-resume.md)
 </dt> </dl>
 
  

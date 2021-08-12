@@ -1,7 +1,7 @@
 ---
 description: Lo usan las aplicaciones para mostrar un cuadro de diálogo de dispositivo al usuario.
 ms.assetid: 3b486220-32ab-4d6c-872c-684f9d1ee660
-title: Función DeviceDialog (Wiadevd. h)
+title: Función DeviceDialog (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 7389b0466dadf530da6fb7cd386d8a57d92cf1c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de8a3d36472d51c24a2c007ad7be0be371a0b5d8bb39e75f457e204250e8f53b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441683"
 ---
-# <a name="devicedialog-function"></a>DeviceDialog función)
+# <a name="devicedialog-function"></a>Función DeviceDialog
 
 Lo usan las aplicaciones para mostrar un cuadro de diálogo de dispositivo al usuario.
 
@@ -40,12 +40,12 @@ HRESULT WINAPI DeviceDialog(
 
 <dl> <dt>
 
-*pDeviceDialogData* \[ de\]
+*pDeviceDialogData* \[ En\]
 </dt> <dd>
 
 Tipo: **PDEVICEDIALOGDATA**
 
-[**DEVICEDIALOGDATA**](-wia-devicedialogdata.md) que se va a usar para crear el cuadro de diálogo de dispositivo.
+[**DEVICEDIALOGDATA que se**](-wia-devicedialogdata.md) usará para crear el cuadro de diálogo del dispositivo.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Tipo: **PDEVICEDIALOGDATA**
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,10 +61,10 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

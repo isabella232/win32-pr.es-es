@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación PackageTempSensor de CIM representa la relación en la que un sensor de temperatura se instala a menudo en un paquete, como un chasis o un bastidor, para supervisar el entorno del paquete.
+description: La asociación CIM PackageTempSensor representa la relación en la que a menudo se instala un sensor de temperatura en un paquete, como un chasis o un bastidor, para supervisar el entorno \_ del paquete.
 ms.assetid: 79f2c4d1-5e1a-4c5f-9ef4-0c8bc3926a13
 ms.tgt_platform: multiple
-title: CIM_PackageTempSensor (clase)
+title: CIM_PackageTempSensor clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 28c3fa3ba569a2bf3101d62734bb9e4d5372fcf0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bf5df95b6e9ee5fd01eb86df80d7defb405c4ac6aa3e4dbdcc660d0f087fec7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679239"
 ---
-# <a name="cim_packagetempsensor-class"></a>\_Clase PackageTempSensor de CIM
+# <a name="cim_packagetempsensor-class"></a>Cim \_ PackageTempSensor (clase)
 
-La **Asociación \_ PackageTempSensor de CIM** representa la relación en la que un sensor de temperatura se instala a menudo en un paquete, como un chasis o un bastidor, para supervisar el entorno del paquete.
+La **asociación \_ CIM PackageTempSensor** representa la relación en la que a menudo se instala un sensor de temperatura en un paquete, como un chasis o un bastidor, para supervisar el entorno del paquete.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,13 +47,13 @@ class CIM_PackageTempSensor : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ PackageTempSensor** tiene estos tipos de miembros:
+La **clase \_ Cim PackageTempSensor** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ PackageTempSensor** tiene estas propiedades.
+La **clase \_ Cim PackageTempSensor** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,14 +66,14 @@ Tipo de datos: **CIM \_ TemperatureSensor**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ TemperatureSensor de CIM**](cim-temperaturesensor.md) que describe el sensor de temperatura para el paquete.
+Cim [**\_ TemperatureSensor que**](cim-temperaturesensor.md) describe el sensor de temperatura del paquete.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ PhysicalPackage**
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ PhysicalPackage**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ PhysicalPackage de CIM**](cim-physicalpackage.md) que describe el paquete físico cuyo entorno se supervisa.
+Un [**paquete \_ físico CIM**](cim-physicalpackage.md) que describe el paquete físico cuyo entorno se supervisa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-**CIM \_ PackageTempSensor** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+**CIM \_ PackageTempSensor** se deriva de la [**dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

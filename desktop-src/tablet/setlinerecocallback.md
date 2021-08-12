@@ -1,7 +1,7 @@
 ---
-description: Establece una función de devolución de llamada que se va a usar durante el reconocimiento de línea.
+description: Establece una función de devolución de llamada que se usará durante el reconocimiento de líneas.
 ms.assetid: 0b07ec80-328a-471b-b554-fa66f56a2871
-title: SetLineRecoCallback función)
+title: Función SetLineRecoCallback
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: b256a38d6d6ee6ecf43994c6619c369ea6ca2212
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b0e146152f88a8847b76ac9d00cf7b10c0d5ebfdafa1dc483eca4d946517fd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449305"
 ---
-# <a name="setlinerecocallback-function"></a>SetLineRecoCallback función)
+# <a name="setlinerecocallback-function"></a>Función SetLineRecoCallback
 
-Establece una función de devolución de llamada que se va a usar durante el reconocimiento de línea.
+Establece una función de devolución de llamada que se usará durante el reconocimiento de líneas.
 
-Esta función auxiliar no está pensada para que la use el código de aplicación.
+Esta función auxiliar no está pensada para que la utilice el código de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ HRESULT WINAPI SetLineRecoCallback(
 
 <dl> <dt>
 
-*hDivider* \[ de\]
+*hDivider* \[ En\]
 </dt> <dd>
 
-Identificador del objeto [**InkDivider**](inkdivider-class.md) .
+Identificador del objeto [**InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
 *pfn* 
 </dt> <dd>
 
-Puntero a una función a la que se llama cuando se produce el reconocimiento en el [**InkDivider**](inkdivider-class.md) que se pasa.
+Puntero a una función a la que se llama cuando se produce el reconocimiento en el [**objeto InkDivider**](inkdivider-class.md) pasado.
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Esta función puede devolver uno de estos valores.
 
 | Código devuelto                                                                                  | Descripción                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | La función se ha realizado correctamente.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El parámetro *pDivider* no es válido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | La función se ha realizado correctamente.<br/>              |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El *parámetro pDivider* no es válido.<br/> |
 
 
 
@@ -74,7 +74,7 @@ Esta función puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-La siguiente es la sintaxis de la función de devolución de llamada.
+A continuación se muestra la sintaxis de la función de devolución de llamada.
 
 ``` syntax
 public delegate void GetLineRecoDef(
@@ -96,7 +96,7 @@ public delegate void GetLineRecoDef(
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

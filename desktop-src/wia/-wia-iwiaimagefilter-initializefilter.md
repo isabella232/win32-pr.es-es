@@ -1,7 +1,7 @@
 ---
-description: Inicializa el filtro. Lo llama la adquisición de imágenes de Windows (WIA) 2,0 antes de descargar cada imagen.
+description: Inicializa el filtro. Lo llama Windows Image Acquisition (WIA) 2.0 antes de que se descargue cada imagen.
 ms.assetid: 0487900d-2103-4314-b18d-58ff97d6f524
-title: 'IWiaImageFilter:: InitializeFilter (método) (WIA. h)'
+title: Método IWiaImageFilter::InitializeFilter (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: a113c9493128a634ce61ccf7c0362bf7a9767f72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43b818c3adc9926c4ba27f11f5d489ffc0b97e4443d0427e7a12067e9062072a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440450"
 ---
-# <a name="iwiaimagefilterinitializefilter-method"></a>IWiaImageFilter:: InitializeFilter (método)
+# <a name="iwiaimagefilterinitializefilter-method"></a>IWiaImageFilter::InitializeFilter (método)
 
-Inicializa el filtro. Lo llama la adquisición de imágenes de Windows (WIA) 2,0 antes de descargar cada imagen.
+Inicializa el filtro. Lo llama Windows Image Acquisition (WIA) 2.0 antes de que se descargue cada imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,21 +40,21 @@ HRESULT InitializeFilter(
 
 <dl> <dt>
 
-*pWiaItem2* \[ de\]
+*pWiaItem2* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
-Especifica un puntero al elemento [_ *IWiaItem2* *](-wia-iwiaitem2.md) que representa la imagen de vista previa.
+Especifica un puntero al elemento [**IWiaItem2**](-wia-iwiaitem2.md) que representa la imagen de vista previa.
 
 </dd> <dt>
 
-*pWiaTransferCallback* \[ de\]
+*pWiaTransferCallback* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Especifica un puntero a la interfaz [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) de la aplicación.
+Especifica un puntero a la interfaz [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) de la aplicación.
 
 </dd> </dl>
 
@@ -62,11 +62,11 @@ Especifica un puntero a la interfaz [_ *IWiaTransferCallback* *](-wia-iwiatransf
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Se llama a este método cuando una aplicación llama a [**download**](-wia-iwiatransfer-download.md) y cuando una aplicación llama a la función del componente de vista previa de WIA 2,0 `GetNewPreview` . **IWiaImageFilter:: InitializeFilter** almacena las referencias a *pWiaItem2* y *pWiaTransferCallback* para pasarlas a estas funciones. Estos dos punteros de interfaz deben almacenarse como variables de miembro y se debe llamar a [IUnknown:: AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) para cada uno. Los punteros de interfaz también son necesarios en la implementación del filtro de [**TransferCallback**](-wia-iwiatransfercallback-transfercallback.md) y [**GetNextStream**](-wia-iwiatransfercallback-getnextstream.md) durante la adquisición de la imagen.
+Se llama a este método cuando una aplicación llama a [**Download y**](-wia-iwiatransfer-download.md) cuando una aplicación llama a la función del componente de versión preliminar de WIA 2.0. `GetNewPreview` **IWiaImageFilter::InitializeFilter** almacena las referencias a *pWiaItem2* y *pWiaTransferCallback* para pasar a estas funciones. Estos dos punteros de interfaz deben almacenarse como variables miembro e [IUnknown::AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) se debe llamar a para cada uno. Los punteros de interfaz también son necesarios en la implementación del filtro de [**TransferCallback**](-wia-iwiatransfercallback-transfercallback.md) y [**GetNextStream**](-wia-iwiatransfercallback-getnextstream.md) durante la adquisición de imágenes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,10 +74,10 @@ Se llama a este método cuando una aplicación llama a [**download**](-wia-iwiat
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

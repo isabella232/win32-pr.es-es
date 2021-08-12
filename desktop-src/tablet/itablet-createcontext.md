@@ -1,7 +1,7 @@
 ---
 description: Crea un objeto de contexto que describe el dispositivo de tableta especificado.
 ms.assetid: 76f48485-a958-4457-9b87-73de73fa671e
-title: 'ITablet:: CreateContext (método)'
+title: ITablet::CreateContext (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 9f1214f7f9e429b5f9b5b9614c2ccfc7fd1800b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b67e4c15d40f2da7a616295f10a7762b242fb40d9c0b5f42c00eb51d190cc03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118450580"
 ---
-# <a name="itabletcreatecontext-method"></a>ITablet:: CreateContext (método)
+# <a name="itabletcreatecontext-method"></a>ITablet::CreateContext (método)
 
 Crea un objeto de contexto que describe el dispositivo de tableta especificado.
 
@@ -48,49 +48,49 @@ HRESULT CreateContext(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hWnd* \[ En\]
 </dt> <dd>
 
-Ventana a la que se adjuntará el contexto de Tablet PC.
+Ventana a la que se adjuntará el contexto de la tableta.
 
 </dd> <dt>
 
-*prcInput* \[ de\]
+*prcInput* \[ En\]
 </dt> <dd>
 
-\[en, único\]
+\[in, unique\]
 
-Rectángulo de entrada manuscrita.
+Rectángulo de entrada de lápiz.
 
 </dd> <dt>
 
-*dwOptions* \[ de\]
+*dwOptions* \[ En\]
 </dt> <dd>
 
-Marcas que establecen opciones de contexto de Tablet PC.
+Marcas que establecen opciones de contexto de tableta.
 
 </dd> <dt>
 
-*pTCS* \[ de\]
+*pTCS* \[ En\]
 </dt> <dd>
 
-\[en, único\]
+\[in, unique\]
 
-Información detallada sobre el contexto de la tableta que se va a crear.
+Información detallada sobre el contexto de tableta que se creará.
 
 </dd> <dt>
 
-*CET* \[ de\]
+*cet* \[ En\]
 </dt> <dd>
 
 Valor que habilita o deshabilita los mensajes de contexto que se envían a la ventana.
 
 </dd> <dt>
 
-*ppCtx* \[ enuncia\]
+*ppCtx* \[ out\]
 </dt> <dd>
 
-Puntero al nuevo contexto de Tablet PC.
+Puntero al contexto de tableta recién creado.
 
 </dd> <dt>
 
@@ -104,14 +104,14 @@ Valor que identifica de forma única la tableta.
 *ppPD* \[ in, out\]
 </dt> <dd>
 
-Puntero a información acerca de los datos contenidos en cada paquete.
+Puntero a información sobre los datos que contiene cada paquete.
 
 </dd> <dt>
 
-*pSink* \[ de\]
+*pSink* \[ En\]
 </dt> <dd>
 
-Objeto [**ITabletEventSink**](itableteventsink.md) en el que se enviarán los mensajes de notificación.
+Objeto [**ITabletEventSink**](itableteventsink.md) donde se enviarán los mensajes de notificación.
 
 </dd> </dl>
 
@@ -123,7 +123,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -132,32 +132,32 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-Normalmente, una aplicación obtiene los valores predeterminados del [**método ITablet:: GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md), modifica los valores para satisfacer sus necesidades y, a continuación, pasa la estructura de configuración modificada al **método ITablet:: CreateContext**.
+Normalmente, una aplicación obtiene los valores predeterminados del método [**ITablet::GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md), modifica los valores para satisfacer sus necesidades y, a continuación, pasa la estructura de configuración modificada al método **ITablet::CreateContext**.
 
 > [!Note]  
-> Debe implementar la [**interfaz ITabletEventSink**](itableteventsink.md) al llamar al **método ITablet:: CreateContext**.
+> Debe implementar la interfaz [**ITabletEventSink al**](itableteventsink.md) llamar al **método ITablet::CreateContext**.
 
  
 
-El parámetro *dwOptions* es un conjunto de marcadores de bits que describen las opciones de contexto. En la tabla siguiente se describen estas marcas.
+El *parámetro dwOptions* es un conjunto de marcas de bits que describen las opciones de contexto. En la tabla siguiente se describen estas marcas.
 
 
 
 | Nombre de marca                                | Value                                                                                                                                                                                         | Descripción                                                                                                                                                                                                                                                              |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_margen TCXO<br/>                  | 0x00000001<br/>                                                                                                                                                                         | Especifica que el contexto de entrada de la tableta tendrá un margen. El margen es un área fuera del área de entrada especificada en la que se asignarán los eventos al borde del área de entrada. Esta característica facilita la entrada de puntos en el borde del contexto.<br/> |
-| PREENLACE TCXO \_<br/>                 | 0x00000002<br/>                                                                                                                                                                         | El PREENLACE obtiene los paquetes antes de los contextos y los postenlaces normales. Reciben paquetes en el orden en que se crean.<br/>                                                                                                                                                  |
-| \_Estado de cursor de TCXO \_<br/>           | 0x00000004<br/>                                                                                                                                                                         | El TC devolverá los paquetes aunque el cursor esté activo. De forma predeterminada, un TC solo devolverá los paquetes cuando el cursor esté inactivo.<br/>                                                                                                                                       |
-| TCXO \_ sin \_ cursor \_ inactivo<br/>        | 0x00000008<br/>                                                                                                                                                                         | El TC no devolverá los paquetes cuando el cursor esté inactivo.<br/>                                                                                                                                                                                                       |
-| TCXO \_ no \_ integrado<br/>         | 0x00000010<br/>                                                                                                                                                                         | El contexto no estará integrado.<br/>                                                                                                                                                                                                                           |
-| posthook de TCXO \_<br/>                | 0x00000020<br/>                                                                                                                                                                         | Los posthooks reciben paquetes después de los contextos de Tablet PC normales, pero antes del contexto del sistema. Reciben paquetes en el orden inverso a la creación.<br/>                                                                                                                   |
-| TCXO \_ no \_ Mostrar \_ cursor<br/>      | 0x00000080<br/>                                                                                                                                                                         | El TC no establecerá la posición del cursor.<br/>                                                                                                                                                                                                                      |
-| TCXO \_ no \_ validar \_ ect<br/>     | 0x00000100<br/>                                                                                                                                                                         | El TC no validará los GUID que se pasan en los valores de contexto de la tableta con las propiedades compatibles del dispositivo.<br/>                                                                                                                                      |
-| TCXO \_ permitir \_ gestos<br/>           | 0x00000400<br/>                                                                                                                                                                         | El TC permitirá que se produzca la detección de gestos (de forma predeterminada, solo se permite en contextos del sistema) y el cliente obtendrá \_ los eventos de gestos.<br/>                                                                                                               |
-| TCXO \_ permitir \_ \_ pulsaciones de comentarios<br/>   | 0x00000800<br/>                                                                                                                                                                         | El TC permitirá mostrar los comentarios del lápiz. De forma predeterminada, solo se permite en contextos del sistema.<br/>                                                                                                                                                              |
-| TCXO \_ permitir \_ el \_ barril de comentarios<br/> | 0x00001000<br/>                                                                                                                                                                         | El TC permitirá mostrar los comentarios del lápiz. De forma predeterminada, solo se permite en contextos del sistema.<br/>                                                                                                                                                              |
-| TCXO \_ todo<br/>                     | TCXO \_ margin \| TCXO \_ preenganchat \| TCXO \_ cursor \_ State \| TCXO not \_ \_ cursor \_ Down \| TCXO \_ \_ unintegrated \| TCXO \_ posthook \| TCXO no \_ \_ Show \_ cursor TCXO no \| \_ \_ validar \_ ect<br/> | Todas las opciones de contexto de Tablet PC definidas.<br/>                                                                                                                                                                                                                           |
-| \_enlace TCXO<br/>                    | TCXO de \_ PREenlace de \| TCXO \_<br/>                                                                                                                                                    | Combina la funcionalidad de enlace previo y posterior al enlace.<br/>                                                                                                                                                                                                                |
+| TCXO \_ MARGIN<br/>                  | 0x00000001<br/>                                                                                                                                                                         | Especifica que el contexto de entrada de la tableta tendrá un margen. El margen es un área fuera del área de entrada especificada donde los eventos se asignarán al borde del área de entrada. Esta característica facilita la entrada de puntos en el borde del contexto.<br/> |
+| TCXO \_ PREHOOK<br/>                 | 0x00000002<br/>                                                                                                                                                                         | El prehook obtiene paquetes antes que los contextos normales y los posthooks. Obtienen paquetes en el orden de creación.<br/>                                                                                                                                                  |
+| ESTADO DEL CURSOR TC TC \_ \_ TC TC<br/>           | 0x00000004<br/>                                                                                                                                                                         | El TC devolverá paquetes incluso si el cursor está en marcha. De forma predeterminada, un TC solo devolverá paquetes cuando el cursor esté fuera de servicio.<br/>                                                                                                                                       |
+| TCXO \_ NO \_ CURSOR \_ DOWN<br/>        | 0x00000008<br/>                                                                                                                                                                         | El TC no devolverá paquetes cuando el cursor esté fuera de servicio.<br/>                                                                                                                                                                                                       |
+| TCXO \_ NO \_ INTEGRADO<br/>         | 0x00000010<br/>                                                                                                                                                                         | El contexto no estará integrado.<br/>                                                                                                                                                                                                                           |
+| TCXO \_ POSTHOOK<br/>                | 0x00000020<br/>                                                                                                                                                                         | Los posthooks obtienen paquetes después de contextos de tableta normales, pero antes del contexto del sistema. Obtienen paquetes en el orden inverso de su creación.<br/>                                                                                                                   |
+| TCXO \_ DONT \_ SHOW \_ CURSOR<br/>      | 0x00000080<br/>                                                                                                                                                                         | El TC no establecerá la posición del cursor.<br/>                                                                                                                                                                                                                      |
+| TCXO \_ NO \_ VALIDA \_ TCS<br/>     | 0x00000100<br/>                                                                                                                                                                         | El TC no validará los GUID pasados en la configuración del contexto de la tableta con las propiedades admitidas del dispositivo.<br/>                                                                                                                                      |
+| TCXO \_ ALLOW \_ FLICKS<br/>           | 0x00000400<br/>                                                                                                                                                                         | El TC permitirá que se lleve a cabo la detección de gestos (de forma predeterminada, solo se permite en contextos del sistema) y el cliente SE \_ eventos FLICK.<br/>                                                                                                               |
+| TCXO \_ ALLOW \_ FEEDBACK \_ TAPS<br/>   | 0x00000800<br/>                                                                                                                                                                         | El TC permitirá mostrar los comentarios del lápiz. De forma predeterminada, esto solo se permite en contextos del sistema.<br/>                                                                                                                                                              |
+| TCXO \_ PERMITIR COMENTARIOS \_ SOBRE COMENTARIOS \_<br/> | 0x00001000<br/>                                                                                                                                                                         | El TC permitirá mostrar los comentarios del lápiz. De forma predeterminada, esto solo se permite en contextos del sistema.<br/>                                                                                                                                                              |
+| TC TC \_ TC ALL<br/>                     | TCJO \_ MARGIN \| TCJO \_ PREHOOK \| TCXO CURSOR STATE \_ \_ \| TCXO NO CURSOR DOWN \_ \_ \_ \| \_ \_ TCJO NON INTEGRATED \| \_ TCJO POSTHOOK \| TCJO \_ DONT SHOW CURSOR \_ \_ \| TCXO \_ DONT VALIDATE \_ \_ TCS<br/> | Todas las opciones de contexto de tableta definidas.<br/>                                                                                                                                                                                                                           |
+| TCXO \_ HOOK<br/>                    | TCJO \_ PREHOOK \| TCJO \_ POSTHOOK<br/>                                                                                                                                                    | Combina la funcionalidad de enlace previo y posterior.<br/>                                                                                                                                                                                                                |
 
 
 
@@ -169,7 +169,7 @@ El parámetro *dwOptions* es un conjunto de marcadores de bits que describen las
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -179,22 +179,22 @@ El parámetro *dwOptions* es un conjunto de marcadores de bits que describen las
 
 <dl> <dt>
 
-[**Interfaz ITablet**](itablet.md)
+[**ITablet (interfaz)**](itablet.md)
 </dt> <dt>
 
-[**\_Enumeración de tipo de habilitación de contexto \_**](context-enable-type.md)
+[**CONTEXT \_ ENABLE \_ TYPE (Enumeración)**](context-enable-type.md)
 </dt> <dt>
 
-[**Estructura de configuración de \_ contexto de Tablet \_**](tablet-context-settings.md)
+[**Estructura DE \_ CONFIGURACIÓN DE CONTEXTO DE \_ TABLETA**](tablet-context-settings.md)
 </dt> <dt>
 
-[**Estructura de descripción de paquetes \_**](/windows/desktop/api/tpcshrd/ns-tpcshrd-packet_description)
+[**ESTRUCTURA DE \_ DESCRIPCIÓN DE PAQUETES**](/windows/desktop/api/tpcshrd/ns-tpcshrd-packet_description)
 </dt> <dt>
 
-[**Interfaz ITabletContextP**](itabletcontextp.md)
+[**ITabletContextP (interfaz)**](itabletcontextp.md)
 </dt> <dt>
 
-[**Interfaz ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink (interfaz)**](itableteventsink.md)
 </dt> </dl>
 
  

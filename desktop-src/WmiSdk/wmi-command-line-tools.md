@@ -1,8 +1,8 @@
 ---
-description: WMI tiene varias herramientas de línea de comandos que usan los administradores y los escritores de proveedores de WMI.
+description: WMI tiene varias herramientas de línea de comandos que usan los administradores y los escritores de proveedores WMI.
 ms.assetid: 4766ca5b-81da-4167-b4f1-a215178a828a
 ms.tgt_platform: multiple
-title: Herramientas de línea de comandos de WMI
+title: Herramientas de la línea de comandos wmi
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,25 +10,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 27331ccdc0decb030656e5497f3458720672e507
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f21685c91dd613d7b5c066dd6fa8ea174e493dbbac07c345da6b145d410e2c69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118553149"
 ---
-# <a name="wmi-command-line-tools"></a>Herramientas de línea de comandos de WMI
+# <a name="wmi-command-line-tools"></a>Herramientas de la línea de comandos wmi
 
-WMI tiene varias herramientas de línea de comandos que usan los administradores y los escritores de proveedores de WMI.
+WMI tiene varias herramientas de línea de comandos que usan los administradores y los escritores de proveedores WMI.
 
 
 
 | Sección                      | Descripción                                                                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MOFCOMP**](mofcomp.md)   | Compila el código Managed Object Format (MOF) en formato binario almacenado en el repositorio WMI. Utilice al crear o modificar el archivo MOF para un proveedor WMI.<br/> |
+| [**mofcomp**](mofcomp.md)   | Compila Managed Object Format (MOF) en formato binario almacenado en el repositorio WMI. Se usa al crear o modificar el archivo MOF para un proveedor WMI.<br/> |
 | [**smi2smir**](smi2smir.md) | Acepta un módulo de información SNMP como entrada y acepta los módulos adicionales necesarios para resolver referencias externas.<br/>                               |
-| [**WinMgmt**](winmgmt.md)   | Ejecuta el servicio WMI. A partir de Windows Vista, se han agregado varios modificadores nuevos.<br/>                                                                |
-| [**wmiadap**](wmiadap.md)   | Ejecuta la herramienta de línea de comandos ADAP para analizar y transferir las bibliotecas de rendimiento al repositorio WMI.<br/>                                                       |
+| [**Winmgmt**](winmgmt.md)   | Ejecuta el servicio WMI. A partir Windows Vista, se han agregado varios modificadores nuevos.<br/>                                                                |
+| [**wmiadap**](wmiadap.md)   | Ejecuta la herramienta de línea de comandos de ADAP para analizar y transferir bibliotecas de rendimiento al repositorio WMI.<br/>                                                       |
 | [**wmic**](wmic.md)         | Realiza operaciones WMI en el símbolo del sistema.<br/>                                                                                                               |
 
 

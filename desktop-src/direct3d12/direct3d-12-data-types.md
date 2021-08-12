@@ -1,20 +1,20 @@
 ---
 title: Tipos de datos principales
-description: Los siguientes tipos de datos se declaran en d3d12. h.
+description: Los siguientes tipos de datos se declaran en d3d12.h.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 11/27/2018
-ms.openlocfilehash: bbbaaa48e10afa06953be09a062cff11b9c97c9c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d0ba6b73ae04055d001e4bfcd368aa814c7482a8107fb0bded468ec78bb1b801
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118529909"
 ---
 # <a name="core-data-types"></a>Tipos de datos principales
 
-Los siguientes tipos de datos se declaran en d3d12. h.
+Los siguientes tipos de datos se declaran en d3d12.h.
 
 ## <a name="in-this-section"></a>En esta sección
 

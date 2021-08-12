@@ -1,15 +1,15 @@
 ---
-description: 'Evento InkPicture.CursorButtonUp: se produce cuando InkCollector detecta un botón de cursor que está en marcha.'
+description: 'Evento InkPicture.CursorButtonUp: se produce cuando InkCollector detecta un botón de cursor que está encendido.'
 ms.assetid: bb10b032-a88d-4b52-9062-c0b63dfe98e9
-title: Evento InkPicture.CursorButtonUp (Msplaceut.h)
+title: Evento InkPicture.CursorButtonUp (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 639d0cbd89e2ca44d8855b6508c5284f59a7c654
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 56a84a5d8529ecf6387d3832608ae3821be9d317fef46211a6824bddc2ee9574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451086"
 ---
 # <a name="inkpicturecursorbuttonup-event"></a>Evento InkPicture.CursorButtonUp
 
@@ -34,7 +34,7 @@ void CursorButtonUp(
 *Cursor* \[ En\]
 </dt> <dd>
 
-Objeto [**IInkCursor Interface que**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) generó el evento **CursorButtonUp.**
+Objeto [**IInkCursor Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que generó el **evento CursorButtonUp.**
 
 </dd> <dt>
 
@@ -49,28 +49,28 @@ Botón que se ha liberado.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un botón de una punta de lápiz está arriba cuando el usuario completa un trazo y eleva el lápiz del digitalizador. Un botón de un menú está en marcha cuando no se presiona el botón.
+Un botón de una punta de lápiz está arriba cuando el usuario completa un trazo y eleva el lápiz del digitalizador. Un botón de un cilindro está en marcha cuando no se presiona el botón.
 
-Cuando se suelta el botón derecho del mouse, se reciben dos eventos **CursorButtonUp:** uno para el botón derecho hacia arriba y otro para el botón izquierdo hacia arriba.
+Cuando suelte el botón derecho del mouse, recibirá dos eventos **CursorButtonUp:** uno para el botón derecho hacia arriba y otro para el botón izquierdo hacia arriba.
 
-Este método de evento se define en las **\_ interfaces IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de \_ DISPID ICECursorButtonUp.
+Este método de evento se define en las **\_ interfaces IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ ICECursorButtonUp.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

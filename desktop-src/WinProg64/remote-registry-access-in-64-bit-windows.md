@@ -1,36 +1,36 @@
 ---
-title: Acceso remoto al registro en Windows de 64 bits
-description: El redirector del registro proporciona acceso remoto al registro en Windows de 64 bits a través de la función RegConnectRegistry.
+title: Acceso remoto al Registro en aplicaciones de 64 Windows
+description: El redirector del registro proporciona acceso remoto al registro en un servidor de 64 Windows a través de la función RegConnectRegistry.
 ms.assetid: 7873c1e2-53fb-4c93-bf4c-251a13cd8db7
 keywords:
-- acceso al registro remoto de 64 bits programación de Windows
+- acceso remoto al registro de 64 bits Windows programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a139198ca08e0fdb9d7bcb070dcabf89dfa5403
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2f066641b080ace60a62c882a4abd0190e20537259517a2e789b4d450e352349
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105695608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118561456"
 ---
-# <a name="remote-registry-access-in-64-bit-windows"></a>Acceso remoto al registro en Windows de 64 bits
+# <a name="remote-registry-access-in-64-bit-windows"></a>Acceso remoto al Registro en aplicaciones de 64 Windows
 
-El redirector del registro proporciona acceso remoto al registro en Windows de 64 bits a través de la función [**RegConnectRegistry**](/windows/desktop/api/winreg/nf-winreg-regconnectregistrya) .
+El redirector del registro proporciona acceso remoto al registro en un servidor de 64 Windows a través de la [**función RegConnectRegistry.**](/windows/desktop/api/winreg/nf-winreg-regconnectregistrya)
 
-Si el cliente es una aplicación de 32 bits, tiene acceso a la vista del registro de 32 bits predeterminada del servidor. Si el cliente es una aplicación de 64 bits, tiene acceso a la vista del registro de 64 bits.
+Si el cliente es una aplicación de 32 bits, accede a la vista predeterminada del Registro de 32 bits del servidor. Si el cliente es una aplicación de 64 bits, accede a la vista del Registro de 64 bits.
 
-**Windows Server 2003:** Todos los clientes acceden a la vista del registro de 64 bits a menos que la aplicación use la marca de clave \_ WOW64 \_ 32KEY. Este comportamiento cambió con Windows Server 2003 con Service Pack 1 (SP1) y Windows XP Professional x64 Edition, siempre que tanto el cliente como el servidor ejecuten estas versiones de Windows.
+**Windows Server 2003:** Todos los clientes acceden a la vista del Registro de 64 bits a menos que la aplicación use la marca \_ KEY WOW64 \_ 32KEY. Este comportamiento cambió con Windows Server 2003 con Service Pack 1 (SP1) y Windows XP Professional x64 Edition, siempre que el cliente y el servidor ejecuten estas versiones de Windows.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Redirector del registro](registry-redirector.md)
+[Redirector del Registro](registry-redirector.md)
 </dt> <dt>
 
-[Reflexión del registro](registry-reflection.md)
+[Reflexión del Registro](registry-reflection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

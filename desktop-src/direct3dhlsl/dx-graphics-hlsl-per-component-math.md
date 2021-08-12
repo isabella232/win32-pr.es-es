@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5cd065e415aafffa59dd6c31d2b9aa4f4505021d
-ms.sourcegitcommit: 7c7a05f65d2cf1ba2dadf05f63ae91a048083946
+ms.openlocfilehash: 96181604b04e888159352e06cc15305ea5b047fda4f2e4e161b81822e64e6c02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113589592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513726"
 ---
 # <a name="per-component-math-operations"></a>Per-Component operaciones matemáticas
 
@@ -22,13 +22,13 @@ Con HLSL, puede programar sombreadores en un nivel de algoritmo. Para entender e
 
 Una vez que aprenda a crear sombreadores en HLSL, deberá obtener información sobre las llamadas API para que pueda: compilar un sombreador para hardware determinado, inicializar constantes de sombreador e inicializar otro estado de canalización si es necesario.
 
--   [Tipo de vector](#the-vector-type)
+-   [El tipo de vector](#the-vector-type)
 -   [El tipo de matriz](#the-matrix-type)
     -   [Ordenación de matrices](#matrix-ordering)
 -   [Ejemplos](#examples)
 -   [Temas relacionados](#related-topics)
 
-## <a name="the-vector-type"></a>Tipo de vector
+## <a name="the-vector-type"></a>El tipo de vector
 
 Un vector es una estructura de datos que contiene entre uno y cuatro componentes.
 
@@ -76,7 +76,7 @@ Los vectores contienen hasta cuatro componentes, a los que se puede acceder medi
 -   El conjunto de posiciones: x,y,z,w
 -   El conjunto de colores: r,g,b,a
 
-Ambas instrucciones devuelven el valor en el tercer componente.
+Ambas instrucciones devuelven el valor del tercer componente.
 
 
 ```
@@ -276,7 +276,7 @@ También se puede acceder a una matriz mediante la notación de acceso de matriz
 -   \[0 \] \[ 0 \] , \[ 0 \] \[ 1 \] , \[ 0 \] \[ 2 \] , \[ 0 \] \[ 3\]
 -   \[1 \] \[ \] 0, \[ 1 \] \[ \] 1, \[ 1 \] \[ \] 2, \[ 1 \] \[ 3\]
 -   \[2 \] \[ \] 0, \[ 2 \] \[ \] 1, \[ 2 \] \[ 2 \] , \[ 2 \] \[ 3\]
--   \[3 \] \[ 0 \] , \[ 3 \] \[ 1 \] , \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]
+-   \[3 \] \[ \] 0, \[ 3 \] \[ \] 1, \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]
 
 Este es un ejemplo de acceso a una matriz:
 
@@ -371,7 +371,7 @@ El orden de empaquetado de la matriz para los parámetros uniformes se establece
 
 Los datos de una matriz se cargan en registros constantes de sombreador antes de que se ejecute un sombreador. Hay dos opciones para leer los datos de la matriz: en orden principal de fila o en orden de columna principal. El orden principal de columna significa que cada columna de matriz se almacenará en un único registro constante y el orden principal de fila significa que cada fila de la matriz se almacenará en un único registro constante. Esta es una consideración importante para el número de registros constantes que se usan para una matriz.
 
-Una matriz principal de fila se dispone de la siguiente manera:
+Se dispone una matriz principal de filas como la siguiente:
 
 :::row:::
     :::column:::
@@ -549,7 +549,7 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-En este ejemplo se convierte el vector pos en un vector de columna mediante la conversión (float1x4). Cambiar un vector mediante conversión o intercambiar el orden de los argumentos proporcionados para multiplicar es equivalente a cambiar la matriz.
+En este ejemplo se convierte el vector pos en un vector de columna mediante la conversión (float1x4). Cambiar un vector mediante la conversión o el intercambio del orden de los argumentos proporcionados para multiplicar es equivalente a cambiar la matriz.
 
 La conversión automática hace que las funciones intrínsecas de multiplicación y punto devuelvan los mismos resultados que se usan aquí:
 

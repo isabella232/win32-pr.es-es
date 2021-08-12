@@ -1,7 +1,7 @@
 ---
-description: Cree un bombeo de subprocesos.
+description: Cree una bomba de subprocesos.
 ms.assetid: a7a016e2-784d-4d7a-8058-88895bf3c4e2
-title: Función D3DX10CreateThreadPump (D3DX10. h)
+title: Función D3DX10CreateThreadPump (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8a27f8df1f4eaa8e7f41e863d703063308f9c595
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 99b5766625f2a269d1fb36e9e808c206d0e3040419f505622ccfe1e27ca4bcdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541069"
 ---
-# <a name="d3dx10createthreadpump-function"></a>D3DX10CreateThreadPump función)
+# <a name="d3dx10createthreadpump-function"></a>Función D3DX10CreateThreadPump
 
-Cree un bombeo de subprocesos.
+Cree una bomba de subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT D3DX10CreateThreadPump(
 
 <dl> <dt>
 
-*cIoThreads* \[ de\]
+*cIoThreads* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de subprocesos de e/s que se van a crear. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
+Número de subprocesos de E/S que se crearán. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
 
 </dd> <dt>
 
-*cProcThreads* \[ de\]
+*cProcThreads* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de subprocesos del proceso que se van a crear. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
+Número de subprocesos de proceso que se crearán. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
 
 </dd> <dt>
 
-*ppThreadPump* \[ enuncia\]
+*ppThreadPump* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\*\***
 
-El bombeo de subprocesos creado. Consulte la [**interfaz ID3DX10ThreadPump**](id3dx10threadpump.md).
+El bombeo de subprocesos creado. Vea [**Id3DX10ThreadPump (interfaz).**](id3dx10threadpump.md)
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ El bombeo de subprocesos creado. Consulte la [**interfaz ID3DX10ThreadPump**](id
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Un bombeo de subprocesos es un objeto que consume muchos recursos. Solo se debe crear un bombeo de subprocesos por aplicación.
+Una bomba de subprocesos es un objeto que consume muchos recursos. Solo se debe crear un bombeo de subprocesos por aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Un bombeo de subprocesos es un objeto que consume muchos recursos. Solo se debe 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Un bombeo de subprocesos es un objeto que consume muchos recursos. Solo se debe 
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

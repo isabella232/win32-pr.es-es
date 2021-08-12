@@ -1,8 +1,8 @@
 ---
-title: 'IDOManager:: CreateDownload (método)'
+title: Método IDOManager::CreateDownload
 description: Crea una nueva descarga.
 keywords:
-- 'IDOManager:: CreateDownload (método)'
+- Método IDOManager::CreateDownload
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: b79bf0a1c5602fafea113585dfe6e8ca5b01057c
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 87b78afdf5687bb60efb77815898274a8fb405f588f28b263eb1b01a752a9bc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104420043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543842"
 ---
-# <a name="idomanagercreatedownload-method"></a>IDOManager:: CreateDownload (método)
+# <a name="idomanagercreatedownload-method"></a>Método IDOManager::CreateDownload
 
 Crea una nueva descarga.
 
@@ -37,16 +37,16 @@ HRESULT CreateDownload(
 
 `download`
 
-Dirección de un puntero de interfaz **IDODownload** .
+Dirección de un puntero de **interfaz IDODownload.**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](/windows/desktop/com/structure-of-com-error-codes) error [HRESULT](/windows/desktop/com/com-error-codes-10).
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

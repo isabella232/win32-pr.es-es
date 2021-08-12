@@ -1,9 +1,9 @@
 ---
-title: BITS_FILE_PROPERTY_VALUE estructura (Deliveryoptimization. h)
-description: La Unión BITS_FILE_PROPERTY_VALUE proporciona el valor de propiedad del archivo DO basado en un valor de la enumeración BITS_FILE_PROPERTY_ID.
+title: BITS_FILE_PROPERTY_VALUE estructura (Deliveryoptimization.h)
+description: La BITS_FILE_PROPERTY_VALUE de datos proporciona el valor de propiedad del archivo DO basándose en un valor de la enumeración BITS_FILE_PROPERTY_ID datos.
 ms.assetid: 56A634F9-FB30-49D5-BD03-DD59AEF702C1
 keywords:
-- Estructura de BITS_FILE_PROPERTY_VALUE
+- BITS_FILE_PROPERTY_VALUE estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 639ea0523c5b92d9764671cb573497223ef968fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba01a8c83cef842c40149b3fe8cbc586a7da5f819ffc387befb9f84182cbce24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544630"
 ---
-# <a name="bits_file_property_value-structure"></a>Estructura de BITS_FILE_PROPERTY_VALUE
+# <a name="bits_file_property_value-structure"></a>BITS_FILE_PROPERTY_VALUE estructura
 
-La Unión **BITS_FILE_PROPERTY_VALUE** proporciona el valor de propiedad del archivo do basado en un valor de la enumeración [**BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md) .
+La **BITS_FILE_PROPERTY_VALUE** de datos proporciona el valor de propiedad del archivo DO basado en un valor de la [**enumeración BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md) datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct {
 **String**
 </dt> <dd>
 
-Este valor se usa cuando se usa el valor de enumeración de ID. de propiedad **BITS_FILE_PROPERTY_ID_HTTP_RESPONSE_HEADERS**.
+Este valor se usa cuando se usa el valor de enumeración de identificador de **propiedad BITS_FILE_PROPERTY_ID_HTTP_RESPONSE_HEADERS**.
 
 </dd> </dl>
 
@@ -54,9 +54,9 @@ Este valor se usa cuando se usa el valor de enumeración de ID. de propiedad **B
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
@@ -67,10 +67,10 @@ Este valor se usa cuando se usa el valor de enumeración de ID. de propiedad **B
 [**BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md)
 </dt> <dt>
 
-[**IBackgroundCopyFile5. GetProperty**](ibackgroundcopyfile5-getproperty.md)
+[**IBackgroundCopyFile5.GetProperty**](ibackgroundcopyfile5-getproperty.md)
 </dt> <dt>
 
-[**IBackgroundCopyFile5. SetProperty**](ibackgroundcopyfile5-setproperty.md)
+[**IBackgroundCopyFile5.SetProperty**](ibackgroundcopyfile5-setproperty.md)
 </dt> </dl>
 
  

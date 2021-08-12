@@ -1,68 +1,68 @@
 ---
-description: Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realice la inicialización de COM, se conecte a WMI en un equipo remoto, obtenga datos de forma semisincrónica y, a continuación, limpie.
+description: Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realiza la inicialización COM, se conecta a WMI en un equipo remoto, obtiene datos de forma semisincronosa y, a continuación, limpia.
 ms.assetid: 30e65b9e-9372-46d1-843a-bda0d6ec1c69
 ms.tgt_platform: multiple
-title: 'Ejemplo: obtención de datos WMI desde un equipo remoto'
+title: 'Ejemplo: Obtención de datos WMI desde un equipo remoto'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c3375bd25073defa92358f697ee4165ddb57793
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 722247d9b58c9fc27c5fac63a97f86d0c155faa92e41fc68506c5d280d0b040a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556628"
 ---
-# <a name="example-getting-wmi-data-from-a-remote-computer"></a>Ejemplo: obtención de datos WMI desde un equipo remoto
+# <a name="example-getting-wmi-data-from-a-remote-computer"></a>Ejemplo: Obtención de datos WMI desde un equipo remoto
 
-Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realice la inicialización de COM, se conecte a WMI en un equipo remoto, obtenga datos de forma semisincrónica y, a continuación, limpie. Para obtener más información acerca de cómo obtener datos del equipo local, vea [ejemplo: obtener datos WMI desde el equipo local](example--getting-wmi-data-from-the-local-computer.md). Para obtener más información sobre cómo obtener los datos de forma asincrónica, vea [ejemplo: obtener datos WMI del equipo local de forma asincrónica](example--getting-wmi-data-from-the-local-computer-asynchronously.md).
+Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realiza la inicialización COM, se conecta a WMI en un equipo remoto, obtiene datos de forma semisincronosa y, a continuación, limpia. Para obtener más información sobre cómo obtener datos del equipo local, vea Ejemplo: Obtener datos [WMI del equipo local.](example--getting-wmi-data-from-the-local-computer.md) Para obtener más información sobre cómo obtener los datos de forma asincrónica, vea Ejemplo: Obtener datos WMI del equipo [local de forma asincrónica.](example--getting-wmi-data-from-the-local-computer-asynchronously.md)
 
 > [!Note]  
-> Si está intentando conectarse a un equipo remoto, consulte la información de[conexión a WMI de forma remota](connecting-to-wmi-remotely-starting-with-vista.md).
+> Si está intentando conectarse a un equipo remoto, consulte la información de[Conexión a WMI de forma remota.](connecting-to-wmi-remotely-starting-with-vista.md)
 
  
 
-En el procedimiento siguiente se muestra cómo ejecutar la aplicación WMI. Los pasos 1 a 5 contienen todos los pasos necesarios para configurar y conectarse a WMI, y los pasos 6 y 7 son donde se consultan y se reciben los datos.
+En el procedimiento siguiente se muestra cómo ejecutar la aplicación WMI. Los pasos 1 a 5 contienen todos los pasos necesarios para configurar y conectarse a WMI, y los pasos 6 y 7 son donde se consultan y reciben los datos.
 
-**Para obtener datos de WMI desde un equipo remoto**
+**Para obtener datos WMI de un equipo remoto**
 
 1.  Inicialice los parámetros COM con una llamada a [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
 
-    Para obtener más información, vea [inicializar com para una aplicación WMI](initializing-com-for-a-wmi-application.md).
+    Para obtener más información, [vea Inicializar COM para una aplicación WMI.](initializing-com-for-a-wmi-application.md)
 
-2.  Inicialice la seguridad del proceso COM llamando a [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
+2.  Inicialice la seguridad del proceso COM mediante [**una llamada a CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
-    Para obtener más información, vea [establecer el nivel de seguridad de proceso predeterminado mediante C++](setting-the-default-process-security-level-using-c-.md).
+    Para obtener más información, vea [Establecer el nivel de seguridad de proceso predeterminado mediante C++.](setting-the-default-process-security-level-using-c-.md)
 
-3.  Obtenga el localizador inicial de WMI llamando a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+3.  Obtenga el localizador inicial a WMI mediante una llamada [**a CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-    Para obtener más información, vea [crear una conexión a un espacio de nombres WMI](creating-a-connection-to-a-wmi-namespace.md).
+    Para obtener más información, vea [Crear una conexión a un espacio de nombres WMI.](creating-a-connection-to-a-wmi-namespace.md)
 
-4.  Obtenga un puntero a [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para el \\ \\ \\ espacio de nombres root cimv2 en un equipo remoto mediante una llamada a [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Al conectarse a un equipo remoto, debe conocer el nombre del equipo, el dominio, el nombre de usuario y la contraseña del equipo remoto al que se está conectando. Todos estos atributos se pasan en el método **IWbemLocator:: ConnectServer** . Además, asegúrese de que el nombre de usuario del equipo que está intentando conectarse al equipo remoto tenga los privilegios de acceso correctos en el equipo remoto. Para obtener más información, consulte [conectarse a través de Firewall de Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista). Para conectarse al equipo local, vea [ejemplo: obtener datos WMI desde el equipo local](example--getting-wmi-data-from-the-local-computer.md) y [crear una conexión a un espacio de nombres WMI](creating-a-connection-to-a-wmi-namespace.md).
+4.  Obtenga un puntero a [**IWbemServices para**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) el espacio de nombres cimv2 raíz en un equipo remoto mediante una llamada \\ \\ a \\ [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Al conectarse a un equipo remoto, debe conocer el nombre del equipo, el dominio, el nombre de usuario y la contraseña del equipo remoto al que se está conectando. Todos estos atributos se pasan al **método IWbemLocator::ConnectServer.** Además, asegúrese de que el nombre de usuario del equipo que está intentando conectarse al equipo remoto tiene los privilegios de acceso correctos en el equipo remoto. Para obtener más información, vea [Conectarse a través de Windows Firewall.](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista) Para conectarse al equipo local, vea [Ejemplo:](example--getting-wmi-data-from-the-local-computer.md) Obtener datos WMI del equipo local y Crear una conexión [a un espacio de nombres WMI](creating-a-connection-to-a-wmi-namespace.md).
 
-    Al controlar los nombres de usuario y las contraseñas, se recomienda que el usuario solicite la información, use la información y, a continuación, elimine la información para que haya menos posibilidades de que un usuario no autorizado lo intercepte. En el paso 4 del código de ejemplo siguiente se usa [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para obtener el nombre de usuario y la contraseña y, a continuación, se usa [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) para deshacerse de la información después de que se use en [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para obtener más información, consulte [Administrar contraseñas](/windows/desktop/SecBP/handling-passwords) y [solicitar credenciales al usuario](/windows/desktop/SecBP/asking-the-user-for-credentials) en MSDN.
+    Al controlar nombres de usuario y contraseñas, se recomienda que se le pida al usuario la información, que la use y, a continuación, elimine la información, para que haya menos posibilidades de que un usuario no autorizado intercepte la información. En el paso 4 del código de ejemplo siguiente se usa [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para obtener el nombre de usuario y la contraseña y, a continuación, se usa [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) para deshacerse de la información después de su uso en [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para obtener más información, vea [Control de contraseñas](/windows/desktop/SecBP/handling-passwords) [y Pedir al usuario credenciales](/windows/desktop/SecBP/asking-the-user-for-credentials) en MSDN.
 
-5.  Cree una estructura [COAUTHIDENTITY](/windows/win32/api/wtypesbase/ns-wtypesbase-coauthidentity) para proporcionar las credenciales para establecer la seguridad del proxy.
-6.  Establezca la seguridad de proxy [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para que el servicio WMI pueda suplantar al cliente mediante una llamada a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+5.  Cree una [estructura COAUTHIDENTITY](/windows/win32/api/wtypesbase/ns-wtypesbase-coauthidentity) para proporcionar credenciales para establecer la seguridad del proxy.
+6.  Establezca la seguridad del proxy [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para que el servicio WMI pueda suplantar al cliente mediante una llamada [**a CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-    Para obtener más información, consulte [configuración de los niveles de seguridad en una conexión WMI](setting-the-security-levels-on-a-wmi-connection.md).
+    Para obtener más información, vea [Establecer los niveles de seguridad en una conexión WMI.](setting-the-security-levels-on-a-wmi-connection.md)
 
-7.  Utilice el puntero [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para hacer solicitudes de WMI. Se ejecuta una consulta para obtener el nombre del sistema operativo y la cantidad de memoria física libre llamando a [**IWbemServices:: ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
+7.  Use el [**puntero IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para realizar solicitudes de WMI. Se ejecuta una consulta para obtener el nombre del sistema operativo y la cantidad de memoria física libre mediante una llamada a [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
 
-    La siguiente consulta WQL es uno de los argumentos del método.
+    La siguiente consulta WQL es uno de los argumentos del método .
 
     `SELECT * FROM Win32_OperatingSystem`
 
-    El resultado de esta consulta se almacena en un puntero [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) . Esto permite que los objetos de datos de la consulta se recuperen de forma semisincrónica con la interfaz **IEnumWbemClassObject** . Para obtener más información, consulte [enumeración de WMI](enumerating-wmi.md). Para obtener los datos de forma asincrónica, vea [ejemplo: obtener datos WMI del equipo local de forma asincrónica](example--getting-wmi-data-from-the-local-computer-asynchronously.md).
+    El resultado de esta consulta se almacena en un [**puntero IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Esto permite que los objetos de datos de la consulta se recuperen de forma semisincronosa con la **interfaz IEnumWbemClassObject.** Para obtener más información, [vea Enumeración de WMI.](enumerating-wmi.md) Para obtener los datos de forma asincrónica, vea Ejemplo: Obtener datos [WMI del equipo local de forma asincrónica.](example--getting-wmi-data-from-the-local-computer-asynchronously.md)
 
-    Para obtener más información sobre cómo realizar solicitudes de WMI, vea [manipular información de clase e instancia](manipulating-class-and-instance-information.md), [consultar WMI](querying-wmi.md)y [llamar a un método](calling-a-method.md).
+    Para obtener más información sobre cómo realizar solicitudes de WMI, vea [Manipular](manipulating-class-and-instance-information.md)información de clase e instancia , [Consultar WMI](querying-wmi.md)y Llamar a [un método](calling-a-method.md).
 
-8.  Establezca la seguridad del proxy del enumerador [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) . Asegúrese de borrar las credenciales de la memoria después de que haya terminado de usarlas.
+8.  Establezca la seguridad del proxy [**del enumerador IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Asegúrese de borrar las credenciales de la memoria una vez que haya terminado de usarlos.
 
-    Para obtener más información, vea [establecer la seguridad en IWbemServices y en otros servidores proxy](setting-the-security-on-iwbemservices-and-other-proxies.md).
+    Para obtener más información, vea [Establecer la seguridad en IWbemServices y otros servidores proxy.](setting-the-security-on-iwbemservices-and-other-proxies.md)
 
-9.  Obtener y mostrar los datos de la consulta WQL. El puntero [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) está vinculado a los objetos de datos devueltos por la consulta y los objetos de datos se pueden recuperar con el método [**IEnumWbemClassObject:: Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next) . Este método vincula los objetos de datos a un puntero [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) que se pasa al método. Use el método [**IWbemClassObject:: get**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get) para obtener la información deseada de los objetos de datos.
+9.  Obtenga y muestre los datos de la consulta WQL. El [**puntero IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) está vinculado a los objetos de datos devueltos por la consulta y los objetos de datos se pueden recuperar con el método [**IEnumWbemClassObject::Next.**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next) Este método vincula los objetos de datos a un [**puntero IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) que se pasa al método . Use el [**método IWbemClassObject::Get**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get) para obtener la información deseada de los objetos de datos.
 
-    El siguiente ejemplo de código se utiliza para obtener la `Name` propiedad del objeto de datos, que proporciona el nombre del sistema operativo.
+    El ejemplo de código siguiente se usa para obtener la propiedad del objeto `Name` de datos, que proporciona el nombre del sistema operativo.
 
     ```C++
     VARIANT vtProp;
@@ -74,9 +74,9 @@ En el procedimiento siguiente se muestra cómo ejecutar la aplicación WMI. Los 
 
     
 
-    Una vez que el valor de la `Name` propiedad se almacena en la variable [**Variant**](/windows/win32/api/oaidl/ns-oaidl-variant) `vtProp` , se puede mostrar al usuario.
+    Una vez que el `Name` valor de la propiedad se almacena en la variable [**VARIANT,**](/windows/win32/api/oaidl/ns-oaidl-variant) `vtProp` se puede mostrar al usuario.
 
-    En el ejemplo de código siguiente se muestra cómo se puede usar la variable [**Variant**](/windows/win32/api/oaidl/ns-oaidl-variant) de nuevo para almacenar y mostrar el valor de la cantidad de memoria física libre.
+    En el ejemplo de código siguiente se muestra cómo se puede usar de nuevo la variable [**VARIANT**](/windows/win32/api/oaidl/ns-oaidl-variant) para almacenar y mostrar el valor de la cantidad de memoria física libre.
 
     ```C++
     hr = pclsObj->Get(L"FreePhysicalMemory",
@@ -87,9 +87,9 @@ En el procedimiento siguiente se muestra cómo ejecutar la aplicación WMI. Los 
 
     
 
-    Para obtener más información, consulte [enumeración de WMI](enumerating-wmi.md).
+    Para obtener más información, [vea Enumeración de WMI.](enumerating-wmi.md)
 
-En el ejemplo de código siguiente se muestra cómo obtener datos de WMI sincrónicamente desde un equipo remoto.
+En el ejemplo de código siguiente se muestra cómo obtener datos WMI de forma semisincronosa desde un equipo remoto.
 
 
 ```C++

@@ -1,7 +1,7 @@
 ---
-description: Establecer los datos de índice de la malla.
+description: Establezca los datos de índice de la malla.
 ms.assetid: f3e7e166-94b5-45f6-9d43-8d7e32b7b523
-title: 'ID3DX10Mesh:: SetIndexData (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::SetIndexData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f561a4109fbab2163b2ec51e95b45a618da5b6d5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 030e4a796be5c35b5f57e1e17832b7da7c3514edd494d5421e3c13d7b2dc3e12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540186"
 ---
-# <a name="id3dx10meshsetindexdata-method"></a>ID3DX10Mesh:: SetIndexData (método)
+# <a name="id3dx10meshsetindexdata-method"></a>Método ID3DX10Mesh::SetIndexData
 
-Establecer los datos de índice de la malla.
+Establezca los datos de índice de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT SetIndexData(
 
 <dl> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Los datos del índice.
+Datos de índice.
 
 </dd> <dt>
 
-*cIndices* \[ de\]
+*cIndices* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de índices en pData.
 
@@ -63,7 +63,7 @@ Número de índices en pData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

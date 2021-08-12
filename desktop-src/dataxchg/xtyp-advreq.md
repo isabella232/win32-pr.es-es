@@ -1,9 +1,9 @@
 ---
-title: XTYP_ADVREQ transacción (ddeml. h)
-description: La \_ transacción XTYP ADVREQ informa al servidor de que una transacción de notificación está pendiente en el par nombre de tema y nombre de elemento especificado y que han cambiado los datos correspondientes a los pares nombre de tema y nombre de elemento.
+title: XTYP_ADVREQ transacción (Ddeml.h)
+description: La transacción AD ESTAQ de XTYP informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han \_ cambiado.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
-- Intercambio de datos de transacciones XTYP_ADVREQ
+- XTYP_ADVREQ datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2884e838268342ab10c556c6ae3cfc8349ed5d2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18e751f17fb8634b0a105a36af5036f07d0212532349c267e5526d5d41f09367
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544890"
 ---
-# <a name="xtyp_advreq-transaction"></a>XTYP \_ ADVREQ
+# <a name="xtyp_advreq-transaction"></a>Transacción \_ adjetición de XTYP
 
-La transacción **XTYP \_ ADVREQ** informa al servidor de que una transacción de notificación está pendiente en el par nombre de tema y nombre de elemento especificado y que han cambiado los datos correspondientes a los pares nombre de tema y nombre de elemento. El sistema envía esta transacción a la función de devolución de llamada de Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), una vez que el servidor llama a la función [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) .
+La transacción **\_ AD ESTAQ de XTYP** informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han cambiado. El sistema envía esta transacción a la función de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), después de que el servidor llame a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 
 
 ```C++
@@ -76,16 +76,16 @@ Identificador del nombre del elemento que ha cambiado.
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-El recuento, en la palabra de orden inferior, de las transacciones de **XTYP \_ ADVREQ** que quedan por procesarse en el mismo tema, elemento y nombre de formato establecidos en el contexto de la llamada actual a la función [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) . El recuento es cero si la transacción actual de **XTYP \_ ADVREQ** es la última. Un servidor puede usar este recuento para determinar si se debe crear un identificador de datos de **HDATA \_ APPOWNED** para los datos de notificación.
+El recuento, en la palabra de orden bajo, de las transacciones **\_ de AD LAMBDAQ de XTYP** que permanecen para procesarse en el mismo tema, elemento y nombre de formato establecido en el contexto de la llamada actual a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) El recuento es cero si la transacción actual de AD FAQ de **XTYP \_** es la última. Un servidor puede usar este recuento para determinar si se debe crear un identificador de **datos \_ APPOWNED** de HDATA para los datos de asesoramiento.
 
-La palabra de orden inferior se establece en **CADV \_ LATEACK** si el objeto ddeml emitió la transacción **XTYP \_ ADVREQ** debido a un mensaje de confirmación de DDE de llegada tardía \_ desde un cliente que se Outrun por el servidor.
+La palabra de orden bajo se establece en **CADV \_ LATEACK** si la DDEML emitió la transacción **AD \_ AAAA de XTYP** debido a un mensaje DDE ACK de llegada tardía de un cliente que está fuera de ejecución por el \_ servidor.
 
 No se usa la palabra de orden superior.
 
@@ -94,17 +94,17 @@ No se usa la palabra de orden superior.
 *dwData2* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El servidor debe llamar primero a la función [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para crear un identificador de datos que identifique los datos modificados y, a continuación, devuelva el identificador. El servidor debe devolver **null** si no puede completar la transacción.
+El servidor debe llamar primero a la función [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para crear un identificador de datos que identifique los datos modificados y, a continuación, devolver el identificador. El servidor debe devolver **NULL** si no puede completar la transacción.
 
 ## <a name="remarks"></a>Observaciones
 
-Un servidor no puede bloquear este tipo de transacción; se omite el código de retorno del **\_ bloque CBR** .
+Un servidor no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,7 +114,7 @@ Un servidor no puede bloquear este tipo de transacción; se omite el código de 
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -134,10 +134,10 @@ Un servidor no puede bloquear este tipo de transacción; se omite el código de 
 [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange management library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

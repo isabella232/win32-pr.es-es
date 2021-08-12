@@ -1,7 +1,7 @@
 ---
-description: 'Obtenga acceso al búfer de vértices de la malla una vez que se haya confirmado en el dispositivo con ID3DX10Mesh:: CommitToDevice. Esto es diferente de ID3DX10Mesh:: GetVertexBuffer, que devuelve el búfer de vértices antes de que se haya confirmado en el dispositivo.'
+description: Acceda al búfer de vértices de la malla después de que se haya confirmado en el dispositivo con ID3DX10Mesh::CommitToDevice. Esto es diferente de ID3DX10Mesh::GetVertexBuffer, que devuelve el búfer de vértices antes de que se haya confirmado en el dispositivo.
 ms.assetid: 621d9105-e55d-47b8-8557-8adb7db19d66
-title: 'ID3DX10Mesh:: GetDeviceVertexBuffer (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GetDeviceVertexBuffer (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9943050d174acb4e8f8e676f56a95cfdcde88f5a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 11493392f710fe3fd3bebab5187b61522434b268bf099489d84ea1cc3ec99309
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540268"
 ---
-# <a name="id3dx10meshgetdevicevertexbuffer-method"></a>ID3DX10Mesh:: GetDeviceVertexBuffer (método)
+# <a name="id3dx10meshgetdevicevertexbuffer-method"></a>Método ID3DX10Mesh::GetDeviceVertexBuffer
 
-Obtenga acceso al búfer de vértices de la malla una vez que se haya confirmado en el dispositivo con [**ID3DX10Mesh:: CommitToDevice**](id3dx10mesh-committodevice.md). Esto es diferente de [**ID3DX10Mesh:: GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), que devuelve el búfer de vértices antes de que se haya confirmado en el dispositivo.
+Acceda al búfer de vértices de la malla después de que se haya confirmado en el dispositivo [**con ID3DX10Mesh::CommitToDevice**](id3dx10mesh-committodevice.md). Esto es diferente de [**ID3DX10Mesh::GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), que devuelve el búfer de vértices antes de que se haya confirmado en el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT GetDeviceVertexBuffer(
 
 <dl> <dt>
 
-*iBuffer* \[ de\]
+*iBuffer* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que identifica a qué búfer de vértice se va a tener acceso.
+Índice que identifica a qué búfer de vértices se va a acceder.
 
 </dd> <dt>
 
-*ppVertexBuffer* \[ enuncia\]
+*ppVertexBuffer* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Buffer**](/windows/desktop/api/D3D10/nn-d3d10-id3d10buffer)\*\***
 
-Búfer de vértices después de que se haya confirmado en el dispositivo.
+Búfer de vértice después de que se haya confirmado en el dispositivo.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Búfer de vértices después de que se haya confirmado en el dispositivo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

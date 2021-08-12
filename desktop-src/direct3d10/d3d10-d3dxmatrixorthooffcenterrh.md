@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0b41038021cc34cb02961cb9894415995955404c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 79594b606124f6b3634e7b379bda0cb664cbec31b417112641d06f335a16ce04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541246"
 ---
 # <a name="d3dxmatrixorthooffcenterrh-function-d3dx10mathh"></a>Función D3DXMatrixOrthoOffCenterRH (D3DX10Math.h)
 
-Crea una matriz de proyección ortográfica personalizada y a la derecha.
+Crea una matriz de proyección ortográfica personalizada y con la mano derecha.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,11 +60,11 @@ Puntero al [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor X mínimo del volumen de vista.
+Valor x mínimo del volumen de vista.
 
 </dd> <dt>
 
-*r* \[ in\]
+*r* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -73,7 +73,7 @@ Valor x máximo del volumen de vista.
 
 </dd> <dt>
 
-*b* \[ en\]
+*b* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -115,7 +115,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero al [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función D3DXMatrixOrthoRH**](d3d10-d3dxmatrixorthorh.md) es un caso especial de la función D3DXMatrixOrthoOffCenterRH. Para crear la misma proyección mediante D3DXMatrixOrthoOffCenterRH, use los valores siguientes:
 
@@ -154,7 +154,7 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

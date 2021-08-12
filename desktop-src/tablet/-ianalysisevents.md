@@ -1,7 +1,7 @@
 ---
-description: Especifica eventos asociados a los pasos de análisis de un objeto IInkAnalyzer.
+description: Especifica los eventos asociados a los pasos de análisis de un objeto IInkAnalyzer.
 ms.assetid: 8cb75f99-aa39-44d1-a055-dc1fb3f6b292
-title: Interfaz _IAnalysisEvents
+title: _IAnalysisEvents interfaz
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,32 +12,32 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 90e32669d8b542202f6166052c072f224bb2954a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f49455e3e6fb68b2884cda380c304d7655b70d49ff338bcfb7c36904b449019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452170"
 ---
-# <a name="_ianalysisevents-interface"></a>\_Interfaz IAnalysisEvents
+# <a name="_ianalysisevents-interface"></a>\_IAnalysisEvents (interfaz)
 
-Especifica eventos asociados a los pasos de análisis de un objeto [**IInkAnalyzer**](iinkanalyzer.md) .
+Especifica los eventos asociados a los pasos de análisis de [**un objeto IInkAnalyzer.**](iinkanalyzer.md)
 
 -   [Eventos](/windows)
 
-### <a name="events"></a>Events
+### <a name="events"></a>Eventos
 
-La interfaz **\_ IAnalysisEvents** tiene estos eventos.
+La **\_ interfaz IAnalysisEvents** tiene estos eventos.
 
 
 
 | Evento                                                               | Descripción                                                                                                                                                                                    |
 |:--------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Actividad**](-ianalysisevents-activity.md)                       | Tiene lugar durante las llamadas al método [**IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md) o al método [**IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) .<br/> |
-| [**IntermediateResults**](-ianalysisevents-intermediateresults.md) | Se produce cuando finaliza la fase de análisis intermedio actual.<br/>                                                                                                                    |
-| [**ReadyToReconcile**](-ianalysisevents-readytoreconcile.md)       | Se produce cuando [**IInkAnalyzer**](iinkanalyzer.md) está listo para conciliar los resultados del análisis de fondo con su estado actual.<br/>                                                  |
+| [**Actividad**](-ianalysisevents-activity.md)                       | Se produce durante las llamadas al método [**IInkAnalyzer::Analyze o**](iinkanalyzer-analyze.md) [**al método IInkAnalyzer::BackgroundAnalyze.**](iinkanalyzer-backgroundanalyze.md)<br/> |
+| [**IntermediateResults**](-ianalysisevents-intermediateresults.md) | Se produce cuando finaliza la fase de análisis intermedia actual.<br/>                                                                                                                    |
+| [**ReadyToReconcile**](-ianalysisevents-readytoreconcile.md)       | Se produce cuando [**IInkAnalyzer**](iinkanalyzer.md) está listo para conciliar los resultados del análisis en segundo plano con su estado actual.<br/>                                                  |
 | [**Results**](-ianalysisevents-results.md)                         | Se produce cuando finaliza la fase de análisis final.<br/>                                                                                                                                   |
-| [**UpdateStrokesCache**](-ianalysisevents-updatestrokescache.md)   | Se produce antes de que [**IInkAnalyzer**](iinkanalyzer.md) tenga acceso a los datos del trazo.<br/>                                                                                                        |
+| [**UpdateStrokesCache**](-ianalysisevents-updatestrokescache.md)   | Se produce antes de que [**IInkAnalyzer**](iinkanalyzer.md) acceda a los datos del trazo.<br/>                                                                                                        |
 
 
 
@@ -49,7 +49,7 @@ La interfaz **\_ IAnalysisEvents** tiene estos eventos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 
@@ -64,13 +64,13 @@ La interfaz **\_ IAnalysisEvents** tiene estos eventos.
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

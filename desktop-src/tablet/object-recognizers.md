@@ -4,27 +4,27 @@ ms.assetid: 53b6137d-2998-4a3b-b469-3d1204ea194b
 title: Reconocedores de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a258c8486bcf773f5f94c4de51c501e107fac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aabfd44a5eb126d48df70efd1c391584d12afc94e5e21c714aa0c740a7d486f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449666"
 ---
 # <a name="object-recognizers"></a>Reconocedores de objetos
 
-Además de reconocer texto, los reconocedores pueden reconocer una clase de objetos relacionados. Los reconocedores de objetos reconocen las formas generales según su finalidad. Los reconocedores de objetos se usan para reconocer:
+Además de reconocer texto, los reconocedores pueden reconocer una clase de objetos relacionados. Los reconocedores de objetos reconocen formas generales, según su propósito. Los reconocedores de objetos se usan para reconocer:
 
--   Notas musicales
+-   Notas de música
 -   Formas geométricas
 -   Ecuaciones matemáticas
--   Elementos de diagrama de flujo
+-   Flow de gráfico
 
-Normalmente, los objetos que reconoce este tipo de reconocedor están en una relación funcional o espacial bidimensional entre sí. Por ejemplo, dentro de las relaciones complejas de una ecuación matemática, un reconocedor puede devolver resultados diferentes para un límite superior en un entero definito en lugar de un numerador de una fracción.
+Normalmente, los objetos que reconoce este reconocedor están en una relación espacial o funcional bidimensional entre sí. Por ejemplo, dentro de las relaciones complejas de una ecuación matemática, un reconocedor puede devolver resultados diferentes para un límite superior en una integral definitiva en lugar de un numerador en una fracción.
 
-Debido a la naturaleza muy general de estas relaciones, es sumamente difícil definir el conjunto de interfaces que funcionarán para cada reconocedor de objetos.
+Debido a la naturaleza muy general de estas relaciones, es muy difícil definir el conjunto de interfaces que funcionarán para cada reconocedor de objetos.
 
-La tecnología de Tablet PC proporciona un marco de trabajo básico para los reconocedores de objetos en la biblioteca administrada y las interfaces de automatización. Sin embargo, debe desarrollar interfaces personalizadas que describan relaciones espaciales complejas entre objetos reconocidos para cada reconocedor de objetos. En concreto, para los reconocedores de objetos, la plataforma proporciona el objeto [**RecognizerContext**](inkrecognizercontext-class.md) básico para asociar el objeto de [**entrada manuscrita**](inkdisp-class.md) con el contexto del reconocedor y para llamar al reconocedor para realizar el reconocimiento.
+La tecnología de tablet PC proporciona un marco básico para los reconocedores de objetos en las interfaces de automatización y biblioteca administrada. Sin embargo, debe desarrollar interfaces personalizadas que describan relaciones espaciales complejas entre objetos reconocidos para cada reconocedor de objetos. En concreto, para los reconocedores de objetos, la plataforma proporciona el objeto [**RecognizerContext**](inkrecognizercontext-class.md) básico para asociar el objeto [**Ink**](inkdisp-class.md) con el contexto del reconocedor y para llamar al reconocedor para realizar el reconocimiento.
 
  
 

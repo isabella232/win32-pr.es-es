@@ -1,9 +1,9 @@
 ---
-title: Propiedad ScalingPolicy. IdealSizes
-description: Representa un contenedor de especificaciones de escala para la plantilla de SizeDefinition preferida, en función del tamaño de la cinta de opciones.
+title: Propiedad ScalingPolicy.IdealSizes
+description: Representa un contenedor de especificaciones de escalado para la plantilla SizeDefinition preferida, según el tamaño de la cinta de opciones.
 ms.assetid: a4aa2642-160d-4d81-9df9-29277911aa5a
 keywords:
-- ScalingPolicy. IdealSizes (propiedad) cinta de Windows
+- ScalingPolicy.IdealSizes, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7bf62cd0388b523f444c4a9cca226b58187212b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 500f6193411ed72b8858506816d9af4f82b1219680fa0537bf54b3daa7735211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439530"
 ---
-# <a name="scalingpolicyidealsizes-property"></a>Propiedad ScalingPolicy. IdealSizes
+# <a name="scalingpolicyidealsizes-property"></a>Propiedad ScalingPolicy.IdealSizes
 
-Representa un contenedor de especificaciones de escala para la plantilla de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) preferida, en función del tamaño de la cinta de opciones.
+Representa un contenedor de especificaciones de escalado para la [**plantilla SizeDefinition**](windowsribbon-element-sizedefinition.md) preferida, según el tamaño de la cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -59,17 +59,17 @@ No hay atributos.
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md).
+Puede producirse como máximo una vez para cada [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md).
 
-Si se define **ScalingPolicy. IdealSizes** , debe haber una entrada de [**escala**](windowsribbon-element-scale.md) para cada elemento de [**Grupo**](windowsribbon-element-group.md) de un elemento de [**ficha**](windowsribbon-element-tab.md) .
+Si **se define ScalingPolicy.IdealSizes,** debe haber una entrada [**Scale**](windowsribbon-element-scale.md) para cada [**elemento Group**](windowsribbon-element-group.md) de un elemento [**Tab.**](windowsribbon-element-tab.md)
 
-**ScalingPolicy. IdealSizes** son los diseños de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) preferidos para un [**Grupo**](windowsribbon-element-group.md) de controles.
+**ScalingPolicy.IdealSizes** son los diseños [**de SizeDefinition**](windowsribbon-element-sizedefinition.md) preferidos para [**un grupo de**](windowsribbon-element-group.md) controles.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo se puede personalizar la apariencia de los controles de un [**Grupo**](windowsribbon-element-group.md) mediante la funcionalidad de diseño adaptable de las plantillas [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de la cinta.
+En el ejemplo siguiente se muestra cómo se puede personalizar la apariencia de los controles de un grupo [**mediante**](windowsribbon-element-group.md) la funcionalidad de diseño adaptable de las plantillas [**SizeDefinition de**](windowsribbon-element-sizedefinition.md) la cinta de opciones.
 
-El manifiesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de este ejemplo especifica una preferencia **ScalingPolicy. IdealSizes** [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de cuatro grupos de controles en una pestaña **Inicio** . Además, los elementos de [**escala**](windowsribbon-element-scale.md) se especifican para influir en el comportamiento de contracción, en orden de tamaño descendente, de cada grupo.
+El [**manifiesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de este ejemplo especifica una preferencia **ScalingPolicy.IdealSizes** [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de los cuatro grupos de controles de una **pestaña** Inicio. Además, los [**elementos Scale**](windowsribbon-element-scale.md) se especifican para influir en el comportamiento de conserción, en orden descendente de tamaño, de cada grupo.
 
 
 ```C++
@@ -141,8 +141,8 @@ El manifiesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de est
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -150,7 +150,7 @@ El manifiesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de est
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

@@ -1,35 +1,35 @@
 ---
-title: REALIZAR enumeraciones
-description: Las interfaces de optimización de entrega (DO) utilizan las siguientes enumeraciones.
+title: Enumeraciones DO
+description: Las Optimización de distribución (DO) usan las enumeraciones siguientes.
 ms.assetid: 0B0C627D-F6B7-4A10-83C0-03BFE329E974
 ms.topic: article
 ms.date: 07/02/2019
-ms.openlocfilehash: c9bac26e0e16751f2f6a7a8444d6e7149a5b6fb0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a80e8c44adff3ea655512516f04a7a2c865177c64049e16f9f36c55fb235d878
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544061"
 ---
-# <a name="do-enumerations"></a>REALIZAR enumeraciones
+# <a name="do-enumerations"></a>Enumeraciones DO
 
-Las [interfaces de optimización de entrega (do)](do-interfaces.md) utilizan las siguientes enumeraciones.
+Las [Optimización de distribución (DO) usan](do-interfaces.md) las enumeraciones siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción |
 |-|-|
-| [**BG_ERROR_CONTEXT**](bg-error-context.md) | La enumeración **BG_ERROR_CONTEXT** define los valores constantes que especifican el contexto en el que se produjo el error. |
-| [**BG_JOB_PRIORITY**](bg-job-priority-.md) | La enumeración **BG_JOB_PRIORITY** define los valores constantes que especifican el nivel de prioridad de un trabajo.  |
-| [**BG_JOB_STATE**](bg-job-state-.md) | La enumeración **BG_JOB_STATE** define valores constantes para los distintos Estados de un trabajo. |
-| [**BG_JOB_TYPE**](bg-job-type.md) | La enumeración **BG_JOB_TYPE** define valores constantes que especifican el tipo de trabajo de transferencia, como la descarga. |
-| [**BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md) | La enumeración **BITS_FILE_PROPERTY_ID** especifica valores que definen los valores de identificador correspondientes a las propiedades **BackgroundCopyFile** . |
-| [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) | La enumeración **BITS_JOB_PROPERTY_ID** especifica el identificador de la propiedad para el trabajo do. Esta enumeración se utiliza en la Unión [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) para determinar el tipo de valor contenido en la Unión. |
-| [**BITS_JOB_TRANSFER_POLICY**](bits-job-transfer-policy-.md) | La enumeración **BITS_JOB_TRANSFER_POLICY** define los valores de identificador correspondientes a las propiedades de do. |
+| [**BG_ERROR_CONTEXT**](bg-error-context.md) | La **BG_ERROR_CONTEXT** enumeración define los valores constantes que especifican el contexto en el que se produjo el error. |
+| [**BG_JOB_PRIORITY**](bg-job-priority-.md) | La **BG_JOB_PRIORITY** enumeración define los valores constantes que especifican el nivel de prioridad de un trabajo.  |
+| [**BG_JOB_STATE**](bg-job-state-.md) | La **BG_JOB_STATE** enumeración define valores constantes para los distintos estados de un trabajo. |
+| [**BG_JOB_TYPE**](bg-job-type.md) | La **BG_JOB_TYPE** enumeración define valores constantes que especifican el tipo de trabajo de transferencia, como descargar. |
+| [**BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md) | La **BITS_FILE_PROPERTY_ID** especifica los valores que definen los valores de identificador correspondientes a **las propiedades BackgroundCopyFile.** |
+| [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) | La **BITS_JOB_PROPERTY_ID** especifica el identificador de la propiedad para el trabajo do. Esta enumeración se usa en la [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) para determinar el tipo de valor contenido en la unión. |
+| [**BITS_JOB_TRANSFER_POLICY**](bits-job-transfer-policy-.md) | La **enumeración BITS_JOB_TRANSFER_POLICY** define los valores de identificador correspondientes a las propiedades do. |
 | [**DeliveryOptimizationFileProperty**](deliveryoptimizationfileproperty.md) | Especifica el identificador de una propiedad opcional para el archivo DO. |
-| [**DODownloadCostPolicy**](./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadcostpolicy.md) | Especifica el identificador de las opciones de directivas de costos asociadas a la propiedad **DODownloadProperty_CostPolicy** . |
-| [**DODownloadProperty**](./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadproperty.md) | Especifica el identificador de las propiedades de la operación de descarga. |
-| [**DODownloadPropertyEx**](./dodownloadinternal/ne-dodownloadinternal-dodownloadpropertyex.md) | Especifica el identificador de las propiedades extendidas para la operación de descarga. |
-| [**DODownloadState**](./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadstate.md) | Especifica el identificador del estado de descarga actual, que forma parte de la estructura de **DO_DOWNLOAD_STATUS** . |
-| [**DownloadMode**](downloadmode.md) | Define los diferentes modos de descarga que utiliza la optimización de entrega.  |
+| [**DODownloadCostPolicy**](./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadcostpolicy.md) | Especifica el identificador de las opciones de directivas de costo asociadas a **DODownloadProperty_CostPolicy** propiedad . |
+| [**DODownloadProperty**](./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadproperty.md) | Especifica el identificador de las propiedades de la operación de descarga de DO. |
+| [**DODownloadPropertyEx**](./dodownloadinternal/ne-dodownloadinternal-dodownloadpropertyex.md) | Especifica el identificador de las propiedades extendidas para la operación de descarga de DO. |
+| [**DODownloadState**](./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadstate.md) | Especifica el identificador del estado de descarga actual, que forma parte de la **DO_DOWNLOAD_STATUS** actual. |
+| [**DownloadMode**](downloadmode.md) | Define los distintos modos de descarga Optimización de distribución utiliza.  |
 | [**SwarmStatus**](swarmstatus.md) | Define el estado de un archivo dentro del cliente de optimización de entrega. |

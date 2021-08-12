@@ -1,7 +1,7 @@
 ---
 description: Se produce antes de que IInkAnalyzer elimine un objeto IContextLink entre dos objetos IContextNode.
 ms.assetid: bc9716b8-8793-4886-aff4-d880024129a6
-title: 'Evento _IAnalysisProxyEvents:: ContextNodeLinkDeleting (IACom. h)'
+title: _IAnalysisProxyEvents::ContextNodeLinkDeleting (evento) (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: bc4ba9586fc4c520b9ee44b039bd56f8ef2ade3c
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2bf45b8ae900d574bc50151e1bd17f0a124211272d4a83ccb43216ebbf82e2f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104279853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452091"
 ---
-# <a name="_ianalysisproxyeventscontextnodelinkdeleting-event"></a>\_Evento IAnalysisProxyEvents:: ContextNodeLinkDeleting
+# <a name="_ianalysisproxyeventscontextnodelinkdeleting-event"></a>\_Evento IAnalysisProxyEvents::ContextNodeLinkDeleting
 
-Se produce antes de que [**IInkAnalyzer**](iinkanalyzer.md) elimine un objeto [**IContextLink**](icontextlink.md) entre dos objetos [**IContextNode**](icontextnode.md) .
+Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) elimine un [**objeto IContextLink**](icontextlink.md) entre dos [**objetos IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,29 +40,29 @@ HRESULT ContextNodeLinkDeleting(
 
 <dl> <dt>
 
-*pInkAnalyzer* \[ de\]
+*pInkAnalyzer* \[ En\]
 </dt> <dd>
 
-[**IInkAnalyzer**](iinkanalyzer.md) que elimina el vínculo.
+[**IInkAnalyzer elimina**](iinkanalyzer.md) el vínculo.
 
 </dd> <dt>
 
-*pContextLinkToBeDeleted* \[ de\]
+*pContextLinkToBeDeleted* \[ En\]
 </dt> <dd>
 
-El objeto [**IContextLink**](icontextlink.md) que se va a eliminar.
+Objeto [**IContextLink que**](icontextlink.md) se va a eliminar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Utilice este evento cuando la aplicación mantiene su propia estructura de datos, que está sincronizada con la de [**IInkAnalyzer**](iinkanalyzer.md). Este evento se produce durante la fase de conciliación del análisis de tinta o en respuesta a un método **IInkAnalyzer** que quita un [**IContextLink**](icontextlink.md) de un [**IContextNode**](icontextnode.md).
+Use este evento cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Este evento tiene lugar durante la fase de conciliación del análisis de lápiz, o en respuesta a un método **IInkAnalyzer** que quita un [**IContextLink**](icontextlink.md) de [**un IContextNode**](icontextnode.md).
 
-Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [proxy de datos con análisis de tinta](data-proxy-with-ink-analysis.md).
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea Proxy de [datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -93,13 +93,13 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

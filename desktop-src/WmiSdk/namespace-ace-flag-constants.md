@@ -1,8 +1,8 @@
 ---
-description: En la lista siguiente se enumeran los posibles valores del campo Flags en una entrada de Access Control WMI (ACE).
+description: En la lista siguiente se enumeran los valores posibles del campo Marcas en una entrada Access Control WMI (ACE).
 ms.assetid: bd09691d-e285-40e0-8686-edd5a132a06e
 ms.tgt_platform: multiple
-title: Constantes de marca ACE de espacio de nombres (Winnt. h)
+title: Constantes de marca ACE de espacio de nombres (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,20 +18,20 @@ api_type:
 - HeaderDef
 api_location:
 - Winnt.h
-ms.openlocfilehash: 053d4166882b6254dec313cb10fbf10588ba0071
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b4051a6c17e9861d656207335b2543cf7d886e74569c269df2a4f680f47fbe3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555185"
 ---
 # <a name="namespace-ace-flag-constants"></a>Constantes de marca ACE de espacio de nombres
 
-En la lista siguiente se enumeran los posibles valores del campo **Flags** en una entrada de Access Control WMI (ACE).
+En la lista siguiente se enumeran los valores **posibles** del campo Marcas en una entrada de Access Control WMI (ACE).
 
 <dl> <dt>
 
-<span id="OBJECT_INHERIT_ACE"></span><span id="object_inherit_ace"></span>**\_ACE de herencia de objeto \_**
+<span id="OBJECT_INHERIT_ACE"></span><span id="object_inherit_ace"></span>**ACE \_ DE HERENCIA DE \_ OBJETO**
 </dt> <dd> <dl> <dt>
 
 1 (0x1)
@@ -39,15 +39,15 @@ En la lista siguiente se enumeran los posibles valores del campo **Flags** en un
 
 
 
-Los objetos secundarios que no son de contenedor heredan la ACE como una ACE efectiva.
+Los objetos secundarios que no son contenedores heredan la ACE como una ACE efectiva.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CONTAINER_INHERIT_ACE"></span><span id="container_inherit_ace"></span>**\_ACE de herencia de contenedor \_**
+<span id="CONTAINER_INHERIT_ACE"></span><span id="container_inherit_ace"></span>**ACE \_ DE HERENCIA DE \_ CONTENEDOR**
 </dt> <dd> <dl> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dt>
 
 
@@ -57,7 +57,7 @@ La ACE tiene un efecto en los espacios de nombres secundarios, así como en el e
 
 </dt> </dl> </dd> <dt>
 
-<span id="NO_PROPAGATE_INHERIT_ACE"></span><span id="no_propagate_inherit_ace"></span>**NO \_ propagar \_ ACE de herencia \_**
+<span id="NO_PROPAGATE_INHERIT_ACE"></span><span id="no_propagate_inherit_ace"></span>**NO \_ PROPAGATE \_ INHERIT \_ ACE**
 </dt> <dd> <dl> <dt>
 
 4 (0x4)
@@ -65,12 +65,12 @@ La ACE tiene un efecto en los espacios de nombres secundarios, así como en el e
 
 
 
-La ACE solo se aplica al espacio de nombres actual y a los elementos secundarios inmediatos.
+La ACE solo se aplica al espacio de nombres actual y a los secundarios inmediatos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="INHERIT_ONLY_ACE"></span><span id="inherit_only_ace"></span>**solo HEREDAr \_ \_ ACE**
+<span id="INHERIT_ONLY_ACE"></span><span id="inherit_only_ace"></span>**HEREDAR \_ SOLO \_ ACE**
 </dt> <dd> <dl> <dt>
 
 8 (0x8)
@@ -83,7 +83,7 @@ La ACE solo se aplica a los espacios de nombres secundarios.
 
 </dt> </dl> </dd> <dt>
 
-<span id="INHERITED_ACE"></span><span id="inherited_ace"></span>**ACE HEREDAda \_**
+<span id="INHERITED_ACE"></span><span id="inherited_ace"></span>**ACE \_ HEREDADA**
 </dt> <dd> <dl> <dt>
 
 16 (0x10)
@@ -91,7 +91,7 @@ La ACE solo se aplica a los espacios de nombres secundarios.
 
 
 
-No lo establecen los clientes, pero se envía a los clientes cuando el origen de una ACE es un espacio de nombres primario.
+Esto no lo establecen los clientes, pero se notifica a los clientes cuando el origen de una ACE es un espacio de nombres primario.
 
 
 </dt> </dl> </dd> </dl>
@@ -102,7 +102,7 @@ No lo establecen los clientes, pero se envía a los clientes cuando el origen de
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Winnt. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 
@@ -110,10 +110,10 @@ No lo establecen los clientes, pero se envía a los clientes cuando el origen de
 
 <dl> <dt>
 
-[Constantes de seguridad de WMI](wmi-security-constants.md)
+[Constantes de seguridad wmi](wmi-security-constants.md)
 </dt> <dt>
 
-[Configuración de descriptores de seguridad de espacio](setting-namespace-security-descriptors.md)
+[Establecer descriptores de seguridad namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [Establecer la herencia de la seguridad del espacio de nombres](establishing-inheritance-of-namespace-security.md)

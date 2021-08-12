@@ -1,9 +1,9 @@
 ---
-title: XTYP_ADVSTART transacción (ddeml. h)
-description: Un cliente usa la \_ transacción XTYP ADVSTART para establecer un bucle de notificación con un servidor.
+title: XTYP_ADVSTART transacción (Ddeml.h)
+description: Un cliente usa la transacción ADVSTART de XTYP \_ para establecer un bucle de asesoramiento con un servidor.
 ms.assetid: 8911e722-5656-4ca6-8b0a-6bdf8281611a
 keywords:
-- Intercambio de datos de transacciones XTYP_ADVSTART
+- XTYP_ADVSTART datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 852351ad902a0552ee012d6c1e5c4d61501e6e58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb18bda3dce4db465045991e26cdc2d97ddd87ddc69c494ffaf103c566955da1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544764"
 ---
-# <a name="xtyp_advstart-transaction"></a>XTYP \_ ADVSTART
+# <a name="xtyp_advstart-transaction"></a>Transacción ADVSTART de XTYP \_
 
-Un cliente usa la transacción **XTYP \_ ADVSTART** para establecer un bucle de notificación con un servidor. Una función de devolución de llamada de servidor Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica **XTYP \_ ADVSTART** como parámetro *wType* de la función [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Un cliente usa la **transacción \_ ADVSTART de XTYP** para establecer un bucle de asesoramiento con un servidor. Una datos dinámicos Exchange de devolución de llamada de servidor (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica **\_ XTYP ADVSTART** como parámetro *wType* de la función [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -47,7 +47,7 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-El formato de datos solicitado por el cliente.
+Formato de datos solicitado por el cliente.
 
 </dd> <dt>
 
@@ -75,33 +75,33 @@ Identificador del nombre del elemento.
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData2* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una función de devolución de llamada de servidor debe devolver **true** para permitir un bucle de notificaciones en el nombre de tema especificado y en el par de nombre de elemento, o **false** para denegar el bucle de notificación. Si la función de devolución de llamada devuelve **true**, las llamadas subsiguientes a la función [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) del servidor en el mismo nombre de tema y nombre de elemento hacen que el sistema envíe transacciones de [**XTYP \_ ADVREQ**](xtyp-advreq.md) al servidor.
+Una función de devolución de llamada de servidor debe devolver **TRUE para** permitir un bucle advise en el par de nombre de tema y nombre de elemento especificado, o **FALSE** para denegar el bucle advise. Si la función de devolución de llamada devuelve **TRUE**, las llamadas posteriores a la función [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) realizadas por el servidor en el mismo par de nombre de tema y nombre de elemento hace que el sistema envíe transacciones [**de \_ ADIQ de XTYP**](xtyp-advreq.md) al servidor.
 
 ## <a name="remarks"></a>Observaciones
 
-Si un cliente solicita un bucle de notificaciones en el nombre de un tema, el nombre del elemento y el formato de datos de un bucle de notificaciones que ya está establecido, la biblioteca de administración de Intercambio dinámico de datos (DDEML) no crea un bucle de notificaciones de notificación, sino que modifica las marcas de bucle de aviso (**XTYPF \_ ACKREQ** y **XTYPF \_ NoData**) para que coincidan con la solicitud más
+Si un cliente solicita un bucle de asesoramiento en un nombre de tema, nombre de elemento y formato de datos para un bucle de asesoramiento que ya está establecido, la biblioteca de administración de datos dinámicos Exchange (DDEML) no crea un bucle de asesoramiento duplicado, sino que modifica las marcas de bucle de aviso **(XTYPF \_ ACKREQ** y **XTYPF \_ NODATA)** para que coincidan con la solicitud más reciente.
 
-Esta transacción se filtra si la aplicación de servidor especificó la marca **CBF \_ FAIL \_ asesora** en la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Esta transacción se filtra si la aplicación de servidor especificó la **marca CBF \_ FAIL \_ ADVISES** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Esta transacción se filtra si la aplicación de servidor especificó la marca *
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -131,10 +131,10 @@ Esta transacción se filtra si la aplicación de servidor especificó la marca *
 [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange management library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

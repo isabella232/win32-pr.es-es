@@ -1,5 +1,5 @@
 ---
-description: El identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
+description: Identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
 ms.assetid: ''
 title: InstanceId
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - InstanceId
 api_type:
 - NA
-ms.openlocfilehash: 4709ee0ed6a29649d23887ee0472b4f770b062d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0eedea740ac3d8be1e997b26a5baf5ad0cd6a154b49de96f04d6431f99569ae8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118528317"
 ---
 # <a name="instanceid"></a>InstanceId
 
-El identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
+Identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,7 +34,7 @@ uint InstanceID();
 
 ## <a name="remarks"></a>Observaciones
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador raytracing:
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)

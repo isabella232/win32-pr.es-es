@@ -1,5 +1,5 @@
 ---
-description: La interfaz ITablet3 habilita la consulta de multitoque para la entrada.
+description: La interfaz ITablet3 permite realizar consultas multitouch para la entrada.
 ms.assetid: 949f2d83-7761-4d60-b8fe-5a9ac7567238
 title: Interfaz ITablet3
 ms.topic: reference
@@ -14,33 +14,33 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: f37d70888ccedf0fe941f0387c064aba37dc287e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b774ab5626d1eab5d8f4179b27924686fed56661fb776039a65ff40b3b64ebba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449848"
 ---
 # <a name="itablet3-interface"></a>Interfaz ITablet3
 
-La interfaz ITablet3 habilita la consulta de multitoque para la entrada.
+La interfaz ITablet3 permite realizar consultas multitouch para la entrada.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITablet3** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet3** también tiene estos tipos de miembros:
+La **interfaz ITablet3** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet3 también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITablet3** tiene estos métodos.
+La **interfaz ITablet3** tiene estos métodos.
 
 
 
 | Método                                                  | Descripción                                                         |
 |:--------------------------------------------------------|:--------------------------------------------------------------------|
 | [**GetMaximumCursors**](itablet3-getmaximumcursors.md) | Recupera el número máximo de entradas admitidas.<br/>        |
-| [**isMultiTouch**](itablet3-ismultitouch.md)           | Indica si multitoque está habilitado para este objeto.<br/> |
+| [**isMultiTouch**](itablet3-ismultitouch.md)           | Indica si multitouch está habilitado para este objeto.<br/> |
 
 
 
@@ -50,7 +50,7 @@ La interfaz **ITablet3** tiene estos métodos.
 
 Los desarrolladores no deben usar esta interfaz
 
-En el código siguiente se describe cómo se define la interfaz **ITablet3** .
+En el código siguiente se describe cómo se define la interfaz **ITablet3.**
 
 ``` syntax
 [
@@ -73,8 +73,8 @@ interface ITablet3 : IUnknown
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 

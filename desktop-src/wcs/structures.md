@@ -1,28 +1,28 @@
 ---
-title: Estructuras WCS 1,0
-description: Una sección de la referencia que contiene una lista de estructuras importantes que se usan en WCS 1,0.
+title: Estructuras de WCS 1.0
+description: Sección de la referencia que contiene una lista de estructuras importantes que usa WCS 1.0.
 ms.assetid: 68d681e6-4798-449b-9afd-ab35f24d6e67
 keywords:
-- Sistema de color de Windows (WCS), estructuras
-- WCS (sistema de colores de Windows), estructuras
-- Administración del color de imagen, estructuras
-- Administración del color, estructuras
-- colores, estructuras
-- Referencia WCS, estructuras
-- referencia de WCS, estructuras
+- Windows Sistema de colores (WCS), estructuras
+- WCS (Windows de colores), estructuras
+- administración del color de la imagen, estructuras
+- administración de colores, estructuras
+- colors,structures
+- Referencia de WCS, estructuras
+- referencia de WCS,structures
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d219f98ebf7fdfc5efbe1603e221f58894093698
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 9f8edf77c521c967a064296a005e1af834b3e5b2304da2ed6cd45d6e6ee2a6a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105721553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118444722"
 ---
-# <a name="wcs-10-structures"></a>Estructuras WCS 1,0
+# <a name="wcs-10-structures"></a>Estructuras de WCS 1.0
 
-Esta sección de la referencia contiene una lista de las estructuras más importantes que se usan en WCS 1,0. Se muestran como sigue:
+Esta sección de la referencia contiene una lista de las estructuras más importantes que usa WCS 1.0. Se enumeran de la siguiente manera:
 
 -   [**BlackInformation**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_blackinformation)
 -   [**CIEXYZ**](/windows/desktop/api/Wingdi/ns-wingdi-tagciexyz)
@@ -33,12 +33,12 @@ Esta sección de la referencia contiene una lista de las estructuras más import
 -   [**Estructuras de color del modelo de mapa de gama**](https://www.bing.com/search?q=**Gamut+Map+Model+Color+Structures**)
 -   [**GamutShell**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_gamutshell)
 -   [**GamutShellTriangle**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_gamutshelltriangle)
--   [**Estructuras de color ICM**](/windows/win32/api/icm/ns-icm-color)
+-   [**ICM de color**](/windows/win32/api/icm/ns-icm-color)
 -   [**LOGCOLORSPACE**](/windows/desktop/api/Wingdi/ns-wingdi-taglogcolorspacea)
--   [**\_información de perfil con nombre \_**](/windows/win32/api/icm/ns-icm-named_profile_info)
+-   [**INFORMACIÓN \_ DE PERFIL CON \_ NOMBRE**](/windows/win32/api/icm/ns-icm-named_profile_info)
 -   [**PrimaryJabColors**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_primaryjabcolors)
 -   [**PrimaryXYZColors**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_primaryxyzcolors)
--   [**PERFILES**](/windows/win32/api/icm/ns-icm-profile)
+-   [**Perfil**](/windows/win32/api/icm/ns-icm-profile)
 -   [**PROFILEHEADER**](/windows/win32/api/icm/ns-icm-profileheader)
 
  

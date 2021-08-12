@@ -1,7 +1,7 @@
 ---
 description: Registra plantillas personalizadas.
 ms.assetid: e142a0f2-d0ef-4479-82cd-ba8d5059d1d2
-title: 'ID3DXFile:: RegisterTemplates (método) (D3DX9Xof. h)'
+title: Método ID3DXFile::RegisterTemplates (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b7864b63d55ba219c5076920acc809f824bc1820
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b6dba0b79b7a7baaa6a05daf0b30609a129e76ab80529289a48b9b379426f33c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118520790"
 ---
-# <a name="id3dxfileregistertemplates-method"></a>ID3DXFile:: RegisterTemplates (método)
+# <a name="id3dxfileregistertemplates-method"></a>Método ID3DXFile::RegisterTemplates
 
 Registra plantillas personalizadas.
 
@@ -41,19 +41,19 @@ HRESULT RegisterTemplates(
 
 <dl> <dt>
 
-*pvData* \[ de\]
+*pvData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntero a un búfer que consta de un archivo. x en formato de texto o binario que contiene plantillas.
+Puntero a un búfer que consta de un archivo .x en formato de texto o binario que contiene plantillas.
 
 </dd> <dt>
 
-*cbSize* \[ de\]
+*cbSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 Tamaño del búfer al que apunta pvData, en bytes.
 
@@ -63,11 +63,11 @@ Tamaño del búfer al que apunta pvData, en bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADVALUE, D3DXFERR \_ Nº.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADVALUE, D3DXFERR \_ PARSEERROR.
 
 ## <a name="remarks"></a>Observaciones
 
-El siguiente fragmento de código proporciona una llamada de ejemplo a **RegisterTemplates** y el contenido de ejemplo para el búfer al que apunta **pvData** .
+El fragmento de código siguiente proporciona una llamada de ejemplo **a RegisterTemplates** y el contenido de ejemplo para el búfer al que **apunta pvData.**
 
 
 ```
@@ -113,7 +113,7 @@ goto End;
 
 Todas las plantillas deben especificar un nombre y un UUID.
 
-Este método llama al método [**RegisterEnumTemplates**](id3dxfile--registerenumtemplates.md) y obtiene un puntero de interfaz [**ID3DXFileEnumObject**](id3dxfileenumobject.md) llamando a [**CreateEnumObject**](id3dxfile--createenumobject.md) con **pvData** como primer parámetro.
+Este método llama al [**método RegisterEnumTemplates**](id3dxfile--registerenumtemplates.md) y obtiene un puntero de interfaz [**ID3DXFileEnumObject**](id3dxfileenumobject.md) mediante una llamada a [**CreateEnumObject**](id3dxfile--createenumobject.md) con **pvData como** primer parámetro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,8 +121,8 @@ Este método llama al método [**RegisterEnumTemplates**](id3dxfile--registerenu
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

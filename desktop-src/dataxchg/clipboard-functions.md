@@ -1,17 +1,17 @@
 ---
-title: Funciones del portapapeles
-description: . | Funciones del portapapeles
+title: Funciones del Portapapeles
+description: . | Funciones del Portapapeles
 ms.assetid: 54addf54-921d-4246-b21e-ae993f8bcb02
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96a6a0304c55e4c97f2243599909decd997758e9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 34a43bef4016f66c95565b4d5e1bd6fc934e14930a6733ffbf16447807582460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545546"
 ---
-# <a name="clipboard-functions"></a>Funciones del portapapeles
+# <a name="clipboard-functions"></a>Funciones del Portapapeles
 
 ## <a name="in-this-section"></a>En esta sección
 

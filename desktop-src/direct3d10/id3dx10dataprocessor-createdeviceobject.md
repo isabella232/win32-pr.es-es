@@ -1,7 +1,7 @@
 ---
 description: Cree un objeto de dispositivo.
 ms.assetid: 5b9b00de-c744-43c7-b383-1d3358c80741
-title: 'ID3DX10DataProcessor:: CreateDeviceObject (método) (D3DX10. h)'
+title: Método ID3DX10DataProcessor::CreateDeviceObject (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1ed362f992ca2b9d3ce6e561e08e5fe7fd0bdbe3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ca20de85e867cc8c444f05ea187fb314a6b983ad8c72a5f8ae921c0747bd9ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540423"
 ---
-# <a name="id3dx10dataprocessorcreatedeviceobject-method"></a>ID3DX10DataProcessor:: CreateDeviceObject (método)
+# <a name="id3dx10dataprocessorcreatedeviceobject-method"></a>Método ID3DX10DataProcessor::CreateDeviceObject
 
 Cree un objeto de dispositivo.
 
@@ -40,10 +40,10 @@ HRESULT CreateDeviceObject(
 
 <dl> <dt>
 
-*ppDataObject* \[ enuncia\]
+*ppDataObject* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
 Dirección de un puntero al objeto de dispositivo creado.
 
@@ -53,7 +53,7 @@ Dirección de un puntero al objeto de dispositivo creado.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10DataProcessor](id3dx10dataprocessor.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

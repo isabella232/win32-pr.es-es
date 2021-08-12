@@ -3,7 +3,7 @@ title: Elemento SizeDefinition
 description: Representa una plantilla de diseño personalizada de controles de cinta de opciones.
 ms.assetid: f90bb469-aee2-4bba-9efe-142a39a8c1ae
 keywords:
-- Cinta de opciones de Windows del elemento SizeDefinition
+- Cinta de opciones del Windows SizeDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cc68ac032459bed77d402ebd860886398748c874
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 982825649afb7640f87cb7032b000d837915c4bc9d970444da3c5cd3a5a98375
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439540"
 ---
 # <a name="sizedefinition-element"></a>Elemento SizeDefinition
 
@@ -48,7 +48,7 @@ Representa una plantilla de diseño personalizada de controles de cinta de opcio
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -87,7 +87,7 @@ Representa una plantilla de diseño personalizada de controles de cinta de opcio
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 

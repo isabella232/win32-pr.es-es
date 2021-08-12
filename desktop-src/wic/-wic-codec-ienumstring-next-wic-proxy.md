@@ -1,7 +1,7 @@
 ---
-description: 'Función de proxy de Windows Imaging Component (WIC) para IEnumString:: Next.'
+description: Windows Función de proxy del componente de creación de imágenes (WIC) para IEnumString::Next.
 ms.assetid: a3f6a32b-3043-4bea-a70b-0b4507b4e3a1
-title: IEnumString_Next_WIC_Proxy función)
+title: IEnumString_Next_WIC_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: ae3e25b355268fe63025692bf116b60b45122e76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ef7fcced4e38b83372c214a11486f5942c9594e7158f3463699ea82c56b81c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439586"
 ---
-# <a name="ienumstring_next_wic_proxy-function"></a>IEnumString \_ siguiente \_ ( \_ función de proxy WIC)
+# <a name="ienumstring_next_wic_proxy-function"></a>Función IEnumString \_ Next \_ WIC \_ Proxy
 
-Función de proxy de Windows Imaging Component (WIC) para IEnumString:: Next.
+Windows Función de proxy del componente de creación de imágenes (WIC) para IEnumString::Next.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ HRESULT IEnumString_Next_WIC_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **IEnumString \** _
+Tipo: **IEnumString \***
 
 PARAMDESC
 
@@ -51,9 +51,9 @@ PARAMDESC
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -63,9 +63,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

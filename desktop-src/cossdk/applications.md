@@ -1,5 +1,5 @@
 ---
-description: Contiene un objeto para cada aplicación COM+ instalada en el equipo local. Las propiedades expuestas por estos objetos contienen todas las configuraciones realizadas en el nivel de la aplicación.
+description: Contiene un objeto para cada aplicación COM+ instalada en el equipo local. Las propiedades expuestas por estos objetos mantienen todas las configuraciones realizadas en el nivel de aplicación.
 ms.assetid: c0c46592-5282-412d-8f54-67637be8218a
 title: Colección de aplicaciones
 ms.topic: reference
@@ -12,47 +12,47 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 54f286ae393e67d9732e21bc40cbb0f9c46d8c63
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 23ce8d7dc343e9cbca9aab642aee99424c5fffdde8ef0f15a52d2959bf492095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118549437"
 ---
 # <a name="applications-collection"></a>Colección de aplicaciones
 
-Contiene un objeto para cada aplicación COM+ instalada en el equipo local. Las propiedades expuestas por estos objetos contienen todas las configuraciones realizadas en el nivel de la aplicación.
+Contiene un objeto para cada aplicación COM+ instalada en el equipo local. Las propiedades expuestas por estos objetos mantienen todas las configuraciones realizadas en el nivel de aplicación.
 
-Las propiedades de los componentes de una aplicación se establecen mediante la colección de [**componentes**](components.md) relacionados. Los roles se asignan a una aplicación mediante la colección de [**roles**](roles.md) relacionados.
+Las propiedades de los componentes de una aplicación se establecen mediante la colección [**Components**](components.md) relacionada. Los roles se asignan a una aplicación mediante la colección [**roles**](roles.md) relacionada.
 
-Para instalar los componentes en una aplicación, use los métodos del objeto [**COMAdminCatalog**](comadmincatalog.md) . Para instalar una aplicación desde un archivo o para apagar o exportar una aplicación, use también métodos en el objeto **COMAdminCatalog** . De lo contrario, para crear una nueva aplicación, puede Agregar un objeto a la colección de **aplicaciones** .
+Para instalar componentes en una aplicación, use métodos en el [**objeto COMAdminCatalog.**](comadmincatalog.md) Para instalar una aplicación desde un archivo o para apagar o exportar una aplicación, use también métodos en el **objeto COMAdminCatalog.** De lo contrario, para crear una nueva aplicación, puede agregar un objeto a la **colección** Applications.
 
-Esta colección admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección de **aplicaciones** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección** Applications hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ApplicationInstances**](applicationinstances.md)
 -   [**Componentes**](components.md)
 -   [**ErrorInfo**](errorinfo.md)
 -   [**LegacyComponents**](legacycomponents.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**Roles**](roles.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
 -   [**Particiones**](partitions.md)
--   [**Raíces**](root.md)
+-   [**Raíz**](root.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [3GigSupportEnabled](#3gigsupportenabled)
 -   [AccessChecksLevel](#accesscheckslevel)
@@ -64,7 +64,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 -   [AppPartitionID](#apppartitionid)
 -   [Autenticación](#authenticationcapability)
 -   [AuthenticationCapability](#authenticationcapability)
--   [Sustituir](#changeable)
+-   [Cambiable](#changeable)
 -   [CommandLine](#commandline)
 -   [ConcurrentApps](#concurrentapps)
 -   [CreatedBy](#createdby)
@@ -111,8 +111,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica si la aplicación puede utilizar 3 GB de memoria en su proceso. Si no está habilitado, la aplicación solo puede utilizar 2 GB de memoria. |
-| Access         | ReadWrite                                                                                                                                     |
+| Descripción    | Indica si la aplicación puede usar 3 GB de memoria en su proceso. Si esto no está habilitado, la aplicación solo puede usar 2 GB de memoria. |
+| Acceso         | ReadWrite                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                          |
 | Valor predeterminado        | False                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                  |
@@ -127,9 +127,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica si las comprobaciones de acceso se realizan solo en el nivel de proceso o en el nivel de componente y de proceso. Se recomienda usar las constantes en la enumeración y no los valores numéricos. |
-| Access         | ReadWrite                                                                                                                                                                                                       |
-| Tipo           | Valores posibles largos: COMAdminAccessChecksApplicationLevel (0) COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                |
+| Descripción    | Indica si las comprobaciones de acceso se realizan solo en el nivel de proceso o en el nivel de proceso y componente. Se recomienda usar las constantes de la enumeración y no los valores numéricos. |
+| Acceso         | ReadWrite                                                                                                                                                                                                       |
+| Tipo           | Valores largos posibles: COMAdminAccessChecksApplicationLevel (0) COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                |
 | Valor predeterminado        | COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                                                                               |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                    |
 
@@ -143,9 +143,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | La activación local indica que los objetos de la aplicación se ejecutan en un proceso de servidor local dedicado (aplicación de servidor). La activación en proceso indica que los objetos se ejecutan en el proceso de su creador (aplicación de biblioteca). |
-| Access         | ReadWrite                                                                                                                                                                                                                           |
-| Tipo           | Valores posibles largos: COMAdminActivationInproc (0) COMAdminActivationLocal (1)                                                                                                                                                        |
+| Descripción    | La activación local indica que los objetos dentro de la aplicación se ejecutan dentro de un proceso de servidor local dedicado (aplicación de servidor). La activación en proceso indica que los objetos se ejecutan en el proceso de su creador (aplicación de biblioteca). |
+| Acceso         | ReadWrite                                                                                                                                                                                                                           |
+| Tipo           | Long Possible values:COMAdminActivationInproc (0)COMAdminActivationLocal (1)                                                                                                                                                        |
 | Valor predeterminado        | COMAdminActivationLocal (1)                                                                                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                        |
 
@@ -160,7 +160,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------|
 | Descripción    | Indica si se realizan comprobaciones de acceso para la aplicación cuando los clientes realizan llamadas a ella. |
-| Access         | ReadWrite                                                                                          |
+| Acceso         | ReadWrite                                                                                          |
 | Tipo           | Bool                                                                                               |
 | Valor predeterminado        | True                                                                                               |
 | Sistema mínimo | Windows 2000                                                                                       |
@@ -175,8 +175,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Ruta de acceso completa a la aplicación. Esta información es necesaria cuando se configuran los ensamblados en paralelo (SxS). Los ensamblados en paralelo (SxS) permiten a las aplicaciones ASP especificar qué versión de una DLL del sistema compatible con SxS se va a usar, como MSVCRT, MSXML, COMCTL, GDIPLUS, etc. Por ejemplo, si la aplicación ASP se basa en la versión 2,0 de MSVCRT, puede asegurarse de que la aplicación siga usando la versión 2,0 de MSVCRT incluso después de aplicar los Service Packs al servidor. Cualquier versión nueva de MSVCRT todavía está instalada en el equipo, pero la versión 2,0 permanece y se usa en la aplicación. Los archivos DLL compatibles con SxS se almacenan en% WINDIR% \\ WinSxS. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Descripción    | Ruta de acceso completa a la aplicación. Esta información es necesaria al configurar ensamblados en paralelo (SxS). Los ensamblados en paralelo (SxS) permiten a las aplicaciones ASP especificar qué versión de un archivo DLL del sistema compatible con SxS se va a usar, como MSVCRT, MSXML, COMCTL, GDIPLUS, y así sucesivamente. Por ejemplo, si la aplicación ASP se basa en la versión 2.0 de MSVCRT, puede asegurarse de que la aplicación todavía usa la versión 2.0 de MSVCRT incluso después de aplicar Service Pack al servidor. Cualquier nueva versión de MSVCRT todavía está instalada en el equipo, pero la versión 2.0 permanece y la aplicación la usa. Los archivos DLL compatibles con SxS se almacenan en %WINDIR% \\ WinSxS. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Tipo           | String                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Predeterminado        | ""                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -186,11 +186,11 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
  
 
 > [!Note]  
-> Solo se puede usar una versión de un archivo DLL del sistema en cualquier grupo de aplicaciones, aunque esta característica se pueda configurar en el nivel de la aplicación. Por ejemplo, si la aplicación app1 usa MSVCRT, la versión 2,5 y la aplicación App2 usa MSVCRT, versión 2,4, app1 y App2 no deben estar en el mismo grupo de aplicaciones. Si es así, la aplicación que se carga primero tiene la versión de MSVCRT cargada y la otra aplicación se ve obligada a usarla hasta que se descarguen las aplicaciones.
+> Solo se puede usar una versión de un archivo DLL del sistema en cualquier grupo de aplicaciones, aunque esta característica se puede configurar en el nivel de aplicación. Por ejemplo, si la aplicación App1 usa MSVCRT, la versión 2.5 y la aplicación App2 usan MSVCRT, versión 2.4, App1 y App2 no deben estar en el mismo grupo de aplicaciones. Si lo están, la aplicación que se carga primero tiene su versión de MSVCRT cargada y la otra aplicación se ve forzada a usarla hasta que se descarguen las aplicaciones.
 
  
 
-Para obtener más información, vea la sección sobre los ensamblados en paralelo en [cambios en los servicios com+ en IIS 6,0](/previous-versions/iis/6.0-sdk/ms526018(v=vs.90)).
+Para obtener más información, vea "Ensamblados en paralelo" en Cambios en servicios [COM+ en IIS 6.0.](/previous-versions/iis/6.0-sdk/ms526018(v=vs.90))
 
 ### <a name="applicationproxy"></a>ApplicationProxy
 
@@ -199,7 +199,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 | Entrada | Value |
 |----------------|------------------------------------------------------------|
 | Descripción    | Indica si la aplicación es un proxy de aplicación. |
-| Access         | ReadOnly                                                   |
+| Acceso         | ReadOnly                                                   |
 | Tipo           | Bool                                                       |
 | Valor predeterminado        | False                                                      |
 | Sistema mínimo | Windows 2000                                               |
@@ -214,8 +214,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Un nombre de servidor remoto que se usa al exportar el proxy de aplicación. Es este nombre de servidor al que apunta el proxy de aplicación cuando se instala en un equipo cliente. |
-| Access         | ReadWrite                                                                                                                                                              |
+| Descripción    | Nombre de servidor remoto que se usa al exportar el proxy de aplicación. Es este nombre de servidor al que apunta el proxy de aplicación cuando se instala en un equipo cliente. |
+| Acceso         | ReadWrite                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                 |
 | Predeterminado        | ""                                                                                                                                                                     |
 | Sistema mínimo | Windows 2000                                                                                                                                                           |
@@ -230,8 +230,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|---------------------------------------------------|
-| Descripción    | Un GUID que representa el identificador de la partición de aplicación. |
-| Access         | ReadOnly                                          |
+| Descripción    | GUID que representa el identificador de partición de la aplicación. |
+| Acceso         | ReadOnly                                          |
 | Tipo           | String                                            |
 | Predeterminado        | <Generated>                                 |
 | Sistema mínimo | Windows Server 2003                               |
@@ -240,15 +240,15 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
  
 
-### <a name="authentication"></a>Autenticación
+### <a name="authentication"></a>Authentication
 
 
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece el nivel de autenticación de las llamadas, con los valores correspondientes a la configuración de autenticación de llamada a procedimiento remoto (RPC). Cuando se elige COMAdminAuthenticationDefault, se usa el valor de la propiedad DefaultAuthenticationLevel de la colección [**LocalComputer**](localcomputer.md) . |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                             |
-| Tipo           | Valores posibles largos: COMAdminAuthenticationDefault (0) COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2) COMAdminAuthenticationCall (3) COMAdminAuthenticationPacket (4) COMAdminAuthenticationIntegrity (5) COMAdminAuthenticationPrivacy (6)                                              |
+| Descripción    | Establece el nivel de autenticación para las llamadas, con valores correspondientes a la configuración de autenticación de llamada a procedimiento remoto (RPC). Cuando se elige COMAdminAuthenticationDefault, se usa la configuración de la propiedad DefaultAuthenticationLevel dentro de [**la colección LocalComputer.**](localcomputer.md) |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                             |
+| Tipo           | Valores largos posibles:COMAdminAuthenticationDefault (0)COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2)COMAdminAuthenticationCall (3)COMAdminAuthenticationPacket (4)COMAdminAuthenticationIntegrity (5)COMAdminAuthenticationPrivacy (6)                                              |
 | Valor predeterminado        | COMAdminAuthenticationPacket (4)                                                                                                                                                                                                                                                                      |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                          |
 
@@ -257,7 +257,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
  
 
 > [!Note]  
-> En el caso de las aplicaciones de biblioteca (en proceso), los únicos valores válidos aquí son COMAdminAuthenticationDefault y COMAdminAuthenticationNone. Se recomienda usar las constantes en la enumeración y no los valores numéricos.
+> Para las aplicaciones de biblioteca (en proceso), la única configuración válida aquí es COMAdminAuthenticationDefault y COMAdminAuthenticationNone. Se recomienda usar las constantes de la enumeración y no los valores numéricos.
 
  
 
@@ -268,8 +268,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Determina qué identidad se presenta cuando se suplantan las llamadas.                                                                                                                                                                      |
-| Access         | ReadWrite                                                                                                                                                                                                                               |
-| Tipo           | Valores posibles largos: COMAdminAuthenticationCapabilitiesNone (0X0) COMAdminAuthenticationCapabilitiesSecureReference (0X2) COMAdminAuthenticationCapabilitiesStaticCloaking (0x20) COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40) |
+| Acceso         | ReadWrite                                                                                                                                                                                                                               |
+| Tipo           | Long Possible values:COMAdminAuthenticationCapabilitiesNone (0x0)COMAdminAuthenticationCapabilitiesSecureReference (0x2)COMAdminAuthenticationCapabilitiesStaticCloaking (0x20)COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40) |
 | Valor predeterminado        | COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40)                                                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                            |
 
@@ -277,14 +277,14 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
  
 
-### <a name="changeable"></a>Sustituir
+### <a name="changeable"></a>Cambiable
 
 
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si los cambios en la configuración de la aplicación o en sus componentes están permitidos, ya sea mediante programación o a través de la herramienta de administración de servicios de componentes. |
-| Access         | ReadWrite                                                                                                                                                                     |
+| Descripción    | Determina si se permiten cambios en la configuración de la aplicación o en los de sus componentes, ya sea mediante programación o a través de la herramienta de administración servicios de componentes. |
+| Acceso         | ReadWrite                                                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                                                          |
 | Valor predeterminado        | True                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                  |
@@ -299,8 +299,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Cadena de línea de comandos que se va a usar en la depuración. La aplicación puede iniciarse en un depurador con la línea de comandos especificada. |
-| Access         | ReadWrite                                                                                                                  |
+| Descripción    | Cadena de línea de comandos para su uso en la depuración. La aplicación se puede iniciar en un depurador con la línea de comandos especificada. |
+| Acceso         | ReadWrite                                                                                                                  |
 | Tipo           | String                                                                                                                     |
 | Predeterminado        | ""                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                               |
@@ -315,8 +315,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------|
-| Descripción    | Especifica el número máximo de aplicaciones agrupables que pueden ejecutarse simultáneamente. |
-| Access         | ReadWrite                                                                        |
+| Descripción    | Especifica el número máximo de aplicaciones agrupables que se pueden ejecutar simultáneamente. |
+| Acceso         | ReadWrite                                                                        |
 | Tipo           | Long (1-1048576)                                                                 |
 | Valor predeterminado        | 1                                                                                |
 | Sistema mínimo | Windows XP                                                                       |
@@ -331,8 +331,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------|
-| Descripción    | Cadena informativa para describir quién creó la aplicación. |
-| Access         | ReadWrite                                                     |
+| Descripción    | Cadena de información para describir quién creó la aplicación. |
+| Acceso         | ReadWrite                                                     |
 | Tipo           | String                                                        |
 | Predeterminado        | ""                                                            |
 | Sistema mínimo | Windows 2000                                                  |
@@ -347,8 +347,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------|
-| Descripción    | Determina si está habilitado el Administrador de recursos de compensación. |
-| Access         | ReadWrite                                                        |
+| Descripción    | Determina si está habilitada la Resource Manager compensación. |
+| Acceso         | ReadWrite                                                        |
 | Tipo           | Bool                                                             |
 | Valor predeterminado        | False                                                            |
 | Sistema mínimo | Windows 2000                                                     |
@@ -363,8 +363,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------|
-| Descripción    | Nombre y ruta de acceso del archivo para mantener el registro para el administrador de compensación de recursos (CRM). |
-| Access         | ReadWrite                                                                              |
+| Descripción    | Nombre y ruta de acceso del archivo para mantener el registro del administrador de recursos de compensación (CRM). |
+| Acceso         | ReadWrite                                                                              |
 | Tipo           | String                                                                                 |
 | Predeterminado        | ""                                                                                     |
 | Sistema mínimo | Windows 2000                                                                           |
@@ -379,8 +379,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece si se puede eliminar la aplicación, ya sea mediante programación o a través de la herramienta de administración de servicios de componentes. |
-| Access         | ReadWrite                                                                                                                   |
+| Descripción    | Establece si la aplicación se puede eliminar, ya sea mediante programación o a través de la herramienta de administración servicios de componentes. |
+| Acceso         | ReadWrite                                                                                                                   |
 | Tipo           | Bool                                                                                                                        |
 | Valor predeterminado        | True                                                                                                                        |
 | Sistema mínimo | Windows 2000                                                                                                                |
@@ -396,7 +396,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 | Entrada | Value |
 |----------------|----------------------------|
 | Descripción    | Describe la aplicación. |
-| Access         | ReadWrite                  |
+| Acceso         | ReadWrite                  |
 | Tipo           | String                     |
 | Predeterminado        | ""                         |
 | Sistema mínimo | Windows 2000               |
@@ -411,8 +411,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------|
-| Descripción    | Habilita el volcado del estado de una aplicación COM+ en el momento en que se produjo un error en un directorio designado. |
-| Access         | ReadWrite                                                                                             |
+| Descripción    | Habilita el volcado del estado de una aplicación COM+ en el momento del error en un directorio designado. |
+| Acceso         | ReadWrite                                                                                             |
 | Tipo           | Bool                                                                                                  |
 | Valor predeterminado        | False                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                            |
@@ -422,7 +422,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
  
 
 > [!Note]  
-> A partir de Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado de memoria de COM+.
+> A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado com+.
 
  
 
@@ -432,8 +432,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Habilita el volcado del estado de una aplicación COM+ cuando la aplicación produce una excepción no controlada y finaliza con el tiempo de ejecución de COM+. |
-| Access         | ReadWrite                                                                                                                                     |
+| Descripción    | Habilita el volcado del estado de una aplicación COM+ cuando la aplicación produce una excepción no controlada y el tiempo de ejecución de COM+ finaliza. |
+| Acceso         | ReadWrite                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                          |
 | Valor predeterminado        | False                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                    |
@@ -449,7 +449,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------|
 | Descripción    | Habilita el volcado del estado de una aplicación COM+ cuando se produce un error en la aplicación. |
-| Access         | ReadWrite                                                                       |
+| Acceso         | ReadWrite                                                                       |
 | Tipo           | Bool                                                                            |
 | Valor predeterminado        | False                                                                           |
 | Sistema mínimo | Windows XP                                                                      |
@@ -464,10 +464,10 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------|
-| Descripción    | La ruta de acceso del directorio en el que se guardan los archivos de volcado. |
-| Access         | ReadWrite                                                    |
+| Descripción    | Ruta de acceso del directorio en el que se guardan los archivos de volcado. |
+| Acceso         | ReadWrite                                                    |
 | Tipo           | String                                                       |
-| Predeterminado        | "% SystemRoot% \\ system32 \\ com \\ DMP"                           |
+| Predeterminado        | "%systemroot% \\ system32 \\ com \\ dmp"                           |
 | Sistema mínimo | Windows XP                                                   |
 
 
@@ -475,7 +475,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
  
 
 > [!Note]  
-> A partir de Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado de memoria de COM+.
+> A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado com+.
 
  
 
@@ -486,7 +486,7 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 | Entrada | Value |
 |----------------|-----------------------------------------------------------|
 | Descripción    | Indica si los eventos están habilitados para la aplicación. |
-| Access         | ReadWrite                                                 |
+| Acceso         | ReadWrite                                                 |
 | Tipo           | Bool                                                      |
 | Valor predeterminado        | True                                                      |
 | Sistema mínimo | Windows 2000                                              |
@@ -495,14 +495,14 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
  
 
-### <a name="id"></a>id
+### <a name="id"></a>ID
 
 
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Un GUID que representa la aplicación. Esta propiedad se devuelve cuando se llama al método de propiedad de [**clave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                            |
+| Descripción    | GUID que representa la aplicación. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
+| Acceso         | WriteOnce                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                               |
 | Predeterminado        | <Generated>                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                         |
@@ -517,8 +517,8 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece la identidad de proceso de servidor para la aplicación. Especifique una cuenta de usuario válida o un "usuario interactivo" para que la aplicación asuma la identidad del usuario que ha iniciado la sesión actual. También puede especificar las cadenas ' NT Authority \\ LocalService ', ' NT Authority \\ NetworkService ' y ' NT Authority \\ System '. La contraseña predeterminada para estas tres cuentas es "" (cadena vacía). |
-| Access         |                                                                                                                                                                                                                                                                                                                                                                                    |
+| Descripción    | Establece la identidad de proceso del servidor para la aplicación. Especifique una cuenta de usuario válida o "Usuario interactivo" para que la aplicación asuma la identidad del usuario que ha iniciado sesión actual. También puede especificar las cadenas "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system". La contraseña predeterminada para estas tres cuentas es "" (cadena vacía). |
+| Acceso         |                                                                                                                                                                                                                                                                                                                                                                                    |
 | Tipo           |                                                                                                                                                                                                                                                                                                                                                                                    |
 | Valor predeterminado        |                                                                                                                                                                                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                       |
@@ -527,9 +527,9 @@ Para obtener más información, vea la sección sobre los ensamblados en paralel
 
  
 
-La propiedad de identidad no está habilitada para las aplicaciones de biblioteca, que se ejecutan en el proceso del cliente.
+La propiedad Identity no está habilitada para las aplicaciones de biblioteca, que se ejecutan en el proceso de cliente.
 
-La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, antes de usar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), porque la contraseña y la identidad se validan antes de guardarse. Si la contraseña y la identidad no se sincronizan, la aplicación no se puede iniciar hasta que un administrador la restablezca.
+La propiedad Password debe establecerse al mismo tiempo que Identity, antes de usar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), porque la contraseña y la identidad se validan antes de guardarse. Si la contraseña y la identidad no se sincronizan, la aplicación no se puede iniciar hasta que un administrador las restablezca.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 
@@ -537,9 +537,9 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece el nivel de suplantación usado para las llamadas realizadas a otras aplicaciones.                                                                                           |
-| Access         | ReadWrite                                                                                                                                                     |
-| Tipo           | Valores posibles largos: COMAdminImpersonationAnonymous (1) COMAdminImpersonationIdentify (2) COMAdminImpersonationImpersonate (3) COMAdminImpersonationDelegate (4) |
+| Descripción    | Establece el nivel de suplantación utilizado para las llamadas realizadas a otras aplicaciones.                                                                                           |
+| Acceso         | ReadWrite                                                                                                                                                     |
+| Tipo           | Long Possible values:COMAdminImpersonationAnonymous (1)COMAdminImpersonationIdentify (2)COMAdminImpersonationImpersonate (3)COMAdminImpersonationDelegate (4) |
 | Valor predeterminado        | COMAdminImpersonationImpersonate (3)                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                  |
 
@@ -553,8 +553,8 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Si el componente o la aplicación COM+ está deshabilitado, IsEnabled es false. Si el componente o la aplicación COM+ está habilitado, IsEnabled es true. |
-| Access         | ReadWrite                                                                                                                                 |
+| Descripción    | Si la aplicación o componente COM+ está deshabilitado, IsEnabled es False. Si la aplicación o componente COM+ está habilitado, IsEnabled es True. |
+| Acceso         | ReadWrite                                                                                                                                 |
 | Tipo           | Bool                                                                                                                                      |
 | Valor predeterminado        | True                                                                                                                                      |
 | Sistema mínimo | Windows XP                                                                                                                                |
@@ -570,7 +570,7 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 | Entrada | Value |
 |----------------|--------------------------------------|
 | Descripción    | Identifica las aplicaciones del sistema COM+. |
-| Access         | ReadOnly                             |
+| Acceso         | ReadOnly                             |
 | Tipo           | Bool                                 |
 | Valor predeterminado        | False                                |
 | Sistema mínimo | Windows 2000                         |
@@ -585,8 +585,8 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------|
-| Descripción    | Indica el número máximo de archivos que se van a generar antes de que se produzca la sobrescritura. |
-| Access         | ReadWrite                                                                        |
+| Descripción    | Indica el número máximo de archivos que se generarán antes de que se produzca la sobrescritura. |
+| Acceso         | ReadWrite                                                                        |
 | Tipo           | Long (1-200)                                                                     |
 | Predeterminado        | 5                                                                                |
 | Sistema mínimo | Windows XP                                                                       |
@@ -601,8 +601,8 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre de la aplicación. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de la propiedad [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadWrite                                                                                                                                                                                                                            |
+| Descripción    | Nombre de la aplicación. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                                                                                               |
 | Predeterminado        | "Nueva aplicación"                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                         |
@@ -612,7 +612,7 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
  
 
 > [!Note]  
-> Deben elegirse nombres únicos para las aplicaciones. Si se crean varias aplicaciones con el mismo nombre, puede interferir con la referencia de las aplicaciones por nombre, lo que resulta en un comportamiento impredecible.
+> Se deben elegir nombres únicos para las aplicaciones. Si se crean varias aplicaciones con el mismo nombre, puede interferir con la referencia a las aplicaciones por nombre, lo que produce un comportamiento imprevisible.
 
  
 
@@ -622,8 +622,8 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------|
-| Descripción    | Establece la contraseña utilizada por el proceso de servidor para iniciar sesión con la identidad. |
-| Access         | WriteOnly                                                                  |
+| Descripción    | Establece la contraseña usada por el proceso del servidor para iniciar sesión en la identidad. |
+| Acceso         | WriteOnly                                                                  |
 | Tipo           | String                                                                     |
 | Predeterminado        | ""                                                                         |
 | Sistema mínimo | Windows 2000                                                               |
@@ -632,7 +632,7 @@ La propiedad de contraseña debe establecerse al mismo tiempo que la identidad, 
 
  
 
-La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), porque la contraseña y la identidad se validan antes de guardarse. Si la contraseña y la identidad no se sincronizan, la aplicación no se puede iniciar hasta que un administrador la restablezca.
+La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), porque la contraseña y la identidad se validan antes de guardarse. Si la contraseña y la identidad no se sincronizan, la aplicación no se puede iniciar hasta que un administrador las restablezca.
 
 ### <a name="qcauthenticatemsgs"></a>QCAuthenticateMsgs
 
@@ -641,8 +641,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Indica en qué circunstancias se autentican las solicitudes en cola a una aplicación.                                                 |
-| Access         | ReadWrite                                                                                                                               |
-| Tipo           | Valores posibles largos: COMAdminQCMessageAuthenticateSecureApps (0) COMAdminQCMessageAuthenticateOff (1) COMAdminQCMessageAuthenticateOn (2) |
+| Acceso         | ReadWrite                                                                                                                               |
+| Tipo           | Long Possible values:COMAdminQCMessageAuthenticateSecureApps (0)COMAdminQCMessageAuthenticateOff (1)COMAdminQCMessageAuthenticateOn (2) |
 | Valor predeterminado        | COMAdminQCMessageAuthenticateSecureApps (0)                                                                                             |
 | Sistema mínimo | Windows XP                                                                                                                              |
 
@@ -656,8 +656,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica el número máximo de subprocesos de agente de escucha simultáneos. El intervalo válido para esta propiedad es de 0 a 1000. En el caso de una aplicación recién creada, el valor se deriva del algoritmo que se usa actualmente para determinar el número predeterminado de subprocesos del agente de escucha: 16 veces el número de CPU del servidor. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                 |
+| Descripción    | Indica el número máximo de subprocesos de escucha simultáneos. El intervalo válido para esta propiedad es de 0 a 1000. Para una aplicación recién creada, la configuración se deriva del algoritmo que se usa actualmente para determinar el número predeterminado de subprocesos de escucha: 16 veces el número de CPU en el servidor. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                 |
 | Tipo           | Long (0-1000)                                                                                                                                                                                                                                                                                             |
 | Valor predeterminado        | 0                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                |
@@ -667,7 +667,7 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
  
 
 > [!Note]  
-> Esta propiedad también está disponible con la capacidad de lectura y escritura de la pestaña **puesta en cola** de la herramienta administrativa Servicios de componentes.
+> Esta propiedad también está disponible con la funcionalidad de lectura y escritura en la pestaña **Cola** de la herramienta administrativa Servicios de componentes.
 
  
 
@@ -677,8 +677,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica si el agente de escucha de componentes en cola está habilitado para la aplicación. Si está habilitada, el agente de escucha se inicia cuando se inicia la aplicación. Esta propiedad solo surte efecto si QueuingEnabled está establecido en true. |
-| Access         | ReadWrite                                                                                                                                                                                                            |
+| Descripción    | Indica si el agente de escucha de componentes en cola está habilitado para la aplicación. Si está habilitada, el agente de escucha se inicia cuando se inicia la aplicación. Esta propiedad solo tiene efecto si QueuingEnabled está establecido en True. |
+| Acceso         | ReadWrite                                                                                                                                                                                                            |
 | Tipo           | Bool                                                                                                                                                                                                                 |
 | Valor predeterminado        | False                                                                                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                         |
@@ -693,8 +693,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------|
-| Descripción    | Indica si el servicio de componentes en cola COM+ está habilitado para la aplicación. |
-| Access         | ReadWrite                                                                            |
+| Descripción    | Indica si el servicio Componentes en cola de COM+ está habilitado para la aplicación. |
+| Acceso         | ReadWrite                                                                            |
 | Tipo           | Bool                                                                                 |
 | Valor predeterminado        | False                                                                                |
 | Sistema mínimo | Windows 2000                                                                         |
@@ -709,8 +709,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica el número máximo de activaciones de los objetos configurados en la aplicación que se aceptan antes de reciclar el proceso. El número predeterminado de activaciones es 0. |
-| Access         | ReadWrite                                                                                                                                                            |
+| Descripción    | Indica el número máximo de activaciones de objetos configurados en la aplicación que se deben aceptar antes de reciclar el proceso. El número predeterminado de activaciones es 0. |
+| Acceso         | ReadWrite                                                                                                                                                            |
 | Tipo           | Long (0-1048576)                                                                                                                                                     |
 | Valor predeterminado        | 0                                                                                                                                                                    |
 | Sistema mínimo | Windows XP                                                                                                                                                           |
@@ -726,7 +726,7 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Indica el número máximo de llamadas para permitir que los objetos configurados en la aplicación acepten antes de reciclar el proceso. El número predeterminado de llamadas es 0. |
-| Access         | ReadWrite                                                                                                                                                      |
+| Acceso         | ReadWrite                                                                                                                                                      |
 | Tipo           | Long (0-1048576)                                                                                                                                               |
 | Valor predeterminado        | 0                                                                                                                                                              |
 | Sistema mínimo | Windows XP                                                                                                                                                     |
@@ -741,8 +741,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica la cantidad de tiempo (en minutos) que se permite la ejecución de un proceso reciclado antes de cerrarlo. La cuenta atrás comienza inmediatamente después de que se recicle el proceso. El tiempo de espera de expiración máximo es de 1440 minutos (24 horas) y el valor predeterminado es 15 minutos. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                        |
+| Descripción    | Indica la cantidad de tiempo (en minutos) para permitir que se ejecute un proceso reciclado antes de apagarlo. La cuenta atrás comienza inmediatamente después de reciclar el proceso. El tiempo de espera máximo de expiración es de 1440 minutos (24 horas) y el valor predeterminado es 15 minutos. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                        |
 | Tipo           | Long (1-1440)                                                                                                                                                                                                                                                    |
 | Valor predeterminado        | 15                                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                       |
@@ -757,8 +757,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica el número máximo de minutos que se permite que un proceso se ejecute antes de reciclarlo. El límite de duración máximo es de 30240 minutos (21 días) y el valor predeterminado es 0 minutos. |
-| Access         | ReadWrite                                                                                                                                                                   |
+| Descripción    | Indica el número máximo de minutos para permitir que un proceso se ejecute antes de reciclarlo. El límite máximo de duración es de 30240 minutos (21 días) y el valor predeterminado es 0 minutos. |
+| Acceso         | ReadWrite                                                                                                                                                                   |
 | Tipo           | Long (0-30240)                                                                                                                                                              |
 | Valor predeterminado        | 0                                                                                                                                                                           |
 | Sistema mínimo | Windows XP                                                                                                                                                                  |
@@ -773,8 +773,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica la cantidad máxima de uso de memoria (en kilobytes) permitida para un proceso antes de que se recicle. Si el uso de memoria del proceso supera el número especificado durante un período superior a un minuto, el proceso se recicla. La cantidad predeterminada de uso de memoria es de 0 KB. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                              |
+| Descripción    | Indica la cantidad máxima de uso de memoria (en kilobytes) permitida para un proceso antes de reciclarse. Si el uso de memoria del proceso supera el número especificado durante un período superior a un minuto, se recicla el proceso. La cantidad predeterminada de uso de memoria es de 0 KB. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                              |
 | Tipo           | Long (0-1048576)                                                                                                                                                                                                                                                       |
 | Valor predeterminado        | 0                                                                                                                                                                                                                                                                      |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                             |
@@ -789,8 +789,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|------------------------------------------------------|
-| Descripción    | Indica si la aplicación se puede replicar. |
-| Access         | ReadWrite                                            |
+| Descripción    | Indica si se puede replicar la aplicación. |
+| Acceso         | ReadWrite                                            |
 | Tipo           | Bool                                                 |
 | Valor predeterminado        | True                                                 |
 | Sistema mínimo | Windows XP                                           |
@@ -805,8 +805,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Permite que un proceso de servidor continúe si una aplicación está inactiva. Si se establece en true, el proceso de servidor no se apaga cuando se deja inactivo. Si se establece en false, el proceso se cierra según el valor establecido por la propiedad ShutdownAfter. RunForever no está habilitado para las aplicaciones de biblioteca (en proceso). |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                |
+| Descripción    | Permite que un proceso de servidor continúe si una aplicación está inactiva. Si se establece en True, el proceso del servidor no se cierra cuando se deja inactivo. Si se establece en False, el proceso se cierra según el valor establecido por la propiedad ShutdownAfter. RunForever no está habilitado para aplicaciones de biblioteca (en proceso). |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                     |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                             |
@@ -821,8 +821,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | El nombre de servicio correspondiente a la aplicación configurada para ejecutarse como una aplicación de servicio. Si este valor es **null**, la aplicación no está configurada para ejecutarse como un servicio. De lo contrario, la información de configuración para el servicio se puede encontrar mediante el nombre del servicio. |
-| Access         | ReadOnly                                                                                                                                                                                                                                                                         |
+| Descripción    | Nombre del servicio correspondiente a la aplicación configurada para ejecutarse como una aplicación de servicio. Si este valor es **NULL,** la aplicación no está configurada para ejecutarse como servicio. De lo contrario, la información de configuración del servicio se puede encontrar mediante el nombre del servicio. |
+| Acceso         | ReadOnly                                                                                                                                                                                                                                                                         |
 | Tipo           | String                                                                                                                                                                                                                                                                           |
 | Predeterminado        | ""                                                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                       |
@@ -837,8 +837,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece el retraso antes de cerrar un proceso de servidor después de que se vuelva inactivo. La latencia de cierre oscila entre 0 y 1440 minutos (24 horas). Si RunForever se establece en true, esta propiedad se omite. ShutdownAfter no está habilitado para las aplicaciones de biblioteca (en proceso). |
-| Access         | ReadWrite                                                                                                                                                                                                                                                          |
+| Descripción    | Establece el retraso antes de apagar un proceso de servidor después de que se vuelva inactivo. La latencia de apagado oscila entre 0 y 1440 minutos (24 horas). Si RunForever se establece en True, se omite esta propiedad. ShutdownAfter no está habilitado para aplicaciones de biblioteca (en proceso). |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                          |
 | Tipo           | Long (0-1440)                                                                                                                                                                                                                                                      |
 | Valor predeterminado        | 3                                                                                                                                                                                                                                                                  |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                       |
@@ -854,7 +854,7 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------|
 | Descripción    | Indica si esta aplicación se expone para su consumo a través del protocolo SOAP. |
-| Access         | ReadWrite                                                                            |
+| Acceso         | ReadWrite                                                                            |
 | Tipo           | Bool                                                                                 |
 | Valor predeterminado        | False                                                                                |
 | Sistema mínimo | Windows Server 2003                                                                  |
@@ -869,8 +869,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------|
-| Descripción    | Punto de conexión de la dirección URL en el que esta aplicación se expone a través del protocolo SOAP. |
-| Access         | ReadWrite                                                                    |
+| Descripción    | Punto de conexión de dirección URL en el que esta aplicación se expone a través del protocolo SOAP. |
+| Acceso         | ReadWrite                                                                    |
 | Tipo           | String                                                                       |
 | Predeterminado        | ""                                                                           |
 | Sistema mínimo | Windows Server 2003                                                          |
@@ -885,8 +885,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------|
-| Descripción    | La dirección de correo electrónico en la que se expone esta aplicación a través del protocolo SOAP. |
-| Access         | ReadWrite                                                                     |
+| Descripción    | Dirección de correo electrónico en la que se expone esta aplicación a través del protocolo SOAP. |
+| Acceso         | ReadWrite                                                                     |
 | Tipo           | String                                                                        |
 | Predeterminado        | ""                                                                            |
 | Sistema mínimo | Windows Server 2003                                                           |
@@ -901,8 +901,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
-| Descripción    | El directorio raíz virtual de IIS en el que residen los scripts de acceso que exponen la aplicación a través del protocolo SOAP. |
-| Access         | ReadWrite                                                                                                            |
+| Descripción    | Directorio raíz virtual de IIS en el que residen los scripts de acceso que exponen la aplicación a través del protocolo SOAP. |
+| Acceso         | ReadWrite                                                                                                            |
 | Tipo           | String                                                                                                               |
 | Predeterminado        | ""                                                                                                                   |
 | Sistema mínimo | Windows Server 2003                                                                                                  |
@@ -917,8 +917,8 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina la Directiva de restricción de software (SRP) de la aplicación. Si se establece en true, se utiliza la propiedad SRPTrustLevel de la aplicación. Si se establece en false, se usan las directivas de restricción de software de la configuración de seguridad local. La configuración de seguridad local se controla mediante el complemento Directiva de seguridad local de Microsoft Management Console. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                             |
+| Descripción    | Determina la directiva de restricción de software (SRP) para la aplicación. Si se establece en True, se usa la propiedad SRPTrustLevel para la aplicación. Si se establece en False, se usan las directivas de restricción de software de la configuración de seguridad local. La configuración de seguridad local se controla mediante el complemento Directiva de seguridad local del Microsoft Management Console. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                             |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                  |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                            |
@@ -933,17 +933,17 @@ La contraseña debe establecerse al mismo tiempo que la identidad, antes de usar
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica el nivel de confianza de la Directiva de restricción de software (SRP) de la aplicación. Esta propiedad solo se usa si la propiedad SRPEnabled está establecida en true. El nivel de confianza de SRP hace referencia al nivel de confianza que desea dar a una aplicación. Un nivel de confianza SRP sin restricciones se corresponde con \_ el \_ valor de enumeración LEVELID FULLYTRUSTED más seguro, mientras que un nivel de confianza SRP no permitido corresponde al \_ valor de enumeración de LEVELID no \_ permitido. La enumeración para los niveles de confianza se define en Winsafer. h. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Tipo           | Valores posibles largos: LEVELID de seguridad no \_ \_ permitido (0X0) Safe \_ LEVELID \_ FULLYTRUSTED (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Valor predeterminado        | Safe \_ LEVELID \_ FULLYTRUSTED (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Descripción    | Indica el nivel de confianza de la directiva de restricción de software (SRP) de la aplicación. Esta propiedad solo se usa si la propiedad SRPEnabled está establecida en True. El nivel de confianza de SRP hace referencia al nivel de confianza que está dispuesto a dar a una aplicación. Un nivel de confianza de SRP sin restricciones corresponde al valor de enumeración SAFER LEVELID FULLYTRUSTED, mientras que un nivel de confianza de SRP no permitido corresponde al valor de enumeración \_ \_ SAFER \_ LEVELID \_ DISALLOWED. La enumeración de los niveles de confianza se define en Winsafer.h. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Tipo           | Long Possible values:SAFER \_ LEVELID \_ DISALLOWED (0x0)SAFER \_ LEVELID \_ FULLYTRUSTED (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Valor predeterminado        | LEVELID \_ MÁS SEGURO TOTALMENTE DE CONFIANZA \_ (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 
 
  
 
-Una aplicación en la que esté dispuesto a confiar con acceso sin restricciones debe tener la seguridad más estricta asociada. Las aplicaciones que no están restringidas pueden cargar solo componentes no restringidos, mientras que las aplicaciones no permitidas no podrán ejecutarse y, por lo tanto, no podrán cargar ningún componente.
+Una aplicación en la que esté dispuesto a confiar con acceso sin restricciones debe tener asociada la seguridad más estricta. Las aplicaciones que no están restringidas solo pueden cargar componentes sin restricciones, mientras que las aplicaciones no permitidas no podrán ejecutarse y, por tanto, no podrán cargar ningún componente.
 
 ## <a name="see-also"></a>Vea también
 

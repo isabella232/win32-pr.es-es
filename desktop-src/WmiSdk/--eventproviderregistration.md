@@ -1,8 +1,8 @@
 ---
-description: Se utiliza para registrar proveedores de eventos con Instrumental de administración de Windows (WMI).
+description: Se usa para registrar proveedores de eventos con Windows Management Instrumentation (WMI).
 ms.assetid: d87f61a8-5549-4f33-ba67-31b5d72b5282
 ms.tgt_platform: multiple
-title: __EventProviderRegistration (clase)
+title: __EventProviderRegistration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: caaad1b4ab03cfc1b43e4239b9144d3ceeade82f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce973f05aec0a1c859598c558ef8c2cc637a8faec22fd1d7f2ad2aaf383bd201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557949"
 ---
-# <a name="__eventproviderregistration-class"></a>\_\_Clase EventProviderRegistration
+# <a name="__eventproviderregistration-class"></a>\_\_EventProviderRegistration (clase)
 
-La clase del sistema **\_ \_ EventProviderRegistration** se utiliza para registrar proveedores de eventos con instrumental de administración de Windows (WMI).
+La **\_ \_ clase del sistema EventProviderRegistration** se usa para registrar proveedores de eventos con Windows Management Instrumentation (WMI).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -41,45 +41,45 @@ class __EventProviderRegistration : __ProviderRegistration
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ EventProviderRegistration** tiene estos tipos de miembros:
+La **\_ \_ clase EventProviderRegistration** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ EventProviderRegistration** tiene estas propiedades.
+La **\_ \_ clase EventProviderRegistration** tiene estas propiedades.
 
 <dl> <dt>
 
 **EventQueryList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Una o más consultas del lenguaje de consulta de Instrumental de administración de Windows (WQL) que describen los eventos que admite el proveedor de eventos.
+Una o varias consultas Windows lenguaje de consulta de instrumentación de administración de administración (WQL) que describen los eventos que admite el proveedor de eventos.
 
 </dd> <dt>
 
-**presta**
+**Proveedor**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ \_ proveedor**
+Tipo de datos: **\_ \_ Proveedor**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del objeto al proveedor de eventos. Esta propiedad se hereda de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Ruta de acceso del objeto al proveedor de eventos. Esta propiedad se hereda de [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Solo los administradores pueden registrar o eliminar un proveedor de eventos mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) y [**\_ \_ EventProviderRegistration**](--eventconsumerproviderregistration.md). La clase **\_ \_ EventProviderRegistration** se deriva de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Solo los administradores pueden registrar o eliminar un proveedor de eventos mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) y [**\_ \_ EventProviderRegistration**](--eventconsumerproviderregistration.md). La **\_ \_ clase EventProviderRegistration** se deriva de [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,7 +103,7 @@ Solo los administradores pueden registrar o eliminar un proveedor de eventos med
 [Clases del sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[Registrar un proveedor de eventos](registering-an-event-provider.md)
+[Registro de un proveedor de eventos](registering-an-event-provider.md)
 </dt> <dt>
 
 [Escribir un proveedor de eventos](writing-an-event-provider.md)

@@ -1,5 +1,5 @@
 ---
-description: Contiene las colecciones de nivel superior en el catálogo.
+description: Contiene las colecciones de nivel superior del catálogo.
 ms.assetid: 6cd23e6a-53b8-42ec-97df-59281f019252
 title: Colección raíz
 ms.topic: reference
@@ -12,42 +12,42 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ad896c69ab6fad75179c9bb30668143aa2ea741e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0aba7a308a37ee531adf0886b8d06d4fd8c17369f73bd2bddf3211c2c184a4fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118547022"
 ---
 # <a name="root-collection"></a>Colección raíz
 
-Contiene las colecciones de nivel superior en el catálogo. No contiene ningún objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) ni admite ninguna propiedad.
+Contiene las colecciones de nivel superior del catálogo. No contiene ningún objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) ni admite ninguna propiedad.
 
-La colección **raíz** no admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+La **colección** Raíz no admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-No se puede navegar a la colección **raíz** desde cualquier colección.
+No puede navegar a la **colección raíz** desde ninguna colección.
 
 ## <a name="members"></a>Miembros
 
-La colección **raíz** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección** Raíz hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-A continuación se muestran las colecciones de nivel superior del catálogo:
+Estas son las colecciones de nivel superior del catálogo:
 
 -   [**ApplicationCluster**](applicationcluster.md)
 -   [**ApplicationInstances**](applicationinstances.md)
--   [**APLICACIONES**](applications.md)
+-   [**Aplicaciones**](applications.md)
 -   [**ComputerList**](computerlist.md)
 -   [**DCOMProtocols**](dcomprotocols.md)
 -   [**EventClassesForIID**](eventclassesforiid.md)
 -   [**FilesForImport**](filesforimport.md)
 -   [**InprocServers**](inprocservers.md)
 -   [**LegacyServers**](legacyservers.md)
--   [**LocalComputer**](localcomputer.md)
+-   [**Equipo local**](localcomputer.md)
 -   [**Particiones**](partitions.md)
 -   [**PartitionUsers**](partitionusers.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**TransientSubscriptions**](transientsubscriptions.md)
 -   [**WOWInprocServers**](wowinprocservers.md)

@@ -1,40 +1,40 @@
 ---
-description: Una clase de vista de asociación le permite usar ASOCIAdores de consultas en clases que residen en diferentes espacios de nombres.
+description: Una clase de vista de asociación permite usar consultas ASSOCIATORS OF en clases que residen en espacios de nombres diferentes.
 ms.assetid: 4af4fe1b-2b19-472e-8261-798b374ae57e
 ms.tgt_platform: multiple
-title: Asociar instancias entre espacios de nombres
+title: Asociación de instancias entre espacios de nombres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8347d3a35f06f72d3344f5c12606d82709a1370
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d743b835d28af4fe0a8dd5d09858b2ba6ff0abacd0f35219c3dd90d39d0810d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557023"
 ---
-# <a name="associating-instances-between-namespaces"></a>Asociar instancias entre espacios de nombres
+# <a name="associating-instances-between-namespaces"></a>Asociación de instancias entre espacios de nombres
 
-Una clase de vista de asociación le permite usar [asociadores de](associators-of-statement.md) consultas en clases que residen en diferentes espacios de nombres.
+Una clase de vista de asociación permite usar [consultas ASSOCIATORS OF](associators-of-statement.md) en clases que residen en espacios de nombres diferentes.
 
 En el procedimiento siguiente se describe cómo asociar instancias entre espacios de nombres.
 
 **Para asociar instancias entre espacios de nombres**
 
-1.  Comience la definición de clase con el calificador de cadena de [**Asociación**](meta-qualifiers.md) .
+1.  Comience la definición de clase con el [**calificador de cadena Association.**](meta-qualifiers.md)
 
-    Los calificadores **joinon**, [**Association**](meta-qualifiers.md)y **Union** se excluyen mutuamente.
+    Los **calificadores JoinOn,** [**Association**](meta-qualifiers.md) **y Union** son mutuamente excluyentes.
 
-2.  Cree las consultas que definen las instancias de origen usadas en la clase de vista con el calificador [**ViewSources**](viewsources-qualifier.md) .
-3.  Defina los nombres y la ubicación de los espacios de nombres en los que se encuentran las instancias de origen con el calificador [**ViewSpaces**](viewspaces-qualifier.md) .
-4.  Defina las propiedades que desee en la clase de vista de asociación con el calificador [**PropertySources**](propertysources-qualifier.md) .
+2.  Cree las consultas que definen las instancias de origen usadas en la clase de vista con el [**calificador ViewSources.**](viewsources-qualifier.md)
+3.  Defina los nombres y la ubicación de los espacios de nombres en los que se encuentran las instancias de origen con el [**calificador ViewSpaces.**](viewspaces-qualifier.md)
+4.  Defina las propiedades que desee en la clase de vista de asociación con el [**calificador PropertySources.**](propertysources-qualifier.md)
 
-    Si es necesario, puede etiquetar cualquiera de las propiedades como perteneciente a una clase de origen mediante el calificador [**HiddenDefault**](qualifiers-specific-to-the-view-provider.md) .
+    Si es necesario, puede etiquetar cualquiera de las propiedades como pertenecientes a una clase de origen mediante el [**calificador HiddenDefault.**](qualifiers-specific-to-the-view-provider.md)
 
-5.  Etiquete cualquier propiedad pertinente con el calificador **Direct** .
+5.  Etiquete las propiedades pertinentes con el **calificador Directo.**
 
-    El calificador **directo** evita que el proveedor de vistas asigne la referencia de asociación etiquetada a una referencia de vista.
+    El **calificador Directo** impide que el proveedor de vistas asigna la referencia de asociación etiquetada a una referencia de vista.
 
-En los siguientes ejemplos de código se muestra cómo crear clases de vista de asociación.
+En los ejemplos de código siguientes se muestra cómo crear clases de vista de asociación.
 
 ``` syntax
 [union,
