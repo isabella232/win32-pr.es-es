@@ -4,22 +4,22 @@ description: El objeto Command
 ms.assetid: a757846a-c2d0-4239-9533-babf5dc8399f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e9e9ce22b3a1c0c2286232b5e2204e158501332
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 242a90022431b826cf877edd862cd89a39d193865ed31afc1e4ff911f4189756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105714369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118245621"
 ---
 # <a name="the-command-object"></a>El objeto Command
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-Un objeto [**Command**](/windows/desktop/lwef/the-command-object) es un elemento de una colección [**Commands**](/windows/desktop/lwef/the-commands-collection-object) . El servidor proporciona al usuario acceso a los objetos de **comando** cuando la aplicación cliente pasa a ser de entrada activa.
+Un [**objeto Command**](/windows/desktop/lwef/the-command-object) es un elemento de una colección [**Commands.**](/windows/desktop/lwef/the-commands-collection-object) El servidor proporciona al usuario acceso a los **objetos Command** cuando la aplicación cliente se convierte en input-active.
 
--   [Propiedades del objeto de comando](command-object-properties.md)
+-   [Propiedades del objeto Command](command-object-properties.md)
 
-Para tener acceso a la propiedad de un objeto de [**comando**](/windows/desktop/lwef/the-command-object) , se hace referencia a él en su colección mediante su propiedad [**Name**](name-property.md) . En VBScript y Visual Basic puede usar la propiedad **nombre** directamente:
+Para tener acceso a la propiedad de un [**objeto Command,**](/windows/desktop/lwef/the-command-object) se hace referencia a él en su colección mediante su [**propiedad Name.**](name-property.md) En VBScript y Visual Basic puede usar la **propiedad Name** directamente:
 
 
 ```
@@ -28,7 +28,7 @@ Para tener acceso a la propiedad de un objeto de [**comando**](/windows/desktop/
 
 
 
-Para los lenguajes de programación que no admiten colecciones, use el método de [**comando**](command-method.md) :
+Para los lenguajes de programación que no admiten colecciones, use el [**método Command:**](command-method.md)
 
 
 ```
@@ -37,7 +37,7 @@ Para los lenguajes de programación que no admiten colecciones, use el método d
 
 
 
-También puede hacer referencia a un objeto de comando mediante la creación de una referencia a él. En Visual Basic, declare una variable de objeto y use la instrucción SET para crear la referencia:
+También puede hacer referencia a un objeto Command creando una referencia a él. En Visual Basic, declare una variable de objeto y use la instrucción Set para crear la referencia:
 
 
 ```
@@ -50,7 +50,7 @@ También puede hacer referencia a un objeto de comando mediante la creación de 
 
 
 
-En Visual Basic 5,0, también puede declarar el objeto como de tipo [**IAgentCtlCommandEx**](https://www.bing.com/search?q=**IAgentCtlCommandEx**) y crear la referencia. Esta Convención permite el enlace anticipado, lo que da como resultado un mejor rendimiento:
+En Visual Basic 5.0, también puede declarar el objeto como tipo [**IAgentCtlCommandEx**](https://www.bing.com/search?q=**IAgentCtlCommandEx**) y crear la referencia. Esta convención permite el enlace temprano, lo que da como resultado un mejor rendimiento:
 
 
 ```
@@ -63,7 +63,7 @@ En Visual Basic 5,0, también puede declarar el objeto como de tipo [**IAgentCtl
 
 
 
-En VBScript, puede declarar una referencia como un tipo determinado, pero todavía puede declarar la variable y establecerla en el [**comando**](/windows/desktop/lwef/the-command-object) de la colección:
+En VBScript, puede declarar una referencia como un tipo determinado, pero todavía puede declarar la variable y establecerla en [**el comando**](/windows/desktop/lwef/the-command-object) de la colección:
 
 
 ```
@@ -76,25 +76,25 @@ En VBScript, puede declarar una referencia como un tipo determinado, pero todav�
 
 
 
-Puede aparecer un comando en el menú emergente del carácter y en la ventana comandos, o bien en ambos. Para que aparezca en el menú emergente, debe tener un título y tener la propiedad [**visible**](visible-property.md) establecida en **true**. Además, la propiedad **visible** del objeto de colección Commands también debe establecerse en **true**. Para que aparezca en la ventana comandos, un [**comando**](/windows/desktop/lwef/the-command-object) debe tener establecidas las propiedades [**Caption**](caption-property.md) y [**Voice**](voice-property.md) . Tenga en cuenta que las entradas del menú emergente de un carácter no cambian mientras se muestra el menú. Si agrega o quita comandos o cambia sus propiedades mientras se muestra el menú emergente del carácter, el menú muestra esos cambios cada vez que el usuario lo muestra. Sin embargo, la ventana comandos refleja dinámicamente los cambios que realice.
+Un comando puede aparecer en el menú emergente del carácter y en la ventana Comandos, o en ambos. Para aparecer en el menú emergente, debe tener un título y tener la [**propiedad Visible**](visible-property.md) establecida en **True.** Además, su propiedad Visible del objeto **de** colección Commands también debe establecerse en **True.** Para que aparezca en la ventana Comandos, un [**comando**](/windows/desktop/lwef/the-command-object) debe tener establecidas sus propiedades [**Caption**](caption-property.md) [**y**](voice-property.md) Voice. Tenga en cuenta que las entradas del menú emergente de un carácter no cambian mientras se muestra el menú. Si agrega o quita comandos o cambia sus propiedades mientras se muestra el menú emergente del carácter, el menú muestra esos cambios cada vez que el usuario lo muestra a continuación. Sin embargo, la ventana Comandos refleja dinámicamente los cambios que realice.
 
-En la tabla siguiente se resume el modo en que las propiedades de un [**comando**](/windows/desktop/lwef/the-command-object) afectan a su presentación:
+En la tabla siguiente se resume cómo afectan las propiedades de un [**comando**](/windows/desktop/lwef/the-command-object) a su presentación:
 
 
 
 Propiedad Caption
 
-Propiedad Voice-Caption
+Voice-Caption propiedad
 
 Propiedad Voice
 
-Propiedad visible
+Propiedad Visible
 
 Propiedad Enabled
 
 Aparece en el menú emergente del carácter
 
-Aparece en la ventana comandos
+Aparece en la ventana Comandos
 
 Sí
 
@@ -108,7 +108,7 @@ True
 
 Normal, con [ **título**](caption-property.md)
 
-Sí, uso de [ **VoiceCaption**](voicecaption-property.md)
+Sí, con [ **VoiceCaption**](voicecaption-property.md)
 
 Sí
 
@@ -136,7 +136,7 @@ True
 
 No aparece
 
-Sí, uso de [ **VoiceCaption**](voicecaption-property.md)
+Sí, con [ **VoiceCaption**](voicecaption-property.md)
 
 Sí
 
@@ -220,7 +220,7 @@ True
 
 No aparece
 
-Sí, uso de [ **VoiceCaption**](voicecaption-property.md)
+Sí, con [ **VoiceCaption**](voicecaption-property.md)
 
 No 
 
@@ -248,7 +248,7 @@ True
 
 No aparece
 
-Sí, uso de [ **VoiceCaption**](voicecaption-property.md)
+Sí, con [ **VoiceCaption**](voicecaption-property.md)
 
 No 
 
@@ -332,7 +332,7 @@ True
 
 Normal, con [ **título**](caption-property.md)
 
-Sí, usar [ **título**](caption-property.md)
+Sí, con [ **Título**](caption-property.md)
 
 Sí
 
@@ -360,7 +360,7 @@ True
 
 No aparece
 
-Sí, usar [ **título**](caption-property.md)
+Sí, con [ **Título**](caption-property.md)
 
 Sí
 
@@ -544,13 +544,13 @@ No aparece
 
 No
 
- Si el valor de la propiedad es NULL. En algunos lenguajes de programación, una cadena vacía no puede interpretarse igual que una cadena nula.  El comando sigue siendo accesible mediante voz.<br/>
+ Si el valor de la propiedad es NULL. En algunos lenguajes de programación, es posible que una cadena vacía no se interprete igual que una cadena nula.  El comando sigue siendo accesible por voz.<br/>
 
 
 
  
 
-Cuando el servidor recibe la entrada para uno de los comandos, envía un evento de [**comando**](/windows/desktop/lwef/the-command-object) y devuelve el nombre del **comando** como un atributo del objeto [**UserInput**](/windows/desktop/lwef/iagentuserinput) . Después, puede usar las instrucciones condicionales para buscar coincidencias y procesar el **comando**.
+Cuando el servidor recibe la entrada de uno de los comandos, envía un evento [**Command**](/windows/desktop/lwef/the-command-object) y devuelve el nombre del **comando** como atributo del [**objeto UserInput.**](/windows/desktop/lwef/iagentuserinput) A continuación, puede usar instrucciones condicionales para hacer coincidir y procesar el **comando**.
 
  
 

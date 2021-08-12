@@ -1,19 +1,19 @@
 ---
 title: IDXCoreAdapter::IsPropertySupported
-description: Determina si este objeto de adaptador de DXCore y el sistema operativo actual admiten la propiedad de adaptador especificada.
+description: Determina si este objeto de adaptador DXCore y el sistema operativo (SO) actual admiten la propiedad de adaptador especificada.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: b960d96515d4aee85520a6def70a8f0e9349e131
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ddee6bea5af8fb64dfa2bfc15392e92239e7326b34cbd93cbd112559a6027912
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105720162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279236"
 ---
-# <a name="idxcoreadapterispropertysupported-method"></a>IDXCoreAdapter:: IsPropertySupported (método)
+# <a name="idxcoreadapterispropertysupported-method"></a>IDXCoreAdapter::IsPropertySupported (método)
 
-Determina si este objeto de adaptador de DXCore y el sistema operativo actual admiten la propiedad de adaptador especificada.
+Determina si este objeto de adaptador DXCore y el sistema operativo (SO) actual admiten la propiedad de adaptador especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -28,14 +28,14 @@ virtual bool STDMETHODCALLTYPE IsPropertySupported(
 
 Tipo: **[DXCoreAdapterProperty](./ne-dxcore_interface-dxcoreadapterproperty.md)**
 
-Tipo de propiedad que se va a consultar sobre la compatibilidad con. Vea la tabla en [DXCoreAdapterProperty](./ne-dxcore_interface-dxcoreadapterproperty.md) para obtener más información sobre cada propiedad del adaptador.
+Tipo de propiedad para la que está consultando sobre la compatibilidad. Consulte la tabla de [DXCoreAdapterProperty para](./ne-dxcore_interface-dxcoreadapterproperty.md) obtener más información sobre cada propiedad del adaptador.
 
 ## <a name="returns"></a>Devoluciones
 
 Tipo: **bool**
 
-Devuelve  `true`   si este objeto de adaptador de DXCore y el sistema operativo actual admiten la propiedad de adaptador especificada. De lo contrario, devuelve  `false` .
+Devuelve si este objeto de adaptador DXCore y el `true` sistema operativo (SO) actual admiten la propiedad de adaptador especificada. De lo contrario, devuelve `false`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [DXCore Reference](../dxcore-reference.md), [DXCore GUID Attribute GUID](../dxcore-adapter-attribute-guids.md), [using DXCore to Enumerate Adapters](../dxcore-enum-adapters.md)
+[IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [REFERENCIA DE DXCore,](../dxcore-reference.md)GUID de atributo de adaptador [dxcore,](../dxcore-adapter-attribute-guids.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

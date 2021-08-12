@@ -1,9 +1,9 @@
 ---
 title: Elemento RequiredPrivileges (requiredPrivilegesType)
-description: Especifica los privilegios necesarios para la tarea.
+description: Especifica los privilegios que requiere la tarea.
 ms.assetid: 7b615af8-76f9-498c-aa2d-7da02d64992f
 keywords:
-- Programador de tareas del elemento RequiredPrivileges
+- Elemento RequiredPrivileges Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 70476cff01113dcf612f890e8a6aa5538d0ca38e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e395a61aace07dccb27eab04d9c0299115c25f16d84cd42e3d607435478f8060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611492"
 ---
 # <a name="requiredprivileges-requiredprivilegestype-element"></a>Elemento RequiredPrivileges (requiredPrivilegesType)
 
-Especifica los privilegios necesarios para la tarea.
+Especifica los privilegios que requiere la tarea.
 
 ``` syntax
 <xs:element name="RequiredPrivileges"
@@ -31,7 +31,7 @@ Especifica los privilegios necesarios para la tarea.
  />
 ```
 
-El elemento **RequiredPrivileges** se define mediante el tipo complejo de [**requiredPrivilegesType**](taskschedulerschema-requiredprivilegestype-complextype.md) .
+El tipo complejo [**requiredPrivilegesType**](taskschedulerschema-requiredprivilegestype-complextype.md) define el elemento **RequiredPrivileges.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,17 +39,17 @@ El elemento **RequiredPrivileges** se define mediante el tipo complejo de [**req
 
 | Elemento                                                                                  | Derivado de                                                           | Descripción                                                    |
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------|
-| [**Entidad de seguridad (principalType)**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad para una entidad de seguridad.<br/> |
+| [**Principal (principalType)**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad de una entidad de seguridad.<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-En el desarrollo de C++, se tiene acceso a esta información a través de la propiedad [**IPrincipal2:: RequiredPrivilege**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege) .
+Para el desarrollo de C++, se tiene acceso a esta información a través de [**la propiedad IPrincipal2::RequiredPrivilege.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define el uso de un identificador de grupo y los privilegios necesarios.
+El código XML siguiente define el uso de un identificador de grupo y los privilegios necesarios.
 
 
 ```XML
@@ -68,8 +68,8 @@ El siguiente código XML define el uso de un identificador de grupo y los privil
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

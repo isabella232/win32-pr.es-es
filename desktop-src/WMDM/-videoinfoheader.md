@@ -1,9 +1,9 @@
 ---
-title: Estructura de _VIDEOINFOHEADER
-description: La \_ estructura VIDEOINFOHEADER contiene información sobre un flujo de vídeo e incluye una \_ estructura BITMAPINFOHEADER que define el formato de un fotograma individual.
+title: _VIDEOINFOHEADER estructura
+description: La estructura VIDEOINFOHEADER contiene información sobre una secuencia de vídeo e incluye una estructura BITMAPINFOHEADER que define el \_ formato de un fotograma \_ individual.
 ms.assetid: 5a39d66e-8dbc-4572-8370-14f722b6c906
 keywords:
-- Estructura _VIDEOINFOHEADER Administrador de dispositivos de Windows Media
+- _VIDEOINFOHEADER estructura windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b389c5c82296e95ecfb3900518af4a2c7ddd7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b00c641f0fb9a9f68217de8a21a732b4b45a8e4417104be981ffd90161f7340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586805"
 ---
 # <a name="_videoinfoheader-structure"></a>\_Estructura VIDEOINFOHEADER
 
-La estructura **\_ VIDEOINFOHEADER** contiene información sobre un flujo de vídeo e incluye una estructura **\_ BITMAPINFOHEADER** que define el formato de un fotograma individual.
+La **\_ estructura VIDEOINFOHEADER** contiene información sobre una secuencia de vídeo e incluye una estructura **\_ BITMAPINFOHEADER** que define el formato de un fotograma individual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,35 +48,35 @@ typedef struct _tagVIDEOINFOHEADER {
 **rcSource**
 </dt> <dd>
 
-Estructura **Rect** que especifica la ventana de vídeo de origen.
+**Estructura RECT** que especifica la ventana de vídeo de origen.
 
 </dd> <dt>
 
 **rcTarget**
 </dt> <dd>
 
-Estructura **Rect** que especifica la ventana de vídeo de destino.
+**Estructura RECT** que especifica la ventana de vídeo de destino.
 
 </dd> <dt>
 
 **dwBitRate**
 </dt> <dd>
 
-Valor **DWORD** que especifica la velocidad de datos aproximada del flujo de vídeo, en bits por segundo.
+**Valor DWORD** que especifica la velocidad de datos aproximada de la secuencia de vídeo, en bits por segundo.
 
 </dd> <dt>
 
 **dwBitErrorRate**
 </dt> <dd>
 
-Valor **DWORD** que especifica la tasa de errores de datos de la secuencia de vídeo, en errores de bits por segundo.
+**Valor DWORD** que especifica la tasa de errores de datos de la secuencia de vídeo, en errores de bits por segundo.
 
 </dd> <dt>
 
 **AvgTimePerFrame**
 </dt> <dd>
 
-**Referencia \_ de** Valor de tiempo que especifica el promedio de tiempo de visualización del fotograma de vídeo, en unidades de 100-nanosegundos.
+**REFERENCIA \_ Valor** TIME que especifica el tiempo medio de visualización del fotograma de vídeo, en unidades de 100 nanosegundos.
 
 </dd> <dt>
 
@@ -93,11 +93,11 @@ Estructura **\_ BITMAPINFOHEADER** de Win32 que contiene información de color y
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

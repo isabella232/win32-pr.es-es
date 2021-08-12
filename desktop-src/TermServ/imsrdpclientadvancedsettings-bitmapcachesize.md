@@ -1,26 +1,26 @@
 ---
-title: Propiedad BitmapCacheSize de IMsRdpClientAdvancedSettings
-description: Tamaño, en kilobytes, del archivo de caché de mapa de bits utilizado para los mapas de bits de 8 bits por píxel.
+title: IMsRdpClientAdvancedSettings BitmapCacheSize, propiedad
+description: Tamaño, en kilobytes, del archivo de caché de mapa de bits usado para mapas de bits de 8 bits por píxel.
 ms.assetid: a2a4b739-0fa3-4a76-87ae-3cba913b7703
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad BitmapCacheSize
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapCacheSize
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapCacheSize
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a38376bb0b06bd4efea36d3c4cad4e4aec0f35b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af56056cbdd62bb041ba9ab08e83a4f09e69037a3f9bd6799fa0c0facc9da75e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609056"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmapcachesize-property"></a>IMsRdpClientAdvancedSettings:: BitmapCacheSize (propiedad)
+# <a name="imsrdpclientadvancedsettingsbitmapcachesize-property"></a>IMsRdpClientAdvancedSettings::BitmapCacheSize, propiedad
 
-Tamaño, en kilobytes, del archivo de caché de mapa de bits utilizado para los mapas de bits de 8 bits por píxel.
+Tamaño, en kilobytes, del archivo de caché de mapa de bits usado para mapas de bits de 8 bits por píxel.
 
 Esta propiedad es de lectura y escritura.
 
@@ -84,15 +84,15 @@ HRESULT get_BitmapCacheSize(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nuevo tamaño de la memoria caché, en kilobytes. Los valores numéricos válidos van de 1 a 32, ambos inclusive.
+Nuevo tamaño de caché, en kilobytes. Los valores numéricos válidos son de 1 a 32 inclusive.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

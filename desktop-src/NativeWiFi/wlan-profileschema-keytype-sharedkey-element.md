@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 134f9da4100c9479255507d4686dd19d3d484dea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88c9a48d1c70cd156fa3d8f63bd3b70d69a99a1151a18c95ffd556b2503c9575
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105677961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619288"
 ---
 # <a name="keytype-sharedkey-element"></a>Elemento keyType (sharedKey)
 
-El elemento keyType (sharedKey) indica si la clave compartida será una clave de red o una frase de contraseña.
+El elemento keyType (sharedKey) indica si la clave compartida será una clave de red o una frase de paso.
 
 ``` syntax
 <xs:element name="keyType">
@@ -40,15 +40,15 @@ El elemento keyType (sharedKey) indica si la clave compartida será una clave de
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) .
+El elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) define el elemento .
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el elemento de [**cifrado**](wlan-profileschema-encryption-authencryption-element.md) tiene un valor de WEP, **KeyType** debe establecerse en **networkKey**.
+Cuando el [**elemento de**](wlan-profileschema-encryption-authencryption-element.md) cifrado tiene un valor de WEP, **keyType** debe establecerse en **networkKey.**
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **KeyType** , vea ejemplo [de perfil sin difusión](non-broadcast-profile-sample.md), ejemplo de perfil [de WPA-Personal](wpa-personal-profile-sample.md)y [ejemplo de Perfil de WPA2-Personal](wpa2-personal-profile-sample.md).
+Para ver los perfiles de ejemplo que usan el **elemento keyType,** vea [Ejemplo](non-broadcast-profile-sample.md)de perfil que no es de difusión, Ejemplo de perfil [wpa-personal](wpa-personal-profile-sample.md)y Ejemplo de perfil [wpa2-personal](wpa2-personal-profile-sample.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Para ver los perfiles de ejemplo que usan el elemento **KeyType** , vea ejemplo 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

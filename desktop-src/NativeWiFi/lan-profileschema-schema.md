@@ -1,7 +1,7 @@
 ---
 description: Define un perfil de red cableada (LAN).
 ms.assetid: b9b415c9-b2c6-4888-bad0-b2daeffc4387
-title: Esquema de LAN_profile
+title: LAN_profile esquema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e888b49ad3036efb7578682d6ef8cc69a33599a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d5cc1cf3a47ebd4bd8faf1b0b02805cbe28def7eac4a4bbe3534094e3757e5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620097"
 ---
-# <a name="lan_profile-schema"></a>Esquema de Perfil de LAN \_
+# <a name="lan_profile-schema"></a>Esquema de perfil de LAN \_
 
-El esquema de Perfil de LAN \_ define un perfil de red cableada (LAN). Un perfil de LAN contiene la configuración de red de una interfaz Ethernet.
+El esquema de perfil de LAN define un perfil de red \_ cableada (LAN). Un perfil LAN contiene la configuración de red para una interfaz Ethernet.
 
-El elemento raíz de un perfil de LAN es el elemento [**LANProfile**](lan-profileschema-lanprofile-element.md) . Cada perfil tendrá exactamente un elemento raíz. Todos los \_ elementos de Perfil de LAN están en el espacio de nombres `https://www.microsoft.com/networking/LAN/profile/v1` .
+El elemento raíz de un perfil LAN es [**el elemento LANProfile.**](lan-profileschema-lanprofile-element.md) Cada perfil tendrá exactamente un elemento raíz. Todos los elementos de perfil de LAN \_ están en el espacio de nombres `https://www.microsoft.com/networking/LAN/profile/v1` .
 
-Para ver los perfiles de LAN de ejemplo, consulte [ejemplos de perfil con cable](wired-profile-samples.md).
+Para ver perfiles de LAN de ejemplo, vea [Ejemplos de perfiles cableados.](wired-profile-samples.md)
 
--   [Elementos de esquema de Perfil de LAN \_](lan-profileschema-elements.md)
+-   [Elementos de esquema de perfil de LAN \_](lan-profileschema-elements.md)
 
  
 

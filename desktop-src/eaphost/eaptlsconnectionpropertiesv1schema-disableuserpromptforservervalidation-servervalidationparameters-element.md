@@ -1,9 +1,9 @@
 ---
 title: DisableUserPromptForServerValidation (ServerValidationParameters)
-description: Obtenga información sobre el elemento DisableUserPromptForServerValidation (ServerValidationParameters). Indica si se debe solicitar la validación del servidor al usuario. | DisableUserPromptForServerValidation (ServerValidationParameters)
+description: Obtenga información sobre el elemento DisableUserPromptForServerValidation (ServerValidationParameters). Indica si se debe solicitar al usuario la validación del servidor. | DisableUserPromptForServerValidation (ServerValidationParameters)
 ms.assetid: d1c2f334-286b-4aac-b723-806b90fc7b1f
 keywords:
-- Elemento DisableUserPromptForServerValidation EAPHost
+- Elemento EAPHost DisableUserPromptForServerValidation
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 368b2593b3c55ef571e3f1892634318e54447643
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 37f412f9c6200e7d2a54d624d0a77b4df5316ea7edd0ab75b69f92c753abbcff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273723"
 ---
 # <a name="disableuserpromptforservervalidation-servervalidationparameters-element-tls"></a>Elemento DisableUserPromptForServerValidation (ServerValidationParameters) (TLS)
 
-El elemento **DisableUserPromptForServerValidation (ServerValidationParameters)** indica si se debe pedir al usuario la validación del servidor.
+El **elemento DisableUserPromptForServerValidation (ServerValidationParameters)** indica si se debe solicitar al usuario la validación del servidor.
 
-Si **DisableUserPromptForServerValidation** es true, EAP-TLS realiza la validación del servidor sin intervención del usuario; Si se produce un error en la validación, EAP-TLS produce un error en la autenticación. Si **DisableUserPromptForServerValidation** es false, se solicita al usuario un certificado o un nombre de servidor validados, o una entidad de certificación raíz (CA).
+Si **DisableUserPromptForServerValidation** es TRUE, EAP-TLS realiza la validación del servidor sin la entrada del usuario; Si se produce un error en la validación, EAP-TLS produce un error en la autenticación. Si **DisableUserPromptForServerValidation** es FALSE, se solicita al usuario un nombre o certificado de servidor validado o una entidad de certificación (CA) raíz.
 
-El elemento **DisableUserPromptForServerValidation** es opcional.
+El **elemento DisableUserPromptForServerValidation** es opcional.
 
 ``` syntax
 <xs:element name="DisableUserPromptForServerValidation"
@@ -35,20 +35,20 @@ El elemento **DisableUserPromptForServerValidation** es opcional.
  />
 ```
 
-El elemento **DisableUserPromptForServerValidation** se define mediante el tipo complejo de [**ServerValidationParameters**](eaptlsconnectionpropertiesv1schema-servervalidationparameters-complextype.md) .
+El tipo complejo [**ServerValidationParameters**](eaptlsconnectionpropertiesv1schema-servervalidationparameters-complextype.md) define el elemento **DisableUserPromptForServerValidation.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

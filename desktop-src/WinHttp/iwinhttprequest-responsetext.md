@@ -1,7 +1,7 @@
 ---
 description: Recupera el cuerpo de la entidad de respuesta como texto.
 ms.assetid: 87caf64f-be11-45c9-af1e-997a55c5e76e
-title: 'IWinHttpRequest:: ResponseText (propiedad)'
+title: Propiedad IWinHttpRequest::ResponseText
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 93e0a9b17ba356f9ce6b038be114f5f2c9804eab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e43169ee789a067b75444e5f19e5bb7985ce402efd4b89c08f049dbcad9a7049
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563193"
 ---
-# <a name="iwinhttprequestresponsetext-property"></a>IWinHttpRequest:: ResponseText (propiedad)
+# <a name="iwinhttprequestresponsetext-property"></a>Propiedad IWinHttpRequest::ResponseText
 
-La propiedad **responseText** recupera el cuerpo de la entidad de respuesta como texto.
+La **propiedad ResponseText** recupera el cuerpo de la entidad de respuesta como texto.
 
 Esta propiedad es de solo lectura.
 
@@ -53,22 +53,22 @@ strResponseText = WinHttpRequest.ResponseText
 
 ## <a name="error-codes"></a>Códigos de error
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo se puede invocar después de que se haya llamado al método [**send**](iwinhttprequest-send.md) .
+Esta propiedad solo se puede invocar después de llamar [**al**](iwinhttprequest-send.md) método Send.
 
-Al utilizar esta propiedad en modo sincrónico, el límite para el número de caracteres que devuelve es aproximadamente 2.169.895.
+Cuando se usa esta propiedad en modo sincrónico, el límite del número de caracteres que devuelve es aproximadamente 2 169 895.
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
 
 
 ```C++
@@ -156,7 +156,7 @@ int main()
 
 
 
-En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de la respuesta.
+En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de respuesta.
 
 
 ```JScript
@@ -179,18 +179,18 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

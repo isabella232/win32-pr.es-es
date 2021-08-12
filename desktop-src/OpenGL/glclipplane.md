@@ -1,9 +1,9 @@
 ---
-title: función glClipPlane (GL. h)
-description: La función glClipPlane especifica un plano en el que se recorta todo el objeto Geometry.
+title: Función glClipPlane (Gl.h)
+description: La función glClipPlane especifica un plano en el que se recorta toda la geometría.
 ms.assetid: b70d2c30-7502-4399-8c08-5ec9a2a1919c
 keywords:
-- glClipPlane (función) OpenGL
+- Función glClipPlane OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33380203b30b7a3a2e37ee5d58a47fec845cbc1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb55edd88b8c8dcd6b4481e60dfc05a012bb79f4f484fde8987e9ed23239d837
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618045"
 ---
-# <a name="glclipplane-function"></a>glClipPlane función)
+# <a name="glclipplane-function"></a>Función glClipPlane
 
-La función **glClipPlane** especifica un plano en el que se recorta todo el objeto Geometry.
+La **función glClipPlane** especifica un plano en el que se recorta toda la geometría.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,14 +41,14 @@ void WINAPI glClipPlane(
 
 <dl> <dt>
 
-*plano* 
+*avión* 
 </dt> <dd>
 
-Plano de recorte que se está colocando. Los nombres simbólicos del formulario de clip de contab \_ \_ .*i*, donde *i* es un entero entre 0 y el \_ número máximo \_ \_ de planos de clips-1, se aceptan.
+Plano de recorte que se está colocando. Se aceptan nombres simbólicos con el formato GL CLIP PLANE i , donde i es un entero entre 0 y \_ GL MAX CLIP PLANES - \_   \_ \_ \_ 1.
 
 </dd> <dt>
 
-*ecuación* 
+*Ecuación* 
 </dt> <dd>
 
 Dirección de una matriz de cuatro valores de punto flotante de precisión doble. Estos valores se interpretan como una ecuación de plano.
@@ -67,28 +67,28 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *plano* no era un valor aceptado.<br/>                                                                                         |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *plane* no era un valor aceptado.<br/>                                                                                         |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Geometry siempre se recorta con respecto a los límites de un frustum de seis planos en *x*, *y* y *z*. La función **glClipPlane** permite la especificación de planos adicionales, no necesariamente perpendiculares al eje *x*, eje *y*, o eje *z*, en el que se recortan todas las geometrías. Se \_ pueden especificar los planos de planos de recortes hasta un máximo de GL \_ \_ , donde \_ los planos de clip Max de GL \_ \_ son al menos seis en todas las implementaciones. Dado que la región de recorte resultante es la intersección de los semiespacios definidos, siempre es convexa.
+La geometría siempre se recorta en los límites de un frustum de seis planos *en x*, *y* y *z.* La **función glClipPlane** permite la especificación de planos adicionales, no necesariamente a los ejes *x,* *y o* *z,* en los que se recorta toda la geometría. Se pueden especificar hasta 6 planos de GL MAX CLIP PLANES, donde GL MAX CLIP PLANES es al menos seis \_ \_ en todas las \_ \_ \_ \_ implementaciones. Dado que la región de recorte resultante es la intersección de los espacios medio definidos, siempre es convexa.
 
-La función **glClipPlane** especifica un medio de espacio mediante una ecuación de plano de cuatro componentes. Cuando se llama a **glClipPlane**, la *ecuación* se transforma por el inverso de la matriz MODELVIEW y se almacena en las coordenadas de ojo resultantes. Los cambios subsiguientes en la matriz MODELVIEW no tienen ningún efecto en los componentes de la ecuación de plano almacenados. Si el producto del punto de las coordenadas del ojo de un vértice con los componentes de la ecuación de plano almacenado es positivo o cero, el vértice está en con respecto a ese plano de recorte. De lo contrario, está fuera.
+La **función glClipPlane** especifica un espacio medio mediante una ecuación de plano de cuatro componentes. Cuando se llama **a glClipPlane**,*la* ecuación se transforma mediante el inverso de la matriz modelview y se almacena en las coordenadas de los ojos resultantes. Los cambios posteriores en la matriz modelview no tienen ningún efecto en los componentes almacenados de ecuación de plano. Si el producto de puntos de las coordenadas de los ojos de un vértice con los componentes de ecuación del plano almacenados es positivo o cero, el vértice está en con respecto a ese plano de recorte. De lo contrario, está fuera.
 
-Use las funciones [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) para habilitar y deshabilitar los planos de recorte. Llame a los planos de recorte con el argumento GL \_ clip \_ plano *i*, donde *i* es el número de plano.
+Use las [**funciones glEnable**](glenable.md) [**y glDisable**](gldisable.md) para habilitar y deshabilitar los planos de recorte. Llame a planos de recorte con el argumento GL \_ CLIP \_ PLANE *i*, donde *i* es el número de plano.
 
-De forma predeterminada, todos los planos de recorte se definen como (0, 0, 0, 0) en las coordenadas de ojo y están deshabilitados.
+De forma predeterminada, todos los planos de recorte se definen como (0,0,0,0) en coordenadas de los ojos y están deshabilitados.
 
-Siempre es el caso de que el \_ plano de clip GL \_ *i* = \_ recorte de GL \_ PLANE0 + *i*.
+Siempre es el caso de GL \_ CLIP \_ PLANE *i* = GL \_ CLIP \_ PLANE0 + *i*.
 
 Las siguientes funciones recuperan información relacionada con **glClipPlane**:
 
 [**glGetClipPlane**](glgetclipplane.md)
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ plano de clip de contabilidad \_ 
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ CLIP PLANE \_ *i*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ Las siguientes funciones recuperan información relacionada con **glClipPlane**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

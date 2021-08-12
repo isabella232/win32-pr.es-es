@@ -1,26 +1,26 @@
 ---
-title: Funciones de glScale
-description: Estas funciones multiplican la matriz actual por una matriz de escala general.
+title: funciones glScale
+description: Estas funciones multiplican la matriz actual por una matriz de escalado general.
 ms.assetid: 4c7e5598-534d-4b81-bb58-2e89d0dbfc77
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 690557bdc4518761d30fd2c473df840dea08d912
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: df22412373cb8bec17037f594148c11335e7b54edd1b085d279072b211cef2ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104531977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118614485"
 ---
-# <a name="glscale-functions"></a>Funciones de glScale
+# <a name="glscale-functions"></a>funciones glScale
 
-Estas funciones multiplican la matriz actual por una matriz de escala general:
+Estas funciones multiplican la matriz actual por una matriz de escalado general:
 
 -   [**glScaled**](glscaled.md)
 -   [**glScalef**](glscalef.md)
 
- 
+ 
 
- 
+ 
 
 
 

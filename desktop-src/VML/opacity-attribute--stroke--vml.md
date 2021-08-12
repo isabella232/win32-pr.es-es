@@ -1,40 +1,40 @@
 ---
-title: Opacity (atributo) (Stroke) (VML)
-description: Opacity (atributo) (Stroke) (VML)
+title: Atributo Opacity (Stroke)(VML)
+description: Atributo Opacity (Stroke)(VML)
 ms.assetid: 8f1968ba-0d0b-4cd6-9332-74755e891783
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cc97f445ede54676d73e95a60ec039ab214f4a5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e2f457ee73ffdccd589f5ab3b4d89c5ce4c05f871a71572c1f04b2ddef5de4a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596776"
 ---
-# <a name="opacity-attribute-strokevml"></a>Opacity (atributo) (Stroke) (VML)
+# <a name="opacity-attribute-strokevml"></a>Atributo Opacity (Stroke)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define la cantidad de transparencia de un trazo. Lectura/escritura **VgFraction**.
+Define la cantidad de transparencia de un trazo. Lectura/escritura **Accionario**.
 
 **Se aplica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[Golpe](msdn-online-vml-stroke-element.md)
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* Opacity = " *expresión* " >
+<v: *element* opacity=" *expression* ">
 
 **Sintaxis de script**
 
-*elemento* . Opacity = "*expresión*"
+*element* .opacity="*expression*"
 
-*expresión* = de *elemento*. Opacity
+*expresión* = *element*.opacity
 
 **Comentarios:**
 
@@ -44,7 +44,7 @@ El valor predeterminado es 1,0.
 
 **Ejemplo**
 
-El trazo es un 50% transparente.
+El trazo es 50 % transparente.
 
 
 ```HTML
@@ -58,6 +58,6 @@ El trazo es un 50% transparente.
 
 
 
- 
+ 
 
- 
+ 

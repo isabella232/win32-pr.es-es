@@ -1,9 +1,9 @@
 ---
-title: función glClearStencil (GL. h)
-description: La función glClearStencil especifica el valor sin cifrar para el búfer de estarcido.
+title: Función glClearStencil (Gl.h)
+description: La función glClearStencil especifica el valor sin borrar para el búfer de galería de símbolos.
 ms.assetid: bbde8fa8-78f3-45bd-bac3-5d03839acc52
 keywords:
-- glClearStencil (función) OpenGL
+- Función glClearStencil OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78d831540b4c7833368bbac075835faaec359695
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4749a8d9c4844bd95181a7353bb0ce4559001fa47164fec3dbab5c188de8d994
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618035"
 ---
-# <a name="glclearstencil-function"></a>glClearStencil función)
+# <a name="glclearstencil-function"></a>Función glClearStencil
 
-La función **glClearStencil** especifica el valor sin cifrar para el búfer de estarcido.
+La **función glClearStencil** especifica el valor sin borrar para el búfer de galería de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glClearStencil(
 *s* 
 </dt> <dd>
 
-Índice que se utiliza cuando se borra el búfer de estarcido. El valor predeterminado es cero.
+Índice utilizado cuando se borra el búfer de galería de símbolos. El valor predeterminado es cero.
 
 </dd> </dl>
 
@@ -53,25 +53,25 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La función **glClearStencil** especifica el índice usado por [**glClear**](glclear.md) para borrar el búfer de estarcido. El parámetro *s* se enmascara con 2 <sup>m</sup>  -1, donde *m* es el número de bits en el búfer de estarcido.
+La **función glClearStencil** especifica el índice utilizado por [**glClear**](glclear.md) para borrar el búfer de galería de símbolos. El *parámetro s* se enmascara con 2 <sup>m</sup>  - 1, donde *m* es el número de bits del búfer de galería de símbolos.
 
-Las siguientes funciones recuperan información relacionada con la función **glClearStencil** :
+Las funciones siguientes recuperan información relacionada con **la función glClearStencil:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ GL \_ \_ valor sin formato de estarcido
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ STENCIL \_ CLEAR \_ VALUE
 
-**glGet** con el argumento \_ bits de estarcido GL \_
+**glGet con** el argumento GL \_ STENCIL \_ BITS
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Las siguientes funciones recuperan información relacionada con la función **gl
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

@@ -1,12 +1,12 @@
 ---
-title: Método RemoveLSFromSpecifiedLicenseServerList de la clase Win32_TerminalServiceSetting
-description: Quita el servidor de licencias dado de la lista de servidores de licencias especificados.
+title: Método RemoveLSFromSpecifiedLicenseServerList de la Win32_TerminalServiceSetting clase
+description: Quita el servidor de licencias especificado de la lista de servidores de licencias especificados.
 ms.assetid: c25eebf9-3a21-41a0-bb7d-c3f909cd8087
 ms.tgt_platform: multiple
 keywords:
 - Método RemoveLSFromSpecifiedLicenseServerList Servicios de Escritorio remoto
-- Método RemoveLSFromSpecifiedLicenseServerList Servicios de Escritorio remoto, clase Win32_TerminalServiceSetting
-- Win32_TerminalServiceSetting de clase Servicios de Escritorio remoto, método RemoveLSFromSpecifiedLicenseServerList
+- Método RemoveLSFromSpecifiedLicenseServerList Servicios de Escritorio remoto , Win32_TerminalServiceSetting clase
+- Win32_TerminalServiceSetting clase Servicios de Escritorio remoto , método RemoveLSFromSpecifiedLicenseServerList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 901c2676748e819290855df2de51e5d7936dc793
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 492b955b8aced6972ec80f499af5ca4b043141159ad2c8fd359225302d8f63b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605194"
 ---
-# <a name="removelsfromspecifiedlicenseserverlist-method-of-the-win32_terminalservicesetting-class"></a>Método RemoveLSFromSpecifiedLicenseServerList de la \_ clase TerminalServiceSetting de Win32
+# <a name="removelsfromspecifiedlicenseserverlist-method-of-the-win32_terminalservicesetting-class"></a>Método RemoveLSFromSpecifiedLicenseServerList de la clase \_ TerminalServiceSetting de Win32
 
-Quita el servidor de licencias dado de la lista de servidores de licencias especificados.
+Quita el servidor de licencias especificado de la lista de servidores de licencias especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ uint32 RemoveLSFromSpecifiedLicenseServerList(
 
 <dl> <dt>
 
-*LicenseServerName* \[ de\]
+*LicenseServerName* \[ En\]
 </dt> <dd>
 
-Nombre del servidor de licencias que se va a quitar.
+Nombre del servidor de licencias que se quitará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
+[**TerminalServiceSetting de Win32 \_**](win32-terminalservicesetting.md)
 </dt> <dt>
 
 [**AddLSToSpecifiedLicenseServerList**](addlstospecifiedlicenseserverlist-win32-terminalservicesetting.md)

@@ -1,23 +1,23 @@
 ---
-title: ushr (SM5-ASM)
-description: Desplazar a la derecha. | ushr (SM5-ASM)
+title: ushr (sm5 - asm)
+description: Mayús a la derecha. | ushr (sm5 - asm)
 ms.assetid: C695CB6C-A6C9-4DC8-8EBE-70A0CFFC4981
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f33c627ec4aa985b5ac8a27cf0babd6219c9247c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7b4f0cacaa785b34eb8910f12ecfe3578bd47781e41110adc71f4a7a7d52858a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283051"
 ---
-# <a name="ushr-sm5---asm"></a>ushr (SM5-ASM)
+# <a name="ushr-sm5---asm"></a>ushr (sm5 - asm)
 
-Desplazar a la derecha.
+Mayús a la derecha.
 
 
 
-| ubfe dest \[ . Mask \] , src0 \[ . swizzle \] , SRC1 \[ . swizzle\] |
+| yfe dest \[ \] .mask, src0 \[ .swprendle, \] src1 \[ .sw swle\] |
 |--------------------------------------------------------|
 
 
@@ -28,21 +28,21 @@ Desplazar a la derecha.
 
 | Elemento                                                            | Descripción                                                                  |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] contiene los resultados de la instrucción.<br/>                   |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los valores de 32 bits que se van a desplazar.<br/>                                |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] los 5 bits de LSB, proporcione el número de bits que se van a desplazar (0-31).<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] Contiene los resultados de la instrucción.<br/>                   |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los valores de 32 bits que se desplazarán.<br/>                                |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] LSB 5 bits proporcionan el número de bits que se desplazarán (0-31).<br/> |
 
 
 
  
 
-Esta instrucción realiza un desplazamiento por componentes de cada valor de 32 bits de *src0* a la derecha un recuento de bits sin signo proporcionado por el LSB 5 bits (intervalo 0-31) en *SRC1*, insertando 0. Los resultados de 32 bits por componente se colocan en *dest*.
+Esta instrucción realiza un desplazamiento por componente de cada valor de 32 bits en *src0* a la derecha por un recuento de bits enteros sin signo proporcionado por el LSB de 5 bits (intervalo 0-31) en *src1,* insertando 0. Los resultados de 32 bits por componente se colocan en *dest*.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -50,20 +50,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
-| Modelo de sombreador                                              | Compatible |
+| Modelo de sombreador                                              | Compatible. |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -73,7 +73,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

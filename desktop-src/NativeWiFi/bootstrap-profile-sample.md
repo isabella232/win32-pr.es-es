@@ -1,7 +1,7 @@
 ---
 description: Se usa para autenticarse en una red inalámbrica por primera vez antes de que el equipo se haya unido a un dominio.
 ms.assetid: e1a5ce76-9761-4c65-8b26-a44bf2eb1835
-title: Ejemplo de Perfil de bootstrap
+title: Ejemplo de perfil de arranque
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 96c7daa6bdc72146400973d08c9e5780092b214a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4aa83aa04ce4a442351485c25fbc7f4c6d252f923f6777cfe807abf9ba527a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620223"
 ---
-# <a name="bootstrap-profile-sample"></a>Ejemplo de Perfil de bootstrap
+# <a name="bootstrap-profile-sample"></a>Ejemplo de perfil de arranque
 
-El ejemplo de Perfil de arranque se puede usar para autenticarse en una red inalámbrica por primera vez antes de que el equipo se haya unido a un dominio.
+El ejemplo de perfil de bootstrap se puede usar para autenticarse en una red inalámbrica por primera vez antes de que el equipo se haya unido a un dominio.
 
-Este perfil no valida los certificados presentados por el servidor de Servicio de autenticación remota telefónica de usuario (RADIUS) y no debe usarse después de que el equipo se haya unido a un dominio.
+Este perfil no valida los certificados presentados por el servidor Servicio de autenticación remota telefónica de usuario (RADIUS) y no debe usarse después de que la máquina esté unida a un dominio.
 
-Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido 2 que se ejecuta en modo de empresa (WPA2-Enterprise). Se pueden usar otros tipos de seguridad siempre que el método de autenticación sea PEAP-MSCHAPv2.
+Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido 2 que se ejecuta en Enterprise modo (WPA2-Enterprise). Se pueden usar otros tipos de seguridad siempre que el método de autenticación sea PEAP-MSCHAPv2.
 
-**Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. La configuración predeterminada de [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) cuando este elemento no está establecida en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado. La configuración predeterminada era "true" en Windows Server 2008 y Windows Vista. Para obtener más información, consulte la descripción del elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) .
+**Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. La configuración predeterminada de [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) cuando este elemento no está establecido en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado. El valor predeterminado era "true" en Windows Server 2008 y Windows Vista. Consulte la descripción del [**elemento de esquema autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obtener más información.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Se omite el [**nombre**](wlan-profileschema-name-wlanprofile-element.md) secundario del elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) . El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del [**nombre**](wlan-profileschema-name-ssid-element.md) secundario del elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) . Los elementos secundarios [**cacheUserData**](onexschema-cacheuserdata-onex-element.md), [**authMode**](onexschema-authmode-onex-element.md)y [**singleSignOn**](onexschema-singlesignon-onex-element.md) del elemento [**Onex**](onexschema-onex-element.md) no se admiten y deben quitarse del perfil antes de usarse.
+**Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del elemento secundario [**name**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md) No se admiten los elementos secundarios [**cacheUserData**](onexschema-cacheuserdata-onex-element.md), [**authMode**](onexschema-authmode-onex-element.md)y [**singleSignOn**](onexschema-singlesignon-onex-element.md) del [**elemento OneX**](onexschema-onex-element.md) y deben quitarse del perfil antes de su uso.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -102,7 +102,7 @@ Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido 2 q
 [Ejemplos de perfil inalámbrico](wireless-profile-samples.md)
 </dt> <dt>
 
-[Unión de un cliente inalámbrico de Windows Vista a un dominio](https://www.microsoft.com/technet/network/wifi/vista_bootstrap_wireless.mspx)
+[Unión de Windows cliente inalámbrico de Vista a un dominio](https://www.microsoft.com/technet/network/wifi/vista_bootstrap_wireless.mspx)
 </dt> </dl>
 
  

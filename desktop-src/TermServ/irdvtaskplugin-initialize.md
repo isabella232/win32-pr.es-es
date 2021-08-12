@@ -1,12 +1,12 @@
 ---
-title: IRDVTaskPlugin Initialize (método)
+title: Método IRDVTaskPlugin Initialize
 description: Se llama para inicializar el agente de tareas.
 ms.assetid: eef813e6-ecca-400a-a9f3-efca6bd81161
 ms.tgt_platform: multiple
 keywords:
-- Método Initialize Servicios de Escritorio remoto
-- Método Initialize Servicios de Escritorio remoto, interfaz IRDVTaskPlugin
-- Interfaz IRDVTaskPlugin Servicios de Escritorio remoto, método Initialize
+- Inicialización del método Servicios de Escritorio remoto
+- Inicializar método Servicios de Escritorio remoto interfaz , IRDVTaskPlugin
+- Interfaz IRDVTaskPlugin Servicios de Escritorio remoto método , Initialize
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9530be7334e1f3fefa7f73007334e448362a95ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c14f4a002a0b33e403c02dba74385edd21e211fb27bcfb144c7a9ddc080a40fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606108"
 ---
-# <a name="irdvtaskplugininitialize-method"></a>IRDVTaskPlugin:: Initialize (método)
+# <a name="irdvtaskplugininitialize-method"></a>IRDVTaskPlugin::Initialize (método)
 
 Se llama para inicializar el agente de tareas.
 
@@ -42,12 +42,12 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*pNotifySink* \[ de\]
+*pNotifySink* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) \** _
+Tipo: **[ **IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)\***
 
-Un puntero a una interfaz [_ *IRDVTaskPluginNotifySink* *](irdvtaskpluginnotifysink.md) que el agente de tareas usa para comunicarse con el agente de desencadenador. Debe liberar esta interfaz cuando ya no se necesite.
+Puntero a una [**interfaz IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) que el agente de tareas usa para comunicarse con el agente de desencadenador. Debe liberar esta interfaz cuando ya no sea necesaria.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Un puntero a una interfaz [_ *IRDVTaskPluginNotifySink* *](irdvtaskpluginnotifys
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

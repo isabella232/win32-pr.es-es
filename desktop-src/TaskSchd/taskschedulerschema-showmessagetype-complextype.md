@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de showMessageType
+title: tipo complejo showMessageType
 description: Define los elementos que representan una acción que muestra un cuadro de mensaje.
 ms.assetid: eb841d9f-0be2-433b-9002-5e41c6ee78f9
 keywords:
-- tipo complejo de showMessageType Programador de tareas
+- tipo complejo showMessageType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d65ed893bce63c95fffcf237d3a3a95ebb1550d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeb2c0e1b3ac3e29502e7d998305674aaa283371be6a22324dde6d84c4330326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611247"
 ---
-# <a name="showmessagetype-complex-type"></a>Tipo complejo de showMessageType
+# <a name="showmessagetype-complex-type"></a>tipo complejo showMessageType
 
 Define los elementos que representan una acción que muestra un cuadro de mensaje.
 
@@ -49,8 +49,8 @@ Define los elementos que representan una acción que muestra un cuadro de mensaj
 
 | Elemento                                                            | Tipo           | Descripción                                                               |
 |--------------------------------------------------------------------|----------------|---------------------------------------------------------------------------|
-| [**Principal**](taskschedulerschema-body-showmessagetype-element.md)   | nonEmptyString | Especifica el texto que se va a mostrar en el cuerpo del cuadro de mensaje. <br/> |
-| [**Title**](taskschedulerschema-title-showmessagetype-element.md) | nonEmptyString | Especifica el título del cuadro de mensaje. <br/>                       |
+| [**Cuerpo**](taskschedulerschema-body-showmessagetype-element.md)   | nonEmptyString | Especifica el texto que se mostrará en el cuerpo del cuadro de mensaje. <br/> |
+| [**Título**](taskschedulerschema-title-showmessagetype-element.md) | nonEmptyString | Especifica el título del cuadro de mensaje. <br/>                       |
 
 
 
@@ -60,8 +60,8 @@ Define los elementos que representan una acción que muestra un cuadro de mensaj
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

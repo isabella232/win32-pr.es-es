@@ -1,11 +1,11 @@
 ---
-title: DVD. back (método)
+title: Método DVD.back
 description: El método back devuelve la presentación de un submenú a su menú primario.
 ms.assetid: 4b6c3562-6484-4ef0-8c5c-c24d88e02096
 keywords:
-- Back (método) Windows Media Player
-- Back (método) Windows Media Player, clase de DVD
-- Clase de DVD Windows Media Player, método back
+- método back Reproductor de Windows Media
+- método back Reproductor de Windows Media , clase DVD
+- Clase DE DVD Reproductor de Windows Media método , back
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e656051d02ec5efc74aa7595d2ca6cb20e648f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 916c16af578e2ccb6b0e4a6717431f7c30f3084bcd12fbedb1dff9f6c0627493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579094"
 ---
-# <a name="dvdback-method"></a>DVD. back (método)
+# <a name="dvdback-method"></a>Método DVD.back
 
-El método **back** devuelve la presentación de un submenú a su menú primario.
+El **método back** devuelve la presentación de un submenú a su menú primario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,30 +44,30 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada DVD se crea de forma diferente. Algunos DVDs se crean para que el método **atrás** esté disponible en el menú raíz, pero cuando se invoque, no hará nada.
+Cada DVD se ha escrito de forma diferente. Algunos DVD se crearon para que el método **back** esté disponible en el menú raíz, pero cuando se invoque, no hará nada.
 
-**Windows Media Player 10 Mobile:** Este método siempre se realiza correctamente, pero no realiza la operación deseada.
+**Reproductor de Windows Media 10 Mobile:** Este método siempre se realiza correctamente, pero no realiza la operación prevista.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Versión<br/>                  | Windows Media Player para Windows XP o posterior.<br/>                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Versión<br/>                  | Reproductor de Windows Media para Windows XP o posterior.<br/>                           |
 | Archivo DLL<br/>                      | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto de DVD**](dvd-object.md)
+[**Objeto DVD**](dvd-object.md)
 </dt> </dl>
 
  

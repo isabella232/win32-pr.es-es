@@ -1,9 +1,9 @@
 ---
-title: función glEvalMesh2 (GL. h)
+title: Función glEvalMesh2 (Gl.h)
 description: Calcula una cuadrícula bidimensional de puntos o líneas.
 ms.assetid: 21e94388-903e-4b9d-8e54-9c914d0ce372
 keywords:
-- glEvalMesh2 (función) OpenGL
+- Función GlEvalMesh2 OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 531e9f1f6288116d052c728654cd2cf03f38550a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75d5f1a16b1ceda2c13f24a779032b0e920d364db46167a9dc02ca2b27277262
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616111"
 ---
-# <a name="glevalmesh2-function"></a>glEvalMesh2 función)
+# <a name="glevalmesh2-function"></a>Función glEvalMesh2
 
 Calcula una cuadrícula bidimensional de puntos o líneas.
 
@@ -47,35 +47,35 @@ void WINAPI glEvalMesh2(
 *mode* 
 </dt> <dd>
 
-Valor que especifica si se va a calcular una malla bidimensional de puntos, líneas o polígonos. Se aceptan las siguientes constantes simbólicas: \_ punto de contabilidad, línea de libro de contabilidad \_ y relleno de contabilidad \_ .
+Valor que especifica si se debe calcular una malla bidimensional de puntos, líneas o polígonos. Se aceptan las siguientes constantes simbólicas: GL \_ POINT, GL \_ LINE y GL \_ FILL.
 
 </dd> <dt>
 
-*I1* 
+*i1* 
 </dt> <dd>
 
-El primer valor entero para la variable de dominio de cuadrícula i.
+Primer valor entero para la variable de dominio de cuadrícula i.
 
 </dd> <dt>
 
-*I2* 
+*i2* 
 </dt> <dd>
 
-El último valor entero para la variable de dominio de cuadrícula i.
+Último valor entero de la variable de dominio de cuadrícula i.
 
 </dd> <dt>
 
 *j1* 
 </dt> <dd>
 
-El primer valor entero para la variable de dominio de cuadrícula j.
+Primer valor entero para la variable de dominio de cuadrícula j.
 
 </dd> <dt>
 
-*J2* 
+*j2* 
 </dt> <dd>
 
-Último valor entero para la variable de dominio de cuadrícula j.
+Último valor entero de la variable de dominio de cuadrícula j.
 
 </dd> </dl>
 
@@ -91,72 +91,72 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | Indica que el *modo* no es un valor aceptado. <br/>                                                                            |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md). <br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | Indica que *el modo* no es un valor aceptado. <br/>                                                                            |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). <br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Use [**glMapGrid**](glmapgrid-functions.md) y [**glEvalMesh**](glevalmesh-functions.md) en tándem para generar y evaluar eficazmente una serie de valores de dominio de mapa con espaciado uniforme. La función **glEvalMesh** se recorre a través del dominio entero de una cuadrícula de una o dos dimensiones, cuyo intervalo es el dominio de las asignaciones de evaluación especificadas por [**glMap1**](glmap1.md) y [**glMap2**](glmap2.md). El parámetro Mode determina si los vértices resultantes se conectan como puntos, líneas o polígonos rellenos.
+Use [**glMapGrid**](glmapgrid-functions.md) y [**glEvalMesh**](glevalmesh-functions.md) conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La **función glEvalMesh** pasa por el dominio entero de una cuadrícula unidimensional o bidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md) El parámetro mode determina si los vértices resultantes están conectados como puntos, líneas o polígonos rellenos.
 
-En el caso bidimensional, **glEvalMesh2**, Let
+En el caso bidimensional, **glEvalMesh2**, let
 
-? u = (U2 U1)/n
+? u = (u2 u1)/n
 
-? v = (V2 V1)/m,
+? v = (v2 v1)/m,
 
-donde n, U1, U2, m, V1 y V2 son los argumentos de la función [**glMapGrid2**](glmapgrid-functions.md) más reciente. A continuación, si el *modo* es \_ relleno de contabilidad, **glEvalMesh2** es equivalente a:
+donde n, u1, u2, m, v1 y v2 son los argumentos de la función [**glMapGrid2 más**](glmapgrid-functions.md) reciente. A continuación, *si el modo* es GL \_ FILL, **glEvalMesh2** equivale a:
 
-para (j = J1; j < J2; j + = 1)
-
-{
-
-[**glBegin**](glbegin.md)( \_ banda cuádruple de GL \_ );
-
-para (i = i1; i <= I2; i + = 1)
+for (j = j1; j < j2; j += 1)
 
 {
 
-[**glEvalCoord2**](glevalcoord2d.md)(i? u + U1 (), j? v + v1);
+[**glBegin**](glbegin.md)(GL \_ QUAD \_ STRIP);
 
-[**glEvalCoord2**](glevalcoord2d.md)(i? u + U1 (), (j + 1)? v + v1);
+for (i = i1; i <= i2; i += 1)
+
+{
+
+[**glEvalCoord2**](glevalcoord2d.md)(i? u + u1 ( ) , j ? v + v1);
+
+[**glEvalCoord2**](glevalcoord2d.md)(i? u + u1 ( ) , (j+1) ? v + v1);
 
 }
 
-[**glEnd**](glend.md)(); }
+[**glEnd**](glend.md)( ); }
 
-Si el *modo* es \_ línea de contabilidad, una llamada a **glEvalMesh2** es equivalente a:
+Si *el modo* es GL \_ LINE, una llamada a **glEvalMesh2** equivale a:
 
-para (j = J1; j <= J2; j + = 1)
-
-{
-
-[**glBegin**](glbegin.md)(franja de línea de contabilidad \_ \_ );
-
-para (i = i1; i <= I2; i + = 1)
+for (j = j1; j <= j2; j += 1)
 
 {
 
-[**glEvalCoord2**](glevalcoord2d.md)(i? u + U1, j? v + v1);
+[**glBegin**](glbegin.md)(GL \_ LINE \_ STRIP);
+
+for (i = i1; i <= i2; i += 1)
+
+{
+
+[**glEvalCoord2**](glevalcoord2d.md)(i? u + u1, j? v + v1);
 
 }
 
-[**glEnd**](glend.md)();
+[**glEnd**](glend.md)( );
 
 }
 
-para (i = i1; i <= I2; i + = 1)
+for (i = i1; i <= i2; i += 1)
 
 {
 
-[**glBegin**](glbegin.md)(franja de línea de contabilidad \_ \_ );
+[**glBegin**](glbegin.md)(GL \_ LINE \_ STRIP);
 
-para (j = J1; j <= J1; j + = 1)
+for (j = j1; j <= j1; j += 1)
 
 {
 
-[**glEvalCoord2**](glevalcoord2d.md)(i? u + U1, j? v + v1);
+[**glEvalCoord2**](glevalcoord2d.md)(i? u + u1, j? v + v1);
 
 }
 
@@ -164,35 +164,35 @@ glEnd( );
 
 }
 
-Y, por último, si el *modo* es \_ el punto de contabilidad, una llamada a **glEvalMesh2** es equivalente a:
+Por último, si *el modo* es GL \_ POINT, una llamada a **glEvalMesh2** equivale a:
 
-[**glBegin**](glbegin.md)(puntos de contabilidad \_ );
+[**glBegin**](glbegin.md)(GL \_ POINTS);
 
-para (j = J1; j <= J2; j + = 1)
-
-{
-
-para (i = i1; i <= I2; i + = 1)
+for (j = j1; j <= j2; j += 1)
 
 {
 
-[**glEvalCoord2**](glevalcoord2d.md)(i? u + U1, j? v + v1);
+for (i = i1; i <= i2; i += 1)
+
+{
+
+[**glEvalCoord2**](glevalcoord2d.md)(i? u + u1, j? v + v1);
 
 }
 
 }
 
-[**glEnd**](glend.md)();
+[**glEnd**](glend.md)( );
 
-En los tres casos, los únicos requisitos numéricos absolutos son que si i = n, el valor calculado desde i? u + U1 es exactamente U2 y, si j = m, el valor calculado a partir de j? v + v1 es exactamente V2. Las siguientes funciones recuperan información relacionada con **glEvalMesh**:
+En los tres casos, los únicos requisitos numéricos absolutos son que si i = n, ¿entonces el valor calculado a partir de i? u + u1 es exactamente u2, y si j = m, ¿entonces el valor calculado a partir de j? v + v1 es exactamente v2. Las siguientes funciones recuperan información relacionada con **glEvalMesh**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAP1 \_ Grid \_ Domain
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ DOMAIN
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAP2 ( \_ Grid \_ Domain
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ DOMAIN
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ MAP1 \_ segmentos de cuadrícula de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ SEGMENTS
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ MAP2 ( \_ segmentos de cuadrícula de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ SEGMENTS
 
 ## <a name="requirements"></a>Requisitos
 
@@ -202,8 +202,8 @@ En los tres casos, los únicos requisitos numéricos absolutos son que si i = n,
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

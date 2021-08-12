@@ -13,16 +13,16 @@ keywords:
 - funciones light
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 241355a26828e7a3384f3a20c84583973cb0f3ef
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1208a4fa1f066074ef64710cb520248da834cf041b327c37757c1376405e25b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118615547"
 ---
 # <a name="gllight-functions"></a>funciones glLight
 
-Estas funciones devuelven valores de parámetros de origen claro:
+Estas funciones devuelven valores de parámetro de origen claro:
 
 -   [**glLightf**](gllightf.md)
 -   [**glLighti**](gllighti.md)

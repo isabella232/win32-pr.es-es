@@ -1,11 +1,11 @@
 ---
-title: CIM_ManagedSystemElement (clase) (Servicios de Escritorio remoto)
-description: La clase base para la jerarquía de elementos del sistema.
+title: CIM_ManagedSystemElement clase (Servicios de Escritorio remoto)
+description: Clase base para la jerarquía de elementos del sistema.
 ms.assetid: c71c0441-381f-4a46-864c-9206c43a27d0
 ms.tgt_platform: multiple
 keywords:
 - CIM_ManagedSystemElement clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de CIM_ManagedSystemElement de clase, se describe
+- CIM_ManagedSystemElement clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23b242369df24724fdcc31ce925a229dba5bb515
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1e16dcf974658bb780ece5671291107ef72827c88e458fdbce35c9da9f957c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609928"
 ---
-# <a name="cim_managedsystemelement-class-remote-desktop-services"></a>CIM_ManagedSystemElement (clase) (Servicios de Escritorio remoto)
+# <a name="cim_managedsystemelement-class-remote-desktop-services"></a>CIM_ManagedSystemElement clase (Servicios de Escritorio remoto)
 
-La clase base para la jerarquía de elementos del sistema.
+Clase base para la jerarquía de elementos del sistema.
 
-Cualquier componente del sistema distinguible es un candidato para la inclusión en esta clase. Algunos ejemplos son componentes de software, como archivos; dispositivos, como unidades de disco y controladores; y componentes físicos, como chips y tarjetas
+Cualquier componente distintivo del sistema es un candidato para su inclusión en esta clase. Algunos ejemplos son los componentes de software, como los archivos; dispositivos, como unidades de disco y controladores; y componentes físicos, como chips y tarjetas
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -52,13 +52,13 @@ class CIM_ManagedSystemElement
 
 ## <a name="members"></a>Miembros
 
-La clase del **\_ ManagedSystemElement de CIM** tiene estos tipos de miembros:
+La **clase \_ ManagedSystemElement de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase del **\_ ManagedSystemElement de CIM** tiene estas propiedades.
+La **clase \_ ManagedSystemElement de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -94,13 +94,13 @@ Descripción del objeto.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
@@ -132,13 +132,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -166,21 +166,21 @@ Estado actual del objeto. Se pueden definir varios Estados operativos y no opera
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -202,8 +202,8 @@ Estado actual del objeto. Se pueden definir varios Estados operativos y no opera
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

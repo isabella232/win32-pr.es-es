@@ -1,26 +1,26 @@
 ---
-title: Propiedad InputEventsAtOnce de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. | Propiedad InputEventsAtOnce de IMsRdpClientAdvancedSettings
+title: Propiedad IMsRdpClientAdvancedSettings InputEventsAtOnce
+description: Esta propiedad no es compatible. | Propiedad IMsRdpClientAdvancedSettings InputEventsAtOnce
 ms.assetid: 2f24b2cd-136d-4bde-9808-e5cb02bd7ce8
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad InputEventsAtOnce
-- Propiedad InputEventsAtOnce Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
+- Propiedad InputEventsAtOnce Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad InputEventsAtOnce
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 999d00cb706e4fdd4cf0c9ed606c33de4a81e8d6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 820b054a97246e81af1b21e46a0e5b272a95749c1aaabc77561e091d00677aaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608533"
 ---
-# <a name="imsrdpclientadvancedsettingsinputeventsatonce-property"></a>IMsRdpClientAdvancedSettings:: InputEventsAtOnce (propiedad)
+# <a name="imsrdpclientadvancedsettingsinputeventsatonce-property"></a>IMsRdpClientAdvancedSettings::InputEventsAtOnce, propiedad
 
 Esta propiedad no es compatible.
 
@@ -88,7 +88,7 @@ Nuevo número de eventos de entrada. El valor predeterminado es 10.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ false**.
+Devuelve **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 

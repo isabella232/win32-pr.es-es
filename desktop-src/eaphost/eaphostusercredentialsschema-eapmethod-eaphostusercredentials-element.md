@@ -3,7 +3,7 @@ title: Elemento EapMethod (EapHostUserCredentials)
 description: Obtenga información sobre el elemento EapMethod (EapHostUserCredentials). Este elemento identifica el método al que se hace referencia.
 ms.assetid: 0a510f44-09ac-466e-a806-4e89909fe850
 keywords:
-- Elemento EapMethod EAPHost
+- EapMethod, elemento EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8d2f1bf5aa2901316db380e2cfd011b11c420035
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 00269c22497d04763c349ad5d5c0106c45d8dc47a369481c48b8ab440c70f3f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274435"
 ---
 # <a name="eapmethod-eaphostusercredentials-element"></a>Elemento EapMethod (EapHostUserCredentials)
 
-El elemento **EapMethod (EapHostUserCredentials)** identifica el método al que se hace referencia.
+El **elemento EapMethod (EapHostUserCredentials)** identifica el método al que se hace referencia.
 
 ``` syntax
 <xs:element name="EapMethod"
@@ -31,20 +31,20 @@ El elemento **EapMethod (EapHostUserCredentials)** identifica el método al que 
  />
 ```
 
-El elemento **EapMethod** se define mediante el elemento [**EapHostUserCredentials**](eaphostusercredentialsschema-eaphostusercredentials-element.md) .
+El **elemento EapMethod** se define mediante el [**elemento EapHostUserCredentials.**](eaphostusercredentialsschema-eaphostusercredentials-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

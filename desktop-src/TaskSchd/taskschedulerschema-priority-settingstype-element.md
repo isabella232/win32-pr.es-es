@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ecda59ecbbe23550363fb30706d73bca54fcd925
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11b71c88f63e7a3beb3c1c9ec8e1f3253bcd05a567ec5cd077f62175561ce2c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611897"
 ---
 # <a name="priority-settingstype-element"></a>Elemento Priority (settingsType)
 
@@ -32,7 +32,7 @@ Especifica el nivel de prioridad de la tarea.
  />
 ```
 
-El elemento de **prioridad** se define mediante el tipo complejo de [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+El **elemento Priority** se define mediante el tipo complejo [**settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,39 +40,39 @@ El elemento de **prioridad** se define mediante el tipo complejo de [**settingsT
 
 | Elemento                                                           | Derivado de                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para realizar la tarea.<br/> |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas usa para realizar la tarea.<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-El nivel de prioridad 0 es la prioridad más alta y el nivel de prioridad 10 es la prioridad más baja. El valor predeterminado es 7. Los valores mínimo y máximo se establecen mediante el tipo simple [**priorityType**](taskschedulerschema-prioritytype-simpletype.md) . Los niveles de prioridad 7 y 8 se usan para las tareas en segundo plano y los niveles de prioridad 4, 5 y 6 se usan para las tareas interactivas.
+El nivel de prioridad 0 es la prioridad más alta y el nivel de prioridad 10 es la prioridad más baja. El valor predeterminado es 7. El tipo simple [**priorityType**](taskschedulerschema-prioritytype-simpletype.md) establece los valores mínimo y máximo. Los niveles de prioridad 7 y 8 se usan para las tareas en segundo plano, y los niveles de prioridad 4, 5 y 6 se usan para las tareas interactivas.
 
-La acción de la tarea se inicia en un proceso con una prioridad basada en un valor de clase de prioridad. Un valor de nivel de prioridad (prioridad de subproceso) se usa para las acciones de tareas de correo electrónico, el cuadro de mensaje y el controlador COM. Para obtener más información sobre la clase de prioridad y los valores de nivel de prioridad, vea [programación de prioridades](/windows/desktop/ProcThread/scheduling-priorities). En la tabla siguiente se enumeran los valores posibles para el elemento **Priority** y los valores de nivel de prioridad y clase de prioridad correspondientes.
+La acción de la tarea se inicia en un proceso con una prioridad que se basa en un valor priority class. Se usa un valor de nivel de prioridad (prioridad del subproceso) para las acciones de controlador COM, cuadro de mensaje y tarea de correo electrónico. Para obtener más información sobre los valores priority class y priority level, vea [Scheduling Priorities](/windows/desktop/ProcThread/scheduling-priorities). En la tabla siguiente se enumeran los valores posibles para el **elemento Priority** y los valores de Priority Class y Priority Level correspondientes.
 
 
 
 | Prioridad de la tarea | Priority (clase)                 | Nivel de prioridad                   |
 |---------------|--------------------------------|----------------------------------|
-| 0             | \_clase de prioridad en tiempo real \_      | tiempo de prioridad de subproceso \_ \_ \_ crítico |
-| 1             | \_clase de prioridad alta \_          | prioridad de subproceso \_ \_ más alta        |
-| 2             | POR encima de la \_ \_ clase de prioridad normal \_ | prioridad de subproceso \_ \_ por encima de lo \_ normal  |
-| 3             | POR encima de la \_ \_ clase de prioridad normal \_ | prioridad de subproceso \_ \_ por encima de lo \_ normal  |
-| 4             | \_clase de prioridad normal \_        | prioridad de subproceso \_ \_ normal         |
-| 5             | \_clase de prioridad normal \_        | prioridad de subproceso \_ \_ normal         |
-| 6             | \_clase de prioridad normal \_        | prioridad de subproceso \_ \_ normal         |
-| 7             | POR debajo de la \_ \_ clase de prioridad normal \_ | prioridad de subproceso \_ \_ por debajo de lo \_ normal  |
-| 8             | POR debajo de la \_ \_ clase de prioridad normal \_ | prioridad de subproceso \_ \_ por debajo de lo \_ normal  |
-| 9             | \_clase de prioridad INactiva \_          | prioridad de subproceso \_ \_ más baja         |
-| 10            | \_clase de prioridad INactiva \_          | prioridad de subproceso \_ \_ inactiva           |
+| 0             | CLASE \_ PRIORITY EN \_ TIEMPO REAL      | TIEMPO CRÍTICO \_ DE \_ PRIORIDAD DEL \_ SUBPROCESO |
+| 1             | HIGH \_ PRIORITY \_ (CLASE)          | PRIORIDAD \_ MÁS ALTA DEL \_ SUBPROCESO        |
+| 2             | ABOVE \_ NORMAL \_ PRIORITY \_ CLASS | PRIORIDAD \_ DEL SUBPROCESO POR ENCIMA DE LO \_ \_ NORMAL  |
+| 3             | ABOVE \_ NORMAL \_ PRIORITY \_ CLASS | PRIORIDAD \_ DEL SUBPROCESO POR ENCIMA DE LO \_ \_ NORMAL  |
+| 4             | NORMAL \_ PRIORITY \_ (CLASE)        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
+| 5             | NORMAL \_ PRIORITY \_ (CLASE)        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
+| 6             | NORMAL \_ PRIORITY \_ (CLASE)        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
+| 7             | CLASE POR \_ \_ DEBAJO DE LA PRIORIDAD \_ NORMAL | PRIORIDAD \_ DEL SUBPROCESO POR \_ DEBAJO DE LO \_ NORMAL  |
+| 8             | CLASE POR \_ \_ DEBAJO DE LA PRIORIDAD \_ NORMAL | PRIORIDAD \_ DEL SUBPROCESO POR \_ DEBAJO DE LO \_ NORMAL  |
+| 9             | IDLE \_ PRIORITY \_ (CLASE)          | PRIORIDAD \_ MÁS BAJA DEL \_ SUBPROCESO         |
+| 10            | IDLE \_ PRIORITY \_ (CLASE)          | PRIORIDAD \_ DE SUBPROCESO \_ INACTIVA           |
 
 
 
  
 
-Para el desarrollo de C++, vea [**propiedad Priority de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_priority).
+Para el desarrollo de C++, vea [**Priority Property of ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_priority).
 
-Para el desarrollo de scripts, vea [**TaskSettings. Priority**](tasksettings-priority.md).
+Para el desarrollo de scripts, [**vea TaskSettings.Priority**](tasksettings-priority.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ Para el desarrollo de scripts, vea [**TaskSettings. Priority**](tasksettings-pri
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -89,7 +89,7 @@ Para el desarrollo de scripts, vea [**TaskSettings. Priority**](tasksettings-pri
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: función glDrawArrays (GL. h)
-description: La función glDrawArrays especifica varios primitivos que se van a representar.
+title: Función glDrawArrays (Gl.h)
+description: La función glDrawArrays especifica varias primitivas que se representan.
 ms.assetid: 6ebd467b-5a63-43e4-b3fd-242c704d7d13
 keywords:
-- glDrawArrays (función) OpenGL
+- Función glDrawArrays OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88b20cf3a3e3b2c96a8172f53f8126815efe16d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 349ba3407d84d66afd431d14c3fc97b151661f4f783a05734a55d9ba1dc313ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616997"
 ---
-# <a name="gldrawarrays-function"></a>glDrawArrays función)
+# <a name="gldrawarrays-function"></a>Función glDrawArrays
 
-La función **glDrawArrays** especifica varios primitivos que se van a representar.
+La **función glDrawArrays** especifica varias primitivas que se representan.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void WINAPI glDrawArrays(
 *mode* 
 </dt> <dd>
 
-Tipo de primitivas que se van a representar. Las constantes siguientes especifican tipos aceptables de primitivas: \_ puntos de GL, \_ franja de líneas de libro de contabilidad \_ , bucle de línea de libro de contabilidad, \_ \_ \_ líneas de contabilidad general, franja de \_ triángulo de contabilidad \_ , ventilador de triángulo de contabilidad general, \_ triángulos de contabilidad, \_ \_ \_ franja cuádruple de GL, \_ cuádruples de contabilidad \_ y polígono de contabilidad \_ .
+Tipo de primitivas que se representará. Las constantes siguientes especifican tipos aceptables de primitivas: GL \_ POINTS, GL \_ LINE \_ STRIP, GL \_ LINE \_ LOOP, GL \_ LINES, GL TRIANGLE \_ \_ STRIP, GL TRIANGLE \_ \_ FAN, GL TRIANGLE \_ FAN, GL \_ TRIANGLES, GL QUAD \_ STRIP, GL \_ QUADS y GL \_ POLYGON.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Tipo de primitivas que se van a representar. Las constantes siguientes especific
 *count* 
 </dt> <dd>
 
-Número de índices que se van a representar.
+Número de índices que se representará.
 
 </dd> </dl>
 
@@ -75,25 +75,25 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | el *recuento* es negativo.<br/>                                                                                                      |
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* no era un valor aceptado.<br/>                                                                                          |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *count* era negativo.<br/>                                                                                                      |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *mode* no era un valor aceptado.<br/>                                                                                          |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Con **glDrawArrays**, puede especificar varias primitivas geométricas que se van a representar. En lugar de llamar a funciones OpenGL independientes para pasar cada vértice, normal o color individual, puede especificar matrices independientes de vértices, normales y colores para definir una secuencia de primitivas (todo el mismo tipo) con una única llamada a **glDrawArrays**.
+Con **glDrawArrays,** puede especificar varias primitivas geométricas para representar. En lugar de llamar a funciones OpenGL independientes para pasar cada vértice individual, normal o color, puede especificar matrices independientes de vértices, normales y colores para definir una secuencia de primitivas (todas del mismo tipo) con una sola llamada a **glDrawArrays**.
 
-Cuando se llama a **glDrawArrays**, el *recuento* de elementos secuenciales de cada matriz habilitada se usa para construir una secuencia de primitivas geométricas, empezando por el *primer* elemento. El parámetro *mode* especifica qué tipo de primitivo se debe construir y cómo usar los elementos de la matriz para construir los primitivos.
+Cuando se llama a **glDrawArrays** *,* se usan los elementos secuenciales de recuento de cada matriz habilitada para construir una secuencia de primitivas geométricas, empezando por *el primer* elemento. El *parámetro mode* especifica qué tipo de primitivo construir y cómo usar los elementos de matriz para construir las primitivas.
 
-Una vez que **glDrawArrays** devuelve, los valores de los atributos de vértice modificados por **glDrawArrays** son indefinidos. Por ejemplo, si \_ \_ la matriz de colores de GL está habilitada, el valor del color actual no está definido después de que **glDrawArrays** devuelva. Los atributos no modificados por **glDrawArrays** permanecen definidos. Cuando \_ \_ no se habilita la matriz de vértices de contabilidad, no se generan primitivas geométricas, pero los atributos correspondientes a las matrices habilitadas se modifican.
+Después **de que glDrawArrays** vuelva, los valores de los atributos de vértice modificados por **glDrawArrays** no están definidos. Por ejemplo, si GL COLOR ARRAY está habilitado, el valor del color actual no está definido después de que se devuelva \_ \_ **glDrawArrays.** Los atributos no **modificados por glDrawArrays** permanecen definidos. Cuando GL VERTEX ARRAY no está habilitado, no se generan primitivas geométricas, pero se modifican los atributos correspondientes a \_ \_ las matrices habilitadas.
 
-Puede incluir **glDrawArrays** en las listas de visualización. Cuando se incluye **glDrawArrays** en una lista de visualización, los datos de la matriz necesarios, determinados por los punteros de matriz y habilitados, se generan y se escriben en la lista de visualización. Los valores de punteros de matriz y habilitados se determinan durante la creación de listas de presentación.
+Puede incluir **glDrawArrays en** listas para mostrar. Cuando se incluye **glDrawArrays** en una lista de visualización, los datos de matriz necesarios, determinados por los punteros de matriz y las habilitaciones, se generan y se introducen en la lista de visualización. Los valores de los punteros de matriz y las habilitaciones se determinan durante la creación de listas para mostrar.
 
-Puede leer datos de matriz estática en cualquier momento. Si se modifican los elementos de una matriz estática y no se especifica de nuevo la matriz, los resultados de las llamadas subsiguientes a **glDrawArrays** no se definen.
+Puede leer los datos de la matriz estática en cualquier momento. Si se modifican elementos de matriz estáticos y no se vuelve a especificar la matriz, los resultados de las llamadas posteriores **a glDrawArrays** no están definidos.
 
-Aunque no se genera ningún error cuando se especifica una matriz más de una vez dentro de pares [**glBegin**](glbegin.md) y [**glend**](glend.md) , los resultados son indefinidos.
+Aunque no se genera ningún error al especificar una matriz más de una vez dentro de los pares [**glBegin y glBegin,**](glbegin.md) los resultados no están definidos. [](glend.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Aunque no se genera ningún error cuando se especifica una matriz más de una ve
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

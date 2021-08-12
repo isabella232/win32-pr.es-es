@@ -1,7 +1,7 @@
 ---
-description: Contiene el nombre de una directiva de LAN cableada.
+description: Contiene el nombre de una directiva DE LAN cableada.
 ms.assetid: 042be748-3337-4eb2-a75f-c85f7042bf13
-title: nombre (LANPolicy) (elemento)
+title: elemento name (LANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 195eadfb4700a5ac9d28bb7ea1152228fae9480a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f3faf980b6e03eb75f8c64d7aaab0facf58047f188f764428d7903f75118a79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620233"
 ---
-# <a name="name-lanpolicy-element"></a>nombre (LANPolicy) (elemento)
+# <a name="name-lanpolicy-element"></a>elemento name (LANPolicy)
 
-El elemento Name (LANPolicy) contiene el nombre de una directiva de LAN cableada.
+El elemento name (LANPolicy) contiene el nombre de una directiva LAN cableada.
 
 ``` syntax
 <xs:element name="name"
@@ -29,7 +29,7 @@ El elemento Name (LANPolicy) contiene el nombre de una directiva de LAN cableada
  />
 ```
 
-El elemento **Name** se define mediante el elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+El **elemento name** se define mediante el elemento [**LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="remarks"></a>Observaciones
 
@@ -41,8 +41,8 @@ Los nombres no distinguen mayúsculas de minúsculas.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

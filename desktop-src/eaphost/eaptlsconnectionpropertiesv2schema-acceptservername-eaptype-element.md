@@ -1,6 +1,6 @@
 ---
 title: Elemento AcceptServerName
-description: Indica si el nombre del servidor se valida con respecto a la cadena de nombre especificada en el elemento ServerNames (ServerValidationParameters). | Elemento AcceptServerName
+description: Indica si el nombre del servidor se valida con la cadena de nombre especificada en el elemento ServerNames (ServerValidationParameters). | Elemento AcceptServerName
 ms.assetid: 307b2d2a-1678-4aa9-82ed-46d401cf0e0f
 keywords:
 - Elemento AcceptServerName EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b48c43bce2bd71f4d761ea58fcdf5e0632107f87
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 69cb60d89824c4b6bf83f4903e96b1856433e367e647d19657b70888839595f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273712"
 ---
 # <a name="acceptservername-element"></a>Elemento AcceptServerName
 
-El elemento **AcceptServerName (EapType)** indica si el nombre del servidor se valida con respecto a la cadena de nombre especificada en el elemento [**servernames (ServerValidationParameters)**](eaptlsconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md) .
+El **elemento AcceptServerName (EapType)** indica si el nombre del servidor se valida con la cadena de nombre especificada en el elemento [**ServerNames (ServerValidationParameters).**](eaptlsconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md)
 
 ``` syntax
 <xs:element name="AcceptServerName"
@@ -31,24 +31,24 @@ El elemento **AcceptServerName (EapType)** indica si el nombre del servidor se v
  />
 ```
 
-El elemento **AcceptServerName** se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) define el elemento **AcceptServerName.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **AcceptServerName** es opcional.
+El **elemento AcceptServerName** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

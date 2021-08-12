@@ -1,50 +1,50 @@
 ---
-title: En atributo (curva) (VML)
-description: En atributo (curva) (VML)
+title: Atributo To (Curve)(VML)
+description: Atributo To (Curve)(VML)
 ms.assetid: 61469921-5095-4cb6-b032-f3e250874958
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2c0c9a858ff2cc8304ffacefb1cae477614e470
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fc1d2a4c7fd91652ca59707ff00b67a8215d754134bc150402d72e833f249f69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596246"
 ---
-# <a name="to-attribute-curvevml"></a>En atributo (curva) (VML)
+# <a name="to-attribute-curvevml"></a>Atributo To (Curve)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define el punto final de una curva. Lectura/escritura **VgVector2D**.
+Define el punto final de una curva. Lectura/escritura **DvVector2D**.
 
 **Se aplica a**
 
-[Sensible](msdn-online-vml-curve-element.md)
+[Curva](msdn-online-vml-curve-element.md)
 
 **Sintaxis de etiquetas**
 
-<v: *Element* a = " *expresión* " >
+<v: *element* to=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . to = "*expresión*"
+*Element* .to="*expression*"
 
-*expresión* = de *elemento*. para
+*expresión* = *elemento*.to
 
 **Comentarios:**
 
-Define el punto final de una curva Bézier cúbica en el espacio de coordenadas del elemento primario. Si el elemento primario no es un elemento VML, la [unidad](msdn-online-vml-units.md) predeterminada es un píxel (pero también se puede especificar in, cm, mm, PT, PC). El valor predeterminado es 30, 20.
+Define el punto final de una curva bézier cúbica en el espacio de coordenadas del elemento primario. Si el elemento primario no es [](msdn-online-vml-units.md) un elemento VML, la unidad predeterminada es un píxel (pero también se puede especificar in, cm, mm, pt, pc). El valor predeterminado es 30,20.
 
 **Atributo estándar de VML**
 
 **Ejemplo**
 
-La curva es sonriente. Comienza a la izquierda y termina a la derecha. Los dos puntos de control se sitúan a lo largo del modo de extraer la curva para dar la apariencia de una sonrisa.
+La curva es sonriente. Comienza a la izquierda y termina a la derecha. Los dos puntos de control se sitúan a lo largo del camino para extraer la curva hacia abajo para dar la apariencia de una sonrisa.
 
 
 ```HTML
@@ -56,6 +56,6 @@ La curva es sonriente. Comienza a la izquierda y termina a la derecha. Los dos p
 
 
 
- 
+ 
 
- 
+ 

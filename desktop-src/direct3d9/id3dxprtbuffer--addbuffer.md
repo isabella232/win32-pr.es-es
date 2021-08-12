@@ -1,7 +1,7 @@
 ---
 description: Agrega otro búfer a ID3DXPRTBuffer y almacena los resultados en ID3DXPRTBuffer.
 ms.assetid: 345412f4-30c5-4c1d-b0ef-6e3e18c4e5ab
-title: 'ID3DXPRTBuffer:: AddBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::AddBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 90b86ad3d5d9fe5aa65db722757bdb34574a1006
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ffbaffbb47d91b18a6fad9bdee98012fa11fb923a7c7586acf7d7b0cd181bcc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294118"
 ---
-# <a name="id3dxprtbufferaddbuffer-method"></a>ID3DXPRTBuffer:: AddBuffer (método)
+# <a name="id3dxprtbufferaddbuffer-method"></a>Método ID3DXPRTBuffer::AddBuffer
 
-Agrega otro búfer a [**ID3DXPRTBuffer**](id3dxprtbuffer.md) y almacena los resultados en **ID3DXPRTBuffer**.
+Agrega otro búfer a [**ID3DXPRTBuffer**](id3dxprtbuffer.md) y almacena los resultados en **ID3DXPRTBuffer.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT AddBuffer(
 
 <dl> <dt>
 
-*pBuffer* \[ de\]
+*pBuffer* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un búfer que contiene los miembros que se van a agregar a los miembros respectivos del búfer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .
+Puntero a un búfer que contiene los miembros que se van a agregar a los miembros respectivos del búfer [**ID3DXPRTBuffer.**](id3dxprtbuffer.md)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Puntero a un búfer que contiene los miembros que se van a agregar a los miembro
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-pBuffer y [**ID3DXPRTBuffer**](id3dxprtbuffer.md) deben tener el mismo número de muestras, coeficientes y canales de color; de lo contrario, se producirá un error en el método.
+pBuffer e [**ID3DXPRTBuffer**](id3dxprtbuffer.md) deben tener el mismo número de muestras, coeficientes y canales de color; De lo contrario, se producirá un error en el método .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,12 +65,12 @@ pBuffer y [**ID3DXPRTBuffer**](id3dxprtbuffer.md) deben tener el mismo número d
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

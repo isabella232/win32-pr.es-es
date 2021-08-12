@@ -1,46 +1,46 @@
 ---
-description: Registrar y anular el registro de claves
+description: Registro y anulación del registro de claves
 ms.assetid: 90fd8df0-e2a8-4183-a50c-e6f8ea5041cc
-title: Registrar y anular el registro de claves
+title: Registro y anulación del registro de claves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 009ee41e85027ff8eba3f6869359a9ba304f4242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d586fc2bf399a30b8a962611a21a4e0994d88f4513453c071b110de1d4142b92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612168"
 ---
-# <a name="registering-and-deregistering-keys"></a>Registrar y anular el registro de claves
+# <a name="registering-and-deregistering-keys"></a>Registro y anulación del registro de claves
 
-## <a name="registering-keys"></a>Registrar claves
+## <a name="registering-keys"></a>Registro de claves
 
-Un nodo puede registrar claves con [**DrtRegisterKey**](/windows/desktop/api/drt/nf-drt-drtregisterkey) en cualquier momento mientras se encuentra en el estado de DRT **\_ activo**, **DRT \_ solo** y DRT sin Estados de **\_ \_ red** . Claves registradas **solo \_ en DRT** y DRT no solo los Estados de **\_ \_ red** pueden ser reconocidos por otros DRTs después de que el nodo local haya pasado a **DRT \_ activo**.
+Un nodo puede registrar claves con [**DrtRegisterKey**](/windows/desktop/api/drt/nf-drt-drtregisterkey) en cualquier momento mientras se encuentra en los estados **DRT \_ ACTIVE**, **DRT \_ ALONE** y **DRT \_ NO \_ NETWORK.** Las claves registradas en los estados **DRT \_ ALONE** y **DRT \_ NO \_ NETWORK** solo pueden ser reconocidas por otros DRT después de que el nodo local haya pasado a **DRT \_ ACTIVE**.
 
-No se pueden registrar claves idénticas dentro de la misma instancia de DRT cuando se usa [**DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider). Si se intenta registrar claves idénticas, se producirá un error en el registro de la segunda clave. El uso de claves idénticas también debe evitarse entre diferentes instancias de DRT. Busca en la designación de clave única estas claves compartidas idénticas podrían devolver cualquiera de las claves, independientemente de los datos que estén asociados a la clave.
+No se pueden registrar claves idénticas dentro de la misma instancia de DRT cuando se [**usa DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider). Si se intenta registrar claves idénticas, se producirá un error en el registro de la segunda clave. También se debe evitar el uso de claves idénticas entre diferentes instancias de DRT. Las búsquedas en la designación de clave única que comparten estas claves idénticas podrían devolver cualquiera de las claves, independientemente de los datos asociados a la clave.
 
 > [!Note]  
-> Si se requiere un comportamiento diferente para la implementación, se puede crear un proveedor de seguridad en lugar de [**DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider) para acomodar.
+> Si se requiere un comportamiento diferente para la implementación, se puede crear un proveedor de seguridad en lugar de [**DrtCreateDerivedKeySecurityProvider para**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider) dar cabida.
 
  
 
-## <a name="deregistering-keys"></a>Anular el registro de claves
+## <a name="deregistering-keys"></a>Anulación del registro de claves
 
-Un nodo puede anular el registro de una clave en cualquier momento después de que se haya registrado. Sin embargo, solo la aplicación que registró la clave puede anular su registro. Una aplicación puede anular el registro de una clave del nodo local mediante la función [**DrtUnregisterKey**](/windows/desktop/api/drt/nf-drt-drtunregisterkey) . Una vez finalizada la función, desencadena un evento de **\_ \_ \_ \_ cambio de clave LEAFSET de evento de DRT** , que informa a la aplicación así como a otros nodos que participan en la malla de DRT.
+Un nodo puede anular el registro de una clave en cualquier momento después de que se haya registrado. Sin embargo, solo la aplicación que registró la clave puede anular su registro. Una aplicación puede anular el registro de una clave del nodo local mediante la [**función DrtUnregisterKey.**](/windows/desktop/api/drt/nf-drt-drtunregisterkey) Al finalizar, la función desencadena un evento **DRT \_ EVENT \_ LEAFSET \_ KEY \_ CHANGE,** que informa a la aplicación, así como a otros nodos que participan en la malla de DRT.
 
-En el estado **de \_ error de DRT** , la llamada necesaria de [**DrtClose**](/windows/desktop/api/drt/nf-drt-drtclose) producirá la eliminación del registro de todas las claves de la infraestructura de DRT.
+Mientras se encuentra en **el estado DRT \_ FAULTED,** la llamada necesaria de [**DrtClose**](/windows/desktop/api/drt/nf-drt-drtclose) dará lugar a que la infraestructura de DRT anulará el registro de todas las claves.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Buscar una tabla de enrutamiento distribuida](searching-a-distributed-routing-table.md)
+[Búsqueda de una tabla de enrutamiento distribuido](searching-a-distributed-routing-table.md)
 </dt> <dt>
 
 [Acerca de las tablas de enrutamiento distribuido](about-distributed-routing-tables.md)
 </dt> <dt>
 
-[Referencia de Table API de enrutamiento distribuido](distributed-routing-table-api-reference.md)
+[Referencia de Table API enrutamiento distribuido](distributed-routing-table-api-reference.md)
 </dt> </dl>
 
  

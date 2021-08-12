@@ -1,6 +1,6 @@
 ---
 title: Esquema eaphostconfig
-description: Obtenga información sobre el esquema de eaphostconfig y vea recursos adicionales disponibles. El esquema define el esquema de configuración de EAPHost.
+description: Obtenga información sobre el esquema eaphostconfig y vea los recursos adicionales disponibles. El esquema define el esquema de configuración de EAPHost.
 ms.assetid: e1e4dda3-6bf4-4da5-9e14-63548ec86836
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 28aca669b2099e489738f9d5dac59d3e60c58b13
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 771bd2149b50dac140de6b789d0a9198baea6eb5baf769dd7df15ef052c0d72d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274550"
 ---
 # <a name="eaphostconfig-schema"></a>Esquema eaphostconfig
 
 El esquema eaphostconfig define el esquema de configuración de EAPHost.
 
--   [Elementos de esquema eaphostconfig](eaphostconfigschema-elements.md)
+-   [elementos de esquema eaphostconfig](eaphostconfigschema-elements.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -29,9 +29,9 @@ El esquema eaphostconfig define el esquema de configuración de EAPHost.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

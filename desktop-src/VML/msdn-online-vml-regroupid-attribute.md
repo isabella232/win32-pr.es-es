@@ -4,23 +4,23 @@ description: Atributo ReGroupID de VML
 ms.assetid: 2fbcc8c5-6e31-4301-9fb8-c2618bb17a1b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 384703d3fc5675013de09c4e3b5dec7505cf4164
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7c304bb0ecbe19c62e6fa5a204749b61fad4a700fe4222b6e1ef993384d53abd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597648"
 ---
 # <a name="vml-regroupid-attribute"></a>Atributo ReGroupID de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define un grupo anterior para una forma. Lectura/escritura **VgInteger**.
+Define un grupo anterior para una forma. Lectura/escritura **BvInteger**.
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Define un grupo anterior para una forma. Lectura/escritura **VgInteger**.
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:regroupid = " *expresión* " >
+<v: *elemento* o:regroupid=" *expresión* ">
 
 **Comentarios:**
 
-Se usa un número de identificación para identificar grupos de formas que ya no están agrupadas. Permite que las formas se reagrupen mediante programación.
+Se usa un número de identificador para identificar grupos de formas que ya no están agrupadas. Permite que las formas se regrupar mediante programación.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
 **Ejemplo**
 
-La forma formaba parte de un grupo indicado por el ID. de grupo 040754.
+La forma forma formaba parte de un grupo anotado por el identificador de grupo 040754.
 
 
 ```HTML
@@ -52,6 +52,6 @@ La forma formaba parte de un grupo indicado por el ID. de grupo 040754.
 
 
 
- 
+ 
 
- 
+ 

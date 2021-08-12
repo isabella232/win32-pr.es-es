@@ -2,7 +2,7 @@
 description: La clase NTEventLogEventConsumer registra un mensaje específico en el registro de eventos del sistema operativo cuando se le entrega un evento.
 ms.assetid: cf986812-f09a-4f32-ba76-db76a23e2e4c
 ms.tgt_platform: multiple
-title: Clase NTEventLogEventConsumer
+title: NTEventLogEventConsumer (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,16 +27,16 @@ api_type:
 - DllExport
 api_location:
 - Wbemcons.dll
-ms.openlocfilehash: e98948688b0fee37316102b2c37039de1c139310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfa2a1dcf15b65808af758820604df6aa62d7bc59d4e1c69e8d4d6e06b1d93a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555175"
 ---
-# <a name="nteventlogeventconsumer-class"></a>Clase NTEventLogEventConsumer
+# <a name="nteventlogeventconsumer-class"></a>NTEventLogEventConsumer (clase)
 
-La clase **NTEventLogEventConsumer** registra un mensaje específico en el registro de eventos del sistema operativo cuando se le entrega un evento. Esta clase es uno de los consumidores de eventos estándar que proporciona WMI. Para obtener más información, consulte [supervisión y respuesta a eventos con consumidores estándar](monitoring-and-responding-to-events-with-standard-consumers.md).
+La **clase NTEventLogEventConsumer** registra un mensaje específico en el registro de eventos del sistema operativo cuando se le entrega un evento. Esta clase es uno de los consumidores de eventos estándar que proporciona WMI. Para obtener más información, [vea Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,73 +62,73 @@ class NTEventLogEventConsumer : __EventConsumer
 
 ## <a name="members"></a>Miembros
 
-La clase **NTEventLogEventConsumer** tiene estos tipos de miembros:
+La **clase NTEventLogEventConsumer** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **NTEventLogEventConsumer** tiene estas propiedades.
+La **clase NTEventLogEventConsumer** tiene estas propiedades.
 
 <dl> <dt>
 
 **Categoría**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Categoría de evento. Esta información es específica del origen y puede tener cualquier valor.
+Categoría de eventos. Se trata de información específica del origen y puede tener cualquier valor.
 
 </dd> <dt>
 
 **CreatorSID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de seguridad (SID) que identifica de forma única al usuario que crea un filtro. WMI almacena el SID del usuario que crea una instancia de [**\_ \_ EventConsumer**](--eventconsumer.md) o el SID de administrador, dependiendo del sistema operativo. Para obtener más información, vea [enlazar un filtro de eventos con un consumidor lógico](binding-an-event-filter-with-a-logical-consumer.md) y [supervisar y responder a eventos con consumidores estándar](monitoring-and-responding-to-events-with-standard-consumers.md).
+Identificador de seguridad (SID) que identifica de forma única al usuario que crea un filtro. WMI almacena el SID del usuario que crea una instancia de [**\_ \_ EventConsumer**](--eventconsumer.md) o el SID de administrador, en función del sistema operativo. Para obtener más información, vea [Enlazar un filtro de eventos con](binding-an-event-filter-with-a-logical-consumer.md) un consumidor lógico y Supervisar y Responder a eventos con [consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
-Esta propiedad se hereda de [**\_ \_ EventConsumer**](--eventconsumer.md).
+Esta propiedad se hereda de [**\_ \_ EventConsumer.**](--eventconsumer.md)
 
 </dd> <dt>
 
 **Id. de evento**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Mensaje de evento en el archivo DLL del mensaje. Esta propiedad no puede ser **null**.
+Mensaje de evento en el archivo DLL del mensaje. Esta propiedad no puede ser **NULL.**
 
 </dd> <dt>
 
 **EventType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de evento. Este parámetro puede tener uno de los valores enumerados en la lista siguiente, que se definen en Winnt. h.
+Tipo de evento. Este parámetro puede tener uno de los valores enumerados en la lista siguiente, que se definen en Winnt.h.
 
 <dt>
 
 <span id="EVENTLOG_SUCCESS"></span><span id="eventlog_success"></span>
 
-<span id="EVENTLOG_SUCCESS"></span><span id="eventlog_success"></span>**Registro de eventos \_ CORRECTO** (0 (0X0))
+<span id="EVENTLOG_SUCCESS"></span><span id="eventlog_success"></span>**REGISTRO DE EVENTOS \_ SUCCESS** (0 (0x0))
 
 
 </dt> <dd>
@@ -139,7 +139,7 @@ Evento correcto
 
 <span id="EVENTLOG_ERROR_TPYE"></span><span id="eventlog_error_tpye"></span>
 
-<span id="EVENTLOG_ERROR_TPYE"></span><span id="eventlog_error_tpye"></span>**Registro de eventos \_ ERROR \_ TPYE** (1 (0x1))
+<span id="EVENTLOG_ERROR_TPYE"></span><span id="eventlog_error_tpye"></span>**EVENTLOG \_ ERROR \_ TPYE** (1 (0x1))
 
 
 </dt> <dd>
@@ -150,7 +150,7 @@ Evento de error
 
 <span id="EVENTLOG_WARNING_TYPE"></span><span id="eventlog_warning_type"></span>
 
-<span id="EVENTLOG_WARNING_TYPE"></span><span id="eventlog_warning_type"></span>**Registro de eventos \_ \_Tipo de advertencia** (2 (0X2))
+<span id="EVENTLOG_WARNING_TYPE"></span><span id="eventlog_warning_type"></span>**REGISTRO DE EVENTOS \_ TIPO \_ DE** ADVERTENCIA (2 (0x2))
 
 
 </dt> <dd>
@@ -161,7 +161,7 @@ Evento de advertencia
 
 <span id="EVENTLOG_INFORMATION_TYPE"></span><span id="eventlog_information_type"></span>
 
-<span id="EVENTLOG_INFORMATION_TYPE"></span><span id="eventlog_information_type"></span>**Registro de eventos \_ \_Tipo de información** (4 (0x4))
+<span id="EVENTLOG_INFORMATION_TYPE"></span><span id="eventlog_information_type"></span>**EVENTLOG \_ TIPO \_ DE** INFORMACIÓN (4 (0x4))
 
 
 </dt> <dd>
@@ -172,18 +172,18 @@ Evento de información
 
 <span id="EVENTLOG_AUDIT_SUCCESS"></span><span id="eventlog_audit_success"></span>
 
-<span id="EVENTLOG_AUDIT_SUCCESS"></span><span id="eventlog_audit_success"></span>**Registro de eventos \_ AUDITORÍA \_ correcta** (8 (0x8))
+<span id="EVENTLOG_AUDIT_SUCCESS"></span><span id="eventlog_audit_success"></span>**REGISTRO DE EVENTOS \_ AUDIT \_ SUCCESS** (8 (0x8))
 
 
 </dt> <dd>
 
-Tipo de auditoría Success
+Tipo de auditoría correcto
 
 </dd> <dt>
 
 <span id="EVENTLOG_AUDIT_FAILURE"></span><span id="eventlog_audit_failure"></span>
 
-<span id="EVENTLOG_AUDIT_FAILURE"></span><span id="eventlog_audit_failure"></span>**Registro de eventos \_ \_Error de auditoría** (16 (0x10))
+<span id="EVENTLOG_AUDIT_FAILURE"></span><span id="eventlog_audit_failure"></span>**EVENTLOG \_ ERROR \_ DE** AUDITORÍA (16 (0x10))
 
 
 </dt> <dd>
@@ -197,13 +197,13 @@ Tipo de auditoría de error
 **InsertionStringTemplates**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de plantillas de cadena estándar que se utiliza como cadena de inserción para una entrada del registro de eventos.
+Matriz de plantillas de cadena estándar que se usa como cadena de inserción para un registro de eventos.
 
 </dd> <dt>
 
@@ -216,16 +216,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del equipo al que Instrumental de administración de Windows (WMI) envía eventos.
+Nombre del equipo al que Windows Management Instrumentation (WMI) envía eventos.
 
-Esta propiedad se hereda de [**\_ \_ EventConsumer**](--eventconsumer.md).
+Esta propiedad se hereda de [**\_ \_ EventConsumer.**](--eventconsumer.md)
 
 </dd> <dt>
 
 **MaximumQueueSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -233,7 +233,7 @@ Tipo de acceso: solo lectura
 
 Cola máxima para un consumidor específico, en bytes.
 
-Esta propiedad se hereda de [**\_ \_ EventConsumer**](--eventconsumer.md).
+Esta propiedad se hereda de [**\_ \_ EventConsumer.**](--eventconsumer.md)
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la propiedad de evento que contiene los datos que se van a pasar al parámetro *lpRawData* de la función [**ReportEvent**](/windows/desktop/api/winbase/nf-winbase-reporteventa) .
+Nombre de la propiedad de evento que contiene los datos que se pasarán al parámetro *lpRawData* de la función [**ReportEvent.**](/windows/desktop/api/winbase/nf-winbase-reporteventa)
 
 </dd> <dt>
 
@@ -275,20 +275,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la propiedad de evento que contiene un identificador de seguridad (SID) que se va a pasar al parámetro *lpUserSid* de la función [**ReportEvent**](/windows/desktop/api/winbase/nf-winbase-reporteventa) . La propiedad debe ser una matriz de bytes (**Uint8**) o una cadena. Si es una matriz de bytes, se supone que es un SID. Si es una cadena, es un SID de cadena que se convierte en un SID.
+Nombre de la propiedad de evento que contiene un identificador de seguridad (SID) que se va a pasar al parámetro *lpUserSid* de la función [**ReportEvent.**](/windows/desktop/api/winbase/nf-winbase-reporteventa) La propiedad debe ser una matriz de bytes (**uint8**) o una cadena. Si es una matriz de bytes, se supone que es un SID. Si es una cadena, es un SID de cadena que se convierte en un SID.
 
 </dd> <dt>
 
 **NumberOfInsertionStrings**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de elementos de la matriz **InsertionStringTemplates** .
+Número de elementos de la **matriz InsertionStringTemplates.**
 
 </dd> <dt>
 
@@ -301,10 +301,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del origen donde se encuentra un mensaje. Se supone que el cliente ha registrado un archivo DLL con los mensajes necesarios.
+Nombre de origen donde se encuentra un mensaje. Se supone que el cliente ha registrado un archivo DLL con los mensajes necesarios.
 
 > [!Note]  
-> El valor de este parámetro no debe incluir un signo de dos puntos (:) óptico.
+> El valor de este parámetro no debe incluir dos puntos (:) Carácter.
 
  
 
@@ -319,42 +319,42 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del equipo en el que se va a registrar un evento, o **null** si se va a registrar el evento en un servidor local.
+Nombre del equipo en el que se va a registrar un evento o **NULL** si el evento se va a registrar en un servidor local.
 
-De forma predeterminada, los usuarios autenticados no pueden registrar los eventos en el registro de aplicaciones de un equipo remoto. Como resultado, el uso de esta propiedad para especificar un equipo remoto no funcionará. Para obtener información sobre cómo cambiar la seguridad del registro de eventos, consulte este [artículo de Knowledge Base](https://support.microsoft.com/kb/323076).
+Los usuarios autenticados no pueden, de forma predeterminada, registrar eventos en el registro de aplicación en un equipo remoto. Como resultado, el uso de esta propiedad para especificar un equipo remoto no funcionará. Para obtener información sobre cómo cambiar la seguridad del registro de eventos, consulte este [artículo de KB](https://support.microsoft.com/kb/323076).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **NTEventLogEventConsumer** se deriva de la clase abstracta [**\_ \_ EventConsumer**](--eventconsumer.md) .
+La **clase NTEventLogEventConsumer** se deriva de la [**\_ \_ clase abstracta EventConsumer.**](--eventconsumer.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo del uso de **NTEventLogEventConsumer** para crear un consumidor, consulte [registro de eventos de NT basado en un evento](logging-to-nt-event-log-based-on-an-event.md).
+Para obtener un ejemplo del uso **de NTEventLogEventConsumer** para crear un consumidor, vea Registro en el registro de eventos [NT basado en un evento](logging-to-nt-event-log-based-on-an-event.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\Suscripción raíz<br/>                                                           |
-| MOF<br/>                      | <dl> <dt>Wbemcons. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Suscripción \\ raíz<br/>                                                           |
+| MOF<br/>                      | <dl> <dt>Wbemcons.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemcons.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de consumidor estándar](standard-consumer-classes.md)
 </dt> <dt>
 
-[Crear un consumidor lógico](creating-a-logical-consumer.md)
+[Creación de un consumidor lógico](creating-a-logical-consumer.md)
 </dt> <dt>
 
 [Recepción de eventos en todo momento](receiving-events-at-all-times.md)

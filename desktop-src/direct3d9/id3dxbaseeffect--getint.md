@@ -1,7 +1,7 @@
 ---
 description: Obtiene un entero.
 ms.assetid: 8074758a-f650-4698-8a75-aa0ffb14cb21
-title: 'ID3DXBaseEffect:: GetInt (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::GetInt (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c0fe1fa01260be936b9d7f8be394d0c43a781680
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6ccd892a7563d4fce300f177a63f5e0cb82601e711f7046e9b9475977409926b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296771"
 ---
-# <a name="id3dxbaseeffectgetint-method"></a>ID3DXBaseEffect:: GetInt (método)
+# <a name="id3dxbaseeffectgetint-method"></a>Método ID3DXBaseEffect::GetInt
 
 Obtiene un entero.
 
@@ -41,19 +41,19 @@ HRESULT GetInt(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*PN* \[ enuncia\]
+*pn* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)\***
+Tipo: **[ **INT**](../winprog/windows-data-types.md)\***
 
 Devuelve un entero.
 
@@ -63,7 +63,7 @@ Devuelve un entero.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

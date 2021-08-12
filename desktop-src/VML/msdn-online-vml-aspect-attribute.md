@@ -1,24 +1,24 @@
 ---
-title: Atributo de aspecto VML
-description: Atributo de aspecto VML
+title: Atributo de aspecto de VML
+description: Atributo de aspecto de VML
 ms.assetid: 5486ed48-d28f-4bbb-b8ed-fc5a5aa12f25
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45f7cf666e9bb8d4bf3cfe0e47190a8127415ac1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 669b0f93e740e6bc4d4fb94155f6ca0ab60d5e00cebfb1604d5272d45d4dd8ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602902"
 ---
-# <a name="vml-aspect-attribute"></a>Atributo de aspecto VML
+# <a name="vml-aspect-attribute"></a>Atributo de aspecto de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Especifica cómo se conservará la relación de aspecto de la imagen de relleno. Lectura/escritura **Cadena**.
 
@@ -28,13 +28,13 @@ Especifica cómo se conservará la relación de aspecto de la imagen de relleno.
 
 **Sintaxis de etiquetas**
 
-<v: *Element* Aspect = " *expresión* " >
+<v: *element* aspect=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Aspect = "*expresión*"
+*element* .aspect="*expression*"
 
-*expresión* = de *elemento*. Aspect
+*expresión* = *elemento*.aspect
 
 **Comentarios:**
 
@@ -45,18 +45,18 @@ Estos valores incluyen:
 | Value   | Descripción                           |
 |---------|---------------------------------------|
 | ignore  | Omitir problemas de aspecto. Predeterminada.        |
-| al menos | La imagen es al menos tan grande como **el tamaño**. |
-| Atmos  | La imagen no es más grande que **el tamaño**.     |
+| Atleast | La imagen es al menos tan grande como **Size**. |
+| Atmost  | La imagen no es mayor que **Size**.     |
 
 
 
- 
+ 
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-La imagen que constituye el relleno es mayor o igual que un tamaño de 10 puntos en 10 puntos.
+La imagen que forma el relleno es mayor o igual que un tamaño de 10 puntos por 10 puntos.
 
 
 ```HTML
@@ -71,6 +71,6 @@ La imagen que constituye el relleno es mayor o igual que un tamaño de 10 puntos
 
 
 
- 
+ 
 
- 
+ 

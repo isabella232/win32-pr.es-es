@@ -1,26 +1,26 @@
 ---
-title: Propiedad DoubleClickDetect de IMsRdpClientAdvancedSettings
-description: Especifica si el cliente identifica los dos clics para el servidor.
+title: IMsRdpClientAdvancedSettings DoubleClickDetect, propiedad
+description: Especifica si el cliente identifica los doble clics para el servidor.
 ms.assetid: 39e76bef-3d12-406d-a074-8c084fbe9ccc
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad DoubleClickDetect
-- Propiedad DoubleClickDetect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad DoubleClickDetect
+- Propiedad DoubleClickDetect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad DoubleClickDetect
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd771614a80d909e0e7a748ab7256a5310084deb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc2d7a292bf307ffeac538cafd31dc7fb3ceeb1a54b1e768239ee169b04e0fd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608740"
 ---
-# <a name="imsrdpclientadvancedsettingsdoubleclickdetect-property"></a>IMsRdpClientAdvancedSettings::D propiedad oubleClickDetect
+# <a name="imsrdpclientadvancedsettingsdoubleclickdetect-property"></a>IMsRdpClientAdvancedSettings::D oubleClickDetect
 
-Especifica si el cliente identifica los dos clics para el servidor.
+Especifica si el cliente identifica los doble clics para el servidor.
 
 Esta propiedad es de lectura y escritura.
 
@@ -88,11 +88,11 @@ Establezca este parámetro en 0 para deshabilitar la característica o un valor 
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

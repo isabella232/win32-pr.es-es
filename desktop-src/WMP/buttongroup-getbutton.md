@@ -1,9 +1,9 @@
 ---
 title: BUTTONGROUP.getButton
-description: El método getButton recupera BUTTONELEMENT con el índice especificado.
+description: El método getButton recupera buttonelement con el índice especificado.
 ms.assetid: 49e1cf61-f5de-430d-8492-bd49b186f5ea
 keywords:
-- BUTTONGROUP. getButton Windows Media Player
+- ButtonGROUP.getButton Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d4f302480730ffba472366ac851412483040b7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c29e1516fcbfc3a777553c412b34608ae46a74bdc75b96c265969e066c533be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581369"
 ---
 # <a name="buttongroupgetbutton"></a>BUTTONGROUP.getButton
 
-El método **getButton** recupera **BUTTONELEMENT** con el índice especificado.
+El **método getButton** recupera **buttonelement** con el índice especificado.
 
 ``` syntax
         elementID.getButton(button)
@@ -31,35 +31,35 @@ El método **getButton** recupera **BUTTONELEMENT** con el índice especificado.
 
 <dl> <dt>
 
-<span id="button"></span><span id="BUTTON"></span>*botón*
+<span id="button"></span><span id="BUTTON"></span>*Botón*
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice de **BUTTONELEMENT** que se va a recuperar.
+**Number** (**long**) que contiene el índice de **BUTTONELEMENT** que se recuperará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto que corresponde a un elemento **BUTTONELEMENT** .
+Este método devuelve un objeto correspondiente a un **elemento BUTTONELEMENT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento BUTTONGROUP**](buttongroup-element.md)
 </dt> <dt>
 
-[**BUTTONELEMENT. index**](buttonelement-index.md)
+[**BUTTONELEMENT.index**](buttonelement-index.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Evento PlaylistCollectionPlaylistAdded del objeto AxWindowsMediaPlayer
-description: El evento PlaylistCollectionPlaylistAdded se produce cuando se agrega una lista de reproducción a la colección de listas de reproducción. | Evento PlaylistCollectionPlaylistAdded del objeto AxWindowsMediaPlayer
+title: Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer
+description: El evento PlaylistCollectionPlaylistAdded tiene lugar cuando se agrega una lista de reproducción a la colección de listas de reproducción. | Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer
 ms.assetid: 13d3bc86-6655-4536-a58f-327eabb2b8f9
 keywords:
-- Evento PlaylistCollectionPlaylistAdded del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b019e58ae8955f6df894101956e4776c2cd71626
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4d5223d5864aa8be9019b2219ef09917a1c63cf16d87a48aef9543246d5197a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581830"
 ---
-# <a name="playlistcollectionplaylistadded-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylistAdded del objeto AxWindowsMediaPlayer
+# <a name="playlistcollectionplaylistadded-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer
 
-El evento PlaylistCollectionPlaylistAdded se produce cuando se agrega una lista de reproducción a la colección de listas de reproducción.
+El evento PlaylistCollectionPlaylistAdded tiene lugar cuando se agrega una lista de reproducción a la colección de listas de reproducción.
 
 ``` syntax
 [C#]
@@ -47,36 +47,36 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad             | Descripción                                                                |
 |----------------------|----------------------------------------------------------------------------|
-| **bstrPlaylistName** | System. StringSpecifies nombre de la lista de reproducción que se ha agregado.<br/> |
+| **bstrPlaylistName** | System.String Especifica el nombre de la lista de reproducción que se agregó.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre de la lista de reproducción que se ha agregado se puede usar para recuperar la lista de reproducción correspondiente mediante IWMPPlaylistCollection. método **getByName** .
+El nombre de la lista de reproducción que se agregó se puede usar para recuperar la lista de reproducción correspondiente mediante IWMPPlaylistCollection. **Método getByName.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

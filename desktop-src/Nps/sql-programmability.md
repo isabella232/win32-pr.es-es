@@ -1,38 +1,38 @@
 ---
-title: Programación de SQL
-description: NPS admite el registro de SQL Server.
+title: SQL Programación
+description: NPS admite SQL Server registro.
 ms.assetid: 55152f56-9ca4-4d0b-a0e9-223168dba83f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dcc3d68519e6e260613d2729cabdb1e9991540a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 33aab125b8e4d00e0be06206dbdd855b7768638a8dd2545e71448a0e1a0f4f8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104533256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618550"
 ---
-# <a name="sql-programmability"></a>Programación de SQL
+# <a name="sql-programmability"></a>SQL Programación
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. En todo el texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones mencionadas originalmente como IAS.
+> El nombre del Servicio de autenticación de Internet (IAS) se ha cambiado a Servidor de directivas de red (NPS) a partir Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. A lo largo del texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones a las que se hizo referencia originalmente como IAS.
 
- 
+ 
 
-NPS admite el registro de SQL Server.
+NPS admite SQL Server registro.
 
-De forma predeterminada, el registro está deshabilitado para NPS. Para habilitarlo, ejecute el complemento servidor de directivas de redes (NPS. msc) o el complemento servicio de autenticación de Internet (IAS. msc) y siga las instrucciones de la página contabilidad.
+De forma predeterminada, el registro está deshabilitado para NPS. Para habilitarlo, ejecute el complemento Servidor de directivas de red (nps.msc) o el complemento Servicio de autenticación de Internet (ias.msc) y siga las instrucciones de la página Contabilidad.
 
 ## <a name="sample-stored-procedure"></a>Procedimiento almacenado de ejemplo
 
 > [!Note]  
-> Un procedimiento almacenado en el SQL Server base de datos al que llama NPS debe denominarse **\_ evento de informe** o se producirá un error en el registro de SQL Server de NPS.
+> Un procedimiento almacenado en la base SQL Server de datos a la que llama NPS debe denominarse evento de informe **o \_** se producirá un error en el registro de SQL Server NPS.
 
- 
+ 
 
-En el ejemplo siguiente se crea una base de datos de NPS en el entorno de base de datos SQL Server 2000 y se procesan los documentos XML enviados por los servidores NPS configurados para registrar en esta SQL Server.
+En el ejemplo siguiente se crea una base de datos NPS en el entorno de base de datos de SQL Server 2000 y se procesa documentos XML enviados por los servidores NPS configurados para iniciar sesión en este SQL Server.
 
-En este ejemplo, la información específica de NAP, que solo está disponible desde los servidores NPS que se ejecutan en Windows Server 2008 o posterior, se almacena en la \_ columna Estado de cuarentena de MS \_ . El evento de informe de procedimiento almacenado \_ recupera los valores de esta columna del elemento XML **'./MS-Quarantine-State '**. Los valores permitidos para la \_ columna Estado de cuarentena de MS \_ son 0 (acceso total), 1 (en cuarentena) y 2 (período de prueba).
+En este ejemplo, la información específica de NAP, que solo está disponible en servidores NPS que se ejecutan en Windows Server 2008 o posterior, se almacena en la columna Estado de cuarentena de \_ \_ MS. El evento de informe de procedimiento almacenado recupera los valores de esta columna del elemento \_ XML **"./MS-Quarantine-State".** Los valores permitidos para la columna Estado de cuarentena de MS son \_ \_ 0 (acceso completo), 1 (en cuarentena) y 2 (sondeo).
 
 ``` syntax
 IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'NPSODBC')
@@ -400,9 +400,9 @@ GO
 
 <dl> <dt>
 
-[TechNet: conceptos clave para el registro de SQL Server de IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
+[TechNet: Conceptos clave para el registro de SQL Server IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,21 +4,21 @@ description: Atributo CoordOrigin de VML
 ms.assetid: 0630e670-6ebe-424e-a5e0-545597454283
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb08d35aac7e26cc15aa7699439ea9f7ab4dba94
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf568f2c305108a651d56a891a96890154f9493cbadd80a9c5610414c88f4f03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118601948"
 ---
 # <a name="vml-coordorigin-attribute"></a>Atributo CoordOrigin de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Especifica el origen de la unidad de coordenadas del rectángulo que delimita una forma. Lectura/escritura [IVgVector2D](msdn-online-vml-ivgvector2d-data-type.md).
 
@@ -28,29 +28,29 @@ Especifica el origen de la unidad de coordenadas del rectángulo que delimita un
 
 **Sintaxis de etiquetas**
 
-<v: *Element* coordorigin = " *expresión* " >
+<v: *element* coordorigin=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . coordorigin = "*expresión*"
+*Element* .coordorigin="*expression*"
 
-*expresión* = de *elemento*. coordorigin
+*expresión* = *elemento*.coordorigin
 
 **Comentarios:**
 
-Si no se especifica, las coordenadas de origen son (0,0) en la esquina superior izquierda del cuadro de límite de la forma.
+Si no se especifica, las coordenadas de origen están (0,0) en la esquina superior izquierda del cuadro de límite de forma.
 
-El valor x de **CoordSize** se agrega al valor x de **CoordOrigin** para determinar el intervalo de los valores horizontales. Por ejemplo, si el valor x de **CoordOrigin** es-100 y el valor x de **CoordSize** es 200, las unidades horizontales van de-100 a + 100. Si el valor x de **CoordOrigin** es 100 y el valor x de **CoordSize** es 200, las unidades horizontales van de 100 a 300, todo dentro del cuadro de límite. Lo mismo se aplica a los valores y.
+El valor x de **CoordSize** se agrega al valor x de **CoordOrigin** para determinar el intervalo de los valores horizontales. Por ejemplo, si el valor x de **CoordOrigin** es -100 y el valor x de **CoordSize** es 200, las unidades horizontales oscilarán entre -100 y +100. Si el valor x de **CoordOrigin** es 100 y el valor x de **CoordSize** es 200, las unidades horizontales oscilarán entre 100 y 300, todo dentro del cuadro de límite. Lo mismo se aplica a los valores y.
 
 Tenga en cuenta que este atributo es un vector y que las unidades son el mismo tipo de unidad que [CoordSize](msdn-online-vml-coordsize-attribute.md) .
 
-En scripting, dado que se trata de un vector 2D, puede tener acceso a los valores x e y por separado, y también puede determinar el tipo de unidades que se espera.
+En el scripting, dado que se trata de un vector 2D, puede acceder a los valores x e y por separado, y también puede determinar el tipo de unidades esperadas.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-El centro del cuadro de límite será el origen (0,0) de la ruta de acceso de la forma. Dado que **CoordOrigin** es "-500-500" y **CoordSize** es "1000 1000", las unidades horizontales y verticales oscilarán entre-500 y + 500. La esquina izquierda y superior de la ruta de acceso estará en el centro del cuadro de límite definido por los puntos izquierdo y superior, tal como se define en el **estilo**.
+El centro del cuadro de límite será el origen (0,0) de la ruta de acceso de la forma. Dado que **CoordOrigin** es "-500 -500" y **CoordSize** es "1000 1000", las unidades horizontal y vertical oscilarán entre -500 y +500. La esquina izquierda y superior de la ruta de acceso estarán en el centro del cuadro de límite definido por los puntos izquierdo y superior, tal como se define en **Estilo**.
 
 
 ```HTML
@@ -64,8 +64,8 @@ El centro del cuadro de límite será el origen (0,0) de la ruta de acceso de la
 
 
 
-[Ejemplo del atributo CoordOrigin](/previous-versions/bb229664(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo CoordOrigin](/previous-versions/bb229664(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

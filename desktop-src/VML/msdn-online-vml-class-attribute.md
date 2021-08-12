@@ -4,21 +4,21 @@ description: Atributo de clase VML
 ms.assetid: 4030b8b7-fcc9-4153-8004-81935a347a09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94bdc723ba9be335afc43023ab89b88834c55474
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 87ada95b56430dacd09801a9aaa200c92abab064bbbb5732b369372de63c34de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602192"
 ---
 # <a name="vml-class-attribute"></a>Atributo de clase VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Hace referencia a una definición de un estilo CSS. Lectura/escritura **Cadena**.
 
@@ -28,19 +28,19 @@ Hace referencia a una definición de un estilo CSS. Lectura/escritura **Cadena**
 
 **Sintaxis de etiquetas**
 
-<v: *Element* Class = " *expresión* " >
+<v: *element* class=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . className = "*expresión*"
+*element* .classname="*expression*"
 
-*expresión* = de *elemento*. ClassName
+*expresión* = *element*.classname
 
 **Comentarios:**
 
-El atributo **Class** es similar al atributo de **clase** HTML estándar que se usa con hojas de estilos CSS.
+El **atributo de** clase es similar al atributo de clase HTML estándar que se usa con hojas de estilos CSS. 
 
-Tenga en cuenta que **className** se usa en lugar de la **clase** para el scripting. Tenga en cuenta también que para el scripting, **className** solo se puede leer; Si se cambia el valor de **className** , no se cambiará la representación de la forma.
+Tenga en cuenta **que classname** se usa en lugar de **la clase para** el scripting. Tenga en cuenta también que para el scripting, **el nombre de** clase solo se puede leer; Cambiar el valor de **classname** no cambiará la representación de la forma.
 
 *Atributo estándar de VML*
 
@@ -50,7 +50,7 @@ Tenga en cuenta que **className** se usa en lugar de la **clase** para el script
 
 **Ejemplo**
 
-Una clase para el **ancho** se crea con el estilo
+Se crea una **clase para width** con el estilo
 
 
 ```HTML
@@ -59,7 +59,7 @@ Una clase para el **ancho** se crea con el estilo
 
 
 
-A continuación, se hace referencia al ancho incluyendo el estilo. Tenga en cuenta que el ancho andheight no está definido en el atributo de **estilo** , pero lo definirá el estilo.
+A continuación, se hace referencia al ancho incluyendo el estilo . Tenga en cuenta que el ancho y la vista no están definidos en el atributo **de** estilo, pero se definirán mediante el estilo.
 
 
 ```HTML
@@ -73,8 +73,8 @@ A continuación, se hace referencia al ancho incluyendo el estilo. Tenga en cuen
 
 
 
-Tenga en cuenta que la **clase** solo se aplica a los atributos de tipo CSS.
+Tenga en **cuenta que La** clase solo se aplica a los atributos de tipo CSS.
 
- 
+ 
 
- 
+ 

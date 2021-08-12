@@ -1,16 +1,16 @@
 ---
-title: Propiedad HotKeyFocusReleaseLeft de IMsRdpClientAdvancedSettings6
-description: Especifica el código de tecla virtual que se va a agregar a Ctrl + Alt para determinar el reemplazo de la tecla de cambio de teclas para Ctrl + Alt + flecha izquierda.
+title: IMsRdpClientAdvancedSettings6 HotKeyFocusReleaseLeft, propiedad
+description: Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de teclas de acceso rápido para Ctrl+Alt+Flecha izquierda.
 ms.assetid: 9F2942BD-9F5C-4E02-A330-42C30C6C8F87
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad HotKeyFocusReleaseLeft
-- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad HotKeyFocusReleaseLeft
-- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad HotKeyFocusReleaseLeft
-- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad HotKeyFocusReleaseLeft
+- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto
+- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyFocusReleaseLeft
+- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyFocusReleaseLeft
+- Propiedad HotKeyFocusReleaseLeft Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyFocusReleaseLeft
 topic_type:
 - apiref
 api_name:
@@ -29,16 +29,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27e0e6d4e334edeffbf0ef025e59454e0f26c34c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c2a5df8cd9c85ecccaf2de32a0e82ac604429f7b9f1e4801e3bfb025de8116d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607910"
 ---
-# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseleft-property"></a>IMsRdpClientAdvancedSettings6:: HotKeyFocusReleaseLeft (propiedad)
+# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseleft-property"></a>IMsRdpClientAdvancedSettings6::HotKeyFocusReleaseLeft, propiedad
 
-Especifica el código de tecla virtual que se va a agregar a Ctrl + Alt para determinar el reemplazo de la tecla de cambio de teclas para Ctrl + Alt + flecha izquierda.
+Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de teclas de acceso rápido para Ctrl+Alt+Flecha izquierda.
 
 Esta propiedad es de lectura y escritura.
 
@@ -59,11 +59,11 @@ HRESULT get_HotKeyFocusReleaseLeft(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo código de tecla virtual.
+Nuevo código de clave virtual.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad solo es compatible con clientes Conexión a Escritorio remoto 6,1 y 7,0.
+Esta propiedad solo es compatible con Conexión a Escritorio remoto 6.1 y 7.0.
 
 ## <a name="requirements"></a>Requisitos
 

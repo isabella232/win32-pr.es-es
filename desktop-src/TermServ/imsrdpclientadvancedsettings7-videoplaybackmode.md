@@ -1,14 +1,14 @@
 ---
-title: Propiedad VideoPlaybackMode de IMsRdpClientAdvancedSettings7
+title: Propiedad IMsRdpClientAdvancedSettings7 VideoPlaybackMode
 description: Especifica o recupera un valor que indica el modo de reproducción de vídeo.
 ms.assetid: 83f0baa3-3ac2-47ee-b106-5beaf60d73d2
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad VideoPlaybackMode
-- Propiedad VideoPlaybackMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad VideoPlaybackMode
-- Propiedad VideoPlaybackMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad VideoPlaybackMode
+- Propiedad VideoPlaybackMode Servicios de Escritorio remoto
+- Propiedad VideoPlaybackMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad VideoPlaybackMode
+- Propiedad VideoPlaybackMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad VideoPlaybackMode
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f864224f402814ada268b9b7cbc85ec115a1fa2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 353cf72822ac91686cb5a08edf5ca6a5e25b24ff8e544ff79bdd8a2085f761fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607822"
 ---
-# <a name="imsrdpclientadvancedsettings7videoplaybackmode-property"></a>IMsRdpClientAdvancedSettings7:: VideoPlaybackMode (propiedad)
+# <a name="imsrdpclientadvancedsettings7videoplaybackmode-property"></a>Propiedad IMsRdpClientAdvancedSettings7::VideoPlaybackMode
 
 Especifica o recupera un valor que indica el modo de reproducción de vídeo.
 
@@ -63,14 +63,14 @@ Los valores posibles son:
 1
 </dt> <dd>
 
-El modo de reproducción de vídeo predeterminado. Cuando el modo de reproducción de vídeo se establece en este valor, la redirección de vídeo se controla mediante la propiedad [**AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md) . Cuando la propiedad **AudioRedirectionMode** se establece en el **modo de audio \_ \_ Redirect**, el vídeo se descodifica y se representa en el cliente.
+Modo de reproducción de vídeo predeterminado. Cuando el modo de reproducción de vídeo se establece en este valor, la redirección de vídeo se controla mediante la [**propiedad AudioRedirectionMode.**](imsrdpclientsecuredsettings-autoredirectionmode.md) Cuando la **propiedad AudioRedirectionMode** se establece en **AUDIO MODE \_ \_ REDIRECT**, el vídeo se descodifica y se representa en el cliente.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-La redirección de reproducción de vídeo está deshabilitada, incluso cuando [**AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md) está establecido en **\_ \_ redirigir el modo de audio**. En este modo, el vídeo se descodifica y se representa en el servidor host de sesión de escritorio remoto.
+El redireccionamiento de reproducción de vídeo está deshabilitado, incluso [**cuando AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md) está establecido en **MODO AUDIO \_ \_ REDIRECT**. En este modo, el vídeo se descodifica y se representa en el servidor host de sesión de Escritorio remoto.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ La redirección de reproducción de vídeo está deshabilitada, incluso cuando [
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                                |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |

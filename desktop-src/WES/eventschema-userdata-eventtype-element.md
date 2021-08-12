@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c9f7e5a2babe42073d4f27cfaae1d2e28dedfe35
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1042e5665bbedc4670d3615846c991bb9d6c944fca3fe90e223e4c7b6fb19420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588163"
 ---
 # <a name="userdata-eventtype-element"></a>Elemento UserData (EventType)
 
@@ -30,7 +30,7 @@ Contiene los datos del evento.
  />
 ```
 
-El elemento **UserData** se define mediante el tipo complejo de [**EventType**](eventschema-eventtype-complextype.md) .
+El **elemento UserData** se define mediante el [**tipo complejo EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El elemento **UserData** se define mediante el tipo complejo de [**EventType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

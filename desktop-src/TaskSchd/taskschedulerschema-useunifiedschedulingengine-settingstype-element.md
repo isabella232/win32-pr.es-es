@@ -3,7 +3,7 @@ title: Elemento UseUnifiedSchedulingEngine (settingsType)
 description: Especifica que se usará el motor de programación unificado para ejecutar esta tarea.
 ms.assetid: 93436f14-1caf-4ec8-bf74-a198b7dcb27c
 keywords:
-- Programador de tareas del elemento UseUnifiedSchedulingEngine
+- UseUnifiedSchedulingEngine, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a00798a46df3dfbb351dd8705b264192c38daff6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faf27ea132fb47e35cd248e183fbec0584cb5d44414d6cacda6baac0d595c32d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610458"
 ---
 # <a name="useunifiedschedulingengine-settingstype-element"></a>Elemento UseUnifiedSchedulingEngine (settingsType)
 
@@ -32,7 +32,7 @@ Especifica que se usará el motor de programación unificado para ejecutar esta 
  />
 ```
 
-El elemento **UseUnifiedSchedulingEngine** se define mediante el tipo complejo de [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+El **elemento UseUnifiedSchedulingEngine** se define mediante el [**tipo complejo settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,19 +40,19 @@ El elemento **UseUnifiedSchedulingEngine** se define mediante el tipo complejo d
 
 | Elemento                                                           | Derivado de                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para realizar la tarea.<br/> |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas usa para realizar la tarea.<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La configuración predeterminada de este elemento es false.
+El valor predeterminado de este elemento es False.
 
-En el desarrollo de C++, se tiene acceso a esta información a través de la propiedad [**ITaskSettings2:: UseUnifiedSchedulingEngine**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_useunifiedschedulingengine) .
+Para el desarrollo de C++, se tiene acceso a esta información a través de la propiedad [**ITaskSettings2::UseUnifiedSchedulingEngine.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_useunifiedschedulingengine)
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un elemento de configuración que especifica que se usará el motor de programación unificado para ejecutar esta tarea.
+El siguiente XML define un elemento de configuración que especifica que se usará el motor de programación unificado para ejecutar esta tarea.
 
 
 ```XML
@@ -70,8 +70,8 @@ En el código XML siguiente se define un elemento de configuración que especifi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ En el código XML siguiente se define un elemento de configuración que especifi
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

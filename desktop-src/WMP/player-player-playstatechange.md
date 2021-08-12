@@ -1,11 +1,11 @@
 ---
-title: Evento Player. PlayStateChange
-description: El evento PlayStateChange se produce cuando hay un cambio en la propiedad playState.
+title: Evento Player.PlayStateChange
+description: El evento PlayStateChange tiene lugar cuando se produce un cambio en la propiedad playState.
 ms.assetid: d4c4b114-04b6-4079-b6a2-52b336fc6dc1
 keywords:
-- Media Player PlayStateChange de eventos de Windows
-- Evento PlayStateChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento PlayStateChange
+- Evento PlayStateChange Reproductor de Windows Media
+- Evento PlayStateChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media , evento PlayStateChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e621d8698a5379b0d39a55db141fc0012f6ef969
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3995f7373984ae9e3b0e24f9f41390154326cfd87bd8589970dc76520c6efd93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572531"
 ---
-# <a name="playerplaystatechange-event"></a>Evento Player. PlayStateChange
+# <a name="playerplaystatechange-event"></a>Evento Player.PlayStateChange
 
-El evento **PlayStateChange** se produce cuando hay un cambio en la propiedad **playState** .
+El **evento PlayStateChange** tiene lugar cuando se produce un cambio en la **propiedad playState.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Player.PlayStateChange(
 *NewState* 
 </dt> <dd>
 
-Número (**Long**) que especifica el nuevo **playState**. Consulte [playState](player-playstate.md) para obtener una tabla de valores posibles.
+Number (**long**) que especifica el nuevo **elemento playState.** Consulte [playState para](player-playstate.md) obtener una tabla de valores posibles.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ Número (**Long**) que especifica el nuevo **playState**. Consulte [playState](p
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
-No se garantiza que los Estados Media Player de Windows se produzcan en un orden determinado. Además, no todos los Estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de los Estados.
+Reproductor de Windows Media no se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un controlador de eventos para el *reproductor*. evento **playStateChange** . Un elemento de texto HTML, denominado "mi texto", muestra el nuevo estado de reproducción. El objeto Player se creó con ID = "Player".
+En el ejemplo siguiente se muestra un controlador de eventos para el *reproductor* de . **evento playStateChange.** Un elemento de texto HTML, denominado "myText", muestra el nuevo estado de reproducción. El objeto player se creó con id. = "Player".
 
 
 ```JScript
@@ -95,21 +95,21 @@ switch (NewState){
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. playState**](player-playstate.md)
+[**Player.playState**](player-playstate.md)
 </dt> </dl>
 
  

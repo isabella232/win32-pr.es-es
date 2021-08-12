@@ -1,9 +1,9 @@
 ---
-title: función glTexCoord4s (GL. h)
-description: Establece las coordenadas de textura actuales. | función glTexCoord4s (GL. h)
+title: Función glTexCoord4s (Gl.h)
+description: Establece las coordenadas de textura actuales. | Función glTexCoord4s (Gl.h)
 ms.assetid: 948c63f5-a94d-4e55-9aa4-a320452fc29f
 keywords:
-- glTexCoord4s (función) OpenGL
+- Función GlTexCoord4s OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a164b091c62b31523baa5be96d1578e1cbfa80
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a6e3ff71a0dcd48e22a1adee364343fcd7db5c80320a11bac3cf63402722110f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118613764"
 ---
-# <a name="gltexcoord4s-function"></a>glTexCoord4s función)
+# <a name="gltexcoord4s-function"></a>Función glTexCoord4s
 
 Establece las coordenadas de textura actuales.
 
@@ -46,25 +46,25 @@ void WINAPI glTexCoord4s(
 *s* 
 </dt> <dd>
 
-Coordenada de textura s.
+Coordenada de textura de la .
 
 </dd> <dt>
 
 *t* 
 </dt> <dd>
 
-Coordenada de textura de t.
+Coordenada de textura t.
 
 </dd> <dt>
 
 *r* 
 </dt> <dd>
 
-Coordenada de textura de r.
+Coordenada de textura r.
 
 </dd> <dt>
 
-*respuestas* 
+*Q* 
 </dt> <dd>
 
 Coordenada de textura q.
@@ -77,9 +77,9 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-La función [**glTexCoord**](gltexcoord-functions.md) establece las coordenadas de textura actuales que forman parte de los datos asociados a los vértices del polígono. La función **glTexCoord** especifica coordenadas de textura en una, dos, tres o cuatro dimensiones. La función glTexCoord1 establece las coordenadas de textura actuales en (s, 0, 0, 1); una llamada a glTexCoord2 lo establece en (s, t, 0, 1). Del mismo modo, glTexCoord3 especifica las coordenadas de textura como (s, t, r, 1) y glTexCoord4 define los cuatro componentes explícitamente como (s, t, r, q). Puede actualizar las coordenadas de textura actuales en cualquier momento. En concreto, puede llamar a glTexCoord entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md). La siguiente función recupera información relacionada con **glTexCoord**:
+La [**función glTexCoord**](gltexcoord-functions.md) establece las coordenadas de textura actuales que forman parte de los datos asociados a los vértices de polígono. La **función glTexCoord** especifica coordenadas de textura en una, dos, tres o cuatro dimensiones. La función glTexCoord1 establece las coordenadas de textura actuales en (s, 0, 0, 1); Una llamada a glTexCoord2 los establece en (s, t, 0, 1). De forma similar, glTexCoord3 especifica las coordenadas de textura como (s, t, r, 1) y glTexCoord4 define los cuatro componentes explícitamente como (s, t, r, q). Puede actualizar las coordenadas de textura actuales en cualquier momento. En concreto, puede llamar a glTexCoord entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). La función siguiente recupera información relacionada con **glTexCoord**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argumento \_ coordenadas de \_ textura \_ actual de GL
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ TEXTURE \_ COORDS
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ La función [**glTexCoord**](gltexcoord-functions.md) establece las coordenadas 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

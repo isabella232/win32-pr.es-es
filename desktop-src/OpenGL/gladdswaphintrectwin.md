@@ -1,9 +1,9 @@
 ---
-title: función glAddSwapHintRectWIN (GL. h)
-description: La función de devolución de llamada glAddSwapHintRectWIN especifica un conjunto de rectángulos que se van a copiar mediante SwapBuffers.
+title: Función glAddSwapHintRectWIN (Gl.h)
+description: La función de devolución de llamada glAddSwapHintRectWIN especifica un conjunto de rectángulos que swapBuffers va a copiar.
 ms.assetid: f242e755-8e8a-471a-9884-47efa22a3de6
 keywords:
-- glAddSwapHintRectWIN (función) OpenGL
+- Función GlAddSwapHintRectWIN OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae3e10c2f51ff8d7c9763ff1dad7d09d800cd60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75077ac2a93e3e952ae3c3daca3ea847f7b4b0efc340da0e980b1a4bec6efa64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618061"
 ---
-# <a name="gladdswaphintrectwin-function"></a>glAddSwapHintRectWIN función)
+# <a name="gladdswaphintrectwin-function"></a>Función glAddSwapHintRectWIN
 
-La función de devolución de llamada **glAddSwapHintRectWIN** especifica un conjunto de rectángulos que se van a copiar mediante [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers).
+La función de devolución de llamada **glAddSwapHintRectWIN** especifica un conjunto de rectángulos que [**swapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers)va a copiar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ void WINAPI glAddSwapHintRectWIN(
 *x* 
 </dt> <dd>
 
-La coordenada *x*(en coordenadas de la ventana) de la esquina inferior izquierda del rectángulo de la región de sugerencia.
+Coordenada *x*(en coordenadas de ventana) de la esquina inferior izquierda del rectángulo de la región de la sugerencia.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-Coordenada *y*(en coordenadas de la ventana) de la esquina inferior izquierda del rectángulo de la región de sugerencia.
+*Coordenada y*(en coordenadas de ventana) de la esquina inferior izquierda del rectángulo de la región de la sugerencia.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-La función **glAddSwapHintRectWIN** acelera la animación reduciendo la cantidad de repintado entre fotogramas. Con **glAddSwapHintRectWIN**, debe especificar un conjunto de áreas rectangulares que desea copiar al llamar a [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers). Cuando no se especifica ningún rectángulo con **glAddSwapHintRectWIN** antes de llamar a **SwapBuffers**, se intercambia todo el fotogramas. El uso de **glAddSwapHintRectWIN** para copiar solo las partes modificadas del búfer puede aumentar significativamente el rendimiento de **SwapBuffers**, especialmente cuando se implementa **SwapBuffers** en el software.
+La **función glAddSwapHintRectWIN** acelera la animación al reducir la cantidad de volver a dibujar entre fotogramas. Con **glAddSwapHintRectWIN,** se especifica un conjunto de áreas rectangulares que desea copiar al llamar a [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers). Cuando no se especifica ningún rectángulo con **glAddSwapHintRectWIN** antes de llamar a **SwapBuffers,** se intercambia todo el búfer de fotogramas. El uso de **glAddSwapHintRectWIN para** copiar solo partes modificadas del búfer puede aumentar significativamente el rendimiento de **SwapBuffers,** especialmente cuando **SwapBuffers** se implementa en software.
 
-La función **glAddSwapHintRectWIN** agrega un rectángulo a la región de sugerencia. Cuando \_ \_ se establece la marca de copia de intercambio de PFD de la estructura de formato de píxel de [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) , **SwapBuffers** usa esta región para recortar la copia del búfer de reserva en el búfer frontal. No se especifica la \_ \_ copia de intercambio de PFD; está establecida por hardware compatible. La región de sugerencia se borra después de cada llamada a **SwapBuffers**. Con algunas configuraciones de hardware, **SwapBuffers** puede omitir la región de sugerencia e intercambiar todo el búfer. **SwapBuffers** se implementa mediante el sistema, no por la aplicación.
+La **función glAddSwapHintRectWIN** agrega un rectángulo a la región de sugerencia. Cuando se establece la marca PFD SWAP COPY de la estructura de formato de \_ \_ [**píxelES PIXELFORMATDESCRIPTOR,**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) **SwapBuffers** usa esta región para recortar la copia del búfer de reserva en el búfer frontal. No se especifica PFD \_ SWAP \_ COPY; se establece mediante hardware compatible. La región de sugerencia se borra después de cada llamada **a SwapBuffers.** Con algunas configuraciones de hardware, **SwapBuffers** puede omitir la región de sugerencia e intercambiar todo el búfer. **SwapBuffers** lo implementa el sistema, no la aplicación.
 
-OpenGL mantiene una región de sugerencia independiente para cada ventana. Cuando se llama a **glAddSwapHintRectWIN** en todos los contextos de representación asociados a una ventana, los rectángulos de la sugerencia se combinan en una sola región.
+OpenGL mantiene una región de sugerencias independiente para cada ventana. Cuando se llama a **glAddSwapHintRectWIN** en cualquier contexto de representación asociado a una ventana, los rectángulos de sugerencia se combinan en una sola región.
 
-Llame a **glAddSwapHintRectWIN** con un rectángulo delimitador para cada objeto dibujado para un marco y para cada rectángulo desactivado para borrar los objetos de fotogramas anteriores.
+Llame **a glAddSwapHintRectWIN** con un rectángulo delimitador para cada objeto dibujado para un marco y para cada rectángulo borrado para borrar los objetos de marco anteriores.
 
 > [!Note]  
-> La función **glAddSwapHintRectWIN** es una función de extensión que no forma parte de la biblioteca estándar de OpenGL, pero que forma parte de la extensión de sugerencia de intercambio de cont \_ \_ \_ . Para comprobar si la implementación de OpenGL es compatible con **glAddSwapHintRectWIN**, llame a **glGetString**(extensiones de GL \_ ). Si devuelve la \_ sugerencia GL Win \_ swap \_ , se admite **glAddSwapHintRectWIN** . Para obtener la dirección de una función de extensión, llame a **wglGetProcAddress**.
+> La **función glAddSwapHintRectWIN** es una función de extensión que no forma parte de la biblioteca OpenGL estándar, pero forma parte de la extensión de sugerencia de intercambio \_ DE GL \_ \_ WIN. Para comprobar si la implementación de OpenGL admite **glAddSwapHintRectWIN,** llame **a glGetString**(GL \_ EXTENSIONS). Si devuelve la sugerencia de \_ intercambio GL \_ \_ WIN, se admite **glAddSwapHintRectWIN.** Para obtener la dirección de una función de extensión, llame **a wglGetProcAddress**.
 
  
 
@@ -98,7 +98,7 @@ Llame a **glAddSwapHintRectWIN** con un rectángulo delimitador para cada objeto
 |-------------------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                      |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl> |
 
 
 

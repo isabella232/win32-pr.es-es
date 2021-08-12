@@ -1,9 +1,9 @@
 ---
-title: función glArrayElement (GL. h)
-description: La función glArrayElement especifica los elementos de la matriz que se usan para representar un vértice.
+title: Función glArrayElement (Gl.h)
+description: La función glArrayElement especifica los elementos de matriz utilizados para representar un vértice.
 ms.assetid: 2c4d76bb-e4c9-4baa-a190-66298b8a4335
 keywords:
-- glArrayElement (función) OpenGL
+- Función glArrayElement OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a20aff9fcaa5bf922bc9447f7b7022a8cd1a9c2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb6fdf3b90c5145c46730e530f26ba7d4f7f3875e51cc4d510e9763d03e27207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618065"
 ---
-# <a name="glarrayelement-function"></a>glArrayElement función)
+# <a name="glarrayelement-function"></a>Función glArrayElement
 
-La función **glArrayElement** especifica los elementos de la matriz que se usan para representar un vértice.
+La **función glArrayElement** especifica los elementos de matriz utilizados para representar un vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,18 +53,18 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Use la función **glArrayElement** dentro de pares [**glBegin**](glbegin.md) y [**glEnd**](glend.md) para especificar datos de vértices y atributos para los primitivos de punto, línea y polígono. La función **glArrayElement** especifica los datos para un solo vértice con datos de vértice y de atributo ubicados en el *Índice* de las matrices de vértices habilitadas.
+Use la **función glArrayElement dentro** de los pares [**glBegin**](glbegin.md) y [**glEnd**](glend.md) para especificar datos de vértices y atributos para primitivas de punto, línea y polígono. La **función glArrayElement** especifica los datos de un solo vértice mediante los datos de vértice y atributo ubicados en el *índice* de las matrices de vértices habilitadas.
 
-Puede usar **glArrayElement** para construir primitivos mediante la indexación de datos de vértices, en lugar de hacerlo mediante el streaming de matrices de datos en orden de primero a último. Dado que **glArrayElement** especifica solo un solo vértice, puede especificar explícitamente atributos para primitivos individuales. Por ejemplo, puede establecer un solo normal para cada triángulo individual.
+Puede usar **glArrayElement para** construir primitivas mediante la indexación de datos de vértices, en lugar de transmitir por secuencias a través de matrices de datos en orden de primero a último. Dado **que glArrayElement** especifica un solo vértice, puede especificar explícitamente atributos para primitivas individuales. Por ejemplo, puede establecer un único valor normal para cada triángulo individual.
 
-Al incluir llamadas a **glArrayElement** en las listas de visualización, los datos de la matriz necesarios, determinados por los punteros de matriz y los valores de habilitación, también se especifican en la lista de visualización. Los valores de puntero de matriz y habilitar se determinan cuando se crean listas de visualización, no cuando se ejecutan listas de presentación.
+Cuando se incluyen llamadas **a glArrayElement** en listas para mostrar, los datos de matriz necesarios, determinados por los punteros de matriz y los valores de habilitación, también se introducen en la lista de visualización. Los valores de puntero de matriz y habilitación se determinan cuando se crean listas de visualización, no cuando se ejecutan listas de visualización.
 
-Puede leer y almacenar en caché los datos estáticos de la matriz en cualquier momento con **glArrayElement**. Cuando se modifican los elementos de una matriz estática sin especificar la matriz de nuevo, los resultados de las llamadas subsiguientes a **glArrayElement** son indefinidos.
+Puede leer y almacenar en caché datos de matriz estática en cualquier momento **con glArrayElement**. Al modificar los elementos de una matriz estática sin volver a especificar la matriz, los resultados de las llamadas posteriores a **glArrayElement** no están definidos.
 
-Cuando se llama a **glArrayElement** sin llamar primero a **glEnableClientState**( \_ \_ matriz de vértices de GL), no se produce ningún dibujo, pero se modifican los atributos correspondientes a las matrices habilitadas. Aunque no se genera ningún error al especificar una matriz dentro de los pares **glBegin** y **glEnd** , los resultados son indefinidos.
+Cuando se llama **a glArrayElement** sin llamar primero **a glEnableClientState**(GL VERTEX ARRAY), no se produce ningún dibujo, pero se modifican los atributos correspondientes a las \_ \_ matrices habilitadas. Aunque no se genera ningún error al especificar una matriz dentro de los pares **glBegin** y **glEnd,** los resultados no están definidos.
 
 > [!Note]  
-> La función **glArrayElement** solo está disponible en la versión 1,1 o posterior de OpenGL.
+> La **función glArrayElement** solo está disponible en OpenGL versión 1.1 o posterior.
 
  
 
@@ -76,8 +76,8 @@ Cuando se llama a **glArrayElement** sin llamar primero a **glEnableClientState*
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

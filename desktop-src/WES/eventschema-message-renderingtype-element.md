@@ -1,9 +1,9 @@
 ---
-title: Elemento message (RenderingInfoType)
+title: Elemento Message (RenderingInfoType)
 description: Contiene el mensaje de evento que se representa para el evento.
 ms.assetid: 2a29f09f-cd1a-415a-aa52-1c8643a95c25
 keywords:
-- EventLog del elemento de mensaje
+- Elemento de mensaje EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bcd00b14e9a6182b881933952569f40cc8bc4ffe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6b33776a0f1b10c811d84210f66d1f0b30b4c273c0160cbc365440351160f42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588605"
 ---
-# <a name="message-renderinginfotype-element"></a>Elemento message (RenderingInfoType)
+# <a name="message-renderinginfotype-element"></a>Elemento Message (RenderingInfoType)
 
 Contiene el mensaje de evento que se representa para el evento.
 
@@ -30,7 +30,7 @@ Contiene el mensaje de evento que se representa para el evento.
  />
 ```
 
-El tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) define el elemento de **mensaje** .
+El **tipo complejo RenderingInfoType** define el elemento [**Message.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.m
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

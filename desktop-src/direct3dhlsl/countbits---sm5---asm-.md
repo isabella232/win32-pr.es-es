@@ -1,23 +1,23 @@
 ---
-title: countbits ((SM5-ASM)
+title: countbits (sm5 - asm)
 description: Cuenta el número de bits establecidos en un número.
 ms.assetid: ED75487F-46FF-45F5-BEAA-7A32BEFB0571
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55d46fe9c750790d65630a743dd9ddc347fea50e
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b13be61d470f5a8504c893f85bea4b7f500591d35118aec2bf6576b897a4b5d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103904288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118286957"
 ---
-# <a name="countbits-sm5---asm"></a>countbits ((SM5-ASM)
+# <a name="countbits-sm5---asm"></a>countbits (sm5 - asm)
 
 Cuenta el número de bits establecidos en un número.
 
 
 
-| countbits (DEST \[ . Mask \] , src0 \[ . swizzle\] |
+| countbits dest \[ .mask \] , src0 \[ .swzzle\] |
 |-------------------------------------------|
 
 
@@ -28,14 +28,14 @@ Cuenta el número de bits establecidos en un número.
 
 | Elemento                                                            | Descripción                                   |
 |-----------------------------------------------------------------|-----------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección de los resultados.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el número de bits 32 de entrada.<br/>    |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección de los resultados.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El número de entrada de 32 bits.<br/>    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta instrucción se puede usar para calcular el porcentaje de cobertura de entrada del sombreador.
 
@@ -43,7 +43,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -51,20 +51,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
-| Modelo de sombreador                                              | Compatible |
+| Modelo de sombreador                                              | Compatible. |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -74,7 +74,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  
