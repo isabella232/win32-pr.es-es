@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDbTimeCorruptedException'
-title: Constructor de EsentDbTimeCorruptedException
+description: 'Más información sobre: Constructor EsentDbTimeCorruptedException'
+title: Constructor EsentDbTimeCorruptedException
 TOCTitle: 'EsentDbTimeCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDbTimeCorruptedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdbtimecorruptedexception.esentdbtimecorruptedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2904beca8bf9eddb4a9ee4fa170d786a03e51afb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4d63b3ea38410b2d57341e27bacd0a10352c1d1c7e0a17b9240d94976da779c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118271129"
 ---
-# <a name="esentdbtimecorruptedexception-constructor"></a>Constructor de EsentDbTimeCorruptedException
+# <a name="esentdbtimecorruptedexception-constructor"></a>Constructor EsentDbTimeCorruptedException
 
 Inicializa una nueva instancia de la clase EsentDbTimeCorruptedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDbTimeCorruptedException()
 
 [Miembros de EsentDbTimeCorruptedException](./esentdbtimecorruptedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

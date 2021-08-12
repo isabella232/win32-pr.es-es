@@ -1,27 +1,27 @@
 ---
-description: Los registros pueden tener atributos específicos de la aplicación que son una secuencia de pares nombre-valor que se representan como una cadena XML en el miembro pszAttributes de la estructura del registro del mismo nivel \_ .
+description: Los registros pueden tener atributos específicos de la aplicación que son una secuencia de pares de nombre o valor representados como una cadena XML en el miembro pszAttributes de la estructura PEER \_ RECORD.
 ms.assetid: 2991af9b-da32-4915-b4d6-575e3faac04e
 title: Esquema de atributo de registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eefa8c4c8b00b09e9c8cb988088af645e9f9c967
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3597369d7214b51b94a74b777315bb2ce2beb280232be5fb29571376ad3fc93e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612316"
 ---
 # <a name="record-attribute-schema"></a>Esquema de atributo de registro
 
-Los registros pueden tener atributos específicos de la aplicación que son una secuencia de pares nombre-valor que se representan como una cadena XML en el miembro **pszAttributes** de la estructura del [**\_ registro del mismo nivel**](/windows/desktop/api/P2P/ns-p2p-peer_record) . Los atributos se usan para filtrar una búsqueda de registros iniciada por llamadas a [**PeerGroupSearchRecords**](/windows/desktop/api/P2P/nf-p2p-peergroupsearchrecords), que toma un filtro de búsqueda XML especificado en el [formato de consulta de búsqueda de registros](record-search-query-format.md) como parámetro.
+Los registros pueden tener atributos específicos de la aplicación que son una secuencia de pares de nombre o valor representados como una cadena XML en el **miembro pszAttributes** de la [**estructura PEER \_ RECORD.**](/windows/desktop/api/P2P/ns-p2p-peer_record) Los atributos se usan para filtrar una búsqueda de registros iniciada por llamadas a [**PeerGroupSearchRecords**](/windows/desktop/api/P2P/nf-p2p-peergroupsearchrecords), que toma un filtro de búsqueda XML especificado en [Formato](record-search-query-format.md) de consulta de búsqueda de registros como parámetro.
 
 Un atributo de registro puede ser uno de los tres tipos siguientes:
 
 -   **int** es un valor entero.
--   **Date** es un valor de fecha y hora que se representa como uno de los formatos estándar descritos en [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime) .
--   **String** es un valor de cadena Unicode.
+-   **date** es un valor datetime representado como uno de los formatos estándar descritos en [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime) .
+-   **string** es un valor de cadena Unicode.
 
-La lista siguiente identifica los nombres de atributo específicos que están reservados por la infraestructura del mismo nivel:
+En la lista siguiente se identifican los nombres de atributo específicos reservados por la infraestructura del mismo nivel:
 
 -   **peerlastmodifiedby**
 -   **peercreatorid**
@@ -33,7 +33,7 @@ La lista siguiente identifica los nombres de atributo específicos que están re
 
 ## <a name="example-of-defining-record-attributes"></a>Ejemplo de definición de atributos de registro
 
-En el siguiente ejemplo de esquema se muestra cómo definir atributos de registro:
+En el ejemplo de esquema siguiente se muestra cómo definir atributos de registro:
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -74,7 +74,7 @@ En el siguiente ejemplo de esquema se muestra cómo definir atributos de registr
 
  
 
-El siguiente ejemplo de una secuencia de atributo XML contiene los atributos de **AuthenticationType** y **AuthExpires** personalizados que aparecen en el miembro **PszAttributes** del [**\_ registro del mismo nivel**](/windows/desktop/api/P2P/ns-p2p-peer_record).
+El ejemplo siguiente de una secuencia de atributos XML contiene los atributos **authenticationType** y **AuthExpires personalizados** que aparecen en el miembro **pszAttributes** de [**PEER \_ RECORD**](/windows/desktop/api/P2P/ns-p2p-peer_record).
 
 ``` syntax
 <attributes>

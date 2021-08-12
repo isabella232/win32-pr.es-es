@@ -1,55 +1,55 @@
 ---
-title: Incrustar el control Player en una página web que se muestra en Firefox
-description: Incrustar el control Player en una página web que se muestra en Firefox
+title: Inserción del control Player en una página web mostrada por Firefox
+description: Inserción del control Player en una página web mostrada por Firefox
 ms.assetid: 57e725dc-6430-43ec-a39c-c17854a7d8db
 keywords:
-- Windows Media Player, incrustar el control ActiveX
-- Modelo de objetos de Windows Media Player, incrustar el control ActiveX
-- modelo de objetos, incrustar el control ActiveX
-- Windows Media Player Mobile, incrustar el control ActiveX
-- Control ActiveX de Windows Media Player, incrustación
-- Control ActiveX móvil de Windows Media Player, incrustación
-- Control ActiveX, incrustación
-- Control ActiveX de Windows Media Player, páginas web
-- Control ActiveX móvil de Windows Media Player, páginas web
-- Control ActiveX, páginas web
-- Windows Media Player, Firefox
-- Modelo de objetos de Windows Media Player, Firefox
-- modelo de objetos, Firefox
-- Windows Media Player Mobile, Firefox
-- Control ActiveX de Windows Media Player, Firefox
-- Control ActiveX móvil de Windows Media Player, Firefox
-- Control ActiveX, Firefox
+- Reproductor de Windows Media, insertar ActiveX control
+- Reproductor de Windows Media de objetos, insertar ActiveX control
+- object model,embedding ActiveX control
+- Reproductor de Windows Media Mobile,embedding ActiveX control
+- Reproductor de Windows Media ActiveX control, inserción
+- Reproductor de Windows Media Control de ActiveX móvil, inserción
+- ActiveX control, inserción
+- control Reproductor de Windows Media ActiveX, páginas web
+- Reproductor de Windows Media Control de ActiveX móviles,páginas web
+- ActiveX control, páginas web
+- Reproductor de Windows Media,Firefox
+- Reproductor de Windows Media modelo de objetos,Firefox
+- object model,Firefox
+- Reproductor de Windows Media Mobile,Firefox
+- Reproductor de Windows Media ActiveX control,Firefox
+- Reproductor de Windows Media Control de ActiveX móvil,Firefox
+- ActiveX control, Firefox
 - Firefox, acerca de la inserción de páginas web
-- incrustación, páginas web
-- Incrustación de páginas web, Firefox
+- embedding,Web pages
+- Inserción de páginas web,Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16063ea07a0262ab798e58ed02e4d5a5b6b5d65
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: e0c1db799df78cb6c62516798f4bbd196c093f02225386f0c1009bfa11d9a668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "105695491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578592"
 ---
-# <a name="embedding-the-player-control-in-a-web-page-displayed-by-firefox"></a>Incrustar el control Player en una página web que se muestra en Firefox
+# <a name="embedding-the-player-control-in-a-web-page-displayed-by-firefox"></a>Inserción del control Player en una página web mostrada por Firefox
 
-Para insertar el control de Media Player de Windows en una página web que se puede mostrar en un explorador Firefox, cree un elemento de objeto o un elemento EMBED que tenga uno de los siguientes tipos MIME como su atributo de **tipo** :
+Para insertar el control Reproductor de Windows Media en una página web que puede mostrar un explorador Firefox, cree un elemento OBJECT o un elemento EMBED que tenga uno de los siguientes tipos mime como atributo **de** tipo:
 
--   application/x-MS-WMP
--   aplicación/ASX
--   vídeo/x-MS-ASF-complemento
--   application/x-Mplayer2
--   vídeo/x-MS-ASF
--   vídeo/x-MS-WM
--   audio/x-MS-WMA
--   audio/x-MS-Wax
--   vídeo/x-MS-WMV
--   vídeo/x-MS-wvx
+-   application/x-ms-wmp
+-   application/asx
+-   video/x-ms-asf-plugin
+-   application/x-mplayer2
+-   video/x-ms-asf
+-   video/x-ms-wm
+-   audio/x-ms-wma
+-   audio/x-ms-suba
+-   video/x-ms-wmv
+-   video/x-ms-wvx
 
-El tipo MIME preferido es application/x-MS-wmp.
+El tipo mime preferido es application/x-ms-wmp.
 
-En los siguientes ejemplos se muestra cómo incrustar el control Player mediante un elemento OBJECT o un elemento EMBED.
+En los ejemplos siguientes se muestra cómo insertar el control Player mediante un elemento OBJECT o un elemento EMBED.
 
 
 ```HTML
@@ -68,9 +68,9 @@ En los siguientes ejemplos se muestra cómo incrustar el control Player mediante
 
 
 
-Los ejemplos anteriores funcionan en Firefox pero no en Internet Explorer. Para insertar el control Player en una página web que puede mostrarse en Internet Explorer, debe crear un elemento de objeto que tenga un atributo **ClassID** establecido en el identificador de clase del control Media Player de Windows.
+Los ejemplos anteriores funcionan en Firefox, pero no en Internet Explorer. Para insertar el control Player en una página web que puede mostrar Internet Explorer, debe crear un elemento OBJECT que tenga un atributo **classid** establecido en el identificador de clase del control Reproductor de Windows Media.
 
-En el ejemplo siguiente se muestra cómo insertar el control Media Player de Windows en una página web que se puede mostrar correctamente en Internet Explorer y Firefox. El script de la página detecta el tipo de explorador y genera la etiqueta de objeto adecuada.
+En el ejemplo siguiente se muestra cómo insertar el control Reproductor de Windows Media en una página web que se puede mostrar correctamente tanto en Internet Explorer como en Firefox. El script de la página detecta el tipo de explorador y genera la etiqueta OBJECT adecuada.
 
 
 ```HTML
@@ -101,12 +101,12 @@ En el ejemplo siguiente se muestra cómo insertar el control Media Player de Win
 
 <dl> <dt>
 
-[**Uso del control de Media Player de Windows con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso de Reproductor de Windows Media Control con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

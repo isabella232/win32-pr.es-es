@@ -1,15 +1,15 @@
 ---
-description: La propiedad VolumesAvailable recupera el número de volúmenes de un conjunto de varios volúmenes.
+description: La propiedad VolumesAvailable recupera el número de volúmenes de un conjunto multivolume.
 ms.assetid: d056b6d5-f4a4-480b-96a5-8e95dce23dfb
 title: Propiedad VolumesAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccdcf32ba8b7bea3958ef469bc0f90f9d41ecc14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb0ab5b07f30e49f1bbe7655a2d66d9aaa683099df64cadf94b5dfffdd3b3af0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118650942"
 ---
 # <a name="volumesavailable-property"></a>Propiedad VolumesAvailable
 
@@ -18,7 +18,7 @@ ms.locfileid: "105687860"
 
  
 
-La `VolumesAvailable` propiedad recupera el número de volúmenes de un conjunto de varios volúmenes.
+La `VolumesAvailable` propiedad recupera el número de volúmenes de un conjunto multivolume.
 
 ``` syntax
 [ iVolumes = ] MSWebDVD.VolumesAvailable
@@ -26,11 +26,11 @@ La `VolumesAvailable` propiedad recupera el número de volúmenes de un conjunto
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de volúmenes del conjunto como un entero.
+Devuelve el número de volúmenes del conjunto como entero.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado. Algunos títulos de DVD se pueden publicar como una serie o conjunto de varios discos. Utilice este método para determinar el número de volumen del disco actual.
+Esta propiedad es de solo lectura sin ningún valor predeterminado. Algunos títulos de DVD se pueden publicar como un conjunto o serie multidiscos. Use este método para determinar el número de volumen del disco actual.
 
  
 

@@ -1,42 +1,42 @@
 ---
-title: Introducción con el Asistente para complementos
-description: Introducción con el Asistente para complementos
+title: Tareas iniciales con el Asistente para complementos
+description: Tareas iniciales con el Asistente para complementos
 ms.assetid: 77fc1b0c-20f5-434d-9142-f112489a7f08
 keywords:
-- Complementos de Windows Media Player, instalación del Asistente para complementos
-- complementos, Asistente para instalar complementos
-- crear complementos, Asistente para instalar complementos
-- Asistente para complementos de Windows Media Player, instalar
-- instalación del Asistente para complementos
+- Reproductor de Windows Media complementos, asistente para instalar complementos
+- complementos, asistente para instalar complementos
+- compilar complementos, instalar el asistente para complementos
+- Reproductor de Windows Media Asistente para complementos, instalar
+- Asistente para instalar complementos
 - Asistente para complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a4feb9cfa60c120bfc5bb675ea8a8078b95ad14
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2d2699d0316be93f6387bdc64c6671df868eaa70fb24a4ad3619026524106432
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576584"
 ---
-# <a name="getting-started-with-the-plug-in-wizard"></a>Introducción con el Asistente para complementos
+# <a name="getting-started-with-the-plug-in-wizard"></a>Tareas iniciales con el Asistente para complementos
 
-Para configurar el entorno de desarrollo para crear complementos de Media Player de Windows, debe instalar los siguientes elementos:
+Para configurar el entorno de desarrollo para crear Reproductor de Windows Media complementos, debe instalar los siguientes elementos:
 
 -   Microsoft Visual Studio .NET 2003 o posterior
--   Windows Media Player 9 series o posterior
--   Windows SDK, que incluye el SDK de Windows Media Player
--   Asistente para complementos de Media Player de Windows
+-   Reproductor de Windows Media serie 9 o posterior
+-   Windows SDK, que incluye el SDK Reproductor de Windows Media
+-   Reproductor de Windows Media Asistente para complementos
 
 ## <a name="installing-the-wizard"></a>Instalación del asistente
 
-Realice los pasos siguientes para instalar el Asistente para complementos de Windows Media Player.
+Realice los pasos siguientes para instalar el Asistente para Reproductor de Windows Media complemento.
 
-1.  Busque la carpeta en la que instaló el Windows SDK. Expanda la carpeta para ver sus subcarpetas y vaya a ejemplos \\ multimedia \\ WMP \\ asistentes \\ wmpwiz.
+1.  Busque la carpeta donde instaló el SDK Windows. Expanda la carpeta para ver sus subcarpetas y vaya a Ejemplos \\ \\ asistentes de WMP multimedia \\ \\ wmpwiz.
 2.  Busque los tres archivos siguientes:
-    -   wmpwiz. vsz
-    -   wmpwiz. vsdir
-    -   wmpwiz. ico
-3.  Con un editor de texto, como el Bloc de notas, edite el archivo wmpwiz. vsz.
+    -   wmpwiz.vsz
+    -   wmpwiz.vsdir
+    -   wmpwiz.ico
+3.  Con un editor de texto, como Bloc de notas, edite el archivo wmpwiz.vsz.
 
     Busque la línea siguiente:
 
@@ -46,19 +46,19 @@ Realice los pasos siguientes para instalar el Asistente para complementos de Win
 
     
 
-    Cambie `<VsWizardEngine version goes here>` a uno de los valores siguientes, en función de la versión de Visual Studio que tenga instalada.
+    Cambie `<VsWizardEngine version goes here>` a uno de los siguientes valores, en función de la versión de Visual Studio que haya instalado.
 
     
 
-    | Value              | Versión de Visual Studio   |
+    | Valor              | Versión de Visual Studio   |
     |--------------------|-------------------------|
-    | VsWizardEngine. 7.1 | Visual Studio .NET 2003 |
-    | VsWizardEngine. 8.0 | Visual Studio 2005      |
-    | VsWizardEngine. 9.0 | Visual Studio 2008      |
+    | VsWizardEngine.7.1 | Visual Studio .NET 2003 |
+    | VsWizardEngine.8.0 | Visual Studio 2005      |
+    | VsWizardEngine.9.0 | Visual Studio 2008      |
 
     
 
-     
+     
 
     Busque la línea siguiente:
 
@@ -70,7 +70,7 @@ Realice los pasos siguientes para instalar el Asistente para complementos de Win
 
     Cambie `<path to wmpwiz directory goes here>` a la ruta de acceso donde se encuentran los archivos del asistente.
 
-    Por ejemplo, supongamos que tiene Visual Studio 2008 y que los archivos del asistente están aquí: C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples multimedia de los \\ asistentes de \\ \\ \\ wmpwiz. El archivo wmpwiz. vsz tendrá el siguiente aspecto:
+    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos de \\ \\ \\ \\ v7.0 \\ \\ \\ \\ \\ wmpwiz. A continuación, el archivo wmpwiz.vsz tendría el siguiente aspecto:
 
     ```
     VSWIZARD 7.0
@@ -83,22 +83,22 @@ Realice los pasos siguientes para instalar el Asistente para complementos de Win
 
     
 
-4.  Busque la carpeta en la que instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada VCProjects.
-5.  Copie los tres archivos enumerados en el paso 2 en la carpeta VCProjects. El asistente ya está instalado.
+4.  Busque la carpeta donde instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada vcprojects.
+5.  Copie los tres archivos enumerados en el paso 2 en la carpeta vcprojects. El asistente ya está instalado.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Compilar un complemento](building-a-plug-in.md)
+[Creación de un complemento](building-a-plug-in.md)
 </dt> <dt>
 
-[Usar el Asistente para complementos con Visual Studio](using-the-plug-in-wizard-with-visual-studio.md)
+[Uso del Asistente para complementos con Visual Studio](using-the-plug-in-wizard-with-visual-studio.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

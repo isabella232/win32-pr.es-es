@@ -1,11 +1,11 @@
 ---
 title: Interfaz IMsTscAdvancedSettings
-description: Incluye métodos para recuperar y establecer propiedades que habilitan el almacenamiento en caché de mapas de bits, la compresión y la redirección de la impresora y el portapapeles.
+description: Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y el redireccionamiento de impresoras y portapapeles.
 ms.assetid: 3385e843-be05-4801-8d59-6395d95686b1
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsTscAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsTscAdvancedSettings, descrito
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,28 +16,28 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad4d55df30c940ecc5a5515f13c05a285507499e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f1156f59178275ff9406299fc553afacd3ce99a0488497f836d147ec1d63547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606202"
 ---
 # <a name="imstscadvancedsettings-interface"></a>Interfaz IMsTscAdvancedSettings
 
-Incluye métodos para recuperar y establecer propiedades que habilitan el almacenamiento en caché de mapas de bits, la compresión y la redirección de la impresora y el portapapeles. También puede especificar nombres de archivos dll de cliente de canal virtual.
+Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y el redireccionamiento de impresoras y portapapeles. También puede especificar nombres de archivos DLL de cliente de canal virtual.
 
-Puede obtener una instancia de esta interfaz mediante la propiedad [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) .
+Para obtener una instancia de esta interfaz, use la [**propiedad IMsTscAx::AdvancedSettings.**](imstscax-advancedsettings.md)
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsTscAdvancedSettings** hereda de la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **IMsTscAdvancedSettings** también tiene estos tipos de miembros:
+La **interfaz IMsTscAdvancedSettings** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IMsTscAdvancedSettings** también tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IMsTscAdvancedSettings** tiene estas propiedades.
+La **interfaz IMsTscAdvancedSettings** tiene estas propiedades.
 
 
 
@@ -58,32 +58,32 @@ La interfaz **IMsTscAdvancedSettings** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-allowbackgroundinput.md"><strong>allowBackgroundInput</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitado el modo de entrada en segundo plano.<br/></td>
+<td style="text-align: left;">Especifica si el modo de entrada en segundo plano está habilitado.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-bitmapperistence.md"><strong>BitmapPeristence</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitado el almacenamiento en caché de mapas de bits.<br/>
+<td style="text-align: left;">Especifica si está habilitado el almacenamiento en caché de mapa de bits.<br/>
 <blockquote>
 [!Note]<br />
-El error ortográfico en el nombre de la propiedad se encuentra en la versión de lanzamiento del control.
+El error ortográfico en el nombre de la propiedad está en la versión publicada del control.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-compress.md"><strong>Comprimir</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitada la compresión.<br/></td>
+<td style="text-align: left;">Especifica si la compresión está habilitada.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-containerhandledfullscreen.md"><strong>ContainerHandledFullScreen</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitado el modo de pantalla completa controlado por contenedores.<br/></td>
+<td style="text-align: left;">Especifica si el modo de pantalla completa que controla el contenedor está habilitado.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-disablerdpdr.md"><strong>DisableRdpdr</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitada la redirección de la impresora y del portapapeles.<br/></td>
+<td style="text-align: left;">Especifica si está habilitada la redirección de impresoras y portapapeles.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-iconfile.md"><strong>IconFile</strong></a><br/></td>
@@ -93,17 +93,17 @@ El error ortográfico en el nombre de la propiedad se encuentra en la versión d
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-iconindex.md"><strong>IconIndex</strong></a><br/></td>
 <td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica el índice del icono dentro del archivo de icono actual.<br/></td>
+<td style="text-align: left;">Especifica el índice del icono en el archivo de icono actual.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-keyboardlayoutstr.md"><strong>KeyBoardLayoutStr</strong></a><br/></td>
 <td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica el nombre del identificador de configuración regional de entrada activo (anteriormente denominado distribución del teclado) que se va a usar para la conexión.<br/></td>
+<td style="text-align: left;">Especifica el nombre del identificador de configuración regional de entrada activo (anteriormente denominado diseño de teclado) que se usará para la conexión.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-plugindlls.md"><strong>PluginDlls</strong></a><br/></td>
 <td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica los nombres de los archivos dll de cliente de canal virtual que se van a cargar.<br/></td>
+<td style="text-align: left;">Especifica los nombres de los archivos DLL de cliente de canal virtual que se cargarán.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +114,7 @@ El error ortográfico en el nombre de la propiedad se encuentra en la versión d
 
 ## <a name="remarks"></a>Observaciones
 
-Esta interfaz se ha extendido mediante las siguientes interfaces, con cada nueva interfaz que hereda todos los métodos y propiedades de las interfaces anteriores:
+Esta interfaz se ha ampliado mediante las interfaces siguientes, donde cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 
 -   [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
 -   [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
@@ -124,7 +124,7 @@ Esta interfaz se ha extendido mediante las siguientes interfaces, con cada nueva
 -   [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md)
 -   [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md)
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -147,7 +147,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[Referencia de Conexión web a Escritorio remoto](remote-desktop-web-connection-reference.md)
+[Conexión web a Escritorio remoto referencia](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

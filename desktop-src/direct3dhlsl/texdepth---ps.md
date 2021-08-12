@@ -1,6 +1,6 @@
 ---
-title: texdepth-PS
-description: Calcular los valores de profundidad que se van a usar en la prueba de comparación de búfer de profundidad para este píxel.
+title: texdepth- ps
+description: Calcule los valores de profundidad que se usarán en la prueba de comparación del búfer de profundidad para este píxel.
 ms.assetid: f7128dbb-a5f3-4e95-b53b-7432439ae0c4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,55 +9,55 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3eb5cd337108d08efee465c136adf1afb4921123
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f39135c34c07a9a20f03c9ebc979647733884b37680ef07b9bc666b882052690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103904278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284179"
 ---
-# <a name="texdepth---ps"></a>texdepth-PS
+# <a name="texdepth---ps"></a>texdepth- ps
 
-Calcular los valores de profundidad que se van a usar en la prueba de comparación de búfer de profundidad para este píxel.
+Calcule los valores de profundidad que se usarán en la prueba de comparación del búfer de profundidad para este píxel.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| texdepth DST |
+| texdepth dst |
 |--------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texdepth              |      |      |      | x    |      |      |       |      |       |
 
 
 
- 
+ 
 
-Esta instrucción usa R5. r/R5. g en la prueba de comparación del búfer de profundidad para este píxel. Se omiten los datos de los canales azul y alfa. Si R5. g = 0, el resultado de R5. r/R5. g = 1,0.
+Esta instrucción usa r5.r/r5.g en la prueba de comparación del búfer de profundidad para este píxel. Los datos de los canales azul y alfa se omiten. Si r5.g = 0, el resultado de r5.r /r5.g = 1.0.
 
-El registro temporal R5 es el único registro que puede usar esta instrucción.
+El registro temporal r5 es el único registro que puede usar esta instrucción.
 
-Después de ejecutar esta instrucción, el registro no temporal R5 no está disponible para su uso adicional en el sombreador.
+Después de ejecutar esta instrucción, el registro temporal r5 no está disponible para su uso adicional en el sombreador.
 
-Cuando se usa el muestreo múltiple, el uso de esta instrucción elimina la mayoría de las ventajas del búfer de profundidad de mayor resolución. Dado que el sombreador de píxeles se ejecuta una vez por píxel, se usará la salida de valor de profundidad único de [texm3x2depth-PS](texm3x2depth---ps.md) o texdepth para cada una de las pruebas de comparación de profundidad de subpíxeles.
+Al multimuestreo, el uso de esta instrucción elimina la mayor parte de la ventaja del búfer de profundidad de resolución superior. Dado que el sombreador de píxeles se ejecuta una vez por píxel, la salida de valor de profundidad única de [texm3x2depth - ps](texm3x2depth---ps.md) o texdepth se usará para cada una de las pruebas de comparación de profundidad de subpíxel.
 
 ## <a name="examples"></a>Ejemplos
 
-Este es un ejemplo de uso de texdepth.
+Este es un ejemplo de uso de texasdepth.
 
 
 ```
@@ -81,9 +81,9 @@ texdepth  r5         // Calculate pixel depth as r5.r / r5.g
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

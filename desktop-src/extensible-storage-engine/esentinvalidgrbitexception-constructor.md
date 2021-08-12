@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidGrbitException'
-title: Constructor de EsentInvalidGrbitException
+description: 'Más información sobre: Constructor EsentInvalidGrbitException'
+title: Constructor EsentInvalidGrbitException
 TOCTitle: 'EsentInvalidGrbitException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidGrbitException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidgrbitexception.esentinvalidgrbitexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4470b848688450aab029f48026719c579d034fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a969a1238f1134242dc9675fffbe75b32263a9b5ff69ed694fbcdeb98bc9ee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118266185"
 ---
-# <a name="esentinvalidgrbitexception-constructor"></a>Constructor de EsentInvalidGrbitException
+# <a name="esentinvalidgrbitexception-constructor"></a>Constructor EsentInvalidGrbitException
 
 Inicializa una nueva instancia de la clase EsentInvalidGrbitException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentInvalidGrbitException()
 
 [Miembros de EsentInvalidGrbitException](./esentinvalidgrbitexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

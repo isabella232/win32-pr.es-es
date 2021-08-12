@@ -1,6 +1,6 @@
 ---
 title: Método CanSyncLocalClipboardToRemoteSession de la interfaz IMsRdpClipboard
-description: Indica si el portapapeles local se puede sincronizar con la sesión remota.
+description: Indica si el Portapapeles local se puede sincronizar con la sesión remota.
 ms.tgt_platform: multiple
 keywords:
 - Método CanSyncLocalClipboardToRemoteSession Servicios de Escritorio remoto
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: d2dd6fa5fc4d442d7cc22f036c293ebfaba841b8
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: dabc12064ff43a2bb64a562d1aa3050681f46c31dd2698154beb1dafe3cfd85e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606920"
 ---
-# <a name="imsrdpclipboardcansynclocalclipboardtoremotesession-method"></a>IMsRdpClipboard:: CanSyncLocalClipboardToRemoteSession (método)
+# <a name="imsrdpclipboardcansynclocalclipboardtoremotesession-method"></a>Método IMsRdpClipboard::CanSyncLocalClipboardToRemoteSession
 
-Indica si el portapapeles local se puede sincronizar con la sesión remota.
+Indica si el Portapapeles local se puede sincronizar con la sesión remota.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,11 +37,11 @@ HRESULT CanSyncLocalClipboardToRemoteSession(
 
 ## <a name="parameters"></a>Parámetros
 
-**True** si el portapapeles local se puede sincronizar con la sesión remota; en caso contrario, **false**.
+**TRUE** si el Portapapeles local se puede sincronizar con la sesión remota; de lo contrario, **FALSE**.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Vuelva **a \_ Aceptar si es** correcto.
 | Cliente mínimo compatible| Windows 10, versión 1803 (compilación 17134)      |
 | Biblioteca de tipos            | MsTscAx.dll                        |
 | Archivo DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpClipboard se define como 2E769EE8-00C7-43DC-AFD9-235D75B72A40          |
+| IID                      | IID IMsRdpClipboard se define como \_ 2E769EE8-00C7-43DC-AFD9-235D75B72A40          |
 
 ## <a name="see-also"></a>Vea también
 

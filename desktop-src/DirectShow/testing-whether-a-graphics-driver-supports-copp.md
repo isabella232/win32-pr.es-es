@@ -1,26 +1,26 @@
 ---
-description: Prueba de si un controlador de gráficos es compatible con COPP
+description: Comprobar si un controlador de gráficos admite COPP
 ms.assetid: e3e1c795-5cfa-4e4b-86aa-948dd2bf91a4
-title: Prueba de si un controlador de gráficos es compatible con COPP
+title: Comprobar si un controlador de gráficos admite COPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f98a5bfc3f577d1acb45969ec5d10503ae87b27a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22280f880ba01a8e51acda74a2a46dff595d5569f885ce1da3a3631bacd8db06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651835"
 ---
-# <a name="testing-whether-a-graphics-driver-supports-copp"></a>Prueba de si un controlador de gráficos es compatible con COPP
+# <a name="testing-whether-a-graphics-driver-supports-copp"></a>Comprobar si un controlador de gráficos admite COPP
 
-El protocolo de protección de la salida certificada (COPP) permite a una aplicación proteger el contenido de vídeo mientras se desplaza desde la tarjeta de vídeo hasta el dispositivo de pantalla. Si un controlador de gráficos admite COPP, el controlador contiene una cadena de certificados, firmada por Microsoft, que autentica el controlador. Las aplicaciones de reproducción que usan COPP para aplicar la protección de contenido deben validar la cadena de certificados para asegurarse de que el controlador no se ha alterado.
+El Protocolo de protección de salida certificado (COPP) permite a una aplicación proteger el contenido de vídeo a medida que viaja desde la tarjeta de vídeo al dispositivo para mostrar. Si un controlador de gráficos admite COPP, el controlador contiene una cadena de certificados, firmada por Microsoft, que autentica el controlador. Las aplicaciones de reproducción que usan COPP para aplicar la protección de contenido deben validar la cadena de certificados para asegurarse de que el controlador no se ha alterado.
 
-Sin embargo, es posible que desee comprobar si un controlador de gráficos es compatible con COPP, sin validar el certificado. Por ejemplo, cuando un proveedor de medios digitales emite una licencia de administración de derechos digitales (DRM), es posible que desee comprobar si el usuario tiene un controlador de gráficos habilitado para COPP. El proveedor no necesita aplicar COPP en el momento en que emite la licencia; solo necesita probar si el controlador es compatible con COPP.
+Sin embargo, es posible que quiera comprobar si un controlador de gráficos admite COPP, sin validar el certificado. Por ejemplo, cuando un proveedor de medios digitales emite una licencia de administración de derechos digitales (DRM), es posible que desee comprobar si el usuario tiene un controlador de gráficos habilitado para COPP. El proveedor no necesita aplicar COPP en el momento en que emite la licencia; solo tiene que probar si el controlador admite COPP.
 
-En el código siguiente se muestra cómo probar si un controlador es compatible con COPP. La aplicación debe pasar el nombre de un archivo de vídeo que se utilizará para probar el controlador. Esto es necesario porque el filtro de representador de combinación de vídeo de Microsoft® DirectShow® no Inicializa una sesión de COPP hasta que el filtro está conectado. Esta función se puede incluir en una aplicación cliente para comprobar si el controlador es capaz de ejecutar COPP.
+El código siguiente muestra cómo probar si un controlador admite COPP. La aplicación debe pasar el nombre de un archivo de vídeo que se usará para probar el controlador. Esto es necesario porque el filtro Representador de mezcla de vídeo de Microsoft® DirectShow® inicializa una sesión COPP hasta que se conecta el filtro. Esta función se puede incluir en una aplicación cliente para comprobar si el controlador es capaz de ejecutar COPP.
 
 > [!Note]  
-> Si el equipo del usuario tiene dos tarjetas gráficas, esta función prueba el controlador para la tarjeta de gráficos principal, pero no la tarjeta de gráficos secundaria.
+> Si el equipo del usuario tiene dos tarjetas gráficas, esta función prueba al controlador la tarjeta gráfica principal, pero no la tarjeta gráfica secundaria.
 
  
 
@@ -130,7 +130,7 @@ done:
 
 <dl> <dt>
 
-[Usar el protocolo de protección de salida certificada](using-certified-output-protection-protocol--copp.md)
+[Uso del protocolo de protección de salida certificado](using-certified-output-protection-protocol--copp.md)
 </dt> </dl>
 
  

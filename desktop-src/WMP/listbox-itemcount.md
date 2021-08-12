@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. itemCount
+title: LISTBOX.itemCount
 description: El atributo itemCount recupera el número de elementos del control de cuadro de lista.
 ms.assetid: 8d92e4ed-ce75-4291-8ece-8067f88f8f35
 keywords:
-- LISTBOX. itemCount Windows Media Player
+- ListBOX.itemCount Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc6499515876631a5fcd7f96f5821b5a04c44aa8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7032943c10f27ccb9d12476cce00e4e5ea6499ce5b66a3f961f1abca715d02ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574952"
 ---
-# <a name="listboxitemcount"></a>LISTBOX. itemCount
+# <a name="listboxitemcount"></a>LISTBOX.itemCount
 
-El atributo **itemCount** recupera el número de elementos del control de cuadro de lista.
+El **atributo itemCount** recupera el número de elementos del control de cuadro de lista.
 
 ``` syntax
         elementID.itemCount
@@ -29,19 +29,19 @@ El atributo **itemCount** recupera el número de elementos del control de cuadro
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

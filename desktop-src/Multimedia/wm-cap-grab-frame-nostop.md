@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_GRAB_FRAME_NOSTOP (VFW. h)
-description: El \_ mensaje de \_ \_ \_ punto de interrupción del casquillo de WM rellena el búfer de fotogramas con un solo fotograma sin comprimir del dispositivo de captura y lo muestra.
+title: WM_CAP_GRAB_FRAME_NOSTOP mensaje (Vfw.h)
+description: El mensaje WM CAP GRAB FRAME NOSTOP rellena el búfer de fotogramas con un único fotograma sin comprimir del dispositivo de captura \_ \_ y lo \_ \_ muestra.
 ms.assetid: 5f6e3ce7-3595-456e-82c8-eeb162ace81a
 keywords:
-- Mensaje de WM_CAP_GRAB_FRAME_NOSTOP de Windows multimedia
+- WM_CAP_GRAB_FRAME_NOSTOP mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5073cf5eae44f564d24cd1ebb67193d8738fd77b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b81c581ad7e3913640271b32b18791ebf7b48ed09cd365af82ed263449f05471
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622604"
 ---
-# <a name="wm_cap_grab_frame_nostop-message"></a>\_Mensaje de \_ marco de captación de Cap de \_ WM \_
+# <a name="wm_cap_grab_frame_nostop-message"></a>Mensaje \_ WM CAP GRAB FRAME \_ \_ \_ NOSTOP
 
-El mensaje de **\_ punto de \_ \_ \_ interrupción del casquillo de WM** rellena el búfer de fotogramas con un solo fotograma sin comprimir del dispositivo de captura y lo muestra. A diferencia de lo que sucede con el mensaje del [**\_ \_ \_ marco de captación de Cap de WM**](wm-cap-grab-frame.md) , este mensaje no modifica el estado de superposición o vista previa. Puede enviar este mensaje explícitamente o mediante la macro [**capGrabFrameNoStop**](/windows/desktop/api/Vfw/nf-vfw-capgrabframenostop) .
+El **mensaje WM CAP GRAB FRAME \_ \_ \_ \_ NOSTOP** rellena el búfer de fotogramas con un único fotograma sin comprimir del dispositivo de captura y lo muestra. A diferencia del [**mensaje WM CAP GRAB \_ \_ \_ FRAME,**](wm-cap-grab-frame.md) este mensaje no modifica el estado de superposición o vista previa. Puede enviar este mensaje explícitamente o mediante la [**macro capGrabFrameNoStop.**](/windows/desktop/api/Vfw/nf-vfw-capgrabframenostop)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener información sobre la instalación de funciones de devolución de llamada, consulte los mensajes de [**\_ error de devolución de \_ \_ llamada \_ set Cap de WM**](wm-cap-set-callback-error.md) y del marco de [**\_ \_ devolución de \_ llamada \_ de WM**](wm-cap-set-callback-frame.md) .
+Para obtener información sobre cómo instalar funciones de devolución de llamada, vea los mensajes [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR**](wm-cap-set-callback-error.md) y [**WM CAP SET \_ \_ \_ CALLBACK \_ FRAME.**](wm-cap-set-callback-frame.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Para obtener información sobre la instalación de funciones de devolución de l
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

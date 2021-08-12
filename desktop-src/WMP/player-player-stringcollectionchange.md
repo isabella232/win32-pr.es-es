@@ -5,7 +5,7 @@ ms.assetid: 465ec694-afd1-4baa-b559-3ab75874388f
 keywords:
 - Evento StringCollectionChange Reproductor de Windows Media
 - Evento StringCollectionChange Reproductor de Windows Media , clase Player
-- Clase player Reproductor de Windows Media evento , StringCollectionChange
+- Clase player Reproductor de Windows Media , evento StringCollectionChange
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6a61b8e1e09e749579f323d506371138b0d9b59
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 5012cd94c14532eb94eb452c9c7aa20d50ffb8a447c2d14f56e8c6df02456849
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572423"
 ---
 # <a name="playerstringcollectionchange-event"></a>Evento Player.StringCollectionChange
 
@@ -60,7 +60,7 @@ Número (long) que indica el tipo de cambio que se produjo en la colección de c
 
 | Number | Descripción                        |
 |--------|------------------------------------|
-| 0      | desconocida. (No es un valor válido)       |
+| 0      | Desconocido. (No es un valor válido)       |
 | 1      | Se insertó un elemento.              |
 | 2      | La colección de cadenas ha cambiado.     |
 | 3      | Se eliminó un elemento.               |
@@ -107,7 +107,7 @@ Este evento no devuelve un valor.
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**StringCollection (objeto)**](stringcollection-object.md)
+[**Objeto StringCollection**](stringcollection-object.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Elemento version (registrationInfoType)
+title: Elemento Version (registrationInfoType)
 description: Especifica el número de versión de la tarea.
 ms.assetid: 0a7223ae-dfc7-4356-aea4-88ff3b3b9148
 keywords:
-- Elemento version Programador de tareas
+- Elemento Version Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb1ae5094ad6f69a61e86da1716169a1b7929e3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63d69b501b12890939f3bd0b146c959278eeaa0d5eb596851a488cef87f0770a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610430"
 ---
-# <a name="version-registrationinfotype-element"></a>Elemento version (registrationInfoType)
+# <a name="version-registrationinfotype-element"></a>Elemento Version (registrationInfoType)
 
 Especifica el número de versión de la tarea.
 
@@ -31,7 +31,7 @@ Especifica el número de versión de la tarea.
  />
 ```
 
-El elemento **version** se define mediante el tipo complejo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) .
+El **elemento Version** se define mediante el tipo complejo [**registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,19 +39,19 @@ El elemento **version** se define mediante el tipo complejo [**registrationInfoT
 
 | Elemento                                                                           | Derivado de                                                                         | Descripción                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica la información administrativa de la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica información administrativa sobre la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de scripting, la versión de una tarea se especifica mediante la propiedad [**RegistrationInfo. version**](registrationinfo-version.md) .
+Para el desarrollo de scripting, la versión de una tarea se especifica mediante [**la propiedad RegistrationInfo.Version.**](registrationinfo-version.md)
 
-En el desarrollo de C++, la versión de una tarea se especifica mediante la propiedad [**IRegistrationInfo:: version**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_version) .
+Para el desarrollo de C++, la versión de una tarea se especifica mediante [**la propiedad IRegistrationInfo::Version.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_version)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define la versión de una tarea.
+El xml siguiente define la versión de una tarea.
 
 
 ```XML
@@ -68,8 +68,8 @@ El siguiente código XML define la versión de una tarea.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -77,7 +77,7 @@ El siguiente código XML define la versión de una tarea.
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

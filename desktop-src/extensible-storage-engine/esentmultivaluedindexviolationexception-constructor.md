@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMultiValuedIndexViolationException'
-title: Constructor de EsentMultiValuedIndexViolationException
+description: 'Más información sobre: Constructor EsentMultiValuedIndexViolationException'
+title: Constructor EsentMultiValuedIndexViolationException
 TOCTitle: 'EsentMultiValuedIndexViolationException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMultiValuedIndexViolationException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmultivaluedindexviolationexception.esentmultivaluedindexviolationexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be7d8d884c4a36de2f69d7cc0d8401cf1fa7631d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 846e876683d308019a561b2dc73cfd82fee38f0b3fc6f32b99cc2ec9e0c2dc97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118263968"
 ---
-# <a name="esentmultivaluedindexviolationexception-constructor"></a>Constructor de EsentMultiValuedIndexViolationException
+# <a name="esentmultivaluedindexviolationexception-constructor"></a>Constructor EsentMultiValuedIndexViolationException
 
 Inicializa una nueva instancia de la clase EsentMultiValuedIndexViolationException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentMultiValuedIndexViolationException()
 
 [Miembros de EsentMultiValuedIndexViolationException](./esentmultivaluedindexviolationexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

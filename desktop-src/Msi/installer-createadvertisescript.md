@@ -1,7 +1,7 @@
 ---
-description: El método CreateAdvertiseScript del objeto de instalador genera un script de anuncio.
+description: El método CreateAdvertiseScript del objeto Installer genera un script de anuncio.
 ms.assetid: 32a331e5-d291-49cd-ab0e-7d0e4d72a95b
-title: 'Installer:: CreateAdvertiseScript (método)'
+title: Installer::CreateAdvertiseScript (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 9ec4b18eee376e7bde4824a497ea14b503045f43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9416b3b503db11411db93c66242ea55587e6175344313f785c08392c72ad0991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105654016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631961"
 ---
-# <a name="installercreateadvertisescript-method"></a>Installer:: CreateAdvertiseScript (método)
+# <a name="installercreateadvertisescript-method"></a>Installer::CreateAdvertiseScript (método)
 
-El método **CreateAdvertiseScript** del objeto de [**instalador**](installer-object.md) genera un script de anuncio.
+El **método CreateAdvertiseScript** del [**objeto Installer**](installer-object.md) genera un script de anuncio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ El método **CreateAdvertiseScript** del objeto de [**instalador**](installer-ob
 *packagePath* 
 </dt> <dd>
 
-Ruta de acceso completa al paquete de Windows Installer (. msi) que se va a anunciar.
+Ruta de acceso completa al paquete Windows Installer (.msi) que se va a anunciar.
 
 </dd> <dt>
 
@@ -58,24 +58,24 @@ Ruta de acceso completa al archivo de script que se va a crear con la informaci�
 
 </dd> <dt>
 
-*transforma* 
+*Transforma* 
 </dt> <dd>
 
-Lista de transformaciones que se van a aplicar al producto. Las transformaciones en la lista están delimitadas por signos de punto y coma. Este parámetro es opcional.
+Lista de transformaciones que se aplicarán al producto. Las transformaciones de la lista están delimitadas por punto y coma. Este parámetro es opcional.
 
 </dd> <dt>
 
 *language* 
 </dt> <dd>
 
-Idioma del paquete de instalación que se va a usar. Este parámetro es opcional.
+Idioma del paquete de instalación que se usará. Este parámetro es opcional.
 
 </dd> <dt>
 
 *platform* 
 </dt> <dd>
 
-Este parámetro especifica la plataforma en la que el instalador debe crear el script. Este parámetro puede ser uno de los valores siguientes.
+Este parámetro especifica para qué plataforma debe crear el script el instalador. Este parámetro puede ser uno de los valores siguientes.
 
 
 
@@ -95,14 +95,14 @@ Este parámetro especifica la plataforma en la que el instalador debe crear el s
 *options* 
 </dt> <dd>
 
-Opciones de anuncios. Este parámetro es opcional. Este parámetro puede ser uno de los valores siguientes. Este parámetro es opcional.
+Opciones de anuncio. Este parámetro es opcional. Este parámetro puede ser uno de los valores siguientes. Este parámetro es opcional.
 
 
 
 | Value                                                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="msiAdvertiseDefault"></span><span id="msiadvertisedefault"></span><span id="MSIADVERTISEDEFAULT"></span><dl> <dt>**msiAdvertiseDefault**</dt> <dt>0</dt> </dl>                             | Anuncio estándar<br/>                                                                                                                                                                                                                                                                                                                 |
-| <span id="msiAdvertiseSingleInstance"></span><span id="msiadvertisesingleinstance"></span><span id="MSIADVERTISESINGLEINSTANCE"></span><dl> <dt>**msiAdvertiseSingleInstance**</dt> <dt>1</dt> </dl> | Anuncia una nueva instancia del producto. Requiere que la primera transformación de la lista de transformación del parámetro *transformaciones* sea la transformación de instancia que cambia el código de producto. Para obtener más información, consulte [instalación de varias instancias de productos y revisiones](installing-multiple-instances-of-products-and-patches.md).<br/> |
+| <span id="msiAdvertiseSingleInstance"></span><span id="msiadvertisesingleinstance"></span><span id="MSIADVERTISESINGLEINSTANCE"></span><dl> <dt>**msiAdvertiseSingleInstance**</dt> <dt>1</dt> </dl> | Anuncia una nueva instancia del producto. Requiere que la primera transformación de la lista de transformaciones del parámetro *transforms* sea la transformación de instancia que cambia el código del producto. Para obtener más información, [vea Instalación de varias instancias de productos y revisiones.](installing-multiple-instances-of-products-and-patches.md)<br/> |
 
 
 
@@ -116,11 +116,11 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El método [**AdvertiseProduct**](installer-advertiseproduct.md) usa la función [**MsiAdvertiseProductEx**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproductexa) .
+El [**método AdvertiseProduct**](installer-advertiseproduct.md) usa la [**función MsiAdvertiseProductEx.**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproductexa)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo se muestra el uso del método **CreateAdvertiseScript** .
+En el ejemplo siguiente se muestra el uso del **método CreateAdvertiseScript.**
 
 
 ```VB
@@ -142,9 +142,9 @@ Installer.CreateAdvertiseScript "\\products\public\orca\orca.msi", "c:\scripts\o
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 4,5 en Windows Server 2003 y Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 4.5 en Windows Server 2003 y Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                           |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                                |
 
 
 
@@ -155,7 +155,7 @@ Installer.CreateAdvertiseScript "\\products\public\orca\orca.msi", "c:\scripts\o
 [**Instalador**](installer-object.md)
 </dt> <dt>
 
-[No se admite en Windows Installer 3,1 y versiones anteriores](not-supported-in-windows-installer-version-3-1.md)
+[No se admite en Windows Installer 3.1 y versiones anteriores](not-supported-in-windows-installer-version-3-1.md)
 </dt> </dl>
 
  

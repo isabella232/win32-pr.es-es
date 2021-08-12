@@ -1,9 +1,9 @@
 ---
-title: WaveActiveBitAnd función)
-description: Devuelve el bit a bit y de todos los valores de la expresión en todas las calles activas de la onda actual y lo replica de nuevo en todas las calles activas.
+title: Función WaveActiveBitAnd
+description: Devuelve el AND bit a bit de todos los valores de la expresión en todos los sentidos activos de la onda actual y lo replica de nuevo en todos los sentidos activos.
 ms.assetid: 602884CD-E656-4DEB-A30A-8A7D127A2217
 keywords:
-- WaveActiveBitAnd de función HLSL
+- Función HLSL de WaveActiveBitAnd
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b6a3b0b097ea8737e07a91fcfc6553f22b828f1
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 96d09d91df4ff9226a8fb86203be0bd79bc3c11d1882553607358c3c84d3814c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283003"
 ---
-# <a name="waveactivebitand-function"></a>WaveActiveBitAnd función)
+# <a name="waveactivebitand-function"></a>Función WaveActiveBitAnd
 
-Devuelve el bit a bit y de todos los valores de la expresión en todas las calles activas de la onda actual y lo replica de nuevo en todas las calles activas.
+Devuelve el AND bit a bit de todos los valores de la expresión en todos los sentidos activos de la onda actual y lo replica de nuevo en todos los sentidos activos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,21 +48,21 @@ La expresión que se va a evaluar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor y bit a bit.
+Valor AND bit a bit.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modelo de sombreador 6](shader-model-6-0.md)

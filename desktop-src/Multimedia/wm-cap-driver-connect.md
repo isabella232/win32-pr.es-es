@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_DRIVER_CONNECT (VFW. h)
-description: El \_ mensaje de conexión del controlador Cap de WM \_ \_ conecta una ventana de captura a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverConnect.
+title: WM_CAP_DRIVER_CONNECT mensaje (Vfw.h)
+description: El mensaje WM \_ CAP DRIVER CONNECT conecta una ventana de captura a un controlador de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverConnect.
 ms.assetid: 8804bb3c-d06c-4ddc-b116-3d292205a52d
 keywords:
-- Mensaje de WM_CAP_DRIVER_CONNECT de Windows multimedia
+- WM_CAP_DRIVER_CONNECT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d73fdeb89968926429f7225912e3d1b3b348e287
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8b0e54d496302488db653505321778bcd22546bd2ed9b2180aa0e15cb6969f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622634"
 ---
-# <a name="wm_cap_driver_connect-message"></a>\_Mensaje de \_ conexión del controlador Cap de WM \_
+# <a name="wm_cap_driver_connect-message"></a>Mensaje \_ WM CAP DRIVER \_ \_ CONNECT
 
-El mensaje de **\_ \_ \_ conexión del controlador Cap de WM** conecta una ventana de captura a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la macro [**capDriverConnect**](/windows/desktop/api/Vfw/nf-vfw-capdriverconnect) .
+El **mensaje WM CAP DRIVER \_ \_ \_ CONNECT** conecta una ventana de captura a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capDriverConnect.**](/windows/desktop/api/Vfw/nf-vfw-capdriverconnect)
 
 
 ```C++
@@ -47,11 +47,11 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si el controlador de captura especificado no se puede conectar a la ventana de captura.
+Devuelve **TRUE** si se realiza **correctamente o FALSE** si el controlador de captura especificado no se puede conectar a la ventana de captura.
 
 ## <a name="remarks"></a>Observaciones
 
-Al conectar un controlador de captura a una ventana de captura, se desconecta automáticamente cualquier controlador de captura conectado previamente.
+La conexión de un controlador de captura a una ventana de captura desconecta automáticamente cualquier controlador de captura conectado previamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Al conectar un controlador de captura a una ventana de captura, se desconecta au
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

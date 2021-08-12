@@ -1,24 +1,24 @@
 ---
 description: Constructores expuestos por XMFLOAT2.
 ms.assetid: 2b679681-f50c-4028-8a0d-28d283e0e9e7
-title: Constructores XMFLOAT2 (Directxmath. h)
+title: Constructores XMFLOAT2 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 234c91c7e7c4588fecdaaa155de301a5118c1e0e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fc78325a76d3a78bc8ae613b1a465dc8de3165006c642870247943345f9d235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276393"
 ---
 # <a name="xmfloat2-constructors"></a>Constructores XMFLOAT2
 
 Constructores expuestos por `XMFLOAT2` .
 
-Construye instancias de la estructura [**XMFLOAT2**](/windows/win32/api/directxmath/ns-directxmath-xmfloat2) .
+Construye instancias de la [**estructura XMFLOAT2.**](/windows/win32/api/directxmath/ns-directxmath-xmfloat2)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -39,8 +39,8 @@ Construye instancias de la estructura [**XMFLOAT2**](/windows/win32/api/directxm
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT2 ()</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmfloat2-xmfloat2 (constxmfloat2_))</td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMFLOAT2</code> . <br/> Constructor predeterminado para [<strong>XMFLOAT2</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat2). <br/>
+<td style="text-align: left;">[<strong>XMFLOAT2 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(constxmfloat2_))</td>
+<td style="text-align: left;">Constructor predeterminado para <code>XMFLOAT2</code> . <br/> Constructor predeterminado para [<strong>XMFLOAT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat2). <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -48,8 +48,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMFLOAT2 (float, float)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmfloat2-xmfloat2 (float_float))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMFLOAT2</code> a partir de dos <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT2</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat2) a partir de dos <code>float</code> argumentos. <br/>
+<td style="text-align: left;">[<strong>XMFLOAT2 (float,float)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(float_float))</td>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMFLOAT2</code> partir de dos <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat2) a partir de dos <code>float</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -57,8 +57,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT2 (const float *)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(constfloat))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMFLOAT2</code> partir de un argumento de matriz de dos elementos <code>float</code> . <br/> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT2</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat2) a partir de un argumento de matriz de dos elementos <code>float</code> . <br/>
+<td style="text-align: left;">[<strong>XMFLOAT2 (const float*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(constfloat))</td>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMFLOAT2</code> partir de un argumento de matriz de dos <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat2) a partir de un argumento de matriz de dos <code>float</code> elementos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -76,15 +76,15 @@ Este constructor solo está disponible en C++.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMFLOAT2](ovw-xmfloat2-extensions.md)
+[Extensiones XMFLOAT2](ovw-xmfloat2-extensions.md)
 </dt> <dt>
 
 **Referencia**

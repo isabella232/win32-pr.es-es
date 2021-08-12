@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si los ejemplos del asignador del PIN son de solo lectura. Si el valor es TRUE, el ejemplo es de solo lectura. El valor predeterminado es FALSE.
+description: Marca que especifica si las muestras del asignador del pin son de solo lectura. Si el valor es TRUE, el ejemplo es de solo lectura. El valor predeterminado es FALSE.
 ms.assetid: c2c6247c-4b37-416c-99a2-847d35f48358
-title: 'Miembro CDynamicOutputPin:: m_bPinUsesReadOnlyAllocator (Amfilter. h)'
+title: CDynamicOutputPin::m_bPinUsesReadOnlyAllocator miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff4e7ab7dd887f7290cfc229c7af439bf8150277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2a03816d3ad324f7f50a3edbfd1166403442afec7133d14288d0aafa3d91cd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656430"
 ---
-# <a name="cdynamicoutputpinm_bpinusesreadonlyallocator-member"></a>Miembro bPinUsesReadOnlyAllocator CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_bpinusesreadonlyallocator-member"></a>Miembro CDynamicOutputPin::m \_ bPinUsesReadOnlyAllocator
 
-Marca que especifica si los ejemplos del asignador del PIN son de solo lectura. Si el valor es **true**, el ejemplo es de solo lectura. El valor predeterminado es **FALSE**.
+Marca que especifica si las muestras del asignador del pin son de solo lectura. Si el valor es **TRUE**, el ejemplo es de solo lectura. El valor predeterminado es **FALSE**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bPinUsesReadOnlyAllocator;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bPinUsesReadOnlyAllocator;
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

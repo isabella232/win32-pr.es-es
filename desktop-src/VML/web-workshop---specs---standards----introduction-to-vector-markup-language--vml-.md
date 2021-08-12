@@ -15,16 +15,16 @@ keywords:
 - VML (Lenguaje de marcado de vectores),benefits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4637fff0550ce9c93e295c51fc529f62c370b8aa
-ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
+ms.openlocfilehash: 6199b481c58bbc5cd769ba43e614f21ae0105b4ef703858b559cdd76ff5516bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111910262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596071"
 ---
 # <a name="vector-markup-language-vml"></a>Lenguaje de marcado de vectores (VML)
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!NOTE]
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
@@ -59,7 +59,7 @@ Por último, agregue elementos VML para definir los efectos de los objetos visua
 ```
 
 > [!NOTE]
-> Para obtener mejores resultados al usar documentos en modo estricto, asegúrese de que el marcado es válido y tiene el formato correcto. Para obtener más información, vea ! Página de referencia de DOCTYPE.
+> Para obtener mejores resultados al usar documentos en modo estricto, asegúrese de que el marcado es válido y correcto. Para obtener más información, vea ! Página de referencia de DOCTYPE.
 
 
 ### <a name="benefits-of-vml"></a>Ventajas de VML

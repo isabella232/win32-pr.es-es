@@ -1,7 +1,7 @@
 ---
-description: La estructura DIBDATA contiene información sobre un mapa de bits independiente del dispositivo GDI (DIB).
+description: La estructura DIBDATA contiene información sobre un mapa de bits independiente del dispositivo (DIB) de GDI.
 ms.assetid: abbfa5b4-8789-4a44-a467-5812d3cc8238
-title: Estructura DIBDATA (Winutil. h)
+title: Estructura DIBDATA (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winutil.h
-ms.openlocfilehash: 87590013ef905ffbdd13dd3b767435a907b08783
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b4449f45afac56b202e9b23516dc849c6364e8781be7cfbe7cfb2b630bd16921
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653831"
 ---
-# <a name="dibdata-structure"></a>Estructura DIBDATA
+# <a name="dibdata-structure"></a>DIBDATA (estructura)
 
-La `DIBDATA` estructura contiene información sobre un mapa de bits independiente del dispositivo GDI (DIB).
+La estructura contiene información sobre un mapa de bits independiente del `DIBDATA` dispositivo GDI (DIB).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Este miembro debe incrementarse cada vez que cambie la paleta.
 **DibSection**
 </dt> <dd>
 
-Estructura **DIBSECTION** que contiene información sobre el Dib. Consulte la documentación de GDI para obtener más información.
+**Estructura DIBSECTION** que contiene información sobre la DIB. Consulte la documentación de GDI para obtener más información.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Identificador del mapa de bits.
 **hMapping**
 </dt> <dd>
 
-Identificador de un objeto de asignación de archivos que se utiliza para compartir la memoria entre GDI y un objeto [**CImageSample**](cimagesample.md) .
+Identificador de un objeto de asignación de archivos que se usa para compartir memoria entre GDI y [**un objeto CImageSample.**](cimagesample.md)
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Dirección del mapa de bits.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl> |
 
 
 

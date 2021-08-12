@@ -1,29 +1,29 @@
 ---
-description: Windows 8, Windows Server 2012 y versiones posteriores incluyen una nueva característica de administrador de conexiones que permite a los usuarios conectarse fácilmente a Internet y a otras redes (por ejemplo, redes domésticas y de trabajo).
+description: Windows 8, Windows Server 2012 y versiones posteriores incluyen una nueva característica de Connection Manager que permite a los usuarios conectarse fácilmente a Internet y a otras redes (por ejemplo, redes de trabajo y hogar).
 ms.assetid: 6b2f5a50-fabd-4c80-acc8-a0883c939632
-title: API de interfaz de usuario inalámbrica
+title: API Interfaz de usuario inalámbricas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5814ea8daa55ab3ec1bf431543174cf57fdfa7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e2b2af7faccc5452163ad89ed28d12e7de917f4b872011165e0cfb1760657dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104547086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619932"
 ---
-# <a name="wireless-user-interface-apis"></a>API de interfaz de usuario inalámbrica
+# <a name="wireless-user-interface-apis"></a>API Interfaz de usuario inalámbricas
 
-Windows 8, Windows Server 2012 y versiones posteriores incluyen una nueva característica de administrador de conexiones que permite a los usuarios conectarse fácilmente a Internet y a otras redes (por ejemplo, redes domésticas y de trabajo). Esta nueva característica de administrador de conexiones reemplaza a las interfaces de usuario **conectarse a una red** y **administrar redes inalámbricas** incluidas con versiones anteriores de Windows para administrar conexiones WiFi nativas.
+Windows 8, Windows Server 2012 y versiones posteriores incluyen una nueva característica de Connection Manager que permite a los usuarios conectarse fácilmente a Internet y a otras redes (por ejemplo, redes de trabajo y hogar). Esta nueva característica Connection Manager reemplaza el Conectar anterior **a** una  red y las interfaces de usuario Administrar redes inalámbricas incluidas con versiones anteriores de Windows para administrar conexiones Wi-Fi nativas.
 
-En Windows 7, Windows Server 2008 y Windows Vista, hay varias interfaces de usuario (UI) que se usan para conectarse a una red inalámbrica o configurarla. Estas interfaces de red se pueden iniciar en una aplicación mediante las funciones nativas de Wi-Fi y Windows Shell. Estas ius no están disponibles en Windows 8, Windows Server 2012 y versiones posteriores.
+En Windows 7, Windows Server 2008 y Windows Vista, hay varias interfaces de usuario (URI) que se usan para conectarse a una red inalámbrica o configurarla. Estas URI se pueden iniciar en una aplicación mediante Native Wifi y Windows Shell. Estas URI no están disponibles en Windows 8, Windows Server 2012 y versiones posteriores.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** No se puede iniciar ninguna interfaz de usuario utilizada para conectarse a una red inalámbrica o configurarla en una aplicación mediante programación.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se puede iniciar ninguna interfaz de usuario usada para conectarse a una red inalámbrica o configurarla en una aplicación mediante programación.
 
 ## <a name="connect-to-a-network"></a>Conexión a una red
 
-En Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 y Windows Vista, el Asistente para **conectarse a una red** se puede usar para establecer una conexión a una red inalámbrica. Puede utilizar la función [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar el Asistente para **conectarse a una red** .
+En Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 y Windows Vista, el asistente de **Conectar a** una red se puede usar para establecer una conexión a una red inalámbrica. Puede usar la función [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar el Conectar **en un asistente de** red.
 
-En el código siguiente se muestra una llamada a [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) que inicia el asistente **para conectarse a una red** .
+El código siguiente muestra una [**llamada a ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) que inicia el **Conectar a un asistente de** red.
 
 
 ```C++
@@ -51,13 +51,13 @@ void wmain()
 
 
 
-## <a name="manage-wireless-networks"></a>**Administrar redes inalámbricas**
+## <a name="manage-wireless-networks"></a>**Administración de redes inalámbricas**
 
-En Windows 7, Windows Server 2008 y Windows Vista, el elemento **administrar redes inalámbricas** del panel de control se utiliza para administrar los perfiles de red inalámbrica. La función [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) también se puede usar para iniciar el elemento **administrar redes inalámbricas** . La ruta de acceso que se debe usar al llamar a **ShellExecute** en Windows 7 y Windows Vista es la siguiente:
+En Windows 7, Windows Server 2008 y Windows Vista, el elemento Administrar redes **inalámbricas** Panel de control se usa para administrar perfiles de red inalámbrica. La [**función ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) también se puede usar para iniciar el **elemento Administrar redes inalámbricas.** La ruta de acceso que se va a usar al llamar **a ShellExecute** Windows 7 y Windows Vista es la siguiente:
 
 `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\3\::{1fa9085f-25a2-489b-85d4-86326eedcd87}  `.
 
-En el código de ejemplo siguiente se muestra cómo usar [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar el Asistente para **redes inalámbricas administradas** desde una aplicación.
+El código de ejemplo siguiente muestra cómo usar [**ShellExecute para**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) iniciar el Asistente para redes **inalámbricas administradas** desde una aplicación.
 
 
 ```C++
@@ -119,15 +119,15 @@ int wmain()
 
 
 
-## <a name="advanced-settings-for-wireless-network-profiles"></a>Configuración avanzada para perfiles de red inalámbrica
+## <a name="advanced-settings-for-wireless-network-profiles"></a>Opciones Configuración perfiles de red inalámbrica
 
-Windows Vista y versiones posteriores incluyen una interfaz de usuario avanzada que se usa para ver y editar la configuración avanzada de un perfil de red inalámbrica. Puede iniciar esta interfaz de usuario avanzada mediante una llamada a la función [**WlanUIEditProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanuieditprofile) .
+Windows Vista y versiones posteriores incluyen una interfaz de usuario avanzada que se usa para ver y editar la configuración avanzada de un perfil de red inalámbrica. Puede iniciar esta interfaz de usuario avanzada llamando a [**la función WlanUIEditProfile.**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanuieditprofile)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar Wi-Fi nativo](using-native-wifi.md)
+[Uso de Wi-Fi nativo](using-native-wifi.md)
 </dt> <dt>
 
 [Ejemplos de perfil inalámbrico](wireless-profile-samples.md)

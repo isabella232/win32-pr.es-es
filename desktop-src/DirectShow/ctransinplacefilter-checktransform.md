@@ -1,7 +1,7 @@
 ---
-description: 'El método CheckTransform comprueba si un tipo de medio de entrada es compatible con un tipo de medio de salida. Este método invalida el método CTransformFilter:: CheckTransform.'
+description: El método CheckTransform comprueba si un tipo de medio de entrada es compatible con un tipo de medio de salida. Este método invalida el método CTransformFilter::CheckTransform.
 ms.assetid: d0953014-4a49-4738-a449-c247396a6794
-title: Método CTransInPlaceFilter. CheckTransform (TRANSip. h)
+title: Método CTransInPlaceFilter.CheckTransform (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a80132723be0b70f2c4afe93306d7f581b7734c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49b7f4aaac21cf6a55360e2e1b970bd9dfa62c0422241f7356871117e138d57d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654964"
 ---
-# <a name="ctransinplacefilterchecktransform-method"></a>CTransInPlaceFilter. CheckTransform, método
+# <a name="ctransinplacefilterchecktransform-method"></a>Método CTransInPlaceFilter.CheckTransform
 
-El `CheckTransform` método comprueba si un tipo de medio de entrada es compatible con un tipo de medio de salida. Este método invalida el método [**CTransformFilter:: CheckTransform**](ctransformfilter-checktransform.md) .
+El `CheckTransform` método comprueba si un tipo de medio de entrada es compatible con un tipo de medio de salida. Este método invalida el [**método CTransformFilter::CheckTransform.**](ctransformfilter-checktransform.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ HRESULT CheckTransform(
 *mtIn* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica el tipo de entrada.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de entrada.
 
 </dd> <dt>
 
 *mtOut* 
 </dt> <dd>
 
-Puntero a un objeto **CMediaType** que especifica el tipo de salida.
+Puntero a un **objeto CMediaType** que especifica el tipo de salida.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="remarks"></a>Observaciones
 
-El filtro **CTransInPlace** nunca llama a `CheckTransform` . En su lugar, todas las conexiones de PIN usan [**CTransformFilter:: CheckInputType**](ctransformfilter-checkinputtype.md) para comprobar el tipo de medio, con la suposición de que los tipos de entrada y salida siempre coinciden.
+El **filtro CTransInPlace** nunca llama a `CheckTransform` . En su lugar, todas las conexiones de pin usan [**CTransformFilter::CheckInputType para**](ctransformfilter-checkinputtype.md) comprobar el tipo de medio, con la suposición de que los tipos de entrada y salida siempre coinciden.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El filtro **CTransInPlace** nunca llama a `CheckTransform` . En su lugar, todas 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ El filtro **CTransInPlace** nunca llama a `CheckTransform` . En su lugar, todas 
 
 <dl> <dt>
 
-[**Clase CTransInPlaceFilter**](ctransinplacefilter.md)
+[**CTransInPlaceFilter (clase)**](ctransinplacefilter.md)
 </dt> </dl>
 
  

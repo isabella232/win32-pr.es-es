@@ -1,23 +1,23 @@
 ---
 description: Paso 3A.
 ms.assetid: 774fcb12-8928-4667-8ef6-dce86717cc29
-title: Paso 3A. Implementar el método CheckInputType
+title: Paso 3A. Implementación del método CheckInputType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5eb6ff440838d7a4b65b586e5dba963ff254eef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 692175e0def453f86b618a355044e4a117a4343fed56f029704091134e8bc31f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652145"
 ---
-# <a name="step-3a-implement-the-checkinputtype-method"></a>Paso 3A. Implementar el método CheckInputType
+# <a name="step-3a-implement-the-checkinputtype-method"></a>Paso 3A. Implementación del método CheckInputType
 
-Este es el paso 3A del tutorial de [escritura de filtros de transformación](writing-transform-filters.md).
+Este es el paso 3A del tutorial Escribir [filtros de transformación](writing-transform-filters.md).
 
-Se llama al método [**CTransformFilter:: CheckInputType**](ctransformfilter-checkinputtype.md) cuando el filtro de nivel superior propone un tipo de medio al filtro de transformación. Este método toma un puntero a un objeto [**CMediaType**](cmediatype.md) , que es un contenedor fino para la estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) . En este método, debe examinar todos los campos pertinentes de la estructura de **\_ \_ tipo de medio am** , incluidos los campos del bloque de formato. Puede usar los métodos de descriptor de acceso definidos en **CMediaType** o hacer referencia a los miembros de la estructura directamente. Si un campo no es válido, devuelve el \_ tipo VFW E \_ \_ no \_ aceptado. Si el tipo de medio completo es válido, devuelva S \_ correctos.
+Se [**llama al método CTransformFilter::CheckInputType**](ctransformfilter-checkinputtype.md) cuando el filtro ascendente propone un tipo de medio al filtro de transformación. Este método toma un puntero a un [**objeto CMediaType,**](cmediatype.md) que es un contenedor fino para la [**estructura AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) En este método, debe examinar todos los campos pertinentes de la estructura **\_ AM MEDIA \_ TYPE,** incluidos los campos del bloque de formato. Puede usar los métodos de accessor definidos en **CMediaType** o hacer referencia directamente a los miembros de la estructura. Si algún campo no es válido, devuelva VFW \_ E \_ TYPE NOT \_ \_ ACCEPTED. Si todo el tipo de medio es válido, devuelva S \_ OK.
 
-Por ejemplo, en el filtro del codificador RLE, el tipo de entrada debe ser vídeo RGB sin comprimir de 8 bits o de 4 bits. No hay ninguna razón para admitir otros formatos de entrada, como RGB de 16 o 24 bits, ya que el filtro tendría que convertirlos a una profundidad de bits más baja y DirectShow ya proporciona un filtro de [convertidor de espacio de colores](color-space-converter-filter.md) para ese propósito. En el ejemplo siguiente se da por supuesto que el codificador admite vídeo de 8 bits, pero no vídeo de 4 bits:
+Por ejemplo, en el filtro del codificador RLE, el tipo de entrada debe ser vídeo RGB de 8 o 4 bits sin comprimir. No hay ninguna razón para admitir otros formatos de entrada, como RGB de 16 o 24 bits, porque el [](color-space-converter-filter.md) filtro tendría que convertirlos a una profundidad de bits inferior y DirectShow ya proporciona un filtro convertidor de espacio de color para ese propósito. En el ejemplo siguiente se supone que el codificador admite vídeo de 8 bits, pero no vídeo de 4 bits:
 
 
 ```C++
@@ -57,9 +57,9 @@ HRESULT CRleFilter::CheckInputType(const CMediaType *mtIn)
 
 
 
-En este ejemplo, el método comprueba primero el tipo y el subtipo principales. A continuación, comprueba el tipo de formato para asegurarse de que el bloque de formato es una estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) . El filtro también podría admitir [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2), pero en este caso no sería ninguna ventaja real. La estructura **VIDEOINFOHEADER2** agrega compatibilidad con el entrelazado y los píxeles no cuadrados, que es probable que no sean relevantes en el vídeo de 8 bits.
+En este ejemplo, el método comprueba primero el tipo principal y el subtipo. A continuación, comprueba el tipo de formato para asegurarse de que el bloque de formato es una [**estructura VIDEOINFOHEADER.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) El filtro también podría admitir [**VIDEOINFOHEADER2,**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)pero en este caso no habría ninguna ventaja real. La **estructura VIDEOINFOHEADER2** agrega compatibilidad con entrelazado y píxeles no cuadrados, que es probable que no sean pertinentes en vídeo de 8 bits.
 
-Si el tipo de formato es correcto, en el ejemplo se comprueban los miembros **biBitCount** y **bicompression** de la estructura **VIDEOINFOHEADER** para comprobar que el formato es RGB sin comprimir de 8 bits. Como se muestra en este ejemplo, debe forzar el
+Si el tipo de formato es correcto, en el ejemplo se comprueban los miembros **biBitCount** y **biCompression** de la estructura **VIDEOINFOHEADER** para comprobar que el formato es RGB sin comprimir de 8 bits. Como se muestra en este ejemplo, debe coaccion
 
 
 ```C++
@@ -68,17 +68,17 @@ pbFormat
 
 
 
-puntero a la estructura correcta, en función del tipo de formato. Compruebe siempre el GUID de tipo de formato (**formatType**) y el tamaño del bloque de formato (**cbFormat**) antes de convertir el puntero.
+puntero a la estructura correcta, según el tipo de formato. Compruebe siempre el guid de tipo de formato (**formattype**) y el tamaño del bloque de formato **(cbFormat**) antes de convertir el puntero.
 
-En el ejemplo también se comprueba que el número de entradas de la paleta es compatible con la profundidad de bits y que el bloque de formato es lo suficientemente grande como para contener las entradas de la paleta. Si toda esta información es correcta, el método devuelve S \_ correcto.
+En el ejemplo también se comprueba que el número de entradas de paleta es compatible con la profundidad de bits y que el bloque de formato es lo suficientemente grande como para contener las entradas de la paleta. Si toda esta información es correcta, el método devuelve S \_ OK.
 
-Siguiente: [paso 3B. implemente el método GetMediaType](step-3b--implement-the-getmediatype-method.md).
+Siguiente: [Paso 3B. Implementar el método GetMediaType](step-3b--implement-the-getmediatype-method.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Escribir filtros de DirectShow](writing-directshow-filters.md)
+[Escribir DirectShow filtros](writing-directshow-filters.md)
 </dt> </dl>
 
  

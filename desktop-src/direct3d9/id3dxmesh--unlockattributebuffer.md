@@ -1,7 +1,7 @@
 ---
-description: Desbloquea un búfer de atributo.
+description: Desbloquea un búfer de atributos.
 ms.assetid: 47d59cf4-3497-4fee-b456-11c7fad84c66
-title: 'ID3DXMesh:: UnlockAttributeBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXMesh::UnlockAttributeBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 73be55bf6893f0191c6afa722caf389f3ae005d7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8dd70303527f70bcd1162a3b4138760d44bb07d2d35aba279dce5bedab3f24de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294423"
 ---
-# <a name="id3dxmeshunlockattributebuffer-method"></a>ID3DXMesh:: UnlockAttributeBuffer (método)
+# <a name="id3dxmeshunlockattributebuffer-method"></a>Método ID3DXMesh::UnlockAttributeBuffer
 
-Desbloquea un búfer de atributo.
+Desbloquea un búfer de atributos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

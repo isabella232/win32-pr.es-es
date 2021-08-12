@@ -12,16 +12,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 655379676bd117b89a6fe41a8d6895260e71a2bf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5d4915b2342e6c453134cabd431db59c62c037d6c5ec8cde139f402933bd4f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273713"
 ---
 # <a name="performservervalidation-eaptype"></a>PerformServerValidation (EapType)
 
-El elemento **PerformServerValidation (EapType)** indica si se realiza la validación del servidor.
+El **elemento PerformServerValidation (EapType)** indica si se realiza la validación del servidor.
 
 ``` syntax
 <xs:element
@@ -31,24 +31,24 @@ El elemento **PerformServerValidation (EapType)** indica si se realiza la valida
  />
 ```
 
-El elemento se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El elemento [**eapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) define el elemento .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PerformServerValidation** es opcional.
+El **elemento PerformServerValidation** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ El elemento **PerformServerValidation** es opcional.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Eaptlsconnectionpropertiesv1 Schema Elements](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> <dt>
 
 [**PerformServerValidation (EapType)**](eaptlsconnectionpropertiesv2shema-tlsextensions-tlsextensionstype-element.md)

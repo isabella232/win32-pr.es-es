@@ -1,7 +1,7 @@
 ---
-description: Obtenga información sobre el método de constructor CMediaPosition. CMediaPosition (Ctlutil. h). Este método usa los parámetros ' pName ', ' pUnk ' y ' PHR '.
+description: Obtenga información sobre el método de constructor CMediaPosition.CMediaPosition (Ctlutil.h). Este método usa los parámetros "pName", "pUnk" y "phr".
 ms.assetid: 4074f513-d1e7-4311-8732-4d755e621e55
-title: Constructor CMediaPosition. CMediaPosition (Ctlutil. h)
+title: Constructor CMediaPosition.CMediaPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cb9d86a2403cd0e2e71130b51cdb87bad15c4e95
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 101678ebcb851ef0fcdc8eeaa202435ca80eb796555c81e5e5d95eb4998131c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105670269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655266"
 ---
-# <a name="cmediapositioncmediaposition-constructor-ctlutilh---pname-punk-phr-parameters"></a>Constructor CMediaPosition. CMediaPosition (Ctlutil. h): parámetros pName, pUnk, PHR
+# <a name="cmediapositioncmediaposition-constructor-ctlutilh---pname-punk-phr-parameters"></a>Constructor CMediaPosition.CMediaPosition (Ctlutil.h): pName, pUnk, phr parameters
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ CMediaPosition(
 *pName* 
 </dt> <dd>
 
-Puntero al nombre del objeto, para la depuración. Asigne este parámetro en la memoria estática.
+Puntero al nombre del objeto para fines de depuración. Asigne este parámetro en memoria estática.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto, o **null** si no se agrega el objeto.
+Puntero al propietario de este objeto o **NULL** si el objeto no se agrega.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** .
+Puntero a un **valor HRESULT.**
 
 </dd> </dl>
 
@@ -69,14 +69,14 @@ Puntero a un valor **HRESULT** .
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Ctlutil. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Ctlutil.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CMediaPosition**](cmediaposition.md)
+[**CMediaPosition (clase)**](cmediaposition.md)
 </dt> </dl>
 
  

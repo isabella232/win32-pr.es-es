@@ -1,17 +1,17 @@
 ---
 description: La propiedad CurrentVolume recupera el número de volumen del directorio raíz actual.
 ms.assetid: f8d06a30-d6d5-43b9-b838-741d781f8d01
-title: Propiedad CurrentVolume
+title: CurrentVolume (propiedad)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b91c394be620dfc3f00b8793222848131355f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d07f9d82facc243654bad2e16e9a028e8cf920a51f15dd92cc879b0ea1340d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654622"
 ---
-# <a name="currentvolume-property"></a>Propiedad CurrentVolume
+# <a name="currentvolume-property"></a>CurrentVolume (propiedad)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
@@ -30,13 +30,13 @@ Devuelve un valor entero que representa el volumen de DVD actual. Si un disco fo
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**VolumesAvailable**](volumesavailable-property.md)
+[**Volúmenes disponibles**](volumesavailable-property.md)
 </dt> </dl>
 
  

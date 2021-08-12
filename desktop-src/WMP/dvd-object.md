@@ -1,9 +1,9 @@
 ---
-title: Objeto de DVD
-description: El objeto DVD proporciona propiedades y métodos para trabajar con DVDs.
+title: Dvd (objeto)
+description: El objeto DVD proporciona propiedades y métodos para trabajar con DVD.
 ms.assetid: 953f6ba5-637b-4f70-aeea-dfe9f52d8675
 keywords:
-- Media Player de objetos de DVD de Windows
+- Dvd Object Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,67 +13,67 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 656b08f90f3b6878cfde2a526ddf682a82dd8498
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: e7d399a3d62eb2d37402db599bd5d3303e5e978ab6ab5fbfee4b4c8970c9e836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104419769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579067"
 ---
-# <a name="dvd-object"></a>Objeto de DVD
+# <a name="dvd-object"></a>Dvd (objeto)
 
-El objeto **DVD** proporciona propiedades y métodos para trabajar con DVDs.
+El **objeto DVD** proporciona propiedades y métodos para trabajar con DVD.
 
-El objeto **DVD** admite las siguientes propiedades.
+El **objeto DVD** admite las siguientes propiedades.
 
 
 
 | Propiedad                           | Descripción                                                                                        |
 |------------------------------------|----------------------------------------------------------------------------------------------------|
-| [dominio](dvd-domain.md)           | Recupera el dominio actual del DVD.                                                           |
-| [isAvailable](dvd-isavailable.md) | Recupera si un tipo de información especificado está disponible o se puede realizar una acción determinada. |
+| [Dominio](dvd-domain.md)           | Recupera el dominio actual del DVD.                                                           |
+| [Isavailable](dvd-isavailable.md) | Recupera si un tipo especificado de información está disponible o si se puede realizar una acción determinada. |
 
 
 
- 
+ 
 
-El objeto **DVD** admite los métodos siguientes.
+El **objeto DVD** admite los métodos siguientes.
 
 
 
 | Método                         | Descripción                                                                                          |
 |--------------------------------|------------------------------------------------------------------------------------------------------|
 | [Atrás](dvd-back.md)           | Cambia la presentación de un submenú a su menú primario.                                               |
-| [Recuper](dvd-resume.md)       | Cambia el modo de reproducción del modo de menú, reanudando en la misma posición que cuando se invocó el menú. |
+| [Reanudar](dvd-resume.md)       | Cambia al modo de reproducción desde el modo de menú y se reanuda en la misma posición que cuando se invocó el menú. |
 | [titleMenu](dvd-titlemenu.md) | Detiene la reproducción y muestra el menú de título.                                                          |
-| [Menú de menús](dvd-topmenu.md)     | Detiene la reproducción y muestra el menú raíz.                                                           |
+| [topMenu](dvd-topmenu.md)     | Detiene la reproducción y muestra el menú raíz.                                                           |
 
 
 
- 
+ 
 
-Se tiene acceso al objeto de **DVD** a través de la siguiente propiedad.
+Se **tiene acceso** al objeto DVD a través de la propiedad siguiente.
 
 
 
 | Object                      | Propiedad              |
 |-----------------------------|-----------------------|
-| [Reproductor](player-object.md) | [discos](player-dvd.md) |
+| [Reproductor](player-object.md) | [Dvd](player-dvd.md) |
 
 
 
- 
+ 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Referencia del modelo de objetos para scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,29 +4,29 @@ ms.assetid: 2925c315-4488-4961-a8f7-77a9ac571b70
 title: Transiciones y efectos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43f30d3a404993e58b859a2cacdf0bcd4718e45b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f9142baf35b85a3887600abb2730b9ddbc3a16af625420ac3ef1378e8cd86df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651237"
 ---
 # <a name="transitions-and-effects"></a>Transiciones y efectos
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-En esta sección se describen los efectos y las transiciones que se proporcionan con los servicios de edición de DirectShow.
+En esta sección se describen los efectos y transiciones proporcionados con DirectShow Editing Services.
 
 
 
 | Transición                              | Descripción                                                                            |
 |-----------------------------------------|----------------------------------------------------------------------------------------|
-| [Compositor](compositor-transition.md) | Estira el primer plano en un rectángulo designado, sin modificar el fondo. |
-| [Clave](key-transition.md)               | Realiza la creación de claves basada en croma, alfa, matiz o luminancia.                             |
-| [Borrado de SMPTE](smpte-wipe-transition.md) | Realiza los borrados estándar de SMPTE.                                                     |
+| [Compositor](compositor-transition.md) | Extiende el primer plano en un rectángulo designado, sin modificar el fondo. |
+| [Clave](key-transition.md)               | Realiza la clave en función de la luminosidad, alfa, matiz o luminosidad.                             |
+| [Borrado de SMPTE](smpte-wipe-transition.md) | Realiza los borrados SMPTE estándar.                                                     |
 
 
 
@@ -36,8 +36,8 @@ En esta sección se describen los efectos y las transiciones que se proporcionan
 
 | Efecto                                        | Descripción                           |
 |-----------------------------------------------|---------------------------------------|
-| [Establecedor alfa](alpha-setter-effect.md)       | Establece los bits alfa de una imagen de vídeo. |
-| [Sobre volumen](volume-envelope-effect.md) | Establece el volumen en una secuencia de audio.   |
+| [Setter alfa](alpha-setter-effect.md)       | Establece los bits alfa en una imagen de vídeo. |
+| [Sobre de volumen](volume-envelope-effect.md) | Establece el volumen en una secuencia de audio.   |
 
 
 
@@ -57,7 +57,7 @@ En esta sección se describen los efectos y las transiciones que se proporcionan
 
 <dl> <dt>
 
-[Referencia de C++ de los servicios de edición de DirectShow](directshow-editing-services-c---reference.md)
+[DirectShow Referencia de C++ de Servicios de edición](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

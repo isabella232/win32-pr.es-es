@@ -1,28 +1,28 @@
 ---
-title: Propiedad PluginDlls de IMsTscAdvancedSettings
-description: Especifica los nombres de los archivos dll de cliente de canal virtual que se van a cargar.
+title: Propiedad IMsTscAdvancedSettings PluginDlls
+description: Especifica los nombres de los archivos DLL de cliente de canal virtual que se cargarán.
 ms.assetid: 4b248fb8-200a-4ce0-8c8e-ce1692a80d88
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsTscAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsTscAdvancedSettings, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad PluginDlls
-- Propiedad PluginDlls Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad PluginDlls
+- PluginDlls, propiedad Servicios de Escritorio remoto
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad PluginDlls
+- La propiedad PluginDlls Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad PluginDlls
 topic_type:
 - apiref
 api_name:
@@ -50,16 +50,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3ef2e518145ae34533477bcbefb92e15d9c8d94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e896a8ce82a6e1dee7896a242bb2dace442dba595a66a7c45a7c3baf3060dff3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606136"
 ---
-# <a name="imstscadvancedsettingsplugindlls-property"></a>IMsTscAdvancedSettings::P propiedad luginDlls
+# <a name="imstscadvancedsettingsplugindlls-property"></a>Propiedad IMsTscAdvancedSettings::P luginDlls
 
-Especifica los nombres de los archivos dll de cliente de canal virtual que se van a cargar. Los archivos dll de cliente de canal virtual también se conocen como archivos dll de complemento.
+Especifica los nombres de los archivos DLL de cliente de canal virtual que se cargarán. Los archivos DLL de cliente de canal virtual también se conocen como archivos DLL de complemento.
 
 Esta propiedad es de solo escritura.
 
@@ -76,19 +76,19 @@ HRESULT put_PluginDlls(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Lista separada por comas de los nombres de los archivos dll de cliente de canal virtual que se van a cargar. Los nombres de los archivos DLL solo deben contener caracteres alfanuméricos. Para obtener más información acerca del formato de estos nombres, consulte [registro del complemento de DVC](dvc-plug-in-registration.md).
+Lista separada por comas de los nombres de los archivos DLL de cliente de canal virtual que se cargarán. Los nombres dll solo deben contener caracteres alfanuméricos. Para obtener más información sobre el formato de estos nombres, vea [Registro del complemento DVC](dvc-plug-in-registration.md).
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Por motivos de seguridad, si el control se hospeda en una página web, la propiedad **PluginDlls** solo acepta una lista con nombre de archivos dll de cliente de canal virtual. El control devuelve un error si se especifica un sistema de archivos o una ruta de acceso UNC.
+Por motivos de seguridad, si el control se hospeda en una página web, la propiedad **PluginDlls** solo acepta una lista con nombre de archivos DLL de cliente de canal virtual. El control devuelve un error si se especifica un sistema de archivos o una ruta de acceso UNC.
 
-Los archivos dll de cliente de canal virtual a los que se tendrá acceso desde una página web deben instalarse en el directorio "% WinDir% \\ system32", ya que el control ActiveX escritorio remoto solo tiene acceso a los archivos dll de esa ubicación. Si el control no está hospedado en una página web, esta restricción de seguridad no existe y las rutas de acceso completas se pueden usar para obtener acceso y cargar los archivos DLL del cliente del canal virtual ubicados en cualquier lugar del sistema de archivos.
+Los archivos DLL de cliente de canal virtual a los que se accederá desde una página web deben instalarse en el directorio "%WinDir% system32" porque el control Escritorio remoto ActiveX solo tiene acceso a los archivos DLL de esa \\ ubicación. Si el control no se hospeda en una página web, esta restricción de seguridad no existe y se pueden usar rutas de acceso completas para acceder y cargar archivos DLL de cliente de canal virtual ubicados en cualquier lugar del sistema de archivos.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

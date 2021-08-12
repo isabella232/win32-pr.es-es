@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_GET_VIDEOFORMAT (VFW. h)
-description: El \_ mensaje Cap de WM \_ obtener \_ videoformat recupera una copia del formato de vídeo en uso o el tamaño necesario para el formato de vídeo. Puede enviar este mensaje explícitamente o mediante las macros capGetVideoFormat y capGetVideoFormatSize.
+title: WM_CAP_GET_VIDEOFORMAT mensaje (Vfw.h)
+description: El mensaje GET VIDEOFORMAT de WM CAP recupera una copia del formato de vídeo en uso o el \_ tamaño necesario para el formato de \_ \_ vídeo. Puede enviar este mensaje explícitamente o mediante las macros capGetVideoFormat y capGetVideoFormatSize.
 ms.assetid: ac72dfdb-fe1a-4007-bdce-41e5e67d076a
 keywords:
-- Mensaje de WM_CAP_GET_VIDEOFORMAT de Windows multimedia
+- WM_CAP_GET_VIDEOFORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 072d71366efee550b037d4a20388817954937854
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: afae3ea79b29cad6a758272f8f3952fdfb830a2b3d6d60f9fc5b4ca5042179fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622624"
 ---
-# <a name="wm_cap_get_videoformat-message"></a>\_Mensaje de \_ obtención de formato de Cap \_ de WM
+# <a name="wm_cap_get_videoformat-message"></a>Mensaje \_ GET \_ VIDEOFORMAT de WM CAP \_
 
-El **mensaje \_ Cap de WM \_ obtener \_ videoformat** recupera una copia del formato de vídeo en uso o el tamaño necesario para el formato de vídeo. Puede enviar este mensaje explícitamente o mediante las macros [**capGetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformat) y [**capGetVideoFormatSize**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize) .
+El **mensaje \_ GET \_ \_ VIDEOFORMAT** de WM CAP recupera una copia del formato de vídeo en uso o el tamaño necesario para el formato de vídeo. Puede enviar este mensaje explícitamente o mediante las macros [**capGetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformat) y [**capGetVideoFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize)
 
 
 ```C++
@@ -48,17 +48,17 @@ Tamaño, en bytes, de la estructura a la que hace referencia **s**.
 <span id="psVideoFormat"></span><span id="psvideoformat"></span><span id="PSVIDEOFORMAT"></span>*psVideoFormat*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) . También puede especificar **null** para recuperar el número de bytes necesarios.
+Puntero a una [**estructura BITMAPINFO.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) También puede especificar **NULL para** recuperar el número de bytes necesarios.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el tamaño, en bytes, del formato de vídeo o cero si la ventana de captura no está conectada a un controlador de captura. En el caso de los formatos de vídeo que requieran una paleta, también se devuelve la paleta actual.
+Devuelve el tamaño, en bytes, del formato de vídeo o cero si la ventana de captura no está conectada a un controlador de captura. Para los formatos de vídeo que requieren una paleta, también se devuelve la paleta actual.
 
 ## <a name="remarks"></a>Observaciones
 
-Dado que los formatos de vídeo comprimidos varían en cuanto a los requisitos de tamaño, las aplicaciones deben recuperar primero el tamaño, asignar la memoria y, por último, solicitar los datos de formato de vídeo.
+Dado que los formatos de vídeo comprimidos varían en los requisitos de tamaño, las aplicaciones deben recuperar primero el tamaño, luego asignar memoria y, por último, solicitar los datos de formato de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Dado que los formatos de vídeo comprimidos varían en cuanto a los requisitos d
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

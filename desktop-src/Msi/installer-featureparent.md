@@ -1,7 +1,7 @@
 ---
 description: La propiedad FeatureParent especifica la característica primaria de una característica. Una cadena vacía para esta propiedad indica que la característica no tiene ningún elemento primario y es un elemento raíz.
 ms.assetid: 909341c9-bebf-493a-9d71-cde1399077db
-title: Propiedad Installer. FeatureParent
+title: Installer.FeatureParent, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 1fee4c34fcca6a72f8512f2b144d73a3b4b42441
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c97e73f703967117c85b5bd86816561a708d128012fcebaeafaaac8bf3ff8262
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631521"
 ---
-# <a name="installerfeatureparent-property"></a>Propiedad Installer. FeatureParent
+# <a name="installerfeatureparent-property"></a>Installer.FeatureParent, propiedad
 
-La propiedad **FeatureParent** especifica la característica primaria de una característica. Una cadena vacía para esta propiedad indica que la característica no tiene ningún elemento primario y es un elemento raíz.
+La **propiedad FeatureParent** especifica la característica primaria de una característica. Una cadena vacía para esta propiedad indica que la característica no tiene ningún elemento primario y es un elemento raíz.
 
 Esta propiedad es de solo lectura.
 
@@ -43,9 +43,9 @@ propVal = Installer.FeatureParent
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

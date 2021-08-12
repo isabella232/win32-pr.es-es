@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de CredentialsSourceParameters
-description: Define el elemento necesario para especificar el origen del certificado que se va a utilizar con una autenticación EAP-TLS.
+title: Tipo complejo CredentialsSourceParameters
+description: Define el elemento necesario para especificar el origen del certificado que se va a usar con una autenticación EAP-TLS.
 ms.assetid: 1482694e-3025-4231-8154-4be0301fe5ce
 keywords:
-- Tipo complejo CredentialsSourceParameters EAPHost
+- CredentialsSourceParameters de tipo complejo EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 912faa4a388d9a57225991959625a978ca0921f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 881cd4225c0e7e2f557ad7206176224a0b3929cdac7398b29f30382506f816ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274012"
 ---
-# <a name="credentialssourceparameters-complex-type"></a>Tipo complejo de CredentialsSourceParameters
+# <a name="credentialssourceparameters-complex-type"></a>Tipo complejo CredentialsSourceParameters
 
-El tipo complejo **CredentialsSourceParameters** define el elemento necesario para especificar el origen del certificado que se va a utilizar con una autenticación EAP-TLS.
+El **tipo complejo CredentialsSourceParameters** define el elemento necesario para especificar el origen del certificado que se usará con una autenticación EAP-TLS.
 
-Existe una opción entre el elemento de [**tarjeta inteligente**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) o el elemento [**CertificateStore**](eaptlsconnectionpropertiesv1schema-certificatestore-credentialssourceparameters-element.md) .
+Hay una opción entre el elemento [**SmartCard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) o [**el elemento CertificateStore.**](eaptlsconnectionpropertiesv1schema-certificatestore-credentialssourceparameters-element.md)
 
 ``` syntax
 <xs:complexType name="CredentialsSourceParameters">
@@ -46,27 +46,27 @@ Existe una opción entre el elemento de [**tarjeta inteligente**](eaptlsconnecti
 
 | Elemento                                                                                                             | Tipo                                                                                  | Descripción                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| [**CertificateStore**](eaptlsconnectionpropertiesv1schema-certificatestore-credentialssourceparameters-element.md) | [**CertSelection**](eaptlsconnectionpropertiesv1schema-certselection-complextype.md) | Indica que EAP-TLS debe leer el certificado del almacén My del usuario o el equipo que se va a autenticar. <br/> |
-| [**Tarjeta**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md)               | [**emptyString**](eaptlsconnectionpropertiesv1schema-emptystring-simpletype.md)      | Indica que EAP-TLS debe leer el certificado de la tarjeta inteligente. <br/>                                          |
+| [**CertificateStore**](eaptlsconnectionpropertiesv1schema-certificatestore-credentialssourceparameters-element.md) | [**CertSelection**](eaptlsconnectionpropertiesv1schema-certselection-complextype.md) | Indica que EAP-TLS debe leer el certificado de Mi almacén del usuario o de la máquina que se autentica. <br/> |
+| [**Smartcard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md)               | [**emptyString**](eaptlsconnectionpropertiesv1schema-emptystring-simpletype.md)      | Indica que EAP-TLS debe leer el certificado de la tarjeta inteligente. <br/>                                          |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los elementos [**CertificateStore**](eaptlsconnectionpropertiesv1schema-certificatestore-credentialssourceparameters-element.md) y [**SmartCard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) no se pueden usar simultáneamente.
+Los [**elementos CertificateStore**](eaptlsconnectionpropertiesv1schema-certificatestore-credentialssourceparameters-element.md) [**y SmartCard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) no se pueden usar simultáneamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Los elementos [**CertificateStore**](eaptlsconnectionpropertiesv1schema-certific
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Tipos complejos de esquema de eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-complex-types.md)
+[Tipos complejos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-complex-types.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-title: Tipos complejos de esquema de eapcommon
+title: Tipos complejos de esquema eapcommon
 description: Obtenga información sobre los tipos complejos del esquema eapcommon. El esquema define los tipos complejos EapBlob y EapMethodType.
 ms.assetid: f6001c76-3716-4e90-8737-b815f4af21ae
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7f1f6a82519447529e88c9c47dfa80091b100dc8
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 4b855a5148183ffac7a26ae614aa468463827e44ccb4ca6aea9453fef2fb8549
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118275173"
 ---
-# <a name="eapcommon-schema-complex-types"></a>Tipos complejos de esquema de eapcommon
+# <a name="eapcommon-schema-complex-types"></a>Tipos complejos de esquema eapcommon
 
-El esquema [eapcommon](eapcommonschema-schema.md) define los siguientes tipos complejos.
+El [esquema eapcommon](eapcommonschema-schema.md) define los siguientes tipos complejos.
 
 -   [**EapBlob**](eapcommonschema-eapblob-complextype.md)
 -   [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md)
@@ -33,9 +33,9 @@ El esquema [eapcommon](eapcommonschema-schema.md) define los siguientes tipos co
 [Esquema eapcommon](eapcommonschema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

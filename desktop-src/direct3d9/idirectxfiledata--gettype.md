@@ -1,7 +1,7 @@
 ---
 description: Recupera el GUID de la plantilla del objeto. En desuso.
 ms.assetid: bb4a4a32-a9e7-4caa-869d-24cfb310d8d1
-title: 'IDirectXFileData:: GetType (método) (DXFile. h)'
+title: Método IDirectXFileData::GetType (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 463391c661b2d166a6fba773e3b01590daf0ebd7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 564d682c606d8b6bc0001f5d430d2d93f36c25210746169af4802512c330da08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292281"
 ---
-# <a name="idirectxfiledatagettype-method"></a>IDirectXFileData:: GetType (método)
+# <a name="idirectxfiledatagettype-method"></a>IDirectXFileData::GetType (método)
 
 Recupera el GUID de la plantilla del objeto. En desuso.
 
@@ -53,7 +53,7 @@ Dirección de un puntero para recibir el GUID de la plantilla del objeto.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser DXFILEERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,22 +1,22 @@
 ---
-description: XMHALF4 describe 4D vector que consta de cuatro valores de punto flotante de media precisión (16 bits).
+description: XMHALF4 describe el vector 4D que consta de cuatro valores de punto flotante de precisión media (16 bits).
 ms.assetid: 2bd8d651-e60e-409c-9257-5b30e212372e
-title: Extensiones de XMHALF4
+title: Extensiones XMHALF4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afded103fc14c94396b476ae0448fd697c445955
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c0feeeb54c2f9139f251965295fff15af25f56e7deb987f744d0a3edf20bb31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277867"
 ---
-# <a name="xmhalf4-extensions"></a>Extensiones de XMHALF4
+# <a name="xmhalf4-extensions"></a>Extensiones XMHALF4
 
-[**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) describe 4D vector que consta de cuatro valores de punto flotante de media precisión (16 bits).
+[**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) describe el vector 4D que consta de cuatro valores de punto flotante de precisión media (16 bits).
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

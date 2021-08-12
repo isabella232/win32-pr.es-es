@@ -3,39 +3,39 @@ title: Determinar el estado de sincronización de la lista de reproducción
 description: Determinar el estado de sincronización de la lista de reproducción
 ms.assetid: 634b659b-c3ae-4957-b17e-18fd92e915be
 keywords:
-- Windows Media Player, listas de reproducción de sincronización
-- Modelo de objetos de Windows Media Player, listas de reproducción de sincronización
+- Reproductor de Windows Media,listas de reproducción de sincronización
+- Reproductor de Windows Media de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
-- Windows Media Player Mobile, listas de reproducción de sincronización
-- Control ActiveX de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX móvil de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX, listas de reproducción de sincronización
+- Reproductor de Windows Media Móvil, listas de reproducción de sincronización
+- Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
+- Reproductor de Windows Media Control de ActiveX móviles, listas de reproducción de sincronización
+- ActiveX control, listas de reproducción de sincronización
 - listas de reproducción, sincronización
-- listas de reproducción de metarchivos, sincronización
-- Listas de reproducción de metarchivos de Windows Media, sincronización
-- dispositivos portátiles, determinar el estado de la lista de reproducción
+- listas de reproducción de metarchivo, sincronización
+- Windows Listas de reproducción de metarchivo multimedia, sincronización
+- dispositivos portátiles, determinar el estado de la lista de reproducción de sincronización
 - listas de reproducción de sincronización, estado de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9758cfbb73c698a40d6d4f48e645e57750d8a332
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a14af59f66d1b21eac00208ecc805f756761256e47a35042694bcd65e6f96558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105695528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579464"
 ---
 # <a name="determining-playlist-synchronization-state"></a>Determinar el estado de sincronización de la lista de reproducción
 
-Windows Media Player 10 o posterior utiliza el atributo **SyncState** para contener información acerca de si un archivo multimedia digital determinado se ha copiado en un dispositivo portátil y, en caso de error, si se produjo un error en la copia porque el dispositivo no tiene suficiente memoria.
+Reproductor de Windows Media 10 o posterior usa el atributo **SyncState** para contener información sobre si un archivo multimedia digital determinado se ha copiado en un dispositivo portátil y, en caso de error, si no se pudo copiar porque el dispositivo no tenía suficiente memoria.
 
-En el código de ejemplo siguiente se crea una función que recupera esta información de un archivo multimedia digital. La función toma los parámetros siguientes:
+El código de ejemplo siguiente crea una función que recupera esta información de un archivo multimedia digital. La función toma los parámetros siguientes:
 
--   *pMedia*. Puntero a una interfaz **IWMPMedia** que representa el archivo multimedia digital que se va a inspeccionar.
+-   *pMedia*. Puntero a una **interfaz IWMPMedia** que representa el archivo multimedia digital que se inspeccionará.
 -   *lPsIndex*. Índice de asociación del dispositivo actual.
--   *pulOnDevice*. Puntero a una variable de **tipo Long** que recibe el valor que indica si el archivo multimedia digital se ha copiado en el dispositivo.
--   *pulDidNotFit*. Puntero a una variable **Long** que recibe el valor que indica si se produjo un error en la operación de copia porque el dispositivo no tenía suficiente memoria.
+-   *pulOnDevice*. Puntero a una variable **larga** que recibe el valor que indica si el archivo multimedia digital se ha copiado en el dispositivo.
+-   *pulDidNotFit*. Puntero a una variable **larga** que recibe el valor que indica si la operación de copia no se pudo hacer porque el dispositivo no tenía suficiente memoria.
 
-La información contenida en el atributo **SyncState** se codifica de manera bit a bit. Puede ver cómo se usa esta función en el código de ejemplo en la [enumeración de los elementos multimedia](enumerating-the-media-items.md).
+La información contenida en el **atributo SyncState** se codifica bit a bit. Puede ver cómo se usa esta función en el código de ejemplo de [Enumeración de los elementos multimedia](enumerating-the-media-items.md).
 
 
 ```C++
@@ -97,21 +97,21 @@ STDMETHODIMP CSyncSettings::GetPartnershipSyncState(IWMPMedia* pMedia, long lPsI
 
 <dl> <dt>
 
-[**Interfaz IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**IWMPMedia (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
 [**IWMPMedia3::getItemInfoByType**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia3-getiteminfobytype)
 </dt> <dt>
 
-[**Administrar listas de reproducción de sincronización**](managing-synchronization-playlists.md)
+[**Administración de listas de reproducción de sincronización**](managing-synchronization-playlists.md)
 </dt> <dt>
 
 [**Atributo SyncState**](syncstate-attribute.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

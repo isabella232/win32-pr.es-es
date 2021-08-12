@@ -1,5 +1,5 @@
 ---
-description: 'Método CMediaEvent.Invoke: proporciona acceso a propiedades y métodos expuestos por un objeto .'
+description: 'Método CMediaEvent.Invoke: proporciona acceso a las propiedades y los métodos expuestos por un objeto .'
 ms.assetid: 2b091b57-0855-489a-9a33-cfc75f63ad07
 title: Método CMediaEvent.Invoke (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea812d0c7629b98d90f3f7e535d229c707452b23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 37fadefe3163ed4211b8112ec17cc1cfb3fb3625b4aba207db06a25de3e27b17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655229"
 ---
 # <a name="cmediaeventinvoke-method"></a>Método CMediaEvent.Invoke
 
@@ -52,7 +52,7 @@ HRESULT Invoke(
 *dispidMember* 
 </dt> <dd>
 
-Identificador del miembro. Use [**CMediaEvent::GetIDsOfNames**](cmediaevent-getidsofnames.md) o la documentación del objeto para obtener el identificador de envío.
+Identificador del miembro. Use [**CMediaEvent::GetIDsOfNames**](cmediaevent-getidsofnames.md) o la documentación del objeto para obtener el identificador de distribución.
 
 </dd> <dt>
 
@@ -80,28 +80,28 @@ Marcas que describen el contexto de la `CMediaEvent::Invoke` llamada.
 *pdispparams* 
 </dt> <dd>
 
-Puntero a una estructura que contiene una matriz de argumentos, una matriz de los ID de distribución de argumentos para argumentos con nombre y cuenta el número de elementos de las matrices.
+Puntero a una estructura que contiene una matriz de argumentos, una matriz de los IDs de distribución de argumentos para argumentos con nombre y cuenta el número de elementos de las matrices.
 
 </dd> <dt>
 
 *pvarResult* 
 </dt> <dd>
 
-Puntero a donde se almacenará el resultado o **NULL** si el autor de la llamada no espera ningún resultado.
+Puntero a donde se va a almacenar el resultado o **NULL** si el autor de la llamada no espera ningún resultado.
 
 </dd> <dt>
 
 *pexcepinfo* 
 </dt> <dd>
 
-Puntero a una estructura que contiene información de excepción.
+Puntero a una estructura que contiene información de excepciones.
 
 </dd> <dt>
 
 *puArgErr* 
 </dt> <dd>
 
-Puntero al índice del primer argumento, dentro de la matriz **rgvarg** de la estructura **DIS DISLIGRAMS,** que tiene un error. Para obtener más información **sobre DIS DISRAMS,** consulte el SDK de plataforma.
+Puntero al índice del primer argumento, dentro de la matriz **rgvarg** de la estructura **DISLIGRAMS,** que tiene un error. Para obtener más información sobre **DIS DISRAMS,** consulte el SDK de plataforma.
 
 </dd> </dl>
 
@@ -115,12 +115,12 @@ Devuelve DISP \_ E \_ UNKNOWNINTERFACE si *riid* no es IID \_ NULL. Devuelve uno
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 0247dcb9-64ee-4562-944a-44bcfae80f2d
 title: Reloj de referencia del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c8de8b208e32b6ea4772f3183c38a816ea43bb6
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: f9b3b4fa69b2ff9b74b937dd38d8be83203d5cdd43ba9a26d2cac4077c40c811
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651845"
 ---
 # <a name="system-reference-clock"></a>Reloj de referencia del sistema
 
@@ -20,7 +20,7 @@ El objeto Reloj de referencia del sistema implementa un reloj de referencia que 
 | Etiqueta | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identificador de clase | CLSID \_ SystemClock                                                                                                                                       |
-| Interfaces       | [**IAMClockAdjust,**](/windows/desktop/api/Strmif/nn-strmif-iamclockadjust) [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock), [**IReferenceClockTimerControl**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclocktimercontrol) |
+| Interfaces       | [**IAMClockAdjust**](/windows/desktop/api/Strmif/nn-strmif-iamclockadjust), [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock), [**IReferenceClockTimerControl**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclocktimercontrol) |
 
 
 
@@ -30,7 +30,7 @@ El objeto Reloj de referencia del sistema implementa un reloj de referencia que 
 
 <dl> <dt>
 
-[Objetos DirectShow](directshow-objects.md)
+[DirectShow Objetos](directshow-objects.md)
 </dt> <dt>
 
 [Relojes de referencia](reference-clocks.md)

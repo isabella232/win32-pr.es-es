@@ -1,7 +1,7 @@
 ---
-description: Comprueba si el BoundingSphere contiene un objeto especificado.
+description: Comprueba si BoundingSphere contiene un objeto especificado.
 ms.assetid: e5e42d29-f39f-44cd-8be1-06afd5eec7d9
-title: BoundingSphere. Contains (métodos)
+title: Métodos BoundingSphere.Contains
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 10277f897b3b5888a5bb44be88b9df7eb0c3316b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cba59831335523f4b80074c3c25118a4545b317607834191d070f310ae5eee21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278219"
 ---
-# <a name="boundingspherecontains-methods"></a>BoundingSphere. Contains (métodos)
+# <a name="boundingspherecontains-methods"></a>Métodos BoundingSphere.Contains
 
-Comprueba si el BoundingSphere contiene un objeto especificado.
+Comprueba si BoundingSphere contiene un objeto especificado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -28,12 +28,12 @@ Comprueba si el BoundingSphere contiene un objeto especificado.
 
 | Método                                                                                     | Descripción                                                                                                                                      |
 |:-------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BoundingSphere:: Contains (XMVECTOR)**](/previous-versions/windows/desktop/legacy/hh449621(v=vs.85))                   | Comprueba si BoundingSphere contiene un punto especificado.<br/>                                                                          |
-| [**BoundingSphere:: Contains (const BoundingBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingbox_))         | Comprueba si BoundingSphere contiene un BoundingBox especificado.<br/>                                                                    |
-| [**BoundingSphere:: Contains (const BoundingSphere&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingsphere_))      | Comprueba si BoundingSphere contiene un BoundingSphere especificado.<br/>                                                                 |
-| [**BoundingSphere:: Contains (const BoundingFrustum&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingfrustum_))     | Comprueba si el [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere) contiene el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)especificado.<br/>         |
-| [**BoundingSphere:: Contains (XMVECTOR, XMVECTOR, XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(fxmvector_fxmvector_fxmvector)) | Comprueba si el BoundingSphere contiene un triángulo especificado.<br/>                                                                       |
-| [**BoundingSphere:: Contains (const BoundingOrientedBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingorientedbox_)) | Comprueba si el [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere) contiene el [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)especificado.<br/> |
+| [**BoundingSphere::Contains (XMVECTOR)**](/previous-versions/windows/desktop/legacy/hh449621(v=vs.85))                   | Comprueba si BoundingSphere contiene un punto especificado.<br/>                                                                          |
+| [**BoundingSphere::Contains (const BoundingBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingbox_))         | Comprueba si BoundingSphere contiene un objeto BoundingBox especificado.<br/>                                                                    |
+| [**BoundingSphere::Contains (const BoundingSphere&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingsphere_))      | Comprueba si BoundingSphere contiene un valor de BoundingSphere especificado.<br/>                                                                 |
+| [**BoundingSphere::Contains (const BoundingFrustum&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingfrustum_))     | Comprueba si [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere) contiene el [**valor de BoundingFrustum especificado.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>         |
+| [**BoundingSphere::Contains (XMVECTOR,XMVECTOR,XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(fxmvector_fxmvector_fxmvector)) | Comprueba si BoundingSphere contiene un triángulo especificado.<br/>                                                                       |
+| [**BoundingSphere::Contains (const BoundingOrientedBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-contains(constboundingorientedbox_)) | Comprueba si [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere) contiene el [**valor de BoundingOrientedBox especificado.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/> |
 
 
 

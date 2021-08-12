@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidLCMapStringFlagsException'
-title: Constructor de EsentInvalidLCMapStringFlagsException
+description: 'Más información sobre: Constructor EsentInvalidLCMapStringFlagsException'
+title: Constructor EsentInvalidLCMapStringFlagsException
 TOCTitle: 'EsentInvalidLCMapStringFlagsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidLCMapStringFlagsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidlcmapstringflagsexception.esentinvalidlcmapstringflagsexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4963f1f0bfc4dc81752b8f997fc893e91bd89d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8373e1a9ec8a151b4472a5af34bbad4612e872136232188e5e6bfb0bc76dddc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118265752"
 ---
-# <a name="esentinvalidlcmapstringflagsexception-constructor"></a>Constructor de EsentInvalidLCMapStringFlagsException
+# <a name="esentinvalidlcmapstringflagsexception-constructor"></a>Constructor EsentInvalidLCMapStringFlagsException
 
 Inicializa una nueva instancia de la clase EsentInvalidLCMapStringFlagsException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentInvalidLCMapStringFlagsException()
 
 [Miembros de EsentInvalidLCMapStringFlagsException](./esentinvalidlcmapstringflagsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

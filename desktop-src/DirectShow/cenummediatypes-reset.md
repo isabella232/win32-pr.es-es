@@ -1,7 +1,7 @@
 ---
-description: 'El método Reset restablece la secuencia de enumeración al principio. Este método implementa el método IEnumMediaTypes:: RESET.'
+description: El método Reset restablece la secuencia de enumeración al principio. Este método implementa el método IEnumMediaTypes::Reset.
 ms.assetid: 3a5388d5-eaab-47af-b45e-c75199a22f02
-title: Método CEnumMediaTypes. Reset (Amfilter. h)
+title: Método CEnumMediaTypes.Reset (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 81451b1a01e873d380da6c341977af0028d5160b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82dd6ff798136f6e97ddfcbcb181ea9fa1cc91d593b762a2b555e958b9073294
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656420"
 ---
-# <a name="cenummediatypesreset-method"></a>CEnumMediaTypes. Reset (método)
+# <a name="cenummediatypesreset-method"></a>Método CEnumMediaTypes.Reset
 
-El `Reset` método restablece la secuencia de enumeración al principio. Este método implementa el método [**IEnumMediaTypes:: RESET**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-reset) .
+El `Reset` método restablece la secuencia de enumeración al principio. Este método implementa el [**método IEnumMediaTypes::Reset.**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-reset)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve S \_ correcto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve S \_ correcto.
 
 <dl> <dt>
 
-[**Clase CEnumMediaTypes**](cenummediatypes.md)
+[**CEnumMediaTypes (clase)**](cenummediatypes.md)
 </dt> </dl>
 
  

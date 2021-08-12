@@ -1,22 +1,22 @@
 ---
-title: Propiedad AllowCredentialSaving de IMsRdpClientNonScriptable4
-description: Especifica si el cuadro de diálogo credenciales muestra una casilla que permite guardar las credenciales.
+title: IMsRdpClientNonScriptable4 AllowCredentialSaving, propiedad
+description: Especifica si el cuadro de diálogo de credenciales muestra una casilla que permite guardar las credenciales.
 ms.assetid: c5148ff0-0d7f-413d-b2a8-ff942668bee6
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AllowCredentialSaving
-- Propiedad AllowCredentialSaving Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad AllowCredentialSaving
-- Propiedad AllowCredentialSaving Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad AllowCredentialSaving
-- Servicios de Escritorio remoto de la propiedad AllowCredentialSaving, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad AllowCredentialSaving
-- Servicios de Escritorio remoto de la propiedad AllowCredentialSaving, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad AllowCredentialSaving
-- Servicios de Escritorio remoto de la propiedad AllowCredentialSaving, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad AllowCredentialSaving
-- Servicios de Escritorio remoto de la propiedad AllowCredentialSaving, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad AllowCredentialSaving
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad AllowCredentialSaving
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad AllowCredentialSaving
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad AllowCredentialSaving
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad AllowCredentialSaving
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad AllowCredentialSaving
+- Propiedad AllowCredentialSaving Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad AllowCredentialSaving
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 240e2eb8e80209ee5c90d63f2996231cf84bb2dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cca6f61b8cbcc315eb93e6e9c3ab0f89684e4d29c3fcb8313af0198ee594cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607740"
 ---
-# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>IMsRdpClientNonScriptable4:: AllowCredentialSaving (propiedad)
+# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>IMsRdpClientNonScriptable4::AllowCredentialSaving, propiedad
 
-Especifica si el cuadro de diálogo credenciales muestra una casilla que permite guardar las credenciales.
+Especifica si el cuadro de diálogo de credenciales muestra una casilla que permite guardar las credenciales.
 
 Esta propiedad es de lectura y escritura.
 
@@ -66,11 +66,11 @@ HRESULT get_AllowCredentialSaving(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece si el cuadro de diálogo credenciales muestra una casilla que permite guardar las credenciales.
+Establece si el cuadro de diálogo de credenciales muestra una casilla que permite guardar las credenciales.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Devuelve **S \_ correcto** si se realiza correctamente.
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IMsRdpClientNonScriptable4 se define como f50fa8aa-1c7d-4f59-b15c-a90cacae1fcb<br/> |
+| IID<br/>                      | IMsRdpClientNonScriptable4 se define como f50fa8aa-1c7d-4f59-b15c-a90cae1fcb<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. checkboxesVisible
+title: PLAYLIST.checkboxesVisible
 description: El atributo checkboxesVisible especifica o recupera un valor que indica si las casillas están visibles.
 ms.assetid: 25672694-d4dc-46b4-b403-81603dc58cff
 keywords:
-- Windows Media Player de lista de reproducción. checkboxesVisible
+- PLAYLIST.checkboxesVisible Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02b82b7b3307244402ce93d3a3377795ae68ad2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ba8434a76fc6849df22c1655518660d88b3d57fac4632a02a5b22a0f7bd15a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571475"
 ---
-# <a name="playlistcheckboxesvisible"></a>Lista de reproducción. checkboxesVisible
+# <a name="playlistcheckboxesvisible"></a>PLAYLIST.checkboxesVisible
 
-El atributo **checkboxesVisible** especifica o recupera un valor que indica si las casillas están visibles.
+El **atributo checkboxesVisible** especifica o recupera un valor que indica si las casillas están visibles.
 
 ``` syntax
         elementID.checkboxesVisible
@@ -29,11 +29,11 @@ El atributo **checkboxesVisible** especifica o recupera un valor que indica si l
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                           |
+| Valor | Descripción                           |
 |-------|---------------------------------------|
 | true  | Las casillas están visibles.              |
 | false | Predeterminada. Las casillas no están visibles. |
@@ -42,21 +42,21 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las casillas aparecen en la columna izquierda.
+Las casillas aparecen en la columna del extremo izquierdo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

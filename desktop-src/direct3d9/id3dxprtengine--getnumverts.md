@@ -1,7 +1,7 @@
 ---
-description: Recupera el número de vértices de la malla, incluido cualquier vértice nuevo agregado como resultado de un muestreo espacial adaptable.
+description: Recupera el número de vértices de la malla, incluidos los nuevos vértices agregados como resultado del muestreo espacial adaptable.
 ms.assetid: 066be26c-a2c0-4636-b4b7-c4405a41c307
-title: 'ID3DXPRTEngine:: GetNumVerts (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::GetNumVerts (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ae125be35ae25424ecc1a396f3d57a763eb419fa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 26017eefec18e5c8cb2c2d9cadf00a45a367670032f3f55bd2b152e2294b0a0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293486"
 ---
-# <a name="id3dxprtenginegetnumverts-method"></a>ID3DXPRTEngine:: GetNumVerts (método)
+# <a name="id3dxprtenginegetnumverts-method"></a>Método ID3DXPRTEngine::GetNumVerts
 
-Recupera el número de vértices de la malla, incluido cualquier vértice nuevo agregado como resultado de un muestreo espacial adaptable.
+Recupera el número de vértices de la malla, incluidos los nuevos vértices agregados como resultado del muestreo espacial adaptable.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices de la malla, incluido cualquier vértice nuevo agregado como resultado de un muestreo adaptable.
+Número de vértices de la malla, incluidos los nuevos vértices agregados como resultado del muestreo adaptable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Número de vértices de la malla, incluido cualquier vértice nuevo agregado com
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
