@@ -1,7 +1,7 @@
 ---
-description: Establece un vector normal para cada textura de un objeto Texture. Este método se usa para almacenar vectores normales de vértices de una malla (o normales de vértice interpolados si se está calculando la transferencia de Radiance precalculada basada en píxeles).
+description: Establece un vector normal para cada elemento de textura de un objeto de textura. Este método se usa para almacenar vectores normales de vértice desde una malla (o normales de vértice interpolado si se está calculando la transferencia de radiancia precalentada (PRT) basada en píxeles).
 ms.assetid: 165a3ef6-c142-4988-b4fb-5aafd8ff11fe
-title: 'ID3DXPRTEngine:: SetPerTexelNormal (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::SetPerTexelNormal (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5220ad500312792cd158967e9502381f49b0e3e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 75877e8af86a22f80703742f148d5171e3a99e5c0c580bff588c27deba269b98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293379"
 ---
-# <a name="id3dxprtenginesetpertexelnormal-method"></a>ID3DXPRTEngine:: SetPerTexelNormal (método)
+# <a name="id3dxprtenginesetpertexelnormal-method"></a>Método ID3DXPRTEngine::SetPerTexelNormal
 
-Establece un vector normal para cada textura de un objeto Texture. Este método se usa para almacenar vectores normales de vértices de una malla (o normales de vértice interpolados si se está calculando la transferencia de Radiance precalculada basada en píxeles).
+Establece un vector normal para cada elemento de textura de un objeto de textura. Este método se usa para almacenar vectores normales de vértice desde una malla (o normales de vértice interpolado si se está calculando la transferencia de radiancia precalentada (PRT) basada en píxeles).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetPerTexelNormal(
 
 <dl> <dt>
 
-*pNormalTexture* \[ de\]
+*pNormalTexture* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntero a un objeto de textura [**IDirect3DTexture9**](/windows/desktop/api) que actúa como mapa normal de espacio de objeto en el que se almacenan los vectores normales. La textura debe tener las mismas dimensiones que [**ID3DXPRTBuffer**](id3dxprtbuffer.md) y debe poder almacenar formatos de textura firmados.
+Puntero a un [**objeto de textura IDirect3DTexture9**](/windows/desktop/api) que actúa como un mapa normal de espacio de objetos en el que almacenar vectores normales. La textura debe tener las mismas dimensiones que [**ID3DXPRTBuffer**](id3dxprtbuffer.md) y debe ser capaz de almacenar formatos de textura firmados.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a un objeto de textura [**IDirect3DTexture9**](/windows/desktop/api) que
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

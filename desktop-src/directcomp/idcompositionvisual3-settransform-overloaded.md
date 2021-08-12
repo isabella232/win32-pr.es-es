@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionVisual3 SetTransform (Dcomp. h)
-description: Establece la propiedad de transformación de este visual. La propiedad transform especifica una transformación 3D utilizada para modificar el sistema de coordenadas de este visual. La propiedad puede especificar una matriz de transformación de 4 por 4 o un objeto de transformación.
+title: Métodos SetTransform de IDCompositionVisual3 (Dcomp.h)
+description: Establece la propiedad Transform de este objeto visual. La propiedad Transform especifica una transformación 3D que se usa para modificar el sistema de coordenadas de este objeto visual. La propiedad puede especificar una matriz de transformación 4 por 4 o un objeto de transformación.
 ms.assetid: a59498c2-8659-dd35-8dc2-87457f493965
 keywords:
 - Métodos SetTransform DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 50237d4bbc8504a6bdcc9650f6c02dbdc30d093c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08b243704c3eabae528d475c92b924f6aecfba92f923b7190c085e3e89bd1f74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281242"
 ---
-# <a name="idcompositionvisual3settransform-methods"></a>IDCompositionVisual3:: SetTransform (métodos)
+# <a name="idcompositionvisual3settransform-methods"></a>Métodos IDCompositionVisual3::SetTransform
 
-Establece la propiedad de transformación de este visual. La propiedad transform especifica una transformación 3D utilizada para modificar el sistema de coordenadas de este visual. La propiedad puede especificar una matriz de transformación de 4 por 4 o un objeto de transformación.
+Establece la propiedad Transform de este objeto visual. La propiedad Transform especifica una transformación 3D que se usa para modificar el sistema de coordenadas de este objeto visual. La propiedad puede especificar una matriz de transformación 4 por 4 o un objeto de transformación.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece la propiedad de transformación de este visual. La propiedad transform
 
 | Método                                                                                  | Descripción                                                                    |
 |:----------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| [**SetTransform ( \_ matriz D2D \_ 4x4 \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(constd2d_matrix_4x4_f_))       | Establece la propiedad transform en la matriz de transformación especificada.<br/>      |
-| [**SetTransform (IDCompositionTransform3D \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(idcompositiontransform3d)) | Establece la propiedad de transformación en el objeto de transformación especificado.<br/> |
+| [**SetTransform(D2D \_ MATRIX \_ 4X4 \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(constd2d_matrix_4x4_f_))       | Establece la propiedad Transform en la matriz de transformación especificada.<br/>      |
+| [**SetTransform(IDCompositionTransform3D \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(idcompositiontransform3d)) | Establece la propiedad Transform en el objeto de transformación especificado.<br/> |
 
 
 
@@ -38,17 +38,17 @@ Establece la propiedad de transformación de este visual. La propiedad transform
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

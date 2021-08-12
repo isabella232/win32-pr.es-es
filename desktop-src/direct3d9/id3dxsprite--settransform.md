@@ -1,7 +1,7 @@
 ---
-description: Establece la transformación de Sprite.
+description: Establece la transformación de sprite.
 ms.assetid: 87dfc169-b647-4a96-897d-abbe765ea9e2
-title: 'ID3DXSprite:: SetTransform (método) (D3dx9core. h)'
+title: Método ID3DXSprite::SetTransform (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 316e7e2c68dfa8f25a712c2077ece03d09455050
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fba7c21d0ba0e99aefc5c4d5dfd69301bb706f804e736badcbe0227d58aca81a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292622"
 ---
-# <a name="id3dxspritesettransform-method"></a>ID3DXSprite:: SetTransform (método)
+# <a name="id3dxspritesettransform-method"></a>Método ID3DXSprite::SetTransform
 
-Establece la transformación de Sprite.
+Establece la transformación de sprite.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetTransform(
 
 <dl> <dt>
 
-*pTransform* \[ de\]
+*pTransform* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a un [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación del objeto Sprite del espacio universal original. Use esta transformación para escalar, girar o transformar el sprite.
+Puntero a un [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación del sprite desde el espacio del mundo original. Use esta transformación para escalar, girar o transformar el sprite.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a un [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente. D3DERR \_ INVALIDCALL
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor. D3DERR \_ INVALIDCALL
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

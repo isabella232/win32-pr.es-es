@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentFeatureNotAvailableException'
-title: Constructor de EsentFeatureNotAvailableException
+description: 'Más información sobre: Constructor EsentFeatureNotAvailableException'
+title: Constructor EsentFeatureNotAvailableException
 TOCTitle: 'EsentFeatureNotAvailableException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFeatureNotAvailableException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfeaturenotavailableexception.esentfeaturenotavailableexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0805b86804ea5cb7a3905211f7fd16515071938b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62bbb38c622f00ab348e0cb0d9427734047aa984a90775bec9d427ca3e141b6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118269231"
 ---
-# <a name="esentfeaturenotavailableexception-constructor"></a>Constructor de EsentFeatureNotAvailableException
+# <a name="esentfeaturenotavailableexception-constructor"></a>Constructor EsentFeatureNotAvailableException
 
 Inicializa una nueva instancia de la clase EsentFeatureNotAvailableException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentFeatureNotAvailableException()
 
 [Miembros de EsentFeatureNotAvailableException](./esentfeaturenotavailableexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Elemento LEVEL (SystemPropertiesType)
+title: Elemento Level (SystemPropertiesType)
 description: Contiene el nivel de gravedad del evento.
 ms.assetid: 3936defc-c093-4f25-bc90-71a2405b76e1
 keywords:
-- Elemento de nivel EventLog
+- Elemento Level EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f91ddb0f36eef8ae1c0aadc7e46e147c4bfb6ce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b86a088864a0b41ae19faa77241004017b5ec2248ecc47c41686704e14d227bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588633"
 ---
-# <a name="level-systempropertiestype-element"></a>Elemento LEVEL (SystemPropertiesType)
+# <a name="level-systempropertiestype-element"></a>Elemento Level (SystemPropertiesType)
 
 Contiene el nivel de gravedad del evento.
 
@@ -30,7 +30,7 @@ Contiene el nivel de gravedad del evento.
  />
 ```
 
-El elemento **LEVEL** se define mediante el tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El **tipo complejo SystemPropertiesType** define el elemento [**Level.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,19 +38,19 @@ El elemento **LEVEL** se define mediante el tipo complejo [**SystemPropertiesTyp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Recupera el objeto de datos que tiene el GUID especificado. En desuso.
 ms.assetid: dd079b5c-18e1-4252-aabd-498c24910a08
-title: 'IDirectXFileEnumObject:: GetDataObjectById (método) (DXFile. h)'
+title: Método IDirectXFileEnumObject::GetDataObjectById (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: a27ac17963d4876a3cb0a26d05b63f4c34bf99fc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 49bee0f513bcca71a98e72fb3f51e1bcc458083ce9b165b3e5163fb5f6b71708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292236"
 ---
-# <a name="idirectxfileenumobjectgetdataobjectbyid-method"></a>IDirectXFileEnumObject:: GetDataObjectById (método)
+# <a name="idirectxfileenumobjectgetdataobjectbyid-method"></a>IDirectXFileEnumObject::GetDataObjectById (método)
 
 Recupera el objeto de datos que tiene el GUID especificado. En desuso.
 
@@ -41,7 +41,7 @@ HRESULT GetDataObjectById(
 
 <dl> <dt>
 
-*rguid* \[ de\]
+*rguid* \[ En\]
 </dt> <dd>
 
 Tipo: **[REFGUID](/openspecs/windows_protocols/ms-oaut/6e7d7108-c213-40bc-8294-ac13fe68fd50)**
@@ -50,12 +50,12 @@ Referencia al GUID solicitado.
 
 </dd> <dt>
 
-*ppDataObj* \[ enuncia\]
+*ppDataObj* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)\***
 
-Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.md) que representa el objeto de datos de archivo devuelto.
+Dirección de un puntero a una [**interfaz IDirectXFileData,**](idirectxfiledata.md) que representa el objeto de datos de archivo devuelto.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

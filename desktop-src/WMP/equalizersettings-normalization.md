@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. Normalization
-description: El atributo Normalization especifica o recupera un valor que indica si está habilitada la normalización.
+title: EQUALIZERSETTINGS.normalization
+description: El atributo de normalización especifica o recupera un valor que indica si la normalización está habilitada.
 ms.assetid: d0819624-7bc5-447a-b890-c8af94faa7b0
 keywords:
-- EQUALIZERSETTINGS. normal Windows Media Player
+- EQUALIZERSETTINGS.normalization Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9714359e5d5e2af0c82a0d687555f7cfcbf1cf70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6f2befdd62f0508822d5547cb3b894b93ea095f52db4cf9bbdb4a444d99251c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578177"
 ---
-# <a name="equalizersettingsnormalization"></a>EQUALIZERSETTINGS. Normalization
+# <a name="equalizersettingsnormalization"></a>EQUALIZERSETTINGS.normalization
 
-El atributo **Normalization** especifica o recupera un valor que indica si está habilitada la normalización.
+El **atributo de normalización** especifica o recupera un valor que indica si la normalización está habilitada.
 
 ``` syntax
         elementID.normalization
@@ -29,11 +29,11 @@ El atributo **Normalization** especifica o recupera un valor que indica si está
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                         |
+| Valor | Descripción                         |
 |-------|-------------------------------------|
 | true  | La normalización está habilitada.           |
 | false | Predeterminada. La normalización está deshabilitada. |
@@ -42,21 +42,21 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se habilita la normalización, la señal de audio de un archivo multimedia digital completo se escala hasta el valor máximo. Esto permite reproducir varios archivos aproximadamente en el mismo volumen sin necesidad de ajustes de volumen.
+Cuando se habilita la normalización, la señal de audio de un archivo multimedia digital completo se escala verticalmente hasta el valor máximo. Esto permite reproducir varios archivos aproximadamente en el mismo volumen sin necesidad de ajustes de volumen.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

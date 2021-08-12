@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMGuestOS IsHeartbeating (VPCCOMInterfaces. h)
+title: Propiedad IsBeating de IVMGuestOS (VPCCOMInterfaces.h)
 description: Determina si la máquina virtual tiene un latido.
 ms.assetid: b1697a7b-6119-47aa-b261-6009f5287993
 keywords:
-- Propiedad IsHeartbeating Virtual PC
-- Propiedad IsHeartbeating Virtual PC, interfaz IVMGuestOS
-- Interfaz IVMGuestOS Virtual PC, propiedad IsHeartbeating
+- IsBeating, propiedad Virtual PC
+- Propiedad IsBeatbeating Pc virtual, interfaz IVMGuestOS
+- IVMGuestOS interface Virtual PC , Propiedad IsBeating
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faad446749cbf3cdb75d6e8fa7469022cc004ea7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91598284d3765c5ff6de185ca0cf3b652036c226d80b0fe01a9944a9d7480b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118594185"
 ---
-# <a name="ivmguestosisheartbeating-property"></a>IVMGuestOS:: IsHeartbeating (propiedad)
+# <a name="ivmguestosisheartbeating-property"></a>Propiedad IVMGuestOS::IsBeating
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Determina si la máquina virtual tiene un latido.
 
@@ -45,7 +45,7 @@ HRESULT get_IsHeartbeating(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**Variante \_ TRUE** si se detecta un latido, **Variant \_ false** en caso contrario.
+**VARIANT \_ TRUE si** se detecta un latido, **VARIANT FALSE \_ en** caso contrario.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,29 +53,29 @@ HRESULT get_IsHeartbeating(
 
 | Nombre o valor                                                                                                                                                              | Significado                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                 | La operación se realizó correctamente.<br/>                                                                                                                         |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **null**.<br/>                                                                                                                            |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl>           | La configuración es desconocida.<br/>                                                                                                                         |
-| <dl> <dt>Máquina virtual \_ La \_ VM E \_ no \_ ejecuta</dt> <dt>0xA0040206</dt> </dl>      | La máquina virtual debe estar en ejecución para esta operación.<br/>                                                                                               |
-| <dl> <dt>Máquina virtual \_ E/s \_ \_ no \_ DISP</dt> <dt>0xA0040504</dt> </dl> | La máquina virtual no se ha iniciado completamente, la característica componentes de integración no está instalada o la versión instalada no es compatible con esta característica.<br/> |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                                                                                     |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                 | La operación se realizó correctamente.<br/>                                                                                                                         |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **NULL.**<br/>                                                                                                                            |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>           | La configuración es desconocida.<br/>                                                                                                                         |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING</dt> <dt>0xA0040206</dt> </dl>      | La máquina virtual debe ejecutarse para esta operación.<br/>                                                                                               |
+| <dl> <dt>Máquina virtual \_ E \_ LAS \_ ADICIONES NO ESTÁN \_ DISPONIBLES</dt> <dt>0xA0040504</dt> </dl> | La máquina virtual no está totalmente arrancada, la característica de componentes de integración no está instalada o la versión instalada no admite esta característica.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                                                                                     |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando se instalan los componentes de integración en el sistema operativo invitado, se envía un "tick" o latido normal desde la sesión de máquina virtual a Windows Virtual PC. Si el sistema operativo invitado está muy cargado, es posible que el equipo virtual reciba menos latidos de lo esperado. Si no se detecta ningún latido, es posible que el sistema operativo invitado no responda o se bloquee.
+Cuando se instalan componentes de integración en el sistema operativo invitado, se envía un "tick" o latido normal desde la sesión de máquina virtual a Windows Virtual PC. Si el sistema operativo invitado está muy cargado, es posible que el equipo virtual reciba menos latidos de los esperados. Si no se detecta ningún latido, es posible que el sistema operativo invitado no responda o se bloquea.
 
-De forma predeterminada, una máquina virtual produce diez TICs de latido por minuto. Si no se detectan TICs de latidos durante un minuto completo, Windows Virtual PC intentará reiniciar la sesión de máquina virtual una vez cada diez segundos durante un máximo de dos minutos. Este comportamiento se controla mediante los siguientes valores de clave en el archivo de configuración de la sesión de máquina virtual.
+De forma predeterminada, una máquina virtual genera diez tics de latido por minuto. Si no se detecta ningún tic de latido durante un minuto completo, Windows Virtual PC intentará reiniciar la sesión de la máquina virtual una vez cada diez segundos durante un máximo de dos minutos. Este comportamiento se controla mediante los siguientes valores de clave en el archivo de configuración de la sesión de la máquina virtual.
 
 
 
 | Clave de configuración                                            | Valor predeterminado       | Descripción                                                                                                                             |
 |--------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| integración/Microsoft/latido/hora<br/>              | 60<br/> | La longitud del bloque de tiempo usado para generar TICs de latido, en segundos.<br/>                                             |
-| integración/Microsoft/latido/tasa<br/>              | 10<br/> | Número de pasos generados en cada bloque de tiempo de latido.<br/>                                                                  |
-| integración/Microsoft/latido/intervalo de errores \_<br/> | 10<br/> | El número de segundos entre los intentos de reinicio, una vez que no se reciben TICs de latido dentro de un bloque de tiempo de latido específico.<br/> |
-| integración/Microsoft/latido/intentos de error \_<br/> | 12<br/> | El número de intentos de reinicio realizados.<br/>                                                                                         |
+| integration/microsoft/heartbeat/time<br/>              | 60<br/> | La duración del bloque de tiempo utilizado para generar tics de latido, en segundos.<br/>                                             |
+| integration/microsoft/heartbeat/rate<br/>              | 10<br/> | Número de tics generados en cada bloque de tiempo de latido.<br/>                                                                  |
+| integration/microsoft/heartbeat/failure \_ interval<br/> | 10<br/> | Número de segundos entre los intentos de reinicio, una vez que no se reciben tics de latido dentro de un bloque de tiempo de latido específico.<br/> |
+| integration/microsoft/heartbeat/failure \_ attempts<br/> | 12<br/> | Número de intentos de reinicio realizados.<br/>                                                                                         |
 
 
 
@@ -87,12 +87,12 @@ De forma predeterminada, una máquina virtual produce diez TICs de latido por mi
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS se define como 99fea0db-4880-499A-b6d8-73dff9bc91be<br/>                 |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS se define como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

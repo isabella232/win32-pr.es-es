@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentGivenLogFileIsNotContiguousException'
-title: Constructor de EsentGivenLogFileIsNotContiguousException
+description: 'Más información sobre: Constructor EsentGivenLogFileIsNotContiguousException'
+title: Constructor EsentGivenLogFileIsNotContiguousException
 TOCTitle: 'EsentGivenLogFileIsNotContiguousException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentGivenLogFileIsNotContiguousException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentgivenlogfileisnotcontiguousexception.esentgivenlogfileisnotcontiguousexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d21ea222fa5454b5888e9280a62d3f3bef255263
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16cba3930186616fa5ccd0c99a87f6032a0dccec247cd576951f13dd969217ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118268273"
 ---
-# <a name="esentgivenlogfileisnotcontiguousexception-constructor"></a>Constructor de EsentGivenLogFileIsNotContiguousException
+# <a name="esentgivenlogfileisnotcontiguousexception-constructor"></a>Constructor EsentGivenLogFileIsNotContiguousException
 
 Inicializa una nueva instancia de la clase EsentGivenLogFileIsNotContiguousException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentGivenLogFileIsNotContiguousException()
 
 [Miembros de EsentGivenLogFileIsNotContiguousException](./esentgivenlogfileisnotcontiguousexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

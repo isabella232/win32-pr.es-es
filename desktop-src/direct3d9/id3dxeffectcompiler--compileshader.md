@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3e8d1d72fccd5c4ad47d21d05ee46013860a7743
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 1e42eec5cc9c5c90d1fa4e26c4ad38d611dce3ce0df933d76b1eb81d2534b8dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295881"
 ---
 # <a name="id3dxeffectcompilercompileshader-method"></a>Método ID3DXEffectCompiler::CompileShader
 
@@ -63,7 +63,7 @@ Puntero a un perfil de sombreador que determina el conjunto de instrucciones del
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -86,7 +86,7 @@ Búfer que contiene el sombreador compilado. El sombreador del compilador es una
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Búfer que contiene al menos el primer mensaje de error de compilación que se produjo. Esto incluye errores del compilador de efecto y errores de compilación de lenguaje de alto nivel. Para obtener más información sobre el acceso al búfer, [**vea ID3DXBuffer**](id3dxbuffer.md).
+Búfer que contiene al menos el primer mensaje de error de compilación que se produjo. Esto incluye los errores del compilador de efecto y los errores de compilación de lenguaje de alto nivel. Para obtener más información sobre el acceso al búfer, [**vea ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> <dt>
 
@@ -107,15 +107,15 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK.
 
 Si los argumentos no son válidos, el método devolverá D3DERR \_ INVALIDCALL.
 
-Si se produce un error en el método , el valor devuelto será E \_ FAIL.
+Si se produce un error en el método, el valor devuelto será E \_ FAIL.
 
 ## <a name="remarks"></a>Comentarios
 
-Los destinos se pueden especificar para sombreadores de vértices, sombreadores de píxeles y funciones de relleno de textura.
+Se pueden especificar destinos para sombreadores de vértices, sombreadores de píxeles y funciones de relleno de textura.
 
 
 
-| Destinos                      | Functions                                                                      |
+| Destinos                      | Funciones                                                                      |
 |-----------------------|-----------------------------------------------------------------------|
 | Destinos del sombreador de vértices | vs \_ 1 \_ 1, vs \_ 2 \_ 0, vs \_ 2 \_ sw, vs \_ 3 \_ 0                               |
 | Destinos del sombreador de píxeles  | ps \_ \_ 1 1, ps \_ 1 \_ 2, ps \_ 1 \_ 3, ps \_ 1 \_ 4, ps \_ 2 \_ 0, ps \_ 2 \_ sw, ps \_ 3 \_ 0 |
@@ -138,7 +138,7 @@ Este método compila un sombreador a partir de una función escrita en un lengua
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

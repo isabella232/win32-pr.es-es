@@ -1,9 +1,9 @@
 ---
 title: Elemento EventPayload (ProcessingErrorDataType)
-description: Contiene datos de eventos binarios para el evento que provocó un error al procesar los datos de evento.
+description: Contiene datos de eventos binarios para el evento que produjo un error cuando se procesaron los datos del evento.
 ms.assetid: 0ba72d72-8f43-40ca-b3ee-89fe27a4dd07
 keywords:
-- Elemento EventPayload EventLog
+- EventPayload, elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4dd20f95924282ae8cb0f1b0604c0e77d07766ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 131869f9c54143f32780ff2ad1133b2c9ddf113c990b13be497a554caec30ba0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589018"
 ---
 # <a name="eventpayload-processingerrordatatype-element"></a>Elemento EventPayload (ProcessingErrorDataType)
 
-Contiene datos de eventos binarios para el evento que provocó un error al procesar los datos de evento.
+Contiene datos de eventos binarios para el evento que produjo un error cuando se procesaron los datos del evento.
 
 ``` syntax
 <xs:element name="EventPayload"
@@ -30,7 +30,7 @@ Contiene datos de eventos binarios para el evento que provocó un error al proce
  />
 ```
 
-El elemento **EventPayload** se define mediante el tipo complejo de [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) .
+El tipo complejo [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) define el elemento **EventPayload.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El elemento **EventPayload** se define mediante el tipo complejo de [**Processin
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

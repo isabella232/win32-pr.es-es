@@ -1,7 +1,7 @@
 ---
-description: Establece la transformación de vista universal que se entrega a la izquierda de un objeto Sprite. Se requiere una llamada a este método antes de la cartelera o la ordenación de los sprites.
+description: Establece la transformación de la vista del mundo de la izquierda para un sprite. Se requiere una llamada a este método antes de agrupar u ordenar sprites.
 ms.assetid: 70f1181d-41f9-4663-91e0-8df94bce4eed
-title: 'ID3DXSprite:: SetWorldViewLH (método) (D3dx9core. h)'
+title: Método ID3DXSprite::SetWorldViewLH (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 397c3803f6d4e445f74a8b24a61e86e72e471648
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 67ee276b90629a18f93bd9a26879e8a7ad62d71ae46baf2d2c0a6bfba82a53a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292577"
 ---
-# <a name="id3dxspritesetworldviewlh-method"></a>ID3DXSprite:: SetWorldViewLH (método)
+# <a name="id3dxspritesetworldviewlh-method"></a>Método ID3DXSprite::SetWorldViewLH
 
-Establece la transformación de vista universal que se entrega a la izquierda de un objeto Sprite. Se requiere una llamada a este método antes de la cartelera o la ordenación de los sprites.
+Establece la transformación de la vista del mundo de la izquierda para un sprite. Se requiere una llamada a este método antes de agrupar u ordenar sprites.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetWorldViewLH(
 
 <dl> <dt>
 
-*pWorld* \[ de\]
+*pWorld* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a un [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación universal. Si es **null**, se utiliza la matriz de identidad para la transformación del mundo.
+Puntero a una [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación mundial. Si **es NULL,** la matriz de identidad se usa para la transformación del mundo.
 
 </dd> <dt>
 
-*pView* \[ de\]
+*pView* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a un [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación de vista. Si es **null**, se utiliza la matriz de identidad para la transformación de la vista.
+Puntero a [**D3DXMATRIX que**](d3dxmatrix.md) contiene una transformación de vista. Si **es NULL,** la matriz de identidad se usa para la transformación de vista.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntero a un [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente. D3DERR \_ INVALIDCALL
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor. D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se requiere una llamada a este método (o a [**ID3DXSprite:: SetWorldViewRH**](id3dxsprite--setworldviewrh.md)) si el objeto Sprite se va a representar con el valor de marca D3DXSprite de la [ \_ \_ cartelera](d3dxsprite.md), D3DXSprite de \_ \_ profundidad de orden \_ \_ FRONTTOBACK o D3DXSprite \_ \_ \_ de profundidad de ordenación BACKTOFRONT \_ en [**ID3DXSprite:: Begin**](id3dxsprite--begin.md).
+Se requiere una llamada a este método (o a [**ID3DXSprite::SetWorldViewRH**](id3dxsprite--setworldviewrh.md)) si el sprite se representará con el valor de marca [BACKTOFRONT D3DXSprite \_ \_ HISTOGRAM,](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH \_ FRONTTOBACK o \_ D3DXSprite \_ \_ SORT DEPTH \_ BACKTOFRONT en \_ [**ID3DXSprite::Begin**](id3dxsprite--begin.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Se requiere una llamada a este método (o a [**ID3DXSprite:: SetWorldViewRH**](i
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

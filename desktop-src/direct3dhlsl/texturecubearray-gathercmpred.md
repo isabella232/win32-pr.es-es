@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray GatherCmpRed'
-description: 'Muestras y comparan una textura y devuelven el componente rojo. | Métodos TextureCubeArray:: TextureCubeArray GatherCmpRed'
+title: Métodos TextureCubeArray::TextureCubeArray GatherCmpRed
+description: Muestrea y compara una textura y devuelve el componente rojo. | Métodos TextureCubeArray::TextureCubeArray GatherCmpRed
 ms.assetid: FD87AA60-C99D-404E-AA28-096240A2E757
 keywords:
-- GatherCmpRed métodos HLSL
+- Métodos HLSL de GatherCmpRed
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: b1e6e05d7ca6a49d3386eae40092083b2a8e76f9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 16733f393be44842777b8e11efa7f122fa6f8b324ba1abe9e4383910a018a777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283099"
 ---
-# <a name="texturecubearraygathercmpred-methods"></a>TextureCubeArray:: GatherCmpRed (métodos)
+# <a name="texturecubearraygathercmpred-methods"></a>Métodos TextureCubeArray::GatherCmpRed
 
-Muestras y comparan una textura y devuelven el componente rojo.
+Muestrea y compara una textura y devuelve el componente rojo.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,11 +29,11 @@ Muestras y comparan una textura y devuelven el componente rojo.
 
 | Método                                                                                  | Descripción                                                                                                    |
 |:----------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpRed (S, Float, Float, uint)**](tcubearray-gathercmpred-s-float-float-uint-.md) | Muestras y comparan una textura y devuelven el componente rojo junto con el estado de la operación.<br/> |
+| [**GatherCmpRed(S,float,float,uint)**](tcubearray-gathercmpred-s-float-float-uint-.md) | Muestrea y compara una textura y devuelve el componente rojo junto con el estado de la operación.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

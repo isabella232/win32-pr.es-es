@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture1D:: Texture1D SampleGrad'
-description: Muestrea un Texture1D usando un degradado para influir en la forma en que se calcula la ubicación de ejemplo.
+title: Métodos Texture1D::Texture1D SampleGrad
+description: Muestrea un objeto Texture1D mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.
 ms.assetid: 20DE104D-79FD-410D-A8FC-7E810A0654A0
 keywords:
-- SampleGrad métodos HLSL
+- Métodos de SampleGrad HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: d5cbc05afd1003081d8b96086e24084b7dc17882
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 6c8a4cc1266d13e75708cd8dd2c0bb7f18401e8ff5a90a067936748dff50620e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104076975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283979"
 ---
-# <a name="texture1dsamplegrad-methods"></a>Texture1D:: SampleGrad (métodos)
+# <a name="texture1dsamplegrad-methods"></a>Métodos Texture1D::SampleGrad
 
-Muestrea un [**Texture1D**](sm5-object-texture1d.md) usando un degradado para influir en la forma en que se calcula la ubicación de ejemplo.
+Muestrea [**un objeto Texture1D**](sm5-object-texture1d.md) mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,17 +29,17 @@ Muestrea un [**Texture1D**](sm5-object-texture1d.md) usando un degradado para in
 
 | Método                                                                                                       | Descripción                                                                                                                                                                                                        |
 |:-------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleGrad (S, Float, Float, Float, int)**](dx-graphics-hlsl-to-samplegrad.md)                                | Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo.<br/>                                                                                                             |
-| [**SampleGrad (S, Float, Float, Float, int, float)**](t1d-samplegrad-s-float-float-float-int-float-.md)           | Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo.<br/>                                     |
-| [**SampleGrad (S, Float, Float, Float, int, Float, uint)**](t1d-samplegrad-s-float-float-float-int-float-uint-.md) | Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo. Devuelve el estado de la operación.<br/> |
+| [**SampleGrad(S,float,float,float,int)**](dx-graphics-hlsl-to-samplegrad.md)                                | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.<br/>                                                                                                             |
+| [**SampleGrad(S,float,float,float,int,float)**](t1d-samplegrad-s-float-float-float-int-float-.md)           | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                     |
+| [**SampleGrad(S,float,float,float,int,float,uint)**](t1d-samplegrad-s-float-float-float-int-float-uint-.md) | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Consulte [Texture-Object](dx-graphics-hlsl-to-type.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

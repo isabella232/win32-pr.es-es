@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMultiValuedDuplicateAfterTruncationException'
-title: Constructor de EsentMultiValuedDuplicateAfterTruncationException
+description: 'Más información sobre: Constructor EsentMultiValuedDuplicateAfterTruncationException'
+title: Constructor EsentMultiValuedDuplicateAfterTruncationException
 TOCTitle: 'EsentMultiValuedDuplicateAfterTruncationException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMultiValuedDuplicateAfterTruncationException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmultivaluedduplicateaftertruncationexception.esentmultivaluedduplicateaftertruncationexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f24cd148655bb1dd34f97fec48df1061c969d37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cb61bda9664af2e5dc574f172ef47b6633a2d33a516248c28e17479fc7210ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118264403"
 ---
-# <a name="esentmultivaluedduplicateaftertruncationexception-constructor"></a>Constructor de EsentMultiValuedDuplicateAfterTruncationException
+# <a name="esentmultivaluedduplicateaftertruncationexception-constructor"></a>Constructor EsentMultiValuedDuplicateAfterTruncationException
 
 Inicializa una nueva instancia de la clase EsentMultiValuedDuplicateAfterTruncationException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentMultiValuedDuplicateAfterTruncationException()
 
 [Miembros de EsentMultiValuedDuplicateAfterTruncationException](./esentmultivaluedduplicateaftertruncationexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

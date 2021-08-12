@@ -4,21 +4,21 @@ description: Atributo de Layout-Flow VML
 ms.assetid: 63b06dcb-5179-4046-9e02-4441d0d7bcd6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e437e31043afcf7fba4967076a861c9bca86477
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bde6937a3f93ff2a462cfc5950c13b7f3910573c54d82449ef705bca4afbb068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118599359"
 ---
 # <a name="vml-layout-flow-attribute"></a>Atributo de Layout-Flow VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Determina el flujo del diseño de texto en un cuadro de texto. Lectura/escritura **Cadena**.
 
@@ -28,7 +28,7 @@ Determina el flujo del diseño de texto en un cuadro de texto. Lectura/escritura
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "layout-Flow: *Expression* " >
+<v: *element* style="layout-flow: *expression* ">
 
 **Comentarios:**
 
@@ -39,19 +39,19 @@ Estos valores incluyen:
 | Value                  | Descripción                                 |
 |------------------------|---------------------------------------------|
 | horizontal             | El texto se muestra horizontalmente. Predeterminada.    |
-| vertical               | El texto se muestra verticalmente.               |
-| ideográfica vertical   | El texto ideográfico se muestra verticalmente.   |
-| ideográfico horizontal | El texto ideográfico se muestra horizontalmente. |
+| Vertical               | El texto se muestra verticalmente.               |
+| ideografía vertical   | El texto ideográfico se muestra verticalmente.   |
+| horizontal-ideographic | El texto ideográfico se muestra horizontalmente. |
 
 
 
- 
+ 
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-El flujo de texto en el cuadro de texto se fluirá verticalmente.
+El flujo de texto del cuadro de texto fluirá verticalmente.
 
 
 ```HTML
@@ -66,6 +66,6 @@ El flujo de texto en el cuadro de texto se fluirá verticalmente.
 
 
 
- 
+ 
 
- 
+ 

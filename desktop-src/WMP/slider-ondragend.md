@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. onDragEnd
-description: El controlador de eventos onDragEnd controla un evento que se produce cuando se suelta el botón primario del mouse después de una operación de arrastre. | SLIDEr. onDragEnd
+title: SLIDER.onDragEnd
+description: El controlador de eventos onDragEnd controla un evento que se produce cuando se libera el botón izquierdo del mouse después de una operación de arrastre. | SLIDER.onDragEnd
 ms.assetid: e34a9491-efad-4704-99b2-e1cbe0557b7f
 keywords:
-- CONTROL SLIDEr. onDragEnd Windows Media Player
+- SLIDER.onDragEnd Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07bd0f377499276aeed02260988c668f236594b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2254b2e37c892d35cfbc6e3afa649679e55ae05a8f103a7afacaa1acd8647506
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569068"
 ---
-# <a name="sliderondragend"></a>SLIDEr. onDragEnd
+# <a name="sliderondragend"></a>SLIDER.onDragEnd
 
-El controlador de eventos **onDragEnd** controla un evento que se produce cuando se suelta el botón primario del mouse después de una operación de arrastre.
+El **controlador de eventos onDragEnd** controla un evento que se produce cuando se libera el botón izquierdo del mouse después de una operación de arrastre.
 
 ``` syntax
 onDragEnd
@@ -31,17 +31,17 @@ onDragEnd
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
  

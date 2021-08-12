@@ -1,9 +1,9 @@
 ---
 title: NEXTBUTTON
-description: Se trata de un botón predefinido con los siguientes valores predeterminados. | NEXTBUTTON
+description: Se trata de un button predefinido con los siguientes valores predeterminados. | NEXTBUTTON
 ms.assetid: 0750966c-cc4c-4792-b350-1502788cd66b
 keywords:
-- NEXTBUTTON Windows Media Player
+- NextBUTTON Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92bbfef52dd5cd0d46a61b017fd90f82133a3b91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 104763690584576c04aa7be53fd6013e6dfae8a02e5830cf4703d9cbd694e725
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573819"
 ---
 # <a name="nextbutton"></a>NEXTBUTTON
 
-Se trata de un **botón** predefinido con los siguientes valores predeterminados.
+Se trata de un **button** predefinido con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.controls.next()"
@@ -31,21 +31,21 @@ cursor="system"
 enabled="wmpenabled:player.controls.next"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las propiedades de este **botón** se pueden invalidar si se especifican explícitamente.
+Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

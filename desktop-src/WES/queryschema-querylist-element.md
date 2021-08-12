@@ -1,6 +1,6 @@
 ---
 title: Elemento QueryList
-description: El nodo raíz de la consulta.
+description: Nodo raíz de la consulta.
 ms.assetid: 944170c6-2b97-4a80-81b9-631484f973f1
 keywords:
 - Elemento QueryList EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 02aa303d0d3eb016a73a4df338cabe2143b018e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e340ece78b0631b09ba8ff2588a272bb3955e6d49a3906f5f41a5626dd51f34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587722"
 ---
 # <a name="querylist-element"></a>Elemento QueryList
 
-El nodo raíz de la consulta.
+Nodo raíz de la consulta.
 
 ``` syntax
 <xs:element name="QueryList"
@@ -36,8 +36,8 @@ El nodo raíz de la consulta.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

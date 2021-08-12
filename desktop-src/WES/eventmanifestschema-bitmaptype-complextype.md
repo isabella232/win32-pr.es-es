@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de BitMapType
-description: Define una lista de asignaciones de nombre y valor entre valores de bit y valores de cadena.
+title: Tipo complejo BitMapType
+description: Define una lista de asignaciones de nombre y valor entre valores de bits y valores de cadena.
 ms.assetid: 65dc6a48-878c-415c-872c-41dc27691b7f
 keywords:
-- BitMapType tipo complejo EventLog
+- EventLog de tipo complejo BitMapType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ef3a48b102b9ab36ef492fcd38c4bb8b2560d5fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c899718cd28e337bbc5d34301b7bb49446fde51f21db5b742e98dd95c5092c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590415"
 ---
-# <a name="bitmaptype-complex-type"></a>Tipo complejo de BitMapType
+# <a name="bitmaptype-complex-type"></a>Tipo complejo BitMapType
 
-Define una lista de asignaciones de nombre y valor entre valores de bit y valores de cadena.
+Define una lista de asignaciones de nombre y valor entre valores de bits y valores de cadena.
 
 ``` syntax
 <xs:complexType name="BitMapType">
@@ -48,7 +48,7 @@ Define una lista de asignaciones de nombre y valor entre valores de bit y valore
 
 | Elemento                                                   | Tipo                                                                       | Descripción                                                            |
 |-----------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**mapa**](eventmanifestschema-map-bitmaptype-element.md) | [**BitMapValueType**](eventmanifestschema-bitmapvaluetype-complextype.md) | Define la asignación entre un valor de bit y un valor de cadena.<br/> |
+| [**Mapa**](eventmanifestschema-map-bitmaptype-element.md) | [**BitMapValueType**](eventmanifestschema-bitmapvaluetype-complextype.md) | Define la asignación entre un valor de bit y un valor de cadena.<br/> |
 
 
 
@@ -59,7 +59,7 @@ Define una lista de asignaciones de nombre y valor entre valores de bit y valore
 | Nombre   | Tipo                                                              | Descripción                                                                                                                                                                                                                                                                                                         |
 |--------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | string                                                            | El nombre del mapa de bits.<br/>                                                                                                                                                                                                                                                                                  |
-| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se va a usar para hacer referencia a las asignaciones de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) utiliza el símbolo para crear una constante para la asignación en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
+| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se usará para hacer referencia a las asignaciones de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el mapa en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
 
 
 
@@ -69,8 +69,8 @@ Define una lista de asignaciones de nombre y valor entre valores de bit y valore
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

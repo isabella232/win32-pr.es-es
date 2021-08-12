@@ -1,7 +1,7 @@
 ---
 description: Obtiene el búfer de índice de malla.
 ms.assetid: d9152f3b-c8e6-4def-8cf1-a517ca4d34e7
-title: 'ID3DXPatchMesh:: GetIndexBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::GetIndexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c2730b90f77d33db519d2231a68ab7fdc2b520fd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c7b32c5414f72b1dd16a6c309294056e81468f8e039e73d1d43c05d5ac3dd0f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294358"
 ---
-# <a name="id3dxpatchmeshgetindexbuffer-method"></a>ID3DXPatchMesh:: GetIndexBuffer (método)
+# <a name="id3dxpatchmeshgetindexbuffer-method"></a>Método ID3DXPatchMesh::GetIndexBuffer
 
 Obtiene el búfer de índice de malla.
 
@@ -53,11 +53,11 @@ Puntero al búfer de índice.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El búfer de índice contiene el orden de los vértices en el búfer de vértices. El búfer de índice se usa para tener acceso al búfer de vértices cuando se representa la malla.
+El búfer de índice contiene el orden de los vértices en el búfer de vértices. El búfer de índice se usa para acceder al búfer de vértices cuando se representa la malla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,12 +65,12 @@ El búfer de índice contiene el orden de los vértices en el búfer de vértice
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

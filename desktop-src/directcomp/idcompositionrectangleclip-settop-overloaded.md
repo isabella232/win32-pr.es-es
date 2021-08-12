@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionRectangleClip SetTop (Dcomp. h)
-description: Anima o cambia el valor de la propiedad superior de un rectángulo de recorte.
+title: Métodos IDCompositionRectangleClip SetTop (Dcomp.h)
+description: Anima o cambia el valor de la propiedad Top de un rectángulo de recorte.
 ms.assetid: 32C12765-F580-4E32-9C48-3A7AFD95CA38
 keywords:
 - Métodos SetTop DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: a67a35d5e332cea66df2c0a3d5e1d6e736ae76bb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a07246873571add7861f6fc9aaca76478a998ad54245928e5055dd0ee903ce84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281648"
 ---
-# <a name="idcompositionrectangleclipsettop-methods"></a>IDCompositionRectangleClip:: SetTop (métodos)
+# <a name="idcompositionrectangleclipsettop-methods"></a>Métodos IDCompositionRectangleClip::SetTop
 
-Anima o cambia el valor de la propiedad superior de un rectángulo de recorte. La propiedad Top especifica la coordenada y de la esquina superior izquierda del rectángulo de recorte.
+Anima o cambia el valor de la propiedad Top de un rectángulo de recorte. La propiedad Top especifica la coordenada y de la esquina superior izquierda del rectángulo de recorte.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Anima o cambia el valor de la propiedad superior de un rectángulo de recorte. L
 
 | Método                                                                                               | Descripción                                        |
 |:-----------------------------------------------------------------------------------------------------|:---------------------------------------------------|
-| [**SetTop (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settop(float))                                     | Cambia el valor de la propiedad top.<br/>  |
-| [**SetTop (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settop(idcompositionanimation)) | Anima el valor de la propiedad top.<br/> |
+| [**SetTop(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settop(float))                                     | Cambia el valor de la propiedad Top.<br/>  |
+| [**SetTop(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settop(idcompositionanimation)) | Anima el valor de la propiedad Top.<br/> |
 
 
 
@@ -38,17 +38,17 @@ Anima o cambia el valor de la propiedad superior de un rectángulo de recorte. L
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

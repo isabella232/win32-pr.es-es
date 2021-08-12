@@ -3,7 +3,7 @@ title: Compilación de los archivos IDL proporcionados con el SDK
 description: Compilación de los archivos IDL proporcionados con el SDK
 ms.assetid: 718528eb-6ac4-466d-8dfd-d6f2b6c30303
 keywords:
-- Archivos IDL Administrador de dispositivos Windows Media
+- Windows Archivos Administrador de dispositivos,IDL
 - Administrador de dispositivos,archivos IDL
 - aplicaciones de escritorio, archivos IDL
 - proveedores de servicios, archivos IDL
@@ -11,18 +11,18 @@ keywords:
 - IDL (archivos)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19e3d4ecd7f4f9df7b884cf70de3ba3ad62c7939
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d89ae614d6e20d0b05d9b7b6f054505433f4a4d33e2f9feaff60a37f7605e9ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586344"
 ---
 # <a name="compiling-the-idl-files-supplied-with-the-sdk"></a>Compilación de los archivos IDL proporcionados con el SDK
 
-Windows Media Administrador de dispositivos SDK incluye los archivos de encabezado y los archivos IDL de origen para la mayoría de estos archivos de encabezado. Los archivos de encabezado se encuentran en la \\ carpeta inc en la ruta de instalación del \\ SDK. Los archivos IDL se encuentran en la \\ carpeta \\ idl.
+El SDK Windows Media Administrador de dispositivos incluye tanto los archivos de encabezado como los archivos IDL de origen para la mayoría de estos archivos de encabezado. Los archivos de encabezado se encuentran en la \\ carpeta inc en la ruta de instalación del \\ SDK. Los archivos IDL se encuentran en la \\ carpeta \\ idl.
 
-Los encabezados precompilados son mucho más sencillos de usar y varios de los archivos IDL se combinan en un único encabezado proporcionado. Sin embargo, si decide procesar sus propios archivos de encabezado a partir de los archivos IDL proporcionados, en este tema se describen qué archivos IDL crean qué archivos de encabezado y también se describen las dependencias de cada archivo IDL.
+Los encabezados precompilados son mucho más sencillos de usar y varios de los archivos IDL se combinan en un solo encabezado proporcionado. Sin embargo, si decide procesar sus propios archivos de encabezado a partir de los archivos IDL proporcionados, en este tema se describen qué archivos IDL crean qué archivos de encabezado y también se describen las dependencias de cada archivo IDL.
 
 **Archivos de encabezado IDL y proporcionados equivalentes**
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMHostInfo OSServicePackString (VPCCOMInterfaces. h)
-description: Recupera la información de Service Pack del sistema operativo que se ejecuta en el equipo host.
+title: Propiedad IVMHostInfo OSServicePackString (VPCCOMInterfaces.h)
+description: Recupera la información del Service Pack del sistema operativo que se ejecuta en el equipo host.
 ms.assetid: e5fe51f8-9bcf-49bd-bec6-2538b3e8edfa
 keywords:
-- Propiedad OSServicePackString Virtual PC
-- Propiedad OSServicePackString Virtual PC, interfaz IVMHostInfo
-- Interfaz IVMHostInfo Virtual PC, propiedad OSServicePackString
+- OSServicePackString, propiedad Virtual PC
+- OSServicePackString, propiedad Virtual PC , interfaz IVMHostInfo
+- Interfaz IVMHostInfo de Equipo virtual, propiedad OSServicePackString
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a046499b72333b4acf8daffbd66dbab44107e0b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 64c3b42a9c0976ca51196c091d5704bd224ea591cdc7301d7f1387209e7fff83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118593507"
 ---
-# <a name="ivmhostinfoosservicepackstring-property"></a>IVMHostInfo:: OSServicePackString (propiedad)
+# <a name="ivmhostinfoosservicepackstring-property"></a>Propiedad IVMHostInfo::OSServicePackString
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera la información de Service Pack del sistema operativo que se ejecuta en el equipo host.
+Recupera la información del Service Pack del sistema operativo que se ejecuta en el equipo host.
 
 Esta propiedad es de solo lectura.
 
@@ -53,9 +53,9 @@ Versión de Service Pack.
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -65,16 +65,16 @@ Versión de Service Pack.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHostInfo se define como 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHostInfo se define como \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

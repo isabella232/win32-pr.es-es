@@ -1,20 +1,20 @@
 ---
 description: Busque vínculos a las secciones de referencia de interfaz, función, estructura y enumeración en Gráficos de Direct3D 10.
 ms.assetid: 27bd0b8a-fece-4db1-a954-ff91c2a919e6
-title: Referencia D3DX (gráficos de Direct3D 10)
+title: Referencia de D3DX (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d594beab253adec6ac452e19c505f92a2c16ca5
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 88cd92535393533444441292cefc003045babaaf131b631f05d4aafb8c8ed0ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304040"
 ---
-# <a name="d3dx-reference-direct3d-10-graphics"></a>Referencia D3DX (gráficos de Direct3D 10)
+# <a name="d3dx-reference-direct3d-10-graphics"></a>Referencia de D3DX (gráficos de Direct3D 10)
 
 > [!NOTE]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para Microsoft Store aplicaciones. Si la actualización a una versión más reciente de Direct3D y el código de utilidad asociado no es una opción, puede usar el paquete NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) en lugar de confiar en el SDK de DirectX o DirectSetup heredados.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para Microsoft Store aplicaciones. Si la actualización a una versión más reciente de Direct3D y el código de utilidad asociado no es una opción, puede usar el paquete [microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) NuGet en lugar de depender del SDK de DirectX o DirectSetup heredado.
 
 Esta sección contiene las secciones siguientes:
 

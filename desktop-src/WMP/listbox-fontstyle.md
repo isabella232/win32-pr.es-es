@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. fontStyle
+title: LISTBOX.fontStyle
 description: El atributo fontStyle especifica o recupera el estilo de fuente para el control de cuadro de lista.
 ms.assetid: c42b80b6-0dea-4080-a06e-931fdc02fa55
 keywords:
-- LISTBOX. fontStyle Windows Media Player
+- LISTBOX.fontStyle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0903ac77f1fa4307dfcabad6311eb556617d8153
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 258064ca4ee97fc33bb98bf64d8e3dcf305c5d7e045282a5218a060e904aff50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575042"
 ---
-# <a name="listboxfontstyle"></a>LISTBOX. fontStyle
+# <a name="listboxfontstyle"></a>LISTBOX.fontStyle
 
-El atributo **fontStyle** especifica o recupera el estilo de fuente para el control de cuadro de lista.
+El **atributo fontStyle** especifica o recupera el estilo de fuente para el control de cuadro de lista.
 
 ``` syntax
         elementID.fontStyle
@@ -29,46 +29,46 @@ El atributo **fontStyle** especifica o recupera el estilo de fuente para el cont
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene uno o varios de los valores siguientes.
+Este atributo es una cadena de **lectura** y escritura que contiene uno o varios de los valores siguientes.
 
 
 
-| Value     | Descripción           |
+| Valor     | Descripción           |
 |-----------|-----------------------|
-| Bold      | Estilo de fuente en negrita.      |
+| Negrita      | Estilo de fuente en negrita.      |
 | Cursiva    | Estilo de fuente cursiva.    |
 | Subrayado | Estilo de fuente de subrayado. |
-| Tacha | Estilo de fuente de tachado. |
+| Tachado | Estilo de fuente de tachón. |
 | Normal    | Estilo de fuente normal.    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede usar cualquier combinación de valores, separados por espacios. El estilo normal tiene prioridad sobre todos los demás valores, y se omitirán los demás especificados junto con normal.
+Se puede usar cualquier combinación de los valores, separados por espacios. El estilo Normal tiene prioridad sobre todos los demás valores y se omitirán los demás especificados junto con Normal.
 
-Para fines de representación, el estilo de fuente predeterminado es normal. El valor predeterminado recuperado de este atributo es "" (cadena vacía).
+Con fines de representación, Normal es el estilo de fuente predeterminado. El valor predeterminado recuperado de este atributo es "" (cadena vacía).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. FontSize**](listbox-fontsize.md)
+[**LISTBOX.fontSize**](listbox-fontsize.md)
 </dt> </dl>
 
  

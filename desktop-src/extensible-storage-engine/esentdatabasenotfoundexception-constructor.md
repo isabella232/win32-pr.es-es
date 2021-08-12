@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseNotFoundException'
-title: Constructor de EsentDatabaseNotFoundException
+description: 'Más información sobre: Constructor EsentDatabaseNotFoundException'
+title: Constructor EsentDatabaseNotFoundException
 TOCTitle: 'EsentDatabaseNotFoundException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseNotFoundException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabasenotfoundexception.esentdatabasenotfoundexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64a7c032b0384be84194ad3b0549c05eb81d53f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69dc3209e4e3f11d48e12de52ea35a267b1963b333e0dcd0ab5caa43429e4844
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118271119"
 ---
-# <a name="esentdatabasenotfoundexception-constructor"></a>Constructor de EsentDatabaseNotFoundException
+# <a name="esentdatabasenotfoundexception-constructor"></a>Constructor EsentDatabaseNotFoundException
 
 Inicializa una nueva instancia de la clase EsentDatabaseNotFoundException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDatabaseNotFoundException()
 
 [Miembros de EsentDatabaseNotFoundException](./esentdatabasenotfoundexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

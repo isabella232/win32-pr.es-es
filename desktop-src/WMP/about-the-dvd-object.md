@@ -1,28 +1,28 @@
 ---
-title: Acerca del objeto de DVD
-description: Acerca del objeto de DVD
+title: Acerca del objeto DVD
+description: Acerca del objeto DVD
 ms.assetid: 6c255e9e-d537-4f4f-865c-b7fb26c8e413
 keywords:
-- Media Player de Windows, objeto de DVD
-- Modelo de objetos de Windows Media Player, objeto de DVD
-- modelo de objetos, objeto de DVD
-- Control ActiveX de Windows Media Player, objeto de DVD
-- Control ActiveX, objeto DVD
-- Control ActiveX móvil de Windows Media Player, objeto de DVD
-- Windows Media Player Mobile, objeto de DVD
-- Objeto de DVD
+- Reproductor de Windows Media,OBJETO DVD
+- Reproductor de Windows Media de objetos, objeto DVD
+- object model,DVD object
+- Reproductor de Windows Media ActiveX control,objeto DVD
+- ActiveX control,objeto DVD
+- Reproductor de Windows Media Control de ActiveX móvil,objeto DVD
+- Reproductor de Windows Media Objeto Mobile,DVD
+- Objeto DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29b9432fa90e409b40f9e1acd3e7686628bca3d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 109587f30e7df0ff49b1cdbe5b45d818decb1a3f50ffe4a4ba9cde53d00833f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583767"
 ---
-# <a name="about-the-dvd-object"></a>Acerca del objeto de DVD
+# <a name="about-the-dvd-object"></a>Acerca del objeto DVD
 
-El objeto de **DVD** agrega funcionalidad específica de los medios de DVD. En general, los medios de DVD se tratan igual que otros medios digitales de Windows Media Player. Por ejemplo, las unidades de DVD se enumeran mediante el objeto **CdromCollection** y los títulos y capítulos de DVD se manipulan mediante objetos de **lista de reproducción** y objetos **multimedia** . Sin embargo, algunas funciones son específicas del DVD y el objeto de **DVD** lo proporciona. Por ejemplo, DVD tiene un concepto denominado dominio. Para recuperar el dominio actual para los medios de DVD, escriba lo siguiente:
+El **objeto DVD** agrega funcionalidad específica a los medios de DVD. En un sentido general, los medios de DVD se tratan igual que otros medios digitales en Reproductor de Windows Media. Por ejemplo, las unidades de DVD se enumeran mediante el objeto **CdromCollection** y los títulos de DVD y los capítulos se manipulan mediante objetos **De** lista de reproducción y **Objetos** multimedia. Sin embargo, algunas funcionalidades son específicas de DVD y el **objeto DVD** lo proporciona. Por ejemplo, DVD tiene un concepto denominado dominio. Para recuperar el dominio actual para los medios de DVD, escriba lo siguiente:
 
 
 ```C++
@@ -36,15 +36,15 @@ mydomain = player.dvd.domain;
 
 <dl> <dt>
 
-[**Objeto de DVD**](dvd-object.md)
+[**Objeto DVD**](dvd-object.md)
 </dt> <dt>
 
 [**Modelo de objetos del reproductor para lenguajes de scripting**](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

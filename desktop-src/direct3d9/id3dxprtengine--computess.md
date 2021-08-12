@@ -1,7 +1,7 @@
 ---
-description: 'Calcula el Radiance de origen resultante de la dispersión de subsuperficies, mediante las propiedades de material establecidas por ID3DXPRTEngine:: SetMeshMaterials. Este método solo se puede usar para los materiales definidos por vértice en un objeto Mesh.'
+description: Calcula el brillo de origen resultante de la dispersión de subsuelo, utilizando las propiedades de material establecidas por ID3DXPRTEngine::SetMeshMaterials. Este método solo se puede usar para materiales definidos por vértice en un objeto de malla.
 ms.assetid: cdf0d9c1-70e3-44d5-b97a-0521e6739daf
-title: 'ID3DXPRTEngine:: Compute Method (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ComputeSS (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 89a69be6cc946ff6695d234b8bfb82532385526e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b34561bf96983506cbb0f484f273de9a5e0f0b6138db2e1ddbb92b19c8bcd18f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294025"
 ---
-# <a name="id3dxprtenginecomputess-method"></a>ID3DXPRTEngine:: Compute (método)
+# <a name="id3dxprtenginecomputess-method"></a>Método ID3DXPRTEngine::ComputeSS
 
-Calcula el Radiance de origen resultante de la dispersión de subsuperficies, mediante las propiedades de material establecidas por [**ID3DXPRTEngine:: SetMeshMaterials**](id3dxprtengine--setmeshmaterials.md). Este método solo se puede usar para los materiales definidos por vértice en un objeto Mesh.
+Calcula el brillo de origen resultante de la dispersión de subsuelo, utilizando las propiedades de material establecidas [**por ID3DXPRTEngine::SetMeshMaterials**](id3dxprtengine--setmeshmaterials.md). Este método solo se puede usar para materiales definidos por vértice en un objeto de malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,12 +42,12 @@ HRESULT ComputeSS(
 
 <dl> <dt>
 
-*pDataIn* \[ de\]
+*pDataIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de entrada que representa el objeto 3D del rebote de luz anterior. Este búfer de entrada debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) entrada que representa el objeto 3D de la luz anterior. Este búfer de entrada debe tener asignado el número adecuado de canales de color para la simulación.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de entrada que repre
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela un único rebote de la luz dispersa por subsuperficie. Este búfer de salida debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) salida que modela un único salto de la luz dispersa por subsuelo. Este búfer de salida debe tener el número adecuado de canales de color asignados para la simulación.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que es la suma de todas las salidas pDataOut anteriores. Puede ser **null**.
+Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que es la suma en ejecución de todas las salidas pDataOut anteriores. Puede ser **NULL.**
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que es la s
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para modelar la dispersión de subsuperficies, llame a este método para cada rebote de luz después de llamar a un método ID3DXPRTEngine:: ComputeDirectLighting.
+Para modelar la dispersión de subsuelo, llame a este método para cada efecto de efecto de luz después de llamar a un método ID3DXPRTEngine::ComputeDirectLighting.
 
-Use la siguiente secuencia de llamada para modelar la dispersión de subsuperficies.
+Use la siguiente secuencia de llamada para modelar la dispersión de subsuelo.
 
 
 ```
@@ -98,9 +98,9 @@ if ( FAILED( hr ) ) goto Exit;
 
 
 
-La salida de este método no incluye albedo y solo la luz entrante está integrada en el simulador. Si no se multiplica el albedo, puede modelar la variación de Albedo en una escala más precisa que el Radiance de origen, con lo que se obtienen resultados más precisos de la compresión.
+La salida de este método no incluye albedo y solo se integra la luz entrante en el simulador. Al no multiplicar el albedo, puede modelar la variación de albedo a una escala más precisa que la de origen, lo que produce resultados más precisos de la compresión.
 
-Llame a [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md) para multiplicar cada vector de transferencia de Radiance previamente calculado (PRT) por Albedo.
+Llame [**a ID3DXPRTEngine::MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md) para multiplicar cada vector de transferencia de radiancia precalutizado (PRT) por el albedo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,12 +108,12 @@ Llame a [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md)
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

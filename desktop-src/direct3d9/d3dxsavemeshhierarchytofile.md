@@ -1,7 +1,7 @@
 ---
-description: Crea un archivo. x y guarda la jerarquía de malla y sus animaciones correspondientes.
+description: Crea un archivo .x y guarda en él la jerarquía de malla y las animaciones correspondientes.
 ms.assetid: 803926fe-8cb7-422a-9920-56f7d0b0d0ea
-title: Función D3DXSaveMeshHierarchyToFile (D3dx9anim. h)
+title: Función D3DXSaveMeshHierarchyToFile (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f2de65f9bc2f9e40a5bc07c6f0b4d00112f0df21
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 892d27e305badc2cf1b21de41a1f9d37da13f36c1521135a79a65619e31903f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298533"
 ---
-# <a name="d3dxsavemeshhierarchytofile-function"></a>D3DXSaveMeshHierarchyToFile función)
+# <a name="d3dxsavemeshhierarchytofile-function"></a>Función D3DXSaveMeshHierarchyToFile
 
-Crea un archivo. x y guarda la jerarquía de malla y sus animaciones correspondientes.
+Crea un archivo .x y guarda en él la jerarquía de malla y las animaciones correspondientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,43 +44,43 @@ HRESULT D3DXSaveMeshHierarchyToFile(
 
 <dl> <dt>
 
-*pFilename* \[ de\]
+*pFilename* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre del archivo. x que identifica la malla guardada. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve como LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre del archivo .x que identifica la malla guardada. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*XFormat* \[ de\]
+*XFormat* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Formato del archivo. x (texto o binario, comprimido o no). Consulte D3DXF \_ FILEFORMAT. D3DXF \_ fileformat \_ Compressed se puede combinar (mediante un OR lógico) con las \_ marcas de texto D3DXF FILEFORMAT \_ binary o D3DXF \_ fileformat \_ para reducir el tamaño del archivo de salida.
+Formato del archivo .x (texto o binario, comprimido o no). Consulte \_ FILEFORMAT D3DXF. D3DXF FILEFORMAT COMPRESSED se puede combinar (mediante un OR lógico) con las marcas FILEFORMAT BINARY o \_ \_ \_ \_ D3DXF FILEFORMAT TEXT de D3DXF \_ para reducir el tamaño del archivo de \_ salida.
 
 </dd> <dt>
 
-*pFrameRoot* \[ de\]
+*pFrameRoot* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXFRAME**](d3dxframe.md) \***
 
-Nodo raíz de la jerarquía que se va a guardar. Vea [**D3DXFRAME**](d3dxframe.md).
+Nodo raíz de la jerarquía que se va a guardar. Vea [**D3DXFRAME.**](d3dxframe.md)
 
 </dd> <dt>
 
-*pAnimController* \[ de\]
+*pAnimController* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)**
 
-Controlador de animación que tiene conjuntos de animaciones que se van a almacenar. Vea [**ID3DXAnimationController**](id3dxanimationcontroller.md).
+Controlador de animación que tiene conjuntos de animaciones que se almacenarán. Vea [**ID3DXAnimationController.**](id3dxanimationcontroller.md)
 
 </dd> <dt>
 
-*pUserDataSaver* \[ de\]
+*pUserDataSaver* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXSAVEUSERDATA**](id3dxsaveuserdata.md)**
@@ -93,13 +93,13 @@ Interfaz proporcionada por la aplicación que permite guardar datos de usuario. 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser: D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve como D3DXSaveMeshHierarchyToFileW. De lo contrario, la llamada de función se resuelve como D3DXSaveMeshHierarchyToFileA.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXSaveMeshHierarchyToFileW. De lo contrario, la llamada de función se resuelve en D3DXSaveMeshHierarchyToFileA.
 
-Esta función no guarda los conjuntos de animaciones comprimidos.
+Esta función no guarda conjuntos de animación comprimidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,12 +107,12 @@ Esta función no guarda los conjuntos de animaciones comprimidos.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

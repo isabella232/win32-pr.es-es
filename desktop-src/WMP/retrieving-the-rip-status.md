@@ -1,52 +1,52 @@
 ---
-title: Recuperación del estado de RIP
-description: Recuperación del estado de RIP
+title: Recuperar el estado de desgarr
+description: Recuperar el estado de desgarr
 ms.assetid: 9907bfdd-eae7-4ca2-b488-5a6ad11416f5
 keywords:
-- Windows Media Player, copia desde CD
-- Modelo de objetos de Windows Media Player, copia desde CD
-- modelo de objetos, copia desde CD
-- Control ActiveX de Windows Media Player, copia desde CD
-- Control ActiveX, copiar CD
-- Control ActiveX móvil de Windows Media Player, copia desde CD
-- Windows Media Player Mobile, copia desde CD
-- Copiar CD, recuperar el estado de RIP
-- copiar CDs, recuperar el estado de RIP
+- Reproductor de Windows Media, cds
+- Reproductor de Windows Media modelo de objetos, cds
+- modelo de objetos, resalte de CD
+- Reproductor de Windows Media ActiveX control de datos, cds
+- ActiveX control, cds
+- Reproductor de Windows Media Control ActiveX dispositivos móviles, cds
+- Reproductor de Windows Media Móvil, cds
+- Cd retriev,retrieving rip status (Recuperación del estado de desgarre)
+- retriev CDs,retrieving rip status (Recuperación del estado de desgarre)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be1fce1a46f9cc2d8477cabcc12a3a1b5bd159d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a3210fa9e0db5f9260989d7bebb3650770cec7626892bc20546a6b602fb98955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570196"
 ---
-# <a name="retrieving-the-rip-status"></a>Recuperación del estado de RIP
+# <a name="retrieving-the-rip-status"></a>Recuperar el estado de desgarr
 
-Puede supervisar el progreso de la operación de copia desde CD llamando periódicamente a [IWMPCdromRip:: get \_ ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress). Este método recupera un valor de progreso para toda la operación de copia. El valor recuperado es un número que representa el porcentaje de copia completada, de 0 a 100.
+Puede supervisar el progreso de la operación de pra llamando periódicamente a [IWMPCdromRip::get \_ ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress). Este método recupera un valor de progreso para toda la operación de async. El valor recuperado es un número que representa el porcentaje de aseadas completadas, de 0 a 100.
 
-El valor de progreso representa el porcentaje completado de todo el proceso de copia. Para determinar el progreso de una pista concreta, use [IWMPMedia:: getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo) con "RipProgress" como nombre de atributo. Para determinar el índice de la pista que se está copiando actualmente, llame a **IWMPPlaylist:: getItemInfo** con "CurrentRipTrackIndex" como nombre de atributo.
+El valor de progreso representa el porcentaje completado de todo el proceso de esión. Para determinar el progreso de una pista específica, use [IWMPMedia::getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo) con "RipProgress" como nombre del atributo. Para determinar el índice de la pista que se está arrasando actualmente, llame a **IWMPPlaylist::getItemInfo** con "CurrentRipTrackIndex" como nombre del atributo.
 
-Puede supervisar el estado de la operación de copia desde CD llamando periódicamente a [IWMPCdromRip:: get \_ ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate). Este método recupera un valor de enumeración [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) que indica si la operación está en curso o detenido. También puede supervisar el estado de la operación de copia desde CD mediante el control del evento [IWMPEvents3:: CdromRipStateChange](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) . (Vea [controlar eventos en C++](handling-events-in-c.md)). Tenga cuidado de comparar el puntero **IWMPCdromRip** (proporcionado por el evento) con el puntero que representa la operación de copia desde CD, para asegurarse de que la operación ha generado el evento.
+Puede supervisar el estado de la operación de integración llamando periódicamente a [IWMPCdromRip::get \_ ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate). Este método recupera un valor de [enumeración WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) que indica si la operación está en curso o detenida. También puede supervisar el estado de la operación de manipulación controlando el evento [IWMPEvents3::CdromRipStateChange.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) (Vea [Control de eventos en C++).](handling-events-in-c.md) Tenga cuidado de comparar el puntero **IWMPCdromRip** (proporcionado por el evento) con el puntero que representa la operación de alerón, para asegurarse de que la operación ha producido el evento.
 
-En el ejemplo de código siguiente se muestra cómo usar estas funciones para recuperar el estado de una operación de copia desde CD.
+En el código de ejemplo siguiente se muestra cómo usar estas funciones para recuperar el estado de una operación de arraigo.
 
-En el ejemplo de código se definen los siguientes controles de cuadro de diálogo.
+Los siguientes controles de cuadro de diálogo se definen para el ejemplo de código.
 
 
 
 | Id. de control                   | Descripción                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| \_seguimiento actual de IDC \_          | Texto estático que representa el índice de la pista que se está copiando en ese momento.                                         |
-| \_texto de \_ progreso de seguimiento de IDC \_   | Texto estático que representa el progreso de la pista que se está copiando actualmente como porcentaje.                      |
-| \_seguimiento de progreso de IDC \_         | Barra de progreso con el intervalo de 0 a 100 que representa el progreso de la pista que se está copiando actualmente como porcentaje. |
-| \_texto de \_ progreso \_ General de IDC | Texto estático que representa el progreso del proceso de copia de copia total como un porcentaje.                             |
-| \_progreso \_ General de IDC       | Barra de progreso con el intervalo de 0 a 100 que representa el progreso del proceso de copia de copia total como un porcentaje.        |
-| \_Estado RIP de IDC \_              | Texto estático que muestra la operación que se está realizando actualmente ("copia desde CD", "detenida" o "desconocida")             |
+| PISTA ACTUAL DE IDC \_ \_          | Texto estático que representa el índice de la pista que se está arrasando actualmente.                                         |
+| TEXTO DE PROGRESO \_ DE SEGUIMIENTO \_ DE IDC \_   | Texto estático que representa el progreso de la pista que se está arrasando actualmente como porcentaje.                      |
+| SEGUIMIENTO DE PROGRESO DE IDC \_ \_         | Barra de progreso con intervalo de 0 a 100 que representa el progreso de la pista que se está arrasando actualmente como porcentaje. |
+| TEXTO DE PROGRESO GENERAL DE IDC \_ \_ \_ | Texto estático que representa el progreso del proceso total de esión como porcentaje.                             |
+| PROGRESO GENERAL DE IDC \_ \_       | Barra de progreso con un intervalo de 0 a 100 que representa el progreso del proceso total de arrasación como porcentaje.        |
+| ESTADO DE \_ RIP DE \_ IDC              | Texto estático que muestra la operación que se está realizando actualmente (" Estando", "Detenido" o "Desconocido")             |
 
 
 
- 
+ 
 
 
 ```C++
@@ -155,21 +155,21 @@ HRESULT CMainDlg::UpdateStatus (void)
 
 <dl> <dt>
 
-[**Copia desde CD**](ripping-a-cd.md)
+[**Arrasar un CD**](ripping-a-cd.md)
 </dt> <dt>
 
 [**Recuperación de la interfaz de copia desde CD**](retrieving-the-ripping-interface.md)
 </dt> <dt>
 
-[**Inicio del proceso RIP**](starting-the-rip-process.md)
+[**Iniciar el proceso de desgarr**](starting-the-rip-process.md)
 </dt> <dt>
 
-[**Seleccionar elementos para copiar desde CD**](selecting-items-for-ripping.md)
+[**Selección de elementos para Alcándalo**](selecting-items-for-ripping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

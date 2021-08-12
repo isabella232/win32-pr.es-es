@@ -1,19 +1,19 @@
 ---
 title: Unidades de VML
-description: En este artículo se describen las unidades de VML. VML es una característica que está en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se describen las unidades de VML. VML es una característica que está en desuso a partir Windows Internet Explorer 9.
 ms.assetid: f95e65ad-d92a-460f-baeb-30fd8a35f84e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 184d577052412bde4a97148b51cab12a87b3672e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c5c510bacd2081fb5a051637b6b577fc9415662737d384d10d7c3dd73348c694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597386"
 ---
 # <a name="vml-units"></a>Unidades de VML
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
@@ -52,7 +52,7 @@ cm
 
 Centímetros.
 
-mm
+MM
 
 Milímetros.
 
@@ -68,7 +68,7 @@ Susa (1); 12 puntos.
 
  
 
-Las medidas y posiciones de las propiedades de hoja de estilos en cascada (CSS) se realizan mediante unidades de longitud. Internet Explorer admite dos tipos de unidades de longitud: relativa y absoluta.
+Las medidas y posiciones de las propiedades de hoja de estilos en cascada (CSS) se realizan mediante unidades de longitud. Internet Explorer admite dos tipos de unidades de longitud: relativas y absolutas.
 
 Una unidad de longitud relativa especifica una longitud en relación con otra propiedad de longitud. Las unidades de longitud relativa se escalan mejor de un dispositivo de salida a otro, como desde un monitor a una impresora. Los porcentajes y las palabras clave tienen un rendimiento similar.
 
@@ -80,7 +80,7 @@ Una unidad de longitud absoluta especifica una medida absoluta, como pulgadas o 
 
 La EMU (unidad métrica en inglés) es la unidad de medida útil más pequeña y la usa VML para el almacenamiento interno de unidades. Hay 914400 EMU por pulgada y 12700 EMU en un punto. Las EMU no pueden ser fracciones.
 
-Puesto que las EMUs se definen mediante números enteros con firma de 32 bits, el mayor número de EMUs es de 2348 pulgadas (unos 59 metros o 65 65 pulgadas). Dado que las medidas siempre caben en un dispositivo de salida de tamaño de página o de pantalla, siempre estarán dentro de este intervalo.
+Puesto que las EMUs se definen mediante números enteros de 32 bits con firma, el mayor número de EMUs es de 2348 pulgadas (unos 59 metros o 65 65 pulgadas). Dado que las medidas siempre caben en un dispositivo de salida de tamaño de página o de pantalla, siempre estarán dentro de este intervalo.
 
 **Ángulos**
 

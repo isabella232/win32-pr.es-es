@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetDefragment (método)'
-title: Método API. JetDefragment
+description: Más información sobre el método Api.JetDefragment
+title: Método Api.JetDefragment
 TOCTitle: 'JetDefragment method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetDefragment(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,System.Int32@,System.Int32@,Microsoft.Isam.Esent.Interop.DefragGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetdefragment(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 69428d785bf9d607199cb62bfe02d2e373e7dbe4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9761782e2c6522752d6a05f69005a4db6844542c700cbc5c942ea80d96bf4c2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272659"
 ---
-# <a name="apijetdefragment-method"></a>Método API. JetDefragment
+# <a name="apijetdefragment-method"></a>Método Api.JetDefragment
 
-Inicia y detiene las tareas de desfragmentación de bases de datos que mejora la organización de datos en una base de datos.
+Inicia y detiene las tareas de desfragmentación de base de datos que mejoran la organización de datos dentro de una base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,56 +78,56 @@ public static JET_wrn JetDefragment(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar para la llamada.
+    Sesión que se usará para la llamada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Base de datos que se va a desfragmentar.
 
 <!-- end list -->
 
   - tableName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Parámetro sin usar. La desfragmentación se realiza para toda la base de datos descrita por el identificador de base de datos especificado.
 
 <!-- end list -->
 
-  - paso  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - Pasa  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Al iniciar una tarea de desfragmentación con conexión, este parámetro establece el número máximo de pasos de desfragmentación. Al detener una tarea de desfragmentación con conexión, este parámetro se establece en el número de pasos realizados.
+    Al iniciar una tarea de desfragmentación en línea, este parámetro establece el número máximo de pases de desfragmentación. Al detener una tarea de desfragmentación en línea, este parámetro se establece en el número de pases realizados.
 
 <!-- end list -->
 
   - segundos  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Al iniciar una tarea de desfragmentación con conexión, este parámetro establece el tiempo máximo para la desfragmentación. Al detener una tarea de desfragmentación en línea, este búfer de salida se establece en el período de tiempo utilizado para la desfragmentación.
+    Al iniciar una tarea de desfragmentación en línea, este parámetro establece el tiempo máximo para la desfragmentación. Al detener una tarea de desfragmentación en línea, este búfer de salida se establece en el período de tiempo utilizado para la desfragmentación.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. DefragGrbit](./defraggrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.DefragGrbit](./defraggrbit-enumeration.md)  
     
     Opciones de desfragmentación.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Código de advertencia.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Un código de advertencia.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

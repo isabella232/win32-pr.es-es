@@ -1,9 +1,9 @@
 ---
-title: Elemento Filter
-description: El elemento Filter contiene elementos que limitan el tamaño de una lista de reproducción, la duración de una lista de reproducción o el número de elementos multimedia de una lista de reproducción.
+title: elemento filter
+description: El elemento filter contiene elementos que limitan el tamaño de una lista de reproducción, la duración de una lista de reproducción o el número de elementos multimedia de una lista de reproducción.
 ms.assetid: 880885f6-493f-466b-b5ad-ab9b569f4cc5
 keywords:
-- filtro de ventanas de elementos Media Player
+- Filter Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 32d2d306faebef813996b59575220efeba99dfb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a059a6a2820d99541076775ac869de0767ffd739743f5b145a155efd0a25abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576782"
 ---
-# <a name="filter-element"></a>Elemento Filter
+# <a name="filter-element"></a>elemento filter
 
-El elemento **Filter** contiene elementos que limitan el tamaño de una lista de reproducción, la duración de una lista de reproducción o el número de elementos multimedia de una lista de reproducción.
+El **elemento filter** contiene elementos que limitan el tamaño de una lista de reproducción, la duración de una lista de reproducción o el número de elementos multimedia de una lista de reproducción.
 
 ``` syntax
 <filter
@@ -38,23 +38,23 @@ El elemento **Filter** contiene elementos que limitan el tamaño de una lista de
 
 <dl> <dt>
 
-<span id="type"></span><span id="TYPE"></span>**automáticamente**
+<span id="type"></span><span id="TYPE"></span>**Tipo**
 </dt> <dd>
 
 Tipo de objeto de filtro. No hay valores predefinidos para este atributo.
 
 </dd> <dt>
 
-<span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**ID** (obligatorio) 
+<span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**id** (obligatorio) 
 </dt> <dd>
 
-GUID que identifica de forma única un objeto de filtro. Los métodos del objeto Filter se invocan para interpretar los elementos **Fragment** contenidos en el elemento **Filter** .
+GUID que identifica de forma única un objeto de filtro. Los métodos del objeto de filtro se invocan para interpretar los elementos **de fragmento** contenidos en el **elemento de** filtro.
 
 
 
-| Value                                  | Descripción                                                                                                 |
+| Valor                                  | Descripción                                                                                                 |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| {BC5E21B0-504C-46F6-82BF-FB975C911AD6} | El identificador del filtro "filtro de lista de reproducción automática de Microsoft--limita las listas de reproducción automáticas por recuento, tamaño o duración". |
+| {BC5E21B0-504C-46F6-82BF-FB975C911AD6} | Identificador del filtro "Filtro de lista de reproducción automática de Microsoft: limita las listas de reproducción automáticas por recuento, tamaño o duración". |
 
 
 
@@ -62,16 +62,16 @@ GUID que identifica de forma única un objeto de filtro. Los métodos del objeto
 
 </dd> <dt>
 
-<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**nombre** (obligatorio) 
+<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**name** (obligatorio) 
 </dt> <dd>
 
 Nombre del objeto de filtro.
 
 
 
-| Value                                                                              | Descripción                                        |
+| Valor                                                                              | Descripción                                        |
 |------------------------------------------------------------------------------------|----------------------------------------------------|
-| Filtro de lista de reproducción automática de Microsoft: limita las listas de reproducción automáticas por número, tamaño o duración | Limita las listas de reproducción automáticas por número, tamaño o duración. |
+| Filtro de lista de reproducción automática de Microsoft: limita las listas de reproducción automáticas por recuento, tamaño o duración | Limita las listas de reproducción automáticas por recuento, tamaño o duración. |
 
 
 
@@ -86,15 +86,15 @@ Nombre del objeto de filtro.
 | Hierarchy | Elementos                                   |
 |-----------|--------------------------------------------|
 | Parent    | [smartPlaylist](smartplaylist-element.md) |
-| Elemento secundario     | [Fragment](fragment-element.md)           |
+| Elemento secundario     | [Fragmento](fragment-element.md)           |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **Filter** no agrega elementos multimedia a una lista de reproducción; simplemente quita o filtra el contenido seleccionado por el elemento **sourceFilter** .
+El **elemento filter** no agrega ningún elemento multimedia a una lista de reproducción; simplemente quita o filtra el contenido seleccionado por el **elemento sourceFilter.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -116,29 +116,29 @@ El elemento **Filter** no agrega elementos multimedia a una lista de reproducci�
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento argument**](argument-element.md)
+[**elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**elemento fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Elemento smartPlaylist**](smartplaylist-element.md)
+[**elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
-[**Elemento sourceFilter**](sourcefilter-element.md)
+[**elemento sourceFilter**](sourcefilter-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Un tipo opaco y portátil para admitir el uso de la sintaxis de inicializador de C/C++ para cargar \_ valores de Uint8 t en una instancia de tipo XMVECTOR.
+description: Tipo opaco y portátil que admite el uso de la sintaxis del inicializador de C/C++ para cargar valores uint8 t en una instancia \_ de tipo XMVECTOR.
 ms.assetid: ab73ac2c-f178-1bb9-910d-9eef5fc6f5df
-title: Tipo de datos XMVECTORU8 (DirectXMath. h)
+title: Tipo de datos XMVECTORU8 (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4428cdd78206bfa17c295a9578653bb0a66f0c6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff3c335df3e74bc58776883b15d724c65d558bad30fc37e0e28547102260301a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276201"
 ---
-# <a name="xmvectoru8-data-type"></a>XMVECTORU8, tipo de datos
+# <a name="xmvectoru8-data-type"></a>Tipo de datos XMVECTORU8
 
-Un tipo opaco y portátil para admitir el uso de la sintaxis de inicializador de C/C++ para cargar \_ valores de Uint8 t en una instancia de tipo [**XMVECTOR**](xmvector-data-type.md) .
+Tipo opaco y portátil que admite el uso de la sintaxis del inicializador de C/C++ para cargar valores uint8 t en una instancia \_ de [**tipo XMVECTOR.**](xmvector-data-type.md)
 
 
 ```C++
@@ -22,13 +22,13 @@ typedef XMVECTORU8 vectoru8;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener una lista de funcionalidad adicional, como constructores y operadores, disponible mediante XMVECTORU8 al programar en C++, vea [extensiones de XMVECTORU8](ovw-xmvectoru8-extensions.md).
+Para obtener una lista de funcionalidades adicionales, como constructores y operadores, disponibles mediante XMVECTORU8 al programar en C++, vea [Extensiones XMVECTORU8](ovw-xmvectoru8-extensions.md).
 
-Las estructuras [**XMVECTORF32**](xmvectorf32-data-type.md), [**XMVECTORU32**](xmvectoru32-data-type.md), [**XMVECTORI32**](xmvectori32-data-type.md)y **XMVECTORU8** se proporcionan como un mecanismo para crear [**XMVECTOR**](xmvector-data-type.md) de diferentes tipos de datos constantes (punto flotante, entero sin signo, entero y byte) mediante inicializadores.
+Las estructuras [**XMVECTORF32,**](xmvectorf32-data-type.md) [**XMVECTORU32,**](xmvectoru32-data-type.md) [**XMVECVEC32**](xmvectori32-data-type.md)y **XMVECTORU8** se proporcionan como un mecanismo para crear [**XMVECTOR**](xmvector-data-type.md) a partir de diferentes tipos de datos constantes (punto flotante, entero sin signo, entero y byte) mediante inicializadores.
 
-Esto es necesario para admitir [**XMVECTOR**](xmvector-data-type.md), ya que no admite inicializadores, por motivos de portabilidad y optimización.
+Esto es necesario para admitir [**XMVECTOR,**](xmvector-data-type.md)ya que no admite inicializadores por motivos de portabilidad y optimización.
 
 Por ejemplo:
 
@@ -42,11 +42,11 @@ XMVECTORU8  byteVector = { (uint8_t)  1,(uint8_t) 16,(uint8_t)101,(uint8_t) 62,
 data = floatingVector;
 ```
 
-**Espacio de nombres**: usar DirectX
+**Espacio de** nombres: uso de DirectX
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,30 +54,30 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Tipos de biblioteca de DirectXMath](ovw-xnamath-reference-types.md)
 </dt> <dt>
 
-[**XMVECTOR, tipo de datos**](xmvector-data-type.md)
+[**Tipo de datos XMVECTOR**](xmvector-data-type.md)
 </dt> <dt>
 
-[**XMVECTORF32, tipo de datos**](xmvectorf32-data-type.md)
+[**Tipo de datos XMVECTORF32**](xmvectorf32-data-type.md)
 </dt> <dt>
 
-[**XMVECTORI32, tipo de datos**](xmvectori32-data-type.md)
+[**Tipo de datos XMVECVEC32**](xmvectori32-data-type.md)
 </dt> <dt>
 
-[**XMVECTORU32, tipo de datos**](xmvectoru32-data-type.md)
+[**Tipo de datos XMVECTORU32**](xmvectoru32-data-type.md)
 </dt> <dt>
 
-[Extensiones de XMVECTORU8](ovw-xmvectoru8-extensions.md)
+[Extensiones XMVECTORU8](ovw-xmvectoru8-extensions.md)
 </dt> </dl>
 
  

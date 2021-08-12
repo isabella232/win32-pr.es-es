@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUBYTEN4 expone los siguientes operadores.
+description: La estructura XMUBYTEN4 expone los operadores siguientes.
 ms.assetid: eb6d6d20-febf-4035-a79d-3239d828ce0d
 title: Operadores XMUBYTEN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79a1774a3f325accfa01f27ad738008b7954d4ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be833ffdf7ef9a37c6723a7f2c94bc0e50981c6fd19a0a9c7b7d7c6b7a3558e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277469"
 ---
 # <a name="xmubyten4-operators"></a>Operadores XMUBYTEN4
 
-La estructura [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) expone los siguientes operadores.
+La [**estructura XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxp
 
 | Métodos                                                | Descripción                                                                                                            |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/previous-versions/windows/desktop/legacy/ee420506(v=vs.85))<br/> | Asigna los datos del componente de vector de una instancia de `XMUBYTEN4` a la instancia actual de `XMUBYTEN4` . <br/> |
+| [**operator =**](/previous-versions/windows/desktop/legacy/ee420506(v=vs.85))<br/> | Asigna los datos del componente vectorial de una instancia de `XMUBYTEN4` a la instancia actual de `XMUBYTEN4` . <br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxp
 
 <dl> <dt>
 
-[Extensiones de XMUBYTEN4](ovw-xmubyten4-extensions.md)
+[Extensiones XMUBYTEN4](ovw-xmubyten4-extensions.md)
 </dt> <dt>
 
 **Referencia**

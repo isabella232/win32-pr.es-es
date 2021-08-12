@@ -1,7 +1,7 @@
 ---
-description: Calcula una proyección de la iluminación directa desde el rebote de luz anterior en vectores de base de armónicos esféricos (SH) que representan el incidente radiance en las ubicaciones especificadas.
+description: Calcula una proyección de la iluminación directa a partir de los vectores de base de la iluminación anterior en vectores de base esférica (SH) que representan el brillo de los incidentes en ubicaciones especificadas.
 ms.assetid: ccde7c59-cb82-4d61-822a-e1e9ecea0a28
-title: 'ID3DXPRTEngine:: ComputeVolumeSamples (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ComputeVolumeSamples (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bd77fff723f0cf7e3dc2a52be6a40ff6f0d71fe1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: edc13e8b6f0e5c725e957be22f1b297f825a4f3b622ced68adf19b34a0b64b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293506"
 ---
-# <a name="id3dxprtenginecomputevolumesamples-method"></a>ID3DXPRTEngine:: ComputeVolumeSamples (método)
+# <a name="id3dxprtenginecomputevolumesamples-method"></a>Método ID3DXPRTEngine::ComputeVolumeSamples
 
-Calcula una proyección de la iluminación directa desde el rebote de luz anterior en vectores de base de armónicos esféricos (SH) que representan el incidente radiance en las ubicaciones especificadas.
+Calcula una proyección de la iluminación directa a partir de los vectores de base de la iluminación anterior en vectores de base esférica (SH) que representan el brillo de los incidentes en ubicaciones especificadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,39 +44,39 @@ HRESULT ComputeVolumeSamples(
 
 <dl> <dt>
 
-*pSurfDataIn* \[ de\]
+*p ResalteDataIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de entrada que representa el objeto 3D del rebote de luz anterior.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) entrada que representa el objeto 3D de la luz anterior.
 
 </dd> <dt>
 
-*Pedido* \[ de de\]
+*Pedido* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes de pedido ². El grado de evaluación es order-1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
-*NumVolSamples.xml* \[ de\]
+*NumVolSamples.xml* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de ubicaciones de ejemplo.
 
 </dd> <dt>
 
-*pSampleLocs* \[ de\]
+*pSampleLocs* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posición de cada ejemplo. Si pSampleLocs es **null**, ComputeVolumeSamples calculará las matrices de transferencia en cada vértice de la malla. Sin embargo, si pSampleLocs no es **null**, debe muestrear en una esfera (Set UseSphere = **true** y UseCosine = **false** en [**ID3DXPRTEngine:: SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md)); de lo contrario, ComputeVolumeSamples devolverá D3DERR \_ INVALIDCALL.
+Posición para cada muestra. Si pSampleLocs es **NULL,** ComputeVolumeSamples calculará las matrices de transferencia en cada vértice de malla. Sin embargo, si pSampleLocs no es **NULL,** debe muestrear en una esfera (establezca UseSphere = **TRUE** y UseCosine = **FALSE** en [**ID3DXPRTEngine::SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md)); De lo contrario, ComputeVolumeSamples devolverá D3DERR \_ INVALIDCALL.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Posición de cada ejemplo. Si pSampleLocs es **null**, ComputeVolumeSamples calc
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que proyecta la iluminación directa del rebote de luz anterior en vectores de base SH. Este búfer debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) salida que proyecta la iluminación directa de la luz anterior en vectores de base SH. Este búfer debe tener asignado el número adecuado de canales de color para la simulación.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que proyec
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método calcula cómo la luz de la función Radiance de origen se refleja en la superficie que representa la escena (pSurfDataIn) y llega en cada punto en el espacio especificado por pSampleLocs. Los coeficientes SH representan la asignación, en cada punto de pSampleLocs, de Radiance de origen a Radiance de incidente transferido.
+Este método calcula cómo la luz de la función de radiancia de origen se refleja fuera de la superficie que representa la escena (pSampleDataIn) y llega a cada punto del espacio especificado por pSampleLocs. Los coeficientes sh representan la asignación, en cada punto pSampleLocs, de la radiancia de origen a la radiación del incidente transferido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,12 +105,12 @@ Este método calcula cómo la luz de la función Radiance de origen se refleja e
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

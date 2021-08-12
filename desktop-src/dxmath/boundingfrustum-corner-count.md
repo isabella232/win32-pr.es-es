@@ -1,19 +1,19 @@
 ---
-description: Número de esquinas que definen el valor de BoundingFrustum.
+description: Número de esquinas que definen boundingFrustum.
 ms.assetid: 0344b0ca-de22-454a-b140-33f5790fb1b9
-title: BoundingFrustum.CORNER_COUNT (DirectXCollision. h)
+title: BoundingFrustum.CORNER_COUNT (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 497fc560a96bb06df6ca8288c8c581c587190675
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f5611fc8c6ad820d759fa7ab7895b0b8d571b40bf9d813fb791c7403170ffbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278629"
 ---
-# <a name="boundingfrustumcorner_count"></a>Recuento de BoundingFrustum. CORNER \_
+# <a name="boundingfrustumcorner_count"></a>BoundingFrustum.CORNER \_ COUNT
 
-Número de esquinas que definen el valor de [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Número de esquinas que definen [**boundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -23,11 +23,11 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK de Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,11 +35,11 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

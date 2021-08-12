@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. allowItemEditing
-description: El atributo allowItemEditing especifica o recupera un valor que indica si los elementos de una lista de reproducción van a admitir la edición en contexto.
+title: PLAYLIST.allowItemEditing
+description: El atributo allowItemEditing especifica o recupera un valor que indica si los elementos de una lista de reproducción admitirán la edición en contexto.
 ms.assetid: fc6120d9-0424-4c42-8aa9-ba4bbbd580fe
 keywords:
-- Windows Media Player de lista de reproducción. allowItemEditing
+- PLAYLIST.allowItemEditing Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8949b02a9a0be61ea3dbf2e54fa01b2bb9521e19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53a3f07c3212cddeb45ff4ba4c5c6c268483025e782b41d79c8cc51765aa6d00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571495"
 ---
-# <a name="playlistallowitemediting"></a>Lista de reproducción. allowItemEditing
+# <a name="playlistallowitemediting"></a>PLAYLIST.allowItemEditing
 
-El atributo **allowItemEditing** especifica o recupera un valor que indica si los elementos de una lista de reproducción van a admitir la edición en contexto.
+El **atributo allowItemEditing** especifica o recupera un valor que indica si los elementos de una lista de reproducción admitirán la edición en contexto.
 
 ``` syntax
         elementID.allowItemEditing
@@ -29,11 +29,11 @@ El atributo **allowItemEditing** especifica o recupera un valor que indica si lo
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                           |
+| Valor | Descripción                           |
 |-------|---------------------------------------|
 | true  | Predeterminada. Se permite la edición en contexto. |
 | false | No se permite la edición en contexto.      |
@@ -46,17 +46,17 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

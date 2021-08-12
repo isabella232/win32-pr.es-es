@@ -1,7 +1,7 @@
 ---
-description: Establece las propiedades de muestreo utilizadas por el simulador Radiance Transfer (PRT) precalculado.
+description: Establece las propiedades de muestreo usadas por el simulador de transferencia de base de datos precalutada (PRT).
 ms.assetid: a33963a7-fbcb-4e1c-a4f3-fb20a99fcf9f
-title: 'ID3DXPRTEngine:: SetSamplingInfo (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::SetSamplingInfo (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ab229652fe9e333519acce7d8474d3c4f0cf7ef9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db15bc2120f90cf52aa4f3c41eccecc7d308cc8392ae368cd4423a90f218f6ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293369"
 ---
-# <a name="id3dxprtenginesetsamplinginfo-method"></a>ID3DXPRTEngine:: SetSamplingInfo (método)
+# <a name="id3dxprtenginesetsamplinginfo-method"></a>Método ID3DXPRTEngine::SetSamplingInfo
 
-Establece las propiedades de muestreo utilizadas por el simulador Radiance Transfer (PRT) precalculado.
+Establece las propiedades de muestreo usadas por el simulador de transferencia de base de datos precalutada (PRT).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,46 +44,46 @@ HRESULT SetSamplingInfo(
 
 <dl> <dt>
 
-*NumRays* \[ de\]
+*NumRays* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de rayos de luz que se dirigen a cada ejemplo. Debe ser mayor que cero.
+Número de rayos de luz que se dirigen a cada muestra. Debe ser mayor que cero.
 
 </dd> <dt>
 
-*UseSphere* \[ de\]
+*Uso deSphere* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Si **es true**, los ejemplos se calcularán en una esfera completa. Si **es false**, los ejemplos se calcularán sobre un hemisferio.
+Si **es TRUE,** las muestras se calcularán a través de una esfera completa. Si **es FALSE,** las muestras se calcularán a través de un hemisferio.
 
 </dd> <dt>
 
-*UseCosine* \[ de\]
+*UseCosine* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Si **es true**, se usa una ponderación de muestras de coseno. Si tanto UseCosine como UseSphere son **true**, se producirá un error en el método y se devolverá un error.
+Si **es TRUE,** use una ponderación de coseno de muestras. Si UseCosine y UseSphere son **TRUE,** se producirá un error en el método y se devolverá un error.
 
 </dd> <dt>
 
-*Adaptable* \[ de\]
+*Adaptable* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Debe ser **false**. El muestreo adaptable no está implementado actualmente.
+Debe ser **FALSE.** El muestreo adaptable no está implementado actualmente.
 
 </dd> <dt>
 
-*AdaptiveThresh* \[ de\]
+*AdaptiveThresh* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 ignorado.
 
@@ -93,7 +93,7 @@ ignorado.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, e \_ NOTIMPL e \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ NOTIMPL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,12 +101,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

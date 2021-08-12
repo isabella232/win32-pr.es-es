@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. itemErrorColor
+title: PLAYLIST.itemErrorColor
 description: El atributo itemErrorColor especifica o recupera el color de resaltado que indica un elemento de lista de reproducción que tiene una condición de error.
 ms.assetid: 6f2d4267-07e7-4630-b567-043c0baff1c7
 keywords:
-- Windows Media Player de lista de reproducción. itemErrorColor
+- PLAYLIST.itemErrorColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 184819f02ef666240768eee0a890ed1e0b62b873
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f3396392f8010e58d81cb7d8970a4fc5fd022c87bbcb152fa6911154039c564
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571300"
 ---
-# <a name="playlistitemerrorcolor"></a>Lista de reproducción. itemErrorColor
+# <a name="playlistitemerrorcolor"></a>PLAYLIST.itemErrorColor
 
-El atributo **itemErrorColor** especifica o recupera el color de resaltado que indica un elemento de lista de reproducción que tiene una condición de error.
+El **atributo itemErrorColor** especifica o recupera el color de resaltado que indica un elemento de lista de reproducción que tiene una condición de error.
 
 ``` syntax
         elementID.itemErrorColor
@@ -29,26 +29,26 @@ El atributo **itemErrorColor** especifica o recupera el color de resaltado que i
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. Tiene un valor predeterminado de "red".
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado de "rojo".
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

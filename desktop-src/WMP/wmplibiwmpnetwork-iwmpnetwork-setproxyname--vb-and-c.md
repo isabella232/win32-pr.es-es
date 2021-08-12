@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork setProxyName, método
-description: El método setProxyName especifica el nombre del servidor proxy que se va a usar. | IWMPNetwork setProxyName, método
+title: Método IWMPNetwork setProxyName
+description: El método setProxyName especifica el nombre del servidor proxy que se usará. | Método IWMPNetwork setProxyName
 ms.assetid: a3b0f53a-d81a-4e6d-9cac-7047433246ae
 keywords:
-- método setProxyName de Windows Media Player
-- método setProxyName Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método setProxyName
+- Método setProxyName Reproductor de Windows Media
+- Método setProxyName Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , método setProxyName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c9759f37dd4c0e171c09afaea4dfde0993c7f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe4525b3933f0929413a2719e1338083b00b9995a4ba39085f5787c6feca9931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568720"
 ---
-# <a name="iwmpnetworksetproxyname-method"></a>IWMPNetwork:: setProxyName (método)
+# <a name="iwmpnetworksetproxyname-method"></a>IWMPNetwork::setProxyName (método)
 
-El método **setProxyName** especifica el nombre del servidor proxy que se va a usar.
+El **método setProxyName** especifica el nombre del servidor proxy que se usará.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,17 +55,17 @@ Implements IWMPNetwork.setProxyName
 
 <dl> <dt>
 
-*bstrProtocol* \[ de\]
+*bstrProtocol* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**System.String que** es el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*bstrProxyName* \[ de\]
+*bstrProxyName* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del servidor proxy que se va a usar.
+**System.String que** es el nombre del servidor proxy que se va a usar.
 
 </dd> </dl>
 
@@ -73,15 +73,15 @@ Implements IWMPNetwork.setProxyName
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork. getProxySettings** es 2 (use la configuración manual).
+Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork.getProxySettings** sea 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **setProxyName** para especificar el nombre del servidor proxy de Windows Media Player para el protocolo MMS. El nuevo nombre se recupera de un cuadro de texto cuando se hace clic en un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa setProxyName** para especificar el nombre del servidor Reproductor de Windows Media proxy para el protocolo MMS. El nuevo nombre se recupera de un cuadro de texto cuando se hace clic en un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -136,25 +136,25 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxyName (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxyname--vb-and-c.md)
+[**IWMPNetwork.getProxyName (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxyname--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_RENDERFORMAT (Winuser. h)
-description: Se envía al propietario del portapapeles si ha retrasado la representación de un formato específico del portapapeles y si una aplicación ha solicitado datos en ese formato.
+title: WM_RENDERFORMAT mensaje (Winuser.h)
+description: Se envía al propietario del Portapapeles si ha retrasado la representación de un formato de Portapapeles específico y si una aplicación ha solicitado datos en ese formato.
 ms.assetid: 81638109-4c5e-4b4c-b2db-4208b6ee83cc
 keywords:
-- Intercambio de datos de mensajes de WM_RENDERFORMAT
+- WM_RENDERFORMAT mensaje Datos Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab9d0e8539dc666c7a791a24c9ba7ac772c3c2c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2885e056577656d6cabb8ea78f48a02a19f3c3c40bb3c30b1e5ca25c72cdf39b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545314"
 ---
-# <a name="wm_renderformat-message"></a>Mensaje de RENDERFORMAT de WM \_
+# <a name="wm_renderformat-message"></a>Mensaje \_ RENDERFORMAT de WM
 
-Se envía al propietario del portapapeles si ha retrasado la representación de un formato específico del portapapeles y si una aplicación ha solicitado datos en ese formato. El propietario del portapapeles debe representar los datos en el formato especificado y colocarlos en el portapapeles mediante una llamada a la función [**SetClipboardData**](/windows/win32/api/winuser/nf-winuser-setclipboarddata) .
+Se envía al propietario del Portapapeles si ha retrasado la representación de un formato de Portapapeles específico y si una aplicación ha solicitado datos en ese formato. El propietario del Portapapeles debe representar los datos en el formato especificado y colocarlo en el Portapapeles mediante una llamada a la [**función SetClipboardData.**](/windows/win32/api/winuser/nf-winuser-setclipboarddata)
 
 
 ```C++
@@ -39,7 +39,7 @@ Se envía al propietario del portapapeles si ha retrasado la representación de 
 *wParam* 
 </dt> <dd>
 
-[Formato del portapapeles](standard-clipboard-formats.md) que se va a representar.
+Formato [del Portapapeles](standard-clipboard-formats.md) que se va a representar.
 
 </dd> <dt>
 
@@ -54,23 +54,23 @@ Este parámetro no se utiliza.
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se responde a un mensaje de **\_ RENDERFORMAT de WM** , el propietario del portapapeles no debe abrir el portapapeles antes de llamar a [**SetClipboardData**](/windows/win32/api/winuser/nf-winuser-setclipboarddata). No es necesario abrir el portapapeles antes de colocar los datos en respuesta a **WM \_ RENDERFORMAT** y se producirá un error al intentar abrir el portapapeles, ya que la aplicación que solicitó el formato para representarlo tiene abierto el portapapeles.
+Al responder a un **mensaje \_ RENDERFORMAT de WM,** el propietario del Portapapeles no debe abrir el Portapapeles antes de llamar a [**SetClipboardData**](/windows/win32/api/winuser/nf-winuser-setclipboarddata). No es necesario abrir el Portapapeles antes de colocar los datos en respuesta a **WM \_ RENDERFORMAT,** y cualquier intento de abrir el Portapapeles producirá un error porque la aplicación que solicitó que se representara el formato se mantiene abierto actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -80,10 +80,10 @@ Cuando se responde a un mensaje de **\_ RENDERFORMAT de WM** , el propietario de
 [**SetClipboardData**](/windows/win32/api/winuser/nf-winuser-setclipboarddata)
 </dt> <dt>
 
-[**RENDERALLFORMATS de WM \_**](wm-renderallformats.md)
+[**WM \_ RENDERALLFORMATS**](wm-renderallformats.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Portapapeles](clipboard.md)

@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUDEC4 expone los siguientes operadores.
+description: La estructura XMUDEC4 expone los operadores siguientes.
 ms.assetid: d199a583-cbff-4421-a330-ac4caf43d87d
 title: Operadores XMUDEC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca056d6b727bf979779d9b1685c6b8ec37950677
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c55d88946f8bd961e91de9e76e4da71e4172ba2967de9257ba9c71bd2b05d8c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277459"
 ---
 # <a name="xmudec4-operators"></a>Operadores XMUDEC4
 
-La estructura [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4) expone los siguientes operadores.
+La [**estructura XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,8 +26,8 @@ La estructura [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpac
 
 | Métodos                                                            | Descripción                                                                                                           |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [**operador UInt32 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmudec4-operatoruint32_t)<br/> | Devuelve una instancia de `uint32_t` que contiene los componentes de la `XMUDEC4` instancia en un formato empaquetado. <br/> |
-| [**operador =**](xmudec4-operator-eq.md)<br/>               | Asigna datos de componentes vectoriales a la instancia actual de `XMUDEC4` . <br/>                                       |
+| [**operador uint32 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmudec4-operatoruint32_t)<br/> | Devuelve una instancia de `uint32_t` que contiene los componentes de la instancia en un formato `XMUDEC4` empaquetado. <br/> |
+| [**operator =**](xmudec4-operator-eq.md)<br/>               | Asigna datos de componentes vectoriales a la instancia actual de `XMUDEC4` . <br/>                                       |
 
 
 
@@ -37,7 +37,7 @@ La estructura [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpac
 
 <dl> <dt>
 
-[Extensiones de XMUDEC4](ovw-xmudec4-extensions.md)
+[Extensiones XMUDEC4](ovw-xmudec4-extensions.md)
 </dt> <dt>
 
 **Referencia**

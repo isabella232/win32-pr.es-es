@@ -1,9 +1,9 @@
 ---
-title: Elemento Data (TemplateItemType)
-description: Define un elemento de datos que desea incluir con el evento. | Elemento Data (TemplateItemType)
+title: elemento data (TemplateItemType)
+description: Define un elemento de datos que desea incluir con el evento . | elemento data (TemplateItemType)
 ms.assetid: 7e4a4f5d-d61a-4a42-ba7d-4549a294229a
 keywords:
-- EventLog del elemento de datos
+- elemento de datos EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 632d2ef1d9ba31d923a16eacf82bee480433c14b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 60b5ca3675a735ba742f953e3e880fd9db4def579962e83581b415ecb0b99f15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589667"
 ---
-# <a name="data-templateitemtype-element"></a>Elemento Data (TemplateItemType)
+# <a name="data-templateitemtype-element"></a>elemento data (TemplateItemType)
 
-Define un elemento de datos que desea incluir con el evento.
+Define un elemento de datos que desea incluir con el evento .
 
 ``` syntax
 <xs:element name="data"
@@ -30,7 +30,7 @@ Define un elemento de datos que desea incluir con el evento.
  />
 ```
 
-El elemento de **datos** se define mediante el tipo complejo de [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) .
+El **elemento** de datos se define mediante el [**tipo complejo TemplateItemType.**](eventmanifestschema-templateitemtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,19 +38,19 @@ El elemento de **datos** se define mediante el tipo complejo de [**TemplateItemT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**plantilla (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
+[**template (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
 </dt> </dl>
 
  

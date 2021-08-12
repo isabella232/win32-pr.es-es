@@ -1,21 +1,21 @@
 ---
-description: La mezcla alfa del búfer de fotogramas es un poco diferente que el vértice alfa, el alfa del material y la textura alfa.
+description: La combinación alfa del búfer de fotogramas es un poco diferente de alfa de vértice, alfa de material y alfa de textura.
 ms.assetid: 3664215d-ad03-400e-beab-b0421cf6b693
-title: Búfer de trama alfa (Direct3D 9)
+title: Búfer de fotogramas alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb310e2c66f43282e65425fd0d6c6a24961accaa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ec091e8cc42d6b21142d3b9372f6d2931ba25d1dfe12aa7717e0b09acf0b0718
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297500"
 ---
-# <a name="frame-buffer-alpha-direct3d-9"></a>Búfer de trama alfa (Direct3D 9)
+# <a name="frame-buffer-alpha-direct3d-9"></a>Búfer de fotogramas alfa (Direct3D 9)
 
-La mezcla alfa del búfer de fotogramas es un poco diferente que el vértice alfa, el alfa del material y la textura alfa. Los valores de transparencia de vértices, materiales y texturas que se usan solo para el primitivo actual y no tienen ningún efecto en otros tipos primitivos. La mezcla alfa de búfer de fotogramas controla cómo se combina el primitivo actual con los píxeles existentes en el búfer de fotogramas para producir un color de píxel final.
+La combinación alfa del búfer de fotogramas es un poco diferente de alfa de vértice, alfa de material y alfa de textura. Los valores de transparencia del conjunto alfa de vértice, material y textura solo se usan para la primitiva actual y, por sí mismos, no tienen ningún efecto en otras primitivas. La combinación alfa del búfer de fotogramas controla cómo se combina la primitiva actual con los píxeles existentes en el búfer de fotogramas para producir un color de píxel final.
 
-Al realizar la combinación alfa, se combinan dos colores: un color de origen y un color de destino. El color de origen es del objeto transparente, el color de destino es el color que ya está en la ubicación de píxeles. El color de destino es el resultado de representar algún otro objeto situado detrás del objeto transparente, es decir, el objeto que será visible a través del objeto transparente. La combinación alfa utiliza una fórmula para controlar la relación entre los objetos de origen y de destino.
+Al realizar la combinación alfa, se combinan dos colores: un color de origen y un color de destino. El color de origen es del objeto transparente, el color de destino es el color que ya se encuentra en la ubicación de píxeles. El color de destino es el resultado de representar otro objeto que está detrás del objeto transparente, es decir, el objeto que será visible a través del objeto transparente. La combinación alfa usa una fórmula para controlar la relación entre los objetos de origen y de destino.
 
 
 ```
@@ -26,33 +26,33 @@ Final Color = ObjectColor * SourceBlendFactor + PixelColor * DestinationBlendFac
 
 ObjectColor es la contribución de la primitiva que se representa en la ubicación de píxeles actual. PixelColor es la contribución del búfer de fotogramas en la ubicación de píxeles actual.
 
-A continuación se enumera el conjunto de factores de mezcla alfa que se pueden usar.
+A continuación se muestra el conjunto de factores de combinación alfa que se pueden usar.
 
 
 
 | Factor de modo de mezcla         | Descripción                                                                                                                                                                              |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3DBLEND \_ cero            | (0, 0, 0, 0)                                                                                                                                                                             |
-| D3DBLEND \_ uno             | (1, 1, 1, 1)                                                                                                                                                                             |
-| D3DBLEND \_ SRCCOLOR        | (RS, GS, BS, as)                                                                                                                                                                         |
-| D3DBLEND \_ INVSRCCOLOR     | (1-RS, 1-GS, 1-BS, 1-as)                                                                                                                                                                 |
-| D3DBLEND \_ SRCALPHA        | (Como, como, como)                                                                                                                                                                         |
-| D3DBLEND \_ INVSRCALPHA     | (1-as, 1-as, 1-as, 1-as)                                                                                                                                                                 |
-| D3DBLEND \_ DESTALPHA       | (Ad, ad, ad, ad)                                                                                                                                                                         |
-| D3DBLEND \_ INVDESTALPHA    | (1: AD, 1: AD, 1: AD, 1-ad)                                                                                                                                                                 |
-| D3DBLEND \_ DESTCOLOR       | (Rd, GD, BD, ad)                                                                                                                                                                         |
-| D3DBLEND \_ INVDESTCOLOR    | (1-Rd, 1-GD, 1-BD, 1-ad)                                                                                                                                                                 |
-| D3DBLEND \_ SRCALPHASAT     | (f, f, f, 1); f = min (as, 1-ad)                                                                                                                                                          |
-| D3DBLEND \_ BOTHSRCALPHA    | Obsoleto para DirectX 6 y versiones posteriores. Puede lograr el mismo efecto si establece los factores de mezcla de origen y destino en D3DBLEND \_ SRCALPHA y D3DBLEND \_ INVSRCALPHA en llamadas independientes. |
-| D3DBLEND \_ BOTHINVSRCALPHA | Obsoleto para DirectX 6. Puede lograr el mismo efecto si establece los factores de mezcla de origen y destino en D3DBLEND \_ INVSRCALPHA y D3DBLEND \_ SRCALPHA en llamadas independientes.           |
-| D3DBLEND \_ BLENDFACTOR     | Use color. r, color. g, color. b y color. Obtenido de la configuración de BLENDFACTOR de D3DRS \_ .                                                                                                 |
-| D3DBLEND \_ INVBLENDFACTOR  | Use 1-color. r, 1-color. g, 1-color. b y 1-color. obtenido del valor BLENDFACTOR de D3DRS \_ .                                                                                         |
+| D3DBLEND \_ ZERO            | (0, 0, 0, 0)                                                                                                                                                                             |
+| D3DBLEND \_ ONE             | (1, 1, 1, 1)                                                                                                                                                                             |
+| D3DBLEND \_ SRCCOLOR        | (Rs, Gs, Bs, As)                                                                                                                                                                         |
+| D3DBLEND \_ INVSRCCOLOR     | (1-Rs, 1-Gs, 1-Bs, 1-As)                                                                                                                                                                 |
+| D3DBLEND \_ SRCALPHA        | (As, As, As, As)                                                                                                                                                                         |
+| D3DBLEND \_ INVSRCALPHA     | (1-As, 1-As, 1-As, 1-As)                                                                                                                                                                 |
+| D3DBLEND \_ DESTALPHA       | (Ad, Ad, Ad, Ad)                                                                                                                                                                         |
+| D3DBLEND \_ INVDESTALPHA    | (1-Ad, 1-Ad, 1-Ad, 1-Ad)                                                                                                                                                                 |
+| D3DBLEND \_ DESTCOLOR       | (Rd, Gd, Bd, Ad)                                                                                                                                                                         |
+| D3DBLEND \_ INVDESTCOLOR    | (1-Rd, 1-Gd, 1-Bd, 1-Ad)                                                                                                                                                                 |
+| D3DBLEND \_ SRCALPHASAT     | (f, f, f, 1); f = min(As, 1-Ad)                                                                                                                                                          |
+| D3DBLEND \_ BOTHSRCALPHA    | Obsoleto para DirectX 6 y versiones posteriores. Puede lograr el mismo efecto estableciendo los factores de combinación de origen y destino en D3DBLEND \_ SRCALPHA y D3DBLEND \_ INVSRCALPHA en llamadas independientes. |
+| D3DBLEND \_ BOTHINVSRCALPHA | Obsoleto para DirectX 6. Puede lograr el mismo efecto estableciendo los factores de combinación de origen y destino en D3DBLEND \_ INVSRCALPHA y D3DBLEND SRCALPHA en llamadas \_ independientes.           |
+| D3DBLEND \_ BLENDFACTOR     | Use color.r, color.g, color.b y color.a obtenidos de la configuración \_ DE BLENDFACTOR de D3DRS.                                                                                                 |
+| D3DBLEND \_ INVBLENDFACTOR  | Use 1-color.r, 1-color.g, 1-color.b y 1-color.a obtenido de la configuración BLENDFACTOR de D3DRS. \_                                                                                         |
 
 
 
  
 
-Direct3D usa el \_ Estado de representación de ALPHABLENDENABLE de D3DRS para habilitar la combinación de transparencia alfa. El tipo de combinación alfa que se realiza depende de los Estados de \_ representación D3DRS SRCBLEND y D3DRS \_ DESTBLEND. Los Estados de mezcla de origen y destino se usan en pares. El siguiente fragmento de código establece el estado de Blend de origen en D3DBLEND \_ SRCCOLOR y el estado de Blend de destino en D3DBLEND \_ INVSRCCOLOR.
+Direct3D usa el estado de representación ALPHABLENDENABLE de D3DRS \_ para habilitar la combinación de transparencia alfa. El tipo de combinación alfa que se realiza depende de los estados de representación D3DRS \_ SRCBLEND y D3DRS \_ DESTBLEND. Los estados de combinación de origen y destino se usan en pares. El fragmento de código siguiente establece el estado de mezcla de origen en D3DBLEND SRCCOLOR y el estado de mezcla de destino \_ en D3DBLEND \_ INVSRCCOLOR.
 
 
 ```
@@ -74,15 +74,15 @@ lpD3DDevice->SetRenderState(D3DRS_DESTBLEND,
 
 
 
-Este código realiza una mezcla lineal entre el color de origen (el color de la primitiva que se representa en la ubicación actual) y el color de destino (el color de la ubicación actual en el búfer de marco). La apariencia resultante es similar a la del matiz con matices en el hecho de que parte del color del objeto de destino parezca transmitirse a través del objeto de origen. el resto de ellos parece ser absorbido.
+Este código realiza una combinación lineal entre el color de origen (el color de la primitiva que se representa en la ubicación actual) y el color de destino (el color de la ubicación actual en el búfer del marco). El aspecto resultante es similar al de un cristal en el que parte del color del objeto de destino parece transmitirse a través del objeto de origen. el resto parece ser desmesado.
 
-Muchos de estos factores de mezcla requieren valores alfa en la textura para que funcionen correctamente. Por lo tanto, cuando se usa el vértice o el alfa del material, la aplicación se restringe en qué modos se producirán resultados interesantes.
+Muchos de estos factores de combinación requieren que los valores alfa de la textura funcionen correctamente. Por lo tanto, al usar vértices o materiales alfa, la aplicación está restringida en cuanto a qué modos producirá resultados interesantes.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Combinación alfa](alpha-blending.md)
+[Alpha Blending](alpha-blending.md)
 </dt> </dl>
 
  
