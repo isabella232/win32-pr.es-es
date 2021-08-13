@@ -1,8 +1,8 @@
 ---
-description: Excluye los discos de la operación de AUTOCHK que se ejecutarán en el siguiente reinicio.
+description: Excluye los discos de la operación autochk que se ejecutará en el siguiente reinicio.
 ms.assetid: 5df2bc3b-e149-4853-aa02-af4cb8af6da0
 ms.tgt_platform: multiple
-title: Método ExcludeFromAutochk de la clase Win32_LogicalDisk
+title: Método ExcludeFromAutochk de la Win32_LogicalDisk clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c41d93111742e975490d97169c7e9147ba5fb1ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a37171c594cb3a51b131220bb604234bcae108fa025ea6343da99fdc998a7dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676133"
 ---
-# <a name="excludefromautochk-method-of-the-win32_logicaldisk-class"></a>Método ExcludeFromAutochk de la \_ clase Win32 LogicalDisk
+# <a name="excludefromautochk-method-of-the-win32_logicaldisk-class"></a>Método ExcludeFromAutochk de la clase LogicalDisk de Win32 \_
 
-El método **ExcludeFromAutochk** excluye los discos de la operación **Autochk** que se va a ejecutar en el siguiente reinicio.
+El **método ExcludeFromAutochk** excluye los discos de la **operación autochk** que se ejecutará en el siguiente reinicio.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ uint32 ExcludeFromAutochk(
 
 <dl> <dt>
 
-*LogicalDisk* \[ de\]
+*Disco lógico* \[ En\]
 </dt> <dd>
 
-Lista de unidades que deben excluirse de **Autochk** en el siguiente reinicio. La sintaxis de la cadena se compone de la letra de unidad seguida de dos puntos para el disco lógico.
+Lista de unidades que se deben excluir de **autochk** en el siguiente reinicio. La sintaxis de cadena consta de la letra de unidad seguida de dos puntos para el disco lógico.
 
 Ejemplo: "C:"
 
@@ -53,7 +53,7 @@ Ejemplo: "C:"
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si no se produce ningún error. Los valores se muestran en la lista siguiente. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) cuando no se produce ningún error. Los valores se enumeran en la lista siguiente. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Devuelve un valor de 0 (cero) si no se produce ningún error. Los valores se mue
 **Error: unidad extraíble** (2)
 </dt> <dt>
 
-**Error: la unidad no es el directorio raíz** (3)
+**Error: unidad no directorio raíz** (3)
 </dt> <dt>
 
 **Error: unidad desconocida** (4)
@@ -74,11 +74,11 @@ Devuelve un valor de 0 (cero) si no se produce ningún error. Los valores se mue
 
 ## <a name="remarks"></a>Observaciones
 
-Si no se excluye, **Autochk** se realiza en el disco cuando se establece el bit de integridad del disco. Tenga en cuenta que las llamadas para excluir discos no son acumulativas. Si se realiza una llamada para excluir algunos discos, la nueva lista no se agrega a la lista de discos que ya están marcados para su exclusión. La nueva lista de discos sobrescribe la lista anterior. Este método solo es aplicable a las instancias de disco lógico que representan un disco físico en el equipo. No es aplicable a las unidades lógicas asignadas.
+Si no se excluye, **la función autochk** se realiza en el disco cuando se establece el bit desatensado para el disco. Tenga en cuenta que las llamadas para excluir discos no son acumulativas. Si se realiza una llamada para excluir algunos discos, la nueva lista no se agrega a la lista de discos que ya están marcados para la exclusión. La nueva lista de discos sobrescribe la lista anterior. Este método solo es aplicable a las instancias de disco lógico que representan un disco físico en la máquina. No es aplicable a las unidades lógicas asignadas.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript garantiza que Autochk.exe no se ejecutarán en la unidad C la próxima vez que se reinicie el equipo, incluso si se ha establecido el "bit de integridad" en la unidad C.
+El siguiente ejemplo de código VBScript garantiza que Autochk.exe se ejecute en la unidad C la próxima vez que se reinicie el equipo, incluso si el "bit sucio" se ha establecido en la unidad C.
 
 
 ```VB
@@ -101,8 +101,8 @@ errReturn = objDisk.ExcludeFromAutoChk(Array("C:"))
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -111,10 +111,10 @@ errReturn = objDisk.ExcludeFromAutoChk(Array("C:"))
 
 <dl> <dt>
 
-[**LogicalDisk de Win32 \_**](win32-logicaldisk.md)
+[**Disco lógico \_ win32**](win32-logicaldisk.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

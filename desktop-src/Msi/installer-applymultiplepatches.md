@@ -1,7 +1,7 @@
 ---
-description: El método ApplyMultiplePatches aplica una o más revisiones a los productos que son válidos para recibir la revisión. El método establece la propiedad PATCH.
+description: El método ApplyMultiplePatches aplica una o varias revisiones a los productos que son aptos para recibir la revisión. El método establece la propiedad PATCH.
 ms.assetid: 40c40e2c-60ef-4492-a4ab-0bb6b874fe80
-title: Instalador. ApplyMultiplePatches (método)
+title: Método Installer.ApplyMultiplePatches
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d96d96157f7b1d81617be6980804fb54a6e6659f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2b1c469ca623b0c09ea2899de1867cc10c8d8cda9363994973d08ecc20ed7f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118633212"
 ---
-# <a name="installerapplymultiplepatches-method"></a>Instalador. ApplyMultiplePatches (método)
+# <a name="installerapplymultiplepatches-method"></a>Método Installer.ApplyMultiplePatches
 
-El método **ApplyMultiplePatches** aplica una o más revisiones a los productos que son válidos para recibir la revisión. El método establece la propiedad [**patch**](patch.md) .
+El **método ApplyMultiplePatches** aplica una o varias revisiones a los productos que son aptos para recibir la revisión. El método establece la [**propiedad PATCH.**](patch.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ Installer.ApplyMultiplePatches(
 *PatchPackagesList* 
 </dt> <dd>
 
-Una cadena que contiene una lista delimitada por signos de punto y coma de las rutas de acceso a los archivos de revisión. Por ejemplo: "c: \\ sus \\ Descargar \\ caché \\ Office \\ SP1. MSP; c: \\ \\ descargar el \\ almacenamiento en caché de \\ Office \\ QFE1. MSP; c: \\ sus \\ Descargar \\ caché \\ Office \\ QFEn. MSP ""
+Cadena que contiene una lista delimitada por punto y coma de las rutas de acceso a los archivos de revisión. Por ejemplo: ""c: \\ sus download cache Office \\ \\ \\ \\ sp1.msp; c: \\ sus download cache Office \\ \\ \\ \\ QFE1.msp;c: \\ sus download cache Office \\ \\ \\ \\ PEMEn.msp""
 
 </dd> <dt>
 
 *Producto* 
 </dt> <dd>
 
-Este parámetro proporciona el [**ProductCode**](productcode.md) del producto que se va a revisar. Este parámetro es opcional. Cuando este parámetro es null, las revisiones se aplican a todos los productos que son válidos para recibir estas revisiones.
+Este parámetro proporciona el [**Código De Producto**](productcode.md) del producto al que se va a aplicar la revisión. Este parámetro es opcional. Cuando este parámetro es null, las revisiones se aplican a todos los productos que son aptos para recibir estas revisiones.
 
 </dd> <dt>
 
 *szPropertiesList* 
 </dt> <dd>
 
-Una cadena terminada en null que especifica los valores de propiedades de la línea de comandos. Este parámetro es opcional. Vea [acerca de las propiedades](about-properties.md) y [establecer valores de propiedades públicas en la línea de comandos](setting-public-property-values-on-the-command-line.md). Todas las propiedades son compartidas por todos los productos de destino.
+Cadena terminada en NULL que especifica la configuración de propiedades de la línea de comandos. Este parámetro es opcional. Vea [Acerca de las propiedades](about-properties.md) y Establecimiento de valores de propiedad pública en la línea de [comandos](setting-public-property-values-on-the-command-line.md). Todas las propiedades las comparten todos los productos de destino.
 
 </dd> </dl>
 
@@ -72,9 +72,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003 o Windows XP.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
 
 
@@ -88,16 +88,16 @@ Este método no devuelve ningún valor.
 [**ProductCode**](productcode.md)
 </dt> <dt>
 
-[**DISTRIBUCIÓN**](patch.md)
+[**Parche**](patch.md)
 </dt> <dt>
 
-[Establecer valores de propiedades públicas en la línea de comandos](setting-public-property-values-on-the-command-line.md)
+[Establecer valores de propiedad pública en la línea de comandos](setting-public-property-values-on-the-command-line.md)
 </dt> <dt>
 
 [**MsiApplyMultiplePatches**](/windows/desktop/api/Msi/nf-msi-msiapplymultiplepatchesa)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

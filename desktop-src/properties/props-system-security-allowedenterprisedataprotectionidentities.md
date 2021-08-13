@@ -1,17 +1,17 @@
 ---
 description: Opciones de cifrado.
 ms.assetid: 0a117f9f-91c8-414e-b07b-68a95af22f28
-title: System. Security. AllowedEnterpriseDataProtectionIdentities
+title: System.Security.AllowedEnterpriseDataProtectionIdentities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db9f43a42ed8bc7ba180f0f127f3e04a5797e685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69d6d29ba2bde0bb91c0a79453f65ea501d0de334d60261c2363a3abdf1995c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464765"
 ---
-# <a name="systemsecurityallowedenterprisedataprotectionidentities"></a>System. Security. AllowedEnterpriseDataProtectionIdentities
+# <a name="systemsecurityallowedenterprisedataprotectionidentities"></a>System.Security.AllowedEnterpriseDataProtectionIdentities
 
 Opciones de cifrado
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

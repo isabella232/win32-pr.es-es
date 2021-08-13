@@ -4,12 +4,12 @@ ms.assetid: 5a007335-9366-4333-a3d2-39ca70c11eaa
 title: System.Sync.HandlerID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 081c11244805d54860cbd2bdb97d7c4de0f4c029
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa366fecb9643332c08b764e5cc9c5c8576c602dcd59f775e82718f0d1a4b457
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464674"
 ---
 # <a name="systemsynchandlerid"></a>System.Sync.HandlerID
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -1,7 +1,7 @@
 ---
-description: Describe las capacidades y la administración de los medios que almacenan datos y permite la recuperación de los datos. Esta superclase se utiliza para representar componentes RAID de software y hardware, o una extensión lógica sin procesar de medios físicos.
+description: Describe las funcionalidades y la administración de medios que almacenan datos y permiten la recuperación de los datos. Esta super clase se usa para representar componentes RAID de software y hardware, o una extensión lógica sin procesar de medios físicos.
 ms.assetid: 29d105fb-8c34-4824-8679-883aef02a0c9
-title: CIM_StorageExtent (clase, administración de Hyper-V)
+title: CIM_StorageExtent (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a3dc1b58dd97582e229497e754d10c3f307eab76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ce3126cf208032e4d43e9ce1866e1cd0ab42c17930684c98d4ad351de88713b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647373"
 ---
-# <a name="cim_storageextent-class-hyper-v-management"></a>CIM_StorageExtent (clase, administración de Hyper-V)
+# <a name="cim_storageextent-class-hyper-v-management"></a>CIM_StorageExtent (administración de Hyper-V)
 
-Describe las capacidades y la administración de los medios que almacenan datos y permite la recuperación de los datos. Esta superclase se utiliza para representar componentes RAID de software y hardware, o una extensión lógica sin procesar de medios físicos.
+Describe las funcionalidades y la administración de medios que almacenan datos y permiten la recuperación de los datos. Esta super clase se usa para representar componentes RAID de software y hardware, o una extensión lógica sin procesar de medios físicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,26 +75,26 @@ class CIM_StorageExtent : CIM_LogicalDevice
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ StorageExtent** tiene estos tipos de miembros:
+La **clase \_ StorageExtent de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ StorageExtent** tiene estas propiedades.
+La **clase \_ StorageExtent de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **Acceder**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una descripción de la compatibilidad de lectura y escritura de los medios.
+Descripción de la compatibilidad de lectura y escritura de los medios.
 
 <dt>
 
@@ -114,14 +114,14 @@ Una descripción de la compatibilidad de lectura y escritura de los medios.
 
 <span id="Writeable"></span><span id="writeable"></span><span id="WRITEABLE"></span>
 
-**Grabable** (2)
+**Escritura** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Read_Write_Supported"></span><span id="read_write_supported"></span><span id="READ_WRITE_SUPPORTED"></span>
 
-**Compatible con lectura y escritura** (3)
+**Lectura y escritura admitidas** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -135,51 +135,51 @@ Una descripción de la compatibilidad de lectura y escritura de los medios.
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Almacenamiento de host DMTF \| 001,4 "," MIB. IETF \| host-REsources-MIB. hrStorageAllocationUnits "," MIF. \|Dispositivos de almacenamiento DMTF \| 001,5 ")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Host Storage \| 001.4", "MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits", "MIF. DMTF \| Storage Devices \| 001.5")
 </dt> </dl>
 
-Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si se usan tamaños de bloque variable, esta propiedad debe especificar el tamaño máximo del bloque. Si el tamaño de bloque es desconocido o si un concepto de bloque no es válido (por ejemplo, para **\_ AggregateExtent de CIM**, [**\_ memoria de CIM**](cim-memory.md) o [**\_ LogicalDisk de CIM**](cim-logicaldisk.md)), esta propiedad debe establecerse en "1" (desconocido).
+Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si se usan tamaños de bloque variable, esta propiedad debe especificar el tamaño máximo del bloque. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para **\_ AggregateExtent** de CIM , Memoria [**CIM \_**](cim-memory.md) o Disco lógico [**CIM), \_**](cim-logicaldisk.md)esta propiedad debe establecerse en "1" (sin saberlo).
 
 </dd> <dt>
 
 **ConsumableBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número máximo de bloques que están disponibles para su uso al encapar **\_ StorageExtent CIM** mediante la Asociación de clase [**\_ basada en CIM**](cim-basedon.md) . Esta propiedad solo tiene significado cuando se hace referencia a la extensión de almacenamiento en la propiedad **antecedente** de un objeto **\_ basado en CIM** .
+El número máximo de bloques, que están disponibles para su uso al almacenar en capas **\_ Cim StorageExtent** mediante la asociación [**de clase \_ BasedOn de CIM.**](cim-basedon.md) Esta propiedad solo tiene significado cuando se hace referencia a la extensión de almacenamiento en la **propiedad Antecedente** en un **objeto \_ BasedOn de CIM.**
 
 </dd> <dt>
 
-**Organización de los mismos**
+**DataOrganization**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de organización de datos utilizada por los medios.
+Tipo de organización de datos que usan los medios.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (0)
+**Otros** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -207,42 +207,42 @@ Tipo de organización de datos utilizada por los medios.
 
 <span id="Count_Key_Data"></span><span id="count_key_data"></span><span id="COUNT_KEY_DATA"></span>
 
-**Datos de clave de recuento** (4)
+**Recuento de datos clave** (4)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**Redundancia de los mismos**
+**DataRedundancy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DataRedundancyGoal**","**\_ StorageSetting CIM**.**DataRedundancyMax**","**\_ StorageSetting CIM**.**DataRedundancyMin**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DataRedundancyGoal",**"**CIM \_ StorageSetting**.**DataRedundancyMax**", "**CIM \_ StorageSetting**.**DataRedundancyMin**")
 </dt> </dl>
 
-El número de copias completas de los datos que se mantienen actualmente.
+Número de copias completas de los datos que se mantienen actualmente.
 
 </dd> <dt>
 
 **DeltaReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percentage"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (100), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ StorageSetting CIM**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DeltaReservationGoal**","**\_ StorageSetting CIM**.**DeltaReservationMax**","**\_ StorageSetting CIM**.**DeltaReservationMin**")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percentage"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (100), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DeltaReservationGoal**", "**CIM \_ StorageSetting**.**DeltaReservationMax**", "**CIM \_ StorageSetting**.**DeltaReservationMin**")
 </dt> </dl>
 
-Valor actual para la reserva Delta. Se trata de un porcentaje que especifica la cantidad de espacio que se debe reservar en una réplica para almacenar en caché los cambios.
+Valor actual de la reserva diferencial. Se trata de un porcentaje que especifica la cantidad de espacio que se debe reservar en una réplica para almacenar en caché los cambios.
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ El tipo de detección y corrección de errores admitidos por la extensión de al
 **ExtentStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -274,7 +274,7 @@ Información de estado adicional.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (0)
+**Otros** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -288,14 +288,14 @@ Información de estado adicional.
 
 <span id="None_Not_Applicable"></span><span id="none_not_applicable"></span><span id="NONE_NOT_APPLICABLE"></span>
 
-**Ninguno/no aplicable** (2)
+**Ninguno/No aplicable** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Broken"></span><span id="broken"></span><span id="BROKEN"></span>
 
-**Roto** (3)
+**Broken** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -323,7 +323,7 @@ Información de estado adicional.
 
 <span id="Fractionally_Exposed"></span><span id="fractionally_exposed"></span><span id="FRACTIONALLY_EXPOSED"></span>
 
-De **exposición fraccionada** (7)
+**Exposición fraccionística** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -344,14 +344,14 @@ De **exposición fraccionada** (7)
 
 <span id="Readying"></span><span id="readying"></span><span id="READYING"></span>
 
-**Preparado** (10)
+**Preparar** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Rebuild"></span><span id="rebuild"></span><span id="REBUILD"></span>
 
-**Volver a generar** (11)
+**Recompilar** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -365,7 +365,7 @@ De **exposición fraccionada** (7)
 
 <span id="Spare_in_Use"></span><span id="spare_in_use"></span><span id="SPARE_IN_USE"></span>
 
-**Repuesto en uso** (13)
+**Reserva en uso** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -393,21 +393,21 @@ De **exposición fraccionada** (7)
 
 <span id="Exported"></span><span id="exported"></span><span id="EXPORTED"></span>
 
-**Exportado** (17)
+**Exportada** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (18.. 32767)
+**DMTF reservado** (18..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -423,7 +423,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si las extensiones de almacenamiento subyacentes son miembros de [**un \_ StorageRedundancyGroup CIM**](/windows/desktop/CIMWin32Prov/cim-storageredundancygroup); de lo contrario, **false**.
+**True** si las extensiones de almacenamiento subyacentes son miembros de [**un \_ storageRedundancyGroup**](/windows/desktop/CIMWin32Prov/cim-storageredundancygroup)de CIM; en caso contrario, **false.**
 
 </dd> <dt>
 
@@ -436,26 +436,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, identificador 0 de asociación \| "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**","**CIM \_ StorageExtent**.**NameNamespace**")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, identificador de asociación \| 0"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**", "**Cim \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
-Identificador único para la extensión de almacenamiento. La propiedad **NameFormat** especifica el formato de nombre que se va a usar en la propiedad **Name** .
+Identificador único para la extensión de almacenamiento. La **propiedad NameFormat** especifica el formato de nomenclatura que se usará en la **propiedad Name.**
 
 </dd> <dt>
 
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Name**","**CIM \_ StorageExtent**.**NameNamespace**","**\_ StorageExtent CIM**.**OtherNameFormat**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nombre**", "**Cim \_ StorageExtent**.**NameNamespace**", "**Cim \_ StorageExtent**.**OtherNameFormat**")
 </dt> </dl>
 
-El formato de nombre de la propiedad **Name** .
+Formato de nomenclatura de la **propiedad Name.**
 
 <dt>
 
@@ -468,7 +468,7 @@ El formato de nombre de la propiedad **Name** .
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -545,7 +545,7 @@ El formato de nombre de la propiedad **Name** .
 
 <span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>
 
-**Nombre del dispositivo de SO** (12)
+**Nombre del dispositivo del sistema operativo** (12)
 
 
 </dt> <dd></dd> </dl>
@@ -555,16 +555,16 @@ El formato de nombre de la propiedad **Name** .
 **NameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, identificador 0 de asociación \| "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Name**","**CIM \_ StorageExtent**.**OtherNameNamespace**","**\_ StorageExtent CIM**.**NameFormat**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, identificador de asociación \| 0"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nombre**", "**Cim \_ StorageExtent**.**OtherNameNamespace**", "**Cim \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
-Espacio de nombres de la propiedad Name.
+Espacio de nombres de la propiedad name.
 
 <dt>
 
@@ -577,7 +577,7 @@ Espacio de nombres de la propiedad Name.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -626,7 +626,7 @@ Espacio de nombres de la propiedad Name.
 
 <span id="OS_Device_Namespace"></span><span id="os_device_namespace"></span><span id="OS_DEVICE_NAMESPACE"></span>
 
-**Espacio de nombres de dispositivo de SO** (8)
+**Espacio de nombres de dispositivo del** sistema operativo (8)
 
 
 </dt> <dd></dd> </dl>
@@ -645,23 +645,23 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**NoSinglePointOfFailure**")
 </dt> </dl>
 
-**true** si no hay ningún punto único de error; en caso contrario, **false**.
+**true** si no hay ningún único punto de error; de lo contrario, **false**.
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Almacenamiento de host DMTF \| 001,5 "," MIB. IETF \| host-REsources-MIB. hrStorageSize ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Host Storage \| 001.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-El número total de bloques contiguos lógicamente que forman la extensión del almacenamiento. El tamaño total de la extensión de almacenamiento se calcula multiplicando **blocksize** por **NumberOfBlocks**. Si el **blocksize** es "1", esta propiedad es el tamaño total de la extensión de almacenamiento.
+Número total de bloques lógicamente contiguos que forman la extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se calcula **multiplicando BlockSize** por **NumberOfBlocks.** Si **BlockSize es** "1", esta propiedad es el tamaño total de la extensión de almacenamiento.
 
 </dd> <dt>
 
@@ -677,7 +677,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
-El formato de la propiedad **Name** cuando la propiedad **NameFormat** está establecida en "1" (otra).
+Formato de la **propiedad Name** cuando la **propiedad NameFormat** se establece en "1" (Otros).
 
 </dd> <dt>
 
@@ -693,23 +693,23 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
-Descripción del espacio de nombres de la propiedad **Name** cuando la propiedad **NameNamespace** se establece en "1" (otro).
+Descripción del espacio de nombres de la **propiedad Name** cuando la **propiedad NameNamespace** está establecida en "1" (Otros).
 
 </dd> <dt>
 
 **PackageRedundancy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal**","**\_ StorageSetting CIM**.**PackageRedundancyMax**","**\_ StorageSetting CIM**.**PackageRedundancyMin**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal",**"**CIM \_ StorageSetting**.**PackageRedundancyMax**", "**CIM \_ StorageSetting**.**PackageRedundancyMin**")
 </dt> </dl>
 
-Número actual de paquetes físicos que pueden fallar sin pérdida de datos. Por ejemplo, en un dominio de almacenamiento, este podría ser el número de ejes de disco.
+Número actual de paquetes físicos que pueden producir un error sin pérdida de datos. Por ejemplo, en un dominio de almacenamiento, podría ser el número de ejes de disco.
 
 </dd> <dt>
 
@@ -722,7 +722,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si la extensión de almacenamiento es primordial; en caso contrario, **false**.
+**true** si la extensión de almacenamiento es primordial; de lo contrario, **false**.
 
 </dd> <dt>
 
@@ -735,7 +735,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrStorageDescr ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageDescr")
 </dt> </dl>
 
 Descripción del uso de medios.
@@ -751,7 +751,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si un objeto [**\_ MediaAccessDevice de CIM**](cim-mediaaccessdevice.md) tiene acceso de forma secuencial al almacenamiento; de lo contrario, **false**.
+**True** si un objeto [**\_ MediaAccessDevice**](cim-mediaaccessdevice.md) cim accede secuencialmente al almacenamiento; de lo contrario, **false.**
 
 </dd> </dl>
 
@@ -763,8 +763,8 @@ Tipo de acceso: solo lectura
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -773,7 +773,7 @@ Tipo de acceso: solo lectura
 
 <dl> <dt>
 
-[**LogicalDevice de CIM \_**](cim-logicaldevice.md)
+[**\_Dispositivo lógico CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

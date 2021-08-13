@@ -1,17 +1,17 @@
 ---
-title: Sintaxis de las variables de efectos (Direct3D 11)
+title: Sintaxis de variable de efecto (Direct3D 11)
 description: Una variable de efecto se declara con la sintaxis descrita en esta sección.
 ms.assetid: c0cfc9dd-2df3-4f38-a0e4-2e494456b3c9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67710642060ffea642434ba2d23a77cec2fb8bc3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25057f3cd2535a0b48072616c3dd59393f90a24fe044c1cdad8acea677a541ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118538398"
 ---
-# <a name="effect-variable-syntax-direct3d-11"></a>Sintaxis de las variables de efectos (Direct3D 11)
+# <a name="effect-variable-syntax-direct3d-11"></a>Sintaxis de variable de efecto (Direct3D 11)
 
 Una variable de efecto se declara con la sintaxis descrita en esta sección.
 
@@ -19,29 +19,29 @@ Una variable de efecto se declara con la sintaxis descrita en esta sección.
 
 Sintaxis básica:
 
-*DataType* *VariableName* \[ *: SemanticName* \]  <  *Annotations*  >  \[ = InitialValue \] ;
+*DataType* *VariableName* \[ *: Anotaciones SemanticName* = \]  <    >  \[ InitialValue \] ;
 
-Consulte [Sintaxis de variables (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax) para ver la sintaxis completa.
+Consulte [Sintaxis de variables (HLSL de DirectX) para obtener](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax) una sintaxis completa.
 
 
 
 | Nombre         | Descripción                                                                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DataType     | Cualquier vista de acceso [básica](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax), [textura](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type), sin ordenar, sombreador o tipo de bloque de estado.                            |
+| DataType     | Cualquier [tipo básico](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)de [bloque](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)de estado, sombreador o vista de acceso sin ordenar.                            |
 | VariableName | Cadena ASCII que identifica de forma única el nombre de la variable de efecto.                                                                                                                   |
-| SemanticName | Cadena ASCII que denota información adicional sobre cómo se debe usar una variable. Una semántica es una cadena ASCII que puede ser un valor de sistema predefinido o una cadena de usuario personalizado. |
-| Anotaciones  | Una o más partes de la información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para ver la sintaxis, vea [Sintaxis de anotación (Direct3D 11)](d3d11-effect-annotation-syntax.md).     |
+| SemanticName | Cadena ASCII que denota información adicional sobre cómo se debe usar una variable. Una semántica es una cadena ASCII que puede ser un valor del sistema predefinido o una cadena de usuario personalizado. |
+| anotaciones  | Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener información sobre la [sintaxis, vea Annotation Syntax (Direct3D 11) (Sintaxis de anotación [Direct3D 11]).](d3d11-effect-annotation-syntax.md)     |
 | InitialValue | Valor predeterminado de la variable.                                                                                                                                                          |
 
 
 
- 
+ 
 
-Una variable de efecto que se declara fuera de todas las funciones, se considera global en el ámbito; las variables declaradas dentro de una función son locales para esa función.
+Una variable de efecto que se declara fuera de todas las funciones se considera global en el ámbito; Las variables declaradas dentro de una función son locales para esa función.
 
 ## <a name="example"></a>Ejemplo
 
-En este ejemplo se muestran variables numéricas de efectos globales.
+En este ejemplo se muestran las variables numéricas de efecto global.
 
 
 ```
@@ -85,7 +85,7 @@ VS_OUTPUT RenderSceneVS( float4 vPos : SV_POSITION,
 
 
 
-En este ejemplo se muestra la declaración de una variable de textura global.
+En este ejemplo se muestra cómo declarar una variable de textura global.
 
 
 ```
@@ -94,9 +94,9 @@ Texture2D g_MeshTexture;            // Color texture for mesh
 
 
 
-El muestreo de una textura se realiza con una muestra de textura. Para configurar una muestra en un efecto, vea el [tipo de muestra](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler).
+El muestreo de una textura se realiza con un muestreador de textura. Para configurar un sampler en un efecto, vea el [tipo de sampler](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler).
 
-En este ejemplo se muestra la declaración de variables de vista de acceso no ordenada global.
+En este ejemplo se muestra cómo declarar variables globales de vista de acceso no ordenado.
 
 
 ```
@@ -177,6 +177,6 @@ sampler mySS[2] : register(s3)
 [Formato de efecto](d3d11-effect-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: El método ActivateWindow ajusta el tamaño de la ventana según los requisitos de la clase derivada.
+description: El método ActivateWindow puede cambiar el tamaño de la ventana según los requisitos de la clase derivada.
 ms.assetid: 39e23080-e4ae-46d5-bb3f-306c92bbfe14
-title: Método CBaseWindow. ActivateWindow (Winutil. h)
+title: Método CBaseWindow.ActivateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f747f108bb6c7e42e90a0ff8503ec59a83c59699
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e00c3ccc43e2583ce8664e62967a22f753148cfa271dd1995e2374c2bfa53c71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658249"
 ---
-# <a name="cbasewindowactivatewindow-method"></a>CBaseWindow. ActivateWindow, método
+# <a name="cbasewindowactivatewindow-method"></a>Método CBaseWindow.ActivateWindow
 
-El `ActivateWindow` método ajusta el tamaño de la ventana según los requisitos de la clase derivada.
+El `ActivateWindow` método puede cambiar el tamaño de la ventana según los requisitos de la clase derivada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                             | Descripción                              |
 |-----------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | La ventana ya estaba activada.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Correcto.<br/>                      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La ventana ya estaba activada.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Correcto.<br/>                      |
 
 
 
@@ -57,9 +57,9 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 ## <a name="remarks"></a>Observaciones
 
-Estos métodos llaman al método [**CBaseWindow:: GetDefaultRect**](cbasewindow-getdefaultrect.md) para determinar el tamaño de la ventana. La clase derivada debe invalidar **GetDefaultRect** para devolver el tamaño de las imágenes que se van a mostrar.
+Estos métodos llaman [**al método CBaseWindow::GetDefaultRect**](cbasewindow-getdefaultrect.md) para determinar el tamaño de la ventana. La clase derivada debe invalidar **GetDefaultRect para** devolver el tamaño de las imágenes que se mostrarán.
 
-Si la ventana ya está activa, al llamar a `ActivateWindow` se mueve la ventana a la parte superior del orden Z, pero no se cambia el tamaño de la ventana. Lo mismo sucede si la ventana tiene un elemento primario.
+Si la ventana ya está activa, la llamada a mueve la ventana a la parte superior del orden Z, pero no cambia `ActivateWindow` el tamaño de la ventana. Lo mismo sucede si la ventana tiene un elemento primario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Si la ventana ya está activa, al llamar a `ActivateWindow` se mueve la ventana 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Si la ventana ya está activa, al llamar a `ActivateWindow` se mueve la ventana 
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

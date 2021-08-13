@@ -1,7 +1,7 @@
 ---
 description: Ordena una lista de direcciones IP.
 ms.assetid: 1266d6f3-e9f5-4e6b-9431-7329df156f0a
-title: sortIpAddressList función)
+title: Función sortIpAddressList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 600d87a58248aafdef5b0a8a7f284f4094c95780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3144ecf044f832a49dd6aa4d9fabf76ce8e81c79c195ec101d294c432a8081e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562460"
 ---
-# <a name="sortipaddresslist-function"></a>sortIpAddressList función)
+# <a name="sortipaddresslist-function"></a>Función sortIpAddressList
 
 Ordena una lista de direcciones IP.
 
@@ -30,17 +30,17 @@ Ordena una lista de direcciones IP.
 *IpAddressList* 
 </dt> <dd>
 
-Cadena delimitada por signos de punto y coma que contiene direcciones IP.
+Cadena delimitada por punto y coma que contiene direcciones IP.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una lista de direcciones IP delimitadas por punto y coma ordenadas o una cadena vacía si no se puede ordenar la lista de direcciones IP.
+Lista de direcciones IP delimitadas por punto y coma ordenadas o una cadena vacía si no se puede ordenar la lista de direcciones IP.
 
 ## <a name="remarks"></a>Observaciones
 
-Los implementadores de FindProxyforURLEx deben agregar código que interrumpa la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
+Los implementadores FindProxyforURLEx deben agregar código que divide la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -56,10 +56,10 @@ sortIpAddressList(2001:4898:28:3:201:2ff:feea:fc14;
 
 <dl> <dt>
 
-[Definiciones de API de aplicación auxiliar de proxy compatible con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definiciones de API del asistente de proxy compatibles con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Extensiones IPv6 para el formato de archivo de configuración automática de navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensiones IPv6 para el formato de archivo de configuración automática del navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Si se establece el bit de control Bitmap, el texto del control se sustituye por una imagen de mapa de bits. La columna de texto de la tabla de control es una clave externa de la tabla binaria.
+description: Si se establece el bit Control de mapa de bits, el texto del control se reemplaza por una imagen de mapa de bits. La columna Text de la tabla Control es una clave externa en la tabla Binary.
 ms.assetid: ec774f31-7712-4a70-8c69-1cc731009049
-title: Atributo de control Bitmap
+title: Atributo de control de mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bda78231c1689c4c5faebeab98fbf6566c7e667
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2cd7ea8186d1ed16de71ae9974bb67a082142ed3e921d023ad905d4f47bbc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638744"
 ---
-# <a name="bitmap-control-attribute"></a>Atributo de control Bitmap
+# <a name="bitmap-control-attribute"></a>Atributo de control de mapa de bits
 
-Si se establece el bit de control Bitmap, el texto del control se sustituye por una imagen de mapa de bits. La columna de texto de la [tabla de control](control-table.md) es una clave externa de la [tabla binaria](binary-table.md).
+Si se establece el bit Control de mapa de bits, el texto del control se reemplaza por una imagen de mapa de bits. La columna Text de la [tabla Control es](control-table.md) una clave externa en la tabla [Binaria.](binary-table.md)
 
-Si no se establece este bit, el texto del control se especifica en la columna de texto de la [tabla de control](control-table.md).
+Si no se establece este bit, el texto del control se especifica en la columna Texto de la [tabla Control](control-table.md).
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -23,7 +23,7 @@ Si no se establece este bit, el texto del control se especifica en la columna de
 
  
 
-[Botones](pushbutton-control.md)
+[Pulsador](pushbutton-control.md)
 
  
 
@@ -43,13 +43,13 @@ Si no se establece este bit, el texto del control se especifica en la columna de
 
 ## <a name="remarks"></a>Observaciones
 
-Para establecer este atributo en un control, incluya el bit de mapa de bits en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control , incluya el bit Bitmap en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
-La columna de texto de la tabla de control se usa como clave externa de la [tabla binaria](binary-table.md), por lo que el control no puede contener una imagen de icono y texto.
+La columna Text de la tabla Control se usa como clave externa para la tabla [Binary,](binary-table.md)por lo que el control no puede contener una imagen de icono y texto.
 
-No establezca los bits de [icono](icon-control-attribute.md) y de mapa de bits.
+No establezca los bits [Icono y](icon-control-attribute.md) Mapa de bits.
 
-Vea [atributos de control](control-attributes.md) y el control que debe crear en [controles](controls.md).
+Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 
  
 

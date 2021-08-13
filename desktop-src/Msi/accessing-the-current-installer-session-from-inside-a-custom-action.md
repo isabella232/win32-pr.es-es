@@ -1,25 +1,25 @@
 ---
-description: Las acciones personalizadas de Nondeferred que llaman a las bibliotecas de vínculos dinámicos o scripts pueden tener acceso a una instalación en ejecución para consultar o modificar los atributos de la sesión de instalación actual.
+description: Las acciones personalizadas no deducidas que llaman a scripts o bibliotecas de vínculos dinámicos pueden acceder a una instalación en ejecución para consultar o modificar los atributos de la sesión de instalación actual.
 ms.assetid: cf70b0b3-ac81-47ab-a4c8-4db53ed9dc84
-title: Obtener acceso a la sesión del instalador actual desde una acción personalizada
+title: Acceso a la sesión actual del instalador desde dentro de una acción personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29a870247f70742d408c0f5d1d0e67f20cef65d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c3ee3214b8f8664b57f5216b28a7f5d5269d76049fe5c4dd24f7ab8d130d89a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640194"
 ---
-# <a name="accessing-the-current-installer-session-from-inside-a-custom-action"></a>Obtener acceso a la sesión del instalador actual desde una acción personalizada
+# <a name="accessing-the-current-installer-session-from-inside-a-custom-action"></a>Acceso a la sesión actual del instalador desde dentro de una acción personalizada
 
-Las acciones personalizadas de Nondeferred que llaman a las [bibliotecas de vínculos dinámicos](dynamic-link-libraries.md) o [scripts](scripts.md) pueden tener acceso a una instalación en ejecución para consultar o modificar los atributos de la sesión de instalación actual. Solo puede existir un objeto de **sesión** para cada proceso y los scripts de acción personalizados no deben intentar crear otra sesión.
+Las acciones personalizadas no deducidas [](scripts.md) que llaman a scripts o bibliotecas de [vínculos dinámicos](dynamic-link-libraries.md) pueden acceder a una instalación en ejecución para consultar o modificar los atributos de la sesión de instalación actual. Solo puede **existir un objeto Session** para cada proceso y los scripts de acción personalizados no deben intentar crear otra sesión.
 
-Las acciones personalizadas solo pueden agregar, modificar o quitar filas, columnas o tablas temporales de una base de datos. Las acciones personalizadas no pueden modificar los datos persistentes en una base de datos, por ejemplo, los datos que forman parte de la base de datos almacenada en el disco.
+Las acciones personalizadas solo pueden agregar, modificar o quitar filas, columnas o tablas temporales de una base de datos. Las acciones personalizadas no pueden modificar datos persistentes en una base de datos, por ejemplo, datos que forman parte de la base de datos almacenada en disco.
 
 [Bibliotecas de vínculos dinámicos](dynamic-link-libraries.md)
 
-Para tener acceso a una instalación en ejecución, las acciones personalizadas que llaman a las bibliotecas de vínculos dinámicos (DLL) pasan un identificador del tipo MSIHANDLE para la sesión actual como el único argumento para el punto de entrada de DLL indicado en la columna de destino de la [tabla CustomAction](customaction-table.md). Dado que el instalador proporciona este identificador, la acción personalizada no debe cerrarlo, por ejemplo, para recibir el identificador *hInstall* desde el instalador, la función de acción personalizada se declara como sigue.
+Para tener acceso a una instalación en ejecución, las acciones personalizadas que llaman a bibliotecas de vínculos dinámicos (DLL) se pasan un identificador del tipo MSIHANDLE para la sesión actual como único argumento al punto de entrada dll denominado en la columna Destino de la [tabla CustomAction](customaction-table.md). Dado que el instalador proporciona este identificador, la acción personalizada no debe cerrarlo, por ejemplo, para recibir el identificador *hInstall* del instalador, la función de acción personalizada se declara como sigue.
 
 
 ```C++
@@ -28,13 +28,13 @@ UINT __stdcall CustomAction(MSIHANDLE hInstall)
 
 
 
-Para el acceso de solo lectura a la base de datos actual, obtenga el identificador de base de datos mediante una llamada a [**MsiGetActiveDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msigetactivedatabase). Para obtener más información, vea [obtener un identificador de base de datos](obtaining-a-database-handle.md).
+Para obtener acceso de solo lectura a la base de datos actual, obtenga el identificador de base de datos mediante una [**llamada a MsiGetActiveDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msigetactivedatabase). Para obtener más información, vea [Obtener un identificador de base de datos](obtaining-a-database-handle.md).
 
 [Scripts](scripts.md)
 
-Las acciones personalizadas escritas en VBScript o JScript pueden tener acceso a la sesión de instalación actual mediante el [**objeto de sesión**](session-object.md). El instalador crea un objeto de **sesión** denominado "session" que hace referencia a la instalación actual. Para el acceso de solo lectura a la base de datos actual, use la propiedad de [**base de datos**](session-database.md) del objeto de **sesión** .
+Las acciones personalizadas escritas en VBScript JScript pueden acceder a la sesión de instalación actual mediante el [**objeto session**](session-object.md). El instalador crea un **objeto Session** denominado "Session" que hace referencia a la instalación actual. Para obtener acceso de solo lectura a la base de datos actual, use la [**propiedad Database**](session-database.md) del **objeto Session.**
 
-Dado que un script se ejecuta desde el contexto del objeto de [**sesión**](session-object.md) , no siempre es necesario calificar completamente las propiedades y los métodos. En el ejemplo siguiente, cuando se usa VBScript, la referencia me puede reemplazar el objeto de **sesión** ; por ejemplo, las tres líneas siguientes son equivalentes.
+Dado que un script se ejecuta desde el contexto del [**objeto Session,**](session-object.md) no siempre es necesario calificar completamente las propiedades y los métodos. En el ejemplo siguiente, cuando se usa VBScript, la referencia Me puede reemplazar el objeto **Session;** por ejemplo, las tres líneas siguientes son equivalentes.
 
 
 ```VB
@@ -59,17 +59,17 @@ SetInstallLevel 1
 
 [Archivos ejecutables](executable-files.md)
 
-No se puede tener acceso a la sesión del instalador actual desde acciones personalizadas que llaman a los archivos ejecutables que se inician con una línea de comandos, por ejemplo, la [acción personalizada tipo 2](custom-action-type-2.md) y la [acción personalizada tipo 18](custom-action-type-18.md).
+No se puede acceder a la sesión actual del instalador desde acciones personalizadas que llaman a archivos ejecutables iniciados con una línea de comandos, por ejemplo, Custom [Action Type 2](custom-action-type-2.md) y [Custom Action Type 18](custom-action-type-18.md).
 
 [Acciones personalizadas de ejecución aplazada](deferred-execution-custom-actions.md)
 
-No se puede tener acceso a la sesión de instalador actual o a todos los datos de propiedad de una acción personalizada de ejecución aplazada. Para obtener más información, vea [obtener información de contexto para las acciones personalizadas de ejecución aplazada](obtaining-context-information-for-deferred-execution-custom-actions.md).
+No se puede acceder a la sesión actual del instalador ni a todos los datos de propiedad desde una acción personalizada de ejecución aplazada. Para obtener más información, vea Obtener información de contexto para acciones personalizadas [de ejecución aplazada.](obtaining-context-information-for-deferred-execution-custom-actions.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Obtener acceso a una base de datos o una sesión desde una acción personalizada](accessing-a-database-or-session-from-inside-a-custom-action.md)
+[Acceso a una base de datos o una sesión desde dentro de una acción personalizada](accessing-a-database-or-session-from-inside-a-custom-action.md)
 </dt> </dl>
 
  

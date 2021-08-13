@@ -1,6 +1,6 @@
 ---
-title: atributo de canalización
-description: El constructor de tipo de canalización permite transmitir un flujo abierto de datos con tipo a través de una llamada a procedimiento remoto.
+title: atributo pipe
+description: El constructor de tipo de canalización permite transmitir un flujo de datos con tipo de extremo abierto a través de una llamada a procedimiento remoto.
 ms.assetid: 85b76a55-8df2-4417-9a39-3e3bf49651fc
 keywords:
 - atributo de canalización MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0aaab8d399c99e02b5393ee9f5258da53aea491
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6b8c407bef0a9e610d21e7221eb9a06560f33300f4f1f388fa699ca9dfb18531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641958"
 ---
-# <a name="pipe-attribute"></a>atributo de canalización
+# <a name="pipe-attribute"></a>atributo pipe
 
-El constructor de tipo de **canalización** permite transmitir un flujo abierto de datos con tipo a través de una llamada a procedimiento remoto.
+El **constructor de** tipo de canalización permite transmitir un flujo de datos con tipo de extremo abierto a través de una llamada a procedimiento remoto.
 
 ``` syntax
 typedef pipe element-type pipe-declarator;
@@ -31,42 +31,42 @@ typedef pipe element-type pipe-declarator;
 
 <dl> <dt>
 
-*tipo de elemento* 
+*element-type* 
 </dt> <dd>
 
-Define el tamaño de un único elemento en el búfer de transferencia. El tipo *de elemento* puede ser un [tipo base](midl-base-types.md), un tipo predefinido \_ , un [**struct**](struct.md), una [**enumeración 32B**](v1-enum.md)o un identificador de tipo. Se aplican varias restricciones a los *\_ tipos de elemento*, como se describe en la sección Comentarios a continuación.
+Define el tamaño de un solo elemento en el búfer de transferencia. El *tipo de elemento puede* ser un tipo [base](midl-base-types.md), un tipo predefinido, una estructura , una \_ [**enumeración de 32b**](v1-enum.md)o un identificador de tipo. [](struct.md) Se aplican varias restricciones a *los tipos \_ de elementos*, como se describe en Comentarios, a continuación.
 
 </dd> <dt>
 
-*declarador de canalización* 
+*pipe-declarator* 
 </dt> <dd>
 
-Especifica uno o más identificadores o punteros a los identificadores. Separe varios declaradores con comas.
+Especifica uno o varios identificadores o punteros a identificadores. Separe varios declaradores con comas.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Puede usar el constructor de tipo de **canalización** para transmitir datos en ambas direcciones. Un **\[** [](in.md) **\]** parámetro in Pipe permite al servidor extraer el flujo de datos del cliente durante una llamada a procedimiento remoto. Un **\[** parámetro [**out**](out-idl.md) **\]** Pipe permite que el servidor devuelva la secuencia de datos al cliente. Proporcione las rutinas del lado cliente para insertar y extraer el flujo de datos y para asignar un búfer global para los datos. Las rutinas de código auxiliar de cliente y servidor calculan las referencias de los datos y no las calculan y pasan una referencia al búfer de nuevo a la aplicación.
+Puede usar el constructor **de tipo de** canalización para transmitir datos en ambas direcciones. Un parámetro in pipe permite al servidor extraer el flujo de **\[** [](in.md) **\]** datos del cliente durante una llamada a procedimiento remoto. Un **\[** [**parámetro de**](out-idl.md) **\]** canalización de salida permite que el servidor vuelva a insertar el flujo de datos en el cliente. Las rutinas del lado cliente se suministran para insertar y extraer el flujo de datos y para asignar un búfer global para los datos. Las rutinas de código auxiliar de cliente y servidor serializan y desmarshaln los datos y pasan una referencia al búfer de vuelta a la aplicación.
 
 Las restricciones siguientes se aplican a las canalizaciones:
 
--   Un elemento de canalización no puede ser o contener un puntero, una matriz ajustada o variable, un identificador o un identificador de contexto. Además, en la implementación de canalizaciones de Microsoft, un elemento de canalización no puede ser ni contener una [**Unión**](union.md), una [**enumeración de 16B**](enum.md)o una [**\_ \_ int3264**](--int3264.md).
--   No se pueden aplicar los **\[** atributos [**transmitir \_ como**](transmit-as.md) **\]** , **\[** [**representar \_ como**](represent-as.md) **\]** , **\[** [**\_ serialización de conexión**](wire-marshal.md) **\]** o cálculo de **\[** [**\_ referencias de usuario**](user-marshal.md) **\]** a un tipo de canalización o a un tipo *de elemento*.
--   Un tipo de canalización no puede ser un miembro de una estructura o Unión, el destino de un puntero o el tipo base de una matriz.
--   Un tipo de datos declarado como un tipo de canalización solo se puede usar como parámetro de una llamada remota.
--   Puede pasar un parámetro de canalización en cualquier dirección por valor o por referencia (puntero de referencia **\[** [](ref.md) **\]** ). Sin embargo, no se puede aplicar el **\[** [](ptr.md) **\]** atributo PTR a una canalización que se pasa por referencia. No se puede especificar un parámetro de canalización con un **\[** puntero [**único**](unique.md) **\]** o completo, independientemente de la dirección.
--   No se pueden usar canalizaciones en interfaces de **\[** [**objeto**](object.md) **\]** .
--   No se puede aplicar el **\[** [](idempotent.md) **\]** atributo idempotente a una rutina que tenga un parámetro de canalización.
--   No puede usar los atributos de serialización, **\[** [**codificar**](encode.md) **\]** y **\[** [**descodificar**](decode.md) **\]** con canalizaciones.
--   No se pueden usar identificadores automáticos, de forma predeterminada, ni con el atributo de **\[** [**\_ control automático**](auto-handle.md) **\]** , con canalizaciones.
+-   Un elemento de canalización no puede ser ni contener un puntero, una matriz conforme o variable, un identificador o un identificador de contexto. Además, en la implementación de Canalizaciones de Microsoft, un elemento de canalización no puede ser ni contener una unión [**,**](union.md)una enumeración [**16b**](enum.md)o [**\_ \_ int3264**](--int3264.md).
+-   No se puede aplicar **\[** [**la transmisión \_ como**](transmit-as.md), representar como , serialización de conexión o atributos de serialización de usuario a un tipo de canalización **\]** o al tipo **\[** [**\_**](represent-as.md) **\]** de **\[** [**\_**](wire-marshal.md) **\]** **\[** [**\_**](user-marshal.md) **\]** *elemento*.
+-   Un tipo de canalización no puede ser miembro de una estructura o unión, el destino de un puntero o el tipo base de una matriz.
+-   Un tipo de datos declarado como tipo de canalización solo se puede usar como parámetro de una llamada remota.
+-   Puede pasar un parámetro de canalización en cualquier dirección por valor o por referencia **\[** [**(puntero ref).**](ref.md) **\]** Sin embargo, no se puede **\[** [**aplicar el atributo ptr**](ptr.md) **\]** a una canalización que se pasa por referencia. No se puede especificar un parámetro de canalización con un puntero **\[** [](unique.md) **\]** único o completo, independientemente de la dirección.
+-   No se pueden usar canalizaciones en **\[** [**interfaces**](object.md) **\]** de objeto.
+-   No se puede aplicar el **\[** [**atributo idempotente**](idempotent.md) **\]** a una rutina que tenga un parámetro de canalización.
+-   No puede usar los atributos de serialización, **\[** [**codificar y**](encode.md) **\]** **\[** [**descodificar con**](decode.md) **\]** canalizaciones.
+-   No se pueden usar identificadores automáticos, ya sea de forma predeterminada, o con el **\[** [**atributo de \_ identificador**](auto-handle.md) **\]** automático, con canalizaciones.
 
 > [!Note]  
-> El compilador MIDL solo admite canalizaciones en modo [**/OIF**](-oi.md) .
+> El compilador MIDL solo admite [**canalizaciones en modo /Oif.**](-oi.md)
 
- 
+ 
 
-Para obtener más información sobre cómo implementar rutinas con parámetros de canalización, vea [canalizaciones](/windows/desktop/Rpc/pipes) en la guía y referencia del programador de RPC.
+Para obtener más información sobre cómo implementar rutinas con parámetros de canalización, vea [Canalizaciones](/windows/desktop/Rpc/pipes) en la Guía y referencia del programador de RPC.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -81,34 +81,34 @@ typedef pipe SIMPLE_STRUCT SIMPLE_STRUCT_PIPE;
 
 <dl> <dt>
 
-[**\_identificador automático**](auto-handle.md)
+[**identificador \_ automático**](auto-handle.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**descodificar**](decode.md)
+[**Decodificar**](decode.md)
 </dt> <dt>
 
-[**codificar**](encode.md)
+[**Codificar**](encode.md)
 </dt> <dt>
 
-[**enumeración**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
 [**idempotent**](idempotent.md)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
-[**objeto**](object.md)
+[**object**](object.md)
 </dt> <dt>
 
-[**enuncia**](out-idl.md)
+[**out**](out-idl.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
 [**ref**](ref.md)
@@ -117,21 +117,21 @@ typedef pipe SIMPLE_STRUCT SIMPLE_STRUCT_PIPE;
 [**representar \_ como**](represent-as.md)
 </dt> <dt>
 
-[**Destructor**](struct.md)
+[**struct**](struct.md)
 </dt> <dt>
 
 [**transmitir \_ como**](transmit-as.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> <dt>
 
-[**\_serialización de usuario**](user-marshal.md)
+[**serialización \_ de usuario**](user-marshal.md)
 </dt> <dt>
 
-[**\_serialización de cable**](wire-marshal.md)
+[**wire \_ marshal**](wire-marshal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

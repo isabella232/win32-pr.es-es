@@ -1,9 +1,9 @@
 ---
-title: modificador/ms_ext
-description: A partir de la versión 3,0 de MIDL, las características habilitadas por el \_ conmutador MS ext son ahora el modo predeterminado para el compilador de MIDL.
+title: Modificador /ms_ext
+description: A partir de la versión 3.0 de MIDL, las características habilitadas por el modificador ms ext ahora son el modo predeterminado \_ para el compilador MIDL.
 ms.assetid: 175894c9-fa7e-4907-966d-e9df5a8e2745
 keywords:
-- /ms_ext modificador MIDL
+- /ms_ext switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,59 +12,59 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbccf1205c9a937b78b08c46f31bc09aa3b75c70
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 73bee998e96d26c0f5bb2a1e0f28446433681a7175ff181556ad7976c58af356
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644564"
 ---
-# <a name="ms_ext-switch"></a>/MS \_ ext switch
+# <a name="ms_ext-switch"></a>Modificador /ms \_ ext
 
-A partir de la versión 3,0 de MIDL, las características habilitadas por el conmutador **MS \_ ext** son ahora el modo predeterminado para el compilador de MIDL.
+A partir de la versión 3.0 de MIDL, las características habilitadas por el modificador **ms \_ ext** ahora son el modo predeterminado para el compilador MIDL.
 
 ``` syntax
 midl /ms_ext
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 Este modificador no tiene parámetros.
 
 ## <a name="remarks"></a>Observaciones
 
-El uso del modificador no generará un error del compilador, por lo que no tendrá que quitar las referencias a **/MS \_ ext** o [**/c \_ ext**](-c-ext.md) de un archivo make existente.
+El uso del modificador no generará un error del compilador, por lo que no tiene que quitar las referencias a **/ms \_ ext** o [**/c \_ ext**](-c-ext.md) de un archivo Make existente.
 
 Las siguientes extensiones de Microsoft para OSF DCE ahora están disponibles de forma predeterminada:
 
--   Definiciones de interfaz para objetos OLE. Para obtener más información sobre los archivos generados para las interfaces OLE, consulte [archivos generados para una interfaz com](files-generated-for-a-com-interface.md) .
--   Un atributo de [**\[ devolución \]**](callback.md) de llamada que especifica una función de devolución de llamada estática en el cliente.
--   [**CPP \_ Quote**](cpp-quote.md)(*\_ cadena entrecomillada*) y [**\# pragma MIDL \_ echo**](pragma.md)
--   tipos de caracteres anchos, constantes y cadenas de [**WCHAR \_ t**](wchar-t.md)
+-   Definiciones de interfaz para objetos OLE. Para obtener más información sobre los archivos generados para las interfaces OLE, vea [Archivos generados para una interfaz COM.](files-generated-for-a-com-interface.md)
+-   Atributo [**\[ de \] devolución de**](callback.md) llamada que especifica una función de devolución de llamada estática en el cliente
+-   [**cpp \_ quote**](cpp-quote.md)(*quoted \_ string*) and [**\# pragma midl \_ echo**](pragma.md)
+-   [**tipos \_ de caracteres**](wchar-t.md) anchos, constantes y cadenas wchar t
 -   [**inicialización de enumeración**](enum.md) (enumeradores dispersos)
 -   Expresiones como especificadores de tamaño y discriminador
--   [Administrar extensiones](/windows/desktop/Rpc/microsoft-rpc-binding-handle-extensions)
--   [Herencia de tipos de atributos de puntero](/windows/desktop/Rpc/pointer-attribute-type-inheritance)
+-   [Control de extensiones](/windows/desktop/Rpc/microsoft-rpc-binding-handle-extensions)
+-   [Herencia de tipos de atributo de puntero](/windows/desktop/Rpc/pointer-attribute-type-inheritance)
 -   [Varias interfaces](/windows/desktop/Rpc/registering-interfaces)
 -   Definiciones fuera del bloque de interfaz
--   Puede omitir [los atributos direccionales](/windows/desktop/Rpc/directional-parameter-attributes) \[ [**en**](in.md), [**out**](out-idl.md)\]
+-   Puede omitir atributos [direccionales](/windows/desktop/Rpc/directional-parameter-attributes) \[ [**en**](in.md), [**out**](out-idl.md)\]
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[Herencia de tipos de atributos de puntero](/windows/desktop/Rpc/pointer-attribute-type-inheritance)
+[Herencia de tipos de atributo de puntero](/windows/desktop/Rpc/pointer-attribute-type-inheritance)
 </dt> <dt>
 
-[**configuración de/APP \_**](-app-config.md)
+[**/app \_ config**](-app-config.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

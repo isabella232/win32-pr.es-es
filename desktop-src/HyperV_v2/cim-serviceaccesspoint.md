@@ -1,7 +1,7 @@
 ---
-description: Representa un punto de acceso al servicio (SAP), que puede utilizarse o invocar un servicio. SAP indica que un servicio está disponible para que lo usen otras entidades.
+description: Representa un punto de acceso de servicio (SAP), que puede utilizar o invocar un servicio. Las SAP indican que hay un servicio disponible para que lo usen otras entidades.
 ms.assetid: 09349c95-3f7e-46c5-bea1-c3d14ee16a2a
-title: CIM_ServiceAccessPoint (clase, administración de Hyper-V)
+title: CIM_ServiceAccessPoint (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e3e27fc667c55cd101b06a34f9140cb9eed8923f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aad557ed5ec13e56a53912a44b11a69a69febf118bb3c2bf9aa68971cfd88de0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647577"
 ---
-# <a name="cim_serviceaccesspoint-class-hyper-v-management"></a>CIM_ServiceAccessPoint (clase, administración de Hyper-V)
+# <a name="cim_serviceaccesspoint-class-hyper-v-management"></a>CIM_ServiceAccessPoint (administración de Hyper-V)
 
-Representa un punto de acceso al servicio (SAP), que puede utilizarse o invocar un servicio. SAP indica que un servicio está disponible para que lo usen otras entidades.
+Representa un punto de acceso de servicio (SAP), que puede utilizar o invocar un servicio. Las SAP indican que hay un servicio disponible para que lo usen otras entidades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,13 +43,13 @@ class CIM_ServiceAccessPoint : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ punto** tiene estos tipos de miembros:
+La **clase \_ ServiceAccessPoint de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ punto** tiene estas propiedades.
+La **clase \_ ServiceAccessPoint de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,10 +62,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de clase utilizado para crear una instancia de esta clase. **CreationClassName** se combina con otras propiedades de clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
+Nombre de clase utilizado para crear una instancia de esta clase. **CreationClassName se** combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
 
 </dd> <dt>
 
@@ -78,10 +78,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("nombre"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-El nombre único de SAP que indica las características admitidas por SAP.
+Nombre único de SAP que indica las características admitidas por SAP.
 
 </dd> <dt>
 
@@ -94,10 +94,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**CreationClassName**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**CreationClassName**")
 </dt> </dl>
 
-Nombre de clase que se usa para crear una instancia del sistema que contiene SAP. **SystemCreationClassName** se combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
+Nombre de clase utilizado para crear una instancia del sistema que contiene el SAP. **SystemCreationClassName se** combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
 
 </dd> <dt>
 
@@ -110,10 +110,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**Nombre**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**Name**")
 </dt> </dl>
 
-Nombre del sistema que contiene SAP.
+Nombre del sistema que contiene el SAP.
 
 </dd> </dl>
 
@@ -125,8 +125,8 @@ Nombre del sistema que contiene SAP.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -135,7 +135,7 @@ Nombre del sistema que contiene SAP.
 
 <dl> <dt>
 
-[**\_ENABLEDLOGICALELEMENT CIM**](cim-enabledlogicalelement.md)
+[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Indica si el contexto de la tableta está en el enlace más alto.
+description: Indica si el contexto de la tableta está en la parte superior del enlace.
 ms.assetid: b4aaee47-3d77-49cd-9600-f41764b9fb85
-title: 'ITabletContextP:: IsTopMostHook (método)'
+title: ITabletContextP::IsTopMostHook (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
-ms.openlocfilehash: f62de678085bda723bb13a721d75c349d395787a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c7b7e1fa087dad42e7bdc3b803bd7158b8859d1d428714f6eb2c4321687a603
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449808"
 ---
-# <a name="itabletcontextpistopmosthook-method"></a>ITabletContextP:: IsTopMostHook (método)
+# <a name="itabletcontextpistopmosthook-method"></a>ITabletContextP::IsTopMostHook (método)
 
-Indica si el contexto de la tableta está en el enlace más alto.
+Indica si el contexto de la tableta está en la parte superior del enlace.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -59,7 +59,7 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -69,7 +69,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITabletContextP**](itabletcontextp.md)
+[**ITabletContextP (interfaz)**](itabletcontextp.md)
 </dt> </dl>
 
  

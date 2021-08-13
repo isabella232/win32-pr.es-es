@@ -1,11 +1,11 @@
 ---
-title: netboot-Limit-clients (atributo)
-description: El atributo netboot-Limit-clients está reservado para uso interno.
+title: Atributo netboot-Limit-Clients
+description: El atributo netboot-Limit-Clients está reservado para uso interno.
 ms.assetid: e39bed0f-44ff-47f3-a350-cc006c65881b
 ms.tgt_platform: multiple
 keywords:
-- netboot-Limit-clients atributo AD Schema
-- netbootLimitClients esquema de AD de atributos
+- Esquema de AD del atributo netboot-Limit-Clients
+- Esquema de AD del atributo netbootLimitClients
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8956bf8ba5ae9f5e95e8d687ee664e21b512328
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 989734bfd38f4eaf2e9867833f181290ee67011989dbd3c149ec126a9eb4edd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682426"
 ---
-# <a name="netboot-limit-clients-attribute"></a>netboot-Limit-clients (atributo)
+# <a name="netboot-limit-clients-attribute"></a>Atributo netboot-Limit-Clients
 
-El atributo **netboot-Limit-clients** está reservado para uso interno.
+El **atributo netboot-Limit-Clients** está reservado para uso interno.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | netboot-Limit-clients                |
-| Nombre para mostrar de LDAP | netbootLimitClients                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | netboot-Limit-Clients                |
+| Ldap-Display-Name | netbootLimitClients                  |
+| Size              | \-                                   |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.850               |
-| System-ID-GUID    | 07383077-91df-11d1-aebc-0000f80367c1 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 07383077-91df-11d1-aebc-0000f80367c1 |
+| Sintaxis            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -55,18 +55,18 @@ El atributo **netboot-Limit-clients** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
+| Es de un solo valor       | True                                                       |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **netboot-Limit-clients** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
+| Es de un solo valor       | True                                                       |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **netboot-Limit-clients** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
+| Es de un solo valor       | True                                                       |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El atributo **netboot-Limit-clients** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
+| Es de un solo valor       | True                                                       |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **netboot-Limit-clients** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
+| Es de un solo valor       | True                                                       |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **netboot-Limit-clients** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
+| Es de un solo valor       | True                                                       |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

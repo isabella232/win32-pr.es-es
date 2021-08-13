@@ -1,27 +1,27 @@
 ---
-title: Compatibilidad con IAccessible nativo
-description: Oleacc.dll implementa IAccIdentity en nombre de \_ los punteros de la interfaz de cliente de OBJID \ 160; IAccessible y sus elementos secundarios inmediatos del elemento simple.
+title: Compatibilidad nativa con IAccessible
+description: Oleacc.dll implementa IAccIdentity en nombre de OBJID CLIENT \ 160;Punteros de interfaz IAccessible y sus elementos secundarios \_ de elemento simple inmediatos.
 ms.assetid: 98c6d68b-b64d-44d4-93c3-6c7c6732d59d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 606261a642f57c85f3f23a80257b7cdc498b927b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ad499b96c668349cc481efd388a780ba094eff2ef6eb4ae52ab041aabea70fa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118565059"
 ---
-# <a name="native-iaccessible-support"></a>Compatibilidad con IAccessible nativo
+# <a name="native-iaccessible-support"></a>Compatibilidad nativa con IAccessible
 
-Oleacc.dll implementa [**IAccIdentity**](/windows/desktop/api/oleacc/nn-oleacc-iaccidentity) en nombre de punteros de interfaz  [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) del [**\_ cliente OBJID**](object-identifiers.md)y sus elementos secundarios inmediatos del elemento simple. Se devuelve un puntero a la interfaz  **IAccessible** del **\_ cliente de objid** cuando se envía el cliente de Windows, [**WM \_ GETOBJECT**](wm-getobject.md) con *lParam*  =  **\_ OBJID** a un **hWnd**, que representa el área cliente de la ventana o el control en su totalidad. El elemento primario de este puntero de interfaz **IAccessible** normalmente tendrá un rol de [**la \_ \_ ventana sistema de rol**](object-roles.md) y es el objeto **IAccessible** devuelto cuando se envía a un HWND la ventana **WM \_ GETOBJECT** con *lParam*  =  [**OBJID \_**](object-identifiers.md) .
+Oleacc.dll implementa [**IAccIdentity en**](/windows/desktop/api/oleacc/nn-oleacc-iaccidentity) nombre de los punteros de interfaz [**OBJID \_ CLIENT**](object-identifiers.md) [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y sus elementos secundarios de elemento simple inmediatos. Se devuelve un puntero de interfaz **OBJID \_ CLIENT** **IAccessible** cuando [**WM \_ GETOBJECT**](wm-getobject.md) con *lParam*  =  **OBJID \_ CLIENT** se envía a un **HWND**, que representa el área de cliente de la ventana o el control en su conjunto. El elemento primario de este tipo de puntero de interfaz **IAccessible** normalmente tendrá un rol de [**ROLE SYSTEM \_ \_ WINDOW**](object-roles.md) y es el objeto **IAccessible** devuelto cuando **WM \_ GETOBJECT** con *lParam*  =  [**OBJID \_ WINDOW**](object-identifiers.md) se envía a un hwnd.
 
-Estos punteros de interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) suelen producirse cuando se subclase de un proxy Oleacc.dll, o cuando un control personalizado simple (como un **IAccessible** de contenedor más un nivel de elementos secundarios de elemento simple) proporciona una implementación nativa de **IAccessible** .
+Estos punteros de interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) suelen producirse cuando se subclasifica un proxy de Oleacc.dll o donde un control personalizado simple (por ejemplo, un contenedor **IAccessible** más un nivel de elementos secundarios simples) proporciona una implementación **nativa de IAccessible.**
 
-Las implementaciones de [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) nativas más complicadas, como dónde existe una jerarquía de **IAccessible** s o donde se usan identificadores de objetos personalizados, deben implementar [**IAccIdentity**](/windows/desktop/api/oleacc/nn-oleacc-iaccidentity) .
+Las implementaciones [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) nativas más complicadas, como donde existe una jerarquía de **IAccessible** o donde se usan los ID de objeto personalizados, deben implementar [**IAccIdentity.**](/windows/desktop/api/oleacc/nn-oleacc-iaccidentity)
 
- 
+ 
 
- 
+ 
 
 
 

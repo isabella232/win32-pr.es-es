@@ -1,7 +1,7 @@
 ---
-description: Destruya una instantánea del sistema virtual existente. Este método puede ser un efecto secundario de destruir otras instantáneas que dependen de la instantánea afectada.
+description: Destruir una instantánea del sistema virtual existente. Este método puede destruir como efecto secundario otras instantáneas que dependen de la instantánea afectada.
 ms.assetid: 69f60d0e-50ef-4a38-ad4b-88534b7fb3f8
-title: Método DestroySnapshot de la clase CIM_VirtualSystemSnapshotService
+title: Método DestroySnapshot de la CIM_VirtualSystemSnapshotService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 80d618374d2da4a12f2ce31284d7b3fa36ba65ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 986ffe6a7a5bd6ac18d47bcbebe40ac038ea86cdc096173704d30515067fcccc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646374"
 ---
-# <a name="destroysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método DestroySnapshot de la \_ clase VirtualSystemSnapshotService de CIM
+# <a name="destroysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método DestroySnapshot de la clase \_ CIM VirtualSystemSnapshotService
 
-Destruya una instantánea del sistema virtual existente. Este método puede ser un efecto secundario de destruir otras instantáneas que dependen de la instantánea afectada.
+Destruir una instantánea del sistema virtual existente. Este método puede destruir como efecto secundario otras instantáneas que dependen de la instantánea afectada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ uint32 DestroySnapshot(
 
 <dl> <dt>
 
-*AffectedSnapshot* \[ de\]
+*AffectedSnapshot* \[ En\]
 </dt> <dd>
 
-Una [**referencia \_ VirtualSystemSettingData de CIM**](cim-virtualsystemsettingdata.md) a la instantánea del sistema virtual afectada.
+Una [**referencia CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) a la instantánea del sistema virtual afectada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un [**\_ ConcreteJob de CIM**](cim-concretejob.md) que represente el trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver [**un \_ ConcreteJob cim**](cim-concretejob.md) que representa el trabajo.
 
 > [!Note]  
-> Este parámetro era de lectura/escritura en Windows 8.1.
+> Este parámetro era de lectura y escritura en Windows 8.1.
 
  
 
@@ -61,7 +61,7 @@ Si la operación es de larga ejecución, opcionalmente se puede devolver un [**\
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -83,19 +83,19 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no válido** (6)
+**Tipo no** válido (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,9 +105,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -116,7 +116,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSNAPSHOTSERVICE CIM**](cim-virtualsystemsnapshotservice.md)
+[**CIM \_ VirtualSystemSnapshotService**](cim-virtualsystemsnapshotservice.md)
 </dt> </dl>
 
  

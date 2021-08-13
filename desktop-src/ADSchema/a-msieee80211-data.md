@@ -1,11 +1,11 @@
 ---
-title: atributo MS-IEEE-80211-Data
+title: Atributo ms-ieee-80211-Data
 description: Almacena una lista de configuraciones de red preferidas en directiva de grupo para redes inalámbricas.
 ms.assetid: 8e5ae2c6-c048-419d-a684-e450a2445a0e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de datos MS-IEEE-80211-
-- 'msieee80211: esquema de AD de atributos de datos'
+- ms-ieee-80211-Data attribute AD Schema
+- msieee80211-Data attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1a53138e15a15e4fafecb998b87ef8b4df71fb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8bfc19c1230fe7a05644c94833c54a8368548aa020573953d817f484d71509ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682747"
 ---
-# <a name="ms-ieee-80211-data-attribute"></a>atributo MS-IEEE-80211-Data
+# <a name="ms-ieee-80211-data-attribute"></a>Atributo ms-ieee-80211-Data
 
 Almacena una lista de configuraciones de red preferidas en directiva de grupo para redes inalámbricas.
 
@@ -29,13 +29,13 @@ Almacena una lista de configuraciones de red preferidas en directiva de grupo pa
 
 | Entrada | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | MS-IEEE-80211-datos                                                               |
-| Nombre para mostrar de LDAP | msieee80211: datos                                                                 |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Administrador de dominio                                                             |
-| Frecuencia de actualización  | Cada vez que un administrador de dominio cambia la Directiva de red inalámbrica para un dominio o una unidad organizativa. |
+| CN                | ms-ieee-80211-Data                                                               |
+| Ldap-Display-Name | msieee80211-Data                                                                 |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Administrador de dominio                                                             |
+| Frecuencia de actualización  | Cada vez que un administrador de dominio cambia la directiva de red inalámbrica para un dominio o unidad organizativa. |
 | Attribute-Id      | 1.2.840.113556.1.4.1821                                                          |
-| System-ID-GUID    | 0e0d0938-2658-4580-a9f6-7a0ac7b566cb                                             |
+| System-Id-Guid    | 0e0d0938-2658-4580-a9f6-7a0ac7b566cb                                             |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                            |
 
 
@@ -54,18 +54,18 @@ Almacena una lista de configuraciones de red preferidas en directiva de grupo pa
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Almacena una lista de configuraciones de red preferidas en directiva de grupo pa
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Almacena una lista de configuraciones de red preferidas en directiva de grupo pa
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Almacena una lista de configuraciones de red preferidas en directiva de grupo pa
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Almacena una lista de configuraciones de red preferidas en directiva de grupo pa
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 

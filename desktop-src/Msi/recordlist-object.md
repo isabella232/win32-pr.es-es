@@ -1,5 +1,5 @@
 ---
-description: El objeto RecordList es una colección de objetos record. Debe comprobar que el objeto RecordList existe y que no está vacío antes de hacer referencia a sus propiedades.
+description: El objeto RecordList es una colección de objetos Record. Debe comprobar que el objeto RecordList existe y no está vacío antes de hacer referencia a sus propiedades.
 ms.assetid: 7f5ac153-8da1-4dc8-9bb7-defd4e821142
 title: Objeto RecordList
 ms.topic: reference
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b3f09887333d8ddbf83de4bea2b2e654411883e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4528b80b13fbf2667c33d9588dff2ce745d24f8575aa726ea67dc256fdebfd1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626813"
 ---
 # <a name="recordlist-object"></a>Objeto RecordList
 
-El objeto **RecordList** es una colección de objetos [**Record**](record-object.md) . Debe comprobar que el objeto **RecordList** existe y que no está vacío antes de hacer referencia a sus propiedades.
+El **objeto RecordList** es una colección de [**objetos Record.**](record-object.md) Debe comprobar que el objeto **RecordList** existe y no está vacío antes de hacer referencia a sus propiedades.
 
 ## <a name="members"></a>Miembros
 
-El objeto **RecordList** tiene estos tipos de miembros:
+El **objeto RecordList** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **RecordList** tiene estas propiedades.
+El **objeto RecordList** tiene estas propiedades.
 
 
 
 | Propiedad                                     | Descripción                                                          |
 |:---------------------------------------------|:---------------------------------------------------------------------|
-| [**Contabiliza**](recordlist-count.md)<br/> | Devuelve el número de elementos del objeto **RecordList** .<br/> |
-| [**Elemento**](recordlist-item.md)<br/>   | Devuelve un registro de una colección de objetos **RecordList** .<br/>   |
+| [**Count**](recordlist-count.md)<br/> | Devuelve el número de elementos del **objeto RecordList.**<br/> |
+| [**Elemento**](recordlist-item.md)<br/>   | Devuelve un registro de una **colección de objetos RecordList.**<br/>   |
 
 
 
@@ -51,9 +51,9 @@ El objeto **RecordList** tiene estas propiedades.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IRecordList se define como 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
+| IID<br/>     | IID IRecordList se define como \_ 000C1096-0000-0000-C000-00000000046<br/>                                                                                                                                                                          |
 
 
 
@@ -61,10 +61,10 @@ El objeto **RecordList** tiene estas propiedades.
 
 <dl> <dt>
 
-[**Record**](record-object.md)
+[**Registro**](record-object.md)
 </dt> <dt>
 
-[Ejemplos de scripting Windows Installer](windows-installer-scripting-examples.md)
+[Windows Ejemplos de scripting del instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

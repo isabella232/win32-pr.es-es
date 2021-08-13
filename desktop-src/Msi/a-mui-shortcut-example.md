@@ -1,27 +1,27 @@
 ---
-description: En esta sección se describe cómo agregar cadenas de recursos a la tabla de accesos directos Windows Installer para su uso con las interfaces de usuario multilingüe (MUI).
+description: En esta sección se describe cómo agregar cadenas de recursos a la tabla de accesos directos Windows Installer para su uso con interfaces de usuario multilingües (MUI).
 ms.assetid: f521cfb8-32a8-4b62-b258-5b99cc3e0416
-title: Un ejemplo de método abreviado de MUI
+title: Un ejemplo de acceso directo de MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0392713c1eaedabaa989baecd79478a9b329e955
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3b38f674a63e854fbcd4439229c5aded5b0efe6cfc17d3e475f8a52f30db949
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640292"
 ---
-# <a name="a-mui-shortcut-example"></a>Un ejemplo de método abreviado de MUI
+# <a name="a-mui-shortcut-example"></a>Un ejemplo de acceso directo de MUI
 
-En esta sección se describe cómo agregar cadenas de recursos a la tabla de [accesos directos](shortcut-table.md) Windows Installer para su uso con las interfaces de usuario multilingüe (MUI).
+En esta sección se describe cómo agregar cadenas de recursos a la tabla de accesos directos Windows [Installer](shortcut-table.md) para su uso con interfaces de usuario multilingües (IAM).
 
-**Windows Installer 2,0 y Windows Installer 3,0:** No compatible. Este ejemplo requiere Windows Installer 4,0.
+**Windows Installer 2.0 y Windows Installer 3.0:** No se admite. Este ejemplo requiere Windows Installer 4.0.
 
-Consulte la documentación de la [interfaz de usuario multilingüe (MUI)](/windows/desktop/Intl/multilingual-user-interface) para obtener información sobre cómo desarrollar aplicaciones habilitadas para MUI.
+Consulte la documentación [de Interfaz de usuario multilingüe web ()](/windows/desktop/Intl/multilingual-user-interface) para obtener información sobre cómo desarrollar aplicaciones habilitadas para MUI.
 
-Para agregar las cadenas de recursos que usan las interfaces de usuario multilingüe de Windows Vista a un paquete de Windows Installer:
+Para agregar las cadenas de recursos usadas por Windows interfaces de usuario multilingües de Vista a un paquete Windows Installer:
 
-1.  Agregue la información de todos los archivos de idioma y de idioma neutro a la [tabla de archivos](file-table.md). Por ejemplo, los archivos pueden constar de un archivo independiente del idioma (msimsg.dll) y archivos de idioma para inglés (msimsgen.dll. MUI), Japonés (msimsgja.dll. MUI) y chino (msimsgcs.dll. MUI). Cada archivo puede pertenecer a un componente diferente. Cada archivo puede tener un nombre de archivo largo y corto. En el caso de este ejemplo, se puede Agregar la siguiente información a la [tabla de archivos](file-table.md).
+1.  Agregue la información de todos los archivos de idioma neutro y de idioma a la [tabla de archivos](file-table.md). Por ejemplo, los archivos pueden constar de un archivo con idioma neutro (msimsg.dll) y archivos de idioma para inglés (msimsgen.dll.csv), japonés (msimsgja.dll.mui) y chino (msimsgcs.dll.csv). Cada archivo puede pertenecer a un componente diferente. Cada archivo puede tener un nombre de archivo largo y corto. En el caso de este ejemplo, se puede agregar la siguiente información a la [tabla de archivos](file-table.md).
 
     [Tabla de archivos](file-table.md) (parcial)
 
@@ -29,85 +29,85 @@ Para agregar las cadenas de recursos que usan las interfaces de usuario multilin
 
     | Archivo        | Componente\_     | FileName                     |
     |-------------|-----------------|------------------------------|
-    | msimsgmuija | MSIMSG \_ mui \_ ja | msimsgja.dll\|msimsg.dll. MUI |
-    | msimsgmuics | MSIMSG \_ mui \_ CS | msimsgcs.dll\|msimsg.dll. MUI |
-    | msimsgmuien | MSIMSG \_ mui \_ en | msimsgen.dll\|msimsg.dll. MUI |
+    | msimsgmuija | MSIMSG \_ MSI \_ JA | msimsgja.dll\|msimsg.dll.mui |
+    | msimsgmuics | MSIMSG \_ MUI \_ CS | msimsgcs.dll\|msimsg.dll.mui |
+    | msimsgmuien | MSIMSG \_ MSI \_ EN | msimsgen.dll\|msimsg.dll.mui |
     | msimsgdll   | MSIMSG          | msimsg.dll                   |
 
     
 
      
 
-2.  Agregue información a la [tabla de componentes](component-table.md) de estos componentes. Cada componente tiene un identificador GUID único que debe especificarse en el campo ComponentId de la tabla de componentes. El archivo que pertenece al componente puede actuar como la ruta de acceso de ese componente. El directorio que contiene cada componente se puede especificar en el \_ campo directorio. La siguiente información se puede Agregar a la tabla de componentes.
+2.  Agregue información a la [tabla Component para](component-table.md) estos componentes. Cada componente tiene un identificador GUID único que debe especificarse en el campo ComponentId de la tabla Component. El archivo que pertenece al componente puede actuar como KeyPath para ese componente. El directorio que contiene cada componente se puede especificar en el campo \_ Directorio. La siguiente información se puede agregar a la tabla Component.
 
     [Tabla de componentes](component-table.md) (parcial)
 
     
 
-    | Componente       | Directorio\_   | Rutas     |
+    | Componente       | Directorio\_   | KeyPath     |
     |-----------------|---------------|-------------|
-    | MSIMSG \_ mui \_ ja | MUIFolder \_ ja | msimsgmuija |
-    | MSIMSG \_ mui \_ CS | MUIFolder \_ CS | msimsgmuics |
-    | MSIMSG \_ mui \_ en | MUIFolder \_ en | msimsgmuien |
-    | MSIMSG          | MUIFolder     | msimsgdll   |
+    | MSIMSG \_ MSI \_ JA | FOLDER \_ JA | msimsgmuija |
+    | MSIMSG \_ MUI \_ CS | FOLDERFolder \_ CS | msimsgmuics |
+    | MSIMSG \_ MSI \_ EN | FOLDERFolder \_ EN | msimsgmuien |
+    | MSIMSG          | FOLDERFolder     | msimsgdll   |
 
     
 
      
 
-3.  Edite la tabla del [directorio](directory-table.md) para que los componentes se instalen en los directorios correctos. Asegúrese de incluir información sobre el directorio en el que se instalará el acceso directo. Por ejemplo, la siguiente información puede agregarse a la tabla de directorio de un paquete que instala los componentes de y un acceso directo ubicado en el directorio DesktopFolder.
+3.  Edite [la tabla](directory-table.md) Directory para que los componentes se instalen en los directorios correctos. Asegúrese de incluir información sobre el directorio donde se instalará el acceso directo. Por ejemplo, se podría agregar la siguiente información a la tabla Directory de un paquete que instala los componentes y un acceso directo ubicado en el directorio DesktopFolder.
 
-    [Tabla de directorio](directory-table.md) (parcial)
+    [Tabla de directorios](directory-table.md) (parcial)
 
     
 
-    | Directorio     | Directorio \_ primario | DefaultDir |
+    | Directorio     | Elemento primario \_ del directorio | DefaultDir |
     |---------------|-------------------|------------|
     | TARGETDIR     |                   | SourceDir  |
     | MsiTest       | TARGETDIR         | MsiTest:.  |
-    | MUIFolder     | MsiTest           | LINGÜE        |
-    | MUIFolder \_ CS | MUIFolder         | cs-CZ      |
-    | MUIFolder \_ en | MUIFolder         | es-ES      |
-    | MUIFolder \_ ja | MUIFolder         | ja-JP      |
+    | FOLDERFolder     | MsiTest           | Mui        |
+    | FOLDERFolder \_ CS | FOLDERFolder         | cs-CZ      |
+    | FOLDERFolder \_ EN | FOLDERFolder         | en-US      |
+    | FOLDER \_ JA | FOLDERFolder         | ja-JP      |
     | DesktopFolder | TARGETDIR         | .          |
 
     
 
      
 
-4.  Agregue una fila a la tabla de [accesos directos](shortcut-table.md) para cada acceso directo. Por ejemplo, la tabla de [acceso directo](shortcut-table.md) podría contener la siguiente información para dos métodos abreviados, Quick1 y Quick2, instalados en el directorio DirectoryFolder Cada acceso directo pertenece a la característica especificada en el campo de destino. El icono asociado con el acceso directo se puede especificar en el \_ campo icono y en la tabla de [iconos](icon-table.md) .
+4.  Agregue una fila a la tabla [Acceso directo](shortcut-table.md) para cada acceso directo. Por ejemplo, la tabla [Acceso](shortcut-table.md) directo podría contener la siguiente información para dos métodos abreviados, Quick1 y Quick2, instalados en el directorio DirectoryFolder. Cada acceso directo pertenece a la característica especificada en el campo Destino. El icono asociado al acceso directo se puede especificar en el campo Icono \_ y en la tabla [Icono.](icon-table.md)
 
-    [Tabla de acceso directo](shortcut-table.md) (parcial)
+    [Tabla de métodos abreviados](shortcut-table.md) (parcial)
 
     
 
     | Acceso directo | Directorio\_   | Componente\_ | Destino               | Icono             |
     |----------|---------------|-------------|----------------------|------------------|
-    | Quick1   | DesktopFolder | MSIMSG      | FeatureChild1 \_ local | HelpFileIcon.exe |
-    | Quick2   | DesktopFolder | MSIMSG      | FeatureChild1 \_ local | HelpFileIcon.exe |
+    | Quick1   | DesktopFolder | MSIMSG      | FeatureChild1 \_ Local | HelpFileIcon.exe |
+    | Quick2   | DesktopFolder | MSIMSG      | FeatureChild1 \_ Local | HelpFileIcon.exe |
 
     
 
      
 
-5.  Agregue información a la tabla de la [tabla de características](feature-table.md) para la característica a la que pertenece el acceso directo. Cuando se activa el acceso directo, el instalador comprueba que todos los componentes que pertenecen a esta característica se instalan antes de iniciar el archivo de clave del componente especificado en la \_ columna componente de la tabla de [accesos directos](shortcut-table.md) . En el caso de este ejemplo, se puede Agregar la siguiente información a la tabla de la tabla de características para la \_ característica local FeatureParent1.
+5.  Agregue información a la tabla [Tabla de](feature-table.md) características para la característica a la que pertenece el acceso directo. Cuando se activa el acceso directo, el instalador comprueba que todos los componentes que pertenecen a esta característica están instalados antes de iniciar el archivo de clave del componente especificado en la columna Componente de la tabla \_ [Acceso](shortcut-table.md) directo. En el caso de este ejemplo, se puede agregar la siguiente información a la tabla Tabla de características para la característica FeatureParent1 \_ Local.
 
     [Tabla de características](feature-table.md) (parcial)
 
     
 
-    | Característica               | Característica \_ principal       | Title                 | Atributos |
+    | Característica               | Elemento \_ primario de la característica       | Título                 | Atributos |
     |-----------------------|-----------------------|-----------------------|------------|
-    | FeatureParent1 \_ local |                       | FeatureParent1 \_ local | 16         |
-    | FeatureChild1 \_ local  | FeatureParent1 \_ local | FeatureParent1 \_ local | 0          |
+    | FeatureParent1 \_ Local |                       | FeatureParent1 \_ Local | 16         |
+    | FeatureChild1 \_ Local  | FeatureParent1 \_ Local | FeatureParent1 \_ Local | 0          |
 
     
 
      
 
-6.  Para cada nuevo acceso directo, agregue la información de la cadena de recursos a los campos DisplayResourceDLL, DisplayResourceId, DescriptionResourceDLL y DescriptionResourceId de la [tabla de acceso directo](shortcut-table.md). Los campos DisplayResourceDLL y DescriptionResourceDLL contienen la cadena de recursos en formato de cadena [con formato](formatted.md) . La cadena con formato puede utilizar la \[ \# Convención *filekey* \] del formato [con formato](formatted.md) . Agregue los índices de presentación y descripción para las cadenas de recursos en los campos DisplayResourceId y DescriptionResourceId.
+6.  Para cada nuevo acceso directo, agregue la información de la cadena de recursos a los campos DisplayResourceDLL, DisplayResourceId, DescriptionResourceDLL y DescriptionResourceId de la tabla [shortcut](shortcut-table.md). Los campos DisplayResourceDLL y DescriptionResourceDLL contienen la cadena de recursos en [formato de cadena](formatted.md) con formato. La cadena con formato puede usar la \[ \# *convención filekey* \] del formato [Formatted.](formatted.md) Agregue los índices de visualización y descripción de las cadenas de recursos en los campos DisplayResourceId y DescriptionResourceId.
 
-    [Tabla de acceso directo](shortcut-table.md) (parcial)
+    [Tabla de métodos abreviados](shortcut-table.md) (parcial)
 
     
 
@@ -120,7 +120,7 @@ Para agregar las cadenas de recursos que usan las interfaces de usuario multilin
 
      
 
-7.  Después de instalar el paquete, pruebe para asegurarse de que la interfaz de usuario multilingüe funciona según lo previsto.
+7.  Después de instalar el paquete, pruebe para asegurarse de que el Interfaz de usuario multilingüe funciona según lo previsto.
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: La clase CBaseWindow es una clase base para administrar ventanas.
 ms.assetid: 212d179e-5b5e-49fb-bf0a-a12e0317c96a
-title: Clase CBaseWindow (Winutil. h)
+title: CBaseWindow (clase, Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,80 +16,80 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 313f1b222f3b0096d3f5bf92c15e2097afb29848
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60d2a3004343df7846d4bf600690bc6a1e45b46111f91828c7de31219a751308
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657199"
 ---
-# <a name="cbasewindow-class"></a>Clase CBaseWindow
+# <a name="cbasewindow-class"></a>CBaseWindow (clase)
 
-La `CBaseWindow` clase es una clase base para administrar ventanas. Los representadores de vídeo pueden utilizar esta clase para crear ventanas de vídeo. Para usar esta clase, cree una clase derivada que herede de `CBaseWindow` . En la clase derivada:
+La `CBaseWindow` clase es una clase base para administrar ventanas. Los representadores de vídeo pueden usar esta clase para crear ventanas de vídeo. Para usar esta clase, cree una clase derivada que herede de `CBaseWindow` . En la clase derivada:
 
--   Implemente el método virtual puro [**CBaseWindow:: GetClassWindowStyles**](cbasewindow-getclasswindowstyles.md), que define los estilos de ventana.
--   Invalide el método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onreceivemessage.md) , que controla los mensajes de ventana.
--   Implemente un destructor que llame al método [**CBaseWindow::D onewithwindow**](cbasewindow-donewithwindow.md) .
+-   Implemente el método virtual [**puro CBaseWindow::GetClassWindowStyles**](cbasewindow-getclasswindowstyles.md), que define los estilos de ventana.
+-   Invalide [**el método CBaseWindow::OnReceiveMessage,**](cbasewindow-onreceivemessage.md) que controla los mensajes de ventana.
+-   Implemente un destructor que llame [**al método CBaseWindow::D oneWithWindow.**](cbasewindow-donewithwindow.md)
 
-Antes de usar una instancia de la clase derivada, llame al método [**CBaseWindow::P reparewindow**](cbasewindow-preparewindow.md) .
+Antes de usar una instancia de la clase derivada, llame al método [**CBaseWindow::P repareWindow.**](cbasewindow-preparewindow.md)
 
 
 
-| Variables de miembro protegidas                                           | Descripción                                                                    |
+| Variables miembro protegidas                                           | Descripción                                                                    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**hInstance de m \_**](cbasewindow-m-hinstance.md)                      | Identificador de la instancia de módulo.                                                 |
-| [**m \_ hWnd**](cbasewindow-m-hwnd.md)                                | Identificador de la ventana del objeto.                                                 |
-| [**m \_ HDC**](cbasewindow-m-hdc.md)                                  | Identificador del contexto de dispositivo de la ventana.                                         |
-| [**\_ancho m**](cbasewindow-m-width.md)                              | Ancho del área cliente, en píxeles.                                           |
-| [**\_altura m**](cbasewindow-m-height.md)                            | Alto del área cliente, en píxeles.                                          |
+| [**m \_ hInstance**](cbasewindow-m-hinstance.md)                      | Identificador de la instancia del módulo.                                                 |
+| [**m \_ hwnd**](cbasewindow-m-hwnd.md)                                | Identificador de la ventana del objeto.                                                 |
+| [**m \_ hdc**](cbasewindow-m-hdc.md)                                  | Identificador del contexto del dispositivo de la ventana.                                         |
+| [**m \_ Width**](cbasewindow-m-width.md)                              | Ancho del área de cliente, en píxeles.                                           |
+| [**m \_ Height**](cbasewindow-m-height.md)                            | Alto del área de cliente, en píxeles.                                          |
 | [**m \_ bActivated**](cbasewindow-m-bactivated.md)                    | Marca que especifica si se ha activado la ventana.                     |
 | [**m \_ pClassName**](cbasewindow-m-pclassname.md)                    | Cadena estática que contiene el nombre de la clase de ventana.                      |
 | [**m \_ ClassStyles**](cbasewindow-m-classstyles.md)                  | Estilos de clase para la ventana.                                                   |
 | [**m \_ WindowStyles**](cbasewindow-m-windowstyles.md)                | Estilos de ventana para la ventana.                                                  |
 | [**m \_ WindowStylesEx**](cbasewindow-m-windowstylesex.md)            | Estilos de ventana extendidos para la ventana.                                         |
-| [**m \_ ShowStageMessage**](cbasewindow-m-showstagemessage.md)        | Mensaje privado que coloca la ventana en primer plano.                      |
-| [**m \_ ShowStageTop**](cbasewindow-m-showstagetop.md)                | Mensaje privado que establece el estilo de ventana en WS \_ ex \_ nivel superior.                 |
-| [**m \_ RealizePalette**](cbasewindow-m-realizepalette.md)            | Mensaje privado que observa la paleta.                                     |
-| [**m \_ MemoryDC**](cbasewindow-m-memorydc.md)                        | Identificador del contexto de dispositivo de memoria.                                           |
+| [**m \_ ShowStageMessage**](cbasewindow-m-showstagemessage.md)        | Mensaje privado que pone la ventana en primer plano.                      |
+| [**m \_ ShowStageTop**](cbasewindow-m-showstagetop.md)                | Mensaje privado que establece el estilo de ventana en WS \_ EX \_ TOPMOST.                 |
+| [**m \_ RealizePalette**](cbasewindow-m-realizepalette.md)            | Mensaje privado que realiza la paleta.                                     |
+| [**m \_ MemoryDC**](cbasewindow-m-memorydc.md)                        | Identificador del contexto del dispositivo de memoria.                                           |
 | [**m \_ hPalette**](cbasewindow-m-hpalette.md)                        | Identificador de la paleta de la ventana.                                                |
-| [**m \_ bNoRealize**](cbasewindow-m-bnorealize.md)                    | Marca que especifica si la ventana debe obtener su paleta.             |
+| [**m \_ bNoRealize**](cbasewindow-m-bnorealize.md)                    | Marca que especifica si la ventana debe realizar su paleta.             |
 | [**m \_ bBackground**](cbasewindow-m-bbackground.md)                  | Marca que especifica si la paleta debe ser una paleta de fondo.        |
-| [**m \_ bRealizing**](cbasewindow-m-brealizing.md)                    | Marca que especifica si se está llevando a cabo una nueva paleta.                   |
-| [**m \_ WindowLock**](cbasewindow-m-windowlock.md)                    | Sección crítica para serializar el acceso al objeto.                           |
+| [**m \_ bRealizing**](cbasewindow-m-brealizing.md)                    | Marca que especifica si se está concretando una nueva paleta.                   |
+| [**m \_ WindowLock**](cbasewindow-m-windowlock.md)                    | Sección crítica, para serializar el acceso al objeto .                           |
 | [**m \_ bDoGetDC**](cbasewindow-m-bdogetdc.md)                        | Marca que especifica si se debe recuperar el contexto del dispositivo.                    |
-| [**m \_ bDoPostToDestroy**](cbasewindow-m-bdoposttodestroy.md)        | Marca que especifica si la ventana envía o envía su mensaje de destrucción. |
+| [**m \_ bDoPostToDestroy**](cbasewindow-m-bdoposttodestroy.md)        | Marca que especifica si la ventana publica o envía su mensaje de destrucción. |
 | Métodos protegidos                                                    | Descripción                                                                    |
-| [**OnPaletteChange**](cbasewindow-onpalettechange.md)               | Controla los mensajes de cambio de paleta. Virtualiza.                                      |
+| [**OnPaletteChange**](cbasewindow-onpalettechange.md)               | Controla los mensajes de cambio de paleta. Virtual.                                      |
 | Métodos públicos                                                       | Descripción                                                                    |
-| [**CBaseWindow**](cbasewindow-cbasewindow.md)                       | Método de constructor.                                                            |
-| [**DoneWithWindow**](cbasewindow-donewithwindow.md)                 | Destruye la ventana. Virtualiza.                                                  |
-| [**PrepareWindow**](cbasewindow-preparewindow.md)                   | Crea la ventana. Virtualiza.                                                   |
-| [**InactivateWindow**](cbasewindow-inactivatewindow.md)             | Desactiva la ventana. Virtualiza.                                               |
-| [**ActivateWindow**](cbasewindow-activatewindow.md)                 | Ajusta el tamaño de la ventana según los requisitos de la clase derivada. Virtualiza.  |
-| [**Tamaño**](cbasewindow-onsize.md)                                 | Controla \_ los mensajes de tamaño de WM. Virtualiza.                                            |
-| [**OnClose**](cbasewindow-onclose.md)                               | Controla \_ los mensajes de cierre de WM. Virtualiza.                                           |
-| [**GetDefaultRect**](cbasewindow-getdefaultrect.md)                 | Recupera el tamaño predeterminado del área cliente. Virtualiza.                        |
-| [**UninitialiseWindow**](cbasewindow-uninitialisewindow.md)         | Libera los recursos de la ventana. Virtualiza.                                      |
-| [**InitialiseWindow**](cbasewindow-initialisewindow.md)             | Inicializa la ventana. Virtualiza.                                               |
-| [**CompleteConnect**](cbasewindow-completeconnect.md)               | Notifica a la ventana que se ha conectado el PIN de entrada del representador.          |
+| [**CBaseWindow**](cbasewindow-cbasewindow.md)                       | Método constructor.                                                            |
+| [**DoneWithWindow**](cbasewindow-donewithwindow.md)                 | Destruye la ventana. Virtual.                                                  |
+| [**PrepareWindow**](cbasewindow-preparewindow.md)                   | Crea la ventana. Virtual.                                                   |
+| [**InactivateWindow**](cbasewindow-inactivatewindow.md)             | Inactiva la ventana. Virtual.                                               |
+| [**ActivateWindow**](cbasewindow-activatewindow.md)                 | Tamaños de la ventana según los requisitos de la clase derivada. Virtual.  |
+| [**OnSize**](cbasewindow-onsize.md)                                 | Controla los mensajes \_ WM SIZE. Virtual.                                            |
+| [**OnClose**](cbasewindow-onclose.md)                               | Controla los mensajes \_ WM CLOSE. Virtual.                                           |
+| [**GetDefaultRect**](cbasewindow-getdefaultrect.md)                 | Recupera el tamaño predeterminado del área de cliente. Virtual.                        |
+| [**UninitialiseWindow**](cbasewindow-uninitialisewindow.md)         | Libera los recursos de la ventana. Virtual.                                      |
+| [**InitialiseWindow**](cbasewindow-initialisewindow.md)             | Inicializa la ventana. Virtual.                                               |
+| [**CompleteConnect**](cbasewindow-completeconnect.md)               | Notifica a la ventana que el pin de entrada del representador se ha conectado.          |
 | [**DoCreateWindow**](cbasewindow-docreatewindow.md)                 | Crea la ventana.                                                            |
 | [**PerformanceAlignWindow**](cbasewindow-performancealignwindow.md) | Alinea la ventana con un límite **DWORD** para obtener el máximo rendimiento.            |
 | [**DoShowWindow**](cbasewindow-doshowwindow.md)                     | Establece el estado de presentación de la ventana.                                                  |
-| [**PaintWindow**](cbasewindow-paintwindow.md)                       | Hace que se vuelva a dibujar la ventana.                                             |
-| [**DoSetWindowForeground**](cbasewindow-dosetwindowforeground.md)   | Pone la ventana en primer plano.                                           |
-| [**SetPalette**](cbasewindow-setpalette.md)                         | Instala una paleta para la ventana. Virtualiza.                                    |
-| [**SetRealize**](cbasewindow-setrealize.md)                         | Especifica si la ventana obtiene las paletas.                                |
-| [**DoRealisePalette**](cbasewindow-dorealisepalette.md)             | Obtiene la paleta actual de la ventana. Virtualiza.                                |
-| [**PossiblyEatMessage**](cbasewindow-possiblyeatmessage.md)         | Permite a una clase derivada reenviar mensajes a otra ventana. Virtualiza.        |
+| [**PaintWindow**](cbasewindow-paintwindow.md)                       | Hace que la ventana se vuelva a dibujar.                                             |
+| [**DoSetWindowForeground**](cbasewindow-dosetwindowforeground.md)   | Lleva la ventana al primer plano.                                           |
+| [**SetPalette**](cbasewindow-setpalette.md)                         | Instala una paleta para la ventana. Virtual.                                    |
+| [**SetRealize**](cbasewindow-setrealize.md)                         | Especifica si la ventana realiza paletas.                                |
+| [**DoRealisePalette**](cbasewindow-dorealisepalette.md)             | Realiza la paleta actual de la ventana. Virtual.                                |
+| [**PossiblyEatMessage**](cbasewindow-possiblyeatmessage.md)         | Permite que una clase derivada reenvía mensajes a otra ventana. Virtual.        |
 | [**GetWindowWidth**](cbasewindow-getwindowwidth.md)                 | Recupera el ancho actual de la ventana.                                     |
 | [**GetWindowHeight**](cbasewindow-getwindowheight.md)               | Recupera el alto actual de la ventana.                                    |
-| [**GetWindowHWND**](cbasewindow-getwindowhwnd.md)                   | Recupera un identificador de la ventana.                                              |
-| [**GetMemoryHDC**](cbasewindow-getmemoryhdc.md)                     | Recupera un identificador para el contexto de dispositivo de memoria.                               |
-| [**GetWindowHDC**](cbasewindow-getwindowhdc.md)                     | Recupera un identificador del contexto de dispositivo de la ventana.                             |
-| [**OnReceiveMessage**](cbasewindow-onreceivemessage.md)             | Controla los mensajes de ventana. Virtualiza.                                              |
-| [**UnsetPalette**](cbasewindow-unsetpalette.md)                     | Elimina la paleta actual de la ventana y restaura la paleta predeterminada del sistema.  |
+| [**GetWindowHWND**](cbasewindow-getwindowhwnd.md)                   | Recupera un identificador en la ventana.                                              |
+| [**GetMemoryHDC**](cbasewindow-getmemoryhdc.md)                     | Recupera un identificador en el contexto del dispositivo de memoria.                               |
+| [**GetWindowHDC**](cbasewindow-getwindowhdc.md)                     | Recupera un identificador en el contexto del dispositivo de la ventana.                             |
+| [**OnReceiveMessage**](cbasewindow-onreceivemessage.md)             | Controla los mensajes de ventana. Virtual.                                              |
+| [**UnsetPalette**](cbasewindow-unsetpalette.md)                     | Elimina la paleta actual de la ventana y restaura la paleta del sistema predeterminada.  |
 | Métodos virtuales puros                                                 | Descripción                                                                    |
-| [**GetClassWindowStyles**](cbasewindow-getclasswindowstyles.md)     | Recupera los estilos de clase y los estilos de ventana de la ventana.                         |
+| [**GetClassWindowStyles**](cbasewindow-getclasswindowstyles.md)     | Recupera los estilos de clase y de ventana de la ventana.                         |
 
 
 
@@ -101,8 +101,8 @@ Antes de usar una instancia de la clase derivada, llame al método [**CBaseWindo
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -110,10 +110,10 @@ Antes de usar una instancia de la clase derivada, llame al método [**CBaseWindo
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Agregue una matriz de sprites al lote de sprites que se va a representar.
 ms.assetid: e6a9f806-7244-4139-b47e-c46dfab38a31
-title: ID3DX10Sprite::D método rawSpritesBuffered (D3DX10. h)
+title: Método ID3DX10Sprite::D rawSpritesBuffered (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 72893f6a8c3cf82c67f014b4bdbb9a92453de319
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bee3fd9344e393d2b5b9ddf6162286507fac918ea15f9abde2abcc2f80a5b65d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540042"
 ---
-# <a name="id3dx10spritedrawspritesbuffered-method"></a>ID3DX10Sprite::D método rawSpritesBuffered
+# <a name="id3dx10spritedrawspritesbuffered-method"></a>Método ID3DX10Sprite::D rawSpritesBuffered
 
-Agregue una matriz de sprites al lote de sprites que se va a representar. Se debe llamar a este método entre las llamadas a [**ID3DX10Sprite:: Begin**](id3dx10sprite-begin.md) y [**ID3DX10Sprite:: end**](id3dx10sprite-end.md), y se debe llamar a [**ID3DX10Sprite:: Flush**](id3dx10sprite-flush.md) antes de que finalice el envío de todos los sprites por lotes al dispositivo para su representación. Este método draw es muy útil cuando se dibuja un número pequeño de sprites que se desea almacenar en el búfer en un lote grande, como las fuentes.
+Agregue una matriz de sprites al lote de sprites que se va a representar. Se debe llamar a esto entre llamadas a [**ID3DX10Sprite::Begin**](id3dx10sprite-begin.md) e [**ID3DX10Sprite::End,**](id3dx10sprite-end.md)y se debe llamar a [**ID3DX10Sprite::Flush**](id3dx10sprite-flush.md) antes de End para enviar todos los sprites por lotes al dispositivo para su representación. Este método de dibujo es más útil al dibujar un pequeño número de sprites que desea almacenar en búfer en un lote grande, como fuentes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT DrawSpritesBuffered(
 
 <dl> <dt>
 
-*pSprites* \[ de\]
+*pSprites* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **D3DX10 \_ Sprite**](d3dx10-sprite.md)\***
+Tipo: **[ **SPRITE D3DX10 \_**](d3dx10-sprite.md)\***
 
-Matriz de sprites que se va a dibujar. Vea [**D3DX10 \_ Sprite**](d3dx10-sprite.md).
+Matriz de sprites que se dibujarán. Consulte [**SPRITE D3DX10. \_**](d3dx10-sprite.md)
 
 </dd> <dt>
 
-*cSprites* \[ de\]
+*cSprites* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de sprites en pSprites.
+Número de sprites en pSprites.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ El número de sprites en pSprites.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 [ID3DX10Sprite](id3dx10sprite.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

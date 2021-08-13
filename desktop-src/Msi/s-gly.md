@@ -1,19 +1,19 @@
 ---
-description: Obtenga información Windows Installer conceptos que comienzan por la letra S, como las tablas de secuencia y la lista de origen.
+description: Obtenga información sobre Windows installer que comienzan por la letra S, como las tablas de secuencia y la lista de origen.
 ms.assetid: 8570bf99-e7db-4af1-acc5-abc236a640d6
-title: S (Windows Installer)
+title: S (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93e288396a35a90346ffc6581653f32a4478e535
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 17d0bc61230433857a903476dab7ba25e1a75e3a6c405944731b73bfbb29ad78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625555"
 ---
-# <a name="s-windows-installer"></a>S (Windows Installer)
+# <a name="s-windows-installer"></a>S (Windows instalador)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) S [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) G [H](g-gly.md) [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) S [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 
@@ -34,7 +34,7 @@ Especifica las ubicaciones en las que el instalador va a buscar archivos [*de c�
 <span id="_msi_standard_action_gly"></span><span id="_MSI_STANDARD_ACTION_GLY"></span>**acción estándar**
 </dt> <dd>
 
-Acción integrada [*de*](a-gly.md) la Windows Installer. Para obtener más información, vea [Acciones estándar.](standard-actions.md)
+Acción integrada [*del*](a-gly.md) instalador de Windows. Para obtener más información, vea [Acciones estándar.](standard-actions.md)
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Lenguaje utilizado para procesar datos en una base de datos relacional. Puede us
 <span id="_msi_summary_information_stream_gly"></span><span id="_MSI_SUMMARY_INFORMATION_STREAM_GLY"></span>**secuencia de información de resumen**
 </dt> <dd>
 
-Ubicación de almacenamiento en [*.msi archivo para*](m-gly.md) obtener información que se puede ver con Microsoft Explorador de Windows. Para obtener más información, [vea Acerca del flujo de información de resumen](about-the-summary-information-stream.md).
+Storage ubicación en [*el.msi para*](m-gly.md) obtener información que se puede ver con Microsoft Windows Explorer. Para obtener más información, [vea Acerca del flujo de información de resumen](about-the-summary-information-stream.md).
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Cuando el instalador espera a que se complete el subproceso independiente de una
 <span id="_msi_system_policy_using_windows_installer__gly"></span><span id="_MSI_SYSTEM_POLICY_USING_WINDOWS_INSTALLER__GLY"></span>**directiva del sistema**
 </dt> <dd>
 
-Lo usan los administradores del sistema para controlar las configuraciones de usuario y equipo desde una única ubicación en una red. Las directivas del sistema propagan la configuración del Registro a un gran número de equipos sin necesidad de que el administrador tenga conocimientos detallados del registro. La directiva del sistema del instalador se puede configurar mediante el editor de directiva de grupo (GPE), incluido en Windows 2000. Para obtener más información, vea [Directiva del sistema](system-policy.md).
+Lo usan los administradores del sistema para controlar las configuraciones de usuario y equipo desde una única ubicación en una red. Las directivas del sistema propagan la configuración del Registro a un gran número de equipos sin necesidad de que el administrador tenga conocimientos detallados del registro. La directiva del sistema del instalador se puede configurar mediante el Editor de directiva de grupo (GPE), incluido en Windows 2000. Para obtener más información, vea [Directiva del sistema](system-policy.md).
 
 </dd> </dl>
 

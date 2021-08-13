@@ -4,41 +4,41 @@ description: Diferencias entre MIDL y MkTypLib
 ms.assetid: 86abd70b-7238-49a6-a996-2c8906a14449
 keywords:
 - MIDL y ODL MIDL, diferencias entre MIDL y MkTypLib
-- MkTypLib (MIDL)
+- MkTypLib MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a54b6103cc230e1c5e6700b0ddc93312c767f9b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43ae20e00dab492a140f48c9de683abeac04676824bd6513ccf086889b4460e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643629"
 ---
 # <a name="differences-between-midl-and-mktyplib"></a>Diferencias entre MIDL y MkTypLib
 
 > [!Note]  
-> La herramienta Mktyplib.exe está obsoleta. En su lugar, utilice el compilador de MIDL.
+> La Mktyplib.exe está obsoleta. En su lugar, use el compilador MIDL.
 
- 
+ 
 
-Existen algunas áreas clave en las que el compilador MIDL difiere de MkTypLib. La mayoría de estas diferencias surgen porque MIDL está orientado más hacia la sintaxis de C que a MkTypLib.
+Hay algunas áreas clave en las que el compilador midl difiere de MkTypLib. La mayoría de estas diferencias surgen porque MIDL está más orientado a la sintaxis de C que a MkTypLib.
 
-En general, querrá usar la sintaxis de MIDL en los archivos IDL. Sin embargo, si necesita compilar un archivo ODL existente o mantener la compatibilidad con MkTypLib, use la opción del compilador de MIDL [**/mktyplib203**](-mktyplib203.md) para forzar que MIDL se comporte como Mkktyplib.exe, versión 2,03. (Esta es la última versión de la herramienta MkTypLib). En concreto, la opción **/mktyplib203** resuelve estas diferencias:
+En general, querrá usar la sintaxis MIDL en los archivos IDL. Sin embargo, si necesita compilar un archivo ODL existente o mantener la compatibilidad con MkTypLib, use la opción del compilador [**MIDL /mktyplib203**](-mktyplib203.md) para forzar que MIDL se comporte como Mkktyplib.exe, versión 2.03. (Esta es la última versión de la herramienta MkTypLib). En concreto, la **opción /mktyplib203** resuelve estas diferencias:
 
--   Sintaxis de TypeDef para tipos de datos complejos
+-   Sintaxis typedef para tipos de datos complejos
 
-    En MkTypLib, las dos definiciones siguientes generan un registro TKIND \_ para "This \_ struct" en la biblioteca de tipos. La etiqueta "struct \_ Tag" es opcional y, si se utiliza, no se mostrará en la biblioteca de tipos.
+    En MkTypLib, las dos definiciones siguientes generan un registro TKIND \_ para "esta \_ estructura" en la biblioteca de tipos. La etiqueta "struct tag" es opcional y, si se \_ usa, no se mostrará en la biblioteca de tipos.
 
     ``` syntax
     typedef struct struct_tag { ... } this_struct;
     typedef struct { ... } that_struct;
     ```
 
-    Si falta una etiqueta opcional, MIDL la generará, con lo que se agregará una etiqueta a la definición proporcionada por el usuario. Dado que la primera definición tiene una etiqueta, MIDL generará un \_ registro TKIND para "This \_ struct" y un \_ alias TKIND para "This \_ struct" (que define "This \_ struct" como alias para "struct \_ Tag"). Dado que la etiqueta falta en la segunda definición, MIDL generará un \_ registro TKIND para un nombre alterado, interno a MIDL, que no es significativo para el usuario y un \_ alias TKIND para "ese \_ struct".
+    Si falta una etiqueta opcional, MIDL la generará, agregando eficazmente una etiqueta a la definición proporcionada por el usuario. Puesto que la primera definición tiene una etiqueta, MIDL generará un registro TKIND para "this struct" y un alias TKIND para \_ \_ \_ "this \_ struct" (definiendo "this struct" como alias para \_ "struct \_ tag"). Dado que falta la etiqueta en la segunda definición, MIDL generará un registro TKIND para un nombre desfasado, interno de MIDL, que no es significativo para el usuario y un ALIAS de TKIND para \_ \_ "esa \_ estructura".
 
-    Esto tiene implicaciones potenciales para los exploradores de biblioteca de tipos que simplemente muestran el nombre de un registro en su interfaz de usuario. Si espera que un \_ registro TKIND tenga un nombre real, los nombres irreconocibles podrían aparecer en la interfaz de usuario. Este comportamiento también se aplica a las definiciones de [**Unión**](union.md) y [**enumeración**](enum.md) , con el compilador MIDL que genera TKIND \_ uniones y TKIND \_ enumeraciones, respectivamente.
+    Esto tiene posibles implicaciones para los exploradores de biblioteca de tipos que simplemente muestran el nombre de un registro en su interfaz de usuario. Si espera que un registro de TKIND tenga un nombre real, podrían aparecer nombres \_ irreconocibles en la interfaz de usuario. Este comportamiento también se [](enum.md) aplica a [**las**](union.md) definiciones de unión y enumeración, con el compilador MIDL que genera los UNION de TKIND y los \_ ENU de TKIND, \_ respectivamente.
 
-    MIDL también permite definiciones de [**struct**](struct.md), [**Union**](union.md)y [**enum**](enum.md) de estilo C. Por ejemplo, la siguiente definición es válida en MIDL:
+    MIDL también permite definiciones [](union.md)de [**enumeración,**](struct.md)unión y estructura [**de**](enum.md) estilo C. Por ejemplo, la definición siguiente es legal en MIDL:
 
     ``` syntax
     struct my_struct { ... };
@@ -47,34 +47,34 @@ En general, querrá usar la sintaxis de MIDL en los archivos IDL. Sin embargo, s
 
 -   tipos de datos booleanos
 
-    En MkTypLib, el tipo base [**booleano**](boolean.md) y el tipo de datos MkTypLib bool equivalen a VT \_ bool, que se asigna a la variante \_ bool y que se define como un valor [**Short**](short.md). En MIDL, el tipo base **booleano** es equivalente a VT \_ UI1, que se define como un [**carácter sin signo**](unsigned.md)y el tipo de datos bool se define como un [**valor Long**](long.md). Esto conduce a dificultades si se mezcla la sintaxis IDL y la sintaxis ODL en el mismo archivo mientras se sigue intentando mantener la compatibilidad con MkTypLib. Dado que los tipos de datos tienen tamaños diferentes, el código de serialización no coincidirá con lo que se describe en la información de tipo. Si desea un VT \_ bool en la biblioteca de tipos, debe usar el tipo de \_ datos Variant bool.
+    En MkTypLib, el tipo [**base**](boolean.md) booleano y el tipo de datos MkTypLib BOOL equivalen a VT BOOL, que se asigna \_ a VARIANT BOOL y que se define como un \_ [**corto**](short.md). En MIDL, el tipo **base** booleano es equivalente a VT UI1, que se define como un carácter sin signo y el tipo de datos BOOL se define como \_ [**un largo**](long.md). [](unsigned.md) Esto conduce a dificultades si se mezcla sintaxis IDL y sintaxis de ODL en el mismo archivo mientras se sigue intentando mantener la compatibilidad con MkTypLib. Dado que los tipos de datos tienen tamaños diferentes, el código de serialización no coincidirá con lo que se describe en la información de tipos. Si desea un \_ VT BOOL en la biblioteca de tipos, debe usar el tipo de datos VARIANT \_ BOOL.
 
 -   Definiciones de GUID en archivos de encabezado
 
-    En MkTypLib, los GUID se definen en el archivo de encabezado con una macro que se puede compilar condicionalmente para generar una predefinición de GUID o un GUID con instancias. MIDL normalmente coloca las predefiniciones de GUID en los archivos de encabezado generados y las instancias GUID solo en el archivo generado por el modificador [**/IID**](-iid.md)
+    En MkTypLib, los GUID se definen en el archivo de encabezado con una macro que se puede compilar condicionalmente para generar una definición previa de GUID o un GUID con instancias. MIDL normalmente coloca las predefiniciones de GUID en sus archivos de encabezado generados y las instancias guid solo en el archivo generado por el [**modificador /iid.**](-iid.md)
 
-Las siguientes diferencias de comportamiento no se pueden resolver mediante el modificador [**/mktyplib203**](-mktyplib203.md) :
+Las siguientes diferencias de comportamiento no se pueden resolver mediante el modificador [**/mktyplib203:**](-mktyplib203.md)
 
 -   Distinción entre mayúsculas y minúsculas
 
-    MIDL distingue mayúsculas de minúsculas, la automatización OLE no lo es.
+    MIDL distingue mayúsculas de minúsculas, OLE Automation no.
 
--   Ámbito de los símbolos en una declaración de enumeración
+-   Ámbito de símbolos en una declaración de enumeración
 
-    En MkTypLib, el ámbito de los símbolos de una enumeración es local. En MIDL, el ámbito de los símbolos en una enumeración es global, como en C. Por ejemplo, el siguiente código se compilará en MkTypLib, pero generará un error de nombre duplicado en MIDL:
+    En MkTypLib, el ámbito de los símbolos de una enumeración es local. En MIDL, el ámbito de los símbolos de una enumeración es global, como en C. Por ejemplo, el código siguiente se compilará en MkTypLib, pero generará un error de nombre duplicado en MIDL:
 
     ``` syntax
     typedef struct { ... } a;
     enum {a=1, b=2, c=3};
     ```
 
--   Ámbito de atributo público
+-   Ámbito del atributo público
 
-    Si aplica el atributo [**público**](public.md) a un bloque de interfaz, MkTypLib trata cada typedef dentro de ese bloque de interfaz como público. MIDL requiere que aplique explícitamente el atributo **público** a las definiciones de usuario que desee que sean públicas.
+    Si aplica el atributo [**público**](public.md) a un bloque de interfaz, MkTypLib trata cada definición de tipo dentro de ese bloque de interfaz como pública. MIDL requiere que se aplique explícitamente el **atributo público** a las definiciones de tipo que quiera pública.
 
--   Orden de búsqueda de importlib
+-   Orden de búsqueda de la biblioteca de importación
 
-    Si importa más de una biblioteca de tipos y estas bibliotecas contienen referencias duplicadas, MkTypLib la resuelve con la primera referencia que encuentre. MIDL usará la última referencia que encuentre. Por ejemplo, dada la siguiente sintaxis de ODL, la biblioteca C usará la definición de tipo MOO de la biblioteca A si se compila con MkTypLib y la definición de tipo MOO de la biblioteca B Si se compila con MIDL:
+    Si importa más de una biblioteca de tipos y estas bibliotecas contienen referencias duplicadas, MkTypLib lo resuelve mediante la primera referencia que encuentra. MIDL usará la última referencia que encuentre. Por ejemplo, dada la siguiente sintaxis de ODL, la biblioteca C usará la definición de tipo MOO de la biblioteca A si compila con MkTypLib y la definición de tipos DE CLAVE de la biblioteca B si compila con MIDL:
 
     ``` syntax
     [...]library A
@@ -98,16 +98,16 @@ Las siguientes diferencias de comportamiento no se pueden resolver mediante el m
     }
     ```
 
-    La solución adecuada para esto es calificar cada referencia con el nombre de la biblioteca de importación correcto, de la siguiente manera:
+    La solución alternativa adecuada para esto es calificar cada referencia de este tipo con el nombre correcto de la biblioteca de importación, de la siguiente manera:
 
     ``` syntax
     typedef struct tagBAA
         {A.MOO y;}BAA
     ```
 
--   No se reconoce el tipo de datos VOID
+-   Tipo de datos VOID no reconocido
 
-    MIDL reconoce el tipo de datos [**void**](void.md) del lenguaje C y no reconoce el tipo de datos void de OLE Automation. Si tiene un archivo ODL que usa VOID, coloque esta definición en la parte superior del archivo:
+    MIDL reconoce el tipo de datos [**void**](void.md) del lenguaje C y no reconoce el tipo de datos OLE Automation VOID. Si tiene un archivo ODL que usa VOID, coloque esta definición en la parte superior del archivo:
 
     ``` syntax
 #define VOID void
@@ -115,17 +115,17 @@ Las siguientes diferencias de comportamiento no se pueden resolver mediante el m
 
 -   Notación exponencial
 
-    MIDL requiere que los valores expresados en la notación exponencial estén incluidos entre comillas. Por ejemplo, "-2.5 E + 3"
+    MIDL requiere que los valores expresados en notación exponencial se contengan entre comillas. Por ejemplo, "-2.5E+3"
 
--   Constantes y valores de LCID
+-   Constantes y valores LCID
 
     Normalmente, MIDL no tiene en cuenta el LCID al analizar archivos. Para forzar este comportamiento para un valor, o si necesita usar la notación específica de la configuración regional al definir una constante, incluya el valor o la constante entre comillas.
 
-Para obtener más información, vea [**/mktyplib203**](-mktyplib203.md), [**/IID**](-iid.md)y [serialización de tipos de datos OLE](marshaling-ole-data-types.md).
+Para obtener más información, [**vea /mktyplib203**](-mktyplib203.md), [**/iid**](-iid.md)y [Serializar tipos de datos OLE](marshaling-ole-data-types.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método Addtail (anexa otra lista al final de esta lista.
+description: El método AddTail anexa otra lista al final de esta lista.
 ms.assetid: 996523cd-d9ba-406a-afdf-494d328dc9dd
-title: Método CBaseList. Addtail ((Wxlist. h)
+title: Método CBaseList.AddTail (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 36d42f0b80703457032e5dde37f6d1549da089c5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5663a69d803def2b37f9a1ba677966a5b26a8bfc6f7b6eb1eb98eef85bcd961d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659160"
 ---
-# <a name="cbaselistaddtail-method"></a>CBaseList. Addtail (, método
+# <a name="cbaselistaddtail-method"></a>Método CBaseList.AddTail
 
 El `AddTail` método anexa otra lista al final de esta lista.
 
@@ -42,20 +42,20 @@ BOOL AddTail(
 
 <dl> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
-Puntero a la lista que se va a anexar.
+Puntero a la lista que se anexará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Si se produce un error en el método, es posible que algunos elementos se hayan agregado a la lista.
+Si se produce un error en el método, es posible que se hayan agregado algunos elementos a la lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si se produce un error en el método, es posible que algunos elementos se hayan 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si se produce un error en el método, es posible que algunos elementos se hayan 
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Especifica si las referencias de función de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para las operaciones un sentido y dos.
+description: Especifica si las referencias de función de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para operaciones un solo sentido y dos.
 ms.assetid: 2547f71d-8a30-4df8-ba38-6707c415708e
 title: elemento stubFunction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a77f37aed20dae4f04eea087e3d1eac2d23369af
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: dc9304aa33bd193edc631949a93e1d770a1fade3d0c5726a9f2d897ea1862476
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552431"
 ---
 # <a name="stubfunction-element"></a>elemento stubFunction
 
-Especifica si las referencias de función de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para las operaciones un sentido y dos.
+Especifica si las referencias de función de código auxiliar deben incluirse en las estructuras de operación en las definiciones de tipo de puerto para operaciones un solo sentido y dos.
 
 ## <a name="usage"></a>Uso
 
@@ -35,15 +35,15 @@ No hay elementos secundarios.
 
 | Elemento                                                       | Descripción                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------|
-| [**portTypeDefinitions**](porttypedefinitions.md)<br/> | Genera constantes de C para los tipos de puerto.<br/> <br/> |
+| [**portTypeDefinitions**](porttypedefinitions.md)<br/> | Genera constantes de C para tipos de puerto.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las referencias de función de código auxiliar se usan en escenarios de hospedaje para operaciones un solo sentido y dos.
 
-Los valores válidos para este elemento son 1 (referencias de función TRUE/stub incluidas) y 0 (se incluyen referencias de función FALSE/no stub).
+Los valores válidos para este elemento son 1 (se incluyen referencias de función TRUE/stub) y 0 (se incluyen las referencias de función FALSE/no stub).
 
 ## <a name="element-information"></a>Información de elemento
 

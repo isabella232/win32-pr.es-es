@@ -1,5 +1,5 @@
 ---
-description: Acelera el servicio en estado detenido.
+description: Marca el ritmo del servicio en estado detenido.
 ms.assetid: d7469643-bccc-4f55-b2fc-d2bc2e392d84
 title: Método StopService de la clase CIM_Service (administración de Hyper-V)
 ms.topic: reference
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f4eb354a48b074bad8adac4d5635e204844c31b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b36cab1054e99ac306fb1b21fe9f08e0820974a0883e90655a180b07035b7f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647593"
 ---
 # <a name="stopservice-method-of-the-cim_service-class-hyper-v-management"></a>Método StopService de la clase CIM_Service (administración de Hyper-V)
 
-Acelera el servicio en estado detenido.
+Marca el ritmo del servicio en estado detenido.
 
 > [!Note]
 >
-> La semántica de este método se superpone con el método **RequestStateChange** que se hereda de [**\_ EnabledLogicalElement CIM**](cim-enabledlogicalelement.md). Este método se mantiene porque se ha implementado de forma generalizada y su semántica simple de "detención" es conveniente para su uso.
+> La semántica de este método se superpone con **el método RequestStateChange** que se hereda de [**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md). Este método se mantiene porque se ha implementado ampliamente y su semántica simple de "detenerse" resulta práctica de usar.
 
  
 
@@ -45,7 +45,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,9 +54,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -65,7 +65,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_Servicio CIM**](cim-service.md)
+[**Servicio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

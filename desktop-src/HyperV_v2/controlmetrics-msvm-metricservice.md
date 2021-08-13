@@ -1,7 +1,7 @@
 ---
-description: Se utiliza para controlar la colección de métricas de un elemento o elementos administrados.
+description: Se usa para controlar la colección de métricas de un elemento o elementos administrados.
 ms.assetid: 3DC043ED-A790-4322-BF80-55961E9946C2
-title: Método ControlMetrics de la clase Msvm_MetricService
+title: Método ControlMetrics de la Msvm_MetricService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b12fbf71b860571bb3bb5ee06cb58483e782f479
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 051a08f261432c817bc0e56cab323c56cd11935c1541c40357b6b151a14f4074
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118645864"
 ---
-# <a name="controlmetrics-method-of-the-msvm_metricservice-class"></a>Método ControlMetrics de la \_ clase MetricService de MSVM
+# <a name="controlmetrics-method-of-the-msvm_metricservice-class"></a>Método ControlMetrics de la clase \_ Msvm MetricService
 
-Se utiliza para controlar la colección de métricas de un elemento o elementos administrados.
+Se usa para controlar la colección de métricas de un elemento o elementos administrados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,24 +41,24 @@ uint32 ControlMetrics(
 
 <dl> <dt>
 
-*Asunto* \[ de\]
+*Asunto* \[ En\]
 </dt> <dd>
 
-Instancia [**de \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) que identifica los elementos administrados para los que se recopilarán las métricas. Si este parámetro es **null**, se recopilarán las métricas de todos los elementos administrados asociados al parámetro de *definición* .
+Instancia [**de \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) que identifica los elementos administrados para los que se recopilarán las métricas. Si este parámetro es **Null,** se recopilarán las métricas de todos los elementos administrados asociados al parámetro *Definition.*
 
 </dd> <dt>
 
-*Definición* \[ de de\]
+*Definición* \[ En\]
 </dt> <dd>
 
-Una instancia de [**MSVM \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) que especifica qué métricas se van a recopilar. Si este parámetro es **null**, se recopilarán las métricas de todas las definiciones asociadas al elemento administrado identificado por el parámetro de *asunto* .
+Instancia [**de \_ BaseMetricDefinition de Msvm**](msvm-basemetricdefinition.md) que especifica qué métricas se recopilarán. Si este parámetro es **Null,** se recopilarán las métricas de todas las definiciones asociadas al elemento administrado identificado por el *parámetro Subject.*
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ de\]
+*MetricCollectionEnabled* \[ En\]
 </dt> <dd>
 
-Especifica la operación que se va a realizar en la colección de métricas. Debe ser uno de los valores siguientes.
+Especifica la operación que se realizará en la colección de métricas. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -86,7 +86,7 @@ Deshabilite la recopilación de métricas.
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-<span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Restablecer** (4)
+<span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Restablecimiento** (4)
 
 
 </dt> <dd>
@@ -104,7 +104,7 @@ Restablezca los valores de las métricas.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Proveedor reservado** (32768... 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -127,16 +127,16 @@ Este método devuelve uno de los valores siguientes.
 **Método reservado** (..)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Este método producirá un error en las instancias siguientes:
+Este método producirá un error en las siguientes instancias:
 
--   Los parámetros de *asunto* y *definición* son **null**.
--   Los parámetros de *asunto* y *definición* son no **null** y no hay una instancia de [**MSVM \_ MetricDefForME**](msvm-metricdefforme.md) que asocie las dos instancias.
--   El parámetro *Definition* es una referencia a una instancia de [**MSVM \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) que no está asociada con [**MSVM \_ MetricService**](msvm-metricservice.md) a [**MSVM \_ ServiceAffectsElement**](msvm-serviceaffectselement.md).
+-   Los *parámetros Subject* y *Definition* son **null.**
+-   Los *parámetros Subject* y *Definition* no son NULL y no hay una instancia de [**Msvm \_ MetricDefForME**](msvm-metricdefforme.md) que asocie las dos instancias.
+-   El *parámetro Definition* es una referencia a una instancia de [**Msvm \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) que no está asociada a [**Msvm \_ MetricService**](msvm-metricservice.md) a través de [**Msvm \_ ServiceAffectsElement.**](msvm-serviceaffectselement.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -144,10 +144,10 @@ Este método producirá un error en las instancias siguientes:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -156,7 +156,7 @@ Este método producirá un error en las instancias siguientes:
 
 <dl> <dt>
 
-[**MSVM \_ MetricService**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

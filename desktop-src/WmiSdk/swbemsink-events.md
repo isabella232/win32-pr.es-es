@@ -5,20 +5,20 @@ ms.tgt_platform: multiple
 title: Eventos SWbemSink
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3df601a8b586b34507108f17e2c4b0afd7f6eb8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea075c6de9e04f7b7ad40ff3a70525df4ae554332b4359ed3cfdb3b039b1f65a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118553992"
 ---
 # <a name="swbemsink-events"></a>Eventos SWbemSink
 
-El objeto [**SWbemSink**](swbemsink.md) expone los siguientes eventos.
+El [**objeto SWbemSink**](swbemsink.md) expone los siguientes eventos.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Evento alcompleto**](swbemsink-oncompleted.md)
+-   [**Evento OnCompleted**](swbemsink-oncompleted.md)
 -   [**Evento OnObjectPut**](swbemsink-onobjectput.md)
 -   [**Evento OnObjectReady**](swbemsink-onobjectready.md)
 -   [**Evento OnProgress**](swbemsink-onprogress.md)

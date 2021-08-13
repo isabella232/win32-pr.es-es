@@ -1,9 +1,9 @@
 ---
-title: ncacn_dnet_nsp atributo)
-description: La \_ \_ palabra clave ncacn dnet NSP identifica DECnet como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en aplicaciones nuevas.
+title: ncacn_dnet_nsp atributo
+description: La palabra clave ncacn \_ dnet \_ nsp identifica DECnet como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en nuevas aplicaciones.
 ms.assetid: 797251c1-c5d3-416b-8bc7-5b83bb7027e6
 keywords:
-- ncacn_dnet_nsp el atributo MIDL
+- ncacn_dnet_nsp atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6312aff15d3bdef85d1e37829d669ce1faa5fbb4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c4fa7448ff9d0cf3946ad3d0293ade19a5c2c0c407ca157d79c2c425f4a8ef6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642766"
 ---
-# <a name="ncacn_dnet_nsp-attribute"></a>\_ \_ atributo NSP de ncacn dnet
+# <a name="ncacn_dnet_nsp-attribute"></a>Atributo ncacn \_ dnet \_ nsp
 
-La palabra clave **ncacn \_ dnet \_ NSP** identifica DECnet como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en aplicaciones nuevas.
+La **palabra clave ncacn \_ dnet \_ nsp** identifica DECnet como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en nuevas aplicaciones.
 
 ``` syntax
 endpoint("ncacn_dnet_nsp:server-name[port-name]")
@@ -31,28 +31,28 @@ endpoint("ncacn_dnet_nsp:server-name[port-name]")
 
 <dl> <dt>
 
-*nombre del servidor* 
+*server-name* 
 </dt> <dd>
 
-Especifica el nombre o la dirección de Internet del servidor, o host, del equipo. El nombre es una cadena de caracteres.
+Especifica el nombre o la dirección de Internet del servidor o host del equipo. El nombre es una cadena de caracteres.
 
 </dd> <dt>
 
-*nombre del puerto* 
+*port-name* 
 </dt> <dd>
 
-Especifica un nombre de objeto de DECnet o un número de objeto. El nombre del objeto puede constar de hasta 16 caracteres. Los números de objeto pueden ir precedidos del signo de almohadilla ( \# ).
+Especifica un nombre de objeto de DECnet o un número de objeto. El nombre del objeto puede constar de hasta 16 caracteres. Los números de objeto pueden ir precedido por el signo de la pera ( \# ).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La sintaxis de la cadena de puerto de transporte DECnet, como todas las cadenas de puerto, se define independientemente de la especificación IDL. El compilador realiza algunas comprobaciones de sintaxis, pero no garantiza que la especificación del punto de conexión sea correcta. Es posible que se notifiquen algunos errores en tiempo de ejecución en lugar de en tiempo de compilación.
+La sintaxis de la cadena de puerto de transporte de DECnet, como todas las cadenas de puerto, se define independientemente de la especificación de IDL. El compilador realiza alguna comprobación de sintaxis, pero no garantiza que la especificación del punto de conexión sea correcta. Algunos errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 
 > [!Note]  
 > Esta familia de protocolos no se admite en Windows XP.
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
@@ -81,12 +81,12 @@ interface iface
 
 <dl> <dt>
 
-[**finales**](endpoint.md)
+[**Extremo**](endpoint.md)
 </dt> <dt>
 
-[**enlace de cadenas**](/windows/desktop/Rpc/string-binding)
+[**enlace de cadena**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

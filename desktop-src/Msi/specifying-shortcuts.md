@@ -1,34 +1,34 @@
 ---
-description: La tabla de accesos directos y las tablas relacionadas de la base de datos de instalación contienen información necesaria para instalar accesos directos. Vea el grupo tablas información de programas y editar accesos directos del instalador.
+description: La tabla de métodos abreviados y las tablas relacionadas de la base de datos de instalación contiene la información necesaria para instalar accesos directos. Vea el grupo Tablas de información del programa y Editar métodos abreviados del instalador.
 ms.assetid: 0f3adf78-e650-414f-b85d-b53b986eafda
 title: Especificar accesos directos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29edf10a51827880a67826320d7f8415e70ea52a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a67b43a104ee05b3711ac98395098acf9393faab8e046296e58d93df4d6b9218
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118624689"
 ---
 # <a name="specifying-shortcuts"></a>Especificar accesos directos
 
-La [tabla de accesos directos](shortcut-table.md) y las tablas relacionadas de la base de datos de instalación contienen información necesaria para instalar accesos directos. Vea el [Grupo tablas información de programas](program-information-tables-group.md) y [Editar accesos directos del instalador](editing-installer-shortcuts.md).
+La [tabla de métodos abreviados](shortcut-table.md) y las tablas relacionadas de la base de datos de instalación contiene la información necesaria para instalar accesos directos. Vea El grupo [de tablas de información del programa y](program-information-tables-group.md) la [edición de los métodos abreviados del instalador](editing-installer-shortcuts.md).
 
-En esta sección se agrega información que especifica los accesos directos anunciados y no anunciados para el ejemplo de Bloc de notas.
+En esta sección agregará información que especifica los accesos directos anunciados y no anunciados para el Bloc de notas ejemplo.
 
-Utilice el editor de base de datos para abrir MNP2000.msi y escriba los datos siguientes en la tabla de accesos directos.
+Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes en la tabla Acceso directo.
 
-[Tabla de acceso directo](shortcut-table.md)
+[Tabla de métodos abreviados](shortcut-table.md)
 
 
 
 | Acceso directo  | Directorio\_ | Nombre         | Componente\_ | Destino             | Argumentos | Descripción | Tecla de acceso rápido | Icono\_         | IconIndex | ShowCmd | WkDir |
 |-----------|-------------|--------------|-------------|--------------------|-----------|-------------|--------|----------------|-----------|---------|-------|
-| sBaseball | MENUDIR     | Baseball.txt | Baloncesto    | Baloncesto           |           |             |        | \_icon.exe Orca |           |         |       |
+| sBaseball | MENUDIR     | Baseball.txt | Béisbol    | Béisbol           |           |             |        | orca \_icon.exe |           |         |       |
 | sConcert  | MENUDIR     | Concert.txt  | Concierto     | \[\#Concert.txt\]  |           |             |        |                |           |         |       |
-| sDance    | MENUDIR     | Dance.txt    | Dance       | \[\#Dance.txt\]    |           |             |        |                |           |         |       |
-| sFootball | MENUDIR     | Football.txt | Balón    | \[\#Football.txt\] |           |             |        |                |           |         |       |
+| sDance    | MENUDIR     | Dance.txt    | Baile       | \[\#Dance.txt\]    |           |             |        |                |           |         |       |
+| sFootball | MENUDIR     | Football.txt | Fútbol    | \[\#Football.txt\] |           |             |        |                |           |         |       |
 | sHelp     | MENUDIR     | Help.txt     | Ayuda        | \[\#Help.txt\]     |           |             |        |                |           |         |       |
 | sJanuary  | MENUDIR     | January.txt  | January     | \[\#January.txt\]  |           |             |        |                |           |         |       |
 | sNewYears | MENUDIR     | NewYears.txt | NewYears    | \[\#NewYears.txt\] |           |             |        |                |           |         |       |
@@ -39,15 +39,15 @@ Utilice el editor de base de datos para abrir MNP2000.msi y escriba los datos si
 
  
 
-La instalación de ejemplo debe habilitar la instalación de un acceso directo anunciado para la característica béisbol. Esto requiere especificar una clave para la tabla de iconos en la \_ columna icono de la tabla de acceso directo. Para los fines de este ejemplo, puede copiar el icono del editor de base de datos Orca proporcionado con el SDK de Windows Installer. Exporte la [tabla de iconos](icon-table.md) de Orca.msi y, a continuación, combine esta tabla en la base de datos de MNP2000.msi mediante Orca u otra herramienta de combinación. Orca también crea un directorio denominado Icon en el directorio que contiene MNP2000.msi y agrega el archivo de datos binarios de icono Orca \_icon.exe. ibd. Vea la columna de datos en la tabla de iconos. La tabla de iconos completada debe tener el siguiente aspecto cuando se ve en orca.
+La instalación de ejemplo debe habilitar la instalación de un acceso directo anunciado para la característica Baseball. Esto requiere especificar una clave para la tabla Icono en la columna \_ Icono de la tabla Acceso directo. Para los fines de este ejemplo, puede copiar el icono del editor de bases de datos de Orca proporcionado con el SDK Windows Installer. Exporte [la tabla Icon](icon-table.md) Orca.msi y, a continuación, combine esta tabla en la base MNP2000.msi datos mediante Orca u otra herramienta de combinación. Orca también crea un directorio denominado Icon en el directorio que contiene MNP2000.msi y agrega el archivo de datos binarios de icono orca \_icon.exe.ibd. Vea la columna Datos en la tabla Icono. La tabla icono completada debe tener el siguiente aspecto cuando se ve en Orca.
 
 [Tabla de iconos](icon-table.md)
 
 
 
-| Nombre           | Datos            |
+| Nombre           | data            |
 |----------------|-----------------|
-| \_icon.exe Orca | \[Binary Data\] |
+| orca \_icon.exe | \[Binary Data\] |
 
 
 
@@ -59,7 +59,7 @@ La instalación de ejemplo debe habilitar la instalación de un acceso directo a
 
 <dl> <dt>
 
-[Editar accesos directos del instalador](editing-installer-shortcuts.md)
+[Edición de métodos abreviados del instalador](editing-installer-shortcuts.md)
 </dt> </dl>
 
  

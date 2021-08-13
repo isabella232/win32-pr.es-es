@@ -1,7 +1,7 @@
 ---
 description: Representa una colección de sistemas virtuales.
 ms.assetid: acf51beb-1103-43a4-8dc5-1a7f2a0482be
-title: Msvm_VirtualSystemCollection (clase)
+title: Msvm_VirtualSystemCollection clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a9746356744f2743a8d6656ef4c61044223be113
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04bb39e0c3ecb73facf09e962d2d189bd6ac59449908c0ed9e0214aa5551595e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644822"
 ---
-# <a name="msvm_virtualsystemcollection-class"></a>MSVM \_ VirtualSystemCollection (clase)
+# <a name="msvm_virtualsystemcollection-class"></a>Clase Msvm \_ VirtualSystemCollection
 
 Representa una colección de sistemas virtuales.
 
@@ -53,17 +53,17 @@ class Msvm_VirtualSystemCollection : CIM_CollectionOfMSEs
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemCollection** tiene estos tipos de miembros:
+La **clase Msvm \_ VirtualSystemCollection** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemCollection** tiene estas propiedades.
+La **clase \_ VirtualSystemCollection de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
-**Recopilación**
+**CollectionID**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -72,7 +72,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificación única del objeto de colección.
@@ -88,7 +88,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
 Nombre definido por el usuario para la colección. Tenga en cuenta que no se garantiza que sea único.
@@ -98,16 +98,16 @@ Nombre definido por el usuario para la colección. Tenga en cuenta que no se gar
 **FailedOverReplicationType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de conmutación por error que se realizó para la colección de sistemas virtuales.
+Tipo de conmutación por error que se realizó para la colección del sistema virtual.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703.
+> Se ha agregado Windows 10, versión 1703.
 
  
 
@@ -129,7 +129,7 @@ Tipo de conmutación por error que se realizó para la colección de sistemas vi
 
 <span id="Planned"></span><span id="planned"></span><span id="PLANNED"></span>
 
-**Planeada** (2)
+**Planeado** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -139,7 +139,7 @@ Tipo de conmutación por error que se realizó para la colección de sistemas vi
 **LastApplyConsistencyLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -148,7 +148,7 @@ Tipo de acceso: solo lectura
 Nivel de coherencia de la última diferencia aplicada.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703.
+> Se ha agregado Windows 10, versión 1703.
 
  
 
@@ -163,34 +163,34 @@ Nivel de coherencia de la última diferencia aplicada.
 
 <span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-<span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>**Coherente** con la aplicación (1)
+<span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>**Coherente con la** aplicación (1)
 
 
 </dt> <dd>
 
-La última diferencia aplicada indica un momento dado en el que el sistema virtual estaba en un estado coherente con la aplicación.
+La última diferencia aplicada indica un momento dado en el tiempo en el que el sistema virtual estaba en estado coherente con la aplicación.
 
 </dd> <dt>
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Coherencia de bloqueos** (2)
+<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Coherente con bloqueos** (2)
 
 
 </dt> <dd>
 
-La última diferencia aplicada indica un momento dado en el que el sistema virtual se encontraba en un estado coherente con el bloqueo.
+La última diferencia aplicada indica un momento dado en el tiempo en el que el sistema virtual estaba en estado coherente frente a bloqueos.
 
 </dd> <dt>
 
 <span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>
 
-<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Coherencia de bloqueos de grupo** (3)
+<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Coherencia de bloqueos de** grupo (3)
 
 
 </dt> <dd>
 
-La última diferencia aplicada indica un momento dado en el que el grupo tenía un estado coherente con el bloqueo.
+La última diferencia aplicada indica un momento dado en el tiempo en el que el grupo estaba en estado coherente con los bloqueos.
 
 </dd> </dl>
 
@@ -205,10 +205,10 @@ Tipo de datos: **DateTime**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La hora a la que se aplica la última replicación en la recuperación de la colección de sistemas virtuales.
+Hora a la que se aplica la última replicación en la recuperación de la colección del sistema virtual.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703.
+> Se ha agregado Windows 10, versión 1703.
 
  
 
@@ -217,7 +217,7 @@ La hora a la que se aplica la última replicación en la recuperación de la col
 **LastApplyVirtualMachineIds**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **Matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -226,7 +226,7 @@ Tipo de acceso: solo lectura
 Matriz de identificadores de máquina virtual que se aplicaron correctamente en el último ciclo de aplicación.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703.
+> Se ha agregado Windows 10, versión 1703.
 
  
 
@@ -235,16 +235,16 @@ Matriz de identificadores de máquina virtual que se aplicaron correctamente en 
 **ReplicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de replicación para la colección de sistemas virtuales.
+Tipo de replicación para la colección del sistema virtual.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703.
+> Se ha agregado Windows 10, versión 1703.
 
  
 
@@ -283,16 +283,16 @@ Tipo de replicación para la colección de sistemas virtuales.
 **ReplicationState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de replicación de la colección de sistemas virtuales.
+Estado de replicación de la colección del sistema virtual.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703.
+> Se ha agregado Windows 10, versión 1703.
 
  
 
@@ -314,14 +314,14 @@ Estado de replicación de la colección de sistemas virtuales.
 
 <span id="Waiting_to_complete_initial_replication"></span><span id="waiting_to_complete_initial_replication"></span><span id="WAITING_TO_COMPLETE_INITIAL_REPLICATION"></span>
 
-**Esperando para completar la replicación inicial** (2)
+**Esperando a completar la replicación inicial** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>
 
-**Replicando** (3)
+**Replicación** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -370,28 +370,28 @@ Estado de replicación de la colección de sistemas virtuales.
 
 <span id="Resynchronizing"></span><span id="resynchronizing"></span><span id="RESYNCHRONIZING"></span>
 
-Volver a **sincronizar** (10)
+**Resincronización** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Planned_failover_initiatedRepurpose_initiatedTest_failover_initiatedPartially_enabled"></span><span id="planned_failover_initiatedrepurpose_initiatedtest_failover_initiatedpartially_enabled"></span><span id="PLANNED_FAILOVER_INITIATEDREPURPOSE_INITIATEDTEST_FAILOVER_INITIATEDPARTIALLY_ENABLED"></span>
 
-**Conmutación por error InitiatedRepurpose initiatedTest** de conmutación por error initiatedPartially habilitada (11)
+**Conmutación por error planeada iniciadaRepurpose initiatedTest failover initiatedPartially enabled** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Partially_disabled"></span><span id="partially_disabled"></span><span id="PARTIALLY_DISABLED"></span>
 
-**Parcialmente deshabilitado** (12)
+**Deshabilitado parcialmente** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Partially_recovered"></span><span id="partially_recovered"></span><span id="PARTIALLY_RECOVERED"></span>
 
-**Parcialmente recuperado** (13)
+**Recuperada parcialmente** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -425,10 +425,10 @@ Volver a **sincronizar** (10)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -437,7 +437,7 @@ Volver a **sincronizar** (10)
 
 <dl> <dt>
 
-[**CollectionOfMSEs de CIM \_**](cim-collectionofmses.md)
+[**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md)
 </dt> </dl>
 
  

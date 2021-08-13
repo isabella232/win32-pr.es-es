@@ -1,28 +1,28 @@
 ---
-title: Accesibilidad de controles ActiveX sin ventanas
-description: En esta sección se describe cómo usar la API de accesibilidad de Windows para asegurarse de que se pueda tener acceso a los controles ActiveX sin ventanas de Microsoft.
+title: Accesibilidad de ActiveX control sin ventanas
+description: En esta sección se describe cómo usar el Windows API de accesibilidad para asegurarse de que los controles de microsoft ActiveX sin ventanas son accesibles.
 ms.assetid: 93CBCF20-DADF-4A63-BE60-F2A0D8810C62
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb0489cdd5de3ac34df361bfa3e7b3624ee18f3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3842dd6b9ec18b745e043841936dd811afd1580779d276290057c2fe6d2194cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563460"
 ---
-# <a name="windowless-activex-control-accessibility"></a>Accesibilidad de controles ActiveX sin ventanas
+# <a name="windowless-activex-control-accessibility"></a>Accesibilidad de ActiveX control sin ventanas
 
-En esta sección se describe cómo usar la API de accesibilidad de Windows para asegurarse de que se pueda tener acceso a los controles ActiveX sin ventanas de Microsoft.
+En esta sección se describe cómo usar el Windows API de accesibilidad para asegurarse de que los controles de microsoft ActiveX sin ventanas son accesibles.
 
-Windows 8 incluye nuevas interfaces de API de accesibilidad de Windows que simplifican la tarea de implementar la accesibilidad para controles ActiveX sin ventanas. La API incluye interfaces que se implementan en un control sin ventanas y en el contenedor de controles, lo que permite que el control sin ventanas y su contenedor funcionen juntos para proporcionar información de accesibilidad sobre el control sin ventanas. La API admite los siguientes escenarios:
+Windows 8 nuevas interfaces Windows API de accesibilidad que simplifican la tarea de implementar la accesibilidad para controles de ActiveX sin ventanas. La API incluye interfaces que se implementan en un control sin ventanas y en el contenedor de controles, lo que permite que el control sin ventanas y su contenedor funcionen conjuntamente para proporcionar información de accesibilidad sobre el control sin ventanas. La API admite los siguientes escenarios:
 
--   Microsoft Active Accessibility controles sin ventanas hospedados en un contenedor de control de Microsoft Active Accessibility.
--   Microsoft Active Accessibility controles sin ventanas hospedados en un contenedor de controles de automatización de la interfaz de usuario de Microsoft.
--   Controles sin ventana de automatización de la interfaz de usuario hospedados en un contenedor de control de Microsoft Active Accessibility.
--   Controles sin ventana de automatización de la interfaz de usuario hospedados en un contenedor de control de UI Automation.
+-   Microsoft Active Accessibility controles sin ventanas hospedados en un contenedor Microsoft Active Accessibility control.
+-   Microsoft Active Accessibility controles sin ventanas hospedados en un contenedor de controles Automatización de la interfaz de usuario Microsoft.
+-   Automatización de la interfaz de usuario controles sin ventanas hospedados en un contenedor Microsoft Active Accessibility control.
+-   Automatización de la interfaz de usuario controles sin ventanas hospedados en un contenedor Automatización de la interfaz de usuario control.
 
-En la tabla siguiente se enumeran las interfaces que admiten los controles ActiveX sin ventanas y se identifican los objetos que implementan las interfaces.
+En la tabla siguiente se enumeran las interfaces que admiten controles de ActiveX sin ventanas e identifica los objetos que implementan las interfaces.
 
 
 
@@ -34,15 +34,15 @@ En la tabla siguiente se enumeran las interfaces que admiten los controles Activ
 
 
 
- 
+ 
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Cómo usar la automatización de la interfaz de usuario para hacer que un control ActiveX sin ventanas sea accesible](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
--   [Cómo usar MSAA para hacer que un control ActiveX sin ventanas sea accesible](use-msaa-to-make-an-windowless-activex-control-accessible.md)
--   [Cómo hospedar un control ActiveX sin ventanas de automatización de la interfaz de usuario](host-a-ui-automation-windowless-activex-control.md)
--   [Cómo hospedar un control ActiveX sin ventanas de MSAA](host-an-msaa-windowless-activex-control.md)
+-   [Cómo usar Automatización de la interfaz de usuario para que un control de ActiveX sin ventanas sea accesible](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
+-   [Cómo usar MSAA para hacer que un control de ActiveX sin ventanas sea accesible](use-msaa-to-make-an-windowless-activex-control-accessible.md)
+-   [Cómo hospedar un control Automatización de la interfaz de usuario sin ActiveX ventana](host-a-ui-automation-windowless-activex-control.md)
+-   [Cómo hospedar un control de ActiveX MSAA](host-an-msaa-windowless-activex-control.md)
 
- 
+ 
 
- 
+ 

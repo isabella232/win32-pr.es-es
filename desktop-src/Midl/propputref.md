@@ -1,9 +1,9 @@
 ---
 title: propputref (atributo)
-description: El atributo \ PROPPUTREF \ especifica una función de configuración de propiedades que usa una referencia en lugar de un valor.
+description: El atributo \ propputref\ especifica una función de configuración de propiedades que usa una referencia en lugar de un valor.
 ms.assetid: 84f1cd08-3c42-4a6d-bb1d-0bfd3f4c33f2
 keywords:
-- atributo PROPPUTREF MIDL
+- atributo propputref MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ead5ccf7f9dc6a59580b7c3e3576f3c7503ccafc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 97e80b0baa4f78537142043b374c206ade0f3d51d7ca30c2f57e1c4ae4e9b695
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641968"
 ---
 # <a name="propputref-attribute"></a>propputref (atributo)
 
-El atributo **\[ PROPPUTREF \]** especifica una función de configuración de propiedades que usa una referencia en lugar de un valor.
+El **\[ atributo \] propputref** especifica una función de configuración de propiedades que usa una referencia en lugar de un valor.
 
 ``` syntax
 [propputref [,optional-property-attributes]] return-type function-name( parameters);
@@ -31,14 +31,14 @@ El atributo **\[ PROPPUTREF \]** especifica una función de configuración de pr
 
 <dl> <dt>
 
-*Optional-Property-Attributes* 
+*optional-property-attributes* 
 </dt> <dd>
 
 Cero o más atributos de propiedad.
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
 Tipo de los datos devueltos por el procedimiento remoto.
@@ -61,13 +61,13 @@ Cero o más parámetros para el procedimiento remoto.
 
 ## <a name="remarks"></a>Observaciones
 
-Una función que tenga el atributo **\[ PROPPUTREF \]** también debe tener, como el último parámetro, un puntero con el atributo **\[** [**in**](in.md) **\]** .
+Una función que tenga el **\[ atributo propputref \]** también debe tener, como último parámetro, un puntero que tenga el atributo **\[** [**in.**](in.md) **\]**
 
-La propiedad debe tener el mismo nombre que la función. Como máximo, **\[** [](propget.md) **\]** **\[** [](propput.md) **\]** se puede especificar uno de los atributos propget, PROPPUT y **\[ PROPPUTREF \]** para una función.
+La propiedad debe tener el mismo nombre que la función. Como máximo, se puede especificar uno de los atributos **\[** [**propget**](propget.md), propput y **\]** **\[** [](propput.md) **\]** **\[ propputref \]** para una función.
 
 ### <a name="flags"></a>Marcas
 
-INVOCAr \_ PROPERTYPUTREF
+INVOKE \_ PROPERTYPUTREF
 
 ## <a name="examples"></a>Ejemplos
 
@@ -90,24 +90,24 @@ interface InMyFace : IDispatch
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**propget**](propget.md)
 </dt> <dt>
 
-[**PROPPUT**](propput.md)
+[**propput**](propput.md)
 </dt> <dt>
 
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

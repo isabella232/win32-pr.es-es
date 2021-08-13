@@ -1,9 +1,9 @@
 ---
-title: ncacn_at_dsp atributo)
-description: La \_ \_ palabra clave ncacn at DSP identifica AppleTalk DSP como la familia de protocolos para el extremo. Esta familia de protocolos está obsoleta y no debe usarse en aplicaciones nuevas.
+title: ncacn_at_dsp atributo
+description: La palabra clave ncacn \_ at dsp identifica el DSP de \_ AppleTalk como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en nuevas aplicaciones.
 ms.assetid: 3165e4f6-8869-4eff-af65-53e85f78a949
 keywords:
-- ncacn_at_dsp el atributo MIDL
+- ncacn_at_dsp atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9149cd7270c2e82e760c24b4af1fed54c2c08622
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cb021f9212f1034f0b3c235ad77d9ad270325af914887252494316f9ae1c41b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642776"
 ---
-# <a name="ncacn_at_dsp-attribute"></a>ncacn \_ en el \_ atributo DSP
+# <a name="ncacn_at_dsp-attribute"></a>ncacn \_ en el atributo \_ dsp
 
-La palabra clave **ncacn \_ at \_ DSP** identifica AppleTalk DSP como la familia de protocolos para el extremo. Esta familia de protocolos está obsoleta y no debe usarse en aplicaciones nuevas.
+La **palabra clave ncacn \_ at \_ dsp** identifica el DSP de AppleTalk como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en nuevas aplicaciones.
 
 ``` syntax
 endpoint("ncacn_at_dsp:[port-name]")
@@ -31,7 +31,7 @@ endpoint("ncacn_at_dsp:[port-name]")
 
 <dl> <dt>
 
-*nombre del puerto* 
+*port-name* 
 </dt> <dd>
 
 Especifica una cadena de caracteres de hasta 22 bytes de longitud.
@@ -40,7 +40,7 @@ Especifica una cadena de caracteres de hasta 22 bytes de longitud.
 
 ## <a name="remarks"></a>Observaciones
 
-La sintaxis de la cadena de puerto de DSP de AppleTalk, como todas las cadenas de puerto, se define mediante la implementación de transporte y es independiente de la especificación de IDL. El compilador MIDL realiza una comprobación de sintaxis limitada, pero no garantiza que la especificación del punto de conexión sea correcta. Es posible que se notifiquen algunas clases de errores en tiempo de ejecución en lugar de en tiempo de compilación.
+La sintaxis de la cadena de puerto de DSP de AppleTalk, como todas las cadenas de puerto, se define mediante la implementación de transporte y es independiente de la especificación de IDL. El compilador MIDL realiza una comprobación de sintaxis limitada, pero no garantiza que la especificación del punto de conexión sea correcta. Algunas clases de errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -60,15 +60,15 @@ interface iface
 
 <dl> <dt>
 
-[**finales**](endpoint.md)
+[**Extremo**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**enlace de cadenas**](/windows/desktop/Rpc/string-binding)
+[**enlace de cadena**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

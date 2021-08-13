@@ -1,7 +1,7 @@
 ---
-description: La propiedad FeatureUsageCount es una propiedad de solo lectura que devuelve el número de veces que se ha utilizado la característica.
+description: La propiedad FeatureUsageCount es una propiedad de solo lectura que devuelve el número de veces que se ha usado la característica.
 ms.assetid: 70171e22-d73a-4718-a360-df9d1722761b
-title: Propiedad Installer. FeatureUsageCount
+title: Installer.FeatureUsageCount, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: fbacb6b6fd5dc4d31d7c727d719e1253969c0d43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f0f8444909d07655949cd35d060eb455e5a153fc2b897e757c2fdde2d1d731d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631204"
 ---
-# <a name="installerfeatureusagecount-property"></a>Propiedad Installer. FeatureUsageCount
+# <a name="installerfeatureusagecount-property"></a>Installer.FeatureUsageCount, propiedad
 
-La propiedad **FeatureUsageCount** es una propiedad de solo lectura que devuelve el número de veces que se ha utilizado la característica.
+La **propiedad FeatureUsageCount** es una propiedad de solo lectura que devuelve el número de veces que se ha usado la característica.
 
 Esta propiedad es de solo lectura.
 
@@ -39,7 +39,7 @@ propVal = Installer.FeatureUsageCount
 
 ## <a name="remarks"></a>Observaciones
 
-El uso de los métodos [**UseFeature**](installer-usefeature.md), [**ProvideComponent**](installer-providecomponent.md) o [**ProvideQualifiedComponent**](installer-providequalifiedcomponent.md) o sus equivalentes de API en la característica especificada incrementa esta propiedad.
+El uso de [**los métodos UseFeature**](installer-usefeature.md), [**ProvideComponent**](installer-providecomponent.md) o [**ProvideQualifiedComponent**](installer-providequalifiedcomponent.md) o sus equivalentes de API en la característica especificada incrementa esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ El uso de los métodos [**UseFeature**](installer-usefeature.md), [**ProvideComp
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

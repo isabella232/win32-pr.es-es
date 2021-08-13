@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de BN_KILLFOCUS (Winuser. h)
-description: Se envía cuando un botón pierde el foco del teclado. El botón debe tener el estilo de notificación BS \_ para enviar este código de notificación. La ventana primaria del botón recibe este código de notificación a través del \_ mensaje de comando de WM.
+title: BN_KILLFOCUS de notificación (Winuser.h)
+description: Se envía cuando un botón pierde el foco del teclado. El botón debe tener el estilo BS \_ NOTIFY para enviar este código de notificación. La ventana primaria del botón recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: 740154ba-47fd-4084-8b86-6166f1e1b39f
 keywords:
-- BN_KILLFOCUS controles de código de notificación de Windows
+- BN_KILLFOCUS código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3fb6737d88ccddedbba6db58ffd0f713da7a8a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f312ba2282c72b7db30c170b44528bd469591bbb0a4b4a2e14bb797d2be67f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674091"
 ---
-# <a name="bn_killfocus-notification-code"></a>Código de notificación de KILLFOCUS de BN \_
+# <a name="bn_killfocus-notification-code"></a>Código de notificación KILLFOCUS de BN \_
 
-Se envía cuando un botón pierde el foco del teclado. El botón debe tener el [**estilo \_ de notificación BS**](button-styles.md) para enviar este código de notificación.
+Se envía cuando un botón pierde el foco del teclado. El botón debe tener el estilo [**BS \_ NOTIFY**](button-styles.md) para enviar este código de notificación.
 
-La ventana primaria del botón recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+La ventana primaria del botón recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -44,7 +44,7 @@ BN_KILLFOCUS
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del botón. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del botón. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -61,9 +61,9 @@ Identificador del botón.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Identificador del botón.
 
 <dl> <dt>
 
-[BN ( \_ SETFOCUS)](bn-setfocus.md)
+[BN \_ SETFOCUS](bn-setfocus.md)
 </dt> </dl>
 
  

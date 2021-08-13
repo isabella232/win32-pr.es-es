@@ -4,27 +4,27 @@ description: En el ejemplo siguiente se muestra cómo llamar a la función WNetG
 ms.assetid: ce57fecb-8b14-4514-a3fd-45d7ef6eee89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c50c0d46e9ac2e520f7be15812b2f541fd3e588f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90a881d452c6aa9eac5eea85d4ef0e9ddce83524f001294d2a6d6d6307f5ff1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566898"
 ---
 # <a name="determining-the-location-of-a-share"></a>Determinar la ubicación de un recurso compartido
 
 En el ejemplo siguiente se muestra cómo llamar a la función [**WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea) para determinar la ubicación de un recurso compartido en una unidad redirigida.
 
-En primer lugar, el ejemplo de código llama a la función **WNetGetUniversalName** , especificando el nivel de información del [**nombre universal para recuperar un puntero a una cadena \_ \_**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) de nombre UNC (Convención de nomenclatura universal) para el recurso. Después, el ejemplo llama a **WNetGetUniversalName** por segunda vez, especificando el nivel de información del [**nombre remoto para recuperar dos cadenas \_ \_**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) de información de conexión de red adicionales. Si las llamadas se realizan correctamente, el ejemplo imprime la ubicación del recurso compartido.
+En primer lugar, el ejemplo de código llama a la función **WNetGetUniversalName** y especifica el nivel de información [**DE \_ \_ INFORMACIÓN**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) DE NOMBRE UNIVERSAL para recuperar un puntero a una cadena de nombre de convención de nomenclatura universal (UNC) para el recurso. A continuación, el ejemplo llama a **WNetGetUniversalName** una segunda vez, especificando el nivel de información [**REMOTE NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) para recuperar dos cadenas de información de conexión de red adicionales. Si las llamadas son correctas, el ejemplo imprime la ubicación del recurso compartido.
 
-Para probar el siguiente ejemplo de código, realice los pasos siguientes:
+Para probar el ejemplo de código siguiente, realice los pasos siguientes:
 
-1.  Asigne al código el nombre GetUni. cpp.
+1.  Asigne al ejemplo de código el nombre GetUni.cpp.
 2.  Agregue el ejemplo a una aplicación de consola denominada GetUni.
-3.  Vincule las bibliotecas shell32. lib, MPR. lib y NetApi32. lib a la lista de bibliotecas del compilador.
-4.  En el símbolo del sistema, cambie al directorio GetUni
-5.  Compile GetUni. cpp.
-6.  Ejecute el archivo GetUni.exe seguido de una letra de unidad y dos puntos, como en este ejemplo:
+3.  Vincule las bibliotecas Shell32.lib, Mpr.lib y NetApi32.lib a la lista de bibliotecas del compilador.
+4.  En el símbolo del sistema, cambie al directorio GetUni.
+5.  Compile GetUni.cpp.
+6.  Ejecute el archivo GetUni.exe seguido de una letra de unidad y dos puntos, de la siguiente manera:
 
     **GetUni H:\\**
 
@@ -95,6 +95,6 @@ void main( int argc, char *argv[] )
 
 
 
- 
+ 
 
- 
+ 

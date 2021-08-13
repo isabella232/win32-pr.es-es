@@ -1,7 +1,7 @@
 ---
-description: El \_ método get FullScreenMode recupera el modo de pantalla completa actual.
+description: El método \_ get FullScreenMode recupera el modo de pantalla completa actual.
 ms.assetid: 351af361-5cfd-4e82-bd8a-92f629bd270d
-title: Método CBaseControlWindow.get_FullScreenMode (Ctlutil. h)
+title: CBaseControlWindow.get_FullScreenMode método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc77b43db2bb420e6cfe2eace44e96e1ab43b0cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cebd74fd51551249c339100ac2dd3eda4a171cc316cca575f27f5194480978ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660538"
 ---
-# <a name="cbasecontrolwindowget_fullscreenmode-method"></a>CBaseControlWindow. Get \_ FullScreenMode (método)
+# <a name="cbasecontrolwindowget_fullscreenmode-method"></a>Método CBaseControlWindow.get \_ FullScreenMode
 
 El `get_FullScreenMode` método recupera el modo de pantalla completa actual.
 
@@ -51,11 +51,11 @@ Puntero al modo de pantalla completa actual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función miembro devuelve E \_ NOTIMPL de forma predeterminada. Esto informa al distribuidor del complemento de [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) de que este representador no implementa un representador de pantalla completa.
+Esta función miembro devuelve E \_ NOTIMPL de forma predeterminada. Esto informa al distribuidor del complemento [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) de que este representador no implementa un representador de pantalla completa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro devuelve E \_ NOTIMPL de forma predeterminada. Esto inform
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro devuelve E \_ NOTIMPL de forma predeterminada. Esto inform
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Postal-Address atributo)
-description: Dirección de correo para el objeto.
+title: Postal-Address atributo
+description: Dirección de correo del objeto.
 ms.assetid: 85e96b88-8e58-4916-a333-59e3d4ed8025
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Postal-Address
-- postalAddress esquema de AD de atributos
+- Postal-Address esquema de AD de atributo
+- Esquema de AD del atributo postalAddress
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c20616668546ae47af83620000495e482e5b778
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4cfc8aa9b3dbdd1a91ed8a55f55a295c10353f88e6e7e01a852481ddb68163b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682398"
 ---
-# <a name="postal-address-attribute"></a>Postal-Address atributo)
+# <a name="postal-address-attribute"></a>Postal-Address atributo
 
-Dirección de correo para el objeto.
+Dirección de correo del objeto.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------------------|
 | CN                | Postal-Address                                                              |
-| Nombre para mostrar de LDAP | postalAddress                                                               |
-| Tamaño              | \-                                                                          |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                      |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que se debe cambiar la dirección. |
+| Ldap-Display-Name | postalAddress                                                               |
+| Size              | \-                                                                          |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                      |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que la dirección necesita cambiar. |
 | Attribute-Id      | 2.5.4.16                                                                    |
-| System-ID-GUID    | bf9679fc-0de6-11d0-a285-00aa003049e2                                        |
+| System-Id-Guid    | bf9679fc-0de6-11d0-a285-00aa003049e2                                        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                 |
 
 
@@ -44,7 +44,7 @@ Dirección de correo para el objeto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Dirección de correo para el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                              |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                           |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                           |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                           |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                            |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                      |
-| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol de la organización**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> |
+| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol organizativo**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> |
 
 
 
@@ -77,34 +77,34 @@ Dirección de correo para el objeto.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol de la organización**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol organizativo**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                               |
+| Id. de vínculo                | \-                                                                                                               |
 | MAPI-Id                | 0x810C                                                                                                           |
 | System-Only            | False                                                                                                            |
-| Tiene un único valor       | False                                                                                                            |
+| Es de un solo valor       | False                                                                                                            |
 | Está indexado             | False                                                                                                            |
 | En el catálogo global      | False                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                     |
 | Range-Lower            | 1                                                                                                                |
 | Range-Upper            | 4096                                                                                                             |
 | Search-Flags           | 0x00000010                                                                                                       |
@@ -119,18 +119,18 @@ Dirección de correo para el objeto.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol de la organización**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol organizativo**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona con residencia**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Dirección de correo para el objeto.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol de la organización**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol organizativo**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona con residencia**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Dirección de correo para el objeto.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol de la organización**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol organizativo**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Dirección de correo para el objeto.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol de la organización**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Clases usadas en        | [**Organización**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Rol organizativo**](c-organizationalrole.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Persona residencial**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 

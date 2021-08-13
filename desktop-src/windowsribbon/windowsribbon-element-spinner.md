@@ -3,7 +3,7 @@ title: Elemento Spinner
 description: Representa un control Spinner.
 ms.assetid: 6a174ec9-0fde-4171-a363-0e330ac31a8b
 keywords:
-- Cinta de opciones de Windows del elemento Spinner
+- Cinta de opciones del Windows spinner
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d1ec2e074271e125199ddfd4ff8fac7b2af80c33
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 847806e395998f8bc82c302f4403c5bc2b651323ec6c7089803bc66e5f18dc4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439520"
 ---
 # <a name="spinner-element"></a>Elemento Spinner
 
@@ -46,7 +46,7 @@ Representa un [control Spinner.](windowsribbon-controls-spinner.md)
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -81,7 +81,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -91,7 +91,7 @@ Puede producirse una o varias veces para cada [**elemento ControlGroup**](window
 
 En el ejemplo siguiente se muestra el marcado básico para [spinner.](windowsribbon-controls-spinner.md)
 
-En esta sección de código se muestran las declaraciones de comando de **spinner,** con un elemento [**Group**](windowsribbon-element-group.md) que funciona como contenedor primario para el **elemento Spinner.**
+En esta sección de código se muestran las declaraciones De comando de **spinner,** con un elemento [**Group**](windowsribbon-element-group.md) que funciona como contenedor primario para el **elemento Spinner.**
 
 
 ```XML
@@ -109,7 +109,7 @@ En esta sección de código se muestran las declaraciones de comando de **spinne
 
 
 
-En esta sección de código se muestran las declaraciones de control **Spinner.**
+En esta sección de código se muestran las declaraciones del control **Spinner.**
 
 
 ```XML

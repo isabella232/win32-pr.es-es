@@ -1,5 +1,5 @@
 ---
-title: Método de restablecimiento de IEnumBackgroundCopyFiles (Deliveryoptimization.h)
+title: Método Reset de IEnumBackgroundCopyFiles (Deliveryoptimization.h)
 description: 'Método IEnumBackgroundCopyFiles::Reset: restablece la secuencia de enumeración al principio.'
 ms.assetid: 6A303069-105C-4053-A8C5-2ECF60E789DE
 keywords:
@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d6800095d0a6f20ef8b632830a224d4da27356bf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bcd0fc46d1106feb553c77727f979da1e3002dc2530f1bb37d8c345220c264b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118542012"
 ---
 # <a name="ienumbackgroundcopyfilesreset-method"></a>IEnumBackgroundCopyFiles::Reset (Método)
 
@@ -49,11 +49,11 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1709 solo para \[ aplicaciones de escritorio\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Windows Server, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
@@ -61,7 +61,7 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

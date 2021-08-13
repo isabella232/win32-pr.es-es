@@ -1,27 +1,27 @@
 ---
-title: Interfaces QMGR
-description: Use las siguientes interfaces de administrador de cola (QMGR) para descargar archivos y supervisar trabajos en la cola de descarga.
+title: QMGR Interfaces
+description: Use las siguientes interfaces del Administrador de colas (QMGR) para descargar archivos y supervisar trabajos dentro de la cola de descarga.
 ms.assetid: b5b59d4f-fa18-4225-8b6f-5d4033c61650
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51cc571dcc5bbf182b3f715ee34bb6c3e94b5502
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a17bd3c27fad81416b916b52b055bc879b44f251113d43b6118e179b609762fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679999"
 ---
-# <a name="qmgr-interfaces"></a>Interfaces QMGR
+# <a name="qmgr-interfaces"></a>QMGR Interfaces
 
-\[Las interfaces del administrador de colas (QMGR) están disponibles para su uso en los sistemas operativos especificados en la sección requisitos de un tema. Podrán modificarse o no estar disponibles en versiones posteriores. En su lugar, use las [interfaces de bits](bits-interfaces.md).\]
+\[Las interfaces de Queue Manager (QMGR) están disponibles para su uso en los sistemas operativos especificados en la sección Requisitos de un tema. Podrán modificarse o no estar disponibles en versiones posteriores. En su lugar, use [las interfaces bits](bits-interfaces.md).\]
 
-Use las siguientes interfaces de administrador de cola (QMGR) para descargar archivos y supervisar trabajos en la cola de descarga.
+Use las siguientes interfaces del Administrador de colas (QMGR) para descargar archivos y supervisar trabajos dentro de la cola de descarga.
 
 
 
 | Interfaz                                                                 | Descripción                                                                                                                                                   |
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IBackgroundCopyCallback1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopycallback1)<br/>   | Implemente para recibir una notificación cuando se produzcan eventos.<br/>                                                                                               |
+| [**IBackgroundCopyCallback1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopycallback1)<br/>   | Implemente para recibir notificaciones cuando se produzcan eventos.<br/>                                                                                               |
 | [**IBackgroundCopyGroup**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopygroup)<br/>           | Use para administrar el grupo. Por ejemplo, agregue un trabajo al grupo, establezca las propiedades del grupo e inicie y detenga el grupo en la cola de descarga.<br/> |
 | [**IBackgroundCopyJob1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopyjob1)<br/>             | Use para agregar archivos al trabajo y recuperar el estado del trabajo.<br/>                                                                                         |
 | [**IBackgroundCopyQMgr**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopyqmgr)<br/>             | Use para crear un nuevo grupo, recuperar un grupo existente o enumerar todos los grupos de la cola.<br/>                                                       |

@@ -1,9 +1,9 @@
 ---
-title: modificador/o
-description: El modificador/o redirige la salida, como mensajes de error y advertencias, de la salida estándar al archivo especificado.
+title: Modificador /o
+description: El modificador /o redirige la salida, como mensajes de error y advertencias, desde la salida estándar al archivo especificado.
 ms.assetid: 68398a38-bda6-499a-a4ee-6e90937eccd0
 keywords:
-- /o modificador MIDL
+- /o switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9173b13190d6c317e03b0c72f36a7f4886b2e976
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2b6fe1f68e0b225c3ede40bb83389c226f503293c8b3e98d3fc6e8b8456471f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643907"
 ---
-# <a name="o-switch"></a>modificador/o
+# <a name="o-switch"></a>Modificador /o
 
-El modificador **/o** redirige la salida, como mensajes de error y advertencias, de la salida estándar al archivo especificado.
+El **modificador /o** redirige la salida, como mensajes de error y advertencias, desde la salida estándar al archivo especificado.
 
 ``` syntax
 midl /o outputfile
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
-*ArchivoDeSalida* 
+*outputfile* 
 </dt> <dd>
 
 Especifica el nombre del archivo al que el compilador MIDL redirigirá la salida, como mensajes de error y advertencias.
@@ -42,12 +42,12 @@ Especifica el nombre del archivo al que el compilador MIDL redirigirá la salida
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

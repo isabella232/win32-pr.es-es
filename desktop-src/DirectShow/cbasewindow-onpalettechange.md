@@ -1,7 +1,7 @@
 ---
 description: El método OnPaletteChange controla los mensajes de cambio de paleta.
 ms.assetid: 2abae4f1-fbd0-4a32-8772-012fa96b6d6c
-title: Método CBaseWindow. OnPaletteChange (Winutil. h)
+title: Método CBaseWindow.OnPaletteChange (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9abcb2d9f5cdc875f70f5c1db1fd2f625ce911f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c881c519706ca0288847a7dc603cf513a99cdd76e4c83f0e53bec16df840e509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657958"
 ---
-# <a name="cbasewindowonpalettechange-method"></a>CBaseWindow. OnPaletteChange, método
+# <a name="cbasewindowonpalettechange-method"></a>Método CBaseWindow.OnPaletteChange
 
 El `OnPaletteChange` método controla los mensajes de cambio de paleta.
 
@@ -43,17 +43,17 @@ virtual LRESULT OnPaletteChange(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
 
 </dd> <dt>
 
-*Message* 
+*Mensaje* 
 </dt> <dd>
 
-Identificador de mensaje.
+Identificador del mensaje.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Devuelve 0 si se procesó el mensaje o 1 si no se procesó el mensaje.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método controla \_ los mensajes de WM PALETTECHANGED y WM \_ QUERYNEWPALETTE. Llama al método [**CBaseWindow::D orealisepalette**](cbasewindow-dorealisepalette.md) para obtener la nueva paleta.
+Este método controla los mensajes \_ WM PALETTECHANGED y WM \_ QUERYNEWPALETTE. Llama al [**método CBaseWindow::D oRealisePalette**](cbasewindow-dorealisepalette.md) para realizar la nueva paleta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Este método controla \_ los mensajes de WM PALETTECHANGED y WM \_ QUERYNEWPALET
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Este método controla \_ los mensajes de WM PALETTECHANGED y WM \_ QUERYNEWPALET
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

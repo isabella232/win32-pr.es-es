@@ -1,11 +1,11 @@
 ---
-title: atributo MS-IIS-FTP-root
-description: Este atributo determina el recurso compartido de servidor de archivos. Se usa junto con MS-IIS-FTP-DIR para determinar el directorio particular del usuario FTP.
+title: Atributo ms-IIS-FTP-Root
+description: Este atributo determina el recurso compartido del servidor de archivos. Se usa junto con ms-IIS-FTP-Dir para determinar el directorio principal del usuario FTP.
 ms.assetid: b86dcafb-0b0d-4225-924c-690f739092a8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-IIS-FTP-root
-- msIIS-FTPRoot atributo AD Schema
+- Esquema de AD del atributo ms-IIS-FTP-Root
+- Esquema de AD del atributo msIIS-FTPRoot
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7c55980b8b08865889f7567fa6bdb4dcf7bde1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aa4def81aa39c9df5aaa336a05514ab4581aa14533917fad008fc9c49d32d13e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682529"
 ---
-# <a name="ms-iis-ftp-root-attribute"></a>atributo MS-IIS-FTP-root
+# <a name="ms-iis-ftp-root-attribute"></a>Atributo ms-IIS-FTP-Root
 
-Este atributo determina el recurso compartido de servidor de archivos. Se usa junto con MS-IIS-FTP-DIR para determinar el directorio particular del usuario FTP.
+Este atributo determina el recurso compartido del servidor de archivos. Se usa junto con ms-IIS-FTP-Dir para determinar el directorio principal del usuario FTP.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| CN                | MS-IIS-FTP-root                                                                                                                 |
-| Nombre para mostrar de LDAP | msIIS-FTPRoot                                                                                                                   |
-| Tamaño              | 30-50 caracteres (15-25 caracteres Unicode para cada propiedad)                                                                   |
-| Actualizar privilegio  | Administrador de dominio & sistema local                                                                                             |
-| Frecuencia de actualización  | Esta propiedad se establece cuando el administrador crea el sitio web y establece el aislamiento FTP. Rara vez va a cambiar después de eso. |
+| CN                | ms-IIS-FTP-Root                                                                                                                 |
+| Ldap-Display-Name | msIIS-FTPRoot                                                                                                                   |
+| Size              | Entre 30 y 50 caracteres (entre 15 y 25 caracteres Unicode para cada propiedad)                                                                   |
+| Privilegio actualizar  | Administrador de dominio & sistema local                                                                                             |
+| Frecuencia de actualización  | Esta propiedad se establece cuando el administrador crea el sitio web y establece el aislamiento ftp. Rara vez cambiará después de eso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1785                                                                                                         |
-| System-ID-GUID    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
+| System-Id-Guid    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
 
 
@@ -54,18 +54,18 @@ Este atributo determina el recurso compartido de servidor de archivos. Se usa ju
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Este atributo determina el recurso compartido de servidor de archivos. Se usa ju
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Este atributo determina el recurso compartido de servidor de archivos. Se usa ju
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Este atributo determina el recurso compartido de servidor de archivos. Se usa ju
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -138,13 +138,13 @@ Este atributo determina el recurso compartido de servidor de archivos. Se usa ju
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |

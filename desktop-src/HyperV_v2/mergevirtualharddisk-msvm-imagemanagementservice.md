@@ -1,7 +1,7 @@
 ---
-description: Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales principales de la cadena.
+description: Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios en la cadena.
 ms.assetid: 10633176-F0C3-4CA0-8E7B-2B11FF93B0EA
-title: Método MergeVirtualHardDisk de la clase Msvm_ImageManagementService
+title: Método MergeVirtualHardDisk de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 347e11d55357a8b3366aeb09badc53c1afad9e01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa9867222cf27e6ca23a4d96a04a6b94b558e7c043f182fdf8d8331ad73010c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644877"
 ---
-# <a name="mergevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método MergeVirtualHardDisk de la \_ clase ImageManagementService de MSVM
+# <a name="mergevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método MergeVirtualHardDisk de la clase \_ Msvm ImageManagementService
 
-Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales principales de la cadena. Vea la sección Comentarios para conocer las restricciones de uso de este método.
+Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios en la cadena. Vea Comentarios sobre las restricciones de uso para este método.
 
 Si el usuario que ejecuta esta función no tiene permiso para actualizar las máquinas virtuales, se producirá un error en esta función.
 
@@ -43,36 +43,36 @@ uint32 MergeVirtualHardDisk(
 
 <dl> <dt>
 
-*SourcePath* \[ de\]
+*SourcePath* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Ruta de acceso completa que especifica la ubicación del archivo de disco duro virtual que se va a combinar.
+Ruta de acceso completa que especifica la ubicación del archivo de disco duro virtual que se combinará.
 
 </dd> <dt>
 
-*DestinationPath* \[ de\]
+*DestinationPath* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Ruta de acceso completa que especifica la ubicación del archivo de disco duro virtual primario en el que se van a combinar los datos. Podría ser el disco duro virtual primario inmediato del archivo de combinación o la imagen de disco principal unos pocos niveles hacia arriba en la cadena de diferenciación.
+Ruta de acceso completa que especifica la ubicación del archivo de disco duro virtual primario en el que se combinarán los datos. Podría ser el disco duro virtual primario inmediato del archivo de combinación o la imagen de disco primario unos pocos niveles en la cadena de diferenciación.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Este método puede devolver uno de los valores siguientes.
 
@@ -81,7 +81,7 @@ Este método puede devolver uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -93,16 +93,16 @@ Este método puede devolver uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -111,29 +111,29 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
 El disco duro virtual secundario debe estar sin conexión.
 
-Solo se pueden usar los siguientes tipos de discos duros virtuales con este método:
+Con este método solo se pueden usar los siguientes tipos de discos duros virtuales:
 
--   VHD de diferenciación
--   VHDX de diferenciación
+-   Disco duro virtual de diferenciación
+-   Diferenciación de VHDX
 
-El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ ImageManagementService de Msvm**](msvm-imagemanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se expande un archivo de disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se expande un archivo de disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -178,10 +178,10 @@ public static void MergeVirtualHardDisk(string ChildPath, string ParentPath)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -190,10 +190,10 @@ public static void MergeVirtualHardDisk(string ChildPath, string ParentPath)
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
+[**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))
 </dt> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

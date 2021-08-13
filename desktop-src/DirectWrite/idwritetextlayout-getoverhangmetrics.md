@@ -1,11 +1,11 @@
 ---
-title: IDWriteTextLayout GetOverhangMetrics, método
-description: Devuelve los sobrebloqueos (en DIP) del diseño y todos los objetos contenidos en él, incluidos los glifos de texto y los objetos insertados.
+title: Método IDWriteTextLayout GetOvergeoMetrics
+description: Devuelve los sobresalciones (en DIP) del diseño y todos los objetos contenidos en él, incluidos los glifos de texto y los objetos en línea.
 ms.assetid: 4b23f6c5-cacc-41e2-8934-6f95208b999a
 keywords:
-- Método GetOverhangMetrics de escritura directa
-- Método GetOverhangMetrics de escritura directa, interfaz IDWriteTextLayout
-- Interfaz IDWriteTextLayout Direct Write, método GetOverhangMetrics
+- Escritura directa del método GetOvermetrics
+- Método GetOvermetrics Direct Write , interfaz IDWriteTextLayout
+- Método Direct Write de la interfaz IDWriteTextLayout , GetOvermetrics
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d8a015998f0a673a310319f93d8f4892dd4b1c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb3591df5dc02fdc63215ff2276202df62347ed21aef23991b4ddcadef094281
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118649750"
 ---
-# <a name="idwritetextlayoutgetoverhangmetrics-method"></a>IDWriteTextLayout:: GetOverhangMetrics (método)
+# <a name="idwritetextlayoutgetoverhangmetrics-method"></a>IdWriteTextLayout::GetOvermetrics (método)
 
-Devuelve los sobrebloqueos (en DIP) del diseño y todos los objetos contenidos en él, incluidos los glifos de texto y los objetos insertados.
+Devuelve los sobresalciones (en DIP) del diseño y todos los objetos contenidos en él, incluidos los glifos de texto y los objetos en línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,12 +42,12 @@ virtual HRESULT GetOverhangMetrics(
 
 <dl> <dt>
 
-*sobrebloqueos* \[ enuncia\]
+*sobresalciones* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ métricas salientes de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
+Tipo: **[ **DWRITE \_ OVERHANG \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
 
-Excesos de extensiones visibles (en DIP) fuera del diseño.
+Sobreshoots de extensiones visibles (en DIP) fuera del diseño.
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Excesos de extensiones visibles (en DIP) fuera del diseño.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Los subrayados y los tachados no contribuyen a la determinación del cuadro negro, ya que el representador los dibuja realmente, lo que puede dibujarlos en cualquier variedad de estilos.
+Los subrayados y los tachados no contribuyen a la determinación de la caja negra, ya que en realidad los dibuja el representador, que puede dibujarlos en cualquier variedad de estilos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Los subrayados y los tachados no contribuyen a la determinación del cuadro negr
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

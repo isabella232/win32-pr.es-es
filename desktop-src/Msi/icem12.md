@@ -1,37 +1,37 @@
 ---
-description: ICEM12 comprueba que en una tabla ModuleSequence, las acciones estándar tienen números de secuencia y acciones personalizadas tienen valores de BaseAction y after.
+description: ICEM12 comprueba que, en una tabla ModuleSequence, las acciones estándar tienen números de secuencia y las acciones personalizadas tienen valores BaseAction y After.
 ms.assetid: 1a168629-9865-4412-8317-8af8b9a7b8bd
 title: ICEM12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b37cbff2e29a85dd50ef1f044a43fdb8e48ffdd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e53e6f83b9ffccf6595719815ec4bd44cc8ff3774b989b682751dd9be1bbe5f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118634948"
 ---
 # <a name="icem12"></a>ICEM12
 
-ICEM12 comprueba que en una tabla ModuleSequence, las acciones estándar tienen números de secuencia y acciones personalizadas tienen valores de BaseAction y after.
+ICEM12 comprueba que, en una tabla ModuleSequence, las acciones estándar tienen números de secuencia y las acciones personalizadas tienen valores BaseAction y After.
 
-Este ICEM está disponible en el archivo Mergemod. Cub proporcionado en el SDK de Windows Installer 2,0 y versiones posteriores. Para obtener más información, consulte [componentes de Windows SDK para desarrolladores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+Este ICEM está disponible en el archivo Mergemod.uu proporcionado en el SDK Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
 
 ## <a name="result"></a>Resultado
 
-ICEM12 publica un error en los siguientes casos:
+ICEM12 publica un error en los casos siguientes:
 
--   Busca el módulo que contiene una [acción estándar](standard-actions.md) sin un número de secuencia.
--   Detecta que una acción estándar tiene valores especificados en los campos BaseAction o After de la [tabla ModuleAdminUISequence](moduleadminuisequence-table.md), tabla [ModuleAdminExecuteSequence](moduleadminexecutesequence-table.md), tabla [ModuleAdvtExecuteSequence](moduleadvtexecutesequence-table.md), tabla [ModuleInstallUISequence](moduleinstalluisequence-table.md)o [tabla ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md).
--   Busca el módulo contiene una [acción personalizada](custom-actions.md) sin ningún valor especificado en los campos Sequence, BaseAction o After de la [tabla ModuleAdminUISequence](moduleadminuisequence-table.md), [ModuleAdminExecuteSequence Table](moduleadminexecutesequence-table.md), [ModuleAdvtExecuteSequence](moduleadvtexecutesequence-table.md)Table, [ModuleInstallUISequence Table](moduleinstalluisequence-table.md)o [ModuleInstallExecuteSequence Table](moduleinstallexecutesequence-table.md).
+-   Encuentra que el módulo contiene una [acción estándar sin](standard-actions.md) un número de secuencia.
+-   Encuentra que una acción estándar tiene valores especificados en los campos BaseAction o After de la tabla [ModuleAdminUISequence](moduleadminuisequence-table.md), la tabla [ModuleAdminExecuteSequence,](moduleadminexecutesequence-table.md)la tabla [ModuleAdvtExecuteSequence,](moduleadvtexecutesequence-table.md)la tabla [ModuleInstallUISequence](moduleinstalluisequence-table.md)o la tabla [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md).
+-   Busca que el módulo [](custom-actions.md) contiene una acción personalizada sin ningún valor especificado en los campos Sequence, BaseAction o After de la tabla [ModuleAdminUISequence](moduleadminuisequence-table.md), [ModuleAdminExecuteSequence](moduleadminexecutesequence-table.md)table , [ModuleAdvtExecuteSequence table](moduleadvtexecutesequence-table.md), [ModuleInstallUISequence table](moduleinstalluisequence-table.md)o [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md)table .
 
-ICEM12 publica una advertencia si encuentra una acción personalizada que tiene un número de secuencia especificado, pero ningún valor en los campos BaseAction o After.
+ICEM12 envía una advertencia si encuentra una acción personalizada que tiene un número de secuencia especificado, pero ningún valor en los campos BaseAction o After.
 
-Tenga en cuenta que todas las acciones que se encuentran en la [tabla CustomAction](customaction-table.md) se consideran acciones personalizadas. Todas las demás acciones se consideran acciones estándar.
+Tenga en cuenta que todas las acciones que se encuentran en [la tabla CustomAction se](customaction-table.md) consideran acciones personalizadas. Todas las demás acciones se consideran acciones estándar.
 
 ## <a name="example"></a>Ejemplo
 
-ICEM12 expone los siguientes mensajes de error y advertencia para un módulo que contiene las entradas de base de datos que se muestran a continuación:
+ICEM12 publica los siguientes mensajes de error y advertencia para un módulo que contiene las entradas de base de datos que se muestran a continuación:
 
 ``` syntax
 Error. Custom actions should use the BaseAction and After fields and not use the 
@@ -57,7 +57,7 @@ ModuleExecuteSequence table.
 
 | Acción  | Tipo | Source  | Destino  |
 |---------|------|---------|---------|
-| Action1 | 30   | Source1 | target1 |
+| Action1 | 30   | source1 | target1 |
 | Action3 | 30   | source3 | target3 |
 
 
@@ -91,15 +91,15 @@ ModuleExecuteSequence table.
 
 Para corregir estos errores, pruebe lo siguiente:
 
--   Quite el número de secuencia de la acción personalizada Action1 y use en su lugar los campos BaseAction y after.
+-   Quite el número de secuencia de la acción personalizada Action1 y use los campos BaseAction y After en su lugar.
 -   Escriba valores en los campos Sequence, BaseAction o After para la acción personalizada Action3. Deje los campos BaseAction y After vacíos para la acción estándar Action2.
--   No deje el campo de secuencia vacío para la acción estándar Action2.
+-   No deje vacío el campo Secuencia para la acción estándar Action2.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Referencia de módulo de combinación ICE](merge-module-ice-reference.md)
+[Referencia de ICE del módulo de mezcla](merge-module-ice-reference.md)
 </dt> </dl>
 
  

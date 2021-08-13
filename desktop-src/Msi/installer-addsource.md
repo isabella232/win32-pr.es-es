@@ -1,7 +1,7 @@
 ---
-description: El método AddSource del objeto de instalador agrega un origen a la lista de orígenes de red válidos en el SourceList.
+description: El método AddSource del objeto Installer agrega un origen a la lista de orígenes de red válidos en sourcelist.
 ms.assetid: e24c8484-fe84-4f97-9c06-c063bb7c6810
-title: Instalador. AddSource (método)
+title: Installer.AddSource (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3067ae287311c6ed26b509545523db75a3fed4cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c5e2b87a1fc9a660ae835d9fb1cfa465673bb6698144a9695cbfb264535a948
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118633190"
 ---
-# <a name="installeraddsource-method"></a>Instalador. AddSource (método)
+# <a name="installeraddsource-method"></a>Installer.AddSource (método)
 
-El método **AddSource** del objeto de [**instalador**](installer-object.md) agrega un origen a la lista de orígenes de red válidos en el SourceList.
+El **método AddSource** del objeto [**Installer**](installer-object.md) agrega un origen a la lista de orígenes de red válidos en sourcelist.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Especifica el código de producto.
 *User* 
 </dt> <dd>
 
-Nombre de usuario para la instalación por usuario; cadena nula o vacía para la instalación por máquina.
+Nombre de usuario para la instalación por usuario; Cadena nula o vacía para la instalación por equipo.
 
 </dd> <dt>
 
@@ -72,9 +72,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

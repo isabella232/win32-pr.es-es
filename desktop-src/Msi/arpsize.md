@@ -4,16 +4,16 @@ ms.assetid: f8327f5e-4b79-4707-8dd2-78dcfeaa0301
 title: Propiedad ARPSIZE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f165a93412086f241d2c762b389a10f1ff86fd3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 69b9f3fc3ea789c612cade1f21502356a8f8ab588e99f11296ef237ddf874c16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118639409"
 ---
 # <a name="arpsize-property"></a>Propiedad ARPSIZE
 
-La propiedad **ARPSIZE** es el tamaño estimado de la aplicación en kilobytes.
+La **propiedad ARPSIZE** es el tamaño estimado de la aplicación en kilobytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ La propiedad **ARPSIZE** es el tamaño estimado de la aplicación en kilobytes.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: La acción RemoveIniValues quita la información del archivo. ini especificada para su eliminación en la tabla RemoveIniFile si el componente está configurado para instalarse localmente o ejecutar desde el origen.
+description: La acción RemoveIniValues quita la información de archivo .ini especificada para su eliminación en la tabla RemoveIniFile si el componente está configurado para instalarse localmente o desde el origen.
 ms.assetid: a30793c8-4154-4990-a42a-d022e69f960a
 title: Acción RemoveIniValues
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7dfb847d911e847de00ede6eab30ac3a86615eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 095985165bf6d9629aa0cae67a5b3f7975d817151ac4b04de40a08d5c2bab4d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626394"
 ---
 # <a name="removeinivalues-action"></a>Acción RemoveIniValues
 
-La acción RemoveIniValues quita la información del archivo. ini especificada para su eliminación en la [tabla RemoveIniFile](removeinifile-table.md) si el componente está configurado para instalarse localmente o ejecutar desde el origen. La acción RemoveIniValues quita la información del archivo. ini que se ha asociado a un componente de la [tabla inifile](inifile-table.md). Esta acción también quita la información del archivo. ini si la [acción WriteIniValues](writeinivalues-action.md) escribió la información y el componente está programado para desinstalarse.
+La acción RemoveIniValues quita .ini información de archivo especificada para su eliminación en la [tabla RemoveIniFile](removeinifile-table.md) si el componente está configurado para instalarse localmente o desde el origen. La acción RemoveIniValues quita .ini información de archivo asociada a un componente de la [tabla IniFile](inifile-table.md). Esta acción también quita .ini información del archivo si la información la escribió la acción [WriteIniValues](writeinivalues-action.md) y el componente está programado para desinstalarse.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
@@ -25,10 +25,10 @@ Se debe llamar a la acción [InstallValidate](installvalidate-action.md) antes d
 
 | Campo | Descripción de los datos de acción    |
 |-------|-------------------------------|
-| \[1\] | Identificador del archivo. ini.      |
-| \[2\] | Una sección de la clave del archivo. ini.     |
-| \[3\] | Elemento quitado del archivo. ini.  |
-| \[4\] | Valor quitado del archivo. ini. |
+| \[1\] | Identificador de .ini archivo.      |
+| \[2\] | Una .ini clave de archivo.     |
+| \[3\] | Elemento quitado de .ini archivo.  |
+| \[4\] | Valor quitado de .ini archivo. |
 
 
 

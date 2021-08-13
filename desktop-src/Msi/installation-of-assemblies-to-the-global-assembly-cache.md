@@ -1,25 +1,25 @@
 ---
-description: El Windows Installer instala Common Language Runtime ensamblados en la caché global de ensamblados mediante el marco de Microsoft .NET.
+description: El Windows instala ensamblados de Common Language Runtime en la caché global de ensamblados mediante microsoft .NET Framework.
 ms.assetid: 21d535d5-f05b-411a-8719-2662e6046fbd
 title: Instalación de ensamblados en la caché global de ensamblados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 719be313ad74374950092936bbd6124da779a0db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dec84b507491da5b3ec4b2352044dc899230b41f41d2c81a943fba83b3ba0b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118634213"
 ---
 # <a name="installation-of-assemblies-to-the-global-assembly-cache"></a>Instalación de ensamblados en la caché global de ensamblados
 
-El Windows Installer instala Common Language Runtime ensamblados en la caché global de ensamblados mediante el marco de Microsoft .NET. Al instalar ensamblados en la caché global de ensamblados, el instalador no puede usar la misma estructura de directorios y las mismas reglas de versión de archivo que usa al instalar los componentes de Windows Installer normales. Los componentes de Windows Installer normales pueden instalarse en varias ubicaciones de directorio por productos diferentes. Los ensamblados solo pueden existir una vez en la caché de ensamblados. Cada ensamblado se agrega y se quita de la caché de ensamblados como un entero indivisible. por lo tanto, todos los archivos que componen un ensamblado siempre se instalan o se quitan juntos.
+El Windows instala ensamblados de Common Language Runtime en la caché global de ensamblados mediante microsoft .NET Framework. Al instalar ensamblados en la caché global de ensamblados, el instalador no puede usar la misma estructura de directorios y reglas de versión de archivo que usa al instalar componentes Windows Installer. Los componentes Windows installer normales se pueden instalar en varias ubicaciones de directorio mediante productos diferentes. Los ensamblados solo pueden existir una vez en la caché de ensamblados. Cada ensamblado se agrega y quita de la caché de ensamblados como un conjunto indivisible; por lo tanto, todos los archivos que componen un ensamblado siempre se instalan o se quitan juntos.
 
-El costo del disco de los componentes de Windows Installer normales y los ensamblados de Common Language Runtime se calculan de forma diferente. El costo total en disco de un componente de Windows Installer normal incluye los costos locales, los costos de origen y los costos de eliminación. Para obtener más información, consulte [costo de archivos](file-costing.md). Este método no se puede utilizar para costar Common Language Runtime ensamblados porque pueden tener clientes distintos de los Windows Installer. El costo de Common Language Runtime ensamblados se debe determinar consultando el Common Language Runtime de Microsoft .NET Framework.
+El costo de disco de los componentes Windows installer y los ensamblados de Common Language Runtime se calculan de forma diferente. El costo total de disco de un componente Windows instalador normal incluye los costos locales, los costos de origen y los costos de eliminación. Para obtener más información, vea [File Costing](file-costing.md). Este método no se puede usar para costar ensamblados de Common Language Runtime porque pueden tener clientes que no sean Windows Installer. El costo de los ensamblados de Common Language Runtime debe determinarse consultando el código de Microsoft .NET Framework Common Language Runtime.
 
-En el Windows Installer se usa un proceso transaccional de dos pasos para instalar productos que contienen Common Language Runtime ensamblados. Esto permite la reversión de la instalación y eliminación de ensamblados. Para obtener más información, vea [reversión de ensamblados en la caché global de ensamblados](rollback-of-assemblies-in-the-global-assembly-cache.md).
+El Windows usa un proceso transaccional de dos pasos para instalar productos que contienen ensamblados de Common Language Runtime. Esto permite la reversión de la instalación y eliminación de ensamblados. Para obtener más información, vea [Reversión de ensamblados en la caché global de ensamblados.](rollback-of-assemblies-in-the-global-assembly-cache.md)
 
-Tenga en cuenta que la protección de archivos de Windows no protege los ensamblados instalados en la caché global de ensamblados mediante una instalación de en el [contexto de instalación](installation-context.md) por usuario. Los ensamblados que se instalan en la caché global de ensamblados mediante una instalación en el contexto de instalación por equipo están protegidos por [protección de recursos de Windows](../wfp/windows-resource-protection-portal.md).
+Tenga en cuenta que los ensamblados instalados en la [](installation-context.md) memoria caché global de ensamblados por una instalación en el contexto de instalación por usuario no están protegidos por Windows File Protection. Los ensamblados que se instalan en la caché global de ensamblados mediante una instalación en el contexto de instalación por equipo están protegidos [por Windows Resource Protection](../wfp/windows-resource-protection-portal.md).
 
  
 

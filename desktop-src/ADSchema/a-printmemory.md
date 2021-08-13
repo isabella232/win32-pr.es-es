@@ -1,11 +1,11 @@
 ---
-title: Print-Memory atributo)
-description: La cantidad de memoria instalada en una impresora.
+title: Print-Memory atributo
+description: Cantidad de memoria instalada en una impresora.
 ms.assetid: 9e06ca1a-38e6-4cd8-acb5-a75dd4103696
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Print-Memory
-- printMemory esquema de AD de atributos
+- Print-Memory esquema de AD del atributo
+- Esquema de AD del atributo printMemory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11845e36a38e453cf7db450261f8ca9d977e03fb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af60e9768c29a8a8e8d19d2645db2990a26ea46c1c921a4911f23ef6fd30df4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682193"
 ---
-# <a name="print-memory-attribute"></a>Print-Memory atributo)
+# <a name="print-memory-attribute"></a>Print-Memory atributo
 
-La cantidad de memoria instalada en una impresora.
+Cantidad de memoria instalada en una impresora.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Print-Memory                         |
-| Nombre para mostrar de LDAP | printMemory                          |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | printMemory                          |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.282               |
-| System-ID-GUID    | ba305f74-47e3-11d0-a1a6-00c04fd930c9 |
+| System-Id-Guid    | ba305f74-47e3-11d0-a1a6-00c04fd930c9 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -55,13 +55,13 @@ La cantidad de memoria instalada en una impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ La cantidad de memoria instalada en una impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ La cantidad de memoria instalada en una impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -118,13 +118,13 @@ La cantidad de memoria instalada en una impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ La cantidad de memoria instalada en una impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ La cantidad de memoria instalada en una impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

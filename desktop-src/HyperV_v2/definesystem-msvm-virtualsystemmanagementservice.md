@@ -1,7 +1,7 @@
 ---
 description: Crea una nueva instancia de máquina virtual.
 ms.assetid: 15BC967D-F392-45A6-ACF6-5C2F2334AAE6
-title: Método DefineSystem de la clase Msvm_VirtualSystemManagementService
+title: Método DefineSystem de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 965d24313607a767d546503d005a6493234b2f53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47b01a2fb0935873b5a36d69376eb09bfe6d4555613c0eb8dc8907589d4f5f7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118645839"
 ---
-# <a name="definesystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DefineSystem de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="definesystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DefineSystem de la clase Msvm \_ VirtualSystemManagementService
 
-Crea una nueva instancia de máquina virtual. Las propiedades que no se especifican se rellenarán con los valores predeterminados.
+Crea una nueva instancia de máquina virtual. Las propiedades que no se especifican se rellenarán con valores predeterminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,56 +43,56 @@ uint32 DefineSystem(
 
 <dl> <dt>
 
-*Configuración* \[ de\]
+*SystemSettings* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que se usa para definir los atributos de la máquina virtual que se va a crear. Este parámetro es necesario.
+Instancia incrustada de la [**clase Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que se usa para definir los atributos de la máquina virtual que se va a crear. Este parámetro es obligatorio.
 
 </dd> <dt>
 
-*ResourceSettings* \[ de\]
+*ResourceSettings* \[ En\]
 </dt> <dd>
 
-Tipo: **String \[ \]**
+Tipo: **\[ \] cadena**
 
-Varias instancias incrustadas de la clase [**MSVM \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) (o clases derivadas de ella). Juntas, estas instancias describen los recursos virtuales de la máquina virtual. Se creará un conjunto de dispositivos predeterminado para la máquina virtual, independientemente de si este parámetro está establecido. Por ejemplo, el procesador y la memoria se crean y configuran automáticamente con los valores predeterminados.
+Número de instancias insertadas de la clase [**\_ ResourceAllocationSettingData de Msvm**](msvm-resourceallocationsettingdata.md) (o clases derivadas de la misma). Juntas, estas instancias describen los recursos virtuales de la máquina virtual. Se creará un conjunto predeterminado de dispositivos para la máquina virtual, independientemente de si se establece este parámetro. Por ejemplo, el procesador y la memoria se crean y configuran automáticamente con valores predeterminados.
 
 </dd> <dt>
 
-*ReferenceConfiguration* \[ de\]
+*ReferenceConfiguration* \[ En\]
 </dt> <dd>
 
 Tipo: **CIM \_ VirtualSystemSettingData**
 
-Una referencia a una instancia de la clase [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que es el objeto de nivel superior de una configuración de máquina virtual de referencia. La configuración de referencia se utiliza para complementar la configuración de la nueva máquina virtual si los parámetros *configuración* y *ResourceSettings* no proporcionaron la información correspondiente.
+Referencia a una instancia de la clase [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que es el objeto de nivel superior de una configuración de máquina virtual de referencia. La configuración de referencia se usa para complementar la configuración de la nueva máquina virtual si los parámetros *SystemSettings* y *ResourceSettings* no proporcionaron la información respectiva.
 
 </dd> <dt>
 
-*ResultingSystem* \[ enuncia\]
+*ResultingSystem* \[ out\]
 </dt> <dd>
 
 Tipo: **CIM \_ ComputerSystem**
 
-Una referencia a una instancia de la clase de [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual recién creada.
+Referencia a una instancia de la clase [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual recién creada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
 Tipo: **CIM \_ ConcreteJob**
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Si este método se ejecuta sincrónicamente, devuelve 0 si se realiza correctamente. Si este método se ejecuta de forma asincrónica, devuelve 4096 y el parámetro de salida del *trabajo* se puede usar para realizar el seguimiento del progreso de la operación asincrónica. Cualquier otro valor devuelto indica un error.
+Si este método se ejecuta sincrónicamente, devuelve 0 si se ejecuta correctamente. Si este método se ejecuta de forma asincrónica, devuelve 4096 y el parámetro de salida *Job* se puede usar para realizar un seguimiento del progreso de la operación asincrónica. Cualquier otro valor devuelto indica un error.
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ Si este método se ejecuta sincrónicamente, devuelve 0 si se realiza correctame
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -117,15 +117,15 @@ Si este método se ejecuta sincrónicamente, devuelve 0 si se realiza correctame
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El acceso a la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ VirtualSystemManagementService de Msvm**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,10 +133,10 @@ El acceso a la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsy
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -145,7 +145,7 @@ El acceso a la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsy
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  
