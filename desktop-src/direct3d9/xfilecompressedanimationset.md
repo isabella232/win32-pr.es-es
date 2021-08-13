@@ -1,7 +1,7 @@
 ---
-description: Identifica los datos de animación de fotogramas clave comprimidos.
+description: Identifica los datos comprimidos de animación de fotogramas clave.
 ms.assetid: 2aab46db-e0ad-4bbb-b1c5-a254ec6cb984
-title: Estructura XFILECOMPRESSEDANIMATIONSET (D3dx9mesh. h)
+title: Estructura XFILECOMPRESSEDANIMATIONSET (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 240cac57c9c0d123203ee4599c14092df1327f94
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 41c64ae7bb2ca4acf87e1b63de90f2ccfc78e8d769adf334aa1f68b9bf79de0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118518578"
 ---
 # <a name="xfilecompressedanimationset-structure"></a>Estructura XFILECOMPRESSEDANIMATIONSET
 
-Identifica los datos de animación de fotogramas clave comprimidos.
+Identifica los datos comprimidos de animación de fotogramas clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,11 +56,11 @@ Tamaño total, en bytes, de los datos comprimidos en el búfer de datos de anima
 **TicksPerSec**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de TICs de fotogramas clave de animación que se producen por segundo.
+Número de tics de fotograma clave de animación que se producen por segundo.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tipo del bucle de reproducción establecido de la animación. Consulte [**\_ tipo de D3DXPLAYBACK**](./d3dxplayback-type.md).
+Tipo del bucle de reproducción del conjunto de animación. Vea [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tamaño mínimo del búfer, en bytes, necesario para contener datos de animación de fotogramas clave comprimidos. El valor es igual a ((CompressedBlockSize + 3)/4).
+Tamaño mínimo del búfer, en bytes, necesario para contener datos comprimidos de animación de fotogramas clave. El valor es igual a ( ( CompressedBlockSize + 3 ) / 4 ).
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Tamaño mínimo del búfer, en bytes, necesario para contener datos de animació
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ Tamaño mínimo del búfer, en bytes, necesario para contener datos de animació
 
 <dl> <dt>
 
-[Estructuras de archivos de D3DX X](dx9-graphics-reference-d3dx-x-file-structures.md)
+[Estructuras de archivo D3DX X](dx9-graphics-reference-d3dx-x-file-structures.md)
 </dt> <dt>
 
 [**ID3DXCompressedAnimationSet**](id3dxcompressedanimationset.md)

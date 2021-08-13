@@ -1,7 +1,7 @@
 ---
 description: Solicita que el estado del TPM cambie al valor especificado en el parámetro RequestedTPMState.
 ms.assetid: 7ad8bf4e-6263-45d5-8f33-fb842bbf1f1a
-title: Método RequestTPMStateChange de la clase CIM_TPM
+title: Método RequestTPMStateChange de la CIM_TPM clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 39bded1a43dd547780c3924f3af9c37cfc79aa1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94af1d619ffa686b2fb4546987c6b825e4c658a5ae045d84fe5c6181716e95e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646453"
 ---
-# <a name="requesttpmstatechange-method-of-the-cim_tpm-class"></a>Método RequestTPMStateChange de la \_ clase TPM CIM
+# <a name="requesttpmstatechange-method-of-the-cim_tpm-class"></a>Método RequestTPMStateChange de la clase TPM de CIM \_
 
-Solicita que el estado del TPM cambie al valor especificado en el parámetro *RequestedTPMState* . Si la invocación del método se completa correctamente, la propiedad **TPMState** debe ser igual al parámetro **RequestedTPMState** . Invocar varias veces al método **RequestTPMStateChange** podría provocar que se sobrescriban o se pierdan solicitudes anteriores.
+Solicita que el estado del TPM cambie al valor especificado en el *parámetro RequestedTPMState.* Si la invocación del método se completa correctamente, la **propiedad TPMState** será igual al **parámetro RequestedTPMState.** Invocar el método **RequestTPMStateChange** varias veces podría dar lugar a que las solicitudes anteriores se sobrescriban o se pierdan.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 RequestTPMStateChange(
 
 <dl> <dt>
 
-*RequestedTPMState* \[ de\]
+*RequestedTPMState* \[ En\]
 </dt> <dd>
 
 Estados de TPM solicitados.
@@ -51,56 +51,56 @@ Estados de TPM solicitados.
 
 <span id="S1_Enabled-Active-Owned"></span><span id="s1_enabled-active-owned"></span><span id="S1_ENABLED-ACTIVE-OWNED"></span>
 
-**S1 habilitada: propiedad activa** (2)
+**S1 enabled-active-owned** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S2_Disabled-Active-Owned"></span><span id="s2_disabled-active-owned"></span><span id="S2_DISABLED-ACTIVE-OWNED"></span>
 
-**S2 deshabilitado-propiedad activa** (3)
+**S2 Disabled-Active-Owned** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S3_Enabled-Inactive-Owned"></span><span id="s3_enabled-inactive-owned"></span><span id="S3_ENABLED-INACTIVE-OWNED"></span>
 
-**S3 habilitado: inactivo-propiedad** (4)
+**Propiedad inactiva habilitada para S3** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S4_Disabled-Inactive-Owned"></span><span id="s4_disabled-inactive-owned"></span><span id="S4_DISABLED-INACTIVE-OWNED"></span>
 
-**S4 deshabilitado-inactivo-propiedad** (5)
+**S4 Disabled-Inactive-Owned** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S5_Enabled-Active-Unowned"></span><span id="s5_enabled-active-unowned"></span><span id="S5_ENABLED-ACTIVE-UNOWNED"></span>
 
-**S5 habilitado-activo-no propietario** (6)
+**S5 enabled-active-unwned** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S6_Disabled-Active-Unowned"></span><span id="s6_disabled-active-unowned"></span><span id="S6_DISABLED-ACTIVE-UNOWNED"></span>
 
-**S6 deshabilitado-activo-no propietario** (7)
+**S6 Disabled-Active-Unwned** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S7_Enabled-Inactive-Unowned"></span><span id="s7_enabled-inactive-unowned"></span><span id="S7_ENABLED-INACTIVE-UNOWNED"></span>
 
-**S7 habilitado: inactivo:** no tiene propiedad (8)
+**S7 Enabled-Inactive-Unwned** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S8_Disabled-Inactive-Unowned"></span><span id="s8_disabled-inactive-unowned"></span><span id="S8_DISABLED-INACTIVE-UNOWNED"></span>
 
-**S8 deshabilitado-inactivo:** no tiene propiedad (9)
+**S8 Disabled-Inactive-Unwned** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -114,29 +114,29 @@ Estados de TPM solicitados.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*AuthorizationToken* \[ de\]
+*AuthorizationToken* \[ En\]
 </dt> <dd>
 
-Token de autorización que puede ser necesario para que la acción surta efecto. El parámetro *AuthorizationToken* puede ser necesario para establecer la presencia física o para pasar OwnerAuth, la contraseña de autorización de propietario definida por TCG. En el caso de OwnerAuth, \_ es posible que se requiera el SharedCredential de CIM con un valor que no sea NULL de CIM \_ SharedCredential. Secret. La \_ propiedad CIM SharedCredential. algorithm también se puede especificar en función de la propiedad CIM \_ TPMCapabilities. SupportedPasswordAlgorithms.
+Token de autorización que puede ser necesario para que la acción suba efecto. El *parámetro AuthorizationToken* puede ser necesario para establecer la presencia física o para pasar ownerAuth, la contraseña de autorización de propietario definida por TCG. En el caso de OwnerAuth, es posible que se requiera CIM SharedCredential con un valor distinto de NULL de \_ CIM \_ SharedCredential.Secret. La propiedad SHAREDCredential.Algorithm de CIM también se puede especificar en función de la \_ propiedad CIM \_ TPMCapabilities.SupportedPasswordAlgorithms.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ ConcreteJob de CIM**](cim-concretejob.md) creado para realizar el seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Un período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se realice la transición al nuevo estado. El formato de intervalo debe usarse para especificar el *TimeoutPeriod*. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar *timeoutPeriod.* Un valor de 0 o un parámetro NULL indica que el cliente no tiene requisitos de tiempo para la transición.
 
 </dd> </dl>
 
@@ -155,7 +155,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Error desconocido o no especificado** (2)
 </dt> <dt>
 
-**No se puede completar en el período de tiempo de espera** (3)
+**No se puede completar dentro del período de tiempo de espera** (3)
 </dt> <dt>
 
 **Error** (4)
@@ -173,19 +173,19 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Transición de estado no válida** (4097)
+**Transición de estado no** válida (4097)
 </dt> <dt>
 
-**No se admite el uso de parámetros de tiempo de espera** (4098)
+**No se admite el uso del parámetro timeout** (4098)
 </dt> <dt>
 
 **Ocupado** (4099)
 </dt> <dt>
 
-**Método reservado** (4100.. 32767)
+**Método reservado** (4100..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -194,10 +194,10 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -206,7 +206,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 <dl> <dt>
 
-[**TPM de CIM \_**](cim-tpm.md)
+[**TPM \_ de CIM**](cim-tpm.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando el control InkPicture ha terminado de volver a dibujarse.
+description: Se produce cuando el control InkPicture ha completado el propio dibujo.
 ms.assetid: a8194cff-ed94-402e-8564-08d370f958b4
-title: Evento InkPicture. pintado (Msinkaut. h)
+title: Evento InkPicture.Painted (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60188ef87d88ba7412a07300e708718bedc947fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 201027ba2626cd3a3dd8d76a8794a1a5430785e0e1602633ee9f39ac36caa023
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451072"
 ---
-# <a name="inkpicturepainted-event"></a>InkPicture. pintado (evento)
+# <a name="inkpicturepainted-event"></a>Evento InkPicture.Painted
 
-Se produce cuando el control [InkPicture](inkpicture-control-reference.md) ha terminado de volver a dibujarse.
+Se produce cuando el control [InkPicture](inkpicture-control-reference.md) ha completado el propio dibujo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,14 +31,14 @@ void Painted(
 
 <dl> <dt>
 
-*HDC* \[ de\]
+*hDC* \[ En\]
 </dt> <dd>
 
-Contexto de dispositivo en el que se produjo el evento.
+Contexto del dispositivo en el que se produjo el evento.
 
 </dd> <dt>
 
-*Rectángulo* \[ de\]
+*Rect* \[ En\]
 </dt> <dd>
 
 [**InkRectangle**](inkrectangle-class.md) que se ha repintado.
@@ -51,7 +51,7 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método de evento se define en las interfaces dispinterface **\_ IInkOverlayEvents** y **\_ IInkPictureEvents** con un identificador de DISPID \_ IOEPainted.
+Este método de evento se define en las interfaces **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ IOEPainted.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Este método de evento se define en las interfaces dispinterface **\_ IInkOverla
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

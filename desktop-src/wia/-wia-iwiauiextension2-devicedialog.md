@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 94e717184c936ae85ba1cf345a13b44f9bbdce4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 582a2fe90e6a455b2c0d0119b749a9d86b912b58150d30f3804466ef5bea2a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439889"
 ---
 # <a name="iwiauiextension2devicedialog-method"></a>IWiaUIExtension2::D eviceDialog (método)
 
@@ -52,7 +52,7 @@ Apunta a una [**estructura DEVICEDIALOGDATA2**](-wia-devicedialogdata2.md) que c
 
 Tipo: **HRESULT**
 
-Si el método se realiza correctamente, devuelve S \_ OK. Si el usuario cancela el cuadro de diálogo, el método devuelve S \_ FALSE. Si se produce un error en el método, devuelve un código de error adecuado. En la tabla siguiente se muestran algunos de los posibles códigos de estado de devolución.
+Si el método se realiza correctamente, devuelve S \_ OK. Si el usuario cancela el cuadro de diálogo, el método devuelve S \_ FALSE. Si se produce un error en el método, devuelve un código de error adecuado. En la tabla siguiente se muestran algunos de los códigos de estado de devolución posibles.
 
 
 
@@ -65,19 +65,19 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si el usuario cancela 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si implementa la interfaz [**IWiaUIExtension2**](-wia-iwiauiextension2.md) y no desea reemplazar la interfaz de usuario del sistema, este método todavía debe implementarse, pero no debe hacer nada más que devolver E \_ NOTIMPL.
+Si implementa la interfaz [**IWiaUIExtension2**](-wia-iwiauiextension2.md) y no desea reemplazar la interfaz de usuario del sistema, este método debe implementarse, pero no debe hacer nada más que devolver E \_ NOTIMPL.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

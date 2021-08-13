@@ -1,11 +1,11 @@
 ---
-title: atributo MS-FVE-RecoveryGuid
+title: Atributo ms-FVE-RecoveryGuid
 description: Contiene el GUID asociado a una contraseña de recuperación de cifrado de volumen completo (FVE).
 ms.assetid: a26d6ef2-6fe6-4d30-9725-19f9f5ab1132
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-FVE-RecoveryGuid
-- msFVE-RecoveryGuid atributo AD Schema
+- Esquema de AD del atributo ms-FVE-RecoveryGuid
+- Esquema de AD del atributo msFVE-RecoveryGuid
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2630f3d7c729073051ae2a1bd363a8c36387e8fb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 808c3538591af9fb13553c66d75a0a7765174d647ae6c280ee22e8ff3b4a94a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682737"
 ---
-# <a name="ms-fve-recoveryguid-attribute"></a>atributo MS-FVE-RecoveryGuid
+# <a name="ms-fve-recoveryguid-attribute"></a>Atributo ms-FVE-RecoveryGuid
 
 Contiene el GUID asociado a una contraseña de recuperación de cifrado de volumen completo (FVE).
 
@@ -29,13 +29,13 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-FVE-RecoveryGuid                                   |
-| Nombre para mostrar de LDAP | msFVE-RecoveryGuid                                    |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-FVE-RecoveryGuid                                   |
+| Ldap-Display-Name | msFVE-RecoveryGuid                                    |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1965                               |
-| System-ID-GUID    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
+| System-Id-Guid    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -52,18 +52,18 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
+| Es de un solo valor       | True                                                                         |
 | Está indexado             | True                                                                         |
 | En el catálogo global      | True                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
+| Es de un solo valor       | True                                                                         |
 | Está indexado             | True                                                                         |
 | En el catálogo global      | True                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
+| Es de un solo valor       | True                                                                         |
 | Está indexado             | True                                                                         |
 | En el catálogo global      | True                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 

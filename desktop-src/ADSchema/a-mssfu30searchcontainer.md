@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-Search-Container (atributo)
-description: Contiene el identificador de un objeto que especifica dónde se iniciará cada búsqueda.
+title: Atributo msSFU-30-Search-Container
+description: Contiene el identificador de un objeto que especifica dónde comenzará cada búsqueda.
 ms.assetid: a1bb0ff1-d938-4792-aa68-3c335a1a3b43
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-Search-Container atributo AD Schema
-- msSFU30SearchContainer esquema de AD de atributos
+- msSFU-30-Search-Container attribute AD Schema
+- Esquema de AD del atributo msSFU30SearchContainer
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7378af4b91a1a7153705e9d4e8280cdac02f1673
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4812f821c59cee6d538b475bef2feca032c4132d9a5c0f3f0dc4154c2c61173e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682436"
 ---
-# <a name="mssfu-30-search-container-attribute"></a>msSFU-30-Search-Container (atributo)
+# <a name="mssfu-30-search-container-attribute"></a>Atributo msSFU-30-Search-Container
 
-Contiene el identificador de un objeto que especifica dónde se iniciará cada búsqueda.
+Contiene el identificador de un objeto que especifica dónde comenzará cada búsqueda.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | msSFU-30-Search-Container                   |
-| Nombre para mostrar de LDAP | msSFU30SearchContainer                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msSFU30SearchContainer                      |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
-| System-ID-GUID    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
+| System-Id-Guid    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,18 +53,18 @@ Contiene el identificador de un objeto que especifica dónde se iniciará cada b
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el identificador de un objeto que especifica dónde se iniciará cada b
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene el identificador de un objeto que especifica dónde se iniciará cada b
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ Contiene el identificador de un objeto que especifica dónde se iniciará cada b
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

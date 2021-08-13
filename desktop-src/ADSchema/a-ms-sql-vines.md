@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Vines
-description: Punto de conexión de Vines.
+title: Atributo MS-SQL-Sars
+description: El punto de conexión de Trass.
 ms.assetid: edb3ac70-6275-40e1-a91e-acf791c5cf23
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-Vines
-- Esquema de AD de atributos de mS-SQL-Vines
+- Esquema de AD del atributo MS-SQL-Sars
+- Esquema de AD del atributo mS-SQL-Sars
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 313b47714dbd8431a7552abc5ed7962e0c0a708a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 818c5e007111f3d7c44b4e8bd530b41e81a6fa98d617dda6ab7352369bfa7b52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686249"
 ---
-# <a name="ms-sql-vines-attribute"></a>Atributo MS-SQL-Vines
+# <a name="ms-sql-vines-attribute"></a>Atributo MS-SQL-Sars
 
-Punto de conexión de Vines.
+El punto de conexión de Trass.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-Vines                                |
-| Nombre para mostrar de LDAP | mS-SQL-Vines                                |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | MS-SQL-Sarras                                |
+| Ldap-Display-Name | mS-SQL-Plantas                                |
+| Size              | \-                                          |
+| Actualizar privilegios  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Al iniciar el sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1379                     |
-| System-ID-GUID    | 94c56394-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 94c56394-ccee-11d2-9993-0000f87a57d4        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ Punto de conexión de Vines.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -76,13 +76,13 @@ Punto de conexión de Vines.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -97,13 +97,13 @@ Punto de conexión de Vines.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -118,13 +118,13 @@ Punto de conexión de Vines.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -139,13 +139,13 @@ Punto de conexión de Vines.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -160,13 +160,13 @@ Punto de conexión de Vines.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

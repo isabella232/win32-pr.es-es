@@ -1,21 +1,21 @@
 ---
-title: Recuperar el nombre de la conexión
-description: Para recuperar el nombre del recurso de red asociado a un dispositivo local, una aplicación puede llamar a la función WNetGetConnection, tal y como se muestra en el ejemplo siguiente.
+title: Recuperar el nombre de conexión
+description: Para recuperar el nombre del recurso de red asociado a un dispositivo local, una aplicación puede llamar a la función WNetGetConnection, como se muestra en el ejemplo siguiente.
 ms.assetid: 7c02cf9a-cca3-47d8-8a4b-f2245f1db92a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ac84aec3c6aafb8a5113ea29251247a1de35aec
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 264a7352fb10139df538d5803fc94966b276fa334f2e4ef5f2c0799e1c32c4cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566832"
 ---
-# <a name="retrieving-the-connection-name"></a>Recuperar el nombre de la conexión
+# <a name="retrieving-the-connection-name"></a>Recuperar el nombre de conexión
 
-Para recuperar el nombre del recurso de red asociado a un dispositivo local, una aplicación puede llamar a la función [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) , tal y como se muestra en el ejemplo siguiente.
+Para recuperar el nombre del recurso de red asociado a un dispositivo local, una aplicación puede llamar a la función [**WNetGetConnection,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) como se muestra en el ejemplo siguiente.
 
-En el ejemplo siguiente se llama a un controlador de errores definido por la aplicación para procesar errores y la función [**TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para imprimir.
+En el ejemplo siguiente se llama a un controlador de errores definido por la aplicación para procesar errores y a la [**función TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para imprimir.
 
 
 ```C++
@@ -58,8 +58,8 @@ switch (dwResult)
 
 
 
-Para obtener más información sobre el uso de un controlador de errores definido por la aplicación, consulte [recuperar errores de red](retrieving-network-errors.md).
+Para obtener más información sobre el uso de un controlador de errores definido por la aplicación, vea [Retrieving Network Errors](retrieving-network-errors.md).
 
- 
+ 
 
- 
+ 

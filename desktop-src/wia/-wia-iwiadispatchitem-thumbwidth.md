@@ -1,7 +1,7 @@
 ---
-description: Ancho, en píxeles, de la imagen en miniatura. Esta propiedad devuelve-1 si este elemento no admite miniaturas. Solo lectura.
+description: Ancho, en píxeles, de la imagen en miniatura. Esta propiedad devuelve -1 si este elemento no admite miniaturas. Solo lectura.
 ms.assetid: 44930ca6-1ca9-40eb-b6f0-96094d9d03ad
-title: Propiedad Item. ThumbWidth
+title: Propiedad Item.ThumbWidth
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 14801c02207a06519a803ed13f23467ebe98f310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 023b2353c0806923491890416121db2eb3186dc11ec76478869ab8ca20d9d00f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440496"
 ---
-# <a name="itemthumbwidth-property"></a>Propiedad Item. ThumbWidth
+# <a name="itemthumbwidth-property"></a>Propiedad Item.ThumbWidth
 
-Ancho, en píxeles, de la imagen en miniatura. Esta propiedad devuelve-1 si este elemento no admite miniaturas. Solo lectura.
+Ancho, en píxeles, de la imagen en miniatura. Esta propiedad devuelve -1 si este elemento no admite miniaturas. Solo lectura.
 
 Esta propiedad es de solo lectura.
 
@@ -45,9 +45,9 @@ Variable que recibe el ancho.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

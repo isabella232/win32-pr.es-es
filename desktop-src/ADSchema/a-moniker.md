@@ -1,11 +1,11 @@
 ---
-title: Moniker, atributo
+title: Atributo Moniker
 description: Nombre o ruta de acceso de un objeto COM.
 ms.assetid: e1ddcf9e-f8db-4aa0-a387-352a467a5b2c
 ms.tgt_platform: multiple
 keywords:
-- Atributo de moniker esquema de AD
-- atributo de moniker esquema de AD
+- Esquema de AD del atributo Moniker
+- Esquema de AD del atributo moniker
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef9d1eeb5d4c635379704a7dc250c3c80a2f9c07
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f73aa1deee1052c070e948da29429f43d98acaf2b3d40d400d87ae0424b1c04d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687245"
 ---
-# <a name="moniker-attribute"></a>Moniker, atributo
+# <a name="moniker-attribute"></a>Atributo Moniker
 
 Nombre o ruta de acceso de un objeto COM.
 
@@ -30,12 +30,12 @@ Nombre o ruta de acceso de un objeto COM.
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Pérez                                               |
-| Nombre para mostrar de LDAP | moniker                                               |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | moniker                                               |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.82                                 |
-| System-ID-GUID    | bf9679c7-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf9679c7-0de6-11d0-a285-00aa003049e2                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,18 +55,18 @@ Nombre o ruta de acceso de un objeto COM.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | False                                                                                                   |
-| Tiene un único valor       | False                                                                                                   |
+| Es de un solo valor       | False                                                                                                   |
 | Está indexado             | False                                                                                                   |
 | En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Nombre o ruta de acceso de un objeto COM.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | False                                                                                                   |
-| Tiene un único valor       | False                                                                                                   |
+| Es de un solo valor       | False                                                                                                   |
 | Está indexado             | False                                                                                                   |
 | En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Nombre o ruta de acceso de un objeto COM.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | False                                                                                                   |
-| Tiene un único valor       | False                                                                                                   |
+| Es de un solo valor       | False                                                                                                   |
 | Está indexado             | False                                                                                                   |
 | En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Nombre o ruta de acceso de un objeto COM.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | False                                                                                                   |
-| Tiene un único valor       | False                                                                                                   |
+| Es de un solo valor       | False                                                                                                   |
 | Está indexado             | False                                                                                                   |
 | En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Nombre o ruta de acceso de un objeto COM.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | False                                                                                                   |
-| Tiene un único valor       | False                                                                                                   |
+| Es de un solo valor       | False                                                                                                   |
 | Está indexado             | False                                                                                                   |
 | En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Nombre o ruta de acceso de un objeto COM.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | False                                                                                                   |
-| Tiene un único valor       | False                                                                                                   |
+| Es de un solo valor       | False                                                                                                   |
 | Está indexado             | False                                                                                                   |
 | En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 

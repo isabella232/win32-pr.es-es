@@ -1,21 +1,21 @@
 ---
-title: Cancelar una conexión de red
-description: Para cancelar una conexión a un recurso de red, una aplicación puede llamar a la función WNetCancelConnection2, tal y como se muestra en el ejemplo siguiente.
+title: Cancelación de una conexión de red
+description: Para cancelar una conexión a un recurso de red, una aplicación puede llamar a la función WNetCancelConnection2, como se muestra en el ejemplo siguiente.
 ms.assetid: a1c80222-4986-4c51-86a5-a1caacb4b2fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22cc5fb9536a5d073a6c99d8b49a00e3c2771546
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cbb5c74faa1e1f8b75d0e3b604d89615c6ad1481384a661253ee204dd3ee6081
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566925"
 ---
-# <a name="canceling-a-network-connection"></a>Cancelar una conexión de red
+# <a name="canceling-a-network-connection"></a>Cancelación de una conexión de red
 
-Para cancelar una conexión a un recurso de red, una aplicación puede llamar a la función [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a) , tal y como se muestra en el ejemplo siguiente.
+Para cancelar una conexión a un recurso de red, una aplicación puede llamar a la función [**WNetCancelConnection2,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a) como se muestra en el ejemplo siguiente.
 
-La llamada a **WNetCancelConnection2** especifica que una conexión de red ya no debe ser persistente. En el ejemplo se llama a un controlador de errores definido por la aplicación para procesar errores y la función [**TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para imprimir.
+La llamada a **WNetCancelConnection2** especifica que una conexión de red ya no debe ser persistente. El ejemplo llama a un controlador de errores definido por la aplicación para procesar errores y a la [**función TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para imprimir.
 
 
 ```C++
@@ -52,10 +52,10 @@ printf("Connection closed for z: drive.\n");
 
 
 
-La función [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) se admite por compatibilidad con versiones anteriores de Windows para grupos de trabajo. Para las nuevas aplicaciones, use [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
+La [**función WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) es compatible con versiones anteriores de Windows para grupos de trabajo. Para las nuevas aplicaciones, use [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
 
-Para obtener más información sobre el uso de un controlador de errores definido por la aplicación, consulte [recuperar errores de red](retrieving-network-errors.md).
+Para obtener más información sobre el uso de un controlador de errores definido por la aplicación, vea [Recuperación de errores de red.](retrieving-network-errors.md)
 
- 
+ 
 
- 
+ 

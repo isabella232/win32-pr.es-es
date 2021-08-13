@@ -1,11 +1,11 @@
 ---
-title: Atributo min-ticket-Age
+title: Atributo Min-Ticket-Age
 description: Este atributo determina el período de tiempo mínimo, en horas, que se puede usar el vale de concesión de vales (TGT) de un usuario para la autenticación Kerberos antes de que se pueda realizar una solicitud para renovar el vale.
 ms.assetid: 91a6a8f2-4d8d-4929-8e8d-ffdaa8b05cbe
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo min-ticket-Age
-- minTicketAge esquema de AD de atributos
+- Esquema de AD del atributo Min-Ticket-Age
+- Esquema de AD del atributo minTicketAge
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc43277bb3750ee0e759baa4348e85ef826ce010
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 44d145bc355693db149a98d5c38c200df2b9785dc6ad37af75c36d18e1add164
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687537"
 ---
-# <a name="min-ticket-age-attribute"></a>Atributo min-ticket-Age
+# <a name="min-ticket-age-attribute"></a>Atributo Min-Ticket-Age
 
 Este atributo determina el período de tiempo mínimo, en horas, que se puede usar el vale de concesión de vales (TGT) de un usuario para la autenticación Kerberos antes de que se pueda realizar una solicitud para renovar el vale.
 
@@ -29,14 +29,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Min-ticket-Age                       |
-| Nombre para mostrar de LDAP | minTicketAge                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Min-Ticket-Age                       |
+| Ldap-Display-Name | minTicketAge                         |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.80                |
-| System-ID-GUID    | bf9679c4-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679c4-0de6-11d0-a285-00aa003049e2 |
+| Sintaxis            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,13 +55,13 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -76,13 +76,13 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -97,13 +97,13 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -118,13 +118,13 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -139,13 +139,13 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -160,13 +160,13 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

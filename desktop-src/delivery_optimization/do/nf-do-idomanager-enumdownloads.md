@@ -1,8 +1,8 @@
 ---
-title: 'IDOManager:: EnumDownloads (método)'
-description: Recupera un puntero de interfaz a un objeto de enumerador que se usa para enumerar las descargas existentes.
+title: Método IDOManager::EnumDownloads
+description: Recupera un puntero de interfaz a un objeto enumerador que se usa para enumerar las descargas existentes.
 keywords:
-- 'IDOManager:: EnumDownloads (método)'
+- Método IDOManager::EnumDownloads
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: a1e7fed2955fdc1b5ac0c11cfebc34aa95517603
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 5442196b95e654755b4f84fe85375afb8f5b9372ddae453ca4ddffb567882fda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105720105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543832"
 ---
-# <a name="idomanagerenumdownloads-method"></a>IDOManager:: EnumDownloads (método)
+# <a name="idomanagerenumdownloads-method"></a>Método IDOManager::EnumDownloads
 
-Recupera un puntero de interfaz a un objeto de enumerador que se usa para enumerar las descargas existentes.
+Recupera un puntero de interfaz a un objeto enumerador que se usa para enumerar las descargas existentes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ HRESULT EnumDownloads(
 
 `category`
 
-Opcional. Nombre de la propiedad que se va a utilizar como categoría que se va a enumerar. Al pasar `nullptr` , se recuperarán todas las descargas existentes. Las siguientes propiedades se admiten como una categoría.
+Opcional. Nombre de propiedad que se va a usar como categoría para enumerar. Al `nullptr` pasar, se recuperarán todas las descargas existentes. Las siguientes propiedades se admiten como una categoría.
 
 - **DODownloadProperty_Id**
 - **DODownloadProperty_Uri**
@@ -48,16 +48,16 @@ Opcional. Nombre de la propiedad que se va a utilizar como categoría que se va 
 
 `ppEnum`
 
-La dirección de un puntero de interfaz a **IEnumUnknown**, que se usa para enumerar las descargas existentes. El contenido del enumerador depende del valor de *Category*. Las descargas incluidas en la interfaz de enumeración son las que crearon previamente el mismo llamador en esta función. 
+Dirección de un puntero de interfaz a **IEnumUnknown**, que se usa para enumerar las descargas existentes. El contenido del enumerador depende del valor de *la categoría*. Las descargas incluidas en la interfaz de enumeración son las que creó anteriormente el mismo autor de la llamada a esta función. 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](/windows/desktop/com/structure-of-com-error-codes) error [HRESULT](/windows/desktop/com/com-error-codes-10).
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

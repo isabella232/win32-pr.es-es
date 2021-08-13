@@ -1,23 +1,23 @@
 ---
-description: Un proceso de dos pasos extiende el modelo de transacción del Windows Installer a los productos que contienen Common Language Runtime ensamblados. Esto permite que el instalador revierta las instalaciones y eliminaciones de ensamblados que no se hayan realizado correctamente.
+description: Un proceso de dos pasos amplía el modelo de Windows del instalador a los productos que contienen ensamblados de Common Language Runtime. Esto permite al instalador revertir instalaciones y eliminaciones de ensamblados incorrectas.
 ms.assetid: 065a380c-4eb5-48a5-ab0a-7f1229b77898
 title: Reversión de ensamblados en la caché global de ensamblados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c84bc3107355cb50c17043ee571edff708ba3f6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef1379d8132e4a0789108bae4b26fc02c492f5ccb9a0ec7699bba3d9d4de04d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625830"
 ---
 # <a name="rollback-of-assemblies-in-the-global-assembly-cache"></a>Reversión de ensamblados en la caché global de ensamblados
 
-Un proceso de dos pasos extiende el modelo de transacción del Windows Installer a los productos que contienen Common Language Runtime ensamblados. Esto permite que el instalador revierta las instalaciones y eliminaciones de ensamblados que no se hayan realizado correctamente.
+Un proceso de dos pasos amplía el modelo de Windows del instalador a los productos que contienen ensamblados de Common Language Runtime. Esto permite al instalador revertir instalaciones y eliminaciones de ensamblados incorrectas.
 
-En el primer paso, el Windows Installer usa el marco de Microsoft .NET para crear una interfaz para cada ensamblado. En el Windows Installer se usan tantas interfaces como se están instalando los ensamblados. La confirmación de un ensamblado mediante una de estas interfaces solo significa que el ensamblado está listo para reemplazar cualquier ensamblado existente con el mismo nombre, pero aún no lo reemplaza. Si el usuario cancela la instalación o si se produce un error de instalación grave, el Windows Installer puede revertir el ensamblado a su estado anterior mediante la liberación de estas interfaces.
+Durante el primer paso, el instalador Windows usa microsoft .NET Framework para crear una interfaz para cada ensamblado. El Windows utiliza tantas interfaces como ensamblados estén instalados. Confirmar un ensamblado mediante una de estas interfaces solo significa que el ensamblado está listo para reemplazar cualquier ensamblado existente con el mismo nombre, aún no lo reemplaza. Si el usuario cancela la instalación o si se produce un error irrespeable de instalación, el instalador de Windows todavía puede revertir el ensamblado a su estado anterior mediante la publicación de estas interfaces.
 
-Una vez que la Windows Installer completa la instalación de todos los ensamblados y Windows Installer componentes, el instalador puede iniciar el segundo paso de la instalación. En el segundo paso se usa una función independiente para realizar la confirmación final de todos los nuevos ensamblados de Common Language Runtime. Esto reemplazará todos los ensamblados existentes que tengan el mismo nombre.
+Una vez que Windows Installer completa la instalación de todos los ensamblados y Windows Installer, el instalador puede iniciar el segundo paso de la instalación. El segundo paso usa una función independiente para realizar la confirmación final de todos los nuevos ensamblados de Common Language Runtime. Esto reemplaza los ensamblados existentes por el mismo nombre.
 
  
 

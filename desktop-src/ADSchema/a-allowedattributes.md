@@ -1,11 +1,11 @@
 ---
-title: Allowed-Attributes atributo)
+title: Allowed-Attributes atributo
 description: Atributos que se permitirán asignar a una clase.
 ms.assetid: ea73d3b9-51fc-486e-a5c7-f5123c5620bf
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Allowed-Attributes
-- allowedAttributes esquema de AD de atributos
+- Allowed-Attributes esquema de AD del atributo
+- Esquema de AD del atributo allowedAttributes
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3049a6d03d17cb68062a38508baa09a4cdc91d6f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1dcac94b6614ed84366f05829ea803a23d9245fed0502cade9df43ef1bbcc48d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688317"
 ---
-# <a name="allowed-attributes-attribute"></a>Allowed-Attributes atributo)
+# <a name="allowed-attributes-attribute"></a>Allowed-Attributes atributo
 
 Atributos que se permitirán asignar a una clase.
 
@@ -30,12 +30,12 @@ Atributos que se permitirán asignar a una clase.
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Allowed-Attributes                                              |
-| Nombre para mostrar de LDAP | allowedAttributes                                               |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | \-                                                              |
+| Ldap-Display-Name | allowedAttributes                                               |
+| Size              | \-                                                              |
+| Privilegio actualizar  | \-                                                              |
 | Frecuencia de actualización  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.913                                          |
-| System-ID-GUID    | 9a7ad940-ca53-11d1-bbd0-0080c76670c0                            |
+| System-Id-Guid    | 9a7ad940-ca53-11d1-bbd0-0080c76670c0                            |
 | Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -44,7 +44,7 @@ Atributos que se permitirán asignar a una clase.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Atributos que se permitirán asignar a una clase.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Atributos que se permitirán asignar a una clase.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Atributos que se permitirán asignar a una clase.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Atributos que se permitirán asignar a una clase.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Atributos que se permitirán asignar a una clase.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Atributos que se permitirán asignar a una clase.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Atributos que se permitirán asignar a una clase.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

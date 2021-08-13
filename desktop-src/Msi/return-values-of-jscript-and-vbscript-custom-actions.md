@@ -1,40 +1,40 @@
 ---
-description: Las acciones personalizadas escritas en JScript o Visual Basic, Scripting Edition (VBScript) pueden llamar a una función opcional. Estas funciones deben devolver uno de los valores que se muestran en la tabla siguiente.
+description: Las acciones personalizadas escritas JScript o Visual Basic, Scripting Edition (VBScript) puede llamar a una función opcional. Estas funciones deben devolver uno de los valores que se muestran en la tabla siguiente.
 ms.assetid: f05d0b94-e79e-440e-9f2b-99fe0e9e2646
-title: Valores devueltos de las acciones personalizadas de JScript y VBScript
+title: Valores devueltos de JScript y acciones personalizadas de VBScript
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cae96ecba320914b7b00dfa718deffdd56ae7eaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d50a2b225c59b0e4d1787f2eaceeb094d6fb2abe7f9d9600822b6295ef2dd273
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626095"
 ---
-# <a name="return-values-of-jscript-and-vbscript-custom-actions"></a>Valores devueltos de las acciones personalizadas de JScript y VBScript
+# <a name="return-values-of-jscript-and-vbscript-custom-actions"></a>Valores devueltos de JScript y acciones personalizadas de VBScript
 
-Las acciones personalizadas escritas en JScript o Visual Basic, Scripting Edition (VBScript) pueden llamar a una función opcional. Estas funciones deben devolver uno de los valores que se muestran en la tabla siguiente.
+Las acciones personalizadas escritas JScript o Visual Basic, Scripting Edition (VBScript) puede llamar a una función opcional. Estas funciones deben devolver uno de los valores que se muestran en la tabla siguiente.
 
 
 
 | Valor devuelto              | Value        | Descripción                                                                                                |
 |---------------------------|--------------|------------------------------------------------------------------------------------------------------------|
 | msiDoActionStatusNoAction | 0            | Acción no ejecutada.                                                                                       |
-| msiDoActionStatusSuccess  | IDOK = 1     | Acción completada correctamente.                                                                             |
-| msiDoActionStatusUserExit | IDCANCEL = 2 | Finalización prematura por usuario.                                                                             |
-| msiDoActionStatusFailure  | IDABORT = 3  | Error irrecuperable. Se devuelve si se produce un error durante el análisis o la ejecución de JScript o VBScript. |
+| msiDoActionStatusSuccess  | IDOK = 1     | La acción se completó correctamente.                                                                             |
+| msiDoActionStatusUserExit | IDCANCEL = 2 | Terminación prematura por parte del usuario.                                                                             |
+| msiDoActionStatusFailure  | IDABORT = 3  | Error irrecuperable. Se devuelve si se produce un error durante el análisis o la ejecución del JScript o VBScript. |
 | msiDoActionStatusSuspend  | IDRETRY = 4  | Secuencia suspendida que se reanudará más adelante.                                                                    |
-| msiDoActionStatusFinished | IDIGNORE = 5 | Omitir las acciones restantes. No es un error.                                                                      |
+| msiDoActionStatusFinished | IDIGNORE = 5 | Omita las acciones restantes. No es un error.                                                                      |
 
 
 
  
 
-Tenga en cuenta que Windows Installer traduce los valores devueltos de todas las acciones cuando escribe el valor devuelto en el archivo de registro. Por ejemplo, si el valor devuelto de la acción aparece como 1 (uno) en el archivo de registro, significa que la acción devolvió msiDoActionStatusSuccess. Para obtener más información sobre esta traducción, consulte [registro de valores devueltos de acciones](logging-of-action-return-values.md).
+Tenga en cuenta Windows instalador traduce los valores devueltos de todas las acciones cuando escribe el valor devuelto en el archivo de registro. Por ejemplo, si el valor devuelto de la acción aparece como 1 (uno) en el archivo de registro, significa que la acción devolvió msiDoActionStatusSuccess. Para obtener más información sobre esta traducción, vea [Registro de valores devueltos de acción](logging-of-action-return-values.md).
 
-Para devolver un valor distinto de Success desde una acción personalizada de script, debe usar un destino de función para la acción personalizada. La función de destino se especifica en la columna de destino de la [tabla CustomAction](customaction-table.md).
+Para devolver un valor distinto de correcto de una acción personalizada de script, debe usar un destino de función para la acción personalizada. La función de destino se especifica en la columna Target de [la tabla CustomAction](customaction-table.md).
 
-En el ejemplo de script siguiente se muestra cómo devolver Success o Failure desde una acción personalizada de VBScript.
+En el ejemplo de script siguiente se muestra cómo devolver una acción personalizada de VBScript correcta o con errores.
 
 
 ```VB
@@ -55,7 +55,7 @@ End Function
 
 
 
-Si este VBScript se incrustó en la [tabla binaria](binary-table.md) del paquete de instalación como MyCA.vbs, la entrada de la [tabla CustomAction](customaction-table.md) del script sería la siguiente:
+Si este VBScript se incrustase en la tabla [Binary](binary-table.md) del paquete de instalación como MyCA.vbs, la [entrada CustomAction Table](customaction-table.md) del script sería la siguiente:
 
 
 

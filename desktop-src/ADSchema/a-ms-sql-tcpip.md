@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-TCPIP
-description: El punto de conexión TCP.
+description: Punto de conexión TCP.
 ms.assetid: f61f7d54-958e-4f34-852e-222338c26de0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-TCPIP
-- Esquema de AD de atributos de mS-SQL-TCPIP
+- Esquema de AD del atributo MS-SQL-TCPIP
+- Esquema de AD del atributo mS-SQL-TCPIP
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 098d5e7818789774b425ad9e238f8f3b3a4d5378
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5d387ff6600618330c67549133169f4f8f321a72e0ff2d64ffec4b5dbdd9cf40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686528"
 ---
 # <a name="ms-sql-tcpip-attribute"></a>Atributo MS-SQL-TCPIP
 
-El punto de conexión TCP.
+Punto de conexión TCP.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-TCPIP                                |
-| Nombre para mostrar de LDAP | mS-SQL-TCPIP                                |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| Ldap-Display-Name | mS-SQL-TCPIP                                |
+| Size              | \-                                          |
+| Actualizar privilegios  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Al iniciar el sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1377                     |
-| System-ID-GUID    | 8ac263a6-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 8ac263a6-ccee-11d2-9993-0000f87a57d4        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ El punto de conexión TCP.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -76,13 +76,13 @@ El punto de conexión TCP.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -97,13 +97,13 @@ El punto de conexión TCP.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -118,13 +118,13 @@ El punto de conexión TCP.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -139,13 +139,13 @@ El punto de conexión TCP.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -160,13 +160,13 @@ El punto de conexión TCP.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

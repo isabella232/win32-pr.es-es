@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-IS-domain-para
-description: Vínculo hacia atrás para MS-DS-tiene-Domain-NC. Identifica los controladores de dominio que contienen esa partición como dominio principal. | atributo MS-DS-IS-domain-para
+title: Atributo ms-DS-Is-Domain-For
+description: Vínculo hacia atrás para ms-DS-Has-Domain-NCs. Identifica qué controladores de dominio tienen esa partición como dominio principal. | Atributo ms-DS-Is-Domain-For
 ms.assetid: ec63ddb4-c220-492b-92ce-e3da2069bcb8
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-IS-domain-para el esquema de AD de atributos
-- Esquema de AD de atributo msDS-IsDomainFor
+- Esquema de AD del atributo ms-DS-Is-Domain-For
+- Esquema de AD del atributo msDS-IsDomainFor
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56529497eb8081f53310e26b834194cdcdc11bf5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b63b0fce03a5e978172b5790cfeac3c9c6724244ab798fef6b0ca80508c22800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685115"
 ---
-# <a name="ms-ds-is-domain-for-attribute"></a>atributo MS-DS-IS-domain-para
+# <a name="ms-ds-is-domain-for-attribute"></a>Atributo ms-DS-Is-Domain-For
 
-Vínculo hacia atrás para [**MS-DS-tiene-Domain-NC**](a-msds-hasdomainncs.md). Identifica los controladores de dominio que contienen esa partición como dominio principal.
+Vínculo hacia atrás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Identifica qué controladores de dominio tienen esa partición como dominio principal.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-IS-domain-para                     |
-| Nombre para mostrar de LDAP | msDS-IsDomainFor                        |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Is-Domain-For                     |
+| Ldap-Display-Name | msDS-IsDomainFor                        |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1933                 |
-| System-ID-GUID    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
+| System-Id-Guid    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
 | Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -52,13 +52,13 @@ Vínculo hacia atrás para [**MS-DS-tiene-Domain-NC**](a-msds-hasdomainncs.md). 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2027                            |
+| Id. de vínculo                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -73,13 +73,13 @@ Vínculo hacia atrás para [**MS-DS-tiene-Domain-NC**](a-msds-hasdomainncs.md). 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2027                            |
+| Id. de vínculo                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -94,13 +94,13 @@ Vínculo hacia atrás para [**MS-DS-tiene-Domain-NC**](a-msds-hasdomainncs.md). 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2027                            |
+| Id. de vínculo                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

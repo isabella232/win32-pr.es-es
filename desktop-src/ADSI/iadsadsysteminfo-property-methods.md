@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsADSystemInfo (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsADSystemInfo obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsADSystemInfo (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsADSystemInfo obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 1cdaa610-4341-4825-b2f9-dd495a9147ff
 ms.tgt_platform: multiple
 keywords:
@@ -33,16 +33,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8dba53dfda4bb8f4dd3290cb2737cdeb4e8a6d3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 177926924d989686dae33c3403c07bfe5e69d0ba1762dd2a1a1cdee78a2175f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691616"
 ---
 # <a name="iadsadsysteminfo-property-methods"></a>Métodos de propiedad IADsADSystemInfo
 
-Los métodos de propiedad de la interfaz [**IADsADSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadsadsysteminfo) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsADSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadsadsysteminfo) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -73,7 +73,7 @@ HRESULT get_ComputerName(
 
 </dt> </dl> </dd> <dt>
 
-**Dominio**
+**DomainDNSName**
 </dt> <dd> <dl>
 
 Recupera el nombre DNS del dominio del equipo local, como "domainName.companyName.com".
@@ -101,7 +101,7 @@ HRESULT get_DomainDNSName(
 **DomainShortName**
 </dt> <dd> <dl>
 
-Recupera el nombre corto del dominio del equipo local, como "nombreDeDominio".
+Recupera el nombre corto del dominio del equipo local, como "domainName".
 
 <dt>
 
@@ -158,7 +158,7 @@ Determina si el dominio del equipo local está en modo nativo o mixto.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **bool**
+Tipo de datos de scripting: **BOOL**
 </dt> <dt>
 
 
@@ -176,7 +176,7 @@ HRESULT get_IsNativeMode(
 **PDCRoleOwner**
 </dt> <dd> <dl>
 
-Recupera el nombre distintivo del objeto de agente de servicios de directorio (DSA) del DC que posee el rol de controlador de dominio principal en el dominio del equipo local.
+Recupera el nombre distintivo del objeto del agente de servicio de directorio (DSA) para el controlador de dominio que posee el rol de controlador de dominio principal en el dominio del equipo local.
 
 <dt>
 
@@ -201,7 +201,7 @@ HRESULT get_PDCRoleOwner(
 **SchemaRoleOwner**
 </dt> <dd> <dl>
 
-Recupera el nombre distintivo del objeto de agente de servicios de directorio (DSA) del controlador de dominio al que pertenece el rol de maestro de esquema en el bosque del equipo local.
+Recupera el nombre distintivo del objeto del agente de servicio de directorio (DSA) para el controlador de dominio que posee el rol maestro de esquema en el bosque del equipo local.
 
 <dt>
 
@@ -223,10 +223,10 @@ HRESULT get_SchemaRoleOwner(
 
 </dt> </dl> </dd> <dt>
 
-**Nombresitio**
+**SiteName**
 </dt> <dd> <dl>
 
-Recupera el nombre del sitio del equipo local.
+Recupera el nombre de sitio del equipo local.
 
 <dt>
 
@@ -251,7 +251,7 @@ HRESULT get_SiteName(
 **UserName**
 </dt> <dd> <dl>
 
-Recupera el nombre distintivo Active Directory del usuario actual, que es el usuario que ha iniciado sesión o el usuario suplantado por el subproceso que realiza la llamada.
+Recupera el Active Directory nombre distintivo del usuario actual, que es el usuario que ha iniciado sesión o el usuario suplantado por el subproceso que realiza la llamada.
 
 <dt>
 
@@ -277,7 +277,7 @@ HRESULT get_UserName(
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de C++ se recupera la información del sistema de Windows. Por motivos de brevedad, se omite la comprobación de errores.
+En el siguiente ejemplo de código de C++ se recupera Windows información del sistema. Por brevedad, se omite la comprobación de errores.
 
 
 ```C++
@@ -333,7 +333,7 @@ int main()
 
 
 
-En el siguiente ejemplo de código de Visual Basic se recupera la información del sistema de Windows.
+En el ejemplo Visual Basic código siguiente se recupera la Windows del sistema.
 
 
 ```VB
@@ -346,7 +346,7 @@ Debug.print "PDC Role Owner: " & sys.PDCRoleOwner
 
 
 
-En el siguiente ejemplo de código de VBScript/ASP se recupera la información del sistema de Windows.
+El siguiente ejemplo de código DE VBScript/ASP recupera la Windows del sistema.
 
 
 ```VB
@@ -370,7 +370,7 @@ Response.Write "PDC Role Owner: " & sys.PDCRoleOwner
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsADSystemInfo se define como 5BB11929-AFD1-11D2-9CB9-0000F87A369E<br/>     |
 
@@ -383,7 +383,7 @@ Response.Write "PDC Role Owner: " & sys.PDCRoleOwner
 [**IADsADSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadsadsysteminfo)
 </dt> <dt>
 
-[**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+[**Cocreateinstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 </dt> </dl>
 
  

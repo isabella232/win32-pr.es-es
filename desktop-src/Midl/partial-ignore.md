@@ -1,9 +1,9 @@
 ---
-title: partial_ignore atributo)
-description: El atributo ACF \ \_ Ignore parcial \ define una versión especializada de los punteros \ Unique \ que proporciona la semántica opcional.
+title: partial_ignore atributo
+description: El atributo ACF \ partial ignore\ define una versión especializada de \unique\ punteros que proporciona semántica \_ de salida opcional.
 ms.assetid: 8a8f88b0-4a12-496d-bf77-ee57241b577b
 keywords:
-- partial_ignore el atributo MIDL
+- partial_ignore atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82d133275ca77032341d160b51b95b20235c8f2a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ac751e5b3bdb4a93c003e170333af8956048c9793630419fff0857d61f8c1f2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641978"
 ---
-# <a name="partial_ignore-attribute"></a>\_omitir el atributo parcial
+# <a name="partial_ignore-attribute"></a>atributo \_ partial ignore
 
-El atributo ACF **\[ \_ Ignore \] parcial** define una versión especializada de punteros **\[ únicos \]** que proporciona la semántica opcional de salida.
+El atributo ACF **\[ partial \_ ignore \]** define una versión especializada de **\[ punteros \]** únicos que proporciona semántica opcional.
 
 ``` syntax
 [ [function-attribute-list <>] ] type-specifier <> [pointer- <>declarator <>] function-name <>( [ partial_ignore [ , parameter-attribute-list <> ] ] type-specifier <> [declarator <>] , ...);
@@ -29,13 +29,13 @@ El atributo ACF **\[ \_ Ignore \] parcial** define una versión especializada de
 
 ## <a name="remarks"></a>Observaciones
 
-Al crear una función, es habitual permitir que los usuarios especifiquen un puntero no **nulo** a los datos devueltos opcionales, que a menudo se denominan punteros de salida opcionales. Normalmente no es necesario inicializar la memoria a la que apunta el usuario. Esta técnica representa un problema cuando la función se utiliza en RPC.
+Al crear una función, es habitual permitir a los usuarios especificar un puntero que no sea **NULL** para los datos devueltos opcionales, a menudo denominados punteros opcionales. La memoria a la que apunta el usuario no suele ser necesaria para inicializarse. Esta técnica representa un problema cuando la función se usa sobre RPC.
 
-Si el puntero de salida opcional es válido, pero apunta a datos no inicializados, RPC intenta calcular las referencias de los datos y enviarlos al servidor, lo que puede provocar un error en el cálculo de referencias y anular la llamada. Incluso si el cálculo de referencias se realiza correctamente, se envía al servidor una cantidad potencialmente grande de datos inútiles.
+Si el puntero opcional de salida es válido, pero apunta a datos sin inicializar, RPC intenta serializar los datos y enviarlos al servidor, lo que puede provocar un error en la serialización y anular la llamada. Incluso si la serialización se realiza correctamente, se envía al servidor una cantidad potencialmente grande de datos inutilizados.
 
-Estos problemas se resuelven marcando el puntero como **\[ in, out, Unique y \_ parcial \] Ignore**. Los cuatro atributos deben estar presentes. Cuando se calculan las referencias de un puntero **\[ \_ \] parcial** en el lado del cliente, los únicos datos que se envían al servidor son un indicador que muestra si el puntero es **null**. Si el puntero no es **null**, la rutina del lado servidor recibe un puntero válido a un bloque de memoria que se ha inicializado con ceros. Si el puntero es **null**, la rutina del lado servidor recibe un puntero **nulo** .
+Estos problemas se resuelven marcando el puntero como **\[ in, out, unique, partial \_ ignore \]**. Los cuatro atributos deben estar presentes. Cuando se **\[ serializa \_ un \]** puntero de ignore parcial en el lado cliente, los únicos datos enviados al servidor son un indicador que muestra si el puntero es **NULL.** Si el puntero no es **NULL,** la rutina del lado servidor recibe un puntero válido a un bloque de memoria que se ha inicializado con ceros. Si el puntero es **NULL,** la rutina del lado servidor recibe un **puntero NULL.**
 
-En esta situación, el tamaño máximo del puntero debe estar bien definido en tiempo de compilación o en función de los parámetros de entrada, ya que el servidor debe asignar espacio para la ubicación de memoria a la que se apunta. Por ejemplo, un puntero de **\[ cadena \]** simple no tiene un tamaño bien definido porque la cadena termina implícitamente con un carácter nulo. En este caso, si **\[ \_ se \]** especifica el tamaño máximo de la cadena mediante la adición de un tamaño, el atributo lograría el requisito de tamaño bien definido.
+En esta situación, el tamaño máximo del puntero debe definirse correctamente en tiempo de compilación o en función de los parámetros de entrada, ya que el servidor debe asignar espacio para la ubicación de memoria a la que se apunta. Por ejemplo, un puntero **\[ de cadena \]** simple no tiene un tamaño bien definido porque la cadena termina implícitamente con un carácter NULL. En este caso, si se especifica el tamaño máximo de la cadena mediante la adición de un atributo **\[ size \_ \] is,** se lograría el requisito de tamaño bien definido.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -48,12 +48,12 @@ void MoveLeft([in, out, unique, partial_ignore] long *pPrevPosition);
 
 <dl> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

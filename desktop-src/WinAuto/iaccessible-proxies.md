@@ -1,34 +1,34 @@
 ---
-title: Proxies de IAccessible
-description: Los proxies IAccessible proporcionan información de accesibilidad predeterminada para los elementos de interfaz de usuario estándar, los menús de usuario y los controles comunes de COMCTL y COMCTL32.
+title: Servidores proxy IAccessible
+description: Los servidores proxy IAccessible proporcionan información de accesibilidad predeterminada para los controles USER de elementos de interfaz de usuario estándar, los menús USER y los controles comunes de COMCTL y COMCTL32.
 ms.assetid: 236c2064-de44-4021-8825-f1519312dbfc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53dcb4cae8980e4003d9915c6783e4ddb043a8c8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c7a416c29021aca0dd99356792ae96f6a77e137e8c0ca0c884ba941229dd4b83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566060"
 ---
-# <a name="iaccessible-proxies"></a>Proxies de IAccessible
+# <a name="iaccessible-proxies"></a>Servidores proxy IAccessible
 
-Los proxies [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) proporcionan información de accesibilidad predeterminada para los elementos de la interfaz de usuario estándar: controles de usuario, menús de usuario y controles comunes de COMCTL y comctl32. Esta compatibilidad predeterminada se expone a través de los objetos **IAccessible** creados por Oleacc.dll y ofrece soporte técnico de Microsoft Active Accessibility sin ningún trabajo de desarrollo de servidor adicional. Después, el servidor puede usar la [API de anotación dinámica](dynamic-annotation-api.md) para modificar gran parte de la información expuesta por Oleacc.dll, pero no tiene control total.
+Los servidores proxy [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) proporcionan información de accesibilidad predeterminada para los elementos de interfaz de usuario estándar: controles USER, menús USER y controles comunes de COMCTL y COMCTL32. Esta compatibilidad predeterminada se expone a través de objetos **IAccessible** creados por Oleacc.dll y ofrece compatibilidad Microsoft Active Accessibility sin trabajo adicional de desarrollo del servidor. A continuación, el servidor puede usar [la API de](dynamic-annotation-api.md) anotación dinámica para modificar gran parte de la información expuesta por Oleacc.dll, pero no tiene control completo.
 
 ## <a name="creating-a-proxy"></a>Creación de un proxy
 
-Para determinar si un elemento de la interfaz de usuario es compatible de forma nativa con la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , Oleacc.dll le envía un mensaje de [**WM \_ GETOBJECT**](wm-getobject.md) . Un valor devuelto distinto de cero significa que el elemento es compatible de forma nativa con Microsoft Active Accessibility y proporciona su propia compatibilidad de **IAccessible** . Sin embargo, si el valor devuelto es cero, Oleacc.dll proporciona un objeto proxy para el elemento de la interfaz de usuario e intenta devolver información significativa en su nombre. Para obtener más información acerca de **WM \_ GetObject**, consulte [how \_ GetObject Works](how-wm-getobject-works.md).
+Para determinar si un elemento de la interfaz de usuario admite de forma nativa la interfaz [**IAccessible,**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) Oleacc.dll envía un [**mensaje \_ GETOBJECT de WM.**](wm-getobject.md) Un valor devuelto distinto de cero significa que el elemento admite Microsoft Active Accessibility y proporciona su propia **compatibilidad con IAccessible.** Sin embargo, si el valor devuelto es cero, Oleacc.dll proporciona un objeto proxy para el elemento de interfaz de usuario e intenta devolver información significativa en su nombre. Para obtener más información sobre **WM \_ GETOBJECT**, vea [Cómo funciona WM \_ GETOBJECT](how-wm-getobject-works.md).
 
 ## <a name="what-information-is-exposed"></a>Qué información se expone
 
-Oleacc.dll usa el nombre de clase de Windows del elemento de la interfaz de usuario para determinar qué información se debe exponer para cada una de sus propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y cómo recopilar esa información. Por ejemplo, Oleacc.dll llama a la función [**GetWindowText**](/windows/desktop/api/winuser/nf-winuser-getwindowtexta) para recuperar la propiedad de [**nombre**](name-property.md) de un botón de método de envío estándar, pero llama a esta misma función para recuperar la propiedad [**Value**](value-property.md) de un control de edición estándar. En efecto, Oleacc.dll asigna cada método **IAccessible** a una llamada de función o un mensaje específico de Microsoft Win32 o específico del control. Mediante el uso de esta grafía especial basada en el nombre de clase, puede devolver información significativa a través de los proxies de **IAccessible** sin ninguna compatibilidad de Microsoft Active Accessibility en el servidor.
+Oleacc.dll usa el nombre de clase Windows del elemento de interfaz de usuario para determinar qué información se debe exponer para cada una de sus [**propiedades IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y cómo recopilar esa información. Por ejemplo, Oleacc.dll llama a la función [**GetWindowText**](/windows/desktop/api/winuser/nf-winuser-getwindowtexta) para recuperar la propiedad [**Name**](name-property.md) de un botón de inserción estándar, pero llama a esta misma función para recuperar la propiedad [**Value**](value-property.md) de un control de edición estándar. En efecto, Oleacc.dll asigna cada método **IAccessible** a una llamada de función o mensaje específico del control o Microsoft Win32 adecuado. Mediante el uso de mayúsculas y minúsculas especiales basadas en el nombre de clase, puede devolver información significativa a través de servidores proxy **IAccessible** sin Microsoft Active Accessibility compatibilidad en el servidor.
 
-Las aplicaciones compiladas con elementos de interfaz de usuario estándar suelen obtener soporte completo de Microsoft Active Accessibility sin ningún trabajo de desarrollo adicional. Las excepciones a esta regla son los controles de los que se han creado subclases, que no almacenan sus propias cadenas (ausencia del estilo **HASSTRINGS** ) o que están dibujadas por el propietario. En estos casos, Oleacc.dll no puede recopilar la información que necesita porque la información se almacena fuera del control. Sin embargo, en muchos de estos escenarios, soluciones alternativas o el uso de la anotación dinámica, permita que el servidor coopere con los proxies proporcionados por Oleacc.dll.
+Las aplicaciones creadas con elementos de interfaz de usuario estándar normalmente obtienen compatibilidad Microsoft Active Accessibility sin trabajo de desarrollo adicional. Las excepciones a esta regla son controles que se han subclasificado, que no almacenan sus propias cadenas (ausencia del estilo **HASSTRINGS)** o que están dibujados por el propietario. En estos casos, Oleacc.dll puede recopilar la información que necesita porque la información se almacena fuera del control. Sin embargo, en muchos de estos escenarios, las soluciones alternativas establecidas o el uso de anotación dinámica permiten al servidor colaborar con los servidores proxy proporcionados por Oleacc.dll.
 
-## <a name="generic-proxy-objects"></a>Objetos de proxy genéricos
+## <a name="generic-proxy-objects"></a>Objetos proxy genéricos
 
-Si Oleacc.dll no reconoce el nombre de clase del elemento de la interfaz de usuario, crea un proxy genérico que expone tanta información como sea posible. Como máximo, incluye el rectángulo delimitador del objeto, el objeto primario, el nombre (de la [**\_ GETTEXT de WM**](/windows/desktop/winmsg/wm-gettext)) y cualquier elemento secundario en la jerarquía de ventanas.
+Si Oleacc.dll reconoce el nombre de clase del elemento de interfaz de usuario, crea un proxy genérico que expone tanta información como sea posible. Como máximo, esto incluye el rectángulo delimitador del objeto, el objeto primario, el nombre (de [**WM \_ GETTEXT)**](/windows/desktop/winmsg/wm-gettext)y los elementos secundarios de la jerarquía de ventanas.
 
- 
+ 
 
- 
+ 

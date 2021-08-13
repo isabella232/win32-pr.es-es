@@ -1,9 +1,9 @@
 ---
-title: ncacn_http atributo)
-description: La \_ palabra clave http ncacn identifica Microsoft Internet Information Server (IIS) como la familia de protocolos para el extremo.
+title: ncacn_http atributo
+description: La palabra clave http ncacn \_ identifica Microsoft Internet Information Server (IIS) como la familia de protocolos para el punto de conexión.
 ms.assetid: 92d2b44c-2eab-4474-826b-ccafd26db124
 keywords:
-- ncacn_http el atributo MIDL
+- ncacn_http atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7043aaa3a011b37a4b593a03b2d74658caab6fde
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cb7eed41849f59e497000e9ad56ae7c3166cf2d0212986fa9ba5f5ea910ed364
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103790905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642216"
 ---
-# <a name="ncacn_http-attribute"></a>\_atributo http ncacn
+# <a name="ncacn_http-attribute"></a>Atributo http ncacn \_
 
-La palabra clave **\_ http Ncacn** identifica Microsoft Internet Information Server (IIS) como la familia de protocolos para el extremo.
+La **palabra clave \_ http ncacn** identifica Microsoft Internet Information Server (IIS) como la familia de protocolos para el punto de conexión.
 
 ``` syntax
 ncacn_http:rpc_server[endpoint]
@@ -31,29 +31,29 @@ ncacn_http:rpc_server[endpoint]
 
 <dl> <dt>
 
-*\_servidor RPC* 
+*servidor \_ rpc* 
 </dt> <dd>
 
-La dirección de Internet o el nombre del equipo en el que se ejecuta el proceso del servidor RPC.
+La dirección de Internet o el nombre de la máquina en la que se ejecuta el proceso de servidor RPC.
 
 </dd> <dt>
 
-*finales* 
+*endpoint* 
 </dt> <dd>
 
-El puerto TCP/IP conocido (estático) en el que el proceso de servidor RPC está escuchando.
+Puerto TCP/IP conocido (estático) en el que escucha el proceso del servidor RPC.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La identificación de Microsoft Internet Information Server (IIS) como la familia de protocolos permite que las aplicaciones cliente y servidor se comuniquen a través de Internet mediante Microsoft Internet Information Server (IIS) como proxy. Dado que las llamadas se tunelizan a través de un puerto HTTP establecido, pueden atravesar firewalls.
+La identificación de Microsoft Internet Information Server (IIS) como familia de protocolos permite que las aplicaciones cliente y servidor se comuniquen a través de Internet mediante Microsoft Internet Information Server (IIS) como proxy. Dado que las llamadas se tunelización a través de un puerto HTTP establecido, pueden cruzar firewalls.
 
-Todas las aplicaciones de cliente y servidor RPC pueden admitir el protocolo **\_ http ncacn** siempre que se encuentren en la red de un servidor de Internet Information Server. IIS se pone en contacto con el servidor RPC y establece un socket TCP/IP, que mantiene para el cliente. IIS negocia una conexión TCP/IP con el servidor RPC y, una vez completada la negociación, actúa como proxy RPC y reenvía datos entre el socket TCP/IP del cliente y el socket TCP/IP del servidor. Cuando el proxy RPC de IIS detecta un cierre de sesión en el cliente o en el lado del servidor, cierra el socket restante.
+Cualquier aplicación cliente y servidor RPC puede admitir el protocolo **\_ http ncacn** siempre y cuando estén en red a un servidor de Internet Information Server. IIS se pone en contacto con el servidor RPC y establece un socket TCP/IP, que mantiene para el cliente. IIS negocia una conexión TCP/IP con el servidor RPC y, una vez completada la negociación, actúa como proxy RPC, reenviando datos entre el socket TCP/IP del lado cliente y el socket TCP/IP del lado servidor. Cuando el proxy RPC de IIS detecta un cierre de sesión en el cliente o en el lado servidor, cierra el socket restante.
 
-La aplicación cliente utiliza implícitamente el enlace estático a IIS, pero el servidor puede utilizar extremos dinámicos, con la RPCSS del servidor (asignador de extremos) que resuelve el puerto del servidor RPC. Si IIS está en un equipo diferente que el servidor RPC, IIS recibe la llamada remota, Contacts RPCSS en el equipo del servidor RPC para obtener el extremo de proceso del servidor y, a continuación, reenvía la llamada al servidor RPC adecuado.
+La aplicación cliente usa implícitamente el enlace estático a IIS, pero el servidor puede usar puntos de conexión dinámicos, con el RPCSS del servidor (asignador de puntos de conexión) resolviendo el puerto del servidor RPC. Si IIS está en un equipo diferente al servidor RPC, recibe la llamada remota, se pone en contacto con RPCSS en el equipo del servidor RPC para obtener el punto de conexión de proceso del servidor y, a continuación, reenvía la llamada al servidor RPC adecuado.
 
-Si está instalado Internet Explorer, el transporte comprobará el registro para ver si hay una configuración para un proxy HTTP. Si existe un proxy, el transporte lo usará.
+Si Internet Explorer está instalado, el transporte comprobará el Registro para ver si hay una configuración para un proxy HTTP. Si existe un proxy, el transporte lo usará.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,15 +84,15 @@ interface iface
 
 <dl> <dt>
 
-[**finales**](endpoint.md)
+[**Extremo**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**enlace de cadenas**](/windows/desktop/Rpc/string-binding)
+[**enlace de cadena**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

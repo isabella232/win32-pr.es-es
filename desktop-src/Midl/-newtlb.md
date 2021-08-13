@@ -1,9 +1,9 @@
 ---
-title: modificador/newtlb
+title: Modificador /newtlb
 description: Esta es la configuración predeterminada para elegir un formato de biblioteca de tipos.
 ms.assetid: 460bc6bc-0958-42bd-92e0-838b019ec79d
 keywords:
-- /newtlb modificador MIDL
+- Modificador /newtlb MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f864a4bd4d5e4c7c899cda839ae39d95791c7b23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b15ebed12b968738c1d5b26e264b88879ab61e2e6d4d587663b03365548c8b87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644033"
 ---
-# <a name="newtlb-switch"></a>modificador/newtlb
+# <a name="newtlb-switch"></a>Modificador /newtlb
 
 Esta es la configuración predeterminada para elegir un formato de biblioteca de tipos.
 
@@ -27,33 +27,33 @@ Esta es la configuración predeterminada para elegir un formato de biblioteca de
 midl /newtlb filename
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 Este modificador no tiene parámetros.
 
 ## <a name="remarks"></a>Observaciones
 
-En versiones recientes de Windows, este modificador no hace nada. En versiones no admitidas de Windows, si se especifica este modificador en la línea de comandos de MIDL, se generará un error.
+En versiones recientes de Windows, este modificador no hace nada. En las versiones no admitidas de Windows, la especificación de este modificador en la línea de comandos de MIDL generará un error.
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/newtlb nombrearchivo. idl**
+**midl /newtlb filename.idl**
 
-**MIDL FILENAME. idl**
+**midl filename.idl**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/oldtlb**](-oldtlb.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación PackageInSlot de CIM representa la relación entre las tarjetas de dispositivo y el chasis en el que se montan.
+description: La \_ asociación Cim PackageInSlot representa la relación entre las tarjetas de dispositivo y el chasis en el que se montan.
 ms.assetid: 439f28a8-24fd-4a53-9d42-48fabb58e84a
 ms.tgt_platform: multiple
-title: CIM_PackageInSlot (clase)
+title: CIM_PackageInSlot clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a17e133f16f838d6353b6d74ee2054bd5ec52cd0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1bd438bcf8c97c426adabd0a9fd9ce40c67679cfc36419234a30f1e3966e8086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679593"
 ---
-# <a name="cim_packageinslot-class"></a>\_Clase PackageInSlot de CIM
+# <a name="cim_packageinslot-class"></a>Cim \_ PackageInSlot (clase)
 
-La **Asociación \_ PackageInSlot de CIM** representa la relación entre las tarjetas de dispositivo y el chasis en el que se montan.
+La **\_ asociación Cim PackageInSlot** representa la relación entre las tarjetas de dispositivo y el chasis en el que se montan.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,33 +47,33 @@ class CIM_PackageInSlot : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ PackageInSlot** tiene estos tipos de miembros:
+La **clase \_ Cim PackageInSlot** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ PackageInSlot** tiene estas propiedades.
+La **clase \_ Cim PackageInSlot** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ranura CIM**
+Tipo de datos: **Ranura CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Una [**\_ ranura CIM**](cim-slot.md) que describe la ranura en la que se inserta el paquete físico.
+Una [**ranura CIM \_ que**](cim-slot.md) describe la ranura en la que se inserta el paquete físico.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ PhysicalPackage**
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ PhysicalPackage**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**máx**](/windows/desktop/WmiSdk/standard-qualifiers) . (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**\_ PhysicalPackage de CIM**](cim-physicalpackage.md) que describe el paquete en la ranura.
+Un [**paquete \_ físico CIM**](cim-physicalpackage.md) que describe el paquete en la ranura.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-**CIM \_ PackageInSlot** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+**CIM \_ PackageInSlot se** deriva de la [**dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

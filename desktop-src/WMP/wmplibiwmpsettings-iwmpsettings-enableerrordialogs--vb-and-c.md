@@ -3,9 +3,9 @@ title: Propiedad enableErrorDialogs de IWMPSettings
 description: La propiedad enableErrorDialogs obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.
 ms.assetid: 5310864b-e250-4fb1-8351-d1d7de312f21
 keywords:
-- propiedades de enableErrorDialogs Media Player de Windows
-- propiedad enableErrorDialogs de Windows Media Player, interfaz IWMPSettings
-- Interfaz IWMPSettings Windows Media Player, propiedad enableErrorDialogs
+- Propiedad enableErrorDialogs Reproductor de Windows Media
+- Propiedad enableErrorDialogs Reproductor de Windows Media , interfaz IWMPSettings
+- Interfaz IWMPSettings Reproductor de Windows Media , propiedad enableErrorDialogs
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c077117de5891133232c2ec1c3e163cd53f2030c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7573cc182ba3d47ec111e6e25b219d563bcc7148ab9504d14ad69fe649f672d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568442"
 ---
-# <a name="iwmpsettingsenableerrordialogs-property"></a>IWMPSettings:: enableErrorDialogs (propiedad)
+# <a name="iwmpsettingsenableerrordialogs-property"></a>Propiedad IWMPSettings::enableErrorDialogs
 
-La propiedad **enableErrorDialogs** obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.
+La **propiedad enableErrorDialogs** obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Public Property enableErrorDialogs As System.Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un valor **System. Boolean** que indica si los cuadros de diálogo de error se muestran automáticamente. El valor predeterminado es **true**.
+Valor **System.Boolean** que indica si los cuadros de diálogo de error se muestran automáticamente. El valor predeterminado es **true**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Un valor **System. Boolean** que indica si los cuadros de diálogo de error se m
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

@@ -1,7 +1,7 @@
 ---
 description: Elimina un grupo de recursos.
 ms.assetid: bc3111a4-9687-49ec-890e-190358230c53
-title: Método DeletePool de la clase Msvm_ResourcePoolConfigurationService
+title: Método DeletePool de la Msvm_ResourcePoolConfigurationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 84273daa0aa30dca8722d90d4fcec22b88325bad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 110c380973b500e8c89b399cd688a6624e7059dc14c711dd2b1e356c6fb07c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118645732"
 ---
-# <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método DeletePool de la \_ clase ResourcePoolConfigurationService de MSVM
+# <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método DeletePool de la clase ResourcePoolConfigurationService de Msvm \_
 
-Elimina un grupo de recursos. Para eliminar correctamente un grupo de recursos, no puede haber ninguna asignación pendiente o se producirá un error en la eliminación con 32774 (en uso). Si el grupo de recursos de servidor es un grupo de recursos raíz, los recursos del host se devuelven al sistema subyacente.
+Elimina un grupo de recursos. Para eliminar correctamente un grupo de recursos, no puede haber ninguna asignación pendiente o se producirá un error en la eliminación con 32774 (en uso). Si el grupo de recursos es un grupo de recursos raíz, los recursos de host se devuelven al sistema subyacente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 DeletePool(
 
 <dl> <dt>
 
-*Grupo* \[ de de\]
+*Grupo* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de la clase [**\_ ResourcePool de CIM**](cim-resourcepool.md) que representa el grupo que se va a eliminar.
+Referencia a una instancia de la clase [**\_ ResourcePool de CIM**](cim-resourcepool.md) que representa el grupo que se debe eliminar.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-**Trabajo completado sin errores** (0)
+**Trabajo completado sin error** (0)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -69,7 +69,7 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
 **Error** (32768)
@@ -84,16 +84,16 @@ Este método devuelve uno de los valores siguientes.
 **Desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
 **En uso** (32774)
 </dt> <dt>
 
-**Estado no válido** (32775)
+**Estado no** válido (32775)
 </dt> <dt>
 
 **Tipo de recurso incorrecto para el grupo** (32776)
@@ -102,22 +102,22 @@ Este método devuelve uno de los valores siguientes.
 **No disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria no suficiente** (32778)
 </dt> <dt>
 
-**Proveedor reservado** (32779)
+**Vendor Reserved** (32779)
 </dt> <dt>
 
 **Recursos insuficientes** (32780)
 </dt> <dt>
 
-**No se encontró el objeto** (32781.. 32787)
+**Objeto no encontrado** (32781..32787)
 </dt> <dt>
 
-**Existe el objeto** (32788)
+**Objeto existe** (32788)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -126,10 +126,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -138,7 +138,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md)
+[**Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: vararg (atributo)
-description: El atributo \ vararg \ especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo VARIANT que contenga todos los parámetros restantes.
+description: El atributo \ lerg\ especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo VARIANT que contenga todos los parámetros restantes.
 ms.assetid: df0995d3-5266-4a13-90aa-d78bfa753e0e
 keywords:
-- atributo vararg MIDL
+- atributo indórg MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c3880a3713daaff13fe827beb989dd377440af4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3848393f6bad82d6793e34ba6f4da803c7dd64803c1c40e4ea05487ea141ec48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641013"
 ---
 # <a name="vararg-attribute"></a>vararg (atributo)
 
-El atributo **\[ vararg \]** especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo **Variant** que contenga todos los parámetros restantes.
+El **\[ atributo \] lerg** especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo **VARIANT** que contenga todos los parámetros restantes.
 
 ``` syntax
 [vararg [, optional-attributes]] return-type function-name(
@@ -33,17 +33,17 @@ El atributo **\[ vararg \]** especifica que la función toma un número variable
 
 <dl> <dt>
 
-*opcional: atributos* 
+*optional-attributes* 
 </dt> <dd>
 
-Especifica cero o más atributos que se van a aplicar a la función. Separe varios atributos con comas.
+Especifica cero o más atributos que se aplicarán a la función. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
-El tipo de los datos devueltos por el procedimiento remoto al finalizar.
+Tipo de los datos devueltos por el procedimiento remoto tras la finalización.
 
 </dd> <dt>
 
@@ -54,30 +54,30 @@ Nombre del procedimiento remoto.
 
 </dd> <dt>
 
-*Optional-param-Attributes* 
+*optional-param-attributes* 
 </dt> <dd>
 
-Especifica cero o más atributos que se van a aplicar al parámetro de función inmediatamente después de la lista de atributos.
+Especifica cero o más atributos que se aplicarán al parámetro de función inmediatamente después de la lista de atributos.
 
 </dd> <dt>
 
-*lista de parámetros* 
+*param-list* 
 </dt> <dd>
 
-Especifica todos los parámetros, guarda el parámetro final, varying.
+Especifica todos los parámetros y guarda el parámetro final, variable.
 
 </dd> <dt>
 
-*nombre del último parámetro* 
+*last-param-name* 
 </dt> <dd>
 
-Nombre del parámetro varying.
+Nombre del parámetro variable.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-No se pueden aplicar los **\[** [](optional.md) **\]** atributos opcionales o **\[** [**DefaultValue**](defaultvalue.md) **\]** a los parámetros de una función que tenga el atributo **\[ vararg \]** .
+No se pueden aplicar **\[** [**los atributos opcional**](optional.md) o **\]** **\[** [**defaultvalue**](defaultvalue.md) **\]** **\[ \]** a ningún parámetro de una función que tenga el atributo .
 
 ## <a name="examples"></a>Ejemplos
 
@@ -89,7 +89,7 @@ No se pueden aplicar los **\[** [](optional.md) **\]** atributos opcionales o **
 
 <dl> <dt>
 
-[**DefaultValue**](defaultvalue.md)
+[**Defaultvalue**](defaultvalue.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
@@ -98,12 +98,12 @@ No se pueden aplicar los **\[** [](optional.md) **\]** atributos opcionales o **
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**opta**](optional.md)
+[**Opcional**](optional.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,30 +1,30 @@
 ---
-title: Mensajes del portapapeles
-description: . | Mensajes del portapapeles
+title: Mensajes del Portapapeles
+description: . | Mensajes del Portapapeles
 ms.assetid: d6c9d2b2-ee77-4c15-a859-989efbf89a31
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0220610c949ba28c5d0f01f0fb6576bfd2b1ae0
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c8a8ab9c379ab35014d838f4579d4138d8f2a8bf9e13ac4962776b3bad34f4f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545556"
 ---
-# <a name="clipboard-messages"></a>Mensajes del portapapeles
+# <a name="clipboard-messages"></a>Mensajes del Portapapeles
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**\_borrado de WM**](wm-clear.md)
--   [**copia de WM \_**](wm-copy.md)
--   [**cortar de WM \_**](wm-cut.md)
--   [**pegar de WM \_**](wm-paste.md)
+-   [**WM \_ CLEAR**](wm-clear.md)
+-   [**WM \_ COPY**](wm-copy.md)
+-   [**WM \_ CUT**](wm-cut.md)
+-   [**WM \_ PASTE**](wm-paste.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**deshacer de WM \_**](/windows/desktop/Controls/wm-undo)
+[**WM \_ UNDO**](/windows/desktop/Controls/wm-undo)
 </dt> </dl>
 
  

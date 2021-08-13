@@ -1,6 +1,6 @@
 ---
-title: RoFailFastWithErrorContextInternal2 función)
-description: Genera una excepción no continuada en el proceso actual y también permite incluir el contexto de error adicional aún no capturado por el sistema operativo.
+title: Función RoFailFastWithErrorContextInternal2
+description: Genera una excepción no continuable en el proceso actual y también permite incluir contextos de error adicionales que el sistema operativo aún no ha capturado.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 03/13/2020
@@ -16,16 +16,16 @@ api_location:
 api_name:
 - RoFailFastWithErrorContextInternal2
 targetos: Windows
-ms.openlocfilehash: 84584c339851ecbf8df5d6dbda2aaa575ca6487b
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: a2e8e2e357b7c4768596ca36cb48cdf1bb2cfdbd839ecc6949a607975d6000c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105720182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560631"
 ---
-# <a name="rofailfastwitherrorcontextinternal2-function"></a>RoFailFastWithErrorContextInternal2 función)
+# <a name="rofailfastwitherrorcontextinternal2-function"></a>Función RoFailFastWithErrorContextInternal2
 
-Genera una excepción no continuada en el proceso actual y también permite incluir el contexto de error adicional aún no capturado por el sistema operativo (SO).
+Genera una excepción no continuable en el proceso actual y también permite incluir contextos de error adicionales que el sistema operativo (SO) aún no ha capturado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,19 +43,19 @@ void WINAPI RoFailFastWithErrorContextInternal2(
 
 Tipo: **[HRESULT](../../com/structure-of-com-error-codes.md)**
 
-**HRESULT** asociado al error actual. La excepción se produce para cualquier valor de *hrError*.
+HRESULT **asociado** al error actual. La excepción se produce para cualquier valor *de hrError.*
 
 `cStowedExceptions`
 
-Tipo: **[ULong](../../winprog/windows-data-types.md)**
+Tipo: **[ULONG](../../winprog/windows-data-types.md)**
 
-Número de elementos de la matriz *aStowedExceptionPointers* .
+Número de elementos de la matriz *aStowedExceptionPointers.*
 
 `aStowedExceptionPointers`
 
 Tipo: **[PSTOWED_EXCEPTION_INFORMATION_V2](../../wer/stowed-exception-information-v2.md)\[\]**
 
-Matriz de punteros a estructuras de [**STOWED_EXCEPTION_INFORMATION_V2**](../../wer/stowed-exception-information-v2.md) . Cada estructura contiene información que describe una excepción estibada. La información de estas estructuras se envía a Informe de errores de Windows (WER) junto con la información de excepción estibada capturada por la plataforma.
+Matriz de punteros a [**STOWED_EXCEPTION_INFORMATION_V2**](../../wer/stowed-exception-information-v2.md) estructuras. Cada estructura contiene información que describe una excepción stowed. A continuación, la información de estas estructuras se envía a Informe de errores de Windows (WER) junto con la información de excepción stowed capturada por la plataforma.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -63,9 +63,9 @@ Esta función no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-**RoFailFastWithErrorContextInternal2** no está asociado a una biblioteca de importación ni a un archivo de encabezado. Puede llamarlo primero mediante la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) (para cargar `ComBase.dll` ) y, a continuación, llamando a la función [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para recuperar la dirección de **RoFailFastWithErrorContextInternal2**.
+**RoFailFastWithErrorContextInternal2** no está asociado a una biblioteca de importación ni a un archivo de encabezado. Puede llamarla primero mediante la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) (para cargar ) y, a continuación, llamando a la función GetProcAddress para recuperar la dirección `ComBase.dll` de **RoFailFastWithErrorContextInternal2**. [](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
-Para obtener más información, consulte [función RoFailFastWithErrorContext](/windows/win32/api/roerrorapi/nf-roerrorapi-rofailfastwitherrorcontext).
+Para obtener más información, [vea Función RoFailFastWithErrorContext](/windows/win32/api/roerrorapi/nf-roerrorapi-rofailfastwitherrorcontext).
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
@@ -73,8 +73,8 @@ Para obtener más información, consulte [función RoFailFastWithErrorContext](/
 | **Plataforma de destino** | Windows |
 | **Header** | N/D |
 | **Library** | N/D |
-| **DLL** | ComBase.dll |
+| **Dll** | ComBase.dll |
 
 ## <a name="see-also"></a>Vea también
 
-* [RoFailFastWithErrorContext función)](/windows/win32/api/roerrorapi/nf-roerrorapi-rofailfastwitherrorcontext)
+* [Función RoFailFastWithErrorContext](/windows/win32/api/roerrorapi/nf-roerrorapi-rofailfastwitherrorcontext)

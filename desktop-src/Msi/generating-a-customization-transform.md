@@ -1,19 +1,19 @@
 ---
-description: Puede generar un archivo de transformación mediante MsiDatabaseGenerateTransform o el método GenerateTransform del objeto de base de datos.
+description: Puede generar un archivo de transformación mediante MsiDatabaseGenerateTransform o el método GenerateTransform del objeto Database.
 ms.assetid: c016fcba-0d54-4b99-bcdd-36967b2c9da0
 title: Generar una transformación de personalización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f73609b7be60dbfe236d31ed5a865e86ff6e310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b790917100cc06da97e09fd8aabf45b580e62008d23c9fc5065e6005112d8d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118636003"
 ---
 # <a name="generating-a-customization-transform"></a>Generar una transformación de personalización
 
-Puede generar un archivo de transformación mediante [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) o el [**método GenerateTransform**](database-generatetransform.md) del objeto de [**base de datos**](database-object.md). Un ejemplo de esto se proporciona en el SDK de Windows Installer como la utilidad WiGenXfm.vbs. El siguiente fragmento de código, Gen.vbs, también muestra el método **GenerateTransform** y es para su uso con Windows Script Host.
+Puede generar un archivo de transformación mediante [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) o el [**método GenerateTransform**](database-generatetransform.md) del objeto [**Database**](database-object.md). Se proporciona un ejemplo de esto en el SDK Windows Installer como la utilidad WiGenXfm.vbs. El siguiente fragmento de código, Gen.vbs, también muestra el método **GenerateTransform** y se usa con Windows host de script.
 
 
 ```VB
@@ -44,9 +44,9 @@ Dim transform : transform = Database2.GenerateTransform(Database1,
 
 
 
-Para generar el archivo de transformación MNPtrans. MST desde la base de datos de MNP2000.msi original y la base de datos de MNP2000t.msi modificada en la [Personalización de una base de datos original](customizing-an-original-database.md), cambie los directorios a la carpeta que contiene Gen.vbs, la base de datos original y la base de datos del instalador actualizada y escriba la siguiente línea de comandos.
+Para generar el archivo de transformación MNPtrans.mst a partir de la base de datos MNP2000.msi original y la base de datos MNP2000t.msi que modificó en Personalización de una base de datos [original,](customizing-an-original-database.md)cambie los directorios a la carpeta que contiene Gen.vbs, la base de datos original y la base de datos del instalador actualizada y escriba la línea de comandos siguiente.
 
-**Cscript.exe Gen.vbs MNP2000.msi MNP2000t.msi MNPtrans. MST**
+**Cscript.exe Gen.vbs MNP2000.msi MNP2000t.msi MNPtrans.mst**
 
 [Continuar](adding-summary-information-to-customization-transform.md)
 

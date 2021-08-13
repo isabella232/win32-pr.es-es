@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-total-no-of-Flows
-description: El número total de flujos que puede tener un usuario determinado.
+title: Atributo ACS-Total-No-Of-Flows
+description: Número total de flujos que puede tener un usuario determinado.
 ms.assetid: cfbb4bc3-8233-47aa-8b67-88454d44e359
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo ACS-total-no-of-Flows
-- aCSTotalNoOfFlows esquema de AD de atributos
+- Esquema de AD del atributo ACS-Total-No-Of-Flows
+- aCSTotalNoOfFlows attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7e50d31a7d706bc7a6b4311f6edaa3fa66dd8f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 64c0382fc2b15f77fbccc7efb42973a33df3eca5e8fe6a2810b4fa47214231e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689191"
 ---
-# <a name="acs-total-no-of-flows-attribute"></a>Atributo ACS-total-no-of-Flows
+# <a name="acs-total-no-of-flows-attribute"></a>Atributo ACS-Total-No-Of-Flows
 
-El número total de flujos que puede tener un usuario determinado.
+Número total de flujos que puede tener un usuario determinado.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-total-no-of-Flows                |
-| Nombre para mostrar de LDAP | aCSTotalNoOfFlows                    |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Total-No-Of-Flows                |
+| Ldap-Display-Name | aCSTotalNoOfFlows                    |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.763               |
-| System-ID-GUID    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
+| System-Id-Guid    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -55,18 +55,18 @@ El número total de flujos que puede tener un usuario determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El número total de flujos que puede tener un usuario determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El número total de flujos que puede tener un usuario determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El número total de flujos que puede tener un usuario determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El número total de flujos que puede tener un usuario determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El número total de flujos que puede tener un usuario determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

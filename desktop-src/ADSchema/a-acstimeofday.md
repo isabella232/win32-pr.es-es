@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-Time-of-Day
-description: Horas del día a las que se aplica esta Directiva.
+title: Atributo acs-time-of-day
+description: Horas del día en las que se aplica esta directiva.
 ms.assetid: aacd604a-45cb-4815-bc6b-332cf090f4a2
 ms.tgt_platform: multiple
 keywords:
-- ACS-esquema de AD de atributos de hora del día
-- aCSTimeOfDay esquema de AD de atributos
+- Esquema de AD del atributo ACS-Time-Of-Day
+- Esquema de AD del atributo aCSTimeOfDay
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 212719ffa9e1aa37439def10a0991b256dd61fcb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3814b43e1f51561b5c43b959a9d4d18e7d56d02b7781692bcf46d150c925e783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689271"
 ---
-# <a name="acs-time-of-day-attribute"></a>Atributo ACS-Time-of-Day
+# <a name="acs-time-of-day-attribute"></a>Atributo acs-time-of-day
 
-Horas del día a las que se aplica esta Directiva.
+Horas del día en las que se aplica esta directiva.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | ACS-hora del día                             |
-| Nombre para mostrar de LDAP | aCSTimeOfDay                                |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Hora del día de ACS                             |
+| Ldap-Display-Name | aCSTimeOfDay                                |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.756                      |
-| System-ID-GUID    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
+| System-Id-Guid    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,18 +55,18 @@ Horas del día a las que se aplica esta Directiva.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Horas del día a las que se aplica esta Directiva.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Horas del día a las que se aplica esta Directiva.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Horas del día a las que se aplica esta Directiva.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Horas del día a las que se aplica esta Directiva.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Horas del día a las que se aplica esta Directiva.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 

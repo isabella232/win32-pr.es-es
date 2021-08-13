@@ -1,9 +1,9 @@
 ---
-title: control (atributo)
-description: El atributo \ control \ identifica una coclase o biblioteca como control COM, de la que un sitio de contenedor derivará bibliotecas de tipos o clases de objetos de componente adicionales.
+title: atributo de control
+description: El atributo \ control\ identifica una coclase o biblioteca como un control COM, del que un sitio de contenedor derivará bibliotecas de tipos adicionales o clases de objetos de componente.
 ms.assetid: c39dd4b6-743f-4888-8954-8b83584bdea5
 keywords:
-- MIDL (atributo de control)
+- MIDL del atributo de control
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 982327d581ddb606f733e9efbbcb89e2f9972cf4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1b6372ffb7f7d9f19769e419b12c0b109736a9867360224e023f1b622c653854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103789867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643684"
 ---
-# <a name="control-attribute"></a>control (atributo)
+# <a name="control-attribute"></a>atributo de control
 
-El atributo **\[ control \]** identifica una [**coclase**](coclass.md) o [**biblioteca**](library.md) como un control com, desde el que un sitio contenedor derivará bibliotecas de tipos o clases de objetos de componente adicionales.
+El atributo de **\[ control \]** identifica [](library.md) una [**coclase**](coclass.md) o biblioteca como un control COM, del que un sitio de contenedor derivará bibliotecas de tipos adicionales o clases de objetos de componente.
 
 ``` syntax
 [
@@ -39,30 +39,30 @@ library | coclass lib-or-coclassname
 
 <dl> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la instrucción [**Library**](library.md) o [**CoClass**](coclass.md) . Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican a la biblioteca [**o**](library.md) a la [**instrucción de la coclase.**](coclass.md) Separe varios atributos con comas.
 
 </dd> <dt>
 
-*lib o coclassname* 
+*lib-or-coclassname* 
 </dt> <dd>
 
-Especifica el nombre de la [**biblioteca**](library.md) o [**coclase**](coclass.md).
+Especifica el nombre de la biblioteca [**o**](library.md) [**la coclase**](coclass.md).
 
 </dd> <dt>
 
-*Figura* 
+*Definiciones* 
 </dt> <dd>
 
-Instrucciones de MIDL que especifican los miembros de la [**biblioteca**](library.md) o [**coclase**](coclass.md).
+Instrucciones MIDL que especifican los miembros de la [**biblioteca o**](library.md) [**la coclase**](coclass.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo le permite marcar las bibliotecas de tipos que describen los controles para que no se muestren en exploradores de tipos destinados a objetos no visuales.
+Este atributo permite marcar bibliotecas de tipos que describen controles para que no se muestren en exploradores de tipos destinados a objetos novisuales.
 
 ### <a name="flags"></a>Marcas
 
@@ -86,7 +86,7 @@ library Hello
 
 <dl> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -101,9 +101,9 @@ library Hello
 [**coclase**](coclass.md)
 </dt> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

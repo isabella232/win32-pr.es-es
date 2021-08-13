@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando se activa una aplicación de la tienda Windows.
+description: Se produce cuando se activa una Windows store.
 ms.assetid: CA0DB2D4-3417-48F5-8455-D87D0F323A1E
-title: 'Evento ICoreApplicationView:: Activated (Windows. ApplicationModel. Core. h)'
+title: Evento ICoreApplicationView::Activated (Windows. ApplicationModel.Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 612f7110aa149396b18815afe664ee404c70fc52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93e736d0fb5403fe76d6d402c261e6b7e5336dfc096d8c39d7b3300b93ab1332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560999"
 ---
-# <a name="icoreapplicationviewactivated-event"></a>Evento ICoreApplicationView:: Activated
+# <a name="icoreapplicationviewactivated-event"></a>Evento ICoreApplicationView::Activated
 
-Se produce cuando se activa una aplicación de la tienda Windows.
+Se produce cuando se activa una Windows store.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,7 +30,7 @@ void Activated(
 
 <dl> <dt>
 
-*controlador* \[ de de\]
+*controlador* \[ En\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
@@ -49,8 +49,8 @@ No llame al método [**Exit**](/previous-versions//hh438368(v=vs.85)) desde dent
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                               |
-| Encabezado<br/>                   | <dl> <dt>Windows. ApplicationModel. Core. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Windows. ApplicationModel. Core. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. ApplicationModel.Core.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.Core.idl</dt> </dl> |
 
 
 

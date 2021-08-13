@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-Applications
-description: No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
+description: No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 ms.assetid: 4907439e-8b1d-4e9e-8fce-6f4845f29c90
 ms.tgt_platform: multiple
 keywords:
-- Atributo de MS-SQL-Applications (esquema de AD)
-- atributo de mS-SQL-Applications (esquema de AD)
+- Esquema de AD del atributo MS-SQL-Applications
+- Esquema de AD del atributo mS-SQL-Applications
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 763f55b1e1adbe9b3fd23b43eb49948a487b18c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 75c7ebd61f3ef75d80e22b26bb060010bd6012b57e3435b7fba0161f7d9ad4b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686745"
 ---
 # <a name="ms-sql-applications-attribute"></a>Atributo MS-SQL-Applications
 
-No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
+No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-aplicaciones                         |
-| Nombre para mostrar de LDAP | mS-SQL-aplicaciones                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | MS-SQL-Applications                         |
+| Ldap-Display-Name | mS-SQL-Applications                         |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1400                     |
-| System-ID-GUID    | fbcda2ea-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | fbcda2ea-ccee-11d2-9993-0000f87a57d4        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
+| Es de un solo valor       | False                                                                                                                         |
 | Está indexado             | False                                                                                                                         |
 | En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -76,13 +76,13 @@ No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
+| Es de un solo valor       | False                                                                                                                         |
 | Está indexado             | False                                                                                                                         |
 | En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -97,13 +97,13 @@ No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
+| Es de un solo valor       | False                                                                                                                         |
 | Está indexado             | False                                                                                                                         |
 | En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -118,13 +118,13 @@ No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
+| Es de un solo valor       | False                                                                                                                         |
 | Está indexado             | False                                                                                                                         |
 | En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -139,13 +139,13 @@ No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
+| Es de un solo valor       | False                                                                                                                         |
 | Está indexado             | False                                                                                                                         |
 | En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -160,13 +160,13 @@ No se utiliza. Default se establece en, appl 1, appl 2, appl 3, appl 4 y appl 5.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
+| Es de un solo valor       | False                                                                                                                         |
 | Está indexado             | False                                                                                                                         |
 | En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |

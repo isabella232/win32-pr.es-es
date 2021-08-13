@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsSession (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsSession obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsSession (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsSession obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea Métodos de propiedad de interfaz.
 ms.assetid: b2366da7-c51c-4279-8931-2000d3110d72
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsSession ADSI
+- ADSI de métodos de propiedad IADsSession
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf7dd9abe25d731ba63385cd8d632c4212ea349
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8227c855be1704754be6e2b610f492eff26c8ceb966e3294c6672a8fbeb6dac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118690740"
 ---
 # <a name="iadssession-property-methods"></a>Métodos de propiedad IADsSession
 
-Los métodos de propiedad de la interfaz [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -45,7 +45,7 @@ Los métodos de propiedad de la interfaz [**IADsSession**](/windows/desktop/api/
 **Equipo**
 </dt> <dd> <dl>
 
-Nombre de la estación de trabajo del cliente.
+Nombre de la estación de trabajo cliente.
 
 <dt>
 
@@ -70,7 +70,7 @@ HRESULT get_Computer(
 **ComputerPath**
 </dt> <dd> <dl>
 
-ADsPath del objeto de equipo de la estación de trabajo cliente.
+ADsPath del objeto de equipo para la estación de trabajo cliente.
 
 <dt>
 
@@ -102,7 +102,7 @@ Tiempo transcurrido, en segundos, desde que se inició la sesión.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -127,7 +127,7 @@ Tiempo de inactividad, en segundos, de la sesión.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -170,7 +170,7 @@ HRESULT get_User(
 **UserPath**
 </dt> <dd> <dl>
 
-ADsPath del objeto de usuario para el usuario de esta sesión.
+El ADsPath del objeto de usuario para el usuario de esta sesión.
 
 <dt>
 
@@ -297,9 +297,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsSession se define como 398B7DA0-4AAB-11cf-AE2C-00AA006EBFB9<br/>          |
+| IID<br/>                      | IID \_ IADsSession se define como 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9<br/>          |
 
 
 
@@ -307,7 +307,7 @@ Cleanup:
 
 <dl> <dt>
 
-[**IADsFileServiceOperations:: Sessions**](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
+[**IADsFileServiceOperations::Sessions**](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
 </dt> <dt>
 
 [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession)

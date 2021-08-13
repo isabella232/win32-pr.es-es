@@ -1,9 +1,9 @@
 ---
-title: String. Content (propiedad)
+title: Propiedad String.Content
 description: Representa el contenido de un recurso de cadena.
 ms.assetid: 86f34cdc-1311-4f52-979f-201d71bbb9e9
 keywords:
-- Propiedad String. Content (cinta de Windows)
+- String.Content, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8912264e4f55568c190212227d2e305f9d676a1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 526062956c6ab7498caac8712ba932d6e7ac1f2dd6307359183d2529e35fc8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439510"
 ---
-# <a name="stringcontent-property"></a>String. Content (propiedad)
+# <a name="stringcontent-property"></a>Propiedad String.Content
 
 Representa el contenido de un recurso de cadena.
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 | Elemento                                                   |
 |-----------------------------------------------------------|
-| [**String@**](windowsribbon-element-string.md)<br/> |
+| [**Cadena**](windowsribbon-element-string.md)<br/> |
 
 
 
@@ -51,15 +51,15 @@ No hay elementos secundarios.
 
 Opcional.
 
-Puede aparecer como máximo una vez para cada elemento de [**cadena**](windowsribbon-element-string.md) .
+Puede producirse como máximo una vez para cada [**elemento String.**](windowsribbon-element-string.md)
 
-Este elemento contiene un valor de tipo *xs: String*. El valor está restringido a una cadena formada por una secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
+Este elemento contiene un valor de tipo *xs:string.* El valor está restringido a una cadena compuesta de cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
 
-La longitud máxima es sin límite.
+La longitud máxima no está desenlazada.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) con una declaración **String. Content** .
+En el ejemplo siguiente se muestra el marcado de [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) con una **declaración String.Content.**
 
 
 ```XML
@@ -80,8 +80,8 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command. LabelTi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Birth-Location atributo)
-description: La ubicación donde nació el usuario.
+title: Birth-Location atributo
+description: Ubicación en la que ha sido natural el usuario.
 ms.assetid: 566bdbf0-a298-465a-9dab-f9b013f3d98b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Birth-Location
-- birthLocation esquema de AD de atributos
+- Birth-Location esquema de AD del atributo
+- BirthLocation attribute AD Schema (Esquema de AD del atributo birthLocation)
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27d3ea30101c8797a9b12a20eb816e764f931227
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5d743e3a61942f6fecf2a8e8aa1ee267783ca44e3cb95d95e9fc4f4ab060c66c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103805114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688014"
 ---
-# <a name="birth-location-attribute"></a>Birth-Location atributo)
+# <a name="birth-location-attribute"></a>Birth-Location atributo
 
-La ubicación donde nació el usuario.
+Ubicación en la que ha sido natural el usuario.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Birth-Location                                        |
-| Nombre para mostrar de LDAP | birthLocation                                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | Administrador de dominio                                  |
+| Ldap-Display-Name | birthLocation                                         |
+| Size              | \-                                                    |
+| Privilegio actualizar  | Administrador de dominio                                  |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.332                                |
-| System-ID-GUID    | 1f0075f9-7e40-11d0-afd6-00c04fd930c9                  |
+| System-Id-Guid    | 1f0075f9-7e40-11d0-afd6-00c04fd930c9                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,18 +55,18 @@ La ubicación donde nació el usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | True                                                           |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La ubicación donde nació el usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | True                                                           |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La ubicación donde nació el usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | True                                                           |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La ubicación donde nació el usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | True                                                           |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La ubicación donde nació el usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | True                                                           |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La ubicación donde nació el usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | True                                                           |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-NC-RO-Replica-locations
-description: Atributo vinculado en un objeto de referencia cruzada para una partición. Muestra el controlador de dominio que debe hospedar la partición en modo de solo lectura.
+title: Atributo ms-DS-NC-RO-Replica-Locations
+description: Atributo vinculado en un objeto de referencia cruzada para una partición. Enumera el controlador de dominio que debe hospedar la partición de solo lectura.
 ms.assetid: 2473f201-abf7-4fb1-b005-c8db528aeab8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-NC-RO-Replica-locations
-- Esquema de AD del atributo msDS-NC-RO-Replica-locations
+- Esquema de AD del atributo ms-DS-NC-RO-Replica-Locations
+- Esquema de AD del atributo msDS-NC-RO-Replica-Locations
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 590661cb3dc096caa714066762f7b556e69c5145
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0a5fcbfe1b47eda3480cf18288a97dfbe5c21e7c66100954da4a7693222190cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684363"
 ---
-# <a name="ms-ds-nc-ro-replica-locations-attribute"></a>atributo MS-DS-NC-RO-Replica-locations
+# <a name="ms-ds-nc-ro-replica-locations-attribute"></a>Atributo ms-DS-NC-RO-Replica-Locations
 
-Atributo vinculado en un objeto de referencia cruzada para una partición. Muestra el controlador de dominio que debe hospedar la partición en modo de solo lectura.
+Atributo vinculado en un objeto de referencia cruzada para una partición. Enumera el controlador de dominio que debe hospedar la partición de solo lectura.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-NC-RO-Replica-ubicaciones           |
-| Nombre para mostrar de LDAP | msDS-NC-RO-Replica-ubicaciones            |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-NC-RO-Replica-Locations           |
+| Ldap-Display-Name | msDS-NC-RO-Replica-Locations            |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1967                 |
-| System-ID-GUID    | 3df793df-9858-4417-A701-735a1ecebf74    |
+| System-Id-Guid    | 3df793df-9858-4417-a701-735a1ecebf74    |
 | Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -52,13 +52,13 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Muest
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 2114                                       |
+| Id. de vínculo                | 2114                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -73,13 +73,13 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Muest
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 2114                                       |
+| Id. de vínculo                | 2114                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -94,13 +94,13 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Muest
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 2114                                       |
+| Id. de vínculo                | 2114                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |

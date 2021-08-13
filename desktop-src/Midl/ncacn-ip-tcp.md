@@ -1,9 +1,9 @@
 ---
-title: ncacn_ip_tcp atributo)
-description: La \_ \_ palabra clave TCP de IP de NCACN identifica TCP/IP como la familia de protocolos para el extremo.
+title: ncacn_ip_tcp atributo
+description: La palabra clave ncacn \_ ip tcp identifica TCP/IP como la familia de \_ protocolos para el punto de conexión.
 ms.assetid: 8142c667-9a5f-4066-a36d-1bb5ce551d21
 keywords:
-- ncacn_ip_tcp el atributo MIDL
+- ncacn_ip_tcp atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1adb57951e862ebcdfa6889aae170bfdf5a14f96
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c34ba0a872af79245469818121761a38d356316b53a31743f9ebf2cd66f72325
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642236"
 ---
-# <a name="ncacn_ip_tcp-attribute"></a>\_atributo TCP de IP de ncacn \_
+# <a name="ncacn_ip_tcp-attribute"></a>Atributo \_ tcp de ip \_ ncacn
 
-La palabra clave **\_ \_ TCP de IP de ncacn** identifica TCP/IP como la familia de protocolos para el extremo.
+La **palabra clave ncacn \_ ip \_ tcp** identifica TCP/IP como la familia de protocolos para el punto de conexión.
 
 ``` syntax
 endpoint("ncacn_ip_tcp:server-name[port-name]")
@@ -31,23 +31,23 @@ endpoint("ncacn_ip_tcp:server-name[port-name]")
 
 <dl> <dt>
 
-*nombre del servidor* 
+*server-name* 
 </dt> <dd>
 
-Especifica el nombre o la dirección de Internet del servidor, o host, del equipo. El nombre es una cadena de caracteres. La dirección de Internet es una notación de dirección de Internet común.
+Especifica el nombre o la dirección de Internet del servidor o host del equipo. El nombre es una cadena de caracteres. La dirección de Internet es una notación de dirección de Internet común.
 
 </dd> <dt>
 
-*nombre del puerto* 
+*port-name* 
 </dt> <dd>
 
-Especifica un número de 16 bits opcional. Los valores de menos de 1024 suelen estar reservados. Si no se especifica ningún valor, el servicio de asignación de puntos de conexión selecciona un valor *de nombre de Puerto* válido.
+Especifica un número opcional de 16 bits. Los valores de menor que 1024 normalmente se reservan. Si no se especifica ningún valor, el servicio de asignación de puntos de conexión selecciona un valor *de nombre de puerto* válido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La sintaxis de la cadena de puerto de transporte TCP/IP, como todas las cadenas de puerto, se define independientemente de la especificación IDL. El compilador realiza algunas comprobaciones de sintaxis, pero no garantiza que la especificación del punto de conexión sea correcta. Es posible que se notifiquen algunos errores en tiempo de ejecución en lugar de en tiempo de compilación.
+La sintaxis de la cadena de puerto de transporte TCP/IP, como todas las cadenas de puerto, se define independientemente de la especificación de IDL. El compilador realiza alguna comprobación de sintaxis, pero no garantiza que la especificación del punto de conexión sea correcta. Algunos errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -70,27 +70,27 @@ endpoint("ncacn_ip_tcp:128.10.2.30[1404]")
 
 <dl> <dt>
 
-[**finales**](endpoint.md)
+[**Extremo**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**\_TCP NB \_ ncacn**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**NP de ncacn \_**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**ncacn \_ SPX**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**enlace de cadenas**](/windows/desktop/Rpc/string-binding)
+[**enlace de cadena**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

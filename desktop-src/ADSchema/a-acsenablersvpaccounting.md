@@ -1,11 +1,11 @@
 ---
-title: ACS-enable-RSVP-Accounting (atributo)
-description: True si está habilitada la contabilidad de RSVP.
+title: Atributo ACS-Enable-RSVP-Accounting
+description: True si la contabilidad de RSVP está habilitada.
 ms.assetid: 9899a695-e414-4e8d-8651-794efa457d67
 ms.tgt_platform: multiple
 keywords:
-- ACS-enable-RSVP-esquema de AD de atributo de contabilidad
-- aCSEnableRSVPAccounting esquema de AD de atributos
+- Esquema de AD del atributo ACS-Enable-RSVP-Accounting
+- aCSEnableRSVPAccounting attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50984f9c42db04f11fd2177229c0cdef27ac1aac
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f55b08d3c575c1eee246a2a364d7096c0981f15e63c8575962be82d4c7ebfe48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689630"
 ---
-# <a name="acs-enable-rsvp-accounting-attribute"></a>ACS-enable-RSVP-Accounting (atributo)
+# <a name="acs-enable-rsvp-accounting-attribute"></a>Atributo ACS-Enable-RSVP-Accounting
 
-True si está habilitada la contabilidad de RSVP.
+True si la contabilidad de RSVP está habilitada.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-enable-RSVP-cuentas           |
-| Nombre para mostrar de LDAP | aCSEnableRSVPAccounting              |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Enable-RSVP-Accounting           |
+| Ldap-Display-Name | aCSEnableRSVPAccounting              |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.899               |
-| System-ID-GUID    | f072230e-aef5-11d1-bdcf-0000f80367c1 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | f072230e-aef5-11d1-bdcf-0000f80367c1 |
+| Sintaxis            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -55,18 +55,18 @@ True si está habilitada la contabilidad de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ True si está habilitada la contabilidad de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ True si está habilitada la contabilidad de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ True si está habilitada la contabilidad de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ True si está habilitada la contabilidad de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ True si está habilitada la contabilidad de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

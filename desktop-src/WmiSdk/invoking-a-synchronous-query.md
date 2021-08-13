@@ -1,26 +1,26 @@
 ---
-description: Una consulta sincrónica es una consulta que mantiene el control sobre el proceso de la aplicación mientras dure la consulta.
+description: Una consulta sincrónica es una consulta que mantiene el control sobre el proceso de la aplicación mientras dura la consulta.
 ms.assetid: 628e9a31-7b0d-4099-bfa5-56330bb4eb6b
 ms.tgt_platform: multiple
-title: Invocar una consulta sincrónica
+title: Invocación de una consulta sincrónica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d4bb2ff61a1c94bf7390a65d51e773ad943a45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f089ac5a2d315aa55fe7af7e648d3b001bae032b92ed5b7d67a1b6b120b96561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556123"
 ---
-# <a name="invoking-a-synchronous-query"></a>Invocar una consulta sincrónica
+# <a name="invoking-a-synchronous-query"></a>Invocación de una consulta sincrónica
 
-Una consulta sincrónica es una consulta que mantiene el control sobre el proceso de la aplicación mientras dure la consulta. Una consulta sincrónica requiere una única llamada de interfaz y, por lo tanto, es más sencilla que una llamada asincrónica. Sin embargo, una consulta sincrónica tiene la posibilidad de bloquear la aplicación para consultas o consultas grandes a través de una red.
+Una consulta sincrónica es una consulta que mantiene el control sobre el proceso de la aplicación mientras dura la consulta. Una consulta sincrónica requiere una sola llamada de interfaz y, por tanto, es más sencilla que una llamada asincrónica. Sin embargo, una consulta sincrónica tiene la posibilidad de bloquear la aplicación para consultas o consultas de gran tamaño a través de una red.
 
-En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónicos mediante PowerShell.
+En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónica mediante PowerShell.
 
-**Para emitir una consulta de datos sincrónicos en PowerShell**
+**Para emitir una consulta de datos sincrónica en PowerShell**
 
--   Describa la consulta a WMI mediante el cmdlet [Get-WMIObject](https://technet.microsoft.com/library/dd315379.aspx) de WMI y el parámetro *-query* . El cmdlet devuelve un solo objeto o una colección de objetos, en función del número de objetos que se ajusten a la consulta.
+-   Describa la consulta a WMI mediante el cmdlet [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx) de WMI y el *parámetro -query.* El cmdlet devuelve un único objeto o una colección de objetos, en función del número de objetos que quepa en la consulta.
 
     ```PowerShell
     Get-WmiObject -query "SELECT * FROM Win32_logicalDisk WHERE DeviceID = 'C:'"
@@ -28,11 +28,11 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónicos mediante C#.
+En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónica mediante C#.
 
-**Para emitir una consulta de datos sincrónicos en C# (Microsoft. Management. Infrastructure)**
+**Para emitir una consulta de datos sincrónica en C# (Microsoft.Management.Infrastructure)**
 
-1.  Describa la consulta a WMI mediante CimSession. QueryInstances. Este método devuelve una colección de objetos CimInstance.
+1.  Describa la consulta a WMI mediante CimSession.QueryInstances. Este método devuelve una colección de objetos CimInstance.
 
     ```CSharp
     using Microsoft.Management.Infrastructure;
@@ -45,7 +45,7 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-2.  Use técnicas estándar de colección de lenguaje C# para tener acceso a cada objeto devuelto.
+2.  Use técnicas de colección de lenguaje C# estándar para tener acceso a cada objeto devuelto.
 
     ```CSharp
     foreach (CimInstance drive in queryInstances)
@@ -56,13 +56,13 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónicos mediante C#.
+En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónica mediante C#.
 
-**Para emitir una consulta de datos sincrónicos en C# (System. Management)**
+**Para emitir una consulta de datos sincrónica en C# (System.Management)**
 
-1.  Cree la consulta con un objeto [ManagementObjectSearcher](/dotnet/api/system.management.managementobjectsearcher) y recupere la información con una llamada a [ManagementObjectSearcher. Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get).
+1.  Cree la consulta con un [objeto ManagementObjectSearcher](/dotnet/api/system.management.managementobjectsearcher) y recupere la información con una llamada a [ManagementObjectSearcher.Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get).
 
-    Este método devuelve un objeto [ManagementObjectCollection](/dotnet/api/system.management.managementobjectcollection) .
+    Este método devuelve un [objeto ManagementObjectCollection.](/dotnet/api/system.management.managementobjectcollection)
 
     ```CSharp
     using System.Management;
@@ -73,7 +73,7 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-2.  Use técnicas estándar de colección de lenguaje C# para tener acceso a cada objeto devuelto.
+2.  Use técnicas de colección de lenguaje C# estándar para tener acceso a cada objeto devuelto.
 
     ```CSharp
     foreach (ManagementObject drive in objCol)
@@ -84,11 +84,11 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónicos mediante VBScript.
+En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónica mediante VBScript.
 
-**Para emitir una consulta de datos sincrónicos en VBScript**
+**Para emitir una consulta de datos sincrónica en VBScript**
 
-1.  Describa la consulta a WMI mediante [**SWbemServices.ExecQuery**](swbemservices-execquery.md). Este método devuelve un [**SWbemObjectSet**](swbemobjectset.md).
+1.  Describa la consulta a WMI [**medianteSWbemServices.ExecQuery**](swbemservices-execquery.md). Este método devuelve [**un objeto SWbemObjectSet.**](swbemobjectset.md)
 
     ```VB
     GetObject("winmgmts:").ExecQuery _
@@ -97,7 +97,7 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-2.  Utilice técnicas de [colección](accessing-a-collection.md) de lenguajes de scripting estándar para tener acceso a cada objeto devuelto.
+2.  Use técnicas de colección de lenguajes [de scripting](accessing-a-collection.md) estándar para acceder a cada objeto devuelto.
 
     ```VB
     for each Service in _ 
@@ -109,17 +109,17 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónicos mediante C++.
+En el procedimiento siguiente se describe cómo emitir una consulta de datos sincrónica mediante C++.
 
 **Para emitir una consulta sincrónica en C++**
 
-1.  Describa la consulta a WMI a través de una llamada a [**IWbemServices:: ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
+1.  Describa la consulta a WMI mediante una llamada a [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
 
-    El método [**ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) toma una cadena de búsqueda de WQL como parámetro que describe la consulta. WMI realiza la consulta y devuelve un puntero de la interfaz [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) . A través de la interfaz **IEnumWbemClassObject** , puede tener acceso a las clases o instancias que componen el conjunto de resultados.
+    El [**método ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) toma una cadena de búsqueda WQL como parámetro que describe la consulta. WMI realiza la consulta y devuelve un puntero de interfaz [**IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) A través **de la interfaz IEnumWbemClassObject,** puede tener acceso a las clases o instancias que conste del conjunto de resultados.
 
-2.  Después de recibir la consulta, puede enumerar la consulta con una llamada a [**IEnumWbemClassObject:: Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next). Para obtener más información, consulte [enumeración de WMI](enumerating-wmi.md).
+2.  Después de recibir la consulta, puede enumerar la consulta con una llamada a [**IEnumWbemClassObject::Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next). Para obtener más información, [vea Enumeración de WMI.](enumerating-wmi.md)
 
-    En el ejemplo de código siguiente se requieren las siguientes referencias e \# instrucciones include para compilar correctamente.
+    En el ejemplo de código siguiente se requieren las siguientes referencias \# e instrucciones include para compilarse correctamente.
 
     ```C++
     #include <wbemidl.h>

@@ -1,7 +1,7 @@
 ---
 description: La propiedad Features es una propiedad de solo lectura que devuelve un objeto StringList que enumera el conjunto de características publicadas para el producto especificado.
 ms.assetid: feb8f09a-fa97-4fee-9082-8f04288af22f
-title: Propiedad Installer. Features
+title: Installer.Features, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 4f63ce80249fb8bd24d70f92e72c44420a13d798
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e31dfe2c487a151280a10c4fa7222c005f94c0eeb4ac4f3f5145d67ab600fe9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631477"
 ---
-# <a name="installerfeatures-property"></a>Propiedad Installer. Features
+# <a name="installerfeatures-property"></a>Installer.Features, propiedad
 
-La propiedad **Features** es una propiedad de solo lectura que devuelve un objeto [**StringList**](stringlist-object.md) que enumera el conjunto de características publicadas para el producto especificado.
+La **propiedad Features** es una propiedad de solo lectura que devuelve un objeto [**StringList**](stringlist-object.md) que enumera el conjunto de características publicadas para el producto especificado.
 
 Esta propiedad es de solo lectura.
 
@@ -41,7 +41,7 @@ Especifica el código de producto del producto.
 
 ## <a name="remarks"></a>Observaciones
 
-Para enumerar las características, una aplicación recorre en iteración el objeto [**StringList**](stringlist-object.md) mediante una construcción for each. Dado que las características no están ordenadas, todas las características nuevas tienen un índice arbitrario, lo que significa que la función puede devolver características en cualquier orden.
+Para enumerar las características, una aplicación recorre en iteración el [**objeto StringList**](stringlist-object.md) mediante una construcción For Each. Dado que las características no están ordenadas, cualquier nueva característica tiene un índice arbitrario, lo que significa que la función puede devolver características en cualquier orden.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Para enumerar las características, una aplicación recorre en iteración el obj
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

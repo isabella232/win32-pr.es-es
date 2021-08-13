@@ -1,11 +1,11 @@
 ---
-title: Address-Syntax atributo)
-description: Una gramática para codificar las propiedades de la tabla de presentación como una cadena.
+title: Address-Syntax atributo
+description: Gramática para codificar las propiedades de la tabla para mostrar como una cadena.
 ms.assetid: 809981da-8572-4a9f-a4c3-06cff95c8bdc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Address-Syntax
-- addressSyntax esquema de AD de atributos
+- Address-Syntax esquema de AD del atributo
+- Esquema de AD del atributo addressSyntax
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db7ae0a0d5a4672168329b546dd53c19697eec4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37734d2742d1297429995f56edd4a1667b6ffa64b776b8b61a50608c05ead0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688658"
 ---
-# <a name="address-syntax-attribute"></a>Address-Syntax atributo)
+# <a name="address-syntax-attribute"></a>Address-Syntax atributo
 
-Una gramática para codificar las propiedades de la tabla de presentación como una cadena.
+Gramática para codificar las propiedades de la tabla para mostrar como una cadena.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Address-Syntax                                        |
-| Nombre para mostrar de LDAP | addressSyntax                                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | addressSyntax                                         |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.255                                |
-| System-ID-GUID    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |
+| System-Id-Guid    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,18 +55,18 @@ Una gramática para codificar las propiedades de la tabla de presentación como 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Una gramática para codificar las propiedades de la tabla de presentación como 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Una gramática para codificar las propiedades de la tabla de presentación como 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Una gramática para codificar las propiedades de la tabla de presentación como 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Una gramática para codificar las propiedades de la tabla de presentación como 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Una gramática para codificar las propiedades de la tabla de presentación como 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 

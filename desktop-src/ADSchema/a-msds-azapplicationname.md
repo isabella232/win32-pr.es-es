@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Application-Name
+title: Atributo ms-DS-Az-Application-Name
 description: Cadena que identifica de forma única un objeto de aplicación.
 ms.assetid: 693a47f4-d3ae-4fae-8e5e-cbce41d00d45
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-Application-Name
-- Esquema de AD de atributo msDS-AzApplicationName
+- Esquema de AD del atributo ms-DS-Az-Application-Name
+- Esquema de AD del atributo msDS-AzApplicationName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24166af15a250ec284eeb600b81bb8bb7d264369
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4a9e095c256ab920c431516f1b103ac3b7d4df4b1552f652762ea6ed06c2a3a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685700"
 ---
-# <a name="ms-ds-az-application-name-attribute"></a>atributo MS-DS-AZ-Application-Name
+# <a name="ms-ds-az-application-name-attribute"></a>Atributo ms-DS-Az-Application-Name
 
 Cadena que identifica de forma única un objeto de aplicación.
 
@@ -29,13 +29,13 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-AZ-Application-Name                   |
-| Nombre para mostrar de LDAP | msDS-AzApplicationName                      |
-| Tamaño              | 128 caracteres                              |
-| Actualizar privilegio  | Administrador de AzRoles                               |
+| CN                | ms-DS-Az-Application-Name                   |
+| Ldap-Display-Name | msDS-AzApplicationName                      |
+| Size              | 128 caracteres                              |
+| Actualizar privilegios  | Administrador de AzRoles                               |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1798                     |
-| System-ID-GUID    | db5b0728-6208-4876-83b7-95d3e5695275        |
+| System-Id-Guid    | db5b0728-6208-4876-83b7-95d3e5695275        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,18 +54,18 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
+| Es de un solo valor       | True                                                            |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 

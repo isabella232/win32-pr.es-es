@@ -1,17 +1,17 @@
 ---
 description: La acción RegisterUser registra la información del usuario con el instalador para identificar al usuario de un producto.
 ms.assetid: da615cb4-d36d-4180-8f97-c9f83c0df1c6
-title: RegisterUser (acción)
+title: Acción RegisterUser
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 686628d29094f951994b072ad4451a383a405965
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f89d43d18839e806939b7a084d37840b9895fdc81efb79fc03867eebe4c5c57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626720"
 ---
-# <a name="registeruser-action"></a>RegisterUser (acción)
+# <a name="registeruser-action"></a>Acción RegisterUser
 
 La acción RegisterUser registra la información del usuario con el instalador para identificar al usuario de un producto.
 
@@ -33,19 +33,19 @@ No hay restricciones de secuencia.
 
 ## <a name="remarks"></a>Observaciones
 
-La acción RegisterUser no se realiza durante una instalación administrativa. Si el identificador de producto especificado por el usuario no se ha validado mediante la [Acción ValidateProductID](validateproductid-action.md), no se establece la propiedad [**ProductID**](productid.md) y esta acción no hace nada.
+La acción RegisterUser no se realiza durante una instalación administrativa. Si la acción [ValidateProductID](validateproductid-action.md)no valida el identificador de producto especificado por el usuario , la propiedad [**ProductID**](productid.md) no se establece y esta acción no hace nada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**NOMBRE**](username.md)
+[**nombre de usuario**](username.md)
 </dt> <dt>
 
-[**COMPAÑÍA**](companyname.md)
+[**Companyname**](companyname.md)
 </dt> <dt>
 
-[**IdProducto**](productid.md)
+[**Productid**](productid.md)
 </dt> </dl>
 
  

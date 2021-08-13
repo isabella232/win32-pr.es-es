@@ -1,11 +1,11 @@
 ---
 title: IWMPPlaylistCollection isDeleted (método)
-description: El método isDeleted devuelve un valor que indica si la lista de reproducción especificada está en la carpeta elementos eliminados.
+description: El método isDeleted devuelve un valor que indica si la lista de reproducción especificada está en la carpeta de elementos eliminados.
 ms.assetid: 02bc4b9f-6149-4fe2-8417-6484b22f2d74
 keywords:
-- método isDeleted Windows Media Player
-- método isDeleted Windows Media Player, interfaz IWMPPlaylistCollection
-- Interfaz IWMPPlaylistCollection Windows Media Player, método isDeleted
+- Método isDeleted Reproductor de Windows Media
+- Método isDeleted Reproductor de Windows Media , interfaz IWMPPlaylistCollection
+- Interfaz IWMPPlaylistCollection Reproductor de Windows Media , método isDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d4ce4a314378c5a4a211a52b99ea1b36ae1fda8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c332a524b334933d587929cdd0e5b5fa61bc15d9110260af8af8e472d7c05fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568482"
 ---
-# <a name="iwmpplaylistcollectionisdeleted-method"></a>IWMPPlaylistCollection:: isDeleted (método)
+# <a name="iwmpplaylistcollectionisdeleted-method"></a>IWMPPlaylistCollection::isDeleted (Método)
 
-El método **IsDeleted** devuelve un valor que indica si la lista de reproducción especificada está en la carpeta elementos eliminados.
+El **método isDeleted** devuelve un valor que indica si la lista de reproducción especificada está en la carpeta de elementos eliminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,16 +53,16 @@ Implements IWMPPlaylistCollection.isDeleted
 
 <dl> <dt>
 
-*pItem* \[ de\]
+*pItem* \[ En\]
 </dt> <dd>
 
-Una interfaz **WMPLib. IWMPPlaylist** para la lista de reproducción consultada.
+Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción consultada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. Boolean** que especifica si se eliminó la lista de reproducción.
+**System.Boolean que** especifica si se eliminó la lista de reproducción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Una interfaz **WMPLib. IWMPPlaylist** para la lista de reproducción consultada.
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior.<br/>                                                                     |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior.<br/>                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

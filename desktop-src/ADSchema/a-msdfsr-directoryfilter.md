@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-DirectoryFilter
+title: Atributo ms-DFSR-DirectoryFilter
 description: Contiene la cadena de filtro que se aplica a los directorios.
 ms.assetid: baea6575-80d3-4f69-8e98-47f4a5941388
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-DirectoryFilter
-- msDFSR-DirectoryFilter atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-DirectoryFilter
+- Esquema de AD del atributo msDFSR-DirectoryFilter
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3d8fe6ed8c5160b771f37f76c32944ef1ed0f9f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7978db7c7dbdb478574a05c5ca3622a1043c7acd85b967ccf813a3a1b6a65899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685871"
 ---
-# <a name="ms-dfsr-directoryfilter-attribute"></a>atributo MS-DFSR-DirectoryFilter
+# <a name="ms-dfsr-directoryfilter-attribute"></a>Atributo ms-DFSR-DirectoryFilter
 
 Contiene la cadena de filtro que se aplica a los directorios.
 
@@ -29,13 +29,13 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFSR-DirectoryFilter                     |
-| Nombre para mostrar de LDAP | msDFSR-DirectoryFilter                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DFSR-DirectoryFilter                     |
+| Ldap-Display-Name | msDFSR-DirectoryFilter                      |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.13                  |
-| System-ID-GUID    | 93c7b477-1f2e-4b40-b7bf-007e8d038ccf        |
+| System-Id-Guid    | 93c7b477-1f2e-4b40-b7bf-007e8d038ccf        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,18 +53,18 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
+| Es de un solo valor       | True                                                         |
 | Está indexado             | False                                                        |
 | En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | False                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                  |
+| Es de un solo valor       | True                                                                                                                                  |
 | Está indexado             | False                                                                                                                                 |
 | En el catálogo global      | False                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Clases usadas en        | [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | False                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                  |
+| Es de un solo valor       | True                                                                                                                                  |
 | Está indexado             | False                                                                                                                                 |
 | En el catálogo global      | False                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Clases usadas en        | [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -116,24 +116,24 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | False                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                  |
+| Es de un solo valor       | True                                                                                                                                  |
 | Está indexado             | False                                                                                                                                 |
 | En el catálogo global      | False                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Clases usadas en        | [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-El atributo **MS-DFSR-DirectoryFilter** forma parte de la compatibilidad con el servicio de replicación sistema de archivos distribuido (DFS).
+El **atributo ms-DFSR-DirectoryFilter** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 
  
 

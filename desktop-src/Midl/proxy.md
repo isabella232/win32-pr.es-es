@@ -1,6 +1,6 @@
 ---
 title: atributo proxy
-description: El atributo \ proxy \ impide que la automatización se registre como un controlador de proxy o código auxiliar para una interfaz dual.
+description: El atributo \ proxy\ impide que Automation se registre como controlador de proxy/stub para una interfaz dual.
 ms.assetid: 88e59938-83c9-436a-931c-f4396fdcf653
 keywords:
 - atributo de proxy MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5aa8c9d305b7f51a012ae26d7b1a76d2e3011fd7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 37e81cb7f67f87153825db59d921b6ee9ec7df6cd334ed2228896c8dec5f9d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641425"
 ---
 # <a name="proxy-attribute"></a>atributo proxy
 
-El atributo **\[ proxy \]** impide que la automatización se registre como un controlador de proxy o código auxiliar para una interfaz dual.
+El **\[ atributo proxy \]** impide que Automation se registre como controlador de proxy/stub para una interfaz dual.
 
 ``` syntax
 [ 
@@ -39,21 +39,21 @@ interface interface-name <> : base-interface <>
 
 <dl> <dt>
 
-*cadena: UUID* 
+*string-uuid* 
 </dt> <dd>
 
-Especifica una cadena que consta de 8 dígitos hexadecimales seguidos de un guion y, a continuación, tres grupos de 4 dígitos hexadecimales, seguidos de un guion y 12 dígitos hexadecimales. Puede incluir la cadena UUID entre comillas, excepto cuando se usa el modificador de compilador MIDL [**/OSF**](-osf.md).
+Especifica una cadena formada por 8 dígitos hexadecimales seguidos de un guión, tres grupos de 4 dígitos hexadecimales cada uno seguidos de un guion y, a continuación, 12 dígitos hexadecimales. Puede incluir la cadena UUID entre comillas, excepto cuando se usa el modificador del compilador MIDL [**/osf**](-osf.md).
 
 </dd> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en conjunto. Cuando dos o más atributos de interfaz están presentes, deben separarse con comas.
+Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en su conjunto. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Nombre de la interfaz.
@@ -63,22 +63,22 @@ Nombre de la interfaz.
 *interfaz base* 
 </dt> <dd>
 
-Especifica el nombre de una interfaz de la que esta interfaz derivada hereda las funciones miembro, los códigos de estado y los atributos de interfaz. La interfaz derivada no hereda las definiciones de tipo. Para ello, use la palabra clave [**Import**](import.md) para importar el archivo IDL de la interfaz base.
+Especifica el nombre de una interfaz de la que esta interfaz derivada hereda funciones miembro, códigos de estado y atributos de interfaz. La interfaz derivada no hereda definiciones de tipo. Para ello, use la palabra [**clave import**](import.md) para importar el archivo IDL de la interfaz base.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El uso del \[ atributo **proxy** \] para una interfaz dual impide que el TLB tome el código auxiliar generado. Si se especifica este atributo, no se debe anular el registro del proxy typelib cuando se anula el registro de typelib.
+El uso del \[ **atributo de proxy** para una interfaz dual impide que el \] TLB se haga cargo de los códigos auxiliares generados. Si se especifica este atributo, no se debe anular el registro del proxy de la lista de tipos cuando se anula el registro de la lista de tipos.
 
 ### <a name="flags"></a>Marcas
 
 <dl> <dt>
 
-<span id="TYPEFLAG_PROXY"></span><span id="typeflag_proxy"></span>\_proxy TYPEFLAG
+<span id="TYPEFLAG_PROXY"></span><span id="typeflag_proxy"></span>TYPEFLAG \_ PROXY
 </dt> <dd>
 
-Las interfaces se pueden marcar con la \_ marca del proxy TYPEFLAG para indicar que van a usar una biblioteca de vínculos dinámicos de proxy/código auxiliar. Esta marca especifica que no se debe anular el registro del proxy de la biblioteca de bibliotecas cuando se anula el registro de la biblioteca de bibliotecas.
+Las interfaces se pueden marcar con la marca TYPEFLAG PROXY para indicar que usarán una biblioteca de vínculos dinámicos \_ proxy/stub. Esta marca especifica que no se debe anular el registro del proxy de la lista de tipos cuando se anula el registro de la lista de tipos.
 
 </dd> </dl>
 
@@ -89,12 +89,12 @@ Las interfaces se pueden marcar con la \_ marca del proxy TYPEFLAG para indicar 
 [**Generar una biblioteca de tipos con MIDL**](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**BI**](dual.md)
+[**Doble**](dual.md)
 </dt> <dt>
 
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

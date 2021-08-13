@@ -1,23 +1,23 @@
 ---
-description: Estas clases representan los dispositivos de entrada de usuario. Una máquina virtual siempre tiene una instancia de cada clase asociada.
+description: Estas clases representan los dispositivos de entrada del usuario. Una máquina virtual siempre tiene una instancia de cada clase asociada a ella.
 ms.assetid: FFCA890D-6102-47BB-B499-4B9D77D75E9B
 title: Clases de entrada
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2955cadfb00dcc39fed490a9c706b12bb1a8993
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5df9c5a2f1d2743e062cf685dc6fd849f33333808315459560dfd840e925135
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644867"
 ---
 # <a name="input-classes"></a>Clases de entrada
 
-Estas clases representan los dispositivos de entrada de usuario. Una máquina virtual siempre tiene una instancia de cada clase asociada. Es posible que estos dispositivos no se agreguen o quiten de la máquina virtual. Por lo tanto, no hay instancias del grupo de recursos para dispositivos de teclado o de mouse.
+Estas clases representan los dispositivos de entrada del usuario. Una máquina virtual siempre tiene una instancia de cada clase asociada a ella. Estos dispositivos no se pueden agregar ni quitar de la máquina virtual. Por lo tanto, no hay instancias de grupo de recursos para dispositivos de teclado o mouse.
 
-Los dispositivos de teclado y mouse están vinculados a la máquina virtual a través de la Asociación [**MSVM \_ SystemDevice**](msvm-systemdevice.md) . Una máquina virtual contiene un dispositivo de mouse PS2 y uno sintético. Solo hay un dispositivo señalador activo a la vez.
+Los dispositivos de teclado y mouse están vinculados a la máquina virtual a través de la [**asociación \_ SystemDevice de Msvm.**](msvm-systemdevice.md) Una máquina virtual contiene un dispositivo PS2 y un dispositivo de mouse sintético. Solo un dispositivo que apunta está activo a la vez.
 
-A continuación se enumeran las clases WMI de virtualización relacionadas con la entrada.
+Las siguientes son clases WMI de virtualización relacionadas con la entrada.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -25,9 +25,9 @@ A continuación se enumeran las clases WMI de virtualización relacionadas con l
 
 | Tema                                                          | Descripción                                     |
 |----------------------------------------------------------------|-------------------------------------------------|
-| [**\_Teclado MSVM**](msvm-keyboard.md)<br/>             | Representa un dispositivo de teclado.<br/>        |
-| [**MSVM \_ Ps2Mouse**](msvm-ps2mouse.md)<br/>             | Representa un dispositivo de mouse PS2.<br/>       |
-| [**MSVM \_ SyntheticMouse**](msvm-syntheticmouse.md)<br/> | Representa un dispositivo de mouse sintético.<br/> |
+| [**Teclado de \_ Msvm**](msvm-keyboard.md)<br/>             | Representa un dispositivo de teclado.<br/>        |
+| [**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md)<br/>             | Representa un dispositivo de mouse PS2.<br/>       |
+| [**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md)<br/> | Representa un dispositivo de mouse sintético.<br/> |
 
 
 

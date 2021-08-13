@@ -1,71 +1,71 @@
 ---
-title: Registrar propiedades, eventos y patrones de control personalizados
-description: Antes de que se pueda usar una propiedad personalizada, un evento o un patrón de control, tanto el proveedor como el cliente deben registrar la propiedad, el evento o el patrón de control en tiempo de ejecución.
+title: Registro de propiedades personalizadas, eventos y patrones de control
+description: Para poder usar una propiedad personalizada, un evento o un patrón de control, tanto el proveedor como el cliente deben registrar la propiedad, el evento o el patrón de control en tiempo de ejecución.
 ms.assetid: ae36e404-8432-46ed-930e-b86dd5a88d6d
 keywords:
-- Automatización de la interfaz de usuario, propiedades personalizadas
-- Automatización de la interfaz de usuario, información general sobre eventos
-- UI Automation, información general sobre los patrones de control
+- Automatización de la interfaz de usuario,propiedades personalizadas
+- Automatización de la interfaz de usuario,información general sobre eventos
+- Automatización de la interfaz de usuario, información general sobre los patrones de control
 - Automatización de la interfaz de usuario, registrar propiedades personalizadas
 - Automatización de la interfaz de usuario, registrar eventos
 - Automatización de la interfaz de usuario, registrar patrones de control
 - propiedades personalizadas, registrar
-- eventos, registrar
-- patrones de control, registrar
-- registrar, propiedades personalizadas
-- registrar, eventos
-- registrar, patrones de control
+- events,registering
+- patrones de control, registro
+- registering,custom properties
+- registering,events
+- registering,control patterns
 - patrones de control, personalizados
 - patrones de control, implementar personalizados
 - implementar patrones de control personalizados
 - patrones de control personalizados
 - contenedores de cliente
-- Controladores de patrón
+- controladores de patrones
 - implementar controladores de patrones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b6b157e8f08a2c0be74af6b9f53d3578d1e4d03
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7205d088f76f235b3078d5a053202f3d39b609389ef6adbc5dbdbca18d9b652b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118564065"
 ---
-# <a name="register-custom-properties-events-and-control-patterns"></a>Registrar propiedades, eventos y patrones de control personalizados
+# <a name="register-custom-properties-events-and-control-patterns"></a>Registro de propiedades personalizadas, eventos y patrones de control
 
-Antes de que se pueda usar una propiedad personalizada, un evento o un patrón de control, tanto el proveedor como el cliente deben registrar la propiedad, el evento o el patrón de control en tiempo de ejecución. El registro es efectivo globalmente dentro de un proceso de aplicación y permanece efectivo hasta que se cierra el proceso o hasta que se libera el último objeto de elemento de automatización de la interfaz de usuario de Microsoft ([**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) o [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)) dentro del proceso.
+Para poder usar una propiedad personalizada, un evento o un patrón de control, tanto el proveedor como el cliente deben registrar la propiedad, el evento o el patrón de control en tiempo de ejecución. El registro es efectivo globalmente dentro de un proceso de aplicación y sigue siendo efectivo hasta que se cierra el proceso o se libera el último objeto de elemento de Microsoft Automatización de la interfaz de usuario ([**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) o [**IRawElementProviderSimple)**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)dentro del proceso.
 
-El registro implica pasar un GUID a la automatización de la interfaz de usuario, junto con información detallada sobre la propiedad personalizada, el evento o el patrón de control. Si se intenta registrar el mismo GUID una segunda vez con la misma información, se realizará correctamente, pero se producirá un error al intentar registrar el mismo GUID una segunda vez pero con información diferente (por ejemplo, una propiedad personalizada de un tipo diferente). En el futuro, si se acepta la especificación personalizada y se integra en el núcleo de automatización de la interfaz de usuario, la automatización de la interfaz de usuario validará la información de registro personalizada y usará el código ya registrado en lugar de la implementación del marco "oficial", con lo que se minimizan los problemas de compatibilidad de aplicaciones. No se pueden quitar las propiedades, los eventos o los patrones de control que ya están registrados.
+La regición implica pasar un GUID a Automatización de la interfaz de usuario, junto con información detallada sobre la propiedad personalizada, el evento o el patrón de control. Si intenta registrar el mismo GUID una segunda vez con la misma información, se producirá un error al intentar registrar el mismo GUID por segunda vez, pero con información diferente (por ejemplo, una propiedad personalizada de un tipo diferente). En el futuro, si la especificación personalizada se acepta e integra en el núcleo de Automatización de la interfaz de usuario, Automatización de la interfaz de usuario validará la información de registro personalizada y usará el código ya registrado en lugar de la implementación del marco "oficial", lo que minimiza los problemas de compatibilidad de aplicaciones. No se pueden quitar propiedades, eventos o patrones de control que ya estén registrados.
 
 Este tema contiene las siguientes secciones:
 
--   [Registrar eventos y propiedades personalizadas](#registering-custom-properties-and-events)
+-   [Registrar propiedades y eventos personalizados](#registering-custom-properties-and-events)
 -   [Implementar patrones de control personalizados](#implementing-custom-control-patterns)
-    -   [Contenedor de cliente y controlador de patrón](#the-client-wrapper-and-the-pattern-handler)
-    -   [Implementar el contenedor de cliente](#implementing-the-client-wrapper)
-    -   [Implementar el controlador de patrón](#implementing-the-pattern-handler)
+    -   [El contenedor de cliente y el controlador de patrones](#the-client-wrapper-and-the-pattern-handler)
+    -   [Implementación del contenedor de cliente](#implementing-the-client-wrapper)
+    -   [Implementar el controlador de patrones](#implementing-the-pattern-handler)
     -   [Registrar un patrón de control personalizado](#registering-a-custom-control-pattern)
-    -   [Ejemplo de implementación de un patrón de control personalizado](#example-implementation-of-a-custom-control-pattern)
+    -   [Implementación de ejemplo de un patrón de control personalizado](#example-implementation-of-a-custom-control-pattern)
 -   [Temas relacionados](#related-topics)
 
-## <a name="registering-custom-properties-and-events"></a>Registrar eventos y propiedades personalizadas
+## <a name="registering-custom-properties-and-events"></a>Registrar propiedades y eventos personalizados
 
-El registro de una propiedad o un evento personalizado permite al proveedor y al cliente obtener un identificador para la propiedad o evento, que se puede pasar a los distintos métodos de API que toman los identificadores como parámetros.
+El registro de una propiedad personalizada o un evento permite al proveedor y al cliente obtener un identificador para la propiedad o evento, que luego se puede pasar a varios métodos de API que toman identificadores como parámetros.
 
 Para registrar una propiedad o un evento:
 
-1.  Defina un GUID para la propiedad o el evento personalizado.
-2.  Rellene una estructura [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) o [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) con información sobre la propiedad o el evento, incluido el GUID y una cadena no localizable que contenga el nombre de la propiedad o el evento personalizado. Las propiedades personalizadas también requieren el tipo de datos de la propiedad que se va a especificar, por ejemplo, si la propiedad contiene un entero o una cadena. El tipo de datos debe ser uno de los siguientes tipos especificados por la enumeración [**UIAutomationType**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-uiautomationtype) . No se admiten otros tipos de datos para las propiedades personalizadas.
-    -   **UIAutomationType \_ bool**
-    -   **UIAutomationType \_ doble**
-    -   **\_Elemento UIAutomationType**
-    -   **UIAutomationType \_ int**
-    -   **\_Punto UIAutomationType**
-    -   **\_Cadena UIAutomationType**
-3.  Utilice la función [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia del objeto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) y recuperar un puntero a la interfaz [**IUIAutomationRegistrar**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) del objeto.
-4.  Llame al método [**IUIAutomationRegistrar:: RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) o [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) y pase la dirección de la estructura [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) o la estructura [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) .
+1.  Defina un GUID para la propiedad personalizada o el evento.
+2.  Rellene una [**estructura UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) o [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) con información sobre la propiedad o el evento, incluido el GUID y una cadena no localizable que contiene el nombre de la propiedad personalizada o el evento. Las propiedades personalizadas también requieren que se especifique el tipo de datos de la propiedad, por ejemplo, si la propiedad contiene un entero o una cadena. El tipo de datos debe ser uno de los siguientes tipos especificados por la [**enumeración UIAutomationType.**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-uiautomationtype) No se admiten otros tipos de datos para las propiedades personalizadas.
+    -   **UIAutomationType \_ Bool**
+    -   **UIAutomationType \_ Double**
+    -   **Elemento UIAutomationType \_**
+    -   **UIAutomationType \_ Int**
+    -   **UIAutomationType \_ Point**
+    -   **CADENA UIAutomationType \_**
+3.  Use la [**función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia del objeto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) y recuperar un puntero a la interfaz [**IUIAutomationRegistrar del**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) objeto.
+4.  Llame al [**método IUIAutomationRegistrar::RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) o [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) y pase la dirección de la estructura [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) o la estructura [**UIAutomationEventInfo.**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo)
 
-El método [**IUIAutomationRegistrar:: RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) o [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) devuelve un identificador de propiedad o un identificador de evento que una aplicación puede pasar a cualquier método de automatización de la interfaz de usuario que tome dicho identificador como parámetro. Por ejemplo, puede pasar un identificador de propiedad registrado al método [**IUIAutomationElement:: GetCurrentPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue) o al método [**IUIAutomation:: CreatePropertyCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createpropertycondition) .
+El [**método IUIAutomationRegistrar::RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) o [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) devuelve un identificador de propiedad o un identificador de evento que una aplicación puede pasar a cualquier método Automatización de la interfaz de usuario que tome dicho identificador como parámetro. Por ejemplo, puede pasar un identificador de propiedad registrado al método [**IUIAutomationElement::GetCurrentPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue) o al método [**IUIAutomation::CreatePropertyCondition.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createpropertycondition)
 
 En el ejemplo siguiente se muestra cómo registrar una propiedad personalizada.
 
@@ -106,45 +106,45 @@ HRESULT RegisterProperty()
 
 
 
-Los identificadores de propiedad y evento recuperados por los métodos [**IUIAutomationRegistrar:: RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) y [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) solo son válidos en el contexto de la aplicación que los recupera y solo mientras dure la duración de la aplicación. Los métodos de registro pueden devolver valores enteros diferentes para el mismo GUID cuando se llama a través de distintas instancias en tiempo de ejecución de la misma aplicación.
+Los identificadores de propiedad e evento recuperados por los métodos [**IUIAutomationRegistrar::RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) y [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) solo son válidos en el contexto de la aplicación que los recupera y solo durante la duración de la aplicación. Los métodos de registro pueden devolver valores enteros diferentes para el mismo GUID cuando se llama a través de diferentes instancias en tiempo de ejecución de la misma aplicación.
 
-No hay ningún método que anule el registro de una propiedad o evento personalizado. En su lugar, se anula el registro de forma implícita cuando se libera el último objeto de automatización de la interfaz de usuario.
+No hay ningún método que anula el registro de una propiedad personalizada o un evento. En su lugar, se anulan implícitamente el registro cuando se libera Automatización de la interfaz de usuario último objeto.
 
 > [!IMPORTANT]
-> Si el código es un cliente de Microsoft Active Accessibility (MSAA), debe llamar a la función [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) al cambiar el valor de una propiedad personalizada.
+> Si el código es un Microsoft Active Accessibility (MSAA), debe llamar a la función [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) al cambiar el valor de una propiedad personalizada.
 
- 
+ 
 
 ## <a name="implementing-custom-control-patterns"></a>Implementar patrones de control personalizados
 
-Un patrón de control personalizado no se incluye en la API de automatización de la interfaz de usuario, pero lo proporciona un tercero en tiempo de ejecución. Los desarrolladores de aplicaciones de cliente y de proveedor deben funcionar juntos para definir un patrón de control personalizado, incluidos los métodos, las propiedades y los eventos que el patrón de control admitirá. Después de definir el patrón de control, tanto el cliente como el proveedor deben implementar objetos auxiliares del modelo de objetos componentes (COM), junto con código para registrar el patrón de control en tiempo de ejecución. Un patrón de control personalizado requiere la implementación de dos objetos COM: un contenedor de cliente y un controlador de patrón.
+Un patrón de control personalizado no se incluye en la API Automatización de la interfaz de usuario, sino que lo proporciona un tercero en tiempo de ejecución. Los desarrolladores de aplicaciones cliente y proveedor deben trabajar conjuntamente para definir un patrón de control personalizado, incluidos los métodos, las propiedades y los eventos que admitirá el patrón de control. Después de definir el patrón de control, tanto el cliente como el proveedor deben implementar los objetos del modelo de objetos componentes (COM) compatibles, junto con el código para registrar el patrón de control en tiempo de ejecución. Un patrón de control personalizado requiere la implementación de dos objetos COM: un contenedor de cliente y un controlador de patrones.
 
 > [!Note]  
-> En los ejemplos de los temas siguientes se muestra cómo implementar un patrón de control personalizado que duplique la funcionalidad del patrón de control [Value](uiauto-implementingvalue.md) existente. Estos ejemplos son solo con fines informativos. Un patrón de control personalizado real debe proporcionar funcionalidad que no está disponible en los patrones de control de automatización de la interfaz de usuario estándar.
+> Los ejemplos de los temas siguientes muestran cómo implementar un patrón de control personalizado que duplica la funcionalidad del patrón de control [Value](uiauto-implementingvalue.md) existente. Estos ejemplos son solo con fines informativos. Un patrón de control personalizado real debe proporcionar funcionalidad que no está disponible en los patrones de control Automatización de la interfaz de usuario estándar.
 
- 
+ 
 
-### <a name="the-client-wrapper-and-the-pattern-handler"></a>Contenedor de cliente y controlador de patrón
+### <a name="the-client-wrapper-and-the-pattern-handler"></a>El contenedor de cliente y el controlador de patrones
 
-El contenedor de cliente implementa la API que usa el cliente para recuperar las propiedades y llamar a los métodos expuestos por el patrón de control personalizado. La API se implementa como una interfaz COM que pasa todas las solicitudes de propiedades y llamadas a métodos al núcleo de automatización de la interfaz de usuario, que luego calcula las referencias de las solicitudes y llamadas al proveedor.
+El contenedor de cliente implementa la API que usa el cliente para recuperar propiedades y llamar a métodos expuestos por el patrón de control personalizado. La API se implementa como una interfaz COM que pasa todas las solicitudes de propiedad y las llamadas de método al núcleo de Automatización de la interfaz de usuario, que a continuación serializa las solicitudes y las llamadas al proveedor.
 
-El código que registra un patrón de control personalizado debe proporcionar un generador de clases que la automatización de la interfaz de usuario puede usar para crear instancias del objeto contenedor de cliente. Cuando un patrón de control personalizado se registra correctamente, la automatización de la interfaz de usuario devuelve un puntero de la interfaz [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) que usa el cliente para reenviar solicitudes de propiedades y llamadas a métodos al núcleo de automatización de la interfaz de usuario.
+El código que registra un patrón de control personalizado debe proporcionar un generador de clases que Automatización de la interfaz de usuario puede usar para crear instancias del objeto contenedor de cliente. Cuando un patrón de control personalizado se registra correctamente, Automatización de la interfaz de usuario devuelve un puntero de interfaz [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) que usa el cliente para reenviar las solicitudes de propiedad y las llamadas a métodos al Automatización de la interfaz de usuario core.
 
-En el lado del proveedor, el núcleo de automatización de la interfaz de usuario toma las solicitudes de propiedades y las llamadas a métodos desde el cliente y las pasa al objeto de controlador de patrón. A continuación, el controlador de patrón llama a los métodos adecuados en la interfaz del proveedor para el patrón de control personalizado.
+En el lado del proveedor, Automatización de la interfaz de usuario core toma las solicitudes de propiedad y las llamadas de método del cliente y las pasa al objeto de controlador de patrones. A continuación, el controlador de patrones llama a los métodos adecuados en la interfaz del proveedor para el patrón de control personalizado.
 
-El código que registra un patrón de control personalizado crea el objeto de controlador de patrón y, al registrar el patrón de control, proporciona automatización de la interfaz de usuario con un puntero a la interfaz [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) del objeto.
+El código que registra un patrón de control personalizado crea el objeto de controlador de patrones y, al registrar el patrón de control, proporciona Automatización de la interfaz de usuario con un puntero a la interfaz [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) del objeto.
 
-En el diagrama siguiente se muestra cómo una solicitud de propiedad de cliente o una llamada de método fluyen desde el contenedor de cliente, a través de los componentes principales de UI Automation hasta el controlador de patrón y, a continuación, a la interfaz del proveedor.
+En el diagrama siguiente se muestra cómo fluye una llamada de método o solicitud de propiedad de cliente desde el contenedor de cliente, a través de los componentes principales de Automatización de la interfaz de usuario al controlador de patrones y, a continuación, a la interfaz del proveedor.
 
-![diagrama que muestra el flujo del contenedor del cliente al controlador y al proveedor del patrón](images/custompatternsupport.jpg)
+![diagrama que muestra el flujo del contenedor de cliente al controlador y proveedor de patrones](images/custompatternsupport.jpg)
 
-Los objetos que implementan las interfaces de contenedor de cliente y controlador de patrón deben ser de subprocesamiento libre. Además, el núcleo de automatización de la interfaz de usuario debe poder llamar a los objetos directamente sin ningún código de serialización intermedio.
+Los objetos que implementan el contenedor de cliente y las interfaces de controlador de patrones deben ser de subproceso libre. Además, el Automatización de la interfaz de usuario núcleo debe poder llamar a los objetos directamente sin ningún código de serialización intermedio.
 
-### <a name="implementing-the-client-wrapper"></a>Implementar el contenedor de cliente
+### <a name="implementing-the-client-wrapper"></a>Implementación del contenedor de cliente
 
-El contenedor de cliente es un objeto que expone una interfaz IXxxPattern que el cliente usa para solicitar propiedades y llamar a métodos admitidos por el patrón de control personalizado. La interfaz está formada por un par de métodos de "captador" para cada propiedad admitida (get \_ CurrentXxx y Get \_ CachedXxx Method) y un método "Caller" para cada método admitido. Cuando se crea una instancia del objeto, el constructor de objeto recibe un puntero a la interfaz [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) , que se implementa mediante el núcleo de automatización de la interfaz de usuario. Los métodos de la interfaz IXxxPattern usan los métodos [**IUIAutomationPatternInstance:: GetProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-getproperty) y [**CallMethod**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-callmethod) para reenviar las solicitudes de propiedades y las llamadas de método al núcleo de automatización de la interfaz de usuario.
+El contenedor de cliente es un objeto que expone una interfaz IXxxPattern que el cliente usa para solicitar propiedades y llamar a métodos admitidos por el patrón de control personalizado. La interfaz consta de un par de métodos "getter" para cada propiedad admitida (método get CurrentXxx y get CachedXxx) y un método "caller" para cada \_ \_ método admitido. Cuando se crea una instancia del objeto, el constructor del objeto recibe un puntero a la interfaz [**IUIAutomationPatternInstance,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) que implementa el Automatización de la interfaz de usuario principal. Los métodos de la interfaz IXxxPattern usan los métodos [**IUIAutomationPatternInstance::GetProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-getproperty) y [**CallMethod**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-callmethod) para reenviar solicitudes de propiedad y llamadas de método al Automatización de la interfaz de usuario principal.
 
-En el ejemplo siguiente se muestra cómo implementar un objeto contenedor de cliente para un patrón de control personalizado simple que admite una sola propiedad. Para obtener un ejemplo más complejo, vea [ejemplo de implementación de un patrón de control personalizado](#example-implementation-of-a-custom-control-pattern).
+En el ejemplo siguiente se muestra cómo implementar un objeto contenedor de cliente para un patrón de control personalizado simple que admite una sola propiedad. Para obtener un ejemplo más complejo, vea [Implementación de ejemplo de un patrón de control personalizado](#example-implementation-of-a-custom-control-pattern).
 
 
 ```C++
@@ -192,15 +192,15 @@ public:
 
 
 
-### <a name="implementing-the-pattern-handler"></a>Implementar el controlador de patrón
+### <a name="implementing-the-pattern-handler"></a>Implementar el controlador de patrones
 
-El controlador de patrón es un objeto que implementa la interfaz [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) . Esta interfaz tiene dos métodos: [**IUIAutomationPatternHandler:: CreateClientWrapper**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-createclientwrapper) y [**Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch). El núcleo de la automatización de la interfaz de usuario llama al método **CreateClientWrapper** y recibe un puntero a la interfaz [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) . **CreateClientWrapper** responde creando instancias del objeto contenedor de cliente y pasando el puntero de la interfaz **IUIAutomationPatternInstance** al constructor contenedor de cliente.
+El controlador de patrones es un objeto que implementa la [**interfaz IUIAutomationPatternHandler.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) Esta interfaz tiene dos métodos: [**IUIAutomationPatternHandler::CreateClientWrapper**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-createclientwrapper) y [**Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch). El núcleo de Automatización de la interfaz de usuario llama al método **CreateClientWrapper** y recibe un puntero a la [**interfaz IUIAutomationPatternInstance.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) **CreateClientWrapper responde** mediante la creación de una instancia del objeto contenedor de cliente y el paso del puntero de interfaz **IUIAutomationPatternInstance** al constructor contenedor de cliente.
 
-El núcleo de automatización de la interfaz de usuario usa el método [**Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch) para pasar las solicitudes de propiedad y las llamadas de método a la interfaz del proveedor para el patrón de control personalizado. Los parámetros incluyen un puntero a la interfaz del proveedor, el índice de base cero del captador de propiedad o método al que se llama, y una matriz de estructuras [**UIAutomationParameter**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationparameter) que contienen los parámetros que se van a pasar al proveedor. El controlador de patrón responde comprobando el parámetro de índice para determinar el método de proveedor al que llamar y, a continuación, llama a la interfaz del proveedor, pasando los parámetros contenidos en las estructuras **UIAutomationParameter** .
+El [**núcleo de**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch) Automatización de la interfaz de usuario usa el método Dispatch para pasar solicitudes de propiedad y llamadas de método a la interfaz del proveedor para el patrón de control personalizado. Los parámetros incluyen un puntero a la interfaz del proveedor, el índice de base cero del método o el getter de propiedad al que se llama y una matriz de estructuras [**UIAutomationParameter**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationparameter) que contienen los parámetros que se pasan al proveedor. El controlador de patrones responde comprobando el parámetro index para determinar a qué método de proveedor llamar y, a continuación, llama a esa interfaz de proveedor, pasando los parámetros contenidos en las estructuras **UIAutomationParameter.**
 
-Se crea una instancia del objeto de controlador de patrón mediante el mismo código que registra el patrón de control personalizado antes de que se registre el patrón de control. El código debe pasar el puntero de la interfaz [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) del objeto de controlador de patrón al núcleo de automatización de la interfaz de usuario en el momento del registro.
+El mismo código que registra el patrón de control personalizado crea instancias del objeto de controlador de patrones antes de registrar el patrón de control. El código debe pasar el puntero de interfaz [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) del objeto del controlador de patrones al Automatización de la interfaz de usuario en tiempo de registro.
 
-En el ejemplo siguiente se muestra cómo implementar un objeto de controlador de patrón para un patrón de control personalizado simple que admite una sola propiedad. Para obtener un ejemplo más complejo, vea [ejemplo de implementación de un patrón de control personalizado](#example-implementation-of-a-custom-control-pattern).
+En el ejemplo siguiente se muestra cómo implementar un objeto de controlador de patrones para un patrón de control personalizado simple que admite una sola propiedad. Para obtener un ejemplo más complejo, vea [Implementación de ejemplo de un patrón de control personalizado](#example-implementation-of-a-custom-control-pattern).
 
 
 ```C++
@@ -248,34 +248,34 @@ public:
 
 ### <a name="registering-a-custom-control-pattern"></a>Registrar un patrón de control personalizado
 
-Antes de que se pueda usar, el proveedor y el cliente deben registrar un patrón de control personalizado. El registro proporciona el núcleo de automatización de la interfaz de usuario con información detallada sobre el patrón de control y proporciona al proveedor o al cliente el identificador de patrón de control, así como los identificadores de las propiedades y los eventos que admite el patrón de control. En el lado del proveedor, se debe registrar el patrón de control personalizado antes de que el control asociado administre el mensaje de la [**\_ GETOBJECT de WM**](wm-getobject.md) o al mismo tiempo.
+Para poder usarse, el proveedor y el cliente deben registrar un patrón de control personalizado. El registro proporciona al núcleo de Automatización de la interfaz de usuario información detallada sobre el patrón de control y proporciona al proveedor o cliente el identificador del patrón de control e identificadores para las propiedades y eventos admitidos por el patrón de control. En el lado del proveedor, el patrón de control personalizado debe registrarse antes de que el control asociado controle el [**mensaje \_ GETOBJECT de WM,**](wm-getobject.md) o al mismo tiempo.
 
 Al registrar un patrón de control personalizado, el proveedor o el cliente proporciona la siguiente información:
 
 -   GUID del patrón de control personalizado.
--   Una cadena no localizable que contiene el nombre del patrón de control personalizado.
--   GUID de la interfaz del proveedor que admite el patrón de control personalizado.
+-   Cadena no localizable que contiene el nombre del patrón de control personalizado.
+-   GUID de la interfaz de proveedor que admite el patrón de control personalizado.
 -   GUID de la interfaz de cliente que admite el patrón de control personalizado.
--   Matriz de estructuras [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) que describen las propiedades admitidas por el patrón de control personalizado. Para cada propiedad, se deben especificar el GUID, el nombre de la propiedad y el tipo de datos.
--   Matriz de estructuras [**UIAutomationMethodInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationmethodinfo) que describen los métodos admitidos por el patrón de control personalizado. Para cada método, la estructura incluye la información siguiente: el nombre del método, un recuento de parámetros, una lista de tipos de datos de parámetros y una lista de los nombres de parámetro.
--   Matriz de estructuras [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) que describen los eventos generados por el patrón de control personalizado. Para cada evento, debe especificarse el GUID y el nombre del evento.
--   Dirección de la interfaz [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) del objeto de controlador de patrón que hace que el patrón de control personalizado esté disponible para los clientes.
+-   Matriz de estructuras [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) que describen las propiedades admitidas por el patrón de control personalizado. Para cada propiedad, se debe especificar el GUID, el nombre de propiedad y el tipo de datos.
+-   Matriz de estructuras [**UIAutomationMethodInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationmethodinfo) que describen los métodos admitidos por el patrón de control personalizado. Para cada método, la estructura incluye la siguiente información: el nombre del método, un recuento de parámetros, una lista de tipos de datos de parámetros y una lista de los nombres de parámetro.
+-   Matriz de [**estructuras UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) que describen los eventos que genera el patrón de control personalizado. Para cada evento, se deben especificar el GUID y el nombre del evento.
+-   Dirección de la [**interfaz IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) del objeto de controlador de patrones que hace que el patrón de control personalizado esté disponible para los clientes.
 
-Para registrar el patrón de control personalizado, el código de cliente o proveedor debe realizar los siguientes pasos:
+Para registrar el patrón de control personalizado, el proveedor o el código de cliente deben realizar los pasos siguientes:
 
-1.  Rellene una estructura [**UIAutomationPatternInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpatterninfo) con la información anterior.
-2.  Utilice la función [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia del objeto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) y recuperar un puntero a la interfaz [**IUIAutomationRegistrar**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) del objeto.
-3.  Llame al método [**IUIAutomationRegistrar:: RegisterPattern**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) , pasando la dirección de la estructura [**UIAutomationPatternInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpatterninfo) .
+1.  Rellene una [**estructura UIAutomationPatternInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpatterninfo) con la información anterior.
+2.  Use la [**función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia del objeto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) y recuperar un puntero a la interfaz [**IUIAutomationRegistrar del**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) objeto.
+3.  Llame al [**método IUIAutomationRegistrar::RegisterPattern**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) y pase la dirección de la estructura [**UIAutomationPatternInfo.**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpatterninfo)
 
-El método [**RegisterPattern**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) devuelve un identificador de patrón de control, junto con una lista de identificadores de propiedades e identificadores de eventos. Una aplicación puede pasar estos identificadores a cualquier método de automatización de la interfaz de usuario que tome dicho identificador como parámetro. Por ejemplo, puede pasar un identificador de patrón registrado al método [**IUIAutomationElement:: GetCurrentPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpattern) para recuperar un puntero a la interfaz del proveedor para el patrón de control.
+El [**método RegisterPattern**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) devuelve un identificador de patrón de control, junto con una lista de identificadores de propiedad e identificadores de evento. Una aplicación puede pasar estos identificadores a cualquier método Automatización de la interfaz de usuario que tome dicho identificador como parámetro. Por ejemplo, puede pasar un identificador de patrón registrado al método [**IUIAutomationElement::GetCurrentPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpattern) para recuperar un puntero a la interfaz del proveedor para el patrón de control.
 
-No hay ningún método que anule el registro de un patrón de control personalizado. En su lugar, se anula el registro de forma implícita cuando se libera el último objeto de automatización de la interfaz de usuario.
+No hay ningún método que anula el registro de un patrón de control personalizado. En su lugar, se anula implícitamente el registro cuando se libera Automatización de la interfaz de usuario último objeto.
 
-Para obtener un ejemplo en el que se muestra cómo registrar un patrón de control personalizado, consulte la sección siguiente.
+Para obtener un ejemplo que muestra cómo registrar un patrón de control personalizado, vea la sección siguiente.
 
-### <a name="example-implementation-of-a-custom-control-pattern"></a>Ejemplo de implementación de un patrón de control personalizado
+### <a name="example-implementation-of-a-custom-control-pattern"></a>Implementación de ejemplo de un patrón de control personalizado
 
-Esta sección contiene código de ejemplo que muestra cómo implementar los objetos contenedor de cliente y controlador de patrón para un patrón de control personalizado. En el ejemplo se implementa un patrón de control personalizado basado en el patrón de control [Value](uiauto-implementingvalue.md) .
+Esta sección contiene código de ejemplo que muestra cómo implementar el contenedor de cliente y los objetos de controlador de patrones para un patrón de control personalizado. En el ejemplo se implementa un patrón de control personalizado que se basa en el patrón [de](uiauto-implementingvalue.md) control Valor.
 
 
 ```C++
@@ -519,10 +519,10 @@ HRESULT RegisterPattern()
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Diseñar propiedades, eventos y patrones de control personalizados](uiauto-designingcustompropseventpatterns.md)
+[Diseñar propiedades personalizadas, eventos y patrones de control](uiauto-designingcustompropseventpatterns.md)
 </dt> <dt>
 
 [Información general acerca de las propiedades de UI Automation](uiauto-propertiesoverview.md)
@@ -534,6 +534,6 @@ HRESULT RegisterPattern()
 [Información general acerca de los patrones de control de UI Automation](uiauto-controlpatternsoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

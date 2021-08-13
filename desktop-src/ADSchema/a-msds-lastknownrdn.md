@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Last-know-RDN
+title: Atributo ms-DS-Last-Known-RDN
 description: Contiene el RDN original de un objeto eliminado.
 ms.assetid: 4d655117-673a-4c43-b8fe-c4aa45061330
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Last-know-RDN
-- Esquema de AD de atributo msDS-LastKnownRDN
+- ms-DS-Last-Known-RDN attribute AD Schema
+- Esquema de AD del atributo msDS-LastKnownRDN
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3034039bed42f6af4dd609658f984a4a6d891e68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0aca5c586613cdab13ecd6899b5e0459d78830b240c1a46a65bead1105f6398e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685024"
 ---
-# <a name="ms-ds-last-known-rdn-attribute"></a>atributo MS-DS-Last-know-RDN
+# <a name="ms-ds-last-known-rdn-attribute"></a>Atributo ms-DS-Last-Known-RDN
 
 Contiene el RDN original de un objeto eliminado.
 
@@ -29,13 +29,13 @@ Contiene el RDN original de un objeto eliminado.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Last-known-RDN                        |
-| Nombre para mostrar de LDAP | msDS-LastKnownRDN                           |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Last-Known-RDN                        |
+| Ldap-Display-Name | msDS-LastKnownRDN                           |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2067                     |
-| System-ID-GUID    | 8ab15858-683e-466d-877f-d640e1f9a611        |
+| System-Id-Guid    | 8ab15858-683e-466d-877f-d640e1f9a611        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -51,13 +51,13 @@ Contiene el RDN original de un objeto eliminado.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | True                            |
+| Es de un solo valor       | True                            |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -72,13 +72,13 @@ Contiene el RDN original de un objeto eliminado.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | True                            |
+| Es de un solo valor       | True                            |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |

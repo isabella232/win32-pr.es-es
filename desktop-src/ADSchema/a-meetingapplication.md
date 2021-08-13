@@ -1,10 +1,10 @@
 ---
 title: atributo meetingApplication
-description: Este atributo contiene el nombre de la aplicación que se utilizará para una reunión en línea, como Microsoft NetMeeting, Windows Media Services o Microsoft Exchange conferencias.
+description: Este atributo contiene el nombre de la aplicación que se usará para una reunión en línea, como Microsoft NetMeeting, Servicios de Windows Media o Microsoft Exchange Conferencing.
 ms.assetid: 6dbcafe1-dda6-41d6-893d-2c92bfe119e0
 ms.tgt_platform: multiple
 keywords:
-- meetingApplication esquema de AD de atributos
+- Esquema de AD del atributo meetingApplication
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc79876349ba15810a1848eba6d24752ab896ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9f7fd3da9f99f4aa9833e1d8a0fc845e8f0210e540819dbce71107f64ff99267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688004"
 ---
 # <a name="meetingapplication-attribute"></a>atributo meetingApplication
 
-Este atributo contiene el nombre de la aplicación que se utilizará para una reunión en línea, como Microsoft NetMeeting, Windows Media Services o Microsoft Exchange conferencias.
+Este atributo contiene el nombre de la aplicación que se usará para una reunión en línea, como Microsoft NetMeeting, Servicios de Windows Media o Microsoft Exchange Conferencing.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | meetingApplication                          |
-| Nombre para mostrar de LDAP | meetingApplication                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | meetingApplication                          |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.573                      |
-| System-ID-GUID    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,18 +54,18 @@ Este atributo contiene el nombre de la aplicación que se utilizará para una re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Este atributo contiene el nombre de la aplicación que se utilizará para una re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Este atributo contiene el nombre de la aplicación que se utilizará para una re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Este atributo contiene el nombre de la aplicación que se utilizará para una re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Este atributo contiene el nombre de la aplicación que se utilizará para una re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ Este atributo contiene el nombre de la aplicación que se utilizará para una re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

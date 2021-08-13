@@ -1,7 +1,7 @@
 ---
-description: Cree un Sprite para dibujar una textura 2D. Tenga en cuenta que, en lugar de usar esta función, se recomienda usar Direct2D y la biblioteca DirectXTK, SpriteBatch Class.
+description: Cree un sprite para dibujar una textura 2D. Nota En lugar de usar esta función, se recomienda usar Direct2D y la biblioteca DirectXTK, clase SpriteBatch.
 ms.assetid: 64efb8e4-da0b-4e67-874a-e0bb0083961c
-title: Función D3DX10CreateSprite (D3DX10. h)
+title: Función D3DX10CreateSprite (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cf40e303cb616f35ea5cd3526c263e3bd12ae428
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6f67a0a6e0be8a3ea71ff1eef46d72b6cf080d028e7cc32f72a52db6a209cea4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541068"
 ---
-# <a name="d3dx10createsprite-function"></a>D3DX10CreateSprite función)
+# <a name="d3dx10createsprite-function"></a>Función D3DX10CreateSprite
 
-Cree un Sprite para dibujar una textura 2D.
+Cree un sprite para dibujar una textura 2D.
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda usar [Direct2D](../direct2d/direct2d-portal.md) y la biblioteca [DirectXTK](https://github.com/Microsoft/DirectXTK) , **SpriteBatch** Class.
+> En lugar de usar esta función, se recomienda usar [Direct2D](../direct2d/direct2d-portal.md) y la biblioteca [DirectXTK,](https://github.com/Microsoft/DirectXTK) **clase SpriteBatch.**
 
  
 
@@ -47,30 +47,30 @@ HRESULT D3DX10CreateSprite(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Un puntero al dispositivo (vea la [**interfaz ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)) que va a dibujar el sprite.
+Puntero al dispositivo (consulte [**ID3D10Device Interface)**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)que dibujará el sprite.
 
 </dd> <dt>
 
-*cDeviceBufferSize* \[ de\]
+*cDeviceBufferSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Tamaño del búfer de vértices, en número de sprites, que se enviará al dispositivo cuando se llame a [**ID3DX10Sprite:: Flush**](id3dx10sprite-flush.md) o [**ID3DX10Sprite::D rawspritesimmediate**](id3dx10sprite-drawspritesimmediate.md) . Debe ser un número pequeño si sabe que va a representar un pequeño número de sprites a la vez (para ahorrar memoria) y un número grande si sabe que va a representar un gran número de objetos Sprite a la vez. El valor máximo es 4096. Si se especifica 0, el tamaño del búfer de vértices se establecerá automáticamente en 4096.
+El tamaño del búfer de vértices, en número de sprites, que se enviará al dispositivo cuando se llame a [**ID3DX10Sprite::Flush**](id3dx10sprite-flush.md) o [**ID3DX10Sprite::D rawSpritesImmediate.**](id3dx10sprite-drawspritesimmediate.md) Debe ser un número pequeño si sabe que va a representar un pequeño número de sprites a la vez (para ahorrar memoria) y un número grande si sabe que va a representar un gran número de sprites a la vez. El valor máximo es 4096. Si se especifica 0, el tamaño del búfer de vértices se establecerá automáticamente en 4096.
 
 </dd> <dt>
 
-*ppSprite* \[ enuncia\]
+*ppSprite* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DX10SPRITE**](id3dx10sprite.md)\***
 
-La dirección de un puntero a una interfaz de Sprite (vea la [**interfaz ID3DX10Sprite**](id3dx10sprite.md)).
+Dirección de un puntero a una interfaz sprite (vea [**ID3DX10Sprite Interface**](id3dx10sprite.md)).
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ La dirección de un puntero a una interfaz de Sprite (vea la [**interfaz ID3DX10
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,8 +86,8 @@ Si la función se ejecuta correctamente, el valor devuelto es S \_ OK. Si se pro
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Si la función se ejecuta correctamente, el valor devuelto es S \_ OK. Si se pro
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

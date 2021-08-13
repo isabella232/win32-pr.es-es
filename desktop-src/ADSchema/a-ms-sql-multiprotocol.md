@@ -1,11 +1,11 @@
 ---
-title: Atributo de multiprotocolo de MS-SQL
+title: Atributo MS-SQL-MultiProtocol
 description: Punto de conexión RPC.
 ms.assetid: 70cb9f80-7140-4c26-a1a4-f78a60de430f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo multiprotocolo de MS-SQL
-- Esquema de AD de atributo multiprotocolo de mS-SQL
+- Esquema de AD del atributo MS-SQL-MultiProtocol
+- Esquema de AD del atributo mS-SQL-MultiProtocol
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8cdfb8e42d8e3d533090b7b0bf49dcefc5492a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d3edc56c012b062a508c83fa18ed8c45b110d2b2d3b53ca052f357a3edabe3d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686653"
 ---
-# <a name="ms-sql-multiprotocol-attribute"></a>Atributo de multiprotocolo de MS-SQL
+# <a name="ms-sql-multiprotocol-attribute"></a>Atributo MS-SQL-MultiProtocol
 
 Punto de conexión RPC.
 
@@ -29,13 +29,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-multiprotocolo                        |
-| Nombre para mostrar de LDAP | mS-SQL-multiprotocolo                        |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | MS-SQL-MultiProtocol                        |
+| Ldap-Display-Name | mS-SQL-MultiProtocol                        |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Al iniciar el sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1375                     |
-| System-ID-GUID    | 8157fa38-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 8157fa38-ccee-11d2-9993-0000f87a57d4        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -76,13 +76,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -97,13 +97,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -118,13 +118,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -139,13 +139,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -160,13 +160,13 @@ Punto de conexión RPC.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

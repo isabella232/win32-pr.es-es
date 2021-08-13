@@ -1,17 +1,17 @@
 ---
 description: Esta sección contiene estructuras que pertenecen a la clase RealTimeStylus.
 ms.assetid: 8baf8ee3-b6f7-4733-9e71-52627045c874
-title: Estructuras RealTimeStylus
+title: Estructuras de RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 985734bbc23d42ecd52b594a41b232872eb56987
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94d9d7cccaf19129087a27d65cb8648cd264ed08769c2aa514de448190de91d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449325"
 ---
-# <a name="realtimestylus-structures"></a>Estructuras RealTimeStylus
+# <a name="realtimestylus-structures"></a>Estructuras de RealTimeStylus
 
 Esta sección contiene estructuras que pertenecen a la [**clase RealTimeStylus**](realtimestylus-class.md).
 
@@ -21,8 +21,8 @@ Esta sección contiene estructuras que pertenecen a la [**clase RealTimeStylus**
 
 | Estructura                                        | Descripción                                                           |
 |--------------------------------------------------|-----------------------------------------------------------------------|
-| [**Estructura StylusInfo**](/windows/desktop/api/RTSCom/ns-rtscom-stylusinfo)       | Proporciona información sobre los trazos que definen un gesto.<br/> |
-| [**\_datos de eventos del sistema \_**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) | Contiene información acerca de un evento de Tablet PC.<br/>          |
+| [**StylusInfo (estructura)**](/windows/desktop/api/RTSCom/ns-rtscom-stylusinfo)       | Proporciona información sobre los trazos que definen un gesto.<br/> |
+| [**DATOS DE \_ EVENTOS DEL \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) | Contiene información sobre un evento del sistema de tabletas.<br/>          |
 
 
 

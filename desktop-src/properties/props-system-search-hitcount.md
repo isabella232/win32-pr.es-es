@@ -1,19 +1,19 @@
 ---
-description: Cuando se usa Contains en el índice de búsqueda de Windows, este es el número de coincidencias del término. Si hay varios Contains, y calcula el número mínimo de aciertos, y o calcula el número máximo de aciertos.
+description: Cuando se usa CONTAINS en Windows search index, este es el número de coincidencias del término. Si hay varios CONTAINS, and calcula el número mínimo de aciertos y un or calcula el número máximo de aciertos.
 ms.assetid: 2f0cddba-7535-451f-9bb5-846c06c426f8
-title: System. Search. HitCount
+title: System.Search.HitCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5bb3954d891c1f7c913036449094c27f64cea7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3836a6548197ee8a142e3a2db973808a9295a10aef119229d8d132dd8189aac8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464920"
 ---
-# <a name="systemsearchhitcount"></a>System. Search. HitCount
+# <a name="systemsearchhitcount"></a>System.Search.HitCount
 
-Cuando se usa Contains en el índice de búsqueda de Windows, este es el número de coincidencias del término. Si hay varios Contains, y calcula el número mínimo de aciertos, y o calcula el número máximo de aciertos.
+Cuando se usa CONTAINS en Windows search index, este es el número de coincidencias del término. Si hay varios CONTAINS, and calcula el número mínimo de aciertos y un or calcula el número máximo de aciertos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

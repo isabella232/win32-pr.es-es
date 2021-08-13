@@ -1,7 +1,7 @@
 ---
-description: Inicia la conmutación por recuperación para una máquina virtual de recuperación.
+description: Inicia la conmutación por recuperación de una máquina virtual de recuperación.
 ms.assetid: F4AE1911-46B2-4412-A17F-3CA7D388276F
-title: 'Msvm_ReplicationService:: InitiateFailback (método)'
+title: Msvm_ReplicationService::InitiateFailback (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b356982296427212287ea11b528a7878dc166245
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b573cf1a0347e8df55b239451d9b99f3d416ebd5b3d0d61e662b6023f07a5b2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644951"
 ---
-# <a name="msvm_replicationserviceinitiatefailback-method"></a>MSVM \_ ReplicationService:: InitiateFailback (método)
+# <a name="msvm_replicationserviceinitiatefailback-method"></a>Método \_ ReplicationService::InitiateFailback de Msvm
 
-Inicia la conmutación por recuperación para una máquina virtual de recuperación.
+Inicia la conmutación por recuperación de una máquina virtual de recuperación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ uint32 InitiateFailback(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de un equipo [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se va a iniciar una conmutación por recuperación.
+Referencia a una instancia [**de Cim \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se va a iniciar una conmutación por recuperación.
 
 </dd> <dt>
 
-*ReplicationSettingData* \[ de\]
+*ReplicationSettingData* \[ En\]
 </dt> <dd>
 
-Representación de cadena de una instancia incrustada de la clase [**MSVM \_ ReplicationSettingData**](msvm-replicationsettingdata.md) que define la configuración de replicación para la conmutación por recuperación.
+Representación de cadena de una instancia incrustada de la clase [**\_ ReplicationSettingData de Msvm**](msvm-replicationsettingdata.md) que define la configuración de replicación para la conmutación por recuperación.
 
 </dd> <dt>
 
-*RecoveryPointIdentifier* \[ de\]
+*RecoveryPointIdentifier* \[ En\]
 </dt> <dd>
 
-Entrada opcional que identifica el punto de recuperación en el que se solicita la conmutación por recuperación.
+Entrada opcional que identifica el punto de recuperación al que se solicita la conmutación por recuperación.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)). Esta referencia se puede usar para supervisar el progreso y obtener el resultado del método.
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)). Esta referencia se puede usar para supervisar el progreso y obtener el resultado del método .
 
 </dd> </dl>
 
@@ -91,16 +91,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -109,18 +109,18 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-**InitiateFailback** funciona en una máquina virtual de recuperación y toma el estado *WaitingForFailback* de la máquina virtual. **InitiateFailback** reenvía la solicitud de conmutación por recuperación al proveedor correspondiente, que resincroniza de nuevo el punto de recuperación del lado principal nuevo. Una vez finalizada la conmutación por recuperación del punto de recuperación solicitado, el estado de replicación se mueve al estado *FailbackCompleted* .
+**InitiateFailback funciona** en una máquina virtual de recuperación y lleva la máquina virtual al *estado WaitingForFailback.* **InitiateFailback** reenvía la solicitud de conmutación por recuperación al proveedor correspondiente, que vuelve a sincronizar el punto de recuperación desde el lado principal nuevo. Una vez completada la conmutación por recuperación del punto de recuperación solicitado, el estado de replicación pasa *al estado FailbackCompleted.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -128,10 +128,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\\\\\Virtualización de raíz \\ V2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -140,7 +140,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

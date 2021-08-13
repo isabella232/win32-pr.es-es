@@ -1,11 +1,11 @@
 ---
 title: Propiedad de volumen IWMPSettings
-description: La propiedad de volumen obtiene o establece el volumen de reproducción actual.
+description: La propiedad volume obtiene o establece el volumen de reproducción actual.
 ms.assetid: cff4fe70-9ca2-4419-bfc3-d622e8c72756
 keywords:
-- Media Player de propiedades de volumen de Windows
-- propiedad de volumen Windows Media Player, interfaz IWMPSettings
-- Interfaz IWMPSettings Windows Media Player, propiedad de volumen
+- propiedad volume Reproductor de Windows Media
+- propiedad volume Reproductor de Windows Media , interfaz IWMPSettings
+- Interfaz IWMPSettings Reproductor de Windows Media , propiedad de volumen
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b21e50c9d3c52b7ce117d6c2ab681e592571c0f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2077547dd00b5c75b6ca77a966190db2bb3bb1bcde61d1f5c5b84c794af84e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568402"
 ---
-# <a name="iwmpsettingsvolume-property"></a>IWMPSettings:: Volume (propiedad)
+# <a name="iwmpsettingsvolume-property"></a>Propiedad IWMPSettings::volume
 
-La propiedad de **volumen** obtiene o establece el volumen de reproducción actual.
+La **propiedad volume** obtiene o establece el volumen de reproducción actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,11 +46,11 @@ Public Property volume As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el nivel de volumen, comprendido entre 0 y 100.
+**System.Int32 que** es el nivel de volumen, que va de 0 a 100.
 
 ## <a name="remarks"></a>Observaciones
 
-Un valor de cero no especifica ningún volumen (silenciado). Un valor de 100 especifica el volumen completo. Si no se especifica ningún valor para esta propiedad, toma como valor predeterminado la última configuración de volumen establecida para Windows Media Player.
+Un valor de cero no especifica ningún volumen (muted). Un valor de 100 especifica el volumen completo. Si no se especifica ningún valor para esta propiedad, el valor predeterminado es la última configuración de volumen establecida para Reproductor de Windows Media.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Un valor de cero no especifica ningún volumen (silenciado). Un valor de 100 esp
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

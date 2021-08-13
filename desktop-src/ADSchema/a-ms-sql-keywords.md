@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-Keywords
-description: No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, la clave 3, la clave 4 y la clave 5.
+description: No se usa. El valor predeterminado se establece en Clave 1, Clave 2, Clave 3, Clave 4 y Clave 5.
 ms.assetid: c6833a83-8801-4438-8402-ddfff103a62d
 ms.tgt_platform: multiple
 keywords:
-- MS-SQL-Keywords atributo AD Schema
-- mS-SQL-Keywords atributo AD Schema
+- Esquema de AD del atributo MS-SQL-Keywords
+- Esquema de AD del atributo mS-SQL-Keywords
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbbdc6390dcfe637965adeb325f20b87aa401a11
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b2fb5d4c4743cc6162fc35017f5ea4bd93ba326f75d4b2f8995b4211c041d985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686707"
 ---
 # <a name="ms-sql-keywords-attribute"></a>Atributo MS-SQL-Keywords
 
-No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, la clave 3, la clave 4 y la clave 5.
+No se usa. El valor predeterminado se establece en Clave 1, Clave 2, Clave 3, Clave 4 y Clave 5.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-palabras clave                             |
-| Nombre para mostrar de LDAP | mS-SQL-palabras clave                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
-| Frecuencia de actualización  | En el programa de instalación del sistema.                            |
+| CN                | MS-SQL-Keywords                             |
+| Ldap-Display-Name | mS-SQL-Keywords                             |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
+| Frecuencia de actualización  | En la configuración del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1401                     |
-| System-ID-GUID    | 01e9a98a-ccef-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 01e9a98a-ccef-11d2-9993-0000f87a57d4        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, l
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                       |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                       |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
@@ -76,13 +76,13 @@ No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, l
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                       |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                       |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
@@ -97,13 +97,13 @@ No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, l
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                       |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                       |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
@@ -118,13 +118,13 @@ No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, l
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                       |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                       |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
@@ -139,13 +139,13 @@ No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, l
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                       |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                       |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
@@ -160,13 +160,13 @@ No se utiliza. El valor predeterminado se establece en la clave 1, la clave 2, l
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                          |
 | System-Only            | False                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | False                                                                                                                                                                                                                                                                                                       |
 | Está indexado             | False                                                                                                                                                                                                                                                                                                       |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |

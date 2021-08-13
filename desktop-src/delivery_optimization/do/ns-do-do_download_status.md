@@ -1,8 +1,8 @@
 ---
-title: Estructura de DO_DOWNLOAD_STATUS
+title: DO_DOWNLOAD_STATUS estructura
 description: Se usa para obtener el estado de una descarga específica.
 keywords:
-- Estructura de DO_DOWNLOAD_STATUS
+- DO_DOWNLOAD_STATUS estructura
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 5e113bb4866ef1033886dbb1579d21aa296d0e5e
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 8775b7daf55d58698d00bcaa2820b909e302933c9f407d1cb6416d6b095a872b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105720101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543739"
 ---
-# <a name="do_download_status-structure"></a>Estructura de DO_DOWNLOAD_STATUS
+# <a name="do_download_status-structure"></a>DO_DOWNLOAD_STATUS estructura
 
-La estructura de **DO_DOWNLOAD_STATUS** se utiliza para obtener el estado de una descarga específica. Se obtiene mediante una llamada a la función **IDODownload:: getStatus** .
+La **DO_DOWNLOAD_STATUS** se usa para obtener el estado de una descarga específica. Se obtiene llamando a la **función IDODownload::GetStatus.**
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -41,7 +41,7 @@ typedef struct _DO_DOWNLOAD_STATUS
 
 `BytesTotal`
 
-Número total de bytes que se van a descargar.
+Número total de bytes que se descargarán.
 
 `BytesTransferred`
 
@@ -49,20 +49,20 @@ Número de bytes que ya se han descargado.
 
 `State`
 
-Estado de descarga actual tal y como se define en la enumeración **DODownloadState** .
+Estado de descarga actual definido por la **enumeración DODownloadState.**
 
 `Error`
 
-La información de error (si existe) que está asociada a la descarga actual.
+Información de error (si existe) asociada a la descarga actual.
 
 `ExtendedError`
 
-La información de error extendida (si existe) que está asociada a la descarga actual.
+La información de error extendida (si existe) asociada a la descarga actual.
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

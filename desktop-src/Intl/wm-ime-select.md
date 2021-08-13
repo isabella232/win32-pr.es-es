@@ -1,19 +1,19 @@
 ---
 description: Se envía a una aplicación cuando el sistema operativo está a punto de cambiar el IME actual. Una ventana recibe este mensaje a través de su función WindowProc.
 ms.assetid: 5559b3ab-8d81-4f33-b0af-d05489371328
-title: Mensaje de WM_IME_SELECT (Winuser. h)
+title: WM_IME_SELECT mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 940858e12c616b1d6281c23633b2f0f5e9657a9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 611ff30bac32fbd38c9aef00e459b49f9760d9702c619f7e6e7f55e6e3b10acb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644625"
 ---
-# <a name="wm_ime_select-message"></a>Mensaje de selección de \_ IME de WM \_
+# <a name="wm_ime_select-message"></a>Mensaje \_ SELECT de WM IME \_
 
-Se envía a una aplicación cuando el sistema operativo está a punto de cambiar el IME actual. Una ventana recibe este mensaje a través de su función [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Se envía a una aplicación cuando el sistema operativo está a punto de cambiar el IME actual. Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,17 +31,17 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Indicador de selección. Este parámetro especifica **true** si el IME indicado está seleccionado. El parámetro se establece en **false** si el IME especificado ya no está seleccionado.
+Indicador de selección. Este parámetro especifica **TRUE si** se selecciona el IME indicado. El parámetro se establece en **FALSE** si el IME especificado ya no está seleccionado.
 
 </dd> <dt>
 
@@ -58,9 +58,9 @@ Este mensaje no tiene ningún valor devuelto.
 
 ## <a name="remarks"></a>Observaciones
 
-Una aplicación que ha creado una ventana de IME debe pasar este mensaje a esa ventana para que pueda recuperar el controlador de distribución del teclado al IME recién seleccionado.
+Una aplicación que ha creado una ventana de IME debe pasar este mensaje a esa ventana para que pueda recuperar el identificador de diseño del teclado al IME recién seleccionado.
 
-La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  procesa este mensaje pasando la información a la ventana IME predeterminada.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  procesa este mensaje pasando la información a la ventana predeterminada de IME.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensajes del administrador de métodos de entrada](input-method-manager-messages.md)
+[Mensajes del Administrador de métodos de entrada](input-method-manager-messages.md)
 </dt> </dl>
 
  

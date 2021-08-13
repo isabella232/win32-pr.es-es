@@ -4,8 +4,8 @@ description: Criterio de ordenación Unicode para la instancia actual de SQL Ser
 ms.assetid: c7f9d81d-a9c3-4be9-8ead-cf3d59352dbb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-UnicodeSortOrder
-- Esquema de AD de atributos de mS-SQL-UnicodeSortOrder
+- Esquema de AD del atributo MS-SQL-UnicodeSortOrder
+- Esquema de AD del atributo mS-SQL-UnicodeSortOrder
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9240844a45e8e4ea567ff96df0eb992f316a7787
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f340541c4fddbed9671c8c7965b0d145175d8fd8c7964e779459ec7c3f79f5c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686465"
 ---
 # <a name="ms-sql-unicodesortorder-attribute"></a>Atributo MS-SQL-UnicodeSortOrder
 
@@ -30,12 +30,12 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-UnicodeSortOrder              |
-| Nombre para mostrar de LDAP | mS-SQL-UnicodeSortOrder              |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | Administrador de dominio                 |
+| Ldap-Display-Name | mS-SQL-UnicodeSortOrder              |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | Administrador de dominio                 |
 | Frecuencia de actualización  | Al iniciar el sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1372              |
-| System-ID-GUID    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
+| System-Id-Guid    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -55,13 +55,13 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -76,13 +76,13 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -97,13 +97,13 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -118,13 +118,13 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -139,13 +139,13 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -160,13 +160,13 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
+| Es de un solo valor       | True                                                      |
 | Está indexado             | False                                                     |
 | En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

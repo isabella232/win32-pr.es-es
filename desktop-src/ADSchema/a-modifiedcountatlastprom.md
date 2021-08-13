@@ -1,11 +1,11 @@
 ---
-title: Atributo Modified-Count-at-Last-PROM
-description: Número de serie del registro de cambios de net Logon en la última promoción.
+title: Atributo Modified-Count-At-Last-Prom
+description: Número de serie del registro de cambios de inicio de sesión neto en la última promoción.
 ms.assetid: 9f907997-ad1a-451c-960d-e5d1d462c00a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Modified-Count-at-Last-PROM
-- modifiedCountAtLastProm esquema de AD de atributos
+- Esquema de AD del atributo Modified-Count-At-Last-Prom
+- Esquema de AD del atributo modifiedCountAtLastProm
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc0c049158250d0e19bfa01efb04bb583bc29f17
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: be3f4760c91ea76d4f9806a88c093bf763faab4905ecfc929eec10c6c6a01a3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687347"
 ---
-# <a name="modified-count-at-last-prom-attribute"></a>Atributo Modified-Count-at-Last-PROM
+# <a name="modified-count-at-last-prom-attribute"></a>Atributo Modified-Count-At-Last-Prom
 
-Número de serie del registro de cambios de net Logon en la última promoción.
+Número de serie del registro de cambios de inicio de sesión neto en la última promoción.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Modified-Count-at-Last-PROM          |
-| Nombre para mostrar de LDAP | modifiedCountAtLastProm              |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | Modified-Count-At-Last-Prom          |
+| Ldap-Display-Name | modifiedCountAtLastProm              |
+| Size              | \-                                   |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.81                |
-| System-ID-GUID    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
+| Sintaxis            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ Número de serie del registro de cambios de net Logon en la última promoción.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
+| Es de un solo valor       | True                                                                                               |
 | Está indexado             | False                                                                                              |
 | En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Número de serie del registro de cambios de net Logon en la última promoción.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
+| Es de un solo valor       | True                                                                                               |
 | Está indexado             | False                                                                                              |
 | En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Número de serie del registro de cambios de net Logon en la última promoción.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
+| Es de un solo valor       | True                                                                                               |
 | Está indexado             | False                                                                                              |
 | En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Número de serie del registro de cambios de net Logon en la última promoción.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
+| Es de un solo valor       | True                                                                                               |
 | Está indexado             | False                                                                                              |
 | En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Número de serie del registro de cambios de net Logon en la última promoción.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
+| Es de un solo valor       | True                                                                                               |
 | Está indexado             | False                                                                                              |
 | En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Número de serie del registro de cambios de net Logon en la última promoción.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
+| Es de un solo valor       | True                                                                                               |
 | Está indexado             | False                                                                                              |
 | En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
