@@ -1,7 +1,7 @@
 ---
-description: Determina si el panel de entrada está listo para mostrar la lista de autocompletar.
+description: Determina si el Panel de entrada está listo para que se muestra la lista autocompletar.
 ms.assetid: 1e0d4bc6-e6a3-4123-a381-00a41ed9c848
-title: 'ITipAutocompleteClient:: RequestShowUI (método) (TipAutoComplete. h)'
+title: Método ITipAutocompleteClient::RequestShowUI (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: e547376bf2e9c50c224d1917e00329e8d9555e6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4288a506e14ae8096db9be051e3282bb2ebd62522988d75574f3e56070419fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449798"
 ---
-# <a name="itipautocompleteclientrequestshowui-method"></a>ITipAutocompleteClient:: RequestShowUI (método)
+# <a name="itipautocompleteclientrequestshowui-method"></a>ITipAutocompleteClient::RequestShowUI (método)
 
-Determina si el panel de entrada está listo para mostrar la lista de autocompletar.
+Determina si el Panel de entrada está listo para que se muestra la lista autocompletar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ HRESULT RequestShowUI(
 
 <dl> <dt>
 
-*hWndACList* \[ de\]
+*hWndACList* \[ En\]
 </dt> <dd>
 
-Identificador de ventana de la interfaz de usuario de la lista de autocompletar.
+Identificador de ventana de la interfaz de usuario de lista de autocompletar.
 
 </dd> <dt>
 
-*pfAllowShowing* \[ enuncia\]
+*pfAllowShowing* \[ out\]
 </dt> <dd>
 
-**False** si el cliente recomienda no mostrar la interfaz de usuario de la lista de autocompletar. **True** si el proveedor de autocompletar puede mostrar la interfaz de usuario de la lista.
+**FALSE** si el cliente recomienda no mostrar la interfaz de usuario de la lista de autocompletar. **TRUE** si el proveedor de autocompletar puede mostrar la interfaz de usuario de lista.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -71,9 +71,9 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-El proveedor de autocompletar llama a este método cuando está a punto de mostrar la interfaz de usuario de autocompletar. Si el estado interno del cliente no permite al proveedor Mostrar la interfaz de usuario, *pfAllowShowing* se establecerá en **false**. Por ejemplo, cuando el texto se envía al campo desde la máscara de escritura a mano en el panel de entrada de Tablet PC y el usuario inicia inmediatamente el lápiz, el cliente recomienda no mostrar la interfaz de usuario de autocompletar, con el fin de evitar la destrucción del lápiz del usuario, estableciendo *pfAllowShowing* en **false**.
+El proveedor de autocompletar llama a este método cuando está a punto de mostrar la interfaz de usuario autocompletar. Si el estado interno del cliente no permite que el proveedor muestre la interfaz de usuario, *pfAllowShowing* se establecerá en **FALSE.** Por ejemplo, cuando el texto se envía al campo desde la máscara de escritura a mano en el panel de entrada de Tablet PC y el usuario empieza a infieren inmediatamente, el cliente recomendará no mostrar la interfaz de usuario autocompletar, para evitar la destructuración de la entrada manuscrita del usuario, estableciendo *pfAllowShowing* en **FALSE.**
 
-Llame a **RequestShowUI** para establecer el identificador de la ventana Lista de autocompletar emergente antes de llamar al [**método referredrects de ITipAutocompleteClient::P**](itipautocompleteclient-preferredrects.md). Si no lo hace, se producirá un error de **E \_ INVALIDARG** al llamar a **PreferredRects**.
+Llame **a RequestShowUI** para establecer el identificador de ventana de lista de autocompletar emergente antes de llamar al método [**ITipAutocompleteClient::P referredRects**](itipautocompleteclient-preferredrects.md). Si no lo hace, se producirá un error **E \_ INVALIDARG** al llamar a **PreferredRects**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Llame a **RequestShowUI** para establecer el identificador de la ventana Lista d
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Encabezado<br/>                   | <dl> <dt>TipAutoComplete. h (también requiere Peninputpanel \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -92,10 +92,10 @@ Llame a **RequestShowUI** para establecer el identificador de la ventana Lista d
 
 <dl> <dt>
 
-[**Interfaz ITipAutocompleteClient**](itipautocompleteclient.md)
+[**ITipAutocompleteClient (interfaz)**](itipautocompleteclient.md)
 </dt> <dt>
 
-[**ITipAutocompleteClient::P método referredRects**](itipautocompleteclient-preferredrects.md)
+[**ITipAutocompleteClient::P referredRects (Método)**](itipautocompleteclient-preferredrects.md)
 </dt> <dt>
 
 [Referencia del panel de entrada de texto](text-input-panel-reference.md)

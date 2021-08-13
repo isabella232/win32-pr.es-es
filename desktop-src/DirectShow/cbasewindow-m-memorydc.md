@@ -1,7 +1,7 @@
 ---
-description: Identificador del contexto de dispositivo de memoria.
+description: Identificador del contexto del dispositivo de memoria.
 ms.assetid: e6edf3fb-67d6-425e-94fe-18e91c56fabb
-title: 'Miembro CBaseWindow:: m_MemoryDC (Winutil. h)'
+title: CBaseWindow::m_MemoryDC miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e313dd43d2a37597a4cef0b23218f052aea07130
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3582c412a5036ca02531c97d35919704a6afda2b07a670b3d978ca8b3d2d55f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658034"
 ---
-# <a name="cbasewindowm_memorydc-member"></a>Miembro MemoryDC CBaseWindow:: m \_
+# <a name="cbasewindowm_memorydc-member"></a>Miembro MemoryDC de CBaseWindow::m \_
 
-Identificador del contexto de dispositivo de memoria.
+Identificador del contexto del dispositivo de memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ HDC m_MemoryDC;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ HDC m_MemoryDC;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

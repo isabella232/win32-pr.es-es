@@ -1,11 +1,11 @@
 ---
-title: Trust-Type atributo)
+title: Trust-Type atributo
 description: El tipo de confianza, por ejemplo, Windows NT o MIT.
 ms.assetid: ad3640cd-d634-4ec1-8be8-1fb8272e4b23
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Trust-Type
-- trustType esquema de AD de atributos
+- Trust-Type esquema de AD de atributo
+- Esquema de AD del atributo trustType
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64b8a8f59f7df976f968bb4f2915e667a06e95bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 94e3591117bb9ae89c0845aae41450812918d3dc3c88e6e31c3f4189f46ef8c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681610"
 ---
-# <a name="trust-type-attribute"></a>Trust-Type atributo)
+# <a name="trust-type-attribute"></a>Trust-Type atributo
 
 El tipo de confianza, por ejemplo, Windows NT o MIT.
 
@@ -30,12 +30,12 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Trust-Type                           |
-| Nombre para mostrar de LDAP | trustType                            |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| Ldap-Display-Name | trustType                            |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | Cuando se crea una nueva confianza.         |
 | Attribute-Id      | 1.2.840.113556.1.4.136               |
-| System-ID-GUID    | bf967a60-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a60-0de6-11d0-a285-00aa003049e2 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -55,13 +55,13 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
+| Es de un solo valor       | True                                                 |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -76,13 +76,13 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
+| Es de un solo valor       | True                                                 |
 | Está indexado             | False                                                |
 | En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -97,13 +97,13 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
+| Es de un solo valor       | True                                                 |
 | Está indexado             | False                                                |
 | En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -118,13 +118,13 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
+| Es de un solo valor       | True                                                 |
 | Está indexado             | False                                                |
 | En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -139,13 +139,13 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
+| Es de un solo valor       | True                                                 |
 | Está indexado             | False                                                |
 | En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -160,13 +160,13 @@ El tipo de confianza, por ejemplo, Windows NT o MIT.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
+| Es de un solo valor       | True                                                 |
 | Está indexado             | False                                                |
 | En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

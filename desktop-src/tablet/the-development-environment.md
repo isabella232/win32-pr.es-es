@@ -1,36 +1,36 @@
 ---
-description: No necesita un Tablet PC para desarrollar aplicaciones de Tablet PC, pero sí necesita un equipo personal capaz de ejecutar el software que se muestra más adelante en este tema.
+description: No necesita una tableta pc para desarrollar aplicaciones de Tablet PC, pero necesita un equipo personal capaz de ejecutar el software que aparece más adelante en este tema.
 ms.assetid: 82034950-78a7-4bab-b449-1b8ea7d90676
 title: El entorno de desarrollo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fefa29a518beaf21aa8b2457abf17d9581075f73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6d6c0de35fa84ec4ee01b3f25aaefec6ab3470fde83161f7aaf2157197bbf1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449218"
 ---
 # <a name="the-development-environment"></a>El entorno de desarrollo
 
-No necesita un Tablet PC para desarrollar aplicaciones de Tablet PC, pero sí necesita un equipo personal capaz de ejecutar el software que se muestra más adelante en este tema.
+No necesita una tableta pc para desarrollar aplicaciones de Tablet PC, pero necesita un equipo personal capaz de ejecutar el software que aparece más adelante en este tema.
 
-Se recomienda encarecidamente que pruebe la aplicación en un Tablet PC real para asegurarse de que se tienen en cuenta todas las diferencias en el hardware, como el digitalizador de mayor resolución.
+Se recomienda encarecidamente probar la aplicación en un tablet PC real para asegurarse de que se tienen en cuenta todas las diferencias en el hardware, como el digitalizador de mayor resolución.
 
 Un sistema de desarrollo típico y mínimo consta del siguiente hardware y software.
 
 ## <a name="hardware"></a>Hardware
 
 -   8 MB de espacio en disco duro para una instalación completa.
--   Un dispositivo señalador para la entrada. Esto incluye dispositivos como un mouse, una tableta externa o un Tablet PC con un digitalizador HID.
+-   Un dispositivo que apunta para la entrada. Esto incluye dispositivos como un mouse, una tableta externa o un tablet PC con un digitalizador HID.
 
-HID significa Dispositivo de interfaz humana, un estándar para dispositivos de entrada. Los digitalizadores que no son compatibles con HID se tratan como un mouse normal, mientras que los digitalizadores compatibles con HID tienen una mayor resolución y más metadatos en los trazos, como la presión, similar a los que están instalados en el hardware de Tablet PC.
+HID significa Dispositivo de interfaz humana, un estándar para dispositivos de entrada. Los digitalizadores no compatibles con HID se tratan como un mouse normal, mientras que los digitalizadores compatibles con HID tienen una mayor resolución y más metadatos en trazos, como presión, similares a los instalados en el hardware de tablet PC.
 
 ## <a name="software"></a>Software
 
 Los siguientes sistemas operativos se pueden usar para desarrollar aplicaciones de Tablet PC:
 
--   Windows 7
+-   Windows 7
 -   Windows Vista
 -   Windows Server 2008
 -   Windows XP Tablet PC Edition 2005
@@ -39,25 +39,25 @@ Los siguientes sistemas operativos se pueden usar para desarrollar aplicaciones 
 
 También necesita lo siguiente:
 
--   Visual Studio versión 6 con Service Pack 5, Visual Studio .NET o Visual Studio .NET 2005
--   Microsoft Internet Explorer 6 o posterior (recomendado)
+-   Visual Studio versión 6 con Service Pack 5 o Visual Studio .NET o Visual Studio .NET 2005
+-   Microsoft Internet Explorer 6 o superior (recomendado)
 
-### <a name="details-on-developing-on-non-tablet-pc-skus-of-windows"></a>Detalles sobre el desarrollo en SKU que no son de Tablet PC de Windows
+### <a name="details-on-developing-on-non-tablet-pc-skus-of-windows"></a>Detalles sobre el desarrollo en SKU de PC que no son tabletas de Windows
 
-Los componentes de la plataforma de Tablet PC se pueden instalar en Windows XP Professional con Service Pack 2 o Windows Server 2003. En estos sistemas operativos, la aplicación puede recopilar entradas manuscritas con la clase [**InkCollector**](inkcollector-class.md) y se puede probar y depurar. Sin embargo, no hay ningún reconocimiento disponible a menos que también Instale el paquete de reconocimiento de Microsoft Windows XP Tablet PC Edition 2005. Puede descargar ese paquete desde el centro de descarga de en MSDN.
+Los componentes de la plataforma tablet PC se pueden instalar en Windows XP Professional con Service Pack 2 o Windows Server 2003. En estos sistemas operativos, la aplicación puede recopilar entrada de lápiz con la clase [**InkCollector**](inkcollector-class.md) y se puede probar y depurar. Sin embargo, no hay ningún reconocimiento disponible a menos que también instale Microsoft Windows XP Tablet PC Edition 2005 Recognizer Pack. Puede descargar ese paquete desde el Centro de descarga en MSDN.
 
-Después de instalar el Windows SDK en un sistema Windows XP Professional o Windows Server 2003, tendrá todos los archivos de desarrollo necesarios para compilar aplicaciones de entrada manuscrita (como msinkaut. h para un desarrollador COM). Sin embargo, no podrá ejecutar ni depurar la aplicación en ese sistema hasta que instale los archivos en tiempo de ejecución. Por ejemplo, en el caso de un desarrollador COM, inkobj.dll se debe instalar y registrar. Dado que no está en un sistema donde existan estos archivos de plataforma, debe instalar los componentes de la plataforma de Tablet PC del módulo de combinación redistribuible, mstpcrt. MSM, para obtener los archivos en tiempo de ejecución en el sistema.
+Después de instalar el SDK de Windows en un sistema de Windows XP Professional o Windows Server 2003, tendrá todos los archivos de desarrollo necesarios para compilar aplicaciones de entrada de lápiz (como msbizut.h para un desarrollador COM). Sin embargo, no podrá ejecutar ni depurar la aplicación en ese sistema hasta que instale los archivos en tiempo de ejecución. Por ejemplo, en el caso de un desarrollador COM, inkobj.dll debe instalarse y registrarse. Dado que no está en un sistema donde existen estos archivos de plataforma, debe instalar los componentes de la plataforma de Tablet PC desde el módulo de combinación redistribuible, mstpcrt.msm, para obtener los archivos en tiempo de ejecución en el sistema.
 
-La manera más sencilla de obtener los tiempos de ejecución de la plataforma instalados en un sistema Windows XP Professional o Windows 2000 con fines de desarrollo consiste en compilar el proyecto de instalación de ejemplo que se proporciona con los ejemplos de PC móvil y Tablet PC e implementarlo en el equipo de desarrollo.
+La manera más sencilla de instalar los entornos de ejecución de la plataforma en un sistema Windows XP Professional o Windows 2000 con fines de desarrollo es compilar el proyecto de instalación de ejemplo proporcionado con los ejemplos de PC móvil y tablet PC e implementarlo en la máquina de desarrollo.
 
 > [!Note]  
 > Windows Vista y Windows XP Tablet PC Edition 2005 ya tienen instalados los componentes de la plataforma, por lo que no requieren pasos adicionales para ejecutar y depurar aplicaciones de Tablet PC.
 
  
 
-Los controles [InkEdit](inkedit-control-reference.md) y [InkPicture](inkpicture-control-reference.md) se pueden usar para recopilar la entrada de lápiz en Windows 2000 con Service Pack 4 o Windows XP Professional con Service Pack 2 cuando los componentes de la plataforma de Tablet PC están presentes instalando la versión 1,7 del SDK de Tablet PC, pero no pueden recopilar entradas de lápiz en sistemas que no son de Tablet PC y que no tienen instalados los componentes de la plataforma de Tablet
+Los controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) se pueden usar para recopilar entradas de lápiz en Windows 2000 con Service Pack 4 o Windows XP Professional con Service Pack 2 cuando los componentes de la plataforma de Tablet PC están presentes mediante la instalación de la versión 1.7 del SDK de Tablet PC, pero no pueden recopilar la entrada de lápiz en sistemas que no son de tableta que no tienen instalados los componentes de la plataforma tablet PC.
 
-La Windows SDK proporciona todos los componentes necesarios para desarrollar aplicaciones de Tablet PC en SKU que no son de Tablet PC de Windows. Establezca la siguiente clave **DWORD** del registro en 1 para recopilar la entrada de lápiz en las SKU de Windows que no son de Tablet PC:
+El SDK Windows proporciona todos los componentes necesarios para desarrollar aplicaciones de Tablet PC en SKU que no son de tableta de Windows. Establezca la siguiente clave del Registro **DWORD** en 1 para recopilar entradas de lápiz en SKU que no son de tableta de Windows:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\TabletPC\Controls\EnableInkCollectionOnNonTablets`
 

@@ -1,5 +1,5 @@
 ---
-description: 'Al crear una instancia de con objetos incrustados, realice las siguientes tareas:'
+description: 'Al crear una instancia con objetos incrustados, realice las siguientes tareas:'
 ms.assetid: 2abf6197-8b95-4c04-b154-508aa85fe12f
 ms.tgt_platform: multiple
 title: Crear objetos incrustados
@@ -10,25 +10,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a76a70fa0e01068622a4f4cdbbbfb6c992b67f56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e54e16005669ebd77b0bc08e5d3174f7aa5fadee2a47477920e91aaa2ae155b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464175"
 ---
 # <a name="creating-embedded-objects"></a>Crear objetos incrustados
 
-Al crear una instancia de con objetos incrustados, realice las siguientes tareas:
+Al crear una instancia con objetos incrustados, realice las siguientes tareas:
 
--   Debe declarar un objeto incrustado con establecimiento inflexible de tipos o con tipo débil.
+-   Debe declarar un objeto incrustado como fuertemente con tipo o con tipos débiles.
 
-    Un objeto fuertemente tipado apunta a un objeto de una clase específica y utiliza el nombre de clase. Un objeto débilmente tipado apunta a un objeto de una clase no especificada y utiliza la palabra clave **Object** . Ambos objetos se asignan al tipo **\_ desconocido de VT** .
+    Un objeto fuertemente con tipo apunta a un objeto de una clase específica y usa el nombre de clase. Un objeto débilmente con tipo apunta a un objeto de una clase sin especificar y usa la palabra **clave object.** Ambos objetos se asignan al **tipo VT \_ UNKNOWN.**
 
--   Puede usar **null** para el valor predeterminado de los objetos incrustados y las rutas de acceso en las inicializaciones y declaraciones.
--   Al incrustar una ruta de objeto, no coloque un espacio en blanco entre los elementos de la ruta de acceso incrustada. Por ejemplo, la ruta de acceso del objeto "Class1Index = 3;" no contiene ningún espacio entre el nombre de la propiedad "Class1index" y el valor que se asigna, que es "3".
+-   Puede usar **NULL para el** valor predeterminado de objetos incrustados y rutas de acceso en inicializaciones y declaraciones.
+-   Al insertar una ruta de acceso de objeto, no coloque espacios en blanco entre los elementos de la ruta de acceso incrustada. Por ejemplo, la ruta de acceso del objeto "Class1Index=3;" no contiene espacio entre el nombre de propiedad "Class1index" y el valor que se asigna, que es "3".
 
-La siguiente declaración de clase muestra cómo declarar objetos incrustados fuertemente tipados y con establecimiento débil de tipos.
+En la siguiente declaración de clase se muestra cómo declarar objetos incrustados fuertemente con tipo y con tipos débiles.
 
 ``` syntax
 Class MyClass
@@ -59,7 +59,7 @@ Class Class3
 };
 ```
 
-En el ejemplo siguiente se describe la inicialización de una propiedad que es un objeto fuertemente tipado y otra propiedad que es una matriz de objetos con establecimiento débil.
+En el ejemplo siguiente se describe la inicialización de una propiedad que es un objeto fuertemente con tipo y otra propiedad que es una matriz de objetos con tipos débiles.
 
 ``` syntax
 Class EmbedClass1

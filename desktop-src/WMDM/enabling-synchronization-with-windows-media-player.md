@@ -1,39 +1,39 @@
 ---
-title: Habilitar la sincronización con Windows Media Player
-description: Habilitar la sincronización con Windows Media Player
+title: Habilitación de la sincronización con Reproductor de Windows Media
+description: Habilitación de la sincronización con Reproductor de Windows Media
 ms.assetid: a312dfef-ac48-4c58-a59a-b277f5386419
 keywords:
-- Windows Media Administrador de dispositivos, sincronización con Windows Media Player
-- Administrador de dispositivos, sincronización con Media Player de Windows
-- Guía de programación, sincronización con Windows Media Player
-- proveedores de servicios, sincronización con Windows Media Player
-- crear proveedores de servicios, sincronización con Windows Media Player
-- sincronización con Windows Media Player
+- Windows Media Administrador de dispositivos,synchronization with Reproductor de Windows Media
+- Administrador de dispositivos,sincronización con Reproductor de Windows Media
+- guía de programación, sincronización con Reproductor de Windows Media
+- proveedores de servicios, sincronización con Reproductor de Windows Media
+- crear proveedores de servicios, sincronización con Reproductor de Windows Media
+- sincronización con Reproductor de Windows Media
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b621be3b17d42368bc859081f47bc29bb2cfc667
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ef06dd0e32e0ea95674f54b94336ecb6882e8215775c857ee0780a58b71af75c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585013"
 ---
-# <a name="enabling-synchronization-with-windows-media-player"></a>Habilitar la sincronización con Windows Media Player
+# <a name="enabling-synchronization-with-windows-media-player"></a>Habilitación de la sincronización con Reproductor de Windows Media
 
-Puede habilitar un dispositivo para que participe en la sincronización automática con Windows Media Player. La sincronización automática significa que cuando un dispositivo sincronizado designado por el usuario se conecta al equipo, Windows Media Player descargará, actualizará o eliminará automáticamente archivos del dispositivo sin necesidad de proporcionar ninguna entrada adicional por parte del usuario.
+Puede permitir que un dispositivo participe en la sincronización automática con Reproductor de Windows Media. La sincronización automática significa que cuando un dispositivo sincronizado designado por el usuario se conecta al equipo, Reproductor de Windows Media descargará, actualizará o eliminará automáticamente los archivos del dispositivo sin necesidad de ninguna entrada de usuario adicional.
 
-De forma predeterminada, los siguientes dispositivos están sincronizados con Windows Media Player:
+De forma predeterminada, los siguientes dispositivos se sincronizan con Reproductor de Windows Media:
 
 -   Dispositivos MTP
 -   Dispositivos de almacenamiento masivo
--   Dispositivos Windows CE (Windows Media Player 10 Mobile y versiones posteriores)
+-   Windows CE dispositivos (Reproductor de Windows Media 10 Mobile y versiones posteriores)
 
-Para que cualquier otro dispositivo se sincronice con Windows Media Player, deben cumplirse los siguientes requisitos:
+Para que cualquier otro dispositivo se sincronice con Reproductor de Windows Media, deben cumplirse los siguientes requisitos:
 
--   El dispositivo debe anunciar una interfaz de dispositivo PAP {F33FDC04-D1AC-4E8E-9A30-19BBD4B108AE}
--   Los objetos de dispositivo devueltos por el proveedor de servicios deben admitir la interfaz **IMDSPDevice3** .
--   El parámetro de dispositivo UseExtendedWmdm debe establecerse en un valor **DWORD** de 1. Consulte [parámetros del dispositivo](device-parameters.md) para obtener más información.
--   El proveedor de servicios debe implementar las siguientes interfaces:
+-   El dispositivo debe anunciar una interfaz de dispositivo PAP que sea {F33FDC04-D1AC-4E8E-9A30-19BBD4B108AE}
+-   Los objetos de dispositivo devueltos por el proveedor de servicios deben admitir la **interfaz IMDSPDevice3.**
+-   El parámetro de dispositivo UseExtendedWmdm debe establecerse en un **valor DWORD** de 1. Consulte [Parámetros del dispositivo](device-parameters.md) para obtener más información.
+-   El proveedor de servicios debe implementar las interfaces siguientes:
 
     [**IMDSPDevice3**](/windows/desktop/api/mswmdm/nn-mswmdm-imdspdevice3)
 
@@ -51,9 +51,9 @@ Para que cualquier otro dispositivo se sincronice con Windows Media Player, debe
 [**Parámetros del dispositivo**](device-parameters.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

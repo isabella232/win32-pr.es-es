@@ -1,24 +1,24 @@
 ---
-title: Notificaciones de selector de fecha y hora
-description: Notificaciones de selector de fecha y hora
+title: Notificaciones del selector de fecha y hora
+description: Notificaciones del selector de fecha y hora
 ms.assetid: 2b3eaf5b-11f7-4e95-8d8d-1808d447da81
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a27d0c01306fd2d6aa8e0a58e9e94559a273b184
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e005adc672fbc129f822bc98e702280164221f66169a40983c2aed27015220cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673558"
 ---
-# <a name="date-and-time-picker-notifications"></a>Notificaciones de selector de fecha y hora
+# <a name="date-and-time-picker-notifications"></a>Notificaciones del selector de fecha y hora
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [DTN \_ primer plano](dtn-closeup.md)
+-   [CIERRE DE \_ DTN](dtn-closeup.md)
 -   [DTN \_ DATETIMECHANGE](dtn-datetimechange.md)
--   [\_lista desplegable DTN](dtn-dropdown.md)
--   [\_formato DTN](dtn-format.md)
+-   [LISTA DESPLEGABLE DE DTN \_](dtn-dropdown.md)
+-   [FORMATO \_ DTN](dtn-format.md)
 -   [DTN \_ FORMATQUERY](dtn-formatquery.md)
 -   [DTN \_ USERSTRING](dtn-userstring.md)
 -   [DTN \_ WMKEYDOWN](dtn-wmkeydown.md)

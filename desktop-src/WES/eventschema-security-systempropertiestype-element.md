@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b793193d7afdfde5fd515252a024432ed45ff8b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20aef5465b8790bdba92c50181c0550ca5989c29d66fd53b9ec7ed0f760a2129
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588291"
 ---
 # <a name="security-systempropertiestype-element"></a>Elemento Security (SystemPropertiesType)
 
@@ -35,7 +35,7 @@ Identifica el usuario que registró el evento.
 </xs:element>
 ```
 
-El elemento de **seguridad** se define mediante el tipo complejo de [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El tipo complejo **SystemPropertiesType** define el [**elemento Security.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -43,7 +43,7 @@ El elemento de **seguridad** se define mediante el tipo complejo de [**SystemPro
 
 | Nombre   | Tipo   | Descripción                                                          |
 |--------|--------|----------------------------------------------------------------------|
-| UserID | string | El identificador de seguridad (SID) del usuario en forma de cadena.<br/> |
+| UserID | string | Identificador de seguridad (SID) del usuario en forma de cadena.<br/> |
 
 
 
@@ -53,19 +53,19 @@ El elemento de **seguridad** se define mediante el tipo complejo de [**SystemPro
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

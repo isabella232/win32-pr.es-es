@@ -4,12 +4,12 @@ ms.assetid: e209a8a9-d39c-4de9-bae4-bbf1b9cace47
 title: PlayNextChapter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7534edfa246cb1e3d352df25e21dd338f382ca05
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d7a40d991da327af05a8dc47aafd9b19e0a4cbda66ff6a87ccab24bc8d3c9920
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432175"
 ---
 # <a name="playnextchapter"></a>PlayNextChapter
 
@@ -18,7 +18,7 @@ ms.locfileid: "105686304"
 
  
 
-El `PlayNextChapter` evento se envía cuando el `PlayNextChapter` comando se ha habilitado o deshabilitado.
+El `PlayNextChapter` evento se envía cuando el comando se ha habilitado o `PlayNextChapter` deshabilitado.
 
 ``` syntax
 PlayNextChapter(bEnabled)

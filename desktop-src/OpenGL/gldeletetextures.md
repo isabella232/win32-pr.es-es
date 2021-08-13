@@ -1,9 +1,9 @@
 ---
-title: función glDeleteTextures (GL. h)
-description: La función glDeleteTextures elimina las texturas con nombre.
+title: Función glDeleteTextures (Gl.h)
+description: La función glDeleteTextures elimina texturas con nombre.
 ms.assetid: 300eb99a-9ee5-4495-9489-7e084db9c6c1
 keywords:
-- glDeleteTextures (función) OpenGL
+- Función glDeleteTextures OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e37893874f143a210bde0099caa7b5ec266f8948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 408019d3bfe226c9e7ecdc2ea00182a0b11c78fa64a0210be658ded4556850cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118617051"
 ---
-# <a name="gldeletetextures-function"></a>glDeleteTextures función)
+# <a name="gldeletetextures-function"></a>Función glDeleteTextures
 
-La función **glDeleteTextures** elimina las texturas con nombre.
+La **función glDeleteTextures** elimina texturas con nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ void WINAPI glDeleteTextures(
 *n* 
 </dt> <dd>
 
-Número de texturas que se van a eliminar.
+Número de texturas que se eliminarán.
 
 </dd> <dt>
 
-*texturas* 
+*Texturas* 
 </dt> <dd>
 
-Matriz de texturas que se van a eliminar.
+Matriz de texturas que se va a eliminar.
 
 </dd> </dl>
 
@@ -67,25 +67,25 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | *n* era un valor negativo.<br/>                                                                                                  |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *n* era un valor negativo.<br/>                                                                                                  |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La función **glDeleteTextures** elimina *n* texturas denominadas por los elementos de las *texturas* de la matriz. Una vez eliminada una textura, no tiene contenido ni dimensionalidad, y su nombre es gratuito para su reutilización (por ejemplo, por **glGenTextures**). La función **glDeleteTextures** omite los ceros y los nombres que no se corresponden con las texturas existentes.
+La **función glDeleteTextures** elimina *n texturas* denominadas por los elementos de las *texturas de matriz*. Después de eliminar una textura, no tiene contenido ni dimensionalidad, y su nombre es libre para su reutilización (por ejemplo, **por glGenTextures**). La **función glDeleteTextures** omite los ceros y los nombres que no corresponden a las texturas existentes.
 
-Si se elimina una textura enlazada actualmente, el enlace vuelve a cero (la textura predeterminada).
+Si se elimina una textura enlazada actualmente, el enlace se revierte a cero (la textura predeterminada).
 
-No puede incluir llamadas a **glDeleteTextures** en las listas de visualización.
+No se pueden incluir llamadas **a glDeleteTextures en** listas para mostrar.
 
 > [!Note]  
-> La función **glDeleteTextures** solo está disponible en la versión 1,1 o posterior de OpenGL.
+> La **función glDeleteTextures** solo está disponible en OpenGL versión 1.1 o posterior.
 
  
 
-La siguiente función recupera información relacionada con **glDeleteTextures**:
+La función siguiente recupera información relacionada con **glDeleteTextures**:
 
 -   [**glIsTexture**](glistexture.md)
 
@@ -97,8 +97,8 @@ La siguiente función recupera información relacionada con **glDeleteTextures**
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

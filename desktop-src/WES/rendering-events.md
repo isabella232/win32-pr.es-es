@@ -1,21 +1,21 @@
 ---
-title: Representar eventos
-description: Para mostrar un evento, debe llamar a la función EvtRender para representarlo en un formato que se pueda mostrar.
+title: Representación de eventos
+description: Para mostrar un evento, debe llamar a la función EvtRender para representarlo en un formulario que se puede mostrar.
 ms.assetid: fc763669-1fbc-4183-a4ff-577a7954d1ca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7b1b4e2cbcab564abefb628f9c58f79ade86d8
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 220c53d4df0d51bf9963e080c192d19a8a915ffbfe33cf113608c0cf6a8fcd39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104420470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587310"
 ---
-# <a name="rendering-events"></a>Representar eventos
+# <a name="rendering-events"></a>Representación de eventos
 
-Para mostrar un evento, debe llamar a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para representarlo en un formato que se pueda mostrar. Puede representar el evento como una cadena XML o puede representar uno o varios valores del evento. Un evento también puede contener cadenas de mensajes (por ejemplo, la cadena de mensaje del evento, la cadena de mensaje del canal o la cadena de mensaje del proveedor). Para obtener una de las cadenas de mensaje del evento, llame a la función [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) . Para obtener más información sobre cómo obtener una cadena de mensaje del evento, consulte [dar formato a los mensajes de eventos](formatting-event-messages.md).
+Para mostrar un evento, debe llamar a la [**función EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para representarlo en un formato que se puede mostrar. Puede representar el evento como una cadena XML o puede representar uno o varios valores del evento. Un evento también puede contener cadenas de mensajes (por ejemplo, la cadena de mensaje del evento, la cadena de mensaje del canal o la cadena de mensaje del proveedor). Para obtener una de las cadenas de mensaje del evento, llame a la [**función EvtFormatMessage.**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) Para obtener más información sobre cómo obtener una cadena de mensaje del evento, vea [Formatting Event Messages](formatting-event-messages.md).
 
-Para representar el evento como una cadena XML, llame a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) . Sin embargo, si desea representar partes específicas del evento, primero debe llamar a [**EvtCreateRenderContext**](/windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext) para especificar las partes del evento que desea representar. Puede representar valores específicos del evento, los valores de la sección datos de usuario o datos de eventos del evento, o los valores de las propiedades relacionadas con el sistema del evento. Para obtener más información sobre los componentes de un evento, vea [esquema de eventos](eventschema-schema.md).
+Para representar el evento como una cadena XML, llame a la [**función EvtRender.**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) Sin embargo, si desea representar partes específicas del evento, primero debe llamar a [**EvtCreateRenderContext**](/windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext) para especificar las partes del evento que desea representar. Puede representar valores específicos del evento, los valores de la sección de datos de usuario o datos de evento del evento o los valores de las propiedades relacionadas con el sistema del evento. Para obtener más información sobre los componentes de un evento, vea [Esquema de eventos](eventschema-schema.md).
 
 En el ejemplo siguiente se muestra cómo representar un evento como una cadena XML.
 
@@ -68,7 +68,7 @@ cleanup:
 
 
 
-En el ejemplo siguiente se muestra cómo representar los valores de las propiedades de la sección System del evento. Para representar los datos de usuario o las propiedades de datos de evento del evento, reemplace la marca EvtRenderContextSystem por la marca EvtRenderContextUser al crear el contexto de representación.
+En el ejemplo siguiente se muestra cómo representar los valores de propiedades de la sección system del evento. Para representar las propiedades de datos de usuario o datos de eventos del evento, reemplace la marca EvtRenderContextSystem por la marca EvtRenderContextUser al crear el contexto de representación.
 
 
 ```C++
@@ -203,7 +203,7 @@ cleanup:
 ```
 
 
-En el ejemplo siguiente se muestra cómo representar los valores específicos del evento. Utilice una expresión XPath para especificar el nodo o atributo específico que se va a recuperar. Puede especificar una o más expresiones para recuperar uno o más valores.
+En el ejemplo siguiente se muestra cómo representar los valores específicos del evento. Use una expresión XPath para especificar el nodo o atributo específico que se recuperará. Puede especificar una o varias expresiones para recuperar uno o varios valores.
 
 
 ```C++

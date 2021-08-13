@@ -1,28 +1,28 @@
 ---
 title: Referencia de WinINet
-description: Los elementos siguientes forman parte de la API WinINet.
+description: Los siguientes elementos forman parte de la API de WinINet.
 ms.assetid: dd2f8246-ea82-49cb-973f-157fb77c8c08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50dffd4374cadf01cc1072ceef8cc6e97ae01391
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 014e4d058dbf0fd8c4c866105a52b0958c395186bad5e779be85977fa4281552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118561947"
 ---
 # <a name="wininet-reference"></a>Referencia de WinINet
 
-Los elementos siguientes forman parte de la API WinINet.
+Los siguientes elementos forman parte de la API de WinINet.
 
--   [WinINet (funciones)](wininet-functions.md)
--   [Estructuras WinINet](wininet-structures.md)
--   [Enumeraciones WinINet](wininet-enumerations.md)
--   [WinINet (constantes)](wininet-constants.md)
+-   [Funciones de WinINet](wininet-functions.md)
+-   [Estructuras de WinINet](wininet-structures.md)
+-   [Enumeraciones de WinINet](wininet-enumerations.md)
+-   [Constantes de WinINet](wininet-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

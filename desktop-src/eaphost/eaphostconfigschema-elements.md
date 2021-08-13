@@ -1,6 +1,6 @@
 ---
-title: Elementos de esquema eaphostconfig
-description: Obtenga información sobre los elementos del esquema eaphostconfig. Son ConfigBlob (EapHostConfig), config (EapHostConfig), EapHostConfig y EapMethod (EapHostConfig).
+title: elementos de esquema eaphostconfig
+description: Obtenga información sobre los elementos de esquema eaphostconfig. Son ConfigBlob (EapHostConfig), Config (EapHostConfig), EapHostConfig y EapMethod (EapHostConfig).
 ms.assetid: 7e90440e-b19f-41ce-b45a-8f5ef5729aab
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 75a6f2e482427c8325c86f1d2091be48d767ae0b
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 1acfe884106414a8d9fd24d2d93e58b5766db884996b569fdd59f7aaf6fa0f74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274712"
 ---
-# <a name="eaphostconfig-schema-elements"></a>Elementos de esquema eaphostconfig
+# <a name="eaphostconfig-schema-elements"></a>elementos de esquema eaphostconfig
 
-El esquema [eaphostconfig](eaphostconfigschema-schema.md) se compone de los siguientes elementos de esquema.
+El [esquema eaphostconfig](eaphostconfigschema-schema.md) se conste de los siguientes elementos de esquema.
 
 -   [**ConfigBlob (EapHostConfig)**](eaphostconfigschema-configblob-eaphostconfig-element.md)
--   [**Configuración (EapHostConfig)**](eaphostconfigschema-config-eaphostconfig-element.md)
+-   [**Config (EapHostConfig)**](eaphostconfigschema-config-eaphostconfig-element.md)
 -   [**EapHostConfig**](eaphostconfigschema-eaphostconfig-element.md)
 -   [**EapMethod (EapHostConfig)**](eaphostconfigschema-eapmethod-eaphostconfig-element.md)
 
@@ -35,9 +35,9 @@ El esquema [eaphostconfig](eaphostconfigschema-schema.md) se compone de los sigu
 [Esquema eaphostconfig](eaphostconfigschema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

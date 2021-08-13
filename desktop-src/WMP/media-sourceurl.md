@@ -1,9 +1,9 @@
 ---
-title: Media. sourceURL
+title: Media.sourceURL
 description: La propiedad sourceURL recupera la dirección URL del elemento multimedia.
 ms.assetid: 98ff6ed4-ad3d-44f8-893d-f016e5217ce5
 keywords:
-- Media Player Windows Media. sourceURL
+- Archivo Media.sourceURL Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c32d594cd1c3b590001eedfd09e9a8c8eb21240
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1e2f99aeb64a73bcf36e2cbd472aedfa8f509a5073e70792e7b47343a1b37d60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415955"
 ---
-# <a name="mediasourceurl"></a>Media. sourceURL
+# <a name="mediasourceurl"></a>Media.sourceURL
 
-La propiedad **sourceURL** recupera la dirección URL del elemento multimedia.
+La **propiedad sourceURL** recupera la dirección URL del elemento multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
-*reproductor*. *currentMedia*. sourceURL
+*player*. *currentMedia*.sourceURL
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura.
+Esta propiedad es una cadena de solo **lectura.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se utiliza el *medio*. **sourceURL** para recuperar la dirección URL del primer elemento multimedia de la lista de reproducción de ejemplo; la dirección URL del elemento multimedia se asigna entonces a la propiedad **dirección URL** del objeto de reproductor. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Media*. **sourceURL para** recuperar la dirección URL del primer elemento multimedia de la lista de reproducción de ejemplo; A continuación, la dirección URL del elemento multimedia se asigna a la propiedad de dirección URL del **objeto de** reproductor. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -61,7 +61,7 @@ Player.controls.play();
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

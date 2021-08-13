@@ -1,7 +1,7 @@
 ---
-description: Determina las subregiones de una imagen que se distribuyen en la placa de plano, de modo que cada una de las subregiones pueda adquirirse en un elemento de imagen independiente.
+description: Determina las subrecciones de una imagen colocadas en la placa plana para que cada una de las subrecciones se pueda adquirir en un elemento de imagen independiente.
 ms.assetid: 899d61f0-2dd8-4a68-827e-89e85ebb5143
-title: IWiaSegmentationFilter::D método etectRegions (WIA. h)
+title: Método IWiaSegmentationFilter::D etectRegions (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 94fe2f5076e9ff7cc0de0f7c916f6edacf2d03fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46496360d7b54bed837ba287d604233a9fac98ee13807744b4adbfb52e9934d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450265"
 ---
-# <a name="iwiasegmentationfilterdetectregions-method"></a>IWiaSegmentationFilter::D método etectRegions
+# <a name="iwiasegmentationfilterdetectregions-method"></a>Método IWiaSegmentationFilter::D etectRegions
 
-Determina las subregiones de una imagen que se distribuyen en la placa de plano, de modo que cada una de las subregiones pueda adquirirse en un elemento de imagen independiente.
+Determina las subrecciones de una imagen colocadas en la placa plana para que cada una de las subrecciones se pueda adquirir en un elemento de imagen independiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ HRESULT DetectRegions(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 Actualmente no se usa. Debe establecerse como cero.
 
 </dd> <dt>
 
-*pInputStream* \[ de\]
+*pInputStream* \[ En\]
 </dt> <dd>
 
-Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream) \** _
+Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream)\***
 
-Especifica un puntero a la imagen de vista previa de [IStream](/windows/win32/api/objidl/nn-objidl-istream) .
+Especifica un puntero a la imagen de [vista previa de IStream.](/windows/win32/api/objidl/nn-objidl-istream)
 
 </dd> <dt>
 
-_pWiaItem2 * \[ en\]
+*pWiaItem2* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
-Especifica un puntero al elemento [_ *IWiaItem2* *](-wia-iwiaitem2.md) para el que se adquirió *pInputStream* . El filtro segmentación crea elementos secundarios para este elemento.
+Especifica un puntero al elemento [**IWiaItem2**](-wia-iwiaitem2.md) para el que *se adquirió pInputStream.* El filtro de segmentación crea elementos secundarios para este elemento.
 
 </dd> </dl>
 
@@ -72,28 +72,28 @@ Especifica un puntero al elemento [_ *IWiaItem2* *](-wia-iwiaitem2.md) para el q
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Este método determina las subregiones de la imagen representada por pInputStream. Para cada subregión detectada, se crea un elemento secundario para el elemento [**IWiaItem2**](-wia-iwiaitem2.md) especificado en el parámetro *pWiaItem2* . Para cada elemento secundario, el filtro de segmentación debe establecer valores para el rectángulo delimitador del área que se va a examinar, mediante las siguientes [**constantes de propiedades de elemento WIA de escáner**](-wia-wiaitempropscanneritem.md).
+Este método determina las subrecciones de la imagen representada por pInputStream. Para cada subrecciones que detecta, crea un elemento secundario para el elemento [**IWiaItem2**](-wia-iwiaitem2.md) especificado en el *parámetro pWiaItem2.* Para cada elemento secundario, el filtro de segmentación debe establecer valores para el rectángulo delimitador del área que se va a examinar, utilizando las siguientes constantes de propiedad de elemento [**WIA del analizador**](-wia-wiaitempropscanneritem.md).
 
--   [**IP de WIA ( \_ \_ XPOS)**](-wia-wiaitempropscanneritem.md)
--   [**WIA \_ IP \_ YPOS**](-wia-wiaitempropscanneritem.md)
--   [**\_XEXTENT de IP WIA \_**](-wia-wiaitempropscanneritem.md)
--   [**\_YEXTENT de IP WIA \_**](-wia-wiaitempropscanneritem.md)
+-   [**WIA \_ IPS \_ XPOS**](-wia-wiaitempropscanneritem.md)
+-   [**WIA \_ IPS \_ YPOS**](-wia-wiaitempropscanneritem.md)
+-   [**WIA \_ IPS \_ XEXTENT**](-wia-wiaitempropscanneritem.md)
+-   [**WIA \_ IPS \_ YEXTENT**](-wia-wiaitempropscanneritem.md)
 
-Un filtro más avanzado también puede requerir otras [**constantes de propiedad del elemento WIA del escáner**](-wia-wiaitempropscanneritem.md) , como la desfragmentación de las direcciones **IP de WIA \_ \_ \_ X** y **WIA, \_ \_ dessesgado \_ y**, si el controlador admite la anulación del sesgo.
+Un filtro más avanzado también puede requerir otras constantes de propiedad de elemento WIA del analizador, como **WIA \_ IPS \_ DESKEW \_ X** y **WIA \_ IPS \_ DESKEW \_ Y,** si el controlador admite la desessgajo. [](-wia-wiaitempropscanneritem.md)
 
-Si la aplicación llama a **IWiaSegmentationFilter::D etectregions** más de una vez, la aplicación debe eliminar primero los elementos secundarios creados por la última llamada a **IWiaSegmentationFilter::D etectregions**.
+Si la aplicación llama a **IWiaSegmentationFilter::D etectRegions** más de una vez, la aplicación debe eliminar primero los elementos secundarios creados por la última llamada a **IWiaSegmentationFilter::D etectRegions**.
 
-Si una aplicación cambia cualquier propiedad en *pWiaItem2*, entre la adquisición de la imagen en *pInputStream* y su llamada a **IWiaSegmentationFilter::D etectregions**, se deben restaurar las propiedades originales (es decir, las propiedades que tenía el elemento cuando se adquirió la secuencia). Esto puede realizarse mediante [**GetPropertyStream**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-getpropertystream) y [**SetPropertyStream**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-setpropertystream).
+Si una aplicación cambia las propiedades a *pWiaItem2,* entre adquirir la imagen en *pInputStream* y su llamada a **IWiaSegmentationFilter::D etectRegions**, se deben restaurar las propiedades originales (es decir, las propiedades que tenía el elemento cuando se adquirió la secuencia). Esto se puede hacer [**mediante GetPropertyStream**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-getpropertystream) y [**SetPropertyStream.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-setpropertystream)
 
-La aplicación debe restablecer la [IStream](/windows/win32/api/objidl/nn-objidl-istream) si su llamada pasa el mismo flujo al filtro de segmentación más de una vez. La aplicación también debe restablecer la secuencia después de la descarga inicial y antes de llamar a **IWiaSegmentationFilter::D etectregions**.
+La aplicación debe restablecer [IStream](/windows/win32/api/objidl/nn-objidl-istream) si su llamada pasa la misma secuencia al filtro de segmentación más de una vez. La aplicación también debe restablecer la secuencia después de la descarga inicial y antes de llamar a **IWiaSegmentationFilter::D etectRegions**.
 
 ## <a name="examples"></a>Ejemplos
 
-La segmentación realiza la detección de regiones en la secuencia ( `pImageStream` ) que se pasa a DetectSubregions. Vea el método [**getExtension**](-wia-iwiaitem2-getextension.md) para CreateSegmentationFilter que se usa en este ejemplo.
+La segmentación realiza la detección de regiones en el flujo ( `pImageStream` ) pasado a DetectSubregions. Vea el [**método GetExtension**](-wia-iwiaitem2-getextension.md) para CreateSegmentationFilter que se usa en este ejemplo.
 
 
 ```C++
@@ -132,9 +132,9 @@ DetectSubregions(
 
 
 
-DownloadPreviewImage descarga los datos de imagen del escáner llamando al método [**GetNewPreview**](-wia-iwiapreview-getnewpreview.md) del componente de vista previa. A continuación, llama a DetectSubregions si el usuario de la aplicación desea invocar el filtro de segmentación, que crea un elemento secundario en pWiaItem2 para cada región que detecta. Vea **IWiaSegmentationFilter::D etectregions** para el método DetectSubregions que se usa en este ejemplo.
+DownloadPreviewImage descarga los datos de imagen del analizador mediante una llamada al [**método GetNewPreview del**](-wia-iwiapreview-getnewpreview.md) componente de vista previa. A continuación, llama a DetectSubregions si el usuario de la aplicación desea invocar el filtro de segmentación, que crea un elemento secundario en pWiaItem2 para cada región que detecta. Vea **IWiaSegmentationFilter::D etectRegions para** el método DetectSubregions usado en este ejemplo.
 
-En este ejemplo, el usuario de la aplicación establece `m_bUseSegmentationFilter` una casilla. Si la aplicación lo admite, primero debe comprobar que el controlador tiene un filtro de segmentación mediante una llamada a [**checkExtension**](-wia-iwiaitem2-checkextension.md). Consulte [**GetNewPreview**](-wia-iwiapreview-getnewpreview.md) para ver el ejemplo de método CheckImgFilter que muestra cómo se puede hacer esto.
+En este ejemplo, el usuario de la aplicación `m_bUseSegmentationFilter` establece haciendo clic en una casilla. Si la aplicación lo admite, primero debe comprobar que el controlador tiene un filtro de segmentación llamando a [**CheckExtension**](-wia-iwiaitem2-checkextension.md). Consulte [**GetNewPreview para obtener el**](-wia-iwiapreview-getnewpreview.md) ejemplo del método CheckImgFilter que muestra cómo se puede hacer esto.
 
 
 ```C++
@@ -219,10 +219,10 @@ DownloadPreviewImage(
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

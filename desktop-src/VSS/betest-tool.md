@@ -1,81 +1,81 @@
 ---
-description: COMTEST es un solicitante de VSS que prueba las operaciones avanzadas de copia de seguridad y restauración.
+description: BETest es un solicitante de VSS que prueba las operaciones avanzadas de copia de seguridad y restauración.
 ms.assetid: a6cc7308-a9fa-4a84-9e7c-4d0adda28db5
-title: Herramienta de prueba
+title: Herramienta BETest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7559c304532b337214108435b740595897694f7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd5f37e8bfc224061a8205bf0759cbba4798b0d53227e4f12d89b1e9ddf629d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471155"
 ---
-# <a name="betest-tool"></a>Herramienta de prueba
+# <a name="betest-tool"></a>Herramienta BETest
 
-COMTEST es un solicitante de VSS que prueba las operaciones avanzadas de copia de seguridad y restauración. Esta herramienta se puede usar para probar el uso de una aplicación de características de VSS complejas, como las siguientes:
+BETest es un solicitante de VSS que prueba las operaciones avanzadas de copia de seguridad y restauración. Esta herramienta se puede usar para probar el uso de características complejas de VSS de una aplicación, como las siguientes:
 
 -   Copia de seguridad incremental y diferencial
 -   Opciones de restauración complejas, como la restauración autoritativa
--   Opciones de puesta al día
+-   Opciones de reversión
 
 > [!Note]  
-> COMTEST se incluye en el kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista y versiones posteriores. El SDK de VSS 7,2 incluye una versión de COMTEST que solo se ejecuta en Windows Server 2003. En este tema se describe la versión Windows SDK de COMTEST, no la versión 2003 de Windows Server incluida en el SDK de VSS 7,2. Para obtener información acerca de cómo descargar el Windows SDK y el SDK de VSS 7,2, consulte [servicio de instantáneas de volumen](volume-shadow-copy-service-portal.md).
+> BETest se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista y versiones posteriores. El SDK de VSS 7.2 incluye una versión de BETest que solo se ejecuta Windows Server 2003. En este tema se describe Windows versión del SDK de BETest, no la versión de Windows Server 2003 incluida en el SDK de VSS 7.2. Para obtener información sobre cómo descargar el SDK Windows y el SDK de VSS 7.2, [consulte Servicio de instantáneas de volumen](volume-shadow-copy-service-portal.md).
 
  
 
-En la instalación de Windows SDK, la herramienta COMTEST se puede encontrar en `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para Windows de 64 bits) y `%Program Files(x86)%\Windows Kits\8.1\bin\x86` (para windows de 32 bits).
+En la instalación del SDK de Windows, la herramienta BETest se puede encontrar en (para Windows de 64 bits) y (para archivos de `%Program Files(x86)%\Windows Kits\8.1\bin\x64` `%Program Files(x86)%\Windows Kits\8.1\bin\x86` 32 Windows).
 
-## <a name="running-the-betest-tool"></a>Ejecutar la herramienta COMTEST
+## <a name="running-the-betest-tool"></a>Ejecución de la herramienta BETest
 
-Para ejecutar la herramienta COMTEST desde la línea de comandos, use la siguiente sintaxis:
+Para ejecutar la herramienta BETest desde la línea de comandos, use la sintaxis siguiente:
 
- *Opciones de línea de comandos de* test
+**BeTest** *command-line-options*
 
-En el ejemplo de uso siguiente se muestra cómo usar la herramienta COMTEST junto con la [herramienta VSS Writer](vss-test-writer-tool.md), que es una VSS Writer.
+En el ejemplo de uso siguiente se muestra cómo usar la herramienta BETest junto con la herramienta [VSS Test Writer](vss-test-writer-tool.md), que es vss writer.
 
-**Ejemplo de uso de la herramienta de prueba**
+**Ejemplo de uso de la herramienta BETest**
 
-1.  Cree un directorio de prueba denominado C: \\ COMTEST. Copie los siguientes archivos en este directorio:
+1.  Cree un directorio de prueba denominado C: \\ BETest. Copie los siguientes archivos en este directorio:
     -   betest.exe
     -   vswriter.exe
     -   [BetestSample.xml](#sample-xml-configuration-file-betestsamplexml)
     -   [VswriterSample.xml](#sample-xml-configuration-file-vswritersamplexml)
 2.  Cree un directorio denominado C: \\ TestPath. Coloque algunos archivos de datos de prueba en este directorio.
 3.  Cree un directorio denominado C: \\ BackupDestination. Deje este directorio vacío.
-4.  Abra dos ventanas de comandos con privilegios elevados y establezca el directorio de trabajo de cada en C: \\ compruébelo.
-5.  En la primera ventana de comandos, inicie la [herramienta VSS test Writer](vss-test-writer-tool.md) de la manera siguiente:
+4.  Abra dos ventanas de comandos con privilegios elevados y establezca el directorio de trabajo de cada una en C: \\ BETest.
+5.  En la primera ventana de comandos, inicie la herramienta [VSS Test Writer](vss-test-writer-tool.md) como se muestra a continuación:
 
     **vswriter.exe VswriterSample.xml**
 
-    En el archivo vswriterSample.xml se configura la herramienta VSS Writer (vswriter) para notificar el contenido del directorio c: \\ TestPath como preparación para una operación de copia de seguridad. Tenga en cuenta que la herramienta de escritura de prueba de VSS no producirá ningún resultado hasta que detecte actividad de un solicitante como COMTEST. Para detener la herramienta VSS Writer, presione CTRL + C.
+    El vswriterSample.xml archivo configura la herramienta VSS Test Writer (vswriter) para notificar el contenido del directorio c: TestPath como preparación para una operación de copia \\ de seguridad. Tenga en cuenta que la herramienta VSS Test Writer no producirá resultados hasta que detecte la actividad de un solicitante como BETest. Para detener la herramienta VSS Test Writer, presione CTRL+C.
 
-6.  En la segunda ventana de comandos, use la herramienta COMTEST para realizar una operación de copia de seguridad como se indica a continuación:
+6.  En la segunda ventana de comandos, use la herramienta BETest para realizar una operación de copia de seguridad de la siguiente manera:
 
-    **betest.exe/B/S backup.xml/D C: \\ BackupDestination/x BetestSample.xml**
+    **betest.exe /B /S backup.xml /D C: \\ BackupDestination /X BetestSample.xml**
 
-    COMTEST hará una copia de seguridad de los archivos del \\ directorio c: TestPath en el \\ directorio c: BackupDestination Se guardará el documento del componente de copia de seguridad en C: \\ Compruébelo \\backup.xml.
+    BETest realizará una copia de seguridad de los archivos desde el directorio C: \\ TestPath al directorio C: \\ BackupDestination. Guardará el documento del componente de copia de seguridad en C: \\ BETest \\backup.xml.
 
-7.  Si la operación de copia de seguridad se realiza correctamente, elimine el contenido del directorio C: \\ TestPath y use la herramienta COMTEST para realizar una operación de restauración de la siguiente manera:
+7.  Si la operación de copia de seguridad se realiza correctamente, elimine el contenido del directorio C: TestPath y use la herramienta BETest para realizar una operación de restauración como \\ se muestra a continuación:
 
-    **betest.exe/R/S backup.xml/D C: \\ BackupDestination/x BetestSample.xml**
+    **betest.exe /R /S backup.xml /D C: \\ BackupDestination /X BetestSample.xml**
 
-## <a name="betest-tool-command-line-options"></a>Opciones de Command-Line de herramientas de prueba
+## <a name="betest-tool-command-line-options"></a>BETest Tool Command-Line Options
 
-La herramienta COMTEST usa las siguientes opciones de línea de comandos para identificar el trabajo que se va a realizar.
+La herramienta BETest usa las siguientes opciones de línea de comandos para identificar el trabajo que se va a realizar.
 
 <dl> <dt>
 
 <span id="_Auth"></span><span id="_auth"></span><span id="_AUTH"></span>**/Auth**
 </dt> <dd>
 
-Realiza una operación de restauración autoritativa para Active Directory o Active Directory Application Mode.
+Realiza una operación de restauración autoritativa para Active Directory o Active Directory modo de aplicación.
 
 **Windows Server 2003:** No se admite esta opción de línea de comandos.
 
 </dd> <dt>
 
-<span id="_B"></span><span id="_b"></span>**B**
+<span id="_B"></span><span id="_b"></span>**/b**
 </dt> <dd>
 
 Realiza una operación de copia de seguridad, pero no realiza una restauración.
@@ -85,38 +85,38 @@ Realiza una operación de copia de seguridad, pero no realiza una restauración.
 <span id="_BC"></span><span id="_bc"></span>**/BC**
 </dt> <dd>
 
-Solo realiza la operación de copia de seguridad completa.
+Realiza solo la operación de copia de seguridad completa.
 
 **Windows Server 2003:** No se admite esta opción de línea de comandos.
 
 </dd> <dt>
 
-<span id="_C_Filename"></span><span id="_c_filename"></span><span id="_C_FILENAME"></span>**/C** *nombreDeArchivo*
+<span id="_C_Filename"></span><span id="_c_filename"></span><span id="_C_FILENAME"></span>**/C** *Filename*
 </dt> <dd>
 
 > [!Note]  
-> Esta opción de línea de comandos solo se proporciona para la compatibilidad con versiones anteriores. En su lugar, se debe utilizar la opción de línea de comandos **/x** .
+> Esta opción de línea de comandos solo se proporciona por compatibilidad con versiones anteriores. En **su lugar,** se debe usar la opción de línea de comandos /X.
 
  
 
-Selecciona los componentes de los que se va a realizar una copia de seguridad o que se van a restaurar según el contenido del archivo de configuración especificado por *filename*. Este archivo debe contener solo caracteres ANSI en el intervalo comprendido entre 0 y 127, y no debe tener más de 1 MB. Cada línea del archivo debe tener el formato siguiente:
+Selecciona los componentes de los que se va a realizar una copia de seguridad o se restaurarán en función del contenido del archivo de configuración especificado por *Filename*. Este archivo solo debe contener caracteres ANSI en el intervalo de 0 a 127 y no debe tener más de 1 MB. Cada línea del archivo debe usar el formato siguiente:
 
 *WriterId* : *ComponentName*;
 
-Donde *WriterId* es el identificador del escritor y *ComponentName* es el nombre de uno de los componentes del escritor. El identificador del escritor y los nombres de los componentes deben estar entre comillas y debe haber espacios delante y detrás del signo de dos puntos (:). Si se especifican dos o más componentes, deben separarse con comas. Por ejemplo:
+Donde *WriterId* es el identificador de escritor y *ComponentName* es el nombre de uno de los componentes del escritor. El identificador de escritor y los nombres de componente deben estar entre comillas y deben haber espacios antes y después de los dos puntos (:). Si se especifican dos o más componentes, deben estar separados por comas. Por ejemplo:
 
 "5affb034-969f-4919-8875-88f830d0ef89" : "TestFiles1", "TestFiles2", "TestFiles3";
 
 </dd> <dt>
 
-<span id="_D_Path"></span><span id="_d_path"></span><span id="_D_PATH"></span>**/D** ( *ruta* )
+<span id="_D_Path"></span><span id="_d_path"></span><span id="_D_PATH"></span>**/D Ruta de** *acceso*
 </dt> <dd>
 
-Guarde los archivos de copia de seguridad en o los restaure desde el directorio de copia de seguridad especificado por *path*.
+Guarde los archivos de copia de seguridad en o restáurelos desde el directorio de copia de seguridad especificado por *Path*.
 
 </dd> <dt>
 
-<span id="_NBC"></span><span id="_nbc"></span>**/NBC**
+<span id="_NBC"></span><span id="_nbc"></span>**/NB**
 </dt> <dd>
 
 Omite la operación de copia de seguridad completa.
@@ -125,14 +125,14 @@ Omite la operación de copia de seguridad completa.
 
 </dd> <dt>
 
-<span id="_O"></span><span id="_o"></span>**/O**
+<span id="_O"></span><span id="_o"></span>**/o**
 </dt> <dd>
 
 Especifica que la copia de seguridad incluye un estado del sistema de arranque.
 
 </dd> <dt>
 
-<span id="_P"></span><span id="_p"></span>**/P**
+<span id="_P"></span><span id="_p"></span>**/p**
 </dt> <dd>
 
 Crea una instantánea persistente.
@@ -141,42 +141,42 @@ Crea una instantánea persistente.
 
 </dd> <dt>
 
-<span id="_Pre_Filename"></span><span id="_pre_filename"></span><span id="_PRE_FILENAME"></span> *Nombre de archivo* /pre
+<span id="_Pre_Filename"></span><span id="_pre_filename"></span><span id="_PRE_FILENAME"></span>**/Nombre de archivo** *anterior*
 </dt> <dd>
 
-Si el tipo de copia de seguridad especificado en la opción de línea de comandos **/t** es incremental o diferencial, establezca el documento de copia de seguridad en el archivo especificado por *filename* para la copia de seguridad completa o incremental anterior.
+Si el tipo de copia de seguridad especificado en la opción de línea de comandos **/T** es INCREMENTAL o DIFFERENTIAL, establezca el documento de copia de seguridad en el archivo especificado por *Filename* para la copia de seguridad completa o incremental anterior.
 
 **Windows Server 2003 y Windows XP:** No se admite esta opción de línea de comandos.
 
 </dd> <dt>
 
-<span id="_R"></span><span id="_r"></span>**/R**
+<span id="_R"></span><span id="_r"></span>**/r**
 </dt> <dd>
 
-Realiza la restauración pero no realiza la copia de seguridad. Se debe usar junto con la opción de línea de comandos **/s** .
+Realiza la restauración, pero no realiza la copia de seguridad. Debe usarse junto con la opción de línea de comandos **/S.**
 
 </dd> <dt>
 
 <span id="_Rollback"></span><span id="_rollback"></span><span id="_ROLLBACK"></span>**/Rollback**
 </dt> <dd>
 
-Crea una instantánea que se puede utilizar para la reversión de la aplicación.
+Crea una instantánea que se puede usar para la reversión de aplicaciones.
 
 **Windows Server 2003:** No se admite esta opción de línea de comandos.
 
 </dd> <dt>
 
-<span id="_S_Filename"></span><span id="_s_filename"></span><span id="_S_FILENAME"></span>**/S** *nombreDeArchivo*
+<span id="_S_Filename"></span><span id="_s_filename"></span><span id="_S_FILENAME"></span>**/S** *Filename*
 </dt> <dd>
 
-En el caso de la copia de seguridad, guarda el documento de copia de seguridad en el archivo especificado por *filename*. En el caso de la restauración, carga el documento de copia de seguridad desde este archivo.
+En el caso de la copia de seguridad, guarda el documento de copia de seguridad en el archivo especificado por *Nombre de archivo*. Solo en caso de restauración, carga el documento de copia de seguridad desde este archivo.
 
 </dd> <dt>
 
 <span id="_Snapshot"></span><span id="_snapshot"></span><span id="_SNAPSHOT"></span>**/Snapshot**
 </dt> <dd>
 
-Crea una instantánea de volumen pero no realiza copias de seguridad ni restauración.
+Crea una instantánea de volumen, pero no realiza copias de seguridad ni restauraciones.
 
 **Windows Server 2003:** No se admite esta opción de línea de comandos.
 
@@ -185,20 +185,20 @@ Crea una instantánea de volumen pero no realiza copias de seguridad ni restaura
 <span id="_StopError"></span><span id="_stoperror"></span><span id="_STOPERROR"></span>**/StopError**
 </dt> <dd>
 
-Detiene la prueba cuando se encuentra el primer error de escritura.
+Detiene BETest cuando se encuentra el primer error de escritor.
 
 **Windows Server 2003:** No se admite esta opción de línea de comandos.
 
 </dd> <dt>
 
-<span id="_T_BackupType"></span><span id="_t_backuptype"></span><span id="_T_BACKUPTYPE"></span>**/T** *copia*
+<span id="_T_BackupType"></span><span id="_t_backuptype"></span><span id="_T_BACKUPTYPE"></span>**/T** *BackupType*
 </dt> <dd>
 
-Especifica el tipo de copia de seguridad. *Copia* puede ser completo, registro, copia, incremental o diferencial. Para obtener más información sobre los tipos de copia de seguridad, vea [**\_ \_ tipo de copia de seguridad de VSS**](/windows/desktop/api/Vss/ne-vss-vss_backup_type).
+Especifica el tipo de copia de seguridad. *BackupType* puede ser FULL, LOG, COPY, INCREMENTAL o DIFFERENTIAL. Para obtener más información sobre los tipos de copia de seguridad, [**vea VSS \_ BACKUP \_ TYPE**](/windows/desktop/api/Vss/ne-vss-vss_backup_type).
 
 </dd> <dt>
 
-<span id="_V"></span><span id="_v"></span>**/V**
+<span id="_V"></span><span id="_v"></span>**/v**
 </dt> <dd>
 
 Genera una salida detallada que se puede usar para solucionar problemas.
@@ -207,13 +207,13 @@ Genera una salida detallada que se puede usar para solucionar problemas.
 
 </dd> <dt>
 
-<span id="_X_Filename"></span><span id="_x_filename"></span><span id="_X_FILENAME"></span>**/X** *nombreDeArchivo*
+<span id="_X_Filename"></span><span id="_x_filename"></span><span id="_X_FILENAME"></span>**/X** Nombre de *archivo*
 </dt> <dd>
 
-Selecciona los componentes de los que se va a realizar una copia de seguridad o que se van a restaurar según el contenido del archivo de configuración XML especificado por *filename*. Este archivo solo debe contener caracteres ANSI en el intervalo comprendido entre 0 y 127. El formato del archivo XML lo define el esquema en el archivo de BETest.xml. Para obtener un archivo de configuración de ejemplo, vea BetestSample.xml. Ambos archivos se encuentran en el directorio vsstools
+Selecciona los componentes de los que se va a realizar una copia de seguridad o se restaurarán en función del contenido del archivo de configuración XML especificado por *Filename*. Este archivo solo debe contener caracteres ANSI en el intervalo de 0 a 127. El formato del archivo XML se define mediante el esquema en el BETest.xml archivo. Para obtener un archivo de configuración de ejemplo, consulte BetestSample.xml. Ambos archivos están en el directorio vsstools.
 
 > [!Note]  
-> Puede ver el archivo de BETest.xml en Internet Explorer. Antes de abrir este archivo, asegúrese de que el archivo XDR-Schema. xsl está en el mismo directorio que BETest.xml. El archivo XDR-Schema. xsl contiene instrucciones de representación que hacen que el archivo BETest.xml sea más legible.
+> Puede ver el archivo BETest.xml en Internet Explorer. Antes de abrir este archivo, asegúrese de que el archivo xdr-schema.xsl está en el mismo directorio que BETest.xml. El archivo xdr-schema.xsl contiene instrucciones de representación que hacen que BETest.xml archivo sea más legible.
 
  
 
@@ -223,7 +223,7 @@ Selecciona los componentes de los que se va a realizar una copia de seguridad o 
 
 ## <a name="sample-xml-configuration-file-betestsamplexml"></a>Archivo de configuración XML de ejemplo: BetestSample.xml
 
-El siguiente archivo de configuración de ejemplo, BetestSample.xml, se puede encontrar en el directorio Vsstools
+El siguiente archivo de configuración de ejemplo, BetestSample.xml, se puede encontrar en el directorio Vsstools.
 
 ``` syntax
 <BETest>
@@ -234,11 +234,11 @@ El siguiente archivo de configuración de ejemplo, BetestSample.xml, se puede en
 </BETest>
 ```
 
-En este ejemplo de un archivo de configuración simple se selecciona un componente del que se va a realizar la copia de seguridad o la restauración.
+En este ejemplo de un archivo de configuración simple se selecciona un componente del que se va a realizar una copia de seguridad o restaurar.
 
 ## <a name="sample-xml-configuration-file-vswritersamplexml"></a>Archivo de configuración XML de ejemplo: VswriterSample.xml
 
-El siguiente archivo de configuración de ejemplo, VswriterSample.xml, se puede encontrar en el directorio Vsstools
+El siguiente archivo de configuración de ejemplo, VswriterSample.xml, se puede encontrar en el directorio Vsstools.
 
 ``` syntax
 <TestWriter   usage="USER_DATA"
@@ -256,32 +256,32 @@ El siguiente archivo de configuración de ejemplo, VswriterSample.xml, se puede 
 </TestWriter>
 ```
 
-El elemento raíz de este archivo de configuración se denomina TestWriter. Todos los demás elementos se organizan bajo el elemento TestWriter.
+El elemento raíz de este archivo de configuración se denomina TestWriter. Todos los demás elementos se organizan en el elemento TestWriter.
 
-El primer atributo asociado a TestWriter es el atributo Usage. Este atributo especifica el tipo de uso indicado a través del método [**IVssExamineWriterMetadata:: GetIdentity**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity) . Uno de los valores posibles para este atributo son los \_ datos de usuario.
+El primer atributo asociado a TestWriter es el atributo usage. Este atributo especifica el tipo de uso notificado a través [**del método IVssExgvWriterMetadata::GetIdentity.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity) Uno de los valores posibles para este atributo es USER \_ DATA.
 
-El segundo atributo es el atributo deleteFiles. Este atributo se describe en [configuración de los atributos del escritor](vss-test-writer-tool.md).
+El segundo atributo es el atributo deleteFiles. Este atributo se describe en [Configuring Writer Attributes](vss-test-writer-tool.md).
 
 El primer elemento secundario del elemento raíz es un elemento RestoreMethod. Este elemento especifica lo siguiente:
 
--   El método restore (en este caso, RESTOre \_ If \_ \_ se puede \_ reemplazar)
+-   El método de restauración (en este caso, RESTORE \_ IF \_ SE PUEDE \_ \_ REEMPLAZAR)
 -   Si el escritor requiere eventos de restauración (en este caso, siempre)
--   Si es necesario un reinicio después de restaurar el escritor (en este caso, no)
+-   Si se requiere un reinicio después de restaurar el sistema de escritura (en este caso, no)
 
-Este elemento puede especificar opcionalmente una asignación de ubicación alternativa. (En este caso, no se especifica ninguna ubicación alternativa). Para obtener más información, vea [especificar asignaciones de ubicaciones alternativas](vss-test-writer-tool.md).
+Opcionalmente, este elemento puede especificar una asignación de ubicación alternativa. (En este caso, no se especifica ninguna ubicación alternativa). Para obtener más información, vea [Especificar asignaciones de ubicación alternativas.](vss-test-writer-tool.md)
 
-El segundo elemento secundario es un elemento de componente. Este elemento hace que el escritor agregue un componente a sus metadatos. Un elemento Component contiene atributos para describir el componente y los elementos secundarios para describir el contenido del componente, como el siguiente:
+El segundo elemento secundario es un elemento Component. Este elemento hace que el escritor agregue un componente a sus metadatos. Un elemento Component contiene atributos para describir el componente y los elementos secundarios para describir el contenido del componente, como el siguiente:
 
--   componentType para indicar si se trata de un grupo de archivos o de una base de datos (en este caso, un grupo de archivos)
+-   componentType para indicar si se trata de un grupo de archivos o una base de datos (en este caso, un grupo de archivos)
 -   logicalPath para la ruta de acceso lógica del componente (en este caso, no se especifica ninguno)
--   componentName para el nombre del componente (en este caso, "prueba")
--   Selectable para indicar el estado Selectable-for-Backup
+-   componentName para el nombre del componente (en este caso, "TestFiles")
+-   seleccionable para indicar el estado seleccionable para copia de seguridad
 
-El elemento componente también tiene un elemento secundario denominado ComponentFile para agregar una especificación de archivo a este componente. (Un elemento de componente puede tener un número arbitrario de elementos ComponentFile que se pueden especificar para cada componente). Este elemento ComponentFile tiene los siguientes atributos:
+El elemento Component también tiene un elemento secundario denominado ComponentFile para agregar una especificación de archivo a este componente. (Un elemento Component puede tener un número arbitrario de elementos ComponentFile que se pueden especificar para cada componente). Este elemento ComponentFile tiene los siguientes atributos:
 
--   Ruta de acceso = "c: \\ TestPath"
--   filespec = " \* "
--   Recursive = "no"
+-   path="c: \\ TestPath"
+-   filespec=" \* "
+-   recursive="no"
 
  
 

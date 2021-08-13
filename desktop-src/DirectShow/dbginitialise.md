@@ -1,7 +1,7 @@
 ---
 description: La función DbgInitialise inicializa la biblioteca de depuración. Se omite en las compilaciones comerciales.
 ms.assetid: d4ca739e-cd39-4692-81da-c5a88a09d546
-title: Función DbgInitialise (Wxdebug. h)
+title: Función DbgInitialise (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33a62c8dad7ef6e15b9b11461303b1bced977a96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13aad8d0214c65c01237c8e74548c3915af9287c935b53e33c6d229b2da5b12e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654220"
 ---
-# <a name="dbginitialise-function"></a>DbgInitialise función)
+# <a name="dbginitialise-function"></a>Función DbgInitialise
 
-La función **DbgInitialise** inicializa la biblioteca de depuración. Se omite en las compilaciones comerciales.
+La **función DbgInitialise** inicializa la biblioteca de depuración. Se omite en las compilaciones comerciales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void DbgInitialise(
 *hInst* 
 </dt> <dd>
 
-Identificador de la instancia de módulo.
+Identificador de la instancia del módulo.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-En un archivo ejecutable, llame a este método antes de usar las funciones de depuración de DirectShow. Antes de que se cierre el archivo ejecutable, llame a la función [**DbgTerminate**](dbgterminate.md) para limpiar la biblioteca de depuración.
+En un archivo ejecutable, llame a este método antes de usar las DirectShow de depuración. Antes de que se cierre el ejecutable, llame a la [**función DbgTerminate**](dbgterminate.md) para limpiar la biblioteca de depuración.
 
-En un archivo DLL que se vincula a la biblioteca de clases base (Strmbase. lib), no es necesario llamar a esta función. Se llama a la función automáticamente cuando se carga el archivo DLL.
+En un archivo DLL que se vincula a la biblioteca de clase base (Strmbase.lib), no es necesario llamar a esta función. Se llama automáticamente a la función cuando se carga el archivo DLL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ En un archivo DLL que se vincula a la biblioteca de clases base (Strmbase. lib),
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

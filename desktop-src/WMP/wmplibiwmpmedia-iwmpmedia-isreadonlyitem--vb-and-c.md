@@ -1,11 +1,11 @@
 ---
-title: IWMPMedia isReadOnlyItem, método
+title: Método isReadOnlyItem de IWMPMedia
 description: El método isReadOnlyItem devuelve un valor que indica si se pueden editar los atributos del elemento multimedia especificado.
 ms.assetid: c810c5c1-8cb9-4ac7-ac49-1ebdc86f5d7f
 keywords:
-- método isReadOnlyItem de Windows Media Player
-- método isReadOnlyItem Windows Media Player, interfaz IWMPMedia
-- Interfaz IWMPMedia Windows Media Player, método isReadOnlyItem
+- Método isReadOnlyItem Reproductor de Windows Media
+- Método isReadOnlyItem Reproductor de Windows Media , interfaz IWMPMedia
+- Interfaz IWMPMedia Reproductor de Windows Media método , isReadOnlyItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f21d3dfefc1222832783e62962298da8bcb02b25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dcfd6ef631ed1a3e8159c91bd26e637fc9f22c9b3aa61594555ce1e5ede9c81f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464995"
 ---
-# <a name="iwmpmediaisreadonlyitem-method"></a>IWMPMedia:: isReadOnlyItem (método)
+# <a name="iwmpmediaisreadonlyitem-method"></a>IWMPMedia::isReadOnlyItem (método)
 
-El método **isReadOnlyItem** devuelve un valor que indica si se pueden editar los atributos del elemento multimedia especificado.
+El **método isReadOnlyItem** devuelve un valor que indica si se pueden editar los atributos del elemento multimedia especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ Implements IWMPMedia.isReadOnlyItem
 
 <dl> <dt>
 
-*bstrItemName* \[ de\]
+*bstrItemName* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del elemento multimedia.
+**System.String que** es el nombre del elemento multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor **System. Boolean** que indica si los atributos son de solo lectura.
+Valor **System.Boolean** que indica si los atributos son de solo lectura.
 
 ## <a name="remarks"></a>Observaciones
 
-Si un atributo es de solo lectura, no se puede establecer con el método **setItemInfo** . Tenga en cuenta que este método puede devolver valores diferentes para un atributo determinado cuando se usa con versiones diferentes de Windows Media Player.
+Si un atributo es de solo lectura, no se puede establecer con el **método setItemInfo.** Tenga en cuenta que este método puede devolver valores diferentes para un atributo determinado cuando se usa con versiones diferentes de Reproductor de Windows Media.
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **isReadOnlyItem** para rellenar un cuadro de texto de varias líneas con información sobre el elemento multimedia actual. El código muestra cada atributo del elemento multimedia actual, junto con el texto que indica si el atributo es de solo lectura o de lectura y escritura. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa isReadOnlyItem para** rellenar un cuadro de texto de varias líneas con información sobre el elemento multimedia actual. El código muestra cada atributo del elemento multimedia actual, junto con texto que indica si el atributo es de solo lectura o de lectura/escritura. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -153,7 +153,7 @@ rwText.Lines = atInfo
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -166,7 +166,7 @@ rwText.Lines = atInfo
 [**Interfaz IWMPMedia (VB y C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. setItemInfo (VB y C#)**](wmplibiwmpmedia-iwmpmedia-setiteminfo--vb-and-c.md)
+[**IWMPMedia.setItemInfo (VB y C#)**](wmplibiwmpmedia-iwmpmedia-setiteminfo--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: miembros de INullableJetStruct'
-title: Miembros de INullableJetStruct
+description: 'Más información sobre: Miembros INullableJetStruct'
+title: Miembros INullableJetStruct
 TOCTitle: INullableJetStruct members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.INullableJetStruct
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inullablejetstruct_members(v=EXCHG.10)
 ms:contentKeyID: 39515569
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 370ae205ac243b98dff28d562782e91b935df2d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bd77db14adf7709de54f8a2e9562c880dd341699c284dab511b1403988ac2bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104552897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476035"
 ---
-# <a name="inullablejetstruct-members"></a>Miembros de INullableJetStruct
+# <a name="inullablejetstruct-members"></a>Miembros INullableJetStruct
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
 Interfaz para estructuras jet que aceptan valores NULL (pueden tener valores NULL).
 
-El tipo [INullableJetStruct](./inullablejetstruct-interface.md) expone los siguientes miembros.
+El [tipo INullableJetStruct](./inullablejetstruct-interface.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -37,7 +37,7 @@ El tipo [INullableJetStruct](./inullablejetstruct-interface.md) expone los sigui
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="hh577833(v=exchg.10).md">HasValue</a></td>
-<td>Obtiene un valor que indica si la estructura tiene un valor null.</td>
+<td>Obtiene un valor que indica si la estructura tiene un valor NULL.</td>
 </tr>
 </tbody>
 </table>
@@ -51,4 +51,4 @@ Superior
 
 [Interfaz INullableJetStruct](./inullablejetstruct-interface.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

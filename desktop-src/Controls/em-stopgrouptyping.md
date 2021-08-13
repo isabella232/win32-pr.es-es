@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_STOPGROUPTYPING (RichEdit. h)
-description: Detiene un control Rich Edit para recopilar acciones de escritura adicionales en la acción de deshacer actual. El control almacena la siguiente acción de escritura, si existe, en una nueva acción en la cola de deshacer.
+title: EM_STOPGROUPTYPING mensaje (Richedit.h)
+description: Impide que un control de edición enriquecido recopile acciones de escritura adicionales en la acción de deshacer actual. El control almacena la siguiente acción de escritura, si la hay, en una nueva acción de la cola de deshacer.
 ms.assetid: 3059826f-84d1-4b7b-b4a8-da17d5f41013
 keywords:
-- EM_STOPGROUPTYPING controles de mensajes de Windows
+- EM_STOPGROUPTYPING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eced7ff12526296552e4adcc38c927ae94ee0502
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e62a5d652218b24240ce612851c4c08e335b31230532bc778bb44c5d7e74854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118672283"
 ---
-# <a name="em_stopgrouptyping-message"></a>\_Mensaje STOPGROUPTYPING em
+# <a name="em_stopgrouptyping-message"></a>Mensaje \_ EM STOPGROUPTYPING
 
-Detiene un control Rich Edit para recopilar acciones de escritura adicionales en la acción de deshacer actual. El control almacena la siguiente acción de escritura, si existe, en una nueva acción en la cola de deshacer.
+Impide que un control de edición enriquecido recopile acciones de escritura adicionales en la acción de deshacer actual. El control almacena la siguiente acción de escritura, si la hay, en una nueva acción de la cola de deshacer.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,32 +32,32 @@ Detiene un control Rich Edit para recopilar acciones de escritura adicionales en
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es cero. No se puede producir un error en este mensaje.
+El valor devuelto es cero. Este mensaje no puede producir un error.
 
 ## <a name="remarks"></a>Observaciones
 
-Un control Rich Edit agrupa acciones de escritura consecutivas, incluidos los caracteres eliminados mediante la tecla **retroceso** , en una sola acción de deshacer hasta que se produce uno de los siguientes eventos:
+Un control de edición enriquecido agrupa acciones de escritura consecutivas, incluidos los caracteres eliminados mediante la tecla **Retroceso,** en una sola acción de deshacer hasta que se produce uno de los siguientes eventos:
 
--   El control recibe un **mensaje \_ STOPGROUPTYPING em** .
+-   El control recibe un **mensaje EM \_ STOPGROUPTYPING.**
 -   El control pierde el foco.
 -   El usuario mueve la selección actual, ya sea mediante las teclas de dirección o haciendo clic con el mouse.
--   El usuario presiona la tecla **Supr** .
--   El usuario realiza cualquier otra acción, como una operación de pegar que **no** implica la escritura.
+-   El usuario presiona la **tecla** Eliminar.
+-   El usuario realiza cualquier otra acción, como una operación de pegado que no **implica** escribir.
 
-Puede enviar el mensaje **\_ STOPGROUPTYPING em** para dividir acciones de escritura consecutivas en grupos de deshacer más pequeños. Por ejemplo, podría enviar **em \_ STOPGROUPTYPING** después de cada carácter o en cada separación de palabras.
+Puede enviar el mensaje **EM \_ STOPGROUPTYPING** para interrumpir las acciones de escritura consecutivas en grupos de deshacer más pequeños. Por ejemplo, podría enviar **EM \_ STOPGROUPTYPING** después de cada carácter o en cada salto de palabra.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Puede enviar el mensaje **\_ STOPGROUPTYPING em** para dividir acciones de escri
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Puede enviar el mensaje **\_ STOPGROUPTYPING em** para dividir acciones de escri
 
 <dl> <dt>
 
-[**deshacer EM \_**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> </dl>
 
  

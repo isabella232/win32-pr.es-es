@@ -1,17 +1,17 @@
 ---
 description: Tamaño del sistema de archivos proporcionado por el sistema del elemento, en bytes.
 ms.assetid: 471c38fc-2382-4df8-8f70-e1af0dd6c746
-title: System. Size
+title: System.Size
 ms.topic: article
 ms.date: 09/10/2019
-ms.openlocfilehash: 4d0e988f4a757e6aa2e7d2dd611594d7705bd9ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6835d4de69508a5a6151b98034739635a0fa4e5baefd1ef2e49e3b44d2046ffe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464755"
 ---
-# <a name="systemsize"></a>System. Size
+# <a name="systemsize"></a>System.Size
 
 Tamaño del sistema de archivos proporcionado por el sistema del elemento, en bytes.
 
@@ -203,7 +203,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -218,7 +218,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -230,7 +230,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -248,7 +248,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

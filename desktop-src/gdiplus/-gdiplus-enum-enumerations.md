@@ -1,17 +1,17 @@
 ---
-title: Enumeraciones de GDI+
+title: GDI+ enumeraciones
 description: 'Windows GDI+ define las enumeraciones siguientes:'
 ms.assetid: e37295d3-9bfe-4708-94b4-b45a8da894b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 383e92efd0ed1603373b354e7f610936462d9efb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f5b3432968e61457a0ac213979f14bf4013304b1740e1aa5cd7f9712e18b204
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248842"
 ---
-# <a name="gdi-enumerations"></a>Enumeraciones de GDI+
+# <a name="gdi-enumerations"></a>GDI+ enumeraciones
 
 Windows GDI+ define las enumeraciones siguientes:
 
@@ -22,7 +22,7 @@ Windows GDI+ define las enumeraciones siguientes:
 -   [**CombineMode**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-combinemode)
 -   [**CompositingMode**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-compositingmode)
 -   [**CompositingQuality**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-compositingquality)
--   [**CoordinateSpace**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-coordinatespace)
+-   [**Espacio de coordenadas**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-coordinatespace)
 -   [**CurveAdjustments**](/windows/desktop/api/GdiplusEffects/ne-gdipluseffects-curveadjustments)
 -   [**CurveChannel**](/windows/desktop/api/GdiplusEffects/ne-gdipluseffects-curvechannel)
 -   [**DashCap**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-dashcap)

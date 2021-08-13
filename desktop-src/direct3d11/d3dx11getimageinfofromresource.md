@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11GetImageInfoFromResource (D3DX11tex. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Tenga en cuenta que, en lugar de usar esta función, se recomienda usar funciones de recursos y, a continuación, usar la biblioteca DirectXTex (herramientas), LoadFromXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admitía TGA como formato de fuente de arte común para juegos. Recupera información acerca de una imagen determinada en un recurso.
+title: Función D3DX11GetImageInfoFromResource (D3DX11tex.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar funciones de recursos y, a continuación, usar la biblioteca DirectXTex (herramientas), LoadFromXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos). Recupera información sobre una imagen determinada en un recurso.
 ms.assetid: e4752eb3-38d5-4922-b3c8-5fdcd0cc0610
 keywords:
 - Función D3DX11GetImageInfoFromResource Direct3D 11
@@ -15,26 +15,26 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 967a7b2c2ff03faefc12a48be18a4756e4ed3962
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6ada8118dac3e39f9f91012bb3ec681db7b156540cffae0fb7c0f1a7bc1819b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535960"
 ---
-# <a name="d3dx11getimageinfofromresource-function"></a>D3DX11GetImageInfoFromResource función)
+# <a name="d3dx11getimageinfofromresource-function"></a>Función D3DX11GetImageInfoFromResource
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda usar funciones de [recursos](/windows/desktop/menurc/resources-functions)y, a continuación, usar la biblioteca [DirectXTex](https://github.com/Microsoft/DirectXTex) (herramientas), **LOADFROMXXXMEMORY** (donde xxx es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admitía TGA como formato de fuente de arte común para juegos.
+> En lugar de usar esta función, se recomienda usar funciones de recursos [y,](/windows/desktop/menurc/resources-functions)a continuación, usar la biblioteca [DirectXTex](https://github.com/Microsoft/DirectXTex) (herramientas), **LoadFromXXXMemory** (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).
 
  
 
-Recupera información acerca de una imagen determinada en un recurso.
+Recupera información sobre una imagen determinada en un recurso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,48 +55,48 @@ HRESULT D3DX11GetImageInfoFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ de\]
+*hSrcModule* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
 
-Módulo en el que se carga el recurso. Establezca este parámetro en **null** para especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
+Módulo donde se carga el recurso. Establezca este parámetro en **NULL para** especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
 
 </dd> <dt>
 
-*pSrcResource* \[ de\]
+*pSrcResource* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*pPump* \[ de\]
+*pPump* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Bombeo de subprocesos opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **null**. Consulte la [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
+Bomba de subproceso opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **NULL.** Vea [**Id3DX11ThreadPump (interfaz).**](id3dx11threadpump.md)
 
 </dd> <dt>
 
-*pSrcInfo* \[ de\]
+*pSrcInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ información de imagen de D3DX11**](d3dx11-image-info.md)\***
+Tipo: **[ **INFORMACIÓN DE \_ IMAGEN \_ D3DX11**](d3dx11-image-info.md)\***
 
-Puntero a una \_ estructura de \_ información de imagen D3DX11 que se va a rellenar con la descripción de los datos del archivo de código fuente.
+Puntero a una estructura DE INFORMACIÓN DE IMAGEN D3DX11 que se va a rellenar con la descripción de \_ los datos del archivo de \_ origen.
 
 </dd> <dt>
 
-*pHResult* \[ enuncia\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
+Puntero al valor devuelto. Puede ser **NULL.** Si *pPump* no es **NULL,** *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
 
 </dd> </dl>
 
@@ -104,11 +104,11 @@ Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHRes
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL
 
 ## <a name="remarks"></a>Observaciones
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve como **D3DX11GetImageInfoFromResourceW**. De lo contrario, la llamada de función se resuelve como **D3DX11GetImageInfoFromResourceA** porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en **D3DX11GetImageInfoFromResourceW**. De lo contrario, la llamada de función se resuelve en **D3DX11GetImageInfoFromResourceA** porque se usan cadenas ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -116,8 +116,8 @@ La configuración del compilador también determina la versión de la función. 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX11tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>  |
 
 
 
@@ -125,7 +125,7 @@ La configuración del compilador también determina la versión de la función. 
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

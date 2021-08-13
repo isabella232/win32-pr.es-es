@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentOutOfAutoincrementValuesException'
-title: Constructor de EsentOutOfAutoincrementValuesException
+description: 'Más información sobre: Constructor EsentOutOfAutoincrementValuesException'
+title: Constructor EsentOutOfAutoincrementValuesException
 TOCTitle: 'EsentOutOfAutoincrementValuesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOutOfAutoincrementValuesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentoutofautoincrementvaluesexception.esentoutofautoincrementvaluesexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 76360bad271d17b76d4496a222f2936e0547d07c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed45aac2dc4c8bd2ddc7611a28655e1f4b14af398c74f4566ffb630bf210ed1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118262816"
 ---
-# <a name="esentoutofautoincrementvaluesexception-constructor"></a>Constructor de EsentOutOfAutoincrementValuesException
+# <a name="esentoutofautoincrementvaluesexception-constructor"></a>Constructor EsentOutOfAutoincrementValuesException
 
 Inicializa una nueva instancia de la clase EsentOutOfAutoincrementValuesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentOutOfAutoincrementValuesException()
 
 [Miembros de EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

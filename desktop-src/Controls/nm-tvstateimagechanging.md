@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_TVSTATEIMAGECHANGING (commctrl. h)
-description: Enviado por un control de vista de árbol a su ventana primaria que cambia la imagen de estado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_TVSTATEIMAGECHANGING de notificación (Commctrl.h)
+description: Enviado por un control de vista de árbol a su ventana primaria que cambia la imagen de estado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 8e42d8b3-5e76-4d03-94b0-3e4583669095
 keywords:
-- NM_TVSTATEIMAGECHANGING controles de código de notificación de Windows
+- NM_TVSTATEIMAGECHANGING código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aebf628eb9387acd4fd10f100f2f80570d1b021b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a57da81dbcccf4dcfbb896417e15c8788bb8d3f6baba71a57a6a99f053a3ba45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433685"
 ---
-# <a name="nm_tvstateimagechanging-notification-code"></a>Código de notificación de NM \_ TVSTATEIMAGECHANGING
+# <a name="nm_tvstateimagechanging-notification-code"></a>Código \_ de notificación DE NM TVSTATEIMAGECHANGING
 
-Enviado por un control de vista de árbol a su ventana primaria que cambia la imagen de estado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de vista de árbol a su ventana primaria que cambia la imagen de estado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_TVSTATEIMAGECHANGING
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTVSTATEIMAGECHANGING**](/windows/win32/api/commctrl/ns-commctrl-nmtvstateimagechanging) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMTVSTATEIMAGECHANGING**](/windows/win32/api/commctrl/ns-commctrl-nmtvstateimagechanging) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ El control omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

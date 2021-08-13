@@ -1,47 +1,47 @@
 ---
-title: Detección del formato de un archivo
-description: Detección del formato de un archivo
+title: Detectar el formato de un archivo
+description: Detectar el formato de un archivo
 ms.assetid: f1b3f811-8161-41ca-a92c-2735c0bec2e8
 keywords:
-- Administrador de dispositivos de Windows Media, formatos de archivo
-- Administrador de dispositivos, formatos de archivo
-- Guía de programación, formatos de archivo
+- Windows Formatos Administrador de dispositivos,file
+- Administrador de dispositivos,formatos de archivo
+- guía de programación, formatos de archivo
 - aplicaciones de escritorio, formatos de archivo
-- crear aplicaciones de Windows Media Administrador de dispositivos, formatos de archivo
+- crear aplicaciones Windows multimedia Administrador de dispositivos, formatos de archivo
 - escribir archivos en dispositivos, formatos de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b06c963b01e3b681fd078d8685e1c788c73352e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83706a3026968a694d3629551d310db9021b7f8c8118f3d98621751a95af26b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585334"
 ---
-# <a name="discovering-a-files-format"></a>Detección del formato de un archivo
+# <a name="discovering-a-files-format"></a>Detectar el formato de un archivo
 
 Antes de enviar un archivo al dispositivo, una aplicación debe determinar si el dispositivo admite ese formato de archivo.
 
-Detectar el formato de un archivo puede ser complejo. La manera más sencilla consiste en crear una lista de extensiones de archivo asignadas a \_ valores de enumeración de FORMATCODE de WMDM específicos. Sin embargo, hay algunos problemas con este sistema: uno es que un único formato puede tener varias extensiones (por ejemplo,. jpg,. jpe y. JPEG para imágenes JPEG). Además, los distintos programas pueden usar la misma extensión de archivo para distintos formatos.
+Detectar el formato de un archivo puede ser complejo. La manera más sencilla es crear una lista de extensiones de archivo asignadas a valores de enumeración FORMATCODE de WMDM \_ específicos. Sin embargo, hay algunos problemas con este sistema: uno es que un solo formato puede tener varias extensiones (como .jpg, .jpe y .jpeg para imágenes JPEG). Además, diferentes programas pueden usar la misma extensión de archivo para distintos formatos.
 
-Para superar las limitaciones de una asignación estricta, es mejor que una aplicación Compruebe que el formato coincide con la extensión. El SDK de DirectShow proporciona herramientas que permiten a una aplicación detectar un conjunto limitado de detalles sobre la mayoría de los tipos de archivos multimedia. El SDK de Windows Media Format expone un gran número de detalles, pero solo sobre archivos ASF. Dado que todos los tipos de archivo deben tener su código de formato comprobado si es posible, por lo tanto, es mejor usar DirectShow para detectar o comprobar el código de formato básico y usar el SDK de Windows Media Format para detectar los metadatos adicionales deseados sobre los archivos ASF. DirectShow también se puede usar para detectar metadatos básicos para archivos no ASF.
+Para superar las limitaciones de una asignación estricta, es mejor que una aplicación compruebe que el formato coincide con la extensión. El SDK DirectShow proporciona herramientas que permiten a una aplicación detectar un conjunto limitado de detalles sobre la mayoría de los tipos de archivo multimedia. El SDK Windows media format expone un gran número de detalles, pero solo sobre los archivos ASF. Dado que todos los tipos de archivo deben tener comprobado su código de formato si es posible, es mejor usar DirectShow para detectar o comprobar el código de formato básico y usar el SDK de formato multimedia de Windows para detectar los metadatos adicionales deseados sobre los archivos ASF. DirectShow también se puede usar para detectar metadatos básicos para archivos que no son ASF.
 
-A continuación se facilita una manera de detectar un formato de archivo mediante la asignación de extensiones y DirectShow.
+La siguiente es una manera de detectar un formato de archivo mediante la asignación de extensiones DirectShow.
 
-En primer lugar, compare la extensión de nombre de archivo con una lista de extensiones conocidas. Asegúrese de hacer que la comparación no distinga mayúsculas de minúsculas. Si la extensión no está asignada, establezca el formato en WMDM \_ FORMATCODE sin \_ definir.
+En primer lugar, compare la extensión de nombre de archivo con una lista de extensiones conocidas. Asegúrese de que la comparación no tiene en cuenta mayúsculas de minúsculas. Si la extensión no está asignada, establezca el formato en WMDM \_ FORMATCODE \_ UNDEFINED.
 
--   Si no se encuentra el código de formato (o si desea comprobar que un archivo es un archivo multimedia), puede realizar los pasos siguientes:
-    1.  Cree un objeto de detector de medios de DirectShow mediante **CoCreateInstance**(CLSID \_ MediaDet) y recupere la interfaz **IMediaDet** .
-    2.  Abra el archivo mediante una llamada a **IMediaDet::p UT \_ nombreDeArchivo**. Esta llamada producirá un error si el archivo está protegido.
-    3.  Obtiene el tipo de medio del flujo predeterminado mediante una llamada a **IMediaDet:: get \_ StreamMediaType**, que devuelve un **\_ \_ tipo de medio am**.
-    4.  Obtiene el número de secuencias mediante una llamada a **IMediaDet:: get \_ OutputStreams**.
-        -   Si solo hay una secuencia y es audio, el tipo de archivo es WMDM \_ FORMATCODE \_ UNDEFINEDAUDIO
-        -   Si solo hay una secuencia y se trata de un vídeo, el tipo de archivo es WMDM \_ FORMATCODE \_ UNDEFINEDVIDEO
-        -   Si solo hay una secuencia y se trata de un vídeo y la velocidad de bits es cero, el tipo de archivo es WMDM \_ FORMATCODE \_ WINDOWSIMAGEFORMAT.
+-   Si no se encontró el código de formato (o desea comprobar que un archivo es un archivo multimedia), puede realizar los pasos siguientes:
+    1.  Cree un DirectShow Detección multimedia mediante **CoCreateInstance**(CLSID \_ MediaDet) y recuperando la **interfaz IMediaDet.**
+    2.  Abra el archivo llamando a **IMediaDet::p ut \_ Filename**. Se producirá un error en esta llamada si el archivo está protegido.
+    3.  Obtenga el tipo de medio de la secuencia predeterminada mediante una llamada **a IMediaDet::get \_ StreamMediaType**, que devuelve un **TIPO DE MEDIO DE \_ \_ AM**.
+    4.  Para obtener el número de secuencias, llame a **IMediaDet::get \_ OutputStreams.**
+        -   Si solo hay una secuencia y es audio, el tipo de archivo es WMDM \_ FORMATCODE \_ UNDEFINEDAUDIO.
+        -   Si solo hay una secuencia y es vídeo, el tipo de archivo es WMDM \_ FORMATCODE \_ UNDEFINEDVIDEO.
+        -   Si solo hay una secuencia y es vídeo y la velocidad de bits es cero, el tipo de archivo es WMDM \_ FORMATCODE \_ WINDOWSIMAGEFORMAT.
 
-También puede intentar hacer coincidir códecs de audio o vídeo con los miembros **VIDEOINFOHEADER** o **WAVEFORMATEX** recuperados de **Get \_ StreamMediaType**.
+También puede intentar hacer coincidir códecs de audio o vídeo de los miembros **VIDEOINFOHEADER** o **MPEGATEX** recuperados de **get \_ StreamMediaType.**
 
-La siguiente función de C++ muestra la coincidencia de la extensión de archivo y el uso de DirectShow para intentar analizar archivos desconocidos.
+La siguiente función de C++ muestra la coincidencia de la extensión de archivo y DirectShow para intentar analizar archivos desconocidos.
 
 
 ```C++
@@ -184,9 +184,9 @@ WMDM_FORMATCODE CWMDMController::myGetWMDM_FORMATCODE(LPCWSTR pFileName)
 [**Escribir archivos en el dispositivo**](writing-files-to-the-device.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: D3DX11_IMAGE_INFO estructura (D3DX11tex. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Opcionalmente, puede proporcionar información a las API del cargador de texturas para controlar cómo se cargan las texturas. | D3DX11_IMAGE_INFO estructura (D3DX11tex. h)
+title: D3DX11_IMAGE_INFO estructura (D3DX11tex.h)
+description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Opcionalmente, proporcione información a las API del cargador de texturas para controlar cómo se cargan las texturas. | D3DX11_IMAGE_INFO estructura (D3DX11tex.h)'
 ms.assetid: 981f4f1d-7609-416a-8f92-c7223d8b2773
 keywords:
-- D3DX11_IMAGE_INFO estructura de Direct3D 11
-- Puntero de estructura de LPD3DX11_IMAGE_INFO Direct3D 11
+- D3DX11_IMAGE_INFO estructura direct3D 11
+- LPD3DX11_IMAGE_INFO puntero de estructura direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -15,21 +15,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 927967f8e76d0147ccc264bcbdd773191a170ae7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 64366755e9bb9398e8107d931ee5425d2fcee78fdd9d03487b9533270cc17c19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118536872"
 ---
-# <a name="d3dx11_image_info-structure"></a>Estructura de información de \_ imagen de D3DX11 \_
+# <a name="d3dx11_image_info-structure"></a>Estructura DE INFORMACIÓN DE \_ IMAGEN D3DX11 \_
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
-Opcionalmente, puede proporcionar información a las API del cargador de texturas para controlar cómo se cargan las texturas. Un valor de D3DX11 \_ predeterminado para cualquiera de estos parámetros hará que D3DX use automáticamente el valor del archivo de código fuente.
+Opcionalmente, proporcione información a las API del cargador de texturas para controlar cómo se cargan las texturas. Un valor de D3DX11 DEFAULT para cualquiera de estos parámetros hará que D3DX use automáticamente el \_ valor del archivo de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ typedef struct D3DX11_IMAGE_INFO {
 **Width**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -68,7 +68,7 @@ Ancho de destino de la textura. Si el ancho real de la textura es mayor o menor 
 **Height**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -79,7 +79,7 @@ Alto de destino de la textura. Si el alto real de la textura es mayor o menor qu
 **Profundidad**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -90,7 +90,7 @@ Profundidad de la textura. Esto solo se aplica a las texturas de volumen.
 **ArraySize**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -101,55 +101,55 @@ Número de elementos de la matriz.
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número máximo de niveles de mipmap en la textura. Vea los comentarios de [**D3D11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). El uso del valor predeterminado de 0 o D3DX11 hará que \_ se cree una cadena de mipmap completa.
+Número máximo de niveles de mapa mip en la textura. Vea los comentarios en [**D3D11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). El uso de 0 o D3DX11 DEFAULT hará que se cree una cadena \_ de asignación mip completa.
 
 </dd> <dt>
 
 **MiscFlags**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Propiedades de recursos variadas especificadas con una marca de [**\_ \_ \_ marca de varios recursos de D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag) .
+Propiedades de recursos varios especificadas con una marca [**\_ \_ MISC \_ FLAG DE RECURSOS D3D11.**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
 </dd> <dt>
 
 **Format**
 </dt> <dd>
 
-Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
 </dd> <dd>
 
-Una enumeración de [**\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) que especifica el formato en el que estará la textura después de cargarse.
+Enumeración [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) que especifica el formato en el que estará la textura después de cargarla.
 
 </dd> <dt>
 
 **ResourceDimension**
 </dt> <dd>
 
-Tipo: **[ **\_ \_ dimensión de recursos D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_dimension)**
+Tipo: **[ **DIMENSIÓN DE \_ RECURSOS \_ D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_dimension)**
 
 </dd> <dd>
 
-Un valor de [**\_ \_ dimensión de recursos D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_dimension) , que identifica el tipo de recurso.
+Valor DE DIMENSIÓN DE [**\_ RECURSOS \_ D3D11,**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_dimension) que identifica el tipo de recurso.
 
 </dd> <dt>
 
 **ImageFileFormat**
 </dt> <dd>
 
-Tipo: **[ **\_ formato de \_ archivo \_ de imagen D3DX11**](d3dx11-image-file-format.md)**
+Tipo: FORMATO DE ARCHIVO DE **[ **\_ IMAGEN \_ \_ D3DX11**](d3dx11-image-file-format.md)**
 
 </dd> <dd>
 
-Un valor de [**\_ formato de \_ archivo \_ de imagen D3DX11**](d3dx11-image-file-format.md) , que identifica el formato de imagen.
+Valor [**D3DX11 \_ IMAGE FILE \_ \_ FORMAT,**](d3dx11-image-file-format.md) que identifica el formato de imagen.
 
 </dd> </dl>
 
@@ -163,7 +163,7 @@ Esta estructura la usan métodos como: [**D3DX11GetImageInfoFromFile**](d3dx11ge
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX11tex. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX11tex.h</dt> </dl> |
 
 
 
@@ -171,7 +171,7 @@ Esta estructura la usan métodos como: [**D3DX11GetImageInfoFromFile**](d3dx11ge
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d11-graphics-reference-d3dx11-structures.md)
+[Estructuras D3DX](d3d11-graphics-reference-d3dx11-structures.md)
 </dt> </dl>
 
  

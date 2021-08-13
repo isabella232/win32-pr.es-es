@@ -4,12 +4,12 @@ ms.assetid: a28e77dd-72c9-42a3-a72d-1b3eaf59d9cf
 title: MakeCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 461c15db364066d9edadb6a0c4d2c24dceab5cc9
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: acd9f15f942fb6dd7c4c831cb33552b6f59ec2cd6cf9cac9654386d6adc27649
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119425745"
 ---
 # <a name="makecert"></a>MakeCert
 
@@ -18,7 +18,7 @@ ms.locfileid: "108327150"
 
  
 
-La herramienta MakeCert crea un certificado [*X.509,*](../secgloss/x-gly.md) firmado por la clave raíz de prueba u otra clave especificada, que enlaza el nombre a la parte pública del par de claves. El certificado se guarda en un archivo, en un almacén de certificados del sistema o en ambos. La herramienta se instala en la carpeta Bin de la ruta de \\ instalación de Microsoft Kit de desarrollo de software de Windows (SDK).
+La herramienta MakeCert crea un certificado [*X.509,*](../secgloss/x-gly.md) firmado por la clave raíz de prueba u otra clave especificada, que enlaza el nombre a la parte pública del par de claves. El certificado se guarda en un archivo, en un almacén de certificados del sistema o en ambos. La herramienta se instala en la carpeta Bin de la ruta de instalación de \\ Microsoft Windows Software Development Kit (SDK).
 
 La herramienta MakeCert usa la siguiente sintaxis de comandos:
 
@@ -54,23 +54,23 @@ Las opciones que se muestran en las tablas siguientes solo se pueden usar Intern
 <tbody>
 <tr class="odd">
 <td><strong>-a</strong> <strong></strong> <em>Algoritmo</em></td>
-<td><a href="/windows/desktop/SecGloss/h-gly"><em>Algoritmo hash.</em></a> Debe establecerse en <strong>SHA-1</strong> o <strong>MD5</strong> (valor predeterminado). Para obtener información sobre MD5, vea <a href="/windows/desktop/SecGloss/m-gly"><em>MD5.</em></a></td>
+<td><a href="/windows/desktop/SecGloss/h-gly"><em>Algoritmo hash.</em></a> Debe establecerse en <strong>SHA-1</strong> o <strong>MD5</strong> (valor predeterminado). Para obtener información sobre MD5, vea <a href="/windows/desktop/SecGloss/m-gly"><em>MD5</em></a>.</td>
 </tr>
 <tr class="even">
 <td><strong>-b</strong> <strong></strong> <em>DateStart</em></td>
-<td>Fecha en que el certificado pasa a ser válido por primera vez. El valor predeterminado es cuando se crea el certificado. El formato de <em>DateStart</em> es mm/dd/yyyy.</td>
+<td>Fecha en que el certificado se convierte primero en válido. El valor predeterminado es cuando se crea el certificado. El formato de <em>DateStart</em> es mm/dd/yyyy.</td>
 </tr>
 <tr class="odd">
 <td><strong>-cy</strong> <strong></strong> <em>CertificateTypes</em></td>
-<td>Tipo de certificado. <em>CertificateTypes puede</em> ser <strong>end para</strong> la entidad final o entidad para <strong>la</strong> entidad <a href="/windows/desktop/SecGloss/c-gly"><em>de certificación</em></a>.</td>
+<td>Tipo de certificado. <em>CertificateTypes puede</em> ser <strong>end para</strong> la entidad final o entidad <strong>para</strong> la entidad <a href="/windows/desktop/SecGloss/c-gly"><em>de certificación</em></a>.</td>
 </tr>
 <tr class="even">
 <td><strong>-e</strong> <strong></strong> <em>DateEnd</em></td>
 <td>Fecha en que finaliza el período de validez. El valor predeterminado es el año 2039.</td>
 </tr>
 <tr class="odd">
-<td><strong>-eku</strong> <strong></strong> <em>OID1</em><strong>,</strong> <em>OID2</em> ...</td>
-<td>Inserta una lista de uno o <a href="/windows/desktop/SecGloss/e-gly"><em></em></a> varios identificadores de objeto de uso de claves ( IDENTIFICADOR) mejorados separados por <a href="/windows/desktop/SecGloss/o-gly"><em>comas</em></a> en el certificado. Por ejemplo, <strong>-eku 1.3.6.1.5.5.7.3.2</strong> inserta el OID de autenticación de cliente. Para obtener definiciones de ID permitidos, consulta el archivo Wincrypt.h en CryptoAPI 2.0.</td>
+<td><strong>-eku</strong> <strong></strong> <em>OID1,</em><strong></strong> <em>OID2</em> ...</td>
+<td>Inserta una lista de uno o <a href="/windows/desktop/SecGloss/e-gly"><em></em></a> varios identificadores de objetos de uso mejorados de clave separados por <a href="/windows/desktop/SecGloss/o-gly"><em>comas</em></a> en el certificado. Por ejemplo, <strong>-eku 1.3.6.1.5.5.7.3.2</strong> inserta el OID de autenticación de cliente. Para obtener definiciones de ID permitidos, consulte el archivo Wincrypt.h en CryptoAPI 2.0.</td>
 </tr>
 <tr class="even">
 <td><strong>-h</strong> <strong></strong> <em>NumChildren</em></td>
@@ -78,7 +78,7 @@ Las opciones que se muestran en las tablas siguientes solo se pueden usar Intern
 </tr>
 <tr class="odd">
 <td><strong>-l</strong> <strong></strong> <em>PolicyLink</em></td>
-<td>Vínculo a la información de la directiva de la agencia de SPC (por ejemplo, una dirección URL).</td>
+<td>Vínculo a la información de la directiva de la agencia SPC (por ejemplo, una dirección URL).</td>
 </tr>
 <tr class="even">
 <td><strong>-m</strong> <strong></strong> <em>nMonths</em></td>
@@ -106,13 +106,13 @@ Las opciones que se muestran en las tablas siguientes solo se pueden usar Intern
 </tr>
 <tr class="even">
 <td><strong>-sk</strong> <strong></strong> <em>SubjectKey</em></td>
-<td>Ubicación del contenedor de claves del sujeto que contiene la <a href="/windows/desktop/SecGloss/p-gly"><em>clave privada</em></a>. Si no existe un contenedor de claves, se creará uno. Si no se <strong>usa la opción -sk</strong> <strong>o -sv,</strong> se crea y se usa un contenedor de claves predeterminado de forma predeterminada.</td>
+<td>Ubicación del contenedor de claves del sujeto que contiene la <a href="/windows/desktop/SecGloss/p-gly"><em>clave privada</em></a>. Si no existe un contenedor de claves, se creará uno. Si no se <strong>usa la opción -sk</strong> <strong>o -sv,</strong> se crea un contenedor de claves predeterminado y se usa de forma predeterminada.</td>
 </tr>
 <tr class="odd">
 <td><strong>-sky</strong> <strong></strong> <em>SubjectKeySpec</em></td>
 <td>Especificación de clave del sujeto. <em>SubjectKeySpec debe</em> ser uno de los tres valores posibles:<br/>
 <ul>
-<li><strong>Firma</strong> (AT_SIGNATURE especificación de clave)</li>
+<li><strong>Firma</strong> (especificación AT_SIGNATURE clave)</li>
 <li><strong>Exchange</strong> (especificación AT_KEYEXCHANGE clave)</li>
 <li>Entero, como <strong>3</strong></li>
 </ul>
@@ -136,7 +136,7 @@ Para obtener más información, vea la nota que sigue a esta tabla.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>-sy</strong> <strong></strong> <em>nSubjectProviderType</em></td>
-<td>Tipo de proveedor CryptoAPI para el asunto. El valor predeterminado <a href="/windows/desktop/SecGloss/p-gly"><em>es PROV_RSA_FULL</em></a>. Para obtener información sobre los tipos de proveedor cryptoAPI, consulte la documentación CryptoAPI 2.0 datos.</td>
+<td>Tipo de proveedor cryptoAPI para el asunto. El valor predeterminado <a href="/windows/desktop/SecGloss/p-gly"><em>es PROV_RSA_FULL</em></a>. Para obtener información sobre los tipos de proveedor de CryptoAPI, consulte la CryptoAPI 2.0 web.</td>
 </tr>
 <tr class="odd">
 <td><strong>-#</strong><strong></strong> <em>SerialNumber</em></td>
@@ -166,7 +166,7 @@ Para obtener más información, vea la nota que sigue a esta tabla.<br/></td>
 
  
 
-Las siguientes opciones son solo para los archivos [*de certificado de publicador*](../secgloss/s-gly.md) de software (SPC) y la tecnología de clave privada.
+Las siguientes opciones son solo para los [*archivos de Publisher de*](../secgloss/s-gly.md) software (SPC) y la tecnología de clave privada.
 
 
 
@@ -202,15 +202,15 @@ Para obtener más información, vea la nota que sigue a esta tabla.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>-ip</strong> <strong></strong> <em>IssuerProviderName</em></td>
-<td>Proveedor cryptoAPI para el emisor. El valor predeterminado es el proveedor del usuario. Para obtener información sobre los proveedores de CryptoAPI, consulte la CryptoAPI 2.0 de cifrado.</td>
+<td>Proveedor cryptoAPI para el emisor. El valor predeterminado es el proveedor del usuario. Para obtener información sobre los proveedores de CryptoAPI, consulte la documentación CryptoAPI 2.0 cifrado.</td>
 </tr>
 <tr class="odd">
 <td><strong>-iv</strong> <strong></strong> <em>IssuerKeyFile</em></td>
-<td>Archivo de clave privada del emisor. El valor predeterminado es la raíz de prueba.</td>
+<td>Archivo de clave privada del emisor. El valor predeterminado es la raíz de la prueba.</td>
 </tr>
 <tr class="even">
 <td><strong>-iy</strong> <strong></strong> <em>nIssuerProviderType</em></td>
-<td>Tipo de proveedor CryptoAPI para el emisor. El valor predeterminado <a href="/windows/desktop/SecGloss/p-gly"><em>es PROV_RSA_FULL</em></a>. Para obtener información sobre los tipos de proveedor cryptoAPI, consulte la documentación CryptoAPI 2.0 datos.</td>
+<td>Tipo de proveedor cryptoAPI para el emisor. El valor predeterminado <a href="/windows/desktop/SecGloss/p-gly"><em>es PROV_RSA_FULL</em></a>. Para obtener información sobre los tipos de proveedor de CryptoAPI, consulte la CryptoAPI 2.0 web.</td>
 </tr>
 </tbody>
 </table>
@@ -220,7 +220,7 @@ Para obtener más información, vea la nota que sigue a esta tabla.<br/></td>
  
 
 > [!Note]  
-> Si la **opción -iky** key specification se usa en Internet Explorer 4.0 o posterior, la [](../secgloss/p-gly.md) especificación debe coincidir con la especificación de clave indicada por el archivo de clave privada o el contenedor de [*claves privadas*](../secgloss/k-gly.md). Si no se usa la opción de especificación de clave, se usará la especificación de clave indicada por el archivo de clave privada o el contenedor de claves privadas. Si hay más de una especificación de clave en el contenedor de claves, MakeCert intentará usar primero la especificación de clave AT \_ SIGNATURE. Si se produce un error, MakeCert intentará usar AT \_ KEYEXCHANGE. Dado que la mayoría de los usuarios tienen una clave AT SIGNATURE o una clave AT KEYEXCHANGE, no es necesario usar esta opción en la mayoría \_ \_ de los casos.
+> Si la **opción -iky** key specification se usa en Internet Explorer 4.0 o posterior, la [](../secgloss/p-gly.md) especificación debe coincidir con la especificación de clave indicada por el archivo de clave privada o el contenedor de claves [*privadas*](../secgloss/k-gly.md). Si no se usa la opción de especificación de clave, se usará la especificación de clave indicada por el archivo de clave privada o el contenedor de claves privadas. Si hay más de una especificación de clave en el contenedor de claves, MakeCert intentará primero usar la especificación de clave AT \_ SIGNATURE. Si se produce un error, MakeCert intentará usar AT \_ KEYEXCHANGE. Dado que la mayoría de los usuarios tienen una clave AT SIGNATURE o una clave AT KEYEXCHANGE, no es necesario usar esta opción en la mayoría \_ \_ de los casos.
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_THREADSTATS. Create (método)'
-title: JET_THREADSTATS. Método Create (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_THREADSTATS. Método Create'
+title: JET_THREADSTATS. Método Create (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'Create method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.Create(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.create(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: beaaee85fc0f6c331db1d813280d4b900e39fb54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a3450835a90c3e21902a6097d9cfb672c51769cc00810d86e338bef40ce2565
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118251907"
 ---
-# <a name="jet_threadstatscreate-method"></a>JET_THREADSTATS. Create (método)
+# <a name="jet_threadstatscreate-method"></a>JET_THREADSTATS. Método Create
 
-Cree un nuevo struct de [JET_THREADSTATS](./jet-threadstats-structure2.md) con el valor especificado.
+Cree un nuevo [JET_THREADSTATS](./jet-threadstats-structure2.md) struct con los valores especificados.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,63 +81,63 @@ public static JET_THREADSTATS Create(
 #### <a name="parameters"></a>Parámetros
 
   - cPageReferenced  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de páginas visitadas.
 
 <!-- end list -->
 
   - cPageRead  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de páginas leídas.
 
 <!-- end list -->
 
   - cPagePreread  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de páginas preleídas.
 
 <!-- end list -->
 
   - cPageDirtied  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    TNumber de páginas sucias.
+    Número TNúmero de páginas desasistidos.
 
 <!-- end list -->
 
   - cPageRedirtied  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número de páginas resucias.
+    Número de páginas nuevas.
 
 <!-- end list -->
 
   - cLogRecord  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número de entradas de registro generadas.
+    Número de registros generados.
 
 <!-- end list -->
 
   - cbLogRecord  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Bytes de entradas de registro escritas.
+    Bytes de registros escritos.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
-Nuevo struct de [JET_THREADSTATS](./jet-threadstats-structure2.md) con los valores especificados.  
+Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+Un nuevo [JET_THREADSTATS](./jet-threadstats-structure2.md) struct con los valores especificados.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS estructura](./jet-threadstats-structure2.md)
 
-[Miembros de JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS miembros](./jet-threadstats-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

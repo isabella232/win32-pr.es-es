@@ -1,23 +1,23 @@
 ---
 title: Operación asincrónica
-description: En el modo asincrónico, una aplicación puede ejecutar cualquier función que incluya un valor de contexto como uno de sus parámetros y puede seguir ejecutando otros comandos o funciones mientras la aplicación espera a que la función complete su tarea.
+description: En modo asincrónico, una aplicación puede ejecutar cualquier función que incluya un valor de contexto como uno de sus parámetros y pueda seguir ejecutando otros comandos o funciones mientras la aplicación espera a que la función complete su tarea.
 ms.assetid: 4b8ade00-deb3-4d9f-9ceb-5ba3296c8c68
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a7e1d0cf84aa92691e1d926d771ea809d31a171
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e494b79b28b9aaf005fc6b1790d0cf84b07ceade6606f03ce03198426ac33d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562097"
 ---
 # <a name="asynchronous-operation"></a>Operación asincrónica
 
-La cantidad de tiempo que necesita una aplicación para tener acceso a un recurso de Internet depende de una serie de factores, como la conexión que se está usando, el servidor en el que se encuentra el recurso y el número de usuarios que intentan obtener acceso al recurso. En el caso de las aplicaciones que descargan varios recursos o controlan varias tareas (incluidas una o más descargas), a la espera de que se complete cada descarga antes de pasar a la siguiente tarea puede ser extremadamente ineficaz. Para reducir la cantidad de tiempo que una aplicación tiene que esperar, muchas de las funciones WinINet pueden funcionar de forma asincrónica.
+La cantidad de tiempo que tarda una aplicación en acceder a un recurso de Internet depende de una serie de factores, como la conexión que se usa, el servidor en el que se encuentra el recurso y el número de usuarios que intentan acceder al recurso. En el caso de las aplicaciones que descargan varios recursos o controlan varias tareas (incluidas una o varias descargas), esperar a que se complete cada descarga antes de pasar a la siguiente tarea puede ser muy ineficaz. Para reducir la cantidad de tiempo que una aplicación tiene que esperar, muchas de las funciones de WinINet pueden funcionar de forma asincrónica.
 
-En el modo asincrónico, una aplicación puede ejecutar cualquier función que incluya un valor de contexto como uno de sus parámetros y puede seguir ejecutando otros comandos o funciones mientras la aplicación espera a que la función complete su tarea. Mientras se completa la tarea, se notifica a una función de devolución de llamada de estado proporcionada por la aplicación el progreso de la tarea y cuándo se ha completado. En este momento, la función de devolución de llamada de estado puede llamar a otras funciones o realizar cualquier otra tarea necesaria que dependía de la finalización de la tarea.
+En modo asincrónico, una aplicación puede ejecutar cualquier función que incluya un valor de contexto como uno de sus parámetros y pueda seguir ejecutando otros comandos o funciones mientras la aplicación espera a que la función complete su tarea. Mientras se completa la tarea, se notifica a una función de devolución de llamada de estado proporcionada por la aplicación sobre el progreso de la tarea y cuándo se ha completado. En este momento, la función de devolución de llamada de estado puede llamar a otras funciones o realizar cualquier otra tarea necesaria que dependa de la finalización de la tarea.
 
-No hay ningún subproceso de devolución de llamada afinity cuando se llama a WinINet de forma asincrónica: una llamada podría iniciarse desde un subproceso, pero cualquier otro subproceso puede recibir la devolución de llamada.
+No hay afinidad entre subprocesos de devolución de llamada cuando se llama a WinINet de forma asincrónica: una llamada puede comenzar desde un subproceso, pero cualquier otro subproceso puede recibir la devolución de llamada.
 
 -   [Ventajas](#benefits)
 -   [Escenarios](#scenarios)
@@ -25,50 +25,50 @@ No hay ningún subproceso de devolución de llamada afinity cuando se llama a Wi
 
 ## <a name="benefits"></a>Ventajas
 
-El funcionamiento de forma asincrónica presenta varias ventajas. Por ejemplo:
+El funcionamiento de forma asincrónica tiene varias ventajas. Por ejemplo:
 
 -   Descargar varios recursos de Internet simultáneamente.
 
     Puede conectarse a varios recursos de Internet al mismo tiempo y descargarlos a medida que estén disponibles.
 
--   Aumento del rendimiento de la aplicación.
+-   Aumentar el rendimiento de la aplicación.
 
-    Una aplicación que usa las funciones WinINet de forma asincrónica no tiene que esperar hasta que se complete la solicitud, por lo que la aplicación es gratuita para realizar otras tareas que no dependen de la solicitud, con lo que se mejora el rendimiento general de la aplicación.
+    Una aplicación que usa las funciones de WinINet de forma asincrónica no tiene que esperar hasta que se complete la solicitud, por lo que la aplicación puede realizar otras tareas que no dependen de la solicitud, lo que mejora el rendimiento general de la aplicación.
 
 -   Supervise el progreso de la descarga.
 
-    La función de devolución de llamada de estado recibe notificaciones mientras está procesando una solicitud. Si es necesario, la aplicación puede usar la información proporcionada por esa función de devolución de llamada de estado para mantener informado al usuario sobre el progreso de la operación o para interrumpir las solicitudes que están tardando demasiado tiempo en completarse.
+    La función de devolución de llamada de estado recibe notificaciones mientras procesa una solicitud. Si es necesario, la aplicación puede usar la información proporcionada por esa función de devolución de llamada de estado para mantener al usuario informado sobre el progreso de la operación o para interrumpir las solicitudes que tardan demasiado tiempo en completarse.
 
 ## <a name="scenarios"></a>Escenarios
 
-Supongamos que la aplicación necesita descargar los precios de café del Downfall café & té y los sitios de la cuarta cafetería y comparar los precios. El sitio de Fourth Coffee normalmente tiene un tiempo de respuesta más lento, por lo que la aplicación debe descargar primero la información de Downfall Coffee & té.
+Supongamos que la aplicación debe descargar los precios del café de los sitios Downfall Coffee & Tea y Fourth Coffee y comparar los precios. El sitio cuarto café normalmente tiene un tiempo de respuesta más lento, por lo que la aplicación debe descargar la información de Downfall Coffee & Tea primero.
 
-Se desarrollan dos versiones de la aplicación. Uno funciona de forma sincrónica, descargando primero los precios del sitio de Downfall Coffee & de té y, después, los precios del sitio de Fourth Coffee. La segunda funciona de forma asincrónica, enviando solicitudes a ambos sitios y descargando los precios cuando estén disponibles.
+Se desarrollan dos versiones de la aplicación. Uno funciona sincrónicamente, descargando primero los precios desde el sitio downfall Coffee & Té y, después, los precios desde el sitio cuarto café. El segundo funciona de forma asincrónica, enviando solicitudes a ambos sitios y descargando los precios cuando estén disponibles.
 
-En la tabla siguiente se muestra lo que sucedería si el sitio de Fourth Coffeer fuera más rápido en un día determinado.
+En la tabla siguiente se muestra lo que ocurriría si el cuarto sitio de café fuera más rápido en un día determinado.
 
 
 
 | Evento                                                            | Versión sincrónica                        | Versión asincrónica                                     |
 |------------------------------------------------------------------|--------------------------------------------|----------------------------------------------------------|
-| Start                                                            | Enviar solicitud a Downfall café & té      | Enviar solicitudes a Downfall café & té y Fourth Coffee |
-| Solicitud de la versión asincrónica a Fourth Coffee completada | En espera                                    | Descargar precios de Fourth Coffee                       |
-| Solicitud de Downfall café & té completado                       | Descargar precios de Downfall café & té | Descargar precios de Downfall café & té               |
-| Una vez que se descargan los precios de Downfall café & la té              | Enviar solicitud a Fourth Coffee              | Comparar precios                                           |
+| Inicio                                                            | Envío de una solicitud a Downfall Coffee & Té      | Envío de solicitudes a Downfall Coffee & Té y Cuarto Café |
+| Solicitud de la versión asincrónica a Cuarto café completado | En espera                                    | Descarga de los precios de Cuarto café                       |
+| Solicitud a Downfall Coffee & Té completado                       | Descarga de precios de Downfall Coffee & Tea | Descarga de precios de Downfall Coffee & Tea               |
+| Después de descargar los precios del & de café downfall Coffee              | Envío de una solicitud a Cuarto café              | Comparación de precios                                           |
 | Comparación de la versión asincrónica completada                      | En espera                                    | Operación completada                                       |
-| Solicitud de la versión sincrónica a Fourth Coffee completada  | Descargar precios de Fourth Coffee         | N/D                                                      |
-| Una vez descargados los precios de Fourth Coffee                      | Comparar precios                             | N/D                                                      |
+| Solicitud de la versión sincrónica a Cuarto café completado  | Descarga de los precios de Cuarto café         | N/D                                                      |
+| Después de descargar los precios del cuarto café                      | Comparación de precios                             | N/D                                                      |
 | Comparación de la versión sincrónica completada                       | Operación completada                         | N/D                                                      |
 
 
 
- 
+ 
 
-Otro ejemplo sería un explorador Web como Microsoft Internet Explorer. Cuando el explorador descarga una página, a menudo es necesario descargar otros recursos, como imágenes y archivos de sonido. En el modo asincrónico, la página y sus recursos asociados se pueden solicitar simultáneamente y descargar a medida que estén disponibles, en lugar de solicitar y descargar la página y cada recurso de una en una.
+Otro ejemplo sería un explorador web como Microsoft Internet Explorer. Cuando el explorador descarga una página, a menudo necesita descargar otros recursos, como imágenes y archivos de sonido. En modo asincrónico, la página y sus recursos asociados se pueden solicitar y descargar simultáneamente a medida que estén disponibles, en lugar de solicitar y descargar la página y cada recurso de uno en uno.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Los siguientes son vínculos relacionados.
+A continuación se incluyen vínculos relacionados.
 
 Tutoriales
 
@@ -76,7 +76,7 @@ Tutoriales
 
 Funciones necesarias para configurar la operación asincrónica
 
--   [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena)
+-   [**InternetAbrir**](/windows/desktop/api/Wininet/nf-wininet-internetopena)
 -   [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback)
 
 Funciones que se pueden usar de forma asincrónica
@@ -101,15 +101,15 @@ Funciones que se pueden usar de forma asincrónica
 -   [**InternetReadFileEx**](/windows/desktop/api/Wininet/nf-wininet-internetreadfileexa)
 
 > [!Note]  
-> Las funciones [**FtpCreateDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpcreatedirectorya), [**FtpRemoveDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpremovedirectorya), [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya), [**FtpGetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpgetcurrentdirectorya), [**FtpDeleteFile**](/windows/desktop/api/Wininet/nf-wininet-ftpdeletefilea)y [**FtpRenameFile**](/windows/desktop/api/Wininet/nf-wininet-ftprenamefilea) usan el valor de contexto proporcionado en la llamada a la función [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) .
+> Las [**funciones FtpCreateDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpcreatedirectorya), [**FtpRemoveDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpremovedirectorya), [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya), [**FtpGetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpgetcurrentdirectorya), [**FtpDeleteFile**](/windows/desktop/api/Wininet/nf-wininet-ftpdeletefilea)y [**FtpRenameFile**](/windows/desktop/api/Wininet/nf-wininet-ftprenamefilea) usan el valor de contexto proporcionado en la llamada a la función [**InternetConnect.**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta)
 
- 
+ 
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
- 
+ 
 
- 
+ 
 
- 
+ 

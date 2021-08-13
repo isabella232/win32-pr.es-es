@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-CachePolicy
+title: Atributo ms-DFSR-CachePolicy
 description: Opciones de directiva de caché a petición.
 ms.assetid: a8754b4f-ebb3-446e-81ca-8b009f55a716
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-CachePolicy
-- msDFSR-CachePolicy atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-CachePolicy
+- Esquema de AD del atributo msDFSR-CachePolicy
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 028803046dd34ac4a1566dd465d12bdca194e80d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2a428329c9ebf7e6e7154bc7ae30c531bbcd9f42adabd3f10259e5780434ce7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686061"
 ---
-# <a name="ms-dfsr-cachepolicy-attribute"></a>atributo MS-DFSR-CachePolicy
+# <a name="ms-dfsr-cachepolicy-attribute"></a>Atributo ms-DFSR-CachePolicy
 
 Opciones de directiva de caché a petición.
 
@@ -29,13 +29,13 @@ Opciones de directiva de caché a petición.
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-CachePolicy                  |
-| Nombre para mostrar de LDAP | msDFSR-CachePolicy                   |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DFSR-CachePolicy                  |
+| Ldap-Display-Name | msDFSR-CachePolicy                   |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.29           |
-| System-ID-GUID    | db7a08e7-fc76-4569-a45f-f5ecb66a88b5 |
+| System-Id-Guid    | db7a08e7-fc76-4569-a45f-f5ecb66a88b5 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -52,18 +52,18 @@ Opciones de directiva de caché a petición.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Clases usadas en        | [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Opciones de directiva de caché a petición.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Clases usadas en        | [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Opciones de directiva de caché a petición.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Clases usadas en        | [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 

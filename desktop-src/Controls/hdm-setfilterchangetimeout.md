@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDM_SETFILTERCHANGETIMEOUT (commctrl. h)
-description: Establece el intervalo de tiempo de espera entre el momento en que se produce un cambio en los atributos de filtro y el envío de una notificación de FILTERCHANGE de HDN \_ . Puede enviar este mensaje explícitamente o utilizar la \_ macro header SetFilterChangeTimeout.
+title: HDM_SETFILTERCHANGETIMEOUT mensaje (Commctrl.h)
+description: Establece el intervalo de tiempo de espera entre el momento en que se produce un cambio en los atributos de filtro y la publicación de una notificación \_ FILTERCHANGE de HDN. Puede enviar este mensaje explícitamente o usar la macro \_ SetFilterChangeTimeout de encabezado.
 ms.assetid: 9bc8e0e7-d7c1-4dd6-9d39-6ae937f19d60
 keywords:
-- HDM_SETFILTERCHANGETIMEOUT controles de mensajes de Windows
+- HDM_SETFILTERCHANGETIMEOUT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9876634d12cd15001c296151694cb755ed1b34e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 23b5f8df12a7f30baa5f8b7d4bf15698b30cfbb6619fb71a81d4977b259c318b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435865"
 ---
-# <a name="hdm_setfilterchangetimeout-message"></a>HDM \_ SETFILTERCHANGETIMEOUT
+# <a name="hdm_setfilterchangetimeout-message"></a>Mensaje \_ SETFILTERCHANGETIMEOUT de HDM
 
-Establece el intervalo de tiempo de espera entre el momento en que se produce un cambio en los atributos de filtro y el envío de una notificación de [ \_ FILTERCHANGE de HDN](hdn-filterchange.md) . Puede enviar este mensaje explícitamente o utilizar la macro [**Header \_ SetFilterChangeTimeout**](/windows/desktop/api/Commctrl/nf-commctrl-header_setfilterchangetimeout) .
+Establece el intervalo de tiempo de espera entre el momento en que se produce un cambio en los atributos de filtro y la publicación de una [notificación \_ FILTERCHANGE de HDN.](hdn-filterchange.md) Puede enviar este mensaje explícitamente o usar la macro [**\_ SetFilterChangeTimeout de**](/windows/desktop/api/Commctrl/nf-commctrl-header_setfilterchangetimeout) encabezado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,9 +49,9 @@ Devuelve el índice del control de filtro que se está modificando.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

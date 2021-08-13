@@ -1,11 +1,11 @@
 ---
-title: Win32_SessionBrokerTarget (clase)
-description: Define la consulta para un destino del agente de sesión.
+title: Win32_SessionBrokerTarget clase
+description: Define la consulta para un destino de agente de sesión.
 ms.assetid: 35de25da-cb89-4836-be14-9544b1264248
 ms.tgt_platform: multiple
 keywords:
 - Win32_SessionBrokerTarget clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_SessionBrokerTarget de clase, se describe
+- Win32_SessionBrokerTarget clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ceca0df64eeb9cd285737fee7c6ca6fa3a2e63
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5557a67e9b52841b199a3b1f1f85a31090324db7af0c0a2d21a2679d75ce3a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604544"
 ---
-# <a name="win32_sessionbrokertarget-class"></a>\_Clase Win32 SessionBrokerTarget
+# <a name="win32_sessionbrokertarget-class"></a>Clase SessionBrokerTarget de Win32 \_
 
-Define la consulta para un destino del agente de sesión.
+Define la consulta para un destino de agente de sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -82,7 +82,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El nombre de la granja a la que pertenece el destino.
+Nombre de la granja a la que pertenece el destino.
 
 </dd> <dt>
 
@@ -95,10 +95,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-GUID (si existe) del destino.
+GUID (si hay alguno) del destino.
 
 </dd> <dt>
 
@@ -111,14 +111,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre del complemento.
 
 </dd> <dt>
 
-**NombreDeDestino**
+**TargetName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -133,7 +133,7 @@ Nombre del destino.
 
 ## <a name="examples"></a>Ejemplos
 
-La siguiente cadena de consulta muestra cómo \_ se usa la clase SessionBrokerTarget de Win32 en una consulta.
+La siguiente cadena de consulta muestra cómo se usa la clase SessionBrokerTarget de Win32 \_ en una consulta.
 
 
 ```CSharp
@@ -146,12 +146,12 @@ queryString = string.Format("SELECT * FROM Win32_SessionBrokerTarget WHERE Plugi
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

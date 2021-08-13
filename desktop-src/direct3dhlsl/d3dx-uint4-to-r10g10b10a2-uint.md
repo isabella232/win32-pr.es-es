@@ -1,9 +1,9 @@
 ---
-title: D3DX_UINT4_to_R10G10B10A2_UINT función)
-description: Vuelve a empaquetar el XMINT4 determinado en un formato de DXGI \_ \_ R10G10B10A2 \_ uint.
+title: D3DX_UINT4_to_R10G10B10A2_UINT función
+description: Empaqueta el XMINT4 especificado de nuevo en un UINT DXGI \_ FORMAT \_ R10G10B10A2. \_
 ms.assetid: fe10c62e-2d84-4f6b-886b-247ee344f6c7
 keywords:
-- D3DX_UINT4_to_R10G10B10A2_UINT de la función HLSL
+- D3DX_UINT4_to_R10G10B10A2_UINT function HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc7076b9e44ab1491bb8abbf8d4edb82158282c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c33420ca720ce2e605a378340926f86651a39e6e7f4c787c83d5e4ba2b15a8f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118286480"
 ---
-# <a name="d3dx_uint4_to_r10g10b10a2_uint-function"></a>D3DX \_ UINT4 \_ a \_ R10G10B10A2 \_ uint (función)
+# <a name="d3dx_uint4_to_r10g10b10a2_uint-function"></a>Función \_ UINT de D3DX UINT4 \_ a \_ R10G10B10A2 \_
 
-Vuelve a empaquetar el XMINT4 determinado en un formato de DXGI \_ \_ R10G10B10A2 \_ uint.
+Empaqueta el XMINT4 especificado de nuevo en un UINT DXGI \_ FORMAT \_ R10G10B10A2. \_
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ UINT D3DX_UINT4_to_R10G10B10A2_UINT(
 *unpackedInput* 
 </dt> <dd>
 
-Datos del sombreador que se van a empaquetar.
+Datos del sombreador que se empaquetan.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador empaquetado.
+Datos empaquetados del sombreador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Datos del sombreador empaquetado.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Datos del sombreador empaquetado.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para In-Place de imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

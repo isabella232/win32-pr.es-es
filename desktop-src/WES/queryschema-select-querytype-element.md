@@ -1,9 +1,9 @@
 ---
-title: Select (QueryType) (elemento)
-description: Consulta XPath que identifica los eventos que se van a incluir en el conjunto de resultados de la consulta.
+title: Elemento Select (QueryType)
+description: Consulta XPath que identifica los eventos que se incluirán en el conjunto de resultados de la consulta.
 ms.assetid: b6aa747b-3586-460b-b51c-52fb112739c3
 keywords:
-- Elemento Select EventLog
+- Seleccionar elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b1735f5de49853357eed1ce00b8d181edf2279ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b38a4f24746425bcdbea845b1c23ea5dadfdbcbefa41ebc5fa502147aba2ec67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587408"
 ---
-# <a name="select-querytype-element"></a>Select (QueryType) (elemento)
+# <a name="select-querytype-element"></a>Elemento Select (QueryType)
 
-Consulta XPath que identifica los eventos que se van a incluir en el conjunto de resultados de la consulta.
+Consulta XPath que identifica los eventos que se incluirán en el conjunto de resultados de la consulta.
 
 ``` syntax
 <xs:element name="Select">
@@ -36,7 +36,7 @@ Consulta XPath que identifica los eventos que se van a incluir en el conjunto de
 </xs:element>
 ```
 
-El elemento **Select** se define mediante el tipo complejo de [**QueryType**](queryschema-querytype-complextype.md) .
+El tipo complejo **QueryType** define el elemento [**Select.**](queryschema-querytype-complextype.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -44,7 +44,7 @@ El elemento **Select** se define mediante el tipo complejo de [**QueryType**](qu
 
 | Nombre | Tipo   | Descripción                                                                              |
 |------|--------|------------------------------------------------------------------------------------------|
-| Path | anyURI | El nombre del canal o la ruta de acceso al archivo de registro que contiene los eventos.<br/> |
+| Path | anyURI | Nombre del canal o la ruta de acceso al archivo de registro que contiene los eventos.<br/> |
 
 
 
@@ -54,19 +54,19 @@ El elemento **Select** se define mediante el tipo complejo de [**QueryType**](qu
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>       |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**Consulta (QueryListType)**](queryschema-query-querylisttype-element.md)
+[**Query (QueryListType)**](queryschema-query-querylisttype-element.md)
 </dt> </dl>
 
  

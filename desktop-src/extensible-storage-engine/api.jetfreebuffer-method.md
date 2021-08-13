@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetFreeBuffer (método)'
-title: Método API. JetFreeBuffer
+description: Más información sobre el método Api.JetFreeBuffer
+title: Método Api.JetFreeBuffer
 TOCTitle: 'JetFreeBuffer method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetFreeBuffer(System.IntPtr)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetfreebuffer(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a584caf0f7c59c77e7d3c4a058a03780043e0f87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 902fb39a566c7c61f652d1a3796b20d550ce4bd2b61d706b955469af5762011d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272489"
 ---
-# <a name="apijetfreebuffer-method"></a>Método API. JetFreeBuffer
+# <a name="apijetfreebuffer-method"></a>Método Api.JetFreeBuffer
 
-Libera memoria asignada por una llamada del motor de base de datos.
+Libera la memoria asignada por una llamada al motor de base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,20 +58,20 @@ public static void JetFreeBuffer(
 #### <a name="parameters"></a>Parámetros
 
   - buffer  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Búfer asignado por una llamada al motor de base de datos. [Cero](/dotnet/api/system.intptr.zero) es aceptable y se omitirá.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es interno porque nunca exponemos la memoria asignada por ESENT a los llamadores.
+Este método es interno porque nunca exponemos la memoria asignada por ESENT a nuestros llamadores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

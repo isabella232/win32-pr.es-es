@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaColtyp. LongLong, campo'
-title: Campo VistaColtyp. LongLong (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Campo VistaColtyp.LongLong'
+title: Campo VistaColtyp.LongLong (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LongLong field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp.LongLong
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp.longlong(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df5e4a7e31dd40b786fdc69bbedc047879c225ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75b0575a1416b02df279c17b1a2ad1800b912524f6dbebd60cf607ad3ef6d3aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471175"
 ---
-# <a name="vistacoltyplonglong-field"></a>VistaColtyp. LongLong, campo
+# <a name="vistacoltyplonglong-field"></a>Campo VistaColtyp.LongLong
 
-Número de bits 64 firmado.
+Número de 64 bits con firma.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaColtyp.LongLong
 public const JET_coltyp LongLong
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaColtyp](./vistacoltyp-class.md)
+[VistaColtyp (clase)](./vistacoltyp-class.md)
 
 [Miembros de VistaColtyp](./vistacoltyp-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

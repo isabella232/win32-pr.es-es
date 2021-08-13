@@ -1,11 +1,11 @@
 ---
-title: Propiedad de recuento de IVMSerialPortCollection (VPCCOMInterfaces. h)
+title: Propiedad IVMSerialPortCollection Count (VPCCOMInterfaces.h)
 description: Recupera el número de puertos serie de esta colección.
 ms.assetid: 94ff6c9d-17bc-4aa5-a486-d4428c829d02
 keywords:
-- Propiedad Count Virtual PC
-- Propiedad Count Virtual PC, interfaz IVMSerialPortCollection
-- Interfaz IVMSerialPortCollection Virtual PC, propiedad Count
+- Count, propiedad Virtual PC
+- Count, interfaz IVMSerialPortCollection de la propiedad Virtual PC
+- IVMSerialPortCollection interface Virtual PC , Propiedad Count
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbf0503f00fd1df7d27a8eeafedd3efe42619b98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b8c7390b4637cf8e39fe83fcbb9844913a41d20fd2ed9515695ec068b33af6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118593158"
 ---
-# <a name="ivmserialportcollectioncount-property"></a>IVMSerialPortCollection:: Count (propiedad)
+# <a name="ivmserialportcollectioncount-property"></a>IVMSerialPortCollection::Count, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el número de puertos serie de esta colección.
 
@@ -45,7 +45,7 @@ HRESULT get_Count(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El número de puertos serie.
+Número de puertos serie.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,8 +53,8 @@ El número de puertos serie.
 
 | Nombre o valor                                                                                                                                            | Significado                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>               | La operación se realizó correctamente.<br/> |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl> | El parámetro es **null**.<br/>    |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>               | La operación se realizó correctamente.<br/> |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl> | El parámetro es **NULL.**<br/>    |
 
 
 
@@ -64,16 +64,16 @@ El número de puertos serie.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMSerialPortCollection se define como dd3c6175-1F04-4341-9f85-104074880289<br/>    |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMSerialPortCollection se define como \_ dd3c6175-1f04-4341-9f85-104074880289<br/>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

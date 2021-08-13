@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3f3b718c95d588ffdc7fa63902e6b26ffbf11fd6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a9153dd2412018321374f558539690d5d146d8547d6247874bf5c1c79f1d4d9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660032"
 ---
 # <a name="cbasedispatchgetidsofnames-method"></a>CBaseDispatch.GetIDsOfNames (método)
 
@@ -97,9 +97,9 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método se comporta como el método **IDispatch::GetIDsOfNames,** pero el *parámetro riid* especifica la interfaz en la que se recuperarán los DISPID. (En la **versión de IDispatch,** el *parámetro riid* está reservado).
+Este método se comporta como el método **IDispatch::GetIDsOfNames,** pero el *parámetro riid* especifica la interfaz en la que se recuperan DISPID. (En la **versión de IDispatch,** el *parámetro riid* está reservado).
 
 Si el método devuelve DISP \_ E UNKNOWNNAME, los DISPID devueltos contienen DISPID UNKNOWN para cada entrada que \_ corresponde a un nombre \_ desconocido.
 
@@ -109,12 +109,12 @@ Si el método devuelve DISP \_ E UNKNOWNNAME, los DISPID devueltos contienen DIS
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

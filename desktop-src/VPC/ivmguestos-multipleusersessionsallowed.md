@@ -1,11 +1,11 @@
 ---
-title: Propiedad MultipleUserSessionsAllowed de IVMGuestOS
+title: IVMGuestOS MultipleUserSessionsAllowed, propiedad
 description: Determina si se permiten varias sesiones de usuario simultáneas en el sistema operativo invitado.
 ms.assetid: 8a4163bf-b805-4cf0-b785-ee82e8374ef6
 keywords:
-- Propiedad MultipleUserSessionsAllowed Virtual PC
-- Propiedad MultipleUserSessionsAllowed Virtual PC, interfaz IVMGuestOS
-- Interfaz IVMGuestOS Virtual PC, propiedad MultipleUserSessionsAllowed
+- MultipleUserSessionsAllowed, propiedad Virtual PC
+- MultipleUserSessionsAllowed, propiedad Virtual PC, interfaz IVMGuestOS
+- IVMGuestOS interface Virtual PC , MultipleUserSessionsAllowed property
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f725a626ae13caaa36acd598694fef2f3b03e697
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 68075c13cfc65b79d992b849b310bd3c88b09f7901567baf249bff15496ede05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118594078"
 ---
-# <a name="ivmguestosmultipleusersessionsallowed-property"></a>IVMGuestOS:: MultipleUserSessionsAllowed (propiedad)
+# <a name="ivmguestosmultipleusersessionsallowed-property"></a>IVMGuestOS::MultipleUserSessionsAllowed, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Determina si se permiten varias sesiones de usuario simultáneas en el sistema operativo invitado.
 
@@ -45,7 +45,7 @@ HRESULT get_MultipleUserSessionsAllowed(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**Variante \_ TRUE** si se permiten varias sesiones de usuario simultáneas en el sistema operativo invitado, **Variant \_ false** en caso contrario.
+**VARIANT \_ TRUE** si se permiten varias sesiones de usuario simultáneas en el sistema operativo invitado; en caso contrario, **VARIANT \_ FALSE.**
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,20 +53,20 @@ HRESULT get_MultipleUserSessionsAllowed(
 
 | Nombre o valor                                                                                                                                                                       | Significado                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                          | La operación se realizó correctamente.<br/>                                                                                       |
-| <dl> <dt>S \_ FALSO</dt> <dt>1</dt> </dl>                                       | Servicios de Escritorio remoto (anteriormente conocido como Terminal Services) aún no se ha inicializado en el sistema operativo invitado.<br/> |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                            | El parámetro *sessionStatus* es **null**.<br/>                                                                          |
-| <dl> <dt>Máquina virtual \_ La \_ VM E \_ no \_ ejecuta</dt> <dt>0xA0040206</dt> </dl>               | La máquina virtual no se está ejecutando.<br/>                                                                                 |
-| <dl> <dt>Máquina virtual \_ La característica de E/s \_ \_ no está \_ \_ disponible</dt> <dt>0xA0040505</dt> </dl> | Los componentes de integración no están instalados en esta máquina virtual.<br/>                                                   |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>                    | Se produjo un error inesperado.<br/>                                                                                   |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                          | La operación se realizó correctamente.<br/>                                                                                       |
+| <dl> <dt>S \_ FALSE</dt> <dt>1</dt> </dl>                                       | Servicios de Escritorio remoto (anteriormente conocido como Terminal Services) aún no se ha inicializado en el sistema operativo invitado.<br/> |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                            | El *parámetro sessionStatus* es **NULL.**<br/>                                                                          |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING</dt> <dt>0xA0040206</dt> </dl>               | La máquina virtual no se está ejecutando.<br/>                                                                                 |
+| <dl> <dt>Máquina virtual \_ E \_ ADDITIONS \_ FEATURE NOT \_ \_ AVAIL</dt> <dt>0XA0040505</dt> </dl> | Los componentes de integración no están instalados en esta máquina virtual.<br/>                                                   |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                    | Se produjo un error inesperado.<br/>                                                                                   |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-El valor de esta propiedad no es válido a menos que la propiedad [**TerminalServicesInitialized**](ivmguestos-terminalservicesinitialized.md) sea una **variante \_ verdadera**.
+El valor de esta propiedad no es válido a menos que la propiedad [**TerminalServicesInitialized**](ivmguestos-terminalservicesinitialized.md) sea **VARIANT \_ TRUE.**
 
-En el caso de los sistemas operativos de cliente de Windows, **MultipleUserSessionsAllowed** es **Variant \_ true** si se admite el cambio rápido de usuario. En el caso de los sistemas operativos Windows Server, **MultipleUserSessionsAllowed** es **VARIANT \_ true** si servicios de escritorio remoto (anteriormente denominado Terminal Services) está instalado y habilitado.
+Para Windows sistemas operativos cliente, **MultipleUserSessionsAllowed** es **VARIANT \_ TRUE** si se admite la conmutación rápida de usuarios. Para Windows server, **MultipleUserSessionsAllowed** es **VARIANT \_ TRUE** si Servicios de Escritorio remoto (anteriormente denominado Terminal Services) está instalado y habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,11 +74,11 @@ En el caso de los sistemas operativos de cliente de Windows, **MultipleUserSessi
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                      |
-| IDL<br/>                      | <dl> <dt>IVMGuestOS. idl</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS se define como 99fea0db-4880-499A-b6d8-73dff9bc91be<br/>             |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                      |
+| Idl<br/>                      | <dl> <dt>IVMGuestOS.idl</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS se define como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>             |
 
 
 

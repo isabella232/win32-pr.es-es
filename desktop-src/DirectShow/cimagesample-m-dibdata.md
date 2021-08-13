@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m DibData es una estructura DibData que contiene información sobre un mapa de bits independiente del dispositivo GDI (DIB).
+description: La variable miembro m DibData es una estructura DIBDATA que contiene información sobre un mapa de bits independiente del dispositivo \_ (DIB) de GDI.
 ms.assetid: a7fd79c9-d041-4888-a898-11252d9d8131
-title: 'Miembro CImageSample:: m_DibData (Winutil. h)'
+title: CImageSample::m_DibData miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 065f124fdc248df6a9c35a877d2e72ae4a196cc9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0b590af8604884b0b89cf6792fbf43fb6df293b00f146596763c948762a6d218
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655593"
 ---
-# <a name="cimagesamplem_dibdata-member"></a>Miembro DibData CImageSample:: m \_
+# <a name="cimagesamplem_dibdata-member"></a>CImageSample::m \_ Miembro DibData
 
-La `m_DibData` variable miembro es una estructura [**DIBDATA**](dibdata.md) que contiene información sobre un mapa de bits independiente del dispositivo GDI (DIB).
+La variable miembro es una estructura DIBDATA que contiene información sobre un mapa de bits independiente del dispositivo `m_DibData` GDI (DIB). [](dibdata.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ DIBDATA m_DibData;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ DIBDATA m_DibData;
 
 <dl> <dt>
 
-[**Clase CImageSample**](cimagesample.md)
+[**CImageSample (clase)**](cimagesample.md)
 </dt> </dl>
 
  

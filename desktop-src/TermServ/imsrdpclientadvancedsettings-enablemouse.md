@@ -1,26 +1,26 @@
 ---
-title: Propiedad EnableMouse de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. | Propiedad EnableMouse de IMsRdpClientAdvancedSettings
+title: IMsRdpClientAdvancedSettings EnableMouse, propiedad
+description: Esta propiedad no es compatible. | IMsRdpClientAdvancedSettings EnableMouse, propiedad
 ms.assetid: 4f60fdfc-e1b9-4ac2-98e4-49331b072883
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad EnableMouse
+- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad EnableMouse
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0495ba7b48e431efe5746f40b353b5c1ad701d6a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bb61f7763f92c46a80a7e0e45c5c476f4d3b64e7cbb735ba1e254641d90dae4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608703"
 ---
-# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>IMsRdpClientAdvancedSettings:: EnableMouse (propiedad)
+# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>IMsRdpClientAdvancedSettings::EnableMouse, propiedad
 
 Esta propiedad no es compatible.
 
@@ -88,11 +88,11 @@ Establezca este parámetro en 0 para deshabilitar la característica o un valor 
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ false**.
+Devuelve **S \_ FALSE.**
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
