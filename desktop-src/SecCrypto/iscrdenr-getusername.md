@@ -1,7 +1,7 @@
 ---
-description: Recupera el nombre del usuario en cuyo nombre está diseñada la inscripción de certificados.
+description: Recupera el nombre del usuario en cuyo nombre está prevista la inscripción del certificado.
 ms.assetid: 7bd71944-f7dd-4c92-a71c-ecc5c0afd5b2
-title: 'ISCrdEnr:: getUserName (método)'
+title: Método ISCrdEnr::getUserName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 51f551a704f3a98b932e646c95810f928e73bac7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b61dd43980049355621c2ee4085634303c55e0f9dac79db839602d07c7d61f94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119409454"
 ---
-# <a name="iscrdenrgetusername-method"></a>ISCrdEnr:: getUserName (método)
+# <a name="iscrdenrgetusername-method"></a>Método ISCrdEnr::getUserName
 
-El método **getUserName** recupera el nombre del usuario en cuyo nombre está dirigida la inscripción del certificado.
+El **método getUserName** recupera el nombre del usuario en cuyo nombre está prevista la inscripción del certificado.
 
-Antes de llamar a este método, debe especificar el nombre de usuario en una llamada a [**ISCrdEnr:: selectUserName**](iscrdenr-selectusername.md) o [**ISCrdEnr:: setUserName**](iscrdenr-setusername.md).
+Antes de llamar a este método, debe especificar el nombre de usuario en una llamada a [**ISCrdEnr::selectUserName**](iscrdenr-selectusername.md) o [**ISCrdEnr::setUserName**](iscrdenr-setusername.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,20 +54,20 @@ SCrdEnr.getUserName( _
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Este valor debe ser cero (0), \_ nombre de UPN de inscripción PPAC \_ \_ o \_ \_ \_ nombre compatible con el SAM de inscripción \_ .
+Este valor debe ser cero (0), SCARD ENROLL UPN NAME o \_ \_ \_ SCARD \_ ENROLL SAM \_ COMPATIBLE \_ \_ NAME.
 
-Si este valor es PPAC \_ ENROLL \_ UPN \_ Name, **GetUserName** devuelve el nombre principal universal (UPN) del usuario, como " someone@example.com ".
+Si este valor es SCARD ENROLL UPN NAME, getUserName devuelve el nombre \_ \_ principal universal \_ (UPN) del usuario, como "  someone@example.com ".
 
-Si este valor es PPAC \_ inscribir \_ \_ el nombre compatible con Sam \_ , el método devuelve el nombre del administrador de acceso de seguridad (SAM) del usuario con el formato "dominio \\ usuario".
+Si este valor es SCARD ENROLL SAM COMPATIBLE NAME, el método devuelve el nombre del administrador de acceso de seguridad (SAM) del usuario con el formato \_ \_ \_ \_ "USUARIO \\ DE DOMINIO".
 
-Si este valor es cero, el método devuelve el nombre UPN del usuario, si existe. Si el usuario no tiene un nombre UPN, el método devuelve el nombre del SAM del usuario.
+Si este valor es cero, el método devuelve el nombre UPN del usuario si existe. Si el usuario no tiene un nombre UPN, el método devuelve el nombre SAM del usuario.
 
 </dd> <dt>
 
-*pbstrUserName* \[ enuncia\]
+*pbstrUserName* \[ out\]
 </dt> <dd>
 
 Puntero a una cadena que devuelve el nombre del usuario.
@@ -78,39 +78,39 @@ Puntero a una cadena que devuelve el nombre del usuario.
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
 Cadena que representa el nombre del usuario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede especificar el nombre del usuario al que se emite la [*tarjeta inteligente*](../secgloss/s-gly.md) llamando a [**ISCrdEnr:: setUserName**](iscrdenr-setusername.md) o [**ISCrdEnr:: selectUserName**](iscrdenr-selectusername.md). Una vez que se ha especificado un nombre de usuario, su valor se puede recuperar llamando a **getUserName**.
+Puede especificar el nombre del usuario [](../secgloss/s-gly.md) al que se emite la tarjeta inteligente llamando a [**ISCrdEnr::setUserName**](iscrdenr-setusername.md) o [**ISCrdEnr::selectUserName**](iscrdenr-selectusername.md). Una vez especificado un nombre de usuario, su valor se puede recuperar llamando a **getUserName**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ISCrdEnr**](iscrdenr.md)
 </dt> <dt>
 
-[**ISCrdEnr:: resetuser**](iscrdenr-resetuser.md)
+[**ISCrdEnr::resetUser**](iscrdenr-resetuser.md)
 </dt> <dt>
 
 [**ISCrdEnr::selectUserName**](iscrdenr-selectusername.md)

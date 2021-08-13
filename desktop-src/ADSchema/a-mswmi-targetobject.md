@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-TargetObject
-description: Contiene una o más secuencias binarias que representan objetos WMI compilados.
+title: Atributo ms-WMI-TargetObject
+description: Contiene una o varias secuencias binarias que representan objetos WMI compilados.
 ms.assetid: e07e4a3d-d85c-4e1f-ab1a-755ef0350996
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-TargetObject
-- msWMI-TargetObject atributo AD Schema
+- Esquema de AD del atributo ms-WMI-TargetObject
+- Esquema de AD del atributo msWMI-TargetObject
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eab60175fef179ea39b3628121ba072ff868b61
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 310daf4bbfc24ecd405761e9af135059cb710b78e3430089c1911b9b6d40a868
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326275"
 ---
-# <a name="ms-wmi-targetobject-attribute"></a>atributo MS-WMI-TargetObject
+# <a name="ms-wmi-targetobject-attribute"></a>Atributo ms-WMI-TargetObject
 
-Contiene una o más secuencias binarias que representan objetos WMI compilados.
+Contiene una o varias secuencias binarias que representan objetos WMI compilados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-WMI-TargetObject                                   |
-| Nombre para mostrar de LDAP | msWMI-TargetObject                                    |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | El sistema establece este valor.                      |
+| CN                | ms-WMI-TargetObject                                   |
+| Ldap-Display-Name | msWMI-TargetObject                                    |
+| Size              | \-                                                    |
+| Privilegio actualizar  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1647                               |
-| System-ID-GUID    | c44f67a5-7de5-4a1f-92d9-662b57364b77                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | c44f67a5-7de5-4a1f-92d9-662b57364b77                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -52,20 +52,20 @@ Contiene una o más secuencias binarias que representan objetos WMI compilados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                           |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**MS-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**MS-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**ms-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**ms-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Contiene una o más secuencias binarias que representan objetos WMI compilados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                           |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**MS-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**MS-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**ms-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**ms-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Contiene una o más secuencias binarias que representan objetos WMI compilados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                           |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**MS-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**MS-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**ms-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**ms-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Contiene una o más secuencias binarias que representan objetos WMI compilados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                           |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**MS-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**MS-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**ms-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**ms-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Contiene una o más secuencias binarias que representan objetos WMI compilados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                           |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**MS-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**MS-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-ShadowObject**](c-mswmi-shadowobject.md)<br/> [**ms-WMI-SimplePolicyTemplate**](c-mswmi-simplepolicytemplate.md)<br/> [**ms-WMI-UnknownRangeParam**](c-mswmi-unknownrangeparam.md)<br/> |
 
 
 

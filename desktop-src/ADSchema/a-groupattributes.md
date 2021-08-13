@@ -1,11 +1,11 @@
 ---
-title: Group-Attributes atributo)
-description: El atributo Group-Attributes no se usa actualmente.
+title: Group-Attributes atributo
+description: El Group-Attributes no se usa actualmente.
 ms.assetid: 7966f50c-692e-43ab-89fd-eff4f58b552f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Group-Attributes
-- groupAttributes esquema de AD de atributos
+- Group-Attributes esquema de AD de atributo
+- GroupAttributes attribute AD Schema (Esquema de AD del atributo groupAttributes)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8353efb2fba9f81333791ca46603125c811f03
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5571451dbb76ded8f12ee2ef6ec07fd434c653392bf1851410fa242adc66fcd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323015"
 ---
-# <a name="group-attributes-attribute"></a>Group-Attributes atributo)
+# <a name="group-attributes-attribute"></a>Group-Attributes atributo
 
-El atributo **Group-Attributes** no se usa actualmente.
+El **atributo Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Group-Attributes                     |
-| Nombre para mostrar de LDAP | groupAttributes                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | groupAttributes                      |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.152               |
-| System-ID-GUID    | bf96797e-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf96797e-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,15 +53,15 @@ El atributo **Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -74,15 +74,15 @@ El atributo **Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -95,15 +95,15 @@ El atributo **Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -116,15 +116,15 @@ El atributo **Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -137,15 +137,15 @@ El atributo **Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -158,15 +158,15 @@ El atributo **Group-Attributes** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |

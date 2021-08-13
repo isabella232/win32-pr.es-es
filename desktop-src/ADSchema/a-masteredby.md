@@ -1,11 +1,11 @@
 ---
-title: Mastered-By atributo)
-description: Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus objetos de configuración NTDS.
+title: Mastered-By atributo
+description: Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus objetos NTDS Configuración objetos.
 ms.assetid: bd14998c-1691-4167-83c4-3c1ec1181b7f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Mastered-By
-- masteredBy esquema de AD de atributos
+- Mastered-By esquema de AD de atributo
+- Esquema de AD del atributo masteredBy
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85cf02f78363e1e8db06bddfb2c389cc78077090
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: eb6a19ffeb7069a2fa386f5e39a765e00f6908bb17ca6290e41c202c195088db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301055"
 ---
-# <a name="mastered-by-attribute"></a>Mastered-By atributo)
+# <a name="mastered-by-attribute"></a>Mastered-By atributo
 
-Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus objetos de configuración NTDS.
+Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus objetos NTDS Configuración objetos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Mastered-By                             |
-| Nombre para mostrar de LDAP | masteredBy                              |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| Ldap-Display-Name | masteredBy                              |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema establece este valor.        |
 | Frecuencia de actualización  | Cuando se crea el contexto de nomenclatura.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1409                 |
-| System-ID-GUID    | e48e64e0-12c9-11d3-9102-00c04fd91ab1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | e48e64e0-12c9-11d3-9102-00c04fd91ab1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,15 +75,15 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -117,15 +117,15 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -138,15 +138,15 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -159,15 +159,15 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -180,15 +180,15 @@ Vínculo hacia atrás para el atributo tiene-Master-NC. Nombre distintivo de sus
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 77                              |
+| Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

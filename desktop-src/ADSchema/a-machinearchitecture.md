@@ -1,11 +1,11 @@
 ---
-title: Machine-Architecture atributo)
-description: Contiene una lista de procesadores de hardware admitidos por una aplicación determinada.
+title: Machine-Architecture atributo
+description: Contiene una lista de procesadores de hardware compatibles con una aplicación determinada.
 ms.assetid: 282d3078-d63e-41fd-bab7-bb5fb83cccdd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Machine-Architecture
-- machineArchitecture esquema de AD de atributos
+- Machine-Architecture esquema de AD de atributo
+- Esquema de AD del atributo machineArchitecture
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15077dc3d24f4418085b0afe4b8ed65e727acd3d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 797fee8c35c4f5823de400fdffe096a676659118a629beff29a3e59054509fa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301465"
 ---
-# <a name="machine-architecture-attribute"></a>Machine-Architecture atributo)
+# <a name="machine-architecture-attribute"></a>Machine-Architecture atributo
 
-Contiene una lista de procesadores de hardware admitidos por una aplicación determinada.
+Contiene una lista de procesadores de hardware compatibles con una aplicación determinada.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Machine-Architecture                 |
-| Nombre para mostrar de LDAP | machineArchitecture                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | machineArchitecture                  |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.68                |
-| System-ID-GUID    | bf9679af-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf9679af-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Contiene una lista de procesadores de hardware admitidos por una aplicación det
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
+| Es de un solo valor       | False                                                            |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Contiene una lista de procesadores de hardware admitidos por una aplicación det
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
+| Es de un solo valor       | False                                                            |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Contiene una lista de procesadores de hardware admitidos por una aplicación det
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
+| Es de un solo valor       | False                                                            |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Contiene una lista de procesadores de hardware admitidos por una aplicación det
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
+| Es de un solo valor       | False                                                            |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Contiene una lista de procesadores de hardware admitidos por una aplicación det
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
+| Es de un solo valor       | False                                                            |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Contiene una lista de procesadores de hardware admitidos por una aplicación det
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
+| Es de un solo valor       | False                                                            |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

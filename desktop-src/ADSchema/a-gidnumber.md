@@ -1,10 +1,10 @@
 ---
-title: atributo gidNumber
+title: Atributo gidNumber
 description: Contiene un valor entero que identifica de forma única un grupo en un dominio administrativo.
 ms.assetid: 89200e98-4b63-4057-ae15-77f9b18b93fe
 ms.tgt_platform: multiple
 keywords:
-- gidNumber esquema de AD de atributos
+- GidNumber attribute AD Schema (Esquema de AD del atributo gidNumber)
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7705727e19c9f996588a12d7dc07c1c1e5a98370
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0cb41a4544e4df43d91977c9f0c7205470040b95654ad7230dcc6e8d2edb33e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323275"
 ---
-# <a name="gidnumber-attribute"></a>atributo gidNumber
+# <a name="gidnumber-attribute"></a>Atributo gidNumber
 
 Contiene un valor entero que identifica de forma única un grupo en un dominio administrativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | gidNumber                            |
-| Nombre para mostrar de LDAP | gidNumber                            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | gidNumber                            |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.1                      |
-| System-ID-GUID    | c5b95f0c-ec9e-41c4-849c-b46597ed6696 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | c5b95f0c-ec9e-41c4-849c-b46597ed6696 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,15 +50,15 @@ Contiene un valor entero que identifica de forma única un grupo en un dominio a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | True                                                                                            |
-| Está indexado             | True                                                                                            |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                            |
+| Está indexado             | Verdadero                                                                                            |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000001                                                                                      |
@@ -71,15 +71,15 @@ Contiene un valor entero que identifica de forma única un grupo en un dominio a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | True                                                                                            |
-| Está indexado             | True                                                                                            |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                            |
+| Está indexado             | Verdadero                                                                                            |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000001                                                                                      |
@@ -92,15 +92,15 @@ Contiene un valor entero que identifica de forma única un grupo en un dominio a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | True                                                                                            |
-| Está indexado             | True                                                                                            |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                            |
+| Está indexado             | Verdadero                                                                                            |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000001                                                                                      |
@@ -113,15 +113,15 @@ Contiene un valor entero que identifica de forma única un grupo en un dominio a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | True                                                                                            |
-| Está indexado             | True                                                                                            |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                            |
+| Está indexado             | Verdadero                                                                                            |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000001                                                                                      |
@@ -130,7 +130,7 @@ Contiene un valor entero que identifica de forma única un grupo en un dominio a
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

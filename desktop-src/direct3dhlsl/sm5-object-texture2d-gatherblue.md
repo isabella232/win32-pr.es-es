@@ -1,9 +1,9 @@
 ---
-title: 'Texture2D:: GatherBlue (S, Float, int) (función)'
-description: 'Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Texture2D:: GatherBlue (S, Float, int) (función)'
+title: Función Texture2D::GatherBlue(S,float,int)
+description: Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Función Texture2D::GatherBlue(S,float,int)
 ms.assetid: 6d753ef2-2818-4990-81df-52dda044d21d
 keywords:
-- GatherBlue de función HLSL
+- Función GatherBlue HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 54885ccd8f31fdf55270b6c9ac2dbafa1805d866
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: caadf785617ee1e28e2bfffef4d7ccb534bff8d760b982ccc2284920475729a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118789820"
 ---
-# <a name="texture2dgatherbluesfloatint-function"></a>Texture2D:: GatherBlue (S, Float, int) (función)
+# <a name="texture2dgatherbluesfloatint-function"></a>Función Texture2D::GatherBlue(S,float,int)
 
-Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,25 +41,25 @@ TemplateType GatherBlue(
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **muestra**
+Tipo: **sampler**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*desplazamiento* \[ de\]
+*desplazamiento* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Desplazamiento que se aplica a la coordenada de textura antes del muestreo.
 
@@ -69,17 +69,17 @@ Desplazamiento que se aplica a la coordenada de textura antes del muestreo.
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
 ## <a name="remarks"></a>Observaciones
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -91,7 +91,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Métodos GatherBlue](texture2d-gatherblue.md)
+[Métodos de GatherBlue](texture2d-gatherblue.md)
 </dt> <dt>
 
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)

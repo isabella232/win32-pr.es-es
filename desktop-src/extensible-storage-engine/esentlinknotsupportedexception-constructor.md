@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLinkNotSupportedException'
-title: Constructor de EsentLinkNotSupportedException
+description: 'Más información sobre: Constructor EsentLinkNotSupportedException'
+title: Constructor EsentLinkNotSupportedException
 TOCTitle: 'EsentLinkNotSupportedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLinkNotSupportedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlinknotsupportedexception.esentlinknotsupportedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77e251a0b542f2e3ef38ea78100cb27007752e8d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 126cda1be91e8fcd4b9ba6c08b4fe9e14cc50de7f8106b4c7d2ab1fec5c9793b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118777062"
 ---
-# <a name="esentlinknotsupportedexception-constructor"></a>Constructor de EsentLinkNotSupportedException
+# <a name="esentlinknotsupportedexception-constructor"></a>Constructor EsentLinkNotSupportedException
 
 Inicializa una nueva instancia de la clase EsentLinkNotSupportedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLinkNotSupportedException()
 public EsentLinkNotSupportedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLinkNotSupportedException()
 
 [Miembros de EsentLinkNotSupportedException](./esentlinknotsupportedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

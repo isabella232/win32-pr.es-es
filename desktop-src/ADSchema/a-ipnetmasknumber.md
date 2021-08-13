@@ -1,10 +1,10 @@
 ---
-title: atributo ipNetmaskNumber
-description: Contiene la máscara de la dirección IP en notación decimal con puntos, omitiendo los ceros a la izquierda.
+title: Atributo ipNetmaskNumber
+description: Contiene la máscara de red IP en notación decimal de puntos, omitiendo los ceros iniciales.
 ms.assetid: 7d61e551-fd5b-4388-8cfa-cef0f61c716a
 ms.tgt_platform: multiple
 keywords:
-- ipNetmaskNumber esquema de AD de atributos
+- Esquema de AD del atributo ipNetmaskNumber
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e65d402aaae3d9466980d963a167206adb89d16
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c18d6f1593ef35fda939e6e46cda479f3c9d1dc86f81c036072cbb05a5c69dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322925"
 ---
-# <a name="ipnetmasknumber-attribute"></a>atributo ipNetmaskNumber
+# <a name="ipnetmasknumber-attribute"></a>Atributo ipNetmaskNumber
 
-Contiene la máscara de la dirección IP en notación decimal con puntos, omitiendo los ceros a la izquierda.
+Contiene la máscara de red IP en notación decimal de puntos, omitiendo los ceros iniciales.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ipNetmaskNumber                      |
-| Nombre para mostrar de LDAP | ipNetmaskNumber                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | ipNetmaskNumber                      |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.21                     |
-| System-ID-GUID    | 6ff64fcd-462e-4f62-b44a-9a5347659eb9 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 6ff64fcd-462e-4f62-b44a-9a5347659eb9 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -50,20 +50,20 @@ Contiene la máscara de la dirección IP en notación decimal con puntos, omitie
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Clases usadas en        | [**Red IP**](c-ipnetwork.md)<br/> |
+| Clases usadas en        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ Contiene la máscara de la dirección IP en notación decimal con puntos, omitie
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Clases usadas en        | [**Red IP**](c-ipnetwork.md)<br/> |
+| Clases usadas en        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -92,20 +92,20 @@ Contiene la máscara de la dirección IP en notación decimal con puntos, omitie
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Clases usadas en        | [**Red IP**](c-ipnetwork.md)<br/> |
+| Clases usadas en        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -113,24 +113,24 @@ Contiene la máscara de la dirección IP en notación decimal con puntos, omitie
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Clases usadas en        | [**Red IP**](c-ipnetwork.md)<br/> |
+| Clases usadas en        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

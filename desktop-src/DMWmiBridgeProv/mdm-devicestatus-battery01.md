@@ -1,9 +1,9 @@
 ---
-title: MDM_DeviceStatus_Battery01 (clase)
-description: '\_ \_ La empresa usa la clase Battery01 de DEVICESTATUS de MDM para consultar el estado de cumplimiento de la batería de los dispositivos con sus directivas de empresa.'
+title: MDM_DeviceStatus_Battery01 clase
+description: La empresa usa la clase DeviceStatus Battery01 de MDM para consultar el estado de cumplimiento de la batería de los dispositivos \_ \_ con sus directivas empresariales.
 ms.assetid: f4e92e2a-e267-467a-9905-2539dcaf8d8c
 keywords:
-- MDM_DeviceStatus_Battery01 (clase)
+- MDM_DeviceStatus_Battery01 clase
 - MDM_DeviceStatus_Battery01 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64b89cd709c4d0d3d5ad3490114bc82d36aa4ef0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51c637ce68aba89de1d43cf967fbfff3a80d07842dbb268c3f93df641a924f9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119216405"
 ---
-# <a name="mdm_devicestatus_battery01-class"></a>\_Clase Battery01 DeviceStatus de MDM \_
+# <a name="mdm_devicestatus_battery01-class"></a>Clase \_ DeviceStatus \_ Battery01 de MDM
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
 
-La empresa usa la clase **\_ \_ Battery01 de DeviceStatus de MDM** para consultar el estado de cumplimiento de la batería de los dispositivos con sus directivas de empresa.
+La empresa usa la clase **\_ \_ DeviceStatus Battery01** de MDM para consultar el estado de cumplimiento de la batería de los dispositivos con sus directivas empresariales.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -48,13 +48,13 @@ class MDM_DeviceStatus_Battery01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Battery01 de MDM DeviceStatus** tiene estos tipos de miembros:
+La **clase \_ DeviceStatus \_ Battery01 de MDM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Battery01 de MDM DeviceStatus** tiene estas propiedades.
+La **clase \_ DeviceStatus \_ Battery01 de MDM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -64,7 +64,7 @@ La **clase \_ \_ Battery01 de MDM DeviceStatus** tiene estas propiedades.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -75,7 +75,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -118,7 +118,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -129,10 +129,10 @@ Tipo de acceso: lectura/escritura
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_COLUMNCREATE. szColumnName'
-title: Propiedad JET_COLUMNCREATE. szColumnName
+description: 'Más información sobre: JET_COLUMNCREATE.szColumnName'
+title: JET_COLUMNCREATE.szColumnName, propiedad
 TOCTitle: 'szColumnName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE.szColumnName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columncreate.szcolumnname(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d9921caa0c145224293eb4c2b3ce68f49b80592e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fab402ca99e5cdbf305fcfea95a22f9921390870ee37d4d020d27a53b61f1377
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359805"
 ---
-# <a name="jet_columncreateszcolumnname-property"></a>Propiedad JET_COLUMNCREATE. szColumnName
+# <a name="jet_columncreateszcolumnname-property"></a>JET_COLUMNCREATE.szColumnName, propiedad
 
 Obtiene o establece el nombre de la columna que se va a crear.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public string szColumnName { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNCREATE (clase)](./jet-columncreate-class.md)
+[JET_COLUMNCREATE clase](./jet-columncreate-class.md)
 
-[Miembros de JET_COLUMNCREATE](./jet-columncreate-members.md)
+[JET_COLUMNCREATE miembros](./jet-columncreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

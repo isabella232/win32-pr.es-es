@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSoftRecoveryOnBackupDatabaseException'
-title: Constructor de EsentSoftRecoveryOnBackupDatabaseException
+description: 'Más información sobre: Constructor EsentSoftRecoveryOnBackupDatabaseException'
+title: Constructor EsentSoftRecoveryOnBackupDatabaseException
 TOCTitle: 'EsentSoftRecoveryOnBackupDatabaseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSoftRecoveryOnBackupDatabaseException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsoftrecoveryonbackupdatabaseexception.esentsoftrecoveryonbackupdatabaseexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ed9adac13ca1280cb3ffbba7c3a7ba6b0fa1dfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb95ef79ea13b2fc66d88c0c29318e63c5be1291556591eb38d9715548c3f1db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118771024"
 ---
-# <a name="esentsoftrecoveryonbackupdatabaseexception-constructor"></a>Constructor de EsentSoftRecoveryOnBackupDatabaseException
+# <a name="esentsoftrecoveryonbackupdatabaseexception-constructor"></a>Constructor EsentSoftRecoveryOnBackupDatabaseException
 
 Inicializa una nueva instancia de la clase EsentSoftRecoveryOnBackupDatabaseException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSoftRecoveryOnBackupDatabaseException()
 public EsentSoftRecoveryOnBackupDatabaseException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSoftRecoveryOnBackupDatabaseException()
 
 [Miembros de EsentSoftRecoveryOnBackupDatabaseException](./esentsoftrecoveryonbackupdatabaseexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

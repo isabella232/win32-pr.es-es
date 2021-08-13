@@ -1,11 +1,11 @@
 ---
-title: Atributo FRS-Update-timeout
-description: El tiempo máximo, en minutos, que se esperará para completar una actualización antes de abandonarla.
+title: Atributo FRS-Update-Timeout
+description: El tiempo máximo, en minutos, para esperar a completar una actualización antes de desa entregarse.
 ms.assetid: 0c06510e-d4a8-42f8-bf81-13a9f103e237
 ms.tgt_platform: multiple
 keywords:
-- El esquema de AD del atributo FRS-Update-timeout
-- fRSUpdateTimeout esquema de AD de atributos
+- Esquema de AD del atributo FRS-Update-Timeout
+- Esquema de AD del atributo fRSUpdateTimeout
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73730ec18942f98c07c0a4756bb8c7716e6abfd2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 711177ae5c676e2a18bd89af772827a52dd475ec3831e11df71ba25c63fbc4c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323375"
 ---
-# <a name="frs-update-timeout-attribute"></a>Atributo FRS-Update-timeout
+# <a name="frs-update-timeout-attribute"></a>Atributo FRS-Update-Timeout
 
-El tiempo máximo, en minutos, que se esperará para completar una actualización antes de abandonarla.
+El tiempo máximo, en minutos, para esperar a completar una actualización antes de desa entregarse.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | FRS-Update-timeout                   |
-| Nombre para mostrar de LDAP | fRSUpdateTimeout                     |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | FRS-Update-Timeout                   |
+| Ldap-Display-Name | fRSUpdateTimeout                     |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.485               |
-| System-ID-GUID    | 1be8f172-a9ff-11d0-afe2-00c04fd930c9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 1be8f172-a9ff-11d0-afe2-00c04fd930c9 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,20 +53,20 @@ El tiempo máximo, en minutos, que se esperará para completar una actualizació
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El tiempo máximo, en minutos, que se esperará para completar una actualizació
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El tiempo máximo, en minutos, que se esperará para completar una actualizació
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El tiempo máximo, en minutos, que se esperará para completar una actualizació
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El tiempo máximo, en minutos, que se esperará para completar una actualizació
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El tiempo máximo, en minutos, que se esperará para completar una actualizació
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

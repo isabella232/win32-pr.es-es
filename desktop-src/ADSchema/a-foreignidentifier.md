@@ -1,11 +1,11 @@
 ---
-title: Foreign-Identifier atributo)
-description: Propiedades de seguridad usadas por un sistema externo.
+title: Foreign-Identifier atributo
+description: Propiedades de seguridad utilizadas por un sistema externo.
 ms.assetid: f39deb69-2e3b-4494-88f0-050ad90242a5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Foreign-Identifier
-- foreignIdentifier esquema de AD de atributos
+- Foreign-Identifier esquema de AD de atributo
+- Esquema de AD del atributo foreignIdentifier
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8feed48410e1bfbd09d0926e2a16a0fb7f94235b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f6c2c73beda34f02594bc8de770efb672772221839fe567f07651c2c42170abc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119306915"
 ---
-# <a name="foreign-identifier-attribute"></a>Foreign-Identifier atributo)
+# <a name="foreign-identifier-attribute"></a>Foreign-Identifier atributo
 
-Propiedades de seguridad usadas por un sistema externo.
+Propiedades de seguridad utilizadas por un sistema externo.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Foreign-Identifier                                    |
-| Nombre para mostrar de LDAP | foreignIdentifier                                     |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | foreignIdentifier                                     |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.356                                |
-| System-ID-GUID    | 3e97891e-8c01-11d0-afda-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 3e97891e-8c01-11d0-afda-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Propiedades de seguridad usadas por un sistema externo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | False                                                                       |
-| Tiene un único valor       | True                                                                        |
+| Es de un solo valor       | True                                                                        |
 | Está indexado             | False                                                                       |
 | En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
@@ -76,13 +76,13 @@ Propiedades de seguridad usadas por un sistema externo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | False                                                                       |
-| Tiene un único valor       | True                                                                        |
+| Es de un solo valor       | True                                                                        |
 | Está indexado             | False                                                                       |
 | En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
@@ -97,13 +97,13 @@ Propiedades de seguridad usadas por un sistema externo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | False                                                                       |
-| Tiene un único valor       | True                                                                        |
+| Es de un solo valor       | True                                                                        |
 | Está indexado             | False                                                                       |
 | En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
@@ -118,13 +118,13 @@ Propiedades de seguridad usadas por un sistema externo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | False                                                                       |
-| Tiene un único valor       | True                                                                        |
+| Es de un solo valor       | True                                                                        |
 | Está indexado             | False                                                                       |
 | En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
@@ -139,13 +139,13 @@ Propiedades de seguridad usadas por un sistema externo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | False                                                                       |
-| Tiene un único valor       | True                                                                        |
+| Es de un solo valor       | True                                                                        |
 | Está indexado             | False                                                                       |
 | En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
@@ -160,13 +160,13 @@ Propiedades de seguridad usadas por un sistema externo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | False                                                                       |
-| Tiene un único valor       | True                                                                        |
+| Es de un solo valor       | True                                                                        |
 | Está indexado             | False                                                                       |
 | En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |

@@ -1,11 +1,11 @@
 ---
-title: GPC-Machine-Extension-names (atributo)
-description: Lo usa el objeto directiva de grupo para las directivas de equipo.
+title: Atributo GPC-Machine-Extension-Names
+description: Usado por el objeto directiva de grupo para las directivas de equipo.
 ms.assetid: a5e00bf6-d311-4ccd-a2cf-4f7506fec419
 ms.tgt_platform: multiple
 keywords:
-- GPC-Machine-Extension-names atributo AD Schema
-- gPCMachineExtensionNames esquema de AD de atributos
+- Esquema de AD del atributo GPC-Machine-Extension-Names
+- Esquema de AD del atributo gPCMachineExtensionNames
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc9d9c1ce435a017bfefe88d728004f619e193f9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8eb23a805131f5ed3d87aae4a55f470fd302fe9d47ffcb1a1d17e41e748987fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119305605"
 ---
-# <a name="gpc-machine-extension-names-attribute"></a>GPC-Machine-Extension-names (atributo)
+# <a name="gpc-machine-extension-names-attribute"></a>Atributo GPC-Machine-Extension-Names
 
-Lo usa el objeto directiva de grupo para las directivas de equipo.
+Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | GPC-Machine-Extension-names                                                     |
-| Nombre para mostrar de LDAP | gPCMachineExtensionNames                                                        |
-| Tamaño              | Depende del número de extensiones del lado cliente que tienen una directiva en este GPO. |
-| Actualizar privilegio  | Administrador de dominio o de directivas.                                                 |
-| Frecuencia de actualización  | Cada vez que se actualiza un GPO a través de GPE.                                      |
+| CN                | GPC-Machine-Extension-Names                                                     |
+| Ldap-Display-Name | gPCMachineExtensionNames                                                        |
+| Size              | Depende del número de extensiones del lado cliente que tienen una directiva en este GPO. |
+| Actualizar privilegios  | Administrador de dominio o directiva.                                                 |
+| Frecuencia de actualización  | Cada vez que se actualiza un GPO a través del GPE.                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1348                                                         |
-| System-ID-GUID    | 32ff8ecc-783f-11d2-9916-0000f87a57d4                                            |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                     |
+| System-Id-Guid    | 32ff8ecc-783f-11d2-9916-0000f87a57d4                                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
 
@@ -53,20 +53,20 @@ Lo usa el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Lo usa el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Lo usa el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Lo usa el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Lo usa el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Lo usa el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

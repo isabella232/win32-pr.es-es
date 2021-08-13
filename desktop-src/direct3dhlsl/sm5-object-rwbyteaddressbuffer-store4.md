@@ -1,9 +1,9 @@
 ---
-title: 'RWByteAddressBuffer:: Store4 (función)'
+title: Función RWByteAddressBuffer::Store4
 description: Establece cuatro valores.
 ms.assetid: 261dd270-79a7-4566-9fbd-52bd8dc3e1bf
 keywords:
-- Store4 de función HLSL
+- Función HlSL de Store4
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 219cd04e4f68ad6f0d16d964e6685c558fed98b1
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: bc644647616f6c6654023be23aaa8e420dbb85ad439547d1befd44c0ea7b210c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104419791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118789976"
 ---
-# <a name="store4-function"></a>Store4 función)
+# <a name="store4-function"></a>Función Store4
 
 Establece cuatro valores.
 
@@ -28,8 +28,8 @@ Establece cuatro valores.
 
 ``` syntax
 void Store4(
-  in uint address,
-  in uint4 values
+  in uint address,
+  in uint4 values
 );
 ```
 
@@ -37,7 +37,7 @@ void Store4(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Dirección de entrada en bytes, que debe ser un múltiplo de 4.
 
 </dd> <dt>
 
-*valores* \[ de de\]
+*valores* \[ En\]
 </dt> <dd>
 
 Tipo: **uint4**
@@ -61,17 +61,17 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -80,12 +80,12 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

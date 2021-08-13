@@ -1,9 +1,9 @@
 ---
 title: Métodos ID2D1RenderTarget CreateBitmapFromWicBitmap
-description: Crea un ID2D1Bitmap copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.
+description: Crea un objeto ID2D1Bitmap copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.
 ms.assetid: 463fc2f9-8ec6-47e8-8d48-a9015616e656
 keywords:
-- Métodos de CreateBitmapFromWicBitmap Direct2D
+- Métodos de CreateBitmapFromWicBitmap direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 23ad055beab9f24c39f032a3e28456c231480c68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d023db69afdc3cc69535d310cb21fb841c2f1bbe981df98e0aaa22074a46db0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119304347"
 ---
-# <a name="id2d1rendertargetcreatebitmapfromwicbitmap-methods"></a>ID2D1RenderTarget:: CreateBitmapFromWicBitmap (métodos)
+# <a name="id2d1rendertargetcreatebitmapfromwicbitmap-methods"></a>Métodos ID2D1RenderTarget::CreateBitmapFromWicBitmap
 
-Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.
+Crea un [**objeto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -30,19 +30,19 @@ Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando 
 
 | Método                                                                                                                                                                                                              | Descripción                                                                                                                         |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateBitmapFromWicBitmap (IWICBitmapSource \* , ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_id2d1bitmap))                                                       | Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.<br/>  |
-| [**CreateBitmapFromWicBitmap (IWICBitmapSource \* , propiedades de mapa de bits de D2D1 \_ \_&, ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1__id2d1bitmap1))  | Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.<br/> |
-| [**CreateBitmapFromWicBitmap (propiedades de mapa de bits de IWICBitmapSource \* , D2D1 \_ \_ \* , ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties_id2d1bitmap)) | Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.<br/> |
+| [**CreateBitmapFromWicBitmap(IWICBitmapSource \* ,ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_id2d1bitmap))                                                       | Crea un [**objeto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.<br/>  |
+| [**CreateBitmapFromWicBitmap(IWICBitmapSource \* ,D2D1 \_ BITMAP PROPERTIES \_&,ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1__id2d1bitmap1))  | Crea un [**objeto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.<br/> |
+| [**CreateBitmapFromWicBitmap(IWICBitmapSource \* ,D2D1 \_ BITMAP PROPERTIES \_ \* ,ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties_id2d1bitmap)) | Crea un [**objeto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando el mapa de bits de Microsoft Windows Imaging Component (WIC) especificado.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de que Direct2D pueda cargar una imagen de WIC, debe convertirse a un formato de píxel compatible y al modo alfa. Para obtener una lista de formatos de píxel admitidos y modos alfa, vea [formatos de píxel admitidos y modos alfa](supported-pixel-formats-and-alpha-modes.md).
+Para que Direct2D pueda cargar una imagen wic, se debe convertir a un formato de píxeles compatible y al modo alfa. Para obtener una lista de los formatos de píxel admitidos y los modos alfa, vea [Formatos de píxeles admitidos y Modos alfa.](supported-pixel-formats-and-alpha-modes.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos, vea [Cómo cargar un mapa de bits desde un archivo](how-to-load-a-direct2d-bitmap-from-a-file.md) y [Cómo cargar un mapa de bits desde un recurso](how-to-load-a-bitmap-from-a-resource.md).
+Para obtener ejemplos, vea How to Load a Bitmap from a File (Cómo cargar un mapa de [bits desde un archivo)](how-to-load-a-direct2d-bitmap-from-a-file.md) [y How to Load a Bitmap from a Resource (Cómo cargar](how-to-load-a-bitmap-from-a-resource.md)un mapa de bits desde un recurso).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Para obtener ejemplos, vea [Cómo cargar un mapa de bits desde un archivo](how-t
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

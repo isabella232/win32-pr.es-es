@@ -1,7 +1,7 @@
 ---
-description: 'El método SKIP omite un número especificado de PIN en la secuencia de enumeración. Este método implementa el método IEnumPins:: SKIP.'
+description: El método Skip omite un número especificado de pines en la secuencia de enumeración. Este método implementa el método IEnumPins::Skip.
 ms.assetid: d42f958c-f488-4730-ab84-fc4e4150b186
-title: CEnumPins. SKIP (método) (Amfilter. h)
+title: Método CEnumPins.Skip (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1865453a89130303f28f338d8b7567e856c64173
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02a499c38564fba4671e5c6dbf53bc59dcf9a1acd925f9cef4d558456b675efd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119389645"
 ---
-# <a name="cenumpinsskip-method"></a>CEnumPins. SKIP (método)
+# <a name="cenumpinsskip-method"></a>CEnumPins.Skip (método)
 
-El `Skip` método omite un número especificado de PIN en la secuencia de enumeración. Este método implementa el método [**IEnumPins:: Skip**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-skip) .
+El método omite un número especificado de pines en `Skip` la secuencia de enumeración. Este método implementa el [**método IEnumPins::Skip.**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-skip)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ HRESULT Skip(
 *cPins* 
 </dt> <dd>
 
-Número de clavijas que se van a omitir.
+Número de pines que se omitirán.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                                | Descripción                                                                            |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>                    | Se omitió más allá del final de la secuencia.<br/>                                       |
-| <dl> <dt>**S \_ correcto**</dt> </dl>                       | Correcto.<br/>                                                                    |
-| <dl> <dt>**\_ \_ enumeración de VFW E no \_ \_ \_ sincronizada**</dt> </dl> | El estado del filtro ha cambiado y ahora es incoherente con el enumerador.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                    | Se omite más allá del final de la secuencia.<br/>                                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Correcto.<br/>                                                                    |
+| <dl> <dt>**VFW \_ E \_ ENUM \_ OUT \_ OF \_ SYNC**</dt> </dl> | El estado del filtro ha cambiado y ahora es incoherente con el enumerador.<br/> |
 
 
 
@@ -71,16 +71,16 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CEnumPins**](cenumpins.md)
+[**CEnumPins (clase)**](cenumpins.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: SV_StencilRef
-description: SV \_ StencilRef representa el valor de referencia de la galería de símbolos del sombreador de píxeles actual.
+description: SV StencilRef representa el valor de referencia de la galería de símbolos del \_ sombreador de píxeles actual.
 ms.assetid: 0E27BF04-9DA0-4D6D-BD50-07553F80590E
 keywords:
 - SV_StencilRef HLSL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2900b2a821a03db4bc749a01c85b909901c39b2
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: d9a671a521b89eb4e4f7000fcb7c647cf7a46cd36937b26f03147dfd076521ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118789332"
 ---
-# <a name="sv_stencilref"></a>\_StencilRef de SV
+# <a name="sv_stencilref"></a>SV \_ StencilRef
 
-SV \_ StencilRef representa el valor de referencia de la galería de símbolos del sombreador de píxeles actual.
+SV StencilRef representa el valor de referencia de la galería de símbolos del \_ sombreador de píxeles actual.
 
 ## <a name="type"></a>Tipo
 
@@ -42,11 +42,11 @@ La especificación del valor de referencia del sombreador en el sombreador de p�
 -   [D3D11.3 Valor de referencia de galería de símbolos especificado](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
 -   [Valor de referencia de galería de símbolos especificado del sombreador D3D12](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> <dt>
 
 [Valores del sistema del modelo de sombreador 5.1](shader-model-5-1-system-values.md)

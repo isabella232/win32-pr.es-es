@@ -1,6 +1,6 @@
 ---
-title: dcl_indexableTemp (SM4-ASM)
-description: DCL \_ indexableTemp (SM4-ASM)
+title: dcl_indexableTemp (sm4 - asm)
+description: dcl \_ indexableTemp (sm4 - asm)
 ms.assetid: 32d8e7ce-4b28-48c3-b794-56ace96394f0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1ec3ef1222cd3bf73b4ea3f9ac6e2c3e706aa18e
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 9f1d6e02b36daef0643910d69404adc0973ebbcf6370ae5f5c11ad2aa7bd3480
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104996988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793451"
 ---
-# <a name="dcl_indexabletemp-sm4---asm"></a>DCL \_ indexableTemp (SM4-ASM)
+# <a name="dcl_indexabletemp-sm4---asm"></a>dcl \_ indexableTemp (sm4 - asm)
 
 Declara un registro temporal indexable.
 
 
 
-| DCL \_ indexableTemp x *N \[ tamaño \] , ComponentCount* |
+| dcl \_ indexableTemp x *N size , \[ \] ComponentCount* |
 |-------------------------------------------------|
 
 
@@ -33,15 +33,15 @@ Declara un registro temporal indexable.
 
 | Elemento                                                                                                                           | Descripción                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <span id="N"></span><span id="n"></span>*N*<br/>                                                                         | \[en \] un entero que denota el número de registro.<br/>                              |
-| <span id="_size_"></span><span id="_SIZE_"></span>*\[ajusta\]*<br/>                                                        | \[en \] un valor entero opcional. El número de elementos de la matriz de registro.<br/>  |
-| <span id="ComponentCount"></span><span id="componentcount"></span><span id="COMPONENTCOUNT"></span>*ComponentCount*<br/> | \[en \] un valor entero opcional. El número de componentes de la matriz de registro.<br/> |
+| <span id="N"></span><span id="n"></span>*N*<br/>                                                                         | \[en \] Un entero que denota el número de registro.<br/>                              |
+| <span id="_size_"></span><span id="_SIZE_"></span>*\[Tamaño\]*<br/>                                                        | \[en \] Un valor entero opcional. Número de elementos de la matriz de registro.<br/>  |
+| <span id="ComponentCount"></span><span id="componentcount"></span><span id="COMPONENTCOUNT"></span>*ComponentCount*<br/> | \[en \] Un valor entero opcional. Número de componentes de la matriz de registro.<br/> |
 
 
 
  
 
-Un registro contiene suficiente espacio para un valor de cuatro componentes de 32 bits; el número de elementos de la matriz de registros temporales (indexables y [no indexables](dcl-temps.md)) no puede superar 4096.
+Un registro contiene suficiente espacio para un valor de cuatro componentes de 32 bits; el número de elementos de la matriz de registros temporales (indexables y no [indexables)](dcl-temps.md)no puede superar 4096.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -55,7 +55,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar en la depuración de un sombreador en el ensamblado. no se puede crear un sombreador en lenguaje de ensamblado con el modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -69,7 +69,7 @@ dcl_indexableTemp x1[16], 4 ; // An indexable array of 16, 4-component, 32-bit e
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -77,9 +77,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

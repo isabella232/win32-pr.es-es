@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. MaxSessions (propiedad)'
-title: Propiedad InstanceParameters. MaxSessions
+description: 'Más información sobre: Propiedad InstanceParameters.MaxSessions'
+title: Propiedad InstanceParameters.MaxSessions
 TOCTitle: 'MaxSessions property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.MaxSessions
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.maxsessions(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2294a8de2e3603a638607efad5baaa6af6c1ec17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c2a25c117dfc60c7494ac532e178410b63260aa76aca7448ad07289347fffac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767886"
 ---
-# <a name="instanceparametersmaxsessions-property"></a>Propiedad InstanceParameters. MaxSessions
+# <a name="instanceparametersmaxsessions-property"></a>Propiedad InstanceParameters.MaxSessions
 
-Obtiene o establece el número de recursos de sesión reservados para esta instancia. Un recurso de sesión se corresponde directamente con un JET_SESID.
+Obtiene o establece el número de recursos de sesiones reservados para esta instancia. Un recurso de sesión corresponde directamente a un JET_SESID.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ public int MaxSessions { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,33 +1,33 @@
 ---
-description: La hora aproximada a la que la sesión multimedia generó un evento.
+description: Hora aproximada a la que la sesión multimedia ha producido un evento.
 ms.assetid: 58083bc8-59cc-4503-8fae-36fcd864921a
-title: MF_SESSION_APPROX_EVENT_OCCURRENCE_TIME atributo (mfapi. h)
+title: MF_SESSION_APPROX_EVENT_OCCURRENCE_TIME atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a31b1970c2c9d86384c12c50777a8cee55e3ffd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce6cbaa7d12cebe14b015c4d568b36b081930ef4b302797dba76fc728e92cf01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740032"
 ---
-# <a name="mf_session_approx_event_occurrence_time-attribute"></a>\_Atributo de \_ \_ tiempo de \_ repetición de evento \_ de sesión MF aprox.
+# <a name="mf_session_approx_event_occurrence_time-attribute"></a>Atributo MF \_ SESSION APPROX EVENT OCCURRENCE \_ \_ \_ \_ TIME
 
-La hora aproximada a la que la sesión multimedia generó un evento.
+Hora aproximada a la que la sesión multimedia ha producido un evento.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT64**
 
-Trata como un valor de **LONGLONG** .
+Tratar como **un valor LONGLONG.**
 
 ## <a name="remarks"></a>Observaciones
 
-Algunos eventos de la sesión multimedia tienen este atributo. El valor proporciona el tiempo de presentación aproximado en que se produjo el evento.
+Algunos eventos de la sesión multimedia tienen este atributo. El valor proporciona el tiempo aproximado de presentación en el que se ha producido el evento.
 
-Este atributo es un valor con signo, aunque se almacena como **UINT64**.
+Este atributo es un valor con firma, aunque se almacena como **UINT64**.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de eventos](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**ATTRIBUTEAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**ATTRIBUTEAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

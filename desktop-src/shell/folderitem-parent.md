@@ -1,7 +1,7 @@
 ---
 description: Obtiene un objeto que representa el elemento primario del elemento.
 ms.assetid: 612e76d8-d8bc-419c-b319-75b1f324840a
-title: Propiedad carpeta. Parent (Shldisp. h)
+title: Propiedad FolderItem.Parent (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f2da3504596c3b351318b33c929dad3b5a958165
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d58a34d4018588d5f0dfd2bfac9cb118677045e7693532008361062bcdc596b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458796"
 ---
-# <a name="folderitemparent-property"></a>Carpeta. Parent (propiedad)
+# <a name="folderitemparent-property"></a>Propiedad FolderItem.Parent
 
 Obtiene un objeto que representa el elemento primario del elemento.
 
@@ -41,9 +41,9 @@ Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) qu
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de los **elementos primarios** para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de **Parent** para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -76,7 +76,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -151,11 +151,11 @@ Visual Basic:
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

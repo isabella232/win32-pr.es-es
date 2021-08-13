@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentException (SerializationInfo, StreamingContext)'
-title: Constructor EsentException (SerializationInfo, StreamingContext) (Microsoft. ISAM. esent)
+description: 'Más información sobre: Constructor esentException (SerializationInfo, StreamingContext)'
+title: Constructor EsentException (SerializationInfo, StreamingContext) (Microsoft.Isam.Esent)
 TOCTitle: EsentException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.EsentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception.esentexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1bdcfe5c3b37746f50926850b45763f9d70de893
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f190f4a77d13cb4bc1e8a123dd1ec0f0b07498f2821a07d93a00372ecfaf32cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118778997"
 ---
-# <a name="esentexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentException (SerializationInfo, StreamingContext)
+# <a name="esentexception-constructor-serializationinfo-streamingcontext"></a>EsentException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent](./microsoft.isam.esent-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ protected EsentException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
@@ -78,6 +78,6 @@ protected EsentException(
 
 [Miembros de EsentException](./esentexception-members.md)
 
-[Sobrecarga EsentException](./esentexception-constructor.md)
+[Sobrecarga de EsentException](./esentexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent](./microsoft.isam.esent-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)

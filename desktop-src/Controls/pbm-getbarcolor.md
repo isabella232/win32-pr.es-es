@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PBM_GETBARCOLOR (commctrl. h)
+title: PBM_GETBARCOLOR mensaje (Commctrl.h)
 description: Obtiene el color de la barra de progreso.
 ms.assetid: d046f7e4-e21e-4dd9-a7be-2bf820c3c492
 keywords:
-- PBM_GETBARCOLOR controles de mensajes de Windows
+- PBM_GETBARCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35586d3483d1d487f740a1a3d991c884c814f452
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb42d878840ad05f0854ec7ca9cb50dc1b3be2a55b3b65ddf652d961b6d818b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119312445"
 ---
-# <a name="pbm_getbarcolor-message"></a>Mensaje de GETBARCOLOR de PBM \_
+# <a name="pbm_getbarcolor-message"></a>Mensaje \_ GETBARCOLOR de PBM
 
 Obtiene el color de la barra de progreso.
 
@@ -39,11 +39,11 @@ Obtiene el color de la barra de progreso.
 
 Devuelve el color de la barra de progreso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es el color establecido por el mensaje de [**\_ SETBARCOLOR de PBM**](pbm-setbarcolor.md) . El valor predeterminado es CLR \_ predeterminado, que se define en commctrl. h.
+Este es el color establecido por el [**mensaje \_ SETBARCOLOR de PBM.**](pbm-setbarcolor.md) El valor predeterminado es CLR \_ DEFAULT, que se define en commctrl.h.
 
-Esta función solo afecta al modo clásico, no a cualquier estilo visual.
+Esta función solo afecta al modo clásico, no a ningún estilo visual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Esta función solo afecta al modo clásico, no a cualquier estilo visual.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

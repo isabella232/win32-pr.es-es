@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCube:: TextureCube GatherCmpGreen'
-description: 'Muestras y comparan una textura y devuelven el componente verde. | Métodos TextureCube:: TextureCube GatherCmpGreen'
+title: Métodos TextureCube::TextureCube GatherCmpGreen
+description: Muestrea y compara una textura y devuelve el componente verde. | Métodos TextureCube::TextureCube GatherCmpGreen
 ms.assetid: 1F447F9C-24DF-4588-9830-0BE3272CB7BF
 keywords:
-- GatherCmpGreen métodos HLSL
+- Métodos de GatherCmpGreen HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 1b079110bc52787956e9d2e58259c9fa4e60de35
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4ce606c4f0979738ba6859c6e6780ebd7ea479d56ae14d0e916e11bd16bfeed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786517"
 ---
-# <a name="texturecubegathercmpgreen-methods"></a>TextureCube:: GatherCmpGreen (métodos)
+# <a name="texturecubegathercmpgreen-methods"></a>Métodos TextureCube::GatherCmpGreen
 
-Muestras y comparan una textura y devuelven el componente verde.
+Muestrea y compara una textura y devuelve el componente verde.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,7 +29,7 @@ Muestras y comparan una textura y devuelven el componente verde.
 
 | Método                                                                                 | Descripción                                                                                                      |
 |:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpGreen (S, Float, Float, uint)**](tcube-gathercmpgreen-s-float-float-uint-.md) | Muestras y comparan una textura y devuelven el componente verde junto con el estado de la operación.<br/> |
+| [**GatherCmpGreen(S,float,float,uint)**](tcube-gathercmpgreen-s-float-float-uint-.md) | Muestrea y compara una textura y devuelve el componente verde junto con el estado de la operación.<br/> |
 
 
 

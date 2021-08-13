@@ -1,19 +1,19 @@
 ---
-description: En esta sección se describen los GUID que usan las API de audio principales.
+description: En esta sección se describen los GUID que usan las API core audio.
 ms.assetid: 617FB991-D73C-452F-9FBB-2480C1CEE2B5
-title: GUID de audio principales
+title: GUID de audio principal
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6933cc8786cd7a4dbd0d4b5d2388113a31a790ab
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ef1e740301d7faccaae212578d4e54c200029886d6733a25c807f1517621b14d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119311215"
 ---
-# <a name="core-audio-guids"></a>GUID de audio principales
+# <a name="core-audio-guids"></a>GUID de audio principal
 
-En esta sección se describen los GUID que usan las API de audio principales.
+En esta sección se describen los GUID que usan las API core audio.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,7 +21,7 @@ En esta sección se describen los GUID que usan las API de audio principales.
 
 | Tema                                                                | Descripción                                                                                   |
 |----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**GUID de DEVINTERFACE \_ XXX**](devinterface-xxx-guids.md)<br/> | Los \_ GUID de DEVINTERFACE xxx se usan para representar los GUID de las interfaces de dispositivo.<br/> |
+| [**GUID XXX de DEVINTERFACE \_**](devinterface-xxx-guids.md)<br/> | Los GUID XXX de DEVINTERFACE \_ se usan para representar los GUID de las interfaces de dispositivo.<br/> |
 
 
 

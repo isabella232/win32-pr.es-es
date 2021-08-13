@@ -1,10 +1,10 @@
 ---
-title: atributo jpegPhoto
-description: Se usa para almacenar una o más imágenes de una persona mediante el formato de intercambio de archivos JPEG \ JFIF \.
+title: Atributo jpegPhoto
+description: Se usa para almacenar una o varias imágenes de una persona mediante el formato de intercambio de archivos JPEG \ JFIF\.
 ms.assetid: c9257acd-366c-4839-a8c6-0ef9d6b7e671
 ms.tgt_platform: multiple
 keywords:
-- jpegPhoto esquema de AD de atributos
+- Esquema de AD del atributo jpegPhoto
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc8f7a9eb8ec1cee8d7ebede5d0e00dbe52e8b9b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ec57defb8bea779b43e27e5bd63cc03c68976b7a192e1f96d0faa5393ee93e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119303914"
 ---
-# <a name="jpegphoto-attribute"></a>atributo jpegPhoto
+# <a name="jpegphoto-attribute"></a>Atributo jpegPhoto
 
-Se utiliza para almacenar una o varias imágenes de una persona mediante el formato de intercambio de archivos JPEG \[ JFIF \] .
+Se usa para almacenar una o varias imágenes de una persona mediante el formato de intercambio de archivos \[ JPEG JFIF \] .
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | jpegPhoto                                             |
-| Nombre para mostrar de LDAP | jpegPhoto                                             |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | jpegPhoto                                             |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 0.9.2342.19200300.100.1.60                            |
-| System-ID-GUID    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,18 +53,18 @@ Se utiliza para almacenar una o varias imágenes de una persona mediante el form
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
+| Es de un solo valor       | False                                                                                 |
 | Está indexado             | False                                                                                 |
 | En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Se utiliza para almacenar una o varias imágenes de una persona mediante el form
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
+| Es de un solo valor       | False                                                                                 |
 | Está indexado             | False                                                                                 |
 | En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Se utiliza para almacenar una o varias imágenes de una persona mediante el form
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
+| Es de un solo valor       | False                                                                                 |
 | Está indexado             | False                                                                                 |
 | En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ Se utiliza para almacenar una o varias imágenes de una persona mediante el form
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
+| Es de un solo valor       | False                                                                                 |
 | Está indexado             | False                                                                                 |
 | En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,13 +137,13 @@ Se utiliza para almacenar una o varias imágenes de una persona mediante el form
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
+| Es de un solo valor       | False                                                                                 |
 | Está indexado             | False                                                                                 |
 | En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |

@@ -1,26 +1,26 @@
 ---
-title: Propiedad GrabFocusOnConnect de IMsRdpClientAdvancedSettings
-description: Especifica si el control de cliente debe tener el foco mientras se conecta.
+title: IMsRdpClientAdvancedSettings GrabFocusOnConnect, propiedad
+description: Especifica si el control de cliente debe tener el foco durante la conexión.
 ms.assetid: c67fc284-6e07-4749-84bf-70c0ae4d1b2b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad GrabFocusOnConnect
-- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
+- Propiedad GrabFocusOnConnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad GrabFocusOnConnect
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e7fb04c00bd7aaaf4de1252d961206ffee0e6b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e759dd6bbd297dcd13eb9885b228f1a8257c293c099eaba3a6a8f1cf46c2a3f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475475"
 ---
-# <a name="imsrdpclientadvancedsettingsgrabfocusonconnect-property"></a>IMsRdpClientAdvancedSettings:: GrabFocusOnConnect (propiedad)
+# <a name="imsrdpclientadvancedsettingsgrabfocusonconnect-property"></a>IMsRdpClientAdvancedSettings::GrabFocusOnConnect, propiedad
 
-Especifica si el control de cliente debe tener el foco mientras se conecta. El control no intentará captar el foco de una ventana que se ejecuta en un proceso diferente.
+Especifica si el control de cliente debe tener el foco durante la conexión. El control no intentará obtener el foco de una ventana que se ejecuta en un proceso diferente.
 
 Esta propiedad es de lectura y escritura.
 
@@ -84,15 +84,15 @@ HRESULT get_GrabFocusOnConnect(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **Variant \_ false** para deshabilitar la característica o la **variante \_ true** para habilitar la característica. Al establecer esta propiedad en **Variant \_ false** , se impide que el control capte el foco al conectarse.
+Establezca este parámetro en **VARIANT \_ FALSE para** deshabilitar la característica o VARIANT **\_ TRUE** para habilitar la característica. Al establecer esta propiedad en **VARIANT \_ FALSE,** se evita que el control acapara el foco al conectarse.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

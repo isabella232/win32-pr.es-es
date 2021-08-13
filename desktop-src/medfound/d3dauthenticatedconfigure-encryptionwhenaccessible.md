@@ -1,7 +1,7 @@
 ---
 description: Establece el nivel de cifrado que se realiza antes de que el contenido protegido sea accesible para la CPU o el bus.
 ms.assetid: 6de6c4a3-705a-4420-b9f4-8d4d442b23bf
-title: D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESSIBLE (D3d9types. h)
+title: D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESSIBLE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 8b624c26c81549372e0e09b4a08ce73f6cd3dd27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f785931cf70ae48082cb45c436dd1c50b7c329fef61619738a3ef0a08240d7b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742652"
 ---
 # <a name="d3dauthenticatedconfigure_encryptionwhenaccessible"></a>D3DAUTHENTICATEDCONFIGURE \_ ENCRYPTIONWHENACCESSIBLE
 
@@ -39,8 +39,8 @@ Establece el nivel de cifrado que se realiza antes de que el contenido protegido
 
 Los siguientes tipos de canal admiten esta consulta:
 
--   **\_Hardware del controlador D3DAUTHENTICATEDCHANNEL \_**
--   **\_Software de controlador D3DAUTHENTICATEDCHANNEL \_**
+-   **HARDWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
+-   **SOFTWARE DE CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,9 +48,9 @@ Los siguientes tipos de canal admiten esta consulta:
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
+| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -61,10 +61,10 @@ Los siguientes tipos de canal admiten esta consulta:
 [Content Protection comandos](content-protection-commands.md)
 </dt> <dt>
 
-[Content Protection basados en GPU](gpu-based-content-protection.md)
+[Datos basados en GPU Content Protection](gpu-based-content-protection.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
+[**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
 </dt> </dl>
 
  

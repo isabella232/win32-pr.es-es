@@ -1,7 +1,7 @@
 ---
 description: Crea una nueva malla y la rellena con los datos de una malla cargada previamente.
 ms.assetid: 2ce39982-abc0-444b-bc6f-24508f76fe31
-title: 'ID3DX10Mesh:: CloneMesh (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::CloneMesh (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0f007475ea9f6aeaa6dc0c01bbd721c4a5103adf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 292522e47dbaf6937d871209006134e866e92fdeb27f6edba4f4f71f6d1fad14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119409135"
 ---
-# <a name="id3dx10meshclonemesh-method"></a>ID3DX10Mesh:: CloneMesh (método)
+# <a name="id3dx10meshclonemesh-method"></a>Método ID3DX10Mesh::CloneMesh
 
 Crea una nueva malla y la rellena con los datos de una malla cargada previamente.
 
@@ -44,48 +44,48 @@ HRESULT CloneMesh(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Marcas de creación que se van a aplicar a la nueva malla. Consulte [**D3DX10 \_ Mesh**](d3dx10-mesh.md).
+Marcas de creación que se aplicarán a la nueva malla. Vea [**D3DX10 \_ MESH**](d3dx10-mesh.md).
 
 </dd> <dt>
 
-*pPosSemantic* \[ de\]
+*pPosSemantic* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre semántico para los datos de la posición.
+Nombre semántico de los datos de posición.
 
 </dd> <dt>
 
-*pDesc* \[ de\]
+*pDesc* \[ En\]
 </dt> <dd>
 
-Tipo: **\* const [**D3D10 \_ \_ \_ DESC del elemento de entrada**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)**
+Tipo: **const [**D3D10 \_ INPUT ELEMENT \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) \***
 
-Matriz de \_ estructuras de Desc del elemento de entrada D3D10 \_ \_ , que describe el formato de vértice de la malla devuelta. Vea [**\_ Descripción del \_ elemento \_ de entrada D3D10**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc).
+Matriz de estructuras D3D10 \_ INPUT \_ ELEMENT \_ DESC, que describen el formato de vértice de la malla devuelta. Vea [**D3D10 \_ INPUT ELEMENT \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc).
 
 </dd> <dt>
 
-*DeclCount* \[ de\]
+*DeclCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de elementos de la matriz pDesc.
 
 </dd> <dt>
 
-*ppCloneMesh* \[ enuncia\]
+*ppCloneMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10Mesh**](id3dx10mesh.md)\*\***
 
-La nueva malla.
+Nueva malla.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ La nueva malla.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,19 +101,19 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

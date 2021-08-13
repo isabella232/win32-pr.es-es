@@ -1,7 +1,7 @@
 ---
-description: Actualiza el digitalizador de Tablet PC a las coordenadas de asignación de ubicación de la ventana.
+description: Actualiza el digitalizador de tabletas a coordenadas de asignación de ubicación de ventana.
 ms.assetid: 2984b87b-620e-4e5d-a3cc-4c3f4c89bae3
-title: 'ITabletContextP:: TrackInputRect (método)'
+title: ITabletContextP::TrackInputRect (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
-ms.openlocfilehash: 4529263b81933651db35b88262b11e979d39e6f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 400055247583ec0bd2095d5d6f68d8481c69fd6bb4e7f7730344120203655ce2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350575"
 ---
-# <a name="itabletcontextptrackinputrect-method"></a>ITabletContextP:: TrackInputRect (método)
+# <a name="itabletcontextptrackinputrect-method"></a>ITabletContextP::TrackInputRect (método)
 
-Actualiza el digitalizador de Tablet PC a las coordenadas de asignación de ubicación de la ventana.
+Actualiza el digitalizador de tabletas a coordenadas de asignación de ubicación de ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ HRESULT TrackInputRect(
 
 <dl> <dt>
 
-*prcInput* \[ enuncia\]
+*prcInput* \[ out\]
 </dt> <dd>
 
-El nuevo rectángulo de la ventana de entrada después de actualizar la asignación entre las coordenadas de ventana y digitalizador.
+Nuevo rectángulo de ventana de entrada después de actualizar la asignación entre la ventana y las coordenadas del digitalizador.
 
 </dd> </dl>
 
@@ -55,34 +55,34 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método siempre que cambie la ubicación de la ventana en la pantalla.
+Llame a este método cada vez que cambie la ubicación de la ventana en la pantalla.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz ITabletContextP**](itabletcontextp.md)
+[**ITabletContextP (interfaz)**](itabletcontextp.md)
 </dt> </dl>
 
  

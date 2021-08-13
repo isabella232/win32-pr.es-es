@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-TargetType
-description: Referencia WMI a una definición de tipo para un objeto de directiva.
+title: Atributo ms-WMI-TargetType
+description: Referencia wmi a una definición de tipo para un objeto de directiva.
 ms.assetid: 0757d903-37f7-4830-9ba0-a971cf1bda04
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-TargetType
-- msWMI-TargetType Attribute AD Schema
+- Esquema de AD del atributo ms-WMI-TargetType
+- Esquema de AD del atributo msWMI-TargetType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af1bdaa670d68bcb562a894d826c2844756dfdd5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0e899168d1750fafe588130276c3729f692e50df01e525a9c00b9a4e87d13f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326285"
 ---
-# <a name="ms-wmi-targettype-attribute"></a>atributo MS-WMI-TargetType
+# <a name="ms-wmi-targettype-attribute"></a>Atributo ms-WMI-TargetType
 
-Referencia WMI a una definición de tipo para un objeto de directiva.
+Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetType                           |
-| Nombre para mostrar de LDAP | msWMI: TargetType                            |
-| Tamaño              | Menos de 100 caracteres.                   |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-TargetType                           |
+| Ldap-Display-Name | msWMI-TargetType                            |
+| Size              | Menos de 100 caracteres.                   |
+| Privilegio actualizar  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1649                     |
-| System-ID-GUID    | ca2a281e-262b-4ff7-b419-bc123352a4e9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ca2a281e-262b-4ff7-b419-bc123352a4e9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,20 +52,20 @@ Referencia WMI a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Referencia WMI a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Referencia WMI a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Referencia WMI a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Referencia WMI a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 

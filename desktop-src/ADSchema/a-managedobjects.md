@@ -1,11 +1,11 @@
 ---
-title: Managed-Objects atributo)
-description: Contiene la lista de objetos administrados por el usuario. Los objetos que se muestran son aquellos que tienen la propiedad managedBy de propiedad establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto administrado.
+title: Managed-Objects atributo
+description: Contiene la lista de objetos administrados por el usuario. Los objetos enumerados son aquellos que tienen la propiedad managedBy establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto administrado.
 ms.assetid: 59b76431-03a5-4839-8800-ef03d26b66cc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Managed-Objects
-- managedObjects esquema de AD de atributos
+- Managed-Objects esquema de AD de atributo
+- Esquema de AD del atributo managedObjects
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c7bc489d11c99f8790426a531e09a20f133476
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d78e1d706368a47c9d7761c5410042b7d9227a90dd14a6fcdb4c3777f18bca86
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301255"
 ---
-# <a name="managed-objects-attribute"></a>Managed-Objects atributo)
+# <a name="managed-objects-attribute"></a>Managed-Objects atributo
 
-Contiene la lista de objetos administrados por el usuario. Los objetos que se muestran son aquellos que tienen la propiedad managedBy de propiedad establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto administrado.
+Contiene la lista de objetos administrados por el usuario. Los objetos enumerados son aquellos que tienen la propiedad managedBy establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto administrado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------------------------------------------|
 | CN                | Managed-Objects                                                                    |
-| Nombre para mostrar de LDAP | managedObjects                                                                     |
-| Tamaño              | \-                                                                                 |
-| Actualizar privilegio  | El sistema establece este valor.                                                   |
-| Frecuencia de actualización  | Cuando se crea el registro de usuarios y cada vez que es necesario cambiar los objetos administrados. |
+| Ldap-Display-Name | managedObjects                                                                     |
+| Size              | \-                                                                                 |
+| Actualizar privilegios  | El sistema establece este valor.                                                   |
+| Frecuencia de actualización  | Cuando se crea el registro de usuarios y cada vez que los objetos administrados necesitan cambiar. |
 | Attribute-Id      | 1.2.840.113556.1.4.654                                                             |
-| System-ID-GUID    | 0296c124-40da-11d1-a9c0-0000f80367c1                                               |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)                                            |
+| System-Id-Guid    | 0296c124-40da-11d1-a9c0-0000f80367c1                                               |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)                                            |
 
 
 
@@ -44,7 +44,7 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,15 +75,15 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -117,15 +117,15 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -138,15 +138,15 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -159,15 +159,15 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -180,15 +180,15 @@ Contiene la lista de objetos administrados por el usuario. Los objetos que se mu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 73                              |
+| Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

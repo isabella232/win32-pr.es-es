@@ -4,7 +4,7 @@ description: Dirección web de la reunión.
 ms.assetid: 57784fb9-3983-42f9-9b77-2932af1fca0f
 ms.tgt_platform: multiple
 keywords:
-- meetingURL esquema de AD de atributos
+- Esquema de AD del atributo meetingURL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29f9bc8a30024eb3f04069880ac3cb200308114a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d6b41b4982864deeab39613d8c486d34a608a2479b3968c6dbfd335ba436a753
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300515"
 ---
 # <a name="meetingurl-attribute"></a>atributo meetingURL
 
@@ -26,16 +26,16 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingURL                                                                       |
-| Nombre para mostrar de LDAP | meetingURL                                                                       |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Ldap-Display-Name | meetingURL                                                                       |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Cualquiera puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.583                                                           |
-| System-ID-GUID    | 11b6cc8c-48c4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc8c-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -52,20 +52,20 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -157,20 +157,20 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

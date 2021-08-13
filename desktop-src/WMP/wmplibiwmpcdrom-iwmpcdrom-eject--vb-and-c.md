@@ -1,11 +1,11 @@
 ---
-title: Método EJECT de IWMPCdrom
-description: El método EJECT expulsa el CD o DVD de la unidad. | Método EJECT de IWMPCdrom
+title: Método de expulsión de IWMPCdrom
+description: El método de expulsión expulsa el CD o DVD de la unidad. | Método de expulsión de IWMPCdrom
 ms.assetid: c0a69252-fd79-452c-bc61-3c3e8bcaaf48
 keywords:
-- método EJECT Media Player de Windows
-- método EJECT Media Player de Windows, interfaz IWMPCdrom
-- Interfaz IWMPCdrom Windows Media Player, método EJECT
+- método de Reproductor de Windows Media
+- método de Reproductor de Windows Media , interfaz IWMPCdrom
+- Interfaz IWMPCdrom Reproductor de Windows Media método de expulsión
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b8ca2403b86b648e98861d91a21db80ddb64aac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00dbdf22d8eb0ba4073a1b74c25c0d610f3091477e5921dd0856fa835a9bccc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246765"
 ---
-# <a name="iwmpcdromeject-method"></a>IWMPCdrom:: EJECT (método)
+# <a name="iwmpcdromeject-method"></a>IWMPCdrom::dispose (método)
 
-El método **EJECT** expulsa el CD o DVD de la unidad.
+El **método de** expulsión expulsa el CD o DVD de la unidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,11 +57,11 @@ Este método no devuelve ningún valor.
 
 Si la puerta de la unidad está abierta, este método cierra la puerta.
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **EJECT** para abrir la puerta de la unidad de CD o DVD que tiene el índice de cero en respuesta al evento click de un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa la** expulsión para abrir la puerta de la unidad de CD o DVD que tiene el índice de cero en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -91,7 +91,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -101,16 +101,16 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. playState (VB y C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
+[**AxWindowsMediaPlayer.playState (VB y C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPCdrom (VB y C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

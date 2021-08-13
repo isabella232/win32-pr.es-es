@@ -1,19 +1,19 @@
 ---
-description: Establece el umbral en el que el codificador considera que un campo de vídeo es redundante.
+description: Establece el umbral en el que el codificador considera redundante un campo de vídeo.
 ms.assetid: db6c2f0e-f451-4d2d-984f-b507083e8358
-title: Propiedad AVEncVideoInverseTelecineThreshold (Codecapi. h)
+title: Propiedad AVEncVideoInverseTelevideoThreshold (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3427a8ff1491277c2e36640560acf728c0ef7208
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 297dae601c5112714272a2d1c2e0b1a7ebeee5faa3aa2fabebc32e79c1745c9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275184"
 ---
-# <a name="avencvideoinversetelecinethreshold-property"></a>Propiedad AVEncVideoInverseTelecineThreshold
+# <a name="avencvideoinversetelecinethreshold-property"></a>AvEncVideoInverseTelevideoThreshold, propiedad
 
-Establece el umbral en el que el codificador considera que un campo de vídeo es redundante.
+Establece el umbral en el que el codificador considera redundante un campo de vídeo.
 
 Esta propiedad es de lectura y escritura.
 
@@ -23,18 +23,18 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-guid"></a>GUID de propiedad
 
-**CODECAPI \_ AVEncVideoInverseTelecineThreshold**
+**CODECAPI \_ AVEncVideoInverseTelevideoThreshold**
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad tiene el siguiente intervalo.
+El valor de esta propiedad tiene el intervalo siguiente.
 
 
 
 | Value | Descripción                                                    |
 |-------|----------------------------------------------------------------|
-| 0     | Es menos probable que el codificador tenga en cuenta los campos de vídeo redundantes. |
-| 100   | Es más probable que el codificador tenga en cuenta los campos de vídeo redundantes. |
+| 0     | Es menos probable que el codificador considere los campos de vídeo redundantes. |
+| 100   | Es más probable que el codificador considere los campos de vídeo redundantes. |
 
 
 
@@ -42,7 +42,7 @@ El valor de esta propiedad tiene el siguiente intervalo.
 
 ## <a name="remarks"></a>Observaciones
 
-Establezca esta propiedad si el codificador está realizando telecine inversa con un origen de vídeo analógico.
+Establezca esta propiedad si el codificador está realizando teleconferencia inversa con un origen de vídeo análogo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Establezca esta propiedad si el codificador está realizando telecine inversa co
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Establezca esta propiedad si el codificador está realizando telecine inversa co
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

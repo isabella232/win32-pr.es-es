@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CollectedCollections de CIM es una asociación de agregación que representa una colección de elementos del sistema administrados (MSE) contenidos en una colección de MSEs.
+description: La clase CIM CollectedCollections es una asociación de agregación que representa una colección de elementos del sistema administrado (MSE) contenidos en una \_ colección de MSE.
 ms.assetid: 7baaf429-1211-4545-ace2-c6312d53c0f6
 ms.tgt_platform: multiple
-title: CIM_CollectedCollections (clase)
+title: CIM_CollectedCollections clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e592c7799efc8c280d4cd64c2b54ed8a3ea328f6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cecac67d96aba6b8ad8c5937f098eaef312af89b80c28febaa8073c5f7be26f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322295"
 ---
-# <a name="cim_collectedcollections-class"></a>\_Clase CollectedCollections de CIM
+# <a name="cim_collectedcollections-class"></a>Cim \_ CollectedCollections (clase)
 
-La **clase \_ CollectedCollections de CIM** es una asociación de agregación que representa una colección de elementos del sistema administrados (MSE) contenidos en una colección de MSEs.
+La **clase \_ CIM CollectedCollections** es una asociación de agregación que representa una colección de elementos del sistema administrado (MSE) contenidos en una colección de MSE.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,58 +46,58 @@ class CIM_CollectedCollections
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ CollectedCollections** tiene estos tipos de miembros:
+La **clase \_ CIM CollectedCollections** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ CollectedCollections** tiene estas propiedades.
+La **clase \_ CIM CollectedCollections** tiene estas propiedades.
 
 <dl> <dt>
 
 **Colección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ CollectionOfMSEs**
+Tipo de datos: **\_ Cim CollectionOfMSEs**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia al elemento primario o al "nivel superior" de la agregación.
+Referencia al "nivel superior" o elemento primario de la agregación.
 
 </dd> <dt>
 
 **CollectionInCollection**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ CollectionOfMSEs**
+Tipo de datos: **\_ Cim CollectionOfMSEs**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia a la **colección**"recopilada".
+Referencia a la colección **"recopilada".**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

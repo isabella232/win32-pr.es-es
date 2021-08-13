@@ -7,27 +7,27 @@ MSHAttr:
 title: PurposeGroupGuid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d20d6c9d1687ea0e3fca344fd3b534ccc0b3ee57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29ead67e44ac4735d17d97580b6bce5f187422994c9854bac19febf7a988bcbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119358854"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupguidspanpurposegroupguid"></a><span id="WWAN_profile_v4.element_PurposeGroupGuid"></span>PurposeGroupGuid
 
 Representa un perfil en un PurposeGroup de perfiles.
 
-Los perfiles se especifican mediante su valor [**guidType**](simpletype-guidtype.md) .
+Los perfiles se especifican por su [**valor guidType.**](simpletype-guidtype.md)
 
-Se definen cuatro valores GUID, tal como se muestra en la tabla siguiente.
+Se definen cuatro valores GUID, como se muestra en la tabla siguiente.
 
 | Grupo de propósitos | GUID                                 |
 |---------------|--------------------------------------|
 | Internet      | 3E5545D2-1137-4DC8-A198-33F1C657515F |
 | mms           | 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8 |
 | IMS           | 474D66ED-0E4B-476B-A455-19BB1239ED13 |
-| SUPL          | 6D42669F-52A9-408E-9493-1071DCC437BD |
+| Supl          | 6D42669F-52A9-408E-9493-1071DCC437BD |
 
  
 
@@ -37,7 +37,7 @@ Se definen cuatro valores GUID, tal como se muestra en la tabla siguiente.
 [<PurposeGroups>](element-purposegroups.md)  
 **<PurposeGroupGuid>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <PurposeGroupGuid>
@@ -73,9 +73,9 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-purposegroups.md">PurposeGroups</a></td>
-<td><p>Lista opcional de grupos de perfiles, donde cada grupo incluye perfiles usados para un propósito común.</p>
-<p>Este elemento es nuevo para V4 del esquema.</p>
-<p>Un perfil puede aparecer en varios grupos.</p></td>
+<td><p>Una lista opcional de grupos de perfiles, donde cada grupo incluye los perfiles usados para un propósito común.</p>
+<p>Este elemento es nuevo para la versión 4 del esquema.</p>
+<p>Un perfil se puede enumerar en varios grupos.</p></td>
 </tr>
 </tbody>
 </table>

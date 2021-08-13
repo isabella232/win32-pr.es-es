@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectShaderResourceVariable SetResourceArray (D3dx11effect. h)
+title: Método ID3DX11EffectShaderResourceVariable SetResourceArray (D3dx11effect.h)
 description: Establezca una matriz de recursos de sombreador.
 ms.assetid: b9597878-01af-42f3-9cc6-2ce1af4f08f6
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 570c461c7bb503b2a11f46a4bb1dca24dfd16201
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b5e20a7e24a2ea129c9a72d440dc2cb634bc8ae79a55b8ba47be1bffe6b75e85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119408165"
 ---
-# <a name="id3dx11effectshaderresourcevariablesetresourcearray-method"></a>ID3DX11EffectShaderResourceVariable:: SetResourceArray (método)
+# <a name="id3dx11effectshaderresourcevariablesetresourcearray-method"></a>Método ID3DX11EffectShaderResourceVariable::SetResourceArray
 
 Establezca una matriz de recursos de sombreador.
 
@@ -50,23 +50,23 @@ HRESULT SetResourceArray(
 
 Tipo: **[ **ID3D11ShaderResourceView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview)\*\***
 
-La dirección de una matriz de interfaces de vista de recursos de sombreador. Vea [**ID3D11ShaderResourceView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview).
+Dirección de una matriz de interfaces shader-resource-view. Vea [**ID3D11ShaderResourceView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview).
 
 </dd> <dt>
 
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de base cero de la matriz para obtener la primera interfaz.
+Índice de matriz de base cero para obtener la primera interfaz.
 
 </dd> <dt>
 
 *Recuento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Número de elementos de la matriz.
 
@@ -76,12 +76,12 @@ Número de elementos de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,12 +91,12 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TVN_GETINFOTIP (commctrl. h)
-description: Enviado por un control de vista de árbol que tiene el estilo de recuadro de TV \_ . Este código de notificación se envía cuando el control solicita información de texto adicional que se va a mostrar en una información sobre herramientas. El código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TVN_GETINFOTIP de notificación (Commctrl.h)
+description: Enviado por un control de vista de árbol que tiene el estilo \_ INFOTIP de TVS. Este código de notificación se envía cuando el control solicita información de texto adicional que se mostrará en una información sobre herramientas. El código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 20576710-e279-4e61-be6b-bf1d8ea79555
 keywords:
-- TVN_GETINFOTIP controles de código de notificación de Windows
+- TVN_GETINFOTIP código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1336571fa2c06e8b22078b1d761d9841217104e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5129e1fa97397cfa9c037c7c65099ee3bd961f184b1bf9b43d2dc87e35880f9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119261165"
 ---
-# <a name="tvn_getinfotip-notification-code"></a>Código de notificación de GETINFOTIP de TVN \_
+# <a name="tvn_getinfotip-notification-code"></a>Código de notificación \_ GETINFOTIP de TVN
 
-Enviado por un control de vista de árbol que tiene el estilo de recuadro de [**TV \_**](tree-view-control-window-styles.md) . Este código de notificación se envía cuando el control solicita información de texto adicional que se va a mostrar en una información sobre herramientas. El código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de vista de árbol que tiene el estilo [**\_ INFOTIP de TVS.**](tree-view-control-window-styles.md) Este código de notificación se envía cuando el control solicita información de texto adicional que se mostrará en una información sobre herramientas. El código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ TVN_GETINFOTIP
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmtvgetinfotipa) que contiene información sobre este código de notificación.
+Puntero a una [**estructura NMTVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmtvgetinfotipa) que contiene información sobre este código de notificación.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ El control omite el valor devuelto para este código de notificación.
 
 ## <a name="remarks"></a>Observaciones
 
-Este código de notificación solo lo envían los controles de vista de árbol que tienen el estilo de recuadro de [**TV \_**](tree-view-control-window-styles.md) .
+Este código de notificación solo se envía mediante controles de vista de árbol que tienen el estilo [**\_ INFOTIP de TVS.**](tree-view-control-window-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Este código de notificación solo lo envían los controles de vista de árbol q
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ GETINFOTIPW** (Unicode) y **TVN \_ GETINFOTIPA** (ANSI)<br/>             |
 
 

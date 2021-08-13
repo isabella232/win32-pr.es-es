@@ -1,7 +1,7 @@
 ---
-description: Recupera las estadísticas de replicación que están asociadas a la relación de replicación especificada de la máquina virtual.
+description: Recupera las estadísticas de replicación asociadas a la relación de replicación especificada de la máquina virtual.
 ms.assetid: AB46894A-CBED-40DF-86B9-B578603B0341
-title: 'Msvm_ReplicationService:: GetReplicationStatisticsEx (método)'
+title: Msvm_ReplicationService::GetReplicationStatisticsEx (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7fdb60addc94094082fe83e70af06a2f5ae11f06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4386692dcaf86527e28b82c91415bf858b47cd19bbc4693af6bff12255138c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253705"
 ---
-# <a name="msvm_replicationservicegetreplicationstatisticsex-method"></a>MSVM \_ ReplicationService:: GetReplicationStatisticsEx (método)
+# <a name="msvm_replicationservicegetreplicationstatisticsex-method"></a>Método Msvm \_ ReplicationService::GetReplicationStatisticsEx
 
-Recupera las estadísticas de replicación que están asociadas a la relación de replicación especificada de la máquina virtual.
+Recupera las estadísticas de replicación asociadas a la relación de replicación especificada de la máquina virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,38 +43,38 @@ uint32 GetReplicationStatisticsEx(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de un [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se van a recuperar las estadísticas de replicación.
+Referencia a una instancia [**\_ de ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se recuperan las estadísticas de replicación.
 
 </dd> <dt>
 
-*ReplicationRelationship* \[ de\]
+*ReplicationRelationship* \[ En\]
 </dt> <dd>
 
-Representación de cadena de una instancia incrustada de la clase [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) que define la relación de replicación para la que se van a recuperar las estadísticas de replicación.
+Representación de cadena de una instancia incrustada de la clase [**\_ ReplicationRelationship de Msvm**](msvm-replicationrelationship.md) que define la relación de replicación para la que se recuperan las estadísticas de replicación.
 
 </dd> <dt>
 
-*ReplicationStatistics* \[ enuncia\]
+*ReplicationStatistics* \[ out\]
 </dt> <dd>
 
-Si es correcto, recibe una instancia incrustada de la clase [**MSVM \_ ReplicationStatistics**](msvm-replicationstatistics.md) que contiene las estadísticas de replicación de la relación de replicación solicitada.
+Si se realiza correctamente, recibe una instancia incrustada de la clase [**\_ ReplicationStatistics de Msvm**](msvm-replicationstatistics.md) que contiene las estadísticas de replicación de la relación de replicación solicitada.
 
 </dd> <dt>
 
-*ReplicationHealthIssues* \[ enuncia\]
+*ReplicationHealthIssues* \[ out\]
 </dt> <dd>
 
-Si se realiza correctamente, recibe una matriz de instancias incrustadas de la clase de [**\_ error MSVM**](msvm-error.md) que indican cualquier advertencia o error de replicación de la máquina virtual solicitada.
+Si se realiza correctamente, recibe una matriz de instancias insertadas de la clase Error de [**Msvm \_**](msvm-error.md) que indican cualquier advertencia o error de replicación para la máquina virtual solicitada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)). Esta referencia puede ser **null** si la tarea se ha completado.
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)). Esta referencia puede ser **NULL** si la tarea se ha completado.
 
 </dd> </dl>
 
@@ -99,16 +99,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -117,13 +117,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -132,10 +132,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\\\\\Virtualización de raíz \\ V2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -144,7 +144,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> <dt>
 
 [**ResetReplicationStatisticsEx**](resetreplicationstatisticsex-msvm-replicationservice.md)

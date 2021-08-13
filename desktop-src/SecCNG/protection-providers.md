@@ -1,24 +1,24 @@
 ---
-description: A partir de Windows 8, Microsoft comenzó a distribuir los proveedores que le permiten compartir de forma segura secretos y mensajes cifrados entre equipos.
+description: A partir Windows 8, Microsoft comenzó a distribuir los proveedores que le permiten compartir de forma segura secretos y mensajes cifrados entre equipos.
 ms.assetid: C2E62DD2-8316-407B-B879-2617873F8409
 title: Proveedores de protección
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2c262fcfbfa5ab0842f103849af3d67b20f8e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06fe4c688eec734a7c32d1a85eaec2d9ebf132834a5970802cecb2639240e7d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907196"
 ---
 # <a name="protection-providers"></a>Proveedores de protección
 
-A partir de Windows 8, Microsoft comenzó a distribuir los proveedores que le permiten compartir de forma segura secretos y mensajes cifrados entre equipos. Actualmente hay dos proveedores de protección de claves. El proveedor de protección de claves de Microsoft permite proteger el contenido en un grupo de un bosque de Active Directory. El proveedor de protección de claves de cliente de Microsoft permite proteger el contenido en un conjunto de credenciales Web.
+A partir Windows 8, Microsoft comenzó a distribuir los proveedores que le permiten compartir de forma segura secretos y mensajes cifrados entre equipos. Actualmente hay dos proveedores de protección clave. El proveedor de Microsoft Key Protection permite proteger el contenido de un grupo en un Active Directory de claves. El proveedor de Protección de claves de cliente de Microsoft permite proteger el contenido de un conjunto de credenciales web.
 
-El protector correcto que se va a usar se elige automáticamente cuando la función [**NCryptCreateProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor) analiza la cadena de la regla del descriptor de protección que proporciona como entrada. Se elige el proveedor de protección de claves de Microsoft para las cadenas de reglas que comienzan por SID, SDDL y LOCAL. El proveedor de protección de claves de cliente de Microsoft analiza las cadenas de reglas que comienzan con las credenciales webcredentials. Para obtener más información sobre las cadenas de reglas, consulte [descriptores de protección](protection-descriptors.md).
+El protector correcto que se va a usar se elige automáticamente cuando la función [**NCryptCreateProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor) analiza la cadena de regla del descriptor de protección que proporciona como entrada. El proveedor de Microsoft Key Protection se elige para las cadenas de reglas que comienzan por SID, SDDL y LOCAL. El proveedor de Microsoft Client Key Protection analiza las cadenas de regla que comienzan por WEBCREDENTIALS. Para obtener más información sobre las cadenas de reglas, vea [Descriptores de protección](protection-descriptors.md).
 
 > [!Note]  
-> Los proveedores personalizados no están permitidos actualmente. [DPAPI de CNG](cng-dpapi.md)
+> Actualmente no se permiten proveedores personalizados. [DPAPI de CNG](cng-dpapi.md)
 
  
 
@@ -26,7 +26,7 @@ El protector correcto que se va a usar se elige automáticamente cuando la funci
 
 <dl> <dt>
 
-[DPAPI DE CNG](cng-dpapi.md)
+[CNG DPAPI](cng-dpapi.md)
 </dt> <dt>
 
 [**NCryptCreateProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor)

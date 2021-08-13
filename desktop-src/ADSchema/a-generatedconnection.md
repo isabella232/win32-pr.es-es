@@ -1,11 +1,11 @@
 ---
-title: Generated-Connection atributo)
-description: True si la generación de topología automática creó esta conexión.
+title: Generated-Connection atributo
+description: True si esta conexión se creó mediante la generación automática de topología.
 ms.assetid: aec351d4-b17d-49e6-bbc1-787703fd600b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Generated-Connection
-- generatedConnection esquema de AD de atributos
+- Generated-Connection esquema de AD de atributo
+- Esquema de AD del atributo generatedConnection
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d38570878db9b1b44414bbdd9624cb3b524f19c0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 23a486c4a072421bfb5ec7565dc786a417b2f730a49da5b21d05eb37481ed76e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323285"
 ---
-# <a name="generated-connection-attribute"></a>Generated-Connection atributo)
+# <a name="generated-connection-attribute"></a>Generated-Connection atributo
 
-**True** si la generación de topología automática creó esta conexión.
+**True** si esta conexión se creó mediante la generación automática de topología.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Generated-Connection                 |
-| Nombre para mostrar de LDAP | generatedConnection                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | generatedConnection                  |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.41                |
-| System-ID-GUID    | bf96797a-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | bf96797a-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -44,7 +44,7 @@ ms.locfileid: "105658518"
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,20 +54,20 @@ ms.locfileid: "105658518"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -75,41 +75,41 @@ ms.locfileid: "105658518"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ ms.locfileid: "105658518"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -138,20 +138,20 @@ ms.locfileid: "105658518"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ ms.locfileid: "105658518"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ ms.locfileid: "105658518"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 

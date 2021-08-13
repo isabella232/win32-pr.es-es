@@ -1,10 +1,10 @@
 ---
-title: atributo MS-net-IEEE-8023-GP-PolicyData
-description: Contiene toda la configuración y los datos que componen una configuración de directiva de grupo para redes cableadas 802,3.
+title: Atributo ms-net-ieee-8023-GP-PolicyData
+description: Contiene todos los valores de configuración y los datos que directiva de grupo configuración de las redes cableadas 802.3.
 ms.assetid: 9c68252f-cd0c-409f-9c57-1d00be246d20
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-net-IEEE-8023-GP-PolicyData
+- ms-net-ieee-8023-GP-PolicyData attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eb67527b6db64a4c4f3d4a8b216d6dccc51d2f8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bcbe48346861415d298d5e9b4319d1f6aac6f73a403265ca6fac8c1d58ad4b22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103805059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300165"
 ---
-# <a name="ms-net-ieee-8023-gp-policydata-attribute"></a>atributo MS-net-IEEE-8023-GP-PolicyData
+# <a name="ms-net-ieee-8023-gp-policydata-attribute"></a>Atributo ms-net-ieee-8023-GP-PolicyData
 
-Contiene toda la configuración y los datos que componen una configuración de directiva de grupo para redes cableadas 802,3.
+Contiene todos los valores de configuración y los datos que directiva de grupo configuración de las redes cableadas 802.3.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-net-IEEE-8023-GP-PolicyData              |
-| Nombre para mostrar de LDAP | MS-net-IEEE-8023-GP-PolicyData              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-net-ieee-8023-GP-PolicyData              |
+| Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyData              |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1955                     |
-| System-ID-GUID    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,18 +51,18 @@ Contiene toda la configuración y los datos que componen una configuración de d
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                |
+| Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | False                                                                             |
-| Tiene un único valor       | True                                                                              |
+| Es de un solo valor       | True                                                                              |
 | Está indexado             | False                                                                             |
 | En el catálogo global      | False                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Clases usadas en        | [**MS-net-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
@@ -72,18 +72,18 @@ Contiene toda la configuración y los datos que componen una configuración de d
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                |
+| Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | False                                                                             |
-| Tiene un único valor       | True                                                                              |
+| Es de un solo valor       | True                                                                              |
 | Está indexado             | False                                                                             |
 | En el catálogo global      | False                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Clases usadas en        | [**MS-net-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
@@ -93,18 +93,18 @@ Contiene toda la configuración y los datos que componen una configuración de d
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                |
+| Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | False                                                                             |
-| Tiene un único valor       | True                                                                              |
+| Es de un solo valor       | True                                                                              |
 | Está indexado             | False                                                                             |
 | En el catálogo global      | False                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Clases usadas en        | [**MS-net-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 

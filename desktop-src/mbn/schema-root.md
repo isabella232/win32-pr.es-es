@@ -1,10 +1,10 @@
 ---
-description: Esquema de Perfil de banda ancha móvil V4.
+description: Esquema de perfil de banda ancha móvil v4.
 MS-HAID: WWAN\_profile\_v4.Schema\_Root
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Esquema de Perfil de banda ancha móvil V4
+title: Esquema de perfil de banda ancha móvil v4
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 0945e34c-74f3-4133-8b36-e45562ce2a88
@@ -13,19 +13,19 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b10d2ea3e327f54c6a8100f0758d652675b9d4a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fd9b2d5a28abd4c445198d58c589c60f9dba9de786b989c6d97cd74dd461aa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744206"
 ---
-# <a name="span-idwwan_profile_v4schema_rootspanmobile-broadband-profile-schema-v4"></a><span id="WWAN_profile_v4.Schema_Root"></span>Esquema de Perfil de banda ancha móvil V4
+# <a name="span-idwwan_profile_v4schema_rootspanmobile-broadband-profile-schema-v4"></a><span id="WWAN_profile_v4.Schema_Root"></span>Esquema de perfil de banda ancha móvil v4
 
-El esquema de Perfil de banda ancha de Windows 10Mobile V4 está disponible en el espacio de nombres `https://www.microsoft.com/networking/WWAN/profile/v4` .
+El Windows esquema 10Mobile Broadband Profile v4 está disponible en el espacio de nombres `https://www.microsoft.com/networking/WWAN/profile/v4` .
 
--   [Elementos del esquema de Perfil de banda ancha móvil V4](root-elements.md)
--   [Tipos simples del esquema de Perfil de banda ancha móvil V4](simple-types.md)
+-   [Elementos del esquema de perfil de banda ancha móvil v4](root-elements.md)
+-   [Tipos simples de esquema de perfil de banda ancha móvil v4](simple-types.md)
 
 ``` syntax
 <xs:schema targetNamespace="https://www.microsoft.com/networking/WWAN/profile/v4"
