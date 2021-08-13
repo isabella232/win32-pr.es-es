@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m hPalette es un identificador de la paleta lógica que este objeto administra.
+description: La variable miembro m \_ hPalette es un identificador de la paleta lógica que administra este objeto.
 ms.assetid: 8c73adc1-0c01-4518-a0dd-17c7bff6c92b
-title: 'Miembro CImagePalette:: m_hPalette (Winutil. h)'
+title: Miembro CImagePalette::m_hPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2009e483c636cc8f4bf68fc561efa64fd0a3e4f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4525b0af31190a6de8bf312f297f4714591818fde1bf61e23798fe1b6e8a3cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402555"
 ---
-# <a name="cimagepalettem_hpalette-member"></a>Miembro hPalette CImagePalette:: m \_
+# <a name="cimagepalettem_hpalette-member"></a>Miembro CImagePalette::m \_ hPalette
 
-La `m_hPalette` variable miembro es un identificador de la paleta lógica que este objeto administra.
+La `m_hPalette` variable miembro es un identificador de la paleta lógica que administra este objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HPALETTE m_hPalette;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CImagePalette**](cimagepalette.md)
+[**CImagePalette (clase)**](cimagepalette.md)
 </dt> </dl>
 
  

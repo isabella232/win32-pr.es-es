@@ -1,9 +1,9 @@
 ---
-title: Mensaje de UDM_SETBUDDY (commctrl. h)
-description: Establece la ventana relacionada para un control de flechas.
+title: UDM_SETBUDDY mensaje (Commctrl.h)
+description: Establece la ventana del compañero para un control de flechas.
 ms.assetid: 66e35acc-95f6-4bc5-b654-690abf2188ba
 keywords:
-- UDM_SETBUDDY controles de mensajes de Windows
+- UDM_SETBUDDY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e8bd57727d730c67fe09a52c0bedf121eac982
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8aa23b5dff0542e7e94c7464684090d899dee5aded0fd6303d3106d5d3292e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668907"
 ---
-# <a name="udm_setbuddy-message"></a>\_Mensaje SETBUDDY UDM
+# <a name="udm_setbuddy-message"></a>Mensaje \_ SETBUDDY de UDM
 
-Establece la ventana relacionada para un control de flechas.
+Establece la ventana del compañero para un control de flechas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece la ventana relacionada para un control de flechas.
 *wParam* 
 </dt> <dd>
 
-Identificador de la nueva ventana de Buddy.
+Identificador en la nueva ventana de compañeros.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Identificador de la nueva ventana de Buddy.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el identificador de la ventana relacionada anterior.
+El valor devuelto es el identificador de la ventana anterior del compañero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ El valor devuelto es el identificador de la ventana relacionada anterior.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

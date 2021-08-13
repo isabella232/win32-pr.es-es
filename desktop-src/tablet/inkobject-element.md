@@ -4,12 +4,12 @@ ms.assetid: 7ee9ecd3-9dd6-4c6b-80bc-23f9a8e6b352
 title: Elemento InkObject
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c3a626da2afef506f8777ea188bdd883e29dd5
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: b180443a2663974ba2e9111fb60b0ed130b96bf213a9477f5e3b2c0c163aac8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717753"
 ---
 # <a name="inkobject-element"></a>Elemento InkObject
 

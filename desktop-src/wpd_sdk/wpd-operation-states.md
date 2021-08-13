@@ -1,7 +1,7 @@
 ---
-description: Los \_ valores de enumeración de Estados de la operación de WPD \_ describen el estado actual de una operación en curso.
+description: Los valores de \_ enumeración WPD OPERATION \_ STATES describen el estado actual de una operación en curso.
 ms.assetid: a002f735-e385-4c7c-b734-e70a9c6842ca
-title: Enumeración WPD_OPERATION_STATES (PortableDevice. h)
+title: WPD_OPERATION_STATES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 1746ab6a798c74974708ac10b9c4d137bf6c1d42
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3c2bc25fdbc040bd849d60f1e16e5d86d1916ced17eb6670ceb3bc6a75108772
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696488"
 ---
-# <a name="wpd_operation_states-enumeration"></a>\_Enumeración de Estados de operación de WPD \_
+# <a name="wpd_operation_states-enumeration"></a>Enumeración \_ WPD OPERATION \_ STATES
 
-Los valores de enumeración de **\_ \_ Estados** de la operación de WPD describen el estado actual de una operación en curso.
+Los **valores de \_ enumeración WPD OPERATION \_ STATES** describen el estado actual de una operación en curso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,52 +45,52 @@ typedef enum tagWPD_OPERATION_STATES {
 
 <dl> <dt>
 
-<span id="WPD_OPERATION_STATE_UNSPECIFIED"></span><span id="wpd_operation_state_unspecified"></span>**Estado de la operación de WPD no \_ \_ \_ especificado**
+<span id="WPD_OPERATION_STATE_UNSPECIFIED"></span><span id="wpd_operation_state_unspecified"></span>**ESTADO DE \_ LA OPERACIÓN \_ WPD SIN \_ ESPECIFICAR**
 </dt> <dd>
 
-La operación actual está en un estado no especificado (no establecido) y se desconoce.
+La operación actual está en un estado no especificado (no establecido) y desconocido.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_STARTED"></span><span id="wpd_operation_state_started"></span>**Estado de la operación de WPD \_ \_ \_ iniciado**
+<span id="WPD_OPERATION_STATE_STARTED"></span><span id="wpd_operation_state_started"></span>**ESTADO DE LA \_ OPERACIÓN \_ WPD \_ INICIADA**
 </dt> <dd>
 
-La operación se ha iniciado.
+Se inicia la operación.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_RUNNING"></span><span id="wpd_operation_state_running"></span>**Estado de la operación de WPD en \_ \_ \_ ejecución**
+<span id="WPD_OPERATION_STATE_RUNNING"></span><span id="wpd_operation_state_running"></span>**WPD \_ OPERATION \_ STATE \_ RUNNING**
 </dt> <dd>
 
 La operación se está ejecutando.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_PAUSED"></span><span id="wpd_operation_state_paused"></span>**Estado de la operación de WPD en \_ \_ \_ pausa**
+<span id="WPD_OPERATION_STATE_PAUSED"></span><span id="wpd_operation_state_paused"></span>**ESTADO DE \_ LA OPERACIÓN \_ \_ WPD EN PAUSA**
 </dt> <dd>
 
 La operación está en pausa.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_CANCELLED"></span><span id="wpd_operation_state_cancelled"></span>**Estado de operación de WPD \_ \_ \_ cancelado**
+<span id="WPD_OPERATION_STATE_CANCELLED"></span><span id="wpd_operation_state_cancelled"></span>**ESTADO DE \_ LA OPERACIÓN \_ WPD \_ CANCELADA**
 </dt> <dd>
 
 La operación se cancela.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_FINISHED"></span><span id="wpd_operation_state_finished"></span>**Estado de la operación de WPD \_ \_ \_ finalizado**
+<span id="WPD_OPERATION_STATE_FINISHED"></span><span id="wpd_operation_state_finished"></span>**ESTADO DE LA \_ OPERACIÓN \_ WPD \_ FINALIZADA**
 </dt> <dd>
 
 La operación ha finalizado.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_ABORTED"></span><span id="wpd_operation_state_aborted"></span>**Estado de operación de WPD \_ \_ \_ anulado**
+<span id="WPD_OPERATION_STATE_ABORTED"></span><span id="wpd_operation_state_aborted"></span>**ESTADO DE \_ LA OPERACIÓN \_ WPD \_ ANULADA**
 </dt> <dd>
 
-La operación se ha anulado.
+Se anula la operación.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Estos valores se reciben en la devolución de llamada definida por la aplicació
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

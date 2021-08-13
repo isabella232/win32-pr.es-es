@@ -4,12 +4,12 @@ ms.assetid: f60b7465-bca4-4c7b-9caf-9cda1bf6eeeb
 title: System.ItemFolderPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbee8a45eb6ea557e99c854464c7dc09ec5613d2
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: bb87cadc4f4f132870ea51af1bba55c992c09d3eb5a90f446a3d92810b5941d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726492"
 ---
 # <a name="systemitemfolderpathdisplaynarrow"></a>System.ItemFolderPathDisplayNarrow
 
@@ -35,7 +35,7 @@ propertyDescription
 
 Los valores PKEY se definen en Propkey.h.
 
-El formato de la cadena debe adaptarse para que el nombre de la carpeta sea el primero en optimizarse para una columna de visualización estrecha. Si la carpeta es una carpeta de archivos, el valor incluye los nombres localizados. Si [System.ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md) es VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos debe derivarlo correctamente de System.ItemFolderPathDisplay.
+El formato de la cadena debe adaptarse para que el nombre de la carpeta sea el primero, para optimizar para una columna de visualización estrecha. Si la carpeta es una carpeta de archivos, el valor incluye los nombres localizados. Si [System.ItemFolderPathDisplay es](./props-system-itemfolderpathdisplay.md) VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos debe derivarlo correctamente de System.ItemFolderPathDisplay.
 
 ## <a name="related-topics"></a>Temas relacionados
 

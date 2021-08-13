@@ -1,7 +1,7 @@
 ---
 description: Especifica si el color especificado es un color RGB.
 ms.assetid: 16b48644-c2d5-4383-836a-122f44504638
-title: FRGBIMEColorStyle función)
+title: Función FRGBIMEColorStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: df11a2ad972791eaf7049bdef5fa927aaa4119da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 135a53a6c531d14f03aa2bc944e076f51ec28c167bced94cc0675fe2ae7642ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404669"
 ---
-# <a name="frgbimecolorstyle-function"></a>FRGBIMEColorStyle función)
+# <a name="frgbimecolorstyle-function"></a>Función FRGBIMEColorStyle
 
 Especifica si el color especificado es un color RGB.
 
@@ -39,32 +39,32 @@ BOOL __cdecl FRGBIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ de\]
+*pcolorstyle* \[ En\]
 </dt> <dd>
 
-Una estructura **IMECOLORSTY** devuelta por una función [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
+Estructura **IMECOLORSTY** devuelta desde una [**función PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **verdadero** cuando el color es un color RGB.
+Devuelve **TRUE** cuando el color es rgb.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Imeshare.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

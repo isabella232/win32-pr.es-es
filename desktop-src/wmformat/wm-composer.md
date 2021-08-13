@@ -1,9 +1,9 @@
 ---
-title: WM/compositor
-description: El atributo WM/compositor contiene el nombre del compositor de música.
+title: WM/Composer
+description: El atributo WM/Composer contiene el nombre del compositor de música.
 ms.assetid: ec606961-0196-4a11-81f7-066496e6e413
 keywords:
-- Formato de Windows Media WM/compositor
+- Wm/Composer windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f30378d772f288c389d1ecd331538057bd239c35
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 548257945d4b8a6606136247dfdc82daff232d1c8fd0a8219f74c42c3eac7433
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118431815"
 ---
-# <a name="wmcomposer"></a>WM/compositor
+# <a name="wmcomposer"></a>WM/Composer
 
-El atributo **WM/compositor** contiene el nombre del compositor de música.
+El **atributo WM/Composer** contiene el nombre del compositor de música.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMComposer
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vea también
 
@@ -38,9 +38,9 @@ g \_ wszWMComposer
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

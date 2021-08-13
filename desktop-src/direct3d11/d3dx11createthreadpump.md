@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11CreateThreadPump (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Vea la sección Comentarios. Cree un bombeo de subprocesos.
+title: Función D3DX11CreateThreadPump (D3DX11core.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios. Cree una bomba de subprocesos.
 ms.assetid: 8983a2e2-185f-43c0-baf0-a4c883d91220
 keywords:
 - Función D3DX11CreateThreadPump Direct3D 11
@@ -15,21 +15,21 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5551cd22a4c134570c2059cc6aeaa9538311b19
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9a3a19c338b330604caae9ce5a1e7f7222664b0521f9874c3eff07ff1fc8a4f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118536106"
 ---
-# <a name="d3dx11createthreadpump-function"></a>D3DX11CreateThreadPump función)
+# <a name="d3dx11createthreadpump-function"></a>Función D3DX11CreateThreadPump
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows. Vea la sección Comentarios.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
 
  
 
-Cree un bombeo de subprocesos.
+Cree una bomba de subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,30 +48,30 @@ HRESULT D3DX11CreateThreadPump(
 
 <dl> <dt>
 
-*cIoThreads* \[ de\]
+*cIoThreads* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de subprocesos de e/s que se van a crear. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
+Número de subprocesos de E/S que se crearán. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
 
 </dd> <dt>
 
-*cProcThreads* \[ de\]
+*cProcThreads* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de subprocesos del proceso que se van a crear. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
+Número de subprocesos de proceso que se crearán. Si se especifica 0, Direct3D intentará calcular el número óptimo de subprocesos en función de la configuración de hardware.
 
 </dd> <dt>
 
-*ppThreadPump* \[ enuncia\]
+*ppThreadPump* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\*\***
 
-El bombeo de subprocesos creado. Consulte la [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
+El bombeo de subprocesos creado. Vea [**ID3DX11ThreadPump (Interfaz).**](id3dx11threadpump.md)
 
 </dd> </dl>
 
@@ -79,17 +79,17 @@ El bombeo de subprocesos creado. Consulte la [**interfaz ID3DX11ThreadPump**](id
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Un bombeo de subprocesos es un objeto que consume muchos recursos. Solo se debe crear un bombeo de subprocesos por aplicación.
+Una bomba de subprocesos es un objeto que consume muchos recursos. Solo se debe crear un bombeo de subprocesos por aplicación.
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
-En el caso de las aplicaciones de la tienda Windows, los ejemplos de DirectX (por ejemplo, el [ejemplo de tutorial de Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)) incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
+Para Windows Store, los ejemplos de DirectX (por ejemplo, el ejemplo de tutorial de [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
 
-En el caso de las aplicaciones de escritorio de Win32, puede usar la [Runtime de simultaneidad](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) para implementar algo similar a la Windows Runtime modelo de programación asincrónica.
+En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de simultaneidad [para](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementar algo similar al modelo de programación asincrónica de Windows Runtime.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ En el caso de las aplicaciones de escritorio de Win32, puede usar la [Runtime de
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -106,7 +106,7 @@ En el caso de las aplicaciones de escritorio de Win32, puede usar la [Runtime de
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

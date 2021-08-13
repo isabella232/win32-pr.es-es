@@ -1,11 +1,11 @@
 ---
-title: Unicode-Pwd atributo)
-description: Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2000 usa las OWF de Windows NT. Esta propiedad solo la utiliza el sistema operativo. Tenga en cuenta que no puede volver a derivar la contraseña sin cifrar desde el formulario OWF de la contraseña.
+title: Unicode-Pwd atributo
+description: Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa el Windows NT OWF. Esta propiedad solo la usa el sistema operativo. Tenga en cuenta que no puede volver a derivar la contraseña sin borrar del formulario OWF de la contraseña.
 ms.assetid: 07b29a0c-aff2-4abd-8ca8-95f1ce5b566b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Unicode-Pwd
-- atributo unicodePwd esquema de AD
+- Unicode-Pwd esquema de AD del atributo
+- Esquema de AD del atributo unicodePwd
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d00a1df180b7a30b56bdf198a78edc77cc99755
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0e21929cf41b58688f768ada0b608ca3ef0892a4a54043c30f5cac2d5a72258b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681092"
 ---
-# <a name="unicode-pwd-attribute"></a>Unicode-Pwd atributo)
+# <a name="unicode-pwd-attribute"></a>Unicode-Pwd atributo
 
-Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2000 usa las OWF de Windows NT. Esta propiedad solo la utiliza el sistema operativo. Tenga en cuenta que no puede volver a derivar la contraseña sin cifrar desde el formulario OWF de la contraseña.
+Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa el Windows NT OWF. Esta propiedad solo la usa el sistema operativo. Tenga en cuenta que no puede volver a derivar la contraseña sin borrar del formulario OWF de la contraseña.
 
 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------------------------------------|
 | CN                | Unicode-Pwd                                                                  |
-| Nombre para mostrar de LDAP | unicodePwd                                                                   |
-| Tamaño              | \-                                                                           |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                       |
+| Ldap-Display-Name | unicodePwd                                                                   |
+| Size              | \-                                                                           |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                       |
 | Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar la contraseña. |
 | Attribute-Id      | 1.2.840.113556.1.4.90                                                        |
-| System-ID-GUID    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
+| System-Id-Guid    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                        |
 
 
@@ -44,7 +44,7 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
+| Es de un solo valor       | True                                                              |
 | Está indexado             | False                                                             |
 | En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Objeto MS-DS-Bindable**](c-msds-bindableobject.md)<br/> |
+| Clases usadas en        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -182,13 +182,13 @@ Contraseña del usuario en formato unidireccional (OWF) de Windows NT. Windows 2
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

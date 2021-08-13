@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_RECONVERSION (RichEdit. h)
-description: Invoca el cuadro de diálogo reconversión del editor de métodos de entrada (IME).
+title: EM_RECONVERSION mensaje (Richedit.h)
+description: Invoca el cuadro de diálogo de reconversión del Editor de métodos de entrada (IME).
 ms.assetid: 1234905f-cbf2-42a3-b14a-5ade25ad9d75
 keywords:
-- EM_RECONVERSION controles de mensajes de Windows
+- EM_RECONVERSION controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25302515ec3cde7905d8164d8d7872431e33d581
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0f0d567298a350a840af801ea712fce76ee81e43581d86c8df5c71d64805341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412761"
 ---
-# <a name="em_reconversion-message"></a>\_Mensaje de REconversión de EM
+# <a name="em_reconversion-message"></a>Mensaje EM \_ RECONVERSION
 
-Invoca el cuadro de diálogo reconversión del editor de métodos de entrada (IME).
+Invoca el cuadro de diálogo de reconversión del Editor de métodos de entrada (IME).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Invoca el cuadro de diálogo reconversión del editor de métodos de entrada (IM
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -51,20 +51,20 @@ Este mensaje siempre devuelve cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Redistribuible<br/>          | Edición enriquecida 3,0<br/>                                                              |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_GETLANGOPTIONS em**](em-getlangoptions.md)
+[**EM \_ GETLANGOPTIONS**](em-getlangoptions.md)
 </dt> </dl>
 
  

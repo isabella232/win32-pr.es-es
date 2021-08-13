@@ -1,7 +1,7 @@
 ---
-description: 'El método GetSyncSource recupera el reloj de referencia que usa el objeto. Este método implementa el método IMediaFilter:: GetSyncSource.'
+description: El método GetSyncSource recupera el reloj de referencia que usa el objeto . Este método implementa el método IMediaFilter::GetSyncSource.
 ms.assetid: 7e74d6ce-cd34-4345-8ff9-174e0acb243a
-title: Método CBaseMediaFilter. GetSyncSource (Amfilter. h)
+title: Método CBaseMediaFilter.GetSyncSource (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1e92c9d0fa5e486d7785ff8184ba4ce0dd42e5be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 03bceee63109dedbf3b2fa9a855ddbfb410014d48de613f95c7bbfb98d6b0894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658878"
 ---
-# <a name="cbasemediafiltergetsyncsource-method"></a>CBaseMediaFilter. GetSyncSource, método
+# <a name="cbasemediafiltergetsyncsource-method"></a>Método CBaseMediaFilter.GetSyncSource
 
-El `GetSyncSource` método recupera el reloj de referencia que usa el objeto. Este método implementa el método [**IMediaFilter:: GetSyncSource**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-getsyncsource) .
+El `GetSyncSource` método recupera el reloj de referencia que usa el objeto . Este método implementa el [**método IMediaFilter::GetSyncSource.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-getsyncsource)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ HRESULT GetSyncSource(
 
 <dl> <dt>
 
-*pClock* 
+*Pclock* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) del reloj.
+Dirección de una variable que recibe un puntero a la interfaz [**IReferenceClock del**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) reloj.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el \_ puntero S o E \_ .
+Devuelve S \_ OK o E \_ POINTER.
 
 ## <a name="remarks"></a>Observaciones
 
-Si el objeto no utiliza un reloj de referencia, *\* pClock* se establece en **null**. Cuando el método devuelve un valor, si *\* pClock* no es **null**, la interfaz **IReferenceClock** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
+Si el objeto no usa un reloj de referencia, *\* pClock* se establece en **NULL.** Cuando el método devuelve un resultado, si *\* pClock* no es **NULL,** la **interfaz IReferenceClock** tiene un recuento de referencias pendiente. Asegúrese de liberarla cuando haya terminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si el objeto no utiliza un reloj de referencia, *\* pClock* se establece en **nu
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si el objeto no utiliza un reloj de referencia, *\* pClock* se establece en **nu
 
 <dl> <dt>
 
-[**Clase CBaseMediaFilter**](cbasemediafilter.md)
+[**CBaseMediaFilter (clase)**](cbasemediafilter.md)
 </dt> </dl>
 
  

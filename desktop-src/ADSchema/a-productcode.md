@@ -1,11 +1,11 @@
 ---
-title: Product-Code atributo)
-description: Este atributo contiene un identificador único para una aplicación para un lanzamiento de producto determinado, representado como un GUID de cadena, por ejemplo \ 0034; 12345678-1234-1234-1234-123456789012 \ 0034;.
+title: Product-Code atributo
+description: Este atributo contiene un identificador único para una aplicación para una versión de producto determinada, representada como un GUID de cadena, por ejemplo \ 0034; 12345678-1234-1234-1234-123456789012 \ 0034;.
 ms.assetid: 1fb50a4c-1a6a-4231-a6b2-92f6bc4a1ead
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Product-Code
-- atributo productCode AD Schema
+- Product-Code esquema de AD del atributo
+- Esquema de AD del atributo productCode
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51dc874552fc819de4f9c58b23809b9f5662ee6e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d527263787b68fbe7ab328fa5d1e91a0b7b9dd2385b29d5e6b0bb4a9fedc0400
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681753"
 ---
-# <a name="product-code-attribute"></a>Product-Code atributo)
+# <a name="product-code-attribute"></a>Product-Code atributo
 
-Este atributo contiene un identificador único para una aplicación para un lanzamiento de producto determinado, representado como un GUID de cadena, por ejemplo, " {12345678-1234-1234-1234-123456789012} ". Las letras usadas en este GUID deben estar en mayúsculas. Este identificador debe variar en diferentes versiones e idiomas.
+Este atributo contiene un identificador único para una aplicación para una versión de producto determinada, representada como un GUID de cadena, por ejemplo " {12345678-1234-1234-1234-123456789012} ". Las letras usadas en este GUID deben estar en mayúsculas. Este identificador debe variar para diferentes versiones e idiomas.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Product-Code                                          |
-| Nombre para mostrar de LDAP | productCode                                           |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | productCode                                           |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.818                                |
-| System-ID-GUID    | d9e18317-8939-11d1-aebc-0000f80367c1                  |
+| System-Id-Guid    | d9e18317-8939-11d1-aebc-0000f80367c1                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,18 +55,18 @@ Este atributo contiene un identificador único para una aplicación para un lanz
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo contiene un identificador único para una aplicación para un lanz
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo contiene un identificador único para una aplicación para un lanz
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo contiene un identificador único para una aplicación para un lanz
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo contiene un identificador único para una aplicación para un lanz
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo contiene un identificador único para una aplicación para un lanz
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
+| Es de un solo valor       | True                                                             |
 | Está indexado             | False                                                            |
 | En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

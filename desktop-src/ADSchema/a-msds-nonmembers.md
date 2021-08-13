@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-non-members
-description: Este atributo tiene el mismo propósito que el atributo que no es de seguridad, pero se aplican las reglas de ámbito.
+title: Atributo ms-DS-Non-Members
+description: Este atributo tiene el mismo propósito que el atributo No miembro de seguridad, pero con reglas de ámbito aplicadas.
 ms.assetid: 11d3d030-3643-4ed2-a52e-a57f32e9597f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-non-members
-- atributo msDS-nonmembers esquema de AD
+- Esquema de AD del atributo ms-DS-Non-Members
+- Esquema de AD del atributo msDS-NonMembers
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca8ca19af90f2f534f974863aa7d766f6be4624b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 350f5bde228304f991b2c80f51e4e748ba8f2b91209dcf75e39dddad71546ecb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683729"
 ---
-# <a name="ms-ds-non-members-attribute"></a>atributo MS-DS-non-members
+# <a name="ms-ds-non-members-attribute"></a>Atributo ms-DS-Non-Members
 
-Este atributo tiene el mismo propósito que el atributo que no es de seguridad, pero se aplican las reglas de ámbito.
+Este atributo tiene el mismo propósito que el atributo No miembro de seguridad, pero con reglas de ámbito aplicadas.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-no miembros                       |
-| Nombre para mostrar de LDAP | msDS-no miembro                         |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Administrador de AzRoles                           |
+| CN                | ms-DS-Non-Members                       |
+| Ldap-Display-Name | msDS-NonMembers                         |
+| Size              | \-                                      |
+| Actualizar privilegios  | AzRoles Admin                           |
 | Frecuencia de actualización  | Durante la inicialización y el cambio de directiva.    |
 | Attribute-Id      | 1.2.840.113556.1.4.1793                 |
-| System-ID-GUID    | cafcb1de-f23c-46b5-adf7-1e64957bd5db    |
+| System-Id-Guid    | cafcb1de-f23c-46b5-adf7-1e64957bd5db    |
 | Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -54,13 +54,13 @@ Este atributo tiene el mismo propósito que el atributo que no es de seguridad, 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 2014                                |
+| Id. de vínculo                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | False                               |
-| Tiene un único valor       | False                               |
+| Es de un solo valor       | False                               |
 | Está indexado             | False                               |
 | En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -75,13 +75,13 @@ Este atributo tiene el mismo propósito que el atributo que no es de seguridad, 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 2014                                |
+| Id. de vínculo                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | False                               |
-| Tiene un único valor       | False                               |
+| Es de un solo valor       | False                               |
 | Está indexado             | False                               |
 | En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -96,13 +96,13 @@ Este atributo tiene el mismo propósito que el atributo que no es de seguridad, 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 2014                                |
+| Id. de vínculo                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | False                               |
-| Tiene un único valor       | False                               |
+| Es de un solo valor       | False                               |
 | Está indexado             | False                               |
 | En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -117,13 +117,13 @@ Este atributo tiene el mismo propósito que el atributo que no es de seguridad, 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 2014                                |
+| Id. de vínculo                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | False                               |
-| Tiene un único valor       | False                               |
+| Es de un solo valor       | False                               |
 | Está indexado             | False                               |
 | En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -138,13 +138,13 @@ Este atributo tiene el mismo propósito que el atributo que no es de seguridad, 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 2014                                |
+| Id. de vínculo                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | False                               |
-| Tiene un único valor       | False                               |
+| Es de un solo valor       | False                               |
 | Está indexado             | False                               |
 | En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

@@ -1,9 +1,9 @@
 ---
-title: 'RWStructuredBuffer:: Getdimensions ((función)'
-description: 'Obtiene las dimensiones de recursos. | RWStructuredBuffer:: Getdimensions ((función)'
+title: RwStructuredBuffer::GetDimensions (Función)
+description: Obtiene las dimensiones de recursos. | RwStructuredBuffer::GetDimensions (Función)
 ms.assetid: 842b3d21-2e2b-4906-93ee-0252b2e8cf85
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0e3868f33e372472999c29bffdd8e12bc8ef09b7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 760a546d7d60afbb41438416a9602ab55981834acd9969bc535c9a82df6e5e50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118789931"
 ---
-# <a name="rwstructuredbuffergetdimensions-function"></a>RWStructuredBuffer:: Getdimensions ((función)
+# <a name="rwstructuredbuffergetdimensions-function"></a>RwStructuredBuffer::GetDimensions (Función)
 
 Obtiene las dimensiones de recursos.
 
@@ -37,21 +37,21 @@ void GetDimensions(
 
 <dl> <dt>
 
-*numStructs* \[ enuncia\]
+*numStructs* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-El número de estructuras en el recurso.
+Número de estructuras del recurso.
 
 </dd> <dt>
 
-*STRIDE* \[ enuncia\]
+*stride* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Intervalo, en bytes, de cada elemento de la estructura.
+El paso, en bytes, de cada elemento de estructura.
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ Nada
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -80,7 +80,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [RWStructuredBuffer](sm5-object-rwstructuredbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

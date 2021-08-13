@@ -7,16 +7,16 @@ MSHAttr:
 title: SimIccID (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f74a93e9fef6ad41ef4056c0a813c71d98e2ff6e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: f8a6b80f8cbc4e4c4f60961586093535a782af4e957d2a84e2e9e37d14c78230
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745327"
 ---
 # <a name="span-idwwan_profile_v4element_1_simiccidspanmodemdmconfigprofilesimiccid-v4"></a><span id="WWAN_profile_v4.element_1_SimIccID"></span>ModemDMConfigProfile \/ SimIccID (v4)
 
-El número de Identifcation de SIM para dispositivos GSM. Para obtener más información, consulte la documentación del elemento [**SimIccID**](./schema-simiccid-mbnprofile-element.md) v1.
+Número de identificación de SIM para dispositivos GSM. Para más información, consulte la documentación del elemento [**SimIccID**](./schema-simiccid-mbnprofile-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -62,8 +62,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
+<td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>

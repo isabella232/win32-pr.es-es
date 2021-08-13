@@ -4,8 +4,8 @@ description: Deshabilita la supervisión en una unidad determinada.
 ms.assetid: 2ad37dd4-7d80-4697-9dbb-abb329a34ff7
 keywords:
 - Deshabilitar método Restaurar sistema
-- Deshabilitar método Restaurar sistema, clase SystemRestore
-- Clase SystemRestore Restaurar sistema, deshabilitar método
+- Disable method Restaurar sistema , SystemRestore (clase)
+- SystemRestore class Restaurar sistema , Disable (método)
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19556833684aeab0cc126eff7aff0a258335c8e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41a05d53ee13e2f06c2f4765d2947f49a417ed798965406185619dfce207cf76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452926"
 ---
 # <a name="disable-method-of-the-systemrestore-class"></a>Método Disable de la clase SystemRestore
 
@@ -42,16 +42,16 @@ uint32 Disable(
 
 <dl> <dt>
 
-*Unidad* \[ de de\]
+*Unidad* \[ En\]
 </dt> <dd>
 
-Unidad que se va a deshabilitar. La cadena de unidad debe tener el formato "C: \\ ". Si este parámetro es la unidad del sistema o una cadena vacía (""), no se supervisan las unidades.
+Unidad que se va a deshabilitar. La cadena de unidad debe tener el formato "C: \\ ". Si este parámetro es la unidad del sistema o una cadena vacía (""), no se supervisa ninguna unidad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. De lo contrario, el método devuelve uno de los códigos de error COM definidos en WinError. h.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. De lo contrario, el método devuelve uno de los códigos de error COM definidos en WinError.h.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -83,10 +83,10 @@ End If
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                         |
 | Espacio de nombres<br/>                | Raíz \\ predeterminada<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>MOF</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 
 

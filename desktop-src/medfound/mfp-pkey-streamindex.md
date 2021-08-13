@@ -1,30 +1,30 @@
 ---
-description: Contiene el índice de base cero de una secuencia de medios para un evento MFPlay.
+description: Contiene el índice de base cero de un flujo multimedia para un evento MFPlay.
 ms.assetid: 086fcb1e-f75a-4f38-9fe1-77d30f64bc89
-title: Propiedad MFP_PKEY_StreamIndex (mfplay. h)
+title: MFP_PKEY_StreamIndex propiedad (Mfplay.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 341368a9a2a3e4911279df4c0bc116b4c6c1bc52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a08fe432dc18caf2bf1a7ec946236aa6560382b2f19b6b98e4b0a1369dc278a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738499"
 ---
-# <a name="mfp_pkey_streamindex-property"></a>MFP \_ PKEY \_ propiedad StreamIndex
+# <a name="mfp_pkey_streamindex-property"></a>Propiedad \_ StreamIndex de PKEY de MFP \_
 
 > [!IMPORTANT]
-> En desuso. Esta API se puede quitar de las versiones futuras de Windows. Las aplicaciones deben usar la [sesión multimedia](media-session.md) para la reproducción.
+> En desuso. Esta API puede quitarse de futuras versiones de Windows. Las aplicaciones deben usar la [sesión multimedia para](media-session.md) la reproducción.
 
  
 
-Contiene el índice de base cero de una secuencia de medios para un evento MFPlay.
+Contiene el índice de base cero de un flujo multimedia para un evento MFPlay.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
@@ -42,9 +42,9 @@ VT \_ UI4
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>Mfplay. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                             |
+| Header<br/>                   | <dl> <dt>Mfplay.h</dt> </dl> |
 
 
 
@@ -52,10 +52,10 @@ VT \_ UI4
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[**MFP \_ MF ( \_ evento)**](/windows/desktop/api/mfplay/ns-mfplay-mfp_mf_event)
+[**EVENTO MFP \_ MF \_**](/windows/desktop/api/mfplay/ns-mfplay-mfp_mf_event)
 </dt> </dl>
 
  

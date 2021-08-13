@@ -4,12 +4,12 @@ ms.assetid: 74fbfc16-541f-4f80-a72f-26b67dc09a93
 title: Paso 2. Declarar la clase Filter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88be97e47d529ffa22c90e9c8c200160dbd5f261
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ec3e814802a67185f320345dea2f397188999ecafb9596b9b368a4b6eff8e240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652201"
 ---
 # <a name="step-2-declare-the-filter-class"></a>Paso 2. Declarar la clase Filter
 
@@ -29,7 +29,7 @@ class CRleFilter : public CTransformFilter
 
 Cada una de las clases de filtro tiene clases de pin asociadas. En función de las necesidades específicas del filtro, es posible que tenga que invalidar las clases de pin. En el caso de **CTransformFilter,** los pines delegan la mayor parte de su trabajo en el filtro, por lo que probablemente no necesite invalidar los pines.
 
-Debe generar un CLSID único para el filtro. Puede usar la utilidad Guidgen o Uuidgen; nunca copie un GUID existente. Hay varias maneras de declarar un CLSID. En el ejemplo siguiente se usa la **\_ macro DEFINE GUID:**
+Debe generar un CLSID único para el filtro. Puede usar la utilidad Guidgen o Uuidgen; nunca copie un GUID existente. Hay varias maneras de declarar un CLSID. En el ejemplo siguiente se usa la macro **\_ DEFINE GUID:**
 
 
 ```C++
@@ -60,13 +60,13 @@ CRleFilter::CRleFilter()
 
 Observe que uno de los parámetros del constructor [**CTransformFilter**](ctransformfilter-ctransformfilter.md) es el CLSID definido anteriormente.
 
-Siguiente: [Paso 3. Admite la negociación de tipos de medios](step-3--support-media-type-negotiation.md).
+Siguiente: [Paso 3. Admitir negociación de tipos de medios](step-3--support-media-type-negotiation.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Escribir filtros de DirectShow](writing-directshow-filters.md)
+[Escribir DirectShow filtros](writing-directshow-filters.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Address-entry-display-Table (atributo)
-description: Tabla de presentación para una entrada de dirección.
+title: Atributo Address-Entry-Display-Table
+description: Tabla para mostrar de una entrada de dirección.
 ms.assetid: e563bf38-825b-43f9-b10e-29079bba3f93
 ms.tgt_platform: multiple
 keywords:
-- Address-entry-display-esquema de AD de atributo de tabla
-- addressEntryDisplayTable esquema de AD de atributos
+- Esquema de AD del atributo Address-Entry-Display-Table
+- Esquema de AD del atributo addressEntryDisplayTable
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7de30cfdbd1cc5f8c179eda8282ff1c1ca48c15
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 22fe3835ba49ef72112f31f658441db22451037184f7ce13bdd5f9e07086d362
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688859"
 ---
-# <a name="address-entry-display-table-attribute"></a>Address-entry-display-Table (atributo)
+# <a name="address-entry-display-table-attribute"></a>Atributo Address-Entry-Display-Table
 
-Tabla de presentación para una entrada de dirección.
+Tabla para mostrar de una entrada de dirección.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Address-entry-display-Table                           |
-| Nombre para mostrar de LDAP | addressEntryDisplayTable                              |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Address-Entry-Display-Table                           |
+| Ldap-Display-Name | addressEntryDisplayTable                              |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.324                                |
-| System-ID-GUID    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
+| System-Id-Guid    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,13 +55,13 @@ Tabla de presentación para una entrada de dirección.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -76,13 +76,13 @@ Tabla de presentación para una entrada de dirección.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -97,13 +97,13 @@ Tabla de presentación para una entrada de dirección.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -118,13 +118,13 @@ Tabla de presentación para una entrada de dirección.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -139,13 +139,13 @@ Tabla de presentación para una entrada de dirección.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -160,13 +160,13 @@ Tabla de presentación para una entrada de dirección.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |

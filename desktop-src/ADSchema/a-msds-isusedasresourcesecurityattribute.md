@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-IS-use-as-Resource-Security-Attribute
-description: En el caso de una propiedad de recurso, este atributo indica si se utiliza como un atributo seguro.
+title: Atributo ms-DS-Is-Used-As-Resource-Security-Attribute
+description: Para una propiedad de recurso, este atributo indica si se está utilizando como atributo seguro.
 ms.assetid: d020515f-5225-4576-bcc8-86cef84556ac
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-IS-use-as-Resource-Security-Attribute atributo AD Schema
-- Esquema de AD de atributo msDS-IsUsedAsResourceSecurityAttribute
+- Esquema de AD del atributo ms-DS-Is-Used-as-Resource-Security-Attribute
+- Esquema de AD del atributo msDS-IsUsedAsResourceSecurityAttribute
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d957e25974202e79a49f9f9f0d0ee38ef23c819
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 09c2226c89f1810a7dba7e24b6cb2b299d0246b985b63e9a2a584360352f9cab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425841"
 ---
-# <a name="ms-ds-is-used-as-resource-security-attribute-attribute"></a>atributo MS-DS-IS-use-as-Resource-Security-Attribute
+# <a name="ms-ds-is-used-as-resource-security-attribute-attribute"></a>Atributo ms-DS-Is-Used-As-Resource-Security-Attribute
 
-En el caso de una propiedad de recurso, este atributo indica si se utiliza como un atributo seguro.
+Para una propiedad de recurso, este atributo indica si se está utilizando como atributo seguro.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------|
-| CN                | MS-DS-IS-use-as-Resource-Security-Attribute |
-| Nombre para mostrar de LDAP | msDS-IsUsedAsResourceSecurityAttribute       |
-| Tamaño              | \-                                           |
-| Actualizar privilegio  | \-                                           |
+| CN                | ms-DS-Is-Used-As-Resource-Security-Attribute |
+| Ldap-Display-Name | msDS-IsUsedAsResourceSecurityAttribute       |
+| Size              | \-                                           |
+| Privilegio actualizar  | \-                                           |
 | Frecuencia de actualización  | \-                                           |
 | Attribute-Id      | 1.2.840.113556.1.4.2095                      |
-| System-ID-GUID    | 51c9f89d-4730-468d-a2b5-1d493212d17e         |
-| Sintaxis            | [**Booleano**](s-boolean.md)                 |
+| System-Id-Guid    | 51c9f89d-4730-468d-a2b5-1d493212d17e         |
+| Syntax            | [**Booleana**](s-boolean.md)                 |
 
 
 
@@ -48,20 +48,20 @@ En el caso de una propiedad de recurso, este atributo indica si se utiliza como 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Propiedad MS-DS-Resource-**](c-msds-resourceproperty.md)<br/> |
+| Clases usadas en        | [**ms-DS-Resource-Property**](c-msds-resourceproperty.md)<br/> |
 
 
 

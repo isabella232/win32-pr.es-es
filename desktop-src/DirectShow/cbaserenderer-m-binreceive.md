@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si el filtro está procesando una llamada de recepción.
+description: Marca que indica si el filtro está procesando una llamada Receive.
 ms.assetid: 4b0d34c4-551a-4674-bda9-be67ed22d09b
-title: 'Miembro CBaseRenderer:: m_bInReceive (Renbase. h)'
+title: CBaseRenderer::m_bInReceive miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c5bcc3666200630575cacfdebac769f25545a077
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1059684d2c1905a7894294248f44f9ee97521d1e27ebc3be4a58d832603c642e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403067"
 ---
-# <a name="cbaserendererm_binreceive-member"></a>Miembro bInReceive CBaseRenderer:: m \_
+# <a name="cbaserendererm_binreceive-member"></a>Miembro CBaseRenderer::m \_ bInReceive
 
-Marca que indica si el filtro está procesando una llamada de **recepción** .
+Marca que indica si el filtro está procesando una **llamada Receive.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ BOOL m_bInReceive;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

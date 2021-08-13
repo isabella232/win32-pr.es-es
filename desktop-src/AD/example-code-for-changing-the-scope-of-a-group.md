@@ -4,19 +4,19 @@ description: Este tema contiene código de ejemplo para cambiar el ámbito de un
 ms.assetid: 4ae61101-f123-44bd-8bec-bade51d22217
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, cambiar el ámbito de un grupo
+- Active Directory ejemplos Active Directory , cambiar el ámbito de un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 641ad43604785a6aae5bb250061ff0a3b62c294e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: edbcbfb7e665b4f569fdef6d623bd7bfb947f94ece1de26ee062a70b07757300
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694548"
 ---
 # <a name="example-code-for-changing-the-scope-of-a-group"></a>Código de ejemplo para cambiar el ámbito de un grupo
 
-En el siguiente ejemplo de código de C++ se cambia el ámbito de un grupo.
+El siguiente ejemplo de código de C++ cambia el ámbito de un grupo.
 
 
 ```C++
@@ -54,7 +54,7 @@ En el siguiente ejemplo de código de C++ se cambia el ámbito de un grupo.
 
 
 
-En el siguiente ejemplo de código Visual Basic se cambia el ámbito de un grupo.
+En el ejemplo Visual Basic código siguiente se cambia el ámbito de un grupo.
 
 
 ```VB
@@ -72,9 +72,9 @@ CleanUp:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

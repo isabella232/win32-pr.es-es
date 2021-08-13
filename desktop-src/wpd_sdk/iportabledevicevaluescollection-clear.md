@@ -1,7 +1,7 @@
 ---
 description: El método Clear libera todos los elementos de la colección.
 ms.assetid: 151d1f61-11f0-40f0-8da1-79e9eb2001ce
-title: 'IPortableDeviceValuesCollection:: CLEAR (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValuesCollection::Clear (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: bf826b8e8a2035a0d84aec76979616fcccee9948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cc810ae7871ffcd5bffc50eabda8682f1d2cd334d6e0b09fac715d3749f300d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697029"
 ---
-# <a name="iportabledevicevaluescollectionclear-method"></a>IPortableDeviceValuesCollection:: CLEAR (método)
+# <a name="iportabledevicevaluescollectionclear-method"></a>IPortableDeviceValuesCollection::Clear (Método)
 
-El método **Clear** libera todos los elementos de la colección.
+El **método Clear** libera todos los elementos de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -54,7 +54,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="remarks"></a>Observaciones
 
-El método libera toda la memoria asignada a los elementos de la colección.
+El método libera toda la memoria asignada para los elementos de la colección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ El método libera toda la memoria asignada a los elementos de la colección.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ El método libera toda la memoria asignada a los elementos de la colección.
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)
+[**IPortableDeviceValuesCollection (Interfaz)**](iportabledevicevaluescollection.md)
 </dt> </dl>
 
  

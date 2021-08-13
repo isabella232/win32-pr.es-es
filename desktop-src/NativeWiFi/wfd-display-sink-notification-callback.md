@@ -1,7 +1,7 @@
 ---
-description: Define la función de devolución \# de llamada&8212; que se implementa en la aplicación&\# 8212; que se especificó para la función WFDStartDisplaySink.
+description: Define la función de devolución&8212; que implementa en la aplicación&8212; que se especificó para la \# \# función WFDStartDisplaySink.
 ms.assetid: 0D4C00FD-4ED6-4F0F-BB72-0A1FCC05DB37
-title: WFD_DISPLAY_SINK_NOTIFICATION_CALLBACK función de devolución de llamada (Wfdsink. h)
+title: WFD_DISPLAY_SINK_NOTIFICATION_CALLBACK de devolución de llamada (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - wfdsink.h
-ms.openlocfilehash: c576f88a5b7f97484647c4c06f44522a5c3c379f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7066f45b714c28b53747d0d0f1851bd94ac2ac902e5b4adba1d0746e8328b3b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619980"
 ---
-# <a name="wfd_display_sink_notification_callback-callback-function"></a>Función de devolución de llamada de devolución de llamada de \_ \_ notificación del receptor \_ \_ de WFD
+# <a name="wfd_display_sink_notification_callback-callback-function"></a>Función de devolución \_ de llamada WFD DISPLAY \_ SINK \_ NOTIFICATION \_ CALLBACK
 
-La función de **devolución de llamada de notificación del receptor de visualización de WFD \_ \_ \_ \_** define la función de devolución de llamada, que se implementa en la aplicación, que se especificó para la función [**WFDStartDisplaySink**](wfdstartdisplaysink.md) .
+La **función WFD \_ DISPLAY SINK \_ NOTIFICATION \_ \_ CALLBACK** define la función de devolución de llamada (que se implementa en la aplicación) que se especificó para la [**función WFDStartDisplaySink.**](wfdstartdisplaysink.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,24 +41,24 @@ DWORD CALLBACK WFD_DISPLAY_SINK_NOTIFICATION_CALLBACK(
 
 <dl> <dt>
 
-*pvContext* \[ en, opcional\]
+*pvContext* \[ in, opcional\]
 </dt> <dd>
 
-Un puntero de contexto opcional que se pasa a la función de devolución de llamada.
+Puntero de contexto opcional pasado a la función de devolución de llamada.
 
 </dd> <dt>
 
-*pNotification* \[ de\]
+*pNotification* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura que contiene datos sobre la notificación de presentación del receptor.
+Puntero a una estructura que contiene datos sobre la notificación del receptor de pantalla.
 
 </dd> <dt>
 
-*pNotificationResult* \[ in, out, opcional\]
+*pNotificationResult* \[ in, out, optional\]
 </dt> <dd>
 
-Un puntero a un struct que contiene los datos que la aplicación puede establecer opcionalmente para indicar el resultado de procesar la notificación de presentación del receptor.
+Puntero a una estructura que contiene datos que la aplicación puede establecer opcionalmente para indicar el resultado del procesamiento de la notificación del receptor de pantalla.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ Un puntero a un struct que contiene los datos que la aplicación puede establece
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl> |
 
 
 

@@ -4,20 +4,20 @@ ms.assetid: 9e1af25f-d55c-45db-8c76-abf814e16700
 title: Ejemplo de WavSink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e96ecca551b6ea3e6837f211f0afcb34818d635
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d1bd754e426d848e9d84aea337225ea51940d8727c63d1e1c78c93aeea43110
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737140"
 ---
 # <a name="wavsink-sample"></a>Ejemplo de WavSink
 
-Muestra cómo implementar un receptor de multimedia personalizado en Microsoft Media Foundation. En el ejemplo se implementa un receptor de archivo que escribe audio PCM sin comprimir en un archivo. wav.
+Muestra cómo implementar un receptor de medios personalizado en Microsoft Media Foundation. El ejemplo implementa un receptor de archivo que escribe audio PCM sin comprimir en un archivo .wav.
 
-## <a name="apis-demonstrated"></a>API mostradas
+## <a name="apis-demonstrated"></a>API demostradas
 
-Este ejemplo muestra las siguientes interfaces de Media Foundation:
+En este ejemplo se muestran las interfaces Media Foundation siguientes:
 
 -   [**IMFClockStateSink**](/windows/desktop/api/mfidl/nn-mfidl-imfclockstatesink)
 -   [**IMFFinalizableMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imffinalizablemediasink)
@@ -27,10 +27,10 @@ Este ejemplo muestra las siguientes interfaces de Media Foundation:
 
 ## <a name="usage"></a>Uso
 
-El ejemplo WavSink contiene dos proyectos de Visual Studio:
+El ejemplo WavSink contiene dos proyectos Visual Studio proyecto:
 
--   WavSink. vcproj crea una biblioteca estática que contiene la implementación del receptor de medios.
--   WriteWavFile. vcproj crea una aplicación de consola que usa el receptor de medios para generar un archivo. wav. Esta aplicación se vincula a la biblioteca creada por el proyecto WavSink.
+-   WavSink.vcproj compila una biblioteca estática que contiene la implementación del receptor multimedia.
+-   WriteWavFile.vcproj compila una aplicación de consola que usa el receptor multimedia para generar un archivo .wav. Esta aplicación se vincula a la biblioteca creada por el proyecto WavSink.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,7 +38,7 @@ El ejemplo WavSink contiene dos proyectos de Visual Studio:
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 
 
 
@@ -46,7 +46,7 @@ El ejemplo WavSink contiene dos proyectos de Visual Studio:
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Este ejemplo está disponible en el [repositorio de github de ejemplos de Windows clásico](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/wavsink).
+Este ejemplo está disponible en el repositorio [de github Windows ejemplos clásicos](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/wavsink).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -55,7 +55,7 @@ Este ejemplo está disponible en el [repositorio de github de ejemplos de Window
 [Muestras de SDK de Media Foundation](media-foundation-sdk-samples.md)
 </dt> <dt>
 
-[Receptores de medios](media-sinks.md)
+[Receptores multimedia](media-sinks.md)
 </dt> </dl>
 
  

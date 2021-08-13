@@ -1,9 +1,9 @@
 ---
 title: Estructura VarFileInfo
-description: Representa la organización de los datos en un recurso de versión de archivo. Contiene información de versión que no depende de una combinación de idioma y página de códigos determinada.
+description: Representa la organización de datos en un recurso de versión de archivo. Contiene información de versión que no depende de una combinación de idioma y página de códigos determinada.
 ms.assetid: 3b667778-fb08-4195-a88e-ac04baf45fee
 keywords:
-- Menús de la estructura VarFileInfo y otros recursos
+- Menús de estructura VarFileInfo y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 26326403abef41d131bf25acf5d5d8be7728cd0f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddae8f913e199e0a1219e5ec36012ba3a3eaf24708ca6771ec075b497107418e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733396"
 ---
 # <a name="varfileinfo-structure"></a>Estructura VarFileInfo
 
-Representa la organización de los datos en un recurso de versión de archivo. Contiene información de versión que no depende de una combinación de idioma y página de códigos determinada.
+Representa la organización de datos en un recurso de versión de archivo. Contiene información de versión que no depende de una combinación de idioma y página de códigos determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,18 +47,18 @@ typedef struct {
 **wLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-La longitud, en bytes, del bloque **VarFileInfo** completo, incluidas todas las estructuras indicadas por el miembro **secundario** .
+Longitud, en bytes, de todo el **bloque VarFileInfo,** incluidas todas las estructuras indicadas por el **miembro** Children.
 
 </dd> <dt>
 
 **wValueLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -69,11 +69,11 @@ Este miembro siempre es igual a cero.
 **wType**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-El tipo de datos del recurso de versión. Este miembro es 1 si el recurso de versión contiene datos de texto y 0 si el recurso de versión contiene datos binarios.
+Tipo de datos del recurso de versión. Este miembro es 1 si el recurso de versión contiene datos de texto y 0 si el recurso de versión contiene datos binarios.
 
 </dd> <dt>
 
@@ -84,37 +84,37 @@ Tipo: **WCHAR**
 
 </dd> <dd>
 
-Cadena Unicode L "VarFileInfo".
+Cadena Unicode L"VarFileInfo".
 
 </dd> <dt>
 
 **Relleno**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Tantas palabras como sea necesario para alinear el miembro **secundario** en un límite de 32 bits.
+Tantas palabras cero como sea necesario para alinear el **miembro Children** en un límite de 32 bits.
 
 </dd> <dt>
 
 **Children**
 </dt> <dd>
 
-Tipo: **[ **var**](var-str.md)**
+Tipo: **[ **Var**](var-str.md)**
 
 </dd> <dd>
 
-Normalmente contiene una lista de idiomas compatibles con la aplicación o el archivo DLL.
+Normalmente contiene una lista de idiomas que admite la aplicación o dll.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Esta estructura no es una estructura de lenguaje C verdadera porque contiene miembros de longitud variable. Esta estructura se creó únicamente para representar la organización de los datos en un recurso de versión y no aparece en ninguno de los archivos de encabezado incluidos en el kit de desarrollo de software (SDK) de Windows.
+Esta estructura no es una estructura verdadera del lenguaje C porque contiene miembros de longitud variable. Esta estructura se creó únicamente para representar la organización de datos en un recurso de versión y no aparece en ninguno de los archivos de encabezado incluidos con el Kit de desarrollo de software (SDK) de Windows.
 
-El miembro **secundario** de la estructura de [**vs \_ versionInfo**](vs-versioninfo.md) puede contener cero o una estructura **VarFileInfo** .
+El **miembro Children** de la estructura VS [**\_ VERSIONINFO**](vs-versioninfo.md) puede contener cero o una **estructura VarFileInfo.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -134,13 +134,13 @@ El miembro **secundario** de la estructura de [**vs \_ versionInfo**](vs-version
 **Referencia**
 </dt> <dt>
 
-[**Distribuidor**](var-str.md)
+[**Var**](var-str.md)
 </dt> <dt>
 
-[**VS \_ versionInfo**](vs-versioninfo.md)
+[**VS \_ VERSIONINFO**](vs-versioninfo.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Información de versión](version-information.md)

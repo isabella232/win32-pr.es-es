@@ -1,7 +1,7 @@
 ---
 description: Sección crítica que protege el estado de bloqueo.
 ms.assetid: 6d20cf4c-2c27-41e6-8d01-6cb5e3876a38
-title: 'Miembro CDynamicOutputPin:: m_BlockStateLock (Amfilter. h)'
+title: CDynamicOutputPin::m_BlockStateLock miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56d9175342218e8b82698fe9b89d15937d6913e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fa5382a30dcd434965c53e893d6818ab0f08a84c19ea0ddec53846c0c01c80f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656685"
 ---
-# <a name="cdynamicoutputpinm_blockstatelock-member"></a>Miembro BlockStateLock CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_blockstatelock-member"></a>Miembro CDynamicOutputPin::m \_ BlockStateLock
 
 Sección crítica que protege el estado de bloqueo.
 
@@ -40,10 +40,10 @@ CCritSec m_BlockStateLock;
 
 Mantenga esta sección crítica antes de usar cualquiera de las siguientes variables miembro:
 
--   [**CDynamicOutputPin:: m \_ BlockState**](cdynamicoutputpin-m-blockstate.md)
--   [**CDynamicOutputPin:: m \_ dwBlockCallerThreadID**](cdynamicoutputpin-m-dwblockcallerthreadid.md)
--   [**CDynamicOutputPin:: m \_ dwNumOutstandingOutputPinUsers**](cdynamicoutputpin-m-dwnumoutstandingoutputpinusers.md)
--   [**CDynamicOutputPin:: m \_ hNotifyCallerPinBlockedEvent**](cdynamicoutputpin-m-hnotifycallerpinblockedevent.md)
+-   [**CDynamicOutputPin::m \_ BlockState**](cdynamicoutputpin-m-blockstate.md)
+-   [**CDynamicOutputPin::m \_ dwBlockCallerThreadID**](cdynamicoutputpin-m-dwblockcallerthreadid.md)
+-   [**CDynamicOutputPin::m \_ dwNumOutstandingOutputPinUsers**](cdynamicoutputpin-m-dwnumoutstandingoutputpinusers.md)
+-   [**CDynamicOutputPin::m \_ hNotifyCallerPinBlockedEvent**](cdynamicoutputpin-m-hnotifycallerpinblockedevent.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,8 +51,8 @@ Mantenga esta sección crítica antes de usar cualquiera de las siguientes varia
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Mantenga esta sección crítica antes de usar cualquiera de las siguientes varia
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

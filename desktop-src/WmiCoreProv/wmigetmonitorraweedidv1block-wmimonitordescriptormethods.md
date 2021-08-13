@@ -1,5 +1,5 @@
 ---
-description: Obtiene los datos sin procesar de una estructura de datos de identificación mejorada de la presentación extendida (E-EDID) de vídeo electrónica estándar (VESA) que define los valores óptimos para configurar un monitor.
+description: Obtiene los datos sin procesar de una estructura de datos de identificación de pantalla extendida mejorada (E-EDID) de Video Electronics Standard Association (VESA) especificada que define la configuración óptima para configurar un monitor.
 ms.assetid: a787e66e-1b96-4dd5-8646-7aa2d281ac95
 title: Método WmiGetMonitorRawEEdidV1Block de la clase WmiMonitorDescriptorMethods
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 1af1ddb86a90ea9029d5cba408745fe3dafa69dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dacd0c44a6c0fa8270a65155583f8041616f98674d0798db8b13a72d13751653
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558090"
 ---
 # <a name="wmigetmonitorraweedidv1block-method-of-the-wmimonitordescriptormethods-class"></a>Método WmiGetMonitorRawEEdidV1Block de la clase WmiMonitorDescriptorMethods
 
-El método **WmiGetMonitorRawEEdidV1Block** obtiene los datos sin procesar de una estructura de datos de identificación mejorada de la presentación extendida (E-EDID) de vídeo electrónica de vídeo (VESA) que define la configuración óptima para la configuración de un monitor.
+El **método WmiGetMonitorRawEEdidV1Block** obtiene los datos sin procesar de una estructura de datos de identificación de pantalla extendida (E-EDID) mejorada de Video Electronics Standard Association (VESA) especificada que define la configuración óptima para configurar un monitor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,14 +41,14 @@ uint32 WmiGetMonitorRawEEdidV1Block(
 
 <dl> <dt>
 
-*BlockId* \[ de\]
+*BlockId* \[ En\]
 </dt> <dd>
 
-La identidad del bloque de datos.
+Identidad del bloque de datos.
 
 </dd> <dt>
 
-*BlockType* \[ enuncia\]
+*BlockType* \[ out\]
 </dt> <dd>
 
 Tipo de bloque de datos. En la tabla siguiente se enumeran los posibles valores devueltos.
@@ -57,9 +57,9 @@ Tipo de bloque de datos. En la tabla siguiente se enumeran los posibles valores 
 
 | Value                                                                                 | Significado                    |
 |---------------------------------------------------------------------------------------|----------------------------|
-| <dl> <dt>0 (0X0)</dt> </dl>    | No inicializado<br/>   |
+| <dl> <dt>0 (0x0)</dt> </dl>    | No inicializado<br/>   |
 | <dl> <dt>1 (0x1)</dt> </dl>    | Bloque base EDID<br/> |
-| <dl> <dt>2 (0X2)</dt> </dl>    | Asignación de bloques EDID<br/>  |
+| <dl> <dt>2 (0x2)</dt> </dl>    | Mapa de bloques EDID<br/>  |
 | <dl> <dt>255 (0xFF)</dt> </dl> | Otros<br/>           |
 
 
@@ -68,20 +68,20 @@ Tipo de bloque de datos. En la tabla siguiente se enumeran los posibles valores 
 
 </dd> <dt>
 
-*BlockContent* \[ enuncia\]
+*BlockContent* \[ out\]
 </dt> <dd>
 
-Una matriz de 128 bytes que contiene el contenido del bloque sin formato.
+Matriz de 128 bytes que contiene el contenido del bloque sin formato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero (0) para indicar que la operación se ha realizado correctamente. Cualquier otro número indica que hubo un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Devuelve cero (0) para indicar que se ha correcto. Cualquier otro número indica que hubo un error. Para obtener más información sobre los códigos de [**error,**](/windows/desktop/WmiSdk/wmi-error-constants) vea Constantes de error WMI o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se recuperan los bloques EDID de cualquier pantalla como matrices de 128 bits sin formato.
+En el ejemplo de código siguiente se recuperan los bloques EDID de cualquier presentación como matrices sin formato de 128 bits.
 
 
 ```CSharp
@@ -126,8 +126,8 @@ static void Main(string[] args)
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

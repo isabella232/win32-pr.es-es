@@ -1,17 +1,17 @@
 ---
 description: Indica la dirección del procesamiento de saturación aplicado por la cámara cuando se tomó la foto.
 ms.assetid: 209edf55-fd6c-416b-b175-346f5158fc2a
-title: System. Photo. saturación
+title: System.Photo.Saturation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50655b1d9344bb3c25576de9ece3ac6ef2bba95c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d00976c6145f170bffa3921beb1306cb63c14487e08b5a69ad96f76ba4fe1651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723621"
 ---
-# <a name="systemphotosaturation"></a>System. Photo. saturación
+# <a name="systemphotosaturation"></a>System.Photo.Saturation
 
 Indica la dirección del procesamiento de saturación aplicado por la cámara cuando se tomó la foto.
 
@@ -78,7 +78,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -105,7 +105,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -123,7 +123,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

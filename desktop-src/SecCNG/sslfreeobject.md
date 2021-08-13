@@ -1,7 +1,7 @@
 ---
-description: Libera un objeto de clave, hash o proveedor.
+description: Libera un objeto de clave, hash u proveedor.
 ms.assetid: 73fa0a08-4654-4515-bdb2-9951936b689a
-title: Función SslFreeObject (Sslprovider. h)
+title: Función SslFreeObject (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: e7d10059942080e7794da7e6b87613189dcf9844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7415ac31147f08bec038da5af57e8a4bc0cc4d2d3f39cb3b8391f42dfcff21b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906494"
 ---
-# <a name="sslfreeobject-function"></a>SslFreeObject función)
+# <a name="sslfreeobject-function"></a>Función SslFreeObject
 
-La función **SslFreeObject** libera un objeto Key, hash o Provider.
+La **función SslFreeObject** libera un objeto de clave, hash o proveedor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ SECURITY_STATUS WINAPI SslFreeObject(
 
 <dl> <dt>
 
-*hObject* \[ de\]
+*hObject* \[ En\]
 </dt> <dd>
 
-Identificador del objeto que se va a liberar.
+Identificador del objeto que se liberará.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -56,18 +56,18 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | Un identificador interno no es válido.<br/>  |
-| <dl> <dt>**Estado \_ de \_Identificador no válido**</dt> <dt>0xC0000008L</dt> </dl> | El identificador proporcionado no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Un identificador interno no es válido.<br/>  |
+| <dl> <dt>**STATUS \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0xC0000008L</dt> </dl> | El identificador proporcionado no es válido.<br/> |
 
 
 
@@ -79,9 +79,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

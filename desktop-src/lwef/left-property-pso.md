@@ -1,19 +1,19 @@
 ---
-title: Left (Propiedad, objeto PropertySheet)
-description: Obtenga información sobre la propiedad de objeto Left PropertySheet. Microsoft Agent está en desuso a partir de Windows 7.
+title: Left (propiedad, objeto PropertySheet)
+description: Obtenga información sobre la propiedad de objeto Left PropertySheet. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: 81b90391-300f-4100-98fe-7657223e3bfd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccf1ecf1b5dfe97e66e7b6d73569c98abc8de9a4
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: da175801dcf6f6842999b2fba1285d9e0e6f5c621a12bbb387f1e95390e07b4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476363"
 ---
-# <a name="left-property-propertysheet-object"></a>Left (Propiedad, objeto PropertySheet)
+# <a name="left-property-propertysheet-object"></a>Left (propiedad, objeto PropertySheet)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Devuelve un valor entero que especifica el borde izquierdo actual, en píxeles, 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent!". PropertySheet.Left**
+*agent,. PropertySheet.Left**
 
 </dd> </dl>
 

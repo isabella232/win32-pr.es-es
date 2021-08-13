@@ -1,7 +1,7 @@
 ---
-description: Obtiene el valor de una propiedad del conjunto de propiedades de un elemento. La propiedad se puede especificar por nombre o por el identificador de formato del conjunto de propiedades (FMTID) y el identificador de propiedad (PID).
+description: Obtiene el valor de una propiedad del conjunto de propiedades de un elemento. La propiedad se puede especificar por nombre o por el identificador de formato (FMTID) y el identificador de propiedad (PID) del conjunto de propiedades.
 ms.assetid: ca787d7b-d95a-45b9-9627-fd505f99f868
-title: Método ShellFolderItem. ExtendedProperty (Shldisp. h)
+title: Método ShellFolderItem.ExtendedProperty (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 614e42512b17a0d8a6950ac96914128b8746c685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5aa8ab3ba61d752cfe4d9f8ecd29bf4fcd06c3dbadde94e51ac9a05a8504b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452821"
 ---
-# <a name="shellfolderitemextendedproperty-method"></a>ShellFolderItem. ExtendedProperty, método
+# <a name="shellfolderitemextendedproperty-method"></a>Método ShellFolderItem.ExtendedProperty
 
-Obtiene el valor de una propiedad del conjunto de propiedades de un elemento. La propiedad se puede especificar por nombre o por el identificador de formato del conjunto de propiedades (FMTID) y el identificador de propiedad (PID).
+Obtiene el valor de una propiedad del conjunto de propiedades de un elemento. La propiedad se puede especificar por nombre o por el identificador de formato (FMTID) y el identificador de propiedad (PID) del conjunto de propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,34 +39,34 @@ retVal = ShellFolderItem.ExtendedProperty(
 
 <dl> <dt>
 
-*sPropName* \[ de\]
+*sPropName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valor de **cadena** que especifica la propiedad. Para obtener información detallada, consulte la sección Comentarios.
+Valor **String** que especifica la propiedad . Para obtener información detallada, consulte la sección Comentarios.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **variante \** _
+Tipo: **\* Variant**
 
-Cuando este método devuelve un valor, contiene el valor de la propiedad, si existe para el elemento especificado. El valor tendrá tipos completos; por ejemplo, las fechas se devuelven como fechas, no como cadenas.
+Cuando este método devuelve un resultado, contiene el valor de la propiedad , si existe para el elemento especificado. El valor tendrá escritura completa; por ejemplo, las fechas se devuelven como fechas, no como cadenas.
 
-Este método devuelve una cadena de longitud cero si la propiedad es válida pero no existe para el elemento especificado o un código de error en caso contrario.
+Este método devuelve una cadena de longitud cero si la propiedad es válida pero no existe para el elemento especificado, o bien un código de error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Hay dos maneras de especificar una propiedad. La primera es asignar el nombre conocido de la propiedad, como "autor" o "fecha", para _sPropName *. Sin embargo, cada propiedad es un miembro de un conjunto de propiedades del modelo de objetos componentes (COM) y también se puede identificar especificando su identificador de formato (FMTID) y el identificador de propiedad (PID). Un [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) es un GUID que identifica el conjunto de propiedades y un [**PID**](../stg/structured-storage-serialized-property-set-format.md) es un entero que identifica una propiedad determinada dentro del conjunto de propiedades.
+Hay dos maneras de especificar una propiedad. La primera es asignar el nombre conocido de la propiedad, como "Author" o "Date", a *sPropName*. Sin embargo, cada propiedad es miembro de un conjunto de propiedades del Modelo de objetos componentes (COM) y también se puede identificar especificando su identificador de formato (FMTID) y el identificador de propiedad (PID). Un [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) es un GUID que identifica el conjunto de propiedades y un [**PID**](../stg/structured-storage-serialized-property-set-format.md) es un entero que identifica una propiedad determinada dentro del conjunto de propiedades.
 
-Especificar una propiedad por sus valores FMTID/PID suele ser más eficaz que usar su nombre. Para usar los valores de FMTID/PID de una propiedad con **ExtendedProperty**, deben combinarse en SCID. SCID es una cadena que contiene los valores de FMTID/PID con el formato "*FMTID * * PID*", donde FMTID es la forma de cadena del GUID del conjunto de propiedades. Por ejemplo, el SCID de la propiedad de autor del conjunto de propiedades de información de resumen es "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
+Especificar una propiedad por sus valores FMTID/PID suele ser más eficaz que usar su nombre. Para usar los valores FMTID/PID de una propiedad **con ExtendedProperty**, deben combinarse en un SCID. Un SCID es una cadena que contiene los valores FMTID/PID con el formato *"FMTID**PID",* donde FMTID es la forma de cadena del GUID del conjunto de propiedades. Por ejemplo, el SCID de la propiedad author del conjunto de información de resumen es "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
 
-Para obtener una lista de los FMTIDs y los PID actualmente admitidos por el Shell, consulte [**SHCOLUMNID**](./objects.md).
+Para obtener una lista de FMTID y PID que son compatibles actualmente con el shell, vea [**SHCOLUMNID**](./objects.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En este código de ejemplo se muestra cómo usar **ExtendedProperty** para recuperar las propiedades "title" y "author" de un documento de Word. Una vez que tenga el objeto [**ShellFolderItem**](shellfolderitem-object.md) asociado al archivo, *fiWordDoc* en este ejemplo, recupere el valor de la propiedad pasando su nombre a **ExtendedProperty**.
+En este código de ejemplo se muestra cómo usar **ExtendedProperty para** recuperar las propiedades "Title" y "Author" de un documento de Word. Una vez que tenga el [**objeto ShellFolderItem**](shellfolderitem-object.md) asociado al archivo, *fiWordDoc* en este ejemplo, recupere el valor de la propiedad pasando su nombre a **ExtendedProperty**.
 
 
 ```none
@@ -78,7 +78,7 @@ Doc_Author=fiWordDoc.ExtendedProperty("Author")
 
 
 
-Un enfoque más rápido y eficaz consiste en pasar un SCID a **ExtendedProperty**.
+Un enfoque más rápido y eficaz es pasar un SCID a **ExtendedProperty.**
 
 
 ```none
@@ -95,9 +95,9 @@ Doc_Author=fiWordDoc.ExtendedProperty(SCID_AUTHOR)
 
 
 
-En los siguientes ejemplos se muestra el uso correcto de este método para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso adecuado de este método para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -128,7 +128,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -207,9 +207,9 @@ End Sub
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

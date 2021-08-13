@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_SETINDENT (commctrl. h)
-description: Establece el ancho de la sangría de un control de vista de árbol y vuelve a dibujar el control para reflejar el nuevo ancho. Puede enviar este mensaje explícitamente o mediante la \_ macro SetIndent de TreeView.
+title: TVM_SETINDENT mensaje (Commctrl.h)
+description: Establece el ancho de sangría de un control de vista de árbol y vuelve a dibujar el control para reflejar el nuevo ancho. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetIndent.
 ms.assetid: 377da8fe-c8e6-479b-a283-f1811cbc3e58
 keywords:
-- TVM_SETINDENT controles de mensajes de Windows
+- TVM_SETINDENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f85263c7c4330a692dc08949870a0eaa92f2b22c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 538a89439909afe346ae8776d31a2104c7f6014664a33bdd3864bf43b0387e80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669670"
 ---
-# <a name="tvm_setindent-message"></a>\_Mensaje de SETINDENT TVM
+# <a name="tvm_setindent-message"></a>Mensaje \_ DE TVM SETINDENT
 
-Establece el ancho de la sangría de un control de vista de árbol y vuelve a dibujar el control para reflejar el nuevo ancho. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetIndent de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent) .
+Establece el ancho de sangría de un control de vista de árbol y vuelve a dibujar el control para reflejar el nuevo ancho. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetIndent.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,7 +45,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor de sangría mínima definido por el sistema suele ser de cinco píxeles, pero no es fijo. Para recuperar el valor exacto de la sangría mínima en un sistema determinado, envíe un mensaje **TVM \_ SETINDENT** con *wParam* establecido en cero. A continuación, envíe un mensaje [**TVM \_ GETINDENT**](tvm-getindent.md) para recuperar el valor de sangría mínima.
+El valor mínimo de sangría definido por el sistema suele ser de cinco píxeles, pero no es fijo. Para recuperar el valor exacto de la sangría mínima en un sistema determinado, envíe un mensaje **\_ TVM SETINDENT** con *wParam* establecido en cero. A continuación, [**envíe un mensaje \_ GETINDENT de TVM**](tvm-getindent.md) para recuperar el valor mínimo de sangría.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ El valor de sangría mínima definido por el sistema suele ser de cinco píxeles
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ El valor de sangría mínima definido por el sistema suele ser de cinco píxeles
 
 <dl> <dt>
 
-[**SetIndent de TreeView \_**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent)
+[**TreeView \_ SetIndent**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent)
 </dt> </dl>
 
  

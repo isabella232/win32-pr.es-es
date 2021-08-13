@@ -1,7 +1,7 @@
 ---
 description: Habilita o deshabilita el registro de depuración de una sección crítica determinada.
 ms.assetid: 6e6e3de4-8bea-4e28-b04e-54a52226b59a
-title: Función DbgLockTrace (Wxutil. h)
+title: Función DbgLockTrace (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8daf3c33b43bda95bb1d54145e9e5aebc6f89c2f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b55736b2efb8fd4cfbca40710caa930c200c84e1ceec9c8c4f7439468c1add1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654075"
 ---
-# <a name="dbglocktrace-function"></a>DbgLockTrace función)
+# <a name="dbglocktrace-function"></a>Función DbgLockTrace
 
 Habilita o deshabilita el registro de depuración de una sección crítica determinada.
 
@@ -46,14 +46,14 @@ void WINAPI DbgLockTrace(
 *pcCrit* 
 </dt> <dd>
 
-Puntero a una sección crítica de [**CCritSec**](ccritsec.md) .
+Puntero a una [**sección crítica de CCritSec.**](ccritsec.md)
 
 </dd> <dt>
 
 *fTrace* 
 </dt> <dd>
 
-Valor que especifica si el registro está habilitado. Use **true** para habilitar el registro o **false** para deshabilitarlo.
+Valor que especifica si el registro está habilitado. Use **TRUE** para habilitar el registro o **FALSE** para deshabilitarlo.
 
 </dd> </dl>
 
@@ -63,19 +63,19 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Utilice esta función para realizar un seguimiento de una sección crítica específica. De forma predeterminada, el registro de depuración de secciones críticas está deshabilitado debido al gran número de secciones críticas.
+Use esta función para hacer un seguimiento de una sección crítica específica. De forma predeterminada, el registro de depuración de secciones críticas está deshabilitado debido al gran número de secciones críticas.
 
 Para realizar un seguimiento de una sección crítica, realice los pasos siguientes:
 
-1.  Defina depurar o \_ depurar antes de incluir los encabezados de DirectShow.
-2.  Habilite el registro de depuración para las secciones críticas llamando a [**DbgSetModuleLevel**](dbgsetmodulelevel.md) con la marca de bloqueo del registro \_ .
-3.  Llame a **DbgLockTrace** en la sección crítica en la que desea realizar un seguimiento.
+1.  Defina DEBUG o \_ DEBUG antes de incluir los DirectShow encabezados.
+2.  Habilite el registro de depuración para secciones críticas mediante una llamada [**a DbgSetModuleLevel**](dbgsetmodulelevel.md) con la marca LOG \_ LOCKING.
+3.  Llame **a DbgLockTrace** en la sección crítica de la que desea hacer un seguimiento.
 
-En las compilaciones comerciales, la función **DbgLockTrace** no tiene ningún efecto.
+En las compilaciones comerciales, la **función DbgLockTrace** no tiene ningún efecto.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo realizar un seguimiento de una sección crítica.
+En el ejemplo de código siguiente se muestra cómo hacer un seguimiento de una sección crítica.
 
 
 ```
@@ -104,8 +104,8 @@ DbgTerminate();
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

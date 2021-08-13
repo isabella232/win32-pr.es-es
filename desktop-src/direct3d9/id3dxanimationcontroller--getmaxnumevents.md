@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número máximo de eventos que puede admitir el controlador de animación.
+description: Obtiene el número máximo de eventos que el controlador de animación puede admitir.
 ms.assetid: f76fe7e5-1173-403b-8af4-825476a851f1
-title: 'ID3DXAnimationController:: GetMaxNumEvents (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetMaxNumEvents (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c371255d6f66204c356d6dd7f056bc765fa76615
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fb7786d03b79a78f067fbfb1c8447336405c8a2e87bac18819178b2e158a2a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522796"
 ---
-# <a name="id3dxanimationcontrollergetmaxnumevents-method"></a>ID3DXAnimationController:: GetMaxNumEvents (método)
+# <a name="id3dxanimationcontrollergetmaxnumevents-method"></a>Método ID3DXAnimationController::GetMaxNumEvents
 
-Obtiene el número máximo de eventos que puede admitir el controlador de animación.
+Obtiene el número máximo de eventos que el controlador de animación puede admitir.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de eventos que puede administrar el controlador.
+Número máximo de eventos que el controlador puede administrar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Número máximo de eventos que puede administrar el controlador.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

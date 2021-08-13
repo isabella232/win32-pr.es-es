@@ -1,19 +1,19 @@
 ---
-description: Compara dos instancias de tipos de datos numéricos, o dos instancias de un objeto que admite una sobrecarga de <, y devuelve la menor de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+description: Compara dos instancias de tipo de datos numérico, o dos instancias de un objeto que admite una sobrecarga de <, y devuelve la más pequeña de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 ms.assetid: m:microsoft.directx_sdk.reference.xmmin(t,t)
-title: Plantilla XMMin (DirectXMath. h)
+title: Plantilla XMMin (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 550fd93c9776ad8547502b50817446e64f9bdd64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c2d78b64a66411c31570267c66a7e75171dcf9da039871c07c8bfc31df49149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499860"
 ---
 # <a name="xmmin-template"></a>Plantilla XMMin
 
-Compara dos instancias de tipos de datos numéricos, o dos instancias de un objeto que admite una sobrecarga de <, y devuelve la menor de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+Compara dos instancias de tipo de datos numérico, o dos instancias de un objeto que admite una sobrecarga de <, y devuelve la más pequeña de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -28,17 +28,17 @@ template<class T> T XMMin(
 
 <dl> <dt>
 
-<span id="a"></span><span id="A"></span>*un*
+<span id="a"></span><span id="A"></span>*Un*
 </dt> <dd>
 
-\[en \] especifica el primero de dos objetos.
+\[en \] Especifica el primero de dos objetos .
 
 </dd> <dt>
 
-<span id="b"></span><span id="B"></span>*b*
+<span id="b"></span><span id="B"></span>*B*
 </dt> <dd>
 
-\[en \] especifica dos de los dos objetos.
+\[en \] Especifica los dos de dos objetos .
 
 </dd> </dl>
 
@@ -46,25 +46,25 @@ template<class T> T XMMin(
 
 Devuelve el menor de los dos objetos de entrada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 `XMMin` es una plantilla y el tipo T se especifica cuando se crea una instancia de la plantilla.
 
 > [!Note]  
-> La `XMMin` plantilla es nueva para DirectXMath y no está disponible para XNAMath 2. x. `XMMin` está disponible como una macro en XNAMath 2. x.
+> La `XMMin` plantilla es nueva para DirectXMath y no está disponible para XNAMath 2.x. `XMMin` está disponible como macro en XNAMath 2.x.
 
  
 
 > [!Note]  
-> Idealmente, se usa STD:: min en lugar de `XMMin` . Para evitar conflictos con los encabezados de Windows con STD:: min, debe \# definir NOMINMAX antes de incluir los encabezados de Windows.
+> Lo ideal es usar std::min en lugar de `XMMin` . Para evitar conflictos con Windows encabezados con std::min, debe definir NOMINMAX antes de incluir \# Windows encabezados.
 
  
 
-**Espacio de nombres**: usar DirectX
+**Espacio de** nombres: uso de DirectX
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK de Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,15 +72,15 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de plantilla de la biblioteca de DirectXMath](ovw-xnamath-templates.md)
+[Funciones de plantilla de biblioteca de DirectXMath](ovw-xnamath-templates.md)
 </dt> <dt>
 
 [**XMMax**](xmmax-template.md)

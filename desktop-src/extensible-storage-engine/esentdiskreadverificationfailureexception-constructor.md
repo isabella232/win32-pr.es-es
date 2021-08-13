@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDiskReadVerificationFailureException'
-title: Constructor de EsentDiskReadVerificationFailureException
+description: 'Más información sobre: Constructor EsentDiskReadVerificationFailureException'
+title: Constructor EsentDiskReadVerificationFailureException
 TOCTitle: 'EsentDiskReadVerificationFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDiskReadVerificationFailureException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdiskreadverificationfailureexception.esentdiskreadverificationfailureexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7167aa9b6a5e7e36bcfb53380189363428ee6d71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ca5065211629c686b06a90b05cfc5e995aef94efe049519aaab75e3c4d9dc1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779412"
 ---
-# <a name="esentdiskreadverificationfailureexception-constructor"></a>Constructor de EsentDiskReadVerificationFailureException
+# <a name="esentdiskreadverificationfailureexception-constructor"></a>Constructor EsentDiskReadVerificationFailureException
 
 Inicializa una nueva instancia de la clase EsentDiskReadVerificationFailureException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDiskReadVerificationFailureException()
 public EsentDiskReadVerificationFailureException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDiskReadVerificationFailureException()
 
 [Miembros de EsentDiskReadVerificationFailureException](./esentdiskreadverificationfailureexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

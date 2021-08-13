@@ -4,12 +4,12 @@ ms.assetid: d774c3b2-4caf-460a-ac32-0ed603491d5f
 title: Iniciar aplicaciones (ShellExecute, ShellExecuteEx, SHELLEXECUTEINFO)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3ae5640acdbf4d959b97607cc66a4fd8fe8ac24
-ms.sourcegitcommit: 89aa14b1f685f8d65d56ecbdb8bef12246c33cf9
+ms.openlocfilehash: 3b871e3560ce1cb0c38e91d6ea3baa7a9364c16e500be949b734f9b4b195a24e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "113508616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720223"
 ---
 # <a name="launching-applications-shellexecute-shellexecuteex-shellexecuteinfo"></a>Iniciar aplicaciones (ShellExecute, ShellExecuteEx, SHELLEXECUTEINFO)
 
@@ -25,7 +25,7 @@ Una vez que la aplicación ha ubicado un objeto de archivo, el paso siguiente su
 
 Para usar [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) o [**ShellExecuteEx,**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)la aplicación debe especificar el objeto de archivo o carpeta en el que se va a actuar y un *verbo* que especifique la operación. Para **ShellExecute,** asigne estos valores a los parámetros adecuados. Para **ShellExecuteEx**, rellene los miembros adecuados de una [**estructura SHELLEXECUTEINFO.**](/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa) También hay otros miembros o parámetros que se pueden usar para ajustar el comportamiento de las dos funciones.
 
-Los objetos de archivo y carpeta pueden formar parte del sistema de archivos u objetos virtuales, y se pueden identificar mediante rutas de acceso o punteros a listas de identificadores de elementos (PIDL).
+Los objetos de archivo y carpeta pueden formar parte del sistema de archivos o de objetos virtuales, y se pueden identificar mediante rutas de acceso o punteros a listas de identificadores de elementos (PIDL).
 
 ### <a name="object-verbs"></a>Verbos de objeto
 
@@ -56,7 +56,7 @@ Los verbos disponibles habitualmente incluyen:
 
 
 
-Cada verbo corresponde al comando que se usaría para iniciar la aplicación desde una ventana de consola. El **verbo** abierto es un buen ejemplo, ya que se admite normalmente. Para .exe archivos, **abrir** simplemente inicia la aplicación. Sin embargo, se usa con más frecuencia para iniciar una aplicación que funciona en un archivo determinado. Por ejemplo, Microsoft WordPad .txt abrir los archivos. El **verbo** abierto para un .txt archivo se correspondería con algo parecido al comando siguiente:
+Cada verbo corresponde al comando que se usaría para iniciar la aplicación desde una ventana de consola. El **verbo** abierto es un buen ejemplo, ya que se admite normalmente. Para .exe archivos, **abrir** simplemente inicia la aplicación. Sin embargo, se usa con más frecuencia para iniciar una aplicación que funciona en un archivo determinado. Por ejemplo, Microsoft WordPad .txt abrir los archivos. Por **tanto,** el verbo abierto .txt archivo se correspondería con algo parecido al comando siguiente:
 
 
 ```C++
@@ -65,7 +65,7 @@ C:\Program Files\Windows NT\Accessories\Wordpad.exe" "%1"
 
 
 
-Cuando se [**usa ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) o [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) para abrir un archivo .txt, Wordpad.exe se inicia con el archivo especificado como argumento. Algunos comandos pueden tener argumentos adicionales, como marcas, que se pueden agregar según sea necesario para iniciar la aplicación correctamente. Para obtener más información sobre los menús contextuales y verbos, vea [Extender los menús contextuales.](context.md)
+Cuando se usa [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) o [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) para abrir un archivo .txt, Wordpad.exe se inicia con el archivo especificado como argumento. Algunos comandos pueden tener argumentos adicionales, como marcas, que se pueden agregar según sea necesario para iniciar la aplicación correctamente. Para obtener más información sobre los menús contextuales y verbos, vea [Extender los menús contextuales.](context.md)
 
 En general, intentar determinar la lista de verbos disponibles para un archivo determinado es un poco complicado. En muchos casos, simplemente puede establecer el parámetro *lpVerb* en **NULL,** que invoca el comando predeterminado para el tipo de archivo. Este procedimiento suele ser equivalente a establecer *lpVerb* en "open", pero algunos tipos de archivo pueden tener un comando predeterminado diferente. Para obtener más información, vea [Extender los menús contextuales y](context.md) la documentación de referencia de [**ShellExecuteEx.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)
 
@@ -158,7 +158,7 @@ main()
 
 
 
-En primer lugar, la aplicación recupera el PIDL del directorio Windows y enumera su contenido hasta que encuentra el primer .bmp archivo. A diferencia del ejemplo anterior, [**se usa IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar el nombre de análisis del archivo en lugar de su nombre para mostrar. Dado que se trata de una carpeta del sistema de archivos, el nombre del análisis es una ruta de acceso completa, que es lo que se necesita [**para ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
+La aplicación recupera primero el PIDL del directorio Windows y enumera su contenido hasta que encuentra el primer .bmp archivo. A diferencia del ejemplo anterior, [**se usa IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar el nombre de análisis del archivo en lugar de su nombre para mostrar. Dado que se trata de una carpeta del sistema de archivos, el nombre del análisis es una ruta de acceso completa, que es lo que se necesita [**para ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
 
 Una vez que se .bmp el primer archivo, se asignan los valores adecuados a los miembros de una [**estructura SHELLEXECUTEINFO.**](/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa) El **miembro lpFile** se establece en el nombre de análisis del archivo y el miembro **lpVerb** en **NULL** para comenzar la operación predeterminada. En este caso, la operación predeterminada es "open". A continuación, la estructura se pasa a [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa), que inicia el controlador predeterminado para los archivos de mapa de bits, normalmente MSPaint.exe, para abrir el archivo. Una vez que se devuelve la función, se liberan los PIDL y se libera Windows interfaz [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) de la carpeta.
 

@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsServiceOperations (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsServiceOperations leen y escriben las propiedades descritas en la lista siguiente. Para obtener más información sobre los métodos de propiedad, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsServiceOperations (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsServiceOperations leen y escriben las propiedades descritas en la lista siguiente. Para obtener más información sobre los métodos de propiedad, vea Métodos de propiedad de interfaz.
 ms.assetid: ebddfc42-1d2f-495b-b57c-f57419b54ff8
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 654a92be1052d4e4c70e0274d719a49be965d8cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7f60b8fe1280e257ccd33f505b2b696a0d1a16228ebfaf8b0cabf7f1319964a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427611"
 ---
 # <a name="iadsserviceoperations-property-methods"></a>Métodos de propiedad IADsServiceOperations
 
-Los métodos de propiedad de la interfaz [**IADsServiceOperations**](/windows/desktop/api/Iads/nn-iads-iadsserviceoperations) leen y escriben las propiedades descritas en la lista siguiente. Para obtener más información sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsServiceOperations**](/windows/desktop/api/Iads/nn-iads-iadsserviceoperations) leen y escriben las propiedades descritas en la lista siguiente. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -37,153 +37,153 @@ Los métodos de propiedad de la interfaz [**IADsServiceOperations**](/windows/de
 
 Estado del servicio.
 
-Los valores posibles son los siguientes.
+A continuación se den los valores posibles.
 
 <dt>
 
 <span id="ADS_SERVICE_STOPPED"></span><span id="ads_service_stopped"></span>
 
-**Anuncios \_ de SERVICIO \_ detenido** (0x00000001)
+**ADS \_ SERVICE \_ STOPPED** (0x00000001)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_START_PENDING"></span><span id="ads_service_start_pending"></span>
 
-**Anuncios \_ de Inicio de servicio \_ \_ pendiente** (0x00000002)
+**ADS \_ INICIO \_ DEL \_ SERVICIO PENDIENTE** (0x00000002)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_STOP_PENDING"></span><span id="ads_service_stop_pending"></span>
 
-**Anuncios \_ de Detención de servicio \_ \_ pendiente** (0x00000003)
+**ADS \_ SERVICE \_ STOP \_ PENDING** (0X00000003)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_RUNNING"></span><span id="ads_service_running"></span>
 
-**Anuncios \_ de SERVICIO en \_ ejecución** (0x00000004)
+**ADS \_ SERVICE \_ RUNNING** (0x00000004)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_CONTINUE_PENDING"></span><span id="ads_service_continue_pending"></span>
 
-**Anuncios \_ de El servicio \_ continúa \_ pendiente** (0x00000005)
+**ADS \_ CONTINUAR \_ EL \_ SERVICIO PENDIENTE** (0x00000005)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_PAUSE_PENDING"></span><span id="ads_service_pause_pending"></span>
 
-**Anuncios \_ de La \_ pausa \_ del servicio está pendiente** (0x00000006)
+**ADS \_ PAUSA \_ DE \_ SERVICIO PENDIENTE** (0x00000006)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_PAUSED"></span><span id="ads_service_paused"></span>
 
-**Anuncios \_ de SERVICIO en \_ pausa** (0x00000007)
+**ADS \_ SERVICIO \_ EN PAUSA** (0x00000007)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_ERROR"></span><span id="ads_service_error"></span>
 
-**Anuncios \_ de \_Error de servicio** (0x00000008)
+**ADS \_ \_ERROR DE SERVICIO** (0x00000008)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_OWN_PROCESS"></span><span id="ads_service_own_process"></span>
 
-**Anuncios \_ de \_ \_ Proceso propio del servicio** (0x00000010)
+**ADS \_ PROCESO \_ DE \_ SERVICE OWN** (0x00000010)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_SHARE_PROCESS"></span><span id="ads_service_share_process"></span>
 
-**Anuncios \_ de \_ \_ Proceso de recurso compartido de servicio** (0x00000020)
+**ADS \_ PROCESO \_ DE RECURSO COMPARTIDO \_ DE** SERVICIO (0x00000020)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_KERNEL_DRIVER"></span><span id="ads_service_kernel_driver"></span>
 
-**Anuncios \_ de \_ \_ Controlador de kernel de servicio** (0x00000001)
+**ADS \_ CONTROLADOR \_ DE KERNEL \_ DE** SERVICIO (0x00000001)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_FILE_SYSTEM_DRIVER"></span><span id="ads_service_file_system_driver"></span>
 
-**Anuncios \_ de \_ \_ \_ Controlador del sistema de archivos de servicio** (0x00000002)
+**ADS \_ CONTROLADOR \_ DEL SISTEMA DE ARCHIVOS \_ \_ DE** SERVICIO (0x00000002)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>
 
-**Anuncios \_ de \_ \_ Inicio de arranque del servicio** (inicio de \_ arranque del servicio \_ )
+**ADS \_ INICIO \_ DE ARRANQUE DEL \_ SERVICIO** (INICIO \_ DE ARRANQUE DEL \_ SERVICIO)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_SYSTEM_START"></span><span id="ads_service_system_start"></span>
 
-**Anuncios \_ de \_ \_ Inicio de sistema de servicio** (inicio de sistema de servicio \_ \_ )
+**ADS \_ INICIO \_ DEL SISTEMA DE \_ SERVICIO** (INICIO \_ DEL SISTEMA DE \_ SERVICIO)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_AUTO_START"></span><span id="ads_service_auto_start"></span>
 
-**Anuncios \_ de \_ \_ Inicio automático del servicio** ( \_ Inicio automático del servicio \_ )
+**ADS \_ INICIO \_ AUTOMÁTICO \_ DEL SERVICIO** (INICIO AUTOMÁTICO DEL \_ \_ SERVICIO)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_DEMAND_START"></span><span id="ads_service_demand_start"></span>
 
-**Anuncios \_ de \_ \_ Inicio** de la demanda de servicio (inicio de la demanda de servicio \_ \_ )
+**ADS \_ INICIO \_ DE LA DEMANDA DE \_ SERVICIO** (INICIO \_ DE LA DEMANDA DEL \_ SERVICIO)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_DISABLED"></span><span id="ads_service_disabled"></span>
 
-**Anuncios \_ de SERVICIO \_ deshabilitado** (servicio \_ deshabilitado)
+**ADS \_ SERVICIO \_ DESHABILITADO** (SERVICIO \_ DESHABILITADO)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>
 
-**Anuncios \_ de \_ \_ Omitir error de servicio** (0)
+**ADS \_ ERROR \_ DE \_ SERVICIO IGNORE** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_ERROR_NORMAL"></span><span id="ads_service_error_normal"></span>
 
-**Anuncios \_ de ERROR de servicio \_ \_ normal** (1)
+**ADS \_ \_ERROR DE SERVICIO \_ NORMAL** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_ERROR_SEVERE"></span><span id="ads_service_error_severe"></span>
 
-**Anuncios \_ de \_Error \_ grave del servicio** (2)
+**ADS \_ \_ERROR GRAVE DEL \_ SERVICIO** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>
 
-**Anuncios \_ de ERROR de servicio \_ \_ crítico** (3)
+**ADS \_ \_ERROR CRÍTICO DEL \_ SERVICIO** (3)
 
 
 </dt> <dd></dd> </dl> <dt>
@@ -191,7 +191,7 @@ Los valores posibles son los siguientes.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -210,7 +210,7 @@ HRESULT get_Status(
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo comprobar el estado de un servicio de fax de Microsoft que se ejecuta en Windows 2000.
+En el ejemplo de código siguiente se muestra cómo comprobar el estado de un servicio de fax de Microsoft que se ejecuta Windows 2000.
 
 
 ```VB
@@ -245,7 +245,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se comprueba el estado de un servicio de fax de Microsoft que se ejecuta en Windows 2000.
+En el ejemplo de código siguiente se comprueba el estado de un servicio de fax de Microsoft que se ejecuta Windows 2000.
 
 
 ```C++
@@ -295,17 +295,17 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>        |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>        |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>  |
-| IID<br/>                      | IID \_ IADsServiceOperations se define como 5D7B33F0-31CA-11cf-A98A-00AA006BC149<br/> |
+| IID<br/>                      | IID \_ IADsServiceOperations se define como 5D7B33F0-31CA-11CF-A98A-00AA006BC149<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

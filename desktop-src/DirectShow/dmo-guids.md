@@ -1,33 +1,33 @@
 ---
-description: En la tabla siguiente se enumeran los identificadores únicos globales (GUID) definidos para las categorías de Microsoft DirectX media Object (DMO). Estos GUID se definen en el archivo de encabezado Dmoreg. h y se exportan mediante la biblioteca Dmoguids. lib.
+description: En la tabla siguiente se enumeran los identificadores únicos globales (GUID) definidos para las categorías de objetos multimedia (DMO) de Microsoft DirectX. Estos GUID se definen en el archivo de encabezado Dmoreg.h y se exportan mediante la biblioteca Dmoguids.lib.
 ms.assetid: d67debd0-8ecb-41ab-bc6c-b27cba97c65a
-title: GUID de DMO (Dmoreg. h)
+title: DMO GUID (Dmoreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c10d5bd917d6368d398362e76ffa9ea8255933ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93db9f78a5c256d2a6703f01fa4195b1aa293ef7e79eeb6b4da59557b849c805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653113"
 ---
-# <a name="dmo-guids"></a>GUID de DMO
+# <a name="dmo-guids"></a>DMO Guid
 
-En la tabla siguiente se enumeran los identificadores únicos globales (GUID) definidos para las categorías de Microsoft DirectX media Object (DMO). Estos GUID se definen en el archivo de encabezado Dmoreg. h y se exportan mediante la biblioteca Dmoguids. lib.
+En la tabla siguiente se enumeran los identificadores únicos globales (GUID) definidos para las categorías de objetos multimedia (DMO) de Microsoft DirectX. Estos GUID se definen en el archivo de encabezado Dmoreg.h y se exportan mediante la biblioteca Dmoguids.lib.
 
-Para enumerar el DMOs registrado en una categoría, pase el GUID correspondiente a la función [**DMOEnum**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoenum) .
+Para enumerar las DDO registradas en una categoría, pase el GUID correspondiente a la [**función DMOEnum.**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoenum)
 
 
 
 | GUID                                                                                                                                                                                                                     | Descripción                     |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------|
-| <span id="DMOCATEGORY_AUDIO_DECODER"></span><span id="dmocategory_audio_decoder"></span><dl> <dt>**descodificador de audio de DMOCATEGORY \_ \_**</dt> </dl>                       | Descodificador de audio<br/>        |
-| <span id="DMOCATEGORY_AUDIO_EFFECT"></span><span id="dmocategory_audio_effect"></span><dl> <dt>**\_efecto de audio DMOCATEGORY \_**</dt> </dl>                          | Efecto de audio<br/>         |
-| <span id="DMOCATEGORY_AUDIO_ENCODER"></span><span id="dmocategory_audio_encoder"></span><dl> <dt>**\_codificador de audio DMOCATEGORY \_**</dt> </dl>                       | Codificador de audio<br/>        |
-| <span id="DMOCATEGORY_VIDEO_DECODER"></span><span id="dmocategory_video_decoder"></span><dl> <dt>**descodificador de vídeo de DMOCATEGORY \_ \_**</dt> </dl>                       | Descodificador de vídeo<br/>        |
-| <span id="DMOCATEGORY_VIDEO_EFFECT"></span><span id="dmocategory_video_effect"></span><dl> <dt>**\_efecto de vídeo DMOCATEGORY \_**</dt> </dl>                          | Efecto de vídeo<br/>         |
-| <span id="DMOCATEGORY_VIDEO_ENCODER"></span><span id="dmocategory_video_encoder"></span><dl> <dt>**\_codificador de vídeo de DMOCATEGORY \_**</dt> </dl>                       | Codificador de vídeo<br/>        |
-| <span id="DMOCATEGORY_AUDIO_CAPTURE_EFFECT"></span><span id="dmocategory_audio_capture_effect"></span><dl> <dt>**\_efecto de \_ captura de audio DMOCATEGORY \_**</dt> </dl> | Efecto de captura de audio<br/> |
+| <span id="DMOCATEGORY_AUDIO_DECODER"></span><span id="dmocategory_audio_decoder"></span><dl> <dt>**DESCODIFICADOR DE AUDIO DMOCATEGORY \_ \_**</dt> </dl>                       | Descodificador de audio<br/>        |
+| <span id="DMOCATEGORY_AUDIO_EFFECT"></span><span id="dmocategory_audio_effect"></span><dl> <dt>**EFECTO DE AUDIO DMOCATEGORY \_ \_**</dt> </dl>                          | Efecto de audio<br/>         |
+| <span id="DMOCATEGORY_AUDIO_ENCODER"></span><span id="dmocategory_audio_encoder"></span><dl> <dt>**CODIFICADOR DE AUDIO DMOCATEGORY \_ \_**</dt> </dl>                       | Codificador de audio<br/>        |
+| <span id="DMOCATEGORY_VIDEO_DECODER"></span><span id="dmocategory_video_decoder"></span><dl> <dt>**DESCODIFICADOR DE \_ VÍDEO DMOCATEGORY \_**</dt> </dl>                       | Descodificador de vídeo<br/>        |
+| <span id="DMOCATEGORY_VIDEO_EFFECT"></span><span id="dmocategory_video_effect"></span><dl> <dt>**EFECTO DE VÍDEO DE DMOCATEGORY \_ \_**</dt> </dl>                          | Efecto de vídeo<br/>         |
+| <span id="DMOCATEGORY_VIDEO_ENCODER"></span><span id="dmocategory_video_encoder"></span><dl> <dt>**CODIFICADOR DE VÍDEO DMOCATEGORY \_ \_**</dt> </dl>                       | Codificador de vídeo<br/>        |
+| <span id="DMOCATEGORY_AUDIO_CAPTURE_EFFECT"></span><span id="dmocategory_audio_capture_effect"></span><dl> <dt>**EFECTO DE CAPTURA DE AUDIO DE DMOCATEGORY \_ \_ \_**</dt> </dl> | Efecto de captura de audio<br/> |
 
 
 
@@ -37,7 +37,7 @@ Para enumerar el DMOs registrado en una categoría, pase el GUID correspondiente
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dmoreg. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dmoreg.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Para enumerar el DMOs registrado en una categoría, pase el GUID correspondiente
 
 <dl> <dt>
 
-[Constantes de DMO](dmo-constants.md)
+[DMO Constantes](dmo-constants.md)
 </dt> </dl>
 
  
